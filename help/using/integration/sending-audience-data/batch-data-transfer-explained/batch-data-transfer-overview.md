@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 傳送批次資料至Audience Manager概述
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
 translation-type: tm+mt
-source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
+source-git-commit: dd5c3d28097251c58e1fb095aaf4076883d1c1a1
 
 ---
 
@@ -52,7 +52,6 @@ See [ID Synchronization for Inbound Data Transfers](../../../integration/sending
 檔案名稱和內容遵循嚴格准則。You *must* name and organize data files according to these specifications in this guide. 請參閱:
 
 * [傳入資料檔案的 Amazon S3 名稱要求](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-* [傳入資料檔案的 FTP 名稱要求](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
 * [傳入資料檔案內容：語法、變數和範例](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
 
 ## 線上資料適用於離線行銷活動
