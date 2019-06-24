@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 傳入客戶資料擷取常見問題集
 uuid: 491e9ec1-4731-46a8-86e7-d8 c613 e6 cexc
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: dd5c3d28097251c58e1fb095aaf4076883d1c1a1
 
 ---
 
@@ -194,7 +194,6 @@ FTP檔案在處理後會被移除。[!DNL S3] 檔案會在30天後移除。無�
 如需完整和漸進式檔案類型的詳細資訊，請參閱：
 
 * [傳入資料的Amazon S名稱和檔案大小需求…](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-* [傳入資料檔案的FTP名稱和檔案大小需求…](../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
 
 <br> 
 
@@ -209,7 +208,7 @@ During processing, [!DNL Audience Manager] simply skips that record and moves on
 時間戳記用於記錄和記錄保留。語法必須是格式正確的傳入檔案名稱所使用的語法。請參閱:
 
 * [傳入資料檔案的 Amazon S3 名稱要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-* [傳入資料檔案的FTP名稱和檔案大小需求…](../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
+
 
 <br> 
 
@@ -231,7 +230,7 @@ See [File Compression for Inbound Data Transfer Files](../integration/sending-au
 
 * [傳入資料傳輸檔案的檔案壓縮](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
 * [傳入資料檔案的 Amazon S3 名稱要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-* [傳入資料檔案的 FTP 名稱要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
+
 
 <br> 
 
