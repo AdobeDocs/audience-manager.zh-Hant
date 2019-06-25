@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 資料夾特性
 uuid: e561ce8f-6c90-44a7-b034-685533f29030
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: c229bf71da5b07277811219cbf2794c3ca7bc89d
 
 ---
 
@@ -62,6 +62,6 @@ Learn how to assign [!UICONTROL RBAC] permissions in our [administration documen
 | 項目 | 說明 |
 |---|---|
 | 特徵類型 | [!UICONTROL Onboarded traits][!UICONTROL algorithmic traits] 並將大部份的實現貢獻給一個 [!UICONTROL folder trait]頻率。 |
-| 在檔案夾之間移動特徵 | Moving a trait from a folder to another will disqualify that trait from the first folder trait and qualify it for the second [!UICONTROL folder trait]. 這表示如果您從資料夾刪除或移動特徵，則特徵的人口族群中的使用者將使用資料夾特徵作為區段運算式，將區段取消分段。 |
+| 在檔案夾之間移動特徵 | Moving a trait from a folder to another will disqualify that trait from the first folder trait and qualify it for the second [!UICONTROL folder trait]. 這表示如果您從資料夾刪除或移動特徵，則特徵的人口族群中的使用者將使用資料夾特徵作為區段運算式，將區段取消分段。<br> 將Adobe Analytics區段或報表套裝對應至Experience Cloud組織時，Audience Manager會自動建立新的對應區段和特性。您無法從Audience Manager編輯或變更這些特性的儲存位置。不過，您在對應的Adobe Analytics區段或報表套裝上執行的任何變更，都會反映在Audience Manager中。 |
 | 系統變數 | [!UICONTROL Folder traits] 無法在使用 `d_sid` 參數的事件呼叫中實現。 |
 | 報告 | [!UICONTROL Folder traits] 是autoc的特徵，不會出現 **[!UICONTROL Overlap Reports]** 在其中。 |
