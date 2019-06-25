@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段用途、構圖和規則
 uuid: 886d4abe-b1 b6-4983-b4 fb-b552 d54 d51 ba
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: c229bf71da5b07277811219cbf2794c3ca7bc89d
 
 ---
 
@@ -26,6 +26,10 @@ A *`segment`* (or an *`audience`*) is a set of users who share common attributes
 ## 區段構成
 
 Audience Manager區段是伺服器端規則，包含個別或特徵群組。特徵由稱為索引鍵值配對的資料元素組成。除了您在區段層級設定的規則，這些索引鍵值配對也包含符合特徵和區段成員資格的標準訪客。
+
+## Adobe Analytics區段對應的考量事項
+
+將Adobe Analytics區段或報表套裝對應至Experience Cloud組織時，Audience Manager會自動建立新的對應區段和特性。您無法從Audience Manager編輯或變更這些區段的儲存位置。不過，您在對應的Adobe Analytics區段或報表套裝上執行的任何變更，都會反映在Audience Manager中。
 
 >[!TIP]
 >
