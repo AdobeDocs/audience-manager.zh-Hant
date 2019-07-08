@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 目標的GDPR考量
 uuid: e8a40060-086c-4f03-b48 c-9c9 c903 acb7891
 translation-type: tm+mt
-source-git-commit: 0ddc86391cbc751dfd4d46946222d555cefbfe38
+source-git-commit: 69be038d0f2d31b6b5eda20041082c1890abc38f
 
 ---
 
@@ -68,4 +68,4 @@ In addition to the updates to the IAB Framework mentioned above, Yahoo/Oath/Data
 1. 無法支援Adobe及/或
 1. 30天內無法更頻繁地接收我們的更新。
 
-在這種情況下，您無法透過Audience Manager自動傳送刪除要求給啓動合作夥伴。Download our [Partner Excel sheet](/help/using/overview/aam-gdpr/assets/AAM-Partners-March2019.xlsx) to see which Audience Manager activation partners support unsegment.
+在這種情況下，您無法透過Audience Manager自動傳送刪除要求給啓動合作夥伴。Download our [Partner Excel sheet](/help/using/overview/aam-gdpr/assets/AAM-Partners-July2019.xlsx) to see which Audience Manager activation partners support unsegment.
