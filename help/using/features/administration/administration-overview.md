@@ -8,7 +8,7 @@ title: 管理
 topic: DIL API
 uuid: 498e0316-cf-1b-43e9-88ba-338ee0 daf225
 translation-type: tm+mt
-source-git-commit: 9801bf6a1a4c2c2e7cc2aa8ab32cb81094368554
+source-git-commit: 5d66c44a9072129de9da69918e9eeda2e18ccb22
 
 ---
 
@@ -84,11 +84,11 @@ Simplify group rights management with [!UICONTROL Wild Card Permissions].
 
 **特性**
 
-* `MAP_ALL_TRAITS_TO_MODELS` - 需要釐清嗎？
-* `EDIT_ALL_TRAITS` - 使用者可以編輯屬於其公司的所有特性(PID)
-* `VIEW_ALL_TRAITS` - 使用者可以檢視屬於其公司的所有特性(PID)
+* `MAP_ALL_TRAITS_TO_MODELS` - 使用者可以選擇特徵做為模型的基準。
+* `EDIT_ALL_TRAITS` - 使用者可以編輯屬於其公司(PID)的所有特性。
+* `VIEW_ALL_TRAITS` - 使用者可以檢視屬於其公司(PID)的所有特性。
 * `DELETE_ALL_TRAITS` - 使用者可以刪除屬於其公司(PID)的所有特性。
-* `CREATE_ALL_ALGO_TRAITS` - 需要釐清
+* `CREATE_ALL_ALGO_TRAITS` - 使用者可以建立演算法特性。
 * `MAP_ALL_TO_SEGMENTS` - 使用者可以將屬於其公司的任何特性新增至區段。
 * `CREATE_ALL_TRAITS` - 使用者可以建立特性。
 
@@ -128,7 +128,7 @@ Simplify group rights management with [!UICONTROL Wild Card Permissions].
 * `DELETE_ALL_SEGMENTS` - 使用者可以刪除公司帳戶內設定的所有區段。
 * `MAP_ALL_TO_DESTINATIONS` - 使用者可以將屬於其公司的任何區段對應至目的地。
 * `EDIT_ALL_SEGMENTS` - 使用者可以編輯公司帳戶內設定的所有區段。
-* `MAP_ALL_SEGMENTS_TO_MODELS` - 需要釐清嗎？
+* `MAP_ALL_SEGMENTS_TO_MODELS` - 使用者可以選擇區段作為模型的基準。
 * `VIEW_ALL_SEGMENTS` - 使用者可以檢視公司帳戶內設定的所有區段。
 
 **訊號**
