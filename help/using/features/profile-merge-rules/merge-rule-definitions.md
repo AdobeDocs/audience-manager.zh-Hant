@@ -52,7 +52,7 @@ The [!UICONTROL Authenticated Options] let you select un-authenticated and authe
 
 ## Authenticated Profile Options {#profile-options}
 
-The [!UICONTROL Authenticated Profile Options] lists your cross-device data sources. These options use the names you provided when you created a cross-device data source (see [Create a Cross-Device Data Source](../../features/profile-merge-rules/merge-rules-start.md#create-data-source)). 您最多可以選取個跨裝置資料來源，用於每個描述檔規則。[!UICONTROL Authenticated Profile Options] 您可以選擇 **[!UICONTROL Current Authenticated Profile]** 或 **[!UICONTROL Last Authenticated Profile]** 選擇。
+The [!UICONTROL Authenticated Profile Options] lists your cross-device data sources. These options use the names you provided when you created a cross-device data source (see [Create a Cross-Device Data Source](../../features/profile-merge-rules/merge-rules-start.md#create-data-source)). 您最多可以選取個跨裝置資料來源，用於每個描述檔規則。[!UICONTROL Authenticated Profile Options] 您可以選擇 **[!UICONTROL Current Authenticated Profile]** 或 **[!UICONTROL Last Authenticated Profile]**&#x200B;選擇。
 
 ## Device Options {#device-options}
 
