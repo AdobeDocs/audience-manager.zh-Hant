@@ -24,7 +24,7 @@ The [!UICONTROL Marketplace] is where data buyers go to research and subscribe t
 
 若要訂閱公開資料饋送：
 
-1. **[!UICONTROL Audience Marketplace > Marketplace]** 前往。使用搜尋功能或瀏覽清單以尋找資料饋送。
+1. **[!UICONTROL Audience Marketplace > Marketplace]**&#x200B;前往。使用搜尋功能或瀏覽清單以尋找資料饋送。
 
    ![](assets/subscribe1.png)
 
@@ -72,7 +72,7 @@ Buyers subscribe to private data feeds and plans in **[!UICONTROL Audience Marke
 
 1. Click the data feed name in the [!UICONTROL Marketplace].
 1. Click **[!UICONTROL Request Access]**. 如此會開啓請求對話方塊。
-1. In the request dialog box, write the provider a note expressing your interest in their data feed and click **[!UICONTROL Send]**. 賣方會檢閱您的訊息，並核准或拒絕您的要求。While waiting for approval, &quot;Requested&quot; appears in the [!UICONTROL Marketplace] list for that data feed.
+1. In the request dialog box, write the provider a note expressing your interest in their data feed and click **[!UICONTROL Send]**. 賣方會檢閱您的訊息，並核准或拒絕您的要求。While waiting for approval, "Requested" appears in the [!UICONTROL Marketplace] list for that data feed.
 
    * **[!UICONTROL Request approved]**： [!UICONTROL Marketplace] 清單中的狀態會變更為「授予的存取權」，您將會收到自動通知。此時您可以訂閱動態消息。See [Subscribe to a Public Data Feed](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) for instructions.
    * **[!UICONTROL Request denied]**：「請求的」文字會從動態消息 [!UICONTROL Marketplace] 的清單中移除。您可以嘗試再次訂閱或選擇不同的動態消息。
@@ -85,7 +85,7 @@ Buyers subscribe to private data feeds and plans in **[!UICONTROL Audience Marke
 
 ## Data Feed Discounts for Buyers {#buyer-discount}
 
-In [!UICONTROL Audience Marketplace], providers can offer buyers a discount on the published price of a [!DNL CPM] or flat rate data feed. However, discount amounts aren&#39;t visible to buyers in the [!DNL Marketplace] feed list. 但是，您也可以在訂閱私人資料饋送時或請求特定饋送的更多資訊時要求折扣。
+In [!UICONTROL Audience Marketplace], providers can offer buyers a discount on the published price of a [!DNL CPM] or flat rate data feed. However, discount amounts aren't visible to buyers in the [!DNL Marketplace] feed list. 但是，您也可以在訂閱私人資料饋送時或請求特定饋送的更多資訊時要求折扣。
 
 ## Request a Discount {#request-discount}
 
@@ -128,7 +128,7 @@ In [!UICONTROL Audience Marketplace], providers can offer buyers a discount on t
 
 若要檢閱您的折扣摘要：
 
-1. **[!UICONTROL Audience Marketplace > Marketplace]** 前往。
+1. **[!UICONTROL Audience Marketplace > Marketplace]**&#x200B;前往。
 1. 按一下已訂閱之動態消息的名稱。
 1. Look at the [!UICONTROL Price] and [!UICONTROL Your Price] columns in the [!UICONTROL Plan Details] table. 如果摘要被取消計數：
 
@@ -166,7 +166,7 @@ Data buyers unsubscribe from data feeds and plans in **[!UICONTROL Audience Mark
 若要取消訂閱資料饋送：
 
 1. Click the data feed name in the [!UICONTROL Marketplace].
-1. [!UICONTROL Use Case] 在區段中，找到您要使用的計劃，並將 **[!UICONTROL Subscription]** 滑桿移動 **[!UICONTROL Off]** 至。
+1. [!UICONTROL Use Case] 在區段中，找到您要使用的計劃，並將 **[!UICONTROL Subscription]** 滑桿移動 **[!UICONTROL Off]**&#x200B;至。
 
 ## Data Feed Deactivation: Why It Happens and How to Respond {#data-feed-deactivation-reasons}
 
