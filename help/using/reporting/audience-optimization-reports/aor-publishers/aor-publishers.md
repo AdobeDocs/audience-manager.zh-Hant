@@ -1,9 +1,9 @@
 ---
 description: Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層促銷活動績效資料與Audience Manager量度結合，以通知受眾最佳化和獲利機會。
 seo-description: Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層促銷活動績效資料與Audience Manager量度結合，以通知受眾最佳化和獲利機會。
-seo-title: Audience Optimization for Publishers
+seo-title: 發佈者適用的 Audience Optimization
 solution: Audience Manager
-title: Audience Optimization for Publishers
+title: 發佈者適用的 Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ee4 effee1
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
@@ -11,13 +11,13 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 ---
 
 
-# Audience Optimization for Publishers{#audience-optimization-for-publishers}
+# 發佈者適用的 Audience Optimization{#audience-optimization-for-publishers}
 
 Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層促銷活動績效資料與Audience Manager量度結合，以通知受眾最佳化和獲利機會。
 
 ## 概述 {#aor-overview}
 
-[!UICONTROL Audience Optimization for Publishers] jxippatch log-level促銷活動績效資料 [!UICONTROL DFP] 來自 [!DNL Audience Manager] 區段量度。The reports are available for customers that have set up log ingestion from [!UICONTROL DFP] into [!DNL Audience Manager]. If you haven&#39;t yet set up log ingestion, read [Import DFP Data Files Into Audience Manager](import-dfp.md) for information on how to do it.
+[!UICONTROL Audience Optimization for Publishers] jxippatch log-level促銷活動績效資料 [!UICONTROL DFP] 來自 [!DNL Audience Manager] 區段量度。The reports are available for customers that have set up log ingestion from [!UICONTROL DFP] into [!DNL Audience Manager]. If you haven't yet set up log ingestion, read [Import DFP Data Files Into Audience Manager](import-dfp.md) for information on how to do it.
 
 ## 中繼資料 {#metadata}
 
