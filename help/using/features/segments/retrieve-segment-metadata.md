@@ -17,7 +17,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ## Manual method {#manual-method}
 
-身為資料合作夥伴，您可能習慣透過手動流程獲取客戶的受眾中繼資料。This could include files attached to emails or from customers adding that data through a [!DNL UI] you&#39;ve built and maintained for this purpose. 這些程序運作起來很麻煩，但是通常需要耗費大量時間，而且可能需要手動輸入資料。這些方法通常用於協助整合快速運作，但在長期內並不提供最佳的客戶體驗。As an alternative, you can use the [!DNL Audience Manager] [!DNL API] to get segment metadata automatically.
+身為資料合作夥伴，您可能習慣透過手動流程獲取客戶的受眾中繼資料。This could include files attached to emails or from customers adding that data through a [!DNL UI] you've built and maintained for this purpose. 這些程序運作起來很麻煩，但是通常需要耗費大量時間，而且可能需要手動輸入資料。這些方法通常用於協助整合快速運作，但在長期內並不提供最佳的客戶體驗。As an alternative, you can use the [!DNL Audience Manager] [!DNL API] to get segment metadata automatically.
 
 ## Automated method {#automated-method}
 
@@ -25,7 +25,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ### 步驟1：檢閱Audience Manager API
 
-The [Getting Started with REST APIs](../../api/rest-api-main/aam-api-getting-started.md) section contains information about general requirements, authentication, available methods, etc. This is a good place to begin if you haven&#39;t worked with the [!DNL Audience Manager] [!DNL API] before.
+The [Getting Started with REST APIs](../../api/rest-api-main/aam-api-getting-started.md) section contains information about general requirements, authentication, available methods, etc. This is a good place to begin if you haven't worked with the [!DNL Audience Manager] [!DNL API] before.
 
 ### 步驟2：要求OAuth存取憑證
 
