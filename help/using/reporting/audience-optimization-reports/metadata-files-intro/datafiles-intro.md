@@ -48,7 +48,7 @@ A properly named and formatted data file lets you import impression, click, or c
 在檔案內容中：
 
 * 標題標籤必須依照下表所示順序出現。曝光和點按使用相同的標籤。轉換檔案包含額外標題。
-* If you don&#39;t have data for a particular column, populate that field with a `NULL` object or `-1`.
+* If you don't have data for a particular column, populate that field with a `NULL` object or `-1`.
 
 * Files *must* end with a version number. 目前版本為1.1。
 * 使用非列印ASCII001字元分隔檔案標題和內容。如果您無法使用ASCII001，請將標題和資料與標籤分隔字元分隔。As these are non-printing characters, the syntax example above shows a pipe `"|"` for display purposes only.
