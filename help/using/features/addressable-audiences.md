@@ -77,7 +77,7 @@ source-git-commit: b213a1ecde4c85dc66dada24dec602ed1d9b0332
 
 [!UICONTROL Addressable Audience] 此功能將此抽象概念轉變為可量化的資料。In [!DNL Audience Manager], this feature displays audience overlap with data visualizations that provide at-a-glance information along with numeric data in tabular form.
 
-[!UICONTROL Addressable Audiences]**[!UICONTROL Audience Data > Destinations]** 位於中。Select **[!UICONTROL Integrated Platforms > Device-Based]** to see addressable audiences metrics.
+[!UICONTROL Addressable Audiences]**[!UICONTROL Audience Data > Destinations]**&#x200B;位於中。Select **[!UICONTROL Integrated Platforms > Device-Based]** to see addressable audiences metrics.
 
 ![](assets/addressable-audiences-landing.png)
 
@@ -131,7 +131,7 @@ All dates and date ranges are set in the [!DNL UTC] time zone. See [Time Zones i
 
 [!UICONTROL Addressable Audience] 和 [!UICONTROL Destination] 度量會在所選時間間隔內傳回獨特使用者計數。例如，訪客只被計算一次，即使他們多次前來您的網站。第一次瀏覽是唯一瀏覽，並被記錄下來。後續瀏覽會傳回瀏覽，因為它們不是唯一的，所以不會計入。
 
-日期範圍包含所選時間間隔或較舊的資料。此外，每個報表間隔會隨著時間流逝而逾時。For example, let&#39;s assume you see 2 visitors after choosing the [!UICONTROL Last 30 Days] option. 在報表中，這些訪客：
+日期範圍包含所選時間間隔或較舊的資料。此外，每個報表間隔會隨著時間流逝而逾時。For example, let's assume you see 2 visitors after choosing the [!UICONTROL Last 30 Days] option. 在報表中，這些訪客：
 
 * *將* 包含在較長時間間隔(60天、90天和存留期)傳回的結果中。
 * *不會* 包含 [!UICONTROL Last 30 Day] 在選項前面的較短間隔中(目前、天和14天)。
@@ -234,9 +234,9 @@ These metrics return data for traits realized when visitors come to your site or
 
 ## Comparing Customer and Segment Addressable Audiences{#comparing-metrics}
 
-You shouldn&#39;t compare the [!UICONTROL Customer Addressable Audience] and [!UICONTROL Segment Addressable Audience] metrics to determine if one is more significant than the other. 這些是不同、不同和獨立量度。如上述定義所述，每一項都衍生自不同的資料集。有鑒於此，如果一個量度大於另一個度量，您應避免嘲笑任何結論。在比較這些問題時，您可以說：
+You shouldn't compare the [!UICONTROL Customer Addressable Audience] and [!UICONTROL Segment Addressable Audience] metrics to determine if one is more significant than the other. 這些是不同、不同和獨立量度。如上述定義所述，每一項都衍生自不同的資料集。有鑒於此，如果一個量度大於另一個度量，您應避免嘲笑任何結論。在比較這些問題時，您可以說：
 
-* [!UICONTROL Customer Addressable Audiences] 是根據您自己的第一方資料實作而 **定。此度量可提供廣泛、完整的資料合作夥伴整合檢視。
+* [!UICONTROL Customer Addressable Audiences] 是根據您自己的第一方資料實作而 **&#x200B;定。此度量可提供廣泛、完整的資料合作夥伴整合檢視。
 
 * [!UICONTROL Segment Addressable Audiences] 是根據您自己第一方資料的區段資格 *，加上第二方和第三方資料*。此度量可提供定位平台中可定址受眾的精細、更精確檢視。
 
