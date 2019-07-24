@@ -27,7 +27,7 @@ c_api_overview.xml
 When working with the instance-level [!UICONTROL DIL] APIs:
 
 * 存取需要合作夥伴名稱和容器命名空間ID(NSID)。請連絡Audience Manager帳戶管理員以取得此資訊。
-* Replace any sample *italicized* text in the API documentation with value, ID, or other variable as required by the method you&#39;re working with.
+* Replace any sample *italicized* text in the API documentation with value, ID, or other variable as required by the method you're working with.
 
 <!-- 
 
@@ -654,7 +654,7 @@ useCorsOnly：true})；</code>
 
 >[!IMPORTANT]
 >
->* We recommend that you set `useCORSOnly: true` only when you&#39;re sure that your site visitors have browsers that support this feature.
+>* We recommend that you set `useCORSOnly: true` only when you're sure that your site visitors have browsers that support this feature.
 >* When `useCORSOnly: true`, [!UICONTROL DIL] will not make ID calls from Internet Explorer version 9 or older.
 >
 
