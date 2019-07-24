@@ -72,7 +72,7 @@ t_run_general_report.xml
    >
    >[!UICONTROL Total Trait Realizations] 僅供計算。[!UICONTROL Rule-based Traits]
 
-1. *選擇性* 按 **[!UICONTROL Export to CSV]** 一下。This exports the [!UICONTROL Unique Trait Realizations], [!UICONTROL Total Trait Realizations], and [!UICONTROL Total Trait Population] for all day ranges.
+1. *選擇性* 按 **[!UICONTROL Export to CSV]**&#x200B;一下。This exports the [!UICONTROL Unique Trait Realizations], [!UICONTROL Total Trait Realizations], and [!UICONTROL Total Trait Population] for all day ranges.
 
 ## General Reports Results Explained {#general-reports-explained}
 
