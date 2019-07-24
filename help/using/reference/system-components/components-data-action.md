@@ -45,7 +45,7 @@ See [Data Collection Components](../../reference/system-components/components-da
 
 In Greek mythology, [!UICONTROL Iris] is a figure who travels and delivers messages rapidly. [!UICONTROL IRIS] 此系統是一個namesake，反映出此圖中這個人物的特性。In modern terms, [!UICONTROL IRIS] is a low-latency, high-frequency cookie synchronization and data transfer service.
 
-[!UICONTROL IRIS] 與 [!UICONTROL SFTP/S3] 系統的類型相同。However, [!UICONTROL IRIS] is different because it sends data to destinations in real time rather than at set intervals. This is a separate system because the [!UICONTROL SFTP/S3] publishers can&#39;t send data to an HTTP destination and they&#39;re not designed for real-time data transfers.
+[!UICONTROL IRIS] 與 [!UICONTROL SFTP/S3] 系統的類型相同。However, [!UICONTROL IRIS] is different because it sends data to destinations in real time rather than at set intervals. This is a separate system because the [!UICONTROL SFTP/S3] publishers can't send data to an HTTP destination and they're not designed for real-time data transfers.
 
 There are no UI controls that let customers work directly with [!UICONTROL IRIS]. Customers work with [!UICONTROL IRIS] indirectly when they create and send data to destinations, and for other processes that require rapid data transfers.
 
@@ -64,7 +64,7 @@ To optimize traffic between [!UICONTROL IRIS] and segment destinations, [!UICONT
 
 1. **新的細分資格**：當裝置符合新區段的資格時， [!UICONTROL IRIS] 請將所有與該裝置相關聯的區段傳送至對應至這些區段的所有目標。
 
-1. **新細分優惠** 資格：當裝置不再符合區段資格時， [!UICONTROL IRIS] 將所有與該裝置相關的資格和資格傳送給對應至這些區段的所有目的地。
+1. **新細分優惠**&#x200B;資格：當裝置不再符合區段資格時， [!UICONTROL IRIS] 將所有與該裝置相關的資格和資格傳送給對應至這些區段的所有目的地。
 
 1. **目的地對應更新**：當目標對應更新時， [!UICONTROL IRIS] 將所有與裝置相關的區段傳送至對應至這些區段的所有目標，下次Audience Manager看到裝置時。
 
@@ -72,7 +72,7 @@ To optimize traffic between [!UICONTROL IRIS] and segment destinations, [!UICONT
 
 >[!IMPORTANT]
 >
->If Audience Manager doesn&#39;t detect any of the updates above for 3 consecutive days, [!UICONTROL IRIS] sends all segments associated to a device to all of the destinations mapped to these segments, the next time Audience Manager sees the device.
+>If Audience Manager doesn't detect any of the updates above for 3 consecutive days, [!UICONTROL IRIS] sends all segments associated to a device to all of the destinations mapped to these segments, the next time Audience Manager sees the device.
 
 **資料檔案範例**
 
