@@ -35,7 +35,7 @@ In [!DNL Audience Manager], Hadoop is the master database that contains everythi
 
 ## Snowflake {#snowflake}
 
-[Snorflake](https://www.snowflake.net/) 是龐大的雲端資料庫。它會將資料提供給許多控制面板圖表及其相關文字方塊，以顯示圖形中每個項目的變更百分比。If you use [!DNL Audience Manager] and look at the dashboard reports, you&#39;re interacting with data provided by [!UICONTROL Snowflake].
+[Snorflake](https://www.snowflake.net/) 是龐大的雲端資料庫。它會將資料提供給許多控制面板圖表及其相關文字方塊，以顯示圖形中每個項目的變更百分比。If you use [!DNL Audience Manager] and look at the dashboard reports, you're interacting with data provided by [!UICONTROL Snowflake].
 
 
 
