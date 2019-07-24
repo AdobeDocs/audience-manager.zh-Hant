@@ -35,7 +35,7 @@ Platform-level variables let you take data passed in from a particular site and 
 
 ## Platform Level Keys Defined by IP Address {#keys-ip-address}
 
-We work with [Digital Envoy](https://www.digitalenvoy.com/) to obtain and update the demographic and geographic data for the keys below. The values for these keys are determined by matching [!DNL IP] addresses to corresponding geographic and demographic data. However, you&#39;ll still have to enter the value parameter when creating the key-value pair in [!UICONTROL Trait Builder].
+We work with [Digital Envoy](https://www.digitalenvoy.com/) to obtain and update the demographic and geographic data for the keys below. The values for these keys are determined by matching [!DNL IP] addresses to corresponding geographic and demographic data. However, you'll still have to enter the value parameter when creating the key-value pair in [!UICONTROL Trait Builder].
 
 | 金鑰 | 用於定位 |
 |--- |--- |
