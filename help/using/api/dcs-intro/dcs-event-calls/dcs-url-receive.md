@@ -57,7 +57,7 @@ The table below lists and defines the more common parameters you may see in a re
 | `stuff` | 此物件包含所有Cookie目的地的資訊。此物件的清單會根據使用者的動作進行動態。 |
 | `tid` | 交易ID，這是用於除錯用途的唯一12個字元ID。每個/event呼叫DCS都會收到一個提示，您可以在支援中參考，以獲得更好且更快速的回應。 |
 | `ttl` | Cookie的存留時間值。 |
-| `u`和`uuid` | Audience Manager指派的唯一使用者ID。This is required if you&#39;re making [server-to-server DCS calls](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md). |
+| `u`和`uuid` | Audience Manager指派的唯一使用者ID。This is required if you're making [server-to-server DCS calls](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md). |
 | `y` | Destination type,  iFrame (`iframe`) or image (`img`). |
 
 >[!MORE_贊_ this]
