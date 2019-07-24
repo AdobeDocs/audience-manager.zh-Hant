@@ -17,7 +17,7 @@ Lists and describes the syntax and supported attributes (or key-value pairs) you
 
 ## Attribute Prefixes {#attribute-prefixes}
 
-The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value pairs to classify the type of data you&#39;re passing in.
+The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value pairs to classify the type of data you're passing in.
 
 <table id="table_23B7E15EC13749E9A245DFB543822DB7"> 
  <thead> 
