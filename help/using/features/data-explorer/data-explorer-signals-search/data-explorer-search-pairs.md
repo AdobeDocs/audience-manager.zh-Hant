@@ -16,7 +16,7 @@ source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 To search for more than one signal, click the ![Add](assets/icon_add.png) button. 輸入您要搜尋的索引鍵值配對，然後使用下列篩選條件縮小結果。
 
 * **訊號狀態**：搜尋特徵、未使用訊號或兩者所包含的訊號。
-* **檢視** 下列項目的記錄：選擇要搜尋接收訊號的時間間隔。
+* **檢視**&#x200B;下列項目的記錄：選擇要搜尋接收訊號的時間間隔。
 * **最低計數**：僅顯示在選定間隔內指定的最小總計數的訊號。
 
 >[!IMPORTANT]
@@ -39,7 +39,7 @@ This search will return only results that qualify for all three filters on the s
 
 ![](assets/signal-search-suggestions.png)
 
-Let&#39;s say [!DNL Audience Manager] received the following signals:
+Let's say [!DNL Audience Manager] received the following signals:
 
 * `productCategory == smartphone`
 * `newProduct == iPhone`
