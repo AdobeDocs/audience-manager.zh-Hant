@@ -136,11 +136,11 @@ One benefit of implementing [!UICONTROL Actionable Log Files] is the option to a
 
 重新定向看見創意123但未按一下或轉換並顯示創意456的使用者。執行動作:
 
-1. 建立特徵來擷取看過創意素材的使用者。Let&#39;s say you name the trait [!DNL Creative Trait 123]. 使用特徵規則：
+1. 建立特徵來擷取看過創意素材的使用者。Let's say you name the trait [!DNL Creative Trait 123]. 使用特徵規則：
 
    `d_creative == 123 AND d_event == imp`
 
-1. 建立特徵來擷取按一下或轉換的使用者。Let&#39;s say you name this one [!DNL Click and Converter]. 使用特徵規則：
+1. 建立特徵來擷取按一下或轉換的使用者。Let's say you name this one [!DNL Click and Converter]. 使用特徵規則：
 
    `d_event == click OR d_event=conv`
 
