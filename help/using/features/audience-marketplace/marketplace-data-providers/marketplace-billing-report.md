@@ -20,7 +20,7 @@ Generate an [!DNL Audience Marketplace] billing report to view data feed usage f
 
 若要下載報表：
 
-1. **[!UICONTROL Audience Marketplace > Receivables]** 前往。
+1. **[!UICONTROL Audience Marketplace > Receivables]**&#x200B;前往。
 1. Click **[!UICONTROL Generate Billing Report]**.
 
 ## Report Fields Defined {#report-fields-defined}
