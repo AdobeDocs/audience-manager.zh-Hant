@@ -19,7 +19,7 @@ Describes how to prevent race conditions and [!UICONTROL DCS] error handling.
 
 A race condition can occur if you send multiple calls simultaneously (or in rapid succession) to the [!UICONTROL DCS] before it finishes responding to the initial queries and writing data to the user’s cookie. 競爭條件不受歡迎，因為它可能會損毀或不當覆寫Cookie資料。作為最佳實務，請考慮下列方法以避免此問題：
 
-* Don&#39;t make simultaneous calls, or calls in rapid succession, to the [!UICONTROL DCS] from the same user.
+* Don't make simultaneous calls, or calls in rapid succession, to the [!UICONTROL DCS] from the same user.
 * 等候每個回應在後續呼叫之前回來。
 
 ## Error Handling {#error-handling}
