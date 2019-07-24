@@ -95,7 +95,7 @@ create-onboarding-status-report.xml
  -->
 
 
-1. **[!UICONTROL Analytics > Onboarding Status Report]** 前往。搜尋資料來源或從清單中選擇一個資料來源。
+1. **[!UICONTROL Analytics > Onboarding Status Report]**&#x200B;前往。搜尋資料來源或從清單中選擇一個資料來源。
 
 2. 選取日期範圍。選項包括:
 
