@@ -95,6 +95,6 @@ String signature = Base64.encodeBase64String(result).trim();
 
 ## Data used for signing {#data-signing}
 
-`GET` 對於類型目的地，用於簽署的訊息將是 *REQUEST_ PATH+ QUERY StrING* (例如 */from-aam-s2s？sids=1,2，*3)。IRIS does not take into account the hostname or `HTTP` headers - these can be modified / misconfigured along the path or reported incorrectly.
+`GET` 對於類型目的地，用於簽署的訊息將是 *REQUEST_ PATH+ QUERY StrING* (例如 */from-aam-s2s？sids=1,2，* 3)。IRIS does not take into account the hostname or `HTTP` headers - these can be modified / misconfigured along the path or reported incorrectly.
 
 `POST` 對於類型目的地，用於簽署的訊息是 *請求主體*。同樣地，會忽略標題或其他請求參數。
