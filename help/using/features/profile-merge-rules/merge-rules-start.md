@@ -112,11 +112,11 @@ You must set up a [cross-device data source](#create-data-source) and [profile m
 
 ## For Experience Cloud ID Service Customers {#id-service-customers}
 
-The [!UICONTROL Experience Cloud ID Service] and the latest version of [DIL](../../dil/dil-overview.md) are recommended when working with [!UICONTROL Profile Merge Rules]. However, you don&#39;t have to use the [!UICONTROL Experience Cloud ID Service] to work with this feature. If you&#39;re just using [!UICONTROL DIL], see the [legacy DIL section](../../features/profile-merge-rules/merge-rules-start.md#legacy-dil) below.
+The [!UICONTROL Experience Cloud ID Service] and the latest version of [DIL](../../dil/dil-overview.md) are recommended when working with [!UICONTROL Profile Merge Rules]. However, you don't have to use the [!UICONTROL Experience Cloud ID Service] to work with this feature. If you're just using [!UICONTROL DIL], see the [legacy DIL section](../../features/profile-merge-rules/merge-rules-start.md#legacy-dil) below.
 
 ### 設定設定客戶ID函數
 
-When working with the [!UICONTROL Experience Cloud ID Service], the `setCustomerIDs` function passes declared IDs to [!DNL Audience Manager]. To use a profile merge rule, you must modify `setCustomerIDs` to use the integration code specified when you created a cross-device data source. For example, say you&#39;ve created a cross-device data source with the integration code `my_datasource_ic`. 若要傳入宣告的ID，您可以將整合代碼新增至訪客ID函數，如下面修改的代碼範例所示。
+When working with the [!UICONTROL Experience Cloud ID Service], the `setCustomerIDs` function passes declared IDs to [!DNL Audience Manager]. To use a profile merge rule, you must modify `setCustomerIDs` to use the integration code specified when you created a cross-device data source. For example, say you've created a cross-device data source with the integration code `my_datasource_ic`. 若要傳入宣告的ID，您可以將整合代碼新增至訪客ID函數，如下面修改的代碼範例所示。
 
 #### 通用程式碼範例
 
@@ -145,7 +145,7 @@ The latest versions of [!UICONTROL DIL] now automatically pick up the [!UICONTRO
 <pre class="js"><code>var vDIL= DIL. create({合作夥伴：「合作夥伴名稱」，visitorService：{namespace：「<i>INSERT-MCORG-ID-HERE</i>」}})；</code>
 </pre>
 
-In the namespace key-value pair, the `*`MCORG`*` variable is your [!DNL Experience Cloud] Organization ID. If you don&#39;t have this ID, you can find it in the [!UICONTROL Administration] section of the [!DNL Experience Cloud] dashboard. 您需要管理員權限才能檢視此控制面板。See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
+In the namespace key-value pair, the `*`MCORG`*` variable is your [!DNL Experience Cloud] Organization ID. If you don't have this ID, you can find it in the [!UICONTROL Administration] section of the [!DNL Experience Cloud] dashboard. 您需要管理員權限才能檢視此控制面板。See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
 
 ### 設定SDK
 
@@ -153,7 +153,7 @@ See the [Configure SDKs](../../features/profile-merge-rules/merge-rules-start.md
 
 ## Legacy DIL {#legacy-dil}
 
-If you&#39;re not using [!DNL Experience Cloud ID Service] yet, you really ought to. 但是，我們瞭解移至新程式碼需要仔細思考和測試。In these cases, check your `DIL.create` function to make sure this is set up properly as shown in the code sample below.
+If you're not using [!DNL Experience Cloud ID Service] yet, you really ought to. 但是，我們瞭解移至新程式碼需要仔細思考和測試。In these cases, check your `DIL.create` function to make sure this is set up properly as shown in the code sample below.
 
 <pre class="js"><code>DIL. create({partner：「合作夥伴名稱」，陳述式ID：{dpuuid：<i>dpuuid</i>，dpid：<i>dpid</i>}})；</code>
 </pre>
