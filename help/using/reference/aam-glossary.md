@@ -19,7 +19,7 @@ source-git-commit: d5a8b763d2d0d1ceebe2252ebd283943dcbc1754
 
 **演算法模型**
 
-Use [!UICONTROL Algorithmic Modeling] as a means of extending reach beyond the core of users you&#39;ve identified. 此功能可協助您透過自動化資料分析發掘新的獨特受眾。Manage your [!UICONTROL Algorithmic Models] in **[!UICONTROL Audience Data > Models]**.
+Use [!UICONTROL Algorithmic Modeling] as a means of extending reach beyond the core of users you've identified. 此功能可協助您透過自動化資料分析發掘新的獨特受眾。Manage your [!UICONTROL Algorithmic Models] in **[!UICONTROL Audience Data > Models]**.
 
 See [Understanding Algorithmic Models](../features/algorithmic-models/understanding-models.md#understanding-models).
 
@@ -78,7 +78,7 @@ In [Addressable Audience](/help/using/features/addressable-audiences.md), this m
 
 **demdex.net**
 
-Demdex.net is a legacy domain controlled by [!DNL Adobe]. It reflects [!DNL Audience Manager]&#39;s original, pre-acquisition name ( [!DNL Demdex]). [!DNL Adobe] 於2011 [!DNL Demdex] 年收購，並重新品牌公司 [!DNL Audience Manager]。`demdex.net` 對網域的所有HTTP呼叫都是傳送到的呼叫 [!DNL Adobe]。
+Demdex.net is a legacy domain controlled by [!DNL Adobe]. It reflects [!DNL Audience Manager]'s original, pre-acquisition name ( [!DNL Demdex]). [!DNL Adobe] 於2011 [!DNL Demdex] 年收購，並重新品牌公司 [!DNL Audience Manager]。`demdex.net` 對網域的所有HTTP呼叫都是傳送到的呼叫 [!DNL Adobe]。
 
 請參閱[瞭解向 Demdex 網域進行的呼叫](../reference/demdex-calls.md)。
 
@@ -94,7 +94,7 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **目標**
 
-In [!DNL Audience Manager], a destination is any other system (ad server, DSP, ad network, etc.) 您要與其共用資料。The [!UICONTROL Destination Builder] in our UI provides the tools that let you create and manage these data delivery processes. [!DNL Audience Manager] 目的地功能 **[!UICONTROL Audience Data > Destinations]** 位於其中。
+In [!DNL Audience Manager], a destination is any other system (ad server, DSP, ad network, etc.) 您要與其共用資料。The [!UICONTROL Destination Builder] in our UI provides the tools that let you create and manage these data delivery processes. [!DNL Audience Manager] 目的地功能 **[!UICONTROL Audience Data > Destinations]**&#x200B;位於其中。
 
 <br> 
 
@@ -140,7 +140,7 @@ Google Advertising ID是Google指派給執行Android作業系統之硬體裝置�
 
 **GUID**
 
-全域唯一識別碼的縮寫字元。We don&#39;t use the term GUID in [!DNL Audience Manager]. In our case, the GUID is the [!DNL Audience Manager] UUID.
+全域唯一識別碼的縮寫字元。We don't use the term GUID in [!DNL Audience Manager]. In our case, the GUID is the [!DNL Audience Manager] UUID.
 See [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 ## I-J {#i-j}
