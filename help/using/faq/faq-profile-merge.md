@@ -32,7 +32,7 @@ profile-merge-faq.xml
 
 **甚麼是外部裝置圖形？**
 
-An external device graph is any device graph in [!DNL Audience Manager] that has not been created exclusively from your own cross-device data sources. For example, when you create a [Profile Merge Rule](../features/profile-merge-rules/merge-rules-start.md) and choose the [!UICONTROL Co-op Device Graph] or third-party device graph options, you&#39;re working with an external device graph. See [Device Options](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
+An external device graph is any device graph in [!DNL Audience Manager] that has not been created exclusively from your own cross-device data sources. For example, when you create a [Profile Merge Rule](../features/profile-merge-rules/merge-rules-start.md) and choose the [!UICONTROL Co-op Device Graph] or third-party device graph options, you're working with an external device graph. See [Device Options](../features/profile-merge-rules/merge-rule-definitions.md#device-options).
 
 <br> 
 
@@ -88,7 +88,7 @@ The devices [!DNL Audience Manager] merges and reads are the same devices that a
 
 <br> 
 
-**哪些裝置**可以使用包含裝置圖表的區段[!UICONTROL Profile Merge Rule]符合區段資格？**
+**哪些裝置&#x200B;**可以使用包含裝置圖表的區段[!UICONTROL Profile Merge Rule]符合區段資格？**
 
 To qualify for a segment, devices must have been seen by Audience Manager on our [edge data servers](../reference/system-components/components-edge.md) after the segment was created. 此外，Edge伺服器：
 
@@ -192,7 +192,7 @@ Audience Manager merges up to four devices when evaluating segments with a [!UIC
 
 <br> 
 
-**我可以使用裝置圖表即時查看符合特定**區段的[!UICONTROL Profile Merge Rules]裝置數目嗎？**
+**我可以使用裝置圖表即時查看符合特定&#x200B;**區段的[!UICONTROL Profile Merge Rules]裝置數目嗎？**
 
 是。即時人口度量會使用裝置圖表連結的所有裝置描述檔，擷取目前裝置(即時檢視裝置)的區段資格。
 
