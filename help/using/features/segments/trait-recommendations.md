@@ -125,7 +125,7 @@ Audience Manager calculate the [!UICONTROL Trait Similarity Score] between two t
 
 ### 範例-低特徵相似性分數
 
-Given two traits A and B, let&#39;s say each of the traits has a population of 1,000,000 [!UICONTROL UUID]s, 25,000 [!UICONTROL UUID]s of which qualify for both traits.
+Given two traits A and B, let's say each of the traits has a population of 1,000,000 [!UICONTROL UUID]s, 25,000 [!UICONTROL UUID]s of which qualify for both traits.
 Using the formula above, this will result in: 25,000 / 1,975,000 = 0.012. This is a low [!UICONTROL Trait Similarity Score], the two traits are very dissimilar.
 
 ![](assets/Trait-Recommendations-Low-overlap.png)
