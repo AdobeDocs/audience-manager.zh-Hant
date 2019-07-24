@@ -131,7 +131,7 @@ By default, `DIL.getSearchReferrer` recognizes searches from these search engine
 
 **說明**
 
-下列程式碼示範如何取得任何支援搜尋引擎的搜尋反向連結。In this case, let&#39;s assume a user searched on the term &quot;homes&quot; from [!DNL Google] Canada ( `www.google.ca`). 此程式碼可協助您擷取這些搜尋詞，並將其傳送至Audience Manager。
+下列程式碼示範如何取得任何支援搜尋引擎的搜尋反向連結。In this case, let's assume a user searched on the term "homes" from [!DNL Google] Canada ( `www.google.ca`). 此程式碼可協助您擷取這些搜尋詞，並將其傳送至Audience Manager。
 
 **基本程式碼**
 
@@ -143,7 +143,7 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 **列出搜尋引擎代碼範例**
 
-In this case, let&#39;s assume that a user searched for the term &quot;homes&quot; from [!DNL Google] Canada ( `www.google.ca`). Note how the code prefixes the required `c_` parameter to search engine ( `c_se`) and search term ( `c_st`). `c_` 是 [必要首碼](../features/traits/trait-variable-prefixes.md) ，可將客戶定義的變數識別為Audience Manager。
+In this case, let's assume that a user searched for the term "homes" from [!DNL Google] Canada ( `www.google.ca`). Note how the code prefixes the required `c_` parameter to search engine ( `c_se`) and search term ( `c_st`). `c_` 是 [必要首碼](../features/traits/trait-variable-prefixes.md) ，可將客戶定義的變數識別為Audience Manager。
 
 <pre class="java"><code>var adobe_ dil= DIL. create({合作夥伴：<i>「合作夥伴名稱</i>」})；
 var search_ referrer= DIL. tools. getPrevireer()；
@@ -158,7 +158,7 @@ c_ st：se. keywords
 
 **未列出的搜尋引擎程式碼範例**
 
-In this case, let&#39;s assume that a user searched for the term &quot;homes&quot; from `dogpile.com`. Because [!DNL Dogpile] is not supported by default, you can configure DIL to recognize this search engine and return the search terms to Audience Manager. 您的程式碼看起來類似下列：
+In this case, let's assume that a user searched for the term "homes" from `dogpile.com`. Because [!DNL Dogpile] is not supported by default, you can configure DIL to recognize this search engine and return the search terms to Audience Manager. 您的程式碼看起來類似下列：
 
 <pre class="java"><code>var adobe_ dil= DIL. create({合作夥伴：<i>「合作夥伴名稱</i>」})；
 var search_ referrer= DIL. tools. getPrevireer(document. referrer，{
