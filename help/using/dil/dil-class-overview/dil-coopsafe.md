@@ -57,9 +57,9 @@ To use `isCoopSafe` you must:
 
 布林值選項決定 Device Co-op 是否使用客戶資料。
 
-* `isCoopSafe: true`: 行動 SDK 或是網站所蒐集的訪客資料*可以*用來協助建立裝置圖形。
+* `isCoopSafe: true`: 行動 SDK 或是網站所蒐集的訪客資料&#x200B;*可以*&#x200B;用來協助建立裝置圖形。
 
-* `isCoopSafe: false`: 行動 SDK 或是網站所蒐集的訪客資料*不可以*用來協助建立裝置圖形。
+* `isCoopSafe: false`: 行動 SDK 或是網站所蒐集的訪客資料&#x200B;*不可以*&#x200B;用來協助建立裝置圖形。
 
 **程式碼範例**
 
