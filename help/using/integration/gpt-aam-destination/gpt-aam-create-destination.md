@@ -17,7 +17,7 @@ You can send qualified segments to [!DNL DFP] through a client-side (browser-sid
 
 ## 目的地
 
-In Audience Manager, a *`destination`* is any other system (ad server, [!DNL DSP], ad network, etc.) 您要與其共用資料。[!UICONTROL Destination Builder] 提供可讓您建立和管理這些資料傳送程序的工具。Audience Manager destination features are located in *[!UICONTROL Audience Data] &gt; [!UICONTROL Destinations]*. To get started, click **[!UICONTROL Add New Destination]** and follow the steps below.
+In Audience Manager, a *`destination`* is any other system (ad server, [!DNL DSP], ad network, etc.) 您要與其共用資料。[!UICONTROL Destination Builder] 提供可讓您建立和管理這些資料傳送程序的工具。Audience Manager destination features are located in *[!UICONTROL Audience Data]&gt;[!UICONTROL Destinations]*. To get started, click **[!UICONTROL Add New Destination]** and follow the steps below.
 
 ## 基本資訊
 
