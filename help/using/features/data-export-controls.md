@@ -19,7 +19,7 @@ source-git-commit: 302670f294574c3b56ccd16aeca8ebab8f4e8ce9
 
 [!UICONTROL Data Export Controls] 可讓您分類 [資料來源](../features/datasources-list-and-settings.md#data-sources-list-and-settings) 和 [目的地](../features/destinations/destinations.md)。您套用的分類會決定資料可以或無法匯出至目的地。此功能包含：
 
-* **[!UICONTROL Data Export Controls]**：您可以設定 *資料來源*的資料匯出控制。在資料來源上設定時，這些控制項會限制資料來源及其特徵的使用方式。
+* **[!UICONTROL Data Export Controls]**：您可以設定 *資料來源*&#x200B;的資料匯出控制。在資料來源上設定時，這些控制項會限制資料來源及其特徵的使用方式。
 * **[!UICONTROL Data Export Labels]**：您可以在 *目的地設定資料匯出標籤*。在目的地上設定時，這些標籤會識別目的地如何使用資料。See [Add Data Export Labels to a Destination](/help/using/features/destinations/manage-destinations.md#add-data-export-labels) to learn how to add export labels to a destination.
 
 根據套用至資料來源和目的地的分類，匯出控制項會阻止您：
