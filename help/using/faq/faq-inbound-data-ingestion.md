@@ -52,7 +52,7 @@ Removed the Data Translation File bullet from the list above.
 * Work with your data provider to format the daily inbound data file according to [!DNL Adobe] specifications.
 * Transfer a test data file to [!DNL Adobe] for format verification.
 * Work with your [!DNL Adobe] consultant to produce a taxonomy suitable for interpreting the contents of the data file.
-* In the staging/development environment, confirm that the ID sync is configured to properly pick up the data provider&#39;s visitor ID and transfer it to the [!DNL Audience Manager] servers in realtime.
+* In the staging/development environment, confirm that the ID sync is configured to properly pick up the data provider's visitor ID and transfer it to the [!DNL Audience Manager] servers in realtime.
 * 部署DIL/ID同步至生產環境。您的Adobe顧問將會在DIL程式碼中設定ID同步為模組。
 * Transfer production data files to [!DNL Audience Manager]. 基於ID同步映射的相依性，在程式碼部署後最多一周內開始傳輸資料或許可行，不過當程式碼進入生產時，您可以立即開始傳輸資料檔案。
 
