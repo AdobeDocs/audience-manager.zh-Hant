@@ -42,7 +42,7 @@ Overview and workflow for data providers who want to sell data from within [!DNL
 * **說明：** 告訴購買者有關資料饋送內容的資訊。
 * **特性：** 每個資料饋送中的特徵數。您可以透過私人資料饋送將此項目隱藏。
 * **最近30天唯一客戶數：** 最近30天內所看到的獨特使用者人數。您可以透過私人資料饋送將此項目隱藏。
-* **上個月的總費用：** 訂閱資料購買者的金額。報告時段將於每月10日結束。「覆蓋」帳戶會以三角形/驚嘆號圖示標示。You can [deactivate a subscriber&#39;s data feed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#deactivate-data-feed) if they misuse your data or if their account is overdue.
+* **上個月的總費用：** 訂閱資料購買者的金額。報告時段將於每月10日結束。「覆蓋」帳戶會以三角形/驚嘆號圖示標示。You can [deactivate a subscriber's data feed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#deactivate-data-feed) if they misuse your data or if their account is overdue.
 * **狀態：** 顯示動態消息是活動、非活動、私人或公開。
 * **訂閱者：** 顯示有多少購買者使用資料饋送。按一下此欄中的數字，即可查看購買者的公司名稱、訂閱、帳單和訂閱狀態。
 * **要求：** 資料饋送的存取請求數。
