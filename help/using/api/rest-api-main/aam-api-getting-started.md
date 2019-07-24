@@ -41,7 +41,7 @@ We recommend you create a separate, technical user account for working with the 
 * Identify what service is calling the [!DNL API] (e.g., calls from your apps that use our [!DNL API]s or from other tools that make [!DNL API] requests).
 * Provide uninterrupted access to the [!DNL API]s. An account tied to a specific person may be deleted when they leave your company. This will prevent you from working with the available [!DNL API] code. 未系結至特定員工的一般帳戶可協助您避免此問題。
 
-As an example or use case for this type of account, let&#39;s say you want to change a lot of segments at once with the [Bulk Management Tools](../../reference/bulk-management-tools/bulk-management-intro.md). Well, to do this, your user account needs [!DNL API] access. Rather than add permissions to a specific user, create a non-specific, [!DNL API] user account that has the appropriate credentials, key, and secret to make [!DNL API] calls. This is also useful if you develop your own applications that use the Audience Manager [!DNL API]s.
+As an example or use case for this type of account, let's say you want to change a lot of segments at once with the [Bulk Management Tools](../../reference/bulk-management-tools/bulk-management-intro.md). Well, to do this, your user account needs [!DNL API] access. Rather than add permissions to a specific user, create a non-specific, [!DNL API] user account that has the appropriate credentials, key, and secret to make [!DNL API] calls. This is also useful if you develop your own applications that use the Audience Manager [!DNL API]s.
 
 Work with your Audience Manager consultant to set up a generic, [!DNL API]-only user account.
 
@@ -63,7 +63,7 @@ Password authentication secure access our [!DNL REST API]. The steps below outli
 
 聯絡您的合作夥伴解決方案管理員。They will provide you with an [!DNL API] client ID and secret. The ID and secret authenticate you to the [!DNL API].
 
-Note: If you&#39;d like to receive a refresh token, specify that when you request [!DNL API] access.
+Note: If you'd like to receive a refresh token, specify that when you request [!DNL API] access.
 
 ### 步驟2：要求Token
 
