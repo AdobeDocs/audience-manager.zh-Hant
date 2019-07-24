@@ -3,7 +3,7 @@ description: 從所有訊號中建立新特徵，包括已在特徵中使用的�
 seo-description: 從所有訊號中建立新特徵，包括已在特徵中使用的特徵，並擷取在特徵建立之後符合資格的未來受眾。
 seo-title: 從訊號建立特徵
 title: 從訊號建立特徵
-uuid: 4 f324404-0c24-4e3 b-96c1-7c1 b28 a4536 d
+uuid: 4f324404-0c24-4e3b-96c1-7c1b28a4536d
 translation-type: tm+mt
 source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
 
@@ -30,7 +30,7 @@ To create new traits from the **[!UICONTROL Signal Dashboard]**, identify the si
 
 ![](assets/signals-create-trait.png)
 
-You&#39;ll be redirected to the **[Trait Builder](../../features/traits/about-trait-builder.md)** to create your new trait(s).
+You'll be redirected to the **[Trait Builder](../../features/traits/about-trait-builder.md)** to create your new trait(s).
 
 ## Create Traits from Signal Search {#create-traits-from-signal-search}
 
