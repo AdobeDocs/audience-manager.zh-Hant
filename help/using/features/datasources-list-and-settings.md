@@ -27,7 +27,7 @@ You can also manage data sources using [!DNL API] methods. For more information,
 
 [!UICONTROL Data Sources] 控制面板(**[!UICONTROL Audience Data]** &gt; **[!UICONTROL Data Sources]**)包含可幫助您：
 
-* See all your existing data sources, including each data source&#39;s description, status, and whether it is [!UICONTROL Inbound], [!UICONTROL Outbound], both, or a [!UICONTROL Shared Provider].
+* See all your existing data sources, including each data source's description, status, and whether it is [!UICONTROL Inbound], [!UICONTROL Outbound], both, or a [!UICONTROL Shared Provider].
 * 依名稱搜尋資料來源。
 * 建立、編輯和刪除資料來源。
 
