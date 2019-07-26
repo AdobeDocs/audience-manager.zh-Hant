@@ -21,7 +21,7 @@ source-git-commit: 1d516c49a16c38adcc22827dc254da1ebada0734
 
 預設登陸頁面會根據類型列出目的地。您可以使用四個可用標籤來篩選目的地：
 
-* **** 全部：顯示所有目的地類型。
+* ****&#x200B;全部：顯示所有目的地類型。
 * **Adobe Experience Cloud**：顯示將資料傳送至其他Adobe Experience Cloud解決方案的目標。目前唯一支援的選項是Adobe Analytics。See [Configure an Analytics Destination](/help/using/features/destinations/create-analytics-destination.md).
 * **整合平台**：顯示以人員為主的裝置目的地(也稱為伺服器對伺服器目的地)。請注意，以人員為基礎的目的地目前僅適用於特定客戶。
 * **自訂**：顯示Cookie和URL目的地。
@@ -39,7 +39,7 @@ For more information about the displayed information, see [Addressable Audiences
 
 ## Destination Builder {#destination-builder}
 
-[!UICONTROL Destination Builder] 可讓您建立Cookie或 [!DNL URL] 目的地。You cannot create server-to-server ([!DNL S2S]) destinations with [!UICONTROL Destination Builder], but you can manage their segment mappings. Contact your consultant to set up a [!DNL S2S] destination. [!UICONTROL Destination Builder]**[!UICONTROL Audience Data > Destinations]** 位於中。
+[!UICONTROL Destination Builder] 可讓您建立Cookie或 [!DNL URL] 目的地。You cannot create server-to-server ([!DNL S2S]) destinations with [!UICONTROL Destination Builder], but you can manage their segment mappings. Contact your consultant to set up a [!DNL S2S] destination. [!UICONTROL Destination Builder]**[!UICONTROL Audience Data > Destinations]**&#x200B;位於中。
 
 ### Destination Builder Settings {#destination-builder-settings}
 
@@ -86,7 +86,7 @@ To create a new cookie destination, go to **[!UICONTROL Audience Data > Destinat
 4. In the **[!UICONTROL Category]** list, choose **[!UICONTROL Custom]**.
 5. In the **[!UICONTROL Environment]** list, select **[!UICONTROL Browser]**. 您無法針對原生行動環境(例如Android或iOS應用程式)設定Cookie目的地。
 6. In the **[!UICONTROL Type]** list, click **[!UICONTROL Cookie]**.
-7. *(選擇性)* 選擇 **[!UICONTROL Auto-fill Destination Mapping]** 一個。選項包括:
+7. *(選擇性)* 選擇 **[!UICONTROL Auto-fill Destination Mapping]**&#x200B;一個。選項包括:
    * **[!UICONTROL Segment ID]**：自動新增區段ID並傳送至目的地。
    * **[!UICONTROL Integration Code Value]**：自動新增區段整合代碼並傳送至目的地對應。整合代碼是客戶建立並使用的唯一識別碼。僅限255個字元上限。
 8. Click **[!UICONTROL Next]** to go to the [!UICONTROL Configuration] settings or click **[!UICONTROL Data Export Labels]** to apply export controls to the destination.
@@ -112,7 +112,7 @@ This section contains options that apply [data export controls](../../features/d
 1. Click **[!UICONTROL Configuration]** to expose the controls
 1. 命名Cookie。避免縮寫和特殊字元。
 1. 選擇資料格式選項。這些選項可讓您為將區段資料傳送至目的地的索引鍵值配對選擇分隔字元和分隔符號。格式選項包括：
-   * **單一索引鍵：** 可讓您將索引鍵設定為索引鍵值配對。You&#39;ll set the value after you select a segment in the [!UICONTROL Segment Mappings] section below.
+   * **單一索引鍵：** 可讓您將索引鍵設定為索引鍵值配對。You'll set the value after you select a segment in the [!UICONTROL Segment Mappings] section below.
    * **多索引鍵：** 可讓您設定索引鍵值配對的索引鍵和值。在下方「區段對應」區段中選取區段後，您將建立索引鍵值配對。
 See [Standard and Serial Key-Value Pairs](../../features/destinations/key-value-pairs.md) for more information about these data elements.
 1. Click **[!UICONTROL Save]**.
@@ -150,7 +150,7 @@ To create a new [!DNL URL] destination, go to **[!UICONTROL Audience Data > Dest
 1. In the **[!UICONTROL Category]** list, choose **[!UICONTROL Custom]**.
 1. In the **[!UICONTROL Environment]** list, select the environment in which to trigger the URL destination.
 1. In the **[!UICONTROL Type]** list, click **[!UICONTROL URL]**.
-1. *(選擇性)* 選擇 **[!UICONTROL Auto-fill Destination Mapping]** 一個。選項包括:
+1. *(選擇性)* 選擇 **[!UICONTROL Auto-fill Destination Mapping]**&#x200B;一個。選項包括:
    * **[!UICONTROL Segment ID]**：自動新增區段ID並傳送至目的地。
    * **[!UICONTROL Integration Code Value]**：自動新增區段整合代碼並傳送至目的地對應。整合代碼是客戶建立並使用的唯一識別碼。僅限255個字元上限。
 1. Click **[!UICONTROL Next]** to go to the [!UICONTROL Configuration] settings or click **[!UICONTROL Data Export Labels]** to apply export controls to the destination.
@@ -288,7 +288,7 @@ You can only add or edit segments for a server-to-server ([!DNL S2S]) destinatio
 
 To add or edit segment mappings for an [!DNL S2S] destination:
 
-1. **[!UICONTROL Audience Data > Destinations]** 前往。Select **Integrated Platforms &gt; Device-Based** and find the [!DNL S2S] destination you want to work with.
+1. **[!UICONTROL Audience Data > Destinations]**&#x200B;前往。Select **Integrated Platforms &gt; Device-Based** and find the [!DNL S2S] destination you want to work with.
 1. [!UICONTROL Action] 在欄中，按一下鉛筆圖示以編輯目的地。
    * **[!UICONTROL Search and Add Segments]** 在方塊中，開始鍵入區段名稱，或按一下 **[!UICONTROL Browse All Segments]** 可瀏覽可用區段清單。
    * Click **[!UICONTROL Add Selected Segments]** when you find the segment you want to use. Adding a segment opens the [!UICONTROL Edit Mapping] window.
