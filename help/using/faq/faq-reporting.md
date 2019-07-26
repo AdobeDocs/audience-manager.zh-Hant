@@ -25,9 +25,9 @@ faq_reports.xml
 
 **對於新上線的特性，為甚麼[!UICONTROL Trait Graph]有時候顯示低於預期數字或0？**
 
-Sometimes, after you upload traits, the [!UICONTROL Trait Graph] doesn&#39;t show any results or shows lower than expected numbers. 當我們收到的資料量太大時，傳入處理工作就無法完成吸收此資訊，直到該日期的報告截止日期為止。
+Sometimes, after you upload traits, the [!UICONTROL Trait Graph] doesn't show any results or shows lower than expected numbers. 當我們收到的資料量太大時，傳入處理工作就無法完成吸收此資訊，直到該日期的報告截止日期為止。
 
-As a result, this data is sent to the reporting system late and won&#39;t show up in the 1-day reporting interval which is used for plotting the [!UICONTROL Trait Graph]. However, you can view this data in the 7, 14, 30, and 60-day report intervals in a [Trend](../reporting/trend-reports.md#trend-report-overview) or [General Report](../reporting/general-reports.md#general-reports-overview) on the following day.
+As a result, this data is sent to the reporting system late and won't show up in the 1-day reporting interval which is used for plotting the [!UICONTROL Trait Graph]. However, you can view this data in the 7, 14, 30, and 60-day report intervals in a [Trend](../reporting/trend-reports.md#trend-report-overview) or [General Report](../reporting/general-reports.md#general-reports-overview) on the following day.
 
 <br> 
 
