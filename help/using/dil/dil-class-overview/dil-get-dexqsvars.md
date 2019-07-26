@@ -29,7 +29,7 @@ r_dil_get_dexqsvars.xml
 |---|---|---|
 | `variableName` | 字串 | 要取得值的變數名稱。 |
 | `partner` | 字串 | 要搜尋的合作夥伴名稱。 |
-| `containerNSID` | 整數 | The [!DNL NSID] of the container you&#39;re searching for. Defaults is `0`. |
+| `containerNSID` | 整數 | The [!DNL NSID] of the container you're searching for. Defaults is `0`. |
 
 **回應**
 
