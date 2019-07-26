@@ -68,11 +68,11 @@ source-git-commit: 375dff525598ef392f9eecd0f22ee9dc097df4bd
 
     如要將Apache授權套用至您的作品，請附上隨附的欄位
     通知，並附上括弧「{}」
-    (以您自己的識別資訊取代)的欄位。(Don&#39;t include
+    (以您自己的識別資訊取代)的欄位。(Don't include
     the brackets!)  The text should be enclosed in the appropriate
     comment syntax for the file format. We also recommend that a
     file or class name and description of purpose be included on the
-    same &quot;printed page&quot; as the copyright notice for easier
+    same "printed page" as the copyright notice for easier
     identification within third-party archives.
 
 Copyright2018Adobe Systems，Inc
