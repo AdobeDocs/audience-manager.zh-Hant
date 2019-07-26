@@ -40,7 +40,7 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
 
 ## File Variables Defined {#file-variables-defined}
 
-表格列出並定義格式正確的傳入資料檔案中使用的變數。*斜體*表示變數預留位置。
+表格列出並定義格式正確的傳入資料檔案中使用的變數。*斜體*&#x200B;表示變數預留位置。
 
 <table id="table_FE043CE392B34D5194111188E5C39671"> 
  <thead> 
