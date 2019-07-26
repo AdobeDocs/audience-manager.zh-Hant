@@ -91,7 +91,7 @@ Audience Manager可讓您根據共用屬性或特徵，匯總使用者並行銷�
 
 <br> 
 
-**Audience Manager只會顯示[!UICONTROL Addressable Audiences]目標的度量[!UICONTROL Server-to-Server]和匹配率。Can you explain why we don&#39;t see these figures for Cookie and URL destinations?**
+**Audience Manager只會顯示[!UICONTROL Addressable Audiences]目標的度量[!UICONTROL Server-to-Server]和匹配率。Can you explain why we don't see these figures for Cookie and URL destinations?**
 
 其預設為ID同步。For [!UICONTROL Server-to-Server] destinations, we transfer data offline (either real-time or batch) and we need to send the ID that the destination partner understands, so they can map it back to the browser. 區段定址數字是區段總人口數的子集。
 
