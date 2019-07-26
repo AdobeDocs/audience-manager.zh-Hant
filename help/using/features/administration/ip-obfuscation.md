@@ -41,7 +41,7 @@ IP位址模糊化僅適用於Audience Manager管理員帳戶。See [Create Users
 1. Log in to Audience Manager with an administrator account and go to **Administration &gt; Privacy**.
 2. 選擇您要使用的IP模糊化類型。
    1. **模糊化所有IP位址：** 選取此選項，讓Audience Manager模糊化所有訪客IP位址的最後八位數字，不論其來源來源為何。
-   2. **模糊化特定國家的IP位址：** 選取此選項，讓Audience Manager模糊化特定國家的訪客IP位址的最後八位數字。Use the **List of Countries** or the corresponding **Search** field to find the countries to enable IP obfuscation for, and click the + icon to add them to the **Selected for Obfuscation** list. Once you&#39;ve added all the required countries to the **Selected for Obfuscation** list, click **Save**.
+   2. **模糊化特定國家的IP位址：** 選取此選項，讓Audience Manager模糊化特定國家的訪客IP位址的最後八位數字。Use the **List of Countries** or the corresponding **Search** field to find the countries to enable IP obfuscation for, and click the + icon to add them to the **Selected for Obfuscation** list. Once you've added all the required countries to the **Selected for Obfuscation** list, click **Save**.
 
 ![](assets/ip-obfuscation.png)
 
@@ -49,7 +49,7 @@ IP位址模糊化僅適用於Audience Manager管理員帳戶。See [Create Users
 
 To disable IP address obfuscation globally, go to **Administration &gt; Privacy**, select **Do not obfuscate IP addresses**, and click **Save**.
 
-To disable IP address obfuscation for specific countries, find the countries in the **Selected for Obfuscation** list, then click their corresponding **X** icon. Click **Save** when you&#39;re done.
+To disable IP address obfuscation for specific countries, find the countries in the **Selected for Obfuscation** list, then click their corresponding **X** icon. Click **Save** when you're done.
 
 ## 相關概念 {#related-concepts}
 
