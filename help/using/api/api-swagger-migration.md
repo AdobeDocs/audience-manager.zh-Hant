@@ -13,13 +13,13 @@ source-git-commit: d368699d0de9a43cb7cf2c1af64da941a811db71
 
 # Audience Manager API Code Migration {#audience-manager-api-code-migration}
 
-在Audience Manager中，我們的工程師、開發人員和程式碼外觀就像您一樣。And, like you, we want to work with reliable, accurate [!DNL API] documentation. As a result, we&#39;re re-writing our [!DNL API] content in [!DNL Swagger] and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager [!DNL API] code.
+在Audience Manager中，我們的工程師、開發人員和程式碼外觀就像您一樣。And, like you, we want to work with reliable, accurate [!DNL API] documentation. As a result, we're re-writing our [!DNL API] content in [!DNL Swagger] and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager [!DNL API] code.
 
-## Movin&#39; On Up {#code-migration-details}
+## Movin' On Up {#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-[Adobe Audience Manager API文件](https://bank.demdex.com/portal/swagger/index.html) 網站是我們修訂 [!DNL API] 內容的新首頁。We&#39;ll try to re-write and move a few sets of [!DNL API] methods with each release. This means you&#39;ll have to check in both the new location and the [REST API](../api/rest-api-main/rest-api-main.md) documentation to find all of the available methods. Eventually, all of the public [!DNL API]s will be on the [!DNL Audience Manager] [!DNL API] docs site. The following table lists the revised and migrated [!DNL API]s.
+[Adobe Audience Manager API文件](https://bank.demdex.com/portal/swagger/index.html) 網站是我們修訂 [!DNL API] 內容的新首頁。We'll try to re-write and move a few sets of [!DNL API] methods with each release. This means you'll have to check in both the new location and the [REST API](../api/rest-api-main/rest-api-main.md) documentation to find all of the available methods. Eventually, all of the public [!DNL API]s will be on the [!DNL Audience Manager] [!DNL API] docs site. The following table lists the revised and migrated [!DNL API]s.
 
 <table id="table_CD3C244CB02C48C898745FB982EC828C"> 
  <thead> 
