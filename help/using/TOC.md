@@ -149,7 +149,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
          + [獨特的使用者觸及面](reporting/audience-optimization-reports/aor-advertisers/unique-user-reach.md)
          + [回報的轉換特徵](reporting/audience-optimization-reports/aor-advertisers/reported-conversion-traits.md)
          + [跨通道轉換](reporting/audience-optimization-reports/aor-advertisers/cross-channel-conversion-reporting.md)
-      + Audience Optimization for Publishers {#audience-optimization-publishers}
+      + 發佈者適用的 Audience Optimization {#audience-optimization-publishers}
          + [出版業者概述的受眾最佳化](reporting/audience-optimization-reports/aor-publishers/aor-publishers.md)
          + [將 DFP 資料檔案匯入 Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
          + [區段績效報表](reporting/audience-optimization-reports/aor-publishers/publisher-segment-performance.md)
