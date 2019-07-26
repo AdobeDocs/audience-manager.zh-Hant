@@ -33,7 +33,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe員工的重大變更
 
-If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it&#39;s your job to contribute to or author technical articles, you should use the private repository [https://git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it's your job to contribute to or author technical articles, you should use the private repository [https://git.corp.adobe.com/AdobeDocs](https://git.corp.adobe.com/AdobeDocs). <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## 工具與設定
 
@@ -52,7 +52,7 @@ See the [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/co
 
 在公開存放庫中，系統會指派自動化標籤給提取請求，以協助我們管理提取請求工作流程，並協助您瞭解提取請求的內容：
 
-* **傳送給作者** 的變更：已收到擱置中提取要求的通知。
+* **傳送給作者**&#x200B;的變更：已收到擱置中提取要求的通知。
 * **立即合併**：準備好供我們的提取要求審查小組審閱。
 
 
