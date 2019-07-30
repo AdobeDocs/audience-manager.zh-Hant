@@ -7,7 +7,7 @@ title: 管理資料饋送訂閱
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-22043095c0 ba5
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
 ---
 
@@ -280,7 +280,7 @@ When you click the name of a data plan in the [!UICONTROL Marketplace], [!DNL Au
    * Click **[!UICONTROL Request More Details]** to ask the data provider questions about the selected data feed or to request a discount. 此功能會將您的意見和問題直接傳送給資料提供者。
 
 1. 資料饋送報表量度。Venn圖表(及相關量度)會顯示過去30天的特徵重疊資料。See [The Marketplace: About](marketplace-data-buyers.md#about-marketplace) for details.
-   * **[!UICONTROL 30 Day Overlapped Uniques]**：帳戶中與提供者帳戶中使用者重疊的唯一使用者數量。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**：帳戶中與提供者帳戶中使用者重疊的唯一使用者數量。For a definition of unique users, see AAM UUID in the [Index of IDs in Audience Manager](/help/using/reference/ids-in-aam.md).
    * **[!UICONTROL 30 Day Provider Unique Users]**：來自提供者帳戶的獨特使用者人數。
    * **[!UICONTROL Your Unique Users]**：來自您帳戶的獨特使用者人數。
 
