@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 大量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68 e-cc0 c6 c6 aa2 f
 translation-type: tm+mt
-source-git-commit: f6fd1b99467a35b3f2c978c4b2e28d562eaa3c52
+source-git-commit: 215054718e9248bd44ba99baeb2a10236701d98e
 
 ---
 
@@ -30,13 +30,17 @@ c_bulk_start.xml
 
 This feature uses a Microsoft Excel spreadsheet with macros that make secure, authenticated calls to the [!DNL Audience Manager] APIs. API提供可讓您大量變更的方法和服務。您不需要知道如何編寫程式碼或使用我們的API來使用它。工作表包含執行特定批量變更功能的欄標題和標籤。若要進行批量變更，只需將預先定義的標題新增至特定工作表，提供您要大量變更的資訊，然後按一下動作按鈕。工作表和API會為您完成其餘工作。
 
+## 下載 {#download}
+
+Download the latest worksheet **[here](assets/BAAAM_August_2018.xlsm)**.
+
 ## 必備條件 {#prereqs}
 
 To use the [!DNL Bulk Management Tools], you need the following:
 
 * Your [!DNL Audience Manager] user name and password. 身為客戶，您應該已擁有這些認證。
 * API用戶端ID和秘密金鑰。您的帳戶管理員可以提供您這些資訊。
-* [!UICONTROL Bulk Management Tools] 工作表。**[下載工作表](assets/BAAAM_August_2018.xlsm)** 以取得最新版本。
+* [!UICONTROL Bulk Management Tools] 工作表。[下載工作表](/help/using/reference/bulk-management-tools/bulk-management-intro.md#download) 以取得最新版本。
 
 * Microsoft Excel running on [!DNL Windows] or in a [!DNL Microsoft Windows] virtual machine running on [!DNL macOS X]. You must use 32-bit Excel for the [!UICONTROL Bulk Management Tools] to work.
 
