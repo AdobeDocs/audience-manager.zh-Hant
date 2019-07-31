@@ -4,10 +4,10 @@ seo-description: Audience Marketplace資料購買者同意根據每千個廣告�
 seo-title: 資料饋送購買者帳單
 solution: Audience Manager
 title: 資料饋送購買者帳單
-topic: DIL API
+keywords: 區段層級報告、區段層級、區段層級
 uuid: d7236667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
+source-git-commit: a02ef4cfa987c05e3db173f8e6e9a635d1ecd1fd
 
 ---
 
