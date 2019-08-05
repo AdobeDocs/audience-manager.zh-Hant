@@ -7,7 +7,7 @@ title: 資料饋送購買者帳單
 keywords: 區段層級報告、區段層級、區段層級
 uuid: d7236667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: fde8dd10e2693427c4330739fa013deb48be35be
+source-git-commit: 3107d34b1338e042320d837d2efbbc19c900e904
 
 ---
 
@@ -47,6 +47,8 @@ Audience Marketplace資料購買者同意使用每千個廣告印象([!DNL CPM])
 6. 在完成時按一下， **[!UICONTROL Save]** 檢閱確認對話方塊。
    ![確認區段使用](assets/confirm-segment-usage.png)
 7. Click **[!UICONTROL Confirm]**.
+
+<br> 
 
 ## 報告資料饋送層級的CPM使用量 {#feed-level-report}
 
@@ -221,6 +223,8 @@ In [!UICONTROL Audience Marketplace] you must self-report express value，for yo
 我們無法辨別哪些特徵會造成曝光，因為資格是根據 [!UICONTROL OR] 條件而定。因此， [!UICONTROL Audience Marketplace > Payables] 在區段中，您會根據特徵人口來加權每個提供者加權配置的加權。
 
 ![帳單區段-或](assets/billing-segment-or.png)
+
+<br> 
 
 ### 案例3：具有模型和啓動使用案例的區段
 
