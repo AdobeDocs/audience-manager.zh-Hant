@@ -7,7 +7,7 @@ title: 資料饋送購買者帳單
 keywords: 區段層級報告、區段層級、區段層級
 uuid: d7236667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: 3107d34b1338e042320d837d2efbbc19c900e904
+source-git-commit: dab5b255f966e63d51cc4d236d37bb0cb4eb960c
 
 ---
 
@@ -251,7 +251,7 @@ In [!UICONTROL Audience Marketplace] you must self-report express value，for yo
 
 資料饋送和使用案例的詳盡詳盡分析如下：
 
-![摘要劃分](assets/feed-breakdown.png)
+![摘要劃分](assets/feed-breakdown-alt.png)
 
 <br> 
 
