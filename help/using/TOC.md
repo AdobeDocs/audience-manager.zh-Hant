@@ -4,12 +4,12 @@ audience: 使用者
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
+source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
 
 ---
 
 
-# Audience Manager User Guide {#user-guide}
+# Audience Manager使用指南 {#user-guide}
 
 + [Audience Manager產品文件](aam-home.md)
 + 概述{#overview}
@@ -20,7 +20,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [資料安全性](overview/data-security-and-privacy/data-security.md)
       + [資料隱私權](overview/data-security-and-privacy/data-privacy.md)
       + [退出管理](overview/data-security-and-privacy/opt-out-management.md)
-   + General Data Protection Regulation (GDPR){#gdpr}
+   + 通用資料保護規則(GDPR){#gdpr}
       + [GDPR 對 Audience Manager 的影響](overview/aam-gdpr/aam-gdpr-details.md)
       + [目標的GDPR考量](overview/aam-gdpr/aam-gdpr-partners.md)
       + [GDPR 常見問題集](overview/aam-gdpr/aam-gdpr-faq.md)
@@ -32,7 +32,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [編輯您的帳戶設定](features/administration/edit-account-settings.md)
       + [IP 位址模糊化](features/administration/ip-obfuscation.md)
       + [使用量限制](features/administration/usage-limits.md)
-   + Algorithmic Models{#algorithmic-models}
+   + 演算法模型{#algorithmic-models}
       + [演算法模型](features/algorithmic-models/understanding-models.md)
       + [建立演算法模型](features/algorithmic-models/create-model.md)
       + [演算法模型：特徵排除](features/algorithmic-models/trait-exclusion-algo-models.md)
@@ -45,21 +45,21 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [Audience Lab進階功能](features/audience-lab/audience-lab-advanced.md)
    + 訪客交易市場{#audience-marketplace}
       + [訪客交易市場](features/audience-marketplace/audience-marketplace.md)
-      + Audience Marketplace for Data Providers{#audience-marketplace-for-data-providers}
+      + 資料供應商的觀眾市場{#audience-marketplace-for-data-providers}
          + [資料供應商的觀眾市場](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
          + [建立、價格和管理資料饋送](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
          + [資料饋送供應商帳單](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
-      + Audience Marketplace for Data Buyers{#audience-marketplace-for-data-buyers}
+      + 資料購買者的觀眾市場{#audience-marketplace-for-data-buyers}
          + [資料購買者的觀眾市場](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
          + [管理資料饋送訂閱](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
          + [資料饋送購買者帳單](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
       + [私人資料摘要](features/audience-marketplace/marketplace-private-feeds.md)
    + [客戶資料饋送](features/cdf-files.md)
-   + Data Explorer{#data-explorer}
+   + 資料總管{#data-explorer}
       + [資料總管-概述、優點和使用案例](features/data-explorer/data-explorer-overview.md)
       + [瞭解訊號](features/data-explorer/data-explorer-understanding-signals.md)
       + [訊號控制面板](features/data-explorer/data-explorer-signals-dashboard.md)
-      + Signals Search{#signals-search}
+      + 訊號搜尋{#signals-search}
          + [訊號搜尋概觀](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [依關鍵值配對的搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [依篩選器搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
@@ -77,14 +77,25 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [宣告的ID](features/declared-ids.md)
    + [衍生訊號](features/derived-signals.md)
    + 目的地{#destinations}
-      + [目的地](features/destinations/destinations.md)
+      + [目標概述](features/destinations/destinations.md)
+      + [目標首頁](/help/using/features/destinations/destinations-home.md)
+      + Adobe Experience Cloud目標{#experience-cloud-destinations}
+         + [設定Analytics目的地](/help/using/features/destinations/create-analytics-destination.md)
+      + 以人為本目標 {#pbd}
+      + 裝置目標目標(伺服器對伺服器) {#device-based}
+         + [新增或編輯伺服器至伺服器目的地的區段](/help/using/features/destinations/add-edit-segments.md)
+      + 自訂目的地 {#custom-destinations}
+         + [設定URL目的地](/help/using/features/destinations/create-url-destination.md)
+         + [設定Cookie目的地](/help/using/features/destinations/create-cookie-destination.md)
+         + [Cookie目的地的選擇性設定](/help/using/features/destinations/cookie-destination-options.md)
+      + 目標參考 {#destinations-reference}
+         + [目的地產生器](/help/using/features/destinations/destination-builder.md)
+         + [get_ aamCookie Code](features/destinations/get-aam-cookie-code.md)
+         + [目標巨集定義](features/destinations/destination-macros.md)
+         + [標準和序列鍵值配對](features/destinations/key-value-pairs.md)
+         + [將資料匯出控制新增至目的地](/help/using/features/destinations/add-data-export-labels.md)
       + [管理目標](features/destinations/manage-destinations.md)
-      + [目標巨集定義](features/destinations/destination-macros.md)
-      + [標準和序列鍵值配對](features/destinations/key-value-pairs.md)
-      + [get_ aamCookie Code](features/destinations/get-aam-cookie-code.md)
-      + [設定Analytics目的地](/help/using/features/destinations/create-analytics-destination.md)
-      + [Audience Manager技術合作夥伴](/help/using/features/destinations/audience-manager-technology-partners.md)
-   + Profile Merge Rules{#profile-merge-rules}
+   + 描述檔合併規則{#profile-merge-rules}
       + [描述檔合併規則概述](features/profile-merge-rules/merge-rules-overview.md)
       + [設定檔合併規則快速入門](features/profile-merge-rules/merge-rules-start.md)
       + [描述檔合併規則控制面板](features/profile-merge-rules/merge-rules-dashboard.md)
@@ -138,7 +149,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [報表控制面板](reporting/reports-dashboard.md)
    + [一般報表](reporting/general-reports.md)
    + [趨勢報表](reporting/trend-reports.md)
-   + Audience Optimization Reports {#audience-optimization-reports}
+   + 對象最佳化報表 {#audience-optimization-reports}
       + [對象最佳化報表](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + Audience Optimization for Advertisers {#audience-optimization-advertisers}
          + [面向廣告商的受眾最佳化概覽](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
@@ -158,7 +169,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
          + [廣告單元重疊](reporting/audience-optimization-reports/aor-publishers/publisher-ad-unit-overlap.md)
          + [區段至廣告單位重疊](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [獨特的使用者觸及面](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
-      + Data and Metadata Files for Audience Optimization Reports {#data-and-metadata-files}
+      + 觀眾最佳化報表的資料和中繼資料檔案 {#data-and-metadata-files}
          + [觀眾最佳化報表的資料和中繼資料檔案](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
          + [觀眾最佳化報表的資料檔案](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [中繼資料檔案的概述和對應](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
@@ -167,7 +178,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
          + [中繼資料檔案的傳送方法](reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)
          + [中繼資料檔案的狀態更新](reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)
       + [每日特徵變化報表](reporting/audience-optimization-reports/daily-trait-variation-report.md)
-   + Interactive and Overlap Reports {#interactive-and-overlap-reports}
+   + 互動與重疊報表 {#interactive-and-overlap-reports}
       + [互動與重疊報表概述](reporting/dynamic-reports/dynamic-reports.md)
       + [傳送與效能報告](reporting/dynamic-reports/delivery-performance-report.md)
       + [特徵至特徵重疊報表](reporting/dynamic-reports/trait-trait-overlap-report.md)
@@ -183,21 +194,21 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [傳出檔案歷史記錄](reporting/outbound-history-report.md)
    + [計算重疊和一般報表中的獨特使用者](reporting/unique-user-counts.md)
    + [選取Audience Manager報表中的資料取樣和錯誤率](reporting/report-sampling.md)
-+ API and SDK Code{#api-and-sdk-code}
++ API和SDK程式碼{#api-and-sdk-code}
    + [API和SDK程式碼概述](api/api.md)
    + [Audience Manager API程式碼移轉](api/api-swagger-migration.md)
-   + Data Collection Server (DCS) API Methods and Code{#dcs}
+   + 資料收集伺服器(DCS) API方法與程式碼{#dcs}
       + [DCS API方法與程式碼](api/dcs-intro/dcs-intro.md)
-      + DCS Event Calls{#dcs-event-calls}
+      + DCS事件呼叫{#dcs-event-calls}
          + [DCS事件呼叫API](api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
          + [傳送資料至DCS](api/dcs-intro/dcs-event-calls/dcs-url-send.md)
          + [從DCS接收資料](api/dcs-intro/dcs-event-calls/dcs-url-receive.md)
-      + DCS APIs{#dcs-apis}
+      + DCS API{#dcs-apis}
          + [適用於伺服器與伺服器資料傳輸的DCS API](api/dcs-intro/dcs-s2s/dcs-s2s.md)
          + [從DCS回應取得使用者ID和地區](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)
          + [透過Experience Cloud ID服務取得使用者ID和地區](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
          + [建立伺服器至伺服器DCS API呼叫](api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)
-      + DCS API Reference{#dcs-api-reference}
+      + DCS API參考{#dcs-api-reference}
          + [DCS API參考概觀](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API方法](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [DCS 錯誤碼、訊息和範例](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
@@ -213,7 +224,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [資料整合資料庫API方法](api/rest-api-main/aam-api-dil-methods.md)
       + [資料來源 API 方法](api/rest-api-main/aam-api-data-sources.md)
       + [衍生訊號API方法](api/rest-api-main/aam-api-derived-signals.md)
-      + Destination API Methods{#destination-api-methods}
+      + 目標API方法{#destination-api-methods}
          + [目標API方法概述](api/rest-api-main/aam-api-destinations/aam-api-destinations.md)
          + [建立目標](api/rest-api-main/aam-api-destinations/aam-api-create-destinations.md)
          + [將區段對應至目的地](api/rest-api-main/aam-api-destinations/aam-api-map-segments.md)
@@ -225,7 +236,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
       + [分類API方法](api/rest-api-main/aam-api-taxonomy.md)
       + [特徵API方法](api/rest-api-main/api-traits.md)
       + [特徵類型方法](api/rest-api-main/aam-api-trait-type.md)
-      + User, Group, and Permissions Management API Methods{#user-group-permissions}
+      + 使用者、群組和權限管理API方法{#user-group-permissions}
          + [使用者管理API方法](api/rest-api-main/aam-api-user-group-permission/aam-api-user.md)
          + [群組管理API方法](api/rest-api-main/aam-api-user-group-permission/aam-api-group.md)
          + [權限管理API方法](api/rest-api-main/aam-api-user-group-permission/aam-api-permissions.md)
@@ -233,7 +244,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [SDK Code](api/aam-sdk.md)
 + Data Integration Library (DIL) API{#dil-api}
    + [瞭解資料整合庫(DIL)](dil/dil-overview.md)
-   + Class-level DIL Methods{#class-level-dil-methods}
+   + 類別層級DIL方法{#class-level-dil-methods}
       + [入門級DIL API快速入門](dil/dil-class-overview/dil-start.md)
       + [DIL建立](dil/dil-class-overview/dil-create.md)
       + [getDil](dil/dil-class-overview/dil-get-instance.md)
@@ -246,48 +257,49 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [DIL使用案例和程式碼範例](dil/dil-use-cases.md)
    + [Flash DIL](dil/dil-flash.md)
    + [DIL發行說明](/help/using/dil/dil-release-notes.md)
-+ Implementation and Integration Guides{#implemenation-integration-guides}
++ 實施與整合指南{#implemenation-integration-guides}
    + [實施與整合指南](integration/implementation-and-integration.md)
    + [資料整合方法](integration/data-integration-methods.md)
-   + Integrate DFP using Google Publisher Tags (GPT){#integrate-dfp-using-gpt}
+   + 使用Google Publisher標記(GPT)整合DFP{#integrate-dfp-using-gpt}
       + [使用GPT概觀整合DFP](integration/gpt-aam-destination/gpt-aam-overview.md)
       + [使用GPT將區段傳送至DFP](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [建立GPT目的地](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改GPT Settargeting API呼叫](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Google Publisher標記的Audience Manager代碼](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
-   + Integrating with Third-Party Destinations {#integrating-third-party}
+   + 與第三方目的地整合 {#integrating-third-party}
+      + [Audience Manager技術合作夥伴](/help/using/integration/integrating-third-party/audience-manager-technology-partners.md)
       + [Facebook WCA整合](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [作為Audience Manager目標的OAS](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX做為Audience Manager目的地](integration/integrating-third-party/openx-destination.md)
       + [DFP做為Audience Manager目的地](integration/aam-dfp.md)
       + [將區段傳送至Google AdWords再行銷清單](integration/integrating-third-party/rlsa-integration.md)
    + [實作Audience Manager](integration/implement-audience-manager.md)
-   + Media Data Integration{#media-data-integration}
+   + 媒體資料整合{#media-data-integration}
       + [媒體資料整合概述](integration/media-data-integration/media-data-integration.md)
       + [可操作的記錄檔](integration/media-data-integration/actionable-log-files.md)
       + [透過像素呼叫擷取促銷活動的曝光資料](integration/media-data-integration/impression-data-pixels.md)
       + [透過像素呼叫擷取促銷活動點擊資料](integration/media-data-integration/click-data-pixels.md)
-   + Receiving Audience Data{#receiving-audience-data}
+   + 接收觀眾資料{#receiving-audience-data}
       + [接收觀眾資料概述](integration/receiving-audience-data/receiving-audience-data-overview.md)
       + [傳出資料傳輸的ID同步](integration/receiving-audience-data/id-sync-outbound.md)
-      + Real-Time Outbound Data Transfers{#real-time-outbound-transfers}
+      + 即時對外資料傳輸{#real-time-outbound-transfers}
          + [即時對外資料傳輸](integration/receiving-audience-data/real-time-outbound-transfers/real-time-outbound-transfers.md)
          + [數位簽署HTTP要求](integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)
          + [OAuth2.0的即時對外傳輸整合](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
-      + Batch Outbound Data Transfers{#batch-outbound-data-transfers}
+      + 批次傳出資料傳輸{#batch-outbound-data-transfers}
          + [批次對外資料傳輸總覽](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
          + [傳出資料檔案名稱：語法和範例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [傳輸控制檔案檔案檔案傳輸](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [輸出範本巨集](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
          + [輸出巨集範例](integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)
          + [請對您的傳出文件使用 Amazon S3 跨帳戶貯體權限](integration/receiving-audience-data/batch-outbound-transfers/authorize-s3-cross-bucket.md)
-   + Sending Audience Data{#sending-audience-data}
+   + 傳送對象資料{#sending-audience-data}
       + [傳送對象資料](integration/sending-audience-data/send-audience-data.md)
-      + Real-Time Inbound Data Integration {#real-time-inbound-data-integration}
+      + 即時傳入資料整合 {#real-time-inbound-data-integration}
          + [傳入、即時資料傳輸的技術規格](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [像素型資料傳輸](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [即時傳入資料擷取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
-      + Batch Data Transfer Process{#batch-data-transfer-process}
+      + 批次資料傳輸程序{#batch-data-transfer-process}
          + [批次資料傳輸程序說明](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
          + [傳送批次資料至Audience Manager概述](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [傳入資料傳輸的ID同步](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
@@ -299,7 +311,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
          + [傳入資料傳輸檔案的檔案壓縮](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [傳入處理後給合作夥伴的範例訊息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
-   + Integration with Other Experience Cloud Solutions {#integration-other-solutions}
+   + 與其他Experience Cloud解決方案整合 {#integration-other-solutions}
       + [整合Audience Manager與Adobe Target](integration/integration-other-solutions/aam-target-integration.md)
       + [實作觀眾管理模組](integration/integration-other-solutions/audience-management-module.md)
       + [伺服器端轉送(管理指南)](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)
@@ -310,7 +322,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [發行者使用個案](reference/publisher-use-cases.md)
    + [測試版環境](reference/beta-environment.md)
    + [特徵和區段產生器中的布林運算式](reference/boolean-expressions-tsb.md)
-   + Bulk Management Tools{#bulk-management-tools}
+   + 大量管理工具{#bulk-management-tools}
       + [大量管理快速入門](reference/bulk-management-tools/bulk-management-intro.md)
       + [大量請求](reference/bulk-management-tools/bulk-requests.md)
       + [大量更新](reference/bulk-management-tools/bulk-updates.md)
@@ -328,7 +340,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [密碼要求、鎖定的帳戶和忘記的密碼](reference/password-requirements.md)
    + [訊號、特徵和區段](reference/signal-trait-segment.md)
    + [受支援的瀏覽器](reference/supported-browsers.md)
-   + System Components{#system-components}
+   + 系統元件{#system-components}
       + [系統元件概述](reference/system-components/components-overview.md)
       + [Audience Manager System中的關鍵元件](reference/system-components/components-stack.md)
       + [資料動作元件](reference/system-components/components-data-action.md)
@@ -353,7 +365,7 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
    + [描述檔合併規則與裝置圖表常見問題](faq/faq-profile-merge.md)
    + [定位常見問題](faq/faq-targeting.md)
    + [報表常見問答集](faq/faq-reporting.md)
-+ Help and Legal{#help-and-legal}
++ 說明與法律{#help-and-legal}
    + [概述](/help/using/help-legal/help-legal-overview.md)
    + [如果有問題](/help/using/help-legal/help-problem.md)
    + [聯絡與法律資訊](/help/using/help-legal/help-legal-contact.md)
