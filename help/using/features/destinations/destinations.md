@@ -7,16 +7,16 @@ solution: Audience Manager
 title: 目的地
 uuid: 5c7dbec-f73 f-46fe-46f12-7685e8 d7334 f
 translation-type: tm+mt
-source-git-commit: 157e70906b80bd0a23ba6e7721d2c456d378ffb5
+source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
 
 ---
 
 
-# 目的地 {#destinations}
+# 目標概述 {#destinations}
 
-In Audience Manager, a destination is any third-party system (ad server, [!DNL DSP], ad network, etc.) 您要與其共用資料。[!UICONTROL Destination Builder] 是用來建立和管理Cookie、 [!DNL URL]或伺服器對伺服器目的地的工具。
+在Audience Manager中，目的地是任何第三方系統(廣告伺服器、 [!DNL DSP]廣告網路等)您要與其共用資料。[!UICONTROL Destination Builder] 是用來建立和管理Cookie、 [!DNL URL]或伺服器對伺服器目的地的工具。
 
-## Purpose and Advantages {#purposes}
+## 目的與優點 {#purposes}
 
 <!-- c_destinations.xml -->
 
@@ -24,13 +24,13 @@ In Audience Manager, a destination is any third-party system (ad server, [!DNL D
 
 * **保護資料價值：** 您不能將所有使用者資料傳送至 [!UICONTROL Destination Builder] 目的地，只能分享符合資格使用者的特定資訊。
 * **對您的資料採取行動：** 將資料傳送給目的地合作夥伴可協助他們快速開發和鎖定合格受眾細分。
-* **降低技術負擔：** 商業使用者可在 [!UICONTROL Destination Builder] 介面中安全地設定目的地。如此可縮短部署前測試所需的時間。With [!UICONTROL Destination Builder], you create, manage, and delete destinations as your business needs change, all without working through a long development cycle.
+* **降低技術負擔：** 商業使用者可在 [!UICONTROL Destination Builder] 介面中安全地設定目的地。如此可縮短部署前測試所需的時間。有了 [!UICONTROL Destination Builder]這種方式，您就可以隨著業務需求的改變來建立、管理和刪除目的地，而不需經歷長時間的開發週期。
 
 ## 技術考量 {#technical-considerations}
 
 <!-- destination-delivery-methods.xml -->
 
-資料傳送取決於資料合作夥伴想要或可以接收目的地資訊的方式。Technical or engineering constraints may prevent a destination from receiving data via [!DNL URL], cookie, or server-to-server processes. 與第三方合作夥伴合作決定他們可以使用的方法。
+資料傳送取決於資料合作夥伴想要或可以接收目的地資訊的方式。技術或工程限制可能會阻止目的地透過 [!DNL URL]、Cookie或伺服器對伺服器程序接收資料。與第三方合作夥伴合作決定他們可以使用的方法。
 
 ## 業務考量 {#business-considerations}
 
@@ -39,7 +39,7 @@ In Audience Manager, a destination is any third-party system (ad server, [!DNL D
 * [!DNL URL]和基於Cookie的目的地幾乎可與頁面上的使用者動作同步運作。
 * 伺服器對伺服器方法很適合用來建立深度受眾細分。
 
-## Destination Types and Typical Uses {#destination-types}
+## 目的地類型和典型用途 {#destination-types}
 
 下表中的範例可協助您瞭解使用特定目的地的時機以及各類型之間的差異。
 
