@@ -6,13 +6,13 @@ solution: Audience Manager
 title: Audience Manager中的時區
 uuid: ff4710a9-ee-470c-9ab0-85c1789 a2837 a
 translation-type: tm+mt
-source-git-commit: f9a12cf38833cf243edf4bc4c4f4e91f83ee0ca2
+source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 ---
 
 
-# Time Zones in Audience Manager{#time-zones-in-audience-manager}
+# Audience Manager中的時區{#time-zones-in-audience-manager}
 
 Audience Manager在整個UI中使用協調通用時間(UTC)。
 
-Unless otherwise specified, all the dates and date ranges you can select in the [!DNL Adobe] [!DNL Audience Manager] UI are [Coordinated Universal Time (UTC)](https://www.timeanddate.com/worldclock/timezone/utc). For example, in the [Create Destination](../features/destinations/manage-destinations.md#segment-mappings) flow, when mapping segments to your destination, the start and end date you select are midnight UTC. The same applies for all the dates in [!DNL Audience Manager].
+除非另行指定，您在 [!DNL Adobe][!DNL Audience Manager] UI中選取的所有日期和日期範圍都是 [協調通用時間(UTC)](https://www.timeanddate.com/worldclock/timezone/utc)。例如，在 [「建立目的地](../features/destinations/create-cookie-destination.md#segments-mapping) 」流程中，將區段對應至目的地時，您選取的開始和結束日期是午夜UTC。所有日期 [!DNL Audience Manager]都相同。
