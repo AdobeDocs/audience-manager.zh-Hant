@@ -6,14 +6,14 @@ keywords: 啓動；啓動合作夥伴、目的地、目的地
 solution: Audience Manager
 title: Adobe Audience Manager技術合作夥伴
 translation-type: tm+mt
-source-git-commit: ffdf5404235734adb77e93a3d231a65b2444cc1f
+source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 ---
 
 
 # Audience Manager啓動合作夥伴
 
-此頁面僅包含目前Audience Manager [伺服器對伺服器整合](/help/using/features/destinations/manage-destinations.md#add-edit-segments) 。有關整合的詳細資訊，請參閱其 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) 清單(如適用)或聯絡您的Adobe顧問或客戶服務。
+此頁面僅包含目前Audience Manager [伺服器對伺服器整合](/help/using/features/destinations/add-edit-segments.md) 。有關整合的詳細資訊，請參閱其 [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html) 清單(如適用)或聯絡您的Adobe顧問或客戶服務。
 
 <br> 
 
