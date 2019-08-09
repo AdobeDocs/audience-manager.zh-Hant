@@ -5,7 +5,7 @@ seo-title: 將資料匯出控制新增至目的地
 solution: Audience Manager
 title: 將資料匯出控制新增至目的地
 translation-type: tm+mt
-source-git-commit: 6e2b5842ad3ca52f7ed0fb72231deb6fa614b70b
+source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 6e2b5842ad3ca52f7ed0fb72231deb6fa614b70b
 若要將匯出標籤新增至目的地：
 
 1. Click **[!UICONTROL Audience Data]**:
-   * 對於新目的地：按一 **[!UICONTROL Create New Destination]**&#x200B;下。請先完成 [!UICONTROL Basic Information] 區段，然後再選擇資料匯出標籤。如需詳細資訊，請參閱 [建立Cookie目的地](../../features/destinations/manage-destinations.md#create-cookie-destination) 或 [建立URL目的地](../../features/destinations/manage-destinations.md#configure-url-destination) 。
+   * 對於新目的地：按一 **[!UICONTROL Create New Destination]**&#x200B;下。請先完成 [!UICONTROL Basic Information] 區段，然後再選擇資料匯出標籤。如需詳細資訊，請參閱 [建立Cookie目的地](../../features/destinations/create-cookie-destination.md) 或 [建立URL目的地](../../features/destinations/create-url-destination.md) 。
    * 對於現有目的地：使用 [!DNL Search] 方塊尋找目的地或捲動清單，然後按一下目的地名稱以開啓它。
 1. 選擇 [!DNL Data Export Label]. 如果您不想設定任何匯出限制，請將核取方塊保留空白。匯出標籤包含下列選項：
    * **[!UICONTROL This destination may enable a combination with personally identifiable information (PII)]**
