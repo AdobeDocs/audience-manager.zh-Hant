@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料匯出控制
 uuid: de7f3608-c0 cb-4049-973a-8be5425 c600
 translation-type: tm+mt
-source-git-commit: 302670f294574c3b56ccd16aeca8ebab8f4e8ce9
+source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 ---
 
@@ -20,27 +20,27 @@ source-git-commit: 302670f294574c3b56ccd16aeca8ebab8f4e8ce9
 [!UICONTROL Data Export Controls] 可讓您分類 [資料來源](../features/datasources-list-and-settings.md#data-sources-list-and-settings) 和 [目的地](../features/destinations/destinations.md)。您套用的分類會決定資料可以或無法匯出至目的地。此功能包含：
 
 * **[!UICONTROL Data Export Controls]**：您可以設定 *資料來源*&#x200B;的資料匯出控制。在資料來源上設定時，這些控制項會限制資料來源及其特徵的使用方式。
-* **[!UICONTROL Data Export Labels]**：您可以在 *目的地設定資料匯出標籤*。在目的地上設定時，這些標籤會識別目的地如何使用資料。See [Add Data Export Labels to a Destination](/help/using/features/destinations/manage-destinations.md#add-data-export-labels) to learn how to add export labels to a destination.
+* **[!UICONTROL Data Export Labels]**：您可以在 *目的地設定資料匯出標籤*。在目的地上設定時，這些標籤會識別目的地如何使用資料。請參閱 [「新增資料匯出標籤至目的地](/help/using/features/destinations/add-data-export-labels.md) 」，瞭解如何新增匯出標籤至目的地。
 
 根據套用至資料來源和目的地的分類，匯出控制項會阻止您：
 
 * 在特徵屬於資料來源時新增特徵至資料來源，其資料來源具有與將區段映射至一或多個目的地上的資料匯出標籤不相容的資料匯出控制。
-For example, say a segment is mapped to a destination with the export label **[UICONTROL! This destination may enable a combination with personally identifiable information (PII)]**. Export controls stop you from adding a trait to that segment if the data source that the trait belongs to has a data export control that says **[UICONTROL! Cannot be tied to personally identifiable information (PII)]**.
+例如，假設區段使用匯出標籤 **[UICOHTROL對應至目的地！此目的地可結合個人識別資訊(PII)]**。匯出控制項可防止您將特徵新增至該區段，如果特徵所屬的資料來源具有UICOHTROL的 **[資料匯出控制。無法系結至個人識別資訊(PII)]**。
 * 傳送任何資料至目的地目的地時，會有資料匯出標籤，因為資料匯出控制會封鎖下列任何項目：
    * 隨附特徵的資料來源；
    * 用於包含區段之特徵的資料來源；
    * 由包含區段運用的描述檔合併規則；
    * 包含區段設定檔合併規則使用之任何資料來源。
 
-[!UICONTROL Data Export Controls] 可自動供所有Audience Manager客戶使用。不過，您需要管理員權限來新增匯出控制項至資料來源。Adding export labels to a destination requires administrator permissions *or* sufficient privileges to create or edit a destination.
+[!UICONTROL Data Export Controls] 可自動供所有Audience Manager客戶使用。不過，您需要管理員權限來新增匯出控制項至資料來源。將匯出標籤新增至目的地需要管理員權限 *或* 足夠權限來建立或編輯目的地。
 
-## Controls and labels defined {#controls-labels}
+## 定義的控制項和標籤 {#controls-labels}
 
 [!UICONTROL Data Export Controls] 提供下列控制項以協助您分類資料來源和目的地。
 
-若要封鎖資料傳送，您必須將資料來源分類為匯出控制，並將匯出標籤新增至目的地。如果您僅將控制項套用至資料來源或目的地，此功能將不會限制資料傳送。When set on both the data source *and* destination, the export controls will limit the traits you can add to a segment and prevent sending the segment members to a destination.
+若要封鎖資料傳送，您必須將資料來源分類為匯出控制，並將匯出標籤新增至目的地。如果您僅將控制項套用至資料來源或目的地，此功能將不會限制資料傳送。在資料來源 *和* 目的地上設定時，匯出控制項將限制您新增至區段的特性，並防止將區段成員傳送至目的地。
 
-此外，至少一個匯出標籤必須符合匯出控制項，資料傳送限制才會生效。For example, say you add the [!UICONTROL PII] export control to a data source. 接著，您將站上定位標籤新增至目的地。在這種情況下，匯出控制項不會限制資料傳送，因為設定不符合。However, if you add the [!UICONTROL PII] export label to the destination, the export controls will block the export.
+此外，至少一個匯出標籤必須符合匯出控制項，資料傳送限制才會生效。例如，假設您將 [!UICONTROL PII] 匯出控制新增至資料來源。接著，您將站上定位標籤新增至目的地。在這種情況下，匯出控制項不會限制資料傳送，因為設定不符合。不過，如果您將 [!UICONTROL PII] 匯出標籤新增至目的地，匯出控制項將封鎖匯出。
 
 >[!IMPORTANT]
 >
@@ -110,4 +110,4 @@ For example, say a segment is mapped to a destination with the export label **[U
 若要開始，請檢閱資料來源和目的地文件。這些文章提供如何新增匯出控制和標籤至您的資料來源和目的地的指示。
 
 * [建立資料來源](../features/manage-datasources.md#create-data-source)
-* [將資料匯出標籤新增至目的地](../features/destinations/manage-destinations.md#add-data-export-labels)
+* [將資料匯出標籤新增至目的地](../features/destinations/add-data-export-labels.md)
