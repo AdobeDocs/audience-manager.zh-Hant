@@ -1,13 +1,13 @@
 ---
 description: 在Audience Manager中，目的地是任何第三方系統(廣告伺服器、DSP、廣告網路等)。您要與其共用資料。「目標產生器」是用來建立和管理Cookie、URL或伺服器至伺服器目的地的工具。
-keywords: 整合程式碼，目的地，目的地總覽
+keywords: 整合程式碼，目的地，目的地概觀，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地
 seo-description: 在Audience Manager中，目的地是任何第三方系統(廣告伺服器、DSP、廣告網路等)。您要與其共用資料。「目標產生器」是用來建立和管理Cookie、URL或伺服器至伺服器目的地的工具。
 seo-title: 目的地
 solution: Audience Manager
 title: 目的地
 uuid: 5c7dbec-f73 f-46fe-46f12-7685e8 d7334 f
 translation-type: tm+mt
-source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
+source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 ---
 
