@@ -1,18 +1,18 @@
 ---
 description: 請參閱本文件以取得完整的Adobe Audience Manager ID清單。
-keywords: DPID；DPUUID；CID；UUID；uuid；uuid
+keywords: DPID；DPUUID；CID；UUID；uuid；uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid、uuid
 seo-description: 請參閱本文件以取得完整的Adobe Audience Manager ID清單。
 seo-title: Audience Manager中ID的索引
 solution: Audience Manager
 title: Audience Manager中ID的索引
 uuid: 292185ec-7c6a-414b-ab17-800c21 cb1 f01
 translation-type: tm+mt
-source-git-commit: cf0cec2fdf1272f075a825b09cf2fa11a3815432
+source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 ---
 
 
-# Index of IDs in Audience Manager{#index-of-ids-in-audience-manager}
+# Audience Manager中ID的索引{#index-of-ids-in-audience-manager}
 
 請參閱本文件以取得完整的Adobe Audience Manager ID清單。
 
@@ -32,37 +32,37 @@ source-git-commit: cf0cec2fdf1272f075a825b09cf2fa11a3815432
   </tr> 
   <tr> 
    <td colname="col1"> <p>imsOrgID </p> </td> 
-   <td colname="col2"> <p> <b>組織 ID</b> </p> <p>這是公司在註冊Experience Cloud時提供的ID。To learn how you can find your company's Organization ID, read <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html"> Organizations and Account Linking</a> and scroll down to Find your Organization ID.</p> </td> 
+   <td colname="col2"> <p> <b>組織 ID</b> </p> <p>這是公司在註冊Experience Cloud時提供的ID。若要瞭解如何找到公司的組織ID，請閱讀 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html"> 組織和帳戶連結</a> 並向下捲動以尋找組織ID。</p> </td> 
    <td colname="col3"> <p><code> 5DC5123F5245B1D20A490D46@AdobeOrg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>PID </p> </td> 
-   <td colname="col2"> <p> <b>合作夥伴ID</b> </p> <p> The PID is a company's ID in <span class="keyword"> Audience Manager</span>. <span class="keyword"> Audience Manager</span> 會將iOS ID關聯至PID。 </p> </td> 
+   <td colname="col2"> <p> <b>合作夥伴ID</b> </p> <p> PID是Audience Manager中 <span class="keyword"> 的公司ID</span>。<span class="keyword"> Audience Manager</span> 會將iOS ID關聯至PID。 </p> </td> 
    <td colname="col3"> <p><code> 1352</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ECID、MID </p> </td> 
-   <td colname="col2"> <p> <b>Experience Cloud ID</b> </p> <p>The Experience Cloud ID (ECID, legacy abbreviations MID or MCID) is derived mathematically from your Organization ID and the <span class="keyword"> Audience Manager</span> Unique User ID. 只要這些ID維持不變，為特定使用者產生適當的ECID就只是數學問題。使用相同的組織ID和Audience Manager UUID，每次都能獲得相同的EID值。You can read more about the ECID in the <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and Experience Cloud ID</a> document. </p> </td> 
+   <td colname="col2"> <p> <b>Experience Cloud ID</b> </p> <p>Experience Cloud ID(ECID、舊版縮寫MID或MCID)是以數學方式從您的組織ID和 <span class="keyword"> Audience Manager</span> 獨特使用者ID中衍生出來。只要這些ID維持不變，為特定使用者產生適當的ECID就只是數學問題。使用相同的組織ID和Audience Manager UUID，每次都能獲得相同的EID值。您可以在 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookie和Experience Cloud ID</a> 文件中閱讀更多有關ECID的資訊。 </p> </td> 
    <td colname="col3"> <p><code> mid=08382830887934830189014177072406221371 </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>SID </p> </td> 
-   <td colname="col2"> <p> <b>特徵ID</b> </p> <p>The Trait ID uniquely identifies traits in the <span class="keyword"> Audience Manager</span> environment. 使用者介面(UI)中會指派特徵ID給每個特徵。 </p> </td> 
+   <td colname="col2"> <p> <b>特徵ID</b> </p> <p>特徵ID可唯一識別 <span class="keyword"> Audience Manager</span> 環境中的特徵。使用者介面(UI)中會指派特徵ID給每個特徵。 </p> </td> 
    <td colname="col3"> <p><code> 289983</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>SID </p> </td> 
-   <td colname="col2"> <p> <b>區段ID </b> </p> <p>The Segment ID uniquely identifies segments in the <span class="keyword"> Audience Manager</span> environment. 區段ID會指派給UI中的每個區段。 </p> </td> 
+   <td colname="col2"> <p> <b>區段ID </b> </p> <p>區段ID可唯一識別 <span class="keyword"> Audience Manager</span> 環境中的區段。區段ID會指派給UI中的每個區段。 </p> </td> 
    <td colname="col3"> <p><code> 4798574</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cSegID </p> </td> 
-   <td colname="col2"> <p> <b>舊版區段ID </b> </p> <p>This ID uniquely identifies segments in the <span class="keyword"> Audience Manager</span> environment. 「舊版區段ID」會指派給UI中的每個區段。 </p> </td> 
+   <td colname="col2"> <p> <b>舊版區段ID </b> </p> <p>此ID可唯一識別 <span class="keyword"> Audience Manager</span> 環境中的區段。「舊版區段ID」會指派給UI中的每個區段。 </p> </td> 
    <td colname="col3"> <p><code> 741232</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>destiD </p> </td> 
-   <td colname="col2"> <p> <b>目的地ID </b> </p> <p>The Destination ID uniquely identifies destinations in the <span class="keyword"> Audience Manager</span> environment. ID會指派給UI中的每個目的地。 </p> </td> 
+   <td colname="col2"> <p> <b>目的地ID </b> </p> <p>目標ID可唯一識別 <span class="keyword"> Audience Manager</span> 環境中的目的地。ID會指派給UI中的每個目的地。 </p> </td> 
    <td colname="col3"> <p><code> 2523</code> </p> </td> 
   </tr> 
   <tr> 
@@ -72,7 +72,7 @@ source-git-commit: cf0cec2fdf1272f075a825b09cf2fa11a3815432
   </tr> 
   <tr> 
    <td colname="col1"> <p>DPUUID </p> </td> 
-   <td colname="col2"> <p> <b>資料提供者唯一使用者ID( </b><b>也稱為CRM ID)</b> </p> <p>第三方ID。這是您在自己的CRM系統中識別使用者的ID。You can sync DPUUIDs with <span class="keyword"> Audience Manager</span> UUIDs and you can sync DPUUIDs from your different <span class="wintitle"> Data Sources</span> (DPIDs) in the <a href="../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md"> ID synchronization process</a>. </p> </td> 
+   <td colname="col2"> <p> <b>資料提供者唯一使用者ID( </b><b>也稱為CRM ID)</b> </p> <p>第三方ID。這是您在自己的CRM系統中識別使用者的ID。您可以將DPUUID與 <span class="keyword"> Audience Manager</span> UUID同步，而且您可以在ID同步程序中，從不同 <span class="wintitle"> 的Data Sources</span><a href="../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md"> (DPIDs)同步DPUUID</a>。 </p> </td> 
    <td colname="col3"> <p><code> 2132-3423vn-343fds-3432r</code> </p> </td> 
   </tr> 
   <tr> 
@@ -99,15 +99,15 @@ source-git-commit: cf0cec2fdf1272f075a825b09cf2fa11a3815432
   </tr> 
   <tr> 
    <td colname="col2"> <p> <b>裝置廣告ID- IDFA- iOS裝置</b> </p> <p> <b>IDFA</b> ID是行動裝置識別碼，由裝置製造商提供。這些ID代表執行iOS作業系統的裝置。 </p> </td> 
-   <td colname="col3"> <p> The format strictly consists of 32 <i>uppercase</i> hexadecimal digits, displayed in five groups and separated by hyphens, in the form 8-4-4-4-12, for a total of 36 characters. </p> <p><code> AEBE52E7-03EE-455A-B3 C4-E57283966239</code> </p> </td> 
+   <td colname="col3"> <p> 格式嚴格由32 <i>個大寫</i> 十六進位數字組成，顯示於五個群組並以連字號分隔，格式為8-4-4-4-12，總共36個字元。 </p> <p><code> AEBE52E7-03EE-455A-B3 C4-E57283966239</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> <b>裝置廣告ID- GAID- Android裝置</b> </p> <p><b>GAID</b> ID是行動裝置識別碼，由裝置製造商提供。這些ID代表執行Android作業系統的裝置。 </p> </td> 
-   <td colname="col3"> <p>The format strictly consists of 32 <i>lowercase</i> hexadecimal digits, displayed in five groups and separated by hyphens, in the form 8-4-4-4-12, for a total of 36 characters. </p> <p> <code> e4fe9bde-ca0-47b6-908d-ffba3 fa184 f</code> </p> </td> 
+   <td colname="col3"> <p>格式嚴格由32 <i>個小寫</i> 十六進位數字組成，顯示於五個群組並以連字號分隔，格式為8-4-4-4-12，總共36個字元。 </p> <p> <code> e4fe9bde-ca0-47b6-908d-ffba3 fa184 f</code> </p> </td> 
   </tr>
   <tr> 
    <td colname="col2"> <p> <b>Roku- RIDA- Roku串流裝置</b> </p> <p><b>GAID</b> RIDDA ID是Roku裝置製造商提供的串流裝置識別碼。</p> </td>
-   <td colname="col3"> <p>The format strictly consists of 32 <i>lowercase</i> hexadecimal digits, displayed in five groups and separated by hyphens, in the form 8-4-4-4-12, for a total of 36 characters. </p> <p> <code> fcp2a29c-315a-5e6b-bedered-d889 ba19 aada</code> </p> </td> 
+   <td colname="col3"> <p>格式嚴格由32 <i>個小寫</i> 十六進位數字組成，顯示於五個群組並以連字號分隔，格式為8-4-4-4-12，總共36個字元。 </p> <p> <code> fcp2a29c-315a-5e6b-bedered-d889 ba19 aada</code> </p> </td> 
   </tr>
   <tr> 
    <td colname="col2"> <p> <b>Microsoft Advertising ID- MAID- Windows10裝置</b> </p> <p><b>MAID</b> ID是依每一裝置(每位使用者)產生的Windows10裝置識別碼。</p> </td>
