@@ -4,7 +4,7 @@ audience: 使用者
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 86b23cc4097057fceadd4d0f7c5fad0db4f4232b
+source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
 
 ---
 
@@ -83,7 +83,9 @@ source-git-commit: 86b23cc4097057fceadd4d0f7c5fad0db4f4232b
          + [設定Analytics目的地](/help/using/features/destinations/create-analytics-destination.md)
       + 以人為本目標 {#pbd}
       + 裝置目標目標(伺服器對伺服器) {#device-based}
+         + [新增以裝置為基礎的目標](/help/using/features/destinations/add-device-based-destinations.md)
          + [新增或編輯伺服器至伺服器目的地的區段](/help/using/features/destinations/add-edit-segments.md)
+         + [將Twitter自訂對象設定為自助服務裝置的目的地](/help/using/features/destinations/twitter-tailored-audiences.md)
       + 自訂目的地 {#custom-destinations}
          + [設定URL目的地](/help/using/features/destinations/create-url-destination.md)
          + [設定Cookie目的地](/help/using/features/destinations/create-cookie-destination.md)
