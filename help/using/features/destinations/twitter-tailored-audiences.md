@@ -5,7 +5,7 @@ seo-title: 將Twitter自訂對象設定為自助服務裝置的目的地
 solution: Audience Manager
 title: 將Twitter自訂對象設定為自助服務裝置的目的地
 translation-type: tm+mt
-source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
+source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
 
 ---
 
