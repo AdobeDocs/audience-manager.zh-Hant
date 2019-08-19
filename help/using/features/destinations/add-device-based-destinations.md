@@ -5,7 +5,7 @@ seo-title: 新增以裝置為基礎的目標
 solution: Audience Manager
 title: 新增以裝置為基礎的目標
 translation-type: tm+mt
-source-git-commit: b492065756d45ee6dfb185cc387409dea72a9923
+source-git-commit: d185a1d418e99abb99c36b28dfb419a1fb3b60f5
 
 ---
 
@@ -41,13 +41,13 @@ source-git-commit: b492065756d45ee6dfb185cc387409dea72a9923
 
 1. 登入您的Audience **[!DNL Audience Data > Destinations]** Manager帳戶，前往並按一下 **[!DNL Create Destination]**。
 2. **[!DNL Basic Information]** 在區段中輸入新 **[!DNL Name]** 目的地， **[!DNL Description]** 並使用下列清單中的設定： ![設定](assets/dbd-new-basic.png)
+   * **[!DNL Category]**: [!DNL Integrated Platforms];
+   * **[!DNL Type]**: [!DNL Device-Based];
+   * **[!DNL Platform]**：選取您要傳送對象區段的目標平台。
+   * **[!DNL Account]**：選取所選平台相關聯的廣告商帳戶。
 3. Click **[!DNL Next]**.
 4. 選擇您要為此目的地設定的 [「資料匯出標籤](/help/using/features/data-export-controls.md#controls-labels) 」。
 5. Click **[!DNL Save]**.
 6. 在 **[!DNL Segment Mappings]** 區段中，選取您要傳送至此目的地的對象區段。
 7. 儲存目的地。
 
-* **[!DNL Category]**: [!DNL Integrated Platforms];
-* **[!DNL Type]**: [!DNL Device-Based];
-* **[!DNL Platform]**：選取您要傳送對象區段的目標平台。
-* **[!DNL Account]**：選取所選平台相關聯的廣告商帳戶。
