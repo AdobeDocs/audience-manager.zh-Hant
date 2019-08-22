@@ -4,7 +4,7 @@ audience: 使用者
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
+source-git-commit: 97e8e4282fdb729a367cdfbfce0a9af10651edfd
 
 ---
 
@@ -78,20 +78,29 @@ source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
    + [衍生訊號](features/derived-signals.md)
    + 目的地{#destinations}
       + [目標概述](features/destinations/destinations.md)
-      + [目標首頁](/help/using/features/destinations/destinations-home.md)
+      + [目標首頁](features/destinations/destinations-home.md)
       + Adobe Experience Cloud目標{#experience-cloud-destinations}
-         + [設定Analytics目的地](/help/using/features/destinations/create-analytics-destination.md)
-      + 以人為本目標 {#pbd}
+         + [設定Analytics目的地](features/destinations/create-analytics-destination.md)
+      + 以人為本目標 {#people-based-destinations}
+         + [概述與使用案例](features/destinations/people-based-destinations-overview.md)
+         + [先決條件與考量事項](features/destinations/people-based-destinations-prerequisites.md)
+         + 實施指引 {#pbd-implementation}
+            + [實施概述](features/destinations/people-based-destinations-workflow.md)
+            + [工作流程A-根據所有線上活動結合離線資料的個人化](features/destinations/people-based-destinations-workflow-combined.md)
+            + [工作流程B-基於離線資料的個人化](features/destinations/people-based-destinations-workflow-offline.md)
+            + [工作流程C-根據已驗證活動結合離線資料的個人化](features/destinations/people-based-destinations-workflow-authenticated.md)
+         + [以人員為基礎的平台驗證](features/destinations/people-based-destinations-authentication.md)
+         + [可分享對象](/help/using/features/destinations/people-based-destinations-reporting.md)
       + 裝置目標目標(伺服器對伺服器) {#device-based}
-         + [新增以裝置為基礎的目標](/help/using/features/destinations/add-device-based-destinations.md)
-         + [新增或編輯伺服器至伺服器目的地的區段](/help/using/features/destinations/add-edit-segments.md)
-         + [將Twitter自訂對象設定為自助服務裝置的目的地](/help/using/features/destinations/twitter-tailored-audiences.md)
+         + [新增以裝置為基礎的目標](features/destinations/add-device-based-destinations.md)
+         + [新增或編輯伺服器至伺服器目的地的區段](features/destinations/add-edit-segments.md)
+         + [將Twitter自訂對象設定為自助服務裝置的目的地](features/destinations/twitter-tailored-audiences.md)
       + 自訂目的地 {#custom-destinations}
-         + [設定URL目的地](/help/using/features/destinations/create-url-destination.md)
-         + [設定Cookie目的地](/help/using/features/destinations/create-cookie-destination.md)
-         + [Cookie目的地的選擇性設定](/help/using/features/destinations/cookie-destination-options.md)
+         + [設定URL目的地](features/destinations/create-url-destination.md)
+         + [設定Cookie目的地](features/destinations/create-cookie-destination.md)
+         + [Cookie目的地的選擇性設定](features/destinations/cookie-destination-options.md)
       + 目標參考 {#destinations-reference}
-         + [目的地產生器](/help/using/features/destinations/destination-builder.md)
+         + [目的地產生器](features/destinations/destination-builder.md)
          + [get_ aamCookie Code](features/destinations/get-aam-cookie-code.md)
          + [目標巨集定義](features/destinations/destination-macros.md)
          + [標準和序列鍵值配對](features/destinations/key-value-pairs.md)
@@ -362,6 +371,7 @@ source-git-commit: 96717384ebb82056f330312b0f99fb97086a2e05
    + [資料收集與產品整合常見問題](faq/faq-data-collection.md)
    + [傳入客戶資料擷取常見問題集](faq/faq-inbound-data-ingestion.md)
    + [隱私權與資料保留常見問題](faq/faq-privacy.md)
+   + [以人員為基礎的目標常見問答集](faq/faq-people-based-destinations.md)
    + [產品功能與功能常見問題解答](faq/faq-features.md)
    + [描述檔合併規則與裝置圖表常見問題](faq/faq-profile-merge.md)
    + [定位常見問題](faq/faq-targeting.md)
