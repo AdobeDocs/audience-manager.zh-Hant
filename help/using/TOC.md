@@ -4,7 +4,7 @@ audience: 使用者
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 97e8e4282fdb729a367cdfbfce0a9af10651edfd
+source-git-commit: 8ceeee38dc798810559467ffc12177a2f1968b44
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: 97e8e4282fdb729a367cdfbfce0a9af10651edfd
       + 以人為本目標 {#people-based-destinations}
          + [概述與使用案例](features/destinations/people-based-destinations-overview.md)
          + [先決條件與考量事項](features/destinations/people-based-destinations-prerequisites.md)
-         + 實施指引 {#pbd-implementation}
+         + 實施指引 {#implementation-guide}
             + [實施概述](features/destinations/people-based-destinations-workflow.md)
             + [工作流程A-根據所有線上活動結合離線資料的個人化](features/destinations/people-based-destinations-workflow-combined.md)
             + [工作流程B-基於離線資料的個人化](features/destinations/people-based-destinations-workflow-offline.md)
