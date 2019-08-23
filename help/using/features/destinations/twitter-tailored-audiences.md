@@ -5,7 +5,7 @@ seo-title: 將Twitter自訂對象設定為自助服務裝置的目的地
 solution: Audience Manager
 title: 將Twitter自訂對象設定為自助服務裝置的目的地
 translation-type: tm+mt
-source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
+source-git-commit: bdc626ef11aacbf1fcbf138748b56acc24ec7b13
 
 ---
 
@@ -21,8 +21,6 @@ source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
 1. 您 [!DNL Twitter Ads] 的帳戶必須符合廣告資格。新 [!DNL Twitter Ads] 帳戶在建立廣告後的前周不符合廣告資格。
 2. 您在Audience Manager中授權存取的Twitter使用者帳戶必須啓用 [「合作夥伴對象管理員](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 」權限。
 3. 如果您要 [將現有Twitter整合更新為自助服務管理](#update-existing-twitter-integrations)，則您的Twitter使用者帳戶必須啓用 [廣告管理器](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 權限。
-
-
 
 ## 新增 [!DNL Twitter Tailored Audiences] 目標 {#add-new-twitter-destination}
 
@@ -65,9 +63,18 @@ source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
 請遵循下列步驟，將現有 [!DNL Twitter Tailored Audiences] 目的地移轉至自助服務模型。
 
 1. 登入您的Audience Manager帳戶 **[!DNL Administration > Integrated Accounts]**&#x200B;並前往。
-2. Click **[!DNL Add Account]**.
-3. 選取 [!DNL Twitter Tailored Audiences] 並按一 **[!DNL Confirm]** 下以重新導向至驗證頁面。![整合平台](assets/dbd-integrated-platforms.png)
-4. 在您已驗證您的Twitter帳戶後，將會重新導向至Audience Manager，您應該會看到相關聯的廣告商帳戶。選取您要使用並按一下 **[!DNL Confirm]**&#x200B;的廣告商帳戶。
+1. Click **[!DNL Add Account]**.
+1. 選取 [!DNL Twitter Tailored Audiences] 並按一 **[!DNL Confirm]** 下以重新導向至驗證頁面。![整合平台](assets/dbd-integrated-platforms.png)
+1. 在 [!DNL Twitter] 您的帳戶驗證後，將會重新導向至Audience Manager，您應該會看到相關聯的廣告商帳戶。選取您要使用並按一下 **[!DNL Confirm]**&#x200B;的廣告商帳戶。
+1. 前往 **[!UICONTROL Audience Data]** &gt;， **[!UICONTROL Destinations]** 然後按一下您需要設定的Twitter目的地。
+1. Click **[!UICONTROL Edit]**. 在 **[!UICONTROL Basic Information]** 區段中，按一下 **[!UICONTROL Integrated Account]** 下拉式功能表，然後選取您在步驟中已驗證的 [!DNL Twitter] 帳戶。
+1. **[!UICONTROL Save]** 目的地。
+
+## 驗證移轉至自助服務管理 {#migration-validation}
+
+將現有 [!DNL Twitter] 整合完整移轉至自助服務管理最多需要天。移轉完成後，Audience Manager會在UI中顯示通知。
+
+您也會在 [!DNL Twitter] 帳戶中看到一組新的對象，其名稱前置詞[！DNL [Adobe DMP Audience]].最多需要天，觀眾才能完全回填。移轉完成後，您應該使用這些新的對象，而非舊對象。
 
 ## 區段對應考量事項 {#segment-mapping-considerations}
 
@@ -76,7 +83,7 @@ source-git-commit: 0ca286bd391c9c3a5298508ecc5a42ec61a64044
 * 提供人類可讀區段對應名稱。建議您使用與Audience Manager區段相同的名稱。
 * 請勿在區段和區段對應名稱中使用逗號。
 
-**範例**
+### 範例
 
 * 正確的區段或對應名稱：「美國和歐洲購物者」；
 * 區段或對應名稱不正確：「US，European h h3Rs」。
