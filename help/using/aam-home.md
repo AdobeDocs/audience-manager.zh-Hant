@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager產品文件
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: aa58d1aa69a7d5e112d6b24fa8250bf56ccb370a
 
 ---
 
@@ -20,11 +20,10 @@ Audience Manager 提供領先業界的線上讀者資料管理服務。我們的
   <tr> 
    <td colname="col1"> <p> <b>全新和精選項目</b> </p> <p>瞭解最新Audience Manager功能：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
+     <li><a href="features/destinations/people-based-destinations-overview.md">以人為本目標</a> </li>
+     <li><a href="features/destinations/twitter-tailored-audiences.md">將Twitter自訂對象設定為自助服務裝置的目的地</a> </li>
      <li><a href="features/destinations/destinations-home.md">目標首頁</a> </li>
      <li><a href="features/administration/ip-obfuscation.md">IP 位址模糊化</a> </li>
-     <li><a href="overview/aam-gdpr/aam-iab-plugin.md">適用 IAB TCF 的 Audience Manager 增效模組</a> </li>
-     <li><a href="features/administration/usage-limits.md#id-mapping-limits">ID 對應限制</a> </li>
-     <li><a href="features/global-data-sources.md">全球資料來源</a> </li> 
      </ul> </p> <p>另請參閱 <a href="docs-updates/docs-2019.md"> 「2019年文件更新</a>」。 </p> 
      <p>如果您是Audience Manager的新手，請參閱我們 <a href="reference/aam-glossary.md"> 的詞彙表</a> 和 <a href= "reference/ids-in-aam.md">ID索引。</a></p></td>
    <td colname="col2"> <p> <b>發行說明</b> </p> <p> 
@@ -38,7 +37,7 @@ Audience Manager 提供領先業界的線上讀者資料管理服務。我們的
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe 培訓和教學課程</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/en_US/home/index.html" scope="external" format="https"> 產品文件首頁</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external"> Audience Manager 學習與支援</a> </li> 
-     </ul> </p> </td> 
+     </ul> </p> </td>
   </tr> 
  </tbody> 
 </table>
