@@ -4,7 +4,7 @@ audience: 使用者
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 5bd7acbdaa90d33eb5f806dbe072acfb013d8f0b
+source-git-commit: a51d569c04d1232d0fe9258199bd4ca0e5fcd987
 
 ---
 
@@ -277,7 +277,6 @@ source-git-commit: 5bd7acbdaa90d33eb5f806dbe072acfb013d8f0b
       + [修改GPT Settargeting API呼叫](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [Google Publisher標記的Audience Manager代碼](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
    + 與第三方目的地整合 {#integrating-third-party}
-      + [Audience Manager技術合作夥伴](/help/using/integration/integrating-third-party/audience-manager-technology-partners.md)
       + [Facebook WCA整合](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [作為Audience Manager目標的OAS](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX做為Audience Manager目的地](integration/integrating-third-party/openx-destination.md)
