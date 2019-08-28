@@ -5,7 +5,7 @@ seo-title: 將Twitter自訂對象設定為自助服務裝置的目的地
 solution: Audience Manager
 title: 將Twitter自訂對象設定為自助服務裝置的目的地
 translation-type: tm+mt
-source-git-commit: bdc626ef11aacbf1fcbf138748b56acc24ec7b13
+source-git-commit: 2ca6ed86922af2dbdfd268551f101e58c8356579
 
 ---
 
@@ -74,7 +74,7 @@ source-git-commit: bdc626ef11aacbf1fcbf138748b56acc24ec7b13
 
 將現有 [!DNL Twitter] 整合完整移轉至自助服務管理最多需要天。移轉完成後，Audience Manager會在UI中顯示通知。
 
-您也會在 [!DNL Twitter] 帳戶中看到一組新的對象，其名稱前置詞[！DNL [Adobe DMP Audience]].最多需要天，觀眾才能完全回填。移轉完成後，您應該使用這些新的對象，而非舊對象。
+您也會在 [!DNL Twitter] 帳戶中看到一組新的對象，其名稱預設為[[!DNL Adobe DMP Audience]]。最多需要天，觀眾才能完全回填。移轉完成後，您應該使用這些新的對象，而非舊對象。
 
 ## 區段對應考量事項 {#segment-mapping-considerations}
 
