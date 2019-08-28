@@ -5,7 +5,7 @@ seo-title: 管理目標
 solution: Audience Manager
 title: 管理目標
 translation-type: tm+mt
-source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
+source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 75eada471bc898be2f8903316285fe60890972cc
 
 * ****&#x200B;全部：顯示所有目的地類型。
 * **Adobe Experience Cloud**：顯示將資料傳送至其他Adobe Experience Cloud解決方案的目標。目前唯一支援的選項是Adobe Analytics。See [Configure an Analytics Destination](/help/using/features/destinations/create-analytics-destination.md).
-* **整合平台**：顯示以人員為主的裝置目的地(也稱為伺服器對伺服器目的地)。請注意，以人員為基礎的目的地目前僅適用於特定客戶。
+* **整合平台**：顯示以人員為主的裝置目的地(也稱為伺服器對伺服器目的地)。
 * **自訂**：顯示Cookie和URL目的地。
 
 
