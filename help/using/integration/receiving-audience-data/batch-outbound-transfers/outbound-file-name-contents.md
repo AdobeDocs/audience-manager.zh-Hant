@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 傳出資料檔案名稱語法和範例
 uuid: effpaf6-c37 c-45f3-9d2 f-a938 a9 da47 a6
 translation-type: tm+mt
-source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
+source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
 
 ---
 
@@ -93,7 +93,7 @@ source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 
 ### 方案1
 
-檔案傳送到 [!DNL Amazon S3] 位置，並包含 *`PID-ALIAS="XYZCustomer"`*[!DNL Google Advertiser IDs] 在檔案內容中。
+檔案傳送到 [!DNL Amazon S3] 位置，並包含 *`PID_ALIAS="XYZCustomer"`*[!DNL Google Advertiser IDs] 在檔案內容中。
 
 E.g. 增量檔案：
 
@@ -112,7 +112,7 @@ E.g. 完整檔案：
 
 ### 方案2
 
-傳送至 [!DNL FTP] 位置的檔案(不含 *`PID-ALIAS`* 和包含 [!DNL Apple Advertiser IDs] 在檔案內容中)：
+傳送至 [!DNL FTP] 位置的檔案(不含 *`PID_ALIAS`* 和包含 [!DNL Apple Advertiser IDs] 在檔案內容中)：
 
 E.g. 增量檔案：
 
@@ -128,7 +128,7 @@ E.g. 完整檔案：
  <li> <code> ftp_1234_20915_full_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-**方案3**：傳送到 [!DNL FTP] 位置的檔案， *`PID-ALIAS="XYZCustomer"`* 以及檔案內容中的第三方使用者ID( *`Vendor ID=45454`*)：
+**方案3**：傳送到 [!DNL FTP] 位置的檔案， *`PID_ALIAS="XYZCustomer"`* 以及檔案內容中的第三方使用者ID( *`Vendor ID=45454`*)：
 
 E.g. 增量檔案：
 
