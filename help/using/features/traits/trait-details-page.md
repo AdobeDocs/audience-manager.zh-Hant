@@ -6,14 +6,14 @@ solution: Audience Manager
 title: 特徵詳細資料頁面
 uuid: 23301376-c1 cc-4778-b8 c4-9831f6739 db9
 translation-type: tm+mt
-source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
+source-git-commit: aadcafe10d452a0abc02a430485a373c6c80cdc5
 
 ---
 
 
-# Trait Details Page {#trait-details-page}
+# 特徵詳細資料頁面 {#trait-details-page}
 
-個別特徵的詳細資料頁面提供特徵名稱、ID、效能度量、定義特徵的運算式、定義為特徵的運算式，以及特徵稽核記錄檔。To vew these details, go to [!UICONTROL Audience Data > Traits] and click the name of the trait you want to work with.
+個別特徵的詳細資料頁面提供特徵名稱、ID、效能度量、定義特徵的運算式、定義為特徵的運算式，以及特徵稽核記錄檔。若要詳列這些詳細資訊，請前往 [!UICONTROL Audience Data > Traits] 並按一下您要使用之特徵的名稱。
 
 ## 基本資訊 {#basics}
 
@@ -21,34 +21,39 @@ source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
 
 ![](assets/basicInfo.png)
 
-## Trait Graph {#trait-graph}
+## 特徵圖 {#trait-graph}
 
-The [!UICONTROL Trait Graph] provides at-a-glance performance metrics for your selected trait. 將游標停留在趨勢線上，以查看所選特徵的其他資料。
+提供 [!UICONTROL Trait Graph] 您所選特徵的一目瞭然效能度量。將游標停留在趨勢線上，以查看所選特徵的其他資料。
 
-[!UICONTROL Unique Trait Realizations] 代表在指定時間範圍內將此特徵新增至其描述檔的獨特使用者計數。The [!UICONTROL Total Trait Population] indicates the number of unique users currently qualified for this trait.
+[!UICONTROL Unique Trait Realizations] 代表在指定時間範圍內將此特徵新增至其描述檔的獨特使用者計數。這 [!UICONTROL Total Trait Population] 表示目前符合此特徵的獨特使用者人數。
 
 * 對於規則型特徵，特徵資格會即時發生，因為使用者可以在其瀏覽器中取得特徵。
-* For onboarded traits, trait qualification happens after an inbound file is processed, i.e. the inbound file is [fed into Audience Manager](../../faq/faq-inbound-data-ingestion.md) and that is when the trait qualification happens.
+* 對於已登錄的特性，特徵資格會在傳入的檔案處理後發生，即傳入的檔案 [被送入Audience Manager](../../faq/faq-inbound-data-ingestion.md) ，而這就是特徵資格的發生時機。
 * **獨特特徵實作**：在指定時間範圍內將此特徵新增至其描述檔的獨特使用者數。
 * **特徵總數**：目前符合此特徵的獨特使用者人數。
 
-![](assets/traitGraph.png)
+   ![特徵圖形](assets/trait-summary.png)
 
-## Trait Expression {#trait-expression}
+* **身分類型劃分**：前三個項目會以遞減順序顯示前三個具有特徵特徵的前三個跨裝置資料來源。第四個項目顯示適用於特徵的所有其他 [!DNL DPUUIDs] ([!DNL CRM IDs])在不屬於前三個資料來源之跨裝置資料來源的總和。只有當您在頁面右上方 [!UICONTROL Show Results By] 的下拉式選單中選取跨裝置ID時，才會顯示此報告。預設下拉清單選項 [!UICONTROL Device ID]不會顯示。
+
+   ![特徵圖形](assets/trait-identity.png)
+
+
+## 特徵運算式 {#trait-expression}
 
 [!UICONTROL Trait Expression] 本節顯示使用者必須符合特徵才能符合特徵的標準。[建立或編輯特徵](../../features/traits/about-trait-builder.md)時，會設定這些規則。
 
 ![](assets/traitExpression.png)
 
-## Trait Segments {#trait-segments}
+## 特徵區段 {#trait-segments}
 
 [!UICONTROL Segments with this Trait] 區段列出所選特徵所屬的所有區段。您可以按一下區段名稱，查看該區段的詳細資料。
 
 ![](assets/traitSegments.png)
 
-## Trait Audit/History Log {#trait-audit-history}
+## 特徵稽核/歷史記錄 {#trait-audit-history}
 
-For rule-based and onboarded traits, the [!UICONTROL Trait Expression Change History] shows you the last 10 changes made to trait expression rules and who made them. If your trait has more than 10 changes, click **[!UICONTROL Export to CSV]** to download the entire audit log. 稽核記錄無法用於資料夾或演算法特性。
+對於規則型和已登錄的特徵，顯示 [!UICONTROL Trait Expression Change History] 對特徵運算式規則及其執行者所做的最近10項變更。如果您的特徵超過10項變更，請按一下 **[!UICONTROL Export to CSV]** 以下載整個稽核記錄檔。稽核記錄無法用於資料夾或演算法特性。
 
 >[!NOTE]
 >
