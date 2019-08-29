@@ -6,7 +6,7 @@ solution: Audience Manager
 title: ID 同步檔案的名稱和內容要求
 uuid: bfe42af9-9149-4da3-830e-f227 c4 e610 c
 translation-type: tm+mt
-source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
+source-git-commit: 5624eac36a7f2b8892136688f89fc22af241fc3a
 
 ---
 
@@ -19,13 +19,13 @@ source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
 >
 >文字樣式 (`monospaced text`、*斜體*、括號 `[ ]` `( )` 等)在本文件中指出程式碼元素和選項。如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
-## File Name Syntax and Examples {#file-name-syntax}
+## 檔案名稱語法和範例 {#file-name-syntax}
 
 <!-- c_file_based_id_sync.xml -->
 
 ID檔案名稱包含下列必要項目和選擇性元素：
 
-`adobe_id_`*`MASTERDPID_DPID[_DPID_DPID`*`]_`*`TIMESTAMP`*`.sync[.`*`SPLIT_NUMBER`*`][.gz]`
+`adobe_id_`*`[c2c_id_]`*`MASTERDPID_DPID[_DPID_DPID`*`]_`*`TIMESTAMP`*`.sync[.`*`SPLIT_NUMBER`*`][.gz]`
 
 <table id="table_727A465D7C38419CA0750EF32DEDA2FD"> 
  <thead> 
@@ -37,7 +37,11 @@ ID檔案名稱包含下列必要項目和選擇性元素：
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> adobe_ id</code> </p> </td> 
-   <td colname="col2"> <p>靜態首碼，可識別檔案為ID檔案。 </p> </td> 
+   <td colname="col2"> <p>靜態首碼，可識別檔案為ID同步檔案。將裝置ID與其他裝置ID或客戶ID(DPUUID)配對時，請使用此前置詞。  </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p> <code> c2c_ id</code> </p> </td> 
+   <td colname="col2"> <p>靜態首碼，將檔案識別為「人員導向目的地」的ID同步檔案。將客戶ID(DPUUID)與以人員為基礎的目的地雜湊電子郵件地址配對時，請使用此前置詞。  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTDPID</i></code> </td> 
@@ -74,23 +78,27 @@ ID檔案名稱包含下列必要項目和選擇性元素：
  <li> <code> adobe_ id_111_222_333_444_444_145441414.sync</code> </li> 
  <li> <code> adobe_id_123_898_456_1454442149.sync.1.gz</code> </li> 
  <li> <code> adobe_id_123_898_456_1454442149.sync.2.gz</code> </li> 
+ <li> <code>c2c_id_123_898_1454442149.sync.gz</code> </li> 
 </ul>
 
-## File Content Syntax and Examples {#file-content-syntax}
+>[!NOTE]
+> 對於「人員導向目的地」的ID同步檔案命名(c2c首碼)，請參閱 [「工作流程A-根據所有線上活動結合離線資料」](../../../features/destinations/people-based-destinations-workflow-combined.md) 或 [「工作流程B-根據離線資料個人化](../../../features/destinations/people-based-destinations-workflow-offline.md)」。
+
+## 檔案內容語法和範例 {#file-content-syntax}
 
 ID檔案的內容包含下列元素：
 
 *`UUID`* `<tab>`*`UUID`* `<tab>`*`UUID`*`<tab>` *`UUID`*
 
-The file contains user IDs ([!DNL UUID]). 在每一列中，將ID與標籤分開。下列範例顯示正確格式的ID檔案。您的內容看起來類似。
+檔案包含使用者ID([!DNL UUID])。在每一列中，將ID與標籤分開。下列範例顯示正確格式的ID檔案。您的內容看起來類似。
 
 ```
 abc123 def456 ghi789 xyz987
 ```
 
-## Synchronization Matches DPUUIDs to UUIDs {#sync-matches-dpuuids-uuids}
+## 同步符合DpuUID至UUID {#sync-matches-dpuuids-uuids}
 
-The purpose of an ID sync file is to sync the [DPUUIDs](../../../reference/ids-in-aam.md) from your own Data Sources with [!DNL Audience Manager] UUIDs. Synchronization maps the [!DNL DPUUID]s from the master [!DNL DPID] and its related [!DNL DPID]s to the [!DNL Audience Manager] [!DNL UUID]s. Where you put the IDs in the file name and body determines how these identifiers are mapped to each other. 例如，請使用此處顯示的兩個範例檔案：
+ID同步檔案的目的是要將 [您](../../../reference/ids-in-aam.md) 自己的資料來源與 [!DNL Audience Manager] UUID同步。同步映射來自主頁的 [!DNL DPUUID][!DNL DPID] s及其相關 [!DNL DPID]的s [!DNL Audience Manager][!DNL UUID]。您將ID放在檔案名稱和內文中的位置，會決定這些識別碼彼此對應的方式。例如，請使用此處顯示的兩個範例檔案：
 
 * **檔案1：**`adobe_id_0_12345_1476312152.sync`
 
@@ -110,8 +118,8 @@ The purpose of an ID sync file is to sync the [DPUUIDs](../../../reference/ids-i
 | 66552757407517449462805881945288602094 | XYZ3017QVBDDD-BljS28 dpXQique3_55 BVQQJMLWRegju2 M |
 | 66184778222667870903738139438735041506 | XYZ3017q9r60KuhPocka_ EK-BTCN2 u1 Hyvaue0 rd412 tsBycmd |
 
-Step 1: the ID sync process will sync the [!DNL DPUUID]s from [!DNL DPID] 12345 with the [!DNL Audience Manager] [!DNL UUID]s in the left column. Note that the [!DNL DPID] "0" in the file name represents [!DNL Audience Manager] [!DNL UUID]s.
-<br/>
+步驟1：ID同步程序會將 [!DNL DPUUID]s從 [!DNL DPID] 12345同步至左側欄中的 [!DNL Audience Manager][!DNL UUID]s。請注意，檔案名稱中的 [!DNL DPID] 「0」代表 [!DNL Audience Manager][!DNL UUID]s。<br/>
+
 
 **檔案(**[下載範例檔案](assets/adobe_id_12345_67890_1477846458.sync))
 
@@ -123,16 +131,16 @@ Step 1: the ID sync process will sync the [!DNL DPUUID]s from [!DNL DPID] 12345 
 | XYZ3017QVBDDD-BljS28 dpXQique3_55 BVQQJMLWRegju2 M | 2351382994 |
 | XYZ3017q9r60KuhPocka_ EK-BTCN2 u1 Hyvaue0 rd412 tsBycmd | 4601584763 |
 
-Step 2: the [!DNL DPUUID]s from [!DNL DPID] 12345 have been synced in step 1 with the Audience Manager [!DNL UUID]s. What this ID sync will do is sync the [!DNL DPUUID]s from [!DNL DPID] 67890 with the Audience Manager [!DNL UUID]s from step 1.
+步驟2： [!DNL DPUUID]從 [!DNL DPID] 12345同步至Audience Manager [!DNL UUID]的步驟1。此ID同步將會同步 [!DNL DPUUID]s從 [!DNL DPID] 步驟中與Audience Manager [!DNL UUID]的67890同步。
 
 <br/>
 
-## Other Format Requirements {#other-format-reqs}
+## 其他格式需求 {#other-format-reqs}
 
 使用者ID無法：
 
 * 在ID本身中擁有標籤。標籤僅用於分隔資料檔案中的個別ID。
-* Contain personally identifiable information ([!UICONTROL PII]).
-* Use [!DNL URL] encoding. 僅傳入未編碼ID。
+* 包含個人識別資訊([!UICONTROL PII])。
+* 使用 [!DNL URL] 編碼。僅傳入未編碼ID。
 
 任何以標籤或空格結尾的行都不會加以處理或實現。作為規則，請確定您已清除行結尾。
