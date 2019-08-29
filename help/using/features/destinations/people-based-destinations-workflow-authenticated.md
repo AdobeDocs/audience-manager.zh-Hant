@@ -5,7 +5,7 @@ seo-title: 工作流程C-根據已驗證活動結合離線資料的個人化
 solution: Audience Manager
 title: 工作流程C-根據已驗證活動結合離線資料的個人化
 translation-type: tm+mt
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
+source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 
 ---
 
@@ -49,16 +49,16 @@ source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
 
 假設您已建立下列兩個資料來源。
 
-|資料來源ID|資料來源內容|
-|-|-|
-|999999|現有DPuUID(CRM ID)|
-|987654|雜湊電子郵件地址|
+| 資料來源ID | 資料來源內容 |
+|---|---|
+| 999999 | 現有的DPuUID(CRM ID) |
+| 987654 | 雜湊電子郵件地址 |
 
 然後，您想要為表格中的特徵限定以下CRM ID。
 
-| DPUUID(CRM ID)|電子郵件地址|雜湊電子郵件地址|特徵|
-|-|-|-|-|
-|6807998276567198052652656074666039|`johndoe@example.com`|55e79200c1635b37ad31a378c39jb12f120f120f116625093a19bc32fff15041149= US|
+| DPUUID(CRM ID) | 電子郵件地址 | 雜湊電子郵件地址 | 特性 |
+|---|---|---|---|
+| 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 | location= US |
 
 您的宣告ID應遵循此語法：
 
