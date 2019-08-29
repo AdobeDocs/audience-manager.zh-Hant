@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 輸出範本巨集
 uuid: dec082d3-306b-4ff5-afb2-418bd543 d0 d0
 translation-type: tm+mt
-source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
+source-git-commit: 11663e962254bbcab90105d72af003b2a7056744
 
 ---
 
@@ -15,9 +15,9 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
 
 列出可用來建立對外範本的巨集。這些檔案名稱包括檔案名稱巨集、標題巨集和內容巨集。
 
-## File Name and File Header Macros {#file-name-header-macros}
+## 檔案名稱和檔案標題巨集 {#file-name-header-macros}
 
-表格列出並說明您可以在檔案名稱中使用的巨集，以及定義標題欄位。For code samples, see [Outbound Macro Examples](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
+表格列出並說明您可以在檔案名稱中使用的巨集，以及定義標題欄位。如需程式碼範例，請參閱 [「輸出巨集範例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)」。
 
 <table id="table_C353AF028E0A4944A8727FD01C94FDB6"> 
  <thead> 
@@ -44,8 +44,17 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
    <td colname="col2"> <p>訂單/目的地ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> PIDALAS </code> </p> </td> 
+   <td colname="col1"> <p> <code> PID_ ALIAS </code> </p> </td> 
    <td colname="col2"> <p>訂單/目的地ID的別名。 </p> <p>別名已設定在管理UI中。 </p> </td> 
+  </tr>
+  <tr> 
+   <td colname="col1"> <p> <code> SPLITNum </code> </p> </td> 
+   <td colname="col2"> <p>表示將傳出檔案分割為多個部分。以零件編號取代檔案名稱中的SPLITNUM區段，零件編號為零，確保SITLUM區段最少個字元。</p>
+   <p>SPLITNUM巨集不需要被&lt;&gt;字元包圍。</p><p>範例： <code>&lt; Sync_ TYPE&gt;_&lt; ORDER_ ID&gt;_&lt; DPID&gt;_&lt; SYXCH_ MODE&gt;_&lt;時間戳記&gt; SPITNUM. csv</code>
+<p>s3_123456_9999_ full_1566906141001.csv</p> 
+<p>s3_123456_9999_ full_1566906142.csv</p> 
+<p>s3_123456_9999_ full_15669061431003.csv</p> 
+<p>上述範例中的最後三位數(001,002,003)為SPLITNum識別碼。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 同步_ MODE </code> </p> </td> 
@@ -70,14 +79,15 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 時間戳記 </code> </p> </td> 
-   <td colname="col2"> <p>10位數、UTC、Unix時間戳記。 </p> <p>It can also be formatted as <code> &lt;TIMESTAMP; format="YYYYMMDDhhmmss"&gt; </code> following Java date/timestamp formatting rules. </p> </td> 
-  </tr> 
- </tbody> 
+   <td colname="col2"> <p>10位數、UTC、Unix時間戳記。 </p> <p>它也可以格式化為 <code> &lt; TimeSTAMP；format=「yyyYMMDHHMSS」&gt; </code> 遵循Java日期/時間戳記格式規則。 </p> </td> 
+  </tr>
+
+</tbody> 
 </table>
 
-## Content Macros {#content-macros}
+## 內容巨集 {#content-macros}
 
-用於格式化資料檔案內容的巨集。For code samples, see [Outbound Macro Examples](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md).
+用於格式化資料檔案內容的巨集。如需程式碼範例，請參閱 [「輸出巨集範例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)」。
 
 <table id="table_5C6F9678CFF34C5EB67BA1DEA0479F1D"> 
  <thead> 
@@ -133,7 +143,7 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Output_ Attribute_ Value </code> </p> </td> 
-   <td colname="col2"> <p>Returns <code> 1 </code> as a static, hardcoded value. </p> </td> 
+   <td colname="col2"> <p>傳回 <code> 靜態 </code> 、硬式編碼值1。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> PID </code> </p> </td> 
@@ -151,17 +161,17 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
    <td colname="col1"> <p> <code> Segment_ LIST </code> </p> </td> 
    <td colname="col2"> <p>傳回清單中的區段清單。接受下列選擇性引數： </p> 
     <ul id="ul_B111AA0D6C18445598A1444B8B7E9325"> 
-     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> Segmentid </code>：區段ID。不再提倡。Use <code> sid </code>. </li> 
-     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>：客戶區段ID。不再提倡。Use <code> sid </code>. </li> 
+     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> Segmentid </code>：區段ID。不再提倡。使用 <code> sid </code>。 </li> 
+     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>：客戶區段ID。不再提倡。使用 <code> sid </code>。 </li> 
      <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>：區段ID </li> 
      <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>：傳回 <code> 個 </code>靜態硬碼值，將資料識別為區段資料。 </li> 
      <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> 別名 </code>：已過時。請勿使用。 </li> 
      <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> laxpdateTime </code>：Unix時間戳記，指出上次區段的實現時間。 </li> 
-    </ul> <p>將這些變數放入巨集後面的巨括號後面。For example, this code separates results with a pipe "|" character: <code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;}; separator=","&gt; </code> </p> </td> 
+    </ul> <p>將這些變數放入巨集後面的巨括號後面。例如，此程式碼會將結果與垂直號分隔」|「字元： <code> &lt; SERGE_ LIST：{seg|&lt; seg. type&gt;，&lt; seg. sid&gt;}；separator=」，&gt; </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ TICETS </code> </p> </td> 
-   <td colname="col2"> <p>Returns <code> 1 </code>, as a static, hardcoded value. </p> </td> 
+   <td colname="col2"> <p>傳回 <code> 1 </code>，作為靜態的硬式編碼值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 同步_ MODE </code> </p> </td> 
@@ -195,7 +205,7 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
       </ul> </li> 
      <li id="li_1DDE25334CF9479A8C4738F3CB3C40AA"> <code> TraiID </code>：特徵ID。 </li> 
      <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> 已實現 </code>：最後一次實現特徵。Unix時間戳記。 </li> 
-    </ul> <p>將這些變數放入巨集後面的巨括號後面。For example, this code separates the results with a pipe "|" character: <code> &lt;TRAIT_LIST:{trait|&lt;trait.Id&gt;,&lt;trait.lastRealized&gt;};separator="," </code> </p> </td> 
+    </ul> <p>將這些變數放入巨集後面的巨括號後面。例如，此程式碼會將結果與垂直號分隔。|「字元： <code> &lt; TRAIT_ LIST：{traines|&lt; traces. id&gt;，&lt; traces. lastImplementation&gt;}；separator=」，」 </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> UUID </code> </p> </td> 
