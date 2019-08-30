@@ -5,7 +5,7 @@ seo-title: 工作流程A-根據所有線上活動結合離線資料的個人化
 solution: Audience Manager
 title: 工作流程A-根據所有線上活動結合離線資料的個人化
 translation-type: tm+mt
-source-git-commit: 3fd24d4006ccbb14dad5cad10a66749a1cb97f47
+source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 
 ---
 
@@ -55,7 +55,7 @@ source-git-commit: 3fd24d4006ccbb14dad5cad10a66749a1cb97f47
 假設您要將現有 [的DPuUID](../../reference/ids-in-aam.md) 與下列表格的雜湊電子郵件地址配對(右欄)，並將雜湊電子郵件地址儲存在您在 [步驟建立的新資料來源中-設定資料來源設定](people-based-destinations-workflow-combined.md#configure-data-source-settings)。
 
 | DPUUID(CRM ID) | 電子郵件地址 | 雜湊電子郵件地址 |
-| --- | --- | --- |
+| -------------------------------------- | --------------------- | ---------------------------------------------------------------- |
 | 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 |
 | 67412682083411995725538770443620307584 | `janedoe@email.com` | 16d72e3edbeb089b299e0d12fc09522fdc5ece2d11dcb1304ecdd6fab4f7193a |
 | 89159024796760343733111707646026765593 | `name@mydomain.com` | feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6 |
@@ -65,7 +65,7 @@ source-git-commit: 3fd24d4006ccbb14dad5cad10a66749a1cb97f47
 在我們的範例中，您現在有兩個資料來源。
 
 | 資料來源ID | 資料來源內容 |
-| --- | --- |
+| -------------- | -------------------------- |
 | 999999 | 現有的DPuUID(CRM ID) |
 | 987654 | 雜湊電子郵件地址 |
 
