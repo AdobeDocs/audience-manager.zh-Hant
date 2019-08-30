@@ -5,7 +5,7 @@ seo-title: 工作流程A-根據所有線上活動結合離線資料的個人化
 solution: Audience Manager
 title: 工作流程A-根據所有線上活動結合離線資料的個人化
 translation-type: tm+mt
-source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
+source-git-commit: d0e343e3fbaf527e9b630dc2dbc851d8f8f4c0b2
 
 ---
 
@@ -18,6 +18,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 
 根據 [您的DPuUID](../../reference/ids-in-aam.md) 為小寫、雜湊電子郵件地址，您可能需要設定儲存雜湊電子郵件地址的資料來源。
 
+ 
+
 **方案1：您[的dpuuid](../../reference/ids-in-aam.md)是小寫的電子郵件地址。**
 
 在這種情況下，您需要為對應的資料來源加上標籤：
@@ -26,6 +28,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 1. 尋找包含您 [的DPUUID](../../reference/ids-in-aam.md)的資料來源，然後按一下它。
 1. 請確定選項 [!UICONTROL Cannot be tied to personally identifiable information] 未勾選。
 1. 儲存資料來源設定。
+
+ 
 
 **方案2：您[的dpuUID](../../reference/ids-in-aam.md)不是小寫、雜湊電子郵件地址。**
 
@@ -60,6 +64,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 | 67412682083411995725538770443620307584 | `janedoe@email.com` | 16d72e3edbeb089b299e0d12fc09522fdc5ece2d11dcb1304ecdd6fab4f7193a |
 | 89159024796760343733111707646026765593 | `name@mydomain.com` | feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6 |
 
+ 
+
 您最多可以連結10個雜湊電子郵件地址至單一 [DPUUID](../../reference/ids-in-aam.md)。若要這麼做，請在同步檔案中將雜湊的電子郵件地址分隔為逗號。
 
 在我們的範例中，您現在有兩個資料來源。
@@ -69,6 +75,8 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 | 999999 | 現有的DPuUID(CRM ID) |
 | 987654 | 雜湊電子郵件地址 |
 
+ 
+
 [您的ID同步檔案](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 會有下列內容：
 
 ```
@@ -77,9 +85,13 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 89159024796760343733111707646026765593<TAB>feec5debcea411f54462a345a0d90c9975415d2d4862745ff8af00c49b6b4ae6
 ```
 
+ 
+
 [ID同步檔案](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) 必須遵循此命名結構：
 
 `c2c_id_<DPUUID_DATA_SOURCE_ID>_<HASHED_EMAIL_DATA_SOURCE_ID>_TIMESTAMP.sync`
+
+ 
 
 在上述範例中，檔案名稱如下：`c2c_id_999999_987654_1560431657.sync`
 
