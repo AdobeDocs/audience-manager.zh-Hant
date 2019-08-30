@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料匯出控制
 uuid: de7f3608-c0 cb-4049-973a-8be5425 c600
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: 22657113512e136296be5c4bcb8e092e65f45c06
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 根據套用至資料來源和目的地的分類，匯出控制項會阻止您：
 
 * 在特徵屬於資料來源時新增特徵至資料來源，其資料來源具有與將區段映射至一或多個目的地上的資料匯出標籤不相容的資料匯出控制。
-例如，假設區段使用匯出標籤 **[UICOHTROL對應至目的地！此目的地可結合個人識別資訊(PII)]**。匯出控制項可防止您將特徵新增至該區段，如果特徵所屬的資料來源具有UICOHTROL的 **[資料匯出控制。無法系結至個人識別資訊(PII)]**。
+例如，假設區段已對應至具有匯出標籤 **[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目的地。匯出控制項可防止您將特徵新增至該區段，如果特徵所屬的資料來源具有表示資料的控制項 **[!DNL Cannot be tied to personally identifiable information (PII)]**。
 * 傳送任何資料至目的地目的地時，會有資料匯出標籤，因為資料匯出控制會封鎖下列任何項目：
    * 隨附特徵的資料來源；
    * 用於包含區段之特徵的資料來源；
@@ -44,7 +44,7 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 >[!IMPORTANT]
 >
->[您無法透過對區段的資料來源放置資料匯出控制來封鎖區段的匯出，您必須設定下列任一項控制：
+>您無法在區段的資料來源上放置資料匯出控制來封鎖區段匯出，您必須對其中一個項目設定控制項：
 > * 區段中使用之特徵的資料來源；
 > * 區段運用的描述檔合併規則；
 > * 區段設定檔合併規則使用之任何資料來源。
