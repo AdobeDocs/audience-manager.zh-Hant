@@ -5,7 +5,7 @@ seo-title: 工作流程C-根據已驗證活動結合離線資料的個人化
 solution: Audience Manager
 title: 工作流程C-根據已驗證活動結合離線資料的個人化
 translation-type: tm+mt
-source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
+source-git-commit: d0e343e3fbaf527e9b630dc2dbc851d8f8f4c0b2
 
 ---
 
@@ -18,9 +18,13 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 
 根據 [您的DPuUID](../../reference/ids-in-aam.md) 為小寫、雜湊電子郵件地址，您可能需要設定儲存雜湊電子郵件地址的資料來源。
 
+ 
+
 **方案1：您[的dpuuid](../../reference/ids-in-aam.md)是小寫的電子郵件地址。**
 
 在此情況下，請跳至 [步驟-設定人員型平台驗證](#configure-authentication)。
+
+ 
 
 **方案2：您[的dpuUID](../../reference/ids-in-aam.md)不是小寫、雜湊電子郵件地址。**
 
@@ -54,15 +58,21 @@ source-git-commit: fdb17c46dd66794cfb744b77e8e5c8be9fd65dd5
 | 999999 | 現有的DPuUID(CRM ID) |
 | 987654 | 雜湊電子郵件地址 |
 
+ 
+
 然後，您想要為表格中的特徵限定以下CRM ID。
 
 | DPUUID(CRM ID) | 電子郵件地址 | 雜湊電子郵件地址 | 特性 |
 | -------------------------------------- | --------------------- | ---------------------------------------------------------------- | ------------- |
 | 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 | location= US |
 
+ 
+
 您的宣告ID應遵循此語法：
 
 `https://yourDomain.demdex.net/event?d_cid_ic=myHashedEmailDataSourceID%01myHashedEmail&d_cid_ic=myCrmDataSourceID%01myCRMID&key=value`
+
+ 
 
 在上述範例中，宣告的ID呼叫應該如下所示：
 
