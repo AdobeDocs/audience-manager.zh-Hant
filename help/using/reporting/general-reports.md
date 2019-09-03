@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 一般報表
 uuid: csea75a0-969e-4ee3-971a-60b911711e52
 translation-type: tm+mt
-source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
+source-git-commit: 1c626c770208150d209d93f666b581113ada8de9
 
 ---
 
@@ -66,13 +66,13 @@ t_run_general_report.xml
 1. Click **[!UICONTROL Run Report]**.
 
    結果會顯示在可導出的表格中。按一下欄標題，以遞增或遞減順序排序結果。
-2. 選取報表頂端所要的選項按鈕，以依效能( [!UICONTROL Unique Trait Realizations]、 [!UICONTROL Total Trait Realizations]或 [!UICONTROL Total Trait Population])或依時間(1、7、14、60或90天範圍)篩選資料。
+1. 選取報表頂端所要的選項按鈕，以依效能( [!UICONTROL Unique Trait Realizations]、 [!UICONTROL Total Trait Realizations]或 [!UICONTROL Total Trait Population])或依時間(1、7、14、60或90天範圍)篩選資料。
 
    >[!NOTE]
    >
    >[!UICONTROL Total Trait Realizations] 僅供計算。[!UICONTROL Rule-based Traits]
 
-3. *選擇性* 按 **[!UICONTROL Export to CSV]**&#x200B;一下。這可匯出 [!UICONTROL Unique Trait Realizations][!UICONTROL Total Trait Realizations]所有日期 [!UICONTROL Total Trait Population] 範圍。
+1. *選擇性* 按 **[!UICONTROL Export to CSV]**&#x200B;一下。這可匯出 [!UICONTROL Unique Trait Realizations][!UICONTROL Total Trait Realizations]所有日期 [!UICONTROL Total Trait Population] 範圍。
 
 ## 一般報表結果說明 {#general-reports-explained}
 
