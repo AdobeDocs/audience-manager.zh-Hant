@@ -6,7 +6,7 @@ solution: Audience Manager
 title: GDPR 對 Audience Manager 的影響
 uuid: ed23a478-32be-460d-be03-a735317 f7 c0 f
 translation-type: tm+mt
-source-git-commit: b791e22e9c8c848a8fc14c6d6494f77c9e7335dc
+source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: b791e22e9c8c848a8fc14c6d6494f77c9e7335dc
 
 本文件涵蓋Audience Manager通用資料保護規則(GDPR)的相關技術，並示範如何提交GDPR要求至Audience Manager。
 
-## GDPR Documentation in the Experience Cloud {#gdpr-documentation}
+## Experience Cloud中的GDPR文件 {#gdpr-documentation}
 
 在閱讀Audience Manager具體資訊之前，我們建議您瀏覽以下連結的歐洲通用資料保護規則(GDPR)的Experience Cloud教材：
 
@@ -25,9 +25,9 @@ source-git-commit: b791e22e9c8c848a8fc14c6d6494f77c9e7335dc
 
 以下章節說明GDPR對Audience Manager的意義，以及如何提交GDPR要求至Audience Manager。
 
-## Types of GDPR Requests and How to Make a GDPR Request {#types-of-gdpr-requests}
+## GDPR請求類型以及如何提出GDPR請求 {#types-of-gdpr-requests}
 
-As an Audience Manager customer, you can submit individual GDPR requests to access and delete customer data, either through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)**. You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑問，請在gdprsupport@adobe.com聯絡客戶服務。
+身為Audience Manager客戶，您可以提交個別GDPR要求，透過 **[GDPR用戶端服務UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或呼叫 **[GDPR API來存取和刪除客戶資料](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)**。You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑問，請在gdprsupport@adobe.com聯絡客戶服務。
 
 ## 存取資料 {#access-data}
 
@@ -35,15 +35,15 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **請求**
 
-You can log data access requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `access` action). 無論何種情況，您都必須使用您送出資料存取要求的Audience Manager識別碼上傳JSON。See what a well-formed JSON looks like in the **[Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (specifically, search in page for "POST request format"). Or, you can **[download a sample JSON](assets/access_request.json)**.
+您可以透過 **[GDPR用戶端服務UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或呼叫 **[GDPR API來記錄資料存取要求](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (請參閱 `access` 動作)。無論何種情況，您都必須使用您送出資料存取要求的Audience Manager識別碼上傳JSON。瞭解格式化的JSON在 **[Experience Cloud GDPR文件中](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 的外觀(尤其是在頁面中搜尋「POST請求格式」)。或者，您可以 **[下載範例JSON](assets/access_request.json)**。
 
 **回應**
 
-存取資料請求的回應包含特徵和區段總數的摘要、特徵類型、特徵和區段描述以及個別資料來源名稱。存取回應也將包含資料掌控者存取的第二方和第三方資料以及第一方資料。When [!UICONTROL declared IDs] such as cross device CRM IDs or customer cookie IDs are sent in GDPR requests, Audience Manager will include the Access response from all the linked devices (up to 100 devices per declared ID).
+存取資料請求的回應包含特徵和區段總數的摘要、特徵類型、特徵和區段描述以及個別資料來源名稱。存取回應也將包含資料掌控者存取的第二方和第三方資料以及第一方資料。當 [!UICONTROL declared IDs] 跨裝置CRM ID或客戶Cookie ID以GDPR請求傳送時，Audience Manager將會包含所有連結裝置的存取回應(每個宣告ID最多100個裝置)。
 
 **回應狀態**
 
-如果回應中有Audience Manager發生任何錯誤，回應中會出現錯誤代碼。We have a [list of error codes](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md), where you can find more information about the returned errors.
+如果回應中有Audience Manager發生任何錯誤，回應中會出現錯誤代碼。我們有錯誤代碼 [](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)清單，您可在此處找到傳回錯誤的更多資訊。
 
 **回應範例**
 
@@ -142,15 +142,15 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>後續資料的使用者ID。這是您在GDPR資料存取要求中提供的ID，或是連結至您所提供之其中一個ID的ID。The ID types are described in the <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers</a> section. </p> </td> 
+   <td colname="col2"> <p>後續資料的使用者ID。這是您在GDPR資料存取要求中提供的ID，或是連結至您所提供之其中一個ID的ID。「 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager識別碼</a> 」區段中會說明ID類型。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> namespace</code> </p> </td> 
-   <td colname="col2"> <p>亦稱為資料來源。See the <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers</a> section. </p> </td> 
+   <td colname="col2"> <p>亦稱為資料來源。請參閱 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager識別碼</a> 區段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>namespace/資料來源的 ID。See <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers (IDs)</a> for all the accepted values. </p> </td> 
+   <td colname="col2"> <p>namespace/資料來源的 ID。請參閱 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 所有接受值的Audience Manager識別碼(ID)</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 整合程式碼 </code> </p> </td> 
@@ -167,7 +167,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 類型 </code> </p> </td> 
-   <td colname="col2"> <p>您要求 GDPR 資料存取權限的 ID 類型。Accepted types are listed in the <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers</a> section. </p> </td> 
+   <td colname="col2"> <p>您要求 GDPR 資料存取權限的 ID 類型。「 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager識別碼</a> 」區段中會列出接受類型。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 警告</code> </p> </td> 
@@ -206,7 +206,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
    <td colname="col2"> <p>特徵類型。可能的值包括: </p> <p> 
      <ul id="ul_DBAC618D9FE94B17B2494B83832A969F"> 
       <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>第一方</i> 符合您自身特徵。 </li> 
-      <li id="li_D9354F40FD114802819191450F2375C8"> <i>屬於您合作夥伴特徵的第二方</i> 。Read our <a href="../../overview/data-types-collected.md#second-party-data"> Second Party Data</a> article for more information. </li> 
+      <li id="li_D9354F40FD114802819191450F2375C8"> <i>屬於您合作夥伴特徵的第二方</i> 。如需詳細資訊，請參閱我們 <a href="../../overview/data-types-collected.md#second-party-data"> 的第二方資料</a> 文章。 </li> 
       <li id="li_C321D8B8256F4102AE64CD40DC57C948"> <i>第三方</i> 針對資料合作夥伴取得的特性，透過 <a href="../../features/audience-marketplace/audience-marketplace.md"> Audience Marketplace</a>取得。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -216,7 +216,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 資料匯出控制</code> </p> </td> 
-   <td colname="col2"> <p>The <a href="../../features/data-export-controls.md"> data export controls</a> applied to this trait's data source. </p> </td> 
+   <td colname="col2"> <p>套用至此特徵資料來源的 <a href="../../features/data-export-controls.md"> 資料匯出控制</a> 項。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 資料提供者名稱</code> </p> </td> 
@@ -245,7 +245,7 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 資料匯出控制</code> </p> </td> 
-   <td colname="col2"> <p>The <a href="../../features/data-export-controls.md"> data export controls</a> applied to this segment's data source. </p> </td> 
+   <td colname="col2"> <p>套用至此區段資料來源的 <a href="../../features/data-export-controls.md"> 資料匯出控制</a> 項。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 資料提供者名稱</code> </p> </td> 
@@ -307,19 +307,19 @@ You can log data access requests through the **[GDPR Client Services UI](https:/
 
 **請求**
 
-You can log data deletion requests through the **[GDPR Client Services UI](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/using-gdpr-ui.md)** or by calling the **[GDPR API](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md)** (see `delete` action). 無論何種情況，您都必須使用您送出資料存取要求的Audience Manager識別碼上傳JSON。See what a well-formed JSON looks like in the [Experience Cloud GDPR documentation](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/use-cases/gdpr-api-overview.md) (specifically, search in page for "POST request format"). Or, you can **[download a sample JSON](assets/delete_request.json)**.
+您可以透過 **[GDPR用戶端服務UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** 或呼叫 **[GDPR API](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (請參閱 `delete` 行動)來記錄資料刪除請求。無論何種情況，您都必須使用您送出資料存取要求的Audience Manager識別碼上傳JSON。瞭解格式化的JSON在 [Experience Cloud GDPR文件中](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 的外觀(尤其是在頁面中搜尋「POST請求格式」)。或者，您可以 **[下載範例JSON](assets/delete_request.json)**。
 
 **回應**
 
 回應資料刪除請求，我們刪除與個別Audience Manager識別碼關聯的特徵和區段。此外，Data主體的個別Audience Manager識別碼將會永久退出Audience Manager的資料收集，並移除個別的ID對應。當已宣告的ID(例如跨裝置CRM ID或客戶Cookie ID)以GDPR請求傳送時，Audience Manager會對所有連結的裝置執行必要的刪除動作(每個宣告ID最多100個裝置)。
 
-## Opt-out Request {#opt-out-request}
+## 退出請求 {#opt-out-request}
 
-For opt-out requests, please refer to our documentation on [Opt-out Management](../../overview/data-security-and-privacy/opt-out-management.md).
+如需退出要求，請參閱我們的 [選擇退出管理文件](../../overview/data-security-and-privacy/opt-out-management.md)。
 
-## Audience Manager Identifiers (IDs) {#aam-ids}
+## Audience Manager識別碼(ID) {#aam-ids}
 
-提交GDPR請求至Adobe Audience Manager時，必須包含下列其中一個識別碼(ID)。You can find more information on the ID formats in our [Index of Audience Manager IDs](../../reference/ids-in-aam.md).
+提交GDPR請求至Adobe Audience Manager時，必須包含下列其中一個識別碼(ID)。您可以在我們的Audience of Audience Manager ID [索引中找到有關ID格式的更多資訊](../../reference/ids-in-aam.md)。
 
 ### Adobe Audience Manager獨特使用者ID
 
