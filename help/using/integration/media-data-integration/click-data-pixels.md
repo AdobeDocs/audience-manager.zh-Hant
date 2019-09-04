@@ -6,14 +6,14 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動點擊資料
 uuid: 7c3797f7-9674-493d-972b-38be0584feed
 translation-type: tm+mt
-source-git-commit: c79c2311c3ea76ce2450dc1b84a7a22b60a6edb7
+source-git-commit: dbc96973ed2214d171fe32b7e1314d40c22c2d79
 
 ---
 
 
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
-點擊追蹤可讓您測量促銷活動中的訪客參與，因為它記錄第三方創意人士的點按活動。Similar to impressions collection, an event call is sent to the Audience Manager data collection servers ([!UICONTROL DCS]) for processing. 然後將訪客重新導向至預定的網頁位址。
+點擊追蹤可讓您測量促銷活動中的訪客參與，因為它記錄第三方創意人士的點按活動。與印象系列類似，會傳送事件呼叫給Audience Manager資料收集伺服器([!UICONTROL DCS])進行處理。然後將訪客重新導向至預定的網頁位址。
 
 ## 要求
 
@@ -32,15 +32,15 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 回應
 
-The response redirects the browser to the [!DNL URL] specified in the `d_rd` parameter. 回應字串可包含下列任何受支援巨集所產生的值。
+回應會將瀏覽器重新導向至參數中 [!DNL URL] 指定 `d_rd` 的瀏覽器。回應字串可包含下列任何受支援巨集所產生的值。
 
-Based on the above example, the browser is redirected to the following [!DNL URL]:
+根據上述範例，瀏覽器會重新導向至下列 [!DNL URL]項目：
 
 [!DNL `https://adobe.com/callback?creative=123`]
 
 ## 支援的Macros
 
-按一下事件可支援下表所列的巨集。巨集是一個小型的自助代碼，可在廣告標記載入為促銷活動和使用者追蹤時啓動。The macros will be passed along with the destination [!DNL URL], as long as they are marked with the following format: `%macro%`. 有些按鍵沒有巨集，而是接受硬式編碼ID值。Keys that accept hard coded values are required if you want to analyze data in the [Audience Optimization Reports](../../reporting/audience-optimization-reports/audience-optimization-reports.md).
+按一下事件可支援下表所列的巨集。巨集是一個小型的自助代碼，可在廣告標記載入為促銷活動和使用者追蹤時啓動。巨集將會連同目的地 [!DNL URL]一起傳遞，只要它們以下列格式標示： `%macro%`。有些按鍵沒有巨集，而是接受硬式編碼ID值。如果您要分析 [「對象最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)」中的資料，則需要接受硬式編碼值的索引鍵。
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -59,7 +59,7 @@ Based on the above example, the browser is redirected to the following [!DNL URL
   <tr> 
    <td colname="col1"> <p> <code> d_ adsc</code> </p> </td> 
    <td colname="col02"> <p>無巨集。 </p> <p>接受硬式編碼ID值。 </p> </td> 
-   <td colname="col2"> <p> <a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> 廣告商的資料來源</a> ID或整合代碼。 </p> <p> <span class="wintitle"> 「對象最佳化</span> 」報表所需。 </p> </td> 
+   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。請注意，這與Audience Manager資料來源無關。</p> <p> <span class="wintitle"> 「對象最佳化</span> 」報表所需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_ bu</code> </p> </td> 
@@ -79,12 +79,12 @@ Based on the above example, the browser is redirected to the following [!DNL URL
   <tr> 
    <td colname="col1"> <p> <code> d_ dpid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_ id%</code> </p> </td> 
-   <td colname="col2"> <p>資料提供者ID。 </p> <p>Often used with <code> d_dpuuid</code> to link a data provider ID to a user ID. </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>資料提供者ID。 </p> <p>通常與 <code> d_ dpuuid</code> 搭配使用，將資料提供者ID連結至使用者ID。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_ dpuuid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_ dpuuid%d</code> </p> </td> 
-   <td colname="col2"> <p>資料提供者提供的唯一使用者ID。 </p> <p>Often used with <code> d_dpid</code> to link a user ID to a data provider ID. </p> </td> 
+   <td colname="col2"> <p>資料提供者提供的唯一使用者ID。 </p> <p>通常與 <code> d_ dpid</code> 搭配使用，將使用者ID連結至資料供應商ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
@@ -99,7 +99,7 @@ Based on the above example, the browser is redirected to the following [!DNL URL
   <tr> 
    <td colname="col1"> <p> <code> d_ region</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_地區%d</code> </p> </td> 
-   <td colname="col2"> <p>服務之DCS叢集的數值區域ID。For more information about the DCS, see <a href="../../reference/system-components/components-data-collection.md"> Data Collection Components</a>. </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>服務之DCS叢集的數值區域ID。如需DCS的詳細資訊，請參閱 <a href="../../reference/system-components/components-data-collection.md"> 資料收集元件</a>。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> r_ rand</code> </p> </td> 
@@ -156,7 +156,7 @@ d_adgroup%25%26d_placement%3D%25placement%25%26src%3D%25d_src%25
 
 ## 回應
 
-Based on the above example, the browser is redirected to the following [!DNL URL]:
+根據上述範例，瀏覽器會重新導向至下列 [!DNL URL]項目：
 
 [!DNL `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`]
 
