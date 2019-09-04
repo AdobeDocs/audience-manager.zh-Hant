@@ -5,7 +5,7 @@ seo-title: 將Twitter自訂對象設定為自助服務裝置的目的地
 solution: Audience Manager
 title: 將Twitter自訂對象設定為自助服務裝置的目的地
 translation-type: tm+mt
-source-git-commit: a16734f652f3c398f12660671103f5478cfdd89e
+source-git-commit: cd770afc39221687f4eb47cc358d8d57a51b9fb5
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: a16734f652f3c398f12660671103f5478cfdd89e
 1. 您 [!DNL Twitter Ads] 的帳戶必須符合廣告資格。新 [!DNL Twitter Ads] 帳戶在建立廣告後的前周不符合廣告資格。
 1. 您在Audience Manager中授權存取的Twitter使用者帳戶必須啓用 [「合作夥伴對象管理員](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 」權限。
 1. 如果您要 [將現有Twitter整合更新為自助服務管理](#update-existing-twitter-integrations)，則您的Twitter使用者帳戶必須啓用 [廣告管理器](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 權限。
-2. 在您的Audience Manager例項中建立第一 [!DNL Twitter Tailored Audiences] 個目的地時，請連絡Adobe諮詢或客戶服務，以啓用帳戶 [!DNL Twitter] 的ID同步(資料來源ID=1123)。Audience Manager之間的正確同步是必要 [!DNL Twitter]的。
+1. 在您的Audience Manager例項中建立第一 [!DNL Twitter Tailored Audiences] 個目的地時，請連絡Adobe諮詢或客戶服務，以啓用帳戶 [!DNL Twitter] 的ID同步(資料來源ID=1123)。Audience Manager之間的正確同步是必要 [!DNL Twitter]的。
 
 ## 新增 [!DNL Twitter Tailored Audiences] 目標 {#add-new-twitter-destination}
 
