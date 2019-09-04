@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7 de4 f55 d62
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: dbc96973ed2214d171fe32b7e1314d40c22c2d79
 
 ---
 
@@ -22,35 +22,35 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ## 用途 {#purpose}
 
-[!UICONTROL Actionable Log Files] 簡化從廣告伺服器擷取印象、點按和轉換的方式。Use this information for user segmentation without having to manually pixel media to send campaign attributes to [!DNL Audience Manager].
+[!UICONTROL Actionable Log Files] 簡化從廣告伺服器擷取印象、點按和轉換的方式。使用此資訊進行使用者分段，而不需手動使用像素媒體來傳送促銷活動屬性 [!DNL Audience Manager]。
 
 ## 快速入門 {#getting-started}
 
-To get started with [!UICONTROL Actionable Log Files], and to use our [Audience Optimization Reports](../../reporting/audience-optimization-reports/audience-optimization-reports.md), you need to import DCM log data into [!DNL Audience Manager]. See [Import DCM Data Files Into Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *and* contact your [!DNL Audience Manager] consultant.
+若要開始使用 [!UICONTROL Actionable Log Files]，以及使用 [我們的「對象最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)」，您必須將DCM記錄檔匯入 [!DNL Audience Manager]至。請參閱 [將DCM資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)*，* 並聯絡您的 [!DNL Audience Manager] 顧問。
 
-If you are already importing [!UICONTROL DCM] log data into [!DNL Audience Manager], ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to enable [!UICONTROL Actionable Log Files] for you.
+如果您已將 [!UICONTROL DCM] 記錄資料匯入 [!DNL Audience Manager]，請要求 [!DNL Audience Manager] 顧問或 [客戶服務](https://helpx.adobe.com/contact/enterprise-support.ec.html) 啓用 [!UICONTROL Actionable Log Files] 。
 
 >[!NOTE] {importance=「high」}
 >
 >[!UICONTROL Actionable Log Files] 僅適用於 [!DNL Google DCM] 記錄檔。
 
-## Working with Actionable Log Files {#working-with-actionable-log-files}
+## 使用可操作的記錄檔 {#working-with-actionable-log-files}
 
-With [!UICONTROL Actionable Log Files], the information from [!DNL DCM] logs is captured in [!DNL Audience Manager] the same way that you would capture data from real-time website interactions. [!DNL Audience Manager] 連線至您的 [!DNL Google Cloud] 儲存空間、剖析 [!DNL DCM] 記錄檔中的資訊，並將記錄檔資料傳送至我們 [的資料收集伺服器](../../reference/system-components/components-data-collection.md#dcs-pcs)。
+此外 [!UICONTROL Actionable Log Files][!DNL DCM] ，記錄檔的資訊也 [!DNL Audience Manager] 會擷取來自即時網站互動資料的資料。[!DNL Audience Manager] 連線至您的 [!DNL Google Cloud] 儲存空間、剖析 [!DNL DCM] 記錄檔中的資訊，並將記錄檔資料傳送至我們 [的資料收集伺服器](../../reference/system-components/components-data-collection.md#dcs-pcs)。
 
-您仍需要設定規則型特徵來擷取可操作的訊號。See how to set up rule-based traits either in the [Audience Manager UI](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) or using our [Bulk Management Tools](../../reference/bulk-management-tools/bulk-create.md). Scroll down to the [Actionable Signals](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) section for a list of all the keys you can use in rule-based traits.
+您仍需要設定規則型特徵來擷取可操作的訊號。瞭解如何在 [Audience Manager UI](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) 或使用 [我們的大量管理工具設定規則型特徵](../../reference/bulk-management-tools/bulk-create.md)。向下捲動至「 [可ActionSignal」](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) 區段，查看可用於規則型特徵的所有索引鍵清單。
 
-For an average-sized [!DNL DCM] log file of 2 million lines, any traits created from actionable signals are realized within approximately one hour after we process the logs.
+對於超過1000000行的平均 [!DNL DCM] 記錄檔，在處理記錄檔後大約一小時內，就會實現任何由可操作訊號建立的特性。
 
 >[!IMPORTANT] {importance=「high」}
 >
->We recommend implementing [!UICONTROL Actionable Log Files] *instead of*  [Pixel Calls](../../integration/media-data-integration/impression-data-pixels.md). 我們發現這兩個選項的用途，因為這導致特徵的頻率計數增加。
+>建議您實施 [!UICONTROL Actionable Log Files]*，而非*[像素呼叫](../../integration/media-data-integration/impression-data-pixels.md)。我們發現這兩個選項的用途，因為這導致特徵的頻率計數增加。
 
-## Actionable Signals {#actionable-signals}
+## 可操作的訊號 {#actionable-signals}
 
-Signals are the [smallest data units](../../reference/signal-trait-segment.md) in [!DNL Audience Manager]. [!UICONTROL Actionable Log Files] 可讓您擷取曝光事件中的廣告商、業務單位、創意和促銷活動值，並按一下事件和轉換事件做為 [!DNL DCM] 記錄的訊號。
+訊號是最 [小的資料單位](../../reference/signal-trait-segment.md)[!DNL Audience Manager]。[!UICONTROL Actionable Log Files] 可讓您擷取曝光事件中的廣告商、業務單位、創意和促銷活動值，並按一下事件和轉換事件做為 [!DNL DCM] 記錄的訊號。
 
-請記住，若要將此資訊用於觀眾建立和分段，您必須自行設定規則特徵。The table lists the actionable signals from [!DNL DCM] log files:
+請記住，若要將此資訊用於觀眾建立和分段，您必須自行設定規則特徵。表格列出 [!DNL DCM] 來自記錄檔的可操作訊號：
 
 <table id="table_A5A2A10D471C4C9D8DCD88F9C017040C"> 
  <thead> 
@@ -73,7 +73,7 @@ Signals are the [smallest data units](../../reference/signal-trait-segment.md) i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_ conversion</code> </p> </td> 
-   <td colname="col2"> <p>僅適用於轉換事件。 </p> <p>代表DCM中轉換活動的數值ID。此欄位會對應至來自DCM的活動ID。 </p> <p> <p>秘訣：您可以從DCM擷取多個或特定的轉換活動。Create traits using <code> d_conversion = activity ID</code> for each conversion activity from DCM. </p> </p> </td> 
+   <td colname="col2"> <p>僅適用於轉換事件。 </p> <p>代表DCM中轉換活動的數值ID。此欄位會對應至來自DCM的活動ID。 </p> <p> <p>秘訣：您可以從DCM擷取多個或特定的轉換活動。使用 <code> dCM中每個轉換活動的d_ conversion=活動ID</code> 來建立特徵。 </p> </p> </td> 
    <td colname="col3"> <p> <code> 24122</code> </p> </td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ Signals are the [smallest data units](../../reference/signal-trait-segment.md) i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_ adsc</code> </p> </td> 
-   <td colname="col2"> <p>廣告主 ID. 此欄位會對應至來自DCM的廣告商群組ID。 </p> </td> 
+   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。請注意，這與Audience Manager資料來源無關。</p> <p>此欄位會對應至來自DCM的廣告商群組ID。 </p> </td> 
    <td colname="col3"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -108,13 +108,13 @@ Signals are the [smallest data units](../../reference/signal-trait-segment.md) i
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_ src</code> </p> </td> 
-   <td colname="col2"> <p>用來擷取DCM資料之資料來源的ID。See <a href="../../features/manage-datasources.md#create-data-source"> How to Create a Data Source</a>. </p> </td> 
+   <td colname="col2"> <p>用來擷取DCM資料之資料來源的ID。請參閱 <a href="../../features/manage-datasources.md#create-data-source"> 如何建立資料來源</a>。 </p> </td> 
    <td colname="col3"> <p> <code> 743</code> </p> </td> 
   </tr>
  </tbody>
 </table>
 
-The signals described in the table are captured in [!DNL Audience Manager] like a real-time `HTTP` call. The example call below contains information on a conversion event from [!DNL DCM]. Calls do not necessarily have to include *all* the signals in the example call.
+表格中描述的訊號 [!DNL Audience Manager] 會像 `HTTP` 即時呼叫一樣擷取。以下範例呼叫包含有關轉換事件的資訊 [!DNL DCM]。呼叫不一定必須包含 *範例呼叫中的所有* 訊號。
 
 ```
 https://sample.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_conversion=24122&d_conversionType=2&d_bu=3983524&d_campaign=7321391&d_adsrc=11111&d_creative=123456
@@ -130,37 +130,37 @@ https://sample.demdex.net?d_src=743&d_uuid=0795526165288603295014370250589427213
 
 ## 使用個案 {#use-cases}
 
-One benefit of implementing [!UICONTROL Actionable Log Files] is the option to apply [recency and frequency](../../features/segments/recency-and-frequency.md) controls to any [rule-based traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) that contain actionable signals. 例如，您可讓您在媒體促銷活動中，將使用者顯示特定創意的次數提升到最大。其他使用案例包括：
+實施 [!UICONTROL Actionable Log Files] 的好處之一，就是將 [最近一次的頻率和頻率](../../features/segments/recency-and-frequency.md) 控制套用至任何 [包含可動作訊號的規則型特徵](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) 。例如，您可讓您在媒體促銷活動中，將使用者顯示特定創意的次數提升到最大。其他使用案例包括：
 
 ### 重新定向使用者
 
 重新定向看見創意123但未按一下或轉換並顯示創意456的使用者。執行動作:
 
-1. 建立特徵來擷取看過創意素材的使用者。Let's say you name the trait [!DNL Creative Trait 123]. 使用特徵規則：
+1. 建立特徵來擷取看過創意素材的使用者。假設您為特徵命名 [!DNL Creative Trait 123]。使用特徵規則：
 
    `d_creative == 123 AND d_event == imp`
 
-1. 建立特徵來擷取按一下或轉換的使用者。Let's say you name this one [!DNL Click and Converter]. 使用特徵規則：
+1. 建立特徵來擷取按一下或轉換的使用者。讓我們假設您為 [!DNL Click and Converter]此命名。使用特徵規則：
 
    `d_event == click OR d_event=conv`
 
-1. 建立區段以填入看見創意123但未按一下或轉換的使用者。Name it [!DNL Retarget Users] and use the segment rule:
+1. 建立區段以填入看見創意123但未按一下或轉換的使用者。命名並 [!DNL Retarget Users] 使用區段規則：
 
    `Creative Trait 123 AND NOT Click and Converter`
 
-1. Map the segment [!DNL Retarget Users] to a destination and target users in the destination with creative 456.
+1. 使用創意456將區段 [!DNL Retarget Users] 對應至目的地並定位目標使用者。
 
 ### 在對象最佳化報表或Audience Lab中使用DCM Floodlight活動
 
-[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en) 可讓廣告商追蹤使用者轉換。With [!UICONTROL Actionable Log Files], you can track the [!DNL DCM] conversions in the [Audience Optimization Reports](../../reporting/audience-optimization-reports/audience-optimization-reports.md) or in [Audience Lab](../../features/audience-lab/audience-lab.md):
+[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en) 可讓廣告商追蹤使用者轉換。有 [!UICONTROL Actionable Log Files]了，您可以追蹤 [!DNL DCM][對象最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md) 或 [Audience Lab](../../features/audience-lab/audience-lab.md)中的轉換：
 
 1. 建立特徵並使用下列特徵規則，擷取廣告伺服器記錄檔的轉換：
 
    `d_event == conv AND d_conversion == 123`
 
-   When creating the trait in the Audience Manager [!UICONTROL UI], select [!UICONTROL Conversion] as the [!UICONTROL Event Type].
+   在Audience Manager中建立特徵時 [!UICONTROL UI]，請選擇 [!UICONTROL Conversion][!UICONTROL Event Type]為。
 
-2. Once you have created the trait, the conversion will begin to be reported against in the [!UICONTROL Audience Optimization Reports] and in [!UICONTROL Audience Lab].
+2. 當您建立特徵後，就會開始報告和開始報告轉換 [!UICONTROL Audience Optimization Reports][!UICONTROL Audience Lab]。
 
 >[!MORE_贊_ this]
 >
