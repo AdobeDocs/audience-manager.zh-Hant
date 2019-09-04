@@ -4,12 +4,12 @@ seo-description: 搜尋特定時段內收到的已使用和未使用訊號。若
 seo-title: 訊號搜尋
 title: 訊號搜尋
 translation-type: tm+mt
-source-git-commit: 16c0dd83c18e720045995ac1851b4c91f3346183
+source-git-commit: a0e585b85a4e8ab180766298579dc39f93b7ff29
 
 ---
 
 
-# Signals Search Overview {#signals-search}
+# 訊號搜尋概觀 {#signals-search}
 
 搜尋特定時段內收到的已使用和未使用訊號。若要搜尋訊號，請前往「對象資料&gt;訊號&gt;搜尋」。
 
