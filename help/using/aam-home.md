@@ -1,19 +1,19 @@
 ---
 description: Audience Manager 提供領先業界的線上讀者資料管理服務。我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
-seo-description: Audience Manager 提供領先業界的線上讀者資料管理服務。我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
-seo-title: Audience Manager產品文件
+seo-description: Audience Manager(AAM)的技術文件和自助說明。AAM為線上觀眾資料管理提供業界領先的服務，為數位廣告商和發佈商提供控制和運用其資料資產以促進銷售成功的工具。
+seo-title: Adobe Audience Manager產品技術文件
 solution: Audience Manager
 title: Audience Manager產品文件
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916
 translation-type: tm+mt
-source-git-commit: aa58d1aa69a7d5e112d6b24fa8250bf56ccb370a
+source-git-commit: 5ea8e5d7997f192bc41bb9f9e4caa4a86b852a12
 
 ---
 
 
 # Audience Manager產品文件 {#audience-manager-product-documentation}
 
-Audience Manager 提供領先業界的線上讀者資料管理服務。我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
+本技術文件指南為Audience Manager提供自助協助服務-此為業界領先的線上觀眾資料管理服務。我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
