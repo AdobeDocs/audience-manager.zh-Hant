@@ -7,7 +7,7 @@ solution: Audience Manager
 title: getDil
 uuid: 7b95f9ff-14c0-4c74-b6 b9-d6 b38513 d487
 translation-type: tm+mt
-source-git-commit: 128368669163097e604f6b23ab538341adcf8d7a
+source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 ---
 
@@ -25,14 +25,13 @@ source-git-commit: 128368669163097e604f6b23ab538341adcf8d7a
 | 名稱 | 類型 | 說明 |
 |---|---|---|
 | `partner` | 字串 | 要搜尋的合作夥伴名稱。 |
-| `containerNSID` | 整數 | Defaults is `0`. 您正在搜尋之容器的NSID。選填。 |
+| `containerNSID` | 整數 | 預設 `0`值為。您正在搜尋之容器的NSID。選填。 |
 
 ## 回應
 
-A successful partner and container NSID match returns a partner-specific [!UICONTROL DIL] instance. If there is no match, the API returns (does not throw) an error with the message, " `The DIL instance with partner <name> and containerNSID <ID> was not found.`"
+成功的合作夥伴和容器NSID符合會傳回合作夥伴專屬 [!UICONTROL DIL] 例項。如果沒有相符項目，API會傳回(不會擲回)訊息與訊息」`The DIL instance with partner <name> and containerNSID <ID> was not found.`
 
 ## 程式碼範例
 
 <pre class="java"><code>DIL. getDil('<i>partner</i>'， <i>containInnsID</i>)；
-DIL. getDil('<i>partner</i>')；</code>
-</pre>
+DIL. getDil('<i>partner</i>')；</code></pre>
