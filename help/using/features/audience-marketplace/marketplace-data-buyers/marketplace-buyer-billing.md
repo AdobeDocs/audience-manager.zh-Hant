@@ -7,7 +7,7 @@ title: 資料饋送購買者帳單
 keywords: 區段層級報告、區段層級、區段層級
 uuid: d7236667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: dab5b255f966e63d51cc4d236d37bb0cb4eb960c
+source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 ---
 
@@ -40,15 +40,17 @@ Audience Marketplace資料購買者同意使用每千個廣告印象([!DNL CPM])
 若要在區段層級報告 [!DNL CPM] 使用情形：
 
 1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;前往。
-2. 選取 **[!UICONTROL Segment Usage]** 標籤。
-3. 填寫區段的使用情形。如果您只需要對部分區段進行報告，即可使用 [!UICONTROL Search] 此方塊篩選區段。
-4. Click **[!UICONTROL Edit Segments Usage]**.
-5. 在欄中輸入 [!DNL CPM] 使用 [!UICONTROL Usage] 量。
-6. 在完成時按一下， **[!UICONTROL Save]** 檢閱確認對話方塊。
-   ![確認區段使用](assets/confirm-segment-usage.png)
-7. Click **[!UICONTROL Confirm]**.
+1. 選取 **[!UICONTROL Segment Usage]** 標籤。
+1. 填寫區段的使用情形。如果您只需要對部分區段進行報告，即可使用 [!UICONTROL Search] 此方塊篩選區段。
+1. Click **[!UICONTROL Edit Segments Usage]**.
+1. 在欄中輸入 [!DNL CPM] 使用 [!UICONTROL Usage] 量。
+1. 在完成時按一下， **[!UICONTROL Save]** 檢閱確認對話方塊。
 
-<br> 
+   ![確認區段使用](assets/confirm-segment-usage.png)
+
+1. Click **[!UICONTROL Confirm]**.
+
+ 
 
 ## 報告資料饋送層級的CPM使用量 {#feed-level-report}
 
@@ -57,15 +59,15 @@ Audience Marketplace資料購買者同意使用每千個廣告印象([!DNL CPM])
 若要在區段層級報告 [!DNL CPM] 使用情形：
 
 1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;前往。
-2. 選取 **[!UICONTROL Feed Usage]** 標籤。
-3. 使用 [!UICONTROL Search] 方塊來篩選資料饋送，並識別您需要報告的資料饋送。
-4. Click **[!UICONTROL Edit Feeds Usage]**.
-5. 根據CPM [!DNL CPM] 資料饋送 [](#cost-attribution)的成本歸因計算每個資料饋送的使用量，然後在 [!UICONTROL Usage] 欄中輸入。
-6. 在完成時按一下， **[!UICONTROL Save]** 檢閱確認對話方塊。
+1. 選取 **[!UICONTROL Feed Usage]** 標籤。
+1. 使用 [!UICONTROL Search] 方塊來篩選資料饋送，並識別您需要報告的資料饋送。
+1. Click **[!UICONTROL Edit Feeds Usage]**.
+1. 根據CPM [!DNL CPM] 資料饋送 [](#cost-attribution)的成本歸因計算每個資料饋送的使用量，然後在 [!UICONTROL Usage] 欄中輸入。
+1. 在完成時按一下， **[!UICONTROL Save]** 檢閱確認對話方塊。
 
    ![確認摘要使用](assets/confirm-feed-usage.png)
 
-7. Click **[!UICONTROL Confirm]**.
+1. Click **[!UICONTROL Confirm]**.
 
 <br> 
 
@@ -155,7 +157,7 @@ In [!UICONTROL Audience Marketplace] you must self-report express value，for yo
 
 ## 根據特徵資格規則在動態消息層級指派印象 {#assign-impressions}
 
-[!UICONTROL Activation] 使用案例可讓您使用對應資料饋送中的特性來建立 [區段產生器](../../../features/segments/segment-builder.md#topic_E166819D26B94A868376BA54E10E4B74) 中的區段，並將這些區段對應至目的地。布林運算元 [!UICONTROL AND]， [!UICONTROL OR]並 [!UICONTROL NOT] 讓您設定特徵和區段資格的條件。
+[!UICONTROL Activation] 使用案例可讓您使用對應資料饋送中的特性來建立 [區段產生器](../../../features/segments/segment-builder.md) 中的區段，並將這些區段對應至目的地。布林運算元 [!UICONTROL AND]， [!UICONTROL OR]並 [!UICONTROL NOT] 讓您設定特徵和區段資格的條件。
 
 當您 [在資料饋送層級](#feed-level-report)報告CPM使用情形時，您必須根據特徵資格規則中使用 [!DNL Boolean] 的運算子，為每個資料饋送分配比例。下表列出如何依布林規則或特徵類型正確分配印象。
 
