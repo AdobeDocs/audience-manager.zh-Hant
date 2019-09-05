@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 從DCS接收資料
 uuid: fbb771977-8530-48a8-b708-d785 f7214494
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 ---
 
@@ -21,8 +21,9 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 [!UICONTROL DCS] 如果您想接收回應，則必須包含 `d_rtbd=json` 您的請求 [!UICONTROL DCS]。如果省略此參數，則 [!UICONTROL DCS] 不會傳回資料。要求資料的 [!UICONTROL DCS] 基本呼叫使用此語法：
 
-<pre><code>出版業者？<i></i><i>key1</i>= <i>val1</i>，&amp;<i>key2</i>= <i>val</i>&amp; d_ dst=1&amp; d_ rtbd= json&amp; d_ cb=<i>回呼</i></code>
-</pre>
+```js
+https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
+```
 
 ## 範例回應 {#sample-response}
 
