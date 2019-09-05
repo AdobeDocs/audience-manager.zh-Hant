@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 傳送資料至DCS
 uuid: 024e307d-bfcc-46cf-ac3 a-fc71 df0248 Fe
 translation-type: tm+mt
-source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
+source-git-commit: 9c692ae41a309b4f1d8323a501619c02d2aef6a0
 
 ---
 
@@ -90,6 +90,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 ```js
 https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback
 ```
+
 ## 後續步驟 {#dcs-next-steps}
 
 現在您已熟悉傳送資料的方式 [!UICONTROL DCS]，現在應該瞭解如何從它取得資料並剖析該資訊。請參閱 [從DCS接收資料](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
