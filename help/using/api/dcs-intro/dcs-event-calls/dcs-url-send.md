@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 傳送資料至DCS
 uuid: 024e307d-bfcc-46cf-ac3 a-fc71 df0248 Fe
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 ---
 
@@ -23,7 +23,9 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 將 `URL` 資料傳送至 [!UICONTROL DCS] 使用下列語法的基本字串。
 
-<pre><code>出版業者？<i></i><i>key1</i>=<i>val1</i>，&amp;<i>key2</i>=<i>val</i>&amp; d_ dst=1&amp; d_ rtbd= json&amp; d_ cb=<i>回呼</i></code></pre>
+```js
+https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
+```
 
 >[!NOTE]
 >
@@ -85,8 +87,9 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 此範例顯示假設公司 [!DNL Acme, Inc.] 傳送資料至 [!UICONTROL DCS][!DNL HTTP] 透過呼叫傳送資料的公司。請注意，此呼叫包含可選參數 `d_dst=1`、 `d_rtbd=json``d_cb=callback`和。這表示 [!DNL Acme] 想要接收呼叫函數的 [!DNL JSON][!UICONTROL DCS] 回應。請記住，這只是範例。請勿剪下並貼上此程式碼。
 
-`https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback`
-
+```js
+https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback
+```
 ## 後續步驟 {#dcs-next-steps}
 
 現在您已熟悉傳送資料的方式 [!UICONTROL DCS]，現在應該瞭解如何從它取得資料並剖析該資訊。請參閱 [從DCS接收資料](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
