@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS API方法
 uuid: 6e407458-11d4-4342-a84 a-512afa5 fc183
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 ---
 
@@ -25,7 +25,9 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 請注意 `GET` ，允許的呼叫大小上限為8K。
 
-<pre><code>curr -i「<i>yourcompany.demdex.net/event?d_uuid=12345678901234567890123456789012345678&amp;d_rtbd=jsonc_likes=famous%20popstar&amp;c_loves=famous%20actress</i><i></i><i></i><i></i>」</code></pre>
+```
+curl -i "yourcompany.demdex.net/event?d_uuid=12345678901234567890123456789012345678&d_rtbd=json&c_likes=famous%20popstar&c_loves=famous%20actress"
+```
 
 ## 透過POST傳送資料 {#send-data-via-post}
 
