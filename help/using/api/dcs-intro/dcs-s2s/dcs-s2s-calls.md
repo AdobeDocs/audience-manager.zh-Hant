@@ -4,7 +4,7 @@ solution: Audience Manager
 title: 建立伺服器至伺服器DCS API呼叫
 uuid: bdfe3430-e27 f-4a5 c-88d9-ae164 d28 f601
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 ---
 
@@ -21,7 +21,9 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 基本伺服器對伺服器的要求會傳送資料至 [!UICONTROL DCS] 下方顯示的語法。
 
-<pre><code>「主機：<i>網域別名</i>. demdex. net」https://DCS<i>主機name.demdex.net/event?d_rtbd=json&amp;d_jsonv=1&amp;d_uuid=user</i><i>ID</i>。</code></pre>
+```js
+"Host:domain_alias.demdex.net" "https://DCS_host_name.demdex.net/event?d_rtbd=json&d_jsonv=1&d_uuid=userID
+```
 
 範例呼叫看起來類似下列範例。
 
