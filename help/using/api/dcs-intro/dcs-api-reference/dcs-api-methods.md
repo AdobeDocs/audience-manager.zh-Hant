@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS API方法
 uuid: 6e407458-11d4-4342-a84 a-512afa5 fc183
 translation-type: tm+mt
-source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
+source-git-commit: bdea2609b84d7f80d67452b4c43e11cbef01a368
 
 ---
 
@@ -17,9 +17,6 @@ source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
 
 您可以使用其中 [!UICONTROL DCS] 一個 `GET` 或 `POST` 方法來傳送資料。檢視下面的範例呼叫，使用 [捲動](https://curl.haxx.se/)。在這三個範例呼叫中，我們新增了訊號 `c_likes = famous popstar` 和 `c_loves = famous actress` 裝置描述檔 `12345678901234567890123456789012345678`。
 
->[!NOTE]
->
->In the code and examples, *italics* represents a variable placeholder. 使用此方法傳送資料時，取代預留位置的 [!UICONTROL DCS] 實際值。
 
 ## 透過GET傳送資料 {#send-data-via-get}
 
