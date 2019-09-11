@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292 d77 a aae
 translation-type: tm+mt
-source-git-commit: 2733080505760bbcf39737f0ad0d2d7605d1f477
+source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
 
 ---
 
@@ -17,9 +17,7 @@ source-git-commit: 2733080505760bbcf39737f0ad0d2d7605d1f477
 
 ## 影片展示
 
-以下影片會逐步帶您完成區段建立程序。請閱讀以下章節以瞭解更多資訊。
-
->[!VIDEO](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)
+首先，請觀看Audience Manager視訊 [中的建立區段](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)。影片會逐步帶您完成區段建立程序。請閱讀以下章節以瞭解更多資訊。
 
 ## 建立區段 {#create-segment}
 
