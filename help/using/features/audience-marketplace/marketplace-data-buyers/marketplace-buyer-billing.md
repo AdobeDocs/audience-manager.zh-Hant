@@ -7,7 +7,7 @@ title: 資料饋送購買者帳單
 keywords: 區段層級報告、區段層級、區段層級
 uuid: d7236667-282b-4160-9909-579721af4016
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: a8320894c0efcf46bd3236494e1aa7b1eded24d1
 
 ---
 
@@ -50,6 +50,10 @@ Audience Marketplace資料購買者同意使用每千個廣告印象([!DNL CPM])
 
 1. Click **[!UICONTROL Confirm]**.
 
+另請參閱我們的影片示範如何報告區段層級使用情形：
+
+>[!VIDEO](https://video.tv.adobe.com/v/25522/?captions=chi_hant)
+
  
 
 ## 報告資料饋送層級的CPM使用量 {#feed-level-report}
@@ -59,15 +63,15 @@ Audience Marketplace資料購買者同意使用每千個廣告印象([!DNL CPM])
 若要在區段層級報告 [!DNL CPM] 使用情形：
 
 1. **[!UICONTROL Audience Marketplace > Payables]**&#x200B;前往。
-1. 選取 **[!UICONTROL Feed Usage]** 標籤。
-1. 使用 [!UICONTROL Search] 方塊來篩選資料饋送，並識別您需要報告的資料饋送。
-1. Click **[!UICONTROL Edit Feeds Usage]**.
-1. 根據CPM [!DNL CPM] 資料饋送 [](#cost-attribution)的成本歸因計算每個資料饋送的使用量，然後在 [!UICONTROL Usage] 欄中輸入。
-1. 在完成時按一下， **[!UICONTROL Save]** 檢閱確認對話方塊。
+2. 選取 **[!UICONTROL Feed Usage]** 標籤。
+3. 使用 [!UICONTROL Search] 方塊來篩選資料饋送，並識別您需要報告的資料饋送。
+4. Click **[!UICONTROL Edit Feeds Usage]**.
+5. 根據CPM [!DNL CPM] 資料饋送 [](#cost-attribution)的成本歸因計算每個資料饋送的使用量，然後在 [!UICONTROL Usage] 欄中輸入。
+6. 在完成時按一下， **[!UICONTROL Save]** 檢閱確認對話方塊。
 
    ![確認摘要使用](assets/confirm-feed-usage.png)
 
-1. Click **[!UICONTROL Confirm]**.
+7. Click **[!UICONTROL Confirm]**.
 
 <br> 
 
