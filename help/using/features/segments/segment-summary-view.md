@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段摘要檢視
 uuid: e844e423-9701-42d4-9ba5-d82 f41358 ADC
 translation-type: tm+mt
-source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
+source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
 從主控制面板按一下區段名稱，存取其摘要頁面。摘要區段包括：
 
 1. **[!UICONTROL Basic Information]：** 顯示建立區段時所指定的必要和選擇性詳細資訊。
-2. **[!UICONTROL Segment Graph]：** 以圖形方式顯示績效資料，並以固定1、7、14、30、60和90天間隔顯示。我們在 [個別文件中說明區段人口數量](../../features/segments/segment-builder-data.md)。
+2. **[!UICONTROL Segment Graph]：** 以圖形方式顯示績效資料，並以固定1、7、14、30、60和90天間隔顯示。我們在 [個別文章中說明區段人口數字](../../features/segments/segment-builder-data.md)。
 
    ![區段圖](assets/segment-graph.png)
 
@@ -29,6 +29,8 @@ source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
    >[!NOTE]
    >
    >如果您有符合區段的跨裝置ID，Audience Manager只會顯示 [!UICONTROL Identity Type Breakdown] 報表。
+
+   >[!VIDEO](https://video.tv.adobe.com/v/27977/?captions=chi_hant)
 
 4. **[!UICONTROL Segment Rules]：** 列出區段中的特徵以及符合資格規則。
 5. **[!UICONTROL Destination Mappings]：** 列出區段的目的地對應。
