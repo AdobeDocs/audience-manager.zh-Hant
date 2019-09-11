@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特徵詳細資料頁面
 uuid: 23301376-c1 cc-4778-b8 c4-9831f6739 db9
 translation-type: tm+mt
-source-git-commit: 3130882116d39e94b446679999144f1eb55edc77
+source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 
 ---
 
@@ -39,6 +39,8 @@ source-git-commit: 3130882116d39e94b446679999144f1eb55edc77
    ![特徵圖形](assets/trait-identity.png)
    > [!NOTE]
    > 如果您有適用於特徵的跨裝置ID，Audience Manager只會顯示 [!UICONTROL Identity Type Breakdown] 報表。
+
+   >[!VIDEO](https://video.tv.adobe.com/v/27977/?captions=chi_hant)
 
 ## 特徵運算式 {#trait-expression}
 
