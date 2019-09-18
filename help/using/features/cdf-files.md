@@ -1,53 +1,53 @@
 ---
-description: 有關客戶資料饋送(CMS)檔案的基本資訊，以及如何開始使用的說明。如果您想要接收CMS檔案，或只想瞭解更多資訊，請從此處開始。
-keywords: 第二方資料；第二方；第二方資料；第二方
-seo-description: 有關客戶資料饋送(CMS)檔案的基本資訊，以及如何開始使用的說明。如果您想要接收CMS檔案，或只想瞭解更多資訊，請從此處開始。
-seo-title: 客戶資料饋送
+description: 有關客戶資料饋送(CDF)檔案的基本資訊以及如何開始使用的指示。 如果您想要接收CDF檔案或只想要更多資訊，請從這裡開始。
+keywords: 第二方資料；第二方資料；第二方資料；第二方資料
+seo-description: 有關客戶資料饋送(CDF)檔案的基本資訊以及如何開始使用的指示。 如果您想要接收CDF檔案或只想要更多資訊，請從這裡開始。
+seo-title: ' 客戶資料饋送'
 solution: Audience Manager
-title: 客戶資料饋送
-uuid: a5de1630-2c7a-4862-9ba0-f8643 cd2782
+title: ' 客戶資料饋送'
+uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
 
 ---
 
 
-# Customer Data Feeds {#customer-data-feeds}
+# 客戶資料饋送 {#customer-data-feeds}
 
-Basic information about [!UICONTROL Customer Data Feed] ([!UICONTROL CDF]) files and instructions on how to get started. Start here if you're interested in receiving [!UICONTROL CDF] files or just want more information.
+有關( [!UICONTROL Customer Data Feed] )檔案[!UICONTROL CDF]的基本資訊，以及如何開始使用的指示。 如果您想要接收檔案或只想要 [!UICONTROL CDF] 更多資訊，請從這裡開始。
 
-## File Contents and Purpose {#file-contents-purpose}
+## 檔案內容與用途 {#file-contents-purpose}
 
 <!-- cdf-intro.xml -->
 
-[!UICONTROL CDF] 檔案包含 [!DNL Audience Manager] 與事件呼叫( `/event`)傳送至我們伺服器的相同資料。這包括使用者ID、特徵ID、區段ID，以及事件呼叫所擷取的所有其他參數等資料。Internal [!DNL Audience Manager] systems processes event data into a [!UICONTROL CDF] file with content organized into fields that appear in a set order. [!DNL Audience Manager] 嘗試每小時產生 [!UICONTROL CDF] 檔案，並將它們儲存在 [!DNL Amazon S3] 伺服器上安全的客戶專屬貯體中。We provide these files so you can work with [!DNL Audience Manager] data outside of the limits imposed by our user interface.
+檔 [!UICONTROL CDF] 案包含的事件呼叫( [!DNL Audience Manager] )傳送至我們伺服器的 `/event`相同資料。 這包括使用者ID、特徵ID、區段ID等資料，以及事件呼叫所擷取的所有其他參數。 內部 [!DNL Audience Manager] 系統將事件資料處理成 [!UICONTROL CDF] 檔案，內容會組織成以固定順序顯示的欄位。 [!DNL Audience Manager] 嘗試每小時產 [!UICONTROL CDF] 生檔案，並將它們儲存在伺服器上安全、客戶專屬的儲 [!DNL Amazon S3] 存貯體。 我們提供這些檔案，讓您能夠處理 [!DNL Audience Manager] 超出使用者介面所限制的資料。
 
 >[!NOTE]
 >
->You should not use [!UICONTROL CDF] files as a proxy to monitor page traffic, reconcile report discrepancies, or for billing, etc.
+>您不應將檔 [!UICONTROL CDF] 案當做代理來監控頁面流量、協調報表不一致或帳單等。
 
 ## 快速入門 {#getting-started}
 
-There is no self-service process to start [!UICONTROL CDF] file delivery. Contact your [!DNL Audience Manager] consultant or Customer Care to get started. During implementation, your [!DNL Audience Manager] representative will:
+沒有自助服務程式可以啟動檔案 [!UICONTROL CDF] 傳送。 Contact your [!DNL Audience Manager] consultant or Customer Care to get started. 在實施期間，您的 [!DNL Audience Manager] 代表將：
 
-* Set up your [!DNL Amazon S3] storage bucket.
-* Provide read-only [!DNL S3] authentication credentials to your file storage bucket. 您將無法查看或存取屬於其他客戶的目錄和檔案。
+* 設定儲存 [!DNL Amazon S3] 貯體。
+* 提供唯讀驗證 [!DNL S3] 憑證給您的檔案儲存貯體。 您將無法查看或訪問屬於其他客戶的目錄和檔案。
 
-File notifications and [!UICONTROL CDF] files will appear in your [!DNL S3] bucket when they're ready for download. You're responsible for monitoring and downloading files from your assigned [!DNL S3] directory. See [Customer Data Feed File Processing Notifications](#cdf-file-processing-notifications).
+當檔案通知 [!UICONTROL CDF] 和檔案可供下載時，檔 [!DNL S3] 案通知和檔案會出現在儲存貯體中。 您負責從您指派的目錄監視和下載 [!DNL S3] 檔案。 請參閱 [客戶資料饋送檔案處理通知](#cdf-file-processing-notifications)。
 
 ## 後續步驟 {#next-steps}
 
-The sections below and the [Customer Data Feed FAQ](../faq/faq-cdf.md) can help you become more familiar with this service.
+以下各節及「客 [戶資料饋送常見問答」](../faq/faq-cdf.md) ，可協助您更熟悉這項服務。
 
-## Customer Data Feed Contents Defined {#cdf-defined}
+## 定義的客戶資料饋送內容 {#cdf-defined}
 
-Lists and defines the data elements and arrays in a [!UICONTROL CDF] file, by order of appearance. Definitions include data types, but this information is not part of a [!UICONTROL CDF] file.
+依外觀順序列出並定義檔案中 [!UICONTROL CDF] 的資料元素和陣列。 定義包括資料類型，但此資訊不屬於檔案的一 [!UICONTROL CDF] 部分。
 
 ## 定義 {#definitions}
 
 <!-- cdf-contents-defined.xml -->
 
-[!UICONTROL CDF] 檔案包含下面定義的部分或全部欄位。For information about internal file organization, see [Customer Data Feed File Structure](#cdf-file-structure).
+檔 [!UICONTROL CDF] 案包含下列定義的部分或全部欄位。 如需內部檔案組織的詳細資訊，請參 [閱客戶資料饋送檔案結構](#cdf-file-structure)。
 
 <table id="table_46BC897A30C2469AB5911F5B85A3FAA7"> 
  <thead> 
@@ -61,154 +61,155 @@ Lists and defines the data elements and arrays in a [!UICONTROL CDF] file, by or
   <tr> 
    <td colname="col1"> <p><code> 事件時間</code> </p> </td> 
    <td colname="col2"> <p>時間戳記 </p> </td> 
-   <td colname="col3"> <p>The time a CDF file was processed by the <span class="wintitle"> Data Collection Servers</span> (DCS). The timestamp uses the <i>yyyy-mm-dd hh:mm:ss</i> format and is set in the UTC time zone. </p> <p> <p>Note: The Event Time <i>is not</i>: <p> 
+   <td colname="col3"> <p>資料收集伺服器(DCS)處理CDF <span class="wintitle"> 檔案的時間</span> 。 時間戳記使 <i>用yyyy-mm-dd hh:mm:ss</i> 格式，並在UTC時區中設定。 </p> <p> <p>注意：事件時 <i>間不</i>: <p> 
        <ul id="ul_41ABC813FAAC4659AC8DA13F4A6DD7EB"> 
-        <li id="li_0192D253EA4C49C4BF2E8BA62CEE028E">頁面事件或事件本身的時間，但可能會接近這些時間。 </li> 
-        <li id="li_271DF14395BC495FBF17186588A554A8">與檔案名稱中DCS小時有關。See also, <a href="#different-processing-times"> Customer Data Feed File Name Times and File Content Times...</a>. </li> 
+        <li id="li_0192D253EA4C49C4BF2E8BA62CEE028E">頁面事件或事件本身呼叫的時間，雖然可能接近這些時間。 </li> 
+        <li id="li_271DF14395BC495FBF17186588A554A8">與檔案名稱中的DCS小時數相關。 <a href="#different-processing-times">另請參閱「 </a> 客戶資料饋送檔案名稱時間」和「檔案內容時間」.... </li> 
        </ul> </p> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> 裝置</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>This is the <span class="wintitle"> Unique User ID</span> (UUID), which is a 38-digit device ID for your site visitor. 也請參閱 <a href="../reference/ids-in-aam.md">Audience Manager 內的 ID 索引</a>。 </p> </td> 
+   <td colname="col3"> <p>這是唯一 <span class="wintitle"> 使用者ID</span> (UUID)，是您網站訪客的38位元裝置ID。 也請參閱 <a href="../reference/ids-in-aam.md">Audience Manager 內的 ID 索引</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> 容器 ID</code> </p> </td> 
    <td colname="col2"> <p>數值 </p> </td> 
-   <td colname="col3"> <p>引發ID同步之容器的ID。 </p> </td> 
+   <td colname="col3"> <p>觸發ID的容器ID同步。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 實作特性</code> </p> </td> 
+   <td colname="col1"> <p><code> 實現的特性</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
-   <td colname="col3"> <p>一系列特徵ID，其中包含訪客在事件呼叫中實現的所有特性(符合資格)。 </p> <p>請注意，陣列可以包含訪客在此事件中符合資格的特徵，以及其重新符合資格的特徵。 </p> </td> 
+   <td colname="col3"> <p>一組特徵ID，包含訪客在事件呼叫中實現（符合）的所有特徵。 </p> <p>請注意，陣列可包含訪客在此事件呼叫前曾符合的特徵，以及重新符合的特徵。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 實現區段</code> </p> </td> 
+   <td colname="col1"> <p><code> 已實現的區段</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
-   <td colname="col3"> <p>區段ID陣列，其中包含訪客在事件呼叫中實現的所有區段(符合資格)。 </p> </td> 
+   <td colname="col3"> <p>區段ID的陣列，包含訪客在事件呼叫中實現（符合）的所有區段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> 要求參數</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>擷取所有參數(變數、ID、索引鍵-值配對等)的字串傳入事件呼叫。 </p> <p>縮短範例： </p> <p> <code> d_ rtbd：json，c_ contextData. a. CarrierName：mobile，c_ contextData. a. adid：92D56353-49C5-431E-B474-FC528 D585810，c_ contextData. a，RunMode：應用程式，c_ contextData. a. DaysSinceLastUpgrade：61，d_ cid_ ic：xid%01EACB6E40-AC65-4012-12FE9-ABD59965 E9 C4%011，c_ contextData. a. PrepressSearchLength：583</code> </p> </td> 
+   <td colname="col3"> <p>擷取所有參數（變數、ID、索引鍵值配對、裝置廣告ID等）的字串在事件呼叫時傳入。 </p> <p>簡短範例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD5965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 反向連結資料類型</code> </p> </td> 
+   <td colname="col1"> <p><code> 參考資料類型</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>反向連結頁面的未編碼URL(如果有的話)。 </p> </td> 
+   <td colname="col3"> <p>反向連結頁面的未編碼URL（如果有）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> IP資料類型</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>在事件呼叫中擷取的訪客IP位址。 </p> </td> 
+   <td colname="col3"> <p>在事件呼叫中擷取之訪客的IP位址。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> McDevice </code> </p> </td> 
+   <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>The <span class="keyword"> Experience Cloud</span> ID (MID) assigned to the site visitor. See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and theExperience Cloud ID service</a>. </p> </td> 
+   <td colname="col3"> <p>指 <span class="keyword"> 派給網站訪客的Experience Cloud</span> ID(MID)。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and theExperience Cloud ID service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> 所有區段</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
-   <td colname="col3"> <p>區段ID陣列，其中包含先前已實施的區段和訪客適用的新區段。 </p> </td> 
+   <td colname="col3"> <p>區段ID的陣列，包含先前已實現的區段和訪客符合的新區段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> 所有特徵</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
-   <td colname="col3"> <p>第一方和第三方特徵ID的陣列，其中包含訪客在上次產生的資料饋送後已符合資格的先前實作特性和新特性。 </p> </td> 
+   <td colname="col3"> <p>一系列第一方和第三方特徵ID，其中包含訪客自上次產生資料饋送以來所符合的先前實現特徵和新特徵。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Customer Data Feed File Structure {#cdf-file-structure}
+## 客戶資料饋送檔案結構 {#cdf-file-structure}
 
-Lists and defines the data structure of a [!UICONTROL CDF] file. 其中包括資料順序、欄位分隔字元和分隔符號、資料檔案地圖和範例檔案。
+列出並定義檔案的資料 [!UICONTROL CDF] 結構。 這包括資料順序、欄位分隔字元和分隔符號、資料檔案地圖和範例檔案。
 
-## Data Field Identifiers and Sequence {#identifiers-and-sequence}
+## 資料欄位識別碼和順序 {#identifiers-and-sequence}
 
 <!-- cdf-file-structure.xml -->
 
-[!UICONTROL CDF] 檔案不包含標記的欄或欄位標題。[!UICONTROL CDF] 檔案會改為使用非列印 [!DNL ASCII] 字元定義欄位和陣列。Also, the [!UICONTROL CDF] file lists each field and array in a specific order. 瞭解欄位識別碼和順序可協助您正確剖析檔案。
+[!UICONTROL CDF] 檔案不包含已標示的欄或欄位標題。 相反，檔案 [!UICONTROL CDF] 會定義具有非打印字元的欄位和 [!DNL ASCII] 陣列。 此外，檔 [!UICONTROL CDF] 案會依特定順序列出每個欄位和陣列。 瞭解欄位識別碼和順序有助於正確剖析檔案。
 
 <table id="table_D2C8786DF7CE47E5ADB8930EC825F8F6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> CMS檔案元素 </th> 
+   <th colname="col1" class="entry"> CDF檔案元素 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>欄位分隔符號和分隔符號 </p> </td> 
-   <td colname="col2"> <p>這些非列印字元定義您CMS檔案的元素和結構： </p> <p> 
+   <td colname="col1"> <p>欄位分隔符和分隔字元 </p> </td> 
+   <td colname="col2"> <p>這些非打印字元定義CDF檔案的元素和結構： </p> <p> 
      <ul id="ul_056A9B90AC88405CBB5F81A56CD6E4C9"> 
-      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a (ASCII <code> 001</code> or <code> ^A</code>) separates data in individual fields with a non-printing space indicator. </li> 
-      <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b (ASCII <code> 002</code> or <code> ^B</code>) separates data an array and request parameters. </li> 
-      <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c (ASCII <code> 003</code> or <code> ^C</code>) defines key-value pairs. </li> 
+      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a(ASCII <code> 001</code> 或 <code> ^A</code>)可使用非列印空間指示器分隔個別欄位中的資料。 </li> 
+      <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b(ASCII <code> 002</code> 或 <code> ^B</code>)可分隔資料和陣列，並請求參數。 </li> 
+      <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c(ASCII <code> 003</code> 或 <code> ^C</code>)定義鍵值對。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>欄位順序 </p> </td> 
-   <td colname="col2"> <p> <p>Important: <span class="keyword"> Audience Manager</span> reserves the right to add new fields to the end of the CDF file in future releases. 這表示檔案剖析系統的技術設計不應假設為固定欄數(雖然它可能對現有欄具有固定順序)。 </p> </p> <p>CMS檔案中的資料會依照下列順序顯示。 </p> <p> 
+   <td colname="col2"> <p> <p>重要：Audience <span class="keyword"> Manager</span> 保留在未來發行中新增欄位至CDF檔案結尾的權利。 這表示檔案剖析系統的技術設計不應假設固定數目的欄（雖然它可能會假設現有欄的順序固定）。 </p> </p> <p>CDF檔案中的資料按以下順序顯示。 </p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
-      <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件時間 </li> 
+      <li id="li_CB97D90B54EB4F95861583D4A5F660C7"> 事件時間 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">裝置 </li> 
       <li id="li_F8AE0D4CA19D411686A240FE06F56147">容器 ID </li> 
-      <li id="li_660D17989BE54610A01229C47894E8A9">實作特性 </li> 
-      <li id="li_1591180564374204852785C6FFCA4F74">實現區段 </li> 
+      <li id="li_660D17989BE54610A01229C47894E8A9">實現的特性 </li> 
+      <li id="li_1591180564374204852785C6FFCA4F74"> 已實現的區段 </li> 
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">要求參數 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 位址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud裝置ID(或MID)。See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID Service</a> </li> 
-      <li id="li_7A05AF4790A1425A90D019681DF4A595">所有區段 </li> 
-      <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特徵 </li> 
-     </ol> </p> <p>For field descriptions, see <a href="#cdf-defined"> Customer Data Feed Contents Defined</a>. </p> </td> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience cloud裝置ID（或MID）。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID Service</a> </li> 
+      <li id="li_7A05AF4790A1425A90D019681DF4A595"> 所有區段 </li> 
+      <li id="li_1B5A6F076A354BA0A931CB260E6D2675"> 所有特徵 </li> 
+     </ol> </p> <p>如需欄位說明，請參閱「 <a href="#cdf-defined"> 客戶資料饋送內容定義」</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## CDF File Map {#cdf-file-map}
+## CDF檔案映射 {#cdf-file-map}
 
-[!UICONTROL CDF] 檔案資料會依照下列順序顯示。
+[!UICONTROL CDF] 檔案資料會依下列順序顯示。
 
 ![](assets/sequence-map.png)
 
 ## 識別陣列
 
-[!UICONTROL CDF] 檔案中的陣列會以 `Ctrl + a` 欄位分隔符號開始並結束。如此，陣列中的第一個元素就會像獨立資料欄位一樣顯示。For example, the realized traits array starts with `^A1234`. The array delimiter and ID `^B5678` follows this entry. As a result, you might be tempted to think that the first element in the realized traits array is ID 5678 (because it starts with `^B`). 事實並非如此，因此您必須熟悉資料檔案的順序和結構。Even though the first element in the realized trait array (or any of the other arrays in a [!UICONTROL CDF] file) starts with `^A`, the order of appearance or position in the file defines the start of an array. And, the first element in an array is always separated from the preceding entry by `^A`.
+檔案中的數 [!UICONTROL CDF] 組以欄位分隔符開始和 `Ctrl + a` 結束。 這會使陣列中的第一個元素看起來像獨立的資料欄位。 例如，已實現的特徵陣列從開始 `^A1234`。 陣列分隔字元和ID `^B5678` 會遵循此項目。 因此，您可能會想到，已實現特徵陣列中的第一個元素是ID 5678(因為它以 `^B`開頭)。 但情況並非如此，因此您需要熟悉資料檔案的順序和結構。 即使實現特徵陣列（或檔案中的任何其他陣列）中的第一個元素 [!UICONTROL CDF] 以開頭 `^A`，檔案中的外觀或位置順序仍定義陣列的開頭。 而且，陣列中的第一個元素總是與前面的條目分開 `^A`。
 
-## Sample CDF File {#sample-file}
+## 範例CDF檔案 {#sample-file}
 
-A sample [!UICONTROL CDF] file could look similar to the following. 我們已插入行，以協助它符合頁面。
+範例檔 [!UICONTROL CDF] 案看起來可能類似下列。 我們在此範例中插入了分行符號，以協助它符合頁面。
 
 ![](assets/CDF-sample.png)
 
-## Customer Data Feed File Naming Conventions {#cdf-naming-conventions}
+## 客戶資料饋送檔案命名慣例 {#cdf-naming-conventions}
 
-The sections below list and define the elements in your [!UICONTROL CDF] file name.
+以下各節列出並定義檔案名中 [!UICONTROL CDF] 的元素。
 
-## CDF File Name: Syntax and Example {#cdf-file-name}
+## CDF檔案名：語法與範例 {#cdf-file-name}
 
 <!-- cdf-file-name.xml -->
 
-A typical [!UICONTROL CDF] file name contains the elements listed below. Note, *italics* indicates a variable placeholder:
+典型的 [!UICONTROL CDF] 檔案名稱包含下列元素。 Note, *italics* indicates a variable placeholder:
 
-* **語法**
+### 語法
 
-<pre><code>s3：loc s bucket name<i></i>/day=<i>yyyy-mm-dd</i>/hour=<i>hh</i>/<i>AAM_ CMS_ partner ID_ AAM程序ID</i>_0.gz</code>
-</pre>
+```
+s3://aam-cdf/YOUR-S3-BUCKET-NAME/day=yyyy-mm-dd/hour=hh/AAM-CDF-PARTNER-ID-AAM PROCESS-ID_0.gz
+```
 
-* **範例**
+### 範例
 
 ```
 s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 ```
 
-In your [!DNL S3] storage bucket, files are sorted in ascending order by Partner ID ([!UICONTROL PID]), day, and hour.
+在您的 [!DNL S3] 儲存貯體中，檔案會依合作夥伴ID([!UICONTROL PID])、日和小時的升序排序。
 
-## CDF File Name Elements Defined {#cdf-file-name-elements}
+## 定義的CDF檔案名元素 {#cdf-file-name-elements}
 
-The following table lists and defines the elements in a [!UICONTROL CDF] file name.
+下表列出並定義檔案名中 [!UICONTROL CDF] 的元素。
 
 <table id="table_4AC4F90C1C7D43E2A93CB3B6908D7E94"> 
  <thead> 
@@ -219,45 +220,45 @@ The following table lists and defines the elements in a [!UICONTROL CDF] file na
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> s3：//aam-cdf/</code> </p> </td> 
-   <td colname="col2"> <p>這是Amazon S伺服器上的CMS檔案的預設根儲存貯體。 </p> </td> 
+   <td colname="col1"> <p> <code> s3://aam-cdf/</code> </p> </td> 
+   <td colname="col2"> <p>這是Amazon S3伺服器上CDF檔案的預設根儲存桶。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>您的S儲存貯體名稱</i></code> </p> </td> 
-   <td colname="col2"> <p>保留您的CMS檔案的唯讀S儲存貯體名稱。 </p> </td> 
+   <td colname="col1"> <p> <code> 您 <i>的S3儲存貯體名稱</i></code> </p> </td> 
+   <td colname="col2"> <p>唯讀儲存桶的名稱，保存CDF檔案的S3儲存桶。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>day=<i>yyyy-mm-dd</i></code> </p> </td> 
-   <td colname="col2"> <p>檔案的處理日期。 </p> </td> 
+   <td colname="col2"> <p>您檔案的處理日期。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>hour=<i>hh</i></code> </p> </td> 
-   <td colname="col2"> <p>以24小時表示並設定UTC時區的時間值。See also, <a href="#different-processing-times"> Customer Data Feed File Name Times and File Content Times...</a>. </p> </td> 
+   <td colname="col2"> <p>以24小時記號表示並在UTC時區中設定的時間值。 <a href="#different-processing-times">另請參閱「 </a> 客戶資料饋送檔案名稱時間」和「檔案內容時間」.... </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>合作夥伴ID</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> 合 <i>作夥伴ID</i></code> </p> </td> 
    <td colname="col2"> <p>您的合作夥伴ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>AAM process ID</i>_0</code> </p> </td> 
-   <td colname="col2"> <p>An internal, <span class="keyword"> Audience Manager</span> process ID. </p> </td> 
+   <td colname="col1"> <p> <code> <i>AAM進程ID</i>_0</code> </p> </td> 
+   <td colname="col2"> <p>內部的 <span class="keyword"> Audience Manager</span> 程式ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> .gz</code> </p> </td> 
-   <td colname="col2"> <p>gzip檔案副檔名。已壓縮CMS檔案。 </p> </td> 
+   <td colname="col2"> <p>gzip副檔名。 CDF檔案壓縮為gzip。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Customer Data Feed File Processing Notifications {#cdf-file-processing-notifications}
+## 客戶資料饋送檔案處理通知 {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager] 將 `.info` 檔案寫入 [!DNL S3] 您的目錄，讓您知道何時 [!UICONTROL Customer Data File] ([!UICONTROL CDF])已準備好下載。`.info` 檔案也包含 [!DNL JSON] 檔案內容的格式中繼資料 [!UICONTROL CDF] 。請參閱本節，以瞭解此通知檔案所使用語法和欄位的相關資訊。
+[!DNL Audience Manager] 將檔 `.info` 案寫入您 [!DNL S3] 的目錄，以告知您 [!UICONTROL Customer Data File] ([!UICONTROL CDF])已準備好下載。 檔 `.info` 案也包含 [!DNL JSON] 檔案內容的格式化中繼資 [!UICONTROL CDF] 料。 請檢閱本節，以取得有關此通知檔案所使用之語法和欄位的資訊。
 
-## Sample Info File {#sample-info-file}
+## 範例資訊檔案 {#sample-info-file}
 
 <!-- cdf-notifications.xml -->
 
-Each `.info` file contains a `Files` and `Totals` section. `Files` 區段包含一個陣列，可保留每每小時檔案的特定度量。`Totals` 區段包含特定日 [!UICONTROL CDF] 內所有檔案的匯總度量。`.info` 檔案的內容看起來類似下列範例。
+每個 `.info` 檔案都包含 `Files` 和 `Totals` 區段。 該 `Files` 區段包含一個陣列，其中包含每個每小時檔案的特定度量。 該 `Totals` 區段包含匯總至您所有特定日 [!UICONTROL CDF] 期檔案的量度。 您檔案的內 `.info` 容看起來可能類似下列範例。
 
 ```js
 {
@@ -284,11 +285,11 @@ Each `.info` file contains a `Files` and `Totals` section. `Files` 區段包含�
 }
 ```
 
-## Info File Fields Defined {#info-file-fields-defined}
+## 定義的資訊檔案欄位 {#info-file-fields-defined}
 
-The following tables list and define the elements in a [!UICONTROL CDF] `.info` file.
+下表列出並定義檔案中的 [!UICONTROL CDF]`.info` 元素。
 
-### 檔案物件
+### 檔案對象
 
 <table id="table_582101B414864DA991CE813A7937ECC6"> 
  <thead> 
@@ -300,23 +301,23 @@ The following tables list and define the elements in a [!UICONTROL CDF] `.info` 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> 檔案</code> </p> </td> 
-   <td colname="col2"> <p>啓動包含您的CMS檔案中繼資料的陣列。 </p> </td> 
+   <td colname="col2"> <p>啟動包含有關CDF檔案的元資料的陣列。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileByteSize</code> </p> </td> 
-   <td colname="col2"> <p>檔案大小為位元組。 </p> </td> 
+   <td colname="col2"> <p>檔案大小（以位元組為單位）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>Amazon S3eTag。連字號後面的數字會顯示多部分上傳期間用來建立檔案的部分數。<code> eTag</code> 與檔案的MD檢查總和不相同。 </p> </td> 
+   <td colname="col2"> <p>Amazon S3 ETag。 連字型大小後面的數字顯示在多部件上載期間用於生成檔案的部件數。 ETag <code></code> 與檔案的MD5校驗和不相同。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>檔案名稱。See <a href="#cdf-naming-conventions"> Customer Data Feed File Naming Conventions</a>. </p> </td> 
+   <td colname="col1"> <p> <code> 檔案名稱</code> </p> </td> 
+   <td colname="col2"> <p>檔案名。 請參閱 <a href="#cdf-naming-conventions"> 客戶資料饋送檔案命名慣例</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> FileSquenceNumber</code> </p> </td> 
-   <td colname="col2"> <p>每個檔案的索引編號。 </p> </td> 
+   <td colname="col1"> <p> <code> FileSequenceNumber</code> </p> </td> 
+   <td colname="col2"> <p>每個檔案的索引號。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -333,49 +334,49 @@ The following tables list and define the elements in a [!UICONTROL CDF] `.info` 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> 總計</code> </p> </td> 
-   <td colname="col2"> <p>啓動包含所有CMS檔案之匯總資料的物件。 </p> </td> 
+   <td colname="col2"> <p>啟動包含所有CDF檔案的聚合資料的對象。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 日</code> </p> </td> 
-   <td colname="col2"> <p>資料可用的日期。Uses <i>yyyy-mm-dd</i> format. </p> </td> 
+   <td colname="col2"> <p>資料可用的日期。 使用 <i>yyyy-mm-dd格式</i> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 小時</code> </p> </td> 
-   <td colname="col2"> <p>可用資料的小時。使用UTC時區的24小時格式設定。 </p> </td> 
+   <td colname="col2"> <p>資料可用的小時數。 使用在UTC時區中設定的24小時格式。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> totalByteSize</code> </p> </td> 
-   <td colname="col2"> <p>該日期的所有CMS檔案大小(以位元組為單位)。 </p> </td> 
+   <td colname="col1"> <p> <code> TotalByteSize</code> </p> </td> 
+   <td colname="col2"> <p>該日期所有CDF檔案的總大小（以位元組為單位）。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> totalNumberFiles</code> </p> </td> 
-   <td colname="col2"> <p>上傳至您的S目錄的檔案總數。 </p> </td> 
+   <td colname="col1"> <p> <code> TotalNumberFiles</code> </p> </td> 
+   <td colname="col2"> <p>上傳到S3目錄的檔案總數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Customer Data Feed File Name Times and File Content Times are Different {#different-processing-times}
+## 客戶資料饋送檔案名稱時間和檔案內容時間不同 {#different-processing-times}
 
-[!UICONTROL CDF] 您的檔案包含檔案名稱和檔案內容中的時間戳記。These timestamps record different event processes for the same [!UICONTROL CDF] file. 在相同檔案的名稱和內容中檢視不同時間戳記並不常見。瞭解每個時間戳記可協助您在處理此資料時避免常見錯誤，或嘗試依時間排序。
+您的 [!UICONTROL CDF] 檔案在檔案名稱和檔案內容中包含時間戳記。 這些時間戳記會記錄相同檔案的不同事件 [!UICONTROL CDF] 程式。 相同檔案的名稱和內容中會出現不同的時間戳記，這種情況並不少見。 瞭解每個時間戳記有助於您避免在處理此資料或嘗試依時間排序時常出錯。
 
-## Locating CDF File Timestamps {#locating-timestamps}
+## 查找CDF檔案時間戳 {#locating-timestamps}
 
 <!-- cdf-time-differences.xml -->
 
-[!UICONTROL CDF] 檔案在不同位置的時間會不同。
+[!UICONTROL CDF] 檔案在2個不同位置記錄的時間不同。
 
 ![](assets/cdf-timestamp.png)
 
-## Understanding the Difference Between Timestamps {#understanding-timestamps}
+## 瞭解時間戳記之間的差異 {#understanding-timestamps}
 
-The following table provides additional details about your [!UICONTROL CDF] file timestamps along with information about how to use them properly.
+下表提供檔案時間戳記的其 [!UICONTROL CDF] 他詳細資訊，以及如何正確使用時間戳記的資訊。
 
 | 時間戳記位置 | 說明 |
 |--- |--- |
-| 檔案名稱 | The timestamp in your CDF file name marks the time when [!DNL Audience Manager] started preparing your file for delivery. 此時間戳記設定於UTC時區中。It uses the `hour=` parameter, with time formatted as a 2-digit hour in 24-hour notation. 此時間可與檔案內容中記錄的事件時間不同。劃分當使用CMS檔案時，有時您會注意到特定小時內的S儲存貯體是空的。空貯體意指以下任一項：<ul><li>該特定小時沒有資料。 </li><li> 我們的伺服器負荷過重，無法處理特定小時的檔案。當伺服器擷取時，會將原本儲存在儲存貯體中的檔案放入儲存時間較久的貯體中。For example, you'll see this when a file that should have been in the hour 17 bucket appear in the hour 18 bucket (with `hour=18` in the file name). 在這種情況下，伺服器可能會在小時內開始處理您的檔案，但無法在該時間間隔內完成。檔案會改為推送至下一小時的時間貯體。</li></ul><br>**重要**：請勿使用檔案名稱時間戳記來依時間分組事件。If you need to group by time, use the `EventTime` timestamp in the file contents. |
-| 檔案內容 | CMS檔案內容中的時間戳記會標示資料收集伺服器開始處理檔案的時間。此時間戳記設定於UTC時區中。It uses the `EventTime` field, with time formatted as *`yyyy-mm-dd hh:mm:ss`*. This time is close to the actual time of the event on the page, but it can be different than the hour indicator in the file name. <br> **秘訣**：與檔案名稱中的 `hour=` 時間戳記不同的是，您可以 `EventTime` 使用時間來分組資料。 |
+| 檔案名稱 | CDF檔案名中的時間戳記標示開始準 [!DNL Audience Manager] 備檔案進行傳送的時間。 此時間戳記在UTC時區中設定。 它使用參 `hour=` 數，時間格式為24小時記號的2位數小時。 此時間可以與檔案內容中記錄的事件時間不同。 中斷使用CDF檔案時，有時您會發現您的S3儲存貯體在特定小時內是空的。 空桶表示可以表示以下任一項：<ul><li>沒有那個小時的資料。 </li><li> 我們的伺服器負載繁重，無法處理特定小時的檔案。 當伺服器接上來時，會將原本應在較早時段檔案中的檔案，放入具有較晚時間值的儲存貯體中。 例如，當本應在17小時儲存貯體中的檔案出現在18小時儲存貯體中時（在檔案名稱中），您就會 `hour=18` 看到這一點。 在這種情況下，伺服器可能會在17小時內開始處理您的檔案，但無法在該時間間隔內完成。 相反地，檔案會推送至下一個每小時時段。</li></ul><br>**重要**:請勿使用檔案名稱時間戳記依時間來分組事件。 如果您需要依時間分組，請使用檔 `EventTime` 案內容中的時間戳記。 |
+| 檔案內容 | CDF檔案內容中的時間戳記標示資料收集伺服器開始處理檔案的時間。 此時間戳記在UTC時區中設定。 它使用字 `EventTime` 段，時間格式為 *`yyyy-mm-dd hh:mm:ss`*。 此時間接近頁面上事件的實際時間，但可能與檔案名稱中的小時指示符不同。 <br> **提示**:與檔案 `hour=` 名稱中的時間戳記不同，您可以 `EventTime` 使用時間來分組資料。 |
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [客戶資料饋送常見問題](../faq/faq-cdf.md)
+>* [客戶資料饋送常見問答集](../faq/faq-cdf.md)
 
