@@ -5,7 +5,7 @@ seo-title: 基於人員的目標概觀和使用案例
 solution: Audience Manager
 title: 概觀與使用案例
 translation-type: tm+mt
-source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
+source-git-commit: 62c27a3990c2c39d069c7a6e4ef32e8e8b3f1998
 
 ---
 
