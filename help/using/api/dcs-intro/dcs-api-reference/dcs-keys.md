@@ -1,29 +1,30 @@
 ---
-description: 列出語法和支援的屬性(或關鍵值配對)，您可以傳入資料收集伺服器(DCS)。此資訊可協助您格式化DCS請求，並瞭解此系統傳回的參數。
-seo-description: 列出語法和支援的屬性(或關鍵值配對)，您可以傳入資料收集伺服器(DCS)。此資訊可協助您格式化DCS請求，並瞭解此系統傳回的參數。
+description: 列出並說明您可傳入資料收集伺服器(DCS)的語法和支援的屬性（或金鑰值配對）。 此資訊可協助您格式化DCS要求，並瞭解此系統傳回的參數。
+seo-description: 列出並說明您可傳入資料收集伺服器(DCS)的語法和支援的屬性（或金鑰值配對）。 此資訊可協助您格式化DCS要求，並瞭解此系統傳回的參數。
 seo-title: DCS API呼叫的支援屬性
 solution: Audience Manager
 title: DCS API呼叫的支援屬性
-uuid: 0b98ed11-314b-4500-afde-45a041112150
+keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tpid ic
+uuid: 0b98ed11-314b-4500-afde-45a0411112150
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 6e2cb69cd2f65851b82ed9a28f4a108562ce6ab8
 
 ---
 
 
-# Supported Attributes for DCS API Calls {#supported-attributes-for-dcs-api-calls}
+# DCS API呼叫的支援屬性 {#supported-attributes-for-dcs-api-calls}
 
-Lists and describes the syntax and supported attributes (or key-value pairs) you can pass in to the [!UICONTROL Data Collection Servers] ([!UICONTROL DCS]). This information can help you format your [!UICONTROL DCS] requests and understand the parameters returned by this system.
+列出並說明您可傳入()的語法和支援的屬性(或金鑰值 [!UICONTROL Data Collection Servers] 配對[!UICONTROL DCS])。 這些資訊可協助您設定請求 [!UICONTROL DCS] 的格式，並瞭解此系統傳回的參數。
 
-## Attribute Prefixes {#attribute-prefixes}
+## 屬性前置詞 {#attribute-prefixes}
 
-The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value pairs to classify the type of data you're passing in.
+依 [!UICONTROL DCS] 賴於鍵值對中新增至鍵的特定字首，以分類您傳入的資料類型。
 
 <table id="table_23B7E15EC13749E9A245DFB543822DB7"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 金鑰首碼 </th> 
-   <th colname="col2" class="entry"> 保留為 </th> 
+   <th colname="col1" class="entry"> 密鑰前置詞 </th> 
+   <th colname="col2" class="entry"> 保留對象 </th> 
   </tr>
  </thead>
  <tbody> 
@@ -33,7 +34,7 @@ The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager</span> 屬性。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience manager屬性</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> h_</code> </p> </td> 
@@ -41,14 +42,14 @@ The [!UICONTROL DCS] relies on specific prefixes added to the keys in key-value 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> p_</code> </p> </td> 
-   <td colname="col2"> <p>私人、客戶定義的屬性。 </p> <p> The DCS accepts your own, private data when the key has a <code> p_</code> prefix. 私人資料用於特徵評估，但不會記錄或儲存在我們的系統中。For example, lets say you have a trait defined as <code> customers = p_age&lt;25</code> and you pass in <code> p_age=23</code> in an event call. Given these conditions, the user who meets the age-based qualification criteria qualifies for the trait, but the key-value pair is dropped after <span class="keyword"> Audience Manager</span> receives the request and is not logged. </p> </td>
+   <td colname="col2"> <p>私人、客戶定義的屬性。 </p> <p> 當金鑰有 <code> p_</code> prefix時，DCS會接受您自己的私人資料。 私人資料用於特徵評估，但不會記錄或儲存在我們的系統中。 例如，假設您有個特徵定義為 <code> 客戶= p_age&lt;25</code> ，而您在事件呼叫中傳入 <code> p_age=23</code> 。 基於這些條件，符合年齡資格條件的使用者符合特徵的資格，但是Audience Manager <span class="keyword"></span> 收到請求後，索引鍵值配對會被捨棄，而且不會記錄。 </p> </td>
   </tr> 
  </tbody> 
 </table>
 
-## d_ Attributes {#d-attributes}
+## d_屬性 {#d-attributes}
 
-All of these are optional, unless you want a response from the [!UICONTROL DCS]. If you want the [!UICONTROL DCS] to return a response, then `d_rtbd=json` is required.
+所有這些都是選用的，除非您想要回應 [!UICONTROL DCS]。 如果您想要傳 [!UICONTROL DCS] 回回應，則為必 `d_rtbd=json` 要項目。
 
 <table id="table_FCCE4F9D796648899772A191981EFDE6"> 
  <thead> 
@@ -59,114 +60,114 @@ All of these are optional, unless you want a response from the [!UICONTROL DCS].
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><code> d_ caller</code> </p> </td> 
-   <td colname="col2"> <p>Used to identify the caller who is making the call to the <span class="wintitle"> DCS</span> API. </p> </td> 
+   <td colname="col1"> <p><code> d_caller</code> </p> </td> 
+   <td colname="col2"> <p>用於識別對 <span class="wintitle"> DCS</span> API進行呼叫的呼叫者。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cb</code> </p> </td> 
-   <td colname="col2"> <p>Specifies a JavaScript function you want to execute using the <span class="wintitle"> DCS</span> response as a function parameter of the callback function. </p> </td> 
+   <td colname="col2"> <p>指定您要使用 <span class="wintitle"> DCS回應來執行的JavaScript函式</span> ，作為回呼函式的函式參數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_cid</code> </p> </td> 
-   <td colname="col2"> <p>Contains one or more pairs of data provider IDs (<code> DPID</code>) and data provider user IDs (<code> DPUUID</code>) assigned by <span class="keyword"> Audience Manager</span>. If you use multiple pairs of <code> DPID</code>s and <code> DPUUID</code>s, separate each pair with the non-printing character <code> %01</code>. For example: <code><i>DPID</i>%01<i>DPUUUID</i></code>. </p> <p><code> d_ cid</code> 取代 <code> d_ dpid</code> 和 <code> d_ dpuuid</code>，這兩個項目已過時但仍受支援。請參閱 <a href="../../../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td>
+   <td colname="col2"> <p>包含<code> Audience Manager指派的一對或多對資料提供者ID(</code>DPID<code> )和資料提供者使用者ID(DPUUID</code>) <span class="keyword"></span>。 如果您使用多對 <code> DPID和</code>DPUUID，請將每對分別使用非列印字元 <code> %01</code><code></code>。 例如： <code><i>DPID</i>%01<i>DPUUID</i></code>。 </p> <p><code> d_cid會取代</code> d_dpid <code> 和</code> d_dpuuid <code></code>，但已過時但仍受支援。 請參閱 <a href="../../../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p><code> d_ cid_ ic</code> </p> </td> 
-   <td colname="col2"> <p>在單一索引鍵值配對中包含整合代碼和相關聯的唯一使用者ID。 </p> <p><code> d_ cid_ ic</code> 取代 <code> d_ dpid</code> 和 <code> d_ dpuuid</code>，這些取代已過時但仍受支援。請參閱 <a href="../../../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td>
+   <td colname="col1"> <p><code> d_cid_ic</code> </p> </td> 
+   <td colname="col2"> <p>在單一金鑰值配對中包含整合程式碼和相關聯的唯一使用者ID。 </p> <p><code> d_cid_ic</code> 取代 <code> d_dpid</code> 和d_dpuuid <code></code>，這些已過時但仍受支援。 請參閱 <a href="../../../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ coppa</code> </p> </td> 
-   <td colname="col2"> <p>停用第三方Cookie的使用，以遵循兒童保護法規。This parameter is dynamically set by the Adobe Experience Cloud ID service and depends on the <code> idSyncDisable3rdPartySyncing</code> configuration. See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> COPPA Support in the Experience Cloud ID Service</a>. </p> </td>
+   <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
+   <td colname="col2"> <p>停用第三方Cookie的使用，以符合兒童保護法規。 此參數由Adobe Experience Cloud ID服務動態設定，並視idSyncDisable3rdPartySyncing <code> 組態而定</code> 。 See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> COPPA Support in the Experience Cloud ID Service</a>. </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p><code> d_ cts=1</code> </p> <p><code> d_ cts=2</code> </p> </td> 
-   <td colname="col2"> <p>選填。已啓用客戶請求。請洽詢您的Adobe Audience Manager顧問或客戶服務。 </p> <p>Indicates that traits and segments should be returned inside the <code> JSON</code> response. </p> <p> 
+   <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
+   <td colname="col2"> <p>選填。在客戶要求時啟用。 請連絡您的Adobe Audience manager顧問或客戶服務。 </p> <p>指出應在 <code> JSON回應內傳回特徵和區段</code> 。 </p> <p> 
      <ul id="ul_8B936ACB18724681B959783421ACF026"> 
-      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_ cts=</code> 傳回 <a href="../../../reference/ids-in-aam.md"> 區段的舊區段ID</a> 。 </p> </li>
-      <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_ cts=</code> 傳回區段區段ID。 </p> </li>
-     </ul> </p> <p>樣本回應看起來可能如下所示： </p> <p>
-     <code class="syntax javascript">{「feats」：[]，「uuid」：「07955261652803600329052702278138」，「custs_ region」：7，「特性」：[420020，5421506]，「區段」：[984263，985264]，「tid」：「ss3otQPiQP0=」} </code>
-  </p> </td> 
+      <li id="li_792A6248F49141C0B4B214C754D5F5C5"> <p><code> d_cts=1</code> 傳回 <a href="../../../reference/ids-in-aam.md"> 區段的舊有區段ID</a> 。 </p> </li>
+      <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> 傳回區段的區段ID。 </p> </li>
+     </ul> </p> <p>範例回應可能如下所示： </p> <p>
+     <code class="syntax javascript">
+      { "stuff": [], "uuid": "07955261652886032950143702505894272138", "dcs_region":7, "traits": [420020, 5421506], "segments": [984263, 985264], "tid": "ss3OTqPiQp0=" } </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ dpid</code> </p> </td> 
-   <td colname="col2"> <p>不再提倡。See <code> d_cid</code> and <code> d_cid_ic</code>. </p> </td> 
+   <td colname="col1"> <p><code> d_dpid</code> </p> </td> 
+   <td colname="col2"> <p>不再提倡。請 <code> 參閱d_cid</code><code> 和d_cid_ic</code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ dpuuid</code> </p> </td> 
-   <td colname="col2"> <p>不再提倡。See <code> d_cid</code> and <code> d_cid_ic</code>. </p> </td> 
+   <td colname="col1"> <p><code> d_dpuuid</code> </p> </td> 
+   <td colname="col2"> <p>不再提倡。請 <code> 參閱d_cid</code><code> 和d_cid_ic</code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ dst=1</code> </p> </td> 
-   <td colname="col2"> <p>Returns URL destination data in the <code> JSON</code> response. </p> </td> 
+   <td colname="col1"> <p><code> d_dst=1</code> </p> </td> 
+   <td colname="col2"> <p>在 <code> JSON回應中傳回URL目標資料</code> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_dst_filter</code> </p> </td> 
-   <td colname="col2"> <p><code> d_ dst_ filter</code> 是保留屬性，用於Adobe Analytics與Audience Manager之間的整合。 </p> <p>我們建議不要建立使用保留屬性的特性。Adobe隨時可以變更保留屬性。 </p> </td> 
+   <td colname="col2"> <p><code> d_dst_filter</code> 是保留屬性，用於Adobe Analytics與Audience Manager的整合。 </p> <p>我們建議不要建立使用保留屬性的特徵。 Adobe得隨時變更保留屬性。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ jsonv=1|0</code> </p> </td> 
-   <td colname="col2"> <p>Indicates the <code> JSON</code> version to use in the response. Normally, you should set this to <code> d_jsonv=1</code>. Setting <code> d_jsonv=0</code> disables ID syncs. </p> </td> 
+   <td colname="col1"> <p><code> d_jsonv=1|0</code> </p> </td> 
+   <td colname="col2"> <p>指出 <code> 要在回應中使用的JSON</code> 版本。 通常，您應將此值設 <code> 為d_jsonv=1</code>。 設定 <code> d_jsonv=0</code> ，會停用ID同步。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>Specifies the Experience Cloud ID set and used by the <span class="keyword"> Experience Cloud</span> ID service. For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>指定Experience Cloud ID服務所設定及使 <span class="keyword"> 用的Experience Cloud</span> ID。 For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ nsid</code> </p> </td> 
-   <td colname="col2"> <p>名稱空間ID。指出使用的JavaScript容器。<span class="wintitle"> DIL</span> 用於ID同步。 </p> </td> 
+   <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
+   <td colname="col2"> <p>命名空間ID。 指出使用的JavaScript容器。 DIL用 <span class="wintitle"> 於</span> ID同步。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ tpm </code> </p> </td> 
-   <td colname="col2"> <p>允許Audience Manager區分桌面要求的行動要求。支援的值包括: </p> <p> 
+   <td colname="col1"> <p><code> d_ptfm </code> </p> </td> 
+   <td colname="col2"> <p>可讓Audience manager將行動裝置要求與案頭要求區分開來。 支援的值包括: </p> <p> 
      <ul id="ul_A01D4B15C89F4713A39E08377924D632"> 
       <li id="li_E17CC839265B4EB9AC44A3DA31A23857"> <code> ios</code> </li> 
-      <li id="li_468F5903CD3048B5AE02A3FDA9B3C4F1"> <code> Android</code> </li> 
+      <li id="li_468F5903CD3048B5AE02A3FDA9B3C4F1"> <code> android</code> </li> 
       <li id="li_57090DAC3BDA41DFB4BA0DD328754D55"> <code> browser</code> </li> 
-      <li id="li_DA4E93A831FE4FD8971CECD508AF992F"> <code> all</code> </li> 
+      <li id="li_DA4E93A831FE4FD8971CECD508AF992F"> <code> ally</code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_rs</code> </p> </td> 
-   <td colname="col2"> <p>不再提倡。<code> d_ rs</code> 是保留屬性，用於 <span class="keyword"> Adobe Analytics</span> 與 <span class="keyword"> Audience Manager之間的舊整合</span>。 </p> <p>我們建議不要建立使用保留屬性的特性。Adobe隨時可以變更保留屬性。 </p> </td> 
+   <td colname="col2"> <p>不再提倡。<code> d_rs是保留屬性</code> ，用於 <span class="keyword"> Adobe Analytics與</span> Audience Manager之間的舊式整合 <span class="keyword"></span>。 </p> <p>我們建議不要建立使用保留屬性的特徵。 Adobe得隨時變更保留屬性。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ rtbd= json</code> </p> </td> 
-   <td colname="col2"> <p>Required if you want a <code> JSON</code> response from the <span class="wintitle"> DCS</span>. </p> <p> 
+   <td colname="col1"> <p><code> d_rtbd=json</code> </p> </td> 
+   <td colname="col2"> <p>如果您想要從 <code> DCS取得</code> JSON回應，則 <span class="wintitle"> 為必要</span>。 </p> <p> 
      <ul id="ul_9EA00BD822504BCA8ECB59C1634DB91A"> 
-      <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">If you omit this, the <span class="wintitle"> DCS</span> returns a pixel in the header. </li> 
-      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">If you include this, the <span class="wintitle"> DCS</span> returns a <code> JSON</code> object in the body of the response. 請參閱下列範例。您的回應可能會比較複雜。 </li> 
+      <li id="li_7CB890F92C4A4C6AA8B4EE32E1AD4564">如果省略此項， <span class="wintitle"> DCS</span> 會傳回標題中的像素。 </li> 
+      <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">如果您包含此項， <span class="wintitle"> DCS</span> 會在回應內文傳回 <code> JSON</code> 物件。 請參閱以下範例。 您的回應可能會更複雜。 </li> 
      </ul> </p> <p> 
-     <code class="syntax javascript">{「feats」：[]，「uuid」：「2292011296806678612043944944994990」，「cs_ region」：7，「tid」：「ss3otQPiQP0=」} </code>
-  </p> </td> 
+     <code class="syntax javascript">
+      { "stuff": [], "uuid": "22920111296801967861290494947494954398990", "tid_region":7, "": "ss3OTqPiQp0=" } </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ sid</code> </p> </td> 
-   <td colname="col2"> <p><code> SID</code> 代表 <span class="term"> 分數ID</span>。這是特徵或區段的唯一ID。 </p> </td> 
+   <td colname="col1"> <p><code> d_sid</code> </p> </td> 
+   <td colname="col2"> <p><code> SID</code> 代表 <span class="term"> 分數ID</span>。 這是特徵或區段的唯一ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ publishd</code> </p> </td> 
-   <td colname="col2"> <p>傳遞特徵評估的資料來源。僅評估此資料來源的特徵。 </p> <p>例如，假設您有： </p> <p> 
+   <td colname="col1"> <p> <code> d_tdpid</code> </p> </td> 
+   <td colname="col2"> <p>傳遞特徵評估的資料來源。 僅評估此資料來源的特徵。 </p> <p>例如，假設您有： </p> <p> 
      <ul id="ul_6230777E16C14DCB83025A101A4ECA14"> 
-      <li id="li_71F3970417BC4B93881A3E12DADE4120"><b>特徵T1</b> 含： </li> 
-      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">Trait rule: "<code> key1 == val1</code>" </li> 
-      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">Data Source (<a href="../../../reference/ids-in-aam.md"> DPID</a>): 1 </li> 
+      <li id="li_71F3970417BC4B93881A3E12DADE4120"><b>特徵T1</b> : </li> 
+      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">特徵規則："<code> key1 == val1</code>" </li> 
+      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">資料來源(<a href="../../../reference/ids-in-aam.md"> DPID</a>):1 </li> 
       <li id="li_3E6BBDEAE5C644C6A96CB49766CDA988">DPID整合程式碼：ic1 </li> 
      </ul> 
      <ul id="ul_0C30A8AE349D43A08490DA76CB4B06FA"> 
-      <li id="li_F1E8DB26168B471FA35D82F4DD3AC601"><b>特徵T2</b> 含： </li> 
-      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">Trait rule: "<code> key2 == val2</code>" </li> 
-      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">資料來源(DPID)：2 </li> 
+      <li id="li_F1E8DB26168B471FA35D82F4DD3AC601"><b>特徵T2</b> ，包含： </li> 
+      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">特徵規則："<code> key2 == val2</code>" </li> 
+      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">資料來源(DPID):2 </li> 
       <li id="li_877CAAAE996A4707BEE74F7042708481">DPID整合程式碼：ic2 </li> 
-     </ul> </p> <p>In a sample call, <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1</code>, only trait T1 is returned. </p> </td> 
+     </ul> </p> <p>在範例呼叫yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1 <code>中</code>，只會傳回特徵T1。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ socialpid_ ic</code> </p> </td> 
-   <td colname="col2"> <p>The purpose is identical to the <code> d_tdpid</code> parameter described above. 不過，在這種情況下，會使用整合代碼傳遞資料來源。 </p> <p>保留上述特性，請考量範例呼叫： </p> <p>For <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code>, only trait T2 is returned. </p> </td> 
+   <td colname="col1"> <p> <code> d_tdpid_ic</code> </p> </td> 
+   <td colname="col2"> <p>其用途與上述 <code> d_tdpid參數相同</code> 。 不過，在此情況下，會使用整合程式碼來傳遞資料來源。 </p> <p>保留上述特徵，請考慮範例呼叫： </p> <p>對於 <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid_ic=ic2</code>，只會傳回特徵T2。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> d_ uuid</code> </p> </td> 
-   <td colname="col2"> <p>唯一使用者ID。識別此值無法從Cookie取得的訪客。 </p> </td> 
+   <td colname="col1"> <p><code> d_uuid</code> </p> </td> 
+   <td colname="col2"> <p>唯一使用者ID。 識別無法從Cookie使用此值的訪客。 </p> </td> 
   </tr>
  </tbody>
 </table>
