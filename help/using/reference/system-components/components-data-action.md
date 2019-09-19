@@ -1,6 +1,6 @@
 ---
-description: 資料動作元件包括客戶資料饋送、資料收集伺服器、SFTP/S3/HTTP出版業者、IRIS和描述檔快取伺服器。
-seo-description: 資料動作元件包括客戶資料饋送、資料收集伺服器、SFTP/S3/HTTP出版業者、IRIS和描述檔快取伺服器。
+description: 資料動作元件包括客戶資料饋送、資料收集伺服器、SFTP/S3/HTTP發佈器、IRIS和描述檔快取伺服器。
+seo-description: 資料動作元件包括客戶資料饋送、資料收集伺服器、SFTP/S3/HTTP發佈器、IRIS和描述檔快取伺服器。
 seo-title: 資料動作元件
 solution: Audience Manager
 title: 資料動作元件
@@ -11,9 +11,9 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 ---
 
 
-# Data Action Components{#data-action-components}
+# 資料動作元件{#data-action-components}
 
-資料動作元件包括客戶資料饋送、資料收集伺服器、SFTP/S3/HTTP出版業者、IRIS和描述檔快取伺服器。
+資料動作元件包括客戶資料饋送、資料收集伺服器、SFTP/S3/HTTP發佈器、IRIS和描述檔快取伺服器。
 
 <!-- 
 
@@ -21,62 +21,62 @@ c_compact.xml
 
  -->
 
-Action components are systems and processes that let you move data in and out of [!DNL Audience Manager] and (for the lack of a better phrase) do things with it. These [!DNL Audience Manager] components include:
+動作元件是可讓您在資料中移入和移出的系統和 [!DNL Audience Manager] 程式，而且（因為沒有更好的片語）可以利用它執行工作。 這些 [!DNL Audience Manager] 元件包括：
 
-## Customer Data Feeds (CDF) {#cdf}
+## 客戶資料饋送(CDF) {#cdf}
 
-[!UICONTROL CDF] 是每小時傳送給客戶的檔案。這些包含使用者ID以及關聯的區段ID、特徵ID和其他資料。For more information, see [Customer Data Feed Overview](../../features/cdf-files.md).
+[!UICONTROL CDF] 是每小時傳送給客戶的檔案。 這些ID包含使用者ID，以及關聯的區段ID、特徵ID和其他資料。 如需詳細資訊，請參 [閱客戶資料饋送概觀](../../features/cdf-files.md)。
 
-## Data Collection Server (DCS) {#dcs}
+## 資料收集伺服器(DCS) {#dcs}
 
-See [Data Collection Components](../../reference/system-components/components-data-collection.md).
+請參閱 [資料收集元件](../../reference/system-components/components-data-collection.md)。
 
 ## SFTP/S3 {#sftp-s3}
 
-[!UICONTROL SFTP/S3] 發佈商會收到來自該網站的同步化ID資料 [!UICONTROL Outbound Feed Converter]。When these files are ready, the [!UICONTROL SFTP/S3 publishers] send this data to a destination specified by the client. These files contain synchronized ID data with a one-to-many mapping of [!DNL Audience Manager] user IDs (UUID) to:
+發佈 [!UICONTROL SFTP/S3] 者會從接收同步的ID資料 [!UICONTROL Outbound Feed Converter]。 當這些檔案準備就緒時， [!UICONTROL SFTP/S3 publishers] 會將此資料傳送至用戶端指定的目的地。 這些檔案包含同步化的ID資料，以及使用者ID(UUID)的一對 [!DNL Audience Manager] 多對應：
 
-* 裝置ID/資料供應商ID(DPUUID)
-* 合格的區段ID
+* 裝置ID/資料提供者ID(DPUUID)
+* 限定的區段ID
 * 特徵ID
 
-[!DNL Audience Manager] 客戶無法存取直接控制的功能 [!UICONTROL SFPT/S3 publishers]。客戶在建立和傳送資料至目的地時間接使用此服務。The [!UICONTROL SFTP/S3] system is, essentially, an automated job process that runs at scheduled intervals.
+[!DNL Audience Manager] 客戶無法存取直接控制的功能 [!UICONTROL SFPT/S3 publishers]。 客戶在建立資料並傳送資料至目的地時，會間接使用此服務。 本 [!UICONTROL SFTP/S3] 質上，該系統是以預定間隔運行的自動作業進程。
 
 ## IRIS {#iris}
 
-In Greek mythology, [!UICONTROL Iris] is a figure who travels and delivers messages rapidly. [!UICONTROL IRIS] 此系統是一個namesake，反映出此圖中這個人物的特性。In modern terms, [!UICONTROL IRIS] is a low-latency, high-frequency cookie synchronization and data transfer service.
+在希臘神話中， [!UICONTROL Iris] 是一個快速旅行和傳遞資訊的人。 這 [!UICONTROL IRIS] 個系統是反映古代人物特徵的名稱。 就現代而言， [!UICONTROL IRIS] 是低延遲、高頻率的Cookie同步與資料傳輸服務。
 
-[!UICONTROL IRIS] 與 [!UICONTROL SFTP/S3] 系統的類型相同。However, [!UICONTROL IRIS] is different because it sends data to destinations in real time rather than at set intervals. This is a separate system because the [!UICONTROL SFTP/S3] publishers can't send data to an HTTP destination and they're not designed for real-time data transfers.
+[!UICONTROL IRIS] 與系統使用的資料類型相 [!UICONTROL SFTP/S3] 同。 但是，這 [!UICONTROL IRIS] 種情況不同，因為它會即時傳送資料至目的地，而非以設定的間隔傳送。 這是個獨立的系統，因 [!UICONTROL SFTP/S3] 為發佈者無法傳送資料至HTTP目的地，而且它們不適用於即時資料傳輸。
 
-There are no UI controls that let customers work directly with [!UICONTROL IRIS]. Customers work with [!UICONTROL IRIS] indirectly when they create and send data to destinations, and for other processes that require rapid data transfers.
+沒有UI控制項可讓客戶直接使用 [!UICONTROL IRIS]。 客戶在建立 [!UICONTROL IRIS] 資料並傳送至目的地時，以及需要快速資料傳輸的其他程式時，會間接處理。
 
-[!UICONTROL IRIS] 服務和功能的範例包括：
+服務和功 [!UICONTROL IRIS] 能的範例包括：
 
-* 快速(在30秒內)同步Cookie和區段。It can synchronize the [!DNL Audience Manager] cookie, partner cookies, or both.
-* 即時資料傳輸。[!UICONTROL IRIS] 負責將即時區段資格事件傳送給合作夥伴或其他目的地。This data is JSON-formatted and sent via an HTTP `POST` request.
+* 為Cookie和區段提供快速（30秒內）同步。 它可以同步 [!DNL Audience Manager] Cookie、合作夥伴Cookie或兩者。
+* 即時資料傳輸。 [!UICONTROL IRIS] 負責傳送即時區段資格事件給合作夥伴或其他目的地。 此資料是JSON格式，並透過HTTP要求傳 `POST` 送。
 
-* Bulk server-to-server data transfers: If you exchange large amounts of data with [!DNL Audience Manager], [!UICONTROL IRIS] is the system that your servers engage with to transfer data.
+* 大量伺服器對伺服器資料傳輸：如果您與伺服器交換大量數 [!DNL Audience Manager]據， [!UICONTROL IRIS] 則是伺服器用於傳輸資料的系統。
 
-* 適用於大規模且容錯的可靠基礎架構。Systems that power [!UICONTROL IRIS] include Amazon SQS, Amazon EC2, and Cassandra.
+* 可靠、規模化、容錯的基礎架構。 功能強大的 [!UICONTROL IRIS] 系統包括Amazon SQS、Amazon EC2和Cassandra。
 
 **區段對應規則**
 
-To optimize traffic between [!UICONTROL IRIS] and segment destinations, [!UICONTROL IRIS] sends segments to destinations based on a set of rules.
+若要最佳化與區 [!UICONTROL IRIS] 段目標之間的流 [!UICONTROL IRIS] 量，請根據一組規則傳送區段至目標。
 
-1. **新的細分資格**：當裝置符合新區段的資格時， [!UICONTROL IRIS] 請將所有與該裝置相關聯的區段傳送至對應至這些區段的所有目標。
+1. **新細分資格**:當裝置符合新區段的資格時，會 [!UICONTROL IRIS] 將與該裝置相關的所有區段傳送至所有對應至這些區段的目的地。
 
-1. **新細分優惠**&#x200B;資格：當裝置不再符合區段資格時， [!UICONTROL IRIS] 將所有與該裝置相關的資格和資格傳送給對應至這些區段的所有目的地。
+1. **新區段取消資格**:當裝置不再符合區段資格時，會將所有與該裝置相關 [!UICONTROL IRIS] 的區段資格和取消資格傳送至所有對應至這些區段的目標。
 
-1. **目的地對應更新**：當目標對應更新時， [!UICONTROL IRIS] 將所有與裝置相關的區段傳送至對應至這些區段的所有目標，下次Audience Manager看到裝置時。
+1. **目標映射更新**:當目標對應更新時，會 [!UICONTROL IRIS] 將與裝置相關聯的所有區段傳送至所有對應至這些區段的目的地，此時Audience manager會在下次看到裝置時顯示。
 
-1. **裝置圖表更新**：當任何裝置ID從用於評估區段的裝置圖表新增或移除時， [!UICONTROL IRIS] 請將與該裝置相關的所有區段傳送至對應至這些區段的所有目標，下次Audience Manager看到裝置時。
+1. **裝置圖表更新**:當任何裝置ID從用於評估區段的裝置圖形中新增或移除時， [!UICONTROL IRIS] 會將與該裝置關聯的所有區段傳送至所有對應至這些區段的目的地，此時Audience manager會在下次看到裝置時顯示。
 
 >[!IMPORTANT]
 >
->If Audience Manager doesn't detect any of the updates above for 3 consecutive days, [!UICONTROL IRIS] sends all segments associated to a device to all of the destinations mapped to these segments, the next time Audience Manager sees the device.
+>如果Audience manager連續3天未偵測到上述任何更新，則會將與裝置相關的所有區段傳送至所有對應至這些區段的目標， [!UICONTROL IRIS] 則下次Audience manager看到裝置時。
 
-**資料檔案範例**
+**範例資料檔案**
 
-The following example contains real-time segment data from [!UICONTROL IRIS]. 請記住，這僅是範例資料。每位客戶可能有不同的格式需求，因此內容可能會有所不同。
+下列範例包含來自的即時區段資料 [!UICONTROL IRIS]。 請記住，這僅是範例資料。 每位客戶可能有不同的格式要求，因此內容可能會有所不同。
 
 ```
 {
@@ -144,6 +144,6 @@ The following example contains real-time segment data from [!UICONTROL IRIS]. �
 }
 ```
 
-## Profile Cache Server (PCS) {#pcs}
+## 配置式快取伺服器(PCS) {#pcs}
 
-See [Data Collection Components](../../reference/system-components/components-data-collection.md).
+請參閱 [資料收集元件](../../reference/system-components/components-data-collection.md)。
