@@ -1,18 +1,18 @@
 ---
-description: 設定DFP做為目的地，然後傳送Audience Manager區段資料至該平台。
-seo-description: 設定DFP做為目的地，然後傳送Audience Manager區段資料至該平台。
-seo-title: DFP做為Audience Manager目的地
+description: 將DFP設為目的地，並傳送Audience manager區段資料至該平台。
+seo-description: 將DFP設為目的地，並傳送Audience manager區段資料至該平台。
+seo-title: DFP做為Audience manager目標
 solution: Audience Manager
-title: DFP做為Audience Manager目的地
-uuid: 12d6c2ce-f0 fa-4a2 c-8b88-fhuse634 df435
+title: DFP做為Audience manager目標
+uuid: 12d6c2ce-f0fa-4a2c-8b88-fdad634df435
 translation-type: tm+mt
 source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
 
 ---
 
 
-# DFP as an Audience Manager Destination {#dfp-as-an-audience-manager-destination}
+# DFP做為Audience manager目標 {#dfp-as-an-audience-manager-destination}
 
-Set up [!DNL DFP] as a destination and send Audience Manager segment data to that platform.
+設定為 [!DNL DFP] 目標，並傳送Audience manager區段資料至該平台。
 
-The documentation in this section described the outdated method of integrating with [!DNL DFP] and has been removed. For [!DNL DFP] integrations, see [Integrate DFP using Google Publisher Tags (GPT)](../integration/gpt-aam-destination/gpt-aam-requirements.md).
+本節中的檔案說明與整合的過時方法， [!DNL DFP] 並已移除。 如需整 [!DNL DFP] 合，請參 [閱「使用Google Publisher標籤(GPT)整合DFP](../integration/gpt-aam-destination/gpt-aam-requirements.md)」。
