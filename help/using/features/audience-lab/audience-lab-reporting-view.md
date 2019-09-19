@@ -1,24 +1,24 @@
 ---
-description: 測試群組報告區域傳回測試群組轉換的相關資訊，以便輕鬆比較測試區段有效性。有許多濾鏡和維度可用於資料視覺化。
-seo-description: 測試群組報告區域傳回測試群組轉換的相關資訊，以便輕鬆比較測試區段有效性。有許多濾鏡和維度可用於資料視覺化。
+description: 測試群組報告區段會傳回測試群組轉換的資訊，讓您輕鬆比較測試區段的效能。 有許多篩選器和維度可供資料視覺化使用。
+seo-description: 測試群組報告區段會傳回測試群組轉換的資訊，讓您輕鬆比較測試區段的效能。 有許多篩選器和維度可供資料視覺化使用。
 seo-title: 測試群組報表
 solution: Audience Manager
 title: 測試群組報表
 topic: DIL API
-uuid: 21303c3e-4c05-4728-a759-96c2 a1 d99 b69
+uuid: 21303c3e-4c05-4728-a759-96c2a1d99b69
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Test Group Reporting {#test-group-reporting}
+# 測試群組報表 {#test-group-reporting}
 
-測試群組報告區域傳回測試群組轉換的相關資訊，以便輕鬆比較測試區段有效性。有許多濾鏡和維度可用於資料視覺化。
+測試群組報告區段會傳回測試群組轉換的資訊，讓您輕鬆比較測試區段的效能。 有許多篩選器和維度可供資料視覺化使用。
 
-[!UICONTROL Audience Lab] 傳回您建立之測試區段的詳細報表資訊，並讓您將報告資料儲存為 [!DNL CSV] 檔案。You can select between **[!UICONTROL Aggregate Reporting]** and **[!UICONTROL Trend Reporting]**.
+[!UICONTROL Audience Lab] 傳回您建立之測試區段的詳細報表資訊，並可讓您將報表資料儲存為 [!DNL CSV] 檔案。 您可以選擇和 **[!UICONTROL Aggregate Reporting]** 之間 **[!UICONTROL Trend Reporting]**。
 
-**[!UICONTROL Aggregate Reporting]** 傳回測試區段的絕對數字。**[!UICONTROL Trend Reporting]** 傳回特定時段趨勢 *的圖表*。有四個標籤可讓您自訂報表：
+**[!UICONTROL Aggregate Reporting]** 傳回測試區段的絕對數。 **[!UICONTROL Trend Reporting]** 傳回特定時段 *的趨勢圖*。 四個標籤可讓您自訂報表：
 
 <table id="table_446384AE9A36408A9C570CB7DB72C3D6"> 
  <thead> 
@@ -29,36 +29,36 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 人口轉換比率</span></b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol"> 人口轉換率</span></b> </p> </td> 
    <td colname="col2"> <p>傳回屬於已轉換之特定測試區段之裝置的百分比。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 轉換器</span></b> </p> </td> 
-   <td colname="col2"> <p>傳回已在測試群組中選取轉換特徵的裝置數目。<a href="https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html" format="https" scope="external"> 觀看此影片</a> 以瞭解如何建立轉化特性。 </p> </td> 
+   <td colname="col2"> <p>傳回已顯示測試群組中選取之轉換特徵的裝置數目。 <a href="https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html" format="https" scope="external"> 觀看此影片</a> ，瞭解如何建立轉換特性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 轉換總數</span></b> </p> </td> 
-   <td colname="col2"> <p>傳回測試區段產生的轉換次數。 </p> </td> 
+   <td colname="col2"> <p>傳回測試區段產生的轉換數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 測試區段人口族群</span></b> </p> </td> 
-   <td colname="col2"> <p>傳回屬於測試區段的裝置數。Toggle between <b><span class="uicontrol"> Total Population</span></b> or <b><span class="uicontrol"> Real-time Population</span></b>. The difference is explained in the <a href="../../faq/faq-reporting.md"> Reporting FAQ</a> . </p> </td>
+   <td colname="col2"> <p>傳回屬於測試區段的裝置數。 在「總 <b><span class="uicontrol"> 人口</span></b> 」或 <b><span class="uicontrol"> 「即時人口」之間切換</span></b>。 差異會在「報告常見問 <a href="../../faq/faq-reporting.md"> 答集」中說明</a> 。 </p> </td>
   </tr>
  </tbody>
 </table>
 
-您可以選取要產生報表的特定轉換特徵，或者選取所有結合的特徵。You can define a date range for which the information should be returned and export the report as a [!DNL CSV] file.
+您可以選取要產生報表的特定轉換特徵，或選取所有結合的特徵。 您可以定義要傳回資訊的日期範圍，並將報表匯出為檔 [!DNL CSV] 案。
 
 >[!NOTE]
 >
->* 測試群組的報告將在其開始日期後的一天填入。
->* 只有在測試開始日期後以及裝置已新增至測試區段後，才會對裝置計數。如果該裝置在指派測試群組之前發生轉換，則不會計算轉換。
+>* 測試群組的報表會在其開始日期後的某一天填入。
+>* 轉換只會在測試開始日期之後以及裝置已新增至測試區段後，計入裝置。 如果該裝置在指派測試群組之前發生轉換，則不會計算轉換。
 
 
-A returned **[!UICONTROL Aggregate Reporting]** chart could look like this:
+傳回的 **[!UICONTROL Aggregate Reporting]** 圖表可能如下所示：
 
 ![](assets/aggregate-reporting.PNG)
 
-A returned **[!UICONTROL Trend Reporting]** chart could look like the one below. Select **[!UICONTROL Normalized]** in the check box if you want to ignore the absolute numbers and simply focus on the test segments trends.
+傳回的 **[!UICONTROL Trend Reporting]** 圖表可能類似於下圖。 如果 **[!UICONTROL Normalized]** 您要忽略絕對數字，並只要專注在測試區段趨勢上，請在核取方塊中選取。
 
 ![](assets/trend-reporting.PNG)
