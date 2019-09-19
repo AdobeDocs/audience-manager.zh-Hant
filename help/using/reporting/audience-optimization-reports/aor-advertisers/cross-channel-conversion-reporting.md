@@ -1,10 +1,10 @@
 ---
-description: 「對象最佳化」報表中的「跨頻道轉換」選項可讓您屬性離線轉換，以提供線上印象或點按。
-seo-description: 「對象最佳化」報表中的「跨頻道轉換」選項可讓您屬性離線轉換，以提供線上印象或點按。
+description: 「對象最佳化」報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
+seo-description: 「對象最佳化」報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
 seo-title: 跨通道轉換
 solution: Audience Manager
 title: 跨通道轉換
-uuid: 0fecec23-e502-490b-b7 dd-47a3753 a3 f75
+uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
@@ -13,15 +13,15 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # 跨通道轉換{#cross-channel-conversion}
 
-「對象最佳化」報表中的「跨頻道轉換」選項可讓您屬性離線轉換，以提供線上印象或點按。
+「對象最佳化」報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
 
-[!UICONTROL Cross Channel Conversion] 報表結合了來自 [!DNL DoubleClick Campaign Manager] (DCM)平台與 [!DNL Audience Manager] 轉換特性的結果。這可讓您將離線轉換連結至線上印象或點按。
+報 [!UICONTROL Cross Channel Conversion] 表會結合來自(DCM)平台 [!DNL DoubleClick Campaign Manager] 的結果與轉換 [!DNL Audience Manager] 特性。 這可讓您將離線轉換連結至線上印象或點按。
 
-You can use the [!UICONTROL Cross Channel Conversion] for the [Segment Performance](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) and [Optimal Frequency](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md) reports.
+您可使用「區 [!UICONTROL Cross Channel Conversion] 段效 [能](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) 」和「最 [佳頻率](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md) 」報表。
 
-To view the [!UICONTROL Cross Channel Conversion] reports, select the **[!UICONTROL AAM+DCM]** item in the **[!UICONTROL Platform]** drop-down list.
+若要檢視 [!UICONTROL Cross Channel Conversion] 報表，請選取下 **[!UICONTROL AAM+DCM]** 拉式清單 **[!UICONTROL Platform]** 中的項目。
 
-The following table lists important considerations when setting up [!UICONTROL Cross Channel Conversion]:
+下表列出了設定時的重要注意事項 [!UICONTROL Cross Channel Conversion]:
 
 <table id="table_62590B4AB7624B619EC9AA8FF89722C9"> 
  <thead> 
@@ -32,28 +32,28 @@ The following table lists important considerations when setting up [!UICONTROL C
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>最低轉換特徵數 </p> </td> 
-   <td colname="col1"> <p>At least one conversion trait must be assigned to a data source in order for the <span class="wintitle"> Cross Channel Conversion</span> reports to run. See <a href="../../../features/traits/create-onboarded-rule-based-traits.md"> Basic Information for Traits</a> for more information on traits. </p> </td> 
+   <td colname="col01"> <p>轉換特徵的最小數目 </p> </td> 
+   <td colname="col1"> <p>至少必須將一個轉換特徵指派給資料來源，才能執行「跨通 <span class="wintitle"> 道轉換</span> 」報表。 如需 <a href="../../../features/traits/create-onboarded-rule-based-traits.md"> 特徵的詳細資訊</a> ，請參閱特徵的基本資訊。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>轉換特徵數目上限 </p> </td> 
-   <td colname="col1"> <p>The reports pull in a <i>maximum</i> of 50 conversion traits from the user. 若您達到最大值，報表會以遞增順序使用前50個基於特徵ID的轉換特性。 </p> </td> 
+   <td colname="col01"> <p>最大轉換特徵數 </p> </td> 
+   <td colname="col1"> <p>報表從使用者 <i>中提取</i> 最多50個轉換特徵。 如果您達到最大值，報表會根據特徵ID，依遞增順序使用前50個轉換特徵。 </p> </td> 
   </tr> 
   <tr> 
    <td> <p>歸因視窗 </p> </td> 
-   <td> <p> <b><span class="uicontrol"> AAM+ DCM</span></b> 歸因視窗為14天，表示只會考慮最近兩周顯示的轉換特性。 </p> </td> 
+   <td> <p> <b><span class="uicontrol"> AAM+DCM歸因視窗為</span></b> 14天，這表示僅會考慮過去兩週所呈現的轉換特性。 </p> </td> 
   </tr> 
   <tr> 
    <td> <p>上次接觸方法 </p> </td> 
-   <td> <p>使用者在轉換之前看過的創意素材就是轉換完成的最後一個。 </p> </td> 
+   <td> <p>使用者在轉換前所見的創意素材是授與轉換的。 </p> </td> 
   </tr> 
   <tr> 
-   <td> <p>點按次數與印象次數 </p> </td> 
-   <td> <p>在決定屬性時，點按優先於印象。例如，在顯示多個創意素材的頁面上，被點按的一個人獲得轉換。 </p> </td> 
+   <td> <p>點按次數與印象 </p> </td> 
+   <td> <p>在決定歸因時，點按優先於曝光（如果是同時發生）。 例如，在顯示多個創作元素的頁面上，點按的創作元素會獲得轉換。 </p> </td> 
   </tr> 
   <tr> 
-   <td> <p>資料最近時 </p> </td> 
-   <td> <p>報表一律會計算前一天可用的資料。 </p> </td> 
+   <td> <p>資料時近 </p> </td> 
+   <td> <p>報表一律會針對前一天的可用資料進行計算。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
