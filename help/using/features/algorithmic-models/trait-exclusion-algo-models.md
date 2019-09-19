@@ -1,54 +1,54 @@
 ---
-description: 特徵排除在模型工作流程中提供額外的控制項，讓您根據網域專業知識和法規要求，新增必要的防護罩邊欄至模型。使用排除選項，選取從一或多個資料來源建立模型時忽略哪些特性。
-seo-description: 特徵排除在模型工作流程中提供額外的控制項，讓您根據網域專業知識和法規要求，新增必要的防護罩邊欄至模型。使用排除選項，選取從一或多個資料來源建立模型時忽略哪些特性。
+description: 「特徵排除」在模型工作流程中提供其他控制項，可讓您根據您的網域專業知識和法規要求，在模型中新增必要的防護欄。 使用「排除」選項，選取從一或多個資料來源建立模型時要忽略的特徵。
+seo-description: 「特徵排除」在模型工作流程中提供其他控制項，可讓您根據您的網域專業知識和法規要求，在模型中新增必要的防護欄。 使用「排除」選項，選取從一或多個資料來源建立模型時要忽略的特徵。
 seo-title: 演算法模型特徵排除
 title: 演算法模型特徵排除
-uuid: 1359800b-6e6c-41b4-28b4-23d31952abb3
+uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
 source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
 
 ---
 
 
-# Algorithmic Models: Trait Exclusion {#algorithmic-models-trait-exclusion}
+#  演算法模型：特徵排除 {#algorithmic-models-trait-exclusion}
 
-[!UICONTROL Trait Exclusion] 在模型工作流程中提供額外的控制項，讓您根據網域專業知識和法規需求，新增必要的防護罩至模型。Use the [!UICONTROL Exclusions] option to select which traits to ignore when creating models from one or more data sources.
+[!UICONTROL Trait Exclusion] 在模型工作流程中提供額外的控制項，讓您根據您的領域專業知識和法規要求，將必要的防護欄加入模型。 使用選 [!UICONTROL Exclusions] 項，在從一或多個資料來源建立模型時，選取要忽略哪些特徵。
 
 ## 使用個案 {#use-cases}
 
-Here are some use cases you can address with [!UICONTROL Trait Exclusion]:
+以下是您可處理的一些使用案例 [!UICONTROL Trait Exclusion]:
 
-* [!UICONTROL Trait Exclusion] 可讓您排除某些特定的特徵(例如網站訪客特徵)，因此不會對模型造成偏差，導致結果持平。
-* 您可以移除不知道或不信任資料來源的特性，從而更好地理解有影響力的特徵。
-* 您可以排除特定特徵(如人口統計特徵)，以協助您承擔任何符合規範的義務。
+* [!UICONTROL Trait Exclusion] 可讓您排除特定的全面性特徵，例如網站訪客特徵，因此您不會偏倚模型，導致平坦結果。
+* 您可以從資料來源移除您不知道或不信任的特徵，以便更好地瞭解這些具影響力的特徵。
+* 您可以排除某些特徵（例如人口特徵），以協助您履行任何可能的合規義務。
 
 >[!IMPORTANT]
 >
->第三個使用案例的重要附註。If the third-party data provider adds a new demographic trait to the data feed *after you created the model*, the trait is automatically picked up by the model. 建立模型後，無法排除模型中的特徵。See [Important Aspects &amp; Limitations](../../features/algorithmic-models/trait-exclusion-algo-models.md#important-aspects-and-limitations). 請小心使用此功能，並與資料供應商合作，以確認動態消息結構有任何變更。
+>關於第三個使用案例的重要說明。 如果協力廠商資料提供者在您建立模型後，將新的人口統計特徵新 *增至資料饋送*，則模型會自動擷取該特徵。 建立模型後，您無法從模型中排除特徵。 請參 [閱重要方面和限制](../../features/algorithmic-models/trait-exclusion-algo-models.md#important-aspects-and-limitations)。 使用此功能時請務必小心，並與資料提供者合作，以確保您得知動態消息結構有任何變更。
 
 ![](assets/lam_exclude_traits.png)
 
-## How to Use Trait Exclusions {#how-to-use}
+## 如何使用特徵排除 {#how-to-use}
 
-Use the [Build a model](../../features/algorithmic-models/create-model.md#build-model) workflow to build new algorithmic models.
+使用「建 [立模型」工作流程](../../features/algorithmic-models/create-model.md#build-model) ，建立新的演算模型。
 
-1. [!UICONTROL Exclusions] 選取一或多個用於模型的資料來源後，選取範圍就會變灰。
-2. After selecting one or more data sources for modeling, press **[!UICONTROL Browse All Traits]**.
-3. **[!UICONTROL Select Traits to Exclude]** 在視窗中，您可以查看與先前所選資料來源相關的所有特性。選取要排除的特徵。
-4. 您可以依特徵類型來篩選特徵，也可以瀏覽特徵資料夾。請注意，特徵資料夾只會顯示與您所選資料來源相關聯的特性。
+1. 在您 [!UICONTROL Exclusions] 選取一或多個資料來源進行模型建立之前，選取範圍會變灰。
+2. 在選取一或多個資料來源進行模型建立後，請按 **[!UICONTROL Browse All Traits]**。
+3. 在視窗 **[!UICONTROL Select Traits to Exclude]** 中，您可以看到與先前選取的資料來源相關聯的所有特徵。 選取您要排除的特徵。
+4. 您可以依特徵類型篩選特徵，或瀏覽特徵資料夾。 請注意，特徵資料夾只會顯示與您選取資料來源相關的特徵。
 5. Press **[!UICONTROL Exclude Selected Traits]**.
 
 >[!TIP]
 >
->您可以排除資料夾特徵來排除整個資料夾，而不是逐一排除資料夾中的特徵。例如，在具有20個特徵的檔案夾中，您只需要排除資料夾特徵，而不會逐一排除所有特徵。
+>您可以逐個排除資料夾特徵，而不是排除資料夾中的特徵，以排除整個資料夾。 例如，在具有20個特徵的資料夾中，您只需要排除資料夾特徵，而不需逐一排除所有特徵。
 
-如果您偏好教學課程影片，請觀看我們的「特徵排除」影片展示：
+如果您偏好視訊教學課程，請觀看我們的「特徵排除」視訊示範：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25569/?quality=12&captions=chi_hant)
 
-## Important Aspects &amp; Limitations {#important-aspects-and-limitations}
+## 重要方面與限制 {#important-aspects-and-limitations}
 
-Please take note of the following aspects and limitations related to [!UICONTROL Trait Exclusion]:
+請注意以下相關方面和限制 [!UICONTROL Trait Exclusion]:
 
 <table id="table_BA5C3545BC9E4717BD567B00C803AA53"> 
  <thead> 
@@ -59,28 +59,28 @@ Please take note of the following aspects and limitations related to [!UICONTROL
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>模型摘要檢視中排除的特性 </p> </td>
-   <td colname="col2"> <p>The excluded traits <i>do not show up</i> in the Models Summary view. You can see the excluded traits only in the <b><span class="uicontrol"> Edit Model</span></b> workflow. </p> </td>
+   <td colname="col1"> <p>模型摘要檢視中排除的特徵 </p> </td>
+   <td colname="col2"> <p>排除的特 <i>徵不會顯示在</i> 「模型摘要」檢視中。 您只能在「編輯模型」工作流程中看到排 <b><span class="uicontrol"> 除的特徵</span></b> 。 </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p>角色存取控制(RBAC) </p> </td>
-   <td colname="col2"> <p>Note the following limitations for companies using <a href="../../features/administration/administration-overview.md#administration"> RBAC</a>: </p> <p>
+   <td colname="col1"> <p>基於角色的訪問控制(RBAC) </p> </td>
+   <td colname="col2"> <p>請注意使用 <a href="../../features/administration/administration-overview.md#administration"> RBAC的公司的下列限制</a>: </p> <p>
      <ul id="ul_38A4056C235B428C822EA4A353893786"> 
-      <li id="li_2624FB35581F4807B8530910D63FFDBF">If you don't have access to view a trait, you <i>cannot</i> select that trait to be excluded from the model. </li>
-      <li id="li_3FD7A12AAAA8462EA84A760C05F20379">If you don't have access to view a trait, you <i>cannot</i> view that trait in the excluded traits list. </li>
+      <li id="li_2624FB35581F4807B8530910D63FFDBF">如果您沒有檢視特徵的存取權，則無 <i>法</i> 選取要從模型中排除的特徵。 </li>
+      <li id="li_3FD7A12AAAA8462EA84A760C05F20379">如果您沒有檢視特徵的存取權，則無法 <i>在排除的</i> 特徵清單中檢視該特徵。 </li>
      </ul> </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p>在儲存模型後修改排除的特性 </p> </td>
-   <td colname="col2"> <p>建立並儲存模型後，無法修改排除的特性。如果您想要調整結果，可以複製模型並變更排除的特性。 </p> </td>
+   <td colname="col1"> <p>在儲存模型後修改排除的特徵 </p> </td>
+   <td colname="col2"> <p>在建立並保存模型後，不能修改排除的特徵。 如果您想要調整結果，可以仿製模型並變更排除的特徵。 </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p>可排除的最大特徵數 </p> </td>
-   <td colname="col2"> <p>可從模型排除的特性上限為500。使用資料夾特性以最大化您的排除。 </p> </td>
+   <td colname="col1"> <p>可排除的特徵數上限 </p> </td>
+   <td colname="col2"> <p>可從模型中排除的特徵數上限為500。 使用資料夾特徵來最大化排除。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p>排除基準特徵 </p> </td>
-   <td colname="col2"> <p>The baseline trait is excluded by default, so it does not show up in the <b><span class="uicontrol"> Exclusions</span></b> list, when building the model. </p> </td>
+   <td colname="col2"> <p>基線特徵預設會排除，因此在建立模型時不會顯示在 <b><span class="uicontrol"> Exclusions</span></b> 清單中。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -88,4 +88,4 @@ Please take note of the following aspects and limitations related to [!UICONTROL
 ## 相關連結
 
 * [關於演算法特徵](/help/using/features/algorithmic-models/understanding-models.md)
-* [特徵排除-教學課程](https://helpx.adobe.com/audience-manager/kt/using/excluding-traits-look-alike-model-feature-video-use.html)
+* [特徵排除——教學課程](https://helpx.adobe.com/audience-manager/kt/using/excluding-traits-look-alike-model-feature-video-use.html)
