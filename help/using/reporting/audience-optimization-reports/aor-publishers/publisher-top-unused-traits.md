@@ -1,49 +1,49 @@
 ---
-description: 「熱門未使用的特徵」會以特徵類型、資料來源和效能的形式，呈現為尚未成員成員的特徵散布圖。
-seo-description: 「熱門未使用的特徵」會以特徵類型、資料來源和效能的形式，呈現為尚未成員成員的特徵散布圖。
-seo-title: 未使用的特徵
+description: 「最上方未使用的特徵」會根據特徵類型、資料來源和效能，以尚未成為群體成員的特徵散布圖表示。
+seo-description: 「最上方未使用的特徵」會根據特徵類型、資料來源和效能，以尚未成為群體成員的特徵散布圖表示。
+seo-title: 最常未使用的特性
 solution: Audience Manager
-title: 未使用的特徵
-uuid: 90bcd333-41b8-416e-aa4 e-a8661891 df50
+title: 最常未使用的特性
+uuid: 90bcd33-41b8-416e-aa4e-a8661891df50
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Top Unused Traits{#top-unused-traits}
+# 最常未使用的特性{#top-unused-traits}
 
-「熱門未使用的特徵」會以特徵類型、資料來源和效能的形式，呈現為尚未成員成員的特徵散布圖。
+「最上方未使用的特徵」會根據特徵類型、資料來源和效能，以尚未成為群體成員的特徵散布圖表示。
 
 ## 使用案例 {#use-cases}
 
-With the [!UICONTROL Top Unused Traits] report, you can analyze and compare the performance of first and third party traits that are currently not mapped to a segment. 此檢視可指出在促銷活動最佳化或新商機中使用受眾群體的最佳特徵。
+透過報 [!UICONTROL Top Unused Traits] 表，您可以分析並比較目前未對應至區段的第一方和第三方特徵的效能。 此檢視可指出受眾群體中用於促銷活動最佳化或淨化新商機的最佳特徵。
 
-## Using the Top Unused Traits Report {#using-the-report}
+## 使用排名最前的未使用特徵報表 {#using-the-report}
 
-Use the **[!UICONTROL Data Provider Type]** controls to toggle between first party and third party traits. Select **[!UICONTROL All]** to return first and third party traits in the report.
+使用控 **[!UICONTROL Data Provider Type]** 制項在第一方和第三方特徵之間切換。 選取 **[!UICONTROL All]** 以傳回報表中的第一方和第三方特徵。
 
-With the **[!UICONTROL Impressions]** slider, you can select a minimum and maximum value for returned impressions. 任何負責小於或超過所設定限制的特徵，都不會顯示在報表中。
+使用滑 **[!UICONTROL Impressions]** 桿，您可以為傳回的印象選取最小和最大值。 任何對您設定的限制負責或超過的特徵，都不會顯示在報表中。
 
-Use the **[!UICONTROL Day Range]** and **[!UICONTROL Date Through]** controls to adjust your look-back range. 請注意，此報表只能使用30天回顧期間。
+使用 **[!UICONTROL Day Range]** 和 **[!UICONTROL Date Through]** 控制項來調整回顧範圍。 請注意，此報表僅提供30天回顧期。
 
-Use the **[!UICONTROL Order]** drop-down box to select the web properties in your portfolio for which you want to return information.
+使用下 **[!UICONTROL Order]** 拉式方塊，在您要傳回資訊的作品集中選取Web屬性。
 
-In the **[!UICONTROL Data Provider]** drop-down box, select the data sources containing the traits you want to see in the report.
+在下拉 **[!UICONTROL Data Provider]** 式方塊中，選取包含您要在報表中查看之特徵的資料來源。
 
-Use the **[!UICONTROL Traits]** drop-down box to select which traits you want to see in the report.
+使用下 **[!UICONTROL Traits]** 拉式方塊來選取您要在報表中看到哪些特徵。
 
 >[!IMPORTANT]
 >
->When enabling [!UICONTROL Audience Optimization for Publishers], you must include descriptive metadata for [!UICONTROL Order IDs], as described in Step 3 of [Import DFP Data Files Into Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). By doing this, you assure that the report details the web property as [!UICONTROL Order] instead of the [!UICONTROL Order ID].
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Order IDs]如將DFP資料檔案匯 [入Audience manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Order] Web屬性的形式詳細說明 [!UICONTROL Order ID]。
 
-## Interpreting the Results {#interpreting-results}
+## 解讀結果 {#interpreting-results}
 
 **範例報表**
 
-[!UICONTROL Top Unused Traits] 您的報表看起來類似下方的報表。在報表中，按一下泡泡以檢視基礎資料。
+您 [!UICONTROL Top Unused Traits] 的報表看起來可能類似以下。 在報表中，按一下泡泡以檢視基礎資料。
 
-如需範例報表下表格中其他資訊的詳細資訊，請參閱說明。
+請參閱範例報表下表格中的其他資訊說明。
 
 ![](assets/publisher_unused_traits.png)
 
@@ -56,8 +56,8 @@ Use the **[!UICONTROL Traits]** drop-down box to select which traits you want to
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 資料供應商類型</span> </p> </td> 
-   <td colname="col2"> <p>指定選取的資料來源是否包含第一方或第三方特徵。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 資料提供者類型</span> </p> </td> 
+   <td colname="col2"> <p>指定所選資料源是包含第一方特徵還是包含第三方特徵。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 特徵ID</span> </p> </td> 
@@ -65,54 +65,54 @@ Use the **[!UICONTROL Traits]** drop-down box to select which traits you want to
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 特徵名稱</span> </p> </td> 
-   <td colname="col2"> <p>您或指派給此特徵的資料提供者的英數名稱。 </p> </td> 
+   <td colname="col2"> <p>您或指派給此特徵的資料提供者的英數字名。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 訂購</span> </p> </td> 
-   <td colname="col2"> <p>您看到此報表的Web屬性。 </p> </td> 
+   <td colname="col2"> <p>您正看到此報表的Web屬性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 曝光數</span> </p> </td> 
-   <td colname="col2"> <p>此特性對您庫存的成員次數。 </p> </td> 
+   <td colname="col2"> <p>此特徵的成員接觸庫存的次數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 特徵獨特</span> </p> </td> 
-   <td colname="col2"> <p>特徵成員的數目，在最近30天內。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 特徵獨特值</span> </p> </td> 
+   <td colname="col2"> <p>過去30天內的特徵成員數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ![](assets/publisher_unused_traits_final.png)
 
-您在報表中的特性位置可以告訴您哪些特性可用來最佳化現有受眾群體。
+您的特徵在報表中的位置可以告訴您許多關於哪些特徵可用於最佳化現有受眾細分的資訊。
 
-位置軸上較高的特徵，就是您要在促銷活動中使用的屬性。對於低曝光次數的特徵，根據您的DFP資料，您不太可能在Web屬性上覆蓋此對象。
+位於「印象」軸上方的特徵是您要在促銷活動中使用的特徵。 對於印象少的特徵，根據您的DFP資料，您不太可能在Web屬性上觸及到此對象。
 
-Look to the left of the [!UICONTROL Unique Trait Realizations] axis for highly accurate traits and to the right for traits that can drive scale.
+請向左看軸以取得高 [!UICONTROL Unique Trait Realizations] 度精確的特徵，向右看可驅動比例的特徵。
 
 <table id="table_A29253B30DFA4CD7B3B7C320DE0BDEA4"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 位置 </th> 
-   <th colname="col2" class="entry"> 位置指出 </th> 
+   <th colname="col2" class="entry"> 位置指示 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>左上方</b> </p> </td> 
-   <td colname="col2"> <p>曝光次數很多，特徵實實度很低。 </p> <p>這是高精確受眾，目前尚未成為區段成員。考慮定位。 </p> </td> 
+   <td colname="col1"> <p> <b>左上角</b> </p> </td> 
+   <td colname="col2"> <p>曝光次數多、特徵實現次數少。 </p> <p>此為非區段成員的高精確受眾。 考慮定位。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>左下角</b> </p> </td> 
-   <td colname="col2"> <p>印象次數偏低，特徵實實度低。 </p> <p> 排除這些特性，因為成員不會對網站屬性的印象造成影響。 </p> </td> 
+   <td colname="col2"> <p>印象少，特徵實現少。 </p> <p> 排除這些特徵，因為成員不會對您的Web屬性上的印象產生影響。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>右上角</b> </p> </td> 
-   <td colname="col2"> <p>曝光次數很高，特徵實作數高。 </p> <p>對尚未在區段中表示的對象進行高觸及。由於印象和規模的數目很高，這群對象是定位的主要候選對象。 </p> </td> 
+   <td colname="col1"> <p> <b>右上方</b> </p> </td> 
+   <td colname="col2"> <p>印象多、特徵實現多。 </p> <p>對尚未在區段中標示的觀眾的高覆蓋率。 由於曝光次數和規模龐大，此對象是鎖定目標的最佳候選對象。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>右下方</b> </p> </td> 
-   <td colname="col2"> <p>印象次數偏低，特徵實實化。 </p> <p> 您可以排除這些特性，因為成員不會對網站屬性的印象造成影響。 </p> </td> 
+   <td colname="col1"> <p> <b>右下角</b> </p> </td> 
+   <td colname="col2"> <p>印象少，特徵實現多。 </p> <p> 您可以排除這些特徵，因為成員不會對Web屬性上的印象有所貢獻。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
