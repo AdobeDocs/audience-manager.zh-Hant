@@ -1,10 +1,10 @@
 ---
-description: 說明通用平台層級金鑰-值配對，您可使用此配對來定位使用者管理員帳戶中所有屬性的裝置相關變數。
-seo-description: 說明通用平台層級金鑰-值配對，您可使用此配對來定位使用者管理員帳戶中所有屬性的裝置相關變數。
-seo-title: 使用平台層級密鑰進行裝置定位
+description: 說明您可用來在Audience manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
+seo-description: 說明您可用來在Audience manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
+seo-title: 使用平台層級的金鑰進行裝置定位
 solution: Audience Manager
-title: 使用平台層級密鑰進行裝置定位
-uuid: bc048cc5-3df1-49bc-ac78-0ea5 d7 edd9 cc
+title: 使用平台層級的金鑰進行裝置定位
+uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
@@ -13,17 +13,17 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # Device Targeting With Platform-level Keys {#device-targeting-with-platform-level-keys}
 
-說明通用平台層級金鑰-值配對，您可使用此配對來定位使用者管理員帳戶中所有屬性的裝置相關變數。
+說明您可用來在Audience manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
 
-## Purpose of Platform-level Variables {#platform-variables}
+## 平台層級變數的用途 {#platform-variables}
 
 <!-- c_tb_device_targeting.xml -->
 
-Platform-level variables let you take data passed in from a particular site and make it available for targeting across all the properties in your [!DNL Audience Manager] account. These variables are formed by [key-value pairs](../../reference/key-value-pairs-explained.md) with the key prefixed by `d_` as shown below.
+平台層級變數可讓您從特定網站傳入資料，並讓其適用於帳戶中所有屬性的定 [!DNL Audience Manager] 位。 這些變數由鍵值 [配對組成](../../reference/key-value-pairs-explained.md) ，鍵前置詞 `d_` 如下所示。
 
-## Platform-level Keys Defined by User Agent {#keys-user-agent}
+## 由用戶代理定義的平台級密鑰 {#keys-user-agent}
 
-[!UICONTROL Data Collection Servers] 從請求中 [的使用者代理標題](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43) 擷取這些索引鍵 `HTTP` 的值。The values represent device-level information from the [!UICONTROL Device Atlas] database. 下表中的訊號可從使用者代理範例中取得。[根據測量，下載最常用的索引鍵](assets/device_keys.csv)[!UICONTROL Device Atlas] 清單。
+從 [!UICONTROL Data Collection Servers] 請求中的使用者代理標 [題擷取這些索引鍵](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)`HTTP` 的值。 這些值代表來自資料庫的設備級 [!UICONTROL Device Atlas] 資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清單 [!UICONTROL Device Atlas] 中。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -41,9 +41,9 @@ Platform-level variables let you take data passed in from a particular site and 
 
 >[!NOTE]
 >
->Even if one or more signals cannot be retrieved from the user agent header, the other signals will still be passed to the [!UICONTROL Data Collection Servers].
+>即使一個或多個信號無法從用戶代理報頭中檢索，其它信號仍將傳遞給 [!UICONTROL Data Collection Servers]。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [關鍵變數的首碼需求](../../features/traits/trait-variable-prefixes.md)
+>* [關鍵變數的前置詞要求](../../features/traits/trait-variable-prefixes.md)
 
