@@ -1,37 +1,37 @@
 ---
-description: Audience Manager需要使用HTTP伺服器對伺服器要求，以進行有效性的數位簽署。本文件說明如何使用私密金鑰簽署HTTP請求。
-seo-description: Audience Manager需要使用HTTP伺服器對伺服器要求，以進行有效性的數位簽署。本文件說明如何使用私密金鑰簽署HTTP請求。
-seo-title: 數位簽署HTTP要求
+description: Audience manager需要以數位方式簽署HTTP伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP要求。
+seo-description: Audience manager需要以數位方式簽署HTTP伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP要求。
+seo-title: 數位簽署的HTTP要求
 solution: Audience Manager
-title: 數位簽署HTTP要求
-uuid: 1183a70f-0c96-42cf-a4 f5-37a83 ffa1286
+title: 數位簽署的HTTP要求
+uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 translation-type: tm+mt
 source-git-commit: 9bf1f3771b6a4b9bb9a52149e812b37d1c8e27f8
 
 ---
 
 
-# Digitally Signed `HTTP` Requests {#digitally-signed-http-requests}
+# 數位簽署的 `HTTP` 請求 {#digitally-signed-http-requests}
 
-Audience Manager requires the `HTTP` server-to-server requests to be digitally signed for validity. This document describes how you can sign `HTTP` requests with private keys.
+Audience manager需要 `HTTP` 以數位方式簽署伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金鑰 `HTTP` 簽署要求。
 
 ## 概述 {#overview}
 
 <!-- digitally_signed_http_requests.xml -->
 
-Using a private key provided by you and shared with [!DNL Audience Manager], we can digitally sign the `HTTP` requests that are sent between [IRIS](../../../reference/system-components/components-data-action.md#iris) and your HTTP server. 如此可確保：
+使用您提供的私密金鑰並與共用 [!DNL Audience Manager]，我們可以數位簽署 `HTTP` IRIS [和HTTP伺服器](../../../reference/system-components/components-data-action.md#iris) 之間傳送的請求。 這可確保：
 
-* **真實性**：只有具有私密金鑰([!UICONTROL IRIS])的傳送者才能傳送有效 `HTTP(S)` 訊息給合作夥伴。
-* **訊息完整性**：使用此方法，即使在 `HTTP`訊息被扭曲的中間攻擊中，您仍能保護您的安全。
+* **真實性**:只有具有私密金鑰的傳送者([!UICONTROL IRIS])才能傳送有 `HTTP(S)` 效訊息給合作夥伴。
+* **消息完整性**:使用這種方法，即使 `HTTP`是這樣，您也能免受中間攻擊中的人的攻擊，而資訊會被扭曲。
 
-[!UICONTROL IRIS] 具有內建支援，可將按鍵旋轉為零， [如旋轉私密金鑰](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md#rotate-private-key) 區段中所示。
+[!UICONTROL IRIS] 已內建支援在無停機情況下旋轉密鑰，如下方「旋轉私 [密密鑰](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md#rotate-private-key) 」部分所示。
 
-## Information you need to provide {#info-to-provide}
+## 您需要提供的資訊 {#info-to-provide}
 
-For an `HTTP` real-time server-to-server destination, contact your [!DNL Audience Manager] consultant and specify:
+若為即 `HTTP` 時伺服器對伺服器目標，請連絡您的顧問並 [!DNL Audience Manager] 指定：
 
-* 用來簽署請求的索引鍵。
-* `HTTP` 將在下方標題標題中放置產生簽名(X-Signature)的標題名稱。
+* 用來簽署請求的金鑰。
+* 將保存生 `HTTP` 成簽名的標題的名稱（下方標題中的X-Signature）。
 * 可選：用於簽名的雜湊類型(md5、sha1、sha256)。
 
 ```
@@ -47,19 +47,19 @@ POST message content
 
 ## How it works {#how-it-works}
 
-1. [!UICONTROL IRIS] 建立要傳送 `HTTP` 給合作夥伴的訊息。
-1. [!UICONTROL IRIS] 根據 `HTTP` 訊息和合作夥伴傳達的私密金鑰建立簽名。
-1. [!UICONTROL IRIS] 將 `HTTP(S)` 請求傳送給合作夥伴。此訊息包含簽名和實際訊息，如上述範例所示。
-1. The partner server receives the `HTTP(S)` request. It reads the message body and the signature received from [!UICONTROL IRIS].
-1. 合作夥伴伺服器會根據接收的訊息內文和私密金鑰重新計算簽名。See the [How to calculate the signature](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md#calculate-signature) section just below on how to achieve this.
-1. Compare the signature created on the partner server (receiver) with the one received from [!UICONTROL IRIS] (sender).
-1. If the signatures match, then the **authenticity** and **message integrity** have been validated. 只有具有私密金鑰的傳送者才能傳送有效的簽名(真實性)。此外，中間的男性無法修改訊息並產生新的有效簽名，因為他們沒有私密金鑰(訊息完整性)。
+1. [!UICONTROL IRIS] 建立要 `HTTP` 發送給合作夥伴的消息。
+1. [!UICONTROL IRIS] 根據該訊息和該合作伙 `HTTP` 伴所傳送的私密金鑰建立簽名。
+1. [!UICONTROL IRIS] 將請求 `HTTP(S)` 發送給合作夥伴。 此消息包含簽名和實際消息，如上例所示。
+1. 合作夥伴伺服器會接收 `HTTP(S)` 請求。 它讀取消息正文和從中接收的簽名 [!UICONTROL IRIS]。
+1. 合作夥伴伺服器根據收到的消息正文和私鑰重新計算簽名。 請參 [閱下方的How to calculate the signature](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md#calculate-signature) section，瞭解如何達成此目標。
+1. 比較在合作夥伴伺服器（接收者）上建立的簽名與從（傳送者）收 [!UICONTROL IRIS] 到的簽名。
+1. 如果簽名匹配，則驗證 **真實性****和消息** 完整性。 只有擁有私密金鑰的傳送者才能傳送有效的簽名（真實性）。 此外，中間人無法修改消息並生成新的有效簽名，因為他們沒有私鑰（消息完整性）。
 
 ![](assets/iris-digitally-sign-http-request.png)
 
-## How to calculate the signature {#calculate-signature}
+## 如何計算簽名 {#calculate-signature}
 
-[!DNL HMAC] (雜湊訊息驗證碼)是用於訊息簽署 [!UICONTROL IRIS] 的方法。建置和程式庫基本上都以每種程式設計語言提供。[!DNL HMAC] 沒有已知的擴充功能攻擊。See an example in [!DNL Java] below:
+[!DNL HMAC] （基於散列的消息驗證代碼）是消息簽名 [!UICONTROL IRIS] 的方法。 基本上每個程式設計語言都提供實作和程式庫。 [!DNL HMAC] 沒有已知的分機攻擊。 請參閱下列范 [!DNL Java] 例：
 
 ```
 // Message to be signed.
@@ -82,19 +82,19 @@ String signature = Base64.encodeBase64String(result).trim();
 // signature = +wFdR/afZNoVqtGl8/e1KJ4ykPU=
 ```
 
-[!DNL HMAC] 雜湊實作的RFC是 [https://www.ietf.org/rfc/rfc2104.txt](https://www.ietf.org/rfc/rfc2104.txt)的。A test site: [https://asecuritysite.com/encryption/hmac](https://asecuritysite.com/encryption/hmac) (note that you have to [convert](https://tomeko.net/online_tools/hex_to_base64.php?lang=en) the hex encoding to base64).
+散列實施的RFC [!DNL HMAC] 是 [https://www.ietf.org/rfc/rfc2104.txt](https://www.ietf.org/rfc/rfc2104.txt)。 測試網站： [https://asecuritysite.com/encryption/hmac](https://asecuritysite.com/encryption/hmac) (請注意，您必須將 [十六進位編碼轉](https://tomeko.net/online_tools/hex_to_base64.php?lang=en) 換為base64)。
 
-## Rotating the private key {#rotate-private-key}
+## 旋轉私密金鑰 {#rotate-private-key}
 
-基於安全理由，建議定期旋轉私密金鑰。您需要決定私密金鑰和旋轉期間。In order to achieve the key rotation with zero downtime, [!UICONTROL IRIS] supports adding multiple signature headers. 一個標題包含使用舊金鑰產生的簽名，另一個標題將包含使用新私密金鑰產生的簽名。詳細檢視下列步驟：
+出於安全考慮，建議定期旋轉私密金鑰。 由您決定私密金鑰和旋轉期間。 為了在零停機時實現密鑰輪替，支援 [!UICONTROL IRIS] 添加多個簽名標頭。 一個標題將包含舊金鑰產生的簽名，另一個標題將包含使用新私密金鑰產生的簽名。 請參閱以下步驟：
 
-1. Partner communicates the new private key to [!DNL Adobe Audience Manager].
-1. [!UICONTROL IRIS] 會開始傳送兩個簽名標題(一個使用舊金鑰，另一個使用新金鑰)。
-1. 當您開始接收兩個標題後，您可以選擇捨棄舊金鑰，只看得到新簽名。
-1. The old key is removed from [!DNL Audience Manager] and [!UICONTROL IRIS] only sends the new signature header. 按鍵已旋轉。
+1. 合作夥伴會將新的私密金鑰通訊給 [!DNL Adobe Audience Manager]您。
+1. [!UICONTROL IRIS] 將開始傳送兩個簽名標題（一個使用舊金鑰，另一個使用新金鑰）。
+1. 在您開始收到兩個標題後，可以選擇捨棄舊金鑰，只查看新簽名。
+1. 舊金鑰會從中移除， [!DNL Audience Manager] 且只 [!UICONTROL IRIS] 會傳送新的簽名標題。 鍵已旋轉。
 
-## Data used for signing {#data-signing}
+## 用於簽署的資料 {#data-signing}
 
-`GET` 對於類型目的地，用於簽署的訊息將是 *REQUEST_ PATH+ QUERY StrING* (例如 */from-aam-s2s？sids=1,2，* 3)。IRIS does not take into account the hostname or `HTTP` headers - these can be modified / misconfigured along the path or reported incorrectly.
+對於 `GET` 類型目標，用於簽署的訊息將是 *REQUEST_PATH + QUERY STRING* (例如 */from-aam-s2s?sids=1,2,3*)。 IRIS不會考慮主機名稱或標題 `HTTP` -這些名稱可沿路徑修改／設定錯誤，或報告錯誤。
 
-`POST` 對於類型目的地，用於簽署的訊息是 *請求主體*。同樣地，會忽略標題或其他請求參數。
+對於 `POST` 類型目標，用於簽署的訊息是 *REQUEST BODY*。 同樣地，標題或其他請求參數也會被忽略。
