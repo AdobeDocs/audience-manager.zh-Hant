@@ -1,9 +1,9 @@
 ---
-description: 此項整合可讓您將Audience Manager區段傳送至Target。
-seo-description: 此項整合可讓您將Audience Manager區段傳送至Target。
-seo-title: 整合Audience Manager與Target
+description: 此整合可讓您傳送Audience manager區段至Target。
+seo-description: 此整合可讓您傳送Audience manager區段至Target。
+seo-title: 將Audience manager與Target整合
 solution: Audience Manager
-title: 整合Audience Manager與Target
+title: 將Audience manager與Target整合
 uuid: c5ca2101-99fb-4178-9839-3ec5b605c040
 translation-type: tm+mt
 source-git-commit: b54146cdc2e60215c951bd6a1bed7a830400bfb7
@@ -11,15 +11,15 @@ source-git-commit: b54146cdc2e60215c951bd6a1bed7a830400bfb7
 ---
 
 
-# Integrate Audience Manager With Target {#integrate-audience-manager-with-target}
+# 將Audience manager與Target整合 {#integrate-audience-manager-with-target}
 
-This integration lets you send Audience Manager segments to Adobe [!DNL Target].
+此整合可讓您傳送Audience manager區段至Adobe [!DNL Target]。
 
-An Audience Manager - [!DNL Target] integration requires:
+Audience Manager —— 整合 [!DNL Target] 需要：
 
-* [Experience Cloud服務](https://marketing.adobe.com/resources/help/en_US/mcvid/)。If you're not using this service, see the [implementation guides](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html) to get started.
-* 設定檔與受眾. If you're not provisioned for Profiles and Audiences, complete the form on the [Experience Cloud Integrations page](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) or contact your consultant to get started.
+* Experience [Cloud服務](https://marketing.adobe.com/resources/help/en_US/mcvid/)。 如果您不使用此服務，請參閱實 [施指南](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html) ，以開始使用。
+* 設定檔與受眾. 如果您未布建設定檔和觀眾，請填妥 [Experience cloud整合頁面上的表格](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) ，或聯絡您的顧問以開始使用。
 
-All of your Audience Manager segments will appear in [!DNL Target] shortly after you complete these steps in the implementation process. Look in **[!UICONTROL Audiences > Audience List]** to see your Audience Manager segments in [!DNL Target].
+在您完成實施程式中的這些步驟 [!DNL Target] 後，您的所有Audience manager細分將會在不久後顯示。 請在中 **[!UICONTROL Audiences > Audience List]** 檢視您的Audience manager細分 [!DNL Target]。
 
 ![](../assets/target.png)
