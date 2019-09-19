@@ -1,30 +1,30 @@
 ---
-description: ID服務客戶應參閱本節，以瞭解如何讀取訪客Cookie以進行DCS API呼叫所需的訪客Cookie。
-seo-description: ID服務客戶應參閱本節，以瞭解如何讀取訪客Cookie以進行DCS API呼叫所需的訪客Cookie。
+description: ID服務客戶應參閱本節，以取得如何讀取訪客Cookie，以取得進行DCS API呼叫所需ID的資訊。
+seo-description: ID服務客戶應參閱本節，以取得如何讀取訪客Cookie，以取得進行DCS API呼叫所需ID的資訊。
 seo-title: 透過Experience Cloud ID服務取得使用者ID和地區
 solution: Audience Manager
 title: 透過Experience Cloud ID服務取得使用者ID和地區
-uuid: 80de6cf2-5d9e-4ef8-a0 f2-d53 b5 d574 c89
+uuid: 80de6cf2-5d9e-4ef8-a0f2-d53b5d574c89
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Get User IDs and Regions Through the Experience Cloud ID Service {#get-user-ids-and-regions-through-the-experience-cloud-id-service}
+# 透過Experience Cloud ID服務取得使用者ID和地區 {#get-user-ids-and-regions-through-the-experience-cloud-id-service}
 
-ID service customers should refer to this section for information on how to read the visitor cookie for the IDs required to make [!UICONTROL DCS] API calls.
+ID服務客戶應參閱本節，以取得如何讀取訪客Cookie，以取得進行 [!UICONTROL DCS] API呼叫所需ID的資訊。
 
-## Get the User ID from the ID Service Cookie {#get-user-ids-from-service-cookie}
+## 從ID服務Cookie取得使用者ID {#get-user-ids-from-service-cookie}
 
-[Experience Cloud ID服務會](https://marketing.adobe.com/resources/help/en_US/mcvid/) 指派訪客和地區ID給來到您網站的使用者。These IDs identify users across all the solutions in the [!DNL Experience Cloud] and they are required if you want to make [!UICONTROL DCS] calls.
+Experience Cloud [ID服務會將訪客和地區](https://marketing.adobe.com/resources/help/en_US/mcvid/) ID指派給來到您網站的使用者。 這些ID可識別中所有解決方案的使 [!DNL Experience Cloud] 用者，如果您想進行呼叫，則需要 [!UICONTROL DCS] 他們。
 
-* The [!UICONTROL user ID] is required to identify and associate data with a particular visitor.
-* The [!UICONTROL region ID] is required because it is tied to a regional server name, which you need to send data to the [!UICONTROL DCS]. The [!UICONTROL DCS] stores information in data centers that are geographically closest to site visitors. 請參閱 [DCS 地區 ID、位置與主機名稱](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
+* 必 [!UICONTROL user ID] 須識別資料並與特定訪客建立關聯。
+* 此為 [!UICONTROL region ID] 必要項，因為它與地區性伺服器名稱相關聯，您需要將資料傳送至 [!UICONTROL DCS]。 這些 [!UICONTROL DCS] 資料中心儲存地理上最接近網站訪客的資料。 請參閱 [DCS 地區 ID、位置與主機名稱](../../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
 
-ID服務客戶可以從ID服務Cookie擷取此資訊，或呼叫函數。下表說明您必須完成的工作或步驟，才能開始使用。
+ID服務客戶可從ID服務Cookie或呼叫函式擷取此資訊。 下表說明您開始使用時需要完成的工作或步驟。
 
-*斜體的程式碼* 代表變數預留位置。
+斜體中的 *程式碼* ，代表變數預留位置。
 
 <table id="table_660EBE1C24DD4FBE9DCE5191836C9135"> 
  <thead> 
@@ -35,38 +35,38 @@ ID服務客戶可以從ID服務Cookie擷取此資訊，或呼叫函數。下表�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>1.Check your <span class="keyword"> Experience Cloud</span> status</b> </p> </td> 
-   <td colname="col2"> <p>You need a <span class="keyword"> Experience Cloud</span> account to use the ID service. If you have a <span class="keyword"> Experience Cloud</span> account, great! </p> <p> If you're not part of the <span class="keyword"> Experience Cloud</span>, then sign up. 我們希望擁有您，而且隨時都能找到更多空間。For instructions on how to set up an account, see <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services.html" format="https" scope="external"> Core Services - Enabling Your Solutions</a>. </p> </td> 
+   <td colname="col1"> <p> <b>1.檢查您 <span class="keyword"> 的Experience Cloud</span> 狀態</b> </p> </td> 
+   <td colname="col2"> <p>您需要 <span class="keyword"> Experience cloud帳戶</span> ，才能使用ID服務。 如果您有 <span class="keyword"> Experience cloud帳戶</span> ，太好了！ </p> <p> 如果您不是Experience cloud的一 <span class="keyword"> 員</span>，請註冊。 我們很想擁有你，而且總有更多空間。 如需如何設定帳戶的指示，請參閱核 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services.html" format="https" scope="external"> 心服務——啟用解決方案</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2.Set up the <span class="keyword"> ID service</span></b> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> ID服務</span> 包含在每個您要用於資料收集的頁面上的JavaScript程式碼。See the ID service <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html" format="https" scope="external"> implementation guides</a> for more information. </p> </td> 
+   <td colname="col2"> <p>ID <span class="keyword"> 服務包含</span> JavaScript程式碼，可放置在您要用於資料收集的每個頁面上。 如需詳細資訊，請 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html" format="https" scope="external"> 參閱ID服務實作指南</a> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>3.Read the <span class="keyword"> ID service</span> cookie</b> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> ID服務</span> 會儲存AMCV Cookie中的使用者和地區ID。The full cookie name is <code>AMCV_<i>###</i>@AdobeOrg</code>. <code><i>###</i></code> elements是您組織ID的預留位置。See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a> for details. </p> <p>解析這些索引鍵值配對的AMCV Cookie： </p> <p> 
+   <td colname="col1"> <p> <b>3.閱讀 <span class="keyword"> ID服務</span> Cookie</b> </p> </td> 
+   <td colname="col2"> <p>ID服 <span class="keyword"> 務會將使用者</span> 和地區ID儲存在AMCV cookie中。 完整的Cookie名 <code>稱為AMCV_<i>##</i>@AdobeOrg</code>。 ## <code><i></i></code> #elements是您組織ID的預留位置。 See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a> for details. </p> <p>剖析這些金鑰值配對的AMCV Cookie: </p> <p> 
      <ul id="ul_502ECFCDDD084D448B5EDC4E5C0909C1"> 
-      <li id="li_662FFA36AC854E699D50A183B161D654"> <code>mid=<i>使用者ID</i></code>：此金鑰-值對保留 <span class="keyword"> Experience Cloud</span> 使用者ID。 </li> 
-      <li id="li_65422233187B4217B50DC52DBD58F404"> <code>aamweaver=<i>地區ID</i></code>：此金鑰值配對保留與區域伺服器名稱關聯的地區ID(有時稱為 <span class="term"> 位置提示</span>)。 </li> 
-     </ul> </p> <p>You can make calls to the <span class="wintitle"> DCS</span> once you have the user and region IDs. </p> </td> 
+      <li id="li_662FFA36AC854E699D50A183B161D654"> <code>mid=<i>user ID</i></code>:此金鑰值配對包含 <span class="keyword"> Experience cloud使用者ID</span> 。 </li> 
+      <li id="li_65422233187B4217B50DC52DBD58F404"> <code>aamlh=<i>地區ID</i></code>:此鍵值對保存與區域伺服器名稱關聯的區域ID(有時 <span class="term"> 稱為位置提示</span>)。 </li> 
+     </ul> </p> <p>一旦擁有使用者和地 <span class="wintitle"> 區ID</span> ，即可呼叫DCS。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>4.Retrieve the <span class="keyword"> Experience Cloud ID</span> with getMarketingCloudVisitorID</b> </p> </td> 
-   <td colname="col2"> <p><i>(可選)</i> 此函數會傳回 <span class="keyword"> Experience Cloud</span> 訪客ID。它是專為自訂解決方案和特定使用案例而設計。See <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#working-with-getmarketingcloudvisitorid"> Working With getMarketingCloudVisitorID</a> below and the <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-getmcvid.html" format="https" scope="external"> related ID service documentation</a>. </p> <p>如果您從ID服務Cookie取得使用者和位置ID，則不需要使用此選項。 </p> </td> 
+   <td colname="col1"> <p> <b>4.使用getMarketingCloud <span class="keyword"> VisitorID擷取Experience Cloud</span> ID</b> </p> </td> 
+   <td colname="col2"> <p><i>（可選）</i> ，此函式會傳回 <span class="keyword"> Experience cloud訪客ID</span> 。 專為客制化解決方案和特定使用案例而設計。 請參 <a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#working-with-getmarketingcloudvisitorid"> 閱下方的「使用getMarketingCloudVisitorID</a> 」和相關 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-getmcvid.html" format="https" scope="external"> ID服務檔案</a>。 </p> <p>如果您從ID服務Cookie取得使用者和位置ID，就不需要使用此功能。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Working With `getMarketingCloudVisitorID` {#working-with-getmarketingcloudvisitorid}
+## 使用 `getMarketingCloudVisitorID`{#working-with-getmarketingcloudvisitorid}
 
-Another way to get the visitor ID is with the `getMarketingCloudVisitorID` function. When invoked, this function queries the [!DNL ID service] and returns an ID. `getMarketingCloudVisitorID` 接受可選 `callback` 引數，如下所示：
+另一個取得訪客ID的方式是使用函 `getMarketingCloudVisitorID` 數。 調用此函式時，將查詢 [!DNL ID service] 並返回ID。 `getMarketingCloudVisitorID` 接受可選 `callback` 參數，如所示：
 
 `var analyticsID = visitor.getAnalyticsVisitorID(callback)`
 
-### Callback Usage and Purpose {#callback-usage}
+### 回呼使用與用途 {#callback-usage}
 
-`callback` 是選擇性的。This function works without it, but returns an ID only when a visitor has a [!DNL Experience Cloud] cookie in their browser. If the visitor cookie is missing, or a visitor doesn't have an ID, the function returns an empty `()` object. 即使在頁面載入後，訪客收到新ID也會發生這種情況。To avoid this, `callback` forces this function to check for a visitor ID after the page loads. Without `callback`, the visitor ID function won't return an ID even if it's written to the visitor's browser later.
+`callback` 為可選項。 此函式不含此函式，但只有在訪客的瀏覽器中有Cookie時，才 [!DNL Experience Cloud] 會傳回ID。 如果訪客Cookie遺失，或訪客沒有ID，函式會傳回空 `()` 物件。 即使頁面載入且訪客收到新ID後，仍可能發生此情況。 若要避免此情況， `callback` 請強制此函式在頁面載入後檢查訪客ID。 沒 `callback`有，即使訪客ID函式稍後寫入訪客的瀏覽器，也不會傳回ID。
 
 ## 後續步驟 {#next-steps}
 
-Once you have the user and region ID, you can start sending and receiving [!UICONTROL DCS] data. See [Making DCS API Calls](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md).
+一旦您擁有使用者和地區ID，就可以開始傳送和接收 [!UICONTROL DCS] 資料。 請參 [閱進行DCS API呼叫](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)。
