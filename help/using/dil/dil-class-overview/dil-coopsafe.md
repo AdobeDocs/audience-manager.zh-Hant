@@ -4,7 +4,7 @@ seo-description: 選用的布林值設定，可決定 DIL 是否要將資料傳�
 seo-title: isCoopSafe
 solution: Audience Manager
 title: isCoopSafe
-uuid: c5362a38-93c0-4edb-bdcb-106e43 f33 a92
+uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
 translation-type: tm+mt
 source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
@@ -19,10 +19,10 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 To use `isCoopSafe` you must:
 
-* Use [!UICONTROL DIL] v6.11 or higher.
+* 使 [!UICONTROL DIL] 用v6.11或更新版本。
 * 參與 [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
-* 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有自助服務路徑可啓用這些標幟。
+* 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有自助路徑可啟用這些標誌。
 
 ## 使用個案 {#use-cases}
 
@@ -63,7 +63,7 @@ To use `isCoopSafe` you must:
 
 **程式碼範例**
 
-在DIL個體化時設定此選項。
+當DIL執行個體化時設定此值。
 
 ```js
 var dilInstance = DIL.create({ 
@@ -113,11 +113,11 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> DiLintiation. api. setAssoopSafe()； </code> </p> </td> 
+   <td colname="col1"> <p> <code> dilInstance.api.setAsCoopSafe(); </code> </p> </td> 
    <td colname="col2"> <p>在後續事件呼叫中，設定 POST 參數 <code>d_coop_safe=1</code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> DiLinetition. api. setAssoOpenSafe()； </code> </p> </td> 
+   <td colname="col1"> <p> <code> dilInstance.api.setAsCoopUnsafe(); </code> </p> </td> 
    <td colname="col2"> <p>在後續事件呼叫中，設定 POST 參數 <code>d_coop_unsafe=1</code>。 </p> </td> 
   </tr> 
  </tbody> 
