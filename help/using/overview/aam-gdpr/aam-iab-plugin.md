@@ -18,139 +18,139 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 
 Adobe 可讓您透過[選擇加入功能](https://marketing.adobe.com/resources/help/en_US/mcvid/overview.html)和 [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)，管理使用者的隱私權選擇，並與使用者針對該選擇溝通。
 
-本文說明支援 IAB TCF 的 Audience Manager 使用案例，講解如何在 Audience Manager 中實作 IAB TCF 支援。Audience Manager在IAB TCF中註冊，供應商ID565。
+本文說明支援 IAB TCF 的 Audience Manager 使用案例，講解如何在 Audience Manager 中實作 IAB TCF 支援。Audience manager已在IAB TCF中註冊，廠商ID為565。
 
-AAB TCF適用的Audience Manager外掛程式採用 [選擇加入功能](https://marketing.adobe.com/resources/help/en_US/mcvid/iab.html)，這就是Adobe [Experience Cloud ID Service(ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) 程式庫的一部分。
+IAB TCF的Audience Manager外掛程式運用 [Opt-in功能](https://marketing.adobe.com/resources/help/en_US/mcvid/iab.html)，這也是Adobe [Experience Cloud ID Service(ECID)資料庫的一部分](https://marketing.adobe.com/resources/help/en_US/mcvid/) 。
 
-## 範圍與限制 {#scope-and-limitations}
+## 範圍和限制 {#scope-and-limitations}
 
-身為使用Audience Manager的Publisher或Advertiser，您可以根據IAB TCF將使用者選擇傳達給Audience Manager。這為您提供簡單且一致的方式，將使用者選擇與您使用的所有合作夥伴通訊，Audience Manager可協助您尊重使用者的隱私權選擇。
+身為使用Audience Manager的發佈者或廣告商，您可以依據IAB TCF，將使用者選擇傳達給Audience Manager。 這可讓您以簡單且一致的方式，將使用者選擇傳達給您所合作的所有合作夥伴，而Audience manager可協助您尊重使用者的隱私權選擇。
 
-本文所述的IAB TCF支援代表AAB架構支援IAB架構的第一階段。目前Audience Manager不支援：
+本文所述的IAB TCF支援代表Audience manager計畫支援IAB架構的第一階段。 目前，Audience manager不支援：
 
 * 行動裝置工作流程；
 * 跨裝置許可管理；
-* 同意傳送至 [URL目的地](/help/using/features/destinations/create-url-destination.md)的URL；
-* 附加同意區段。
+* 將同意書附加至傳送至 [URL目的地的URL](/help/using/features/destinations/create-url-destination.md);
+* 附加同意給區段。
 
 ## 必備條件 {#prerequisites}
 
-您必須符合下列必要條件，才能搭配AAB TCF與Audience Manager搭配使用：
+您必須符合下列必要條件才能搭配Audience manager使用IAB TCF:
 
-1. 您必須使用Experience Cloud ID Service(ECID)4.1版或更新版本。[下載](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 我們最新的ECID版本。
+1. 您必須使用Experience Cloud ID服務(ECID)4.1版或更新版本。 [下載我們](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 最新的ECID版本。
 2. 
-   1. 您必須在 [這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)使用Audience Manager Data Integration Library(DIL)9.0版或更新版本。閱讀Audience [Manager文件](/help/using/dil/dil-overview.md)中的DIL。
-   2. 或者，如果您使用伺服器端轉送(SSF)將資料匯入Audience Manager，則必須升級至最新版本的AppMeasurement。使用 [Analytics代碼管理器下載AppMeasurement](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html)。
-3. 您必須使用支援IAB並透過IAB TCF註冊的同意管理平台(CMP)。請參閱IAB架構中註冊 [的CMS清單](https://advertisingconsent.eu/cmp-list/)。
+   1. 您必須使用Audience Manager資料整合庫(DIL)9.0版或更新版本，可從此處 [下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)。 閱讀Audience manager文 [件中的DIL相關資訊](/help/using/dil/dil-overview.md)。
+   2. 或者，如果您使用伺服器端轉送(SSF)將資料匯入Audience Manager，則必須升級至最新版的AppMeasurement。 使用Analytics代碼管理 [器下載AppMeasurement](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html)。
+3. 您必須使用支援IAB且已向IAB TCF註冊的「同意管理平台」(CMP)，不論是商業版或您自己的版本。 請參見在IAB框架 [中註冊的CMP的清單](https://advertisingconsent.eu/cmp-list/)。
 
-## Recommendations及其實施方式 {#recommendations}
+## 建議及實施方式 {#recommendations}
 
-若要啓用AAB TCF支援，請參閱我們的 [說明文件，說明如何使用選擇加入設定IAB](https://marketing.adobe.com/resources/help/en_US/mcvid/iab.html)。
+若要在Audience manager中啟用IAB TCF支援，請閱讀我們的檔案，了 [解如何使用選擇加入設定IAB](https://marketing.adobe.com/resources/help/en_US/mcvid/iab.html)。
 
-使用 [Adobe Launch](https://docs.adobelaunch.com/) 對您的屬性進行ECID選擇時，這最簡單。Read the documentation for the [ECID Opt-in extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension#opt-in) to learn how to set up the Launch extension.
+您最輕鬆的方式是使 [用Adobe Launch](https://docs.adobelaunch.com/) ，在您的屬性上測試ECID選擇加入。 Read the documentation for the [ECID Opt-in extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension#opt-in) to learn how to set up the Launch extension.
 
 ## 使用IAB架構時的使用者選擇工作流程 {#user-choice-workflow}
 
-瀏覽Web屬性時，您的使用者可以針對發行者和publisher搭配使用的第三方供應商提供他們的選擇。使用者以 *標準目的* 和權限向全球廠商清單註冊的 *第三方供應商* 提供他們的選擇。下圖代表CMP對話的範例，顯示給網站的首次訪客。請記住，根據客戶實施，此對話的外觀可能不同。
+在造訪Web屬性時，您的使用者可以提供其資料供發佈者及發佈者使用之第三方廠商使用的選擇。 使用者以標準用途和權限的形 *式提供* ，讓第 *三方廠商在全域廠商清單中註冊* 。 下圖代表CMP對話方塊的範例，顯示給網站的首次訪客。 請記住，根據客戶實作，此對話方塊看起來會大不相同。
 
-![CMP對話](/help/using/overview/aam-gdpr/assets/cmp.png)
+![CMP對話框](/help/using/overview/aam-gdpr/assets/cmp.png)
 
-IAB架構的標準用途包括：
+IAB框架中的標準用途是：
 
-* 資訊儲存與存取
+* 資訊儲存和訪問
 * 個人化
 * 廣告選擇、傳送和報告
 * 內容選擇、傳送和報告
 * 測量
 
-請參閱 [IAB架構規格頁面](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#purposes-features) ，以瞭解五個標準用途的說明。
+請參閱 [IAB架構規格頁](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#purposes-features) ，以瞭解五種標準用途的說明。
 
-使用者得同意以標準用途組合及供應商。例如，使用者可同意其儲存、個人化及測量的同意，並同意由「CMP」顯示之所有第三方供應商。或者，在另一個範例中，他們可以給予所有五個標準用途的同意，但僅授予「CMP」所顯示之供應商的同意。
+使用者可出於標準用途與廠商的組合而同意。 例如，用戶可以授予其儲存、個人化和測量的許可，並授予其對CMP展示的所有第三方供應商的許可。 或者，在另一個例子中，它們可以就所有五個標準目的給予同意，但只授予《議定書》/《公約》締約方會議所展示的少數供應商的同意。
 
-當使用者選擇其隱私權選項後，使用者選擇會記錄在IAB TCF許可字串中。IAB TCF許可字串儲存已核准用途和廠商以及其他中繼資料資訊的組合(請參閱 [IAB頁面](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#Consent-string-and-vendor-list-format) 以瞭解詳細資訊)。所有註冊於IAB TCF的供應商都會評估IAB TCF許可字串，並根據使用者的隱私權選擇做出決策。請記住，使用者的隱私權選擇適用於所有已核准的廠商。
+一旦用戶選擇其隱私選擇，用戶選擇就記錄在IAB TCF許可字串中。 IAB TCF同意字串會儲存已核准用途與廠商的組合，以及其他中繼資料資訊(如需詳細資訊，請參閱 [IAB頁面](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md#Consent-string-and-vendor-list-format) )。 在IAB TCF中註冊的每家廠商都會評估IAB TCF許可字串，並根據使用者的隱私權選擇做出決策。 請記住，使用者的隱私權選擇在所有經過核准的廠商中都有效。
 
-## Audience Manager需要的標準用途 {#aam-standard-purposes}
+## Audience manager所需的標準用途 {#aam-standard-purposes}
 
-Audience Manager會評估儲存在IAB TFC許可字串中的使用者選擇：
+Audience manager會評估使用者在IAB TFC同意字串中儲存的選擇：
 
-* 資訊儲存與存取(全域廠商清單 [中的目的ID1](https://vendorlist.consensu.org/vendorlist.json))
-* 個人化(目的ID2)
-* 測量(目的ID5)
-* Audience Manager廠商同意儲存、處理或啓用publisher資料。
+* 資訊儲存和訪問(全局供應商清單中的 [目的ID 1](https://vendorlist.consensu.org/vendorlist.json))
+* 個人化（目的ID 2）
+* 測量（目的ID 5）
+* Audience manager供應商同意儲存、處理或啟動發佈商的資料。
 
 >[!IMPORTANT]
 >
 >Audience Manager needs consent for *all three purposes, plus vendor consent* in order to deploy cookies and initiate or honor ID syncs.
 
-## Audience Manager行為取決於使用者是否授予同意 {#aam-behavior-consent}
+## Audience manager的行為取決於使用者是否授與同意 {#aam-behavior-consent}
 
-Audience Manager的運作方式視AAB TCF許可字串是否偵測到使用者是否已針對這三個用途提供同意(儲存、個人化、測量)而異。
+Audience manager的運作方式不同，視Audience manager在IAB TCF同意字串中是否偵測到使用者已針對三種用途（儲存、個人化、測量）提供同意。
 
-| 當您的使用者 *同意時*，Audience Manager： | 當您的使用者 *拒絕* 同意時，Audience Manager： |
+| 當您的使用者 *提供同意*,Audience Manager會： | 當您的使用者拒 *絕* ,Audience Manager會： |
 |---|---|
-| <ul><li>執行所有您要求的Audience Manager使用案例。</li><li>以ID同步方式傳達給第三方，(透過將gdpr=和同意字串傳遞至ID同步呼叫上的gdpr_ consept)。</li><li>評估並表揚從廣告伺服器像素傳遞的同意。</li><li>合作夥伴啓始的ID同步。</li></ul> | <ul><li>不會儲存您例項中的任何新使用者資料。其中包括合作夥伴ID、訊號、特徵或像素資料。</li><li>不會起始第三方ID同步。</li><li>不符合合作夥伴啓始的ID同步。</li></ul> |
+| <ul><li>執行您要求的所有Audience manager使用案例。</li><li>以ID同步傳達對第三方的同意（透過在ID同步呼叫中傳遞gdpr = 1和同意字串作為gdpr_concension）。</li><li>評估並接受從廣告伺服器像素傳遞的同意。</li><li>接受合作夥伴發起的ID同步。</li></ul> | <ul><li>不在實例中儲存任何新用戶資料。 這包括合作夥伴ID、訊號、特徵或像素資料。</li><li>不啟動第三方ID同步。</li><li>不遵守合作夥伴啟動的ID同步。</li></ul> |
 
 
 
-## 發行者使用個案 {#publisher-use-case}
+## 發行者使用案例 {#publisher-use-case}
 
-實施IAB TCF後，您不需要透過與Adobe或其他第三方廠商不同的機制，為您的Web屬性上的同意管理維護自訂代碼。影像中說明使用案例，以及下方步驟。從影像左側開始：
+透過實作IAB TCF，您不需要透過Adobe或其他第三方廠商的不同機制，在您的Web屬性上維護自訂的許可管理代碼。 使用案例在影像和下列步驟中說明。 從影像左側開始：
 
-1. 使用者瀏覽您的其中一個Web屬性。只要您使用最新版本的ECID和DIL程式庫(請參閱 [「必要條件](/help/using/overview/aam-gdpr/aam-iab-plugin.md#prerequisites)」)，就會觸發加入流程。
-2. Audience Manager會檢查IAB流程是否套用(`isIabContext=true`)。請參閱 [Recommendations及其實施](/help/using/overview/aam-gdpr/aam-iab-plugin.md#recommendations)方式。
-3. Audience Manager會檢查GDPR是否適用(`gdpr = 1`)以及是否有CMP(在您的Web屬性上註冊)。例如，這適用於從歐盟地區造訪的使用者。請注意，您應負責設定GDPR標幟。
-4. 如果套用GDPR，Audience Manager會檢查在參數 `gdpr_consent`中傳遞的IAB TCF許可字串，以取得必要權限。Audience Manager需要儲存、個人化、測量以及Audience Manager廠商同意的權限，才能儲存、處理或啓動資料。
-5. 如果IAB TCF許可字串存在且包含必要權限，Audience Manager會將IAB TCF同意字串傳遞至我們 [的資料收集伺服器](/help/using/reference/system-components/components-data-collection.md) (DCS)。
-6. Audience Manager會在瀏覽器上設定 [Demdex Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html) 回應。Audience Manager也會起始並鳴謝第三方ID同步。
-7. 或者，如果步驟中傳遞的IAB TCF許可字串不包含所有必要權限，Audience Manager不會收集、處理或啓動資料，也不會接受或啓動ID同步。
+1. 使用者瀏覽您的其中一個Web屬性。 只要您使用最新版的ECID和DIL程式庫(請參閱 [Presequires](/help/using/overview/aam-gdpr/aam-iab-plugin.md#prerequisites))，就會觸發選擇加入流程。
+2. Audience manager會檢查IAB流程是否套用(`isIabContext=true`)。 請參 [閱Recommendations及如何實作](/help/using/overview/aam-gdpr/aam-iab-plugin.md#recommendations)。
+3. Audience manager會檢查GDPR是否適用(`gdpr = 1`)，以及您的Web屬性上是否有已向IAB註冊的CMP。 例如，這適用於從歐盟地區造訪的使用者。 請注意，您身為發行者，有責任設定GDPR旗標。
+4. 如果適用GDPR,Audience manager會檢查在參數中傳遞的IAB TCF同意字串，以 `gdpr_consent`取得所需的權限。 Audience manager需要儲存、個人化、測量的權限，加上Audience manager廠商的同意權，才能儲存、處理或啟動資料。
+5. 如果IAB TCF同意字串存在且包含必要的權限，Audience manager會將IAB TCF同意字串傳遞至我們的資 [料收集伺服器](/help/using/reference/system-components/components-data-collection.md) (DCS)。
+6. Audience manager會在瀏覽器上設 [定Demdex Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html) ，做出回應。 Audience manager也會啟動並接受第三方ID同步。
+7. 或者，如果在步驟5中傳遞的IAB TCF同意字串不包含所有必要的權限，Audience manager不會收集、處理或啟動資料，也不會執行或啟動ID同步。
 
-![發行者使用個案](assets/publisher-use-case.png)
+![發行者使用案例](assets/publisher-use-case.png)
 
 ## 廣告商使用案例 {#advertiser-use-case}
 
-根據IAB TCF，Audience Manager會評估 [並接受像素呼叫](/help/using/integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)傳入的同意。
+Audience manager會根據IAB TCF評估並接受在 [像素呼叫中](/help/using/integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)，傳遞的同意。
 
-像素通常由Audience Manager客戶在其合作夥伴頁面上放置，或放在廣告伺服器中以便加入廣告回應中。在第一個案例中，您的合作夥伴必須以程式設計方式擷取同意參數並將其新增至像素，然後才觸發。在第二個案例中較常見的情況下，詳細說明如下：廣告伺服器會附加從供應端平台(SSP)接收的同意參數，或將sher廣告伺服器附加至所有像素。
+像素通常由Audience manager客戶放在其合作夥伴頁面上，或置於廣告伺服器中以納入廣告回應。 在第一種情況下，您的合作夥伴必須以程式設計方式擷取許可參數，並在引發之前將其新增至像素。 在第二種情況中，廣告伺服器會將其從供應端平台(SSP)或發行者廣告伺服器接收的同意參數附加至所有像素，這種情況較為常見，並於下文詳細說明。
 
-Audience Manager使用兩個參數來傳遞像素呼叫的使用者同意：
+Audience manager使用兩個參數在像素呼叫中傳遞使用者同意：
 
-* `gdpr` 可能為(GDPR不適用)或1(GDPR適用)；
-* `gdpr_consent` 是URL安全的base64編碼GDPR許可字串(請參閱 [規格](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications))。曝光像素的範例呼叫，其中兩參數看起來如下所示：
+* `gdpr` 可以是0（GDPR不適用）或1（GDPR適用）;
+* `gdpr_consent` 是URL安全的base64編碼的GDPR同意字串(請參閱 [規格](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications))。 印象像素的範例呼叫，其中兩個參數可能如下所示：
 
 ```
 http://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstring&d_src=datasource_id&d_site=siteID&d_creative=creative_id&d_adgroup=adgroup_id&d_placement=placement_id
 ```
 
-影像中說明使用案例，以及下方步驟。從影像左側開始：
+使用案例在影像和下列步驟中說明。 從影像左側開始：
 
-1. 透過廣告伺服器讓您的使用者印象深刻。如此就可對資料收集伺服器(DCS)進行像素呼叫。
-1. Audience Manager會檢查是否套用GDPR旗標。如果沒有，Audience Manager會儲存像素呼叫中巨集變數傳入的資料。
-1. 如果許可字串存在且包含必要權限，Audience Manager會儲存像素呼叫中巨集變數中傳入的資料。
-1. 如果同意字串遺失或缺少必要權限，Audience Manager會捨棄像素呼叫中巨集變數傳入的資料。
+1. 透過廣告伺服器，您的使用者會獲得印象。 這會轉換為對資料收集伺服器(DCS)的像素呼叫。
+1. Audience manager會檢查GDPR標幟是否適用。 如果沒有，Audience manager會將傳入巨集變數的資料儲存在像素呼叫中。
+1. 如果同意字串存在且包含必要的權限，Audience manager會將傳入的資料儲存在像素呼叫的巨集變數中。
+1. 如果同意字串遺失或缺少必要的權限，Audience manager會刪除像素呼叫中在巨集變數中傳遞的資料。
 
 ![廣告商使用案例](assets/advertiser-use-case.png)
 
-## 支援IAB TCF的啓動合作夥伴 {#aam-activation-partners}
+## 支援IAB TCF的啟動合作夥伴 {#aam-activation-partners}
 
-AAB TCF適用的Audience Manager外掛程式可讓您將IAB TCF同意字串轉送給啓動合作夥伴，同時拒絕使用者的隱私權選擇。有關哪些啓動合作夥伴支援IAB TCF的資訊(截至2019年月日)，請參閱 **[我們的合作夥伴Excel工作表](/help/using/overview/aam-gdpr/assets/AAM-Partners-July2019.xlsx)**。
+IAB TCF的Audience Manager外掛程式可讓您將IAB TCF同意字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 如需啟動合作夥伴支援IAB TCF（自2019年7月7日起準確無誤）的詳細資訊，請參閱我們的 **[Partner excel表單](/help/using/overview/aam-gdpr/assets/AAM-Partners-July2019.xlsx)**。
 
 ## 測試您的IAB實作 {#test-iab-implementation}
 
-若要測試您已正確實作IAB TCF的Audience Manager外掛程式，請參閱 [「在加入和IAB實作驗證方法中使用案例4](https://marketing.adobe.com/resources/help/en_US/mcvid/testing-optin-and-iab-plugin.html)」。
+若要測試您是否已正確實作IAB TCF的Audience manager外掛程式，請閱讀 [Use Case 4 in Validation Methods for Opt-in and IAB implementation](https://marketing.adobe.com/resources/help/en_US/mcvid/testing-optin-and-iab-plugin.html)。
 
-## AAB和Option-out在Audience Manager中。優先順序。 {#iab-and-optout}
+## IAB和Audience manager中的選擇退出。 優先順序。 {#iab-and-optout}
 
-使用者使用的另一個隱私權選項是選擇退出所有資料收集。Adobe提供使用者在 [「您的隱私權選擇](https://www.adobe.com/privacy/opt-out.html#customeruse) 」頁面中這麼做的方法。
+您的使用者可以選擇另一個隱私權選項，即選擇退出所有資料收集。 Adobe會在您的隱私權選擇頁面中提供使用者 [進行這項](https://www.adobe.com/privacy/opt-out.html#customeruse) 。
 
-Audience Manager會在我們文件中的 [個別文章中處理選擇退出管理](/help/using/overview/data-security-and-privacy/opt-out-management.md)。
+Audience manager可處理我們檔案中個別文 [章的退出管理](/help/using/overview/data-security-and-privacy/opt-out-management.md)。
 
 >[!NOTE]
 >
->**優先順序** -如果您的使用者使用全域選擇退出工具退出資料收集，則這會優先於選擇加入和IAB驗證。
+>**優先順序** -如果您的使用者使用全域退出工具退出資料收集，如上述連結所述，優先順序優先於選擇加入和IAB驗證。
 
 ## 其他資源 {#additional-resources}
 
-* [Experience Cloud ID Service Opt-in](https://marketing.adobe.com/resources/help/en_US/mcvid/overview.html)
-* [IAB Europe GDPR透明度與同意框架](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)
-* [IAB Europe GDPR透明度與許可框架技術規格](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md)
-* [IAB TCF增效模組-視訊展示](https://helpx.adobe.com/audience-manager/kt/using/iab-tcf-support-audience-manager-technical-video-implement.html)
+* [Experience Cloud ID服務選擇加入](https://marketing.adobe.com/resources/help/en_US/mcvid/overview.html)
+* [IAB歐洲GDPR透明度與同意框架](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)
+* [IAB歐洲GDPR透明度和許可框架技術規格](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md)
+* [IAB TCF plugin —— 視訊展示](https://helpx.adobe.com/audience-manager/kt/using/iab-tcf-support-audience-manager-technical-video-implement.html)
