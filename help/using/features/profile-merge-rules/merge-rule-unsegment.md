@@ -1,32 +1,32 @@
 ---
-description: 「取消分段」說明從區段中取消資格和移除裝置設定檔的程序。您從區段移除裝置描述檔的能力，取決於用於建立描述檔合併規則的裝置選項。
-seo-description: 「取消分段」說明從區段中取消資格和移除裝置設定檔的程序。您從區段移除裝置描述檔的能力，取決於用於建立描述檔合併規則的裝置選項。
-seo-title: 描述檔合併規則與裝置取消分段程序
+description: 取消區段會說明從區段中取消區段和移除裝置描述檔的程式。 從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。
+seo-description: 取消區段會說明從區段中取消區段和移除裝置描述檔的程式。 從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。
+seo-title: 描述檔合併規則與裝置取消區段程式
 solution: Audience Manager
-title: 描述檔合併規則與裝置取消分段程序
-uuid: b61c6de3-5Fe4-4892-a05 a-96a4 cb35 af34
+title: 描述檔合併規則與裝置取消區段程式
+uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Profile Merge Rules and Device Un-Segmentation Processes {#profile-merge-rules-and-device-un-segmentation-processes}
+# 描述檔合併規則與裝置取消區段程式 {#profile-merge-rules-and-device-un-segmentation-processes}
 
-「取消分段」說明從區段中取消資格和移除裝置設定檔的程序。Your ability to remove a device profile from a segment depends on the device option used to create a [!UICONTROL Profile Merge Rule].
+取消區段會說明將裝置設定檔從區段中取消篩選和移除的程式。 您從區段移除裝置描述檔的能力取決於用來建立裝置的裝置選項 [!UICONTROL Profile Merge Rule]。
 
-## Available Device Options {#device-options}
+## 可用裝置選項 {#device-options}
 
-As a reminder, the [!UICONTROL Device Options] are available in the [!UICONTROL Profile Merge Rules Setup] section when you create or edit a [!UICONTROL Profile Merge Rule].
+當您建立或編 [!UICONTROL Device Options] 輯時，區 [!UICONTROL Profile Merge Rules Setup] 段中會提供提醒 [!UICONTROL Profile Merge Rule]。
 
 ![](assets/merge-rules-options.png)
 
-## Current Device Profile Option and Device Unsegmentation {#current-device-profile-options}
+## 目前的裝置設定檔選項與裝置取消分段 {#current-device-profile-options}
 
-**[!UICONTROL Current Device Profile]** 是預設裝置設定檔選項 [!UICONTROL Profile Merge Rule]。[!DNL Audience Manager] 可在 [!UICONTROL Profile Merge Rule] 您使用 **[!UICONTROL Current Device Profile]** 選項時從區段移除裝置描述檔。在下列情況下，在下列情況下會發生取消分段：
+**[!UICONTROL Current Device Profile]** 是的預設設備配置檔案選 [!UICONTROL Profile Merge Rule]項。 [!DNL Audience Manager] 可在您使用選項時，從區段移除 [!UICONTROL Profile Merge Rule] 裝置設 **[!UICONTROL Current Device Profile]** 定檔。 在這些情況下，當發生下列情況時，會發生取消分段：
 
-* 裝置設定檔閒置120天。每周資料清理程序會移除區段中的非活動裝置設定檔。
-* 裝置不再符合區段的資格，因為裝置設定檔的更新或變更會使其不符合資格。This happens when segment qualification criteria change, or you apply an [!DNL AND NOT] operator to a segment rule, or specify [recency and frequency](../../features/segments/recency-and-frequency.md) conditions that use the less than/equal to settings. [「立即跨裝置抑制」](../../features/profile-merge-rules/instant-cross-device-suppression.md) 文件說明使用案例。
+* 裝置設定檔已停用120天。 每週資料清除程式會從您的區段中移除非作用中的裝置描述檔。
+* 裝置不再符合區段的資格，因為裝置描述檔的更新或變更會使區段失去資格。 當區段限定條件變更，或您套用運算子至區段規則，或指定使用小於／等於設定的時 [!DNL AND NOT] 近和頻率 [](../../features/segments/recency-and-frequency.md) ，就會發生此情況。 「立即跨裝置抑制」說 [明檔案中說明了使用案例](../../features/profile-merge-rules/instant-cross-device-suppression.md) 。
 
 ![](assets/single_device_use_case.png)
 
@@ -42,19 +42,19 @@ As a reminder, the [!UICONTROL Device Options] are available in the [!UICONTROL 
 
  -->
 
-## No Device Option and Device Unsegmentation {#no-device-option}
+## 無設備選項和設備取消分段 {#no-device-option}
 
-[!DNL Audience Manager] 可以在 [!UICONTROL Profile Merge Rule] 使用 **[!UICONTROL No Device Profile]** + **[!UICONTROL Current Authenticated]** 選項時從區段移除跨裝置ID。在這些情況下，跨裝置ID的跨裝置ID不符合區段資格，因為跨裝置設定檔的更新或變更會使其不符合資格。This happens when segment qualification criteria change, or you apply an [!UICONTROL AND NOT] operator to a segment rule, or specify [recency and frequency](../../features/segments/recency-and-frequency.md) conditions that use the less than/equal to settings. [「立即跨裝置抑制」](../../features/profile-merge-rules/instant-cross-device-suppression.md) 文件說明使用案例。
+[!DNL Audience Manager] 可在您使用+選項時，從區段移除 [!UICONTROL Profile Merge Rule] 跨裝 **[!UICONTROL No Device Profile]** 置 **[!UICONTROL Current Authenticated]** ID。 在這些情況下，當跨裝置ID不再符合區段資格時，會發生取消區段的情況，因為跨裝置描述檔的更新或變更會使區段不符資格。 當區段限定條件變更，或您套用運算子至區段規則，或指定使用小於／等於設定的時 [!UICONTROL AND NOT] 近和頻率 [](../../features/segments/recency-and-frequency.md) ，就會發生此情況。 「立即跨裝置抑制」說 [明檔案中說明了使用案例](../../features/profile-merge-rules/instant-cross-device-suppression.md) 。
 
 ![](assets/no_device_use_case.png)
 
-## Device Graph Options and Device Unsegmentation {#device-graph-options-unsegmentation}
+## 裝置圖形選項與裝置取消分段 {#device-graph-options-unsegmentation}
 
-[!DNL Audience Manager] 可以在 [!UICONTROL Profile Merge Rule] 使用裝置圖表選項時從區段移除多個裝置設定檔。當裝置圖表中裝置的合併描述檔不符合區段的更新或變更，因為此合併設定檔的更新或變更將不符合區段資格時，就會發生分段。This happens when segment qualification criteria change, or you apply an [!UICONTROL AND NOT] operator to a segment rule, or specify [recency and frequency](../../features/segments/recency-and-frequency.md) conditions that use the less than/equal to settings. [「立即跨裝置抑制」](../../features/profile-merge-rules/instant-cross-device-suppression.md) 文件說明使用案例。
+[!DNL Audience Manager] 可在您使用裝置圖形選項時，從區段移除 [!UICONTROL Profile Merge Rule] 多個裝置描述檔。 當裝置圖表中裝置的合併描述檔不再符合區段資格時，會發生取消分段，因為此合併描述檔的更新或變更會使其不符合區段資格。 當區段限定條件變更，或您套用運算子至區段規則，或指定使用小於／等於設定的時 [!UICONTROL AND NOT] 近和頻率 [](../../features/segments/recency-and-frequency.md) ，就會發生此情況。 「立即跨裝置抑制」說 [明檔案中說明了使用案例](../../features/profile-merge-rules/instant-cross-device-suppression.md) 。
 
 >[!NOTE]
 >
->**使用裝置圖表評估區段時，區段評估和取消資格**[!DNL Audience Manager] 的四裝置限制最多可合併 [!UICONTROL Profile Merge Rule] 四部裝置。[!DNL Audience Manager] 評估 *目前裝置和上次看到的三部裝置*。如果未發出區段訊號，則會從目的地中移除即時檢視的目前裝置和另外三個裝置。例如，在六裝置叢集中，最多可合併、評估和符合區段的部裝置。同樣地，最多可合併、評估和未分段個裝置。
+>**在使用裝置圖形來評估區段時** , [!DNL Audience Manager] 四個裝置的區段評估和取消資格限制可合併多達四 [!UICONTROL Profile Merge Rule] 個裝置。 [!DNL Audience Manager] 評估當 *前設備和最後一次即時查看的另外三台設備*。 如果發出未分段信號，則當前設備和即時顯示的另外三個設備將從目標的分段中刪除。 例如，在六裝置叢集中，最多會合併、評估四個裝置，並符合區段的資格。 同樣地，最多可合併、評估和取消分段四個裝置。
 
 ![](assets/cross_device_workflow.png)
 
@@ -101,9 +101,9 @@ As a reminder, the [!UICONTROL Device Options] are available in the [!UICONTROL 
 
  -->
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [描述檔合併規則與裝置圖表常見問題](../../faq/faq-profile-merge.md)
+>* [描述檔合併規則與裝置圖表常見問答集](../../faq/faq-profile-merge.md)
 >* [即時跨裝置隱藏功能](../../features/profile-merge-rules/instant-cross-device-suppression.md)
->* [設定檔合併規則與裝置圖表的重要考量](../../features/profile-merge-rules/considerations-pmr-device-graph.md)
+>* [配置式合併規則與設備圖形的重要注意事項](../../features/profile-merge-rules/considerations-pmr-device-graph.md)
 
