@@ -1,20 +1,20 @@
 ---
-description: 關於Audience Lab功能的常見問題。
-seo-description: 關於Audience Lab功能的常見問題。
-seo-title: Audience Lab常見問題
+description: 有關Audience lab功能的常見問題。
+seo-description: 有關Audience lab功能的常見問題。
+seo-title: Audience Lab常見問答集
 solution: Audience Manager
-title: Audience Lab常見問題
+title: Audience Lab常見問答集
 topic: DIL API
-uuid: b1daf99d-af60-4f65-987d-794a6 d45 d566
+uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Audience Lab FAQ{#audience-lab-faq}
+# Audience Lab常見問答集{#audience-lab-faq}
 
-關於Audience Lab功能的常見問題。
+有關Audience lab功能的常見問題。
 
 <!-- 
 
@@ -24,34 +24,34 @@ audience-lab-faq.xml
 
 <br> 
 
-**測試群組中建立的測試區段是否有不同區段ID？How do I map the IDs to different destinations?**
+**在測試群組中建立的測試區段是否有不同的區段ID? 如何將ID對應至不同的目的地？**
 
-是的，測試區段有不同的區段ID。For destinations with [!UICONTROL Auto-fill Destination Mapping] or segments sent to [!DNL Google], [!UICONTROL Audience Lab] will handle the mapping values just like the destinations normally would.
-
-<br> 
-
-**相同的轉換特徵是否可與多個測試群組相關聯？**
-
-可以，這是允許的。假設使用與轉換X關聯的男性區段以及使用與轉換X關聯的陰性區段進行一項測試的單一測試案例。這兩項測試在測試兩個不同受眾後，並不重要。
+是的，測試區段有不同的區段ID。 對於已傳送 [!UICONTROL Auto-fill Destination Mapping] 至或區段的目 [!DNL Google]的地， [!UICONTROL Audience Lab] 將會處理對應值，就像一般的目的地一樣。
 
 <br> 
 
-**假設測試群組對測試區段分割使用驗證的設定檔。The authenticated profile is linked to 4[Audience Manager UUIDs](../reference/ids-in-aam.md). When the visitor exhibits a conversion trait from one of the four UUIDs, does[!UICONTROL Audience Lab]count this as one or four conversions?**
+**相同的轉換特徵是否與多個測試群組相關聯？**
 
-In this case, [!UICONTROL Audience Lab] only counts one conversion.
-
-<br> 
-
-**如果前述案例的訪客從連結到其驗證的描述檔的四個UUID中顯示轉換特徵，然後又顯示兩個連結至已驗證之描述檔的UUID的轉換特徵，該怎麼辦？Does this case count as one or three conversions?**
-
-In this case, [!UICONTROL Audience Lab] counts three conversions, one for each device that has exhibited the authentication trait.
+是的，允許。 假設一個測試使用與轉換X相關聯的公分段，另一個測試使用與轉換X相關聯的母分段。這兩個測試都會推動轉化，因為它們會測試兩個不同的受眾。
 
 <br> 
 
-**使用者可以[!UICONTROL Segment: Read-Only]存取存取權，還是[!UICONTROL Audience Lab]測試區段建立存取權？**
+**假設測試群組使用已驗證的設定檔來分割測試區段。 已驗證的設定檔會連結至4[個Audience Manager UUID](../reference/ids-in-aam.md)。 當訪客顯示來自四個UUID之一的轉換特徵時，這[!UICONTROL Audience Lab]會算作一或四個轉換嗎？**
 
-See [Create Segment Test Group](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) for information on how to use [!UICONTROL Audience Lab] with [!UICONTROL RBAC] privileges.
+在此情況下，只 [!UICONTROL Audience Lab] 計算一次轉換。
 
-**我可以[!UICONTROL Audience Lab]與[!UICONTROL Profile Link Device Graph]和外部裝置圖形搭配使用([Adobe Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-overview.html)、Tapad裝置圖形、Liveramp裝置圖表)嗎？**
+<br> 
 
-For now, [!UICONTROL Audience Lab] can only split out segment populations by the devices connected to a qualifying device, when using the [!UICONTROL Profile Link Device Graph]. We are working on adding support in [!UICONTROL Audience Lab] for the other device graphs and will let you know when we do so.
+**如果上述案例的訪客先顯示連結至其已驗證描述檔的4個UUID之一的轉換特徵，接著又顯示連結至已驗證描述檔的2個UUID的轉換特徵，該怎麼辦？ 此案例是否計為一或三次轉換？**
+
+在此例中，計 [!UICONTROL Audience Lab] 算3個轉換，每個具有驗證特性的裝置各計算一個。
+
+<br> 
+
+**使用者是否可[!UICONTROL Segment: Read-Only]以存取，但也可以測[!UICONTROL Audience Lab]試區段建立存取權？**
+
+如需 [如何使用權限的詳細資訊](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) ，請參閱建立 [!UICONTROL Audience Lab] 區段測試 [!UICONTROL RBAC] 群組。
+
+**我是否可[!UICONTROL Audience Lab]以搭配使用[!UICONTROL Profile Link Device Graph]外部和外部裝置圖形([Adobe Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-overview.html)、Tapad Device Graph、Liveramp Device Graph)?**
+
+目前，使 [!UICONTROL Audience Lab] 用時，只能依連接至合格裝置的裝置來劃分區段人口族群 [!UICONTROL Profile Link Device Graph]。 我們正致力於在其他裝置圖 [!UICONTROL Audience Lab] 形中增加支援，並會在我們提供支援時通知您。
