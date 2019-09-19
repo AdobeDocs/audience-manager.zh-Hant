@@ -4,7 +4,7 @@ seo-description: 常見隱私權和資料相關問題的解答
 seo-title: 隱私權與資料保留常見問題
 solution: Audience Manager
 title: 隱私權與資料保留常見問題
-uuid: ef558fca-35ff-44f1-8527-f8 be9 f2 c7 e9
+uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 translation-type: tm+mt
 source-git-commit: c785c07a1572e9968e62a1bc753d24780eda64c5
 
@@ -17,19 +17,19 @@ source-git-commit: c785c07a1572e9968e62a1bc753d24780eda64c5
 
 <!-- faq_privacy.xml -->
 
-## Privacy FAQ {#privacy-faq}
+##  隱私權常見問答集 {#privacy-faq}
 
 >[!TIP]
 >
->Visit the [Adobe Privacy Center](https://www.adobe.com/privacy.html) for more information.
+>請造訪 [Adobe隱私權中心](https://www.adobe.com/privacy.html) ，以取得詳細資訊。
 
-**Audience Manager如何使用Cookie以及設定Cookie？**
+**Audience manager如何使用Cookie及其設定的Cookie?**
 
 See [Audience Manager Cookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html).
 
-**美國的Audience Manager客戶可以鎖定EU屬性的使用者嗎？**
+**美國的Audience manager客戶是否可將EU屬性的使用者鎖定在目標？**
 
-是。Audience Manager可與擁有國際資產和庫存的客戶合作。歐盟嚴格奉行隱私權法律，但Audience Manager的客戶則是在歐洲使用第一方資料進行受眾鎖定。Audience Manager可支援鎖定歐盟受眾，但您有責任遵守當地隱私權規範。
+是。Audience manager可與擁有國際屬性和庫存的客戶合作。 歐盟有嚴格的隱私權法，但Audience manager的客戶使用第一方資料來鎖定歐洲的受眾。 Audience manager可支援針對歐盟受眾的定位，但您有責任遵守當地的隱私權規定。
 
 <!-- 
 
@@ -40,60 +40,60 @@ See [Audience Manager Cookies](https://marketing.adobe.com/resources/help/en_US/
 
 ## 資料保留常見問題 {#data-retention-faq}
 
-下表列出不同資料類型和儲存系統的保留期。
+下表列出了不同資料類型和儲存系統的保留時間。
 
 <table id="table_21C0B13A57A44DE0999FB33F363C88F6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 資料類型、來源或儲存空間 </th> 
+   <th colname="col1" class="entry"> 資料類型、源或儲存 </th> 
    <th colname="col2" class="entry"> 資料保留期 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>後端伺服器 </p> </td> 
-   <td colname="col2"> <p>120天。 </p> <p> Audience Manager會在最後一次看到Audience Manager平台上的使用者後，從後端伺服器刪除使用者資料。<span class="keyword"> 如果Audience Manager</span> 在這120天的週期內記錄使用者活動，我們將保留此資料120天。 </p> </td> 
+   <td colname="col2"> <p>120天。 </p> <p> Audience manager會在上次在Audience manager平台上看到使用者120天後，從我們的後端伺服器刪除使用者資料。 如果 <span class="keyword"> Audience Manager</span> 在此120天週期內記錄使用者活動，我們會再將此資料保存120天。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Edge伺服器 </p> </td> 
-   <td colname="col2"> <p> 14天。 </p> <p>Audience Manager會在最後一次看到Audience Manager平台上的使用者後14天從我們的Edge伺服器刪除使用者資料。<span class="keyword"> 如果Audience Manager</span> 在這14天的週期內記錄使用者活動，我們將會保留此資料14天。如果使用者在14天後再次開始使用，則第一次新頁面檢視和使用者可操作之間會有延遲。在閒置超過14天後，需要6-18小時才能將完整的描述檔回到邊緣中心。 </p> </td> 
+   <td colname="col1"> <p>邊緣伺服器 </p> </td> 
+   <td colname="col2"> <p> 14天。 </p> <p>Audience manager會在上次在Audience manager平台上看到使用者14天後，從我們的邊緣伺服器刪除使用者資料。 如果 <span class="keyword"> Audience Manager</span> 在此14天週期內記錄使用者活動，我們將會再將此資料保存14天。 如果使用者在14天後再次啟用，則第一個新頁面檢視與使用者變成可操作的時間會延遲。 閒置超過14天後，需要6-18小時才能將完整的描述檔送回邊緣中心。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>原始記錄 </p> </td> 
-   <td colname="col2"> <p>180天(在無活動180天後移除)。 </p> <p>Raw logs are data received by an edge server via HTTP calls or from onboarded files sent in to <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col1"> <p>原始記錄檔 </p> </td> 
+   <td colname="col2"> <p>180天（在180天無活動後移除）。 </p> <p>原始記錄檔是邊緣伺服器透過HTTP呼叫或從已登入的檔案傳送至 <span class="keyword"> Audience Manager所收到的資料</span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>廣告伺服器記錄檔 </p> </td> 
-   <td colname="col2"> <p><b>報告</b> </p> <p>記錄檔最多可保留30天以供報告用途。We do not persist unmatched logs (i.e. logs for which there is no ID sync between a visitor's ad server ID and <span class="keyword"> Audience Manager</span> ID) in our backend storage, and matched logs stored in <span class="keyword"> Amazon S3</span> are retained for up to 30 days. </p> <p><b>可操作的記錄檔</b> </p> <p>相符項目和不相符記錄最多可保留30天。 </p> </td> 
+   <td colname="col2"> <p><b>報告</b> </p> <p>記錄檔會保留長達30天，以用於報告用途。 我們不會在後端儲存空間中保存不相符的記錄(亦即訪客的廣告伺服器ID與 <span class="keyword"> Audience Manager</span> ID之間沒有ID同步的記錄)，而 <span class="keyword"> Amazon S3</span> 中儲存的相符記錄會保留最多30天。 </p> <p><b>可操作的記錄檔</b> </p> <p>相符和不相符的記錄檔都可保留長達30天。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>CRM層級描述檔(已驗證的設定檔) </p> </td> 
-   <td colname="col2"> <p>非活動CRM層級設定檔(客戶ID)的預設時間(TTL)間隔為24個月。不過，您可以使用Audience Manager UI來減少或延長在一個月到年之間非活動CRM層級設定檔的TTL間隔。建立或編輯跨裝置資料來源時，您可以做到這一點。</p> <p>For more information, see Data Source Settings in <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> Create a Cross-Device Data Source </a>.</p> </td> 
+   <td colname="col1"> <p>CRM層級個人檔案（已驗證的個人檔案） </p> </td> 
+   <td colname="col2"> <p>非活動CRM層級設定檔（客戶ID）的預設存留時間(TTL)間隔為24個月。 不過，您可以使用Audience Manager UI來減少或延長非作用中CRM層級設定檔的TTL間隔，介於1個月到5年之間。 建立或編輯跨裝置資料來源時，您可以完成此作業。</p> <p>如需詳細資訊，請參閱「建立跨裝置 <a href="../features/profile-merge-rules/merge-rules-start.md#settings"> 資料來源」中的「資料來源設定」 </a>。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>行動裝置ID </p> </td> 
-   <td colname="col2"> <p>The retention conditions for mobile device IDs (<a href="../reference/ids-in-aam.md"> IDFA, GAID</a>) follow the cadence described in the first two rows, back-end servers and edge servers. </p> </td> 
+   <td colname="col2"> <p>行動裝置ID(<a href="../reference/ids-in-aam.md"> IDFA、GAID</a>)的保留條件遵循前兩列、後端伺服器和邊緣伺服器中所述的順序。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>客戶資料饋送(CMS) </p> </td> 
-   <td colname="col2"> <p>A CDF file contains the same data that an <span class="keyword"> Audience Manager</span> event call (/event) sends to our servers. 保留期為天。For more details about CDF, please refer to <a href="../features/cdf-files.md"> CDF Intro</a> and <a href="../faq/faq-cdf.md"> CDF FAQ</a>. </p> </td> 
+   <td colname="col1"> <p>客戶資料饋送(CDF) </p> </td> 
+   <td colname="col2"> <p>CDF檔案包含的資料與 <span class="keyword"> Audience Manager</span> (/event)事件呼叫(/event)傳送至我們伺服器的資料相同。 保留期為8天。 有關CDF的更多詳細資訊，請參閱 <a href="../features/cdf-files.md"> CDF介紹</a><a href="../faq/faq-cdf.md"> 和CDF常見問答</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>同步化ID之間的映射 </p> </td> 
-   <td colname="col2"> <p>Mappings between synchronized IDs may be kept for the life of the associated <a href="../reference/ids-in-aam.md"> Audience Manager Unique User ID (AAM UUID)</a>. </p> </td> 
+   <td colname="col1"> <p>同步ID之間的映射 </p> </td> 
+   <td colname="col2"> <p>同步化ID之間的映射可在相關 <a href="../reference/ids-in-aam.md"> Audience Manager唯一使用者ID(AAM UUID)有效期間內保留</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>傳入資料 </p> </td> 
-   <td colname="col2"> <p>This is inbound data you send to <span class="keyword"> Audience Manager</span> by FTP or directly to an <span class="keyword"> Amazon S3</span> directory. See the <a href="../faq/faq-inbound-data-ingestion.md"> Inbound Customer Data Ingestion FAQ</a>. </p> </td> 
+   <td colname="col2"> <p>這是您透過FTP傳送至 <span class="keyword"> Audience Manager</span> ，或直接傳送至 <span class="keyword"> Amazon S3目錄的傳入資料</span> 。 請參閱傳入 <a href="../faq/faq-inbound-data-ingestion.md"> 客戶資料擷取常見問答</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>傳出資料 </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager</span> 會傳送給第三方啓動合作夥伴的批次資料。保留期為天。For more details about Outbound data, please refer to <a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md"> Outbound Batch Transfers</a>. </p> </td> 
+   <td colname="col1"> <p>出站資料 </p> </td> 
+   <td colname="col2"> <p>這是Audience manager傳送給協力 <span class="keyword"> 廠商啟動合作夥伴</span> 的批次資料。 保留期為8天。 有關出站資料的詳細資訊，請參閱出站批 <a href="../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md"> 次傳輸</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Trait Qualification Data Retention {#trait-qual}
+## 特徵限定資料保留 {#trait-qual}
 
 下表列出特徵資格的保留選項。
 
@@ -107,11 +107,11 @@ See [Audience Manager Cookies](https://marketing.adobe.com/resources/help/en_US/
  <tbody> 
   <tr> 
    <td colname="col1"> <p>刪除特徵 </p> </td> 
-   <td colname="col2"> <p>刪除特徵會移除所有過去符合特徵特徵的使用者設定檔中的特徵資格資料。 </p> </td> 
+   <td colname="col2"> <p>刪除特徵會從過去符合特徵的所有使用者設定檔中移除特徵資格資料。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>達到特徵限制 </p> </td> 
-   <td colname="col2"> <p>我們限制每個使用者個人檔案的100，000個特徵資格。此限制適用於已驗證的設定檔和裝置設定檔。如果使用者個人檔案達到此限制，我們將會優先刪除最舊的特徵資格。 </p> <p>For more details, read our <a href="../features/traits/trait-qualification-reference.md#trait-qualification-limit"> Trait Qualification Limit</a>. </p> </td> 
+   <td colname="col1"> <p>已達到特徵限制 </p> </td> 
+   <td colname="col2"> <p>我們為每個使用者個人檔案設定100,000個特徵資格限制。 此限制適用於已驗證的設定檔和裝置設定檔。 如果使用者設定檔達到此限制，我們會先入先出地刪除最舊的特徵資格。 </p> <p>如需詳細資訊，請閱讀我們的 <a href="../features/traits/trait-qualification-reference.md#trait-qualification-limit"> 特徵資格限制</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
