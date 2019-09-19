@@ -1,9 +1,9 @@
 ---
-description: 可讓您使用資料整合庫(DIL)進行程式設計的方法。
-seo-description: 可讓您使用資料整合庫(DIL)進行程式設計的方法。
-seo-title: 資料整合資料庫API方法
+description: 可讓您以程式設計方式與資料整合庫(DIL)搭配運作的方法。
+seo-description: 可讓您以程式設計方式與資料整合庫(DIL)搭配運作的方法。
+seo-title: 資料整合庫API方法
 solution: Audience Manager
-title: 資料整合資料庫API方法
+title: 資料整合庫API方法
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
 translation-type: tm+mt
 source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
@@ -11,19 +11,19 @@ source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
 ---
 
 
-# Data Integration Library API Methods {#data-integration-library-api-methods}
+# 資料整合庫API方法 {#data-integration-library-api-methods}
 
-Methods that let you work programmatically with the [!UICONTROL Data Integration Library] ([!UICONTROL DIL].
+可讓您以程式設計方式使用(. [!UICONTROL Data Integration Library][!UICONTROL DIL]..
 
 >[!IMPORTANT]
 >
->資料整合資料庫API已過時。This API used to generate DIL, which you can now self-download here: [DIL download](https://github.com/Adobe-Marketing-Cloud/dil/releases).
+>資料整合庫API已過時。 此API用來產生DIL，您現在可從這裡自行下載： [DIL下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
 
 <!-- c_data_integr_library_api.xml -->
 
-## Return Versions for DIL {#return-version-dil}
+## DIL的傳回版本 {#return-version-dil}
 
-A `GET` method that returns a list of versions ordered from oldest to newest.
+一種 `GET` 傳回從最舊到最新排序版本清單的方法。
 
 <!-- r_api_return_versions_dil.xml -->
 
@@ -33,15 +33,15 @@ A `GET` method that returns a list of versions ordered from oldest to newest.
 
 ### 回應
 
-A successful request returns response code `["4.0", "4.1"]` as shown below.
+成功的請求會傳回回回應程 `["4.0", "4.1"]` 式碼，如下所示。
 
 ```
 ["4.0", "4.1"]
 ```
 
-## Return JSON Schema for Version {#return-json-schema-version}
+## 傳回版本的JSON結構描述 {#return-json-schema-version}
 
-`GET` 傳回版本 [!DNL JSON] 結構的方法 [!UICONTROL DIL] 。Supports using alias [!UICONTROL LATEST] for version to get the latest version of [!UICONTROL DIL].
+返 `GET` 回版本的 [!DNL JSON] 模式的方 [!UICONTROL DIL] 法。 支援使用版 [!UICONTROL LATEST] 本別名獲取最新版本 [!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -51,7 +51,7 @@ A successful request returns response code `["4.0", "4.1"]` as shown below.
 
 ### 回應
 
-A successful request returns response code `["4.0", "4.1"]` and data as shown below.
+成功的請求會傳回回回應 `["4.0", "4.1"]` 程式碼和資料，如下所示。
 
 ```
 { 
@@ -375,9 +375,9 @@ A successful request returns response code `["4.0", "4.1"]` and data as shown be
 } 
 ```
 
-## Generate DIL {#generate-dil}
+## 產生DIL {#generate-dil}
 
-`GET` 根據 [!UICONTROL DIL] 使用指定版本在請求主體中產生 [!UICONTROL DIL]的方法。If the alias `LATEST` is used for version in the URL, the latest version of [!UICONTROL DIL] is generated.
+一種 `GET` 基於使用 [!UICONTROL DIL] 指定版本的傳入請求主體生成的方法 [!UICONTROL DIL]。 如果別名 `LATEST` 用於URL中的版本，則會產生最新 [!UICONTROL DIL] 的版本。
 
 <!-- r_api_generate_dil.xml -->
 
@@ -461,4 +461,4 @@ A successful request returns response code `["4.0", "4.1"]` and data as shown be
 
 ### 回應
 
-A successful update returns response code `201 created` along with the [!UICONTROL DIL] [!DNL JavaScript] code.
+成功的更新會傳回回回應 `201 created` 程式碼以及程 [!UICONTROL DIL] 式 [!DNL JavaScript] 碼。
