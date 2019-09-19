@@ -1,39 +1,39 @@
 ---
-description: 「廣告單位重疊」報表會顯示為熱圖，顯示廣告件數之間的高和低overlap。
-seo-description: 「廣告單位重疊」報表會顯示為熱圖，顯示廣告件數之間的高和低overlap。
-seo-title: 廣告單元重疊
+description: 「廣告單位重疊」報表會以熱圖顯示，反白顯示廣告單位之間的高與低重疊。
+seo-description: 「廣告單位重疊」報表會以熱圖顯示，反白顯示廣告單位之間的高與低重疊。
+seo-title: 廣告單位重疊
 solution: Audience Manager
-title: 廣告單元重疊
-uuid: e4467e81-accf-474e-b501-89d57395651 f
+title: 廣告單位重疊
+uuid: e4467e81-acbf-474e-b501-89d57395651f
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Ad Unit Overlap{#ad-unit-overlap}
+# 廣告單位重疊{#ad-unit-overlap}
 
-**[!UICONTROL Ad Unit Overlap]** 報表會顯示為熱圖，強調您的廣告件數之間的高和低overlap。
+報 **[!UICONTROL Ad Unit Overlap]** 表會以熱圖顯示，反白標示廣告單位之間高低重疊。
 
 ## 使用案例 {#use-cases}
 
-**[!UICONTROL Ad Unit Overlap]** 透過此報表，您可以深入瞭解網路屬性中受眾的位置。報表會考量您的100個主要相關屬性，並顯示它們之間的重疊。
+透過報 **[!UICONTROL Ad Unit Overlap]** 表，您可以深入瞭解您的讀者在Web屬性中的重疊位置。 報表會考慮您的100個排名最前的相關屬性，並顯示它們之間的重疊。
 
-## Using the Ad Unit Overlap Report {#using-the-report}
+## 使用廣告單位重疊報表 {#using-the-report}
 
-Use the **[!UICONTROL Top N Base Ad Units]** and **[!UICONTROL Top N Overlapping Ad Units]** controls to select your desired number of ad units for the overlap. 您最多可以為每個項目選取100個項目。
+使用和 **[!UICONTROL Top N Base Ad Units]** 控 **[!UICONTROL Top N Overlapping Ad Units]** 制項來選擇您所要的重疊廣告單位數。 您最多可以為每個項目選取100個項目。
 
-Use the **Day Range** and **Date Through** controls to adjust your look-back range. 請注意，天和30天回顧期間僅適用於周日日期。
+使用 **日範圍****和日期穿透控制項** ，調整您的回顧範圍。 請注意，7天和30天回顧期間僅適用於星期日。
 
-Use the **[!UICONTROL Base Ad Unit]** and the **[!UICONTROL Overlap Ad Unit]** controls to select which of your ad units you want to display in the overlap report.
+使用 **[!UICONTROL Base Ad Unit]** 和控 **[!UICONTROL Overlap Ad Unit]** 制項，選擇要在重疊報表中顯示的廣告單位。
 
 >[!IMPORTANT]
 >
->When enabling [!UICONTROL Audience Optimization for Publishers], you must include descriptive metadata for [!UICONTROL Ad Unit IDs], as described in Step 3 of [Import DFP Data Files Into Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). By doing this, you assure that the report details the web property as [!UICONTROL Ad Unit] instead of the [!UICONTROL Ad Unit ID].
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Ad Unit IDs]如將DFP資料檔案匯 [入Audience manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Ad Unit] Web屬性的形式詳細說明 [!UICONTROL Ad Unit ID]。
 
-## Interpreting the Results {#interpreting-results}
+## 解讀結果 {#interpreting-results}
 
-[!UICONTROL Ad Unit Overlap] 您的報表看起來類似下方的報表。將滑鼠指標暫留在任何儲存格上，以取得更多關於特定重疊的資訊。如需範例報表下表格中其他資訊的詳細資訊，請參閱說明。
+您 [!UICONTROL Ad Unit Overlap] 的報表看起來可能類似以下。 將滑鼠指標暫留在任何儲存格上，以取得有關該特定重疊的詳細資訊。 請參閱範例報表下表格中的其他資訊說明。
 
 ![](assets/publisher_ad_unit_overlap.png)
 
@@ -47,27 +47,27 @@ Use the **[!UICONTROL Base Ad Unit]** and the **[!UICONTROL Overlap Ad Unit]** c
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重疊廣告單位</span> </p> </td> 
-   <td colname="col2"> <p>庫存項目的名稱。例如，這可以是您的一個網站或網站上的文章。在上述影像中，基本廣告單位為文章-18。 </p> </td> 
+   <td colname="col2"> <p>庫存項目的名稱。 例如，這可以是您的其中一個網站或網站上的文章。 在上圖中，基本廣告單位為第9-18條。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 基本廣告單位</span> </p> </td> 
-   <td colname="col2"> <p>庫存項目的名稱。例如，這可以是您的一個網站或網站上的文章。在上述影像中，基本廣告單位為文章-8。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 基本廣告單元</span> </p> </td> 
+   <td colname="col2"> <p>庫存項目的名稱。 例如，這可以是您的其中一個網站或網站上的文章。 在上圖中，基本廣告單位為文章1 - 8。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 重疊廣告單元獨特計數計數</span> </p> </td> 
-   <td colname="col2"> <p>已造訪廣告單位項目-18的使用者人數。此資訊會從DFP記錄檔中擷取。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 重疊廣告單位唯一客戶計數</span> </p> </td> 
+   <td colname="col2"> <p>已瀏覽廣告單位項目的使用者人數9 - 18。 此資訊會從DFP記錄檔中擷取。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 基本廣告單位獨特計數計數</span> </p> </td> 
-   <td colname="col2"> <p>已造訪廣告單元項目-8的使用者人數。此資訊會從DFP記錄檔中擷取。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 基本廣告單位唯一客戶計數</span> </p> </td> 
+   <td colname="col2"> <p>已瀏覽廣告單位項目1 - 8的使用者人數。 此資訊會從DFP記錄檔中擷取。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 重疊獨特計數計數</span> </p> </td> 
-   <td colname="col2"> <p>The overlap between your users who have visited a <span class="wintitle"> Base Ad Unit</span> and <span class="wintitle"> Overlap Ad Unit</span>. </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 重疊唯一客戶計數</span> </p> </td> 
+   <td colname="col2"> <p>已造訪「基本廣告單位」和「重 <span class="wintitle"> 疊廣告單位</span> 」的 <span class="wintitle"> 使用者之間的重疊</span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重疊百分比</span> </p> </td> 
-   <td colname="col2"> <p>The overlap between your users who have visited a <span class="wintitle"> Base Ad Unit</span> and <span class="wintitle"> Overlap Ad Unit</span>. This is the <span class="wintitle"> Overlap Uniques Count</span>, expressed as a percentage of the <span class="wintitle"> Base Ad Unit</span>. </p> </td> 
+   <td colname="col2"> <p>已造訪「基本廣告單位」和「重 <span class="wintitle"> 疊廣告單位</span> 」的 <span class="wintitle"> 使用者之間的重疊</span>。 這是「重 <span class="wintitle"> 疊唯一客戶計數」</span>，表示為「基本廣告單 <span class="wintitle"> 位」的百分比</span>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
