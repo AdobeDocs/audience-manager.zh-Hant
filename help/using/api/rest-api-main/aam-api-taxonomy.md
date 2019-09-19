@@ -1,29 +1,29 @@
 ---
-description: 可讓您檢視Audience Manager常用分類法的方法。此選用分類配置將特徵組織成業界標準類別。
-seo-description: 可讓您檢視Audience Manager常用分類法的方法。此選用分類配置將特徵組織成業界標準類別。
+description: 可讓您檢視Audience Manager常見分類法的方法。 此選擇性分類方案將特徵組織為業界標準類別。
+seo-description: 可讓您檢視Audience Manager常見分類法的方法。 此選擇性分類方案將特徵組織為業界標準類別。
 seo-title: 分類API方法
 solution: Audience Manager
 title: 分類API方法
-uuid: ee29ba5-e9 ba-4498-a6 ee-7343227dd7 ba
+uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
 translation-type: tm+mt
 source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 ---
 
 
-# Taxonomic API Methods {#taxonomic-api-methods}
+# 分類API方法 {#taxonomic-api-methods}
 
-可讓您檢視Audience Manager常用分類法的方法。此選用分類配置將特徵組織成業界標準類別。
+可讓您檢視Audience Manager常見分類法的方法。 此選擇性分類方案將特徵組織為業界標準類別。
 
 <!-- c_rest_api_taxonomy.xml -->
 
 >[!NOTE]
 >
->您無法使用這些方法建立新的分類類別或分類特徵。To classify a trait, specify the appropriate `categoryId` with a trait create or update method.
+>您無法使用這些方法建立新的分類類別或分類特徵。 若要分類特徵，請使用特徵建 `categoryId` 立或更新方法指定適當。
 
-## Return a Specific Taxonomy {#return-specific-taxonomy}
+## 返回特定分類 {#return-specific-taxonomy}
 
-A `GET` method that returns details about the specified taxonomic category.
+一種 `GET` 返回有關指定分類類別的詳細資訊的方法。
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -33,7 +33,7 @@ A `GET` method that returns details about the specified taxonomic category.
 
 ### 回應
 
-A successful response returns `200 OK` and the category for the specified ID. An unsuccessful request returns `404 No Content` if the ID does not exist.
+成功的回應 `200 OK` 會傳回指定ID的類別。 如果ID不存 `404 No Content` 在，則傳回不成功的請求。
 
 ```
 {
@@ -46,9 +46,9 @@ A successful response returns `200 OK` and the category for the specified ID. An
 }
 ```
 
-## Return all Taxonomic Categories {#return-all-taxonomy-categories}
+## 返回所有分類類別 {#return-all-taxonomy-categories}
 
-A `GET` method that returns a list of the top-level categories in an array.
+一 `GET` 種返回陣列中頂級類別清單的方法。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -58,7 +58,7 @@ A `GET` method that returns a list of the top-level categories in an array.
 
 ### 回應
 
-截斷捷徑。
+因簡短性而截斷。
 
 ```
 [
@@ -89,9 +89,9 @@ A `GET` method that returns a list of the top-level categories in an array.
 ]
 ```
 
-## Return Taxonomic Sub-Categories {#return-taxonomy-sub-categories}
+## 返回分類子類別 {#return-taxonomy-sub-categories}
 
-A `GET` method that returns sub-categories for the specified parent category in an array.
+一種 `GET` 在陣列中返回指定父類別子類別的方法。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -101,7 +101,7 @@ A `GET` method that returns sub-categories for the specified parent category in 
 
 ### 回應
 
-A successful response returns `200 OK` and the category for the specified ID. An unsuccessful request returns `404 No Content` if the ID does not exist. 截斷捷徑。
+成功的回應 `200 OK` 會傳回指定ID的類別。 如果ID不存 `404 No Content` 在，則傳回不成功的請求。 因簡短性而截斷。
 
 ```
 [
