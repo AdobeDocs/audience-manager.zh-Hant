@@ -1,9 +1,9 @@
 ---
-description: 一種GET方法，可傳回指定之destinationID的目的地。
-seo-description: 一種GET方法，可傳回指定之destinationID的目的地。
-seo-title: 依目的地ID傳回目的地ID
+description: 一種GET方法，可傳回指定destinationId的目的地。
+seo-description: 一種GET方法，可傳回指定destinationId的目的地。
+seo-title: 依目標ID傳回目標
 solution: Audience Manager
-title: 依目的地ID傳回目的地ID
+title: 依目標ID傳回目標
 uuid: abce7426-55a5-4045-93a7-0487652a7189
 translation-type: tm+mt
 source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
@@ -11,9 +11,9 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 ---
 
 
-# Return A Destination by Destination ID {#return-a-destination-by-destination-id}
+# 依目標ID傳回目標 {#return-a-destination-by-destination-id}
 
-`GET` 傳回指定 `destinationId`之目標的方法。
+返回 `GET` 指定目標的方法 `destinationId`。
 
 <!-- r_get_all_destinations_order_id.xml -->
 
@@ -23,7 +23,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 >[!NOTE]
 >
->To populate the `mappings` field pass in `includeMappings=true` in the URL.
+>若要填入 `mappings` URL中的欄 `includeMappings=true` 位傳遞。
 
 ## 回應
 
@@ -53,9 +53,9 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 }
 ```
 
-## Return All Destinations {#return-all-destinations}
+## 返回所有目標 {#return-all-destinations}
 
-A `GET` method that returns all destinations for the specified partner.
+返回 `GET` 指定夥伴的所有目標的方法。
 
 <!-- r_get_all_destinations.xml -->
 
@@ -65,15 +65,15 @@ A `GET` method that returns all destinations for the specified partner.
 
 >[!NOTE]
 >
->* *(選擇性)* 傳入以 `containsSegment=<sid>` 傳回對應至指定區段之所有目的地的陣列。For example, your query could look similar to this: `GET .../destinations/?containsSegment=4321`.
+>* *（可選）* ，請傳入 `containsSegment=<sid>` 以傳回映射至指定區段之所有目的地的陣列。 例如，您的查詢看起來可能類似下列： `GET .../destinations/?containsSegment=4321`。
    >
    >
-* 請勿傳回完整目標物件。如果需要完全填入物件，請依資料順序取得目的地。
+* 不返回完整目標對象。 如果需要完全填入的物件，請依資料順序取得目的地。
 
 
-### 選擇性查詢參數
+### 可選查詢參數
 
-You can use these optional parameters with API methods that return *all* properties for an object. Set these options in the request string when passing that query in to the [!DNL API]. See [Optional Parameters](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
+您可以將這些可選參數與API方法搭配使用， *以傳回* 物件的所有屬性。 將查詢傳入請求字串中時，請在請求字串中設定這些選項 [!DNL API]。 請參 [閱可選參數](../../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -85,23 +85,23 @@ You can use these optional parameters with API methods that return *all* propert
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"><code> page</code> </td>
-   <td colname="col2"> 依頁碼傳回結果。編號開始於0。 </td>
+   <td colname="col2"> 依頁碼傳回結果。 編號從0開始。 </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> pageSize</code> </td>
-   <td colname="col2"> 設定請求傳回的回應結果數(預設為10)。 </td>
+   <td colname="col2"> 設定請求傳回的回應結果數目（預設為10）。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> SortBy</code> </td>
-   <td colname="col2">Sorts and returns results according to the specified <span class="keyword"> JSON</span> property. </td>
+   <td colname="col1"><code> sortBy</code> </td>
+   <td colname="col2">根據指定的 <span class="keyword"> JSON屬性排序並傳回結果</span> 。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> 遞減遞減</code> </td>
-   <td colname="col2"> 排序並傳回結果遞減順序。遞增是預設值。 </td>
+   <td colname="col1"><code> 降序</code> </td>
+   <td colname="col2"> 以遞減順序排序和傳回結果。 預設為遞增。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。例如，假設您想尋找所有該項目值欄位中字詞「Test」的所有模型的結果。您的範例請求可能類似於： <p><code> GET</code>Social。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
+   <td colname="col1"><code> 搜尋</code> </td>
+   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： <p><code> 取得https://api.demdex.com/v1/models/?search=Test</code>。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -138,9 +138,9 @@ You can use these optional parameters with API methods that return *all* propert
 ]
 ```
 
-## Return a Destination Mapping With the Mapping ID {#return-dest-mapping-id}
+## 傳回具有映射ID的目標映射 {#return-dest-mapping-id}
 
-A `GET` method that returns an individual destination mapping based on the `mappingId`.
+一種 `GET` 基於返回單個目標映射的方法 `mappingId`。
 
 <!-- r_get_destination_trait_data_order.xml -->
 
@@ -175,15 +175,15 @@ A `GET` method that returns an individual destination mapping based on the `mapp
 }
 ```
 
-## Return Destination Mappings {#return-dest-mappings}
+## 返回目標映射 {#return-dest-mappings}
 
-A `GET` method that returns the mappings for a destination.
+返回 `GET` 目標映射的方法。
 
 <!-- r_get_destination_mappings.xml -->
 
 >[!NOTE]
 >
->傳回的對應取決於目的地類型和設定。
+>傳回的對應是目標類型和配置特定的。
 
 ### 請求
 
@@ -249,9 +249,9 @@ A `GET` method that returns the mappings for a destination.
 {
 ```
 
-## Return All Available Destination Platforms {#return-dest-platforms}
+## 返回所有可用的目標平台 {#return-dest-platforms}
 
-A `GET` method that returns all available device platforms for destinations.
+一種 `GET` 返回目標所有可用設備平台的方法。
 
 <!-- r_get_dest_platforms.xml -->
 
@@ -267,9 +267,9 @@ BROWSER, ANDROID, iOS, ALL
 ]
 ```
 
-## Return S2S and Bulk S2S Destination Job History {#return-job-history}
+## 傳回S2S和大量S2S目標作業歷史記錄 {#return-job-history}
 
-`GET` 傳回對外 [!UICONTROL Server-to-Server] ( [!UICONTROL S2S])和大量 [!UICONTROL S2S] 目的地工作歷史記錄資訊的方法。
+一種 `GET` 返回出站( [!UICONTROL Server-to-Server] )和大量目標作業 [!UICONTROL S2S][!UICONTROL S2S] 歷史資訊的方法。
 
 <!-- r_get_job_history.xml -->
 
@@ -277,7 +277,7 @@ BROWSER, ANDROID, iOS, ALL
 
 `GET https://api.demdex.com/v1/destinations/655/history/outbound?startDate=1000000000&endDate=1403034473000`
 
-Required query parameters: `startDate` = *&lt;`epochtime`&gt;* and `endDate` = *&lt;`epochtime`&gt;*.
+所需查詢參數： `startDate` = *&lt;`epochtime`&gt;和* = `endDate` &lt; *`epochtime`*&gt;
 
 ### 回應
 
