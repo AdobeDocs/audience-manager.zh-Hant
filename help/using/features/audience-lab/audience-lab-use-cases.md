@@ -1,58 +1,58 @@
 ---
-description: Audience Lab可讓您使用基準區段來建立測試群組，以啓用數個使用案例。您可以將測試群組分為數個互斥測試區段，將這些區段對應至不同目的地，然後判斷哪些區段最有效地推動轉換。
-seo-description: Audience Lab可讓您使用基準區段來建立測試群組，以啓用數個使用案例。您可以將測試群組分為數個互斥測試區段，將這些區段對應至不同目的地，然後判斷哪些區段最有效地推動轉換。
-seo-title: 觀眾Lab使用案例
+description: Audience lab可讓您使用基準區段來建立測試群組，借以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
+seo-description: Audience lab可讓您使用基準區段來建立測試群組，借以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
+seo-title: Audience lab使用案例
 solution: Audience Manager
-title: 觀眾Lab使用案例
+title: Audience lab使用案例
 topic: DIL API
-uuid: 727bec8a-df9 a-40cc-b8 a7-e1980 d146 a84
+uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Audience Lab Use Cases {#audience-lab-use-cases}
+# Audience lab使用案例 {#audience-lab-use-cases}
 
-[!UICONTROL Audience Lab] 允許您使用基準區段建立測試群組，啓用數個使用案例。您可以將測試群組分為數個互斥測試區段，將這些區段對應至不同目的地，然後判斷哪些區段最有效地推動轉換。
+[!UICONTROL Audience Lab] 允許您使用基線區段來建立測試群組，以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
 
-## Compare Models in Audience Lab {#compare-models}
+## Audience lab中的模型比較 {#compare-models}
 
-You can use several different types and sources of models in [!DNL Audience Manager]. [!UICONTROL Audience Lab] 提供簡單的方式來比較客戶的轉化率。
+您可以在中使用幾種不同的模型類型和來源 [!DNL Audience Manager]。 [!UICONTROL Audience Lab] 提供比較客戶在各個作用中模型轉換率的簡單方式。
 
 <!-- audience-lab-compare-models.xml -->
 
-在此使用案例中，您會比較不同的模型。You can either use models created via an in-house data warehouse and import them in [!DNL Audience Manager] as [Onboarded Traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) or you can use the [Algorithmic Models](../../features/algorithmic-models/understanding-models.md) feature in [!DNL Audience Manager].
+在此使用案例中，您會比較不同的模型。 您可以使用透過內部資料倉庫建立的模型，並將其匯入為「已登入特徵」( [!DNL Audience Manager][Onhocted Traits](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) )，或使用 [中的「演算模型](../../features/algorithmic-models/understanding-models.md) 」功能 [!DNL Audience Manager]。
 
-1. Create two models, either in the [Model Builder](../../features/algorithmic-models/create-model.md), or via an outside platform.
-1. Create [algorithmic traits](../../features/traits/create-algorithmic-traits.md) from the algorithmic model or import your own models as onboarded traits.
-1. 建立互斥區段，讓兩個模型的使用者不會重疊：
+1. 在 [Model Builder](../../features/algorithmic-models/create-model.md)，或透過外部平台建立兩個模型。
+1. 從演 [算法模型建立演算法特徵](../../features/traits/create-algorithmic-traits.md) ，或將您自己的模型匯入為已登入特徵。
+1. 建立互斥的區段，讓兩個模型中的使用者不會重疊：
 
-   * Create a *Model 1 Segment* and a *Model 2 Segment*.
-   * Have the segment rule for *Model 1 Segment* be model 1 trait [!DNL AND NOT] model 2 trait, and vice-versa for *Model 2 Segment*.
+   * 建立 *模型1段* 和 *模型2段*。
+   * 讓模型1區段的區 *段規則為模型* 1特徵 [!DNL AND NOT] 模型2特徵，而模型2區段的區段規則 *亦然*。
 
-1. [建立兩個區段測試群組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) ， [!UICONTROL Audience Lab]其中一個包含 *模型區段* 作為基準，另一個用於 *作為基準的* 模型區段。
+1. [在中建立兩個段測試組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) ，一個 [!UICONTROL Audience Lab]以模型1段作為基線 *，另一個以模型2段作為基線*** 。
 
-   * 請為兩個測試群組維持相同的變數：相同目的地、創意、轉化特徵。
-   * 請確定測試區段的使用者人數類似(例如，1.6萬和800萬名使用者，而1000000和1000000則並非如此)。
-   * 在每個測試區段測試群組中保留控制區段。如此，您就可以將每個區段的一小部分設定為一部分，而不會在測試中明確定位它們。
+   * 請讓兩個測試群組的變數保持相同：相同的目的地、創意、轉換特性。
+   * 請確定測試區段的使用者數量相近（例如160萬和180萬是正確的，160萬和1600萬不是正確的）。
+   * 在每個測試區段測試群組中保留控制區段。 如此，您就可以保留每個區段的一小部分，而不會在測試中明確定位。
 
 1. 檢查結果：
 
-   * [「觀眾Lab」報表檢視](../../features/audience-lab/audience-lab-reporting-view.md) 將顯示每個模型驅動的轉換次數。對於基於轉換的促銷活動，驅動最多轉換的測試區段表示表現最佳的模型。
-   * 因為您擁有控制區段，所以您也可以評估模型對「標準定位」的執行方式。您不只測試一個模型與另一個模型，而測試「此模型是否比一般實務更好？」
+   * Audience lab報 [表檢視](../../features/audience-lab/audience-lab-reporting-view.md) ，將顯示每個模型所推動的轉換數。 對於轉換型促銷活動，驅動最多轉換的測試區段將代表執行成效最佳的模型。
+   * 由於您擁有控制區段，因此您也可以評估模型對「標準定位」的運作方式。 您不僅測試一種模型，還測試「此模型是否比一般做法更好？」
 
-## Testing Creatives Across Destinations {#testing-creatives}
+## 測試各目標地的創意素材 {#testing-creatives}
 
 <!-- audience-lab-creatives-across-destinations.xml -->
 
-Use [!UICONTROL Audience Lab] to measure the number of conversions a creative is driving across different destinations. 此使用案例也可讓您測量創意轉換，而不是自然發生轉換。
+使用 [!UICONTROL Audience Lab] 測量創意人員在不同目標上所推動的轉換數。 此使用案例也可讓您測量創意素材的轉換與自然發生的轉換。
 
-1. [建立區段測試群組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)，選取您要將其測試為基準區段的區段。
+1. [建立區段測試群組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)，選取您要針對創意素材進行測試的區段作為基準區段。
 1. 將基準區段分割為測試區段和控制區段。
-1. 將測試區段對應至您想要測試的不同目的地。
-1. 控制區段可保留且未對應至任何目的地。測試素材不應定位控制區段，以設定結果基準，以自然發生轉換。
+1. 將測試區段對應至您要測試的不同目的地。
+1. 控制段可以預扣且不映射至任何目的地。 測試創意人員不應將控制區段定位為設定自然發生的轉換結果基準。
 1. 指定測試的開始日期和結束日期。
-1. 設定目的地中的區段和創意。
-1. [Audience Lab報表檢視將](../../features/audience-lab/audience-lab-reporting-view.md) 顯示創意在目的地中驅動的轉換次數。
-1. 因為您建立了控制區段，所以您也可以評估創意對自然發生轉換的效果。您正在測試問題：「這種創意創造的轉換率高於一般的做法嗎？」
+1. 在目標位置設定區段和創意素材。
+1. Audience Lab [報表檢視](../../features/audience-lab/audience-lab-reporting-view.md) ，將顯示創意人員在各目標地區推動的轉換次數。
+1. 由於您建立了控制區段，因此您也可以評估創意對自然發生的轉換有何影響。 您正在測試這個問題：「此創意產生的轉換率是否高於一般實務？」
