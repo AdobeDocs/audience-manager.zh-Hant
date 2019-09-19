@@ -1,11 +1,11 @@
 ---
-description: 根據特徵類型，Audience Manager中的特徵符合或特徵實現方式不同。請參閱下表以取得特徵資格的詳細資訊。
-keywords: 特徵資格；特徵實現；獨特特徵實作；UTR；特徵總人口數；TTP
-seo-description: 根據特徵類型，Audience Manager中的特徵符合或特徵實現方式不同。請參閱下表以取得特徵資格的詳細資訊。
+description: 特徵資格或特徵實現在Audience manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
+keywords: 特徵限定；特徵實現；獨特特徵實現； UTR；特徵總量； TTP
+seo-description: 特徵資格或特徵實現在Audience manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
 seo-title: 特徵資格參考
 solution: Audience Manager
 title: 特徵資格參考
-uuid: 07e0a639-2fb2-45d-壞7-10fb46 b08 ba9
+uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
 source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
 
@@ -14,9 +14,9 @@ source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
 
 # 特徵資格參考 {#trait-qualification-reference}
 
-根據特徵類型，Audience Manager中的特徵符合或特徵實現方式不同。請參閱下表以取得特徵資格的詳細資訊。
+特徵資格或特徵實現在Audience manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
 
-## Trait Qualification by Trait Type {#trait-type}
+## 依特徵類型區分特徵限定 {#trait-type}
 
 <table id="table_14CD705F376B44EEA9A6C011984356F0"> 
  <thead> 
@@ -28,41 +28,41 @@ source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
  <tbody> 
   <tr> 
    <td colname="col1"> <p>規則型特徵 </p> </td> 
-   <td colname="col2"> <p>當使用者在瀏覽器中符合特徵時，特徵資格就會即時生效。Your users will start qualifying for a rule-based trait approximately 4 hours after you <a href="../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits"> create the trait</a> in the UI. </p> <p>Rule-based traits allow you to use <a href="../../features/segments/recency-and-frequency.md"> recency and frequency</a> controls for ad frequency capping and other use cases. </p> </td> 
+   <td colname="col2"> <p>特徵資格會即時發生，因為使用者在瀏覽器中符合特徵資格。 在您在UI中建立特徵後大約4小時，您的使用者就 <a href="../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits"> 會開始符合規則</a> 。 </p> <p>規則型特徵可讓您使用時近 <a href="../../features/segments/recency-and-frequency.md"> 和頻率控制項</a> ，來設定廣告頻率上限和其他使用案例。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>已登錄的特性 </p> </td> 
-   <td colname="col2"> <p>Trait qualification happens after an inbound file is processed, i.e. the inbound file is <a href="../../faq/faq-inbound-data-ingestion.md"> imported into Audience Manager</a> and that is when the trait qualification happens. </p> <p> 對於已登錄的特性，使用者個人檔案的資格上限為1。 </p> </td> 
+   <td colname="col1"> <p>已登錄特徵 </p> </td> 
+   <td colname="col2"> <p>特徵限定會在處理傳入檔案後發生，例如傳入檔案會匯入 <a href="../../faq/faq-inbound-data-ingestion.md"> Audience Manager</a> ，也就是特徵限定發生時。 </p> <p> 對於已登入的特徵，使用者設定檔的資格上限為1。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>演算法特性 </p> </td> 
-   <td colname="col2"> <p>對於演算法特徵，使用者個人資料的資格上限為1。 </p> </td> 
+   <td colname="col1"> <p>演算法特徵 </p> </td> 
+   <td colname="col2"> <p>對於演算法特徵，使用者設定檔的最大資格數為1。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>資料夾特性 </p> </td> 
-   <td colname="col2"> <p>資料夾特徵會總結其特徵特徵的特徵資格。 </p> <p>Read <a href="../../features/traits/about-folder-traits.md"> Folder Traits: About</a> for more information. </p> </td> 
+   <td colname="col1"> <p>資料夾特徵 </p> </td> 
+   <td colname="col2"> <p>資料夾特徵會匯總其所含特徵的特徵資格。 </p> <p>閱讀資 <a href="../../features/traits/about-folder-traits.md"> 料夾特徵：關於</a> ，以取得詳細資訊。 </p> </td> 
   </tr>
   <tr> 
-   <td colname="col1"> <p>作用中對象特徵和資料來源同步特徵 </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 「活動中對象</span> 」特徵包含 <span class="wintitle"> Audience Manager</span> 帳戶中管理的所有裝置。 </p> <p><span class="wintitle"> 「資料來源同步特性</span> 」會追蹤所有與資料來源關聯的使用者。 </p> <p>Read more about <a href="../../features/traits/client-activity-synced-audience-traits.md"> Active Audience Traits and Data Source Synced Traits</a>. </p> </td>
+   <td colname="col1"> <p>作用中受眾特徵與資料來源同步特徵 </p> </td> 
+   <td colname="col2"> <p>「活 <span class="wintitle"> 動中的觀眾</span> 」特徵包含Audience manager帳戶中管理的所有 <span class="wintitle"> 裝置</span> 。 </p> <p><span class="wintitle"> 「資料來源同步特徵</span> 」會追蹤與資料來源關聯的所有使用者。 </p> <p>閱讀更多有關「 <a href="../../features/traits/client-activity-synced-audience-traits.md"> 作用中受眾特徵」和「資料來源同步特徵」的資訊</a>。 </p> </td>
   </tr>
  </tbody>
 </table>
 
-## Unique Trait Realizations and Total Trait Population {#unique-trait-realizations}
+## 獨特性實現與特性總量 {#unique-trait-realizations}
 
 ![](assets/utr-ttp1.png)
 
-**[!UICONTROL Unique Trait Realizations]** 計算訪客在不同時間範圍內將特徵新增至其描述檔的數目。
+計 **[!UICONTROL Unique Trait Realizations]** 算在不同時間範圍內將特徵新增至其描述檔的訪客數。
 
-The **[!UICONTROL Total Trait Population]** represents the number of your visitors that have this trait on their profile.
+代 **[!UICONTROL Total Trait Population]** 表訪客在其描述檔中具有此特徵的訪客數。
 
-以這種方式思考數字。In the image above, from the [Trait Details](../../features/traits/trait-details-page.md) view, 181 represents the number of active devices, that visited your properties yesterday. The [!UICONTROL Total Trait Population] of 1,595 represents the amount of users currently qualified for this trait. [!UICONTROL Total Trait Population] 此數字旨在顯示可用於劃分/定位的使用者總數。通常使用者會繼續屬於特徵的一部分120天。
+用這種方式來考慮數字。 在上述影像中，從「特 [徵詳細資料](../../features/traits/trait-details-page.md) 」檢視中，181代表昨天瀏覽您屬性的作用中裝置數。 1,595 [!UICONTROL Total Trait Population] 表示目前符合此特徵資格的使用者數量。 此 [!UICONTROL Total Trait Population] 圖旨在顯示可用於分段／定位的使用者總數。 通常，使用者會在120天內保留某個特徵的一部分。
 
-Because we run two different computational jobs to calculate the two populations, the [!UICONTROL Total Trait Population] always lags behind the [!UICONTROL Unique Trait Realizations] by 24 hours. In the graph above, you can see 175 [!UICONTROL Unique Trait Realizations] and a [!UICONTROL Total Trait Population] of 6 for February 11. The 175 profiles are added to the [!UICONTROL Total Trait Population] on the following day.
+因為我們運行兩個不同的計算工作來計算這兩個人口族群， [!UICONTROL Total Trait Population] 因此總是落後 [!UICONTROL Unique Trait Realizations] 24小時。 在上圖中，2月11日的 [!UICONTROL Unique Trait Realizations] 175 [!UICONTROL Total Trait Population] 和6。 175個描述檔會在下 [!UICONTROL Total Trait Population] 一天新增至。
 
-To further drive the point home, if you experienced a spike of 10,000 visitors right now, they would show up in tomorrow's [!UICONTROL Unique Trait Realizations], but would only show up 24 hours later in the [!UICONTROL Total Trait Population].
+為了進一步推動重點，如果您目前體驗到10,000名訪客的尖峰，他們會出現在明天的 [!UICONTROL Unique Trait Realizations]，但只會在24小時後出現在 [!UICONTROL Total Trait Population]。
 
-## Trait Qualification Limit {#trait-qualification-limit}
+## 特徵資格限制 {#trait-qualification-limit}
 
-We enforce a limit of 150,000 trait qualifications for each user profile, whether it is an authenticated profile ( [DPUUID](../../reference/ids-in-aam.md)) or a device ID ( [UUID](../../reference/ids-in-aam.md)). Note that while the DPUUIDs are unique to a specific instance of [!DNL Audience Manager], UUIDs are shared across the [!DNL Audience Manager] platform. For [!UICONTROL UUID]s, we impose a fairness policy when storing trait qualifications. An algorithm ensures that an equal share of the [!UICONTROL UUID] profile is made available for every instance of [!DNL Audience Manager].
+我們會針對每個使用者描述檔強制實施150,000個特徵資格限制，不論是已驗證的描述檔( [DPUUID](../../reference/ids-in-aam.md))或裝置ID( [UUID](../../reference/ids-in-aam.md))。 請注意，雖然DPUUID對於特定例項是唯一的， [!DNL Audience Manager]但UUID會在平台間共 [!DNL Audience Manager] 用。 因 [!UICONTROL UUID]此，我們在儲存特徵資格時，實行公平政策。 演算法可確保每個例項 [!UICONTROL UUID] 都能有相同的描述檔份額 [!DNL Audience Manager]。
