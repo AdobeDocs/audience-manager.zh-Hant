@@ -1,35 +1,35 @@
 ---
-description: 想要在Audience Manager內銷售資料的資料供應商的概述和工作流程。
+description: 想要在Audience manager中銷售資料的資料提供者的概述和工作流程。
 keywords: Google分析
-seo-description: 想要在Audience Manager內銷售資料的資料供應商的概述和工作流程。
-seo-title: 資料供應商的觀眾市場
+seo-description: 想要在Audience manager中銷售資料的資料提供者的概述和工作流程。
+seo-title: 適用於資料提供者的Audience Marketplace
 solution: Audience Manager
-title: 資料供應商的觀眾市場
+title: 適用於資料提供者的Audience Marketplace
 topic: DIL API
-uuid: 80e60d33-63e7-496c-82c5-205ef0ec03a
+uuid: 80e60d33-63e7-496c-82c5-205ecf0ec03a
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Audience Marketplace for Data Providers {#audience-marketplace-for-data-providers}
+# 適用於資料提供者的Audience Marketplace {#audience-marketplace-for-data-providers}
 
-Overview and workflow for data providers who want to sell data from within [!DNL Audience Manager].
+想要從內部銷售資料的資料提供者的概述和工作流程 [!DNL Audience Manager]。
 
 <!-- c_marketplace_provider.xml -->
 
 >[!NOTE]
 >
->[角色型權限](../../../reporting/reports-dashboard.md) 可控制 [!UICONTROL Audience Marketplace] 功能的存取權。
+>[角色型權限](../../../reporting/reports-dashboard.md) ，可控制功能的 [!UICONTROL Audience Marketplace] 存取。
 >
->* 管理員可以建立資料饋送、管理用戶以及訂閱資料饋送。
+>* 管理員可以建立資料饋送、管理訂閱者，以及訂閱資料饋送。
 >* 使用者只能搜尋和檢視動態消息。
 
 
-## My Shared Data: About {#my-shared-data-about}
+## 我的共用資料：關於 {#my-shared-data-about}
 
-[!UICONTROL My Shared Data] 是資料供應商(賣方)的 [!UICONTROL Audience Marketplace] 功能。As a provider, it lets you bundle traits into data feeds and sell them for a flat fee or [!DNL CPM] rate to buyers from within [!DNL Audience Manager]. 啓動後，購買者只要按幾下滑鼠，就可以訂閱動態消息。此外，簡單的報告工具可追蹤收入並管理用戶。Finally, with [!UICONTROL Audience Marketplace], [!DNL Adobe] takes care of invoice, billing, and fee payments for you. 這些功能可讓您專注於建立買家想要的有效且有利可圖的資料饋送。
+[!UICONTROL My Shared Data] 是資料 [!UICONTROL Audience Marketplace] 提供者（銷售者）的功能。 身為提供者，它可讓您將特徵整合在資料饋送中，然後以固定費用或價格向內部 [!DNL CPM] 的購買者銷售 [!DNL Audience Manager]。 啟動後，購買者只需按幾下滑鼠，即可訂閱動態消息。 此外，簡單的報告工具可追蹤收入並管理訂閱者。 最後，您 [!UICONTROL Audience Marketplace]可 [!DNL Adobe] 以為您處理髮票、帳單和費用付款。 這些功能可讓您專注於建立買家想要的有效且有利可圖的資料饋送。
 
 ![](assets/seller_marketplace.png)
 
@@ -37,21 +37,21 @@ Overview and workflow for data providers who want to sell data from within [!DNL
 
 功能包括：
 
-* **搜尋：** 搜尋欄位可協助您依名稱或文字說明尋找資料饋送。
-* **名稱：** 資料饋送的名稱。您可以透過私人、未品牌的資料饋送，將此項目隱藏在購買者中。
-* **說明：** 告訴購買者有關資料饋送內容的資訊。
-* **特性：** 每個資料饋送中的特徵數。您可以透過私人資料饋送將此項目隱藏。
-* **最近30天唯一客戶數：** 最近30天內所看到的獨特使用者人數。您可以透過私人資料饋送將此項目隱藏。
-* **上個月的總費用：** 訂閱資料購買者的金額。報告時段將於每月10日結束。「覆蓋」帳戶會以三角形/驚嘆號圖示標示。You can [deactivate a subscriber's data feed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#deactivate-data-feed) if they misuse your data or if their account is overdue.
-* **狀態：** 顯示動態消息是活動、非活動、私人或公開。
-* **訂閱者：** 顯示有多少購買者使用資料饋送。按一下此欄中的數字，即可查看購買者的公司名稱、訂閱、帳單和訂閱狀態。
-* **要求：** 資料饋送的存取請求數。
+* **** 搜尋：搜尋欄位可協助您依名稱或文字說明尋找資料饋送。
+* **** 名稱：資料饋送的名稱。 您可以透過私人、無品牌的資料饋送，將此隱藏給購買者。
+* **** 說明：向購買者介紹您的資料饋送內容。
+* **** 特徵：每個資料饋送中的特徵數。 您可以透過私人資料饋送，將此隱藏給購買者。
+* **** 最近30天獨特訪客：過去30天內檢視的獨特使用者人數。 您可以透過私人資料饋送，將此隱藏給購買者。
+* **** 上個月的總費用：訂閱的資料購買者欠您的款項。 報告期間於每月10日截止。 逾期帳戶會以三角形／驚嘆號圖示加以標籤。 如果訂 [閱者誤用您的資料](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#deactivate-data-feed) ，或其帳戶逾期，您可以停用其資料饋送。
+* **** 狀態： 顯示動態消息是活動、非活動、私用或公用。
+* **** 訂閱者：顯示有多少購買者使用資料饋送。 按一下此列中的數字可查看採購員的公司名稱、訂閱、開單和訂閱狀態。
+* **** 請求：資料饋送的存取請求數。
 
 ## 私人資料摘要 {#private-data-feeds}
 
-In [!UICONTROL My Shared Data], sometimes a feed status is marked as private. 這表示私人資料饋送。私人資料饋送可讓賣方限制買家存取其資料，甚至是資料饋送的名稱。販賣者在提供特殊交易、折扣或隱私權和存取權控制時，可以將摘要設為私密。透過私人資料饋送，提供者會審查並核准所有買家存取要求。For more information, see [Private Data Feeds](../../../features/audience-marketplace/marketplace-private-feeds.md). To create a public or private data feed, see [Create a Public or Private Data Feed](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed).
+在中 [!UICONTROL My Shared Data]，有時動態消息狀態會標示為私人。 這表示私人資料饋送。 私人資料饋送可讓賣家限制買家存取其資料，甚至資料饋送的名稱。 當賣家提供特殊優惠、折扣或隱私權與存取權控制很重要時，就可以私下提供饋送。 透過私人資料饋送，供應商會審查並核准所有購買者存取要求。 For more information, see [Private Data Feeds](../../../features/audience-marketplace/marketplace-private-feeds.md). 若要建立公用或私用資料饋送，請參 [閱建立公用或私用資料饋送](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed)。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [資料供應商折扣](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts)
+>* [資料提供者的折扣](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts)
 
