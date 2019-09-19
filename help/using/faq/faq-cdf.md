@@ -1,89 +1,89 @@
 ---
-description: 關於客戶資料饋送(CMS)檔案的常見問題。
-seo-description: 關於客戶資料饋送(CMS)檔案的常見問題。
-seo-title: 客戶資料饋送常見問題
+description: 客戶資料饋送(CDF)檔案的常見問題。
+seo-description: 客戶資料饋送(CDF)檔案的常見問題。
+seo-title: 客戶資料饋送常見問答集
 solution: Audience Manager
-title: 客戶資料饋送常見問題
-uuid: 7183b3e-e999-4e1 e-892f-2bab335 c13 b6
+title: 客戶資料饋送常見問答集
+uuid: 7183b3e2-e999-4e1e-892f-2bab335c13b6
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Customer Data Feed FAQ{#customer-data-feed-faq}
+# 客戶資料饋送常見問答集{#customer-data-feed-faq}
 
-關於客戶資料饋送(CMS)檔案的常見問題。
+客戶資料饋送(CDF)檔案的常見問題。
 
-## Amazon S3 Storage {#amazon-s3-storage}
+## Amazon S3儲存空間 {#amazon-s3-storage}
 
-**我的CMS檔案儲存在何處[!DNL Amazon]？**
+**我的CDF檔案儲存在何處[!DNL Amazon]?**
 
-Your CDF file is stored in the `aam-cdf` root directory on an [!DNL Amazon S3] server. This default bucket is managed by [!DNL Audience Manager]. See also [Customer Data Feed File Naming Conventions](../features/cdf-files.md#cdf-naming-conventions).
-
-<br> 
-
-**我的儲存貯體安全嗎？**
-
-是。客戶只能存取自己的儲存空間。您將擁有儲存貯體的唯讀存取權。您將無法擁有寫入權限。
+您的CDF檔案儲存在服 `aam-cdf` 務器的根目錄 [!DNL Amazon S3] 中。 此預設貯體由管理 [!DNL Audience Manager]。 另請參閱 [客戶資料饋送檔案命名慣例](../features/cdf-files.md#cdf-naming-conventions)。
 
 <br> 
 
-**我可以自訂儲存貯體或將檔案儲存在另一個目錄中嗎？**
+**我的儲存桶是否安全？**
 
-不會。不提供自訂和替代儲存選項。
-
-<br> 
-
-**我的目錄遺失特定小時的檔案。Where is it?**
-
-A missing file means [!DNL Audience Manager] was not able to process your CDF files for that hour. 當我們的伺服器處理CMS檔案時，通常會發生這種情況。在此情況下，您的檔案不會遺失。在我們的系統有機會追趕後，它會在稍後的每小時目錄中顯示。See also, [Customer Data Feed File Processing Notifications](../features/cdf-files.md#cdf-file-processing-notifications).
+是。客戶只能訪問自己的儲存空間。 您將擁有對儲存桶的唯讀訪問權限。 您將沒有寫訪問權限。
 
 <br> 
 
-**我要如何知道我的CMS檔案已準備就緒？**
+**我可以自訂儲存貯體或將檔案儲存在其他目錄中嗎？**
 
-See [Customer Data Feed File Processing Notifications](../features/cdf-files.md#cdf-file-processing-notifications).
-
-<br> 
-
-## File Sizes {#file-sizes}
-
-**我需要何種檔案大小？How big is an average CDF file?**
-
-估計檔案大小很困難。而且，每個檔案都可以是不同的大小。大小會隨著小時和天而有所不同。如果您要收到CMS檔案，可以準備好管理許多資料。
+不會。無法使用自訂和替代儲存選項。
 
 <br> 
 
-**我將收到幾個檔案？**
+**我的目錄在特定小時內缺少檔案。 在哪？**
 
-同樣地，很難估計這點。不過，如果您要收到CMS檔案，可協助準備管理大量資料。
+缺少檔案表 [!DNL Audience Manager] 示該小時無法處理CDF檔案。 這通常發生在我們的伺服器在處理CDF檔案時落後時。 在這種情況下，您的檔案不會遺失。 在我們的系統有機會追趕之後，它會出現在稍後的每小時目錄中。 另請參閱「客 [戶資料饋送檔案處理通知」](../features/cdf-files.md#cdf-file-processing-notifications)。
 
 <br> 
 
-## Data Integrity {#data-integrity}
+**如何知道CDF檔案何時準備就緒？**
 
-**如何檢查上傳至Amazon S的資料完整性？**
+請參閱 [客戶資料饋送檔案處理通知](../features/cdf-files.md#cdf-file-processing-notifications)。
 
-Files exceeding 16MiB in size are split into 16MiB chunks and uploaded to [!DNL Amazon S3] using multi-part upload.
+<br> 
 
-[!DNL Amazon] 產生多部分上傳的 `ETag` 值。它會先計算每個上傳部分的個別MD檢查總和，然後串連到單一字串中。然後，它會計算字串的MD檢查加總。The resulting checksum (the `ETag`) is then appended with a hyphen and the total number of parts used for upload. For instance, the `ETag` for a file that was split into 5 parts during upload could look something like this: `2c51427d19021e88cf3395365895b6d4-5`
+## 檔案大小 {#file-sizes}
+
+**我應該期待何種檔案大小？ 平均CDF檔案大小為多大？**
+
+很難估計檔案大小。 而且，每個檔案的大小可以不同。 大小依小時和日而異。 如果您要接收CDF檔案，則做好管理大量資料的準備會有所幫助。
+
+<br> 
+
+**我會收到多少個檔案？**
+
+同樣，很難估計這一點。 但是，如果您要接收CDF檔案，則有助於準備管理大量資料。
+
+<br> 
+
+## 資料完整性 {#data-integrity}
+
+**如何檢查上傳至Amazon S3的資料的完整性？**
+
+大小超過16MiB的檔案會分割為16MiB區塊，並使用多部 [!DNL Amazon S3] 分上傳上傳至。
+
+[!DNL Amazon] 為多 `ETag` 部件上載生成值。 它會先計算每個已上載部分的個別MD5校驗和，然後將它們串連到單個字串中。 然後，計算字串的MD5校驗和。 然後，產生的校驗和( `ETag`)會附加一個連字型大小，以及用於上載的部件總數。 例如，在上 `ETag` 傳期間分割為5個部分的檔案可能如下所示： `2c51427d19021e88cf3395365895b6d4-5`
 
 <br> 
 
 ## Data Retention {#data-retension}
 
-**您儲存CMS檔案的時間有多長？**
+**您儲存CDF檔案的時間有多長？**
 
-資料會在(8)天後刪除。
+資料會在八(8)天后刪除。
 
 <br> 
 
-**我可以回溯或舊版取得CMS檔案嗎？**
+**我是否可以追溯取得CDF檔案，或是前幾天？**
 
-您只能在過去天產生CMS檔案。舊版比過去天更早的CMS檔案無法重新產生。
+您只能生成過去8天的CDF檔案。 不能重新生成過去8天以前間隔的CDF檔案。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
 >* [客戶資料饋送](../features/cdf-files.md)
 
