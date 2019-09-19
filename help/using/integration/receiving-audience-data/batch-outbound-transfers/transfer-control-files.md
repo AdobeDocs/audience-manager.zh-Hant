@@ -1,9 +1,9 @@
 ---
-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可驗證Audience Manager是否正確地處理檔案傳輸。
-seo-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可驗證Audience Manager是否正確地處理檔案傳輸。
-seo-title: 傳輸控制檔案檔案檔案傳輸
+description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience manager已正確處理檔案傳輸。
+seo-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience manager已正確處理檔案傳輸。
+seo-title: 日誌檔案傳輸的傳輸控制檔案
 solution: Audience Manager
-title: 傳輸控制檔案檔案檔案傳輸
+title: 日誌檔案傳輸的傳輸控制檔案
 uuid: ef58213e-7b37-4c5a-8556-0de695706793
 translation-type: tm+mt
 source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
@@ -11,23 +11,23 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
 ---
 
 
-# Transfer-Control Files for Log File Transfers {#transfer-control-files-for-log-file-transfers}
+# 日誌檔案傳輸的傳輸控制檔案 {#transfer-control-files-for-log-file-transfers}
 
-Transfer-control ([!DNL .info]) files provide metadata information about file transfers so that partners can verify that Audience Manager handled file transfers correctly.
+傳輸控制([!DNL .info])檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience manager已正確處理檔案傳輸。
 
-[!DNL Audience Manager] 傳送移轉控制檔案給合作夥伴，並傳送檔案給合作夥伴。Due to the multi-thread nature of the [!DNL FTP] publisher, the transfer-control file might be sent before the actual files are finished transferring.
+[!DNL Audience Manager] 每次檔案傳輸時都會向合作夥伴發送轉移控制檔案。 由於發佈者的多執行緒性質，在 [!DNL FTP] 實際傳輸檔案完成之前，可能會傳送傳輸控制檔案。
 
-[!DNL .info] 檔案中的中繼資料可讓合作夥伴：
+檔案中的中繼資料 [!DNL .info] 可讓合作夥伴：
 
-* 判斷完整傳輸週期何時完成(序列中的檔案總份數)；
-* 判斷序列中的任何指定檔案是否完整/正確(透過檢查檔案大小和線條總數)；
-* 驗證原始檔案中的列數，會在檔案載入至接收結束(以行大小的檔案大小)後，記錄列數。
+* 確定完整傳輸週期何時完成（序列中已傳送的檔案總數）;
+* 確定序列中的任何給定檔案是否完整／正確(通過檢查檔案的大小（以位元組為單位）和行總數；
+* 驗證原始檔案中的列數與接收端資料庫中載入檔案後的列數（以行為單位的檔案大小）。
 
-## File Naming Conventions {#file-naming-conventions}
+## 檔案命名慣例 {#file-naming-conventions}
 
-The transfer-control file has the same name as the root of the batch/sequence with a [!DNL .info] file extension.s
+轉移控制檔案與批次／序列的根檔案具有相同的名稱，並 [!DNL .info] 具有檔案副檔名。
 
-For example, if the first file in the sequence were named: [!DNL ftp_12345_67890_full_1500727351632-1.sync], the control file would be named [!DNL ftp_12345_67890_iter_1500727351632.info].
+例如，如果序列中的第一個檔案是命名的： [!DNL ftp_12345_67890_full_1500727351632-1.sync]，控制檔案將被命名 [!DNL ftp_12345_67890_iter_1500727351632.info]。
 
 ## 檔案格式 {#file-format}
 
@@ -74,8 +74,8 @@ For example, if the first file in the sequence were named: [!DNL ftp_12345_67890
 
 >[注意]
 >
-> The batch total numbers are exclusive of the [!DNL .info] file itself. That is, the totals do not include the [!DNL .info] file, its byte size, or its line count.
+> 批總數不包括檔案 [!DNL .info] 本身。 也就是說，總計不包括檔 [!DNL .info] 案、其位元組大小或行數。
 >
-> 檔案的位元組大小和行數皆包含任何標題和間距(空白)線條/列。若要取得實際資料行/列的計數，請減去標題。
+> 檔案的位元組大小和行數包含任何標題和間隔符（空白）行／行。 為了取得實際資料行／列的計數，請減去標題。
 >
-> 批次總計和位元組大小總計包含任何標題和空間列。
+> 批次行總數和位元組大小總計包含任何標題行和空格行。
