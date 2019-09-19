@@ -1,9 +1,9 @@
 ---
-description: 說明如何防止種族條件和DCS錯誤處理。
-seo-description: 說明如何防止種族條件和DCS錯誤處理。
-seo-title: 比賽條件和錯誤處理
+description: 說明如何防止競賽條件和DCS錯誤處理。
+seo-description: 說明如何防止競賽條件和DCS錯誤處理。
+seo-title: 競賽條件與錯誤處理
 solution: Audience Manager
-title: 比賽條件和錯誤處理
+title: 競賽條件與錯誤處理
 uuid: b0aac960-6732-4e96-87a5-40ba2755e02d
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
@@ -11,23 +11,23 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 ---
 
 
-# Race Conditions and Error Handling {#race-conditions-and-error-handling}
+# 競賽條件與錯誤處理 {#race-conditions-and-error-handling}
 
-Describes how to prevent race conditions and [!UICONTROL DCS] error handling.
+說明如何防止競賽條件和錯 [!UICONTROL DCS] 誤處理。
 
-## Preventing Race Conditions {#prevent-race-conditions}
+## 防止種族狀況 {#prevent-race-conditions}
 
-A race condition can occur if you send multiple calls simultaneously (or in rapid succession) to the [!UICONTROL DCS] before it finishes responding to the initial queries and writing data to the user’s cookie. 競爭條件不受歡迎，因為它可能會損毀或不當覆寫Cookie資料。作為最佳實務，請考慮下列方法以避免此問題：
+如果您在回應初始查詢並將資料寫入使用者的Cookie之前，同時（或快速連續）傳送多個呼叫 [!UICONTROL DCS] 至，就會發生競爭條件。 不需要競爭條件，因為它可能會損毀或不當覆寫Cookie資料。 為避免此問題，請考慮下列方法：
 
-* Don't make simultaneous calls, or calls in rapid succession, to the [!UICONTROL DCS] from the same user.
-* 等候每個回應在後續呼叫之前回來。
+* 不要同時呼叫，或快速接續呼叫同一 [!UICONTROL DCS] 位使用者。
+* 等待每個回應返回，再進行後續呼叫。
 
-## Error Handling {#error-handling}
+## 錯誤處理 {#error-handling}
 
-錯誤處理受到無效或格式化查詢的限制。An invalid request returns an `HTTP 200 OK` response and no data. Also, the [!UICONTROL DCS] stops processing a request, discards trait data, and returns an `HTTP 200 OK` response when a user:
+錯誤處理僅限於無效或格式錯誤的查詢。 無效的請求會傳回回 `HTTP 200 OK` 回應，而無資料。 此外，當使 [!UICONTROL DCS] 用者符合下列條件時，這些應用程式會停止處理請求、捨棄特徵資 `HTTP 200 OK` 料並傳回回應：
 
-* 退出Audience Manager或合作夥伴層級追蹤。
-* 來自無效/未選取的地理區域。
-* 停用瀏覽器Cookie(全部或第三方)。
+* 在Audience manager或合作夥伴層級退出追蹤。
+* 來自無效／未選取的地理區域。
+* 停用瀏覽器Cookie（全部或協力廠商）。
 
 See also, [DCS Error Codes, Messages, and Examples](../../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md).
