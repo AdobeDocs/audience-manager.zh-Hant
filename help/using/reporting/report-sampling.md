@@ -1,53 +1,53 @@
 ---
-description: 部分報告使用的取樣方法摘要、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
-seo-description: 部分報告使用的取樣方法摘要、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
-seo-title: 選取Audience Manager報表中的資料取樣和錯誤率
+description: 摘要說明用於某些報表的取樣方法、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
+seo-description: 摘要說明用於某些報表的取樣方法、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
+seo-title: 選取Audience manager報表中的資料取樣和錯誤率
 solution: Audience Manager
-title: 選取Audience Manager報表中的資料取樣和錯誤率
-uuid: 3d8bd764-a9 da-40f1-8774-54304457bb9 a
+title: 選取Audience manager報表中的資料取樣和錯誤率
+uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
 source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
 
 ---
 
 
-# Data Sampling and Error Rates in Selected Audience Manager Reports{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
+# 選取Audience manager報表中的資料取樣和錯誤率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
-部分報告使用的取樣方法摘要、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
+摘要說明用於某些報表的取樣方法、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
 
-## Data Sampling Ratio and Minimum Requirements {#data-sampling-ratio}
+## 資料取樣率與最低需求 {#data-sampling-ratio}
 
-Some [!DNL Audience Manager] reports display results based on a sampled set of the total amount of available data. 取樣資料比例為1：54。對於使用取樣資料的報表，這表示您的結果是根據每組54記錄中的記錄。
+有些 [!DNL Audience Manager] 報表會根據可用資料總量的取樣集來顯示結果。 採樣資料比為1:54。 對於使用取樣資料的報表，這表示您的結果是以每54個記錄集中的1個記錄為基礎。
 
-這些報告會使用取樣的資料，因為他們需要大量的運算能力來產生結果。取樣可在降低計算需求、維護系統效能並提供精確結果之間取得平衡。
+這些報表使用取樣資料，因為它們需要大量的運算能力才能產生結果。 採樣有助於在減少的計算需求、維持系統效能和提供精確結果之間取得平衡。
 
-在不符合獨特訪客需求的情況下使用取樣排除特徵和區段的報表。這些最低需求如下：
+使用取樣的報表會在不符合最低獨特訪客需求時排除特徵和區段。 這些最低要求如下：
 
-* Traits: 28,000 [unique trait realizations](/help/using/features/traits/trait-qualification-reference.md#unique-trait-realizations) over a 14-day period.
-* 區段：70,000名即時使用者，為期14天。
+* 特徵：在14天 [內實現](/help/using/features/traits/trait-qualification-reference.md#unique-trait-realizations) 28,000個獨特特徵。
+* 區段：在14天的期間內有70,000名即時使用者。
 
-## Error Rates {#error-rates}
+## 錯誤率 {#error-rates}
 
-產生重疊資料的報表中可能發生錯誤。錯誤定義為記錄的百分比：
+產生重疊資料的報表中可能會發生錯誤。 錯誤定義為：
 
-* 不應包含在報表中，但仍可新增。
-* 應包含在報表中，但已離開。
+* 不應包含在報表中，但已加入。
+* 本應已納入報告，但未列入。
 
-It's important to note that our tests and models show that the error rate *decreases* in an inverse proportion to the number of records in your data set. 具有許多記錄的資料集會產生比設定少量記錄的設定少的錯誤。讓我們以更量化的方式來審視這項斷言。如下表所示，對於一組記錄，95%的報表結果會低於特定的錯誤率。
+請務必注意，我們的測試和模型顯示錯誤率會 *與資料集中* 記錄數成反比降低。 具有大量記錄的資料集產生的錯誤比具有少量記錄的資料集少。 讓我們以更為定量的方式來看一下這一論斷。 如下表所示，若是一組記錄，95%的報表結果將低於特定錯誤率。
 
 | 記錄數 | 錯誤率 |
 |--- |--- |
-| 500 - 1,000 | 95%處於42%的錯誤率。 |
-| 1,000 - 1,500 | 95%處於34%的錯誤率。 |
+| 500 - 1,000 | 95%的錯誤率低於42%。 |
+| 1,000 - 1,500 | 95%的錯誤率為34%。 |
 | 10,000 - 50,000 | 95%的錯誤率低於14%。 |
-| 50,000 | 95%低於6%。 |
-| 100,000 | 95%低於4%。 |
-| 500,000(或更多) | 95%低於2%。 |
+| 50,000 | 95%的錯誤率低於6%。 |
+| 100,000 | 95%的錯誤率低於4%。 |
+| 500,000（或以上） | 95%的錯誤率低於2%。 |
 
-## Reports That Use Sampled Data {#reports-using-sampled-data}
+## 使用取樣資料的報表 {#reports-using-sampled-data}
 
-The [!DNL Audience Manager] reports that use sampled data include:
+使用 [!DNL Audience Manager] 取樣資料的報表包括：
 
-* [重疊報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) (特徵對特徵、區段對特徵和區段對區段)。
-* [可定址對象](../features/addressable-audiences.md) 資料(客戶和區段層級資料)。
-* The [Total Devices](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) metric for a [!UICONTROL Profile Merge Rule].
+* [重疊報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特徵對特徵、區段對特徵和區段對區段）。
+* [可定址的觀眾](../features/addressable-audiences.md) （客戶和區段層級資料）。
+* 「 [裝置總](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) 計」量度 [!UICONTROL Profile Merge Rule]。
