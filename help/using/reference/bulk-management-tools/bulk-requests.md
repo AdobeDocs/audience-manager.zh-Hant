@@ -1,19 +1,19 @@
 ---
-description: 大量請求會傳回可用於「更新」、「建立」、「估計」和「刪除」工作表中不同標題的資料。
-seo-description: 大量請求會傳回可用於「更新」、「建立」、「估計」和「刪除」工作表中不同標題的資料。
+description: 大量請求會傳回您可在「更新」、「建立」、「估計」和「刪除」工作表中，與不同標題搭配使用的資料。
+seo-description: 大量請求會傳回您可在「更新」、「建立」、「估計」和「刪除」工作表中，與不同標題搭配使用的資料。
 seo-title: 大量請求
 solution: Audience Manager
 title: 大量請求
-uuid: 0192d26a-4ca-4e12-9fea-388b92b382f
+uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Bulk Requests{#bulk-requests}
+# 大量請求{#bulk-requests}
 
-大量請求會傳回可用於「更新」、「建立」、「估計」和「刪除」工作表中不同標題的資料。
+大量請求會傳回您可在「更新」、「建立」、「估計」和「刪除」工作表中，與不同標題搭配使用的資料。
 
 <!-- 
 
@@ -23,25 +23,25 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->The [!UICONTROL Bulk Management Tools] *are not* supported by [!DNL Audience Manager]. 此工具的提供目的僅限於方便使用。For bulk changes, we recommend that you work with the [Audience Manager APIs](../../api/rest-api-main/aam-api-getting-started.md) instead. [在UI](../../features/administration/administration-overview.md) 中指派的RBAC群組權限 [!DNL Audience Manager] 會受到尊重 [!UICONTROL Bulk Management Tools]。
+>不 [!UICONTROL Bulk Management Tools] 支 *援* 。 [!DNL Audience Manager]這種工具僅為方便和禮貌而提供。 若是大量變更，我們建議您改 [用Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
 
-[!UICONTROL Request] 工作表沒有自己的欄標題集，您不需要複製ID至任何欄。而是根據您在工具列中按一下的動作按鈕傳回資料。此外，選擇性報告功能會傳回像素引發的頻率計數，並針對數個固定時間間隔傳回獨特使用者計數。
+工 [!UICONTROL Request] 作表沒有其自己的列標題集，您也不需要將ID複製到任何列。 它會根據您在工具列中按一下的動作按鈕傳回資料。 此外，選用的報表功能會傳回像素觸發的頻率計數，以及數個固定時間間隔的獨特使用者計數。
 
-To make bulk requests, open the [!UICONTROL Bulk Management Tools] worksheet and:
+若要進行大量請求，請開啟工作 [!UICONTROL Bulk Management Tools] 表並：
 
 1. Click the **[!UICONTROL Request]** tab.
-2. 在工作表頂端的工具列中，按一下與您要處理之資料對應的請求按鈕。您可以要求：
+2. 在工作表頂端的工具列中，按一下與您要處理的資料對應的請求按鈕。 您可以要求：
 
-   * 資料供應商ID
-   * 衍生訊號
-   * 目的地對應
-   * 規則型和內嵌特性
+   * 資料提供者ID
+   *  衍生信號
+   * 目標映射
+   * 規則型和已登入特徵
    * 區段
    * 特徵和區段資料夾ID
-   [!DNL Audience Manager] API會將大量資料寫入 [!UICONTROL Request] 工作表中。
+   API [!DNL Audience Manager] 會將大量資料寫回工作 [!UICONTROL Request] 表。
 
 >[!NOTE]
 >
->In your results, the `createTime` and `updateTime` columns return data in exponential notation. 基礎日期/時間戳記會以UNIX UTC時間記錄。目前，工作表無法以可讀格式傳回日期/時間戳記。
+>在結果中，和列 `createTime` 以指數 `updateTime` 表示法返回資料。 基礎日期／時間戳記以UNIX UTC時間記錄。 目前，工作表無法以可讀格式傳回日期／時間戳記。
 
-If your bulk update returns an error or fails, see [Troubleshooting for Bulk Management Tools](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+如果您的大量更新傳回錯誤或失敗，請參 [閱批量管理工具疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
