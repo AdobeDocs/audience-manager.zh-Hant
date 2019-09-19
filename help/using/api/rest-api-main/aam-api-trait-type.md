@@ -1,6 +1,6 @@
 ---
-description: 可選方法，可讓您將特性指派給使用者定義的類型或類別，通常是根據函數或您自己的內部報告程序。
-seo-description: 可選方法，可讓您將特性指派給使用者定義的類型或類別，通常是根據函數或您自己的內部報告程序。
+description: 可選方法，可讓您指派特徵給使用者定義的類型或類別，通常根據函式或您自己的內部報告程式。
+seo-description: 可選方法，可讓您指派特徵給使用者定義的類型或類別，通常根據函式或您自己的內部報告程式。
 seo-title: 特徵類型方法
 solution: Audience Manager
 title: 特徵類型方法
@@ -11,21 +11,21 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 ---
 
 
-# Trait Type Methods {#trait-type-methods}
+# 特徵類型方法 {#trait-type-methods}
 
-可選方法，可讓您將特性指派給使用者定義的類型或類別，通常是根據函數或您自己的內部報告程序。
+可選方法，可讓您指派特徵給使用者定義的類型或類別，通常根據函式或您自己的內部報告程式。
 
 <!-- c_rest_api_trait_types_intro.xml -->
 
 >[!NOTE]
 >
->Trait type methods do not assign traits to categories used by the [common taxonomy](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods). 將這些標籤視為與一般分類法不同的標籤。
+>特徵類型方法不會將特徵指派給常用分類法使 [用的類別](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)。 將這些視為與常用分類法分離的標籤。
 
-For visual reference, [!UICONTROL Trait Types] is a dropdown control located in the [!DNL UI] under **[!UICONTROL Traits > Create new trait > Basic Information]**.
+對於視覺參考， [!UICONTROL Trait Types] 是位於下方的下拉式控制 [!DNL UI] 項 **[!UICONTROL Traits > Create new trait > Basic Information]**。
 
-## Create a New Trait Type {#create-trait-type}
+## 建立新特徵類型 {#create-trait-type}
 
-A `POST` method that lets you create a new trait type.
+可讓您 `POST` 建立新特徵類型的方法。
 
 <!-- r_rest_api_create_trait_type.xml -->
 
@@ -56,9 +56,9 @@ A `POST` method that lets you create a new trait type.
 }
 ```
 
-## Return Properties for a Trait Type {#return-props}
+## 特徵類型的返回屬性 {#return-props}
 
-A `GET` method that returns details about the specified trait type.
+傳回 `GET` 指定特徵類型的詳細資料的方法。
 
 <!-- r_rest_api_get_trait_type.xml -->
 
@@ -81,9 +81,9 @@ A `GET` method that returns details about the specified trait type.
 }
 ```
 
-## Return Properties for all Trait Types {#return-props-all}
+## 所有特徵類型的返回屬性 {#return-props-all}
 
-A `GET` method that returns details about all your trait types in an array.
+一種 `GET` 方法，可傳回陣列中所有特徵類型的詳細資料。
 
 <!-- r_rest_api_get_trait_types.xml -->
 
