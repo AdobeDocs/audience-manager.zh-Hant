@@ -1,74 +1,74 @@
 ---
-description: 說明可讓您在Model Builder中建立演算法模型的必要和選擇性步驟。
-keywords: algo how work
-seo-description: 說明可讓您在Model Builder中建立演算法模型的必要和選擇性步驟。
+description: 說明可讓您在Model Builder中建立演算法模型的必要和可選步驟。
+keywords: algo how works
+seo-description: 說明可讓您在Model Builder中建立演算法模型的必要和可選步驟。
 seo-title: 建立演算法模型
 solution: Audience Manager
 title: 建立演算法模型
 topic: DIL API
-uuid: cf4fc4e-cf92-445f-b2 d9-71c3 ca624 e26
+uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Create an Algorithmic Model {#create-an-algorithmic-model}
+# 建立演算法模型 {#create-an-algorithmic-model}
 
-Describes the required and optional steps that let you create an algorithmic model in [!UICONTROL Model Builder].
+說明可讓您在中建立演算模型的必要和選用步驟 [!UICONTROL Model Builder]。
 
-## Build a Model {#build-model}
+## 建立模型 {#build-model}
 
 <!-- t_model_build.xml -->
 
 ### 模型產生器區段
 
-[!UICONTROL Model Builder] 包含 [!UICONTROL Basic Information] 和 [!UICONTROL Configuration] 區段。若要建立模型，請完成這兩個區段中的必填欄位。儲存模型以開始演算法。[!DNL Audience Manager] 在第一個資料執行完成後，會傳送自動通知給您。After you receive the email, you can go to [Trait Builder](../../features/traits/about-trait-builder.md) and create algorithmic traits.
+[!UICONTROL Model Builder] 包含和 [!UICONTROL Basic Information] 節 [!UICONTROL Configuration] 。 要建立模型，請完成這兩個節中的必需欄位。 儲存模型以啟動演算法。 [!DNL Audience Manager] 在第一次資料執行完成後傳送自動通知給您。 收到電子郵件後，您可以前往「特徵產生器」 [並建立演算法特徵](../../features/traits/about-trait-builder.md) 。
 
 >[!NOTE]
 >
->* 模型程序只會在您建立模型且不建立任何特性時執行一次。
->* 從包含有意義資訊的資料來源建立模型。資料不足的模型會執行，但不會傳回結果。
->* *請勿* 使用其他演算法特徵或區段建立模型。
->* 自動電子郵件通知只會傳送一次(在第一次執行資料後)。
+>* 如果您建立模型且不使用模型建立任何特徵，則模型程式只會執行一次。
+>* 從包含大量資訊的資料來源建立模型。 資料不足的模型會執行，但不會傳回結果。
+>* *請勿使用* 其他演算法特徵或區段建立模型。
+>* 自動化電子郵件通知只會傳送一次（在第一次資料執行後）。
 
 
 ### 建立模型
 
-To build a model, go to the [!UICONTROL Models] section and click **[!UICONTROL Add New]** and follow the steps below:
+若要建立模型，請前往區段， [!UICONTROL Models] 然後按一 **[!UICONTROL Add New]** 下並遵循下列步驟：
 
-1. In the [Basic Information](../../features/algorithmic-models/create-model.md#basic-information) section
+1. 在「基 [本資訊」部分](../../features/algorithmic-models/create-model.md#basic-information)
    * 命名模型。
-   * *(可選)* 提供關於模型的簡短說明。
-   * Set the status for the model to **[!UICONTROL Active]** or **[!UICONTROL Inactive]**. 非活動中模型不會執行，也不會產生任何資料。
-1. In the [Configuration](../../features/algorithmic-models/create-model.md#configuration) section:
-   * Click **[!UICONTROL Browse All Traits]** or **[!UICONTROL Browse All Segments]** to select a trait or segment you want to model against. 選取已登錄特徵、規則型特徵或區段作為基準。否則，您的模型將無法執行。
-   * 選擇30、60或90天回顧期間。這會設定模型的時間範圍。
-   * [!UICONTROL TraitWeight] 預設會選取演算法。
-   * Select a data source from the [!UICONTROL Available Data] list.
+   * *（可選）* ，提供模型的簡要說明。
+   * 將模型的狀態設定為 **[!UICONTROL Active]** 或 **[!UICONTROL Inactive]**。 非活動模型將不運行，也不會生成任何資料。
+1. 在「配 [置](../../features/algorithmic-models/create-model.md#configuration) 」部分：
+   * 按一 **[!UICONTROL Browse All Traits]** 下或 **[!UICONTROL Browse All Segments]** 以選取您要建立模型的特徵或區段。 選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。
+   * 選擇30、60或90天回顧時段。 這會設定模型的時間範圍。
+   * 預設 [!UICONTROL TraitWeight] 會選取演算法。
+   * 從清單中選取資料 [!UICONTROL Available Data] 來源。
    * Click **[!UICONTROL Save]** when done.
 
-## Basic Information for Algorithmic Models {#basic-information}
+## 演算模型的基本資訊 {#basic-information}
 
 <!-- r_model_basic.xml -->
 
-In [!UICONTROL Model Builder], the [!UICONTROL Basic Information] settings let you create new or edit existing models. To create a new model, provide a name and move on to the [!UICONTROL Configuration] settings. 描述欄位為選用欄位。
+在中 [!UICONTROL Model Builder]，設 [!UICONTROL Basic Information] 定可讓您建立新模型或編輯現有模型。 要建立新模型，請提供名稱並移至設 [!UICONTROL Configuration] 置。 說明欄位為選用。
 
 | 欄位 | 說明 |
 |---|---|
-| **[!UICONTROL Name]** | 為您的模型提供描述其函數或用途的簡短邏輯名稱。避免縮寫、特殊字元和附註標記。 |
-| **[!UICONTROL Description]** | 欄位，以取得有關模型的其他描述性資訊。 |
-| **[!UICONTROL Status]** | 啓用或停用模型(預設為作用中)。 |
+| **[!UICONTROL Name]** | 為模型提供簡短的邏輯名稱，以說明其功能或用途。 避免縮寫、特殊字元和重音符號。 |
+| **[!UICONTROL Description]** | 一個欄位，用於有關模型的其他描述性資訊。 |
+| **[!UICONTROL Status]** | 激活或停用模型（預設情況下為活動）。 |
 
 ## 設定 {#configuration}
 
-In [!UICONTROL Model Builder], the [!UICONTROL Configuration] section lets you add traits or segments to the model. 在本節中，選取一個基準特徵或區段、回顧時段以及來自第一方和第三方資料來源的資料。
+在中 [!UICONTROL Model Builder]，區 [!UICONTROL Configuration] 段可讓您新增特徵或區段至模型。 在本節中，選取基準特徵或區段、回顧期間，以及來自您第一方與第三方資料來源的資料。
 
 <!-- r_model_configuration.xml -->
 
 ### 必備條件
 
-Complete the required fields in the [!UICONTROL Basic Information] section first.
+請先填妥章節中的 [!UICONTROL Basic Information] 必填欄位。
 
 ![](assets/lam_exclude_traits_numbered.png)
 
@@ -81,29 +81,29 @@ Complete the required fields in the [!UICONTROL Basic Information] section first
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>選取基線特徵或區段(1)</b> </p> </td> 
-   <td colname="col2"> <p>按一下特徵或群體按鈕，查看您所有特徵或區段的清單。您選取的區段或特徵會變成系統演算法用於模型的基準。 </p> <p> <p><b>注意</b>：選取已登錄特徵、規則型特徵或區段作為基準。否則，您的模型將無法執行。 </p> </p> </td> 
+   <td colname="col1"> <p><b>選取基準特徵或區段(1)</b> </p> </td> 
+   <td colname="col2"> <p>按一下特徵或區段按鈕，即可查看您所有特徵或區段的清單。 您選取的區段或特徵會成為系統演算法用於建模的基準。 </p> <p> <p><b>注意</b>: 選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>選取回顧時段(2)</b> </p> </td> 
-   <td colname="col2"> <p>設定模型的時間範圍。演算法根據您的選擇，包含並評估前30、60或90天的資料。 </p> </td> 
+   <td colname="col1"> <p><b>選擇回顧期間(2)</b> </p> </td> 
+   <td colname="col2"> <p>設定模型的時間範圍。 根據您的選擇，演算法會包含並評估前30、60或90天的資料。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>選擇演算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>At this time, Model Builder works with our proprietary <span class="keyword"> Trait Weight</span> algorithm only. <span class="keyword"> Audience Manager</span> 可在後續版本中新增其他演算法函數。 </p> </td>
+   <td colname="col2"> <p>目前，Model Builder僅能與我們專屬的「特徵 <span class="keyword"> 加權</span> 」演算法搭配使用。 <span class="keyword"> Audience Manager</span> 可能會在後續版本中新增其他演算功能。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p><b>從資料來源(4)選取模型資料</b> </p> </td> 
-   <td colname="col2"> <p>可讓您選取要在模型中使用的第一方和第三方資料來源。 </p> </td>
+   <td colname="col1"> <p><b>從資料源中選擇模型資料(4)</b> </p> </td> 
+   <td colname="col2"> <p>可讓您選取想要在模型中使用的第一方和第三方資料來源。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>排除(5)</b> </p> </td> 
-   <td colname="col2"> <p>您可以從選擇用於模型的資料來源中排除特徵。Use the <span class="wintitle"> Exclusions</span> list and read <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> Algorithmic Models: Trait Exclusion</a> to learn more. </p> </td>
+   <td colname="col2"> <p>您可以從選取的模型資料來源中排除特徵。 使用「排 <span class="wintitle"> 除」清單</span> ，並閱讀「演算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型：特徵排除</a> ，瞭解更多資訊。 </p> </td>
   </tr> 
  </tbody>
 </table>
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [瞭解TritWeight](../../features/algorithmic-models/understanding-models.md#understanding-traitweight)
+>* [瞭解特徵權重](../../features/algorithmic-models/understanding-models.md#understanding-traitweight)
 
