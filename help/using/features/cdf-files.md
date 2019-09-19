@@ -2,9 +2,9 @@
 description: 有關客戶資料饋送(CDF)檔案的基本資訊以及如何開始使用的指示。 如果您想要接收CDF檔案或只想要更多資訊，請從這裡開始。
 keywords: 第二方資料；第二方資料；第二方資料；第二方資料
 seo-description: 有關客戶資料饋送(CDF)檔案的基本資訊以及如何開始使用的指示。 如果您想要接收CDF檔案或只想要更多資訊，請從這裡開始。
-seo-title: ' 客戶資料饋送'
+seo-title: 客戶資料饋送
 solution: Audience Manager
-title: ' 客戶資料饋送'
+title: 客戶資料饋送
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
 source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
@@ -151,17 +151,17 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
    <td colname="col1"> <p>欄位順序 </p> </td> 
    <td colname="col2"> <p> <p>重要：Audience <span class="keyword"> Manager</span> 保留在未來發行中新增欄位至CDF檔案結尾的權利。 這表示檔案剖析系統的技術設計不應假設固定數目的欄（雖然它可能會假設現有欄的順序固定）。 </p> </p> <p>CDF檔案中的資料按以下順序顯示。 </p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
-      <li id="li_CB97D90B54EB4F95861583D4A5F660C7"> 事件時間 </li> 
+      <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件時間 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">裝置 </li> 
       <li id="li_F8AE0D4CA19D411686A240FE06F56147">容器 ID </li> 
-      <li id="li_660D17989BE54610A01229C47894E8A9">實現的特性 </li> 
+      <li id="li_660D17989BE54610A01229C47894E8A9"> 實現的特性 </li> 
       <li id="li_1591180564374204852785C6FFCA4F74"> 已實現的區段 </li> 
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">要求參數 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 位址 </li> 
       <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience cloud裝置ID（或MID）。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595"> 所有區段 </li> 
-      <li id="li_1B5A6F076A354BA0A931CB260E6D2675"> 所有特徵 </li> 
+      <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特徵 </li> 
      </ol> </p> <p>如需欄位說明，請參閱「 <a href="#cdf-defined"> 客戶資料饋送內容定義」</a>。 </p> </td> 
   </tr> 
  </tbody> 
