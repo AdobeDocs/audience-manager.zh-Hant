@@ -1,36 +1,36 @@
 ---
-description: 概述Audience Manager如何與第三方廠商執行非同步批次資料交換。
-seo-description: 概述Audience Manager如何與第三方廠商執行非同步批次資料交換。
-seo-title: 批次資料傳輸程序說明
+description: 概述Audience manager如何與協力廠商執行非同步批次資料交換。
+seo-description: 概述Audience manager如何與協力廠商執行非同步批次資料交換。
+seo-title: 批資料傳輸流程說明
 solution: Audience Manager
-title: 批次資料傳輸程序說明
-uuid: a eeee940-151c-44f8-9Fe9-4ab47d7fu45c
+title: 批資料傳輸流程說明
+uuid: a9ee940-151c-44f8-9fe9-8ab47d8fa45c
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Batch Data Transfer Process Described {#batch-data-transfer-process-described}
+# 批資料傳輸流程說明 {#batch-data-transfer-process-described}
 
-概述Audience Manager如何與第三方廠商執行非同步批次資料交換。
+概述Audience manager如何與協力廠商執行非同步批次資料交換。
 
 ## 批次資料整合
 
 <!-- c_async.xml -->
 
-批次資料整合程序可將訪客資訊儲存在我們的伺服器上，並將該資料與供應商在定期間隔傳送的資料同步。在下列情況下，非同步資料傳輸程序很有用：
+批次資料整合程式會將訪客資訊儲存在我們的伺服器上，並定期將該資料與供應商傳送的資料同步。 在下列情況下，非同步資料傳輸程式非常有用：
 
-* 不需要立即傳輸資料。
-* 收集資料以建立一大群區段使用者。
-* You want to reduce data discrepancies and `HTTP` calls from the browser.
+* 不需要立即傳送資料。
+* 收集資料，以建立龐大的細分使用者群。
+* 您想要減少來自瀏覽器的資 `HTTP` 料不一致和呼叫。
 
 ![](assets/s2s_70.png)
 
 ## 資料整合步驟
 
 1. 使用者瀏覽客戶網站。
-1. Audience Manager和第三方資料提供者會指派訪客唯一ID(通常使用Cookie)。
-1. Audience Manager會呼叫第三方資料提供者以符合訪客ID。
-1. 排程的請求通常會在每日間隔內，交換Audience Manager與第三方資料供應商之間的訪客區段資料。
-1. Whenever an inbound [!UICONTROL Server-to-Server] file is processed, a receipt is sent via email to partner solutions and, if configured, to the partner. For more information, see [Sample Message to Partners after Inbound Processing](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md).
+1. Audience manager和第三方資料提供者會為訪客指派唯一ID（通常使用Cookie）。
+1. Audience manager會呼叫協力廠商資料提供者，以符合訪客ID。
+1. 排程的請求（通常在每日間隔內）會在Audience manager和您的第三方資料提供者之間交換訪客區段資料。
+1. 每當處理傳 [!UICONTROL Server-to-Server] 入檔案時，收據會透過電子郵件傳送給合作夥伴解決方案，如果已設定，則會傳送給合作夥伴。 如需詳細資訊，請參 [閱傳入處理後傳送給合作夥伴的範例訊息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)。
