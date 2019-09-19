@@ -5,7 +5,7 @@ seo-title: 工作流C —— 基於驗證活動和離線資料的個性化
 solution: Audience Manager
 title: 工作流C —— 基於驗證活動和離線資料的個性化
 translation-type: tm+mt
-source-git-commit: 455c198d7a096a620a2cf7c8b728b67335eadc8d
+source-git-commit: a2825f256364668abc4e6760a473713fec8626e3
 
 ---
 
@@ -110,7 +110,7 @@ source-git-commit: 455c198d7a096a620a2cf7c8b728b67335eadc8d
 
 >[!IMPORTANT]
 >
->觀眾管理員透過驗證Token處理與社交平台的整合，驗證Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
+>Audience manager會透過驗證Token處理與社交平台的整合，驗證Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
 
 ## 步驟6 —— 建立以人為本的目的地 {#create-destination}
 
