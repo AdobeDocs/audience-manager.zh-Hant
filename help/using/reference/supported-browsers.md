@@ -1,10 +1,10 @@
 ---
-description: 列出Audience Manager使用者介面支援的瀏覽器。必須在所有瀏覽器上啓用Cookie和JavaScript。
-seo-description: 列出Audience Manager使用者介面支援的瀏覽器。必須在所有瀏覽器上啓用Cookie和JavaScript。
+description: 列出Audience manager使用者介面支援的瀏覽器。 Cookie和JavaScript必須在所有瀏覽器上啟用。
+seo-description: 列出Audience manager使用者介面支援的瀏覽器。 Cookie和JavaScript必須在所有瀏覽器上啟用。
 seo-title: 受支援的瀏覽器
 solution: Audience Manager
 title: 受支援的瀏覽器
-uuid: dffecdb5-d94 d-4001-8f2 a-9d1 d77 ce2213
+uuid: dffecdb5-d94d-4001-8f2a-9d1d77ce2213
 translation-type: tm+mt
 source-git-commit: 662ddd04bde203a35440669ac9677eb067e136a1
 
@@ -13,7 +13,7 @@ source-git-commit: 662ddd04bde203a35440669ac9677eb067e136a1
 
 # 受支援的瀏覽器{#supported-browsers}
 
-此頁面列出Audience Manager使用者介面支援的瀏覽器。必須在所有瀏覽器上啓用Cookie和JavaScript。
+本頁列出Audience manager使用者介面支援的瀏覽器。 Cookie和JavaScript必須在所有瀏覽器上啟用。
 
 <!-- 
 
@@ -25,20 +25,20 @@ Adobe 支援以下瀏覽器的最新主要版本:
 
 * **Google Chrome**
 
-   Get the latest Chrome version from [http://www.google.com/chrome](http://www.google.com/chrome).
+   從http://www.google.com/chrome取得最新的Chrome [版本](http://www.google.com/chrome)。
 
 * **Microsoft Edge**
 
-   (Adobe即將於2019年月10日結束Audience Manager中的Internet Explorer11支援。請盡快切換至最新的主要Microsoft Edge版本或其他支援的瀏覽器。)
+   (Adobe將於2019年7月10日終止在Audience manager中支援Internet Explorer 11。 請盡快切換至Microsoft edge或其他支援瀏覽器的最新主要版本。)
 
-   Get the latest Edge version from [https://www.microsoft.com/windows/microsoft-edge](https://www.microsoft.com/windows/microsoft-edge).
+   從https://www.microsoft.com/windows/microsoft-edge取得最新的Edge [版本](https://www.microsoft.com/windows/microsoft-edge)。
 
 * **Mozilla Firefox**
 
-   Get the latest Firefox version from [http://www.mozilla.com/en-US/firefox](http://www.mozilla.com/en-US/firefox).
+   從http://www.mozilla.com/en-US/firefox取得最新的Firefox [版本](http://www.mozilla.com/en-US/firefox)。
 
 * **Safari**
 
-   Get the latest Safari version from [http://www.apple.com/safari/download](http://www.apple.com/safari/download).
+   從http://www.apple.com/safari/download取得最新的Safari [版本](http://www.apple.com/safari/download)。
 
-其他瀏覽器可能會運作，但我們的技術和產品團隊不支援。If you're having trouble working with [!DNL Audience Manager], make sure you're using an up to date and supported browser.
+其他瀏覽器可能有效，但我們的技術和產品團隊不支援。 如果您在使用時遇到問題 [!DNL Audience Manager]，請確定您使用的是最新且支援的瀏覽器。
