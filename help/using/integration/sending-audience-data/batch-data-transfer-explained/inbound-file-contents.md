@@ -1,33 +1,33 @@
 ---
-description: 在格式化傳入特徵資料檔案時應遵循的必填欄位、語法和規則。
-seo-description: 在格式化傳入特徵資料檔案時應遵循的必填欄位、語法和規則。
+description: 格式化傳入特徵資料檔案時，您應遵循的必填欄位、語法和規則。
+seo-description: 格式化傳入特徵資料檔案時，您應遵循的必填欄位、語法和規則。
 seo-title: 傳入資料檔案內容語法、無效字元、變數和範例
 solution: Audience Manager
 title: 傳入資料檔案內容語法、無效字元、變數和範例
-uuid: 88699b29-1502-4183-a9 a4-be70692 a02 bb
+uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 translation-type: tm+mt
 source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
 
 ---
 
 
-# Inbound Data File Contents: Syntax, Invalid Characters, Variables, and Examples{#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
+#  入站資料檔案內容：語法、無效字元、變數和範例{#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
-在格式化傳入特徵資料檔案時應遵循的必填欄位、語法和規則。
+格式化傳入特徵資料檔案時，您應遵循的必填欄位、語法和規則。
 
-## File Content Syntax {#file-content-syntax}
+## 檔案內容語法 {#file-content-syntax}
 
-傳入資料檔案中的欄位必須以下列順序顯示。In this example, the `<` `>` symbols have been added to help separate each element visually. 您不需要將這些項目包含在資料檔案中。
+傳入資料檔案中的欄位必須依下列順序顯示。 在此範例中，已新增 `<` 符號， `>` 以協助以視覺化方式分隔每個元素。 您不需要將這些項目納入資料檔案中。
 
 ```
 <user ID><TAB><trait ID>,<trait ID>,<trait ID>,...
 ```
 
-For other accepted file content formats, see [Custom Partner Integrations](/help/using/integration/sending-audience-data/custom-partner-integrations.md).
+如需其他接受的檔案內容格式，請參閱自 [訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
 
 >[!NOTE]
 >
->我們的限制為200行，我們可以處理傳入資料檔案中傳送的每個使用者ID。例如，如果您針對使用者ID傳送300行，則會保留前200行，並捨棄100行。在下列範例中，您是好的，因為您要傳送使用者ID和使用者ID的3行。我們不會針對包含在行中的特性或索引鍵值配對，強制執行限制。
+>對於傳入資料檔案中傳送的每個使用者ID，我們可處理的行數上限為200行。 例如，如果您傳送300行作為使用者ID，則會保留前200行，並捨棄其他100行。 在以下範例中，您很好，因為您會針對使用者ID 1和使用者ID 2分別傳送3行。 我們不會對您在行中包含的特徵或索引鍵值配對數目實施限制。
 >
 >```
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
@@ -38,9 +38,9 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
 ><user ID2><TAB><trait ID>,<trait ID>,<trait ID>
 >```
 
-## File Variables Defined {#file-variables-defined}
+## 定義的檔案變數 {#file-variables-defined}
 
-表格列出並定義格式正確的傳入資料檔案中使用的變數。*斜體*&#x200B;表示變數預留位置。
+該表列出並定義了格式正確的傳入資料檔案中使用的變數。 *斜體*&#x200B;表示變數預留位置。
 
 <table id="table_FE043CE392B34D5194111188E5C39671"> 
  <thead> 
@@ -54,29 +54,29 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
    <td colname="col1"> <p> <code> <i>使用者 ID </i> </code> </p> </td> 
    <td colname="col2"> <p>使用者ID可以是： </p> <p> 
      <ul id="ul_25168355353545A9A049D0083403025E"> 
-      <li id="li_23829FE2F6464E33859B3E388FCD106B"><span class="keyword"> Audience Manager </span> 指派的唯一使用者ID( <a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>)。 </li> 
-      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">A unique user ID assigned in your CRM system ( <a href="../../../reference/ids-in-aam.md"> DPUUID, in Audience Manager </a>). </li> 
-      <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">行動Android或iOS裝置ID的原始未修改表格，由行動作業系統公開。 </li> 
-     </ul> </p> <p>對於行動ID： </p> <p> 
+      <li id="li_23829FE2F6464E33859B3E388FCD106B">由Audience Manager指派的唯一 <span class="keyword"> 使用者ID </span> ( <a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>)。 </li> 
+      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">在您的CRM系統中指派的唯一使用者ID( <a href="../../../reference/ids-in-aam.md"> Audience manager中的DPUUID </a>)。 </li> 
+      <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">行動作業系統公開的行動Android或iOS裝置ID，其原始未修改的格式。 </li> 
+     </ul> </p> <p>針對行動ID: </p> <p> 
      <ul id="ul_717A17E11565427E9E2D9D7554BB231B"> 
-      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA格式：ID必須大寫且不會雜湊。For example, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android格式：ID必須是小寫且不會雜湊。For example, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA格式：ID必須大寫，而非雜湊。 例如， <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android格式：ID必須小寫，而非雜湊。 例如， <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
+   <td colname="col1"> <p> <code> 頁籤 </code> </p> </td> 
    <td colname="col2"> <p>使用單一標籤分隔字元分隔使用者ID和特徵ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>特徵ID </i></code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager </span> 特徵ID。We ask that you include <i>only onboarded traits</i> in inbound data files. 我們不會處理傳入資料傳輸中任何其他特徵類型。 </p> <p> <p>注意：您可以使用GET方法，透過傳回所有特性的詳細資訊來尋找特徵ID。For more information, see <a href="../../../api/rest-api-main/api-traits.md"> Trait API Methods </a>. </p> </p> </td> 
+   <td colname="col1"> <p> <code> 特 <i>徵ID </i></code> </p> </td> 
+   <td colname="col2"> <p>Audience Manager <span class="keyword"> 特 </span> 徵ID。 我們要求您在傳入的資 <i>料檔案中僅包含已登入的特徵</i> 。 我們不會在傳入資料傳輸中處理任何其他特徵類型。 </p> <p> <p>注意： 可使用GET方法來尋找「特徵ID」，該方法會傳回所有特徵的詳細資訊。 如需詳細資訊，請參 <a href="../../../api/rest-api-main/api-traits.md"> 閱特徵API方法 </a>。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Formatting Trait IDs {#formatting-trait-ids}
+## 格式化特徵ID {#formatting-trait-ids}
 
-下表說明識別傳入資料檔案中特徵名稱或ID的首碼。See the [sample files](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) for examples.
+下表說明識別傳入資料檔案中特徵名稱或ID的字首。 如需範例， [請參閱範例檔](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) 。
 
 <table id="table_AD54B3E5487E47C481A4E5FD3A93FDA5"> 
  <thead> 
@@ -87,42 +87,43 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ sid= </code> </p> </td> 
-   <td colname="col2"> <p><code> d_ sid </code> 前置詞會告訴我們的系統ID是 <span class="keyword"> Audience Manager </span> 特徵ID。這與使用者介面中顯示的ID相同。You can also return trait IDs with the API <code> GET </code> method. See <a href="../../../api/rest-api-main/api-traits.md"> Trait API Methods </a>. </p> </td>
+   <td colname="col1"> <p> <code> d_sid= </code> </p> </td> 
+   <td colname="col2"> <p><code> d_sid首碼 </code> 會告訴我們的系統ID是 <span class="keyword"> Audience Manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET方法傳回特徵 </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
   </tr>
   <tr> 
-   <td colname="col1"> <p> <code> d_ unsid= </code> </p> </td> 
-   <td colname="col2"> <p>Data prefixed with <code> d_unsid </code> removes users from that trait. The <code> d_unsid </code> prefix is ignored in an <code> overwrite </code> file. </p> <p><code> d_ unsid= </code> 前置詞會告訴系統ID是 <span class="keyword"> Audience Manager </span> 特徵ID。這與使用者介面中顯示的ID相同。You can also return trait IDs with the API <code> GET </code> method. See <a href="../../../api/rest-api-main/api-traits.md"> Trait API Methods </a>. </p> </td>
+   <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
+   <td colname="col2"> <p>前置有 <code> d_unsid的資料會 </code> 從該特徵中移除使用者。 覆寫 <code> 檔案 </code> 中會忽略d_unsid <code> 首 </code> 碼。 </p> <p><code> d_unsid=首碼會告 </code> 訴我們的系統ID是 <span class="keyword"> Audience Manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET方法傳回特徵 </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
-   <td colname="col2"> <p> <a href="../../../features/traits/manage-trait-rules.md#managing-trait-rules"> 特徵規則 </a> 可讓您設定特徵資格的標準。If you format a trait rule as <code> ic == trait ID </code>, you can send in traits in a simple comma formatted list. </p> <p>例如，假設您建立了這個特徵規則： </p> <p> 
+   <td colname="col2"> <p> <a href="../../../features/traits/manage-trait-rules.md#managing-trait-rules"> 特徵規則 </a> 可讓您設定特徵資格的准則。 如果您將特徵規則格式設為 <code> ic ==特徵ID </code>，則可以以簡單的逗號格式清單傳送特徵。 </p> <p>例如，假設您建立這3個特徵規則： </p> <p> 
      <ul class="simplelist"> 
-      <li> <code> ic==「123」 </code> </li>
-      <li> <code> ic==「456」 </code> </li>
-      <li> <code> ic==「789」 </code> </li>
-     </ul> </p> <p>These traits are associated with the <code> ic </code> key. 這可讓您在資料檔案中建立更簡單的特徵清單。And, you do not need to include the <code> ic </code> prefix. 因此，您的資料檔案內容可能如下所示： </p> <p>
-     <code><i>使用者ID</i>&lt; TAB&gt;123,456,789 </code>
-  </p> </td> 
+      <li> <code> ic == "123" </code> </li>
+      <li> <code> ic == "456" </code> </li>
+      <li> <code> ic == "789" </code> </li>
+     </ul> </p> <p>這些特性與IC鍵相 <code> 關 </code> 聯。 這可讓您在資料檔案中建立更簡單的特徵清單。 而且，您不需要包含 <code> ic </code> 首碼。 因此，您的資料檔案內容可能如下所示： </p> <p>
+     <code> 
+                       
+      使 <i>用者ID</i>&lt;TAB&gt; 123,456,789 </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>索引鍵值配對 </p> </td> 
-   <td colname="col2"> <p>特徵資料可使用英數字串格式格式設定為索引鍵值配對。格式化索引鍵值對有幾種方式，如下所示： </p> <p> 
+   <td colname="col1"> <p>鍵值對 </p> </td> 
+   <td colname="col2"> <p>特徵資料可使用英數字串格式化為鍵值配對。 有幾種格式化鍵值對的方法，如下所示： </p> <p> 
      <ul id="ul_D4F5A97FE0444AC6B7D8D4DAEDD3EAF2"> 
-      <li id="li_07B893AA8EB24F34B70F8DA06E87EAB3"> <code> key= value </code> </li> 
-      <li id="li_1F3ACA27C5794931B430298B27AB8BCC"> <code> 「key」= value </code> </li> 
-      <li id="li_8910539EB4F0431E8CF63983D30D9B08"> <code> key=「value」 </code> </li> 
-      <li id="li_DCECE281D245438FB01F8D0BA932B3CC"> <code> 「key」=「value」 </code> </li> 
-     </ul><code> 「age」=「32」 </code> 、 <code> 「性別」= m </code> 、 <code> model=「cick truck」 </code> ， <code> product= tablet </code> 是正確格式化索引鍵值配對的所有範例。 </p> </td> 
+      <li id="li_07B893AA8EB24F34B70F8DA06E87EAB3"> <code> 鍵=值 </code> </li> 
+      <li id="li_1F3ACA27C5794931B430298B27AB8BCC"> <code> "key" =值 </code> </li> 
+      <li id="li_8910539EB4F0431E8CF63983D30D9B08"> <code> key = "value" </code> </li> 
+      <li id="li_DCECE281D245438FB01F8D0BA932B3CC"> <code> "key" = "value" </code> </li> 
+     </ul><code> "age"="32" </code> , <code> "geder"=m </code> , model = "pickturk" <code> , </code><code></code> product = tablet都是正確格式的鍵值配對範例。 </p> </td> 
   </tr>
  </tbody>
 </table>
 
-## Invalid Characters in Trait IDs, User IDs and Key-Value Pairs {#invalid-chars}
+## 特徵ID、使用者ID和索引鍵值配對中的無效字元 {#invalid-chars}
 
 ### 特徵ID
 
-特徵ID僅包含數字字元。We ask that you include *only onboarded traits* in inbound data files. 我們不會處理傳入資料傳輸中任何其他特徵類型。
+特徵ID只包含數值字元。 我們要求您在傳入的資 *料檔案中僅包含已登入的特徵* 。 我們不會在傳入資料傳輸中處理任何其他特徵類型。
 
 ### 使用者 ID
 
@@ -136,22 +137,22 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
  <tbody> 
   <tr> 
    <td colname="col1"> <p>DPUUID </p> </td> 
-   <td colname="col2"> <p><i>請勿</i> 使用編碼的冒號( <code> %3A </code>)或未編碼的冒號(：)中的符號。 </p> </td> 
+   <td colname="col2"> <p><i>請勿使用</i> 「編碼」冒號( <code> %3A </code>)或「未編碼」冒號(:)符號。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>行動iOS(IDFA)或Android裝置ID </p> </td> 
    <td colname="col2"> <p>行動裝置ID必須嚴格格式化，如下所示： </p> <p> 
      <ul id="ul_6AEFB6CFA54444D9B75F03BCE7916696"> 
-      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA格式：ID必須大寫且不會雜湊。For example, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android格式：ID必須是小寫且不會雜湊。For example, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA格式：ID必須大寫，而非雜湊。 例如， <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android格式：ID必須小寫，而非雜湊。 例如， <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td>
   </tr>
  </tbody>
 </table>
 
-### 索引鍵值配對
+### 鍵值對
 
-關鍵值配對中不正確的格式化值名稱也會造成問題。建立或命名索引鍵值對中的值時，請遵循下列規則：
+鍵值對中的值名稱格式不正確也會導致問題。 在鍵值對中建立或命名值時，請遵循以下規則：
 
 <table id="table_41A4991090A64DEFA9AF704164B26DBB"> 
  <thead> 
@@ -162,29 +163,29 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>引述字元(」) </p> </td> 
-   <td colname="col2"> <p>您可以在索引鍵中使用引號字元，並在索引鍵值配對的值中使用值，例如： </p> <p> 
+   <td colname="col1"> <p>引號字元(") </p> </td> 
+   <td colname="col2"> <p>您可以在鍵和鍵值對的值部分使用引號字元，例如： </p> <p> 
      <ul id="ul_3447A913203647A8A9A1A5D14B1A19FE"> 
-      <li id="li_B19B56CE8D4449B881B912E74809E00D"> <p> <code> d_ city=「New York」，d_ city=「San Francisco」 </code> </p> </li> 
-      <li id="li_895380BB35B4498091928F75F0BB6A45"> <p> <code> 「d_ city」=「New York」，「d_ city」=「San Francisco」 </code> </p> </li> 
+      <li id="li_B19B56CE8D4449B881B912E74809E00D"> <p> <code> d_city = "New York",d_city = "San Francisco" </code> </p> </li> 
+      <li id="li_895380BB35B4498091928F75F0BB6A45"> <p> <code> "d_city" = "New York", "d_city" = "舊金山" </code> </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>破折號字元(-) </p> </td> 
-   <td colname="col2"> <p>我們忽略按鍵開頭的虛線。For example, <code> -product = camera </code> is interpreted as <code> product = camera </code>. </p> </td> 
+   <td colname="col2"> <p>我們忽略鍵開頭的破折號。 例如， <code> -product = camera被解 </code> 釋為 <code> product = camera </code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p><i>請勿</i> 在關鍵值配對中使用 <code> TAB </code> 而非空值。Only use <code> TAB </code> to separate variables in the inbound data file. </p> </td> 
+   <td colname="col1"> <p> <code> 頁籤 </code> </p> </td> 
+   <td colname="col2"> <p><i>請勿在鍵值</i> 配 <code></code> 對中使用TAB而不使用空值。 僅使用 <code> TAB </code> 來分隔傳入資料檔案中的變數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> \ n，\ t </code> </p> </td> 
-   <td colname="col2"> <p>Do not use the new line or tab characters ( <code> \n, \t </code>) in keys or in values. </p> </td> 
+   <td colname="col1"> <p> <code> \n, \t </code> </p> </td> 
+   <td colname="col2"> <p>請勿在鍵或值中使用新的 <code> 行或制表符字 </code>符(\n、\t)。 </p> </td> 
   </tr>
  </tbody>
 </table>
 
-## Data File Examples {#data-file-examples}
+## 資料檔案範例 {#data-file-examples}
 
 <table id="table_8017E070F7A54143A82CA153CBAEB5DA"> 
  <thead> 
@@ -195,46 +196,46 @@ For other accepted file content formats, see [Custom Partner Integrations](/help
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>With <code> d_sid </code> or <code> d_unsid </code> </p> </td> 
-   <td colname="col2"> <p>此資料檔案顯示符合特性24、26、27並已從特徵28和29移除的使用者。 </p> <p> 
-     <code>5976755918620620670090870090082598252&amp; amp；nbsp；&amp; amp；nbsp；d_ sid=24，d_ sid=26，d_ sid=27，d_ unsid=28，d_ unsid=29 </code>
-  </p> <p>注意:  <p>您也可以使用下列語法從使用者描述檔移除特性，而不使用d_ unsid： </p> <p> 
-      <code>5976755918620620670090870090082598252&amp; amp；nbsp；28：00與amp；nbsp；29：0 </code>
-  </p> <p> 
-      <code>5976755918620620670090870090082598252&amp; amp；nbsp；28：1與amp；nbsp；29：-1 </code>
-  </p> </p> </td> 
+   <td colname="col1"> <p>具 <code> 有d_sid </code> 或 <code> d_unsid </code> </p> </td> 
+   <td colname="col2"> <p>此資料檔案顯示符合特徵24、26、27的使用者，且已從特徵28和29移除。 </p> <p> 
+     <code>
+       597675918181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 </code> </p> <p>注意:  <p>您也可以使用下列語法，從使用者描述檔移除特徵，而不是使用d_unsid: </p> <p> 
+      <code>
+        597675918181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 </code> </p> <p> 
+      <code>
+        597675918181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 </code> </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>With <code> ic== </code> </p> </td> 
-   <td colname="col2"> <p>These traits have been added to a trait rule with the <code> ic </code> prefix. 因此，您可以將它們新增至以逗號分隔的資料檔案。標籤會分隔UUID和特徵ID。The <code> ic </code> prefix is not required in the file. </p> <p><b>數值ID</b> </p> <p> 
-     <code>DBWLogic3DHFMCFHBHB2M4F9ZKJExnrRDD2PXVI1&amp; amp；nbsp；&amp; amp；nbsp；30608,50354,50338,50352,30626 </code>
-  </p> <p><b>字串ID</b> </p> <p> 
-     <code>DBWLogic3DHFMCFHBHB2M4F9ZKJExnrRDD2PXVI1&amp; amp；nbsp；&amp; amp；nbsp；ic=52，ic=55 </code>
-  </p> </td> 
+   <td colname="col1"> <p>帶 <code> ic== </code> </p> </td> 
+   <td colname="col2"> <p>這些特徵已新增至具有ic首碼的特 <code> 徵 </code> 規則。 因此，您可以將檔案新增至資料檔案，並以逗號分隔，如所示。 標籤可分隔UUID和特徵ID。 檔 <code> 案 </code> 中不需要IC首碼。 </p> <p><b>數值ID</b> </p> <p> 
+     <code>
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,5035230626 </code> </p> <p><b>字串ID</b> </p> <p> 
+     <code>
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>有索引鍵值配對 </p> </td> 
-   <td colname="col2"> This file data uses key-value pairs to pass in data to <span class="keyword"> Audience Manager </span>. <p> 
-     <code>5976755918620620670090870090082598252&amp; amp；nbsp；「性別」=「女性」，「奢華_ operper」=「yes」 </code>
-  </p> </td> 
+   <td colname="col1"> <p>具有鍵值對 </p> </td> 
+   <td colname="col2"> 此檔案資料使用金鑰值配對，將資料傳入 <span class="keyword"> Audience Manager </span>。 <p> 
+     <code>
+       59767591818126206060278870901087098252&amp;nbsp;"geder"="femule","luxury_shopper"="yes" </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-[如果](assets/ftp_dpm_1234_1445374061.overwrite) 需要其他範例，請下載範例資料檔案。The download file has a `.overwrite` file extension. 您可以使用簡單的文字編輯器來開啓。
+[如果您需要](assets/ftp_dpm_1234_1445374061.overwrite) 其他範例，請下載範例資料檔案。 下載檔案的副檔 `.overwrite` 名為。 您可以使用簡單的文字編輯器來開啟它。
 
-## Examples Matrix {#examples-matrix}
+## 範例矩陣 {#examples-matrix}
 
-The chart below shows examples of the correct way to format your Inbound files, depending on the [type of IDs](../../../reference/ids-in-aam.md) and the method by which you want to add traits to profiles.
+下圖顯示正確格式化傳入檔案的範例，視ID類型 [和要新增特徵至描述檔的方法而定](../../../reference/ids-in-aam.md) 。
 
 <table id="table_FE6D97A1F5074E4A8EFC723AF0C5E707"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> ID類型/操作 </th> 
-   <th colname="col2" class="entry"> 使用d_ sid新增特性至使用者描述檔 </th> 
-   <th colname="col3" class="entry"> 使用d_ unsid從使用者描述檔移除特徵 </th> 
-   <th colname="col4" class="entry"> 傳入索引鍵值配對，以新增特性至使用者描述檔 </th> 
-   <th colname="col5" class="entry"> 使用ic首碼新增特性至使用者描述檔 </th> 
+   <th colname="col1" class="entry"> ID類型／操作 </th> 
+   <th colname="col2" class="entry"> 使用d_sid將特徵新增至使用者設定檔 </th> 
+   <th colname="col3" class="entry"> 使用d_unsid從使用者設定檔移除特徵 </th> 
+   <th colname="col4" class="entry"> 傳送索引鍵值配對，以新增特徵至使用者描述檔 </th> 
+   <th colname="col5" class="entry"> 使用ic首碼將特徵新增至使用者描述檔 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -246,17 +247,17 @@ The chart below shows examples of the correct way to format your Inbound files, 
    <td colname="col5"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-4"> 範例4 </a> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Android裝置的Google Advertising ID </p> </td> 
+   <td colname="col1"> <p>Android裝置專用的Google廣告ID </p> </td> 
    <td colname="col2"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-5"> 範例5 </a> </p> </td> 
    <td colname="col3"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-6"> 範例6 </a> </p> </td> 
    <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-7"> 範例7 </a> </p> </td> 
    <td colname="col5"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-8"> 範例8 </a> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>iOS裝置適用的Apple IDFA </p> </td> 
+   <td colname="col1"> <p>iOS裝置專用的Apple IDFA </p> </td> 
    <td colname="col2"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-9"> 範例9 </a> </p> </td> 
    <td colname="col3"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-10"> 範例10 </a> </p> </td> 
-   <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-11"> 範例11 </a> </p> </td> 
+   <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-11"> 範例10 </a> </p> </td> 
    <td colname="col5"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-12"> 範例12 </a> </p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +280,7 @@ The chart below shows examples of the correct way to format your Inbound files, 
 
 ### Example 2 {#example-2}
 
-使用特徵ID傳送Audience Manager UUID的特徵免資格資訊。
+使用特徵ID來傳送Audience Manager UUID的特徵不合格資訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -299,7 +300,7 @@ The chart below shows examples of the correct way to format your Inbound files, 
 
 ### Example 3 {#example-3}
 
-以索引鍵值配對傳送，為Audience Manager UUID新增特徵資格資訊。
+傳送索引鍵值配對，以新增Audience Manager UUID的特徵資格資訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> product = tablet, product = phone
@@ -327,7 +328,7 @@ The chart below shows examples of the correct way to format your Inbound files, 
 
 ### Example 5 {#example-5}
 
-使用特徵ID來傳送適用於Android裝置的特徵資格資訊。
+使用特徵ID來傳送Android裝置的特徵資格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -335,7 +336,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Example 6 {#example-6}
 
-使用特徵ID為Android裝置傳送特徵不合格資訊。
+使用特徵ID來傳送Android裝置的特徵不合格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -355,7 +356,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Example 7 {#example-7}
 
-以索引鍵值配對傳送，為Android裝置新增特徵資格資訊。
+傳送索引鍵值配對，以新增Android裝置的特徵資格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> product = tablet, product = phone
@@ -369,7 +370,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "ph
 
 ### Example 8 {#example-8}
 
-使用ic首碼來傳送適用於Android裝置的特徵資格資訊。
+使用ic首碼來傳送Android裝置的特徵資格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
@@ -383,7 +384,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 9 {#example-9}
 
-使用特徵ID來傳送iOS裝置適用的特徵資格資訊。
+使用特徵ID來傳送iOS裝置的特徵資格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -391,7 +392,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 10 {#example-10}
 
-使用特徵ID為iOS裝置傳送特徵不合格資訊。
+使用特徵ID來傳送iOS裝置的特徵不合格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -411,7 +412,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 11 {#example-11}
 
-以索引鍵值配對傳送，為iOS裝置新增特徵資格資訊。
+傳送索引鍵值配對，以新增iOS裝置的特徵資格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> product = tablet, product = phone
@@ -425,7 +426,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 12 {#example-12}
 
-使用ic首碼傳送iOS裝置適用的特徵資格資訊。
+使用ic首碼來傳送iOS裝置的特性資格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
@@ -439,7 +440,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 13 {#example-13}
 
-使用特徵ID為DPUUID傳送特徵資格資訊。
+使用特徵ID來傳送DPUUID的特徵資格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -447,7 +448,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Example 14 {#example-14}
 
-使用特徵ID傳送特徵不合格的dpuuID資訊。
+使用特徵ID來傳送DPUUID的特徵不合格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -467,7 +468,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Example 15 {#example-15}
 
-在索引鍵值配對中傳送，為DPUUID新增特徵資格資訊。
+傳送索引鍵值配對，以新增DPUUID的特徵資格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> product = tablet, product = phone
@@ -481,7 +482,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = 
 
 ### Example 16 {#example-16}
 
-使用ic首碼傳送適用於DPUUID的特徵資格資訊。
+使用ic首碼來傳送DPUUID的特徵資格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
@@ -493,7 +494,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> ic=52,ic=55
 ```
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
 >* [特徵產生器](../../../features/traits/about-trait-builder.md)
 
