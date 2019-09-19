@@ -1,10 +1,10 @@
 ---
-description: 在Audience Manager中，我們的工程師、開發人員和程式碼外觀就像您一樣。而且，和您一樣，我們想要使用可靠、精確的API文件。因此，我們將重新編寫Swagger中的API內容，並將它移至新位置。這些變更旨在協助改進您使用Audience Manager API程式碼的體驗。
-seo-description: 在Audience Manager中，我們的工程師、開發人員和程式碼外觀就像您一樣。而且，和您一樣，我們想要使用可靠、精確的API文件。因此，我們將重新編寫Swagger中的API內容，並將它移至新位置。這些變更旨在協助改進您使用Audience Manager API程式碼的體驗。
+description: 在Audience Manager，我們是工程師、開發人員，以及像您一樣的程式碼忍者。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
+seo-description: 在Audience Manager，我們是工程師、開發人員，以及像您一樣的程式碼忍者。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
 seo-title: Audience Manager API程式碼移轉
 solution: Audience Manager
 title: Audience Manager API程式碼移轉
-uuid: 93cc28c4-4b91-4c79-93d5-eg9 bb4 cc9 d5
+uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 translation-type: tm+mt
 source-git-commit: d368699d0de9a43cb7cf2c1af64da941a811db71
 
@@ -13,13 +13,13 @@ source-git-commit: d368699d0de9a43cb7cf2c1af64da941a811db71
 
 # Audience Manager API Code Migration {#audience-manager-api-code-migration}
 
-在Audience Manager中，我們的工程師、開發人員和程式碼外觀就像您一樣。And, like you, we want to work with reliable, accurate [!DNL API] documentation. As a result, we're re-writing our [!DNL API] content in [!DNL Swagger] and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager [!DNL API] code.
+在Audience Manager，我們是工程師、開發人員，以及像您一樣的程式碼忍者。 而且，和您一樣，我們也想要使用可靠、精確的檔案 [!DNL API] 工作。 因此，我們會將內容重新寫入， [!DNL API] 並將內 [!DNL Swagger] 容移至新位置。 這些變更旨在協助您改善使用Audience Manager程式碼的 [!DNL API] 體驗。
 
 ## Movin' On Up {#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-[Adobe Audience Manager API文件](https://bank.demdex.com/portal/swagger/index.html) 網站是我們修訂 [!DNL API] 內容的新首頁。We'll try to re-write and move a few sets of [!DNL API] methods with each release. This means you'll have to check in both the new location and the [REST API](../api/rest-api-main/rest-api-main.md) documentation to find all of the available methods. Eventually, all of the public [!DNL API]s will be on the [!DNL Audience Manager] [!DNL API] docs site. The following table lists the revised and migrated [!DNL API]s.
+Adobe [Audience Manager API Docs網站是我們修訂內容的新](https://bank.demdex.com/portal/swagger/index.html)[!DNL API] 首頁。 我們會嘗試在每個版本中重新編寫並移 [!DNL API] 動幾組方法。 這表示您必須同時登入新位置和 [REST API檔案](../api/rest-api-main/rest-api-main.md) ，才能找到所有可用的方法。 最終，所有公眾 [!DNL API]都將進入 [!DNL Audience Manager] 文檔 [!DNL API] 站點。 下表列出修訂和遷移 [!DNL API]的。
 
 <table id="table_CD3C244CB02C48C898745FB982EC828C"> 
  <thead> 
@@ -40,7 +40,7 @@ source-git-commit: d368699d0de9a43cb7cf2c1af64da941a811db71
       <li id="li_50EE5F6B2278480E9FEA04AD51664F9D"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/?f=Data_Feed_API" format="https" scope="external"> 資料饋送</a> </li> 
       <li id="li_5D372E3819014AB78C12048A9A2DC89F"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/Data_Feed_Request_API/" format="https" scope="external"> 資料饋送請求</a> </li> 
       <li id="li_0582688D08C346C68B81D86A5C46E053"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/?f=Data_Feed_Finance_API" format="https" scope="external"> 資料饋送財務</a> </li> 
-      <li id="li_C1C1CB42D6A74803B4672F6EE2D2D08C"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/?f=Data_Feed_Plans_API" format="https" scope="external"> 資料饋送計劃</a> </li> 
+      <li id="li_C1C1CB42D6A74803B4672F6EE2D2D08C"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/?f=Data_Feed_Plans_API" format="https" scope="external"> 資料饋送計畫</a> </li> 
       <li id="li_D8F9D791D0824287B9D0B0585E3106AB"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/Data_Feed_Subscription_API" format="https" scope="external"> 資料饋送訂閱</a> </li> 
      </ul> </p> </td> 
   </tr> 
@@ -48,15 +48,15 @@ source-git-commit: d368699d0de9a43cb7cf2c1af64da941a811db71
    <td colname="col1"> <p> <b>資料來源</b> </p> </td> 
    <td colname="col2"> <p> <a href="https://bank.demdex.com/portal/swagger/index.html#!/Data_Source_API" format="https" scope="external"> 資料來源</a> </p> </td> 
   </tr> 
-   <td colname="col1"> <p> <b>衍生訊號</b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://bank.demdex.com/portal/swagger/index.html#/Derived_Signals_API" format="https" scope="external"> 衍生訊號</a> </p> </td> 
+   <td colname="col1"> <p> <b>衍生信號</b> </p> </td> 
+   <td colname="col2"> <p> <a href="https://bank.demdex.com/portal/swagger/index.html#/Derived_Signals_API" format="https" scope="external"> 衍生信號</a> </p> </td> 
   </tr>   
   <tr> 
    <td colname="col1"> <p> <b>資料夾</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_FD05673B372141F3B0EF2C79A338F744"> 
       <li id="li_5D16FCAF6F0E411694A1CFBE9571BDAC"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/Segment_Folder_API" format="https" scope="external"> 區段資料夾</a> </li> 
-      <li id="li_5DC088C0F8CA4FC193248366C8400030"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/Trait_Folder_API" scope="external" format="https"> 特徵檔案夾</a> </li> 
+      <li id="li_5DC088C0F8CA4FC193248366C8400030"> <a href="https://bank.demdex.com/portal/swagger/index.html#!/Trait_Folder_API" scope="external" format="https"> 特徵資料夾</a> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
