@@ -1,25 +1,25 @@
 ---
-description: 根據訊號類型篩選訊號搜尋結果。
-seo-description: 根據訊號類型篩選訊號搜尋結果。
+description: 根據信號類型對信號搜索結果進行濾波。
+seo-description: 根據信號類型對信號搜索結果進行濾波。
 seo-title: 篩選搜尋結果
 title: 篩選搜尋結果
-uuid: 7b764a5d-f8 ae-4f7 b-83f5-3f6 c40 de639 b
+uuid: 7b764a5d-f8ae-4f7b-83f5-7f6c40de639b
 translation-type: tm+mt
 source-git-commit: 12216ab5105fce80b4b47c31ee6be144ddfe8df9
 
 ---
 
 
-# Filter Search Results {#filter-search-results}
+# 篩選搜尋結果 {#filter-search-results}
 
-根據訊號類型篩選訊號搜尋結果。
+根據信號類型對信號搜索結果進行濾波。
 
-1. Go to [!UICONTROL Audience Data > Signals > Search] and run a [!UICONTROL Signals Search] with the desired key-value pairs, or a broader search, using the filters.
-1. Use the **[!UICONTROL Filter by Signal Type]** section to filter your results based on the following categories:
+1. 使用篩 [!UICONTROL Audience Data > Signals > Search] 選器， [!UICONTROL Signals Search] 移至並執行所需的索引鍵值配對或更廣泛的搜尋。
+1. 使用區 **[!UICONTROL Filter by Signal Type]** 段可依下列類別篩選結果：
 
-   * **[!UICONTROL Actionable log files]**：透過 [!DNL Google][!DNL DCM] 記錄檔接收的訊號；
-   * **[!DNL Adobe Analytics]**：收到的訊號 [!DNL Adobe Analytics] 。Use the **[!UICONTROL Filter by report suites]** drop-down menu to select the report suite to show signals from.
-   * **[!UICONTROL General online data]**：您的訪客產生的即時資料，並不包含在可操作的記錄檔中 [!DNL Adobe Analytics]；
-   * **[!UICONTROL Onboarded records]**：透過批次資料傳輸接收的資料。Use the **[!UICONTROL Filter by data source]** drop-down menu to select the data source to show signals from.
+   * **[!UICONTROL Actionable log files]**:通過日誌檔案 [!DNL Google] 接收的 [!DNL DCM] 信號；
+   * **[!DNL Adobe Analytics]**:從您的帳戶收到的 [!DNL Adobe Analytics] 信號。 使用下 **[!UICONTROL Filter by report suites]** 拉式選單來選取要顯示訊號的報表套裝。
+   * **[!UICONTROL General online data]**:由您的訪客產生且未包含在可操作記錄檔中的即時資料 [!DNL Adobe Analytics];
+   * **[!UICONTROL Onboarded records]**:通過批次資料傳輸接收的資料。 使用下 **[!UICONTROL Filter by data source]** 拉式選單來選取要顯示訊號的資料來源。
 
-1. Optionally, you can [Save Search Criteria](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) for future use.
+1. （可選）您可以 [保存搜索標準](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) ，以備將來使用。
