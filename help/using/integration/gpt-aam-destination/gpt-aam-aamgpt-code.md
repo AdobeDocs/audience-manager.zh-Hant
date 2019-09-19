@@ -1,27 +1,27 @@
 ---
-description: Aamgpt是一個JavaScript函數，可讀取Audience Manager Cookie資料，並將該資訊傳送至Google Publisher標記。
-seo-description: Aamgpt是一個JavaScript函數，可讀取Audience Manager Cookie資料，並將該資訊傳送至Google Publisher標記。
-seo-title: Google Publisher標記的Audience Manager代碼
+description: AamGpt是JavaScript函式，可讀取Audience Manager cookie資料並將該資訊傳送至Google Publisher標籤。
+seo-description: AamGpt是JavaScript函式，可讀取Audience Manager cookie資料並將該資訊傳送至Google Publisher標籤。
+seo-title: Google Publisher標籤的Audience Manager代碼
 solution: Audience Manager
-title: Google Publisher標記的Audience Manager代碼
-uuid: 24ff5d16-b360-46cc-a4 c6-6db34 d7 fda75
+title: Google Publisher標籤的Audience Manager代碼
+uuid: 24ff5d16-b360-46cc-a4c6-6db34d7fda75
 translation-type: tm+mt
 source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
 
 ---
 
 
-# Audience Manager Code for Google Publisher Tags {#audience-manager-code-for-google-publisher-tags}
+# Google Publisher標籤的Audience Manager代碼 {#audience-manager-code-for-google-publisher-tags}
 
-`AamGpt` is a [!DNL JavaScript] function that read Audience Manager cookie data and send that information to [!DNL Google Publisher Tags].
+`AamGpt` 是讀取 [!DNL JavaScript] Audience Manager cookie資料並將該資訊傳送至的函式 [!DNL Google Publisher Tags]。
 
 >[!NOTE]
 >
->This function is not required if you have your own code to read Audience Manager cookie data from the [!UICONTROL UUID] and destination cookies.
+>如果您有自己的程式碼，可從和目標Cookie讀取Audience Manager cookie資料，則不需要 [!UICONTROL UUID] 此函式。
 
 ## 程式碼範例
 
-`AamGpt` 將程式碼放在頁面最上方，最好在 `<head>` 程式碼區塊內。`AamGpt` 程式碼如下：
+將程 `AamGpt` 式碼置於頁面頂端，最好是位於程式碼 `<head>` 區塊內。 程式 `AamGpt` 碼可在下方取得：
 
 ```js
 var AamGpt = {  
