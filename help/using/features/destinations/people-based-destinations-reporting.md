@@ -1,53 +1,53 @@
 ---
-description: '以人員為基礎的目標將可分享觀眾概念引進Audience Manager。此度量可協助您瞭解Audience Manager可與目標平台共用的雜湊電子郵件地址。 '
-seo-description: '以人員為基礎的目標將可分享觀眾概念引進Audience Manager。此度量可協助您瞭解Audience Manager可與目標平台共用的雜湊電子郵件地址。 '
-seo-title: 可分享對象
+description: '以人為本的目的地將「可分享的觀眾」概念引入Audience Manager。 此量度可協助您瞭解Audience manager可與目標平台共用多少雜湊電子郵件地址。 '
+seo-description: '以人為本的目的地將「可分享的觀眾」概念引入Audience Manager。 此量度可協助您瞭解Audience manager可與目標平台共用多少雜湊電子郵件地址。 '
+seo-title: 可分享的觀眾
 solution: Audience Manager
-title: 可分享對象
+title: 可分享的觀眾
 translation-type: tm+mt
 source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
 
 ---
 
 
-# 可分享對象 {#shareable-audiences}
+# 可分享的觀眾 {#shareable-audiences}
 
-[!DNL People-Based Destinations] 提供Audience [!DNL Shareable Audiences] Manager的概念。此度量可協助您瞭解Audience Manager可與目標平台共用的雜湊電子郵件地址。
+[!DNL People-Based Destinations] 將概念帶 [!DNL Shareable Audiences] 入Audience Manager。 此量度可協助您瞭解Audience manager可與目標平台共用多少雜湊電子郵件地址。
 
-[!DNL Shareable Audiences] 是一個度量，可幫助您解譯上下文中的讀者資料 [!DNL People-Based Destinations]。您可以在 [!UICONTROL Destinations] 頁面和 [!UICONTROL Segment] 頁面中查看此量度。
+[!DNL Shareable Audiences] 是一種度量，可協助您在內容中解譯觀眾資料 [!DNL People-Based Destinations]。 您可以在頁面和頁面 [!UICONTROL Destinations] 中看到此 [!UICONTROL Segment] 度量。
 
-## 區段可分享對象 {#segment-shareable-audiences}
+## 區段可分享的觀眾 {#segment-shareable-audiences}
 
-區段頁面中的 [!DNL Segment Shareable Audience] 量度會指出資料來源中的雜湊電子郵件地址數，這 [](../../reference/ids-in-aam.md)在指定的回顧期間內也符合定義的區段，這個規則也適用於指定的回顧期間，而且Audience Manager可與目的地平台共用。
+區 [!DNL Segment Shareable Audience] 段頁面中的量度會指出來自資料來源的雜湊電子郵件地址數目與相符的 [DPUUID](../../reference/ids-in-aam.md)，這些DPUUID也符合指定回顧期間中已定義區段的資格，因為套用了描述檔合併規則，而且Audience manager可與目標平台共用。
 
-此度量具有天回顧期間。這有助於您瞭解特定目的地中區段的受眾覆蓋範圍。
+此量度有1天回顧期。 這可協助您瞭解特定目的地區隔的受眾觸及面。
 
-## 目的地可共用對象 {#destination-shareable-audience}
+## 目標可共用對象 {#destination-shareable-audience}
 
-以人員為基礎的目的地頁面 [!DNL Destination Shareable Audience] 中的量度會指出來自資料來源的雜湊電子郵件地址總份數與目標 [](../../reference/ids-in-aam.md)平台，Audience Manager可從對應到該目的地的所有區段與目的地平台共用。
+人 [!DNL Destination Shareable Audience] 員型目標頁面中的量度會指出來自資料來源的雜湊電子郵件地址總數，以及Audience manager可與目標平台共用的 [DPUUID](../../reference/ids-in-aam.md)，這些DPUUID是來自映射至該目標的所有區段。
 
-![可分享觀眾](assets/dest-shareable-audiences.png)
+![可分享的觀眾](assets/dest-shareable-audiences.png)
 
-此量度具有終身回顧期間。如此可幫助您瞭解可透過雜湊電子郵件觸及的觀眾等級，以解決資料來源的問題。
+此量度具有期限回顧期間。 這可協助您瞭解從雜湊電子郵件地址資料來源可觸及的受眾規模。
 
 ## 範例
 
-Audience Manager客戶的資料來源有110,000 [個DPUUID](../../reference/ids-in-aam.md) (CRM ID)。他們會將100,000個雜湊的電子郵件地址嵌入Audience Manager，以便與多個人型目的地搭配使用，並對100，000個雜湊電子郵件地址執行ID同步，以便對CRM ID執行。客戶可以使用 [!DNL All Cross-Device Profiles] 合併規則建立三個對象區段：
+Audience manager客戶的資料來源有110,000個 [DPUUID](../../reference/ids-in-aam.md) (CRM ID)。 他們會將100,000個雜湊電子郵件位址擷取至Audience Manager，以便與多個以人為本的目的地搭配使用，並針對CRM ID對100,000個雜湊電子郵件地址執行ID同步。 客戶可使用合併規 [!DNL All Cross-Device Profiles] 則來建立三個對象區段：
 
-* 人口計數為10,000的區段A，映射至目的地A；
-* 人口計數為20,000的區段B(對應至目的地A)；
-* 人口計數為50,000的區段C已映射至目的地B。
+* 區段A，人口數為10,000，對應至目標A;
+* 區段B，人口計數為20,000，對應至目標A;
+* 區段C，人口計數為50,000，對應至目標B。
 
-在此情況下：
+在此案例中：
 
-* 區段A可分享對象=10,000；
-* 區段B可分享讀者=20,000；
-* 區段C可分享觀眾=50,000；
-* 目標一個可分享對象=區段A可分享讀者+區段B可分享對象=30,000；
-* 目標B可分享讀者=區段C可分享觀眾=50,000。
+* 區隔A可分享的對象= 10,000;
+* B區段可分享的對象= 20,000;
+* 區段C可分享對象= 50,000;
+* 目標A可分享的對象=可分享的對象群體A+可分享的對象群體B=30,000;
+* 目標B可分享對象=區段C可分享對象= 50,000。
 
-![可分享觀眾圖表](assets/shareable-audiences.png)
+![可共用的觀眾——圖](assets/shareable-audiences.png)
 
 > [!NOTE]
 >
-> 在上述範例中，並不表示這三個區段中的80，000個雜湊電子郵件地址與目的地平台中現有的帳戶相符。這只表示Audience Manager會將雜湊識別碼從三個區段傳送至其各自目的地。將觀眾區段傳送至以人為基礎的目的地時，合作夥伴會在合作夥伴端進行配對。目的地A最多可有30，000個相符使用者帳戶，而目的地B最多可有50,000個相符使用者帳戶，但不保證匹配率。Adobe無法存取合作夥伴特定量度。請參閱 [「基於人物目標的目標」常見問題在匹配比率中的匹配比率](../../faq/faq-people-based-destinations.md#match-rates) 。
+> 在上述範例中，這並不表示三個區段的所有80,000個雜湊電子郵件地址都符合目標平台中的現有帳戶。 這僅表示Audience manager會從三個區段傳送雜湊識別碼至其各自的目的地。 將受眾細分傳送至以人為本的目的地時，合作夥伴會進行受眾比對。 目標A最多可有30,000個相符的使用者帳戶，而目標B最多可能有50,000個相符的使用者帳戶，但無法保證符合率。 Adobe無法存取特定於合作夥伴的量度。 如需相 [符率中](../../faq/faq-people-based-destinations.md#match-rates) 「基於人的目的地可見度」的常見問題，請參閱比對率。
