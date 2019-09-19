@@ -1,41 +1,41 @@
 ---
-description: 「獨特使用者觸及」報表會傳回泡泡圖中的資料。每個泡泡的大小與您所選廣告單位的獨特使用者人數成正比。較大的泡泡表示比較小泡泡更接近。「獨特使用者觸及」報告可協助您找到廣告單位，以觸及到目標使用者。
-seo-description: 「獨特使用者觸及」報表會傳回泡泡圖中的資料。每個泡泡的大小與您所選廣告單位的獨特使用者人數成正比。較大的泡泡表示比較小泡泡更接近。「獨特使用者觸及」報告可協助您找到廣告單位，以觸及到目標使用者。
+description: 「獨特使用者觸及」報表會傳回泡泡圖中的資料。 每個泡泡的大小與所選廣告單位的獨特使用者人數成正比。 較大的泡泡表明，比較小的泡泡更大的覆蓋面。 「不重複使用者觸及」報表可協助您尋找廣告單位，針對目標使用者提供最廣的觸及面。
+seo-description: 「獨特使用者觸及」報表會傳回泡泡圖中的資料。 每個泡泡的大小與所選廣告單位的獨特使用者人數成正比。 較大的泡泡表明，比較小的泡泡更大的覆蓋面。 「不重複使用者觸及」報表可協助您尋找廣告單位，針對目標使用者提供最廣的觸及面。
 seo-title: 獨特的使用者觸及面
 solution: Audience Manager
 title: 獨特的使用者觸及面
-uuid: 64e75fad-f4 cb-4d47-a162-34e663 f3966 f
+uuid: 64e75fad-f4cb-4d47-a162-34e663f3966f
 translation-type: tm+mt
 source-git-commit: 3a02c2e109f6ae4565cf9d86bb8828ab49bb01f0
 
 ---
 
 
-# Unique User Reach{#unique-user-reach}
+# 獨特的使用者觸及面{#unique-user-reach}
 
-「獨特使用者觸及」報表會傳回泡泡圖中的資料。每個泡泡的大小與您所選廣告單位的獨特使用者人數成正比。較大的泡泡表示比較小泡泡更接近。「獨特使用者觸及」報告可協助您找到廣告單位，以觸及到目標使用者。
+「獨特使用者觸及」報表會傳回泡泡圖中的資料。 每個泡泡的大小與所選廣告單位的獨特使用者人數成正比。 較大的泡泡表明，比較小的泡泡更大的覆蓋面。 「不重複使用者觸及」報表可協助您尋找廣告單位，針對目標使用者提供最廣的觸及面。
 
 ## 使用案例 {#use-cases}
 
-With the [!UICONTROL Unique User Reach] report, you can identify the properties in your portfolio that attract a high volume of unique users.
+透過報 [!UICONTROL Unique User Reach] 表，您可以識別投資組合中吸引大量獨特使用者的屬性。
 
-## Using the Unique Reach Report {#using-the-report}
+## 使用獨特觸及報告 {#using-the-report}
 
-Use the **[!UICONTROL Dimension Value]** box to select the ad units you want to display in the report. Click **[!UICONTROL All]** to display all your properties in the bubble chart.
+使用 **[!UICONTROL Dimension Value]** 此方塊來選擇您要在報表中顯示的廣告單位。 按一 **[!UICONTROL All]** 下以顯示泡泡圖中的所有屬性。
 
-Use the **Day Range** and **Date Through** controls to adjust your look-back range.
+使用 **日範圍****和日期穿透控制項** ，調整您的回顧範圍。
 
-## Interpreting the Results {#interpreting-results}
+## 解讀結果 {#interpreting-results}
 
 **範例報表**
 
-[!UICONTROL Unique User Reach] 您的報表看起來類似下方的報表。在報表中，按一下泡泡以檢視基礎資料。如需下表中的其他資訊，請參閱說明。
+您 [!UICONTROL Unique User Reach] 的報表看起來可能類似以下。 在報表中，按一下泡泡以檢視基礎資料。 請參閱下表中的說明以取得其他資訊。
 
 ![](assets/publisher_unique_user_reach.png)
 
 | 項目 | 說明 |
 |--- |--- |
-| 維度值 | 您的Web屬性名稱。 |
-| 維度類型 | 發行者維度的類型。我們目前僅支援廣告單元作為維度類型。 |
-| 曝光數 | 在指定的回顧範圍內，為您的Web屬性提供的印象數目。 |
-| 非重復觸及 | 網頁屬性上曝光所觸及的使用者人數。 |
+| 維度值 | Web屬性的名稱。 |
+| 維類型 | 發佈者維的類型。 我們目前僅支援廣告單位做為維度類型。 |
+| 曝光數 | 在指定的回顧範圍內，為您的Web屬性提供的印象數。 |
+| 獨特觸及面 | 您Web屬性上曝光觸及的使用者人數不重複。 |
