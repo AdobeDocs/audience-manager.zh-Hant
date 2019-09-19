@@ -1,52 +1,52 @@
 ---
-description: 根據其各自的索引鍵值配對，搜尋一或多個訊號。
-seo-description: 根據其各自的索引鍵值配對，搜尋一或多個訊號。
-seo-title: 依關鍵值配對的搜尋訊號
-title: 依關鍵值配對的搜尋訊號
-uuid: 2a38d0d4-4a2e-4ca5-b9 ec-af9 d4963 d876
+description: 根據一或多個信號各自的鍵值對來搜索這些信號。
+seo-description: 根據一或多個信號各自的鍵值對來搜索這些信號。
+seo-title: 按鍵值對搜索信號
+title: 按鍵值對搜索信號
+uuid: 2a38d0d4-4a2e-4ca5-b9ec-af9d4963d876
 translation-type: tm+mt
 source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 
 ---
 
 
-# Search Signals by Key-Value Pairs {#search-signals-by-key-value-pairs}
+# 按鍵值對搜索信號 {#search-signals-by-key-value-pairs}
 
-根據其各自的索引鍵值配對，搜尋一或多個訊號。
-To search for more than one signal, click the ![Add](assets/icon_add.png) button. 輸入您要搜尋的索引鍵值配對，然後使用下列篩選條件縮小結果。
+根據一或多個信號各自的鍵值對來搜索這些信號。
+要搜索多個信號，請按一下「添加」 ![按鈕](assets/icon_add.png) 。 輸入要搜尋的索引鍵值配對，然後使用下列篩選器縮小結果範圍。
 
-* **訊號狀態**：搜尋特徵、未使用訊號或兩者所包含的訊號。
-* **檢視**&#x200B;下列項目的記錄：選擇要搜尋接收訊號的時間間隔。
-* **最低計數**：僅顯示在選定間隔內指定的最小總計數的訊號。
+* **信號狀態**:搜索特徵中包含的信號、未使用的信號或兩者。
+* **查看以下記錄**:選擇搜索接收信號的時間間隔。
+* **最小計數**:僅顯示在選定間隔內具有指定最小總計的信號。
 
 >[!IMPORTANT]
 >
->為簡化使用者體驗，關鍵值配對搜尋結果是以資料取樣為基礎。See [Data Sampling and Error Rates](/help/using/reporting/report-sampling.md) for details on how [!DNL Audience Manager] uses data sampling and why slight result variations may appear when comparing key-value search to general searches.
+>為簡化使用體驗，索引鍵值配對搜尋結果是以資料取樣為基礎。 如需 [資料取樣和錯誤率的詳細資訊，請](/help/using/reporting/report-sampling.md) 參閱資料取樣和錯誤率 [!DNL Audience Manager] ，以瞭解在比較索引鍵值搜尋與一般搜尋時，如何使用資料取樣，以及為何會出現細微的結果變化。
 
-When searching for signals using multiple key-value pairs, [!DNL Audience Manager] links the pairs using the logical **AND** operator. 例如，假設您使用下列索引鍵值配對進行搜尋：
+當使用多個鍵值對搜索信號時， [!DNL Audience Manager] 使用邏輯 **AND運算子連結該對** 。 例如，假設您使用下列鍵值配對執行搜尋：
 
 * [!DNL c_creative == "12345"]
 * [!DNL c_product == "smartphone"]
 * [!DNL c_location == "europe"]
 
-This search will return only results that qualify for all three filters on the same call: `c_creative == "12345"` `AND` `c_product == "smartphone"` `AND` `c_location == "europe"`.
+此搜尋只會傳回符合相同呼叫所有三個篩選條件的結果： `c_creative == "12345"``AND``c_product == "smartphone"``AND``c_location == "europe"`..
 
 ![](assets/signals-search.png)
 
-## Case Insensitivity and Search Auto-Completion {#case-insensitivity}
+## 區分大小寫與搜尋自動完成 {#case-insensitivity}
 
-索引鍵和值搜尋欄位不區分大小寫。關鍵搜尋欄位包含自動完成的建議。
+索引鍵和值搜尋欄位不區分大小寫。 關鍵搜尋欄位包含自動完成的建議。
 
 ![](assets/signal-search-suggestions.png)
 
-Let's say [!DNL Audience Manager] received the following signals:
+假設接收 [!DNL Audience Manager] 到下列信號：
 
 * `productCategory == smartphone`
 * `newProduct == iPhone`
 * `PRODUCT == phone`
 * `product == PHONE`
 
-When you enter `product` in the key search field, you receive auto-completed suggestions for `productCategory`, `newProduct`, `PRODUCT`, and `product`.
+在鍵搜 `product` 尋欄位中輸入時，您會收到自動完成的 `productCategory`、 `newProduct`、 `PRODUCT`和建議 `product`。
 
-Similarly, when you search for `product == phone`, [!UICONTROL Data Explorer] returns results for both `PRODUCT == phone` and `product == PHONE`.
-回填特徵實作不區分大小寫。A trait containing the signal with the key-value pair `PRODUCT == SMARTPHONE` also qualifies the signal with the key-value pair `product == smartphone`.
+同樣地，在搜索時， `product == phone`會 [!UICONTROL Data Explorer] 同時返回和 `PRODUCT == phone` 結果 `product == PHONE`。
+回填的特徵實現不區分大小寫。 包含具有鍵值對的信號的特徵 `PRODUCT == SMARTPHONE` 也使信號與鍵值對保持一致 `product == smartphone`。
