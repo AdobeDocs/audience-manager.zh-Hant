@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 54163f2d80398b69faf24c735d04e944eced035c
+source-git-commit: 78a0a0e461ea3a74d0dbb0370a841db274a6f9be
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 54163f2d80398b69faf24c735d04e944eced035c
      <li><a href="features/administration/ip-obfuscation.md">IP 位址模糊化</a> </li>
      </ul> </p> <p>另請參閱2019年 <a href="docs-updates/docs-2019.md"> 檔案更新</a>。 </p> 
      <p>如果您是Audience Manager的新手，請參閱我們的 <a href="reference/aam-glossary.md"> 辭彙</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p>
-     <br>
+     <br> 
      <p> <b>協作文件</b> </p>
      <p>我們歡迎所有讀者對我們的檔案所做的貢獻。 請參閱協 <a href="https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html">作指南概觀</a> ，瞭解如何開始提供內容。</p>
     </td>
@@ -36,11 +36,11 @@ source-git-commit: 54163f2d80398b69faf24c735d04e944eced035c
       <li id="li_EA594E939ED14D7780178DEA8E1AED64">請參閱<a href="https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html" format="https" scope="external">之前的發行說明</a>，瞭解以往的公告。 </li> 
      </ul> </p> <p> <b>Experience Cloud 資源</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
-      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Audience manager社群論壇</a> </li> 
-      <li id="li_1737D63307024F26B1F967621613A5AC"><a href="https://www.adobe.com/privacy.html" format="http" scope="external"> Adobe 隱私中心</a> </li> 
+      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Audience manager社群論壇</a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html" format="http" scope="external"> Audience manager教學課程</a> </li> 
+      <li id="li_1737D63307024F26B1F967621613A5AC"><a href="https://www.adobe.com/privacy.html" format="http" scope="external"> Adobe 隱私中心</a> </li>  
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe訓練與認證</a> </li> 
-      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/en_US/home/index.html" scope="external" format="https"> 產品文件首頁</a> </li> 
+      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/en_US/home/index.html" scope="external" format="https">Experience cloud產品檔案首頁</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external"> Audience Manager 學習與支援</a> </li> 
      </ul> </p> </td>
   </tr> 
