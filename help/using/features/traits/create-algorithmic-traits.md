@@ -1,59 +1,59 @@
 ---
-description: 說明演算法特徵建立程序專屬的步驟和功能。
-seo-description: 說明演算法特徵建立程序專屬的步驟和功能。
+description: 說明演算特徵建立程式專屬的設定步驟和功能。
+seo-description: 說明演算特徵建立程式專屬的設定步驟和功能。
 seo-title: 建立演算法特徵
 solution: Audience Manager
 title: 建立演算法特徵
-uuid: 50c2d2d1-f412-479b-be70-4f139429 c388
+uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Create Algorithmic Traits {#create-algorithmic-traits}
+# 建立演算法特徵 {#create-algorithmic-traits}
 
 <!-- t_algo_trait_build.xml -->
 
-To create an algorithmic trait, go to [!UICONTROL Traits] and follow the steps below:
+若要建立演算法特徵，請前往 [!UICONTROL Traits] 並遵循下列步驟：
 
-1. Click **[!UICONTROL Create New Trait]** and select **[!UICONTROL Algorithmic]** from the drop down menu.
-1. In the [Basic Information](../../features/traits/create-onboarded-rule-based-traits.md) section
-   * 為特徵命名。
+1. 按一 **[!UICONTROL Create New Trait]** 下並從下 **[!UICONTROL Algorithmic]** 拉式選單中選取。
+1. 在「基 [本資訊」部分](../../features/traits/create-onboarded-rule-based-traits.md)
+   * 命名特徵。
    * 選取資料來源。
    * 選擇儲存資料夾。
-1. Expand the [!UICONTROL Configuration] pane and click **[!UICONTROL Browse All Models]**.
-這會開啓新視窗，讓您選取要與特徵搭配使用的模型。
-1. Select a model and click **[!UICONTROL Add Selected Model to Trait]**.
-新增模型會顯示觸及和正確性設定。
-1. 選擇觸及或準確度作為目標，並從個別下拉式選單選擇值。Click **[!UICONTROL Save]** when done.
+1. 展開窗 [!UICONTROL Configuration] 格，然後按一下 **[!UICONTROL Browse All Models]**。
+這會開啟新視窗，讓您選取要與特徵搭配使用的模型。
+1. 選取模型，然後按一下 **[!UICONTROL Add Selected Model to Trait]**。
+新增模型可顯示觸及度和精確度設定。
+1. 選擇達到或準確度作為目標，並從各自的下拉式選單中選擇一個值。 Click **[!UICONTROL Save]** when done.
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [正確性與觸及面](../../features/traits/trait-accuracy-reach.md)
+>* [準確性與觸及性](../../features/traits/trait-accuracy-reach.md)
 
 
-## Configuration Settings for Algorithmic Traits {#configure-settings}
+## 演算法特徵的組態設定 {#configure-settings}
 
-In [!UICONTROL Trait Builder], the [!UICONTROL Configuration] section lets you associate an algorithmic model to a trait. 若要完成演算法特徵建立程序，請選取模型並選擇觸及或正確性目標。
+在中 [!UICONTROL Trait Builder]，此區 [!UICONTROL Configuration] 段可讓您將演算法模型與特徵建立關聯。 若要完成演算法特徵建立程式，請選取模型並選擇達到或精確目標。
 
 ### 必備條件
 
 <!-- r_algo_trait_config_section.xml -->
 
 * [建立演算法模型](../../features/algorithmic-models/create-model.md#build-model)。
-* 等候通知電子郵件，讓您知道模型資料執行已完成。
-* Complete the required fields in the [Basic Information](../../features/traits/create-onboarded-rule-based-traits.md) section.
+* 等待通知電子郵件，讓您知道模型資料執行已完成。
+* 填寫「基本資訊」區段 [中的必填欄](../../features/traits/create-onboarded-rule-based-traits.md) 。
 
-### 設定欄位與設定
+### 配置欄位和設定
 
 | 介面元素 | 解釋 |
 |---|---|
-| **[!UICONTROL Select Model for Algorithmic Trait]** | Click the **[!UICONTROL Update]** button to open the models window. 在視窗中，選取您要用來建立特徵的演算法模型。 |
-| **[!UICONTROL Select Goal Accuracy]** | 選取此選項，以根據準確度建立特徵。準確度是計分值，指出潛在使用者對您基準的程度。準確度等級從(至少不準確)到(最準確)。 |
-| **[!UICONTROL Reach and Accuracy Data Columns]** | 此區域位於右側，最多顯示21列數值資料，顯示模型的準確性和觸及值。 |
-| **[!UICONTROL Reach and Accuracy Slider]** | 滑桿位於圖形底部，可讓您設定覆蓋或準確度目標的數值。您可以設定滑桿，然後選擇觸及或正確性目標按鈕來建立特徵。 |
+| **[!UICONTROL Select Model for Algorithmic Trait]** | 按一下該 **[!UICONTROL Update]** 按鈕開啟模型窗口。 從視窗中，選取您要用來建立特徵的演算法模型。 |
+| **[!UICONTROL Select Goal Accuracy]** | 選取這個選項，可根據精確度建立特徵。 準確度是一個計分值，可指出潛在使用者與您的基準有多接近。 精確等級範圍從0（最不精確）到1（最精確）。 |
+| **[!UICONTROL Reach and Accuracy Data Columns]** | 此區段位於右側，最多可顯示21列數值資料，顯示模型的準確度和觸及值。 |
+| **[!UICONTROL Reach and Accuracy Slider]** | 滑桿位於圖形底部，可讓您設定觸及或精確目標的數值。 您可以設定滑桿，然後選擇到達或精確目標按鈕來建立特徵。 |
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [正確性與觸及面](../../features/traits/trait-accuracy-reach.md)
+>* [準確性與觸及性](../../features/traits/trait-accuracy-reach.md)
