@@ -1,6 +1,6 @@
 ---
-description: Advertisers Optimize for Advertisers可幫助您識別付費媒體促銷活動中Audience Manager區段的潛在效能機會。這些報表將記錄層級促銷活動績效資料與Audience Manager區段量度結合，以通知區段導向最佳化以及有效的頻道混音。
-seo-description: Advertisers Optimize for Advertisers可幫助您識別付費媒體促銷活動中Audience Manager區段的潛在效能機會。這些報表將記錄層級促銷活動績效資料與Audience Manager區段量度結合，以通知區段導向最佳化以及有效的頻道混音。
+description: 「廣告商的受眾最佳化」可協助您在付費媒體宣傳中識別Audience manager細分的潛在效能機會。 這些報表結合記錄層級的促銷活動績效資料與Audience manager區段度量，以提供以區段為中心的最佳化以及有效的渠道組合。
+seo-description: 「廣告商的受眾最佳化」可協助您在付費媒體宣傳中識別Audience manager細分的潛在效能機會。 這些報表結合記錄層級的促銷活動績效資料與Audience manager區段度量，以提供以區段為中心的最佳化以及有效的渠道組合。
 seo-title: 廣告商的受眾最佳化
 solution: Audience Manager
 title: 廣告商的受眾最佳化
@@ -13,28 +13,28 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # Audience Optimization for Advertisers{#audience-optimization-for-advertisers}
 
-Advertisers Optimize for Advertisers可幫助您識別付費媒體促銷活動中Audience Manager區段的潛在效能機會。這些報表將記錄層級促銷活動績效資料與Audience Manager區段量度結合，以通知區段導向最佳化以及有效的頻道混音。
+「廣告商的受眾最佳化」可協助您在付費媒體宣傳中識別Audience manager細分的潛在效能機會。 這些報表結合記錄層級的促銷活動績效資料與Audience manager區段度量，以提供以區段為中心的最佳化以及有效的渠道組合。
 
-## Data Ingestion Methods {#data-ingestion-methods}
+## 資料擷取方法 {#data-ingestion-methods}
 
-You can send data to [!DNL Audience Manager] for use in these reports by either of these methods. 有時候，客戶會依兩種方法傳送資料。這有助於確保您的報表包含有關訪客的最完整且準確的資訊。To use the [!UICONTROL Audience Optimization] reports, your event calls must include *all* of the parameters listed in the [Overview and Mappings for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) documentation. 您可以透過下列方式傳送資料。
+您可以透過下列任 [!DNL Audience Manager] 一方法，將資料傳送至這些報表。 有時客戶會透過兩種方式傳送資料。 這有助於確保您的報表包含有關訪客的最完整和準確資訊。 若要使用 [!UICONTROL Audience Optimization] 報表，您的事件呼叫必須包含 ** 「概述」和「中繼資料檔案 [的對應」檔案中所列的所有參數](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) 。 您可以透過下列方法傳送資料。
 
-* Pixel calls: To pass the required metadata parameters to [!DNL Audience Manager] see [Capturing Campaign Click Data via Pixel Calls](../../../integration/media-data-integration/click-data-pixels.md) and [Capturing Campaign Impression Data via Pixel Calls](../../../integration/media-data-integration/impression-data-pixels.md).
+* 像素呼叫：若要傳遞必要的中繼資料參數，以 [!DNL Audience Manager] 查看透過像 [素呼叫擷取促銷活動點按資料](../../../integration/media-data-integration/click-data-pixels.md) , [以及透過像素呼叫擷取促銷活動印象資料](../../../integration/media-data-integration/impression-data-pixels.md)。
 
-* Data files: If you want to use these reports to analyze your own data or data from a source that is not integrated with [!DNL Audience Manager], you need to create and upload data and metadata files for that data. For more information, see [Data Files for Audience Optimization Reports](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) and [Data and Metadata Files for Audience Optimization Reports](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md).
+* 資料檔案：如果您想使用這些報表來分析來自未整合之來源的資料或資料 [!DNL Audience Manager]，則需要建立並上傳該資料的資料和中繼資料檔案。 如需詳細資訊，請參 [閱「對象最佳化報表的資料檔案」](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) ，以 [及「對象最佳化報表的資料和中繼資料檔案」](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)。
 
-## Role-Based Access Controls (RBAC) {#rbac}
+## 基於角色的訪問控制(RBAC) {#rbac}
 
-The type of reports you can view depend on the [!UICONTROL RBAC] group you're assigned to. See [Administration](../../../features/administration/administration-overview.md) and [Create a Group](../../../features/administration/administration-overview.md#create-group) for more information.
+您可檢視的報表類型取決於 [!UICONTROL RBAC] 您指派給的群組。 如需詳 [細資訊](../../../features/administration/administration-overview.md) ，請 [參閱管理和建立群組](../../../features/administration/administration-overview.md#create-group) 。
 
-[!UICONTROL RBAC] 群組必須設定一些資料來源，才能檢視 [!UICONTROL Audience Optimization] 報表。Your [!DNL Audience Manager] consultant will set up these data sources for you. [!UICONTROL RBAC] 每個使用者群組中的資料來源越多，這些群組成員可以存取的資料越多。至少您的顧問至少會設定其中一個資料來源：
+[!UICONTROL RBAC] 群組必須設定一些資料來源，才能檢視報 [!UICONTROL Audience Optimization] 表。 您的 [!DNL Audience Manager] 顧問將為您設定這些資料來源。 每個使用者群組中的資 [!UICONTROL RBAC] 料來源愈多，這些群組成員可存取的資料就愈多。 至少，您的顧問將至少設定下列其中一個資料來源：
 
 * 廣告商資料來源
 * 品牌資料來源
 * 平台資料來源
 
-Users that belong to more than one [!UICONTROL RBAC] user group can switch between each group's view. 顯示的資料將會更新，以尊重所選群組。If your company does not use [!UICONTROL RBAC], all users will have admin privileges and access to all the data sources (conversion groups).
+屬於多個使用者群組的 [!UICONTROL RBAC] 使用者可在每個群組的檢視之間切換。 顯示的資料會更新，以符合選取的群組。 如果您的公司未使用， [!UICONTROL RBAC]所有使用者都將擁有管理員權限並存取所有資料來源（轉換群組）。
 
-## Conversion Groups {#conversion-groups}
+## 轉換群組 {#conversion-groups}
 
-[!UICONTROL Audience Optimization] 在報表中， **[!UICONTROL Conversion Groups]** 是包含至少一個轉換特徵的資料來源同義詞。Data sources which do not contain at least one conversion trait do not appear in the [!UICONTROL Audience Optimization] reports. You can view the conversion traits for conversion groups in the [Reported Conversion Traits](../../../reporting/audience-optimization-reports/aor-advertisers/reported-conversion-traits.md) report.
+在報表 [!UICONTROL Audience Optimization] 中， **[!UICONTROL Conversion Groups]** 與包含至少一個轉換特徵的資料來源同義。 至少不含一個轉換特徵的資料來源不會顯示在報表中 [!UICONTROL Audience Optimization] 。 您可以在「報告的轉換特徵」報表中檢視轉換群 [組的轉換特徵](../../../reporting/audience-optimization-reports/aor-advertisers/reported-conversion-traits.md) 。
