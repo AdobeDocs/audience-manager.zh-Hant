@@ -1,43 +1,43 @@
 ---
-description: 特徵時間對即時(TTL)間隔會影響區段成員資格。
-seo-description: 特徵時間對即時(TTL)間隔會影響區段成員資格。
-seo-title: 區段與特徵的即時說明
+description: 特徵存留時間(TTL)間隔如何影響區段成員資格。
+seo-description: 特徵存留時間(TTL)間隔如何影響區段成員資格。
+seo-title: 群體與特徵的即時說明
 solution: Audience Manager
-title: 區段的即時說明
-uuid: 5b2c6911-50b9-4b68-9dd4-212128d112eab
+title: 區段的存留時間說明
+uuid: 5b2c6911-50b9-4b68-9dd4-21128d112eab
 translation-type: tm+mt
 source-git-commit: 7e9aada98fe9c18c6fc484255b3c9ff33dc59324
 
 ---
 
 
-# Segment and Trait Time-to-Live Explained {#segment-time-to-live-explained}
+# 區段和特徵上線時間說明 {#segment-time-to-live-explained}
 
-How trait [!UICONTROL time-to-live] ([!DNL TTL]) interval affects segment membership.
+特徵( [!UICONTROL time-to-live] )間隔[!DNL TTL]如何影響區段成員資格。
 
 <!-- segment-ttl-explained.xml -->
 
-## 即時上線
+## 上線時間
 
-[!DNL TTL] 定義網站訪客在最後一個特徵資格事件之後停留的時間長度。[!DNL TTL] 設定於特徵而非區段上。Visitors fall out of a segment if they do not see a qualifying trait before the end of the [!DNL TTL] interval. The default [!DNL TTL] for new traits is 120 days. 設為天時，特徵永遠不會過期。[在特徵建立](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval) 介面 [!UICONTROL Advanced Options] 的區段中建立或編輯特徵時，設定TTL值。
+[!DNL TTL] 定義網站訪客在最後一個特徵資格事件後在區段中停留的時間。 [!DNL TTL] 是設定在特徵上，而非區段上。 如果訪客在間隔結束前未看到合格特徵，則會從區段中 [!DNL TTL] 流失。 新特徵 [!DNL TTL] 的預設值為120天。 設為0天時，特徵不會過期。 [在特徵建立介面的部分中](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval) ，建立或編輯特徵時 [!UICONTROL Advanced Options] ，設定TTL值。
 
-## [!DNL TTL] 並捨棄區段
+## [!DNL TTL] 和從區段中刪除
 
-A user falls out of a segment if they do not see any of its traits within the [!DNL TTL] interval. For example, if you have a 1-trait segment with a 30 days [!DNL TTL], the user will drop out of that segment if they do not see the trait again within the 30 days.
+如果使用者在時間間隔內未看到任何特徵，就會從區段中 [!DNL TTL] 掉出。 例如，如果您有1個特徵區段的30天 [!DNL TTL]，如果使用者在30天內再未看見該特徵，就會從該區段中移除。
 
 ![](assets/ttl_1.png)
 
 ## [!DNL TTL] 和區段續約
 
-[!DNL TTL] 重設後，如果使用者在時段 [!DNL TTL] 內看到該區段特徵，則會將其保留在區段中。Also, because most segments contain multiple traits with their own [!DNL TTL] periods, a user can remain in a segment (and reset the [!DNL TTL] interval) as long as they keep seeing any traits associated with a segment. For example, say you have Segment 1 composed of Trait A (30 day [!DNL TTL]) and Trait B (15 day [!DNL TTL]). Assuming the user sees each trait only once, the illustration below outlines the [!DNL TTL] renewal process and total in-segment duration.
+若 [!DNL TTL] 使用者在時段內看到該區段的特徵，則會重設，而且使用者仍留在區 [!DNL TTL] 段中。 此外，由於大部分區段包含具有其自有句號的多 [!DNL TTL] 個特徵，因此只要使用者持續看到與區段相關的任何特徵，就可以保留在區段中(並重設 [!DNL TTL] 間隔)。 例如，假設您有由特徵A（30天）和特徵B（15天） [!DNL TTL]組成的區段1 [!DNL TTL]。 假設使用者只看到每個特徵一次，下圖說明續約 [!DNL TTL] 程式和區段內總持續時間。
 
 ![](assets/ttl_2.png)
 
-## [!DNL Audience Manager] THTML獨立於第三方TTL設定
+## [!DNL Audience Manager] TTL與第三方TTL設定無關
 
-Remember, the [!DNL TTL] set on your [!DNL Audience Manager] pixel operates independently from the [!DNL TTL] set on other pixels used by third parties ([!DNL DSP]s, ad networks, etc.).
+請記住， [!DNL TTL] 您的像素 [!DNL Audience Manager] 上的設定會獨立於協力廠商( [!DNL TTL][!DNL DSP]如、廣告網路等)使用的其他像素上的設定運作。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
 >* [設定特徵過期間隔](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)
 
