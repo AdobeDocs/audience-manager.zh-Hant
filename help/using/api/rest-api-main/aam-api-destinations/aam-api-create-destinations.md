@@ -1,36 +1,36 @@
 ---
-description: 使用這些REEST API方法建立目的地。
-seo-description: 使用這些REEST API方法建立目的地。
+description: 使用這些REST風格的API方法建立目標。
+seo-description: 使用這些REST風格的API方法建立目標。
 seo-title: 建立目標
 solution: Audience Manager
 title: 建立目標
-uuid: 12f04151-ad0 e-4cb6-8f3 b-b5 c427 dc2 cef
+uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 
 ---
 
 
-# Create Destinations {#create-destinations}
+# 建立目標 {#create-destinations}
 
-Create destinations with these [!UICONTROL RESTful API] methods.
+使用這些方法建立 [!UICONTROL RESTful API] 目標。
 
 <!-- c_create_destinations.xml -->
 
-## 支援的目的地類型：僅限URL和Cookie
+## 支援的目標類型：僅限URL和Cookie
 
-The available `POST` methods let you create [!UICONTROL URL] and [!UICONTROL cookie destinations] only. Currently, you cannot create [!UICONTROL server-to-server destinations] with these [!DNL REST API] methods. However, the related destination `GET` methods let you retrieve information about [!UICONTROL server-to-server destinations] created in the user interface.
+可用的 `POST` 方法可讓您建立 [!UICONTROL URL] 且僅 [!UICONTROL cookie destinations] 限。 目前，您無法使用這 [!UICONTROL server-to-server destinations] 些方法 [!DNL REST API] 建立。 不過，相關的目標方 `GET` 法可讓您擷取在使用者介 [!UICONTROL server-to-server destinations] 面中建立的相關資訊。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [目的地](../../../features/destinations/destinations.md#destination-api-methods)
->* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [索引鍵值對說明](../../../reference/key-value-pairs-explained.md)
+>* [目的地](../../../features/destinations/destinations.md)
+>* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
 
 
-## Create a Non-Serial URL Destination {#create-nonserial-dest}
+## 建立非序列URL目標 {#create-nonserial-dest}
 
-`POST` 一種方法，可讓您建立可接受由單一索引鍵值配對組成之區段的目的地(例如 `gender=male` ，或 `gender=female`)。
+一 `POST` 種方法，可讓您建立接受由單鍵值配對（如或）組成之區段 `gender=male` 的 `gender=female`目的地。
 
 <!-- r_create_nonserial_destination.xml -->
 
@@ -40,7 +40,7 @@ The available `POST` methods let you create [!UICONTROL URL] and [!UICONTROL coo
 
 ### 範例要求
 
-此請求會建立單一目的地。除非另有指示，否則需要所有要求值。
+此請求會建立單一目標。 除非另有指示，否則所有請求值都為必要值。
 
 ```
 { 
@@ -53,7 +53,7 @@ The available `POST` methods let you create [!UICONTROL URL] and [!UICONTROL coo
 
 ### 回應
 
-A successful request returns `201 created` and the destination.
+成功的請求傳回 `201 created` 目標。
 
 ```
 { 
@@ -81,14 +81,14 @@ A successful request returns `201 created` and the destination.
 } 
 ```
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
 
 
-## Create a Serialized URL Destination {#create-serial-url-dest}
+## 建立序號的URL目的地 {#create-serial-url-dest}
 
-`POST` 一種方法，可讓您建立可接受多個與單一索引鍵關聯之值的目的地(例如 `color=blue, red, green`，)。
+一 `POST` 種方法，可讓您建立接受與單一索引鍵相關聯之多個值的目的地(例如 `color=blue, red, green`)。
 
 <!-- r_create_serial_url_destination.xml -->
 
@@ -98,7 +98,7 @@ A successful request returns `201 created` and the destination.
 
 ### 範例要求
 
-Specify the secure [!DNL URL] and delimiter for the key-value pair passed in to the destination. 除非另有指示，否則需要所有要求值。
+指定傳 [!DNL URL] 入目標之金鑰值對的安全和分隔字元。 除非另有指示，否則所有請求值都為必要值。
 
 ```
 { 
@@ -114,7 +114,7 @@ Specify the secure [!DNL URL] and delimiter for the key-value pair passed in to 
 
 ### 回應
 
-A successful update returns response code `201 created` and the destination.
+成功的更新會傳回回回應程 `201 created` 式碼和目標。
 
 ```
 { 
@@ -142,14 +142,14 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
 
 
-## Create a Cookie Destination: Single-Key, Non-Serialized {#create-cookie-dest-single}
+## 建立Cookie目標：單鍵、無序號 {#create-cookie-dest-single}
 
-A `POST` method that lets you create a [!UICONTROL cookie destination] that accepts segments composed of single key-value pairs (e.g., `gender=male` or `gender=female`).
+一 `POST` 種方法，可讓您建立 [!UICONTROL cookie destination] 接受由單鍵值配對(例如，或 `gender=male``gender=female`)組成的區段。
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 
@@ -159,7 +159,7 @@ A `POST` method that lets you create a [!UICONTROL cookie destination] that acce
 
 ### 範例要求
 
-除非另有指示，否則需要所有要求值。
+除非另有指示，否則所有請求值都為必要值。
 
 ```
 { 
@@ -184,7 +184,7 @@ A `POST` method that lets you create a [!UICONTROL cookie destination] that acce
 
 ### 回應
 
-A successful update returns response code `201 created` and the destination.
+成功的更新會傳回回回應程 `201 created` 式碼和目標。
 
 ```
 { 
@@ -216,15 +216,15 @@ A successful update returns response code `201 created` and the destination.
 } 
 ```
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [索引鍵值對說明](../../../reference/key-value-pairs-explained.md)
+>* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
 
 
-## Create a Cookie Destination: Single Key, Serialized {#create-cookie-dest-single-serial}
+## 建立Cookie目標：單鍵，序號 {#create-cookie-dest-single-serial}
 
-`POST` 一種方法，可讓您建立可接受多個與單一索引鍵關聯之值的目的地(例如 `color=blue, red, green`，)。
+一 `POST` 種方法，可讓您建立接受與單一索引鍵相關聯之多個值的目的地(例如 `color=blue, red, green`)。
 
 <!-- r_cookie_destination_singlekey_serial.xml -->
 
@@ -234,7 +234,7 @@ A successful update returns response code `201 created` and the destination.
 
 ### 範例要求
 
-除非另有指示，否則需要所有要求值。
+除非另有指示，否則所有請求值都為必要值。
 
 ```
 { 
@@ -260,7 +260,7 @@ A successful update returns response code `201 created` and the destination.
 
 ### 回應
 
-A successful update returns response code `201 created` and the destination.
+成功的更新會傳回回回應程 `201 created` 式碼和目標。
 
 ```
 { 
@@ -293,15 +293,15 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [索引鍵值對說明](../../../reference/key-value-pairs-explained.md)
+>* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
 
 
-## Create a Cookie Destination: Multi-Key, Non-Serialized {#create-cookie-dest-multi}
+## 建立Cookie目標：多鍵、無序號 {#create-cookie-dest-multi}
 
-`POST` 一種方法，可讓您建立可接受包含不同值之多個索引鍵(例如 `gender=male; gender=female; color=blue; color=red`，)的目標區段。
+一 `POST` 種方法，可讓您建立接受包含具有不同值（如）之多個索引鍵之區段的 `gender=male; gender=female; color=blue; color=red`目標。
 
 <!-- r_create_cookie_multikey_noserial.xml -->
 
@@ -311,7 +311,7 @@ A successful update returns response code `201 created` and the destination.
 
 ### 範例要求
 
-除非另有指示，否則需要所有要求值。
+除非另有指示，否則所有請求值都為必要值。
 
 ```
 { 
@@ -335,7 +335,7 @@ A successful update returns response code `201 created` and the destination.
 
 ### 回應
 
-A successful update returns response code `201 created` and the destination.
+成功的更新會傳回回回應程 `201 created` 式碼和目標。
 
 ```
 { 
@@ -366,9 +366,9 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
-## Create a Cookie Destination: Multi-Key, Serialized {#create-cookie-dest-multi-serial}
+## 建立Cookie目標：多鍵，序列化 {#create-cookie-dest-multi-serial}
 
-`POST` 一種方法，可讓您建立可接受包含多個索引鍵和值之區段的目的地(例如 `gender=male, female; color=blue, red, green`，)。
+一 `POST` 種方法，可讓您建立接受包含多個索引鍵和值的區段的目的地(例如 `gender=male, female; color=blue, red, green`)。
 
 <!-- r_cookie_destination_multikey_serial.xml -->
 
@@ -378,7 +378,7 @@ A successful update returns response code `201 created` and the destination.
 
 ### 範例要求
 
-除非另有指示，否則需要所有要求值。
+除非另有指示，否則所有請求值都為必要值。
 
 ```
 { 
@@ -403,7 +403,7 @@ A successful update returns response code `201 created` and the destination.
 
 ### 回應
 
-A successful update returns response code `201 created` and the destination.
+成功的更新會傳回回回應程 `201 created` 式碼和目標。
 
 ```
 { 
@@ -435,8 +435,8 @@ A successful update returns response code `201 created` and the destination.
 }
 ```
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [索引鍵值對說明](../../../reference/key-value-pairs-explained.md)
+>* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
 
