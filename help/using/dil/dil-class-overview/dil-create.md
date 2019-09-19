@@ -1,23 +1,23 @@
 ---
-description: 建立合作夥伴專屬的DIL實例。
-seo-description: 建立合作夥伴專屬的DIL實例。
+description: 建立合作夥伴專屬的DIL例項。
+seo-description: 建立合作夥伴專屬的DIL例項。
 seo-title: DIL建立
 solution: Audience Manager
 title: DIL建立
-uuid: 6e05460-703c-4a97-af2 a-8207c50013 db
+uuid: 6e054600-703c-4a97-af2a-8207c50013db
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# DIL create method{#dil-create}
+# DIL建立方法{#dil-create}
 
-## DIL create {#dil-create-new}
+##  DIL建立 {#dil-create-new}
 
-Creates a partner-specific [!UICONTROL DIL] instance.
+建立特定於合作夥伴的 [!UICONTROL DIL] 實例。
 
-**函數簽名：**`DIL.create: function (initConfig) {}`
+**** 函式簽名： `DIL.create: function (initConfig) {}`
 
 **initConfig元素**
 
@@ -29,7 +29,7 @@ r_dil_create.xml
 
 >[!IMPORTANT]
 >
->`visitorService`*一律* 需要屬性。除非另有指示，此處列出的其他屬性為選用項目。
+>屬 `visitorService` 性永 *遠為* 必要。 此處列出的其他屬性是可選的，除非另有說明。
 
 `initConfig` 接受下列元素：
 
@@ -45,91 +45,91 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> containerNSID </code> </p> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>該屬性會設定 <span class="keyword">Audience Manager</span> 所使用的容器 ID 以供 ID 同步之用。<code></code> 如果您已跨多個網站部署 <span class="wintitle"> DIL </span> ，則會設定ContainEnsid。這些網站都有自己的容器ID和ID同步。當您只有個網站時，容器ID預設為0，而您不需要正確設定。請連絡您的顧問，以取得您的網站及其容器ID的清單。 </p> <p>In the <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Experience Cloud ID service </a>, the property <code> idSyncContainerID </code> corresponds to <code> containerNSID </code> in <span class="wintitle"> DIL </span>. Note the following if you're using <span class="wintitle"> DIL </span> <i>and</i> the ID service across multiple sites: </p> <p> 
+   <td colname="col3"> <p>該屬性會設定 <span class="keyword">Audience Manager</span> 所使用的容器 ID 以供 ID 同步之用。如果您已在多 <code> 個網站 </code> 上部署 <span class="wintitle"> DIL, </span> 則可設定容器NSID。 這些網站都會有其專屬的容器ID和ID同步。 當您只有1個網站時，容器ID預設為0，您不需要正確設定。 請連絡您的顧問，以取得網站及其容器ID的清單。 </p> <p>在 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Experience Cloud ID中，屬性 </a>idSyncContainer ID與 <code> DIL </code> 中的 <code> NSID容器相 </code><span class="wintitle"></span>對應。 如果您在多個網站上使用 <span class="wintitle"> DIL </span> 和 <i>ID服務</i> ，請注意下列事項： </p> <p> 
      <ul id="ul_FF17004C21FC408BB8C8CCE670E45F37"> 
-      <li id="li_FFB23BB3CD224678B0A1CF3731F6A206">For each site, set the same container IDs on <code> containerNSID </code> and <code> idSyncContainerID </code>. </li> 
-      <li id="li_CC932D3A0D154F6C9566EF31260A14CF"><span class="wintitle"> DIL </span> 和ID服務都會嘗試將ID同步傳送至我們的資料收集iFrame。However, the iFrame ensures that <span class="wintitle"> DIL </span> won't fire an ID sync. 如此可防止複製。 </li> 
-      <li id="li_0A909AD26DE94EAA960DC1374C7AF89F">Only <span class="wintitle"> DIL </span> sends data to a <a href="../../features/destinations/destinations.md"> URL destination </a>. </li> 
-     </ul> </p> <p>See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsyncontainerid.html" format="https" scope="external"> idSyncContainerID </a>. </p> </td> 
+      <li id="li_FFB23BB3CD224678B0A1CF3731F6A206">對於每個網站，請在容器NSID和 <code> idSyncContainerID上設 </code> 定相 <code> 同的容器ID </code>。 </li> 
+      <li id="li_CC932D3A0D154F6C9566EF31260A14CF">DIL <span class="wintitle"> 和ID </span> 服務都會嘗試將ID同步傳送至我們的資料收集iFrame。 不過，iFrame可確保 <span class="wintitle"> DIL </span> 不會觸發ID同步。 這可防止重複。 </li> 
+      <li id="li_0A909AD26DE94EAA960DC1374C7AF89F">只有 <span class="wintitle"> DIL </span> 會傳送資料至 <a href="../../features/destinations/destinations.md"> URL目的地 </a>。 </li> 
+     </ul> </p> <p>另請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsyncontainerid.html" format="https" scope="external"> idSyncContainerID </a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 宣告ID </code> </p> </td> 
+   <td colname="col1"> <p> <code> declaredId </code> </p> </td> 
    <td colname="col2"> <p>物件 </p> </td> 
    <td colname="col3"> 
     <draft-comment> 
-     <p>Sends the <a href="../../features/declared-ids.md"> Declared ID variables </a> on every event call to <span class="keyword"> Audience Manager </span>. </p> 
-    </draft-comment> <p> <code> deleCatId </code> 用於傳入下列兩者： </p> 
+     <p>在每次事件 <a href="../../features/declared-ids.md"> 呼叫時傳送 </a> Declared ID變數至 <span class="keyword"> Audience Manager </span>。 </p> 
+    </draft-comment> <p> <code> delcandId </code> 用於傳遞以下任一項： </p> 
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
-     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>： <span class="keyword"> Audience Manager指派給您的資料合作夥伴ID </span>。 </li> 
-     <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>：使用者的唯一ID。 </li> 
-    </ul> <p> <p>重要：僅對ID使用未編碼的值。編碼將會建立雙重編碼的識別碼。 </p> </p> <p> <p>Note:  If you use the <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Experience Cloud ID Service </a>, set customer IDs with the <code> setCustomerIDs </code> method instead of <span class="wintitle"> DIL </span>. See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid-authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
+     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>:Audience manager指派給您的資料合作 <span class="keyword"> 夥伴ID </span>。 </li> 
+     <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>:您的使用者唯一ID。 </li> 
+    </ul> <p> <p>重要： 僅對您的ID使用未編碼值。 編碼會建立雙重編碼識別碼。 </p> </p> <p> <p>注意： 如果您使用 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> Experience Cloud ID服務， </a>請使用setCustomerIDs方法來設定客戶ID, <code> 而非 </code> DIL <span class="wintitle"></span>。 See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid-authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> DelayAlluntiWindowLoad </code> </p> </td> 
+   <td colname="col1"> <p> <code> delayAllUntilWindowLoad </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> If true, defers all requests (IFRAME, event calls, ID sync, and destinationing) from executing until the <code> Page Load </code> event fires. Default is <code> false </code>. </p> </td> 
+   <td colname="col3"> <p> 如果為true，則會將所有請求（IFRAME、事件呼叫、ID同步和目的地）從執行中刪除，直到觸發 <code> 頁面載入 </code> 事件。 Default is <code> false </code>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> Social宣告重復uIDCookie </code> </p> </td> 
+   <td colname="col1"> <p> <code> disableDeclaredUUIDCookie </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> False by default, which means <span class="keyword"> Audience Manager </span> sets a cookie in the partner's domain (sets a first party cookie). </p> </td> 
+   <td colname="col3"> <p> False 依預設，這表示 <span class="keyword"> Audience Manager會 </span> 在合作夥伴的網域中設定Cookie（設定第一方Cookie）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> disableDestinationPublishingIframe </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> <p>Important:  This element has been deprecated with <span class="wintitle"> DIL </span> version 8.0 (released August 2018). Use the <code> visitor.disableIdSyncs </code> <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-disableidsync.html" format="https" scope="external"> function </a> in the Experience Cloud ID Service instead. </p> </p> <p> <code> 若為true </code>，則不會將目的地發佈IFRAME附加至DOM或引發目的地。Default is <code> false </code>. </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> 用Experience Cloud </code> ID服務 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-disableidsync.html" format="https" scope="external"></a> 中的visitor.disableIdSyncs函式。 </p> </p> <p> 如果 <code> 為 </code>真，將不會將目標發佈IFRAME附加至DOM或引發目標。 Default is <code> false </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> disableIDSyncs </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> <p>Important:  This element has been deprecated with <span class="wintitle"> DIL </span> version 8.0 (released August 2018). Use the <code> visitor.disableIdSyncs </code> <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-disableidsync.html" format="https" scope="external"> function </a> in the Experience Cloud ID Service instead. </p> </p> <p>停用 ID 同步。使用DIL v6.2+和訪客ID服務時，您必須停用ID同步。<code> visitorService </code> 函數(請參閱下面的範例程式碼)處理此作業。 </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> 用Experience Cloud </code> ID服務 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-disableidsync.html" format="https" scope="external"></a> 中的visitor.disableIdSyncs函式。 </p> </p> <p>停用 ID 同步。使用DIL v6.2+和訪客ID服務時，您必須停用ID同步。 訪客 <code> 服務 </code> 功能（請參閱下面的范常式式碼）負責此作業。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> SocialErrorReporting </code> </p> </td> 
+   <td colname="col1"> <p> <code> enableErrorReporting </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> Set to <code> true </code> to enable error reporting for all <span class="wintitle"> DIL </span> instances on the page. Works with Boolean <code> true </code> only. </p> </td> 
+   <td colname="col3"> <p> 設為 <code> true </code> 可啟用頁面上所有 <span class="wintitle"> DIL </span> 例項的錯誤報告。 僅適用於布爾 <code> 型 </code> true。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> iframeAkamaiHTTPS </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> <p>Important:  This element has been deprecated with <span class="wintitle"> DIL </span> version 8.0 (released August 2018). Use the <code> visitor.idSyncSSLUseAkamai </code> <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idSyncSSLUseAkamai.html" format="https" scope="external"> function </a> in the Experience Cloud ID Service instead. </p> </p> <p> 指定目標發佈範本是否應該針對 HTTPS 連線使用 Akamai。每位合作夥伴皆啟用。 </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> 用Experience Cloud ID服務中的visitor.idSyncSSLUseAkamai </code><a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idSyncSSLUseAkamai.html" format="https" scope="external"></a> 函式。 </p> </p> <p> 指定目標發佈範本是否應該針對 HTTPS 連線使用 Akamai。每位合作夥伴皆啟用。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 對應對應 </code> </p> </td> 
+   <td colname="col1"> <p> <code> 映射 </code> </p> </td> 
    <td colname="col2"> <p>物件 </p> </td> 
-   <td colname="col3"> <p>將值從一個關鍵值配對關聯到另一個值。See <a href="../../dil/dil-use-cases.md#map-key-values"> Map Key Values to Other Keys </a>. 發行於v2.4。 </p> </td> 
+   <td colname="col3"> <p>將一個鍵值對的值關聯到另一個鍵值對。 請參 <a href="../../dil/dil-use-cases.md#map-key-values"> 閱將索引鍵值映射至其他索引鍵 </a>。 隨2.4版發行。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> namespace </code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>必填. </p> <p><code> 命名空間 </code> 索引鍵-值配對包含您 <span class="keyword"> 的Experience Cloud </span> 組織ID。If you don't have this ID, you can find it in the <span class="wintitle"> Administration </span> section of the <span class="keyword"> Experience Cloud </span> dashboard. 您需要管理員權限才能檢視此控制面板。See the <a href="../../faq/faq-features.md"> Product Features and Functions FAQ </a> and <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Administration - User Management and FAQ </a>. </p> </td> 
+   <td colname="col3"> <p>必填. </p> <p>命名 <code> 空間 </code> 金鑰值配對包含您的 <span class="keyword"> Experience cloud組織 </span> ID。 如果您沒有此ID，可在Experience cloud控制面板的「管 <span class="wintitle"> 理」 </span> 區段中找 <span class="keyword"> 到該 </span> ID。 您需要管理員權限才能檢視此控制面板。 請參閱產 <a href="../../faq/faq-features.md"> 品功能常見問答集 </a> 與管 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> 理——使用者管理與常見問答集 </a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 合作夥伴 </code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>必填. </p> <p> <span class="keyword"> Audience Manager提供的合作夥伴名稱 </span>。 </p> </td> 
+   <td colname="col3"> <p>必填. </p> <p> Audience manager提供的合 <span class="keyword"> 作夥伴名 </span>稱。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> RemoveFinishedScriptsandCallback </code> </p> </td> 
+   <td colname="col1"> <p> <code> removeFinishedScriptsAndCallbacks </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> 移除指令碼和回呼。Default is <code> False </code>. Applies to the current <span class="wintitle"> DIL </span> instance only. 發行於v3.3。 </p> </td> 
+   <td colname="col3"> <p> 刪除指令碼和回呼。 Default is <code> False </code>. 僅適用於目前 <span class="wintitle"> 的DIL </span> 例項。 隨v3.3發行。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> UUID Cookie </code> </p> </td> 
+   <td colname="col1"> <p> <code> uuidCookie </code> </p> </td> 
    <td colname="col2"> <p>物件 </p> </td> 
-   <td colname="col3"> <p>Sets a cookie with the unique user ID returned from <span class="keyword"> Audience Manager </span>. See <a href="../../dil/dil-class-overview/dil-create.md#uuidcookie-props"> uuidCookie Properties </a>. </p> </td> 
+   <td colname="col3"> <p>使用從 <span class="keyword"> Audience Manager傳回的唯一使用者ID來設定Cookie </span>。 請參閱 <a href="../../dil/dil-class-overview/dil-create.md#uuidcookie-props"> uuidCookie屬 </a>性。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> visitorService </code> </p> </td> 
    <td colname="col2"> <p>物件 </p> </td> 
-   <td colname="col3"> <p><span class="wintitle"> DIL </span> 6.2或更新版本。 </p> <p> DIL relies on the <code> setCustomerIDs </code> function in the <span class="wintitle"> Experience Cloud ID Service </span> to pass declared IDs into <span class="keyword"> Audience Manager </span>. See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid-authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a> for more information. </p> </td> 
+   <td colname="col3"> <p>DIL <span class="wintitle"> 6.2或 </span> 更新版本必需。 </p> <p> DIL依賴 <code> Experience Cloud ID服務中的setCustomerIDs功能， </code> 將宣告的ID傳遞至 <span class="wintitle"> Audience Manager </span><span class="keyword"></span>。 See <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid-authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a> for more information. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **程式碼範例**
 
-A sample [!UICONTROL DIL] call could look similar to the following:
+範例呼 [!UICONTROL DIL] 叫可能類似於下列：
 
 ```js
 var partnerObject1 = DIL.create({ 
@@ -156,13 +156,13 @@ var partnerObject2 = DIL.create({
 }); 
 ```
 
-A successful response returns the [!UICONTROL DIL] instance. 如果您的代碼設定不當或發生錯誤時，不成功的嘗試會傳回錯誤物件(未擲回)。
+成功的回應會傳回 [!UICONTROL DIL] 例項。 如果您的程式碼設定不當，或在遇到錯誤時，失敗的嘗試會傳回錯誤物件（未拋出）。
 
-## uuidCookie Properties {#uuidcookie-props}
+## uuidCookie屬性 {#uuidcookie-props}
 
-Defines the properties used by the `uuidCookie` variable. This variable is part of the `DIL.create` method.
+定義變數使用的 `uuidCookie` 屬性。 此變數是方法的一 `DIL.create` 部分。
 
-`uuidCookie` 具有下列屬性：
+`uuidCookie` 具有以下屬性：
 
 <!-- 
 
@@ -173,20 +173,20 @@ r_dil_uuid_cookie.xml
 | 名稱 | 說明 |
 |---|---|
 | `name` | The cookie name ( `aam_did` is default). |
-| `days` | Cookie期限(預設為100天)。 |
-| `path` | Cookie path, e.g., `'/test'` ( `/` is default). |
-| `domain` | The domain the cookie is set in, e.g., `'adobe.com'` ( `'.'+document.domain` is default). |
-| `secure` | 設定要透過HTTPS連線傳送資料的旗標。 |
+| `days` | Cookie存留期（預設為100天）。 |
+| `path` | Cookie路徑，例如 `'/test'` ( `/` 預設)。 |
+| `domain` | Cookie設定所在的網域，例如 `'adobe.com'` ( `'.'+document.domain` 預設)。 |
+| `secure` | 設定標幟，僅透過HTTPS連線傳送資料。 |
 
-## visitorService Properties {#visitor-service-props}
+## visitorService屬性 {#visitor-service-props}
 
-Defines the properties used by the `visitorService` variable. This variable is part of the `DIL.create` method.
+定義變數使用的 `visitorService` 屬性。 此變數是方法的一 `DIL.create` 部分。
 
-`visitorService` 具有下列屬性：
+`visitorService` 具有以下屬性：
 
 | 名稱 | 類型 | 說明 |
 |---|---|---|
-| `namespace` | 字串 | 必填。代表Experience Cloud組織ID。Experience Cloud核心服務功能需要這項功能。用來實例化訪客ID功能的相同參數。 |
+| `namespace` | 字串 | 必填。代表Experience cloud組織ID。 Experience cloud核心服務功能需要此項功能。 用於執行個體化訪客ID功能的參數相同。 |
 
 **程式碼範例:**
 
