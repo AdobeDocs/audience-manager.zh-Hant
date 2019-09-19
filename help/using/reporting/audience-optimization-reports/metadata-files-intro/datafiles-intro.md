@@ -1,9 +1,9 @@
 ---
 description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可以將此資料匯入Audience manager並在「對象最佳化」報表中檢視。 依照本節中的這些規格設定資料檔案的格式。
 seo-description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可以將此資料匯入Audience manager並在「對象最佳化」報表中檢視。 依照本節中的這些規格設定資料檔案的格式。
-seo-title: ' 受眾最佳化報告的資料檔案'
+seo-title: 受眾最佳化報告的資料檔案
 solution: Audience Manager
-title: 受眾最佳化報告的資料檔案
+title: ' 受眾最佳化報告的資料檔案'
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 translation-type: tm+mt
 source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
