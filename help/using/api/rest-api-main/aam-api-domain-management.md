@@ -1,25 +1,25 @@
 ---
-description: 網域管理方法，可讓您建立和管理您要傳送資料的網域(僅限Cookie目的地)。
-seo-description: 網域管理方法，可讓您建立和管理您要傳送資料的網域(僅限Cookie目的地)。
+description: 網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
+seo-description: 網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
 seo-title: 網域管理API方法
 solution: Audience Manager
 title: 網域管理API方法
-uuid: f2f08bc5-ea42-4171-9a43-0b20976 f0 cb0
+uuid: f2f08bc5-ea42-4171-9a43-0b20976f0cb0
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Domain Management API Methods {#domain-management-api-methods}
+# 網域管理API方法 {#domain-management-api-methods}
 
-網域管理方法，可讓您建立和管理您要傳送資料的網域(僅限Cookie目的地)。
+網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
 
 <!-- c_partner_site.xml -->
 
 ## Create a New Domain {#create-new-domain}
 
-A `POST` method that lets you create a new domain for (cookie destinations only).
+可讓您 `POST` 建立新網域的方法（僅限Cookie目的地）。
 
 <!-- r_post_new_partner_site.xml -->
 
@@ -37,7 +37,7 @@ A `POST` method that lets you create a new domain for (cookie destinations only)
 
 ### 回應
 
-A successful response returns `201 created` and the partner site, including its unique ID.
+成功的回應會傳 `201 created` 回合作夥伴網站，包括其唯一ID。
 
 ```
 {
@@ -47,9 +47,9 @@ A successful response returns `201 created` and the partner site, including its 
 }
 ```
 
-## Delete a Domain {#delete-domain}
+## 刪除域 {#delete-domain}
 
-A `DELETE` method that lets you remove a domain (for cookie destinations only).
+可讓 `DELETE` 您移除網域的方法（僅限Cookie目的地）。
 
 <!-- r_delete_partner_site.xml -->
 
@@ -59,11 +59,11 @@ A `DELETE` method that lets you remove a domain (for cookie destinations only).
 
 ### 回應
 
-A successful response returns `204 no content`. Returns `404 not found` if the partner site cannot be found.
+成功的回應會傳回 `204 no content`。 如果 `404 not found` 找不到合作夥伴站點，則返回。
 
-## Return Properties for a Domain {#return-props-domain}
+## 域的返回屬性 {#return-props-domain}
 
-A `GET` method that returns details about the specified domain (for cookie destinations only).
+傳回 `GET` 指定網域的詳細資料的方法（僅適用於Cookie目的地）。
 
 <!-- r_get_partner_site.xml -->
 
@@ -73,7 +73,7 @@ A `GET` method that returns details about the specified domain (for cookie desti
 
 ### 回應
 
-A successful response returns `200 OK` and data as shown in the sample below. Returns `404 Not found` if the site ID or partner is not found.
+成功的回應會傳 `200 OK` 回資料，如下列範例所示。 如果 `404 Not found` 找不到網站ID或合作夥伴，則傳回。
 
 ```
 {
@@ -83,9 +83,9 @@ A successful response returns `200 OK` and data as shown in the sample below. Re
 }
 ```
 
-## Return Properties for all Domains {#return-props-all-domains}
+## 所有網域的傳回屬性 {#return-props-all-domains}
 
-A `GET` method that returns information about all your domains (for cookie destinations only).
+傳回 `GET` 您所有網域的相關資訊的方法（僅適用於Cookie目的地）。
 
 <!-- r_get_partner_sites.xml -->
 
@@ -93,9 +93,9 @@ A `GET` method that returns information about all your domains (for cookie desti
 
 `GET https://api.demdex.com/v1/partner-sites/`
 
-### 選擇性查詢參數
+### 可選查詢參數
 
-You can use these optional parameters with [!DNL API] methods that return *all* properties for an object. Set these options in the request string when passing that query in to the [!DNL API]. See [Optional Parameters](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters).
+您可將這些可選參數與傳 [!DNL API] 回物件所 *有屬性* 的方法搭配使用。 將查詢傳入請求字串中時，請在請求字串中設定這些選項 [!DNL API]。 請參 [閱可選參數](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -107,30 +107,30 @@ You can use these optional parameters with [!DNL API] methods that return *all* 
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"><code> page</code> </td> 
-   <td colname="col2"> 依頁碼傳回結果。編號開始於0。 </td> 
+   <td colname="col2"> 依頁碼傳回結果。 編號從0開始。 </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code> pageSize</code> </td> 
-   <td colname="col2"> 設定請求傳回的回應結果數(預設為10)。 </td>
+   <td colname="col2"> 設定請求傳回的回應結果數目（預設為10）。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> SortBy</code> </td> 
+   <td colname="col1"><code> sortBy</code> </td> 
    <td colname="col2"> 根據指定的JSON屬性排序並傳回結果。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> 遞減遞減</code> </td>
-   <td colname="col2"> 排序並傳回結果遞減順序。遞增是預設值。 </td>
+   <td colname="col1"><code> 降序</code> </td>
+   <td colname="col2"> 以遞減順序排序和傳回結果。 預設為遞增。 </td>
   </tr>
   <tr valign="top">
-   <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。例如，假設您想尋找所有該項目值欄位中字詞「Test」的所有模型的結果。您的範例請求可能類似於： <p><code> 「GET''https://api.demdex.com/v1/models/?search=Test</code>'。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
+   <td colname="col1"><code> 搜尋</code> </td>
+   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： <p><code> 「GET」「https://api.demdex.com/v1/models/?search=Test」</code>。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
   </tr> 
  </tbody> 
 </table>
 
 ### 回應
 
-A successful response returns `200 OK` and data in an array as shown in the sample below. Returns `404 Not found` if the site ID or partner is not found.
+成功的響應 `200 OK` 返回陣列中的資料，如下例所示。 如果 `404 Not found` 找不到網站ID或合作夥伴，則傳回。
 
 ```
 [
