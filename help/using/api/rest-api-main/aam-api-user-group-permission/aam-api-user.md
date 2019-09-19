@@ -1,25 +1,25 @@
 ---
-description: 管理使用者的REST方法，包括建立、更新、列出、刪除和回傳使用者物件。
-seo-description: 管理使用者的REST方法，包括建立、更新、列出、刪除和回傳使用者物件。
+description: 保留API方法來管理使用者，包括建立、更新、列出、刪除和傳回使用者物件。
+seo-description: 保留API方法來管理使用者，包括建立、更新、列出、刪除和傳回使用者物件。
 seo-title: 使用者管理API方法
 solution: Audience Manager
 title: 使用者管理API方法
-uuid: 6e1f2c35-bb9 d-4166-b7 d4 d4-d9 c5518 a61 ad
+uuid: 6e1f2c35-bb9d-4166-b7d4-d9c5518a61ad
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# User Management API Methods {#user-management-api-methods}
+# 使用者管理API方法 {#user-management-api-methods}
 
-Rest [!DNL API] methods to manage users, including creating, updating, listing, deleting, and returning user objects.
+剩餘 [!DNL API] 的方法來管理用戶，包括建立、更新、列出、刪除和返回用戶對象。
 
 <!-- c_rest_api_user_man_user.xml -->
 
 ## Create a User {#create-user}
 
-A `POST` method to create a new user.
+建立 `POST` 新使用者的方法。
 
 <!-- r_rest_api_user_create.xml -->
 
@@ -27,7 +27,7 @@ A `POST` method to create a new user.
 
 `POST /api/v1/users/`
 
-### 請求主體範例
+### 請求正文示例
 
 ```
 { 
@@ -62,13 +62,13 @@ A `POST` method to create a new user.
 }
 ```
 
-If `isAdmin` is set to true, the user is created as a partner admin. 此屬性也可讓您知道使用者是否為合作夥伴管理員。
+如果 `isAdmin` 設為true，則會以合作夥伴管理員的身分建立使用者。 此屬性也可讓您知道使用者是否為合作夥伴管理員。
 
-Returns `409 Conflict` if the username is already taken.
+傳 `409 Conflict` 回使用者名稱已使用。
 
-## Update a User {#update-user}
+## 更新使用者 {#update-user}
 
-A `PUT` method to update a user.
+一種 `PUT` 更新用戶的方法。
 
 <!-- r_rest_api_user_update.xml -->
 
@@ -76,7 +76,7 @@ A `PUT` method to update a user.
 
 `PUT /api/v1/users/`*`<userId>`*
 
-### 請求主體範例
+### 請求正文示例
 
 ```
 { 
@@ -107,23 +107,23 @@ A `PUT` method to update a user.
 }
 ```
 
-Returns `409 Conflict` if the username is already taken.
+傳 `409 Conflict` 回使用者名稱已使用。
 
-## Update Logged-In User {#update-logged-in-user}
+## 更新登入使用者 {#update-logged-in-user}
 
-A `PUT` method to update the currently logged-in user.
+更新 `PUT` 目前登入使用者的方法。
 
 <!-- r_rest_api_user_update_self.xml -->
 
 >[!NOTE]
 >
->Whereas most [!DNL API] methods are only callable by partner admins, this method is callable by non-admin users.
+>雖然大部 [!DNL API] 分方法都只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
 
 ### 請求
 
 `PUT /self/update`
 
-### 請求主體範例
+### 請求正文示例
 
 ```
 {  
@@ -150,49 +150,49 @@ A `PUT` method to update the currently logged-in user.
 }
 ```
 
-Returns `409 Conflict` if the username is already taken.
+傳 `409 Conflict` 回使用者名稱已使用。
 
-## Update Logged-In User Password {#update-logged-in-user-pw}
+## 更新登入使用者密碼 {#update-logged-in-user-pw}
 
-A `PUT` method to update the currently logged-in user.
+更新 `PUT` 目前登入使用者的方法。
 
 <!-- r_rest_api_user_password.xml -->
 
 >[!NOTE]
 >
->Whereas most [!DNL API] methods are only callable by partner admins, this method is callable by non-admin users.
+>雖然大部 [!DNL API] 分方法都只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
 
 ### 請求
 
 `POST /users/self/update-password`
 
-### 請求主體範例
+### 請求正文示例
 
 ```
 { "oldPassword" : "old password", "newPassword" : "new password" }
 ```
 
-Returns `200 OK` if successful. Returns `400 Bad Request` if something is wrong with either password.
+成功 `200 OK` 時傳回。 如果 `400 Bad Request` 任一密碼有問題，則返回。
 
-## Reset Logged-In User Password {#reset-logged-in-user-pw}
+## 重設登入使用者密碼 {#reset-logged-in-user-pw}
 
-A `PUT` method to reset the currently logged-in user. [!UICONTROL Audience Management] 傳送使用者系統產生的密碼。
+重 `PUT` 設目前登入使用者的方法。 [!UICONTROL Audience Management] 向用戶發送系統生成的口令。
 
 <!-- r_rest_api_user_password_reset.xml -->
 
 >[!NOTE]
 >
->Whereas most [!DNL API] methods are only callable by partner admins, this method is callable by non-admin users.
+>雖然大部 [!DNL API] 分方法都只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
 
 ### 請求
 
 `POST /self/reset-password`
 
-Returns `200 OK` if successful.
+成功 `200 OK` 時傳回。
 
-## Return User Object for a User ID {#return-user-object-for-id}
+## 傳回使用者ID的使用者物件 {#return-user-object-for-id}
 
-A `Get` method to return the user object for a User ID.
+一種 `Get` 為用戶ID返回用戶對象的方法。
 
 <!-- r_rest_api_user_get_user_obj.xml -->
 
@@ -218,15 +218,15 @@ A `Get` method to return the user object for a User ID.
 }
 ```
 
-## Return User Object for Logged-In User {#return-user-object-for-logged-in-user}
+## 返回登錄用戶的用戶對象 {#return-user-object-for-logged-in-user}
 
-A `Get` method to return the user object for the currently logged-in user.
+一 `Get` 種方法，用於返回當前登錄用戶的用戶對象。
 
 <!-- r_rest_api_user_get_self.xml -->
 
 >[!NOTE]
 >
->Whereas most [!DNL API] methods are only callable by partner admins, this method is callable by non-admin users.
+>雖然大部 [!DNL API] 分方法都只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
 
 ### 請求
 
@@ -250,9 +250,9 @@ A `Get` method to return the user object for the currently logged-in user.
 }
 ```
 
-## List Users {#list-users}
+## 列出使用者 {#list-users}
 
-A `GET` method to list users.
+列 `GET` 出用戶的方法。
 
 <!-- r_rest_api_user_list.xml -->
 
@@ -260,11 +260,11 @@ A `GET` method to list users.
 
 `GET /api/v1/users/`
 
-您可以在查詢參數中指定多個群組ID：
+您可以在查詢參數中指定多個群組ID:
 
 `GET /api/v1/users/?groupId=343&groupdId=12`
 
-此查詢會傳回指定群組中所有使用者的清單。
+此查詢返回指定組中所有用戶的清單。
 
 ### 回應
 
@@ -286,7 +286,7 @@ A `GET` method to list users.
 
 ## Delete a User {#delete-users}
 
-A `DELETE` method to delete a user.
+一種 `DELETE` 刪除用戶的方法。
 
 <!-- r_rest_api_user_delete.xml -->
 
@@ -294,11 +294,11 @@ A `DELETE` method to delete a user.
 
 `DELETE /api/v1/users/`*`<user_id>`*
 
-Returns `204 No Content` if successful. In case of conflict returns `409 Conflict`.
+成功 `204 No Content` 時傳回。 如果發生衝突，則返回 `409 Conflict`。
 
-## Delete Users in Bulk {#delete-users-bulk}
+## 大量刪除使用者 {#delete-users-bulk}
 
-A `POST` method to delete multiple users in bulk.
+一種 `POST` 大量刪除多個用戶的方法。
 
 <!-- r_rest_api_user_delete_bulk.xml -->
 
@@ -306,7 +306,7 @@ A `POST` method to delete multiple users in bulk.
 
 `POST /api/v1/users/bulk-delete`
 
-### 請求主體範例
+### 請求正文示例
 
 ```
 {[<user_id_1>, <user_id_2>, ...]}
