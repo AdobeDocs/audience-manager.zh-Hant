@@ -11,45 +11,45 @@ source-git-commit: f7206fda4b16a22c8a8bfcf97529cdaea24b0898
 
 # IP 位址模糊化 {#ip-obfuscation}
 
-使用此功能來模糊在Audience Manager中收集的IP位址。
+使用此功能可模糊化Audience manager中收集的IP位址。
 
-## Overview and Methodology {#overview-and-methodology}
+## 概觀與方法 {#overview-and-methodology}
 
 由於全球隱私權規範，貴公司可能會想要模糊化許多國家/地區中的 IP 位址。Audience Manager 可讓您根據全球或個別國家/地區模糊化訪客 IP 位址。
 
 ### IP模糊化方法
 
-依照「隱私權依據設計」的原則，Adobe Audience Manager允許客戶從UI啓用IP模糊化，不論是全域地理區域或特定國家。啓用此設定時，當IP位址吸收到Audience Manager時，即會立即捨棄IP位址的最後八位元(最後一部分)。Audience Manager會在處理前廢止此IP位址的此部分(包括任何選用地理查閱或IP位址記錄)。例如:
+Adobe Audience manager遵循「依設計而設計隱私權」的原則，允許客戶從UI啟用IP模糊化，不論是全球各地區或特定國家／地區。 當您啟用此設定時，當IP位址被收錄到Audience manager時，會立即捨棄IP位址的最後八位元（最後一部分）。 Audience manager會在處理之前（包括在任何選擇性的地理查閱或記錄IP位址之前）放棄此部分IP位址。 例如:
 
-* Before obfuscation: `255.255.255.255`
-* After obfuscation: `255.255.255.0`
+* 混淆前： `255.255.255.255`
+* 混淆後： `255.255.255.0`
 
-See also, Collecting IP addresses and IP Address Obfuscation in our [Data Privacy section](/help/using/overview/data-security-and-privacy/data-privacy.md).
+另請參閱「資料隱私權」區段中的收集IP位址和IP位 [址模糊化](/help/using/overview/data-security-and-privacy/data-privacy.md)。
 
-## IP Address Obfuscation Requirements {#ip-obfuscation-requirements}
+## IP位址模糊化需求 {#ip-obfuscation-requirements}
 
-IP位址模糊化僅適用於Audience Manager管理員帳戶。See [Create Users](/help/using/features/administration/administration-overview.md#create-users) to understand how to assign administrator privileges for a user.
+IP位址模糊化僅適用於Audience manager管理員帳戶。 請參 [閱建立用戶](/help/using/features/administration/administration-overview.md#create-users) ，瞭解如何為用戶分配管理員權限。
 
 >[!NOTE]
 >
-> 由於Audience Manager處理的資料量龐大，從您更新設定的那一刻起，IP模糊化變更可能需要小時才生效。
+> 由於Audience manager處理的資料量龐大，從您更新設定開始，IP模糊化變更最多需要4小時。
 
-## Configure IP Address Obfuscation {#configure-ip-obfuscation}
+## 設定IP位址模糊化 {#configure-ip-obfuscation}
 
-依照下列步驟設定IP位址模糊化。
+請依照下列步驟設定IP位址模糊化。
 
-1. Log in to Audience Manager with an administrator account and go to **Administration &gt; Privacy**.
-2. 選擇您要使用的IP模糊化類型。
-   1. **模糊化所有IP位址：** 選取此選項，讓Audience Manager模糊化所有訪客IP位址的最後八位數字，不論其來源來源為何。
-   2. **模糊化特定國家的IP位址：** 選取此選項，讓Audience Manager模糊化特定國家的訪客IP位址的最後八位數字。Use the **List of Countries** or the corresponding **Search** field to find the countries to enable IP obfuscation for, and click the + icon to add them to the **Selected for Obfuscation** list. Once you've added all the required countries to the **Selected for Obfuscation** list, click **Save**.
+1. 使用管理員帳戶登入Audience Manager，然後前往「管理&gt; **隱私權」**。
+2. 選擇要使用的IP模糊化類型。
+   1. **** 模糊化所有IP位址：選取此選項，讓Audience manager模糊化所有訪客IP位址的最後八位元，不論其來源為何地區。
+   2. **** 模糊化特定國家／地區的IP位址：選取此選項，讓Audience manager模糊化特定國家／地區的訪客IP位址的最後八位元。 使用「國 **家／地區清單** 」或對應的「搜尋」欄位，尋找國家／地區以啟用IP模糊化，然後按一下+圖示，將它們新增至「 **選取模糊化」清單****** 。 將所有必要的國家／地區新增至「選取進行模糊 **化」清單後** ，按一下「 **儲存」**。
 
 ![](assets/ip-obfuscation.png)
 
-## Disable IP Address Obfuscation {#disable-ip-obfuscation}
+## 停用IP位址模糊化 {#disable-ip-obfuscation}
 
-To disable IP address obfuscation globally, go to **Administration &gt; Privacy**, select **Do not obfuscate IP addresses**, and click **Save**.
+若要全域停用IP位址模糊化，請前往「管 **理&gt;隱私**」，選 **取「不模糊化IP位址**」，然後按一下「 **儲存**」。
 
-To disable IP address obfuscation for specific countries, find the countries in the **Selected for Obfuscation** list, then click their corresponding **X** icon. Click **Save** when you're done.
+若要停用特定國家／地區的IP位址模糊化，請在「選取模糊化」清單中 **尋找國家／地區** ，然後按一下其對應 **的X** 圖示。 Click **Save** when you're done.
 
 ## 相關概念 {#related-concepts}
 
