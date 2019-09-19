@@ -1,10 +1,10 @@
 ---
-description: 您可以透過用戶端或伺服器端整合，將合格區段傳送至DFP。以下列出兩種方法的需求和相關資訊。
-seo-description: 您可以透過用戶端或伺服器端整合，將合格區段傳送至DFP。以下列出兩種方法的需求和相關資訊。
+description: 您可以透過用戶端或伺服器端整合，將合格的區段傳送至DFP。 以下列出兩種方法的需求和相關資訊。
+seo-description: 您可以透過用戶端或伺服器端整合，將合格的區段傳送至DFP。 以下列出兩種方法的需求和相關資訊。
 seo-title: 使用 Google 發佈商代碼 (GPT) 傳送區段至 DFP 的需求和方法
 solution: Audience Manager
 title: 使用 Google 發佈商代碼 (GPT) 傳送區段至 DFP 的需求和方法
-uuid: 4b2ea81c-29bb-42d3-93d3-3d8e677790b6
+uuid: 4b2ea81c-29bb-42d3-93d3-1d8e67790b6
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
@@ -13,43 +13,43 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 # 使用 Google 發佈商代碼 (GPT) 傳送區段至 DFP 的需求和方法{#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
 
-You can send qualified segments to [!DNL DFP] either through a client-side or through a server-side integration. 以下列出兩種方法的需求和相關資訊。
+您可以透過用戶端或 [!DNL DFP] 伺服器端整合，將符合資格的區段傳送至。 以下列出兩種方法的需求和相關資訊。
 
-## Client-Side Integration {#client-side-integration}
+## 用戶端整合 {#client-side-integration}
 
-For a client-side integration, you need to set up a [!DNL GPT] destination in Audience Manager. Consider the following points when you want to set up [!DNL GPT] as an Audience Manager destination:
+若要進行用戶端整合，您必須在Audience manager中設 [!DNL GPT] 定目標。 當您想要設定為Audience manager目標時，請考 [!DNL GPT] 慮以下幾點：
 
-* **新增[!UICONTROL DIL]：** 在您要定位的所有頁面上部署 [!UICONTROL Data Integration Library (DIL)] 程式碼。[!UICONTROL DIL] 將Audience Manager區段資料和使用者ID寫入用於定位 [!DNL GPT] 的Cookie。
+* **[!UICONTROL DIL]新增**:將程 [!UICONTROL Data Integration Library (DIL)] 式碼部署在您要定位的所有頁面上。 [!UICONTROL DIL] 將Audience manager區段資料和使用者ID寫入Cookie，以供定 [!DNL GPT] 位使用。
 
-* **建立[!UICONTROL Cookie Destination]一個：**[!DNL GPT] 必須設為Audience Manager中的Cookie目的地。
+* **[!UICONTROL Cookie Destination]建立**:必 [!DNL GPT] 須在Audience manager中設定為Cookie型目標。
 
-* **實作Cookie檢查代碼：** 將 [!DNL GPT]`.setTargeting` API方法包裝在我們建議 [的Cookie檢查程式碼](../../integration/gpt-aam-destination/gpt-aam-modify-api.md)中。This code helps prevent errors by looking for valid AAM cookies before the `.setTargeting` method gets invoked.
+* **** 實作Cookie檢查代碼：將 [!DNL GPT] API方 `.setTargeting` 法包裝在我們建議的 [Cookie檢查程式碼中](../../integration/gpt-aam-destination/gpt-aam-modify-api.md)。 此程式碼可在呼叫方法之前先尋找有效的AAM Cookie，以 `.setTargeting` 協助防止錯誤。
 
-* **新增`AamGpt`函數：**`AamGpt` 程式碼會擷取Audience Manager Cookie中的資料並傳送至 [!DNL GPT]。Place the [Audience Manager Code for Google Publisher Tags](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md) ( `AamGpt`) at the top of the page or inside the `<head>` code block.
+* **`AamGpt`添加函** 數：程式 `AamGpt` 碼會從Audience Manager cookie擷取資料並傳送至 [!DNL GPT]。 將Google Publisher標 [簽的Audience Manager代碼](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md) ( `AamGpt`)置於頁面頂端或代碼區塊 `<head>` 內。
 
    >[!NOTE]
    >
-   >The `AamGpt` function is not required if you use your own code to read Audience Manager cookie data.
+   >如果您 `AamGpt` 使用自己的程式碼來讀取Audience Manager cookie資料，則不需要此函式。
 
-* **傳送傳送記錄至Audience Manager：** 如果您想要區段傳送報表(選用)，請提供Audience Manager使用包含曝光層級傳送資料的每日記錄檔。The data can be in a raw format, but each record must contain the Audience Manager `UUID`. Audience Manager can pick up or receive these via [!DNL FTP].
+* **** 傳送傳送記錄至Audience Manager:如果您想要區段傳送報表（可選），請為Audience manager提供包含曝光層級傳送資料的每日記錄。 資料可以是原始格式，但每個記錄都必須包含Audience Manager `UUID`。 Audience manager可以透過取得或接收這些 [!DNL FTP]。
 
-### 只有合格區段才會傳送至GPT
+### 僅將合格區段傳送至GPT
 
-The amount of data passed in to [!DNL GPT] depends on how many segments a particular user qualifies for. 例如，假設您設定了100個Audience Manager區段。If a site visitor qualifies for five of them, then only those five segments get sent to [!DNL GPT] (not all 100).
+傳入的資料量取決於 [!DNL GPT] 特定使用者符合的區段數。 例如，假設您設定了100個Audience manager區段。 如果某位網站訪客符合其中5個的資格，則只有這5個區段會被傳送 [!DNL GPT] 至（並非全部100個）。
 
 >[!NOTE]
 >
->There are no limits to the number of key-values you can send, but the [!DNL Google] request [!DNL URL] does have limits to the number of characters it can accept. See [Setting targeting and sizes with GPT](https://support.google.com/dfp_premium/bin/answer.py?hl=en&answer=1697712).
+>您可以傳送的索引鍵值數目沒有限制，但 [!DNL Google] 請 [!DNL URL] 求可接受的字元數目有限制。 請參 [閱使用GPT設定目標和大小](https://support.google.com/dfp_premium/bin/answer.py?hl=en&answer=1697712)。
 
-## Server-Side Integration {#server-side-integration}
+## 伺服器端整合 {#server-side-integration}
 
-Talk to your Audience Manager consultant or Customer Care if you want to set up a server-side integration with [!DNL DFP], using [!DNL GPT]. You'll need to provide your [!DNL DFP] account Network ID and Audience Link ID.
+如果您想要使用設定伺服器端整合，請洽詢您的Audience manager顧問或客戶服務 [!DNL DFP]人員 [!DNL GPT]。 您必須提供您的帳 [!DNL DFP] 戶網路ID和觀眾連結ID。
 
 >[!IMPORTANT]
 >
->If your web pages are running the [Accelerated Media Pages](https://www.ampproject.org/) ([!DNL AMP]) library, you must use the server-side integration with Audience Manager. If you are on [!DNL AMP] and have a client-side integration with [!DNL AMP], you must migrate to the server-side integration. 請聯絡您的Audience Manager顧問或客戶服務，以討論移轉。
+>如果您的網頁正在執行 [Accelerated Media Pages](https://www.ampproject.org/) ([!DNL AMP])程式庫，您必須使用與Audience manager的伺服器端整合。 如果您位於 [!DNL AMP] 且與用戶端整合， [!DNL AMP]則必須移轉至伺服器端整合。 請連絡您的Audience manager顧問或客戶服務以討論移轉問題。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
 >* [GPT API參考指南](https://support.google.com/dfp_premium/bin/answer.py?hl=en&answer=1650154)
 
