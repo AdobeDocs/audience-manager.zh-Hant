@@ -1,10 +1,10 @@
 ---
-description: 傳回區段之間共用多少唯一使用者的資料。
-seo-description: 傳回區段之間共用多少唯一使用者的資料。
+description: 傳回區段間共用多少獨特使用者的資料。
+seo-description: 傳回區段間共用多少獨特使用者的資料。
 seo-title: 區段至區段重疊報表
 solution: Audience Manager
 title: 區段至區段重疊報表
-uuid: 0339eb6c-6355-44a3-9c46-f159485449 d1
+uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
 translation-type: tm+mt
 source-git-commit: 339d5550b22949862415d2abc812217e5479c993
 
@@ -13,11 +13,11 @@ source-git-commit: 339d5550b22949862415d2abc812217e5479c993
 
 # 區段至區段重疊報表{#segment-to-segment-overlap-report}
 
-傳回區段之間共用多少唯一使用者的資料。
+傳回區段間共用多少獨特使用者的資料。
 
 >[!NOTE]
 >
->Audience Manager中的「重疊」報表遵守CREAC原則。You can only see segments from data sources that you have access to based on the [RBAC User Group](/help/using/features/administration/administration-overview.md) that you belong to.
+>Audience manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源看到區段](/help/using/features/administration/administration-overview.md) 。
 
 <!-- 
 
@@ -27,26 +27,26 @@ c_segment_segment_overlap.xml
 
 ## 概述
 
-[!UICONTROL Segment-to-Segment Overlap] 報表可協助您：
+報表 [!UICONTROL Segment-to-Segment Overlap] 可協助您：
 
-* 根據您的需求識別高或低重疊的群體。高重疊特徵的特徵會為您指定目標對象，但不會讓獨特訪客看到。低重疊特徵可用來覆蓋較大、獨特訪客集。
-* 尋找意外重疊，並使用該資訊建立新的高效能區段。
+* 根據您的需求，識別高重疊或低重疊的區段。 具有高度重疊的特性可讓您鎖定目標受眾，但獨特訪客較少。 重疊率低的特徵有助於觸及更大的獨特訪客集。
+* 尋找未預期的重疊，並使用該資訊建立新的高效能區段。
 
 ## 範例報表
 
-The following illustration provides a high-level overview of the [!UICONTROL Segment-to-Segment Overlap] report.
+下圖提供報表的高階概 [!UICONTROL Segment-to-Segment Overlap] 觀。
 
 >[!NOTE]
 >
->[!UICONTROL Segment-to-Segment Overlap] 當報表比較相同區段時，報表會傳回空白欄位。
+>當報 [!UICONTROL Segment-to-Segment Overlap] 表將相同區段與自身進行比較時，會傳回空白欄位。
 
 ![](assets/segment-to-segment-overlap.png)
 
-## 深入分析個別資料點
+## 深入探究個別資料點
 
-選取個別點，在彈出視窗中檢視資料詳細資料。您的點按動作會自動更新報表中顯示的資料。
+選取個別點，以在快顯視窗中檢視資料詳細資訊。 您的點按動作會自動更新顯示在報表中的資料。
 
-## Segment-to-Segment Overlap Data Pop Fields Defined {#fields-defined}
+## 區段對區段重疊已定義的資料快顯欄位 {#fields-defined}
 
 <!-- 
 
@@ -54,24 +54,24 @@ r_s2s_data_pop.xml
 
  -->
 
-[!UICONTROL Segment-to-Segment Overlap] 報表的快顯視窗包含下列度量。Note that the uniques metric in the table represents your *real-time users*.
+報表的快顯功 [!UICONTROL Segment-to-Segment Overlap] 能包含下列量度。 請注意，表格中的獨特度量代表 *您的即時使用者*。
 
 | 量度 | 說明 |
 |---|---|
-| **[!UICONTROL Segment ID1]** | 顯示在報表結果中之區段的唯一數值ID。顯示為區段的列ID。 |
-| **[!UICONTROL Segment ID2]** | 執行報表時所選區段的唯一數值ID。顯示為區段的欄ID。 |
+| **[!UICONTROL Segment ID1]** | 顯示在報表結果中之區段的唯一數值ID。 顯示為區段的列ID。 |
+| **[!UICONTROL Segment ID2]** | 執行報表時，您所選取區段的唯一數值ID。 顯示為區段的欄ID。 |
 | **[!UICONTROL Segment Name1]** | 顯示在報表結果列中的區段名稱。 |
-| **[!UICONTROL Segment Name2]** | 執行報表時所選取區段的名稱。顯示在報表結果欄中。 |
-| **[!UICONTROL Overlap %]** | 若要取得重疊的%，Audience Manager會使用下列公式：重疊唯一客戶數/(基本區段獨特值+重疊區段獨特值-重疊獨特客戶數) |
-| **[!UICONTROL Overlap Uniques]** | 比較區段之間共用的獨特訪客數量。 |
-| **[!UICONTROL Segment Uniques1]** | 區段中獨特訪客的數目。 |
-| **[!UICONTROL Segment Uniques2]** | 區段中獨特訪客的數目。 |
+| **[!UICONTROL Segment Name2]** | 執行報表時所選區段的名稱。 顯示在報告結果列中。 |
+| **[!UICONTROL Overlap %]** | 若要取得重疊百分比，Audience manager使用下列公式：重疊唯一值/（基本段唯一值+重疊段唯一值——重疊唯一值） |
+| **[!UICONTROL Overlap Uniques]** | 比較區段之間共用的獨特訪客數。 |
+| **[!UICONTROL Segment Uniques1]** | 區段1中的獨特訪客數。 |
+| **[!UICONTROL Segment Uniques2]** | 區段2中的獨特訪客數。 |
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
 >* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
->* [互動報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
->* [報表圖示和工具說明](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
+>* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
+>* [說明的報表圖示和工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [選取Audience Manager報表中的資料取樣和錯誤率…](../../reporting/report-sampling.md)
+>* [選取的Audience manager報表中的資料取樣和錯誤率……](../../reporting/report-sampling.md)
 >* [重疊報表的CSV檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
