@@ -1,6 +1,6 @@
 ---
-description: 「客戶服務」準備幫助您解決任何可能出現的問題。請提供與客戶服務連絡的大部分資訊。這將有助於團隊瞭解並解決您的問題。
-seo-description: 「客戶服務」準備幫助您解決任何可能出現的問題。請提供與客戶服務連絡的大部分資訊。這將有助於團隊瞭解並解決您的問題。
+description: 「客戶服務」準備幫助您解決任何可能出現的問題。聯絡客戶服務時，請盡量提供這些資訊。 這可協助團隊瞭解並解決您的問題。
+seo-description: 「客戶服務」準備幫助您解決任何可能出現的問題。聯絡客戶服務時，請盡量提供這些資訊。 這可協助團隊瞭解並解決您的問題。
 seo-title: 如果有問題
 solution: Audience Manager
 title: 如果有問題
@@ -12,7 +12,7 @@ source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
 
 # 如果有問題 {#problem}
 
-「客戶服務」準備幫助您解決任何可能出現的問題。請提供與客戶服務連絡的大部分資訊。這將有助於團隊瞭解並解決您的問題。
+「客戶服務」準備幫助您解決任何可能出現的問題。聯絡客戶服務時，請盡量提供這些資訊。 這可協助團隊瞭解並解決您的問題。
 
 ## 基本資訊 {#basic-information}
 
@@ -24,13 +24,13 @@ r_problem.xml
 
 For technical issues or to log a bug, contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
-* **電話：** 1-800-497-0335
+* **** 電話：1-800-497-0335
 
-   For toll-free numbers outside the United States, see our [regional Customer Care contact numbers](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html) site. When asked to select an option for your product, press 4 to contact the [!DNL Audience Manager] team.
+   若需美國境外的免付費電話，請參閱我們當地的客 [戶服務聯絡電話](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html) 。 When asked to select an option for your product, press 4 to contact the [!DNL Audience Manager] team.
 
-* **電子郵件：** amsupport@adobe.com
+* **** 電子郵件：amsupport@adobe.com
 
-聯絡我們之前，請先準備下列資訊。
+聯絡我們之前，請準備好下列資訊。
 
 <table id="table_28E76031E2804265B1A48AB2659F68F0"> 
  <thead> 
@@ -42,27 +42,27 @@ For technical issues or to log a bug, contact [Customer Care](https://helpx.adob
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>問題摘要</b> </p> </td> 
-   <td colname="col2"> <p>提供問題的簡短簡短摘要。 </p> </td> 
+   <td colname="col2"> <p>提供問題的簡短描述性摘要。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>帳戶資訊</b> </p> </td> 
    <td colname="col2"> <p>提供您的： </p> <p> 
      <ul id="ul_6ACF6EF2165C4041A891FF36D78BBA63"> 
       <li id="li_86573CAAE8454BE6BDF44F9A8281FF95">公司名稱。 </li> 
-      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword"> Audience Manager</span> 子網域(如果已知)。The sub-domain is the URL of the domain that sends data collection events to <span class="keyword"> Adobe</span> (e.g., <code>https://<i>myCompany</i>.demdex.net</code>). </li> 
+      <li id="li_8259BB738BA84A13982A8E84BCF56B2A"><span class="keyword"> Audience Manager</span> 子網域（如果已知）。 子網域是將資料收集事件傳送至 <span class="keyword"> Adobe</span> (例如， <code>https://<i>myCompany</i>.demdex.net</code>)之網域的URL。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>重現步驟</b> </p> </td> 
-   <td colname="col2"> <p>盡可能加入詳細資料，包括任何需要複製問題以及預期結果的URL。Your description should contain enough detail that somebody unfamiliar with <span class="keyword"> Audience Manager</span> should be able to follow your steps or procedures and reproduce the problem. </p> </td> 
+   <td colname="col1"> <p><b>重制步驟</b> </p> </td> 
+   <td colname="col2"> <p>盡可能多地包含細節，包括複製問題所需的任何URL以及預期結果。 您的說明應包含足夠的詳細資訊，讓不熟悉 <span class="keyword"> Audience Manager</span> 的人員能夠依照您的步驟或程式，並重制問題。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>優先順序</b> </p> </td> 
-   <td colname="col2"> <p>指派此問題的優先順序。優先順序範圍從P(最重要)到P(最不重要)。 </p> </td> 
+   <td colname="col2"> <p>指派此問題的優先順序。 優先順序範圍從P1（最重要）到P4（最不重要）。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>商業影響</b> </p> </td> 
-   <td colname="col2"> <p>說明此問題對您的業務有何影響。例如，這個問題造成收入減少或產品無法使用？您正在處理這個問題嗎？ </p> </td> 
+   <td colname="col1"> <p><b>業務影響</b> </p> </td> 
+   <td colname="col2"> <p>說明此問題對您的業務有何影響。 例如，此問題會造成收入損失或導致產品無法使用？ 您是否一直在處理這個問題？ </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>期望</b> </p> </td> 
