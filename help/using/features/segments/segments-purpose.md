@@ -1,54 +1,54 @@
 ---
-description: 說明區段、其組成部分以及使用區段產生器建立規則。
-seo-description: 說明區段、其組成部分以及使用區段產生器建立規則。
-seo-title: 區段用途、構圖和規則
+description: 說明區段、其組成部分，以及使用區段產生器建立規則。
+seo-description: 說明區段、其組成部分，以及使用區段產生器建立規則。
+seo-title: 區段用途、組成和規則
 solution: Audience Manager
-title: 區段用途、構圖和規則
-uuid: 886d4abe-b1 b6-4983-b4 fb-b552 d54 d51 ba
+title: 區段用途、組成和規則
+uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
 translation-type: tm+mt
 source-git-commit: c229bf71da5b07277811219cbf2794c3ca7bc89d
 
 ---
 
 
-# Segments: Purpose, Composition, and Rules {#segments-purpose-composition-and-rules}
+# 區段：目的、構成和規則 {#segments-purpose-composition-and-rules}
 
-Describes segments, their constituent parts, and rule creation with [!UICONTROL Segment Builder].
+說明區段、其組成部分，以及使用建立規則 [!UICONTROL Segment Builder]。
 
-## 區段的用途
+## 區段用途
 
-A *`segment`* (or an *`audience`*) is a set of users who share common attributes. 在Audience Manager中，您可以使用伺服器端規則建立區段。這些規則可讓您根據網站訪客屬性建立對象群組，例如：
+A *`segment`* (或 *`audience`*)是一組共用共同屬性的使用者。 在Audience Manager中，您可以使用伺服器端規則建立區段。 這些規則可讓您根據網站訪客屬性(例如：
 
 * 行為;
-* 人口統計(年齡、性別、收入等);
+* 人口（年齡、性別、收入等）;
 * 您可以在使用者介面中定義的其他特性。
 
 ## 區段構成
 
-Audience Manager區段是伺服器端規則，包含個別或特徵群組。特徵由稱為索引鍵值配對的資料元素組成。除了您在區段層級設定的規則，這些索引鍵值配對也包含符合特徵和區段成員資格的標準訪客。
+Audience manager區段是伺服器端規則，由個別或特徵群組組成。 特徵由稱為鍵值對的資料元素組成。 除了您在區段層級設定的規則，這些關鍵值配對還包含符合訪客特徵和區段成員資格的條件。
 
-## Adobe Analytics區段對應的考量事項
+## Adobe Analytics區段對應的考量
 
-將Adobe Analytics區段或報表套裝對應至Experience Cloud組織時，Audience Manager會自動建立新的對應區段和特性。您無法從Audience Manager編輯或變更這些區段的儲存位置。不過，您在對應的Adobe Analytics區段或報表套裝上執行的任何變更，都會反映在Audience Manager中。
+將Adobe Analytics區段或報表套裝對應至您的Experience cloud組織時，Audience manager會自動建立新的對應唯讀區段和特徵。 您無法從Audience manager編輯或變更這些區段的儲存位置。 不過，您對對應的Adobe Analytics區段或報表套裝執行的任何變更都會反映在Audience Manager中。
 
 >[!TIP]
 >
->Audience Manager segments are different from [!DNL Adobe Analytics] segments. Read [Understanding Segments in Analytics and Audience Manager](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/aam-analytics-segments.html) for an in-depth description of the differences.
+>Audience manager區段與區段不 [!DNL Adobe Analytics] 同。 閱 [讀瞭解Analytics和Audience Manager中的區段](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/aam-analytics-segments.html) ，以深入瞭解差異。
 
-## 使用區段產生器建立規則型區段
+## 使用區段產生器建立以規則為基礎的區段
 
-不同於在回應簡單/無條件的情況下引發的傳統像素，區段產生器可讓您建立複雜的區段需求。Like traits, segments evaluate data using [!DNL Boolean] expressions ([!DNL AND], [!DNL OR], [!DNL NOT]), comparison operators (greater than, less than, equal to, etc.), and recency/frequency criteria. 這些功能有助於建立與您業務需求相關的目標受眾細分。
+與因簡單是／否條件而引發的傳統像素不同，「區段產生器」可讓您建立複雜的區段需求。 和特徵一樣，區段會使 [!DNL Boolean] 用運算式([!DNL AND]、 [!DNL OR]、 [!DNL NOT])、比較運算子（大於、小於、等於等於等）和時近／頻率准則來評估資料。 這些功能可協助您建立與業務需求相關的受眾細分。
 
 ## 福利
 
-區段在標準像素的對象建立/分段程序上改進，因為它們可讓您：
+區段可改善標準的像素受眾建立／區隔程式，因為它們可讓您：
 
-* 建立具有第一方及第三方特徵的相關有用區段。
-* 使用布林運算元、比較運算式和最近/頻率標準，建立複雜複雜的區段規則。
-* 傳送區段資料給目的地合作夥伴。
-* 使用Audience Manager報告監控效能。
+* 建立具有第一方和第三方特徵的相關、有用區段。
+* 使用布林運算子、比較運算式和時近／頻率准則建立複雜而複雜的分段規則。
+* 傳送區段資料給目標合作夥伴。
+* 使用Audience manager報表監控效能。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [訊號、特徵和區段](../../reference/signal-trait-segment.md)
+>* [信號、特徵和區段](../../reference/signal-trait-segment.md)
 
