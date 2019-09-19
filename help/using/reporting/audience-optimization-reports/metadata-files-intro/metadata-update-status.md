@@ -1,21 +1,21 @@
 ---
-description: S狀態目錄會保留.info檔案，其中包含有關上傳檔案的成功資訊和失敗資訊。檔案包含JSON格式的資料，狀態為狀態產生陣列。
-seo-description: S狀態目錄會保留.info檔案，其中包含有關上傳檔案的成功資訊和失敗資訊。檔案包含JSON格式的資料，狀態為狀態產生陣列。
+description: S3狀態目錄包含。info檔案，內含您已上傳檔案的成功與失敗資訊。 檔案包含JSON格式的資料，其狀態結果為陣列。
+seo-description: S3狀態目錄包含。info檔案，內含您已上傳檔案的成功與失敗資訊。 檔案包含JSON格式的資料，其狀態結果為陣列。
 seo-title: 中繼資料檔案的狀態更新
 solution: Audience Manager
 title: 中繼資料檔案的狀態更新
-uuid: 56a8e88a-41da-4d51-a21 e-2e-2ca7 fa2
+uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Status Updates for Metadata Files{#status-updates-for-metadata-files}
+# 中繼資料檔案的狀態更新{#status-updates-for-metadata-files}
 
-The S3 status directory holds a `.info` file with success and failure information about your uploaded files. 檔案包含JSON格式的資料，狀態為狀態產生陣列。
+S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與失敗資訊。 檔案包含JSON格式的資料，其狀態結果為陣列。
 
-`.info` 檔案的內容類似於此範例。
+您檔案的內 `.info` 容看起來類似此範例。
 
 ```js
 //sample file path
@@ -56,11 +56,11 @@ The S3 status directory holds a `.info` file with success and failure informatio
 }
 ```
 
-## Metadata Key-Value Pairs Defined {#key-value-pairs}
+## 定義的元資料鍵值對 {#key-value-pairs}
 
-The following tables list and define the keys in the `Files` and `Summary` sections of a metadata status file.
+下表列出並定義中繼資料狀態檔 `Files` 案 `Summary` 中和區段的索引鍵。
 
-**檔案陣列中的索引鍵**
+**檔案陣列中的鍵**
 
 <table id="table_BF23C032FEFA446282E9364E85BE8C9F"> 
  <thead> 
@@ -72,31 +72,31 @@ The following tables list and define the keys in the `Files` and `Summary` secti
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> 說明</code> </p> </td> 
-   <td colname="col2"> <p>包含處理失敗的簡短說明。處理成功時，此欄位為空。 </p> </td> 
+   <td colname="col2"> <p>包含處理失敗原因的簡短說明。 處理成功時，此欄位為空。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileByteSize</code> </p> </td> 
-   <td colname="col2"> <p>檔案大小為位元組。 </p> </td> 
+   <td colname="col2"> <p>檔案大小（以位元組為單位）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>The MD 5 checksum for the metadata file uploaded to your <code> meta</code> directory. </p> </td> 
+   <td colname="col2"> <p>上傳至中繼目錄之中繼資料檔案的MD 5 <code> 校驗</code> 和。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>The name of the metadata file uploaded to your <code> meta</code> directory. </p> </td> 
+   <td colname="col1"> <p> <code> 檔案名稱</code> </p> </td> 
+   <td colname="col2"> <p>上傳至中繼目錄的中繼資料檔案 <code> 名稱</code> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> PhotosatatType</code> </p> </td> 
-   <td colname="col2"> <p>檔案包含之資料類型的人類可讀名稱。這是以檔案名稱中的子ID為基礎。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col1"> <p> <code> 中繼資料類型</code> </p> </td> 
+   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的子ID為基礎。 </p> <p>請參閱 <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> 中繼資料檔案的命名慣例</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 父項</code> </p> </td> 
-   <td colname="col2"> <p>檔案包含之資料類型的人類可讀名稱。這是以檔案名稱中的父ID為基礎。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col1"> <p> <code> 父代</code> </p> </td> 
+   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的父ID為基礎。 </p> <p>請參閱 <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> 中繼資料檔案的命名慣例</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 狀態</code> </p> </td> 
-   <td colname="col2"> <p>傳回描述中繼資料檔案處理狀態的個文字值： </p> 
+   <td colname="col2"> <p>傳回2個文字值，說明中繼資料檔案的處理狀態： </p> 
     <ul id="ul_3814EBB6B42B4EB294B1ABA5782190B6"> 
      <li id="li_92AAECE7E9A44B1193A1D93ABBCE46B0"> <code> 成功</code> </li> 
      <li id="li_3109F4E254374117A89CB989F221CB18"> <code> 失敗</code> </li> 
@@ -105,7 +105,7 @@ The following tables list and define the keys in the `Files` and `Summary` secti
  </tbody> 
 </table>
 
-**摘要物件中的索引鍵**
+**摘要對象中的鍵**
 
 <table id="table_C765A0CDBAA14A2FB5E0D38BDD1D292A"> 
  <thead> 
@@ -117,38 +117,38 @@ The following tables list and define the keys in the `Files` and `Summary` secti
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> 日</code> </p> </td> 
-   <td colname="col2"> <p>File processing date in <code><i>yyyy-mm-dd</i></code> format. </p> </td> 
+   <td colname="col2"> <p>yyyy-mm-dd格式 <code><i>的檔案處理日期</i></code> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> GlobalStatus</code> </p> </td> 
-   <td colname="col2"> <p>傳回一整天中描述所有檔案處理狀態的文字值： </p> 
+   <td colname="col2"> <p>傳回2個文字值，說明整天所有檔案的處理狀態： </p> 
     <ul id="ul_3FC092CA043A486C9C79FECF71FAF8FB"> 
      <li id="li_754B32D8267D44BBBD6EC354C459C566"> <code> 成功</code> </li> 
      <li id="li_8B64E39C80424AC2B95DF9B53D62864E"> <code> 失敗</code> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> number失敗</code> </p> </td> 
+   <td colname="col1"> <p> <code> NumberFailure</code> </p> </td> 
    <td colname="col2"> <p>未成功處理的檔案數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> numberSuccess</code> </p> </td> 
+   <td colname="col1"> <p> <code> NumberSuccess</code> </p> </td> 
    <td colname="col2"> <p>成功處理的檔案數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ProcessingTimeRFC2822</code> </p> </td> 
-   <td colname="col2"> <p>傳回處理開始時間的人類可讀時間戳記。 </p> </td> 
+   <td colname="col2"> <p>傳回處理開始時間的可人讀時間戳記。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> processingTimeX</code> </p> </td> 
-   <td colname="col2"> <p>處理開始時間的UNIX時間戳記。 </p> </td> 
+   <td colname="col1"> <p> <code> ProcessingTimePOSIX</code> </p> </td> 
+   <td colname="col2"> <p>用於處理開始時間的UNIX時間戳記。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> totalByteSize</code> </p> </td> 
+   <td colname="col1"> <p> <code> TotalByteSize</code> </p> </td> 
    <td colname="col2"> <p>當天所有中繼資料檔案的位元組總數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> totalNumberFiles</code> </p> </td> 
+   <td colname="col1"> <p> <code> TotalNumberFiles</code> </p> </td> 
    <td colname="col2"> <p>當天處理的所有檔案總數。 </p> </td> 
   </tr> 
  </tbody> 
