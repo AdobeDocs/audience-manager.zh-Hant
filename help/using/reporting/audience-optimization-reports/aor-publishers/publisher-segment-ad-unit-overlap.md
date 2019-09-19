@@ -1,39 +1,39 @@
 ---
-description: 「區段至廣告單位重疊」報表會顯示為熱圖，顯示廣告件數與Audience Manager區段之間的高和低overlap。
-seo-description: 「區段至廣告單位重疊」報表會顯示為熱圖，顯示廣告件數與Audience Manager區段之間的高和低overlap。
-seo-title: 區段至廣告單位重疊
+description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience manager區段之間的高與低重疊。
+seo-description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience manager區段之間的高與低重疊。
+seo-title: 區段到廣告單位重疊
 solution: Audience Manager
-title: 區段至廣告單位重疊
-uuid: ta20163-58aa-42c9-8f72-a1 dfb0 d20 e57
+title: 區段到廣告單位重疊
+uuid: aaa20163-58aa-42c9-8f72-a1dfb0d20e57
 translation-type: tm+mt
 source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ---
 
 
-# Segment to Ad Unit Overlap{#segment-to-ad-unit-overlap}
+# 區段到廣告單位重疊{#segment-to-ad-unit-overlap}
 
-「區段至廣告單位重疊」報表會顯示為熱圖，顯示廣告件數與Audience Manager區段之間的高和低overlap。
+「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience manager區段之間的高與低重疊。
 
 ## 使用案例 {#use-cases}
 
-With the [!UICONTROL Segment to Ad Unit Overlap] report, you can understand which audiences visit your web properties. The report displays the overlap between members of your [!DNL Audience Manager] segments and the number of visitors to your web properties. 較高的重疊表示群體的許多成員瀏覽您的Web屬性。
+透過報 [!UICONTROL Segment to Ad Unit Overlap] 表，您可以瞭解哪些對象瀏覽了您的Web屬性。 報表會顯示區段成員與您網頁屬 [!DNL Audience Manager] 性訪客數量之間的重疊。 較高的重疊率表示區段的許多成員會造訪您的Web屬性。
 
-## Using the Segment to Ad Unit Overlap Report {#using-the-report}
+## 使用區段來新增單位重疊報表 {#using-the-report}
 
-Use the **[!UICONTROL Top N Ad Units]** and **[!UICONTROL Top N Segments]** controls to select your desired number of ad units and segments for the overlap. 您最多可以為每個項目選取100個項目。
+使用和 **[!UICONTROL Top N Ad Units]** 控 **[!UICONTROL Top N Segments]** 制項來選擇您所要的重疊廣告單位和區段數。 您最多可以為每個項目選取100個項目。
 
-Use the **Day Range** and **Date Through** controls to adjust your look-back range. 請注意，天和30天回顧期間僅適用於周日日期。
+使用 **日範圍****和日期穿透控制項** ，調整您的回顧範圍。 請注意，7天和30天回顧期間僅適用於星期日。
 
-Use the **[!UICONTROL Segment Name]** and the **[!UICONTROL Ad Unit]** boxes to filter any of segments and ad units.
+使用和 **[!UICONTROL Segment Name]** 方塊 **[!UICONTROL Ad Unit]** 來篩選任何區段和廣告單位。
 
 >[!IMPORTANT]
 >
->When enabling [!UICONTROL Audience Optimization for Publishers], you must include descriptive metadata for [!UICONTROL Ad Unit IDs], as described in Step 3 of [Import DFP Data Files Into Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md). By doing this, you assure that the report details the web property as [!UICONTROL Ad Unit] instead of the [!UICONTROL Ad Unit ID].
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Ad Unit IDs]如將DFP資料檔案匯 [入Audience manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Ad Unit] Web屬性的形式詳細說明 [!UICONTROL Ad Unit ID]。
 
-## Interpreting the Results {#interpreting-results}
+## 解讀結果 {#interpreting-results}
 
-[!UICONTROL Segment to Ad Unit Overlap] 您的報表看起來類似下方的報表。將滑鼠指標暫留在任何儲存格上，以取得更多關於特定重疊的資訊。如需範例報表下表格中其他資訊的詳細資訊，請參閱說明。
+您 [!UICONTROL Segment to Ad Unit Overlap] 的報表看起來可能類似以下。 將滑鼠指標暫留在任何儲存格上，以取得有關該特定重疊的詳細資訊。 請參閱範例報表下表格中的其他資訊說明。
 
 ![](assets/publisher_segment_ad_unit_overlap.png)
 
@@ -47,23 +47,23 @@ Use the **[!UICONTROL Segment Name]** and the **[!UICONTROL Ad Unit]** boxes to 
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 廣告單位 </span> </p> </td> 
-   <td colname="col2"> <p>庫存項目的名稱。例如，這可以是您的一個網站或網站上的文章。 </p> </td> 
+   <td colname="col2"> <p>庫存項目的名稱。 例如，這可以是您的其中一個網站或網站上的文章。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 區段即時獨特計數計數</span> </p> </td> 
-   <td colname="col2"> <p>The number of unique visitors seen in real-time for the specified time range and who were qualified for the segment at the moment they were seen by <span class="keyword"> Audience Manager</span>. </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 分段即時獨特值計數</span> </p> </td> 
+   <td colname="col2"> <p>在指定時間範圍內即時檢視的獨特訪客數量，以及Audience manager看到區段時符合資格的訪客數量 <span class="keyword"></span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 廣告單元獨特計數計數</span> </p> </td> 
-   <td colname="col2"> <p>此特定廣告單位的訪客人數。此資訊會從DFP記錄檔中擷取。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 廣告單位獨特值計數</span> </p> </td> 
+   <td colname="col2"> <p>此特定廣告單位的訪客數。 此資訊會從DFP記錄檔中擷取。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 重疊獨特計數計數</span> </p> </td> 
-   <td colname="col2"> <p>對廣告單元項目公開的區段成員。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 重疊唯一客戶計數</span> </p> </td> 
+   <td colname="col2"> <p>您區段中接觸廣告單位項目的成員。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重疊百分比</span> </p> </td> 
-   <td colname="col2"> <p>廣告單位與區段人口族群之間的重疊。This is the <span class="wintitle"> Overlap Uniques Count</span>, expressed as a percentage of the <span class="wintitle"> Segment Real Time Uniques</span>. </p> </td> 
+   <td colname="col2"> <p>廣告單位和群體人口之間的重疊。 這是「重 <span class="wintitle"> 疊唯一客戶計數」</span>，表示為「區段即時獨 <span class="wintitle"> 特客戶」的百分比</span>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
