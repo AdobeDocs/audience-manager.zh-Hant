@@ -1,11 +1,11 @@
 ---
-description: DCS會監控收到並列入黑名單的ID，這些ID會在短時間內以異常高的速率傳送。
-keywords: id；監控；黑名單；cs
-seo-description: DCS會監控收到並列入黑名單的ID，這些ID會在短時間內以異常高的速率傳送。
+description: DCS會監控其收到的ID，並列出在短時間內以異常高的速率傳送的ID。
+keywords: id；監控；黑名單；dcs
+seo-description: DCS會監控其收到的ID，並列出在短時間內以異常高的速率傳送的ID。
 seo-title: ID監控與黑名單
 solution: Audience Manager
 title: ID監控與黑名單
-uuid: 498e0316-cf-1b-43e9-88ba-338ee0 daf225
+uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 translation-type: tm+mt
 source-git-commit: 1300c29cbd5dce26357dc698f2f6efc5bdb32bdb
 
@@ -14,38 +14,38 @@ source-git-commit: 1300c29cbd5dce26357dc698f2f6efc5bdb32bdb
 
 # ID監控與黑名單
 
-The [!UICONTROL DCS] monitors the IDs it receives and blacklists those that are being sent at an unusually high rate over a short period of time.
+監 [!UICONTROL DCS] 視其收到的ID，並列出在短時間內以異常高的速率傳送的ID。
 
 ## 概述
 
-To protect the Audience Manager infrastructure against malicious activity, the [!UICONTROL DCS] uses an advanced algorithm to monitor the IDs it receives. These can be [!UICONTROL Data Provider Unique User ID]s ([!UICONTROL CRM ID]s), [!UICONTROL Audience Manager Unique User ID]s ([!UICONTROL AAM UUID]s), or [!UICONTROL Experience Cloud ID]s ([!UICONTROL ECID]s). See [Index of IDs in Audience Manager](../../../reference/ids-in-aam.md) for detailed explanations of the IDs supported by Audience Manager.
+為保護Audience manager基礎架構不受惡意活 [!UICONTROL DCS] 動的影響，使用進階演算法來監控其接收的ID。 這些 [!UICONTROL Data Provider Unique User ID]可以是[!UICONTROL CRM ID]s(s)、 [!UICONTROL Audience Manager Unique User ID]s([!UICONTROL AAM UUID]s) [!UICONTROL Experience Cloud ID]或[!UICONTROL ECID]s(s)。 如需 [Audience Manager支援之ID的詳細說明，請參閱Audience Manager中的ID索引](../../../reference/ids-in-aam.md) 。
 
-The [!UICONTROL DCS] monitors the frequency at which it receives these IDs to detect potential malicious activity. [!UICONTROL DCS] 當在短時間內偵測到任何給定ID [!UICONTROL DCS] 的要求時，該ID會列入黑名單。
+The [!UICONTROL DCS] the moniters of frequency it receives these IDs to detect peative惡意活動。 當在 [!UICONTROL DCS] 短時間內偵測到任何指定 [!UICONTROL DCS] ID的異常大量請求時，該ID便會列入黑名單。
 
 ## 錯誤代碼
 
-You can identify blacklisted IDs by the error codes received from the [!UICONTROL DCS]. 您可能收到的錯誤碼為：
+您可以透過從收到的錯誤碼識別黑名單ID [!UICONTROL DCS]。 您可能收到的錯誤碼為：
 
-* 303：封鎖客戶ID；
-* 306：已封鎖宣告的裝置ID；
-* 307：已封鎖ID的描述檔作業。
+* 303:封鎖客戶ID;
+* 306:已阻止聲明的設備ID;
+* 307:ID的描述檔作業已封鎖。
 
-See [DCS Error Codes, Messages, and Examples](dcs-error-codes.md) for details on the error codes that you may receive.
+如需 [您可能收到的錯誤碼的詳細資訊，請參閱](dcs-error-codes.md) DCS錯誤碼、訊息和範例。
 
-## 取消列入黑名單
+## 取消黑名單
 
-黑名單ID不應用於日後的請求中，因為它們會導致資料報告不正確。The [!UICONTROL DCS] does not support un-blacklisting of IDs.
+黑名單ID不應用於任何未來的請求，因為它們會導致錯誤的資料報告。 不 [!UICONTROL DCS] 支援ID的非黑名單。
 
 ## 對ID同步的影響
 
-[!UICONTROL DCS] 呼叫可以包含一個或多個ID類型。如果該ID已列入黑名單，則完全忽略包含單一ID的呼叫，且此情況下不會同步任何ID同步。
+[!UICONTROL DCS] 呼叫可包含一或多種ID類型。 如果將單一ID列入黑名單，且此情況下不會進行ID同步，則完全不會考慮包含單一ID的呼叫。
 
-When a multiple ID call also includes a blacklisted ID, the [!UICONTROL DCS] disregards the blacklisted ID and only uses the remaining, non-blacklisted IDs for synchronization.
+當多個ID呼叫也包含黑名單ID時， [!UICONTROL DCS] 會忽略黑名單ID，並僅使用其餘的未黑名單ID進行同步。
 
 ## ID黑名單的原因和修正
 
-列入黑名單的ID最常見的原因，是客戶基礎結構與Audience Manager之間的整合不正確。當您識別列入黑名單的ID時，請務必完整檢查您的Audience Manager整合。See **Implementation and Integration Guides** for detailed explanations of how you should configure Audience Manager to work with other Experience Cloud solutions or external systems.
+ID被列入黑名單的最常見原因是客戶基礎架構與Audience manager之間的整合不正確。 當您識別黑名單ID時，請務必徹底審查Audience manager整合。 請參 **閱實作與整合指南** ，以取得如何設定Audience manager以搭配其他Experience cloud解決方案或外部系統運作的詳細說明。
 
-Another frequent cause of blacklisted IDs are indexing bots (web crawlers), which generally cause increases in traffic, leading to the same IDs being sent to the [!UICONTROL DCS] multiple times. 如果您將索引機器人識別為ID黑名單的原因，則應限制機器人存取您的網站。
+黑名單ID的另一個常見原因是索引bot（Web爬蟲程式），這通常會導致流量增加，導致相同ID被多次傳 [!UICONTROL DCS] 送至。 如果您將索引機器人識別為ID黑名單的原因，您應限制機器人對您網站的存取。
 
-如果您難以識別整合問題，請不要費心聯絡客戶支援。Prior to opening a support request, make sure to keep the `.har` `HTTP` archive of your browser ready. 此封存可協助支援團隊識別發生ID黑名單的原因。
+如果您很難識別整合問題，請立即聯絡客戶支援。 在開啟支援要求之前，請務必讓您的瀏 `.har` 覽器 `HTTP` 封存就緒。 此封存可協助支援團隊識別ID黑名單的發生原因。
