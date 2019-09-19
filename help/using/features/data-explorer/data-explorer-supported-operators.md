@@ -1,22 +1,22 @@
 ---
-description: 使用邏輯運算子將索引鍵值配對和回填特徵分組。
-seo-description: 使用邏輯運算子將索引鍵值配對和回填特徵分組。
+description: 使用邏輯運算子來分組索引鍵值配對和回填特徵。
+seo-description: 使用邏輯運算子來分組索引鍵值配對和回填特徵。
 seo-title: 支援的邏輯運算子
 title: 支援的邏輯運算子
-uuid: 645fcp6f-50ac-49bc-8bc-9c799c749cf8f
+uuid: 645fcb6f-50ac-49bc-8df9-c699c749cf8f
 translation-type: tm+mt
 source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 
 ---
 
 
-# Supported Logical Operators {#supported-logical-operators}
+# 支援的邏輯運算子 {#supported-logical-operators}
 
-使用邏輯運算子將索引鍵值配對和回填特徵分組。
+使用邏輯運算子來分組索引鍵值配對和回填特徵。
 
-## Supported Operators for Signal Search {#supported-operators-search}
+## 支援的信號搜尋運算元 {#supported-operators-search}
 
-使用下列支援的邏輯運算子來搜尋索引鍵值配對：
+使用以下支援的邏輯運算子搜索鍵值對：
 
 ### 比較運算子
 
@@ -25,17 +25,17 @@ source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 | **==** | 等於 |
 | **&gt;** | 大於 |
 | **&lt;** | 小於 |
-| **=&gt;** | 大於/等於 |
-| **&lt;=** | 小於/等於 |
+| **=&gt;** | 大於或等於 |
+| **&lt;=** | 小於／等於 |
 
-### 具名運算子
+### 命名運算子
 
-| 運算元 | Evaluates to [!DNL True] When |
+| 運算元 | 評估為 [!DNL True] 何時 |
 |---|---|
-| **[!UICONTROL Contains]** | The value in a key-value pair *contains* characters specified by this operator. |
-| **[!UICONTROL Startswith]** | The value in a key-value pair *starts with* characters specified by this operator. |
-| **[!UICONTROL Endswith]** | The value in a key-value pair *ends with* the characters specified by this operator. |
+| **[!UICONTROL Contains]** | 鍵值對中的值包含此運 *算符指* 定的字元。 |
+| **[!UICONTROL Startswith]** | 鍵值對中的值以此運算子 *指定的字元* 開頭。 |
+| **[!UICONTROL Endswith]** | 鍵值對中的值以此運算子 *指定的字* 符結尾。 |
 
-## Supported Operators for Trait Backfilling and Estimation {#supported-operators-backfilling}
+## 特徵回填與估計的支援算子 {#supported-operators-backfilling}
 
-You can backfill traits that include expressions containing any of the operators supported by [!UICONTROL Signal Search]. In addition to these operators, trait backfilling and estimation also support the [!UICONTROL AND], [!UICONTROL OR], and [!UICONTROL AND NOT] logical operators, used to combine key-value pairs within the backfilled trait expressions.
+您可以回填包含運算式的特徵，這些運算式包含支援的任何運算子 [!UICONTROL Signal Search]。 除了這些運算子外，特徵回填和估計也支援 [!UICONTROL AND]、 [!UICONTROL OR][!UICONTROL AND NOT] 和邏輯運算子，用來在回填特徵運算式中組合索引鍵值對。
