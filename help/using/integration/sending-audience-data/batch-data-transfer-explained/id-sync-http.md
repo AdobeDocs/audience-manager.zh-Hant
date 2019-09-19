@@ -1,43 +1,43 @@
 ---
-description: 說明在供應商與Audience Manager之間，初始HTTP呼叫中用來同步化使用者ID的語法和參數。ID同步可以在您將資料分類法傳送至Audience Manager後開始。
-seo-description: 說明在供應商與Audience Manager之間，初始HTTP呼叫中用來同步化使用者ID的語法和參數。ID同步可以在您將資料分類法傳送至Audience Manager後開始。
-seo-title: 傳入資料傳輸的ID同步
+description: 說明初始HTTP呼叫中用來同步廠商和Audience manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
+seo-description: 說明初始HTTP呼叫中用來同步廠商和Audience manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
+seo-title: 入站資料傳輸的ID同步
 solution: Audience Manager
-title: 傳入資料傳輸的ID同步
-uuid: 037e74a6-acfd-4cef-b693-16b7 a976
+title: 入站資料傳輸的ID同步
+uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
 source-git-commit: 0fac081c93be36d2aa40023c7323ef1886b3860a
 
 ---
 
 
-# ID Synchronization for Inbound Data Transfers{#id-synchronization-for-inbound-data-transfers}
+# 入站資料傳輸的ID同步{#id-synchronization-for-inbound-data-transfers}
 
-Describes the syntax and parameters used in the initial `HTTP` call to synchronize user IDs between a vendor and Audience Manager. ID同步可以在您將資料分類法傳送至Audience Manager後開始。
+說明初始呼叫中用來同步廠商 `HTTP` 與Audience manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
 
 <!-- c_id_sync_in.xml -->
 
-ID同步是傳入、非同步資料傳輸程序的第一步。在此步驟中，Audience Manager和廠商會比較和比對其個別網站訪客的ID。For example, an [!DNL Audience Manager] customer may know a user by ID 123. 不過，您的資料合作夥伴可以識別此使用者ID456。The synchronization process allows [!DNL Audience Manager] and a data vendor to reconcile these different IDs and identify users in their respective systems. Once complete, [!DNL Audience Manager] and your third-party partner should have corresponding IDs for each unique user seen on our networks.
+ID同步是傳入、非同步資料傳輸程式的第一步。 在此步驟中，Audience manager和廠商會比較並比對其各自網站訪客的ID。 例如，客戶可 [!DNL Audience Manager] 能依ID 123瞭解使用者。 不過，您的資料合作夥伴可以識別此使用者的ID為456。 同步過程允許 [!DNL Audience Manager] 和資料供應商協調這些不同的ID並標識其各自系統中的用戶。 完成後，您 [!DNL Audience Manager] 的協力廠商合作夥伴應為我們網路上每個獨特使用者提供對應的ID。
 
-You can use the following methods to get your data into [!DNL Audience Manager]:
+您可以使用下列方法將資料匯入 [!DNL Audience Manager]:
 
-* [ID同步HTTP要求](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-http)
+* [ID同步HTTP請求](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-http)
 * [宣告的ID事件](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#declared-id-event)
-* [從電子郵件內嵌影像同步ID](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-email-image)
+* [從電子郵件內嵌影像進行ID同步](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md#id-sync-email-image)
 
-## ID Synchronization `HTTP` Request {#id-sync-http}
+## ID同步請 `HTTP` 求 {#id-sync-http}
 
-In an ID exchange, a properly formatted [!DNL URL] string should look like this:
+在ID交換中，格式正確的字 [!DNL URL] 串應該如下所示：
 
 ```
 https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT_URL>
 ```
 
-The [!DNL URL] for your inbound ID synchronization call should contain variables described in the table below.
+您的 [!DNL URL] 傳入ID同步呼叫應包含下表所述的變數。
 
 >[!NOTE]
 >
->使用實際參數值取代斜體內容。
+>以實際參數值取代斜體內容。
 
 <table id="table_EB9F4246E2A34ABB8ED06EA458EB186F"> 
  <thead> 
@@ -48,37 +48,37 @@ The [!DNL URL] for your inbound ID synchronization call should contain variables
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <code><i>&lt; DOCUMENT_ ID&gt;</i></code> </td> 
-   <td colname="col2"> <p>Unique ID for the content provider (assigned by <span class="keyword"> Audience Manager</span>). </p> </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i></code> </td> 
+   <td colname="col2"> <p>內容提供者的唯一ID(由 <span class="keyword"> Audience Manager指派</span>)。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code><i>&lt; DOCUMENT_ UUID&gt;</i></code> </td> 
-   <td colname="col2"> <p>URL(百分比)您唯一使用者ID的編碼表示法。除了編碼保留ASCII字元之外，任何非ASCII字元都應根據UTF-8字元編碼表格來編碼。 </p> <p>For more information, see the <a href="https://www.url-encode-decode.com" format="http" scope="external"> URL Encode/Decode Online</a> website. </p> </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i></code> </td> 
+   <td colname="col2"> <p>URL（百分比）編碼表示您的唯一使用者ID。 除了編碼保留的ASCII字元外，任何非ASCII字元都應根據UTF-8字元編碼表進行百分比編碼。 </p> <p>如需詳細資訊，請參閱 <a href="https://www.url-encode-decode.com" format="http" scope="external"> URL Encode/Decode Online網站</a> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code><i>&lt; REDIRECT_ URL&gt;</i></code> </td> 
-   <td colname="col2"> <p>An encoded URL redirect with the macro <code> ${DD_UUID}</code> embedded within it. </p> <p>注意：僅在內容提供者開始呼叫時才新增。 </p> </td> 
+   <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i></code> </td> 
+   <td colname="col2"> <p>內嵌巨集 <code> ${DD_UUID}的編碼URL重新導向</code> 。 </p> <p>注意： 僅在內容提供者開始呼叫時新增。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code><i>gdpr=&lt;0|&gt;</i></code> </td> 
-   <td colname="col2"> <p>選填。Add this parameter if you are using the <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager Plug-in for IAB TCF.</a></p> <p><code> gdpr</code> 可能為(GDPR不適用)或1(GDPR適用)。 </p> <p> <b>注意：</b> 此參數只能與 <code>gdpr_ consensement搭配使用</code>。</p></td> 
+   <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i></code> </td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code> gdpr可以是</code> 0（GDPR不適用）或1（GDPR適用）。 </p> <p> <b></b> 注意：此參數只能與 <code>gdpr_connency一起使用</code>。</p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code><i>gdpr_ conseption=&lt;編碼String&gt;</i></code> </td> 
-   <td colname="col2"> <p>選填。Add this parameter if you are using the <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager Plug-in for IAB TCF.</a></p> <p><code>gdpr_ conseption</code> 是URL安全的base64編碼GDPR許可字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b>注意：</b> 此參數只能與 <code>gdpr搭配使用</code>。</p> </td> 
+   <td colname="col1"> <code><i>gdpr_connency=&lt;ENCODED STRING&gt;</i></code> </td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code>gdpr_connence</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b></b> 注意：此參數只能與 <code>gdpr搭配使用</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Declared ID Event {#declared-id-event}
+## 宣告的ID事件 {#declared-id-event}
 
-For more information, see [Declared IDs](../../../features/declared-ids.md).
+如需詳細資訊，請參 [閱宣告的ID](../../../features/declared-ids.md)。
 
-## ID Synchronization From an Email Embedded Image {#id-sync-email-image}
+## 從電子郵件內嵌影像進行ID同步 {#id-sync-email-image}
 
-透過電子郵件影像比對ID的格式與上表相同。但請注意，必須啓用電子郵件中的影像才能運作。這可能會影響透過電子郵件同步ID，因為大部分的郵件系統預設會停用影像。
+透過電子郵件影像比對ID的格式與上述相同。 但請注意，電子郵件中的影像必須已啟用，才能運作。 這可能會影響透過電子郵件進行的ID同步，因為大部分的郵件系統都預設會停用影像。
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
 >* [資料收集元件](../../../reference/system-components/components-data-collection.md)
 
