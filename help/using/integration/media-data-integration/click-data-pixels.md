@@ -1,10 +1,10 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: 透過像素呼叫擷取促銷活動點擊資料
+seo-title: 透過像素呼叫擷取促銷活動點按資料
 solution: Audience Manager
-title: 透過像素呼叫擷取促銷活動點擊資料
-uuid: 7c3797f7-9674-493d-972b-38be0584feed
+title: 透過像素呼叫擷取促銷活動點按資料
+uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
 source-git-commit: dbc96973ed2214d171fe32b7e1314d40c22c2d79
 
@@ -13,16 +13,16 @@ source-git-commit: dbc96973ed2214d171fe32b7e1314d40c22c2d79
 
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
-點擊追蹤可讓您測量促銷活動中的訪客參與，因為它記錄第三方創意人士的點按活動。與印象系列類似，會傳送事件呼叫給Audience Manager資料收集伺服器([!UICONTROL DCS])進行處理。然後將訪客重新導向至預定的網頁位址。
+點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象收集類似，事件呼叫會傳送至Audience manager資料收集伺服器([!UICONTROL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
 
 ## 要求
 
-按一下追蹤呼叫需要下列參數：
+點按追蹤呼叫需要下列參數：
 
-* `d_event=click`：識別事件呼叫作為點按事件的索引鍵值配對。
-* `d_rd=redirect URL`：包含編碼重新導向 [!DNL URL]的索引鍵值配對。
+* `d_event=click`:將事件呼叫識別為點按事件的金鑰值配對。
+* `d_rd=redirect URL`:包含編碼重新導向的金鑰值對 [!DNL URL]。
 
-此外，呼叫可以包含可用於特徵資格的索引鍵值配對，也可以提供其他報表的資料和中繼資料。
+此外，呼叫可包含可用於特徵限定或為其他報表提供資料和中繼資料的鍵值配對。
 
 ## 請求範例
 
@@ -32,59 +32,59 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 回應
 
-回應會將瀏覽器重新導向至參數中 [!DNL URL] 指定 `d_rd` 的瀏覽器。回應字串可包含下列任何受支援巨集所產生的值。
+回應會將瀏覽器重新導向 [!DNL URL] 至參數中指定的 `d_rd` 位置。 回應字串可包含下列任何支援的巨集所產生的值。
 
-根據上述範例，瀏覽器會重新導向至下列 [!DNL URL]項目：
+根據上述範例，瀏覽器會重新導向至下列範例 [!DNL URL]:
 
 [!DNL `https://adobe.com/callback?creative=123`]
 
-## 支援的Macros
+## 支援的巨集
 
-按一下事件可支援下表所列的巨集。巨集是一個小型的自助代碼，可在廣告標記載入為促銷活動和使用者追蹤時啓動。巨集將會連同目的地 [!DNL URL]一起傳遞，只要它們以下列格式標示： `%macro%`。有些按鍵沒有巨集，而是接受硬式編碼ID值。如果您要分析 [「對象最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)」中的資料，則需要接受硬式編碼值的索引鍵。
+按一下事件支援下表中列出的宏。 巨集是自含代碼的一小部分，當廣告標籤載入促銷活動和使用者追蹤時會啟動。 宏將隨目標一起傳遞，只 [!DNL URL]要它們標有以下格式： `%macro%`。 某些鍵沒有宏，而接受硬編碼ID值。 如果您要分析「對象最佳化報表」中的資料，則需要接受硬式編碼值 [的金鑰](../../reporting/audience-optimization-reports/audience-optimization-reports.md)。
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 金鑰 </th> 
-   <th colname="col02" class="entry"> 巨集 </th> 
+   <th colname="col02" class="entry"> 宏 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ adgroup</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ adgroup%d</code> </p> </td> 
+   <td colname="col1"> <p> <code> d_adgroup</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_adgroup%</code> </p> </td> 
    <td colname="col2"> <p>來自廣告伺服器的數值廣告群組ID。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ adsc</code> </p> </td> 
-   <td colname="col02"> <p>無巨集。 </p> <p>接受硬式編碼ID值。 </p> </td> 
-   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。請注意，這與Audience Manager資料來源無關。</p> <p> <span class="wintitle"> 「對象最佳化</span> 」報表所需。 </p> </td> 
+   <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
+   <td colname="col02"> <p>無宏。 </p> <p>接受硬式編碼ID值。 </p> </td> 
+   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。 請注意，這與Audience manager資料來源無關。</p> <p> 「對象最佳 <span class="wintitle"> 化」報表</span> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ bu</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ bu%</code> </p> </td> 
-   <td colname="col2"> <p>業務單位的數值ID。 </p> <p> <span class="wintitle"> 「對象最佳化</span> 」報表所需。 </p> </td> 
+   <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
+   <td colname="col2"> <p>業務單位的數值ID。 </p> <p> 「對象最佳 <span class="wintitle"> 化」報表</span> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ campaign</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ campaign%</code> </p> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p> <span class="wintitle"> 「對象最佳化</span> 」報表所需。 </p> </td> 
+   <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p> 「對象最佳 <span class="wintitle"> 化」報表</span> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ creative</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ creative%</code> </p> </td> 
+   <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_creative%</code> </p> </td> 
    <td colname="col2"> <p>來自廣告伺服器的數值創意ID。 </p> <p>必填. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ dpid</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ id%</code> </p> </td> 
-   <td colname="col2"> <p>資料提供者ID。 </p> <p>通常與 <code> d_ dpuuid</code> 搭配使用，將資料提供者ID連結至使用者ID。 </p> <p>選填。 </p> </td> 
+   <td colname="col1"> <p> <code> d_dpid</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_id%</code> </p> </td> 
+   <td colname="col2"> <p>資料提供者ID。 </p> <p>通常與 <code> d_dpuuid一起使用</code> ，將資料提供者ID連結至使用者ID。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ dpuuid</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ dpuuid%d</code> </p> </td> 
-   <td colname="col2"> <p>資料提供者提供的唯一使用者ID。 </p> <p>通常與 <code> d_ dpid</code> 搭配使用，將使用者ID連結至資料供應商ID。 </p> </td> 
+   <td colname="col1"> <p> <code> d_dpuuid</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_dpuuid%</code> </p> </td> 
+   <td colname="col2"> <p>資料提供者提供的唯一使用者ID。 </p> <p>通常與 <code> d_dpid搭配使用</code> ，將使用者ID連結至資料提供者ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
@@ -92,57 +92,57 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
    <td colname="col2"> <p> <span class="keyword"> Experience Cloud ID (ECID). </span>For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ place</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ placement%</code> </p> </td> 
+   <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_placement%</code> </p> </td> 
    <td colname="col2"> <p>來自廣告伺服器的數值位置ID。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ region</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_地區%d</code> </p> </td> 
-   <td colname="col2"> <p>服務之DCS叢集的數值區域ID。如需DCS的詳細資訊，請參閱 <a href="../../reference/system-components/components-data-collection.md"> 資料收集元件</a>。 </p> <p>選填。 </p> </td> 
+   <td colname="col1"> <p> <code> d_region</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_region%</code> </p> </td> 
+   <td colname="col2"> <p>為請求提供服務的DCS叢集的數值區域ID。 如需DCS的詳細資訊，請參閱資 <a href="../../reference/system-components/components-data-collection.md"> 料收集元件</a>。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> r_ rand</code> </p> </td> 
-   <td colname="col02"> <p> <code> %r_ rand%</code> </p> </td> 
-   <td colname="col2"> <p>用於快取的隨機數字。 </p> <p>選填。 </p> </td> 
+   <td colname="col1"> <p> <code> r_rand</code> </p> </td> 
+   <td colname="col02"> <p> <code> %r_rand%</code> </p> </td> 
+   <td colname="col2"> <p>用於快取破壞的隨機數。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ site</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ site%</code> </p> </td> 
+   <td colname="col1"> <p> <code> d_site</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_site%</code> </p> </td> 
    <td colname="col2"> <p>來自廣告伺服器的數值網站ID。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ src</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ src%</code> </p> </td> 
-   <td colname="col2"> <p>Audience Manager提取中繼資料的來源DPID。 </p> <p>必填. </p> </td> 
+   <td colname="col1"> <p> <code> d_src</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_src%</code> </p> </td> 
+   <td colname="col2"> <p>Audience manager提取中繼資料的來源DPID。 </p> <p>必填. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_ uuid</code> </p> </td> 
-   <td colname="col02"> <p> <code> %d_ uuid%d</code> </p> </td> 
-   <td colname="col2"> <p>直接在URL中指定訪客的ID，而不是依賴Demdex Cookie。 </p> <p>選填。 </p> </td> 
+   <td colname="col1"> <p> <code> d_uuid</code> </p> </td> 
+   <td colname="col02"> <p> <code> %d_uuid%</code> </p> </td> 
+   <td colname="col2"> <p>直接在URL中指定訪客的ID，而非依賴Demdex Cookie。 </p> <p>選填。 </p> </td> 
   </tr> 
    <tr> 
    <td colname="col1"> <p> <code>gdpr</code> </p> </td> 
-   <td colname="col02"> <p> <code>%gdpr_ apply%</code> </p> </td> 
-   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a> </p><p><code>gdpr</code> 可能為(GDPR不適用)或1(GDPR適用)。</p> <p>預設值為 0。</p><p>選填。</p></td> 
+   <td colname="col02"> <p> <code>%gdpr_applies%</code> </p> </td> 
+   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a> </p><p><code>gdpr可以是</code> 0（GDPR不適用）或1（GDPR適用）。</p> <p>預設值為 0。</p><p>選填。</p></td> 
   </tr> 
    <tr> 
-   <td colname="col1"> <p> <code>gdpr_ contract</code> </p> </td> 
-   <td colname="col02"> <p> <code>%gdpr_ conseption%</code> </p> </td> 
+   <td colname="col1"> <p> <code>gdpr_counnence</code> </p> </td> 
+   <td colname="col02"> <p> <code>%gdpr_counnency%</code> </p> </td> 
    <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 「若 <code>gdpr=1</code>，則 <code>%gdpr_consent%</code>」取代為「<code>gdpr_consent</code>」字串 (請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB 規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p></td> 
   </tr> 
  </tbody> 
 </table>
 
-## Macros範例
+## 宏示例
 
-此範例示範傳遞創意、群組和位置巨集。假設每個參數的值會傳入點擊追蹤呼叫的非重導部分。
+此範例示範如何傳遞創意、adgroup和位置巨集。 它會假設每個參數的值會傳遞至點按追蹤呼叫的非重新導向部分。
 
 <ul class="simplelist"> 
  <li> <code> creative=1235 </code> </li> 
  <li> <code> campaign=4709 </code> </li> 
  <li> <code> adgroup=3408 </code> </li> 
- <li> <code> 位置=1001 </code> </li> 
+ <li> <code> placement=1001 </code> </li> 
  <li> <code> src=203 </code> </li> 
 </ul>
 
@@ -156,11 +156,11 @@ d_adgroup%25%26d_placement%3D%25placement%25%26src%3D%25d_src%25
 
 ## 回應
 
-根據上述範例，瀏覽器會重新導向至下列 [!DNL URL]項目：
+根據上述範例，瀏覽器會重新導向至下列範例 [!DNL URL]:
 
 [!DNL `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`]
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [觀眾最佳化報表的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+>* [受眾最佳化報告的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
