@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料安全性
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 91444ad943fcd020c83e522922d67ef400bf8824
 
 ---
 
@@ -19,24 +19,24 @@ Audience manager的安全性實務包括外部和內部稽核、活動記錄、�
 
 在Audience manager中，我們考慮了三個主要類別的安全性：
 
-| 安全類型 | 支援 |
+| Security Type | 支援 |
 |---|---|
-| **資訊安全** | 企業級驗證、加密和資料儲存實務 |
-| **資料洩漏／透明度** | 對構成或促成資料洩漏的現場活動進行深入、可操作的洞察 |
-| **流程／政策增強功能** | 客戶，透過使用隱私權與資料安全的業界最佳實務 |
+| **資訊安全** | Enterprise-level authentication, encryption, and data storage practices |
+| **Data leakage/transparency** | Deep and actionable insight into on-site activities that constitute or contribute to data leakage |
+| **Process/policy enhancements** | Clients, by working with industry best practices for privacy and data security |
 
-## 系統、培訓與存取 {#systems-training-access}
+## Systems, Training, and Access {#systems-training-access}
 
-有助於確保系統和資料安全的流程。
+Processes that help keep our system and your data secure.
 
-**** 外部安全性驗證： Audience manager會每年和每季測試安全性。
+**External Security Validation:**  Audience Manager tests security on an annual and quarterly basis.
 
-* 每年：Audience manager每年會接受獨立第三方公司的全面普及率測試。 此測試旨在識別應用程式中的安全性弱點。 這些測試包括掃描跨網站指令碼、插入SQL、表單參數控制以及其他應用程式層級的弱點。
-* 每季：每季一次，內部團隊會檢查安全性弱點。 這些測試包括網路掃描開啟埠和服務漏洞。
+* Yearly: Once a year, Audience Manager undergoes a full penetration test conducted by an independent third-party company. The test is designed to identify security vulnerabilities in the application. The tests include scanning for cross-site scripting, SQL injections, form parameter manipulation, and other application-level vulnerabilities.
+* 每季：每季一次，內部團隊會檢查安全性弱點。 These tests include network scans for open ports and service vulnerabilities.
 
-**** 系統安全性： 為協助確保資料安全且私密，Audience Manager:
+**Systems Security:**  To help keep data safe and private, Audience Manager:
 
-* 阻止來自未授權IP位址的請求。
+* Blocks requests from unauthorized IP addresses.
 * 保護防火牆、 VPN和虛擬專用雲儲存後的資料。
 * 使用觸發式稽核記錄來追蹤客戶和控制資訊資料庫的變更。 這些記錄檔會追蹤資料庫層級的所有變更，包括進行變更的使用者ID和IP位址。
 
@@ -62,18 +62,30 @@ Audience manager的安全性實務包括外部和內部稽核、活動記錄、�
 
 **** 報告中的資料分區： 客戶端ID是所有報表表格中識別索引鍵的一部分，報表查詢會依ID篩選。 這有助於防止您的資料出現在其他Audience manager客戶的報表中。
 
-## 傳入伺服器對伺服器(S2S)傳輸 {#inbound-s2s}
+## Inbound Server-to-Server (S2S) Transfers {#inbound-s2s}
 
-Adobe Audience manager支援兩種將S2S已登入的資料檔案傳輸至我們系統的主要方法：
+Adobe Audience Manager supports two main methods of transferring S2S on-boarded data files to our systems:
 
-這兩種方法的設計都考慮到了客戶和合作夥伴資料的安全性，同時資料在他們的系統和系統之間流動。
+Both methods are designed with the security of our customer and partner data in mind while data is in flight between their systems and our system.
 
-**** SFTP:對於SFTP選項，大部分客戶選擇通過使用安全殼層(SSH)協定的安全FTP(SFTP)協定傳遞檔案。 此方法可確保在客戶系統與Adobe系統之間進行檔案加密。 對於每位客戶，我們會在SFTP伺服器上建立已擱置的下拉式方塊位置，此位置會系結至該系統上的使用者帳戶。 只有客戶的認證和特權內部系統用戶才能訪問此囚禁中的下拉框位置。 其他客戶永遠無法進入此監獄。
+**** SFTP: For the SFTP option, most customers choose to deliver files via the Secure FTP (SFTP) protocol, which uses the Secure Shell (SSH) protocol. This method ensures that files are encrypted while in flight between the customer's systems and Adobe's system. For each customer, we create a jailed drop-box location on our SFTP servers, which is tied to a user account on that system. Only the customer's credentialed and privileged internal system users can access this jailed drop-box location. 其他客戶永遠無法進入此監獄。
 
-**** Amazon Web Services S3（透過HTTPS）:對於S3傳送選項，建議所有客戶設定其S3用戶端，使用HTTPS加密方法進行檔案傳送（這不是預設值，因此必須明確設定）。 s3cmd命令列工具以及各種主要程式設計語言可用的S3程式庫都支援HTTPS選項。 啟用此HTTPS選項後，客戶的資料會在飛往我們的系統時進行加密。 我們為每個客戶建立個別的S3儲存貯體子目錄，只能由該客戶的認證和內部系統使用者的認證存取。
+**** Amazon Web Services S3 via HTTPS: For the S3 delivery option, we recommend that all customers configure their S3 clients to use the HTTPS encryption method for file transfers (this is not the default, so it must be explicitly configured). The HTTPS option is supported both by the s3cmd command line tool as well as the S3 libraries available in every major programming language. With this HTTPS option enabled, customer's data is encrypted while in flight to our systems. For each customer, we create a separate S3 bucket sub-directory that can be accessed only by that customer's credentials and those of our internal system users.
 
-要將PGP加密添加到資料檔案，請參 [閱File PGP Encryption for Inbound Data Types](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。
+To add PGP encryption to your data files, see File PGP Encryption for Inbound Data Types.[](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
 
-## 通過逸出保護資料 {#escaping-data}
+## Protecting Data by Escaping {#escaping-data}
 
-請注意， [!DNL Audience Manager] 不要逸出傳出資料，以防其受到跨網站指令碼(XSS)等攻擊。 客戶有責任逸出傳入的資料。
+Note that  does not escape outgoing data to secure it against possible cross-site scripting (XSS), etc. [!DNL Audience Manager]客戶有責任逸出傳入的資料。
+
+## HTTP Strict-Transport-Security (#hsts)
+
+[!DNL HTTP Strict-Transport-Security (HSTS)] 是網頁安全性原則機制，不允許流量並透明地將所有流量升級至，有助於防止Cookie劫持 [!DNL HTTP] 和通訊協定降級 [!DNL HTTP] 攻擊 [!DNL HTTPS]。
+
+此政策可改善用戶端與Adobe edge伺服器間的資料安全性。
+
+### 範例 {#hsts-example}
+
+當嘗試存取時， `http://bank.demdex.com`會 [!DNL HSTS] 自動將要求升級至 `https://bank.demdex.com`，以防瀏覽器無法自動要求網 [!DNL HTTPS] 域。
+
+如需 [有關HSTS的詳細資訊，請參閱HTTP嚴格傳輸安全性-](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) Wikipedia。
