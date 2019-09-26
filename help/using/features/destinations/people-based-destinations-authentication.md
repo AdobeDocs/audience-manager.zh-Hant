@@ -5,12 +5,15 @@ seo-title: 使用以人為本的平台進行驗證
 solution: Audience Manager
 title: 使用以人為本的平台進行驗證
 translation-type: tm+mt
-source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 使用以人為本的平台進行驗證 {#authentication-with-people-based-platforms}
+
+>[!IMPORTANT]
+>本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
 本頁包含如何設定及管理Audience manager與人員型平台之間整合的指引。
 
@@ -21,12 +24,12 @@ source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Administration]** &gt; **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
    ![以人為本的整合](assets/pbd-config.png)
-1. Click **[!UICONTROL Add Account]**.
-1. 使用下 **[!UICONTROL People-Based Platform]** 拉式選單來選取您要設定整合的平台。
+2. Click **[!UICONTROL Add Account]**.
+3. 使用下 **[!UICONTROL People-Based Platform]** 拉式選單來選取您要設定整合的平台。
    ![以人為本的平台](assets/pbd-add.png)
-1. 按一 **[!UICONTROL Confirm]** 下以重新導向至所選平台的驗證頁面。
-1. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下 **[!UICONTROL Confirm]**。
-1. Audience manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收Adobe的通知。
+4. 按一 **[!UICONTROL Confirm]** 下以重新導向至所選平台的驗證頁面。
+5. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下 **[!UICONTROL Confirm]**。
+6. Audience manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收Adobe的通知。
 
 ## 驗證Token過期和通知管理 {#token-expiration-notification}
 
