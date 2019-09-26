@@ -5,12 +5,15 @@ seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: 先決條件和注意事項
 translation-type: tm+mt
-source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 先決條件和注意事項 {#prerequisites-considerations}
+
+>[!IMPORTANT]
+>本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
 請閱讀以下內容，以瞭解您在註冊前必須符合的客戶需求概觀 [!DNL People-Based Destinations]。
 
