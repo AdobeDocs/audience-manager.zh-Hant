@@ -5,12 +5,15 @@ seo-title: 可分享的觀眾
 solution: Audience Manager
 title: 可分享的觀眾
 translation-type: tm+mt
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 可分享的觀眾 {#shareable-audiences}
+
+>[!IMPORTANT]
+>本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
 [!DNL People-Based Destinations] 將概念帶 [!DNL Shareable Audiences] 入Audience Manager。 此量度可協助您瞭解Audience manager可與目標平台共用多少雜湊電子郵件地址。
 
