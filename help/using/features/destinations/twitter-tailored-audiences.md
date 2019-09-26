@@ -5,7 +5,7 @@ seo-title: 將Twitter量身訂做的觀眾設定為自助服務裝置型目的�
 solution: Audience Manager
 title: 將Twitter量身訂做的觀眾設定為自助服務裝置型目的地
 translation-type: tm+mt
-source-git-commit: cd770afc39221687f4eb47cc358d8d57a51b9fb5
+source-git-commit: 2bf825e083c81edb8c03cb8dcef99088b1958452
 
 ---
 
@@ -88,6 +88,10 @@ source-git-commit: cd770afc39221687f4eb47cc358d8d57a51b9fb5
 
 * 正確的區段或對應名稱：「美國和歐洲購物者」;
 * 區段或對應名稱不正確：「美國、歐洲5h0pP3rs」。
+
+## 匹配率注意事項 {#match-rates-considerations}
+
+使用時， [!UICONTROL Twitter Tailored Audiences]目標頁 [!UICONTROL Segment Addressable Audience] 面的 [!UICONTROL Segment Match Rate] 和量度將不會顯示任何值。 這是正常行為，因為受眾比對以及此目的地的比對率是由Adobe而非Adobe處理 [!UICONTROL Twitter]和代管。
 
 >[!IMPORTANT]
 >
