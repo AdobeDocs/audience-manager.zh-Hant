@@ -5,12 +5,15 @@ seo-title: 工作流C —— 基於驗證活動和離線資料的個性化
 solution: Audience Manager
 title: 工作流C —— 基於驗證活動和離線資料的個性化
 translation-type: tm+mt
-source-git-commit: a2825f256364668abc4e6760a473713fec8626e3
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 工作流C —— 基於驗證活動和離線資料的個性化 {#workflow-c}
+
+>[!IMPORTANT]
+>本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
 本頁包含如何結合離線資料與即時行為資料的逐步指 [!DNL CRM] 引，讓已驗證的使用者建立受眾區段，然後將這些受眾區段傳送至 [!DNL People-Based Destinations]。
 
@@ -89,7 +92,7 @@ source-git-commit: a2825f256364668abc4e6760a473713fec8626e3
 1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Audience Data]** -&gt; **[!UICONTROL Profile Merge Rules]**。
 2. Click **[!UICONTROL Add New Rule]**.
 3. 輸入配置檔案合併規 **[!UICONTROL Name]** 則和 **[!UICONTROL Description]**。
-4. 在區段 **[!UICONTROL Profile Merge Rule Setup]** 中，從清單 **[!UICONTROL All Cross-Device Profiles]** 中選取規 **[!UICONTROL Cross-Device Options]** 則。
+4. 在區 **[!UICONTROL Profile Merge Rule Setup]** 段中，從清 **[!UICONTROL Current Authenticated Profiles]** 單中 **[!UICONTROL Last Authenticated Profiles]** 選擇或規 **[!UICONTROL Cross-Device Options]** 則。
 5. 在清 **[!UICONTROL Cross-Device Profile Options]** 單中，選取您要執行區段的資料來源。 這些應是包含您現有DPUUID的資料來源。
    ![merge-rule-setup](assets/pbd-pmr-combined.png)
 
