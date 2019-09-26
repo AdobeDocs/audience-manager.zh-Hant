@@ -5,7 +5,7 @@ seo-title: 使用以人為本的平台進行驗證
 solution: Audience Manager
 title: 使用以人為本的平台進行驗證
 translation-type: tm+mt
-source-git-commit: 05f334dc3d975a0fe18b93c844889e3edb2dfafa
+source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 ---
 
@@ -26,11 +26,11 @@ source-git-commit: 05f334dc3d975a0fe18b93c844889e3edb2dfafa
    ![以人為本的平台](assets/pbd-add.png)
 1. 按一 **[!UICONTROL Confirm]** 下以重新導向至所選平台的驗證頁面。
 1. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下 **[!UICONTROL Confirm]**。
-1. Audience manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
+1. Audience manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收Adobe的通知。
 
 ## 驗證Token過期和通知管理 {#token-expiration-notification}
 
-Audience manager會透過驗證Token處理與社交平台的整合，驗證Token會在特定時間後過期。 代號有效期限受每個社交平台整合規則的約束。 一旦驗證Token過期，Audience manager就無法將您的觀眾區隔傳送至您的目的地。 為避免此情形，我們建議您在整合中新增至少一個連絡人電子郵件地址，以便在驗證Token即將過期時立即收到通知。 當發生此情況時，您可以重新驗證，以確保目標可繼續接收您的受眾細分。
+Audience manager會透過驗證Token處理您與社交平台的整合，驗證Token會在特定時間後過期。 代號有效期限受每個社交平台整合規則的約束。 一旦驗證Token過期，Audience manager就無法將您的觀眾區隔傳送至您的目的地。 為避免此情形，我們建議您在整合中新增至少一個連絡人電子郵件地址，以便在驗證Token即將過期時立即收到通知。 當發生此情況時，您可以重新驗證，以確保目標可繼續接收您的受眾細分。
 
 以下說明如何將電子郵件地址新增至現有整合：
 
@@ -41,7 +41,7 @@ Audience manager會透過驗證Token處理與社交平台的整合，驗證Token
 
 ## 驗證Token續約 {#token-renewal}
 
-當驗證Token過期時，Audience manager與對應社交平台的整合會中斷，因此Audience manager無法再將觀眾區隔傳送至目的地。 此頁 [!UICONTROL Integrated Accounts] 面會顯示欄中每個整合的過期狀態， [!UICONTROL Expiration] 並允許您隨時續約驗證。
+當驗證Token過期時，Audience manager與對應社交平台的整合會中斷，因此Audience manager無法再將對象區段傳送至目的地。 此頁 [!UICONTROL Integrated Accounts] 面會顯示欄中每個整合的過期狀態， [!UICONTROL Expiration] 並允許您隨時續約驗證。
 
 以下說明如何續約過期或即將過期的驗證：
 1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Administration]** &gt; **[!UICONTROL Integrated Accounts]**。
