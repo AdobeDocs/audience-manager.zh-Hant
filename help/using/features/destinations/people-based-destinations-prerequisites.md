@@ -5,7 +5,7 @@ seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: 先決條件和注意事項
 translation-type: tm+mt
-source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
+source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
 
 ## 註冊以人為本的目的地 {#signing-up}
 
-[!DNL People-Based Destinations] 是一種進階功能，可讓您在以人為本的環境中啟用第一方受眾細分，透過社交網路或電子郵件行銷鎖定受眾，從而增強您的Audience Manager體驗。
+[!DNL People-Based Destinations] 是一種進階功能，可讓您在以人為本的環境中啟用您的第一方受眾細分，透過社交網路或電子郵件行銷鎖定您的受眾，借此增強您的Audience Manager體驗。
 
 請連絡您的Adobe代表，以利用這項優質功能。
 
@@ -27,7 +27,7 @@ source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
 
 ### [!DNL Facebook]
 
-在您可用來傳 [!DNL People-Based Destinations] 送對象區段至之 [!DNL Facebook]前，請確定您符合下列需求：
+在您可以用 [!DNL People-Based Destinations] 來傳送第一方對象區段至之 [!DNL Facebook]前，請確定您符合下列需求：
 
 1. 您 [!DNL Facebook] 的使用者帳戶必須為您 **** 計畫使用的廣告帳戶啟用「管理促銷活動」權限。
 1. 將 **Adobe Experience cloud商業帳戶新增為廣告合作夥伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 如需詳 [細資訊，請參閱將合作夥伴新增至您的業務經理](https://www.facebook.com/business/help/708679622611131) 。
@@ -43,13 +43,13 @@ source-git-commit: f3fe6abe913d98549ae6c090a2d5f721485308c2
 
 ## 資料隱私權{#data-privacy}
 
-雖然 [!DNL People-Based Destinations] 您可以根據電子郵件地址來定位受眾，但Audience Manager中並未直接識別訪客資訊。 在資料登入階段，您必須確保您打算使用的電子郵件地址已與演算法雜湊 [!DNL SHA256] 在一起。 否則，您將無法在中使用它們 [!DNL People-Based Destinations]。
+雖然 [!DNL People-Based Destinations] 您可以根據您上傳的雜湊電子郵件地址來定位對象，但您仍禁止將任何直接可識別身份的訪客資訊上傳至Audience Manager。 在資料登入階段，您必須確保您打算使用的電子郵件地址已與演算法雜湊 [!DNL SHA256] 在一起。 否則，您將無法在中使用它們 [!DNL People-Based Destinations]。
 
 ## 資料散列與加密 {#data-hashing-encryption}
 
-加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 在Audience manager中加密資料會造成嚴重的隱私權風險，因為任何加密的個人識別資訊形式都可以解密，揭露敏感的客戶資料。 與加密相比，加密的 [!DNL People-Based Destinations] 設計目的是改用雜湊資料，以保護您用於鎖定的客戶資料。
+加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 在Audience manager中加密資料會帶來嚴重風險，因為任何加密的個人識別資訊形式都可以解密。 與加密相比，加密 [!DNL People-Based Destinations] 的設計是改用雜湊資料。
 
-雜湊是單向函式，可對輸入進行雜湊以產生獨特的結果。 通過使用適當的散列算法， [!DNL SHA256]例如，無法對散列函式進行反向操作並揭示未置亂的資訊。 您要登入Audience manager的電子郵件地址必須使用演算法雜湊 [!DNL SHA256] 處理。 如此，Audience manager就不會收到任何可識別個人身分的資訊，確保客戶資料的安全。
+雜湊是單向函式，可對輸入進行雜湊以產生獨特的結果。 通過使用適當的散列算法， [!DNL SHA256]例如，無法對散列函式進行反向操作並揭示未置亂的資訊。 您要登入Audience manager的電子郵件地址必須使用演算法雜湊 [!DNL SHA256] 處理。 如此，您就可以確保沒有未雜湊的電子郵件地址可送達Audience Manager。
 
 ## 雜湊要求 {#hashing-requirements}
 
@@ -63,7 +63,7 @@ Adobe Experience cloud可讓您選擇透過Experience Cloud ID服務散列客戶
 
 ## 取得使用者權限 {#obtaining-user-permission}
 
-由於 [!DNL People-Based Destinations] 協助您在以人為本的通道中啟用第一方受眾資料，因此您有責任告知客戶如何將其資料用於廣告用途。
+由於 [!DNL People-Based Destinations] 協助您在以人為本的通道中啟用第一方受眾資料，因此您有責任告知客戶並取得客戶如何將其資料用於廣告或其他目的的必要同意。
 
 在註冊之前，請 [!DNL People-Based Destinations]務必先取得客戶的同意，再將其資訊用於廣告用途。
 
@@ -77,5 +77,5 @@ Adobe Experience cloud可讓您選擇透過Experience Cloud ID服務散列客戶
 
 有兩種方式可讓您將離線資料帶入Audience Manager [!DNL People-Based Destinations]。
 
-* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 使用此方法，您可以在中使用資料庫中的所有散列 [!DNL CRM] 電子郵件地址 [!DNL People-Based Destinations]。 此外，使用此方法時，您也可以針對已登入的特徵來限定雜湊 [電子郵件地址](../traits/trait-qualification-reference.md)。
-* 使用 [Declared ID](../declared-ids.md) ，在傳入已驗證的客戶ID時，宣告雜湊的電子郵件地址。 使用此方法時，Audience manager只會從已線上驗 [!DNL People-Based Destinations] 證的使用者傳送雜湊電子郵件地址。 透過Facebook啟動的電子郵件地址只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID相關的其他電子郵件地址不會即時傳送。
+* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 使用此方法，您可以選擇在中使用資料庫中的散列電 [!DNL CRM] 子郵件地址 [!DNL People-Based Destinations]。 此外，使用此方法時，您也可以針對已登入的特徵來限定雜湊 [電子郵件地址](../traits/trait-qualification-reference.md)。
+* 使用 [Declared ID](../declared-ids.md) ，在傳入已驗證的客戶ID時，宣告雜湊的電子郵件地址。 使用此方法時，Audience manager僅會代表您傳送經過線上驗證 [!DNL People-Based Destinations] 的使用者的雜湊電子郵件地址。 透過以人為本的管道啟動的電子郵件地址，只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID相關的其他電子郵件地址不會即時傳送。
