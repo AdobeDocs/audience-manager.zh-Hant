@@ -5,7 +5,7 @@ seo-title: 以人為本的目的地實作指引
 solution: Audience Manager
 title: 實施指南
 translation-type: tm+mt
-source-git-commit: a3380b9019cfc22b020aacc313eafc409486b0c5
+source-git-commit: 6093def9c5853572c064a4e398d5e328bcb9d181
 
 ---
 
@@ -27,25 +27,25 @@ source-git-commit: a3380b9019cfc22b020aacc313eafc409486b0c5
 
 ## 1.定義您的使用案例 {#defining-your-use-case}
 
-在開始實作之 [!DNL People-Based Destinations]前，您必須清楚定義您將要針對使用此功能的使用案例。 您可以根 [!DNL People-Based Destinations] 據受眾活動，以兩種方式來定位受眾：
+在開始實作 [!DNL People-Based Destinations]之前，您必須清楚定義您將使用此功能的使用案例。 您可以根 [!DNL People-Based Destinations] 據受眾活動，以兩種方式來定位受眾：
 
-**A)根據線上和離線使用者活動組合來鎖定受眾**。 在此案例中，您想要結合Audience manager的現有觀眾資料與內部系統的資料， [!DNL CRM] 並傳送產生的觀眾區隔 [!DNL People-Based Destinations]。 以下是說明此情形的範例：
+**A)根據您結合的線上和線下使用者活動鎖定受眾**。 在此案例中，您想要結合Audience manager的現有觀眾資料與內部系統的資料， [!DNL CRM] 並傳送產生的觀眾區隔 [!DNL People-Based Destinations]。 以下是說明此情形的範例：
 
-您的公司是一家航空公司，有不同的客戶層級（銅、銀和金），您想要透過社交平台為每個層級提供個人化優惠。 您使用Audience manager分析網站上的客戶活動。 不過，並非所有客戶都使用該航空公司的行動應用程式，其中有些客戶甚至從未登入該公司網站。 您的客戶資料主要限於會籍ID和電子郵件地址。
+Your company, an airline, has different customer tiers (Bronze, Silver, and Gold), and you want to provide each of the tiers with personalized offers via social platforms. 您使用Audience manager分析網站上的客戶活動。 不過，並非所有客戶都使用該航空公司的行動應用程式，其中有些客戶尚未登入該公司網站。 Your customer data is mostly limited to membership IDs and email addresses.
 
-若要跨社交媒體和類似的以人為本的通道鎖定目標受眾，您可以將雜湊的電子郵件地址匯入Audience [](people-based-destinations-prerequisites.md) Manager，並將它們與現有的線上活動特徵結合，以建立新的受眾細分。 接下來，您可以使用這些區段來鎖定受眾 [!DNL People-Based Destinations]。
+To target them across social media and similar people-based channels, you can bring your hashed email addresses into Audience Manager and combine them with your existing online activity traits, to build new audience segments. [](people-based-destinations-prerequisites.md)Next, you can use those segments to target your audience through .[!DNL People-Based Destinations]
 
-**B)受眾鎖定完全根據離線使用者活動**。 在此案例中，您的 [!DNL CRM] 系統包含客戶電子郵件地址和其他客戶屬性，但客戶根本沒有與您的網站互動，因此您在Audience manager中沒有任何客戶活動。 以下是說明此情形的範例：
+**B) Audience targeting based exclusively on your offline user activity.** In this scenario, your  system contains your customer email addresses and other customer attributes, but customers have not interacted with your website at all, so you don't have any customer activity in Audience Manager. [!DNL CRM]Here's an example that illustrates this scenario:
 
-您的公司是電信服務供應商，將客戶資料（例如電子郵件地址和購買的電信計畫）保存在內部 [!DNL CRM]。 您想要鎖定社交平台中的現有客戶，以根據現有訂閱提供升級套件。 為此，您可以將雜湊的客戶電子郵件地址內嵌至Audience Manager，並根據現有客戶訂閱建立區段。 然後，您可以傳送這些區段給 [!DNL People-Based Destinations] 客戶，以個人化優惠為目標。
+Your company, a telecom services provider, keeps customer data like email addresses and purchased telecom plans in an internal . [!DNL CRM]You want to target existing customers in social platforms to offer them upgrade packages based on their existing subscriptions. To do this, you can ingest your hashed customer email addresses into Audience Manager, and create segments based on the existing customer subscriptions. Then, you can send these segments to  to target your customers with personalized offers.[!DNL People-Based Destinations]
 
-## 2.定義目標電子郵件地址的類型 {#define-target-email}
+## 2. Define the Type of Targeted Email Addresses {#define-target-email}
 
-定義實施策略的第二個步驟是決定您要鎖定的客戶電子郵件地址類型。
+The second step in defining your implementation strategy is deciding what type of customer email addresses you want to target.
 
-**A)根據已驗證的電子郵件地址鎖定受眾**。 在此案例中，您的使用者有多個帳戶與多個電子郵件地址相關聯，而您只想根據他們在您網站上即時驗證的電子郵件地址，以個人化優惠來定位他們。
+**A) Audience targeting based on your authenticated email addresses.** In this scenario, your users have multiple accounts associated with multiple email addresses, and you want to target them with personalized offers, based only on the email address that they authenticate on your website, in real time.
 
-**B)根據所有相關電子郵件地址鎖定受眾**。 在此案例中，您的使用者有多個帳戶與多個電子郵件地址相關聯，而且不論已驗證的活動為何，您都想在所有相關電子郵件地址中定位這些帳戶。
+**B)根據您所有相關電子郵件地址鎖定受眾**。 在此案例中，您的使用者有多個帳戶與多個電子郵件地址相關聯，而且不論已驗證的活動為何，您都想在所有相關電子郵件地址中定位這些帳戶。
 
 ## 3.識別您擁有的客戶ID(CRM ID)類型 {#identify-customer-id}
 
@@ -67,17 +67,17 @@ source-git-commit: a3380b9019cfc22b020aacc313eafc409486b0c5
 
 視您在Audience manager中擁有的客戶ID類型而定(請參 [閱3。 識別您擁有的客戶ID(CRM ID)類型](people-based-destinations-workflow.md#identify-customer-id)，您會發現您身處下列其中一種情形：
 
-**A)標示現有資料來源**。 此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))已是小寫雜湊電子郵件地址的案例。 在這種情況下，您需要將儲存ID的資料來源標示為資料 [!DNL PII] 來源。 如需 [資料來源設定的詳細資訊](../datasources-list-and-settings.md) ，請參閱資料來源設定。 您需要做的是，確定未選中「無法與個人識別資訊綁定」選項。
+**A)標示現有資料來源**。 此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))已是小寫雜湊電子郵件地址的案例。 在這種情況下，您需要將ID儲存在的資料來源標示為資 [!DNL PII] 料來源。 如需 [資料來源設定的詳細資訊](../datasources-list-and-settings.md) ，請參閱資料來源設定。 您需要做的是，確定未選中「無法與個人識別資訊綁定」選項。
 
-**B)建立新的資料來源**。 此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))未雜湊電子郵件地址的情形。 在這種情況下，您需要建立新的跨裝置資料來源，並將雜湊的電子郵件地址載入其中。 您可以透過兩種方式進行此作業：
+**B)建立新的資料來源**。 This option applies to the scenario where your Audience Manager customer IDs (DPUUIDs) are not hashed email addresses. [](../../reference/ids-in-aam.md)In this case, you need to create a new cross-device data source and onboard your hashed email addresses against it. 您可以透過兩種方式進行此作業：
 
-* 使用檔案式ID同步。 如需 [ID同步檔案的詳細資訊](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) ，請參閱ID同步檔案的名稱和內容需求。 使用此方法時，您可以定位資料庫中所有雜湊的電子郵件地址 [!DNL CRM] 。
-* 使用 [宣告的ID](../declared-ids.md) ，在傳入已驗證的客戶ID時，宣告雜湊的電子郵件地址。 使用此方法時，Audience manager僅針對已線上驗證之使用者的雜湊電子郵件地址。 透過Facebook定位的電子郵件地址只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID關聯的其他電子郵件地址不會即時啟用。
+* Use file-based ID synchronization. See Name and Content Requirements for ID Synchronization Files for details on what ID synchronization files should look like. [](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)When using this method, you can target all of your hashed email addresses from your  database.[!DNL CRM]
+* Use declared IDs to declare your hashed email addresses when passing in authenticated customer IDs. [](../declared-ids.md)When using this method, Audience Manager, on your behalf, only targets your hashed email addresses from users who have authenticated online. The email addresses targeted in people-based channels are only the ones in the declared ID event calls. Other email addresses associated with the customer ID are not activated in real-time.
 
-## 6.使用描述檔合併規則進行分段 {#use-profile-merge-rules}
+## 6. Use a Profile Merge Rule for Segmentation {#use-profile-merge-rules}
 
-視您的使用案例而定(請參 [閱1。 定義使用案例](people-based-destinations-workflow.md#defining-your-use-case))，有兩種方法可用於 [!DNL Profile Merge Rules] 分段。
+Depending on your use case (see 1. [定義使用案例](people-based-destinations-workflow.md#defining-your-use-case))，有兩種方法可用於 [!DNL Profile Merge Rules] 分段。
 
-**A)使用現有[!DNL Profile Merge Rules]**。 這個選項適用於第一個使用案例（根據結合的線上和離線使用者活動鎖定對象）。 在此案例中，您在Audience manager中已有現有客戶活動，且已定義至少一個用於劃分的描述檔合併規則。 在這種情況下，您不需要建立任何新 [!DNL Profile Merge Rules]。
+**A)使用現有[!DNL Profile Merge Rules]**。 This option applies to the first use case (audience targeting based on combined online and offline user activity). 在此案例中，您在Audience manager中已有現有客戶活動，而且您已定義至少一個用於劃分的描述檔合併規則。 在這種情況下，您不需要建立任何新 [!DNL Profile Merge Rules]。
 
-**B)建立新的合[!DNL All Cross-Device Profiles]並規則**。 此選項適用於第二個使用案例（觀眾鎖定完全以離線使用者活動為基礎）。 在此案例中，您會將離線客戶資料從您的 [!DNL CRM] Audience Manager帶入，並想從該資料建立區段。 為此，引入 [!DNL People-Based Destinations] 新的第四個描述檔合併規則，稱為 **[!DNL All Cross-Device Profiles]**。 這是您劃分純離線資料時需要使用的規則。
+**B) Create a new,  Merge Rule.[!DNL All Cross-Device Profiles]**&#x200B;此選項適用於第二個使用案例（觀眾鎖定完全以離線使用者活動為基礎）。 在此案例中，您會將離線客戶資料從您的 [!DNL CRM] Audience manager中匯入，並想從該資料建立區段。 為此，引入 [!DNL People-Based Destinations] 新的第四個描述檔合併規則，稱為 **[!DNL All Cross-Device Profiles]**。 這是您劃分純離線資料時需要使用的規則。
