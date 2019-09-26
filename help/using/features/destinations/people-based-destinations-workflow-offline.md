@@ -5,12 +5,15 @@ seo-title: 工作流程B —— 基於僅離線資料的個人化
 solution: Audience Manager
 title: 工作流程B —— 基於僅離線資料的個人化
 translation-type: tm+mt
-source-git-commit: d0e343e3fbaf527e9b630dc2dbc851d8f8f4c0b2
+source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ---
 
 
 # 工作流程B —— 基於僅離線資料的個人化 {#workflow-b}
+
+>[!IMPORTANT]
+>本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
 本頁包含逐步指引，說明如何從僅離線的客戶資料建立受眾細分，並將其傳送至以人為本的目標。
 
