@@ -1,24 +1,24 @@
 ---
 description: 資料夾特徵可讓您自動將位於相同資料夾和所有子資料夾中的特徵匯總至可定位的區段。
-keywords: 段大小估計器；sse
-seo-description: 資料夾特徵可讓您自動將位於相同資料夾和所有子資料夾中的特徵匯總至可定位的區段。
-seo-title: 資料夾特徵關於
+keywords: segment size estimator;sse
+seo-description: Folder traits let you automatically aggregate traits that reside within the same folder and all child folders into a targetable segment.
+seo-title: Folder Traits  About
 solution: Audience Manager
-title: 資料夾特徵關於
+title: Folder Traits  About
 uuid: e561ce8f-6c90-44a7-b034-685533f29030
 translation-type: tm+mt
-source-git-commit: 263c55e6bd2c9ad7159306fc889b048d800c59da
+source-git-commit: 9fa5a558c839da89286b1abdf77e835a92747c87
 
 ---
 
 
-# 資料夾特徵：關於 {#folder-traits-about}
+# Folder Traits: About {#folder-traits-about}
 
-[!UICONTROL Folder traits] 可讓您自動將位於相同資料夾和所有子資料夾中的特徵匯總至可定位的區段。
+[!UICONTROL Folder traits] let you automatically aggregate traits that reside within the same folder and all child folders into a targetable segment.
 
-## 使用資料夾特徵的優點 {#benefits}
+## Benefits of Using Folder Traits {#benefits}
 
-A包 [!UICONTROL folder trait] 含父資料夾及其關聯子資料夾中的所有特徵。 這可讓您自動將不同資料夾層級的使用者分段並鎖定目標。 例如，假設您有如下的資料夾結構：
+A  contains all the traits in a parent folder and its associated child folders. [!UICONTROL folder trait]This lets you automatically segment and target your users at different folder levels. For example, let's say you have a folder structure like this:
 
 `*` 電子（父）
 
@@ -34,13 +34,13 @@ A包 [!UICONTROL folder trait] 含父資料夾及其關聯子資料夾中的所�
 
 ## 資料夾特性實現——時近與頻率 {#folder-traits-realization}
 
-資料夾特徵的頻率計數是資料夾及其子資料夾中特徵的實現總和。 下圖顯示Automobile資料夾中的特徵A、B和C。 請考慮每個特徵都有下列實現：
+資料夾特徵的頻率計數是資料夾及其子資料夾中特徵的實現總和。 下圖顯示Automobile資料夾中的特徵A、B和C。 Consider that each of the traits have the following realizations:
 
 * 特徵A:5
 * 特徵B:1
 * 特徵C:1
 
-在本例中，汽車 [!DNL ]有 [!UICONTROL Folder Trait] 7個實現。
+在本例中，有 [!DNL Automobile Folder Trait] 7個實現。
 
 ![](assets/folder_traits_rollup_border.png)
 
@@ -62,6 +62,6 @@ A包 [!UICONTROL folder trait] 含父資料夾及其關聯子資料夾中的所�
 | 項目 | 說明 |
 |---|---|
 | 特徵類型 | [!UICONTROL Onboarded traits] 並 [!UICONTROL algorithmic traits] 且為頻率貢獻最多1 [!UICONTROL folder trait]個實現。 |
-| 在資料夾之間移動特徵 | 將特徵從資料夾移至另一個資料夾，將會使該特徵與第一個資料夾特徵不符，並使其符合第二個資料夾特徵 [!UICONTROL folder trait]。 這表示如果您從資料夾刪除或移動特徵，則使用資料夾特徵做為區段運算式，將不會將特徵人口族群中的使用者與區段分割。 <br> 將Adobe Analytics區段或報表套裝對應至您的Experience cloud組織時，Audience manager會自動建立新的對應唯讀區段和特徵。 您無法從Audience manager編輯或變更這些特徵的儲存位置。 不過，您對對應的Adobe Analytics區段或報表套裝執行的任何變更都會反映在Audience Manager中。 |
-| 系統變數 | [!UICONTROL Folder traits] 無法在使用參數的事件呼叫中 `d_sid` 實現。 |
-| 報告 | [!UICONTROL Folder traits] 是自動計算的特徵，不會出現在中 **[!UICONTROL Overlap Reports]**。 |
+| Moving traits between folders | Moving a trait from a folder to another will disqualify that trait from the first folder trait and qualify it for the second . [!UICONTROL folder trait]這表示如果您從資料夾刪除或移動特徵，則使用資料夾特徵做為區段運算式，將不會將特徵人口族群中的使用者與區段分割。 <br> When mapping Adobe Analytics segments or report suites to your Experience Cloud organization, Audience Manager automatically creates new, corresponding, read-only segments and traits. You cannot edit or change the storage location of these traits from Audience Manager. However, any change that you perform on your mapped Adobe Analytics segments or report suites reflects in Audience Manager. |
+| System variables | [!UICONTROL Folder traits] cannot be realized in event calls using the  parameter.`d_sid` |
+| 報告 | [!UICONTROL Folder traits] are autocalculated traits and do not appear in .**[!UICONTROL Overlap Reports]** |
