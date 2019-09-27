@@ -1,30 +1,30 @@
 ---
-description: 在「區段產生器」中，最近一次和頻率可讓您根據在設定每日間隔內發生或重複的動作來區隔訪客。
-seo-description: 在「區段產生器」中，最近一次和頻率可讓您根據在設定每日間隔內發生或重複的動作來區隔訪客。
+description: In Segment Builder, recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
+seo-description: In Segment Builder, recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
 seo-title: 時近與頻率
 solution: Audience Manager
 title: 時近與頻率
 uuid: faadd18a-bf27-4b73-995e-9809f52f5350
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: c7e8b67ccad4479487b471668462937c5be6be34
 
 ---
 
 
 # Recency and Frequency {#recency-and-frequency}
 
-在時 [!UICONTROL Segment Builder]近和頻率中，可讓您根據在設定每日間隔內發生或重複的動作來劃分訪客。
+In [!UICONTROL Segment Builder], recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
 
-Audience manager定義 [!DNL recency] 及 [!DNL frequency] 如下：
+Audience Manager defines [!DNL recency] and [!DNL frequency] as follows:
 
-* **[!UICONTROL Recency]** :使用者檢視或符合一（或多個）特徵的天數。
-* **[!UICONTROL Frequency]** :使用者檢視或符合一（或多個）特徵的比率。
+* **[!UICONTROL Recency]** : How recently a user viewed or qualified for one (or more) traits.
+* **[!UICONTROL Frequency]:** The rate at which a user viewed or qualified for one (or more) traits.
 
-[!UICONTROL Recency] 而設 [!UICONTROL Frequency] 定可協助您根據訪客對網站、區段或特定創意素材的真實（或感知）興趣程度來劃分訪客。 例如，符合最近／頻度需求較高群體的使用者，較之較少或較不常造訪的使用者，可能更感興趣網站或產品。
+[!UICONTROL Recency] and  settings help you segment visitors based on their real (or perceived) level of interest in a site, section, or particular creative. [!UICONTROL Frequency]例如，符合最近／頻度需求較高群體的使用者，較之較少或較不常造訪的使用者，可能更感興趣網站或產品。
 
 ## 時近和頻率設定的位置 {#location}
 
-在中 [!UICONTROL Segment Builder], [!UICONTROL Recency] 和設定位於 [!UICONTROL Frequency] 面板的部 [!UICONTROL Basic View][!UICONTROL Traits] 分。 按一下時鐘圖示以公開這些控制項。
+在中 [!UICONTROL Segment Builder], [!UICONTROL Recency] 和設定位於 [!UICONTROL Frequency] 面板的部 [!UICONTROL Basic View][!UICONTROL Traits] 分。 Click the clock icon to expose these controls.
 
 ![](assets/recency_frequency.png)
 
@@ -58,14 +58,14 @@ Audience manager定義 [!DNL recency] 及 [!DNL frequency] 如下：
 <table id="table_EBD621D26C8B4D03933E8C0753C892A7"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 限制或規則 </th> 
+   <th colname="col1" class="entry"> Limit or Rule </th> 
    <th colname="col2" class="entry"> 說明 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>協力廠商特徵</b> </p> </td> 
-   <td colname="col2"> <p>您無法針對包含第三方特徵的個別第三方特徵或特徵群組設定頻率規則。 時近和頻率僅適用於您自己的特徵。 </p> </td> 
+   <td colname="col2"> <p>You cannot set frequency rules on individual third-party traits or trait groups that contain third-party traits. Recency and frequency applies to your own traits only. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>時近要求</b> </p> </td> 
@@ -78,17 +78,38 @@ Audience manager定義 [!DNL recency] 及 [!DNL frequency] 如下：
  </tbody> 
 </table>
 
+## 最近一次的範例 {#recency-examples}
+
+以下是兩種最近一次如何運作的範例，視您在UI中的選擇而定：
+
+### 使用小於或等於運算子(&lt;=)
+
+![小於等於](assets/less-than-equal-to.png)
+
+在此範例中，您選取&lt;=運算子，如螢幕擷取所示。 如果使用者在過去5天內至少有3次符合這3項特徵的資格，即可符合區段資格。 以下時間軸顯示建立區段時的區段資格，日期為10月1日，而日期為10天後。
+
+![最近5天](assets/last-5-days.png)
+
+### 使用大於或等於運算子(=&gt;)
+
+![大於等於](assets/greater-than-equal-to.png)
+
+在此範例中，您選取=&gt;運算子，如螢幕擷取所示。 如果使用者在Audience manager平台上的首次資格認證到五天前的中斷時間之間，至少有三次符合這三種特性中任何一種的資格，這將使他們符合區段資格。 The timeline below shows the segment qualification at the time the segment is created, on October 1st, and ten days later.
+
+![舊版資格](assets/earlier-qualification.png)
+
+
 ## 頻率封頂範例 {#frequency-capping}
 
-頻率封頂運算式包含特徵實現數目低於所需值的所有使用者。 以下是幾個範例：
+Frequency-capping expressions include all the users whose number of trait realizations is below a desired value. Here are a few examples:
 
-* 該運 `frequency([1000T]) <= 5` 算式包含所有已實現ID為"1000"之特徵的使用者，最多5次，包括尚未實現該特徵的使用者。
-* 當您需要的時近／頻率需求少於特定次數或天數時，請使用運算子將該特徵連結至另一個特 `AND` 徵。 使用上述範例，此運算式在與其他特徵連結時會生效，如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`。
+* The expression  includes all users that have realized the trait with the ID "1000" a maximum of five times, including users who have not realized the trait.`frequency([1000T]) <= 5`
+* 當您需要的時近／頻率需求少於特定次數或天數時，請使用運算子將該特徵連結至另一個特 `AND` 徵。 Using the example above, this expression becomes valid when joined with another trait as shown here: .`frequency([1000T]) <= 5 AND isSiteVisitorTrait`
 
-* 對於廣告限頻使用案例，您可以建立類似下列的區段規則： `(frequency([1000T] <= 2D) >= 5)`。 此運算式包含在過去2天中，至少5次以ID「1000」實現該特徵的所有使用者。 將此區段傳送至廣告伺服器，並在廣告伺服器的 `NOT` 區段上設定頻率上限。 該方法在保持頻率封 [!DNL Audience Manager] 閉的相同目的的同時，實現了更高的效能。
+* For advertising frequency-capping use cases, you could create a segment rule similar to this: . `(frequency([1000T] <= 2D) >= 5)`This expression includes all users that have realized the trait with the ID "1000" in the past 2 days at least five times. Set frequency capping by sending this segment to the ad server with a  set on the segment in the ad server. `NOT`This approach achieves greater performance in  while still serving the same purpose for frequency capping.[!DNL Audience Manager]
 
 >[!MORE_LIKE_THIS]
 >
->* [區段產生器控制：特徵區段](../../features/segments/segment-builder.md#segment-builder-controls-traits)
+>* [Segment Builder Controls: Traits Section](../../features/segments/segment-builder.md#segment-builder-controls-traits)
 >* [區段運算式編輯器中使用的程式碼語法](../../features/segments/segment-code-syntax.md)
 
