@@ -10,7 +10,7 @@ source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
 ---
 
 
-#  演算法模型：特徵排除 {#algorithmic-models-trait-exclusion}
+# 演算法模型：特徵排除 {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] 在模型工作流程中提供額外的控制項，讓您根據您的領域專業知識和法規要求，將必要的防護欄加入模型。 使用選 [!UICONTROL Exclusions] 項，在從一或多個資料來源建立模型時，選取要忽略哪些特徵。
 
