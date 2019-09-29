@@ -142,7 +142,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>後續資料的使用者ID。 這是您在GDPR資料存取要求中提供的ID，或連結至您所提供之其中一個宣告ID的ID。 ID類型在「Audience Manager識別碼」區 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 段中說明</a> 。 </p> </td> 
+   <td colname="col2"> <p>The user ID for the data that follows. 這是您在GDPR資料存取要求中提供的ID，或連結至您所提供之其中一個宣告ID的ID。 The ID types are described in the  Audience Manager Identifiers section.<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"></a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> namespace</code> </p> </td> 
@@ -150,7 +150,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>namespace/資料來源的 ID。請參 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 閱Audience manager識別碼(ID)</a> ，以取得所有接受的值。 </p> </td> 
+   <td colname="col2"> <p>namespace/資料來源的 ID。See <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers (IDs)</a> for all the accepted values. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 整合程式碼 </code> </p> </td> 
@@ -158,34 +158,34 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 資料提供者名稱 </code> </p> </td> 
-   <td colname="col2"> <p>資料來源的擁有者名稱。 
+   <td colname="col2"> <p>The name of the owner of the data source. 
      <ul id="ul_5CEAF23C28154662AFC443D3494107D3"> 
-      <li id="li_EC2DA09F618D4225B655ADF455C0D654">對於第一方資料，這是客戶自己的公司名稱。 </li> 
-      <li id="li_C4A5E1BD2A994109BBCD839DDC4B2E64">對於第二方資料，這是合作夥伴公司的名稱。 </li> 
-      <li id="li_1AA1246B7E40443CB18108512FBB8B19">對於第三方資料，這是資料合作夥伴的名稱。 </li> 
+      <li id="li_EC2DA09F618D4225B655ADF455C0D654">For first party data, this is the customer's own company name. </li> 
+      <li id="li_C4A5E1BD2A994109BBCD839DDC4B2E64">For second party data, this is the name of the partner company. </li> 
+      <li id="li_1AA1246B7E40443CB18108512FBB8B19">For third party data, this is the name of the data partner. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 類型 </code> </p> </td> 
-   <td colname="col2"> <p>您要求 GDPR 資料存取權限的 ID 類型。接受的類型會列在「Audience Manager識 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 別碼」區段中</a> 。 </p> </td> 
+   <td colname="col2"> <p>您要求 GDPR 資料存取權限的 ID 類型。Accepted types are listed in the  Audience Manager Identifiers section.<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"></a> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 警告</code> </p> </td> 
-   <td colname="col2"> <p>警告會傳回與資料存取要求相關的詳細資訊。 </p> </td> 
+   <td colname="col1"> <p> <code> warnings</code> </p> </td> 
+   <td colname="col2"> <p>Warnings return further information related to the data access request. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 標題 </code> </p> </td> 
-   <td colname="col2"> <p>有關警告的簡短資訊。 </p> <p>您可能收到的兩個警告是： </p> <p> 
+   <td colname="col2"> <p>Brief information about the warning. </p> <p>The two warnings you may receive are: </p> <p> 
      <ul id="ul_34019A1529594DC7B2566913937EAF0C"> 
-      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">裝置資料 </li> 
-      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">未完成請求 </li> 
+      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">Device Data </li> 
+      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">Incomplete request </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 說明 </code> </p> </td> 
    <td colname="col2"> <p>您收到警告的更詳細說明： </p> <p> 
      <ul id="ul_78E03ABA52674E07A48835FDD3431FF8"> 
-      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">裝置資料——包含此裝置所有使用者的資料 </li> 
+      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">Device Data - Contains data from all users of this device </li> 
       <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">請求不完整——未完成Audience manager資料的擷取。 有些資訊可能遺失。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -215,7 +215,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
    <td colname="col2"> <p>用幾個字來說明特徵的目的或功能。 這是選填欄位。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 資料匯出控制</code> </p> </td> 
+   <td colname="col1"> <p> <code> data export controls</code> </p> </td> 
    <td colname="col2"> <p>套用 <a href="../../features/data-export-controls.md"> 至此特徵資料來源的</a> 「資料匯出控制」。 </p> </td> 
   </tr> 
   <tr> 
@@ -244,7 +244,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
    <td colname="col2"> <p>請用幾個字來說明此區段。 這是選填欄位。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 資料匯出控制</code> </p> </td> 
+   <td colname="col1"> <p> <code> data export controls</code> </p> </td> 
    <td colname="col2"> <p>套 <a href="../../features/data-export-controls.md"> 用至此區段資料來源</a> ，資料匯出控制項。 </p> </td> 
   </tr> 
   <tr> 
@@ -257,34 +257,34 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 最後實現</code> </p> </td> 
-   <td colname="col2"> <p>資料主體上次符合此區段資格的確切時間。 日期格式為YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> last realization</code> </p> </td> 
+   <td colname="col2"> <p>The exact time that the Data Subject last qualified for this segment. The date format is YYYY-MM-DD. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 活動</code> </p> </td> 
-   <td colname="col2"> <p>指出資料主體目前是否符合此區段的資格。 Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
+   <td colname="col2"> <p>Indicates whether the Data Subject is currently qualified for this segment. Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 連結 </code> </p> </td> 
-   <td colname="col2"> <p>此ID已連結至的其他ID。 在以下位置返回資訊： </p> <p> 
+   <td colname="col2"> <p>Additional ID that this ID has been linked to. Information is returned on: </p> <p> 
      <ul id="ul_679F372A83164CC8B6BFE5A833347B9E"> 
       <li id="li_BCBF4F4C6C4049519BDE9186EE84868A">ID </li> 
-      <li id="li_46AC081C993041E6BCE70119FE04BE7F">namespace（資料來源） </li> 
+      <li id="li_46AC081C993041E6BCE70119FE04BE7F">namespace (data source) </li> 
       <li id="li_E9B906C8947E484B94FBCAEB03BDF4E2">namespace ID </li> 
       <li id="li_FB2A2F28290B4BA7844A558C01F8D9D4">整合程式碼 </li> 
       <li id="li_2569982810B64F8AABD78F5AC3717971">資料提供者名稱 </li> 
       <li id="li_2A3C282279064373BF7E4619A63454CF">ID type </li> 
-     </ul> </p> <p>此表的前幾行中介紹了這些欄位。 </p> </td> 
+     </ul> </p> <p>All these fields are described in the first rows of this table. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 連結日期時間</code> </p> </td> 
-   <td colname="col2"> <p>ID同步事件建立ID間連結的確切時間。 日期格式為YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> linking datetime</code> </p> </td> 
+   <td colname="col2"> <p>ID同步事件建立ID間連結的確切時間。 The date format is YYYY-MM-DD. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 裝置中繼資料 </code> </p> </td> 
-   <td colname="col2"> <p>裝置相關資訊。 這些資訊包括下列欄位。 請注意，並非所有裝置類型都會傳回所有欄位。 </p> <p> 
+   <td colname="col1"> <p> <code> device metadata </code> </p> </td> 
+   <td colname="col2"> <p>Information about the device. This information includes the fields below. Note that not all fields are returned for all device types. </p> <p> 
      <ul id="ul_F0031D50DF074634A428DBC73F958159"> 
-      <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>硬體資訊 </p> </li> 
+      <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>Hardware information </p> </li> 
       <li id="li_99A049D585A9440EA79F57A3B03181AB"> <p>裝置製造商 </p> </li> 
       <li id="li_290F92FC3F6449EFBC4E7870B62AFE8B"> <p>裝置的行銷名稱 </p> </li> 
       <li id="li_FC37954CE133471398352240A8B0478F"> <p>裝置型號 </p> </li> 
@@ -325,7 +325,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 **使用者ID**:aam_uuid
 
-**定義**:Adobe Audience Manager唯一使用者ID
+**Definition: Adobe Audience Manager Unique User ID**
 
 **命名空間ID**:0
 
@@ -383,7 +383,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### Adobe Experience Cloud ID
 
-**使用者ID**:mid
+**User ID: mid**
 
 **定義**:Adobe Experience Cloud ID，先前稱為訪客ID或Marketing Cloud ID
 
@@ -443,7 +443,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 ### Customer ID
 
-**使用者ID**:cid
+**User ID: cid**
 
 **定義**:客戶ID，例如您為匿名網站訪客設定的Cookie，或離線系統的CRM ID，或雜湊的使用者名稱
 
