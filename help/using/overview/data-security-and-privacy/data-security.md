@@ -1,17 +1,17 @@
 ---
-description: Audience Manager takes data security and privacy very seriously. 我們致力於確保系統安全，並保護您寶貴的資料。
-seo-description: Audience manager非常重視資料安全性和隱私權。 我們致力於確保系統安全，並保護您寶貴的資料。
-seo-title: 資料安全性
+description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
+seo-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
+seo-title: Data Security
 solution: Audience Manager
-title: 資料安全性
+title: Data Security
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 translation-type: tm+mt
-source-git-commit: 9e1abb305c66a4adf6a42a7873144222491692f9
+source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
 
 ---
 
 
-# 資料安全性 {#data-security}
+# Data Security {#data-security}
 
 Audience manager非常重視資料安全性和隱私權。 我們致力於確保系統安全，並保護您寶貴的資料。
 
@@ -23,42 +23,42 @@ Audience manager的安全性實務包括外部和內部稽核、活動記錄、�
 |---|---|
 | **資訊安全** | 企業級驗證、加密和資料儲存實務 |
 | **資料洩漏／透明度** | 對構成或促成資料洩漏的現場活動進行深入、可操作的洞察 |
-| **流程／政策增強功能** | 客戶，透過使用隱私權與資料安全的業界最佳實務 |
+| **流程／政策增強功能** | Clients, by working with industry best practices for privacy and data security |
 
-## 系統、培訓與存取 {#systems-training-access}
+## Systems, Training, and Access {#systems-training-access}
 
-有助於確保系統和資料安全的流程。
+Processes that help keep our system and your data secure.
 
-**** 外部安全性驗證： Audience manager會每年和每季測試安全性。
+**** External Security Validation:  Audience Manager tests security on an annual and quarterly basis.
 
-* 每年：Audience manager每年會接受獨立第三方公司的全面普及率測試。 此測試旨在識別應用程式中的安全性弱點。 這些測試包括掃描跨網站指令碼、插入SQL、表單參數控制以及其他應用程式層級的弱點。
-* Quarterly: Once each quarter, internal teams check for security vulnerabilities. 這些測試包括網路掃描開啟埠和服務漏洞。
+* Yearly: Once a year, Audience Manager undergoes a full penetration test conducted by an independent third-party company. The test is designed to identify security vulnerabilities in the application. The tests include scanning for cross-site scripting, SQL injections, form parameter manipulation, and other application-level vulnerabilities.
+* 每季：每季一次，內部團隊會檢查安全性弱點。 這些測試包括網路掃描開啟埠和服務漏洞。
 
-**** Systems Security:  To help keep data safe and private, Audience Manager:
+**** 系統安全性： 為協助確保資料安全且私密，Audience Manager:
 
-* Blocks requests from unauthorized IP addresses.
-* Protects data behind firewalls, VPNs, and with Virtual Private Cloud storage.
-* 使用觸發式稽核記錄來追蹤客戶和控制資訊資料庫的變更。 These logs track all changes at the database level, including the user ID and IP address from which changes are made.
+* 阻止來自未授權IP位址的請求。
+* 保護防火牆、 VPN和虛擬專用雲儲存後的資料。
+* 使用觸發式稽核記錄來追蹤客戶和控制資訊資料庫的變更。 這些記錄檔會追蹤資料庫層級的所有變更，包括進行變更的使用者ID和IP位址。
 
-**Security Assets:**  Audience Manager has a dedicated network operations team that monitors firewalls and intrusion-detection devices. 只有重要人員才能存取我們的安全技術和資料。
+**** 安全資產： Audience manager有專屬的網路營運團隊，負責監控防火牆和入侵偵測裝置。 只有重要人員才能存取我們的安全技術和資料。
 
-**** 安全性訓練： 在內部，我們對安全性的承諾延伸到負責我們產品的開發人員。 Adobe provides formal training to developers on how to build secure applications and services.
+**** 安全性訓練： 在內部，我們對安全性的承諾延伸到負責我們產品的開發人員。 Adobe為開發人員提供如何建立安全應用程式與服務的正式訓練。
 
-**** Secure Access:  Audience Manager requires strong passwords to log on to the system. See password requirements.[](../../reference/password-requirements.md)
+**** 安全訪問： Audience manager需要強式密碼才能登入系統。 請參 [閱密碼要求](../../reference/password-requirements.md)。
 
-## Privacy and Personally Identifiable Information (PII) {#pii}
+## 隱私權與個人識別資訊(PII) {#pii}
 
-Processes that help keep personal information safe. 如需其他隱私權資訊，請參 [閱Adobe隱私權中心](https://www.adobe.com/privacy/advertising-services.html)。
+有助於確保個人資訊安全的流程。 如需其他隱私權資訊，請參 [閱Adobe隱私權中心](https://www.adobe.com/privacy/advertising-services.html)。
 
-**** PII資料： Audience manager合約禁止客戶和資料合作夥伴將PII資訊傳送至我們的系統。 Additionally, the Unique User ID (UUID) does not contain or use PII data as part of the ID-generation algorithm.
+**** PII Data:  Audience Manager contractually prohibits customers and data partners from sending PII information into our system. Additionally, the Unique User ID (UUID) does not contain or use PII data as part of the ID-generation algorithm.
 
-**** IP Addresses:  Audience Manager does collect IP addresses. IP位址用於資料處理和記錄匯整程式。 地理／位置查詢和定位也需要這些功能。 此外，保留的記錄檔中的所有IP位址都會在90天內模糊化。
+**** IP Addresses:  Audience Manager does collect IP addresses. IP addresses are used in data-processing and log-aggregation processes. They are also required for geographic/location look-ups and targeting. Additionally, all IP addresses within retained log files are obfuscated within 90 days.
 
-## 資料分區 {#data-partitioning}
+## Data Partitioning {#data-partitioning}
 
-有助於保護個別客戶所擁有資料的程式。
+Processes that help protect data owned by individual clients.
 
-**** 特徵資料分區： 您的資料（特徵、ID等）由客戶機分區。 這有助於防止不同客戶之間意外洩露資訊。 例如，Cookie中的特徵資料會依客戶劃分，並儲存在用戶端特定的子網域中。 其他Audience manager用戶端無法讀取或意外使用。 此外，儲存在中的特徵資料 [!UICONTROL Profile Cache Servers (PCS)] 也由客戶劃分。 如此可避免其他用戶端在事件呼叫或其他要求中意外使用您的資料。
+**** Trait Data Partitioning:  Your data (traits, IDs, etc.) is partitioned by client. This helps prevent accidental information exposure between different clients. For example, trait data in cookies is partitioned by customer and stored in a client-specific sub-domain. 其他Audience manager用戶端無法讀取或意外使用。 此外，儲存在中的特徵資料 [!UICONTROL Profile Cache Servers (PCS)] 也由客戶劃分。 如此可避免其他用戶端在事件呼叫或其他要求中意外使用您的資料。
 
 **** 報告中的資料分區： 客戶端ID是所有報表表格中識別索引鍵的一部分，報表查詢會依ID篩選。 這有助於防止您的資料出現在其他Audience manager客戶的報表中。
 
@@ -72,20 +72,22 @@ Adobe Audience manager支援兩種將S2S已登入的資料檔案傳輸至我們�
 
 **** Amazon Web Services S3（透過HTTPS）:對於S3傳送選項，建議所有客戶設定其S3用戶端，使用HTTPS加密方法進行檔案傳送（這不是預設值，因此必須明確設定）。 s3cmd命令列工具以及各種主要程式設計語言可用的S3程式庫都支援HTTPS選項。 啟用此HTTPS選項後，客戶的資料會在飛往我們的系統時進行加密。 我們為每個客戶建立個別的S3儲存貯體子目錄，只能由該客戶的認證和內部系統使用者的認證存取。
 
-To add PGP encryption to your data files, see File PGP Encryption for Inbound Data Types.[](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
+要將PGP加密添加到資料檔案，請參 [閱File PGP Encryption for Inbound Data Types](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。
 
 ## 通過逸出保護資料 {#escaping-data}
 
-Note that  does not escape outgoing data to secure it against possible cross-site scripting (XSS), etc. [!DNL Audience Manager]It is the responsibility of the client to escape incoming data.
+請注意， [!DNL Audience Manager] 不要逸出傳出資料，以防其受到跨網站指令碼(XSS)等攻擊。 客戶有責任逸出傳入的資料。
 
 ## HTTP Strict-Transport-Security {#hsts}
 
-[!DNL HTTP Strict-Transport-Security (HSTS)] is a web security policy mechanism that helps protect against cookie hijacking and protocol downgrade attacks by not permitting  traffic and transparently upgrading all  traffic to .[!DNL HTTP][!DNL HTTP][!DNL HTTPS]
+[!DNL HTTP Strict-Transport-Security (HSTS)] 是業界的Web安全機制，可協助防範Cookie劫持和通訊協定降級攻擊。
 
-This policy improves data security between clients and Adobe Edge servers.
+該策略指示Web瀏覽器，一旦對給 [!DNL HTTPS] 定域進行安全調用，則不應允許該域進行後續的不安全調用([!DNL HTTP])。 這可以防止中間人攻擊，攻擊者可能會嘗試將呼叫降級為 [!DNL HTTPS] 無保護呼 [!DNL HTTP] 叫。」
+
+此政策可改善用戶端與Adobe [Edge伺服器間的資料安](../../reference/system-components/components-edge.md) 全。
 
 ### 範例 {#hsts-example}
 
-When trying to access ,  will automatically upgrade the request to  , in case the browser doesn’t automatically request the  domain.`http://bank.demdex.com`[!DNL HSTS]`https://bank.demdex.com`[!DNL HTTPS]
+當嘗試存取時， `http://bank.demdex.com`會 [!DNL HSTS] 自動將要求升級至 `https://bank.demdex.com`，以防瀏覽器無法自動要求網 [!DNL HTTPS] 域。
 
 See HTTP Strict Transport Security - Wikipedia for more information about HSTS.[](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
