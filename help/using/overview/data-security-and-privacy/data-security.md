@@ -1,9 +1,9 @@
 ---
-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
-seo-description: Audience Manager takes data security and privacy very seriously. We work to keep our systems secure and protect your valuable data.
-seo-title: Data Security
+description: Audience manager非常重視資料安全性和隱私權。 我們致力於確保系統安全，並保護您寶貴的資料。
+seo-description: Audience manager非常重視資料安全性和隱私權。 我們致力於確保系統安全，並保護您寶貴的資料。
+seo-title: 資料安全性
 solution: Audience Manager
-title: Data Security
+title: 資料安全性
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
 translation-type: tm+mt
 source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
@@ -11,7 +11,7 @@ source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
 ---
 
 
-# Data Security {#data-security}
+# 資料安全性 {#data-security}
 
 Audience manager非常重視資料安全性和隱私權。 我們致力於確保系統安全，並保護您寶貴的資料。
 
@@ -23,15 +23,15 @@ Audience manager的安全性實務包括外部和內部稽核、活動記錄、�
 |---|---|
 | **資訊安全** | 企業級驗證、加密和資料儲存實務 |
 | **資料洩漏／透明度** | 對構成或促成資料洩漏的現場活動進行深入、可操作的洞察 |
-| **流程／政策增強功能** | Clients, by working with industry best practices for privacy and data security |
+| **流程／政策增強功能** | 客戶，透過使用隱私權與資料安全的業界最佳實務 |
 
-## Systems, Training, and Access {#systems-training-access}
+## 系統、培訓與存取 {#systems-training-access}
 
-Processes that help keep our system and your data secure.
+有助於確保系統和資料安全的流程。
 
-**** External Security Validation:  Audience Manager tests security on an annual and quarterly basis.
+**** 外部安全性驗證： Audience manager會每年和每季測試安全性。
 
-* Yearly: Once a year, Audience Manager undergoes a full penetration test conducted by an independent third-party company. The test is designed to identify security vulnerabilities in the application. The tests include scanning for cross-site scripting, SQL injections, form parameter manipulation, and other application-level vulnerabilities.
+* 每年：Audience manager每年會接受獨立第三方公司的全面普及率測試。 此測試旨在識別應用程式中的安全性弱點。 這些測試包括掃描跨網站指令碼、插入SQL、表單參數控制以及其他應用程式層級的弱點。
 * 每季：每季一次，內部團隊會檢查安全性弱點。 這些測試包括網路掃描開啟埠和服務漏洞。
 
 **** 系統安全性： 為協助確保資料安全且私密，Audience Manager:
@@ -50,15 +50,15 @@ Processes that help keep our system and your data secure.
 
 有助於確保個人資訊安全的流程。 如需其他隱私權資訊，請參 [閱Adobe隱私權中心](https://www.adobe.com/privacy/advertising-services.html)。
 
-**** PII Data:  Audience Manager contractually prohibits customers and data partners from sending PII information into our system. Additionally, the Unique User ID (UUID) does not contain or use PII data as part of the ID-generation algorithm.
+**** PII資料： Audience manager合約禁止客戶和資料合作夥伴將PII資訊傳送至我們的系統。 此外，唯一使用者ID(UUID)不包含或使用PII資料做為ID產生演算法的一部分。
 
-**** IP Addresses:  Audience Manager does collect IP addresses. IP addresses are used in data-processing and log-aggregation processes. They are also required for geographic/location look-ups and targeting. Additionally, all IP addresses within retained log files are obfuscated within 90 days.
+**** IP位址： Audience manager確實會收集IP位址。 IP位址用於資料處理和記錄匯整程式。 地理／位置查詢和定位也需要這些功能。 此外，保留的記錄檔中的所有IP位址都會在90天內模糊化。
 
-## Data Partitioning {#data-partitioning}
+## 資料分區 {#data-partitioning}
 
-Processes that help protect data owned by individual clients.
+有助於保護個別客戶所擁有資料的程式。
 
-**** Trait Data Partitioning:  Your data (traits, IDs, etc.) is partitioned by client. This helps prevent accidental information exposure between different clients. For example, trait data in cookies is partitioned by customer and stored in a client-specific sub-domain. 其他Audience manager用戶端無法讀取或意外使用。 此外，儲存在中的特徵資料 [!UICONTROL Profile Cache Servers (PCS)] 也由客戶劃分。 如此可避免其他用戶端在事件呼叫或其他要求中意外使用您的資料。
+**** 特徵資料分區： 您的資料（特徵、ID等）由客戶機分區。 這有助於防止不同客戶之間意外洩露資訊。 例如，Cookie中的特徵資料會依客戶劃分，並儲存在用戶端特定的子網域中。 其他Audience manager用戶端無法讀取或意外使用。 此外，儲存在中的特徵資料 [!UICONTROL Profile Cache Servers (PCS)] 也由客戶劃分。 如此可避免其他用戶端在事件呼叫或其他要求中意外使用您的資料。
 
 **** 報告中的資料分區： 客戶端ID是所有報表表格中識別索引鍵的一部分，報表查詢會依ID篩選。 這有助於防止您的資料出現在其他Audience manager客戶的報表中。
 
@@ -90,4 +90,4 @@ Adobe Audience manager支援兩種將S2S已登入的資料檔案傳輸至我們�
 
 當嘗試存取時， `http://bank.demdex.com`會 [!DNL HSTS] 自動將要求升級至 `https://bank.demdex.com`，以防瀏覽器無法自動要求網 [!DNL HTTPS] 域。
 
-See HTTP Strict Transport Security - Wikipedia for more information about HSTS.[](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
+如需 [有關HSTS的詳細資訊，請參閱HTTP嚴格傳輸安全性-](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) Wikipedia。
