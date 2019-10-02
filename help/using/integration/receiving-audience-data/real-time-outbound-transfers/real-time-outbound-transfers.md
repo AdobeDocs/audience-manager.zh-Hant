@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 即時出站資料傳輸
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
 translation-type: tm+mt
-source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
+source-git-commit: 4e84682dea46f5b6c76464c66199f7a468bec334
 
 ---
 
@@ -31,19 +31,19 @@ source-git-commit: b76e905ec890dbe8270177d142dddb351438b039
 
 ## 批轉移
 
-即時傳輸和批次傳輸都會發送到相同的端點，並使用相同的消息格式。 啟用批次傳送後，目標平台會在傳送批次訊息時看到訊息量的尖峰。 許多透過即時訊息傳送的區段資格會在批次訊息中重複。 Batch transfers will include only the segment qualifications (or un-qualifications) that have changed since the last batch was delivered.
+即時傳輸和批次傳輸都會發送到相同的端點，並使用相同的消息格式。 啟用批次傳送後，目標平台會在傳送批次訊息時看到訊息量的尖峰。 許多透過即時訊息傳送的區段資格會在批次訊息中重複。 批轉移將僅包括自上次批交付後更改的段資格（或未資格）。
 
-## Rate Limits
+## 比率限制
 
-There are no rate limits set on the throughput of delievered messages. Setting rate limits could lead to data loss.
+對發送的消息的吞吐量沒有設定速率限制。 設定速率限制可能導致資料遺失。
 
-## Required Responses
+## 必要回應
 
-By default, the recipient server must return the  code to indicate successful receipt. `200 OK`Other codes will be interpreted as failures. This response is expected within 3000 milliseconds. In response to a failure,  will make one retry attempt only.[!DNL Audience Manager]
+依預設，收件者伺服器必須傳回程式碼， `200 OK` 以指出成功收件。 其他代碼將被解釋為失敗。 此回應預期在3000毫秒內完成。 響應失敗，將只 [!DNL Audience Manager] 進行一次重試。
 
 ## 參數
 
-下表定義傳回資料檔案中的 [!DNL JSON] 元素。
+The following table defines the elements in the [!DNL JSON] data file that you send to the destination.
 
 <table id="table_68475F9D01ED4A44B5909234114AEDE2"> 
  <thead> 
@@ -62,22 +62,22 @@ By default, the recipient server must return the  code to indicate successful re
   <tr valign="top"> 
    <td colname="col1"><code><i>User_DPID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>User.DataPartner_UUID屬性中指示消息中包含的設備ID類型的ID。 </p> 
+   <td colname="col3"> <p>An ID that indicates the type of device IDs contained within the message, in the User.DataPartner_UUID property. </p> 
     <ul id="ul_159306B0CF304DE0B9A9836D41263E70"> 
-     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GAID):二零九一 <code> 四年</code> </li> 
-     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA):二零九 <code> 一五年</code> </li>
-     <li>網頁/Cookie ID:因目的地平台而異</li>
+     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android IDs (GAID):  20914<code></code> </li> 
+     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS IDs (IDFA):  20915<code></code> </li>
+     <li>Web/Cookie IDs: varies by destination platform</li>
     </ul> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Client_ID</i></code> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>代表目標平台中的目標帳戶。 此ID源自目標平台。</p> </td> 
+   <td colname="col3"> <p>Represents the target account in the destination platform. This ID originates from the destination platform.</p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>AAM_Destination_ID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>Audience Manager「目標」物件的ID。 This ID originates from Audience Manager.</p> </td> 
+   <td colname="col3"> <p>The ID of the Audience Manager “destination” object. This ID originates from Audience Manager.</p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User_count</i></code> </td> 
@@ -92,7 +92,7 @@ By default, the recipient server must return the  code to indicate successful re
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>The  Audience Manager UUID.<span class="keyword"></span> </p> </td> 
+   <td colname="col3"> <p>Audience Manager <span class="keyword"></span> UUID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -112,12 +112,12 @@ By default, the recipient server must return the  code to indicate successful re
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.Segment_ID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>區段的識別碼。 在大多數情況下，這是Audience manager產生的區段ID（整數）。 In some cases, if the destination platform allows, customers can define the segment identifier in the Audience Manager UI (open text field), which would then reflect in this property. </p> </td> 
+   <td colname="col3"> <p>區段的識別碼。 在大多數情況下，這是Audience manager產生的區段ID（整數）。 在某些情況下，如果目標平台允許，客戶可以在Audience Manager UI（開啟文字欄位）中定義區段識別碼，然後會反映在此屬性中。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.Status</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>Defines the status of a user in the segment. Accepts the following values: </p> 
+   <td colname="col3"> <p>定義群體中使用者的狀態。 接受下列值： </p> 
     <ul id="ul_42C4625E9543494586CF6D851A94E048"> 
      <li id="li_6F13809ECD78403FB3BDA626403E4B57"><code> 1</code>:作用中（預設） </li> 
      <li id="li_10952C8DF7AF4593805FA29028257E38"><code> 0</code>:非活動中、選擇退出或未分段。 </li> 
@@ -132,18 +132,18 @@ By default, the recipient server must return the  code to indicate successful re
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 
    <td colname="col2"> <p>DateTime </p> </td> 
-   <td colname="col3"> <p>使用者區段資格最近驗證的時間。</p> </td> 
+   <td colname="col3"> <p>The time when the user-segment qualification was most recently verified.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 安全性
 
-您可以使用私密金鑰簽署 [HTTP請求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) ，或透過 [!DNL Audience Manager][](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md) OAuth 2.0通訊協定進行驗證，以確保即時傳出資料傳輸程式的安全。
+You can secure your real-time outbound data transfer process by signing HTTP requests using private keys or by having  authenticate through the OAuth 2.0 protocol.[](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)[!DNL Audience Manager][](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
 
 ## 請求
 
-即時請求看起來可類似下列：
+A real-time request can look similar to the following:
 
 ```js
 {
