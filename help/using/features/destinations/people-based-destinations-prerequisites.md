@@ -1,6 +1,6 @@
 ---
-description: 'Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.  '
-seo-description: 'Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.  '
+description: '請閱讀以下內容，以瞭解您在註冊人員型目標之前需要滿足的客戶需求。  '
+seo-description: '請閱讀以下內容，以瞭解您在註冊人員型目標之前需要滿足的客戶需求。  '
 seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: Prerequisites and Considerations
@@ -13,18 +13,18 @@ source-git-commit: ad9c077f538759e195a83d47e0ef36ccffa25c7e
 # 先決條件和注意事項 {#prerequisites-considerations}
 
 >[!IMPORTANT]
->本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
+>本文包含旨在引導您完成此功能設定與使用的產品檔案。 Nothing contained herein is legal advice. Please consult your own legal counsel for legal guidance.
 
-請閱讀以下內容，以瞭解您在註冊前必須符合的客戶需求概觀 [!DNL People-Based Destinations]。
+Read below for an overview of customer requirements that you need to meet before signing up for .[!DNL People-Based Destinations]
 
 >[!IMPORTANT]
-> 在進入實施階段之前，請仔細閱讀本文章。
+> Read through this article carefully before moving on to the implementation phase.
 
-## 註冊以人為本的目的地 {#signing-up}
+## Signing up for People-Based Destinations {#signing-up}
 
-[!DNL People-Based Destinations] 是一種進階功能，可讓您在以人為本的環境中啟用您的第一方受眾細分，透過社交網路或電子郵件行銷鎖定您的受眾，借此增強您的Audience Manager體驗。
+[!DNL People-Based Destinations] is a premium capability that enhances your Audience Manager experience by allowing you to activate your first-party audience segments in people-based environments, by targeting your audience with customized offers on social networks or through email marketing.
 
-請連絡您的Adobe代表，以利用這項優質功能。
+Please contact your Adobe representative to take advantage of this premium feature.
 
 ## 特定合作夥伴的先決條件 {#partner-prerequisites}
 
@@ -32,11 +32,11 @@ source-git-commit: ad9c077f538759e195a83d47e0ef36ccffa25c7e
 
 在您可以用 [!DNL People-Based Destinations] 來傳送第一方對象區段至之 [!DNL Facebook]前，請確定您符合下列需求：
 
-1. 您 [!DNL Facebook] 的使用者帳戶必須為您 **** 計畫使用的廣告帳戶啟用「管理促銷活動」權限。
+1. Your  user account must have the Manage campaigns permission enabled for the Ad account that you plan to use.[!DNL Facebook]****
 1. 將 **Adobe Experience cloud商業帳戶新增為廣告合作夥伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 如需詳 [細資訊，請參閱將合作夥伴新增至您的業務經理](https://www.facebook.com/business/help/708679622611131) 。
    >[!IMPORTANT]
-   > 設定Adobe Experience cloud的權限時，您必須啟用「管理促銷 **活動** 」權限。 這是整合的必 [!DNL People-Based Destinations] 要項。
-1. 閱讀並簽署 [!DNL Facebook Custom Audiences] 服務條款。 若要這麼做，請前 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`往您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
+   > When configuring the permissions for Adobe Experience Cloud, you must enable the Manage campaigns permission. ****&#x200B;這是整合的必 [!DNL People-Based Destinations] 要項。
+1. Read and sign the [!DNL Facebook Custom Audiences] Terms of Service. 若要這麼做，請前 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`往您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
 
 ## 資料上線 {#data-onboarding}
 
@@ -50,38 +50,38 @@ source-git-commit: ad9c077f538759e195a83d47e0ef36ccffa25c7e
 
 ## 資料散列與加密 {#data-hashing-encryption}
 
-加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 Encrypting data in the context of Audience Manager poses serious risks, since any encrypted form of personally identifiable information can also be decrypted. 與加密相比，加密 [!DNL People-Based Destinations] 的設計是改用雜湊資料。
+加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 在Audience manager中加密資料會帶來嚴重風險，因為任何加密的個人識別資訊形式都可以解密。 與加密相比，加密 [!DNL People-Based Destinations] 的設計是改用雜湊資料。
 
-Hashing is a one-way function that scrambles the input to produce a unique result. By using proper hashing algorithms, like , there is no way to reverse the hashing function and reveal the unscrambled information. [!DNL SHA256]The email addresses that you will onboard to Audience Manager must be hashed with the  algorithm. [!DNL SHA256]This way, you can ensure that no unhashed email addresses reach Audience Manager.
+雜湊是單向函式，可對輸入進行雜湊以產生獨特的結果。 通過使用適當的散列算法， [!DNL SHA256]例如，無法對散列函式進行反向操作並揭示未置亂的資訊。 您要登入Audience manager的電子郵件地址必須使用演算法雜湊 [!DNL SHA256] 處理。 如此，您就可以確保沒有未雜湊的電子郵件地址可送達Audience Manager。
 
-## Hashing Requirements {#hashing-requirements}
+## 雜湊要求 {#hashing-requirements}
 
-When hashing the email addresses, make sure to comply with the following requirements:
+散列電子郵件地址時，請務必符合下列要求：
 
-* Trim all leading and trailing spaces from the email string; example: `johndoe@example.com`, not `<space>johndoe@example.com<space>`;
-* When hashing the email strings, make sure to hash the lowercase string;
+* 從電子郵件字串中修剪所有前導和尾隨空格；範例： `johndoe@example.com`不是 `<space>johndoe@example.com<space>`;
+* 在對電子郵件字串進行散列時，請務必對小寫字串進行散列；
    * 範例： `example@email.com`不是 `EXAMPLE@EMAIL.COM`;
 * Make sure the hashed string is all lowercase
-   * 範例： , not ;`55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149``55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`
+   * 範例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`不是 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
 * Do not salt the string.
 
-Adobe Experience Cloud gives you the option to hash customer IDs through the Experience Cloud ID Service. See SHA256 Hashing Support for setCustomerIDs for detailed information on how to use ECID to hash customer IDs.[](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html)
+Adobe Experience cloud可讓您選擇透過Experience Cloud ID服務散列客戶ID。 如需如 [何使用ECID來雜湊客戶ID的詳細資訊，請參閱SHA256 Hashing Support for setCustomerIDs](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
 
 ## Obtaining User Permission {#obtaining-user-permission}
 
-由於 [!DNL People-Based Destinations] 協助您在以人為本的通道中啟用第一方受眾資料，因此您有責任告知客戶並取得客戶如何將其資料用於廣告或其他目的的必要同意。
+Since  helps you activate first-party audience data in people-based channels, it is your responsibility to inform and obtain any necessary consents from your customers of how you will use their data for advertising or other purposes.[!DNL People-Based Destinations]
 
-在註冊之前，請 [!DNL People-Based Destinations]務必先取得客戶的同意，再將其資訊用於廣告用途。
+Before you sign up for , make sure to obtain your customers' consent before using their information for advertising purposes.[!DNL People-Based Destinations]
 
-如果您的客戶想要退出廣告宣傳，請參閱退出管理 [](../../overview/data-security-and-privacy/opt-out-management.md) ，以取得如何阻止Audience manager進一步收集資料的詳細資訊。
+In case your customers wish to opt-out of advertising campaigns, see Opt-out Management for details on how to stop Audience Manager from collecting data any further.[](../../overview/data-security-and-privacy/opt-out-management.md)
 
-## 強制執行第一方資料啟動 {#enforcing-first-party-activation}
+## Enforcing First-Party Data Activation {#enforcing-first-party-activation}
 
-使用時， [!DNL People-Based Destinations]您只能使用第一方資料，在以人為本的通道中啟用受眾細分。 您無法在以人員為主的通道中使用任何第二方或第三方資料來啟動受眾。
+When using , you can only use first-party data to activate audience segments in people-based channels. [!DNL People-Based Destinations]You cannot use any second- or third-party data for audience activation in people-based channels.
 
-## 透過宣告的ID定位的板載驗證雜湊ID {#onboard-authenticated-declared-id}
+## Onboard Authenticated Hashed IDs through Declared ID Targeting {#onboard-authenticated-declared-id}
 
-有兩種方式可讓您將離線資料帶入Audience Manager [!DNL People-Based Destinations]。
+There are two ways you can bring your offline data to Audience Manager for .[!DNL People-Based Destinations]
 
-* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 使用此方法，您可以選擇在中使用資料庫中的散列電 [!DNL CRM] 子郵件地址 [!DNL People-Based Destinations]。 此外，使用此方法時，您也可以針對已登入的特徵來限定雜湊 [電子郵件地址](../traits/trait-qualification-reference.md)。
-* 使用 [Declared ID](../declared-ids.md) ，在傳入已驗證的客戶ID時，宣告雜湊的電子郵件地址。 使用此方法時，Audience manager僅會代表您傳送經過線上驗證 [!DNL People-Based Destinations] 的使用者的雜湊電子郵件地址。 透過以人為本的管道啟動的電子郵件地址，只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID相關的其他電子郵件地址不會即時傳送。
+* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 With this method, you can choose to use the hashed email addresses from your  database in . [!DNL CRM][!DNL People-Based Destinations]Additionally, when using this method, you can also qualify the hashed email addresses for onboarded traits.[](../traits/trait-qualification-reference.md)
+* Use Declared IDs to declare hashed email addresses when passing in authenticated customer IDs. [](../declared-ids.md)使用此方法時，Audience manager僅會代表您傳送經過線上驗證 [!DNL People-Based Destinations] 的使用者的雜湊電子郵件地址。 透過以人為本的管道啟動的電子郵件地址，只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID相關的其他電子郵件地址不會即時傳送。
