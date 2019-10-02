@@ -1,11 +1,11 @@
 ---
-description: '請閱讀以下內容，以瞭解您在註冊人員型目標之前需要滿足的客戶需求。  '
-seo-description: '請閱讀以下內容，以瞭解您在註冊人員型目標之前需要滿足的客戶需求。  '
+description: 'Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.  '
+seo-description: 'Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.  '
 seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
-title: 先決條件和注意事項
+title: Prerequisites and Considerations
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: ad9c077f538759e195a83d47e0ef36ccffa25c7e
 
 ---
 
@@ -50,21 +50,24 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 
 ## 資料散列與加密 {#data-hashing-encryption}
 
-加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 在Audience manager中加密資料會帶來嚴重風險，因為任何加密的個人識別資訊形式都可以解密。 與加密相比，加密 [!DNL People-Based Destinations] 的設計是改用雜湊資料。
+加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 Encrypting data in the context of Audience Manager poses serious risks, since any encrypted form of personally identifiable information can also be decrypted. 與加密相比，加密 [!DNL People-Based Destinations] 的設計是改用雜湊資料。
 
-雜湊是單向函式，可對輸入進行雜湊以產生獨特的結果。 通過使用適當的散列算法， [!DNL SHA256]例如，無法對散列函式進行反向操作並揭示未置亂的資訊。 您要登入Audience manager的電子郵件地址必須使用演算法雜湊 [!DNL SHA256] 處理。 如此，您就可以確保沒有未雜湊的電子郵件地址可送達Audience Manager。
+Hashing is a one-way function that scrambles the input to produce a unique result. By using proper hashing algorithms, like , there is no way to reverse the hashing function and reveal the unscrambled information. [!DNL SHA256]The email addresses that you will onboard to Audience Manager must be hashed with the  algorithm. [!DNL SHA256]This way, you can ensure that no unhashed email addresses reach Audience Manager.
 
-## 雜湊要求 {#hashing-requirements}
+## Hashing Requirements {#hashing-requirements}
 
-散列電子郵件地址時，請務必符合下列要求：
+When hashing the email addresses, make sure to comply with the following requirements:
 
-* 從電子郵件字串中修剪所有前導和尾隨空格；範例： `johndoe@example.com`不是 `<space>johndoe@example.com<space>`;
-* 請確定雜湊字串全部為小寫；範例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`不是 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
-* 別用鹽鹽。
+* Trim all leading and trailing spaces from the email string; example: `johndoe@example.com`, not `<space>johndoe@example.com<space>`;
+* When hashing the email strings, make sure to hash the lowercase string;
+   * 範例： `example@email.com`不是 `EXAMPLE@EMAIL.COM`;
+* Make sure the hashed string is all lowercase
+   * 範例： , not ;`55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149``55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`
+* Do not salt the string.
 
-Adobe Experience cloud可讓您選擇透過Experience Cloud ID服務散列客戶ID。 如需如 [何使用ECID來雜湊客戶ID的詳細資訊，請參閱SHA256 Hashing Support for setCustomerIDs](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
+Adobe Experience Cloud gives you the option to hash customer IDs through the Experience Cloud ID Service. See SHA256 Hashing Support for setCustomerIDs for detailed information on how to use ECID to hash customer IDs.[](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html)
 
-## 取得使用者權限 {#obtaining-user-permission}
+## Obtaining User Permission {#obtaining-user-permission}
 
 由於 [!DNL People-Based Destinations] 協助您在以人為本的通道中啟用第一方受眾資料，因此您有責任告知客戶並取得客戶如何將其資料用於廣告或其他目的的必要同意。
 
