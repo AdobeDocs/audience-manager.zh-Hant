@@ -4,7 +4,7 @@ seo-description: 搜索在特定時間段內接收的已用和未用信號。 �
 seo-title: 信號搜索
 title: 信號搜索
 translation-type: tm+mt
-source-git-commit: a0e585b85a4e8ab180766298579dc39f93b7ff29
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -19,5 +19,4 @@ source-git-commit: a0e585b85a4e8ab180766298579dc39f93b7ff29
 * [篩選搜尋結果](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
 * [儲存搜尋條件](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)
 
-
-
+[!VIDEO](https://video.tv.adobe.com/v/25148/?captions=chi_hant)
