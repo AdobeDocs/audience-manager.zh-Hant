@@ -8,7 +8,7 @@ title: 建立演算法模型
 topic: DIL API
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -42,33 +42,33 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    * *（可選）* ，提供模型的簡要說明。
    * 將模型的狀態設定為 **[!UICONTROL Active]** 或 **[!UICONTROL Inactive]**。 非活動模型將不運行，也不會生成任何資料。
 1. 在「配 [置](../../features/algorithmic-models/create-model.md#configuration) 」部分：
-   * 按一 **[!UICONTROL Browse All Traits]** 下或 **[!UICONTROL Browse All Segments]** 以選取您要建立模型的特徵或區段。 選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。
-   * 選擇30、60或90天回顧時段。 這會設定模型的時間範圍。
-   * 預設 [!UICONTROL TraitWeight] 會選取演算法。
-   * 從清單中選取資料 [!UICONTROL Available Data] 來源。
+   * 按一 **[!UICONTROL Browse All Traits]** 下或 **[!UICONTROL Browse All Segments]** 以選取您要建立模型的特徵或區段。 Select an onboarded trait, a rule-based trait, or a segment as baseline. Otherwise, your models will not run.
+   * Choose a 30, 60, or 90 day look-back period. This sets a time range for the model.
+   * The  algorithm is selected by default.[!UICONTROL TraitWeight]
+   * Select a data source from the [!UICONTROL Available Data] list.
    * Click **[!UICONTROL Save]** when done.
 
-## 演算模型的基本資訊 {#basic-information}
+## Basic Information for Algorithmic Models {#basic-information}
 
 <!-- r_model_basic.xml -->
 
-在中 [!UICONTROL Model Builder]，設 [!UICONTROL Basic Information] 定可讓您建立新模型或編輯現有模型。 要建立新模型，請提供名稱並移至設 [!UICONTROL Configuration] 置。 說明欄位為選用。
+In [!UICONTROL Model Builder], the [!UICONTROL Basic Information] settings let you create new or edit existing models. To create a new model, provide a name and move on to the  settings. [!UICONTROL Configuration]The description field is optional.
 
 | 欄位 | 說明 |
 |---|---|
-| **[!UICONTROL Name]** | 為模型提供簡短的邏輯名稱，以說明其功能或用途。 避免縮寫、特殊字元和重音符號。 |
+| **[!UICONTROL Name]** | Give your model a short, logical name that describes its function or purpose. Avoid abbreviations, special characters, and accent marks. |
 | **[!UICONTROL Description]** | 一個欄位，用於有關模型的其他描述性資訊。 |
 | **[!UICONTROL Status]** | 激活或停用模型（預設情況下為活動）。 |
 
 ## 設定 {#configuration}
 
-在中 [!UICONTROL Model Builder]，區 [!UICONTROL Configuration] 段可讓您新增特徵或區段至模型。 在本節中，選取基準特徵或區段、回顧期間，以及來自您第一方與第三方資料來源的資料。
+In , the  section lets you add traits or segments to the model. [!UICONTROL Model Builder][!UICONTROL Configuration]In this section, select a baseline trait or segment, a look-back period, and data from your first and third-party data sources.
 
 <!-- r_model_configuration.xml -->
 
 ### 必備條件
 
-請先填妥章節中的 [!UICONTROL Basic Information] 必填欄位。
+Complete the required fields in the  section first.[!UICONTROL Basic Information]
 
 ![](assets/lam_exclude_traits_numbered.png)
 
@@ -102,6 +102,10 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
   </tr> 
  </tbody>
 </table>
+
+觀看以下影片，瞭解如何建立第一方外觀相似的模型，以便您找到更多自己的訪客，其外觀更像您的轉換器。
+
+[!VIDEO](https://video.tv.adobe.com/v/23504/?captions=chi_hant)
 
 >[!MORE_LIKE_THIS]
 >
