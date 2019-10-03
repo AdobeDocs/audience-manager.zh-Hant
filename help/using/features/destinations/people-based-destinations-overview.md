@@ -5,7 +5,7 @@ seo-title: 基於人員的目標概觀和使用案例
 solution: Audience Manager
 title: 概觀與使用案例
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -57,6 +57,10 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
 **運用Audience manager的資料管理和隱私權控制，以安全地處理客戶資料。**
 
 [!DNL People-Based Destinations] 要求您僅使用不可逆轉的雜湊識別碼。 這可降低手動將客戶資料上傳至每個目標平台的相關風險。
+
+觀看以下影片，瞭解使用時的資料流程 [!UICONTROL People-Based Destinations]。
+
+[!VIDEO](https://video.tv.adobe.com/v/28968/?captions=chi_hant)
 
 ## 使用個案 {#use-cases}
 
