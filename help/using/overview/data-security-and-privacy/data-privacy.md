@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料隱私權
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: e6dcd0a33489ae388df25a95d3ad4841030afe31
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -76,18 +76,22 @@ Adobe has enabled processes and offers settings that allow customers to use Audi
 
 -->
 
-前往客戶網站的訪客 IP 位址會傳送至 Adobe Data Processing Center (DPC)，並可能儲存該 IP 位址。視訪客的網路設定而定，IP位址不一定代表訪客電腦的IP位址。 例如，該 IP 位址可能是網路位址轉譯 (NAT) 防火牆、HTTP Proxy 或內部閘道的外部 IP 位址。
+The [!DNL IP] address of a visitor to a customer’s website is transmitted to an Adobe [!DNL Data Processing Center] ([!DNL DPC]) where the [!DNL IP] address may be stored. Depending on the network configuration for the visitor, the [!DNL IP] address may not necessarily represent the [!DNL IP] address of the visitor’s computer. For example, the [!DNL IP] address could be the external [!DNL IP] address of a Network Address Translation (NAT) firewall, [!DNL HTTP] proxy, or Internet gateway.
 
-**** IP模糊化方法：Adobe Audience manager遵循「依設計而設計隱私權」的原則，允許客戶從UI啟用IP模糊化，不論是全球各地區或特定國家／地區。 當您啟用此設定時，當IP位址被收錄到Audience manager時，會立即捨棄IP位址的最後八位元（最後一部分）。 Audience manager會在處理之前（包括在任何選擇性的地理查閱或記錄IP位址之前）放棄此部分IP位址。 例如:
+**** IP模糊化方法：Adobe Audience manager遵循「依設計隱私權」的原則，允許客戶在UI中啟用模糊化，不論是全球各地區或特定國家／地區 [!DNL IP] 。 當您啟用此設定時，當將位址收錄到Audience manager中時，會立即捨棄 [!DNL IP] 該位址的最後八位 [!DNL IP] 元（最後一部分）。 Audience manager會在處理前(包括任何選用的地理查閱或 [!DNL IP] 記錄位址之前)放棄此部分 [!DNL IP] 位址。 例如:
 
 * 在可以記錄: `255.255.255.255`
 * 之後: `255.255.255.0`
 
 >[!NOTE]
 >
->請參 [閱IP位址模糊化](/help/using/features/administration/ip-obfuscation.md) ，以瞭解如何在Audience Manager UI中啟用IP位址模糊化。
+>請參 [閱IP位址模糊化](/help/using/features/administration/ip-obfuscation.md) ，以瞭解如何在Audience Manager UI [!DNL IP] 中啟用位址模糊化。
 
-**** 地域劃分：如果您啟用IP位址模糊化，IP位址的其餘八位元仍可用於Audience manager中的地域劃分和報告。 如果您未啟用IP位址模糊化，Audience manager會使用完整的IP位址。 您可以使用「地理區段」功能，在任何情況下，都可依地理區域識別IP位置，但在使用IP模糊化時，會略有降低精確度。 IP 位址模糊化可能會顯著影響城市層級資訊的取得。取得地區和國家一級的資訊只會受到輕微影響。 「地理區段」資料的粒度僅限城市層級或郵遞區號層級，而非個別層級。 進一步瞭解 [地理定位](/help/using/features/traits/trait-geotarget-keys.md) ，以及如何使用地理變數設定特徵。
+觀看以下影片，瞭解位址模糊 [!DNL IP] 化在Audience manager中的運作方式。
+
+[!VIDEO](https://video.tv.adobe.com/v/27218/?captions=chi_hant)
+
+**** 地域劃分：如果您啟 [!DNL IP] 用位址模糊化，位址的其餘八位元仍 [!DNL IP] 可用於Audience manager中的地域劃分和報告。 如果您未啟用位 [!DNL IP] 址模糊化，Audience manager會使用完整位 [!DNL IP] 址。 您可以使用「地理區段」功能，在任何情況下都可 [!DNL IP] 以依地理區域識別位置，但在使用模糊化時會略 [!DNL IP] 有降低精確度。 Obtaining city-level information will likely be significantly impacted by the obfuscation of the [!DNL IP] address. 取得地區和國家一級的資訊只會受到輕微影響。 「地理區段」資料的粒度僅限城市層級或郵遞區號層級，而非個別層級。 進一步瞭解 [地理定位](/help/using/features/traits/trait-geotarget-keys.md) ，以及如何使用地理變數設定特徵。
 
 ## 相關概念 {#related-concepts}
 
