@@ -5,7 +5,7 @@ seo-title: 工作流程B —— 基於僅離線資料的個人化
 solution: Audience Manager
 title: 工作流程B —— 基於僅離線資料的個人化
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
-本頁包含逐步指引，說明如何從僅離線的客戶資料建立受眾細分，並將其傳送至以人為本的目標。
+This page includes step-by-step guidance on how to build audience segments from offline-only customer data, and send them to People-Based Destinations.
 
 ## 步驟1 —— 板載離線特徵 {#step-1-onboard-traits}
 
@@ -83,11 +83,11 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
    >[!NOTE]
    >
-   > 如需 [](people-based-destinations-prerequisites.md#data-onboarding) 如何將離線資料匯入Audience Manager（以人為本的目的地）的常見問題，請參閱資料入門。
+   > See Data Onboarding for frequently asked questions about how you should bring your offline data into Audience Manager for People-Based Destinations.[](people-based-destinations-prerequisites.md#data-onboarding)
 
 觀看以下影片，以取得如何建立資料來源的教學影片 [!UICONTROL People-Based Destinations]。
 
-[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hant)
 
 ## 步驟3 —— 透過檔案式ID同步化，將DPUUID與雜湊的電子郵件地址相符 {#match-ids-emails}
 
@@ -152,7 +152,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ## 步驟6 —— 配置基於人的平台身份驗證 {#configure-authentication}
 
-1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Administration]** &gt; **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
+1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Administration]** &gt; **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 Otherwise, the page is empty.
    ![以人為本的整合](assets/pbd-config.png)
 1. Click **[!UICONTROL Add Account]**.
 1. 使用下 **[!UICONTROL People-Based Platform]** 拉式選單來選取您要設定整合的平台。
