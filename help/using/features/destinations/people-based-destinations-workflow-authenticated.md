@@ -5,7 +5,7 @@ seo-title: 工作流C —— 基於驗證活動和離線資料的個性化
 solution: Audience Manager
 title: 工作流C —— 基於驗證活動和離線資料的個性化
 translation-type: tm+mt
-source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -47,6 +47,10 @@ source-git-commit: f500b4a763f1639392253b7e5f209395a978e45e
    >[!NOTE]
    >
    > 如需 [](people-based-destinations-prerequisites.md#data-onboarding) 如何將離線資料匯入Audience Manager（以人為本的目的地）的常見問題，請參閱資料入門。
+
+觀看以下影片，以取得如何建立資料來源的教學影片 [!UICONTROL People-Based Destinations]。
+
+[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hant)
 
 ## 步驟2 —— 使用宣告的ID，透過即時HTTP呼叫，將DPUUID與雜湊的電子郵件地址相符 {#match-email-addresses}
 
