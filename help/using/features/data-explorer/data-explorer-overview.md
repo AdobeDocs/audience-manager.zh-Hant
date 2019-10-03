@@ -5,7 +5,7 @@ seo-title: 概觀、優點和使用案例
 title: 概觀、優點和使用案例
 uuid: 3bd32d4a-ade3-413d-837a-9edd14d415a5
 translation-type: tm+mt
-source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -41,3 +41,9 @@ source-git-commit: 643e44efd8d9aa016c20eb0d2c8a2d7006156048
 ### 範例 2
 
 當旅行社將新目的地新增至訂房網站後，他們會想向歷史受眾廣告，儘管他們沒有為他們建立任何特徵。 他們可以使用「信號搜索」來識別與新目標相關的未用信號，將其包含在新特徵中，並用歷史實 [現](../../features/data-explorer/data-explorer-trait-backfill.md) 來回填它們。 然後，使用新特性建立新區段，並立即透過專用促銷活動鎖定這些區段。
+
+### 使用資料總管來驗證已登入資料的特徵建立
+
+Audience manager最強大的功能之一，就是讓離線資料上線，並將其與線上資料連結。 在以下影片中，瞭解如何使用 [!UICONTROL Data Explorer] 來驗證您已建立所有必要特徵，以運用此已登入的資料。
+
+[!VIDEO](https://video.tv.adobe.com/v/25149/?captions=chi_hant)
