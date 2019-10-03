@@ -5,7 +5,7 @@ seo-title: 信號儀表板
 title: 信號儀表板
 uuid: 26f39507-097f-427d-bf5b-ab6d035c1dd2
 translation-type: tm+mt
-source-git-commit: 12216ab5105fce80b4b47c31ee6be144ddfe8df9
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -34,4 +34,7 @@ source-git-commit: 12216ab5105fce80b4b47c31ee6be144ddfe8df9
 
 [!DNL Audience Manager] 顯示您在 [上保存的所](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) 有搜 [!UICONTROL Dashboard] 索，並在每次載入時重新載入這些搜索 [!UICONTROL Dashboard]。
 
-儲存的搜尋會顯示對應准則的前50個結果。
+Saved searches display the top 50 results for the corresponding criteria.
+
+觀看以下影片，瞭解如何使用 [!UICONTROL Signals Dashboard]。
+[!VIDEO](https://video.tv.adobe.com/v/25151/?captions=chi_hant)
