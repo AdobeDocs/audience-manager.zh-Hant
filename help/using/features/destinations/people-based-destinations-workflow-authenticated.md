@@ -5,7 +5,7 @@ seo-title: 工作流C —— 基於驗證活動和離線資料的個性化
 solution: Audience Manager
 title: 工作流C —— 基於驗證活動和離線資料的個性化
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -15,11 +15,11 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
-本頁包含如何結合離線資料與即時行為資料的逐步指 [!DNL CRM] 引，讓已驗證的使用者建立受眾區段，然後將這些受眾區段傳送至 [!DNL People-Based Destinations]。
+This page includes step-by-step guidance on how to combine offline [!DNL CRM] data with real-time behavioral data for authenticated users to create audience segments, then send these audience segments to [!DNL People-Based Destinations].
 
 ## 步驟1 —— 設定資料來源設定 {#configure-data-source-settings}
 
-視您的 [DPUUID是小寫](../../reference/ids-in-aam.md) 、雜湊電子郵件地址而定，您可能需要設定將儲存雜湊電子郵件地址的資料來源。
+Depending on whether your DPUUIDs are lowercase, hashed email addresses, you might need to configure the data source that will store the hashed email addresses.[](../../reference/ids-in-aam.md)
 
  
 
@@ -50,7 +50,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 觀看以下影片，以取得如何建立資料來源的教學影片 [!UICONTROL People-Based Destinations]。
 
-[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hant)
 
 ## 步驟2 —— 使用宣告的ID，透過即時HTTP呼叫，將DPUUID與雜湊的電子郵件地址相符 {#match-email-addresses}
 
@@ -60,38 +60,38 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 假設您已建立下列兩個資料來源。
 
-| 資料來源ID | 資料來源內容 |
+| Data source ID | Data source contents |
 | -------------- | -------------------------- |
-| 999999 | 現有DPUUID(CRM ID) |
-| 987654 | 雜湊的電子郵件地址 |
+| 999999 | Existing DPUUIDs (CRM IDs) |
+| 987654 | Hashed email addresses |
 
  
 
-然後，您會想要將下方的CRM ID限定為表格中的特徵。
+Then, you want to qualify the CRM IDs below for the trait in the table.
 
-| DPUUID(CRM ID) | 電子郵件地址 | 雜湊電子郵件地址 | 特性 |
+| DPUUID (CRM ID) | 電子郵件地址 | Hashed email address | 特性 |
 | -------------------------------------- | --------------------- | ---------------------------------------------------------------- | ------------- |
-| 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 | 位置=美國 |
+| 68079982765673198504052656074456196039 | `johndoe@example.com` | 55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149 | location = US |
 
  
 
-您宣告的ID應遵循下列語法：
+Your declared ID should follow this syntax:
 
 `https://yourDomain.demdex.net/event?d_cid_ic=HashedEmailDataSourceIntegrationCode%01myHashedEmail&d_cid_ic=CRMDataSourceIntegrationCode%01myCRMID&key=value`
 
  
 
-在上述範例中，宣告的ID呼叫應如下所示：
+In the example above, the declared ID call should look like this:
 
 `https://yourDomain.demdex.net/event?d_cid_ic=MyHashedEmailDataSource%0155e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149&d_cid_ic=MyCRMDataSource%0168079982765673198504052656074456196039&location=US`
 
-## 步驟3 —— 建立分段的描述檔合併規則 {#create-profile-merge-rule-segmentation}
+## Step 3 - Create a Profile Merge Rule for Segmentation {#create-profile-merge-rule-segmentation}
 
-下一步是建立新的合併規則，協助您建立要傳送給您的對象區段 [!DNL People-Based Destinations]。
+The next step is creating a new merge rule that will help you create the audience segments to send to your .[!DNL People-Based Destinations]
 
 >[!IMPORTANT]
 >
->如果您已使用或選項定義規 **[!UICONTROL Current Authenticated Profiles]** 則， **[!UICONTROL Last Authenticated Profiles]** 可跳至步驟4 - [建立對象區段](#create-audience-segments)。
+>If you already have a rule defined with the  or  options, you can skip to Step 4 - Create Audience Segments.**[!UICONTROL Current Authenticated Profiles]****[!UICONTROL Last Authenticated Profiles]**[](#create-audience-segments)
 
 1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Audience Data]** -&gt; **[!UICONTROL Profile Merge Rules]**。
 2. Click **[!UICONTROL Add New Rule]**.
@@ -106,7 +106,7 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ## 步驟5 —— 配置基於人的平台身份驗證 {#configure-authentication}
 
-1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Administration]** &gt; **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
+1. Log in to your Audience Manager account and go to  &gt; . **[!UICONTROL Administration]****[!UICONTROL Integrated Accounts]**如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 Otherwise, the page is empty.
    ![以人為本的整合](assets/pbd-config.png)
 2. Click **[!UICONTROL Add Account]**.
 3. 使用下 **[!UICONTROL People-Based Platform]** 拉式選單來選取您要設定整合的平台。
@@ -124,12 +124,12 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 1. 登入您的Audience manager帳戶，前往 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Destinations]**，然後按一下 **[!UICONTROL Create Destination]**。
 1. 在該 **[!UICONTROL Basic Information]** 部分中，輸入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** 新資料源，並使用以下設定：
    * **[!UICONTROL Category]**:整合平台；
-   * **[!UICONTROL Type]**:以人為本；
+   * **[!UICONTROL Type]**: People-Based;
    * **[!UICONTROL Platform]**:選取您要傳送受眾細分至的以人為本的平台；
    * **[!UICONTROL Account]**:選取與所選平台相關聯的所需廣告商帳戶。
       ![create-destination](assets/pbd-create-destination.png)
 1. Click **[!UICONTROL Next]**.
-1. 選擇 **[!UICONTROL Data Export Labels]** 要為此目標設定的。
+1. Choose the  that you want to set for this destination.**[!UICONTROL Data Export Labels]**
 1. 在區 **[!UICONTROL Configuration]** 段中，選取包含雜湊資料來源的資料來源。
-1. 在區 **[!UICONTROL Segment Mappings]** 段中，選取您要傳送至此目的地的區段。 這將是您在步驟4 —— 建立 [觀眾區段中建立的區段](#create-audience-segments)。
-1. 保存目標。
+1. 在區 **[!UICONTROL Segment Mappings]** 段中，選取您要傳送至此目的地的區段。 This would be the segments that you created at Step 4 - Create Audience Segments.[](#create-audience-segments)
+1. Save the destination.
