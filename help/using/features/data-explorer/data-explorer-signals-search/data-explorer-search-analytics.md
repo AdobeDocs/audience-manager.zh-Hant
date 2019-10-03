@@ -5,7 +5,7 @@ seo-title: Adobe Analytics的進階搜尋
 title: Adobe Analytics的進階搜尋
 uuid: 20177820-10e1-49d9-bb2c-3a62141a498e
 translation-type: tm+mt
-source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -25,3 +25,7 @@ source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
 
    ![](assets/signals-search-analytics.png)
 1. 搜尋結果現在會顯示欄中輸入之鍵值對的好記名稱，或報表套裝中所有訊號的好記名稱（如果您將鍵值欄位留空）。 **[!UICONTROL Key or Key Name]**
+
+以下影片說明如何使用 [!UICONTROL Data Explorer] 來探索和使用您的Adobe Analytics資料，包括搜尋已使用和未使用的訊號、建立Analytics特性，以及瞭解資料。
+
+[!VIDEO](https://video.tv.adobe.com/v/25150?captions=chi_hant)
