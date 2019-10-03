@@ -1,11 +1,11 @@
 ---
-description: 使用資料總管，根據使用和未使用的信號建立特徵，並回填歷史資料，以利用歷史受眾，避免相關受眾的潛在損失。
-seo-description: 使用資料總管，根據使用和未使用的信號建立特徵，並回填歷史資料，以利用歷史受眾，避免相關受眾的潛在損失。
-seo-title: 概觀、優點和使用案例
-title: 概觀、優點和使用案例
+description: Use Data Explorer to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.
+seo-description: Use Data Explorer to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.
+seo-title: Overview, Benefits, and Use Cases
+title: Overview, Benefits, and Use Cases
 uuid: 3bd32d4a-ade3-413d-837a-9edd14d415a5
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -46,4 +46,4 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 Audience manager最強大的功能之一，就是讓離線資料上線，並將其與線上資料連結。 在以下影片中，瞭解如何使用 [!UICONTROL Data Explorer] 來驗證您已建立所有必要特徵，以運用此已登入的資料。
 
-[!VIDEO](https://video.tv.adobe.com/v/25149/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/25149/?captions=chi_hant)
