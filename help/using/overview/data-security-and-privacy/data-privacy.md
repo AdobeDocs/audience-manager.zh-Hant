@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料隱私權
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 See the [Adobe Privacy Center](https://www.adobe.com/privacy/opt-out.html).
 
-## 消費者隱私保護 {#consumer-privacy-protection}
+## Consumer Privacy Protection {#consumer-privacy-protection}
 
-Audience manager認識到消費者與線上品牌互動的隱含約定。 雙方都受益於匿名資料元素的透明交換：
+Audience Manager recognizes the implicit pact between consumers and the online brands with which they interact. Both parties benefit from the transparent exchange of anonymous data elements:
 
-* 消費者可獲得個人化內容、折扣產品優惠，以及簡化的使用者體驗。
+* Consumers receive personalized content, discounted product offers, and streamlined user experiences.
 * 品牌可獲得重要的營收來源，以支援多種線上商業模型。
 
 在我們持續支援此模式時，Audience manager仍致力於為消費者提供透明度和控制，並符合或超越線上行為廣告(OBA)自律原則。
@@ -89,7 +89,7 @@ The [!DNL IP] address of a visitor to a customer’s website is transmitted to a
 
 觀看以下影片，瞭解位址模糊 [!DNL IP] 化在Audience manager中的運作方式。
 
-[!VIDEO](https://video.tv.adobe.com/v/27218/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/27218/?captions=chi_hant)
 
 **** 地域劃分：如果您啟 [!DNL IP] 用位址模糊化，位址的其餘八位元仍 [!DNL IP] 可用於Audience manager中的地域劃分和報告。 如果您未啟用位 [!DNL IP] 址模糊化，Audience manager會使用完整位 [!DNL IP] 址。 您可以使用「地理區段」功能，在任何情況下都可 [!DNL IP] 以依地理區域識別位置，但在使用模糊化時會略 [!DNL IP] 有降低精確度。 Obtaining city-level information will likely be significantly impacted by the obfuscation of the [!DNL IP] address. 取得地區和國家一級的資訊只會受到輕微影響。 「地理區段」資料的粒度僅限城市層級或郵遞區號層級，而非個別層級。 進一步瞭解 [地理定位](/help/using/features/traits/trait-geotarget-keys.md) ，以及如何使用地理變數設定特徵。
 
