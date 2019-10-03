@@ -5,7 +5,7 @@ seo-title: 回填特徵實現
 title: 回填特徵實現
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ---
 
@@ -44,6 +44,10 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 1. 建立特徵。
 
 一旦您完成特徵的建立，您就會看到其回填的實現包含在實現統計資料中。
+
+請觀看以下影片，以取得如何回填特徵的影片逐步說明。
+
+[!VIDEO](https://video.tv.adobe.com/v/25169/?captions=chi_hant)
 
 ## 特徵回填延遲 {#trait-backfilling-latency}
 
