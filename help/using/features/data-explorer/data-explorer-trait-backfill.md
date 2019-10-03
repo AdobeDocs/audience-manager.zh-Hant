@@ -5,7 +5,7 @@ seo-title: 回填特徵實現
 title: 回填特徵實現
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -41,30 +41,30 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
    >    * `matchesregex`
    >    * `matcheswords`
 
-1. 建立特徵。
+1. Create the trait.
 
 一旦您完成特徵的建立，您就會看到其回填的實現包含在實現統計資料中。
 
 請觀看以下影片，以取得如何回填特徵的影片逐步說明。
 
-[!VIDEO](https://video.tv.adobe.com/v/25169/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/25169/?captions=chi_hant)
 
 ## 特徵回填延遲 {#trait-backfilling-latency}
 
-新建立的特徵在建立後2到3小時開始擷取觀眾。 但是，由於每日執行的資 [!DNL Audience Manager] 料量龐大，回填的人口不會立即反映在和 [!UICONTROL Unique Trait Realizations] 圖 [!UICONTROL Total Trait Population] 表中。
+新建立的特徵在建立後2到3小時開始擷取觀眾。 However, due to the large volume of data that  performs on a daily basis, the backfilled population is not immediately reflected in the  and  graphs.[!DNL Audience Manager][!UICONTROL Unique Trait Realizations][!UICONTROL Total Trait Population]
 
 Audience manager會在特徵建 [!UICONTROL Trait Graph] 立後48小時內，以回填的人口更新。
 
-## 特徵回填限制 {#trait-backfilling-limit}
+## Trait Backfilling Limit {#trait-backfilling-limit}
 
-[!UICONTROL Data Explorer] 可讓您每月回填最多50個特徵，而回填計數器會在每月的1天重設。
+[!UICONTROL Data Explorer] allows you to backfill up to 50 traits per month, with the backfill counter being reset on the 1 day of each month.
 
 >[!NOTE]
 >
->特徵回填配額不會延續前幾個月。 例如，如果您在本月回填30個特徵，下個月的特徵回填配額會重設為50，而非70。
+>Trait backfilling quota does not carry over from previous months. E.g., if you backfill 30 traits this month, the trait backfill quota for the next month is reset to 50, not 70.
 
 ## 對報告的影響 {#reporting-impact}
 
-回填的特徵實現會反映在和 [!UICONTROL Unique Trait Realizations] 量度中 [!UICONTROL Total Trait Population] ，因為歷史 [!DNL Audience Manager] 訊號會變成特徵實現。
+Backfilled trait realizations are reflected in the  and  metrics, as  turns historical signals into trait realizations.[!UICONTROL Unique Trait Realizations][!UICONTROL Total Trait Population][!DNL Audience Manager]
 
 不過，在特 [!UICONTROL Trait Graph]徵建 [!UICONTROL General Reports]立日 [!UICONTROL Trend Reports] 期之前回填歷史量度時，不會追溯更新、和。
