@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 目的地的GDPR考量
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
 translation-type: tm+mt
-source-git-commit: 69be038d0f2d31b6b5eda20041082c1890abc38f
+source-git-commit: c238a37e1a72edb0679f657d0178e04b8d848ec2
 
 ---
 
@@ -55,17 +55,17 @@ Adobe合作夥伴擁有其商業程式，並可能會決定不時更新其與Aud
 
 ## Audience Manager UI更新- Yahoo/Found/DataX整合 {#ui-update}
 
-除了上述IAB架構的更新外，Yahoo/Auncod/DataX還新增了 **gdpr****和** gdpr_mode，以加入其分類和觀眾API。 其參數會通知Yahoo/Wonds/DataX，他們有權以資料處理者或資料控制者的身分處理特定區段。 因此，將區段傳送至Yahoo/Aundos/DataX目的地的Audience manager客戶必鬚根據與Aund的同意，指定適當的參數（處理者或控制者）。
+除了上述IAB架構的更新外，Yahoo/Auncod/DataX還新增了 **gdpr****和** gdpr_mode，以加入其分類和觀眾API。 Their parameters inform Yahoo/Oath/DataX that they have the rights to process a certain segment as a Data Processor or as a Data Controller. 因此，將區段傳送至Yahoo/Aundos/DataX目的地的Audience manager客戶必鬚根據與Aund的同意，指定適當的參數（處理者或控制者）。
 
-請洽詢您的顧問或客戶服務，以設定正確的參數。 除非我們收到要求此更新的書面信件，否則Adobe無法代表客戶進行此更新。 請連絡您的Yahoo/Woand/DataX代表，以瞭解這些參數的完整定義。
+Please reach out to your Consultant or Client Care to set the correct parameter. Adobe cannot make this update on behalf of a customer unless we receive written correspondence, requesting this update. Please reach out to your Yahoo/Oath/DataX representative to understand the full definition of these parameters.
 
-## Audience manager合作夥伴具備取消細分功能 {#aam-partners-with-unsegmentation}
+## Audience Manager Partners With Unsegmentation Capabilities {#aam-partners-with-unsegmentation}
 
-為協助客戶自動化GDPR要求，Audience manager會傳送取消區隔（或移除區段）資訊，通知啟動合作夥伴有關資料主體的刪除要求。
+In order to help our customers automate GDPR requests, Audience Manager notifies our activation partners about deletion requests from Data Subjects by sending them unsegment (or remove segment) information.
 
-不過，我們的部分啟動合作夥伴：
+However, some of our activation partners:
 
-1. 無法支援Adobe和／或
-1. 無法在30天內以超過一次的頻率收到我們的更新。
+1. Cannot support unsegment requests from Adobe and/or
+1. Are not able to receive updates from us more frequently than once in 30 days.
 
-在這些情況下，您無法透過Audience manager以自動方式傳送刪除要求給啟動合作夥伴。 下載我們 [的Partner excel表單](/help/using/overview/aam-gdpr/assets/AAM-Partners-July2019.xlsx) ，以瞭解哪些Audience manager啟動合作夥伴支援取消細分。
+In those cases, you are not able to send delete requests to activation partners in an automated way through Audience Manager. Download our [Partner Excel sheet](/help/using/overview/aam-gdpr/assets/AAM-Partners-October2019.xlsx) to see which Audience Manager activation partners support unsegment.
