@@ -3,9 +3,9 @@ description: '使用以人為本的目的地，將第一方受眾細分傳送至
 seo-description: '使用以人為本的目的地，將第一方受眾細分傳送至以人為本的環境。 這些環境是屬於一個實體的封閉生態系統，控制其中顯示的內容。 這些平台包括Facebook等社交平台，以及依賴客戶帳戶個人化顯示內容的其他平台。  '
 seo-title: 基於人員的目標概觀和使用案例
 solution: Audience Manager
-title: 概觀與使用案例
+title: Overview and Use Cases
 translation-type: tm+mt
-source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
+source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ---
 
@@ -19,22 +19,22 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ## 概述 {#overview}
 
-[!DNL People-Based Destinations] 可讓您針對線上和離線資料套用區段，以根據雜湊識別碼(例如 [電子郵件地址](people-based-destinations-prerequisites.md#hashing-requirements)或電話號碼)建立觀眾區段。 然後，您可以將這些區段傳送至「圍牆花園」, [!DNL Facebook]例如，您可以在社交平台上鎖定受眾。 [!DNL People-Based Destinations] 可協助您：
+[!DNL People-Based Destinations] 可讓您針對線上和離線資料套用區段，以根據雜湊識別碼(例如 [電子郵件地址](people-based-destinations-prerequisites.md#hashing-requirements)或電話號碼)建立觀眾區段。 Then, you can send these segments to "walled gardens" such as , where you can target your audience on the social platforms. [!DNL Facebook][!DNL People-Based Destinations] 可協助您：
 
 * 根據雜湊的電子郵件位址，鎖定平台 [!DNL Facebook]中的離線和線上受眾；
 * 補充Audience manager現有的裝置和Cookie定位功能；
 * 免除與第三方資料上線解決方案相關的成本；
 * 免除開發自訂資料上線工作流程的相關成本；
-* 在無Cookie環境中鎖定受眾；
-* 借由刪除與客戶ID相符的電子郵件地址，以鎖定受眾。
+* Target audiences in cookie-less environments;
+* Target audiences by deduplicating email addresses matched to customer IDs.
 
-您可以使 [!DNL People-Based Destinations] 用來區隔和定位未瀏覽您網站的高價值客戶，或停止定位已離線轉換的客戶。 此外，您還可 [!DNL Profile Merge Rules] 以運用線下第一方資料與線上第一方資料（包括來自其他Adobe Experience cloud解決方案的客戶資料）相結合，以最佳化您的社交媒體廣告成果。
+You can use  to segment and target high value customers who may not visited your website, or stop targeting those who have already converted offline. [!DNL People-Based Destinations]Additionally, you can leverage  to combine your offline first-party data with your online first-party data, including customer data from other Adobe Experience Cloud solutions, to optimize your social media advertising efforts.[!DNL Profile Merge Rules]
 
 ![pbd-overview](assets/pbd-overview.png)
 
 ## Availability {#availability}
 
-[!DNL People-Based Destinations] 是Audience manager的進階整合。 請連絡您的Adobe代表，以利用這項優質功能。
+[!DNL People-Based Destinations] 是Audience manager的進階整合。 Please contact your Adobe representative to take advantage of this premium feature.
 
 ## 為何應使用以人為本的目的地 {#why-use}
 
@@ -48,19 +48,19 @@ source-git-commit: 0eb6a6f67d87377a044b18118fac0185219b0347
 
 ![pbd-overview](assets/pbd-diagram.png)
 
-透過 [!DNL People-Based Destinations]Audience manager，您可以幫助您集中管理客戶資料、建立受眾細分，並跨多個以人為本的通道加以啟用。 您可以從Audience Manager UI中完成這一切，避免手動上傳資料至每個平台的額外工作，為您節省流程中的寶貴時間。
+Through , Audience Manager helps you centralize your customer data, build audience segments, and activate them across multiple people-based channels. [!DNL People-Based Destinations]You can do this all from within the Audience Manager UI, avoiding the additional work of manually uploading data to each platform, saving you valuable time in the process.
 
-**從純離線個人檔案建立並啟用受眾細分。**
+**Create and activate audience segments from purely offline profiles.**
 
-[!DNL People-Based Destinations] 解決先前您只能根據裝置活動啟用受眾細分的問題。 有了 [!DNL People-Based Destinations]，您就可以從自己的純線下資料建立區段 [!DNL CRM]，並在以人為本的平台中加以啟動。 此外，您可以將離線資料與Audience manager中已有的裝置資料建立關聯。
+[!DNL People-Based Destinations] solve the issue that previously, you could only activate audience segments based on device activity. With , you can create segments from purely offline data from your own , and activate them in people-based platforms. [!DNL People-Based Destinations][!DNL CRM]Additionally, you can correlate your offline data with device data that you already have in Audience Manager.
 
-**運用Audience manager的資料管理和隱私權控制，以安全地處理客戶資料。**
+**Leverage Audience Manager's data governance and privacy controls to safely handle customer data.**
 
-[!DNL People-Based Destinations] 要求您僅使用不可逆轉的雜湊識別碼。 這可降低手動將客戶資料上傳至每個目標平台的相關風險。
+[!DNL People-Based Destinations] requires that you only use irreversibly hashed identifiers. 這可降低手動將客戶資料上傳至每個目標平台的相關風險。
 
 觀看以下影片，瞭解使用時的資料流程 [!UICONTROL People-Based Destinations]。
 
-[!VIDEO](https://video.tv.adobe.com/v/28968/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/28968/?captions=chi_hant)
 
 ## 使用個案 {#use-cases}
 
