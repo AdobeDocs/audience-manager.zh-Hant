@@ -1,33 +1,34 @@
 ---
 description: 本檔案涵蓋與Audience manager通用資料保護規則(GDPR)相關的技術細節，並說明如何將GDPR要求提交給Audience Manager。
-seo-description: 本檔案涵蓋與Audience manager通用資料保護規則(GDPR)相關的技術細節，並說明如何將GDPR要求提交給Audience Manager。
+seo-description: This document covers the technicalities related to the General Data Protection Regulation (GDPR) for Audience Manager and shows you how to submit GDPR requests to Audience Manager.
 seo-title: GDPR 對 Audience Manager 的影響
 solution: Audience Manager
+keywords: GDPR UI、GDPR API
 title: GDPR 對 Audience Manager 的影響
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
+source-git-commit: 5661bcef9816b6646ee63ebc6c19b730c1ccadc9
 
 ---
 
 
 # GDPR 對 Audience Manager 的影響{#gdpr-in-audience-manager}
 
-本檔案涵蓋與Audience manager通用資料保護規則(GDPR)相關的技術細節，並說明如何將GDPR要求提交給Audience Manager。
+This document covers the technicalities related to the General Data Protection Regulation (GDPR) for Audience Manager and shows you how to submit GDPR requests to Audience Manager.
 
 ## Experience cloud中的GDPR檔案 {#gdpr-documentation}
 
-在閱讀Audience manager的詳細資訊之前，我們建議您先閱讀以下連結的歐洲通用資料保護規則(GDPR)的Experience cloud資料：
+Before reading the Audience Manager specifics, we advise you go through the Experience Cloud material for the European General Data Protection Regulation (GDPR), linked below:
 
-* [GDPR與您的業務](https://www.adobe.com/privacy/general-data-protection-regulation.html)
+* [GDPR and Your Business](https://www.adobe.com/privacy/general-data-protection-regulation.html)
 * [GDPR白皮書](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-whitepaper.md)
 * [GDPR 術語](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-terminology.md)
 
-以下各節說明GDPR對Audience manager的意義，以及如何將GDPR請求提交給Audience Manager。
+The sections below explain what GDPR means for Audience Manager and how you can submit GDPR requests to Audience Manager.
 
 ## GDPR請求類型及如何提出GDPR請求 {#types-of-gdpr-requests}
 
-身為Audience Manager客戶，您可以透過 **[GDPR客戶服務UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** ，或呼叫 **[GDPR API，提交個別的GDPR要求以存取和刪除客戶資料](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)**。 You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑問，請聯絡客戶服務：gdprsupport@adobe.com。
+As an Audience Manager customer, you can submit individual GDPR requests to access and delete customer data, either through the Privacy Service UI (UI link here and documentation here) or by calling the Privacy Service API (documentation here and API reference here). ****[](https://gdprui.cloud.adobe.io/)[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑問，請聯絡客戶服務：gdprsupport@adobe.com。
 
 ## 存取資料 {#access-data}
 
@@ -35,15 +36,15 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 **請求**
 
-您可以透過 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** ，或呼叫 **[GDPR API](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (請參閱 `access` 動作)來記錄資料存取要求。 無論何種情況，您都必須使用您要提交資料存取要求的Audience manager識別碼上傳JSON。 在 **[Experience Cloud GDPR檔案中查看格式正確的JSON外觀](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** （尤其是在頁面中搜尋「POST請求格式」）。 或者，您可 **[以下載範例JSON](assets/access_request.json)**。
+您可以透過 **Service UI** ([UI連結在此處和](https://gdprui.cloud.adobe.io/) 說明檔案)或在此呼叫 [](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)Privacy Service API（隱私服務API），在此處呼叫Privacy Service API（隱私參考檔案），在此處註冊隱私權Api。 無論何種情況，您都必須使用您要提交資料存取要求的Audience manager識別碼上傳JSON。 若要瞭解格式良好的JSON外觀，您可以下 **[載範例JSON](assets/access_request.json)**。
 
 **回應**
 
-存取資料請求的回應包含特徵和區段總數、特徵類型、特徵和區段的說明，以及個別資料來源名稱的摘要。 「存取」回應也會包含可存取資料控制器的第二方和第三方資料，以及第一方資料。 當跨 [!UICONTROL declared IDs] 裝置CRM ID或客戶Cookie ID等在GDPR請求中傳送時，Audience manager會包含來自所有連結裝置的存取回應（每個宣告的ID最多100個裝置）。
+存取資料請求的回應包含特徵和區段總數、特徵類型、特徵和區段的說明，以及個別資料來源名稱的摘要。 「存取」回應也會包含可存取資料控制器的第二方和第三方資料，以及第一方資料。 When [!UICONTROL declared IDs] such as cross device CRM IDs or customer cookie IDs are sent in GDPR requests, Audience Manager will include the Access response from all the linked devices (up to 100 devices per declared ID).
 
 **回應狀態**
 
-如果回應中有來自Audience manager的任何錯誤，這些錯誤會以回應中的錯誤代碼呈現。 我們有錯 [誤代碼清單](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)，您可在此找到有關傳回錯誤的更多資訊。
+If there are any errors from Audience Manager in the response, these are surfaced as error codes in the response. 我們有錯 [誤代碼清單](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)，您可在此找到有關傳回錯誤的更多資訊。
 
 **範例回應**
 
@@ -142,7 +143,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>The user ID for the data that follows. 這是您在GDPR資料存取要求中提供的ID，或連結至您所提供之其中一個宣告ID的ID。 The ID types are described in the  Audience Manager Identifiers section.<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"></a> </p> </td> 
+   <td colname="col2"> <p>後續資料的使用者ID。 這是您在GDPR資料存取要求中提供的ID，或連結至您所提供之其中一個宣告ID的ID。 ID類型在「Audience Manager識別碼」區 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 段中說明</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> namespace</code> </p> </td> 
@@ -150,19 +151,19 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> id</code> </p> </td> 
-   <td colname="col2"> <p>namespace/資料來源的 ID。See <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> Audience Manager Identifiers (IDs)</a> for all the accepted values. </p> </td> 
+   <td colname="col2"> <p>namespace/資料來源的 ID。請參 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 閱Audience manager識別碼(ID)</a> ，以取得所有接受的值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 整合程式碼 </code> </p> </td> 
-   <td colname="col2"> <p>整合代碼是資料來源的好記名稱，可協助您比使用資料來源ID更輕鬆地追蹤資料來源。 </p> </td> 
+   <td colname="col2"> <p>Integration codes are friendly names for your data sources, and help you track your data sources easier than using data source IDs. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 資料提供者名稱 </code> </p> </td> 
-   <td colname="col2"> <p>The name of the owner of the data source. 
+   <td colname="col2"> <p>資料來源的擁有者名稱。 
      <ul id="ul_5CEAF23C28154662AFC443D3494107D3"> 
-      <li id="li_EC2DA09F618D4225B655ADF455C0D654">For first party data, this is the customer's own company name. </li> 
-      <li id="li_C4A5E1BD2A994109BBCD839DDC4B2E64">For second party data, this is the name of the partner company. </li> 
-      <li id="li_1AA1246B7E40443CB18108512FBB8B19">For third party data, this is the name of the data partner. </li> 
+      <li id="li_EC2DA09F618D4225B655ADF455C0D654">對於第一方資料，這是客戶自己的公司名稱。 </li> 
+      <li id="li_C4A5E1BD2A994109BBCD839DDC4B2E64">對於第二方資料，這是合作夥伴公司的名稱。 </li> 
+      <li id="li_1AA1246B7E40443CB18108512FBB8B19">對於第三方資料，這是資料合作夥伴的名稱。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -175,7 +176,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 標題 </code> </p> </td> 
-   <td colname="col2"> <p>Brief information about the warning. </p> <p>The two warnings you may receive are: </p> <p> 
+   <td colname="col2"> <p>有關警告的簡短資訊。 </p> <p>The two warnings you may receive are: </p> <p> 
      <ul id="ul_34019A1529594DC7B2566913937EAF0C"> 
       <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">Device Data </li> 
       <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">Incomplete request </li> 
@@ -183,19 +184,19 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 說明 </code> </p> </td> 
-   <td colname="col2"> <p>您收到警告的更詳細說明： </p> <p> 
+   <td colname="col2"> <p>A more detailed description of the warning you received: </p> <p> 
      <ul id="ul_78E03ABA52674E07A48835FDD3431FF8"> 
       <li id="li_6BB6D58660594CA0B1A89804F2FC6274">Device Data - Contains data from all users of this device </li> 
-      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">請求不完整——未完成Audience manager資料的擷取。 有些資訊可能遺失。 </li> 
+      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">Incomplete request - Retrieval of Audience Manager data was not completed. 有些資訊可能遺失。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 資料 </code> </p> </td> 
+   <td colname="col1"> <p> <code> data </code> </p> </td> 
    <td colname="col2"> <p>與此使用者ID關聯的特徵和區段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> traits </code> </p> </td> 
-   <td colname="col2"> <p>與使用者ID關聯的特徵。 </p> </td> 
+   <td colname="col2"> <p>Traits associated with the user ID. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 名稱</code> </p> </td> 
@@ -205,8 +206,8 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
    <td colname="col1"> <p> <code> 類型</code> </p> </td> 
    <td colname="col2"> <p>特徵類型。 可能的值包括: </p> <p> 
      <ul id="ul_DBAC618D9FE94B17B2494B83832A969F"> 
-      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>你自己的特徵</i> ，第一個派對。 </li> 
-      <li id="li_D9354F40FD114802819191450F2375C8"> <i>屬於您</i> 「合作夥伴」特徵的第二方。 請閱讀我們 <a href="../../overview/data-types-collected.md#second-party-data"> 的第二方資料文章</a> ，以取得詳細資訊。 </li> 
+      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>First party for your own traits.</i> </li> 
+      <li id="li_D9354F40FD114802819191450F2375C8"> <i>Second party for traits that belong to your partners. </i>Read our  Second Party Data article for more information.<a href="../../overview/data-types-collected.md#second-party-data"></a> </li> 
       <li id="li_C321D8B8256F4102AE64CD40DC57C948"> <i>協力廠商</i> ，針對透過Audience Marketplace從資料合作夥伴取得的 <a href="../../features/audience-marketplace/audience-marketplace.md"> 特徵</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -229,7 +230,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 最後實現</code> </p> </td> 
-   <td colname="col2"> <p>資料主體上次符合此特徵的確切時間。 日期格式為YYYY-MM-DD。 </p> </td> 
+   <td colname="col2"> <p>The exact time that the Data Subject last qualified for this trait. 日期格式為YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 區段 </code> </p> </td> 
@@ -237,14 +238,14 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 名稱</code> </p> </td> 
-   <td colname="col2"> <p>區段的名稱。 </p> </td> 
+   <td colname="col2"> <p>The name of the segment. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 說明</code> </p> </td> 
    <td colname="col2"> <p>請用幾個字來說明此區段。 這是選填欄位。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> data export controls</code> </p> </td> 
+   <td colname="col1"> <p> <code> 資料匯出控制</code> </p> </td> 
    <td colname="col2"> <p>套 <a href="../../features/data-export-controls.md"> 用至此區段資料來源</a> ，資料匯出控制項。 </p> </td> 
   </tr> 
   <tr> 
@@ -257,19 +258,19 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> last realization</code> </p> </td> 
-   <td colname="col2"> <p>The exact time that the Data Subject last qualified for this segment. The date format is YYYY-MM-DD. </p> </td> 
+   <td colname="col1"> <p> <code> 最後實現</code> </p> </td> 
+   <td colname="col2"> <p>資料主體上次符合此區段資格的確切時間。 日期格式為YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 活動</code> </p> </td> 
-   <td colname="col2"> <p>Indicates whether the Data Subject is currently qualified for this segment. Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
+   <td colname="col2"> <p>指出資料主體目前是否符合此區段的資格。 Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> 連結 </code> </p> </td> 
-   <td colname="col2"> <p>Additional ID that this ID has been linked to. Information is returned on: </p> <p> 
+   <td colname="col2"> <p>此ID已連結至的其他ID。 在以下位置返回資訊： </p> <p> 
      <ul id="ul_679F372A83164CC8B6BFE5A833347B9E"> 
       <li id="li_BCBF4F4C6C4049519BDE9186EE84868A">ID </li> 
-      <li id="li_46AC081C993041E6BCE70119FE04BE7F">namespace (data source) </li> 
+      <li id="li_46AC081C993041E6BCE70119FE04BE7F">namespace（資料來源） </li> 
       <li id="li_E9B906C8947E484B94FBCAEB03BDF4E2">namespace ID </li> 
       <li id="li_FB2A2F28290B4BA7844A558C01F8D9D4">整合程式碼 </li> 
       <li id="li_2569982810B64F8AABD78F5AC3717971">資料提供者名稱 </li> 
@@ -278,20 +279,20 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> linking datetime</code> </p> </td> 
-   <td colname="col2"> <p>ID同步事件建立ID間連結的確切時間。 The date format is YYYY-MM-DD. </p> </td> 
+   <td colname="col2"> <p>The exact time that an ID sync event made the link between IDs. The date format is YYYY-MM-DD. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> device metadata </code> </p> </td> 
-   <td colname="col2"> <p>Information about the device. This information includes the fields below. Note that not all fields are returned for all device types. </p> <p> 
+   <td colname="col2"> <p>Information about the device. This information includes the fields below. 請注意，並非所有裝置類型都會傳回所有欄位。 </p> <p> 
      <ul id="ul_F0031D50DF074634A428DBC73F958159"> 
       <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>Hardware information </p> </li> 
       <li id="li_99A049D585A9440EA79F57A3B03181AB"> <p>裝置製造商 </p> </li> 
       <li id="li_290F92FC3F6449EFBC4E7870B62AFE8B"> <p>裝置的行銷名稱 </p> </li> 
       <li id="li_FC37954CE133471398352240A8B0478F"> <p>裝置型號 </p> </li> 
       <li id="li_D54AEB0527C34E32A8AEEAEDEA5AD1B2"> <p>設備作業系統(OS)的名稱 </p> </li> 
-      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>作業系統版本 </p> </li> 
-      <li id="li_634B391D95104C42A43D6EFA95F3C0D3"> <p>裝置廠商 </p> </li> 
-     </ul> </p> <p> <p>注意：只有在您提交下列任一項時，我們才會傳回裝置中繼資料： 
+      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>The version of the OS </p> </li> 
+      <li id="li_634B391D95104C42A43D6EFA95F3C0D3"> <p>The device vendor </p> </li> 
+     </ul> </p> <p> <p>注意： We only return device metadata when you submit either one of: 
       <ul id="ul_2692AF4D28DB44FEAF5F657397F58D32"> 
        <li id="li_FBA2446BB5914772AF24D12B32D9DF1B">行動ID </li> 
        <li id="li_FBC45D16DEFE49CF91A7A541402A3BF3">Audience Manager ID </li> 
@@ -307,7 +308,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 **請求**
 
-您可以透過 **[GDPR Client Services UI](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** ，或呼叫 **[GDPR API](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)** (請參 `delete` 閱動作)來記錄資料刪除要求。 無論何種情況，您都必須使用您要提交資料存取要求的Audience manager識別碼上傳JSON。 在 [Experience Cloud GDPR檔案中查看格式正確的JSON外觀](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) （尤其是在頁面中搜尋「POST請求格式」）。 或者，您可 **[以下載範例JSON](assets/delete_request.json)**。
+您可以透過 **Service UI** ([UI連結在此處和](https://gdprui.cloud.adobe.io/) 說明檔案)或呼叫 [](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)Privacy Service API（此處呼叫隱私服務API），在此處記錄資料刪除請求，或在此處呼叫隱私服務API檔案Dreference AdD Preference Api)，刪除資料。 無論何種情況，您都必須使用您要提交資料存取要求的Audience manager識別碼上傳JSON。 若要瞭解格式良好的JSON外觀，您可以下 **[載範例JSON](assets/delete_request.json)**。
 
 **回應**
 
@@ -325,7 +326,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 **使用者ID**:aam_uuid
 
-**Definition: Adobe Audience Manager Unique User ID**
+**定義**:Adobe Audience Manager唯一使用者ID
 
 **命名空間ID**:0
 
@@ -391,7 +392,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 >[!NOTE]
 >
->您也可以使用ECID命名空間。 請參閱第二個JSON範例。
+>您也可以使用ECID命名空間。 See the second JSON example.
 
 **JSON中的範例**:
 
@@ -445,9 +446,9 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 **User ID: cid**
 
-**定義**:客戶ID，例如您為匿名網站訪客設定的Cookie，或離線系統的CRM ID，或雜湊的使用者名稱
+**Definition: Customer ID, such as a cookie you set for anonymous site visitors or a CRM ID from an offline system or a hashed username**
 
-**命名空間ID**:客戶專屬。 請從您的Audience manager例項中尋找。
+**Namespace ID: Customer-specific.** Please find it from your Audience Manager instance.
 
 **JSON中的範例**:
 
@@ -483,7 +484,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 
 **使用者ID**:d_cid
 
-**定義**:行動廣告ID。
+**Definition: Mobile advertising IDs.**
 >[!IMPORTANT]
 >
 > 如果您使用Mobile SDK，則您也應傳送Experience Cloud ID(MID)以及行動廣告ID，以取得完整的GDPR存取和刪除回應。
@@ -493,7 +494,7 @@ source-git-commit: 98914987331ce31bc8d3e67647d5b8273b287d4c
 * IDFA:二零九一五年
 * GAID:二零九一四年
 
-**JSON中的範例**:
+**Example in JSON:**
 
 ```
 "users": [
