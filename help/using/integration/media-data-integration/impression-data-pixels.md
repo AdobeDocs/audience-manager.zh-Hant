@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: c79c2311c3ea76ce2450dc1b84a7a22b60a6edb7
+source-git-commit: 7f71a099157e81c8d17cf018a4c84a69e2205bb4
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: c79c2311c3ea76ce2450dc1b84a7a22b60a6edb7
 事件呼叫由使用下列語法的鍵值配對組成：
 
 <pre>
-http://clientname.demdex.net/event?d_event=imp&amp;d_src=datasource_id&amp;d_site=siteID&amp;d_creative=<i>creative_id</i>&amp;d_adgroup=<i>adgroup_id</i>&amp;d_placement=<i>placement_id</i>&amp;d_campaign=campaign_id<i></i>[&amp;d_cid=(GAID|IDFA)%01 DPUUID]&amp;d_bust=快取值bster值
+http://clientname.demdex.net/event?d_event=imp&amp;d_src=datasource_id&amp;d_site=siteID&amp;d_creative=<i>creative_id</i>&amp;d_adgroup=<i>adgroup_id</i>&amp;d_placement=<i>placement_id</i>&amp;d_campaign=<i></i>campaign_idCampaign[&amp;d_cid=(GAID|IDFA)%01 DPUUID]&amp;d_bust=快取值
 </pre>
 
 在索引鍵值對中，值變數是廣告伺服器所插入的ID或巨集。 當廣告標籤載入時，會 `%macro%` 以必要的對應值來取代。 此呼叫不會傳回回應。
