@@ -6,7 +6,7 @@ solution: Audience Manager
 title: ID 同步檔案的名稱和內容要求
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 translation-type: tm+mt
-source-git-commit: 4bc3d7c0a34619e556f58b39b7812a5612050f7f
+source-git-commit: 84c860ca918ae7daf2a5225716fd7db7143089d9
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 4bc3d7c0a34619e556f58b39b7812a5612050f7f
 
 ID檔案名稱包含下列必要和選用元素：
 
-*`[adobe_id_]`* _DPID_DPID.gz *`[c2c_id_]`*`MASTERDPID_DPID`*[]*`_TIMESTAMP.sync`*`[.SPLIT_NUMBER]`*[]
+*`[adobe_id_]`* *`[c2c_id_]`*`MASTERDPID_DPID`*`[_DPID]`*`_TIMESTAMP.sync`*`[.SPLIT_NUMBER]`*`[.gz]`
 
 <table id="table_727A465D7C38419CA0750EF32DEDA2FD"> 
  <thead> 
@@ -37,11 +37,11 @@ ID檔案名稱包含下列必要和選用元素：
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> adobe_id</code> </p> </td> 
-   <td colname="col2"> <p>將檔案標識為ID同步檔案的靜態前置詞。 Use this prefix when matching device IDs to other device IDs or customer IDs (DPUUIDs).  </p> </td> 
+   <td colname="col2"> <p>將檔案標識為ID同步檔案的靜態前置詞。 當將裝置ID與其他裝置ID或客戶ID(DPUUID)相符時，請使用此首碼。  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> c2c_id</code> </p> </td> 
-   <td colname="col2"> <p>A static prefix that identifies the file as an ID synchronization file for People-Based Destinations. Use this prefix when matching customer IDs (DPUUIDs) to hashed email addresses for People-Based Destinations.  </p> </td> 
+   <td colname="col2"> <p>靜態首碼，可將檔案識別為以人為本的目的地的ID同步檔案。 將客戶ID(DPUUID)與雜湊的「人員型目標」電子郵件地址相符時，請使用此首碼。  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
@@ -61,18 +61,18 @@ ID檔案名稱包含下列必要和選用元素：
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>[<i>.SPLIT_NUMBER</i>]</code> </p> </td> 
-   <td colname="col2"> <p>整數。 將大型檔案分割為多個小型檔案時使用。 這有助於縮短處理時間。 The number indicates which part of the original file you're sending in. See the file name examples below. </p> </td> 
+   <td colname="col2"> <p>整數。 將大型檔案分割為多個小型檔案時使用。 這有助於縮短處理時間。 數字表示您要傳送的原始檔案的哪個部分。 請參閱下方的檔案名稱範例。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>Specifies that your file is compressed with optional gzip compression. </p> </td> 
+   <td colname="col2"> <p>指定您的檔案會以選用的gzip壓縮進行壓縮。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### File Name Examples
+### 檔案名稱範例
 
-The following examples show properly formatted files names. Your file names could look similar.
+下列範例顯示格式正確的檔案名稱。 您的檔案名稱可能看起來類似。
 
 <ul class="simplelist"> 
  <li> <code> adobe_id_111_222_333_444_1454442149.sync</code> </li> 
@@ -118,10 +118,10 @@ ID同步檔案的用途是使用UUID從您 [自己的Data Sources](../../../refe
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
 | 66184778222667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
-Step 1: the ID sync process will sync the s from  12345 with the  s in the left column. [!DNL DPUUID][!DNL DPID][!DNL Audience Manager][!DNL UUID]Note that the  "0" in the file name represents  s.
-[!DNL DPID][!DNL Audience Manager][!DNL UUID]<br/>
+步驟1:id同步程式將從12345 [!DNL DPUUID]與左 [!DNL DPID] 欄中的 [!DNL Audience Manager] s [!DNL UUID]同步。 請注意， [!DNL DPID] 檔案名稱中的「0」代表 [!DNL Audience Manager][!DNL UUID]s。
+<br/>
 
-**File 2 ( Download sample file)**[](assets/adobe_id_12345_67890_1477846458.sync)
+**檔案2** (下 [載範例檔案](assets/adobe_id_12345_67890_1477846458.sync))
 
 | [!DNL DPID] 12345 | [!DNL DPID] 67890 |
 |---|---|
