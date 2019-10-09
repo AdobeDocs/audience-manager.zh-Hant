@@ -5,7 +5,7 @@ seo-title: 在 Audience Manager 中處理 Experience Cloud 解決方案或其他
 solution: Audience Manager
 title: 實施與整合指南
 translation-type: tm+mt
-source-git-commit: 92b47cb110a6d48c4e491e6aabeada61a9ac958b
+source-git-commit: 0f122b55c779fd56dffff51c2b2aeea31353a29f
 
 ---
 
@@ -19,4 +19,3 @@ source-git-commit: 92b47cb110a6d48c4e491e6aabeada61a9ac958b
 * [媒體資料整合](/help/using/integration/media-data-integration/media-data-integration.md)
 * [接收觀眾資料](/help/using/integration/receiving-audience-data/receiving-audience-data-overview.md)
 * [傳送觀眾資料](/help/using/integration/sending-audience-data/send-audience-data.md)
-* [Audience manager技術合作夥伴](/help/using/integration/integrating-third-party/audience-manager-technology-partners.md)
