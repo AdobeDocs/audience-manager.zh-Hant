@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8478a28cd1b18d878d6938d77ee4f975deb524ef
 
 ---
 
@@ -35,12 +35,12 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col2"> <p>找不到主機名的配置：主 <code><i>機名</i></code> </p> </td> 
+   <td colname="col2"> <p>找不到主機名的配置： <code><i>hostname</i></code> </p> </td> 
    <td colname="col3"> <p>合作夥伴布建團隊尚未設定在請求中傳送的主機名稱。 如果您看到此錯誤訊息，請連絡您的Adobe代表。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col2"> <p>無效 <code> 的d_orgid值</code> （找不到此組織ID的組態）: <code><i>ID</i></code> </p> </td> 
+   <td colname="col2"> <p>無 <code> d_orgid</code> 效值（找不到此組織ID的組態）: <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>組織ID不正確。 </p> <p>請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Experience cloud管理中的「管理頁面」一節</a> ，以取得如何尋找組織的詳細資訊。 </p> </td> 
   </tr>
  </tbody>
@@ -64,18 +64,23 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>101 </p> </td> 
-   <td colname="col2"> <p>傳入 <code><i>ID的Experience Cloud ID無效</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 呼叫包含無</span> 效的Experience Cloud <span class="keyword"></span> ID。 </p> <p>檢查 <code> 標題字串中的d_mid=</code> key-value對。 請確定您傳入的是正確的 <span class="keyword"> Experience Cloud</span> ID，然後再試一次請求。 </p> </td> 
+   <td colname="col2"> <p>傳入的Experience Cloud ID無效 <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>DCS <span class="wintitle"> 呼叫包含無</span> 效的Experience Cloud <span class="keyword"></span> ID。 </p> <p>檢查標 <code> d_mid=</code> 題字串中的鍵值對。 請確定您傳入的是正確的 <span class="keyword"> Experience Cloud</span> ID，然後再試一次請求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>102 </p> </td> 
-   <td colname="col2"> <p>請求 <code><i>ID中傳遞的aam ID無效</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 呼叫包含無</span> 效的Audience Manager <span class="keyword"></span> ID。 </p> <p>檢查 <code> 標題字串中的d_uuid=</code> key-value對。 請確定您傳入的是正確的 <span class="keyword"> Audience Manager</span> ID，然後再試一次請求。 </p> </td> 
+   <td colname="col2"> <p>在請求中傳遞的aam ID無效 <code><i>ID</i></code> </p> </td> 
+   <td colname="col3"> <p>DCS <span class="wintitle"> 呼叫包含無</span> 效的Audience Manager <span class="keyword"></span> ID。 </p> <p>檢查標 <code> d_uuid=</code> 題字串中的鍵值對。 請確定您傳入的是正確的 <span class="keyword"> Audience Manager</span> ID，然後再試一次請求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>104 </p> </td> 
    <td colname="col2"> <p>所有客戶ID都無效 </p> </td> 
    <td colname="col3"> <p>您呼叫中的所有客戶ID都無效。 請檢查您的ID，然後再試一次。 </p> </td> 
+  </tr>
+    <tr> 
+   <td colname="col1"> <p>109</p> </td> 
+   <td colname="col2"> <p>合作伙 <code>HTTP referer</code> 伴不允許參考者 <code>Partner ID</code> </p> </td> 
+   <td colname="col3"> <p>呼叫上的[!DNL HTTP referer]標頭不允許呼叫上的夥伴ID。 檢查[!DNL HTTP referer]標題是否正確。</p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>111 </p> </td> 
@@ -98,7 +103,7 @@ In the tables below, *italics* represents a variable placeholder.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>171 </p> </td> 
-   <td colname="col2"> <p>遇到ID的退出標 <code><i>記</i></code> </p> </td> 
+   <td colname="col2"> <p>遇到ID的退出標籤 <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>客戶選擇不接收喜好式廣告。 </p> </td> 
   </tr> 
   <tr> 
@@ -169,7 +174,7 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>205 </p> </td> 
-   <td colname="col2"> <p>無法執行從 <code><i>ID到</i></code> ID的遷移 <code><i>，因為ID的配置檔案讀取失</i></code><code><i>敗</i></code> </p> </td>
+   <td colname="col2"> <p>無法執行從到的遷 <code><i>ID</i></code> 移，因 <code><i>ID</i></code>為配置檔案讀取失敗 <code><i>ID</i></code> </p> </td>
    <td colname="col3"> <p>如果您收到此錯誤，我們的資料儲存區(PCS<span class="wintitle"></span>)可能會發生延展性問題。 如果問題仍然存在，請聯絡您的Adobe代表。 </p> </td> 
   </tr> 
  </tbody> 
@@ -193,12 +198,12 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>301 </p> </td> 
-   <td colname="col2"> <p>超出客戶ID的最大數量。 允許的上限 <code><i>為上限</i></code>。 「找到」是 <code><i>最大可找到</i></code>。</p> </td> 
+   <td colname="col2"> <p>超出客戶ID的最大數量。 允許的上限 <code><i>maximum allowed</i></code>為。 找到 <code><i>maximum found</i></code>。</p> </td> 
    <td colname="col3"> <p>與跨裝置資料來源相關聯的客戶ID數量超過每個請求允許的跨裝置ID數量。 這些ID包括跨裝置、行動裝置或Cookie ID。 此限制目前設為10。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p>302 </p> </td> 
-   <td colname="col2"> <p>未授權的客戶ID <code><i>ID</i></code> </p> </td> 
+   <td colname="col2"> <p>未經授權的客戶ID <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>當客戶ID資料來源不歸目前組織ID所有時傳回。 如果您不知道或沒有組織ID，請參閱「組織與帳戶連結」中的「尋找組織ID」一節 <a href="https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external"></a> ，以取得如何尋找組織ID的詳細資訊。 </p> </td> 
   </tr> 
   <tr> 
@@ -213,28 +218,28 @@ In the tables below, *italics* represents a variable placeholder.
   </tr> 
   <tr> 
    <td colname="col1"> <p>306 </p> </td> 
-   <td colname="col2"> <p>已阻止聲明的設備ID <code><i>ID</i></code> </p> </td> 
+   <td colname="col2"> <p>已阻止已聲明的設備ID <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>裝置ID已識別為惡意，並已列入黑名單。 當我們在短時間內收到包含此裝置ID的 <span class="wintitle"> DCS</span> ，請求量會非常大時，就會發生這種情況。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
-   <td colname="col2"> <p>ID的封鎖描述檔 <code><i>作業</i></code> </p> </td> 
+   <td colname="col2"> <p>封鎖的描述檔操作 <code><i>ID</i></code> </p> </td> 
    <td colname="col3"> <p>由於ID已識別為惡意且已列入黑名單，因此已封鎖讀／寫動作。 請參閱錯誤代碼306。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
-   <td colname="col2"> <p>客戶ID <code><i>ID</i></code> 被捨棄，因為它超出每個請求所宣告的客戶ID的限制 </p> </td> 
+   <td colname="col2"> <p>客戶ID <code><i>ID</i></code> 已被捨棄，因為它超出每個請求所宣告的客戶ID的限制 </p> </td> 
    <td colname="col3"> <p>與錯誤301相關。 此錯誤會指定因超出限制而捨棄的客戶ID。 </p> <p>例如，如果DCS呼叫上宣告有12個客戶ID <span class="wintitle"></span> ，其中兩個會被捨棄。 為了傳遞被捨棄的客戶ID，回應中會出現兩次此錯誤（每個已棄置的客戶ID會顯示一次）。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
-   <td colname="col2"> <p>客戶ID已捨棄，因為它已超出指定名稱空間的限制。 命名空間ID <code><i>是</i></code>ID，客戶ID是 <code><i>ID</i></code>。 </p> </td> 
-   <td colname="col3"> <p>如果DCS呼叫上有3個以上的客戶ID宣告為相同的命名空間(<code> DPID</code>)，則會傳回 <span class="wintitle"> 此錯誤碼</span> 。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此範例 <span class="wintitle"> DCS請求中</span> ，有4個ID已宣告用於相同的命名空間（整合程式碼為1）。 其中一個ID被捨棄，並傳回錯誤310。 </p> </td> 
+   <td colname="col2"> <p>客戶ID已捨棄，因為它已超出指定名稱空間的限制。 命名空間ID <code><i>ID</i></code>是，客戶ID是 <code><i>ID</i></code>。 </p> </td> 
+   <td colname="col3"> <p>如果在DCS呼叫上針對相同的命名空間(<code> DPID</code>)宣告3個以上的客戶ID，則會傳回 <span class="wintitle"> 此錯誤</span> 碼。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此範例 <span class="wintitle"> DCS請求中</span> ，有4個ID已宣告用於相同的命名空間（整合程式碼為1）。 其中一個ID被捨棄，並傳回錯誤310。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
    <td colname="col2"> <p>請求包含無效參數 </p> </td> 
-   <td colname="col3"> <p>當至少 <span class="wintitle"> 一個URL參數未正確編碼時</span> ,DCS會傳回此錯誤碼。 在這種情況下， <span class="wintitle"> DCS會忽略</span> 整個請求。 </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>在上述範例請求中， <code> %</code> s序列的編碼不正確。 因此， <span class="wintitle"> DCS</span> 將忽略它。 </p> <p>正確編碼的範例應如下所示： </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
+   <td colname="col3"> <p>當至少 <span class="wintitle"> 一個URL參數未正確編碼時</span> ,DCS會傳回此錯誤碼。 在這種情況下， <span class="wintitle"> DCS會忽略</span> 整個請求。 </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>在上述範例請求中，序 <code> %</code> 列編碼不正確。 因此， <span class="wintitle"> DCS</span> 將忽略它。 </p> <p>正確編碼的範例應如下所示： </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
