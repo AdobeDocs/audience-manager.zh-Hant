@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 建立規則型或已登入的特徵
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 translation-type: tm+mt
-source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
+source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
 
 ---
 
@@ -23,6 +23,8 @@ source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
 在中 [!UICONTROL Trait Builder]，設 [!UICONTROL Basic Information] 定可讓您建立新特徵或編輯現有特徵。 規則 [!UICONTROL Basic Information] 型、已登入和演算法特性的設定都相同。 若要建立新特徵，請提供名稱（避免特殊字元）、資料來源，並選取儲存資料夾。 其他 [!UICONTROL Basic Information] 欄位為選填欄位。
 
 <!-- c_tb_basics.xml -->
+
+![create-trait](assets/create-trait.png)
 
 ### 定義的基本資訊欄位
 
@@ -50,12 +52,12 @@ source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
    <td colname="col2"> 用幾個字來說明特徵的目的或功能。 選填。 </td> 
   </tr> 
   <tr> 
+   <td colname="col1"> <b><span class="uicontrol"> 資料來源</span></b> </td> 
+   <td colname="col2"> 將特徵與特定資料提供者關聯。 必填. <p>使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您沒有任何Adobe Analytics報表套裝，資料來源類型選擇器會停用，而您只能看到Audience manager資料來源。</p>  </td> 
+  </tr>
+   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 事件類型</span></b> </td> 
    <td colname="col2"> 將特徵指派給類型或類別，通常根據函式（例如轉換、網站訪客、合作夥伴、頁面檢視等）。 選填。 <p> 若要瞭解如何建立轉換特徵，請參閱「在Audience manager中 <a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">建立轉換特徵」影片</a>。 </p></td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 資料來源</span></b> </td> 
-   <td colname="col2"> 將特徵與特定資料提供者關聯。 必填. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 整合代碼</span></b> </td> 
