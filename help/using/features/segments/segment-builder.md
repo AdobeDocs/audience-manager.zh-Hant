@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0ae
 translation-type: tm+mt
-source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
+source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
 1. 在「基 [本資訊](../../features/segments/segment-builder.md#segment-builder-controls-basics) 」部分：
    * 命名區段。 區段名稱的最大長度為255個字元。
    * 設定區段狀態（預設為作用中）。
-   * 選擇資料來源。 使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。 如果您沒有任何Adobe Analytics報表套裝，資料來源類型選擇器會停用，而您只能看到Audience manager資料來源。
+   * 選擇資料來源。 使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience manager資料來源。
    * 選擇用於區段限定的描述檔合併規則。
    * 將區段指派至儲存資料夾。
 2. 在「特 [徵](../../features/segments/segment-builder.md#segment-builder-controls-traits) 」區段：
@@ -76,7 +76,7 @@ source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
   </tr> 
   <tr> 
    <td colname="col1"> <b>資料來源</b> </td> 
-   <td colname="col2"> <p>將區段與特定資料提供者關聯。 <p>使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您沒有任何Adobe Analytics報表套裝，資料來源類型選擇器會停用，而您只能看到Audience manager資料來源。</p></p> </td> 
+   <td colname="col2"> <p>將區段與特定資料提供者關聯。 <p>使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience manager資料來源。</p></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>描述檔合併規則</b> </td> 
