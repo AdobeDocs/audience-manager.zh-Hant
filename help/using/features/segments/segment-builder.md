@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0ae
 translation-type: tm+mt
-source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
+source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
 
 ---
 
@@ -27,13 +27,15 @@ source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
 
 [!UICONTROL Segment Builder] 包含3個不同的部分： [!UICONTROL Basic Information]、 [!UICONTROL Traits]和 [!UICONTROL Destinations Mapping]。 若要建立區段，請填妥和區段中的必 [!UICONTROL Basic Information] 填欄 [!UICONTROL Traits] 位。 [!UICONTROL Destinations Mapping] 設定為選用。 請參閱以下說明以取得其他說明。
 
+![create-segment](assets/create-segment.png)
+
 1. 在「基 [本資訊](../../features/segments/segment-builder.md#segment-builder-controls-basics) 」部分：
    * 命名區段。 區段名稱的最大長度為255個字元。
    * 設定區段狀態（預設為作用中）。
-   * 選擇資料來源。
+   * 選擇資料來源。 使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。 如果您沒有任何Adobe Analytics報表套裝，資料來源類型選擇器會停用，而您只能看到Audience manager資料來源。
    * 選擇用於區段限定的描述檔合併規則。
    * 將區段指派至儲存資料夾。
-1. 在「特 [徵](../../features/segments/segment-builder.md#segment-builder-controls-traits) 」區段：
+2. 在「特 [徵](../../features/segments/segment-builder.md#segment-builder-controls-traits) 」區段：
    * 搜尋您要新增至區段的特徵，然後按一下 **[!UICONTROL Add Trait]**。 新增另一個特徵以建立特徵群組。
    * 按一下以開啟「進階搜尋」模式 **[!UICONTROL Browse All Traits]**。 依名稱、ID、說明或資料來源搜尋特徵。 在搜索時按一下一個資料夾，將結果限制在該資料夾及其子資料夾。 您也可以依特徵類型篩選特徵。
    * 建立區 [段時取得](trait-recommendations.md) 「即時特徵」建議。
@@ -42,7 +44,7 @@ source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
    * 將滑鼠指標暫留在時鐘圖示上 [，將時近和頻率](../../features/segments/recency-and-frequency.md) 規則新增至特徵。
    * 在您新增或移除特徵時檢視區段人口資料。 按一下 **[!UICONTROL Calculate Estimates]** 查看（或刷新）估計的人口數。 在「區段產生 [器」中，閱讀](../../features/segments/segment-builder-data.md#segment-populations) 「區段人口資料」的更多資訊。
    * Click **[!UICONTROL Save]** when done.
-1. *（可選）* 「目標對應」區段中的目標對 [應區段](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
+3. *（可選）* 「目標對應」區段中的目標對 [應區段](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
    * 搜索目標並按一下 **[!UICONTROL Add Destination]**。 請注意，目標必須已存在，您才能將其新增至區段。
    * Click **[!UICONTROL Save]** when done.
 
@@ -74,7 +76,7 @@ source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
   </tr> 
   <tr> 
    <td colname="col1"> <b>資料來源</b> </td> 
-   <td colname="col2"> <p>將區段與特定資料提供者關聯。 </p> </td> 
+   <td colname="col2"> <p>將區段與特定資料提供者關聯。 <p>使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您沒有任何Adobe Analytics報表套裝，資料來源類型選擇器會停用，而您只能看到Audience manager資料來源。</p></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>描述檔合併規則</b> </td> 
@@ -139,7 +141,7 @@ source-git-commit: 0d0806ef2c84b4770adc29d668351ac3f2d8cc5f
 
 ## 「目標映射」彈出式窗口中的欄位 {#fields-in-dest-mappings}
 
-在中 [!UICONTROL Segment Builder]，選 [!UICONTROL Add Destination] 擇目標後將顯示該對話框。 此窗口顯示有關目標和欄位的靜態資訊，這些欄位會根據目標類型而有所不同。 在空白欄位中提供必要資訊，以設定目標對應。
+在中 [!UICONTROL Segment Builder]，選 [!UICONTROL Add Destination] 擇目標後將顯示該對話框。 此窗口顯示有關目標和欄位的靜態資訊，這些欄位會根據目標類型而有所不同。 在空白欄位中提供必要資訊以設定目標對應。
 
 >[!NOTE]
 >
