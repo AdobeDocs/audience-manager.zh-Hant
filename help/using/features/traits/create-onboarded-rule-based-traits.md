@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 建立規則型或已登入的特徵
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 translation-type: tm+mt
-source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
+source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
 
 ---
 
@@ -53,7 +53,7 @@ source-git-commit: c7efca0cd13f0ca05d926e6675b74ef0170cbce1
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 資料來源</span></b> </td> 
-   <td colname="col2"> 將特徵與特定資料提供者關聯。 必填. <p>使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您沒有任何Adobe Analytics報表套裝，資料來源類型選擇器會停用，而您只能看到Audience manager資料來源。</p>  </td> 
+   <td colname="col2"> 將特徵與特定資料提供者關聯。 必填. <p>使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience manager資料來源。</p>  </td> 
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 事件類型</span></b> </td> 
