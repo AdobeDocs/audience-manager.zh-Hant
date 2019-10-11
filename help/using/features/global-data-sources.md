@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 全球資料來源
 uuid: null
 translation-type: tm+mt
-source-git-commit: ad4721cd2ff1f4b2b7cb814cbafdef1f59138a26
+source-git-commit: 631111be50d8e1b2e8ec81a295ecda5ec3fd6fee
 
 ---
 
@@ -21,11 +21,12 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 | 資料來源ID | 說明 |
 |---|---|
-| 20914 | **Google Advertising ID** - **** GAID代表執行Android作業系統的裝置。 |
-| 20915 | **Apple ID For Advertising** - **** IDFA代表執行iOS作業系統的裝置。 |
-| 121963 | **Roku ID for Advertising** - **** RIDA代表Roku串流裝置。 |
-| 389146 | **Microsoft Advertising ID** - **** MAID代表執行Windows 10作業系統的裝置。 |
-| 404660 | **Samsung** DUID代表Samsung智慧型電視。 |
+| 20914 | **Google Advertising ID** - **** GAID代表執行作業系統 [!DNL Android] 的裝置。 |
+| 20915 | **Apple ID For Advertising** - **** IDFA代表執行作業系統 [!DNL iOS] 的裝置。 |
+| 121963 | **Roku ID for Advertising** - **** RIDA代表串 [!DNL Roku] 流裝置。 |
+| 389146 | **Microsoft Advertising ID** - **** MAID代表執行作業系統 [!DNL Windows 10] 的裝置。 |
+| 404660 | **Samsung** DUID代表智 [!DNL Samsung] 慧型電視。 |
+| 488258 | **Amazon Fire TV廣告** ID代表執行的裝置 [!DNL Amazon Fire OS] |
 
 ## 從全域資料來源匯入資料
 
