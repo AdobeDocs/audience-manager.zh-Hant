@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 1ff46970470eae4bc30760468013d994c976e549
 
 ---
 
@@ -59,15 +59,15 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  <tbody> 
   <tr> 
    <td colname="col1"> <p>廣告商 </p> </td> 
-   <td colname="col2"> <p> <code>d_adsrc =資 <i>料來源ID或整合代碼</i></code> </p> <p>這是廣告商建立資料來源時提供的資料來源ID或整合代碼。 請參 <a href="../../../features/manage-datasources.md#create-data-source"> 閱建立資料來源</a>。 </p> </td> 
+   <td colname="col2"> <p> <code>d_adsrc = <i>data source ID or integration code</i></code> </p> <p>這是廣告商建立資料來源時提供的資料來源ID或整合代碼。 請參 <a href="../../../features/manage-datasources.md#create-data-source"> 閱建立資料來源</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>業務單位(BU) </p> </td> 
-   <td colname="col2"> <p> <code>d_bu =業 <i>務單元ID</i></code> </p> </td> 
+   <td colname="col2"> <p> <code>d_bu = <i>business unit ID</i></code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>促銷活動 </p> </td> 
-   <td colname="col2"> <p> <code>d_campaign =促銷 <i>活動ID</i></code> </p> </td> 
+   <td colname="col2"> <p> <code>d_campaign = <i>campaign ID</i></code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>創意 </p> </td> 
@@ -77,17 +77,17 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    <td colname="col1"> <p>Exchange </p> </td> 
    <td colname="col2"> <p>接受2個不同的鍵值對： </p> 
     <ul id="ul_3B3B751A8A134096B0912E81A0983B9D"> 
-     <li id="li_57BAC45A7B274AB695945E174A4D8A35"> <code>d_exchange =服 <i>務廣告的交換機ID</i></code> </li> 
-     <li id="li_CCDF00DE59D3451C8EF590DD3E1A806D"> <code>d_site =服 <i>務於之廣告之網站的ID</i></code> </li> 
+     <li id="li_57BAC45A7B274AB695945E174A4D8A35"> <code>d_exchange = <i>ID for the exchange that served the ad</i></code> </li> 
+     <li id="li_CCDF00DE59D3451C8EF590DD3E1A806D"> <code>d_site = <i>ID for the site an ad served on</i></code> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>插入順序(IO) </p> </td> 
-   <td colname="col2"> <p> <code>d_io =插 <i>入順序ID</i></code> </p> </td> 
+   <td colname="col2"> <p> <code>d_io = <i>insertion order ID</i></code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>平台 </p> </td> 
-   <td colname="col2"> <p> <code>d_src =數 <i>據源ID</i></code> </p> <p>這是提 <a href="../../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> 供中繼資料資訊的平台的資料來源</a> ID（例如DFA、Atlas、GBM、MediaMath等）。 </p> </td> 
+   <td colname="col2"> <p> <code>d_src = <i>data source ID</i></code> </p> <p>這是提 <a href="../../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> 供中繼資料資訊的平台的資料來源</a> ID（例如DFA、Atlas、GBM、MediaMath等）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>戰術 </p> </td> 
@@ -95,7 +95,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
   </tr> 
   <tr> 
    <td colname="col1"> <p>垂直 </p> </td> 
-   <td colname="col2"> <p> <code>d_vert = <i>垂直ID</i></code> </p> </td> 
+   <td colname="col2"> <p> <code>d_vert = <i>vertical ID</i></code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -134,7 +134,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ### 檔案傳送
 
-在命名並將資料添加到檔案後，將其發送到由提供的Amazon S3儲存目錄 [!DNL Audience Manager]。 請參 [閱中繼資料檔案的傳送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md) ，以 [及中繼資料檔案的狀態更新](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)。
+在命名並將資料添加到檔案後，將其發送到由提供的Amazon S3儲存目錄 [!DNL Audience Manager]。 請參 [閱中繼資料檔案的傳送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)。
 
 >[!MORE_LIKE_THIS]
 >
