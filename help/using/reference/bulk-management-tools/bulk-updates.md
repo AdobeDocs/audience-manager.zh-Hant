@@ -1,20 +1,20 @@
 ---
-description: 大量更新可讓您在單一作業中編輯多個區段、特徵、區段或特徵資料夾元素。 請依照下列指示進行大量更新。
+description: 大量更新可讓您在單一作業中編輯多個區段、特徵、模型、資料來源以及區段或特徵資料夾元素。 請依照下列指示進行大量更新。
 keywords: baam
-seo-description: 大量更新可讓您在單一作業中編輯多個區段、特徵、區段或特徵資料夾元素。 請依照下列指示進行大量更新。
+seo-description: 大量更新可讓您在單一作業中編輯多個區段、特徵、模型、資料來源以及區段或特徵資料夾元素。 請依照下列指示進行大量更新。
 seo-title: 大量更新
 solution: Audience Manager
 title: 大量更新
 uuid: 22f1badd-a274-4d3e-9957-a24bf8c1d0dc
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
 
 ---
 
 
 # 大量更新{#bulk-updates}
 
-大量更新可讓您在單一作業中編輯多個區段、特徵、區段或特徵資料夾元素。 請依照下列指示進行大量更新。
+大量更新可讓您在單一作業中編輯多個區段、特徵、模型、資料來源以及區段或特徵資料夾元素。 請依照下列指示進行大量更新。
 
 <!-- 
 
