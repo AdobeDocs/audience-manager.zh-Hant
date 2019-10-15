@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 大量請求
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: cb17d417aa6b3cc213e69c5d71051f235d81c2a5
 
 ---
 
@@ -32,10 +32,11 @@ t_bulk_requests.xml
 1. Click the **[!UICONTROL Request]** tab.
 2. 在工作表頂端的工具列中，按一下與您要處理的資料對應的請求按鈕。 您可以要求：
 
-   * 資料提供者ID
+   * 演算法模型
+   * 資料來源
    *  衍生信號
    * 目標映射
-   * 規則型和已登入特徵
+   * 演算法、規則型和已登入特徵
    * 區段
    * 特徵和區段資料夾ID
    API [!DNL Audience Manager] 會將大量資料寫回工作 [!UICONTROL Request] 表。
