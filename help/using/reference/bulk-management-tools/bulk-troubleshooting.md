@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量管理工具的疑難排解提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 translation-type: tm+mt
-source-git-commit: cb3819192c523f9c20e9a15ca5d43ef36c49e900
+source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
 
 ---
 
@@ -65,4 +65,8 @@ source-git-commit: cb3819192c523f9c20e9a15ca5d43ef36c49e900
   </tr> 
  </tbody> 
 </table>
+
+## 錯誤訊息
+
+有時，您會在進行大量變更時收到錯誤訊息。 若要解譯錯誤訊息，請參 [閱API檔案中的](/help/using/api/rest-api-main/aam-api-getting-started.md) 「回應代碼定義」。
 
