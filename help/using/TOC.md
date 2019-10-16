@@ -4,7 +4,7 @@ audience: 最終用戶
 user-guide-title: Audience manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 3c68d2e04bf35763aa44edff01fd43a8c412ce1f
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
@@ -116,7 +116,6 @@ source-git-commit: 3c68d2e04bf35763aa44edff01fd43a8c412ce1f
       + [描述檔合併規則的報表量度](features/profile-merge-rules/profile-link-metrics.md)
       + [描述檔合併規則與裝置取消區段程式](features/profile-merge-rules/merge-rule-unsegment.md)
       + [即時跨裝置隱藏功能](features/profile-merge-rules/instant-cross-device-suppression.md)
-      + [配置式合併規則與設備圖形的重要注意事項](features/profile-merge-rules/considerations-pmr-device-graph.md)
    + 群體{#segments}
       + [區段：目的、構成和規則](features/segments/segments-purpose.md)
       + [區段清單檢視](features/segments/segments-dashboard.md)
