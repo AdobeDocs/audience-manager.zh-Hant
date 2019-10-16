@@ -1,75 +1,79 @@
 ---
-description: 個人檔案合併規則選項可讓您根據業務需求或目標，擴充或收緊對特定對象的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。 目前，描述檔合併規則僅適用於即時目標。
-seo-description: 個人檔案合併規則選項可讓您根據業務需求或目標，擴充或收緊對特定對象的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。 目前，描述檔合併規則僅適用於即時目標。
+description: 個人檔案合併規則選項可讓您根據業務需求或目標，擴充或收緊對特定對象的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。
+seo-description: 個人檔案合併規則選項可讓您根據業務需求或目標，擴充或收緊對特定對象的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。
 seo-title: 描述檔合併規則的一般使用案例
 solution: Audience Manager
 title: 描述檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
 
 # 描述檔合併規則的一般使用案例 {#general-use-cases-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rules] 選項可讓您根據業務需求或目標來擴充或收緊受眾對特定受眾的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。 目前， [!UICONTROL Profile Merge Rules] 僅能與即時目標搭配使用。
-
-![](assets/merge-rules-options.png)
+[!UICONTROL Profile Merge Rules] 選項可讓您根據業務需求或目標來擴充或收緊受眾對特定受眾的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。 [!UICONTROL Profile Merge Rules] 使用即時和批次目的地。
 
 >[!TIP]
 >
->有關這些設定的定義和說 [!UICONTROL Merge Rule] 明，請參 [閱定義的配置檔案合併規則選項](../../features/profile-merge-rules/merge-rule-definitions.md)。
+>有關這些設定的定義和說 [!UICONTROL Merge Rule] 明，請參 [閱定義的配置檔案合併規則選項](merge-rule-definitions.md)。
 
-## 目標鎖定 {#focused-targeting}
+## 裝置定位 {#device-personalization}
 
-網站的使用者驗證應觸發對的宣告ID呼叫 [!DNL Audience Manager]。 在此事件後， [!DNL Audience Manager] 將特徵資料寫入（及讀取）已驗證的描述檔。 已驗證的設定檔可讓 [!DNL Audience Manager]您：
+此案例適用於想要評估Audience manager中定義之受眾群體之單一裝置設定檔的行銷人員，以便使用支援裝置ID（DSP、臨場感個人化平台和其他裝置型定位平台）的定位平台為裝置提供一致的體驗，而不考慮使用者驗證。
 
-* 將特徵寫入特定使用者的已驗證描述檔。
-* 識別多個裝置使用者，並區分其不同之處以進行細分。
+若要建立僅針對裝置設定檔的規則，請選取 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]**。
 
-### 觸及已驗證的使用者
+![僅限裝置](assets/device-only.png)
 
-已驗證的設定檔選項會建立規則，讓您根據離線屬性鎖定登入網站或應用程式的使用者。 例如，金融服務公司會使用這個選項，以根據收入或離線活動的目標信用卡升級優惠或專業服務優惠鎖定已驗證的使用者。 另一個例子是，航空公司會根據累計里程，以經認證的常客為目標。
+假設約翰擁有三部智慧手機。 其中兩款是iPhone 7s的資料計畫A，其中一款是三星的資料計畫B。John的行動電信業者未考慮他在這三種裝置上的驗證狀態，而是想為他提供資料計畫升級，但僅適用於在資料計畫A上執行的iPhone 7裝置。
 
-若要建立僅觸及已驗證使用者的規則，請選取 **[!UICONTROL Current Authenticated Profile]** + **[!UICONTROL No Device Profile]**。 此選項將僅使用已驗證的描述檔資料來評估區段。 此規則會忽略匿名裝置設定檔中的資料。
+使用 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]** 規則 [!DNL Device 1] ，並且兩 [!DNL Device 3] 者都符合區段的資格，而裝置2則會被忽略。
 
-若要在匿名裝置設定檔中加入資料，請使 **[!UICONTROL Current Authenticated Profile]** 用+規 **[!UICONTROL Current Device Profile]** 則。
+![僅限裝置](assets/device-management.png)
 
-### 根據先前的驗證狀態觸及使用者
+## 共用裝置定位 {#target-shared-devices}
 
-這些選項會在特定使用者瀏覽時觸及他們，但未登入。 您可以使用依賴推斷的使用者層級定位的選項來執行此動作。 推斷的定位功能可協助您觸及未明確驗證您網站但可能正線上上瀏覽的訪客。 它的運作方式是從最後一個已驗證的描述檔讀取（但不寫入）資料。 此外，為了讓已驗證的描述檔保持乾淨， [!DNL Audience Manager] 請將新的特徵資格寫入裝置描述檔，而非已驗證的描述檔。 例如，假設您是行銷人員，想要針對未登入您網站或應用程式的現有客戶測試不同的選件。 身為行銷人員，您可以針對目前未經驗證的客戶測試這些廣告，以瞭解哪些優惠獲得最多回應。
+假設John和他的妻子Jane使用相同的筆記型電腦去線上商店訂購各種商品。
 
-根據預先驗證觸及使用者的規則範例為：
+約翰用自己的賬戶來預訂旅行票和特價優惠，而簡用自己的賬戶來購買音樂和電影。
 
-* **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Current Device Profile]**
+該店的行銷團隊可使用 **[!UICONTROL Current Authenticated Profiles]** +規 **[!UICONTROL No Device Profile]** 則，根據John和Jane的驗證活動，針對特定交易進行鎖定。
 
-## 擴充目標鎖定 {#expanded-targeting}
+![當前——無設備](assets/current-no-device.png)
 
-除了有助於觸及特定客戶的規則外，行銷人員還需要增加可用於定位的資料集大小的規則。 [!UICONTROL Profile Merge Rules] 讓您使用裝置設定檔選項來執行此動作。 裝置選項會擴充符合分段資格的資料集，因為這些資料集會根據使用者在一或多個裝置上處於匿名狀態時所實現的特性。 當您嘗試使用個人裝置圖表觸及使用者所有裝置，或是使用家庭裝置圖表觸及家庭內所有裝置時，這可能很有用。 此選項的使用案例可能包括廣告家庭度假優惠。 在這種情況下，如果任何裝置上的使用者對選件有興趣，您會希望將選件套用至家庭中的每個裝置。
+使用此規則，Audience manager會完全忽略裝置設定檔、符合區段John的CRM ID資格，而不符合Jane的CRM ID資格。
 
-若要建立可展開定位資料集的規則，請選取 **[!UICONTROL Last Authenticated Profiles]** +規 **[!UICONTROL Device Graph]** 則。
+![共用裝置定位](assets/shared-device-targeting.png)
 
-<!-- 
+## 線上／離線定位 {#device-household-targeting}
 
-<p>Rules that use the device graph option extend your data set even further. With the device graph option, <span class="keyword"> Audience Manager</span> relies on the device profiles aggregated from the last 3 devices that a visitor used for authentication to your site. The device graph rules include: </p> 
-<p> 
- <ul id="ul_3008B6AF16EC408F98EC4088111281FB"> 
-  <li id="li_FA2087F1ED454CD0B9E09656B79ED23B"> <b><span class="uicontrol"> Current Authenticated Profiles</span></b> + <b><span class="uicontrol"> Profile Merge Device Graph</span></b> or a Co-op device graph option </li> 
-  <li id="li_001A8DB517CB4EE394DBD530F2080FD5"> <b><span class="uicontrol"> Last Authenticated Profiles</span></b> + <b><span class="uicontrol"> Profile Merge Device Graph</span></b> or a Co-op device graph option </li> 
- </ul> </p> 
-<p> 
- <note type="tip">
-  Create a simple rule with 
-  <b><span class="uicontrol"> No Authenticated Profile</span></b> + 
-  <b><span class="uicontrol"> Current Device Profile</span></b> when you're still developing a strategy and are unsure about which options to choose or if your site doesn't use authentication. 
- </note> </p>
+此使用案例涵蓋家庭身份管理。 公司可以使用+規則，將單一裝置描述檔與在該裝置上驗證的最後一個描述檔 **[!UICONTROL Last Authenticated Profiles]** 合併 **[!UICONTROL Device Profile]** 。
 
- -->
+![last-device-profile](assets/last-device-profile.png)
+
+讓我們考慮一個由年收入超過$100.000美元的家庭組成的部分，其中至少包含一個 [!DNL iPhone 7] 設備 [!DNL Data Plan B]。 我們有兩個家用個人檔案（跨裝置個人檔案），每個人都與兩個不同的裝置個人檔案連接。 符合區段資格所需的特性會散布在裝置和跨裝置描述檔中。
+
+Audience manager會合併每個裝置+跨裝置描述檔配對，以查看合併的一組特徵是否符合區段的資格。 由於Audience manager會評估合併中包含的每個個人檔案，因此裝置個人檔案和家庭個人檔案都可以分段。
+
+裝置與家庭個人檔案之間的連結可讓Audience manager符合區段 [!DNL Household 2] 資格，但無法 [!DNL Household 1]。 從 [!DNL Household 2]，僅 [!DNL Device 3] 符合區段資格。 這 [!UICONTROL Profile Merge Rule] 可讓行銷人員向個別裝置([!DNL Device 3])和更廣大的家庭([!DNL Household 2])傳遞一致的行銷訊息。
+
+![家庭管理](assets/household-management.png)
+
+## 以人為本的定位 {#all-cross-device}
+
+此定位藍本僅適用於已購買附加元件 [!DNL People-Based Destinations] 的客戶。 此規則可讓行銷人員根據自己的驗證資料觸及客戶。
+
+比方說，線上零售商想要透過社交平台觸及現有客戶，並根據先前的訂單向他們展示個人化優惠。 有了 [!UICONTROL People-Based Destinations]，他們可以將雜湊的電子郵件地址從自己擷取至 [!DNL CRM] Audience Manager、從離線資料建立區段，並將這些區段傳送至他們想要廣告的社交平台，以最佳化其廣告支出。
+
+若要進一步瞭解此選項，請參 [閱以人為本的目的地](../destinations/people-based-destinations-overview.md)。
+
+![全跨裝置](assets/all-cross-device.png)
 
 ## 裝置圖表選項 {#device-graph-options}
 
-選擇規 [!UICONTROL device graph] 則的選項 [!UICONTROL Profile Merge] 取決於您的數位屬性和業務目標所特有的條件。 這些一般准則可協助您瞭解何時使用一種圖形，而不是使用另一種圖形。 請注意，您必須是外部裝置圖 [!DNL Adobe Experience Cloud Device Co-op] 形的成員，或與外部裝置圖形有合約關係，才能使用這些選項。 請參閱下表，以取得有關何時選擇裝置圖形選項的一般指引。 如需特定使用案例，請參 [閱描述檔連結裝置圖表使用案例](../../features/profile-merge-rules/profile-link-use-case.md)[和外部裝置圖表使用案例](../../features/profile-merge-rules/external-graph-use-cases.md)。
+選擇規 [!UICONTROL device graph] 則的選項 [!UICONTROL Profile Merge] 取決於您的數位屬性和業務目標所特有的條件。 這些一般准則可協助您瞭解何時使用一種圖形，而不是使用另一種圖形。 請注意，您必須是 [Adobe Experience Cloud Device Co-op的會員](https://docs.adobe.com/content/help/en/device-co-op/using/home.html) ，或與外部裝置圖表有合約關係才能使用這些選項。 有關何時選擇設備圖形選項的一般指導，請參閱下表。 如需特定使用案例，請參 [閱描述檔連結裝置圖表使用案例](profile-link-use-case.md)[和外部裝置圖表使用案例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -80,7 +84,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 個人資料連結</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 描述檔連結裝置圖表</span> </p> </td> 
    <td colname="col2"> <p><span class="wintitle"> 使用「描述檔</span> 連結」選項建立的 <span class="wintitle"> 「描述檔合併規則</span> 」最適合： </p> <p> 
      <ul id="ul_FF44FA894BB2448887C8EDA9C8407EF9"> 
       <li id="li_E22505210C664FE6A9AA7C61244B36DA">具有高等級客戶驗證的數位屬性。 </li> 
@@ -100,9 +104,13 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </tbody> 
 </table>
 
+請觀看以下影片，以取得可能使用案例的概觀 [!UICONTROL Profile Merge Rules]。
+
+>[!VIDEO](https://video.tv.adobe.com/v/28975/?captions=chi_hant)
+
 >[!MORE_LIKE_THIS]
 >
->* [描述檔連結裝置圖表使用案例](../../features/profile-merge-rules/profile-link-use-case.md)
->* [外接式裝置圖表使用案例](../../features/profile-merge-rules/external-graph-use-cases.md)
+>* [描述檔連結裝置圖表使用案例](profile-link-use-case.md)
+>* [外接式裝置圖表使用案例](external-graph-use-cases.md)
 >* [描述檔合併規則常見問答集](../../faq/faq-profile-merge.md)
 
