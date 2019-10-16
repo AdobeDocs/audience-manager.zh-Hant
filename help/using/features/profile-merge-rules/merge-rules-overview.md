@@ -6,14 +6,16 @@ solution: Audience Manager
 title: 描述檔合併規則概觀
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
 translation-type: tm+mt
-source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
 
 # 描述檔合併規則概觀 {#profile-merge-rules-overview}
 
-您 [!UICONTROL Profile Merge Rules] 可以控制用於細分的資料集，並可以跨多種裝置精確定位人員。
+您可 [!UICONTROL Profile Merge Rules] 以控制哪些資料集用於細分，並可以跨多種裝置精確鎖定使用者。
+
+>[!VIDEO](https://video.tv.adobe.com/v/28974?captions=chi_hant)
 
 ## 使用匿名和已驗證的設定檔來收集和定位資料 {#data-collection-targeting}
 
@@ -21,7 +23,7 @@ source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
 
 ![](assets/unauthenticated2.png)
 
-[!UICONTROL Profile Merge Rules] 從根本上改變 [!DNL Audience Manager] 了收集資料和群體使用者以進行定位的方式。 它可讓您使用2種不同的描述檔類型、裝置描述檔和已驗證的描述檔。
+[!UICONTROL Profile Merge Rules] 從根本上改變 [!DNL Audience Manager] 了收集資料和群體使用者以進行定位的方式。 它可讓您使用2種不同的描述檔類型、裝置描述檔和已驗證 [的描述檔](../../reference/visitor-authentication-states.md)。
 
 <table id="table_CE98C0E32A964B27804736A896233869"> 
  <thead> 
@@ -50,7 +52,7 @@ source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
  </tbody>
 </table>
 
-這些不同的描述檔可控制您用於區段的資料。 例如，透過驗證的設定檔，您可以根據來自單一人員多個裝置的資料，建立精確的區段。 這表示您可以跨多種裝置為客戶提供一致的品牌體驗。 此外，跨裝置驗證可 [!DNL Audience Manager] 讓使用者對應其線上活動所使用的不同平台。 這叫做 [!UICONTROL Profile Link Device Graph]。
+這些不同的描述檔可控制您用於區段的資料。 例如，透過驗證的 [設定檔](../../reference/visitor-authentication-states.md)，您可以根據單一使用者從多個裝置取得的資料建立精確的區段。 這表示您可以跨多種裝置為客戶提供一致的品牌體驗。 Audience Manager將個人用於線上活動的不同裝置對應至其已驗證的個人檔案，以達成此 [目的](../../reference/visitor-authentication-states.md)。 這些映射稱為 [!UICONTROL Profile Link Device Graph]。
 
 ![](assets/authenticated2.png)
 
@@ -58,23 +60,8 @@ source-git-commit: f42267d3acf2570fc87d50c4c4e65826902d9e55
 
 您 [!UICONTROL Profile Merge Rules] 可以：
 
-* 根據已驗證的個人檔案、匿名個人檔案或兩者的組合來定位使用者。
+* 根據已驗證的 [個人檔案](../../reference/visitor-authentication-states.md)、匿名個人檔案或兩者的組合來定位使用者。
 * 跨裝置鎖定特定客戶。
 * 根據確定性資料建立裝置圖表。
 * 根據不同的描述檔，微調區段中的資料。
 * 進一步瞭解您的受眾。
-
-## 入門 {#getting-started}
-
-如需詳細資訊，請參 [閱下列章節](../../faq/faq-profile-merge.md) 和常見問答 [!UICONTROL Profile Merge Rules]集。
-
-* [描述檔合併規則快速入門](/help/using/features/profile-merge-rules/merge-rules-start.md)
-* [描述檔合併規則控制面板](/help/using/features/profile-merge-rules/merge-rules-dashboard.md)
-* [定義的配置檔案合併規則選項](/help/using/features/profile-merge-rules/merge-rule-definitions.md)
-* [描述檔合併規則的一般使用案例](/help/using/features/profile-merge-rules/merge-rule-targeting-options.md)
-* [描述檔連結裝置圖表使用案例](/help/using/features/profile-merge-rules/profile-link-use-case.md)
-* [外接式裝置圖表使用案例](/help/using/features/profile-merge-rules/external-graph-use-cases.md)
-* [描述檔合併規則的報表量度](/help/using/features/profile-merge-rules/profile-link-metrics.md)
-* [描述檔合併規則與裝置取消區段程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)
-* [即時跨裝置隱藏功能](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)
-* [配置式合併規則與設備圖形的重要注意事項](/help/using/features/profile-merge-rules/considerations-pmr-device-graph.md)
