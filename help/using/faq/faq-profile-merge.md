@@ -2,25 +2,21 @@
 description: 常見描述檔合併規則與裝置圖形問題的解答。
 keywords: 組織 ID
 seo-description: 常見描述檔合併規則與裝置圖形問題的解答。
-seo-title: ' 描述檔合併規則與裝置圖表常見問答集'
+seo-title: 描述檔合併規則與裝置圖表常見問答集
 solution: Audience Manager
-title: ' 描述檔合併規則與裝置圖表常見問答集'
+title: 描述檔合併規則與裝置圖表常見問答集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ---
 
 
-#  描述檔合併規則與裝置圖表常見問答集{#profile-merge-rules-and-device-graph-faq}
+# 描述檔合併規則與裝置圖表常見問答集{#profile-merge-rules-and-device-graph-faq}
 
 常見描述檔合併規則與裝置圖形問題的解答。
 
-<!-- 
-
-profile-merge-faq.xml
-
- -->
+<!-- profile-merge-faq.xml -->
 
 ## 裝置圖形基礎 {#device-graph-basics}
 
@@ -28,121 +24,105 @@ profile-merge-faq.xml
 
 裝置圖表是一組ID映射，用於定義匿名裝置群組。 它根據從每個設備收集的信號中的公共元素，將這些設備關聯到個人或家庭。 這些信號有助於識別個人或家庭層級的設備。
 
-<br> 
+ 
 
 **什麼是外部裝置圖表？**
 
-外部裝置圖表是指並非只由 [!DNL Audience Manager] 您自己的跨裝置資料來源建立的任何裝置圖表。 例如，當您建立描述檔合 [並規則](../features/profile-merge-rules/merge-rules-start.md) ，並選擇 [!UICONTROL Co-op Device Graph] 或協力廠商裝置圖表選項時，就會使用外部裝置圖表。 請參閱 [裝置選項](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部裝置圖表是指並非只由 [!DNL Audience Manager] 您自己的跨裝置資料來源建立的任何裝置圖表。 例如，當您建立描述檔合 [並規則](merge-rules-start.md) ，並選擇 [!UICONTROL Co-op Device Graph] 或協力廠商裝置圖表選項時，就會使用外部裝置圖表。 請參閱 [裝置選項](merge-rule-definitions.md#device-options)。
 
-<br> 
+ 
 
 **在中使用外部裝置圖表時，有哪些常見使用案例[!UICONTROL Profile Merge Rule]?**
 
-在裝置中使用裝置圖表的主要目 [!UICONTROL Profile Merge Rule] 的是評估並限定屬於單一個人或家庭的多個裝置的特定區段。 例如，此細分本身可能有多種用途，例如鎖定潛在客戶的受眾，並透過DSP提供廣告，或透過臨場感個人化平台個人化客戶的臨場感。 See [External Device Graph Use Cases](../features/profile-merge-rules/external-graph-use-cases.md).
+在裝置中使用裝置圖表的主要目 [!UICONTROL Profile Merge Rule] 的是評估並限定屬於單一個人或家庭的多個裝置的特定區段。 例如，此細分本身可能有多種用途，例如以DSP所提供的廣告鎖定潛在客戶，或透過臨場感個人化平台個人化客戶的臨場感。 See [External Device Graph Use Cases](external-graph-use-cases.md).
 
-<br> 
+ 
 
 **Audience manager是否提供外部裝置圖形的全域支援？**
 
 不會。外部裝置圖表僅適用於美國和加拿大。
 
-<br> 
+ 
 
 **更新外部裝[!DNL Audience Manager]置圖表資料的頻率為何？**
 
 每週一次。
 
-<br> 
+ 
 
 ## 裝置圖形和描述檔合併規則 {#device-graph-profile-merge-rules}
 
 **如何使[!DNL Audience Manager]用裝置圖表？**
 
-在中 [!DNL Audience Manager]，當您建立描述檔合併規則時，裝置圖 [形會顯示為設定選項](../features/profile-merge-rules/merge-rules-start.md)。 透過您的 [!UICONTROL Profile Merge Rules]裝置圖表，這些裝置圖表可協助您 [!DNL Audience Manager]:
+在中 [!DNL Audience Manager]，當您建立描述檔合併規則時，裝置圖 [形會顯示為設定選項](merge-rules-start.md)。 透過您的 [!UICONTROL Profile Merge Rules]裝置圖表，這些裝置圖表可協助您 [!DNL Audience Manager]:
 
 * 將多個裝置描述檔合併在一起。 這會產生單一的特徵超集。
 * 評估區段資格的特徵超集（而不是個別評估每個裝置描述檔）。
 * 新增合格裝置至可用區段。
 
-<br> 
+ 
 
 **我可以[!UICONTROL Profile Merge Rules]建立多少？**
 
-目前，您最多可以建立3個 [!UICONTROL Profile Merge Rules]。
+目前，您最多可以建立4個 [!UICONTROL Profile Merge Rules]。 第四個描述檔合[!UICONTROL All Cross-Device Profiles]並規則()僅適用於購買附加元件 [!UICONTROL People-Based Destinations] 的客戶。
 
-<br> 
+ 
 
 **在中使用裝置圖[!DNL Audience Manager]形時，合併和讀取多少裝置描述檔[!UICONTROL Profile Merge Rule]?**
 
-當使用區段來限定裝置時 [!UICONTROL Profile Merge Rule],Audience manager會合併並讀取目前的裝置設定檔，以及最多3個由您選取的裝置圖表選項連結的其他裝置設定檔。
+當使用區段來限定裝置時 [!UICONTROL Profile Merge Rule],Audience manager會合併並讀取目前的裝置設定檔，以及最多99個由您選取的裝置圖表選項連結的其他裝置設定檔。
 
-<br> 
+ 
 
 **在中使用裝置圖表時，哪些裝置符合區段的資格[!UICONTROL Profile Merge Rule]?**
 
 設備合 [!DNL Audience Manager] 並和讀取是與限定段的設備相同。
 
->[!NOTE]
->
->對於外部裝置圖 [!DNL Audience Manager] 形，在平台層級儲存裝置之間的對應，並選取3，而不評估其與您例項中所檢視之裝置的關係 [!DNL Audience Manager]。
-
-<br> 
-
-**哪些裝&#x200B;*置可使用*包含裝置圖表[!UICONTROL Profile Merge Rule]的區段符合資格？**
-
-若要符合區段資格，在建立區段後，Audience manager必須已在我們的 [邊緣資料伺服器上](../reference/system-components/components-edge.md) ，看到裝置。 此外，邊緣伺服器：
-
-* 儲存描述檔資料最多14天。
-* 刪除裝置描述檔（如果裝置描述檔已停用超過14天）。 注意：此動作只會從邊緣移除資料。 其他系統將保留記錄的時間間隔更長。 請參閱隱 [私與資料保留常見問答](../faq/faq-privacy.md)。
-* 如果在整個平台上記錄該描述檔 [!DNL Audience Manager] 的任何活動，請重設14天間隔。
-
-另請參閱資 [料收集元件](../reference/system-components/components-data-collection.md)。
-
-<br> 
+ 
 
 **哪裡可[!DNL Audience Manager]以傳送使用裝置圖形的[!UICONTROL Profile Merge Rule]符合條件的區段？**
 
-[!DNL Audience Manager] 可以以批次檔案或即時傳送區段至目的地。 此外，如上述常見問答集項目所述：若要符合區段資格，在建立區段後，必須在我們 [!DNL Audience Manager] 的 [邊緣資料伺服器](../reference/system-components/components-edge.md) 上看到裝置。
+[!DNL Audience Manager] 可以以批次檔案或即時傳送區段至目的地。
 
-<br> 
+ 
 
 ## 區段、裝置圖形和描述檔合併規則 {#segments-device-graphs-rules}
 
 **當裝[!DNL Audience Manager]置不再符合使用裝置圖表之區段的資格時，如何[!UICONTROL Profile Merge Rule]取消區段？**
 
-當評估使用裝置圖形的區段時，Audience manager會合併最多 [!UICONTROL Profile Merge Rule] 四個裝置。 如果發出未分段信號，則當前設備和即時顯示的另外三個設備將從目標的分段中刪除。 例如，在六裝置叢集中，最多會合併、評估四個裝置，並符合區段的資格。 同樣地，最多可合併、評估和取消分段四個裝置。
+當使用裝置圖表來評估區段時，Audience manager會合併多達100 [!UICONTROL Profile Merge Rule] 個裝置。 如果發出未分段信號，則當前設備和最多99個附加設備將從目的地的分段中刪除。 如需取消分段的詳細資訊，請參 [閱描述檔合併規則和裝置取消分段程式](merge-rule-unsegment.md)。
 
-<br> 
+ 
 
 **如果目的地可以取消區段裝置，使用裝置圖表的裝置是否[!UICONTROL Profile Merge Rules]會從區段中移除？**
 
 是。請參閱上述說明。
 
-<br> 
+ 
 
 **如果我建立的區段使用[!UICONTROL Profile Merge Rule]裝置圖表，且區段同時使用即時和已登入的資料，我的區段是否會隨著已登入的資料變更而更新？**
 
-不會。目前， [!DNL Audience Manager] 僅以使用裝置 [!UICONTROL Profile Merge Rule] 圖形的區段即時評估區段。 評估區段後對已登入特徵所做的更新，會在我們的邊緣資料伺服器下次看到裝置時，用於限定 [區段](../reference/system-components/components-edge.md)。 這假設裝置描述檔仍在邊緣伺服器中運作，且已將已登入的資料提供給這些系統。 另請參閱隱私權 [與資料保留常見問答](../faq/faq-privacy.md)。
+是。
 
-<br> 
+ 
 
 **區段大小估計是否包含符合區段資格的裝置，此裝置是根據使用裝置圖形選[!UICONTROL Profile Merge Rule]項的連線而提供？**
 
-不會。請參閱「區段產生器」 [!UICONTROL Estimated Real-Time Population] 中「特 [!UICONTROL Estimated Total Population] 徵」 [和「區段人口族群資料」的定義](../features/segments/segment-builder-data.md)。
+不會。請參閱「區段產生器」 [!UICONTROL Estimated Real-Time Population] 中「特 [!UICONTROL Estimated Total Population] 徵」 [和「區段人口族群資料」的定義](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/segments/segment-builder-data.html)。
 
-<br> 
+ 
 
 **是[!UICONTROL Addressable Audiences]否包含符合區段資格的裝置，此裝置是根據使用裝置圖[!UICONTROL Profile Merge Rule]形選項的連線所提供？**
 
 是。
 
-<br> 
+ 
 
-**如果區段使用[!UICONTROL Profile Merge Rule]帶[!UICONTROL No Authenticated Profile]有且符合區段之裝置的特性僅儲存在已驗證的描述檔上，區段的總人口數會是0嗎？**
+**如果區段使用[!UICONTROL Profile Merge Rule]帶[!UICONTROL No Cross-Device Profile]有且符合區段之裝置的特性僅儲存在跨裝置描述檔中，區段的總人口會是0嗎？**
 
-不會。今天，Audience manager會將對應至已驗證設定檔的裝置計算為符合區段資格。
+是。當「描述檔合併規則」設為時，Audience manager不會在區段評估中計算跨裝置描述檔上儲存的特徵 [!UICONTROL No Cross-Device Profile]。
 
-<br> 
+ 
 
 ## 特徵頻率、裝置圖形和描述檔合併規則 {#trait-freq-device-rules}
 
@@ -182,15 +162,15 @@ profile-merge-faq.xml
  </tbody> 
 </table>
 
-<br> 
+ 
 
 ## 報表、裝置圖形和描述檔合併規則 {#reports-device-graphs-rules}
 
 **我可以看到使用裝置圖表的裝置可[!UICONTROL Profile Merge Rule]以到達的裝置數嗎？**
 
-是。報表會傳回層級的 [!UICONTROL Profile Merge Rule] 資料。 報告資料會每日更新。 資料是根據您帳戶中看到的裝置，而非由裝置圖表連結的裝置。 請參 [閱描述檔合併規則的報表量度](../features/profile-merge-rules/profile-link-metrics.md)。
+是。報表會傳回層級的 [!UICONTROL Profile Merge Rule] 資料。 報告資料會每日更新。 資料是根據您帳戶中看到的裝置，而非由裝置圖表連結的裝置。 請參 [閱描述檔合併規則的報表量度](profile-link-metrics.md)。
 
-<br> 
+ 
 
 **我可以即時看到使用裝置圖表的符合特定&#x200B;*區段*[!UICONTROL Profile Merge Rules]的裝置數量嗎？**
 
@@ -232,7 +212,7 @@ profile-merge-faq.xml
  </tbody> 
 </table>
 
-<br> 
+ 
 
 **我是否可以看到使用裝置圖表的特定區段符[!UICONTROL Profile Merge Rule]合的裝置總數？**
 
@@ -270,13 +250,13 @@ profile-merge-faq.xml
  </tbody> 
 </table>
 
-<br> 
+ 
 
 **報表、報表和報表中是否包含[!UICONTROL Profile Merge Rule]使用裝置圖表的裝置符合區[!UICONTROL Interactive]段[!UICONTROL Overlap]的資[!UICONTROL Audience Optimization]格？**
 
-無
+否。
 
 >[!MORE_LIKE_THIS]
 >
->* [個人資料連結](../features/profile-merge-rules/merge-rules-overview.md)
+>* [個人資料連結](merge-rules-overview.md)
 
