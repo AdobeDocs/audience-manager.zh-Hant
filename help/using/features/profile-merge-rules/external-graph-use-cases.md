@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 外接式裝置圖表使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 * 鎖定大型受眾。 該 [!DNL Experience Cloud Device Co-op] 和協力廠商裝置圖表包含已驗證和未驗證的資料。
 * 在個人和家庭層級劃分已驗證和／或未驗證的訪客。
 
-![](../assets/merge-rule-triangle1.png)
+![](assets/merge-rule-triangle1.png)
 <!-- 
 ## Prospecting/Branding Use Case {#prospecting-branding-use-cases}
 
@@ -127,5 +127,5 @@ John在資料計畫A上使用iPhone 7在Acme Inc.網站上驗證。 同時，Joh
 >
 >* [描述檔連結裝置圖表使用案例](profile-link-use-case.md)
 >* [描述檔合併規則的一般使用案例](merge-rule-targeting-options.md)
->* [描述檔合併規則常見問答集](faq-profile-merge.md)
+>* [描述檔合併規則常見問答集](../../faq/faq-profile-merge.md)
 
