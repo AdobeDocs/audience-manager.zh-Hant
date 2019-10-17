@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則控制面板
 uuid: d6725218-7b36-4653-9900-d67b5f7702a0
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 使用時， [!UICONTROL Profile Merge Rules]您可以：
 
-* 從跨裝置資料來源建立最多4個規則。 請參 [閱建立跨裝置資料來源](merge-rules-start.md#create-data-source)。
+* 從跨裝置資料 [!UICONTROL Profile Merge Rules] 來源最多建立4個。 請參 [閱建立跨裝置資料來源](merge-rules-start.md#create-data-source)。
 * 指定預設的合併規則。 [區段產生器](../segments/segment-builder.md) (Segment Builder)會自動將預設規則套用至您建立的任何新區段。
 * 將「 [資料匯出控制](../data-export-controls.md) 」套用至合併規則。 [!UICONTROL Data Export Controls] 防止您在違反資料隱私或使用合約的情況下將資料傳送至目的地。
 * 追蹤每位使用者的平均裝置數。
