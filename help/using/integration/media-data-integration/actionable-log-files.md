@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: e324a298bf72b223e4ebf5627f3314e1613d3761
+source-git-commit: b258c7dbdcf359394fbdcad6511c4113f8d88d91
 
 ---
 
@@ -244,6 +244,16 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
+
+## 在Audience Manager UI中使用可操作的信號 {#actionable-signals-in-ui}
+
+您可以使用「可操作的日誌檔案」選 [擇，在「信號搜索](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) 」介面中查看 **傳入的可操作信號** 。
+
+![UI中可操作的信號](/help/using/integration/assets/alf-in-signals.png)
+
+若要使用可操作的訊號來建立規則型特徵，請選取可操作的記錄檔 **，選取您要當做特徵規則使用的可操作訊號，然後按**&#x200B;從選取的訊號建立特徵 ****。
+
+![從訊號建立特徵](/help/using/integration/assets/alf-create-trait.png)
 
 ## 使用個案 {#use-cases}
 
