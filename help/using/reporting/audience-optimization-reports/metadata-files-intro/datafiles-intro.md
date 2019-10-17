@@ -1,19 +1,19 @@
 ---
-description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可以將此資料匯入Audience manager並在「對象最佳化」報表中檢視。 依照本節中的這些規格設定資料檔案的格式。
-seo-description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可以將此資料匯入Audience manager並在「對象最佳化」報表中檢視。 依照本節中的這些規格設定資料檔案的格式。
-seo-title: 受眾最佳化報告的資料檔案
+description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，並在「對象最佳化」報表和可操作的記錄檔中使用。 根據本節中的規格格式化資料檔案。
+seo-description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，並在「對象最佳化」報表和可操作的記錄檔中使用。 根據本節中的規格格式化資料檔案。
+seo-title: 對象最佳化報告的資料檔案和可操作的記錄檔
 solution: Audience Manager
-title: ' 受眾最佳化報告的資料檔案'
+title: 對象最佳化報告的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 translation-type: tm+mt
-source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
+source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
 
 ---
 
 
-#  受眾最佳化報告的資料檔案{#data-files-for-audience-optimization-reports}
+# 對象最佳化報告的資料檔案和可操作的記錄檔 {#data-files-for-audience-optimization-reports}
 
-資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可以將此資料匯入Audience manager並在「對象最佳化」報表中檢視。 依照本節中的這些規格設定資料檔案的格式。
+資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，以便在「對象最佳化報表」中檢視該資料 [，並透過可操作的記錄檔](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) 案使用資料建立特徵 [](/help/using/integration/media-data-integration/actionable-log-files.md)。 依照本節中的這些規格設定資料檔案的格式。
 
 ## 概述 {#overview}
 
@@ -25,7 +25,7 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
 
 下列語法定義格式良好的資料檔案名稱的結構。 請注意， *斜體* 表示變數預留位置會依檔案內容而改變。
 
-**語法:** <pre><code><i>event type</i>_<i>yyyymmdd</i></code></pre>
+**語法:** <pre><i>event type</i>_<i>yyyymmdd</i></code></pre>
 
 在檔案名中：
 
@@ -35,15 +35,15 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
 
 根據這些要求，請根據資料檔案的內容命名檔案，如下所示：
 
-* 印象資料： <pre><code>impressions_<i>yyyymmdd<i>.gz</code></pre>
-* 按一下資料： <pre><code>clicks_<i>yyyymmdd</i>.gz</code></pre>
-* 轉換資料： <pre><code>conversions_<i>yyyymmdd</i>.gz</code></pre>
+* 印象資料： <pre>impressions_<i>yyyymmdd<i>.gz</code></pre>
+* 按一下資料： <pre>clicks_<i>yyyymmdd</i>.gz</code></pre>
+* 轉換資料： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
 
 ## 資料檔案的內容格式 {#content-format}
 
 下列語法定義格式良好的資料檔案的內容結構。 注意， *斜體* 表示變數預留位置，並以實際資料檔案中的標籤取代。
 
-**語法:** <pre><code><i>標題標籤1</i> |標 <i>題標籤2</i> ...標 <i>題標籤n</i> |版 <i>本</i></code></pre>
+**語法:** <pre><i>標題標籤1</i> |標 <i>題標籤2</i> ...標 <i>題標籤n</i> |版 <i>本</i></code></pre>
 
 在檔案內容中：
 
@@ -67,7 +67,7 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
  <tbody> 
   <tr> 
    <td colname="col1"> <p>時間戳記 </p> </td> 
-   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用 <code> yyyy-dd-mm hh:mm:ss</code> format。 </p> </td> 
+   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用格 <code> yyyy-dd-mm hh:mm:ss</code> 式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用者ID </p> </td> 
@@ -125,9 +125,9 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
    <td colname="col1"> <p>事件類型 </p> </td> 
    <td colname="col2"> <p>轉換類型。 指出轉換是否相符。 選項包括: </p> 
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
-     <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>:印象 </li> 
-     <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>:按一下 </li> 
-     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>:非屬性或未知 </li> 
+     <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: 曝光數 </li> 
+     <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: 按一下 </li> 
+     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>: 非屬性或未知 </li> 
     </ul> <p> <i>僅限轉換資料檔案。</i> </p> </td> 
   </tr> 
   <tr> 
@@ -145,7 +145,7 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
 
 資料會儲存在Amazon S3目錄中每個客戶的個別命名空間中。 檔案路徑遵循下列語法。 Note, *italics* indicates a variable placeholder. 其他元素是常數或鍵，不會變更。
 
-**語法:** <pre><code>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/檔案類型 <i>_</i><i>yyyymmdd</i></code></pre>
+**語法:** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/檔案類型 <i>_</i><i>yyyymmdd</i></code></pre>
 
 下表定義了檔案傳送路徑中的每個元素。
 
@@ -170,11 +170,11 @@ source-git-commit: 6e504dabacff9be40633d6c91856b57c6e653f71
    <td colname="col2"> <p>此金鑰值配對包含在事件呼叫中傳入的資料來源ID。 它會識別資料來源的機構，並將該資料系結至支援的中繼資料檔案。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 日誌</code> </p> </td> 
+   <td colname="col1"> <p> <code> logs</code> </p> </td> 
    <td colname="col2"> <p> 資料檔案的更高層級目錄。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 文 <i>件類型</i>_<i>yyyymmdd</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>file type</i>_<i>yyyymmdd</i></code> </p> </td> 
    <td colname="col2"> <p>一種檔案類型名稱，它指示包含的資料類型和傳送時間戳。 </p> </td> 
   </tr> 
  </tbody> 
