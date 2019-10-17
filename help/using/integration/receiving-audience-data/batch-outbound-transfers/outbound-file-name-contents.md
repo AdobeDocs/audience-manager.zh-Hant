@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 出站資料檔案名語法和示例
 uuid: effdcaf6-c37c-45f3-9d2f-a938a9da47a6
 translation-type: tm+mt
-source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
+source-git-commit: b32283a6cb3d001f0a1fc85f3e63fba651f32760
 
 ---
 
@@ -60,7 +60,7 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google Advertiser ID(原始 </span> 、未雜湊) </li> 
       <li id="li_DE74BE06331C49CF87606A192D815B96">20915 - <span class="keyword"> Apple ID for Advertisers(原始、 </span> 未雜湊) </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">廠商ID —— 協力廠商使用者ID(Web/Cookie) </li> 
-     </ul> </p> </td> 
+     </ul> </p> <p>如需詳 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">細資訊，請參閱全域資料</a> 來源。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
@@ -68,14 +68,14 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>SYNC_MODE </i></code> </p> </td> 
-   <td colname="col2"> <p>同步模式是一個宏佔位符，它根據同步類型將標籤添加到檔案名。 同步類型包括完整和增量。 它們會以iter或full的形式出現在檔 <code> 案 </code> 名 <code> 稱中 </code>。 </p> 
+   <td colname="col2"> <p>同步模式是一個宏佔位符，它根據同步類型將標籤添加到檔案名。 同步類型包括完整和增量。 它們會以或的形式出現在檔案 <code> iter </code> 名中 <code> full </code>。 </p> 
     <ul id="ul_3B3585CEF1434951B6FDCDD29E5013CD"> 
      <li id="li_947D94E9CFAC4041AC1AAEB191805529"> <code> iter </code>:表示「迭代」或增量同步。 增量檔案只包含自上次同步以來收集的新資料。 </li> 
-     <li id="li_13ADB3B3346943DAA767A1F416482D3C"> <code> 完整 </code>:表示「完全」同步。 完全同步的檔案包含自上次同步以來收集的舊資料和任何新資料。 </li> 
+     <li id="li_13ADB3B3346943DAA767A1F416482D3C"> <code> full </code>:表示「完全」同步。 完全同步的檔案包含自上次同步以來收集的舊資料和任何新資料。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>時間戳記 </i></code> </p> </td> 
+   <td colname="col1"> <p> <code><i>TIMESTAMP </i></code> </p> </td> 
    <td colname="col2"> <p>13位數的UNIX時間戳記，以毫秒為單位，在UTC時區。 </p> </td> 
   </tr> 
   <tr> 
@@ -83,7 +83,7 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
    <td colname="col2"> <p>整數。 識別已分割為多個部分的檔案的一部分，以改善處理時間。 數字表示資料所屬的原始檔案的哪個部分。</p>  <p>如果拆分大小小於100個部分，則整數必須至少為3位數，前面必須是零。</p>  <p>原始檔案將沒有任何分割號碼。 第一個分割檔案將以001結尾。 請參閱下列範例。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>.gz（可選） </i></code> </p> </td> 
+   <td colname="col1"> <p> <code><i>.gz (optional) </i></code> </p> </td> 
    <td colname="col2"> <p>GZIP壓縮。 </p> </td> 
   </tr> 
  </tbody> 
@@ -145,7 +145,7 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
  <li> <code> ftp_1234_45454_XYZCustomer_full_1486140843200001.sync.gz </code> </li> 
 </ul>
 
-##  出站資料檔案內容：語法與參數 {#outbound-contents-syntax}
+## 出站資料檔案內容：語法與參數 {#outbound-contents-syntax}
 
 說明用於組織傳出資料檔案中資訊的必填欄位、語法和慣例。 根據這些規格格式化資料。
 
@@ -178,7 +178,7 @@ source-git-commit: e6f1a3b86658a882ebe927cefe55be6ddd40b906
    <td colname="col2"> <p>由 <span class="keyword"> Audience Manager指派的唯一使用者ID </span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code><i>&lt;空間&gt; </i></code> </p> </td> 
+   <td colname="col1"> <p> <code><i>&lt;SPACE&gt; </i></code> </p> </td> 
    <td colname="col2"> <p>將UUID和區段資料分隔為空格 </p> </td> 
   </tr> 
   <tr> 
