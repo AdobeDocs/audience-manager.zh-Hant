@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 
 ---
 
@@ -62,7 +62,11 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ## 建立描述檔合併規則 {#create-profile-merge-rule}
 
-若要建立 [!UICONTROL Profile Merge Rule]，請前往並 **[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]** 完成此處所述各節的步驟。 在設定跨裝置資料來源後，最多可建立3個合併規則。 建立、編輯或刪除規則需要管理員權限。 所有使用者皆可檢視和使用現有 [!UICONTROL Profile Merge Rules]。
+若要建立 [!UICONTROL Profile Merge Rule]，請前往並 **[!UICONTROL Audience Data > Profile Merge Rules > Add New Rule]** 完成此處所述各節的步驟。
+
+在設定跨裝置資料來源後，最多可建立3個合併規則。 如果您註冊「以人為本的目的地」，您[!UICONTROL All Cross-Device Profiles]就可以存取第4個描述 [檔合併規則()](../destinations/people-based-destinations-overview.md)。
+
+建立、編輯或刪除規則需要管理員權限。 所有使用者皆可檢視和使用現有 [!UICONTROL Profile Merge Rules]。
 
 <!-- create-profile-merge-rule.xml -->
 
