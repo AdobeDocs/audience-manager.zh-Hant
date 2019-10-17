@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 定義的配置檔案合併規則選項
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: aebb6b8d3653197642ec591bc35bde50d4e7abb4
+source-git-commit: 3a272e31fd388e2b15245f231f11ecf68a7d55e9
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: aebb6b8d3653197642ec591bc35bde50d4e7abb4
 
 ## 裝置選項 {#device-options}
 
-您 [!UICONTROL Device Options] 可以選取使用 *`device profile`* 的類型 [!UICONTROL Profile Merge Rule]。 裝置描述檔是由使用者匿名瀏覽網頁時收集到的特性所組成。 至少，配置檔案合併規則包括已驗證的選項和設備選項。
+您 [!UICONTROL Device Options] 可以選取使用 *`device profile`* 的類型 [!UICONTROL Profile Merge Rule]。 裝置設定檔是根據從匿名瀏覽活動收集到的特性來建立。 至少，配置檔案合併規則包括已驗證的選項和設備選項。
 
 <table id="table_D373FB787D1A4E3485C02C4A76F03395"> 
  <thead> 
