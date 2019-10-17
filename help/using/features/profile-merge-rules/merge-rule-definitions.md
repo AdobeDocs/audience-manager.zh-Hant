@@ -6,12 +6,12 @@ solution: Audience Manager
 title: 定義的配置檔案合併規則選項
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: aebb6b8d3653197642ec591bc35bde50d4e7abb4
 
 ---
 
 
-# Profile Merge Rule Options Defined {#profile-merge-rule-options-defined}
+# Profile Merge Rules Options Defined {#profile-merge-rule-options-defined}
 
 合併規則選項可讓您控制Audience manager用於區段的資料類型。 合併規則可包含由裝置圖形、 [!UICONTROL Profile Link][!UICONTROL Adobe Experience Cloud Device Co-op]和／或與Audience manager整合的其他協力廠商裝置圖形提供者所映射的裝置設定檔。 最多可建立4個 [!UICONTROL Profile Merge Rules]。 第四個 [!UICONTROL Profile Merge Rule] 方案僅適用於購買附加元件 [!UICONTROL People-Based Destinations] 的客戶。
 
