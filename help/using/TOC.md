@@ -4,7 +4,7 @@ audience: 最終用戶
 user-guide-title: Audience manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: e324a298bf72b223e4ebf5627f3314e1613d3761
 
 ---
 
@@ -178,9 +178,9 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
          + [廣告單位重疊](reporting/audience-optimization-reports/aor-publishers/publisher-ad-unit-overlap.md)
          + [區段到廣告單位重疊](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [獨特的使用者觸及面](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
-      + 受眾最佳化報告的資料和中繼資料檔案 {#data-and-metadata-files}
-         + [受眾最佳化報告的資料和中繼資料檔案](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
-         + [受眾最佳化報告的資料檔案](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+      + 受眾最佳化報告的資料和中繼資料檔案及可操作的記錄檔 {#data-and-metadata-files}
+         + [ 記錄資料和中繼資料檔案](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+         + [對象最佳化報告的資料檔案和可操作的記錄檔](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [中繼資料檔案的概述與對應](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
          + [中繼資料檔案的命名慣例](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
          + [中繼資料檔案的內容格式](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
@@ -322,6 +322,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
       + [將Audience manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [實作觀眾管理模組](integration/integration-other-solutions/audience-management-module.md)
       + [伺服器端轉送（管理指南）](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)
+      + [將Adobe Analytics區段發佈至Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
    + [Amazon S3:關於](reference/amazon-s3.md)
