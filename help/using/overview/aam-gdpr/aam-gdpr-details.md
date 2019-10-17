@@ -1,34 +1,34 @@
 ---
 description: 本檔案涵蓋與Audience manager通用資料保護規則(GDPR)相關的技術細節，並說明如何將GDPR要求提交給Audience Manager。
-seo-description: This document covers the technicalities related to the General Data Protection Regulation (GDPR) for Audience Manager and shows you how to submit GDPR requests to Audience Manager.
+seo-description: 本檔案涵蓋與Audience manager通用資料保護規則(GDPR)相關的技術細節，並說明如何將GDPR要求提交給Audience Manager。
 seo-title: GDPR 對 Audience Manager 的影響
 solution: Audience Manager
 keywords: GDPR UI、GDPR API
 title: GDPR 對 Audience Manager 的影響
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 5661bcef9816b6646ee63ebc6c19b730c1ccadc9
+source-git-commit: b32283a6cb3d001f0a1fc85f3e63fba651f32760
 
 ---
 
 
 # GDPR 對 Audience Manager 的影響{#gdpr-in-audience-manager}
 
-This document covers the technicalities related to the General Data Protection Regulation (GDPR) for Audience Manager and shows you how to submit GDPR requests to Audience Manager.
+本檔案涵蓋與Audience manager通用資料保護規則(GDPR)相關的技術細節，並說明如何將GDPR要求提交給Audience Manager。
 
 ## Experience cloud中的GDPR檔案 {#gdpr-documentation}
 
-Before reading the Audience Manager specifics, we advise you go through the Experience Cloud material for the European General Data Protection Regulation (GDPR), linked below:
+在閱讀Audience manager的詳細資訊之前，我們建議您先閱讀以下連結的歐洲通用資料保護規則(GDPR)的Experience cloud資料：
 
-* [GDPR and Your Business](https://www.adobe.com/privacy/general-data-protection-regulation.html)
+* [GDPR與您的業務](https://www.adobe.com/privacy/general-data-protection-regulation.html)
 * [GDPR白皮書](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-whitepaper.md)
 * [GDPR 術語](https://www.adobe.io/apis/cloudplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/gdpr/gdpr-terminology.md)
 
-The sections below explain what GDPR means for Audience Manager and how you can submit GDPR requests to Audience Manager.
+以下各節說明GDPR對Audience manager的意義，以及如何將GDPR請求提交給Audience Manager。
 
 ## GDPR請求類型及如何提出GDPR請求 {#types-of-gdpr-requests}
 
-As an Audience Manager customer, you can submit individual GDPR requests to access and delete customer data, either through the Privacy Service UI (UI link here and documentation here) or by calling the Privacy Service API (documentation here and API reference here). ****[](https://gdprui.cloud.adobe.io/)[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑問，請聯絡客戶服務：gdprsupport@adobe.com。
+身為Audience Manager客戶，您可以提交GDPR請求，以便透過 **Privacy Service** MS[(](https://gdprui.cloud.adobe.io/) GDPRlink here [and](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)here Privacy Service Manager Add Audience Api)或呼叫Audience Pricendementation Api（在這裡提供個人說明檔案）存取和刪除個人資料。 You can submit any Audience Manager identifiers (IDs), as described in the section **[Audience Manager Identifiers](../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids)**, in the requests along with their respective namespace IDs (data source IDs). 如果您有任何疑問，請聯絡客戶服務：gdprsupport@adobe.com。
 
 ## 存取資料 {#access-data}
 
@@ -36,15 +36,15 @@ As an Audience Manager customer, you can submit individual GDPR requests to acce
 
 **請求**
 
-您可以透過 **Service UI** ([UI連結在此處和](https://gdprui.cloud.adobe.io/) 說明檔案)或在此呼叫 [](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)Privacy Service API（隱私服務API），在此處呼叫Privacy Service API（隱私參考檔案），在此處註冊隱私權Api。 無論何種情況，您都必須使用您要提交資料存取要求的Audience manager識別碼上傳JSON。 若要瞭解格式良好的JSON外觀，您可以下 **[載範例JSON](assets/access_request.json)**。
+您可以透過 **Service UI** ([UI連結在此處和](https://gdprui.cloud.adobe.io/) 說明檔案)或在此呼叫 [](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)****[](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)[](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)Privacy Service API（隱私服務API），在此處呼叫Privacy Service API（此處為Drepreference Api），記錄資料存取請求。 無論何種情況，您都必須使用您要提交資料存取要求的Audience manager識別碼上傳JSON。 若要瞭解格式良好的JSON外觀，您可以下 **[載範例JSON](assets/access_request.json)**。
 
 **回應**
 
-存取資料請求的回應包含特徵和區段總數、特徵類型、特徵和區段的說明，以及個別資料來源名稱的摘要。 「存取」回應也會包含可存取資料控制器的第二方和第三方資料，以及第一方資料。 When [!UICONTROL declared IDs] such as cross device CRM IDs or customer cookie IDs are sent in GDPR requests, Audience Manager will include the Access response from all the linked devices (up to 100 devices per declared ID).
+存取資料請求的回應包含特徵和區段總數、特徵類型、特徵和區段的說明，以及個別資料來源名稱的摘要。 「存取」回應也會包含可存取資料控制器的第二方和第三方資料，以及第一方資料。 當跨 [!UICONTROL declared IDs] 裝置CRM ID或客戶Cookie ID等在GDPR請求中傳送時，Audience manager會包含來自所有連結裝置的存取回應（每個宣告的ID最多100個裝置）。
 
 **回應狀態**
 
-If there are any errors from Audience Manager in the response, these are surfaced as error codes in the response. 我們有錯 [誤代碼清單](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)，您可在此找到有關傳回錯誤的更多資訊。
+如果回應中有來自Audience manager的任何錯誤，這些錯誤會以回應中的錯誤代碼呈現。 我們有錯 [誤代碼清單](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)，您可在此找到有關傳回錯誤的更多資訊。
 
 **範例回應**
 
@@ -154,11 +154,11 @@ If there are any errors from Audience Manager in the response, these are surface
    <td colname="col2"> <p>namespace/資料來源的 ID。請參 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 閱Audience manager識別碼(ID)</a> ，以取得所有接受的值。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 整合程式碼 </code> </p> </td> 
-   <td colname="col2"> <p>Integration codes are friendly names for your data sources, and help you track your data sources easier than using data source IDs. </p> </td> 
+   <td colname="col1"> <p> <code> integration code </code> </p> </td> 
+   <td colname="col2"> <p>整合代碼是資料來源的好記名稱，可協助您比使用資料來源ID更輕鬆地追蹤資料來源。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 資料提供者名稱 </code> </p> </td> 
+   <td colname="col1"> <p> <code> data provider name </code> </p> </td> 
    <td colname="col2"> <p>資料來源的擁有者名稱。 
      <ul id="ul_5CEAF23C28154662AFC443D3494107D3"> 
       <li id="li_EC2DA09F618D4225B655ADF455C0D654">對於第一方資料，這是客戶自己的公司名稱。 </li> 
@@ -167,27 +167,27 @@ If there are any errors from Audience Manager in the response, these are surface
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 類型 </code> </p> </td> 
-   <td colname="col2"> <p>您要求 GDPR 資料存取權限的 ID 類型。Accepted types are listed in the  Audience Manager Identifiers section.<a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"></a> </p> </td> 
+   <td colname="col1"> <p> <code> type </code> </p> </td> 
+   <td colname="col2"> <p>您要求 GDPR 資料存取權限的 ID 類型。接受的類型會列在「Audience Manager識 <a href="../../overview/aam-gdpr/aam-gdpr-details.md#aam-ids"> 別碼」區段中</a> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> warnings</code> </p> </td> 
-   <td colname="col2"> <p>Warnings return further information related to the data access request. </p> </td> 
+   <td colname="col2"> <p>警告會傳回與資料存取要求相關的詳細資訊。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 標題 </code> </p> </td> 
-   <td colname="col2"> <p>有關警告的簡短資訊。 </p> <p>The two warnings you may receive are: </p> <p> 
+   <td colname="col1"> <p> <code> title </code> </p> </td> 
+   <td colname="col2"> <p>有關警告的簡短資訊。 </p> <p>您可能收到的兩個警告是： </p> <p> 
      <ul id="ul_34019A1529594DC7B2566913937EAF0C"> 
-      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">Device Data </li> 
-      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">Incomplete request </li> 
+      <li id="li_F0104BE3D5FE4DB7BA54195504E260E9">裝置資料 </li> 
+      <li id="li_8A22D9F9A1454AFDBC4CAF942E80498F">未完成請求 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 說明 </code> </p> </td> 
-   <td colname="col2"> <p>A more detailed description of the warning you received: </p> <p> 
+   <td colname="col1"> <p> <code> description </code> </p> </td> 
+   <td colname="col2"> <p>您收到警告的更詳細說明： </p> <p> 
      <ul id="ul_78E03ABA52674E07A48835FDD3431FF8"> 
-      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">Device Data - Contains data from all users of this device </li> 
-      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">Incomplete request - Retrieval of Audience Manager data was not completed. 有些資訊可能遺失。 </li> 
+      <li id="li_6BB6D58660594CA0B1A89804F2FC6274">裝置資料——包含此裝置所有使用者的資料 </li> 
+      <li id="li_E328D5BF066C4E7E8CCCDCAA5E91CCDC">請求不完整——未完成Audience manager資料的擷取。 有些資訊可能遺失。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -196,23 +196,23 @@ If there are any errors from Audience Manager in the response, these are surface
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> traits </code> </p> </td> 
-   <td colname="col2"> <p>Traits associated with the user ID. </p> </td> 
+   <td colname="col2"> <p>與使用者ID關聯的特徵。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 名稱</code> </p> </td> 
+   <td colname="col1"> <p> <code> name</code> </p> </td> 
    <td colname="col2"> <p>特徵的名稱。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 類型</code> </p> </td> 
+   <td colname="col1"> <p> <code> type</code> </p> </td> 
    <td colname="col2"> <p>特徵類型。 可能的值包括: </p> <p> 
      <ul id="ul_DBAC618D9FE94B17B2494B83832A969F"> 
-      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>First party for your own traits.</i> </li> 
-      <li id="li_D9354F40FD114802819191450F2375C8"> <i>Second party for traits that belong to your partners. </i>Read our  Second Party Data article for more information.<a href="../../overview/data-types-collected.md#second-party-data"></a> </li> 
+      <li id="li_740F2DCA8F2A4A22A7D9988ECD2FC976"> <i>你自己的特徵</i> ，第一個派對。 </li> 
+      <li id="li_D9354F40FD114802819191450F2375C8"> <i>屬於您</i> 「合作夥伴」特徵的第二方。 請閱讀我們 <a href="../../overview/data-types-collected.md#second-party-data"> 的第二方資料文章</a> ，以取得詳細資訊。 </li> 
       <li id="li_C321D8B8256F4102AE64CD40DC57C948"> <i>協力廠商</i> ，針對透過Audience Marketplace從資料合作夥伴取得的 <a href="../../features/audience-marketplace/audience-marketplace.md"> 特徵</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 說明</code> </p> </td> 
+   <td colname="col1"> <p> <code> description</code> </p> </td> 
    <td colname="col2"> <p>用幾個字來說明特徵的目的或功能。 這是選填欄位。 </p> </td> 
   </tr> 
   <tr> 
@@ -220,7 +220,7 @@ If there are any errors from Audience Manager in the response, these are surface
    <td colname="col2"> <p>套用 <a href="../../features/data-export-controls.md"> 至此特徵資料來源的</a> 「資料匯出控制」。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 資料提供者名稱</code> </p> </td> 
+   <td colname="col1"> <p> <code> data provider name</code> </p> </td> 
    <td colname="col2"> <p>此特徵所屬的資料來源擁有者的名稱。 
      <ul id="ul_D2D424E903A143779342D35D6F625656"> 
       <li id="li_55B3A40A6CD24A25B5AAFD07AD28F662">對於第一方資料，這是客戶自己的公司名稱。 </li> 
@@ -229,27 +229,27 @@ If there are any errors from Audience Manager in the response, these are surface
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 最後實現</code> </p> </td> 
-   <td colname="col2"> <p>The exact time that the Data Subject last qualified for this trait. 日期格式為YYYY-MM-DD。 </p> </td> 
+   <td colname="col1"> <p> <code> last realization</code> </p> </td> 
+   <td colname="col2"> <p>資料主體上次符合此特徵的確切時間。 日期格式為YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 區段 </code> </p> </td> 
+   <td colname="col1"> <p> <code> segments </code> </p> </td> 
    <td colname="col2"> <p>此使用者所屬的區段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 名稱</code> </p> </td> 
-   <td colname="col2"> <p>The name of the segment. </p> </td> 
+   <td colname="col1"> <p> <code> name</code> </p> </td> 
+   <td colname="col2"> <p>區段的名稱。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 說明</code> </p> </td> 
+   <td colname="col1"> <p> <code> description</code> </p> </td> 
    <td colname="col2"> <p>請用幾個字來說明此區段。 這是選填欄位。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 資料匯出控制</code> </p> </td> 
+   <td colname="col1"> <p> <code> data export controls</code> </p> </td> 
    <td colname="col2"> <p>套 <a href="../../features/data-export-controls.md"> 用至此區段資料來源</a> ，資料匯出控制項。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 資料提供者名稱</code> </p> </td> 
+   <td colname="col1"> <p> <code> data provider name</code> </p> </td> 
    <td colname="col2"> <p>此區段所屬之資料來源的擁有者名稱。 
      <ul id="ul_D437D149BDBE470489D1DD03CF47841C"> 
       <li id="li_90133644911A49AEB0DB209BCAC8E789">對於第一方資料，這是客戶自己的公司名稱。 </li> 
@@ -258,15 +258,15 @@ If there are any errors from Audience Manager in the response, these are surface
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 最後實現</code> </p> </td> 
+   <td colname="col1"> <p> <code> last realization</code> </p> </td> 
    <td colname="col2"> <p>資料主體上次符合此區段資格的確切時間。 日期格式為YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 活動</code> </p> </td> 
-   <td colname="col2"> <p>指出資料主體目前是否符合此區段的資格。 Returns <code><i>true</i></code> or <code><i>false</i></code>. </p> </td> 
+   <td colname="col1"> <p> <code> active</code> </p> </td> 
+   <td colname="col2"> <p>指出資料主體目前是否符合此區段的資格。 返回 <code><i>true</i></code> 或 <code><i>false</i></code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 連結 </code> </p> </td> 
+   <td colname="col1"> <p> <code> links </code> </p> </td> 
    <td colname="col2"> <p>此ID已連結至的其他ID。 在以下位置返回資訊： </p> <p> 
      <ul id="ul_679F372A83164CC8B6BFE5A833347B9E"> 
       <li id="li_BCBF4F4C6C4049519BDE9186EE84868A">ID </li> 
@@ -275,24 +275,24 @@ If there are any errors from Audience Manager in the response, these are surface
       <li id="li_FB2A2F28290B4BA7844A558C01F8D9D4">整合程式碼 </li> 
       <li id="li_2569982810B64F8AABD78F5AC3717971">資料提供者名稱 </li> 
       <li id="li_2A3C282279064373BF7E4619A63454CF">ID type </li> 
-     </ul> </p> <p>All these fields are described in the first rows of this table. </p> </td> 
+     </ul> </p> <p>此表的前幾行中介紹了這些欄位。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> linking datetime</code> </p> </td> 
-   <td colname="col2"> <p>The exact time that an ID sync event made the link between IDs. The date format is YYYY-MM-DD. </p> </td> 
+   <td colname="col2"> <p>ID同步事件建立ID間連結的確切時間。 日期格式為YYYY-MM-DD。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> device metadata </code> </p> </td> 
-   <td colname="col2"> <p>Information about the device. This information includes the fields below. 請注意，並非所有裝置類型都會傳回所有欄位。 </p> <p> 
+   <td colname="col2"> <p>裝置相關資訊。 這些資訊包括下列欄位。 請注意，並非所有裝置類型都會傳回所有欄位。 </p> <p> 
      <ul id="ul_F0031D50DF074634A428DBC73F958159"> 
-      <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>Hardware information </p> </li> 
+      <li id="li_4E26042A6B8D4397829F30B7BC7A2D6E"> <p>硬體資訊 </p> </li> 
       <li id="li_99A049D585A9440EA79F57A3B03181AB"> <p>裝置製造商 </p> </li> 
       <li id="li_290F92FC3F6449EFBC4E7870B62AFE8B"> <p>裝置的行銷名稱 </p> </li> 
       <li id="li_FC37954CE133471398352240A8B0478F"> <p>裝置型號 </p> </li> 
       <li id="li_D54AEB0527C34E32A8AEEAEDEA5AD1B2"> <p>設備作業系統(OS)的名稱 </p> </li> 
-      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>The version of the OS </p> </li> 
-      <li id="li_634B391D95104C42A43D6EFA95F3C0D3"> <p>The device vendor </p> </li> 
-     </ul> </p> <p> <p>注意： We only return device metadata when you submit either one of: 
+      <li id="li_0B343C4599344E1791B35A56EBBDC567"> <p>作業系統版本 </p> </li> 
+      <li id="li_634B391D95104C42A43D6EFA95F3C0D3"> <p>裝置廠商 </p> </li> 
+     </ul> </p> <p> <p>注意：只有在您提交下列任一項時，我們才會傳回裝置中繼資料： 
       <ul id="ul_2692AF4D28DB44FEAF5F657397F58D32"> 
        <li id="li_FBA2446BB5914772AF24D12B32D9DF1B">行動ID </li> 
        <li id="li_FBC45D16DEFE49CF91A7A541402A3BF3">Audience Manager ID </li> 
@@ -384,7 +384,7 @@ If there are any errors from Audience Manager in the response, these are surface
 
 ### Adobe Experience Cloud ID
 
-**User ID: mid**
+**使用者ID**:mid
 
 **定義**:Adobe Experience Cloud ID，先前稱為訪客ID或Marketing Cloud ID
 
@@ -392,7 +392,7 @@ If there are any errors from Audience Manager in the response, these are surface
 
 >[!NOTE]
 >
->您也可以使用ECID命名空間。 See the second JSON example.
+>您也可以使用ECID命名空間。 請參閱第二個JSON範例。
 
 **JSON中的範例**:
 
@@ -444,11 +444,11 @@ If there are any errors from Audience Manager in the response, these are surface
 
 ### Customer ID
 
-**User ID: cid**
+**使用者ID**:cid
 
-**Definition: Customer ID, such as a cookie you set for anonymous site visitors or a CRM ID from an offline system or a hashed username**
+**定義**:客戶ID，例如您為匿名網站訪客設定的Cookie，或離線系統的CRM ID，或雜湊的使用者名稱
 
-**Namespace ID: Customer-specific.** Please find it from your Audience Manager instance.
+**命名空間ID**:客戶專屬。 請從您的Audience manager例項中尋找。
 
 **JSON中的範例**:
 
@@ -484,7 +484,7 @@ If there are any errors from Audience Manager in the response, these are surface
 
 **使用者ID**:d_cid
 
-**Definition: Mobile advertising IDs.**
+**定義**:行動廣告ID。
 >[!IMPORTANT]
 >
 > 如果您使用Mobile SDK，則您也應傳送Experience Cloud ID(MID)以及行動廣告ID，以取得完整的GDPR存取和刪除回應。
@@ -494,7 +494,9 @@ If there are any errors from Audience Manager in the response, these are surface
 * IDFA:二零九一五年
 * GAID:二零九一四年
 
-**Example in JSON:**
+如需詳 [細資訊，請參閱全域資料](../../features/global-data-sources.md) 來源。
+
+**JSON中的範例**:
 
 ```
 "users": [
@@ -521,7 +523,7 @@ If there are any errors from Audience Manager in the response, these are surface
 
 ### 整合程式碼
 
-**使用者ID**: d_cid_ic
+**使用者ID**:d_cid_ic
 
 **定義**:資料來源的整合代碼。 在Adobe Experience Cloud隱私權核心服務的API要求中，您可以使用此功能來取代資料來源ID /命名空間ID。
 
