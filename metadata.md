@@ -1,23 +1,23 @@
 ---
 cloud: experience-cloud
-solution-title: Learn & Support
+solution-title: 學習與支援
 solution-hub-url: https://helpx.adobe.com/support/audience-manager.html
 solution-image: assets/aam-icon-24.png
 getting-started-title: 快速入門
 getting-started-url: https://helpx.adobe.com/audience-manager/get-started.html
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/audience-manager/kt/index/aam-videos.html
+tutorials-title: 教學課程
+tutorials-url: https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html
 git-repo: https://github.com/AdobeDocs/audience-manager.en
 index: y
 translation-type: tm+mt
-source-git-commit: fbc0e9f5243c8b09065083aa5ff9fa90386b044c
+source-git-commit: aae87606a38948f221b1efea2ab224218061847a
 
 ---
 
 
 # 內部使用的中繼資料
 
-The metadata.md file includes repo-level metadata that passes through to user guide TOC.md files in the repo. 如果您想要變更任何使用指南的metadata.md內容，請在任何TOC.md檔案中進行變更。
+metadata.md檔案包含回購層級中繼資料，這些中繼資料會傳遞至回購中的使用者指南TOC.md檔案。 如果您想要變更任何使用指南的metadata.md內容，請在任何TOC.md檔案中進行變更。
 
 | 中繼資料 | 它的功能 |
 |--- |--- |
