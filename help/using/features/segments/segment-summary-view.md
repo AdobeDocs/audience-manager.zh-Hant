@@ -5,8 +5,9 @@ seo-title: 區段摘要檢視
 solution: Audience Manager
 title: 區段摘要檢視
 uuid: e844e423-9701-42d4-9ba5-d82f41358adc
+keywords: 身分類型劃分，身分識別劃分，受眾身分識別報告
 translation-type: tm+mt
-source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
+source-git-commit: 345042673a9ee7abdac994d774e5c4c893a78749
 
 ---
 
