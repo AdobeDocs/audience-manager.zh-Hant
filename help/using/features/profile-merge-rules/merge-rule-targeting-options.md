@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
 
 ---
 
@@ -61,11 +61,15 @@ Audience manager會合併每個裝置+跨裝置描述檔配對，以查看合併
 
 ![家庭管理](assets/household-management.png)
 
-## 以人為本的定位 {#all-cross-device}
+## 以人為本的目標鎖定 {#all-cross-device}
+
+> [!IMPORTANT]
+>
+> 本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
 此定位藍本僅適用於已購買附加元件 [!DNL People-Based Destinations] 的客戶。 此規則可讓行銷人員根據自己的驗證資料觸及客戶。
 
-比方說，線上零售商想要透過社交平台觸及現有客戶，並根據先前的訂單向他們展示個人化優惠。 有了 [!UICONTROL People-Based Destinations]，他們可以將雜湊的電子郵件地址從自己擷取至 [!DNL CRM] Audience Manager、從離線資料建立區段，並將這些區段傳送至他們想要廣告的社交平台，以最佳化其廣告支出。
+比方說，線上零售商想要透過社交平台觸及現有客戶，並根據先前的訂單向他們展示個人化優惠。 有了 [!UICONTROL People-Based Destinations]，他們可以將自己的雜湊電子郵件地址收錄到 [!DNL CRM] Audience Manager中、從離線資料建立區段，並將這些區段傳送至他們想要廣告的社交平台，使用雜湊識別碼，最佳化其廣告支出。
 
 若要進一步瞭解此選項，請參 [閱以人為本的目的地](../destinations/people-based-destinations-overview.md)。
 
