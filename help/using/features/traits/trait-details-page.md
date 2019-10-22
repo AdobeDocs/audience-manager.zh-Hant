@@ -5,8 +5,9 @@ seo-title: 「特徵詳細資料」頁
 solution: Audience Manager
 title: 「特徵詳細資料」頁
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
+keywords: 身分類型劃分，身分識別劃分，受眾身分識別報告
 translation-type: tm+mt
-source-git-commit: 76adee013246c68da7ad871cef57f6ef174a239c
+source-git-commit: 345042673a9ee7abdac994d774e5c4c893a78749
 
 ---
 
