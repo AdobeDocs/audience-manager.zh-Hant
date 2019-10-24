@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 傳入客戶資料擷取常見問答集
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 translation-type: tm+mt
-source-git-commit: 28d1292140a56cf1627a8921876d9483221876ca
+source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
 
 ---
 
@@ -84,25 +84,25 @@ Removed the Data Translation File bullet from the list above.
    <td colname="col1"> <p><b>案例 1</b> </p> </td> 
    <td colname="col2"> <p>星期一，訪客在CRM資料庫中識別為訪客ABC登入，並啟動用戶端ID同步。 <span class="keyword"> Audience Manager</span> 會儲存訪客ABC與 <span class="keyword"> Audience Manager訪客</span> 123的對應。 </p> <p>星期二，CRM資料庫會傳送資料檔案(<span class="filepath"> .sync</span>)至 <span class="keyword"> Audience Manager伺 </span>服器，並有下列記錄： </p> <p> 
      <ul class="simplelist"> 
-      <li><code> ABC "geder"="male","luxury_shopper"="yes"</code> </li> 
+      <li><code> ABC "gender"="male","luxury_shopper"="yes"</code> </li> 
      </ul> </p> <p>在此例中， <span class="keyword"> Audience Manager</span>: </p> <p> 
      <ul id="ul_7616432BF9874E7D94F3101C71F73C81"> 
       <li id="li_DC4F5E63D8134A29B703BDF264F02F65">從儲存的ID同步對應中辨識訪客ABC。 </li> 
-      <li id="li_62E085FC184D41C3863B1CE832F77946"> 將harits <code> male</code> 和 <code> luxury_shopper與訪客</code> 123描述檔建立關聯。 </li> 
+      <li id="li_62E085FC184D41C3863B1CE832F77946"> 將特徵與訪 <code> male</code> 客 <code> luxury_shopper</code> 123個描述檔建立關聯。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>案例 2</b> </p> </td> 
    <td colname="col2"> <p>星期一，CRM資料庫將資料檔案(<span class="filepath"> .sync</span>)推送至 <span class="keyword"> Audience Manager</span> 伺服器，並有下列記錄： </p> <p> 
      <ul class="simplelist"> 
-      <li><code> DEF "geder"="melue","wine_andoist"="yes"</code> </li> 
+      <li><code> DEF "gender"="female","wine_enthusiast"="yes"</code> </li> 
      </ul> </p> <p> <span class="keyword"> Audience Manager</span> 沒有此訪客的記錄（或相關的訪客ID），因此不會處理此記錄。 </p> <p>星期二，訪客DEF登入。 此動作會啟動該訪客的第一個用戶端ID同步。 此動作會將訪客DEF對 <span class="keyword"> 應至Audience Manager</span> ID 456。 但是，此訪客沒有與其個人檔案關聯的CRM資料。 因此， <span class="keyword"> Audience Manager</span> 不會返回並重新處理舊檔案。 </p> <p>週三，CRM資料庫會將另一個資料檔案推送至 <span class="keyword"> Audience Manager</span> Server，並提供下列記錄： </p> <p> 
      <ul class="simplelist"> 
-      <li><code> DEF "geder"="melue","wine_andiust"="yes","dma"="paris"</code> </li> 
+      <li><code> DEF "gender"="female","wine_enthusiast"="yes","dma"="paris"</code> </li> 
      </ul> </p> <p>在此例中， <span class="keyword"> Audience Manager</span>: </p> 
     <ul id="ul_E853DA091D9042DAB19774383841D3A3"> 
      <li id="li_64D64A16E99E492BAAE1080867F854A9">從儲存的ID同步對應識別訪客DEF。 </li> 
-     <li id="li_9CEE7A7B1A954FF6AEEBF8844074CFBB">將女性、 <code> paris</code>和wine_andoist的特徵與訪客456的個人檔案 <code> 建立關聯</code><code></code> 。 </li> 
+     <li id="li_9CEE7A7B1A954FF6AEEBF8844074CFBB">將特徵 <code> female</code>、 <code> paris</code>和 <code> wine_enthusiast</code> 與訪客456描述檔關聯。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -110,15 +110,15 @@ Removed the Data Translation File bullet from the list above.
    <td colname="col2"> <p>星期一， <span class="keyword"> Audience Manager</span> Server會收到兩個檔案，其中包含下列記錄： </p> <p> <code> .sync</code> 檔案包含： </p> <p> 
      <ul class="simplelist"> 
       <li><code> GHI 123456789</code> </li> 
-     </ul> </p> <p> <code> .overwrite</code> file contain: </p> 
+     </ul> </p> <p> <code> .overwrite</code> 檔案包含： </p> 
     <ul id="ul_084AE448C60447ACA9B1E0C30EAA3E3E"> 
-     <li id="li_C68B7BBFE7CA4D22B606D939E32FF4FB"><code> GHI "geder"="male" "wine_andiousd"="no"</code> </li> 
-     <li id="li_FDBCAAFBD606477E8690EA80AD455A81"><code> JKL "geder"="femule" "wine_andoist"="yes"</code> </li> 
+     <li id="li_C68B7BBFE7CA4D22B606D939E32FF4FB"><code> GHI "gender"="male" "wine_enthusiast"="no"</code> </li> 
+     <li id="li_FDBCAAFBD606477E8690EA80AD455A81"><code> JKL "gender"="female" "wine_enthusiast"="yes"</code> </li> 
     </ul> <p><span class="keyword"> Audience Manager</span> 會從先前的ID同步，將訪客JKL的對應記錄儲存為ID 789。 </p> <p>在此例中， <span class="keyword"> Audience Manager</span>: </p> 
     <ul id="ul_4D083CEA7F1B4F6BBBBB841C21293751"> 
      <li id="li_6DABD380311D49738DAD98F5E6DE45B8">從儲存的ID同步對應識別訪客JKL。 </li> 
-     <li id="li_CCEF77240E5C4A03AAE347440D73F0BB">將女性和 <code> wine_anduist</code><code></code> 的特徵與訪客ID 789的個人檔案建立關聯。 </li> 
-     <li id="li_273F8FD7C6214488A26AAFFA6DE043E5">忽略訪客GHI的特徵關聯，因為其ID僅在目前批次中同步。 若要將特徵與訪客GHI建立關聯，您必須在未來。overwrite檔案中加 <code> 入特徵</code> 。 </li> 
+     <li id="li_CCEF77240E5C4A03AAE347440D73F0BB">將特徵與 <code> female</code> 訪客 <code> wine_enthusiast</code> ID 789的描述檔建立關聯。 </li> 
+     <li id="li_273F8FD7C6214488A26AAFFA6DE043E5">忽略訪客GHI的特徵關聯，因為其ID僅在目前批次中同步。 若要將特徵與訪客GHI建立關聯，您必須將其納入未來的 <code> .overwrite</code> 檔案。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -175,8 +175,8 @@ FTP檔案在處理後即會移除。 [!DNL S3] 檔案會在30天後移除。 由
    <td colname="col2"> <p> 
      <ul id="ul_E89301D815174D45B9B238F2CDE6CCC6"> 
       <li id="li_FA841FEEC0534AD59D1AB61DD5B9DEC4">第1天 <code> .sync</code> 檔案內容： <code> visitor123 = a,b,c</code> </li> 
-      <li id="li_0E1A57B04D26481C8C41EBA63ACBEFE0">第2天 <code> .overwrite</code> file contents: <code> visitor123 = c,d,e</code> </li> 
-      <li id="li_497A5604AD9A49A2ADE548C7CE158F0E"> 第3天訪客資料ID 123包 <code> 含c,d,e </code> </li> 
+      <li id="li_0E1A57B04D26481C8C41EBA63ACBEFE0">第2天 <code> .overwrite</code> 檔案內容： <code> visitor123 = c,d,e</code> </li> 
+      <li id="li_497A5604AD9A49A2ADE548C7CE158F0E"> 第3天訪客資料ID 123包含 <code> c,d,e </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -185,7 +185,7 @@ FTP檔案在處理後即會移除。 [!DNL S3] 檔案會在30天後移除。 由
      <ul id="ul_8271C9796BD040E4B8DC64DCE4FE2AD3"> 
       <li id="li_347959BDE83549F794E6661C95097891">第1天 <code> .sync</code> 檔案內容： <code> visitor123 = a,b,c </code> </li> 
       <li id="li_B25D96526DE94171A3A5DC8DB7A19415">第2天 <code> .sync</code> 檔案內容： <code> visitor123 = c,d,e</code> </li> 
-      <li id="li_6E17809D49C74F4991B0B445469055E6">第3天訪客資料ID 123 <code> 包含a,b,c,d,e</code> </li> 
+      <li id="li_6E17809D49C74F4991B0B445469055E6">第3天訪客資料ID 123包含 <code> a,b,c,d,e</code> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -242,7 +242,7 @@ FTP檔案在處理後即會移除。 [!DNL S3] 檔案會在30天後移除。 由
 
 **資料檔案內容區分大小寫嗎？ ID同步如何？**
 
-資料檔案有兩個基本元件：唯一使用者ID(UUID)和描述檔資料，通常以索引鍵值配對或程式碼的形式。 UUID區分大小寫。 一般而言，描述檔或索引鍵值資料不區分大小寫。
+資料檔案有兩個基本元件：使用者ID(請參閱「已定義檔案變 [數中的使用者ID](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#file-variables-defined)」)和描述檔資料，通常以索引鍵值配對或程式碼的形式。 使用者ID區分大小寫。 一般而言，描述檔或索引鍵值資料不區分大小寫。
 
 <br> 
 
