@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager與Adobe Experience platform之間的觀眾分享
 keywords: AEP觀眾分享、AEP細分、平台細分
 translation-type: tm+mt
-source-git-commit: 421f15b79fa647bf4fbf71a425c7f7792fb302e5
+source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
 
 ---
 
@@ -36,9 +36,9 @@ Audience manager和Adobe Experience platform之間的觀眾分享功能可讓您
 
 請參閱下表以取得觀眾分享使用案例的概觀：
 
-| `*` | **Adobe Experience Platform** | **Audience Manager** | **核心服務** |
+| **使用個案** | **Adobe Experience Platform** | **Audience Manager** | **核心服務** |
 ---------|----------|---------|---------
-| **觀眾分享使用案例** | <ul><li>運用Audience manager資料豐富客戶個人檔案</li><li>在Experience platform區隔中使用Audience manager資料</li></ul> | <ul><li>新增第三方資料至區段</li><li>演算法模型</li><li>啟動至其他目的地</li></ul> | 在其他Experience cloud解決方案（例如Adobe Target或Analytics）中使用Experience platform細分。 |
+| **觀眾分享** | <ul><li>運用Audience manager資料豐富客戶個人檔案</li><li>在Experience platform區隔中使用Audience manager資料</li></ul> | <ul><li>新增第三方資料至區段</li><li>演算法模型</li><li>啟動至其他目的地</li></ul> | 在其他Experience cloud解決方案（例如Adobe Target或Analytics）中使用Experience platform細分。 |
 
 <br> 
 
