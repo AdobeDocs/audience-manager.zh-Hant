@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 定義的配置檔案合併規則選項
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
+source-git-commit: 12dea0f5e762496b19a87c8993877302b1433d26
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
 | 無跨裝置描述檔 | 外部裝置圖表（包括Co-op裝置圖表） | 所有客戶 | 即時和批次 | 無 | [擴充裝置定位](external-graph-use-cases.md#audience-expansion) |
 | 目前已驗證的設定檔 | 無設備配置檔案 | 所有客戶 | 僅即時 | 無 | [共用裝置定位](merge-rule-targeting-options.md#target-shared-devices) |
 | 上次驗證的設定檔 | 裝置設定檔 | 所有客戶 | 即時和批次 | 是 | [線上／離線定位](merge-rule-targeting-options.md#device-household-targeting) |
-| 上次驗證的設定檔 |  描述檔連結裝置圖表 | 僅限北美洲和加拿大 | 即時和批次 | 是 | [跨裝置定位](profile-link-use-case.md#cross-device-personalization) |
+| 上次驗證的設定檔 |  描述檔連結裝置圖表 | 所有客戶 | 即時和批次 | 是 | [跨裝置定位](profile-link-use-case.md#cross-device-personalization) |
 | 上次驗證的設定檔 | 外部裝置圖表（包括Co-op裝置圖表） | 所有客戶 | 即時和批次 | 無 | [進階跨裝置定位](external-graph-use-cases.md#advanced-graph-expansion) |
 |  所有跨裝置描述檔 | 不適用 | 個人型 [目標客戶獨享](../destinations/people-based-destinations-overview.md) | 僅批 | 無 | [以人為本的目標鎖定](merge-rule-targeting-options.md#all-cross-device) |
 
