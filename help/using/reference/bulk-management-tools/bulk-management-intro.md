@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 批量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: b1cecf805a47a7cf3b732337027c31664a08a910
+source-git-commit: be988def0e9cb5cb6b4a926754dd24f9fd1f85fe
 
 ---
 
@@ -111,9 +111,9 @@ c_bulk_start.xml
 例如，讓我們來看看如何一次建立多個特徵。 若要在大量作業中建立多個特徵，您可以：
 
 1. 按一下標 **[!UICONTROL Headers]** 簽並複製選項下的所有標 [!UICONTROL Create a Trait] 簽。
-
 2. 按一下 **[!UICONTROL Create]** 標籤，然後貼上列1，欄A開頭的標籤。
 3. 提供與每個欄標題相關的資訊，然後按一下 **[!UICONTROL Create Traits]**。 此動作會提示您確認驗證。 在確認驗證後，您的大量工作就會執行。 檢查工作表左下角的職務狀態通知。
+
 
 >[!NOTE]
 >
