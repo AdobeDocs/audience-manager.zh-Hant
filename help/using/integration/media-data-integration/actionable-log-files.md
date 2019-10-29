@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: 5643b1490738aa452e45517610d31e37c361a780
+source-git-commit: be988def0e9cb5cb6b4a926754dd24f9fd1f85fe
 
 ---
 
@@ -244,18 +244,6 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
-
-## 在Audience Manager UI中使用可操作的信號 {#actionable-signals-in-ui}
-
-您可以在「信號搜尋」介面中檢視傳入的可 [操作信號](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) 。
-
-前往「 **觀眾資料** (1)&gt; **訊號** (2)&gt;搜尋 **(3)」，並選取「****** 可操作的記錄檔(4)」篩選器。
-
-![UI中可操作的信號](/help/using/integration/assets/alf-in-signals.png)
-
-若要使用可操作的訊號來建立規則型特徵，請選取可操作的記錄檔 **(1)，選取您要當做特徵規則使用的可操作訊號(2)，然後按** Create Trait from Selected Signals **** (3)。
-
-![從訊號建立特徵](/help/using/integration/assets/alf-create-trait.png)
 
 ## 使用個案 {#use-cases}
 
