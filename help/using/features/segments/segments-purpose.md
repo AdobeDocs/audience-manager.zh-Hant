@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段用途、組成和規則
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
 translation-type: tm+mt
-source-git-commit: c229bf71da5b07277811219cbf2794c3ca7bc89d
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -48,7 +48,7 @@ Audience manager區段是伺服器端規則，由個別或特徵群組組成。 
 * 傳送區段資料給目標合作夥伴。
 * 使用Audience manager報表監控效能。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [信號、特徵和區段](../../reference/signal-trait-segment.md)
 
