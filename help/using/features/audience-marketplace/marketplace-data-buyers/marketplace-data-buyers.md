@@ -7,7 +7,7 @@ title: 適用於資料購買者的Audience Marketplace
 topic: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 translation-type: tm+mt
-source-git-commit: d9a4244f68e95c872d3686da10ee3a774250fbfe
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -87,7 +87,7 @@ source-git-commit: d9a4244f68e95c872d3686da10ee3a774250fbfe
 
 在清單 [!UICONTROL Marketplace] 中，有時提供者的名稱和特徵資料會標示為私人。 這表示私人 [資料饋送](../../../features/audience-marketplace/marketplace-private-feeds.md)。 私人資料饋送可讓賣家限制買家存取其資料。 當賣家提供特殊優惠、折扣或隱私權和存取控制對他們很重要時，就可以私下提供餵送。 身為買家，如果您想要存取私人動態消息，您必須傳送訂閱要求給賣方。 如需詳 [細資訊，請參閱訂閱私人資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed) 。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [瞭解 Audience Marketplace 的「方案詳細資訊頁面」](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details)
 >* [資料購買者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
