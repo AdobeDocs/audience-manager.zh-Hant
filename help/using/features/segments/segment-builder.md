@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0ae
 translation-type: tm+mt
-source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -167,7 +167,7 @@ source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
 
 ![](assets/s2s_modal.PNG)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [建立Cookie目標](../../features/destinations/create-cookie-destination.md)
 >* [建立URL目標](../../features/destinations/create-url-destination.md)
