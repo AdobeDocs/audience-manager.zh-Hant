@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段的存留時間說明
 uuid: 5b2c6911-50b9-4b68-9dd4-21128d112eab
 translation-type: tm+mt
-source-git-commit: 17906734132813984437216f2a6cbc1c7bf14937
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -50,7 +50,7 @@ Audience manager會根 [!DNL TTL] 據下列公式，計算1天 [!DNL TTL] 特徵
 
 請記住， [!DNL TTL] 您的像素 [!DNL Audience Manager] 上的設定會獨立於協力廠商( [!DNL TTL][!DNL DSP]如、廣告網路等)使用的其他像素上的設定運作。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [設定特徵過期間隔](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)
 
