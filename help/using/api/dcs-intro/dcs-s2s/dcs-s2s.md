@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 用於伺服器到伺服器資料傳輸的DCS API
 uuid: 8c369166-c8a7-46b0-9913-4c027f5b1df9
 translation-type: tm+mt
-source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -44,7 +44,7 @@ source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
 * [透過Experience Cloud ID取得使用者ID和地區……](dcs-mcid-ids.md)
 * [進行伺服器對伺服器DCS API呼叫](dcs-s2s-calls.md)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [DCS API參考](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
