@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 修改GPT setTargeting API呼叫
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -57,7 +57,7 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getKey </code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>傳回鍵值區段對中的鍵。 例如，如果您的鍵值對由 <code> color=blue組成 </code>，則會傳回 <code> color </code>。 </p> </td> 
+   <td colname="col3"> <p>傳回鍵值區段對中的鍵。 例如，如果您的鍵值對由組成， <code> color=blue </code>則會傳回 <code> color </code>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getValues </code> </p> </td> 
@@ -72,7 +72,7 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
  </tbody>
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [建立GPT目標](../../integration/gpt-aam-destination/gpt-aam-create-destination.md)
 >* [Google Publisher標籤的Audience Manager代碼](../../integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
