@@ -7,20 +7,29 @@ title: 「特徵詳細資料」頁
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
 keywords: 身分類型劃分，身分識別劃分，受眾身分識別報告
 translation-type: tm+mt
-source-git-commit: 345042673a9ee7abdac994d774e5c4c893a78749
+source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
 
 ---
 
 
 # 「特徵詳細資料」頁 {#trait-details-page}
 
-個別特徵的詳細資料頁面提供資訊的概述，例如特徵名稱、ID、效能度量、定義特徵的運算式、其所屬的區段以及特徵稽核記錄。 若要檢視這些詳細資訊，請 [!UICONTROL Audience Data > Traits] 前往並按一下您要使用之特徵的名稱。
+個別特徵的詳細資料頁面提供特徵詳細資料的概述，例如特徵名稱、ID、效能度量、定義特徵的運算式、其所屬的區段以及特徵稽核記錄檔。 若要檢視這些詳細資訊，請 **[!UICONTROL Audience Data]** 前往&gt; **[!UICONTROL Traits]** 並按一下您要處理之特徵的名稱。
 
-## 基本資訊 {#basics}
+## 特徵管理工具 {#trait-management-tools}
 
-此區 [!UICONTROL Basic Information] 段顯示建立特徵時填寫之必填和選填欄位的詳細資訊。 這包括特徵類型、特徵ID、說明、資料來源和其他中繼資料。 這些詳細資訊會依特徵類型（資料夾、已登入或規則型）而有所不同。
+特徵詳細資料頁面的頂端會代管可用於管理特徵的工具：
 
-![](assets/basicInfo.png)
+1. **[!UICONTROL Add New]**:使用這個選項可建立新的規則型、演算法或已登入特徵。
+2. **[!UICONTROL Edit]**:使用此選項可變更目前特徵的設定。
+3. **[!UICONTROL Delete]**:使用這個選項可從您的Audience manager帳戶移除目前特徵。
+4. **[!UICONTROL Marketplace Recommendations]**:使用此選項，從您未訂閱的資料費用中，尋找與您所 [!UICONTROL Audience Marketplace] 檢視的相似特性。 請參 [閱Audience Marketplace for Data Buyers](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，以瞭解如何導覽Marketplace並尋找類似特性。
+
+![基本特徵資訊](assets/basic-trait-information.png)
+
+## 特徵資訊 {#basics}
+
+此區 [!UICONTROL Trait Information] 段顯示建立特徵時填寫之必填和選填欄位的詳細資訊。 這包括特徵類型、特徵ID、說明、資料來源和其他中繼資料。 這些詳細資訊會依特徵類型（資料夾、已登入或規則型）而有所不同。
 
 ## 特徵圖 {#trait-graph}
 
