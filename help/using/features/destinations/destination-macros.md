@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 定義的目標宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> %別名%</code> </p> </td> 
+   <td colname="col1"> <p> <code> %alias%</code> </p> </td> 
    <td colname="col2"> <p>必填. </p> <p>定義映射區段值在目標URL中的位置。 這通常是區 <i>段ID</i>，但也可以是整合程式碼。 </p> </td> 
   </tr> 
   <tr> 
@@ -40,16 +40,16 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    <td colname="col2"> <p>將使用者的 <span class="keyword"> Audience Manager</span> ID插入目標URL。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code>%dpid_<i>資料來源id</i>%</code> </p> </td> 
+   <td colname="col1"> <p> <code>%dpid_<i>data source id</i>%</code> </p> </td> 
    <td colname="col2"> <p>數 <i>據源ID</i> ，與傳遞給宏的資料源的標識符相對應。 </p> <p>讓我們以一個簡單的例子來看看它是如何運作的。 在此案例中，我們有 <span class="keyword"> Audience Manager</span> 合作夥伴，其ID和條件如下： </p> 
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">資料來源ID: <code> 1</code> </li> 
-     <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">內部客戶ID:客 <code> 戶ABC</code> </li> 
+     <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">內部客戶ID: <code> CustomerABC</code> </li> 
      <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">宣告的ID:合作夥伴想將這些值傳入為宣告的ID <code> 1:CustomerABC</code>。 </li> 
-    </ul> <p>若要使用 <code>%dpid_<i>data source id</i>%</code>, <span class="keyword"></span> Audience Manager合作夥伴會將巨集格式設定如下： </p> 
+    </ul> <p>若要使用， <code>%dpid_<i>data source id</i>%</code>Audience Manager <span class="keyword"></span> 合作夥伴會將巨集格式設為如下： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
-    </ul> <p>巨集將用CustomerABC <code> 取代</code> 1 <code> 個巨集</code>。 </p> <p> 
+    </ul> <p>宏將替換 <code> 1</code> 為 <code> CustomerABC</code>。 </p> <p> 
      <draft-comment>
        基於AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
      </draft-comment> </p> </td> 
@@ -84,7 +84,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ## 使用目標宏進行快取破壞 {#destination-cache-busting}
 
-這些 `%rnd%` 和 `%timestamp%` 巨集會將唯一值插入字串， [!DNL URL] 以防止瀏覽器快取。
+這些 `%rnd%` 和 `%timestamp%` 巨集會將唯一值插入字串，以 [!DNL URL] 防止瀏覽器快取。
 
 ## Cache Busting `%rnd%` with and `%timestamp%`{#dest-cache-busting}
 
@@ -101,6 +101,6 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 這兩個巨集都會阻止快取， `%rnd%` 但效率可能更高。 例如，若有數 `%timestamp%`位使用者同時檢視頁面，則會獲得相同的日期／時間值。 因此，此呼叫並 [!DNL URL] 非唯一，且多個呼叫只會被計算一次。 不過， `%rnd%` 會為每個呼叫產生唯一的數值（即使使用者同時看到相同的頁面）。 這表示字 [!DNL URL] 串包含不同的值，並計為唯一。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [定義的目標宏](../../features/destinations/destination-macros.md#destination-macros-defined)
