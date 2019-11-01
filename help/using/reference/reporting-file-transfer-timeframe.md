@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料傳送和檔案處理時間對報表的影響
 uuid: 4b975512-f67e-4749-a7ef-168415597682
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -67,7 +67,7 @@ c_reporting_file_transfer_timeframe.xml
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [傳入客戶資料擷取常見問答集](../faq/faq-inbound-data-ingestion.md)
 
