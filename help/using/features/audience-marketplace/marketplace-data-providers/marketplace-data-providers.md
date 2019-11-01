@@ -8,7 +8,7 @@ title: 適用於資料提供者的Audience Marketplace
 topic: DIL API
 uuid: 80e60d33-63e7-496c-82c5-205ecf0ec03a
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -51,7 +51,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 在中 [!UICONTROL My Shared Data]，有時動態消息狀態會標示為私人。 這表示私人資料饋送。 私人資料饋送可讓賣家限制買家存取其資料，甚至資料饋送的名稱。 當賣家提供特殊優惠、折扣或隱私權與存取權控制很重要時，就可以私下提供饋送。 透過私人資料饋送，供應商會審查並核准所有購買者存取要求。 For more information, see [Private Data Feeds](../../../features/audience-marketplace/marketplace-private-feeds.md). 若要建立公用或私用資料饋送，請參 [閱建立公用或私用資料饋送](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#create-public-private-data-feed)。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [資料提供者的折扣](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts)
 
