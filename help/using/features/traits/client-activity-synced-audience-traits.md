@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 作用中受眾特徵與資料來源同步特徵
 uuid: b4f145ab-f343-4d71-86d1-5d03f7b03809
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >
 >[!UICONTROL Data Source Synced Traits] 對於疑難排解非常有用。 按一下特徵名稱，以檢查特徵摘要頁面上的量度。 如果您選取的特徵傳回資料，表示ID同步程式已正確設定，並將資料推送至 [!DNL Audience Manager]。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [可定址對象](../../features/addressable-audiences.md)
 
