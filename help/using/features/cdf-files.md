@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 客戶資料饋送
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -59,7 +59,7 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><code> 事件時間</code> </p> </td> 
+   <td colname="col1"> <p><code> Event Time</code> </p> </td> 
    <td colname="col2"> <p>時間戳記 </p> </td> 
    <td colname="col3"> <p>資料收集伺服器(DCS)處理CDF <span class="wintitle"> 檔案的時間</span> 。 時間戳記使 <i>用yyyy-mm-dd hh:mm:ss</i> 格式，並在UTC時區中設定。 </p> <p> <p>注意：事件時 <i>間不</i>: <p> 
        <ul id="ul_41ABC813FAAC4659AC8DA13F4A6DD7EB"> 
@@ -68,37 +68,37 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
        </ul> </p> </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 裝置</code> </p> </td> 
+   <td colname="col1"> <p><code> Device</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
    <td colname="col3"> <p>這是唯一 <span class="wintitle"> 使用者ID</span> (UUID)，是您網站訪客的38位元裝置ID。 也請參閱 <a href="../reference/ids-in-aam.md">Audience Manager 內的 ID 索引</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 容器 ID</code> </p> </td> 
+   <td colname="col1"> <p><code> Container ID</code> </p> </td> 
    <td colname="col2"> <p>數值 </p> </td> 
    <td colname="col3"> <p>觸發ID的容器ID同步。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 實現的特性</code> </p> </td> 
+   <td colname="col1"> <p><code> Realized Traits</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
    <td colname="col3"> <p>一組特徵ID，包含訪客在事件呼叫中實現（符合）的所有特徵。 </p> <p>請注意，陣列可包含訪客在此事件呼叫前曾符合的特徵，以及重新符合的特徵。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 已實現的區段</code> </p> </td> 
+   <td colname="col1"> <p><code> Realized Segments</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
    <td colname="col3"> <p>區段ID的陣列，包含訪客在事件呼叫中實現（符合）的所有區段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 要求參數</code> </p> </td> 
+   <td colname="col1"> <p><code> Request Parameters</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>擷取所有參數（變數、ID、索引鍵值配對、裝置廣告ID等）的字串在事件呼叫時傳入。 </p> <p>簡短範例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD5965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
+   <td colname="col3"> <p>擷取所有參數（變數、ID、索引鍵值配對、裝置廣告ID等）的字串在事件呼叫時傳入。 </p> <p>簡短範例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 參考資料類型</code> </p> </td> 
+   <td colname="col1"> <p><code> Referer Data Type</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
    <td colname="col3"> <p>反向連結頁面的未編碼URL（如果有）。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> IP資料類型</code> </p> </td> 
+   <td colname="col1"> <p><code> IP Data Type</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
    <td colname="col3"> <p>在事件呼叫中擷取之訪客的IP位址。 </p> </td> 
   </tr> 
@@ -108,12 +108,12 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
    <td colname="col3"> <p>指 <span class="keyword"> 派給網站訪客的Experience Cloud</span> ID(MID)。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and theExperience Cloud ID service</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 所有區段</code> </p> </td> 
+   <td colname="col1"> <p><code> All Segments</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
    <td colname="col3"> <p>區段ID的陣列，包含先前已實現的區段和訪客符合的新區段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><code> 所有特徵</code> </p> </td> 
+   <td colname="col1"> <p><code> All Traits</code> </p> </td> 
    <td colname="col2"> <p>數值陣列 </p> </td> 
    <td colname="col3"> <p>一系列第一方和第三方特徵ID，其中包含訪客自上次產生資料饋送以來所符合的先前實現特徵和新特徵。 </p> </td> 
   </tr> 
@@ -142,7 +142,7 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
    <td colname="col1"> <p>欄位分隔符和分隔字元 </p> </td> 
    <td colname="col2"> <p>這些非打印字元定義CDF檔案的元素和結構： </p> <p> 
      <ul id="ul_056A9B90AC88405CBB5F81A56CD6E4C9"> 
-      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a(ASCII <code> 001</code> 或 <code> ^A</code>)可使用非列印空間指示器分隔個別欄位中的資料。 </li> 
+      <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a(ASCII <code> 001</code> 或 <code> ^A</code>)會以非列印空間指標分隔個別欄位中的資料。 </li> 
       <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b(ASCII <code> 002</code> 或 <code> ^B</code>)可分隔資料和陣列，並請求參數。 </li> 
       <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c(ASCII <code> 003</code> 或 <code> ^C</code>)定義鍵值對。 </li> 
      </ul> </p> </td> 
@@ -154,13 +154,13 @@ source-git-commit: c206246a4a586d1148c18e0bce734d07963a85f6
       <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件時間 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">裝置 </li> 
       <li id="li_F8AE0D4CA19D411686A240FE06F56147">容器 ID </li> 
-      <li id="li_660D17989BE54610A01229C47894E8A9"> 實現的特性 </li> 
-      <li id="li_1591180564374204852785C6FFCA4F74"> 已實現的區段 </li> 
+      <li id="li_660D17989BE54610A01229C47894E8A9">實現的特性 </li> 
+      <li id="li_1591180564374204852785C6FFCA4F74">已實現的區段 </li> 
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">要求參數 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 位址 </li> 
       <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience cloud裝置ID（或MID）。 See also, <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID Service</a> </li> 
-      <li id="li_7A05AF4790A1425A90D019681DF4A595"> 所有區段 </li> 
+      <li id="li_7A05AF4790A1425A90D019681DF4A595">所有區段 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特徵 </li> 
      </ol> </p> <p>如需欄位說明，請參閱「 <a href="#cdf-defined"> 客戶資料饋送內容定義」</a>。 </p> </td> 
   </tr> 
@@ -224,7 +224,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
    <td colname="col2"> <p>這是Amazon S3伺服器上CDF檔案的預設根儲存桶。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 您 <i>的S3儲存貯體名稱</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>your S3 bucket name</i> </code> </p> </td> 
    <td colname="col2"> <p>唯讀儲存桶的名稱，保存CDF檔案的S3儲存桶。 </p> </td> 
   </tr> 
   <tr> 
@@ -236,11 +236,11 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
    <td colname="col2"> <p>以24小時記號表示並在UTC時區中設定的時間值。 <a href="#different-processing-times">另請參閱「 </a> 客戶資料饋送檔案名稱時間」和「檔案內容時間」.... </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 合 <i>作夥伴ID</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>partner ID</i> </code> </p> </td> 
    <td colname="col2"> <p>您的合作夥伴ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> <i>AAM進程ID</i>_0</code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>AAM process ID</i>_0</code> </p> </td> 
    <td colname="col2"> <p>內部的 <span class="keyword"> Audience Manager</span> 程式ID。 </p> </td> 
   </tr> 
   <tr> 
@@ -300,7 +300,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 檔案</code> </p> </td> 
+   <td colname="col1"> <p> <code> Files</code> </p> </td> 
    <td colname="col2"> <p>啟動包含有關CDF檔案的元資料的陣列。 </p> </td> 
   </tr> 
   <tr> 
@@ -309,10 +309,10 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>Amazon S3 ETag。 連字型大小後面的數字顯示在多部件上載期間用於生成檔案的部件數。 ETag <code></code> 與檔案的MD5校驗和不相同。 </p> </td> 
+   <td colname="col2"> <p>Amazon S3 ETag。 連字型大小後面的數字顯示在多部件上載期間用於生成檔案的部件數。 與 <code> ETag</code> 檔案的MD5校驗和不相同。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 檔案名稱</code> </p> </td> 
+   <td colname="col1"> <p> <code> FileName</code> </p> </td> 
    <td colname="col2"> <p>檔案名。 請參閱 <a href="#cdf-naming-conventions"> 客戶資料饋送檔案命名慣例</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -333,15 +333,15 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 總計</code> </p> </td> 
+   <td colname="col1"> <p> <code> Totals</code> </p> </td> 
    <td colname="col2"> <p>啟動包含所有CDF檔案的聚合資料的對象。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 日</code> </p> </td> 
+   <td colname="col1"> <p> <code> Day</code> </p> </td> 
    <td colname="col2"> <p>資料可用的日期。 使用 <i>yyyy-mm-dd格式</i> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 小時</code> </p> </td> 
+   <td colname="col1"> <p> <code> Hour</code> </p> </td> 
    <td colname="col2"> <p>資料可用的小時數。 使用在UTC時區中設定的24小時格式。 </p> </td> 
   </tr> 
   <tr> 
@@ -376,7 +376,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 | 檔案名稱 | CDF檔案名中的時間戳記標示開始準 [!DNL Audience Manager] 備檔案進行傳送的時間。 此時間戳記在UTC時區中設定。 它使用參 `hour=` 數，時間格式為24小時記號的2位數小時。 此時間可以與檔案內容中記錄的事件時間不同。 中斷使用CDF檔案時，有時您會發現您的S3儲存貯體在特定小時內是空的。 空桶表示可以表示以下任一項：<ul><li>沒有那個小時的資料。 </li><li> 我們的伺服器負載繁重，無法處理特定小時的檔案。 當伺服器接上來時，會將原本應在較早時段檔案中的檔案，放入具有較晚時間值的儲存貯體中。 例如，當本應在17小時儲存貯體中的檔案出現在18小時儲存貯體中時（在檔案名稱中），您就會 `hour=18` 看到這一點。 在這種情況下，伺服器可能會在17小時內開始處理您的檔案，但無法在該時間間隔內完成。 相反地，檔案會推送至下一個每小時時段。</li></ul><br>**重要**:請勿使用檔案名稱時間戳記依時間來分組事件。 如果您需要依時間分組，請使用檔 `EventTime` 案內容中的時間戳記。 |
 | 檔案內容 | CDF檔案內容中的時間戳記標示資料收集伺服器開始處理檔案的時間。 此時間戳記在UTC時區中設定。 它使用字 `EventTime` 段，時間格式為 *`yyyy-mm-dd hh:mm:ss`*。 此時間接近頁面上事件的實際時間，但可能與檔案名稱中的小時指示符不同。 <br> **提示**:與檔案 `hour=` 名稱中的時間戳記不同，您可以 `EventTime` 使用時間來分組資料。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [客戶資料饋送常見問答集](../faq/faq-cdf.md)
 
