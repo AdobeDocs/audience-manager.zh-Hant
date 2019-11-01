@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 translation-type: tm+mt
-source-git-commit: 1ff46970470eae4bc30760468013d994c976e549
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -136,7 +136,7 @@ source-git-commit: 1ff46970470eae4bc30760468013d994c976e549
 
 在命名並將資料添加到檔案後，將其發送到由提供的Amazon S3儲存目錄 [!DNL Audience Manager]。 請參 [閱中繼資料檔案的傳送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [受眾最佳化報告的資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 >* [透過像素呼叫擷取促銷活動點按資料](../../../integration/media-data-integration/click-data-pixels.md)
