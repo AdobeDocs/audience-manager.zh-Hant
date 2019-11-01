@@ -2,12 +2,12 @@
 description: 若要建立新資料來源，請至「觀眾資料>資料來源>新增」，並完成此處說明之每個章節的步驟。 建立資料來源需要管理員權限。
 keywords: 資料源；管理資料源；觀眾管理資料源
 seo-description: 若要建立新資料來源，請至「觀眾資料>資料來源>新增」，並完成此處說明之每個章節的步驟。 建立資料來源需要管理員權限。
-seo-title: Create a Data Source
+seo-title: 建立資料來源
 solution: Audience Manager
 title: 管理資料來源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 translation-type: tm+mt
-source-git-commit: 9e1abb305c66a4adf6a42a7873144222491692f9
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 9e1abb305c66a4adf6a42a7873144222491692f9
 
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
-   * **[!UICONTROL Cross-device]** (建立時需要 [!UICONTROL Profile Merge Rule])。 Note, for some customers, this selection exposes the **[!UICONTROL ID Definition]** options.
+   * **[!UICONTROL Cross-device]** (建立時需要 [!UICONTROL Profile Merge Rule])。 請注意，對於某些客戶，此選項會公開 **[!UICONTROL ID Definition]** 選項。
 
 1. Choose an **[!UICONTROL ID Definition]** option. 選項包括:
 
@@ -53,31 +53,31 @@ source-git-commit: 9e1abb305c66a4adf6a42a7873144222491692f9
 
 ## Data Source Settings {#settings}
 
-這些設定會決定資料來源的識別、使用和共用方式。 You can also enable error reporting for inbound data files. To complete the  section:[!UICONTROL Data Source Settings]
+這些設定會決定資料來源的識別、使用和共用方式。 您也可以啟用傳入資料檔案的錯誤報告。 要完成該部 [!UICONTROL Data Source Settings] 分：
 
 1. 選取核 [!UICONTROL Data Source Setting] 取方塊，將選項套用至您的資料來源。
 2. Click **[!UICONTROL Save]**.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
->* [Data Source Settings and Menu Options](../features/datasources-list-and-settings.md#settings-menu-options)
+>* [資料來源設定和功能表選項](../features/datasources-list-and-settings.md#settings-menu-options)
 
 
-## Delete a Data Source {#delete-data-source}
+## 刪除資料來源 {#delete-data-source}
 
 <!-- t_datasource_delete.xml -->
 
-Delete a data source that you no longer need.
+刪除您不再需要的資料來源。
 
 >[!NOTE]
 >
->Please note the following restrictions:
+>請注意下列限制：
 >
->* You cannot delete an Active Audience or Data Source Synced Trait.[](../features/traits/client-activity-synced-audience-traits.md)
->* For customers using Adobe Analytics: Audience Manager does not allow you to delete data sources created automatically from your  report suites. [!DNL Analytics]Use the Core Service to unmap these data sources.[](https://marketing.adobe.com/resources/help/en_US/mcloud/)
+>* 您無法刪除作 [用中對象或資料來源同步特徵](../features/traits/client-activity-synced-audience-traits.md)。
+>* 對於使用Adobe Analytics的客戶：Audience manager不允許您刪除從報表套裝自動建立的資 [!DNL Analytics] 料來源。 使用核 [心服務](https://marketing.adobe.com/resources/help/en_US/mcloud/) ，取消對應這些資料來源。
 
 
 1. Click **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Data Sources]**.
 1. 選取一或多個資料來源旁的核取方塊。
-You can use the  box to locate the desired data sources if you have a long list.[!UICONTROL Search]
-1. Click  , then confirm the deletion.![](assets/icon_trash.png)
+如果您有 [!UICONTROL Search] 長清單，可使用方塊來尋找所需的資料來源。
+1. 按一 ![](assets/icon_trash.png)下，然後確認刪除。
