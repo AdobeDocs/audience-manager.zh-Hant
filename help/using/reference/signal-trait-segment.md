@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 信號、特徵和區段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -44,7 +44,7 @@ c_signal_trait_segment.xml
    <td colname="col3"> 
     <ul id="ul_A6D8D30A37C94437A7BF38736C6F8556"> 
      <li id="li_74C87C34FA254783AC0DEBBC69B35AC4"><code> product=camera</code> </li> 
-     <li id="li_C1727B9136024E56B60374597A7DCA00"><code> 價格&gt;1000</code> </li> 
+     <li id="li_C1727B9136024E56B60374597A7DCA00"><code> price&gt;1000</code> </li> 
      <li id="li_B2E7798768EE444AB978F3F27B0BC0B5"><code> type=digital SLR</code> </li> 
     </ul> </td> 
   </tr> 
@@ -56,7 +56,7 @@ c_signal_trait_segment.xml
   <tr> 
    <td colname="col1"><b>區段</b> </td> 
    <td colname="col2"> <p>共用一組共同屬性並符合相關特徵資格的使用者。 </p> <p>布林運算式，以及時近／頻率需求，可讓您建立區段限定規則。 </p> <p>結合特徵和區段規則，建立精確的資格要求。 </p> </td> 
-   <td colname="col3"> <p>您可以從可用特性和訊號建立區段規則，表示為： </p> <p><code> (product=camera AND type=digital SLR)OR(price&gt;1000)</code> </p> </td> 
+   <td colname="col3"> <p>您可以從可用特性和訊號建立區段規則，表示為： </p> <p><code> (product=camera AND type=digital SLR) OR (price&gt;1000)</code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -67,7 +67,7 @@ c_signal_trait_segment.xml
 
 **使用視覺化工具和程式碼編輯器建立特徵和區段規則**
 
-用戶端在使用者介面中使用視覺化工具和程式碼編輯器來管理特 [!DNL Audience Manager] 徵和區段。 視覺化工具可讓您使用搜尋功能、快顯選項、下拉式選單和拖放功能來建立規則。 程式碼編輯器提供進階使用者程式設計方式，以開發受眾細分標準。
+用戶端在使用者介面中使用視覺化工具和程式碼編輯器來管理特 [!DNL Audience Manager] 徵和區段。 視覺化工具可讓您使用搜尋功能、快顯選項、下拉式選單以及拖放功能來建立規則。 程式碼編輯器提供進階使用者程式設計方式，以開發受眾細分標準。
 
 **事件呼叫傳送資料至Audience Manager**
 
@@ -77,7 +77,7 @@ c_signal_trait_segment.xml
 https://<domain>/event?product=camera&price>100
 ```
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [區段：目的、構成和規則](../features/segments/segments-purpose.md)
 
