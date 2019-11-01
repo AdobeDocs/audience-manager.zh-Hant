@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則控制面板
 uuid: d6725218-7b36-4653-9900-d67b5f7702a0
 translation-type: tm+mt
-source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 * 追蹤每位使用者的平均裝置數。
 * 使用基本控制項來建立、編輯和刪除規則。 只有管理員可以管理規則，但其他使用者可以檢視規則並將它們套用至區段。 請參 [閱定義的配置檔案合併規則選項](merge-rule-definitions.md)[和合併規則的使用案例](merge-rule-targeting-options.md)。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [描述檔合併規則常見問答集](../../faq/faq-profile-merge.md)
 
