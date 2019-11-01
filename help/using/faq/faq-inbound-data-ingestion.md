@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 傳入客戶資料擷取常見問答集
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 translation-type: tm+mt
-source-git-commit: e081e31380d4600883f927b5ecef3b38be2a676e
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -268,7 +268,7 @@ FTP檔案在處理後即會移除。 [!DNL S3] 檔案會在30天後移除。 由
 
 這要看情況。 [!DNL Audience Manager] 從隊列中讀取最多119000個條目， [!DNL Amazon SQS] 並將它們分成最多3個批。 只有在檔案最後歸為同一批時，才會同時處理檔案。 但是，由於日常接收的資料量很大， [!DNL Audience Manager] 無法保證任何檔案處理順序。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [批資料傳輸流程說明](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
 
