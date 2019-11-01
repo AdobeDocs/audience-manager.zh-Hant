@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DIL模組
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -21,7 +21,7 @@ c_dil_mods.xml
 
  -->
 
-##  siteCatalyst.init {#sitecat-init}
+## siteCatalyst.init {#sitecat-init}
 
 可搭配 [!UICONTROL DIL] 傳送標 [!DNL Analytics] 記元素（變數、prop、eVar等）至Audience Manager。 以逗號分隔的清單傳回資料。 2.6版提供。
 
@@ -49,14 +49,14 @@ r_dil_sc_init.xml
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <code> 名稱 </code> </td> 
+   <td colname="col1"> <code> names </code> </td> 
    <td colname="col2"> 字串 </td> 
-   <td colname="col3"> <p>一系列非執行Analytics變數，例如「Analytics名稱」、「列舉 <span class="keyword"> 頁面名稱」、「促銷活動字串」、「 </span> 促銷活動字串」、「產品」等，其中包 <code> 含「列舉的」、「 </code>促銷活動字串」、「 <code></code><code></code><code></code>產品」等。 </p> </td> 
+   <td colname="col3"> <p>包含未列舉Analytics變數(如、 <span class="keyword"> 、 </span> 等)的字串 <code> pageName </code>陣列 <code> channel </code><code> campaign </code><code> product </code>。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> iteratedNames </code> </td> 
    <td colname="col2"> 物件 </td> 
-   <td colname="col3"> <p>包含 <span class="keyword"> Analytics變數的陣列，如prop和evar(例如 </span> prop1、prop2、evar3 <code> 、evar4枚舉的 </code><code></code><code></code><code></code>prop1、prop2、evar4)。 </p> </td> 
+   <td colname="col3"> <p>包含列舉的 <span class="keyword"> Analytics變數( </span> 例如prop和evar)的物件陣列(例如 <code> prop1 </code>、 <code> prop2 </code><code> evar3 </code>、 <code> evar4 </code>)。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> maxIndex </code> </td> 
@@ -74,12 +74,12 @@ r_dil_sc_init.xml
    <td colname="col3"> <p>代表 <span class="wintitle"> DIL的物件 </span>。 </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code> 選項 </code> </td> 
+   <td colname="col1"> <code> options </code> </td> 
    <td colname="col2"> 物件 </td> 
    <td colname="col3"> <p>其他選項： </p> 
     <ul id="ul_F4DFA5351BB5427B8CBF600A0A4A21A9"> 
-     <li id="li_659ECE5E63834A21A2D9698A1444FCA6"> <p> <code> replaceContextDataPeriodsWith </code> </p> <p>如果不指定其他內容，則句點將替換為預設下划線(_)。 </p> <p>例如， <code> s.contextData = {abc.def = '123'} </code>會在事件呼叫查詢字串中產生 <code></code> c_contextData_abc_def=123。 </p> <p>此選項僅適用於 <span class="wintitle"> DIL </span> 5.0版或更新版本。 </p> </li> 
-     <li id="li_1C969DD8FC2F43A0A9281D9810A70C3A"> <p> <code> filterFromContextVariables </code> </p> <p>例如，filterFromContextVariables <code> :['email'、'zip'、'accountNumber'] </code> 會導致從上下文資料的資料收集中篩選字串陣列。 此選項不包括個人識別資訊(PII)。 </p> </li> 
+     <li id="li_659ECE5E63834A21A2D9698A1444FCA6"> <p> <code> replaceContextDataPeriodsWith </code> </p> <p>如果不指定其他內容，則句點將替換為預設下划線(_)。 </p> <p>例如， <code> s.contextData = {abc.def = '123'} </code>會導致事 <code> c_contextData_abc_def=123 </code> 件呼叫查詢字串。 </p> <p>此選項僅適用於 <span class="wintitle"> DIL </span> 5.0版或更新版本。 </p> </li> 
+     <li id="li_1C969DD8FC2F43A0A9281D9810A70C3A"> <p> <code> filterFromContextVariables </code> </p> <p>例如，會 <code> filterFromContextVariables: ['email', 'zip', 'accountNumber'] </code> 導致從上下文資料的資料收集中篩選字串陣列。 此選項不包括個人識別資訊(PII)。 </p> </li> 
     </ul> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -173,7 +173,7 @@ dil-google-universal-analytics.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> gaObject </code> </p> </td> 
-   <td colname="col2"> <p>Google Analytics例項的全域 <span class="keyword"> 變數 </span>。 這通常 <code> 是預 </code> 設的，除非您已自訂 <span class="keyword"> Google Analytics程 </span> 式碼。 </p> </td> 
+   <td colname="col2"> <p>Google Analytics例項的全域 <span class="keyword"> 變數 </span>。 這通常是預 <code> ga </code> 設值，除非您已自訂 <span class="keyword"> Google Analytics </span> 代碼。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance </code> </p> </td> 
@@ -181,7 +181,7 @@ dil-google-universal-analytics.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> internalPropertyName </code> </p> </td> 
-   <td colname="col2"> <p> <i>（可選）</i> ，在 <code> analytics.js程式庫中 </code> ，內部屬性是精簡變 <code> 數「b」 </code>。 此變數包含 <span class="keyword"> Google Analytics </span> 資料。 </p> <p>此屬性是選用的，因為除非Google變更其內部變數的名稱，否則您不需要設定它。 例如，如果此精簡變數變更 <code> 為'a' </code>，您會呼叫 <code> GA.submitUniversalAnalytics(); </code> 如下： </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
+   <td colname="col2"> <p> <i>（可選）</i> ，在程式庫 <code> analytics.js </code> 中，內部屬性是精簡變數 <code> 'b' </code>。 此變數包含 <span class="keyword"> Google Analytics </span> 資料。 </p> <p>此屬性是選用的，因為除非Google變更其內部變數的名稱，否則您不需要設定它。 例如，如果此精簡變數變更為 <code> 'a' </code>，您會呼叫 <code> GA.submitUniversalAnalytics(); </code> 如下： </p> <p> <code> DIL.modules.GAsubmitUniversalAnalytics(ga, DilInstance, 'a'); </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -199,11 +199,6 @@ var dilInstance = DIL.create({
 //Call the DIL Universal Analytics function 
 DIL.modules.GA.submitUniversalAnalytics(ga, dilInstance);
 ```
-
->[!MORE_LIKE_THIS]
->
->* [ga對象方法參考](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)
-
 
 ##  GA.init {#ga-init}
 
@@ -312,9 +307,10 @@ _gaq.push([
 
 `https://adobe.demdex.com/event?...c_accountId=UA-XXXXX-X&c_Section=Life%20%26%20Style &c_itemOrderId=1234&c_itemSku=DD44&c_itemName=T-Shirt&c_itemCategory=Olive%20Medium& c_itemPrice=11.99&c_itemQuantity=1`
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Google Analytics追蹤代碼](https://developers.google.com/analytics/devguides/collection/gajs/methods/)
 >* [完整的網頁升級：ga.js/dc.js至analytics.js](https://developers.google.com/analytics/devguides/collection/upgrade/reference/gajs-analyticsjs)
 >* [將analytics.js新增至您的網站](https://developers.google.com/analytics/devguides/collection/analyticsjs/)
+>* [ga對象方法參考](https://developers.google.com/analytics/devguides/collection/analyticsjs/ga-object-methods-reference)
 
