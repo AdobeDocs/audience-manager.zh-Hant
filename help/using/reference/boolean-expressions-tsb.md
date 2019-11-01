@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特徵和區段產生器中的布林運算式
 uuid: 14f02d3f-4c84-41fe-bc91-b34f0d49574a
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -76,7 +76,7 @@ c_tb_boolean.xml
 
 當 [!UICONTROL AND NOT] 透過排除（而非包含）來定義觀眾時，運算 *子就很* 有用 **。 例如，假設您正在進行銷售，並想將訪客細分為只查看完整價格項目的客戶。 如果訪客未看到銷售價格項目，則不必為所有符合資格的完整或銷售價格項目建立 *信號* 清單。 這在管理上很有效，因為相較於以完整價格提供的產品，您通常的售價項目較少。 使用布林值 [!UICONTROL NOT]時，訪 *客不得顯示* 銷售訊號，以取得全價觀眾會籍。 相反地， [!UICONTROL AND NOT] 使用案例則 [!UICONTROL AND] 反其道而行之，說明如何透過包含（即，根據2個明確指明的訊號符合資格的訪客）來判斷觀眾成員資格。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [在TraitBuilder中使用比較運算子](../features/traits/trait-comparison-operators.md)
 >* [TraitBuilder運算式中的運算順序](../features/traits/trait-operator-precedence.md)
