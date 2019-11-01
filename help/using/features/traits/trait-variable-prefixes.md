@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 關鍵變數的前置詞要求
 uuid: df2ef9c8-606a-45f9-a836-859f856a7d4b
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -43,16 +43,16 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
   </tr> 
   <tr> 
    <td colname="col1"><code> h_</code> </td> 
-   <td colname="col2"> <p>包含 <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP標題資訊</a> 。 包含標題參 <code> 數</code>，例如：<code> refer</code>、IP <code> 、</code>accept-language等。 </p> <p> <p>注意：對於使用9.0以上DIL版本的客戶，使用 <code></code> h_referer訊號的資料收集將無法在Safari瀏覽器上運作。 隨著 <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0的推出</a>,Safari瀏覽器可能會將demdex.net網域分類為追蹤器，並會在資料收集要求上截斷反向連結，以僅包含來源，而非完整URL。 請參 <a href="../../dil/dil-overview.md#get-implement-dil-code">閱取得和實作DIL程式碼</a> ，以取得最新的DIL版本。 </p> </p> </td> 
+   <td colname="col2"> <p>包含 <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" scope="external" format="html"> HTTP標題資訊</a> 。 包含標題參 <code> referer</code>數<code> IP</code>, <code> accept-language</code>如、 </p> <p> <p>注意：對於使用9.0以上DIL版本的客戶，使用此訊號的資料收 <code> h_referer</code> 集將無法在Safari瀏覽器上運作。 隨著 <a href="https://webkit.org/blog/8311/intelligent-tracking-prevention-2-0/" format="https" scope="external"> ITP 2.0的推出</a>,Safari瀏覽器可能會將demdex.net網域分類為追蹤器，並會在資料收集要求上截斷反向連結，以僅包含原始網域，而非完整URL。 請參 <a href="../../dil/dil-overview.md#get-implement-dil-code">閱取得和實作DIL程式碼</a> ，以取得最新的DIL版本。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><code> p_</code> </td> 
-   <td colname="col2"> <p>我們的 <span class="wintitle"> 資料收集伺服器</span> ，允許傳遞私用參數。 基本上，任何以 <code> p_</code> 開頭的參數都會用於特徵評估，但不會記錄在下游或儲存。 </p> <p>範例：若 <code> /event?p_age=23</code> ，且有 <code> YoungPeople = p_age &lt; 25</code>，則會實現該特徵，但 <code> p_age=23</code> -key-value對會在請求後被刪除，且不會記錄。 </p> </td> 
+   <td colname="col2"> <p>我們的 <span class="wintitle"> 資料收集伺服器</span> ，允許傳遞私用參數。 基本上，任何以開頭的參 <code> p_</code> 數都會用於特徵評估，但不會記錄在下游或儲存。 </p> <p>範例：若 <code> /event?p_age=23</code> 有某個特 <code> YoungPeople = p_age &lt; 25</code>徵，則會實現該特徵，但 <code> p_age=23</code> key-value對會在請求後丟棄，且不會記錄。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [基本資訊概觀](../../features/traits/create-onboarded-rule-based-traits.md)
 >* [管理特徵規則](../../features/traits/manage-trait-rules.md#managing-trait-rules)
