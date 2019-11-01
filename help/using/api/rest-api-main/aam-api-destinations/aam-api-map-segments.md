@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 將區段對應至目標
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 translation-type: tm+mt
-source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -20,13 +20,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 ## 支援的目標類型：僅限URL和Cookie
 
 可用的 `POST` 方法可讓您將區段對應至 [!UICONTROL URL] 且僅 [!UICONTROL cookie destinations] 限。 目前，您無法使用這些方法將 [!UICONTROL server-to-server destinations] 區段對 [!DNL REST API] 應至。 請改用使用者介面。 不過，相關的目標方 `GET` 法可讓您擷取在使用者介 [!UICONTROL server-to-server destinations] 面中建立的相關資訊。
-
->[!MORE_LIKE_THIS]
->
->* [目的地](../../../features/destinations/destinations.md)
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
-
 
 ## 將區段對應至無序號的URL目的地 {#map-segment-non-serial}
 
@@ -584,3 +577,10 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
     "traitAlias": null
 }
 ```
+
+>[!MORELIKETHIS]
+>
+>* [目的地](../../../features/destinations/destinations.md)
+>* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+>* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
+
