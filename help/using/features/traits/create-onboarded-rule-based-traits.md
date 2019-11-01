@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 建立規則型或已登入的特徵
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 translation-type: tm+mt
-source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -87,10 +87,11 @@ source-git-commit: 9215942bd33af0eabf5143e52edcb249d4ca2cac
 ### 設定特徵的TTL
 
 1. 展開 [!UICONTROL Advanced Options] 區段並輸入數字以設定 [!DNL TTL] 特徵的值。
-2. Click **[!UICONTROL Save]**.
+1. Click **[!UICONTROL Save]**.
+
    ![](assets/TTL.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [區段的存留時間說明](../../features/traits/segment-ttl-explained.md)
 
