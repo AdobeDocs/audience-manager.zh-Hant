@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: dbc96973ed2214d171fe32b7e1314d40c22c2d79
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -79,12 +79,12 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_dpid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_id%</code> </p> </td> 
-   <td colname="col2"> <p>資料提供者ID。 </p> <p>通常與 <code> d_dpuuid一起使用</code> ，將資料提供者ID連結至使用者ID。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>資料提供者ID。 </p> <p>通常用於 <code> d_dpuuid</code> 將資料提供者ID連結至使用者ID。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_dpuuid%</code> </p> </td> 
-   <td colname="col2"> <p>資料提供者提供的唯一使用者ID。 </p> <p>通常與 <code> d_dpid搭配使用</code> ，將使用者ID連結至資料提供者ID。 </p> </td> 
+   <td colname="col2"> <p>資料提供者提供的唯一使用者ID。 </p> <p>通常用於 <code> d_dpid</code> 將使用者ID連結至資料提供者ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
@@ -124,12 +124,12 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
    <tr> 
    <td colname="col1"> <p> <code>gdpr</code> </p> </td> 
    <td colname="col02"> <p> <code>%gdpr_applies%</code> </p> </td> 
-   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a> </p><p><code>gdpr可以是</code> 0（GDPR不適用）或1（GDPR適用）。</p> <p>預設值為 0。</p><p>選填。</p></td> 
+   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a> </p><p><code>gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。</p> <p>預設值為 0。</p><p>選填。</p></td> 
   </tr> 
    <tr> 
-   <td colname="col1"> <p> <code>gdpr_counnence</code> </p> </td> 
-   <td colname="col02"> <p> <code>%gdpr_counnency%</code> </p> </td> 
-   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 「若 <code>gdpr=1</code>，則 <code>%gdpr_consent%</code>」取代為「<code>gdpr_consent</code>」字串 (請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB 規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p></td> 
+   <td colname="col1"> <p> <code>gdpr_consent</code> </p> </td> 
+   <td colname="col02"> <p> <code>%gdpr_consent%</code> </p> </td> 
+   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 「若 <code>gdpr=1</code>，則 <code>%gdpr_consent%</code>」取代為「<code>gdpr_consent</code>」字串 (請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external">IAB 規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -160,7 +160,7 @@ d_adgroup%25%26d_placement%3D%25placement%25%26src%3D%25d_src%25
 
 [!DNL `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`]
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [受眾最佳化報告的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
