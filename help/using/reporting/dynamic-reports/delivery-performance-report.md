@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 傳送與績效報表
 uuid: c8daa6bc-50d6-4c2c-a45a-5b7065fd88f9
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -35,14 +35,6 @@ c_delivery_reports.xml
 
 選取個別點，以在快顯視窗中檢視資料詳細資訊。 此外，您也可以按一下游標並將游標拖曳至一組點上，以僅傳回有關這些資料元素的資料。 這些動作會自動更新報表結果。
 
->[!MORE_LIKE_THIS]
->
->* [使用查閱表格改善記錄檔處理時間](../../reporting/dynamic-reports/lookup-tables.md)
->* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
->* [已定義的傳送與效能資料快顯欄位](../../reporting/dynamic-reports/delivery-performance-report.md#field-definitions)
->* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
-
-
 ## 已定義的傳送與效能資料快顯欄位 {#field-definitions}
 
 說明當您按一下個別資料點時，在快顯視窗中顯示的量度。
@@ -66,7 +58,10 @@ r_delivery_data_pop.xml
 | **[!UICONTROL Reach]** | 獨特訪客數。 |
 | **[!UICONTROL Click Through]** | 訪客點按廣告的次數。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [使用查閱表格改善記錄檔處理時間](../../reporting/dynamic-reports/lookup-tables.md)
+>* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
+>* [已定義的傳送與效能資料快顯欄位](../../reporting/dynamic-reports/delivery-performance-report.md#field-definitions)
+>* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 
