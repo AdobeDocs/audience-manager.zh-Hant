@@ -6,22 +6,22 @@ solution: Audience Manager
 title: 特徵建議
 uuid: null
 translation-type: tm+mt
-source-git-commit: a67998b925002438b20fdde81f1abec4acbd5602
+source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
 
 ---
 
 
 # 特徵建議
 
-在建立區段時取得即時特徵建議。
+從您自己的第一方特徵和資料饋送建立區段時，取得即時特徵 [!UICONTROL Audience Marketplace] 建議。
 
 ## 視訊展示
 
-首先觀看以下 [!UICONTROL Trait Recommendations] 的影片，然後閱讀以取得詳細資訊。
+首先觀看以下 [!UICONTROL Trait Recommendations] 的影片，然後閱讀以取得詳細資訊。 視訊展示會示範如何使用您自己的第一方特徵的建議，以及您已訂閱之資料饋送 [!UICONTROL Audience Marketplace] 的 *特徵建議*。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26228/?captions=chi_hant)
 
-下一個視訊概述的工作流程， [!UICONTROL Marketplace Recommendations]顯示如何從中的資料饋送新增特徵建議至區段 [!UICONTROL Audience Marketplace]。
+下一個視訊會概述您的工 [!UICONTROL Marketplace Recommendations]作流程，顯示如何根據中資料饋送的建議，將特徵新增至區段 [!UICONTROL Audience Marketplace]。 這些建議是以您未訂閱的 *資料饋送為基礎*。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29363/?captions=chi_hant)
 
@@ -32,13 +32,13 @@ With [!UICONTROL Trait Recommendations], when you build or edit a segment in [Se
 
 Audience manager會根據您的第一方特徵、區段和區段顯示特 **[!UICONTROL Recommendations]** 徵建 **[!UICONTROL Audience Marketplace]**&#x200B;議的特 **[!UICONTROL Recommendations from Marketplace]** 徵。
 
-![特徵建議概觀](assets/trait-recommendations-overview-full.png)
-
 將建議的特徵加入區段，有助於擴大您的目標對象範圍。
+
+![特徵建議概觀](assets/trait-recommendations-overview-full.png)
 
 **簡而言之：**
 
-* Audience manager會在區段中顯示第一方 [!UICONTROL Recommendations] 特徵。 您未訂閱之公開和私人動態消息的Marketplace建議會顯示在區段 [!UICONTROL Recommendations from Marketplace] 中。
+* Audience manager會在區段中顯示第一方 [!UICONTROL Recommendations] 特徵。 您未訂閱之公開和私人動態消息的Marketplace建議會顯示在區段 [!UICONTROL Recommendations from Marketplace] 中。 按一下動態消息名稱以前往 [!UICONTROL Audience Marketplace] 並訂閱。
 * Audience manager最多顯示50個類似區段規則中的特徵。
 * 您可以篩選不想看到任何建議的資料來源。
 * 在計算相似度時，Audience manager會考 [慮過去](../../reference/ids-in-aam.md) 30天內符合特徵的UUID。
@@ -50,6 +50,8 @@ Audience manager會根據您的第一方特徵、區段和區段顯示特 **[!UI
 
 * 身為行銷人員，您可以透過類似特性的協助，快速找到對互補產品感興趣的受眾，以便擴大觸及面。
 * 如果您將Audience manager當做發行者，您就可以了 [!UICONTROL Trait Recommendations]解受眾行為，並建立更好的廣告銷售或使用者獲取細分。
+* 身為資 [!UICONTROL Audience Marketplace] 料購買者，我想要探索相關的第三方資料，而不需瀏覽大量動態消息。
+* 身為資 [!UICONTROL Audience Marketplace] 料提供者，我想向購買者推薦相關資料，以便從最佳且相關的訂閱中獲益。
 
 ## 特徵建議與演算法模型的差異
 
@@ -79,7 +81,7 @@ Audience manager會根據您的第一方特徵、區段和區段顯示特 **[!UI
 
 1. 前往「對 **像資料&gt;區段**」，然後按一 **下「新增」**。
 2. 在「特 **徵** 」下拉式方塊中，新增至少一個特徵至區段規則。
-3. 您可以在區段中看到第一方建議的特 **[!UICONTROL Recommendations]** 徵，在區段中看到第三方建議的 **[!UICONTROL Recommendations from Marketplace]** 特徵。 所有這些建議都類似於您新增至區段規則的特徵。 向下捲動以查看所有建議的特徵。
+3. 您可以在區段中，從您訂閱的饋送 [!UICONTROL Audience Marketplace] 中看到第一方建議的特徵和特徵建 **[!UICONTROL Recommendations]** 議。 該 **[!UICONTROL Recommendations from Marketplace]** 區段顯示您未訂閱之動態消息的特徵建議。 所有這些建議都類似於您新增至區段規則的特徵。 向下捲動以查看所有建議的特徵。
 4. （可選）若要從特定資料來源排除建議的第一方特徵，請按一下您要排除之資料來源的 **X** 符號。
    > [!NOTE]
    >
@@ -134,7 +136,7 @@ Audience manager會根據您的第一方特徵、區段和區段顯示特 **[!UI
 
 若要產生特徵建議，Audience Manager會計算目標特徵與您帳戶可存取的所有其他特徵（包括協力廠商資料）之間的 [](https://en.wikipedia.org/wiki/Jaccard_index) Jaccard相似性。 然後，Audience manager會顯示最多50個相似度最高的特徵。
 
-## 特徵相似性分數
+## 特徵相似性分數 {#trait-similarity-score}
 
 Audience manager會根 [!UICONTROL Trait Similarity Score] 據s的數目計算交集和並，然後將兩個特徵 [!UICONTROL UUID]進行分割，以計算兩個特徵之間。 對於兩個特徵A和B，計算結果如下：
 
@@ -151,7 +153,7 @@ Audience manager會根 [!UICONTROL Trait Similarity Score] 據s的數目計算�
 
 ### 範例2 —— 特徵相似性分數
 
-如果相同的特徵A和B有400,000個 [!UICONTRL ]UUID符合這兩個特徵，則 [!UICONTROL Trait Similarity Score] 其值要高得多：400,000 / 1,600,000 = 0.25
+如果同樣的A和B特徵有400,000 [!UICONTROL UUID]個符合這兩個特徵，那麼 [!UICONTROL Trait Similarity Score] 就高得多：400,000 / 1,600,000 = 0.25
 
 ![特徵——建議——高重疊](assets/Trait-Recommendations-High-overlap.png)
 
@@ -168,7 +170,13 @@ Audience manager會根 [!UICONTROL Trait Similarity Score] 據s的數目計算�
 
 ## 基於角色的訪問控制(RBAC)
 
-對於使用( [!UICONTROL Role-Based Access Controls] )[!UICONTROL RBAC]的公司，您必須擁有建立和編輯區段的權限，才能查看建議的特徵。 此外，您所看到的建議特徵只是您可透過的資料來源 [!UICONTROL RBAC]。 請在這裡閱讀更 [!UICONTROL RBAC] 多有關 [控制項](../administration/administration-overview.md)。
+對於使用( [!UICONTROL Role-Based Access Controls] )[!UICONTROL RBAC]的公司，您必須擁有建立和編輯區段的權限，才能查看建議的特徵。 您看到的特徵建議只是您可透過存取的資料來源 [!UICONTROL RBAC]。
+
+> [!IMPORTANT]
+>
+> 若要新 [!UICONTROL Marketplace Recommendations] 增至區段，使用者必須先訂閱對應的資料饋送。 只有具有管理員權限的使用者才能訂閱 [!UICONTROL Audience Marketplace] 資料饋送。
+
+請在這裡閱讀更 [!UICONTROL RBAC] 多有關 [控制項](../administration/administration-overview.md)。
 
 ## 限制
 
