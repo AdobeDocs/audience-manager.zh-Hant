@@ -1,12 +1,12 @@
 ---
 description: 本文說明「特徵產生器」使用的比較運算子。
 seo-description: 本文說明「特徵產生器」使用的比較運算子。
-seo-title: ' 在特徵產生器中使用比較運算子'
+seo-title: 在特徵產生器中使用比較運算子
 solution: Audience Manager
-title: ' 在特徵產生器中使用比較運算子'
+title: 在特徵產生器中使用比較運算子
 uuid: 41bec3b3-e5df-4a6f-abb0-80ce4c75f5e7
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -50,7 +50,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 | **[!UICONTROL Endswith]** | 鍵值對中的值以此運算子 *指定的字* 符結尾。 |
 | **[!UICONTROL Matchesregex]** | 鍵值對中的值與規則運 *算式* 指定的模式匹配。 [進一步瞭解](../../features/traits/trait-builder-regex.md) ，如何在中使用規則運算式 [!UICONTROL Trait Builder]。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [特徵和區段產生器中的布林運算式](../../reference/boolean-expressions-tsb.md)
 >* [瞭解TraitBuilder中的布林運算式](../../reference/boolean-expressions-tsb.md)
