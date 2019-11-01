@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用平台層級的金鑰進行裝置定位
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ## 由用戶代理定義的平台級密鑰 {#keys-user-agent}
 
-從 [!UICONTROL Data Collection Servers] 請求中的使用者代理標 [題擷取這些索引鍵](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)`HTTP` 的值。 這些值代表來自資料庫的設備級 [!UICONTROL Device Atlas] 資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清單 [!UICONTROL Device Atlas] 中。
+從 [!UICONTROL Data Collection Servers] 請求中的使用者代理標 [題擷取這些索引鍵](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)`HTTP` 的值。 這些值表示來自資料庫的設備級 [!UICONTROL Device Atlas] 資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清單 [!UICONTROL Device Atlas] 中。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -43,7 +43,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >
 >即使一個或多個信號無法從用戶代理報頭中檢索，其它信號仍將傳遞給 [!UICONTROL Data Collection Servers]。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [關鍵變數的前置詞要求](../../features/traits/trait-variable-prefixes.md)
 
