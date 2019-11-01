@@ -7,7 +7,7 @@ title: 管理資料饋送訂閱
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -51,13 +51,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
 * 檢閱帳單和付款檔案。 請參閱以下相關連結。
 
->[!MORE_LIKE_THIS]
->
->* [CPM資料饋送的帳單和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
->* [固定費用資料饋送的計費和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
->* [如何報告CPM使用情形](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
-
-
 ## 訂閱私人資料饋送 {#subscript-private-data-feed}
 
 購買者可在中訂閱私人資料饋送和計畫 **[!UICONTROL Audience Marketplace > Marketplace]**。
@@ -76,12 +69,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
    * **[!UICONTROL Request approved]**:清單中的狀 [!UICONTROL Marketplace] 態會變更為「已授予存取權」，您會收到自動通知。 此時，您可以訂閱動態消息。 如需 [指示，請參閱訂閱公用資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) 。
    * **[!UICONTROL Request denied]**:「已請求」文字會從動態消息 [!UICONTROL Marketplace] 的清單中移除。 您可以嘗試再次訂閱或選擇不同的動態消息。
-
->[!MORE_LIKE_THIS]
->
->* [訂閱公開資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
->* [資料購買者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
-
 
 ## 購買者的資料饋送折扣 {#buyer-discount}
 
@@ -139,11 +126,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 
 ![](assets/buyer-discount.png)
 
->[!MORE_LIKE_THIS]
->
->* [市集：關於](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
-
-
 ## 尋找訂閱摘要資料 {#find-subscribed-data-fee}
 
 資料饋送的資料（特徵）會顯示在其專屬的特徵儲存資料夾中。 前往並 **[!UICONTROL Audience Data > Traits]** 展開資料 **[!UICONTROL 3rd-Party Data]** 夾，以檢視並處理您所訂閱之饋送中的特徵。 尋找以資料提供者命名的子資料夾。 這些檔案夾包含以個別資料饋送命名的檔案夾，以及由饋送提供的特性清單。
@@ -151,11 +133,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 <!-- marketplace-feed-storage.xml -->
 
 ![](assets/subscribe5.png)
-
->[!MORE_LIKE_THIS]
->
->* [訂閱公開資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
-
 
 ## 取消訂閱資料饋送 {#unsubscribe}
 
@@ -168,7 +145,7 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 1. 按一下中的資料饋送名稱 [!UICONTROL Marketplace]。
 1. 在該 [!UICONTROL Use Case] 節中，查找要使用的計畫並將滑塊移 **[!UICONTROL Subscription]** 動到 **[!UICONTROL Off]**。
 
-##  資料饋送停用：發生原因及回應方式 {#data-feed-deactivation-reasons}
+## 資料饋送停用：發生原因及回應方式 {#data-feed-deactivation-reasons}
 
 在中， [!UICONTROL Audience Marketplace]資料提供者可以撤銷您所訂閱之資料饋送的存取權。 如果發生這種事，別驚慌。 我們幫你搞定了。 請檢閱本節，以瞭解與資料饋送停用相關的程式和程式。
 
@@ -290,11 +267,6 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
    * 按一 **[!UICONTROL Cancel]** 下即可離開頁面而不進行變更。
    * 按一 **[!UICONTROL Review & Subscribe]** 下以訂閱資料饋送。 此按鈕會變灰，直到您將切換 [!UICONTROL Subscription] 為 [!UICONTROL On]。 另請參 [閱「訂閱公用資料饋送](#subscript-public-data-feed) 」 [和「訂閱私用資料饋送」](#subscript-private-data-feed)。
 
->[!MORE_LIKE_THIS]
->
->* [市集：關於](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
-
-
 ## 瞭解資料饋送使用案例 {#use-cases}
 
 身為資 [!UICONTROL Audience Marketplace] 料購買者，您可以購買資料以進行重疊、建模和啟動使用案例。 每個使用案例都是專為特定目的而設計，並限制您對資料的運用。 這些使用案例說明可協助您正確決定要購買何種類型的資料計畫。
@@ -310,10 +282,20 @@ source-git-commit: 49cedeb25e524bf13dc9e17b4674e3b27e42a1a9
 * **** 擴大受眾覆蓋：低重疊表示您的特徵包含您以前未見過的使用者。 您可能希望這些特徵嘗試觸及新使用者。
 * **** 增強現有受眾：高度重疊表明您的特徵與資料提供者所擁有的特徵相似。 您可能希望這些特徵有助於對已開發的受眾進行有針對性的漸進改進。
 
-###  演算法模型
+### 演算法模型
 
 此使用案例可讓您使用演算法模型，根據您的特徵來評估供 [應商特徵](../../../features/algorithmic-models/understanding-models.md#understanding-models)。 例如，我們的演算法模型系統會使用您的其中一個特徵作為比較供應商特徵的基礎。 當模型執行時，它可顯示供應商特徵中的受眾是否與您的特徵具有相似的轉換屬性。
 
 ### 啟用
 
 此使用案例可讓您傳送資料至 [目的地](../../../features/destinations/destinations.md)。 在 [!UICONTROL Audience Manager]中，目標是任何第三方系統(廣告伺服器、 [!DNL DSP][!DNL DMP]交換等)您想要與其共用資料。 但是，使用 [!UICONTROL Activation] 案例時，您無法執行重疊報表或測試演算模型中的資料。
+
+>[!MORELIKETHIS]
+>
+>* [CPM資料饋送的帳單和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#cost-attribution)
+>* [固定費用資料饋送的計費和印象分配](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
+>* [如何報告CPM使用情形](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
+>* [訂閱公開資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
+>* [資料購買者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
+>* [市集：關於](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
+
