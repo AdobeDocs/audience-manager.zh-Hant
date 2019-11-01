@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 從DCS接收資料
 uuid: fbb77197-8530-48a8-b708-d785f7214494
 translation-type: tm+mt
-source-git-commit: bc2a9364b771436fe0191f9d69a8c291563f9229
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -61,7 +61,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 | `u`和`uuid` | 由Audience manager指派的唯一使用者ID。 如果您要進行伺服器對伺服 [器DCS呼叫，則此為必要項](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)。 |
 | `y` | 目標類型、iFrame(`iframe`)或影像(`img`)。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [DCS支援的關鍵值字首碼和變數](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
 
