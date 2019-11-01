@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS事件呼叫API
 uuid: 84754960-9ef0-454d-8f5c-33846e2494f6
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 * [將資料傳送至DCS](dcs-url-send.md)
 * [從DCS接收資料](dcs-url-receive.md)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [DCS API參考](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
