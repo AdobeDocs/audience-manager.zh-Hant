@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料收集元件
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
 translation-type: tm+mt
-source-git-commit: 5730b94d7f72cdc406c2be6c063edf65886044e3
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -93,7 +93,7 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
 建立 [!UICONTROL PCS] 資料並將資料寫入日誌檔案。 這些會傳送至其他資料庫系統，以供處理、報告和儲存。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Adobe 隱私中心](https://www.adobe.com/privacy.html)
 
