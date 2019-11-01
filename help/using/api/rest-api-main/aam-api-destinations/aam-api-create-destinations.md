@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 建立目標
 uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
 translation-type: tm+mt
-source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -20,13 +20,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 ## 支援的目標類型：僅限URL和Cookie
 
 可用的 `POST` 方法可讓您建立 [!UICONTROL URL] 且僅 [!UICONTROL cookie destinations] 限。 目前，您無法使用這 [!UICONTROL server-to-server destinations] 些方法 [!DNL REST API] 建立。 不過，相關的目標方 `GET` 法可讓您擷取在使用者介 [!UICONTROL server-to-server destinations] 面中建立的相關資訊。
-
->[!MORE_LIKE_THIS]
->
->* [目的地](../../../features/destinations/destinations.md)
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
-
 
 ## 建立非序列URL目標 {#create-nonserial-dest}
 
@@ -80,11 +73,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "mappings":null
 } 
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
-
 
 ## 建立序號的URL目的地 {#create-serial-url-dest}
 
@@ -141,11 +129,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "mappings":null 
 }
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
-
 
 ## 建立Cookie目標：單鍵、無序號 {#create-cookie-dest-single}
 
@@ -215,12 +198,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "uparamEnabled":false
 } 
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
-
 
 ## 建立Cookie目標：單鍵，序號 {#create-cookie-dest-single-serial}
 
@@ -292,12 +269,6 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
    "uparamEnabled":false
 }
 ```
-
->[!MORE_LIKE_THIS]
->
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
-
 
 ## 建立Cookie目標：多鍵、無序號 {#create-cookie-dest-multi}
 
@@ -435,8 +406,9 @@ source-git-commit: 8ab675cac67a0e6353cf5fd14944c7c5cc849e5a
 }
 ```
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
+>* [目的地](../../../features/destinations/destinations.md)
 >* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
 >* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
 
