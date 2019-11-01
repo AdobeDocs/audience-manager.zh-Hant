@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用平台層級的金鑰進行地理定位
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
 translation-type: tm+mt
-source-git-commit: c5c57423bcba8d4b3974a04c46dc7c7afc7484a0
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -47,12 +47,12 @@ source-git-commit: c5c57423bcba8d4b3974a04c46dc7c7afc7484a0
 | d_long | 經度（例如d_long=73.98）。 下載經 [度清單](assets/d_long.txt)。 |
 | d_postal_code | 郵遞區號（排除擴充的+4代碼）。 下載郵 [遞區號清單](assets/d_postal_code.txt)。  例如: <ul><li>特徵： d_postal_code=84004 </li><li>特徵名稱：阿爾卑斯</li></ul> |
 | d_state | 美國各州的縮寫為2個字元。 下載狀 [態代碼清單](assets/d_state.txt)。  例如: <ul><li>特徵： d_state=NY </li><li>特徵名稱：紐約</li></ul>d_state包含不同國家／地區不同狀態的重複值。 例如，d_state == "on"符合多個狀態：安大略省（加拿大）、翁多（奈及利亞）、奧沙納（納米比亞）。 我們建議將此訊號與d_country等其他訊號相連，以取得更詳細的地理定位。 |
-|  d_region | 地區字母數字ID。 下載地 [區清單](assets/Country_RegionCodes_City.csv)。  然後，您可以使用此清單，將地區ID與地區名稱相符。 |
+| d_region | 地區字母數字ID。 下載地 [區清單](assets/Country_RegionCodes_City.csv)。  然後，您可以使用此清單，將地區ID與地區名稱相符。 |
 | d_isp | ISP/組織。 下載 [ISP清單](assets/d_isp.txt)。 |
 
 所有基於 [位置的信號清單](assets/all.csv) ，按以下順序包括上述所有信號： `d_country,d_city,d_region,d_state,d_dma_code,d_postal_code,d_area_code,d_lat,d_long`
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [關鍵變數的前置詞要求](../../features/traits/trait-variable-prefixes.md)
 
