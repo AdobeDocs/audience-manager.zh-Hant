@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 27800ce003a62733eece0d5de3b94737ed61133a
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -130,12 +130,6 @@ Audience Manager遵循 [!UICONTROL REST API] 代號 [!DNL OAuth 2.0] 驗證和�
 
 Audience Manager支援授 [!UICONTROL REST API] 權碼和隱式驗證。 若要使用這些存取方法，您的使用者必須登入才能取 `https://api.demdex.com/oauth/authorize` 得存取和重新整理Token。
 
->[!MORE_LIKE_THIS]
->
->* [OAuth 2.0](https://oauth.net/2/)
->* [OAuth 2簡化版](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
-
-
 ## 發出驗證的API請求 {#authenticated-api-requests}
 
 在您收到驗 [!DNL API] 證Token後呼叫方法的要求。
@@ -146,11 +140,6 @@ Audience Manager支援授 [!UICONTROL REST API] 權碼和隱式驗證。 若要�
 
 * 在標題 `HTTP` 中，設定 `Authorization: Bearer <token>`。
 * 呼叫所需的 [!DNL API] 方法。
-
->[!MORE_LIKE_THIS]
->
->* [OAuth驗證](../../api/rest-api-main/aam-api-getting-started.md#oauth)
-
 
 ## 可選API查詢參數 {#optional-api-query-parameters}
 
@@ -163,11 +152,11 @@ Audience Manager支援授 [!UICONTROL REST API] 權碼和隱式驗證。 若要�
 | 參數 | 說明 |
 |--- |--- |
 | 頁面 | 依頁碼傳回結果。 編號從0開始。 |
-|  pageSize | 設定請求傳回的回應結果數目（預設為10）。 |
+| pageSize | 設定請求傳回的回應結果數目（預設為10）。 |
 | sortBy | 根據指定的屬性排序並返回 [!DNL JSON] 結果。 |
-|  降序 | 以遞減順序排序和傳回結果。 預設為遞增。 |
+| 降序 | 以遞減順序排序和傳回結果。 預設為遞增。 |
 | 搜尋 | 根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： `GET https://api.demdex.com/v1/models/?search=Test`。  您可以搜尋「get all」方法傳回的任何值。 |
-|  folderId | 傳回指定資料夾內特徵的所有ID。 並非所有方法都適用。 |
+| folderId | 傳回指定資料夾內特徵的所有ID。 並非所有方法都適用。 |
 | 權限 | 根據指定的權限傳回區段清單。  READ是預設值。 權限包括：<ul><li>`READ` :傳回並檢視區段的相關資訊。</li><li>`WRITE` :使用 `PUT` 來更新區段。</li><li>`CREATE` :用 `POST` 來建立區段。</li><li>`DELETE` : 刪除區段. 需要存取基本特徵（如果有）。 例如，若您要移除屬於某個群體的特徵，您需要有權利加以刪除。</li></ul><br>使用個別的索引鍵值配對指定多個權限。 例如，若要傳回僅具有和權限的 `READ` 區 `WRITE` 段清單，請傳入 `"permissions":"READ"`、 `"permissions":"WRITE"` 。 |
 | includePermissions | （布林值）設為true可傳回區段的權限。 設值為 false。 |
 
@@ -237,4 +226,11 @@ GET https://api.demdex.com/v1/models/?page=1&pageSize=2&search=Test
 | 403 | 禁止 | 您沒有資源的存取權。 |
 | 404 | 找不到 | 找不到指定路徑的資源。 |
 | 409 | 衝突 | 由於資源狀態衝突，無法完成請求。 |
-| 500 | 伺服器錯誤 | 伺服器遇到意外錯誤，無法完成請求。 |
+| 500 | 伺服器錯誤 | 伺服器遇到未預期的錯誤，導致其無法完成請求。 |
+
+>[!MORELIKETHIS]
+>
+>* [OAuth驗證](../../api/rest-api-main/aam-api-getting-started.md#oauth)
+>* [OAuth 2.0](https://oauth.net/2/)
+>* [OAuth 2簡化版](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
+
