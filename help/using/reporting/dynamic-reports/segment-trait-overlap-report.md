@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段至特徵重疊報表
 uuid: a6b3dd21-332e-449f-aa01-2beb47f1794e
 translation-type: tm+mt
-source-git-commit: 8f2ec880cbbe2f516ebc240a712337dc09c4e7f7
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -176,7 +176,7 @@ r_s2t_data_pop.xml
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
 >* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
