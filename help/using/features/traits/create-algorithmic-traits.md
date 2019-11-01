@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 建立演算法特徵
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -27,11 +27,6 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 1. 選取模型，然後按一下 **[!UICONTROL Add Selected Model to Trait]**。
 新增模型可顯示觸及度和精確度設定。
 1. 選擇達到或準確度作為目標，並從各自的下拉式選單中選擇一個值。 Click **[!UICONTROL Save]** when done.
-
->[!MORE_LIKE_THIS]
->
->* [準確性與觸及性](../../features/traits/trait-accuracy-reach.md)
-
 
 ## 演算法特徵的組態設定 {#configure-settings}
 
@@ -54,6 +49,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 | **[!UICONTROL Reach and Accuracy Data Columns]** | 此區段位於右側，最多可顯示21列數值資料，顯示模型的準確度和觸及值。 |
 | **[!UICONTROL Reach and Accuracy Slider]** | 滑桿位於圖形底部，可讓您設定觸及或精確目標的數值。 您可以設定滑桿，然後選擇到達或精確目標按鈕來建立特徵。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [準確性與觸及性](../../features/traits/trait-accuracy-reach.md)
+
