@@ -1,12 +1,12 @@
 ---
 description: 在「區段產生器」中新增和移除特徵，以查看實際特徵人口族群以及實際和估計的區段人口資料。 預計的人口大小資料可協助您為促銷活動建立正確的群體。
 seo-description: 在「區段產生器」中新增和移除特徵，以查看實際特徵人口族群以及實際和估計的區段人口資料。 預計的人口大小資料可協助您為促銷活動建立正確的群體。
-seo-title: ' 區段產生器中的特徵和區段人口資料'
+seo-title: 區段產生器中的特徵和區段人口資料
 solution: Audience Manager
 title: 區段產生器中的特徵和區段人口資料
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -153,7 +153,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 目前，由於我們的區段大小估計器未考慮描述檔合併規則，因此有已知的限制。 例如，使用「無驗證的描述檔+目前的裝 **置描述檔」合併規則來查看**[區段](../../features/profile-merge-rules/merge-rule-definitions.md)。 由於我們目前計算分段估計數的方式，所以估計的人口族群將包含已驗證的描述檔。 不過，現有區段人口族群會正確忽略已驗證的個人檔案。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [描述檔合併規則與裝置圖表常見問答集](../../faq/faq-profile-merge.md)
 >* [個人資料連結](../../features/profile-merge-rules/merge-rules-overview.md)
