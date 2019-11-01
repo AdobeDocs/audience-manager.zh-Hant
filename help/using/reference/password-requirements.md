@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 密碼要求、鎖定的帳戶和忘記的密碼
 uuid: bca892eb-3577-4382-8110-131f78d23069
 translation-type: tm+mt
-source-git-commit: 12216ab5105fce80b4b47c31ee6be144ddfe8df9
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -74,7 +74,7 @@ c_password_requirements.xml
 
 按一下登 **[!UICONTROL Forgot password]** 入頁面的連結，重設您的密碼。 您將會收到一封自動化電子郵件，內含24小時後過期的暫時密碼。 按一下電子郵件中的連結以存取您的帳戶並重設密碼。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [資料安全性](../overview/data-security-and-privacy/data-security.md)
 >* [資料安全性](../overview/data-security-and-privacy/data-privacy.md)
