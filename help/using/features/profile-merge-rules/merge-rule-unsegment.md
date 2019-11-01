@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則與裝置取消區段程式
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 translation-type: tm+mt
-source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
 
 ![](assets/last-device-graph.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [描述檔合併規則與裝置圖表常見問答集](../../faq/faq-profile-merge.md)
 >* [即時跨裝置隱藏功能](instant-cross-device-suppression.md)
