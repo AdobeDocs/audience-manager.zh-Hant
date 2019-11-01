@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 定義的配置檔案合併規則選項
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: 12dea0f5e762496b19a87c8993877302b1433d26
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -127,7 +127,7 @@ source-git-commit: 12dea0f5e762496b19a87c8993877302b1433d26
  </tbody>
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [描述檔合併規則常見問答集](../../faq/faq-profile-merge.md)
 
