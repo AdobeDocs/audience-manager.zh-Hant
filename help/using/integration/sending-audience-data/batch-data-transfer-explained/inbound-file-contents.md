@@ -6,12 +6,12 @@ solution: Audience Manager
 title: 傳入資料檔案內容語法、無效字元、變數和範例
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 translation-type: tm+mt
-source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
 
-#  入站資料檔案內容：語法、無效字元、變數和範例{#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
+# 入站資料檔案內容：語法、無效字元、變數和範例{#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
 格式化傳入特徵資料檔案時，您應遵循的必填欄位、語法和規則。
 
@@ -51,7 +51,7 @@ source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> <i>使用者 ID </i> </code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>User ID </i> </code> </p> </td> 
    <td colname="col2"> <p>使用者ID可以是： </p> <p> 
      <ul id="ul_25168355353545A9A049D0083403025E"> 
       <li id="li_23829FE2F6464E33859B3E388FCD106B">由Audience Manager指派的唯一 <span class="keyword"> 使用者ID </span> ( <a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>)。 </li> 
@@ -59,17 +59,17 @@ source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
       <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">行動作業系統公開的行動Android或iOS裝置ID，其原始未修改的格式。 </li> 
      </ul> </p> <p>針對行動ID: </p> <p> 
      <ul id="ul_717A17E11565427E9E2D9D7554BB231B"> 
-      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA格式：ID必須大寫，而非雜湊。 例如， <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android格式：ID必須小寫，而非雜湊。 例如， <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA格式：ID必須大寫，而非雜湊。 例如, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android格式：ID必須小寫，而非雜湊。 例如, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 頁籤 </code> </p> </td> 
+   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
    <td colname="col2"> <p>使用單一標籤分隔字元分隔使用者ID和特徵ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 特 <i>徵ID </i></code> </p> </td> 
-   <td colname="col2"> <p>Audience Manager <span class="keyword"> 特 </span> 徵ID。 我們要求您在傳入的資 <i>料檔案中僅包含已登入的特徵</i> 。 我們不會在傳入資料傳輸中處理任何其他特徵類型。 </p> <p> <p>注意： 可使用GET方法來尋找「特徵ID」，該方法會傳回所有特徵的詳細資訊。 如需詳細資訊，請參 <a href="../../../api/rest-api-main/api-traits.md"> 閱特徵API方法 </a>。 </p> </p> </td> 
+   <td colname="col1"> <p> <code> <i>trait ID </i> </code> </p> </td> 
+   <td colname="col2"> <p>Audience Manager <span class="keyword"> 特 </span> 徵ID。 我們要求您在傳入的資 <i>料檔案中僅包含已登入的特徵</i> 。 我們不會在傳入資料傳輸中處理任何其他特徵類型。 </p> <p> <p>注意： 可使用傳回所有特徵詳細資料的GET方法來尋找特徵ID。 如需詳細資訊，請參 <a href="../../../api/rest-api-main/api-traits.md"> 閱特徵API方法 </a>。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -88,33 +88,34 @@ source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> d_sid= </code> </p> </td> 
-   <td colname="col2"> <p><code> d_sid首碼 </code> 會告訴我們的系統ID是 <span class="keyword"> Audience Manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET方法傳回特徵 </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
+   <td colname="col2"> <p>首 <code> d_sid </code> 碼會告訴我們的系統ID是 <span class="keyword"> Audience manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API方法傳回特徵 <code> GET </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
-   <td colname="col2"> <p>前置有 <code> d_unsid的資料會 </code> 從該特徵中移除使用者。 覆寫 <code> 檔案 </code> 中會忽略d_unsid <code> 首 </code> 碼。 </p> <p><code> d_unsid=首碼會告 </code> 訴我們的系統ID是 <span class="keyword"> Audience Manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET方法傳回特徵 </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
+   <td colname="col2"> <p>前置詞為的資 <code> d_unsid </code> 料會從該特徵中移除使用者。 檔案 <code> d_unsid </code> 中將忽略前置詞 <code> overwrite </code> 。 </p> <p>首 <code> d_unsid= </code> 碼會告訴我們的系統ID是 <span class="keyword"> Audience manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API方法傳回特徵 <code> GET </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
-   <td colname="col2"> <p> <a href="../../../features/traits/manage-trait-rules.md#managing-trait-rules"> 特徵規則 </a> 可讓您設定特徵資格的准則。 如果您將特徵規則格式設為 <code> ic ==特徵ID </code>，則可以以簡單的逗號格式清單傳送特徵。 </p> <p>例如，假設您建立這3個特徵規則： </p> <p> 
+   <td colname="col2"> <p> <a href="../../../features/traits/manage-trait-rules.md#managing-trait-rules"> 特徵規則 </a> 可讓您設定特徵資格的准則。 如果您將特徵規則格式化為 <code> ic == trait ID </code>，則可以以簡單的逗號格式清單傳送特徵。 </p> <p>例如，假設您建立這3個特徵規則： </p> <p> 
      <ul class="simplelist"> 
       <li> <code> ic == "123" </code> </li>
       <li> <code> ic == "456" </code> </li>
       <li> <code> ic == "789" </code> </li>
-     </ul> </p> <p>這些特性與IC鍵相 <code> 關 </code> 聯。 這可讓您在資料檔案中建立更簡單的特徵清單。 而且，您不需要包含 <code> ic </code> 首碼。 因此，您的資料檔案內容可能如下所示： </p> <p>
+     </ul> </p> <p>這些特徵與密鑰相 <code> ic </code> 關聯。 這可讓您在資料檔案中建立更簡單的特徵清單。 而且，您不需要加入首 <code> ic </code> 碼。 因此，您的資料檔案內容可能如下所示： </p> <p>
      <code> 
-                       
-      使 <i>用者ID</i>&lt;TAB&gt; 123,456,789 </code> </p> </td> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <i>user ID</i>&nbsp;&lt;TAB&gt;&nbsp;123,456,789 
+     </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>鍵值對 </p> </td> 
    <td colname="col2"> <p>特徵資料可使用英數字串格式化為鍵值配對。 有幾種格式化鍵值對的方法，如下所示： </p> <p> 
      <ul id="ul_D4F5A97FE0444AC6B7D8D4DAEDD3EAF2"> 
-      <li id="li_07B893AA8EB24F34B70F8DA06E87EAB3"> <code> 鍵=值 </code> </li> 
-      <li id="li_1F3ACA27C5794931B430298B27AB8BCC"> <code> "key" =值 </code> </li> 
+      <li id="li_07B893AA8EB24F34B70F8DA06E87EAB3"> <code> key = value </code> </li> 
+      <li id="li_1F3ACA27C5794931B430298B27AB8BCC"> <code> "key" = value </code> </li> 
       <li id="li_8910539EB4F0431E8CF63983D30D9B08"> <code> key = "value" </code> </li> 
       <li id="li_DCECE281D245438FB01F8D0BA932B3CC"> <code> "key" = "value" </code> </li> 
-     </ul><code> "age"="32" </code> , <code> "geder"=m </code> , model = "pickturk" <code> , </code><code></code> product = tablet都是正確格式的鍵值配對範例。 </p> </td> 
+     </ul><code> "age"="32" </code> 、 、 <code> "gender"=m </code> 、 <code> model = "pickup truck" </code> 、 <code> product = tablet </code> 都是格式正確的鍵值對的示例。 </p> </td> 
   </tr>
  </tbody>
 </table>
@@ -143,8 +144,8 @@ source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
    <td colname="col1"> <p>行動iOS(IDFA)或Android裝置ID </p> </td> 
    <td colname="col2"> <p>行動裝置ID必須嚴格格式化，如下所示： </p> <p> 
      <ul id="ul_6AEFB6CFA54444D9B75F03BCE7916696"> 
-      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA格式：ID必須大寫，而非雜湊。 例如， <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android格式：ID必須小寫，而非雜湊。 例如， <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA格式：ID必須大寫，而非雜湊。 例如, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android格式：ID必須小寫，而非雜湊。 例如, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td>
   </tr>
  </tbody>
@@ -166,21 +167,21 @@ source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
    <td colname="col1"> <p>引號字元(") </p> </td> 
    <td colname="col2"> <p>您可以在鍵和鍵值對的值部分使用引號字元，例如： </p> <p> 
      <ul id="ul_3447A913203647A8A9A1A5D14B1A19FE"> 
-      <li id="li_B19B56CE8D4449B881B912E74809E00D"> <p> <code> d_city = "New York",d_city = "San Francisco" </code> </p> </li> 
-      <li id="li_895380BB35B4498091928F75F0BB6A45"> <p> <code> "d_city" = "New York", "d_city" = "舊金山" </code> </p> </li> 
+      <li id="li_B19B56CE8D4449B881B912E74809E00D"> <p> <code> d_city = "New York", d_city = "San Francisco" </code> </p> </li> 
+      <li id="li_895380BB35B4498091928F75F0BB6A45"> <p> <code> "d_city" = "New York", "d_city" = "San Francisco" </code> </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>破折號字元(-) </p> </td> 
-   <td colname="col2"> <p>我們忽略鍵開頭的破折號。 例如， <code> -product = camera被解 </code> 釋為 <code> product = camera </code>。 </p> </td> 
+   <td colname="col2"> <p>我們忽略鍵開頭的破折號。 例如， <code> -product = camera </code> 被解釋為 <code> product = camera </code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 頁籤 </code> </p> </td> 
-   <td colname="col2"> <p><i>請勿在鍵值</i> 配 <code></code> 對中使用TAB而不使用空值。 僅使用 <code> TAB </code> 來分隔傳入資料檔案中的變數。 </p> </td> 
+   <td colname="col1"> <p> <code> TAB </code> </p> </td> 
+   <td colname="col2"> <p><i>請勿在鍵</i> -值 <code> TAB </code> 配對中使用空值，而不使用空值。 僅用於 <code> TAB </code> 分隔傳入資料檔案中的變數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> \n, \t </code> </p> </td> 
-   <td colname="col2"> <p>請勿在鍵或值中使用新的 <code> 行或制表符字 </code>符(\n、\t)。 </p> </td> 
+   <td colname="col2"> <p>請勿在鍵或值中使用新的行或 <code> \n, \t </code>制表符字元()。 </p> </td> 
   </tr>
  </tbody>
 </table>
@@ -196,28 +197,34 @@ source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>具 <code> 有d_sid </code> 或 <code> d_unsid </code> </p> </td> 
+   <td colname="col1"> <p>使用 <code> d_sid </code> 或 <code> d_unsid </code> </p> </td> 
    <td colname="col2"> <p>此資料檔案顯示符合特徵24、26、27的使用者，且已從特徵28和29移除。 </p> <p> 
      <code>
-       597675918181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 </code> </p> <p>注意:  <p>您也可以使用下列語法，從使用者描述檔移除特徵，而不是使用d_unsid: </p> <p> 
+       59767559181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
+     </code> </p> <p>注意:  <p>您也可以使用下列語法，從使用者描述檔移除特徵，而不是使用d_unsid: </p> <p> 
       <code>
-        597675918181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 </code> </p> <p> 
+        59767559181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 
+      </code> </p> <p> 
       <code>
-        597675918181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 </code> </p> </p> </td> 
+        59767559181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 
+      </code> </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>帶 <code> ic== </code> </p> </td> 
-   <td colname="col2"> <p>這些特徵已新增至具有ic首碼的特 <code> 徵 </code> 規則。 因此，您可以將檔案新增至資料檔案，並以逗號分隔，如所示。 標籤可分隔UUID和特徵ID。 檔 <code> 案 </code> 中不需要IC首碼。 </p> <p><b>數值ID</b> </p> <p> 
+   <td colname="col1"> <p>包含 <code> ic== </code> </p> </td> 
+   <td colname="col2"> <p>這些特徵已新增至具有首碼的特徵 <code> ic </code> 規則。 因此，您可以將檔案新增至資料檔案，並以逗號分隔，如所示。 標籤可分隔UUID和特徵ID。 檔 <code> ic </code> 案中不需要前置詞。 </p> <p><b>數值ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,5035230626 </code> </p> <p><b>字串ID</b> </p> <p> 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,50352,30626 
+     </code> </p> <p><b>字串ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 </code> </p> </td> 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 
+     </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>具有鍵值對 </p> </td> 
    <td colname="col2"> 此檔案資料使用金鑰值配對，將資料傳入 <span class="keyword"> Audience Manager </span>。 <p> 
      <code>
-       59767591818126206060278870901087098252&amp;nbsp;"geder"="femule","luxury_shopper"="yes" </code> </p> </td> 
+       59767559181262060060278870901087098252&amp;nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
+     </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -280,7 +287,7 @@ source-git-commit: 5a822460f93bb7295edafff03104ae7626b69a51
 
 ### Example 2 {#example-2}
 
-使用特徵ID來傳送Audience Manager UUID的特徵不合格資訊。
+使用特徵ID來傳送Audience Manager UUID的特徵不再限定資訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -494,7 +501,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> ic=52,ic=55
 ```
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [特徵產生器](../../../features/traits/about-trait-builder.md)
 
