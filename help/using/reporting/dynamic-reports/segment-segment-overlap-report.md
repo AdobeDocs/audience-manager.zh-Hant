@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段至區段重疊報表
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
 translation-type: tm+mt
-source-git-commit: 339d5550b22949862415d2abc812217e5479c993
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -67,7 +67,7 @@ r_s2s_data_pop.xml
 | **[!UICONTROL Segment Uniques1]** | 區段1中的獨特訪客數。 |
 | **[!UICONTROL Segment Uniques2]** | 區段2中的獨特訪客數。 |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
 >* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
