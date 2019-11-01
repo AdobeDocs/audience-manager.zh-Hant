@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: f072c5328ac75bf3376f80e86418d25d4f10df23
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -67,10 +67,10 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_cid </code> </td> 
-   <td colname="col2"> <p>在此內容中， <code> d_cid </code> 會執行個體化金鑰值對，讓您將行動裝置類型與唯一使用者ID(DPUUID)產生關聯。 固定ID會決定行動裝置類型。 值（即用戶ID）可能有所不同。 將鍵值對與 <code> %01分 </code>隔，這是非列印控制字元。 此參數接受下列鍵： </p> 
+   <td colname="col2"> <p>在此內容中， <code> d_cid </code> 執行個體化金鑰值配對，可讓您將行動裝置類型與唯一使用者ID(DPUUID)產生關聯。 固定ID會決定行動裝置類型。 值（即用戶ID）可能有所不同。 將鍵值對與分 <code> %01 </code>開，這是非打印控制字元。 此參數接受下列鍵： </p> 
     <ul id="ul_4D5D696D10B34615867AF3B64A938878"> 
-     <li id="li_A4BD4B0C8C9443BF99075CDFACC013F6">二零九一四年：識別Android(GAID)裝置。 例如， <code> d_cid = 20914 %01 1234 </code> 表示使用者1234與Android裝置相關聯。 </li> 
-     <li id="li_F83D7B3EC4D24D0187BFE639E2812B36">20915年：識別iOS(IDFA)裝置。 例如， <code> d_cid = 20915 %01 5678 </code> 表示使用者5678與iOS裝置相關聯。 </li> 
+     <li id="li_A4BD4B0C8C9443BF99075CDFACC013F6">二零九一四年：識別Android(GAID)裝置。 例如， <code> d_cid = 20914 %01 1234 </code> 指出使用者1234與Android裝置相關聯。 </li> 
+     <li id="li_F83D7B3EC4D24D0187BFE639E2812B36">20915年：識別iOS(IDFA)裝置。 例如， <code> d_cid = 20915 %01 5678 </code> 指出使用者5678與iOS裝置相關聯。 </li> 
     </ul> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
@@ -95,11 +95,11 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
    <tr> 
    <td colname="col1"> <code><i>gdpr</i></code>  </td> 
-   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p> <p><code>gdpr可以是</code> 0（GDPR不適用）或1（GDPR適用）。</p> <p>預設值為 0。</p><p>選填。</p> </td> 
+   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p> <p><code>gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。</p> <p>預設值為 0。</p><p>選填。</p> </td> 
   </tr>
    <tr> 
-   <td colname="col1"> <code>gdpr_counnence</code> </td> 
-   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 「若 <code>gdpr=1</code>，則 <code>%gdpr_consent%</code>」取代為「<code>gdpr_consent</code>」字串 (請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB 規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p> </td> 
+   <td colname="col1"> <code>gdpr_consent</code> </td> 
+   <td colname="col2"> <p><a href="../../overview/aam-gdpr/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 「若 <code>gdpr=1</code>，則 <code>%gdpr_consent%</code>」取代為「<code>gdpr_consent</code>」字串 (請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external">IAB 規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -108,7 +108,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 >
 >請連絡您的Adobe Audience manager諮詢或客戶主管，以取得用戶端網域的確切URL。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [受眾最佳化報告的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
