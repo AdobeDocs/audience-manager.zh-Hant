@@ -6,9 +6,9 @@ seo-title: 關於演算法模型
 solution: Audience Manager
 title: 關於演算法模型
 topic: DIL API
-uuid: 39441e72-5316-453d-9aff-0e0b633abang 39441e72-5316-453d-9aff-0e0b633abang
+uuid: 39441e72-5316-453d-9aff-0e0b633achang 39441e72-5316-453d-9aff-0e0b633achang
 translation-type: tm+mt
-source-git-commit: 73d670225fb4170d02428a1dd163f442540e3415
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -52,13 +52,6 @@ source-git-commit: 73d670225fb4170d02428a1dd163f442540e3415
 
 我們會停用任何無法產生連續三次執行資料的演算法模型。 請注意，不能將模型的狀態設定回活動狀態。 為確保您的模型產生資料，我們建議您從資料來源建立具備足夠特性的模型，以便從中累積資料。
 
->[!MORE_LIKE_THIS]
->
->* [目的地](../../features/destinations/destinations.md)
->* [特徵](../../features/traits/trait-details-page.md)
->* [區段](../../features/segments/segments-purpose.md)
-
-
 ## 瞭解特徵權重 {#understanding-traitweight}
 
 [!UICONTROL TraitWeight] 是專屬的演算法，可自動發現新特性。 它會將您目前特徵和區段的特徵資料與您透過存取的所有其他第一方和第三方資料進行比較 [!DNL Audience Manager]。 請參閱本節，以取得演算法探索程 [!UICONTROL TraitWeight] 序的說明。
@@ -83,11 +76,11 @@ source-git-commit: 73d670225fb4170d02428a1dd163f442540e3415
 
 ### 步驟4:計分使用者
 
-選取資料來源中的每個使用者都會獲得一個使用者分數，該分數等於該使用者描述檔上影響特性的所有權重的總和。 然後，將用戶分數標準化為0到100%。
+選取資料來源中的每位使用者都會獲得一個使用者分數，該分數等於該使用者描述檔上影響特性的所有權重的總和。 然後，將用戶分數標準化為0到100%。
 
 ### 步驟5:顯示並處理結果
 
-Audience manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builder]。 當您想要建立演算法特徵時， [!UICONTROL Trait Builder] 可讓您根據演算法在資料執行期間產生的加權分數來建立特徵。 您可以選擇更高的準確度，以僅限符合使用者分數極高且因此與基準讀者非常相似的使用者，而非其他對象。 如果您想要觸及到更廣的觀眾（觸及），則可降低準確性。
+Audience manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builder]。 當您想要建立演算法特徵時， [!UICONTROL Trait Builder] 可讓您根據演算法在資料執行期間產生的加權分數來建立特徵。 您可以選擇更高的準確度，以僅限符合使用者分數極高的使用者，因此與基準讀者非常相似，而不是其他觀眾。 如果您想要觸及到更廣的觀眾（觸及），則可降低準確性。
 
 ### 步驟6:重新評估特徵在處理週期中的重要性
 
@@ -210,3 +203,10 @@ Audience manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builde
   </tr>
  </tbody>
 </table>
+
+>[!MORELIKETHIS]
+>
+>* [目的地](../../features/destinations/destinations.md)
+>* [特徵](../../features/traits/trait-details-page.md)
+>* [區段](../../features/segments/segments-purpose.md)
+
