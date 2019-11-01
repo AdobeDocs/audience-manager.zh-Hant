@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Audience manager中的訪客驗證狀態
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -82,7 +82,7 @@ Audience manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1" morerows="1"> <p> <code>2</code> </p> </td> 
+   <td colname="col1" morerows="1"> <p> <code> 2 </code> </p> </td> 
    <td colname="col2"> 是，如果「已驗證選項合併規則」=「上次驗證的設定檔」 </td> 
    <td colname="col3" morerows="1"> <p>否，特徵資料會寫入裝置描述檔。 </p> </td> 
   </tr> 
@@ -100,7 +100,7 @@ Audience manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客�
 >
 >[!DNL Audience Manager] 在這三種情況下 [執行CID與UUID](../reference/ids-in-aam.md) 的ID同步。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [客戶 ID 和驗證狀態](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html)
 
