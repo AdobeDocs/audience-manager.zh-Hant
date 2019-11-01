@@ -1,26 +1,26 @@
 ---
-description: In Segment Builder, recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
-seo-description: In Segment Builder, recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.
+description: 在「區段產生器」中，最近一次和頻率可讓您根據在設定每日間隔內發生或重複的動作來區隔訪客。
+seo-description: 在「區段產生器」中，最近一次和頻率可讓您根據在設定每日間隔內發生或重複的動作來區隔訪客。
 seo-title: 時近與頻率
 solution: Audience Manager
 title: 時近與頻率
 uuid: faadd18a-bf27-4b73-995e-9809f52f5350
 translation-type: tm+mt
-source-git-commit: 1cbff10b9e978755e139e7d5b996249de5ebb5bd
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
 
 # Recency and Frequency {#recency-and-frequency}
 
-In , recency and frequency let you segment visitors based on actions that occur or repeat over a set daily interval.[!UICONTROL Segment Builder]
+在時 [!UICONTROL Segment Builder]近和頻率中，可讓您根據在設定每日間隔內發生或重複的動作來劃分訪客。
 
 Audience manager定義 [!DNL recency] 及 [!DNL frequency] 如下：
 
-* **[!UICONTROL Recency]** : How recently a user viewed or qualified for one (or more) traits.
+* **[!UICONTROL Recency]** :使用者最近檢視或符合一（或多個）特徵的次數。
 * **[!UICONTROL Frequency]** :使用者檢視或符合一（或多個）特徵的比率。
 
-[!UICONTROL Recency] and  settings help you segment visitors based on their real (or perceived) level of interest in a site, section, or particular creative. [!UICONTROL Frequency]例如，符合最近／頻度需求較高群體的使用者，較之較少或較不常造訪的使用者，可能更感興趣網站或產品。
+[!UICONTROL Recency] 而設 [!UICONTROL Frequency] 定可協助您根據訪客對網站、區段或特定創意素材的真實（或感知）興趣程度來劃分訪客。 例如，符合最近／頻度需求較高群體的使用者，較之較少或較不常造訪的使用者，可能更感興趣網站或產品。
 
 ## 時近和頻率設定的位置 {#location}
 
@@ -47,7 +47,7 @@ Audience manager定義 [!DNL recency] 及 [!DNL frequency] 如下：
    <td colname="col2"> <p>最近一次必須大於0。 </p> </td> 
   </tr>
   <tr> 
-   <td colname="col1"> <p> <b>Trait Types</b> </p> </td> 
+   <td colname="col1"> <p> <b>特徵類型</b> </p> </td> 
    <td colname="col2"> <p>您只能將時近控制項套用至規則型和資料夾特徵。 </p> </td> 
   </tr> 
   <tr> 
@@ -94,17 +94,17 @@ Audience manager定義 [!DNL recency] 及 [!DNL frequency] 如下：
 
 ![小於等於](assets/less-than-equal-to.png)
 
-In this example, you select the &lt;= operator, as shown in the screenshot. This qualifies your user for the segment if they qualify for any of the three traits a minimum of three times within the last five days. The timeline below shows the segment qualification at the time the segment is created, on October 1st, and ten days later.
+在此範例中，您選取&lt;=運算子，如螢幕擷取所示。 如果使用者在過去5天內至少有3次符合這3項特徵的資格，即可符合區段資格。 以下時間軸顯示建立區段時的區段資格，日期為10月1日，而日期為10天後。
 
 ![最近5天](assets/last-5-days.png)
 
 ### 使用大於或等於運算子(=&gt;)
 
-![Greater-than-equal-to](assets/greater-than-equal-to.png)
+![大於等於](assets/greater-than-equal-to.png)
 
-In this example, you select the =&gt; operator, as shown in the screenshot. This qualifies your user for the segment if they qualify for any of the three traits a minimum of three times anytime between their first qualification on the Audience Manager platform and the cut-off time five days ago. The timeline below shows the segment qualification at the time the segment is created, on October 1st, and ten days later.
+在此範例中，您選取=&gt;運算子，如螢幕擷取所示。 如果使用者在Audience manager平台上的首次資格認證到五天前的中斷時間之間，至少有三次符合這三種特性中任何一種的資格，這將使他們符合區段資格。 以下時間軸顯示建立區段時的區段資格，日期為10月1日，而日期為10天後。
 
-![Earlier-qualification](assets/earlier-qualification.png)
+![舊版資格](assets/earlier-qualification.png)
 
 
 ## 頻率封頂範例 {#frequency-capping}
@@ -117,9 +117,9 @@ In this example, you select the =&gt; operator, as shown in the screenshot. This
 
 * 右——當您需要的時近／頻率需求少於特定次數或天數時，請使用運算子將該特徵連結至另一個特 `AND` 徵。 使用第一個項目符號點中的範例，此運算式在與另一個特徵連結時會生效，如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`。
 
-* 右側——對於廣告限頻使用案例，您可以建立類似下列的區段規則： `(frequency([1000T] <= 2D) >= 5)`。 此運算式包含在過去2天中，至少5次以ID「1000」實現該特徵的所有使用者。 Set frequency capping by sending this segment to the ad server with a  set on the segment in the ad server. `NOT`該方法在保持頻率封 [!DNL Audience Manager] 閉的相同目的的同時，實現了更高的效能。
+* 右側——對於廣告限頻使用案例，您可以建立類似下列的區段規則： `(frequency([1000T] <= 2D) >= 5)`。 此運算式包含在過去2天中，至少5次以ID「1000」實現該特徵的所有使用者。 將此區段傳送至廣告伺服器，並在廣告伺服器的 `NOT` 區段上設定頻率上限。 該方法在保持頻率封 [!DNL Audience Manager] 閉的相同目的的同時，實現了更高的效能。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [區段產生器控制：特徵區段](../../features/segments/segment-builder.md#segment-builder-controls-traits)
 >* [區段運算式編輯器中使用的程式碼語法](../../features/segments/segment-code-syntax.md)
