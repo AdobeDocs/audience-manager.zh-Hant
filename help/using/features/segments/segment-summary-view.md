@@ -1,24 +1,38 @@
 ---
 description: 區段摘要頁面會顯示詳細資訊，例如名稱、區段中的特徵、規則、效能資料及目標對應資訊。
 seo-description: 區段摘要頁面會顯示詳細資訊，例如名稱、區段中的特徵、規則、效能資料及目標對應資訊。
-seo-title: 區段摘要檢視
+seo-title: 「段詳細資料」頁
 solution: Audience Manager
-title: 區段摘要檢視
+title: 「段詳細資料」頁
 uuid: e844e423-9701-42d4-9ba5-d82f41358adc
 keywords: 身分類型劃分，身分識別劃分，受眾身分識別報告
 translation-type: tm+mt
-source-git-commit: 345042673a9ee7abdac994d774e5c4c893a78749
+source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
 
 ---
 
 
-# 區段摘要檢視 {#segment-summary-view}
+# 「段詳細資料」頁 {#segment-summary-view}
 
-該頁 [!UICONTROL Segment Summary] 面會顯示詳細資訊，例如名稱、區段中的特徵、規則效能資料以及目標對應資訊。
+個別區段的詳細資料頁面提供區段詳細資料的概述，例如區段名稱、ID、效能度量、定義區段的規則以及目標映射。 若要檢視這些詳細資訊，請 **[!UICONTROL Audience Data]** 前往&gt; **[!UICONTROL Segments]** 並按一下您要使用之區段的名稱。
 
-按一下主控制面板中的區段名稱，以存取其摘要頁面。 摘要章節包括：
+## 區段管理工具 {#segment-management-tools}
 
-1. **[!UICONTROL Basic Information]** :顯示建立區段時指定的必要和選用詳細資訊。
+區段詳細資料頁面頂端會代管可用於管理區段的工具：
+
+1. **[!UICONTROL Add New]**:使用此選項可啟動並 [!UICONTROL Segment Builder] 建立新區段。
+2. **[!UICONTROL Edit]**:使用此選項可更改當前段的配置。
+3. **[!UICONTROL Duplicate]**:使用此選項可建立目前區段的復本。
+4. **[!UICONTROL Delete]**:使用這個選項可從您的Audience manager帳戶移除目前的區段。
+5. **[!UICONTROL Marketplace Recommendations]**:使用這個選項，從您未訂閱的資料饋送中，尋找與您所檢視 [!UICONTROL Audience Marketplace] 的區段類似的區段。 請參 [閱Audience Marketplace for Data Buyers](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，以瞭解如何導覽Marketplace並尋找類似區段。
+
+![基本區段資訊](assets/basic-segment-information.png)
+
+## 區段資訊 {#basics}
+
+在區段管理工具下方，您可以找到下列區段資訊：
+
+1. **[!UICONTROL Basic Information]** :顯示建立區段時指定的必要和選用詳細資訊。 如需 [這些欄位含義的詳細概述](segment-builder.md) ，請參閱區段產生器。
 2. **[!UICONTROL Segment Graph]** :以圖形方式顯示固定1、7、14、30、60和90天間隔的效能資料。 我們會在個別文章中說明區 [段人口數](../../features/segments/segment-builder-data.md)。
 
    ![區段圖](assets/segment-graph.png)
@@ -31,6 +45,7 @@ source-git-commit: 345042673a9ee7abdac994d774e5c4c893a78749
    >
    >Audience manager僅在您有符 [!UICONTROL Identity Type Breakdown] 合區段的跨裝置ID時顯示報表。
 
+   請觀看以下影片以取得簡介 [!UICONTROL Identity Type Breakdown]。
    >[!VIDEO](https://video.tv.adobe.com/v/27977/?captions=chi_hant)
 
 4. **[!UICONTROL Segment Rules]** :列出區段中的特徵以及資格規則。
