@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 客戶資料饋送常見問答集
 uuid: 7183b3e2-e999-4e1e-892f-2bab335c13b6
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 您只能生成過去8天的CDF檔案。 不能重新生成過去8天以前間隔的CDF檔案。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [客戶資料饋送](../features/cdf-files.md)
 
