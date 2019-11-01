@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: 532c69981ebc082bd411a9232e9ef207b59dace5
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -112,7 +112,7 @@ Audience manager會合併每個裝置+跨裝置描述檔配對，以查看合併
 
 >[!VIDEO](https://video.tv.adobe.com/v/28975/?captions=chi_hant)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [描述檔連結裝置圖表使用案例](profile-link-use-case.md)
 >* [外接式裝置圖表使用案例](external-graph-use-cases.md)
