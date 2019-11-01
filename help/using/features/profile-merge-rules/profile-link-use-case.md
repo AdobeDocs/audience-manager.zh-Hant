@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔連結裝置圖表使用案例
 uuid: bd5567fd-fcd5-40ba-b6f1-035d2ddbcd3a
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 ![跨裝置個人化](assets/cross-device-personalization.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [外接式裝置圖表使用案例](external-graph-use-cases.md)
 >* [描述檔合併規則的一般使用案例](merge-rule-targeting-options.md)
