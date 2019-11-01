@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DIL使用案例和程式碼範例
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 translation-type: tm+mt
-source-git-commit: 8763bff3960e2033951cf68e65f5ad44377b2917
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -44,8 +44,11 @@ c_dil_send_page_objects.xml
 此基本範例會以索引鍵值配對的形式，將色彩和價格資料傳送至Audience Manager。 您的程式碼看起來可能類似下列：
 
 <pre class="&ldquo;java&rdquo;"><code>
-var sample_dil = DIL.create({partner:"<i>partner name</i>"});
-sample_dil.api.signals({ c_color:"blue", c_price:"900" });
+var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
+sample_dil.api.signals({ 
+   c_color:"blue", 
+   c_price:"900" 
+}); 
 sample_dil.api.submit();
 </code></pre>
 
@@ -54,11 +57,14 @@ sample_dil.api.submit();
 此進階範例示範如何將物件中的資料傳送至Audience Manager。 使用此方法時， [!UICONTROL DIL] 可讓您將物件作為函式參數傳遞至方 [!DNL signals()] 法。 [!UICONTROL DIL] 您的程式碼看起來可能類似下列：
 
 <pre class="java"><code>
-var my_object = { color:"blue"，價格："900" };
+var my_object = { 
+   color : "blue", 
+   price : "900" 
+}; 
  
-var sample_dil = DIL.create({ partner :"<i>合作夥伴名稱</i>" });
-//載入物件，並將"c_"附加至鍵值配對中的所有鍵，並傳送資料至AudienceManager。 
-sample_dil.api.signs(my_object,"c_")。submit();
+var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
+//Load the object and append "c_" to all keys in the key-value pairs and send data to AudienceManager. 
+sample_dil.api.signals(my_object,"c_").submit();
 </code></pre>
 
 **範例3:在陣列中傳送頁面資料**
@@ -66,19 +72,23 @@ sample_dil.api.signs(my_object,"c_")。submit();
 在這種情況下，變數會 `my_object` 使用陣列來儲存資料。 此範例以上述建議方法傳入的資訊為基礎，但會新增額外的層來容納產品類型和型號。 您的程式碼看起來可能類似下列：
 
 <pre class="java"><code>
-var my_objects = [{ color:"blue"，價格："900" }, { type :"acura"，模型："tl" };
+var my_objects = [{ 
+   color : "blue", 
+   price : "900" 
+}, { 
+   type : "acura", 
+   model : "tl" 
+}]; 
  
-var sample_dil = DIL.create({ partner :"<i>合作夥伴名稱</i>" });
+var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
  
-for(var i = 0);i &lt; my_objects.length;i++)//載入物件，並將"c_"附加至鍵值配對中的所有鍵。  
-{ sample_dil.api.signals(my_objects[i], "c_");
-} sample_dil.api.submit();
+for (var i = 0; i < my_objects.length; i++) 
+//Load the object and append "c_" to all the keys in the key-value pairs.  
+{ 
+    sample_dil.api.signals(my_objects[i], "c_"); 
+} 
+sample_dil.api.submit();
 </code></pre>
-
->[!MORE_LIKE_THIS]
->
->* [信號](../dil/dil-instance-methods.md#signals)
-
 
 ## 擷取反向連結URL {#capture-referring-url}
 
@@ -99,8 +109,8 @@ c_dil_hrefer_over_https.xml
 您的程式碼看起來可能類似下列：
 
 <pre class="java"><code>
-var adobe_dil = DIL.create({合作夥伴："<i>合作夥伴名稱</i>" });
-adobe_dil.api.signals({ d_referer:document.referrer })。submit(;
+var adobe_dil = DIL.create({ partner : "<i>partner name</i>" }); 
+adobe_dil.api.signals({ d_referer : document.referrer }).submit();
 </code></pre>
 
 ## 擷取搜尋引擎類型和關鍵字搜尋詞 {#capture-search-engine-types}
@@ -138,22 +148,35 @@ var search_referrer = DIL.tools.getSearchReferrer();
 在此例中，假設使用者從加拿大搜尋「homes」() [!DNL Google] 一詞 `www.google.ca`。 請注意程式碼如何將必 `c_` 要參數前置於搜尋引擎( `c_se`)和搜尋詞( `c_st`)。 `c_` 是必 [要的首碼](../features/traits/trait-variable-prefixes.md) ，可將這些變數識別為Audience manager的客戶定義變數。
 
 <pre class="java"><code>
-var adobe_dil = DIL.create({partner:"<i>partner name</i>"});
-var search_referrer = DIL.tools.getSearchReferrer();
+var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
+var search_referrer = DIL.tools.getSearchReferrer(); 
  
-if(search_referrer &amp;&amp; search_referrer.valid){ adobe_dil.api.signals({ c_se :se.name, c_st:se.keywords })。submit(;
-}</code></pre>
+if (search_referrer && search_referrer.valid) { 
+  adobe_dil.api.signals({ 
+    c_se : se.name, 
+    c_st : se.keywords 
+  }).submit(); 
+}
+</code></pre>
 
 **未列出的搜尋引擎代碼範例**
 
 在此案例中，假設使用者從中搜尋詞「homes」 `dogpile.com`。 由 [!DNL Dogpile] 於預設不支援，您可以設定DIL來識別此搜尋引擎，並將搜尋詞傳回Audience Manager。 您的程式碼看起來可能類似下列：
 
 <pre class="java"><code>
-var adobe_dil = DIL.create({partner:"<i>partner name</i>"});
-var search_referrer = DIL.tools.getSearchReferrer(document.referrer, { hostPattern:/dogpile\)。/, queryParam:"q" });
+var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
+var search_referrer = DIL.tools.getSearchReferrer(document.referrer, {  
+    hostPattern:/dogpile\./, 
+    queryParam:"q" 
+}); 
  
-if(search_referrer &amp;&amp; search_referrer.valid){ adobe_dil.api.signals({ c_se :se.name, c_st:se.keywords })。submit(;
-}</code></pre>
+if (search_referrer && search_referrer.valid) { 
+  adobe_dil.api.signals({ 
+    c_se : se.name, 
+    c_st : se.keywords 
+  }).submit(); 
+}
+</code></pre>
 
 ## 將索引鍵值映射至其他索引鍵 {#map-key-values}
 
@@ -187,12 +210,7 @@ adobe_dil.api.signals({c_zip : '10010'}).submit();
 // Request will look like /event?c_zip=10010&d_zip=10010
 ```
 
->[!MORE_LIKE_THIS]
->
->* [關鍵變數的前置詞要求](https://marketing.adobe.com/resources/help/en_US/aam/r_tb_variable_prefixes.html)
-
-
-## Google標籤管理器(GTM)中的流量DIL {#traffic-dil-gtm}
+##  Google標籤管理器(GTM)中的流量DIL {#traffic-dil-gtm}
 
 使用GTM標籤設定並提供DIL。
 
@@ -218,7 +236,9 @@ t_dil_google_tagmanager.xml
 1. 發佈容器。
 1. 產生容器標籤代碼，並將其置於庫存中。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Google標籤管理員說明中心](https://support.google.com/tagmanager#topic=3441530)
+>* [信號](../dil/dil-instance-methods.md#signals)
+>* [關鍵變數的前置詞要求](https://marketing.adobe.com/resources/help/en_US/aam/r_tb_variable_prefixes.html)
 
