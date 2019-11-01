@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 入站資料傳輸的ID同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
-source-git-commit: 0fac081c93be36d2aa40023c7323ef1886b3860a
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -48,24 +48,24 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i></code> </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
    <td colname="col2"> <p>內容提供者的唯一ID(由 <span class="keyword"> Audience Manager指派</span>)。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i></code> </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 
    <td colname="col2"> <p>URL（百分比）編碼表示您的唯一使用者ID。 除了編碼保留的ASCII字元外，任何非ASCII字元都應根據UTF-8字元編碼表進行百分比編碼。 </p> <p>如需詳細資訊，請參閱 <a href="https://www.url-encode-decode.com" format="http" scope="external"> URL Encode/Decode Online網站</a> 。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i></code> </td> 
-   <td colname="col2"> <p>內嵌巨集 <code> ${DD_UUID}的編碼URL重新導向</code> 。 </p> <p>注意： 僅在內容提供者開始呼叫時新增。 </p> </td> 
+   <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
+   <td colname="col2"> <p>內嵌巨集的編碼URL重新導 <code> ${DD_UUID}</code> 向。 </p> <p>注意： 僅在內容提供者開始呼叫時新增。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i></code> </td> 
-   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code> gdpr可以是</code> 0（GDPR不適用）或1（GDPR適用）。 </p> <p> <b></b> 注意：此參數只能與 <code>gdpr_connency一起使用</code>。</p></td> 
+   <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code> gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr_consent</code>。</p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <code><i>gdpr_connency=&lt;ENCODED STRING&gt;</i></code> </td> 
-   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code>gdpr_connence</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b></b> 注意：此參數只能與 <code>gdpr搭配使用</code>。</p> </td> 
+   <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
 
 透過電子郵件影像比對ID的格式與上述相同。 但請注意，電子郵件中的影像必須已啟用，才能運作。 這可能會影響透過電子郵件進行的ID同步，因為大部分的郵件系統都預設會停用影像。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [資料收集元件](../../../reference/system-components/components-data-collection.md)
 
