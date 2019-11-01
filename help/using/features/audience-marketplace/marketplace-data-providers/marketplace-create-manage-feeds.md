@@ -7,7 +7,7 @@ title: 建立、定價和管理資料饋送
 topic: DIL API
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -59,11 +59,6 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 * **[!UICONTROL Private]** 和 **[!UICONTROL Unbranded]**:採購者清單僅 [!UICONTROL Marketplace] 會顯示資料饋送名稱和說明。 資料提供者名稱會顯示為 [!UICONTROL Private Seller]。
 
 若要查看私人動態消息對購買者的外觀，請參閱「私人資料動態消息」中的 [購買者區段](../../../features/audience-marketplace/marketplace-private-feeds.md)。
-
->[!MORE_LIKE_THIS]
->
->* [私人資料摘要](../../../features/audience-marketplace/marketplace-private-feeds.md)
-
 
 ## 停用訂閱者的資料饋送 {#deactivate-data-feed}
 
@@ -183,12 +178,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 3. 在每個 [!UICONTROL Allow Access] 請求方塊的區段中，按一下核取標籤以核准請求，或按X以拒絕存取。
 4. 在確認彈出式視窗中確認或取消您選取的動作。
 
->[!MORE_LIKE_THIS]
->
->* [私人資料摘要](../../../features/audience-marketplace/marketplace-private-feeds.md)
-
-
-## 資料提供者的折扣 {#discounts}
+##  資料提供者的折扣 {#discounts}
 
 在中 [!UICONTROL Audience Marketplace]，折扣可讓您降低個別訂閱者的資料饋送發佈價格。 您可以為已提交訂閱要求的訂閱者或已要求資料饋送詳細資訊的訂閱者提供折扣。 折扣適用於 [!DNL CPM] 固定費率饋送。 當您想要為新客戶提供訂閱獎勵或獎勵客戶忠誠度時，折扣會很有幫助。
 
@@ -212,3 +202,8 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 資料供應商可在中查看其所有訂閱者和折扣動態消息 **[!UICONTROL Audience Marketplace > My Shared Data > Current Subscribers]**。
 
 ![](assets/subscribers.png)
+
+>[!MORELIKETHIS]
+>
+>* [私人資料摘要](../../../features/audience-marketplace/marketplace-private-feeds.md)
+
