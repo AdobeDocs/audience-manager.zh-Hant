@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -54,11 +54,6 @@ source-git-commit: f53e091b8c069221837af01ad54deeb731cd48e2
 * **[!UICONTROL Data retention for inactive Customer IDs]**:此控制項可讓您設定非作用中客戶ID的資料保留期。 這會決定客戶ID上次在Audience manager平台上顯示後，Audience manager在我們的資料庫中保留多久的時間。 預設值為24個月（720天）。 您可設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計算為30天。 Audience manager會根據您為非作用中客戶ID設定的資料保留率，執行每週刪除非作用中客戶ID一次的程式。
 
 與這些設定關聯的文本欄位允許您使用「配置檔案合 [!UICONTROL Data Source] 並規則」選項中顯示的別名來 [更名](merge-rule-definitions.md)。 例如，如果向中添加別名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;該名稱將出現在列 [!UICONTROL Authenticated Profile Options] 表中。 如果向中添加別名， **[!UICONTROL Use as a Device Graph]**&#x200B;該名稱將出現在列 [!UICONTROL Device Options] 表中。
-
->[!MORE_LIKE_THIS]
->
->* [建立資料來源](../manage-datasources.md#create-data-source)
-
 
 ## 建立描述檔合併規則 {#create-profile-merge-rule}
 
@@ -214,3 +209,8 @@ DIL.create({
 </table>
 
 另請參閱「 [iOS適用的Android適用的Audience Manager方法](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_audience_manager_methods.html) 」 [和「iOS適用的Audience Manager方法」](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=aam_methods.html)。
+
+>[!MORELIKETHIS]
+>
+>* [建立資料來源](../manage-datasources.md#create-data-source)
+
