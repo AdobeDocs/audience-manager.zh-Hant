@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則的報表量度
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -116,7 +116,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
 
 除了其他資料視覺化外，報 [!UICONTROL Profile Link] 表還包含折線圖。 折線圖旨在顯示描述檔規則隨時間的趨勢。 當您從著陸頁面()按一下規則時，趨勢圖(和其 [!UICONTROL Profile Merge Rules] 他報表) **[!UICONTROL Audience Data > Profile Merge Rules]**&#x200B;可用。 如果您是您在中可存取的其他協力廠商 [!UICONTROL Device Co-op] 裝置圖形的成員，這些圖形包括裝置圖形資料 [!DNL Audience Manager]。 按一下趨勢線以檢視基礎資料。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [描述檔合併規則常見問答集](../../faq/faq-profile-merge.md)
 
