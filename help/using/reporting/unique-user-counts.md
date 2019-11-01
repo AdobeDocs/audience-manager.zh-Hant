@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 計算重疊和一般報告中的獨特用戶
 uuid: 450f6a8c-f363-43de-b2d8-0a156f14ecae
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -33,7 +33,7 @@ c_unique_user_counts.xml
 
 如果網站訪客在選取的時段內符合特徵，「一般」報表會將其計算為獨特。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [互動式報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports)
 >* [一般報告](../reporting/general-reports.md#general-reports-overview)
