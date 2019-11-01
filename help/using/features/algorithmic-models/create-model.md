@@ -8,7 +8,7 @@ title: 建立演算法模型
 topic: DIL API
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -28,19 +28,19 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 >[!NOTE]
 >
 >* 如果您建立模型且不使用模型建立任何特徵，則模型程式只會執行一次。
->* 從包含大量資訊的資料來源建立模型。 Models with insufficient data will run, but they will not return results.
->* *Do not create models with other algorithmic traits or segments.*
+>* 從包含大量資訊的資料來源建立模型。 資料不足的模型會執行，但不會傳回結果。
+>* *請勿使用* 其他演算法特徵或區段建立模型。
 >* 自動化電子郵件通知只會傳送一次（在第一次資料執行後）。
 
 
-### Build the Model
+### 建立模型
 
-To build a model, go to the  section and click  and follow the steps below:[!UICONTROL Models]**[!UICONTROL Add New]**
+若要建立模型，請前往區段， [!UICONTROL Models] 然後按一 **[!UICONTROL Add New]** 下並遵循下列步驟：
 
-1. In the Basic Information section[](../../features/algorithmic-models/create-model.md#basic-information)
-   * Name the model.
-   * *(Optional) Provide a brief description about the model.*
-   * Set the status for the model to  or . **[!UICONTROL Active]****[!UICONTROL Inactive]** Inactive models will not run and will not produce any data.
+1. 在「基 [本資訊」部分](../../features/algorithmic-models/create-model.md#basic-information)
+   * 命名模型。
+   * *（可選）* ，提供模型的簡要說明。
+   * 將模型的狀態設定為 **[!UICONTROL Active]** 或 **[!UICONTROL Inactive]**。 非活動模型將不運行，也不會生成任何資料。
 1. 在「配 [置](../../features/algorithmic-models/create-model.md#configuration) 」部分：
    * 按一 **[!UICONTROL Browse All Traits]** 下或 **[!UICONTROL Browse All Segments]** 以選取您要建立模型的特徵或區段。 選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。
    * 選擇30、60或90天回顧時段。 這會設定模型的時間範圍。
@@ -57,18 +57,18 @@ To build a model, go to the  section and click  and follow the steps below:[!UIC
 | 欄位 | 說明 |
 |---|---|
 | **[!UICONTROL Name]** | 為模型提供簡短的邏輯名稱，以說明其功能或用途。 避免縮寫、特殊字元和重音符號。 |
-| **[!UICONTROL Description]** | A field for additional descriptive information about the model. |
-| **[!UICONTROL Status]** | Activates or deactivates the model (active by default). |
+| **[!UICONTROL Description]** | 一個欄位，用於有關模型的其他描述性資訊。 |
+| **[!UICONTROL Status]** | 激活或停用模型（預設情況下為活動）。 |
 
 ## 設定 {#configuration}
 
-In , the  section lets you add traits or segments to the model. [!UICONTROL Model Builder][!UICONTROL Configuration]In this section, select a baseline trait or segment, a look-back period, and data from your first and third-party data sources.
+在中 [!UICONTROL Model Builder]，區 [!UICONTROL Configuration] 段可讓您新增特徵或區段至模型。 在本節中，選取基準特徵或區段、回顧期間，以及來自您第一方與第三方資料來源的資料。
 
 <!-- r_model_configuration.xml -->
 
 ### 必備條件
 
-Complete the required fields in the  section first.[!UICONTROL Basic Information]
+請先填妥章節中的 [!UICONTROL Basic Information] 必填欄位。
 
 ![](assets/lam_exclude_traits_numbered.png)
 
@@ -81,8 +81,8 @@ Complete the required fields in the  section first.[!UICONTROL Basic Information
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>Select a Baseline Trait or Segment (1)</b> </p> </td> 
-   <td colname="col2"> <p>Click the trait or segment button to see a list of all your traits or segments. Your selected segment or trait becomes the baseline that the system algorithms use for modeling. </p> <p> <p><b>注意</b>:選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。 </p> </p> </td> 
+   <td colname="col1"> <p><b>選取基準特徵或區段(1)</b> </p> </td> 
+   <td colname="col2"> <p>按一下特徵或區段按鈕，即可查看您所有特徵或區段的清單。 您選取的區段或特徵會成為系統演算法用於建模的基準。 </p> <p> <p><b>注意</b>:選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>選擇回顧期間(2)</b> </p> </td> 
@@ -98,16 +98,16 @@ Complete the required fields in the  section first.[!UICONTROL Basic Information
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>排除(5)</b> </p> </td> 
-   <td colname="col2"> <p>You can exclude traits from the data sources you selected for modeling. 使用「排 <span class="wintitle"> 除」清單</span> ，並閱讀「演算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型：特徵排除</a> ，瞭解更多資訊。 </p> </td>
+   <td colname="col2"> <p>您可以從選取的模型資料來源中排除特徵。 使用「排 <span class="wintitle"> 除」清單</span> ，並閱讀「演算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型：特徵排除</a> ，瞭解更多資訊。 </p> </td>
   </tr> 
  </tbody>
 </table>
 
-Watch the video below to learn how to create a first party look-alike model, so that you can find more of your own visitors who look like your converters.
+觀看以下影片，瞭解如何建立第一方外觀相似的模型，以便您找到更多自己的訪客，其外觀更像您的轉換器。
 
 >[!VIDEO](https://video.tv.adobe.com/v/23504/?captions=chi_hant)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [瞭解特徵權重](../../features/algorithmic-models/understanding-models.md#understanding-traitweight)
 
