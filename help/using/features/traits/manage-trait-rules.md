@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 管理特徵規則
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -61,13 +61,6 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ![](assets/tb_sample_rule2.png)
 
->[!MORE_LIKE_THIS]
->
->* [建立新規則群組](../../features/traits/manage-trait-rules.md#create-rule-group)
->* [在群組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
->* [刪除特徵規則](../../features/traits/manage-trait-rules.md#delete-trait)
-
-
 ## Create a New Rule Group {#create-rule-group}
 
 此程式說明如何建立新的規則群組。
@@ -84,23 +77,9 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    >如果您無意中移動規則，請將規則拖回其原始群組。
 1. 從下拉 [!DNL Boolean] 式選單中選 [!UICONTROL AND]取運算 [!UICONTROL OR]子(、、 [!UICONTROL AND NOT])，以設定規則群組之間的關係。
 
->[!MORE_LIKE_THIS]
->
->* [建立特徵規則](../../features/traits/manage-trait-rules.md#create-trait-rule)
->* [在群組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
->* [刪除特徵規則](../../features/traits/manage-trait-rules.md#delete-trait)
-
-
 ## 在群組之間移動規則 {#move-rules-between-groups}
 
 若要移動規則，請按一下並拖曳至其他群組。
-
->[!MORE_LIKE_THIS]
->
->* [建立特徵規則](../../features/traits/manage-trait-rules.md#create-trait-rule)
->* [建立新規則群組](../../features/traits/manage-trait-rules.md#create-rule-group)
->* [刪除特徵規則](../../features/traits/manage-trait-rules.md#delete-trait)
-
 
 ## 編輯特徵 {#edit-trait}
 
@@ -122,3 +101,12 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 1. 在控制 [!UICONTROL Traits] 面板中，將滑鼠指標暫 [!UICONTROL Actions] 留在您要編輯的特徵欄上，然後按一下鉛筆圖示。 這會顯示特徵管理圖示。
 1. Expand the [!UICONTROL Trait Expression] section.
 1. 將滑鼠指標暫留在您要刪除的規則上，然後按一下X圖示。 規則會立即刪除。
+
+>[!MORELIKETHIS]
+>
+>* [建立新規則群組](../../features/traits/manage-trait-rules.md#create-rule-group)
+>* [在群組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
+>* [建立特徵規則](../../features/traits/manage-trait-rules.md#create-trait-rule)
+>* [刪除特徵規則](../../features/traits/manage-trait-rules.md#delete-trait)
+>* [在群組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
+
