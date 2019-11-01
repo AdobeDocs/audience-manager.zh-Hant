@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 外接式裝置圖表使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
 translation-type: tm+mt
-source-git-commit: 54ae5956a34c193d42d4ff9a231249d56cce87aa
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -123,7 +123,7 @@ John在資料計畫A上使用iPhone 7在Acme Inc.網站上驗證。 同時，Joh
 
 ![進階圖展開](assets/advanced-device-graph-expansion.png)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [描述檔連結裝置圖表使用案例](profile-link-use-case.md)
 >* [描述檔合併規則的一般使用案例](merge-rule-targeting-options.md)
