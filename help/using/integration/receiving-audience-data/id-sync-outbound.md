@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 出站資料傳輸的ID同步
 uuid: f3849be8-1094-47db-9296-7482f020af18
 translation-type: tm+mt
-source-git-commit: e206d3a3cba259dc215f2f4190c9b4e03264f080
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -46,31 +46,31 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  </thead>
  <tbody> 
   <tr valign="top"> 
-   <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i></code> </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
    <td colname="col2">資料提供者的唯一ID(由 <span class="keyword"> Audience Manager指派</span>)。 </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i></code> </td> 
+   <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 
    <td colname="col2"> 唯一使用者ID。 </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i></code> </td> 
-   <td colname="col2">內嵌巨集 <code> ${DD_UUID}的編碼URL重新導向</code> 。 <p><b></b> 注意：僅在資料提供者開始呼叫時新增。 </p> </td> 
+   <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
+   <td colname="col2">內嵌巨集的編碼URL重新導 <code> ${DD_UUID}</code> 向。 <p><b></b> 注意：僅在資料提供者開始呼叫時新增。 </p> </td> 
   </tr> 
     </tr> 
   <tr> 
-   <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i></code> </td> 
-   <td colname="col2"> <p><code>gdpr可以是</code> 0（GDPR不適用）或1（GDPR適用）。</p><p><b>注意:</b> <ul><li>ID <code>同步URL中</code> ，與啟 <code>動合作夥伴逐漸推出gdpr和gdpr_connency</code> 參數。 請參閱Audience Manager Plug-in for IAB TCF中支援IAB TCF <a href="../../overview/aam-gdpr/aam-iab-plugin.md#aam-activation-partners">的啟動合作夥伴。</a></li><li>此參數只能與 <code>gdpr_connency一起使用。</code></li></ul></p></td>
+   <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
+   <td colname="col2"> <p><code>gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。</p><p><b>注意:</b> <ul><li>與啟 <code>gdpr</code> 動合 <code>gdpr_consent</code> 作夥伴的ID同步URL會逐漸推出和參數。 請參閱Audience Manager Plug-in for IAB TCF中支援IAB TCF <a href="../../overview/aam-gdpr/aam-iab-plugin.md#aam-activation-partners">的啟動合作夥伴。</a></li><li>此參數只能與 <code>gdpr_consent.</code></li></ul></p></td>
   </tr> 
     </tr> 
   <tr valign="top"> 
-   <td colname="col1"> <code><i>gdpr_connency=&lt;ENCODED STRING&gt;</i></code> </td> 
-   <td colname="col2"><p><code>gdpr_connence</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。</p><p><b></b> 注意：此參數只能與 <code>gdpr搭配使用</code>。</p> </td> 
+   <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
+   <td colname="col2"><p><code>gdpr_consent</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。</p><p><b></b> 注意：此參數只能與一起使用 <code>gdpr</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [資料收集伺服器(DCS)API方法與程式碼](../../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
 >* [資料收集元件](../../reference/system-components/components-data-collection.md)
