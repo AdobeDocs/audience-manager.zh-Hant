@@ -5,7 +5,7 @@ seo-title: 將資料匯出控制項新增至目標
 solution: Audience Manager
 title: 將資料匯出控制項新增至目標
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -36,6 +36,6 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
    >除非您對資料來源設定相符的 [匯出控制](../../features/data-export-controls.md) ，否則匯出限制無法運作。
 1. Click **[!UICONTROL Save]**.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [建立資料來源](../../features/manage-datasources.md#create-data-source)
