@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: b6d5149adf2f939941b4ef659b0ecc80fa0918f4
+source-git-commit: 2d6671406ebf8e1626c0a0b259aad6bb482d7c0e
 
 ---
 
@@ -20,12 +20,11 @@ source-git-commit: b6d5149adf2f939941b4ef659b0ecc80fa0918f4
   <tr> 
    <td colname="col1"> <p> <b>全新和精選項目</b> </p> <p>閱讀有關最新Audience manager功能的資訊：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
+     <li><a href="features/segments/trait-recommendations.md">Adobe Sensei支援的Audience Marketplace資料智慧建議</a></li>
     <li><a href="features/profile-merge-rules/merge-rules-overview.md">描述檔合併規則增強功能</a></li>
     <li><a href="reference/bulk-management-tools/bulk-management-intro.md">大量管理工具更新</a></li>
      <li><a href="overview/data-security-and-privacy/data-security.md#hsts">HTTP Strict-Transport-Security</a></li>
      <li><a href="features/destinations/people-based-destinations-overview.md">以人為本的目的地</a> </li>
-     <li><a href="features/destinations/twitter-tailored-audiences.md">將Twitter量身訂做的觀眾設定為自助服務裝置型目的地</a> </li>
-     <li><a href="features/destinations/destinations-home.md">目標首頁</a> </li>
      </ul> </p> <p>另請參閱2019年 <a href="docs-updates/docs-2019.md"> 檔案更新</a>。 </p> 
      <p>如果您是Audience Manager的新手，請參閱我們的 <a href="reference/aam-glossary.md"> 辭彙</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p>
      <br> 
@@ -47,7 +46,6 @@ source-git-commit: b6d5149adf2f939941b4ef659b0ecc80fa0918f4
   </tr> 
  </tbody> 
 </table>
-
 
 <!--
 
