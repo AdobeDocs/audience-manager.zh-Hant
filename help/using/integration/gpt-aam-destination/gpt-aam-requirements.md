@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用 Google 發佈商代碼 (GPT) 傳送區段至 DFP 的需求和方法
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e67790b6
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >
 >如果您的網頁正在執行 [Accelerated Media Pages](https://www.ampproject.org/) ([!DNL AMP])程式庫，您必須使用與Audience manager的伺服器端整合。 如果您位於 [!DNL AMP] 且與用戶端整合， [!DNL AMP]則必須移轉至伺服器端整合。 請連絡您的Audience manager顧問或客戶服務以討論移轉問題。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [GPT API參考指南](https://support.google.com/dfp_premium/bin/answer.py?hl=en&answer=1650154)
 
