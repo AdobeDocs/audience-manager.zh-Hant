@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段運算式編輯器中使用的程式碼語法
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ---
 
@@ -73,7 +73,7 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [時近與頻率](../../features/segments/recency-and-frequency.md)
 >* [特徵和區段產生器中的布林運算式](../../reference/boolean-expressions-tsb.md)
