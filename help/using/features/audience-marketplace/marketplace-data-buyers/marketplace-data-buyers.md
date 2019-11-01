@@ -7,7 +7,7 @@ title: 適用於資料購買者的Audience Marketplace
 topic: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: f66c5a0fb6ea1b0e89b804e56fa7045978427ab8
 
 ---
 
@@ -51,15 +51,15 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 * **[!UICONTROL Private Feeds]**:請參 [閱私人資料饋送](../../../features/audience-marketplace/marketplace-private-feeds.md)。
 * **[!UICONTROL Currently Subscribed Plan Count]**:您與資料提供者的訂閱數。
 
+ 
+
 若要輕鬆找到符合您需求的最佳資料饋送，請使用頁面左側的下列篩選 [!UICONTROL Marketplace] 器：
 
 * **[!UICONTROL Similarity To]**:根據資料饋送與您選擇之特徵或區段的相似性來篩選資料饋送。 在輸入要比較的特徵或區段時，您可以使用特徵或區段ID或其個別名稱。
-* **[!UICONTROL Similarity Cutoff]**:拖曳滑桿，以根據資料饋送的特性與您選取的特徵或區段的相似程度來篩選資料饋送。
+* **[!UICONTROL Similarity Cutoff]**:拖曳滑桿，以根據資料饋送的特性與您選取的特徵或區段的相似程度來篩選資料饋送。 若要進一步瞭解特徵相似性分數，請參閱特徵 [相似性分數](../../segments/trait-recommendations.md#trait-similarity-score)
 * **[!UICONTROL Subscription Status]**:根據您的訂閱狀態篩選資料饋送。
 * **[!UICONTROL Plan Use Case]**:根據支援的使用案例篩選資料饋送： **[!UICONTROL Activation]**、 **[!UICONTROL Segments and Overlap]**&#x200B;和 **[!UICONTROL Modelling]**。
 * **[!UICONTROL Plan Unit]**:根據資料饋送的定價類型篩選資料饋送。
-
-請觀看以下影片，以取得如何使用這些篩選器的概觀。
 
 ## 尋找相似特徵 {#finding-similar-traits}
 
@@ -81,7 +81,6 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 請觀看以下影片，以取得如何尋找類似特徵的完整概觀。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29370/?captions=chi_hant)
-
 
 ## 私人資料摘要 {#private-data-feeds}
 
