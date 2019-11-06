@@ -7,7 +7,7 @@ solution: Audience Manager
 title: Audience Manager中ID的索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 translation-type: tm+mt
-source-git-commit: 7e553755d4510dc6803e77cca7d567e0d6e7cb2d
+source-git-commit: 7d168c754a9b99dfd88718a0c27c34f3c1dc61d5
 
 ---
 
@@ -34,13 +34,13 @@ source-git-commit: 7e553755d4510dc6803e77cca7d567e0d6e7cb2d
 
 ## 全域裝置ID {#global-device-ids}
 
-全域裝置ID是裝置廣告ID，是裝置製造商或作業系統所提供之每個裝置專屬的裝置廣告ID。 下表說明這些ID是什麼及其格式。
+全域裝置ID是裝置廣告ID，是裝置製造商或作業系統所提供之每個裝置專屬的裝置廣告ID。 下表說明這些ID是什麼及其格式。 如需全域裝置ID以及如何在Audience manager中使用這些ID的詳細資訊，請閱讀全 [域資料來源](/help/using/features/global-data-sources.md)。
 
-| ID | 名稱和說明 | 範例 |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [!DNL IDFA] | [!DNL Identifier for Advertisers] ID是裝置製造商提供的行動裝置識別碼。 這些ID代表執行iOS作業系統的裝置。 | 格式嚴格由32個大寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。<br> 範例: `AEBE52E7-03EE-455A-B3C4-E57283966239`. |
-| [!DNL GAID] | [!DNL Google Advertising ID]s是Android裝置製造商提供的行動裝置識別碼。 這些ID代表執行作業系統 [!DNL Android] 的裝置。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `e4fe9bde-caa0-47b6-908d-ffba3fa184f2`. |
-| [!DNL RIDA] | [!DNL Roku IDs for Advertising] 代表串 [!DNL Roku] 流裝置。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `fcb2a29c-315a-5e6b-bcfd-d889ba19aada`. |
-| [!DNL MAID] | [!DNL Microsoft Advertising ID]s是每個裝置、每個 [!DNL Windows 10] 使用者產生的裝置識別碼。 | [!DNL MAID]s的格式為英數字串。 |
-| [!DNL DUID] | [!DNL Samsung DUID]s是由Samsung Smart TV提供的裝置識別碼。 | Samsung的 [!DNL DUID]格式為英數字串。 |
-| [!DNL Amazon Fire TV Advertising ID] | 代表執行作業系統之裝置的裝 [!DNL Fire OS] 置識別碼。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
+| ID | 全域資料來源ID | 名稱和說明 | 範例 |
+| --------------------- | ------ | ------------ | ---------------- |
+| [!DNL IDFA] | 20915 | [!DNL Identifier for Advertisers] ID是裝置製造商提供的行動裝置識別碼。 這些ID代表執行iOS作業系統的裝置。 | 格式嚴格由32個大寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。<br> 範例: `AEBE52E7-03EE-455A-B3C4-E57283966239`. |
+| [!DNL GAID] | 20914 | [!DNL Google Advertising ID]s是Android裝置製造商提供的行動裝置識別碼。 這些ID代表執行作業系統 [!DNL Android] 的裝置。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `e4fe9bde-caa0-47b6-908d-ffba3fa184f2`. |
+| [!DNL RIDA] | 121963 | [!DNL Roku IDs for Advertising] 代表串 [!DNL Roku] 流裝置。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `fcb2a29c-315a-5e6b-bcfd-d889ba19aada`. |
+| [!DNL MAID] | 389146 | [!DNL Microsoft Advertising ID]s是每個裝置、每個 [!DNL Windows 10] 使用者產生的裝置識別碼。 | [!DNL MAID]s的格式為英數字串。 |
+| [!DNL DUID] | 404660 | [!DNL Samsung DUID]s是由Samsung Smart TV提供的裝置識別碼。 | Samsung的 [!DNL DUID]格式為英數字串。 |
+| [!DNL Amazon Fire TV Advertising ID] | 488258 | 代表執行作業系統之裝置的裝 [!DNL Fire OS] 置識別碼。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
