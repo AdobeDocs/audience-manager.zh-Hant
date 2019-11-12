@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 輸出範本巨集
 uuid: dec082d3-306b-4ff5-afb2-418bd543d8d0
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 94984d14be6febf4de3ee3e0e79fba432e1cb15f
 
 ---
 
@@ -38,6 +38,10 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   <tr> 
    <td colname="col1"> <p> <code> MASTER_DPID </code> </p> </td> 
    <td colname="col2"> <p>使用者ID金鑰資料提供者ID。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p> <code> NEW_LINE </code> </p> </td> 
+   <td colname="col2"> <p> 允許為出站訂單建立多行題頭。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ORDER_ID </code> </p> </td> 
