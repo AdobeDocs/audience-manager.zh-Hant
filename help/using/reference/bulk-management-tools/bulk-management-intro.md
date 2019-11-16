@@ -1,13 +1,13 @@
 ---
 description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
-keywords: baam;BAAM
+keywords: baaam;BAAAM
 seo-description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
 seo-title: 批量管理快速入門
 solution: Audience Manager
 title: 批量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 963d765845dae6abe107be04d5aae2c49e7fb575
 
 ---
 
@@ -39,7 +39,7 @@ c_bulk_start.xml
 若要使用 [!DNL Bulk Management Tools]，您需要下列項目：
 
 * 您的登 [!DNL Experience Cloud] 入資訊。 身為客戶，您應已擁有這些認證。
-* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](/help/using/reference/bulk-management-tools/bulk-management-intro.md#download) ，取得最新版本。
+* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20191015.xlsm) ，取得最新版本。
 * 在或64位 [!DNL macOS] 元上執行Microsoft Excel [!DNL Microsoft Windows]。
 * 開啟工作表時，必須 **啟用宏** , [!DNL Bulk Management Tools] 才能使用。
 
@@ -118,10 +118,4 @@ c_bulk_start.xml
 >[!NOTE]
 >
 >處理大量請求時，工作表可能會停止響應，並且看起來不活動。 在這些情況下，別管它。 當批量請求完成時，工作表會變成回應。 如果工作表長時間沒有響應，請參閱疑難排 [解部分](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
-
-
-
->[!MORELIKETHIS]
->
->* [下載批量管理工作表](assets/BAAAM_August_2018.xlsm)
 
