@@ -4,9 +4,9 @@ seo-description: 本文說明如何在Audience manager和Adobe Experience platfo
 seo-title: Audience manager與Adobe Experience platform之間的觀眾分享
 solution: Audience Manager
 title: Audience manager與Adobe Experience platform之間的觀眾分享
-keywords: AEP觀眾分享， AEP區隔，平台區隔，區隔分享，觀眾分享
+keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing
 translation-type: tm+mt
-source-git-commit: 897cc523aa52b1594e1c53f48459ddd7fd33d033
+source-git-commit: b3f7ee5730ed91c656f0dea1bacfabad703755fd
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 897cc523aa52b1594e1c53f48459ddd7fd33d033
 
 >[!NOTE]
 >
->本頁包含測試版檔案，說明Audience Manager和 *Adobe* Experience Platform客戶可使用的功能。 本檔案可能會在最終產品發行前變更。
+> 本頁所述的功能適用於Audience manager和Adobe Experience platform的客戶。
 >
 > 請連絡您的Adobe銷售代表以解除鎖定此功能的存取權。
 
