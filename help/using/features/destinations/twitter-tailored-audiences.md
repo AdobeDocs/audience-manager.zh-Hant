@@ -5,23 +5,22 @@ seo-title: 將Twitter量身訂做的觀眾設定為自助服務裝置型目的�
 solution: Audience Manager
 title: 將Twitter量身訂做的觀眾設定為自助服務裝置型目的地
 translation-type: tm+mt
-source-git-commit: 7966cac59b982b5f36af6975607df64545b74058
+source-git-commit: 4af2d7a4e2162f8d69273cf76aecb5f1ff00e7b6
 
 ---
 
 
 # 配置 [!DNL Twitter Tailored Audiences] 為基於自助設備的目標 {#configure-twitter}
 
-本文說明如何針對新的和現 [有的整合設定Twitter Tailored](https://business.twitter.com/en/targeting/tailored-audiences.html) Audiences。
+本文說明如何設定與 [Twitter Tailored Audiences的整合](https://business.twitter.com/en/targeting/tailored-audiences.html)。
 
 ## 必備條件 {#prerequisites}
 
-在設定目 [!DNL Twitter Tailored Audiences] 標之前，請務必檢閱下列您必須符合的Twitter必要條件。
+在設定目 [!DNL Twitter Tailored Audiences] 標之前，請務必檢閱您需要符合的下列Twitter先決條件。
 
 1. 您的 [!DNL Twitter Ads] 帳戶必須符合廣告資格。 新帳 [!DNL Twitter Ads] 戶在建立後的前2週內無法取得廣告。
-1. 您在Audience manager中授權存取的Twitter使用者帳戶必須啟用「合作伙 [伴對象管理員](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 」權限。
-1. 如果您要將 [現有的Twitter整合更新為自助服務管理](#update-existing-twitter-integrations)，您的Twitter使用者帳戶必須啟用廣告 [管理員](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 權限。
-1. 在您的Audience manager實 [!DNL Twitter Tailored Audiences] 例中建立第一個目標時，請連絡Adobe諮詢或客戶服務，以啟用您帳戶的 [!DNL Twitter] ID同步化（資料來源ID = 1123）。 Audience manager和之間的正確同步需要此項 [!DNL Twitter]。
+2. 您 [!DNL Twitter] 在Audience manager中授權存取的使用者帳戶必須啟用「合作伙 [伴對象管理員](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 」權限。
+3. 在您的Audience manager實 [!DNL Twitter Tailored Audiences] 例中建立第一個目標時，請連絡Adobe諮詢或客戶服務，以啟用您帳戶的 [!DNL Twitter] ID同步化（資料來源ID = 1123）。 Audience manager和之間的正確同步需要此項 [!DNL Twitter]。
 
 ## 添加新目 [!DNL Twitter Tailored Audiences] 標 {#add-new-twitter-destination}
 
@@ -52,26 +51,27 @@ source-git-commit: 7966cac59b982b5f36af6975607df64545b74058
 1. 在區 **[!DNL Segment Mappings]** 段中，選取您要傳送至此目的地的對象區段。
 1. 保存目標。
 
-## 將現有的Twitter整合更新為自助服務管理 {#update-existing-twitter-integrations}
+<!--
+## Update Existing Twitter Integrations To Self-Service Administration {#update-existing-twitter-integrations}
 
-為改善使用者體驗並簡化設定程式，我們將整合升級為自助服務模型，您可從Audience Manager UI自行執行設定。 [!DNL Twitter Tailored Audiences] 本節說明更新現有Twitter整合時需要採取的步驟。
+To improve the user experience and streamline the configuration process, we are upgrading the [!DNL Twitter Tailored Audiences] integration to a self-service model, where you can perform the configuration yourself, from the Audience Manager UI. This section describes the steps you need to take to update your existing Twitter integration.
 
 >[!IMPORTANT]
 >
->以下所述步驟僅適用於您已與Audience manager顧問或客戶服務 [!DNL Twitter Tailored Audiences]所設定的現有整合時。
-> 在移轉至自助服務模 [型之前](#prerequisites) ，請參 [!DNL Twitter Tailored Audiences] 閱先決條件中的項目編號3。
+>The steps described below only apply if you have an existing integration with [!DNL Twitter Tailored Audiences], configured by an Audience Manager consultant or Customer Care.
+> See item number 3 in [Prerequisites](#prerequisites) before migrating your [!DNL Twitter Tailored Audiences] to the self-service model.
 
-請遵循下列步驟，將您的現 [!DNL Twitter Tailored Audiences] 有目的地移轉至自助服務模型。
+Follow the steps below to migrate your existing [!DNL Twitter Tailored Audiences] destination to the self-service model.
 
-1. 登入您的Audience manager帳戶，然後前往 **[!DNL Administration > Integrated Accounts]**。
-1. Click **[!DNL Add Account]**.
-1. 選擇 [!DNL Twitter Tailored Audiences] 並按一下 **[!DNL Confirm]** 以重定向到驗證頁。 ![整合平台](assets/dbd-integrated-platforms.png)
-1. 在您的帳戶進行驗證後，您會 [!DNL Twitter] 被重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下 **[!DNL Confirm]**。
-1. 前往 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Destinations]** 並按一下您需要設定的Twitter目的地。
-1. Click **[!UICONTROL Edit]**. 在區 **[!UICONTROL Basic Information]** 段中，按一 **[!UICONTROL Integrated Account]** 下下拉式功能表，並選取您在步驟4 [!DNL Twitter] 中已驗證的帳戶。
-1. **[!UICONTROL Save]** 目的地。
+1. Log in to your Audience Manager account and go to **[!DNL Administration > Integrated Accounts]**.
+2. Click **[!DNL Add Account]**.
+3. Select [!DNL Twitter Tailored Audiences] and click **[!DNL Confirm]** to be redirected to the authentication page. ![integrated-platforms](assets/dbd-integrated-platforms.png)
+4. Once you've authenticated with your [!DNL Twitter] account, you are redirected to Audience Manager where you should see your associated advertiser accounts. Select the advertiser account that you want to use and click **[!DNL Confirm]**.
+5. Go to **[!UICONTROL Audience Data]** > **[!UICONTROL Destinations]** and click the Twitter destination that you need to configure.
+6. Click **[!UICONTROL Edit]**. In the **[!UICONTROL Basic Information]** section, click the **[!UICONTROL Integrated Account]** drop-down menu and select the [!DNL Twitter] account that you have authenticated with at Step 4.
+7. **[!UICONTROL Save]** the destination.
 
-<!-- ## Validating the Migration to Self-Service Administration {#migration-validation}
+## Validating the Migration to Self-Service Administration {#migration-validation}
 
 The complete migration of existing [!DNL Twitter] integrations to self-service administration can take up to 7 days. Once the migration is complete, Audience Manager shows you a notification in the UI.
 
@@ -79,10 +79,10 @@ You will also see a new set of audiences in your [!DNL Twitter] account, with th
 
 ## 區段對應考量事項 {#segment-mapping-considerations}
 
-將對象區段對應至Twitter時，請確定符合下列區段命名需求：
+將對象區段對應至 [!UICONTROL Twitter]時，請務必符合下列區段命名需求：
 
 * 提供人類可讀的區段對應名稱。 我們建議您使用與Audience manager區段相同的名稱。
-* 請勿在區段和區段對應名稱中使用逗號。
+* 請勿在區段和區段映射中使用特殊字`,` 元( `%``:``;``@``/``=``?``$`Appring Names)。 如果您的Audience manager區段名稱包含這些字元，請先移除這些字元，再將區段對應至目 [!UICONTROL Twitter] 標。
 
 ### 範例
 
@@ -95,4 +95,5 @@ You will also see a new set of audiences in your [!DNL Twitter] account, with th
 
 ## 匹配率注意事項 {#match-rates-considerations}
 
-使用時， [!UICONTROL Twitter Tailored Audiences]目標頁 [!UICONTROL Segment Addressable Audience] 面的 [!UICONTROL Segment Match Rate] 和量度將不會顯示任何值。 這是正常行為，因為受眾比對以及此目的地的比對率是由Adobe而非Adobe處理 [!UICONTROL Twitter]和代管。
+* 使用時， [!UICONTROL Twitter Tailored Audiences]目標頁 [!UICONTROL Segment Addressable Audience] 面的 [!UICONTROL Segment Match Rate] 和量度將不會顯示任何值。 這是正常行為，因為受眾比對以及此目的地的比對率是由Adobe而非Adobe處理 [!UICONTROL Twitter]和代管。
+* 目前，Audience manager與Audience manager的整合不 [!UICONTROL Twitter Tailored Audiences] 支援歷史觀眾回填。 這表示只有區段對應至 *Twitter目的地* ，之後發生的區段資格才會即時 [!UICONTROL Twitter] 傳送至。
