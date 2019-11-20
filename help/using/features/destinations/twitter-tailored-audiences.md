@@ -5,7 +5,7 @@ seo-title: 將Twitter量身訂做的觀眾設定為自助服務裝置型目的�
 solution: Audience Manager
 title: 將Twitter量身訂做的觀眾設定為自助服務裝置型目的地
 translation-type: tm+mt
-source-git-commit: 4af2d7a4e2162f8d69273cf76aecb5f1ff00e7b6
+source-git-commit: 0f1ab99b648dd6e1eda5f2e5b6bd1f620c0331ee
 
 ---
 
