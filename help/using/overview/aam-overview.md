@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager概觀
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 translation-type: tm+mt
-source-git-commit: f87a6f6c79a01c23608e4f5be24d017894e1c541
+source-git-commit: 77b13fc37aa0a61b0740ff8c2694e11e2349ec12
 
 ---
 
@@ -21,12 +21,6 @@ Audience manager可協助您將受眾資料資產整合在一起，讓您輕鬆�
 
 Audience manager於2008年以Demdex的身分開始。 Adobe Systems於2011年收購該網站，隨後重新命名為Audience Manager。
 
-<!-- 
-
-c_history_and_background.xml
-
- -->
-
 ## History {#history}
 
 自2008年起，Audience Manager( [!UICONTROL Demdex]之前稱為)成為線上觀眾管理市場的先驅。 Audience Manager服務提供動態、多通道的線上資料策略。 我們的平台和服務廣獲各行各業的採用，從汽車(AutoTrader)到航空公司(American Airlines)，以及金融服務公司(American Express)。 Audience manager使用企業級技術來提供規模、可靠性、分析和效能，以協助您的企業線上上獲得成功。 Audience manager已與Adobe Experience cloud整合，協助您跨越數個數位可定址的通道，集中管理並對資料資產採取行動。
@@ -36,4 +30,3 @@ c_history_and_background.xml
 Audience manager可協助您管理資料管道。 我們的服務是一種催化劑，可將一般使用者和原始資料訊號轉換為實際受眾細分，以用於多通道行銷。 此外，Audience manager提供標籤管理和受眾分析的工具，同時滿足客戶和消費者的隱私和資料安全需求。
 
 ![](assets/am_overview_80.png)
-
