@@ -5,7 +5,7 @@ seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: 先決條件和注意事項
 translation-type: tm+mt
-source-git-commit: d70b77b082078d4122f8b902b089d8c4a3fb923a
+source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
 
 ---
 
@@ -77,7 +77,7 @@ Adobe Experience cloud可讓您選擇透過Experience Cloud ID服務散列客戶
 
 在註冊之前，請 [!DNL People-Based Destinations]務必先取得客戶的同意，再將其資訊用於廣告用途。
 
-如果您的客戶想要退出廣告宣傳，請參閱退出管理 [](../../overview/data-security-and-privacy/opt-out-management.md) ，以取得如何阻止Audience manager進一步收集資料的詳細資訊。
+如果您的客戶想要退出廣告宣傳，請參閱退出管理 [](../../overview/data-security-and-privacy/data-privacy-requests.md) ，以取得如何阻止Audience manager進一步收集資料的詳細資訊。
 
 ## 強制執行第一方資料啟動 {#enforcing-first-party-activation}
 
