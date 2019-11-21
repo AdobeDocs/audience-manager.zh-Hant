@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 入站資料傳輸的ID同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
 
 ---
 
@@ -61,11 +61,11 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code> gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr_consent</code>。</p></td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code> gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr_consent</code>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/aam-gdpr/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr</code>。</p> </td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
