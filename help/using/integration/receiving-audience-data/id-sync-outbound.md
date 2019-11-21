@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 出站資料傳輸的ID同步
 uuid: f3849be8-1094-47db-9296-7482f020af18
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
 
 ---
 
@@ -60,7 +60,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
     </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p><code>gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。</p><p><b>注意:</b> <ul><li>與啟 <code>gdpr</code> 動合 <code>gdpr_consent</code> 作夥伴的ID同步URL會逐漸推出和參數。 請參閱Audience Manager Plug-in for IAB TCF中支援IAB TCF <a href="../../overview/aam-gdpr/aam-iab-plugin.md#aam-activation-partners">的啟動合作夥伴。</a></li><li>此參數只能與 <code>gdpr_consent.</code></li></ul></p></td>
+   <td colname="col2"> <p><code>gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。</p><p><b>注意:</b> <ul><li>與啟 <code>gdpr</code> 動合 <code>gdpr_consent</code> 作夥伴的ID同步URL會逐漸推出和參數。 請參閱Audience Manager Plug-in for IAB TCF中支援IAB TCF <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners">的啟動合作夥伴。</a></li><li>此參數只能與 <code>gdpr_consent.</code></li></ul></p></td>
   </tr> 
     </tr> 
   <tr valign="top"> 
