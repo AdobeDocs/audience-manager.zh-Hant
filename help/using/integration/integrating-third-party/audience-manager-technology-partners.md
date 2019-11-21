@@ -2,11 +2,11 @@
 description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
 seo-description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
 seo-title: Adobe Audience manager技術合作夥伴
-keywords: 啟動；啟動合作夥伴、目的地和目的地
+keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience manager技術合作夥伴
 translation-type: tm+mt
-source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
+source-git-commit: fab074926de1ff5e42092b9f7f8b0d5585fe2edc
 
 ---
 
@@ -18,8 +18,8 @@ source-git-commit: f67ab906bfbd9900941649c4d9045ea94f1e7f4c
 <br> 
 
 * **更新** =顯示此啟動合作夥伴有更新的最後日期。
-* **取消區段** =取消區段會說明取消區段中裝置設定檔的資格和移除程式。 從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求讀取描述檔合併規則和裝置取消劃分程式以及具有取消劃分功能的 [](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) Audience manager合作夥伴中，也會使用取消劃分功能 [](/help/using/overview/aam-gdpr/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience manager會將取消區段資訊傳送至以下標示為「是」的目標。
-* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TCF同意字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/aam-gdpr/aam-iab-plugin.md#aam-activation-partners).
+* **取消區段** =取消區段會說明取消區段中裝置設定檔的資格和移除程式。 從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求讀取描述檔合併規則和裝置取消劃分程式以及具有取消劃分功能的 [](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) Audience manager合作夥伴中，也會使用取消劃分功能 [](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience manager會將取消區段資訊傳送至以下標示為「是」的目標。
+* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TCF同意字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
 * **ICDS** =此欄列出了支援立即跨設備抑制的合作夥伴。 Read [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
 * **行動裝置ID** =此欄列出可從Audience manager接收行動裝置ID的合作夥伴。
 
