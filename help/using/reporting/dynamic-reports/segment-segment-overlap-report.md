@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段至區段重疊報表
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
 
 ---
 
@@ -58,14 +58,16 @@ r_s2s_data_pop.xml
 
 | 量度 | 說明 |
 |---|---|
-| **[!UICONTROL Segment ID1]** | 顯示在報表結果中之區段的唯一數值ID。 顯示為區段的列ID。 |
-| **[!UICONTROL Segment ID2]** | 執行報表時，您所選取區段的唯一數值ID。 顯示為區段的欄ID。 |
-| **[!UICONTROL Segment Name1]** | 顯示在報表結果列中的區段名稱。 |
-| **[!UICONTROL Segment Name2]** | 執行報表時所選區段的名稱。 顯示在報告結果列中。 |
+| **[!UICONTROL Base Segment ID]** | 顯示在報表結果中之區段的唯一數值ID。 顯示為區段的列ID。 |
+| **[!UICONTROL Base Segment Name]** | 顯示在報表結果列中的區段名稱。 |
+| **[!UICONTROL Overlapping Segment ID]** | 執行報表時，您所選取區段的唯一數值ID。 顯示為區段的欄ID。 |
+| **[!UICONTROL Overlapping Segment Name]** | 執行報表時所選區段的名稱。 顯示在報告結果列中。 |
+| **[!UICONTROL Base Segment Uniques]** | 基本區段中的獨特訪客數。 |
+| **[!UICONTROL Base Segment Uniques]** | 重疊區段中的獨特訪客數。 |
+| **[!UICONTROL Overlapping Uniques]** | 比較區段之間共用的獨特訪客數。 |
 | **[!UICONTROL Overlap %]** | 若要取得重疊百分比，Audience manager使用下列公式：重疊唯一值/（基本段唯一值+重疊段唯一值——重疊唯一值） |
-| **[!UICONTROL Overlap Uniques]** | 比較區段之間共用的獨特訪客數。 |
-| **[!UICONTROL Segment Uniques1]** | 區段1中的獨特訪客數。 |
-| **[!UICONTROL Segment Uniques2]** | 區段2中的獨特訪客數。 |
+
+
 
 >[!MORELIKETHIS]
 >
