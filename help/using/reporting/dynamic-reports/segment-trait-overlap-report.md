@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段至特徵重疊報表
 uuid: a6b3dd21-332e-449f-aa01-2beb47f1794e
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
 
 ---
 
@@ -134,11 +134,11 @@ r_s2t_data_pop.xml
    <td colname="col2"> 區段的唯一數值ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 資料提供者名稱</span></b> </td> 
-   <td colname="col2"> 區段擁有者的名稱。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 特徵資料來源 </span></b> </td> 
+   <td colname="col2"> 特徵擁有者的名稱。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 資料提供者類型</span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> 資料來源類型</span></b> </td> 
    <td colname="col2">定義特徵所屬的提供者類型。 可以是： 
     <ul id="ul_0477C04A33FD4F5D998B98984E6554D3"> 
      <li id="li_50FCA48EDB5843AB8FB6C34ED2C0067D">第一方（您自己的特徵）。 </li> 
@@ -146,12 +146,12 @@ r_s2t_data_pop.xml
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> SID</span></b> </td> 
-   <td colname="col2"> 區段的唯一數值ID。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 特徵ID</span></b> </td> 
+   <td colname="col2"> 特徵的唯一數值ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> SID名稱</span></b> </td> 
-   <td colname="col2"> 區段的名稱。 </td> 
+   <td colname="col1"><b><span class="wintitle"> 特徵名稱</span></b> </td> 
+   <td colname="col2"> 特徵的名稱。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle"> 特徵獨特值重疊%</span></b> </td> 
