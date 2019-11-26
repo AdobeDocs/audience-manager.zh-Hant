@@ -6,14 +6,14 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 8478a28cd1b18d878d6938d77ee4f975deb524ef
+source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
 
 ---
 
 
 # DCS 錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
-由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!UICONTROL DCS]出而產生的錯誤碼和訊息。
+由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!UICONTROL DCS]出所產生的錯誤碼和訊息。
 
 In the tables below, *italics* represents a variable placeholder.
 
@@ -80,7 +80,7 @@ In the tables below, *italics* represents a variable placeholder.
     <tr> 
    <td colname="col1"> <p>109</p> </td> 
    <td colname="col2"> <p>合作伙 <code>HTTP referer</code> 伴不允許參考者 <code>Partner ID</code> </p> </td> 
-   <td colname="col3"> <p>呼叫上的[!DNL HTTP referer]標頭不允許呼叫上的夥伴ID。 檢查[!DNL HTTP referer]標題是否正確。</p> </td>
+   <td colname="col3"> <p>呼 <code>HTTP referer</code> 叫上的夥伴ID不允許標題。 檢查標題 <code>HTTP referer</code> 是否正確。</p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>111 </p> </td> 
