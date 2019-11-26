@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 即時出站資料傳輸
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
 translation-type: tm+mt
-source-git-commit: 4e84682dea46f5b6c76464c66199f7a468bec334
+source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: 4e84682dea46f5b6c76464c66199f7a468bec334
 
 ## 參數
 
-The following table defines the elements in the [!DNL JSON] data file that you send to the destination.
+下表定義您傳送至目 [!DNL JSON] 標的資料檔案中的元素。
 
 <table id="table_68475F9D01ED4A44B5909234114AEDE2"> 
  <thead> 
@@ -62,32 +62,32 @@ The following table defines the elements in the [!DNL JSON] data file that you s
   <tr valign="top"> 
    <td colname="col1"><code><i>User_DPID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>An ID that indicates the type of device IDs contained within the message, in the User.DataPartner_UUID property. </p> 
+   <td colname="col3"> <p>User.DataPartner_UUID屬性中指示消息中包含的設備ID類型的ID。 </p> 
     <ul id="ul_159306B0CF304DE0B9A9836D41263E70"> 
-     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android IDs (GAID):  20914<code></code> </li> 
-     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS IDs (IDFA):  20915<code></code> </li>
-     <li>Web/Cookie IDs: varies by destination platform</li>
+     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GAID): <code> 20914</code> </li> 
+     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA): <code> 20915</code> </li>
+     <li>網頁/Cookie ID:因目的地平台而異</li>
     </ul> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Client_ID</i></code> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>Represents the target account in the destination platform. This ID originates from the destination platform.</p> </td> 
+   <td colname="col3"> <p>代表目標平台中的目標帳戶。 此ID源自目標平台。</p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>AAM_Destination_ID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>The ID of the Audience Manager “destination” object. This ID originates from Audience Manager.</p> </td> 
+   <td colname="col3"> <p>Audience Manager「目標」物件的ID。 此ID源自Audience Manager。</p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User_count</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>Total number of users in the  POST request.<code></code> </p> </td> 
+   <td colname="col3"> <p>請求中的使用者總 <code> POST</code> 數。 </p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"><code><i>使用者</i></code> </td> 
+   <td colname="col1"><code><i>Users</i></code> </td> 
    <td colname="col2"> <p>陣列 </p> </td> 
-   <td colname="col3"> <p>An array of user objects. By default, each message will contain between 1 and 10 users, to keep the message size optimal. </p> </td> 
+   <td colname="col3"> <p>一組用戶對象。 依預設，每則訊息會包含1到10位使用者，以保持訊息大小最佳。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
@@ -102,15 +102,15 @@ The following table defines the elements in the [!DNL JSON] data file that you s
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> 陣列 </td> 
-   <td colname="col3"> 我 <span class="keyword"> 們看過此裝置的Audience Manager</span> 地區ID。 例如，如果裝置在巴黎（歐洲）有某些活動，地區ID會是 <code> 6</code>。 請參閱 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 地區 ID、位置與主機名稱</a>。 </td> 
+   <td colname="col3"> 我 <span class="keyword"> 們看過此裝置的Audience Manager</span> 地區ID。 例如，如果裝置在巴黎（歐洲）有某些活動，地區ID就會是 <code> 6</code>。 請參閱 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 地區 ID、位置與主機名稱</a>。 </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"><code><i>區段</i></code> </td> 
+   <td colname="col1"><code><i>Segments</i></code> </td> 
    <td colname="col2"> <p>陣列 </p> </td> 
    <td colname="col3"> <p>區段物件的陣列。 對於即時訊息，陣列包含使用者所屬的所有區段。 對於批次消息，陣列只包含自上次批次以來的段更改。</p> </td> 
   </tr> 
   <tr valign="top"> 
-   <td colname="col1"><code><i>Segment.Segment_ID</i></code> </td> 
+   <td colname="col1"><code><i>Segmnent.Segment_ID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
    <td colname="col3"> <p>區段的識別碼。 在大多數情況下，這是Audience manager產生的區段ID（整數）。 在某些情況下，如果目標平台允許，客戶可以在Audience Manager UI（開啟文字欄位）中定義區段識別碼，然後會反映在此屬性中。 </p> </td> 
   </tr> 
@@ -126,24 +126,24 @@ The following table defines the elements in the [!DNL JSON] data file that you s
      <li id="li_8352B919A87242E68716FB9EC0443407">根據區段規則從區段移除。 </li> 
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根據區段的上線時間間隔， <a href="../../../features/traits/segment-ttl-explained.md"> 從區段中移除</a>。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果最近120天未看到非活動狀態，則移至非活動狀態。 </li>
-     <li>因隱私權變更要求而移除(即[!DNL GDPR])</li>
-    </ul> <p>當使用者解除區隔時，所有同步至 <span class="keyword"> Audience Manager</span> ID的合作夥伴ID都會收到 <code></code> 「狀態」:「0」旗標。 </p> </td> 
+     <li>因隱私權變更要求而移除(例如 <span class="keyword"> GDPR</span>)</li>
+    </ul> <p>同步至 <span class="keyword"> Audience Manager</span> ID的所有合作夥伴ID，在取消區隔使 <code> "Status":"0"</code> 用者時都會收到旗標。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 
    <td colname="col2"> <p>DateTime </p> </td> 
-   <td colname="col3"> <p>The time when the user-segment qualification was most recently verified.</p> </td> 
+   <td colname="col3"> <p>使用者區段資格最近驗證的時間。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 安全性
 
-You can secure your real-time outbound data transfer process by signing HTTP requests using private keys or by having  authenticate through the OAuth 2.0 protocol.[](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)[!DNL Audience Manager][](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
+您可以使用私密金鑰簽署 [HTTP請求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) ，或透過 [!DNL Audience Manager][](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md) OAuth 2.0通訊協定進行驗證，以確保即時傳出資料傳輸程式的安全。
 
 ## 請求
 
-A real-time request can look similar to the following:
+即時請求看起來可類似下列：
 
 ```js
 {
