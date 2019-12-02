@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 對象最佳化報告的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 translation-type: tm+mt
-source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
+source-git-commit: 342a511b414ac682d8eb3c6547d725431d8828d6
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
 
 根據這些要求，請根據資料檔案的內容命名檔案，如下所示：
 
-* 印象資料： <pre>impressions_<i>yyyymmdd<i>.gz</code></pre>
+* 印象資料： <pre>impressions_<i>yyyymmdd</i>.gz</code></pre>
 * 按一下資料： <pre>clicks_<i>yyyymmdd</i>.gz</code></pre>
 * 轉換資料： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
 
@@ -67,7 +67,7 @@ source-git-commit: b46fc71ca62c4426732bd6d396637d02206b7c97
  <tbody> 
   <tr> 
    <td colname="col1"> <p>時間戳記 </p> </td> 
-   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用格 <code> yyyy-dd-mm hh:mm:ss</code> 式。 </p> </td> 
+   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用格 <code> yyyy-MM-dd HH:mm:ss</code> 式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用者ID </p> </td> 
