@@ -1,13 +1,13 @@
 ---
 description: 可操作的記錄檔可讓您從廣告伺服器記錄檔擷取媒體訊號，以在Audience Manager中建立特徵。 從廣告伺服器擷取印象、點按和轉換為特徵，毋需附加像素。
-keywords: 可操作日誌， alf, ALF
+keywords: actionable logs, alf, ALF
 seo-description: 可操作的記錄檔可讓您從廣告伺服器記錄檔擷取媒體訊號，以在Audience Manager中建立特徵。 從廣告伺服器擷取印象、點按和轉換為特徵，毋需使用附加像素。
 seo-title: 可操作的記錄檔
 solution: Audience Manager
 title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 1c14d2a6b5f1d092f4323d4471425e11f7860f25
 
 ---
 
@@ -160,7 +160,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 ### 來自一般廣告伺服器記錄檔的可操作訊號 {#generic-logs-signals}
 
-首先，您必須將廣告伺服器記錄檔拖放到我們的Amazon S3儲存貯體中。 若要完成此作業，請 [閱讀「對象最佳化報表的資料檔案」和「可操作的記錄檔](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) 」 *並連絡您的*[!DNL Audience Manager] 顧問。 該表列出了通用日誌檔案中可操作的信號：
+首先，您必須將廣告伺服器登入我們的Amazon S3儲存貯體。 若要完成此作業，請 [閱讀「對象最佳化報表的資料檔案」和「可操作的記錄檔](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md) 」 *並連絡您的*[!DNL Audience Manager] 顧問。 該表列出了通用日誌檔案中可操作的信號：
 
 <table id="table_A5A2A10D471C4C9D8DCD88F9C017040C"> 
  <thead> 
@@ -186,8 +186,8 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
   <tr> 
    <td colname="col1"> <p> <code>Time-Stamp</code> </p> </td> 
    <td colname="col2"> <p> <code> d_time</code> </p> </td> 
-   <td colname="col3"> <p> 曝光、點按或轉換事件的UTC日期和時間。 使用 <code>yyyy-dd-mm hh:mm:ss format.</code> </p></td> 
-   <td colname="col4"> <p> <code>2019-30-08 11:23:00</code> </p> </td> 
+   <td colname="col3"> <p> 曝光、點按或轉換事件的UTC日期和時間。 使用格 <code>yyyy-MM-dd HH:mm:ss</code> 式。 </p></td> 
+   <td colname="col4"> <p> <code>2019-03-26 11:23:10</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Advertiser-ID</code> </p> </td> 
