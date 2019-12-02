@@ -4,9 +4,9 @@ seo-description: 此程式會逐步帶您完成在Audience lab中建立、編輯
 seo-title: 管理測試群組
 solution: Audience Manager
 title: 管理測試群組
-uuid: 2faddeb-7574-4853-8c52-c58456582c62
+uuid: 2fadddeb-7574-4853-8c52-c58456582c62
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 96b353d4b35a72ea087f7c82910e9272bc457bdc
 
 ---
 
@@ -59,6 +59,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    * 在轉換特徵視窗中輸入以新增轉換特徵。 這是必 **備步驟** ，除非您至少新增一個轉換特徵，否則無法繼續下一個步驟。
    * 如果您願意，最多可以新增5個轉換特徵。
    * 當您選取已用於其他測試群組的轉換特徵時，將會顯示警報。
+   * 請注意，Audience manager不支援將資料夾特 [徵用作](/help/using/features/traits/about-folder-traits.md) 轉換特徵。 選取資料夾特徵作為轉換特徵，會導致測試中顯示0個匯總和趨勢報表。
 
 1. **[!UICONTROL Choose Destinations & Dates]**
 
