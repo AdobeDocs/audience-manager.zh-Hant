@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
+source-git-commit: 8d31bc79fd221cffd33969278eade93a4b32a4d5
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
 點按追蹤呼叫需要下列參數：
 
 * `d_event=click`:將事件呼叫識別為點按事件的金鑰值配對。
-* `d_rd=redirect URL`:包含編碼重新導向的金鑰值對 [!DNL URL]。
+* `d_rd=redirect URL`:包含雙重編碼重新導向的索引鍵值對 [!DNL URL]。 如果您使用線上編碼工具，請在編碼器中執行字串，然後重新編碼結果，以便重新導向正常運作。
 
 此外，呼叫可包含可用於特徵限定或為其他報表提供資料和中繼資料的鍵值配對。
 
@@ -150,8 +150,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ```
 https://client.demdex.net/event?d_event=click&d_creative=1235&d_src=203&d_campaign=4709&d_adgroup=3408&d_placement=1001&
-d_rd=http%3A%2F%2Fadobe.com%2Fcallback%3Fcreative%3D%25d_creative%25%26campaign%3D%25d_campaign%25%26adgroup%3D%25
-d_adgroup%25%26d_placement%3D%25placement%25%26src%3D%25d_src%25
+d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creative%2525%2526campaign%253D%2525d_campaign%2525%2526adgroup%253D%2525%0Ad_adgroup%2525%2526d_placement%253D%2525placement%2525%2526src%253D%2525d_src%2525
 ```
 
 ## 回應
