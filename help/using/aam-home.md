@@ -26,7 +26,7 @@ source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
     <li><a href="reference/bulk-management-tools/bulk-management-intro.md">大量管理工具更新</a></li>
      <li><a href="overview/data-security-and-privacy/data-security.md#hsts">HTTP Strict-Transport-Security</a></li>
      <li><a href="features/destinations/people-based-destinations-overview.md">以人為本的目的地</a> </li>
-     </ul> </p> <p>另請參閱2019年 <a href="docs-updates/docs-2019.md"> 檔案更新</a>。 </p> 
+     </ul> </p> <p>另請參閱2019年 <a href="../docs-updates/docs-2019.md"> 檔案更新</a>。 </p> 
      <p>如果您是Audience Manager的新手，請參閱我們的 <a href="reference/aam-glossary.md"> 辭彙</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p>
      <br> 
      <p> <b>協作文件</b> </p>
