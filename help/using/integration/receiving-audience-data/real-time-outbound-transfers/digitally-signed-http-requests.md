@@ -1,25 +1,25 @@
 ---
-description: Audience manager需要以數位方式簽署HTTP伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP要求。
-seo-description: Audience manager需要以數位方式簽署HTTP伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP要求。
-seo-title: 數位簽署的HTTP要求
+description: Audience manager要求HTTP(S)伺服器對伺服器要求必須進行數位簽署，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP要求。
+seo-description: Audience manager要求HTTP(S)伺服器對伺服器要求必須進行數位簽署，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP(S)要求。
+seo-title: 數位簽署的HTTP(S)要求
 solution: Audience Manager
-title: 數位簽署的HTTP要求
+title: 數位簽署的HTTP(S)要求
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 translation-type: tm+mt
-source-git-commit: 9bf1f3771b6a4b9bb9a52149e812b37d1c8e27f8
+source-git-commit: e7bb837a9a4a4e41ca5c73a192f68a4caa30335d
 
 ---
 
 
-# 數位簽署的 `HTTP` 請求 {#digitally-signed-http-requests}
+# 數位簽署的 `HTTP(S)` 請求 {#digitally-signed-http-requests}
 
-Audience manager需要 `HTTP` 以數位方式簽署伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金鑰 `HTTP` 簽署要求。
+Audience manager需要 `HTTP(S)` 以數位方式簽署伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金 `HTTP(S)` 鑰簽署要求。
 
 ## 概述 {#overview}
 
 <!-- digitally_signed_http_requests.xml -->
 
-使用您提供的私密金鑰並與共用 [!DNL Audience Manager]，我們可以數位簽署 `HTTP` IRIS [和HTTP伺服器](../../../reference/system-components/components-data-action.md#iris) 之間傳送的請求。 這可確保：
+使用您提供的私密金鑰並與共 [!DNL Audience Manager]用，我們可以數位簽署 `HTTP(S)`[IRIS](../../../reference/system-components/components-data-action.md#iris) 和HTTP(S)伺服器之間傳送的請求。 這可確保：
 
 * **真實性**:只有具有私密金鑰的傳送者([!UICONTROL IRIS])才能傳送有 `HTTP(S)` 效訊息給合作夥伴。
 * **消息完整性**:使用這種方法，即使 `HTTP`是這樣，您也能免受中間攻擊中的人的攻擊，而資訊會被扭曲。
@@ -28,10 +28,10 @@ Audience manager需要 `HTTP` 以數位方式簽署伺服器對伺服器要求�
 
 ## 您需要提供的資訊 {#info-to-provide}
 
-若為即 `HTTP` 時伺服器對伺服器目標，請連絡您的顧問並 [!DNL Audience Manager] 指定：
+若為即 `HTTP(S)` 時伺服器對伺服器目標，請連絡您的顧問並 [!DNL Audience Manager] 指定：
 
 * 用來簽署請求的金鑰。
-* 將保存生 `HTTP` 成簽名的標題的名稱（下方標題中的X-Signature）。
+* 將保存生 `HTTP(S)` 成簽名的標題的名稱（下方標題中的X-Signature）。
 * 可選：用於簽名的雜湊類型(md5、sha1、sha256)。
 
 ```
@@ -47,8 +47,8 @@ POST message content
 
 ## How it works {#how-it-works}
 
-1. [!UICONTROL IRIS] 建立要 `HTTP` 發送給合作夥伴的消息。
-1. [!UICONTROL IRIS] 根據該訊息和該合作伙 `HTTP` 伴所傳送的私密金鑰建立簽名。
+1. [!UICONTROL IRIS] 建立要 `HTTP(S)` 發送給合作夥伴的消息。
+1. [!UICONTROL IRIS] 根據該訊息和該合作伙 `HTTP(S)` 伴所傳送的私密金鑰建立簽名。
 1. [!UICONTROL IRIS] 將請求 `HTTP(S)` 發送給合作夥伴。 此消息包含簽名和實際消息，如上例所示。
 1. 合作夥伴伺服器會接收 `HTTP(S)` 請求。 它讀取消息正文和從中接收的簽名 [!UICONTROL IRIS]。
 1. 合作夥伴伺服器根據收到的消息正文和私鑰重新計算簽名。 請參 [閱下方的How to calculate the signature](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md#calculate-signature) section，瞭解如何達成此目標。
@@ -63,8 +63,8 @@ POST message content
 
 ```
 // Message to be signed.
-// For GET type HTTP destinations, the message used for signing will be the REQUEST_PATH + QUERY_STRING
-// For POST type HTTP destinations, the message used for signing will be the REQUEST_BODY.
+// For GET type HTTP(S) destinations, the message used for signing will be the REQUEST_PATH + QUERY_STRING
+// For POST type HTTP(S) destinations, the message used for signing will be the REQUEST_BODY.
 // String getData = "/from-aam-s2s?sids=1,2,3";
 String postData = "POST message content";
 // Algorithm used. Currently supported: HmacSHA1, HmacSHA256, HmacMD5.
@@ -95,6 +95,6 @@ String signature = Base64.encodeBase64String(result).trim();
 
 ## 用於簽署的資料 {#data-signing}
 
-對於 `GET` 類型目標，用於簽署的訊息將是 *REQUEST_PATH + QUERY STRING* (例如 */from-aam-s2s?sids=1,2,3*)。 IRIS不會考慮主機名稱或標題 `HTTP` -這些名稱可沿路徑修改／設定錯誤，或報告錯誤。
+對於 `GET` 類型目標，用於簽署的訊息將是 *REQUEST_PATH + QUERY STRING* (例如 */from-aam-s2s?sids=1,2,3*)。 IRIS不會考慮主機名稱或標題 `HTTP(S)` -這些名稱可沿路徑修改／設定錯誤，或報告錯誤。
 
 對於 `POST` 類型目標，用於簽署的訊息是 *REQUEST BODY*。 同樣地，標題或其他請求參數也會被忽略。
