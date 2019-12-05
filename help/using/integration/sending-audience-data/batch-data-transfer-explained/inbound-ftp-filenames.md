@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 傳入資料檔案的FTP名稱和檔案大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 881ccf512e9776948e4507e321e972dd2079e21a
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 >[!WARNING]
 >
->不再支援傳入資料檔案的FTP傳輸。 請使用Amazon S3來載入離線資料。 如需詳 [細資訊，請參閱Amazon S3傳入資料檔案的名稱和檔案大小需求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
+>我們正逐步淘汰對FTP組態的支援。 雖然現有FTP整合仍支援傳入資料檔案擷取，但強烈建議使用Amazon S3將離線資料載入新整合的線上。 如需詳 [細資訊，請參閱Amazon S3傳入資料檔案的名稱和檔案大小需求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>10位數的UTC UNIX時間戳記，以秒為單位。 時間戳記有助於使每個檔案名稱都是唯一的。 </p> 
     <draft-comment> 
-     <p> <p>注意： Audience manager在處理傳入檔案時不會使用時間戳記。 檔案名稱中的時間戳記在Audience manager中已過時，但仍需使用，才能與後向相容。 </p> </p> 
+     <p> <p>注意： Audience manager在處理傳入檔案時不會使用時間戳記。 檔案名稱中的時間戳記已在Audience manager中過時，但仍需使用，才能向後相容。 </p> </p> 
     </draft-comment> </td> 
   </tr> 
   <tr> 
