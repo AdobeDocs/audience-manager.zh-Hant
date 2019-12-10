@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量管理工具的疑難排解提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 translation-type: tm+mt
-source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
+source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
 * 刪除已更新的所有行。
 * 再次嘗試大量請求。
 
-## 長時間延遲或無反應行為 {#delays-behavior}
+## 驗證錯誤、長時間延遲或無響應行為 {#delays-behavior}
 
 下表列出您在使用工作表進行大量請求時可能遇到的一些常見問題。 嘗試使用建議的解決方案來修正這些問題。 如果建議的解決方案無法解決問題，您應儲存您的工作、重新啟動電腦，然後再次嘗試要求，而不需啟動或使用其他應用程式。
 
@@ -46,6 +46,12 @@ source-git-commit: 6f13cefb2f56bbc2e0bfff9a6d31925001403c50
   </tr> 
  </thead>
  <tbody> 
+  <tr> 
+   <td colname="col1"> <b>驗證錯誤</b> </td> 
+   <td colname="col2"> 
+    <b>更新至最新版Microsoft Excel</b>:當新版Microsoft excel發行且您使用舊版時，「批量管理」工作表中可能會發生驗證錯誤。 更新至最新版Microsoft Excel以解決驗證錯誤。
+</td> 
+  </tr> 
   <tr> 
    <td colname="col1"> <b>長時間延遲</b> </td> 
    <td colname="col2"> 
