@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 最佳頻率報表
 uuid: 50459ce9-39ac-4401-93dd-7526937fc742
 translation-type: tm+mt
-source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
+source-git-commit: e27ce2f607cadd7318a171359a5ae4daa071c486
 
 ---
 
@@ -14,6 +14,8 @@ source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
 # 最佳頻率報表{#optimal-frequency-report}
 
 「最佳頻率」報表可協助您在提供的曝光次數與轉換次數之間找出最佳平衡。 它可讓您調整想要顯示的曝光數，然後開始看到遞減的回報。
+
+報表有30天回顧間隔(自選擇器中選擇的日期 [!UICONTROL Date Through] 起)。
 
 轉換量通常會隨著曝光頻率區間的增加而減少。 較少的使用者會看到較多印象。 這表示這些較高頻率的區間轉換率較低。
 
@@ -23,5 +25,4 @@ source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
 
 ## 範例報表
 
-![](assets/optimal-frequency.png)
-
+![最優頻率](assets/optimal-frequency.png)
