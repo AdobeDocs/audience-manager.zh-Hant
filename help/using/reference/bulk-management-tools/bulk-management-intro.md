@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 批量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: 963d765845dae6abe107be04d5aae2c49e7fb575
+source-git-commit: c9dfddf728045bf2cbc01d5467a64ae95b449664
 
 ---
 
@@ -32,15 +32,15 @@ c_bulk_start.xml
 
 ## 下載 {#download}
 
-請在此處下載最新的 **[工作表](assets/BAAAM_V2_20191015.xlsm)**。
+請在此處下載最新的 **[工作表](assets/BAAAM_V2_20191205.xlsm)**。
 
 ## 必備條件 {#prereqs}
 
 若要使用 [!DNL Bulk Management Tools]，您需要下列項目：
 
 * 您的登 [!DNL Experience Cloud] 入資訊。 身為客戶，您應已擁有這些認證。
-* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20191015.xlsm) ，取得最新版本。
-* 在或64位 [!DNL macOS] 元上執行Microsoft Excel [!DNL Microsoft Windows]。
+* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20191205.xlsm) ，取得最新版本。
+* 在或64位 [!DNL macOS] 元上執行Microsoft Excel [!DNL Microsoft Windows]。 我們建議您使用最新版的Microsoft Excel。
 * 開啟工作表時，必須 **啟用宏** , [!DNL Bulk Management Tools] 才能使用。
 
 ## 驗證需求和選項 {#auth-reqs}
