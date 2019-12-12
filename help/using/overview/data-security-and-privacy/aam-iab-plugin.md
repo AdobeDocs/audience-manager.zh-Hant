@@ -5,7 +5,7 @@ seo-title: 適用 IAB TCF 的 Audience Manager 增效模組
 solution: Audience Manager
 title: 適用 IAB TCF 的 Audience Manager 增效模組
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -40,7 +40,7 @@ IAB TCF的Audience Manager外掛程式運用 [Opt-in功能](https://marketing.ad
 1. 您必須使用Experience Cloud ID服務(ECID)4.1版或更新版本。 [下載我們](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 最新的ECID版本。
 1. 您必須使用Audience Manager資料整合庫(DIL)9.0版或更新版本，可從此處 [下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)。 閱讀Audience manager文 [件中的DIL相關資訊](../..//dil/dil-overview.md)。
 1. 或者，如果您使用伺服器端轉送(SSF)將資料匯入Audience Manager，則必須升級至最新版的AppMeasurement。 使用Analytics代碼管理 [器下載AppMeasurement](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html)。
-1. 您必須使用支援IAB且已向IAB TCF註冊的「同意管理平台」(CMP)，不論是商業版或您自己的版本。 請參見在IAB框架 [中註冊的CMP的清單](https://advertisingconsent.eu/cmp-list/)。
+1. 您必須使用支援IAB TCF且已在IAB TCF註冊的「同意管理平台」(CMP)，不論是商業版或您自己的。 請參見在IAB框架 [中註冊的CMP的清單](https://advertisingconsent.eu/cmp-list/)。
 
 ## 建議及實施方式 {#recommendations}
 
