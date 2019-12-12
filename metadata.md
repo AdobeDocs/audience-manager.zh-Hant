@@ -1,5 +1,6 @@
 ---
 cloud: experience-cloud
+solution: Audience Manager
 solution-title: 學習與支援
 solution-hub-url: https://helpx.adobe.com/support/audience-manager.html
 solution-image: assets/aam-icon-24.png
@@ -10,7 +11,7 @@ tutorials-url: https://docs.adobe.com/content/help/en/audience-manager-learn/tut
 git-repo: https://github.com/AdobeDocs/audience-manager.en
 index: y
 translation-type: tm+mt
-source-git-commit: aae87606a38948f221b1efea2ab224218061847a
+source-git-commit: f5c8d39aaf18fd513d85d17c3aa34c5d57e69885
 
 ---
 
