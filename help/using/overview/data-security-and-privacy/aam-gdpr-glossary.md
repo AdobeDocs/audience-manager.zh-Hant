@@ -6,7 +6,7 @@ solution: Audience Manager
 title: GDPR辭彙表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -31,7 +31,7 @@ GDPR於2018年5月25日生效，其主要目標是讓歐盟（資料主體）的
 
  
 
-**** 資料處理器：「處理者」是「...法人。.代表控制者處理個人資料」。 在Audience manager中，Adobe在執行服務時，會代表掌控者就其處理的任何個人資料，充當「資料處理者」。 Adobe僅會根據資料掌控者的指示（如我們與客戶的協定或透過Audience manager中採取的動作所載）處理個人資料。
+**** 資料處理器：「處理者」是「...法人。.代表控制者處理個人資料」。 在Audience manager中，Adobe在執行服務時，會代表掌控者，透過Audience manager代表其處理之任何個人資料，充當「資料處理者」。 Adobe僅會根據資料掌控者的指示（如我們與客戶的協定或透過Audience manager中採取的動作所載）處理個人資料。
 
  
 
@@ -39,7 +39,7 @@ GDPR於2018年5月25日生效，其主要目標是讓歐盟（資料主體）的
 
  
 
-**** 同意：「同意」系指「他／她以聲明或明確肯定行動自由表示、具體、知情且明確表示資料主體意願的任何指示，表示同意處理與他／她有關的個人資料」。 同意是資料掌控者的責任，而非透過Audience manager的Adobe。
+**** 同意：「同意」系指「他／她以聲明或明確肯定行動自由表示、具體、知情且明確表示資料主體意願的任何指示，表示同意處理與他／她有關的個人資料」。 同意是資料掌控者的責任，而非Adobe（透過Audience Manager）。
 
  
 
