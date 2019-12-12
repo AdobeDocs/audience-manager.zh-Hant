@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 資料隱私權要求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -49,16 +49,16 @@ source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
 
 若要查看有效檔 [!DNL JSON] 案的外觀，您可 [以下載範例JSON](../data-security-and-privacy/assets/access_request.json)。
 
-我們瞭解您承諾在接收後30天內履行您的資料隱私權客戶要求。 因此，我們會盡快處理您的資料刪除要求。
+Adobe瞭解您承諾在30天後，遵守您的資料隱私權客戶要求。 因此，Adobe承諾會盡快處理您的資料刪除要求。
 
-為回應資料刪除請求，我們刪除與請求中包含之Audience Manager識別碼相關的特徵和區段。 此外，Audience manager會永久退出進一步資料收集，並移除個別ID對應，此時資料主體的個別Audience manager識別碼。
+回應您的消費者資料刪除請求，Audience manager會刪除與請求中包含的Audience manager識別碼相關的特徵和區段。 此外，個人的Audience manager識別碼已選擇退出Audience manager進一步收集資料，且將移除個別ID對應。
 
 當您在資料隱私權要求中傳送宣告的ID(例如跨裝置 [!DNL CRM] ID或Cookie ID)時，Audience manager會對所有連結的裝置執行必要的刪除（每個宣告的ID最多100個裝置）。
 
-Audience manager會傳送資料主體的取消區段資訊，要求刪除特定資料，以通知啟動合作夥伴有關刪除要求。 不過，有些啟動合作夥伴：
+Audience manager會嘗試透過傳送資料主體的取消區段資訊以要求刪除特定資料，通知啟動合作夥伴有關刪除要求。 不過，有些啟動合作夥伴：
 
-1. 無法支援取消區隔（或移除區段）Adobe和／或
-2. 無法接收我們以少於30天的頻率提供的更新。 在這些情況下，Audience Manager客戶無法透過Audience Manager以自動方式傳送刪除要求給啟動合作夥伴。
+1. 無法支援從Audience manager和／或取消區隔（或移除區隔）請求
+2. 無法從Audience manager接收頻率低於30天的更新。 在這些情況下，Audience manager客戶無法透過Audience manager以自動方式傳送刪除要求給啟動合作夥伴。
 
 在這些情況下，您無法透過Audience manager以自動方式傳送刪除要求給啟動合作夥伴。
 
@@ -66,7 +66,7 @@ Audience manager會傳送資料主體的取消區段資訊，要求刪除特定�
 
 ## 退出請求 {#opt-out-requests}
 
-Adobe在退出管理方面符合所有業界標準。 閱讀以取得Audience manager支援之退出類型的完整資訊。
+Audience manager支援有關退出管理的業界標準。 閱讀以取得Audience manager支援之退出類型的完整資訊。
 
 雖然資料存取和刪除要求是透過 [Privacy Service](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)，但目前DCS API支援退出要求。 閱讀以瞭解退出API呼叫的外觀。
 
@@ -108,7 +108,7 @@ Adobe在退出管理方面符合所有業界標準。 閱讀以取得Audience ma
 
 遵循上述的退出要求：
 
-* Audience manager將停止後續的所有資料收集、區段或啟動。
+* 只要使用者未清除其瀏覽器Cookie,Audience manager就會停止後續的所有資料收集、分段或啟動。
 * 120天後，歷史資料會從使用者描述檔中移除。
 
 ### 具有已宣告ID呼叫的合作夥伴層級選擇退出
@@ -161,12 +161,12 @@ Adobe在退出管理方面符合所有業界標準。 閱讀以取得Audience ma
 
 ## Audience manager合作夥伴具備取消細分功能 {#aam-partners-with-unsegmentation}
 
-為協助客戶自動化資料隱私權要求，Audience manager會傳送取消區隔（或移除區段）資訊，通知啟動合作夥伴有關資料主體的刪除要求。
+為協助您自動化消費者資料隱私權要求，Audience manager會嘗試透過傳送取消區段（或移除區段）資訊，通知啟動合作夥伴有關資料主體的刪除要求。
 
 不過，我們的部分啟動合作夥伴：
 
-1. 無法支援Adobe和／或
-1. 無法在30天內以超過一次的頻率收到我們的更新。
+1. 無法支援Audience Manager和／或Audience Manager的取消分段請求
+2. 無法在30天內以多於一次的頻率從Audience manager接收更新。
 
 在這些情況下，您無法透過Audience manager以自動方式傳送刪除要求給啟動合作夥伴。
 
@@ -174,6 +174,6 @@ Adobe在退出管理方面符合所有業界標準。 閱讀以取得Audience ma
 
 ## 資料更正請求 {#correction}
 
-鑑於Audience manager不是資料來源，Audience manager中資料修正的角色有限。 修正可能表示「資料主體」已要求取消其資格，使其不符合不正確的特徵／區段，或符合所需的特徵／區段。
+鑑於Audience manager不是資料來源，Audience manager中資料修正的角色有限。 修正可能表示消費者已要求取消不正確的特徵／區段，或符合所需特徵／區段的資格。
 
 Audience Manager客戶可選擇針對使用者個人檔案擷取相關訊號／特徵／區段，並透過離線資料擷取 [將此資訊傳送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager。 請注意，如果使用者重複其行為，將會繼續符合原始特徵和區段的資格。
