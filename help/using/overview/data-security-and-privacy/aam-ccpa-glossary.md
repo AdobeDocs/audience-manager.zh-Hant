@@ -5,7 +5,7 @@ seo-title: CCPA辭彙表
 solution: Audience Manager
 title: CCPA辭彙表
 translation-type: tm+mt
-source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
+source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 ---
 
@@ -14,9 +14,11 @@ source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
 
 ## 概述 {#overview}
 
-本文說明加州消費者隱私法(CCPA)所使用的概念和術語，以及Adobe Audience manager如何處理各種CCPA要求。
+本文說明加州消費者隱私法(CCPA)所使用的概念和術語，以及Adobe Audience manager如何以服務提供者的身分解決各種CCPA要求。
 
-加州消費者隱私權法案(CCPA)將於2020年1月1日生效，這是讓隱私權成為消費者體驗整合的一部分的又一個機會。 Audience manager運用現有的隱私權基礎架構，協助您在使用Audience Manager時履行CCPA規定的義務，讓您在2020年1月1日之前和之後都能準備好CCPA。 Audience manager期待與您合作，透過使用我們的資料管理和依設計功能提供的隱私權，解決任何新義務。
+加州消費者隱私權法案(CCPA)將於2020年1月1日生效，這是讓隱私權成為消費者體驗整合的一部分的又一個機會。 Audience manager運用現有的隱私權基礎架構，協助您在使用Audience Manager時履行CCPA規定的義務，讓您在2020年1月1日之前和之後都能準備好CCPA。
+
+Audience manager期待與您合作，透過使用我們的資料管理和依設計功能提供的隱私權，解決任何新義務。
 
 ## CCPA辭彙表 {#CCPA-glossay}
 
@@ -31,10 +33,6 @@ source-git-commit: caa5207bc2955ee18b40d6a51613340001cbd92f
  
 
 **個人資訊**:識別、與、描述、能夠與特定消費者或家庭關聯或能夠合理地直接或間接聯繫的資訊。 個人資訊包括但不限於識別、與、描述、能夠與特定消費者相關，或可以與特定消費者合理地直接或間接連結的資訊。
-
- 
-
-**假化／假化**:處理個人資訊的方式使得個人資訊不再由特定消費者應佔而無需使用附加資訊，前提是附加資訊單獨保存，並且受技術和組織措施的約束，以確保個人資訊不歸屬於已識別或可識別的消費者。
 
  
 
