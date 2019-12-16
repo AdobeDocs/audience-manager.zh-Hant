@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 資料隱私權要求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
+source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 若要查看有效檔 [!DNL JSON] 案的外觀，您可 [以下載範例JSON](../data-security-and-privacy/assets/access_request.json)。
 
-我們瞭解您在法規所設定的時段內，遵守您的資料隱私權客戶要求的承諾。
+我們瞭解您在法規所設定的期限內，遵守您的資料隱私權要求的承諾。
 
 ## 資料刪除請求{#delete-data}
 
@@ -49,7 +49,7 @@ source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
 
 若要查看有效檔 [!DNL JSON] 案的外觀，您可 [以下載範例JSON](../data-security-and-privacy/assets/access_request.json)。
 
-Adobe瞭解您承諾在30天後，遵守您的資料隱私權客戶要求。 因此，Adobe承諾會盡快處理您的資料刪除要求。
+Adobe瞭解您承諾在30天內履行您的資料隱私權客戶要求。 因此，Adobe承諾會盡快處理您的資料刪除要求。
 
 回應您的消費者資料刪除請求，Audience manager會刪除與請求中包含的Audience manager識別碼相關的特徵和區段。 此外，個人的Audience manager識別碼已選擇退出Audience manager進一步收集資料，且將移除個別ID對應。
 
@@ -108,7 +108,7 @@ Audience manager支援有關退出管理的業界標準。 閱讀以取得Audien
 
 遵循上述的退出要求：
 
-* 只要使用者未清除其瀏覽器Cookie,Audience manager就會停止後續的所有資料收集、分段或啟動。
+* 只要使用者未清除其瀏覽器Cookie,Audience manager就會停止所有資料收集、分段或啟動。
 * 120天後，歷史資料會從使用者描述檔中移除。
 
 ### 具有已宣告ID呼叫的合作夥伴層級選擇退出
