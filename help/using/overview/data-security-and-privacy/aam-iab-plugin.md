@@ -5,7 +5,7 @@ seo-title: 適用 IAB TCF 的 Audience Manager 增效模組
 solution: Audience Manager
 title: 適用 IAB TCF 的 Audience Manager 增效模組
 translation-type: tm+mt
-source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
+source-git-commit: ff4bf70c9012f99289ea82824a552db97430fbf2
 
 ---
 
@@ -129,7 +129,7 @@ http://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstrin
 
 ## 支援IAB TCF的啟動合作夥伴 {#aam-activation-partners}
 
-IAB TCF的Audience Manager外掛程式可讓您將IAB TCF同意字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 如需啟動合作夥伴支援IAB TCF的詳細資訊，請參閱我們的 **[Partner excel表單](/help/using/overview/data-security-and-privacy/assets/AAM-Partners-October2019.xlsx)**。
+IAB TCF的Audience Manager外掛程式可讓您將IAB TCF同意字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 如需啟動合作夥伴支援IAB TCF的詳細資訊，請參閱我們的 **[Partner excel表單](/help/using/overview/data-security-and-privacy/assets/AAM-Partners-December2019.xlsx)**。
 
 ## 測試您的IAB實作 {#test-iab-implementation}
 
