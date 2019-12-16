@@ -6,7 +6,7 @@ solution: Audience Manager
 title: GDPR辭彙表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
 translation-type: tm+mt
-source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
+source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
 
 ---
 
@@ -35,7 +35,7 @@ GDPR於2018年5月25日生效，其主要目標是讓歐盟（資料主體）的
 
  
 
-**** 資料主體：個人資料相關的個人。 在Audience Manager中，資料主體是Audience manager客戶的消費者或使用者。 如果Audience manager直接從資料主體收到請求，這些請求將轉送至個別的Adobe客戶。
+**** 資料主體：個人資料相關的個人。 在Audience Manager中，資料主體是Audience manager客戶的消費者或使用者。 如果Adobe直接從「資料主體」收到請求，這些請求將轉送至個別的Audience Manager客戶。
 
  
 
