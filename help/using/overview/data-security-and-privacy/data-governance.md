@@ -6,7 +6,7 @@ solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, consent, obfuscation, governance
 title: 資料治理
 translation-type: tm+mt
-source-git-commit: b47819d5e6394e78d744ada1bb7090d337938983
+source-git-commit: 9004dc46c0ac431e9f193467a2147a2d9ac36cdc
 
 ---
 
@@ -42,4 +42,4 @@ The [!DNL IP] address of a visitor to a customer’s website is transmitted to a
 
 ## 跨邊界資料傳輸 {#data-transfers}
 
-GDPR並不禁止在歐洲以外傳輸資料。 它要求對歐洲資料的隱私保護在資料傳輸時始終有效。 請造訪 [Adobe隱私權中心](https://www.adobe.com/privacy/eudatatransfers.html) ，瞭解更多資訊。 CCPA沒有跨境資料傳輸限制。
+當Audience manager跨國傳輸客戶的個人資料時，Audience manager會遵守適用法律。 請造訪 [Adobe隱私權中心](https://www.adobe.com/privacy/eudatatransfers.html) ，瞭解更多資訊。
