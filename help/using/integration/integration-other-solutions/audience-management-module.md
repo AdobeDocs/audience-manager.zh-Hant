@@ -1,13 +1,13 @@
 ---
 description: 將觀眾管理模組新增至Adobe Analytics appMeasurement，將Analytics資料轉送至Audience Manager，而不是讓Audience Manager資料整合庫(DIL)程式碼從頁面傳送像素。
-keywords: 受眾分析；分析；ssf;伺服器端轉發
+keywords: audience analytics; analytics; ssf; server side forwarding
 seo-description: 將觀眾管理模組新增至Adobe Analytics appMeasurement，將Analytics資料轉送至Audience Manager，而不是讓Audience Manager資料整合庫(DIL)程式碼從頁面傳送像素。
-seo-title: ' 實作觀眾管理模組'
+seo-title: 實作觀眾管理模組
 solution: Audience Manager
-title: ' 實作觀眾管理模組'
+title: 實作觀眾管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
+source-git-commit: d6bfffa97813eeafd7e478f0520b2a62eb63cb94
 
 ---
 
@@ -15,6 +15,10 @@ source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
 # 實作觀眾管理模組 {#implement-the-audience-management-module}
 
 新增至 [!UICONTROL Audience Management Module] 以將資 [!DNL Adobe Analytics] 料轉送至Audience Manager，而不是讓Audience Manager [!UICONTROL AppMeasurement] ( [!DNL Analytics][!UICONTROL Data Integration Library][!UICONTROL DIL])程式碼從頁面傳送像素。
+
+>[!NOTE]
+>
+>本頁的指示指使用 [Adobe Digital Tag Manager(DTM)](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) 或任何其他標籤管理解決方案(除 ** Adobe Launch外)的實施 [](https://docs.adobe.com/content/help/en/launch/using/overview.html)。 我們建議您使用Adobe Launch。 使用Launch，您不必手動復製程式碼，如本頁所示。
 
 ## 必備條件 {#prereqs}
 
