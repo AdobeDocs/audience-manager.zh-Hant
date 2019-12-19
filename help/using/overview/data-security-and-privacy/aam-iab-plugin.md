@@ -5,7 +5,7 @@ seo-title: 適用 IAB TCF 的 Audience Manager 增效模組
 solution: Audience Manager
 title: 適用 IAB TCF 的 Audience Manager 增效模組
 translation-type: tm+mt
-source-git-commit: ff4bf70c9012f99289ea82824a552db97430fbf2
+source-git-commit: 25ca7a44e9b4a67ec025d63da1395fc30789597c
 
 ---
 
@@ -44,7 +44,7 @@ IAB TCF的Audience Manager外掛程式運用 [Opt-in功能](https://marketing.ad
 
 ## 建議及實施方式 {#recommendations}
 
-若要在Audience manager中啟用IAB TCF支援，請閱讀我們的檔案，了 [解如何使用選擇加入設定IAB](https://marketing.adobe.com/resources/help/en_US/mcvid/iab.html)。
+若要在Audience manager中啟用IAB TCF支援，請閱讀我們的檔案，了 [解如何使用選擇加入設定IAB](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/iab.html)。
 
 您最輕鬆的方式是使 [用Adobe Launch](https://docs.adobelaunch.com/) ，在您的屬性上測試ECID選擇加入。 Read the documentation for the [ECID Opt-in extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension#opt-in) to learn how to set up the Launch extension.
 
@@ -133,7 +133,7 @@ IAB TCF的Audience Manager外掛程式可讓您將IAB TCF同意字串轉寄給�
 
 ## 測試您的IAB實作 {#test-iab-implementation}
 
-若要測試您是否已正確實作IAB TCF的Audience manager外掛程式，請閱讀 [Use Case 4 in Validation Methods for Opt-in and IAB implementation](https://marketing.adobe.com/resources/help/en_US/mcvid/testing-optin-and-iab-plugin.html)。
+若要測試您是否已正確實作IAB TCF的Audience manager外掛程式，請閱讀 [Use Case 4 in Validation Methods for Opt-in and IAB implementation](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html#section-64331998954d4892960dcecd744a6d88)。
 
 ## IAB和Audience manager中的選擇退出。 優先順序。 {#iab-and-optout}
 
