@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
+source-git-commit: 3c528a39ffb1f6b36838bb6e2e3240957e87eb61
 
 ---
 
@@ -26,8 +26,7 @@ source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
     <li><a href="reference/bulk-management-tools/bulk-management-intro.md">大量管理工具更新</a></li>
      <li><a href="overview/data-security-and-privacy/data-security.md#hsts">HTTP Strict-Transport-Security</a></li>
      <li><a href="features/destinations/people-based-destinations-overview.md">以人為本的目的地</a> </li>
-     </ul> </p> <p>另請參閱2019年 <a href="./docs-updates/docs-2019.md"> 檔案更新</a> </p> 
-     <p>如果您是Audience Manager的新手，請參閱我們的 <a href="reference/aam-glossary.md"> 辭彙</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p>
+     </ul> </p> <p>另請參閱2019年 <a href="docs-updates/docs-2019.md"> 檔案更新</a>。 </p> 
      <br> 
      <p> <b>協作文件</b> </p>
      <p>我們歡迎所有讀者對我們的檔案所做的貢獻。 請參閱協 <a href="https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html">作指南概觀</a> ，瞭解如何開始提供內容。</p>
@@ -43,7 +42,8 @@ source-git-commit: 4cebba536cd44b7ef72f5b16cf5deeeea3445e0b
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe訓練與認證</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/support/experience-cloud.html" scope="external" format="https">Experience cloud產品檔案首頁</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external"> Audience Manager 學習與支援</a> </li> 
-     </ul> </p> </td>
+     </ul> </p> 
+     <p> <b>ID的辭彙表和索引</b> </p><p>如果您是Audience Manager的新手，請參閱我們的 <a href="reference/aam-glossary.md"> 辭彙</a><a href= "reference/ids-in-aam.md">表和ID索引。</a></p></td>
   </tr> 
  </tbody> 
 </table>
