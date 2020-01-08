@@ -6,22 +6,22 @@ solution: Audience Manager
 title: 未使用的信號報告
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: dcc44161df89b44ca1a234070c4afbb0210dc723
 
 ---
 
 
 # 未使用的信號報告{#unused-signals-report}
 
-此報表會傳回清單上收集並傳送至Audience manager的所有未使用資訊的頻率計數。
+此報表會傳回清單上收集並傳送至Audience manager的所有未使用資訊的頻率計數。 若要存取此報表，請導覽至「 **分析>對象報表>其他報表>未使用的信號」**。
 
-<!-- 
+>[!NOTE]
+>
+>如果您看到訊息「您無權存取觀眾報表」，請連絡您的Audience manager顧問或客戶服務為您布建報表。
 
-c_unused_signals.xml
+![未使用訊號報表的螢幕擷取](/help/using/reporting/dynamic-reports/assets/unused-signals.png)
 
- -->
-
-## 未使用的信號報告
+## 概述
 
 信號是您網站以鍵值配對 [!DNL Audience Manager] 形式傳入 [的資訊](../../reference/key-value-pairs-explained.md) (例如 `color=blue, price>100, gender=female`等)。
 
@@ -45,7 +45,7 @@ c_unused_signals.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>確保特徵一致性或將相關值新增至單一索引鍵</b> </p> </td> 
-   <td colname="col2"> <p>請檢閱報表，以說明特定訊號的不同值變化。 </p> <p>例如，假設您有州"North Carolina"的特徵，該州在鍵值對中定義為 <code> c_state = North Carolina</code>。 報表可協助您尋找名稱變數並將其新增至特徵(例如 <code> c_state = North Carolina、NC、N.C.、NCarolina</code>)。 或者，您也可以利用報表找出名稱變數，並將所有網站的名稱變數取代為統一值。 </p> <p> </p> </td> 
+   <td colname="col2"> <p>請檢閱報表，以說明特定訊號的不同值變化。 </p> <p>例如，假設您有州「North Carolina」的特徵，該州在鍵值對中定義為 <code> c_state = North Carolina</code>。 報表可協助您尋找名稱變數，並將其新增至特徵(例如 <code> c_state = North Carolina, NC, N.C., NCarolina</code>)。 或者，您也可以利用報表找出名稱變數，並將所有網站的名稱變數取代為統一值。 </p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>建立新特徵</b> </p> </td> 
