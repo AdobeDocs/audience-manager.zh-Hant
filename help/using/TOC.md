@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: f5c8d39aaf18fd513d85d17c3aa34c5d57e69885
+source-git-commit: 3c528a39ffb1f6b36838bb6e2e3240957e87eb61
 
 ---
 
@@ -348,7 +348,6 @@ source-git-commit: f5c8d39aaf18fd513d85d17c3aa34c5d57e69885
       + [批量管理工具的疑難排解提示](reference/bulk-management-tools/bulk-troubleshooting.md)
       + [批量管理工具辭彙表](reference/bulk-management-tools/bulk-management-glossary.md)
    + [CID取代DPID和DPUUID](reference/cid.md)
-   + [字彙表](reference/aam-glossary.md)
    + [資料傳送和檔案處理時間對報表的影響](reference/reporting-file-transfer-timeframe.md)
    + [Audience Manager中ID的索引](reference/ids-in-aam.md)
    + [說明的鍵值對](reference/key-value-pairs-explained.md)
@@ -391,3 +390,4 @@ source-git-commit: f5c8d39aaf18fd513d85d17c3aa34c5d57e69885
    + [2017年檔案更新](docs-updates/docs-2017.md)
    + [2016年檔案更新](docs-updates/docs-2016.md)
    + [2015年檔案更新](docs-updates/docs-2015.md)
++ [字彙表](reference/aam-glossary.md)
