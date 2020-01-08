@@ -1,13 +1,13 @@
 ---
 description: 可操作的記錄檔可讓您從廣告伺服器記錄檔擷取媒體訊號，以在Audience Manager中建立特徵。 從廣告伺服器擷取印象、點按和轉換為特徵，毋需附加像素。
 keywords: actionable logs, alf, ALF
-seo-description: 可操作的記錄檔可讓您從廣告伺服器記錄檔擷取媒體訊號，以在Audience Manager中建立特徵。 從廣告伺服器擷取印象、點按和轉換為特徵，毋需使用附加像素。
+seo-description: 可操作的記錄檔可讓您從廣告伺服器記錄檔擷取媒體訊號，以在Audience Manager中建立特徵。 從廣告伺服器擷取印象、點按和轉換為特徵，毋需附加像素。
 seo-title: 可操作的記錄檔
 solution: Audience Manager
 title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: a96e64d81b6834a308ba40ec3f7fa6ada038f662
+source-git-commit: fcdfe3a81cddc3c899453234d349f7a458c2be61
 
 ---
 
@@ -35,11 +35,11 @@ source-git-commit: a96e64d81b6834a308ba40ec3f7fa6ada038f662
 
 >[!IMPORTANT]
 >
-> 到2019年底，將開 [!UICONTROL Actionable Log Files] 始將可用性擴展至新廣告伺服器。 Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
+> 2020年初，將開 [!UICONTROL Actionable Log Files] 始將可用性擴展至新廣告伺服器。 Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 ## 使用可操作的日誌檔案 {#working-with-actionable-log-files}
 
-使用 [!UICONTROL Actionable Log Files]時，廣告伺服器記錄檔的資訊會以 [!DNL Audience Manager] 您擷取即時網站互動資料的相同方式擷取。 [!DNL Audience Manager] 連線至您的廣告伺服器記錄檔儲存區，分析記錄檔中的資訊，並將記錄檔資料作為可操作訊號傳送至我們的資 [料收集伺服器](../../reference/system-components/components-data-collection.md#dcs-pcs)。
+使用 [!UICONTROL Actionable Log Files]時，廣告伺服器記錄檔的資訊會以 [!DNL Audience Manager] 您擷取即時網站互動資料的相同方式擷取。 [!DNL Audience Manager] 連線至您的廣告伺服器記錄檔儲存空間，分析記錄檔中的資訊，並將記錄檔資料作為可操作的訊號傳送至我們的資 [料收集伺服器](../../reference/system-components/components-data-collection.md#dcs-pcs)。
 
 您仍需要設定規則型特徵，以擷取可操作的訊號。 瞭解如何在 [Audience Manager UI或使用我們的大量管理工具](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) ，設定以規 [則為基礎的特徵](../../reference/bulk-management-tools/bulk-create.md)。 向下捲動至「可 [操作的訊號](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) 」區段，以取得您可在規則型特徵中使用之所有鍵的清單。
 
@@ -148,7 +148,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 對於平均大小為200萬行 [!DNL DCM] 的記錄檔，任何根據可操作訊號建立的特徵，都會在我們處理記錄檔後約一小時內實現。
 
->[!NOTE] {imporication="high"}
+>[!NOTE] {imporication=&quot;high&quot;}
 >
 >記錄檔中提供的事 [!DNL DCM] 件時間戳記將接受並傳遞至 [!UICONTROL Data Collection Servers]。
 >
@@ -249,7 +249,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 您可以在「信號搜尋」介面中檢視傳入的可 [操作信號](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) 。
 
-前往「 **觀眾資料** (1)&gt; **訊號** (2)&gt;搜尋 **(3)」，並選取「****** 可操作的記錄檔(4)」篩選器。
+前往「 **觀眾資料** (1)> **訊號** (2)>搜尋 **(3)」，並選取「****** 可操作的記錄檔(4)」篩選器。
 
 ![UI中可操作的信號](/help/using/integration/assets/alf-in-signals.png)
 
