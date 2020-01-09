@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager概觀
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 translation-type: tm+mt
-source-git-commit: aebdeb953153f4d1028871966f8da9ee27f58d35
+source-git-commit: a13c64eb45fdbcb311bfecdb39b3203523d6b399
 
 ---
 
@@ -23,11 +23,21 @@ Audience manager可協助您將受眾資料資產整合在一起，讓您輕鬆�
 
 ![三個DMP函式的影像：資料輸入、觀眾建立、資料輸出](/help/using/overview/assets/dmp-functions.png)
 
-**Data In** Audience manager會從通道和裝置（網路分析、CRM、裝置資料、電子商務等）收集第一方資料。
+**資料**
 
-**建立受眾**—將資料統一到受眾個人檔案中，讓您跨裝置和通道獲得完整的客戶檢視。 建立類似的模型、建立受眾細分和個人檔案群組，並輔以第二方和第三方資料來源。
+Audience manager會從通道和裝置（網路分析、CRM、裝置資料、電子商務等）收集第一方資料。
 
-**資料輸出**—將受眾細分推出至需求端平台(DSP)、宣傳活動管理系統和其他行銷平台，以激活受眾細分。
+<br> 
+
+**建立觀眾**
+
+將資料統一到受眾個人檔案中，讓您跨裝置和通道獲得完整的客戶視圖。 建立類似的模型、建立受眾細分和個人檔案群組，並輔以第二方和第三方資料來源。
+
+<br> 
+
+**資料輸出**
+
+將受眾細分推出至需求端平台(DSP)、宣傳活動管理系統和其他行銷平台，以激活受眾細分。
 
 ## 更多資訊 {#more-information}
 
