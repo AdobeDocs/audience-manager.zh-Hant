@@ -5,7 +5,7 @@ seo-title: 按鍵值對搜索信號
 title: 按鍵值對搜索信號
 uuid: 2a38d0d4-4a2e-4ca5-b9ec-af9d4963d876
 translation-type: tm+mt
-source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
+source-git-commit: 2206b5e40f7024084953fed52bb02fcc46ea36f1
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 
 * **信號狀態**:搜索特徵中包含的信號、未使用的信號或兩者。
 * **查看以下記錄**:選擇搜索接收信號的時間間隔。
-* **最小計數**:僅顯示在選定間隔內具有指定最小總計的信號。
+* **最小計數**:僅顯示在選定間隔內具有指定最小總計數的信號。
 
 >[!IMPORTANT]
 >
@@ -32,6 +32,10 @@ source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 此搜尋只會傳回符合相同呼叫所有三個篩選條件的結果： `c_creative == "12345"``AND``c_product == "smartphone"``AND``c_location == "europe"`..
 
 ![](assets/signals-search.png)
+
+## 信號搜索中排除的信號 {#excluded-signals}
+
+Audience manager使用並加上前置詞和前置詞的 `d_` 關鍵 `h_` 變數不會呈現 [!UICONTROL Signals Search]。 如需詳 [細資訊，請參閱關鍵變數的首碼](../../traits/trait-variable-prefixes.md) 。
 
 ## 區分大小寫與搜尋自動完成 {#case-insensitivity}
 
