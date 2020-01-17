@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料隱私權概觀
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 translation-type: tm+mt
-source-git-commit: 09ac547f22bc07e5b8609226ddd736cb79cbc700
+source-git-commit: f8184dfccdb7b5cbc3ace67831d988dd8061ea38
 
 ---
 
@@ -30,9 +30,9 @@ Audience manager認識到消費者與其互動的線上品牌之間的關係的�
 
 為符合GDPR,Audience manager支援資料存取和刪除 [要求](data-privacy-requests.md)。
 
-2020 [年1月1日生效的加州消費者隱私法(CCPA)](https://www.caprivacy.org/about)，將為加州居民提供個人資訊的新權利，並將對在加州經營業務的特定實體負責資料保護。
+2020 [年1月1日生效的加州消費者隱私法(CCPA)](https://www.caprivacy.org/about)，為加州居民提供個人資訊的新權利，並對在加州經營業務的特定實體規定資料保護責任。
 
-CCPA為加州居民提供新的資料隱私權，包括存取和刪除其個人資料以及瞭解其個人資料是否被銷售或披露（以及向誰）的權利。 Audience Manager預期會推出CCPA，因此支援CCPA存取和刪除 [請求](data-privacy-requests.md)。
+CCPA為加州居民提供新的資料隱私權，包括存取和刪除其個人資料以及得知其個人資料是否被出售或被揭露（以及向誰）的權利。 為符合CCPA,Audience manager支援CCPA存取和刪除 [請求](data-privacy-requests.md)。
 
 如需詳細 [資訊，請參閱Adobe隱私權中心](https://www.adobe.com/privacy/opt-out.html) 。
 
