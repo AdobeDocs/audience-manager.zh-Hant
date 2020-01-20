@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 目的地
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
 translation-type: tm+mt
-source-git-commit: 431a254f1a70958db29621a59acc6239d2a6b005
+source-git-commit: e141d04201b94bac30cdbe97818cb8eb91ebbaea
 
 ---
 
@@ -46,7 +46,6 @@ source-git-commit: 431a254f1a70958db29621a59acc6239d2a6b005
 | 目標類型 | 通常用於 | 範例 | 考量事項 |
 |--- |--- |--- |--- |
 | **[!UICONTROL Adobe Experience Cloud Destinations]** | 您需要將資料傳送至其他Adobe Experience cloud解決方案。 | 傳送資料至Adobe Analytics。 |  |
-| **[!UICONTROL People-Based Destinations]** | 您需要將觀眾區隔傳送至以人為本的環境，例如Facebook。 | 根據現有客戶的購買記錄，為其提供個人化優惠 | 對象定位是透過雜湊識別碼來完成。 查看 [基於人的目標](people-based-destinations-overview.md) |
+| **[!UICONTROL People-Based Destinations]** | 您需要將觀眾區隔傳送至以人為本的環境，例如Facebook。 | 根據現有客戶的購買記錄，為其提供個人化優惠 | 對象定位是透過雜湊識別碼來完成。 請參 [閱以人為本的目的地](people-based-destinations-overview.md)。 |
 | **[!UICONTROL Device-Based Destinations]**(**&#x200B;伺服器對伺服器&#x200B;**) | <ul><li>不需要立即傳輸資料。</li><li>收集資料，以建立龐大的合格使用者群。</li></ul> | 收集一段時間（小時或天）的資料，以便在促銷活動集中使用，以便在稍後日期執行。 | <ul><li>傳輸有關新訪客和舊訪客的資料。 </li><li>訪客不必再被看到，即可符合其他區段的資格。</li></ul> |
 | **[!UICONTROL Custom Destinations]**(** URL **或** Cookie **) | 您需要立即傳輸資料，以便目的地能立即對符合資格的使用者採取行動。 | 從票證購買網站傳送資料。 使用URL或Cookie目標來限定使用者，並立即重新定位。 | <ul><li>僅傳輸有關新訪客的資料。 </li><li>必須再次檢視訪客才能符合區段的資格。</li></ul> |
-
