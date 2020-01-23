@@ -5,7 +5,7 @@ seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: 先決條件和注意事項
 translation-type: tm+mt
-source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
+source-git-commit: 301a5c553cfd5658f4d594773ab6248012cc50fa
 
 ---
 
@@ -33,10 +33,10 @@ source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
 在您可以用 [!DNL People-Based Destinations] 來傳送第一方對象區段至之 [!DNL Facebook]前，請確定您符合下列需求：
 
 1. 您 [!DNL Facebook] 的使用者帳戶必須為您 **** 計畫使用的廣告帳戶啟用「管理促銷活動」權限。
-1. 將 **Adobe Experience cloud商業帳戶新增為廣告合作夥伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 如需詳 [細資訊，請參閱將合作夥伴新增至您的業務經理](https://www.facebook.com/business/help/708679622611131) 。
+2. 將 **Adobe Experience cloud商業帳戶新增為廣告合作夥伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 如需詳 [細資訊，請參閱將合作夥伴新增至您的業務經理](https://www.facebook.com/business/help/1717412048538897) 。
    >[!IMPORTANT]
    > 設定Adobe Experience cloud的權限時，您必須啟用「管理促銷 **活動** 」權限。 這是整合的必 [!DNL People-Based Destinations] 要項。
-1. 閱讀並簽署 [!DNL Facebook Custom Audiences] 服務條款。 若要這麼做，請前 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`往您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
+3. 閱讀並簽署 [!DNL Facebook Custom Audiences] 服務條款。 若要這麼做，請前 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`往您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
 
 ## 資料上線 {#data-onboarding}
 
@@ -67,7 +67,7 @@ source-git-commit: d83f4dae563c9c49ae8d46c28aa41168d746f92c
 
 請觀看以下影片，瞭解其雜湊要求 [!UICONTROL People-Based Destinations]。
 
->[!VIDEO](https://video.tv.adobe.com/v/29003/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
 Adobe Experience cloud可讓您選擇透過Experience Cloud ID服務散列客戶ID。 如需如 [何使用ECID來雜湊客戶ID的詳細資訊，請參閱SHA256 Hashing Support for setCustomerIDs](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
 
