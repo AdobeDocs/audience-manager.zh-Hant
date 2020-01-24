@@ -7,14 +7,18 @@ solution: Audience Manager
 title: 實作觀眾管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: 1b7c29c0637432a320b2a7573a3f5a7fb4cdcb81
+source-git-commit: dddc67e80e2b8c2e5e3ec76912a030e52d2206f5
 
 ---
 
 
-# 實作觀眾管理模組 {#implement-the-audience-management-module}
+# 如何將資料從Adobe Analytics轉送至Audience Manager {#implement-the-audience-management-module}
 
-新增至 [!UICONTROL Audience Management Module] 以將資 [!DNL Adobe Analytics] 料轉送至Audience Manager，而不是讓Audience Manager [!UICONTROL AppMeasurement] ( [!DNL Analytics][!UICONTROL Data Integration Library][!UICONTROL DIL])程式碼從頁面傳送像素。
+請依照本教學課程中的步驟， [!DNL Analytics] 將資料轉送至Audience Manager，而不是讓Audience Manager [!UICONTROL Data Integration Library] ([!UICONTROL DIL])程式碼從頁面傳送像素。
+
+>[!TIP]
+>
+>我們建議您使用 [!UICONTROL Adobe Launch] 來將資 [!UICONTROL Analytics] 料轉送至Audience Manager。 使用 [!UICONTROL Launch]時，您不必手動將程式碼複製 [!UICONTROL AppMeasurement]至，如本頁所示。
 
 >[!NOTE]
 >
@@ -22,14 +26,33 @@ source-git-commit: 1b7c29c0637432a320b2a7573a3f5a7fb4cdcb81
 
 ## 必備條件 {#prereqs}
 
-除了實作本檔案所述的程式碼外，您還必須：
+除了啟用擴充功能或實作本檔案所述的程式碼外，您還必須：
 
 * Implement the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* 在 [!UICONTROL Server-Side Forwarding] 中啟用報表套裝 [!UICONTROL Adobe Analytics Admin Console]。
+* 在中 [為報表套裝啟用](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) 「伺服器端轉送」 [!UICONTROL Adobe Analytics Admin Console]。
 
 ## 實施 {#implementation}
 
-要實施以下操 [!UICONTROL Audience Management Module]作：
+根據您使用的標籤管理解決方案，有兩種方法可實作從Adobe Analytics到Audience manager的資料轉送。
+
+### 使用Adobe Launch進行實作
+
+Adobe建議您使用 [Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html) 擴充功能，在屬性上測量Adobe Analytics和Audience Manager。 在這種情況下，您不需要手動複製任何代碼。 您必須改為在Analytics Launch擴充功能中啟用資料共用，如下圖所示。 另請參閱 [Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager) 檔案。
+
+>[!TIP]
+>
+>如果您安裝Adobe Analytics擴充功能， *請勿安裝* Audience Manager擴充功能。 從Analytics擴充功能轉送資料會取代Audience Manager擴充功能。
+
+![如何啟用從Adobe Analytics擴充功能到Audience manager的資料共用](/help/using/integration/assets/analytics-to-aam.png)
+
+### 使用Adobe數位標籤管理(DTM)或任何其他標籤管理解決方案的實作
+
+
+>[!WARNING]
+>
+>Adobe已於2020年底發佈日落DTM計畫。 如需詳細資訊和排程，請參閱 [Adobe社群論壇的DTM日落計畫](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset)。
+
+若要實作使 [!UICONTROL Audience Management Module] 用 [Adobe DTM或其他標籤管理解決方案](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) :
 
 1. 使用 [!UICONTROL AppMeasurement] Analytics代碼 [管理器](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html) （需要1.5版或更新版本）下載。
 1. 將您的 [!UICONTROL AppMeasurement] 程式碼更新為下載的zip檔案所包含的版本。
@@ -39,7 +62,7 @@ source-git-commit: 1b7c29c0637432a320b2a7573a3f5a7fb4cdcb81
 
 ```js
 s.AudienceManagement.setup({ 
-     "partner":"partner name", 
+     "partner":"INSERT-YOUR-PARTNER-NAME-HERE", 
      "containerNSID":0, 
      "uuidCookie": { 
           "name":"aam_uuid", 
@@ -71,8 +94,8 @@ s.AudienceManagement.setup({
 您的 [!DNL Analytics] 實作會在您擁有下列功能後，將資料傳送至Audience Manager:
 
 * 啟用( [!UICONTROL Server-Side Forwarding] 請洽詢您的顧問有關此功能的資訊);
-* 實作ID服務；
-* 已安裝 [!UICONTROL Audience Management Module]。
+* 實作Experience Cloud ID服務；
+* 已遵循本教學課程中的實施步驟。
 
 此程式將資料發送到 [!DNL Audience Manager]:
 
