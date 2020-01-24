@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 3c528a39ffb1f6b36838bb6e2e3240957e87eb61
+source-git-commit: dddc67e80e2b8c2e5e3ec76912a030e52d2206f5
 
 ---
 
@@ -327,8 +327,7 @@ source-git-commit: 3c528a39ffb1f6b36838bb6e2e3240957e87eb61
       + [Audience manager與Adobe Experience platform之間的觀眾分享](integration/integration-aep/aam-aep-audience-sharing.md)
    + 與其他Experience cloud解決方案整合 {#integration-other-solutions}
       + [將Audience manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
-      + [實作觀眾管理模組](integration/integration-other-solutions/audience-management-module.md)
-      + [伺服器端轉送（管理指南）](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)
+      + [如何將資料從Adobe Analytics轉送至Audience Manager](integration/integration-other-solutions/audience-management-module.md)
       + [將Adobe Analytics區段發佈至Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
