@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 實作觀眾管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: dddc67e80e2b8c2e5e3ec76912a030e52d2206f5
+source-git-commit: 7e8ba292f2f901b1323d30d682066b49df885a0c
 
 ---
 
@@ -19,10 +19,6 @@ source-git-commit: dddc67e80e2b8c2e5e3ec76912a030e52d2206f5
 >[!TIP]
 >
 >我們建議您使用 [!UICONTROL Adobe Launch] 來將資 [!UICONTROL Analytics] 料轉送至Audience Manager。 使用 [!UICONTROL Launch]時，您不必手動將程式碼複製 [!UICONTROL AppMeasurement]至，如本頁所示。
-
->[!NOTE]
->
->本頁的指示指使用 [Adobe Digital Tag Manager(DTM)](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) 或任何其他標籤管理解決方案(除 ** Adobe Launch外)的實施 [](https://docs.adobe.com/content/help/en/launch/using/overview.html)。 我們建議您使用Adobe Launch。 使用 [!DNL Launch]時，您不必手動將程式碼複製 [!UICONTROL AppMeasurement]至，如本頁所示。
 
 ## 必備條件 {#prereqs}
 
