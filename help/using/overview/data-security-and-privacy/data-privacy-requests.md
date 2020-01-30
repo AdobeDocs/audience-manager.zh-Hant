@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 資料隱私權要求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: ff4bf70c9012f99289ea82824a552db97430fbf2
+source-git-commit: 1a7f207b593ea783e20a0398bb0d543628253049
 
 ---
 
@@ -25,9 +25,9 @@ source-git-commit: ff4bf70c9012f99289ea82824a552db97430fbf2
 您可以以兩種方式提交個別請求，以便從Audience manager存取和刪除消費者資料：
 
 * 透過隱 [私服務UI](https://gdprui.cloud.adobe.io/)。 請參閱此處的 [檔案](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)。
-* 通過 **[!DNL Privacy Service API]**。 請參閱此處 [的檔案](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md) ，以及API [參考](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)。
+* 通過 **[!DNL Privacy Service API]**。 請參閱此處[的檔案](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)，以及API[參考](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)。
 
-傳送個別資料隱私權要求時，您可以提交任何Audience manager識別碼(ID)，如 **[Audience Manager識別碼區段所述](data-privacy-ids.md)** ，以及其各自的命名空間ID（資料來源ID）。
+傳送個別資料隱私權要求時，您可以提交任何Audience manager識別碼(ID)，如 **[Audience Manager識別碼區段所述](data-privacy-ids.md)**，以及其各自的命名空間ID（資料來源ID）。
 
 隱私 [權服務](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) (Privacy Service)支援兩種請求：資料存取和資料刪除要求。
 
@@ -165,12 +165,12 @@ Audience manager支援有關退出管理的業界標準。 閱讀以取得Audien
 
 不過，我們的部分啟動合作夥伴：
 
-1. 無法支援Audience Manager和／或Audience Manager的取消分段請求
+1. 無法支援Audience manager和／或的取消分段請求
 2. 無法在30天內以多於一次的頻率從Audience manager接收更新。
 
 在這些情況下，您無法透過Audience manager以自動方式傳送刪除要求給啟動合作夥伴。
 
-下載我們 [的Partner excel表單](assets/AAM-Partners-December2019.xlsx) ，以瞭解哪些Audience manager啟動合作夥伴支援取消細分。
+請參閱 [裝置型目的地清單](/help/using/features/destinations/device-based-destinations-list.md) ，以瞭解哪些Audience manager啟動合作夥伴支援取消區隔。
 
 ## 資料更正請求 {#correction}
 
