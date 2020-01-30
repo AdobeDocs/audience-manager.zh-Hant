@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 3c528a39ffb1f6b36838bb6e2e3240957e87eb61
+source-git-commit: 1eeab9f3e4d87131323cf5a5a4f4f8702f92c120
 
 ---
 
@@ -20,6 +20,7 @@ source-git-commit: 3c528a39ffb1f6b36838bb6e2e3240957e87eb61
   <tr> 
    <td colname="col1"> <p> <b>全新和精選項目</b> </p> <p>閱讀有關最新Audience manager功能的資訊：</p> <p> 
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
+     <li><a href="features/administration/activity-usage-reporting.md">活動使用情況報告</a></li>
      <li><a href="overview/data-security-and-privacy/data-privacy.md">加州消費者隱私權法案(CCPA)支援與隱私權檔案大修</a></li>
      <li><a href="features/segments/trait-recommendations.md">Adobe Sensei支援的Audience Marketplace資料智慧建議</a></li>
     <li><a href="features/profile-merge-rules/merge-rules-overview.md">描述檔合併規則增強功能</a></li>
