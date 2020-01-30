@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 1eeab9f3e4d87131323cf5a5a4f4f8702f92c120
+source-git-commit: f2f3e40e7866c7610de520952f5dfd65823554f3
 
 ---
 
@@ -25,9 +25,7 @@ source-git-commit: 1eeab9f3e4d87131323cf5a5a4f4f8702f92c120
      <li><a href="features/segments/trait-recommendations.md">Adobe Sensei支援的Audience Marketplace資料智慧建議</a></li>
     <li><a href="features/profile-merge-rules/merge-rules-overview.md">描述檔合併規則增強功能</a></li>
     <li><a href="reference/bulk-management-tools/bulk-management-intro.md">大量管理工具更新</a></li>
-     <li><a href="overview/data-security-and-privacy/data-security.md#hsts">HTTP Strict-Transport-Security</a></li>
-     <li><a href="features/destinations/people-based-destinations-overview.md">以人為本的目的地</a> </li>
-     </ul> </p> <p>另請參閱2019年 <a href="docs-updates/docs-2019.md"> 檔案更新</a>。 </p> 
+     </ul> </p> <p>另請參閱 <a href="docs-updates/docs-2020.md"> 2020年檔案更新</a>。 </p> 
      <br> 
      <p> <b>協作文件</b> </p>
      <p>我們歡迎所有讀者對我們的檔案所做的貢獻。 請參閱協 <a href="https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html">作指南概觀</a> ，瞭解如何開始提供內容。</p>
