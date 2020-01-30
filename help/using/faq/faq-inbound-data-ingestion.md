@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 傳入客戶資料擷取常見問答集
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 translation-type: tm+mt
-source-git-commit: 22336b052af1c438136e4a6cfd6ad88393503f16
+source-git-commit: f2f3e40e7866c7610de520952f5dfd65823554f3
 
 ---
 
@@ -66,10 +66,65 @@ Removed the Data Translation File bullet from the list above.
 
 **我可以先上傳傳入資料檔案 ([!DNL .sync]或[!DNL .overwrite]檔)，再將[!DNL Audience Manager]程式碼部署到生產環境嗎？**
 
-是。只要您使用跨裝置資料來源來儲存您上傳的CRM資料，Audience manager就會一律儲存資料。 事實上，在Audience manager於2019年10月啟動的「設定檔合併規則」增強功能允許離線使用案例後，您無需將Audience manager程式碼部署至生產環境，即可上傳資料並採取行動。 請參閱:
+* 如果資料提供者設定為使用描述檔連結進行跨裝置定位 [，則ID同步識別至相符訪客ID後不久便可用於定位的](../features/profile-merge-rules/merge-rules-overview.md)[!DNL Audience Manager] 資料。
 
-* [描述檔合併規則增強功能概觀](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* 以人為本的目的地- [基於僅線下資料的個人化](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* 如果資料提供者未設定為使用此 [!UICONTROL Profile Link] 功 [!DNL Audience Manager] 能，則只會處理傳入資料檔案中先前已同步／比對回訪客ID的訪客ID [!DNL Audience Manager] 資料。
+
+請考慮以下使用案例：未將資料提供器配置為使用 [!UICONTROL Profile Merge]:
+
+<table id="table_1A367ED6D016428FB21B3F3BC261BA98"> 
+ <thead> 
+  <tr> 
+   <th colname="col1" class="entry"> 使用案例 </th> 
+   <th colname="col2" class="entry"> 說明 </th> 
+  </tr>
+ </thead>
+ <tbody> 
+  <tr> 
+   <td colname="col1"> <p><b>案例 1</b> </p> </td> 
+   <td colname="col2"> <p>星期一，訪客在CRM資料庫中識別為訪客ABC登入，並啟動用戶端ID同步。 <span class="keyword"> Audience Manager</span> 會儲存訪客ABC與 <span class="keyword"> Audience Manager訪客</span> 123的對應。 </p> <p>星期二，CRM資料庫會傳送資料檔案(<span class="filepath"> .sync</span>)至 <span class="keyword"> Audience Manager伺 </span>服器，並有下列記錄： </p> <p> 
+     <ul class="simplelist"> 
+      <li><code> ABC "gender"="male","luxury_shopper"="yes"</code> </li> 
+     </ul> </p> <p>在此例中， <span class="keyword"> Audience Manager</span>: </p> <p> 
+     <ul id="ul_7616432BF9874E7D94F3101C71F73C81"> 
+      <li id="li_DC4F5E63D8134A29B703BDF264F02F65">從儲存的ID同步對應中辨識訪客ABC。 </li> 
+      <li id="li_62E085FC184D41C3863B1CE832F77946"> 將特徵與訪 <code> male</code> 客 <code> luxury_shopper</code> 123個描述檔建立關聯。 </li> 
+     </ul> </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p><b>案例 2</b> </p> </td> 
+   <td colname="col2"> <p>星期一，CRM資料庫將資料檔案(<span class="filepath"> .sync</span>)推送至 <span class="keyword"> Audience Manager</span> 伺服器，並有下列記錄： </p> <p> 
+     <ul class="simplelist"> 
+      <li><code> DEF "gender"="female","wine_enthusiast"="yes"</code> </li> 
+     </ul> </p> <p> <span class="keyword"> Audience Manager</span> 沒有此訪客的記錄（或相關的訪客ID），因此不會處理此記錄。 </p> <p>星期二，訪客DEF登入。 此動作會啟動該訪客的第一個用戶端ID同步。 此動作會將訪客DEF對 <span class="keyword"> 應至Audience Manager</span> ID 456。 但是，此訪客沒有與其個人檔案關聯的CRM資料。 因此， <span class="keyword"> Audience Manager</span> 不會返回並重新處理舊檔案。 </p> <p>週三，CRM資料庫會將另一個資料檔案推送至 <span class="keyword"> Audience Manager</span> Server，並提供下列記錄： </p> <p> 
+     <ul class="simplelist"> 
+      <li><code> DEF "gender"="female","wine_enthusiast"="yes","dma"="paris"</code> </li> 
+     </ul> </p> <p>在此例中， <span class="keyword"> Audience Manager</span>: </p> 
+    <ul id="ul_E853DA091D9042DAB19774383841D3A3"> 
+     <li id="li_64D64A16E99E492BAAE1080867F854A9">從儲存的ID同步對應識別訪客DEF。 </li> 
+     <li id="li_9CEE7A7B1A954FF6AEEBF8844074CFBB">將特徵 <code> female</code>、 <code> paris</code>和 <code> wine_enthusiast</code> 與訪客456描述檔關聯。 </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p><b>案例3</b> </p> </td> 
+   <td colname="col2"> <p>星期一， <span class="keyword"> Audience Manager</span> Server會收到兩個檔案，其中包含下列記錄： </p> <p> <code> .sync</code> 檔案包含： </p> <p> 
+     <ul class="simplelist"> 
+      <li><code> GHI 123456789</code> </li> 
+     </ul> </p> <p> <code> .overwrite</code> 檔案包含： </p> 
+    <ul id="ul_084AE448C60447ACA9B1E0C30EAA3E3E"> 
+     <li id="li_C68B7BBFE7CA4D22B606D939E32FF4FB"><code> GHI "gender"="male" "wine_enthusiast"="no"</code> </li> 
+     <li id="li_FDBCAAFBD606477E8690EA80AD455A81"><code> JKL "gender"="female" "wine_enthusiast"="yes"</code> </li> 
+    </ul> <p><span class="keyword"> Audience Manager</span> 會從先前的ID同步，將訪客JKL的對應記錄儲存為ID 789。 </p> <p>在此例中， <span class="keyword"> Audience Manager</span>: </p> 
+    <ul id="ul_4D083CEA7F1B4F6BBBBB841C21293751"> 
+     <li id="li_6DABD380311D49738DAD98F5E6DE45B8">從儲存的ID同步對應識別訪客JKL。 </li> 
+     <li id="li_CCEF77240E5C4A03AAE347440D73F0BB">將特徵與 <code> female</code> 訪客 <code> wine_enthusiast</code> ID 789的描述檔建立關聯。 </li> 
+     <li id="li_273F8FD7C6214488A26AAFFA6DE043E5">忽略訪客GHI的特徵關聯，因為其ID僅在目前批次中同步。 若要將特徵與訪客GHI建立關聯，您必須將其納入未來的 <code> .overwrite</code> 檔案。 </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<br> 
 
 <!---
 * If the data provider is configured to use [Profile Link](../features/profile-merge-rules/merge-rules-overview.md) for cross-device targeting, the data available for targeting shortly after an ID sync identifies to the matching [!DNL Audience Manager] visitor ID.
