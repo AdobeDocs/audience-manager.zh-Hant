@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 8d31bc79fd221cffd33969278eade93a4b32a4d5
+source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 ---
 
@@ -14,6 +14,14 @@ source-git-commit: 8d31bc79fd221cffd33969278eade93a4b32a4d5
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
 點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象收集類似，事件呼叫會傳送至Audience manager資料收集伺服器([!UICONTROL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
+
+>[!IMPORTANT]
+>
+>若要讓Audience manager正確解譯其在事件呼叫中接收的欄位，並在 [Audience Optimization報表中呈現您的促銷活動資料](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)，您必須傳送中繼資料檔案，將這些欄位對應至人類可讀的值。 請參 [閱中繼資料檔案的概述和對應](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，並聯絡您的Audience Manager顧問或客戶服務，以設定中繼資料檔案的Amazon S3目錄。
+
+>[!NOTE]
+>
+>請連絡您的Adobe Audience manager諮詢或客戶主管，以取得用戶端網域的確切URL。
 
 ## 要求
 
@@ -36,7 +44,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 根據上述範例，瀏覽器會重新導向至下列範例 [!DNL URL]:
 
-[!DNL `https://adobe.com/callback?creative=123`]
+`https://adobe.com/callback?creative=123`
 
 ## 支援的巨集
 
@@ -85,7 +93,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
    <td colname="col1"> <p> <code> d_dpuuid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_dpuuid%</code> </p> </td> 
    <td colname="col2"> <p>資料提供者提供的唯一使用者ID。 </p> <p>通常用於 <code> d_dpid</code> 將使用者ID連結至資料提供者ID。 </p> </td> 
-  </tr> 
+  </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
@@ -157,7 +165,7 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 根據上述範例，瀏覽器會重新導向至下列範例 [!DNL URL]:
 
-[!DNL `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`]
+`https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
 
 >[!MORELIKETHIS]
 >
