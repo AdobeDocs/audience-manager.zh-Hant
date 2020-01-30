@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 中繼資料檔案的傳送方法
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
 translation-type: tm+mt
-source-git-commit: de51f27cac0d165d043e90db978a6949d6a43761
+source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 ---
 
@@ -14,6 +14,10 @@ source-git-commit: de51f27cac0d165d043e90db978a6949d6a43761
 # 中繼資料檔案的傳送方法{#delivery-methods-for-metadata-files}
 
 傳送或更新中繼資料檔案至您Audience manager帳戶 [!DNL Amazon S3] 的特殊目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
+
+>[!IMPORTANT]
+>
+> 請連絡您的Audience manager顧問或客戶服務，以開始並設定中繼資 [!DNL Amazon S3] 料檔案的目錄。
 
 ## 傳送路徑語法與範例 {#syntax}
 
