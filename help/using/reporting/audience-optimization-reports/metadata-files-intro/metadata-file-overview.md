@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 概述 {#overview}
 
-中繼資料及其使用方式的審查。 中繼資料檔案必須附有資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參 [閱讀者最佳化報表的資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)。
+中繼資料及其使用方式的審查。 中繼資料檔案必須附有資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參 [閱「對象最佳化報表的資料檔案」和「可操作的記錄檔](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)」。
 
 ### 中繼資料檔案包含其他資料的資料
 
