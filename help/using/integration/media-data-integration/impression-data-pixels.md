@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
+source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 ---
 
@@ -16,6 +16,10 @@ source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
 一種傳送媒體資料至Audience manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
 
 這種方法通常稱為「對創意素材進行像素化」。 這些資料點會由協力廠商廣告伺服器巨集動態插入像素程式碼中，這些巨集用於根據促銷活動的主要報告屬性來對應和報告所有印象和點按。 [!DNL Audience Manager] 匯整的資料可提供促銷活動績效的統一檢視，有助於識別自訂的轉換路徑，並協助客戶改善導致轉換的廣告伺服器事件順序。
+
+>[!IMPORTANT]
+>
+>若要讓Audience manager正確解譯其在事件呼叫中接收的欄位，並在 [Audience Optimization報表中呈現您的促銷活動資料](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)，您必須傳送中繼資料檔案，將這些欄位對應至人類可讀的值。 請參 [閱中繼資料檔案的概述和對應](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，並聯絡您的Audience Manager顧問或客戶服務，以設定中繼資料檔案的Amazon S3目錄。
 
 ## 事件呼叫語法
 
@@ -51,7 +55,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_adsrc </code> </td> 
-   <td colname="col2"> <p>您廣告商的資料來源ID或整合代碼。 </p> <p>「對象最佳 <span class="wintitle"> 化」報表 </span> 必要。 </p> </td> 
+   <td colname="col2"> <p>您廣告商的資料來源ID或整合代碼。 </p> <p>「對象最佳 <span class="wintitle"> 化」報表 </span> 必要。 </p> <p>選填。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_bu </code> </td> 
