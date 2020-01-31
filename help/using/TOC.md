@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 17c994d9bb818b72f23e336f9433495c2bcdbbb5
+source-git-commit: 3cda1eb649ee8ae0c522682503fa591e7bff9e35
 
 ---
 
@@ -373,7 +373,6 @@ source-git-commit: 17c994d9bb818b72f23e336f9433495c2bcdbbb5
    + [API常見問答集](faq/faq-api.md)
    + [Audience Lab常見問答集](faq/faq-audience-lab.md)
    + [客戶資料饋送常見問答集](faq/faq-cdf.md)
-   + [客戶服務——最常報告的問題](/help/using/faq/faq-top-customer-care-issues.md)
    + [資料收集與產品整合常見問答集](faq/faq-data-collection.md)
    + [傳入客戶資料擷取常見問答集](faq/faq-inbound-data-ingestion.md)
    + [隱私權與資料保留常見問題](faq/faq-privacy.md)
@@ -386,11 +385,6 @@ source-git-commit: 17c994d9bb818b72f23e336f9433495c2bcdbbb5
    + [概述](/help/using/help-legal/help-legal-overview.md)
    + [如果有問題](/help/using/help-legal/help-problem.md)
    + [聯絡與法律資訊](/help/using/help-legal/help-legal-contact.md)
-+ 主要客戶支援問題{#top-support-issues}
-   + [概述](/help/using/support-issues/support-issues-overview.md)
-   + [為什麼我的Onhoted特徵種群在10月15日左右降至0? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
-   + [為何我的特徵或區段不會顯示在「重疊報表」頁面中？](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
-   + [我們的唯讀使用者為何能夠建立、編輯或刪除特徵和區段？](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
 + 文件更新{#documentation-updates}
    + [2020年檔案更新](docs-updates/docs-2020.md)
    + [2019年檔案更新](docs-updates/docs-2019.md)
