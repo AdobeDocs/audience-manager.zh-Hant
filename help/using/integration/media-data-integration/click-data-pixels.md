@@ -6,18 +6,14 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
+source-git-commit: 132e36175a69a270ea608643049931fbc06efc69
 
 ---
 
 
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
-點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象收集類似，事件呼叫會傳送至Audience manager資料收集伺服器([!UICONTROL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
-
->[!IMPORTANT]
->
->若要讓Audience manager正確解譯其在事件呼叫中接收的欄位，並在 [Audience Optimization報表中呈現您的促銷活動資料](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)，您必須傳送中繼資料檔案，將這些欄位對應至人類可讀的值。 請參 [閱中繼資料檔案的概述和對應](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，並聯絡您的Audience Manager顧問或客戶服務，以設定中繼資料檔案的Amazon S3目錄。
+點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象 [收集類似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫會傳送至Audience manager資料收集伺服器([!UICONTROL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
 
 >[!NOTE]
 >
@@ -166,6 +162,11 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 根據上述範例，瀏覽器會重新導向至下列範例 [!DNL URL]:
 
 `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
+
+## 其他功能——觀眾最佳化報表
+
+您可以使用像素呼叫來強化「對象最 [佳化報表」](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [您想使用像素來為報表加電](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，請參閱中繼資料檔案的概述和對應。
+
 
 >[!MORELIKETHIS]
 >
