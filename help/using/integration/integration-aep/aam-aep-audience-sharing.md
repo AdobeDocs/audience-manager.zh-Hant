@@ -4,9 +4,9 @@ seo-description: 本文說明如何在Audience manager和Adobe Experience platfo
 seo-title: Audience manager與Adobe Experience platform之間的觀眾分享
 solution: Audience Manager
 title: Audience manager與Adobe Experience platform之間的觀眾分享
-keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing
+keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: e27ce2f607cadd7318a171359a5ae4daa071c486
+source-git-commit: 08e0a97faa74b97bf42d5729b76ea2caa14193da
 
 ---
 
@@ -26,9 +26,9 @@ Audience manager和Adobe Experience platform之間的觀眾分享功能可讓您
 您可以使用Experience platform中的Audience manager特徵和細分，將Audience manager資料新增至客戶個人檔案，並從Experience platform細分服務 [中獲益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)。
 
 在Audience Manager中，您可以將Experience platform區段用於資料管理平台使用案例，例如：
-* 新增 [第三方資料](/help/using/overview/data-types-collected.md#third-party-data) 至您的區段；
+* 將第 [三方資料新增](/help/using/overview/data-types-collected.md#third-party-data) 至您的區段；
 * [算法模型](/help/using/features/algorithmic-models/understanding-models.md);
-* 將區段啟用至Experience platform目前不支援的目標。
+* 將區段啟用至Experience platform目標目錄尚未支援的 [目標](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html)。
 
 此外，您的Experience platform區段會透過核心服務共用給其他Experience cloud解決 [方案](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)。
 
@@ -47,7 +47,7 @@ Audience manager和Adobe Experience platform之間的觀眾分享功能可讓您
 您的Audience manager特徵和區段會在Experience platform中顯示為 **Audiences** ，在區段工作流程中。 如需Audience manager細分和Experience platform特徵的詳細資訊，請參閱：
 
 * [區段服務概觀](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)
-* [體驗平台區段產生器使用指南](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segment-builder-guide.md)
+* [體驗平台區段產生器使用指南](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segment-builder-guide.md)
 
 <br> 
 
