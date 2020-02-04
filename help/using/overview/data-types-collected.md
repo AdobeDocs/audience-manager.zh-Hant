@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 收集的資料類型
 uuid: a2ddf470-32e6-41ec-a1d7-a6232ef084b9
 translation-type: tm+mt
-source-git-commit: f44b765836bf744f566ae51bdf3eaa1b87d8a90c
+source-git-commit: cee17904aa5ece54d1df7ad482505515846349b5
 
 ---
 
@@ -88,5 +88,4 @@ Audience manager會根據其可用的API和資料集，與其他資料提供者�
 
 許多客戶選擇與協力廠商資料比對合作夥伴合作。 這些實體與具有註冊要求的網站有關係，並可根據客戶的註冊網路，透過即時比對客戶資料檔案來處理客戶資料檔案。
 
-![](assets/data_provider_match_700px.png)
-
+![data-provider-match](assets/data-provider-match.png)
