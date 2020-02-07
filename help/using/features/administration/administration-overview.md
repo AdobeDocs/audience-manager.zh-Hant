@@ -1,6 +1,6 @@
 ---
 description: 「管理」功能表下的選項可讓您建立Audience manager使用者並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
-keywords: rbac; RBAC；基於角色；基於角色；基於角色的訪問控制
+keywords: rbac;RBAC;role based;role-based;role-based access controls
 seo-description: 「管理」功能表下的選項可讓您建立Audience manager使用者並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
 seo-title: 管理
 solution: Audience Manager
@@ -8,7 +8,7 @@ title: 管理
 topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 translation-type: tm+mt
-source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
+source-git-commit: 1bde60711ca53682b6ab936a7297daf66a1bb336
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 在中建立使 [!DNL Audience Manager] 用者，並指定使用者詳細資訊、登入狀態，以及指派使用者至群組。
 
-1. Click **[!UICONTROL Administration]** &gt; **[!UICONTROL Users]**.
+1. 按一下 **[!UICONTROL Administration]** > **[!UICONTROL Users]**.
 1. 按一 ![](assets/icon_add.png) 下以顯示 [!UICONTROL Create New User] 頁面。
 1. Under **[!UICONTROL User Details]**, fill in the fields:
    * **** 使用者名稱：指定Audience Manager的唯一使用者名稱。
@@ -46,7 +46,7 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
    * **** 鎖定：5次不正確的登入嘗試會鎖定使用者。
 1. 在 **[!UICONTROL Assigned Groups]**下方，從下拉式清單中，選取您要指派此使用者的所需群組。
 如需群組和權限的詳細資訊，請參 [閱建立群組](../../features/administration/administration-overview.md#create-group)。
-1. Click **[!UICONTROL Save]**.
+1. 按一下 **[!UICONTROL Save]**.
 
 ## 建立群組 {#create-group}
 
@@ -56,7 +56,7 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 
 要建立群組:
 
-1. Click **[!UICONTROL Administration]** &gt; **[!UICONTROL Groups]**.
+1. 按一下 **[!UICONTROL Administration]** > **[!UICONTROL Groups]**.
 1. 按一 ![](assets/icon_add.png) 下以開啟 [!UICONTROL Group Settings] 頁面。
 1. 在 [!UICONTROL Group Details]:
    * 命名群組。
@@ -66,7 +66,7 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 這會開啟您所選物件的權限視窗。
 1. 選中您希望群組成員擁有的權限的核取方塊。
 1. *（選用）* 將萬用 [字元權限指派給群組](../../features/administration/administration-overview.md#wild-card-permissions) 。
-1. Click **[!UICONTROL Save Group]**.
+1. 按一下 **[!UICONTROL Save Group]**.
 
 ## 瞭解萬用字元權限 {#wild-card-permissions}
 
@@ -134,3 +134,21 @@ source-git-commit: 6d2c749813871e52c3ef81581ed50f24fe7fd22c
 **信號**
 
 * `VIEW_ALL_SIGNALS` -使用者可檢視資料總管中擷取的所 [有訊號](/help/using/features/data-explorer/data-explorer-overview.md)。
+
+## 使用個案 {#use-cases}
+
+### 監視用戶訪問 {#monitoring-user-access}
+
+[!UICONTROL Role-Based Access Control] 可協助您監控使用者登入狀態，讓您清楚瞭解哪些人可以存取您的Audience manager實例。
+
+視您的業務需求而定，您可以視需要啟用和停用使用者帳戶。
+
+![monitor-user-access](assets/monitor-user-access.png)
+
+### 確保敏感資料源的訪問保護 {#protect-sensitive-data-sources}
+
+您可以針 [!UICONTROL Role-Based Access Control] 對每個使用者群組在特徵、區段和目標層級進行設定。
+
+此功能可協助您管理使用者檢視、建立、讀取、寫入和編輯特定資料集的方式，甚至限制使用者存取他們無法存取的資料集。
+
+![接入保護](assets/access-protection.png)
