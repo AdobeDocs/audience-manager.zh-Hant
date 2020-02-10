@@ -1,21 +1,25 @@
 ---
-description: 傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 在2018年5月，使用TLS 1.0、1.1和1.2的TLS通訊協定有三個版本。
-seo-description: 傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 在2018年5月，使用TLS 1.0、1.1和1.2的TLS通訊協定有三個版本。
-seo-title: 不再使用 TLS 1.0
+description: 傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS通訊協定有三個版本。
+seo-description: 傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS通訊協定有三個版本。
+seo-title: TLS 1.0和1.1取代
 solution: Audience Manager
-title: 不再使用 TLS 1.0
+title: TLS 1.0和1.1取代
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
 translation-type: tm+mt
-source-git-commit: f54064793aac81e3dd58e3b8966760f74c962880
+source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
 
 ---
 
 
-# 不再使用 TLS 1.0{#tls-deprecation}
+# TLS 1.0和1.1取代{#tls-deprecation}
 
-傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 在2018年5月，TLS通訊協定有三種版本在使用：TLS 1.0、1.1和1.2。
+傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 2018年5月，TLS通訊協定有三種版本在使用：TLS 1.0、1.1和1.2。
 
-2019年3月， [!DNL Adobe] 終止了對議定書的 [!DNL TLS 1.0] 支援。 Adobe Audience manager功能不適用於僅支援的瀏覽器使用者 [!DNL TLS 1.0]。 事實上，我們建議使 [!DNL TLS 1.2]用最新版的協定，即在編寫時。 所有現代瀏覽器都使用 [!DNL TLS 1.2]。 我們已為您收集瀏覽器、版本及其支援的清 [!DNL TLS] 單。 如需詳細資訊，請造 [訪此Wikipedia連結](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
+2019年3月， [!DNL Adobe] 終止了對議定書的 [!DNL TLS 1.0] 支援。 Adobe Audience manager功能不適用於僅支援瀏覽器的使用者 [!DNL TLS 1.0]。
+
+2020年3月， [!DNL Adobe] 將終止對議定書的 [!DNL TLS 1.1] 支援。 Adobe Audience manager功能將停止針對使用僅支援之瀏覽器的使用者運作 [!DNL TLS 1.1]。
+
+我們強烈建議使 [!DNL TLS 1.2]用協定的最新版本，即在編寫時。 所有現代瀏覽器都使用 [!DNL TLS 1.2]。 我們已為您收集瀏覽器、版本及其支援的清 [!DNL TLS] 單。 如需詳細資訊，請造 [訪此Wikipedia連結](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
 
 <table id="table_C273E20039074BB7B6CFB1B877A086B8"> 
  <thead> 
