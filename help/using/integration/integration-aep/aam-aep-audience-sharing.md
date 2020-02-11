@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience manager與Adobe Experience platform之間的觀眾分享
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: 08e0a97faa74b97bf42d5729b76ea2caa14193da
+source-git-commit: a7311c35c70bbfd0aac015524f6e65b0e59415f5
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 08e0a97faa74b97bf42d5729b76ea2caa14193da
 
 Audience manager和Adobe Experience platform之間的觀眾分享功能可讓您將Audience manager特徵和區段共用至Adobe Experience Platform，反之亦然。
 
-您可以使用Experience platform中的Audience manager特徵和細分，將Audience manager資料新增至客戶個人檔案，並從Experience platform細分服務 [中獲益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)。
+您可以使用Experience platform中的Audience manager特徵和細分，將Audience manager資料新增至客戶個人檔案，並從Experience platform細分服務 [中獲益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
 在Audience Manager中，您可以將Experience platform區段用於資料管理平台使用案例，例如：
 * 將第 [三方資料新增](/help/using/overview/data-types-collected.md#third-party-data) 至您的區段；
@@ -46,7 +46,7 @@ Audience manager和Adobe Experience platform之間的觀眾分享功能可讓您
 
 您的Audience manager特徵和區段會在Experience platform中顯示為 **Audiences** ，在區段工作流程中。 如需Audience manager細分和Experience platform特徵的詳細資訊，請參閱：
 
-* [區段服務概觀](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)
+* [區段服務概觀](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)
 * [體驗平台區段產生器使用指南](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segment-builder-guide.md)
 
 <br> 
