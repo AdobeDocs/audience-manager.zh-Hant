@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 傳入資料類型的檔案PGP加密
 uuid: 89caace1-0259-48fc-865b-d525ec7822f7
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8d2d841f8e94fd67c2165eb280b85ab18001d77e
 
 ---
 
@@ -20,6 +20,8 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 >[!IMPORTANT]
 >
 >我們目前不支援相同傳入資料檔案的加密和壓縮。 您可以選擇加密或壓 [縮傳入](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) 的檔案。
+>
+> 不過，請記住PGP加密包含內建壓縮。
 
 請依照下列步驟來加密傳入的資料檔案。
 
