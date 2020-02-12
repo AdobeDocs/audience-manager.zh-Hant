@@ -1,17 +1,17 @@
 ---
 description: 選項是，當將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
 seo-description: 選項是，當將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
-seo-title: ' 傳入資料傳輸檔案的檔案壓縮'
+seo-title: 傳入資料傳輸檔案的檔案壓縮
 solution: Audience Manager
 title: 傳入資料傳輸檔案的檔案壓縮
 uuid: 2a68f69c-60b0-4002-863b-302d2320e356
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 8d2d841f8e94fd67c2165eb280b85ab18001d77e
 
 ---
 
 
-#  傳入資料傳輸檔案的檔案壓縮{#file-compression-for-inbound-data-transfer-files}
+# 傳入資料傳輸檔案的檔案壓縮{#file-compression-for-inbound-data-transfer-files}
 
 選項是，當將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
 
@@ -23,7 +23,9 @@ Audience manager也支援解壓縮的檔案。
 
 >[!IMPORTANT]
 >
->我們目前不支援相同傳入資料檔案的加密和壓縮。 您可以選擇加密 [或壓縮](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md) 入站檔案。
+>我們目前不支援相同傳入資料檔案的加密和壓縮。 您可以選擇加密 [或壓縮](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md) 傳入的檔案。
+>
+> 不過，請記住PGP加密包含內建壓縮。
 
 ## Amazon S3壓縮
 
