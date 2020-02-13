@@ -6,26 +6,26 @@ solution: Audience Manager
 title: 傳入資料傳輸檔案的檔案壓縮
 uuid: 2a68f69c-60b0-4002-863b-302d2320e356
 translation-type: tm+mt
-source-git-commit: 8d2d841f8e94fd67c2165eb280b85ab18001d77e
+source-git-commit: b2e0b560a944f2ad63a48476be647f1355712342
 
 ---
 
 
 # 傳入資料傳輸檔案的檔案壓縮{#file-compression-for-inbound-data-transfer-files}
 
-選項是，當將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
+您可以將資料檔案傳送至Audience Manager時，加以壓縮。
 
 <!-- inbound-file-compression.xml -->
 
-Audience manager支援傳入、非 `.gz`同步資料傳輸的gzip()壓縮。
+Audience manager支援傳入、非`.gz`同步資料傳輸的gzip()壓縮。
 
 Audience manager也支援解壓縮的檔案。
 
 >[!IMPORTANT]
 >
->我們目前不支援相同傳入資料檔案的加密和壓縮。 您可以選擇加密 [或壓縮](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md) 傳入的檔案。
+>我們不支援使用gzip()壓縮的傳入檔案加`.gz`密。
 >
-> 不過，請記住PGP加密包含內建壓縮。
+> 要加密和壓縮入站檔案，請使用 [PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括檔案壓縮。
 
 ## Amazon S3壓縮
 
