@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 傳入資料傳輸檔案的檔案壓縮
 uuid: 2a68f69c-60b0-4002-863b-302d2320e356
 translation-type: tm+mt
-source-git-commit: b2e0b560a944f2ad63a48476be647f1355712342
+source-git-commit: 392b17e5a97038169e2cd36f2e71f5b4b997070c
 
 ---
 
@@ -25,7 +25,7 @@ Audience manager也支援解壓縮的檔案。
 >
 >我們不支援使用gzip()壓縮的傳入檔案加`.gz`密。
 >
-> 要加密和壓縮入站檔案，請使用 [PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括檔案壓縮。
+>要加密和壓縮入站檔案，請使用 [PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括檔案壓縮。
 
 ## Amazon S3壓縮
 
@@ -37,7 +37,7 @@ Audience manager也支援解壓縮的檔案。
 
 ## 最佳實務
 
-* 檔案應該 [!DNL .gzip] 壓縮(並具有副 [!DNL .gz] 檔名)。
+* 檔案應該 [!DNL .gzip] 壓縮(且副檔 [!DNL .gz] 名為)。
 * 壓縮檔案的最大壓 `.gz` 縮檔案大小為1 GB。
 * 最佳分割大小，以最快速／最早地處理檔案，大約是1 GB的解壓縮或200-300 MB的壓縮。
 * [!DNL Amazon S3] 對已上傳的檔案施加5 GB檔案大小限制。
