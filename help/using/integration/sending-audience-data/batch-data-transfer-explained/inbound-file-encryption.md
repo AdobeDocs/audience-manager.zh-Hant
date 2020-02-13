@@ -6,33 +6,33 @@ solution: Audience Manager
 title: 傳入資料類型的檔案PGP加密
 uuid: 89caace1-0259-48fc-865b-d525ec7822f7
 translation-type: tm+mt
-source-git-commit: 8d2d841f8e94fd67c2165eb280b85ab18001d77e
+source-git-commit: b2e0b560a944f2ad63a48476be647f1355712342
 
 ---
 
 
 # 傳入資料類型的檔案PGP加密{#file-pgp-encryption-for-inbound-data-types}
 
-選項是，當將資料檔案傳送至Audience manager時，您可 [!DNL PGP] 以加密資料檔案。
+您可以在將資料檔案傳送 [!DNL PGP] 至Audience manager時，使用加密方式加密資料檔案。
 
 <!-- c_encryption.xml -->
 
 >[!IMPORTANT]
 >
->我們目前不支援相同傳入資料檔案的加密和壓縮。 您可以選擇加密或壓 [縮傳入](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) 的檔案。
+>[!DNL PGP] 加密包括檔案壓縮。 傳送加 [!DNL PGP] 密的傳入檔案時，請確定您未使 [用](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) gzip(`.gz`)壓縮。
 >
-> 不過，請記住PGP加密包含內建壓縮。
+>[!DNL PGP] 在Audience manager中，也壓縮 [的加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md) 傳入檔案無效。
 
 請依照下列步驟來加密傳入的資料檔案。
 
 1. 下載 [Audience manager公開金鑰](./assets/adobe_pgp.pub)。
-1. 將公開金鑰匯入您信任的商店。
+2. 將公開金鑰匯入您信任的商店。
 
    例如，如果您使用 [!DNL GPG]，該命令可能類似於以下內容：
 
    `gpg --import adobe_pgp.pub`
 
-1. 通過運行以下命令驗證密鑰是否已正確導入：
+3. 通過運行以下命令驗證密鑰是否已正確導入：
 
    `gpg --list-keys`
 
@@ -44,7 +44,7 @@ source-git-commit: 8d2d841f8e94fd67c2165eb280b85ab18001d77e
    sub   4096R/E3F2A363 2013-11-01
    ```
 
-1. 使用以下命令加密入站資料：
+4. 使用以下命令加密入站資料：
 
    `gpg --recipient "Adobe AudienceManager" --cipher-algo AES --output $output.gpg --encrypt $inbound`
 
