@@ -7,14 +7,12 @@ title: 建立、定價和管理資料饋送
 topic: DIL API
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 979c853a3be94f1cda57e4f376d0033d6e8a06a5
 
 ---
 
 
 # 建立、定價和管理資料饋送 {#create-price-and-manage-data-feeds}
-
-資料饋送需要名稱、說明、資料來源和計畫類型。 動態消息會停用，直到您儲存並啟動動態消息為止。 在&gt;中設定公用或私用資料 [!UICONTROL Audience Marketplace] 饋送 [!UICONTROL My Shared Data]。 僅供資料銷售者使用。
 
 ## 建立公開或私人資料饋送 {#create-public-private-data-feed}
 
@@ -25,12 +23,12 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 您必須擁有管理員權限，才能建立公用或私用資料饋送。
 若要建立資料饋送：
 
-1. Click **[!UICONTROL New Data Feed]**.
+1. 按一下 **[!UICONTROL New Data Feed]**.
 1. 命名資料饋送。 資料購買者可以根據名稱搜尋您的動態消息。
 1. 提供簡短說明（最多255個字元）。
 
    正確的描述應正確描述您的動態消息。 例如，您可以包含行銷類別、人口統計和地理涵蓋範圍的文字(例如 [!DNL US] 北美地區)。 描述文字是可搜尋的，可協助購買者尋找或評估您的動態消息。 良好的說明是吸引訂閱者加入資料饋送的重要部分。
-1. 從選項中選擇資料 **[!UICONTROL Data Source]** 源。
+1. 從選項中選擇資料 **[!UICONTROL Data Source]** 源。 資料饋送僅限單一資料來源。 您無法將多個資料來源指派給相同的資料饋送。
 
    >[!IMPORTANT]
    >
@@ -40,10 +38,10 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
    動態消息可包含多個計畫。 計畫可包含多個使用案例。 如需詳細資訊，請 [參閱資料饋送的計畫類型](../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types)。
 
-1. 按一 **[!UICONTROL Save]** 下可節省資料費 *用，而不* 需加以啟動。
+1. 按一 **[!UICONTROL Save]** 下以儲存您的資料饋送， *而不* 需加以啟動。
 1. 若要儲存並啟用資料饋送：
    1. 將滑桿 **[!UICONTROL Availability]** 移至 **[!UICONTROL Active]**。
-   1. Click **[!UICONTROL Save]**.
+   1. 按一下 **[!UICONTROL Save]**.
    >[!NOTE]
    >
    >* 無法刪除已儲存和啟用的資料饋送。
@@ -178,7 +176,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 3. 在每個 [!UICONTROL Allow Access] 請求方塊的區段中，按一下核取標籤以核准請求，或按X以拒絕存取。
 4. 在確認彈出式視窗中確認或取消您選取的動作。
 
-##  資料提供者的折扣 {#discounts}
+## 資料提供者的折扣 {#discounts}
 
 在中 [!UICONTROL Audience Marketplace]，折扣可讓您降低個別訂閱者的資料饋送發佈價格。 您可以為已提交訂閱要求的訂閱者或已要求資料饋送詳細資訊的訂閱者提供折扣。 折扣適用於 [!DNL CPM] 固定費率饋送。 當您想要為新客戶提供訂閱獎勵或獎勵客戶忠誠度時，折扣會很有幫助。
 
