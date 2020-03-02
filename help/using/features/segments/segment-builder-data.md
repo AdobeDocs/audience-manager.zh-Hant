@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段產生器中的特徵和區段人口資料
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 2add6b77e167203dab66b5fa7b87b7c5fbeb3d48
 
 ---
 
@@ -136,11 +136,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 即時人口（現有）</span> </p> </td> 
-   <td colname="col2"> <p>即時檢視的裝置數目與目前的設定檔，當與裝置圖形連接的最多3個裝置設定檔合併時，包含 <span class="keyword"> Audience Manager檢視時符合區段的特性</span>。 </p> </td>
+   <td colname="col2"> <p>即時檢視的裝置數目與目前的設定檔，當與裝置圖形連接的多達100個其他裝置設定檔合併時，這些設定檔包含 <span class="keyword"> Audience Manager看到區段時符合的特性</span>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> 總人口（現有）</span> </p> </td> 
-   <td colname="col2"> <p>具有設定檔的裝置總數，當與裝置圖形連接的最多3個其他裝置設定檔合併時，這些設定檔都符合區段的資格。 </p> </td>
+   <td colname="col2"> <p>具有設定檔的裝置總數，當與裝置圖形連接的多達100個其他裝置設定檔合併時，這些設定檔都符合區段的資格。 </p> </td>
   </tr>
  </tbody>
 </table>
