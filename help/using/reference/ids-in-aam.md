@@ -22,7 +22,7 @@ Audience manager使用多個ID來識別並管理您傳送給它的資料。 如�
 
 雖然您可以透過其獨立名稱來參照大部分的ID，但大部分ID在透過DCS呼叫傳入資料時，應與各種字首搭配使用。 Audience manager會使用其中一些ID，而不會暴露給使用者，而使用者介面(UI)中也會顯示其他ID。
 
-若要瞭解下列範例中使用的字首，請參 [閱DCS API呼叫的支援屬性](../api/dcs-intro/dcs-api-reference/dcs-keys.md)
+若要瞭解下列範例中使用的字首，請參 [閱DCS API呼叫的支援屬性](../api/dcs-intro/dcs-api-reference/dcs-keys.md)。
 
 ## Audience managerID清單 {#id-list}
 
