@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 記錄資料和中繼資料檔案
 uuid: 80aa4bc3-c660-4e65-8c22-2ddbb7bddd4f
 translation-type: tm+mt
-source-git-commit: be988def0e9cb5cb6b4a926754dd24f9fd1f85fe
+source-git-commit: 5838eb61158cce10aa02b9286357a4f4abcbcce8
 
 ---
 
@@ -29,8 +29,3 @@ source-git-commit: be988def0e9cb5cb6b4a926754dd24f9fd1f85fe
 * [中繼資料檔案的命名慣例](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
 * [中繼資料檔案的內容格式](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
 * [中繼資料檔案的傳送方法](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)
-* [中繼資料檔案的狀態更新](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-update-status.md)
-
-
-
-
