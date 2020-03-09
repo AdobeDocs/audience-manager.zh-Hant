@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 客戶資料饋送常見問答集
 uuid: 7183b3e2-e999-4e1e-892f-2bab335c13b6
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7018705c130bf7c65f3a69da5e4bd9e0666423bc
 
 ---
 
@@ -65,9 +65,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 **如何檢查上傳至Amazon S3的資料的完整性？**
 
-大小超過16MiB的檔案會分割為16MiB區塊，並使用多部 [!DNL Amazon S3] 分上傳上傳至。
-
-[!DNL Amazon] 為多 `ETag` 部件上載生成值。 它會先計算每個已上載部分的個別MD5校驗和，然後將它們串連到單個字串中。 然後，計算字串的MD5校驗和。 然後，產生的校驗和( `ETag`)會附加一個連字型大小，以及用於上載的部件總數。 例如，在上 `ETag` 傳期間分割為5個部分的檔案可能如下所示： `2c51427d19021e88cf3395365895b6d4-5`
+[!DNL Amazon] 將大型檔案分割成較小的部分，然後使用多 [!DNL Amazon S3] 部分上傳來上傳檔案。 然後，它會為多 `ETag` 部件上傳產生一個值。 它會先計算每個已上載部分的個別MD5校驗和，然後將它們串連到單個字串中。 然後，計算字串的MD5校驗和。 然後，產生的校驗和( `ETag`)會附加一個連字型大小，以及用於上載的部件總數。 例如，在上 `ETag` 傳期間分割為5個部分的檔案可能如下所示： `2c51427d19021e88cf3395365895b6d4-5`
 
 <br> 
 
