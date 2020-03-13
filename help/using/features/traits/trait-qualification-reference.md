@@ -1,20 +1,20 @@
 ---
-description: 特徵資格或特徵實現在Audience manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
-keywords: 特徵限定；特徵實現；獨特特徵實現； UTR；特徵總量； TTP
-seo-description: 特徵資格或特徵實現在Audience manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
+description: 特徵資格或特徵實現在Audience Manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
+keywords: trait qualification;trait realization;Unique Trait Realizations;UTR;Total Trait Population;TTP
+seo-description: 特徵資格或特徵實現在Audience Manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
 seo-title: 特徵資格參考
 solution: Audience Manager
 title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
+source-git-commit: 2f8662aba70254e550bc15417463c3c06492a9d5
 
 ---
 
 
 # 特徵資格參考 {#trait-qualification-reference}
 
-特徵資格或特徵實現在Audience manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
+特徵資格或特徵實現在Audience Manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
 
 ## 依特徵類型區分特徵限定 {#trait-type}
 
@@ -32,7 +32,7 @@ source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
   </tr> 
   <tr> 
    <td colname="col1"> <p>已登錄特徵 </p> </td> 
-   <td colname="col2"> <p>特徵限定會在處理傳入檔案後發生，例如傳入檔案會匯入 <a href="../../faq/faq-inbound-data-ingestion.md"> Audience Manager</a> ，也就是特徵限定發生時。 </p> <p> 對於已登入的特徵，使用者設定檔的資格上限為1。 </p> </td> 
+   <td colname="col2"> <p>特徵限定會在處理傳入檔案後發生，例如傳入檔案會匯入 <a href="../../faq/faq-inbound-data-ingestion.md"> Audience Manager</a> ，也就是特徵限定發生時。 在建立已登入特徵後，您應等待約4小時，再上傳傳入檔案以進行處理。  </p> <p> 對於已登入的特徵，使用者設定檔的資格上限為1。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>演算法特徵 </p> </td> 
@@ -44,7 +44,7 @@ source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
   </tr>
   <tr> 
    <td colname="col1"> <p>作用中受眾特徵與資料來源同步特徵 </p> </td> 
-   <td colname="col2"> <p>「活 <span class="wintitle"> 動中的觀眾</span> 」特徵包含Audience manager帳戶中管理的所有 <span class="wintitle"> 裝置</span> 。 </p> <p><span class="wintitle"> 「資料來源同步特徵</span> 」會追蹤與資料來源關聯的所有使用者。 </p> <p>閱讀更多有關「 <a href="../../features/traits/client-activity-synced-audience-traits.md"> 作用中受眾特徵」和「資料來源同步特徵」的資訊</a>。 </p> </td>
+   <td colname="col2"> <p>「活 <span class="wintitle"> 動中的觀眾</span> 」特徵包含Audience Manager帳戶中管理的所有 <span class="wintitle"> 裝置</span> 。 </p> <p><span class="wintitle"> 「資料來源同步特徵</span> 」會追蹤與資料來源關聯的所有使用者。 </p> <p>閱讀更多有關「 <a href="../../features/traits/client-activity-synced-audience-traits.md"> 作用中受眾特徵」和「資料來源同步特徵」的資訊</a>。 </p> </td>
   </tr>
  </tbody>
 </table>
