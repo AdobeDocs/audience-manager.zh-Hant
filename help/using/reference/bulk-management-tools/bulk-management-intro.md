@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 批量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: c9dfddf728045bf2cbc01d5467a64ae95b449664
+source-git-commit: ee31681e5805bff274b4051a354886fcda0599ff
 
 ---
 
@@ -28,7 +28,7 @@ c_bulk_start.xml
 
 ## 概述 {#overview}
 
-此功能使用Microsoft excel試算表及巨集，對API進行安全、驗證的 [!DNL Audience Manager] 呼叫。 API提供可讓您大量進行變更的方法與服務。 您不需要知道如何編寫程式碼或使用我們的API來使用它。 工作表包含執行特定批量變更功能的欄標題和標籤。 若要進行大量變更，您只需將預先定義的標題新增至特定工作表、提供您要大量變更的資訊，然後按一下動作按鈕。 工作表和API可為您完成其餘的工作。
+此功能使用Microsoft Excel試算表及巨集，對API進行安全、驗證的 [!DNL Audience Manager] 呼叫。 API提供可讓您大量進行變更的方法與服務。 您不需要知道如何編寫程式碼或使用我們的API來使用它。 工作表包含執行特定批量變更功能的欄標題和標籤。 若要進行大量變更，您只需將預先定義的標題新增至特定工作表、提供您要大量變更的資訊，然後按一下動作按鈕。 工作表和API可為您完成其餘的工作。
 
 ## 下載 {#download}
 
@@ -39,7 +39,7 @@ c_bulk_start.xml
 若要使用 [!DNL Bulk Management Tools]，您需要下列項目：
 
 * 您的登 [!DNL Experience Cloud] 入資訊。 身為客戶，您應已擁有這些認證。
-* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20191205.xlsm) ，取得最新版本。
+* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20200311.xlsm) ，取得最新版本。
 * 在或64位 [!DNL macOS] 元上執行Microsoft Excel [!DNL Microsoft Windows]。 我們建議您使用最新版的Microsoft Excel。
 * 開啟工作表時，必須 **啟用宏** , [!DNL Bulk Management Tools] 才能使用。
 
