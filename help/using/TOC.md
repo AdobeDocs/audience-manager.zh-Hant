@@ -5,27 +5,27 @@ audience: end-user
 user-guide-title: Audience Manager User Guide
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
-# Audience manager使用指南 {#user-guide}
+# Audience Manager使用指南 {#user-guide}
 
-+ [Audience manager產品檔案](aam-home.md)
++ [Audience Manager產品檔案](aam-home.md)
 + 概述{#overview}
-   + [Audience manager概觀](overview/aam-overview.md)
+   + [Audience Manager概觀](overview/aam-overview.md)
    + [收集的資料類型](overview/data-types-collected.md)
    + [資料安全性](overview/data-security-and-privacy/data-security.md)
    + 資料隱私權{#data-privacy}
       + [資料隱私權概觀](overview/data-security-and-privacy/data-privacy.md)
       + [資料隱私權要求](overview/data-security-and-privacy/data-privacy-requests.md)
       + 資料隱私權參考 {#data-privacy-reference}
-         + [Audience manager識別碼](overview/data-security-and-privacy/data-privacy-ids.md)
+         + [Audience Manager識別碼](overview/data-security-and-privacy/data-privacy-ids.md)
          + [CCPA辭彙表](overview/data-security-and-privacy/aam-ccpa-glossary.md)
          + [GDPR辭彙表](overview/data-security-and-privacy/aam-gdpr-glossary.md)
          + [目的地的GDPR考量](overview/data-security-and-privacy/aam-gdpr-partners.md)
-         + [Audience manager客戶的GDPR準備指引](overview/data-security-and-privacy/aam-gdpr-readiness.md)
+         + [Audience Manager客戶的GDPR準備指引](overview/data-security-and-privacy/aam-gdpr-readiness.md)
       + 許可管理 {#consent-management}
          + [許可管理](overview/data-security-and-privacy/data-privacy-consent.md)
          + [適用 IAB TCF 的 Audience Manager 增效模組](overview/data-security-and-privacy/aam-iab-plugin.md)
@@ -47,8 +47,8 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + [管理測試群組](features/audience-lab/audience-lab-manage-test-groups.md)
       + [測試群組資訊](features/audience-lab/audience-lab-information-view.md)
       + [測試群組報表](features/audience-lab/audience-lab-reporting-view.md)
-      + [Audience lab使用案例](features/audience-lab/audience-lab-use-cases.md)
-      + [Audience lab進階功能](features/audience-lab/audience-lab-advanced.md)
+      + [Audience Lab使用案例](features/audience-lab/audience-lab-use-cases.md)
+      + [Audience Lab進階功能](features/audience-lab/audience-lab-advanced.md)
    + 訪客交易市場{#audience-marketplace}
       + [訪客交易市場](features/audience-marketplace/audience-marketplace.md)
       + 適用於資料提供者的Audience Marketplace{#audience-marketplace-for-data-providers}
@@ -85,7 +85,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
    + 目的地{#destinations}
       + [目標概觀](features/destinations/destinations.md)
       + [目標首頁](features/destinations/destinations-home.md)
-      + Adobe Experience cloud目標{#experience-cloud-destinations}
+      + Adobe Experience Cloud目標{#experience-cloud-destinations}
          + [設定Analytics目標](features/destinations/create-analytics-destination.md)
       + 以人為本的目的地 {#people-based}
          + [概觀與使用案例](features/destinations/people-based-destinations-overview.md)
@@ -99,7 +99,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
          + [可分享的觀眾](/help/using/features/destinations/people-based-destinations-reporting.md)
       + 裝置型目標（伺服器對伺服器） {#device-based}
          + [新增裝置型目標](features/destinations/add-device-based-destinations.md)
-         + [Audience manager裝置型目標清單](/help/using/features/destinations/device-based-destinations-list.md)
+         + [Audience Manager裝置型目標清單](/help/using/features/destinations/device-based-destinations-list.md)
          + [新增或編輯伺服器對伺服器目標的區段](features/destinations/add-edit-segments.md)
          + [將Twitter量身訂做的觀眾設定為自助服務裝置型目的地](features/destinations/twitter-tailored-audiences.md)
       + 自訂目標 {#custom-destinations}
@@ -208,7 +208,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
    + [入門狀態報告](reporting/onboarding-status-report.md)
    + [出站檔案歷史記錄](reporting/outbound-history-report.md)
    + [計算重疊和一般報告中的獨特用戶](reporting/unique-user-counts.md)
-   + [選取Audience manager報表中的資料取樣和錯誤率](reporting/report-sampling.md)
+   + [選取Audience Manager報表中的資料取樣和錯誤率](reporting/report-sampling.md)
 + API和SDK程式碼{#api-and-sdk-code}
    + [API和SDK程式碼概觀](api/api.md)
    + [Audience Manager API程式碼移轉](api/api-swagger-migration.md)
@@ -221,7 +221,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + DCS API{#dcs-apis}
          + [用於伺服器到伺服器資料傳輸的DCS API](api/dcs-intro/dcs-s2s/dcs-s2s.md)
          + [從DCS回應取得使用者ID和地區](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)
-         + [透過Experience Cloud ID服務取得使用者ID和地區](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
+         + [透過Adobe Experience Platform Identity Service取得使用者ID和地區](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
          + [進行伺服器對伺服器DCS API呼叫](api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)
       + DCS API參考{#dcs-api-reference}
          + [DCS API參考概觀](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
@@ -283,10 +283,10 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + [Google Publisher標籤的Audience Manager代碼](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
    + 與協力廠商目標整合 {#integrating-third-party}
       + [Facebook WCA整合](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
-      + [OAS作為Audience manager目標](integration/integrating-third-party/open-ad-server-destination.md)
-      + [OpenX做為Audience manager目標](integration/integrating-third-party/openx-destination.md)
-      + [DFP做為Audience manager目標](integration/aam-dfp.md)
-      + [將區段傳送至Google adWords再行銷清單](integration/integrating-third-party/rlsa-integration.md)
+      + [OAS作為Audience Manager目標](integration/integrating-third-party/open-ad-server-destination.md)
+      + [OpenX做為Audience Manager目標](integration/integrating-third-party/openx-destination.md)
+      + [DFP做為Audience Manager目標](integration/aam-dfp.md)
+      + [將區段傳送至Google AdWords再行銷清單](integration/integrating-third-party/rlsa-integration.md)
    + [實作Audience Manager](integration/implement-audience-manager.md)
    + 媒體資料整合{#media-data-integration}
       + [媒體資料整合概觀](integration/media-data-integration/media-data-integration.md)
@@ -310,7 +310,7 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
    + 傳送觀眾資料{#sending-audience-data}
       + [傳送觀眾資料](integration/sending-audience-data/send-audience-data.md)
       + 即時傳入資料整合 {#real-time-inbound-data-integration}
-         + [入站、即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
+         + [入站即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [像素式資料傳輸](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [即時傳入資料擷取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
       + 批資料傳輸流程{#batch-data-transfer-process}
@@ -325,10 +325,10 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
          + [傳入資料傳輸檔案的檔案壓縮](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [傳入處理後傳送給合作夥伴的範例訊息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
-   + 與Adobe Experience platform整合 {#integration-experience-platform}
-      + [Audience manager與Adobe Experience platform之間的觀眾分享](integration/integration-aep/aam-aep-audience-sharing.md)
-   + 與其他Experience cloud解決方案整合 {#integration-other-solutions}
-      + [將Audience manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
+   + 與Adobe Experience Platform整合 {#integration-experience-platform}
+      + [Audience Manager與Adobe Experience Platform之間的觀眾分享](integration/integration-aep/aam-aep-audience-sharing.md)
+   + 與其他Experience Cloud解決方案整合 {#integration-other-solutions}
+      + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從Adobe Analytics轉送至Audience Manager](integration/integration-other-solutions/audience-management-module.md)
       + [將Adobe Analytics區段發佈至Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
 + 參考{#reference}
@@ -365,10 +365,10 @@ source-git-commit: 475603733f9695aa3baae5ed02c8a13c8d867081
       + [平台架構：資料流圖](reference/system-components/components-platform-architecture.md)
       + [瞭解Edge資料中心](reference/system-components/components-edge.md)
    + [程式碼和文字元素的樣式慣例](reference/code-style-elements.md)
-   + [Audience manager中的時區](reference/aam-time-zones.md)
+   + [Audience Manager中的時區](reference/aam-time-zones.md)
    + [TLS 1.0和1.1取代](reference/tls-support.md)
    + [瞭解傳至 Demdex 網域的呼叫](reference/demdex-calls.md)
-   + [Audience manager中的訪客驗證狀態](reference/visitor-authentication-states.md)
+   + [Audience Manager中的訪客驗證狀態](reference/visitor-authentication-states.md)
 + 常見問題解答{#faqs}
    + [API常見問答集](faq/faq-api.md)
    + [Audience Lab常見問答集](faq/faq-audience-lab.md)
