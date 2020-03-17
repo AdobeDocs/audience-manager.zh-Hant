@@ -1,19 +1,19 @@
 ---
-description: 瞭解Adobe Audience manager滿足的一些常見發行者需求。
-seo-description: 瞭解Adobe Audience manager滿足的一些常見發行者需求。
+description: 瞭解Adobe Audience Manager滿足的一些常見發行者需求。
+seo-description: 瞭解Adobe Audience Manager滿足的一些常見發行者需求。
 seo-title: 發行者使用案例
 solution: Audience Manager
 title: 發行者使用案例
-uuid: 5f571d60-d902-4958-b5d3-8d09dda42c7
+uuid: 5f571d60-d902-4958-b5d3-8d09ddda42c7
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
 # 發行者使用案例{#publisher-use-cases}
 
-瞭解Adobe Audience manager滿足的一些常見發行者需求。
+瞭解Adobe Audience Manager滿足的一些常見發行者需求。
 
 <!-- 
 
@@ -111,11 +111,11 @@ c_pub_use_case.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p>透過DSP，將受眾目標購買延伸到非現場庫存來源。 </p> </td> 
-   <td colname="col2"> <p>將分析資料點與現場和場外展示廣告相協調，並在「售罄」情況下從觀眾庫存獲利。 </p> </td> 
+   <td colname="col2"> <p>將分析資料點與現場和場外展示廣告相協調，並在「售完」的情況下從觀眾庫存獲利。 </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_EE7A86BFFE534A59A9F8C7CAF46A31E5"> 
       <li id="li_D399592D9D904865BD319DC3621B832B">建立「所得稅研究人員」區段。 </li> 
-      <li id="li_D28AC8BA5E194176BB8736B089B3C2F7">將銷售給Turbo Tax的線上廣告宣傳與透過Adobe Media Optimizer等DSP的非現場觸及擴充宣傳一致。 </li> 
+      <li id="li_D28AC8BA5E194176BB8736B089B3C2F7">將銷售給Turbo Tax的線上廣告宣傳與透過Adobe Advertising Cloud等DSP的非現場觸及擴充宣傳一致。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
