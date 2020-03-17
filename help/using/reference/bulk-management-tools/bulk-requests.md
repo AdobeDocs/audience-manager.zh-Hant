@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 大量請求
 uuid: 0192d26a-4cea-4e12-9fea-388b92b382f1
 translation-type: tm+mt
-source-git-commit: cb17d417aa6b3cc213e69c5d71051f235d81c2a5
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -23,18 +23,18 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支 *援* 。 [!DNL Audience Manager]這種工具僅為方便和禮貌而提供。 若是大量變更，我們建議您改 [用Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
+>[UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
 
 工 [!UICONTROL Request] 作表沒有其自己的列標題集，您也不需要將ID複製到任何列。 它會根據您在工具列中按一下的動作按鈕傳回資料。 此外，選用的報表功能會傳回像素觸發的頻率計數，以及數個固定時間間隔的獨特使用者計數。
 
 若要進行大量請求，請開啟工作 [!UICONTROL Bulk Management Tools] 表並：
 
-1. Click the **[!UICONTROL Request]** tab.
+1. 按一下標 **[!UICONTROL Request]** 簽。
 2. 在工作表頂端的工具列中，按一下與您要處理的資料對應的請求按鈕。 您可以要求：
 
    * 演算法模型
    * 資料來源
-   *  衍生信號
+   * 衍生信號
    * 目標映射
    * 演算法、規則型和已登入特徵
    * 區段
