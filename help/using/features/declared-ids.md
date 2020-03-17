@@ -251,7 +251,7 @@ DIL.create({
 
 >[!NOTE]
 >
->如果您使用不 [!DNL API] 同的組合進行呼 `declaredID` 叫，新組合將僅用於該呼叫。 進一步的一般事件呼叫會使用原始 `DIL.create` 組 `declaredID` 合。
+>如果您使用不 [!DNL API] 同的組合進行 `declaredID` 呼叫，新組合將僅用於該呼叫。 進一步的一般事件呼叫會使用原始 `DIL.create` 組 `declaredID` 合。
 
 ```js
 DIL.getDil('partner name').api.signals({...}).declaredId({
