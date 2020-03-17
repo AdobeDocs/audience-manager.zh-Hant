@@ -99,7 +99,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ## 步驟4 —— 在Facebook廣告管理員中將對象指派至促銷活動 {#step-4-assign-audience-to-campaign}
 
-建立「自訂對象」後，將其指派至廣告促銷活動。 建立新促銷活動或編輯現有促銷活動，您會發現新建立的「對象」會列在Facebook UI中。 如果Audience Manager將其納入區段，您的廣告促銷活動將會鎖定在瀏覽器上瀏覽過像素觸發的使用者。
+建立「自訂對象」後，將其指派至廣告促銷活動。 建立新的促銷活動或編輯現有的促銷活動，您會發現新建立的「對象」會列在Facebook UI中。 如果Audience Manager將其納入區段，您的廣告促銷活動將會鎖定在瀏覽器上瀏覽過像素觸發的使用者。
 
 ## 摘要 {#summary}
 
