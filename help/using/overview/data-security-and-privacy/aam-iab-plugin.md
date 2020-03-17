@@ -107,7 +107,7 @@ Audience Manager的運作方式不同，視Audience Manager在IAB TCF同意字�
 
 Audience Manager會根據IAB TCF評估並接受在 [像素呼叫中](../../integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)，傳遞的同意。
 
-像素通常由Audience Manager客戶放在其合作夥伴頁面上，或置於廣告伺服器中以納入廣告回應。 在第一種情況下，您的合作夥伴必須以程式設計方式擷取許可參數，並在引發之前將其新增至像素。 在第二種情況中，廣告伺服器會將其從供應端平台(SSP)或發佈商廣告伺服器接收的同意參數附加至所有像素，這種情況較為常見，並於下文詳細說明。
+像素通常由Audience Manager客戶放在其合作夥伴頁面上，或置於廣告伺服器中以納入廣告回應。 在第一種情況下，您的合作夥伴必須以程式設計方式擷取許可參數，並在引發之前將其新增至像素。 在第二種情況中，廣告伺服器會將其從供應端平台(SSP)或發行者廣告伺服器接收的同意參數附加至所有像素，這種情況較為常見，並於下文詳細說明。
 
 Audience Manager使用兩個參數在像素呼叫中傳遞使用者同意：
 
