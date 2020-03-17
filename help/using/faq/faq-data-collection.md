@@ -3,15 +3,15 @@ description: 常見的資料收集與整合問題與問題。
 seo-description: 常見的資料收集與整合問題與問題。
 seo-title: 資料收集與產品整合常見問答集
 solution: Audience Manager
-title: ' 資料收集與產品整合常見問答集'
+title: 資料收集與產品整合常見問答集
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 translation-type: tm+mt
-source-git-commit: 0921cd69ffcb75768acee99685b0d80b8bef0be6
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
-#  資料收集與產品整合常見問答集{#data-collection-and-product-integration-faq}
+# 資料收集與產品整合常見問答集{#data-collection-and-product-integration-faq}
 
 常見的資料收集與整合問題與問題。
 
@@ -45,7 +45,7 @@ faq_data_collection_integration.xml
 
 | 項目 | 地址 |
 ---------|----------|
-|  ftp-in.demdex.com | 54.225.117.163 |
+| ftp-in.demdex.com | 54.225.117.163 |
 | ftp-out.demdex.com | 23.23.188.76 |
 
 <br> 
@@ -64,7 +64,7 @@ faq_data_collection_integration.xml
 
 * 直 [!UICONTROL DIL] 接放入 `s_code`。
 
-* 服務 [!UICONTROL DIL] 和 `s_code` 穿透 [!DNL Adobe Launch] 或 [!DNL Adobe DTM]。
+* 服務 [!UICONTROL DIL] 和 `s_code` 穿透 [!DNL Adobe Experience Platform Launch] 或 [!DNL Adobe DTM]。
 
 See [Data Integration Library (DIL) API](../dil/dil-overview.md).
 
@@ -175,7 +175,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 >[!NOTE]
 >
->只有在設定Cookie的裝置觸發進一步活動後，產生的UUID才會在後端資料儲存中實作。
+>只有在設定Cookie的裝置觸發進一步活動後，才會在後端資料儲存中實作產生的UUID。
 
 因此，報表不會反映呼叫中已宣告的ID所觸發的事件。 建議您在對的事件測試呼叫中使用UUID、ECID（先前稱為MID）或行動裝置ID [!UICONTROL DCS]。 然後，您可以驗證和中的特徵和區 [!UICONTROL General Reports] 段實現 [!UICONTROL Trend Reports]。
 
