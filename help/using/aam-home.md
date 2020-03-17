@@ -1,20 +1,20 @@
 ---
 description: Audience Manager 提供領先業界的線上讀者資料管理服務。我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
 seo-description: Audience Manager(AAM)的技術檔案與自助服務。 AAM為線上受眾資料管理提供業界領先的服務，並為數位廣告商和發佈商提供所需的工具，以控制和運用其資料資產，協助推動銷售成功。
-seo-title: Adobe Audience manager產品技術檔案
+seo-title: Adobe Audience Manager產品技術檔案
 solution: Audience Manager
-title: Audience manager產品檔案
+title: Audience Manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: df33d16269101fd8d9c1dbb791c5a1f5ef647a0b
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
 
-# Audience manager產品檔案 {#audience-manager-product-documentation}
+# Audience Manager產品檔案 {#audience-manager-product-documentation}
 
-本技術檔案指南針對Audience manager提供自助協助，此為領先業界的線上觀眾資料管理服務。 我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
+本技術檔案指南針對Audience Manager提供自助協助，此為領先業界的線上觀眾資料管理服務。 我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
 
 ## 使用本產品檔案指南
 
@@ -24,14 +24,14 @@ source-git-commit: df33d16269101fd8d9c1dbb791c5a1f5ef647a0b
 
 ## 如何閱讀本頁
 
-* 首先，請探索 **Audience manager主要功能區** ，以取得Audience manager可協助您解決的問題快照。 另請參閱 [Audience Manager概觀](/help/using/overview/aam-overview.md) ，然後返回本頁。
-* 接下來，請 **閱讀Audience manager快速入門** ，以熟悉Audience manager概念。 請確定您也檢閱商業與技術實作指南。
-* 請參閱最新的Audience manager發行說明，並閱讀「發行說明」和「最新功能」一節中 **的最新功能**。
-* 最後，您可以在學習中心——建議的Audience manager和Experience cloud資源一節中探索更多Experience cloud資源，例如論壇、視訊教學課程、面對面和線上培訓課程 ****。
+* 首先，請探索 **Audience Manager主要功能區** ，以取得Audience Manager可協助您解決的問題快照。 另請參閱 [Audience Manager概觀](/help/using/overview/aam-overview.md) ，然後返回本頁。
+* 接下來，請 **閱讀Audience Manager快速入門** ，以熟悉Audience Manager概念。 請確定您也檢閱商業與技術實作指南。
+* 請參閱最新的Audience Manager發行說明，並閱讀「發行說明」和「最新功能」一節中 **的最新功能**。
+* 最後，您可以在學習中心——建議的Audience Manager和Experience Cloud資源一節中探索更多Experience Cloud資源，例如論壇、視訊教學課程、面對面和線上培訓課程 ****。
 
 <br> 
 
-## Audience manager主要功能
+## Audience Manager主要功能
 
 <table>
    <td>
@@ -69,14 +69,14 @@ source-git-commit: df33d16269101fd8d9c1dbb791c5a1f5ef647a0b
 
 <br> 
 
-## Audience manager快速入門
+## Audience Manager快速入門
 
 <table> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>重要概念檔案</b></p>
-   <p>請閱讀下列頁面，進一步瞭解Audience manager概念： 
-   <ul><li><a href="/help/using/overview/aam-overview.md"> Audience manager概觀</a></li><li><a href="/help/using/reference/signal-trait-segment.md">信號、特徵和區段</a></li><li><a href="/help/using/reference/aam-glossary.md"> 字彙表</a> </li><li><a href="/help/using/reference/ids-in-aam.md">ID的索引</a></li></ul></p>
+   <p>請閱讀下列頁面，進一步瞭解Audience Manager概念： 
+   <ul><li><a href="/help/using/overview/aam-overview.md"> Audience Manager概觀</a></li><li><a href="/help/using/reference/signal-trait-segment.md">信號、特徵和區段</a></li><li><a href="/help/using/reference/aam-glossary.md"> 字彙表</a> </li><li><a href="/help/using/reference/ids-in-aam.md">ID的索引</a></li></ul></p>
    <br> 
    <p><b>實作Audience Manager</b></p>
    <p> 閱讀以下頁面，開始實作Audience Manager:
@@ -89,7 +89,7 @@ source-git-commit: df33d16269101fd8d9c1dbb791c5a1f5ef647a0b
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="/help/using/api/rest-api-main/aam-api-getting-started.md">REST API快速入門</a></li>
      <li><a href="/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md">開始使用DCS API</a></li>
-     <li><a href="https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">將Audience Manager擴充功能新增至Adobe Launch</a></li>
+     <li><a href="https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">將Audience Manager擴充功能新增至Adobe Experience Platform Launch</a></li>
     <li><a href="https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager">將Audience Manager新增至您的應用程式</a></li>
      </ul> </p>
     </td>
@@ -118,7 +118,7 @@ source-git-commit: df33d16269101fd8d9c1dbb791c5a1f5ef647a0b
      <ul id="ul_47C012F6AB3E4B73BA357027F4D15369">
      <li><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/rest-apis/aam-api-getting-started.html">Getting Started with REST APIs</a></li>
      <li><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-event-calls/dcs-event-calls.html">Get started with the DCS API</a></li>
-     <li><a href="https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">Add the Audience Manager extension to Adobe Launch</a></li>
+     <li><a href="https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html">Add the Audience Manager extension to Adobe Experience Platform Launch</a></li>
     <li><a href="https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-audience-manager">Add Audience Manager to your app</a></li>
      </ul> </p>
     </td>
@@ -155,7 +155,7 @@ source-git-commit: df33d16269101fd8d9c1dbb791c5a1f5ef647a0b
      請參閱最新的 <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 發行說明</a>，瞭解全新功能和修正內容。</p> 
      <br> 
      <p> <b>最新功能</b> </p> <p> 
-     閱讀有關最新Audience manager功能的資訊：</p>
+     閱讀有關最新Audience Manager功能的資訊：</p>
      <p><ul><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報告</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">加州消費者隱私權法案(CCPA)支援與隱私權檔案大修</a></li>
      <li><a href="/help/using/features/segments/trait-recommendations.md">Adobe Sensei支援的Audience Marketplace資料智慧建議</a></li>
@@ -186,7 +186,7 @@ Read about the latest Audience Manager features:
 
 <br> 
 
-## 學習中心——建議的Audience manager和Experience cloud資源
+## 學習中心——建議的Audience Manager和Experience Cloud資源
 
 
 <table> 
@@ -194,14 +194,14 @@ Read about the latest Audience Manager features:
   <tr> 
    <td colname="col2"> 
      <p> <b>Experience Cloud 資源</b> </p>
-     <p>請造訪以下連結，以連絡社群論壇中的其他Audience manager客戶，檢視我們功能的教學課程影片，或在學習與支援中心疑難排解問題。</p>
+     <p>請造訪以下連結，以連絡社群論壇中的其他Audience Manager客戶，檢視我們功能的教學課程影片，或在學習與支援中心疑難排解問題。</p>
      <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
-      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Audience manager社群論壇</a> </li>
-      <li><a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html" format="http" scope="external"> Audience manager教學課程</a> </li> 
+      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Audience Manager社群論壇</a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html" format="http" scope="external"> Audience Manager教學課程</a> </li> 
       <li id="li_1737D63307024F26B1F967621613A5AC"><a href="https://www.adobe.com/privacy.html" format="http" scope="external"> Adobe 隱私中心</a> </li>  
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe訓練與認證</a> </li> 
-      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/support/experience-cloud.html" scope="external" format="https">Experience cloud產品檔案首頁</a> </li> 
+      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/support/experience-cloud.html" scope="external" format="https">Experience Cloud產品檔案首頁</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external"> Audience Manager 學習與支援</a> </li> 
      </ul> </p> 
      <br> 
