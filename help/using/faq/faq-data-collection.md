@@ -175,7 +175,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 >[!NOTE]
 >
->只有在設定Cookie的裝置觸發進一步活動後，才會在後端資料儲存中實作產生的UUID。
+>只有在設定Cookie的裝置觸發進一步活動後，產生的UUID才會在後端資料儲存中實作。
 
 因此，報表不會反映呼叫中已宣告的ID所觸發的事件。 建議您在對的事件測試呼叫中使用UUID、ECID（先前稱為MID）或行動裝置ID [!UICONTROL DCS]。 然後，您可以驗證和中的特徵和區 [!UICONTROL General Reports] 段實現 [!UICONTROL Trend Reports]。
 
