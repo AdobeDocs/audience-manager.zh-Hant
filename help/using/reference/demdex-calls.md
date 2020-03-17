@@ -1,19 +1,19 @@
 ---
-description: Audience Manager 及 Experience Cloud ID 服務會從 demdex.net 網域呼叫和接收資料。Adobe似乎正在與不同尋常的第三方網域合作，但事實並非如此。 本節說明demdex.net呼叫中的元素。
-seo-description: Audience Manager 及 Experience Cloud ID 服務會從 demdex.net 網域呼叫和接收資料。Adobe似乎正在與不同尋常的第三方網域合作，但事實並非如此。 本節說明demdex.net呼叫中的元素。
+description: Audience Manager和Adobe Experience Platform Identity Service會呼叫demdex.net網域並從中接收資料。 Adobe似乎正在與不同尋常的第三方網域合作，但事實並非如此。 本節說明demdex.net呼叫中的元素。
+seo-description: Audience Manager和Adobe Experience Platform Identity Service會呼叫demdex.net網域並從中接收資料。 Adobe似乎正在與不同尋常的第三方網域合作，但事實並非如此。 本節說明demdex.net呼叫中的元素。
 seo-title: 瞭解傳至 Demdex 網域的呼叫
 solution: Audience Manager
 title: 瞭解傳至 Demdex 網域的呼叫
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
 
 # 瞭解傳至 Demdex 網域的呼叫{#understanding-calls-to-the-demdex-domain}
 
-Audience Manager 及 Experience Cloud ID 服務會從 demdex.net 網域呼叫和接收資料。Adobe似乎正在與不同尋常的第三方網域合作，但事實並非如此。 本節說明demdex.net呼叫中的元素。
+Audience Manager和Adobe Experience Platform Identity Service會呼叫demdex.net網域並從中接收資料。 Adobe似乎正在與不同尋常的第三方網域合作，但事實並非如此。 本節說明demdex.net呼叫中的元素。
 
 <table id="table_B846CBEDDA4C4AD19416F7C27FC325C6"> 
  <thead> 
@@ -29,17 +29,17 @@ Audience Manager 及 Experience Cloud ID 服務會從 demdex.net 網域呼叫和
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dpm</code> </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> DPM</span> 是「資料提供者 <span class="wintitle"> 符合」的縮寫</span>。 它會告訴內部 <span class="keyword"> Adobe</span> 系統， <span class="keyword"> Audience Manager或</span><span class="wintitle"></span> ID服務的呼叫會傳入客戶資料以進行同步化或請求ID。 這是您從Audience manager或 <code> demdex.net</code><span class="keyword"> ID</span> 服務看到的最常見呼叫 <span class="wintitle"></span>。 </p> <p><span class="wintitle"> DPM呼叫基</span> 礎知識： </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> DPM</span> 是「資料提供者 <span class="wintitle"> 符合」的縮寫</span>。 它會告訴內部 <span class="keyword"> Adobe</span> 系統， <span class="keyword"> Audience Manager或</span><span class="wintitle"></span> ID服務的呼叫會傳入客戶資料以進行同步化或請求ID。 這是您從Audience Manager或 <code> demdex.net</code><span class="keyword"> ID</span> 服務看到的最常見呼叫 <span class="wintitle"></span>。 </p> <p><span class="wintitle"> DPM呼叫基</span> 礎知識： </p> <p> 
      <ul id="ul_44023BB060774518BE414EE10820C141"> 
-      <li id="li_0F94D1988A6944BA885FD40AB26FC49F"> <b> <span class="keyword"> Audience Manager</span></b>:來自 <span class="wintitle"> Audience Manager的</span> DPM <span class="keyword"> 呼叫會將資料傳送至資料收集伺服器和</span> 快取設定檔 <span class="wintitle"></span><span class="wintitle"></span>伺服器。 請參閱 <a href="../reference/system-components/components-data-collection.md"> 資料收集元件</a>。 </li> 
-      <li id="li_5A7EA9EE16EE4D828F0A24AE2B969122"> <b> <span class="wintitle"> ID服務</span></b>:來自 <span class="wintitle"> ID服務的</span><span class="wintitle"></span> DPM呼叫是對訪客ID的請求。 請參 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> 閱Cookie和Experience Cloud ID服務</a> , <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_id_request.html" format="https" scope="external"> 以及Experience Cloud ID服務如何請求和設定ID</a>。 </li> 
-     </ul> </p> <p> <p>注意： <span class="wintitle"> ID服務</span> ，客戶可以變更網域名稱中的 <span class="wintitle"> DPM</span> 首碼。 請參 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-subdomain-config.html" format="https" scope="external"> 閱audienceManager server和audienceManagerServerSecure</a>。 </p> </p> </td> 
+      <li id="li_0F94D1988A6944BA885FD40AB26FC49F"> <b> <span class="keyword"> Audience Manager</span></b>:來自 <span class="wintitle"> Audience Manager的</span> DPM <span class="keyword"> 呼叫會將資料傳送至資料收集伺服器</span> 和快取設定檔 <span class="wintitle"></span><span class="wintitle"></span>伺服器。 請參閱 <a href="../reference/system-components/components-data-collection.md"> 資料收集元件</a>。 </li> 
+      <li id="li_5A7EA9EE16EE4D828F0A24AE2B969122"> <b> <span class="wintitle"> ID服務</span></b>:來自 <span class="wintitle"> ID服務的</span><span class="wintitle"></span> DPM呼叫是對訪客ID的請求。 請參 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> 閱Cookie和Adobe Experience Platform Identity Service</a><a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_id_request.html" format="https" scope="external"> ，以及Adobe Experience Platform Identity Service如何請求和設定ID</a>。 </li> 
+     </ul> </p> <p> <p>注意： <span class="wintitle"> ID服務</span> ，客戶可以變更網域名稱中的 <span class="wintitle"> DPM</span> 首碼。 請參 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-subdomain-config.html" format="https" scope="external"> 閱audienceManager Server和audienceManagerServerSecure</a>。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >
->* [Experience Cloud ID 服務](https://marketing.adobe.com/resources/help/en_US/mcvid/)
+>* [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)
 >* [Audience Manager Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html)
 
