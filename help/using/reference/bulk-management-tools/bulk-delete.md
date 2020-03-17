@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 大量刪除
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
 translation-type: tm+mt
-source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支 *援* 。 [!DNL Audience Manager]這種工具僅為方便和禮貌而提供。 若是大量變更，我們建議您改 [用Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
+>[UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ source-git-commit: 30d4cec4502a2cf8b217816ea4ae62eb1b22f641
 要刪除多個物料，請開啟工作 [!UICONTROL Bulk Management Tools] 表並：
 
 1. 按一下 **[!UICONTROL Headers]** 標籤，並複製您要新增項目的建立標題。
-2. Click the **[!UICONTROL Delete]** tab.
+2. 按一下標 **[!UICONTROL Delete]** 簽。
 3. 將刪除標題貼入更新工作表的第一列。
 4. 在標題下方的欄中，貼上或輸入您要刪除的物件的ID。
 5. 提供必要 [的登入資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然後按一 **[!UICONTROL Submit]**&#x200B;下。
