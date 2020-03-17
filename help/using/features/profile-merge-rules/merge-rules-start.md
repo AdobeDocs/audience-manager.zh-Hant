@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 ---
 
@@ -51,7 +51,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 * **[!UICONTROL Use as a Device Graph]**:此控制項僅適用於列為資料提供者的帳戶。 選取此核取方塊會將資料來源建立為裝置圖表，並讓您與其他客戶共 [!DNL Audience Manager] 用。 與您的顧 [!DNL Audience Manager] 問合作，以設定資料提供者身分，並指定應與哪些 [!UICONTROL Data Source] 客戶共用此資料。 您的顧問將透過內部布建程式來布建您的帳戶和裝置圖形共用。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**:此控制項可讓您設定非作用中客戶ID的資料保留期。 這會決定客戶ID上次在Audience manager平台上顯示後，Audience manager在我們的資料庫中保留多久的時間。 預設值為24個月（720天）。 您可設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計算為30天。 Audience manager會根據您為非作用中客戶ID設定的資料保留率，執行每週刪除非作用中客戶ID一次的程式。
+* **[!UICONTROL Data retention for inactive Customer IDs]**:此控制項可讓您設定非作用中客戶ID的資料保留期。 這會決定客戶ID上次在Audience Manager平台上顯示後，Audience Manager在我們的資料庫中保留多久的時間。 預設值為24個月（720天）。 您可設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計算為30天。 Audience Manager會根據您為非作用中客戶ID設定的資料保留率，執行每週刪除非作用中客戶ID一次的程式。
 
 與這些設定關聯的文本欄位允許您使用「配置檔案合 [!UICONTROL Data Source] 並規則」選項中顯示的別名來 [更名](merge-rule-definitions.md)。 例如，如果向中添加別名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;該名稱將出現在列 [!UICONTROL Authenticated Profile Options] 表中。 如果向中添加別名， **[!UICONTROL Use as a Device Graph]**&#x200B;該名稱將出現在列 [!UICONTROL Device Options] 表中。
 
@@ -65,7 +65,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 <!-- create-profile-merge-rule.xml -->
 
-**** 必要條件：需要跨裝置資料來源才能建立 [!UICONTROL Profile Merge Rule]。 請參 [閱建立資料來源](../manage-datasources.md#create-data-source)。
+**必要條件：** 需要跨裝置資料來源才能建立 [!UICONTROL Profile Merge Rule]。 請參 [閱建立資料來源](../manage-datasources.md#create-data-source)。
 
 >[!TIP]
 >
@@ -97,11 +97,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    * **[!UICONTROL Current Device Profile]**
    * **[!UICONTROL Profile Link Device Graph]**
    * **[!UICONTROL Device Co-op]**
-4. Click **[!UICONTROL Save]**.
+4. 按一下 **[!UICONTROL Save]**.
 
 ## 設定合併規則代碼 {#configure-merge-rule-code}
 
-請依照下列指示來設定 [!UICONTROL Experience Cloud ID Service]、 [!UICONTROL DIL]和行動 [!DNL SDK] 程式碼，以搭配您的合併規則運作。
+請依照下列指示來設定 [!UICONTROL Adobe Experience Platform Identity Service]、 [!UICONTROL DIL]和行動 [!DNL SDK] 程式碼，以搭配您的合併規則運作。
 
 <!-- merge-rules-configure-code.xml -->
 
@@ -109,13 +109,13 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 您必須先設定跨 [裝置資料來源](#create-data-source) ，並設 [定描述檔合併規](#create-profile-merge-rule) 則 *,* 才能完成這些程式。
 
-## 針對Experience Cloud ID服務客戶 {#id-service-customers}
+## 針對Adobe Experience Platform Identity Service客戶 {#id-service-customers}
 
-使 [!UICONTROL Experience Cloud ID Service] 用時建議使用 [DIL](../../dil/dil-overview.md) 和最新版本 [!UICONTROL Profile Merge Rules]。 不過，您不必使用此 [!UICONTROL Experience Cloud ID Service] 功能即可。 如果您只是使用，請 [!UICONTROL DIL]參閱下 [方的舊版DIL](#legacy-dil) 。
+使 [!UICONTROL Adobe Experience Platform Identity Service] 用時建議使用 [DIL](../../dil/dil-overview.md) 和最新版本 [!UICONTROL Profile Merge Rules]。 不過，您不必使用此 [!UICONTROL Adobe Experience Platform Identity Service] 功能即可。 如果您只是使用，請 [!UICONTROL DIL]參閱下 [方的舊版DIL](#legacy-dil) 。
 
 ### 設定客戶ID函式
 
-使用時，函 [!UICONTROL Experience Cloud ID Service]數將 `setCustomerIDs` 聲明的ID傳遞給 [!DNL Audience Manager]。 若要使用描述檔合併規則，您必須修 `setCustomerIDs` 改以使用建立跨裝置資料來源時指定的整合代碼。 例如，假設您已使用整合程式碼建立跨裝置資料來源 `my_datasource_ic`。 若要傳入宣告的ID，您應將整合程式碼新增至訪客ID函式，如下所修改的程式碼範例所示。
+使用時，函 [!UICONTROL Adobe Experience Platform Identity Service]數將 `setCustomerIDs` 聲明的ID傳遞給 [!DNL Audience Manager]。 若要使用描述檔合併規則，您必須修 `setCustomerIDs` 改以使用建立跨裝置資料來源時指定的整合代碼。 例如，假設您已使用整合程式碼建立跨裝置資料來源 `my_datasource_ic`。 若要傳入宣告的ID，您應將整合程式碼新增至訪客ID函式，如下所修改的程式碼範例所示。
 
 #### 一般程式碼範例
 
@@ -158,7 +158,7 @@ var vDil = DIL.create({
 
 ## 舊版DIL {#legacy-dil}
 
-如果你還沒用， [!DNL Experience Cloud ID Service] 你真該用。 但是，我們瞭解到，改用新程式碼需要仔細的思考和測試。 在這些情況下，請檢查 `DIL.create` 您的函式，以確定此設定正確，如下面的程式碼範例所示。
+如果你還沒用， [!DNL Adobe Experience Platform Identity Service] 你真該用。 但是，我們瞭解到，改用新程式碼需要仔細的思考和測試。 在這些情況下，請檢查 `DIL.create` 您的函式，以確定此設定正確，如下面的程式碼範例所示。
 
 ```js
 DIL.create({
