@@ -310,7 +310,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
    + 傳送觀眾資料{#sending-audience-data}
       + [傳送觀眾資料](integration/sending-audience-data/send-audience-data.md)
       + 即時傳入資料整合 {#real-time-inbound-data-integration}
-         + [入站即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
+         + [入站、即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [像素式資料傳輸](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [即時傳入資料擷取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
       + 批資料傳輸流程{#batch-data-transfer-process}
