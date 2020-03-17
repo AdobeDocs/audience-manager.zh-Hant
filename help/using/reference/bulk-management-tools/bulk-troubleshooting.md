@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 批量管理工具的疑難排解提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 translation-type: tm+mt
-source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
+source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
 
 >[!NOTE]
 >
->不 [!UICONTROL Bulk Management Tools] 支 *援* 。 [!DNL Audience Manager]這種工具僅為方便和禮貌而提供。 若是大量變更，我們建議您改 [用Audience Manager API](../../api/rest-api-main/aam-api-getting-started.md) 。 [UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
+>[UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
 
 大量網路流量、伺服器使用量和大型資料集等因素可能導致大量要求失敗或逾時。 如果有問題，工作表會停止寫入資料並顯示錯誤訊息。 發生這種情況時，您應：
 
@@ -49,14 +49,14 @@ source-git-commit: 994b12fd442a08da3b606dabca1f9382a7bd6f74
   <tr> 
    <td colname="col1"> <b>驗證錯誤</b> </td> 
    <td colname="col2"> 
-    <b>更新至最新版Microsoft Excel</b>:當新版Microsoft excel發行且您使用舊版時，「批量管理」工作表中可能會發生驗證錯誤。 更新至最新版Microsoft Excel以解決驗證錯誤。
+    <b>更新至最新版Microsoft Excel</b>:當新版Microsoft Excel發行且您使用舊版時，「批量管理」工作表中可能會發生驗證錯誤。 更新至最新版Microsoft Excel以解決驗證錯誤。
 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>長時間延遲</b> </td> 
    <td colname="col2"> 
     <ul id="ul_AA6F414024B2475AB1C0B46DC3FF0B36"> 
-     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>關閉相容模式</b>:檢查您是否在Microsoft excel的相容性模式中開啟其他工作表。 相容性模式可增加執行時期。 關閉您在此模式中開啟的任何試算表，然後再試一次大量請求。 </li> 
+     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>關閉相容模式</b>:檢查您是否在Microsoft Excel的相容性模式中開啟其他工作表。 相容性模式可增加執行時期。 關閉您在此模式中開啟的任何試算表，然後再試一次大量請求。 </li> 
      <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系統資源</b>:系統資源有限導致長時間延遲。 請先嘗試關閉所有其他程式，再進行大量請求。 </li> 
     </ul> </td> 
   </tr> 
