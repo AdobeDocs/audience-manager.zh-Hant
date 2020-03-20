@@ -5,8 +5,9 @@ seo-title: 資料收集與產品整合常見問答集
 solution: Audience Manager
 title: 資料收集與產品整合常見問答集
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
+keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: d221890d2a80cd557a6968d3382ee8842fea9aef
 
 ---
 
@@ -39,7 +40,7 @@ faq_data_collection_integration.xml
 
 <br> 
 
-**您是否可為我提供入站和出站FTP伺服器的IP位址（我可將其列入白名單）?**
+**您能提供我入站和出站sFTP伺服器的IP位址（我可以將其列入白名單）嗎？**
 
 是的，請參閱下面。
 
