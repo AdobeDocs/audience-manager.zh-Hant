@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 2f8662aba70254e550bc15417463c3c06492a9d5
+source-git-commit: 40ac91af26ed4a95492dde872288dc2e9059cdf9
 
 ---
 
@@ -18,51 +18,44 @@ source-git-commit: 2f8662aba70254e550bc15417463c3c06492a9d5
 
 ## 依特徵類型區分特徵限定 {#trait-type}
 
-<table id="table_14CD705F376B44EEA9A6C011984356F0"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 特徵類型 </th> 
-   <th colname="col2" class="entry"> 資格標準 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>規則型特徵 </p> </td> 
-   <td colname="col2"> <p>特徵資格會即時發生，因為使用者在瀏覽器中符合特徵資格。 在您在UI中建立特徵後大約4小時，您的使用者就 <a href="../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits"> 會開始符合規則</a> 。 </p> <p>規則型特徵可讓您使用時近 <a href="../../features/segments/recency-and-frequency.md"> 和頻率控制項</a> ，來設定廣告頻率上限和其他使用案例。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>已登錄特徵 </p> </td> 
-   <td colname="col2"> <p>特徵限定會在處理傳入檔案後發生，例如傳入檔案會匯入 <a href="../../faq/faq-inbound-data-ingestion.md"> Audience Manager</a> ，也就是特徵限定發生時。 在建立已登入特徵後，您應等待約4小時，再上傳傳入檔案以進行處理。  </p> <p> 對於已登入的特徵，使用者設定檔的資格上限為1。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>演算法特徵 </p> </td> 
-   <td colname="col2"> <p>對於演算法特徵，使用者設定檔的最大資格數為1。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>資料夾特徵 </p> </td> 
-   <td colname="col2"> <p>資料夾特徵會匯總其所含特徵的特徵資格。 </p> <p>閱讀資 <a href="../../features/traits/about-folder-traits.md"> 料夾特徵：關於</a> ，以取得詳細資訊。 </p> </td> 
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>作用中受眾特徵與資料來源同步特徵 </p> </td> 
-   <td colname="col2"> <p>「活 <span class="wintitle"> 動中的觀眾</span> 」特徵包含Audience Manager帳戶中管理的所有 <span class="wintitle"> 裝置</span> 。 </p> <p><span class="wintitle"> 「資料來源同步特徵</span> 」會追蹤與資料來源關聯的所有使用者。 </p> <p>閱讀更多有關「 <a href="../../features/traits/client-activity-synced-audience-traits.md"> 作用中受眾特徵」和「資料來源同步特徵」的資訊</a>。 </p> </td>
-  </tr>
- </tbody>
-</table>
+| 特徵類型 | 資格標準 |
+|---|---|
+| 規則型特徵 | 特徵資格會即時發生，因為使用者在瀏覽器中符合特徵資格。 在您在UI中建立特徵後大約4小時，您的使用者就 [會開始符合規則](create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) 。 規則型特徵可讓您使用時 [近和頻率控制](../segments/recency-and-frequency.md) ，來設定廣告頻率上限和其他使用案例。 |
+| 已登錄特徵 | 特徵限定會在處理傳入檔案後發生，即傳入檔案會匯 [入Audience Manager](../../faq/faq-inbound-data-ingestion.md) ，也就是特徵限定發生時。 在建立已登入特徵後，您應等待約4小時，再上傳傳入檔案以進行處理。 對於已登入的特徵，使用者設定檔的資格上限為1。 |
+| 演算法特徵 | 對於演算法特徵，使用者設定檔的最大資格數為1。 |
+| 資料夾特徵 | 資料夾特徵會匯總其所含特徵的特徵資格。 閱讀資 [料夾特徵：關於](about-folder-traits.md) ，以取得詳細資訊。 |
+| 作用中受眾特徵與資料來源同步特徵 | 特 [!UICONTROL Active Audience] 徵包含您Audience Manager帳戶中管理的所有裝置。 [!UICONTROL Data Source Synced Traits] 追蹤與資料來源相關聯的所有使用者。 閱讀更多有關「 [作用中受眾特徵」和「資料來源同步特徵」的資訊](client-activity-synced-audience-traits.md)。 |
 
 ## 獨特性實現與特性總量 {#unique-trait-realizations}
 
-![](assets/utr-ttp1.png)
+![獨特性實現](assets/trait-graph.png)
 
-計 **[!UICONTROL Unique Trait Realizations]** 算在不同時間範圍內將特徵新增至其描述檔的訪客數。
+計 [!UICONTROL Unique Trait Realizations] 算在不同時間範圍內將特徵新增至其描述檔的訪客數。
 
-代 **[!UICONTROL Total Trait Population]** 表訪客在其描述檔中具有此特徵的訪客數。
+代 [!UICONTROL Total Trait Population] 表訪客在其描述檔中具有此特徵的訪客數。
 
-用這種方式來考慮數字。 在上述影像中，從「特 [徵詳細資料](../../features/traits/trait-details-page.md) 」檢視中，181代表昨天瀏覽您屬性的作用中裝置數。 1,595 [!UICONTROL Total Trait Population] 表示目前符合此特徵資格的使用者數量。 此 [!UICONTROL Total Trait Population] 圖旨在顯示可用於分段／定位的使用者總數。 通常，使用者會在120天內保留某個特徵的一部分。
+用這種方式來考慮數字。 在上述影像中，從「特 [徵詳細資料](../../features/traits/trait-details-page.md) 」檢視中，90,173代表昨天瀏覽您屬性的作用中裝置數。 55, [!UICONTROL Total Trait Population] 757代表目前符合此特徵資格的使用者數量。 此 [!UICONTROL Total Trait Population] 圖旨在顯示可用於分段／定位的使用者總數。 通常，使用者會在120天內保留某個特徵的一部分。
 
-因為我們運行兩個不同的計算工作來計算這兩個人口族群， [!UICONTROL Total Trait Population] 因此總是落後 [!UICONTROL Unique Trait Realizations] 24小時。 在上圖中，2月11日的 [!UICONTROL Unique Trait Realizations] 175 [!UICONTROL Total Trait Population] 和6。 175個描述檔會在下 [!UICONTROL Total Trait Population] 一天新增至。
+因為我們運行兩個不同的計算工作來計算這兩個人口族群， [!UICONTROL Total Trait Population] 因此總是落後 [!UICONTROL Unique Trait Realizations] 24小時。 在上圖中，2月5日 [!UICONTROL Unique Trait Realizations] 的 [!UICONTROL Total Trait Population] 人數為90,400 90,400個設定檔會在下 [!UICONTROL Total Trait Population] 一天新增。
 
 為了進一步推動重點，如果您目前體驗到10,000名訪客的尖峰，他們會出現在明天的 [!UICONTROL Unique Trait Realizations]，但只會在24小時後出現在 [!UICONTROL Total Trait Population]。
 
+特徵實現的任何變化都反映在群體族群中。
+
+## 即時區段人口與總區段人口 {#real-time-segment}
+
+![獨特性實現](assets/segment-graph.png)
+
+計算 [!UICONTROL Real-time Segment Population] 在所選時間間隔內符合所選區段且已到達您屬性的設備數。
+
+計 [!UICONTROL Total Segment Population] 算所選時間範圍內符合所選區段的裝置數。 報 [!UICONTROL 1 Day] 表代表最新的區段人口計數。
+
+用這種方式來考慮數字。 在上述影像中，從「區段詳 [細資訊](../../features/segments/segment-summary-view.md) 」檢視中，9,993代表昨天瀏覽您屬性並符合區段資格的作用中裝置數。 699, [!UICONTROL Total Segment Population] 532台代表目前符合此區段資格的裝置總數。 此 [!UICONTROL Total Segment Population] 圖旨在顯示可用於分段／定位的裝置總數。
+
+因為我們運行兩個不同的計算工作來計算這兩個人口族群， [!UICONTROL Total Segment Population] 因此總是落後 [!UICONTROL Real-time Segment Population] 24小時。 在上圖中，您可以看到2月2日 [!UICONTROL Real-time Segment Population] 的8116 [!UICONTROL Total Segment Population] 和742000。 8,116個描述檔會在 [!UICONTROL Total Segment Population] 第二天新增。
+
+為了進一步推動重點，如果您目前體驗到10,000名訪客的尖峰，他們會出現在明天的 [!UICONTROL Real-time Segment Population]，但只會在24小時後出現在 [!UICONTROL Total Segment Population]。
+
 ## 特徵資格限制 {#trait-qualification-limit}
 
-我們會針對每個使用者描述檔強制實施150,000個特徵資格限制，不論是已驗證的描述檔( [DPUUID](../../reference/ids-in-aam.md))或裝置ID( [UUID](../../reference/ids-in-aam.md))。 請注意，雖然DPUUID對於特定例項是唯一的， [!DNL Audience Manager]但UUID會在平台間共 [!DNL Audience Manager] 用。 因 [!UICONTROL UUID]此，我們在儲存特徵資格時，實行公平政策。 演算法可確保每個例項 [!UICONTROL UUID] 都能有相同的描述檔份額 [!DNL Audience Manager]。
+我們會針對每個使用者描述檔強制實施150,000個特徵資格限制，不論是已驗證的描述檔([DPUUID](../../reference/ids-in-aam.md))或裝置ID([UUID](../../reference/ids-in-aam.md))。 請注意，雖然DPUUID對於特定例項是唯一的， [!DNL Audience Manager]但UUID會在平台間共 [!DNL Audience Manager] 用。 因 [!UICONTROL UUID]此，我們在儲存特徵資格時，實行公平政策。 演算法可確保每個例項 [!UICONTROL UUID] 都能有相同的描述檔份額 [!DNL Audience Manager]。
