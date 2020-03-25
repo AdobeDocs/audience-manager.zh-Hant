@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 40ac91af26ed4a95492dde872288dc2e9059cdf9
+source-git-commit: ceda75d2bc57aa164cb048c20e3fcff33000cddb
 
 ---
 
@@ -30,9 +30,17 @@ source-git-commit: 40ac91af26ed4a95492dde872288dc2e9059cdf9
 
 ![獨特性實現](assets/trait-graph.png)
 
-計 [!UICONTROL Unique Trait Realizations] 算在不同時間範圍內將特徵新增至其描述檔的訪客數。
+視您希望圖表顯示的結果類型而定(依照或跨裝 [!UICONTROL Device ID] 置 [!UICONTORL ID篩選])，量度有不同的含義：
 
-代 [!UICONTROL Total Trait Population] 表訪客在其描述檔中具有此特徵的訪客數。
+篩選結果時，依 [!UICONTROL Device ID]據：
+
+* 該 [!UICONTROL Unique Trait Realizations] 計算在不同時間範圍內將特徵新增至其描述檔的匿名裝置訪客數。
+* 計算 [!UICONTROL Total Trait Population] 在您的匿名裝置訪客的個人資料上具有該特徵的總數。
+
+篩選結果時，依 [!UICONTROL Cross-Device ID]據：
+
+* 計 [!UICONTROL Unique Trait Realizations] 算在不同時間範圍內，將特徵新增至其描述檔的已驗證訪客數。
+* 計算 [!UICONTROL Total Trait Population] 已驗證訪客在其個人資料上具有此特徵的總數。
 
 用這種方式來考慮數字。 在上述影像中，從「特 [徵詳細資料](../../features/traits/trait-details-page.md) 」檢視中，90,173代表昨天瀏覽您屬性的作用中裝置數。 55, [!UICONTROL Total Trait Population] 757代表目前符合此特徵資格的使用者數量。 此 [!UICONTROL Total Trait Population] 圖旨在顯示可用於分段／定位的使用者總數。 通常，使用者會在120天內保留某個特徵的一部分。
 
