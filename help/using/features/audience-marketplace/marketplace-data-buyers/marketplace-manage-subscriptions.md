@@ -7,7 +7,7 @@ title: 管理資料饋送訂閱
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: b1f4fe1180001a92577adc9e55f2697f3285ea46
 
 ---
 
@@ -34,12 +34,12 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 1. 從預訂表中選擇一個使用案例，並：
    * 將滑桿 **[!UICONTROL Subscription]** 移至 **[!UICONTROL On]**。
-   * Click **[!UICONTROL Review & Subscribe]**. 這會開啟視 [!UICONTROL Terms and Conditions] 窗。
+   * 按一下 **[!UICONTROL Review & Subscribe]**. 這會開啟視 [!UICONTROL Terms and Conditions] 窗。
    ![](assets/subscribe3.png)
 
 1. 在窗口 [!UICONTROL Terms and Conditions] 中：
 
-   * **** 重要：勾選核 **[!UICONTROL ID sync]** 取方塊。 此設定有助於改善與資料提供者的比對率。
+   * **重要：** 勾選核 **[!UICONTROL ID sync]** 取方塊。 此設定有助於改善與資料提供者的比對率。
    * 勾選條款與條件方塊，然後按一 **[!UICONTROL Accept]** 下以完成訂閱程式。
    ![](assets/subscribe4.png)
 
@@ -50,6 +50,27 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 * 檢查您的資料夾以驗證訂 [!UICONTROL Traits] 閱。 請參 [閱訂閱資料饋送的儲存](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)。
 
 * 檢閱帳單和付款檔案。 請參閱以下相關連結。
+
+### 最佳實務 {#best-practices}
+
+以下是我們建議您在使用下列產品時遵循的一組最佳實務 [!UICONTROL Audience Marketplace]:
+
+在探索新的協力廠商資料集時，我們建議的第 [!UICONTROL Audience Marketplace]一個步驟是啟用資料饋送 [!UICONTROL Segments & Overlap]。 這可讓使用者透過建立細分來評估受眾規模，並執行重疊報告來獲取初始受眾見解，以探索資料。 大部分資料提供者都免費提供此使用案例，因此您可以免費執行此分析。
+
+執行重疊報表時，請遵循這些最佳實務，以確定您獲得有用的結果。
+
+1. 確保重疊的資料集在資料類型和收集方法上類似，例如：
+   * 訪客地理
+   * Cookie與行動ID的比較
+   * 回顧視窗
+   * 離線與線上活動
+   * 資料提供者重新整理資料的頻率
+
+1. 重疊會隨著時間稍微增加，因此請務必在執行重疊報表之前最多允許30天，以便讓資料同步。
+1. 如果您在多個行銷促銷活動中使用資料提供者的資料，重疊可能會增加。
+和計畫。 這可讓兩個資料集的使用者有更多機會同步。
+1. 您無法保證資料集之間會有重疊。 若要使重疊有效，客戶資料集的使用者必須與報告時段內的資料提供者資料集相關聯。 如果客戶的媒體資料未提供給資料提供者資料集中的使用者，則永遠不會有重疊。
+1. 別把低重疊視為壞事。 利用低重疊率來吸引潛在客戶和新使用者。
 
 ## 訂閱私人資料饋送 {#subscript-private-data-feed}
 
@@ -64,7 +85,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 若要訂閱私人資料饋送：
 
 1. 按一下中的資料饋送名稱 [!UICONTROL Marketplace]。
-1. Click **[!UICONTROL Request Access]**. 這會開啟請求對話方塊。
+1. 按一下 **[!UICONTROL Request Access]**. 這會開啟請求對話方塊。
 1. 在「請求」對話方塊中，為提供者寫上註解，表示您對其資料饋送感興趣，然後按一下 **[!UICONTROL Send]**。 賣方會檢閱您的訊息，並核准或拒絕您的要求。 等候核準時，該資料饋送的清單中會 [!UICONTROL Marketplace] 顯示「已請求」。
 
    * **[!UICONTROL Request approved]**:清單中的狀 [!UICONTROL Marketplace] 態會變更為「已授予存取權」，您會收到自動通知。 此時，您可以訂閱動態消息。 如需 [指示，請參閱訂閱公用資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) 。
@@ -155,10 +176,10 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 如果你訂閱的飼料被關閉，這可能令人費解，甚至令人不安。 不過，資料提供者可基於多種原因停用資料饋送。 一些常見原因包括：
 
-* **** 帳單：如果您持續拖欠費用或未支付費用，資料提供者會停用動態消息。
-* **** 動態消息更新：資料提供者在更新其饋送分類法或成本結構時，必須停用饋送。
-* **** 非活動買家：如果訂閱者在較長的期間內沒有顯示任何支出，資料供應商保留停用動態消息的權利。
-* **** 無效銷售者：離開的資料提供者 [!UICONTROL Audience Marketplace] 會停用並刪除其所有資料饋送。
+* **帳單：** 如果您持續拖欠費用或未支付費用，資料提供者會停用動態消息。
+* **動態消息更新：** 資料提供者在更新其饋送分類法或成本結構時，必須停用饋送。
+* **非活動買家：** 如果訂閱者在較長的期間內沒有顯示任何支出，資料供應商保留停用動態消息的權利。
+* **無效銷售者：** 離開的資料提供者 [!UICONTROL Audience Marketplace] 會停用並刪除其所有資料饋送。
 
 >[!TIP]
 >
@@ -168,11 +189,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 當資料提供者停用您其中一個資料饋送時， [!DNL Audience Manager] 會傳送電子郵件給您公司中擁有權限的使 [!UICONTROL Administrator] 用者。 有時，電子郵件篩選器會將此郵件分類為垃圾郵件。 因此，您可能會錯過此重要通知。 為協助您識別停用訊息，此電子郵件包含下列元素：
 
-* **** 寄件者：停用電子郵件來自 `aam-noreply@adobe.com`。 專業提示：不要回覆此電子郵件。
+* **寄件者：** 停用電子郵件來自 `aam-noreply@adobe.com`。 專業提示：不要回覆此電子郵件。
 
-* **** 主旨行：訂閱此處 *的資料饋送名稱* ，已取消。
+* **主旨行：** 訂閱此處 *的資料饋送名稱* ，已取消。
 
-* **** 附件：電子郵件包含一個名為" `list-of-affected-entities-by-feed-revocation.csv`"的附件。 這是一種令人費解的說法，即依戀列出了取消的動態消息中包含的所有特徵。 身為資料購買者，您應檢閱此附件。 它可協助您從區段和演算法模型中尋找和移除停用 [的特徵](../../../features/algorithmic-models/understanding-models.md)。
+* **附件：** 電子郵件包含一個名為&quot; `list-of-affected-entities-by-feed-revocation.csv`&quot;的附件。 這是一種令人費解的說法，即依戀列出了取消的動態消息中包含的所有特徵。 身為資料購買者，您應檢閱此附件。 它可協助您從區段和演算法模型中尋找和移除停用 [的特徵](../../../features/algorithmic-models/understanding-models.md)。
 
 ## 停用的特徵清單 {#deactivation-trait-list}
 
@@ -204,7 +225,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 區段SID</span></b> </p> </td> 
-   <td colname="col2"> <p>包含停用特徵的區段ID。 </p> </td> 
+   <td colname="col2"> <p>包含已停用特徵的區段ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 區段名稱</span></b> </p> </td> 
@@ -257,11 +278,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    * 按一 **[!UICONTROL Request More Details]** 下可向資料提供者詢問有關所選資料饋送的問題，或要求折扣。 此功能會直接將您的注釋和問題傳送至資料提供者。
 
 1. 資料饋送報表量度。 文氏圖表（及相關量度）顯示過去30天的特徵重疊資料。 請參 [閱Marketplace:關於](marketplace-data-buyers.md#about-marketplace) ，以取得詳細資訊。
-   * **[!UICONTROL 30 Day Overlapped Uniques]**:您帳戶中與提供者帳戶中的使用者重疊的獨特使用者數目。 如需獨特使用者的定義，請參閱Audience manager中ID [索引中的AAM UUID](/help/using/reference/ids-in-aam.md)。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**:您帳戶中與提供者帳戶中的使用者重疊的獨特使用者數目。 如需獨特使用者的定義，請參閱Audience Manager中ID [索引中的AAM UUID](/help/using/reference/ids-in-aam.md)。
    * **[!UICONTROL 30 Day Provider Unique Users]**:來自提供者帳戶的獨特使用者數目。
    * **[!UICONTROL Your Unique Users]**:來自您帳戶的獨特使用者人數。
 
-1. **[!UICONTROL Plan Details]** 表格。 此表顯示了您可以訂閱資料饋送的使用案例及其定價模型。 請參閱 [瞭解資料饋送使用案例](#use-cases)。
+1. **[!UICONTROL Plan Details]** 表. 此表顯示了您可以訂閱資料饋送的使用案例及其定價模型。 請參閱 [瞭解資料饋送使用案例](#use-cases)。
 
 1. 計畫動作按鈕。
    * 按一 **[!UICONTROL Cancel]** 下即可離開頁面而不進行變更。
@@ -279,8 +300,8 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 此使用案例可讓您比較特徵與特徵對特徵重疊報 [表中的提供者特徵。](../../../reporting/dynamic-reports/trait-trait-overlap-report.md#trait-to-trait-overlap-report) 此外，您也可以建立或新增提供者特徵至區段，並與區段對特 [徵](../../../reporting/dynamic-reports/segment-trait-overlap-report.md)[和區段對區段報表進行額外比較](../../../reporting/dynamic-reports/segment-segment-overlap-report.md) 。 重疊比較可協助您：
 
-* **** 擴大受眾覆蓋：低重疊表示您的特徵包含您以前未見過的使用者。 您可能希望這些特徵嘗試觸及新使用者。
-* **** 增強現有受眾：高度重疊表明您的特徵與資料提供者所擁有的特徵相似。 您可能希望這些特徵有助於對已開發的受眾進行有針對性的漸進改進。
+* **擴大受眾覆蓋：** 低重疊表示您的特徵包含您以前未見過的使用者。 您可能希望這些特徵嘗試觸及新使用者。
+* **增強現有受眾：** 高度重疊表明您的特徵與資料提供者所擁有的特徵相似。 您可能希望這些特徵有助於對已開發的受眾進行有針對性的漸進改進。
 
 ### 演算法模型
 
