@@ -1,29 +1,29 @@
 ---
-description: Audience manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
-seo-description: Audience manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
-seo-title: ' 使用限制'
+description: Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
+seo-description: Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
+seo-title: 使用限制
 solution: Audience Manager
-title: ' 使用限制'
-keywords: ID對應、ID對應、Cookie對應
+title: 使用限制
+keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 translation-type: tm+mt
-source-git-commit: d893998e9e59dbce64195a167e267c6f7ed16f90
+source-git-commit: f9f201824accdde18efafa0a8c389af48423534d
 
 ---
 
 
-#  使用限制 {#usage-limits}
+# 使用限制 {#usage-limits}
 
-Audience manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過程式設計方式建立，限制都適用於這些 [!DNL API] 項目。 使用限制有助於保護Audience Manager不受可能破壞我們或使用者介面的 [!DNL API]自動化程式。
+Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過程式設計方式建立，限制都適用於這些 [!DNL API] 項目。 使用限制有助於保護Audience Manager不受可能破壞我們或使用者介面的 [!DNL API]自動化程式。
 
 ## ID 對應限制 {#id-mapping-limits}
 
-下表列出裝置 [ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID對應限制。 一旦ID達到下列任何限制，Audience manager會根據 [!DNL FIFO] （先入先出）邏輯新增ID對應，移除最舊儲存的ID對應，然後新增新的ID對應。 如需Audience manager [支援之ID的詳細資訊](../../reference/ids-in-aam.md) ，請參閱Audience manager中的ID索引。
+下表列出裝置 [ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID對應限制。 一旦ID達到下列任一限制，Audience Manager會根據 [!DNL FIFO] （先入先出）邏輯新增ID對應，方法是移除最舊儲存的ID對應，然後新增新的ID對應。 如需Audience Manager [支援之ID的詳細資訊](../../reference/ids-in-aam.md) ，請參閱Audience Manager中的ID索引。
 
 | ID對應 | 最大限制 |
 |-----------|-------------- |
-| 裝置廣告ID(DAID)至跨裝置ID(CRM ID) | 100個裝置廣告ID(DAID)至1個跨裝置ID(CRM ID) |
-| 跨裝置ID(CRM ID)到裝置廣告ID(DAID) | 10個跨裝置ID(CRM ID)至1個裝置廣告ID(DAID) |
+| 跨裝置ID([DPUUID](../../reference/ids-in-aam.md))的裝置廣告ID([DAID](../../reference/ids-in-aam.md)) | 100個裝置廣告ID([DAID](../../reference/ids-in-aam.md))至1個跨裝置ID([DPUUID](../../reference/ids-in-aam.md)) |
+| 跨裝置ID([DPUUID](../../reference/ids-in-aam.md))到裝置廣告ID([DAID](../../reference/ids-in-aam.md)) | 每個DPID有10個跨裝[置ID](../../reference/ids-in-aam.md)([DPUUID](../../reference/ids-in-aam.md))至1個裝置廣告ID( [DAID)](../../reference/ids-in-aam.md) |
 | Cookie/瀏覽器ID至Cookie/瀏覽器ID | 1000個Cookie/瀏覽器ID至1個Cookie/瀏覽器ID |
 
 ## 項目限制 {#item-limits}
@@ -51,7 +51,7 @@ Audience manager會設定您可以為帳戶建立的特徵、區段、目的地�
 
 | 目標類型 | 最大限制 |
 | ------------------ | ------------- |
-| 總目標 | 1,000 |
+| 目標總數 | 1,000 |
 | Cookie | 1,000 |
 | URL | 1,000 |
 | S2S | 100 |
@@ -69,7 +69,7 @@ Audience manager會設定您可以為帳戶建立的特徵、區段、目的地�
 
 | 項目 | 最大限制 |
 | ------------- | ------------------ |
-|  特徵資料夾 | 2,000.  您的檔案夾結構最多可以有5層深。 |
+| 特徵資料夾 | 2,000.  您的檔案夾結構最多可以有5層深。 |
 
 ### 衍生的信號限制
 
