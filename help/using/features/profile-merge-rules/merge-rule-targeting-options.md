@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 裝置定位 {#device-personalization}
 
-此案例適用於想要評估Audience manager中定義之受眾群體之單一裝置設定檔的行銷人員，以便使用支援裝置ID（DSP、臨場感個人化平台和其他裝置型定位平台）的定位平台為裝置提供一致的體驗，而不考慮使用者驗證。
+此案例適用於想要評估Audience Manager中定義之受眾群體之單一裝置設定檔的行銷人員，以便使用支援裝置ID（DSP、臨場感個人化平台和其他裝置型定位平台）的定位平台為裝置提供一致的體驗，而不考慮使用者驗證。
 
 若要建立僅針對裝置設定檔的規則，請選取 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]**。
 
@@ -43,7 +43,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ![當前——無設備](assets/current-no-device.png)
 
-使用此規則，Audience manager會完全忽略裝置設定檔、符合區段John的CRM ID資格，而不符合Jane的CRM ID資格。
+使用此規則，Audience Manager會完全忽略裝置設定檔、符合區段John的CRM ID資格，而不符合Jane的CRM ID資格。
 
 ![共用裝置定位](assets/shared-device-targeting.png)
 
@@ -55,17 +55,17 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 讓我們考慮一個由年收入超過$100.000美元的家庭組成的部分，其中至少包含一個 [!DNL iPhone 7] 設備 [!DNL Data Plan B]。 我們有兩個家用個人檔案（跨裝置個人檔案），每個人都與兩個不同的裝置個人檔案連接。 符合區段資格所需的特性會散布在裝置和跨裝置描述檔中。
 
-Audience manager會合併每個裝置+跨裝置描述檔配對，以查看合併的一組特徵是否符合區段的資格。 由於Audience manager會評估合併中包含的每個個人檔案，因此裝置個人檔案和家庭個人檔案都可以分段。
+Audience Manager會合併每個裝置+跨裝置描述檔配對，以查看合併的一組特徵是否符合區段的資格。 由於Audience Manager會評估合併中包含的每個個人檔案，因此裝置個人檔案和家庭個人檔案都可以分段。
 
-裝置與家庭個人檔案之間的連結可讓Audience manager符合區段 [!DNL Household 2] 資格，但無法 [!DNL Household 1]。 從 [!DNL Household 2]，僅 [!DNL Device 3] 符合區段資格。 這 [!UICONTROL Profile Merge Rule] 可讓行銷人員向個別裝置([!DNL Device 3])和更廣大的家庭([!DNL Household 2])傳遞一致的行銷訊息。
+裝置與家庭個人檔案之間的連結可讓Audience Manager符合區段 [!DNL Household 2] 資格，但無法 [!DNL Household 1]。 從 [!DNL Household 2]，僅 [!DNL Device 3] 符合區段資格。 這 [!UICONTROL Profile Merge Rule] 可讓行銷人員向個別裝置([!DNL Device 3])和更廣大的家庭([!DNL Household 2])傳遞一致的行銷訊息。
 
 ![家庭管理](assets/household-management.png)
 
 ## 以人為本的目標鎖定 {#all-cross-device}
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> 本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
+>本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
 此定位藍本僅適用於已購買附加元件 [!DNL People-Based Destinations] 的客戶。 此規則可讓行銷人員根據自己的驗證資料觸及客戶。
 
@@ -110,7 +110,7 @@ Audience manager會合併每個裝置+跨裝置描述檔配對，以查看合併
 
 請觀看以下影片，以取得可能使用案例的概觀 [!UICONTROL Profile Merge Rules]。
 
->[!VIDEO](https://video.tv.adobe.com/v/28975/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/28975/)
 
 >[!MORELIKETHIS]
 >
