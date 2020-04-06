@@ -5,7 +5,7 @@ seo-title: 回填特徵實現
 title: 回填特徵實現
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
 translation-type: tm+mt
-source-git-commit: 383d529d656f86fa39e2e11d312e8a8a2092926b
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 383d529d656f86fa39e2e11d312e8a8a2092926b
 
 >[!IMPORTANT]
 >
-> [!UICONTROL Data Explorer Trait Backfill] 是一種進階功能，可解除鎖定其他使用案例，以增強Audience Manager體驗。 回填需要額外的處理能力，而且所有Audience Manager客戶都能以遞增成本使用。 如需詳細資訊，請連絡您的Adobe銷售代表。
+>[!UICONTROL Data Explorer Trait Backfill] 是一種進階功能，可解除鎖定其他使用案例，以增強Audience Manager體驗。 回填需要額外的處理能力，而且所有Audience Manager客戶都能以遞增成本使用。 如需詳細資訊，請連絡您的Adobe銷售代表。
 
 當您從未使用的訊號建立特徵時，可以選擇回填特定時段的特徵實現。 [!DNL Audience Manager] 擷取符合新特徵的觀眾的歷史資料，並將其儲存在對應的描述檔中。 您可在「特徵產 **[!UICONTROL Backfill Options]** 生器」 [!UICONTROL Trait Expression] 的區段中 **[看到](../../features/traits/about-trait-builder.md)**。
 
