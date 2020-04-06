@@ -5,16 +5,16 @@ seo-title: 「特徵詳細資料」頁
 solution: Audience Manager
 title: 「特徵詳細資料」頁
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
-keywords: 身分類型劃分，身分識別劃分，受眾身分識別報告
+keywords: identity type breakdown, identity breakdown, audience identity reporting
 translation-type: tm+mt
-source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
+source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ---
 
 
 # 「特徵詳細資料」頁 {#trait-details-page}
 
-個別特徵的詳細資料頁面提供特徵詳細資料的概述，例如特徵名稱、ID、效能度量、定義特徵的運算式、其所屬的區段以及特徵稽核記錄檔。 若要檢視這些詳細資訊，請 **[!UICONTROL Audience Data]** 前往&gt; **[!UICONTROL Traits]** 並按一下您要處理之特徵的名稱。
+個別特徵的詳細資料頁面提供特徵詳細資料的概述，例如特徵名稱、ID、效能度量、定義特徵的運算式、其所屬的區段以及特徵稽核記錄檔。 若要檢視這些詳細資訊，請 **[!UICONTROL Audience Data]** 前往> **[!UICONTROL Traits]** 並按一下您要處理之特徵的名稱。
 
 ## 特徵管理工具 {#trait-management-tools}
 
@@ -22,7 +22,7 @@ source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
 
 1. **[!UICONTROL Add New]**:使用這個選項可建立新的規則型、演算法或已登入特徵。
 2. **[!UICONTROL Edit]**:使用此選項可變更目前特徵的設定。
-3. **[!UICONTROL Delete]**:使用這個選項可從您的Audience manager帳戶移除目前特徵。
+3. **[!UICONTROL Delete]**:使用這個選項可從您的Audience Manager帳戶移除目前特徵。
 4. **[!UICONTROL Marketplace Recommendations]**:使用此選項，從您未訂閱的資料費用中，尋找與您所 [!UICONTROL Audience Marketplace] 檢視的相似特性。 請參 [閱Audience Marketplace for Data Buyers](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，以瞭解如何導覽Marketplace並尋找類似特性。
 
 ![基本特徵資訊](assets/basic-trait-information.png)
@@ -47,10 +47,12 @@ source-git-commit: 51f38819bfbc72c2588f63a63fb8ba2e963919ff
 * **[!UICONTROL Identity Type Breakdown]**:前三個項目以遞減順序顯示擁有符合特徵之最高人口計數的前三個跨裝置資料來源。 第四個項目顯示符合特徵的所有其他 [!DNL DPUUIDs] ([!DNL CRM IDs])來自非前三個跨裝置資料來源的總和。 只有當您在頁面右上方的下拉式選單中選 [!UICONTROL Show Results By] 取「跨裝置ID」時，才會顯示此報表。 預設下拉式選項為 [!UICONTROL Device ID]，不會顯示此報表。
 
    ![特徵圖](assets/trait-identity.png)
-   > [!NOTE]
-   > Audience manager僅在您具 [!UICONTROL Identity Type Breakdown] 有符合特徵的跨裝置ID時顯示報表。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/27977/?captions=chi_hant)
+   >[!NOTE]
+   >
+   >Audience Manager僅在您具 [!UICONTROL Identity Type Breakdown] 有符合特徵的跨裝置ID時顯示報表。
+
+   >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
 ## 特徵表達式 {#trait-expression}
 
