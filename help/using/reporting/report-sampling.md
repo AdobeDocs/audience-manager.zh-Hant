@@ -1,17 +1,17 @@
 ---
 description: 摘要說明用於某些報表的取樣方法、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
 seo-description: 摘要說明用於某些報表的取樣方法、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
-seo-title: 選取Audience manager報表中的資料取樣和錯誤率
+seo-title: 選取Audience Manager報表中的資料取樣和錯誤率
 solution: Audience Manager
-title: 選取Audience manager報表中的資料取樣和錯誤率
+title: 選取Audience Manager報表中的資料取樣和錯誤率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
-source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
 
-# 選取Audience manager報表中的資料取樣和錯誤率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
+# 選取Audience Manager報表中的資料取樣和錯誤率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
 摘要說明用於某些報表的取樣方法、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
 
@@ -23,7 +23,7 @@ source-git-commit: d96182b0741dd31cc5ec0ffb68182ed5f8445c03
 
 使用取樣的報表會在不符合最低獨特訪客需求時排除特徵和區段。 這些最低要求如下：
 
-* 特徵：在14天 [內實現](/help/using/features/traits/trait-qualification-reference.md#unique-trait-realizations) 28,000個獨特特徵。
+* 特徵：在14天 [內實現](/help/using/features/traits/trait-and-segment-qualification-reference.md#unique-trait-realizations) 28,000個獨特特徵。
 * 區段：在14天的期間內有70,000名即時使用者。
 
 ## 錯誤率 {#error-rates}
