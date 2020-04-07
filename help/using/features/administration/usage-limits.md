@@ -7,7 +7,7 @@ title: 使用限制
 keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 translation-type: tm+mt
-source-git-commit: f9f201824accdde18efafa0a8c389af48423534d
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -35,7 +35,7 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 | 特徵類型 | 最大限制 |
 | -------------------------- | ------------------------------------- |
 | 總特徵 | 100,000 |
-| 特徵資格總計 | 150,000. 如需特徵資格的詳細資訊，請參閱特徵資格參考中的特 [徵資格限制](/help/using/features/traits/trait-qualification-reference.md#trait-qualification-limit)。 |
+| 特徵資格總計 | 150,000. 如需特徵資格的詳細資訊，請參閱特徵資格參考中的特 [徵資格限制](/help/using/features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit)。 |
 | 演算法 | 50 |
 | 規則型 | 100,000 |
 | 已登錄 | 100,000 |
