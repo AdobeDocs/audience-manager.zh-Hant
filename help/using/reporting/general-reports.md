@@ -1,12 +1,12 @@
 ---
 description: 「一般」報表會傳回特徵、區段和目的地的效能資料。
-seo-description: Audience manager中的「一般」報表會傳回特徵、區段和目的地的效能資料。
-seo-title: Audience manager中的一般報表
+seo-description: Audience Manager中的「一般」報表會傳回特徵、區段和目的地的效能資料。
+seo-title: Audience Manager中的一般報表
 solution: Audience Manager
 title: 一般報告
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 translation-type: tm+mt
-source-git-commit: 1c626c770208150d209d93f666b581113ada8de9
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -25,7 +25,7 @@ c_general_reports.xml
 
 [!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])將使用者群組權限延伸至報 [!UICONTROL General] 表。 使用者在報告中只能看到他們有權檢視的特徵和區段。 [!UICONTROL RBAC] 功能可讓您控制內部團隊可檢視的報表資料。 例如，管理不同廣告商帳戶的代理商可以設定使用者群組權限，讓管理廣告商A帳戶的團隊看不到廣告商B的報告資料。
 
-在您需要 [!UICONTROL General] 時執行報表：
+當您需 [!UICONTROL General] 要時，執行報表：
 
 * 依特徵、區段或目的地檢視效能。
 * 以1、7、14、30、60和90天間隔追蹤印象（總計和唯一）。
@@ -40,9 +40,9 @@ c_general_reports.xml
 
 1. 設定以下選項: 
 
-   * **** 報表類型：選取所要的報表類型（特徵、區段或目標）。
+   * **報表類型：** 選取所要的報表類型（特徵、區段或目標）。
 
-   * **** 日期至：指定報表的日期範圍。
+   * **日期至：** 指定報表的日期範圍。
 
 2. 依名稱或ID搜尋特徵、區段或目標。
 3. 從資料夾清單中，將您要報告的特徵、區段或目標拖放至右 [!UICONTROL Selections] 側的面板。
@@ -63,7 +63,7 @@ t_run_general_report.xml
 1. *條件* ：按一下日期方塊以顯示日曆，然後如果您想要指定非今天的日期，請選取報表的結束日期。
 1. 依名稱或ID搜尋特徵、區段或目標。
 1. 從資料夾清單中，將您要報告的特徵、區段或目標拖放至右 [!UICONTROL Selections] 側的面板。
-1. Click **[!UICONTROL Run Report]**.
+1. 按一下 **[!UICONTROL Run Report]**.
 
    結果會顯示在可匯出的表格中。 按一下欄標題，以遞增或遞減順序排序結果。
 1. 選取報表頂端的所需選項按鈕，以依效能( [!UICONTROL Unique Trait Realizations]、 [!UICONTROL Total Trait Realizations]或 [!UICONTROL Total Trait Population])或依時間（1、7、14、30、60或90天範圍）篩選資料。
@@ -88,7 +88,7 @@ t_run_general_report.xml
 
 **獨特特性實現**
 
-此量度代表在所選時間範圍內 [符合特徵的Audience Manager唯一使用者ID(UUID)](../reference/ids-in-aam.md) 。 例如，如果使用者在10/1瀏覽您的首頁3次，您會看到一個獨特特徵實現。
+此量度代表在所選時間範圍內 [符合特徵的Audience Manager唯一使用者ID(UUID)](../reference/ids-in-aam.md) 。 例如，如果使用者在10/1瀏覽您的首頁三次，您會看到一個獨特特徵實現。
 
 **特徵實現總計**
 
@@ -96,7 +96,7 @@ t_run_general_report.xml
 
 **特徵總人口**
 
-此量度代表目前符合特徵的Audience Manager UUID總量。 使用此數字可瞭解您可用於區段和定位的使用者總數。 通常，使用者會在120天內保留某 [個特徵](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。 例如，今天三次瀏覽您首頁，之後再也不返回的使用者，每天都會以使用者的身分，直到現在120天。 在120天大關時，他們將被從人口中移走。 閱讀我們的 [特徵資格參考](../features/traits/trait-qualification-reference.md) ，以取得有關獨特特徵實現與總特徵人口差異的更多範例。
+此量度代表目前符合特徵的Audience Manager UUID總量。 使用此數字可瞭解您可用於區段和定位的使用者總數。 通常，使用者會在120天內保留某 [個特徵](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。 例如，今天三次瀏覽您首頁，之後再也不返回的使用者，每天都會以使用者的身分，直到現在120天。 在120天大關時，他們將被從人口中移走。 閱讀我們 [的特徵與區段資格參考](../features/traits/trait-and-segment-qualification-reference.md) ，以取得有關獨特特徵實現與總特徵人口之間的差異的更多範例。
 
 下圖顯示為特徵報表類型執行一般報表的結果。
 
@@ -108,7 +108,7 @@ t_run_general_report.xml
 
 **即時區段人口**
 
-此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及Audience manager在檢視這些訪客時符合區段資格的訪客。
+此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及Audience Manager在檢視這些訪客時符合區段資格的訪客。
 
 **區段總人口**
 
@@ -128,7 +128,7 @@ t_run_general_report.xml
 
 **即時區段人口**
 
-此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及Audience manager在檢視這些訪客時符合區段資格的訪客。
+此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及Audience Manager在檢視這些訪客時符合區段資格的訪客。
 
 **區段總人口**
 
