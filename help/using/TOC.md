@@ -2,10 +2,10 @@
 product: audience-manager
 solution: Audience Manager
 audience: end-user
-user-guide-title: Audience Manager User Guide
+user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -134,6 +134,7 @@ source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
       + [區段運算式編輯器中使用的程式碼語法](features/segments/segment-code-syntax.md)
       + [區段產生器中的特徵和區段人口資料](features/segments/segment-builder-data.md)
       + [特徵建議](features/segments/trait-recommendations.md)
+      + [特徵和區段資格參考](features/traits/trait-and-segment-qualification-reference.md)
    + 特徵{#traits}
       + [特徵概述](/help/using/features/traits/traits-overview.md)
       + [「特徵詳細資料」頁](features/traits/trait-details-page.md)
@@ -158,7 +159,7 @@ source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
       + [使用平台層級的金鑰進行地理定位](features/traits/trait-geotarget-keys.md)
       + [使用平台層級的金鑰進行裝置定位](features/traits/trait-device-targeting.md)
       + [具有布林運算子和比較運算子的範例運算式](features/traits/trait-expression-samples.md)
-      + [特徵資格參考](features/traits/trait-qualification-reference.md)
+      + [特徵和區段資格參考](features/traits/trait-and-segment-qualification-reference.md)
    + [訪客資料檢視器](features/visitor-profile-viewer.md)
 + 報告{#reporting}
    + [報表概述](reporting/reports-overview.md)
@@ -310,7 +311,7 @@ source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
    + 傳送觀眾資料{#sending-audience-data}
       + [傳送觀眾資料](integration/sending-audience-data/send-audience-data.md)
       + 即時傳入資料整合 {#real-time-inbound-data-integration}
-         + [入站、即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
+         + [入站即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [像素式資料傳輸](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [即時傳入資料擷取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
       + 批資料傳輸流程{#batch-data-transfer-process}
