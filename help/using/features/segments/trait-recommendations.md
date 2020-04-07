@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特徵建議
 uuid: null
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: 019396917482340f15b4eb23736b15322815bd84
 
 ---
 
@@ -80,9 +80,9 @@ Audience Manager會根據您的第一方特徵、區段和區段顯示特 **[!UI
 ### 新區段
 
 1. 前往「對 **像資料>區段**」，然後按一 **下「新增」**。
-2. 在「特 **徵** 」下拉式方塊中，新增至少一個特徵至區段規則。
-3. 您可以在區段中，從您訂閱的饋送 [!UICONTROL Audience Marketplace] 中看到第一方建議的特徵和特徵建 **[!UICONTROL Recommendations]** 議。 該 **[!UICONTROL Recommendations from Marketplace]** 區段顯示您未訂閱之動態消息的特徵建議。 所有這些建議都類似於您新增至區段規則的特徵。 向下捲動以查看所有建議的特徵。
-4. （可選）若要從特定資料來源排除建議的第一方特徵，請按一下您要排除之資料來源的 **X** 符號。
+1. 在「特 **徵** 」下拉式方塊中，新增至少一個特徵至區段規則。
+1. 您可以在區段中，從您訂閱的饋送 [!UICONTROL Audience Marketplace] 中看到第一方建議的特徵和特徵建 **[!UICONTROL Recommendations]** 議。 該 **[!UICONTROL Recommendations from Marketplace]** 區段顯示您未訂閱之動態消息的特徵建議。 所有這些建議都類似於您新增至區段規則的特徵。 向下捲動以查看所有建議的特徵。
+1. （可選）若要從特定資料來源排除建議的第一方特徵，請按一下您要排除之資料來源的 **X** 符號。
 
    >[!NOTE]
    >
