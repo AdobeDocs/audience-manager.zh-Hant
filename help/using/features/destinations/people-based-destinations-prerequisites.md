@@ -5,7 +5,7 @@ seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: 先決條件和注意事項
 translation-type: tm+mt
-source-git-commit: c605e04489ad444193e1e884ee6a3b05f437b9f2
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: c605e04489ad444193e1e884ee6a3b05f437b9f2
 
 ## 註冊以人為本的目的地 {#signing-up}
 
-[!DNL People-Based Destinations] 是一種進階功能，可讓您在以人為本的環境中啟用您的第一方受眾細分，透過社交網路或電子郵件行銷鎖定您的受眾，從而增強您的Audience Manager體驗。
+[!DNL People-Based Destinations] 是一種進階功能，可讓您在以人為本的環境中啟用您的第一方受眾細分，透過社交網路或電子郵件行銷鎖定您的受眾，借此增強您的Audience Manager體驗。
 
 請連絡您的Adobe代表，以利用這項優質功能。
 
@@ -101,5 +101,5 @@ Adobe Experience Cloud可讓您選擇透過Adobe Experience Platform Identity Se
 
 有兩種方式可讓您將離線資料帶入Audience Manager [!DNL People-Based Destinations]。
 
-* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 使用此方法，您可以選擇在中使用資料庫中的散列電 [!DNL CRM] 子郵件地址 [!DNL People-Based Destinations]。 此外，使用此方法時，您也可以針對已登入的特徵來限定雜湊 [電子郵件地址](../traits/trait-qualification-reference.md)。
+* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 使用此方法，您可以選擇在中使用資料庫中的散列電 [!DNL CRM] 子郵件地址 [!DNL People-Based Destinations]。 此外，使用此方法時，您也可以針對已登入的特徵，限定雜湊的 [電子郵件地址](../traits/trait-and-segment-qualification-reference.md)。
 * 使用 [Declared ID](../declared-ids.md) ，在傳入已驗證的客戶ID時，宣告雜湊的電子郵件地址。 使用此方法時，Audience Manager僅會代表您傳送經過線上驗證 [!DNL People-Based Destinations] 的使用者的雜湊電子郵件地址。 透過以人為本的管道啟動的電子郵件地址，只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID相關的其他電子郵件地址不會即時傳送。
