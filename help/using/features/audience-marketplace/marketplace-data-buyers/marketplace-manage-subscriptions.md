@@ -7,7 +7,7 @@ title: 管理資料饋送訂閱
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: b1f4fe1180001a92577adc9e55f2697f3285ea46
+source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 
 ---
 
@@ -26,22 +26,22 @@ source-git-commit: b1f4fe1180001a92577adc9e55f2697f3285ea46
 
 1. 前往 **[!UICONTROL Audience Marketplace > Marketplace]**。 使用搜尋功能或瀏覽清單以尋找資料饋送。
 
-   ![](assets/subscribe1.png)
+   ![訂閱](assets/subscribe1.png)
 
 1. 按一下您要使用的資料饋送名稱。 這會開啟所 [選動態消息的](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#marketplace-buyer-details) 「計畫詳細資訊」頁面。
 
-   ![](assets/plan-details.png)
+   ![計畫詳細資訊](assets/plan-details.png)
 
 1. 從預訂表中選擇一個使用案例，並：
    * 將滑桿 **[!UICONTROL Subscription]** 移至 **[!UICONTROL On]**。
    * 按一下 **[!UICONTROL Review & Subscribe]**. 這會開啟視 [!UICONTROL Terms and Conditions] 窗。
-   ![](assets/subscribe3.png)
+   ![訂閱](assets/subscribe3.png)
 
 1. 在窗口 [!UICONTROL Terms and Conditions] 中：
 
    * **重要：** 勾選核 **[!UICONTROL ID sync]** 取方塊。 此設定有助於改善與資料提供者的比對率。
    * 勾選條款與條件方塊，然後按一 **[!UICONTROL Accept]** 下以完成訂閱程式。
-   ![](assets/subscribe4.png)
+   ![訂閱](assets/subscribe4.png)
 
 ### 後續步驟
 
