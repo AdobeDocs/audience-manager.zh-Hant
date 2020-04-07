@@ -1,12 +1,12 @@
 ---
 description: 使用規則型、已登入、演算法或資料夾特徵來管理資料收集和觀眾建立。
 seo-description: 使用規則型、已登入、演算法或資料夾特徵來管理資料收集和觀眾建立。
-keywords: 特徵；特徵；特徵概述
+keywords: trait; traits; trait overview
 seo-title: 特徵概述
 solution: Audience Manager
 title: 特徵概述
 translation-type: tm+mt
-source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -20,4 +20,4 @@ source-git-commit: 94046c4ed825949451d0dbad37adbe9fba0f9191
 * [資料夾特徵：關於](/help/using/features/traits/about-folder-traits.md)
 * [特徵儲存](/help/using/features/traits/trait-storage.md)
 * [作用中受眾特徵與資料來源同步特徵](/help/using/features/traits/client-activity-synced-audience-traits.md)
-* [特徵資格參考](/help/using/features/traits/trait-qualification-reference.md)
+* [特徵和區段資格參考](/help/using/features/traits/trait-and-segment-qualification-reference.md)
