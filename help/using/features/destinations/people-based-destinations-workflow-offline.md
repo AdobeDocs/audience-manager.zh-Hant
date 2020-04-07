@@ -5,7 +5,7 @@ seo-title: 工作流程B —— 基於僅離線資料的個人化
 solution: Audience Manager
 title: 工作流程B —— 基於僅離線資料的個人化
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
-This page includes step-by-step guidance on how to build audience segments from offline-only customer data, and send them to People-Based Destinations.
+本頁包含逐步指引，說明如何從僅離線的客戶資料建立受眾細分，並將其傳送至以人為本的目標。
 
 ## 步驟1 —— 板載離線特徵 {#step-1-onboard-traits}
 
@@ -23,7 +23,7 @@ This page includes step-by-step guidance on how to build audience segments from 
 
 >[!IMPORTANT]
 >
-> 在繼續之前，請確定您即將上線的客戶活動已在Audience manager中定義，並具有對應的已 [上線特徵](../traits/trait-qualification-reference.md)。
+> 在繼續之前，請確定您即將上線的客戶活動已在Audience Manager中定義，並具有對應的已 [上線特徵](../traits/trait-and-segment-qualification-reference.md)。
 
 無論您現有的Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))是否是雜湊電子郵件，您都必須對包含您的 [DPUUID的資料來源執行特徵登入](../../reference/ids-in-aam.md)。
 
@@ -59,7 +59,7 @@ This page includes step-by-step guidance on how to build audience segments from 
 
 在這種情況下，您需要將對應的資料源標籤為：
 
-1. 轉到 **[!UICONTROL Audience Data]** -&gt; **[!UICONTROL Data Sources]**。
+1. 轉到 **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]**。
 1. 尋找包含您的DPUUID的資 [料來源](../../reference/ids-in-aam.md)，然後按一下。
 1. 請確定選項未 **[!UICONTROL Cannot be tied to personally identifiable information]** 勾選。
 1. 儲存資料來源設定。
@@ -70,24 +70,24 @@ This page includes step-by-step guidance on how to build audience segments from 
 
 在這種情況下，您需要建立新的跨裝置資料來源，以儲存雜湊的電子郵件地址。 以下是如何做到的：
 
-1. 登入您的Audience manager帳戶並前往 **[!UICONTROL Audience Data]** -&gt; **[!UICONTROL Data Sources]**，然後按一下 **[!UICONTROL Add New]**。
+1. 登入您的Audience Manager帳戶並前往 **[!UICONTROL Audience Data]** -> **[!UICONTROL Data Sources]**，然後按一下 **[!UICONTROL Add New]**。
 1. 為新數 **[!UICONTROL Name]** 據源 **[!UICONTROL Description]** 輸入和。
 1. 在下拉 **[!UICONTROL ID Type]** 式功能表中，選取 **[!UICONTROL Cross Device]**。
 1. 在該節 **[!UICONTROL Data Source Settings]** 中，同時選擇和 **[!UICONTROL Inbound]** 選 **[!UICONTROL Outbound]** 項，並啟用選 **[!UICONTROL Share associated cross-device IDs in people-based destinations]** 項。
 1. 使用下拉式選單來選取此 **[!UICONTROL Emails(SHA256, lowercased)]** 資料來源的標籤。
    >[!IMPORTANT]
    >
-   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience manager不會在此步驟中雜湊資料。 請確定您打算儲存在此資料來源中的電子郵件地址已使用演算法雜湊 [!DNL SHA256] 過。 否則，您將無法使用它 [!DNL People-Based Destinations]。
+   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中雜湊資料。 請確定您打算儲存在此資料來源中的電子郵件地址已使用演算法雜湊 [!DNL SHA256] 過。 否則，您將無法使用它 [!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 
    >[!NOTE]
    >
-   > See Data Onboarding for frequently asked questions about how you should bring your offline data into Audience Manager for People-Based Destinations.[](people-based-destinations-prerequisites.md#data-onboarding)
+   > 如需 [](people-based-destinations-prerequisites.md#data-onboarding) 如何將離線資料匯入Audience Manager（以人為本的目的地）的常見問題，請參閱資料入門。
 
 觀看以下影片，以取得如何建立資料來源的教學影片 [!UICONTROL People-Based Destinations]。
 
->[!VIDEO](https://video.tv.adobe.com/v/29006/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/29006/)
 
 ## 步驟3 —— 透過檔案式ID同步化，將DPUUID與雜湊的電子郵件地址相符 {#match-ids-emails}
 
@@ -139,7 +139,7 @@ This page includes step-by-step guidance on how to build audience segments from 
 
 下一步是建立新的合併規則，協助您建立要傳送給您的對象區段 [!DNL People-Based Destinations]。
 
-1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Audience Data]** -&gt; **[!UICONTROL Profile Merge Rules]**。
+1. 登入您的Audience Manager帳戶，然後前往 **[!UICONTROL Audience Data]** -> **[!UICONTROL Profile Merge Rules]**。
 2. 按一下 [!UICONTROL Add New Rule].
 3. 輸入配置檔案合併規 **[!UICONTROL Name]** 則和 **[!UICONTROL Description]**。
 4. 在區段 **[!UICONTROL Profile Merge Rule Setup]** 中，從清單 **[!UICONTROL All Cross-Device Profiles]** 中選取規 **[!UICONTROL Cross-Device Options]** 則。
@@ -152,29 +152,29 @@ This page includes step-by-step guidance on how to build audience segments from 
 
 ## 步驟6 —— 配置基於人的平台身份驗證 {#configure-authentication}
 
-1. 登入您的Audience manager帳戶，然後前往 **[!UICONTROL Administration]** &gt; **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 Otherwise, the page is empty.
+1. 登入您的Audience Manager帳戶，然後前往 **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
    ![以人為本的整合](assets/pbd-config.png)
-1. Click **[!UICONTROL Add Account]**.
+1. 按一下 **[!UICONTROL Add Account]**.
 1. 使用下 **[!UICONTROL People-Based Platform]** 拉式選單來選取您要設定整合的平台。
    ![以人為本的平台](assets/pbd-add.png)
 1. 按一 **[!UICONTROL Confirm]** 下以重新導向至所選平台的驗證頁面。
 1. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下 **[!UICONTROL Confirm]**。
-1. Audience manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
+1. Audience Manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
 
 >[!IMPORTANT]
 >
->Audience manager會透過驗證Token處理與社交平台的整合，驗證Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
+>Audience Manager會透過驗證Token處理與社交平台的整合，驗證Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
 
 ## 步驟7 —— 建立以人為本的目的地 {#create-destination}
 
-1. 登入您的Audience manager帳戶，前往 **[!UICONTROL Audience Data]** &gt; **[!UICONTROL Destinations]**，然後按一下 **[!UICONTROL Create Destination]**。
+1. 登入您的Audience Manager帳戶，前往 **[!UICONTROL Audience Data]** > **[!UICONTROL Destinations]**，然後按一下 **[!UICONTROL Create Destination]**。
 1. 在該 **[!UICONTROL Basic Information]** 部分中，輸入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** 新資料源，並使用以下設定：
    * **[!UICONTROL Category]**:整合平台；
    * **[!UICONTROL Type]**:以人為本；
    * **[!UICONTROL Platform]**:選取您要傳送受眾細分至的以人為本的平台；
    * **[!UICONTROL Account]**:選取與所選平台相關聯的所需廣告商帳戶。
       ![create-destination](assets/pbd-create-destination.png)
-1. Click **[!UICONTROL Next]**.
+1. 按一下 **[!UICONTROL Next]**.
 1. 選擇 **[!UICONTROL Data Export Labels]** 要為此目標設定的。
 1. 在區 **[!UICONTROL Configuration]** 段中，選取包含雜湊資料來源的資料來源。
 1. 在區 **[!UICONTROL Segment Mappings]** 段中，選取您要傳送至此目的地的區段。 這將是您在步驟5 —— 建立 [觀眾區段中建立的區段](people-based-destinations-workflow-offline.md#create-audience-segments)。
