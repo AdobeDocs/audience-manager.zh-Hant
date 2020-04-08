@@ -5,7 +5,7 @@ seo-title: 工作流程B —— 基於僅離線資料的個人化
 solution: Audience Manager
 title: 工作流程B —— 基於僅離線資料的個人化
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
 
 ---
 
@@ -38,7 +38,8 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 | 89159024796760343733111707646026765593 | 11223, 93342, 27341 |
 
 <br />
-若要將上述範例中的客戶ID限定為對應的已登入特徵，您必須上傳包含下列內容的[傳入資料檔案](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md):
+
+若要將上述範例中的客戶ID限定為對應的已登入特徵，您必須上傳包含 [下列內容的傳入資料](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md) :
 
 ```
 68079982765673198504052656074456196039<TAB>d_sid=12345,d_sid=23456
