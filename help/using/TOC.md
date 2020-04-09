@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
 
 ---
 
@@ -387,6 +387,13 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
    + [概述](/help/using/help-legal/help-legal-overview.md)
    + [如果有問題](/help/using/help-legal/help-problem.md)
    + [聯絡與法律資訊](/help/using/help-legal/help-legal-contact.md)
++ 主要客戶支援問題{#top-support-issues}
+   + [概述](/help/using/support-issues/support-issues-overview.md)
+   + [為什麼我的Onhoted特徵種群在10月15日左右降至0? ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [為何我的特徵或區段不會顯示在「重疊報表」頁面中？](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
+   + [我們的唯讀使用者為何能夠建立、編輯或刪除特徵和區段？](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
+   + [我們不是Audience Manager客戶，但在我們的網站上看到Audience Manager Javascript呼叫](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
+   + [我是否應在目標詳細資訊頁面上看到Audience Manager Audience Lab對應的區段？](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
 + 文件更新{#documentation-updates}
    + [2020年檔案更新](docs-updates/docs-2020.md)
    + [2019年檔案更新](docs-updates/docs-2019.md)
