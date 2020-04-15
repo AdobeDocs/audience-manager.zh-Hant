@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 46d1770d50284e0e73bc2c43f5e5ccca22c12574
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 ![獨特性實現](assets/trait-graph.png)
 
-視您希望圖表顯示的結果類型而定(依照或跨裝 [!UICONTROL Device ID] 置 [!UICONTORL ID篩選])，量度有不同的含義：
+視您希望圖形顯示的結果類型（依或篩選）而定，量度有 [!UICONTROL Device ID] 不同 [!UICONTROL Cross-Device ID]的含義：
 
 篩選結果時，依 [!UICONTROL Device ID]據：
 
