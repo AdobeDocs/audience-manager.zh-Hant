@@ -1,19 +1,19 @@
 ---
-description: Audience manager要求HTTP(S)伺服器對伺服器要求必須進行數位簽署，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP要求。
-seo-description: Audience manager要求HTTP(S)伺服器對伺服器要求必須進行數位簽署，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP(S)要求。
+description: Audience Manager要求HTTP(S)伺服器對伺服器要求必須進行數位簽署，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP要求。
+seo-description: Audience Manager要求HTTP(S)伺服器對伺服器要求必須進行數位簽署，以取得有效性。 本檔案說明如何使用私密金鑰簽署HTTP(S)要求。
 seo-title: 數位簽署的HTTP(S)要求
 solution: Audience Manager
 title: 數位簽署的HTTP(S)要求
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 translation-type: tm+mt
-source-git-commit: e7bb837a9a4a4e41ca5c73a192f68a4caa30335d
+source-git-commit: 5dddaaae3a5cb2ce4c4649e2a153edf1992fa964
 
 ---
 
 
 # 數位簽署的 `HTTP(S)` 請求 {#digitally-signed-http-requests}
 
-Audience manager需要 `HTTP(S)` 以數位方式簽署伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金 `HTTP(S)` 鑰簽署要求。
+Audience Manager需要 `HTTP(S)` 以數位方式簽署伺服器對伺服器要求，以取得有效性。 本檔案說明如何使用私密金 `HTTP(S)` 鑰簽署要求。
 
 ## 概述 {#overview}
 
@@ -22,7 +22,7 @@ Audience manager需要 `HTTP(S)` 以數位方式簽署伺服器對伺服器要�
 使用您提供的私密金鑰並與共 [!DNL Audience Manager]用，我們可以數位簽署 `HTTP(S)`[IRIS](../../../reference/system-components/components-data-action.md#iris) 和HTTP(S)伺服器之間傳送的請求。 這可確保：
 
 * **真實性**:只有具有私密金鑰的傳送者([!UICONTROL IRIS])才能傳送有 `HTTP(S)` 效訊息給合作夥伴。
-* **消息完整性**:使用這種方法，即使 `HTTP`是這樣，您也能免受中間攻擊中的人的攻擊，而資訊會被扭曲。
+* **消息完整性**:使用這種方法，即使是 `HTTP`這樣，您也會受到保護，不受中間人攻擊，而資訊會被扭曲。
 
 [!UICONTROL IRIS] 已內建支援在無停機情況下旋轉密鑰，如下方「旋轉私 [密密鑰](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md#rotate-private-key) 」部分所示。
 
@@ -89,8 +89,6 @@ String signature = Base64.encodeBase64String(result).trim();
 出於安全考慮，建議定期旋轉私密金鑰。 由您決定私密金鑰和旋轉期間。 為了在零停機時實現密鑰輪替，支援 [!UICONTROL IRIS] 添加多個簽名標頭。 一個標題將包含舊金鑰產生的簽名，另一個標題將包含使用新私密金鑰產生的簽名。 請參閱以下步驟：
 
 1. 合作夥伴會將新的私密金鑰通訊給 [!DNL Adobe Audience Manager]您。
-1. [!UICONTROL IRIS] 將開始傳送兩個簽名標題（一個使用舊金鑰，另一個使用新金鑰）。
-1. 在您開始收到兩個標題後，可以選擇捨棄舊金鑰，只查看新簽名。
 1. 舊金鑰會從中移除， [!DNL Audience Manager] 且只 [!UICONTROL IRIS] 會傳送新的簽名標題。 鍵已旋轉。
 
 ## 用於簽署的資料 {#data-signing}
