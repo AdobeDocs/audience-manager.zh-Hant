@@ -5,12 +5,12 @@ seo-title: 演算法模型特徵排除
 title: 演算法模型特徵排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: 4d10aaac5779f283aa675eef10cf13392837157f
 
 ---
 
 
-# 演算法模型：特徵排除 {#algorithmic-models-trait-exclusion}
+# 相似模型：特徵排除 {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] 在模型工作流程中提供額外的控制項，讓您根據您的領域專業知識和法規要求，將必要的防護欄加入模型。 使用選 [!UICONTROL Exclusions] 項，在從一或多個資料來源建立模型時，選取要忽略哪些特徵。
 
@@ -18,8 +18,8 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 以下是您可處理的一些使用案例 [!UICONTROL Trait Exclusion]:
 
-* [!UICONTROL Trait Exclusion] enables you to exclude certain catch-all traits, such as site visitor traits, so you don't bias the model, leading to flat results.
-* You can remove traits that you don't know about or you don't trust from a data source, to better understand the influential traits.
+* [!UICONTROL Trait Exclusion] 可讓您排除特定的全面性特徵，例如網站訪客特徵，因此您不會偏倚模型，導致平坦結果。
+* 您可以從資料來源移除您不知道或不信任的特徵，以便更好地瞭解這些具影響力的特徵。
 * 您可以排除某些特徵（例如人口特徵），以協助您履行任何可能的合規義務。
 
 >[!IMPORTANT]
@@ -30,21 +30,21 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ## 如何使用特徵排除 {#how-to-use}
 
-Use the Build a model workflow to build new algorithmic models.[](../../features/algorithmic-models/create-model.md#build-model)
+使用「建 [立模型」工作流程](../../features/algorithmic-models/create-model.md#build-model) ，建立新的演算模型。
 
 1. 在您 [!UICONTROL Exclusions] 選取一或多個資料來源進行模型建立之前，選取範圍會變灰。
-2. After selecting one or more data sources for modeling, press .**[!UICONTROL Browse All Traits]**
+2. 在選取一或多個資料來源進行模型建立後，請按 **[!UICONTROL Browse All Traits]**。
 3. 在視窗 **[!UICONTROL Select Traits to Exclude]** 中，您可以看到與先前選取的資料來源相關聯的所有特徵。 選取您要排除的特徵。
-4. You can filter the traits by trait type, or you can browse the trait folders. Note that trait folders only display the traits associated with your selected data sources.
+4. 您可以依特徵類型篩選特徵，或瀏覽特徵資料夾。 請注意，特徵資料夾只會顯示與您選取資料來源相關的特徵。
 5. Press **[!UICONTROL Exclude Selected Traits]**.
 
 >[!TIP]
 >
->You can exclude entire folders by excluding the folder trait instead of excluding the traits in the folder, one by one. For example, in a folder with 20 traits, you would only need to exclude the folder trait instead of excluding all the traits one by one.
+>您可以逐個排除資料夾特徵，而不是排除資料夾中的特徵，以排除整個資料夾。 例如，在具有20個特徵的資料夾中，您只需要排除資料夾特徵，而不需逐一排除所有特徵。
 
-If you prefer video tutorials, watch our video demonstration for Trait Exclusion:
+如果您偏好視訊教學課程，請觀看我們的「特徵排除」視訊示範：
 
->[!VIDEO](https://video.tv.adobe.com/v/25569/?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/25569/?quality=12)
 
 ## 重要方面與限制 {#important-aspects-and-limitations}
 
@@ -59,7 +59,7 @@ If you prefer video tutorials, watch our video demonstration for Trait Exclusion
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Excluded Traits in Models Summary View </p> </td>
+   <td colname="col1"> <p>模型摘要檢視中排除的特徵 </p> </td>
    <td colname="col2"> <p>排除的特 <i>徵不會顯示在</i> 「模型摘要」檢視中。 您只能在「編輯模型」工作流程中看到排 <b><span class="uicontrol"> 除的特徵</span></b> 。 </p> </td>
   </tr> 
   <tr> 
@@ -76,7 +76,7 @@ If you prefer video tutorials, watch our video demonstration for Trait Exclusion
   </tr> 
   <tr> 
    <td colname="col1"> <p>可排除的特徵數上限 </p> </td>
-   <td colname="col2"> <p>可從模型中排除的特徵數上限為500。 使用資料夾特徵來最大化排除。 </p> </td>
+   <td colname="col2"> <p>可從模型中排除的特徵數上限為500。 使用資料夾特徵最大化排除。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p>排除基準特徵 </p> </td>
@@ -87,7 +87,7 @@ If you prefer video tutorials, watch our video demonstration for Trait Exclusion
 
 觀看以下影片，瞭解從中排除特定特徵的方式及原因 [!UICONTROL Look-Alike Model]。
 
->[!VIDEO](https://video.tv.adobe.com/v/25569/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/25569/)
 
 ## 相關連結
 
