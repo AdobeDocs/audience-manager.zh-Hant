@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 選取Audience Manager報表中的資料取樣和錯誤率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 6dca5c8bc338a670050123a94808795705450c3a
 
 ---
 
@@ -51,3 +51,4 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 * [重疊報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特徵對特徵、區段對特徵和區段對區段）。
 * [可定址的觀眾](../features/addressable-audiences.md) （客戶和區段層級資料）。
 * 「 [裝置總](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) 計」量度 [!UICONTROL Profile Merge Rule]。
+* [資料總管](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md) (Data Explorer)在標籤和任何頁籤 [!UICONTROL Search] 中使用取樣資料 [!UICONTROL Saved Searches]。
