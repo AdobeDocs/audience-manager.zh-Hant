@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用查閱表格改善記錄檔處理時間
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
@@ -69,8 +69,3 @@ c_lookup_tables.xml
 ## API可免除查閱表格的需求
 
 如果您的廣告服務系統有API，您可能不需要在查閱檔案中傳送中繼資料。 我們可以透過API取得該資訊。 在這種情況下，您的日誌檔案應僅包含ID。 我們將與您合作，以決定是否可透過API取得中繼資料。
-
->[!MORELIKETHIS]
->
->* [傳送與績效報表](../../reporting/dynamic-reports/delivery-performance-report.md)
-
