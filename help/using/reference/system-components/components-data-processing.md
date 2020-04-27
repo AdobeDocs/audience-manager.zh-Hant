@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料處理元件
 uuid: d458d869-7a23-4016-871d-0b994cf4af06
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
 
 ---
 
@@ -21,15 +21,15 @@ c_comproc.xml
 
  -->
 
-Audience manager使用下列元件來處理資料：
+Audience Manager使用下列元件來處理資料：
 
 ## Hadoop {#hadoop}
 
 在 [!DNL Audience Manager]中，Hadoop是主資料庫，包含用戶 [!DNL Audience Manager] 的所有知識。 例如，當Profile Cache Servers [建立包含有關用戶資料的日誌檔案時](../../reference/system-components/components-data-collection.md) ，它將該資料發送到Hadoop以進行儲存。 其他重要的Hadoop元素包括：
 
-* **** 蜂巢：適用於Hadoop的資料倉庫。 Hive管理對Hadoop中儲存的資料的臨機查詢。
+* **蜂巢：** 適用於Hadoop的資料倉庫。 Hive管理對Hadoop中儲存的資料的臨機查詢。
 
-* **** HBase:非常大的Hadoop資料庫。 它處理並管理傳入和傳出的資料、特徵規則、演算法模型資訊，並執行許多其他與儲存和移動資料至不同系統相關的功能。
+* **HBase:** 非常大的Hadoop資料庫。 它處理並管理傳入和傳出的資料、特徵規則、演算法模型資訊，並執行許多其他與儲存和移動資料至不同系統相關的功能。
 
 客戶無法直接存取這些系統。 不過，客戶確實會間接與他們合作，因為這些元件會儲存有關其網站訪客的重要資料。
 
@@ -44,7 +44,6 @@ Audience manager使用下列元件來處理資料：
 這絕非完整清單，但是有些常見的控制面板報表需 [!UICONTROL Snowflake] 負責包括：
 
 * [每日特徵變化報表](/help/using/reporting/audience-optimization-reports/daily-trait-variation-report.md)
-* [傳送與績效報表](/help/using/reporting/dynamic-reports/delivery-performance-report.md)
 * 所有重疊報表(如需每個重疊報 [表的相關資訊](/help/using/reporting/dynamic-reports/dynamic-reports.md) ，請參閱互動報表區段)。
 * [未使用的信號報告](/help/using/reporting/dynamic-reports/unused-signals.md)
 
