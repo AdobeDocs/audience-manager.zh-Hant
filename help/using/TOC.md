@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
+source-git-commit: 5518531ce008e42eb3f0168a845464d9d4da3e44
 
 ---
 
@@ -39,9 +39,15 @@ source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
       + [使用限制](features/administration/usage-limits.md)
       + [活動使用情況報告](features/administration/activity-usage-reporting.md)
    + 演算法模型{#algorithmic-models}
-      + [演算法模型](features/algorithmic-models/understanding-models.md)
-      + [建立演算法模型](features/algorithmic-models/create-model.md)
-      + [演算法模型：特徵排除](features/algorithmic-models/trait-exclusion-algo-models.md)
+      + [演算法模型概觀](features/algorithmic-models/algo-models-overview.md)
+      + 外觀類似塑型 {#look-alike-modeling}
+         + [瞭解相似模型](features/algorithmic-models/understanding-models.md)
+         + [建立相似的模型](features/algorithmic-models/create-model.md)
+         + [相似模型：特徵排除](features/algorithmic-models/trait-exclusion-algo-models.md)
+      + 預測性觀眾 {#predictive-audiences}
+         + [預測性觀眾概觀](features/algorithmic-models/predictive-audiences.md)
+         + [預測性觀眾快速入門](features/algorithmic-models/predictive-audiences-start.md)
+         + [預測性對象報告](features/algorithmic-models/predictive-audiences-reporting.md)
    + Audience Lab{#audience-lab}
       + [Audience Lab概觀](features/audience-lab/audience-lab.md)
       + [管理測試群組](features/audience-lab/audience-lab-manage-test-groups.md)
@@ -311,7 +317,7 @@ source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
    + 傳送觀眾資料{#sending-audience-data}
       + [傳送觀眾資料](integration/sending-audience-data/send-audience-data.md)
       + 即時傳入資料整合 {#real-time-inbound-data-integration}
-         + [入站即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
+         + [入站、即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [像素式資料傳輸](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [即時傳入資料擷取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
       + 批資料傳輸流程{#batch-data-transfer-process}
@@ -381,6 +387,7 @@ source-git-commit: e70c3dde2777d0ec128bae8998697b28e92df19a
    + [以人為本的目的地常見問答集](faq/faq-people-based-destinations.md)
    + [產品功能與功能常見問答集](faq/faq-features.md)
    + [描述檔合併規則與裝置圖表常見問答集](faq/faq-profile-merge.md)
+   + [預測性受眾常見問答集](faq/faq-predictive-audiences.md)
    + [定位常見問答集](faq/faq-targeting.md)
    + [報表常見問答集](faq/faq-reporting.md)
 + 說明與法律{#help-and-legal}
