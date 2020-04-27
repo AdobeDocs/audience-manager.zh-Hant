@@ -1,42 +1,31 @@
 ---
-description: 建立並管理演算法模型中使用的特徵或區段，也稱為相似模型。 模型功能位於「對象資料>模型」中。
-keywords: 相對重量，相似
-seo-description: 建立並管理演算法模型中使用的特徵或區段，也稱為相似模型。 模型功能位於「對象資料>模型」中。
-seo-title: 關於演算法模型
+description: 建立並管理相似模型中使用的特徵或區段。
+keywords: relative weight, lookalike
+seo-description: 建立並管理相似模型中使用的特徵或區段。
+seo-title: 關於相似模型
 solution: Audience Manager
-title: 關於演算法模型
-topic: DIL API
-uuid: 39441e72-5316-453d-9aff-0e0b633achang 39441e72-5316-453d-9aff-0e0b633achang
+title: 關於相似模型
+uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: a6e8db30c54e0629e27b1ee7f189a6c471d2bb6d
 
 ---
 
 
-# 關於演算法模型 {#about-algorithmic-models}
+# 瞭解相似模型 {#about-algorithmic-models}
 
-建立並管理演算法模型中使用的特徵或區段，也稱為相似模型。 模型特徵位於中 **[!UICONTROL Audience Data > Models]**。
+## 使用類似模型尋找新使用者 {#find-new-users}
 
-<!-- c_models.xml -->
-
-## 瞭解演算模型 {#understanding-models}
-
-以下各節代表對中演算法模型的審查 [!DNL Audience Manager]。 它們說明模型的運作方式、優點和工作流程。
-
-<!-- understanding-models.xml -->
-
-## 使用演算法模型尋找新使用者 {#find-new-users}
-
-演算法模型可協助您透過自動化資料分析，發掘新的獨特受眾。 當您選取特徵或區段、時間間隔以及第一方和第三方資料來源時，程式就會開始。 您的選擇為演算模型提供輸入。 當分析程式執行時，它會根據所選人口的共用特性，尋找符合資格的使用者。 完成時，此資料可在 [Trait Builder](../../features/traits/about-trait-builder.md) ，您可在此處使用，以根據正確性和觸及度 [建立特徵](../../features/traits/trait-accuracy-reach.md)。 此外，您還可以建立結合演算法特徵和規則型特徵的區段，並使用布林運算式和比較運算子新增其他資格要求。 演算法模型提供您動態方式，從所有可用的特徵資料中擷取價值。
+[!UICONTROL Look-Alike Modeling] 協助您透過自動化資料分析，發掘新的獨特受眾。 當您選取特徵或區段、時間間隔以及第一方和第三方資料來源時，程式就會開始。 您的選擇為演算模型提供輸入。 當分析程式執行時，它會根據所選人口的共用特性，尋找符合資格的使用者。 完成時，此資料可在 [Trait Builder](../../features/traits/about-trait-builder.md) ，您可在此處使用，以根據正確性和觸及度 [建立特徵](../../features/traits/trait-accuracy-reach.md)。 此外，您還可以建立結合演算法特徵和規則型特徵的區段，並使用布林運算式和比較運算子新增其他資格要求。 [!UICONTROL Look-Alike Modeling] 提供您從所有可用特徵資料擷取值的動態方式。
 
 ## 優勢 {#advantages}
 
-使用模型的主要優 [!DNL Audience Manager] 點包括：
+使用的主要優點 [!UICONTROL Look-Alike Modeling] 包括：
 
-* **** 資料準確性：演算法會定期執行，有助於讓結果保持最新且相關。
-* **** 自動化：您不需要管理大量的靜態規則。 演算法會為您尋找受眾。
-* **** 節省時間並減少工作量：透過我們的模型建立程式，您不必猜測哪些特性／區段可行，或將時間資源花在促銷活動上，即可發現新的受眾。 模型可以為您執行此操作。
-* **** 可靠性：模型可與伺服器端的發現和資格鑑定程式搭配使用，這些程式會評估您自己的資料和您有權存取的所選第三方資料。 這表示您不必查看網站上的訪客，即可讓他們符合某個特徵的資格。
+* **資料準確性：** 演算法會定期執行，有助於讓結果保持最新且相關。
+* **自動化：** 您不需要管理大量的靜態規則。 演算法會為您尋找受眾。
+* **節省時間並減少工作量：** 透過我們的模型建立程式，您不必猜測哪些特性／區段可行，或將時間資源花在促銷活動上，即可發現新的受眾。 模型可以為您執行此操作。
+* **可靠性：** 模型可與伺服器端的發現和資格鑑定程式搭配使用，這些程式會評估您自己的資料和您有權存取的所選第三方資料。 這表示您不必查看網站上的訪客，即可讓他們符合某個特徵的資格。
 
 ## 工作流程 {#workflow}
 
@@ -50,7 +39,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 疑難排解 {#troubleshooting}
 
-我們會停用任何無法產生連續三次執行資料的演算法模型。 請注意，不能將模型的狀態設定回活動狀態。 為確保您的模型產生資料，我們建議您從資料來源建立具備足夠特性的模型，以便從中累積資料。
+我們會停用 [!UICONTROL Look-Alike Model] 任何無法產生連續三次執行資料的執行。 請注意，不能將模型的狀態設定回活動狀態。 為確保您的模型產生資料，我們建議您從資料來源建立具備足夠特性的模型，以便從中累積資料。
 
 ## 瞭解特徵權重 {#understanding-traitweight}
 
@@ -80,7 +69,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### 步驟5:顯示並處理結果
 
-Audience manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builder]。 當您想要建立演算法特徵時， [!UICONTROL Trait Builder] 可讓您根據演算法在資料執行期間產生的加權分數來建立特徵。 您可以選擇更高的準確度，以僅限符合使用者分數極高的使用者，因此與基準讀者非常相似，而不是其他觀眾。 如果您想要觸及到更廣的觀眾（觸及），則可降低準確性。
+Audience Manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builder]。 當您想要建立演算法特徵時， [!UICONTROL Trait Builder] 可讓您根據演算法在資料執行期間產生的加權分數來建立特徵。 您可以選擇更高的準確度，以僅限符合使用者分數極高且因此與基準讀者非常相似的使用者，而非其他對象。 如果您想要觸及到更廣的觀眾（觸及），則可降低精確度。
 
 ### 步驟6:重新評估特徵在處理週期中的重要性
 
@@ -91,13 +80,13 @@ Audience manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builde
 * [模型產生器](../../features/algorithmic-models/create-model.md)
 * [準確性與觸及性](../../features/traits/trait-accuracy-reach.md)
 
-## 演算法模型和特徵的更新排程 {#update-schedule}
+## 更新相似模型和特徵的排程 {#update-schedule}
 
 建立和更新新或現有演算法模型與特徵的排程。
 
 <!-- c_model_update_schedule.xml -->
 
-### 演算法模型建立與更新排程
+### 相似模型建立和更新計畫
 
 <table id="table_E75A2B334A7F47ED9DFFBD6DF8636641"> 
  <thead>
@@ -109,11 +98,11 @@ Audience manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builde
  <tbody>
   <tr> 
    <td colname="col1"> <b>建立或克隆模型</b> </td>
-   <td colname="col2"> <p>對於新的或克隆的演算法模型，建立程式每天執行一次，網址為： 
+   <td colname="col2"> <p>對於新的或克隆的[!UICONTROL相似模型]，建立過程每天運行一次，網址為： 
      <ul id="ul_97333AC409AF4760A91D90A06050122B"> 
       <li id="li_3A43809F924341FCAC3A85E3825E0F61"> 東部時間下午5點（11月- 3月） </li> 
       <li id="li_C07D22AB192D4E0191D9EBF6426EC73D"> 美國東部夏令時間下午6點（3月- 11月） </li> 
-     </ul> </p> <p>在建立截止日期之後構建或克隆的模型將在第二天進行處理。 </p> <p>如果模型的首次運行未生成任何資料，則它將在次日運行第二次。 如果第二次嘗試也未產生任何資料，則第三次嘗試，即第二天。 如果第三次嘗試也未產生任何資料，模型將停止執行。 在這種情況下，我們會停用模型。 請參閱演算法模型 <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"> 疑難排解中的更多資訊</a>。 </p> </td>
+     </ul> </p> <p>在建立截止日期之後構建或克隆的模型將在第二天進行處理。 </p> <p>如果模型的首次運行未生成任何資料，則它將在次日運行第二次。 如果第二次嘗試也未產生任何資料，則第三次嘗試，即第二天。 如果第三次嘗試也未產生任何資料，模型將停止執行。 在這種情況下，我們會停用模型。 請參閱類 <a href="../../features/algorithmic-models/understanding-models.md#troubleshooting"> 似機型疑難排解中的更多資訊</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <b>更新模型</b> </td> 
@@ -126,7 +115,7 @@ Audience manager會在中顯示您的加權模型結果 [!UICONTROL Trait Builde
  </tbody>
 </table>
 
-### 演算法特徵建立和更新排程
+### 相似特徵建立和更新排程
 
 <table id="table_92A908818C4F4F2287EA56C786CD0BBD"> 
  <thead> 
