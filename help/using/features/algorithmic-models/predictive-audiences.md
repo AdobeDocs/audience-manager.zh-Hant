@@ -5,7 +5,7 @@ seo-title: 預測性觀眾概觀
 solution: Audience Manager
 title: Audience Manager預測性觀眾
 translation-type: tm+mt
-source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
+source-git-commit: 74a5de961b2f9ab6afa2caf998ba1100d40cc93a
 
 ---
 
@@ -97,7 +97,7 @@ source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
 ## 考量事項與限制 {#considerations}
 
 >[!IMPORTANT]
-> 在進入實施階段之前，請仔細閱讀本文章。
+> 請仔細閱讀本節內容，然後再轉至實施階段。
 
 在設定模 [!UICONTROL Predictive Audiences] 型時，請記住下列考量和限制：
 
