@@ -1,12 +1,12 @@
 ---
 description: Audience Manager 提供領先業界的線上讀者資料管理服務。我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
-seo-description: Audience Manager(AAM)的技術檔案與自助服務。 AAM為線上受眾資料管理提供業界領先的服務，並為數位廣告商和發佈商提供所需的工具，以控制和運用其資料資產，協助推動銷售成功。
+seo-description: Audience Manager(AAM)的技術檔案與自助服務。 AAM為線上受眾資料管理提供業界領先的服務，並為數位廣告商和發佈商提供所需的工具，以控制並運用其資料資產，協助推動銷售成功。
 seo-title: Adobe Audience Manager產品技術檔案
 solution: Audience Manager
 title: Audience Manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: d8c18b80aa2e22444a509af65bc81567d0902e51
 
 ---
 
@@ -156,7 +156,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
      <br> 
      <p> <b>最新功能</b> </p> <p> 
      閱讀有關最新Audience Manager功能的資訊：</p>
-     <p><ul><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報告</a></li>
+     <p><ul><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測性觀眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報告</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">加州消費者隱私權法案(CCPA)支援與隱私權檔案大修</a></li>
      <li><a href="/help/using/features/segments/trait-recommendations.md">Adobe Sensei支援的Audience Marketplace資料智慧建議</a></li>
      <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">描述檔合併規則增強功能</a></li></ul><p>
