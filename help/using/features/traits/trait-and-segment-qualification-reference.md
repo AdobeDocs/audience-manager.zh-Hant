@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 translation-type: tm+mt
-source-git-commit: 46d1770d50284e0e73bc2c43f5e5ccca22c12574
+source-git-commit: 22780105bc356100af8b64b50e3c92137adeb83a
 
 ---
 
@@ -71,3 +71,4 @@ source-git-commit: 46d1770d50284e0e73bc2c43f5e5ccca22c12574
 ## 特徵資格限制 {#trait-qualification-limit}
 
 我們會針對每個使用者描述檔強制實施150,000個特徵資格限制，不論是已驗證的描述檔([DPUUID](../../reference/ids-in-aam.md))或裝置ID([UUID](../../reference/ids-in-aam.md))。 請注意，雖然DPUUID對於特定例項是唯一的， [!DNL Audience Manager]但UUID會在平台間共 [!DNL Audience Manager] 用。 因 [!UICONTROL UUID]此，我們在儲存特徵資格時，實行公平政策。 演算法可確保每個例項 [!UICONTROL UUID] 都能有相同的描述檔份額 [!DNL Audience Manager]。
+
