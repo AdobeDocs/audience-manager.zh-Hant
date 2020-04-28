@@ -4,9 +4,9 @@ seo-description: 說明如何使用區段產生器建立區段。
 seo-title: 區段產生器
 solution: Audience Manager
 title: 區段產生器
-uuid: 5ca924a5-2b29-4802-ab02-e292d77a0ae
+uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 translation-type: tm+mt
-source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
+source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
 
 ## 視訊展示
 
-首先，在Audience manager影片 [中觀看「建立區段」](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)。 視訊會逐步帶您進行區段建立程式。 請閱讀以下章節以取得詳細資訊。
+首先，在Audience Manager影片 [中觀看「建立區段」](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)。 視訊會逐步帶您進行區段建立程式。 請閱讀以下章節以取得詳細資訊。
 
 ## 建立區段 {#create-segment}
 
@@ -27,26 +27,31 @@ source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
 
 [!UICONTROL Segment Builder] 包含3個不同的部分： [!UICONTROL Basic Information]、 [!UICONTROL Traits]和 [!UICONTROL Destinations Mapping]。 若要建立區段，請填妥和區段中的必 [!UICONTROL Basic Information] 填欄 [!UICONTROL Traits] 位。 [!UICONTROL Destinations Mapping] 設定為選用。 請參閱以下說明以取得其他說明。
 
-![create-segment](assets/create-segment.png)
-
 1. 在「基 [本資訊](../../features/segments/segment-builder.md#segment-builder-controls-basics) 」部分：
+
+   ![create-segment](assets/create-segment.png)
+
    * 命名區段。 區段名稱的最大長度為255個字元。
    * 設定區段狀態（預設為作用中）。
-   * 選擇資料來源。 使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience manager資料來源。
+   * 選擇資料來源。 使用第一個下拉式選單，在Audience Manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience Manager資料來源。
    * 選擇用於區段限定的描述檔合併規則。
    * 將區段指派至儲存資料夾。
-2. 在「特 [徵](../../features/segments/segment-builder.md#segment-builder-controls-traits) 」區段：
+
+1. 在「特 [徵](../../features/segments/segment-builder.md#segment-builder-controls-traits) 」區段：
+   ![segment-builder-traits](assets/segment-builder-traits.png)
    * 搜尋您要新增至區段的特徵，然後按一下 **[!UICONTROL Add Trait]**。 新增另一個特徵以建立特徵群組。
-   * 按一下以開啟「進階搜尋」模式 **[!UICONTROL Browse All Traits]**。 依名稱、ID、說明或資料來源搜尋特徵。 在搜索時按一下一個資料夾，將結果限制在該資料夾及其子資料夾。 您也可以依特徵類型篩選特徵。
+   * 按一下以開啟「進階搜尋」模式 **[!UICONTROL Browse All Traits]**。 依名稱、ID、說明或資料來源搜尋特徵。 在搜索時按一下一個資料夾，將結果限制在該資料夾及其子資料夾。 您也可以依特徵類型([!UICONTROL Folder Trait]、 [!UICONTROL Rule-based]、 [!UICONTROL Onboarded]和 [!UICONTROL Algorithmic])或人口類型(裝置ID和交叉裝[](../../reference/ids-in-aam.md)[](../../reference/ids-in-aam.md)置ID)篩選特徵。
+      ![segment-builder-browser-traits](assets/segment-builder-browse-traits.png)
    * 建立區 [段時取得](trait-recommendations.md) 「即時特徵」建議。
    * 按一下並拖曳特徵以建立個別群組。
    * 將滑鼠指標暫留在群組之間，以設定與布 [!UICONTROL AND]爾值、 [!UICONTROL OR]值的 [!UICONTROL AND NOT] 關係。
    * 將滑鼠指標暫留在時鐘圖示上 [，將時近和頻率](../../features/segments/recency-and-frequency.md) 規則新增至特徵。
    * 在您新增或移除特徵時檢視區段人口資料。 按一下 **[!UICONTROL Calculate Estimates]** 查看（或刷新）估計的人口數。 在「區段產生 [器」中，閱讀](../../features/segments/segment-builder-data.md#segment-populations) 「區段人口資料」的更多資訊。
-   * Click **[!UICONTROL Save]** when done.
-3. *（可選）* 「目標對應」區段中的目標對 [應區段](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
+   * 完成時 **[!UICONTROL Save]** 按一下。
+
+1. *（可選）* 「目標對應」區段中的目標對 [應區段](../../features/segments/segment-builder.md#segment-builder-controls-destinations) :
    * 搜索目標並按一下 **[!UICONTROL Add Destination]**。 請注意，目標必須已存在，您才能將其新增至區段。
-   * Click **[!UICONTROL Save]** when done.
+   * 完成時 **[!UICONTROL Save]** 按一下。
 
 ## 區段產生器控制：基本資訊部分 {#segment-builder-controls-basics}
 
@@ -76,7 +81,7 @@ source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
   </tr> 
   <tr> 
    <td colname="col1"> <b>資料來源</b> </td> 
-   <td colname="col2"> <p>將區段與特定資料提供者關聯。 <p>使用第一個下拉式選單，在Audience manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience manager資料來源。</p></p> </td> 
+   <td colname="col2"> <p>將區段與特定資料提供者關聯。 <p>使用第一個下拉式選單，在Audience Manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的資料來源。</p><p> 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience Manager資料來源。</p></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>描述檔合併規則</b> </td> 
@@ -99,7 +104,7 @@ source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
 
 <!-- r_segment_traits_section.xml-->
 
-**** 必要條件：填寫章節中的必填 [!UICONTROL Basic Information] 欄位。
+**必要條件：** 填寫章節中的必填 [!UICONTROL Basic Information] 欄位。
 
 | 欄位 | 說明 |
 |--- |--- |
@@ -116,7 +121,7 @@ source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
 
 若要從區段移除特徵：
 
-1. 前往「 **讀者資料&gt;區段」**。 捲動清單或使用搜尋功能來尋找您要使用的區段。
+1. 前往「 **讀者資料>區段」**。 捲動清單或使用搜尋功能來尋找您要使用的區段。
 2. 按一下區段名稱以開啟區段詳細資訊畫面。
 3. 按一 **下「編輯** 」以開啟「區段產生器」，然後按一下「 **特徵** 」以開啟特徵面板。
 4. 將滑鼠指標暫留在您要刪除的特徵上，然後按一下X。此動作會立即從您的區段中移除特徵。
@@ -137,7 +142,7 @@ source-git-commit: f162d62fff490aaabfec0ddbb31801fcae482e3b
 
 | 搜尋類型 | 說明 |
 |---|---|
-| **依目標名稱搜尋** | 可讓您依名稱搜尋特定目的地。 若要搜尋，請開始輸入。 欄位將根據您的搜尋詞自動完成。 Click **[!UICONTROL Add Destination]** when done. |
+| **依目標名稱搜尋** | 可讓您依名稱搜尋特定目的地。 若要搜尋，請開始輸入。 欄位將根據您的搜尋詞自動完成。 完成時 **[!UICONTROL Add Destination]** 按一下。 |
 | **瀏覽所有目標** | 瀏覽所有可 *用目* 標的清單。 從快顯清單中選取目標並新增至您的區段。 |
 
 ## 「目標映射」彈出式窗口中的欄位 {#fields-in-dest-mappings}
