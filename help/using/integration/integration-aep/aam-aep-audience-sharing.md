@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager與Adobe Experience Platform之間的觀眾分享
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
+source-git-commit: f191035a1ad4b83bb3d391de80e1f925d6295df7
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 
 ## 概述 {#overview}
 
-Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段共用至Adobe Experience Platform，反之亦然。 您需要 [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/source-connectors/adobe-applications/audience-manager.html) ，才能在Audience Manager和Adobe Experience Platform之間共用觀眾。
+Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段共用至Adobe Experience Platform，反之亦然。 您需要 [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，才能在Audience Manager和Adobe Experience Platform之間共用觀眾。
 
 您可以使用Experience Platform中的Audience Manager特徵和細分，將Audience Manager資料新增至客戶個人檔案，並從Experience Platform細分服務 [中獲益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
@@ -46,7 +46,7 @@ Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您
 
 * [區段服務概觀](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
 * [體驗平台區段產生器使用指南](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
-* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/source-connectors/adobe-applications/audience-manager.html)
+* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
 
 <br> 
 
@@ -91,7 +91,23 @@ Audience Manager會在您的區段儲存空間中自動建立 **名為「Experie
 
 | 項目編號 | 名稱 | 說明 |
 ---------|----------|---------
-| 1 | 整合代碼 | 整合程式碼對應於Experience Platform中的區段ID。 |
-| 2 | 資料來源 | 自動建立。 所有自動從Experience Platform區段建立的特徵和區段都儲存在資料來源 **Adobe Experience Platform觀眾共用中**。 |
-| 3 | 描述檔合併規則 | **外部合併原則** ：指出自動建立的區段會遵循Experience Platform中設定的合併原則。 |
-| 4 | 區段規則 | 區段由「特徵」區段中描述的 [特徵組成](#aep-segments-as-aam-traits)。 |
+| 1 | [!UICONTROL Integration Code] | 整合程式碼對應於Experience Platform中的區段ID。 |
+| 2 | [!UICONTROL Data Source] | 自動建立。 從Experience Platform區段自動建立的所有特徵和區段都會儲存在資料來源中 **[!DNL Adobe Experience Platform Audience Sharing]**。 |
+| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指出自動建立的區段會遵循在Experience Platform中設定的合併原則。 |
+| 4 | [!UICONTROL Segment Rule] | 區段由「特徵」區段中描述的 [特徵組成](#aep-segments-as-aam-traits)。 |
+
+## 瞭解Audience Manager和Experience Platform之間的細分人口差異
+
+您的Audience Manager和Experience Platform區段的區段人口數可能有所不同。 雖然類似或相同對象的區段數目應該相近，但人口差異可能是由於：
+
+* 區段工作執行時間。 Audience Manager會執行區段工作，每天更新介面中的數字一次。 此工作很少與Experience Platform中的分段工作一致。
+* [Audience Manager中的描述檔合併規則](/help/using/features/profile-merge-rules/merge-rules-overview.md) ，以及 [Experience Platform中的「合併原則](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) 」運作方式不同，而用於每個原則的識別圖形也不同。 因此，預期群體間會有所差異。
+
+
+>[!MORELIKETHIS]
+>
+>* [區段服務概觀](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
+>* [體驗平台區段產生器使用指南](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
+>* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
+
+
