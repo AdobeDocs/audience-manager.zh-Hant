@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
+source-git-commit: d086b0cacd93f126ae7b362f4a2632bdccfcb1c2
 
 ---
 
@@ -34,7 +34,22 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 
 * **檔案和程式碼範例：** 斜體 *文字* ，代表您在製作或接收資料時提供或傳入的變 [!DNL API] 數。 以您 *自己的程式碼* 、參數或其他必要資訊取代斜體文字。
 
-## 建議：建立一般API使用者 {#requirements}
+## JWT（服務帳戶）驗證 {#jwt}
+
+若要建立安全的服務對服務Adobe I/O API作業，您必須建立JSON網頁Token(JWT)，以封裝整合的身分，然後交換它以取用Token。 每次向Adobe服務提出要求時，都必須在「授權」標題中包含存取Token，以及您在 [Adobe I/O主控台中建立「服務帳戶整合」時產生的API金鑰（用戶端ID）](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)[](https://console.adobe.io/)。
+
+有關如 [何配置身份驗證的詳細說明](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) ，請參閱JWT（服務帳戶）身份驗證。
+
+## OAuth驗證（已過時） {#oauth}
+
+>[!WARNING]
+> Audience Manager代 [!UICONTROL REST API] 號驗證和透過續約的 [!DNL OAuth 2.0] 功能現已過時。
+>
+> 請改用 [JWT（服務帳戶）驗證](#jwt-service-account-authentication-jwt) 。
+
+Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和續約的標準。 以下各節將說明如何驗證並開始使用 [!DNL API]。
+
+## 建立一般API使用者 {#requirements}
 
 我們建議您建立個別的技術使用者帳戶，以便使用Audience Manager [!DNL API]。這是一般帳戶，不會系結至您組織中的特定使用者或與其關聯。 此類型的使 [!DNL API] 用者帳戶可協助您完成2項工作：
 
@@ -44,10 +59,6 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 舉例來說，假設您想要使用批量管理工具一次變更許多區段，或是用於此類型 [的帳戶](../../reference/bulk-management-tools/bulk-management-intro.md)。 為此，您的使用者帳戶需要存 [!DNL API] 取權。 請建立非特定的使用者帳戶，該帳戶具有適當的認證、金鑰 [!DNL API] 和密碼，以進行呼叫，而不是新增權限給特定 [!DNL API] 使用者。 如果您開發使用Audience Manager的自己應用程式，這也會很有 [!DNL API]用。
 
 與您的Audience Manager顧問合作，以設定一般、僅 [!DNL API]限使用者帳戶。
-
-## OAuth Authentication {#oauth}
-
-Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和續約的標準。 以下各節將說明如何驗證並開始使用 [!DNL API]。
 
 ## 密碼驗證工作流程 {#password-authentication-workflow}
 
@@ -108,6 +119,7 @@ Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和�
 將重新整理Token請求傳入您偏好的用 [!DNL JSON] 戶端。 建立請求時：
 
 * 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`。
+* 請求標題：使用 [Adobe I/O Token時](https://www.adobe.io/) ，您必須提供標 `x-api-key` 題。 您可依照「服務帳戶整合」頁面中的指示，取 [得您的API金鑰](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
 * 將您的用戶端ID和密碼轉換為基本64編碼字串。 在轉換程式中，以冒號分隔ID和密碼。 例如，憑證會 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`。
 * 傳入HTTP標題 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的標題可能如下所示： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * 在請求內文中，指定 `grant_type:refresh_token` 並傳入您先前存取請求中收到的重新整理Token。 請求應如下所示： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
