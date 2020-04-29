@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
+source-git-commit: f4247b9b80e575f7450a78254acda9af9c230b3a
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
 使用 [Audience Manager API程式碼時請注意](https://bank.demdex.com/portal/swagger/index.html#/) :
 
 * **請求參數：** 除非另有指定，否則所有請求參數都是必要的。
+* **請求標題**:使用 [Adobe I/O Token時](https://www.adobe.io/) ，您必須提供標 `x-api-key` 題。 您可依照「服務帳戶整合」頁面中的指示，取 [得您的API金鑰](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
 * **[!DNL JSON]內容類型：**在程`content-type: application/json`式碼&#x200B;*中指*`accept: application/json`定和指定。
 
 * **要求與回應：** 以格式正確的物件傳送 [!DNL JSON] 請求。 [!DNL Audience Manager] 以格式化資 [!DNL JSON] 料回應。 伺服器回應可包含要求的資料、狀態碼或兩者。
@@ -38,8 +39,8 @@ source-git-commit: 184f9c298f776977c375e4c7a918c5a131c4bcd1
 
 Audience Manager REST API支援兩種驗證方法。
 
-* [JWT（服務帳戶）驗證](#jwt) ，是建議的驗證方法。
-* [OAuth驗證（已過時）](#oauth)。 具有現有OAuth整合的客戶可以繼續使用此方法。
+* [JWT（服務帳戶）驗證](#jwt)。 這是建議的驗證方法。
+* [OAuth驗證（已過時）](#oauth)。 雖然此方法已不再提倡，但具有現有OAuth整合的客戶仍可繼續使用此方法。
 
 >[!IMPORTANT]
 >
@@ -54,7 +55,7 @@ Audience Manager REST API支援兩種驗證方法。
 ## OAuth驗證（已過時） {#oauth}
 
 >[!WARNING]
-> Audience Manager代 [!UICONTROL REST API] 號驗證和透過續約的 [!DNL OAuth 2.0] 功能現在已過時。
+> Audience Manager代 [!UICONTROL REST API] 號驗證和透過續約的 [!DNL OAuth 2.0] 功能現已過時。
 >
 > 請改用 [JWT（服務帳戶）驗證](#jwt-service-account-authentication-jwt) 。
 
@@ -130,7 +131,6 @@ Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和�
 將重新整理Token請求傳入您偏好的用 [!DNL JSON] 戶端。 建立請求時：
 
 * 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`。
-<!-- * Request headers: when using [Adobe I/O](https://www.adobe.io/) tokens, you must provide the `x-api-key` header. You can get your API key by following the instructions in the [Service Account Integration](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) page. -->
 * 將您的用戶端ID和密碼轉換為基本64編碼字串。 在轉換程式中，以冒號分隔ID和密碼。 例如，憑證會 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`。
 * 傳入HTTP標題 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的標題可能如下所示： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * 在請求內文中，指定 `grant_type:refresh_token` 並傳入您先前存取請求中收到的重新整理Token。 請求應如下所示： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
