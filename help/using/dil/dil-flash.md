@@ -1,19 +1,19 @@
 ---
-description: 收集從FLA檔案傳送至Analytics的資料，並在Audience manager中處理該資訊。
-seo-description: 收集從FLA檔案傳送至Analytics的資料，並在Audience manager中處理該資訊。
+description: 收集從FLA檔案傳送至Analytics的資料，並在Audience Manager中處理該資訊。
+seo-description: 收集從FLA檔案傳送至Analytics的資料，並在Audience Manager中處理該資訊。
 seo-title: Flash DIL
 solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
 translation-type: tm+mt
-source-git-commit: d72460ee33be0bfffe56eff04286284b2e5f3918
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
 # Flash DIL{#flash-dil}
 
-收集從FLA檔案傳送至Analytics的資料，並在Audience manager中處理該資訊。
+收集從FLA檔案傳送至Analytics的資料，並在Audience Manager中處理該資訊。
 
 <!-- 
 
@@ -21,7 +21,7 @@ c_flash_dil_toc.xml
 
  -->
 
-[!UICONTROL Flash DIL] 是程式 [!DNL ActionScript] 碼庫，可讓您在Audience manager中處理視訊播放資料。 [!DNL Flash DIL] 擷取Adobe資料庫傳入Analytics [!UICONTROL AppMeasurement] 的SWF內容。 [!DNL Flash DIL] 傳送該資料至個別的 [!UICONTROL DIL] JavaScript資料收集模組，然後將該資訊傳送至Audience Manager。 分析資 [!UICONTROL Props]料( [!UICONTROL eVars]、事件等)從檔案擷 [!DNL FLA] 取的內容，在Audience manager中可做為特徵或未使用的訊號。
+[!UICONTROL Flash DIL] 是程式 [!DNL ActionScript] 碼庫，可讓您在Audience Manager中處理視訊播放資料。 [!DNL Flash DIL] 擷取Adobe資料庫傳入Analytics [!UICONTROL AppMeasurement] 的SWF內容。 [!DNL Flash DIL] 傳送該資料至個別的 [!UICONTROL DIL] JavaScript資料收集模組，然後將該資訊傳送至Audience Manager。 分析資 [!UICONTROL Props]料( [!UICONTROL eVars]、事件等) 從檔案擷 [!DNL FLA] 取的內容，在Audience Manager中可做為特徵或未使用的訊號。
 
 ## Flash DIL資料收集需求 {#requirements}
 
@@ -63,7 +63,7 @@ r_flash_dil_data_collected.xml
 
 **頁面檢視事件**
 
-除非另行指 `s.trackVars`定， [!UICONTROL Flash DIL] 否則從Adobe appMeasurement收集下列資料：
+除非另行指 `s.trackVars`定， [!UICONTROL Flash DIL] 否則從Adobe AppMeasurement收集下列資料：
 
 * `pageName`
 * `channel`
@@ -95,9 +95,9 @@ r_flash_dil_data_collected.xml
 * `mediaAdParentPod` （廣告播放之主要內容中的pod或廣告插播）
 * `mediaAdParentPodPos` (廣告播放的Pod內的數值位置。 在Pod中可播放多個廣告。
 
-## Audience manager中的Flash DIL資料 {#flash-dil-data}
+## Audience Manager中的Flash DIL資料 {#flash-dil-data}
 
-此模 [!UICONTROL Flash DIL] 組將Adobe appMeasurement資料轉換為Audience manager特徵和未使用的訊號。
+此模 [!UICONTROL Flash DIL] 組將Adobe AppMeasurement資料轉換為Audience Manager特徵和未使用的訊號。
 
 <!-- 
 
@@ -105,15 +105,15 @@ c_flash_dil_in_aam.xml
 
  -->
 
-分析 [!UICONTROL Props]、 [!UICONTROL eVars]和事件的運作方式與Audience manager中的特徵類似。 特徵是關鍵值配對，用於建立區段。 例如，在類似Analytics `c30=foo`prop中， `c30` 是索引鍵（常數） `foo` 和值（變數）。
+分析 [!UICONTROL Props]、 [!UICONTROL eVars]和事件的運作方式與Audience Manager中的特徵類似。 特徵是關鍵值配對，用於建立區段。 例如，在類似Analytics `c30=foo`prop中， `c30` 是索引鍵（常數） `foo` 和值（變數）。
 
-**將Audience manager特徵與Analytics變數相符**
+**將Audience Manager特徵與Analytics變數相符**
 
-若要使用透過的Analytics資 [!UICONTROL Flash DIL]料，您應建立具有前置關鍵值的Audience manager特徵 `c_`。
+若要使用透過的Analytics資 [!UICONTROL Flash DIL]料，您應建立具有前置關鍵值的Audience Manager特徵 `c_`。
 
 如需範例，請參閱表格：
 
-| Analytics資料元素 | Analytics範例 | 身為Audience manager特徵 |
+| Analytics資料元素 | Analytics範例 | 身為Audience Manager特徵 |
 |---|---|---|
 | **prop** | `c30=foo` | `c_prop30=foo` |
 | **evar** | `v35=bar` | `c_evar35=bar` |
@@ -121,7 +121,7 @@ c_flash_dil_in_aam.xml
 
 **DIL/Analytics資料做為未使用的訊號**
 
-Audience manager接受Analytics [!UICONTROL Props]、 [!UICONTROL eVars]和事件，即使沒有對應的特徵。 在此情況下，資料無法用於特徵建立，而會出現在「未使用的 [訊號」報表](../reporting/dynamic-reports/unused-signals.md) 。 若要充份運用這些資訊，請建立符合資料庫所傳入之Analytics資料的Audience manager特 [!UICONTROL Flash DIL] 性。
+Audience Manager接受Analytics [!UICONTROL Props]、 [!UICONTROL eVars]和事件，即使沒有對應的特徵。 在此情況下，資料無法用於特徵建立，而會出現在「未使用的 [訊號」報表](../reporting/dynamic-reports/unused-signals.md) 。 若要充份運用這些資訊，請建立符合資料庫所傳入之Analytics資料的Audience Manager特 [!UICONTROL Flash DIL] 性。
 
 ## Flash DIL ActionScript程式庫 {#flash-dil-actionscript}
 
@@ -158,5 +158,8 @@ s.loadModule(d);
 >* [信號、特徵和區段](../reference/signal-trait-segment.md)
 >* [說明的鍵值對](../reference/key-value-pairs-explained.md)
 >* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
->* [AppMeasurement Flash、Flex和OSMF實作指南](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
 
+
+<!-- Victor/Vlad: Do we still need this link? It doesn't look like this content has been migrated.
+>* [AppMeasurement Flash, Flex, and OSMF Implementation Guide](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/flash/)
+-->
