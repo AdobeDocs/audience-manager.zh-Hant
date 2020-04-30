@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 標籤管理元件
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -35,7 +35,7 @@ Audience Manager包含下列元件：
 
 ## DIL/TIM容器 {#dil-tim}
 
-容器 [!UICONTROL DIL] 可協助將資料 [!DNL Audience Manager] 收集程式碼部署至您的網站。 [!UICONTROL TIM] 是已過時的「標籤插入管理器」。 它不再被使用 [!DNL Audience Manager]。 您可以改用 [Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/) ，或 [!DNL Audience Manager] Adobe Experience Platform Launch [](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) 中的擴充功能，來設定並產生您放在庫存頁面上的容器代碼。 容 [!UICONTROL DTM] 器可與一起 [!UICONTROL Data Information Library (DIL)] 從網站收集資料並傳送至 [!DNL Audience Manager]。
+容器 [!UICONTROL DIL] 可協助將資料 [!DNL Audience Manager] 收集程式碼部署至您的網站。 [!UICONTROL TIM] 是已過時的「標籤插入管理器」。 它不再被使用 [!DNL Audience Manager]。 您可以改用 [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) ，或 [!DNL Audience Manager] Adobe Experience Platform Launch [](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension) 中的擴充功能，來設定並產生您放在庫存頁面上的容器代碼。 容 [!UICONTROL DTM] 器可與一起 [!UICONTROL Data Information Library (DIL)] 從網站收集資料並傳送至 [!DNL Audience Manager]。
 
 ## 資料整合程式庫 (DIL) {#dil}
 
