@@ -1,25 +1,25 @@
 ---
 description: 本檔案涵蓋您可在資料隱私權要求中使用的Audience Manager ID類型。
 seo-description: 本檔案涵蓋您可在資料隱私權要求中使用的Audience Manager ID類型。
-seo-title: Audience manager識別碼(ID)
+seo-title: Audience Manager識別碼(ID)
 solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, AAM ID
-title: Audience manager識別碼(ID)
+title: Audience Manager識別碼(ID)
 translation-type: tm+mt
-source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
-# Audience manager識別碼(ID) {#aam-ids}
+# Audience Manager識別碼(ID) {#aam-ids}
 
 將資料 [隱私權要求](data-privacy-requests.md) 送出至Adobe Audience Manager時，您必須包含下列其中一個識別碼(ID)。 您可以在我們的Audience Manager ID索引中，找到有關ID [格式的詳細資訊](../../reference/ids-in-aam.md)。
 
 ## Adobe Audience Manager唯一使用者ID
 
 * **使用者 ID**: `aam_uuid`
-* **定義**:Adobe Audience Manager唯一使用者ID
-* **命名空間ID**:0
+* **定義**: Adobe Audience Manager唯一使用者ID
+* **命名空間ID**: 0
 
 **JSON 範例**:
 
@@ -76,8 +76,8 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 ## Adobe Experience Cloud ID
 
 * **使用者 ID**: `mid`
-* **定義**: [!DNL Adobe Experience Cloud ID]先前稱為 [!DNL Visitor ID] 或 [!DNL Marketing Cloud ID]
-* **命名空間ID**:4
+* **定義**: [!DNL Adobe Experience Cloud ID]，先前稱為 [!DNL Visitor ID] 或 [!DNL Marketing Cloud ID]
+* **命名空間ID**: 4
 
 >[!NOTE]
 >
@@ -135,9 +135,9 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 
 **使用者 ID**: `cid`
 
-**定義**:客戶ID，例如您為匿名網站訪客設定的Cookie，或離線系統的 [!DNL CRM] ID或雜湊使用者名稱。
+**定義**: 客戶ID，例如您為匿名網站訪客設定的Cookie，或離線系統的 [!DNL CRM] ID或雜湊使用者名稱。
 
-**命名空間ID**:客戶專屬。 請從您的Audience manager例項中尋找。
+**命名空間ID**: 客戶專屬。 請從您的Audience Manager例項中尋找。
 
 **JSON 範例**:
 
@@ -172,7 +172,7 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 
 **使用者 ID**: `d_cid`
 
-**定義**:行動廣告ID。
+**定義**: 行動廣告ID。
 
 **命名空間 ID**:
 
@@ -214,9 +214,9 @@ source-git-commit: 30352749e926d5730e9cc8beef3936c9ed6d2986
 
 **使用者 ID**: `d_cid_ic`
 
-**定義**:資料來源的整合代碼。 在請求中，可以使用這個來取代資料來源ID /命名空 [!DNL API] 間ID [!DNL Adobe Experience Cloud Privacy Core Service]。
+**定義**: 資料來源的整合代碼。 在請求中，可以使用這個來取代資料來源ID /命名空 [!DNL API] 間ID [!DNL Adobe Experience Cloud Privacy Core Service]。
 
-**命名空間ID**:不適用
+**命名空間ID**: 不適用
 
 **JSON 範例**:
 
