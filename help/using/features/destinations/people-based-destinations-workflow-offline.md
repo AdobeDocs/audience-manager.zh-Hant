@@ -5,7 +5,7 @@ seo-title: 工作流程B —— 基於僅離線資料的個人化
 solution: Audience Manager
 title: 工作流程B —— 基於僅離線資料的個人化
 translation-type: tm+mt
-source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -47,7 +47,7 @@ source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
 89159024796760343733111707646026765593<TAB>d_sid=11223,d_sid=93342,d_sid=27341
 ```
 
-檔案名如下所示： `ftp_dpm_999999_123_TIMESTAMP.sync.gz`。
+檔案名如下所示： `ftp_dpm_999999_123_TIMESTAMP.sync.gz`.
 如需 [檔案名稱結構的詳細資訊，請參閱Amazon S3傳入資料檔案的名稱和檔案大小需求](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) 。
 
 ## 步驟2 —— 設定資料來源設定 {#configure-data-source-settings}
@@ -56,7 +56,7 @@ source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
 
  
 
-**方案1:您的[DPUUID](../../reference/ids-in-aam.md)已是小寫、雜湊的電子郵件地址。**
+**方案1: 您的[DPUUID](../../reference/ids-in-aam.md)已是小寫、雜湊的電子郵件地址。**
 
 在這種情況下，您需要將對應的資料源標籤為：
 
@@ -67,7 +67,7 @@ source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
 
  
 
-**方案2:您的[DPUUID](../../reference/ids-in-aam.md)不是小寫、雜湊的電子郵件地址。**
+**方案2: 您的[DPUUID](../../reference/ids-in-aam.md)不是小寫、雜湊的電子郵件地址。**
 
 在這種情況下，您需要建立新的跨裝置資料來源，以儲存雜湊的電子郵件地址。 以下是如何做到的：
 
@@ -134,6 +134,8 @@ source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
 
 [在這裡下載範例檔案](https://marketing.adobe.com/resources/help/en_US/aam/downloads/c2c_id_999999_987654_1560431657.sync)。
 
+<!-- Victor/Vlad: Please check the above link. Any way you can move this download to Git? I'm concerned about the plans to decommission marketing.adobe.com -Bob -->
+
 建立ID同步檔案後，您必須將它上傳至儲 [!DNL Amazon S3] 存貯體。 如要瞭解如何上傳ID同步檔案，請參 [閱傳送批次資料至Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
 
 ## 步驟4 —— 建立分段的描述檔合併規則 {#create-profile-merge-rule}
@@ -170,10 +172,10 @@ source-git-commit: 1302d8c9dba8e7bb7f0c57bcbd5531ec56fad0d5
 
 1. 登入您的Audience Manager帳戶，前往 **[!UICONTROL Audience Data]** > **[!UICONTROL Destinations]**，然後按一下 **[!UICONTROL Create Destination]**。
 1. 在該 **[!UICONTROL Basic Information]** 部分中，輸入 **[!UICONTROL Name]** 和 **[!UICONTROL Description]** 新資料源，並使用以下設定：
-   * **[!UICONTROL Category]**:整合平台；
-   * **[!UICONTROL Type]**:以人為本；
-   * **[!UICONTROL Platform]**:選取您要傳送受眾細分至的以人為本的平台；
-   * **[!UICONTROL Account]**:選取與所選平台相關聯的所需廣告商帳戶。
+   * **[!UICONTROL Category]**: 整合平台；
+   * **[!UICONTROL Type]**: 以人為本；
+   * **[!UICONTROL Platform]**: 選取您要傳送受眾細分至的以人為本的平台；
+   * **[!UICONTROL Account]**: 選取與所選平台相關聯的所需廣告商帳戶。
       ![create-destination](assets/pbd-create-destination.png)
 1. 按一下 **[!UICONTROL Next]**.
 1. 選擇 **[!UICONTROL Data Export Labels]** 要為此目標設定的。
