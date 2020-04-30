@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 字彙表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -60,7 +60,7 @@ CRM ID是客戶在其CRM系統中識別使用者的ID。 我們在Audience Manag
 
 **客戶屬性**
 
-See [Customer Attributes](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) in the [!DNL Experience Cloud Core Services] product documentation.
+See [Customer Attributes](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) in the [!DNL Experience Cloud Core Services] product documentation.
 
 <br> 
 
@@ -94,7 +94,7 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **目標**
 
-在 [!DNL Audience Manager]中，目的地是任何其他系統（廣告伺服器、DSP、廣告網路等）您想要與其共用資料。 我們 [!UICONTROL Destination Builder] 的UI中提供的工具可讓您建立和管理這些資料傳送程式。 [!DNL Audience Manager] 目標功能位於 **[!UICONTROL Audience Data > Destinations]**。
+在 [!DNL Audience Manager]中，目的地是任何其他系統（廣告伺服器、DSP、廣告網路等） 您想要與其共用資料。 我們 [!UICONTROL Destination Builder] 的UI中提供的工具可讓您建立和管理這些資料傳送程式。 [!DNL Audience Manager] 目標功能位於 **[!UICONTROL Audience Data > Destinations]**。
 
 <br> 
 
@@ -112,7 +112,7 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 **Experience Cloud ID (ECID)**
 
-先前已命 [!DNL Marketing Cloud] 名為ID（MID或MCID）。 ID [!DNL Experience Cloud] 是ID服務的中心。 它是網站訪客的唯一且永久的識別碼。 請參閱Cookie和 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html)。
+先前已命 [!DNL Marketing Cloud] 名為ID（MID或MCID）。 ID [!DNL Experience Cloud] 是ID服務的中心。 它是網站訪客的唯一且永久的識別碼。 請參閱Cookie和 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html)。
 
 <br> 
 
@@ -120,7 +120,7 @@ See the [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 資料夾分類內特徵的自動分組。 階層中的每個檔案夾都會自動建立可用來定義區段的特徵。
 
-請參閱 [資料夾特徵：約](../features/traits/about-folder-traits.md)。
+請參閱 [資料夾特徵： 約](../features/traits/about-folder-traits.md)。
 
 <br> 
 
@@ -161,9 +161,9 @@ See [Index of IDs in Audience Manager](../reference/ids-in-aam.md).
 
 使用 [!DNL Audience Manager] UI或API時，您可以在建立特徵、區段或資料來源時新增整合程式碼。 在這些情況下，整合代碼有不同的用途：
 
-* [!UICONTROL Traits]:整合代碼是您內部商業程式所使用之ID、SKU或其他值的欄位。 選填。
-* [!UICONTROL Segments]:整合代碼是使用者定義ID或其他公司特定資訊的欄位。 選填。
-* [!UICONTROL Data Sources]:當您想要建立跨裝置資料來源、使用Adobe Experience Platform Identity Service或使用Adobe Experience Platform Identity Service時，需要整合代碼 [!UICONTROL Profile Merge Rules]。 如需 [詳細資訊，請參閱建立資料來源](../features/manage-datasources.md#create-data-source) 。
+* [!UICONTROL Traits]: 整合代碼是您內部商業程式所使用之ID、SKU或其他值的欄位。 選填。
+* [!UICONTROL Segments]: 整合代碼是使用者定義ID或其他公司特定資訊的欄位。 選填。
+* [!UICONTROL Data Sources]: 當您想要建立跨裝置資料來源、使用Adobe Experience Platform Identity Service或使用Adobe Experience Platform Identity Service時，需要整合代碼 [!UICONTROL Profile Merge Rules]。 如需 [詳細資訊，請參閱建立資料來源](../features/manage-datasources.md#create-data-source) 。
 
 ## K-L {#k-l}
 
@@ -211,7 +211,7 @@ See [Profile Merge Rule Options Defined](../features/profile-merge-rules/merge-r
 
 區段（或對象）是一組共用共同屬性的使用者。
 
-請參閱 [區段：目的、構成和規則](../features/segments/segments-purpose.md)。
+請參閱 [區段： 目的、構成和規則](../features/segments/segments-purpose.md)。
 
 <br> 
 
@@ -269,7 +269,7 @@ TTL定義合格訪客在某個特徵中停留的天數。 TTL是設定在特徵�
 
 The [!DNL Experience Cloud] ID Service (formerly visitor ID) provides a universal, persistent ID that identifies your visitors across all the solutions in the [!DNL Experience Cloud].
 
-請參閱 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/reference/marketing-cloud-id-service.html) 檔案。
+請參閱 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) 檔案。
 
 ## W-X-Y-Z {#w-z}
 
