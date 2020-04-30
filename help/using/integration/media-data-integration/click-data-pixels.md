@@ -6,25 +6,25 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 132e36175a69a270ea608643049931fbc06efc69
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
 # Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
 
-點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象 [收集類似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫會傳送至Audience manager資料收集伺服器([!UICONTROL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
+點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象 [收集類似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫會傳送至Audience Manager資料收集伺服器([!UICONTROL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
 
 >[!NOTE]
 >
->請連絡您的Adobe Audience manager諮詢或客戶主管，以取得用戶端網域的確切URL。
+>請連絡您的Adobe Audience Manager諮詢或客戶主管，以取得用戶端網域的確切URL。
 
 ## 要求
 
 點按追蹤呼叫需要下列參數：
 
-* `d_event=click`:將事件呼叫識別為點按事件的金鑰值配對。
-* `d_rd=redirect URL`:包含雙重編碼重新導向的索引鍵值對 [!DNL URL]。 如果您使用線上編碼工具，請在編碼器中執行字串，然後重新編碼結果，以便重新導向正常運作。
+* `d_event=click`: 將事件呼叫識別為點按事件的金鑰值配對。
+* `d_rd=redirect URL`: 包含雙重編碼重新導向的索引鍵值對 [!DNL URL]。 如果您使用線上編碼工具，請在編碼器中執行字串，然後重新編碼結果，以便重新導向正常運作。
 
 此外，呼叫可包含可用於特徵限定或為其他報表提供資料和中繼資料的鍵值配對。
 
@@ -44,7 +44,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 支援的巨集
 
-按一下事件支援下表中列出的宏。 巨集是自含代碼的一小部分，當廣告標籤載入促銷活動和使用者追蹤時會啟動。 宏將隨目標一起傳遞，只 [!DNL URL]要它們標有以下格式： `%macro%`。 某些鍵沒有宏，而接受硬編碼ID值。 如果您要分析「對象最佳化報表」中的資料，則需要接受硬式編碼值 [的金鑰](../../reporting/audience-optimization-reports/audience-optimization-reports.md)。
+按一下事件支援下表中列出的宏。 巨集是自含代碼的一小部分，當廣告標籤載入促銷活動和使用者追蹤時會啟動。 宏將隨目標一起傳遞，只 [!DNL URL]要它們標有以下格式： `%macro%`. 某些鍵沒有宏，而接受硬編碼ID值。 如果您要分析「對象最佳化報表」中的資料，則需要接受硬式編碼值 [的金鑰](../../reporting/audience-optimization-reports/audience-optimization-reports.md)。
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -63,7 +63,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>無宏。 </p> <p>接受硬式編碼ID值。 </p> </td> 
-   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。 請注意，這與Audience manager資料來源無關。</p> <p> 「對象最佳 <span class="wintitle"> 化」報表</span> 。 </p> </td> 
+   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。 請注意，這與Audience Manager資料來源無關。</p> <p> 「對象最佳 <span class="wintitle"> 化」報表</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
@@ -93,7 +93,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud ID (ECID). </span>For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud ID (ECID). </span>For more information about the ECID, see <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -118,7 +118,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_src</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_src%</code> </p> </td> 
-   <td colname="col2"> <p>Audience manager提取中繼資料的來源DPID。 </p> <p>必填. </p> </td> 
+   <td colname="col2"> <p>Audience Manager提取中繼資料的來源DPID。 </p> <p>必填. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_uuid</code> </p> </td> 
