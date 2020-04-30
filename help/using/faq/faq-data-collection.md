@@ -7,7 +7,7 @@ title: 資料收集與產品整合常見問答集
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: d221890d2a80cd557a6968d3382ee8842fea9aef
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -146,7 +146,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **如何設[!DNL Audience Manager]定Cookie並將變數傳遞至DFP?**
 
-[!DNL Audience Manager] 設定2個Cookie:其中一個會傳送區段變數至DFP廣告標籤，另一個則會設定我們的唯一使用者ID(UUID),DFP也會讀取此ID。 將UUID新增至廣告標籤表示我們可以執行使用者層級的報告和觀眾搜尋。
+[!DNL Audience Manager] 設定2個Cookie: 其中一個會傳送區段變數至DFP廣告標籤，另一個則會設定我們的唯一使用者ID(UUID),DFP也會讀取此ID。 將UUID新增至廣告標籤表示我們可以執行使用者層級的報告和觀眾搜尋。
 
 <br> 
 
@@ -172,7 +172,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 報表會根據未驗證的描述檔記錄(UUID)來計算人口族群，這些記錄在產生報表時會在後端看到。
 
-在對的第一次呼 [!UICONTROL DCS]叫時，所宣告的ID *不會連結* 至任何UUID(即用戶端上 [不存在demdex Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html) )。 隨機 [!UICONTROL DCS] 產生UUID並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞它，但不會將UUID傳送到後端。
+在對的第一次呼 [!UICONTROL DCS]叫時，所宣告的ID *不會連結* 至任何UUID(即用戶端上 [不存在demdex Cookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html) )。 隨機 [!UICONTROL DCS] 產生UUID並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞它，但不會將UUID傳送到後端。
 
 >[!NOTE]
 >
