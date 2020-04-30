@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 客戶資料饋送
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -61,7 +61,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
   <tr> 
    <td colname="col1"> <p><code> Event Time</code> </p> </td> 
    <td colname="col2"> <p>時間戳記 </p> </td> 
-   <td colname="col3"> <p>資料收集伺服器(DCS)處理CDF <span class="wintitle"> 檔案的時間</span> 。 時間戳記使 <i>用yyyy-mm-dd hh:mm:ss</i> 格式，並在UTC時區中設定。 </p> <p> <p>注意：事件時 <i>間不</i>: <p> 
+   <td colname="col3"> <p>資料收集伺服器(DCS)處理CDF <span class="wintitle"> 檔案的時間</span> 。 時間戳記使 <i>用yyyy-mm-dd hh:mm:ss</i> 格式，並在UTC時區中設定。 </p> <p> <p>注意： 事件時 <i>間不</i>: <p> 
        <ul id="ul_41ABC813FAAC4659AC8DA13F4A6DD7EB"> 
         <li id="li_0192D253EA4C49C4BF2E8BA62CEE028E">頁面事件或事件本身呼叫的時間，雖然可能接近這些時間。 </li> 
         <li id="li_271DF14395BC495FBF17186588A554A8">與檔案名稱中的DCS小時數相關。 另請參閱「 <a href="#different-processing-times"> 客戶資料饋送檔案名稱時間」和「檔案內容時間」...</a>. </li> 
@@ -90,7 +90,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
   <tr> 
    <td colname="col1"> <p><code> Request Parameters</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>擷取所有參數（變數、ID、索引鍵值配對、裝置廣告ID等）的字串在事件呼叫時傳入。 </p> <p>簡短範例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
+   <td colname="col3"> <p>擷取所有參數（變數、ID、索引鍵值配對、裝置廣告ID等）的字串 在事件呼叫時傳入。 </p> <p>簡短範例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Referer Data Type</code> </p> </td> 
@@ -105,7 +105,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>指 <span class="keyword"> 派給網站訪客的Experience Cloud</span> ID(MID)。 另請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
+   <td colname="col3"> <p>指 <span class="keyword"> 派給網站訪客的Experience Cloud</span> ID(MID)。 另請參閱 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -149,7 +149,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
   </tr> 
   <tr> 
    <td colname="col1"> <p>欄位順序 </p> </td> 
-   <td colname="col2"> <p> <p>重要：Audience <span class="keyword"> Manager</span> 保留在未來發行中新增欄位至CDF檔案結尾的權利。 這表示檔案剖析系統的技術設計不應假設固定數目的欄（雖然它可能會假設現有欄的順序固定）。 </p> </p> <p>CDF檔案中的資料按以下順序顯示。 </p> <p> 
+   <td colname="col2"> <p> <p>重要： <span class="keyword"> Audience Manager</span> 保留在未來發行中新增欄位至CDF檔案結尾的權利。 這表示檔案剖析系統的技術設計不應假設固定數目的欄（雖然它可能會假設現有欄的順序固定）。 </p> </p> <p>CDF檔案中的資料按以下順序顯示。 </p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
       <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件時間 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">裝置 </li> 
@@ -159,7 +159,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">要求參數 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 位址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud裝置ID（或MID）。 另請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud裝置ID（或MID）。 另請參閱 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有區段 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特徵 </li> 
      </ol> </p> <p>如需欄位說明，請參閱「 <a href="#cdf-defined"> 客戶資料饋送內容定義」</a>。 </p> </td> 
@@ -187,7 +187,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 以下各節列出並定義檔案名中 [!UICONTROL CDF] 的元素。
 
-## CDF檔案名：語法與範例 {#cdf-file-name}
+## CDF檔案名： 語法與範例 {#cdf-file-name}
 
 <!-- cdf-file-name.xml -->
 
@@ -373,8 +373,8 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 | 時間戳記位置 | 說明 |
 |--- |--- |
-| 檔案名稱 | CDF檔案名中的時間戳記標示開始準 [!DNL Audience Manager] 備檔案進行傳送的時間。 此時間戳記在UTC時區中設定。 它使用參 `hour=` 數，時間格式為24小時記號的2位數小時。 此時間可以與檔案內容中記錄的事件時間不同。 中斷使用CDF檔案時，有時您會發現您的S3儲存貯體在特定小時內是空的。 空桶表示可以表示以下任一項：<ul><li>沒有那個小時的資料。 </li><li> 我們的伺服器負載繁重，無法處理特定小時的檔案。 當伺服器接上來時，會將原本應在較早時段檔案中的檔案，放入具有較晚時間值的儲存貯體中。 例如，當本應在17小時儲存貯體中的檔案出現在18小時儲存貯體中時（在檔案名稱中），您就會 `hour=18` 看到這一點。 在這種情況下，伺服器可能會在17小時內開始處理您的檔案，但無法在該時間間隔內完成。 相反地，檔案會推送至下一個每小時時段。</li></ul><br>**重要&#x200B;**:請勿使用檔案名稱時間戳記依時間來分組事件。 如果您需要依時間分組，請使用檔`EventTime`案內容中的時間戳記。 |
-| 檔案內容 | CDF檔案內容中的時間戳記標示資料收集伺服器開始處理檔案的時間。 此時間戳記在UTC時區中設定。 它使用字 `EventTime` 段，時間格式為 *`yyyy-mm-dd hh:mm:ss`*。 此時間接近頁面上事件的實際時間，但可能與檔案名稱中的小時指示符不同。 <br> **提示**:與檔案 `hour=` 名稱中的時間戳記不同，您可以 `EventTime` 使用時間來分組資料。 |
+| 檔案名稱 | CDF檔案名中的時間戳記標示開始準 [!DNL Audience Manager] 備檔案進行傳送的時間。 此時間戳記在UTC時區中設定。 它使用參 `hour=` 數，時間格式為24小時記號的2位數小時。 此時間可以與檔案內容中記錄的事件時間不同。 中斷使用CDF檔案時，有時您會發現您的S3儲存貯體在特定小時內是空的。 空桶表示可以表示以下任一項：<ul><li>沒有那個小時的資料。 </li><li> 我們的伺服器負載繁重，無法處理特定小時的檔案。 當伺服器接上來時，會將原本應在較早時段檔案中的檔案，放入具有較晚時間值的儲存貯體中。 例如，當本應在17小時儲存貯體中的檔案出現在18小時儲存貯體中時（在檔案名稱中），您就會 `hour=18` 看到這一點。 在這種情況下，伺服器可能會在17小時內開始處理您的檔案，但無法在該時間間隔內完成。 相反地，檔案會推送至下一個每小時時段。</li></ul><br>**重要&#x200B;**: 請勿使用檔案名稱時間戳記依時間來分組事件。 如果您需要依時間分組，請使用檔`EventTime`案內容中的時間戳記。 |
+| 檔案內容 | CDF檔案內容中的時間戳記標示資料收集伺服器開始處理檔案的時間。 此時間戳記在UTC時區中設定。 它使用字 `EventTime` 段，時間格式為 *`yyyy-mm-dd hh:mm:ss`*。 此時間接近頁面上事件的實際時間，但可能與檔案名稱中的小時指示符不同。 <br> **提示**: 與檔案 `hour=` 名稱中的時間戳記不同，您可以 `EventTime` 使用時間來分組資料。 |
 
 >[!MORELIKETHIS]
 >
