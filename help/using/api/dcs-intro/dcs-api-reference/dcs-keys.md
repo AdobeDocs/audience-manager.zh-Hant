@@ -7,7 +7,7 @@ title: DCS API呼叫的支援屬性
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -77,7 +77,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>停用第三方Cookie的使用，以符合兒童保護法規。 此參數由Adobe Experience Platform Identity Service動態設定，並視設定而 <code> idSyncDisable3rdPartySyncing</code> 定。 請參 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid_coppa.html" format="https" scope="external"> 閱Adobe Experience Platform Identity Service中的COPPA支援</a>。 </p> </td>
+   <td colname="col2"> <p>停用第三方Cookie的使用，以符合兒童保護法規。 此參數由Adobe Experience Platform Identity Service動態設定，並視設定而 <code> idSyncDisable3rdPartySyncing</code> 定。 請參 <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/coppa.html" format="https" scope="external"> 閱Adobe Experience Platform Identity Service中的COPPA支援</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -119,7 +119,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定Experience Cloud ID服務所設定及使 <span class="keyword"> 用的Experience Cloud</span> ID。 For more information about the ECID, see <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>指定Experience Cloud ID服務所設定及使 <span class="keyword"> 用的Experience Cloud</span> ID。 如需ECID的詳細資訊，請參 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 閱Cookie和Experience Cloud Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -164,15 +164,15 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
    <td colname="col2"> <p>傳遞特徵評估的資料來源。 僅評估此資料來源的特徵。 </p> <p>例如，假設您有： </p> <p> 
      <ul id="ul_6230777E16C14DCB83025A101A4ECA14"> 
       <li id="li_71F3970417BC4B93881A3E12DADE4120"><b>特徵T1</b> : </li> 
-      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">特徵規則："<code> key1 == val1</code>" </li> 
-      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">資料來源(<a href="../../../reference/ids-in-aam.md"> DPID</a>):1 </li> 
-      <li id="li_3E6BBDEAE5C644C6A96CB49766CDA988">DPID整合程式碼：ic1 </li> 
+      <li id="li_66125E035F524A958C6F4BFAABA2A0D2">特徵規則： "<code> key1 == val1</code>" </li> 
+      <li id="li_4EE486E02CF54AEA876ABC005094E9E4">資料來源(<a href="../../../reference/ids-in-aam.md"> DPID</a>): 1 </li> 
+      <li id="li_3E6BBDEAE5C644C6A96CB49766CDA988">DPID整合程式碼： ic1 </li> 
      </ul> 
      <ul id="ul_0C30A8AE349D43A08490DA76CB4B06FA"> 
       <li id="li_F1E8DB26168B471FA35D82F4DD3AC601"><b>特徵T2</b> ，包含： </li> 
-      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">特徵規則："<code> key2 == val2</code>" </li> 
-      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">資料來源(DPID):2 </li> 
-      <li id="li_877CAAAE996A4707BEE74F7042708481">DPID整合程式碼：ic2 </li> 
+      <li id="li_1C943F84A4A149A0A86ABC92761D3E9E">特徵規則： "<code> key2 == val2</code>" </li> 
+      <li id="li_F2AA086C87B7484F8BFE1D5C09E8EBDF">資料來源(DPID): 2 </li> 
+      <li id="li_877CAAAE996A4707BEE74F7042708481">DPID整合程式碼： ic2 </li> 
      </ul> </p> <p>在範例呼叫中， <code>yourcompany.demdex.net/event?key1=val1&amp;key2=val2&amp;d_tdpid=1</code>只會傳回特徵T1。 </p> </td> 
   </tr> 
   <tr> 
