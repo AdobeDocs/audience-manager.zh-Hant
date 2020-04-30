@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DIL使用案例和程式碼範例
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -37,9 +37,9 @@ c_dil_send_page_objects.xml
 
 **讓值屬性保持一致**
 
-傳入資料時，請記得保持值屬性相同。 例如，如果您有兩個具有相同鍵且值不同，則最後一個鍵值對的值優先於前一個值對象。 例如，傳入並 `color:blue` 將傳 `color:red` 回的值設為紅色（覆寫藍色）。
+傳入資料時，請記得保持值屬性相同。 例如，如果您有兩個具有相同值的鍵，則最後一個鍵值對的值優先於前一個值對象。 例如，傳入並 `color:blue` 將傳 `color:red` 回的值設為紅色（覆寫藍色）。
 
-**範例1:以鍵值配對傳送資料**
+**範例1: 以鍵值配對傳送資料**
 
 此基本範例會以索引鍵值配對的形式，將色彩和價格資料傳送至Audience Manager。 您的程式碼看起來可能類似下列：
 
@@ -52,7 +52,7 @@ sample_dil.api.signals({
 sample_dil.api.submit();
 </code></pre>
 
-**範例2:在物件中傳送資料**
+**範例2: 在物件中傳送資料**
 
 此進階範例示範如何將物件中的資料傳送至Audience Manager。 使用此方法時， [!UICONTROL DIL] 可讓您將物件作為函式參數傳遞至方 [!DNL signals()] 法。 [!UICONTROL DIL] 您的程式碼看起來可能類似下列：
 
@@ -67,9 +67,9 @@ var sample_dil = DIL.create({ partner : "<i>partner name</i>" });
 sample_dil.api.signals(my_object,"c_").submit();
 </code></pre>
 
-**範例3:在陣列中傳送頁面資料**
+**範例3: 在陣列中傳送頁面資料**
 
-在這種情況下，變數會 `my_object` 使用陣列來儲存資料。 此範例以上述建議方法傳入的資訊為基礎，但會新增額外的層來容納產品類型和型號。 您的程式碼看起來可能類似下列：
+在這種情況下，變數會 `my_object` 使用陣列來儲存資料。 此範例以上述建議方法傳入的資訊為基礎，但會新增額外的圖層以容納產品類型和型號。 您的程式碼看起來可能類似下列：
 
 <pre class="java"><code>
 var my_objects = [{ 
@@ -145,7 +145,7 @@ var search_referrer = DIL.tools.getSearchReferrer();
 
 **列出的搜尋引擎代碼範例**
 
-在此例中，假設使用者從加拿大搜尋「homes」() [!DNL Google] 一詞 `www.google.ca`。 請注意程式碼如何將必 `c_` 要參數前置於搜尋引擎( `c_se`)和搜尋詞( `c_st`)。 `c_` 是必 [要的首碼](../features/traits/trait-variable-prefixes.md) ，可將這些變數識別為Audience manager的客戶定義變數。
+在此例中，假設使用者從加拿大搜尋「homes」() [!DNL Google] 一詞 `www.google.ca`。 請注意程式碼如何將必 `c_` 要參數前置於搜尋引擎( `c_se`)和搜尋詞( `c_st`)。 `c_` 是必 [要的首碼](../features/traits/trait-variable-prefixes.md) ，可將這些變數識別為Audience Manager的客戶定義變數。
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
@@ -190,9 +190,9 @@ c_dil_map_keys.xml
 
 **說明**
 
-在鍵值對中，附加在鍵 `c_` 上的前置詞將信號識別為客戶定義的資料。 客戶定義的資料用於定位在事件呼叫中傳入資料的特定網站。 不過，有時您會想要在Audience manager帳戶的所有屬性中提供這項資訊。 若要這麼做，請將鍵值對 `c_` 應至平台層級鍵。 平台層級金鑰會加上前置詞， `d_` 並讓該訊號可用於您帳戶中所有屬性的定位。
+在鍵值對中，附加在鍵 `c_` 上的前置詞將信號識別為客戶定義的資料。 客戶定義的資料用於定位在事件呼叫中傳入資料的特定網站。 不過，有時您會想要在Audience Manager帳戶的所有屬性中提供這項資訊。 若要這麼做，請將鍵值對 `c_` 應至平台層級鍵。 平台層級金鑰會加上前置詞， `d_` 並讓該訊號可用於您帳戶中所有屬性的定位。
 
-例如，您從特定網站收集郵遞區號資料，但想要將其定位至您的所有Audience manager屬性。 若要在平台層級提供郵遞區號，您可以對應客戶定義的郵遞區號金鑰(例如 `c_zip`)至平台定義的索引鍵，如下所示。
+例如，您從特定網站收集郵遞區號資料，但想要將其定位至您的所有Audience Manager屬性。 若要在平台層級提供郵遞區號，您可以對應客戶定義的郵遞區號金鑰(例如 `c_zip`)到平台定義的索引鍵，如下所示。
 
 **程式碼範例**
 
@@ -210,7 +210,7 @@ adobe_dil.api.signals({c_zip : '10010'}).submit();
 // Request will look like /event?c_zip=10010&d_zip=10010
 ```
 
-##  Google標籤管理器(GTM)中的流量DIL {#traffic-dil-gtm}
+## Google標籤管理器(GTM)中的流量DIL {#traffic-dil-gtm}
 
 使用GTM標籤設定並提供DIL。
 
@@ -220,7 +220,7 @@ t_dil_google_tagmanager.xml
 
  -->
 
-此程式假設您有帳 [!DNL Google Tag Manager] 戶、該產品的一些工作知識，以及您的Audience manager檔 `dil.js` 案。
+此程式假設您有帳 [!DNL Google Tag Manager] 戶、該產品的一些工作知識，以及您的Audience Manager檔 `dil.js` 案。
 
 若要在GTM中 `dil.js` 傳輸檔案：
 
@@ -231,7 +231,7 @@ t_dil_google_tagmanager.xml
    * 命名標籤。
    * Select **[!UICONTROL Custom HTML Tag]** from the **[!UICONTROL Tag Type]** drop-down list.
    * 在HTML欄位中，將程式 [!UICONTROL DIL] 碼（程式庫+自訂程式碼）放在指令碼標籤內 `<script>DIL code</script>`。
-   * Click **[!UICONTROL Save]**.
+   * 按一下 **[!UICONTROL Save]**.
 
 1. 發佈容器。
 1. 產生容器標籤代碼，並將其置於庫存中。
@@ -240,5 +240,5 @@ t_dil_google_tagmanager.xml
 >
 >* [Google標籤管理員說明中心](https://support.google.com/tagmanager#topic=3441530)
 >* [信號](../dil/dil-instance-methods.md#signals)
->* [關鍵變數的前置詞要求](https://marketing.adobe.com/resources/help/en_US/aam/r_tb_variable_prefixes.html)
+>* [關鍵變數的前置詞要求](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/traits/trait-variable-prefixes.html#prefix-requirements-for-key-variables)
 
