@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 宣告的ID
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -36,11 +36,11 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
  <tbody> 
   <tr> 
    <td colname="col1"> <b>事件呼叫</b> </td> 
-   <td colname="col2"> <p>若要運作，您需 <span class="wintitle"> 要DIL </span> 和 <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="https" scope="external"> 頁面上的Adobe Experience Platform Identity Service </a> 程式碼。 <span class="wintitle"> DIL從 </span><span class="wintitle"> Adobe Experience Platform Identity Service提供的函式取得宣告的ID </span> ，並將 <code> setVisitorID </code> 其傳遞至 <span class="keyword"></span><span class="keyword"></span>Audience Manager。 </p> </td> 
+   <td colname="col2"> <p>若要運作，您需 <span class="wintitle"> 要DIL </span> 和 <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> 頁面上的Adobe Experience Platform Identity Service </a> 程式碼。 <span class="wintitle"> DIL從 </span><span class="wintitle"> Adobe Experience Platform Identity Service提供的函式取得宣告的ID </span> ，並將 <code> setVisitorID </code> 其傳遞至 <span class="keyword"></span><span class="keyword"></span>Audience Manager。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>符合ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager會嘗試將用戶端和訪客ID與我們系統中的對應ID相符。 如果相符的ID不存在，Audience Manager會建立新的ID，並將其與用戶端和訪客ID關聯。 </p> <p> <p>注意： 如果您的ID對應至多個Audience Manager ID，則會使用最新的對應。 </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager會嘗試將用戶端和訪客ID與我們系統中的對應ID相符。 如果相符的ID不存在，Audience Manager會建立新的ID，並將其與用戶端和訪客ID關聯。 </p> <p> <p>注意：  如果您的ID對應至多個Audience Manager ID，則會使用最新的對應。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>傳回ID</b> </td> 
@@ -187,7 +187,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 <!-- r_dil_declared_id_vars.xml -->
 
-當與 [Adobe Experience Platform Identity Service搭配使用時](https://marketing.adobe.com/resources/help/en_US/mcvid/)，您不再需要與已過時的 [!UICONTROL declared IDs] 和變數一起 `dpid` 傳入 `dpuuid` 。 相反，當前版本的 [!UICONTROL DIL] 依賴函 `visitorService` 數從中 [!UICONTROL declared IDs] 的函 `setCustomerIDs` 數中獲取 [!UICONTROL Adobe Experience Platform Identity Service]。 For more information, see [Customer IDs and Authentication States](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html). 如下所示， `visitorService` 您可 `DIL.create` 以呼叫。
+當與 [Adobe Experience Platform Identity Service搭配使用時](https://docs.adobe.com/content/help/en/id-service/using/home.html)，您不再需要與已過時的 [!UICONTROL declared IDs] 和變數一起 `dpid` 傳入 `dpuuid` 。 相反，當前版本的 [!UICONTROL DIL] 依賴函 `visitorService` 數從中 [!UICONTROL declared IDs] 的函 `setCustomerIDs` 數中獲取 [!UICONTROL Adobe Experience Platform Identity Service]。 For more information, see [Customer IDs and Authentication States](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). 如下所示， `visitorService` 您可 `DIL.create` 以呼叫。
 
 ```js
 var vDil = DIL.create({
@@ -198,7 +198,7 @@ var vDil = DIL.create({
 });
 ```
 
-在鍵 `namespace` 值配對中，是 `MCORG` 您的 [!DNL Experience Cloud] 組織ID。 如果您沒有此ID，您可以在控制面板的區 [!UICONTROL Administration] 段中找 [!DNL Experience Cloud] 到。 您需要管理員權限才能檢視此控制面板。 See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
+在鍵 `namespace` 值配對中，是 `MCORG` 您的 [!DNL Experience Cloud] 組織ID。 如果您沒有此ID，您可以在控制面板的區 [!UICONTROL Administration] 段中找 [!DNL Experience Cloud] 到。 您需要管理員權限才能檢視此控制面板。 See [Administration: Core Services](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
 
 ## 已過時的函式 {#deprecated-functions}
 
@@ -251,7 +251,7 @@ DIL.create({
 
 >[!NOTE]
 >
->如果您使用不 [!DNL API] 同的組合進行 `declaredID` 呼叫，新組合將僅用於該呼叫。 進一步的一般事件呼叫會使用原始 `DIL.create` 組 `declaredID` 合。
+>如果您使用不 [!DNL API] 同的組合進行呼 `declaredID` 叫，新組合將僅用於該呼叫。 進一步的一般事件呼叫會使用原始 `DIL.create` 組 `declaredID` 合。
 
 ```js
 DIL.getDil('partner name').api.signals({...}).declaredId({
