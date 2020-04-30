@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 實作觀眾管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 除了啟用擴充功能或實作本檔案所述的程式碼外，您還必須：
 
-* 實作 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)。
+* 實作 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)。
 * 在中 [為報表套裝啟用](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html) 「伺服器端轉送」 [!UICONTROL Adobe Analytics Admin Console]。
 
 ## 實施 {#implementation}
@@ -50,7 +50,7 @@ Adobe建議您使用 [Launch](https://docs.adobe.com/content/help/en/launch/usin
 
 若要實作使 [!UICONTROL Audience Management Module] 用 [Adobe DTM或其他標籤管理解決方案](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html) :
 
-1. 使用 [!UICONTROL AppMeasurement] Analytics代碼 [管理器](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html) （需要1.5版或更新版本）下載。
+1. 使用 [!UICONTROL AppMeasurement] Analytics代碼 [管理器](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html) （需要1.5版或更新版本）下載。
 1. 將您的 [!UICONTROL AppMeasurement] 程式碼更新為下載的zip檔案所包含的版本。
 1. 從zip檔案複製所 `AppMeasurement_Module_AudienceManagement.js` 有程式碼。 貼到文字正 `appMeasurement.js` 上方的檔案中， `"DO NOT ALTER ANYTHING BELOW THIS LINE."`
 1. 新增程式碼， `s.loadModule("AudienceManagement");`就在您剛在上 `AppMeasurement_Module_AudienceManagement.js` 一步驟中新增的程式碼上方。
@@ -83,9 +83,9 @@ s.AudienceManagement.setup({
 | `partner` | 必填。這是Adobe指派給您的合作夥伴名稱。 它有時稱為「合作夥伴ID」或「合作夥伴子網域」。  如果您不知道您的 [合作夥伴名稱](https://helpx.adobe.com/marketing-cloud/contact-support.html) ，請連絡您的Adobe顧問或客戶服務。 |
 | `containerNSID` | 必填。大部份的客戶都可以設定 `"containerNSID":0` 。 不過，如果您的公司需要使用不同的容器自訂ID同步，您可以在此處指定該容器ID。 |
 | `uuidCookie` | 選填。此設定可讓您在第一方網域中設定Adobe Cookie。 此Cookie包含 [UUID](../../reference/ids-in-aam.md) 。 |
-| `visitorService` - `namespace` | 必填。如果 `namespace` 您使用2.10版或更新版本隨附的AudienceManagement模 [!UICONTROL AppMeasurement] 組，則需要此參數。 此模 [!UICONTROL AudienceManagement] 塊要求您使用 [!UICONTROL Adobe Experience Platform Identity Service] 3.3或更新版本。 <br> 公 [!UICONTROL Experience Cloud Organization ID] 司註冊時提供的ID [!UICONTROL Experience Cloud]。 在「組織」和「帳戶連結」中尋找您公 [司的組織ID](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。 |
+| `visitorService` - `namespace` | 必填。如果 `namespace` 您使用2.10版或更新版本隨附的AudienceManagement模 [!UICONTROL AppMeasurement] 組，則需要此參數。 此模 [!UICONTROL AudienceManagement] 塊要求您使用 [!UICONTROL Adobe Experience Platform Identity Service] 3.3或更新版本。 <br> 公 [!UICONTROL Experience Cloud Organization ID] 司註冊時提供的ID [!UICONTROL Experience Cloud]。 在「組織」和「帳戶連結」中尋找您公 [司的組織ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)。 |
 
-## 結果：資料轉送至Audience Manager {#results-data-forwarding}
+## 結果： 資料轉送至Audience Manager {#results-data-forwarding}
 
 您的 [!DNL Analytics] 實作會在您擁有下列功能後，將資料傳送至Audience Manager:
 
