@@ -5,7 +5,7 @@ seo-title: 演算法模型特徵排除
 title: 演算法模型特徵排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: ee291fd9a06261afb71cc393fff0f4a1ee5cf7f4
+source-git-commit: e6e22c0c4a8f1374d3d8d18cb7b242e18a29571f
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: ee291fd9a06261afb71cc393fff0f4a1ee5cf7f4
 1. 在您 [!UICONTROL Exclusions] 選取一或多個資料來源進行模型建立之前，選取範圍會變灰。
 2. 在選取一或多個資料來源進行模型建立後，請按 **[!UICONTROL Browse All Traits]**。
 3. 在視窗 **[!UICONTROL Select Traits to Exclude]** 中，您可以看到與先前選取的資料來源相關聯的所有特徵。 選取您要排除的特徵。
-4. 您可以依特徵類型、特徵人口族群類型來篩選特徵，或瀏覽特徵資料夾。 請注意，特徵資料夾只會顯示與您選取資料來源相關的特徵。
+4. 您可以依特徵類型、特徵人口族群類型([裝置ID](../../reference/ids-in-aam.md)[和跨裝置ID](../../reference/ids-in-aam.md))篩選特徵，或瀏覽特徵資料夾。 請注意，特徵資料夾只會顯示與您選取資料來源相關的特徵。
 5. Press **[!UICONTROL Exclude Selected Traits]**.
 
 ![特徵排除](assets/trait-exclusions-browse-traits.png)
@@ -78,7 +78,7 @@ source-git-commit: ee291fd9a06261afb71cc393fff0f4a1ee5cf7f4
   </tr> 
   <tr> 
    <td colname="col1"> <p>可排除的特徵數上限 </p> </td>
-   <td colname="col2"> <p>可從模型中排除的特徵數上限為500。 使用資料夾特徵來最大化排除。 </p> </td>
+   <td colname="col2"> <p>可從模型中排除的特徵數上限為500。 使用資料夾特徵最大化排除。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p>排除基準特徵 </p> </td>
