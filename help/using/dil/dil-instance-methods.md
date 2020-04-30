@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 例項層級DIL方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -505,11 +505,11 @@ r_dil_idsync.xml
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>不同資料合作夥伴和Audience Manager之間。 例如，合作夥伴x會使用此項來同步使用者ID與合作夥伴y，然後將其傳送至Audience Manager。 </p> <p> <p><b>重要：</b> 此方法已過時。 請使用 <code> idSyncByURL </code> Adobe Experience Platform Identity Service例項的方法。 </p> </p> </td> 
+   <td colname="col2"> <p>不同資料合作夥伴和Audience Manager之間。 例如，合作夥伴x會使用此項來同步使用者ID與合作夥伴y，然後將其傳送至Audience Manager。 </p> <p> <p><b>重要：</b>  此方法已過時。 請使用 <code> idSyncByURL </code> Adobe Experience Platform Identity Service例項的方法。 </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>當您已知道使用者ID，並想要將它傳送至Audience Manager時。 </p> <p> <p><b>重要：</b> 此方法已過時。 請使用 <code> idSyncByDataSource </code> Adobe Experience Platform Identity Service例項的方法。 </p> </p> </td> 
+   <td colname="col2"> <p>當您已知道使用者ID，並想要將它傳送至Audience Manager時。 </p> <p> <p><b>重要：</b>  此方法已過時。 請使用 <code> idSyncByDataSource </code> Adobe Experience Platform Identity Service例項的方法。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -719,8 +719,8 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [關鍵變數的名稱要求](../features/traits/trait-key-name-requirements.md)
 >* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
->* [Adobe Experience Platform Identity Service中的同步功能](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsync.html)
+>* [Adobe Experience Platform Identity Service中的同步功能](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
 >* [DIL建立](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform Identity Service:UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Adobe Experience Platform Identity Service: UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [Adobe Experience Platform Identity Service中的CORS支援](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
