@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 ![僅限裝置](assets/device-only.png)
 
-假設約翰擁有三部智慧手機。 其中兩款是iPhone 7s的資料計畫A，其中一款是三星的資料計畫B。John的行動電信業者未考慮他在這三種裝置上的驗證狀態，而是想為他提供資料計畫升級，但僅適用於在資料計畫A上執行的iPhone 7裝置。
+假設約翰擁有三部智慧手機。 其中兩款是iPhone 7s的資料計畫A，其中一款是三星的資料計畫B。 John的行動電信業者未考慮他在這三種裝置上的驗證狀態，而是想為他提供資料計畫升級，但僅適用於在資料計畫A上執行的iPhone 7裝置。
 
 使用 **[!UICONTROL No Cross-Device Profile]** + **[!UICONTROL Device Profile]** 規則 [!DNL Device 1] ，並且兩 [!DNL Device 3] 者都符合區段的資格，而裝置2則會被忽略。
 
@@ -98,12 +98,12 @@ Audience Manager會合併每個裝置+跨裝置描述檔配對，以查看合併
   </tr> 
   <tr> 
    <td colname="col1"> <p>外部裝置圖形選項 </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 使用</span> Experience Cloud Device Co-op建立描述檔合併規則 <a href="https://marketing.adobe.com/resources/help/en_US/mcdc/" format="https" scope="external"> ，或與</a><span class="keyword"></span> Audience Manager整合的任何外部裝置圖表，最適合： </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> 使用</span> Experience Cloud Device Co-op建立描述檔合併規則 <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> ，或與</a><span class="keyword"></span> Audience Manager整合的任何外部裝置圖表，最適合： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低級別客戶驗證的數位屬性。 </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">廣泛、廣泛的品牌宣傳。 </li> 
       <li id="li_14AEC54CE34440889A3A36324EC6F497">客戶不需要處於已驗證狀態才符合區段資格的使用案例。 </li> 
-     </ul> </p> <p> <p>提示：如果 <span class="keyword"> 您是Experience Cloud</span><span class="keyword"></span> （低驗證率）客戶，且與任何裝置圖形提供者沒有關係，則Device Co-op是您的最佳選擇。 </p> </p> </td> 
+     </ul> </p> <p> <p>提示： 如果 <span class="keyword"> 您是Experience Cloud</span><span class="keyword"></span> （低驗證率）客戶，且與任何裝置圖形提供者沒有關係，則Device Co-op是您的最佳選擇。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
