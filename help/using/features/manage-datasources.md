@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 管理資料來源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 1. 提供整合程式碼。 一般而言，整合代碼是選用的。 當您想要：
 
    * [建立跨裝置資料來源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * 使用 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)。
+   * 使用 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)。
    * 使用描述 [檔合併規則](../features/profile-merge-rules/merge-rules-start.md)。
 
 1. 選擇 **[!UICONTROL ID Type]**。 ID類型選項包括：
@@ -74,7 +74,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 >請注意下列限制：
 >
 >* 您無法刪除作 [用中對象或資料來源同步特徵](../features/traits/client-activity-synced-audience-traits.md)。
->* 對於使用Adobe Analytics的客戶：Audience Manager不允許您刪除從報表套裝自動建立的資 [!DNL Analytics] 料來源。 使用核 [心服務](https://marketing.adobe.com/resources/help/en_US/mcloud/) ，取消對應這些資料來源。
+>* 對於使用Adobe Analytics的客戶： Audience Manager不允許您刪除從報表套裝自動建立的資 [!DNL Analytics] 料來源。 使用核 [心服務](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services-landing.html) ，取消對應這些資料來源。
 
 
 1. 按一下 **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
