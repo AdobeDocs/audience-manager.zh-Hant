@@ -1,20 +1,20 @@
 ---
-description: 有關Audience lab功能的常見問題。
-seo-description: 有關Audience lab功能的常見問題。
+description: 有關Audience Lab功能的常見問題。
+seo-description: 有關Audience Lab功能的常見問題。
 seo-title: Audience Lab常見問答集
 solution: Audience Manager
 title: Audience Lab常見問答集
 topic: DIL API
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
 # Audience Lab常見問答集{#audience-lab-faq}
 
-有關Audience lab功能的常見問題。
+有關Audience Lab功能的常見問題。
 
 <!-- 
 
@@ -32,7 +32,7 @@ audience-lab-faq.xml
 
 **相同的轉換特徵是否與多個測試群組相關聯？**
 
-是的，允許。 假設一個測試使用與轉換X相關聯的公分段，另一個測試使用與轉換X相關聯的母分段。這兩個測試都會推動轉化，因為它們會測試兩個不同的受眾。
+是的，允許。 假設一個測試使用與轉換X相關聯的公分段，另一個測試使用與轉換X相關聯的母分段。 這兩個測試都會推動轉化，因為它們會測試兩個不同的受眾。
 
 <br> 
 
@@ -52,6 +52,6 @@ audience-lab-faq.xml
 
 如需 [如何使用權限的詳細資訊](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) ，請參閱建立 [!UICONTROL Audience Lab] 區段測試 [!UICONTROL RBAC] 群組。
 
-**我是否可[!UICONTROL Audience Lab]以搭配使用[!UICONTROL Profile Link Device Graph]外部和外部裝置圖形([Adobe Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-overview.html)、Tapad Device Graph、Liveramp Device Graph)?**
+**我是否可[!UICONTROL Audience Lab]以搭配使用[!UICONTROL Profile Link Device Graph]外部和外部裝置圖形([Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)、Tapad Device Graph、Liveramp Device Graph)?**
 
 目前，使 [!UICONTROL Audience Lab] 用時，只能依連接至合格裝置的裝置來劃分區段人口族群 [!UICONTROL Profile Link Device Graph]。 我們正致力於在其他裝置圖 [!UICONTROL Audience Lab] 形中增加支援，並會在我們提供支援時通知您。
