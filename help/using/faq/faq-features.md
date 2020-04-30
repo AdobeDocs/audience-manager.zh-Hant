@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 產品功能與功能常見問答集
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -28,9 +28,9 @@ faq_features_functions.xml
 
 此 *`Organization ID`* 為唯一ID，可識別您的組織 [!DNL Audience Manager] 與 [!DNL Adobe Experience Cloud]。 它包含區分大小寫的24個字元英數字串，後面接著 [!UICONTROL @AdobeOrg]。
 
-例如， *`Organization ID`* 如下所示： `1FD6776A524453CC0A490D44@AdobeOrg`。
+例如， *`Organization ID`* 如下所示： `1FD6776A524453CC0A490D44@AdobeOrg`.
 
-Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/)，以及其他解決方案都使 [!DNL Experience Cloud] 用。 具有管理員權限的使用者可以 *`Organization ID`* 在上找到 [!DNL Adobe Admin Console]。 請參閱「管 [理——使用者管理」常見問答](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。
+Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)，以及其他解決方案都使 [!DNL Experience Cloud] 用。 具有管理員權限的使用者可以 *`Organization ID`* 在上找到 [!DNL Adobe Admin Console]。 請參閱「管 [理——使用者管理」常見問答](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
 <br> 
 
@@ -58,7 +58,7 @@ Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [A
 
 **什麼是[!UICONTROL Tag Insertion Manager (TIM)]?**
 
-Audience Manager使 [!UICONTROL Tag Insertion Manager] 用(TIM)來建立和管理 [!UICONTROL data collection code (DIL)]。 This feature is obsolete and has been replaced first by [!UICONTROL Dynamic Tag Manager (DTM)], and later by [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/).
+Audience Manager使 [!UICONTROL Tag Insertion Manager] 用(TIM)來建立和管理 [!UICONTROL data collection code (DIL)]。 This feature is obsolete and has been replaced first by [!UICONTROL Dynamic Tag Manager (DTM)], and later by [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
 
 <br> 
 
@@ -86,4 +86,4 @@ Audience Manager使 [!UICONTROL Tag Insertion Manager] 用(TIM)來建立和管�
 
 **Adobe Analytics和Audience Manager區段之間有何差異？**
 
-是的，請閱讀 [Analytics和Audience Manager中的瞭解區段](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/aam-analytics-segments.html) ，以深入瞭解差異。
+是的，請閱讀 [Analytics和Audience Manager中的瞭解區段](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) ，以深入瞭解差異。
