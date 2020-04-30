@@ -7,7 +7,7 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 資料隱私權要求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 39e0224d97d1d27c2b1dcee8e3b0d2d21847551b
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 39e0224d97d1d27c2b1dcee8e3b0d2d21847551b
 
 傳送個別資料隱私權要求時，您可以提交任何Audience Manager識別碼(ID)，如 **[Audience Manager識別碼區段所述](data-privacy-ids.md)**，以及其各自的命名空間ID（資料來源ID）。
 
-隱私 [權服務](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) (Privacy Service)支援兩種請求：資料存取和資料刪除要求。
+隱私 [權服務](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) (Privacy Service)支援兩種請求： 資料存取和資料刪除要求。
 
 ## 資料存取請求 {#access-data}
 
@@ -94,8 +94,8 @@ Audience Manager支援有關退出管理的業界標準。 閱讀以取得Audien
    <td colname="col1"> <p>行動裝置 </p> </td> 
    <td colname="col2"> <p>請參閱下列的退出與隱私權設定： </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/android/privacy.html" format="https" scope="external"> Android裝置 </a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/ios/privacy.html" format="https" scope="external"> iOS 裝置 </a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android裝置 </a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://docs.adobe.com/content/help/en/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS 裝置 </a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
