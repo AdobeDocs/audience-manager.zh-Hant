@@ -6,14 +6,14 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
 
 # DCS 錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
-由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!UICONTROL DCS]出所產生的錯誤碼和訊息。
+由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!UICONTROL DCS]出而產生的錯誤碼和訊息。
 
 In the tables below, *italics* represents a variable placeholder.
 
@@ -41,7 +41,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>無 <code> d_orgid</code> 效值（找不到此組織ID的組態）: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>組織ID不正確。 </p> <p>請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html" format="https" scope="external"> Experience cloud管理中的「管理頁面」一節</a> ，以取得如何尋找組織的詳細資訊。 </p> </td> 
+   <td colname="col3"> <p>組織ID不正確。 </p> <p>請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱「組織與帳戶連結」中的「管理頁面」一節 <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"></a> ，以取得如何尋找組織的詳細資訊。 </p> </td> 
   </tr>
  </tbody>
 </table>
@@ -244,7 +244,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>請求包含無效的全域裝置ID </p> </td> 
-   <td colname="col3"> <p>當請 <span class="wintitle">求包含無效的全域裝置ID時</span> ,DCS會傳回此錯誤碼。 DCS會忽略無效ID，並引發312錯誤以及無效ID的特定錯誤。 如需正確 <a href="../../../features/global-data-sources.md" format="dita" scope="local">裝置廣告ID格式和</a> 對應全域資料來源的詳細資訊，請參閱Audience Manager中的全域資料來源和ID索引 <a href="../../../reference/ids-in-aam.md" format="dita" scope="local"></a> 。</p>
+   <td colname="col3"> <p>當請 <span class="wintitle">求包含無效的全域裝置ID時</span> ,DCS會傳回此錯誤碼。 DCS會忽略無效ID，並引發312錯誤以及無效ID的特定錯誤。 如需正確 <a href="../../../features/global-data-sources.md" format="dita" scope="local">裝置廣告ID格式及</a> 對應全域資料來源的詳細資訊，請參閱Audience Manager <a href="../../../reference/ids-in-aam.md" format="dita" scope="local"></a> 中的全域資料來源和ID索引。</p>
    <p>錯誤呼叫的範例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>說明： <span class="keyword">IDFA(DPID 20915)</span> 必須是大寫ID。 請求中提供的ID為小寫。</p>
    </td>
