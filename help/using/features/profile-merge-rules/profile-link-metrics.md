@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則的報表量度
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 合併規則量度 {#merge-rule-metrics}
 
-當您的合併規則使用 [Adobe Experience Cloud Device Co-op或您可在中存取的其他協力廠商裝置圖表資料時，報表會以並排長條圖形傳回資料](https://marketing.adobe.com/resources/help/en_US/mcdc/)[!DNL Audience Manager]。 這可讓您比較已驗證的第一方資料與由或另一第三方裝置圖表提供 [!UICONTROL Experience Cloud Device Co-op] 的跨裝置資料。 如需由傳回之資料的詳細資 [!UICONTROL Device Co-op]訊，請參 [閱裝置圖表：內部流程和輸出](https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-processes.html)。 此資料會每日更新。
+當您的合併規則使用 [Adobe Experience Cloud Device Co-op或您可在中存取的其他協力廠商裝置圖表資料時，報表會以並排長條圖形傳回資料](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)[!DNL Audience Manager]。 這可讓您比較已驗證的第一方資料與由或另一第三方裝置圖表提供 [!UICONTROL Experience Cloud Device Co-op] 的跨裝置資料。 如需由傳回之資料的詳細資 [!UICONTROL Device Co-op]訊，請參 [閱裝置圖表： 內部流程和輸出](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html)。 此資料會每日更新。
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
@@ -31,10 +31,10 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p> <b><span class="wintitle"> 已驗證活動</span></b> </p> </td> 
    <td colname="col2"> <p>顯示： </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
-     <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> 活動人員</span>:過去60天內已驗證您網站的人數。 </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> 跨裝置</span>:在所選已驗 <a href="merge-rules-start.md#create-data-source"> 證的設定檔的存留期間，在「資料來源」中儲存的「跨裝置ID」總數</a><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"></a><a href="merge-rule-definitions.md"></a> ，即「已驗證的設定檔」的「資料來源」中所儲存的「跨裝置ID」總數。 </li> 
-     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> %有效人員</span>:將「 <span class="wintitle"> 作用中人員</span> 」顯示為%。 </li> 
-    </ul> <p> <span class="wintitle"> 「已驗證活動</span> 」可讓您依活動、卷和百分比來比較資料來源。 它可協助您尋找擁有大量人員和高比例使用者的資料來源。 或者，您可能會發現比較資料來源與高比例的使用中使用者與總讀者人數的價值。 例如，有時總存留期數較少、活動較高的資料來源比活動次數較高、存留期結果較高的資料來源更有價值。 </p> <p> <p>注意：「已驗 <span class="wintitle"> 證活動</span> 」量度僅包含 <span class="wintitle"> 「描述檔連結</span> 」資料。 此報告不包含「裝 <span class="wintitle"> 置圖表</span> 」資料。 </p> </p> </td> 
+     <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> 活動人員</span>: 過去60天內已驗證您網站的人數。 </li> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> 跨裝置</span>: 在所選已驗 <a href="merge-rules-start.md#create-data-source"> 證的設定檔的存留期間，在「資料來源」中儲存的「跨裝置ID」總數</a><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"></a><a href="merge-rule-definitions.md"></a> ，即「已驗證的設定檔」的「資料來源」中所儲存的「跨裝置ID」總數。 </li> 
+     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> %有效人員</span>: 將「 <span class="wintitle"> 作用中人員</span> 」顯示為%。 </li> 
+    </ul> <p> <span class="wintitle"> 「已驗證活動</span> 」可讓您依活動、卷和百分比來比較資料來源。 它可協助您尋找擁有大量人員和高比例使用者的資料來源。 或者，您可能會發現比較資料來源與高比例的使用中使用者與總讀者人數的價值。 例如，有時總存留期數較少、活動較高的資料來源比活動次數較高、存留期結果較高的資料來源更有價值。 </p> <p> <p>注意： 「已驗 <span class="wintitle"> 證活動</span> 」量度僅包含 <span class="wintitle"> 「描述檔連結</span> 」資料。 此報告不包含「裝 <span class="wintitle"> 置圖表</span> 」資料。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="wintitle"> 每人平均裝置數</span></b> </p> </td> 
@@ -67,31 +67,31 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p><span class="wintitle"> 個人資料連結</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_B2FF2341573840549FFB96579F537082"> 
-      <li id="li_B37323C2F2434F41B407500AC5C15447">總人數：60天 </li> 
-      <li id="li_08D911224A60418BBB3CFB4E70CE73D4">裝置總數：120天 </li> 
+      <li id="li_B37323C2F2434F41B407500AC5C15447">總人數： 60天 </li> 
+      <li id="li_08D911224A60418BBB3CFB4E70CE73D4">裝置總數： 120天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> Co-op裝置圖表</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 合作裝置圖表</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_64AD1DD89DF64703B70B973A463BA020"> 
-      <li id="li_D7D3A3871F434CBFA71BE8929EB41648">總人數：180天 </li> 
-      <li id="li_125D387986B2463EB310203CE5857EDA">裝置總數：180天 </li> 
+      <li id="li_D7D3A3871F434CBFA71BE8929EB41648">總人數： 180天 </li> 
+      <li id="li_125D387986B2463EB310203CE5857EDA">裝置總數： 180天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> LiveRamp</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_2772F3AD7E1440789B635794ECDE8DFB"> 
-      <li id="li_1432363829D64615B1D349A3722D6268">總人數：180天 </li> 
-      <li id="li_D5C0E3CE92524B54BBD36C73A326292B">裝置總數：180天 </li> 
+      <li id="li_1432363829D64615B1D349A3722D6268">總人數： 180天 </li> 
+      <li id="li_D5C0E3CE92524B54BBD36C73A326292B">裝置總數： 180天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Tapad</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_274529DB58E6442E95C6AD89BECB1362"> 
-      <li id="li_67102211A72A4E47AACFE5E369793C17">總人數：60天 </li> 
+      <li id="li_67102211A72A4E47AACFE5E369793C17">總人數： 60天 </li> 
       <li id="li_3E8F3DA6A7B5487895A626674DA363A5">裝置總數60天 </li> 
      </ul> </p> </td> 
   </tr> 
