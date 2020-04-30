@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 隱私權與資料保留常見問題
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 **Audience Manager如何使用Cookie及其設定的Cookie?**
 
-See [Audience Manager Cookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_am.html).
+See [Audience Manager Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html).
 
 **美國的Audience Manager客戶是否可將EU屬性的使用者鎖定在目標？**
 
@@ -56,7 +56,7 @@ See [Audience Manager Cookies](https://marketing.adobe.com/resources/help/en_US/
   </tr> 
   <tr> 
    <td colname="col1"> <p>邊緣伺服器 </p> </td> 
-   <td colname="col2"> <p> 14天。 </p> <p>Audience Manager會在上次在Audience Manager平台上看到使用者14天後，從我們的邊緣伺服器刪除使用者資料。 如果 <span class="keyword"> Audience Manager</span> 在此14天週期內記錄使用者活動，我們會再將此資料保存14天。 如果使用者在14天後再次啟用，則第一個新頁面檢視與使用者變成可操作的時間會延遲。 閒置超過14天後，需要6-18小時才能將完整的描述檔送回邊緣中心。 </p> </td> 
+   <td colname="col2"> <p> 14天。 </p> <p>Audience Manager會在上次在Audience Manager平台上看到使用者14天後，從我們的邊緣伺服器刪除使用者資料。 如果 <span class="keyword"> Audience Manager</span> 在這14天週期內記錄使用者活動，我們將會再將此資料保存14天。 如果使用者在14天後再次啟用，則第一個新頁面檢視與使用者變成可操作的時間會延遲。 閒置超過14天後，需要6-18小時才能將完整的描述檔送回邊緣中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始記錄檔 </p> </td> 
