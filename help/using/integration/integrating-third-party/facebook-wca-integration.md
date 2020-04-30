@@ -5,7 +5,7 @@ seo-title: Facebook WCA整合
 solution: Audience Manager
 title: Facebook WCA整合
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -29,9 +29,9 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 1. Facebook廣告帳戶
 2. Audience Manager區段，準備好指派給您的新Facebook目標。 以下是 [如何在Audience Manager](/help/using/features/segments/segment-builder.md) UI中建立區段。
 3. Adobe Experience Platform Identity Service(ECID)4.1.0版或更新版本。 請在這裡下載最新 **[版本](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**。
-4. Audience Manager資料整合庫(DIL)9.0版或更新版本，可從此處 **[下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。 或者，如果您使[用伺服器端轉送(SSF)](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html)，將資料匯入Audience Manager，則必須使用AppMeasurement 2.12版或更新版本。 使用Analytics代碼管理[器下載AppMeasurement](https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html)。
+4. Audience Manager資料整合庫(DIL)9.0版或更新版本，可從此處 **[下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。 或者，如果您使[用伺服器端轉送(SSF)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)，將資料匯入Audience Manager，則必須使用AppMeasurement 2.12版或更新版本。 使用Analytics代碼管理[器下載AppMeasurement](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html)。
 
-我們建議您使用 [Adobe Experience Platform Launch或](https://docs.adobelaunch.com/) Adobe Dynamic Tag Management [，在步驟3和4中安裝或升級程式庫](https://marketing.adobe.com/resources/help/en_US/dtm/)。
+我們建議您使用 [Adobe Experience Platform Launch或](https://docs.adobelaunch.com/) Adobe Dynamic Tag Management [，在步驟3和4中安裝或升級程式庫](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)。
 
 ## 步驟1 —— 在Audience Manager中建立Facebook目標 {#step-1-create-facebook-destination}
 
@@ -39,8 +39,8 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 **基本資訊**
 
-* **類別**:自訂
-* **類型**:URL
+* **類別**: 自訂
+* **類型**: URL
 * 選取「自 **動填滿目標對應** 」核取方塊，然後選 **取區段ID**。
 
 **資料匯出標籤**
@@ -53,8 +53,8 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 **設定**
 
-* **URL類型**:選取 **社交平台的網站對象**。 透過選取此URL類型選項，Audience Manager在觸發Facebook WCA像素時不會遮住反向連結URL資訊。
-* **序列化**:選擇 **啟用**。
+* **URL類型**: 選取 **社交平台的網站對象**。 透過選取此URL類型選項，Audience Manager在觸發Facebook WCA像素時不會遮住反向連結URL資訊。
+* **序列化**: 選擇 **啟用**。
 * 在「基 **本URL** 」和「 **安全URL** 」欄位中，輸入Facebook WCA像素。
 * **分隔字元**: ,
 
@@ -92,7 +92,7 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 | 項目 | 說明 |
 ---------|----------|
 | 網站流量 | 自訂組合 |
-| 包含 | <ul><li>選 **擇事件** >選 **擇Adobe-Audience-Manager-Segment**。 這是步驟1中範例像素中ev參數的值。 請注意，如果像素尚未觸發， **Event****選項或** Adobe-Audience-Manager-Segment可能不會出現在Facebook UI中。</li><li>新增參數：選擇 `segID`。</li><li><p>選擇包 **含運算** 子。</p><p>這很重要，因為訪客可能符合多個區段的資格，所以像素參數中可能有多個區段ID。 使用等號(=)運算子可能無法讓訪客符合觀眾的資格，而且您會觀察到較低的量。</p></li><li>新增值：輸入Audience Manager區段ID。</li></ul> |
+| 包含 | <ul><li>選 **擇事件** >選 **擇Adobe-Audience-Manager-Segment**。 這是步驟1中範例像素中ev參數的值。 請注意，如果像素尚未觸發， **Event****選項或** Adobe-Audience-Manager-Segment可能不會出現在Facebook UI中。</li><li>新增參數： 選擇 `segID`。</li><li><p>選擇包 **含運算** 子。</p><p>這很重要，因為訪客可能符合多個區段的資格，所以像素參數中可能有多個區段ID。 使用等號(=)運算子可能無法讓訪客符合觀眾的資格，而且您會觀察到較低的量。</p></li><li>新增值： 輸入Audience Manager區段ID。</li></ul> |
 | 新增條件 | 可選設定。 |
 | 在最後一個 | 可選設定。 |
 | 對象名稱 | 我們建議您使用相同的Audience Manager區段名稱以維持一致性，除非您要新增其他條件至此Audience。 |
