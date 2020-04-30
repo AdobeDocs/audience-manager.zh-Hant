@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 描述檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
+source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ---
 
@@ -36,8 +36,8 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 3. 提供整合程式碼。 整合程式碼是您專屬的唯一ID，用於此資料來源。
 4. 在清單 **[!UICONTROL ID Type]** 中，選擇 **[!UICONTROL Cross Device]**。
 5. 在清單 **[!UICONTROL ID Definition]** 中，選擇定義資料源類型的選項。 選項包括:
-   * **[!UICONTROL Person]**:定義單一人員的ID。 此ID可以對應至多個 [!DNL Audience Manager] ID。
-   * **[!UICONTROL Household]**:定義一組人員的ID。 此ID可以對應至多個 [!DNL Audience Manager] ID。
+   * **[!UICONTROL Person]**: 定義單一人員的ID。 此ID可以對應至多個 [!DNL Audience Manager] ID。
+   * **[!UICONTROL Household]**: 定義一組人員的ID。 此ID可以對應至多個 [!DNL Audience Manager] ID。
 
 ## 資料匯出控制 {#export-controls}
 
@@ -47,11 +47,11 @@ source-git-commit: 7f9c7b74150682e8e8b839148dcae72f53d3b4ae
 
 [!UICONTROL Data Source Settings] section提供了多個選項，但這2個選項對於建立跨設備資料源非常重要：
 
-* **[!UICONTROL Use as Authenticated Profile]**:依預設選取，此設定可讓您使用您自己的 [!UICONTROL Profile Merge Rule] 驗證資料來建立。
+* **[!UICONTROL Use as Authenticated Profile]**: 依預設選取，此設定可讓您使用您自己的 [!UICONTROL Profile Merge Rule] 驗證資料來建立。
 
-* **[!UICONTROL Use as a Device Graph]**:此控制項僅適用於列為資料提供者的帳戶。 選取此核取方塊會將資料來源建立為裝置圖表，並讓您與其他客戶共 [!DNL Audience Manager] 用。 與您的顧 [!DNL Audience Manager] 問合作，以設定資料提供者身分，並指定應與哪些 [!UICONTROL Data Source] 客戶共用此資料。 您的顧問將透過內部布建程式來布建您的帳戶和裝置圖形共用。
+* **[!UICONTROL Use as a Device Graph]**: 此控制項僅適用於列為資料提供者的帳戶。 選取此核取方塊會將資料來源建立為裝置圖表，並讓您與其他客戶共 [!DNL Audience Manager] 用。 與您的顧 [!DNL Audience Manager] 問合作，以設定資料提供者身分，並指定應與哪些 [!UICONTROL Data Source] 客戶共用此資料。 您的顧問將透過內部布建程式來布建您的帳戶和裝置圖形共用。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**:此控制項可讓您設定非作用中客戶ID的資料保留期。 這會決定客戶ID上次在Audience Manager平台上顯示後，Audience Manager在我們的資料庫中保留多久的時間。 預設值為24個月（720天）。 您可設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計算為30天。 Audience Manager會根據您為非作用中客戶ID設定的資料保留率，執行每週刪除非作用中客戶ID一次的程式。
+* **[!UICONTROL Data retention for inactive Customer IDs]**: 此控制項可讓您設定非作用中客戶ID的資料保留期。 這會決定客戶ID上次在Audience Manager平台上顯示後，Audience Manager在我們的資料庫中保留多久的時間。 預設值為24個月（720天）。 您可設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計算為30天。 Audience Manager會根據您為非作用中客戶ID設定的資料保留率，執行每週刪除非作用中客戶ID一次的程式。
 
 與這些設定關聯的文本欄位允許您使用「配置檔案合 [!UICONTROL Data Source] 並規則」選項中顯示的別名來 [更名](merge-rule-definitions.md)。 例如，如果向中添加別名， **[!UICONTROL Use as Authenticated Profile]**&#x200B;該名稱將出現在列 [!UICONTROL Authenticated Profile Options] 表中。 如果向中添加別名， **[!UICONTROL Use as a Device Graph]**&#x200B;該名稱將出現在列 [!UICONTROL Device Options] 表中。
 
@@ -135,7 +135,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-如需詳細資訊，請 [參閱建立跨裝置資料來源](#create-data-source) 、客 [戶ID和驗證狀態](https://marketing.adobe.com/resources/help/en_US/mcvid/?f=mcvid_customer_ids.html)。
+如需詳細資訊，請 [參閱建立跨裝置資料來源](#create-data-source) 、客 [戶ID和驗證狀態](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)。
 
 ### 配置函 `DIL.create` 數
 
@@ -150,7 +150,7 @@ var vDil = DIL.create({
 });
 ```
 
-在namespace鍵值配對中， `*`MCORG`*` 變數是您的 [!DNL Experience Cloud] 組織ID。 如果您沒有此ID，您可以在控制面板的區 [!UICONTROL Administration] 段中找 [!DNL Experience Cloud] 到。 您需要管理員權限才能檢視此控制面板。 See [Administration: Core Services](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started.html).
+在namespace鍵值配對中， `*`MCORG`*` 變數是您的 [!DNL Experience Cloud] 組織ID。 如果您沒有此ID，您可以在控制面板的區 [!UICONTROL Administration] 段中找 [!DNL Experience Cloud] 到。 您需要管理員權限才能檢視此控制面板。 See [Administration: Core Services](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ### 設定SDK
 
@@ -176,8 +176,8 @@ DIL.create({
 
 檢查程式碼中可 [!DNL SDK] 讓您從行動裝置 [!UICONTROL declared IDs] 傳 [!DNL Android] 遞的 [!DNL iOS] 方法。 程式碼庫和程 [!DNL Android] 式碼 [!DNL iOS] 庫的變數名稱相同：
 
-* `dpid`:跨裝置資料來源ID。
-* `dpuuid`:( [!UICONTROL declared ID] 亦即使用者ID)。
+* `dpid`: 跨裝置資料來源ID。
+* `dpuuid`: ( [!UICONTROL declared ID] 亦即使用者ID)。
 
 <table id="table_2ACA3E5F316D4413B10A4403B786CC23"> 
  <thead> 
@@ -208,7 +208,7 @@ DIL.create({
  </tbody>
 </table>
 
-另請參閱「 [iOS適用的Android適用的Audience Manager方法](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_audience_manager_methods.html) 」 [和「iOS適用的Audience Manager方法」](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=aam_methods.html)。
+另請參閱「 [iOS適用的Android適用的Audience Manager方法](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html) 」 [和「iOS適用的Audience Manager方法」](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >
