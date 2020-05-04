@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 translation-type: tm+mt
-source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
@@ -53,7 +53,11 @@ source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
    * 搜索目標並按一下 **[!UICONTROL Add Destination]**。 請注意，目標必須已存在，您才能將其新增至區段。
    * 完成時 **[!UICONTROL Save]** 按一下。
 
-## 區段產生器控制：基本資訊部分 {#segment-builder-controls-basics}
+請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+
+## 區段產生器控制： 基本資訊部分 {#segment-builder-controls-basics}
 
 在中 [!UICONTROL Segment Builder], [!UICONTROL the Basic Information] 設定可讓您建立新特徵或編輯現有特徵。 若要建立新區段，請提供名稱、資料來源，並選取儲存資料夾。 所有其他欄位皆為選用。 完成時，請移 [!UICONTROL Traits] 至區段。
 
@@ -98,7 +102,7 @@ source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
  </tbody> 
 </table>
 
-## 區段產生器控制：特徵區段 {#segment-builder-controls-traits}
+## 區段產生器控制： 特徵區段 {#segment-builder-controls-traits}
 
 在中 [!UICONTROL Segment Builder]，此 [!UICONTROL Traits] 區段可讓您管理區段中的特徵、建立特徵群組，以及設定限定條件。 若要新增特徵至區段，請在搜尋欄位中輸入特徵名稱，然後按一下 [!UICONTROL Add Trait]。 儲存特徵（如果完成）或移至 [!UICONTROL Destinations Mapping]。
 
@@ -109,7 +113,7 @@ source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
 | 欄位 | 說明 |
 |--- |--- |
 | 基本檢視 | 本節提供視覺控制項，可讓您： <ul><li>建立新區段並管理現有區段。</li><li>從區段移除特徵。</li><li>將最多50個（最多）特徵加入群體。</li><li>拖放特徵以建立新群組。</li><li>在區段中檢視特徵和特徵群組。</li><li>使用布林運算式、比較運算子和時近／頻率設定來設定限定條件。</li></ul> |
-| 程式碼檢視 | 開啟開發環境，可讓您使用程式碼來建立和管理特徵、群組和資格要求，而非使用視覺化介面。 如果您的區段： <ul><li>在個別區段中包含50個以上的特徵。 注意：區段限制為5000個特徵（最大值）。</li><li>包含許多特徵群組。</li><li>具備複雜的資格要求。</li></ul> |
+| 程式碼檢視 | 開啟開發環境，可讓您使用程式碼來建立和管理特徵、群組和資格要求，而非使用視覺化介面。 如果您的區段： <ul><li>在個別區段中包含50個以上的特徵。 注意： 區段限制為5000個特徵（最大值）。</li><li>包含許多特徵群組。</li><li>具備複雜的資格要求。</li></ul> |
 | 搜尋 | 協助您尋找要新增至群體的特徵。 |
 | 建議 | 從您所訂閱的第一方特徵和資料饋送，取得 [!UICONTROL Audience Marketplace] 類似特徵的即時建議。 將這些建議新增至區段規則，以擴展您的觀眾群。 閱讀更多有關特徵 [建議的資訊](trait-recommendations.md)。 |
 | Marketplace Recommendations | 從您未訂閱的資料饋送， [!UICONTROL Audience Marketplace] 取得類似特徵的即時建議。 閱讀更多有關特徵 [建議的資訊](trait-recommendations.md)。 |
@@ -124,9 +128,9 @@ source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
 1. 前往「 **讀者資料>區段」**。 捲動清單或使用搜尋功能來尋找您要使用的區段。
 2. 按一下區段名稱以開啟區段詳細資訊畫面。
 3. 按一 **下「編輯** 」以開啟「區段產生器」，然後按一下「 **特徵** 」以開啟特徵面板。
-4. 將滑鼠指標暫留在您要刪除的特徵上，然後按一下X。此動作會立即從您的區段中移除特徵。
+4. 將滑鼠指標暫留在您要刪除的特徵上，然後按一下X。 此動作會立即從您的區段中移除特徵。
 
-## 區段產生器控制：「目標映射」部分 {#segment-builder-controls-destinations}
+## 區段產生器控制： 「目標映射」部分 {#segment-builder-controls-destinations}
 
 在中 [!UICONTROL Segment Builder]，選 [!UICONTROL Destinations Mapping] 用區段可讓您傳送區段資料至協力廠商、 [!DNL cookie][!DNL URL]或伺服器對伺服器目的地。 若要新增目標，請搜尋（或瀏覽）目標、提供目標特定資訊，然後按一下 **[!UICONTROL Add Destination]**。
 
