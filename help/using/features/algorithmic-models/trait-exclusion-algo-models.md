@@ -5,12 +5,12 @@ seo-title: 演算法模型特徵排除
 title: 演算法模型特徵排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
 translation-type: tm+mt
-source-git-commit: e6e22c0c4a8f1374d3d8d18cb7b242e18a29571f
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
 
-# 相似模型：特徵排除 {#algorithmic-models-trait-exclusion}
+# 相似模型： 特徵排除 {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] 在模型工作流程中提供額外的控制項，讓您根據您的領域專業知識和法規要求，將必要的防護欄加入模型。 使用選 [!UICONTROL Exclusions] 項，在從一或多個資料來源建立模型時，選取要忽略哪些特徵。
 
@@ -47,6 +47,10 @@ source-git-commit: e6e22c0c4a8f1374d3d8d18cb7b242e18a29571f
 如果您偏好視訊教學課程，請觀看我們的「特徵排除」視訊示範：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25569/?quality=12)
+
+此外，請觀看以下影片，以詳細瞭解跨裝置量度的運作方式。
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## 重要方面與限制 {#important-aspects-and-limitations}
 
