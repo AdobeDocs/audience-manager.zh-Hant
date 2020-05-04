@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 建立演算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
@@ -47,6 +47,10 @@ source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
    * 從清單中選取資料 [!UICONTROL Available Data] 來源。
    * 完成時 **[!UICONTROL Save]** 按一下。
       ![look-laye-configuration](assets/look-alike-configuration.png)
+
+請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## 演算模型的基本資訊 {#basic-information}
 
