@@ -5,7 +5,7 @@ seo-title: 工作流程A —— 基於所有線上活動和離線資料的個人
 solution: Audience Manager
 title: 工作流程A —— 基於所有線上活動和離線資料的個人化
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
 
 ---
 
@@ -112,9 +112,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 在上述範例中，檔案名稱會如下所示：
 `c2c_id_999999_987654_1560431657.sync`
 
-[在這裡下載範例檔案](https://marketing.adobe.com/resources/help/en_US/aam/downloads/c2c_id_999999_987654_1560431657.sync)。
-
-<!-- Victor/Vlad: Please check the above link. Any way you can move this download to Git? I'm concerned about the plans to decommission marketing.adobe.com -Bob -->
+[在這裡下載範例檔案](assets/c2c_id_999999_987654_1560431657.sync)。
 
 建立ID同步檔案後，您必須將它上傳至儲 [!DNL Amazon S3] 存貯體。 如要瞭解如何上傳ID同步檔案，請參 [閱傳送批次資料至Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
 
