@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 趨勢報表
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
 translation-type: tm+mt
-source-git-commit: 760818663ff3eb32c6de876c756697e1d9034369
+source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 ---
 
@@ -58,9 +58,9 @@ t_working_with_trend_reports.xml
  -->
 
 1. 在控制面 **[!UICONTROL Analytics]** 板中，按一下 **[!UICONTROL Trend Reports]**。
-1. 從下拉 **[!UICONTROL Report Type]** 式清單中，選取所要的類型：或 **[!UICONTROL Trait]** 者 **[!UICONTROL Segment]**。
+1. 從下拉 **[!UICONTROL Report Type]** 式清單中，選取所要的類型： **[!UICONTROL Trait]** 或 **[!UICONTROL Segment]**&#x200B;者。
 1. 按一下日期方塊以顯示日曆，然後選取報表的開始和結束日期。
-1. 指定顯示間隔：1、7、14、30、60或90天。
+1. 指定顯示間隔： 1、7、14、30、60或90天。
 1. 依名稱或ID搜尋特徵或區段。
 1. 從資料夾清單中，將您要報告的特徵或區段拖放至右 [!UICONTROL Selections] 側的面板。
    * 為獲得最佳效能， [!UICONTROL Trend] 請一次執行少於20個特徵或區段的報表。
@@ -96,11 +96,15 @@ t_working_with_trend_reports.xml
 
 零表示未 [!DNL Audience Manager] 收集當天的資料。 空白項目表示特徵不存在。
 
+請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+
 ## 區段的趨勢報表結果 {#segment-report-results-traits}
 
 當您執行並選取為報表類型時，以 [!UICONTROL Trend Report] 下篩 **[!UICONTROL Segments]** 選器可供使用。
 
-* **[!UICONTROL Real-time Segment Population]**:在所選時間範圍內符合區段的訪客數。
-* **[!UICONTROL Total Segment Population]**:符合區段的訪客總數。
+* **[!UICONTROL Real-time Segment Population]**: 在所選時間範圍內符合區段的訪客數。
+* **[!UICONTROL Total Segment Population]**: 符合區段的訪客總數。
 
 ![trend-report-segments](assets/trend-report-segments.png)
