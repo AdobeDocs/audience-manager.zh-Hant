@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Audience Manager與Adobe Experience Platform之間的觀眾分享
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: f191035a1ad4b83bb3d391de80e1f925d6295df7
+source-git-commit: 7dddf19aa3b0fc0655b1b206d9c8f0c772190601
 
 ---
 
@@ -53,8 +53,8 @@ Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您
 ## Audience Manager中的Adobe Experience Platform細分 {#aep-segments-in-aam}
 
 您在Experience Platform中建立的區段會以特徵和區段的形式出現在您的Audience Manager介面中，具有下列構成規則：
-* 特徵：特徵規則是「體驗平台」區段的ID。
-* 區段：區段由上述特徵組成。
+* 特徵： 特徵規則是「體驗平台」區段的ID。
+* 區段： 區段由上述特徵組成。
 
 ### 特徵 {#aep-segments-as-aam-traits}
 
@@ -71,11 +71,11 @@ Audience Manager會在您的特徵儲存區中自動建立名 **為「Experience
 
 | 項目編號 | 名稱 | 說明 |
 ---------|----------|---------
-| 1 | 特徵類型 | 從Experience Platform區段建立的特徵會在Audience Manager中建立為已登入特徵。 |
-| 2 | 資料來源 | 自動建立。 所有自動從Experience Platform區段建立的特徵和區段都儲存在資料來源 **Adobe Experience Platform觀眾共用中**。 |
-| 3 | 整合代碼 | 整合程式碼對應於Experience Platform中的區段ID。 |
-| 4 | 特徵表達式 | 特徵表達式為 `segID = segment ID in Experience Platform`。 |
-| 5 | 具有此特徵的區段 | 使用此特徵作為構圖的自動建立區段。 |
+| 1 | [!UICONTROL Trait Type] | 從Experience Platform區段建立的特徵會在Audience Manager中建立為已登入特徵。 |
+| 2 | [!UICONTROL Data Source] | 自動建立。 從Experience Platform區段自動建立的所有特徵和區段都會儲存在資料來源中 **[!UICONTROL Adobe Experience Platform Audience Sharing]**。 |
+| 3 | [!UICONTROL Integration Code] | 整合程式碼對應於Experience Platform中的區段ID。 |
+| 4 | [!UICONTROL Trait Expression] | 特徵表達式為 `segID = segment ID in Experience Platform`。 |
+| 5 | [!UICONTROL Segments with this Trait] | 使用此特徵作為構圖的自動建立區段。 |
 
 <br> 
 
@@ -103,11 +103,8 @@ Audience Manager會在您的區段儲存空間中自動建立 **名為「Experie
 * 區段工作執行時間。 Audience Manager會執行區段工作，每天更新介面中的數字一次。 此工作很少與Experience Platform中的分段工作一致。
 * [Audience Manager中的描述檔合併規則](/help/using/features/profile-merge-rules/merge-rules-overview.md) ，以及 [Experience Platform中的「合併原則](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) 」運作方式不同，而用於每個原則的識別圖形也不同。 因此，預期群體間會有所差異。
 
-
 >[!MORELIKETHIS]
 >
 >* [區段服務概觀](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html#audiences)
 >* [體驗平台區段產生器使用指南](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#audiences)
 >* [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)
-
-
