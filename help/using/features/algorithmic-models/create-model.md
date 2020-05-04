@@ -7,7 +7,7 @@ solution: Audience Manager
 title: 建立演算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 translation-type: tm+mt
-source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
+source-git-commit: 35bad7e676aa1d4143f5d114a1eff85d6aba5f1d
 
 ---
 
@@ -34,13 +34,14 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
 
 1. 前往 **[!UICONTROL Audience Data]** > **[!UICONTROL Models]** 並按一 **[!UICONTROL Add New]** 下區 [!UICONTROL Look-Alike Modeling] 段。
    ![look-like-add](assets/look-alike-add.png)
-2. 在「基 [本資訊」部分](../../features/algorithmic-models/create-model.md#basic-information)
+1. 在「基 [本資訊」部分](../../features/algorithmic-models/create-model.md#basic-information)
    * 命名模型。
    * *（可選）* ，提供模型的簡要說明。
    * 將模型的狀態設定為 **[!UICONTROL Active]** 或 **[!UICONTROL Inactive]**。 非活動模型將不運行，也不會生成任何資料。
       ![look-like-basic](assets/look-alike-basic.png)
-3. 在「配 [置](../../features/algorithmic-models/create-model.md#configuration) 」部分：
-   * 按一 **[!UICONTROL Browse All Traits]** 下或 **[!UICONTROL Browse All Segments]** 以選取您要建立模型的特徵或區段。 選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。
+1. 在「配 [置](../../features/algorithmic-models/create-model.md#configuration) 」部分：
+   * 按一 **[!UICONTROL Browse All Traits]** 下或 **[!UICONTROL Browse All Segments]** 以選取您要建立模型的特徵或區段。 依名稱、ID、說明或資料來源搜尋特徵。 在搜索時按一下一個資料夾，將結果限制在該資料夾及其子資料夾。 您也可以依特徵類型([!UICONTROL Folder Trait]、 [!UICONTROL Rule-based]、 [!UICONTROL Onboarded]和 [!UICONTROL Algorithmic])或人口類型(裝置ID和交叉裝[](../../reference/ids-in-aam.md)[](../../reference/ids-in-aam.md)置ID)篩選特徵。
+      ![瀏覽特徵](assets/browse-traits.png)
    * 選擇30、60或90天回顧時段。 這會設定模型的時間範圍。
    * 預設 [!UICONTROL TraitWeight] 會選取演算法。
    * 從清單中選取資料 [!UICONTROL Available Data] 來源。
@@ -81,7 +82,7 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>選取基準特徵或區段(1)</b> </p> </td> 
-   <td colname="col2"> <p>按一下特徵或區段按鈕，即可查看您所有特徵或區段的清單。 您選取的區段或特徵會成為系統演算法用於建模的基準。 </p> <p> <p><b>注意</b>: 選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。 </p> </p> </td> 
+   <td colname="col2"> <p>按一下特徵或區段按鈕，即可查看您所有特徵或區段的清單。 您選取的區段或特徵會成為系統演算法用於建模的基準。 </p> <p> <p><b>注意</b>:  選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>選擇回顧期間(2)</b> </p> </td> 
@@ -97,7 +98,7 @@ source-git-commit: af43becaf841909174fad097f4d4d5040c279b47
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>排除(5)</b> </p> </td> 
-   <td colname="col2"> <p>您可以從選取的模型資料來源中排除特徵。 使用「排 <span class="wintitle"> 除」清單</span> ，並閱讀「演算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型：特徵排除</a> ，瞭解更多資訊。 </p> </td>
+   <td colname="col2"> <p>您可以從選取的模型資料來源中排除特徵。 使用「排 <span class="wintitle"> 除」清單</span> ，並閱讀「演算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型： 特徵排除</a> ，瞭解更多資訊。 </p> </td>
   </tr> 
  </tbody>
 </table>
