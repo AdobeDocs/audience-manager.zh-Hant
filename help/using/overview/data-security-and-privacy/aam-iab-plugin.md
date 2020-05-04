@@ -5,7 +5,7 @@ seo-title: 適用 IAB TCF 的 Audience Manager 增效模組
 solution: Audience Manager
 title: 適用 IAB TCF 的 Audience Manager 增效模組
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 5fff9315558d3088f68268f32681842bb8d5e7d3
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 您對使用者的隱私義務中，其中一個重要面向是針對如何利用使用者個人資料 (即「目的」)，以及該等資料會由誰使用 (即「公司」)，向使用者傳達其擁有的選項，並取得使用者的選擇。
 
-Adobe 可讓您透過[選擇加入功能](hhttps://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html)和 [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)，管理使用者的隱私權選擇，並與使用者針對該選擇溝通。
+Adobe 可讓您透過[選擇加入功能](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html)和 [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)，管理使用者的隱私權選擇，並與使用者針對該選擇溝通。
 
 本文說明支援 IAB TCF 的 Audience Manager 使用案例，講解如何在 Audience Manager 中實作 IAB TCF 支援。Audience Manager已在IAB TCF中註冊，廠商ID為565。
 
@@ -40,7 +40,7 @@ IAB TCF的Audience Manager外掛程式運用 [Opt-in功能](https://docs.adobe.c
 1. 您必須使用Adobe Experience Platform Identity Service(ECID)4.1版或更新版本。 [下載我們](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 最新的ECID版本。
 1. 您必須使用Audience Manager資料整合庫(DIL)9.0版或更新版本，可從此處 [下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)。 閱讀Audience Manager文 [件中的DIL相關資訊](../..//dil/dil-overview.md)。
 1. 或者，如果您使用伺服器端轉送(SSF)將資料匯入Audience Manager，則必須升級至最新版的AppMeasurement。 使用Analytics代碼管理 [器下載AppMeasurement](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html)。
-1. 您必須使用支援IAB TCF且已在IAB TCF註冊的「同意管理平台」(CMP)，不論是商業版或您自己的。 請參見在IAB框架 [中註冊的CMP的清單](https://advertisingconsent.eu/cmp-list/)。
+1. 您必須使用支援IAB TCF且已在IAB TCF註冊的「同意管理平台」(CMP)，不論是商業版或您自己的。 請參見在IAB框架 [中註冊的CMP的清單](https://iabeurope.eu/cmp-list/)。
 
 ## 建議及實施方式 {#recommendations}
 
@@ -70,7 +70,7 @@ IAB框架中的標準用途是：
 
 ## Audience Manager所需的標準用途 {#aam-standard-purposes}
 
-Audience Manager會評估使用者在IAB TFC同意字串中儲存的選擇：
+Audience Manager會評估儲存在IAB TCF同意字串中的使用者選擇：
 
 * 資訊儲存和訪問(全局供應商清單中的 [目的ID 1](https://vendorlist.consensu.org/vendorlist.json))
 * 個人化（目的ID 2）
@@ -107,7 +107,7 @@ Audience Manager的運作方式不同，視Audience Manager在IAB TCF同意字�
 
 Audience Manager會根據IAB TCF評估並接受在 [像素呼叫中](../../integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)，傳遞的同意。
 
-像素通常由Audience Manager客戶放在其合作夥伴頁面上，或置於廣告伺服器中以納入廣告回應。 在第一種情況下，您的合作夥伴必須以程式設計方式擷取許可參數，並在引發之前將其新增至像素。 在第二種情況中，廣告伺服器會將其從供應端平台(SSP)或發佈商廣告伺服器接收的同意參數附加至所有像素，這種情況較為常見，並於下文詳細說明。
+像素通常由Audience Manager客戶放在其合作夥伴頁面上，或置於廣告伺服器中以納入廣告回應。 在第一種情況下，您的合作夥伴必須以程式設計方式擷取許可參數，並在引發之前將其新增至像素。 在第二種情況中，廣告伺服器會將其從供應端平台(SSP)或發行者廣告伺服器接收的同意參數附加至所有像素，這種情況較為常見，並於下文詳細說明。
 
 Audience Manager使用兩個參數在像素呼叫中傳遞使用者同意：
 
