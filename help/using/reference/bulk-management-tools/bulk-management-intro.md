@@ -1,13 +1,13 @@
 ---
 description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
-keywords: baaam;BAAAM
+keywords: baaam;BAAAM;download baaam
 seo-description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
 seo-title: 批量管理快速入門
 solution: Audience Manager
 title: 批量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: a4569127b748374b5707daedb0809c58bca74e9b
 
 ---
 
@@ -32,14 +32,14 @@ c_bulk_start.xml
 
 ## 下載 {#download}
 
-請在此處下載最新的 **[工作表](assets/BAAAM_V2_20200311.xlsm)**。
+請在此處下載最新的 **[工作表](assets/BAAAM_V2_20200502.xlsm)**。
 
 ## 必備條件 {#prereqs}
 
 若要使用 [!DNL Bulk Management Tools]，您需要下列項目：
 
 * 您的登 [!DNL Experience Cloud] 入資訊。 身為客戶，您應已擁有這些認證。
-* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20200311.xlsm) ，取得最新版本。
+* 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20200502.xlsm) ，取得最新版本。
 * 在或64位 [!DNL macOS] 元上執行Microsoft Excel [!DNL Microsoft Windows]。 我們建議您使用最新版的Microsoft Excel。
 * 開啟工作表時，必須 **啟用宏** , [!DNL Bulk Management Tools] 才能使用。
 
