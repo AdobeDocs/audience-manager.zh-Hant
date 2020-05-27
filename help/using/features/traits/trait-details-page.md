@@ -5,9 +5,12 @@ seo-title: 「特徵詳細資料」頁
 solution: Audience Manager
 title: 「特徵詳細資料」頁
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
-keywords: identity type breakdown, identity breakdown, audience identity reporting
+keywords: identity type breakdown, identity breakdown, audience identity reporting, cross-device, cross-device ID, device ID
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: 3b56d7ecdef4375bf3b007fa9b325618c701c174
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -20,10 +23,10 @@ source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 特徵詳細資料頁面的頂端會代管可用於管理特徵的工具：
 
-1. **[!UICONTROL Add New]**:使用這個選項可建立新的規則型、演算法或已登入特徵。
-2. **[!UICONTROL Edit]**:使用此選項可變更目前特徵的設定。
-3. **[!UICONTROL Delete]**:使用這個選項可從您的Audience Manager帳戶移除目前特徵。
-4. **[!UICONTROL Marketplace Recommendations]**:使用此選項，從您未訂閱的資料費用中，尋找與您所 [!UICONTROL Audience Marketplace] 檢視的相似特性。 請參 [閱Audience Marketplace for Data Buyers](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，以瞭解如何導覽Marketplace並尋找類似特性。
+1. **[!UICONTROL Add New]**: 使用這個選項可建立新的規則型、演算法或已登入特徵。
+2. **[!UICONTROL Edit]**: 使用此選項可變更目前特徵的設定。
+3. **[!UICONTROL Delete]**: 使用這個選項可從您的Audience Manager帳戶移除目前特徵。
+4. **[!UICONTROL Marketplace Recommendations]**: 使用此選項，從您未訂閱的資料費用中，尋找與您所 [!UICONTROL Audience Marketplace] 檢視的相似特性。 請參 [閱Audience Marketplace for Data Buyers](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) ，以瞭解如何導覽Marketplace並尋找類似特性。
 
 ![基本特徵資訊](assets/basic-trait-information.png)
 
@@ -37,14 +40,22 @@ source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
 
 [!UICONTROL Unique Trait Realizations] 代表在特定時間範圍內將此特徵新增至其描述檔的獨特使用者計數。 指 [!UICONTROL Total Trait Population] 出目前符合此特徵的獨特使用者人數。
 
-* 對於規則型特徵，特徵資格會即時發生，因為使用者在瀏覽器中符合特徵資格。
-* 對於已登入的特徵，特徵資格會在處理傳入檔案後發生，即傳入檔案 [饋送至Audience Manager](../../faq/faq-inbound-data-ingestion.md) ，也就是特徵資格發生時。
-* **[!UICONTROL Unique Trait Realizations]**:在特定時間範圍內將此特徵新增至其描述檔的獨特使用者計數。
-* **[!UICONTROL Total Trait Population]**:目前符合此特徵的獨特使用者人數。
+對於規則型特徵，特徵資格會即時發生，因為使用者在瀏覽器中符合特徵資格。
 
-   ![特徵圖](assets/trait-summary.png)
+對於已登入的特徵，特徵資格會在處理傳入檔案後發生，即傳入檔案 [饋送至Audience Manager](../../faq/faq-inbound-data-ingestion.md) ，也就是特徵資格發生時。
 
-* **[!UICONTROL Identity Type Breakdown]**:前三個項目以遞減順序顯示擁有符合特徵之最高人口計數的前三個跨裝置資料來源。 第四個項目顯示符合特徵的所有其他 [!DNL DPUUIDs] ([!DNL CRM IDs])來自非前三個跨裝置資料來源的總和。 只有當您在頁面右上方的下拉式選單中選 [!UICONTROL Show Results By] 取「跨裝置ID」時，才會顯示此報表。 預設下拉式選項為 [!UICONTROL Device ID]，不會顯示此報表。
+顯 [!UICONTROL Trait Graph] 示下列資訊：
+
+* **[!UICONTROL Show results by]**
+   * **[!UICONTROL Cross-Device ID]**: 選取此選項，可查看為已驗證的設定檔收集資料之特徵的結果。 選取此選項時，您只會在報表上看到資 [!UICONTROL Cross-Device ID] 料，且報表下不會顯示任何資 [!UICONTROL Device ID] 料。
+   * **[!UICONTROL Device ID]**: 選取這個選項，可查看收集裝置設定檔資料的特徵結果。 選取此選項時，您只會在報表上看到資 [!UICONTROL Device ID] 料，且報表下不會顯示任何資 [!UICONTROL Cross-Device ID] 料。
+
+      ![特徵圖](assets/trait-summary.png)
+
+* **[!UICONTROL Unique Trait Realizations]**: 在特定時間範圍內將此特徵新增至其描述檔的獨特使用者計數。
+* **[!UICONTROL Total Trait Population]**: 目前符合此特徵的獨特使用者人數。
+
+* **[!UICONTROL Identity Type Breakdown]**: 前三個項目以遞減順序顯示擁有符合特徵之最高人口計數的前三個跨裝置資料來源。 第四個項目顯示符合特徵的所有其他 [!DNL DPUUIDs] ([!DNL CRM IDs])來自非前三個跨裝置資料來源的總和。 只有當您在頁面右上方的下拉式選單中選 [!UICONTROL Show Results By] 取「跨裝置ID」時，才會顯示此報表。 預設下拉式選項為 [!UICONTROL Device ID]，不會顯示此報表。
 
    ![特徵圖](assets/trait-identity.png)
 
