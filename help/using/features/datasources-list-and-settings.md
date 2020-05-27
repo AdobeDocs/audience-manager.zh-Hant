@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 資料來源清單與設定
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 6b55441c2bdde6cf2333852fd59fbe87f4e531eb
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
@@ -96,6 +99,10 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 ### 傳入資料來源設定
 
 選擇數 **[!UICONTROL Inbound]** 據源設計為接收入站資料時的複選框。 選取核取方 **[!UICONTROL Inbound]** 塊可顯示下列說明的2組其他控制項。
+
+>[!NOTE]
+>
+>此核 **[!UICONTROL Inbound]** 取方塊僅用於顯示或隱藏下述資料來源控制項。 取消勾選 **[!UICONTROL Inbound]** 選項不會以任何方式影響資料擷取。 無論勾選此選項，您已登入的資料都會受到處理。
 
 <table id="table_B2825B7BE0DB4665B47C589A3787CD93"> 
  <thead> 
