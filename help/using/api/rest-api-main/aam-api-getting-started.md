@@ -6,7 +6,10 @@ solution: Audience Manager
 title: REST API快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 1bbfa4b537a344d58f20763bb40ebe0827ad8698
+source-git-commit: 680c4491176755915d2d45ee64f5d88410cb7072
+workflow-type: tm+mt
+source-wordcount: '1898'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 1bbfa4b537a344d58f20763bb40ebe0827ad8698
 
 <!-- c_rest_api_overview.xml -->
 
-## API需求與建議 {#api-requirements-recommendations}
+## API 需求與建議{#api-requirements-recommendations}
 
 使用Audience Manager時，您必須且應做的 [!DNL API]事。
 
@@ -26,7 +29,7 @@ source-git-commit: 1bbfa4b537a344d58f20763bb40ebe0827ad8698
 使用 [Audience Manager API程式碼時請注意](https://bank.demdex.com/portal/swagger/index.html#/) :
 
 * **請求參數：** 除非另有指定，否則所有請求參數都是必要的。
-* **請求標題**:使用 [Adobe I/O Token時](https://www.adobe.io/) ，您必須提供標 `x-api-key` 題。 您可依照「服務帳戶整合」頁面中的指示，取 [得您的API金鑰](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
+* **請求標題**: 使用 [Adobe I/O Token時](https://www.adobe.io/) ，您必須提供標 `x-api-key` 題。 您可依照「服務帳戶整合」頁面中的指示，取 [得您的API金鑰](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
 * **[!DNL JSON]內容類型：**在程`content-type: application/json`式碼&#x200B;*中指*`accept: application/json`定和指定。
 
 * **要求與回應：** 以格式正確的物件傳送 [!DNL JSON] 請求。 [!DNL Audience Manager] 以格式化資 [!DNL JSON] 料回應。 伺服器回應可包含要求的資料、狀態碼或兩者。
@@ -50,12 +53,15 @@ Audience Manager REST API支援兩種驗證方法。
 
 若要建立安全的服務對服務Adobe I/O API作業，您必須建立JSON網頁Token(JWT)，以封裝整合的身分，然後交換它以取用Token。 每次向Adobe服務提出要求時，都必須在「授權」標題中包含存取Token，以及您在 [Adobe I/O主控台中建立「服務帳戶整合」時產生的API金鑰（用戶端ID）](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)[](https://console.adobe.io/)。
 
-有關如 [何配置身份驗證的詳細說明](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) ，請參閱JWT（服務帳戶）身份驗證。
+按照以下步驟配置JWT（服務帳戶）驗證：
+
+1. 前往「 [服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 」，然後依照所有步驟來設定您的服務帳戶連線並產生您的JWT Token。
+2. 前往 [JWT（服務帳戶）驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) ，並依照步驟交換您的JWT Token（在步驟1建立）以取得存取Token。
 
 ## OAuth驗證（已過時） {#oauth}
 
 >[!WARNING]
-> Audience Manager代 [!UICONTROL REST API] 號驗證和透過續約的 [!DNL OAuth 2.0] 功能現已過時。
+> Audience Manager代 [!UICONTROL REST API] 號驗證和透過續約的 [!DNL OAuth 2.0] 功能現在已過時。
 >
 > 請改用 [JWT（服務帳戶）驗證](#jwt-service-account-authentication-jwt) 。
 
@@ -63,10 +69,10 @@ Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和�
 
 ### 建立一般API使用者 {#requirements}
 
-我們建議您建立個別的技術使用者帳戶，以便使用Audience Manager [!DNL API]。這是一般帳戶，不會系結至您組織中的特定使用者或與其關聯。 此類型的使 [!DNL API] 用者帳戶可協助您完成2項工作：
+我們建議您建立個別的技術使用者帳戶，以便使用Audience Manager [!DNL API]。 這是一般帳戶，不會系結至您組織中的特定使用者或與其關聯。 此類型的使 [!DNL API] 用者帳戶可協助您完成2項工作：
 
 * 識別呼叫的服務 [!DNL API] (例如，來自使用我們的應用程式或提出請 [!DNL API]求的其他工具的呼 [!DNL API] 叫)。
-* 不間斷地存取 [!DNL API]s。當系結至特定人員的帳戶離開您的公司時，可能會將其刪除。 這會使您無法使用可用的程 [!DNL API] 式碼。 未系結至特定員工的一般帳戶可協助您避免此問題。
+* 不間斷地存取 [!DNL API]s。 當系結至特定人員的帳戶離開您的公司時，可能會將其刪除。 這會使您無法使用可用的程 [!DNL API] 式碼。 未系結至特定員工的一般帳戶可協助您避免此問題。
 
 舉例來說，假設您想要使用批量管理工具一次變更許多區段，或是用於此類型 [的帳戶](../../reference/bulk-management-tools/bulk-management-intro.md)。 為此，您的使用者帳戶需要存 [!DNL API] 取權。 請建立非特定的使用者帳戶，該帳戶具有適當的認證、金鑰 [!DNL API] 和密碼，以進行呼叫，而不是新增權限給特定 [!DNL API] 使用者。 如果您開發使用Audience Manager的自己應用程式，這也會很有 [!DNL API]用。
 
@@ -82,13 +88,13 @@ Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和�
 >
 >如果將存取和重新整理Token儲存在資料庫中，請加密這些Token。
 
-#### 步驟1:請求API存取
+#### 步驟1: 請求API存取
 
 請洽詢您的合作夥伴解決方案經理。 他們會提供您用戶端 [!DNL API] ID和機密。 ID和機密會向驗證您身分 [!DNL API]。
 
-注意：如果您想要接收重新整理Token，請在您要求存取時指 [!DNL API] 定。
+注意： 如果您想要接收重新整理Token，請在您要求存取時指 [!DNL API] 定。
 
-#### 步驟2:請求代號
+#### 步驟2: 請求代號
 
 將Token請求傳入您偏好的用戶 [!DNL JSON] 端。 建立請求時：
 
@@ -98,7 +104,7 @@ Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和�
 * 按如下方式設定請求正文：
    <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
-#### 步驟3:接收Token
+#### 步驟3: 接收Token
 
 回應 [!DNL JSON] 包含您的存取Token。 回應應如下所示：
 
@@ -126,7 +132,7 @@ Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和�
 
 下列步驟概述使用重新整理Token從瀏覽器用戶端建立新存取Token [!DNL JSON] 的工作流程。
 
-#### 步驟1:請求新Token
+#### 步驟1: 請求新Token
 
 將重新整理Token請求傳入您偏好的用 [!DNL JSON] 戶端。 建立請求時：
 
@@ -135,7 +141,7 @@ Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和�
 * 傳入HTTP標題 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的標題可能如下所示： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
 * 在請求內文中，指定 `grant_type:refresh_token` 並傳入您先前存取請求中收到的重新整理Token。 請求應如下所示： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
-#### 步驟2:接收新Token
+#### 步驟2: 接收新Token
 
 回 [!DNL JSON] 應包含您的新存取Token。 回應應如下所示：
 
@@ -179,9 +185,9 @@ Audience Manager支援授 [!UICONTROL REST API] 權碼和隱式驗證。 若要�
 | pageSize | 設定請求傳回的回應結果數目（預設為10）。 |
 | sortBy | 根據指定的屬性排序並返回 [!DNL JSON] 結果。 |
 | 降序 | 以遞減順序排序和傳回結果。 預設為遞增。 |
-| 搜尋 | 根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示：  `GET https://aam.adobe.io/v1/models/?search=Test`。  您可以搜尋「get all」方法傳回的任何值。 |
+| 搜尋 | 根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜尋「get all」方法傳回的任何值。 |
 | folderId | 傳回指定資料夾內特徵的所有ID。 並非所有方法都適用。 |
-| 權限 | 根據指定的權限傳回區段清單。  READ為預設值。 權限包括：<ul><li>`READ` :傳回並檢視區段的相關資訊。</li><li>`WRITE` :使用 `PUT` 來更新區段。</li><li>`CREATE` :用 `POST` 來建立區段。</li><li>`DELETE` : 刪除區段. 需要存取基本特徵（如果有）。 例如，若您要移除屬於某個群體的特徵，您需要有權利加以刪除。</li></ul><br>使用個別的索引鍵值配對指定多個權限。 例如，若要傳回僅具有和權限的 `READ` 區 `WRITE` 段清單，請傳入 `"permissions":"READ"`、 `"permissions":"WRITE"` 。 |
+| 權限 | 根據指定的權限傳回區段清單。  READ為預設值。 權限包括：<ul><li>`READ` : 傳回並檢視區段的相關資訊。</li><li>`WRITE` : 使用 `PUT` 來更新區段。</li><li>`CREATE` : 用 `POST` 來建立區段。</li><li>`DELETE` : 刪除區段. 需要存取基本特徵（如果有）。 例如，若您要移除屬於某個群體的特徵，您需要有權利加以刪除。</li></ul><br>使用個別的索引鍵值配對指定多個權限。 例如，若要傳回僅具有和權限的 `READ` 區 `WRITE` 段清單，請傳入 `"permissions":"READ"`、 `"permissions":"WRITE"` 。 |
 | includePermissions | （布林值）設為true可傳回區段的權限。 設值為 false。 |
 
 ### 關於頁面選項的附註
@@ -213,7 +219,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | 衍生信號 | `https://aam.adobe.io/v1/signals/derived/` |
 | 目的地 | `https://aam.adobe.io/v1/destinations/` |
 | 網域 | `https://aam.adobe.io/v1/partner-sites/` |
-| 資料夾 | 特徵： 區 `https://aam.adobe.io/v1/folders/traits /`<br>段：  `https://aam.adobe.io/v1/folders/segments /` |
+| 資料夾 | 特徵：  `https://aam.adobe.io/v1/folders/traits /`<br>區段：  `https://aam.adobe.io/v1/folders/segments /` |
 | 架構 | `https://aam.adobe.io/v1/schemas/` |
 | 區段 | `https://aam.adobe.io/v1/segments/` |
 | 特徵 | `https://aam.adobe.io/v1/traits/` |
@@ -229,7 +235,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | 衍生信號 | `https://api.demdex.com/v1/signals/derived/` |
 | 目的地 | `https://api.demdex.com/v1/destinations/` |
 | 網域 | `https://api.demdex.com/v1/partner-sites/` |
-| 資料夾 | 特徵： 區 `https://api.demdex.com/v1/folders/traits /`<br>段：  `https://api.demdex.com/v1/folders/segments /` |
+| 資料夾 | 特徵：  `https://api.demdex.com/v1/folders/traits /`<br>區段：  `https://api.demdex.com/v1/folders/segments /` |
 | 架構 | `https://api.demdex.com/v1/schemas/` |
 | 區段 | `https://api.demdex.com/v1/segments/` |
 | 特徵 | `https://api.demdex.com/v1/traits/` |
