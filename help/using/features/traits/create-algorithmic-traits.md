@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 建立演算法特徵
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 0%
 
 ---
 
@@ -25,8 +28,8 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 1. 展開窗 [!UICONTROL Configuration] 格，然後按一下 **[!UICONTROL Browse All Models]**。
 這會開啟新視窗，讓您選取要與特徵搭配使用的模型。
 1. 選取模型，然後按一下 **[!UICONTROL Add Selected Model to Trait]**。
-新增模型可顯示觸及度和精確度設定。
-1. 選擇達到或準確度作為目標，並從各自的下拉式選單中選擇一個值。 Click **[!UICONTROL Save]** when done.
+新增模型可顯示觸及面和精確度設定。
+1. 選擇達到或準確度作為目標，並從各自的下拉式選單中選擇一個值。 完成時 **[!UICONTROL Save]** 按一下。
 
 ## 演算法特徵的組態設定 {#configure-settings}
 
@@ -36,7 +39,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 <!-- r_algo_trait_config_section.xml -->
 
-* [建立演算法模型](../../features/algorithmic-models/create-model.md#build-model)。
+* [建立類似的模型](../../features/algorithmic-models/create-model.md)。
 * 等待通知電子郵件，讓您知道模型資料執行已完成。
 * 填寫「基本資訊」區段 [中的必填欄](../../features/traits/create-onboarded-rule-based-traits.md) 。
 
