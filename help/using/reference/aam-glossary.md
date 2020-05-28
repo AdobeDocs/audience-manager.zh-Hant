@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 字彙表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+workflow-type: tm+mt
+source-wordcount: '1186'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 將 [!UICONTROL Algorithmic Modeling] 觸角延伸到您所識別之使用者的核心以外。 此功能可協助您透過自動化資料分析，發掘新的獨特受眾。 管理您的 [!UICONTROL Algorithmic Models] 內 **[!UICONTROL Audience Data > Models]**&#x200B;容。
 
-請參閱 [瞭解演算模型](../features/algorithmic-models/understanding-models.md#understanding-models)。
+請參閱 [瞭解演算模型](../features/algorithmic-models/algo-models-overview.md)。
 
 <br> 
 
