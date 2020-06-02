@@ -6,9 +6,9 @@ solution: Audience Manager
 title: REST API快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 680c4491176755915d2d45ee64f5d88410cb7072
+source-git-commit: b78dc6df380d43b809ae169f23eea208cd951a4b
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1890'
 ht-degree: 3%
 
 ---
@@ -51,12 +51,22 @@ Audience Manager REST API支援兩種驗證方法。
 
 ## JWT（服務帳戶）驗證 {#jwt}
 
-若要建立安全的服務對服務Adobe I/O API作業，您必須建立JSON網頁Token(JWT)，以封裝整合的身分，然後交換它以取用Token。 每次向Adobe服務提出要求時，都必須在「授權」標題中包含存取Token，以及您在 [Adobe I/O主控台中建立「服務帳戶整合」時產生的API金鑰（用戶端ID）](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)[](https://console.adobe.io/)。
+### 必備條件 {#prerequisites}
+
+在設定JWT驗證之前，請確定您擁有 [Adobe Developer Console的存取權](https://console.adobe.io/)。 請洽詢您的組織管理員以取得存取要求。
+
+### 驗證
 
 按照以下步驟配置JWT（服務帳戶）驗證：
 
-1. 前往「 [服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 」，然後依照所有步驟來設定您的服務帳戶連線並產生您的JWT Token。
-2. 前往 [JWT（服務帳戶）驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) ，並依照步驟交換您的JWT Token（在步驟1建立）以取得存取Token。
+1. 登入 [Adobe Developer Console](https://console.adobe.io/)。
+1. 請遵循「服務帳戶 [連線」中的步驟](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
+   * 在步 [驟2: 使用「服務帳戶」驗證將API新增至專案](https://www.adobe.io/authentication/auth-methods.html#step-2-add-an-api-to-your-project-using-service-account-authentication)，請選擇「Audience Manager API」選項。
+1. 根據步驟3的指示進行您的第一個API呼叫，以嘗試 [連線](https://www.adobe.io/authentication/auth-methods.html#step-3-try-it.)。
+
+>[!NOTE]
+>
+>若要以自動方式設定及使用Audience Manager REST API，您可以以程式設計方式產生JWT。 有關詳 [細說明，請參見JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) （服務帳戶）驗證。
 
 ## OAuth驗證（已過時） {#oauth}
 
@@ -65,7 +75,7 @@ Audience Manager REST API支援兩種驗證方法。
 >
 > 請改用 [JWT（服務帳戶）驗證](#jwt-service-account-authentication-jwt) 。
 
-Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和續約的標準。 以下各節將說明如何驗證並開始使用 [!DNL API]。
+Audience Manager遵循 [!UICONTROL REST API] 代號 [!DNL OAuth 2.0] 驗證和續約的標準。 以下各節將說明如何驗證並開始使用 [!DNL API]。
 
 ### 建立一般API使用者 {#requirements}
 
