@@ -7,9 +7,9 @@ solution: Audience Manager
 title: 描述檔合併規則與裝置圖表常見問答集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 translation-type: tm+mt
-source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+source-git-commit: 6876ca5ee0bc5f50c2aa1acd5c683b151a07fd59
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1548'
 ht-degree: 2%
 
 ---
@@ -259,7 +259,7 @@ ht-degree: 2%
 
 否。
 
-**我的區段匯出至Adobe Campaign的方式為何在2020年3月16日之後顯示為0?**
+**為何2020年3月16日之後，區段匯出至Adobe Campaign的區段人口為零？**
 
 在2019年底，我們推出了一系列的描述檔合併規則增強功能，以改善使用跨裝置ID產生的批次檔案的精確度。 從2020年3月16日星期一開始，您的Audience Manager例項將嚴格執行這些增強功能。 因此，使用跨裝置ID映射至目的地的區段，會停止在某些「描述檔合併規則」設定中產生匯出。
 
