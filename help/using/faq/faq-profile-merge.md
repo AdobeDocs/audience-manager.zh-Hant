@@ -1,13 +1,16 @@
 ---
 description: 常見描述檔合併規則與裝置圖形問題的解答。
-keywords: 組織 ID
+keywords: Organization ID
 seo-description: 常見描述檔合併規則與裝置圖形問題的解答。
 seo-title: 描述檔合併規則與裝置圖表常見問答集
 solution: Audience Manager
 title: 描述檔合併規則與裝置圖表常見問答集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +37,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 **在中使用外部裝置圖表時，有哪些常見使用案例[!UICONTROL Profile Merge Rule]?**
 
-在裝置中使用裝置圖表的主要目 [!UICONTROL Profile Merge Rule] 的是評估並限定屬於單一個人或家庭的多個裝置的特定區段。 例如，此細分本身可能有多種用途，例如以DSP所提供的廣告鎖定潛在客戶，或透過臨場感個人化平台個人化客戶的臨場感。 See [External Device Graph Use Cases](../features/profile-merge-rules/external-graph-use-cases.md).
+在裝置圖表中使用主要目的 [!UICONTROL Profile Merge Rule] 是評估並限定屬於單一個人或家庭的多個裝置的特定區段。 例如，此細分本身可能有多種用途，例如以DSP所提供的廣告鎖定潛在客戶，或透過臨場感個人化平台個人化客戶的臨場感。 See [External Device Graph Use Cases](../features/profile-merge-rules/external-graph-use-cases.md).
 
  
 
-**Audience manager是否提供外部裝置圖形的全域支援？**
+**Audience Manager是否提供外部裝置圖形的全域支援？**
 
 不會。外部裝置圖表僅適用於美國和加拿大。
 
@@ -70,7 +73,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 **在中使用裝置圖[!DNL Audience Manager]形時，合併和讀取多少裝置描述檔[!UICONTROL Profile Merge Rule]?**
 
-當使用區段來限定裝置時 [!UICONTROL Profile Merge Rule],Audience manager會合併並讀取目前的裝置設定檔，以及最多99個由您選取的裝置圖表選項連結的其他裝置設定檔。
+當使用區段來限定裝置時 [!UICONTROL Profile Merge Rule],Audience Manager會合併並讀取目前的裝置設定檔，以及最多99個由您選取的裝置圖表選項連結的其他裝置設定檔。
 
  
 
@@ -90,7 +93,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 **當裝[!DNL Audience Manager]置不再符合使用裝置圖表之區段的資格時，如何[!UICONTROL Profile Merge Rule]取消區段？**
 
-當使用裝置圖表來評估區段時，Audience manager會合併多達100 [!UICONTROL Profile Merge Rule] 個裝置。 如果發出未分段信號，則當前設備和最多99個附加設備將從目的地的分段中刪除。 如需取消分段的詳細資訊，請參 [閱描述檔合併規則和裝置取消分段程式](../features/profile-merge-rules/merge-rule-unsegment.md)。
+當使用裝置圖表來評估區段時，Audience Manager會合併多達100 [!UICONTROL Profile Merge Rule] 個裝置。 如果發出未分段信號，則當前設備和最多99個附加設備將從目的地的分段中刪除。 如需取消分段的詳細資訊，請參 [閱描述檔合併規則和裝置取消分段程式](../features/profile-merge-rules/merge-rule-unsegment.md)。
 
  
 
@@ -120,7 +123,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 **如果區段使用[!UICONTROL Profile Merge Rule]帶[!UICONTROL No Cross-Device Profile]有且符合區段之裝置的特性僅儲存在跨裝置描述檔中，區段的總人口會是0嗎？**
 
-是。當「描述檔合併規則」設為時，Audience manager不會在區段評估中計算跨裝置描述檔上儲存的特徵 [!UICONTROL No Cross-Device Profile]。
+是。當「描述檔合併規則」設為時，Audience Manager不會在區段評估中計算跨裝置描述檔上儲存的特徵 [!UICONTROL No Cross-Device Profile]。
 
  
 
@@ -149,7 +152,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>動作</b> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> 讀取並合併裝置A和裝置B的裝置設定檔。從這裡，我們看到： </p> <p> 
+   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> 讀取並合併裝置A和裝置B的裝置設定檔。 從這裡，我們看到： </p> <p> 
      <ul id="ul_7AB307154C034695B4486E68D55CB084"> 
       <li id="li_5760BEE513C94152AA307AEE10894718">裝置A已有3次符合特徵1。 特徵1的頻率為3。 </li> 
       <li id="li_E20BC24CCCEC407C820A8032D56BC3F0">裝置B已5次符合特徵1。 特徵1的頻率為5。 </li> 
@@ -188,17 +191,17 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
    <td colname="col2"> <p>假設我們有： </p> <p> 
      <ul id="ul_B8B627FBF6A04C0CAE6C8543EA3EA56D"> 
-      <li id="li_2557CE3F109C42DC8CB5E99B93E96265">區段1建立在這些特性與資格邏輯之上：區段1 =特徵A、特徵B和特徵C。 </li> 
-      <li id="li_F7D559B3C0CA424DA2C1A0703C1E1717">3個裝置設定檔：裝置1（目前的裝置）、裝置2（裝置圖表）、裝置3（裝置圖表）。 </li> 
+      <li id="li_2557CE3F109C42DC8CB5E99B93E96265">區段1建立在這些特性與資格邏輯之上： 區段1 =特徵A、特徵B和特徵C。 </li> 
+      <li id="li_F7D559B3C0CA424DA2C1A0703C1E1717">3個裝置設定檔： 裝置1（目前的裝置）、裝置2（裝置圖表）、裝置3（裝置圖表）。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>動作</b> </p> </td> 
    <td colname="col2"> <p>每個可用特徵都與裝置相關聯： </p> <p> 
      <ul id="ul_E60A5CBBEC484BB78F2A4AB0D6306019"> 
-      <li id="li_26D7300BA0164426949FA43A60AC7023">裝置1:特徵A </li> 
-      <li id="li_B0C3D7ACC7754ED985974317362AFF85">裝置2:特徵B </li> 
-      <li id="li_32C32DD0E87F461AA2C7FB77FB35C6DA">裝置3:特徵C </li> 
+      <li id="li_26D7300BA0164426949FA43A60AC7023">裝置1: 特徵A </li> 
+      <li id="li_B0C3D7ACC7754ED985974317362AFF85">裝置2: 特徵B </li> 
+      <li id="li_32C32DD0E87F461AA2C7FB77FB35C6DA">裝置3: 特徵C </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -214,7 +217,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
  
 
-**我是否可以看到使用裝置圖表的特定區段符[!UICONTROL Profile Merge Rule]合的裝置總數？**
+**我是否可看到符合使用裝置圖表之特定區段[!UICONTROL Profile Merge Rule]的裝置總數？**
 
 是。總區段人口量度包括已根據裝置圖表的連線符合區段資格的其他裝置。
 
@@ -230,17 +233,17 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
    <td colname="col2"> <p>假設我們有： </p> <p> 
      <ul id="ul_DC0AC0F79323451C8C2480E4A85AE2EB"> 
-      <li id="li_790F24FA1F0747F385640EDB1AE9E59E">區段1建立在這些特性與資格邏輯之上：區段1 =特徵A、特徵B和特徵C。 </li> 
-      <li id="li_6628727DDD0644BF8F5B6A8A9FA71E67">3個裝置設定檔：裝置1（目前的裝置）、裝置2（裝置圖表）、裝置3（裝置圖表）。 </li> 
+      <li id="li_790F24FA1F0747F385640EDB1AE9E59E">區段1建立在這些特性與資格邏輯之上： 區段1 =特徵A、特徵B和特徵C。 </li> 
+      <li id="li_6628727DDD0644BF8F5B6A8A9FA71E67">3個裝置設定檔： 裝置1（目前的裝置）、裝置2（裝置圖表）、裝置3（裝置圖表）。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>關聯</b> </p> </td> 
    <td colname="col2"> <p>每個可用特徵都與裝置相關聯： </p> <p> 
      <ul id="ul_FE16B1639D2541009110E77A605D2CE0"> 
-      <li id="li_25959C3822384CFAB8B18D3CD80A30DD">裝置1:特徵A </li> 
-      <li id="li_CDAC38F4CF3A4BEDA49A92BAEC48583E">裝置2:特徵B </li> 
-      <li id="li_6063A91C482E48FD9FC5C00600B05E31">裝置3:特徵C </li> 
+      <li id="li_25959C3822384CFAB8B18D3CD80A30DD">裝置1: 特徵A </li> 
+      <li id="li_CDAC38F4CF3A4BEDA49A92BAEC48583E">裝置2: 特徵B </li> 
+      <li id="li_6063A91C482E48FD9FC5C00600B05E31">裝置3: 特徵C </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -255,6 +258,19 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 **報表、報表和報表中是否包含[!UICONTROL Profile Merge Rule]使用裝置圖表的裝置符合區[!UICONTROL Interactive]段[!UICONTROL Overlap]的資[!UICONTROL Audience Optimization]格？**
 
 否。
+
+**我的區段匯出至Adobe Campaign的方式為何在2020年3月16日之後顯示為0?**
+
+在2019年底，我們推出了一系列的描述檔合併規則增強功能，以改善使用跨裝置ID產生的批次檔案的精確度。 從2020年3月16日星期一開始，您的Audience Manager例項將嚴格執行這些增強功能。 因此，使用跨裝置ID映射至目的地的區段，會停止在某些「描述檔合併規則」設定中產生匯出。
+
+若要使用跨裝置ID（例如Adobe Campaign）確保Audience Manager實例與目標之間的正確整合，請確定您符合下列需求：
+
+1. 檢閱對應至Adobe Campaign Declared ID目的地的區段所使用的描述檔合併規則。 「描述檔合併規則」必須使 [!UICONTROL Last Authenticated Profile] 用選項，因此所有已驗證的描述檔都可以包含在匯出中。 如果您的描述檔合併規則使用不同的選項，請將其切換為 [!UICONTROL Last Authenticated Profile]。
+2. 在「描述檔合併規則」設定中，選取「Adobe Campaign Declared ID」資料來源。
+
+>[!NOTE]
+>
+> 我們已針對面臨此情況的客戶，將「描述檔合併規則」限制提高1，以便您可以為對應至Adobe Campaign Declared ID目的地的區段建立專用的「描述檔合併規則」，而不會變更其他使用案例的「描述檔合併規則」。
 
 >[!MORELIKETHIS]
 >
