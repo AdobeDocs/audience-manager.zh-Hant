@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 描述檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 1%
 
 ---
 
@@ -98,6 +101,19 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
    * **[!UICONTROL Profile Link Device Graph]**
    * **[!UICONTROL Device Co-op]**
 4. 按一下 **[!UICONTROL Save]**.
+
+### 使用跨裝置ID作為使用者ID金鑰的Adobe促銷活動目標注意事項 {#considerations}
+
+在2019年底，我們推出了一系列的描述檔合併規則增強功能，以改善使用跨裝置ID產生的批次檔案的精確度。 從2020年3月16日星期一開始，您的Audience Manager例項將嚴格執行這些增強功能。 因此，使用跨裝置ID映射至目的地的區段，會停止在某些「描述檔合併規則」設定中產生匯出。
+
+若要使用跨裝置ID（例如Adobe Campaign）確保Audience Manager實例與目標之間的正確整合，請確定您符合下列需求：
+
+1. 檢閱對應至Adobe Campaign Declared ID目的地的區段所使用的描述檔合併規則。 「描述檔合併規則」必須使 [!UICONTROL Last Authenticated Profile] 用選項，因此所有已驗證的描述檔都可以包含在匯出中。 如果您的描述檔合併規則使用不同的選項，請將其切換為 [!UICONTROL Last Authenticated Profile]。
+2. 在「描述檔合併規則」設定中，選取「Adobe Campaign Declared ID」資料來源。
+
+>[!NOTE]
+>
+> 我們已針對面臨此情況的客戶，將「描述檔合併規則」限制提高1，以便您可以為對應至Adobe Campaign Declared ID目的地的區段建立專用的「描述檔合併規則」，而不會變更其他使用案例的「描述檔合併規則」。
 
 ## 設定合併規則代碼 {#configure-merge-rule-code}
 
