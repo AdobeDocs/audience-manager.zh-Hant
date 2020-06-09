@@ -1,12 +1,15 @@
 ---
 description: Audience Manager 提供領先業界的線上讀者資料管理服務。我們的產品和服務提供數位廣告商和出版商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
-seo-description: Audience Manager(AAM)的技術檔案與自助服務。 AAM為線上受眾資料管理提供業界領先的服務，並為數位廣告商和發佈商提供所需的工具，以控制並運用其資料資產，協助推動銷售成功。
+seo-description: Audience Manager(AAM)的技術檔案與自助服務。 AAM為線上受眾資料管理提供業界領先的服務，並為數位廣告商和發佈商提供所需的工具，以控制和運用其資料資產，協助推動銷售成功。
 seo-title: Adobe Audience Manager產品技術檔案
 solution: Audience Manager
 title: Audience Manager產品檔案
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 translation-type: tm+mt
-source-git-commit: d8c18b80aa2e22444a509af65bc81567d0902e51
+source-git-commit: 54d108d3ab2a5476e919d706be74821d6ef8c2bd
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 15%
 
 ---
 
@@ -152,11 +155,11 @@ source-git-commit: d8c18b80aa2e22444a509af65bc81567d0902e51
  <tbody> 
   <tr> 
    <td> <p> <b>發行說明</b> </p> <p> 
-     請參閱最新的 <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 發行說明</a>，瞭解全新功能和修正內容。</p> 
+     請參閱最新的 <a href="https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 發行說明</a>，了解全新功能和修正內容。</p> 
      <br> 
      <p> <b>最新功能</b> </p> <p> 
      閱讀有關最新Audience Manager功能的資訊：</p>
-     <p><ul><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測性觀眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報告</a></li>
+     <p><ul><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager外掛程式</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測性觀眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報告</a></li>
      <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">加州消費者隱私權法案(CCPA)支援與隱私權檔案大修</a></li>
      <li><a href="/help/using/features/segments/trait-recommendations.md">Adobe Sensei支援的Audience Marketplace資料智慧建議</a></li>
      <li><a href="/help/using/features/profile-merge-rules/merge-rules-overview.md">描述檔合併規則增強功能</a></li></ul><p>
@@ -200,12 +203,12 @@ Read about the latest Audience Manager features:
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"><a href="https://forums.adobe.com/community/experience-cloud/analytics-cloud/audience-manager" format="https" scope="external"> Audience Manager社群論壇</a> </li>
       <li><a href="https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html" format="http" scope="external"> Audience Manager教學課程</a> </li> 
       <li id="li_1737D63307024F26B1F967621613A5AC"><a href="https://www.adobe.com/privacy.html" format="http" scope="external"> Adobe 隱私中心</a> </li>  
-      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe訓練與認證</a> </li> 
+      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="https://helpx.adobe.com/tw/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe訓練與認證</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/support/experience-cloud.html" scope="external" format="https">Experience Cloud產品檔案首頁</a> </li> 
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/support/audience-manager.html" format="https" scope="external"> Audience Manager 學習與支援</a> </li> 
      </ul> </p> 
      <br> 
-     <p>另請參閱 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/documentation-updates/docs-2020.html"> 2020年檔案更新</a>。 </p> </td>
+     <p>另請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/documentation-updates/docs-2020.html"> 2020年檔案更新</a>。 </p> </td>
   </tr> 
  </tbody> 
 </table>
