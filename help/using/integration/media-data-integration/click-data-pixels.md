@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+workflow-type: tm+mt
+source-wordcount: '661'
+ht-degree: 7%
 
 ---
 
@@ -127,13 +130,13 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   </tr> 
    <tr> 
    <td colname="col1"> <p> <code>gdpr</code> </p> </td> 
-   <td colname="col02"> <p> <code>%gdpr_applies%</code> </p> </td> 
+   <td colname="col02"> <p> <code>${gdpr}</code> </p> </td> 
    <td colname="col2"> <p><a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a> </p><p><code>gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。</p> <p>預設值為 0。</p><p>選填。</p></td> 
   </tr> 
    <tr> 
    <td colname="col1"> <p> <code>gdpr_consent</code> </p> </td> 
-   <td colname="col02"> <p> <code>%gdpr_consent%</code> </p> </td> 
-   <td colname="col2"> <p><a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 「若 <code>gdpr=1</code>，則 <code>%gdpr_consent%</code>」取代為「<code>gdpr_consent</code>」字串 (請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external">IAB 規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p></td> 
+   <td colname="col02"> <p> <code>${gdpr_consent_XXXX}</code> </p> </td> 
+   <td colname="col2"> <p><a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 如 <code>gdpr=1</code>果，則 <code>${gdpr_consent_XXXX}</code> 由字串和廠商ID <code>gdpr_consent</code> 取代(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#about-the-transparency--consent-string-tc-string" format="http" scope="external"> IAB規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p></td> 
   </tr> 
  </tbody> 
 </table>
