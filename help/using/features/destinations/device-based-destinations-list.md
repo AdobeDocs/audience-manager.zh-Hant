@@ -1,28 +1,31 @@
 ---
-description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
-seo-description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
+description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe Exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
+seo-description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe Exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
 seo-title: Adobe Audience Manager伺服器對伺服器目標
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager伺服器對伺服器目標
 translation-type: tm+mt
-source-git-commit: 7a2a42ed3b591e1466adf93f3fd31ce6555775a2
+source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+workflow-type: tm+mt
+source-wordcount: '1389'
+ht-degree: 58%
 
 ---
 
 
-# Audience manager裝置型目標
+# Audience Manager裝置型目標
 
-本頁僅包含目前以Audience manager [裝置為基礎的目的地](/help/using/features/destinations/add-device-based-destinations.md) 。 在Audience manager中，裝置型目標也稱為伺服器對伺服器目標。 如需整合的詳細資訊，請參閱 [Adobe Exchange清單](https://www.adobeexchange.com/experiencecloud.html) （如有），或聯絡您的Adobe顧問或客戶服務。
+本頁僅包含目前以Audience Manager [裝置為基礎的目的地](/help/using/features/destinations/add-device-based-destinations.md) 。 在Audience Manager中，裝置型目標也稱為伺服器對伺服器目標。 如需整合的詳細資訊，請參閱 [Adobe Exchange清單](https://www.adobeexchange.com/experiencecloud.html) （如有），或聯絡您的Adobe顧問或客戶服務。
 
 <br> 
 
 * **上次更新** =顯示此裝置型目的地的上次更新日期。
-* **更新** =指出Audience manager是以即時或批次(1xday)傳送資料至此目標。
-* **取消區段** =取消區段會說明取消區段中裝置設定檔的資格和移除程式。 從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求的上下文中也會使用取消分段。 閱讀「 [描述檔合併規則與裝置取消區段程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) 」，以 [及具有取消區段功能的Audience manager合作夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 Audience manager會將取消區段資訊傳送至標有下方「是」 **的目** 標。
-* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TCF同意字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **更新** =指出Audience Manager是以即時或批次(1xday)傳送資料至此目標。
+* **取消區段** =取消區段會說明取消區段中裝置設定檔的資格和移除程式。 從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求的上下文中也會使用取消分段。 閱讀「 [描述檔合併規則與裝置取消區段程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) 」，以 [及具有取消區段功能的Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消區段資訊傳送至標有下方「是」 **的目** 標。
+* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
 * **ICDS** =此欄列出了支援立即跨設備抑制的合作夥伴。 閱讀「 [立即跨裝置抑制」的相關資訊](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
-* **行動裝置ID** =此欄列出可從Audience manager接收行動裝置ID的合作夥伴。
+* **行動裝置ID** =此欄列出可從Audience Manager接收行動裝置ID的合作夥伴。
 
 <br> 
 
@@ -37,13 +40,13 @@ source-git-commit: 7a2a42ed3b591e1466adf93f3fd31ce6555775a2
 | AdForm | 22/02/2017 | 即時 | 有 | 否 | 是 | 是 |
 | AdGear | 22/02/2017 | 即時 | 有 | 否 | 有 | 否 |
 | 阿迪克捷耶夫 | 26/01/2018 | 1xday | 有 | 否 | 否 | 是 |
-| Adroll / nextRoll | 10/12/2019 | 1xday | 否 | 否 | 否 | 否 |
+| Adroll / NextRoll | 10/12/2019 | 1xday | 否 | 否 | 否 | 否 |
 | Adswizz | 09/10/2017 | 1xday | 有 | 否 | 否 | 是 |
 | Adteorent | 22/02/2017 | 1xday | 有 | 否 | 否 | 是 |
 | 阿菲尼奧 | 03/04/2018 | 1xday | 有 | 否 | 否 | 是 |
 | Aki | 21/06/2018 | 1xday | 否 | 否 | 否 | 是 |
 | Amazon Advertising | 15/06/2017 | 1xday | 有 | 否 | 否 | 否 |
-| AOL adLearn | 02/03/2017 | 即時 | 否 | 否 | 否 | 是 |
+| AOL AdLearn | 02/03/2017 | 即時 | 否 | 否 | 否 | 是 |
 | AOL ONE | 02/03/2017 | 即時 | 有 | 否 | 否 | 是 |
 | AppNexus | 02/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | AppNexus Yieldex | 10/08/2017 | 1xday | 有 | 否 | 否 | 否 |
@@ -62,7 +65,7 @@ source-git-commit: 7a2a42ed3b591e1466adf93f3fd31ce6555775a2
 | Collective AMP Platform | 27/02/2017 | 1xday | 否 | 否 | 否 | 否 |
 | 克里泰奧 | 27/02/2017 | 即時 | 否 | 有 | 否 | 是 |
 | 克羅斯威斯 | 27/02/2017 | 1xday | 有 | 否 | 否 | 否 |
-| D.A.C.AudienceOne | 27/02/2017 | 1xday | 有 | 否 | 否 | 否 |
+| D.A.C. AudienceOne | 27/02/2017 | 1xday | 有 | 否 | 否 | 否 |
 | DataXu | 11/20/2017 | 即時 | 否 | 否 | 否 | 是 |
 | Digilant | 02/03/2017 | 即時 |  | 否 | 否 | 否 |
 | DistrictM | 02/03/2017 | 1xday | 有 | 否 | 否 | 否 |
@@ -80,10 +83,10 @@ source-git-commit: 7a2a42ed3b591e1466adf93f3fd31ce6555775a2
 | FreakOut | 03/03/2017 | 1xday | 有 | 否 | 否 | 否 |
 | 自由輪 | 27/02/2017 | 1xday | 是 | 是 | 否 | 是 |
 | 色域媒體 | 03/03/2017 | 即時 |  | 否 | 否 |  |
-| Google adsWords顯示 | 02/08/2018 | 即時 | 是 | 是 | 否 | 是 |
-| Google doubleClick競標管理器(DBM) | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
-| Google doubleClick促銷活動管理員(DCM fka DFA) | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
-| Google doubleClick for Publishers(DFP、DFPP) | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
+| Google AdsWords顯示 | 02/08/2018 | 即時 | 是 | 是 | 否 | 是 |
+| Google DoubleClick競標管理器(DBM) | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
+| Google DoubleClick促銷活動管理員(DCM fka DFA) | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
+| Google DoubleClick for Publishers(DFP、DFPP) | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
 | GumGum | 02/06/2017 | 1xday | 有 | 否 | 否 | 否 |
 | Index Exchange（之前稱為Casale Media） | 03/03/2017 | 1xday | 有 | 否 | 否 | 否 |
 | 傳染性媒體 | 03/03/2017 | 即時 | 有 | 否 | 有 | 否 |
