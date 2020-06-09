@@ -6,7 +6,10 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 07fb9269f285a8662a9ce5e03d8be8b8d51df553
+workflow-type: tm+mt
+source-wordcount: '1533'
+ht-degree: 4%
 
 ---
 
@@ -247,6 +250,23 @@ In the tables below, *italics* represents a variable placeholder.
    <td colname="col3"> <p>當請 <span class="wintitle">求包含無效的全域裝置ID時</span> ,DCS會傳回此錯誤碼。 DCS會忽略無效ID，並引發312錯誤以及無效ID的特定錯誤。 如需正確 <a href="../../../features/global-data-sources.md" format="dita" scope="local">裝置廣告ID格式及</a> 對應全域資料來源的詳細資訊，請參閱Audience Manager <a href="../../../reference/ids-in-aam.md" format="dita" scope="local"></a> 中的全域資料來源和ID索引。</p>
    <p>錯誤呼叫的範例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>說明： <span class="keyword">IDFA(DPID 20915)</span> 必須是大寫ID。 請求中提供的ID為小寫。</p>
+   </td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>313 </p> </td> 
+   <td colname="col2"> <p>GCL中不存在CMP ID</p> </td> 
+   <td colname="col3"> <p>當 <code>gdpr=1</code> 且IAB TC字串是由評估時Audience Manager的快取版本全域CMP清單中未顯示的CMP ID產生時，IAB TCF的Audience Manager外掛程式會放棄IAB TC字串並照常處理請求。 IAB TCF v2.0 ${GDPR}巨集設為0，而${GDPR_CONNENCE_XXX}巨集為空。</p>
+   </td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>314 </p> </td> 
+   <td colname="col2"> <p>CMP ID在GCL中標籤為已刪除</p> </td> 
+   <td colname="col3"> <p>當 <code>gdpr=1</code> 且IAB TC字串是由在我們的全域CMP清單快取版本中標示為已刪除的CMP產生時，Audience Manager Plug-in for IAB TCF會捨棄TC字串並照常處理要求，如果評估時間超過從全域CMP清單刪除的時間。 IAB TCF v2.0 ${GDPR}巨集設為0，而${GDPR_CONNENCE_XXX}巨集為空。</p></td>
+  </tr>
+   <tr> 
+   <td colname="col1"> <p>315 </p> </td> 
+   <td colname="col2"> <p>同意字串表示未同意</p> </td> 
+   <td colname="col3"> <p>未提供同意時，IAB TCF的Audience Manager外掛程式會將使用者拒絕進一步的資料收集，或在未偵測到合作夥伴內容時完全放棄呼叫。</p>
    </td>
   </tr>
 
