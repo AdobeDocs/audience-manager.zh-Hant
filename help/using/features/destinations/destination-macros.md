@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 定義的目標宏
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +48,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">資料來源ID: <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">內部客戶ID: <code> CustomerABC</code> </li> 
-     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">宣告的ID:合作夥伴想將這些值傳入為宣告的ID <code> 1:CustomerABC</code>。 </li> 
+     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">宣告的ID: 合作夥伴想將這些值傳入為宣告的ID <code> 1:CustomerABC</code>。 </li> 
     </ul> <p>若要使用， <code>%dpid_<i>data source id</i>%</code>Audience Manager <span class="keyword"></span> 合作夥伴會將巨集格式設為如下： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
@@ -54,9 +57,17 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
        基於AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
      </draft-comment> </p> </td> 
   </tr> 
+  <tr>
+    <td><p><code>${GDPR}</code></p></td>
+    <td><p>指出GDPR規則是否適用於訪客。 使用此巨集，將同意包含在傳送至與IAB整合之URL目的地的區段中。 如需詳 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">細資訊，請參閱IAB TCF的Audience Manager外掛程式</a> 。</p></td>
+  </tr>
+   <tr>
+    <td><code>${GDPR_CONSENT_XXXX}</code></p></td>
+    <td><p>當訪客在您的網站上提供或拒絕同意時收集的同意字串（包括IAB廠商ID）。 使用此巨集將同意字串包含在傳送至與IAB整合之URL目的地的區段中。 以目 <code>XXXX</code> 標合作夥伴ID取代。 如需詳 <a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">細資訊，請參閱IAB TCF的Audience Manager外掛程式</a> 。 </p></td>
+  </tr>
   <tr> 
    <td colname="col1"> <p><code> %http_proto%</code> </p> </td> 
-   <td colname="col2"> <p>偵測父網頁中使用的通訊協定，並將其插入目標URL。 例如: 
+   <td colname="col2"> <p>偵測父網頁中使用的通訊協定，並將其插入目標URL。 例如:
      <br> 
      <ul id="ul_026F56EC46E94D9EB1153557C0F65325"> 
       <li id="li_B41EF140CC274CB68FE7213DD8B908C0">如果網頁是 <b>https</b>://aam_client.com，則此巨集將被 <b>https</b>://url-destination.com取代 </li> 
@@ -84,9 +95,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 使用目標宏進行快取破壞 {#destination-cache-busting}
 
-這些 `%rnd%` 和 `%timestamp%` 巨集會將唯一值插入字串，以 [!DNL URL] 防止瀏覽器快取。
+這些 `%rnd%` 和 `%timestamp%` 巨集會將唯一值插入字串， [!DNL URL] 以防止瀏覽器快取。
 
-## Cache Busting `%rnd%` with and `%timestamp%`{#dest-cache-busting}
+## Cache Busting with `%rnd%` and `%timestamp%` {#dest-cache-busting}
 
 <!-- c_dest_cache_busting.xml -->
 
@@ -94,10 +105,10 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 快取破壞功能可防止瀏覽器儲存和重複使用內容。 此技巧使用將隨機數字或時間戳記插入URL字串的程式碼，讓它看起來對瀏覽器是獨一無二的。 因此，每個呼 `HTTP` 叫都會計為對伺服器的個別請求。 強制對每個請求進行新伺服器呼叫，有助於維持報告的正確性並減少不一致。 [!DNL Audience Manager] 提供兩個快取拆分宏：
 
-* `%rnd%`:在URL中插入隨機數。
-* `%timestamp%`:將Unix日期／時間插入URL。
+* `%rnd%`: 在URL中插入隨機數。
+* `%timestamp%`: 將Unix日期／時間插入URL。
 
-## 比較 `%rnd%` 與比 `%timestamp%` 較 {#compare-rnd-timestamp}
+## 比較 `%rnd%` 和 `%timestamp%` {#compare-rnd-timestamp}
 
 這兩個巨集都會阻止快取， `%rnd%` 但效率可能更高。 例如，若有數 `%timestamp%`位使用者同時檢視頁面，則會獲得相同的日期／時間值。 因此，此呼叫並 [!DNL URL] 非唯一，且多個呼叫只會被計算一次。 不過， `%rnd%` 會為每個呼叫產生唯一的數值（即使使用者同時看到相同的頁面）。 這表示字 [!DNL URL] 串包含不同的值，並計為唯一。
 
