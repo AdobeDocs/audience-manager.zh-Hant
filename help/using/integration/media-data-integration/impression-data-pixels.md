@@ -1,19 +1,22 @@
 ---
-description: 一種傳送媒體資料至Audience manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
-seo-description: 一種傳送媒體資料至Audience manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
+description: 一種傳送媒體資料至Audience Manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
+seo-description: 一種傳送媒體資料至Audience Manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
 seo-title: 透過像素呼叫擷取促銷活動的曝光資料
 solution: Audience Manager
 title: 透過像素呼叫擷取促銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 132e36175a69a270ea608643049931fbc06efc69
+source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 20%
 
 ---
 
 
 # 透過像素呼叫擷取促銷活動的曝光資料{#capturing-campaign-impression-data-via-pixel-calls}
 
-一種傳送媒體資料至Audience manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
+一種傳送媒體資料至Audience Manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
 
 這種方法通常稱為「對創意素材進行像素化」。 這些資料點會由協力廠商廣告伺服器巨集動態插入像素程式碼中，這些巨集用於根據促銷活動的主要報告屬性來對應和報告所有印象和點按。 [!DNL Audience Manager] 匯整的資料可提供促銷活動績效的統一檢視，有助於識別自訂的轉換路徑，並協助客戶改善導致轉換的廣告伺服器事件順序。
 
@@ -59,7 +62,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>快取破壞值。 <span class="keyword"> Audience manager會 </span> 自動傳送大部分瀏覽器和Proxy都採用的快取控制標題。 如果您想要執行其他快取破壞，請將此參數加入事件呼叫中，然後加入隨機字串。 </p> <p> 選填。 </p> </td> 
+   <td colname="col2"> <p>快取破壞值。 <span class="keyword"> Audience Manager會 </span> 自動傳送大部分瀏覽器和Proxy都採用的快取控制標題。 如果您想要執行其他快取破壞，請將此參數加入事件呼叫中，然後加入隨機字串。 </p> <p> 選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 
@@ -69,8 +72,8 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
    <td colname="col1"> <code> d_cid </code> </td> 
    <td colname="col2"> <p>在此內容中， <code> d_cid </code> 執行個體化金鑰值配對，可讓您將行動裝置類型與唯一使用者ID(DPUUID)產生關聯。 固定ID會決定行動裝置類型。 值（即用戶ID）可能有所不同。 將鍵值對與分 <code> %01 </code>開，這是非打印控制字元。 此參數接受下列鍵： </p> 
     <ul id="ul_4D5D696D10B34615867AF3B64A938878"> 
-     <li id="li_A4BD4B0C8C9443BF99075CDFACC013F6">二零九一四年：識別Android(GAID)裝置。 例如， <code> d_cid = 20914 %01 1234 </code> 指出使用者1234與Android裝置相關聯。 </li> 
-     <li id="li_F83D7B3EC4D24D0187BFE639E2812B36">20915年：識別iOS(IDFA)裝置。 例如， <code> d_cid = 20915 %01 5678 </code> 指出使用者5678與iOS裝置相關聯。 </li> 
+     <li id="li_A4BD4B0C8C9443BF99075CDFACC013F6">二零九一四年： 識別Android(GAID)裝置。 例如， <code> d_cid = 20914 %01 1234 </code> 指出使用者1234與Android裝置相關聯。 </li> 
+     <li id="li_F83D7B3EC4D24D0187BFE639E2812B36">20915年： 識別iOS(IDFA)裝置。 例如， <code> d_cid = 20915 %01 5678 </code> 指出使用者5678與iOS裝置相關聯。 </li> 
     </ul> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
@@ -94,19 +97,19 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
    <td colname="col2"> <p>提供中繼資料之平台的資料來源ID或整合程式碼（例如DFA、Atlas、GBM、Media Math等）。 </p> <p>「對象最佳 <span class="wintitle"> 化」報表 </span> 必要。 </p> </td> 
   </tr> 
    <tr> 
-   <td colname="col1"> <code><i>gdpr</i></code>  </td> 
+   <td colname="col1"> <code>gdpr</code>  </td> 
    <td colname="col2"> <p><a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p> <p><code>gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。</p> <p>預設值為 0。</p><p>選填。</p> </td> 
   </tr>
    <tr> 
    <td colname="col1"> <code>gdpr_consent</code> </td> 
-   <td colname="col2"> <p><a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 「若 <code>gdpr=1</code>，則 <code>%gdpr_consent%</code>」取代為「<code>gdpr_consent</code>」字串 (請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external">IAB 規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p> </td> 
+   <td colname="col2"> <p><a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">與適用 IAB TCF 的 Audience Manager 增效模組相關。</a></p><p> 如 <code>gdpr=1</code>果，則 <code>${gdpr_consent_XXXX}</code> 由字串和廠商ID <code>gdpr_consent</code> 取代(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#about-the-transparency--consent-string-tc-string" format="http" scope="external"> IAB規格</a>)。</p> <p>預設值為 0。</p><p>選填。</p></td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->請連絡您的Adobe Audience manager諮詢或客戶主管，以取得用戶端網域的確切URL。
+>請連絡您的Adobe Audience Manager諮詢或客戶主管，以取得用戶端網域的確切URL。
 
 ## 其他功能——觀眾最佳化報表
 
