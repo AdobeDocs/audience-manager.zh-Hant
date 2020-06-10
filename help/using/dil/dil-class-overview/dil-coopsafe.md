@@ -6,7 +6,10 @@ solution: Audience Manager
 title: isCoopSafe
 uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 76%
 
 ---
 
@@ -22,7 +25,7 @@ To use `isCoopSafe` you must:
 * 使 [!UICONTROL DIL] 用v6.11或更新版本。
 * 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
-* 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有自助路徑可啟用這些標誌。
+* Work with your [!DNL Adobe] consultant to set an allowlist or a denylist flag on your Device Co-op account. 沒有自助路徑可啟用這些標誌。
 
 ## 使用個案 {#use-cases}
 
