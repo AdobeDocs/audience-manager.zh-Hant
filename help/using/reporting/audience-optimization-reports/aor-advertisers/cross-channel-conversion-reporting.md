@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 跨通道轉換
 uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 6988c6750c98f382a3440a606677243646551ad1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 4%
 
 ---
 
@@ -34,11 +37,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
   <tr> 
    <td colname="col01"> <p>轉換特徵的最小數目 </p> </td> 
    <td colname="col1"> <p>至少必須將一個轉換特徵指派給資料來源，才能執行「跨通 <span class="wintitle"> 道轉換</span> 」報表。 如需 <a href="../../../features/traits/create-onboarded-rule-based-traits.md"> 特徵的詳細資訊</a> ，請參閱特徵的基本資訊。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col01"> <p>最大轉換特徵數 </p> </td> 
-   <td colname="col1"> <p>報表從使用者 <i>中提取</i> 最多50個轉換特徵。 如果您達到最大值，報表會根據特徵ID，依遞增順序使用前50個轉換特徵。 </p> </td> 
-  </tr> 
+  </tr>
   <tr> 
    <td> <p>歸因視窗 </p> </td> 
    <td> <p> <b><span class="uicontrol"> AAM+DCM歸因視窗為</span></b> 14天，這表示僅會考慮過去兩週所呈現的轉換特性。 </p> </td> 
