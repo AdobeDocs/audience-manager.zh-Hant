@@ -4,7 +4,10 @@ seo-description: Adobe Audience Manager(AAM)中DCS API程式碼、方法和程�
 seo-title: Adobe Audience Manager(AAM)中的DCS API參考概觀
 title: DCS API參考概觀
 translation-type: tm+mt
-source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ DCS API程式碼、方法和程式的概念資訊、說明和定義。
 
    資料收集伺服器(DCS)依程式碼ID以數值順序列出產生的錯誤碼和訊息。
 
-* [ID監控與黑名單](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-blacklisting.md)
+* [ID監控和密碼清單](/help/using/api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
 
-   DCS會監控其收到的ID，並列出在短時間內以異常高的速率傳送的ID。
+   DCS會監控其收到的ID，並將短時間內以異常高速率傳送的ID新增至拒絕清單。
 
 * [DCS地區ID、位置和主機名稱](/help/using/api/dcs-intro/dcs-api-reference/dcs-regions.md)
 
