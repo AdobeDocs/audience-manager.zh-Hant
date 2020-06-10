@@ -5,12 +5,15 @@ audience: end-user
 user-guide-title: Audience Manager使用指南
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+workflow-type: tm+mt
+source-wordcount: '1711'
+ht-degree: 9%
 
 ---
 
 
-# Audience Manager使用指南 {#user-guide}
+# Audience Manager User Guide {#user-guide}
 
 + [Audience Manager產品檔案](aam-home.md)
 + 概述{#overview}
@@ -43,7 +46,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
       + 外觀類似塑型 {#look-alike-modeling}
          + [瞭解相似模型](features/algorithmic-models/understanding-models.md)
          + [建立相似的模型](features/algorithmic-models/create-model.md)
-         + [相似模型：特徵排除](features/algorithmic-models/trait-exclusion-algo-models.md)
+         + [相似模型： 特徵排除](features/algorithmic-models/trait-exclusion-algo-models.md)
       + 預測性觀眾 {#predictive-audiences}
          + [預測性觀眾概觀](features/algorithmic-models/predictive-audiences.md)
          + [預測性觀眾快速入門](features/algorithmic-models/predictive-audiences-start.md)
@@ -130,7 +133,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
       + [描述檔合併規則與裝置取消區段程式](features/profile-merge-rules/merge-rule-unsegment.md)
       + [即時跨裝置隱藏功能](features/profile-merge-rules/instant-cross-device-suppression.md)
    + 群體{#segments}
-      + [區段：目的、構成和規則](features/segments/segments-purpose.md)
+      + [區段： 目的、構成和規則](features/segments/segments-purpose.md)
       + [區段清單檢視](features/segments/segments-dashboard.md)
       + [區段摘要檢視](features/segments/segment-summary-view.md)
       + [擷取區段中繼資料](features/segments/retrieve-segment-metadata.md)
@@ -146,7 +149,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
       + [「特徵詳細資料」頁](features/traits/trait-details-page.md)
       + [特徵儀表板](features/traits/trait-dashboard.md)
       + [作用中受眾特徵與資料來源同步特徵](features/traits/client-activity-synced-audience-traits.md)
-      + [資料夾特徵：關於](features/traits/about-folder-traits.md)
+      + [資料夾特徵： 關於](features/traits/about-folder-traits.md)
       + [管理資料夾特徵](features/traits/manage-folder-traits.md)
       + 特徵產生器{#trait-builder}
          + [關於特徵產生器](features/traits/about-trait-builder.md)
@@ -208,7 +211,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
       + [未使用的信號報告](reporting/dynamic-reports/unused-signals.md)
       + [使用查閱表格改善記錄檔處理時間](reporting/dynamic-reports/lookup-tables.md)
       + [使用資料滑桿篩選報表結果](reporting/dynamic-reports/data-sliders.md)
-      + [重疊報表：更新排程和最小區段大小](reporting/dynamic-reports/overlap-minimum-segment-size.md)
+      + [重疊報表： 更新排程和最小區段大小](reporting/dynamic-reports/overlap-minimum-segment-size.md)
       + [重疊報表的CSV檔案](reporting/dynamic-reports/overlap-csv-files.md)
       + [報告技術](reporting/dynamic-reports/interactive-report-technology.md)
    + [入門狀態報告](reporting/onboarding-status-report.md)
@@ -233,7 +236,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
          + [DCS API參考概觀](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API方法](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [DCS 錯誤碼、訊息和範例](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
-         + [ID監控與黑名單](api/dcs-intro/dcs-api-reference/id-monitoring-blacklisting.md)
+         + [ID監控和密碼清單](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
          + [DCS地區ID、位置和主機名稱](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [在DCS呼叫中格式化鍵值對](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [競賽條件與錯誤處理](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
@@ -308,7 +311,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
          + [OAuth 2.0整合即時對外傳輸](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
       + 批傳出資料傳輸{#batch-outbound-data-transfers}
          + [批傳出資料傳輸概覽](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
-         + [出站資料檔案名：語法與範例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
+         + [出站資料檔案名： 語法與範例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [日誌檔案傳輸的傳輸控制檔案](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [輸出範本巨集](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
          + [輸出巨集範例](integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)
@@ -316,7 +319,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
    + 傳送觀眾資料{#sending-audience-data}
       + [傳送觀眾資料](integration/sending-audience-data/send-audience-data.md)
       + 即時傳入資料整合 {#real-time-inbound-data-integration}
-         + [入站、即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
+         + [入站即時資料傳輸的技術規範](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
          + [像素式資料傳輸](integration/sending-audience-data/real-time-data-integration/pixel-based-data-transfer.md)
          + [即時傳入資料擷取](integration/sending-audience-data/real-time-data-integration/real-time-data-transfer.md)
       + 批資料傳輸流程{#batch-data-transfer-process}
@@ -324,7 +327,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
          + [傳送批次資料至Audience Manager概觀](integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)
          + [入站資料傳輸的ID同步](integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)
          + [ID 同步檔案的名稱和內容要求](integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
-         + [入站資料檔案內容：語法、無效字元、變數和範例](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+         + [入站資料檔案內容： 語法、無效字元、變數和範例](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
          + [入站資料檔案的Amazon S3名稱和檔案大小要求](integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
          + [傳入資料檔案的FTP名稱和檔案大小要求](integration/sending-audience-data/batch-data-transfer-explained/inbound-ftp-filenames.md)
          + [傳入資料類型的檔案PGP加密](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
@@ -339,7 +342,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
       + [將Adobe Analytics區段發佈至Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
-   + [Amazon S3:關於](reference/amazon-s3.md)
+   + [Amazon S3: 關於](reference/amazon-s3.md)
    + [廣告商使用案例](reference/advertiser-use-cases.md)
    + [發行者使用案例](reference/publisher-use-cases.md)
    + [測試版環境](reference/beta-environment.md)
@@ -368,7 +371,7 @@ source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
       + [資料收集元件](reference/system-components/components-data-collection.md)
       + [資料處理元件](reference/system-components/components-data-processing.md)
       + [標籤管理元件](reference/system-components/components-tag-management.md)
-      + [平台架構：資料流圖](reference/system-components/components-platform-architecture.md)
+      + [平台架構： 資料流圖](reference/system-components/components-platform-architecture.md)
       + [瞭解Edge資料中心](reference/system-components/components-edge.md)
    + [程式碼和文字元素的樣式慣例](reference/code-style-elements.md)
    + [Audience Manager中的時區](reference/aam-time-zones.md)
