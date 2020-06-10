@@ -6,9 +6,9 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 07fb9269f285a8662a9ce5e03d8be8b8d51df553
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1545'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # DCS 錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
-由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!UICONTROL DCS]出而產生的錯誤碼和訊息。
+由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!UICONTROL DCS]出所產生的錯誤碼和訊息。
 
 In the tables below, *italics* represents a variable placeholder.
 
@@ -212,22 +212,22 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>303 </p> </td> 
    <td colname="col2"> <p>封鎖的客戶ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>當客戶ID被識別為惡意且已列入黑名單時傳回。 </p> </td> 
+   <td colname="col3"> <p>當客戶ID被識別為惡意且已新增至密文清單時傳回。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>304 </p> </td> 
    <td colname="col2"> <p>封鎖的資料來源ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>當資料來源ID已識別為惡意且已列入黑名單時傳回。 </p> </td> 
+   <td colname="col3"> <p>當資料來源ID已識別為惡意並已新增至密鑰清單時傳回 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>306 </p> </td> 
    <td colname="col2"> <p>已阻止已聲明的設備ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>裝置ID已識別為惡意，並已列入黑名單。 當我們在短時間內收到包含此裝置ID的 <span class="wintitle"> DCS</span> ，請求量會非常大時，就會發生這種情況。 </p> </td>
+   <td colname="col3"> <p>裝置ID已識別為惡意，並已新增至密文清單。當我們在短時間內收到包含此裝置ID的極大量 <span class="wintitle"> DCS</span> 請求時，就會發生此情況。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>封鎖的描述檔操作 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>由於ID已識別為惡意且已列入黑名單，因此已封鎖讀／寫動作。 請參閱錯誤代碼306。 </p> </td> 
+   <td colname="col3"> <p>已封鎖讀／寫動作，因為ID已識別為惡意，並已新增至密碼清單。請參閱錯誤代碼306。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
