@@ -7,7 +7,10 @@ title: 資料收集與產品整合常見問答集
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+workflow-type: tm+mt
+source-wordcount: '1072'
+ht-degree: 1%
 
 ---
 
@@ -34,13 +37,13 @@ faq_data_collection_integration.xml
 
 <br> 
 
-**您能提供我的IP位址清單嗎？我可以為dpm.demdex.net加上白名單？**
+**您能否提供我可新增至dpm.demdex.net允許清單的IP位址清單？**
 
 不幸的是，我們不能。 這些IP會依地理區域、透過動態指派 [!DNL Amazon Web Services]。 因此，不 [!DNL Audience Manager] 會控制可指派給此位址的IP範圍。
 
 <br> 
 
-**您能提供我入站和出站sFTP伺服器的IP位址（我可以將其列入白名單）嗎？**
+**您是否可提供IP位址給我，讓我新增至傳入和傳出sFTP伺服器的允許清單？**
 
 是的，請參閱下面。
 
