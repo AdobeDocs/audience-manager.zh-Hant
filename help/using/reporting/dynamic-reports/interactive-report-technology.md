@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 報告技術
 uuid: 5f3d815b-e1e6-42f2-b848-ac035a5aa77d
 translation-type: tm+mt
-source-git-commit: a35be513c2cec40257f2df0731eaccbb98e3a000
+source-git-commit: 1faafcda1060c1fab9de454976aac7cf191f456a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 1%
@@ -84,4 +84,4 @@ r_legend.xml
 
 ## Tableau檔案 {#tableau-documentation}
 
-若要進一步瞭解您可在互動式報表中看到的Tableau控制項，請參閱Linux 2018.2上 [Tableau Server的官方檔案](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm.)
+若要進一步瞭解您可在互動式報表中看到的Tableau控制項，請參閱Linux 2018.2上 [Tableau Server的官方檔案](https://help.tableau.com/v2018.2/server-linux/en-us/get_started_server.htm)
