@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 區段至區段重疊報表
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
 translation-type: tm+mt
-source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
+source-git-commit: a35be513c2cec40257f2df0731eaccbb98e3a000
+workflow-type: tm+mt
+source-wordcount: '375'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
 
 >[!NOTE]
 >
->Audience manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源看到區段](/help/using/features/administration/administration-overview.md) 。
+>Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源看到區段](/help/using/features/administration/administration-overview.md) 。
 
 <!-- 
 
@@ -65,7 +68,7 @@ r_s2s_data_pop.xml
 | **[!UICONTROL Base Segment Uniques]** | 基本區段中的獨特訪客數。 |
 | **[!UICONTROL Base Segment Uniques]** | 重疊區段中的獨特訪客數。 |
 | **[!UICONTROL Overlapping Uniques]** | 比較區段之間共用的獨特訪客數。 |
-| **[!UICONTROL Overlap %]** | 若要取得重疊百分比，Audience manager使用下列公式：重疊唯一值/（基本段唯一值+重疊段唯一值——重疊唯一值） |
+| **[!UICONTROL Overlap %]** | 若要取得重疊百分比，Audience Manager使用下列公式： 重疊唯一值/（基本段唯一值+重疊段唯一值——重疊唯一值） |
 
 
 
@@ -74,6 +77,6 @@ r_s2s_data_pop.xml
 >* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
 >* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [說明的報表圖示和工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
->* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [選取的Audience manager報表中的資料取樣和錯誤率……](../../reporting/report-sampling.md)
+>* [重疊報表： 更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
+>* [選取的Audience Manager報表中的資料取樣和錯誤率……](../../reporting/report-sampling.md)
 >* [重疊報表的CSV檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
