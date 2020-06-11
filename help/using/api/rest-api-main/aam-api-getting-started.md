@@ -6,7 +6,7 @@ solution: Audience Manager
 title: REST API快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: b78dc6df380d43b809ae169f23eea208cd951a4b
+source-git-commit: e51a4302808958093342170d513701ac1547c275
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 3%
@@ -75,7 +75,7 @@ Audience Manager REST API支援兩種驗證方法。
 >
 > 請改用 [JWT（服務帳戶）驗證](#jwt-service-account-authentication-jwt) 。
 
-Audience Manager遵循 [!UICONTROL REST API] 代號 [!DNL OAuth 2.0] 驗證和續約的標準。 以下各節將說明如何驗證並開始使用 [!DNL API]。
+Audience Manager遵循 [!UICONTROL REST API] 代號驗 [!DNL OAuth 2.0] 證和續約的標準。 以下各節將說明如何驗證並開始使用 [!DNL API]。
 
 ### 建立一般API使用者 {#requirements}
 
