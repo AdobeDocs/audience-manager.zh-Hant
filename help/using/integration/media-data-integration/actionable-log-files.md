@@ -7,14 +7,17 @@ solution: Audience Manager
 title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
+source-git-commit: 8f5dadb44ada3822b7336827c8863a7277b687c3
+workflow-type: tm+mt
+source-wordcount: '1376'
+ht-degree: 3%
 
 ---
 
 
 # 可操作的記錄檔 {#actionable-log-files}
 
-[!UICONTROL Actionable Log Files] 可讓您從廣告伺服器記錄檔擷取媒體資料，並使用資料在Audience manager中建立特徵。 Capture impressions, clicks, and conversions from ad servers as traits without having to append [pixels](../../integration/media-data-integration/impression-data-pixels.md).
+[!UICONTROL Actionable Log Files] 可讓您從廣告伺服器記錄檔擷取媒體資料，並使用資料在Audience Manager中建立特徵。 Capture impressions, clicks, and conversions from ad servers as traits without having to append [pixels](../../integration/media-data-integration/impression-data-pixels.md).
 
 >[!NOTE]
 >
@@ -29,13 +32,14 @@ source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
 若要開始使 [!UICONTROL Actionable Log Files]用，您必須將記錄檔資料匯入 [!DNL Audience Manager]。 下列連結將協助您開始使用：
 
 * 如需 [!UICONTROL Google DCM] 記錄檔，請 [參閱將DCM資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) , *並聯絡您的*[!DNL Audience Manager] 顧問。
+* 如需 [!UICONTROL Google DFP] 記錄檔，請 [參閱將DFP資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) , *並聯絡您的*[!DNL Audience Manager] 顧問。
 * 如需其他廣告伺服器記錄檔，請參 [閱資料和中繼資料](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)*檔案* ，並連絡您 [!DNL Audience Manager] 的顧問。
 
-如果您已將記錄檔資料匯入 [!DNL Audience Manager]，請要求您的 [!DNL Audience Manager] 顧問或 [客戶服務為您](https://helpx.adobe.com/contact/enterprise-support.ec.html)[!UICONTROL Actionable Log Files] 啟用。
+如果您已將記錄檔資料匯入 [!DNL Audience Manager]，請要求您的 [!DNL Audience Manager] 顧問或 [客戶服務為您](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)[!UICONTROL Actionable Log Files] 啟用。
 
 >[!IMPORTANT]
 >
-> 從2019年底開始， [!UICONTROL Actionable Log Files] 新廣告伺服器的可用性開始增加。 Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
+> 從2019年底開始， [!UICONTROL Actionable Log Files] 新廣告伺服器的可用性開始增加。 Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) to get started.
 
 ## 使用可操作的日誌檔案 {#working-with-actionable-log-files}
 
@@ -70,7 +74,7 @@ source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
   <tr> 
    <td colname="col1"> <p> <code>Activity ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_conversion</code> </p> </td> 
-   <td colname="col3"> <p>僅適用於轉換事件。 </p> <p>代表DCM中轉換活動的數值ID。 此欄位會從DCM對應至活動ID。 </p> <p> <p>提示：您可以從DCM擷取多個或特定的轉換活動。 使用DCM中每 <code> d_conversion = activity ID</code> 個轉換活動建立特徵。 </p> </p> </td> 
+   <td colname="col3"> <p>僅適用於轉換事件。 </p> <p>代表DCM中轉換活動的數值ID。 此欄位會從DCM對應至活動ID。 </p> <p> <p>提示： 您可以從DCM擷取多個或特定的轉換活動。 使用DCM中每 <code> d_conversion = activity ID</code> 個轉換活動建立特徵。 </p> </p> </td> 
    <td colname="col4"> <p> <code> 24122</code> </p> </td> 
   </tr> 
   <tr> 
@@ -93,7 +97,7 @@ source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
   <tr> 
    <td colname="col1"> <p> <code>Advertiser Group ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"><p>廣告商資料來源的整合代碼。 請注意，這與Audience manager資料來源無關。</p> <p>此欄位會從DCM對應至廣告商群組ID。 </p> </td> 
+   <td colname="col3"><p>廣告商資料來源的整合代碼。 請注意，這與Audience Manager資料來源無關。</p> <p>此欄位會從DCM對應至廣告商群組ID。 </p> </td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -123,7 +127,7 @@ source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
     <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_event</code> </p> </td> 
-   <td colname="col3"> <p>指出事件類型。 Audience manager會從DCM記錄檔名讀取事件類型，並將它轉換為可操作的訊號。 </p> <p>接受的值為： </p> <p> 
+   <td colname="col3"> <p>指出事件類型。 Audience Manager會從DCM記錄檔名讀取事件類型，並將其轉換為可操作的訊號。 </p> <p>接受的值為： </p> <p> 
      <ul id="ul_58EB40E458844DA185ABAF160ADAF03E"> 
       <li id="li_71772CC106F74F4788E1784CC3D70BD3"> <code> d_event = imp</code> 以獲得曝光。 </li> 
       <li id="li_33A629A32B87400F93269581154D566F"> <code> d_event = click</code> 按鈕。 </li> 
@@ -140,7 +144,7 @@ source-git-commit: 408ebf38ad75f32d110455b754a096328f2c456e
  </tbody>
 </table>
 
-表格中描述的信號像實 [!DNL Audience Manager] 時呼叫一樣被捕 `HTTP` 獲。 下列範例呼叫包含來自的轉換事件相關資訊 [!DNL DCM]。 呼叫不一定必須包含 *範例呼叫* 中的所有訊號。
+表格中描述的信號像實 [!DNL Audience Manager] 時呼叫一樣被捕 `HTTP` 獲。 以下範例呼叫包含來自的轉換事件相關資訊 [!DNL DCM]。 呼叫不一定必須包含 *範例呼叫* 中的所有訊號。
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_conversion=24122&d_conversionType=2&d_bu=3983524&d_campaign=7321391&d_adsrc=11111&d_creative=123456
@@ -192,7 +196,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
   <tr> 
    <td colname="col1"> <p> <code>Advertiser-ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"> <p>廣告商資料來源的整合代碼。 請注意，此欄位與 <a href="../../features/datasources-list-and-settings.md">Audience manager資料來源無關。</a></p></td> 
+   <td colname="col3"> <p>廣告商資料來源的整合代碼。 請注意，此欄位與 <a href="../../features/datasources-list-and-settings.md">Audience Manager資料來源無關。</a></p></td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
@@ -216,13 +220,13 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
     <tr> 
    <td colname="col1"> <p> <code>Revenue</code> </p> </td> 
    <td colname="col2"> <p> <code> d_revenue</code> </p> </td> 
-   <td colname="col3"> 購買或其他轉換金額。 資料類型：漂浮。 </td> 
+   <td colname="col3"> 購買或其他轉換金額。 資料類型： 漂浮。 </td> 
    <td colname="col4"> <p> <code> 0.001</code> </p> </td> 
   </tr>
     <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_event</code> </p> </td> 
-   <td colname="col3"> <p>指出事件類型。 Audience manager會從記錄檔名讀取事件類型，並將其轉換為可操作的訊號。 請參 <a href="../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md#naming-conventions">閱日誌檔案命名約定</a>。 </p> <p>接受的值為： </p> <p> 
+   <td colname="col3"> <p>指出事件類型。 Audience Manager會從記錄檔名讀取事件類型，並將其轉換為可操作的訊號。 請參 <a href="../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md#naming-conventions">閱日誌檔案命名約定</a>。 </p> <p>接受的值為： </p> <p> 
      <ul id="ul_58EB40E458844DA185ABAF160ADAF03E"> 
       <li id="li_71772CC106F74F4788E1784CC3D70BD3"> <code> d_event = imp</code> 以獲得曝光。 </li> 
       <li id="li_33A629A32B87400F93269581154D566F"> <code> d_event = click</code> 按鈕。 </li> 
@@ -288,7 +292,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
    `d_event == conv AND d_conversion == 123`
 
-   在Audience manager中建立特徵時， [!UICONTROL UI]請選 [!UICONTROL Conversion] 取為 [!UICONTROL Event Type]。
+   在Audience Manager中建立特徵時， [!UICONTROL UI]請選 [!UICONTROL Conversion] 取為 [!UICONTROL Event Type]。
 
 2. 在您建立特徵後，轉換將開始在和中報告 [!UICONTROL Audience Optimization Reports] 對象 [!UICONTROL Audience Lab]。
 
