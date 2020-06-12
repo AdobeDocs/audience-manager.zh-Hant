@@ -7,7 +7,10 @@ keywords: GDPR UI, GDPR API, CCPA, privacy, consent
 title: 許可管理
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 34af220db2cf23ccde225eb1e05af7ce0e1513b7
+workflow-type: tm+mt
+source-wordcount: '737'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ Audience Manager提供您多種工具，協助您從使用者處取得必要同�
 
 ## Experience Cloud選擇加入服務
 
-The [Experience Cloud Opt-in Service](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.html) lets you set up protocols for the visitor to assist you in determining if you can set a cookie on the individual&#39;s device or browser when visiting your site.
+The [Experience Cloud Opt-in Service](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) lets you set up protocols for the visitor to assist you in determining if you can set a cookie on the individual&#39;s device or browser when visiting your site.
 
 This is an extension of the [!DNL Experience Cloud ID (ECID) Service], designed to let you control whether and which Experience Cloud solutions can place cookies on web pages for visitors prior to user consent.
 
-Experience Cloud選 [](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.html) 擇加入服務也可讓您設定通訊協定，以整合您的同意管理平台(CMP)和現有系統，做為大型設計的一部分。
+Experience Cloud選 [](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) 擇加入服務也可讓您設定通訊協定，以整合您的同意管理平台(CMP)和現有系統，做為大型設計的一部分。
 
 ## 管理選擇加入／取得同意
 
