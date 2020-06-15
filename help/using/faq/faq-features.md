@@ -7,7 +7,10 @@ solution: Audience Manager
 title: 產品功能與功能常見問答集
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 2b70b651a626c2b5667edb58c8c6068152a9d770
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 常見產品與功能相關問題與問題。
 
-<br> 
+ 
 
 <!-- 
 
@@ -32,7 +35,7 @@ faq_features_functions.xml
 
 Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)，以及其他解決方案都使 [!DNL Experience Cloud] 用。 具有管理員權限的使用者可以 *`Organization ID`* 在上找到 [!DNL Adobe Admin Console]。 請參閱「管 [理——使用者管理」常見問答](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
-<br> 
+ 
 
 **我可以大量建立特徵或目標嗎？**
 
@@ -42,25 +45,31 @@ Audience Manager *`Organization ID`* 的 [DIL](../dil/dil-overview.md) API、 [A
 >
 >不 [!UICONTROL Bulk Management Tools] 支 *援工具* 。 [!DNL Audience Manager]為了方便和禮節而提供。 若是大量變更，建議您改 [用Audience Manager API](../api/api.md) 。
 
-<br> 
+ 
+
+**當執行大量ID匯出至目標時，會遺失部分客戶ID。 Why does that happen?**
+
+當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUID](../reference/ids-in-aam.md))時，只會匯出最新的對應。 這就是為什麼您可能會看到匯出的裝置ID數量低於預期。
+
+ 
 
 **可[!DNL Audience Manager]以減少對協力廠商標籤或像素的需求，並改善頁面載入時間嗎？**
 
 如果 [!DNL Audience Manager] 已與您的協力廠商資料合作夥伴整合，您可以使用伺服器對伺服器ID呼叫來取代其像素和標籤 [!DNL Audience Manager]。 在這種情況下， [!DNL Audience Manager] 當我們第一次看到使用者時，會觸發單一ID呼叫，並將該資訊與您的第三方合作夥伴同步。 如此，您就不需要從每個頁面呼叫多個像素。 減少像素呼叫可改善頁面載入時間。
 
-<br> 
+ 
 
 **我已訂閱資料饋送。 資料儲存在哪裡？**
 
 您的資料饋送和饋送中包含的所有特徵會顯示為子檔案夾和特徵 [!DNL Audience Manager]。 前往並展 **[!UICONTROL Audience Data > Traits]** 開資料夾以檢 [!UICONTROL 3rd-Party Data] 視您的特徵，或使用此資料建立區段和模型。
 
-<br> 
+ 
 
 **什麼是[!UICONTROL Tag Insertion Manager (TIM)]?**
 
 Audience Manager使 [!UICONTROL Tag Insertion Manager] 用(TIM)來建立和管理 [!UICONTROL data collection code (DIL)]。 This feature is obsolete and has been replaced first by [!UICONTROL Dynamic Tag Manager (DTM)], and later by [!DNL Adobe Experience Platform Launch]. For more information, see [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) and [Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html).
 
-<br> 
+ 
 
 **演算法模型與特徵建議之間有何差異？ 我何時應使用每個？**
 
@@ -82,7 +91,7 @@ Audience Manager使 [!UICONTROL Tag Insertion Manager] 用(TIM)來建立和管�
 * 您使用區段做為簡短的促銷活動，或想要快速抑制轉換的觀眾；
 * 您正嘗試將觸及面最大化。
 
-<br> 
+ 
 
 **Adobe Analytics和Audience Manager區段之間有何差異？**
 
