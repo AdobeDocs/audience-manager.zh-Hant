@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 透過像素呼叫擷取行銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
+source-git-commit: b1d953837766f5822f5ba0246f7e10042c6f1072
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 21%
@@ -111,7 +111,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 >
 >請連絡您的Adobe Audience Manager諮詢或客戶主管，以取得用戶端網域的確切URL。
 
-## 其他功能- [!DNL Audience Optimization Reports]
+## 其他功能- [!DNL Audience Optimization Reports] {#additional-functionality-aor}
 
 您可以使用像素呼叫來強化「對象最 [佳化報表」](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [您想使用像素來為報表加電](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，請參閱中繼資料檔案的概述和對應。
 
