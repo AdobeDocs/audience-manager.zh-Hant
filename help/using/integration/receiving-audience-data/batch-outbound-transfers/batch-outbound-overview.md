@@ -1,25 +1,32 @@
 ---
-description: Audience manager會根據這些規格，將批次資料傳送給協力廠商內容提供者。
+description: Audience Manager會根據這些規格，將批次資料傳送給協力廠商內容提供者。
 seo-description: Adobe Audience Manager(AAM)會根據這些規格，傳送批次資料給協力廠商內容提供者。
 seo-title: Adobe Audience Manager(AAM)中的批次傳出資料傳輸
-title: 批傳出資料傳輸
+title: 批次傳出資料傳輸
 translation-type: tm+mt
-source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
+source-git-commit: 1b31f10effa2780b5e4374516dd6c76d92a0123a
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 17%
 
 ---
 
 
-# 批傳出資料傳輸
+# 批次傳出資料傳輸
 
-Audience manager會根據這些規格，將批次資料傳送給協力廠商內容提供者。
+Audience Manager會根據這些規格，將批次資料傳送給協力廠商內容提供者。
 
-* [出站資料檔案名：語法與範例](/help/using/integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
+* [傳出資料檔案名稱：語法與範例](/help/using/integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
 
    說明用於命名出站資料檔案的必填欄位、語法和慣例。
 
-* [日誌檔案傳輸的傳輸控制檔案](/help/using/integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
+* [配置批資料傳輸整合](batch-server-configuration.md)
 
-   傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience manager已正確處理檔案傳輸。
+   說明如何設定批次資料傳輸整合。
+
+* [用於記錄檔傳輸的傳輸控制檔案](/help/using/integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
+
+   傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
 
 * [輸出範本巨集](/help/using/integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
 
