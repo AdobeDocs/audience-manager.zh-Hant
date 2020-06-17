@@ -1,25 +1,28 @@
 ---
-description: Predictive Audiences可協助您使用資料科學，將未知的受眾即時分類為不同的角色。
-seo-description: Predictive Audiences可協助您使用資料科學，將未知的受眾即時分類為不同的角色。
-seo-title: 預測性觀眾概觀
+description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
+seo-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
+seo-title: 預測受眾概述
 solution: Audience Manager
-title: Audience Manager預測性觀眾
+title: Audience Manager 預測受眾
 translation-type: tm+mt
-source-git-commit: 74a5de961b2f9ab6afa2caf998ba1100d40cc93a
+source-git-commit: 4df2a7536155d42133c0873ed4e3376eb24cba1a
+workflow-type: tm+mt
+source-wordcount: '1275'
+ht-degree: 9%
 
 ---
 
 
-# 預測性觀眾概觀 {#predictive-audiences}
+# [!UICONTROL Predictive Audiences] 概述 {#predictive-audiences}
 
 [!UICONTROL Predictive Audiences] 協助您使用進階的資料科學技術，將未知的受眾即時分類為不同的角色。
 
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
-在行銷環境中，角色是由訪客、使用者或潛在購買者所定義的受眾群體，這些訪客或潛在購買者共用一組特定特徵，例如人口統計、瀏覽習慣、購物歷史記錄等。
+ 在行銷環境中，角色是一種受眾區段，由擁有一組共同特定特徵 (例如人口統計、瀏覽習慣、購物記錄等) 的訪客、使用者或潛在購買者所定義。
 
-[!UICONTROL Predictive Audiences] 模型可讓您使用Audience Manager的機器學習功能，將未知的受眾分類為不同的角色，進一步提升此概念。 Audience Manager可協助您計算未知第一方受眾對一組已知第一方受眾的傾向，以達成此目標。
+[!UICONTROL Predictive Audiences] 模型可讓您使用 Audience Manager 的機器學習功能，將未知的受眾分類為不重複角色，進一步運用此概念。Audience Manager 可協助您針對一組已知的第一方受眾，計算未知第一方受眾的傾向，進而實現此目標。
 
 當您建立模 [!UICONTROL Predictive Audiences] 型時，第一步是選擇您希望目標對象依據的基準特徵或區段。 這些特徵或群體將定義您的角色。
 
@@ -101,7 +104,7 @@ source-git-commit: 74a5de961b2f9ab6afa2caf998ba1100d40cc93a
 
 在設定模 [!UICONTROL Predictive Audiences] 型時，請記住下列考量和限制：
 
-* 您最多可建立10種 [!UICONTROL Predictive Audiences] 模型。
+* 您最多可建立 10 個 [!UICONTROL Predictive Audiences] 模型。
 * 對於每個模型，您最多可以選擇50個基本特徵／區段。
 * 目前不支援第二方和第三方資料 [!UICONTROL Predictive Audiences]。
 * 觀眾分類僅針對即時的第一方觀眾進行。 未來更新可能支援已登入的第一方觀眾分類。
