@@ -6,7 +6,10 @@ solution: Audience Manager
 title: 資料處理元件
 uuid: d458d869-7a23-4016-871d-0b994cf4af06
 translation-type: tm+mt
-source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
+source-git-commit: 9a92420b1f0116c0fd71db56895720e0ee894f30
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +28,7 @@ Audience Manager使用下列元件來處理資料：
 
 ## Hadoop {#hadoop}
 
-在 [!DNL Audience Manager]中，Hadoop是主資料庫，包含用戶 [!DNL Audience Manager] 的所有知識。 例如，當Profile Cache Servers [建立包含有關用戶資料的日誌檔案時](../../reference/system-components/components-data-collection.md) ，它將該資料發送到Hadoop以進行儲存。 其他重要的Hadoop元素包括：
+在 [!DNL Audience Manager]中，Hadoop是主資料庫，它包含了用戶 [!DNL Audience Manager] 的所有知識。 例如，當Profile Cache Servers [建立包含有關用戶資料的日誌檔案時](../../reference/system-components/components-data-collection.md) ，它將該資料發送到Hadoop以進行儲存。 其他重要的Hadoop元素包括：
 
 * **蜂巢：** 適用於Hadoop的資料倉庫。 Hive管理對Hadoop中儲存的資料的臨機查詢。
 
@@ -45,7 +48,7 @@ Audience Manager使用下列元件來處理資料：
 
 * [每日特徵變化報表](/help/using/reporting/audience-optimization-reports/daily-trait-variation-report.md)
 * 所有重疊報表(如需每個重疊報 [表的相關資訊](/help/using/reporting/dynamic-reports/dynamic-reports.md) ，請參閱互動報表區段)。
-* [未使用的信號報告](/help/using/reporting/dynamic-reports/unused-signals.md)
+* [未使用的訊號報表](/help/using/reporting/dynamic-reports/unused-signals.md)
 
 ## SOLR {#solr}
 
