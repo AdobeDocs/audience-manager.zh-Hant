@@ -1,20 +1,20 @@
 ---
 description: 一種傳送媒體資料至Audience Manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
 seo-description: 一種傳送媒體資料至Audience Manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
-seo-title: 透過像素呼叫擷取促銷活動的曝光資料
+seo-title: 透過像素呼叫擷取行銷活動的曝光資料
 solution: Audience Manager
-title: 透過像素呼叫擷取促銷活動的曝光資料
+title: 透過像素呼叫擷取行銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 translation-type: tm+mt
-source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 20%
+source-wordcount: '713'
+ht-degree: 21%
 
 ---
 
 
-# 透過像素呼叫擷取促銷活動的曝光資料{#capturing-campaign-impression-data-via-pixel-calls}
+# 透過像素呼叫擷取行銷活動的曝光資料{#capturing-campaign-impression-data-via-pixel-calls}
 
 一種傳送媒體資料至Audience Manager的方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
 
@@ -111,7 +111,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 >
 >請連絡您的Adobe Audience Manager諮詢或客戶主管，以取得用戶端網域的確切URL。
 
-## 其他功能——觀眾最佳化報表
+## 其他功能- [!DNL Audience Optimization Reports]
 
 您可以使用像素呼叫來強化「對象最 [佳化報表」](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [您想使用像素來為報表加電](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，請參閱中繼資料檔案的概述和對應。
 
