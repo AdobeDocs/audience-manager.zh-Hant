@@ -1,24 +1,27 @@
 ---
 description: 列出並說明您可傳入資料收集伺服器(DCS)的語法和支援的屬性（或金鑰值配對）。 此資訊可協助您格式化DCS要求，並瞭解此系統傳回的參數。
 seo-description: 列出並說明您可傳入資料收集伺服器(DCS)的語法和支援的屬性（或金鑰值配對）。 此資訊可協助您格式化DCS要求，並瞭解此系統傳回的參數。
-seo-title: DCS API呼叫的支援屬性
+seo-title: DCS API 呼叫的支援屬性。
 solution: Audience Manager
-title: DCS API呼叫的支援屬性
+title: DCS API 呼叫的支援屬性。
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '809'
+ht-degree: 6%
 
 ---
 
 
-# DCS API呼叫的支援屬性 {#supported-attributes-for-dcs-api-calls}
+# DCS API 呼叫的支援屬性{#supported-attributes-for-dcs-api-calls}。
 
-列出並說明您可傳入()的語法和支援的屬性(或金鑰值 [!UICONTROL Data Collection Servers] 配對[!UICONTROL DCS])。 這些資訊可協助您設定請求 [!UICONTROL DCS] 的格式，並瞭解此系統傳回的參數。
+列出並說明您可傳入()的語法和支援的屬性(或金鑰值 [!UICONTROL Data Collection Servers] 配對[!DNL DCS])。 這些資訊可協助您設定請求 [!DNL DCS] 的格式，並瞭解此系統傳回的參數。
 
 ## 屬性前置詞 {#attribute-prefixes}
 
-依 [!UICONTROL DCS] 賴於鍵值對中新增至鍵的特定字首，以分類您傳入的資料類型。
+依 [!DNL DCS] 賴於鍵值對中新增至鍵的特定字首，以分類您傳入的資料類型。
 
 <table id="table_23B7E15EC13749E9A245DFB543822DB7"> 
  <thead> 
@@ -49,7 +52,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ## d_屬性 {#d-attributes}
 
-所有這些都是選用的，除非您想要回應 [!UICONTROL DCS]。 如果您想要傳 [!UICONTROL DCS] 回回應，則為必 `d_rtbd=json` 要項目。
+所有這些都是選用的，除非您想要回應 [!DNL DCS]。 如果您想要傳 [!DNL DCS] 回回應，則為必 `d_rtbd=json` 要項目。
 
 <table id="table_FCCE4F9D796648899772A191981EFDE6"> 
  <thead> 
@@ -119,7 +122,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定Experience Cloud ID服務所設定及使 <span class="keyword"> 用的Experience Cloud</span> ID。 如需ECID的詳細資訊，請參 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> 閱Cookie和Experience Cloud Identity Service</a>。 </p> </td> 
+   <td colname="col2"> <p>指定Experience Cloud ID服務所設定及使 <span class="keyword"> 用的Experience Cloud</span> ID。 如需ECID的詳細資訊，請參 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> 閱Cookie和Experience Cloud Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
