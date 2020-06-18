@@ -6,9 +6,9 @@ solution: Audience Manager
 title: REST API 快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1781'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 3%
 >
 >視您的驗證方法而定，您需要相應調整您的 [!DNL URLs] 請求。 有關應 [使用的主機名](#environments) ，請參見「環境」部分。
 
-## JWT（服務帳戶）驗證 {#jwt}
+## JWT([!DNL Service Account])驗證 {#jwt}
 
 ### 必要條件 {#prerequisites}
 
@@ -278,14 +278,14 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 | 回應碼ID | 回應文字 | 定義 |
 |---|---|---|
-| 200 | `OK` | 請求已成功處理。 將視需要傳回預期的內容或資料。 |
-| 201 | `Created` | 已建立資源。 傳回 `PUT` 和請 `POST` 求。 |
-| 204 | `No Content` | 已刪除資源。 回應主體將為空。 |
-| 400 | `Bad Request` | 伺服器不瞭解請求。 通常是由於語法格式錯誤所致。 請檢查您的要求，然後再試一次。 |
-| 403 | `Forbidden` | 您沒有資源的存取權。 |
-| 404 | `Not Found` | 找不到指定路徑的資源。 |
-| 409 | `Conflict` | 由於資源狀態衝突，無法完成請求。 |
-| 500 | `Server Error` | 伺服器遇到意外錯誤，無法完成請求。 |
+| `200` | `OK` | 請求已成功處理。 將視需要傳回預期的內容或資料。 |
+| `201` | `Created` | 已建立資源。 傳回 `PUT` 和請 `POST` 求。 |
+| `204` | `No Content` | 已刪除資源。 回應主體將為空。 |
+| `400` | `Bad Request` | 伺服器不瞭解請求。 通常是由於語法格式錯誤所致。 請檢查您的要求，然後再試一次。 |
+| `403` | `Forbidden` | 您沒有資源的存取權。 |
+| `404` | `Not Found` | 找不到指定路徑的資源。 |
+| `409` | `Conflict` | 由於資源狀態衝突，無法完成請求。 |
+| `500` | `Server Error` | 伺服器遇到意外錯誤，無法完成請求。 |
 
 >[!MORELIKETHIS]
 >
