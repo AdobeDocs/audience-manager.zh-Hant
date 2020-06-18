@@ -1,19 +1,22 @@
 ---
 description: 對DCS進行呼叫時，需要地區DCS伺服器主機名稱。 這是因為DCS會在地理位置接近網站訪客的資料中心儲存資訊。 如果您將查詢傳送至錯誤的DCS，則查詢會有效，但這些呼叫會很低效，而且會延遲回應。 若要提出DCS請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
 seo-description: 對DCS進行呼叫時，需要地區DCS伺服器主機名稱。 這是因為DCS會在地理位置接近網站訪客的資料中心儲存資訊。 如果您將查詢傳送至錯誤的DCS，則查詢會有效，但這些呼叫會很低效，而且會延遲回應。 若要提出DCS請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
-seo-title: DCS地區ID、位置和主機名稱
+seo-title: DCS 區域 ID、位置與主機名稱。
 solution: Audience Manager
-title: DCS地區ID、位置和主機名稱
+title: DCS 區域 ID、位置與主機名稱。
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
 translation-type: tm+mt
-source-git-commit: 51a326d0ac02175e0e1452e0a00b4a3a415d88ff
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 9%
 
 ---
 
 
-# DCS Region IDs, Locations, and Host Names {#dcs-region-ids-locations-and-host-names}
+# DCS 區域 ID、位置與主機名稱{#dcs-region-ids-locations-and-host-names}。
 
-要對 [!UICONTROL DCS] 進行調用，需要區域伺服器主機名 [!UICONTROL DCS]。 這是因為資 [!UICONTROL DCS] 訊會儲存在地理位置接近網站訪客的資料中心。 如果您將查詢傳送到錯誤的位置，您的查詢會 [!UICONTROL DCS]正常運作，但這些呼叫會效率低下，而且會延遲回應。 若要提出 [!UICONTROL DCS] 請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
+要對 [!DNL DCS] 進行調用，需要區域伺服器主機名 [!DNL DCS]。 這是因為資 [!DNL DCS] 訊會儲存在地理位置接近網站訪客的資料中心。 如果您將查詢傳送到錯誤的位置，您的查詢會 [!DNL DCS]正常運作，但這些呼叫會效率低下，而且會延遲回應。 若要提出 [!DNL DCS] 請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
@@ -67,4 +70,4 @@ source-git-commit: 51a326d0ac02175e0e1452e0a00b4a3a415d88ff
  </tbody> 
 </table>
 
-您也可以使 [!DNL API] 用方法來取得可用區域的清 [!UICONTROL DCS] 單。 請參 [閱DCS地區API方法](../../../api/rest-api-main/aam-api-dcs-regions.md)。
+您也可以使 [!DNL API] 用方法來取得可用區域的清 [!DNL DCS] 單。 See [DCS Region API Methods](../../../api/rest-api-main/aam-api-dcs-regions.md).
