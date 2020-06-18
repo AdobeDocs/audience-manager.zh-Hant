@@ -1,26 +1,26 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: 透過像素呼叫擷取促銷活動點按資料
+seo-title: 透過像素呼叫擷取行銷活動的點按資料
 solution: Audience Manager
-title: 透過像素呼叫擷取促銷活動點按資料
+title: 透過像素呼叫擷取行銷活動的點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 72cf5f30c74736f7143841c0edd6c5c69154a0c2
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 7%
+source-wordcount: '657'
+ht-degree: 12%
 
 ---
 
 
-# Capturing Campaign Click Data via Pixel Calls {#capturing-campaign-click-data-via-pixel-calls}
+# 透過像素呼叫擷取行銷活動的點按資料 {#capturing-campaign-click-data-via-pixel-calls}
 
-點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象 [收集類似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫會傳送至Audience Manager資料收集伺服器([!UICONTROL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
+點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象 [收集類似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫會傳送至Audience Manager資料收集伺服器([!DNL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
 
 >[!NOTE]
 >
->請連絡您的Adobe Audience Manager諮詢或客戶主管，以取得用戶端網域的確切URL。
+>請連絡您 [!DNL Audience Manager] 的諮詢或客戶主管，以取得 [!DNL URL] 客戶網域的確切資訊。
 
 ## 要求
 
@@ -96,7 +96,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud ID (ECID). </span>For more information about the ECID, see <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"></span> Experience Cloud ID (ECID). For more information about the ECID, see <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
