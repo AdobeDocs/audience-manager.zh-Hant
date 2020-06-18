@@ -1,19 +1,22 @@
 ---
-description: 說明Audience manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
-seo-description: 說明Audience manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
-seo-title: 信號、特徵和區段
+description: 說明Audience Manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
+seo-description: 說明Audience Manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
+seo-title: 訊號、特徵和區段
 solution: Audience Manager
-title: 信號、特徵和區段
+title: 訊號、特徵和區段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 5%
 
 ---
 
 
-# 信號、特徵和區段{#signals-traits-and-segments}
+# 訊號、特徵和區段{#signals-traits-and-segments}
 
-說明Audience manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
+說明區段的元 [!DNL Audience Manager] 件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
 
 <!-- 
 
@@ -36,7 +39,7 @@ c_signal_trait_segment.xml
  <tbody> 
   <tr> 
    <td colname="col1"><b>訊號</b> </td> 
-   <td colname="col2"> <p>訊號是 <span class="keyword"> Audience Manager中最小的資料單位</span> ，並以鍵 <a href="../reference/key-value-pairs-explained.md"> 值配對表示</a>。 </p> 
+   <td colname="col2"> <p>Signals are the smallest data units in <span class="keyword"> Audience Manager</span> and are expressed as <a href="../reference/key-value-pairs-explained.md"> key-value pairs</a>. </p> 
     <ul id="ul_728347E325284B9FA0B4E05DE8CF4570"> 
      <li id="li_89574A3B4A734726AD43405AE6D85FF5">索引鍵是定義資料集（例如性別、顏色、價格）的常數。 </li> 
      <li id="li_D35601B33EE24EC5857F45D9577254D4">該值是與常數相關的變數（例如，男性／女性、綠色、100）。 </li> 
@@ -49,7 +52,7 @@ c_signal_trait_segment.xml
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>特性</b> </td> 
+   <td colname="col1"><b>特徵</b> </td> 
    <td colname="col2"> <p>一個或多個信號的組合。 </p> <p>布林運算式和比較運算子可讓您建立特徵限定規則。 </p> <p>結合特徵和特徵群組，建立精確的資格要求。 </p> </td> 
    <td colname="col3"> <p>您可從可用訊號建立「高階相機瀏覽器」規則，表示為： </p> <p><code> product=camera AND price&gt;1000</code> </p> </td> 
   </tr> 
@@ -71,13 +74,11 @@ c_signal_trait_segment.xml
 
 **事件呼叫傳送資料至Audience Manager**
 
-事件呼叫會從您的網站傳送資料至 [!DNL Audience Manager]。 呼叫在HTTP請求中包含信號、特徵和區段資料。 事件本身是URL字串之 `/event` 後的一切。 如下列範例所示，此程式只需要單一事件呼叫即可將多個變數傳入 [!DNL Audience Manager]。
+事件呼叫會從您的網站傳送資料至 [!DNL Audience Manager]。 呼叫在請求中包含信號、特徵和區段 [!DNL HTTP] 資料。 事件本身是字串後 `/event` 的一切 [!DNL URL] 功能。 如下列範例所示，此程式只需要單一事件呼叫即可將多個變數傳入 [!DNL Audience Manager]。
 
-```
-https://<domain>/event?product=camera&price>100
-```
+`https://<domain>/event?product=camera&price>100`
 
 >[!MORELIKETHIS]
 >
->* [區段：目的、構成和規則](../features/segments/segments-purpose.md)
+>* [區段：用途、構成和規則](../features/segments/segments-purpose.md)
 
