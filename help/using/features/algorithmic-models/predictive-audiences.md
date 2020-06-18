@@ -5,9 +5,9 @@ seo-title: 預測受眾概述
 solution: Audience Manager
 title: Audience Manager 預測受眾
 translation-type: tm+mt
-source-git-commit: 4df2a7536155d42133c0873ed4e3376eb24cba1a
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1261'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 9%
 
 身為媒體公司，我想將受眾分類，以便以優惠價格銷售廣告空間，同時為訪客提供相關廣告。
 
-## 預測性受眾模型的運作方式
+## 模型 [!UICONTROL Predictive Audiences] 的運作方式 {#how-predictive-audiences-models-work}
 
 建立模型時， [!UICONTROL Predictive Audiences] 需要執行三個步驟：
 
@@ -82,14 +82,14 @@ ht-degree: 9%
 
 與個人選擇類似，您應選擇您的特徵或群體來定義目標受眾，讓其擁有具有豐富特徵集的即時用戶，以便將其分類為正確的個人。
 
-### 預測性受眾模型培訓階段 {#model-training}
+### [!UICONTROL Predictive Audiences] 模型培訓階段 {#model-training}
 
 在演算法將您的第一方受眾分類為適當角色之前，它必須先針對您的資料進行自我訓練。
 
 對於您定義的每個角色，演算法會分析其個別對象，並評估其使用者在過去30天內的任何即時和／或已登入特徵活動。
 此步驟每24小時進行一次，以說明您第一方受眾的變更。
 
-### 預測性觀眾模型分類階段 {#model-classification}
+### [!UICONTROL Predictive Audiences] 模型分類階段 {#model-classification}
 
 當即時檢視屬於目標對象的訪客時，模型會評估該訪客是否屬於已定義角色。 對於不屬於任何角色的每位訪客，模型會指派角色資格分數。
 
@@ -109,7 +109,7 @@ ht-degree: 9%
 * 目前不支援第二方和第三方資料 [!UICONTROL Predictive Audiences]。
 * 觀眾分類僅針對即時的第一方觀眾進行。 未來更新可能支援已登入的第一方觀眾分類。
    >[!IMPORTANT]
-   > 目前，預 [!UICONTROL Total Segment Population] 測性區段的顯示為0，而預測性 [對象不支援批次傳出資料傳輸](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) 。 此行為在未來的更新中將會改變。
+   > 目前，預 [!UICONTROL Total Segment Population] 測性區段的顯示為0，且不 [支援批次傳出資料傳輸](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)[!UICONTROL Predictive Audiences]。 此行為在未來的更新中將會改變。
 * [!UICONTROL Predictive Audiences] 從所有第一方資料來源，根據您的第一方特徵執行對象分類。
 * 區段評估 [!UICONTROL Predictive Audiences] 會使用您在帳 **[!UICONTROL Profile Merge Rule]** 戶中定義的預設值。 若要進一步瞭解 [!UICONTROL Profile Merge Rules] 專用的 [檔案](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html)。
 * 部分特徵和區段不支援做為基準或目標對象。 [!UICONTROL Predictive Audiences] 當選擇下列其中一項作為基準或目標對象時，模型將無法保存：
@@ -118,7 +118,7 @@ ht-degree: 9%
    * 算法特徵；
    * 第二方和第三方特徵。
 
-## 資料匯出控制{#dec}
+## [!UICONTROL Data Export Controls] {#dec}
 
 模型建立的預 [!UICONTROL Predictive Audiences] 測性區段會從 [](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) 下列第一方資料來源繼承「資料匯出控制」:
 
@@ -129,7 +129,7 @@ ht-degree: 9%
 
 具有不屬於區段隱私權限制之其他限制的特 [!UICONTROL Predictive Audiences] 徵，將會排除在培訓階段之外，不會對模型產生影響。
 
-## 基於角色的訪問控制{#rbac}
+## [!UICONTROL Role-Based Access Controls] {#rbac}
 
 您為角色和對象分類選擇的特徵和區段受Audience Manager角色型存 [取控制的約束](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/administration/administration-overview.html)。
 
