@@ -1,21 +1,24 @@
 ---
 description: 進行呼叫時，DCS會接受標準或序號格式的金鑰值資料。 請檢閱本節，以瞭解如何設定標準和序號關鍵值資料的格式。
 seo-description: 進行呼叫時，DCS會接受標準或序號格式的金鑰值資料。 請檢閱本節，以瞭解如何設定標準和序號關鍵值資料的格式。
-seo-title: 在DCS呼叫中格式化鍵值對
+seo-title: 格式化 DCS 呼叫中的索引鍵值配對
 solution: Audience Manager
-title: 在DCS呼叫中格式化鍵值對
+title: 格式化 DCS 呼叫中的索引鍵值配對
 uuid: af02f2a1-4388-4074-ab4e-66ee82023f1c
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
 
-# 在DCS呼叫中格式化鍵值對 {#formatting-key-value-pairs-in-dcs-calls}
+# 格式化 DCS 呼叫中的索引鍵值配對 {#formatting-key-value-pairs-in-dcs-calls}
 
-進行呼叫時，會接 [!UICONTROL DCS] 受標準或序號格式的金鑰值資料。 請檢閱本節，以瞭解如何設定標準和序號關鍵值資料的格式。
+進行呼叫時，會接 [!DNL DCS] 受標準或序號格式的金鑰值資料。 請檢閱本節，以瞭解如何設定標準和序號關鍵值資料的格式。
 
-## 標準和序號的金鑰值配對 {#standard-serialized}
+## Standard and Serialized Key-Value Pairs {#standard-serialized}
 
 <table id="table_A220F9B359F34C6EA7B83618FC22EE3A"> 
  <thead> 
@@ -41,7 +44,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 序列化鍵值對的分隔符和分隔符 {#delimiters-separators}
 
-對於序列化的鍵值配對，您必須指定這些變數內和之間分隔值的標籤。 Audience manager需要下列分隔字元和分隔符號：
+對於序列化的鍵值配對，您必須指定這些變數內和之間分隔值的標籤。 Audience Manager需要下列分隔字元和分隔符號：
 
 <table id="table_8FD4E6B9506943AEA619D4089913ECBC"> 
  <thead> 
@@ -67,7 +70,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 >[!MORELIKETHIS]
 >
->* [將資料傳送至DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)
+>* [將資料傳送至 DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)
 >* [DCS支援的關鍵值字首碼和變數](../../../api/dcs-intro/dcs-api-reference/dcs-keys.md)
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
+>* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
 
