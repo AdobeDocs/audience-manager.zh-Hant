@@ -1,19 +1,22 @@
 ---
-description: 概述Audience manager如何與協力廠商執行非同步批次資料交換。
-seo-description: 概述Audience manager如何與協力廠商執行非同步批次資料交換。
-seo-title: 批資料傳輸流程說明
+description: 概述Audience Manager如何與協力廠商執行非同步批次資料交換。
+seo-description: 概述Audience Manager如何與協力廠商執行非同步批次資料交換。
+seo-title: 批次資料傳輸流程說明
 solution: Audience Manager
-title: 批資料傳輸流程說明
-uuid: a9ee940-151c-44f8-9fe9-8ab47d8fa45c
+title: 批次資料傳輸流程說明
+uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 6%
 
 ---
 
 
-# 批資料傳輸流程說明 {#batch-data-transfer-process-described}
+# 批次資料傳輸流程說明 {#batch-data-transfer-process-described}
 
-概述Audience manager如何與協力廠商執行非同步批次資料交換。
+概述如何執行 [!DNL Audience Manager] 與協力廠商的非同步批次資料交換。
 
 ## 批次資料整合
 
@@ -30,7 +33,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 ## 資料整合步驟
 
 1. 使用者瀏覽客戶網站。
-1. Audience manager和第三方資料提供者會為訪客指派唯一ID（通常使用Cookie）。
-1. Audience manager會呼叫協力廠商資料提供者，以符合訪客ID。
-1. 排程的請求（通常在每日間隔內）會在Audience manager和您的第三方資料提供者之間交換訪客區段資料。
+1. Audience Manager和第三方資料提供者會為訪客指派唯一ID（通常使用Cookie）。
+1. Audience Manager會呼叫協力廠商資料提供者，以符合訪客ID。
+1. 排程的請求（通常在每日間隔內）會在Audience Manager和您的第三方資料提供者之間交換訪客區段資料。
 1. 每當處理傳 [!UICONTROL Server-to-Server] 入檔案時，收據會透過電子郵件傳送給合作夥伴解決方案，如果已設定，則會傳送給合作夥伴。 如需詳細資訊，請參 [閱傳入處理後傳送給合作夥伴的範例訊息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)。
