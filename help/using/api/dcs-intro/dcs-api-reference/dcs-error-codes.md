@@ -6,7 +6,7 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # DCS 錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
-由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!UICONTROL DCS]出所產生的錯誤碼和訊息。
+由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!DNL DCS]出所產生的錯誤碼和訊息。
 
 In the tables below, *italics* represents a variable placeholder.
 
@@ -236,7 +236,7 @@ In the tables below, *italics* represents a variable placeholder.
   </tr>
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
-   <td colname="col2"> <p>客戶ID已捨棄，因為它已超出指定名稱空間的限制。 命名空間ID <code><i>ID</i></code>是，客戶ID是 <code><i>ID</i></code>。 </p> </td> 
+   <td colname="col2"> <p>客戶ID已捨棄，因為它已超出指定命名空間的限制。 命名空間ID <code><i>ID</i></code>是，客戶ID是 <code><i>ID</i></code>。 </p> </td> 
    <td colname="col3"> <p>如果在DCS呼叫上針對相同的命名空間(<code> DPID</code>)宣告3個以上的客戶ID，則會傳回 <span class="wintitle"> 此錯誤</span> 碼。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此範例 <span class="wintitle"> DCS請求中</span> ，有4個ID已宣告用於相同的命名空間（整合程式碼為1）。 其中一個ID被捨棄，並傳回錯誤310。 </p> </td> 
   </tr> 
   <tr> 
@@ -275,7 +275,7 @@ In the tables below, *italics* represents a variable placeholder.
 
 ## 錯誤代碼消息示例 {#sample-error-codes}
 
-返 [!UICONTROL DCS] 回對象或HTTP響應 [!DNL JSON] 字串中X-標題中的錯誤代碼和消息。
+返 [!DNL DCS] 回對象或HTTP響應 [!DNL JSON] 字串中X-標題中的錯誤代碼和消息。
 
 ### 範例DCS錯誤碼和訊息
 
@@ -298,4 +298,4 @@ In the tables below, *italics* represents a variable placeholder.
 
 由X-標題擷取的錯誤碼會像這樣出現在URL字串中 `X-Error: 101,102`。
 
-[競賽條件與錯誤處理](../../../api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
+[競爭條件與錯誤處理](../../../api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
