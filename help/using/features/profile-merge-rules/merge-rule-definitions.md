@@ -1,19 +1,22 @@
 ---
 description: 合併規則選項可讓您控制Audience Manager用於區段的資料類型。 合併規則可包含由Profile Link裝置圖形、Adobe Experience Cloud Device Co-op和／或與Audience Manager整合的其他協力廠商裝置圖形提供者所映射的裝置設定檔。 您最多可以建立4個配置檔案合併規則。
 seo-description: 合併規則選項可讓您控制Audience Manager用於區段的資料類型。 合併規則可包含由Profile Link裝置圖形、Adobe Experience Cloud Device Co-op和／或與Audience Manager整合的其他協力廠商裝置圖形提供者所映射的裝置設定檔。 您最多可以建立4個配置檔案合併規則。
-seo-title: 定義的配置檔案合併規則選項
+seo-title: 定義的設定檔合併規則選項
 solution: Audience Manager
-title: 定義的配置檔案合併規則選項
+title: 定義的設定檔合併規則選項
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1084'
+ht-degree: 6%
 
 ---
 
 
 # Profile Merge Rules Options Defined {#profile-merge-rule-options-defined}
 
-合併規則選項可讓您控制Audience Manager用於區段的資料類型。 合併規則可包含由裝置圖形、 [!UICONTROL Profile Link][!UICONTROL Adobe Experience Cloud Device Co-op]和／或與Audience Manager整合的其他協力廠商裝置圖形提供者所映射的裝置設定檔。 最多可建立4個 [!UICONTROL Profile Merge Rules]。 第四個 [!UICONTROL Profile Merge Rule] 方案僅適用於購買附加元件 [!UICONTROL People-Based Destinations] 的客戶。
+The merge rule options let you control the type of data [!DNL Audience Manager] uses for segmentation. 合併規則可包括由裝置圖形、 [!UICONTROL Profile Link] 和／或與 [!UICONTROL Adobe Experience Cloud Device Co-op]其整合的第三方裝置圖形提供者映射的裝置描述檔 [!DNL Audience Manager]。 You can create a maximum of 4 [!UICONTROL Profile Merge Rules]. 第四個 [!UICONTROL Profile Merge Rule] 方案僅適用於購買附加元件 [!UICONTROL People-Based Destinations] 的客戶。
 
 通過從 [!UICONTROL Profile Merge Rule] 中介紹的選項進行選擇來構建 [!UICONTROL Profile Merge Rule Setup]。
 
@@ -21,21 +24,21 @@ source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
 
 ## Profile Merge Rule Options Overview {#overview}
 
-「描述檔合併規則」允許許多規則組合，每個組合都針對特定使用案例。 請參閱下表，以取得有關何時使用每個規則組合的詳細資訊。
+[!UICONTROL Profile Merge Rules] 允許許多規則組合，每個組合都針對特定使用案例。 請參閱下表，以取得有關何時使用每個規則組合的詳細資訊。
 
-| 跨裝置選項 | 裝置選項 | 可用性 | 評估類型 | Audience Lab支援 | 使用個案 |
+| [!UICONTROL Cross-Device Option] | [!UICONTROL Device Option] | 可用性 | 評估類型 | [!UICONTROL Audience Lab] 支援 | 使用個案 |
 | ------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----| -------------------- |
-| 無跨裝置描述檔 | 裝置設定檔 | 所有客戶 | 即時和批次 | 是 | [裝置定位](merge-rule-targeting-options.md#device-personalization) |
-| 無跨裝置描述檔 | 外部裝置圖表（包括Co-op裝置圖表） | 所有客戶 | 即時和批次 | 無 | [擴充裝置定位](external-graph-use-cases.md#audience-expansion) |
-| 目前已驗證的設定檔 | 無設備配置檔案 | 所有客戶 | 僅即時 | 無 | [共用裝置定位](merge-rule-targeting-options.md#target-shared-devices) |
-| 上次驗證的設定檔 | 裝置設定檔 | 所有客戶 | 即時和批次 | 是 | [線上／離線定位](merge-rule-targeting-options.md#device-household-targeting) |
-| 上次驗證的設定檔 | 描述檔連結裝置圖表 | 所有客戶 | 即時和批次 | 是 | [跨裝置定位](profile-link-use-case.md#cross-device-personalization) |
-| 上次驗證的設定檔 | 外部裝置圖表（包括Co-op裝置圖表） | 所有客戶 | 即時和批次 | 無 | [進階跨裝置定位](external-graph-use-cases.md#advanced-graph-expansion) |
-| 所有跨裝置描述檔 | 不適用 | 個人型 [目標客戶獨享](../destinations/people-based-destinations-overview.md) | 僅批 | 無 | [以人為本的目標鎖定](merge-rule-targeting-options.md#all-cross-device) |
+| [!UICONTROL No Cross-Device Profile] | [!UICONTROL Device Profile] | 所有客戶 | 即時和批次 | 是 | [裝置定位](merge-rule-targeting-options.md#device-personalization) |
+| [!UICONTROL No Cross-Device Profile] | [!UICONTROL External Device Graph] (包括 [!UICONTROL Co-op Device Graph]) | 所有客戶 | 即時和批次 | 無 | [擴充裝置定位](external-graph-use-cases.md#audience-expansion) |
+| [!UICONTROL Current Authenticated Profiles] | [!UICONTROL No Device Profile] | 所有客戶 | 僅即時 | 無 | [共用裝置定位](merge-rule-targeting-options.md#target-shared-devices) |
+| [!UICONTROL Last Authenticated Profiles] | [!UICONTROL Device Profile] | 所有客戶 | 即時和批次 | 是 | [線上／離線定位](merge-rule-targeting-options.md#device-household-targeting) |
+| [!UICONTROL Last Authenticated Profiles] | [!UICONTROL Profile Link Device Graph] | 所有客戶 | 即時和批次 | 是 | [跨裝置定位](profile-link-use-case.md#cross-device-personalization) |
+| [!UICONTROL Last Authenticated Profiles] | [!UICONTROL External Device Graph] (包括 [!UICONTROL Co-op Device Graph]) | 所有客戶 | 即時和批次 | 無 | [進階跨裝置定位](external-graph-use-cases.md#advanced-graph-expansion) |
+| [!UICONTROL All Cross-Device Profiles] | 不適用 | 個人型 [目標客戶獨享](../destinations/people-based-destinations-overview.md) | 僅批 | 無 | [以人為本的目標鎖定](merge-rule-targeting-options.md#all-cross-device) |
 
 ## 配置檔案合併規則段評估 {#segment-evaluation}
 
-視您的 [!UICONTROL Profile Merge Rules] 設定而定，Audience Manager可以即時、批次或同時執行區段評估。
+視您的設 [!UICONTROL Profile Merge Rules] 定而 [!DNL Audience Manager] 定，可即時、批次或同時執行區段評估。
 
 * 即時區段評估需要 [!DNL DCS] 讓訪客即時存取您的數位屬性，以符合區段資格。
 * 批次區段評估是針對先前的合格特徵執行。
@@ -104,13 +107,13 @@ source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 描述檔連結裝置圖表</span></b> </p> </td> 
-   <td colname="col2"> <p>告訴 <span class="keyword"> Audience Manager</span> ，從目前裝置和使用者已驗證的其他多達100部裝置讀取個人檔案。 此裝置圖表是以您在 <span class="keyword"> Audience Manager中的第一方資料為基礎</span>。 它最適合在數位資產中擁有高等級驗證的客戶。 「描 <span class="wintitle"> 述檔連結</span> 」裝置圖表會即時更新。 當您選取「目前已驗證的設定檔」或「上 <b><span class="uicontrol"> 次已驗證的設定檔</span></b> 」時 <b><span class="uicontrol"> ，此選項即可使用</span></b>。 使用此選項時，您只能選擇單一已驗證的個人檔案(<span class="keyword"> Audience Manager</span> 會自動讓其他人昏倒)。 另請參閱描述 <a href="profile-link-use-case.md"> 檔連結裝置圖表使用案例</a>。 </p> </td>
+   <td colname="col2"> <p>告訴 <span class="keyword"> Audience Manager</span> ，從目前裝置和使用者已驗證的其他多達100部裝置讀取個人檔案。 此裝置圖表是以您在 <span class="keyword"> Audience Manager中的第一方資料為基礎</span>。 它最適合在數位資產中擁有高等級驗證的客戶。 「描 <span class="wintitle"> 述檔連結</span> 」裝置圖表會即時更新。 當您選取「目前已驗證的設定檔」或「上 <b><span class="uicontrol"> 次已驗證的設定檔</span></b> 」時 <b><span class="uicontrol"> ，此選項即可使用</span></b>。 使用此選項時，您只能選擇單一已驗證的個人檔案(<span class="keyword"> Audience Manager</span> 會自動讓其他人昏倒)。 See also, <a href="profile-link-use-case.md"> Profile Link Device Graph Use Cases</a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 合作裝置圖表</span></b> </p> </td> 
    <td colname="col2"> <p>告 <span class="keyword"> 訴Audience Manager</span> ，使用 <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud Device Co-op提供的連結，從目前裝置和多達100台其他裝置讀取個人檔案</a>。 </p> <p><span class="keyword"> Device Co-op</span> 是數位合作社，參與客戶在此分享裝置連結資訊。Device <span class="keyword"> Co-op</span> ，會在裝置圖表中處理 <span class="term"> 此資料</span>。 裝置圖形將裝置連結在一起，形成裝置叢集。 這些連結是以概率和 <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/links.html" format="https" scope="external"> 確定性資料建立</a>。 群集表示未知人員使用的一組設備。 <span class="keyword">Device Co-op</span> 會在其成員間分享這些叢集，如此有助於它們為其客戶提供珍貴而一致的跨裝置體驗。 </p> <p> 如需Device Co-op的詳 <span class="wintitle"> 細資訊</span>，請參閱： </p> <p> 
      <ul id="ul_8EDA7D092ECD444C8C19CDC7534D84DE"> 
-      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html" format="https" scope="external"> Device Co-op概觀</a> </li> 
+      <li id="li_323BC5993D6A4BA3962169BF0ED37C55"> <a href="https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/home.translate.html" format="https" scope="external"> Device Co-op概觀</a> </li> 
       <li id="li_0BDB2144EC584002B3B9F1D64B6CD580"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/about/requirements.html" format="https" scope="external"> 成員資格需求</a> </li> 
       <li id="li_632D1014909146758F07CFAC79B90CFE"> <a href="https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html" format="https" scope="external"> 裝置圖表： 內部流程和輸出</a> </li>
      </ul> </p> </td>
@@ -128,7 +131,7 @@ source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
 
 ## 外部合併策略 {#external-merge-policies}
 
-根據Audience Manager以外定義的合併規則，從其他Experience Cloud解決方案自動建立的受眾細分會標籤為使用 [!UICONTROL External Merge Policy]。 例如，請參 [閱「Audience Manager與Adobe Experience Platform之間的觀眾共用」](../../integration/integration-aep/aam-aep-audience-sharing.md)。
+根據外部定義的合併規則，從其他Experience Cloud解決方案自動建立的受眾區 [!DNL Audience Manager]段會標示為使用 [!UICONTROL External Merge Policy]。 For example, see [Audience Sharing Between Audience Manager and Adobe Experience Platform](../../integration/integration-aep/aam-aep-audience-sharing.md).
 
 >[!MORELIKETHIS]
 >
