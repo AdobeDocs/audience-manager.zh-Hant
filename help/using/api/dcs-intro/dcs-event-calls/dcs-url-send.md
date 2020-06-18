@@ -1,27 +1,30 @@
 ---
 description: 請從這裡開始，以取得有關對DCS進行/event呼叫的資訊。 本節包含有關呼叫語法、參數、格式和請求範例的資訊。
 seo-description: 請從這裡開始，以取得有關對DCS進行/event呼叫的資訊。 本節包含有關呼叫語法、參數、格式和請求範例的資訊。
-seo-title: 將資料傳送至DCS
+seo-title: 將資料傳送至 DCS
 solution: Audience Manager
-title: 將資料傳送至DCS
+title: 將資料傳送至 DCS
 uuid: 024e307d-bfcb-46cf-ac3a-fc71df0248fe
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 6%
 
 ---
 
 
-# 將資料傳送至DCS {#send-data-to-the-dcs}
+# 將資料傳送至 DCS {#send-data-to-the-dcs}
 
-請從這裡開始，以取得有關 `/event` 呼叫的資訊 [!UICONTROL DCS]。 本節包含有關呼叫語法、參數、格式和請求範例的資訊。
+請從這裡開始，以取得有關 `/event` 呼叫的資訊 [!DNL DCS]。 本節包含有關呼叫語法、參數、格式和請求範例的資訊。
 
 >[!NOTE]
 >
->In the code and examples, *italics* represents a variable placeholder. 使用此方法傳送資料至預留位置時，請用實際值 [!UICONTROL DCS] 取代預留位置。
+>In the code and examples, *italics* represents a variable placeholder. 使用此方法傳送資料至預留位置時，請用實際值 [!DNL DCS] 取代預留位置。
 
 ## 呼叫語法 {#dcs-call-syntax}
 
-傳送資 `URL` 料至的基本字串使用 [!UICONTROL DCS] 下列語法。
+傳送資 `URL` 料至的基本字串使用 [!DNL DCS] 下列語法。
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -29,11 +32,11 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 >[!NOTE]
 >
->您也可以使用方法將 [!UICONTROL DCS] 資料傳送至 `POST` 。 呼叫語法在 [DCS API方法中說明](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)。
+>您也可以使用方法將 [!DNL DCS] 資料傳送至 `POST` 。 呼叫語法在 [DCS API方法中說明](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)。
 
 ## 呼叫參數 {#dcs-call-parameters}
 
-下表定義了簡單調用的基本 [!UICONTROL DCS] 元件。
+下表定義了簡單調用的基本 [!DNL DCS] 元件。
 
 <table id="table_5F6A5B324EB848168543386516FBF384"> 
  <thead> 
@@ -69,7 +72,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
      <ul id="ul_624DC78759F74AD8920220058E54E083"> 
       <li id="li_091E5B4820EC4A93B775433E428E74AB">將字串資料用雙引號括住(例如 <code> age="41 to 55"</code>)。 </li> 
       <li id="li_C558E3BA6EE34413BBBB962D4CD0D10E">您可以在單一值上傳遞多個按鍵(例如 <i><code>key</i>=<i>val1,val2,val3</i></code></i>)。 </li> 
-     </ul> </p> <p>請參 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md"> 閱在DCS呼叫中格式化鍵值配對</a>。 </p> </td>
+     </ul> </p> <p>See <a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md"> Formatting Key-Value Pairs in DCS Calls</a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -85,7 +88,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 ## 範例呼叫 {#dcs-sample-call}
 
-此範例顯示虛構公司 [!DNL Acme, Inc.] 透過呼叫傳送 [!UICONTROL DCS] 資料至 [!DNL HTTP] 該公司。 請注意，此呼叫包含選 `d_dst=1`用 `d_rtbd=json`參數 `d_cb=callback`。 這些指示 [!DNL Acme] 想要從具有回叫 [!DNL JSON] 功能 [!UICONTROL DCS] 的接收回應。 記住，這只是個例子。 請勿剪下並貼上此程式碼。
+此範例顯示虛構公司 [!DNL Acme, Inc.] 透過呼叫傳送 [!DNL DCS] 資料至 [!DNL HTTP] 該公司。 請注意，此呼叫包含選 `d_dst=1`用 `d_rtbd=json`參數 `d_cb=callback`。 這些指示 [!DNL Acme] 想要從具有回叫 [!DNL JSON] 功能 [!DNL DCS] 的接收回應。 記住，這只是個例子。 請勿剪下並貼上此程式碼。
 
 ```js
 https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback
@@ -93,9 +96,9 @@ https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_r
 
 ## 後續步驟 {#dcs-next-steps}
 
-既然您已熟悉將資料傳送至網站 [!UICONTROL DCS]，現在就該研究如何從網站取得資料並剖析該資訊了。 請參 [閱從DCS接收資料](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md)。
+既然您已熟悉將資料傳送至網站 [!DNL DCS]，現在就該研究如何從網站取得資料並剖析該資訊了。 See [Receive Data From the DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-receive.md).
 
 >[!MORELIKETHIS]
 >
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
+>* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
 
