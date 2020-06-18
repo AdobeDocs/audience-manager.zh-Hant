@@ -1,31 +1,34 @@
 ---
-description: Audience manager可協助您收集和管理第一方、第二方及第三方資料。
-seo-description: Audience manager可協助您收集和管理第一方、第二方及第三方資料。
+description: Audience Manager 可協助您收集和管理第一方、第二方及第三方資料。
+seo-description: Audience Manager 可協助您收集和管理第一方、第二方及第三方資料。
 seo-title: 收集的資料類型
 solution: Audience Manager
 title: 收集的資料類型
 uuid: a2ddf470-32e6-41ec-a1d7-a6232ef084b9
 translation-type: tm+mt
-source-git-commit: 708c998fbe1cbd3e9acb51e31ee1c89e2f06d28d
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 78%
 
 ---
 
 
-# 收集的資料類型{#types-of-data-collected}
+# 收集的資料類型 {#types-of-data-collected}
 
-Audience manager可協助您收集和管理第一方、第二方及第三方資料。
+[!DNL Audience Manager] 可協助您收集和管理第一方、第二方及第三方資料。
 
-解鎖儲存在多個孤島中的客戶資訊資產是公司當前面臨的最大資料難題之一。 從CRM資料庫、註冊系統到廣告伺服器等，公司都需要有工具來協助將寶貴資料集中化，並將客戶／受眾資訊當成單一策略性資料資產來管理。 Audience manager可協助您解除鎖定孤立的客戶資訊，並管理來自多個來源的資料收集。 收集的資料可以根據資料元素的存留時間(TTL)值進行管理，這可協助發佈者控制所有來源的資料過期。 Audience manager旨在協助您管理下列類型的資料：
+解鎖儲存在多個孤立環境中的客戶資訊資產，是公司目前面臨的最大資料難題之一。From [!DNL CRM] databases, to registration systems, to ad servers, and so forth, companies require tools that help centralize valuable data and manage customer/audience information as a single strategic data asset. [!DNL Audience Manager] 可協助您解除鎖定孤立的客戶資訊，並管理來自多個來源的資料收集。Collected data can be managed based on data element time-to-live ([!DNL TTL]) values, which helps the publisher control data expiration across all sources. [!DNL Audience Manager] 的設計用途是協助您管理下列類型的資料：
 
 | 資料類型 | 資料來源 |
 |---|---|
-| **第一方** | 客戶. 資料是線上（從您網站上的消費者互動）或離線收集。 |
+| **第一方** | 客戶。資料會以線上 (從您網站上的消費者互動) 或離線方式收集。 |
 | **第二方** | 策略合作夥伴和廣告商。 |
-| **第三方** | 資料提供者和／或交換。 資料可包含意圖、人口統計、社交／生活方式、心理變數等資訊。 |
+| **第三方** | 資料提供者和或交換。資料可包含意圖、人口統計、社交/生活風格、心理變數等資訊。 |
 
-## First-Party Data Collection {#first-party-data}
+## 第一方資料收集 {#first-party-data}
 
-第一方資料收集是Audience manager的主要功能。 此核心能力可解決我們客戶（發行者或廣告商）的需求，這些客戶想要將專屬資料當做行銷方案的基石，或針對其他資料來源進行定位和模型建模。
+First-party data collection is a main [!DNL Audience Manager] feature. 我們的客戶 (發佈商或廣告商) 希望將專屬資料當做行銷方案的基石，或針對其他資料來源進行定位和模型建模，而這個核心功能可滿足這些客戶的需求。
 
 <!-- 
 
@@ -33,26 +36,26 @@ c_1st_party_data.xml
 
  -->
 
-Audience manager與客戶合作，瞭解其資料策略，然後將該策略對應回自訂資料收集計畫。 我們的合作夥伴解決方案團隊會與您合作，評估您網站上的網站、原始資料訊號和其他使用者互動。 透過這些資訊，我們將協助您建立量身打造的資料收集策略，從庫存的不同頁面擷取使用者層級的資料訊號。 擷取的資料會儲存並映射回預先定義的分類法，可隨時隨您的業務需求變更進行更新。
+[!DNL Audience Manager] 與客戶合作，瞭解其資料策略，然後將該策略對應回自訂資料收集計畫。我們的合作夥伴解決方案團隊會與您合作，評估網站、原始資料訊號和其他使用者在您網站上的互動。我們將透過這些資訊，協助您建立量身打造的資料收集策略，從您詳細目錄中的不同頁面擷取使用者層級資料訊號。擷取的資料會儲存並對應回預先定義的分類法，且可隨時依您的業務需求變更進行更新。
 
 下列範例說明如何從範例購物頁面擷取潛在資料元素。
 
-![購物車——資料](assets/shopping-cart-data.png)
+![shopping-cart-data](assets/shopping-cart-data.png)
 
 | 項目 | 說明 |
 |---|---|
-| 1 | **性別**. 購物者的名字通常表示其性別。 在我們的例子中，購物者的名字是瑪麗，因此我們知道購物者是女性。 Audience manager不會儲存名稱。 |
-| 2 | **興趣**。 購物車中的物品可能表示各種興趣。 在我們的例子中，瑪麗在健身器材上花了很多錢。 |
-| 3 | **住宅類型**。 根據運送和／或帳單地址，您可以推斷Mary是為自己還是為公司購買健身器材。 |
-| 4 | **位置**. 在確定位置時，郵遞區號比IP位址更可靠。 |
-| 5 | **促銷親和力**。 如果購物者使用促銷代碼或禮品卡，他們很可能是尋找最優惠交易的廉價買家。 |
-| 6 | **消費能力**。 與ZIP+4代碼相關的價格資料表示特定位置的消費能力。 |
+| 1 | **性別**。購物者的名字通常可看出其性別。在範例中，購物者的名字是 Mary，由此可知購物者是女性。Audience Manager 絕不會儲存姓名。 |
+| 2 | **興趣**。購物車中的商品可能表示各種興趣。在範例中，Mary 花了很多錢購買健身器材。 |
+| 3 | **房屋類型**。根據運送和/或帳單地址，可以推斷 Mary 是為自己還是為公司購買健身器材。 |
+| 4 | **位置**。[!DNL ZIP] 在確定位置時，代碼比IP地址更可靠。 |
+| 5 | **促銷活動相似性**。如果購物者使用促銷代碼或禮品卡，他們很可能是尋找最優惠交易的精打細算買家。 |
+| 6 | **消費能力**。Price data correlated with [!DNL ZIP+4] codes indicate spending power of a given location. |
 
-在收集原始資料後，它會映射回Audience manager平台中客戶定義的特徵。 可隨時調整分類和資料映射，而不需變更資料收集代碼。
+After the raw data is collected, it gets mapped back to customer-defined traits within the [!DNL Audience Manager] platform. 分類法和資料對應都可隨時調整，不需變更資料收集程式碼。
 
 ## 第二方資料收集 {#second-party-data}
 
-第二方資料來自策略商業夥伴（不是發佈商資料）。 收集和管理這些資訊的方式與第一方資料相同。
+第二方資料來自策略商業夥伴 (並非發佈商資料)。收集和管理這些資訊的方式與第一方資料相同。
 
 <!-- 
 
@@ -60,15 +63,15 @@ c_2nd_party_data.xml
 
  -->
 
-在第二方資料案例中，廣告商會將自己的資料資產傳送給發佈者，以便將該資訊與發佈者的資料結合，然後執行更具針對性的廣告程式。 此外，出版業者可與廣告商合作，以擴大其受眾群。 在大多數情況下，這些安排涉及的合約關係僅限於將Audience Manager容器標籤放在合作夥伴網站上，以利資料收集和共用。
+在第二方資料情境中，廣告商會將自己的資料資產傳送給發佈商，以便將該資訊與發佈商的資料結合，然後執行更具針對性的廣告方案。此外，發佈商可與廣告商合作以擴大其受眾群規模。In most cases, these arrangements involve contractual relationships limited to putting the [!DNL Audience Manager] container tag on the partner site to facilitate data collection and sharing.
 
-第二方資料收集與再行銷的範例可能包括服裝零售商收集其產品的資料，然後與主要合作夥伴分享這些資訊。 在這種情況下，零售商可以在Audience manager合作夥伴網站上為選擇各種夾克顏色和尺寸的消費者提供不同的廣告。
+第二方資料收集與再行銷的範例，可能包含服裝零售商收集其產品的相關資料，然後與主要合作夥伴共用這些資訊。In this case, the retailed could serve different ads across an [!DNL Audience Manager] partner site for consumers who chose various jacket colors and sizes.
 
 ![](assets/shopping-cart-traits.png)
 
-## Third-Party Data Collection {#third-party-data}
+## 第三方資料收集 {#third-party-data}
 
-協力廠商資料是由Audience manager以外的廠商收集和分享的資訊。
+第三方資料是由 Audience Manager 以外的廠商收集和共用的資訊。
 
 <!-- 
 
@@ -76,16 +79,16 @@ c_3rd_party_data.xml
 
  -->
 
-第三方資料可用來限定現有資料區段（例如年齡、家庭收入等）、提供有需求但無法取得的資料，或用來針對來自第一方及第二方資料的已知使用者群進行類似模型。 Audience manager可與許多第三方資料提供者合作，並協助您瞭解這些資料提供者收集的資料類型，以便與每個提供者達成正確的策略交易。
+第三方資料可用來授與現有資料區段的資格 (例如年齡、家庭收入等)、提供有需求但無法取得的資料，或用來針對來自第一方及第二方資料的已知使用者群進行相似建模。[!DNL Audience Manager] 可與許多第三方資料提供者合作，且可協助您瞭解這些資料提供者收集的資料類型，讓您能與每個提供者進行正確的策略交易。
 
 >[!NOTE]
 >
->如需支援的協力廠商資料提供者完整清單，請 [!DNL Audience Manager]參閱 [Adobe Audience Finder](https://www.adobe-audience-finder.com/)。
+>如需 [!DNL Audience Manager] 支援的第三方資料提供者完整清單，請參閱 [Adobe Audience Finder](https://www.adobe-audience-finder.com/)。
 
-Audience manager會根據其可用的API和資料集，與其他資料提供者整合。 資料收集可在使用者瀏覽您的網站時即時運作，或透過帶外方法運作，其中合作夥伴之間的ID會同步化，而資料會在使用者離開您的網站後在伺服器之間傳輸。 無論是哪種情況，Audience Manager客戶都能在我們的平台上同步第三方資料，這表示每個客戶或網域都不必執行自己的同步。 這有助於增加觸及面，並減少頁面上的伺服器呼叫。
+[!DNL Audience Manager] 根據其他資料提供者的可用資料集與 [!DNL APIs] 其他資料提供者整合。 資料收集會在使用者瀏覽您的網站時即時執行，或是透過頻外方法執行，在使用者離開您的網站後，於合作夥伴之間同步 ID，並在伺服器之間傳輸資料。In either case, [!DNL Audience Manager] clients get the benefit of having third-party data synchronized on our platform, which means each client, or domain, does not have to perform its own synchronization. 這麼做有助於增加觸及率，以及減少頁面上的伺服器呼叫。
 
-## 符合合作夥伴 {#match-partners}
+## 比對合作夥伴 {#match-partners}
 
-許多客戶選擇與協力廠商資料比對合作夥伴合作。 這些實體與具有註冊要求的網站有關係，並可根據客戶的註冊網路，透過即時比對客戶資料檔案來處理客戶資料檔案。
+許多客戶選擇與第三方資料比對合作夥伴合作。這些實體與具有註冊要求的網站有關係，且可根據客戶的註冊網路，透過即時比對客戶資料檔案來處理這些檔案。
 
 ![data-provider-match](assets/data-provider-match.png)
