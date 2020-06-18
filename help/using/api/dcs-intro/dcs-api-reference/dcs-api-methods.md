@@ -1,21 +1,24 @@
 ---
 description: 使用GET或POST方法將資料傳送至DCS API。
 seo-description: 使用GET或POST方法將資料傳送至DCS API。
-seo-title: DCS API方法
+seo-title: DCS API 方法
 solution: Audience Manager
-title: ' DCS API方法'
+title: DCS API 方法
 uuid: 6e407458-11d4-4342-a84a-512afa5fc183
 translation-type: tm+mt
-source-git-commit: bdea2609b84d7f80d67452b4c43e11cbef01a368
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 7%
 
 ---
 
 
-# DCS API方法 {#dcs-api-methods}
+# DCS API 方法 {#dcs-api-methods}
 
-使用或方法 [!UICONTROL DCS] 將資 [!DNL API] 料傳 `GET``POST` 送至。
+使用或方法 [!DNL DCS] 將資 [!DNL API] 料傳 `GET``POST` 送至。
 
-您可以使用其中一 [!UICONTROL DCS] 種或方法將資料 `GET` 傳送 `POST` 至。 請使用捲曲功能來檢視下面的範例 [呼叫](https://curl.haxx.se/)。 在這3個樣本呼叫中，我們會新增訊號 `c_likes = famous popstar` 並 `c_loves = famous actress` 加入裝置描述檔 `12345678901234567890123456789012345678`。
+您可以使用其中一 [!DNL DCS] 種或方法將資料 `GET` 傳送 `POST` 至。 請使用捲曲功能來檢視下面的範例 [呼叫](https://curl.haxx.se/)。 在這3個樣本呼叫中，我們會新增訊號 `c_likes = famous popstar` 並 `c_loves = famous actress` 加入裝置描述檔 `12345678901234567890123456789012345678`。
 
 
 ## 透過GET傳送資料 {#send-data-via-get}
