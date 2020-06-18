@@ -7,10 +7,10 @@ solution: Audience Manager
 title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 translation-type: tm+mt
-source-git-commit: 8f5dadb44ada3822b7336827c8863a7277b687c3
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 3%
+source-wordcount: '1378'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 3%
 
 使用 [!UICONTROL Actionable Log Files]時，廣告伺服器記錄檔的資訊會以 [!DNL Audience Manager] 您擷取即時網站互動資料的相同方式擷取。 [!DNL Audience Manager] 連線至您的廣告伺服器記錄檔儲存區，分析記錄檔中的資訊，並將記錄檔資料作為可操作訊號傳送至我們的資 [料收集伺服器](../../reference/system-components/components-data-collection.md#dcs-pcs)。
 
-您仍需要設定規則型特徵，以擷取可操作的訊號。 瞭解如何在 [Audience Manager UI或使用我們的大量管理工具](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) ，設定以規 [則為基礎的特徵](../../reference/bulk-management-tools/bulk-create.md)。 向下捲動至「可 [操作的訊號](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) 」區段，以取得您可在規則型特徵中使用之所有鍵的清單。
+您仍需要設定規則型特徵，以擷取可操作的訊號。 瞭解如何在 [Audience Manager使用者介面或使用我們的批量管理工具](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) ，設 [定規則型特徵](../../reference/bulk-management-tools/bulk-create.md)。 向下捲動至「可 [操作的訊號](../../integration/media-data-integration/actionable-log-files.md#actionable-signals) 」區段，以取得您可在規則型特徵中使用之所有鍵的清單。
 
 >[!IMPORTANT]
 >
@@ -249,7 +249,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_activity=1234&d_creative=24122&d_placemebt=3442&d_bu=3983524&d_campaign=7321391&d_adsrc=11111
 ```
 
-## 在Audience Manager UI中使用可操作的信號 {#actionable-signals-in-ui}
+## 在Audience Manager使用者介面中使用可操作的訊號 {#actionable-signals-in-ui}
 
 您可以在「信號搜尋」介面中檢視傳入的可 [操作信號](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md) 。
 
@@ -298,6 +298,6 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 >[!MORELIKETHIS]
 >
->* [將DCM資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
->* [受眾最佳化報告](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
+>* [將 DCM 資料檔案匯入 Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+>* [受眾最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
 
