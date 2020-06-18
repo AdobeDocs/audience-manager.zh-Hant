@@ -1,19 +1,22 @@
 ---
 description: 可讓您以程式設計方式列出Audience Manager DCS地區的方法。
 seo-description: 可讓您以程式設計方式列出Audience Manager DCS地區的方法。
-seo-title: DCS地區API方法
+seo-title: DCS 地區 API 方法
 solution: Audience Manager
-title: DCS地區API方法
+title: DCS 地區 API 方法
 uuid: 00b70927-b3b7-46bb-8be1-37c6100ecf80
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 14%
 
 ---
 
 
-# DCS地區API方法 {#dcs-region-api-methods}
+# DCS 地區 API 方法 {#dcs-region-api-methods}
 
-可讓您以程式設計方式列出Audience Manager地區 [!UICONTROL DCS] 的方法。
+可讓您以程式設計方式列出Audience Manager地區 [!DNL DCS] 的方法。
 
 <!-- c_rest_api_regions.xml -->
 
@@ -21,7 +24,7 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
 
 ## 列出特定DCS地區 {#list-specific-dcs-region}
 
-列 `GET` 出特定區域的方 [!UICONTROL DCS] 法。
+列 `GET` 出特定區域的方 [!DNL DCS] 法。
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -51,7 +54,7 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
 
 ## 列出DCS地區 {#list-dcs-regions}
 
-一種 `GET` 列出區域的 [!UICONTROL DCS] 方法。
+一種 `GET` 列出區域的 [!DNL DCS] 方法。
 
 <!-- r_rest_api_regions_list.xml -->
 
