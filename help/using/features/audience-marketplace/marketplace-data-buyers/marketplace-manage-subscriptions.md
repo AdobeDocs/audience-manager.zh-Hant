@@ -1,18 +1,21 @@
 ---
 description: Marketplace是資料購買者研究並訂閱公開和私人資料饋送的地方。 請依照下列步驟訂閱公開資料饋送。
 seo-description: Marketplace是資料購買者研究並訂閱公開和私人資料饋送的地方。 請依照下列步驟訂閱公開資料饋送。
-seo-title: 管理資料饋送訂閱
+seo-title: 管理資料摘要訂閱
 solution: Audience Manager
-title: 管理資料饋送訂閱
+title: 管理資料摘要訂閱
 topic: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
 translation-type: tm+mt
-source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '2186'
+ht-degree: 2%
 
 ---
 
 
-# 管理資料饋送訂閱 {#manage-data-feed-subscriptions}
+# 管理資料摘要訂閱 {#manage-data-feed-subscriptions}
 
 資料 [!UICONTROL Marketplace] 購買者可在這裡研究並訂閱公開和私人資料饋送。 請依照下列步驟訂閱公開資料饋送。
 
@@ -88,8 +91,8 @@ source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 1. 按一下 **[!UICONTROL Request Access]**. 這會開啟請求對話方塊。
 1. 在「請求」對話方塊中，為提供者寫上註解，表示您對其資料饋送感興趣，然後按一下 **[!UICONTROL Send]**。 賣方會檢閱您的訊息，並核准或拒絕您的要求。 等候核準時，該資料饋送的清單中會 [!UICONTROL Marketplace] 顯示「已請求」。
 
-   * **[!UICONTROL Request approved]**:清單中的狀 [!UICONTROL Marketplace] 態會變更為「已授予存取權」，您會收到自動通知。 此時，您可以訂閱動態消息。 如需 [指示，請參閱訂閱公用資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) 。
-   * **[!UICONTROL Request denied]**:「已請求」文字會從動態消息 [!UICONTROL Marketplace] 的清單中移除。 您可以嘗試再次訂閱或選擇不同的動態消息。
+   * **[!UICONTROL Request approved]**: 清單中的狀 [!UICONTROL Marketplace] 態會變更為「已授予存取權」，您會收到自動通知。 此時，您可以訂閱動態消息。 如需 [指示，請參閱訂閱公用資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed) 。
+   * **[!UICONTROL Request denied]**: 「已請求」文字會從動態消息 [!UICONTROL Marketplace] 的清單中移除。 您可以嘗試再次訂閱或選擇不同的動態消息。
 
 ## 購買者的資料饋送折扣 {#buyer-discount}
 
@@ -166,7 +169,7 @@ source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 1. 按一下中的資料饋送名稱 [!UICONTROL Marketplace]。
 1. 在該 [!UICONTROL Use Case] 節中，查找要使用的計畫並將滑塊移 **[!UICONTROL Subscription]** 動到 **[!UICONTROL Off]**。
 
-## 資料饋送停用：發生原因及回應方式 {#data-feed-deactivation-reasons}
+## 資料饋送停用： 發生原因及回應方式 {#data-feed-deactivation-reasons}
 
 在中， [!UICONTROL Audience Marketplace]資料提供者可以撤銷您所訂閱之資料饋送的存取權。 如果發生這種事，別驚慌。 我們幫你搞定了。 請檢閱本節，以瞭解與資料饋送停用相關的程式和程式。
 
@@ -189,7 +192,7 @@ source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 
 當資料提供者停用您其中一個資料饋送時， [!DNL Audience Manager] 會傳送電子郵件給您公司中擁有權限的使 [!UICONTROL Administrator] 用者。 有時，電子郵件篩選器會將此郵件分類為垃圾郵件。 因此，您可能會錯過此重要通知。 為協助您識別停用訊息，此電子郵件包含下列元素：
 
-* **寄件者：** 停用電子郵件來自 `aam-noreply@adobe.com`。 專業提示：不要回覆此電子郵件。
+* **寄件者：** 停用電子郵件來自 `aam-noreply@adobe.com`。 專業提示： 不要回覆此電子郵件。
 
 * **主旨行：** 訂閱此處 *的資料饋送名稱* ，已取消。
 
@@ -277,10 +280,10 @@ source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
    * 按一 **[!UICONTROL Explore All Traits]** 下可查看所選資料饋送中所有特徵的詳細資訊。
    * 按一 **[!UICONTROL Request More Details]** 下可向資料提供者詢問有關所選資料饋送的問題，或要求折扣。 此功能會直接將您的注釋和問題傳送至資料提供者。
 
-1. 資料饋送報表量度。 文氏圖表（及相關量度）顯示過去30天的特徵重疊資料。 請參 [閱Marketplace:關於](marketplace-data-buyers.md#about-marketplace) ，以取得詳細資訊。
-   * **[!UICONTROL 30 Day Overlapped Uniques]**:您帳戶中與提供者帳戶中的使用者重疊的獨特使用者數目。 如需獨特使用者的定義，請參閱Audience Manager中ID [索引中的AAM UUID](/help/using/reference/ids-in-aam.md)。
-   * **[!UICONTROL 30 Day Provider Unique Users]**:來自提供者帳戶的獨特使用者數目。
-   * **[!UICONTROL Your Unique Users]**:來自您帳戶的獨特使用者人數。
+1. 資料饋送報表量度。 文氏圖表（及相關量度）顯示過去30天的特徵重疊資料。 請參 [閱Marketplace: 關於](marketplace-data-buyers.md#about-marketplace) ，以取得詳細資訊。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**: 您帳戶中與提供者帳戶中的使用者重疊的獨特使用者數目。 如需獨特使用者的定義，請參閱Audience Manager中ID [索引中的AAM UUID](/help/using/reference/ids-in-aam.md)。
+   * **[!UICONTROL 30 Day Provider Unique Users]**: 來自提供者帳戶的獨特使用者數目。
+   * **[!UICONTROL Your Unique Users]**: 來自您帳戶的獨特使用者人數。
 
 1. **[!UICONTROL Plan Details]** 表. 此表顯示了您可以訂閱資料饋送的使用案例及其定價模型。 請參閱 [瞭解資料饋送使用案例](#use-cases)。
 
@@ -309,7 +312,7 @@ source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 
 ### 啟用
 
-此使用案例可讓您傳送資料至 [目的地](../../../features/destinations/destinations.md)。 在 [!UICONTROL Audience Manager]中，目標是任何第三方系統(廣告伺服器、 [!DNL DSP][!DNL DMP]交換等)您想要與其共用資料。 但是，使用 [!UICONTROL Activation] 案例時，您無法執行重疊報表或測試演算模型中的資料。
+此使用案例可讓您傳送資料至 [目的地](../../../features/destinations/destinations.md)。 在 [!DNL Audience Manager]中，目標是任何第三方系統(廣告伺服器、 [!DNL DSP][!DNL DMP]交換等) 任何其他系統 (廣告伺服器、DSP、廣告網路等)。但是，使用 [!UICONTROL Activation] 案例時，您無法執行重疊報表或測試演算模型中的資料。
 
 >[!MORELIKETHIS]
 >
@@ -318,5 +321,5 @@ source-git-commit: aaf4e178cd6faf8fe18f54454277e4253a524130
 >* [如何報告CPM使用情形](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md#report-cpm-usage)
 >* [訂閱公開資料饋送](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-public-data-feed)
 >* [資料購買者的折扣](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#buyer-discount)
->* [市集：關於](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
+>* [市集： 關於](../../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)
 
