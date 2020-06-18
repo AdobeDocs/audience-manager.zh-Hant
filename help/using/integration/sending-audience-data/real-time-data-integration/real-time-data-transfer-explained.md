@@ -1,19 +1,22 @@
 ---
-description: 概述Audience manager如何與第三方內容供應商執行即時資料傳輸。
-seo-description: 概述Audience manager如何與第三方內容供應商執行即時資料傳輸。
+description: 概述Audience Manager如何與第三方內容供應商執行即時資料傳輸。
+seo-description: 概述Audience Manager如何與第三方內容供應商執行即時資料傳輸。
 seo-title: 描述的即時資料傳輸過程
 solution: Audience Manager
 title: 描述的即時資料傳輸過程
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
 translation-type: tm+mt
-source-git-commit: ea95df8531c00c183f22b09a4a78fc6b35ee279d
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
 
-# 描述的即時資料傳輸過程{#real-time-data-transfer-process-described}
+# Real-Time Data Transfer Process Described{#real-time-data-transfer-process-described}
 
-概述Audience manager如何與第三方內容供應商執行即時資料傳輸。
+概述Audience Manager如何與第三方內容供應商執行即時資料傳輸。
 
 <!-- real-time-data-transfer-explained.xml -->
 
@@ -25,10 +28,10 @@ source-git-commit: ea95df8531c00c183f22b09a4a78fc6b35ee279d
 
 即時資料整合程式的運作方式如下：
 
-1. 使用者瀏覽包含Audience manager代碼的客戶網站。
-1. Audience manager會載入iframe，並呼叫我們 [!UICONTROL Data Collection Server] 的( [!UICONTROL DCS])。
-1. 此 [!UICONTROL DCS] 時會呼叫協力廠商伺服器（即時），以檢查廠商是否有使用者的區段資訊。
+1. 使用者瀏覽包含Audience Manager代碼的客戶網站。
+1. Audience Manager會載入iframe，並呼叫我們 [!UICONTROL Data Collection Server] 的( [!DNL DCS])。
+1. 此 [!DNL DCS] 時會呼叫協力廠商伺服器（即時），以檢查廠商是否有使用者的區段資訊。
 1. 內容提供者會將有關該使用者的區段資訊傳回至Audience Manager。
-1. Audience manager會接收此區段資訊，並可用於定位和建立新特徵和區段。
+1. Audience Manager會接收此區段資訊，並可用於定位和建立新特徵和區段。
 
 ![](assets/rt_reduce70.png)
