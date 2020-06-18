@@ -1,17 +1,20 @@
 ---
 description: 對外即時資料傳輸程式會傳回使用者資料，以POST方法傳入的一連串JSON物件形式傳回。
 seo-description: 對外即時資料傳輸程式會傳回使用者資料，以POST方法傳入的一連串JSON物件形式傳回。
-seo-title: 即時出站資料傳輸
+seo-title: 即時傳出資料傳輸
 solution: Audience Manager
-title: 即時出站資料傳輸
+title: 即時傳出資料傳輸
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
 translation-type: tm+mt
-source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 5%
 
 ---
 
 
-# 即時出站資料傳輸 {#real-time-outbound-data-transfers}
+# 即時傳出資料傳輸 {#real-time-outbound-data-transfers}
 
 出站即時資料傳輸過程將用戶資料作為一系列格式化消 [!DNL JSON] 息發送到目標平台。
 
@@ -21,13 +24,13 @@ source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
 
 要使用此方法，目標平台必須滿足以下要求：
 
-* 它必須提供端點， [!DNL URL] 可縮放以接收來自Audience manager的大量訊息；
+* 它必須提供端點， [!DNL URL] 可縮放以接收來自Audience Manager的大量訊息；
 * 它必須接受格式( [!DNL JSON] )的數`Content-type: application/json`據；
 * 它必須接受安全的 `HTTPS` 資料傳輸。 [!DNL Audience Manager] 將不會通過不安全協定發送 `HTTP` 消息。
 
 ## 頻率
 
-當使用者符合區段的資格時，這種資料傳輸方法可近乎即時傳送資料。 即時訊息只會在使用者線上上且主動可見Audience Manager edge網路時傳送。 （可選）此方法也可以每24小時傳送一批離線或已登入的資料。
+當使用者符合區段的資格時，這種資料傳輸方法可近乎即時傳送資料。 即時訊息只會在使用者線上上且主動可見Audience Manager Edge網路時傳送。 （可選）此方法也可以每24小時傳送一批離線或已登入的資料。
 
 ## 批轉移
 
@@ -66,7 +69,7 @@ source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
     <ul id="ul_159306B0CF304DE0B9A9836D41263E70"> 
      <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GAID): <code> 20914</code> </li> 
      <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA): <code> 20915</code> </li>
-     <li>網頁/Cookie ID:因目的地平台而異</li>
+     <li>網頁/Cookie ID: 因目的平台而異</li>
     </ul> </td> 
   </tr> 
   <tr valign="top"> 
@@ -112,20 +115,20 @@ source-git-commit: 05609645bef676bbd98aa08caf32a4ae2dcb6f00
   <tr valign="top"> 
    <td colname="col1"><code><i>Segmnent.Segment_ID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>區段的識別碼。 在大多數情況下，這是Audience manager產生的區段ID（整數）。 在某些情況下，如果目標平台允許，客戶可以在Audience Manager UI（開啟文字欄位）中定義區段識別碼，然後會反映在此屬性中。 </p> </td> 
+   <td colname="col3"> <p>區段的識別碼。 在大多數情況下，這是Audience Manager產生的區段ID（整數）。 在某些情況下，如果目標平台允許，客戶可以在Audience Manager使用者介面（開放文字欄位）中定義區段識別碼，然後會反映在此屬性中。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.Status</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
    <td colname="col3"> <p>定義群體中使用者的狀態。 接受下列值： </p> 
     <ul id="ul_42C4625E9543494586CF6D851A94E048"> 
-     <li id="li_6F13809ECD78403FB3BDA626403E4B57"><code> 1</code>:作用中（預設） </li> 
-     <li id="li_10952C8DF7AF4593805FA29028257E38"><code> 0</code>:非活動中、選擇退出或未分段。 </li> 
+     <li id="li_6F13809ECD78403FB3BDA626403E4B57"><code> 1</code>: 作用中（預設） </li> 
+     <li id="li_10952C8DF7AF4593805FA29028257E38"><code> 0</code>: 非活動中、選擇退出或未分段。 </li> 
     </ul> <p>當使用者符合下列條件時，會取消劃分使用者： </p> 
     <ul id="ul_E17B080D8DF14D548E1142A9201C1C14"> 
      <li id="li_8352B919A87242E68716FB9EC0443407">根據區段規則從區段移除。 </li> 
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根據區段的上線時間間隔， <a href="../../../features/traits/segment-ttl-explained.md"> 從區段中移除</a>。 </li> 
-     <li id="li_F48D1052BA2B45108225641292CC748D">如果最近120天未看到非活動狀態，則移至非活動狀態。 </li>
+     <li id="li_F48D1052BA2B45108225641292CC748D">如果最近120天未看到非活動狀態，則移至此狀態。 </li>
      <li>因隱私權變更要求而移除(例如 <span class="keyword"> GDPR</span>)</li>
     </ul> <p>同步至 <span class="keyword"> Audience Manager</span> ID的所有合作夥伴ID，在取消區隔使 <code> "Status":"0"</code> 用者時都會收到旗標。 </p> </td> 
   </tr> 
