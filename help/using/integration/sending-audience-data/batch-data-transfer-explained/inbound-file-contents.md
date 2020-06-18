@@ -6,12 +6,15 @@ solution: Audience Manager
 title: 傳入資料檔案內容語法、無效字元、變數和範例
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 4%
 
 ---
 
 
-# 入站資料檔案內容：語法、無效字元、變數和範例{#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
+# 傳入資料檔案內容：語法、無效字元、變數和範例 {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
 格式化傳入特徵資料檔案時，您應遵循的必填欄位、語法和規則。
 
@@ -29,7 +32,8 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 >
 >對於傳入資料檔案中傳送的每個使用者ID，我們可處理的行數上限為200行。 例如，如果您傳送300行作為使用者ID，則會保留前200行，並捨棄其他100行。 在以下範例中，您很好，因為您會針對使用者ID 1和使用者ID 2分別傳送3行。 我們不會對您在行中包含的特徵或索引鍵值配對數目實施限制。
 >
->```
+>
+```
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
 ><user ID1><TAB><trait ID>,<trait ID>,<trait ID>
@@ -55,12 +59,12 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col2"> <p>使用者ID可以是： </p> <p> 
      <ul id="ul_25168355353545A9A049D0083403025E"> 
       <li id="li_23829FE2F6464E33859B3E388FCD106B">由Audience Manager指派的唯一 <span class="keyword"> 使用者ID </span> ( <a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>)。 </li> 
-      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">在您的CRM系統中指派的唯一使用者ID( <a href="../../../reference/ids-in-aam.md"> Audience manager中的DPUUID </a>)。 </li> 
+      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">在您的CRM系統中指派的唯一使用者ID( <a href="../../../reference/ids-in-aam.md"> Audience Manager中的DPUUID </a>)。 </li> 
       <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">行動作業系統公開的行動Android或iOS裝置ID，其原始未修改的格式。 </li> 
      </ul> </p> <p>針對行動ID: </p> <p> 
      <ul id="ul_717A17E11565427E9E2D9D7554BB231B"> 
-      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA格式：ID必須大寫，而非雜湊。 例如, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android格式：ID必須小寫，而非雜湊。 例如, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_83BC5EA1E0294651A1F11D7E78EBCE98">IDFA格式： ID必須大寫，而非雜湊。 例如， <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_27F298E62A1E46F88ECF52A01B752D3A">Android格式： ID必須小寫，而非雜湊。 例如， <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -69,7 +73,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>trait ID </i> </code> </p> </td> 
-   <td colname="col2"> <p>Audience Manager <span class="keyword"> 特 </span> 徵ID。 我們要求您在傳入的資 <i>料檔案中僅包含已登入的特徵</i> 。 我們不會在傳入資料傳輸中處理任何其他特徵類型。 </p> <p> <p>注意： 可使用傳回所有特徵詳細資料的GET方法來尋找特徵ID。 如需詳細資訊，請參 <a href="../../../api/rest-api-main/api-traits.md"> 閱特徵API方法 </a>。 </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager <span class="keyword"> 特 </span> 徵ID。 我們要求您在傳入的資 <i>料檔案中僅包含已登入的特徵</i> 。 我們不會處理傳入資料傳輸中的任何其他特徵類型。 </p> <p> <p>注意：  可使用GET方法來尋找「特徵ID」，該方法會傳回所有特徵的詳細資訊。 如需詳細資訊，請參 <a href="../../../api/rest-api-main/api-traits.md"> 閱特徵API方法 </a>。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -88,11 +92,11 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> d_sid= </code> </p> </td> 
-   <td colname="col2"> <p>首 <code> d_sid </code> 碼會告訴我們的系統ID是 <span class="keyword"> Audience manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API方法傳回特徵 <code> GET </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
+   <td colname="col2"> <p>首 <code> d_sid </code> 碼會告訴我們的系統ID是 <span class="keyword"> Audience Manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API方法傳回特徵 <code> GET </code> ID。 See <a href="../../../api/rest-api-main/api-traits.md"> Trait API Methods </a>. </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
-   <td colname="col2"> <p>前置詞為的資 <code> d_unsid </code> 料會從該特徵中移除使用者。 檔案 <code> d_unsid </code> 中將忽略前置詞 <code> overwrite </code> 。 </p> <p>首 <code> d_unsid= </code> 碼會告訴我們的系統ID是 <span class="keyword"> Audience manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API方法傳回特徵 <code> GET </code> ID。 請參閱 <a href="../../../api/rest-api-main/api-traits.md"> 特徵API方法 </a>。 </p> </td>
+   <td colname="col2"> <p>前置詞為的資 <code> d_unsid </code> 料會從該特徵中移除使用者。 檔案 <code> d_unsid </code> 中將忽略前置詞 <code> overwrite </code> 。 </p> <p>首 <code> d_unsid= </code> 碼會告訴我們的系統ID是 <span class="keyword"> Audience Manager特 </span> 徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API方法傳回特徵 <code> GET </code> ID。 See <a href="../../../api/rest-api-main/api-traits.md"> Trait API Methods </a>. </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
@@ -124,7 +128,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### 特徵ID
 
-特徵ID只包含數值字元。 我們要求您在傳入的資 *料檔案中僅包含已登入的特徵* 。 我們不會在傳入資料傳輸中處理任何其他特徵類型。
+特徵ID只包含數值字元。 我們要求您在傳入的資 *料檔案中僅包含已登入的特徵* 。 我們不會處理傳入資料傳輸中的任何其他特徵類型。
 
 ### 使用者 ID
 
@@ -138,14 +142,14 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
  <tbody> 
   <tr> 
    <td colname="col1"> <p>DPUUID </p> </td> 
-   <td colname="col2"> <p><i>請勿使用</i> 「編碼」冒號( <code> %3A </code>)或「未編碼」冒號(:)符號。 </p> </td> 
+   <td colname="col2"> <p><i>請勿使用</i> 「編碼」冒號( <code> %3A </code>)或「未編碼」冒號(: )符號。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>行動iOS(IDFA)或Android裝置ID </p> </td> 
    <td colname="col2"> <p>行動裝置ID必須嚴格格式化，如下所示： </p> <p> 
      <ul id="ul_6AEFB6CFA54444D9B75F03BCE7916696"> 
-      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA格式：ID必須大寫，而非雜湊。 例如, <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
-      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android格式：ID必須小寫，而非雜湊。 例如, <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
+      <li id="li_45B272D5EEE944FC9D5C89A0924465F7">IDFA格式： ID必須大寫，而非雜湊。 例如， <code> 6D92078A-8246-4BA4-AE5B-76104861E7DC </code> </li> 
+      <li id="li_2DA0347293814C70ADCD253BF01A81F5">Android格式： ID必須小寫，而非雜湊。 例如， <code> 97987bca-ae59-4c7d-94ba-ee4f19ab8c21 </code> </li> 
      </ul> </p> </td>
   </tr>
  </tbody>
@@ -153,7 +157,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### 鍵值對
 
-鍵值對中的值名稱格式不正確也會導致問題。 在鍵值對中建立或命名值時，請遵循以下規則：
+鍵值對中的值名稱格式不正確也會導致問題。 建立或命名鍵值對中的值時，請遵循以下規則：
 
 <table id="table_41A4991090A64DEFA9AF704164B26DBB"> 
  <thead> 
@@ -264,14 +268,14 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p>iOS裝置專用的Apple IDFA </p> </td> 
    <td colname="col2"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-9"> 範例9 </a> </p> </td> 
    <td colname="col3"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-10"> 範例10 </a> </p> </td> 
-   <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-11"> 範例10 </a> </p> </td> 
+   <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-11"> 範例11 </a> </p> </td> 
    <td colname="col5"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-12"> 範例12 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>您自己的CRM ID(DPUUID) </p> </td> 
    <td colname="col2"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-13"> 範例13 </a> </p> </td> 
    <td colname="col3"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-14"> 範例14 </a> </p> </td> 
-   <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-15"> 範例15 </a> </p> </td> 
+   <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-15"> 範例14 </a> </p> </td> 
    <td colname="col5"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-16"> 範例16 </a> </p> </td> 
   </tr> 
  </tbody> 
@@ -279,7 +283,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### Example 1 {#example-1}
 
-使用特徵ID來傳送Audience Manager UUID的特徵資格資訊。
+使用特徵ID來傳送特徵資格資 [!DNL Audience Manager][!DNL UUIDs]訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_sid=24, d_sid=26, d_sid=27
@@ -287,7 +291,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### Example 2 {#example-2}
 
-使用特徵ID來傳送Audience Manager UUID的特徵不再限定資訊。
+使用特徵ID來傳送特徵不符合資格的資 [!DNL Audience Manager][!DNL UUIDs]訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -307,7 +311,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### Example 3 {#example-3}
 
-傳送索引鍵值配對，以新增Audience Manager UUID的特徵資格資訊。
+傳送索引鍵值配對，以新增特徵資格資 [!DNL Audience Manager] 訊 [!DNL UUIDs]。
 
 ```
 59767559181262060060278870901087098252 <TAB> product = tablet, product = phone
@@ -321,7 +325,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### Example 4 {#example-4}
 
-使用ic首碼來傳送Audience Manager UUID的特徵資格資訊。
+使用ic首碼來傳送特徵資格資 [!DNL Audience Manager] 訊 [!DNL UUIDs]。
 
 ```
 59767559181262060060278870901087098252 <TAB> 30608,50354,50338,50352,30626
@@ -335,7 +339,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ### Example 5 {#example-5}
 
-使用特徵ID來傳送Android裝置的特徵資格資訊。
+使用特徵ID來傳送裝置的特徵資格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -343,7 +347,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Example 6 {#example-6}
 
-使用特徵ID來傳送Android裝置的特徵不合格資訊。
+使用特徵ID來傳送裝置的特徵不合格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -363,7 +367,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Example 7 {#example-7}
 
-傳送索引鍵值配對，以新增Android裝置的特徵資格資訊。
+傳送索引鍵值配對，以新增裝置的特徵資格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> product = tablet, product = phone
@@ -377,7 +381,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "ph
 
 ### Example 8 {#example-8}
 
-使用ic首碼來傳送Android裝置的特徵資格資訊。
+使用ic首碼來傳送裝置的特徵資格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
@@ -391,7 +395,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 9 {#example-9}
 
-使用特徵ID來傳送iOS裝置的特徵資格資訊。
+使用特徵ID來傳送裝置的特徵資格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -399,7 +403,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 10 {#example-10}
 
-使用特徵ID來傳送iOS裝置的特徵不合格資訊。
+使用特徵ID來傳送裝置的特徵不合格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -419,7 +423,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 11 {#example-11}
 
-傳送索引鍵值配對，以新增iOS裝置的特徵資格資訊。
+傳送索引鍵值配對，以新增裝置的特徵資格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> product = tablet, product = phone
@@ -433,7 +437,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 12 {#example-12}
 
-使用ic首碼來傳送iOS裝置的特性資格資訊。
+使用ic首碼來傳送裝置的特徵資格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
@@ -447,7 +451,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 13 {#example-13}
 
-使用特徵ID來傳送DPUUID的特徵資格資訊。
+使用特徵ID來傳送特徵資格資 [!DNL DPUUIDs]訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -455,7 +459,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Example 14 {#example-14}
 
-使用特徵ID來傳送DPUUID的特徵不合格資訊。
+使用特徵ID來傳送特徵不符合條件的資 [!DNL DPUUIDs]訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -475,7 +479,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Example 15 {#example-15}
 
-傳送索引鍵值配對，以新增DPUUID的特徵資格資訊。
+傳送索引鍵值配對，以新增特徵資格資訊 [!DNL DPUUIDs]。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> product = tablet, product = phone
@@ -489,7 +493,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = 
 
 ### Example 16 {#example-16}
 
-使用ic首碼來傳送DPUUID的特徵資格資訊。
+使用首 `ic` 碼來傳送特徵資格資訊 [!DNL DPUUIDs]。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
