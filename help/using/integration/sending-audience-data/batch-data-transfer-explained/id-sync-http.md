@@ -1,23 +1,26 @@
 ---
-description: 說明初始HTTP呼叫中用來同步廠商和Audience manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
-seo-description: 說明初始HTTP呼叫中用來同步廠商和Audience manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
-seo-title: 入站資料傳輸的ID同步
+description: 說明初始HTTP呼叫中用來同步廠商和Audience Manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
+seo-description: 說明初始HTTP呼叫中用來同步廠商和Audience Manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
+seo-title: 傳入資料傳輸的 ID 同步
 solution: Audience Manager
-title: 入站資料傳輸的ID同步
+title: 傳入資料傳輸的 ID 同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
-source-git-commit: b1e438a77a472c192117a2c1ddcf63f4eb25d07d
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 7%
 
 ---
 
 
-# 入站資料傳輸的ID同步{#id-synchronization-for-inbound-data-transfers}
+# 傳入資料傳輸的 ID 同步{#id-synchronization-for-inbound-data-transfers}
 
-說明初始呼叫中用來同步廠商 `HTTP` 與Audience manager之間使用者ID的語法和參數。 ID同步可在您將資料分類傳送至Audience Manager後開始。
+說明初始呼叫中用來同步廠商與 `HTTP` 之間使用者ID的語法和參數 [!DNL Audience Manager]。 ID同步可在您將資料分類傳送至之後開始 [!DNL Audience Manager]。
 
 <!-- c_id_sync_in.xml -->
 
-ID同步是傳入、非同步資料傳輸程式的第一步。 在此步驟中，Audience manager和廠商會比較並比對其各自網站訪客的ID。 例如，客戶可 [!DNL Audience Manager] 能依ID 123瞭解使用者。 不過，您的資料合作夥伴可以識別此使用者的ID為456。 同步過程允許 [!DNL Audience Manager] 和資料供應商協調這些不同的ID並標識其各自系統中的用戶。 完成後，您 [!DNL Audience Manager] 的協力廠商合作夥伴應為我們網路上每個獨特使用者提供對應的ID。
+ID同步是傳入、非同步資料傳輸程式的第一步。 在此步驟中， [!DNL Audience Manager] 廠商會比較並比對個別網站訪客的ID。 例如，客戶可 [!DNL Audience Manager] 能依ID 123瞭解使用者。 不過，您的資料合作夥伴可以識別此使用者的ID為456。 同步過程允許 [!DNL Audience Manager] 和資料供應商協調這些不同的ID並標識其各自系統中的用戶。 完成後，您 [!DNL Audience Manager] 的協力廠商合作夥伴應為我們網路上每個獨特使用者提供對應的ID。
 
 您可以使用下列方法將資料匯入 [!DNL Audience Manager]:
 
@@ -57,15 +60,15 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;REDIRECT_URL&gt;</i> </code> </td> 
-   <td colname="col2"> <p>內嵌巨集的編碼URL重新導 <code> ${DD_UUID}</code> 向。 </p> <p>注意： 僅在內容提供者開始呼叫時新增。 </p> </td> 
+   <td colname="col2"> <p>內嵌巨集的編碼URL重新導 <code> ${DD_UUID}</code> 向。 </p> <p>注意：  僅在內容提供者開始呼叫時新增。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code> gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr_consent</code>。</p></td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code> gdpr</code> 可以是0（GDPR不適用）或1（GDPR適用）。 </p> <p> <b>注意：</b> 此參數只能與一起使用 <code>gdpr_consent</code>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code>gdpr_consent</code> 是URL安全的base64編碼GDPR同意字串(請參閱 <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>)。 </p> <p> <b></b> 注意：此參數只能與一起使用 <code>gdpr</code>。</p> </td> 
+   <td colname="col2"> <p>選填。如果您使用IAB TCF的 <a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此參數。</a></p> <p><code>gdpr_consent</code> is the URL-safe base64-encoded GDPR consent string (see <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB specification</a>). </p> <p> <b>注意：</b> 此參數只能與一起使用 <code>gdpr</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
