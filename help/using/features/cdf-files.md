@@ -2,17 +2,20 @@
 description: 有關客戶資料饋送(CDF)檔案的基本資訊以及如何開始使用的指示。 如果您想要接收CDF檔案或只想要更多資訊，請從這裡開始。
 keywords: second party data;2nd party;2nd party data;second party
 seo-description: 有關客戶資料饋送(CDF)檔案的基本資訊以及如何開始使用的指示。 如果您想要接收CDF檔案或只想要更多資訊，請從這裡開始。
-seo-title: 客戶資料饋送
+seo-title: 客戶資料摘要
 solution: Audience Manager
-title: 客戶資料饋送
+title: 客戶資料摘要
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1890'
+ht-degree: 6%
 
 ---
 
 
-# 客戶資料饋送 {#customer-data-feeds}
+# 客戶資料摘要 {#customer-data-feeds}
 
 有關( [!UICONTROL Customer Data Feed] )檔案[!UICONTROL CDF]的基本資訊，以及如何開始使用的指示。 如果您想要接收檔案或只想要 [!UICONTROL CDF] 更多資訊，請從這裡開始。
 
@@ -20,7 +23,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 <!-- cdf-intro.xml -->
 
-檔 [!UICONTROL CDF] 案包含的事件呼叫( [!DNL Audience Manager] )傳送至我們伺服器的 `/event`相同資料。 這包括使用者ID、特徵ID、區段ID等資料，以及事件呼叫所擷取的所有其他參數。 內部 [!DNL Audience Manager] 系統將事件資料處理成 [!UICONTROL CDF] 檔案，內容會組織成以固定順序顯示的欄位。 [!DNL Audience Manager] 嘗試每小時產 [!UICONTROL CDF] 生檔案，並將它們儲存在伺服器上安全、客戶專屬的儲 [!DNL Amazon S3] 存貯體。 我們提供這些檔案，讓您能夠處理 [!DNL Audience Manager] 超出使用者介面所限制的資料。
+[!UICONTROL CDF] 檔案包含的資料與 [!DNL Audience Manager] 事件呼叫 (`/event`) 傳送至我們伺服器的資料相同。這包括使用者 ID、特徵 ID、區段 ID 等資料，以及事件呼叫所擷取的所有其他參數。內部 [!DNL Audience Manager] 系統將事件資料處理成 [!UICONTROL CDF] 檔案，內容會組織成以固定順序顯示的欄位。 [!DNL Audience Manager] 嘗試每小時產 [!UICONTROL CDF] 生檔案，並將它們儲存在伺服器上安全、客戶專屬的儲 [!DNL Amazon S3] 存貯體。 我們提供這些檔案，讓您能夠處理 [!DNL Audience Manager] 超出使用者介面所限制的資料。
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 * 設定儲存 [!DNL Amazon S3] 貯體。
 * 提供唯讀驗證 [!DNL S3] 憑證給您的檔案儲存貯體。 您將無法查看或訪問屬於其他客戶的目錄和檔案。
 
-當檔案通知 [!UICONTROL CDF] 和檔案可供下載時，檔 [!DNL S3] 案通知和檔案會出現在儲存貯體中。 您負責從您指派的目錄監視和下載 [!DNL S3] 檔案。 請參閱 [客戶資料饋送檔案處理通知](#cdf-file-processing-notifications)。
+當檔案通知 [!UICONTROL CDF] 和檔案可供下載時，檔 [!DNL S3] 案通知和檔案會出現在儲存貯體中。 您負責從您指派的目錄監視和下載 [!DNL S3] 檔案。 請參閱[客戶資料摘要檔案處理通知](#cdf-file-processing-notifications)。
 
 ## 後續步驟 {#next-steps}
 
@@ -105,7 +108,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>指 <span class="keyword"> 派給網站訪客的Experience Cloud</span> ID(MID)。 另請參閱 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
+   <td colname="col3"> <p>指 <span class="keyword"> 派給網站訪客的Experience Cloud</span> ID(MID)。 另請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -159,7 +162,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">要求參數 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 位址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud裝置ID（或MID）。 另請參閱 <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Adobe Experience Platform Identity Service</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud裝置ID（或MID）。 See also, <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Adobe Experience Platform Identity Service</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有區段 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特徵 </li> 
      </ol> </p> <p>如需欄位說明，請參閱「 <a href="#cdf-defined"> 客戶資料饋送內容定義」</a>。 </p> </td> 
@@ -250,7 +253,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </tbody> 
 </table>
 
-## 客戶資料饋送檔案處理通知 {#cdf-file-processing-notifications}
+## Customer Data Feed File Processing Notifications {#cdf-file-processing-notifications}
 
 [!DNL Audience Manager] 將檔 `.info` 案寫入您 [!DNL S3] 的目錄，以告知您 [!UICONTROL Customer Data File] ([!UICONTROL CDF])已準備好下載。 檔 `.info` 案也包含 [!DNL JSON] 檔案內容的格式化中繼資 [!UICONTROL CDF] 料。 請檢閱本節，以取得有關此通知檔案所使用之語法和欄位的資訊。
 
@@ -313,7 +316,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>檔案名。 請參閱 <a href="#cdf-naming-conventions"> 客戶資料饋送檔案命名慣例</a>。 </p> </td> 
+   <td colname="col2"> <p>檔案名。 See <a href="#cdf-naming-conventions"> Customer Data Feed File Naming Conventions</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileSequenceNumber</code> </p> </td> 
@@ -373,10 +376,10 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 | 時間戳記位置 | 說明 |
 |--- |--- |
-| 檔案名稱 | CDF檔案名中的時間戳記標示開始準 [!DNL Audience Manager] 備檔案進行傳送的時間。 此時間戳記在UTC時區中設定。 它使用參 `hour=` 數，時間格式為24小時記號的2位數小時。 此時間可以與檔案內容中記錄的事件時間不同。 中斷使用CDF檔案時，有時您會發現您的S3儲存貯體在特定小時內是空的。 空桶表示可以表示以下任一項：<ul><li>沒有那個小時的資料。 </li><li> 我們的伺服器負載繁重，無法處理特定小時的檔案。 當伺服器接上來時，會將原本應在較早時段檔案中的檔案，放入具有較晚時間值的儲存貯體中。 例如，當本應在17小時儲存貯體中的檔案出現在18小時儲存貯體中時（在檔案名稱中），您就會 `hour=18` 看到這一點。 在這種情況下，伺服器可能會在17小時內開始處理您的檔案，但無法在該時間間隔內完成。 相反地，檔案會推送至下一個每小時時段。</li></ul><br>**重要&#x200B;**: 請勿使用檔案名稱時間戳記依時間來分組事件。 如果您需要依時間分組，請使用檔`EventTime`案內容中的時間戳記。 |
-| 檔案內容 | CDF檔案內容中的時間戳記標示資料收集伺服器開始處理檔案的時間。 此時間戳記在UTC時區中設定。 它使用字 `EventTime` 段，時間格式為 *`yyyy-mm-dd hh:mm:ss`*。 此時間接近頁面上事件的實際時間，但可能與檔案名稱中的小時指示符不同。 <br> **提示**: 與檔案 `hour=` 名稱中的時間戳記不同，您可以 `EventTime` 使用時間來分組資料。 |
+| 檔案名稱 | 檔案名稱中的 [!DNL CDF] 時間戳記會標示開始準備 [!DNL Audience Manager] 檔案進行傳送的時間。 此時間戳記設定在時 [!DNL UTC] 區中。 它使用參 `hour=` 數，時間格式為24小時記號的2位數小時。 此時間可以與檔案內容中記錄的事件時間不同。 使用檔案 [!DNL CDF] 時，有時您會發現您的儲 [!DNL S3] 存貯體在特定小時內空白。 空桶表示可以表示以下任一項：<ul><li>沒有那個小時的資料。 </li><li> 我們的伺服器負載繁重，無法處理特定小時的檔案。 當伺服器接上來時，會將原本應在較早時段檔案中的檔案，放入具有較晚時間值的儲存貯體中。 例如，當本應在17小時儲存貯體中的檔案出現在18小時儲存貯體中時（在檔案名稱中），您就會 `hour=18` 看到這一點。 在這種情況下，伺服器可能會在17小時內開始處理您的檔案，但無法在該時間間隔內完成。 相反地，檔案會推送至下一個每小時時段。</li></ul><br>**重要&#x200B;**: 請勿使用檔案名稱時間戳記依時間來分組事件。 如果您需要依時間分組，請使用檔`EventTime`案內容中的時間戳記。 |
+| 檔案內容 | 檔案內容中的 [!DNL CDF] 時間戳記會標示開始處理 [!DNL Data Collection Servers] 檔案的時間。 此時間戳記設定在時 [!DNL UTC] 區中。 它使用字 `EventTime` 段，時間格式為 *`yyyy-mm-dd hh:mm:ss`*。 此時間接近頁面上事件的實際時間，但可能與檔案名稱中的小時指示符不同。 <br> **提示**: 與檔案 `hour=` 名稱中的時間戳記不同，您可以 `EventTime` 使用時間來分組資料。 |
 
 >[!MORELIKETHIS]
 >
->* [客戶資料饋送常見問答集](../faq/faq-cdf.md)
+>* [客戶資料摘要常見問題集](../faq/faq-cdf.md)
 
