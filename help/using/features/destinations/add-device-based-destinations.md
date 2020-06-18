@@ -1,21 +1,21 @@
 ---
-description: 本文說明如何從Audience Manager UI設定新的裝置型目標。
-seo-description: 本文說明如何從Audience Manager UI設定新的裝置型目標。
-seo-title: 新增裝置型目標
+description: 本文說明如何從Audience Manager使用者介面設定新的裝置型目標。
+seo-description: 本文說明如何從Audience Manager使用者介面設定新的裝置型目標。
+seo-title: 新增以裝置為基礎的目的地
 solution: Audience Manager
-title: 新增裝置型目標
+title: 新增以裝置為基礎的目的地
 translation-type: tm+mt
-source-git-commit: 69fb3601ac9de300032abc8730a40c41abc12d97
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 1%
+source-wordcount: '437'
+ht-degree: 4%
 
 ---
 
 
-# 新增裝置型目標 {#add-new-device-based-destinations}
+# 新增以裝置為基礎的目的地 {#add-new-device-based-destinations}
 
-本文說明如何從Audience Manager UI設定新的裝置型目標。
+本文說明如何從Audience Manager使用者介面設定新的裝置型目標。
 
 >[!IMPORTANT]
 >
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 新增裝置型目的地的程式包括兩個主要步驟。 首先，您需要設定Audience Manager與目標合作夥伴之間的整合。 完成此作業後，您就可以建立新的裝置型目標。
 
-## 必備條件 {#prerequisites}
+## 必要條件 {#prerequisites}
 
 當使用整合平台建立第一個以裝置為基礎的目的地時，請聯絡Adobe諮詢或客戶服務，以便讓Audience Manager和您帳戶的整合平台之間進行ID同步化。 這是Audience Manager與目標平台正確同步的必要條件。
 
