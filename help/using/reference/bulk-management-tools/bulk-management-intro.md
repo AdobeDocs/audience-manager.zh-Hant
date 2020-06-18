@@ -2,19 +2,22 @@
 description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
 keywords: baaam;BAAAM;download baaam
 seo-description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
-seo-title: 批量管理快速入門
+seo-title: 大量管理快速入門
 solution: Audience Manager
-title: 批量管理快速入門
+title: 大量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 translation-type: tm+mt
-source-git-commit: a4569127b748374b5707daedb0809c58bca74e9b
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 3%
 
 ---
 
 
-# Getting Started With Bulk Management{#getting-started-with-bulk-management}
+# 大量管理快速入門{#getting-started-with-bulk-management}
 
-批量管理工具可讓您透過單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、模型、區段和特徵。
+它 [!DNL Bulk Management Tools] 可讓您使用單一作業一次建立和管理多個物件。 您可以使 [!DNL Bulk Management Tools] 用、、、、、、 [!UICONTROL data sources]、和 [!UICONTROL derived signals]、 [!UICONTROL destinations][!UICONTROL folders][!UICONTROL models][!UICONTROL segments][!UICONTROL traits]和／或
 
 <!-- 
 
@@ -24,23 +27,23 @@ c_bulk_start.xml
 
 >[!NOTE]
 >
->[UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
+>[用戶介面中](../../features/administration/administration-overview.md) ，分配的RBAC [!DNL Audience Manager] 組權限將在中執行 [!UICONTROL Bulk Management Tools]。
 
 ## 概述 {#overview}
 
-此功能使用Microsoft Excel試算表及巨集，對API進行安全、驗證的 [!DNL Audience Manager] 呼叫。 API提供可讓您大量進行變更的方法與服務。 您不需要知道如何編寫程式碼或使用我們的API來使用它。 工作表包含執行特定批量變更功能的欄標題和標籤。 若要進行大量變更，您只需將預先定義的標題新增至特定工作表、提供您要大量變更的資訊，然後按一下動作按鈕。 工作表和API可為您完成其餘的工作。
+This feature uses a [!DNL Microsoft Excel] spreadsheet with macros that make secure, authenticated calls to the [!DNL Audience Manager] APIs. API提供可讓您大量進行變更的方法與服務。 您不需要知道如何編寫程式碼或使用我們的API來使用它。 工作表包含執行特定批量變更功能的欄標題和標籤。 若要進行大量變更，您只需將預先定義的標題新增至特定工作表、提供您要大量變更的資訊，然後按一下動作按鈕。 工作表和API可為您完成其餘的工作。
 
 ## 下載 {#download}
 
-請在此處下載最新的 **[工作表](assets/BAAAM_V2_20200502.xlsm)**。
+Download the latest worksheet **[here](assets/BAAAM_V2_20200502.xlsm)**.
 
-## 必備條件 {#prereqs}
+## 必要條件 {#prereqs}
 
 若要使用 [!DNL Bulk Management Tools]，您需要下列項目：
 
 * 您的登 [!DNL Experience Cloud] 入資訊。 身為客戶，您應已擁有這些認證。
 * 工作 [!DNL Bulk Management Tools] 表。 [下載工作表](assets/BAAAM_V2_20200502.xlsm) ，取得最新版本。
-* 在或64位 [!DNL macOS] 元上執行Microsoft Excel [!DNL Microsoft Windows]。 我們建議您使用最新版的Microsoft Excel。
+* [!DNL Microsoft Excel] 在或 [!DNL macOS] 64位元上執行 [!DNL Microsoft Windows]。 建議您使用的最新版本 [!DNL Microsoft Excel]。
 * 開啟工作表時，必須 **啟用宏** , [!DNL Bulk Management Tools] 才能使用。
 
 ## 驗證需求和選項 {#auth-reqs}
@@ -49,9 +52,9 @@ c_bulk_start.xml
 
 **API驗證需求**
 
-2019年10月發行的第二版批量管理工具簡化了驗證程式。 本版本中的驗證步驟概述如下：
+2019年10月發行的 [!DNL Bulk Management Tools]第二版本簡化了驗證程式。 本版本中的驗證步驟概述如下：
 
-1. 開啟試算表並導覽至「設 **定** 」工作表。
+1. 開啟試算表並導覽至工 **[!UICONTROL Config]** 作表。
 2. 按照工作表中概述的步驟操作。
    ![](assets/baaam-authentication.png)
 3. 完成這些步驟後，您即獲授權進行大量變更。
