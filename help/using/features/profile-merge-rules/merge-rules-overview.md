@@ -1,21 +1,24 @@
 ---
 description: 透過描述檔合併規則，您可以控制用於劃分的資料集，並可跨多種裝置精確定位人員。
 seo-description: 透過描述檔合併規則，您可以控制用於劃分的資料集，並可跨多種裝置精確定位人員。
-seo-title: 描述檔合併規則概觀
+seo-title: 設定檔合併規則概述
 solution: Audience Manager
-title: 描述檔合併規則概觀
+title: 設定檔合併規則概述
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
 translation-type: tm+mt
-source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 5%
 
 ---
 
 
-# 描述檔合併規則概觀 {#profile-merge-rules-overview}
+# 設定檔合併規則概述 {#profile-merge-rules-overview}
 
 您可 [!UICONTROL Profile Merge Rules] 以控制哪些資料集用於細分，並可以跨多種裝置精確鎖定使用者。
 
->[!VIDEO](https://video.tv.adobe.com/v/28974?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/28974)
 
 ## 使用匿名和已驗證的設定檔來收集和定位資料 {#data-collection-targeting}
 
@@ -52,7 +55,7 @@ source-git-commit: a4f0b9d2252fd85322d00f965ff35a9fed04d3f8
  </tbody>
 </table>
 
-這些不同的描述檔可控制您用於區段的資料。 例如，透過驗證的 [設定檔](../../reference/visitor-authentication-states.md)，您可以根據單一使用者從多個裝置取得的資料建立精確的區段。 這表示您可以跨多種裝置為客戶提供一致的品牌體驗。 Audience Manager將個人用於線上活動的不同裝置對應至其已驗證的個人檔案，以達成此 [目的](../../reference/visitor-authentication-states.md)。 這些映射稱為 [!UICONTROL Profile Link Device Graph]。
+這些不同的描述檔可控制您用於區段的資料。 例如，透過驗證的 [設定檔](../../reference/visitor-authentication-states.md)，您可以根據單一使用者從多個裝置取得的資料建立精確的區段。 這表示您可以跨多種裝置為客戶提供一致的品牌體驗。 [!DNL Audience Manager] 透過將個人用於線上活動的不同裝置對應至其已驗證的個人檔案，來達成此 [目的](../../reference/visitor-authentication-states.md)。 這些映射稱為 [!UICONTROL Profile Link Device Graph]。
 
 ![](assets/authenticated2.png)
 
