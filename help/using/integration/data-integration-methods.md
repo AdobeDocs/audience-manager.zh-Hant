@@ -1,28 +1,31 @@
 ---
-description: 概觀Audience manager如何與其他資料提供者和系統交換資訊。
-seo-description: 概觀Audience manager如何與其他資料提供者和系統交換資訊。
+description: 概觀Audience Manager如何與其他資料提供者和系統交換資訊。
+seo-description: 概觀Audience Manager如何與其他資料提供者和系統交換資訊。
 seo-title: 資料整合方法
 solution: Audience Manager
 title: 資料整合方法
 uuid: 17a4179a-e99b-49eb-8f45-f2946afbd27f
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 1%
 
 ---
 
 
 # 資料整合方法 {#data-integration-methods}
 
-概觀Audience manager如何與其他資料提供者和系統交換資訊。
+概觀Audience Manager如何與其他資料提供者和系統交換資訊。
 
-## 支援的資料整合方法：即時與伺服器對伺服器 {#supported-methods}
+## 支援的資料整合方法： 即時與伺服器對伺服器 {#supported-methods}
 
-選擇正確的整合方法取決於業務需求與資料合作夥伴的技術能力的組合。 Audience manager會透過下列其中一種方法，與其他資料提供者交換訪客資訊：
+選擇正確的整合方法取決於業務需求與資料合作夥伴的技術能力的組合。 Audience Manager會透過下列其中一種方法，與其他資料提供者交換訪客資訊：
 
-* **** 即時：當使用者瀏覽您的網站時，立即傳輸資料。 此方法也稱為整 *`synchronous`* 合。
-* **** 批次（伺服器對伺服器）:在訪客離開頁面後，以設定的排程在伺服器間傳輸資料。 此方法也稱為 *`out-of-band`* 或整 *`asynchronous`* 合。
+* **即時：** 當使用者瀏覽您的網站時，立即傳輸資料。 此方法也稱為整 *`synchronous`* 合。
+* **批次（伺服器對伺服器）:** 在訪客離開頁面後，以設定的排程在伺服器間傳輸資料。 此方法也稱為 *`out-of-band`* 或整 *`asynchronous`* 合。
 
-## 必要條件：建立特徵分類法 {#prereqs}
+## 必要條件： 建立特徵分類法 {#prereqs}
 
 在整合程式開始之前，請記 [得在UI中建立特](../features/traits/create-onboarded-rule-based-traits.md)[徵和資料夾結構](../features/traits/trait-storage.md#create-trait-storage-folder)[!DNL Audience Manager] 。 分類法將包含在邏輯層次結構中組織的所有特徵。
 
@@ -34,7 +37,7 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 
 <!-- c_int_types_use_cases.xml -->
 
-即時伺服器對伺服器資料整合可快速同步Audience manager伺服器與其他定位系統之間的使用者資料。 在大多數情況下，資料交換會在數秒或數分鐘內進行，視定位系統的重新整理率而定。 但請注意，目標系統會決定此重新整理間隔，而非Audience Manager。 此外，刷新率在不同系統之間可能不同。 即時伺服器對伺服器整合是資料交換的首選整合類型。 當鎖定合作夥伴可支援時，Audience manager會使用此方法。
+即時伺服器對伺服器資料整合可快速同步Audience Manager伺服器與其他定位系統之間的使用者資料。 在大多數情況下，資料交換會在數秒或數分鐘內進行，視定位系統的重新整理率而定。 但請注意，目標系統會決定此重新整理間隔，而非Audience Manager。 此外，刷新率在不同系統之間可能不同。 即時伺服器對伺服器整合是資料交換的首選整合類型。 當鎖定合作夥伴可支援時，Audience Manager會使用此方法。
 
 <table id="simpletable_5307DEC378E5486CB92A354287F33AD8"> 
  <tr class="strow">
@@ -74,7 +77,7 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 
 ### 即時呼叫
 
-即時呼叫會立即與Audience manager交換資料，當使用者造訪您的網站或在頁面上採取動作時。 透過此方法，定位系統會取得最新的區段資格資料，並在內容或廣告傳遞決策期間可考慮這些資訊。 此外，此程式適用於發佈者廣告伺服器，我們會將限定區段更新為第一方Cookie，並讀取到廣告呼叫中做為索引鍵值配對。 目前，Audience manager使用即時呼叫與其他內容管理 [!DNL Target] 系統整合。
+即時呼叫會立即與Audience Manager交換資料，當使用者造訪您的網站或在頁面上採取動作時。 透過此方法，定位系統會取得最新的區段資格資料，並在內容或廣告傳遞決策期間可考慮這些資訊。 此外，此程式適用於發佈者廣告伺服器，我們會將限定區段更新為第一方Cookie，並讀取到廣告呼叫中做為索引鍵值配對。 目前，Audience Manager使用即時呼叫與其他內容管理 [!DNL Target] 系統整合。
 
 <table> 
  <tr>
@@ -115,12 +118,12 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 
 ### 選擇資料傳送類型
 
-* **** 技術考量：資料傳送取決於資料合作夥伴的技術能力。 Audience manager可透過離線、伺服器對伺服器的通訊程式，從瀏覽器或批次更新即時傳送／接收資料。
-* **** 業務考量：選擇一種或另一種傳送方法的商業理由取決於目標合作夥伴的技術能力以及您希望如何使用此資料。 通常，同步資料傳輸在您需要立即對使用者資料採取動作時非常有用。 非同步資料傳輸在不需要立即動作，以及您有時間建立更深入的使用者設定檔以供日後使用時，可能很有用。
+* **技術考量：** 資料傳送取決於資料合作夥伴的技術能力。 Audience Manager可透過離線、伺服器對伺服器的通訊程式，從瀏覽器或批次更新即時傳送／接收資料。
+* **業務考量：** 選擇一種或另一種傳送方法的商業理由取決於目標合作夥伴的技術能力以及您希望如何使用此資料。 通常，同步資料傳輸在您需要立即對使用者資料採取動作時非常有用。 非同步資料傳輸在不需要立即動作，以及您有時間建立更深入的使用者設定檔以供日後使用時，可能很有用。
 
-## 即時資料傳輸程式 {#real-time-data-transfer-process}
+## Real-Time Data Transfer Process {#real-time-data-transfer-process}
 
-概述Audience manager如何與協力廠商同步進行資料交換。
+概述Audience Manager如何與協力廠商同步進行資料交換。
 
 ### 即時資料傳輸
 
@@ -132,17 +135,17 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 
 即時資料整合程式的運作方式如下：
 
-1. 使用者瀏覽包含Audience manager代碼的客戶網站。
-1. Audience manager會載入Iframe並呼叫( [!UICONTROL Data Collection Server][!UICONTROL DCS])。
-1. 此 [!UICONTROL DCS] 時會呼叫協力廠商伺服器（即時），以檢查廠商是否有使用者的區段資訊。
+1. 使用者瀏覽包含Audience Manager代碼的客戶網站。
+1. Audience Manager會載入Iframe並呼叫( [!UICONTROL Data Collection Server][!DNL DCS])。
+1. 此 [!DNL DCS] 時會呼叫協力廠商伺服器（即時），以檢查廠商是否有使用者的區段資訊。
 1. 第三方會將有關該使用者的區段資訊傳回至Audience Manager。
-1. Audience manager會擷取區段資訊，並讓它可供定位。
+1. Audience Manager會擷取區段資訊，並讓它可供定位。
 
 ![](assets/rt_reduce70.png)
 
-## 批資料傳輸流程 {#batch-data-transfer-process}
+## 批次資料傳輸流程 {#batch-data-transfer-process}
 
-概述Audience manager如何與協力廠商同步（即時）交換資料。
+概述Audience Manager如何與協力廠商同步（即時）交換資料。
 
 ### 批次資料整合
 
@@ -157,10 +160,10 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 ### 批次資料整合步驟
 
 1. 使用者瀏覽客戶網站。
-1. Audience manager和第三方資料提供者會為訪客指派唯一ID（通常使用Cookie）。
-1. Audience manager會呼叫協力廠商資料提供者，以符合訪客ID。
-1. 排程的請求（通常在每日間隔內）會在Audience manager和您的第三方資料提供者之間交換訪客區段資料。
+1. Audience Manager和第三方資料提供者會為訪客指派唯一ID（通常使用Cookie）。
+1. Audience Manager會呼叫協力廠商資料提供者，以符合訪客ID。
+1. 排程的請求（通常在每日間隔內）會在Audience Manager和您的第三方資料提供者之間交換訪客區段資料。
 
 ![](assets/s2s_70.png)
 
-如需說明Audience manager處理傳入和傳出伺服器對伺服器([!UICONTROL S2S])檔案傳輸時間範圍的資訊，請參 [閱報告和檔案傳輸時間範圍指引](../reference/reporting-file-transfer-timeframe.md)。
+如需說明Audience Manager處理傳入和傳出伺服器對伺服器([!UICONTROL S2S])檔案傳輸時間範圍的資訊，請參 [閱報告和檔案傳輸時間範圍指引](../reference/reporting-file-transfer-timeframe.md)。
