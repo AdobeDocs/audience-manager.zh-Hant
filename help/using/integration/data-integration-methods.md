@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 資料整合方法
 uuid: 17a4179a-e99b-49eb-8f45-f2946afbd27f
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1085'
 ht-degree: 1%
 
 ---
@@ -18,26 +18,26 @@ ht-degree: 1%
 
 概觀Audience Manager如何與其他資料提供者和系統交換資訊。
 
-## 支援的資料整合方法： 即時與伺服器對伺服器 {#supported-methods}
+## 支援的資料整合方法： 即時和 [!DNL Server-to-Server] {#supported-methods}
 
 選擇正確的整合方法取決於業務需求與資料合作夥伴的技術能力的組合。 Audience Manager會透過下列其中一種方法，與其他資料提供者交換訪客資訊：
 
 * **即時：** 當使用者瀏覽您的網站時，立即傳輸資料。 此方法也稱為整 *`synchronous`* 合。
-* **批次（伺服器對伺服器）:** 在訪客離開頁面後，以設定的排程在伺服器間傳輸資料。 此方法也稱為 *`out-of-band`* 或整 *`asynchronous`* 合。
+* **批次([!DNL Server-to-Server]):** 在訪客離開頁面後，以設定的排程在伺服器間傳輸資料。 此方法也稱為 *`out-of-band`* 或整 *`asynchronous`* 合。
 
 ## 必要條件： 建立特徵分類法 {#prereqs}
 
-在整合程式開始之前，請記 [得在UI中建立特](../features/traits/create-onboarded-rule-based-traits.md)[徵和資料夾結構](../features/traits/trait-storage.md#create-trait-storage-folder)[!DNL Audience Manager] 。 分類法將包含在邏輯層次結構中組織的所有特徵。
+在整合程式開始之前，請記 [得在UI中建立特](../features/traits/create-onboarded-rule-based-traits.md)[徵和資料夾結構](../features/traits/trait-storage.md#create-trait-storage-folder)[!DNL Audience Manager] 。 分類法將包含您在邏輯 [!UICONTROL traits] 層次中組織的所有內容。
 
 ## 整合使用案例 {#integration-use-cases}
 
 Audience Manager資料整合方法的使用案例摘要，以及每種方法的優缺點。
 
-### 即時伺服器對伺服器整合
+### 即時整 [!DNL Server-to-Server] 合
 
 <!-- c_int_types_use_cases.xml -->
 
-即時伺服器對伺服器資料整合可快速同步Audience Manager伺服器與其他定位系統之間的使用者資料。 在大多數情況下，資料交換會在數秒或數分鐘內進行，視定位系統的重新整理率而定。 但請注意，目標系統會決定此重新整理間隔，而非Audience Manager。 此外，刷新率在不同系統之間可能不同。 即時伺服器對伺服器整合是資料交換的首選整合類型。 當鎖定合作夥伴可支援時，Audience Manager會使用此方法。
+即時資料整合可 [!DNL server-to-server] 快速同步Audience Manager伺服器與其他定位系統之間的使用者資料。 在大多數情況下，資料交換會在數秒或數分鐘內進行，視定位系統的重新整理率而定。 但請注意，目標系統會決定此重新整理間隔，而非Audience Manager。 此外，刷新率在不同系統之間可能不同。 即時整合是資 [!UICONTROL server-to-server] 料交換的偏好整合類型。 當鎖定合作夥伴可支援時，Audience Manager會使用此方法。
 
 <table id="simpletable_5307DEC378E5486CB92A354287F33AD8"> 
  <tr class="strow">
@@ -56,9 +56,9 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
  </tr>
 </table>
 
-### 伺服器對伺服器批次整合
+### [!DNL Server-to-Server] 批次整合
 
-伺服器對伺服器的批次整合會整合資料，並以設定的間隔傳送資料至其他系統，而非近乎即時地傳送。 資料傳輸間隔從24小時開始。 有些資料提供者僅支援此整合類型。 不過，我們已看到從批次整合向即時整合方式轉變的趨勢。
+批次 [!DNL server-to-server] 整合會捆綁資料，並以設定的間隔傳送至其他系統，而非近乎即時的傳送。 資料傳輸間隔從24小時開始。 有些資料提供者僅支援此整合類型。 不過，我們已看到從批次整合向即時整合方式轉變的趨勢。
 
 <table id="simpletable_6878241639114DE68E61A251486C6317"> 
  <tr class="strow">
@@ -77,7 +77,7 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 
 ### 即時呼叫
 
-即時呼叫會立即與Audience Manager交換資料，當使用者造訪您的網站或在頁面上採取動作時。 透過此方法，定位系統會取得最新的區段資格資料，並在內容或廣告傳遞決策期間可考慮這些資訊。 此外，此程式適用於發佈者廣告伺服器，我們會將限定區段更新為第一方Cookie，並讀取到廣告呼叫中做為索引鍵值配對。 目前，Audience Manager使用即時呼叫與其他內容管理 [!DNL Target] 系統整合。
+即時呼叫會立即與Audience Manager交換資料，當使用者造訪您的網站或在頁面上採取動作時。 透過此方法，定位系統會取得最新的區段資格資料，並在內容或廣告傳遞決策期間可考慮這些資訊。 此外，此程式適用於發佈者廣告伺服器，我們會將限定區段更新為第一方Cookie，並讀取到廣告呼叫中做為索引鍵值配對。 目前，Audience Manager使用即時呼叫與其他內容管理 [!DNL Adobe Target] 系統整合。
 
 <table> 
  <tr>
@@ -151,7 +151,7 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 
 <!-- c_int_overview_async.xml -->
 
-批次（伺服器對伺服器）資料整合程式會遵循即時資料傳輸程式中概述的大部分步驟。 不過，使用者資訊不會立即傳回區段ID，而是會儲存到我們的伺服器，並定期與協力廠商資料提供者同步。 在下列情況下，非同步資料傳輸程式非常有用：
+批次([!DNL server-to-server])資料整合程式會遵循即時資料傳輸程式中概述的大部分步驟。 不過，使用者資訊不會立即傳回區段ID，而是會儲存到我們的伺服器，並定期與協力廠商資料提供者同步。 在下列情況下，非同步資料傳輸程式非常有用：
 
 * 不需要立即傳送資料。
 * 收集資料，以建立龐大的細分使用者群。
@@ -166,4 +166,4 @@ Audience Manager資料整合方法的使用案例摘要，以及每種方法的�
 
 ![](assets/s2s_70.png)
 
-如需說明Audience Manager處理傳入和傳出伺服器對伺服器([!UICONTROL S2S])檔案傳輸時間範圍的資訊，請參 [閱報告和檔案傳輸時間範圍指引](../reference/reporting-file-transfer-timeframe.md)。
+如需說明Audience Manager處理傳入和傳出( [!DNL Server-to-Server][!UICONTROL S2S])檔案傳輸時的時段資訊，請參 [閱報告和檔案傳輸時段准則](../reference/reporting-file-transfer-timeframe.md)。
