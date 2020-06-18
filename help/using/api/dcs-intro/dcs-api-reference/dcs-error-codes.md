@@ -6,10 +6,10 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: ff245c2cca417e9b1fd51460ddbadd25d5696006
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 4%
+source-wordcount: '1509'
+ht-degree: 3%
 
 ---
 
@@ -22,76 +22,22 @@ In the tables below, *italics* represents a variable placeholder.
 
 ## 系統錯誤代碼 {#system-error-codes}
 
-<table id="table_43F4321BEA6A4D1BBDFE2E9FB4402914"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 代碼ID </th> 
-   <th colname="col2" class="entry"> 錯誤訊息 </th> 
-   <th colname="col3" class="entry"> 說明 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>0 </p> </td> 
-   <td colname="col2"> <p>未指定錯誤 </p> </td> 
-   <td colname="col3"> <p>這是一個捕獲全部錯誤，可處理其他錯誤處理常式未涵蓋的事件。 疑難排解此錯誤。 它可能是由各種未知的動作或事件所造成。 </p> <p>如果您收到此錯誤，請再次嘗試 <span class="wintitle"> DCS請求</span> 。 如果問題仍然存在，請聯絡您的Adobe代表。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
-   <td colname="col2"> <p>找不到主機名的配置： <code><i>hostname</i></code> </p> </td> 
-   <td colname="col3"> <p>合作夥伴布建團隊尚未設定在請求中傳送的主機名稱。 如果您看到此錯誤訊息，請連絡您的Adobe代表。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>2 </p> </td> 
-   <td colname="col2"> <p>無 <code> d_orgid</code> 效值（找不到此組織ID的組態）: <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>組織ID不正確。 </p> <p>請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱「組織與帳戶連結」中的「管理頁面」一節 <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external"></a> ，以取得如何尋找組織的詳細資訊。 </p> </td> 
-  </tr>
- </tbody>
-</table>
+|錯誤代碼|錯誤消息|說明|
+|—|—|—|
+|0|未指定錯誤|這是一個捕獲全部錯誤，處理其他錯誤處理程式未覆蓋的事件。 疑難排解此錯誤。 它可能是由各種未知的動作或事件所造成。 如果您收到此錯誤，請再試一次 [!DNL DCS] 您的請求。 如果問題 [!DNL Adobe] 仍然存在，請聯絡您的代表。|
+|1|找不到主機名的配置： `hostname`|我們的合作夥伴布建團隊尚未設定在請求中傳送的主機名稱。 如果您看 [!DNL Adobe] 到此錯誤訊息，請連絡您的代表。|
+|2|無 `d_orgid` 效值（找不到此組織ID的組態）: `ID`|組織ID不正確。 請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱「管理頁面」一節的「組織與帳戶連結 [](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) 」，以取得如何尋找的詳細資訊。|
 
 ## 整合錯誤碼 {#integration-error-codes}
 
-<table id="table_EFF06FB3D045459BA7802872AF22DF79"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 代碼ID </th> 
-   <th colname="col2" class="entry"> 訊息 </th> 
-   <th colname="col3" class="entry"> 說明 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>100 </p> </td> 
-   <td colname="col2"> <p>無法擷取請求的主機名稱 </p> </td> 
-   <td colname="col3"> <p>API呼叫未傳送請求中的主機HTTP標題。 </p> <p>將主機標題新增至呼叫，然後重試。 請注意，大部分的瀏覽器和API用戶端都會自動執行此動作。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>101 </p> </td> 
-   <td colname="col2"> <p>傳入的Experience Cloud ID無效 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 呼叫包含無</span> 效的Experience Cloud <span class="keyword"></span> ID。 </p> <p>檢查標 <code> d_mid=</code> 題字串中的鍵值對。 請確定您傳入的是正確的 <span class="keyword"> Experience Cloud</span> ID，然後再試一次請求。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>102 </p> </td> 
-   <td colname="col2"> <p>在請求中傳遞的aam ID無效 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>DCS <span class="wintitle"> 呼叫包含無</span> 效的Audience Manager <span class="keyword"></span> ID。 </p> <p>檢查標 <code> d_uuid=</code> 題字串中的鍵值對。 請確定您傳入的是正確的 <span class="keyword"> Audience Manager</span> ID，然後再試一次請求。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>104 </p> </td> 
-   <td colname="col2"> <p>所有客戶ID都無效 </p> </td> 
-   <td colname="col3"> <p>您呼叫中的所有客戶ID都無效。 請檢查您的ID，然後再試一次。 </p> </td> 
-  </tr>
-    <tr> 
-   <td colname="col1"> <p>109</p> </td> 
-   <td colname="col2"> <p>合作伙 <code>HTTP referer</code> 伴不允許參考者 <code>Partner ID</code> </p> </td> 
-   <td colname="col3"> <p>呼 <code>HTTP referer</code> 叫上的夥伴ID不允許標題。 檢查標題 <code>HTTP referer</code> 是否正確。</p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>111 </p> </td> 
-   <td colname="col2"> <p>收到 <span class="wintitle"> 無效的IMS</span> Token </p> </td> 
-   <td colname="col3"> <p>傳回Audience Manager - Adobe Target整合。 當對包含無效IMS Token的DCS進行呼叫時，會擲回錯誤。 Token可能格式錯誤、過期，或者用戶無法獲得訪問所需資源的授權。 </p> </td>
-  </tr>
- </tbody>
-</table>
+|錯誤代碼|錯誤消息|說明|
+|—|—|—|
+|100|無法擷取請求的主機名稱|呼 [!DNL API] 叫未傳送請求中的主 [!DNL HTTP] 機標題。 將主機標題新增至呼叫，然後再試一次。 大部分的瀏覽器 [!DNL API] 和用戶端都會自動執行此動作。 |
+|101|傳入的 [!DNL Experience Cloud] ID無效 `ID`|呼叫 [!DNL DCS] 包含無效 [!DNL Experience Cloud] ID。 檢查標 `d_mid=` 題字串中的鍵值對。 請確定您傳入的是正確的 [!DNL Experience Cloud] ID，然後再試一次請求。 |
+|102|傳入請 [!DNL AAM ID] 求無效 `ID`|呼叫 [!DNL DCS] 包含無效 [!DNL Audience Manager] ID。 檢查標 `d_uuid=` 題字串中的鍵值對。 請確定您傳入的是正確的 [!DNL Audience Manager] ID，然後再試一次請求。 |
+|104|所有客戶ID無效 |您呼叫中的所有客戶ID都無效。 請檢查您的ID，然後再試一次。|
+|109|合作伙 `HTTP referer` 伴不允許參考者 `Partner ID`|呼 `HTTP referer` 叫上的夥伴ID不允許標題。 檢查標題 `HTTP referer` 是否正確。|
+|111|收到的 `IMS` Token無效|已傳回 [!DNL Audience Manager] - [!DNL Adobe Target] 整合。 當對進行呼叫時，會擲回錯誤，此呼 [!DNL DCS]叫包含無效的代 [!DNL IMS] 號。 Token可能格式錯誤、過期，或者使用者未獲得存取所需資源的授權。|
 
 ## 選擇退出錯誤代碼 {#opt-out-error-codes}
 
@@ -227,7 +173,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>封鎖的描述檔操作 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>已封鎖讀／寫動作，因為ID已識別為惡意，並已新增至密碼清單。請參閱錯誤代碼306。 </p> </td> 
+   <td colname="col3"> <p>已封鎖讀／寫動作，因為ID已識別為惡意，並已新增至密文清單。請參閱錯誤代碼306。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
@@ -236,7 +182,7 @@ In the tables below, *italics* represents a variable placeholder.
   </tr>
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
-   <td colname="col2"> <p>客戶ID已捨棄，因為它已超出指定命名空間的限制。 命名空間ID <code><i>ID</i></code>是，客戶ID是 <code><i>ID</i></code>。 </p> </td> 
+   <td colname="col2"> <p>客戶ID已捨棄，因為它已超出指定名稱空間的限制。 命名空間ID <code><i>ID</i></code>是，客戶ID是 <code><i>ID</i></code>。 </p> </td> 
    <td colname="col3"> <p>如果在DCS呼叫上針對相同的命名空間(<code> DPID</code>)宣告3個以上的客戶ID，則會傳回 <span class="wintitle"> 此錯誤</span> 碼。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此範例 <span class="wintitle"> DCS請求中</span> ，有4個ID已宣告用於相同的命名空間（整合程式碼為1）。 其中一個ID被捨棄，並傳回錯誤310。 </p> </td> 
   </tr> 
   <tr> 
