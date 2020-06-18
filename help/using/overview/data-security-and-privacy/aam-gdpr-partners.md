@@ -1,21 +1,24 @@
 ---
-description: 本頁概述合作夥伴在提供資訊時直接提供的資訊，以及與您的Audience manager實務相關的任何暗示。 對於進行這些更新的合作夥伴來說，主要影響是GDPR（通用資料保護規則）的結果，該規則於2018年5月25日生效，以及新的IAB GDPR透明度與同意框架（IAB框架）。
-seo-description: 本頁概述合作夥伴在提供資訊時直接提供的資訊，以及與您的Audience manager實務相關的任何暗示。 對於進行這些更新的合作夥伴來說，主要影響是GDPR（通用資料保護規則）的結果，該規則於2018年5月25日生效，以及新的IAB GDPR透明度與同意框架（IAB框架）。
-seo-title: 目的地的GDPR考量
+description: 本頁概述合作夥伴直接提供的資訊 (在可供使用時)，以及與您的 Audience Manager 實務相關的任何含意。對於進行這些更新的合作夥伴來說，主要含意是 2018 年 5 月 25 日生效的 GDPR (一般資料保護規範) 及新推出的 IAB GDPR 透明度與同意框架 (IAB 框架) 的結果。
+seo-description: 本頁概述合作夥伴直接提供的資訊 (在可供使用時)，以及與您的 Audience Manager 實務相關的任何含意。對於進行這些更新的合作夥伴來說，主要含意是 2018 年 5 月 25 日生效的 GDPR (一般資料保護規範) 及新推出的 IAB GDPR 透明度與同意框架 (IAB 框架) 的結果。
+seo-title: 針對目的地的 GDPR 考量事項
 solution: Audience Manager
-title: 目的地的GDPR考量
+title: 針對目的地的 GDPR 考量事項
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
 translation-type: tm+mt
-source-git-commit: 48d2060df55a693a768e956f88a5a03414435ba9
+source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 97%
 
 ---
 
 
-# 目的地的GDPR考量{#gdpr-considerations-for-destinations}
+# 針對目的地的 GDPR 考量事項{#gdpr-considerations-for-destinations}
 
-本頁概述合作夥伴在提供資訊時直接提供的資訊，以及與您的Audience manager實務相關的任何暗示。 對於進行這些更新的合作夥伴來說，主要影響是GDPR（通用資料保護規則）的結果，該規則於2018年5月25日生效，以及新的IAB GDPR透明度與同意框架（IAB框架）。
+本頁概述合作夥伴直接提供的資訊 (在可供使用時)，以及與您的 Audience Manager 實務相關的任何含意。對於進行這些更新的合作夥伴來說，主要含意是 2018 年 5 月 25 日生效的 GDPR (一般資料保護規範) 及新推出的 IAB GDPR 透明度與同意框架 (IAB 框架) 的結果。
 
-Adobe合作夥伴擁有其商業程式，並可能會決定不時更新其與Audience manager的整合需求。 我們正積極與Audience manager合作夥伴生態系統合作，讓客戶瞭解變化。
+Adobe 合作夥伴擁有其業務流程，且可決定不定時更新其與 Audience Manager 整合的要求。我們正積極與 Audience Manager 合作夥伴生態系統合作，讓客戶瞭解變動。
 
 <!-- ## Audience Manager Partner Updates - ID Syncs {#partner-updates-id-syncs}
 
@@ -53,8 +56,8 @@ Some partners, as listed in the table below, have changed their integration requ
  </tbody> 
 </table> -->
 
-## Audience Manager UI更新- Yahoo/Found/DataX整合 {#ui-update}
+## Audience Manager User Interface Update - Yahoo/Oath/DataX Integration {#ui-update}
 
-除了上述IAB架構的更新外，Yahoo/Auncod/DataX還新增了 **gdpr****和** gdpr_mode，以加入其分類和觀眾API。 其參數會通知Yahoo/Wonds/DataX，他們有權以資料處理者或資料控制者的身分處理特定區段。 因此，將區段傳送至Yahoo/Aundos/DataX目的地的Audience manager客戶必鬚根據與Aund的同意，指定適當的參數（處理者或控制者）。
+除了上述 IAB 架構的更新外，Yahoo/Oath/DataX 還將 **gdpr** 和 **gdpr_mode** 新增至其分類法和受眾 API 中。其參數會通知 Yahoo/Oath/DataX 他們有權以資料處理者或資料控制者的身分處理特定區段。因此，將區段傳送至 Yahoo/Oath/DataX 目的地的 Audience Manager 客戶，必須根據其與 Oath 間的協議指定適當的參數 (處理者或控制者)。
 
-請洽詢您的顧問或客戶服務，以設定正確的參數。 除非我們收到要求此更新的書面信件，否則Adobe無法代表客戶進行此更新。 請連絡您的Yahoo/Woand/DataX代表，以瞭解這些參數的完整定義。
+請洽詢您的顧問或客戶服務，設定正確的參數。除非 Adobe 收到請求此更新的書面信函，否則我們無法代表客戶進行此更新。請洽詢您的 Yahoo/Oath/DataX 代表，瞭解這些參數的完整定義。
