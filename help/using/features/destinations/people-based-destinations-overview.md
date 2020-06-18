@@ -5,9 +5,9 @@ seo-title: 基於人員的目標概觀和使用案例
 solution: Audience Manager
 title: 概述與使用案例
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 [!DNL People-Based Destinations] 是Audience Manager的進階整合。 請連絡您的Adobe代表，以利用這項優質功能。
 
-## 為何應使用以人為本的目的地 {#why-use}
+## 您應使用的理由 [!UICONTROL People-Based Destinations] {#why-use}
 
 **從Audience Manager管理整個受眾細分，為客戶提供一致的跨通道體驗。**
 
