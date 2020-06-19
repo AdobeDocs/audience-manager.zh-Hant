@@ -1,110 +1,113 @@
 ---
-description: '關於以人為本的目的地的常見問題解答。  '
-seo-description: '關於以人為本的目的地的常見問題解答。  '
-seo-title: 以人為本的目的地常見問答集
+description: '以人物為基礎的目的地相關常見問題解答。  '
+seo-description: '以人物為基礎的目的地相關常見問題解答。  '
+seo-title: 以人物為基礎的目的地常見問題集
 solution: Audience Manager
-title: 以人為本的目的地常見問答集
-translation-type: tm+mt
+title: 以人物為基礎的目的地常見問題集
+translation-type: ht
 source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
+workflow-type: ht
+source-wordcount: '1105'
+ht-degree: 100%
 
 ---
 
 
-# 以人為本的目的地常見問答集 {#people-based-destinations-faq}
+# 以人物為基礎的目的地常見問題集 {#people-based-destinations-faq}
 
-Answers to common questions about [!DNL People-Based Destinations].
+[!DNL People-Based Destinations] 相關常見問題解答。
 
-## Availability {#availability}
+## 可用性 {#availability}
 
-**我在Audience manager帳[!DNL People-Based Destinations]戶中看不到。 我需要瞭解哪些可用性？**
+**我在 Audience Manager 帳戶中看不到[!DNL People-Based Destinations]。關於可用性，我需要瞭解什麼？**
 
-[!DNL People-Based Destinations] 是Audience manager的優質功能，在購買時可使用。 請連絡您的Adobe銷售代表，以取得有關價格和可用性的詳細資訊。
+[!DNL People-Based Destinations] 是 Audience Manager 的付費功能，購買後即可使用。請聯絡您的 Adobe 銷售代表，取得有關定價和可用性的詳細資訊。
 
 ## 資料上線 {#data-onboarding}
 
-**我要如何將客戶電子郵件地址載入Audience Manager，以便在中使用[!DNL People-Based Destinations]?**
+**我要如何將客戶電子郵件地址帶入 Audience Manager 中，以便用於[!DNL People-Based Destinations]？**
 
-有兩種方式可讓您將離線資料帶入Audience Manager [!DNL People-Based Destinations]。
+有兩種方式可將離線資料帶入 Audience Manager 中以用於[!DNL People-Based Destinations]。
 
-* **使用檔案式ID同步**。 如需 [ID同步檔案的詳細資訊](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md) ，請參閱ID同步檔案的名稱和內容需求。 使用此方法時，您可以定位資料庫中所有雜湊的電子郵件地址 [!DNL CRM] 。
-* **在傳入已驗證的客戶ID** 時，使用「宣告的ID」來宣告雜湊的電子郵件地址。 使用此方法時，Audience manager只會啟動已線上驗證之使用者的雜湊電子郵件地址。 透過Facebook啟動的電子郵件地址只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID關聯的其他電子郵件地址不會即時啟用。
+* **使用檔案式 ID 同步**。如需 ID 同步檔案的詳細資訊，請參閱 [ID 同步檔案的名稱和內容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)。使用此方法時，您可以鎖定 [!DNL CRM] 資料庫中的所有雜湊電子郵件地址。
+* 傳入已驗證的客戶 ID 時，**使用宣告 ID** 來宣告雜湊的電子郵件地址。使用此方法時，Audience Manager 只會啟用已在線上通過驗證的使用者之雜湊電子郵件地址。透過 Facebook 啟用的電子郵件地址只是宣告 ID 事件呼叫中的電子郵件地址。與客戶 ID 相關聯的其他電子郵件地址不會即時啟用。
 
-**我是否可透過網頁表單或行動應用程式收集雜湊的電子郵件地址，或者必須透過批次檔案進行？**
+**我是否可透過 Web 表單或行動應用程式收集雜湊電子郵件地址，還是必須透過批次檔案進行？**
 
-您可以使用Declared ID透過Web驗證收集雜湊 [!DNL ECID] 的電 [子郵件地址](../features/declared-ids.md)。 此批次檔案也可讓您收集無法透過驗證傳送的雜湊電子郵件地址(例如，您的([!DNL CRM])目的地中的休眠使用者)，並啟用這些地址。
+您可以使用 [!DNL ECID] 搭配[宣告 ID](../features/declared-ids.md) 透過 Web 驗證收集雜湊電子郵件地址。批次檔案也可讓您收集無法透過驗證傳送的雜湊電子郵件地址 (例如您 [!DNL CRM] 中的休眠使用者)，並在以人物為基礎的目的地啟用這些地址。
 
-**透過Web表單擷取雜湊電子郵件地址與透過批次檔案上傳雜湊電子郵件地址有何不同？**
+**透過 Web 表單擷取雜湊電子郵件地址，與透過批次檔案上傳雜湊電子郵件地址有何不同？**
 
-離線資料擷取可支援不使用驗證的使用案例，而且提供在所有離線描述檔上執行、不考慮驗證的新描述檔合併規則([!UICONTROL All Cross-Device Profiles]) [!DNL CRM] ，做為一部分 [!DNL People-Based Destinations]。 此方法旨在補充從線上來源擷取已驗證受眾的功能。
+離線資料擷取的用意是支援不進行驗證的使用案例，且現在提供包含在 [!DNL People-Based Destinations] 中的新設定檔合併規則 ([!UICONTROL All Cross-Device Profiles])，可在不考慮驗證的所有離線 [!DNL CRM] 設定檔上執行。此方法的目的是補充從線上來源擷取已驗證受眾的功能。
 
-**我可以傳送／更新雜湊電子郵件地址的最大頻率是多少？**
+**我最常可以多久傳送/更新雜湊電子郵件地址一次？**
 
-* 使用Declared ID時，Audience manager會即時將雜湊的電子郵件地址傳送至目的地。
-* 透過ID同步檔案擷取資料時，Audience manager會每日處理資料。
+* 使用宣告 ID 時，Audience Manager 會將雜湊電子郵件地址即時傳送至目的地。
+* 透過 ID 同步檔案擷取資料時，Audience Manager 會每天處理資料。
 
-**如何得知電子郵件地址雜湊是否正確？**
+**如何知道電子郵件地址雜湊是否正確？**
 
-Audience manager未擷取原始電子郵件地址，我們無法驗證雜湊是否正確。 如需 [如何散列已登入資料的詳細資訊](../features/destinations/people-based-destinations-prerequisites.md) ，請參閱先決條件和考量事項。
+Audience Manager 不會擷取原始電子郵件地址，且無法驗證雜湊是否正確。如需如何雜湊已上線資料的詳細資訊，請參閱[必要條件和考量事項](../features/destinations/people-based-destinations-prerequisites.md)。
 
-## 描述檔合併規則 {#profile-merge-rules}
+## 設定檔合併規則 {#profile-merge-rules}
 
-**我是否有新的描述檔合併規則可搭配使用[!DNL People-Based Destinations]?**
+**是否有新的設定檔合併規則可搭配[!DNL People-Based Destinations]使用？**
 
-是。購買的客 [!DNL People-Based Destinations] 戶也可存取新的描述檔合併規則，以便離線劃分。 此規則會被呼 [!DNL All Cross-Device Profiles] 叫，並用於僅離線分段。 當您註冊時，這 [!DNL People-Based Destinations]是除了三個現有的驗證型規則外，您還可以建立的第四個描述檔合併規則。
+是。已購買 [!DNL People-Based Destinations] 的客戶也可存取新的設定檔合併規則，用於進行離線細分。[!DNL All Cross-Device Profiles] 會呼叫此規則，並用於僅限離線的細分。您註冊 [!DNL People-Based Destinations] 時，除了三個現有的驗證型規則外，這是您可以建立的第四個設定檔合併規則。
 
-**我是否必須複製現有的觀眾區隔，才能在中啟動它們[!DNL People-Based Destinations]?**
+**是否必須複製現有的受眾區段，才能在[!DNL People-Based Destinations]中啟用它們？**
 
-這取決於您的使用案例。 如果您打算在以人為本的管道中啟用現有的第一方區段，則不需要建立新區段。 您只需將區段對應至以人為本的目的地。
+這取決於您的使用案例。如果您打算在以人物為基礎的管道中啟用現有的第一方區段，則不需要建立新區段。您只需將區段對應至以人物為基礎的目的地即可。
 
-如果您打算在以人為本的管道中啟用新的離線對象，則需要使用合併規則建立新的第 [!DNL All Cross-Device Profiles] 一方區段。
+如果您打算在以人物為基礎的管道中啟用新的離線受眾，則需要使用 [!DNL All Cross-Device Profiles] 合併規則建立新的第一方區段。
 >[!NOTE]
 >
-> 您只能將具有第一方資料的區段對應至 [!DNL People-Based Destinations]。 我們的目標平台不接受含有第二方和第三方資料的細分。
+> 您只能將具有第一方資料的區段對應至 [!DNL People-Based Destinations]。我們的目的地平台不接受含有第二方和第三方資料的區段。
 
-## 比對率 {#match-rates}
+## 符合率 {#match-rates}
 
-**是否[!DNL People-Based Destinations]可洞悉比賽率或可定址的受眾？**
+**[!DNL People-Based Destinations]是否可顯示符合率或可定址的受眾？**
 
-不會。傳送對象區段至時， [!DNL People-Based Destinations]對象比對會在合作夥伴端進行。 Adobe無權存取這些量度。 Audience manager會顯示每個目的地的最大可分享對象數以及屬於某個區段的即時人員計數。 這些資訊可協助您進行促銷活動規劃和預測。
+不會。將受眾區段傳送至 [!DNL People-Based Destinations] 時，會在合作夥伴端進行受眾比對。Adobe 無權存取這些量度。Audience Manager 會顯示每個目的地的最大可共用受眾數，以及屬於某個區段的即時人員數量。這些資訊可協助您規劃和預測行銷活動。
 
-**理論上來說，使用比[!DNL People-Based Destinations]較其他將觀眾傳送至目的地平台的方法，如何比對比率？**
+**理論上來說，相較於其他將受眾傳送至目的地平台的方法，使用[!DNL People-Based Destinations]時符合率有何不同？**
 
-只要電子郵件地址已正確雜湊並收錄，與其他方法的比對率就 [!DNL People-Based Destinations] 不會有差異。 相符率低於100%的唯一原因是，如果傳入Audience manager的電子郵件地址無法與目標平台使用者群中的電子郵件地址相符。
+只要電子郵件地址已正確雜湊並擷取，使用 [!DNL People-Based Destinations] 與其他方法的符合率就不會有差異。符合率低於 100% 的唯一原因是，傳入 Audience Manager 的電子郵件地址，無法與目的地平台使用者群中的電子郵件地址比對成功。
 
-**我會收集客戶的工作電子郵件地址，這些地址與社交網路中使用的個人電子郵件地址不同。 如何在多個電子郵件地址間比對身分？**
+**我會收集客戶的工作電子郵件地址，這些地址與社交網路中使用的個人電子郵件地址不同。如何在多個電子郵件地址間識別身分？**
 
-Audience manager可收集並傳送每位使用者最多10封電子郵件至目標平台，但電子郵件位址需透過同步檔案擷取。 當Audience manager將電子郵件地址傳送至目標平台後，必須由平台將電子郵件地址與自己的使用者群相符。 某些平台可能會有其他電子郵件地址圖表，以比對從Audience manager傳送的位址與使用者個人檔案。
+Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並傳送至目的地平台，但電子郵件地址需透過同步檔案擷取。Audience Manager 將電子郵件地址傳送至目的地平台後，平台必須自行比對這些電子郵件地址與自己的使用者群。某些平台可能會有其他電子郵件地址圖表，用於將 Audience Manager 所傳來的地址與使用者設定檔進行比對。
 
 ## 資料匯出控制 {#data-export-controls}
 
-**如何[!DNL Data Export Controls]使用[!DNL People-Based Destinations]?**
+**如何搭配[!DNL People-Based Destinations]使用[!DNL Data Export Controls]？**
 
-[!DNL Data Export Controls] 將封鎖使用者嘗試傳送至之任何包含第二方與第三方資料的區段 [!DNL People-Based Destinations]。 [!DNL People-Based Destinations] 只允許使用第一方資料進行定位。 [!DNL Data Export Controls] 也可以使用裝置圖 [!DNL Profile Merge Rules] 形來封鎖區段。 [!DNL People-Based Destinations] 會以已勾選的適當資料匯出標籤建立，而且您無法覆寫匯出設定。
+[!DNL Data Export Controls] 會封鎖使用者嘗試傳送至 [!DNL People-Based Destinations] 且任何包含第二方與第三方資料的區段。[!DNL People-Based Destinations] 只允許使用第一方資料進行目標定位。[!DNL Data Export Controls] 也可以使用 [!DNL Profile Merge Rules] 搭配裝置圖形來封鎖區段。建立 [!DNL People-Based Destinations] 時會使用已勾選的適當資料匯出標籤，且您無法覆寫匯出設定。
 
-## 合作夥伴特定問題 {#partner-specific-questions}
+## 針對合作夥伴的問題 {#partner-specific-questions}
 
 ### [!DNL Facebook]
 
-**我需要做什麼才能傳送對象區段至[!DNL Facebook]?**
+**需要做什麼才能將受眾區段傳送至[!DNL Facebook]？**
 
-您必須先執行下 [!DNL People-Based Destinations] 列設定工作，才能 [!DNL Facebook]使用來傳送對象區段至：
+您必須先執行下列設定工作，才能使用 [!DNL People-Based Destinations] 將受眾區段傳送至 [!DNL Facebook]：
 
-1. 將Adobe Experience cloud商業帳戶新增為您的廣告合作夥伴 [!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 如需詳細資訊，請參閱將合作夥伴新增至您的業務經理。
+1. 將 Adobe Experience Cloud 商業帳戶新增為您 [!DNL Facebook Ad Account] 中的廣告合作夥伴。使用 `business ID=206617933627973`。如需詳細資訊，請參閱「將合作夥伴新增至您的 Business Manager 中」。
 
    >[!IMPORTANT]
    >
-   > 設定Adobe Experience cloud的權限時，您必須啟用「管理促銷活動」權限。 這是整合的必 [!DNL People-Based Destinations] 要項。
+   > 設定 Adobe Experience Cloud 的權限時，您必須啟用「管理行銷活動」權限。這是進行 [!DNL People-Based Destinations] 整合的必要權限。
 
-1. 閱讀並簽署 [!DNL Facebook Custom Audiences Terms of Service]。 若要這麼做，請前 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`往您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
+1. 閱讀並簽署 [!DNL Facebook Custom Audiences Terms of Service]。若要完成此操作，請前往 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`，其中 `accountID` 是您的 [!DNL Facebook Ad Account ID]。
 
-**是否支[!DNL People-Based Destinations]援其他應用程式中的受[!DNL Facebook]眾定位，例如[!DNL Instagram]?**
+**[!DNL People-Based Destinations]是否支援其他[!DNL Facebook]應用程式 (例如[!DNL Instagram]) 中的受眾目標定位？**
 
-您可以跨 [!DNL People-Based Destinations] 應用程 [!DNL Facebook]式系列使用，包括 [!DNL Custom Audiences]、 [!DNL Facebook][!DNL Instagram]和 [!DNL Audience Network][!DNL Messenger]。 在中的位置層級會指出您要針對哪個應用程式執行促銷活動 [!DNL Facebook Ads Manager]。
+您可以在 [!DNL Facebook] 旗下 [!DNL Custom Audiences] 所支援的應用程式中使用 [!DNL People-Based Destinations]，包括 [!DNL Facebook]、[!DNL Instagram]、[!DNL Audience Network] 和 [!DNL Messenger]。在 [!DNL Facebook Ads Manager] 中的廣告版位層級會指出您選擇針對哪個應用程式執行行銷活動。
 
-**和之間有何差[!DNL People-Based Destinations]異[!DNL Website Custom Audiences]?**
+**[!DNL People-Based Destinations]和[!DNL Website Custom Audiences]之間有何差異？**
 
-[!DNL People-Based Destinations] 利用與的 [!DNL Custom Audiences (CA)] 整合 [!DNL Facebook]。 客戶將觀眾傳 [!DNL WCA] 送給 [!DNL CA] 對象時，使用的關鍵是整合與整合的差異 [!DNL Facebook]。 [!DNL WCA] 使用 [!DNL Facebook] 像素（可能是網站使用者ID），同時使 [!DNL People-Based Destinations] 用雜湊電子郵件地址與整合 [!DNL CA]。
+[!DNL People-Based Destinations] 可運用 [!DNL Custom Audiences (CA)] 與 [!DNL Facebook] 的整合。客戶將受眾傳送至 [!DNL Facebook] 時，運用 [!DNL WCA] 與 [!DNL CA] 整合之間的差異是關鍵所在。[!DNL WCA] 使用 [!DNL Facebook] 像素 (可能是網站使用者 ID)，而 [!DNL People-Based Destinations] 使用雜湊電子郵件地址來與 [!DNL CA] 整合。
 
-您可以透過此功能使用Audience manager [!DNL Facebook] 的整 [!DNL WCA] 合，而 [!DNL URL Destinations] 不需額外付費。
+您可以透過 [!DNL URL Destinations] 功能使用 Audience Manager 的 [!DNL Facebook] [!DNL WCA] 整合，不需額外付費。
 
-這兩者相輔相成，您可以使用兩者來確保受眾覆蓋率更高。 例如，當公 [!DNL WCA] 司想要定位尚未註冊帳戶的網站訪客時，可用來進行勘察，但 [!DNL People-Based Destinations] 可協助您定位已提供電子郵件地址但可能未造訪網站的現有客戶。
+這兩項整合相輔相成，您可以同時使用兩者來確保受眾涵蓋範圍更廣。例如，公司想要將目標定位為尚未註冊帳戶的網站訪客時，可使用 [!DNL WCA] 進行勘察，而 [!DNL People-Based Destinations] 可協助您將目標定位為已提供電子郵件地址但可能未造訪網站的現有客戶。
