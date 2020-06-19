@@ -1,27 +1,30 @@
 ---
-description: 本檔案涵蓋您可在資料隱私權要求中使用的Audience Manager ID類型。
-seo-description: 本檔案涵蓋您可在資料隱私權要求中使用的Audience Manager ID類型。
-seo-title: Audience Manager識別碼(ID)
+description: 本文件說明您可在資料隱私權請求中使用的 Audience Manager ID 類型。
+seo-description: 本文件說明您可在資料隱私權請求中使用的 Audience Manager ID 類型。
+seo-title: Audience Manager 識別碼 (ID)
 solution: Audience Manager
 keywords: GDPR UI, GDPR API, CCPA, privacy, AAM ID
-title: Audience Manager識別碼(ID)
-translation-type: tm+mt
+title: Audience Manager 識別碼 (ID)
+translation-type: ht
 source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+workflow-type: ht
+source-wordcount: '253'
+ht-degree: 100%
 
 ---
 
 
-# Audience Manager識別碼(ID) {#aam-ids}
+# Audience Manager 識別碼 (ID) {#aam-ids}
 
-將資料 [隱私權要求](data-privacy-requests.md) 送出至Adobe Audience Manager時，您必須包含下列其中一個識別碼(ID)。 您可以在我們的Audience Manager ID索引中，找到有關ID [格式的詳細資訊](../../reference/ids-in-aam.md)。
+將[資料隱私權請求](data-privacy-requests.md)提交至 Adobe Audience Manager 時，您必須加入下列其中一個識別碼 (ID)。您可以在 [Audience Manager ID 索引](../../reference/ids-in-aam.md)中，找到有關 ID 格式的詳細資訊。
 
-## Adobe Audience Manager唯一使用者ID
+## Adobe Audience Manager 不重複使用者 ID
 
-* **使用者 ID**: `aam_uuid`
-* **定義**: Adobe Audience Manager唯一使用者ID
-* **命名空間ID**: 0
+* **使用者 ID**：`aam_uuid`
+* **定義**：Adobe Audience Manager 不重複使用者 ID
+* **命名空間 ID**：0
 
-**JSON 範例**:
+**JSON 範例**：
 
 ```json
  "users": [
@@ -48,7 +51,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 >[!NOTE]
 >
->You can also use the [!DNL CORE] namespace.
+>您也可以使用 [!DNL CORE] 命名空間。
 
 ```json
  "users": [
@@ -75,15 +78,15 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ## Adobe Experience Cloud ID
 
-* **使用者 ID**: `mid`
-* **定義**: [!DNL Adobe Experience Cloud ID]，先前稱為 [!DNL Visitor ID] 或 [!DNL Marketing Cloud ID]
-* **命名空間ID**: 4
+* **使用者 ID**：`mid`
+* **定義**：[!DNL Adobe Experience Cloud ID]，前身為 [!DNL Visitor ID] 或 [!DNL Marketing Cloud ID]
+* **命名空間 ID**：4
 
 >[!NOTE]
 >
->You can also use the [!DNL ECID] namespace. 請參閱第二個 [!DNL JSON] 範例。
+>您也可以使用 [!DNL ECID] 命名空間。請參閱第二個 [!DNL JSON] 範例。
 
-**JSON 範例**:
+**JSON 範例**：
 
 ```json
  "users": [
@@ -131,15 +134,15 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 ]
 ```
 
-## Customer ID
+## 客戶 ID
 
-**使用者 ID**: `cid`
+**使用者 ID**：`cid`
 
-**定義**: 客戶ID，例如您為匿名網站訪客設定的Cookie，或離線系統的 [!DNL CRM] ID或雜湊使用者名稱。
+**定義**：客戶 ID，例如您為匿名網站訪客設定的 Cookie，或是離線系統的 [!DNL CRM] ID 或雜湊使用者名稱。
 
-**命名空間ID**: 客戶專屬。 請從您的Audience Manager例項中尋找。
+**命名空間 ID**：客戶專屬。請從您的 Audience Manager 例項中尋找。
 
-**JSON 範例**:
+**JSON 範例**：
 
 ```json
 "users": [
@@ -168,24 +171,24 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
   }
 ```
 
-## 行動廣告ID
+## 行動廣告 ID
 
-**使用者 ID**: `d_cid`
+**使用者 ID**：`d_cid`
 
-**定義**: 行動廣告ID。
+**定義**：行動廣告 ID。
 
-**命名空間 ID**:
+**命名空間 ID**：
 
 * [!DNL IDFA:] 20915
 * [!DNL GAID:] 20914
 
-如需詳 [細資訊，請參閱全域資料](../../features/global-data-sources.md) 來源。
+如需詳細資訊，請參閱[全域資料來源](../../features/global-data-sources.md)。
 
 >[!IMPORTANT]
 >
-> 如果您使用Mobile, [!DNL SDK]則您也應傳送Experience Cloud ID(`MID`)和行動廣告ID，以取得完整的「存取」和「刪除」回應。
+> 如果您有使用 Mobile [!DNL SDK]，那麼您也應傳送 Experience Cloud ID (`MID`) 以及行動廣告 ID，以取得完整的存取和刪除回應。
 
-**JSON 範例**:
+**JSON 範例**：
 
 ```json
 "users": [
@@ -212,13 +215,13 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 
 ## 整合程式碼
 
-**使用者 ID**: `d_cid_ic`
+**使用者 ID**：`d_cid_ic`
 
-**定義**: 資料來源的整合代碼。 在請求中，可以使用這個來取代資料來源ID /命名空 [!DNL API] 間ID [!DNL Adobe Experience Cloud Privacy Core Service]。
+**定義**：資料來源的整合程式碼。在向 [!DNL Adobe Experience Cloud Privacy Core Service] 發出的 [!DNL API] 請求中，可以使用這個 ID 來取代資料來源 ID / 命名空間 ID。
 
-**命名空間ID**: 不適用
+**命名空間 ID**：不適用
 
-**JSON 範例**:
+**JSON 範例**：
 
 ```json
 "users": [
