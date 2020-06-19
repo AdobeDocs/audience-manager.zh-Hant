@@ -1,50 +1,53 @@
 ---
-description: Adobe Audience manager的歷史記錄、收集的資料類型、細分、報告等相關資訊。
-seo-description: Adobe Audience manager的歷史記錄、收集的資料類型、細分、報告等相關資訊。
-seo-title: Audience manager概觀
+description: Adobe Audience Manager 的發展歷史、收集的資料類型、細分、報表等項目的相關資訊。
+seo-description: Adobe Audience Manager 的發展歷史、收集的資料類型、細分、報表等項目的相關資訊。
+seo-title: Audience Manager 概述
 solution: Audience Manager
-title: Audience manager概觀
+title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a13c64eb45fdbcb311bfecdb39b3203523d6b399
+workflow-type: ht
+source-wordcount: '309'
+ht-degree: 100%
 
 ---
 
 
-# Audience manager概觀 {#audience-manager-overview}
+# Audience Manager 概述 {#audience-manager-overview}
 
-Audience manager可協助您將受眾資料資產整合在一起，讓您輕鬆收集與商業相關的網站訪客資訊、建立有市場價值的細分，並為適當的受眾提供有針對性的廣告和內容。 此外，Audience manager還提供強穩的資料收集、控制和保護功能，讓標籤部署和管理更輕鬆。
+Audience Manager (AAM) 能協助您彙集受眾資料資產、簡化收集網站訪客之商業相關資訊的程序、建立可行銷區段，以及將具針對性的廣告和內容提供給合適的受眾。此外，Audience Manager 還提供強大的資料收集、控制和保護功能，讓您可輕鬆部署和管理標籤。
 
-有了Audience Manager，您就不會與資料銷售者、交換者或需求端平台連結。 此外，Audience manager對於合作夥伴的資料資產完全不可知。 Audience manager可存取多個資料來源，讓數位出版業者能夠使用各種第三方資料以及我們的私人資料合作。 與我們的合作夥伴解決方案團隊討論如何協助您針對目標受眾做出明智而準確的決策。
+有了 Audience Manager，您不必再侷限於資料賣方、交換或需求端平台。此外，Audience Manager 也無從得知合作夥伴的資料資產。Audience Manager 提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料和我們的私人資料協作。與我們的合作夥伴解決方案團隊討論，協助您針對目標受眾做出明智而準確的決策。
 
-## 資料管理平台(DMP)的三項功能 {#dmp-three-functions}
+## 資料管理平台 (DMP) 的三項功能 {#dmp-three-functions}
 
-資料管理平台(DMP)的功能可歸納為三個類別，如下所示。
+資料管理平台 (DMP) 的功能可歸納為三個類別，如下所示。
 
-![三個DMP函式的影像：資料輸入、觀眾建立、資料輸出](/help/using/overview/assets/dmp-functions.png)
+![三個 DMP 功能的影像：資料輸入、建立受眾、資料輸出](/help/using/overview/assets/dmp-functions.png)
 
-**資料**
+**資料輸入**
 
-Audience manager會從通道和裝置（網路分析、CRM、裝置資料、電子商務等）收集第一方資料。
+Audience Manager 會從各種管道和裝置 (網頁分析、CRM、裝置資料、電子商務等) 收集第一方資料。
 
 <br> 
 
-**建立觀眾**
+**建立受眾**
 
-將資料統一到受眾個人檔案中，讓您跨裝置和通道獲得完整的客戶視圖。 建立類似的模型、建立受眾細分和個人檔案群組，並輔以第二方和第三方資料來源。
+將資料統一集中到受眾設定檔中，讓您可獲得跨裝置和管道的完整客戶視圖。建立相似模型、建立受眾區段和設定檔群組，並以第二方和第三方資料來源補充。
 
 <br> 
 
 **資料輸出**
 
-將受眾細分推出至需求端平台(DSP)、宣傳活動管理系統和其他行銷平台，以激活受眾細分。
+將受眾區段推出至需求端平台 (DSP)、行銷活動管理系統和其他行銷平台，以啟用受眾區段。
 
 ## 更多資訊 {#more-information}
 
 如需詳細資訊，請參閱下列資源：
-* [Audience manager概觀](https://www.adobe.com/analytics/audience-manager.html)
-* [Audience manager的優點](https://www.adobe.com/analytics/audience-manager/benefits.html)
-* [Audience manager功能](https://www.adobe.com/analytics/audience-manager/features.html)
+* [Audience Manager 概述](https://www.adobe.com/tw/analytics/audience-manager.html)
+* [Audience Manager 優點](https://www.adobe.com/tw/analytics/audience-manager/benefits.html)
+* [Audience Manager 功能](https://www.adobe.com/tw/analytics/audience-manager/features.html)
 
 
 <!--
