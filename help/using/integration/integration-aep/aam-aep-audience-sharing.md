@@ -1,17 +1,20 @@
 ---
 description: 本文說明如何在Audience Manager和Adobe Experience Platform之間共用觀眾。
 seo-description: 本文說明如何在Audience Manager和Adobe Experience Platform之間共用觀眾。
-seo-title: Audience Manager與Adobe Experience Platform之間的觀眾分享
+seo-title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 solution: Audience Manager
-title: Audience Manager與Adobe Experience Platform之間的觀眾分享
+title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 translation-type: tm+mt
-source-git-commit: 7dddf19aa3b0fc0655b1b206d9c8f0c772190601
+source-git-commit: 36c820de5ccb68da6d0e519467edc869064b6e81
+workflow-type: tm+mt
+source-wordcount: '1177'
+ht-degree: 4%
 
 ---
 
 
-# Audience Manager與Adobe Experience Platform之間的觀眾分享 {#aam-aep-audience-sharing}
+# Audience Manager 與 Adobe Experience Platform 之間的受眾共用 {#aam-aep-audience-sharing}
 
 >[!NOTE]
 >
@@ -95,6 +98,37 @@ Audience Manager會在您的區段儲存空間中自動建立 **名為「Experie
 | 2 | [!UICONTROL Data Source] | 自動建立。 從Experience Platform區段自動建立的所有特徵和區段都會儲存在資料來源中 **[!DNL Adobe Experience Platform Audience Sharing]**。 |
 | 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指出自動建立的區段會遵循在Experience Platform中設定的合併原則。 |
 | 4 | [!UICONTROL Segment Rule] | 區段由「特徵」區段中描述的 [特徵組成](#aep-segments-as-aam-traits)。 |
+
+## Experience Platform中的Audience Manager資料匯出控制支援 {#aam-data-export-control-in-aep}
+
+為了在Experience Platform中強制符合資料使用情形，必須為所有適用的資料集和欄位提供適當的資 [料使用標籤](https://docs.adobe.com/content/help/en/experience-platform/data-governance/labels/overview.html)。 此外，必 [須啟用資料使用原則](https://docs.adobe.com/content/help/en/experience-platform/data-governance/policies/overview.html) ，以針對這些標籤執行特定行銷動作，如 [Data Usage Labeling and Enforcement(DULE)架構所述](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html#dule-framework)。
+
+在Audience Manager和Experience Platform之間的觀眾分享程式中，套用至Audience Manager區段的任何「資料匯出控制」都會轉換為Experience Platform資料治理所識別的相同標籤和行銷動作，反之亦然。
+
+>[!NOTE] 有關「資料匯出控制」的詳細資訊，請參閱「資料匯 [出控制」檔案](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
+本檔案提供特定Audience Manager資料匯出控制項如何對應至平台中資料使用標籤和行銷動作的參考。
+
+### 資料匯出控制項至資料使用標籤
+
+下表概述特定資料匯出控制項如何對應至已辨識的資料使用標籤：
+
+| 資料匯出控制 | 資料使用標籤 |
+| --- | --- |
+| 無法與個人識別資訊搭配使用 | C3: 資料無法結合或與直接可識別身分的資訊搭配使用 |
+| 無法用於Offsite廣告定位 | C5: 資料無法用於內容或廣告的喜好式跨網站定位 |
+| 無法用於Onsite廣告定位 | C6: 資料無法用於站上廣告定位 |
+| 無法用於現場個人化 | C7: 資料無法用於內容的現場定位 |
+
+### 將資料匯出控制項匯出至行銷動作
+
+下表概述特定資料匯出標籤如何對應至已識別的行銷動作：
+
+| 資料匯出標籤 | 行銷動作 |
+| --- | --- |
+| 此目標可能會結合個人識別資訊(PII) | 與PII結合 |
+| 此目標可用於離站廣告定位 | 跨網站定位 |
+| 此目標可用於現場廣告定位 | 現場廣告 |
+| 此目的地可用於臨場廣告個人化 | Onsite個人化 |
 
 ## 瞭解Audience Manager和Experience Platform之間的細分人口差異
 
