@@ -7,10 +7,10 @@ keywords: GDPR UI, GDPR API, CCPA, privacy
 title: 資料隱私權請求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 70%
+source-wordcount: '1471'
+ht-degree: 63%
 
 ---
 
@@ -30,7 +30,7 @@ You can submit individual requests to access and delete consumer data from [!DNL
 * 透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。請參閱[此處](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)的文件。
 * 透過 **[!DNL Privacy Service API]**。See the documentation [here](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md) and the [!DNL API] reference [here](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml).
 
-傳送個人資料隱私權請求時，如 **[Audience Manager 識別碼](data-privacy-ids.md)**一節所述，您可以提交任何 Audience Manager 識別碼 (ID)，以及其各自的命名空間 ID (資料來源 ID)。
+When sending individual data privacy requests, you can submit any [!DNL Audience Manager] identifiers (IDs), as described in the **[Audience Manager Identifiers](data-privacy-ids.md)**section, along with their respective namespace IDs (data source IDs).
 
 [Privacy Service](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html) 支援兩種請求：資料存取和資料刪除請求。
 
@@ -44,9 +44,9 @@ You can submit individual requests to access and delete consumer data from [!DNL
 
 我們瞭解您承諾在法規所規範的期限內履行資料隱私權請求。
 
-## 資料刪除請求{#delete-data}
+## 資料刪除請求 {#delete-data}
 
-若要傳送資料刪除請求，您可以透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/) (說明文件請參閱[這裡](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md))，或是呼叫 [!DNL Privacy Service API] (說明文件請參閱[這裡](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html)，API 參考可於[此處](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)取得)。
+You can send data deletion requests through the [Privacy Service UI](https://privacyui.cloud.adobe.io/) (documentation [here](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)) or by calling the [!DNL Privacy Service API] (documentation [here](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html) and [!DNL API] reference [here](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)).
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -56,7 +56,7 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。For tha
 
 In response to your consumer data deletion requests, [!DNL Audience Manager] deletes traits and segments associated with the [!DNL Audience Manager] identifier included in the request. Additionally, the respective [!DNL Audience Manager] identifiers for the individual opted out of further data collection by [!DNL Audience Manager] and the respective ID mappings will be removed.
 
-您在資料隱私權請求中傳送宣告 ID (例如跨裝置 [!DNL CRM] ID 或 Cookie ID) 時， 會對所有連結的裝置執行必要的刪除 (每個宣告 ID 最多 100 部裝置)。[!DNL Audience Manager]
+您在資料隱私權請求中傳送宣告 ID (例如跨裝置 [!DNL CRM] ID 或 ID) 時， 會對所有連結的裝置執行必要的刪除 (每個宣告 ID 最多 100 部裝置)。[!DNL cookie][!DNL Audience Manager]
 
 [!DNL Audience Manager] 會嘗試將資料主體請求刪除特定資料的取消細分資訊傳送給啟用合作夥伴，通知對方該刪除請求。不過，有些啟用合作夥伴：
 
@@ -124,14 +124,14 @@ The partner-level opt-out allows you to opt-out your users from data collection 
 * 連結至 [CRM ID](../../reference/ids-in-aam.md) 的最後一個裝置 ID ([Audience Manager 不重複使用者 ID](../../reference/ids-in-aam.md)) 會退出資料收集。
 * [!DNL Audience Manager] 將對 ID 和連結至 ID 的最後一個裝置 ID 停止所有資料收集、細分或啟用；[!DNL CRM][!DNL CRM]
 * [!DNL Audience Manager] 從所有區段中取 [!DNL CRM] 消區段選擇退出的ID和最後一個裝置ID;
-* Destination partners receive the unsegment request for the [!DNL CRM] ID and last device ID. 取消細分功能適用於[即時](data-privacy-requests.md#aam-partners-with-unsegmentation)和批次目的地。
+* [!UICONTROL Destination] 合作夥伴會收到ID和最後一個裝 [!DNL CRM] 置ID的取消分段要求。 取消細分功能適用於[即時](data-privacy-requests.md#aam-partners-with-unsegmentation)和批次目的地。
 * 系統不會刪除歷史資料。
 
 When [!DNL Audience Manager] receives a partner-level opt-out request, the [!DNL JSON] returned by the [!DNL DCS] contains the [error code 171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes), with the message [!UICONTROL "Encountered opt out tag"], instead of the [!DNL Audience Manager] user ID.
 
 您可以使用 `d_cid` 和 `d_cid_ic` 索引鍵值配對，提出宣告 ID 選擇退出請求。舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。請參閱 [CID 取代 DPID 及 DPUUID](../../reference/cid.md)。在這些範例中，*斜體字*&#x200B;代表變數預留位置。
 
-#### 使用 CID 和 CID_IC 執行選擇退出
+#### 選擇退出與 [!DNL CID] 和 [!DNL CID_IC]
 
 如需說明和語法，請參閱 [URL 變數和宣告 ID 的語法](../../features/declared-ids.md#variables-and-syntax)。
 
@@ -162,7 +162,7 @@ The partner-level opt-out allows you to opt-out your users from data collection 
 * 目的地合作夥伴會收到該裝置 ID 的取消細分請求。取消細分功能適用於[即時](data-privacy-requests.md#aam-partners-with-unsegmentation)和批次目的地。
 * 系統不會刪除歷史資料。
 
-## 支援取消細分功能的 Audience Manager 合作夥伴 {#aam-partners-with-unsegmentation}
+## [!DNL Audience Manager] 具有取消細分功能的合作夥伴 {#aam-partners-with-unsegmentation}
 
 In order to help you automate your consumer data privacy requests, [!DNL Audience Manager] will attempt to notify activation partners about deletion requests from Data Subjects by sending them unsegment (or remove segment) information.
 
@@ -177,6 +177,6 @@ In those cases, you are not able to send delete requests to activation partners 
 
 ## 資料更正請求 {#correction}
 
-Given that [!DNL Audience Manager] is not the source of the data, there is a limited role for data correction in [!DNL Audience Manager]. 修正可能表示消費者已請求取消不正確特徵/區段的資格，或符合所需特徵/區段的資格。
+Given that [!DNL Audience Manager] is not the source of the data, there is a limited role for data correction in [!DNL Audience Manager]. The correction could mean that the consumer has requested to either be disqualified from an incorrect [!UICONTROL trait]/[!UICONTROL segment] or qualified to the desired [!UICONTROL trait]/[!UICONTROL segment].
 
-[!DNL Audience Manager] 客戶可以選擇針對使用者個人檔案擷取相關的訊號／特徵／區段，並透過離線資料擷取 [將此資訊傳送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至 [!DNL Audience Manager]。 請注意，如果使用者重複原來的行為，將會繼續符合原始特徵和區段的資格。
+[!DNL Audience Manager] 客戶可以選擇針對使用者個人檔案擷取相關的訊號／特徵／區段，並透過離線資料擷取 [將此資訊傳送](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至 [!DNL Audience Manager]。 Please note that the user will continue to get qualified to the original [!UICONTROL trait] and [!UICONTROL segments] if they repeat their behavior.
