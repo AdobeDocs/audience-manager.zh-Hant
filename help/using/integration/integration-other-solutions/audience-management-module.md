@@ -7,15 +7,15 @@ solution: Audience Manager
 title: 實作觀眾管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 6%
+source-wordcount: '691'
+ht-degree: 5%
 
 ---
 
 
-# 如何將資料從 Adobe Analytics 轉送至 Audience Manager {#implement-the-audience-management-module}
+# How to forward data from [!DNL Adobe Analytics] to [!DNL Audience Manager] {#implement-the-audience-management-module}
 
 請依照本教學課程中的步驟，將 [!DNL Analytics] 資料轉 [!DNL Audience Manager] 送至，而 [!DNL Audience Manager] 不需讓( [!UICONTROL Data Integration Library] )[!DNL DIL]程式碼從頁面傳送像素。
 
@@ -34,7 +34,7 @@ ht-degree: 6%
 
 根據您使用的標籤管理解決方案，有 [!DNL Adobe Analytics] 兩種 [!DNL Audience Manager]方法可實作資料轉送。
 
-### 使用Adobe Experience Platform Launch的實作
+### 使用 [!DNL Adobe Experience Platform Launch]
 
 [!DNL Adobe] 建議您使用 [Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html) 擴充功能來 [!DNL Adobe Analytics] 測量 [!DNL Audience Manager] 和設定屬性。 在這種情況下，您不需要手動複製任何代碼。 您必須改為啟用擴充功能中的 [!DNL Analytics Launch] 資料共用，如下圖所示。 另請參閱 [Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager) 檔案。
 
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 ![如何啟用從Adobe Analytics擴充功能到Audience Manager的資料共用](/help/using/integration/assets/analytics-to-aam.png)
 
-### 使用Adobe數位標籤管理(DTM)或任何其他標籤管理解決方案的實作
+### 使用或任何 [!DNL Adobe Digital Tag Management (DTM)] 其他標籤管理解決方案實施
 
 >[!WARNING]
 >
@@ -82,12 +82,12 @@ s.AudienceManagement.setup({
 
 | 參數 | 說明 |
 |--- |--- |
-| `partner` | 必填。這是指派給您的合作夥伴名稱 [!DNL Adobe]。 它有時稱為「合作夥伴ID」或「合作夥伴子網域」。  如果您不 [!DNL Adobe] 知道您的 [](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) 合作夥伴名稱，請洽詢您的顧問或客戶服務。 |
+| `partner` | 必填。這是指派給您的合作夥伴名稱 [!DNL Adobe]。 它有時稱為您或合作夥伴 [!UICONTROL partner ID] 的子網域。  如果您不 [!DNL Adobe] 知道您的 [](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) 合作夥伴名稱，請洽詢您的顧問或客戶服務。 |
 | `containerNSID` | 必填。大部份的客戶都可以設定 `"containerNSID":0` 。 不過，如果您的公司需要使用不同的容器自訂ID同步，您可以在此處指定該容器ID。 |
-| `uuidCookie` | 選填。此設定可讓您在 [!DNL Adobe] 第一方網域中設定Cookie。 此Cookie包含 [UUID](../../reference/ids-in-aam.md) 。 |
-| `visitorService` - `namespace` | 必填。如果 `namespace` 您使用與2.10版或更新 [!DNL AudienceManagement] 版本搭售的 [!UICONTROL AppMeasurement] 模組，則需要此參數。 此模 [!UICONTROL AudienceManagement] 塊要求您使用 [!UICONTROL Adobe Experience Platform Identity Service] 3.3或更新版本。 <br> 公 [!UICONTROL Experience Cloud Organization ID] 司註冊時提供的ID [!UICONTROL Experience Cloud]。 在「組織」和「帳戶連結」中尋找您公 [司的組織ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)。 |
+| `uuidCookie` | 選填。此設定可讓您在 [!DNL Adobe] 第一方網域中設定Cookie。 這包 [!DNL cookie] 含 [UUID](../../reference/ids-in-aam.md) 。 |
+| `visitorService` - `namespace` | 必填。如果 `namespace` 您使用與2.10版或更新 [!DNL AudienceManagement] 版本搭售的 [!UICONTROL AppMeasurement] 模組，則需要此參數。 此模 [!UICONTROL AudienceManagement] 塊要求您使用 [!UICONTROL Adobe Experience Platform Identity Service] 3.3或更新版本。 <br><br>公 [!UICONTROL Experience Cloud Organization ID] 司註冊時提供的ID [!UICONTROL Experience Cloud]。 在「組織」和「帳戶連結」中尋找您公 [司的組織ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)。 |
 
-## 結果： 資料轉送至Audience Manager {#results-data-forwarding}
+## 結果： 資料轉送至 [!DNL Audience Manager] {#results-data-forwarding}
 
 您的 [!DNL Analytics] 實作會在您擁有下列項目 [!DNL Audience Manager] 後傳送資料至：
 
