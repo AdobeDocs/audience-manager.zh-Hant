@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 批次資料傳輸流程說明
 uuid: a9eee940-151c-44f8-9fe9-8ab47d8fa45c
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 6%
+source-wordcount: '209'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 6%
 ## 資料整合步驟
 
 1. 使用者瀏覽客戶網站。
-1. Audience Manager和第三方資料提供者會為訪客指派唯一ID（通常使用Cookie）。
-1. Audience Manager會呼叫協力廠商資料提供者，以符合訪客ID。
-1. 排程的請求（通常在每日間隔內）會在Audience Manager和您的第三方資料提供者之間交換訪客區段資料。
+1. [!DNL Audience Manager] 協力廠商資料提供者會為訪客指派唯一ID（通常使用Cookie）。
+1. [!DNL Audience Manager] 呼叫協力廠商資料提供者，以符合訪客ID。
+1. 排程的請求（通常在每日間隔內）會在您與第三方資料提供者之 [!DNL Audience Manager] 間交換訪客區段資料。
 1. 每當處理傳 [!UICONTROL Server-to-Server] 入檔案時，收據會透過電子郵件傳送給合作夥伴解決方案，如果已設定，則會傳送給合作夥伴。 如需詳細資訊，請參 [閱傳入處理後傳送給合作夥伴的範例訊息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)。
