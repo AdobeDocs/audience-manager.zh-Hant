@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 傳入資料檔案內容語法、無效字元、變數和範例
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1193'
 ht-degree: 4%
 
 ---
@@ -78,9 +78,9 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## 格式化特徵ID {#formatting-trait-ids}
+## 格式 [!UICONTROL Trait IDs] {#formatting-trait-ids}
 
-下表說明識別傳入資料檔案中特徵名稱或ID的字首。 如需範例， [請參閱範例檔](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) 。
+下表說明了用於標識傳入資料 [!UICONTROL trait] 檔案中的名稱或ID的前置詞。 如需範例， [請參閱範例檔](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#data-file-examples) 。
 
 <table id="table_AD54B3E5487E47C481A4E5FD3A93FDA5"> 
  <thead> 
@@ -124,13 +124,13 @@ ht-degree: 4%
  </tbody>
 </table>
 
-## 特徵ID、使用者ID和索引鍵值配對中的無效字元 {#invalid-chars}
+## 無效的字 [!UICONTROL Trait IDs]元和 [!UICONTROL User IDs] 鍵值配對 {#invalid-chars}
 
-### 特徵ID
+### [!UICONTROL Trait IDs]
 
-特徵ID只包含數值字元。 我們要求您在傳入的資 *料檔案中僅包含已登入的特徵* 。 我們不會處理傳入資料傳輸中的任何其他特徵類型。
+[!UICONTROL Trait IDs] 只包含數字字元。 我們要求您僅將內 *嵌[!UICONTROL onboarded traits]*資料檔案納入傳入。 我們不會處理傳入[!UICONTROL trait]資料傳輸中的任何其他類型。
 
-### 使用者 ID
+### [!UICONTROL User IDs]
 
 <table id="table_8C5C7271B813441EA2D45CA2FE2A6C59"> 
  <thead> 
@@ -237,7 +237,7 @@ ht-degree: 4%
 
 ## 範例矩陣 {#examples-matrix}
 
-下圖顯示正確格式化傳入檔案的範例，視ID類型 [和要新增特徵至描述檔的方法而定](../../../reference/ids-in-aam.md) 。
+下圖顯示了正確格式化傳入檔案的範例，視ID類 [型](../../../reference/ids-in-aam.md) ，以及您要新增至描述檔的 [!UICONTROL traits] 方法而定。
 
 <table id="table_FE6D97A1F5074E4A8EFC723AF0C5E707"> 
  <thead> 
@@ -283,7 +283,7 @@ ht-degree: 4%
 
 ### Example 1 {#example-1}
 
-使用特徵ID來傳送特徵資格資 [!DNL Audience Manager][!DNL UUIDs]訊。
+使用 [!UICONTROL trait IDs] 來傳送 [!UICONTROL trait] 資格資訊 [!DNL Audience Manager][!DNL UUIDs]。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_sid=24, d_sid=26, d_sid=27
@@ -291,7 +291,7 @@ ht-degree: 4%
 
 ### Example 2 {#example-2}
 
-使用特徵ID來傳送特徵不符合資格的資 [!DNL Audience Manager][!DNL UUIDs]訊。
+用 [!UICONTROL trait IDs] 於發送 [!UICONTROL trait] 取消資格資訊 [!DNL Audience Manager][!DNL UUIDs]。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
@@ -311,7 +311,7 @@ ht-degree: 4%
 
 ### Example 3 {#example-3}
 
-傳送索引鍵值配對，以新增特徵資格資 [!DNL Audience Manager] 訊 [!DNL UUIDs]。
+傳送索引鍵值配對，以新增 [!UICONTROL trait] 資格資訊 [!DNL Audience Manager][!DNL UUIDs]。
 
 ```
 59767559181262060060278870901087098252 <TAB> product = tablet, product = phone
@@ -325,7 +325,7 @@ ht-degree: 4%
 
 ### Example 4 {#example-4}
 
-使用ic首碼來傳送特徵資格資 [!DNL Audience Manager] 訊 [!DNL UUIDs]。
+使用首 `ic` 碼傳送 [!UICONTROL trait] 資格資訊 [!DNL Audience Manager][!DNL UUIDs]。
 
 ```
 59767559181262060060278870901087098252 <TAB> 30608,50354,50338,50352,30626
@@ -339,7 +339,7 @@ ht-degree: 4%
 
 ### Example 5 {#example-5}
 
-使用特徵ID來傳送裝置的特徵資格 [!DNL Android] 資訊。
+使用 [!UICONTROL trait IDs] 來傳送 [!UICONTROL trait] 裝置的資格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -347,7 +347,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Example 6 {#example-6}
 
-使用特徵ID來傳送裝置的特徵不合格 [!DNL Android] 資訊。
+使用 [!UICONTROL trait IDs] 傳送裝 [!UICONTROL trait] 置的取消資格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -367,7 +367,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Example 7 {#example-7}
 
-傳送索引鍵值配對，以新增裝置的特徵資格 [!DNL Android] 資訊。
+傳送金鑰值配對，以新增裝 [!UICONTROL trait] 置的資格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> product = tablet, product = phone
@@ -381,7 +381,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "ph
 
 ### Example 8 {#example-8}
 
-使用ic首碼來傳送裝置的特徵資格 [!DNL Android] 資訊。
+使用首 `ic` 碼來傳送裝 [!UICONTROL trait] 置的資格 [!DNL Android] 資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
@@ -395,7 +395,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 9 {#example-9}
 
-使用特徵ID來傳送裝置的特徵資格 [!DNL iOS] 資訊。
+使用 [!UICONTROL trait IDs] 來傳送 [!UICONTROL trait] 裝置的資格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -403,7 +403,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 10 {#example-10}
 
-使用特徵ID來傳送裝置的特徵不合格 [!DNL iOS] 資訊。
+使用 [!UICONTROL trait IDs] 傳送裝 [!UICONTROL trait] 置的取消資格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -423,7 +423,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 11 {#example-11}
 
-傳送索引鍵值配對，以新增裝置的特徵資格 [!DNL iOS] 資訊。
+傳送金鑰值配對，以新增裝 [!UICONTROL trait] 置的資格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> product = tablet, product = phone
@@ -437,7 +437,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 12 {#example-12}
 
-使用ic首碼來傳送裝置的特徵資格 [!DNL iOS] 資訊。
+使用首 `ic` 碼來傳送裝 [!UICONTROL trait] 置的資格 [!DNL iOS] 資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
@@ -451,7 +451,7 @@ e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 
 ### Example 13 {#example-13}
 
-使用特徵ID來傳送特徵資格資 [!DNL DPUUIDs]訊。
+使用 [!UICONTROL trait IDs] 來傳送 [!UICONTROL trait] 的資格資訊 [!DNL DPUUIDs]。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
@@ -459,7 +459,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 
 ### Example 14 {#example-14}
 
-使用特徵ID來傳送特徵不符合條件的資 [!DNL DPUUIDs]訊。
+用 [!UICONTROL trait IDs] 於發送 [!UICONTROL trait] 取消資格資訊 [!DNL DPUUIDs]。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
@@ -479,7 +479,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:-1, 26:-1, 27:-1
 
 ### Example 15 {#example-15}
 
-傳送索引鍵值配對，以新增特徵資格資訊 [!DNL DPUUIDs]。
+傳送索引鍵值配對，以新增 [!UICONTROL trait] 資格資訊 [!DNL DPUUIDs]。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> product = tablet, product = phone
@@ -493,7 +493,7 @@ DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = 
 
 ### Example 16 {#example-16}
 
-使用首 `ic` 碼來傳送特徵資格資訊 [!DNL DPUUIDs]。
+使用首 `ic` 碼來傳送 [!UICONTROL trait] 的資格資訊 [!DNL DPUUIDs]。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
