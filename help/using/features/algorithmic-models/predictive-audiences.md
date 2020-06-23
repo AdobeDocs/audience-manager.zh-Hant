@@ -5,9 +5,9 @@ seo-title: 預測受眾概述
 solution: Audience Manager
 title: Audience Manager 預測受眾
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: f52321f3621d9eb6b9c5b643a3516f39f35466c2
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1251'
 ht-degree: 9%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 9%
    >[!IMPORTANT]
    > 目前，預 [!UICONTROL Total Segment Population] 測性區段的顯示為0，且不 [支援批次傳出資料傳輸](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)[!UICONTROL Predictive Audiences]。 此行為在未來的更新中將會改變。
 * [!UICONTROL Predictive Audiences] 從所有第一方資料來源，根據您的第一方特徵執行對象分類。
-* 區段評估 [!UICONTROL Predictive Audiences] 會使用您在帳 **[!UICONTROL Profile Merge Rule]** 戶中定義的預設值。 若要進一步瞭解 [!UICONTROL Profile Merge Rules] 專用的 [檔案](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html)。
+* 區段評估 [!UICONTROL Predictive Audiences] 會使用您在帳 **[!UICONTROL Profile Merge Rule]** 戶中定義的預設值。 若要進一步瞭解 [!UICONTROL Profile Merge Rules] 專用的 [檔案](../profile-merge-rules/merge-rules-overview.md)。
 * 部分特徵和區段不支援做為基準或目標對象。 [!UICONTROL Predictive Audiences] 當選擇下列其中一項作為基準或目標對象時，模型將無法保存：
    * 預測性特徵和使用預測性特徵建立的群體；
    * [Adobe Experience Platform特性](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) 或細分；
