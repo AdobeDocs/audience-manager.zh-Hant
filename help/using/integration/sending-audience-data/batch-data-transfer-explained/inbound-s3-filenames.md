@@ -6,15 +6,15 @@ solution: Audience Manager
 title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1154'
 ht-degree: 6%
 
 ---
 
 
-# 傳入資料檔案的 Amazon S3 名稱和檔案大小要求{#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL Amazon S3]傳入資料檔案的 名稱和檔案大小要求{#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
 說明傳送資料至時，您需要遵循的必填欄位、語法、命名慣例和檔案大小 [!DNL Audience Manager]。 將資料傳送至／目錄時，請根據這些規格設定檔案的名稱 [!DNL Audience Manager] 和大 [!DNL Amazon S3] 小。
 
