@@ -7,19 +7,19 @@ solution: Audience Manager
 title: 關於相似模型
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1590'
 ht-degree: 1%
 
 ---
 
 
-# 瞭解相似建模 {#about-algorithmic-models}
+# 瞭解 [!UICONTROL Look-Alike Modeling] {#about-algorithmic-models}
 
-## 使用類似模型尋找新使用者 {#find-new-users}
+## 尋找新使用者 [!UICONTROL Look-Alike Modeling] {#find-new-users}
 
-[!UICONTROL Look-Alike Modeling] 協助您透過自動化資料分析，發掘新的獨特受眾。 當您選取特徵或區段、時間間隔以及第一方和第三方資料來源時，程式就會開始。 您的選擇為演算模型提供輸入。 當分析程式執行時，它會根據所選人口的共用特性，尋找符合資格的使用者。 完成時，此資料可在 [Trait Builder](../../features/traits/about-trait-builder.md) ，您可在此處使用，以根據正確性和觸及度 [建立特徵](../../features/traits/trait-accuracy-reach.md)。 此外，您還可以建立結合演算法特徵和規則型特徵的區段，並使用布林運算式和比較運算子新增其他資格要求。 [!UICONTROL Look-Alike Modeling] 提供您從所有可用特徵資料擷取值的動態方式。
+[!UICONTROL Look-Alike Modeling] 協助您透過自動化資料分析，發掘新的獨特受眾。 當您選取或、時 [!UICONTROL trait] 間 [!UICONTROL segment]間隔以及第一方和第三方時，程式便會啟動 [!UICONTROL data sources]。 您的選擇為演算模型提供輸入。 當分析程式執行時，它會根據所選人口的共用特性，尋找符合資格的使用者。 完成時，此資料可在 [Trait Builder](../../features/traits/about-trait-builder.md) ，您可在此處使用，以根據正確性和觸及度 [建立特徵](../../features/traits/trait-accuracy-reach.md)。 此外，您還可以建立結合演算法特徵與運算式和比較運算 [!UICONTROL rules-based traits] 子的區段，並新增其 [!DNL Boolean] 他資格要求。 [!UICONTROL Look-Alike Modeling] 提供您從所有可用特徵資料擷取值的動態方式。
 
 ## 優勢 {#advantages}
 
@@ -27,69 +27,65 @@ ht-degree: 1%
 
 * **資料準確性：** 演算法會定期執行，有助於讓結果保持最新且相關。
 * **自動化：** 您不需要管理大量的靜態規則。 演算法會為您尋找受眾。
-* **節省時間並減少工作量：** 透過我們的模型建立程式，您不必猜測哪些特性／區段可行，或將時間資源花在促銷活動上，即可發現新的受眾。 模型可以為您執行此操作。
+* **節省時間並減少工作量：** 透過我們的模型建立程式，您不必猜測哪些 [!UICONTROL traits]/可能有效[!UICONTROL segments] ，或將時間資源花在促銷活動上，即可發現新的受眾。 模型可以為您執行此操作。
 * **可靠性：** 模型可與伺服器端的發現和資格鑑定程式搭配使用，這些程式會評估您自己的資料和您有權存取的所選第三方資料。 這表示您不必查看網站上的訪客，即可讓他們符合某個特徵的資格。
 
 ## 工作流程 {#workflow}
 
 您可在中管理模型 **[!UICONTROL Audience Data > Models]**。 在高層，工作流進程涉及以下內容：
 
-* 選取您要演算法評估的基線資料。 這包括特徵或區段、時間範圍和資料來源(您自己的資料和您已透過存取的第三方資 [!DNL Audience Manager]料)。 在模型建立工作流程中，您可以排除不想干擾模型的特徵。
-* 保存模型。 儲存後，演算法評估程式就會自動執行。 但請注意，此程式最長需要7天才能完成。 [!DNL Audience Manager] 演算法完成時傳送電子郵件給您，而且結果可用於特徵建立。
-* 在中建立演算法特 [!UICONTROL Trait Builder]性。
-* 將特徵合併為群體 [!UICONTROL Segment Builder]。
-* 建立區段資料並傳送至目標。
+* 選取您要演算法評估的基線資料。 這包括 [!UICONTROL trait] 或、 [!UICONTROL segment]時間範圍和 [!UICONTROL data sources] (您自己的資料和您已透過存取的第三方資料 [!DNL Audience Manager])。 在模型建立工作流中，可以排 [!UICONTROL traits] 除不想干擾模型的值。
+* 保存模型。 儲存後，演算法評估程式就會自動執行。 但請注意，此程式最長需要7天才能完成。 [!DNL Audience Manager] 演算法完成且結果可供建立時，會傳送電子郵件給 [!UICONTROL trait] 您。
+* 在中建立演 [!UICONTROL traits] 算法 [!UICONTROL Trait Builder]。
+* 結合 [!UICONTROL traits] 為 [!UICONTROL segments] 一 [!UICONTROL Segment Builder]體。
+* 建立資料 [!UICONTROL segment] 並傳送至 [!UICONTROL destination]。
 
 ## 疑難排解 {#troubleshooting}
 
-我們會停用 [!UICONTROL Look-Alike Model] 任何無法產生連續三次執行資料的執行。 請注意，不能將模型的狀態設定回活動狀態。 為確保您的模型產生資料，我們建議您從資料來源建立具備足夠特性的模型，以便從中累積資料。
+我們會停用 [!UICONTROL Look-Alike Model] 任何無法產生連續三次執行資料的執行。 請注意，不能將模型的狀態設定回活動狀態。 為確保您的模型產生資料，我們建議您從資料來源建立模型，並有足夠的 [!UICONTROL traits] 資料累積來源。
 
-## 瞭解特徵權重 {#understanding-traitweight}
+## 瞭解 [!UICONTROL TraitWeight] {#understanding-traitweight}
 
-[!UICONTROL TraitWeight] 是專屬的演算法，可自動發現新特性。 它會將您目前特徵和區段的特徵資料與您透過存取的所有其他第一方和第三方資料進行比較 [!DNL Audience Manager]。 請參閱本節，以取得演算法探索程 [!UICONTROL TraitWeight] 序的說明。
-
-<!-- traitweight.xml -->
+[!UICONTROL TraitWeight] 是專為自動發現新功能而設計的專 [!UICONTROL traits] 屬演算法。 它會將您 [!UICONTROL trait] 目前和您 [!UICONTROL traits] 可 [!UICONTROL segments] 以存取的所有其他第一方和第三方資料進行比較 [!DNL Audience Manager]。 請參閱本節，以取得演算法探索程 [!UICONTROL TraitWeight] 序的說明。
 
 ![](assets/algo_model.png)
 
 以下步驟說明評估 [!UICONTROL TraitWeight] 程式。
 
-### 步驟1: 建立特徵比較的基準
+### 步驟1: 建立比較基 [!UICONTROL Trait] 線
 
-若要建立基線， [!UICONTROL TraitWeight] 請在30、60或90天間隔內測量與對象相關的所有特徵。 其次，根據特徵的頻率和相關性對特徵進行排序。 頻率計數會測量通用性。 關聯會測量特徵僅出現在基準讀者中的可能性。 通常出現的特徵都顯示出高度的通用性，這是用來設定加權分數的重要特性，當與您在選取的資料來源中發現的特徵結合時。
+若要建立基線， [!UICONTROL TraitWeight] 請在30、60 [!UICONTROL traits] 或90天間隔內測量與觀眾相關的所有資料。 其次，根據頻 [!UICONTROL traits] 率和相關性進行排序。 頻率計數會測量通用性。 關聯會測量僅存在於 [!UICONTROL trait] 基準讀者中的可能性。 [!UICONTROL Traits] 通常會顯示高通用性，這是用來設定加權分數的重要特性，並結合在您選取的 [!UICONTROL traits] 項目中發現 [!UICONTROL data sources]。
 
-### 步驟2: 在資料來源中尋找相同特徵
+### 步驟2: 在中尋找相 [!UICONTROL Traits] 同項目 [!UICONTROL Data Source]
 
-在建立基準以進行比較後，演算法會在您選取的資料來源中尋找相同的特徵。 在此步驟中， [!UICONTROL TraitWeight] 會執行所有已發現特徵的頻率計數，並將它們與基線進行比較。 但是，與基線不同，不常見特徵的排名高於經常出現的特徵。 據說稀有性狀表現出高度特異性。 [!UICONTROL TraitWeight] 將常見基線特徵和不常見（高度特定）資料源特徵的組合評估為比兩個資料集共同的特徵更有影響力或更可取。 事實上，我們的模型會識別這些大型的共同特徵，並不會將過多的優先順序指派給高關聯的資料集。 稀有特性優先順序較高，因為它們更可能代表新的獨特使用者，而非具備高度通用性的特性。
+在建立基準以進行比較後，演算法會在您選取的基準中尋 [!UICONTROL traits] 找相同的項目 [!UICONTROL data sources]。 在此步驟中，執 [!UICONTROL TraitWeight] 行所有已發現的頻率計數， [!UICONTROL traits] 並將其與基線進行比較。 但是，與基線不同，不常 [!UICONTROL traits] 見的排名要高於經常出現的排名。 據 [!UICONTROL traits] 說稀有具有高度特異性。 [!UICONTROL TraitWeight] 評估共同基準和不常見( [!UICONTROL traits] 高度特定)的組合 [!UICONTROL data source] , [!UICONTROL traits] 其影響力或可取性都比兩個資料集 [!UICONTROL traits] 的共同特性高。 事實上，我們的模型會識別這些大型、常見的 [!UICONTROL traits] 資料集，而且不會為高關聯的資料集指派過多的優先順序。 很少 [!UICONTROL traits] 會獲得更高的優先順序，因為他們更可能代表新的、獨特的用戶，而不是 [!UICONTROL traits] 擁有高度通用性的用戶。
 
 ### 步驟3: 指定權重
 
-在此步驟中，依 [!UICONTROL TraitWeight] 照影響力或期望來排列新發現的特徵。 重量級數是從0%到100%的百分比。 排名接近100%的特徵意味著它們更像您基線人口中的受眾。 此外，重度加權特徵也很有價值，因為它們代表的是新的獨特使用者，其行為可能與您現有的基準受眾類似。 請記住， [!UICONTROL TraitWeight] 將基線中具有高通用性的特徵和比較資料源中具有高特異性的特徵視為比每個資料集中具有高價值的特徵。
+在此步驟中，依 [!UICONTROL TraitWeight] 照影響力或可 [!UICONTROL traits] 取性對新發現的項目進行排名。 重量級數是從0%到100%的百分比。 [!UICONTROL Traits] 排名接近100%表示他們更像您基準人口中的觀眾。 此外，權重過大 [!UICONTROL traits] 是很有價值的，因為它們代表的是新的獨特用戶，其行為可能與您現有的基準受眾相似。 請記住， [!UICONTROL TraitWeight] 認為 [!UICONTROL traits] 基線的通用性高，而比較資料來源的特異性高，比每個資料集 [!UICONTROL traits] 的通用性更有價值。
 
 ### 步驟4: 計分使用者
 
-選取資料來源中的每位使用者都會獲得一個使用者分數，該分數等於該使用者描述檔上影響特性的所有權重的總和。 然後，將用戶分數標準化為0到100%。
+選取的每位使 [!UICONTROL data sources] 用者會獲得一個使用者分數，該分數等於該使用者描述檔上影響 [!UICONTROL traits] 力的所有權重的總和。 然後，將用戶分數標準化為0到100%。
 
 ### 步驟5: 顯示並處理結果
 
-[!DNL Audience Manager] 在中顯示加權模型結果 [!UICONTROL Trait Builder]。 當您想要建立演算法特徵時， [!UICONTROL Trait Builder] 可讓您根據演算法在資料執行期間產生的加權分數來建立特徵。 您可以選擇更高的準確度，以僅限符合使用者分數極高且因此與基準讀者非常相似的使用者，而非其他對象。 如果您想要觸及到更廣的觀眾（觸及），則可降低精確度。
+[!DNL Audience Manager] 在中顯示加權模型結果 [!UICONTROL Trait Builder]。 當您要建立時， [!UICONTROL algorithmic trait]可 [!UICONTROL Trait Builder] 讓您根 [!UICONTROL traits] 據演算法在資料執行期間產生的加權分數來建立。 您可以選擇更高的準確度，以僅限符合使用者分數極高且因此與基準讀者非常相似的使用者，而非其他對象。 如果您想要觸及到更廣的觀眾（觸及），則可降低精確度。
 
-### 步驟6: 重新評估特徵在處理週期中的重要性
+### 步驟6: 重新評估跨處理週期 [!UICONTROL Trait] 的重要性
 
-定期 [!UICONTROL TraitWeight] 地，根據特徵人口的大小和變化，重新評估特徵的重要性。 當符合該特徵的使用者人數隨著時間增加或減少時，就會發生此情況。 這種行為在變大的特徵中最為明顯。 例如，假設演算法使用特徵A進行建模。 隨著特徵A的人數增加， [!UICONTROL TraitWeight] 請重新評估該特徵的重要性，並指派較低的分數或忽略它。 在這種情況下，特徵A太常見或太大，無法對其人口做出任何顯著的評價。 在 [!UICONTROL TraitWeight] 降低特徵A的值（或在模型中忽略它）後，演算法特徵的人口數會減少。 影響力特徵清單反映了基線人口的演化。 使用影響特徵清單，瞭解這些變更發生的原因。
+定期 [!UICONTROL TraitWeight] 地，根據人口的 [!UICONTROL trait] 大小和變化重新評估重要性 [!UICONTROL trait]。 當符合該資格的使用者人數隨著時間的 [!UICONTROL trait] 增加或減少時，就會發生此情況。 這種行為在變大的特徵中最為明顯。 例如，假設演算法使用 [!UICONTROL trait A] 建模。 隨著人口增 [!UICONTROL trait A] 加， [!UICONTROL TraitWeight] 重新評估其重要性， [!UICONTROL trait] 並指派較低分數或忽略它。 在這種情況下， [!UICONTROL trait A] 人口過多或過多，不能對其人口做出任何顯著評價。 在 [!UICONTROL TraitWeight] 降低值(或 [!UICONTROL trait A] 在模型中忽略)後，演算法特徵的種群會減少。 影響力清單 [!UICONTROL traits] 反映基線人口的演變。 使用影響力的清單來 [!UICONTROL traits] 瞭解發生這些變更的原因。
 
 相關連結：
 
 * [模型產生器](../../features/algorithmic-models/create-model.md)
 * [精確度和觸及](../../features/traits/trait-accuracy-reach.md)
 
-## 更新相似模型和特徵的排程 {#update-schedule}
+## 更新和的計 [!UICONTROL Look-Alike Models] 划 [!UICONTROL Traits] {#update-schedule}
 
-建立和更新新或現有演算法模型與特徵的排程。
+建立和更新新或現有與的 [!UICONTROL algorithmic models] 排程 [!UICONTROL traits]。
 
-<!-- c_model_update_schedule.xml -->
-
-### 相似模型建立和更新計畫
+### [!UICONTROL Look-Alike Model] 建立和更新計畫
 
 <table id="table_E75A2B334A7F47ED9DFFBD6DF8636641"> 
  <thead>
@@ -118,7 +114,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-### 相似特徵建立和更新排程
+### [!UICONTROL Look-Alike Trait] 建立和更新計畫
 
 <table id="table_92A908818C4F4F2287EA56C786CD0BBD"> 
  <thead> 
@@ -143,20 +139,16 @@ ht-degree: 1%
 
 清單檢視是一個集中工作區，可協助您建立、檢視及管理模型。
 
-<!-- c_models_list_view.xml -->
-
-「模型」(Models)清單頁包含有助於您：
+清單 [!UICONTROL Models] 頁面包含可協助您：
 
 * 建立新模型。
 * 管理現有模型（編輯、暫停、刪除或仿製）。
 * 依名稱搜尋模型。
-* 使用任何特定模型建立演算法特徵。
+* 使用 [!UICONTROL algorithmic traits] 任何給定模型建立。
 
 ## 模型摘要視圖 {#models-summary-view}
 
-摘要頁面會顯示模型詳細資訊，例如名稱、觸及／準確度、處理歷史記錄以及從模型建立的特徵。 該頁還包含可讓您建立和管理模型的設定。 按一下摘要清單中的模型名稱以查看其詳細資訊。
-
-<!-- c_models_summary.xml -->
+摘要頁面會顯示模型詳細資訊，例如名稱、觸及／準確度、處理歷史記錄 [!UICONTROL traits] ，以及從模型建立。 該頁還包含可讓您建立和管理模型的設定。 按一下摘要清單中的模型名稱以查看其詳細資訊。
 
 模型摘要頁包括以下幾節。
 
