@@ -6,19 +6,17 @@ solution: Audience Manager
 title: 傳入資料傳輸的 ID 同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '478'
 ht-degree: 7%
 
 ---
 
 
-# 傳入資料傳輸的 ID 同步{#id-synchronization-for-inbound-data-transfers}
+# 傳入資料傳輸的 ID 同步 {#id-synchronization-for-inbound-data-transfers}
 
 說明初始呼叫中用來同步廠商與 `HTTP` 之間使用者ID的語法和參數 [!DNL Audience Manager]。 ID同步可在您將資料分類傳送至之後開始 [!DNL Audience Manager]。
-
-<!-- c_id_sync_in.xml -->
 
 ID同步是傳入、非同步資料傳輸程式的第一步。 在此步驟中， [!DNL Audience Manager] 廠商會比較並比對個別網站訪客的ID。 例如，客戶可 [!DNL Audience Manager] 能依ID 123瞭解使用者。 不過，您的資料合作夥伴可以識別此使用者的ID為456。 同步過程允許 [!DNL Audience Manager] 和資料供應商協調這些不同的ID並標識其各自系統中的用戶。 完成後，您 [!DNL Audience Manager] 的協力廠商合作夥伴應為我們網路上每個獨特使用者提供對應的ID。
 
@@ -73,7 +71,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  </tbody> 
 </table>
 
-## 宣告的ID事件 {#declared-id-event}
+## [!UICONTROL Declared ID] 事件 {#declared-id-event}
 
 如需詳細資訊，請參 [閱宣告的ID](../../../features/declared-ids.md)。
 
