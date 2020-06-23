@@ -6,17 +6,17 @@ solution: Audience Manager
 title: 傳入資料檔案的 FTP 名稱和檔案大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '896'
 ht-degree: 9%
 
 ---
 
 
-# 傳入資料檔案的 FTP 名稱和檔案大小要求{#ftp-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL FTP]傳入資料檔案的 名稱和檔案大小要求{#ftp-name-and-file-size-requirements-for-inbound-data-files}
 
-說明傳送資料至Audience Manager時，您需遵循的必填欄位、語法、命名慣例和檔案大小。 將資料傳送至Audience Manager目錄時，請根據這些規格設定檔案的名稱和大 [!DNL FTP] 小。
+說明傳送資料至時，您需要遵循的必填欄位、語法、命名慣例和檔案大小 [!DNL Audience Manager]。 將資料傳送至Audience Manager目錄時，請根據這些規格設定檔案的名稱和大 [!DNL FTP] 小。
 
 >[!WARNING]
 >
