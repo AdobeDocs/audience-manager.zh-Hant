@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 透過像素呼叫擷取行銷活動的點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 12%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 # 透過像素呼叫擷取行銷活動的點按資料 {#capturing-campaign-click-data-via-pixel-calls}
 
-點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象 [收集類似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫會傳送至Audience Manager資料收集伺服器([!DNL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
+點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。 與印象 [收集類似](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫會傳送至資料 [!DNL Audience Manager] 收集伺服器([!DNL DCS])以進行處理。 接著，訪客會重新導向至預期的網址。
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 `https://adobe.com/callback?creative=1235&campaign=4709&adgroup=3408&placement=1001`
 
-## 其他功能——觀眾最佳化報表
+## 其他功能- [!UICONTROL Audience Optimization Reports]
 
 您可以使用像素呼叫來強化「對象最 [佳化報表」](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)。 如果 [您想使用像素來為報表加電](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) ，請參閱中繼資料檔案的概述和對應。
 
