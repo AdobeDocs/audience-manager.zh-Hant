@@ -6,41 +6,35 @@ solution: Audience Manager
 title: 資料來源清單與設定
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 translation-type: tm+mt
-source-git-commit: 6b55441c2bdde6cf2333852fd59fbe87f4e531eb
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 1%
+source-wordcount: '1118'
+ht-degree: 3%
 
 ---
 
 
-# 資料來源清單與設定 {#data-sources-list-and-settings}
+# [!UICONTROL Data Sources] 清單與設定 {#data-sources-list-and-settings}
 
-檢視您目前設定之資料來源的清單、新增資料來源，以及編輯現有來源。
+檢視您目前設定的清單 [!UICONTROL data sources]、新增 [!UICONTROL data sources]和編輯現有 [!UICONTROL data sources]。
 
-<!-- c_datasources.xml -->
+您也可以使用方 [!UICONTROL data sources] 法 [!DNL API] 管理。 如需詳細資訊，請參 [閱資料來源API方法](../api/rest-api-main/aam-api-data-sources.md)。
 
-您也可以使用方法管理資料 [!DNL API] 來源。 如需詳細資訊，請參 [閱資料來源API方法](../api/rest-api-main/aam-api-data-sources.md)。
-
-## 資料來源清單檢視 {#list-view}
+## [!UICONTROL Data Sources] 清單檢視 {#list-view}
 
 控制 [!UICONTROL Data Sources] 面板是集中式工作區，用於管理資料來源。
 
-<!-- c_datasources_list.xml -->
-
 控制 [!UICONTROL Data Sources] 面板(**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**)包含可協助您：
 
-* 查看您所有現有的資料來源，包括每個資料來源的說明、狀態，以及 [!UICONTROL Inbound]是 [!UICONTROL Outbound]、兩者或 [!UICONTROL Shared Provider]。
-* 依名稱搜尋資料來源。
-* 建立、編輯和刪除資料來源。
+* 查看您的所 [!UICONTROL data sources]有現有資料，包括每個資料來源的說明、狀態，以及 [!UICONTROL Inbound][!UICONTROL Outbound]是、兩者還是 [!UICONTROL Shared Provider]。
+* 依名稱 [!UICONTROL data sources] 搜尋。
+* Create, edit, and delete [!UICONTROL data sources].
 
-## 資料來源設定和功能表選項 {#settings-menu-options}
+## [!DNL Data Source] 設定和功能表選項 {#settings-menu-options}
 
-管理介面不同區段中的設 [!UICONTROL Data Source] 定會識別您的資料來源，決定資料來源的使用或共用方式，並讓您為啟用錯誤報告 [!UICONTROL Onboarding Status Report]。
+管理介面不同區段中的 [!UICONTROL Data Source] 設定會識別您的 [!DNL data source]身分、決定如何使用或共用，並讓您為啟用錯誤報告 [!UICONTROL Onboarding Status Report]。
 
-## 資料來源詳細資料 {#details}
-
-<!-- datasource-settings-definitions.xml -->
+## [!DNL Data Source] 詳細資料 {#details}
 
 除了文字欄位外，此區 [!UICONTROL Data Source Details] 段還包含下列控制項和選項。
 
@@ -76,13 +70,13 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 資料匯出控制 {#export-controls}
+## [!UICONTROL Data Export Controls] {#export-controls}
 
-[「資料匯出控制](../features/data-export-controls.md) 」是可套用至資料來源和目的地的選用分類規則。 當該動作違反資料隱私或使用協定時，您無法將資料傳送至目的地。 如果您未使用，請略過本節 [!UICONTROL Data Export Controls]。
+[「資料匯出控制](../features/data-export-controls.md) 」是可套用至和的選用分類 [!UICONTROL data source] 規則 [!UICONTROL destination]。 當該動作違反資料隱私或使 [!UICONTROL destination] 用合約時，您無法傳送資料至。 如果您未使用，請略過本節 [!UICONTROL Data Export Controls]。
 
 >[!IMPORTANT]
 >
->除非您在目標上設定相符的匯出標籤，否則匯出限制將無法運作。
+>除非您在上設定相符的匯出標籤，否則匯出限制無法運作 [!UICONTROL destination]。
 
 選項包括:
 
@@ -92,17 +86,17 @@ ht-degree: 1%
 * **[!UICONTROL Cannot be used for off-site ad targeting]**
 * **[!UICONTROL Cannot be used for on-site personalization]**
 
-## Data Source Settings {#data-source-settings}
+## [!UICONTROL Data Source] 設定 {#data-source-settings}
 
 包含 [!UICONTROL Data Source Settings] 下列的控制項和選項。 其中有些設定有其他子選項和功能表項目，您可以選取這些項目來修改資料來源。
 
-### 傳入資料來源設定
+### [!UICONTROL Inbound Data Source] 設定
 
 選擇數 **[!UICONTROL Inbound]** 據源設計為接收入站資料時的複選框。 選取核取方 **[!UICONTROL Inbound]** 塊可顯示下列說明的2組其他控制項。
 
 >[!NOTE]
 >
->此核 **[!UICONTROL Inbound]** 取方塊僅用於顯示或隱藏下述資料來源控制項。 取消勾選 **[!UICONTROL Inbound]** 選項不會以任何方式影響資料擷取。 無論勾選此選項，您已登入的資料都會受到處理。
+>此核 **[!UICONTROL Inbound]** 取方塊僅用於顯示或隱藏下 [!UICONTROL data source] 述控制項。 取消勾選 **[!UICONTROL Inbound]** 選項不會以任何方式影響資料擷取。 無論勾選此選項，您已登入的資料都會受到處理。
 
 <table id="table_B2825B7BE0DB4665B47C589A3787CD93"> 
  <thead> 
@@ -118,7 +112,7 @@ ht-degree: 1%
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol"> 客戶ID</span></b>: 使用客戶ID識別傳入資料。 </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager ID</span></b>: 使用 <span class="keyword"> Audience Manager</span> ID識別傳入資料。 </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>: 使用 <span class="keyword"> Experience Cloud</span> ID識別傳入資料。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>: 使用 <span class="keyword"> Experience Cloud</span> ID識別傳入資料。 See <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> Cookies and the Experience Cloud ID</a>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -128,7 +122,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-### 其他資料來源設定
+### Other [!UICONTROL Data Source] Settings
 
 <table id="table_82FEFA8DC8294FA18FB4C17F02DF5152"> 
  <thead> 
