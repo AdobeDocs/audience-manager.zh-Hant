@@ -3,14 +3,17 @@ description: '請閱讀以下內容，以瞭解您在註冊人員型目標之前
 seo-description: '請閱讀以下內容，以瞭解您在註冊人員型目標之前需要滿足的客戶需求。  '
 seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
-title: 先決條件和注意事項
+title: 必要條件和考量事項
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: 8b72a42f9458fba97d02d2f16228e7d985ca3463
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 4%
 
 ---
 
 
-# 先決條件和注意事項 {#prerequisites-considerations}
+# 必要條件和考量事項 {#prerequisites-considerations}
 
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
@@ -20,9 +23,9 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 >[!IMPORTANT]
 > 在進入實施階段之前，請仔細閱讀本文章。
 
-## 註冊以人為本的目的地 {#signing-up}
+## 註冊 [!UICONTROL People-Based Destinations] {#signing-up}
 
-[!DNL People-Based Destinations] 是一種進階功能，可讓您在以人為本的環境中啟用您的第一方受眾細分，透過社交網路或電子郵件行銷鎖定您的受眾，借此增強您的Audience Manager體驗。
+[!DNL People-Based Destinations] 是一種進階功能，可讓您在以人為本的環境中啟用您的第一方受眾細分，透過社交網路或電子郵件行銷鎖定您的受眾，從而增強您的Audience Manager體驗。
 
 請連絡您的Adobe代表，以利用這項優質功能。
 
@@ -33,18 +36,12 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 在您可以用 [!DNL People-Based Destinations] 來傳送第一方對象區段至之 [!DNL Facebook]前，請確定您符合下列需求：
 
 1. 您 [!DNL Facebook] 的使用者帳戶必須為您 **** 計畫使用的廣告帳戶啟用「管理促銷活動」權限。
-2. 將 **Adobe Experience Cloud商業帳戶新增為廣告合作夥伴**[!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`. 如需詳 [細資訊，請參閱將合作夥伴新增至您的業務經理](https://www.facebook.com/business/help/1717412048538897) 。
+2. Add the **Adobe Experience Cloud** business account as an advertising partner in your [!DNL Facebook Ad Account]. 使用 `business ID=206617933627973`。See [Add Partners to Your Business Manager](https://www.facebook.com/business/help/1717412048538897) for details.
    >[!IMPORTANT]
-   > 設定Adobe Experience Cloud的權限時，您必須啟用「管理促銷 **活動** 」權限。 這是整合的必 [!DNL People-Based Destinations] 要項。
-3. 閱讀並簽署 [!DNL Facebook Custom Audiences] 服務條款。 若要這麼做，請前 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`往您的 `accountID` 位置 [!DNL Facebook Ad Account ID]。
+   > When configuring the permissions for Adobe Experience Cloud, you must enable the **Manage campaigns** permission. 這是進行 [!DNL People-Based Destinations] 整合的必要權限。
+3. 閱讀並簽署 [!DNL Facebook Custom Audiences] 服務條款。 若要完成此操作，請前往 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`，其中 `accountID` 是您的 [!DNL Facebook Ad Account ID]。
 
 ### [!DNL LinkedIn]
-
->[!IMPORTANT]
->
-> 與的 [!DNL People-Based Destinations] 整合目 [!DNL LinkedIn] 前正處於測試階段，而且僅適用於數量有限的客戶。
-> 
-> 測試版測試結束後，此整合將可供所有註冊的Audience Manager客戶使用 [!DNL People-Based Destinations]。
 
 在您可以用 [!DNL People-Based Destinations] 來傳送第一方對象區段至之前 [!DNL LinkedIn]，請確定您的 [!DNL LinkedIn Campaign Manager] 帳戶具有或 [!DNL Creative Manager] 更高的權限層級。
 
@@ -70,11 +67,11 @@ source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
 
 散列電子郵件地址時，請務必符合下列要求：
 
-* 從電子郵件字串中修剪所有前導和尾隨空格；範例： `johndoe@example.com`不是 `<space>johndoe@example.com<space>`;
+* 從電子郵件字串中修剪所有前導和尾隨空格； 範例： `johndoe@example.com`，不是 `<space>johndoe@example.com<space>`;
 * 在對電子郵件字串進行散列時，請務必對小寫字串進行散列；
-   * 範例： `example@email.com`不是 `EXAMPLE@EMAIL.COM`;
+   * 範例： `example@email.com`，不是 `EXAMPLE@EMAIL.COM`;
 * 請確定雜湊字串全部為小寫
-   * 範例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`不是 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
+   * 範例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`，不是 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
 * 別用鹽鹽。
 
 請觀看以下影片，瞭解其雜湊要求 [!UICONTROL People-Based Destinations]。
@@ -99,7 +96,7 @@ Adobe Experience Cloud可讓您選擇透過Adobe Experience Platform Identity Se
 
 ## 透過宣告的ID定位的板載驗證雜湊ID {#onboard-authenticated-declared-id}
 
-有兩種方式可讓您將離線資料帶入Audience Manager [!DNL People-Based Destinations]。
+有兩種方式可將離線資料帶入 Audience Manager 中以用於[!DNL People-Based Destinations]。
 
-* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 使用此方法，您可以選擇在中使用資料庫中的散列電 [!DNL CRM] 子郵件地址 [!DNL People-Based Destinations]。 此外，使用此方法時，您也可以針對已登入的特徵，限定雜湊的 [電子郵件地址](../traits/trait-and-segment-qualification-reference.md)。
-* 使用 [Declared ID](../declared-ids.md) ，在傳入已驗證的客戶ID時，宣告雜湊的電子郵件地址。 使用此方法時，Audience Manager僅會代表您傳送經過線上驗證 [!DNL People-Based Destinations] 的使用者的雜湊電子郵件地址。 透過以人為本的管道啟動的電子郵件地址，只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID相關的其他電子郵件地址不會即時傳送。
+* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) 至Audience Manager，以擷取雜湊的電子郵件地址。 使用此方法，您可以選擇在中使用資料庫中的散列電 [!DNL CRM] 子郵件地址 [!DNL People-Based Destinations]。 此外，使用此方法時，您也可以針對已登入的特徵來限定雜湊 [電子郵件地址](../traits/trait-and-segment-qualification-reference.md)。
+* Use [Declared IDs](../declared-ids.md) to declare hashed email addresses when passing in authenticated customer IDs. When using this method, Audience Manager, on your behalf, only sends to [!DNL People-Based Destinations] the hashed email addresses from users who have authenticated online. 透過以人為本的管道啟動的電子郵件地址，只是宣告的ID事件呼叫中的電子郵件地址。 與客戶ID相關的其他電子郵件地址不會即時傳送。
