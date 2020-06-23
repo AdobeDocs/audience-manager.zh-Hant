@@ -6,40 +6,31 @@ solution: Audience Manager
 title: 區段產生器的特徵和區段母體資料
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 translation-type: tm+mt
-source-git-commit: 63d89cac2f18538f56e2f6d0f64257ea9b5788bd
+source-git-commit: 4d4915b9a99ddcdf321d9f4970321f5f54e057ea
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 3%
+source-wordcount: '1250'
+ht-degree: 2%
 
 ---
 
 
-# 區段產生器的特徵和區段母體資料 {#trait-and-segment-population-data-in-segment-builder}
+# [!UICONTROL Trait] 和 [!UICONTROL Segment] 人口資料 [!UICONTROL Segment Builder] {#trait-and-segment-population-data-in-segment-builder}
 
-新增和移除中的特 [!UICONTROL Segment Builder] 徵，以查看實際特徵人口族群以及實際和估計的區段人口資料。 預計的人口大小資料可協助您為促銷活動建立正確的群體。
+新增和移 [!UICONTROL traits] 除以 [!UICONTROL Segment Builder] 查看實際 [!UICONTROL trait] 人口族群，以及實際和估計的群體人口資料。 預計的人口大小資料可協助您為促銷活動建立正確的群體。
 
-## 特徵人口資料 {#trait-population-data}
+## [!UICONTROL Trait] 人口資料 {#trait-population-data}
 
-[!UICONTROL Segment Builder] 顯示 [!UICONTROL Total Trait Population] 您新增特徵至區段的最後一天。 此資料會出現在區段中所選特徵周圍的藍色欄 [!UICONTROL Basic View] 位中。
+[!UICONTROL Segment Builder] 顯示 [!UICONTROL Total Trait Population] 您新增至區段的 [!UICONTROL trait] 最後一天。 此資料會出現在您在區段中選取之周圍的 [!UICONTROL trait] 藍色欄 [!UICONTROL Basic View] 位中。
 
 ![](assets/trait-size.png)
 
-下表定義特徵人口量度
+下表定義特徵人口量度：
 
-<table id="table_9D837CF9ACA04D04BEE5925EC0B4A5D2"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 量度 </th> 
-   <th colname="col2" class="entry"> 說明 </th>
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> 特徵總人口</span> </p> </td>
-   <td colname="col2"> <p>在其描述檔中具有選取特徵的唯一ID數。 </p> </td>
-  </tr> 
- </tbody> 
-</table>
+
+| 量度 | 說明 |
+---------|----------|
+| [!UICONTROL Total Trait Population] | 在其描述檔中具有選取特徵的唯一ID數。 |
+
 
 ## 計算實際和估計的區段總體 {#calculating-real-estimated-populations}
 
@@ -98,9 +89,9 @@ ht-degree: 3%
 
 [!UICONTROL Profile Merge Rules] 影響實際的即時和總人口數。 這些總計會依區段是否屬 [!UICONTROL Profile Merge Rule] 於使用裝置圖表選項而有所不同。 See also, [Profile Merge Rule Options Defined](../../features/profile-merge-rules/merge-rule-definitions.md).
 
-### 沒有裝置圖表選項的合併規則的區段人口資料
+### 區段人口資料( [!UICONTROL Merge Rules] 不含 [!UICONTROL Device Graph Option]
 
-下表定義在沒有裝置圖表選項的情況下建立區段時使用的實際即時和 [!UICONTROL Profile Merge Rule] 總人口量度。 這些是裝置選項設 **[!UICONTROL No Device Options]** 定和 **[!UICONTROL Current Device Proflie]**。
+下表定義了在沒有選項的情況下建立區段時使用的實際即時和總人口 [!UICONTROL Profile Merge Rule] 量度 [!UICONTROL device graph] 。 這些是裝置選項設 **[!UICONTROL No Device Options]** 定和 **[!UICONTROL Current Device Proflie]**。
 
 <table id="table_A18C973855DB46A0B39B81F32E0E7540"> 
  <thead> 
@@ -125,36 +116,23 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-### 使用裝置圖形選項合併規則的區段人口資料
+### 具有選項的區 [!UICONTROL Merge Rules] 段人口資 [!UICONTROL Device Graph] 料
 
-下表定義使用裝置圖表選項建立區段時的實際即時和總人口 [!UICONTROL Profile Merge Rule] 量度。 這些是可供您使用的裝 [!UICONTROL Profile Link Device Graph]置選 [!DNL Adobe] 項設定、裝置圖形和其他協力廠商裝置圖形選擇。
+下表定義使用選項建立區段時的實際即時和總人口 [!UICONTROL Profile Merge Rule] 量度 [!DNL device graph] 。 這些是您可用的 [!UICONTROL Profile Link Device Graph]、 [!DNL Adobe] 和其 [!DNL device graph]他協力廠商選 [!DNL device graph] 項的裝置選項設定。
 
-<table id="table_157EC6E5B5C44EB899854CA10B090F60"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 量度 </th> 
-   <th colname="col2" class="entry"> 說明 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> 即時人口（現有）</span> </p> </td> 
-   <td colname="col2"> <p>即時檢視的裝置數目與目前的設定檔，當與裝置圖形連接的多達100個其他裝置設定檔合併時，這些設定檔包含 <span class="keyword"> Audience Manager看到區段時符合的特性</span>。 </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p> <span class="wintitle"> 總人口（現有）</span> </p> </td> 
-   <td colname="col2"> <p>具有設定檔的裝置總數，當與裝置圖形連接的多達100個其他裝置設定檔合併時，這些設定檔都符合區段的資格。 </p> </td>
-  </tr>
- </tbody>
-</table>
+
+| 欄A | 欄B |
+---------|----------|
+| [!UICONTROL Real-Time Population (Existing) ] | 即時檢視的裝置數目與目前的設定檔，當與裝置圖形連接的多達100個其他裝置設定檔合併時，這些設定檔包含Audience Manager檢視時符合區段的特性。 |
+| [!UICONTROL Total Population (Existing)] | 具有設定檔的裝置總數，當與裝置圖形連接的多達100個其他裝置設定檔合併時，這些設定檔都符合區段的資格。 |
 
 ### 估計區段族群時，由於時近和頻率表達的限制
 
 [!UICONTROL Segment Builder] 支援區段規則的區段大小估計，其中最多包含4個時近和頻率運算式。 在建立區段規則時選擇4個以上的時近和頻率表達式，會造成區段估計器在估計人口族群時顯示錯誤。
 
-### 估計區段人口族群時，合併規則的限制
+### 估計區段人口族群 [!UICONTROL Merge Rules] 時的限制
 
-目前，由於我們的區段大小估計器未考慮描述檔合併規則，因此有已知的限制。 例如，使用「無驗證的描述檔+目前的裝 **置描述檔」合併規則來查看**[區段](../../features/profile-merge-rules/merge-rule-definitions.md)。 由於我們目前計算分段估計數的方式，所以估計的人口族群將包含已驗證的描述檔。 不過，現有區段人口族群會正確忽略已驗證的個人檔案。
+目前，由於我們的區段大小估計器未考慮，因此有已知的限制 [!UICONTROL profile merge rules]。 例如，使用合併規則來查 **[!UICONTROL No Authenticated Profile + Current Device Profile]**&#x200B;看[區段](../../features/profile-merge-rules/merge-rule-definitions.md)。 由於我們目前計算分段估計數的方式，所以估計的人口族群將包含已驗證的描述檔。 不過，現有區段人口族群會正確忽略已驗證的個人檔案。
 
 >[!MORELIKETHIS]
 >
