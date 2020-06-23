@@ -7,23 +7,21 @@ solution: Audience Manager
 title: 客戶資料摘要
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 6%
+source-wordcount: '1860'
+ht-degree: 4%
 
 ---
 
 
-# 客戶資料摘要 {#customer-data-feeds}
+# [!UICONTROL Customer Data Feeds] {#customer-data-feeds}
 
 有關( [!UICONTROL Customer Data Feed] )檔案[!UICONTROL CDF]的基本資訊，以及如何開始使用的指示。 如果您想要接收檔案或只想要 [!UICONTROL CDF] 更多資訊，請從這裡開始。
 
 ## 檔案內容與用途 {#file-contents-purpose}
 
-<!-- cdf-intro.xml -->
-
-[!UICONTROL CDF] 檔案包含的資料與 [!DNL Audience Manager] 事件呼叫 (`/event`) 傳送至我們伺服器的資料相同。這包括使用者 ID、特徵 ID、區段 ID 等資料，以及事件呼叫所擷取的所有其他參數。內部 [!DNL Audience Manager] 系統將事件資料處理成 [!UICONTROL CDF] 檔案，內容會組織成以固定順序顯示的欄位。 [!DNL Audience Manager] 嘗試每小時產 [!UICONTROL CDF] 生檔案，並將它們儲存在伺服器上安全、客戶專屬的儲 [!DNL Amazon S3] 存貯體。 我們提供這些檔案，讓您能夠處理 [!DNL Audience Manager] 超出使用者介面所限制的資料。
+[!UICONTROL CDF] 檔案包含的資料與 [!DNL Audience Manager] 事件呼叫 (`/event`) 傳送至我們伺服器的資料相同。This includes data like user IDs, [!UICONTROL trait IDs], [!UICONTROL segment IDs], and all the other parameters captured by an event call. 內部 [!DNL Audience Manager] 系統將事件資料處理成 [!UICONTROL CDF] 檔案，內容會組織成以固定順序顯示的欄位。 [!DNL Audience Manager] 嘗試每小時產 [!UICONTROL CDF] 生檔案，並將它們儲存在伺服器上安全、客戶專屬的儲 [!DNL Amazon S3] 存貯體。 我們提供這些檔案，讓您能夠處理 [!DNL Audience Manager] 超出使用者介面所限制的資料。
 
 >[!NOTE]
 >
@@ -42,13 +40,11 @@ ht-degree: 6%
 
 以下各節及「客 [戶資料饋送常見問答」](../faq/faq-cdf.md) ，可協助您更熟悉這項服務。
 
-## 定義的客戶資料饋送內容 {#cdf-defined}
+## [!UICONTROL Customer Data Feed] 定義的內容 {#cdf-defined}
 
 依外觀順序列出並定義檔案中 [!UICONTROL CDF] 的資料元素和陣列。 定義包括資料類型，但此資訊不屬於檔案的一 [!UICONTROL CDF] 部分。
 
 ## 定義 {#definitions}
-
-<!-- cdf-contents-defined.xml -->
 
 檔 [!UICONTROL CDF] 案包含下列定義的部分或全部欄位。 如需內部檔案組織的詳細資訊，請參 [閱客戶資料饋送檔案結構](#cdf-file-structure)。
 
@@ -123,13 +119,11 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-## 客戶資料饋送檔案結構 {#cdf-file-structure}
+## [!UICONTROL Customer Data Feed] 檔案結構 {#cdf-file-structure}
 
 列出並定義檔案的資料 [!UICONTROL CDF] 結構。 這包括資料順序、欄位分隔字元和分隔符號、資料檔案地圖和範例檔案。
 
 ## 資料欄位識別碼和順序 {#identifiers-and-sequence}
-
-<!-- cdf-file-structure.xml -->
 
 [!UICONTROL CDF] 檔案不包含已標示的欄或欄位標題。 相反，檔案 [!UICONTROL CDF] 會定義具有非打印字元的欄位和 [!DNL ASCII] 陣列。 此外，檔 [!UICONTROL CDF] 案會依特定順序列出每個欄位和陣列。 瞭解欄位識別碼和順序有助於正確剖析檔案。
 
@@ -170,7 +164,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-## CDF檔案映射 {#cdf-file-map}
+## [!UICONTROL CDF] 檔案映射 {#cdf-file-map}
 
 [!UICONTROL CDF] 檔案資料會依下列順序顯示。
 
@@ -178,21 +172,19 @@ ht-degree: 6%
 
 ## 識別陣列
 
-檔案中的數 [!UICONTROL CDF] 組以欄位分隔符開始和 `Ctrl + a` 結束。 這會使陣列中的第一個元素看起來像獨立的資料欄位。 例如，已實現的特徵陣列從開始 `^A1234`。 陣列分隔字元和ID `^B5678` 會遵循此項目。 因此，您可能會想到，已實現特徵陣列中的第一個元素是ID 5678(因為它以 `^B`開頭)。 但情況並非如此，因此您需要熟悉資料檔案的順序和結構。 即使實現特徵陣列（或檔案中的任何其他陣列）中的第一個元素 [!UICONTROL CDF] 以 `^A`開頭，檔案中的外觀或位置順序仍定義陣列的開頭。 而且，陣列中的第一個元素總是與前面的條目分開 `^A`。
+檔案中的數 [!UICONTROL CDF] 組以欄位分隔符開始和 `Ctrl + a` 結束。 這會使陣列中的第一個元素看起來像獨立的資料欄位。 例如，實現的陣 [!UICONTROL traits] 列從開始 `^A1234`。 陣列分隔字元和ID `^B5678` 會遵循此項目。 因此，您可能會想到，已實現陣列中的第一個元素 [!UICONTROL traits] 是ID 5678(因為它以 `^B`開頭)。 但情況並非如此，因此您需要熟悉資料檔案的順序和結構。 即使實現的陣列(或檔案中 [!UICONTROL trait] 的任何其它陣列)中的第一個元素以 [!UICONTROL CDF]`^A`開頭，檔案中的外觀或位置順序仍定義陣列的開頭。 而且，陣列中的第一個元素總是與前面的條目分開 `^A`。
 
-## 範例CDF檔案 {#sample-file}
+## Sample [!UICONTROL CDF] File {#sample-file}
 
 範例檔 [!UICONTROL CDF] 案看起來可能類似下列。 我們在此範例中插入了分行符號，以協助它符合頁面。
 
 ![](assets/CDF-sample.png)
 
-## 客戶資料饋送檔案命名慣例 {#cdf-naming-conventions}
+## [!UICONTROL Customer Data Feed] 檔案命名慣例 {#cdf-naming-conventions}
 
 以下各節列出並定義檔案名中 [!UICONTROL CDF] 的元素。
 
-## CDF檔案名： 語法與範例 {#cdf-file-name}
-
-<!-- cdf-file-name.xml -->
+## [!UICONTROL CDF] 檔案名： 語法與範例 {#cdf-file-name}
 
 典型的 [!UICONTROL CDF] 檔案名稱包含下列元素。 Note, *italics* indicates a variable placeholder:
 
@@ -210,7 +202,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
 
 在您的 [!DNL S3] 儲存貯體中，檔案會依合作夥伴ID([!UICONTROL PID])、日和小時的升序排序。
 
-## 定義的CDF檔案名元素 {#cdf-file-name-elements}
+## [!UICONTROL CDF] 定義的檔案名元素 {#cdf-file-name-elements}
 
 下表列出並定義檔案名中 [!UICONTROL CDF] 的元素。
 
@@ -253,13 +245,11 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </tbody> 
 </table>
 
-## Customer Data Feed File Processing Notifications {#cdf-file-processing-notifications}
+## [!UICONTROL Customer Data Feed] 檔案處理通知 {#cdf-file-processing-notifications}
 
 [!DNL Audience Manager] 將檔 `.info` 案寫入您 [!DNL S3] 的目錄，以告知您 [!UICONTROL Customer Data File] ([!UICONTROL CDF])已準備好下載。 檔 `.info` 案也包含 [!DNL JSON] 檔案內容的格式化中繼資 [!UICONTROL CDF] 料。 請檢閱本節，以取得有關此通知檔案所使用之語法和欄位的資訊。
 
 ## 範例資訊檔案 {#sample-info-file}
-
-<!-- cdf-notifications.xml -->
 
 每個 `.info` 檔案都包含 `Files` 和 `Totals` 區段。 該 `Files` 區段包含一個陣列，其中包含每個每小時檔案的特定度量。 該 `Totals` 區段包含匯總至您所有特定日 [!UICONTROL CDF] 期檔案的量度。 您檔案的內 `.info` 容看起來可能類似下列範例。
 
@@ -358,13 +348,11 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_000058_0.gz
  </tbody> 
 </table>
 
-## 客戶資料饋送檔案名稱時間和檔案內容時間不同 {#different-processing-times}
+## [!UICONTROL Customer Data Feed] 檔案名時間和檔案內容時間不同 {#different-processing-times}
 
 您的 [!UICONTROL CDF] 檔案在檔案名稱和檔案內容中包含時間戳記。 這些時間戳記會記錄相同檔案的不同事件 [!UICONTROL CDF] 程式。 相同檔案的名稱和內容中會出現不同的時間戳記，這種情況並不少見。 瞭解每個時間戳記有助於您避免在處理此資料或嘗試依時間排序時常出錯。
 
-## 查找CDF檔案時間戳 {#locating-timestamps}
-
-<!-- cdf-time-differences.xml -->
+## 查找 [!UICONTROL CDF] 檔案時間戳 {#locating-timestamps}
 
 [!UICONTROL CDF] 檔案在2個不同位置記錄的時間不同。
 
