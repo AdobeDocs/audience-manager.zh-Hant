@@ -7,15 +7,15 @@ title: DCS API 呼叫的支援屬性。
 keywords: d_caller, d_cb, d_cid, d_cid_ic, d_coppa, d_cts=1, d_cts=2, d_tdpid, d_dst=1, d_dst_filter, d_mid, d_ptfm, d_nsid, d_rs, d_rtbd=json, d_tdpid_ic
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 6%
+source-wordcount: '806'
+ht-degree: 5%
 
 ---
 
 
-# DCS API 呼叫的支援屬性{#supported-attributes-for-dcs-api-calls}。
+# 呼叫的支援屬 [!DNL DCS][!DNL API] 性 {#supported-attributes-for-dcs-api-calls}
 
 列出並說明您可傳入()的語法和支援的屬性(或金鑰值 [!UICONTROL Data Collection Servers] 配對[!DNL DCS])。 這些資訊可協助您設定請求 [!DNL DCS] 的格式，並瞭解此系統傳回的參數。
 
@@ -50,7 +50,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-## d_屬性 {#d-attributes}
+## [!DNL d_] 屬性 {#d-attributes}
 
 所有這些都是選用的，除非您想要回應 [!DNL DCS]。 如果您想要傳 [!DNL DCS] 回回應，則為必 `d_rtbd=json` 要項目。
 
