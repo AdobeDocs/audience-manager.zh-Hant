@@ -7,33 +7,31 @@ solution: Audience Manager
 title: 將批次資料傳送至 Audience Manager 概述
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
 translation-type: tm+mt
-source-git-commit: 50c5b654d962649c98f1c740cd17967e70b957bc
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 8%
+source-wordcount: '482'
+ht-degree: 6%
 
 ---
 
 
-# 將批次資料傳送至 Audience Manager 概述 {#send-batch-data-to-audience-manager-overview}
+# Send Batch Data to [!DNL Audience Manager] Overview {#send-batch-data-to-audience-manager-overview}
 
 技術客戶和非技術客戶想要將其他系統（離線）的資料帶入其中的概述 [!DNL Audience Manager]。
 
 ## 優勢
 
-<!-- c_offline_to_online.xml -->
-
 您可以在中提供其他系統的資料 [!DNL Audience Manager]。 我們的系統可協助您發揮價值，並運用您先前收集到的使用者資料。 這包括購買、客戶調查、註冊資料、資料庫 [!DNL CRM] 等的相關資訊。 雖然每項整合都會帶來各自的挑戰，但它們都有共同的步驟。 閱讀本資料，協助您減少線下資料上線所需的工作量。
 
 ## 步驟1: 同步使用者ID
 
-在同步期間， [!DNL Audience Manager] 會為客戶端及其用戶分配唯一的ID。 這些ID分別 [!UICONTROL Data Provider ID] 稱[!UICONTROL DPID]為 [!UICONTROL Unique User ID] ()[!UICONTROL UUID]和()。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 來識別使用者，並讓他們符合特徵、區段、對象群組和報告的資格。 此外，我們的資料收集代碼([!UICONTROL DIL])會尋找這些ID，以從您的網站擷取訪客資料。 完成此步驟後，您的離 [!DNL Audience Manager] 線儲存庫應包含每個用戶記錄的相應ID。
+在同步期間， [!DNL Audience Manager] 會為客戶端及其用戶分配唯一的ID。 這些ID分別 [!UICONTROL Data Provider ID] 稱[!UICONTROL DPID]為 [!UICONTROL Unique User ID] ()[!UICONTROL UUID]和()。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 來識別使用者，並限定他們 [!UICONTROL traits]使用、 [!UICONTROL segments]觀眾群組和報告。 此外，我們的資料收集代碼([!UICONTROL DIL])會尋找這些ID，以從您的網站擷取訪客資料。 完成此步驟後，您的離 [!DNL Audience Manager] 線儲存庫應包含每個用戶記錄的相應ID。
 
 有關此步驟的重要考慮事項：
 
 * **用戶端ID位置：** [!DNL Audience Manager] 需要知道您的用戶端ID在您網站上的顯示位置（例如，它是否儲存在Cookie、Analytics變數、頁面程式碼等）。
 * **排除[!DNL PII]:** 使用者ID不得包含個人識別資訊([!DNL PII])。
-* **區分大小寫和內容：** 在即時資料同步期間，從您的網站擷取的使用者ID必須 [!DNL Audience Manager] 與從離線儲存庫傳入的ID對應。 例如，若離線記錄包含相關資訊 [!DNL User123]，但您的網站將該ID轉譯為 [!DNL USER123],Audience Manager會將這些ID視為不同的訪客。 因此，此訪客的線上資訊無法與離線資料庫中的對應記錄建立關聯。 ID必須完全相符。
+* **區分大小寫和內容：** 在即時資料同步期間，從您的網站擷取的使用者ID必須 [!DNL Audience Manager] 與從離線儲存庫傳入的ID對應。 例如，若離線記錄包含相關資 [!DNL User123]訊，但您的網站會將該ID轉譯為 [!DNL USER123], [!DNL Audience Manager] 則會將其視為不同訪客。 因此，此訪客的線上資訊無法與離線資料庫中的對應記錄建立關聯。 ID必須完全相符。
 
 See [ID Synchronization for Inbound Data Transfers](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md).
 
