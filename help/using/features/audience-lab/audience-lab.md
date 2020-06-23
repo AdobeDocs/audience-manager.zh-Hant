@@ -7,12 +7,15 @@ title: Audience Lab
 topic: DIL API
 uuid: aaee820c-1e78-4fd4-bd8f-2629085d78e9
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 4%
 
 ---
 
 
-# Audience Lab {#audience-lab}
+# [!UICONTROL Audience Lab] {#audience-lab}
 
 建立互斥的測試區段，以 [!UICONTROL Segment Test Groups] 比較和評估不同目的地的效能。 您可以放棄控制群組，將區段分成整體的百分比，以測試效能。
 
@@ -41,7 +44,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 您也可以依狀態篩選測試群組。 以下「狀態」區段中說明了所有 [可用狀態](../../features/audience-lab/audience-lab.md#status) 。
 
-## 狀態 {#status}
+## [!UICONTROL Status] {#status}
 
 測試群組的狀態可以是作用中、已排程、暫停、草稿或完成。 下表中每項資訊的詳細資訊：
 
@@ -54,7 +57,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 作用中 </span></b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol"> 啟用 </span></b> </p> </td> 
    <td colname="col2"> <p>作用 <i>中</i> ，測試群組表示目前資料正被傳送至目的地。 按「測 <b><span class="uicontrol"> 試群組」 </span></b> 卡中的「暫 <b><span class="uicontrol"> 停測試」, </span></b> 暫停傳送資料至目的地。 </p> </td> 
   </tr> 
   <tr> 
@@ -76,7 +79,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
  </tbody>
 </table>
 
-## 動作 {#actions}
+## [!UICONTROL Actions] {#actions}
 
 <table id="table_481A411E2D2F4FE891595D00E775CF60"> 
  <thead> 
