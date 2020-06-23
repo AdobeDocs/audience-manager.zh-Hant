@@ -6,40 +6,22 @@ solution: Audience Manager
 title: 瞭解向 Demdex 網域進行的呼叫
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 translation-type: tm+mt
-source-git-commit: d219f6fa1e2a8396b049f86391142c00e263b629
+source-git-commit: 620730ab1596d4777a768de4453b73538671279d
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 12%
+source-wordcount: '370'
+ht-degree: 14%
 
 ---
 
 
-# 瞭解向 Demdex 網域進行的呼叫{#understanding-calls-to-the-demdex-domain}
+# Understanding Calls to the [!DNL Demdex] Domain {#understanding-calls-to-the-demdex-domain}
 
-[!DNL Audience Manager] 以及Adobe Experience Platform Identity Service會呼叫demdex.net網域並從中接收資料。 Adobe似乎正在與不同尋常的第三方網域合作，但事實並非如此。 本節說明呼叫中的 `demdex.net` 元素。
+[!DNL Audience Manager] 以及 [!DNL Adobe Experience Platform Identity Service] 對網域進行呼叫和接收數 `demdex.net` 據。 這似乎與一 [!DNL Adobe] 個不同尋常的第三方領域有關，但情況並非如此。 本節說明呼叫中的 `demdex.net` 元素。
 
-<table id="table_B846CBEDDA4C4AD19416F7C27FC325C6"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 呼叫元素 </th> 
-   <th colname="col2" class="entry"> 說明 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <code> demdex.net</code> </p> </td> 
-   <td colname="col2"> <p>This is a legacy domain controlled by <span class="keyword"> Adobe</span>. 它反映 <span class="keyword"> Audience Manager</span>的原始、贏取前名稱(<span class="keyword"> Demdex</span>)。 <span class="keyword"> Adobe</span> 在 <span class="keyword"> 2011年收購Demdex</span> ，並將該公司重新命名為 <span class="keyword"> Audience Manager</span>。 很難變更此網域，因為它與 <span class="keyword"> Audience Manager</span>、 <span class="wintitle"></span>ID服務以及我們已安裝的使用者群緊密相連。 請參閱 <a href="../overview/aam-overview.md#history-and-background"> 歷史與背景</a>。 </p> <p>您可能會看到附加在舊 <code> demdex.net</code> 呼叫的其他字首( <code> dcs.demdex.net</code>如 <code> fast.demdex.net</code>，等等)。 不論首碼為何，呼叫 <code><i>something</i>.demdex.net</code> 一律為對 <span class="keyword"> Adobe</span> ，而非對未知或可疑的第三方網域的呼叫。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <code> dpm</code> </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> DPM</span> 是「資料提供者 <span class="wintitle"> 符合」的縮寫</span>。 It tells internal, <span class="keyword"> Adobe</span> systems that a call from <span class="keyword"> Audience Manager</span> or the <span class="wintitle"> ID service</span> is passing in customer data for synchronization or requesting an ID. 這是您從Audience Manager或 <code> demdex.net</code><span class="keyword"> ID</span> 服務看到的最常見呼叫 <span class="wintitle"></span>。 </p> <p><span class="wintitle"> DPM呼叫基</span> 礎知識： </p> <p> 
-     <ul id="ul_44023BB060774518BE414EE10820C141"> 
-      <li id="li_0F94D1988A6944BA885FD40AB26FC49F"> <b> <span class="keyword"> Audience Manager</span></b>: 來自 <span class="wintitle"> Audience Manager的</span> DPM <span class="keyword"> 呼叫會將資料傳送至資料收集伺服器</span> 和快取設定檔 <span class="wintitle"></span><span class="wintitle"></span>伺服器。 請參閱<a href="../reference/system-components/components-data-collection.md">資料收集元件</a>。 </li> 
-      <li id="li_5A7EA9EE16EE4D828F0A24AE2B969122"> <b> <span class="wintitle"> ID服務</span></b>: 來自 <span class="wintitle"> ID服務的</span><span class="wintitle"></span> DPM呼叫是對訪客ID的請求。 請參 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> 閱Cookie和Adobe Experience Platform Identity Service</a><a href="https://docs.adobe.com/content/help/en/id-service/using/intro/id-request.html" format="https" scope="external"> ，以及Adobe Experience Platform Identity Service如何請求和設定ID</a>。 </li> 
-     </ul> </p> <p> <p>注意：  <span class="wintitle"> ID服務</span> ，客戶可以變更網 <span class="wintitle"> 域名稱中的DPM</span> 前置詞。 請參 <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/subdomain-config.html" format="https" scope="external"> 閱audienceManager Server和audienceManagerServerSecure</a>。 </p> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| 呼叫元素 | 說明 |
+|---|---|
+| `demdex.net` | This is a legacy domain controlled by [!DNL Adobe]. 它反映( [!DNL Audience Manager][!DNL Demdex])的原始收購前名稱。 [!DNL Adobe] 於 2011 年收購 [!DNL Demdex]，並將該公司重新命名為 [!DNL Audience Manager]。很難更改此域，因為它與已安裝的用戶群 [!DNL Audience Manager]、用戶 [!DNL Adobe Experience Cloud ID Service]群以及用戶群密切相連。 您可能會看到附加在舊 `demdex.net` 呼叫的其他字首( `dcs.demdex.net`如 `fast.demdex.net`，等等)。 不論首碼為何，呼叫一律 `something.demdex.net` 是對某個未知或可疑 [!DNL Adobe] 第三方網域的呼叫，而非呼叫。 |
+| `dpm` | [!DNL DPM] 是的縮寫 [!DNL Data Provider Match]。 It tells internal, [!DNL Adobe] systems that a call from [!DNL Audience Manager] or the [!DNL Adobe Experience Cloud ID Service] is passing in customer data for synchronization or requesting an ID. 這是您從或 `demdex.net` 中看到的最常見 [!DNL Audience Manager] 的呼叫 [!DNL Adobe Experience Cloud ID Service]。 <br><br>[!DNL DPM] 呼叫基礎： <ul><li>[!DNL Audience Manager]: 來 [!DNL DPM] 自的呼 [!DNL Audience Manager] 叫會將資料傳送至 [!DNL Data Collection Servers] 和 [!DNL Profile Cache Servers]。 請參閱[資料收集元件](../reference/system-components/components-data-collection.md)。</li><li>[!DNL Adobe Experience Cloud ID Service]: 來自 [!DNL DPM] 的呼叫 [!DNL Adobe Experience Cloud ID Service] 是訪客ID的請求。 請參 [閱Cookie和Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html)[，以及Adobe Experience Platform Identity Service如何要求和設定ID](https://docs.adobe.com/content/help/en/id-service/using/intro/id-request.html)。</li></ul><br>注意： [!DNL Adobe Experience Cloud ID Service] 客戶可以變更 [!DNL DPM] 網域名稱中的首碼。 請參 [閱audienceManager Server和audienceManagerServerSecure](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/subdomain-config.html)。 |
 
 >[!MORELIKETHIS]
 >
