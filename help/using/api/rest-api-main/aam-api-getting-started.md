@@ -6,15 +6,15 @@ solution: Audience Manager
 title: REST API 快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 translation-type: tm+mt
-source-git-commit: cdf567a816be60d0d966783e87f4ed02838be378
+source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1761'
 ht-degree: 3%
 
 ---
 
 
-# REST API 快速入門 {#getting-started-with-rest-apis}
+# Getting Started with [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
 一般需求、驗證、選用查詢參數、請求和其 [!DNL URLs]他參考的相關資訊。
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 >
 >視您的驗證方法而定，您需要相應調整您的 [!DNL URLs] 請求。 有關應 [使用的主機名](#environments) ，請參見「環境」部分。
 
-## JWT([!DNL Service Account])驗證 {#jwt}
+## [!DNL JWT] ([!DNL Service Account])驗證 {#jwt}
 
 ### 必要條件 {#prerequisites}
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 >
 >要以自動方式配置和使 [!DNL Audience Manager] 用， [!DNL REST APIs] 可以以寫程式方式生成該 [!DNL JWT] 檔案。 有關詳 [細說明，請參見JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) （服務帳戶）驗證。
 
-## OAuth驗證（已過時） {#oauth}
+## [!DNL OAuth] 驗證（已過時） {#oauth}
 
 >[!WARNING]
 > [!DNL Audience Manager] [!UICONTROL REST API] 現在已不建議使用Token驗 [!DNL OAuth 2.0] 證和續約方式。
@@ -74,7 +74,7 @@ ht-degree: 3%
 
 The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證和續約標準。 以下各節將說明如何驗證並開始使用 [!DNL API]。
 
-### 建立一般API使用者 {#requirements}
+### 建立一般使 [!DNL API] 用者 {#requirements}
 
 我們建議您建立個別的技術使用者帳戶，以便使用 [!DNL Audience Manager][!DNL API]s。 這是一般帳戶，不會系結至您組織中的特定使用者或與其關聯。 此類型的使 [!DNL API] 用者帳戶可協助您完成2項工作：
 
@@ -87,15 +87,13 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 
 ### 密碼驗證工作流程 {#password-authentication-workflow}
 
-<!-- oath-authentication.xml -->
-
 密碼驗證安全存取我們 [!DNL REST API]的。 以下步驟概述瀏覽器中用戶端密碼驗 [!DNL JSON] 證的工作流程。
 
 >[!TIP]
 >
 >如果將存取和重新整理Token儲存在資料庫中，請加密這些Token。
 
-#### 步驟1: 請求API存取
+#### 步驟1: 請求存 [!DNL API] 取
 
 請洽詢您的合作夥伴解決方案經理。 他們會提供您用戶端 [!DNL API] ID和機密。 ID和機密會向驗證您身分 [!DNL API]。
 
@@ -107,7 +105,7 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 
 * 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`。
 * 將您的用戶端ID和密碼轉換為基本64編碼字串。 在轉換程式中，以冒號分隔ID和密碼。 例如，憑證會 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`。
-* 傳入頁 [!DNL HTTP] 首 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded` 。 例如，您的標題可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
+* 傳入和 [!DNL HTTP][!DNL headers] 中 `Authorization:Basic <base-64 clientID:clientSecret>``Content-Type: application/x-www-form-urlencoded` 。 例如，您的標題可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
 * 按如下方式設定請求正文：
    <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
@@ -145,8 +143,8 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 
 * 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`。
 * 將您的用戶端ID和密碼轉換為基本64編碼字串。 在轉換程式中，以冒號分隔ID和密碼。 例如，憑證會 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`。
-* 傳入HTTP標題 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的標題可能如下所示： <br/> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/> `Content-Type: application/x-www-form-urlencoded`
-* 在請求內文中，指定 `grant_type:refresh_token` 並傳入您先前存取請求中收到的重新整理Token。 請求應如下所示： <br/> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
+* 傳入HTTP標題 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的標題可能如下所示： <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
+* 在請求內文中，指定 `grant_type:refresh_token` 並傳入您先前存取請求中收到的重新整理Token。 請求應如下所示： <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
 #### 步驟2: 接收新Token
 
@@ -166,11 +164,9 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 
 支援 [!DNL Audience Manager] 授 [!UICONTROL REST API] 權代碼和隱式驗證。 若要使用這些存取方法，您的使用者必須登入才能取 `https://api.demdex.com/oauth/authorize` 得存取和重新整理Token。
 
-## 發出驗證的API請求 {#authenticated-api-requests}
+## 發出已驗證的 [!DNL API] 請求 {#authenticated-api-requests}
 
 在您收到驗 [!DNL API] 證Token後呼叫方法的要求。
-
-<!-- c_oauth_call_methods.xml -->
 
 若要對可用方法進行呼 [!DNL API] 叫：
 
@@ -178,11 +174,9 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 * 使用 [JWT（服務帳戶）驗證](#jwt)，您需要提供與 `x-api-key` 您相同的標頭 `client_id`。 您可從 `client_id`[Adobe I/O整合頁面取得](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 。
 * 呼叫所需 [!DNL API] 方法。
 
-## 可選API查詢參數 {#optional-api-query-parameters}
+## 可選 [!DNL API] 查詢參數 {#optional-api-query-parameters}
 
 設定可用於返回對象所有屬性的方法的可選參數。
-
-<!-- c_rest_api_optional.xml -->
 
 您可將這些可選參數與傳 [!DNL API] 回物件所 *有屬性* 的方法搭配使用。 將查詢傳入請求字串中時，請在請求字串中設定這些選項 [!DNL API]。
 
@@ -192,8 +186,8 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 | `pageSize` | 設定請求傳回的回應結果數目（預設為10）。 |
 | `sortBy` | 根據指定的屬性排序並返回 [!DNL JSON] 結果。 |
 | `descending` | 以遞減順序排序和傳回結果。 `ascending` 為預設值。 |
-| `search` | 根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜尋「get all」方法傳回的任何值。 |
-| `folderId` | 傳回指定資料夾內特徵的所有ID。 並非所有方法都適用。 |
+| `search` | 根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜尋「」方法傳回的任[!DNL get all]何值。 |
+| `folderId` | 傳回指定資料夾 [!UICONTROL traits] 內的所有ID。 並非所有方法都適用。 |
 | `permissions` | 根據指定的權限傳回區段清單。 `READ` 為預設值。 權限包括：<ul><li>`READ` : 傳回並檢視區段的相關資訊。</li><li>`WRITE` : 使用 `PUT` 來更新區段。</li><li>`CREATE` : 用 `POST` 來建立區段。</li><li>`DELETE` : 刪除區段. 需要存取基本特徵（如果有）。 例如，若您要移除屬於某個群體的特徵，您需要有權利加以刪除。</li></ul><br>使用個別的索引鍵值配對指定多個權限。 例如，若要傳回僅具有和權限的 `READ` 區 `WRITE` 段清單，請傳入 `"permissions":"READ"`、 `"permissions":"WRITE"` 。 |
 | `includePermissions` | ([!DNL Boolean])設為 `true` 傳回區段的權限。 預設為 `false`. |
 
@@ -205,19 +199,17 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 ```
 
-## API URL {#api-urls}
+## [!DNL API URLs] {#api-urls}
 
 [!DNL URLs] 請求、測試和生產環境以及版本。
 
-<!-- r_rest_urls.xml -->
-
-## 請求URL {#request-urls}
+## 請求 [!DNL URLs] {#request-urls}
 
 下表依方法列 [!DNL URLs] 出用於傳入請 [!DNL API] 求的請求。
 
-根據您使用的驗證方法，您必鬚根據下表調整請求URL。
+根據您使用的驗證方法，您需要根據下表 [!DNL URLs] 調整請求。
 
-### 請求JWT驗證的URL {#request-urls-jwt}
+### 要求 [!DNL URLs] 驗證 [!DNL JWT] 功能 {#request-urls-jwt}
 
 | [!DNL API] 方法 | 請求 [!DNL URL] |
 |--- |--- |
@@ -233,7 +225,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### 申請OAuth驗證的URL（已過時） {#request-urls-oauth}
+### 驗證 [!DNL URLs] 要求 [!DNL OAuth] （已過時） {#request-urls-oauth}
 
 | [!DNL API] 方法 | 請求 [!DNL URL] |
 |--- |--- |
@@ -273,8 +265,6 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 ## 已定義響應代碼 {#response-codes-defined}
 
 `HTTP` 狀態代碼和由返回的響應文 [!DNL Audience Manager][!UICONTROL REST API]本
-
-<!-- r_api_http_response_codes.xml -->
 
 | 回應碼ID | 回應文字 | 定義 |
 |---|---|---|
