@@ -7,16 +7,19 @@ solution: Audience Manager
 title: 管理資料來源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 5%
 
 ---
 
 
-# Manage Data Sources {#manage-data-sources}
+# 在頻道和解決方案間一致性地管理 [!UICONTROL Data Sources] {#manage-data-sources}
 
-## Create a Data Source {#create-data-source}
+## 建立 [!UICONTROL Data Source] {#create-data-source}
 
-若要建立新的資料來源，請前往並 **[!UICONTROL Audience Data > Data Sources > Add New]** 完成此處說明之每個章節的步驟。 建立資料來源需要管理員權限。
+若要建立新 [!UICONTROL data source]的區段，請 **[!UICONTROL Audience Data > Data Sources > Add New]** 前往並完成此處說明的每個區段步驟。 需要有管理員權限才能建立 [!UICONTROL data source]。
 
 <!-- create-datasource.xml -->
 
@@ -24,19 +27,19 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 >
 >如需這 [些不同控制項的說明](../features/datasources-list-and-settings.md#settings-menu-options) ，請參閱資料來源設定和功能表選項。
 
-## 資料來源詳細資料 {#details}
+## [!UICONTROL Data Source] 詳細資料 {#details}
 
 要完成該部 [!UICONTROL Data Source Details] 分：
 
-1. 命名資料來源。
-1. *（選擇性）* ，說明資料來源。 簡明的說明可協助您定義資料來源的角色或用途。
-1. 提供整合程式碼。 一般而言，整合代碼是選用的。 當您想要：
+1. 命名 [!UICONTROL data source]。
+1. *（可選）* ，請說明 [!UICONTROL data source]。 簡明的說明可協助您定義角色或目的 [!UICONTROL data source]。
+1. 提供 [!UICONTROL integration code]。 通常為 [!UICONTROL integration codes] 可選。 當您想要：
 
    * [建立跨裝置資料來源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * 使用 [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html)。
+   * Use the [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html).
    * 使用描述 [檔合併規則](../features/profile-merge-rules/merge-rules-start.md)。
 
-1. 選擇 **[!UICONTROL ID Type]**。 ID類型選項包括：
+1. 選擇 **[!UICONTROL ID Type]**。 [!UICONTROL ID Type] 選項包括：
 
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
@@ -47,27 +50,22 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
    * **[!UICONTROL Person]**
    * **[!UICONTROL Household]**
 
-## 資料匯出控制 {#export-controls}
+## [!UICONTROL Data Export Controls] {#export-controls}
 
-[「資料匯出控制](../features/data-export-controls.md) 」是可套用至資料來源和目的地的選用分類規則。 當該動作違反資料隱私或使用協定時，您無法將資料傳送至目的地。 如果您未使用，請略過本節 [!UICONTROL Data Export Controls]。
+[「資料匯出控制](../features/data-export-controls.md) 」是可套用至和的選用分類 [!UICONTROL data source] 規則 [!UICONTROL destination]。 當該動作違反資料隱私或使 [!UICONTROL destination] 用合約時，您無法傳送資料至。 如果您未使用，請略過本節 [!UICONTROL Data Export Controls]。
 
-## Data Source Settings {#settings}
+## [!UICONTROL Data Source] 設定 {#settings}
 
-這些設定會決定資料來源的識別、使用和共用方式。 您也可以啟用傳入資料檔案的錯誤報告。 要完成該部 [!UICONTROL Data Source Settings] 分：
+這些設定會決定 [!UICONTROL data source] 如何識別、使用和共用。 您也可以啟用傳入資料檔案的錯誤報告。 要完成該部 [!UICONTROL Data Source Settings] 分：
 
-1. 選取核 [!UICONTROL Data Source Setting] 取方塊，將選項套用至您的資料來源。
+1. 選取核 [!UICONTROL Data Source Setting] 取方塊，將選項套用至您的 [!UICONTROL data source]。
 2. 按一下 **[!UICONTROL Save]**.
-
->[!MORELIKETHIS]
->
->* [資料來源設定和功能表選項](../features/datasources-list-and-settings.md#settings-menu-options)
-
 
 ## 刪除資料來源 {#delete-data-source}
 
 <!-- t_datasource_delete.xml -->
 
-刪除您不再需要的資料來源。
+刪除 [!UICONTROL data source] 您不再需要的項目。
 
 >[!NOTE]
 >
@@ -81,3 +79,8 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
 1. 選取一或多個資料來源旁的核取方塊。
 如果您有 [!UICONTROL Search] 長清單，可使用方塊來尋找所需的資料來源。
 1. 按一 ![](assets/icon_trash.png)下，然後確認刪除。
+
+
+>[!MORELIKETHIS]
+>
+>* [資料來源設定和功能表選項](../features/datasources-list-and-settings.md#settings-menu-options)
