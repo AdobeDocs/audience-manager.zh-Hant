@@ -5,15 +5,15 @@ seo-title: 適用於 IAB TCF 的 Audience Manager 外掛程式
 solution: Audience Manager
 title: 適用於 IAB TCF 的 Audience Manager 外掛程式
 translation-type: tm+mt
-source-git-commit: 1fb8ee6c229418e48fcaa412a8ea0f1ab5f00331
+source-git-commit: 3523cdb0d6d412c1a93694e4cbeab188154120f0
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2449'
 ht-degree: 40%
 
 ---
 
 
-# 適用於 IAB TCF 的 Audience Manager 外掛程式 {#aam-iab-plugin}
+# [!DNL Audience Manager Plug-in for IAB TCF] {#aam-iab-plugin}
 
 ## 概述
 
@@ -43,6 +43,10 @@ Audience Manager可協助您尊重使用者的隱私權選擇，並提供您簡�
 
 * 行動裝置工作流程；
 * 附加同意書至區段出口。
+
+## 升級為 [!DNL IAB TCF v2.0] {#upgrading}
+
+將實施從 [!DNL Audience Manager Plug-in for IAB TCF] v1. [!DNL IAB TCF] 1升級至 [!DNL IAB TCF][!DNL IAB TCF] v2.0或首次啟用v2.0的客戶，應依照下列說明的相同先決條件和實施准則。
 
 ## 必要條件 {#prerequisites}
 
