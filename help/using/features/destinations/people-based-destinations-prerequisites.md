@@ -5,9 +5,9 @@ seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: 必要條件和考量事項
 translation-type: tm+mt
-source-git-commit: 4d4915b9a99ddcdf321d9f4970321f5f54e057ea
+source-git-commit: 02bde5060d50ba581937c504331397dfbbcdc19f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '953'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 4%
 在您可以用 [!UICONTROL People-Based Destinations] 來傳送第一方對象區段至之前 [!DNL LinkedIn]，請確定您的 [!DNL LinkedIn Campaign Manager] 帳戶具有或 [!DNL Creative Manager] 更高的權限層級。
 
 如要瞭解如何編輯您的 [!DNL LinkedIn Campaign Manager] 使用者權限，請參 [閱LinkedIn檔案中的「新增、編輯及移除廣告帳戶的使用者權限](https://www.linkedin.com/help/lms/answer/5753) 」。
+
+如需 [視訊指示，請參閱瞭解和設定LinkedIn以人為本的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
 ## 資料上線 {#data-onboarding}
 
