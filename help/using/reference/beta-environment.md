@@ -1,20 +1,24 @@
 ---
-description: 測試版環境是用於測試您的Audience manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
-keywords: 沙箱
-seo-description: 測試版環境是用於測試您的Audience manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
+description: 測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
+keywords: sandbox
+seo-description: 測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
 seo-title: 測試版環境
 solution: Audience Manager
 title: 測試版環境
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
+feature: reference
 translation-type: tm+mt
-source-git-commit: a1960a65058622c198bb07d7c20c1e21e2eaf00a
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 4%
 
 ---
 
 
 # 測試版環境 {#beta-environment}
 
-測試版環境是用於測試您的Audience manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
+測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
 
 ## 概述
 
@@ -49,13 +53,13 @@ Added re: AAM-30826.
 
 1. 使用curl命令進行DCS [呼叫](https://curl.haxx.se/docs/manpage.html)。 Curl是使用許多支援的通訊協定之一，將資料從伺服器傳輸或傳輸至伺服器的工具。
 
-   例如:
+   例如：
 
    `curl -v https://dcs-beta.demdex.net/event`
 
 1. 在DCS回應標題中尋找「沙盒」，確認測試版DCS已支援您的要求。
 
-   例如:
+   例如：
 
    ```
    curl -v http://dcs-beta.demdex.net/?event
