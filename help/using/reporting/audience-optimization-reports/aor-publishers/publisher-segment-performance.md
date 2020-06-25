@@ -1,17 +1,21 @@
 ---
 description: 「區段績效」報表會依曝光次數和即時區段獨特值比較已映射和未映射的區段。 映射區段是您建立並傳送至目的地以進行定位的區段。 未映射區段是您已建立但尚未傳送至目標的區段。 比較報表內和報表之間的這些不同區段類型，可協助您最佳化現有的促銷活動，並找出您可能想要傳送至目的地以進行定位的被忽視區段。
 seo-description: 「區段績效」報表會依曝光次數和即時區段獨特值比較已映射和未映射的區段。 映射區段是您建立並傳送至目的地以進行定位的區段。 未映射區段是您已建立但尚未傳送至目標的區段。 比較報表內和報表之間的這些不同區段類型，可協助您最佳化現有的促銷活動，並找出您可能想要傳送至目的地以進行定位的被忽視區段。
-seo-title: 區段績效報表
+seo-title: 區段成效報表
 solution: Audience Manager
-title: 區段績效報表
+title: 區段成效報表
 uuid: c9a1e9ad-4f3f-4334-a3ff-0f241c7303c4
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 2%
 
 ---
 
 
-# 區段績效報表{#segment-performance-report}
+# 區段成效報表{#segment-performance-report}
 
 「區段績效」報表會依曝光次數和即時區段獨特值比較已映射和未映射的區段。
 
@@ -40,7 +44,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 >[!IMPORTANT]
 >
->啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Line Item IDs]如將DFP資料檔案匯 [入Audience manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Line Item] Web屬性的形式詳細說明 [!UICONTROL Line Item ID]。
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Line Item IDs]如將DFP資料檔案匯 [入Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Line Item] Web屬性的形式詳細說明 [!UICONTROL Line Item ID]。
 
 ## 解讀結果 {#interpreting-results}
 
@@ -61,7 +65,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    <td colname="col2"> <p>您指派給此區段的英數字元名稱。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> 區段ID </p> </td> 
+   <td colname="col1"> <p>區段ID </p> </td> 
    <td colname="col2"> <p>此區段的唯一ID。 </p> </td> 
   </tr> 
   <tr> 
