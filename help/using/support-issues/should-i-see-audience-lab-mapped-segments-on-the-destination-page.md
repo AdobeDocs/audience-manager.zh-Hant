@@ -4,9 +4,10 @@ seo-description: 為什麼 Audience Lab 對應區段不會顯示在目的地詳�
 seo-title: 為什麼 Audience Lab 對應區段不會顯示在目的地詳細資訊頁面上。
 solution: Audience Manager
 title: 我是否應在目的地詳細資訊頁面上看到我的 Audience Lab 對應區段？
-translation-type: ht
-source-git-commit: dd68edc816c1739ec49f3178e776087d7737863b
-workflow-type: ht
+feature: support
+translation-type: tm+mt
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
 
