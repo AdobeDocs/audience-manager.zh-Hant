@@ -5,9 +5,10 @@ seo-title: 廣告商使用案例
 solution: Audience Manager
 title: 廣告商使用案例
 uuid: ceb06f86-1f9b-4e02-b179-116ec635ce5d
-translation-type: ht
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
-workflow-type: ht
+feature: reference
+translation-type: tm+mt
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 100%
 
