@@ -1,23 +1,27 @@
 ---
 description: 傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS通訊協定有三個版本。
 seo-description: 傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 2018年5月，使用TLS 1.0、1.1和1.2的TLS通訊協定有三個版本。
-seo-title: TLS 1.0和1.1取代
+seo-title: TLS 1.0 和 1.1 淘汰
 solution: Audience Manager
-title: TLS 1.0和1.1取代
+title: TLS 1.0 和 1.1 淘汰
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
+feature: reference
 translation-type: tm+mt
-source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 25%
 
 ---
 
 
-# TLS 1.0和1.1取代{#tls-deprecation}
+# TLS 1.0 和 1.1 淘汰{#tls-deprecation}
 
-傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 2018年5月，TLS通訊協定有三種版本在使用：TLS 1.0、1.1和1.2。
+傳輸層安全(TLS)是一種加密協定，用於在兩個系統之間建立安全通信通道。 它用於驗證一個或兩個系統，並保護系統之間傳遞的資訊的機密性和完整性。 2018年5月，TLS通訊協定有三種版本在使用： TLS 1.0、1.1和1.2。
 
-2019年3月， [!DNL Adobe] 終止了對議定書的 [!DNL TLS 1.0] 支援。 Adobe Audience manager功能不適用於僅支援瀏覽器的使用者 [!DNL TLS 1.0]。
+2019年3月， [!DNL Adobe] 終止了對議定書的 [!DNL TLS 1.0] 支援。 Adobe Audience Manager功能不適用於僅支援瀏覽器的使用者 [!DNL TLS 1.0]。
 
-2020年3月， [!DNL Adobe] 將終止對議定書的 [!DNL TLS 1.1] 支援。 Adobe Audience manager功能將停止針對使用僅支援之瀏覽器的使用者運作 [!DNL TLS 1.1]。
+2020年3月， [!DNL Adobe] 將終止對議定書的 [!DNL TLS 1.1] 支援。 Adobe Audience Manager功能將停止針對使用僅支援之瀏覽器的使用者運作 [!DNL TLS 1.1]。
 
 我們強烈建議使 [!DNL TLS 1.2]用協定的最新版本，即在編寫時。 所有現代瀏覽器都使用 [!DNL TLS 1.2]。 我們已為您收集瀏覽器、版本及其支援的清 [!DNL TLS] 單。 如需詳細資訊，請造 [訪此Wikipedia連結](https://en.wikipedia.org/wiki/Transport_Layer_Security#Web_browsers)。
 
@@ -273,7 +277,7 @@ source-git-commit: 5f572a414f27bd8eea20a1c0596a02b1250b50fe
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Microsoft edge和Microsoft Edge for Mobile </p> </td> 
+   <td colname="col1"> <p>Microsoft Edge和Microsoft Edge for Mobile </p> </td> 
    <td colname="col2"> <p>所有版本 </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_87B9CD9D72CA43A1A4DC824C5DEA3638"> 
