@@ -1,17 +1,21 @@
 ---
 description: 查看指定目標和時段的出站批處理作業歷史記錄資訊。
 seo-description: 查看指定目標和時段的出站批處理作業歷史記錄資訊。
-seo-title: 出站檔案歷史記錄
+seo-title: 傳出檔案歷史記錄
 solution: Audience Manager
-title: 出站檔案歷史記錄
+title: 傳出檔案歷史記錄
 uuid: 3621a59d-2bb5-4828-86f6-4c9bfa580764
+feature: inbound and outbound reports
 translation-type: tm+mt
-source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
-# 出站檔案歷史記錄 {#outbound-file-history}
+# 傳出檔案歷史記錄 {#outbound-file-history}
 
 查看指定目標和時段的出站批處理作業歷史記錄資訊。
 
@@ -21,7 +25,7 @@ t_reports_outbound_history.xml
 
  -->
 
-1. Click **[!UICONTROL Analytics]** &gt; **[!UICONTROL Outbound File History]**.
+1. 按一下 **[!UICONTROL Analytics]** > **[!UICONTROL Outbound File History]**.
 
    ![步驟結果](assets/outbound_history.png)
 
