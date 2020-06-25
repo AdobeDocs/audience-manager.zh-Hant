@@ -4,9 +4,10 @@ seo-description: 本文說明加州消費者隱私法 (CCPA) 所使用的概念�
 seo-title: CCPA 字彙表
 solution: Audience Manager
 title: CCPA 字彙表
-translation-type: ht
-source-git-commit: f8184dfccdb7b5cbc3ace67831d988dd8061ea38
-workflow-type: ht
+feature: data governance & privacy
+translation-type: tm+mt
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 100%
 
