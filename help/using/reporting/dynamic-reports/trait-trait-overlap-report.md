@@ -5,8 +5,12 @@ seo-title: 特徵至特徵重疊報表
 solution: Audience Manager
 title: 特徵至特徵重疊報表
 uuid: 7fb3fc9e-0e0b-492a-9c3a-04356afb19c7
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +21,7 @@ source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
 
 >[!NOTE]
 >
->Audience manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源看到特徵](/help/using/features/administration/administration-overview.md) 。
+>Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源看到特徵](/help/using/features/administration/administration-overview.md) 。
 
 <!-- 
 
@@ -30,7 +34,7 @@ c_overlap_reports.xml
 報 [!UICONTROL Trait-to-Trait Overlap] 表會傳回所有您自己特徵和第三方特徵之間共用的獨特使用者百分比資料。 作為最佳化工具，此報告可協助您：
 
 * 根據您的需求，建立高重疊或低重疊的區段。 具有高度重疊的特性可讓您鎖定目標受眾，但獨特訪客較少。 重疊率低的特徵有助於觸及更大的獨特訪客集。
-* 驗證第三方特徵資料：相似的第一方和第三方特徵之間的強烈重疊表明，您資料合作夥伴的特徵是正確且值得信賴的。 相反地，低重疊可能表示第三方特徵實際上可能不包含與您自己的類似第一方特徵相同的資訊。
+* 驗證第三方特徵資料： 相似的第一方和第三方特徵之間的強烈重疊表明，您資料合作夥伴的特徵是正確且值得信賴的。 相反地，低重疊可能表示第三方特徵實際上可能不包含與您自己的類似第一方特徵相同的資訊。
 * 尋找特徵之間意外的重疊，並使用該資訊建立創新細分。
 
 ## 範例報表
@@ -97,7 +101,7 @@ r_t2t_data_pop.xml
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle"> 重疊獨特值</span></b> </td> 
-   <td colname="col2"> <p>若要取得重疊百分比，Audience manager使用下列公式：</p> <p>重疊獨特值/（基本特徵獨特值+重疊特徵獨特值——重疊獨特值）</p> </td> 
+   <td colname="col2"> <p>若要取得重疊百分比，Audience Manager使用下列公式：</p> <p>重疊獨特值/（基本特徵獨特值+重疊特徵獨特值——重疊獨特值）</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle"> 重疊特徵唯一值</span></b> </td> 
@@ -116,5 +120,5 @@ r_t2t_data_pop.xml
 >* [動態報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [說明的報表圖示和工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [選取的Audience manager報表中的資料取樣和錯誤率……](../../reporting/report-sampling.md)
->* [重疊報表的CSV檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
+>* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
+>* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
