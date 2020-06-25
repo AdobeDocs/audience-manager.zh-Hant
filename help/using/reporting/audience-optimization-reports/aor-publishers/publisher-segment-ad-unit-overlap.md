@@ -1,19 +1,23 @@
 ---
-description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience manager區段之間的高與低重疊。
-seo-description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience manager區段之間的高與低重疊。
-seo-title: 區段到廣告單位重疊
+description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience Manager區段之間的高與低重疊。
+seo-description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience Manager區段之間的高與低重疊。
+seo-title: 區段至廣告單位重疊
 solution: Audience Manager
-title: 區段到廣告單位重疊
+title: 區段至廣告單位重疊
 uuid: aaa20163-58aa-42c9-8f72-a1dfb0d20e57
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 4%
 
 ---
 
 
-# 區段到廣告單位重疊{#segment-to-ad-unit-overlap}
+# 區段至廣告單位重疊{#segment-to-ad-unit-overlap}
 
-「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience manager區段之間的高與低重疊。
+「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience Manager區段之間的高與低重疊。
 
 ## 使用案例 {#use-cases}
 
@@ -29,7 +33,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 >[!IMPORTANT]
 >
->啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Ad Unit IDs]如將DFP資料檔案匯 [入Audience manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Ad Unit] Web屬性的形式詳細說明 [!UICONTROL Ad Unit ID]。
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Ad Unit IDs]如將DFP資料檔案匯 [入Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Ad Unit] Web屬性的形式詳細說明 [!UICONTROL Ad Unit ID]。
 
 ## 解讀結果 {#interpreting-results}
 
@@ -51,7 +55,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 分段即時獨特值計數</span> </p> </td> 
-   <td colname="col2"> <p>在指定時間範圍內即時檢視的獨特訪客數量，以及Audience manager看到區段時符合資格的訪客數量 <span class="keyword"></span>。 </p> </td> 
+   <td colname="col2"> <p>在指定時間範圍內即時檢視的獨特訪客數量，以及Audience Manager看到區段時符合資格的訪客數量 <span class="keyword"></span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 廣告單位獨特值計數</span> </p> </td> 
