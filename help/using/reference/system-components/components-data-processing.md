@@ -5,8 +5,9 @@ seo-title: 資料處理元件
 solution: Audience Manager
 title: 資料處理元件
 uuid: d458d869-7a23-4016-871d-0b994cf4af06
+feature: system components
 translation-type: tm+mt
-source-git-commit: 9a92420b1f0116c0fd71db56895720e0ee894f30
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 3%
