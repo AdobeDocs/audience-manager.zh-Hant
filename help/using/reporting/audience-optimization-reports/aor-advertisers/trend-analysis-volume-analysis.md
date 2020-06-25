@@ -5,8 +5,9 @@ seo-title: 趨勢分析和大量分析報表
 solution: Audience Manager
 title: 趨勢分析和大量分析報表
 uuid: 5d124d80-5f54-4970-92cd-2c8eba42efca
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9326b61f27f6c529567ab9b26694998f0b5dafb3
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 5%
