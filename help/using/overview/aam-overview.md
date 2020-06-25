@@ -5,9 +5,10 @@ seo-title: Audience Manager 概述
 solution: Audience Manager
 title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
-translation-type: ht
-source-git-commit: a13c64eb45fdbcb311bfecdb39b3203523d6b399
-workflow-type: ht
+feature: overview
+translation-type: tm+mt
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 100%
 
