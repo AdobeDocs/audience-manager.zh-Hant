@@ -1,20 +1,21 @@
 ---
 description: 說明支援互動式報表和資料更新排程的基礎軟體。
 seo-description: 說明支援互動式報表和資料更新排程的基礎軟體。
-seo-title: 報告技術
+seo-title: 報表技術
 solution: Audience Manager
-title: 報告技術
+title: 報表技術
 uuid: 5f3d815b-e1e6-42f2-b848-ac035a5aa77d
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: 1faafcda1060c1fab9de454976aac7cf191f456a
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# 報告技術{#report-technology}
+# 報表技術{#report-technology}
 
 說明支援互動式報表和資料更新排程的基礎軟體。
 
