@@ -1,17 +1,21 @@
 ---
 description: 將資料放入「傳送效能」報表記錄檔，放入僅包含ID的表格中。 將非ID中繼資料放入個別的查閱表格，以協助減少檔案大小和處理時間。
 seo-description: 將資料放入「傳送效能」報表記錄檔，放入僅包含ID的表格中。 將非ID中繼資料放入個別的查閱表格，以協助減少檔案大小和處理時間。
-seo-title: 使用查閱表格改善記錄檔處理時間
+seo-title: 使用查閱表格縮短記錄檔處理時間
 solution: Audience Manager
-title: 使用查閱表格改善記錄檔處理時間
+title: 使用查閱表格縮短記錄檔處理時間
 uuid: ffc77618-474b-455e-9c91-15b32fc151a5
+feature: reporting reference
 translation-type: tm+mt
-source-git-commit: d4c5f2008a0b5da889d9192bf4b9db8ba343de9a
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 18%
 
 ---
 
 
-# 使用查閱表格改善記錄檔處理時間{#improve-log-file-processing-times-with-lookup-tables}
+# 使用查閱表格縮短記錄檔處理時間{#improve-log-file-processing-times-with-lookup-tables}
 
 將資料放入「傳送效能」報表記錄檔，放入僅包含ID的表格中。 將非ID中繼資料放入個別的查閱表格，以協助減少檔案大小和處理時間。
 
