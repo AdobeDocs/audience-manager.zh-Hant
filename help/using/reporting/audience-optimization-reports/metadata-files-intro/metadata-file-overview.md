@@ -5,8 +5,12 @@ seo-title: 中繼資料檔案的概述與對應
 solution: Audience Manager
 title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
+feature: log files
 translation-type: tm+mt
-source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +33,7 @@ source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
 
 ### 中繼資料連結ID至可讀名稱
 
-中繼資料檔案必須將數值ID系結至可讀名稱。 例如，假設事件呼叫包含索引鍵值配對中的創作ID，如下所示： `d_creative:1234`。 若沒有中繼資料檔案，此創意素材會在選項選單中顯示為1234。
+中繼資料檔案必須將數值ID系結至可讀名稱。 例如，假設事件呼叫包含索引鍵值配對中的創作ID，如下所示： `d_creative:1234`. 若沒有中繼資料檔案，此創意素材會在選項選單中顯示為1234。
 
 不過，格式正確的中繼資料檔案可將此創意連結回「廣告商創意A」等實名，而「廣告商創意A」是您可在報表中讀取和辨識的名稱。
 
@@ -59,7 +63,7 @@ source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
  <tbody> 
   <tr> 
    <td colname="col1"> <p>廣告商 </p> </td> 
-   <td colname="col2"> <p> <code>d_adsrc = <i>data source ID or integration code</i></code> </p> <p>這是廣告商建立資料來源時提供的資料來源ID或整合代碼。 請參 <a href="../../../features/manage-datasources.md#create-data-source"> 閱建立資料來源</a>。 </p> </td> 
+   <td colname="col2"> <p> <code>d_adsrc = <i>data source ID or integration code</i></code> </p> <p>這是廣告商建立資料來源時提供的資料來源ID或整合代碼。 See <a href="../../../features/manage-datasources.md#create-data-source"> Create a Data Source</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>業務單位(BU) </p> </td> 
@@ -122,7 +126,7 @@ source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
 
 ![](assets/metadata_file_name.png)
 
-請參 [閱中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)。
+See [Naming Conventions for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
 
 ### 檔案內容
 
@@ -130,15 +134,15 @@ source-git-commit: 13882a8f9300344e1bb0a3079666a67166945a83
 
 ![](assets/metadata_file_contents.png)
 
-請參 [閱中繼資料檔案的內容格式](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)。
+See [Content Format for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
 
 ### 檔案傳送
 
-在命名並將資料添加到檔案後，將其發送到由提供的Amazon S3儲存目錄 [!DNL Audience Manager]。 請參 [閱中繼資料檔案的傳送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)。
+在命名並將資料添加到檔案後，將其發送到由提供的Amazon S3儲存目錄 [!DNL Audience Manager]。 See [Delivery Methods for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md).
 
 >[!MORELIKETHIS]
 >
 >* [受眾最佳化報告的資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
->* [透過像素呼叫擷取促銷活動點按資料](../../../integration/media-data-integration/click-data-pixels.md)
->* [透過像素呼叫擷取促銷活動的曝光資料](../../../integration/media-data-integration/impression-data-pixels.md)
+>* [透過像素呼叫擷取行銷活動的點按資料](../../../integration/media-data-integration/click-data-pixels.md)
+>* [透過像素呼叫擷取行銷活動的曝光資料](../../../integration/media-data-integration/impression-data-pixels.md)
 
