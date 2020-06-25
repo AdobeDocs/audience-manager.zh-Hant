@@ -5,11 +5,12 @@ seo-title: 區段至區段重疊報表
 solution: Audience Manager
 title: 區段至區段重疊報表
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: a35be513c2cec40257f2df0731eaccbb98e3a000
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 3%
+ht-degree: 11%
 
 ---
 
@@ -77,6 +78,6 @@ r_s2s_data_pop.xml
 >* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
 >* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [說明的報表圖示和工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
->* [重疊報表： 更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [選取的Audience Manager報表中的資料取樣和錯誤率……](../../reporting/report-sampling.md)
->* [重疊報表的CSV檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
+>* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
+>* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
+>* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
