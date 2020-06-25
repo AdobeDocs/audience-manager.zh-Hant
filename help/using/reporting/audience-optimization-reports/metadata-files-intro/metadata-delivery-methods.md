@@ -5,11 +5,12 @@ seo-title: 中繼資料檔案的傳送方法
 solution: Audience Manager
 title: 中繼資料檔案的傳送方法
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
+feature: log files
 translation-type: tm+mt
-source-git-commit: 62147fc719a59d2b2c7b444bce853334b03816c6
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -48,7 +49,7 @@ ht-degree: 0%
 | `.../log_ingestion/` | 這是目錄儲存路徑的開始。 一切就緒後，您將獲得完整的路徑。 |
 | `pid=<AAM ID>` | 此金鑰值配對包含您的Audience Manager客戶ID。 |
 | `dpid=<d_src>` | 此金鑰值配對包含在事件呼叫中傳入的資料來源ID。 資料來源ID是將檔案中所有內容與其所屬實際資料系結的值。 </br> 例如，假設您有ID為123的創意素材，且名稱為「廣告商創意A」。 當事件呼叫只傳遞在ID中時，您必須在中繼資料檔案中包含「廣告商創意A」。 促銷活動和創意素材屬於資料來源。 資料來源ID是這些連結的原因，可讓我們將檔案內容精確關聯至事件呼叫時傳送的ID。 請參 [閱事件呼叫ID如何決定檔案名稱、內容和傳送路徑](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names)。 |
-| `<yyyymmdd_0_child ID>` | 這是檔案名。 請參 [閱中繼資料檔案的命名慣例](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)。 |
+| `<yyyymmdd_0_child ID>` | 這是檔案名。 See [Naming Conventions for Metadata Files](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md). |
 
 ## 檔案處理時間與更新 {#processing-times}
 
