@@ -1,21 +1,25 @@
 ---
-description: 此地圖包含主要的Audience manager系統。 它以視覺化方式呈現資料在Audience manager元件之間的流入、流出。
-seo-description: 此地圖包含主要的Audience manager系統。 它以視覺化方式呈現資料在Audience manager元件之間的流入、流出。
+description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出。
+seo-description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出。
 seo-title: 平台架構資料流圖
 solution: Audience Manager
 title: 平台架構資料流圖
 uuid: d845af1d-f448-4f4c-948e-b2c89f125086
+feature: system components
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 2%
 
 ---
 
 
-# 平台架構：資料流圖{#platform-architecture-data-flow-map}
+# 平台架構：資料流量圖{#platform-architecture-data-flow-map}
 
-此地圖包含主要的Audience manager系統。 它以視覺化方式呈現資料在Audience manager元件之間的流入、流出。
+此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出。
 
-## 如何閱讀此地圖 {#compmap}
+## How to read this map {#compmap}
 
 <!-- 
 
@@ -27,7 +31,7 @@ c_compmap.xml
 
 顏色定義進出的資料類型 [!DNL Audience Manager]。 綠色是客戶資料，藍色是客戶資料（造訪您網站的訪客），橙色是用於報告的資料。
 
-如需系統說明和摘要，請參閱資 [料動作](../../reference/system-components/components-data-action.md)、收 [集](../../reference/system-components/components-data-collection.md)、 [處理](../../reference/system-components/components-data-processing.md), [](../../reference/system-components/components-tag-management.md) 以及標籤管理區段。
+如需系統說明和摘要，請參閱資 [料動作](../../reference/system-components/components-data-action.md)、 [收集](../../reference/system-components/components-data-collection.md)、 [處理](../../reference/system-components/components-data-processing.md), [](../../reference/system-components/components-tag-management.md) 以及標籤管理區段。
 
 ![](assets/flowmap.png)
 
