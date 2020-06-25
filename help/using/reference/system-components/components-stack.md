@@ -1,19 +1,23 @@
 ---
-description: Audience manager將其系統和程式分為4個主要類別：標籤管理、資料收集、資料組織和資料動作能力。
-seo-description: Audience manager將其系統和程式分為4個主要類別：標籤管理、資料收集、資料組織和資料動作能力。
-seo-title: Audience Manager系統中的關鍵元件
+description: Audience Manager將其系統和程式分為4個主要類別：標籤管理、資料收集、資料組織和資料動作能力。
+seo-description: Audience Manager將其系統和程式分為4個主要類別：標籤管理、資料收集、資料組織和資料動作能力。
+seo-title: Audience Manager 系統中的關鍵元件
 solution: Audience Manager
-title: Audience Manager系統中的關鍵元件
+title: Audience Manager 系統中的關鍵元件
 uuid: dedb15e6-b8dd-4eea-ab84-d99f160e4d34
+feature: system components
 translation-type: tm+mt
-source-git-commit: b8b195f51186151fa7a8658451d1ee9aa7010a75
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 15%
 
 ---
 
 
-# Audience Manager系統中的關鍵元件{#key-components-in-the-audience-manager-system}
+# Audience Manager 系統中的關鍵元件{#key-components-in-the-audience-manager-system}
 
-Audience manager將其系統和程式分為四大類：標籤管理、資料收集、資料組織及資料動作能力。
+Audience Manager將其系統和程式分成四個主要類別： 標籤管理、資料收集、資料組織及資料動作能力。
 
 <!-- 
 
