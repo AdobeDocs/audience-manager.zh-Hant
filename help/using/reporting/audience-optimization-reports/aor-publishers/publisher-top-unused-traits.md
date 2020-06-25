@@ -1,17 +1,21 @@
 ---
 description: 「最上方未使用的特徵」會根據特徵類型、資料來源和效能，以尚未成為群體成員的特徵散布圖表示。
 seo-description: 「最上方未使用的特徵」會根據特徵類型、資料來源和效能，以尚未成為群體成員的特徵散布圖表示。
-seo-title: 最常未使用的特性
+seo-title: 最常見的未使用特徵
 solution: Audience Manager
-title: 最常未使用的特性
-uuid: 90bcd33-41b8-416e-aa4e-a8661891df50
+title: 最常見的未使用特徵
+uuid: 90bcd333-41b8-416e-aa4e-a8661891df50
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
 
-# 最常未使用的特性{#top-unused-traits}
+# 最常見的未使用特徵{#top-unused-traits}
 
 「最上方未使用的特徵」會根據特徵類型、資料來源和效能，以尚未成為群體成員的特徵散布圖表示。
 
@@ -35,7 +39,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 >[!IMPORTANT]
 >
->啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Order IDs]如將DFP資料檔案匯 [入Audience manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Order] Web屬性的形式詳細說明 [!UICONTROL Order ID]。
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Order IDs]如將DFP資料檔案匯 [入Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Order] Web屬性的形式詳細說明 [!UICONTROL Order ID]。
 
 ## 解讀結果 {#interpreting-results}
 
