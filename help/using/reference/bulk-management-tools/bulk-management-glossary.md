@@ -1,17 +1,21 @@
 ---
 description: 已定義列標題標籤。
 seo-description: 已定義列標題標籤。
-seo-title: 批量管理工具辭彙表
+seo-title: 大量管理工具字彙表
 solution: Audience Manager
-title: 批量管理工具辭彙表
+title: 大量管理工具字彙表
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 5%
 
 ---
 
 
-# 批量管理工具辭彙表{#bulk-management-tools-glossary}
+# 大量管理工具字彙表{#bulk-management-tools-glossary}
 
 已定義列標題標籤。
 
@@ -95,7 +99,7 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用於收集資料的實際特徵或區段規則。 大量請求會傳回在 <span class="keyword"> Audience Manager中使用特徵規則產生器</span> ，或區段規則產生器建 <a href="../../features/traits/about-trait-builder.md"> 立的規則</a><a href="../../features/segments/segment-builder.md"></a>。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>另請參閱「 <a href="../../reference/bulk-management-tools/bulk-rules.md"> 建立或更新特徵規則和區段規則」</a>。 </p> </td> 
+   <td colname="col2"> <p>用於收集資料的實際特徵或區段規則。 大量請求會傳回在 <span class="keyword"> Audience Manager中使用特徵規則產生器</span> ，或區段規則產生器建 <a href="../../features/traits/about-trait-builder.md"> 立的規則</a><a href="../../features/segments/segment-builder.md"></a>。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>See also, <a href="../../reference/bulk-management-tools/bulk-rules.md"> Create or Update Trait Rules and Segment Rules</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
