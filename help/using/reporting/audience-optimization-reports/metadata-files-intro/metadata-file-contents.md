@@ -5,8 +5,12 @@ seo-title: 中繼資料檔案的內容格式
 solution: Audience Manager
 title: 中繼資料檔案的內容格式
 uuid: 9ba44738-3e17-40c7-9e8c-5abd8361e16d
+feature: log files
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +23,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 下列語法定義中繼資料檔案中格式正確的內容結構。 Note, *italics* indicates a variable placeholder.
 
-**** 語法： 內 *容ID* |名 *稱* | *-1*
+**語法：**  *內容ID* |名 *稱* | *-1*
 
 <!--In the contents syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file name](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md). These 2 variables seem similar, but they represent different things. In the file name, the parent ID corresponds to a category like "campaign" (ID 1), "placement" (ID 3), or "tactic" (ID 9), etc. In the file body:-->
 
@@ -31,7 +35,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 **使用^a（control-A或ASCII 001）分隔檔案項目**
 
-使 `^a` 用（control-A或ASCII 001）來分隔中繼資料檔案中的內容。 由於這些字元是非列印字元，上述語法範例只會顯示垂直號"|"以供顯示。
+使 `^a` 用（control-A或ASCII 001）來分隔中繼資料檔案中的內容。 由於這些字元是非列印字元，上述語法範例只會顯示垂直號&quot;|&quot;以供顯示。
 
 如有需要，您可下載範例檔 [案- 20181105_0_1](assets/20181105_0_1.zip)。 將它解壓縮並在您選擇的編輯器中編輯，並根據實際的中繼資料內容進行調整，因為它已包含必要的分隔字元。
 
@@ -45,7 +49,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 **Campaign** 
 
-在此範例中，檔案標題為20180921_0_1，檔案中的三欄為：促銷活動ID、名稱和父ID。
+在此範例中，檔案標題為20180921_0_1，檔案中的三欄為： 促銷活動ID、名稱和父ID。
 
 <!--Let's say you want to populate the creative drop down menu with creative names from a particular campaign. In this case, your metadata file name would include ID 1 (campaign) and ID 2 (creative). Following the content syntax, your metadata file would contain the creative ID, creative name, and actual campaign ID.-->
 
@@ -60,7 +64,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 **創意**
 
-在此範例中，檔案標題為20180827_0_2，檔案中的三欄為：Creative ID、Name和Parent ID。
+在此範例中，檔案標題為20180827_0_2，檔案中的三欄為： Creative ID、Name和Parent ID。
 
 ```
 //File Title
@@ -73,7 +77,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 **網站**
 
-在此範例中，檔案標題為20180921_0_5，檔案中的三欄為：網站ID、名稱和父ID。
+在此範例中，檔案標題為20180921_0_5，檔案中的三欄為： 網站ID、名稱和父ID。
 
 ```
 //File Title
