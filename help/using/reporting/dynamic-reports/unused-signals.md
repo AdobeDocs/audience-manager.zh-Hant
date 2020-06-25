@@ -1,23 +1,27 @@
 ---
-description: 此報表會傳回清單上收集並傳送至Audience manager的所有未使用資訊的頻率計數。
-seo-description: 此報表會傳回清單上收集並傳送至Audience manager的所有未使用資訊的頻率計數。
-seo-title: 未使用的信號報告
+description: 此報表會傳回清單上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。
+seo-description: 此報表會傳回清單上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。
+seo-title: 未使用的訊號報表
 solution: Audience Manager
-title: 未使用的信號報告
+title: 未使用的訊號報表
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: dcc44161df89b44ca1a234070c4afbb0210dc723
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '613'
+ht-degree: 2%
 
 ---
 
 
-# 未使用的信號報告{#unused-signals-report}
+# 未使用的訊號報表{#unused-signals-report}
 
-此報表會傳回清單上收集並傳送至Audience manager的所有未使用資訊的頻率計數。 若要存取此報表，請導覽至「 **分析>對象報表>其他報表>未使用的信號」**。
+此報表會傳回清單上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。 若要存取此報表，請導覽至「 **分析>對象報表>其他報表>未使用的信號」**。
 
 >[!NOTE]
 >
->如果您看到訊息「您無權存取觀眾報表」，請連絡您的Audience manager顧問或客戶服務為您布建報表。
+>如果您看到訊息「您無權存取觀眾報表」，請連絡您的Audience Manager顧問或客戶服務為您布建報表。
 
 ![未使用訊號報表的螢幕擷取](/help/using/reporting/dynamic-reports/assets/unused-signals.png)
 
@@ -49,7 +53,7 @@ source-git-commit: dcc44161df89b44ca1a234070c4afbb0210dc723
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>建立新特徵</b> </p> </td> 
-   <td colname="col2"> <p>檢視報表，查看在特定索引鍵上傳入的新值。 您可能想要根據這些新值建立新的索引鍵值配對。 </p> <p> <p>注意： 每兩週檢查報表中是否有經常變更的值（例如，顯示、促銷活動、名人等）。 </p> </p> </td> 
+   <td colname="col2"> <p>檢視報表，查看在特定索引鍵上傳入的新值。 您可能想要根據這些新值建立新的索引鍵值配對。 </p> <p> <p>注意：  每兩週檢查報表中是否有經常變更的值（例如，顯示、促銷活動、名人等）。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>查找未映射值</b> </p> </td> 
@@ -71,7 +75,7 @@ source-git-commit: dcc44161df89b44ca1a234070c4afbb0210dc723
 
 * T(v=1 [!UICONTROL AND NOT] (a=23))
 * T(v=1 [!UICONTROL AND] (a!=23))
-* 兩個範例都顯示包含兩個索引鍵值對v和a的特徵。第一個表達式可轉換為：特徵包含鍵v，值為1, [!UICONTROL AND NOT] 鍵a，值為23。 第二個表達式包含鍵v，其值為1, [!UICONTROL AND] 鍵a為23 [!UICONTROL NOT EQUAL] 。
+* 兩個範例都顯示包含兩個索引鍵值對v和a的特徵。 第一個表達式可轉換為： 特徵包含鍵v，值為1, [!UICONTROL AND NOT] 鍵a，值為23。 第二個表達式包含鍵v，其值為1, [!UICONTROL AND] 鍵a為23 [!UICONTROL NOT EQUAL] 。
 * 考慮到上述兩個不同的運算式，假設您在中搜尋傳入索引鍵a的值（其值與23不同），您只會在第一種情況下取得結果，因為索引鍵的值未傳送AT ALL。 [!UICONTROL Unused Signals Report] 在第二種情況下，會傳送不同於23的值，因此鍵a不會未使用。
 
 ## 大量特徵建立
