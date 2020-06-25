@@ -5,9 +5,10 @@ seo-title: 支援的瀏覽器
 solution: Audience Manager
 title: 支援的瀏覽器
 uuid: dffecdb5-d94d-4001-8f2a-9d1d77ce2213
-translation-type: ht
-source-git-commit: 662ddd04bde203a35440669ac9677eb067e136a1
-workflow-type: ht
+feature: reference
+translation-type: tm+mt
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%
 
