@@ -4,8 +4,12 @@ seo-description: 包含有關係統功能、資料整合和說明檔案的技術
 seo-title: 參考
 solution: Audience Manager
 title: 參考
+feature: reference
 translation-type: tm+mt
-source-git-commit: f39c8fbb8f301c3068cd6fab47def9f8e3308cad
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 32%
 
 ---
 
@@ -18,5 +22,5 @@ source-git-commit: f39c8fbb8f301c3068cd6fab47def9f8e3308cad
 * [系統元件](/help/using/reference/system-components/components-overview.md)
 * [測試版環境](/help/using/reference/beta-environment.md)
 * [字彙表](/help/using/reference/aam-glossary.md)
-* [Audience Manager中ID的索引](/help/using/reference/ids-in-aam.md)
-* [信號、特徵和區段](/help/using/reference/signal-trait-segment.md)
+* [Audience Manager 內的 ID 索引](/help/using/reference/ids-in-aam.md)
+* [訊號、特徵和區段](/help/using/reference/signal-trait-segment.md)
