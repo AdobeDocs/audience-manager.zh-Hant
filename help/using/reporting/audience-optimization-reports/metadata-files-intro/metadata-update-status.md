@@ -5,8 +5,12 @@ seo-title: 中繼資料檔案的狀態更新
 solution: Audience Manager
 title: 中繼資料檔案的狀態更新
 uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
+feature: log files
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 1%
 
 ---
 
@@ -71,7 +75,7 @@ S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 說明</code> </p> </td> 
+   <td colname="col1"> <p> <code> Description</code> </p> </td> 
    <td colname="col2"> <p>包含處理失敗原因的簡短說明。 處理成功時，此欄位為空。 </p> </td> 
   </tr> 
   <tr> 
@@ -80,26 +84,26 @@ S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>上傳至中繼目錄之中繼資料檔案的MD 5 <code> 校驗</code> 和。 </p> </td> 
+   <td colname="col2"> <p>上傳至您目錄的中繼資料檔案的MD 5校驗 <code> meta</code> 和。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 檔案名稱</code> </p> </td> 
-   <td colname="col2"> <p>上傳至中繼目錄的中繼資料檔案 <code> 名稱</code> 。 </p> </td> 
+   <td colname="col1"> <p> <code> FileName</code> </p> </td> 
+   <td colname="col2"> <p>上傳至您目錄的中繼資料檔案 <code> meta</code> 名稱。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 中繼資料類型</code> </p> </td> 
-   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的子ID為基礎。 </p> <p>請參閱 <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> 中繼資料檔案的命名慣例</a>。 </p> </td> 
+   <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
+   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的子ID為基礎。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 父代</code> </p> </td> 
-   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的父ID為基礎。 </p> <p>請參閱 <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> 中繼資料檔案的命名慣例</a>。 </p> </td> 
+   <td colname="col1"> <p> <code> Parent</code> </p> </td> 
+   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的父ID為基礎。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 狀態</code> </p> </td> 
+   <td colname="col1"> <p> <code> Status</code> </p> </td> 
    <td colname="col2"> <p>傳回2個文字值，說明中繼資料檔案的處理狀態： </p> 
     <ul id="ul_3814EBB6B42B4EB294B1ABA5782190B6"> 
-     <li id="li_92AAECE7E9A44B1193A1D93ABBCE46B0"> <code> 成功</code> </li> 
-     <li id="li_3109F4E254374117A89CB989F221CB18"> <code> 失敗</code> </li> 
+     <li id="li_92AAECE7E9A44B1193A1D93ABBCE46B0"> <code> SUCCESS</code> </li> 
+     <li id="li_3109F4E254374117A89CB989F221CB18"> <code> FAILURE</code> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -116,15 +120,15 @@ S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 日</code> </p> </td> 
-   <td colname="col2"> <p>yyyy-mm-dd格式 <code><i>的檔案處理日期</i></code> 。 </p> </td> 
+   <td colname="col1"> <p> <code> Day</code> </p> </td> 
+   <td colname="col2"> <p>格式檔案處理 <code><i>yyyy-mm-dd</i></code> 日期。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> GlobalStatus</code> </p> </td> 
    <td colname="col2"> <p>傳回2個文字值，說明整天所有檔案的處理狀態： </p> 
     <ul id="ul_3FC092CA043A486C9C79FECF71FAF8FB"> 
-     <li id="li_754B32D8267D44BBBD6EC354C459C566"> <code> 成功</code> </li> 
-     <li id="li_8B64E39C80424AC2B95DF9B53D62864E"> <code> 失敗</code> </li> 
+     <li id="li_754B32D8267D44BBBD6EC354C459C566"> <code> SUCCESS</code> </li> 
+     <li id="li_8B64E39C80424AC2B95DF9B53D62864E"> <code> FAILURE</code> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
