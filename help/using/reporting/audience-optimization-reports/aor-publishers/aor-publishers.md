@@ -1,19 +1,23 @@
 ---
-description: Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層級的促銷活動績效資料與Audience manager量度結合，以提供受眾最佳化和獲利機會。
-seo-description: Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層級的促銷活動績效資料與Audience manager量度結合，以提供受眾最佳化和獲利機會。
+description: Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層級的促銷活動績效資料與Audience Manager量度結合，以提供受眾最佳化和獲利機會。
+seo-description: Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層級的促銷活動績效資料與Audience Manager量度結合，以提供受眾最佳化和獲利機會。
 seo-title: 發佈者適用的 Audience Optimization
 solution: Audience Manager
 title: 發佈者適用的 Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ece4ebffe1
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 36%
 
 ---
 
 
 # 發佈者適用的 Audience Optimization{#audience-optimization-for-publishers}
 
-Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層級的促銷活動績效資料與Audience manager量度結合，以提供受眾最佳化和獲利機會。
+Audience Optimization for Publishers 可針對您擁有且運作之內容，協助您鑑別 Audience Manager 區段的效能潛力。這些報告將記錄層級的促銷活動績效資料與Audience Manager量度結合，以提供受眾最佳化和獲利機會。
 
 ## 概述 {#aor-overview}
 
@@ -21,15 +25,15 @@ Audience Optimization for Publishers 可針對您擁有且運作之內容，協�
 
 ## 中繼資料 {#metadata}
 
-報表中顯示的效能資訊會從您的例項匯 [!UICONTROL DFP] 入。 您必須傳送中繼資料檔案給我們，好讓我們可以在報表中新增描述性好記的名稱，而非ID。 將DFP資料檔 [案匯入Audience manager的步驟](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 3說明如何傳送中繼資料。
+報表中顯示的效能資訊會從您的例項匯 [!UICONTROL DFP] 入。 您必須傳送中繼資料檔案給我們，好讓我們可以在報表中新增描述性好記的名稱，而非ID。 將DFP資料檔 [案匯入Audience Manager的步驟](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 3說明如何傳送中繼資料。
 
 ## 可用報表 {#available-reports}
 
 [!UICONTROL Audience Optimization for Publishers] 提供6種不同的檢視，以針對以發行者為中心的商業目標，針對其中建立的細分， [!DNL Audience Manager] 提供層級和伺服器效能。
 
-+ [區段績效報表](publisher-segment-performance.md)
-+ [區段趨勢報表](publisher-segment-trends.md)
-+ [最常未使用的特性](publisher-top-unused-traits.md)
++ [區段成效報表](publisher-segment-performance.md)
++ [區段區段報表](publisher-segment-trends.md)
++ [最常見的未使用特徵](publisher-top-unused-traits.md)
 + [廣告單位重疊](publisher-ad-unit-overlap.md)
-+ [區段到廣告單位重疊](publisher-segment-ad-unit-overlap.md)
-+ [獨特的使用者觸及面](publisher-unique-reach.md)
++ [區段至廣告單位重疊](publisher-segment-ad-unit-overlap.md)
++ [不重複使用者觸及](publisher-unique-reach.md)
