@@ -1,17 +1,21 @@
 ---
 description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，並在「對象最佳化」報表和可操作的記錄檔中使用。 根據本節中的規格格式化資料檔案。
 seo-description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，並在「對象最佳化」報表和可操作的記錄檔中使用。 根據本節中的規格格式化資料檔案。
-seo-title: 對象最佳化報告的資料檔案和可操作的記錄檔
+seo-title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 solution: Audience Manager
-title: 對象最佳化報告的資料檔案和可操作的記錄檔
+title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
+feature: log files
 translation-type: tm+mt
-source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 5%
 
 ---
 
 
-# 對象最佳化報告的資料檔案和可操作的記錄檔 {#data-files-for-audience-optimization-reports}
+# 受眾最佳化報表的資料檔案和可操作的記錄檔 {#data-files-for-audience-optimization-reports}
 
 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，以便在「對象最佳化報表」中檢視該資料 [，並透過可操作的記錄檔](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) 案使用資料建立特徵 [](/help/using/integration/media-data-integration/actionable-log-files.md)。 依照本節中的這些規格設定資料檔案的格式。
 
@@ -21,7 +25,7 @@ source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 
 資料檔案必須隨附中繼資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參 [閱中繼資料檔案的概述和對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
 
-## 資料檔案的命名慣例 {#naming-conventions}
+## Naming Conventions for Data Files {#naming-conventions}
 
 下列語法定義格式良好的資料檔案名稱的結構。 請注意， *斜體* 表示變數預留位置會依檔案內容而改變。
 
@@ -39,11 +43,11 @@ source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
 * 按一下資料： <pre>clicks_<i>yyyymmdd</i>.gz</code></pre>
 * 轉換資料： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
 
-## 資料檔案的內容格式 {#content-format}
+## Content Format for Data Files {#content-format}
 
 下列語法定義格式良好的資料檔案的內容結構。 注意， *斜體* 表示變數預留位置，並以實際資料檔案中的標籤取代。
 
-**語法:** <pre><i>標題標籤1</i> |標 <i>題標籤2</i> ...標 <i>題標籤n</i> |版 <i>本</i></code></pre>
+**語法:** <pre><i>標題標籤1</i> |標 <i>題標籤2</i> ... <i>標題標籤n</i> |版 <i>本</i></code></pre>
 
 在檔案內容中：
 
@@ -115,7 +119,7 @@ source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
   </tr> 
   <tr> 
    <td colname="col1"> <p>收入 </p> </td> 
-   <td colname="col2"> <p>購買或其他轉換金額。 資料類型：漂浮。 </p> <p> <i>僅限轉換資料檔案。</i> </p> </td> 
+   <td colname="col2"> <p>購買或其他轉換金額。 資料類型： 漂浮。 </p> <p> <i>僅限轉換資料檔案。</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>其他資料 </p> </td> 
@@ -127,7 +131,7 @@ source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
      <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: 曝光數 </li> 
      <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: 按一下 </li> 
-     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>:非屬性或未知 </li> 
+     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>: 非屬性或未知 </li> 
     </ul> <p> <i>僅限轉換資料檔案。</i> </p> </td> 
   </tr> 
   <tr> 
@@ -137,13 +141,13 @@ source-git-commit: 776aaad0c063a870ef804d166292228f83575f48
  </tbody> 
 </table>
 
-## 資料檔案的傳送方法 {#delivery-methods}
+## Delivery Methods for Data Files {#delivery-methods}
 
 將您的印象、點按或轉換資料檔案上傳至您帳戶的Amazon S3目 [!DNL Audience Manager] 錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
 
 >[!IMPORTANT]
 >
-> 請連絡您的Audience manager顧問或客戶服務，以開始並設 [!DNL Amazon S3] 定資料檔案的目錄。
+> 請連絡您的Audience Manager顧問或客戶服務，以開始並設 [!DNL Amazon S3] 定資料檔案的目錄。
 
 **傳送路徑語法和範例**
 
