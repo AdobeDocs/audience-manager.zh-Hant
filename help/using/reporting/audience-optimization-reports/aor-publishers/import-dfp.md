@@ -5,8 +5,12 @@ seo-title: 將 DFP 資料檔案匯入 Audience Manager
 solution: Audience Manager
 title: 將 DFP 資料檔案匯入 Audience Manager
 uuid: c685f34f-3e50-4c4b-99fa-d8bbafe0b268
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9f091fa765e937fb47b3328d8f5f2dab24a85040
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 21%
 
 ---
 
@@ -53,14 +57,14 @@ source-git-commit: 9f091fa765e937fb47b3328d8f5f2dab24a85040
    <td colname="col2"> <p>您的DFP管理員會建立： </p> <p> 
      <ol id="ol_FCFA9B11CFF948A488DF9CB298FC04C4"> 
       <li id="li_BC946EDCC3324578AEB64EDDA55B5ACA">用於將DFP記錄檔擷取至 <span class="keyword"> Audience Manager的服務帳戶</span>。 </li> 
-      <li id="li_6B2FC7D73A3246419E55C004E17ACA25">新認證。 <p>注意： 這可能需要此專案專屬的唯一電子郵件地址，並且在布建Google儲存貯體存取權時會使用。 </p> </li> 
+      <li id="li_6B2FC7D73A3246419E55C004E17ACA25">新認證。 <p>注意：  這可能需要此專案專屬的唯一電子郵件地址，並且在布建Google儲存貯體存取權時會使用。 </p> </li> 
       <li id="li_95444B9FD1B34659A9634814B262A681">私密金鑰（以JSON為基礎的憑證） </li> 
      </ol> </p> </td> 
    <td colname="col3"> <p>您的DFP管理員 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>步驟 3 </p> </td> 
-   <td colname="col2"> <p>您的DFP管理員授與服務帳戶的API存取權。 此步驟可讓您存取中繼資料，以描述維度（行項目、訂單、創作元素）。 <p>注意： 使用您在步驟2中設定的服務帳戶電子郵件存取權，以授與存取API的權限。 </p> </p> </td> 
+   <td colname="col2"> <p>您的DFP管理員授與服務帳戶的API存取權。 此步驟可讓您存取中繼資料，以描述維度（行項目、訂單、創作元素）。 <p>注意：  使用您在步驟2中設定的服務帳戶電子郵件存取權，以授與存取API的權限。 </p> </p> </td> 
    <td colname="col3"> <p>您的DFP管理員 </p> </td> 
   </tr> 
   <tr> 
