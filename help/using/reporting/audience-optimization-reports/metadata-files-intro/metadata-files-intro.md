@@ -5,8 +5,12 @@ seo-title: 記錄資料和中繼資料檔案
 solution: Audience Manager
 title: 記錄資料和中繼資料檔案
 uuid: 80aa4bc3-c660-4e65-8c22-2ddbb7bddd4f
+feature: log files
 translation-type: tm+mt
-source-git-commit: 5838eb61158cce10aa02b9286357a4f4abcbcce8
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 23%
 
 ---
 
@@ -16,7 +20,7 @@ source-git-commit: 5838eb61158cce10aa02b9286357a4f4abcbcce8
 資料檔案包含曝光、點按或轉換資料，您可用於：
 
 * [可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)
-* [受眾最佳化報告](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
+* [受眾最佳化報表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
 中繼資料檔案包含人類可讀的名稱，這些名稱對應於各種報表選項和功能表項目。 依照本節中的規格，格式化您的資料和中繼資料檔案。
 
@@ -24,7 +28,7 @@ source-git-commit: 5838eb61158cce10aa02b9286357a4f4abcbcce8
 >
 >若要使用中繼資料檔案，您的事件呼叫必 *須包含* 「概述與映射」 [區段中所列的所有參數](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md) 。
 
-* [對象最佳化報告的資料檔案和可操作的記錄檔](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+* [受眾最佳化報表的資料檔案和可操作的記錄檔](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 * [中繼資料檔案的概述與對應](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
 * [中繼資料檔案的命名慣例](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)
 * [中繼資料檔案的內容格式](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md)
