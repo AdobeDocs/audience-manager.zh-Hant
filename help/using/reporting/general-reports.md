@@ -3,15 +3,19 @@ description: 「一般」報表會傳回特徵、區段和目的地的效能資�
 seo-description: Audience Manager中的「一般」報表會傳回特徵、區段和目的地的效能資料。
 seo-title: Audience Manager中的一般報表
 solution: Audience Manager
-title: 一般報告
+title: 一般報表
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
+feature: general & trend reports
 translation-type: tm+mt
-source-git-commit: 723c75e8946c42779b4c27727ff9e6398b5fc9b1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
 
-# 一般報告{#general-reports}
+# 一般報表{#general-reports}
 
 報表 [!UICONTROL General] 會傳回特徵、區段和目的地的效能資料。
 
@@ -59,7 +63,7 @@ t_run_general_report.xml
  -->
 
 1. 在控制面 **[!UICONTROL Analytics]** 板中，按一下 **[!UICONTROL General Reports]**。
-1. 從下拉 **[!UICONTROL Report Type]** 式清單中，選取所要的類型：特徵、區段或目標。
+1. 從下拉 **[!UICONTROL Report Type]** 式清單中，選取所要的類型： 特徵、區段或目標。
 1. *條件* ：按一下日期方塊以顯示日曆，然後如果您想要指定非今天的日期，請選取報表的結束日期。
 1. 依名稱或ID搜尋特徵、區段或目標。
 1. 從資料夾清單中，將您要報告的特徵、區段或目標拖放至右 [!UICONTROL Selections] 側的面板。
@@ -134,7 +138,7 @@ The illustration below shows the results of running a general report for the Tra
 
 >[!NOTE]
 >
->選取 **[!UICONTROL Include Destination Mappings]** 可查看已啟用目標的區段人口劃分。
+>選取 **[!UICONTROL Include Destination Mappings]** 可查看已啟用目的地的區段人口劃分。
 
 下圖顯示執行區段報表類型一般報表的結果。
 
