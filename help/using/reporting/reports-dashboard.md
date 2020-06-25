@@ -4,9 +4,13 @@ seo-description: 使用「儀表板」可檢視在指定時間範圍內依特徵
 seo-title: 報表控制面板
 solution: Audience Manager
 title: 報表控制面板
-uuid: 350ee2d-72f7-42a7-916b-60f9a362c5cf
+uuid: 350eee2d-72f7-42a7-916b-60f9a362c5cf
+feature: reporting reference
 translation-type: tm+mt
-source-git-commit: ad4721cd2ff1f4b2b7cb814cbafdef1f59138a26
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +36,7 @@ c_dashboard.xml
 1. 在頂端導覽功能表中，按一下 **[!UICONTROL Dashboard]**。
 2. *可選* ：從下拉式清單(7天、14天（預設值）、30天或60天)中，選取上次報告日期的所需時間範圍。
 
-   視選取的時段而定， &gt;和 [!UICONTROL Largest Traits][!UICONTROL Most Changed Traits][!UICONTROL Largest Segments][!UICONTROL Most Changed Segments] &gt;面板中的Delta變更，會顯示觀眾中獨特訪客在今天結束的時段與相同長度的前一時段之間的變更。 例如，如果您選取「7天」,Delta會比較結束於今天的前7天內的獨特訪客與結束於七天前7天內的獨特訪客。
+   視選取的時段而定，「 >」和「 [!UICONTROL Largest Traits] > [!UICONTROL Most Changed Traits][!UICONTROL Largest Segments][!UICONTROL Most Changed Segments] 」面板中的「增量」變更，會顯示觀眾中獨特訪客在今天結束的時段與相同長度的前一時段之間的變更。 例如，如果您選取「7天」,Delta會比較結束於今天的前7天內的獨特訪客與結束於七天前7天內的獨特訪客。
 
    >[!NOTE]
    >
@@ -48,11 +52,11 @@ c_dashboard.xml
 
 ## 合作夥伴獨特客戶 {#partner-uniques}
 
-檢視所需權限： [!UICONTROL View All Traits]。
+檢視所需權限： [!UICONTROL View All Traits].
 
 ![](assets/partner_uniques.png)
 
-此面板會顯示指定時段內的獨特訪客數。 個別的色彩編碼行代表使用演算法、規則型和已登入特性所擷取的獨特訪客總數和獨特訪客數量。
+此面板會顯示指定時段內的獨特訪客數。 個別的色彩編碼行代表使用演算法、規則型和已登入特徵所擷取的獨特訪客總數和數目。
 
 >[!NOTE]
 >
@@ -60,13 +64,13 @@ c_dashboard.xml
 
 ## 最大特徵／最大變更特徵 {#largest-traits}
 
-檢視所需權限： [!UICONTROL View Traits]。
+檢視所需權限： [!UICONTROL View Traits].
 
 ![](assets/largest_traits.png)
 
 此面板會顯示各種特徵所擷取的獨特訪客數量。
 
-使用下 **[!UICONTROL Show]** 拉式清單來顯示不同類型特徵的相關資訊： [!UICONTROL All Traits]、 [!UICONTROL Algorithmic][!UICONTROL Onboarded]或 [!UICONTROL Rule-Based]。
+使用下 **[!UICONTROL Show]** 拉式清單來顯示不同類型特徵的相關資訊： [!UICONTROL All Traits]、 [!UICONTROL Algorithmic]、 [!UICONTROL Onboarded]或 [!UICONTROL Rule-Based]。
 
 此面板包含下列標籤：
 
@@ -91,7 +95,7 @@ c_dashboard.xml
 
 ## 最大區段／變更最多的區段 {#most-changed-segments}
 
-檢視所需權限： [!UICONTROL View Segments]。
+檢視所需權限： [!UICONTROL View Segments].
 
 ![](assets/largest_segments.png)
 
