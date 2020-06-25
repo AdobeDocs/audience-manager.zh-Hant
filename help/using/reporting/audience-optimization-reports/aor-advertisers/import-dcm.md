@@ -1,17 +1,21 @@
 ---
 description: 設定Google群組，將您的DoubleClick Campaign Manager(DCM)資料檔案匯入Audience Manager。 本節內容摘要了整合流程，並提供您DCM資源的連結，以協助您開始使用。
 seo-description: 設定Google群組，將您的DoubleClick Campaign Manager(DCM)資料檔案匯入Audience Manager。 本節內容摘要了整合流程，並提供您DCM資源的連結，以協助您開始使用。
-seo-title: 將DCM資料檔案匯入Audience Manager
+seo-title: 將 DCM 資料檔案匯入 Audience Manager
 solution: Audience Manager
-title: 將DCM資料檔案匯入Audience Manager
+title: 將 DCM 資料檔案匯入 Audience Manager
 uuid: 3578cfe1-6d30-4a73-ab75-8d272bebcd60
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 8%
 
 ---
 
 
-# Import DCM Data Files Into Audience Manager {#import-dcm-data-files-into-audience-manager}
+# 將 DCM 資料檔案匯入 Audience Manager {#import-dcm-data-files-into-audience-manager}
 
 設定Google群組，將您的DoubleClick Campaign Manager(DCM)資料檔案匯入Audience Manager。 本節內容摘要了整合流程，並提供您DCM資源的連結，以協助您開始使用。
 
@@ -19,7 +23,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 DCM 是 [!DNL Google] 取代 [!DNL DoubleClick for Advertisers] (DFA) 的替代方案。DCM 的客戶可以在 [!DNL Audience Manager] 中匯入、檢視和處理資料，功用與 DFA 類似。但無 [!DNL Audience Manager] 法直接存取和匯入您 [!UICONTROL Data Transfer] 的和 [!UICONTROL Match Table] 檔案。 若要匯入這些檔案，須由客戶自行為之。
 
-不過，DoubleClick促銷活動管理員說明中已詳 [細說明設定程式](https://support.google.com/dcm/partner/answer/2941575?hl=en&ref_topic=6107456)。 此外，您也可以檢視下列步驟以開始使用。
+不過，DoubleClick促銷活動管理員說明中已詳 [細說明設定程式](https://support.google.com/dcm/partner/answer/2941575?hl=en&amp;ref_topic=6107456)。 此外，您也可以檢視下列步驟以開始使用。
 
 >[!CAUTION]
 >
@@ -31,15 +35,15 @@ DCM 是 [!DNL Google] 取代 [!DNL DoubleClick for Advertisers] (DFA) 的替代�
 
 ## 步驟
 
-1. [建立群組](https://support.google.com/dcm/partner/answer/3370419?hl=en&ref_topic=6107456).
+1. [建立群組](https://support.google.com/dcm/partner/answer/3370419?hl=en&amp;ref_topic=6107456).
 
    群組可控制對DCM資料的存取。 最終，您會邀請並加入 [!DNL Audience Manager] 此群組。
 
-1. [驗證您的Google雲端儲存空間狀態](https://support.google.com/dcm/partner/answer/3370481?hl=en&ref_topic=6107456)。
+1. [驗證您的Google雲端儲存空間狀態](https://support.google.com/dcm/partner/answer/3370481?hl=en&amp;ref_topic=6107456)。
 
    Google雲端儲存區包含包含您和的資料儲 [!UICONTROL Data Transfer] 存貯體 [!UICONTROL Match Tables]。 您需要設定儲存貯體，或確保您的新群組擁有現有資料儲存貯體的存取權。
 
-1. [取得資料檔案URL](https://support.google.com/dcm/partner/answer/3370482?hl=en&ref_topic=6107456)。
+1. [取得資料檔案URL](https://support.google.com/dcm/partner/answer/3370482?hl=en&amp;ref_topic=6107456)。
 
    與您的DCM客戶經理或平台解決方案顧問合作。 他們會提供您資料檔案的URL。 [!DNL Google] 可能會在未來版本中變更儲存貯體和檔案名稱的格式。 同樣地，請與您的DCM客戶經理合作，確定您使用的格式正確。
 
@@ -58,7 +62,7 @@ DCM 是 [!DNL Google] 取代 [!DNL DoubleClick for Advertisers] (DFA) 的替代�
 
 1. 邀 [!DNL Audience Manager] 請加入群組。
 
-   建立群組並賦予其存取資料貯體的權限後，請邀 [!DNL Audience Manager] 請加入群組。 傳送邀請電子郵件至DFA-AAM@adobe.com。 請務必包含步驟3的資料檔案URL。 我們的內部團隊會與您合作，在接受邀請後確認存取權。 1.在用戶介面中為DCM資料設定兩個 [!DNL Audience Manager] 資料源。
+   建立群組並賦予其存取資料貯體的權限後，請邀 [!DNL Audience Manager] 請加入群組。 傳送邀請電子郵件至DFA-AAM@adobe.com。 請務必包含步驟3的資料檔案URL。 我們的內部團隊會與您合作，在接受邀請後確認存取權。 1. 在用戶介面中為DCM資料設定兩個 [!DNL Audience Manager] 資料源。
 
    命名資料來源 `Advertiser Analytics: DCM Platform` 和 `Advertiser Analytics: AAM+DCM Platform`。 在「建 [立資料來源](../../../features/manage-datasources.md#create-data-source) 」工作流程中，將ID類型設為 `Cookie`。 與內部團隊共用兩個新資料來源的ID。
 
