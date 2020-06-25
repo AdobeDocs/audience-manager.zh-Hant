@@ -5,8 +5,12 @@ seo-title: 程式碼和文字元素的樣式慣例
 solution: Audience Manager
 title: 程式碼和文字元素的樣式慣例
 uuid: 7605604d-bc76-4063-ba92-52c88bd69e3c
+feature: reference
 translation-type: tm+mt
-source-git-commit: 8e4afebaa2035fca6f8535314be5f072f26e0217
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 10%
 
 ---
 
@@ -24,11 +28,11 @@ source-git-commit: 8e4afebaa2035fca6f8535314be5f072f26e0217
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code> 變 <i>數</i></code> </p> </td> 
+   <td colname="col1"> <p> <code> <i>variable</i> </code> </p> </td> 
    <td colname="col2"> <p>變數會以斜體 <i>顯示</i>。 以適當的值取代變數名稱。 </p> <p>為了視覺清晰度，有時變數和其他程式碼元素會出現在&lt; &gt;方括弧之間。 您不需要在程式碼中使用這些符號。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> [可選]</code> </p> </td> 
+   <td colname="col1"> <p> <code> [optional]</code> </p> </td> 
    <td colname="col2"> <p>方括弧中的項目為可選項目。 </p> </td> 
   </tr> 
   <tr> 
@@ -36,7 +40,7 @@ source-git-commit: 8e4afebaa2035fca6f8535314be5f072f26e0217
    <td colname="col2"> <p>括弧中的項目表示布林 <span class="wintitle"> 值OR</span> 選項。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> 常值</code> </p> </td> 
+   <td colname="col1"> <p> <code> literal</code> </p> </td> 
    <td colname="col2"> <p>如所示，完全包含文字或程式碼。 </p> </td> 
   </tr> 
   <tr> 
