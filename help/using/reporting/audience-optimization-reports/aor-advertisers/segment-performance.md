@@ -1,17 +1,21 @@
 ---
 description: 「區段績效」報表會依印象和轉換率比較映射和未映射的區段。 映射區段是您建立並傳送至目的地以進行定位的區段。 未映射區段是您已建立但尚未傳送至目標的區段。 比較報表內和報表之間的這些不同區段類型，可協助您最佳化現有的促銷活動，並找出您可能想要傳送至目的地以進行定位的被忽視區段。
-seo-description: 「區段績效」報表會依印象和轉換率比較映射和未映射的區段。 映射區段是您建立並傳送至目的地以進行定位的區段。 未映射區段是您已建立但尚未傳送至目標的區段。 比較報表內和報表之間的這些不同區段類型，可協助您最佳化現有的促銷活動，並找出您可能想傳送至目的地以進行定位的被忽視區段。
-seo-title: 區段績效報表
+seo-description: 「區段績效」報表會依印象和轉換率比較映射和未映射的區段。 映射區段是您建立並傳送至目的地以進行定位的區段。 未映射區段是您已建立但尚未傳送至目標的區段。 比較報表內和報表之間的這些不同區段類型，可協助您最佳化現有的促銷活動，並找出您可能想要傳送至目的地以進行定位的被忽視區段。
+seo-title: 區段成效報表
 solution: Audience Manager
-title: 區段績效報表
+title: 區段成效報表
 uuid: 5156a4c7-831d-4a95-a1be-eb516f0d91b7
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: ad4721cd2ff1f4b2b7cb814cbafdef1f59138a26
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '643'
+ht-degree: 1%
 
 ---
 
 
-# 區段績效報表{#segment-performance-report}
+# 區段成效報表{#segment-performance-report}
 
 報表 [!UICONTROL Segment Performance] 會依印象和轉換率比較映射和未映射的區段。 映射區段是您建立並傳送至目的地以進行定位的區段。 未映射區段是您已建立但尚未傳送至目標的區段。 比較報表內和報表之間的這些不同區段類型，可協助您最佳化現有的促銷活動，並找出您可能想傳送至目的地以進行定位的被忽視區段。
 
