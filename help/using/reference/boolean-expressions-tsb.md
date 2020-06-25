@@ -1,19 +1,23 @@
 ---
-description: 本文說明Audience manager特徵和區段工具如何使用布林運算式AND、OR和NOT。
-seo-description: 本文說明Audience manager特徵和區段工具如何使用布林運算式AND、OR和NOT。
+description: 本文說明Audience Manager特徵和區段工具如何使用布林運算式AND、OR和NOT。
+seo-description: 本文說明Audience Manager特徵和區段工具如何使用布林運算式AND、OR和NOT。
 seo-title: 特徵和區段產生器中的布林運算式
 solution: Audience Manager
 title: 特徵和區段產生器中的布林運算式
 uuid: 14f02d3f-4c84-41fe-bc91-b34f0d49574a
+feature: reference
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 4%
 
 ---
 
 
 # 特徵和區段產生器中的布林運算式{#boolean-expressions-in-trait-and-segment-builder}
 
-本文說明Audience manager特徵和區段工具如何使用布林運算式AND、OR和NOT。
+本文說明Audience Manager特徵和區段工具如何使用布林運算式AND、OR和NOT。
 
 <!-- 
 
@@ -31,7 +35,7 @@ c_tb_boolean.xml
 
 >[!NOTE]
 >
->運 [!UICONTROL NOT] 算子使用默示的"and"條件，有時會寫成 [!UICONTROL AND NOT]。
+>運 [!UICONTROL NOT] 算子使用默示的&quot;and&quot;條件，有時會寫成 [!UICONTROL AND NOT]。
 
 **如何在特徵和區段產生器中使用布林運算式**
 
@@ -47,7 +51,7 @@ c_tb_boolean.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b><span class="wintitle"> AND</span></b> </p> </td> 
+   <td colname="col1"> <p><b><span class="wintitle"> 和</span></b> </p> </td> 
    <td colname="col2"> <p>縮小重點受眾資格要求。 </p> </td> 
    <td colname="col3"> <p>使用 <i>者必須</i> 屬於所有指定的特徵或區段。 </p> </td> 
   </tr> 
@@ -64,15 +68,15 @@ c_tb_boolean.xml
  </tbody> 
 </table>
 
-**[!UICONTROL AND]使用案例範例**
+**[!UICONTROL AND]使用案例範例&#x200B;**
 
-當您 [!UICONTROL AND] 有輕鬆列舉特徵會籍要求時，運算子很實用。 例如，假設您需要建立「昂貴的相機購物者」的觀眾。使用像素模型時，您必須在頁面上建立並放置相機的像素和數值價格值。 相反地，您可運用特性來套用布林運算子來處理這兩種條件(相機 [!UICONTROL AND] 價格)。 如此，只需較少的HTTP呼叫，即可有效收集資料，進而有助於保留您網站上的使用者體驗。
+當您 [!UICONTROL AND] 有輕鬆列舉特徵會籍要求時，運算子很實用。 例如，假設您需要建立「昂貴的相機購物者」的觀眾。 使用像素模型時，您必須在頁面上建立並放置相機的像素和數值價格值。 相反地，您可運用特性來套用布林運算子來處理這兩種條件(相機 [!UICONTROL AND] 價格)。 如此，只需較少的HTTP呼叫，即可有效收集資料，進而有助於保留您網站上的使用者體驗。
 
-**[!UICONTROL OR]使用案例範例**
+**[!UICONTROL OR]使用案例範例&#x200B;**
 
 當您 [!UICONTROL OR] 想要建立具有廣泛受眾資格要求的訊號時，運算子十分有用。 如果您有數個特徵或區段資格要求，當您的 [!UICONTROL OR] 網站訪客顯示任何這些特徵時，運算 *子* 會評估為true。 [!UICONTROL OR] 當您想要快速建立廣大合格網站訪客的讀者群時，可能最有用。
 
-**[!UICONTROL AND NOT]使用案例範例**
+**[!UICONTROL AND NOT]使用案例範例&#x200B;**
 
 當 [!UICONTROL AND NOT] 透過排除（而非包含）來定義觀眾時，運算 *子就很* 有用 **。 例如，假設您正在進行銷售，並想將訪客細分為只查看完整價格項目的客戶。 如果訪客未看到銷售價格項目，則不必為所有符合資格的完整或銷售價格項目建立 *信號* 清單。 這在管理上很有效，因為相較於以完整價格提供的產品，您通常的售價項目較少。 使用布林值 [!UICONTROL NOT]時，訪 *客不得顯示* 銷售訊號，以取得全價觀眾會籍。 相反地， [!UICONTROL AND NOT] 使用案例則 [!UICONTROL AND] 反其道而行之，說明如何透過包含（即，根據2個明確指明的訊號符合資格的訪客）來判斷觀眾成員資格。
 
