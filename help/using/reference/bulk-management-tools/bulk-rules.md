@@ -5,8 +5,12 @@ seo-title: 建立或更新特徵規則和區段規則
 solution: Audience Manager
 title: 建立或更新特徵規則和區段規則
 uuid: bdd5f8f1-bb83-4844-b681-654e45ace3e1
+feature: baaam
 translation-type: tm+mt
-source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 10%
 
 ---
 
@@ -56,5 +60,5 @@ source-git-commit: 8cc3d9d629536c48b7013ffede16c0b112704c89
 * [在特徵產生器中使用比較運算子](../../features/traits/trait-comparison-operators.md)
 * [操作順序](../../features/traits/trait-operator-precedence.md)
 * [關鍵變數的前置詞要求](../../features/traits/trait-variable-prefixes.md)
-* [具有布林運算子和比較運算子的範例運算式](../../features/traits/trait-expression-samples.md)
+* [使用布林值和比較運算子的運算式範例](../../features/traits/trait-expression-samples.md)
 
