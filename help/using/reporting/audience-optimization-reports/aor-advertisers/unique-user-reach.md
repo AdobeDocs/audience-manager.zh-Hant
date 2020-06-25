@@ -1,17 +1,21 @@
 ---
 description: 「獨特使用者觸及」報表會傳回泡泡圖中的資料。 每個泡泡的大小與所選維度的獨特使用者人數成正比。 較大的泡泡表明，比較小的泡泡更大的覆蓋面。 「不重複使用者觸及」報表可協助您尋找廣告商、品牌、促銷活動、創意、位置或網站，以針對目標使用者提供最廣泛的觸及面。
 seo-description: 「獨特使用者觸及」報表會傳回泡泡圖中的資料。 每個泡泡的大小與所選維度的獨特使用者人數成正比。 較大的泡泡表明，比較小的泡泡更大的覆蓋面。 「不重複使用者觸及」報表可協助您尋找廣告商、品牌、促銷活動、創意、位置或網站，以針對目標使用者提供最廣泛的觸及面。
-seo-title: 獨特的使用者觸及面
+seo-title: 不重複使用者觸及
 solution: Audience Manager
-title: 獨特的使用者觸及面
+title: 不重複使用者觸及
 uuid: 897245ab-af6e-42a0-b653-96703b65c764
+feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: ccff7a0337d59a2e2c65c91076a1ff38814a0dd1
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 5%
 
 ---
 
 
-# 獨特的使用者觸及面{#unique-user-reach}
+# 不重複使用者觸及{#unique-user-reach}
 
 「獨特使用者觸及」報表會傳回泡泡圖中的資料。 每個泡泡的大小與所選維度的獨特使用者人數成正比。 較大的泡泡表明，比較小的泡泡更大的覆蓋面。
 
