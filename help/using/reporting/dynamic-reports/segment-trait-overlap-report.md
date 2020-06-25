@@ -5,8 +5,12 @@ seo-title: 區段至特徵重疊報表
 solution: Audience Manager
 title: 區段至特徵重疊報表
 uuid: a6b3dd21-332e-449f-aa01-2beb47f1794e
+feature: overlap reports
 translation-type: tm+mt
-source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +21,7 @@ source-git-commit: c05541df2d0dfc8753b06eaa8f2baee9bc6c2a16
 
 >[!NOTE]
 >
->Audience manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源中看到區段和特徵](/help/using/features/administration/administration-overview.md) 。
+>Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源中看到區段和特徵](/help/using/features/administration/administration-overview.md) 。
 
 <!-- 
 
@@ -49,9 +53,9 @@ c_compare_s2t.xml
 
  -->
 
-### 比較特徵和區段獨特值：範例
+### 比較特徵和區段獨特值： 範例
 
-乍一看，比較區段與特徵並嘗試從結果中得出結論，似乎不合邏輯。 畢竟，區段和特徵是不同的，因此從不同項目衍生的資料又有何意義？ 但是，在此案例中，我們不會比較特徵和區段，而是在它們之間共用的獨特訪客數量。 共用的獨特訪客計數提供可進行區段與特徵比較的通用值。
+乍一看，比較區段與特徵並嘗試從結果中得出結論，似乎不合邏輯。 畢竟，區段和特徵是不同的，因此從不同項目衍生的資料又有何意義？ 不過，在此案例中，我們不會比較特徵和區段，而是在它們之間共用的獨特訪客數量。 共用的獨特訪客計數提供可進行區段與特徵比較的通用值。
 
 下圖說明特徵與其所屬區段之間的關係。 在此案例中，我們有10位訪客的特徵和1,000位訪客的區段。 他們共用3個獨特訪客。
 
@@ -182,5 +186,5 @@ r_s2t_data_pop.xml
 >* [互動式報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
 >* [說明的報表圖示和工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
 >* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
->* [選取的Audience manager報表中的資料取樣和錯誤率……](../../reporting/report-sampling.md)
->* [重疊報表的CSV檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
+>* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
+>* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
