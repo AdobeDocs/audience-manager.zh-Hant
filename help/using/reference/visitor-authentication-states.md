@@ -2,17 +2,21 @@
 description: Audience Manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
 keywords: dpm.demdex.net
 seo-description: Audience Manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
-seo-title: Audience Manager中的訪客驗證狀態
+seo-title: Audience Manager 中的訪客驗證狀態
 solution: Audience Manager
-title: Audience Manager中的訪客驗證狀態
+title: Audience Manager 中的訪客驗證狀態
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
+feature: reference
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 5%
 
 ---
 
 
-# Audience Manager中的訪客驗證狀態{#visitor-authentication-states-in-audience-manager}
+# Audience Manager 中的訪客驗證狀態{#visitor-authentication-states-in-audience-manager}
 
 Audience Manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
 
