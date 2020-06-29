@@ -1,16 +1,20 @@
 ---
 description: '本頁包含如何結合離線CRM資料和您在Audience Manager中已擁有的行為資料以建立新受眾細分的逐步指引，然後將這些受眾細分傳送至以人為本的目標。  '
 seo-description: '本頁包含如何結合離線CRM資料和您在Audience Manager中已擁有的行為資料以建立新受眾細分的逐步指引，然後將這些受眾細分傳送至以人為本的目標。   '
-seo-title: 工作流程A —— 基於所有線上活動和離線資料的個人化
+seo-title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
 solution: Audience Manager
-title: 工作流程A —— 基於所有線上活動和離線資料的個人化
+title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1180'
+ht-degree: 7%
 
 ---
 
 
-# 工作流程A —— 基於所有線上活動和離線資料的個人化 {#workflow-a}
+# 工作流程 A - 以所有線上活動和離線資料為基礎的個人化 {#workflow-a}
 
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
