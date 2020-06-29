@@ -4,9 +4,10 @@ seo-description: Audience Manager 的常見疑問與問題。
 seo-title: Audience Manager 常見問題集
 solution: Audience Manager
 title: Audience Manager 常見問題集
-translation-type: ht
-source-git-commit: b22302ebf16bc71c61a974e33dc399caafb96095
-workflow-type: ht
+feature: Overview
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 100%
 
