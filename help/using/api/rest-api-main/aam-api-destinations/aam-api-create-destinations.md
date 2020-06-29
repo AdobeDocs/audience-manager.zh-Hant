@@ -1,23 +1,27 @@
 ---
 description: 使用這些REST風格的API方法建立目標。
 seo-description: 使用這些REST風格的API方法建立目標。
-seo-title: 建立目標
+seo-title: 建立目的地
 solution: Audience Manager
-title: 建立目標
+title: 建立目的地
 uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
+feature: API
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 9%
 
 ---
 
 
-# 建立目標 {#create-destinations}
+# 建立目的地 {#create-destinations}
 
 使用這些方法建立 [!UICONTROL RESTful API] 目標。
 
 <!-- c_create_destinations.xml -->
 
-## 支援的目標類型：僅限URL和Cookie
+## 支援的目標類型： 僅限URL和Cookie
 
 可用的 `POST` 方法可讓您建立 [!UICONTROL URL] 且僅 [!UICONTROL cookie destinations] 限。 目前，您無法使用這 [!UICONTROL server-to-server destinations] 些方法 [!DNL REST API] 建立。 不過，相關的目標方 `GET` 法可讓您擷取在使用者介 [!UICONTROL server-to-server destinations] 面中建立的相關資訊。
 
@@ -130,7 +134,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 建立Cookie目標：單鍵、無序號 {#create-cookie-dest-single}
+## 建立Cookie目標： 單鍵、無序號 {#create-cookie-dest-single}
 
 一 `POST` 種方法，可讓您建立 [!UICONTROL cookie destination] 接受由單鍵值配對(例如，或 `gender=male``gender=female`)組成的區段。
 
@@ -199,7 +203,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 } 
 ```
 
-## 建立Cookie目標：單鍵，序號 {#create-cookie-dest-single-serial}
+## 建立Cookie目標： 單鍵，序號 {#create-cookie-dest-single-serial}
 
 一 `POST` 種方法，可讓您建立接受與單一索引鍵相關聯之多個值的目的地(例如 `color=blue, red, green`)。
 
@@ -270,7 +274,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 建立Cookie目標：多鍵、無序號 {#create-cookie-dest-multi}
+## 建立Cookie目標： 多鍵、無序號 {#create-cookie-dest-multi}
 
 一 `POST` 種方法，可讓您建立接受包含具有不同值（如）之多個索引鍵之區段的 `gender=male; gender=female; color=blue; color=red`目標。
 
@@ -337,7 +341,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 建立Cookie目標：多鍵，序列化 {#create-cookie-dest-multi-serial}
+## 建立Cookie目標： 多鍵，序列化 {#create-cookie-dest-multi-serial}
 
 一 `POST` 種方法，可讓您建立接受包含多個索引鍵和值的區段的目的地(例如 `gender=male, female; color=blue, red, green`)。
 
@@ -410,5 +414,5 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 >
 >* [目的地](../../../features/destinations/destinations.md)
 >* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
+>* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
 
