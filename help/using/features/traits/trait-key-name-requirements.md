@@ -5,8 +5,12 @@ seo-title: 關鍵變數的名稱要求
 solution: Audience Manager
 title: 關鍵變數的名稱要求
 uuid: fa72e732-895d-4cf6-bea0-66b404c2b059
+feature: Traits
 translation-type: tm+mt
-source-git-commit: bdbc2525a13eb04898b0a844ba478cde07e83252
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 12%
 
 ---
 
@@ -23,7 +27,7 @@ source-git-commit: bdbc2525a13eb04898b0a844ba478cde07e83252
 
 * 有效密鑰名： `price123`, `123price`, `price-123`, `c_price123`。
 
-* 無效的密鑰名稱： `123`, `price!123`。
+* 無效的密鑰名稱： `123`, `price!123`ý?
 
 ## 前置關鍵變數 `c_`
 
