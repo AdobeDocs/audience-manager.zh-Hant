@@ -5,8 +5,12 @@ seo-title: 管理特徵規則
 solution: Audience Manager
 title: 管理特徵規則
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 1%
 
 ---
 
@@ -50,7 +54,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    >[!NOTE]
    >
    >操 [!DNL Boolean] 作器 [!UICONTROL OR] 建立群組內多個信號 *之間的關* 系，且不能更改。
-1. Click **[!UICONTROL Add Rule]**. 儲存的規則會顯示在資料輸入欄位上方的特徵工作區中。
+1. 按一下 **[!UICONTROL Add Rule]**. 儲存的規則會顯示在資料輸入欄位上方的特徵工作區中。
 
 ### 範例 {#example-trait-rule}
 
