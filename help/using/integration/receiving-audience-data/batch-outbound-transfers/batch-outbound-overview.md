@@ -3,8 +3,9 @@ description: Audience Manager會根據這些規格，將批次資料傳送給協
 seo-description: Adobe Audience Manager(AAM)會根據這些規格，傳送批次資料給協力廠商內容提供者。
 seo-title: Adobe Audience Manager(AAM)中的批次傳出資料傳輸
 title: 批次傳出資料傳輸
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 1b31f10effa2780b5e4374516dd6c76d92a0123a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 17%
