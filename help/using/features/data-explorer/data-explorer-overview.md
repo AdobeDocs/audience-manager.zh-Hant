@@ -1,16 +1,20 @@
 ---
-description: Use Data Explorer to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.
-seo-description: Use Data Explorer to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.
-seo-title: Overview, Benefits, and Use Cases
-title: Overview, Benefits, and Use Cases
+description: 使用資料總管，根據使用和未使用的信號建立特徵，並回填歷史資料，以利用歷史受眾，避免相關受眾的潛在損失。
+seo-description: 使用資料總管，根據使用和未使用的信號建立特徵，並回填歷史資料，以利用歷史受眾，避免相關受眾的潛在損失。
+seo-title: 概觀、優點和使用案例
+title: 概觀、優點和使用案例
 uuid: 3bd32d4a-ade3-413d-837a-9edd14d415a5
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 2%
 
 ---
 
 
-# 資料總管——概觀、優點和使用案例 {#overview-benefits-and-use-cases}
+# Data Explorer - 概述、優點和使用案例 {#overview-benefits-and-use-cases}
 
 利用 [!UICONTROL Data Explorer] 根據已使用和未使用的信號建立特徵，並回填歷史資料，以利用歷史受眾，避免相關受眾的潛在損失。
 
@@ -44,6 +48,6 @@ source-git-commit: a1d75c83d5876090f3a4d284b18984e2d1a70313
 
 ### 使用資料總管來驗證已登入資料的特徵建立
 
-Audience manager最強大的功能之一，就是讓離線資料上線，並將其與線上資料連結。 在以下影片中，瞭解如何使用 [!UICONTROL Data Explorer] 來驗證您已建立所有必要特徵，以運用此已登入的資料。
+Audience Manager最強大的功能之一，就是讓離線資料上線，並將其與線上資料連結。 在以下影片中，瞭解如何使用 [!UICONTROL Data Explorer] 來驗證您已建立所有必要特性，以運用此已登入的資料。
 
->[!VIDEO](https://video.tv.adobe.com/v/25149/?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/25149/)
