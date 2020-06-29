@@ -1,17 +1,21 @@
 ---
 description: 保留API方法來管理使用者，包括建立、更新、列出、刪除和傳回使用者物件。
 seo-description: 保留API方法來管理使用者，包括建立、更新、列出、刪除和傳回使用者物件。
-seo-title: 使用者管理API方法
+seo-title: 使用者管理 API 方法
 solution: Audience Manager
-title: 使用者管理API方法
+title: 使用者管理 API 方法
 uuid: 6e1f2c35-bb9d-4166-b7d4-d9c5518a61ad
+feature: API
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 7%
 
 ---
 
 
-# 使用者管理API方法 {#user-management-api-methods}
+# 使用者管理 API 方法 {#user-management-api-methods}
 
 剩餘 [!DNL API] 的方法來管理用戶，包括建立、更新、列出、刪除和返回用戶對象。
 
