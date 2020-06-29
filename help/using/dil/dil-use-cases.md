@@ -1,17 +1,21 @@
 ---
 description: 特定DIL使用案例的程式碼範例和說明。
 seo-description: 特定DIL使用案例的程式碼範例和說明。
-seo-title: DIL使用案例和程式碼範例
+seo-title: DIL 使用案例和程式碼範例
 solution: Audience Manager
-title: DIL使用案例和程式碼範例
+title: DIL 使用案例和程式碼範例
 uuid: 27995c2d-6572-438e-af99-b5477f090ae9
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 3%
 
 ---
 
 
-# DIL使用案例和程式碼範例{#dil-use-cases-and-code-samples}
+# DIL 使用案例和程式碼範例{#dil-use-cases-and-code-samples}
 
 特定DIL使用案例的程式碼範例和說明。
 
