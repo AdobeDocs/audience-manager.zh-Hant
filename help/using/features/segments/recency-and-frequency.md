@@ -5,8 +5,9 @@ seo-title: 使用間隔和頻率
 solution: Audience Manager
 title: 使用間隔和頻率
 uuid: faadd18a-bf27-4b73-995e-9809f52f5350
+feature: Segments
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 3%
@@ -120,7 +121,7 @@ Audience Manager定義 [!DNL recency] 及 [!DNL frequency] 定義如下：
 
 * 右——當您需要的時近／頻率需求少於特定次數或天數時，請使用運算子將其連 [!UICONTROL trait] 結至另一 `AND` 個。 使用第一個項目符號點中的示例，此表達式在與另一個項目符號連接時會 [!UICONTROL trait] 生效，如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`.
 
-* 右側——對於廣告限頻使用案例，您可以建立類似 [!UICONTROL segment] 下列的規則： `(frequency([1000T] <= 2D) >= 5)`. 此運算式包含在過去2天 [!UICONTROL trait] 中，至少5次已實現ID為&quot;1000&quot;的所有使用者。 將此設定傳送至廣告伺服 [!UICONTROL segment] 器，並在廣告伺服器中設定 `NOT` 頻率上限， [!UICONTROL segment] 以設定頻率上限。 該方法在保持頻率封 [!DNL Audience Manager] 閉的相同目的的同時，實現了更高的效能。
+* 右側——對於廣告限頻使用案例，您可以建立類似 [!UICONTROL segment] 下列的規則： `(frequency([1000T] <= 2D) >= 5)`. 此運算式包含在過去2天 [!UICONTROL trait] 中，至少5次已實現ID為&quot;1000&quot;的所有使用者。 將此設定傳送至廣告伺 [!UICONTROL segment] 服器，並在廣告伺服器中設定 `NOT` 頻率上限， [!UICONTROL segment] 以設定頻率上限。 該方法在保持頻率封 [!DNL Audience Manager] 閉的相同目的的同時，實現了更高的效能。
 
 >[!MORELIKETHIS]
 >
