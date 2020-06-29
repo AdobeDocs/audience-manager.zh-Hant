@@ -1,23 +1,27 @@
 ---
 description: 說明演算法特性中精確度與觸及度之間的關係。
 seo-description: 說明演算法特性中精確度與觸及度之間的關係。
-seo-title: 準確性與觸及性
+seo-title: 精確度和觸及
 solution: Audience Manager
-title: 準確性與觸及性
+title: 精確度和觸及
 uuid: d121e099-6642-4003-ad4f-507d21e478d8
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 44bb4d511215a7bbc8889cc9518b3b5ffcb79a2a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 3%
 
 ---
 
 
-# 準確性與觸及性 {#accuracy-and-reach}
+# 精確度和觸及 {#accuracy-and-reach}
 
 說明演算法特性中精確度與觸及度之間的關係。
 
 <!-- c_accuracy_reach.xml -->
 
-## 準確性與觸及性：關於
+## 準確性與觸及性： 關於
 
 在處理演算法特性時，請務必瞭解精確度與觸及度之間的關係。 準確度由計分值表示，該計分值反映使用者與基準的相似程度。 精確等級範圍從0（最不精確）到1（最精確）。 觸及只是一個值，代表您想要包含在特徵中的獨特使用者人數。 覆蓋度與精確度呈反向關係。 精確的特徵觸及到的使用者較少，而觸及面較廣的特徵則較不精確。 下圖說明了此概念。
 
