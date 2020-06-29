@@ -1,26 +1,27 @@
 ---
 description: 要建立配置檔案合併規則審查並完成本節所述每個過程的步驟。
 seo-description: 要建立配置檔案合併規則審查並完成本節所述每個過程的步驟。
-seo-title: 描述檔合併規則快速入門
+seo-title: 設定檔合併規則快速入門
 solution: Audience Manager
-title: 描述檔合併規則快速入門
+title: 設定檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 56a9626b1fa77926bdc31ef72b058d2aa9b58f43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# 描述檔合併規則快速入門 {#getting-started-with-profile-merge-rules}
+# 設定檔合併規則快速入門 {#getting-started-with-profile-merge-rules}
 
 要建立 [!UICONTROL Profile Merge Rules]、查看並完成本節所述各步驟中的步驟。
 
 <!-- merge-rules-start.xml -->
 
-## 建立跨裝置資料來源 {#create-data-source}
+## Create a Cross-Device Data Source {#create-data-source}
 
 若要建立跨裝置資料來源，請前往並完 **[!UICONTROL Audience Data > Data Sources > Add New]** 成此處說明之每個章節的步驟。 建立或編輯跨裝置資料來源時，需要有管理員權限。
 
@@ -68,7 +69,7 @@ ht-degree: 1%
 
 <!-- create-profile-merge-rule.xml -->
 
-**必要條件：** 需要跨裝置資料來源才能建立 [!UICONTROL Profile Merge Rule]。 請參 [閱建立資料來源](../manage-datasources.md#create-data-source)。
+**必要條件：** 需要跨裝置資料來源才能建立 [!UICONTROL Profile Merge Rule]。 See [Create a Data Source](../manage-datasources.md#create-data-source).
 
 >[!TIP]
 >
@@ -121,7 +122,7 @@ ht-degree: 1%
 
 <!-- merge-rules-configure-code.xml -->
 
-### 必備條件
+### 必要條件
 
 您必須先設定跨 [裝置資料來源](#create-data-source) ，並設 [定描述檔合併規](#create-profile-merge-rule) 則 *,* 才能完成這些程式。
 
@@ -166,7 +167,7 @@ var vDil = DIL.create({
 });
 ```
 
-在namespace鍵值配對中， `*`MCORG`*` 變數是您的 [!DNL Experience Cloud] 組織ID。 如果您沒有此ID，您可以在控制面板的區 [!UICONTROL Administration] 段中找 [!DNL Experience Cloud] 到。 您需要管理員權限才能檢視此控制面板。 See [Administration: Core Services](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html).
+在namespace鍵值配對中， `*`MCORG`*` 變數是您的 [!DNL Experience Cloud] 組織ID。 如果您沒有此ID，您可以在控制面板的區 [!UICONTROL Administration] 段中找 [!DNL Experience Cloud] 到。 您需要管理員權限才能檢視此控制面板。 See [Administration: Core Services](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ### 設定SDK
 
