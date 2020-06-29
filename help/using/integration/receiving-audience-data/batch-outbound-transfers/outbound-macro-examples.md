@@ -5,8 +5,12 @@ seo-title: 輸出巨集範例
 solution: Audience Manager
 title: 輸出巨集範例
 uuid: 823d85d4-d683-45cf-9e60-c12b7d52a498
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 3d14d58b9cb66faf506ab729e7ff85dc1818d37e
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 9%
 
 ---
 
@@ -125,7 +129,7 @@ source-git-commit: 3d14d58b9cb66faf506ab729e7ff85dc1818d37e
        {"AdvertiserId":"&lt;PIDALIAS&gt;",&nbsp;"DataCenterId":&nbsp;2,"TDID":"&lt;DP_UUID&gt;", "Data":[&lt;SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;"&lt;CLOSE_CURLY_BRACKET&gt;}; separator=","&gt;&lt;if(SEGMENT_LIST&nbsp;&amp;&amp;&nbsp;REMOVED_SEGMENT_LIST)&gt;&lt;COMMA&gt;&lt;endif&gt; &lt;REMOVED_SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;", "TtlInMinutes":0&lt;CLOSE_CURLY_BRACKET&gt;};&nbsp;separator=","&gt;]}
      </code></p><p><b>輸出：</b></p> <p>
      <code>//First&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2, "TDID":"dfd215e4-8d6b-4fdb-90b9-fab4456f2c9d","Data":[{"Name":"4321"}]} //Second&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2,"TDID":"9099e8fe-abab-5114-abaa-28bdaa0539ca","Data":[{"Name":"4321"},{"Name":"987","TtlInMinutes":0}, {"Name":"654","TtlInMinutes":0}]} 
-     </code></p> <p> <p>注意： 在第一個示例中，宏僅返回資料，因 <code> SEGMENT_LIST </code> 為 <code> REMOVED_SEGMENT_LIST </code> 為空。 第二個示例返回兩個宏的資料。 </p> </p> </td> 
+     </code></p> <p> <p>注意：  在第一個示例中，宏僅返回資料，因 <code> SEGMENT_LIST </code> 為 <code> REMOVED_SEGMENT_LIST </code> 為空。 第二個示例返回兩個宏的資料。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
