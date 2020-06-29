@@ -5,8 +5,9 @@ seo-title: DCS 錯誤碼、訊息和範例
 solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
+feature: DCS
 translation-type: tm+mt
-source-git-commit: ff245c2cca417e9b1fd51460ddbadd25d5696006
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 3%
@@ -173,7 +174,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>封鎖的描述檔操作 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>已封鎖讀／寫動作，因為ID已識別為惡意，並已新增至密文清單。請參閱錯誤代碼306。 </p> </td> 
+   <td colname="col3"> <p>已封鎖讀／寫動作，因為ID已識別為惡意，並已新增至密碼清單。請參閱錯誤代碼306。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
