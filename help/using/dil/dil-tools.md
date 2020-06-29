@@ -1,17 +1,21 @@
 ---
 description: 說明DIL.tools命名空間中的方法。 這些實用程式功能可幫助您執行特定任務。
 seo-description: 說明DIL.tools命名空間中的方法。 這些實用程式功能可幫助您執行特定任務。
-seo-title: DIL工具
+seo-title: DIL 工具
 solution: Audience Manager
-title: DIL工具
+title: DIL 工具
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: ac9e4f24a896ecae2ebf36dcf34a4ac8fab00cd8
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 5%
 
 ---
 
 
-# DIL工具
+# DIL 工具
 
 說明命名空間中的 `DIL.tools` 方法。 這些實用程式功能可幫助您執行特定任務。
 
@@ -44,7 +48,7 @@ r_dil_get_search_referrer.xml
 `getSearchReferrer` 接受：
 
 * *`{string}`*: *（選用）* ，包含搜尋URL的字串(若未定義 `document.referrer` 則使用)。
-* *`{object}`*: *（可選）* ，包含 `hostPattern`、 `queryParam`或的配置 `queryPattern`。
+* *`{object}`*: *（可選）* ，包含、或的 `hostPattern`配 `queryParam`置的對象 `queryPattern`。
 
 並傳回：
 
@@ -65,7 +69,7 @@ r_dil_get_search_referrer.xml
    <td> 預設搜尋</td> 
    <td> 傳回AOL、Ask、Bing、Google和Yahoo搜尋引擎使用的關鍵字搜尋詞。 </td> 
    <td>
-      <code>var&amp;nbsp; results&amp;nbsp;=&amp;nbsp;DIL.tools.getSearchReferrer();</code> 
+      <code>var&amp;nbsp;results&amp;nbsp;=&amp;nbsp;DIL.tools.getSearchReferrer();</code> 
   </td>
   </tr> 
   <tr> 
@@ -73,8 +77,8 @@ r_dil_get_search_referrer.xml
    <td>根據自訂URL傳回搜尋反向連結。</td> 
    <td> 
   <code>
-        var results = 
-    DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules");
+        var&nbsp;results&nbsp;= 
+        DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules");
   </code>
 </td> 
   </tr> 
@@ -84,10 +88,10 @@ r_dil_get_search_referrer.xml
    <td> 
   <code>
       var results = 
-    DIL.tools.getSearchReferrer("https://www.ehow.com/
-    search.aspx?q=adobe+rules",{ 
-       hostPattern:/ehow\./, 
-         queryParam:"p" 
+        DIL.tools.getSearchReferrer("https://www.ehow.com/
+      search.aspx?q=adobe+rules",{ 
+      &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
+      &nbsp;&nbsp;&nbsp;queryParam:"p" 
       }); 
   </code>
   </td></tr> 
@@ -96,11 +100,11 @@ r_dil_get_search_referrer.xml
    <td> 傳入自訂規則運算式以執行自訂搜尋。 </td> 
    <td> 
     <code>
-      var  results = 
-    DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules,
-    {
-       hostPattern:/ehow\./, 
-           search_pattern:/[&amp;\?]p=([^&amp;]+/ 
+      var&nbsp;results&nbsp;= 
+      DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules,
+      {
+        &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
+        &nbsp;&nbsp;&nbsp;search_pattern:/[&amp;\?]p=([^&amp;]+/ 
       });
     </code>
    </td> 
@@ -110,7 +114,7 @@ r_dil_get_search_referrer.xml
 
 ## 分解URI
 
-將統一資源標識符( [!DNL URI])拆分到其組成元件中： `hash`、 `host`、 `href`、 `pathname``protocol`和 `search``[!DNL uriParams]`。
+將統一資源標識符( [!DNL URI])拆分到其組成元件中： `hash`、 `host`、 `href`、 `pathname`、 `protocol`、和 `search``[!DNL uriParams]`。
 
 <!-- 
 
@@ -171,9 +175,12 @@ r_dil_get_metatags.xml
 ### 程式碼範例
 
 <pre class="&ldquo;javascript&rdquo;"><code>
-var dataLib = DIL.create({ partner:'<i>partnerName'</i>, containerNSID:容 <i>器NSID</i> });
+var dataLib = DIL.create({ 
+     partner: '<i>partnerName'</i>, 
+     containerNSID: <i>containerNSID</i> 
+}); 
 
-dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>', '<i>keywords</i>', '<i>description</i>'), 'c_')。submit();
+dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>', '<i>keywords</i>',  '<i>description</i>'), 'c_').submit();
 </code></pre>
 
 <pre><code>
@@ -181,5 +188,6 @@ var dataLib = DIL.create({
      partner: <i>`partnerName'</i>, 
      containerNSID: <i>containerNSID</i> 
 }); 
+
 dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>','<i>keywords</i>', '<i>description</i>'), 'c_').submit();
 </code></pre>
