@@ -4,8 +4,9 @@ seo-description: 您必須先設定Audience Manager與第三方內容提供者�
 seo-title: 設定批次資料整合
 solution: Audience Manager
 title: 配置批資料傳輸整合
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 1b31f10effa2780b5e4374516dd6c76d92a0123a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
