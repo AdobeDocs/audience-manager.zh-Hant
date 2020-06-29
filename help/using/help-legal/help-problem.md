@@ -4,9 +4,10 @@ seo-description: 客戶服務準備好幫助您解決任何可能出現的問題
 seo-title: 如果有問題
 solution: Audience Manager
 title: 如果有問題
-translation-type: ht
-source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
-workflow-type: ht
+feature: Support
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%
 
