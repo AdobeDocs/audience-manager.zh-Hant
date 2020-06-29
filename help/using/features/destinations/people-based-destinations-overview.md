@@ -4,8 +4,9 @@ seo-description: '使用以人為本的目的地，將第一方受眾細分傳�
 seo-title: 基於人員的目標概觀和使用案例
 solution: Audience Manager
 title: 概述與使用案例
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: ef098c35da49ae663d201b9b7f96034fb5c76323
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 1%
@@ -77,6 +78,6 @@ ht-degree: 1%
 
 航空公司有不同的客戶層級（銅、銀和金），並希望透過社交平台為每個層級提供個人化優惠。 該公司使用Audience Manager分析網站上的客戶活動。 不過，並非所有客戶都使用該航空公司的行動應用程式，其中有些客戶尚未登入該公司網站。 公司對於這些客戶的唯一識別碼是會籍ID和電子郵件地址。
 
-若要跨社交媒體和類似以人為本的通道鎖定客戶，他們可以將客戶資料從雜湊的電子郵件地址當成識別碼，從 [!DNL CRM] Audience Manager中載入。
+若要跨社交媒體和類似以人為本的通道鎖定客戶，他們可以將客戶資料從雜湊的電子郵件地址當成識別碼，從 [!DNL CRM] Audience Manager中將其帶入客戶資料。
 
 接下來，他們可以結合線下資料和現有的線上活動特徵，以建立新的受眾細分，並透過這些細分進行鎖定 [!DNL People-Based Destinations]。
