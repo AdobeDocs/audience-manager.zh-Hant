@@ -1,19 +1,23 @@
 ---
-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience manager已正確處理檔案傳輸。
-seo-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience manager已正確處理檔案傳輸。
-seo-title: 日誌檔案傳輸的傳輸控制檔案
+description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
+seo-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
+seo-title: 用於記錄檔傳輸的傳輸控制檔案
 solution: Audience Manager
-title: 日誌檔案傳輸的傳輸控制檔案
+title: 用於記錄檔傳輸的傳輸控制檔案
 uuid: ef58213e-7b37-4c5a-8556-0de695706793
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 6%
 
 ---
 
 
-# 日誌檔案傳輸的傳輸控制檔案 {#transfer-control-files-for-log-file-transfers}
+# 用於記錄檔傳輸的傳輸控制檔案 {#transfer-control-files-for-log-file-transfers}
 
-傳輸控制([!DNL .info])檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience manager已正確處理檔案傳輸。
+傳輸控制([!DNL .info])檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
 
 [!DNL Audience Manager] 每次檔案傳輸時都會向合作夥伴發送轉移控制檔案。 由於發佈者的多執行緒性質，在 [!DNL FTP] 實際傳輸檔案完成之前，可能會傳送傳輸控制檔案。
 
@@ -27,7 +31,7 @@ source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
 
 轉移控制檔案與批次／序列的根檔案具有相同的名稱，並 [!DNL .info] 具有檔案副檔名。
 
-例如，如果序列中的第一個檔案是命名的： [!DNL ftp_12345_67890_full_1500727351632-1.sync]，控制檔案將被命名 [!DNL ftp_12345_67890_iter_1500727351632.info]。
+例如，如果序列中的第一個檔案是命名的： [!DNL ftp_12345_67890_full_1500727351632-1.sync]，則會命名控制檔 [!DNL ftp_12345_67890_iter_1500727351632.info]。
 
 ## 檔案格式 {#file-format}
 
