@@ -5,8 +5,12 @@ seo-title: 特徵產生器中的作業順序
 solution: Audience Manager
 title: 特徵產生器中的作業順序
 uuid: df325047-af62-45ad-9ca1-046bfcbe5341
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 13%
 
 ---
 
@@ -43,7 +47,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
   </tr> 
   <tr> 
    <td colname="col1">布林 <span class="wintitle"> 值AND</span> </td> 
-   <td colname="col2"><span class="wintitle"> AND</span> </td> 
+   <td colname="col2"><span class="wintitle"> 和</span> </td> 
    <td colname="col3" morerows="1"> 不適用 </td> 
   </tr> 
   <tr> 
