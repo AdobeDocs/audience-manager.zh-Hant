@@ -5,8 +5,12 @@ seo-title: 資料匯出控制
 solution: Audience Manager
 title: 資料匯出控制
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
+feature: Data Export Controls
 translation-type: tm+mt
-source-git-commit: 22657113512e136296be5c4bcb8e092e65f45c06
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 1%
 
 ---
 
@@ -19,8 +23,8 @@ source-git-commit: 22657113512e136296be5c4bcb8e092e65f45c06
 
 [!UICONTROL Data Export Controls] 可讓您分類 [資料來源](../features/datasources-list-and-settings.md#data-sources-list-and-settings)[和目標](../features/destinations/destinations.md)。 您套用的分類會決定資料何時可匯出至目的地。 此功能包括：
 
-* **[!UICONTROL Data Export Controls]**:您可以在資料來源上設定「資料匯 *出控制」*。 當在資料來源上設定時，這些控制項會限制資料來源及其特性的使用方式。
-* **[!UICONTROL Data Export Labels]**:您可以在目標上設定「資料匯出 *標籤」*。 在目標上設定時，這些標籤會識別目標使用資料的方式。 請參 [閱新增資料匯出標籤至目標](/help/using/features/destinations/add-data-export-labels.md) ，瞭解如何新增匯出標籤至目標。
+* **[!UICONTROL Data Export Controls]**: 您可以在資料來源上設定「資料匯 *出控制」*。 當在資料來源上設定時，這些控制項會限制資料來源及其特性的使用方式。
+* **[!UICONTROL Data Export Labels]**: 您可以在目標上設定「資料匯出 *標籤」*。 在目標上設定時，這些標籤會識別目標使用資料的方式。 請參 [閱新增資料匯出標籤至目標](/help/using/features/destinations/add-data-export-labels.md) ，瞭解如何新增匯出標籤至目標。
 
 根據套用至資料來源和目的地的分類，匯出控制項會讓您無法：
 
@@ -32,7 +36,7 @@ source-git-commit: 22657113512e136296be5c4bcb8e092e65f45c06
    * 包含的區段採用的描述檔合併規則；
    * 內含區段的描述檔合併規則所使用的任何資料來源。
 
-[!UICONTROL Data Export Controls] 會自動提供給所有Audience manager客戶。 不過，您需要管理員權限才能將匯出控制項新增至資料來源。 將導出標籤添加到目標需要管理員 *權限* ，或者需要足夠的權限才能建立或編輯目標。
+[!UICONTROL Data Export Controls] 會自動提供給所有Audience Manager客戶。 不過，您需要管理員權限才能將匯出控制項新增至資料來源。 將導出標籤添加到目標需要管理員 *權限* ，或者需要足夠的權限才能建立或編輯目標。
 
 ## 已定義的控制項和標籤 {#controls-labels}
 
