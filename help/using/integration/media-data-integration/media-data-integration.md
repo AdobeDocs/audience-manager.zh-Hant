@@ -5,8 +5,12 @@ seo-title: 媒體資料整合
 solution: Audience Manager
 title: 媒體資料整合
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
+feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: f39c8fbb8f301c3068cd6fab47def9f8e3308cad
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 24%
 
 ---
 
@@ -18,5 +22,5 @@ source-git-commit: f39c8fbb8f301c3068cd6fab47def9f8e3308cad
 <!-- c_camp_data_int.xml -->
 
 * [可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)
-* [透過像素呼叫擷取促銷活動的曝光資料](/help/using/integration/media-data-integration/impression-data-pixels.md)
-* [透過像素呼叫擷取促銷活動點按資料](/help/using/integration/media-data-integration/click-data-pixels.md)
+* [透過像素呼叫擷取行銷活動的曝光資料](/help/using/integration/media-data-integration/impression-data-pixels.md)
+* [透過像素呼叫擷取行銷活動的點按資料](/help/using/integration/media-data-integration/click-data-pixels.md)
