@@ -5,11 +5,12 @@ seo-title: isCoopSafe
 solution: Audience Manager
 title: isCoopSafe
 uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 92751df14777335744db69bfb0c9b7b2f9088785
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 76%
 To use `isCoopSafe` you must:
 
 * 使 [!UICONTROL DIL] 用v6.11或更新版本。
-* 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/home.translate.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
 * Work with your [!DNL Adobe] consultant to set an allowlist or a denylist flag on your Device Co-op account. 沒有自助路徑可啟用這些標誌。
 
