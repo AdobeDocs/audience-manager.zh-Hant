@@ -5,8 +5,12 @@ seo-title: 在特徵產生器中使用比較運算子
 solution: Audience Manager
 title: 在特徵產生器中使用比較運算子
 uuid: 41bec3b3-e5df-4a6f-abb0-80ce4c75f5e7
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 11%
 
 ---
 
@@ -33,9 +37,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 |---|---|
 | **==** | 等於 |
 | **!=** | 不等於 |
-| **&gt;** | 大於 |
+| **>** | 大於 |
 | **&lt;** | 小於 |
-| **=&gt;** | 大於或等於 |
+| **=>** | 大於或等於 |
 | **&lt;=** | 小於／等於 |
 
 ## 命名運算子
@@ -55,5 +59,5 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 >* [特徵和區段產生器中的布林運算式](../../reference/boolean-expressions-tsb.md)
 >* [瞭解TraitBuilder中的布林運算式](../../reference/boolean-expressions-tsb.md)
 >* [TraitBuilder運算式中的運算順序](../../features/traits/trait-operator-precedence.md)
->* [具有布林運算子和比較運算子的範例運算式](../../features/traits/trait-expression-samples.md)
+>* [使用布林值和比較運算子的運算式範例](../../features/traits/trait-expression-samples.md)
 
