@@ -4,8 +4,12 @@ seo-description: 使用邏輯運算子來分組索引鍵值配對和回填特徵
 seo-title: 支援的邏輯運算子
 title: 支援的邏輯運算子
 uuid: 645fcb6f-50ac-49bc-8df9-c699c749cf8f
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 9%
 
 ---
 
@@ -23,9 +27,9 @@ source-git-commit: 1f26460d746a93ddc36c375360fcfbd9feb06fbb
 | 運算元 | 定義 |
 |---|---|
 | **==** | 等於 |
-| **&gt;** | 大於 |
+| **>** | 大於 |
 | **&lt;** | 小於 |
-| **=&gt;** | 大於或等於 |
+| **=>** | 大於或等於 |
 | **&lt;=** | 小於／等於 |
 
 ### 命名運算子
