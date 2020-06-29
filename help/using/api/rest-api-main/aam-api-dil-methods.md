@@ -1,17 +1,21 @@
 ---
 description: 可讓您以程式設計方式與資料整合庫(DIL)搭配運作的方法。
 seo-description: 可讓您以程式設計方式與資料整合庫(DIL)搭配運作的方法。
-seo-title: 資料整合庫API方法
+seo-title: Data Integration Library API 方法
 solution: Audience Manager
-title: 資料整合庫API方法
+title: Data Integration Library API 方法
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
+feature: API
 translation-type: tm+mt
-source-git-commit: 5e08861f8bfe88559b089fae00bd14e576f2d0ac
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 14%
 
 ---
 
 
-# 資料整合庫API方法 {#data-integration-library-api-methods}
+# Data Integration Library API 方法 {#data-integration-library-api-methods}
 
 可讓您以程式設計方式使用(. [!UICONTROL Data Integration Library][!UICONTROL DIL]..
 
