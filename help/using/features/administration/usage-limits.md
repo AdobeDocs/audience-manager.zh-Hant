@@ -1,18 +1,22 @@
 ---
 description: Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
 seo-description: Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
-seo-title: 使用限制
+seo-title: 使用量限制
 solution: Audience Manager
-title: 使用限制
+title: 使用量限制
 keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
+feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: 8493705b0f200b5b43d937dfd452210403a52b33
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 6%
 
 ---
 
 
-# 使用限制 {#usage-limits}
+# 使用量限制 {#usage-limits}
 
 Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過程式設計方式建立，限制都適用於這些 [!DNL API] 項目。 使用限制有助於保護Audience Manager不受可能破壞我們或使用者介面的 [!DNL API]自動化程式。
 
@@ -62,8 +66,8 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 | 項目 | 最大限制 |
 | -------- | ----- |
 | 作用中演算法模型 | 20. Audience Manager only counts *active* algorithmic models against the limit. |
-| 演算法模型最大受眾規模 | 25,000,000.  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選取較短的回顧視窗，來降低觀眾規模。 |
-| 模型的已排除特徵數上限 | 500.請參閱 [演算法模型中的特徵排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
+| 演算法模型最大受眾規模 | 25,000,000.  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選擇較短的回顧視窗，來降低觀眾規模。 |
+| 模型的已排除特徵數上限 | 500. 請參閱 [演算法模型中的特徵排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
 
 ### 資料夾限制
 
@@ -75,7 +79,7 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 
 | 項目 | 最大限制 |
 | --------------- | ------------- |
-| 衍生信號 | 50,000. |
+| 衍生訊號 | 50,000. |
 
 ### 公司使用者帳戶限制
 
