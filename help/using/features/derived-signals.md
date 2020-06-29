@@ -1,17 +1,21 @@
 ---
 description: 衍生訊號可讓網站訪客根據他們已看到的特性，獲得其他特性的資格。 換言之，即使使用者從未看過新特徵，也可以從目前展示的特徵衍生其他特徵資格。
 seo-description: 衍生訊號可讓網站訪客根據他們已看到的特性，獲得其他特性的資格。 換言之，即使使用者從未看過新特徵，也可以從目前展示的特徵衍生其他特徵資格。
-seo-title: 衍生信號
+seo-title: 衍生訊號
 solution: Audience Manager
-title: 衍生信號
+title: 衍生訊號
 uuid: e52600e3-26d1-4607-9b96-afd6086a252d
+feature: Traits
 translation-type: tm+mt
-source-git-commit: f9a12cf38833cf243edf4bc4c4f4e91f83ee0ca2
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 2%
 
 ---
 
 
-# 衍生信號 {#derived-signals}
+# 衍生訊號 {#derived-signals}
 
 依據 [!UICONTROL derived signal] 訪客已看到的特徵，篩選其他特徵的合格網站訪客。 換言之，即使使用者從未看過新特徵，也可以從目前展示的特徵衍生其他特徵資格。
 
@@ -35,12 +39,12 @@ source-git-commit: f9a12cf38833cf243edf4bc4c4f4e91f83ee0ca2
 
 1. 從功 **[!UICONTROL Derived Signals]** 能表中 [!UICONTROL Tools] 選取。
 1. 提供：
-   * *（可選）*[!UICONTROL Integration Code]
+   * *（可選）* [!UICONTROL Integration Code]
    * [!UICONTROL Source Key]
    * [!UICONTROL Source Value]
    * [!UICONTROL Target Key]
    * [!UICONTROL Target Value]
-1. Click **[!UICONTROL Add Signal]**.
+1. 按一下 **[!UICONTROL Add Signal]**.
 
 >[!NOTE]
 >
