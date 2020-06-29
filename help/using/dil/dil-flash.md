@@ -5,8 +5,12 @@ seo-title: Flash DIL
 solution: Audience Manager
 title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 4%
 
 ---
 
@@ -155,7 +159,7 @@ s.loadModule(d);
 >[!MORELIKETHIS]
 >
 >* [特徵](../features/traits/trait-details-page.md)
->* [信號、特徵和區段](../reference/signal-trait-segment.md)
->* [說明的鍵值對](../reference/key-value-pairs-explained.md)
+>* [訊號、特徵和區段](../reference/signal-trait-segment.md)
+>* [索引鍵值配對說明](../reference/key-value-pairs-explained.md)
 >* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
 
