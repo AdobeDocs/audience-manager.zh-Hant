@@ -6,8 +6,9 @@ solution: Audience Manager
 title: Audience Lab
 topic: DIL API
 uuid: aaee820c-1e78-4fd4-bd8f-2629085d78e9
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 4%
@@ -74,7 +75,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 完成 </span></b> </p> </td> 
-   <td colname="col2"> <p>完成 <i>的測試</i> ，群組已到達您在「建立測試群組」精靈中選取的結束日期， <b><span class="uicontrol"></span></b> 並已停止傳送報告資料。 </p> </td>
+   <td colname="col2"> <p>完成 <i>的測試</i> ，群組已到達您在「建立測試群組」精靈中選取的結束日期， <b><span class="uicontrol"></span></b> 且已停止傳送報告資料。 </p> </td>
   </tr>
  </tbody>
 </table>
