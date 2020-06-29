@@ -1,17 +1,21 @@
 ---
 description: 簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓客戶建立自助服務的任意數目像素。 像素字串由簡單ID或金鑰值對組成。
 seo-description: 簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓客戶建立自助服務的任意數目像素。 像素字串由簡單ID或金鑰值對組成。
-seo-title: 像素式資料傳輸
+seo-title: 以像素為基礎的資料傳輸
 solution: Audience Manager
-title: 像素式資料傳輸
+title: 以像素為基礎的資料傳輸
 uuid: 8773bfc0-6b8d-4a6a-a8b7-e043744486ab
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 3fb90da3be8f50fe670c1193600f5e3a027be52c
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 4%
 
 ---
 
 
-# 像素式資料傳輸 {#pixel-based-data-transfers}
+# 以像素為基礎的資料傳輸 {#pixel-based-data-transfers}
 
 簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓客戶建立自助服務的任意數目像素。 像素字串由簡單ID或金鑰值對組成。
 
