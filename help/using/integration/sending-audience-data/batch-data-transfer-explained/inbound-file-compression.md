@@ -5,8 +5,12 @@ seo-title: 傳入資料傳輸檔案的檔案壓縮
 solution: Audience Manager
 title: 傳入資料傳輸檔案的檔案壓縮
 uuid: 2a68f69c-60b0-4002-863b-302d2320e356
+feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 392b17e5a97038169e2cd36f2e71f5b4b997070c
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 10%
 
 ---
 
@@ -17,9 +21,9 @@ source-git-commit: 392b17e5a97038169e2cd36f2e71f5b4b997070c
 
 <!-- inbound-file-compression.xml -->
 
-Audience manager支援傳入、非`.gz`同步資料傳輸的gzip()壓縮。
+Audience Manager支援傳入、非`.gz`同步資料傳輸的gzip()壓縮。
 
-Audience manager也支援解壓縮的檔案。
+Audience Manager也支援解壓縮的檔案。
 
 >[!IMPORTANT]
 >
