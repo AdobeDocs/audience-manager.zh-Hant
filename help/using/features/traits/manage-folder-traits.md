@@ -1,13 +1,17 @@
 ---
 description: 建立、編輯和刪除資料夾特徵。
-keywords: 資料夾特徵；資料夾特徵；資料夾特徵；資料夾特徵
+keywords: Folder Trait;Folder Traits;folder traits;folder trait
 seo-description: 建立、編輯和刪除資料夾特徵。
 seo-title: 管理資料夾特徵
 solution: Audience Manager
 title: 管理資料夾特徵
 uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
+feature: Traits
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 9%
 
 ---
 
@@ -30,7 +34,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    ![](assets/folder_traits_create.PNG)
 
 1. 按一下 + 圖示可建立資料夾。請注意，您最多可以在分類法中建立 2.000 個資料夾。如需詳細資訊，請參閱[使用限制](../../features/administration/usage-limits.md)文件。
-1. 命名資料夾，然後按一下「 **儲存**」。 例如，名為Electronics的檔案夾會有名為'Electronics Folder Trait'的檔案夾特徵。 您可以在特徵儀表板中檢視並選取新的資料夾特徵。
+1. 命名資料夾，然後按一下「 **儲存**」。 例如，名為Electronics的檔案夾會有名為&#39;Electronics Folder Trait&#39;的檔案夾特徵。 您可以在特徵儀表板中檢視並選取新的資料夾特徵。
 1. 新資料夾特徵會自動指派給產生的 [!DNL Audience Manager] 資料來源。 具有適當[!UICONCONTROL基於角色的訪問控制([!DNL RBAC])]權限的用戶可以更改編輯資料夾特徵工作流中的資料源。 請參閱 [編輯資料夾特徵](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
 
 ## 編輯資料夾特徵 {#edit-folder-trait}
@@ -58,7 +62,7 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 <!-- delete-folder-trait.xml -->
 
-1. **讀者資料&gt;特徵** ，以導覽至「特 **徵** 」控制面板。
+1. **讀者資料>特徵** ，以導覽至「特 **徵** 」控制面板。
 1. 在視窗 [!UICONTROL Trait Storage] 中，將滑鼠指標暫留在資料夾上並按一下X圖示，以刪除資料夾。
 
    ![步驟結果](assets/folder_traits_create.PNG)
