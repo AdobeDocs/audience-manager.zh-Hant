@@ -1,12 +1,16 @@
 ---
 description: 本文說明為Audience Lab重複配置範本和區段抑制提供進階功能的兩項功能。
 seo-description: 本文說明為Audience Lab重複配置範本和區段抑制提供進階功能的兩項功能。
-seo-title: Audience lab進階功能
+seo-title: Audience Lab 進階功能
 solution: Audience Manager
-title: Audience lab進階功能
+title: Audience Lab 進階功能
 uuid: 0f57d634-caa0-40da-81a2-c23fbd299bfd
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: 6169e8aefc4c215c83d6229be7378f90453f19e9
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +44,7 @@ With the option to duplicate allocation templates, you can increase your product
 
 建立初始測試群組，然後選取以 **[!UICONTROL Duplicate Allocation Template]** 在多個測試群組間重複使用相同的設定。 例如，如果您要執行測試，以決定多個區段的多個目的地的效能，則可使用此功能。
 
-1. 在Audience lab主檢視中，搜尋您要在新測試群組中重制其配置範本的測試群組。 在下拉式方塊中，選取 **[!UICONTROL Duplicate Allocation Template]**。
+1. 在Audience Lab主檢視中，搜尋您要在新測試群組中重制其配置範本的測試群組。 在下拉式方塊中，選取 **[!UICONTROL Duplicate Allocation Template]**。
 
    ![](assets/duplicate-allocation-template.png)
 
