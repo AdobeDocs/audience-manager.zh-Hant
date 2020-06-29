@@ -5,8 +5,12 @@ seo-title: 作用中受眾特徵與資料來源同步特徵
 solution: Audience Manager
 title: 作用中受眾特徵與資料來源同步特徵
 uuid: b4f145ab-f343-4d71-86d1-5d03f7b03809
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 10%
 
 ---
 
@@ -37,5 +41,5 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 >[!MORELIKETHIS]
 >
->* [可定址對象](../../features/addressable-audiences.md)
+>* [可定址受眾](../../features/addressable-audiences.md)
 
