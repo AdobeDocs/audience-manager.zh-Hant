@@ -5,8 +5,9 @@ seo-title: 設定檔合併規則概述
 solution: Audience Manager
 title: 設定檔合併規則概述
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: a077726fe4878aeb7722586654c27769e92e0665
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 4%
@@ -30,7 +31,7 @@ ht-degree: 4%
 
 | 描述檔類型 | 說明 |
 |---|---|
-| [!UICONTROL Device Profile] | 系 [!UICONTROL device profile] 結至指定裝置的ID，例如 [!UICONTROL cookie] ID或行動裝置ID。<br><br> 其功能包括:<ul><li>[!UICONTROL Rule-based traits] 當用戶未通過驗證時實現。</li><li>[!UICONTROL Onboarded traits] 系結至裝置ID，例如 [!UICONTROL cookie-based]協力廠商資料。</li></ul> |
+| [!UICONTROL Device Profile] | 系 [!UICONTROL device profile] 結至指定裝置的ID，例如 [!UICONTROL cookie] ID或行動裝置ID。<br><br> 其功能包括:<ul><li>[!UICONTROL Rule-based traits] 當用戶未通過驗證時實現。</li><li>[!UICONTROL Onboarded traits] 系結至裝置ID, [!UICONTROL cookie-based]例如協力廠商資料。</li></ul> |
 | [!UICONTROL Authenticated Profile] | 系 [!UICONTROL authenticated profile] 結至某人登入您網站時傳入的使用者ID。<br><br>其功能包括:<ul><li>[!UICONTROL Rule-based traits] 當使用者經過驗證時，跨裝置收集。</li><li>[!UICONTROL Onboarded traits] 在連結至相同使用者ID的離線檔案中。</li></ul> |
 
 這些不同的描述檔可控制您用於區段的資料。 例如，透過驗證的 [設定檔](../../reference/visitor-authentication-states.md)，您可以針對單一使用 [!UICONTROL segments] 者，根據來自多個裝置的資料建立精確的資料。 這表示您可以跨多種裝置為客戶提供一致的品牌體驗。 [!DNL Audience Manager] 透過將個人用於線上活動的不同裝置對應至其已驗證的個人檔案，來達成此 [目的](../../reference/visitor-authentication-states.md)。 這些映射稱為 [!UICONTROL Profile Link Device Graph]。
