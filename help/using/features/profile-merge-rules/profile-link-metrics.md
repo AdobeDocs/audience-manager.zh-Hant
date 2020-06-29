@@ -1,17 +1,21 @@
 ---
 description: 描述檔連結量度提供有關在您網站上驗證的人員和裝置的資料。 當您建立合併規則或從「描述檔合併規則」控制面板按一下現有規則時，「描述檔連結」中的資料和圖形會動態更新。 這些量度可包含來自Adobe Experience Cloud Device Co-op或其他第三方裝置圖形來源的裝置圖形。
 seo-description: 描述檔連結量度提供有關在您網站上驗證的人員和裝置的資料。 當您建立合併規則或從「描述檔合併規則」控制面板按一下現有規則時，「描述檔連結」中的資料和圖形會動態更新。 這些量度可包含來自Adobe Experience Cloud Device Co-op或其他第三方裝置圖形來源的裝置圖形。
-seo-title: 描述檔合併規則的報表量度
+seo-title: 設定檔合併規則的報表量度
 solution: Audience Manager
-title: 描述檔合併規則的報表量度
+title: 設定檔合併規則的報表量度
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 2%
 
 ---
 
 
-# 描述檔合併規則的報表量度 {#report-metrics-for-profile-merge-rules}
+# 設定檔合併規則的報表量度 {#report-metrics-for-profile-merge-rules}
 
 [!UICONTROL Profile Merge Rule] 量度會提供您網站驗證的人員和裝置相關資料。 當您建立合併規則或 [!UICONTROL Profile Merge Rule Reports] 從控制面板按一下現有規則時，資料和圖形會動態 [!UICONTROL Profile Merge Rules] 更新。 這些量度可包含來自或其他協力 [!DNL Adobe Experience Cloud Device Co-op] 廠商裝置圖形來源的裝置圖形。
 
@@ -64,7 +68,7 @@ source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 個人資料連結</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> 設定檔連結</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_B2FF2341573840549FFB96579F537082"> 
       <li id="li_B37323C2F2434F41B407500AC5C15447">總人數： 60天 </li> 
