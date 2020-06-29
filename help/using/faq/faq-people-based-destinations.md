@@ -4,9 +4,10 @@ seo-description: '以人物為基礎的目的地相關常見問題解答。  '
 seo-title: 以人物為基礎的目的地常見問題集
 solution: Audience Manager
 title: 以人物為基礎的目的地常見問題集
-translation-type: ht
-source-git-commit: a40d0be8ece674c1870e6f27003bfbe9d55d7316
-workflow-type: ht
+feature: People-Based Destinations
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 100%
 
