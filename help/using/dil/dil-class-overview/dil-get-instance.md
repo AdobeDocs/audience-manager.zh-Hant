@@ -1,13 +1,17 @@
 ---
 description: 擷取合作夥伴專屬的DIL例項。
-keywords: audience manager api;aam api;audience manager apis;aam api
+keywords: audience manager api;aam api;audience manager apis;aam apis
 seo-description: 擷取合作夥伴專屬的DIL例項。
 seo-title: getDil
 solution: Audience Manager
 title: getDil
 uuid: 7b95f9bf-14c0-4c74-b6b9-d6b38513d487
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 17%
 
 ---
 
@@ -16,7 +20,7 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 擷取合作夥伴專屬的DIL例項。
 
-**** 函式簽名： `getDil: function (partner, containerNSID) {}`
+**函式簽名：** `getDil: function (partner, containerNSID) {}`
 
 <!-- r_dil_get_dil.xml -->
 
@@ -33,5 +37,5 @@ source-git-commit: f682194b60b7a11a3b5cac9912147471f4b30bd4
 
 ## 程式碼範例
 
-<pre class="java"><code>DIL.getDil('<i>partner</i>', <i>containerNSID</i>);
+<pre class="java"><code>DIL.getDil('<i>partner</i>', <i>containerNSID</i>); 
 DIL.getDil('<i>partner</i>');</code></pre>
