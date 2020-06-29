@@ -4,13 +4,17 @@ seo-description: 「特徵排除」在模型工作流程中提供其他控制項
 seo-title: 演算法模型特徵排除
 title: 演算法模型特徵排除
 uuid: 1359800b-6e6c-41e1-88b4-23d31952abb3
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '697'
+ht-degree: 1%
 
 ---
 
 
-# 相似模型： 特徵排除 {#algorithmic-models-trait-exclusion}
+# 相似建模：特徵排除 {#algorithmic-models-trait-exclusion}
 
 [!UICONTROL Trait Exclusion] 在模型工作流程中提供額外的控制項，讓您根據您的領域專業知識和法規要求，將必要的防護欄加入模型。 使用選 [!UICONTROL Exclusions] 項，在從一或多個資料來源建立模型時，選取要忽略哪些特徵。
 
