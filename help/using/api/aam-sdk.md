@@ -1,19 +1,23 @@
 ---
-description: Audience manager提供Android和iOS的軟體開發套件(SDK)。
-seo-description: Audience manager提供Android和iOS的軟體開發套件(SDK)。
-seo-title: SDK程式碼
+description: Audience Manager提供Android和iOS的軟體開發套件(SDK)。
+seo-description: Audience Manager提供Android和iOS的軟體開發套件(SDK)。
+seo-title: SDK 程式碼
 solution: Audience Manager
-title: SDK程式碼
+title: SDK 程式碼
 uuid: 7d0b40ce-9cee-41f1-8253-dcfc77a89c72
+feature: API
 translation-type: tm+mt
-source-git-commit: 88e196b4c7024c201a615a15a76f24d79c9f96df
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '157'
+ht-degree: 40%
 
 ---
 
 
 # [!DNL SDK] 程式碼 {#sdk-code}
 
-Audience manager為和提供軟[!DNL SDK]體開發套 [!DNL Android] 件 [!DNL iOS]。
+Audience Manager為和提供軟[!DNL SDK]體開發套 [!DNL Android] 件 [!DNL iOS]。
 
 >[!IMPORTANT]
 >
