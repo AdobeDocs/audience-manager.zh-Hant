@@ -4,9 +4,12 @@ seo-description: 在建立區段時取得即時特徵建議。
 seo-title: 特徵建議
 solution: Audience Manager
 title: 特徵建議
-uuid: null
+feature: Segments
 translation-type: tm+mt
-source-git-commit: 019396917482340f15b4eb23736b15322815bd84
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 8%
 
 ---
 
@@ -57,11 +60,11 @@ Audience Manager會根據您的第一方特徵、區段和區段顯示特 **[!UI
 
 ### 演算法模型
 
-[!UICONTROL Algorithmic Models] 不僅可以找到最具影響力的特徵，還可以根據這些特徵對用戶進行評分，並為每個用戶分配一個單獨的分數。 然後您建立演算法特徵，以鎖定您的使用者。 在中，您可以指定哪些使 [!UICONTROL Trait Builder]用者具有您要定位的影響力特徵，而且其精確性和觸及控制項都在中。
+[!UICONTROL Algorithmic Models] 不僅可以找到最具影響力的特徵，還可以根據這些特徵對用戶進行評分，並為每個用戶分配一個單獨的分數。 接著您可建立演算法特徵，來鎖定您的使用者。With accuracy and reach controls in the [!UICONTROL Trait Builder], you can specify which users amongst all those who have the influential traits you want to target.
 
-[!UICONTROL Algorithmic Models] 可讓您選擇不同準確度等級的使用者，並測試哪 [!UICONTROL Audience Lab] 組使用者轉換效果更佳。 請參閱Audience Lab中比較模 [型的詳細使用案例](../../features/audience-lab/audience-lab-use-cases.md#compare-models)。
+[!UICONTROL Algorithmic Models] 可讓您選擇不同準確度等級的使用者，並測試哪 [!UICONTROL Audience Lab] 組使用者轉換效果更佳。 請參閱[在 Audience Lab 中比較模型](../../features/audience-lab/audience-lab-use-cases.md#compare-models)中的詳細使用案例。
 
-在此 [!UICONTROL Algorithmic Models]模型中，每8天執行一次，並重新整理符合演算法特徵的使用者。
+In [!UICONTROL Algorithmic Models], the model runs every 8 days and refreshes the users qualified for algorithmic traits.
 
 ### 特徵建議
 
@@ -69,9 +72,9 @@ Audience Manager會根據您的第一方特徵、區段和區段顯示特 **[!UI
 
 您應在下列時 [!UICONTROL Trait Recommendations] 間使用：
 
-* 在建立細分時，您需要快速洞察；
-* 您使用區段做為簡短的促銷活動，或想要快速抑制轉換的觀眾；
-* 您正嘗試將觸及面最大化。
+* 您在建立區段時需要快速的深入分析；
+* 您正使用區段進行簡短的行銷活動，或想要快速隱藏轉換的受眾；
+* 您正嘗試最大程度提高觸及率。
 
 ## 工作流程
 
@@ -152,13 +155,14 @@ Audience Manager會根 [!UICONTROL Trait Similarity Score] 據s的數目計算�
 ### 範例1 —— 低特徵相似性分數
 
 假設有A和B兩個特徵，假設每個特徵的人口有1000,000 [!UICONTROL UUID]s，其中25,000 [!UICONTROL UUID]s符合這兩個特徵。
-使用上述公式，將會產生：25,000 / 1,975,000 = 0.012。這是低的， [!UICONTROL Trait Similarity Score]兩個特徵非常不同。
+使用上述公式，將會產生： 25,000 / 1,975,000 = 0.012。 這是低的， [!UICONTROL Trait Similarity Score]兩個特徵非常不同。
 
 ![特徵——建議——低重疊](assets/Trait-Recommendations-Low-overlap.png)
 
 ### 範例2 —— 特徵相似性分數
 
-如果同樣的A和B特徵有400,000 [!UICONTROL UUID]個符合這兩個特徵，那麼 [!UICONTROL Trait Similarity Score] 就高得多：400,000 / 1,600,000 = 0.25
+如果同樣的A和B特徵有400,000 [!UICONTROL UUID]個符合這兩個特徵，那麼 [!UICONTROL Trait Similarity Score] 就高得多：
+400,000 / 1,600,000 = 0.25
 
 ![特徵——建議——高重疊](assets/Trait-Recommendations-High-overlap.png)
 
