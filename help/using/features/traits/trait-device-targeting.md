@@ -1,19 +1,23 @@
 ---
-description: 說明您可用來在Audience manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
-seo-description: 說明您可用來在Audience manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
-seo-title: 使用平台層級的金鑰進行裝置定位
+description: 說明您可用來在Audience Manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
+seo-description: 說明您可用來在Audience Manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
+seo-title: 使用平台層級的索引鍵進行裝置定位
 solution: Audience Manager
-title: 使用平台層級的金鑰進行裝置定位
+title: 使用平台層級的索引鍵進行裝置定位
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
+feature: Traits
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 9%
 
 ---
 
 
-# Device Targeting With Platform-level Keys {#device-targeting-with-platform-level-keys}
+# 使用平台層級的索引鍵進行裝置定位 {#device-targeting-with-platform-level-keys}
 
-說明您可用來在Audience manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
+說明您可用來在Audience Manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
 
 ## 平台層級變數的用途 {#platform-variables}
 
@@ -23,7 +27,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 由用戶代理定義的平台級密鑰 {#keys-user-agent}
 
-從 [!UICONTROL Data Collection Servers] 請求中的使用者代理標 [題擷取這些索引鍵](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)`HTTP` 的值。 這些值表示來自資料庫的設備級 [!UICONTROL Device Atlas] 資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清單 [!UICONTROL Device Atlas] 中。
+從 [!UICONTROL Data Collection Servers] 請求中的使用者代理標 [題擷取這些索引鍵](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)`HTTP` 的值。 這些值代表來自資料庫的設備級 [!UICONTROL Device Atlas] 資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清單 [!UICONTROL Device Atlas] 中。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
