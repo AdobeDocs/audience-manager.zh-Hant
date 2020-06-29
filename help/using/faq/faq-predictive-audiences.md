@@ -4,9 +4,10 @@ seo-description: 預測受眾可協助您運用資料科學，將未知的受眾
 seo-title: 預測受眾常見問題集
 solution: Audience Manager
 title: Audience Manager 預測受眾
-translation-type: ht
-source-git-commit: 8cf504fa811e4043f83d0b9f11754065efccf7bb
-workflow-type: ht
+feature: Algorithmic Models
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 100%
 
