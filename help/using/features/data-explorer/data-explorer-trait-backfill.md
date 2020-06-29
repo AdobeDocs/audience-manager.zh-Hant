@@ -4,8 +4,12 @@ seo-description: 回填特徵實現，以擷取歷史受眾，並避免在特徵
 seo-title: 回填特徵實現
 title: 回填特徵實現
 uuid: 8b0ef4e6-d16a-4d1d-94f1-b84eebffa9a5
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 1%
 
 ---
 
