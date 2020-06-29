@@ -1,16 +1,20 @@
 ---
 description: 將鍵值欄位保留為空白，以搜尋更廣範圍的訊號，並使用可用的濾鏡來縮小結果。
 seo-description: 將鍵值欄位保留為空白，以搜尋更廣範圍的訊號，並使用可用的濾鏡來縮小結果。
-seo-title: 按過濾器搜索信號
-title: 按過濾器搜索信號
+seo-title: 按篩選條件搜尋訊號
+title: 按篩選條件搜尋訊號
 uuid: 99b00d48-6415-4cb1-848a-5401b34c43a6
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: 212ec8641068a9ed4c620987bb18586ee8c7d519
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 9%
 
 ---
 
 
-# 按過濾器搜索信號 {#search-signals-by-filters}
+# 按篩選條件搜尋訊號 {#search-signals-by-filters}
 
 將鍵值欄位保留為空白，以搜尋更廣範圍的訊號，並使用可用的濾鏡來縮小結果。
 
