@@ -1,30 +1,34 @@
 ---
-description: 本節概述並說明與Audience Manager資料管理平台(DMP)快速入門相關的程式。 本節旨在協助業務團隊、專案經理和技術經理瞭解Audience manager實作程式。 開始使用Audience manager大約需要6週到3個月，視您的資料收集需求而定。
-seo-description: 本節概述並說明與Audience Manager資料管理平台(DMP)快速入門相關的程式。 本節旨在協助業務團隊、專案經理和技術經理瞭解Audience manager實作程式。 開始使用Audience manager大約需要6週到3個月，視您的資料收集需求而定。
-seo-title: 實作Audience Manager
+description: 本節概述並說明與Audience Manager資料管理平台(DMP)快速入門相關的程式。 本節旨在協助業務團隊、專案經理和技術經理瞭解Audience Manager實作程式。 開始使用Audience Manager大約需要6週到3個月，視您的資料收集需求而定。
+seo-description: 本節概述並說明與Audience Manager資料管理平台(DMP)快速入門相關的程式。 本節旨在協助業務團隊、專案經理和技術經理瞭解Audience Manager實作程式。 開始使用Audience Manager大約需要6週到3個月，視您的資料收集需求而定。
+seo-title: 實作 Audience Manager
 solution: Audience Manager
-title: 實作Audience Manager
+title: 實作 Audience Manager
 uuid: 89369224-3b21-45a9-a4ed-a0a977410520
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: c5f9845a48d9d4432f38e9a0aaa256d89f9c1c11
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 1%
 
 ---
 
 
-# 實作Audience Manager {#implementing-audience-manager}
+# 實作 Audience Manager {#implementing-audience-manager}
 
-本節概述並說明與Audience Manager資料管理平台([!DNL DMP])快速入門相關的程式。 本節旨在協助業務團隊、專案經理和技術經理瞭解Audience manager實作程式。 開始使用Audience manager大約需要6週到3個月，視您的資料收集需求而定。
+本節概述並說明與Audience Manager資料管理平台([!DNL DMP])快速入門相關的程式。 本節旨在協助業務團隊、專案經理和技術經理瞭解Audience Manager實作程式。 開始使用Audience Manager大約需要6週到3個月，視您的資料收集需求而定。
 
 我們的實施技巧有助於與新客戶建立協商式合作關係。 此程式旨在：
 
 * 瞭解並瞭解您的業務需求；
 * 制定可行動的計畫，以滿足這些需求；
 * 開發自訂解決方案，以協助滿足獨特需求或使用案例；
-* 請確定您的專屬資料已匯入並可在Audience manager中使用。
+* 請確定您的專屬資料已匯入並可在Audience Manager中使用。
 
 我們的合作夥伴解決方案和客戶管理團隊將在實施程式之前、期間和之後與您密切合作。
 
-Audience manager採用分階段的方式來設定和實作。
+Audience Manager採用分階段的方式來設定和實作。
 
 ## 定義階段 {#define-phase}
 
@@ -153,13 +157,13 @@ Audience manager採用分階段的方式來設定和實作。
 | 準備資料收集策略 | 與Adobe技術團隊合作，建立符合您業務需求的資料收集計畫 | 商業與技術團隊 |
 | 部署和測試程式碼 | 在測試環境中測試建議的解決方案並執行跨瀏覽器測試 | 技術團隊 |
 | 驗證功能並解決錯誤 | 檢查並傳達結果、解決錯誤並重新測試 | 技術團隊 |
-| 使用者訓練 | 提供有關Audience manager功能、工具和報告的教育與瞭解 | 商業團隊 |
+| 使用者訓練 | 提供有關Audience Manager功能、工具和報告的教育與瞭解 | 商業團隊 |
 
 此階段的交付項包括：
 
 * 已完成且已接受的資料收集計畫；
 * 端對端測 [!DNL QA] 試；
-* Audience manager使用者介面功能的基本說明；
+* Audience Manager使用者介面功能的基本說明；
 * 接受與簽署。
 
 ## 啟動、支援和最佳化階段 {#launch-support-optimize-phase}
@@ -201,7 +205,7 @@ Audience manager採用分階段的方式來設定和實作。
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> 後續通訊 </td> 
-   <td colname="col2"> 定期排程的通訊，讓您隨時掌握使用Audience manager的使用體驗 </td> 
+   <td colname="col2"> 定期排程的通訊，讓您隨時掌握使用Audience Manager的使用體驗 </td> 
    <td colname="col3"> 商業與技術團隊 </td> 
   </tr> 
  </tbody> 
@@ -213,7 +217,7 @@ Audience manager採用分階段的方式來設定和實作。
 * 瞭解自訂報表；
 * 如何取得產品支援
 * 回應或徵求功能要求、錯誤和使用者意見；
-* 加深對Audience manager功能和報告的熟悉。
+* 加深對Audience Manager功能和報告的熟悉。
 
 ## 程式碼實作 {#code-implementation}
 
@@ -223,7 +227,7 @@ Audience manager採用分階段的方式來設定和實作。
 
 ### 部署工作
 
-Audience manager程式碼片段會呼 [!DNL Akamai] 叫下載先前在使用者介面中設定的業務規則。 此外，用戶端瀏覽器會快取此資訊，以縮短頁面和伺服器載入時間。 我們的程式碼和資料收集方法旨在維護庫存的使用者體驗。
+Audience Manager程式碼片段會呼 [!DNL Akamai] 叫下載先前在使用者介面中設定的業務規則。 此外，用戶端瀏覽器會快取此資訊，以縮短頁面和伺服器載入時間。 我們的程式碼和資料收集方法旨在維護庫存的使用者體驗。
 
 ### 參與者
 
@@ -235,6 +239,6 @@ Audience manager程式碼片段會呼 [!DNL Akamai] 叫下載先前在使用者�
 
 <!-- c_post_implement_support.xml -->
 
-客戶經理在產品實施程式完成後，提供持續的支援和諮詢服務。 您可以期待與客戶經理定期會面。 這些會議可確保您從Audience manager獲得最大的使用量和價值。
+客戶經理在產品實施程式完成後，提供持續的支援和諮詢服務。 您可以期待與客戶經理定期會面。 這些會議可確保您從Audience Manager獲得最大的使用量和價值。
 
 請在這裡 [聯絡我們](https://www.adobe.com/products/audiencemanager.html) ，以取得詳細資訊，並開始使用Audience Manager。
