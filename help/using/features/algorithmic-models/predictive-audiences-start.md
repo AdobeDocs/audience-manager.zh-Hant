@@ -1,16 +1,20 @@
 ---
-description: Predictive Audiences可協助您使用資料科學，將未知的受眾即時分類為不同的角色。
-seo-description: Predictive Audiences可協助您使用資料科學，將未知的受眾即時分類為不同的角色。
+description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
+seo-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
 seo-title: 管理預測性對象
 solution: Audience Manager
-title: Audience Manager預測性觀眾
+title: Audience Manager 預測受眾
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 8259f07c91efa0efd88e8f7c87cb1829ffadd77d
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 8%
 
 ---
 
 
-# 預測性觀眾快速入門 {#predictive-audiences-getting-started}
+# 預測受眾快速入門 {#predictive-audiences-getting-started}
 
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
@@ -35,9 +39,9 @@ source-git-commit: 8259f07c91efa0efd88e8f7c87cb1829ffadd77d
    ![smart-persona-select-audience](assets/predictive-audiences-audience.png)
 1. 在選 **[!UICONTROL Next]** 擇您的觀眾後按一下。
 1. 填寫模型詳細資料：
-   1. **[!UICONTROL Model Name]**:為模型輸入描述性名稱，這將幫助您稍後識別它。 由模型生成的段的名稱將以模型的名稱開頭。
-   2. **[!UICONTROL Description]**:輸入有助於識別其使用案例的模型說明。
-   3. **[!UICONTROL Data Source]**:選擇您要將此模型中的區段指 [!UICONTROL Predictive Audiences] 派給的第一方資料來源。
+   1. **[!UICONTROL Model Name]**: 為模型輸入描述性名稱，這將幫助您稍後識別它。 由模型生成的段的名稱將以模型的名稱開頭。
+   2. **[!UICONTROL Description]**: 輸入有助於識別其使用案例的模型說明。
+   3. **[!UICONTROL Data Source]**: 選擇您要將此模型中的區段指 [!UICONTROL Predictive Audiences] 派給的第一方資料來源。
       ![predictive-audiences-save](assets/predictive-audiences-save.png)
 1. 按一下 **[!UICONTROL Save]**.
 
