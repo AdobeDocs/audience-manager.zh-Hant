@@ -1,17 +1,21 @@
 ---
 description: 「特徵」控制面板是集中式工作區，用於管理特徵。
 seo-description: 「特徵」控制面板是集中式工作區，用於管理特徵。
-seo-title: 特徵儀表板
+seo-title: 特徵控制面板
 solution: Audience Manager
-title: 特徵儀表板
+title: 特徵控制面板
 uuid: 31b8f958-f67d-4af2-8d78-e37e2dfe810d
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 2a3a562d5bc516c338c113db08303cf36e832f47
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 4%
 
 ---
 
 
-# 特徵儀表板 {#traits-dashboard}
+# 特徵控制面板 {#traits-dashboard}
 
 「特 [徵」儀表板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) ，是集中式工作區，用於管理特徵。 您可導覽至 [!UICONTROL Traits] >以檢視控制 **[!UICONTROL Audience Data]** 面板 **[!UICONTROL Traits]**。
 
