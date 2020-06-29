@@ -5,8 +5,12 @@ seo-title: 私人資料摘要
 solution: Audience Manager
 title: 私人資料摘要
 uuid: e4ca59ca-bbc9-4897-9374-8f3d54b2beee
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: 21b2505ac6cdf97b401bf0b0ac80bf1964f084b8
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +52,7 @@ source-git-commit: 21b2505ac6cdf97b401bf0b0ac80bf1964f084b8
    <td colname="col2"> <p>列出未訂閱私人資料饋送的已核准購買者。 </p> <p>核准可讓購買者檢視資料饋送，就像它是公開的。 這可讓他們在訂閱之前，先檢閱並評估您的動態消息。 您也可以為列為潛在訂閱者的買家提供資料饋送的折扣。 購買者訂閱後，其個人檔案會移至「目前的訂 <b><span class="uicontrol"> 閱者」</span></b>。 </p> </td>
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol"> 存取要求</span></b> </p> </td>
+   <td colname="col1"> <p> <b><span class="uicontrol"> 存取請求</span></b> </p> </td>
    <td colname="col2"> <p>列出私人資料饋送的新訂閱請求。 按一下此標籤可複查、批准或拒絕採購員請求。 </p>
     <ul id="ul_BE0A835A90B14C05B3F63226B79D052D"> 
      <li id="li_2C5686CEB6F4430BA18AED5AD75C330A">已核准的購買者會移至 <b><span class="uicontrol"> 潛在訂閱者</span></b>。 </li>
@@ -57,7 +61,7 @@ source-git-commit: 21b2505ac6cdf97b401bf0b0ac80bf1964f084b8
   </tr>
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 詳細資訊要求</span></b> </p> </td>
-   <td colname="col2"> <p>列出尚未訂閱資料饋送且要求取得更多動態消息資訊的已核准購買者。 </p> <p>核准可讓購買者檢視資料饋送，就像它是公開的。 這可讓他們在訂閱之前，先檢閱並評估您的動態消息。 您也可以為要求存取權的買家提供資料饋送的折扣。 響應詳細資訊請求會從此標籤中刪除採購員配置檔案。 如果他們尚未訂閱，購買者個人檔案仍在「潛在訂閱者」 <b><span class="uicontrol"> 中</span></b>。 </p> </td>
+   <td colname="col2"> <p>列出尚未訂閱資料饋送且要求取得更多動態消息資訊的已核准購買者。 </p> <p>核准可讓購買者檢視資料饋送，就像它是公開的。 這可讓他們在訂閱之前，先檢閱並評估您的動態消息。 您也可以針對要求存取權的買家提供資料饋送的折扣。 響應詳細資訊請求會從此標籤中刪除採購員配置檔案。 如果他們尚未訂閱，購買者個人檔案仍在「潛在訂閱者」 <b><span class="uicontrol"> 中</span></b>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 拒絕存取</span></b> </p> </td> 
@@ -109,7 +113,7 @@ source-git-commit: 21b2505ac6cdf97b401bf0b0ac80bf1964f084b8
 
 ### 後續步驟
 
-請參閱 訂 [閱私人資料饋送](../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed) ，以要求存取。
+請參閱 [訂閱私人資料饋送](../../features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed) ，請求存取權。
 
 ## 如何建立資料提供者與資料購買者的共用關係 {#set-up-sharing-relationship}
 
@@ -119,14 +123,14 @@ source-git-commit: 21b2505ac6cdf97b401bf0b0ac80bf1964f084b8
 
 ### 步驟2 —— 資料提供者——建立新資料來源
 
-在您的Audience manager帳戶中，建立新的Cookie資料來源，其中包含：
+在您的Audience Manager帳戶中，建立新的Cookie資料來源，其中包含：
 
 * **Audience Manager ID** （傳入金鑰）;
 * 已勾 **選「啟用** 共用」選項。
 
 ![](assets/create-datasource.png)
 
-按一下「儲 **存**」後，「特徵儲存&gt;第三方資料」中會自 **動建立新的子資料夾**。
+按一下「儲 **存**」後，「特徵儲存>第三方資料」中會自 **動建立新的子資料夾**。
 
 ![](assets/folder-structure.png)
 
@@ -151,15 +155,15 @@ source-git-commit: 21b2505ac6cdf97b401bf0b0ac80bf1964f084b8
 
 ### 步驟5 —— 資料採購員——請求訪問
 
-前往「 **Audience Marketplace &gt; Marketplace**」。 搜尋資料提供者在上一步驟中建立的資料饋送。 按一 **下「請求存取**」。 資料提供方指定的聯絡人現在會收到電子郵件通知。 另請參閱 [訂閱私人資料饋送](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
+前往「 **Audience Marketplace > Marketplace**」。 搜尋資料提供者在上一步驟中建立的資料饋送。 按一 **下「請求存取**」。 資料提供方指定的聯絡人現在會收到電子郵件通知。 另請參閱 [訂閱私人資料饋送](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
 
 ### 步驟6 —— 資料提供者——授予訪問權限
 
-前往「 **Audience Marketplace &gt;我的共用資料** 」，並搜尋您在步驟4中建立的動態消息。 按一下新的存取要求，然後按一 **下「允許存取** 」以核准請求。 另請參閱「 [檢閱、核准或拒絕私人動態消息請求」](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
+前往「 **觀眾市集>我的共用資料** 」，並搜尋您在步驟4中建立的動態消息。 按一下新的存取要求，然後按一 **下「允許存取** 」以核准請求。 另請參閱「 [檢閱、核准或拒絕私人動態消息請求」](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
 
 ### 步驟7 —— 資料購買者——開啟訂閱
 
-資料提供者授與資料饋送的存取權後，您就可以在「對象市集&gt;市集」的帳 **戶中查看饋送**。 檢閱詳細資訊，開啟「訂閱」按鈕，然後按一下「檢閱 **與訂閱」**。 如需 [在何處尋找第三方特徵的詳細資訊](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee) ，請參閱訂閱資料饋送的儲存。
+資料提供者授與資料饋送的存取權後，您就可以在「對象市集>市集」的帳 **戶中查看饋送**。 檢閱詳細資訊，開啟「訂閱」按鈕，然後按一下「檢閱 **與訂閱」**。 如需 [在何處尋找第三方特徵的詳細資訊](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee) ，請參閱訂閱資料饋送的儲存。
 
 請注意，這些特徵只能在資料提供者的帳戶中編輯。
 
