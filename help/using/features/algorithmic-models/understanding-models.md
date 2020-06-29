@@ -6,8 +6,9 @@ seo-title: 關於相似模型
 solution: Audience Manager
 title: 關於相似模型
 uuid: 39441e72-5316-453d-9aff-0e0b633aabcd
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 9a8c0650d3f00a95a8a1f05c248c21b420e727e0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 1%
@@ -46,7 +47,7 @@ ht-degree: 1%
 
 ## 瞭解 [!UICONTROL TraitWeight] {#understanding-traitweight}
 
-[!UICONTROL TraitWeight] 是專為自動發現新功能而設計的專 [!UICONTROL traits] 屬演算法。 它會將您 [!UICONTROL trait] 目前和您 [!UICONTROL traits] 可 [!UICONTROL segments] 以存取的所有其他第一方和第三方資料進行比較 [!DNL Audience Manager]。 請參閱本節，以取得演算法探索程 [!UICONTROL TraitWeight] 序的說明。
+[!UICONTROL TraitWeight] 是專為自動發現新功能而設計的專 [!UICONTROL traits] 屬演算法。 它會將您 [!UICONTROL trait] 目前和您 [!UICONTROL traits] 可 [!UICONTROL segments] 以透過存取的所有其他第一方和第三方資料進行比較 [!DNL Audience Manager]。 請參閱本節，以取得演算法探索程 [!UICONTROL TraitWeight] 序的說明。
 
 ![](assets/algo_model.png)
 
