@@ -1,19 +1,23 @@
 ---
 description: 建立合作夥伴專屬的DIL例項。
 seo-description: 建立合作夥伴專屬的DIL例項。
-seo-title: DIL建立
+seo-title: DIL 建立
 solution: Audience Manager
-title: DIL建立
+title: DIL 建立
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 10%
 
 ---
 
 
 # DIL建立方法{#dil-create}
 
-## DIL建立 {#dil-create-new}
+## DIL 建立 {#dil-create-new}
 
 建立特定於合作夥伴的 [!UICONTROL DIL] 實例。
 
@@ -45,7 +49,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> containerNSID </code> </p> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>該屬性會設定 <span class="keyword">Audience Manager</span> 所使用的容器 ID 以供 ID 同步之用。如果您已 <code> containerNSID </code> 在多個網站上 <span class="wintitle"> 部 </span> 署DIL，請加以設定。 這些網站都會有其專屬的容器ID和ID同步。 當您只有1個網站時，容器ID預設為0，您不需要正確設定。 請連絡您的顧問，以取得網站及其容器ID的清單。 </p> <p>在 <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service中，屬 </a>性與DIL <code> idSyncContainerID </code> 中 <code> containerNSID </code> 的相 <span class="wintitle"> 對應 </span>。 如果您在多個網站上使用 <span class="wintitle"> DIL </span> 和 <i>ID服務</i> ，請注意下列事項： </p> <p> 
+   <td colname="col3"> <p>該屬性會設定 <span class="keyword">Audience Manager</span> 所使用的容器 ID 以供 ID 同步之用。如果您已 <code> containerNSID </code> 在多個網站上 <span class="wintitle"> 部 </span> 署DIL，請加以設定。 這些網站都會有其專屬的容器ID和ID同步。 當您只有1個網站時，容器ID預設為0，您不需要正確設定。 請連絡您的顧問，以取得網站及其容器ID的清單。 </p> <p>在 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html" format="https" scope="external"> Adobe Experience Platform Identity Service中，屬 </a>性與DIL <code> idSyncContainerID </code> 中 <code> containerNSID </code> 的相 <span class="wintitle"> 對應 </span>。 如果您在多個網站上使用 <span class="wintitle"> DIL </span> 和 <i>ID服務</i> ，請注意下列事項： </p> <p> 
      <ul id="ul_FF17004C21FC408BB8C8CCE670E45F37"> 
       <li id="li_FFB23BB3CD224678B0A1CF3731F6A206">對於每個網站，請在和上設定相同的容 <code> containerNSID </code> 器ID <code> idSyncContainerID </code>。 </li> 
       <li id="li_CC932D3A0D154F6C9566EF31260A14CF">DIL <span class="wintitle"> 和ID服 </span> 務都會嘗試傳送ID同步檔至我們的資料收集iFrame。 不過，iFrame可確保 <span class="wintitle"> DIL </span> 不會觸發ID同步。 這可防止重複。 </li> 
@@ -62,7 +66,7 @@ r_dil_create.xml
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
      <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>: Audience Manager指派給您的資料合作 <span class="keyword"> 夥伴ID </span>。 </li> 
      <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>: 您的使用者唯一ID。 </li> 
-    </ul> <p> <p>重要：  僅對您的ID使用未編碼值。 編碼會建立雙重編碼識別碼。 </p> </p> <p> <p>注意：  如果您使用 <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service，請 </a>使用方法設定客戶ID，而 <code> setCustomerIDs </code> 非 <span class="wintitle"> DIL </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
+    </ul> <p> <p>重要：  僅對您的ID使用未編碼值。 編碼會建立雙重編碼識別碼。 </p> </p> <p> <p>注意：  如果您使用 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html" format="https" scope="external"> Adobe Experience Platform Identity Service，請 </a>使用方法設定客戶ID，而 <code> setCustomerIDs </code> 非 <span class="wintitle"> DIL </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> delayAllUntilWindowLoad </code> </p> </td> 
