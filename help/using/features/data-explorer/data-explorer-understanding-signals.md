@@ -1,18 +1,22 @@
 ---
-description: 訊號是Audience manager中最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
-seo-description: 訊號是Audience manager中最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
-seo-title: 瞭解信號
-title: 瞭解信號
+description: 訊號是Audience Manager中最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
+seo-description: 訊號是Audience Manager中最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
+seo-title: 瞭解訊號
+title: 瞭解訊號
 uuid: 04a0554e-954e-484a-8838-9161ef416872
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 2%
 
 ---
 
 
-# 瞭解信號
+# 瞭解訊號
 
-訊號是Audience manager中最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
+訊號是Audience Manager中最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
 
 [!DNL Audience Manager] 使用鍵值對來表示信號。 例如，下列訊號可能表示訪客已到達包含電子產品的網頁：
 
@@ -22,10 +26,10 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 * *鍵值對* (Key-value pair)顯示接收到的信號的鍵值對(key-value pair) [!DNL Audience Manager]。
 * *信號類型* ，描述每個信號的類別。 信號分為以下類別：
-   * [可操作的日誌檔案](/help/using/integration/media-data-integration/actionable-log-files.md):從媒體效能日誌檔案中接收的即時信號；
-   * [!DNL Adobe Analytics]:從您的帳戶接收的即時 [!DNL Adobe Analytics] 信號；
-   * 一般線上資料：您的觀眾活動產生的即時資料，未包含在可操作的記錄檔中 [!DNL Adobe Analytics];
-   * 已登錄記錄：通過批次資料傳輸接收的資料。
+   * [可操作的日誌檔案](/help/using/integration/media-data-integration/actionable-log-files.md): 從媒體效能日誌檔案中接收的即時信號；
+   * [!DNL Adobe Analytics]: 從您的帳戶接收的即時 [!DNL Adobe Analytics] 信號；
+   * 一般線上資料： 您的觀眾活動產生的即時資料，未包含在可操作的記錄檔中 [!DNL Adobe Analytics];
+   * 已登錄記錄： 通過批次資料傳輸接收的資料。
 * *信號源* (Signal Source)取決於信號類型：
    * 對於已登錄的信號，信號源是資料源名稱。
    * 若是源自的 [!DNL Adobe Analytics]訊號，資料來源將永遠是報表套裝。
@@ -35,11 +39,11 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 ## 信號資料刷新頻率
 
-由於Audience manager每日處理的資料量龐大，因此會根據訊號類型 [!UICONTROL Data Explorer] ，以固定的時間間隔重新整理顯示的信號資料：
+由於Audience Manager每日處理的資料量龐大，因此會根據訊號類型 [!UICONTROL Data Explorer] ，以固定的時間間隔重新整理顯示的信號資料：
 
 * 即時訊號資料(可操作的記錄檔、 [!DNL Adobe Analytics] 資料和一般的線上資料)每4到6小時重新整理一次。
 * 每24小時更新一次已登入的信號資料。
 
 ## 相關概念
 
-[信號、特徵和區段](/help/using/reference/signal-trait-segment.md)
+[訊號、特徵和區段](/help/using/reference/signal-trait-segment.md)
