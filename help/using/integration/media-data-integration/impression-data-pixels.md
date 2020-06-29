@@ -5,8 +5,9 @@ seo-title: 透過像素呼叫擷取行銷活動的曝光資料
 solution: Audience Manager
 title: 透過像素呼叫擷取行銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
+feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: 3523cdb0d6d412c1a93694e4cbeab188154120f0
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 20%
