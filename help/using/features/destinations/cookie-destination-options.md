@@ -1,20 +1,24 @@
 ---
 description: 在「目標產生器」中，「設定」區段包含「Cookie網域」和「發佈資料至」欄位。 這些可讓您建立規則以判斷目標是設定Cookie還是傳回Cookie。 Cookie網域和發佈資料彼此獨立運作，且為選用。 您可以建立Cookie目的地，而不需使用其中任一個。
 seo-description: 在「目標產生器」中，「設定」區段包含「Cookie網域」和「發佈資料至」欄位。 這些可讓您建立規則以判斷目標是設定Cookie還是傳回Cookie。 Cookie網域和發佈資料彼此獨立運作，且為選用。 您可以建立Cookie目的地，而不需使用其中任一個。
-seo-title: Cookie目的地的選用設定
+seo-title: Cookie 目的地的選用設定
 solution: Audience Manager
-title: Cookie目的地的選用設定
+title: Cookie 目的地的選用設定
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 7%
 
 ---
 
 
-# Cookie目的地的選用設定 {#optional-settings-cookies}
+# Cookie 目的地的選用設定 {#optional-settings-cookies}
 
 在 [!UICONTROL Destination Builder]中， [!UICONTROL Configuration section] 包含 [!UICONTROL Cookie Domain] 和字 [!UICONTROL Publish Data To] 段。 這些可讓您建立規則以判斷目標是設定Cookie還是傳回Cookie。 [!UICONTROL Cookie Domain] 並 [!UICONTROL Publish Data To] 且彼此獨立工作，是可選的。 您可以建立Cookie目的地，而不需使用其中任一個。
 
-## Cookie網域：語法與範例 {#cookie-domain-syntax}
+## Cookie網域： 語法與範例 {#cookie-domain-syntax}
 
 <!-- cookie-destination-options.xml -->
 
@@ -54,9 +58,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 網站 </th> 
-   <th colname="col2" class="entry">Cookie網域：.sports.com <p>Cookie集 </p> </th> 
-   <th colname="col3" class="entry">Cookie網域：.golf.sports.com <p>Cookie集 </p> </th> 
-   <th colname="col4" class="entry">Cookie網域：空白 <p>Cookie集 </p> </th> 
+   <th colname="col2" class="entry">Cookie網域： .sports.com <p>Cookie集 </p> </th> 
+   <th colname="col3" class="entry">Cookie網域： .golf.sports.com <p>Cookie集 </p> </th> 
+   <th colname="col4" class="entry">Cookie網域： 空白 <p>Cookie集 </p> </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -91,9 +95,9 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 如果 [!UICONTROL Publish Data To] 網域符合您選取的選項所設定的標準，則設定會傳回Cookie。 選項包括:
 
-* **[!UICONTROL All of our domains]**:（預設）傳回任 [!DNL cookie] 何網域的值。
-* **[!UICONTROL Only the selected domains]**:僅傳回網域清單中選取之網域的Cookie。
-* **[!UICONTROL All of our domains except the selected domains]**:防止選定域接收 [!DNL cookie]。 所有其他網域都可接收 [!DNL cookie]。
+* **[!UICONTROL All of our domains]**: （預設）傳回任 [!DNL cookie] 何網域的值。
+* **[!UICONTROL Only the selected domains]**: 僅傳回網域清單中選取之網域的Cookie。
+* **[!UICONTROL All of our domains except the selected domains]**: 防止選定域接收 [!DNL cookie]。 所有其他網域都可接收 [!DNL cookie]。
 
 >[!MORELIKETHIS]
 >
