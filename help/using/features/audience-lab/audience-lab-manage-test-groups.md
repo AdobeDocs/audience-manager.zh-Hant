@@ -1,12 +1,16 @@
 ---
-description: 此程式會逐步帶您完成在Audience lab中建立、編輯或刪除測試群組所需的步驟
-seo-description: 此程式會逐步帶您完成在Audience lab中建立、編輯或刪除測試群組所需的步驟
+description: 此程式會逐步帶您完成在Audience Lab中建立、編輯或刪除測試群組所需的步驟
+seo-description: 此程式會逐步帶您完成在Audience Lab中建立、編輯或刪除測試群組所需的步驟
 seo-title: 管理測試群組
 solution: Audience Manager
 title: 管理測試群組
 uuid: 2fadddeb-7574-4853-8c52-c58456582c62
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: 96b353d4b35a72ea087f7c82910e9272bc457bdc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +21,7 @@ source-git-commit: 96b353d4b35a72ea087f7c82910e9272bc457bdc
 
 ## 建立區段測試群組 {#create-test-groups}
 
-### 必備條件
+### 必要條件
 
 <!-- create-test-group.xml -->
 
@@ -27,12 +31,12 @@ source-git-commit: 96b353d4b35a72ea087f7c82910e9272bc457bdc
    >
    >[不支援](../../features/traits/about-folder-traits.md)**資料夾特徵** 。 [!UICONTROL Audience Lab]將資料 [夾特徵的「事件類型](../../features/traits/create-onboarded-rule-based-traits.md) 」設定為 **轉換時** ，不會針對該特定資料夾特徵 [!UICONTROL Audience Lab] 產生任何資料。
 
-* 對於使用基於 [角色的訪問控制的公司](../../features/administration/administration-overview.md):指派萬用 [!UICONTROL Audience Lab] 字元 [權限](../../features/administration/administration-overview.md#wild-card-permissions) ，以 **[!UICONTROL User Groups]** 提供存取權。 此權限可讓使用者建立並檢視測試結果。 使用者只能使用其具有讀取權限的資料來源 **的****區段並對應至目標** 權限。 使用者只能使用來自其具有「讀取」權限之資料來源的 **轉換特徵** 。 使用者也只能看到他們可存取的目的地。 因此，在將萬用字 [!DNL Audience Lab] 元權限新增至群組之前，請確定群組具有：
+* 對於使用基於 [角色的訪問控制的公司](../../features/administration/administration-overview.md): 指派萬用 [!UICONTROL Audience Lab] 字元 [權限](../../features/administration/administration-overview.md#wild-card-permissions) ，以 **[!UICONTROL User Groups]** 提供存取權。 此權限可讓使用者建立並檢視測試結果。 使用者只能使用其具有讀取權限的資料來源 **的****區段並對應至目標** 權限。 使用者只能使用來自其具有「讀取」權限之資料來源的 **轉換特徵** 。 使用者也只能看到他們可存取的目的地。 因此，在將萬用字 [!DNL Audience Lab] 元權限新增至群組之前，請確定群組具有：
    * 讀取相關轉化特徵；
    * 存取讀取並對應相關區段以進行測試；
    * 存取相關目的地。
 
-要建立新 [!UICONTROL Segment Test Group]:
+To create a new [!UICONTROL Segment Test Group]:
 
 1. 在控 **[!UICONTROL Create New Test Group]** 制面板中 [!UICONTROL Audience Lab] 選擇以啟動嚮導。
 1. **[!UICONTROL Basic Info & Choose Segment]**
@@ -56,10 +60,10 @@ source-git-commit: 96b353d4b35a72ea087f7c82910e9272bc457bdc
 
 1. **[!UICONTROL Select Conversion Traits]**
 
-   * 在轉換特徵視窗中輸入以新增轉換特徵。 這是必 **備步驟** ，除非您至少新增一個轉換特徵，否則無法繼續下一個步驟。
+   * 在轉換特徵視窗中輸入以新增轉換特徵。 這是必 **備步驟** ，除非您新增至少一個轉換特徵，否則您無法繼續下一個步驟。
    * 如果您願意，最多可以新增5個轉換特徵。
    * 當您選取已用於其他測試群組的轉換特徵時，將會顯示警報。
-   * 請注意，Audience manager不支援將資料夾特 [徵用作](/help/using/features/traits/about-folder-traits.md) 轉換特徵。 選取資料夾特徵作為轉換特徵，會導致測試中顯示0個匯總和趨勢報表。
+   * 請注意，Audience Manager不支援將資料夾特 [徵用作](/help/using/features/traits/about-folder-traits.md) 轉換特徵。 選取資料夾特徵作為轉換特徵，會導致測試中顯示0個匯總和趨勢報表。
 
 1. **[!UICONTROL Choose Destinations & Dates]**
 
