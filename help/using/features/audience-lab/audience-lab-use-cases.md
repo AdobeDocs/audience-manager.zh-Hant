@@ -1,22 +1,26 @@
 ---
-description: Audience lab可讓您使用基準區段來建立測試群組，借以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
-seo-description: Audience lab可讓您使用基準區段來建立測試群組，借以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
-seo-title: Audience lab使用案例
+description: Audience Lab可讓您使用基準區段來建立測試群組，借以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
+seo-description: Audience Lab可讓您使用基準區段來建立測試群組，借以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
+seo-title: Audience Lab 使用案例
 solution: Audience Manager
-title: Audience lab使用案例
+title: Audience Lab 使用案例
 topic: DIL API
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
+feature: Audience Lab
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
-# Audience lab使用案例 {#audience-lab-use-cases}
+# Audience Lab 使用案例 {#audience-lab-use-cases}
 
 [!UICONTROL Audience Lab] 允許您使用基線區段來建立測試群組，以啟用數個使用案例。 您可以將測試群組分割為數個互斥的測試區段，將這些區段對應至不同的目的地，然後判斷哪個區段對於驅動轉換最有效。
 
-## Audience lab中的模型比較 {#compare-models}
+## Audience Lab中的模型比較 {#compare-models}
 
 您可以在中使用幾種不同的模型類型和來源 [!DNL Audience Manager]。 [!UICONTROL Audience Lab] 提供比較客戶在各個作用中模型轉換率的簡單方式。
 
@@ -33,13 +37,13 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 
 1. [在中建立兩個段測試組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups) ，一個 [!UICONTROL Audience Lab]以模型1段作為基線 *，另一個以模型2段作為基線*** 。
 
-   * 請讓兩個測試群組的變數保持相同：相同的目的地、創意、轉換特性。
+   * 請讓兩個測試群組的變數保持相同： 相同的目的地、創意、轉換特性。
    * 請確定測試區段的使用者數量相近（例如160萬和180萬是正確的，160萬和1600萬不是正確的）。
    * 在每個測試區段測試群組中保留控制區段。 如此，您就可以保留每個區段的一小部分，而不會在測試中明確定位。
 
 1. 檢查結果：
 
-   * Audience lab報 [表檢視](../../features/audience-lab/audience-lab-reporting-view.md) ，將顯示每個模型所推動的轉換數。 對於轉換型促銷活動，驅動最多轉換的測試區段將代表執行成效最佳的模型。
+   * Audience Lab報 [表檢視](../../features/audience-lab/audience-lab-reporting-view.md) ，將顯示每個模型所推動的轉換數。 對於轉換型促銷活動，驅動最多轉換的測試區段將代表執行成效最佳的模型。
    * 由於您擁有控制區段，因此您也可以評估模型對「標準定位」的運作方式。 您不僅測試一種模型，還測試「此模型是否比一般做法更好？」
 
 ## 測試各目標地的創意素材 {#testing-creatives}
@@ -55,4 +59,4 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
 1. 指定測試的開始日期和結束日期。
 1. 在目標位置設定區段和創意素材。
 1. Audience Lab [報表檢視](../../features/audience-lab/audience-lab-reporting-view.md) ，將顯示創意人員在各目標地區推動的轉換次數。
-1. 由於您建立了控制區段，因此您也可以評估創意對自然發生的轉換有何影響。 您正在測試這個問題：「此創意產生的轉換率是否高於一般實務？」
+1. 由於您建立了控制區段，因此您也可以評估創意對自然發生的轉換有何影響。 您正在測試這個問題： 「此創意產生的轉換率是否高於一般實務？」
