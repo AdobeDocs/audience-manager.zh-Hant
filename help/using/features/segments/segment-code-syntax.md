@@ -5,8 +5,12 @@ seo-title: 區段運算式編輯器中使用的程式碼語法
 solution: Audience Manager
 title: 區段運算式編輯器中使用的程式碼語法
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
+feature: Segments
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 11%
 
 ---
 
@@ -41,13 +45,13 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 | 名稱或變數 | 說明 |
 |---|---|
 | `FREQUENCY` | 必須位於運算式前方的常值。 |
-| ` [`&lt;`traitID`&gt;`T]` | 一組特徵ID，後面接著字母 `T`。 以逗號分隔多個特徵。 例如, `[123T, 456T]`. |
+| ` [`&lt;`traitID`>`T]` | 一組特徵ID，後面接著字母 `T`。 以逗號分隔多個特徵。 例如, `[123T, 456T]`. |
 | ` <Recency Operator><Numeric Value>D` | *（可選）* ，設定區段中特徵的時近規則。 信以天 `D` 為單位表示最近一次。 |
 | ` <Frequency Operator><Numeric Value>` | 設定區段中特徵的頻率規則。 |
 
 ### 允許的時近和頻率運算子
 
-使用 [比較運算子和整數](../../features/segments/recency-and-frequency.md) ，設定時近和頻率間隔。 [!UICONTROL Segment Builder] 使用標準運算式，例如&lt;（小於）、&gt;（大於）、==（等於）等。 不過，當您設定時近或頻率時，允許的運算子類型會有所不同。 下表列出了允許的時近／頻率運算子。
+使用 [比較運算子和整數](../../features/segments/recency-and-frequency.md) ，設定時近和頻率間隔。 [!UICONTROL Segment Builder] 使用標準運算式，例如&lt;（小於）、>（大於）、==（等於）等。 不過，當您設定時近或頻率時，允許的運算子類型會有所不同。 下表列出允許的時近／頻率運算子。
 
 <table id="table_2F92617CB472442BA5639E24DB4E43D3"> 
  <thead> 
@@ -75,7 +79,7 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 
 >[!MORELIKETHIS]
 >
->* [時近與頻率](../../features/segments/recency-and-frequency.md)
+>* [使用間隔和頻率](../../features/segments/recency-and-frequency.md)
 >* [特徵和區段產生器中的布林運算式](../../reference/boolean-expressions-tsb.md)
 >* [在TraitBuilder中使用比較運算子](../../features/traits/trait-comparison-operators.md)
 >* [TraitBuilder運算式中的運算順序](../../features/traits/trait-operator-precedence.md)
