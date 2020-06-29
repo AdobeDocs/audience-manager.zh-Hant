@@ -2,17 +2,21 @@
 description: 例項層級的DIL API可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
 keywords: create traits;create trait
 seo-description: 例項層級的DIL API可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
-seo-title: 例項層級DIL方法
+seo-title: 例項層級 DIL 方法
 solution: Audience Manager
-title: 例項層級DIL方法
+title: 例項層級 DIL 方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
+feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 13%
 
 ---
 
 
-# 例項層級DIL方法{#instance-level-dil-methods}
+# 例項層級 DIL 方法{#instance-level-dil-methods}
 
 例項層級的 [!UICONTROL DIL] API可讓您以程式設計方式建立及使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
 
@@ -720,7 +724,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >* [關鍵變數的名稱要求](../features/traits/trait-key-name-requirements.md)
 >* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
 >* [Adobe Experience Platform Identity Service中的同步功能](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
->* [DIL建立](../dil/dil-class-overview/dil-create.md#dil-create)
+>* [DIL 建立](../dil/dil-class-overview/dil-create.md#dil-create)
 >* [Adobe Experience Platform Identity Service: UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
 >* [Adobe Experience Platform Identity Service中的CORS支援](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
