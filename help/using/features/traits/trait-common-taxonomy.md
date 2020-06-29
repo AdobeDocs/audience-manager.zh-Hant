@@ -2,17 +2,21 @@
 description: 本文概括地介紹了使用通用分類法對特徵進行分類的方法。
 keywords: DIL
 seo-description: 本文概括地介紹了使用通用分類法對特徵進行分類的方法。
-seo-title: 使用通用分類法分類特徵
+seo-title: 使用通用分類法將特徵分類
 solution: Audience Manager
-title: 使用通用分類法分類特徵
+title: 使用通用分類法將特徵分類
 uuid: 2e177344-07d9-40a7-8c99-c6c6518b9d97
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 44bb4d511215a7bbc8889cc9518b3b5ffcb79a2a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '387'
+ht-degree: 4%
 
 ---
 
 
-# 使用通用分類法分類特徵 {#classifying-traits-with-a-common-taxonomy}
+# 使用通用分類法將特徵分類 {#classifying-traits-with-a-common-taxonomy}
 
 本文概括地介紹了使用通用分類法對特徵進行分類的方法。
 
@@ -32,13 +36,13 @@ source-git-commit: 44bb4d511215a7bbc8889cc9518b3b5ffcb79a2a
 
 ## 分類組織
 
-分類 [!DNL Audience Manager] 將資料組織成稱為層的巢狀類別。 每個類別最多可包含3個不同的資料分類層。 在最高層，第1層類別會將資料分組成最一般的表單（例如地理位置）。 後續各層對較高級別的一般類別(例如，地理—&gt; *美國—&gt;紐約*)提供了更高的專一性。 但是，並非每個類別都有3個層級，有些僅使用2個層級。
+分類 [!DNL Audience Manager] 將資料組織成稱為層的巢狀類別。 每個類別最多可包含3個不同的資料分類層。 在最高層，第1層類別會將資料分組成最一般的表單（例如地理位置）。 後續各層對較高級別的一般類別(例如，地理—> *美國—>紐約*)提供了更高的具體性。 但是，並非每個類別都有3個層級，有些僅使用2個層級。
 
 ## 分類資料類別中的特徵
 
 在(位於* [!UICONTROL Add New Trait Wizard]**[!UICONTROL Audience Data > Traits]***)中建立或編輯特徵時，您會指派分類。 如需詳細資 [訊，請參閱有關建立特徵](../../features/traits/create-onboarded-rule-based-traits.md) 的檔案。
 
-## 使用分類法：其他考量事項
+## 使用分類法： 其他考量事項
 
 如果您決定根據我們的常見分類法來分類特徵，請務必記住：
 
