@@ -1,17 +1,21 @@
 ---
 description: 網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
 seo-description: 網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
-seo-title: 網域管理API方法
+seo-title: 網域管理 API 方法
 solution: Audience Manager
-title: 網域管理API方法
+title: 網域管理 API 方法
 uuid: f2f08bc5-ea42-4171-9a43-0b20976f0cb0
+feature: API
 translation-type: tm+mt
-source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 6%
 
 ---
 
 
-# 網域管理API方法 {#domain-management-api-methods}
+# 網域管理 API 方法 {#domain-management-api-methods}
 
 網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
 
@@ -118,12 +122,12 @@ source-git-commit: c9737315132e2ae7d72c250d8c196abe8d9e0e43
    <td colname="col2"> 根據指定的JSON屬性排序並傳回結果。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> 降序</code> </td>
+   <td colname="col1"><code> descending</code> </td>
    <td colname="col2"> 以遞減順序排序和傳回結果。 預設為遞增。 </td>
   </tr>
   <tr valign="top">
-   <td colname="col1"><code> 搜尋</code> </td>
-   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： <p><code> 「GET」「https://api.demdex.com/v1/models/?search=Test」</code>。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
+   <td colname="col1"><code> search</code> </td>
+   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>實施流量分類。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
   </tr> 
  </tbody> 
 </table>
