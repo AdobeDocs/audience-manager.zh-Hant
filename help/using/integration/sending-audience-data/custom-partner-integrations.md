@@ -4,8 +4,12 @@ seo-description: 此頁面列出 Audience Manager 與資料合作夥伴之間的
 seo-title: 自訂合作夥伴整合
 solution: Audience Manager
 title: 自訂合作夥伴整合
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: c069c901df6d8737f611d27ce7dffd4072e50adf
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +26,7 @@ Audience Manager 會透過傳入資料檔案，從適用於 Audience Marketplace
 
 ### 整合細節
 
-從Oracle Data Cloud接收的入站資料檔案與Amazon S3 Name and File Size Requirements for Inbound Data Files [(入站資料檔案的](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) Amazon S3名稱和檔案大小要求)中描述的標准入站檔案名語法不同，與 [Inbound Data File Contents（入站資料檔案內容）中描述的標准入站檔案內容語法不同：語法、無效字元、變數和範例](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)。
+從Oracle Data Cloud接收的入站資料檔案與Amazon S3 Name and File Size Requirements for Inbound Data Files [(入站資料檔案的](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md) Amazon S3名稱和檔案大小要求)中描述的標准入站檔案名語法不同，與 [Inbound Data File Contents（入站資料檔案內容）中描述的標准入站檔案內容語法不同： 語法、無效字元、變數和範例](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)。
 
 除了傳入資料檔案的標準實作欄位外，以下反白顯示的元素也是必要的。 如需所有其他標準欄位和檔案名稱元素的說明，請參閱上述兩個連結頁面中的檔案名稱語法和檔案內容語法。
 
