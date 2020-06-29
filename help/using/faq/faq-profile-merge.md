@@ -6,8 +6,9 @@ seo-title: 設定檔合併規則與裝置圖表常見問題集
 solution: Audience Manager
 title: 設定檔合併規則與裝置圖表常見問題集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 6876ca5ee0bc5f50c2aa1acd5c683b151a07fd59
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 86%
