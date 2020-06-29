@@ -1,20 +1,21 @@
 ---
 description: 說明可添加到目標URL的宏。
 seo-description: 說明可添加到目標URL的宏。
-seo-title: 定義的目標宏
+seo-title: 定義的巨集目的地
 solution: Audience Manager
-title: 定義的目標宏
+title: 定義的巨集目的地
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
+feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# 定義的目標宏 {#destination-macros-defined}
+# 定義的巨集目的地 {#destination-macros-defined}
 
 介紹可添加到目標的宏 [!DNL URL]。
 
@@ -114,4 +115,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [定義的目標宏](../../features/destinations/destination-macros.md#destination-macros-defined)
+>* [定義的巨集目的地](../../features/destinations/destination-macros.md#destination-macros-defined)
