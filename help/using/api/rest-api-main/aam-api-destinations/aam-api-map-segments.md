@@ -1,23 +1,27 @@
 ---
 description: 使用這些REST風格的API方法將區段對應至目標。
 seo-description: 使用這些REST風格的API方法將區段對應至目標。
-seo-title: 將區段對應至目標
+seo-title: 將區段對應至目的地
 solution: Audience Manager
-title: 將區段對應至目標
+title: 將區段對應至目的地
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
+feature: API
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 11%
 
 ---
 
 
-# 將區段對應至目標 {#map-segments-to-a-destination}
+# 將區段對應至目的地 {#map-segments-to-a-destination}
 
 使用這些方法將區段對應至 [!DNL RESTful API] 目標。
 
 <!-- c_api_map_seg_dest.xml -->
 
-## 支援的目標類型：僅限URL和Cookie
+## 支援的目標類型： 僅限URL和Cookie
 
 可用的 `POST` 方法可讓您將區段對應至 [!UICONTROL URL] 且僅 [!UICONTROL cookie destinations] 限。 目前，您無法使用這些方法將 [!UICONTROL server-to-server destinations] 區段對 [!DNL REST API] 應至。 請改用使用者介面。 不過，相關的目標方 `GET` 法可讓您擷取在使用者介 [!UICONTROL server-to-server destinations] 面中建立的相關資訊。
 
@@ -121,7 +125,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 將區段對應至Cookie目標：單鍵、無序號 {#map-segment-cookie-noserial}
+## 將區段對應至Cookie目標： 單鍵、無序號 {#map-segment-cookie-noserial}
 
 一種 `POST` 方法，可讓您將區段對應至單鍵、無序號的 [!UICONTROL cookie] 目的地。
 
@@ -168,7 +172,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 將區段對應至Cookie目標：多鍵、無序號 {#map-segment-cookie-multi-noserial}
+## 將區段對應至Cookie目標： 多鍵、無序號 {#map-segment-cookie-multi-noserial}
 
 一種 `POST` 方法，可讓您將區段對應至多鍵、無序號的 [!UICONTROL cookie] 目的地。
 
@@ -216,7 +220,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 }
 ```
 
-## 將區段對應至Cookie目標：多鍵，序列化 {#map-segment-cookie-multi-serial}
+## 將區段對應至Cookie目標： 多鍵，序列化 {#map-segment-cookie-multi-serial}
 
 可 `POST` 讓您將區段對應至多鍵序號的方法 [!UICONTROL cookie destination]。
 
@@ -266,7 +270,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 
 ## 將區段對應至伺服器對伺服器目的地 {#map-segment-s2s}
 
-一種 `POST` 方法，可讓您將區段對應至現有目 [!UICONTROL server-to-server] 的地。 但請注意，您無法使用這些目 [!UICONTROL server-to-server] 前可用的方法來建立目 [!DNL API] 標。
+一種 `POST` 方法，可讓您將區段對應至現有目的 [!UICONTROL server-to-server] 地。 但請注意，您無法使用這些目 [!UICONTROL server-to-server] 前可用的方法來建立目 [!DNL API] 標。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -478,7 +482,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 ]
 ```
 
-## 依目標ID更新目標 {#update-dest-data-order}
+## Update a Destination by Destination ID {#update-dest-data-order}
 
 一種 `PUT` 方法，可讓您依據更新現有的目的地 `destinationId`。
 
@@ -582,5 +586,5 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 >
 >* [目的地](../../../features/destinations/destinations.md)
 >* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [說明的鍵值對](../../../reference/key-value-pairs-explained.md)
+>* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
 
