@@ -1,18 +1,22 @@
 ---
 description: 資料饋送需要名稱、說明、資料來源和計畫類型。 動態消息會停用，直到您儲存並啟動動態消息為止。 在「對象市集>我的共用資料」中設定公開或私人資料饋送。 僅供資料銷售者使用。
 seo-description: 資料饋送需要名稱、說明、資料來源和計畫類型。 動態消息會停用，直到您儲存並啟動動態消息為止。 在「對象市集>我的共用資料」中設定公開或私人資料饋送。 僅供資料銷售者使用。
-seo-title: 建立、定價和管理資料饋送
+seo-title: 建立、定價和管理資料摘要
 solution: Audience Manager
-title: 建立、定價和管理資料饋送
+title: 建立、定價和管理資料摘要
 topic: DIL API
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: 979c853a3be94f1cda57e4f376d0033d6e8a06a5
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1304'
+ht-degree: 2%
 
 ---
 
 
-# 建立、定價和管理資料饋送 {#create-price-and-manage-data-feeds}
+# 建立、定價和管理資料摘要 {#create-price-and-manage-data-feeds}
 
 ## 建立公開或私人資料饋送 {#create-public-private-data-feed}
 
@@ -48,13 +52,13 @@ source-git-commit: 979c853a3be94f1cda57e4f376d0033d6e8a06a5
    >* 購買者只會看見作用中的動態消息。
 
 
-### 可選：建立私人資料饋送
+### 可選： 建立私人資料饋送
 
 在該部 [!UICONTROL Settings] 分中，將滑塊移動到：
 
-* **[!UICONTROL Private]** 和 **[!UICONTROL Branded]**:買方清單 [!UICONTROL Marketplace] 在提供方列中顯示賣方名稱，所有其它資料都隱藏。
+* **[!UICONTROL Private]** 和 **[!UICONTROL Branded]**: 買方清單 [!UICONTROL Marketplace] 在提供方列中顯示賣方名稱，所有其它資料都隱藏。
 
-* **[!UICONTROL Private]** 和 **[!UICONTROL Unbranded]**:採購者清單僅 [!UICONTROL Marketplace] 會顯示資料饋送名稱和說明。 資料提供者名稱會顯示為 [!UICONTROL Private Seller]。
+* **[!UICONTROL Private]** 和 **[!UICONTROL Unbranded]**: 採購者清單僅 [!UICONTROL Marketplace] 會顯示資料饋送名稱和說明。 資料提供者名稱會顯示為 [!UICONTROL Private Seller]。
 
 若要查看私人動態消息對購買者的外觀，請參閱「私人資料動態消息」中的 [購買者區段](../../../features/audience-marketplace/marketplace-private-feeds.md)。
 
@@ -106,27 +110,27 @@ source-git-commit: 979c853a3be94f1cda57e4f376d0033d6e8a06a5
 
 重疊比較有助於購買者：
 
-* **** 擴大受眾覆蓋：低重疊顯示您的特徵包含購買者之前所未見的使用者。 因此，購買者可能希望這些特徵將新使用者新增至其受眾區段。
-* **** 增強現有受眾：高度重疊表明您的特徵包含的用戶與買家已經知道的用戶相似。 因此，購買者可能希望這些特徵有助於對已開發受眾進行有針對性的漸進改進。
+* **擴大受眾覆蓋：** 低重疊顯示您的特徵包含購買者之前所未見的使用者。 因此，購買者可能希望這些特徵將新使用者新增至其受眾區段。
+* **增強現有受眾：** 高度重疊表明您的特徵包含的用戶與買家已經知道的用戶相似。 因此，購買者可能希望這些特徵有助於對已開發受眾進行有針對性的漸進改進。
 
 此使用案例的定價如下：
 
-* 單位：固定費用
-* 價格：免費($0.00)
+* 單位： 固定費用
+* 價格： 免費($0.00)
 
 ### 模型
 
 使用 **[!UICONTROL Modeling]** 案例會建立一個計畫，讓買家透過演算法模型比較您的特 [徵與特徵](../../../features/algorithmic-models/understanding-models.md#understanding-models)。 購買者會檢視模型結果，在您的資料中尋找與自己擁有相似轉換屬性的新受眾。 此使用案例的定價如下：
 
-* 單位：固定費用
-* 價格：折扣或市價
+* 單位： 固定費用
+* 價格： 折扣或市價
 
 ### 啟用
 
 使用 **[!UICONTROL Activation]** 案例可讓購買者將資料傳送 [至目的地](../../../features/destinations/destinations.md)。 在此使用案例中，購買者無法比較重疊報表或演算法模型中的資料。 此使用案例的定價如下：
 
 * 單位： [!DNL CPM]
-* 價格：市 [!DNL CPM] 場率
+* 價格： [!DNL CPM] 市場率
 
 ## 帳單和價格選項 {#billing}
 
