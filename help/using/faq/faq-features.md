@@ -6,8 +6,9 @@ seo-title: 產品特色與功能常見問題集
 solution: Audience Manager
 title: 產品特色與功能常見問題集
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
+feature: Overview
 translation-type: tm+mt
-source-git-commit: 2b70b651a626c2b5667edb58c8c6068152a9d770
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 91%
