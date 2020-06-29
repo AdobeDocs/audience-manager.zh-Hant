@@ -1,18 +1,22 @@
 ---
 description: 產生Audience Marketplace帳單報表，以檢視每個訂閱者上個月的資料饋送使用情形。 您可以隨時建立上個月的報表。 不過，當您在當月的10天或之後產生報表時，報表會更精確。
 seo-description: 產生Audience Marketplace帳單報表，以檢視每個訂閱者上個月的資料饋送使用情形。 您可以隨時建立上個月的報表。 不過，當您在當月的10天或之後產生報表時，報表會更精確。
-seo-title: 資料饋送提供者帳單
+seo-title: 資料摘要提供者的計費方式
 solution: Audience Manager
-title: 資料饋送提供者帳單
+title: 資料摘要提供者的計費方式
 topic: DIL API
 uuid: 4e11dbd2-91fd-4b59-a66d-86a92e0de655
+feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '453'
+ht-degree: 5%
 
 ---
 
 
-# 資料饋送提供者帳單 {#billing-for-data-feed-providers}
+# 資料摘要提供者的計費方式 {#billing-for-data-feed-providers}
 
 產生帳 [!DNL Audience Marketplace] 單報表，以檢視每個訂閱者上個月的資料饋送使用情形。 您可以隨時建立上個月的報表。 不過，當您在當月的10天或之後產生報表時，報表會更精確。
 
@@ -21,7 +25,7 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
 若要下載報表：
 
 1. 前往 **[!UICONTROL Audience Marketplace > Receivables]**。
-1. Click **[!UICONTROL Generate Billing Report]**.
+1. 按一下 **[!UICONTROL Generate Billing Report]**.
 
 ## 已定義報表欄位 {#report-fields-defined}
 
@@ -84,8 +88,8 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p><b><span class="uicontrol"> 件數</span></b> </p> </td> 
    <td colname="col2"> <p>視動態消息價格類型而定： </p> 
     <ul id="ul_01550B436EEE4FBC8C9945E08E3CE2C6"> 
-     <li id="li_C589F6A751AB407E853AC6F726A47F14">固定費用資料饋送：僅返回1。 </li> 
-     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM資料饋送：傳回CPM資料饋送的實際使用量。 如果訂閱者未提供CPM饋送的曝光資料，「單位」儲存格是空的，而「標幟」儲存格設定為1。 </li> 
+     <li id="li_C589F6A751AB407E853AC6F726A47F14">固定費用資料饋送： 僅返回1。 </li> 
+     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM資料饋送： 傳回CPM資料饋送的實際使用量。 如果訂閱者未提供CPM饋送的曝光資料，「單位」儲存格是空的，而「標幟」儲存格設定為1。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -112,8 +116,8 @@ source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
    <td colname="col1"> <p><b><span class="uicontrol"> 旗標</span></b> </p> </td> 
    <td colname="col2"> <p> <i>僅限CPM摘要</i>。 標籤選項包括： </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
-     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0:指出訂閱者已向 <span class="keyword"> Audience Manager報告使用資訊</span>。 </li> 
-     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1:指出訂閱者未向 <span class="keyword"> Audience Manager報告使用資訊</span>。 </li> 
+     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0: 指出訂閱者已向 <span class="keyword"> Audience Manager報告使用資訊</span>。 </li> 
+     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1: 指出訂閱者未向 <span class="keyword"> Audience Manager報告使用資訊</span>。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
