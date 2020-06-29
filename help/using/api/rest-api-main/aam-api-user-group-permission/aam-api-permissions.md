@@ -1,17 +1,21 @@
 ---
 description: 保留API方法來管理物件和群組的權限。
 seo-description: 保留API方法來管理物件和群組的權限。
-seo-title: 權限管理API方法
+seo-title: 權限管理 API 方法
 solution: Audience Manager
-title: 權限管理API方法
+title: 權限管理 API 方法
 uuid: 111d0f92-d92c-4d4b-b0d6-10dd3fa466ad
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 14%
 
 ---
 
 
-# 權限管理API方法 {#permissions-management-api-methods}
+# 權限管理 API 方法 {#permissions-management-api-methods}
 
 其餘 [!DNL API] 方法可管理物件和群組的權限。
 
