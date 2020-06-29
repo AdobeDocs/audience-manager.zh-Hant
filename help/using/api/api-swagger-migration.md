@@ -1,12 +1,13 @@
 ---
-description: 在Audience Manager，我們是工程師、開發人員和程式碼忍者，就像您一樣。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
+description: 在Audience Manager，我們是工程師、開發人員，以及像您一樣的程式碼忍者。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
 seo-description: 在Audience Manager，我們是工程師、開發人員和程式碼忍者，就像您一樣。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
 seo-title: Audience Manager API 程式碼移轉
 solution: Audience Manager
 title: Audience Manager API 程式碼移轉
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
+feature: API
 translation-type: tm+mt
-source-git-commit: 0869e016d7f80710cb194449c48675b82fdfa865
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 6%
