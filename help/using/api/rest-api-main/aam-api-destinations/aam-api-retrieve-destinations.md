@@ -1,17 +1,21 @@
 ---
 description: 一種GET方法，可傳回指定destinationId的目的地。
 seo-description: 一種GET方法，可傳回指定destinationId的目的地。
-seo-title: 依目標ID傳回目標
+seo-title: 依目的地 ID 傳回目的地
 solution: Audience Manager
-title: 依目標ID傳回目標
+title: 依目的地 ID 傳回目的地
 uuid: abce7426-55a5-4045-93a7-0487652a7189
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 9%
 
 ---
 
 
-# 依目標ID傳回目標 {#return-a-destination-by-destination-id}
+# 依目的地 ID 傳回目的地 {#return-a-destination-by-destination-id}
 
 返回 `GET` 指定目標的方法 `destinationId`。
 
@@ -65,7 +69,7 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
 
 >[!NOTE]
 >
->* *（可選）* ，請傳入 `containsSegment=<sid>` 以傳回映射至指定區段之所有目的地的陣列。 例如，您的查詢看起來可能類似下列： `GET .../destinations/?containsSegment=4321`。
+>* *（可選）* ，請傳入 `containsSegment=<sid>` 以傳回映射至指定區段之所有目的地的陣列。 例如，您的查詢看起來可能類似下列： `GET .../destinations/?containsSegment=4321`.
    >
    >
 * 不返回完整目標對象。 如果需要完全填入的物件，請依資料順序取得目的地。
@@ -96,12 +100,12 @@ source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
    <td colname="col2">根據指定的 <span class="keyword"> JSON屬性排序並傳回結果</span> 。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> 降序</code> </td>
+   <td colname="col1"><code> descending</code> </td>
    <td colname="col2"> 以遞減順序排序和傳回結果。 預設為遞增。 </td>
   </tr>
   <tr valign="top"> 
-   <td colname="col1"><code> 搜尋</code> </td>
-   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： <p><code> 取得https://api.demdex.com/v1/models/?search=Test</code>。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
+   <td colname="col1"><code> search</code> </td>
+   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： <p><code> GET https://api.demdex.com/v1/models/?search=Test</code>實施流量分類。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -277,7 +281,7 @@ BROWSER, ANDROID, iOS, ALL
 
 `GET https://api.demdex.com/v1/destinations/655/history/outbound?startDate=1000000000&endDate=1403034473000`
 
-所需查詢參數： `startDate` = *&lt;`epochtime`&gt;和* = `endDate` &lt; *`epochtime`*&gt;
+所需查詢參數： `startDate` = *&lt;`epochtime`>和* = `endDate` &lt; *>`epochtime`*。
 
 ### 回應
 
