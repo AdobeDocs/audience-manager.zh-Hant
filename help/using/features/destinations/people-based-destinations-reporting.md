@@ -1,16 +1,20 @@
 ---
 description: '以人為本的目的地將「可分享的觀眾」概念引入Audience Manager。 此量度可協助您瞭解Audience Manager可與目標平台共用多少雜湊電子郵件地址。 '
 seo-description: '以人為本的目的地將「可分享的觀眾」概念引入Audience Manager。 此量度可協助您瞭解Audience Manager可與目標平台共用多少雜湊電子郵件地址。 '
-seo-title: 可分享的觀眾
+seo-title: 可共用的受眾
 solution: Audience Manager
-title: 可分享的觀眾
+title: 可共用的受眾
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 75fe1e0f7321107930a28e354ca2f4a256a477ac
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 1%
 
 ---
 
 
-# 可分享的觀眾 {#shareable-audiences}
+# 可共用的受眾 {#shareable-audiences}
 
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
