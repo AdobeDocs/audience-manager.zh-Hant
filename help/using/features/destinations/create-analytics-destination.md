@@ -1,16 +1,20 @@
 ---
 description: Audience Analytics 可讓您傳送 Audience Manager 區段至 Analytics。若要使用此功能，您可以在 Audience Manager 中建立 Analytics 目的地並將區段對應至該目的地。
 seo-description: Audience Analytics 可讓您傳送 Audience Manager 區段至 Analytics。若要使用此功能，您可以在 Audience Manager 中建立 Analytics 目的地並將區段對應至該目的地。
-seo-title: 設定Analytics目標
+seo-title: 設定 Analytics 目的地
 solution: Audience Manager
-title: 設定Analytics目標
+title: 設定 Analytics 目的地
+feature: Integration with Analytics
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '864'
+ht-degree: 8%
 
 ---
 
 
-# 設定Analytics目標
+# 設定 Analytics 目的地
 
 ## 要求 {#requirements}
 
