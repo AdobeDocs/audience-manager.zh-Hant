@@ -1,19 +1,23 @@
 ---
-description: 使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience manager分開的裝置圖表。 這包括Adobe Experience Cloud Device Co-op以及Adobe與協力廠商確定性或概率性裝置圖形公司的其他整合。
-seo-description: 使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience manager分開的裝置圖表。 這包括Adobe Experience Cloud Device Co-op以及Adobe與協力廠商確定性或概率性裝置圖形公司的其他整合。
-seo-title: 外接式裝置圖表使用案例
+description: 使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience Manager分開的裝置圖表。 這包括Adobe Experience Cloud Device Co-op以及Adobe與協力廠商確定性或概率性裝置圖形公司的其他整合。
+seo-description: 使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience Manager分開的裝置圖表。 這包括Adobe Experience Cloud Device Co-op以及Adobe與協力廠商確定性或概率性裝置圖形公司的其他整合。
+seo-title: 外部裝置圖表使用案例
 solution: Audience Manager
-title: 外接式裝置圖表使用案例
+title: 外部裝置圖表使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: d6abb45fa8b88248920b64db3ac4e72c53ecee13
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 5%
 
 ---
 
 
-# 外接式裝置圖表使用案例 {#external-device-graph-use-cases}
+# 外部裝置圖表使用案例 {#external-device-graph-use-cases}
 
-使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience manager分開的裝置圖表。 這包括Adobe [!DNL Adobe Experience Cloud Device Co-op] 與協力廠商確定性或概率性裝置圖形公司的整合。
+使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience Manager分開的裝置圖表。 這包括Adobe [!DNL Adobe Experience Cloud Device Co-op] 與協力廠商確定性或概率性裝置圖形公司的整合。
 
 ## 建議 {#recommendations}
 
@@ -97,13 +101,13 @@ These strategies are designed to bring an unauthenticated or unknown user back t
 
 此使用案例可說明如何透過或其他方式，透過精確的跨裝置個人化來擴充可定址對象 [!DNL Adobe Co-Op Device Graph] 的規模 [!DNL External Device Graphs]。
 
-假設簡擁有三台她經常用來搜尋度假套餐的設備：她的筆記型電腦[!DNL Device 1]()、智慧手機([!DNL Device 2])和平板電腦([!DNL Device 3])。 使用筆記型電腦時，Jane搜尋航班、酒店和導覽。 她使用智慧手機和平板電腦時，只瀏覽了旅行社的首頁。
+假設簡擁有三台她經常用來搜尋度假套餐的設備： 她的筆記型電腦[!DNL Device 1]()、智慧手機([!DNL Device 2])和平板電腦([!DNL Device 3])。 使用筆記型電腦時，Jane搜尋航班、酒店和導覽。 她使用智慧手機和平板電腦時，只瀏覽了旅行社的首頁。
 
 使用 [!UICONTROL No Cross-Device Profile] +規 [!UICONTROL Adobe Co-op Device Graph] 則，旅行社可以合併所有3種裝置描述檔，因為它們會透過連結連結至相同的擁有者 [!UICONTROL Adobe Co-op Device Graph]。
 
 ![對象擴展規則](assets/audience-expansion-rule.png)
 
-在我們的範例中，符合區段資格所需的特徵都已收集到 [!DNL Device 1]。 由於Audience manager符合參與區段描述檔合併的每個裝置描述檔的資格，因此Jane的三個裝置描述檔現在都會分段。
+在我們的範例中，符合區段資格所需的特徵都已收集到 [!DNL Device 1]。 由於Audience Manager符合參與區段描述檔合併的每個裝置描述檔的資格，因此Jane的三個裝置描述檔現在都會分段。
 
 透過此規則，裝置圖表將符合區段資格的裝置設定檔數從1擴充為3個，讓旅行社可向Jane擁有的所有3種裝置傳送一致的訊息。
 
@@ -117,7 +121,7 @@ These strategies are designed to bring an unauthenticated or unknown user back t
 
 在下例中，Acme Inc.公司希望將所有年收入超過$100.000的家庭作為目標，這些家庭有 [!DNL Acme Inc.] 用戶 [!DNL Data Plan A]，使用 [!DNL iPhone 7] 設備。
 
-John在資料計畫A上使用iPhone 7在Acme Inc.網站上驗證。 同時，John的群集還包 [!DNL Co-Op Device Graph] 含他經常使用的另外兩種設備：他的筆記型電腦[!DNL Device 1]，以及他的二級智慧 [!DNL Device 2] 手機 [!DNL Samsung S7] (上 [!DNL Data Plan B])。
+John在資料計畫A上使用iPhone 7在Acme Inc.網站上驗證。 同時，John的群集還包 [!DNL Co-Op Device Graph] 含他經常使用的另外兩種設備： 他的筆記型電腦[!DNL Device 1]，以及他的二級智慧 [!DNL Device 2] 手機 [!DNL Samsung S7] (上 [!DNL Data Plan B])。
 
 使用 **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Adobe Co-Op Device Graph]**, [!DNL Acme Inc.] 即使其中只有一部符合區段資格，也能從John的裝置圖表叢集將個人化訊息傳送至所有三部裝置。
 
@@ -125,7 +129,7 @@ John在資料計畫A上使用iPhone 7在Acme Inc.網站上驗證。 同時，Joh
 
 >[!MORELIKETHIS]
 >
->* [描述檔連結裝置圖表使用案例](profile-link-use-case.md)
->* [描述檔合併規則的一般使用案例](merge-rule-targeting-options.md)
+>* [設定檔連結裝置圖表使用案例](profile-link-use-case.md)
+>* [設定檔合併規則的一般使用案例](merge-rule-targeting-options.md)
 >* [描述檔合併規則常見問答集](../../faq/faq-profile-merge.md)
 
