@@ -1,19 +1,23 @@
 ---
-description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，Audience manager可在提出要求時設定為使用OAuth 2.0進行驗證。 這可讓您從Audience manager向端點發出已驗證的請求。
-seo-description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，Audience manager可在提出要求時設定為使用OAuth 2.0進行驗證。 這可讓您從Audience manager向端點發出已驗證的請求。
-seo-title: OAuth 2.0整合即時對外傳輸
+description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，Audience Manager可在提出要求時設定為使用OAuth 2.0進行驗證。 這可讓您從Audience Manager向端點發出已驗證的請求。
+seo-description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，Audience Manager可在提出要求時設定為使用OAuth 2.0進行驗證。 這可讓您從Audience Manager向端點發出已驗證的請求。
+seo-title: OAuth 2.0 整合即時傳出傳輸
 solution: Audience Manager
-title: OAuth 2.0整合即時對外傳輸
+title: OAuth 2.0 整合即時傳出傳輸
 uuid: a39e370c-b3bd-4b06-a1af-60a024ee7ee4
+feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: 1cc8afd25331528fd67922183b6550288b9939bc
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 2%
 
 ---
 
 
 # [!DNL OAuth 2.0] 整合即時出站傳輸{#oauth-integration-for-real-time-outbound-transfers}
 
-透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，可設定Audience Manager，以便在提出要求時使 [!DNL OAuth 2.0] 用驗證。 這可讓您從Audience manager向端點發出已驗證的請求。
+透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，可設定Audience Manager，以便在提出要求時使 [!DNL OAuth 2.0] 用驗證。 這可讓您從Audience Manager向端點發出已驗證的請求。
 
 ## 驗證流程 {#auth-flow}
 
@@ -37,11 +41,11 @@ OAuth 2.0 [!DNL Adobe Audience Manager][](https://tools.ietf.org/html/rfc6749#se
 此端點將接受步驟1中提供的認證，並產生用於後續請求的承載Token。
 
 * 端點必須接受 `HTTP POST` 請求。
-* 端點必須接受並查看標 [!DNL Authorization] 題。 此標題的值為： `Basic <credentials_provided_by_partner>`。
+* 端點必須接受並查看標 [!DNL Authorization] 題。 此標題的值為： `Basic <credentials_provided_by_partner>`.
 * 端點必須查看標 [!DNL Content-type] 題並驗證其值為 `application/x-www-form-urlencoded ; charset=UTF-8`。
 * 請求的正文為 `grant_type=client_credentials`。
 
-### Audience manager向合作夥伴端點提出的範例要求，以取得載體Token
+### Audience Manager向合作夥伴端點提出的範例要求，以取得載體Token
 
 ```
 POST /oauth2/token HTTP/1.1
@@ -72,7 +76,7 @@ Content-Length: 121
 
 [!DNL Audience Manager] 當使用者符合區段的資格時，會即時傳送資料至此端點。 此外，此方法可每24小時傳送一批離線或已登入的資料。
 
-端點1產生的承載Token可用來向此端點發出請求。 實 [!DNL Audience Manager] 時資料傳輸系統 [IRIS](../../../reference/system-components/components-data-action.md#iris)，構造正常的HTTPS請求並包括授權標頭。 此標題的值為：持械 `<bearer token from step 1>`者。
+端點1產生的承載Token可用來向此端點發出請求。 實 [!DNL Audience Manager] 時資料傳輸系統 [IRIS](../../../reference/system-components/components-data-action.md#iris)，構造正常的HTTPS請求並包括授權標頭。 此標題的值為： 持械 `<bearer token from step 1>`者。
 
 ### 合作夥伴端點的範例回應
 
@@ -111,7 +115,7 @@ Accept-Encoding: gzip
 
 ### Token是密碼
 
-合作夥伴所出示的憑證和使用流程進行驗 [!DNL Audience Manager] 證時所取得的代號 [!DNL OAuth 2.0] 是敏感資訊，不得與第三方共用。
+合作夥伴所出示的憑證和使用流程進行驗 [!DNL Audience Manager] 證時所取得的代 [!DNL OAuth 2.0] 號是敏感資訊，不得與第三方共用。
 
 ### [!DNL SSL] 必要
 
