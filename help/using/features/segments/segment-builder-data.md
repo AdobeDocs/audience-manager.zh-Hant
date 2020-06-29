@@ -5,8 +5,9 @@ seo-title: 區段產生器的特徵和區段母體資料
 solution: Audience Manager
 title: 區段產生器的特徵和區段母體資料
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
+feature: Segments
 translation-type: tm+mt
-source-git-commit: 4d4915b9a99ddcdf321d9f4970321f5f54e057ea
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 2%
