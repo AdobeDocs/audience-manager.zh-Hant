@@ -6,13 +6,17 @@ seo-title: 建立演算法模型
 solution: Audience Manager
 title: 建立演算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
+feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 1%
 
 ---
 
 
-# 建立相似的模型 {#create-an-algorithmic-model}
+# 建立相似模型 {#create-an-algorithmic-model}
 
 說明可讓您建立的必要和選用步驟 [!UICONTROL Look-Alike Model]。
 
@@ -70,7 +74,7 @@ source-git-commit: 859e55fa5d93c7c56cef4bf2a112cdd4ff318d97
 
 <!-- r_model_configuration.xml -->
 
-### 必備條件
+### 必要條件
 
 請先填妥章節中的 [!UICONTROL Basic Information] 必填欄位。
 
