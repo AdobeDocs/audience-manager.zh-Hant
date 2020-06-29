@@ -5,9 +5,10 @@ seo-title: 協助與法律
 solution: Audience Manager
 title: 協助與法律
 uuid: 522c9b17-3712-4619-9197-15d50eb97045
-translation-type: ht
-source-git-commit: 0b32a48e99b35990dc7ccdcc03fcc68ba769d93e
-workflow-type: ht
+feature: Support
+translation-type: tm+mt
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%
 
