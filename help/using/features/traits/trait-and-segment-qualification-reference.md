@@ -6,13 +6,17 @@ seo-title: 特徵資格參考
 solution: Audience Manager
 title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 22780105bc356100af8b64b50e3c92137adeb83a
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 2%
 
 ---
 
 
-# 特徵和區段資格參考 {#trait-qualification-reference}
+# 特徵和區段資格參考資料 {#trait-qualification-reference}
 
 特徵資格或特徵實現在Audience Manager中會根據特徵類型有不同的處理方式。 如需特 [徵類型資格的詳細資訊，請參閱](#trait-type) 「依特徵類型的特徵資格」。
 
@@ -27,7 +31,7 @@ source-git-commit: 22780105bc356100af8b64b50e3c92137adeb83a
 | 規則型特徵 | 特徵資格會即時發生，因為使用者在瀏覽器中符合特徵資格。 在您在UI中建立特徵後大約4小時，您的使用者就 [會開始符合規則](create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits) 。 規則型特徵可讓您使用時 [近和頻率控制](../segments/recency-and-frequency.md) ，來設定廣告頻率上限和其他使用案例。 |
 | 已登錄特徵 | 特徵限定會在處理傳入檔案後發生，即傳入檔案會匯 [入Audience Manager](../../faq/faq-inbound-data-ingestion.md) ，也就是特徵限定發生時。 在建立已登入特徵後，您應等待約4小時，再上傳傳入檔案以進行處理。 對於已登入的特徵，使用者設定檔的資格上限為1。 |
 | 演算法特徵 | 對於演算法特徵，使用者設定檔的最大資格數為1。 |
-| 資料夾特徵 | 資料夾特徵會匯總其所含特徵的特徵資格。 閱讀資 [料夾特徵：關於](about-folder-traits.md) ，以取得詳細資訊。 |
+| 資料夾特徵 | 資料夾特徵會匯總其所含特徵的特徵資格。 閱讀資 [料夾特徵： 關於](about-folder-traits.md) ，以取得詳細資訊。 |
 | 作用中受眾特徵與資料來源同步特徵 | 特 [!UICONTROL Active Audience] 徵包含您Audience Manager帳戶中管理的所有裝置。 [!UICONTROL Data Source Synced Traits] 追蹤與資料來源相關聯的所有使用者。 閱讀更多有關「 [作用中受眾特徵」和「資料來源同步特徵」的資訊](client-activity-synced-audience-traits.md)。 |
 
 ## 獨特性實現與特性總量 {#unique-trait-realizations}
