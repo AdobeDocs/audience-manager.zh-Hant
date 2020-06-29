@@ -1,16 +1,20 @@
 ---
 description: '本頁包含逐步指引，說明如何從僅離線的客戶資料建立受眾細分，並將其傳送至以人為本的目標。  '
 seo-description: '本頁包含逐步指引，說明如何從僅離線的客戶資料建立受眾細分，並將其傳送至以人為本的目標。  '
-seo-title: 工作流程B —— 基於僅離線資料的個人化
+seo-title: 工作流程 B - 以僅限離線資料為基礎的個人化
 solution: Audience Manager
-title: 工作流程B —— 基於僅離線資料的個人化
+title: 工作流程 B - 以僅限離線資料為基礎的個人化
+feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 6%
 
 ---
 
 
-# 工作流程B —— 基於僅離線資料的個人化 {#workflow-b}
+# 工作流程 B - 以僅限離線資料為基礎的個人化 {#workflow-b}
 
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
@@ -19,7 +23,7 @@ source-git-commit: e8729366a62ec82aa906fe043cf594bff837c737
 
 ## 步驟1 —— 板載離線特徵 {#step-1-onboard-traits}
 
-在此案例中建立受眾細分的第一步，就是將您的離線客戶資料匯入Audience Manager。
+在此案例中建立受眾細分的第一步是將您的離線客戶資料匯入Audience Manager。
 
 >[!IMPORTANT]
 >
