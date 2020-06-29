@@ -5,11 +5,12 @@ seo-title: Adobe Audience Manager技術合作夥伴
 keywords: activation; activation partners, destination, destinations
 solution: Audience Manager
 title: Adobe Audience Manager技術合作夥伴
+feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: da0eb0244fc3ae158fa151727f4253625dcff2c4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 59%
 
 <br> 
 
-| 整合 | 更新 | 取消分段 | 接收IAB TCF許可信號 | ICDS | 行動裝置ID |
+| 整合 | 更新 | 取消分段 | 接收IAB TCF許可信號 | ICDS | 行動裝置 ID |
 |---------------------------------------------------|------------|-----------|-----------------------------------|------|-------------------|
 | 4C見解 | 26/09/2018 | 有 | 否 | 否 | 是 |
 | 4info | 09/02/2017 | 否 | 否 | 否 | 是 |
