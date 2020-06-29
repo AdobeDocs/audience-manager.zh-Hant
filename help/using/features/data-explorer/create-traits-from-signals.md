@@ -4,8 +4,12 @@ seo-description: 從所有訊號（包括已用於特徵的訊號）建立新特
 seo-title: 從訊號建立特徵
 title: 從訊號建立特徵
 uuid: 4f324404-0c24-4e3b-96c1-7c1b28a4536d
+feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +18,7 @@ source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
 
 從所有訊號（包括已用於特徵的訊號）建立新特徵，並擷取在建立特徵後符合未來受眾資格的受眾。 觀看影片以快速展示或閱讀以取得詳細資訊：
 
->[!VIDEO](https://video.tv.adobe.com/v/25169/?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/25169/?quality=12)
 
 ## 從Signal Dashboard建立特徵 {#create-traits-from-signal-dashboard}
 
@@ -30,7 +34,7 @@ source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
 
 ![](assets/signals-create-trait.png)
 
-系統會將您重新導向至「 **[特徵產生器](../../features/traits/about-trait-builder.md)** 」，以建立您的新特徵。
+系統會將您重新導向至「 **[特徵產生器](../../features/traits/about-trait-builder.md)**」，以建立您的新特徵。
 
 ## 從Signal Search建立特徵 {#create-traits-from-signal-search}
 
@@ -50,4 +54,4 @@ source-git-commit: f324838a5649722545ff36faba92bf3a13c2e805
    >
    >![](assets/signals-used-traits.png)
 
-3. 使用「 **[特徵產生器](../../features/traits/about-trait-builder.md)** 」建立新特徵。
+3. 使用「 **[特徵產生器](../../features/traits/about-trait-builder.md)**」建立新特徵。
