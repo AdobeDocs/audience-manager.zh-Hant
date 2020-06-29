@@ -1,17 +1,21 @@
 ---
 description: 個人檔案合併規則選項可讓您根據業務需求或目標，擴充或收緊對特定對象的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。
 seo-description: 個人檔案合併規則選項可讓您根據業務需求或目標，擴充或收緊對特定對象的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。
-seo-title: 描述檔合併規則的一般使用案例
+seo-title: 設定檔合併規則的一般使用案例
 solution: Audience Manager
-title: 描述檔合併規則的一般使用案例
+title: 設定檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
+feature: Profile Merge Rules
 translation-type: tm+mt
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '997'
+ht-degree: 4%
 
 ---
 
 
-# 描述檔合併規則的一般使用案例 {#general-use-cases-for-profile-merge-rules}
+# 設定檔合併規則的一般使用案例 {#general-use-cases-for-profile-merge-rules}
 
 [!UICONTROL Profile Merge Rules] 選項可讓您根據業務需求或目標來擴充或收緊受眾對特定受眾的關注。 這些一般使用案例會探索如何使用可用選項，並建立個人、家庭和跨裝置定位的合併規則。 [!UICONTROL Profile Merge Rules] 使用即時和批次目的地。
 
@@ -77,7 +81,7 @@ Audience Manager會合併每個裝置+跨裝置描述檔配對，以查看合併
 
 ## 裝置圖表選項 {#device-graph-options}
 
-選擇規 [!UICONTROL device graph] 則的選項 [!UICONTROL Profile Merge] 取決於您的數位屬性和業務目標所特有的條件。 這些一般准則可協助您瞭解何時使用一種圖形，而不是使用另一種圖形。 請注意，您必須是 [Adobe Experience Cloud Device Co-op的會員](https://docs.adobe.com/content/help/en/device-co-op/using/home.html) ，或與外部裝置圖表有合約關係才能使用這些選項。 有關何時選擇設備圖形選項的一般指導，請參閱下表。 如需特定使用案例，請參 [閱描述檔連結裝置圖表使用案例](profile-link-use-case.md)[和外部裝置圖表使用案例](external-graph-use-cases.md)。
+選擇規 [!UICONTROL device graph] 則的選項 [!UICONTROL Profile Merge] 取決於您的數位屬性和業務目標所特有的條件。 這些一般准則可協助您瞭解何時使用一種圖形，而不是使用另一種圖形。 請注意，您必須是 [Adobe Experience Cloud Device Co-op的會員](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/home.translate.html) ，或與外部裝置圖表有合約關係才能使用這些選項。 有關何時選擇設備圖形選項的一般指導，請參閱下表。 如需特定使用案例，請參 [閱描述檔連結裝置圖表使用案例](profile-link-use-case.md)[和外部裝置圖表使用案例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -114,7 +118,7 @@ Audience Manager會合併每個裝置+跨裝置描述檔配對，以查看合併
 
 >[!MORELIKETHIS]
 >
->* [描述檔連結裝置圖表使用案例](profile-link-use-case.md)
->* [外接式裝置圖表使用案例](external-graph-use-cases.md)
+>* [設定檔連結裝置圖表使用案例](profile-link-use-case.md)
+>* [外部裝置圖表使用案例](external-graph-use-cases.md)
 >* [描述檔合併規則常見問答集](../../faq/faq-profile-merge.md)
 
