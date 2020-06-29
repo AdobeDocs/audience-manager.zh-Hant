@@ -1,17 +1,21 @@
 ---
 description: 剩餘API方法來管理群組，包括建立、更新、列出、刪除群組。
 seo-description: 剩餘API方法來管理群組，包括建立、更新、列出、刪除群組。
-seo-title: 群組管理API方法
+seo-title: 群組管理 API 方法
 solution: Audience Manager
-title: 群組管理API方法
+title: 群組管理 API 方法
 uuid: fe042eb5-ea12-42fe-be98-d721f987a914
+feature: API
 translation-type: tm+mt
-source-git-commit: ad81dd596434534906788223f3c9531ffa50d9b4
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 13%
 
 ---
 
 
-# 群組管理API方法 {#group-management-api-methods}
+# 群組管理 API 方法 {#group-management-api-methods}
 
 剩餘 [!DNL API] 方法來管理群組，包括建立、更新、列出、刪除群組。
 
