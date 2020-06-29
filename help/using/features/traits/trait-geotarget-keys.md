@@ -1,20 +1,21 @@
 ---
 description: 說明您可用來在Audience Manager帳戶中透過所有屬性以地理變數定位使用者的常見平台層級索引鍵值配對。
 seo-description: 說明您可用來在Audience Manager帳戶中透過所有屬性以地理變數定位使用者的常見平台層級索引鍵值配對。
-seo-title: 使用平台層級的金鑰進行地理定位
+seo-title: 使用平台層級的索引鍵進行地理定位
 solution: Audience Manager
-title: 使用平台層級的金鑰進行地理定位
+title: 使用平台層級的索引鍵進行地理定位
 uuid: c7e4cbfe-e564-404e-a565-bbe5fd2fb519
+feature: Traits
 translation-type: tm+mt
-source-git-commit: 8959e0023f7663d7a20080aaf130d469ed8a4313
+source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# Geotargeting With Platform-level Keys {#geotargeting-with-platform-level-keys}
+# 使用平台層級的索引鍵進行地理定位 {#geotargeting-with-platform-level-keys}
 
 說明您可用來在Audience Manager帳戶中透過所有屬性以地理變數定位使用者的常見平台層級索引鍵值配對。
 
