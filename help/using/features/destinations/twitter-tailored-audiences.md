@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 將為 Twitter 量身打造的受眾設定為自助服務以裝置為基礎的目的地
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 8ff76decc1cbd7f7babd619dd1ce9fe047541337
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '553'
 ht-degree: 4%
 
 ---
@@ -73,5 +73,4 @@ ht-degree: 4%
 
 ## 匹配率注意事項 {#match-rates-considerations}
 
-* 使用時， [!UICONTROL Twitter Tailored Audiences]目標頁 [!UICONTROL Segment Addressable Audience] 面的 [!UICONTROL Segment Match Rate] 和量度將不會顯示任何值。 這是正常行為，因為受眾比對以及此目的地的比對率是由Adobe而非Adobe處理 [!UICONTROL Twitter]和代管。
 * Audience Manager與支援歷史觀眾回填 [!UICONTROL Twitter Tailored Audiences] 的整合。 建立目標時，會傳送所 [!UICONTROL Twitter] 有區段資格給。
