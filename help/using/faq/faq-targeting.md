@@ -5,9 +5,10 @@ seo-title: 目標定位常見問題集
 solution: Audience Manager
 title: 目標定位常見問題集
 uuid: ee96ef71-b903-4953-afc4-8ec8e48bd49e
-translation-type: ht
-source-git-commit: 412972b9d9a633d09de411c46528b93c74a64e3f
-workflow-type: ht
+feature: Match Rates
+translation-type: tm+mt
+source-git-commit: 27ce94084e35ffa770858027d12235ca9f1f8430
+workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 100%
 
