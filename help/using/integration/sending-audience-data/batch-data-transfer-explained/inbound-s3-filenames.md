@@ -7,9 +7,9 @@ title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: d3fd387478ac00470537124110299cd264eac499
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1152'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,11 @@ ht-degree: 6%
 
 如需其他接受的檔案名稱格式，請參閱自 [訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
 
->[!NOTE] {imporication=&quot;high&quot;}
+<!--
+Removed  {importance="high"} for ExL
+-->
+
+>[!NOTE]
 >
 >[!DNL Audience Manager] 僅處理 [!DNL ASCII] 和編 [!DNL UTF-8] 碼檔案。
 
