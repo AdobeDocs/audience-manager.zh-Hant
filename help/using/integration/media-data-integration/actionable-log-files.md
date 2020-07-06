@@ -8,9 +8,9 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: d3fd387478ac00470537124110299cd264eac499
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1376'
 ht-degree: 4%
 
 ---
@@ -153,7 +153,11 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 對於平均大小為200萬行 [!DNL DCM] 的記錄檔，任何根據可操作訊號建立的特徵，都會在我們處理記錄檔後約一小時內實現。
 
->[!NOTE] {imporication=&quot;high&quot;}
+<!--
+Removed  {importance="high"} for ExL
+-->
+
+>[!NOTE]
 >
 >記錄檔中提供的事 [!DNL DCM] 件時間戳記將接受並傳遞至 [!UICONTROL Data Collection Servers]。
 >
