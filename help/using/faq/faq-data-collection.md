@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: 27ce94084e35ffa770858027d12235ca9f1f8430
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 96%
+source-wordcount: '1066'
+ht-degree: 90%
 
 ---
 
@@ -136,9 +136,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**我想要收集一個網站的資料，並透過不同網站的 DFP 定位使用者。如果我不想從那個位置收集資料，是否需要將程式碼部署在其他屬性上？**
+**[!DNL Google Ad Manager]我想要收集一個網站的資料，並透過不同網站的 定位使用者。如果我不想從那個位置收集資料，是否需要將程式碼部署在其他屬性上？**
 
-不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。只要您透過 DFP 存取第二個網站的詳細目錄，就可以透過 DFP 使用從初始網站和目標收集的資料。
+不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。As long as you have access to the inventory on the second site via [!DNL Google Ad Manager], you can use the data collection from the initial site and target via [!DNL Google Ad Manager].
 
 <br> 
 
@@ -148,9 +148,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**[!DNL Audience Manager]如何設定 Cookie 及將變數傳遞至 DFP？**
+**如何設[!DNL Audience Manager]定Cookie並將變數傳遞至[!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 會設定 2 個 Cookie：其中一個會將區段變數傳送至 DFP 廣告標籤，另一個則會設定我們的不重複使用者 ID (UUID)，而 DFP 也會讀取此 ID。將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
+[!DNL Audience Manager] 設定2個Cookie: 其中一個會傳送區段變數 [!DNL Google Ad Manager] 至廣告標籤，而另一個則會設定我們的唯一使用者ID(UUID)，也由讀取 [!DNL Google Ad Manager]。 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
 
 <br> 
 
