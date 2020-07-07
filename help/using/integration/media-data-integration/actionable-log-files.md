@@ -8,9 +8,9 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: d3fd387478ac00470537124110299cd264eac499
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1597'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 若要開始使 [!UICONTROL Actionable Log Files]用，您必須將記錄檔資料匯入 [!DNL Audience Manager]。 下列連結將協助您開始使用：
 
 * 如需 [!UICONTROL Google DCM] 記錄檔，請 [參閱將DCM資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) , *並聯絡您的*[!DNL Audience Manager] 顧問。
-* 如需 [!UICONTROL Google DFP] 記錄檔，請 [參閱將DFP資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) , *並聯絡您的*[!DNL Audience Manager] 顧問。
+* 如需 [!UICONTROL Google Ad Manager] （先前稱為Google DFP）記錄檔，請參 [閱「將DFP資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 」 ** ，並連絡您的 [!DNL Audience Manager] 顧問。
 * 如需其他廣告伺服器記錄檔，請參 [閱資料和中繼資料](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)*檔案* ，並連絡您 [!DNL Audience Manager] 的顧問。
 
 如果您已將記錄檔資料匯入 [!DNL Audience Manager]，請要求您的 [!DNL Audience Manager] 顧問或 [客戶服務為您](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)[!UICONTROL Actionable Log Files] 啟用。
@@ -163,6 +163,35 @@ Removed  {importance="high"} for ExL
 >
 >* 如果日誌檔案中的資料行沒有時間戳 [!DNL DCM] 記，我們將調用的時間 `HTTP` 用作事件時間戳記。
 >* 如果日誌檔案中的資料 [!DNL DCM] 行包含格式錯誤的時間戳記，我們將忽略整個行。
+
+
+<br> 
+
+### 記錄檔中可操作的 [!DNL Google Ad Manager] 訊號 {#ad-manager-logs-signals}
+
+該表列出了來自日誌檔案的可操作 [!DNL Google Ad Manager] 信號：
+
+
+| 記錄檔中的標題名稱 | 訊號 | 說明 |
+---------|----------|---------
+| `LineItemId` | `d_lineitem` | 已傳送廣告管理員行項目的數值ID |
+| `OrderId` | `d_orderid` | 包含已傳送行項目和創意素材的廣告管理員訂單數值ID。 |
+| `CreativeId` | `d_creative` | 傳遞的廣告管理員創意素材的數值ID。 |
+| `-` | `d_event` | 指出事件類型。 Audience Manager會從廣告管理員記錄檔名讀取事件類型，並將其轉換為可操作的訊號。 接受的值為： <br> <ul><li>d_event = imp以瞭解印象。</li><li>d_event =點按次數。</li><li>d_event =轉換和活動的轉換。</li></ul> |
+| `-` | `d_src` | 您用來擷取廣告管理員資料的資料來源ID。 請參 [閱如何建立資料來源](/help/using/features/manage-datasources.md)。 |
+
+表格中描述的訊號會像即時HTTP呼叫一樣在Audience Manager中擷取。 以下範例呼叫包含來自Google廣告管理員的轉換事件的資訊。 呼叫不一定必須包含範例呼叫中的所有訊號。
+
+```
+https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_lineitem=112&d_orderid=22223&d_creative=3983524
+```
+
+>[!NOTE]
+>
+>記錄檔中提供的事 [!DNL Google Ad Manager] 件時間戳記將接受並傳遞至 [!UICONTROL Data Collection Servers]。
+>
+>* 如果日誌檔案中的資料行沒有時間戳 [!DNL Google Ad Manager] 記，我們將調用的時間 `HTTP` 用作事件時間戳記。
+>* 如果日誌檔案中的資料 [!DNL Google Ad Manager] 行包含格式錯誤的時間戳記，我們將忽略整個行。
 
 
 <br> 
