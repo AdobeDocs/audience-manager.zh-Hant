@@ -7,9 +7,9 @@ title: 發佈者適用的 Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ece4ebffe1
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '274'
 ht-degree: 36%
 
 ---
@@ -21,11 +21,11 @@ Audience Optimization for Publishers 可針對您擁有且運作之內容，協�
 
 ## 概述 {#aor-overview}
 
-[!UICONTROL Audience Optimization for Publishers] 並列記錄層級的促銷活動績效資料 [!UICONTROL DFP] 與區段 [!DNL Audience Manager] 度量。 這些報表適用於已設定登入記錄的客 [!UICONTROL DFP] 戶 [!DNL Audience Manager]。 如果您尚未設定記錄擷取，請閱讀「將 [DFP資料檔案匯入Audience Manager](import-dfp.md) 」，以取得有關如何進行的資訊。
+[!UICONTROL Audience Optimization for Publishers] 並列記錄層級的促銷活動績效資料 [!DNL Google Ad Manager] 與區段 [!DNL Audience Manager] 度量。 這些報表適用於已設定登入記錄的客 [!DNL Google Ad Manager]戶 [!DNL Audience Manager]。 如果您尚未設定記錄擷取，請閱讀「將 [Google Ad Manager資料檔案匯入Audience Manager](import-dfp.md) 」，以取得如何進行的資訊。
 
 ## 中繼資料 {#metadata}
 
-報表中顯示的效能資訊會從您的例項匯 [!UICONTROL DFP] 入。 您必須傳送中繼資料檔案給我們，好讓我們可以在報表中新增描述性好記的名稱，而非ID。 將DFP資料檔 [案匯入Audience Manager的步驟](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 3說明如何傳送中繼資料。
+報表中顯示的效能資訊會從您的例項匯 [!DNL Google Ad Manager] 入。 您必須傳送中繼資料檔案給我們，好讓我們可以在報表中新增描述性好記的名稱，而非ID。 「將Google Ad Manager資 [料檔案匯入Audience Manager」中的步驟](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 3說明如何傳送中繼資料。
 
 ## 可用報表 {#available-reports}
 
