@@ -7,9 +7,9 @@ title: 區段成效報表
 uuid: c9a1e9ad-4f3f-4334-a3ff-0f241c7303c4
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '722'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Line Item IDs]如將DFP資料檔案匯 [入Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Line Item] Web屬性的形式詳細說明 [!UICONTROL Line Item ID]。
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料 [!UICONTROL Line Item IDs]，如 [Import Google Ad Manager（舊稱DFP）Data Files Into Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Line Item] Web屬性的形式詳細說明 [!UICONTROL Line Item ID]。
 
 ## 解讀結果 {#interpreting-results}
 
