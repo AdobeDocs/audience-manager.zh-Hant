@@ -7,7 +7,7 @@ title: 修改 GPT setTargeting API 呼叫
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 9%
@@ -38,11 +38,11 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
 
 >[!IMPORTANT]
 >
->視您要與整合的方式而 [!DNL DFP]定，您只需要上述程式碼範例中的某些行：
+>視您要與整合的方式而 [!DNL Google Ad Manager]定，您只需要上述程式碼範例中的某些行：
 >
 >* 用戶端整合： 僅使用第1-3行。
 >* 伺服器端整合： 這些線條都不需要。
->* 在以下 [!DNL DFP] 位置收錄要報告的日誌檔案 [!DNL Audience Manager]: 僅使用第4-6行。 此程式碼會將Cookie的值 `aam_uuid` 插入記錄檔中，以便擷取這些Cookie以供報告。
+>* 在以下 [!DNL Google Ad Manager] 位置收錄要報告的日誌檔案 [!DNL Audience Manager]: 僅使用第4-6行。 此程式碼會將Cookie的值 `aam_uuid` 插入記錄檔中，以便擷取這些Cookie以供報告。
 
 
 ### `AamGpt` 函式和資料類型
