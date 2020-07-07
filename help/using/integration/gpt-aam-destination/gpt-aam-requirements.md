@@ -1,23 +1,23 @@
 ---
-description: 您可以透過用戶端或伺服器端整合，將合格的區段傳送至DFP。 以下列出兩種方法的需求和相關資訊。
-seo-description: 您可以透過用戶端或伺服器端整合，將合格的區段傳送至DFP。 以下列出兩種方法的需求和相關資訊。
-seo-title: 使用 Google 發佈商代碼 (GPT) 傳送區段至 DFP 的需求和方法
+description: 您可以透過用戶端或伺服器端整合，將符合資格的區段傳送至Google Ad Manager。 以下列出兩種方法的需求和相關資訊。
+seo-description: 您可以透過用戶端或伺服器端整合，將符合資格的區段傳送至Google Ad Manager。 以下列出兩種方法的需求和相關資訊。
+seo-title: 使用Google Publisher標籤(GPT)將區段傳送至Google廣告管理員的需求與方法
 solution: Audience Manager
-title: 使用 Google 發佈商代碼 (GPT) 傳送區段至 DFP 的需求和方法
+title: 使用Google Publisher標籤(GPT)將區段傳送至Google廣告管理員的需求與方法
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e677790b6
 feature: Third Party Integrations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 7%
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
 
-# 使用 Google 發佈商代碼 (GPT) 傳送區段至 DFP 的需求和方法{#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
+# Requirements and Methods of Sending Segments to Google Ad Manager Using Google Publisher Tags ( GPT) {#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
 
-您可以透過用戶端或 [!DNL DFP] 伺服器端整合，將符合資格的區段傳送至。 以下列出兩種方法的需求和相關資訊。
+您可以透過用戶端 [!DNL Google Ad Manager] 或伺服器端整合，將合格區段傳送至（先前稱為DFP）。 以下列出兩種方法的需求和相關資訊。
 
 ## 用戶端整合 {#client-side-integration}
 
@@ -47,7 +47,7 @@ ht-degree: 7%
 
 ## 伺服器端整合 {#server-side-integration}
 
-如果您想要使用設定伺服器端整合，請洽詢您的Audience Manager顧問或客戶服務 [!DNL DFP]人員 [!DNL GPT]。 您必須提供您的帳 [!DNL DFP] 戶網路ID和觀眾連結ID。
+如果您想要使用設定伺服器端整合，請洽詢您的Audience Manager顧問或客戶服務 [!DNL Google Ad Manager]人員 [!DNL GPT]。 您必須提供您的帳 [!DNL Google Ad Manager] 戶網路ID和觀眾連結ID。
 
 >[!IMPORTANT]
 >
