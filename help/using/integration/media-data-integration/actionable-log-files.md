@@ -8,10 +8,10 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: 86b328a186c5e864a080848cb022ecb1971595db
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 4%
+source-wordcount: '1574'
+ht-degree: 3%
 
 ---
 
@@ -33,14 +33,18 @@ ht-degree: 4%
 若要開始使 [!UICONTROL Actionable Log Files]用，您必須將記錄檔資料匯入 [!DNL Audience Manager]。 下列連結將協助您開始使用：
 
 * 如需 [!UICONTROL Google DCM] 記錄檔，請 [參閱將DCM資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) , *並聯絡您的*[!DNL Audience Manager] 顧問。
-* 如需 [!UICONTROL Google Ad Manager] （先前稱為Google DFP）記錄檔，請參 [閱「將DFP資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 」 ** ，並連絡您的 [!DNL Audience Manager] 顧問。
+* 如需 [!UICONTROL Google Ad Manager] （先前稱為Google DFP）記錄檔，請參閱「 [將Google Ad Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 」 *，並連絡您的*[!DNL Audience Manager] 顧問。
 * 如需其他廣告伺服器記錄檔，請參 [閱資料和中繼資料](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)*檔案* ，並連絡您 [!DNL Audience Manager] 的顧問。
 
 如果您已將記錄檔資料匯入 [!DNL Audience Manager]，請要求您的 [!DNL Audience Manager] 顧問或 [客戶服務為您](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)[!UICONTROL Actionable Log Files] 啟用。
 
+<!--
+
 >[!IMPORTANT]
 >
-> 從2019年底開始， [!UICONTROL Actionable Log Files] 新廣告伺服器的可用性開始增加。 Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
+
+-->
 
 ## 使用可操作的日誌檔案 {#working-with-actionable-log-files}
 
