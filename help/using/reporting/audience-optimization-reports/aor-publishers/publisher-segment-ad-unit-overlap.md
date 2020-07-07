@@ -7,9 +7,9 @@ title: 區段至廣告單位重疊
 uuid: aaa20163-58aa-42c9-8f72-a1dfb0d20e57
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '420'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料， [!UICONTROL Ad Unit IDs]如將DFP資料檔案匯 [入Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Ad Unit] Web屬性的形式詳細說明 [!UICONTROL Ad Unit ID]。
+>啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料 [!UICONTROL Ad Unit IDs]，如 [Import Google Ad Manager（舊稱DFP）Data Files Into Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Ad Unit] Web屬性的形式詳細說明 [!UICONTROL Ad Unit ID]。
 
 ## 解讀結果 {#interpreting-results}
 
@@ -59,7 +59,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 廣告單位獨特值計數</span> </p> </td> 
-   <td colname="col2"> <p>此特定廣告單位的訪客數。 此資訊會從DFP記錄檔中擷取。 </p> </td> 
+   <td colname="col2"> <p>此特定廣告單位的訪客數。 此資訊會從Google廣告管理員記錄檔中擷取。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 重疊唯一客戶計數</span> </p> </td> 
