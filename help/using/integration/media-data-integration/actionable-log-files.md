@@ -8,9 +8,9 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 translation-type: tm+mt
-source-git-commit: 86b328a186c5e864a080848cb022ecb1971595db
+source-git-commit: a4d86fb0324a03002123f8713eb9786b5b74c38e
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1605'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 若要開始使 [!UICONTROL Actionable Log Files]用，您必須將記錄檔資料匯入 [!DNL Audience Manager]。 下列連結將協助您開始使用：
 
-* 如需 [!UICONTROL Google DCM] 記錄檔，請 [參閱將DCM資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) , *並聯絡您的*[!DNL Audience Manager] 顧問。
+* 如需 [!UICONTROL Google Campaign Manager] 記錄檔，請 [參閱將Google Campaign Manager資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) , *並聯絡您的*[!DNL Audience Manager] 顧問。
 * 如需 [!UICONTROL Google Ad Manager] （先前稱為Google DFP）記錄檔，請參閱「 [將Google Ad Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 」 *，並連絡您的*[!DNL Audience Manager] 顧問。
 * 如需其他廣告伺服器記錄檔，請參 [閱資料和中繼資料](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)*檔案* ，並連絡您 [!DNL Audience Manager] 的顧問。
 
@@ -62,9 +62,9 @@ ht-degree: 3%
 
 請記住，若要使用這項資訊來建立和劃分受眾，您必須自行設定規則型特徵。
 
-### 來自Google DCM記錄檔的可操作訊號 {#dcm-logs-signals}
+### 來自Google Campaign Manager記錄檔的可操作訊號 {#dcm-logs-signals}
 
-該表列出了來自日誌檔案的可操作 [!DNL DCM] 信號：
+該表列出了來自日誌檔案的可操作 [!DNL Google Campaign Manager] 信號：
 
 <table id="table_A5A2A10D471C4C9D8DCD88F9C017040C"> 
  <thead> 
@@ -79,13 +79,13 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p> <code>Activity ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_conversion</code> </p> </td> 
-   <td colname="col3"> <p>僅適用於轉換事件。 </p> <p>代表DCM中轉換活動的數值ID。 此欄位會從DCM對應至活動ID。 </p> <p> <p>提示： 您可以從DCM擷取多個或特定的轉換活動。 使用DCM中每 <code> d_conversion = activity ID</code> 個轉換活動建立特徵。 </p> </p> </td> 
+   <td colname="col3"> <p>僅適用於轉換事件。 </p> <p>代表Google促銷活動管理員中轉換活動的數值ID。 此欄位會從Google促銷活動管理員對應至活動ID。 </p> <p> <p>提示： 您可以從Google Campaign Manager擷取多個或特定的轉換活動。 使用Google Campaign Manager中 <code> d_conversion = activity ID</code> 每個轉換活動的特徵建立特徵。 </p> </p> </td> 
    <td colname="col4"> <p> <code> 24122</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Conversion ID</code> </p> </td> 
    <td colname="col2"> <p> <code>d_conversionType</code> </p> </td> 
-   <td colname="col3"> <p>僅適用於轉換事件。 </p> <p>此欄位對應至DCM中的轉換ID。 指示用戶從DCM轉換前的活動。 </p> <p>接受的值為： </p> <p> 
+   <td colname="col3"> <p>僅適用於轉換事件。 </p> <p>此欄位對應至Google促銷活動管理員中的轉換ID。 指出使用者從Google促銷活動管理員轉換之前的活動。 </p> <p>接受的值為： </p> <p> 
      <ul id="ul_2256294F1C6F448B9F269D00D4DFEE65"> 
       <li id="li_29D3FF8919B7404297E80BACA913117A"> <code> 1</code> 進行點按後轉換。 </li> 
       <li id="li_B5250A63A2C1413FAF1FDC8272BFFB97"> <code> 2</code> 用於曝光後轉換。 </li> 
@@ -102,25 +102,25 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p> <code>Advertiser Group ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_adsrc</code> </p> </td> 
-   <td colname="col3"><p>廣告商資料來源的整合代碼。 請注意，這與Audience Manager資料來源無關。</p> <p>此欄位會從DCM對應至廣告商群組ID。 </p> </td> 
+   <td colname="col3"><p>廣告商資料來源的整合代碼。 請注意，這與Audience Manager資料來源無關。</p> <p>此欄位會從Google促銷活動管理員對應至廣告商群組ID。 </p> </td> 
    <td colname="col4"> <p> <code> 134243</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Advertiser ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_bu</code> </p> </td> 
-   <td colname="col3"> <p>業務單位ID。 此欄位從DCM對應至廣告商ID。 </p> </td> 
+   <td colname="col3"> <p>業務單位ID。 此欄位會從Google促銷活動管理員對應至廣告商ID。 </p> </td> 
    <td colname="col4"> <p> <code> 563332</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Campaign ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_campaign</code> </p> </td> 
-   <td colname="col3"> <p>DCM提供的促銷活動ID。</p> </td> 
+   <td colname="col3"> <p>Google促銷活動管理員提供的促銷活動ID。</p> </td> 
    <td colname="col4"> <p> <code> 7892520</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>Creative ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>DCM提供的Creative ID。 </p> </td> 
+   <td colname="col3"> <p>Google Campaign Manager提供的Creative ID。 </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr> 
   <tr> 
@@ -132,7 +132,7 @@ ht-degree: 3%
     <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_event</code> </p> </td> 
-   <td colname="col3"> <p>指出事件類型。 Audience Manager會從DCM記錄檔名讀取事件類型，並將其轉換為可操作的訊號。 </p> <p>接受的值為： </p> <p> 
+   <td colname="col3"> <p>指出事件類型。 Audience Manager會從Google Campaign Manager記錄檔名中讀取事件類型，並將它轉換為可操作的訊號。 </p> <p>接受的值為： </p> <p> 
      <ul id="ul_58EB40E458844DA185ABAF160ADAF03E"> 
       <li id="li_71772CC106F74F4788E1784CC3D70BD3"> <code> d_event = imp</code> 以獲得曝光。 </li> 
       <li id="li_33A629A32B87400F93269581154D566F"> <code> d_event = click</code> 按鈕。 </li> 
@@ -143,19 +143,19 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p> <code>-</code> </p> </td> 
    <td colname="col2"> <p> <code> d_src</code> </p> </td> 
-   <td colname="col3"> <p>用於捕獲DCM資料的資料源的ID。 請參閱 <a href="../../features/manage-datasources.md#create-data-source"> 如何建立資料來源</a>。 </p> </td> 
+   <td colname="col3"> <p>您用來擷取Google Campaign Manager資料的資料來源ID。 請參閱 <a href="../../features/manage-datasources.md#create-data-source"> 如何建立資料來源</a>。 </p> </td> 
    <td colname="col4"> <p> <code> 743</code> </p> </td> 
   </tr>
  </tbody>
 </table>
 
-表格中描述的信號像實 [!DNL Audience Manager] 時呼叫一樣被捕 `HTTP` 獲。 以下範例呼叫包含來自的轉換事件相關資訊 [!DNL DCM]。 呼叫不一定必須包含 *範例呼叫* 中的所有訊號。
+表格中描述的信號像實 [!DNL Audience Manager] 時呼叫一樣被捕 `HTTP` 獲。 以下範例呼叫包含來自的轉換事件相關資訊 [!DNL Google Campaign Manager]。 呼叫不一定必須包含 *範例呼叫* 中的所有訊號。
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_conversion=24122&d_conversionType=2&d_bu=3983524&d_campaign=7321391&d_adsrc=11111&d_creative=123456
 ```
 
-對於平均大小為200萬行 [!DNL DCM] 的記錄檔，任何根據可操作訊號建立的特徵，都會在我們處理記錄檔後約一小時內實現。
+對於平均大小為200萬行 [!DNL Google Campaign Manager] 的記錄檔，任何根據可操作訊號建立的特徵，都會在我們處理記錄檔後約一小時內實現。
 
 <!--
 Removed  {importance="high"} for ExL
@@ -163,10 +163,10 @@ Removed  {importance="high"} for ExL
 
 >[!NOTE]
 >
->記錄檔中提供的事 [!DNL DCM] 件時間戳記將接受並傳遞至 [!UICONTROL Data Collection Servers]。
+>記錄檔中提供的事 [!DNL Google Campaign Manager] 件時間戳記將接受並傳遞至 [!UICONTROL Data Collection Servers]。
 >
->* 如果日誌檔案中的資料行沒有時間戳 [!DNL DCM] 記，我們將調用的時間 `HTTP` 用作事件時間戳記。
->* 如果日誌檔案中的資料 [!DNL DCM] 行包含格式錯誤的時間戳記，我們將忽略整個行。
+>* 如果日誌檔案中的資料行沒有時間戳 [!DNL Google Campaign Manager] 記，我們將調用的時間 `HTTP` 用作事件時間戳記。
+>* 如果日誌檔案中的資料 [!DNL Google Campaign Manager] 行包含格式錯誤的時間戳記，我們將忽略整個行。
 
 
 <br> 
@@ -322,9 +322,9 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 4. 使用Creative 456將區 [!DNL Retarget Users] 段對應至目標，並定位目標使用者。
 
-### 在對象最佳化報表或對象實驗室中使用DCM Floodlight活動
+### 在「對象最佳化」報表或「對象實驗室」中使用Google Campaign Manager Floodlight活動
 
-[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en) ，讓廣告商可追蹤使用者轉換。 您可 [!UICONTROL Actionable Log Files]以在「對象最佳化報 [!DNL DCM] 告」或「對象實驗 [」中追蹤轉](../../reporting/audience-optimization-reports/audience-optimization-reports.md) 換率 [](../../features/audience-lab/audience-lab.md):
+[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en) ，讓廣告商可追蹤使用者轉換。 您可 [!UICONTROL Actionable Log Files]以在「對象最佳化報 [!DNL Google Campaign Manager] 告」或「對象實驗 [」中追蹤轉](../../reporting/audience-optimization-reports/audience-optimization-reports.md) 換率 [](../../features/audience-lab/audience-lab.md):
 
 1. 建立特徵，並使用下列特徵規則從廣告伺服器記錄檔擷取轉換：
 
@@ -336,6 +336,6 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 
 >[!MORELIKETHIS]
 >
->* [將 DCM 資料檔案匯入 Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+>* [將Google Campaign Manager資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
 >* [受眾最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
 
