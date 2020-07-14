@@ -7,10 +7,10 @@ title: 媒體資料整合
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
 feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 3c70178dc1a020545793ea7facc70e34d23543fa
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 24%
+source-wordcount: '146'
+ht-degree: 17%
 
 ---
 
@@ -24,3 +24,9 @@ ht-degree: 24%
 * [可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)
 * [透過像素呼叫擷取行銷活動的曝光資料](/help/using/integration/media-data-integration/impression-data-pixels.md)
 * [透過像素呼叫擷取行銷活動的點按資料](/help/using/integration/media-data-integration/click-data-pixels.md)
+
+若要設定記錄擷取，請閱讀下列文章：
+
+* [將Google Campaign Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+* [將Google Ad Manager資料檔案匯入Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [日誌資料和元資料檔案](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) ，以設定一般日誌檔案的日誌提取
