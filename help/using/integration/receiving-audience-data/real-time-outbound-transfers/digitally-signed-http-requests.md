@@ -7,9 +7,9 @@ title: 數位簽署的HTTP(S)要求
 uuid: 1183a70f-0c96-42cf-a4f5-37a83ffa1286
 feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4877aa5391193ee2187609fdc9cb3740c91feb96
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -90,10 +90,7 @@ String signature = Base64.encodeBase64String(result).trim();
 
 ## 旋轉私密金鑰 {#rotate-private-key}
 
-出於安全考慮，建議定期旋轉私密金鑰。 由您決定私密金鑰和旋轉期間。 為了在零停機時實現密鑰輪替，支援 [!UICONTROL IRIS] 添加多個簽名標頭。 一個標題將包含舊金鑰產生的簽名，另一個標題將包含使用新私密金鑰產生的簽名。 請參閱以下步驟：
-
-1. 合作夥伴會將新的私密金鑰通訊給 [!DNL Adobe Audience Manager]您。
-1. 舊金鑰會從中移除， [!DNL Audience Manager] 且只 [!UICONTROL IRIS] 會傳送新的簽名標題。 鍵已旋轉。
+若要輪換私密金鑰，合作夥伴必須將新的私密金鑰告知其 [!DNL Adobe Audience Manager] 顧問。 舊金鑰會從中移除， [!DNL Audience Manager] 且只 [!UICONTROL IRIS] 會傳送新的簽名標題。 鍵已旋轉。
 
 ## 用於簽署的資料 {#data-signing}
 
