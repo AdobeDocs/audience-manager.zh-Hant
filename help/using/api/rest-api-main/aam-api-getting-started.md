@@ -7,10 +7,10 @@ title: REST API 快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 0fd2b2a58274199ecc2fd58738113165c804ceb8
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 3%
+source-wordcount: '1854'
+ht-degree: 2%
 
 ---
 
@@ -40,22 +40,28 @@ ht-degree: 3%
 
 該 [!DNL Audience Manager] 認證 [!DNL REST APIs] 方法支援兩種。
 
-* [JWT（服務帳戶）驗證](#jwt)。 這是建議的驗證方法。
+* [JWT（服務帳戶）使用](#jwt)[Adobe I/O的驗證](https://www.adobe.io/)。 [!DNL Adobe I/O] 是Adobe的開發人員生態系統和社群。 它包含 [Adobe I/O開發人員工具，以及所有Adobe產品](https://www.adobe.io/apis/experienceplatform.html)[的API和API](https://www.adobe.io/apis.html)。 這是設定和使用的建議方式 [!DNL Adobe][!DNL APIs]。
 * [OAuth驗證（已過時）](#oauth)。 雖然此方法已不再提倡，但具有現有整合 [!DNL OAuth] 的客戶仍可繼續使用此方法。
 
 >[!IMPORTANT]
 >
 >視您的驗證方法而定，您需要相應調整您的 [!DNL URLs] 請求。 有關應 [使用的主機名](#environments) ，請參見「環境」部分。
 
-## [!DNL JWT] ([!DNL Service Account])驗證 {#jwt}
+## [!DNL JWT] ([!DNL Service Account])使用Adobe I/O的驗證 {#jwt}
+
+### Adobe I/O概觀 {#adobeio}
+
+[!DNL Adobe I/O] 是Adobe的開發人員生態系統和社群。 它包含 [Adobe I/O開發人員工具，以及所有Adobe產品](https://www.adobe.io/apis/experienceplatform.html)[的API和API](https://www.adobe.io/apis.html)。
+
+這是設定和使用的建議方式 [!DNL Adobe][!DNL APIs]。
 
 ### 必要條件 {#prerequisites}
 
-在設定驗 [!DNL JWT] 證之前，請確定您擁有 [Adobe Developer Console的存取權](https://console.adobe.io/)。 請洽詢您的組織管理員以取得存取要求。
+在設定驗 [!DNL JWT] 證之前，請務必存取 [Adobe I/O中的](https://console.adobe.io/) Adobe Developer Console [](https://www.adobe.io/)。 請洽詢您的組織管理員以取得存取要求。
 
 ### 驗證
 
-請遵循下列步驟來設定驗 [!DNL JWT (Service Account)] 證：
+請依照下列步驟，使用下列 [!DNL JWT (Service Account)] 程式設定驗證 [!DNL Adobe I/O]:
 
 1. 登入 [Adobe Developer Console](https://console.adobe.io/)。
 1. 請遵循「服務帳戶 [連線」中的步驟](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
