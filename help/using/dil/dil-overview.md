@@ -42,7 +42,7 @@ ht-degree: 18%
 
 [!UICONTROL DIL] 程式碼可從這裡 **[下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。 請注意，從8.0版（2018年8月發行）開始，[!UICONTROL DIL]Adobe Experience Platform Identity Service[](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html)（3.3版或更新版本）的需求十分龐大。 它依賴於[!DNL ID Service]觸發ID同步和[!DNL URL destinations]。 如果缺少、舊[!DNL ID Service]或未配置，則會發生錯誤。
 
-我們建議您改用 [!UICONTROL DIL] Adobe Experience Platform Launch，而不 [!DNL Audience Manager] 是手動 [](https://docs.adobelaunch.com/) 使用和設定。 [!DNL Adobe Experience Platform Launch] 是建議的實作工具，因為它可簡化程式碼部署、位置和版本管理。 閱讀中有關 [Audience Manager擴充功能的更多資訊](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension)[!DNL Adobe Experience Platform Launch]。
+我們建議您改用 [!UICONTROL DIL] Adobe Experience Platform Launch [!DNL Audience Manager][](https://docs.adobelaunch.com/) ，而不是手動使用和設定。 [!DNL Adobe Experience Platform Launch] 是建議的實作工具，因為它可簡化程式碼部署、位置和版本管理。 閱讀中有關 [Audience Manager擴充功能的更多資訊](https://docs.adobelaunch.com/extension-reference/web/adobe-audience-manager-extension)[!DNL Adobe Experience Platform Launch]。
 
 [!DNL Adobe Experience Platform Launch] 是 [Adobe Dynamic Tag Manager](https://docs.adobe.com/content/help/en/dtm/using/c-overview.html) ([!DNL DTM])的後繼者。
 
