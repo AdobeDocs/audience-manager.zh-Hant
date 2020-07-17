@@ -138,7 +138,7 @@ The illustration below shows the results of running a general report for the Tra
 
 >[!NOTE]
 >
->選取 **[!UICONTROL Include Destination Mappings]** 可查看已啟用目的地的區段人口劃分。
+>選取 **[!UICONTROL Include Destination Mappings]** 可查看已啟用目標的區段人口劃分。
 
 下圖顯示執行區段報表類型一般報表的結果。
 
