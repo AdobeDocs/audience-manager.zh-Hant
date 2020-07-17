@@ -122,7 +122,7 @@ create-onboarding-status-report.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>資料同步檔案名稱</b> </p> </td> 
-   <td colname="col2"> <p>列出 <span class="keyword"></span> Audience Manager從您選取的傳入資料來源接收並處理的檔案。 </p> <p>如果檔案名的格式不正確，檔案處理將失敗。 檔案名稱需求會依您將此資料傳送至 <span class="keyword"> Audience Manager的方式而異</span>。 傳送方 <span class="keyword"> 法包括Amazon S3</span> 和FTP。 如需如何命名檔案的指示，請參閱： </p> <p> 
+   <td colname="col2"> <p>列出 <span class="keyword"></span> Audience Manager從您選取的傳入資料來源接收並處理的檔案。 </p> <p>如果檔案名的格式不正確，檔案處理將失敗。 檔案名稱需求會依您將此資料傳送至 <span class="keyword"> Audience Manager的方式而異</span>。 傳送方法 <span class="keyword"> 包括Amazon S3</span> 和FTP。 如需如何命名檔案的指示，請參閱： </p> <p> 
      <ul id="ul_9A32906A14CA41C5AED0E13930DB31BA"> 
       <li id="li_A5A0E6ED711D4002B52092619F87C7D6"> <a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md"> 傳入資料檔案的 Amazon S3 名稱要求 </a> </li> 
      </ul> </p> </td> 
