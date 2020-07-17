@@ -17,7 +17,7 @@ ht-degree: 17%
 
 # 從 DCS 回應取得使用者 ID 和區域{#get-user-ids-and-regions-from-a-dcs-response}。
 
-本節說明如何剖析回 [!DNL DCS] 應以擷取對進行即時呼叫所需的訪客和地區ID [!DNL DCS]。
+This section describes how to parse a [!DNL DCS] response to retrieve the visitor and region IDs required to make real-time calls to the [!DNL DCS].
 
 ## 使用者和地區ID {#user-region-ids}
 
