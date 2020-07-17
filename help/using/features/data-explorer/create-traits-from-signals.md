@@ -46,6 +46,7 @@ ht-degree: 3%
 2. 在結果清單中識別您要用於特徵的信號。
    * 若要從一個訊號建立特徵，請按一下對應的 **[!UICONTROL Create Rule-Based Trait]** 或連 **[!UICONTROL Create Onboarded Trait]** 結。
    * 若要從多個訊號建立特徵，請按一下每個訊號的對應核取方塊，然後按一下 **[!UICONTROL Create Trait from Multiple Signals]**。
+
    >[!NOTE]
    >您只能從相同類型的信號建立特徵。 您無法根據即時訊號和已登入訊號的組合來建立特徵。
    >
