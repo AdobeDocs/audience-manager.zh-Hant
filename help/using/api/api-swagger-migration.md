@@ -1,5 +1,5 @@
 ---
-description: 在Audience Manager，我們是工程師、開發人員，以及像您一樣的程式碼忍者。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
+description: 在Audience Manager，我們是工程師、開發人員和程式碼忍者，就像您一樣。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
 seo-description: 在Audience Manager，我們是工程師、開發人員和程式碼忍者，就像您一樣。 而且，我們和您一樣，也想要使用可靠、正確的API檔案。 因此，我們將API內容重新寫入Swagger，並移至新位置。 這些變更旨在協助您改善使用Audience Manager API程式碼的體驗。
 seo-title: Audience Manager API 程式碼移轉
 solution: Audience Manager
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Audience Manager API 程式碼移轉 {#audience-manager-api-code-migration}
 
-在Audience Manager，我們是工程師、開發人員和程式碼忍者，就像您一樣。 而且，和您一樣，我們也想要使用可靠、精確的檔案 [!DNL API] 工作。 因此，我們會將內容重新寫入， [!DNL API] 並將內 [!DNL Swagger] 容移至新位置。 這些變更旨在協助您改善使用Audience Manager程式碼的 [!DNL API] 體驗。
+在Audience Manager，我們是工程師、開發人員，以及像您一樣的程式碼忍者。 而且，和您一樣，我們也想要使用可靠、精確的檔案 [!DNL API] 工作。 因此，我們會將內容重新寫入， [!DNL API] 並將內 [!DNL Swagger] 容移至新位置。 這些變更旨在協助您改善使用Audience Manager程式碼的 [!DNL API] 體驗。
 
 ## Movin&#39; On Up {#code-migration-details}
 
