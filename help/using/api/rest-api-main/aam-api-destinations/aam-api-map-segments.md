@@ -270,7 +270,7 @@ ht-degree: 11%
 
 ## 將區段對應至伺服器對伺服器目的地 {#map-segment-s2s}
 
-一種 `POST` 方法，可讓您將區段對應至現有目的 [!UICONTROL server-to-server] 地。 但請注意，您無法使用這些目 [!UICONTROL server-to-server] 前可用的方法來建立目 [!DNL API] 標。
+一種 `POST` 方法，可讓您將區段對應至現有目 [!UICONTROL server-to-server] 的地。 但請注意，您無法使用這些目 [!UICONTROL server-to-server] 前可用的方法來建立目 [!DNL API] 標。
 
 <!-- r_map_segment_s2s.xml -->
 
