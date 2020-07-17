@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## [!UICONTROL Trait] 人口資料 {#trait-population-data}
 
-[!UICONTROL Segment Builder] 顯示 [!UICONTROL Total Trait Population] 您新增至區段的 [!UICONTROL trait] 最後一天。 此資料會出現在您在區段中選取之周圍的 [!UICONTROL trait] 藍色欄 [!UICONTROL Basic View] 位中。
+[!UICONTROL Segment Builder] 顯示 [!UICONTROL Total Trait Population] 您新增至區段的 [!UICONTROL trait] 最後一天。 此資料會出現在您選取區段周圍的 [!UICONTROL trait] 藍色欄 [!UICONTROL Basic View] 位中。
 
 ![](assets/trait-size.png)
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ![](assets/confidence-interval.png)
 
-在 [!UICONTROL Segment Builder]中，估計人口圖上的藍條表示區段大小的可能上限和下限範圍。 雖然過去的效能無法保證未來的結果，但估計的資料可協助您瞭解新區段或已編輯區段的潛在大小。
+在 [!UICONTROL Segment Builder]中，估計人口圖上的藍條表示區段大小的可能上限和下限範圍。 Although past performance does not guarantee future results, the estimated data can help you understand the potential size of a new or edited segment.
 
 ## 區段人口資料概觀 {#segment-populations}
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 請參閱以下定義，以取得有關估計和實際區段人口資料的詳細資訊。
 
-## 預計區段人口資料已定義 {#estimated-segment-population}
+## Estimated Segment Population Data Defined {#estimated-segment-population}
 
 下表定義預計的人口量度。
 
