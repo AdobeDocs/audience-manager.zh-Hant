@@ -23,7 +23,7 @@ ht-degree: 6%
 
 ## 步驟1 —— 板載離線特徵 {#step-1-onboard-traits}
 
-在此案例中建立受眾細分的第一步是將您的離線客戶資料匯入Audience Manager。
+在此案例中建立受眾細分的第一步，就是將您的離線客戶資料匯入Audience Manager。
 
 >[!IMPORTANT]
 >
