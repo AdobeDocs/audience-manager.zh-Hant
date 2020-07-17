@@ -38,7 +38,7 @@ ht-degree: 2%
 
 **A)根據您結合的線上和線下使用者活動鎖定受眾**。 在此案例中，您想要結合Audience Manager的現有觀眾資料與內部系統的資料， [!DNL CRM] 並傳送產生的觀眾區隔 [!DNL People-Based Destinations]。 以下是說明此情形的範例：
 
-您的公司是一家航空公司，有不同的客戶層級（銅、銀和金），您想要透過社交平台為每個層級提供個人化優惠。 您使用Audience Manager分析網站上的客戶活動。 不過，並非所有客戶都使用該航空公司的行動應用程式，其中有些客戶尚未登入該公司網站。 您的客戶資料主要限於會籍ID和電子郵件地址。
+您的公司是一家航空公司，有不同的客戶層級（銅、銀和金），而您想要透過社交平台為每個層級提供個人化優惠。 您使用Audience Manager分析網站上的客戶活動。 不過，並非所有客戶都使用該航空公司的行動應用程式，其中有些客戶尚未登入該公司網站。 您的客戶資料主要限於會籍ID和電子郵件地址。
 
 若要跨社交媒體和類似的以人為本的通道鎖定目標受眾，您可以將雜湊的電子郵件地址匯入Audience [](people-based-destinations-prerequisites.md) Manager，並將它們與您現有的線上活動特徵結合，以建立新的受眾細分。 接下來，您可以使用這些區段來鎖定受眾 [!DNL People-Based Destinations]。
 
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 視您在Audience Manager中擁有的客戶ID類型而定(請參 [閱3。 識別您擁有的客戶ID(CRM ID)類型](people-based-destinations-workflow.md#identify-customer-id)，您會發現您身處下列其中一種情形：
 
-**A)標示現有資料來源**。 此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))已是小寫雜湊電子郵件地址的案例。 在這種情況下，您需要將ID儲存在的資料來源標示為資 [!DNL PII] 料來源。 如需 [資料來源設定的詳細資訊](../datasources-list-and-settings.md) ，請參閱資料來源設定。 您需要做的是，確定未選中「無法與個人識別資訊綁定」選項。
+**A)標示現有資料來源**。 此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))已是小寫雜湊電子郵件地址的案例。 在這種情況下，您需要將ID儲存在的資料來源標籤為資 [!DNL PII] 料來源。 如需 [資料來源設定的詳細資訊](../datasources-list-and-settings.md) ，請參閱資料來源設定。 您需要做的是，確定未選中「無法與個人識別資訊綁定」選項。
 
 **B)建立新的資料來源**。 此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))未雜湊電子郵件地址的情形。 在這種情況下，您需要建立新的跨裝置資料來源，並將雜湊的電子郵件地址加入其中。 您可以透過兩種方式進行此作業：
 
