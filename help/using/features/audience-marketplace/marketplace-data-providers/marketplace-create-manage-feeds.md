@@ -46,6 +46,7 @@ ht-degree: 2%
 1. 若要儲存並啟用資料饋送：
    1. 將滑桿 **[!UICONTROL Availability]** 移至 **[!UICONTROL Active]**。
    1. 按一下 **[!UICONTROL Save]**.
+
    >[!NOTE]
    >
    >* 無法刪除已儲存和啟用的資料饋送。
