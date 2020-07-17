@@ -1,11 +1,14 @@
 ---
 source-git-commit: dee392312d8e0381c714a99b5d537c767107c9bc
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '329'
+ht-degree: 2%
 
 ---
 # 說明
 
-**注意：本頁（或任何readme.md頁面）不會發佈至客戶對應檔案**
+**注意： 本頁（或任何readme.md頁面）不會發佈至客戶對應檔案**
 
 ## 目錄
 
@@ -24,7 +27,7 @@ translation-type: tm+mt
 
 ## 使用手冊級別元資料
 
-+ 描述使用手冊的元資料儲存在中 `TOC.md`。 其中包括:
++ 描述使用手冊的元資料儲存在中 `TOC.md`。 其中包括：
    + product —— 產品／功能的名稱。
    + cloud —— 此產品所屬的雲端。
    + 對象——指導的目標對象或原型。
@@ -32,7 +35,7 @@ translation-type: tm+mt
 
 ## 頁面層級中繼資料
 
-+ 描述文檔所需的元資料作為每個單獨頁面的一部分儲存。 其中包括:
++ 描述文檔所需的元資料作為每個單獨頁面的一部分儲存。 其中包括：
    + title —— 頁面的標題。
    + description - description of page.
    + seo-title - seo替代標題。
@@ -44,7 +47,7 @@ translation-type: tm+mt
    + private-feature-pack —— 主要用於AEM。
    + beta版——此產品是否採用beta版？
    + 重新導向——可用來建立必要之新頁面的參考。
-   + doc-type:參考（預設）/疑難排解／開發人員／教學課程/ kb /白皮書。
+   + doc-type: 參考（預設）/疑難排解／開發人員／教學課程/ kb /白皮書。
 
 ## 更多資訊
 
