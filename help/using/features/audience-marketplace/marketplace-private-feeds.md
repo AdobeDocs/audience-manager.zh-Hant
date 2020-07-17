@@ -157,9 +157,9 @@ ht-degree: 1%
 
 前往「 **Audience Marketplace > Marketplace**」。 搜尋資料提供者在上一步驟中建立的資料饋送。 按一 **下「請求存取**」。 資料提供方指定的聯絡人現在會收到電子郵件通知。 另請參閱 [訂閱私人資料饋送](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
 
-### 步驟6 —— 資料提供者——授予訪問權限
+### 步驟6 —— 資料提供器——授予訪問權限
 
-前往「 **觀眾市集>我的共用資料** 」，並搜尋您在步驟4中建立的動態消息。 按一下新的存取要求，然後按一 **下「允許存取** 」以核准請求。 另請參閱「 [檢閱、核准或拒絕私人動態消息請求」](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
+前往「 **Audience Marketplace >我的共用資料** 」，並搜尋您在步驟4中建立的動態消息。 按一下新的存取要求，然後按一 **下「允許存取** 」以核准請求。 另請參閱「 [檢閱、核准或拒絕私人動態消息請求」](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
 
 ### 步驟7 —— 資料購買者——開啟訂閱
 
