@@ -1,6 +1,6 @@
 ---
-description: Cookie目的地會傳回資料，並將資料寫入使用者瀏覽器中的Cookie。 Cookie包含可供其他平台讀取的資料，這些平台可存取頁面。 請依照下列指示，使用[!UICONCONTROL目標產生器]建立Cookie目標。
-seo-description: Cookie目的地會傳回資料，並將資料寫入使用者瀏覽器中的Cookie。 Cookie包含可供其他平台讀取的資料，這些平台可存取頁面。 請依照下列指示，使用[!UICONCONTROL目標產生器]建立Cookie目標。
+description: Cookie目的地會傳回資料，並將資料寫入使用者瀏覽器中的Cookie。 Cookie包含可供其他平台讀取的資料，這些平台可存取頁面。 請依照下列指示，使用建立Cookie目的地 [!UICONTROL Destination Builder]。
+seo-description: Cookie目的地會傳回資料，並將資料寫入使用者瀏覽器中的Cookie。 Cookie包含可供其他平台讀取的資料，這些平台可存取頁面。 請依照下列指示，使用建立Cookie目的地 [!UICONTROL Destination Builder]。
 seo-title: 設定 Cookie 目的地
 solution: Audience Manager
 title: 設定 Cookie 目的地
@@ -8,7 +8,7 @@ feature: Destination Basics
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '608'
 ht-degree: 3%
 
 ---
