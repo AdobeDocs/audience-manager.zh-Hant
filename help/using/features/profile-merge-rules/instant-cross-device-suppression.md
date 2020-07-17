@@ -60,7 +60,7 @@ ht-degree: 15%
 * 要使即時取消分段功能發揮作用，您必須將所需分段對應至即時伺服器對伺服器目標。
 * 對於透過裝置圖形連線至裝置的 [裝置](profile-link-use-case.md#recommendations)，我們針對評估與取消分段強制實行四裝置限制。 此限制在「裝置圖形選 [項」和「裝置取消分段」中說明](merge-rule-unsegment.md#device-graph-options-unsegmentation)&#x200B;。
 * unsegment命令將包含在批次檔案中，每24小時傳送至目的地，適用於由裝置圖形連接的多部裝置。
-* 裝置必須即時顯示(在 [Edge](../../reference/system-components/components-edge.md) )，以即時提示區段評估。 對於符合特徵時 [!UICONTROL time-to-live (TTL)] 的特徵， [!DNL TTL] 裝置會透過批次檔案在24小時內自動取消分段&#x200B;。 閱讀更多有關如何設定 [特徵有效期間的資訊](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。
+* 裝置必須即時顯示(在 [Edge](../../reference/system-components/components-edge.md) )，以即時提示區段評估。 對於符合特徵時 [!UICONTROL time-to-live (TTL)] 的特徵， [!DNL TTL] 裝置會透過批次檔案在24小時內自動取消分段&#x200B;。 進一步瞭解如何設 [定特徵有效期間](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。
 * 如果您是即 [!UICONTROL DCS API] 時使用以至板載規則為基礎的特徵，則可使用邏輯觸發取消區 [!UICONTROL AND NOT] 段。 閱讀更多有 [關傳送資料至DCS API的資訊](../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)&#x200B;。
 
 ## 注意的重要方面——時間 {#timing-notes}
