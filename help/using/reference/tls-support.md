@@ -45,7 +45,7 @@ ht-degree: 25%
       <li id="li_EBFC73DCEF3342DDADFF2CBA716DFE93">Windows(7+) </li> 
       <li id="li_75D0A27BB3B246AC8456B0A984BD5DBD">OS X(10.9+) </li> 
       <li id="li_60C1FA4C61EF4AD68719384CDEFC2CF0">Linux Android(4.1+) </li> 
-      <li id="li_761665B51622486FA0D6ABBDAA1DCA60">iOS(9.0+) </li> 
+      <li id="li_761665B51622486FA0D6ABBDAA1DCA60">iOS (9.0+) </li> 
       <li id="li_9E19588870DA4EFB963C0C650116DC94">Chrome OS </li> 
      </ul> </p> </td> 
    <td colname="col3"> <p>有 </p> </td> 
