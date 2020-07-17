@@ -9,7 +9,7 @@ feature: Third Party Integrations
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 5%
     //googleads.g.doubleclick.net/pagead/viewthroughconversion/xxxxxxxx/?value=0&guid=ON&script=0&data=%ALIAS%
    ```
 
-1. 在Audience Manager中， [建立[!DNL URL目標]](../../features/destinations/create-url-destination.md) 或編輯現有 [!DNL destination]。 建立時，請使用下列設定 [!DNL destination]:
+1. 在Audience Manager中， [建立 [!DNL URL destination]](../../features/destinations/create-url-destination.md) 或編輯現有 [!DNL destination]。 建立時，請使用下列設定 [!DNL destination]:
    * 類型： URL
    * 序列化： 已啟用
    * 分隔字元： 分號(;)
@@ -72,7 +72,7 @@ ht-degree: 5%
 >[!MORELIKETHIS]
 >
 >* [[!DNL目標]](../../features/destinations/destinations.md)
->* [建立[!DNL URL目標]](../../features/destinations/create-url-destination.md)
+>* [建立 [!DNL URL Destination]](../../features/destinations/create-url-destination.md)
 >* [關於AdWords再行銷清單](https://support.google.com/adwords/answer/2472738)
 >* [AdWords再行銷的運作方式](https://support.google.com/adwords/answer/2454000)
 
