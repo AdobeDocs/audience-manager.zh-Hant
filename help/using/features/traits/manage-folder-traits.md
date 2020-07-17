@@ -31,6 +31,7 @@ ht-degree: 9%
 
    * 「所有特徵」文字，以新增根層級資料夾。
    * 一個現有的父資料夾，用於添加新的子資料夾。
+
    ![](assets/folder_traits_create.PNG)
 
 1. 按一下 + 圖示可建立資料夾。請注意，您最多可以在分類法中建立 2.000 個資料夾。如需詳細資訊，請參閱[使用限制](../../features/administration/usage-limits.md)文件。
