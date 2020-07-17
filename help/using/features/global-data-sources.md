@@ -41,7 +41,7 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 ## 限制
 
-在執行和作業 [!DNL iOS] 系統 [!DNL Android] 的裝置上，只有原生應用程式可擷取和使用裝置廣告[!UICONTROL DAID]ID。 在行動瀏覽器中執行的網頁應用程式無法存取裝置廣告ID。
+在執行和作 [!DNL iOS] 業系 [!DNL Android] 統的裝置上，只有原生應用程式可擷取和使用裝置廣[!UICONTROL DAID]告ID。 在行動瀏覽器中執行的網頁應用程式無法存取裝置廣告ID。
 
 ## 全域裝置ID驗證
 
