@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ## 瞭解 [!UICONTROL TraitWeight] {#understanding-traitweight}
 
-[!UICONTROL TraitWeight] 是專為自動發現新功能而設計的專 [!UICONTROL traits] 屬演算法。 它會將您 [!UICONTROL trait] 目前和您 [!UICONTROL traits] 可 [!UICONTROL segments] 以透過存取的所有其他第一方和第三方資料進行比較 [!DNL Audience Manager]。 請參閱本節，以取得演算法探索程 [!UICONTROL TraitWeight] 序的說明。
+[!UICONTROL TraitWeight] 是專為自動發現新功能而設計的專 [!UICONTROL traits] 屬演算法。 它會將您 [!UICONTROL trait] 目前和您 [!UICONTROL traits] 可 [!UICONTROL segments] 以存取的所有其他第一方和第三方資料進行比較 [!DNL Audience Manager]。 請參閱本節，以取得演算法探索程 [!UICONTROL TraitWeight] 序的說明。
 
 ![](assets/algo_model.png)
 
