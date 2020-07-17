@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # DCS 錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
-由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!DNL DCS]出所產生的錯誤碼和訊息。
+由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!DNL DCS]出而產生的錯誤碼和訊息。
 
 In the tables below, *italics* represents a variable placeholder.
 
