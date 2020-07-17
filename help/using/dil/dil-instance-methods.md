@@ -684,6 +684,7 @@ var dilInstance = DIL.create({
 >
 >* 我們建議您僅在確 `useCORSOnly: true` 定您的網站訪客擁有支援此功能的瀏覽器時進行設定。
 >* 當發 `useCORSOnly: true`生 [!UICONTROL DIL] 時，將不會從Internet Explorer 9版或更舊版本呼叫ID。
+
 >
 
 
