@@ -48,7 +48,7 @@ ht-degree: 4%
 
 如要瞭解如何編輯您的 [!DNL LinkedIn Campaign Manager] 使用者權限，請參 [閱LinkedIn檔案中的「新增、編輯及移除廣告帳戶的使用者權限](https://www.linkedin.com/help/lms/answer/5753) 」。
 
-如需 [視訊指示，請參閱瞭解和設定LinkedIn以人為本的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
+如需 [視訊指示，請參閱瞭解和設定LinkedIn以人員為本的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
 ## 資料上線 {#data-onboarding}
 
