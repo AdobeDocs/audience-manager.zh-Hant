@@ -35,6 +35,7 @@ ht-degree: 7%
    * **[!UICONTROL This destination may be used for on-site ad targeting]**
    * **[!UICONTROL This destination may be used for off-site ad targeting]**
    * **[!UICONTROL This destination may be used for on-site ad personalization]**
+
    >[!IMPORTANT]
    >
    >除非您對資料來源設定相符的 [匯出控制](../../features/data-export-controls.md) ，否則匯出限制無法運作。
