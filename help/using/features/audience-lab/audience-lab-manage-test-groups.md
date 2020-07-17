@@ -74,6 +74,7 @@ To create a new [!UICONTROL Segment Test Group]:
    * 如果目標無法用於基於「資料匯出控制」的特定測試區段，則 [其會變灰](../../features/data-export-controls.md)。
    * 用戶只會根據所屬的 [RBAC用戶組查看他們有權訪問的目標](../../features/administration/administration-overview.md) 。
    * 最後，您必須為測試群組選取開始日期。 此日期會標示測試群組將發佈至目的地的時段開始。 選 **取「無結束日期** 」，以無限期比較測試區段。
+
    >[!NOTE]
    >
    >[!UICONTROL Profile Merge Rules] 只有即時目的地才支援已驗證的設定檔。 如果含有該設定之設定檔合併規則的測試區段會傳送至檔案型伺服器對伺服器目的地，則可能不會填入觀眾。
@@ -84,6 +85,7 @@ To create a new [!UICONTROL Segment Test Group]:
 
    * 檢閱您在先前步驟中新增的資訊，並選取 **[!UICONTROL Finalize Group]**。
    * 請記住，一旦您完成測試群組，就可以複製或刪除，但不能編輯。
+
    >[!NOTE]
    >* 您可以在建立程式的任何時間點儲存測試群組，稍後再返回精靈。 測試群組狀態為， **[!UICONTROL Draft]** 且測試群組不會傳送任何資料至目的地，直到您完成區段測試群組為止。
    >* 對於草稿測試，您可以按一下主檢視中測試群組卡片中 **[!UICONTROL Edit]** 的，返回並編輯測試 [!UICONTROL Audience Lab] 群組。
