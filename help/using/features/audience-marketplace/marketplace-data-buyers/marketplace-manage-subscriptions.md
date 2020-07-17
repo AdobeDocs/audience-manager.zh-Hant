@@ -39,12 +39,14 @@ ht-degree: 2%
 1. 從預訂表中選擇一個使用案例，並：
    * 將滑桿 **[!UICONTROL Subscription]** 移至 **[!UICONTROL On]**。
    * 按一下 **[!UICONTROL Review & Subscribe]**. 這會開啟視 [!UICONTROL Terms and Conditions] 窗。
+
    ![訂閱](assets/subscribe3.png)
 
 1. 在窗口 [!UICONTROL Terms and Conditions] 中：
 
    * **重要：** 勾選核 **[!UICONTROL ID sync]** 取方塊。 此設定有助於改善與資料提供者的比對率。
    * 勾選條款與條件方塊，然後按一 **[!UICONTROL Accept]** 下以完成訂閱程式。
+
    ![訂閱](assets/subscribe4.png)
 
 ### 後續步驟
