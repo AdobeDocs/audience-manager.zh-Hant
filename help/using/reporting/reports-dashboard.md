@@ -36,7 +36,7 @@ c_dashboard.xml
 1. 在頂端導覽功能表中，按一下 **[!UICONTROL Dashboard]**。
 2. *可選* ：從下拉式清單(7天、14天（預設值）、30天或60天)中，選取上次報告日期的所需時間範圍。
 
-   視選取的時段而定，「 >」和「 [!UICONTROL Largest Traits] > [!UICONTROL Most Changed Traits][!UICONTROL Largest Segments][!UICONTROL Most Changed Segments] 」面板中的「增量」變更，會顯示觀眾中獨特訪客在今天結束的時段與相同長度的前一時段之間的變更。 例如，如果您選取「7天」,Delta會比較結束於今天的前7天內的獨特訪客與結束於七天前7天內的獨特訪客。
+   視選取的時段而定， >和 [!UICONTROL Largest Traits][!UICONTROL Most Changed Traits][!UICONTROL Largest Segments][!UICONTROL Most Changed Segments] >面板中的Delta變更，會顯示觀眾中獨特訪客在今天結束的時段與相同長度的前一時段之間的變更。 例如，如果您選取「7天」,Delta會比較結束於今天的前7天內的獨特訪客與結束於七天前7天內的獨特訪客。
 
    >[!NOTE]
    >
