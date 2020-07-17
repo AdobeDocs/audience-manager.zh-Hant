@@ -43,6 +43,7 @@ t_bulk_requests.xml
    * 演算法、規則型和已登入特徵
    * 區段
    * 特徵和區段資料夾ID
+
    API [!DNL Audience Manager] 會將大量資料寫回工作 [!UICONTROL Request] 表。
 
 >[!NOTE]
