@@ -42,7 +42,7 @@ Audience Manager會以金鑰值配對的形式傳送資料。 根據下列規格
 * 帶有( `c.` 例如，或)的 `c.color` 前言 `c.price`鍵。
 * 使用逗號(例如， `c.color = red, green, blue`)分隔附加至單鍵的序號值。
 * 使用&amp;符號(例如 `c.color=red & c.price = 100 & c.condition = new`)分隔多個鍵值對。
-* 鍵名不應包含特殊字元，例如重音、標點符號或其他符號。
+* 鍵名不應包含特殊字元，例如重音和標點符號或其他符號。
 
 ### 只有合格區段會傳送至OpenX
 
