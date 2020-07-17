@@ -85,13 +85,13 @@ ht-degree: 5%
 
  
 
-在上述範例中，宣告的ID呼叫應如下所示：
+In the example above, the declared ID call should look like this:
 
 `https://yourDomain.demdex.net/event?d_cid_ic=MyHashedEmailDataSource%0155e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149&d_cid_ic=MyCRMDataSource%0168079982765673198504052656074456196039&location=US`
 
 ## 步驟3 —— 建立分段的描述檔合併規則 {#create-profile-merge-rule-segmentation}
 
-下一步是建立新的合併規則，協助您建立要傳送給您的對象區段 [!DNL People-Based Destinations]。
+The next step is creating a new merge rule that will help you create the audience segments to send to your [!DNL People-Based Destinations].
 
 >[!IMPORTANT]
 >
