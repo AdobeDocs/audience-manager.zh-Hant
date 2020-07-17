@@ -147,7 +147,7 @@ ht-degree: 1%
 
 * [!UICONTROL Customer Addressable Audiences] 是以您自己 [!UICONTROL trait] 的 *第一方資料實現為基礎*。 此量度可提供您與資料合作夥伴整合的廣泛、完整檢視。
 
-* [!UICONTROL Segment Addressable Audiences] 是以您自己第一 *方資料的區段資格，加上第二方及第三方資料為基礎*。 此量度可提供定位平台中您的詳細、更 [!UICONTROL addressable audiences] 精確的檢視。
+* [!UICONTROL Segment Addressable Audiences] 是以您自己第一 *方資料的區段資格，加上第二方和第三方資料為基礎*。 此量度可提供定位平台中您的詳細、更 [!UICONTROL addressable audiences] 精確的檢視。
 
 ## 對於低匹配率的原因 [!UICONTROL Addressable Audiences] {#low-match-rates}
 
