@@ -72,7 +72,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
    <td colname="col2"> <p>屬於由鍵值對中的鍵定義的集的變數值。 </p> <p>使用值時： </p> <p> 
      <ul id="ul_624DC78759F74AD8920220058E54E083"> 
       <li id="li_091E5B4820EC4A93B775433E428E74AB">將字串資料用雙引號括住(例如 <code> age="41 to 55"</code>)。 </li> 
-      <li id="li_C558E3BA6EE34413BBBB962D4CD0D10E">您可以在單一值上傳遞多個按鍵(例如 <i><code>key</i>=<i>val1,val2,val3</i></code></i>)。 </li> 
+      <li id="li_C558E3BA6EE34413BBBB962D4CD0D10E">您可以在單一值上傳入多個按鍵(例如 <i><code>key</i>=<i>val1,val2,val3</i></code></i>)。 </li> 
      </ul> </p> <p>See <a href="../../../api/dcs-intro/dcs-api-reference/dcs-key-format.md"> Formatting Key-Value Pairs in DCS Calls</a>. </p> </td>
   </tr> 
   <tr> 
