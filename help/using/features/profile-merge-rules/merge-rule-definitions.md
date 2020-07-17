@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # [!UICONTROL Profile Merge Rules] 定義的選項 {#profile-merge-rule-options-defined}
 
-The [!UICONTROL profile merge rule] options let you control the type of data [!DNL Audience Manager] uses for segmentation. 可 [!UICONTROL profile merge rule] 以包括由裝置圖形、和／或與 [!UICONTROL Profile Link] 之整合的其 [!UICONTROL Adobe Experience Cloud Device Co-op]他第三方裝置圖形提供者映射的裝置描述檔 [!DNL Audience Manager]。 You can create a maximum of 4 [!UICONTROL Profile Merge Rules]. 第四個 [!UICONTROL Profile Merge Rule] 方案僅適用於購買附加元件 [!UICONTROL People-Based Destinations] 的客戶。
+The [!UICONTROL profile merge rule] options let you control the type of data [!DNL Audience Manager] uses for segmentation. 可 [!UICONTROL profile merge rule] 以包括由裝置圖形、和／或與 [!UICONTROL Profile Link] 之整合的其 [!UICONTROL Adobe Experience Cloud Device Co-op]他第三方裝置圖形提供者所映射的裝置描述檔 [!DNL Audience Manager]。 You can create a maximum of 4 [!UICONTROL Profile Merge Rules]. 第四個 [!UICONTROL Profile Merge Rule] 方案僅適用於購買附加元件 [!UICONTROL People-Based Destinations] 的客戶。
 
 通過從 [!UICONTROL Profile Merge Rule] 中介紹的選項進行選擇來構建 [!UICONTROL Profile Merge Rule Setup]。
 
