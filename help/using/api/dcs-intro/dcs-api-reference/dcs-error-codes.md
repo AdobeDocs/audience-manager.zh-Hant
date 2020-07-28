@@ -7,38 +7,38 @@ title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 11b79d46e7358c736c797bcf0809af4937717fc5
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 3%
+source-wordcount: '1518'
+ht-degree: 4%
 
 ---
 
 
 # DCS 錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
-由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!DNL DCS]出而產生的錯誤碼和訊息。
+由()依程式碼ID以數 [!UICONTROL Data Collection Servers] 值順序列[!DNL DCS]出所產生的錯誤碼和訊息。
 
 In the tables below, *italics* represents a variable placeholder.
 
 ## 系統錯誤代碼 {#system-error-codes}
 
-|錯誤代碼|錯誤消息|說明|
-|—|—|—|
-|0|未指定錯誤|這是一個捕獲全部錯誤，處理其他錯誤處理程式未覆蓋的事件。 疑難排解此錯誤。 它可能是由各種未知的動作或事件所造成。 如果您收到此錯誤，請再試一次 [!DNL DCS] 您的請求。 如果問題 [!DNL Adobe] 仍然存在，請聯絡您的代表。|
-|1|找不到主機名的配置： `hostname`|我們的合作夥伴布建團隊尚未設定在請求中傳送的主機名稱。 如果您看 [!DNL Adobe] 到此錯誤訊息，請連絡您的代表。|
-|2|無 `d_orgid` 效值（找不到此組織ID的組態）: `ID`|組織ID不正確。 請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱「管理頁面」一節的「組織與帳戶連結 [](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) 」，以取得如何尋找的詳細資訊。|
+| 錯誤代碼 | 錯誤訊息 | 說明 |
+|---|---|---|
+| 0 | 未指定錯誤 | 這是一個捕獲全部錯誤，可處理其他錯誤處理常式未涵蓋的事件。 疑難排解此錯誤。 它可能是由各種未知的動作或事件所造成。 如果您收到此錯誤，請再試一次 [!DNL DCS] 您的請求。 如果問題 [!DNL Adobe] 仍然存在，請聯絡您的代表。 |
+| 1 | 找不到主機名的配置： `hostname` | 合作夥伴布建團隊尚未設定在請求中傳送的主機名稱。 如果您看 [!DNL Adobe] 到此錯誤訊息，請連絡您的代表。 |
+| 2 | 無 `d_orgid` 效值（找不到此組織ID的組態）: `ID` | 組織ID不正確。 請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱「管理頁面」一節的「組織與帳戶連結 [](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) 」，以取得如何尋找組織的詳細資訊。 |
 
 ## 整合錯誤碼 {#integration-error-codes}
 
-|錯誤代碼|錯誤消息|說明|
-|—|—|—|
-|100|無法擷取請求的主機名稱|呼 [!DNL API] 叫未傳送請求中的主 [!DNL HTTP] 機標題。 將主機標題新增至呼叫，然後再試一次。 大部分的瀏覽器 [!DNL API] 和用戶端都會自動執行此動作。 |
-|101|傳入的 [!DNL Experience Cloud] ID無效 `ID`|呼叫 [!DNL DCS] 包含無效 [!DNL Experience Cloud] ID。 檢查標 `d_mid=` 題字串中的鍵值對。 請確定您傳入的是正確的 [!DNL Experience Cloud] ID，然後再試一次請求。 |
-|102|傳入請 [!DNL AAM ID] 求無效 `ID`|呼叫 [!DNL DCS] 包含無效 [!DNL Audience Manager] ID。 檢查標 `d_uuid=` 題字串中的鍵值對。 請確定您傳入的是正確的 [!DNL Audience Manager] ID，然後再試一次請求。 |
-|104|所有客戶ID無效 |您呼叫中的所有客戶ID都無效。 請檢查您的ID，然後再試一次。|
-|109|合作伙 `HTTP referer` 伴不允許參考者 `Partner ID`|呼 `HTTP referer` 叫上的夥伴ID不允許標題。 檢查標題 `HTTP referer` 是否正確。|
-|111|收到的 `IMS` Token無效|已傳回 [!DNL Audience Manager] - [!DNL Adobe Target] 整合。 當對進行呼叫時，會擲回錯誤，此呼 [!DNL DCS]叫包含無效的代 [!DNL IMS] 號。 Token可能格式錯誤、過期，或者使用者未獲得存取所需資源的授權。|
+| 錯誤代碼 | 錯誤訊息 | 說明 |
+|---|---|---|
+| 100 | 無法擷取請求的主機名稱 | 呼 [!DNL API] 叫未傳送請求中 [!DNL HTTP] 的主機標題。 將主機標題新增至呼叫，然後再試一次。 大部分的瀏覽器 [!DNL API] 和用戶端都會自動執行此動作。 |
+| 101 | 傳入 [!DNL Experience Cloud] 的ID無效 `ID` | 呼 [!DNL DCS] 叫包含無效 [!DNL Experience Cloud] ID。 檢查標 `d_mid=` 題字串中的鍵值對。 請確定您傳入的是正確的 [!DNL Experience Cloud] ID，然後再試一次請求。 |
+| 102 | 傳遞 [!DNL AAM ID] 的請求無效 `ID` | 呼 [!DNL DCS] 叫包含無效 [!DNL Audience Manager] ID。 檢查標 `d_uuid=` 題字串中的鍵值對。 請確定您傳入的是正確的 [!DNL Audience Manager] ID，然後再試一次請求。 |
+| 104 | 所有客戶ID都無效 | 您呼叫中的所有客戶ID都無效。 請檢查您的ID，然後再試一次。 |
+| 109 | 合作伙 `HTTP referer` 伴不允許參考者 `Partner ID` | 呼 `HTTP referer` 叫上的夥伴ID不允許標題。 檢查標題 `HTTP referer` 是否正確。 |
+| 111 | 收到 `IMS` 的Token無效 | 傳回 [!DNL Audience Manager] -整 [!DNL Adobe Target] 合。 當對進行呼叫時，會擲回錯誤，此呼 [!DNL DCS]叫包含無效的代 [!DNL IMS] 號。 Token可能格式錯誤、過期，或者用戶無法獲得訪問所需資源的授權。 |
 
 ## 選擇退出錯誤代碼 {#opt-out-error-codes}
 
@@ -174,7 +174,7 @@ In the tables below, *italics* represents a variable placeholder.
   <tr> 
    <td colname="col1"> <p>307 </p> </td> 
    <td colname="col2"> <p>封鎖的描述檔操作 <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>已封鎖讀／寫動作，因為ID已識別為惡意，並已新增至密碼清單。請參閱錯誤代碼306。 </p> </td> 
+   <td colname="col3"> <p>已封鎖讀／寫動作，因為ID已識別為惡意，並已新增至密文清單。請參閱錯誤代碼306。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>309 </p> </td> 
