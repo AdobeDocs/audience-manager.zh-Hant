@@ -7,9 +7,9 @@ title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 37b0cf4059b8b44329103eb69d611279c52e8236
+source-git-commit: 4f76bbd6f7c2f1866954bbbf14e8987dc3384c47
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1441'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段共用至Adobe Experience Platform，反之亦然。 您需要 [Audience Manager Connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，才能在Audience Manager和Adobe Experience Platform之間共用觀眾。
+Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段共用至Adobe Experience Platform，反之亦然。 您需要 [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，才能在Audience Manager和Adobe Experience Platform之間啟用觀眾共用。
 
 您可以使用Experience Platform中的Audience Manager特徵和細分，將Audience Manager資料新增至客戶個人檔案，並從Experience Platform細分服務 [中獲益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
@@ -149,7 +149,7 @@ Audience Manager每天會更新介面中的報表數目一次。   此更新的�
 
 ### 配置檔案合併規則與合併策略之間的差異
 
-[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager中和 [Experience Platform中的「合併原則](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) 」運作方式不同，每個平台所用的識別圖形也不同。 因此，預期群體間會有所差異。
+[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager和Experience Platform中的運 [[!UICONTROL Merge Policies]](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) 作方式不同，每個平台使用的識別圖表也不同。 因此，預期群體間會有所差異。
 
 ### Experience Platform中的細分構成
 
