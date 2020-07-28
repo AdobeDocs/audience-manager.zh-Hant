@@ -7,10 +7,10 @@ title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 37b0cf4059b8b44329103eb69d611279c52e8236
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 4%
+source-wordcount: '1442'
+ht-degree: 3%
 
 ---
 
@@ -56,9 +56,17 @@ Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您
 
 ## Audience Manager中的Adobe Experience Platform細分 {#aep-segments-in-aam}
 
-您在Experience Platform中建立的區段會以特徵和區段的形式出現在您的Audience Manager介面中，具有下列構成規則：
+您在Experience Platform中建立的區段會以訊號、特徵和區段的形式出現在您的Audience Manager介面中，具有下列構成規則：
+
+* 信號： 對於每個Experience Platform區段，您應該會以表格看到訊號 `segID = segment ID`。
 * 特徵： 特徵規則是「體驗平台」區段的ID。
 * 區段： 區段由上述特徵組成。
+
+### 信號 {#aep-segments-as-aam-signals}
+
+選擇 **[!UICONTROL Audience Data > Signals > General Online Data]** 並搜尋依據， `SegId` 以尋找從Experience Platform傳入的訊號。 您可使用此螢幕進行除錯，以檢查Experience Platform和Audience Manager之間的整合是否已正確設定。
+
+![請參閱「訊號」儀表板中Audience Manager中的Experience Platform訊號](/help/using/integration/integration-aep/assets/aep-signals-in-aam.png)
 
 ### 特徵 {#aep-segments-as-aam-traits}
 
@@ -133,10 +141,38 @@ Audience Manager會在您的區段儲存空間中自動建立 **名為「Experie
 
 ## 瞭解Audience Manager和Experience Platform之間的細分人口差異
 
-您的Audience Manager和Experience Platform區段的區段人口數可能有所不同。 雖然類似或相同對象的區段數目應該相近，但人口差異可能是由於：
+您的Audience Manager和Experience Platform區段的區段人口數可能有所不同。 雖然類似或相同對象的區段數目應該相近，但人口差異可能是由下列因素造成。
 
-* 區段工作執行時間。 Audience Manager會執行區段工作，每天更新介面中的數字一次。 此工作很少與Experience Platform中的分段工作一致。
-* [Audience Manager中的描述檔合併規則](/help/using/features/profile-merge-rules/merge-rules-overview.md) ，以及 [Experience Platform中的「合併原則](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) 」運作方式不同，而用於每個原則的識別圖形也不同。 因此，預期群體間會有所差異。
+### Experience Platform中的區段評估
+
+Audience Manager每天會更新介面中的報表數目一次。   此更新的時間與Experience Platform中區段評估的時間很少一致。
+
+### 配置檔案合併規則與合併策略之間的差異
+
+[[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) 在Audience Manager中和 [Experience Platform中的「合併原則](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/merge-policies.html) 」運作方式不同，每個平台所用的識別圖形也不同。 因此，預期群體間會有所差異。
+
+### Experience Platform中的細分構成
+
+Adobe Experience Platform與Audience Manager的整合為所有客戶共用了許多標準 [身分名稱空間](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) : ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID等。 如果您的Experience Platform區段使用其中任一項作為合格描述檔的主要識別，則這些描述檔會計入Audience Manager特徵和區段。
+
+此外，如果您已在Audience Manager中為該識別碼輸入了對應的資料來源，Audience Manager可以針對您在Experience Platform區段中使用的任何自訂身分名稱空間註冊傳入的實現。
+
+>[!NOTE]
+>
+> Experience Platform中的受眾在Audience Manager中不會顯示身分識別與原始電子郵件相關的內容。
+
+例如，如果您有Experience Platform區段「我的所有客戶」，且符合資格的個人檔案是CRM ID、ECID、IDFA、原始和雜湊電子郵件地址，Audience Manager中的對應區段將僅包含CRM ID、ECID、IDFA和雜湊電子郵件地址的個人檔案。 Audience Manager中的區段人口將小於Experience Platform中的區段人口。
+
+![Experience Platform與Audience Manager區段共用——區段構成](/help/using/integration/integration-aep/assets/AEP-to-AAM-profiles.png)
+
+<!--
+
+If you created a data source in Audience Manager for the CRM IDs in Experience Platform, then the qualified profiles keyed off those CRM IDs would appear in Audience Manager and the segment population in Audience Manager would increase.
+
+![AEP to AAM segment sharing - segment composition after creating a data source for CRM IDs in Audience Manager](/help/using/integration/integration-aep/assets/AEP-to-AAM-identities2.png)
+
+-->
+
 
 >[!MORELIKETHIS]
 >
