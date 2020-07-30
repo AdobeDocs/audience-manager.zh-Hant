@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 1be20c2412a272e6374b8b84e6a5c1628da18497
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 9%
+source-wordcount: '1530'
+ht-degree: 8%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 9%
 
 1. 首先，您至少選取兩個特徵或兩個區段來定義您的角色。
 1. 然後，您選擇一個特徵或群體，以定義您要分類的目標對象。
-1. 最後，您為模型選擇名稱，並選取將儲存預測性區段的資料來源。
+1. 最後，您為模型選擇名稱、儲存預測性區段的資料來源，以及 [!UICONTROL Profile Merge Rule] 模型。
 
 ### 角色選擇標準 {#selection-personas}
 
@@ -81,7 +81,11 @@ ht-degree: 9%
 
 ### 目標對象的選擇標準 {#selection-audience}
 
-與個人選擇類似，您應選擇您的特徵或群體來定義目標受眾，讓其擁有具有豐富特徵集的即時用戶，以便將其分類為正確的個人。
+與人物角色選擇類似，您應選擇您的 [!UICONTROL trait] 或 [!UICONTROL segment][!UICONTROL traits]定義目標對象，讓其擁有具有豐富集合的即時使用者，以便將其分類為適當的人物角色。
+
+選取目標對象時，請分析您的使用案例，並決定您要分類的ID類型： [!UICONTROL device IDs] 或 [!UICONTROL cross-device IDs]者。 建 [!UICONTROL Profile Merge Rule] 立模型時所選取的資料會定義將用於將每位使用者放入預測中的資料 [!UICONTROL segments]。
+
+建議您選擇與目標對象具有相 [!UICONTROL Profile Merge Rule] 同設定的設定，或選擇 [!UICONTROL Profile Merge Rule]包含目標對象的描述檔類型（裝置描述檔或已驗證描述檔）的設定檔。
 
 ### [!UICONTROL Predictive Audiences] 模型培訓階段 {#model-training}
 
@@ -110,9 +114,9 @@ ht-degree: 9%
 * 目前不支援第二方和第三方資料 [!UICONTROL Predictive Audiences]。
 * 觀眾分類僅針對即時的第一方觀眾進行。 未來更新可能支援已登入的第一方觀眾分類。
    >[!IMPORTANT]
-   > 目前，預 [!UICONTROL Total Segment Population] 測性區段的顯示為0，且不 [支援批次傳出資料傳輸](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)[!UICONTROL Predictive Audiences]。 此行為在未來的更新中將會改變。
+   > 目前，預測性區段只能在即時目標中啟動。 預測 [!UICONTROL Total Segment Population] 性 [!UICONTROL Addressable Audience] 區段和預測性區段會顯示為0，且不支 [援「批次傳出資料傳輸](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) 」 [!UICONTROL Predictive Audiences]。 此行為在未來的更新中將會改變。
 * [!UICONTROL Predictive Audiences] 從所有第一方資料來源，根據您的第一方特徵執行對象分類。
-* 區段評估 [!UICONTROL Predictive Audiences] 會使用您在帳 **[!UICONTROL Profile Merge Rule]** 戶中定義的預設值。 若要進一步瞭解 [!UICONTROL Profile Merge Rules] 專用的 [檔案](../profile-merge-rules/merge-rules-overview.md)。
+* 用於的區 [!UICONTROL Predictive Audiences] 段評估使 **[!UICONTROL Profile Merge Rule]** 用建立模型時選擇的。 若要進一步瞭解 [!UICONTROL Profile Merge Rules] 專用的 [檔案](../profile-merge-rules/merge-rules-overview.md)。
 * 部分特徵和區段不支援做為基準或目標對象。 [!UICONTROL Predictive Audiences] 當選擇下列其中一項作為基準或目標對象時，模型將無法保存：
    * 預測性特徵和使用預測性特徵建立的群體；
    * [Adobe Experience Platform特性](../integration/../../integration/integration-aep/aam-aep-audience-sharing.md) 或細分；
@@ -124,11 +128,23 @@ ht-degree: 9%
 模型建立的預 [!UICONTROL Predictive Audiences] 測性區段會從 [](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html) 下列第一方資料來源繼承「資料匯出控制」:
 
 1. 建立模型時您選擇的第一方資料來源。
-1. 目標對象的第一方資料來源。 具體來說，是構成您目標對象之特徵或區段的資料匯出控制。
+1. 目標對象的第一方資料來源。 具體來說，您目標對象的 [!UICONTROL traits] 或 [!UICONTROL segments] 資料匯出控制項。
+1. 為模 [型選擇的資料](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)[!UICONTROL Profile Merge Rule] 導出控制。
 
-新建立的預測性特徵和區段的隱私權限制與上述第一方資料來源的合併相同。
+新建立的預 [!UICONTROL traits] 測性 [!UICONTROL segments] 資料，其隱私權限制與上述第一方資料來源的合併相同。
 
 具有不屬於區段隱私權限制之其他限制的特 [!UICONTROL Predictive Audiences] 徵，將會排除在培訓階段之外，不會對模型產生影響。
+
+## [!UICONTROL Profile Merge Rules] {#pmr}
+
+建立模型時，系統會為所 [!UICONTROL Profile Merge Rule] 有預測性區段指派您選取的值。 您選 [!UICONTROL Profile Merge Rule] 擇的選項很重要，原因如下：
+
+* 它定義當模型分析影響時，在將用戶分類為預測時，應考慮哪些設備 [!UICONTROL traits]和／或已驗證配置檔案 [!UICONTROL segment]。
+* 它控制在模 [!UICONTROL trait] 型訓練步驟中應使用哪些類型（裝置層級或跨裝置層級），並呈現為具影響力的 [!UICONTROL traits]。 預測 [!UICONTROL segments] 性是目標對象的子集。
+   * 如果目標對象是群體，建議您選擇與指派給目標對象的模型相同的 [!UICONTROL Profile Merge Rule] 模型，或 [!UICONTROL Profile Merge Rule] 是包含目標對象的描述檔類型。
+   * 如果目標對象是 [!UICONTROL trait]，建議您選取可存取與目標對象特徵 [!UICONTROL Profile Merge Rule] （裝置描述檔資料或跨裝置描述檔資料）相同類型資料的資料。
+
+選取 [!UICONTROL Profile Merge Rule] 同時使用裝置資料和跨裝置資料的項目，可將模型訓練和使用者分類 [!UICONTROL traits] 所使用的項目，最大化為預測值 [!UICONTROL segments]。
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
