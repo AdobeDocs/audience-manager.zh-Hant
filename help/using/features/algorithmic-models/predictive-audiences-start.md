@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '492'
 ht-degree: 8%
 
 ---
@@ -39,9 +39,10 @@ ht-degree: 8%
    ![smart-persona-select-audience](assets/predictive-audiences-audience.png)
 1. 在選 **[!UICONTROL Next]** 擇您的觀眾後按一下。
 1. 填寫模型詳細資料：
-   1. **[!UICONTROL Model Name]**: 為模型輸入描述性名稱，這將幫助您稍後識別它。 由模型生成的段的名稱將以模型的名稱開頭。
-   2. **[!UICONTROL Description]**: 輸入有助於識別其使用案例的模型說明。
-   3. **[!UICONTROL Data Source]**: 選擇您要將此模型中的區段指 [!UICONTROL Predictive Audiences] 派給的第一方資料來源。
+   * **[!UICONTROL Model Name]**: 為模型輸入描述性名稱，這將幫助您稍後識別它。 由模型生成的段的名稱將以模型的名稱開頭。
+   * **[!UICONTROL Description]**: 輸入有助於識別其使用案例的模型說明。
+   * **[!UICONTROL Data Source]**: 選擇您要將此模型中的區段指 [!UICONTROL Predictive Audiences] 派給的第一方資料來源。
+   * **[!UICONTROL Profile Merge Rule]**: 為此模 [!UICONTROL Profile Merge Rule] 型建立的所有預測性 [!UICONTROL segments] 選擇要指派的。 如果您選取的目標對象是 [!UICONTROL segment]一個，我們建議選取與目標 [!UICONTROL Profile Merge Rule] 對象相同的對象。
       ![predictive-audiences-save](assets/predictive-audiences-save.png)
 1. 按一下 **[!UICONTROL Save]**.
 
