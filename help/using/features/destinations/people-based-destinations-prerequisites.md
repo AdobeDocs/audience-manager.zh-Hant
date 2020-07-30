@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 必要條件和考量事項
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 0ca118abd4e4e8aa3eb8b01123d1f02b712841b2
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 4%
+source-wordcount: '1015'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,15 @@ ht-degree: 4%
 
 如要瞭解如何編輯您的 [!DNL LinkedIn Campaign Manager] 使用者權限，請參 [閱LinkedIn檔案中的「新增、編輯及移除廣告帳戶的使用者權限](https://www.linkedin.com/help/lms/answer/5753) 」。
 
-如需 [視訊指示，請參閱瞭解和設定LinkedIn以人員為本的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
+如需 [視訊指示，請參閱瞭解和設定LinkedIn以人為本的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
+
+### [!DNL Google Customer Match]
+
+您必須先將 [!UICONTROL People-Based Destinations] 您新增至其允許清單，才能使用將第一方 [!DNL Google Customer Match] 對象區段傳 [!DNL Google] 送至目的地。
+
+請連絡您 [!DNL Google] 的代表，並依照使用客戶符合合作夥伴中所述的 [允許清單指示來上傳您的資料](https://support.google.com/google-ads/answer/7361372?hl=en&amp;ref_topic=6296507)[!DNL Google] 檔案。
+
+完成此程式後，您可以建立 [!UICONTROL People-Based Destination]。
 
 ## 資料上線 {#data-onboarding}
 
