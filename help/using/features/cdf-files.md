@@ -8,9 +8,9 @@ title: 客戶資料摘要
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 670356016a7d8256af2e475d0aef49e1156f82e6
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1893'
 ht-degree: 4%
 
 ---
@@ -24,9 +24,13 @@ ht-degree: 4%
 
 [!UICONTROL CDF] 檔案包含的資料與 [!DNL Audience Manager] 事件呼叫 (`/event`) 傳送至我們伺服器的資料相同。This includes data like user IDs, [!UICONTROL trait IDs], [!UICONTROL segment IDs], and all the other parameters captured by an event call. 內部 [!DNL Audience Manager] 系統將事件資料處理成 [!UICONTROL CDF] 檔案，內容會組織成以固定順序顯示的欄位。 [!DNL Audience Manager] 嘗試每小時產 [!UICONTROL CDF] 生檔案，並將它們儲存在伺服器上安全、客戶專屬的儲 [!DNL Amazon S3] 存貯體。 我們提供這些檔案，讓您能夠處理 [!DNL Audience Manager] 超出使用者介面所限制的資料。
 
->[!NOTE]
+>[!IMPORTANT]
 >
->您不應將檔 [!UICONTROL CDF] 案當做代理來監控頁面流量、協調報表不一致或帳單等。
+>使用CDF檔案時請注意以下限制：
+>
+>* 在設定CDF檔案傳送之前，請確定您擁有第三方資料提供者的適當權限，以匯出第三方特徵。
+>* 您不應將檔 [!UICONTROL CDF] 案當做代理來監控頁面流量、協調報表不一致或帳單等。
+
 
 ## 快速入門 {#getting-started}
 
