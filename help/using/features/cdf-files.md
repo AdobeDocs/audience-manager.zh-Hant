@@ -8,9 +8,9 @@ title: 客戶資料摘要
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 translation-type: tm+mt
-source-git-commit: 670356016a7d8256af2e475d0aef49e1156f82e6
+source-git-commit: 9b17925f9759a7f47629032182b367cf612bebbc
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1922'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
 >
 >使用CDF檔案時請注意以下限制：
 >
->* 在設定CDF檔案傳送之前，請確定您擁有第三方資料提供者的適當權限，以匯出第三方特徵。
+>* 在設定CDF檔案傳送之前，請確定您擁有第三方資料提供者的適當權限，以匯出第三方特徵。 Audience Manager目前不支援使用者介面中向第三方資料提供者要求CDF檔案傳送匯出權限的功能，因此請單獨聯絡他們。
 >* 您不應將檔 [!UICONTROL CDF] 案當做代理來監控頁面流量、協調報表不一致或帳單等。
 
 
