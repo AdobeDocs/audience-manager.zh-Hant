@@ -7,9 +7,9 @@ solution: Audience Manager
 title: Adobe Audience Manager伺服器對伺服器目標
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: 8d7935f69b496ec30a135df884756d370b44b7ed
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1116'
 ht-degree: 72%
 
 ---
@@ -84,7 +84,6 @@ ht-degree: 72%
 | [!DNL FreakOut] | 03/03/2017 | 1xday | 有 | 否 | 否 | 否 |
 | [!DNL Freewheel] | 27/02/2017 | 1xday | 是 | 是 | 否 | 是 |
 | [!DNL Gamut Media] | 03/03/2017 | 即時 |  | 否 | 否 |  |
-| [!DNL Google AdsWords Display] | 02/08/2018 | 即時 | 是 | 是 | 否 | 是 |
 | [!DNL Google DoubleClick Bid Manager (DBM)] | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
 | [!DNL Google DoubleClick Campaign Manager (DCM fka DFA)] | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
 | [!DNL Google DoubleClick for Publishers (DFP, DFPP)] | 24/04/2017 | 即時 | 是 | 是 | 是 | 是 |
