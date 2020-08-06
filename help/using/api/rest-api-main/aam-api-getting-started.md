@@ -88,7 +88,7 @@ The [!DNL Audience Manager][!UICONTROL REST API] token驗 [!DNL OAuth 2.0] 證�
 * 識別呼叫的服務 [!DNL API] (例如，來自使用我們的應用程式或提出請 [!DNL API]求的其他工具的呼 [!DNL API] 叫)。
 * 不間斷地存取 [!DNL API]s。 當系結至特定人員的帳戶離開您的公司時，可能會將其刪除。 這會使您無法使用可用的程 [!DNL API] 式碼。 未系結至特定員工的一般帳戶可協助您避免此問題。
 
-舉例來說，假設您想要使用批量管理工具一次變更許多區段，或是用於此類型 [的帳戶](../../reference/bulk-management-tools/bulk-management-intro.md)。 為此，您的使用者帳戶需要存 [!DNL API] 取權。 請建立非特定的使用者帳戶，該帳戶具有適當的認證、金鑰 [!DNL API] 和密碼，以進行呼叫，而不是新增權限給特定 [!DNL API] 使用者。 如果您開發使用s的應用程式，這個功能也會很有 [!DNL Audience Manager][!DNL API]用。
+舉例來說，假設您想要使用批量管理工具一次變更許多區段，或是用於此類型 [的帳戶](../../reference/bulk-management-tools/bulk-management-intro.md)。 為此，您的使用者帳戶需要存 [!DNL API] 取權。 請建立非特定的使用者帳戶，該帳戶具有適當的認證、金鑰 [!DNL API] 和密碼，以進行呼叫，而不是新增權限至特定 [!DNL API] 使用者。 如果您開發使用s的應用程式，這個功能也會很有 [!DNL Audience Manager][!DNL API]用。
 
 與您的顧 [!DNL Audience Manager] 問合作，以設定一般、僅限 [!DNL API]使用者帳戶。
 
