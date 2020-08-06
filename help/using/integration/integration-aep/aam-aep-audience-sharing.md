@@ -7,7 +7,7 @@ title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: db4706673b72980652942e23d83ae5cf180972e9
+source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 3%
@@ -114,7 +114,9 @@ Audience Manager會在您的區段儲存空間中自動建立 **名為「Experie
 
 在Audience Manager和Experience Platform之間的觀眾分享程式中，套用至Audience Manager區段的任何「資料匯出控制」都會轉換為Experience Platform資料治理所識別的相同標籤和行銷動作，反之亦然。
 
->[!NOTE] 有關「資料匯出控制」的詳細資訊，請參閱「資料匯 [出控制」檔案](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
+>[!NOTE]
+>
+>有關「資料匯出控制」的詳細資訊，請參閱「資料匯 [出控制」檔案](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
 本檔案提供特定Audience Manager資料匯出控制項如何對應至平台中資料使用標籤和行銷動作的參考。
 
 ### 資料匯出控制項至資料使用標籤
