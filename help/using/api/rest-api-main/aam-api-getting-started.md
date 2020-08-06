@@ -7,9 +7,9 @@ title: REST API 快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 translation-type: tm+mt
-source-git-commit: 0fd2b2a58274199ecc2fd58738113165c804ceb8
+source-git-commit: f7b9c30f120b24f9294afa4aa6727ce8c4236acf
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1860'
 ht-degree: 2%
 
 ---
@@ -65,8 +65,8 @@ ht-degree: 2%
 
 1. 登入 [Adobe Developer Console](https://console.adobe.io/)。
 1. 請遵循「服務帳戶 [連線」中的步驟](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
-   * 在步 [驟2: 使用「服務帳戶」驗證將API新增至您的專案](https://www.adobe.io/authentication/auth-methods.html#step-2-add-an-api-to-your-project-using-service-account-authentication)，請選擇 [!DNL Audience Manager][!DNL API] 選項。
-1. 根據步驟3的指示進行第 [!DNL API] 一次呼叫，以嘗試連 [接](https://www.adobe.io/authentication/auth-methods.html#step-3-try-it.)。
+   * 在步 [驟2: 使用「服務帳戶」驗證將API新增至您的專案](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)，請選擇 [!DNL Audience Manager][!DNL API] 選項。
+1. 根據步驟3的指示進行第 [!DNL API] 一次呼叫，以嘗試連 [接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
 
 >[!NOTE]
 >
