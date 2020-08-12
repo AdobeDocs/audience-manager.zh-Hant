@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 必要條件和考量事項
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: f9e6aedb408db218c548f469330ece584db75853
+source-git-commit: 2e32f9ebff487ae8dfb2088ec1bbfcea1daa00a1
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 4%
+source-wordcount: '1015'
+ht-degree: 3%
 
 ---
 
@@ -50,6 +50,14 @@ ht-degree: 4%
 
 如需 [視訊指示，請參閱瞭解和設定LinkedIn以人為本的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
+### [!DNL Google Customer Match]
+
+您必須先將 [!UICONTROL People-Based Destinations] 您新增至其允許清單，才能使用將第一方 [!DNL Google Customer Match] 對象區 [!DNL Google] 段傳送至目的地。
+
+請連絡您 [!DNL Google] 的代表，並依照使用客戶符合合作夥伴中所述的 [允許清單指示來上傳您的資料](https://support.google.com/google-ads/answer/7361372?hl=en&amp;ref_topic=6296507)[!DNL Google] 檔案。
+
+完成此程式後，您可以建立 [!UICONTROL People-Based Destination]。
+
 ## 資料上線 {#data-onboarding}
 
 目前，每次 [!UICONTROL People-Based Destinations] 批次傳輸中，資料擷取支援最多10個連結至一個客戶ID([!DNL CRM ID])的雜湊電子郵件地址。 上傳連結至一個客戶ID的10個以上雜湊電子郵件地址會導致Audience Manager以無特定順序收錄其中10個。
@@ -70,7 +78,7 @@ ht-degree: 4%
 
 散列電子郵件地址時，請務必符合下列要求：
 
-* 從電子郵件字串中修剪所有前導和尾隨空格； 範例： `johndoe@example.com`，不是 `<space>johndoe@example.com<space>`;
+* 從電子郵件字串中修剪所有前導和尾隨空格；範例： `johndoe@example.com`，不是 `<space>johndoe@example.com<space>`;
 * 在對電子郵件字串進行散列時，請務必對小寫字串進行散列；
    * 範例： `example@email.com`，不是 `EXAMPLE@EMAIL.COM`;
 * 請確定雜湊字串全部為小寫
