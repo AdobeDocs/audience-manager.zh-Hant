@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 必要條件和考量事項
 feature: People-Based Destinations
 translation-type: tm+mt
-source-git-commit: 2e32f9ebff487ae8dfb2088ec1bbfcea1daa00a1
+source-git-commit: d3184195d6a51ff013a3d1fc8526ca9afd3386c2
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 3%
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ## 特定合作夥伴的先決條件 {#partner-prerequisites}
 
-### [!DNL Facebook]
+### [!DNL Facebook] {#facebook}
 
 請務必符 [!UICONTROL People-Based Destinations] 合下列要求，才能 [!UICONTROL segments] 用 [!DNL Facebook]來傳送第一方對象：
 
@@ -42,7 +42,7 @@ ht-degree: 3%
    > When configuring the permissions for Adobe Experience Cloud, you must enable the **Manage campaigns** permission. 這是進行 [!UICONTROL People-Based Destinations] 整合的必要權限。
 3. 閱讀並簽署 [!DNL Facebook Custom Audiences] 服務條款。 若要完成此操作，請前往 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`，其中 `accountID` 是您的 [!DNL Facebook Ad Account ID]。
 
-### [!DNL LinkedIn]
+### [!DNL LinkedIn] {#linkedin}
 
 在您可以用 [!UICONTROL People-Based Destinations] 來傳送第一方對象區段至之前 [!DNL LinkedIn]，請確定您的 [!DNL LinkedIn Campaign Manager] 帳戶具有或 [!DNL Creative Manager] 更高的權限層級。
 
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 如需 [視訊指示，請參閱瞭解和設定LinkedIn以人為本的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
-### [!DNL Google Customer Match]
+### [!DNL Google Customer Match] {#gcm}
 
 您必須先將 [!UICONTROL People-Based Destinations] 您新增至其允許清單，才能使用將第一方 [!DNL Google Customer Match] 對象區 [!DNL Google] 段傳送至目的地。
 
