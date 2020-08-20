@@ -8,9 +8,9 @@ title: 宣告 ID
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 feature: ID Syncs
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 29708d5fc528ac9da08f4c5a7f2bcaa11b240d8b
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1187'
 ht-degree: 10%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 10%
   </tr> 
   <tr> 
    <td colname="col1"> <b>符合ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager會嘗試將用戶端和訪客ID與我們系統中的對應ID相符。 如果相符的ID不存在，Audience Manager會建立新的ID，並將其與用戶端和訪客ID關聯。 </p> <p> <p>注意：  如果您的ID對應至多個Audience Manager ID，則會使用最新的對應。 </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager會嘗試將用戶端和訪客ID與我們系統中的對應ID相符。 如果相符的ID不存在，Audience Manager會建立新的ID，並將其與用戶端和訪客ID關聯。 </p> <p> <p>注意： 如果您的ID對應至多個Audience Manager ID，則會使用最新的對應。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>傳回ID</b> </td> 
@@ -62,7 +62,7 @@ ht-degree: 10%
 此程 [!UICONTROL declared ID] 序會接受網站訪客的偏好設定，以選擇 [!DNL Audience Manager] 退出您的網站定位。 When [!DNL Audience Manager] receives an opt-out request, the [!DNL JSON] returned by the [!DNL DCS] contains the error code 171, with the message `Encountered opt out tag`, instead of the [!DNL Audience Manager] user ID.
 
 * [!DNL Audience Manager] 可以傳入 [!UICONTROL declared ID] 退出選項旁 [!DNL Audience Manager] 邊的 [!UICONTROL UUID][!DNL URL]。
-* 退 [!UICONTROL declared ID] 出選項按合作夥伴儲存在[!UICONTROL配置式快取服務[!UICONTROL PCS]器()中。 沒有使用平台層級的退出選項 [!UICONTROL declared IDs]。 此外， [!DNL Audience Manager] 選擇使用者離開邊緣上的特定區域(選擇退出不跨越區 [!DNL DCS] 域)。
+* 退 [!UICONTROL declared ID] 出選項會依每個 [!UICONTROL Profile Cache Server] 合作伙[!UICONTROL PCS]伴儲存在()中。 沒有使用平台層級的退出選項 [!UICONTROL declared IDs]。 此外， [!DNL Audience Manager] 選擇使用者離開邊緣上的特定區域(選擇退出不跨越區 [!DNL DCS] 域)。
 
 如需 [退出資料收集的詳細資訊](../overview/data-security-and-privacy/data-privacy.md) ，請參閱資料隱私權。
 
