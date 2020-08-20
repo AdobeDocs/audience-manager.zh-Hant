@@ -7,7 +7,7 @@ title: 輸出範本巨集
 uuid: dec082d3-306b-4ff5-afb2-418bd543d8d0
 feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 31366fb83fc9aaeffc6d4a078dc2e07a0fd727a4
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -68,8 +68,8 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> SYNC_MODE </code> </p> </td> 
    <td colname="col2"> <p>指示同步類型並包括： </p> 
     <ul id="ul_CA5057DA18144AB8BC17B3EB79891B25"> 
-     <li id="li_6DFEE438860D4DB18EF831E3AF525F1E"> <code> full </code>: 完全同步。 </li> 
-     <li id="li_1A7BBBB40AD94FC39B06F4FC49586595"> <code> iter </code>: 增量同步。 </li> 
+     <li id="li_6DFEE438860D4DB18EF831E3AF525F1E"> <code> full </code>:完全同步。 </li> 
+     <li id="li_1A7BBBB40AD94FC39B06F4FC49586595"> <code> iter </code>:增量同步。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -107,7 +107,7 @@ ht-degree: 3%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> CLOSE_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入右括弧}字元。 </p> </td> 
+   <td colname="col2"> <p>插入右括弧 <code>}</code> 字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
@@ -135,7 +135,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入一個左括弧{字元。 </p> </td> 
+   <td colname="col2"> <p>插入一個左括弧 <code>{</code> 字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
@@ -169,12 +169,12 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> SEGMENT_LIST </code> </p> </td> 
    <td colname="col2"> <p>傳回清單中的區段清單。 接受以下可選參數： </p> 
     <ul id="ul_B111AA0D6C18445598A1444B8B7E9325"> 
-     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>: 區段ID。 不再提倡。使用 <code> sid </code>。 </li> 
-     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>: 客戶區段ID。 不再提倡。使用 <code> sid </code>。 </li> 
-     <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>: 區段ID </li> 
-     <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>: 傳回 <code> 5 </code>靜態、硬式編碼值，將資料識別為區段資料。 </li> 
+     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>:區段ID。 不再提倡。使用 <code> sid </code>。 </li> 
+     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>:客戶區段ID。 不再提倡。使用 <code> sid </code>。 </li> 
+     <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>:區段ID </li> 
+     <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>:傳回 <code> 5 </code>靜態、硬式編碼值，將資料識別為區段資料。 </li> 
      <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> alias </code>: 已過時. 請勿使用。 </li> 
-     <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> lastUpdateTime </code>: Unix時間戳記，指示上次實現段的時間。 </li> 
+     <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> lastUpdateTime </code>:Unix時間戳記，指示上次實現段的時間。 </li> 
     </ul> <p>將這些變數放在巨集後面的大括弧中。 例如，此程式碼會以垂直號"|"字元分隔結果： <code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;}; separator=","&gt; </code> </p> </td> 
   </tr> 
   <tr> 
@@ -185,8 +185,8 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> SYNC_MODE </code> </p> </td> 
    <td colname="col2"> <p>指示同步類型並包括： </p> 
     <ul id="ul_A3ADC37E66F043DABDA9C4066024B6C1"> 
-     <li id="li_A1859F63ACF24618884C41F2DAB19ABB"> <code> full </code>: 完全同步。 </li> 
-     <li id="li_520DDED3662B428DB9DB55D494221D97"> <code> iter </code>: 增量同步。 </li> 
+     <li id="li_A1859F63ACF24618884C41F2DAB19ABB"> <code> full </code>:完全同步。 </li> 
+     <li id="li_520DDED3662B428DB9DB55D494221D97"> <code> iter </code>:增量同步。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -206,13 +206,13 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> TRAIT_LIST </code> </p> </td> 
    <td colname="col2"> <p>傳回特徵清單。 接受以下可選參數： </p> 
     <ul id="ul_E9CDC4DD47B9435086FF42143D9E8177"> 
-     <li id="li_4BBC57F0D7874F8EA8C6D39DB3572257"> <code> type </code>: 依數值ID識別特徵類型。 傳回: 
+     <li id="li_4BBC57F0D7874F8EA8C6D39DB3572257"> <code> type </code>:依數值ID識別特徵類型。 傳回: 
       <ul id="ul_D2357E6CF47B4EBC8D3772D17B2EADA3"> 
        <li id="li_C6C2A019FCD945E085E1ABB564C4EDAD"> <code> 10 </code> 識別DPM特徵（離線，由傳入工作加入）。 </li> 
        <li id="li_7AFF8A1D0E1140459CC95CF43A97B9B6"> <code> 3 </code> 識別規則型特徵（即時，透過DCS登入）。 </li> 
       </ul> </li> 
-     <li id="li_1DDE25334CF9479A8C4738F3CB3C40AA"> <code> traitId </code>: 特徵ID。 </li> 
-     <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> lastRealized </code>: 上次這個特徵實現時。 Unix時間戳記。 </li> 
+     <li id="li_1DDE25334CF9479A8C4738F3CB3C40AA"> <code> traitId </code>:特徵ID。 </li> 
+     <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> lastRealized </code>:上次這個特徵實現時。 Unix時間戳記。 </li> 
     </ul> <p>將這些變數放在巨集後面的大括弧中。 例如，此程式碼會以垂直號"|"字元分隔結果： <code> &lt;TRAIT_LIST:{trait|&lt;trait.Id&gt;,&lt;trait.lastRealized&gt;};separator="," </code> </p> </td> 
   </tr> 
   <tr> 
