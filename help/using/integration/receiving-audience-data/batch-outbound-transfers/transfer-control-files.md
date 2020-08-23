@@ -7,9 +7,9 @@ title: 用於記錄檔傳輸的傳輸控制檔案
 uuid: ef58213e-7b37-4c5a-8556-0de695706793
 feature: Outbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 033057e080a72c82ec8ff9233e199d5e204a622c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 6%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 6%
 }
 ```
 
->[注意]
+>[!NOTE]
 >
 > 批總數不包括檔案 [!DNL .info] 本身。 也就是說，總計不包括檔 [!DNL .info] 案、其位元組大小或行數。
 >
