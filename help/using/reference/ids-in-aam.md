@@ -8,9 +8,9 @@ title: Audience Manager 內的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: b8b848ad04d1ec07c12e57d94e4f3c6e672dc102
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '943'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 5%
 | [!DNL SID] | [!UICONTROL Segment ID]。在環 [!UICONTROL Segment ID] 境中唯 [!DNL segments] 一地標 [!DNL Audience Manager] 識。 | 在呼 [!DNL DCS] 叫中， `SID` 前面有前置詞 `d_` 。 <br>範例 `d_sid=4798574`. | 系統會 [!UICONTROL Segment ID] 為每個區段指 [!DNL segment]派一個，並在「區段」頁面的使用者介面中 [顯示](../features/segments/segment-summary-view.md) 。 |
 | [!DNL csegID] | [!DNL Legacy Segment ID]。此ID可唯一識別環境中的 [!DNL Audience Manager] 區段。 | `741232` | 系統會 [!UICONTROL Legacy Segment ID] 將區段指派給每個區段，並在「區段」頁面的使用者介面中 [顯示](../features/segments/segment-summary-view.md) 。 |
 | [!DNL destID] | [!UICONTROL Destination ID]。在環 [!UICONTROL Destination ID] 境中唯 [!DNL destinations] 一地標 [!DNL Audience Manager] 識。 ID會指派給使用者介 [!DNL destination] 面中的每個人。 | `2523` | 系統會 [!UICONTROL Destination ID] 為每個目標指 [!DNL destination]派一個，並在「目標」頁面的使用者介面中 [顯示](../features/destinations/destinations-home.md) 。 |
-| [!DNL DPID] | [!UICONTROL Data Source ID] (亦稱為 [!UICONTROL Data Provider ID])。 是 [!UICONTROL Data Source ID] ID或的命名空間 [!DNL traits]。 ID會指派給使用者介 [!DNL data source] 面中的每個（資料提供者）。 | 在呼 [!DNL DCS] 叫中， `dpid` 前面有前置詞 `d_` 。 <br>範例: `d_dpid=39217`. | 系統會 [!UICONTROL Data Provider ID] 為每個使用者 [!DNL data source]介面指派一個，並在「資料來源」頁面 [中顯示](../features/datasources-list-and-settings.md) 。 |
+| [!DNL DPID] | [!UICONTROL Data Source ID] (亦稱為 [!UICONTROL Data Provider ID])。 是 [!UICONTROL Data Source ID] ID或的命名空間 [!DNL traits]。 ID會指派給使用者介 [!DNL data source] 面中的每個（資料提供者）。 | 在呼 [!DNL DCS] 叫中， `dpid` 前面有前置詞 `d_` 。 <br>範例: `d_dpid=39217`. | 系統會 [!UICONTROL Data Provider ID] 將一個指派給每個 [!DNL data source]人，並在「資料來源」頁面的使 [用者介面中顯示](../features/datasources-list-and-settings.md) 。 |
 | [!DNL DPUUID] | [!UICONTROL Data Provider Unique User ID]，也稱為 [!DNL CRM ID] 或 [!UICONTROL Cross-Device ID]。 第三方ID。 這是您用來識別自己系統中使用者的 [!DNL CRM] ID。 您可以與同 [!DNL DPUUIDs] 步 [!DNL Audience Manager] ，也可以 [!DNL UUIDs] 在ID同步程式中 [!DNL DPUUIDs] 從不同( [!UICONTROL Data Sources][!DNL DPIDs])同步。 | 在呼 [!DNL DCS] 叫中， `dpuuid` 前面有前置詞 `d_` 。 <br> 範例 `d_dpuuid=2132-3423vn-343fds-3432r`. | 您可以在建 [!DNL traits] 立類似 [!UICONTROL Cross-Device ID] 模型 [和建立區段時進](../features/algorithmic-models/create-model.md)行篩選 [](../features/segments/segment-builder.md)。 您也可以在執行特徵的一般報 [!UICONTROL Cross-Device ID] 表和特 [徵的趨勢報表時，](../reporting/general-reports.md) 依據篩選結果 [](../reporting/trend-reports.md)。 |
 | [!DNL CRM ID] | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 |
 | [!DNL CID], [!DNL CID_IC] | [!UICONTROL Customer ID], [!UICONTROL Customer ID Integration Code]. 和 [!DNL CID] 鍵 [!DNL CID_IC] 值對將替換 [!DNL DPID] 和 [!DNL DPUUID]。 它們提供與和相同的功 [!DNL DPID] 能 [!DNL DPUUID]，但效率更高，因為它們在單一索引鍵值對中包含資料提供者ID和使用者ID（或整合程式碼）。 | 在呼 [!DNL DCS] 叫中，這些ID前面有首 `d_` 碼。 <br>範例: `d_cid_ic=39217_myIntegrationCode`. | 請參閱 `DPID` 和 `DPUUID`。 |
@@ -56,5 +56,5 @@ ht-degree: 5%
 | [!DNL GAID] | 20914 | [!DNL Google Advertising ID]s是Android裝置製造商提供的行動裝置識別碼。 這些ID代表執行作業系統 [!DNL Android] 的裝置。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `e4fe9bde-caa0-47b6-908d-ffba3fa184f2`. |
 | [!DNL RIDA] | 121963 | [!DNL Roku IDs for Advertising] 代表串 [!DNL Roku] 流裝置。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `fcb2a29c-315a-5e6b-bcfd-d889ba19aada`. |
 | [!DNL MAID] | 389146 | [!DNL Microsoft Advertising ID]s是每個裝置、每個 [!DNL Windows 10] 使用者產生的裝置識別碼。 | [!DNL MAID]s的格式為英數字串。 |
-| [!DNL DUID] | 404660 | [!DNL Samsung DUID]s是由智慧型電視提供的裝 [!DNL Samsung] 置識別碼。 | [!DNL Samsung] [!DNL DUID]s的格式為英數字串。 |
+| [!DNL TIFA] | 963906 | [!DNL Samsung Tizen IDs for Advertising] 是由智慧型電視提供的裝 [!DNL Samsung] 置識別碼。 | [!DNL Samsung] [!DNL TIFA] ID的格式為英數字串。 |
 | [!DNL Amazon Fire TV Advertising ID] | 488258 | 代表執行作業系統之裝置的裝 [!DNL Fire OS] 置識別碼。 | 格式嚴格由32個小寫十六進位數字組成，以5個組顯示，以8-4-4-4-12格式用連字元分隔，共36個字元。 <br>範例: `df07c7dc-cea7-4a89-b328-810ff5acb15d` |
