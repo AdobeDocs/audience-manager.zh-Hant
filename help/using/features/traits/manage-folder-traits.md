@@ -8,9 +8,9 @@ title: 管理資料夾特徵
 uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4ea5ba4ebd8cd4c13c99c8272f4b5733ab5fa125
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '362'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 9%
 
 1. 按一下 + 圖示可建立資料夾。請注意，您最多可以在分類法中建立 2.000 個資料夾。如需詳細資訊，請參閱[使用限制](../../features/administration/usage-limits.md)文件。
 1. 命名資料夾，然後按一下「 **儲存**」。 例如，名為Electronics的檔案夾會有名為&#39;Electronics Folder Trait&#39;的檔案夾特徵。 您可以在特徵儀表板中檢視並選取新的資料夾特徵。
-1. 新資料夾特徵會自動指派給產生的 [!DNL Audience Manager] 資料來源。 具有適當[!UICONCONTROL基於角色的訪問控制([!DNL RBAC])]權限的用戶可以更改編輯資料夾特徵工作流中的資料源。 請參閱 [編輯資料夾特徵](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
+1. 新資料夾特徵會自動指派給產生的 [!DNL Audience Manager] 資料來源。 具有適當( [!UICONTROL Role-Based Access Control][!DNL RBAC])權限的使用者可以在編輯資料夾特徵工作流程中變更資料來源。 請參閱 [編輯資料夾特徵](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
 
 ## 編輯資料夾特徵 {#edit-folder-trait}
 
