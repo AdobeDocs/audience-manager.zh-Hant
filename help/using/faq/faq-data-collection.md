@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: a1e95f421b725cc93fbedc4c001e34e4291bf828
 workflow-type: tm+mt
-source-wordcount: '1066'
-ht-degree: 90%
+source-wordcount: '1151'
+ht-degree: 84%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 90%
 資料收集和整合的常見疑問與問題。
 
 <br> 
-
-<!-- 
-
-faq_data_collection_integration.xml
-
- -->
 
 **如何在[!DNL DCS]記錄檔匯出項目中區分來自[!DNL DCS]的傳入流量？**
 
@@ -42,18 +36,39 @@ faq_data_collection_integration.xml
 
 很遺憾，恕無法提供。這些 IP 會透過 [!DNL Amazon Web Services] 依地理區域以動態方式指派。因此，[!DNL Audience Manager] 不會控制可指派給此位址的 IP 範圍。
 
-<br> 
+ 
 
-**您是否可提供IP位址給我，讓我新增至傳入和傳出sFTP伺服器的允許清單？**
+**您是否可提供IP位址給我，我可將其新增至您的傳入和傳出SFTP伺服器的允許清單？**
 
 可以，請參閱下文。
 
-| 項目 | 位址 |
+| 伺服器 | IP 位址 |
+| ---------|----------|
+| ftp-in-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
+| ftp-out-gtw.demdex.com | 3.233.68.222; 52.3.74.119 |
+
+ 
+
+下方的SFTP伺服器已過時。 不會使用這些伺服器布建新帳戶。
+
+| 伺服器 | IP 位址 |
 ---------|----------|
 | ftp-in.demdex.com | 54.225.117.163 |
 | ftp-out.demdex.com | 23.23.188.76 |
 
-<br> 
+ 
+
+**我要如何設定Audience Manager例項以使用新的SFTP伺服器？**
+
+請連絡您 [!DNL Audience Manager] 的顧問或客戶服務，他們將會設定您的新SFTP帳戶。
+
+ 
+
+**新SFTP伺服器支援哪些驗證方法？**
+
+新的SFTP伺服器(`ftp-in-gtw` 和 `ftp-out-gtw`)支援 [!DNL OpenSSH Key-Based Authentication]。 我們可為您產 [!DNL SSH] 生密鑰，或者您可以提供您自己的公開密鑰。
+
+ 
 
 **[!UICONTROL DIL]/[!DNL Analytics]資料整合**&#x200B;的程式碼放置和頁面載入要求為何？
 
@@ -73,7 +88,7 @@ faq_data_collection_integration.xml
 
 請參閱 [Data Integration Library (DIL) API](../dil/dil-overview.md)。
 
-<br> 
+ 
 
 **為什麼我的[!DNL Analytics]變數沒有在[!DNL Audience Manager]事件呼叫中出現？**
 
@@ -82,7 +97,7 @@ faq_data_collection_integration.xml
 * 您透過標籤管理系統處理 [!UICONTROL DIL]，而該系統是以非同步方式載入頁面上的其他程式碼元素。
 * `s.t()` 函數在 [!UICONTROL DIL] 之前載入。
 
-<br> 
+ 
 
 **哪些[!DNL Analytics]版本可搭配[!UICONTROL DIL]使用？**
 
@@ -150,7 +165,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **如何設[!DNL Audience Manager]定Cookie並將變數傳遞至[!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 設定2個Cookie: 其中一個會傳送區段變數 [!DNL Google Ad Manager] 至廣告標籤，而另一個則會設定我們的唯一使用者ID(UUID)，也由讀取 [!DNL Google Ad Manager]。 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
+[!DNL Audience Manager] 設定2個Cookie:其中一個會傳送區段變數 [!DNL Google Ad Manager] 至廣告標籤，而另一個則會設定我們的唯一使用者ID(UUID)，也由讀取 [!DNL Google Ad Manager]。 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
 
 <br> 
 
