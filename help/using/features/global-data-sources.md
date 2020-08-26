@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 全域資料來源
 feature: Data Sources
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: b8b848ad04d1ec07c12e57d94e4f3c6e672dc102
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 5%
+source-wordcount: '444'
+ht-degree: 6%
 
 ---
 
@@ -24,12 +24,12 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 | 資料來源ID | 說明 |
 |---|---|
-| 20914 | **Google Advertising ID** - **** GAID代表執行作業系統 [!DNL Android] 的裝置。 |
-| 20915 | **Apple ID For Advertising** - **** IDFA代表執行作業系統 [!DNL iOS] 的裝置。 |
-| 121963 | **Roku ID for Advertising** - **** RIDA代表串 [!DNL Roku] 流裝置。 |
-| 389146 | **Microsoft Advertising ID** - **** MAID代表執行作業系統 [!DNL Windows 10] 的裝置。 |
-| 404660 | **Samsung** DUID代表智 [!DNL Samsung] 慧型電視。 |
-| 488258 | **Amazon Fire TV廣告** ID代表執行的裝置 [!DNL Amazon Fire OS] |
+| 20914 | **[!DNL Google Advertising ID]** - **[!DNL GAID]** ID代表執行作業系統的 [!DNL Android] 裝置。 |
+| 20915 | **[!DNL Apple ID For Advertising]** - **[!DNL IDFA]** ID代表執行作業系統的 [!DNL iOS] 裝置。 |
+| 121963 | **[!DNL Roku ID for Advertising]** - **[!DNL RIDA]** ID代表串 [!DNL Roku] 流裝置。 |
+| 389146 | **[!DNL Microsoft Advertising ID]** - **[!DNL MAID]** ID代表執行作業系統 [!DNL Windows 10] 的裝置。 |
+| 404660 | **[!DNL Samsung Tizen IDs for Advertising]** - **[!DNL TIFA]** ID代表智 [!DNL Samsung] 慧型電視。 |
+| 488258 | **[!DNL Amazon Fire TV Advertising IDs]** 代表執行中的裝置 [!DNL Amazon Fire OS] |
 
 ## 從全域資料來源匯入資料
 
@@ -37,7 +37,7 @@ Global data sources are accessible by all Audience Manager customers and contain
 
 >[!IMPORTANT]
 >
->使用全域裝置ID傳送資料至Audience Manager時，請務必針對相關裝置ID使用對應的資料來源。 範例： 若要匯入資 [!DNL Apple IDFA]料，請使用資料來源ID 20915。
+>使用全域裝置ID傳送資料至Audience Manager時，請務必針對相關裝置ID使用對應的資料來源。 範例：若要匯入資 [!DNL Apple IDFA]料，請使用資料來源ID 20915。
 
 ## 限制
 
