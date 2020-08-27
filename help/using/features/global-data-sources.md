@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 全域資料來源
 feature: Data Sources
 translation-type: tm+mt
-source-git-commit: b8b848ad04d1ec07c12e57d94e4f3c6e672dc102
+source-git-commit: cb84f95d52c2e851cb0c016cb25f408f2d79d01b
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Global data sources are accessible by all Audience Manager customers and contain
 | 20915 | **[!DNL Apple ID For Advertising]** - **[!DNL IDFA]** ID代表執行作業系統的 [!DNL iOS] 裝置。 |
 | 121963 | **[!DNL Roku ID for Advertising]** - **[!DNL RIDA]** ID代表串 [!DNL Roku] 流裝置。 |
 | 389146 | **[!DNL Microsoft Advertising ID]** - **[!DNL MAID]** ID代表執行作業系統 [!DNL Windows 10] 的裝置。 |
-| 404660 | **[!DNL Samsung Tizen IDs for Advertising]** - **[!DNL TIFA]** ID代表智 [!DNL Samsung] 慧型電視。 |
+| 963906 | **[!DNL Samsung Tizen IDs for Advertising]** - **[!DNL TIFA]** ID代表智 [!DNL Samsung] 慧型電視。 |
 | 488258 | **[!DNL Amazon Fire TV Advertising IDs]** 代表執行中的裝置 [!DNL Amazon Fire OS] |
 
 ## 從全域資料來源匯入資料
