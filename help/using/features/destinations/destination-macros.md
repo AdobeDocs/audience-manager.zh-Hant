@@ -7,9 +7,9 @@ title: 定義的巨集目的地
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 3%
 
 ---
@@ -49,14 +49,14 @@ ht-degree: 3%
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">資料來源ID: <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">內部客戶ID: <code> CustomerABC</code> </li> 
-     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">宣告的ID: 合作夥伴想將這些值傳入為宣告的ID <code> 1:CustomerABC</code>。 </li> 
+     <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">宣告的ID:合作夥伴想將這些值傳入為宣告的ID <code> 1:CustomerABC</code>。 </li> 
     </ul> <p>若要使用， <code>%dpid_<i>data source id</i>%</code>Audience Manager <span class="keyword"></span> 合作夥伴會將巨集格式設為如下： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>宏將替換 <code> 1</code> 為 <code> CustomerABC</code>。 </p> <p> 
-     <draft-comment>
-       基於AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     </draft-comment> </p> </td> 
+     <!--
+       Based on AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
+     --> </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
@@ -81,7 +81,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %region%</code> </p> </td> 
-   <td colname="col2"> <p>將資料 <span class="wintitle"> 收集伺服器(DCS)區域插入目標URL</span> 。 為了將延遲降到最低，當訪客對 <span class="keyword"> Audience Manager進行HTTP呼叫時</span>，會將其重新導向至最接近的 <span class="wintitle"> DCS資料中心</span> 。 這是透過DNS來實現的，DNS可偵測訪客的位置，並將其導向適當的資料中心。 </p> </td> 
+   <td colname="col2"> <p>將資料 <span class="wintitle"> 收集伺服器(DCS)區域插入目標URL</span> 。 為了將延遲降到最低，當訪客對 <span class="keyword"> Audience Manager進行HTTP呼叫時</span>，會將其重新導向至最接近的 <span class="wintitle"> DCS資料中心</span> 。 這是透過DNS來實現的，DNS可偵測訪客的位置，並將訪客導向適當的資料中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %rnd%</code> </p> </td> 
@@ -106,8 +106,8 @@ ht-degree: 3%
 
 快取破壞功能可防止瀏覽器儲存和重複使用內容。 此技巧使用將隨機數字或時間戳記插入URL字串的程式碼，讓它看起來對瀏覽器是獨一無二的。 因此，每個呼 `HTTP` 叫都會計為對伺服器的個別請求。 強制對每個請求進行新伺服器呼叫，有助於維持報告的正確性並減少不一致。 [!DNL Audience Manager] 提供兩個快取拆分宏：
 
-* `%rnd%`: 在URL中插入隨機數。
-* `%timestamp%`: 將Unix日期／時間插入URL。
+* `%rnd%`:在URL中插入隨機數。
+* `%timestamp%`:將Unix日期／時間插入URL。
 
 ## 比較 `%rnd%` 和 `%timestamp%` {#compare-rnd-timestamp}
 
