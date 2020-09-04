@@ -7,10 +7,10 @@ title: DIL 建立
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 10%
+source-wordcount: '825'
+ht-degree: 11%
 
 ---
 
@@ -60,13 +60,13 @@ r_dil_create.xml
    <td colname="col1"> <p> <code> declaredId </code> </p> </td> 
    <td colname="col2"> <p>物件 </p> </td> 
    <td colname="col3"> 
-    <draft-comment> 
-     <p>在每次事件 <a href="../../features/declared-ids.md"> 呼叫時傳送 </a> Declared ID變數至 <span class="keyword"> Audience Manager </span>。 </p> 
-    </draft-comment> <p> <code> delcaredId </code> 用於傳遞以下任一項： </p> 
+    <!-- 
+     <p>Sends the <a href="../../features/declared-ids.md"> Declared ID variables </a> on every event call to <span class="keyword"> Audience Manager </span>. </p> 
+    --> <p> <code> delcaredId </code> 用於傳遞以下任一項： </p> 
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
-     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>: Audience Manager指派給您的資料合作 <span class="keyword"> 夥伴ID </span>。 </li> 
-     <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>: 您的使用者唯一ID。 </li> 
-    </ul> <p> <p>重要：  僅對您的ID使用未編碼值。 編碼會建立雙重編碼識別碼。 </p> </p> <p> <p>注意：  如果您使用 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html" format="https" scope="external"> Adobe Experience Platform Identity Service，請 </a>使用方法設定客戶ID，而 <code> setCustomerIDs </code> 非 <span class="wintitle"> DIL </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
+     <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>:Audience Manager指派給您的資料合作 <span class="keyword"> 夥伴ID </span>。 </li> 
+     <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>:您的使用者唯一ID。 </li> 
+    </ul> <p> <p>重要： 僅對您的ID使用未編碼值。 編碼會建立雙重編碼識別碼。 </p> </p> <p> <p>注意： 如果您使用 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html" format="https" scope="external"> Adobe Experience Platform Identity Service，請 </a>使用方法設定客戶ID，而 <code> setCustomerIDs </code> 非 <span class="wintitle"> DIL </span>。 See <a href="https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html" format="https" scope="external"> Customer IDs and Authentication States </a>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> delayAllUntilWindowLoad </code> </p> </td> 
@@ -81,12 +81,12 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> disableDestinationPublishingIframe </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> <p>重要：  DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> visitor.disableIdSyncs </code> 用Adobe <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"></a> Experience Platform Identity Service中的功能。 </p> </p> <p> 如 <code> true </code>果，將不會將目標發佈IFRAME附加至DOM或引發目標。 預設為 <code> false </code>. </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> visitor.disableIdSyncs </code> 用Adobe <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"></a> Experience Platform Identity Service中的功能。 </p> </p> <p> 如 <code> true </code>果，將不會將目標發佈IFRAME附加至DOM或引發目標。 預設為 <code> false </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> disableIDSyncs </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> <p>重要：  DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> visitor.disableIdSyncs </code> 用Adobe <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"></a> Experience Platform Identity Service中的功能。 </p> </p> <p>停用 ID 同步。使用DIL v6.2+和訪客ID服務時，您必須停用ID同步。 函 <code> visitorService </code> 數（請參閱下面的范常式式碼）負責此作業。 </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> visitor.disableIdSyncs </code> 用Adobe <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/disableidsync.html" format="https" scope="external"></a> Experience Platform Identity Service中的功能。 </p> </p> <p>停用 ID 同步。使用DIL v6.2+和訪客ID服務時，您必須停用ID同步。 函 <code> visitorService </code> 數（請參閱下面的范常式式碼）負責此作業。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> enableErrorReporting </code> </p> </td> 
@@ -96,7 +96,7 @@ r_dil_create.xml
   <tr> 
    <td colname="col1"> <p> <code> iframeAkamaiHTTPS </code> </p> </td> 
    <td colname="col2"> <p>布林值 </p> </td> 
-   <td colname="col3"> <p> <p>重要：  DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> visitor.idSyncSSLUseAkamai </code> 用Adobe <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/idsyncssluseakamai.html" format="https" scope="external"></a> Experience Platform Identity Service中的功能。 </p> </p> <p> 指定目標發佈範本是否應該針對 HTTPS 連線使用 Akamai。每位合作夥伴皆啟用。 </p> </td> 
+   <td colname="col3"> <p> <p>重要： DIL 8.0版( <span class="wintitle"> 2018年8月 </span> 發行)已淘汰此元素。 請改 <code> visitor.idSyncSSLUseAkamai </code> 用Adobe <a href="https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/idsyncssluseakamai.html" format="https" scope="external"></a> Experience Platform Identity Service中的功能。 </p> </p> <p> 指定目標發佈範本是否應該針對 HTTPS 連線使用 Akamai。每位合作夥伴皆啟用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> mappings </code> </p> </td> 
