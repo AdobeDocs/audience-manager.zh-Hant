@@ -7,10 +7,10 @@ title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: d3fd387478ac00470537124110299cd264eac499
+source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 6%
+source-wordcount: '1006'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 [!DNL S3] 檔案名稱包含下列必要和選用元素：
 
-* **[!DNL S3]前置詞：**`s3n://AWS_directory/partner_name/date=yyyy-mm-dd/`
+* **[!DNL S3]前置詞：**   `s3n://AWS_directory/partner_name/date=yyyy-mm-dd/`
 
 * **檔案名元素：**   `ftp_dpm_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
@@ -64,13 +64,13 @@ Removed  {importance="high"} for ExL
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>資 <span class="term"> 料提供者ID</span> (DPID)是識別碼，可告訴 <span class="keyword"> Audience Manager</span> （資料檔案是否包含您自己的使用者ID、Android或iOS ID）。 接受下列選項： </p> <p> <b>資料合作夥伴ID</b> </p> <p>這是Audience Manager指派給您公司或組織的唯一ID。 傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ,ID為21的合作夥伴傳送了檔案，並包含該合作夥伴指派的使用者ID。 </p> <p> <b>Android ID(GAID)</b> </p> <p> 如果檔案包含Android ID，請在資料檔案名稱中使用ID 20914做為DPID。 當您使用ID 20914做為DPID時，仍需要向 <span class="keyword"> Audience Manager識別您的公司</span>。 這表示檔案名稱必須使用參 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 數，才能保留您的公司ID。 例如，假設您傳入的檔案具有Android ID，而您的資料提供者ID為21。 在這種情況下，檔案名將顯示為 <code>...ftp_dpm_20914_21_123456789.sync</code>。 這會告 <span class="keyword"> 訴Audience Manager</span> ，檔案包含Android ID，且來自ID 21所識別的合作夥伴。 </p> <p> <b>iOS ID(IDFA)</b> </p> <p> 如果檔案包含iOS ID，請在資料檔案名稱中使用ID 20915做為DPID。 當您使用ID 20915做為DPID時，仍需要向 <span class="keyword"> Audience Manager識別您的公司</span>。 這表示檔案名稱必須使用參 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 數，才能保留您的公司ID。 例如，假設您傳入的檔案具有Android ID，而您的資料提供者ID為21。 在這種情況下，檔案名將顯示為 <code>...ftp_dpm_20915_21_123456789.sync</code>。 這會告 <span class="keyword"> 訴Audience Manager</span> ，檔案包含iOS ID，且來自ID 21所識別的合作夥伴。 </p> 
-    <draft-comment> 
+    <!-- 
      <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料合作夥伴ID:</b> 這是Audience Manager指派給您公司或組織的唯一ID。 傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ,ID為21的合作夥伴傳送了檔案，並包含該合作夥伴指派的使用者ID。 </li> 
-      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果資料檔案名稱包含Android ID，請使用ID 20914。 例如，告 <code>...ftp_dpm_20914_21_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含Android ID。 請注意，ID 21 </li> 
-      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果資料檔案名稱包含iOS ID，請使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含iOS ID。 </li> 
+      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>Data Partner ID:</b> This is a unique ID Audience Manager assigns to your company or organization. Use this assigned ID in a file name when sending in data that contains your own user IDs. For example, <code>...ftp_dpm_21_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that a partner with ID 21 sent the file and it contains user IDs assigned by that partner. </li> 
+      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android IDs (GAID):</b> Use ID 20914 in a data file name if it contains Android ID. For example, <code>...ftp_dpm_20914_21_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that the data file contains Android IDs only. Note, the ID 21 </li> 
+      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS IDs (IDFA):</b> Use ID 20915 in a data file name if it contains iOS IDs. For example, <code>...ftp_dpm_20915_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that the data file contains iOS IDs only. </li> 
      </ul> 
-    </draft-comment> <p> <p>注意：  請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿在資料檔案中放入iOS ID或您自己的ID。 </p> </p><p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">全域資料來源</a>。</p> <p>另請參閱下 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 面的項目。 </p> </td> 
+    --> <p> <p>注意： 請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿在資料檔案中放入iOS ID或您自己的ID。 </p> </p><p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">全域資料來源</a>。</p> <p>另請參閱下 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 面的項目。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
@@ -88,24 +88,24 @@ Removed  {importance="high"} for ExL
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>10位數的UTC UNIX時間戳記，以秒為單位。 時間戳記有助於使每個檔案名稱都是唯一的。 </p> 
-    <draft-comment> 
-     <p> <p>注意：  Audience Manager在處理傳入檔案時不會使用時間戳記。 檔案名稱中的時間戳記已在Audience Manager中過時，但仍需使用，才能向後相容。 </p> </p> 
-    </draft-comment> </td> 
+    <!-- 
+     <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
+    --> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (.sync|.overwrite)</code> </p> </td> 
    <td colname="col2"> <p>同步選項包括： </p> <p> 
      <ul id="ul_DAAF61EC636C4456BECDDC34C3F86E83"> 
-      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>: 當協力廠商資料提供者依使用者傳送要在Audience Manager系統中新增或移除的特徵時，通常的情形。 </li> 
-      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>: 可讓資料提供者依每位使用者傳送特徵清單，這些特徵應會覆寫Audience Manager中此資料提供者的所有現有第三方特徵。 您不需要將所有使用者納入覆寫檔案中。 僅包含您要變更的使用者。 </li> 
+      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>:當協力廠商資料提供者依使用者傳送要在Audience Manager系統中新增或移除的特徵時，通常的情形。 </li> 
+      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>:可讓資料提供者依每位使用者傳送特徵清單，這些特徵應會覆寫Audience Manager中此資料提供者的所有現有第三方特徵。 您不需要將所有使用者納入覆寫檔案中。 僅包含您要變更的使用者。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>[<i>SPLIT_NUMBER</i>]</code> </p> </td> 
    <td colname="col2"> <p>整數。 將大型檔案分割為多個部分時使用，以縮短處理時間。 數字表示您要傳送的原始檔案的哪個部分。 </p> <p>為提高檔案處理的效率，請依照下列指示分割資料檔案： </p> 
     <ul id="ul_E9446C5CA42649658093904D49D4369C"> 
-     <li id="li_B275708DFE3F49E29EFAE6B838429E39">未壓縮： 1 GB </li> 
-     <li id="li_A9638EB46ED14E0680B6575D5457E32F">壓縮： 200-300 MB </li> 
+     <li id="li_B275708DFE3F49E29EFAE6B838429E39">未壓縮：1 GB </li> 
+     <li id="li_A9638EB46ED14E0680B6575D5457E32F">壓縮：200-300 MB </li> 
     </ul> <p>請參閱以下前2 <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md#file-name-examples"> 個檔案名稱範例</a> 。 </p> </td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ Removed  {importance="high"} for ExL
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>已壓縮</b> </td> 
+   <td colname="col1"><b>壓縮</b> </td> 
    <td colname="col2"> <p>200-300 MB </p> </td> 
    <td colname="col3"> <p>3 GB </p> </td> 
   </tr> 
