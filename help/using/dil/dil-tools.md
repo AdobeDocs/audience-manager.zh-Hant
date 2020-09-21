@@ -7,7 +7,7 @@ title: DIL 工具
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 5%
@@ -132,7 +132,7 @@ r_dil_decompose.xml
 
 並傳回：
 
-* *`{object}`*: 包含有效名稱和關鍵字的物件。
+* *`{object}`*:包含有效名稱和關鍵字的物件。
 
 ### 程式碼範例
 
@@ -174,20 +174,20 @@ r_dil_get_metatags.xml
 
 ### 程式碼範例
 
-<pre class="&ldquo;javascript&rdquo;"><code>
+```js
 var dataLib = DIL.create({ 
-     partner: '<i>partnerName'</i>, 
-     containerNSID: <i>containerNSID</i> 
+     partner: 'partnerName', 
+     containerNSID: containerNSID 
 }); 
 
-dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>', '<i>keywords</i>',  '<i>description</i>'), 'c_').submit();
+dataLib.api.signals(DIL.tools.getMetaTags('application', 'keywords',  'description'), 'c_').submit();
 </code></pre>
 
 <pre><code>
 var dataLib = DIL.create({ 
-     partner: <i>`partnerName'</i>, 
-     containerNSID: <i>containerNSID</i> 
+     partner: `partnerName', 
+     containerNSID: containerNSID 
 }); 
 
-dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>','<i>keywords</i>', '<i>description</i>'), 'c_').submit();
-</code></pre>
+dataLib.api.signals(DIL.tools.getMetaTags('application','keywords', 'description'), 'c_').submit();
+```
