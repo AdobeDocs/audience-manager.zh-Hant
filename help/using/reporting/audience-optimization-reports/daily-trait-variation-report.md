@@ -7,9 +7,9 @@ title: 每日特徵變化報表
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 標準差會測量與平均值（或平均／預期值）的偏差或偏差量。 標準差低表示資料點趨近於平均值。 高標準差表示資料點分佈在大範圍值上。
 
-![](assets/daily_trait_variation.png)
+![螢幕擷取每日特徵變數報告](assets/daily_trait_variation.png)
 
 使用清 [!UICONTROL Date] 單為報表選擇一或多個日期。 在清單底部會顯示色彩編碼長條圖，以視覺化方式呈現所有選定日期之所有特徵的標準差範圍。 黑色垂直線表示平均值。
 
@@ -41,14 +41,14 @@ ht-degree: 1%
 
 ## 使用個案 {#use-cases}
 
-**範例#1**: 在您有具有高季節性等級的特性時，此報表非常有用。 例如，假設您的線上商店正在測試各種類型和價格的季節性促銷活動。 您有下列特徵定義於 [!DNL Audience Manager]:
+**範例#1**:在您有具有高季節性等級的特性時，此報表非常有用。 例如，假設您的線上商店正在測試各種類型和價格的季節性促銷活動。 您有下列特徵定義於 [!DNL Audience Manager]:
 
 * `productPage == "December Promotion"`
 * `price > "500"`
 
 假設您在12 [!UICONTROL Daily Trait Variation] 月20日執行報告，並注意到過去30天內，上述特徵有明顯的正面偏差。 這可能表示您的訪客正在尋找您季節性促銷中提及的產品。 若要利用此趨勢，您可以投入更多精力，針對對該特定產品類別感興趣的訪客定位創意素材。
 
-**範例#2**: 此報告可協助您識別與標籤問題或特徵錯誤設定相關的定位異常。 假設您已根據線上商店的類別定義下列特徵：
+**範例#2**:此報告可協助您識別與標籤問題或特徵錯誤設定相關的定位異常。 假設您已根據線上商店的類別定義下列特徵：
 
 * `productPage == "smartphones"`
 
@@ -56,8 +56,8 @@ ht-degree: 1%
 
 一個月後，您會執行報 [!UICONTROL Daily Trait Variation] 表並注意到該特徵有很大的負偏差 `productPage == "smartphones"` ，不過根據您的網站分析，您的訪客數量已增加。 根據這些資訊，您瞭解您尚未更新新產品頁面 [!DNL Audience Manager] 中的特徵，因此您知道您必須建立下列特徵：
 
-* productPage == &quot;samsung&quot;
-* productPage == &quot;apple&quot;
-* productPage == &quot;huawei&quot;
+* `productPage == "samsung"`
+* `productPage == "apple"`
+* `productPage == "huawei"`
 
 完成此作業後，您會看到您的受眾符合新建立特徵的資格。
