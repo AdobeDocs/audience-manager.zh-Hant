@@ -7,7 +7,7 @@ title: 重疊報表的 CSV 檔案
 uuid: 047e440e-00c5-4d06-a809-51d776326cd6
 feature: overlap reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 9%
@@ -78,9 +78,9 @@ ht-degree: 9%
 
 ```js
 //File header
-"segment_id1","segment_name1","segment_id2","segment_name3,"range_id",...
+"segment_id1","segment_name1","segment_id2","segment_name3","range_id", ...
 //File body
-"123456","segmentA","654321","segmentB","30","yyyy-mm-dd","98765",...
+"123456","segmentA","654321","segmentB","30","yyyy-mm-dd","98765", ...
 ```
 
 ## 區段對區段報表記錄 {#segment-segment-records}
@@ -115,8 +115,8 @@ ht-degree: 9%
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
    <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 對 <code> rangeid</code> 應於下方顯示的時間間隔。 </p> <p> 
      <ul id="ul_129D6CB0EB6F48F28440D22DA257D1A4"> 
-      <li id="li_5FC34516A437459F854C81B1CE353B89"> <code> 7</code>: 7天 </li> 
-      <li id="li_2CECC5039DAF4796BCCF27DACC3754A3"> <code> 30</code>: 30天 </li> 
+      <li id="li_5FC34516A437459F854C81B1CE353B89"> <code> 7</code>:7天 </li> 
+      <li id="li_2CECC5039DAF4796BCCF27DACC3754A3"> <code> 30</code>:30天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -178,8 +178,8 @@ ht-degree: 9%
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
    <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 對 <code> rangeid</code> 應於下方顯示的時間間隔。 </p> <p> 
      <ul id="ul_4B07DFF4A226428A930E22B5FF73E1D0"> 
-      <li id="li_4BD0F8AE64C74D7BBE2298F19E2F5328"> <code> 7</code>: 7天 </li> 
-      <li id="li_7C0C0D2CD9144C4CAF00EDEA90929104"> <code> 30</code>: 30天 </li> 
+      <li id="li_4BD0F8AE64C74D7BBE2298F19E2F5328"> <code> 7</code>:7天 </li> 
+      <li id="li_7C0C0D2CD9144C4CAF00EDEA90929104"> <code> 30</code>:30天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -253,8 +253,8 @@ ht-degree: 9%
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
    <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 對 <code> rangeid</code> 應於下方顯示的時間間隔。 </p> <p> 
      <ul id="ul_BC2C41B90F864522B075EFDED33537EC"> 
-      <li id="li_929639F70A1A4039BA19332562B71845"> <code> 7</code>: 7天 </li> 
-      <li id="li_1C489A4B755D4444AD5FAAF0B492F412"> <code> 30</code>: 30天 </li> 
+      <li id="li_929639F70A1A4039BA19332562B71845"> <code> 7</code>:7天 </li> 
+      <li id="li_1C489A4B755D4444AD5FAAF0B492F412"> <code> 30</code>:30天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
