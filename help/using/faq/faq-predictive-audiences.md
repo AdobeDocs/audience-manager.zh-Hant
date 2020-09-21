@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
+source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 67%
+source-wordcount: '1024'
+ht-degree: 64%
 
 ---
 
@@ -115,6 +115,12 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 **分類為其中一個預測區段的使用者是否可重新分類為不同[!UICONTROL Predictive Audiences]區段？**
 
 是。由於演算法每天都在學習並進步，因此會將變更套用到每個角色的特徵分數上。如果屬於某個 [!UICONTROL Predictive Audiences] 區段的使用者處於作用中狀態，其特徵分數的變化可根據過去 30 天的活動來變更分類。
+
+ 
+
+**我是否可將預測性特徵新增至一般區段？**
+
+將預測性狀新增至一般區段時，區段會變成預測性區段。 因此，所有相關描述檔都會被取消分段。 預測性區段只能傳送至即時目的地。
 
  
 
