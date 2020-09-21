@@ -7,7 +7,7 @@ title: 大量管理工具的疑難排解提示
 uuid: 550908a1-e24e-4f31-954b-7132c0c8dc3e
 feature: baaam
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 5%
@@ -53,15 +53,15 @@ ht-degree: 5%
   <tr> 
    <td colname="col1"> <b>驗證錯誤</b> </td> 
    <td colname="col2"> 
-    <b>更新至最新版Microsoft Excel</b>: 當新版Microsoft Excel發行且您使用舊版時，「批量管理」工作表中可能會發生驗證錯誤。 更新至最新版Microsoft Excel以解決驗證錯誤。
+    <b>更新至最新版Microsoft Excel</b>:當新版Microsoft Excel發行且您使用舊版時，「批量管理」工作表中可能會發生驗證錯誤。 更新至最新版Microsoft Excel以解決驗證錯誤。
 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>長時間延遲</b> </td> 
    <td colname="col2"> 
     <ul id="ul_AA6F414024B2475AB1C0B46DC3FF0B36"> 
-     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>關閉相容模式</b>: 檢查您是否在Microsoft Excel的相容性模式中開啟其他工作表。 相容性模式可增加執行時期。 關閉您在此模式中開啟的任何試算表，然後再試一次大量請求。 </li> 
-     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系統資源</b>: 系統資源有限導致長時間延遲。 請先嘗試關閉所有其他程式，再進行大量請求。 </li> 
+     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>關閉相容模式</b>:檢查您是否在Microsoft Excel的相容性模式中開啟其他工作表。 相容性模式可增加執行時期。 關閉您在此模式中開啟的任何試算表，然後再試一次大量請求。 </li> 
+     <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系統資源</b>:系統資源有限導致長時間延遲。 請先嘗試關閉所有其他程式，再進行大量請求。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -78,5 +78,5 @@ ht-degree: 5%
 
 ## 錯誤訊息
 
-有時，您會在進行大量變更時收到錯誤訊息。 若要解譯錯誤訊息，請參 [閱API檔案中的](/help/using/api/rest-api-main/aam-api-getting-started.md) 「回應代碼定義」。
+有時，您會在進行大量變更時收到錯誤訊息。 若要解譯錯誤訊息，請參 [閱API檔案中的](/help/using/api/rest-api-main/aam-api-getting-started.md#response-codes-defined) 「回應代碼定義」。
 
