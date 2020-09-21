@@ -7,9 +7,9 @@ title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 feature: log files
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '836'
 ht-degree: 4%
 
 ---
@@ -112,7 +112,7 @@ ht-degree: 4%
 
 在此範例中，我們將建立中繼資料檔案，將創意名稱引入報 [!UICONTROL Audience Optimization] 表。 為此，我們需要從事件呼叫擷取創意、促銷活動和資料來源ID。
 
-![](assets/metadata_file_event.png)
+![元資料檔案事件模式](assets/metadata_file_event.png)
 
 ### 檔案名稱
 
@@ -124,7 +124,7 @@ ht-degree: 4%
 
 * 創意和促銷活動ID代表類別，而非實際識別碼。
 
-![](assets/metadata_file_name.png)
+![元資料檔案名架構](assets/metadata_file_name.png)
 
 See [Naming Conventions for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
 
@@ -132,7 +132,7 @@ See [Naming Conventions for Metadata Files](../../../reporting/audience-optimiza
 
 在此範例中，檔案內容會反映事件呼叫時傳入的創意和促銷活動ID。 此處的新元素是可讀的名稱。 處理完成後，此檔案中的名稱會顯示為報表的「創意」選單中的選 [!UICONTROL Audience Optimization] 項。
 
-![](assets/metadata_file_contents.png)
+![元資料檔案內容模式](assets/metadata_file_contents.png)
 
 See [Content Format for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
 
