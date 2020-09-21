@@ -7,7 +7,7 @@ title: 資料動作元件
 uuid: c4c4cc46-8c96-4ef5-8269-571cc5ac9276
 feature: system components
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 3%
@@ -58,7 +58,7 @@ c_compact.xml
 * 為Cookie和區段提供快速（30秒內）同步。 它可以同步 [!DNL Audience Manager] Cookie、合作夥伴Cookie或兩者。
 * 即時資料傳輸。 [!UICONTROL IRIS] 負責傳送即時區段資格事件給合作夥伴或其他目的地。 此資料是JSON格式，並透過HTTP要求傳 `POST` 送。
 
-* 大量伺服器對伺服器資料傳輸： 如果您與伺服器交換大量數 [!DNL Audience Manager]據， [!UICONTROL IRIS] 則是伺服器用於傳輸資料的系統。
+* 大量伺服器對伺服器資料傳輸：如果您與伺服器交換大量數 [!DNL Audience Manager]據， [!UICONTROL IRIS] 則您的伺服器是用於傳輸資料的系統。
 
 * 可靠、規模化、容錯的基礎架構。 功能強大的 [!UICONTROL IRIS] 系統包括Amazon SQS、Amazon EC2和Cassandra。
 
@@ -66,13 +66,13 @@ c_compact.xml
 
 若要最佳化與區 [!UICONTROL IRIS] 段目標之間的流 [!UICONTROL IRIS] 量，請根據一組規則傳送區段至目標。
 
-1. **新細分資格**: 當裝置符合新區段的資格時，會 [!UICONTROL IRIS] 將與該裝置關聯的所有區段傳送至所有對應至這些區段的目標。
+1. **新細分資格**:當裝置符合新區段的資格時，會 [!UICONTROL IRIS] 將與該裝置關聯的所有區段傳送至所有對應至這些區段的目標。
 
-1. **新區段取消資格**: 當裝置不再符合區段資格時，會將所有與該裝置相關 [!UICONTROL IRIS] 的區段資格和取消資格傳送至所有對應至這些區段的目標。
+1. **新區段取消資格**:當裝置不再符合區段資格時，會將所有與該裝置相關 [!UICONTROL IRIS] 的區段資格和取消資格傳送至所有對應至這些區段的目標。
 
-1. **目標映射更新**: 當目標對應更新時，會 [!UICONTROL IRIS] 將與裝置相關聯的所有區段傳送至所有對應至這些區段的目的地，此時Audience Manager會在下次看到裝置時顯示。
+1. **目標映射更新**:當目標對應更新時，會 [!UICONTROL IRIS] 將與裝置相關聯的所有區段傳送至所有對應至這些區段的目的地，此時Audience Manager會在下次看到裝置時顯示。
 
-1. **裝置圖表更新**: 當任何裝置ID從用於評估區段的裝置圖形中新增或移除時， [!UICONTROL IRIS] 會將與該裝置關聯的所有區段傳送至所有對應至這些區段的目的地，此時Audience Manager會在下次看到裝置時顯示。
+1. **裝置圖表更新**:當任何裝置ID從用於評估區段的裝置圖形中新增或移除時， [!UICONTROL IRIS] 會將與該裝置關聯的所有區段傳送至所有對應至這些區段的目的地，此時Audience Manager會在下次看到裝置時顯示。
 
 >[!IMPORTANT]
 >
@@ -80,9 +80,9 @@ c_compact.xml
 
 **範例資料檔案**
 
-下列範例包含來自的即時區段資料 [!UICONTROL IRIS]。 請記住，這僅是範例資料。 每個客戶可能有不同的格式要求，因此內容可能會有所不同。
+下列範例包含來自的即時區段資料 [!UICONTROL IRIS]。 請記住，這僅是範例資料。 每位客戶可能有不同的格式要求，因此內容可能會有所不同。
 
-```
+```json
 {
     "ProcessTime": "Tue Jul 21 19:12:45 UTC 2015",
     "Client_ID": "111111",
