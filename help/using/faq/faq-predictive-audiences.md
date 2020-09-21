@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
+source-git-commit: 04c638289878ff79070487d7d8cbb5c9454d93d6
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1023'
 ht-degree: 64%
 
 ---
@@ -106,6 +106,8 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 
 仔細分析您的使用案例，並 [!UICONTROL trait] 決定您希望模型從哪些類型學習，以及您希望模型用於分類的資料類型。
 
+ 
+
 **目標受眾中不屬於任何角色特徵/區段的使用者是否不可分類？**
 
 是的，萬一使用者的個人檔案中沒有任何特徵，在這種情況下，使用者的所有角色特徵/區段比對分數將為 0，因此不會分類為任何預測區段。
@@ -120,7 +122,7 @@ To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm eva
 
 **我是否可將預測性特徵新增至一般區段？**
 
-將預測性狀新增至一般區段時，區段會變成預測性區段。 因此，所有相關描述檔都會被取消分段。 預測性區段只能傳送至即時目的地。
+當您將預測性特徵新增至一般區段時，它會變成預測性區段。 因此，所有相關描述檔都會被取消分段。 預測性區段只能傳送至即時目的地。
 
  
 
