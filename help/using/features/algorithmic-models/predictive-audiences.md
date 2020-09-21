@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 1be20c2412a272e6374b8b84e6a5c1628da18497
+source-git-commit: 91ed0e755982375f41ed5eb484fa8e60bbe6f8e5
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 8%
+source-wordcount: '1551'
+ht-degree: 7%
 
 ---
 
@@ -113,6 +113,9 @@ ht-degree: 8%
 * 對於每個模型，您最多可以選擇50個基本特徵／區段。
 * 目前不支援第二方和第三方資料 [!UICONTROL Predictive Audiences]。
 * 觀眾分類僅針對即時的第一方觀眾進行。 未來更新可能支援已登入的第一方觀眾分類。
+   >[!IMPORTANT]
+   > 如果您新增預測性特徵至一般區段，則會變成預測性區段。 因此，所有相關描述檔都會被取消分段。
+
    >[!IMPORTANT]
    > 目前，預測性區段只能在即時目標中啟動。 預測 [!UICONTROL Total Segment Population] 性 [!UICONTROL Addressable Audience] 區段和預測性區段會顯示為0，且不支 [援「批次傳出資料傳輸](../../integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md) 」 [!UICONTROL Predictive Audiences]。 此行為在未來的更新中將會改變。
 * [!UICONTROL Predictive Audiences] 從所有第一方資料來源，根據您的第一方特徵執行對象分類。
