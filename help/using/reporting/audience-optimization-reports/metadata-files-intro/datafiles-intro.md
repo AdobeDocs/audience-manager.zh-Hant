@@ -7,9 +7,9 @@ title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: log files
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1010'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 下列語法定義格式良好的資料檔案名稱的結構。 請注意， *斜體* 表示變數預留位置會依檔案內容而改變。
 
-**語法:** <pre><i>event type</i>_<i>yyyymmdd</i></code></pre>
+**語法:** `event type_yyyymmdd`
 
 在檔案名中：
 
@@ -39,15 +39,15 @@ ht-degree: 5%
 
 根據這些要求，請根據資料檔案的內容命名檔案，如下所示：
 
-* 印象資料： <pre>impressions_<i>yyyymmdd</i>.gz</code></pre>
-* 按一下資料： <pre>clicks_<i>yyyymmdd</i>.gz</code></pre>
-* 轉換資料： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
+* 印象資料： `impressions_yyyymmdd.gz`
+* 按一下資料： `clicks_yyyymmdd.gz`
+* 轉換資料： `conversions_yyyymmdd.gz`
 
 ## Content Format for Data Files {#content-format}
 
 下列語法定義格式良好的資料檔案的內容結構。 注意， *斜體* 表示變數預留位置，並以實際資料檔案中的標籤取代。
 
-**語法:** <pre><i>標題標籤1</i> |標 <i>題標籤2</i> ... <i>標題標籤n</i> |版 <i>本</i></code></pre>
+**語法:** `header label 1 | header label 2 ... header label n | version`
 
 在檔案內容中：
 
@@ -119,7 +119,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p>收入 </p> </td> 
-   <td colname="col2"> <p>購買或其他轉換金額。 資料類型： 漂浮。 </p> <p> <i>僅限轉換資料檔案。</i> </p> </td> 
+   <td colname="col2"> <p>購買或其他轉換金額。 資料類型：漂浮。 </p> <p> <i>僅限轉換資料檔案。</i> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>其他資料 </p> </td> 
@@ -131,7 +131,7 @@ ht-degree: 5%
     <ul id="ul_DA8230D167F241F2B53F29367874D4B1"> 
      <li id="li_2BC2EBCAE12541029A5F62AC0785E7FE"> <code> 0</code>: 曝光數 </li> 
      <li id="li_2A4B1354891144D587624228D8FB5E77"> <code> 1</code>: 按一下 </li> 
-     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>: 非屬性或未知 </li> 
+     <li id="li_44E61419DB56471EB2091072595D3E5C"> <code> -1</code>:非屬性或未知 </li> 
     </ul> <p> <i>僅限轉換資料檔案。</i> </p> </td> 
   </tr> 
   <tr> 
@@ -153,7 +153,7 @@ ht-degree: 5%
 
 資料會儲存在目錄中每位客戶的個別命名空 [!DNL Amazon S3] 間中。 檔案路徑遵循下列語法。 Note, *italics* indicates a variable placeholder. 其他元素是常數或鍵，不會變更。
 
-**語法:** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/檔案類型 <i>_</i><i>yyyymmdd</i></code></pre>
+**語法:** `.../log_ingestion/pid=AAM ID/dpid=d_src/logs/file type_yyyymmdd`
 
 下表定義了檔案傳送路徑中的每個元素。
 
