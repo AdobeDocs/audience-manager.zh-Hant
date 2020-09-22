@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager中的協助功能
 feature: overview
 translation-type: tm+mt
-source-git-commit: 032e01f2483543271680093ae3286bcf3b3b3740
+source-git-commit: 20ec64ba3c934d60f8758777e226344c8586efa3
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Adobe是協助工具的業界領導者，鼓勵開發人員製作可供所有使
 
    ![accesibility-highlight](assets/accesibility-highlight.png)
 
-* 和 `Return` 鍵 `Space` 會啟動選取的項目。
+* ( `Return` )`Enter`和按 `Space` 鍵會啟動選取的項目。
 
 ## 可訪問表排序 {#table-sorting}
 
@@ -62,6 +62,4 @@ Audience Manager使用者介面中的所有互動元素都包含對應的標籤�
 
 [!DNL Audience Manager] 致力於提供日益普及的協助功能，讓產品更容易讓每個人使用。
 
-若要進一步瞭解我們的協助工具改進和合規性狀態，請參閱協助工具符合性報表。
-
-此外，我們鼓勵您使用 [Adobe協助工具意見表](https://www.adobe.com/accessibility/feedback.html) ，傳送您遇到的改進建議和協助工具問題。 我們非常樂意考慮您的意見並加以改進 [!DNL Audience Manager]。
+我們鼓勵您使用 [Adobe協助工具意見表](https://www.adobe.com/accessibility/feedback.html) ，傳送您遇到的改進建議和協助工具問題。 我們非常樂意考慮您的意見並加以改進 [!DNL Audience Manager]。
