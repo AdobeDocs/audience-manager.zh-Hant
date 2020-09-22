@@ -7,9 +7,9 @@ title: 傳入資料檔案的 FTP 名稱和檔案大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
+source-git-commit: d6d15ed68cd70fd7da1037a7cb397a00d252e4dd
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '868'
 ht-degree: 9%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
-   <td colname="col2"> <p>此D會告訴 <span class="keyword"> Audience Manager</span> ，資料檔案是否包含您自己的使用者ID、Android或iOS ID。 接受下列選項： </p> 
+   <td colname="col2"> <p>此D會告訴 <span class="keyword"> Audience Manager</span> ，資料檔案是否包含您自己的使用者ID、Android或iOS ID。 接受下列選項：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料合作夥伴ID:</b> 這是Audience Manager指派給您公司或組織的唯一ID。 傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ,ID為21的合作夥伴傳送了檔案，並包含該合作夥伴指派的使用者ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料提供者ID（又稱為資料來源ID）:</b> 這是Audience Manager指派給資料提供者的唯一ID。 傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ,ID為21的合作夥伴傳送了檔案，並包含該合作夥伴指派的使用者ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果資料檔案名稱包含Android ID，請使用ID 20914。 例如，告 <code>...ftp_dpm_20914_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含Android ID。 </li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果資料檔案名稱包含iOS ID，請使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含iOS ID。 </li> 
     </ul> <p> <p>注意： 請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿在資料檔案中放入iOS ID或您自己的ID。 </p> </p> </td> 
