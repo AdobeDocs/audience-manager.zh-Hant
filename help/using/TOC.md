@@ -8,7 +8,7 @@ breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
 user-guide-description: Audience Manager provides industry-leading services for online audience data management.
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: a726ad4fa4d1404efd363f8ed61222fcf3795c34
+source-git-commit: f420534f6c9e979a01b5fd9150a0d736efd2b87f
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 93%
@@ -78,8 +78,8 @@ ht-degree: 93%
       + [Data Explorer - 概述、優點和使用案例](features/data-explorer/data-explorer-overview.md)
       + [瞭解訊號](features/data-explorer/data-explorer-understanding-signals.md)
       + [訊號控制面板](features/data-explorer/data-explorer-signals-dashboard.md)
-      + 訊號搜尋{#signals-search}
-         + [訊號搜尋概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
+      + 信號搜尋{#signal-search}
+         + [信號搜索概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [按索引鍵值配對搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [按篩選條件搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
          + [Adobe Analytics 的進階搜尋](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
