@@ -8,9 +8,9 @@ title: 建立演算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: bff108115e7ebd4375d81c1c32ec9bb7d1a207c1
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 模型產生器區段
 
-[!UICONTROL Model Builder] 包含和 [!UICONTROL Basic Information] 節 [!UICONTROL Configuration] 。 要建立模型，請完成這兩個節中的必填欄位。 儲存模型以啟動演算法。 [!DNL Audience Manager] 在第一次資料執行完成後傳送自動通知給您。 收到電子郵件後，您可以前往「特徵產生器」 [並建立演算法特徵](../../features/traits/about-trait-builder.md) 。
+[!UICONTROL Model Builder] 包含和 [!UICONTROL Basic Information] 節 [!UICONTROL Configuration] 。 要建立模型，請完成這兩個節中的必需欄位。 儲存模型以啟動演算法。 [!DNL Audience Manager] 在第一次資料執行完成後傳送自動通知給您。 收到電子郵件後，您可以前往「特徵產生器」 [並建立演算法特徵](../../features/traits/about-trait-builder.md) 。
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/)
 
 ## 演算模型的基本資訊 {#basic-information}
 
@@ -90,7 +90,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>選取基準特徵或區段(1)</b> </p> </td> 
-   <td colname="col2"> <p>按一下特徵或區段按鈕，即可查看您所有特徵或區段的清單。 您選取的區段或特徵會成為系統演算法用於建模的基準。 </p> <p> <p><b>注意</b>:  選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。 </p> </p> </td> 
+   <td colname="col2"> <p>按一下特徵或區段按鈕，即可查看您所有特徵或區段的清單。 您選取的區段或特徵會成為系統演算法用於建模的基準。 </p> <p> <p><b>注意</b>: 選取已登入的特徵、規則型特徵或區段作為基準。 否則，您的模型將不運行。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>選擇回顧期間(2)</b> </p> </td> 
@@ -106,7 +106,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>排除(5)</b> </p> </td> 
-   <td colname="col2"> <p>您可以從選取的模型資料來源中排除特徵。 使用「排 <span class="wintitle"> 除」清單</span> ，並閱讀「演算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型： 特徵排除</a> ，瞭解更多資訊。 </p> </td>
+   <td colname="col2"> <p>您可以從選取的模型資料來源中排除特徵。 使用「排 <span class="wintitle"> 除」清單</span> ，並閱讀「演算法 <a href="../../features/algorithmic-models/trait-exclusion-algo-models.md"> 模型：特徵排除</a> ，瞭解更多資訊。 </p> </td>
   </tr> 
  </tbody>
 </table>
