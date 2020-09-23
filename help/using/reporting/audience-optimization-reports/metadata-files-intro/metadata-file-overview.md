@@ -7,9 +7,9 @@ title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
 feature: log files
 translation-type: tm+mt
-source-git-commit: e075bbfc3c2316518838ad428577eae191e45eda
+source-git-commit: f37ba905d603a3b95fda3ab797bb882f94e0066d
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '839'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 其次，如果您要將自己的資料傳送至報表，或是您想在報表中看到未與我們整合的其他供應商的資料，則需要中繼資料檔案。 [!DNL Audience Manager] 例如， [!DNL Audience Manager] 與Google的「連按兩下促銷 [活動管理員](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) (DCM)」整合。 由於這種關係， [!DNL Audience Manager] 可將ID與報表選項使用的名稱和說明建立關聯。 如果沒有整合，我們仍可以收錄資料，但報表選項會顯示數值ID，而非描述性名稱。
 
-![](assets/metadata-menu.png)
+![元資料菜單模式](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata-menu.png)
 
 ## 檔案映射 {#file-mappings}
 
@@ -112,7 +112,7 @@ ht-degree: 4%
 
 在此範例中，我們將建立中繼資料檔案，將創意名稱引入報 [!UICONTROL Audience Optimization] 表。 為此，我們需要從事件呼叫擷取創意、促銷活動和資料來源ID。
 
-![元資料檔案事件模式](assets/metadata-file-event.png)
+![元資料檔案事件模式](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata-file-event.png)
 
 ### 檔案名稱
 
@@ -124,7 +124,7 @@ ht-degree: 4%
 
 * 創意和促銷活動ID代表類別，而非實際識別碼。
 
-![元資料檔案名架構](assets/metadata-file-name.png)
+![元資料檔案名架構](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata-file-name.png)
 
 See [Naming Conventions for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md).
 
@@ -132,7 +132,7 @@ See [Naming Conventions for Metadata Files](../../../reporting/audience-optimiza
 
 在此範例中，檔案內容會反映事件呼叫時傳入的創意和促銷活動ID。 此處的新元素是可讀的名稱。 處理完成後，此檔案中的名稱會顯示為報表的「創意」選單中的選 [!UICONTROL Audience Optimization] 項。
 
-![元資料檔案內容模式](assets/metadata-file-contents.png)
+![元資料檔案內容模式](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata-file-contents.png)
 
 See [Content Format for Metadata Files](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md).
 
