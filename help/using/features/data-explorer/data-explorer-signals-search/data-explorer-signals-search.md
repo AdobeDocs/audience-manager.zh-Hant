@@ -1,19 +1,19 @@
 ---
 description: 搜索在特定時間段內接收的已用和未用信號。 若要搜尋訊號，請前往「讀者資料>訊號>搜尋」。
 seo-description: 搜索在特定時間段內接收的已用和未用信號。 若要搜尋訊號，請前往「讀者資料>訊號>搜尋」。
-seo-title: 訊號搜尋
-title: 訊號搜尋
+seo-title: 信號搜尋
+title: 信號搜尋
 feature: Data Explorer
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: f420534f6c9e979a01b5fd9150a0d736efd2b87f
 workflow-type: tm+mt
 source-wordcount: '93'
-ht-degree: 29%
+ht-degree: 21%
 
 ---
 
 
-# 訊號搜尋概述 {#signals-search}
+# 信號搜索概述 {#signal-search}
 
 搜索在特定時間段內接收的已用和未用信號。 若要搜尋訊號，請前往「讀者資料>訊號>搜尋」。
 
