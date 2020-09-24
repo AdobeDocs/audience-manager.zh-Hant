@@ -7,9 +7,9 @@ title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 feature: Segments
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1082'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445/)
 
 ## [!UICONTROL Segment Builder] 控制項： [!UICONTROL Basic Information] 章節 {#segment-builder-controls-basics}
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 1. 前往 **[!UICONTROL Audience Data > Segments]**。 捲動清單或使用搜尋功能來尋找 [!UICONTROL segment] 您要使用的項目。
 2. 按一下 [!UICONTROL segment] 名稱以開啟詳細 [!UICONTROL segment] 資訊畫面。
 3. 按一 **下「編輯** 」以開 [!UICONTROL Segment Builder] 啟，然後按一下「 **特徵** 」以開啟面 [!UICONTROL traits] 板。
-4. 將滑鼠指標暫留在 [!UICONTROL trait] 您要刪除的位置，然後按一下X。 此動作會立即從您的 [!UICONTROL trait] 裝置移除 [!UICONTROL segment]。
+4. 將滑鼠指標暫留在 [!UICONTROL trait] 您要刪除的位置，然後按一下X。此動作會立即從您的 [!UICONTROL trait] 裝置移除 [!UICONTROL segment]。
 
 ## [!UICONTROL Segment Builder] 控制項： [!UICONTROL Destinations Mappings] 章節 {#segment-builder-controls-destinations}
 
