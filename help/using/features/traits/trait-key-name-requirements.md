@@ -7,9 +7,9 @@ title: 關鍵變數的名稱要求
 uuid: fa72e732-895d-4cf6-bea0-66b404c2b059
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '125'
 ht-degree: 12%
 
 ---
@@ -29,6 +29,6 @@ ht-degree: 12%
 
 * 無效的密鑰名稱： `123`, `price!123`ý?
 
-## 前置關鍵變數 `c_`
+## 使用c_預修關鍵變數
 
 如果 `c_` 在事件 ** 呼叫URL上傳送資料的參數使用該語法，則前置詞一律為必要。
