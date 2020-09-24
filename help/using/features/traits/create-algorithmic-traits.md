@@ -7,9 +7,9 @@ title: 建立演算法特徵
 uuid: 50c2d2d1-f412-479b-bb70-4f139429c388
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: aeaf8b14e901b4a39486ba3740f0582c9cf34559
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '343'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,12 @@ ht-degree: 5%
 1. 展開窗 [!UICONTROL Configuration] 格，然後按一下 **[!UICONTROL Browse All Models]**。
 這會開啟新視窗，讓您選取要與特徵搭配使用的模型。
 1. 選取模型，然後按一下 **[!UICONTROL Add Selected Model to Trait]**。
-新增模型可顯示觸及度和精確度設定。
+
+   >[!NOTE]
+   > 
+   > 您無法取代現有演算法特徵的選取模型。 若要使用不同的模型，您必須建立新的演算法特徵。
+
+   新增模型可顯示觸及面和精確度設定。
 1. 選擇達到或準確度作為目標，並從各自的下拉式選單中選擇一個值。 完成時 **[!UICONTROL Save]** 按一下。
 
 ## 演算法特徵的組態設定 {#configure-settings}
