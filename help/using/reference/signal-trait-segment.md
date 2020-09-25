@@ -1,5 +1,5 @@
 ---
-description: 說明Audience Manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
+description: 瞭解Audience Manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
 seo-description: 說明Audience Manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
 seo-title: 訊號、特徵和區段
 solution: Audience Manager
@@ -7,7 +7,7 @@ title: 訊號、特徵和區段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 4%
