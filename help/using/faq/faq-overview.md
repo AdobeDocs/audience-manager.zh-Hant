@@ -6,9 +6,9 @@ solution: Audience Manager
 title: Audience Manager 常見問題集
 feature: Overview
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: d4eccf46de9b8658eb3066202211021e62d51652
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '84'
 ht-degree: 100%
 
 ---
@@ -27,5 +27,6 @@ ht-degree: 100%
 * [以人物為基礎的目的地常見問題集](faq-people-based-destinations.md)
 * [產品特色與功能常見問題集](faq-features.md)
 * [設定檔合併規則與裝置圖表常見問題集](faq-profile-merge.md)
+* [預測受眾常見問題集](faq-predictive-audiences.md)
 * [目標定位常見問題集](faq-targeting.md)
 * [報表常見問題集](faq-reporting.md)
