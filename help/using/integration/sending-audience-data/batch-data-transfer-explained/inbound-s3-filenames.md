@@ -7,9 +7,9 @@ title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: adab01a81c0002d28c2387a20d8ae284e11a5e41
+source-git-commit: e8eb1c1c7a235c0c9dd32182e522ad0b6e965c61
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '901'
 ht-degree: 7%
 
 ---
@@ -63,14 +63,13 @@ Removed  {importance="high"} for ExL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
-   <td colname="col2"> <p>資 <span class="term"> 料提供者ID</span> (DPID)是識別碼，可告訴 <span class="keyword"> Audience Manager</span> （資料檔案是否包含您自己的使用者ID、Android或iOS ID）。 接受下列選項： </p> <p> <b>資料合作夥伴ID</b> </p> <p>這是Audience Manager指派給您公司或組織的唯一ID。 傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ,ID為21的合作夥伴傳送了檔案，並包含該合作夥伴指派的使用者ID。 </p> <p> <b>Android ID(GAID)</b> </p> <p> 如果檔案包含Android ID，請在資料檔案名稱中使用ID 20914做為DPID。 當您使用ID 20914做為DPID時，仍需要向 <span class="keyword"> Audience Manager識別您的公司</span>。 這表示檔案名稱必須使用參 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 數，才能保留您的公司ID。 例如，假設您傳入的檔案具有Android ID，而您的資料提供者ID為21。 在這種情況下，檔案名將顯示為 <code>...ftp_dpm_20914_21_123456789.sync</code>。 這會告 <span class="keyword"> 訴Audience Manager</span> ，檔案包含Android ID，且來自ID 21所識別的合作夥伴。 </p> <p> <b>iOS ID(IDFA)</b> </p> <p> 如果檔案包含iOS ID，請在資料檔案名稱中使用ID 20915做為DPID。 當您使用ID 20915做為DPID時，仍需要向 <span class="keyword"> Audience Manager識別您的公司</span>。 這表示檔案名稱必須使用參 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 數，才能保留您的公司ID。 例如，假設您傳入的檔案具有Android ID，而您的資料提供者ID為21。 在這種情況下，檔案名將顯示為 <code>...ftp_dpm_20915_21_123456789.sync</code>。 這會告 <span class="keyword"> 訴Audience Manager</span> ，檔案包含iOS ID，且來自ID 21所識別的合作夥伴。 </p> 
-    <!-- 
-     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>Data Partner ID:</b> This is a unique ID Audience Manager assigns to your company or organization. Use this assigned ID in a file name when sending in data that contains your own user IDs. For example, <code>...ftp_dpm_21_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that a partner with ID 21 sent the file and it contains user IDs assigned by that partner. </li> 
-      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android IDs (GAID):</b> Use ID 20914 in a data file name if it contains Android ID. For example, <code>...ftp_dpm_20914_21_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that the data file contains Android IDs only. Note, the ID 21 </li> 
-      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS IDs (IDFA):</b> Use ID 20915 in a data file name if it contains iOS IDs. For example, <code>...ftp_dpm_20915_123456789.sync</code> tells <span class="keyword"> Audience Manager</span> that the data file contains iOS IDs only. </li> 
-     </ul> 
-    --> <p> <p>注意： 請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿在資料檔案中放入iOS ID或您自己的ID。 </p> </p><p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">全域資料來源</a>。</p> <p>另請參閱下 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 面的項目。 </p> </td> 
+   <td colname="col2"> <p>此D會告訴 <span class="keyword"> Audience Manager</span> ，資料檔案是否包含屬於全域資料來源的您自己的使用者ID、Android ID、iOS ID或其 <a href="/help/using/features/global-data-sources.md"> 他ID</a>。 接受下列選項：</p> 
+    <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料來源ID（又稱為資料提供者ID）:</b> 這是Audience Manager指派給資料來源的唯一ID(請參閱Audience Manager ID <a href="/help/using/reference/ids-in-aam.md"> 索引 </a>)。 傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 訴 <span class="keyword"></span> Audience Manager將線上資料傳至屬於資料來源21的ID。 </li> 
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果資料檔案名稱包含Android ID，請使用ID 20914。 例如，告 <code>...ftp_dpm_20914_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含Android ID。 </li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果資料檔案名稱包含iOS ID，請使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含iOS ID。 </li>
+     <li> <b>屬於其他全域資料來源的ID</b>:您可以在Roku ID上安裝廣告(RIDA)、Microsoft Advertising ID(MAID)和其他ID。 使用與每個資料來源對應的ID，如全域資料來源 <a href="/help/using/features/global-data-sources.md"> 文章所述</a>。</li> 
+    </ul> <p> <p>注意： 請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿在資料檔案中放入iOS ID或您自己的ID。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
