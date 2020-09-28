@@ -1,12 +1,12 @@
 ---
-description: 可接受性是指讓軟體產品可使用的一系列功能，讓視覺、聽覺、認知、運動或其他各種殘障人士盡可能少的努力。
-seo-description: 可接受性是指讓軟體產品可使用的一系列功能，讓視覺、聽覺、認知、運動或其他各種殘障人士盡可能少的努力。
+description: 協助功能是指讓軟體產品可供使用的一系列功能，讓視覺、聽覺、認知、運動或其他殘障人士盡可能少的努力。
+seo-description: 協助功能是指讓軟體產品可供使用的一系列功能，讓視覺、聽覺、認知、運動或其他殘障人士盡可能少的努力。
 seo-title: Audience Manager中的協助功能
 solution: Audience Manager
 title: Audience Manager中的協助功能
 feature: overview
 translation-type: tm+mt
-source-git-commit: 20ec64ba3c934d60f8758777e226344c8586efa3
+source-git-commit: 2dc015ccf358724f0caa45265fab962821569d1e
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-可接受性是指讓軟體產品可使用的一系列功能，讓視覺、聽覺、認知、運動或其他各種殘障人士盡可能少的努力。
+協助功能是指讓軟體產品可供使用的一系列功能，讓視覺、聽覺、認知、運動或其他殘障人士盡可能少的努力。
 
 Adobe是協助工具的業界領導者，鼓勵開發人員製作可供所有使用者存取的豐富精彩內容，以支援建立出色的網頁體驗。 如需Adobe對協助工具承諾的詳細資訊，請參閱 [Adobe協助工具](https://www.adobe.com/accessibility.html)。
 
