@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 8e43da4c8b890fc5f8468f3779918dbfbbf960b8
+source-git-commit: 1df6e8a76e5eae85483820926474ebc8633d5591
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 62%
+source-wordcount: '1023'
+ht-degree: 64%
 
 ---
 
@@ -46,6 +46,14 @@ ht-degree: 62%
 
  
 
+**為什麼我的已上線訪客沒有進行分類？**
+
+目前受眾分類僅適用於即時資格，但定義為 [!UICONTROL Profile Merge Rules] 其中一部分的已驗證使用者除外。
+
+未來的更新將會新增對已上線資料的完整支援。
+
+ 
+
 **何時才能看到模型產生的第一個結果？**
 
 如果模型成功運作，可在建立模型後 24 小時內取得 [!UICONTROL Predictive Audiences] 模型結果。
@@ -60,10 +68,12 @@ ht-degree: 62%
 
 1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough user profiles. We recommend choosing your [!UICONTROL traits] or [!UICONTROL segments] so that each persona has at least a few hundred user profiles.
 1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough data in their user profiles (not enough traits to analyze).
-1. 目標讀者特徵／群體沒有任何作用中或已登入的使用者。
+1. 過去 30 天內，目標受眾特徵/區段沒有任何作用中或已上線的使用者。
 1. 過去 30 天內處於作用中狀態或已上線的目標受眾使用者，其使用者設定檔中的資料不足 (沒有足夠的特徵可進行分析)。
 1. 目標對象區段使用的 [!UICONTROL Profile Merge Rule] 是與您為模型選擇的區段不同。
 1. 您為模型選擇的資料來源可能不會包含目標 [!UICONTROL Profile Merge Rule] 對象特徵的資料來源。
+
+To produce relevant results, the [!UICONTROL Predictive Audiences] algorithm evaluates trait and segment realizations based on real-time user activity seen by the [!DNL DCS]. 如果您選取的新基本特徵和區段尚未擁有足夠的使用者，那麼演算法可能需要數天時間才能將您的受眾分類。
 
 為獲得最佳結果，請遵循[角色選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目標受眾選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建議准則。
 
