@@ -7,10 +7,10 @@ title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: e8eb1c1c7a235c0c9dd32182e522ad0b6e965c61
+source-git-commit: f037a12af641da44ed67e62a249c41487da7ac07
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 7%
+source-wordcount: '1029'
+ht-degree: 6%
 
 ---
 
@@ -66,18 +66,19 @@ Removed  {importance="high"} for ExL
    <td colname="col2"> <p>此D會告訴 <span class="keyword"> Audience Manager</span> ，資料檔案是否包含屬於全域資料來源的您自己的使用者ID、Android ID、iOS ID或其 <a href="/help/using/features/global-data-sources.md"> 他ID</a>。 接受下列選項：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
      <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料來源ID（又稱為資料提供者ID）:</b> 這是Audience Manager指派給資料來源的唯一ID(請參閱Audience Manager ID <a href="/help/using/reference/ids-in-aam.md"> 索引 </a>)。 傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，告 <code>...ftp_dpm_21_123456789.sync</code> 訴 <span class="keyword"></span> Audience Manager將線上資料傳至屬於資料來源21的ID。 </li> 
-     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果資料檔案名稱包含Android ID，請使用ID 20914。 例如，告 <code>...ftp_dpm_20914_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含Android ID。 </li> 
-     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果資料檔案名稱包含iOS ID，請使用ID 20915。 例如，告 <code>...ftp_dpm_20915_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含iOS ID。 </li>
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果資料檔案名稱包含Android ID，請使用ID 20914。 使用Android ID時， <code><i>_DPID_TARGET_DATA_OWNER</i></code> 您必須使用欄位。 例如，告 <code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含Android ID，且ID應符合屬於資料來源的 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 特徵。</li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果資料檔案名稱包含iOS ID，請使用ID 20915。 使用iOS ID時，您 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 必須使用欄位。 例如，告 <code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code> 訴 <span class="keyword"> Audience Manager</span> ，資料檔案僅包含iOS ID，且ID應符合屬於資料來源的 <code><i>_DPID_TARGET_DATA_OWNER</i></code> 特徵。</li>
      <li> <b>屬於其他全域資料來源的ID</b>:您可以在Roku ID上安裝廣告(RIDA)、Microsoft Advertising ID(MAID)和其他ID。 使用與每個資料來源對應的ID，如全域資料來源 <a href="/help/using/features/global-data-sources.md"> 文章所述</a>。</li> 
     </ul> <p> <p>注意： 請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿在資料檔案中放入iOS ID或您自己的ID。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>ID的預留位置。 例如，如果您將DPID設定為資料來源ID或Android或iOS ID，則可將其設定為 <span class="keyword"> Audience Manager</span> ID。 這可讓 <span class="keyword"> Audience Manager</span> 將檔案資料連結回您的組織。 </p> <p>例如： </p> 
-    <ul id="ul_55EBBCB11F2B4A858AEFBFA1CD99E286"> 
-     <li id="li_3404428F4E3D49A5AB6EDF56310D923F"> <code>...ftp_dpm_33_21_1234567890.sync</code> 顯示ID 21的合作夥伴已從使用ID 33的資料來源傳送資料。 </li> 
-     <li id="li_CF8D5AF678764E9984A088FD5D7BBFB6"> <code>...ftp_dpm_20914_21_1234567890.sync</code> 顯示ID 21的合作夥伴已傳送包含Android ID的資料。 </li> 
-     <li id="li_3D73168391D7443BADDF27153090274D"> <code>...ftp_dpm_20915_21_1234567890.sync</code> 顯示ID 21的合作夥伴已傳送包含iOS ID的資料。 </li> 
+   <td colname="col2"> <p>此欄位會告訴Audience Manager要將資料載入的資料來源。 如果您將DPID設為屬於全域資料來源的Android ID、iOS ID或其他ID，此欄位是必填欄位。 這可讓 <span class="keyword"> Audience Manager</span> 將檔案資料連結回您的組織。 </p> <p>例如： </p> 
+    <ul> 
+     <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告訴Audience Manager，您要針對屬於資料來源33的特徵或訊號，確認屬於資料來源21的客戶ID。 </li> 
+     <li> <b>Android ID(GAID):</b><code>...ftp_dpm_20914_21_1234567890.sync</code> 告 <span class="keyword"> 訴Audience Manager</span> ，資料檔案僅包含Android ID，且ID應符合屬於資料來源21的特徵資格。</li> 
+     <li> <b>iOS ID(IDFA):</b><code>...ftp_dpm_20915_21_1234567890.sync</code> 告 <span class="keyword"> 訴Audience Manager</span> ，資料檔案僅包含iOS ID，且ID應符合屬於資料來源21的特徵資格。</li>
+     <li> <b>屬於其他全域資料來源的ID</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> 告 <span class="keyword"> 訴Audience Manager</span> ，資料檔案僅包含Roku ID，且ID應符合屬於資料來源21的特徵資格。 使用與每個資料來源對應的ID，如全域資料來源 <a href="/help/using/features/global-data-sources.md"> 文章所述</a>。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
