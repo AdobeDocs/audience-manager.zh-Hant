@@ -7,7 +7,7 @@ title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: b3ff5ca68022cc30632d6b647ffde507533b5ddf
+source-git-commit: 74f23fbe753b8efc70b89ccace4a4d2c30067ccc
 workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 3%
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段共用至Adobe Experience Platform，反之亦然。 您需要 [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，才能在Audience Manager和Adobe Experience Platform之間啟用觀眾共用。
+Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段分享到Adobe Experience Platform，反之亦然。 您需要 [[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html) ，才能在Audience Manager和Adobe Experience Platform之間啟用觀眾共用。
 
 您可以使用Experience Platform中的Audience Manager特徵和細分，將Audience Manager資料新增至客戶個人檔案，並從Experience Platform細分服務 [中獲益](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
 
@@ -58,9 +58,9 @@ Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您
 
 您在Experience Platform中建立的區段會以訊號、特徵和區段的形式出現在您的Audience Manager介面中，具有下列構成規則：
 
-* 信號： 對於每個Experience Platform區段，您應該會以表格看到訊號 `segID = segment ID`。
-* 特徵： 特徵規則是「體驗平台」區段的ID。
-* 區段： 區段由上述特徵組成。
+* 信號：對於每個Experience Platform區段，您應該會以表格看到訊號 `segID = segment ID`。
+* 特徵：特徵規則是「體驗平台」區段的ID。
+* 區段：區段由上述特徵組成。
 
 ### 信號 {#aep-segments-as-aam-signals}
 
@@ -117,7 +117,8 @@ Audience Manager會在您的區段儲存空間中自動建立 **名為「Experie
 >[!NOTE]
 >
 >有關「資料匯出控制」的詳細資訊，請參閱「資料匯 [出控制」檔案](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-export-controls.html)。
-本檔案提供特定Audience Manager資料匯出控制項如何對應至平台中資料使用標籤和行銷動作的參考。
+>
+>本檔案提供特定Audience Manager資料匯出控制項如何對應至平台中資料使用標籤和行銷動作的參考。
 
 ### 資料匯出控制項至資料使用標籤
 
@@ -125,10 +126,10 @@ Audience Manager會在您的區段儲存空間中自動建立 **名為「Experie
 
 | 資料匯出控制 | 資料使用標籤 |
 | --- | --- |
-| 無法與個人識別資訊搭配使用 | C3: 資料無法結合或與直接可識別身分的資訊搭配使用 |
-| 無法用於Offsite廣告定位 | C5: 資料無法用於內容或廣告的喜好式跨網站定位 |
-| 無法用於Onsite廣告定位 | C6: 資料無法用於站上廣告定位 |
-| 無法用於現場個人化 | C7: 資料無法用於內容的現場定位 |
+| 無法與個人識別資訊搭配使用 | C3:資料無法結合或與直接識別資訊搭配使用 |
+| 無法用於Offsite廣告定位 | C5:資料無法用於內容或廣告的喜好式跨網站定位 |
+| 無法用於Onsite廣告定位 | C6:資料無法用於站上廣告定位 |
+| 無法用於現場個人化 | C7:資料無法用於內容的現場定位 |
 
 ### 將資料匯出控制項匯出至行銷動作
 
@@ -155,7 +156,7 @@ Audience Manager每天會更新介面中的報表數目一次。   此更新的�
 
 ### Experience Platform中的細分構成
 
-Adobe Experience Platform與Audience Manager的整合為所有客戶共用了許多標準 [身分名稱空間](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) : ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID等。 如果您的Experience Platform區段使用其中任一項作為合格描述檔的主要識別，則這些描述檔會計入Audience Manager特徵和區段。
+Adobe Experience Platform與Audience Manager的整合為所有客戶共用了許多標準 [身分名稱空間](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) :ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID等。 如果您的Experience Platform區段使用其中任一項作為合格描述檔的主要識別，則這些描述檔會計入Audience Manager特徵和區段。
 
 此外，如果您已在Audience Manager中為該識別碼輸入了對應的資料來源，Audience Manager可以針對您在Experience Platform區段中使用的任何自訂身分名稱空間註冊傳入的實現。
 
