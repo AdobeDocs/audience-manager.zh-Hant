@@ -7,9 +7,9 @@ title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 283acc1ef9152af3399c6010105728d397422a7f
+source-git-commit: 6a9a48aa6d3a7a5d871ea9aabbca2c2ec1229c0e
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1492'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您
 >[!IMPORTANT]
 >
 > * 您需要Audience Manager授權才能啟用上述資料管理平台使用案例。
-> * 您不 *需要* Audience Manager授權，即可透過核心服務整合，與Adobe Ad Cloud、Adobe Target、Adobe Analytics和其他Experience Cloud解決方案共用Experience Platform細分。
+> * 您不 *需要* Audience Manager授權，即可透過核心服務整合，與Adobe Ad Cloud、Adobe Target、Marketo和其他Experience Cloud解決方案共用Experience Platform細分。
 
 
 <br> 
@@ -46,7 +46,7 @@ Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您
 
 | **使用個案** | **Adobe Experience Platform** | **Audience Manager** | **核心服務** |
 ---------|----------|---------|---------
-| **觀眾分享** | <ul><li>運用Audience Manager資料豐富客戶個人檔案</li><li>在Experience Platform區隔中使用Audience Manager資料</li></ul> | <ul><li>新增第三方資料至區段</li><li>演算法模型</li><li>啟動至其他目的地</li></ul> | 在其他Experience Cloud解決方案（例如Adobe Target或Analytics）中使用Experience Platform細分。 |
+| **觀眾分享** | <ul><li>運用Audience Manager資料豐富客戶個人檔案</li><li>在Experience Platform區隔中使用Audience Manager資料</li></ul> | <ul><li>新增第三方資料至區段</li><li>演算法模型</li><li>啟動至其他目的地</li></ul> | 在其他Experience Cloud解決方案（例如Adobe Target、Ad Cloud或Marketo）中使用Experience Platform細分。 |
 
 <br> 
 
@@ -164,7 +164,9 @@ Audience Manager每天會更新介面中的報表數目一次。   此更新的�
 
 Adobe Experience Platform與Audience Manager的整合為所有客戶共用了許多標準 [身分名稱空間](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types) :ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID等。 如果您的Experience Platform區段使用其中任一項作為合格描述檔的主要識別，則這些描述檔會計入Audience Manager特徵和區段。
 
-此外，如果您已在Audience Manager中為該識別碼輸入了對應的資料來源，Audience Manager可以針對您在Experience Platform區段中使用的任何自訂身分名稱空間註冊傳入的實現。
+此外，如果符合下列條件，Audience Manager可針對您在Experience Platform區段中使用的任何自訂身分名稱空間註冊傳入的實現：
+* 身份標籤為主 *要*
+* 您在Audience Manager中已有對應的跨裝置資料來源。
 
 >[!NOTE]
 >
