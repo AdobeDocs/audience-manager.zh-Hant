@@ -2,23 +2,23 @@
 product: audience-manager
 solution: Audience Manager
 audience: end-user
-user-guide-title: Audience Manager指南
-breadcrumb-title: Audience Manager Guide
+user-guide-title: Audience Manager 指南
+breadcrumb-title: Audience Manager 指南
 breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
-user-guide-description: Audience Manager provides industry-leading services for online audience data management.
+user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: e90e60a7a88fb4dfc9df3dae610d650625293dec
+source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1773'
 ht-degree: 93%
 
 ---
 
 
-# Audience Manager Guide {#user-guide}
+# Audience Manager 指南 {#user-guide}
 
-+ [Audience Manager指南](aam-home.md)
++ [Audience Manager 指南](aam-home.md)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的資料類型](overview/data-types-collected.md)
@@ -340,7 +340,7 @@ ht-degree: 93%
          + [傳入處理後傳送給合作夥伴的範例訊息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 與 Adobe Experience Platform 的整合 {#integration-experience-platform}
-      + [Audience Manager 與 Adobe Experience Platform 之間的受眾共用](integration/integration-aep/aam-aep-audience-sharing.md)
+      + [與Audience Manager和其他Experience Cloud解決方案共用Experience Platform區段](integration/integration-aep/aam-aep-audience-sharing.md)
    + 與其他 Experience Cloud 解決方案的整合 {#integration-other-solutions}
       + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從 Adobe Analytics 轉送至 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
