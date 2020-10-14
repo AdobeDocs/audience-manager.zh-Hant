@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: 71e129a39cf85d5f07979ede8f3aa862f93b6512
+source-git-commit: 48bf17a2899fd06c525ba6b4fddb9ec805efb5c3
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 8%
+source-wordcount: '571'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 ## 建立預測性觀眾模型 {#create-predictive-audiences}
 
-在建立模 [!UICONTROL Predictive Audiences] 型之前，您必須決定要指派特徵和區段給哪個第 [!UICONTROL Predictive Audiences] 一方資料來源。 您可以使用現有的第一方資料來源，或建立新的資料來源。 如需 [如何建立新第一方資料來源的詳細資訊](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html) ，請參閱管理資料來源。
+在建立模 [!UICONTROL Predictive Audiences] 型之前，您必須決定要指派特徵和區段給哪 [!UICONTROL Predictive Audiences] 個第一方資料來源。 您可以使用現有的第一方資料來源，或建立新的資料來源。 如需 [如何建立新第一方資料來源的詳細資訊](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html) ，請參閱管理資料來源。
 
 一旦您知道要使用哪個資料來源，請遵循下列步驟。
 
@@ -39,16 +39,26 @@ ht-degree: 8%
    ![smart-persona-select-audience](assets/predictive-audiences-audience.png)
 1. 在選 **[!UICONTROL Next]** 擇您的觀眾後按一下。
 1. 填寫模型詳細資料：
-   * **[!UICONTROL Model Name]**: 為模型輸入描述性名稱，這將幫助您稍後識別它。 由模型生成的段的名稱將以模型的名稱開頭。
-   * **[!UICONTROL Description]**: 輸入有助於識別其使用案例的模型說明。
-   * **[!UICONTROL Data Source]**: 選擇您要將此模型中的區段指 [!UICONTROL Predictive Audiences] 派給的第一方資料來源。
-   * **[!UICONTROL Profile Merge Rule]**: 為此模 [!UICONTROL Profile Merge Rule] 型建立的所有預測性 [!UICONTROL segments] 選擇要指派的。 如果您選取的目標對象是 [!UICONTROL segment]一個，我們建議選取與目標 [!UICONTROL Profile Merge Rule] 對象相同的對象。
+   * **[!UICONTROL Model Name]**:為模型輸入描述性名稱，這將幫助您稍後識別它。 由模型生成的段的名稱將以模型的名稱開頭。
+   * **[!UICONTROL Description]**:輸入有助於識別其使用案例的模型說明。
+   * **[!UICONTROL Data Source]**:選擇您要將此模型中的區段指 [!UICONTROL Predictive Audiences] 派給的第一方資料來源。
+   * **[!UICONTROL Profile Merge Rule]**:為此模 [!UICONTROL Profile Merge Rule] 型建立的所有預測性 [!UICONTROL segments] 選擇要指派的。 如果您選取的目標對象是 [!UICONTROL segment]一個，我們建議選取與目標 [!UICONTROL Profile Merge Rule] 對象相同的對象。
       ![predictive-audiences-save](assets/predictive-audiences-save.png)
 1. 按一下 **[!UICONTROL Save]**.
 
-## 編輯預測性對象 {#edit-predictive-audiences}
+## 克隆和編輯預測性受眾模型 {#clone-predictive-audiences}
 
-Audience Manager不支援編輯現有的 [!UICONTROL Predictive Audiences] 模型。 要更改模型的配置，必須建立新模型。 如果已達到10個模型的限 [!UICONTROL Predictive Audiences] 制並需要編輯其中一個模型，則必須刪除模型並建立新模型。
+Audience Manager不支援編輯現有的 [!UICONTROL Predictive Audiences] 模型。 要更改模型的配置，可建立現有模型的克隆並對其進行編輯。 以下是您如何做到的：
+
+1. 前往 **[!UICONTROL Audience Data]** > **[!UICONTROL Models]**。
+2. 按一下要克隆 [!UICONTROL Predictive Audiences] 的模型的名稱。
+3. 按一下 **[!UICONTROL Clone]** 畫面左上方的按鈕。
+   ![predictive-audiences-clone](assets/predictive-audiences-clone.png)
+4. 克隆模型後，將進入克隆的 [!DNL Save & Configure] 模型頁面。 在此頁中，可以更改模 [!UICONTROL data source] 型的指定和[!UICONTROL Profile Merge Rule] 。 要編輯克隆模型的角色和目標對象，請使用和 [!UICONTROL Back] 按 [!UICONTROL Next] 鈕在三個頁籤之間導航，或按一下三個頁籤名稱
+
+   ![predictive-audiences-clone-navigate](assets/predictive-audiences-clone-navigate.png)
+
+5. 完成模型編輯後，按一下 **[!UICONTROL Save]**。
 
 ## 刪除預測性對象 {#delete-predictive-audiences}
 
