@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager 指南
 breadcrumb-title: Audience Manager 指南
 breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
-user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
+user-guide-description: Audience Manager 為線上對象資料管理提供領先業界的服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
 source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
