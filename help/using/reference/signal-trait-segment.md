@@ -1,5 +1,5 @@
 ---
-description: 瞭解Audience Manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
+description: 了解 Audience Manager 區段的元件，用來設定對象資格標準的運算式，以及在事件呼叫中如何傳輸資料。
 seo-description: 說明Audience Manager區段的元件、用來設定觀眾資格標準的運算式，以及在事件呼叫中如何傳送資料。
 seo-title: 訊號、特徵和區段
 solution: Audience Manager
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
 
 # [!UICONTROL Signals]、 [!UICONTROL Traits]和 [!UICONTROL Segments] {#signals-traits-and-segments}
 
-說明的元件、用 [!DNL Audience Manager] 於設定觀眾資格 [!UICONTROL segment]准則的運算式，以及在事件呼叫中如何傳送資料。
+Describes the components of an [!DNL Audience Manager] [!UICONTROL segment], the expressions used to set audience qualification criteria, and how data is transmitted in an event call.
 
 ## 構圖與用途
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 ![](assets/signals-traits-segments.png)
 
-**使用視覺[!UICONTROL Traits]化工[!UICONTROL Segment]具和程式碼編輯器建立和規則**
+**使用視覺 [!UICONTROL Traits] 化工 [!UICONTROL Segment] 具和程式碼編輯器建立和規則**
 
 用戶端可 [!UICONTROL traits] 在使 [!UICONTROL segments] 用者介面中使用視覺化工具和程式碼編輯 [!DNL Audience Manager] 器來管理和。 視覺化工具可讓您使用搜尋功能、快顯選項、下拉式選單以及拖放功能來建立規則。 程式碼編輯器提供進階使用者程式設計方式，以開發受眾細分標準。
 
