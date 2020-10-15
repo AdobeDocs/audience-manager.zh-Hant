@@ -1,6 +1,6 @@
 ---
-description: 事件呼叫會以URL字串傳送資訊至DCS。 在典型的Audience Manager部署中，客戶會使用我們的JavaScript資料收集代碼(DIL)將資料傳送至DCS。 不過，有時客戶無法將JavaScript程式碼放在其頁面上。 如果公司政策或其他技術問題無法將我們的JavaScript程式碼放在您的頁面上，您仍可以與Audience Manager搭配使用這些事件呼叫API，從DCS傳送和傳回資料。
-seo-description: 事件呼叫會以URL字串傳送資訊至DCS。 在典型的Audience Manager部署中，客戶會使用我們的JavaScript資料收集代碼(DIL)將資料傳送至DCS。 不過，有時客戶無法將JavaScript程式碼放在其頁面上。 如果公司政策或其他技術問題無法將我們的JavaScript程式碼放在您的頁面上，您仍可以與Audience Manager搭配使用這些事件呼叫API，從DCS傳送和傳回資料。
+description: 事件呼叫會在 URL 字串中傳送資訊至 DCS。在典型的 Audience Manager 部署中，客戶會使用我們的JavaScript 資料收集代碼 (DIL) 將資料傳送至 DCS。不過，有時客戶無法將 JavaScript 程式碼放在其頁面上。如果因為公司原則或其他技術問題，使得您無法將我們的 JavaScript 程式碼放在您的頁面上，您仍可以使用 Audience Manager，以利用這些事件呼叫 API 傳送和從 DCS 傳回資料。
+seo-description: 事件呼叫會在 URL 字串中傳送資訊至 DCS。在典型的 Audience Manager 部署中，客戶會使用我們的JavaScript 資料收集代碼 (DIL) 將資料傳送至 DCS。不過，有時客戶無法將 JavaScript 程式碼放在其頁面上。如果因為公司原則或其他技術問題，使得您無法將我們的 JavaScript 程式碼放在您的頁面上，您仍可以使用 Audience Manager，以利用這些事件呼叫 API 傳送和從 DCS 傳回資料。
 seo-title: DCS 事件呼叫 API
 solution: Audience Manager
 title: DCS 事件呼叫 API
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 8%
+ht-degree: 59%
 
 ---
 
 
 # DCS 事件呼叫 API {#dcs-event-call-apis}
 
-事件呼叫會傳送資訊 [!DNL DCS] 至字串 [!DNL URL] 中。 在典型的Audience Manager部署中，客戶會使用我 [!DNL JavaScript] 們的資料收集代碼([!UICONTROL DIL])將資料傳送至 [!DNL DCS]。 但是，有時客戶無法將我們 [!DNL JavaScript] 的程式碼放在其頁面上。 如果公司政策或其他技術問題無法讓您將我們的程式碼放在您的頁面上，您仍可以與Audience Manager一起使用這些事件呼叫來傳 [!DNL JavaScript] 送和傳回 [!DNL DCS][!DNL API]資料。
+Event calls send information to the [!DNL DCS] in a [!DNL URL] string. In a typical Audience Manager deployment, customers use our [!DNL JavaScript] data collection code ([!UICONTROL DIL]) to send data to the [!DNL DCS]. However, sometimes customers cannot put our [!DNL JavaScript] code on their pages. If company policies or other technical issues prevent you from placing our [!DNL JavaScript] code on your pages, you can still work with Audience Manager to send and return data from [!DNL DCS] with these event call [!DNL API]s.
 
 ## 快速入門 {#dcs-getting-started}
 
