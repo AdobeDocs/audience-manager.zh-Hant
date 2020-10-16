@@ -7,7 +7,7 @@ title: REST API 快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 translation-type: tm+mt
-source-git-commit: f7b9c30f120b24f9294afa4aa6727ce8c4236acf
+source-git-commit: ab8745a8ba24154793201893a39a039b5a098833
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 4%
@@ -59,7 +59,7 @@ Information about general requirements, authentication, optional query parameter
 
 在設定驗 [!DNL JWT] 證之前，請務必存取 [Adobe I/O中的](https://console.adobe.io/) Adobe Developer Console [](https://www.adobe.io/)。 請洽詢您的組織管理員以取得存取要求。
 
-### 驗證
+### 驗證 {#auth}
 
 請依照下列步驟，使用下列 [!DNL JWT (Service Account)] 程式設定驗證 [!DNL Adobe I/O]:
 
@@ -265,7 +265,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 ## 版本 {#versions}
 
-這些新版 [!DNL API]本會定期發行。 新版本會增加版 [!DNL API] 本號。 請求中引用的版本號 [!DNL URL] ，如 `v<version number>` 下例所示：
+這些新版本 [!DNL API]會定期發行。 新版本會增加版 [!DNL API] 本號。 請求中引用的版本號 [!DNL URL] ，如 `v<version number>` 下例所示：
 
 `https://<host>/v1/...`
 
@@ -287,7 +287,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 >[!MORELIKETHIS]
 >
 >* [JWT（服務帳戶）驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
->* [OAuth驗證](../../api/rest-api-main/aam-api-getting-started.md#oauth)
+>* [OAuth Authentication](../../api/rest-api-main/aam-api-getting-started.md#oauth)
 >* [OAuth 2.0](https://oauth.net/2/)
 >* [OAuth 2簡化版](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
 
