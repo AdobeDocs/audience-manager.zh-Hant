@@ -287,7 +287,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 >[!MORELIKETHIS]
 >
 >* [JWT（服務帳戶）驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
->* [OAuth Authentication](../../api/rest-api-main/aam-api-getting-started.md#oauth)
+>* [OAuth驗證](../../api/rest-api-main/aam-api-getting-started.md#oauth)
 >* [OAuth 2.0](https://oauth.net/2/)
 >* [OAuth 2簡化版](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
 
