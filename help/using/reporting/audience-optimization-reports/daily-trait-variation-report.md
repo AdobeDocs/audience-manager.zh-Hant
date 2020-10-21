@@ -7,9 +7,9 @@ title: 每日特徵變化報表
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
 feature: audience optimization reports
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 標準差會測量與平均值（或平均／預期值）的偏差或偏差量。 標準差低表示資料點趨近於平均值。 高標準差表示資料點分佈在大範圍值上。
 
-![螢幕擷取每日特徵變數報告](assets/daily_trait_variation.png)
+![](assets/daily_trait_variation.png)
 
 使用清 [!UICONTROL Date] 單為報表選擇一或多個日期。 在清單底部會顯示色彩編碼長條圖，以視覺化方式呈現所有選定日期之所有特徵的標準差範圍。 黑色垂直線表示平均值。
 
@@ -56,8 +56,8 @@ ht-degree: 1%
 
 一個月後，您會執行報 [!UICONTROL Daily Trait Variation] 表並注意到該特徵有很大的負偏差 `productPage == "smartphones"` ，不過根據您的網站分析，您的訪客數量已增加。 根據這些資訊，您瞭解您尚未更新新產品頁面 [!DNL Audience Manager] 中的特徵，因此您知道您必須建立下列特徵：
 
-* `productPage == "samsung"`
-* `productPage == "apple"`
-* `productPage == "huawei"`
+* productPage == &quot;samsung&quot;
+* productPage == &quot;apple&quot;
+* productPage == &quot;huawei&quot;
 
 完成此作業後，您會看到您的受眾符合新建立特徵的資格。
