@@ -1,5 +1,5 @@
 ---
-description: 有關資料管理平台主要功能的資訊，即資料收集、對象建立和啟動。
+description: Adobe Audience Manager 的發展歷史、收集的資料類型、細分、報表等項目的相關資訊。
 seo-description: Adobe Audience Manager 的發展歷史、收集的資料類型、細分、報表等項目的相關資訊。
 seo-title: Audience Manager 概述
 solution: Audience Manager
@@ -7,9 +7,9 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: overview
 translation-type: tm+mt
-source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 100%
 
 ---
