@@ -8,7 +8,7 @@ keywords: Segment-level Reporting, segment-level, segment level
 uuid: d7236667-282b-4160-9909-579721af4016
 feature: Audience Marketplace
 translation-type: tm+mt
-source-git-commit: dac08e9a31cb80b048013d95b7a617e4fb68e2fe
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 1%
@@ -170,8 +170,7 @@ Audience Marketplace資料購買者同意使用資料饋送中包含的特性來
 在「資 [料饋送層級」報告CPM使用情形時](#feed-level-report)，您必鬚根據特徵限定規則中使用的運算子，按比例分配每個資料 [!DNL Boolean] 饋送的印象。 下表列出如何依布林規則或特徵類型正確分配印象。
 
 >[!TIP]
->
-> [在區段層級報告CPM使用](#segment-level-report) ，讓Audience Manager自動完成資料饋送層級報告。
+>[在區段層級報告CPM使用](#segment-level-report) ，讓Audience Manager自動完成資料饋送層級報告。
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
