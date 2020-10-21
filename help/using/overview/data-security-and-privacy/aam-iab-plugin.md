@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 適用於 IAB TCF 的 Audience Manager 外掛程式
 feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: ff592184ba1785e3448aa449745d0e66ecba955b
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 39%
+ht-degree: 40%
 
 ---
 
@@ -118,7 +118,7 @@ Audience Manager的運作方式不同，視IAB TC字串是否包含使用者同�
 
 我們也會檢查您在Audience Manager中使用的所有目的地的使用者同意，只要這些目的地已向IAB TCF註冊。
 
-| When your user *provides* consent, Audience Manager: | 若您的使用者&#x200B;*拒絕*&#x200B;同意，則 Audience Manager： |
+| 若您的使用者&#x200B;*提供同意*，則 Audience Manager： | 若您的使用者&#x200B;*拒絕*&#x200B;同意，則 Audience Manager： |
 |---|---|
 | <ul><li>會執行您請求的所有 Audience Manager 使用案例。</li><li>Conveys consent to third parties in ID syncs (by passing `gdpr = 1` and the consent string as `gdpr_consent` on ID sync calls).</li><li>會評估並遵照從廣告伺服器像素傳遞的同意。</li><li>會執行合作夥伴起始的 ID 同步。</li></ul> | <ul><li>不會在您的例項中儲存任何新使用者資料。這包括合作夥伴 ID、訊號、特徵或像素資料。</li><li>不會起始第三方 ID 同步。</li><li>不會執行合作夥伴起始的 ID 同步。</li><li>將使用者排除在進一步的資料收集之外。</li></ul> |
 
