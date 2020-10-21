@@ -2,23 +2,21 @@
 product: audience-manager
 solution: Audience Manager
 audience: end-user
-user-guide-title: Audience Manager 指南
-breadcrumb-title: Audience Manager 指南
-breadcrumb-url: /docs/audience-manager/user-guide/aam-home.html
-user-guide-description: Audience Manager 為線上對象資料管理提供領先業界的服務。
+user-guide-title: Audience Manager 使用手冊
+user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 59eda3fa250fa33ef283f09b0027845431e9517b
+source-git-commit: 7b58619a5208f7a48002d65d7bcbf0af602ba908
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1769'
 ht-degree: 93%
 
 ---
 
 
-# Audience Manager 指南 {#user-guide}
+# Audience Manager 使用手冊 {#user-guide}
 
-+ [Audience Manager 指南](aam-home.md)
++ [Audience Manager 產品文件](aam-home.md)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的資料類型](overview/data-types-collected.md)
@@ -36,7 +34,6 @@ ht-degree: 93%
          + [同意管理](overview/data-security-and-privacy/data-privacy-consent.md)
          + [適用於 IAB TCF 的 Audience Manager 外掛程式](overview/data-security-and-privacy/aam-iab-plugin.md)
    + [資料控管](overview/data-security-and-privacy/data-governance.md)
-   + [Audience Manager中的協助功能](overview/accessibility-in-aam.md)
 + 功能{#features}
    + [可定址受眾](features/addressable-audiences.md)
    + 管理{#administration}
@@ -78,8 +75,8 @@ ht-degree: 93%
       + [Data Explorer - 概述、優點和使用案例](features/data-explorer/data-explorer-overview.md)
       + [瞭解訊號](features/data-explorer/data-explorer-understanding-signals.md)
       + [訊號控制面板](features/data-explorer/data-explorer-signals-dashboard.md)
-      + 信號搜尋{#signal-search}
-         + [信號搜索概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
+      + 訊號搜尋{#signals-search}
+         + [訊號搜尋概述](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
          + [按索引鍵值配對搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
          + [按篩選條件搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
          + [Adobe Analytics 的進階搜尋](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
