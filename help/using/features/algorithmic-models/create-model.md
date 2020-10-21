@@ -8,9 +8,9 @@ title: 建立演算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: bff108115e7ebd4375d81c1c32ec9bb7d1a207c1
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
 
->[!VIDEO](https://video.tv.adobe.com/v/33445/)
+>[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## 演算模型的基本資訊 {#basic-information}
 
