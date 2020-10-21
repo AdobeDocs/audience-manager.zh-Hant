@@ -8,7 +8,7 @@ title: Audience Manager 內的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: reference
 translation-type: tm+mt
-source-git-commit: a41f0beffba686f283a2933ad7066cb124e4d380
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 5%
@@ -31,7 +31,7 @@ ht-degree: 5%
 ## [!DNL Audience Manager] ID 清單 {#id-list}
 
 | ID | 名稱和說明 | 使用與範例 | 使用者介面位置 |
-|---|-----------|---|------------|
+|---|---|---|---|
 | [!DNL AAM UUID] | [!DNL Adobe Audience Manager Unique User ID]，也稱為 [!UICONTROL Device ID]。 一個38位數的數值裝置ID，與它與之互 [!DNL Audience Manager] 動的每個裝置相關聯。 每當您在UI中看到提及獨特使用者時，請考慮這個 [!DNL Audience Manager] ID。 Audience Manager會將此ID儲存 [!DNL cookie] 為第 `demdex.net` 三方網域。 | 在呼 [!DNL DCS] 叫中， `uuid` 前面有前置詞 `d_` 。 <br>範例: `d_uuid = 07955261652886032950143702505894272138` | 您可以在建 [!DNL traits] 立類似 [!UICONTROL Device ID] 模型 [和建立區段時進](../features/algorithmic-models/create-model.md)行篩選 [](../features/segments/segment-builder.md)。 您也可以在執行特徵的一般報 [!UICONTROL Device ID] 表和特 [徵的趨勢報表時，](../reporting/general-reports.md) 依據篩選結果 [](../reporting/trend-reports.md)。 |
 | [!DNL ImsOrgId] | [!DNL Organization ID]。這是公司在註冊帳戶時所提供的ID [!DNL Experience Cloud] 。 | `5DC5123F5245B1D20A490D46@AdobeOrg` | 使用者介面中 [!DNL Audience Manager] 不顯示。 若要瞭解如何找到您公司的資訊，請閱 [!DNL Organization ID]讀「尋 [找您的組織ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)」。 |
 | [!DNL PID] | [!DNL Partner ID]。是 [!DNL PID] 公司的ID [!DNL Audience Manager]。 Audience Manager會將 [!DNL imsOrgId] 與關聯 [!DNL PID]。 | `1352` | 使用者介面中 [!DNL Audience Manager] 不顯示。 |
@@ -43,7 +43,7 @@ ht-degree: 5%
 | [!DNL DPID] | [!UICONTROL Data Source ID] (亦稱為 [!UICONTROL Data Provider ID])。 是 [!UICONTROL Data Source ID] ID或的命名空間 [!DNL traits]。 ID會指派給使用者介 [!DNL data source] 面中的每個（資料提供者）。 | 在呼 [!DNL DCS] 叫中， `dpid` 前面有前置詞 `d_` 。 <br>範例: `d_dpid=39217`. | 系統會 [!UICONTROL Data Provider ID] 將一個指派給每個 [!DNL data source]人，並在「資料來源」頁面的使 [用者介面中顯示](../features/datasources-list-and-settings.md) 。 |
 | [!DNL DPUUID] | [!UICONTROL Data Provider Unique User ID]，也稱為 [!DNL CRM ID] 或 [!UICONTROL Cross-Device ID]。 第三方ID。 這是您用來識別自己系統中使用者的 [!DNL CRM] ID。 您可以與同 [!DNL DPUUIDs] 步 [!DNL Audience Manager] ，也可以 [!DNL UUIDs] 在ID同步程式中 [!DNL DPUUIDs] 從不同( [!UICONTROL Data Sources][!DNL DPIDs])同步。 | 在呼 [!DNL DCS] 叫中， `dpuuid` 前面有前置詞 `d_` 。 <br> 範例 `d_dpuuid=2132-3423vn-343fds-3432r`. | 您可以在建 [!DNL traits] 立類似 [!UICONTROL Cross-Device ID] 模型 [和建立區段時進](../features/algorithmic-models/create-model.md)行篩選 [](../features/segments/segment-builder.md)。 您也可以在執行特徵的一般報 [!UICONTROL Cross-Device ID] 表和特 [徵的趨勢報表時，](../reporting/general-reports.md) 依據篩選結果 [](../reporting/trend-reports.md)。 |
 | [!DNL CRM ID] | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 |
-| [!DNL CID], [!DNL CID_IC] | [!UICONTROL Customer ID], [!UICONTROL Customer ID Integration Code]. 和 [!DNL CID] 鍵 [!DNL CID_IC] 值對將替換 [!DNL DPID] 和 [!DNL DPUUID]。 它們提供與和相同的功 [!DNL DPID] 能 [!DNL DPUUID]，但效率更高，因為它們在單一索引鍵值對中包含資料提供者ID和使用者ID（或整合程式碼）。 | 在呼 [!DNL DCS] 叫中，這些ID前面有首 `d_` 碼。 <br>範例: `d_cid_ic=39217_myIntegrationCode`. | 請參閱 `DPID` 和 `DPUUID`。 |
+| [!DNL CID], [!DNL CID_IC] | [!UICONTROL Customer ID], [!UICONTROL Customer ID Integration Code]. 和 [!DNL CID] 鍵 [!DNL CID_IC] 值對將替換 [!DNL DPID] 和 [!DNL DPUUID]。 它們提供與和相同的功 [!DNL DPID] 能 [!DNL DPUUID]，但效率更高，因為它們在單一金鑰值對中包含資料提供者ID和使用者ID（或整合程式碼）。 | 在呼 [!DNL DCS] 叫中，這些ID前面有首 `d_` 碼。 <br>範例: `d_cid_ic=39217_myIntegrationCode`. | 請參閱 `DPID` 和 `DPUUID`。 |
 | [!DNL DAID] | [!UICONTROL Device Advertising ID]。要用於廣告目的的每個硬體裝置特有的識別碼。通常由裝置或裝置作業系統的製造商提供。 | 請參 [閱全域裝置ID](#global-device-ids)。 |  |
 
 ## [!DNL Global Device IDs] {#global-device-ids}
