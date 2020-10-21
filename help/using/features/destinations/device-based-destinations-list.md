@@ -7,9 +7,9 @@ solution: Audience Manager
 title: Adobe Audience Manager伺服器對伺服器目標
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: f37464671b9000b0d6c1ae492fc4f35dd327d59d
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1116'
 ht-degree: 72%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 72%
 * **上次更新** =顯示此更新的最後日期 [!UICONTROL device-based destination]。
 * **更新** =指出是 [!DNL Audience Manager] 以即時或批次(1xday)傳送資料至此 [!UICONTROL destination]。
 * **取消分段** =取消分段說明取消裝置設定檔的資格和移除裝置設定檔的 [!UICONTROL segments]程式。 您從中移除裝置描述檔的能 [!UICONTROL segment] 力取決於用來建立裝置的裝置選項 [!UICONTROL Profile Merge Rule]。 在刪除請求的上下文中也會使用 [!DNL GDPR] 取消分段。 閱讀「 [描述檔合併規則與裝置取消區段程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) 」，以 [及具有取消區段功能的Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager] 將取消區段資訊傳送 [!UICONTROL destinations] 至下方標 **示為** 「是」。
-* **接收[!DNL IAB TCF]同意信號** = [!DNL Audience Manager Plug-in for IAB TCF][!DNL IAB TC] 可讓您將字串轉送給啟動合作夥伴，同時尊重使用者的隱私權選擇。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
+* **接收 [!DNL IAB TCF] 同意信號** = [!DNL Audience Manager Plug-in for IAB TCF][!DNL IAB TC] 可讓您將字串轉送給啟動合作夥伴，同時尊重使用者的隱私權選擇。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
 * **[!DNL ICDS]** =此列列出支援的合作夥伴 [!UICONTROL Instant Cross-Device Suppression]。 閱讀「 [立即跨裝置抑制」的相關資訊](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **行動裝置ID** =此欄列出可從中接收行動裝置ID的合作夥伴 [!DNL Audience Manager]。
 
@@ -51,7 +51,6 @@ ht-degree: 72%
 | [!DNL AOL ONE] | 02/03/2017 | 即時 | 有 | 否 | 否 | 是 |
 | [!DNL AppNexus] | 02/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL AppNexus Yieldex] | 10/08/2017 | 1xday | 有 | 否 | 否 | 否 |
-| [!DNL Artsai (formerly Adxcel)] | 27/01/2020 | 1xday | 否 | 否 | 否 | 否 |
 | [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL Avocet] | 06/12/2017 | 1xday | 否 | 否 | 否 | 否 |
 | [!DNL Bidtellect] | 03/03/2017 | 即時 | 有 | 否 | 否 | 否 |
@@ -82,7 +81,6 @@ ht-degree: 72%
 | [!DNL EyeView Digital] | 14/06/2018 | 1xday | 有 | 否 | 否 | 是 |
 | [!DNL Fiksu] | 03/03/2017 | 1xday | 有 | 否 | 否 | 是 |
 | [!DNL Flashtalking] | 02/03/2017 | 1xday | 否 | 否 | 否 | 否 |
-| [!DNL Flybits] | 31/07/2020 | 即時 | 有 | 否 | 是 | 是 |
 | [!DNL FreakOut] | 03/03/2017 | 1xday | 有 | 否 | 否 | 否 |
 | [!DNL Freewheel] | 27/02/2017 | 1xday | 是 | 是 | 否 | 是 |
 | [!DNL Gamut Media] | 03/03/2017 | 即時 |  | 否 | 否 |  |
