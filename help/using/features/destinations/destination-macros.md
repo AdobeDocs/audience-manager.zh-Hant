@@ -7,9 +7,9 @@ title: 定義的巨集目的地
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 4bf32099e964c421d943d9925c74dd0d4d6ee576
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -54,9 +54,9 @@ ht-degree: 3%
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
     </ul> <p>宏將替換 <code> 1</code> 為 <code> CustomerABC</code>。 </p> <p> 
-     <!--
-       Based on AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     --> </p> </td> 
+     <draft-comment>
+       基於AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
+     </draft-comment> </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
@@ -98,7 +98,7 @@ ht-degree: 3%
 
 這些 `%rnd%` 和 `%timestamp%` 巨集會將唯一值插入字串， [!DNL URL] 以防止瀏覽器快取。
 
-## Cache Busting（含%rnd%和%timestamp%） {#dest-cache-busting}
+## Cache Busting with `%rnd%` and `%timestamp%` {#dest-cache-busting}
 
 <!-- c_dest_cache_busting.xml -->
 
@@ -109,7 +109,7 @@ ht-degree: 3%
 * `%rnd%`:在URL中插入隨機數。
 * `%timestamp%`:將Unix日期／時間插入URL。
 
-## 比較%rnd%和%timestamp% {#compare-rnd-timestamp}
+## 比較 `%rnd%` 和 `%timestamp%` {#compare-rnd-timestamp}
 
 這兩個巨集都會阻止快取， `%rnd%` 但效率可能更高。 例如，若有數 `%timestamp%`位使用者同時檢視頁面，則會獲得相同的日期／時間值。 因此，此呼叫並 [!DNL URL] 非唯一，且多個呼叫只會被計算一次。 不過， `%rnd%` 會為每個呼叫產生唯一的數值（即使使用者同時看到相同的頁面）。 這表示字 [!DNL URL] 串包含不同的值，並計為唯一。
 
