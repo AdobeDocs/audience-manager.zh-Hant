@@ -1,5 +1,5 @@
 ---
-description: 在 Audience Manager 中，目的地是您想要與其共用資料的任何協力廠商系統 (廣告伺服器、DSP 和廣告網路等)任何其他系統 (廣告伺服器、DSP、廣告網路等)。使用 Destination Builder 工具來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
+description: 在 Audience Manager 中，目的地是您想要與其共用資料的任何協力廠商系統 (廣告伺服器、DSP 和廣告網路等)任何其他系統 (廣告伺服器、DSP、廣告網路等)。「目標產生器」是您用來建立和管理Cookie、URL或伺服器對伺服器目標的工具。
 keywords: integration code, destination, destination overview, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination
 seo-description: 在 Audience Manager 中，目的地是您想要與其共用資料的任何協力廠商系統 (廣告伺服器、DSP 和廣告網路等)任何其他系統 (廣告伺服器、DSP、廣告網路等)。「目標產生器」是您用來建立和管理Cookie、URL或伺服器對伺服器目標的工具。
 seo-title: 目的地
@@ -8,17 +8,17 @@ title: 目的地
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: 8027f278aa2b879b6cb277f44caf4b62dc75e2c3
+source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 14%
+source-wordcount: '532'
+ht-degree: 11%
 
 ---
 
 
 # [!UICONTROL Destinations] 概述 {#destinations}
 
-In Audience Manager, a [!UICONTROL destination] is any third-party system (ad server, [!DNL DSP], ad network, etc.) 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 是您用來建立和管理、 [!UICONTROL cookie]或 [!DNL URL]的工具 [!UICONTROL server-to-server destinations]。
+In Audience Manager, a [!UICONTROL destination] is any third-party system (ad server, [!DNL DSP], ad network, etc.) 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 是您用來建立和管理、 [!UICONTROL cookie]或 [!DNL URL]的工 [!UICONTROL server-to-server destinations]具
 
 ## 用途與優勢 {#purposes}
 
