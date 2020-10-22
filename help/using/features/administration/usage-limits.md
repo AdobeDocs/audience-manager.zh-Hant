@@ -8,9 +8,9 @@ keywords: ID mapping, ID mappings, cookie mappings
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: Usage and Billing
 translation-type: tm+mt
-source-git-commit: 7d2f4b45ac3e45c9b4fcaffa4b5c5324ff03e683
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '576'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 
 ## ID 對應限制 {#id-mapping-limits}
 
-下表列出裝置 [ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID對應限制。 一旦ID達到下列任一限制，Audience Manager會根據 [!DNL FIFO] （先入先出）邏輯新增ID對應，方法是移除最舊儲存的ID對應，然後新增新的ID對應。 如需Audience Manager [支援之ID的詳細資訊](../../reference/ids-in-aam.md) ，請參閱Audience Manager中的ID索引。
+下表列出裝置 [ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID對應限制。 一旦ID達到下列任何限制，Audience Manager會根據FIFO（先入先出）邏輯新增ID對應，移除最舊儲存的ID對應，並新增新ID對應。 如需Audience Manager [支援之ID的詳細資訊](../../reference/ids-in-aam.md) ，請參閱Audience Manager中的ID索引。
 
 | ID對應 | 最大限制 |
 |-----------|-------------- |
@@ -66,8 +66,8 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 | 項目 | 最大限制 |
 | -------- | ----- |
 | 啟用 [!UICONTROL Look-Alike Models] | 20. Audience Manager only counts *active* algorithmic models against the limit. |
-| [!UICONTROL Look-Alike Models] 最大受眾規模 | 25,000,000.  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選擇較短的回顧視窗，來降低觀眾規模。 |
-| 已排除特徵的最大數目 [!UICONTROL Look-Alike Model] | 500. 請參閱 [演算法模型中的特徵排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
+| [!UICONTROL Look-Alike Models] 最大受眾規模 | 25,000,000.  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選取較短的回顧視窗，來降低觀眾規模。 |
+| 已排除特徵的最大數目 [!UICONTROL Look-Alike Model] | 500.請參閱 [演算法模型中的特徵排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
 | 最大值 [!UICONTROL Predictive Audiences Models] | 10 |
 | 基準角色的最大數量 [!UICONTROL Predictive Audiences Models] | 50 |
 
