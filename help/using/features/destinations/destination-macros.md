@@ -7,9 +7,9 @@ title: 定義的巨集目的地
 uuid: 982cab05-8a3f-4f96-b4d0-291709712ad1
 feature: Destination Basics
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 3%
 
 ---
@@ -53,10 +53,7 @@ ht-degree: 3%
     </ul> <p>若要使用， <code>%dpid_<i>data source id</i>%</code>Audience Manager <span class="keyword"></span> 合作夥伴會將巨集格式設為如下： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
-    </ul> <p>宏將替換 <code> 1</code> 為 <code> CustomerABC</code>。 </p> <p> 
-     <draft-comment>
-       基於AAM-22193 https://jira.corp.adobe.com/browse/AAM-22193 
-     </draft-comment> </p> </td> 
+    </ul> <p>宏將替換 <code> 1</code> 為 <code> CustomerABC</code>。 </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
