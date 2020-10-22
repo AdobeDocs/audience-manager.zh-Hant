@@ -6,9 +6,9 @@ user-guide-title: Audience Manager 使用手冊
 user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 7b58619a5208f7a48002d65d7bcbf0af602ba908
+source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1773'
 ht-degree: 93%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 93%
          + [同意管理](overview/data-security-and-privacy/data-privacy-consent.md)
          + [適用於 IAB TCF 的 Audience Manager 外掛程式](overview/data-security-and-privacy/aam-iab-plugin.md)
    + [資料控管](overview/data-security-and-privacy/data-governance.md)
+   + [Audience Manager中的協助功能](/help/using/overview/accessibility-in-aam.md)
 + 功能{#features}
    + [可定址受眾](features/addressable-audiences.md)
    + 管理{#administration}
