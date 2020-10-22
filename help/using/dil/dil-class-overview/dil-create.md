@@ -7,10 +7,10 @@ title: DIL 建立
 uuid: 6e054600-703c-4a97-af2a-8207c50013db
 feature: DIL Implementation
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fc13643681eebec17a95607482f2864e81b95820
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 10%
+source-wordcount: '825'
+ht-degree: 11%
 
 ---
 
@@ -60,9 +60,7 @@ r_dil_create.xml
    <td colname="col1"> <p> <code> declaredId </code> </p> </td> 
    <td colname="col2"> <p>物件 </p> </td> 
    <td colname="col3"> 
-    <draft-comment> 
-     <p>在每次事件 <a href="../../features/declared-ids.md"> 呼叫時傳送 </a> Declared ID變數至 <span class="keyword"> Audience Manager </span>。 </p> 
-    </draft-comment> <p> <code> delcaredId </code> 用於傳遞以下任一項： </p> 
+    <p> <code> declaredId </code> 用於傳遞以下任一項： </p> 
     <ul id="ul_75E64D7DDBD14670BB0BC7819F72036C"> 
      <li id="li_43C7F0EAC5B24F07BBF4ADAB4B0142B7"> <code> dpid </code>:Audience Manager指派給您的資料合作 <span class="keyword"> 夥伴ID </span>。 </li> 
      <li id="li_3BD52ADEA1E24B41B51AFA95D71DD1FC"> <code> dpuuid </code>:您的使用者唯一ID。 </li> 
