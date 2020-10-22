@@ -1,16 +1,16 @@
 ---
-description: 'null'
-seo-description: 'null'
+description: 點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。
+seo-description: 點按追蹤可讓您測量整個促銷活動中的訪客參與度，因為它會記錄第三方創意人員的點按式活動。
 seo-title: 透過像素呼叫擷取行銷活動的點按資料
 solution: Audience Manager
 title: 透過像素呼叫擷取行銷活動的點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 feature: Integration with Campaign
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 12%
+source-wordcount: '686'
+ht-degree: 11%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 12%
 
 點按追蹤呼叫需要下列參數：
 
-* `d_event=click`: 將事件呼叫識別為點按事件的金鑰值配對。
-* `d_rd=redirect URL`: 包含雙重編碼重新導向的索引鍵值對 [!DNL URL]。 如果您使用線上編碼工具，請在編碼器中執行字串，然後重新編碼結果，以便重新導向正常運作。
+* `d_event=click`:將事件呼叫識別為點按事件的金鑰值配對。
+* `d_rd=redirect URL`:包含雙重編碼重新導向的索引鍵值對 [!DNL URL]。 如果您使用線上編碼工具，請在編碼器中執行字串，然後重新編碼結果，以便重新導向正常運作。
 
 此外，呼叫可包含可用於特徵限定或為其他報表提供資料和中繼資料的鍵值配對。
 
