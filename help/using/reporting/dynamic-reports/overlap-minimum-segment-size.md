@@ -7,9 +7,9 @@ title: 重疊報表更新排程和最小區段大小
 uuid: 35c1cb39-e28d-4d20-88c9-5ff4fe154e9e
 feature: overlap reports
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 33d844578c5cd620f9d4c33ec931ae0778aabb07
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 5%
 
 ---
@@ -17,13 +17,14 @@ ht-degree: 5%
 
 # 重疊報表：更新排程和最小區段大小{#overlap-reports-update-schedule-and-minimum-segment-size}
 
-說明「重疊」報表更新程式所需的區段大小和建立時間需求。
+說明「重疊」報表更新程式所需的特徵和區段大小以及建立時間需求。
 
 ## 更新排程和需求 {#update-schedule}
 
 [!UICONTROL Overlap] 報告每週在週日更新。 報表預處理從星期六開始。 這會影響週一重疊報表中新區段或現有區段的顯示方式。 要包含在重疊報表中：
 
-* 區段在過去14天內至少必須包含70,000名即時使用者。 閱讀更多有關特 [徵和區段的最低獨特訪客需求](../../reporting/report-sampling.md#data-sampling-ratio)。
+* 區段在過去14天內至少必須包含70,000名即時使用者。
+* 特徵必須包含過去14天內 [的28,000個獨特](/help/using/features/traits/trait-and-segment-qualification-reference.md) 特徵實現。
 * 區段必須在UTC的週四上午12點之前建立（每週重疊報告更新程式開始前2個完整天）。
 * 您的公司必須是完整客 [!DNL Audience Manager] 戶。 請連絡您 [!DNL Audience Manager] 的顧問或客戶服務以瞭解更多資訊。
 
@@ -41,7 +42,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>區段大小過小</b> </p> </td> 
-   <td colname="col2"> <p>假設您在UTC的週四上午12點之前建立區段，但其中的即時使用者總數少於70,000名。 除非符合使用者臨界值要求，否則此區 <span class="wintitle"> 段不會出現在「重疊報表</span> 」中。 此外，此區段必須符合星期四截止期間的使用者計數要求或之前。 如果區段未達到每週截止日期，則在即將到來的週日資料執行後的一週內，區段會出現在「重疊報表 <span class="wintitle"></span> 」中。 </p> </td> 
+   <td colname="col2"> <p>假設您在UTC的週四上午12點之前建立區段，但其中的即時使用者總數少於70,000位。 除非符合使用者臨界值要求，否則此區 <span class="wintitle"> 段不會出現在「重疊報表</span> 」中。 此外，此區段必須符合星期四截止期間的使用者計數要求或之前。 如果區段未達到每週截止日期，則在即將到來的週日資料執行後的一週內，區段會出現在「重疊報表 <span class="wintitle"></span> 」中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>建立的區段太遲</b> </p> </td> 
