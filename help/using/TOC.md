@@ -6,9 +6,9 @@ user-guide-title: Audience Manager 使用手冊
 user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
+source-git-commit: 389ffae8d216a4f295a5fe198a27c4d9d48586c6
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1772'
 ht-degree: 93%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 # Audience Manager 使用手冊 {#user-guide}
 
-+ [Audience Manager 產品文件](aam-home.md)
++ [Audience Manager 指南](aam-home.md)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的資料類型](overview/data-types-collected.md)
