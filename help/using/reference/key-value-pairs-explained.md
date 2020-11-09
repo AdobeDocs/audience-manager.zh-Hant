@@ -8,10 +8,10 @@ title: 索引鍵值配對說明
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 7%
+source-wordcount: '276'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ c_key_value_explained.xml
 
  -->
 
-鍵值對由兩個相關的資料元素組成： 一個鍵，它是定義資料集（例如性別、顏色、價格）的常數，一個值是屬於該集的變數（例如，男／女、綠色、100）。 完整格式的索引鍵值對可能如下所示：
+鍵值對由兩個相關的資料元素組成：一個鍵，它是定義資料集（例如性別、顏色、價格）的常數，一個值是屬於該集的變數（例如，男／女、綠色、100）。 完整格式的索引鍵值對可能如下所示：
 
 * `gender = male`
 * `color = green`
@@ -45,7 +45,7 @@ c_key_value_explained.xml
 
 ## 鍵、分隔字元和分隔字元 {#keys-delimiters-separators}
 
-使用序列化資料時，您必須指定在鍵值配對 *內**和之間* 分隔值的字元。 鍵值對中的元素定義如下：
+使用序列化資料時，您必須指定在鍵值配對 *內**和之* 間分隔值的字元。 鍵值對中的元素定義如下：
 
 * **索引鍵：** 鍵值對中的唯一標識符。
 * **值分隔字元：** 分離個別的鍵值對。
@@ -54,44 +54,10 @@ c_key_value_explained.xml
 
 ## 標準和序號的關鍵值元素 {#standard-serialized-key-value-elements}
 
-<table id="table_62B0498441034A719C9DB57276777D40"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 類型 </th> 
-   <th colname="col2" class="entry"> 範例 </th> 
-   <th colname="col3" class="entry"> 金鑰 </th> 
-   <th colname="col4" class="entry"> 鍵值分隔符號 </th> 
-   <th colname="col5" class="entry"> 鍵值分隔字元 </th> 
-   <th colname="col6" class="entry"> 序列分隔符號 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <b>單鍵</b> <p>(標準) </p> </td> 
-   <td colname="col2"> <code> x=1&amp;x=2 </code> </td> 
-   <td colname="col3"> x </td> 
-   <td colname="col4" morerows="3"> = </td> 
-   <td colname="col5" morerows="1"> &amp; </td> 
-   <td colname="col6" morerows="1"> 不適用 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>鍵值對</b> <p>(標準) </p> </td> 
-   <td colname="col2"> <code> x=1&amp;x=2&amp;y=3&amp;y=4 </code> </td> 
-   <td colname="col3"> x, y </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>單鍵</b> <p>（串列） </p> </td> 
-   <td colname="col2"> <code> x=1;2;3 </code> </td> 
-   <td colname="col3"> x </td> 
-   <td colname="col5"> 不適用 </td> 
-   <td colname="col6" morerows="1"> ; </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <b>金鑰值配對</b> （串列） </td> 
-   <td colname="col2"> <code> x=1;2&amp;y=3;4 </code> </td> 
-   <td colname="col3"> x, y </td> 
-   <td colname="col5"> &amp; </td> 
-  </tr> 
- </tbody> 
-</table>
 
+| 類型 | 範例 | 金鑰 | 鍵值分隔符號 | 鍵值分隔字元 | 序列分隔符號 |
+---------|----------|---------|---------|----------|---------
+| **單鍵** （標準） | `x=1&x=2` | `x` | `=` | `&` | 不適用 |
+| **鍵值配對** （標準） | `x=1&x=2&y=3&y=4` | `x,y` | `=` | `&` | 不適用 |
+| **單鍵** （串列） | `x=1;2;3` | `x` | `=` | 不適用 | `;` |
+| **金鑰值配對** （串列） | `x=1;2&y=3;4` | `x,y` | `=` | `&` | `;` |
