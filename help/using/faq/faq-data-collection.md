@@ -8,7 +8,7 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP; SFTP address; STFP IP address; FTP address
 feature: Administration
 translation-type: tm+mt
-source-git-commit: a292f44a63aa1e627d75d37c9ff0c1489f160729
+source-git-commit: 1f3b3d7d7ea8eaa0c1b64f147dc60b85f4e2f487
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 84%
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 <br> 
 
-**如何在[!DNL DCS]記錄檔匯出項目中區分來自[!DNL DCS]的傳入流量？**
+**如何在 [!DNL DCS] 記錄檔匯出項目中區分來自 [!DNL DCS] 的傳入流量？**
 
 透過 [!UICONTROL Inbound] 上線的特徵會以 [!UICONTROL Inbound] 填入，其方式與以 [!DNL DCS] 填入的方式相同。有幾種不同的方式可以判斷流量是來自 [!UICONTROL Inbound]：
 
@@ -44,8 +44,8 @@ ht-degree: 84%
 
 | 伺服器 | IP 位址 |
 | ---------|----------|
-| ftp-in-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
-| ftp-out-gtw.demdex.com | 3.233.68.222; 52.3.74.119 |
+| ftp-in-gtw.demdex.com | 52.3.74.119; 3.233.68.222 |
+| ftp-out-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
 
  
 
@@ -90,7 +90,7 @@ ht-degree: 84%
 
  
 
-**為什麼我的[!DNL Analytics]變數沒有在[!DNL Audience Manager]事件呼叫中出現？**
+**為什麼我的 [!DNL Analytics] 變數沒有在 [!DNL Audience Manager] 事件呼叫中出現？**
 
 這通常會發生在以下情況中：
 
@@ -99,7 +99,7 @@ ht-degree: 84%
 
  
 
-**哪些[!DNL Analytics]版本可搭配[!UICONTROL DIL]使用？**
+**哪些 [!DNL Analytics] 版本可搭配 [!UICONTROL DIL] 使用？**
 
 您必須使用 [!DNL Analytics] 20.2 版 (或更新版本) 和 [!DNL Adobe AppMeasurement AS] 程式庫 3.5.2 版 (或更新版本) 才能使用 [!UICONTROL DIL]。如果您不知道您的 [!DNL Analytics] 或 [!DNL AppMeasurement] 版本，請查看從頁面發出的 [!DNL Analytics] 呼叫。版本資訊如下所示：
 
@@ -117,7 +117,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如果我不是[!DNL Analytics]客戶，可以收集頁面資料嗎？**
+**如果我不是 [!DNL Analytics] 客戶，可以收集頁面資料嗎？**
 
 是。即使您未使用 [!DNL Analytics]，[!UICONTROL DIL] 模組仍可協助您收集頁面資料。正確設定後，[!UICONTROL DIL] 便可從向以下項目擷取其相關資料：
 
@@ -130,7 +130,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**[!UICONTROL DIL]可以從[!DNL Google Analytics]中收集資料嗎？**
+**[!UICONTROL DIL] 可以從 [!DNL Google Analytics] 中收集資料嗎？**
 
 是。[!UICONTROL DIL] 可以收集某些 [!DNL Google Analytics] (GA)元素並將該資料傳遞至 [!DNL Audience Manager]。請參閱：
 
@@ -139,7 +139,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**我可以從[!DNL Audience Manager]中取得原始資料嗎，其精細度為何？**
+**我可以從 [!DNL Audience Manager] 中取得原始資料嗎，其精細度為何？**
 
 可以，[!DNL Audience Manager] 可向您提供針對我們在您的詳細目錄中看到的使用者所收集的資料。其中包括：
 
@@ -163,7 +163,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何設[!DNL Audience Manager]定Cookie並將變數傳遞至[!DNL Google Ad Manager]?**
+**如何設 [!DNL Audience Manager] 定Cookie並將變數傳遞至 [!DNL Google Ad Manager]?**
 
 [!DNL Audience Manager] 設定2個Cookie:其中一個會傳送區段變數 [!DNL Google Ad Manager] 至廣告標籤，而另一個則會設定我們的唯一使用者ID(UUID)，也由讀取 [!DNL Google Ad Manager]。 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
 
@@ -175,13 +175,13 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何確認透過 FTP 傳送的資料是否已被[!DNL Audience Manager]擷取？**
+**如何確認透過 FTP 傳送的資料是否已被 [!DNL Audience Manager] 擷取？**
 
 當副檔名從 `.sync` 變更為 `.processed`，表示已擷取檔案。發生此情況時，檔案會位於擷取佇列中。此外，您的帳戶管理員可確認檔案上傳完畢的時間。
 
 <br> 
 
-**我想測試[DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md)的功能。我傳送了一個事件呼叫，如下所示。這些呼叫中包含[宣告 ID](../features/declared-ids.md)和訊號，而這些 ID 和訊號應會實現我已設定的某些特徵和區段。我可以使用[!UICONTROL General Reports]和[!UICONTROL Trend Reports]來驗證特徵和區段母體是否正在增加嗎？**
+**我想測試 [DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md) 的功能。我傳送了一個事件呼叫，如下所示。這些呼叫中包含[宣告 ID](../features/declared-ids.md) 和訊號，而這些 ID 和訊號應會實現我已設定的某些特徵和區段。我可以使用 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports] 來驗證特徵和區段母體是否正在增加嗎？**
 
 ```
 https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed-an-order
