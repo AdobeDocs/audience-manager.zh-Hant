@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## 類別層級 DIL API 快速入門 {#get-started}
 
-說明驗證需求和類別層級檔案中使用的文字格 [!UICONTROL DIL] 式。
+說明驗證要求以及類別級[!UICONTROL DIL]檔案中使用的文字格式。
 
 <!-- 
 
@@ -29,9 +29,9 @@ c_class_start.xml
 
  -->
 
-使用類別層級的API時 [!UICONTROL DIL] :
+使用類別級別[!UICONTROL DIL] API時：
 
 * 存取需要合作夥伴名稱和容器名稱空間ID(NSID)。 請連絡您的Audience Manager客戶經理以取得此資訊。
-* 根據您所 *使用之方法* ，以值、ID或其他變數取代API檔案中任何斜體文字範例。
-* [!UICONTROL DIL] 將編碼資料寫入目標Cookie。 例如，空格會編碼為 `%20` 分號和分號 `%3B`。
+* 使用值、ID或您使用之方法所需的其他變數，取代API檔案中任何斜體&#x200B;*文字範例。*
+* [!UICONTROL DIL] 將編碼資料寫入目標Cookie。例如，空格會編碼為`%20`，分號則編碼為`%3B`。
 
