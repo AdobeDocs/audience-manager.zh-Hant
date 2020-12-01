@@ -19,7 +19,7 @@ ht-degree: 9%
 
 重疊報表達 100 萬筆記錄上限時，您可以要求此報表的 .csv 檔案。當您看到「發生非預期錯誤」訊息時，報表可能已達到此限制。 請連絡客戶服務以要求壓縮的。csv檔案，您可以匯入該檔案，並在自己的資料庫系統中使用。 檔案可用於區段對區段、區段對特徵和特徵對特徵重疊報表。
 
-## 檔案名稱中繼資料 {#file-name-metadata}
+## 檔案名元資料{#file-name-metadata}
 
 下表列出並說明重疊。csv檔案中使用的檔案命名慣例和副檔名。 在這些範例中，*斜體字*&#x200B;代表變數預留位置。
 
@@ -33,15 +33,15 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>檔案 擴充功能 </p> </td> 
-   <td colname="col2"> <p>重疊報表檔案會壓縮為gzip，並具有副檔 <code> .gz</code> 名。 解壓縮後，您必 <code> .csv</code> 須將副檔名新增至檔案。 </p> </td> 
+   <td colname="col2"> <p>重疊報表檔案會壓縮為gzip，且副檔名為<code> .gz</code>。 解壓縮後，您必須將<code> .csv</code>副檔名新增至檔案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>檔案名稱 </p> </td> 
    <td colname="col2"> <p>檔案名語法： </p> <p> 
      <ul id="ul_D69D320A1AE94361B75D2AB47F90C4D1"> 
-      <li id="li_FFB104975D104050AB67FEEC903C6E2E">區段對區段檔案： <code>S2S_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
-      <li id="li_7DEC51D693FB4377840D652AF40386EF">區段到特徵檔案： <code>S2T_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
-      <li id="li_CCB35A2BCB714E518AB279D453740623">特徵到特徵檔案： <code>T2T_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
+      <li id="li_FFB104975D104050AB67FEEC903C6E2E">區段對區段檔案：<code>S2S_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
+      <li id="li_7DEC51D693FB4377840D652AF40386EF">區段到特徵檔案：<code>S2T_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
+      <li id="li_CCB35A2BCB714E518AB279D453740623">特徵到特徵檔案：<code>T2T_overlap_<i>partner ID</i>_<i>yyyy-mm-dd</i>_<i>date range</i></code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -60,8 +60,8 @@ ht-degree: 9%
    <td colname="col1"> <p>範例 </p> </td> 
    <td colname="col2"> <p>單一報表的檔案名稱範例： </p> <p> 
      <ul id="ul_EED13F73F37D48868236F8945E19C88F"> 
-      <li id="li_55DD677F9BA7460AA4AAD27AFD08A5AE">單日7天檔案： <code> S2S_overlap_12345_2017_01_14_70000.gz</code> </li> 
-      <li id="li_487F8B76B7F24DCEB890C2D8186728F7">單一30天檔案： <code> S2S_overlap_12345_2017_01_14_30000.gz</code> </li> 
+      <li id="li_55DD677F9BA7460AA4AAD27AFD08A5AE">單日7天檔案：<code> S2S_overlap_12345_2017_01_14_70000.gz</code> </li> 
+      <li id="li_487F8B76B7F24DCEB890C2D8186728F7">單一30天檔案：<code> S2S_overlap_12345_2017_01_14_30000.gz</code> </li> 
      </ul> </p> <p>包含多個檔案之報表的檔案名稱範例： </p> <p> 
      <ul id="ul_D307EECBB3524962AB8C8332BF699D29"> 
       <li id="li_9FA3B5539E5A4F95899075866D96DEA0"> <code> S2S_overlap_12345_2017_01_14_70000.gz</code> </li> 
@@ -72,7 +72,7 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-## 檔案內容 {#file-contents}
+## 檔案內容{#file-contents}
 
 在檔案中，字串資料用雙引號括起來。 請參閱以下模擬資料。 這已因為簡短和適合螢幕而截斷。
 
@@ -83,9 +83,9 @@ ht-degree: 9%
 "123456","segmentA","654321","segmentB","30","yyyy-mm-dd","98765",...
 ```
 
-## 區段對區段報表記錄 {#segment-segment-records}
+## 區段對區段報表記錄{#segment-segment-records}
 
-區段對區段重疊報 [表的資料檔案包含](segment-segment-overlap-report.md) 下列記錄。
+[區段對區段重疊報表的資料檔案包含下列記錄。](segment-segment-overlap-report.md)
 
 <table id="table_1BDC7019DF2543069D7AE229C5E2454E"> 
  <thead> 
@@ -113,7 +113,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 對 <code> rangeid</code> 應於下方顯示的時間間隔。 </p> <p> 
+   <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 <code> rangeid</code>對應於下方顯示的時間間隔。 </p> <p> 
      <ul id="ul_129D6CB0EB6F48F28440D22DA257D1A4"> 
       <li id="li_5FC34516A437459F854C81B1CE353B89"> <code> 7</code>:7天 </li> 
       <li id="li_2CECC5039DAF4796BCCF27DACC3754A3"> <code> 30</code>:30天 </li> 
@@ -142,9 +142,9 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-## 區段對特徵報表記錄 {#segment-trait-records}
+## 區段對特徵報表記錄{#segment-trait-records}
 
-「區段對特徵重疊報 [表」的資料檔案包含](segment-trait-overlap-report.md) 下列記錄。
+[區段對特徵重疊報表的資料檔案包含下列記錄。](segment-trait-overlap-report.md)
 
 <table id="table_45270B5D01014AD99921B320D3A32DB6"> 
  <thead> 
@@ -176,7 +176,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 對 <code> rangeid</code> 應於下方顯示的時間間隔。 </p> <p> 
+   <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 <code> rangeid</code>對應於下方顯示的時間間隔。 </p> <p> 
      <ul id="ul_4B07DFF4A226428A930E22B5FF73E1D0"> 
       <li id="li_4BD0F8AE64C74D7BBE2298F19E2F5328"> <code> 7</code>:7天 </li> 
       <li id="li_7C0C0D2CD9144C4CAF00EDEA90929104"> <code> 30</code>:30天 </li> 
@@ -209,9 +209,9 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-## 特徵對特徵報表記錄 {#trait-trait-records}
+## 特徵對特徵報表記錄{#trait-trait-records}
 
-「特徵對特徵重 [疊報表」的資料檔案](trait-trait-overlap-report.md) ，包含下列記錄。
+[特徵到特徵重疊報告](trait-trait-overlap-report.md)的資料檔案包含下列記錄。
 
 <table id="table_603216E6AFE4439A87C91DDFF2989F53"> 
  <thead> 
@@ -251,7 +251,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> rangeid</code> </p> </td> 
-   <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 對 <code> rangeid</code> 應於下方顯示的時間間隔。 </p> <p> 
+   <td colname="col2"> <p>您可以取得7和30天回顧間隔的報表。 <code> rangeid</code>對應於下方顯示的時間間隔。 </p> <p> 
      <ul id="ul_BC2C41B90F864522B075EFDED33537EC"> 
       <li id="li_929639F70A1A4039BA19332562B71845"> <code> 7</code>:7天 </li> 
       <li id="li_1C489A4B755D4444AD5FAAF0B492F412"> <code> 30</code>:30天 </li> 
