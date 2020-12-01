@@ -17,9 +17,9 @@ ht-degree: 12%
 
 # 格式化 DCS 呼叫中的索引鍵值配對 {#formatting-key-value-pairs-in-dcs-calls}
 
-進行呼叫時，會接 [!DNL DCS] 受標準或序號格式的金鑰值資料。 請檢閱本節，以瞭解如何設定標準和序號關鍵值資料的格式。
+進行呼叫時，[!DNL DCS]接受標準或序列化格式的鍵值資料。 請檢閱本節，以瞭解如何設定標準和序號關鍵值資料的格式。
 
-## Standard and Serialized Key-Value Pairs {#standard-serialized}
+## 標準和序列化鍵值對{#standard-serialized}
 
 <table id="table_A220F9B359F34C6EA7B83618FC22EE3A"> 
  <thead> 
@@ -43,7 +43,7 @@ ht-degree: 12%
  </tbody>
 </table>
 
-## 序列化鍵值對的分隔符和分隔符 {#delimiters-separators}
+## 序列化鍵值對的分隔字元和分隔符{#delimiters-separators}
 
 對於序列化的鍵值配對，您必須指定這些變數內和之間分隔值的標籤。 Audience Manager需要下列分隔字元和分隔符號：
 
