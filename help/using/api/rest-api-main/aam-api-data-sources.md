@@ -23,7 +23,7 @@ ht-degree: 24%
 
 >[!IMPORTANT]
 >
->資料來源方 [!DNL API] 法已重新編寫並 [!DNL Swagger] 移轉。 請參閱：
+>資料源[!DNL API]方法已用[!DNL Swagger]重寫並遷移。 請參閱：
 >
 >* [Adobe Audience Manager API檔案](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 程式碼移轉](../../api/api-swagger-migration.md)
