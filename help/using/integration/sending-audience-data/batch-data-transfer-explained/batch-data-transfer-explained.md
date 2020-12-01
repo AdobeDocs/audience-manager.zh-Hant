@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # 批次資料傳輸流程說明 {#batch-data-transfer-process-described}
 
-概述如何執行 [!DNL Audience Manager] 與協力廠商的非同步批次資料交換。
+概述[!DNL Audience Manager]如何執行與第三方廠商的非同步批次資料交換。
 
 ## 批次資料整合
 
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 * 不需要立即傳送資料。
 * 收集資料，以建立龐大的細分使用者群。
-* 您想要減少來自瀏覽器的資 `HTTP` 料不一致和呼叫。
+* 您想要減少來自瀏覽器的資料不一致和`HTTP`呼叫。
 
 ![](assets/s2s_70.png)
 
@@ -36,5 +36,5 @@ ht-degree: 7%
 1. 使用者瀏覽客戶網站。
 1. [!DNL Audience Manager] 協力廠商資料提供者會為訪客指派唯一ID（通常使用Cookie）。
 1. [!DNL Audience Manager] 呼叫協力廠商資料提供者，以符合訪客ID。
-1. 排程的請求（通常在每日間隔內）會在您與第三方資料提供者之 [!DNL Audience Manager] 間交換訪客區段資料。
-1. 每當處理傳 [!UICONTROL Server-to-Server] 入檔案時，收據會透過電子郵件傳送給合作夥伴解決方案，如果已設定，則會傳送給合作夥伴。 如需詳細資訊，請參 [閱傳入處理後傳送給合作夥伴的範例訊息](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)。
+1. 排程的請求（通常在每日間隔內）會在[!DNL Audience Manager]和您的第三方資料提供者之間交換訪客區段資料。
+1. 每當處理傳入的[!UICONTROL Server-to-Server]檔案時，會透過電子郵件傳送收據給合作夥伴解決方案，如果已設定，則會傳送回收給合作夥伴。 如需詳細資訊，請參閱「傳入處理後傳送給合作夥伴的範例訊息」[。](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
