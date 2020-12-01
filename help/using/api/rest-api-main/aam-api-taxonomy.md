@@ -23,11 +23,11 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->您無法使用這些方法建立新的分類類別或分類特徵。 若要分類特徵，請使用特徵建 `categoryId` 立或更新方法指定適當。
+>您無法使用這些方法建立新的分類類別或分類特徵。 若要分類特徵，請使用特徵建立或更新方法指定適當的`categoryId`。
 
-## 返回特定分類 {#return-specific-taxonomy}
+## 返回特定分類{#return-specific-taxonomy}
 
-一種 `GET` 返回有關指定分類類別的詳細資訊的方法。
+`GET`方法，可返回有關指定分類類別的詳細資訊。
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 ### 回應
 
-成功的回應 `200 OK` 會傳回指定ID的類別。 如果ID不存 `404 No Content` 在，則傳回不成功的請求。
+成功的響應返回`200 OK`和指定ID的類別。 如果ID不存在，則不成功的請求會傳回`404 No Content`。
 
 ```
 {
@@ -50,9 +50,9 @@ ht-degree: 7%
 }
 ```
 
-## 返回所有分類類別 {#return-all-taxonomy-categories}
+## 返回所有分類類別{#return-all-taxonomy-categories}
 
-一 `GET` 種返回陣列中頂級類別清單的方法。
+一種`GET`方法，它返回陣列中頂級類別的清單。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -93,9 +93,9 @@ ht-degree: 7%
 ]
 ```
 
-## 返回分類子類別 {#return-taxonomy-sub-categories}
+## 返回分類子類別{#return-taxonomy-sub-categories}
 
-一種 `GET` 在陣列中返回指定父類別子類別的方法。
+一種`GET`方法，可返回陣列中指定父類別的子類別。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -105,7 +105,7 @@ ht-degree: 7%
 
 ### 回應
 
-成功的回應 `200 OK` 會傳回指定ID的類別。 如果ID不存 `404 No Content` 在，則傳回不成功的請求。 因簡短性而截斷。
+成功的響應返回`200 OK`和指定ID的類別。 如果ID不存在，則不成功的請求會傳回`404 No Content`。 因簡短性而截斷。
 
 ```
 [
