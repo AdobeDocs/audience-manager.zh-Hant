@@ -23,6 +23,6 @@ ht-degree: 14%
 
 >[!IMPORTANT]
 >
->資料夾方 [!DNL API] 法已重新編寫，並 [!DNL Swagger] 已移轉。 如需此工具的其他相關資訊，請參閱:  >
+>資料夾[!DNL API]方法已用[!DNL Swagger]重寫並遷移。 如需此工具的其他相關資訊，請參閱:  >
 >* [Adobe Audience Manager API檔案](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 程式碼移轉](../../api/api-swagger-migration.md)
