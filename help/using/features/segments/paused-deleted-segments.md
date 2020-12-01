@@ -17,11 +17,11 @@ ht-degree: 5%
 
 # 暫停和刪除的區段 {#paused-and-deleted-segments}
 
-說明當您使用暫停或刪除作用中區段時，區段使用者、資料和目的地的影響 [!UICONTROL Segment Builder]。
+說明當您使用[!UICONTROL Segment Builder]暫停或刪除作用中的區段時，區段使用者、資料和目的地的影響。
 
 ## 存取暫停和刪除控制項
 
-將滑鼠指標暫留在區段清單中的區段名稱上， **[!UICONTROL pause]** 以顯示 **[!UICONTROL delete]** 和圖示(在欄 [!UICONTROL Actions] 中)。 這些功能會影響區段，如下所述。
+將滑鼠指標暫留在區段清單中的區段名稱上，以顯示&#x200B;**[!UICONTROL pause]**&#x200B;和&#x200B;**[!UICONTROL delete]**&#x200B;圖示（位於[!UICONTROL Actions]欄中）。 這些功能會影響區段，如下所述。
 
 ## 暫停的區段功能
 
@@ -46,4 +46,4 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->您也可以使用方法暫停和刪除 [!DNL API] 區段。 如需詳細資訊，請參 [閱REST API](../../api/rest-api-main/rest-api-main.md)。
+>您也可以使用[!DNL API]方法暫停和刪除區段。 如需詳細資訊，請參閱[REST API](../../api/rest-api-main/rest-api-main.md)。
