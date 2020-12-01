@@ -62,7 +62,7 @@ Audience Manager 的安全性實務作法包括外部與內部稽核、活動記
 
 有助於保護個別用戶端所擁有資料的程序。
 
-**特徵資料分區：**  您的資[!UICONTROL traits]料（ID等） 由用戶端分割。這有助於防止不同用戶端之間意外洩露資訊。例如，Cookie 中的特徵資料會依客戶分割，並儲存在用戶端專用的子網域中，其他 Audience Manager 用戶端無法讀取或意外使用。此外，儲存在 [!UICONTROL Profile Cache Servers (PCS)] 中的特徵資料也是由用戶端分割。這麼做可避免其他用戶端在事件呼叫或其他請求中意外使用您的資料。
+**特徵資料分**  區：您的[!UICONTROL traits]資料（ID等）由用戶端分割。這有助於防止不同用戶端之間意外洩露資訊。例如，Cookie 中的特徵資料會依客戶分割，並儲存在用戶端專用的子網域中，其他 Audience Manager 用戶端無法讀取或意外使用。此外，儲存在 [!UICONTROL Profile Cache Servers (PCS)] 中的特徵資料也是由用戶端分割。這麼做可避免其他用戶端在事件呼叫或其他請求中意外使用您的資料。
 
 **報表中的資料分割：**&#x200B;用戶端 ID 屬於所有報表表格中識別索引鍵的一部分，且報表查詢會依 ID 篩選。這有助於防止您的資料出現在其他 Audience Manager 用戶端的報表中。
 
@@ -74,7 +74,7 @@ Adobe Audience Manager 支援兩種主要方法，可將 S2S 已上線的資料�
 
 **SFTP：**&#x200B;針對 SFTP 選項，大部分客戶選擇透過使用安全殼層 (SSH) 通訊協定的安全 FTP (SFTP) 通訊協定來傳送檔案。此方法可確保對在客戶系統與 Adobe 系統之間傳輸的檔案進行加密。我們會為每個客戶在 SFTP 伺服器上建立監禁的下拉式方塊位置，此位置會繫結至該系統上的使用者帳戶。只有該客戶的經認證和獲權限內部系統使用者可以存取這個監禁的下拉式方塊位置。其他客戶永遠無法進入這個監獄。
 
-**[!UICONTROL Amazon Web Services S3](透過 HTTPS 傳輸)：**針對 S3 傳送選項，建議所有客戶將其 S3 用戶端設定為使用 HTTPS 加密方法進行檔案傳輸 (這不是預設值，因此必須明確設定)。s3cmd 命令列工具及各種主要程式設計語言可用的 S3 程式庫都支援 HTTPS 選項。啟用此 HTTPS 選項後，便會在將客戶的資料傳輸至我們的系統時進行加密。我們會為每個客戶建立獨立的 S3 儲存貯體子目錄，只有該客戶的認證和我們的內部系統使用者的認證可存取。
+**[!UICONTROL Amazon Web Services S3](透過 HTTPS 傳輸)：**&#x200B;針對 S3 傳送選項，建議所有客戶將其 S3 用戶端設定為使用 HTTPS 加密方法進行檔案傳輸 (這不是預設值，因此必須明確設定)。s3cmd 命令列工具及各種主要程式設計語言可用的 S3 程式庫都支援 HTTPS 選項。啟用此 HTTPS 選項後，便會在將客戶的資料傳輸至我們的系統時進行加密。我們會為每個客戶建立獨立的 S3 儲存貯體子目錄，只有該客戶的認證和我們的內部系統使用者的認證可存取。
 
 若要將 PGP 加新增到您的資料檔案，請參閱[傳入資料類型的檔案 PGP 加密](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。
 
@@ -92,6 +92,6 @@ Adobe Audience Manager 支援兩種主要方法，可將 S2S 已上線的資料�
 
 ### 範例 {#hsts-example}
 
-Let&#39;s say the `yourcompany.demdex.com` domain sends traffic to the [!DNL DCS] via [!DNL HTTP]. [!DNL HSTS] 將呼叫升級以改用 [!DNL HTTPS]，而所有後續來自 `yourcompany.demdex.com` 的 [!DNL DCS] 呼叫都會使用 [!DNL HTTPS] 而非 [!DNL HTTP]。
+假設`yourcompany.demdex.com`網域透過[!DNL HTTP]傳送流量至[!DNL DCS]。 [!DNL HSTS] 將呼叫升級以改用 [!DNL HTTPS]，而所有後續來自 `yourcompany.demdex.com` 的 [!DNL DCS] 呼叫都會使用 [!DNL HTTPS] 而非 [!DNL HTTP]。
 
 如需有關 HSTS 的詳細資訊，請參閱 [HTTP 強制安全傳輸技術 - Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)。
