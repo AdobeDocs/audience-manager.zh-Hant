@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Amazon S3 儲存空間 {#amazon-s3-storage}
 
-**我的 CDF 檔案儲存在[!DNL Amazon]上的何處？**
+**我的 CDF 檔案儲存在 [!DNL Amazon] 上的何處？**
 
 您的 CDF 檔案儲存在 [!DNL Amazon S3] 伺服器的 `aam-cdf` 根目錄中。此預設貯體由管理 [!DNL Audience Manager]。另請參閱[客戶資料摘要檔案命名慣例](../features/cdf-files.md#cdf-naming-conventions)。
 
