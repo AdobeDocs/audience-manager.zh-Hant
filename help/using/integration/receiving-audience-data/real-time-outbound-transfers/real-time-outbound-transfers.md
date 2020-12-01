@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # 即時傳出資料傳輸 {#real-time-outbound-data-transfers}
 
-出站即時資料傳輸過程將用戶資料作為一系列格式化消 [!DNL JSON] 息發送到目標平台。
+出站即時資料傳輸過程將用戶資料作為一系列[!DNL JSON]格式化消息發送到目標平台。
 
 <!-- c_outbound_json.xml -->
 
@@ -25,9 +25,9 @@ ht-degree: 5%
 
 要使用此方法，目標平台必須滿足以下要求：
 
-* 它必須提供端點， [!DNL URL] 可縮放以接收來自Audience Manager的大量訊息；
-* 它必須接受格式( [!DNL JSON] )的數`Content-type: application/json`據；
-* 它必須接受安全的 `HTTPS` 資料傳輸。 [!DNL Audience Manager] 將不會通過不安全協定發送 `HTTP` 消息。
+* 它必須提供端點[!DNL URL]，可縮放以接收來自Audience Manager的大量訊息；
+* 它必須接受[!DNL JSON]格式(`Content-type: application/json`)的資料；
+* 它必須接受安全的`HTTPS`資料傳輸。 [!DNL Audience Manager] 將不會通過不安全的協定發送 `HTTP` 消息。
 
 ## 頻率
 
@@ -43,11 +43,11 @@ ht-degree: 5%
 
 ## 必要回應
 
-依預設，收件者伺服器必須傳回程式碼， `200 OK` 以指出成功收件。 其他代碼將被解釋為失敗。 此回應預期在3000毫秒內完成。 響應失敗，將只 [!DNL Audience Manager] 進行一次重試。
+依預設，收件者伺服器必須傳回`200 OK`程式碼，以指出收件成功。 其他代碼將被解釋為失敗。 此回應預期在3000毫秒內完成。 響應失敗，[!DNL Audience Manager]將僅進行一次重試。
 
 ## 參數
 
-下表定義您傳送至目 [!DNL JSON] 標的資料檔案中的元素。
+下表定義了傳送到目標的[!DNL JSON]資料檔案中的元素。
 
 <table id="table_68475F9D01ED4A44B5909234114AEDE2"> 
  <thead> 
@@ -68,9 +68,9 @@ ht-degree: 5%
    <td colname="col2"> <p>整數 </p> </td> 
    <td colname="col3"> <p>User.DataPartner_UUID屬性中指示消息中包含的設備ID類型的ID。 </p> 
     <ul id="ul_159306B0CF304DE0B9A9836D41263E70"> 
-     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GAID): <code> 20914</code> </li> 
-     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA): <code> 20915</code> </li>
-     <li>網頁/Cookie ID: 因目的平台而異</li>
+     <li id="li_46F9F4F9DDC34AB683AE2DF0317FBCAC">Android ID(GAID):<code> 20914</code> </li> 
+     <li id="li_57DEB2A7B9024A94A0E302EEA967AB0B">iOS ID(IDFA):<code> 20915</code> </li>
+     <li>網頁/Cookie ID:因目的平台而異</li>
     </ul> </td> 
   </tr> 
   <tr valign="top"> 
@@ -86,7 +86,7 @@ ht-degree: 5%
   <tr valign="top"> 
    <td colname="col1"><code><i>User_count</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>請求中的使用者總 <code> POST</code> 數。 </p> </td> 
+   <td colname="col3"> <p><code> POST</code>請求中的使用者總數。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Users</i></code> </td> 
@@ -96,7 +96,7 @@ ht-degree: 5%
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>Audience Manager <span class="keyword"></span> UUID。 </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> UUID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -106,7 +106,7 @@ ht-degree: 5%
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> 陣列 </td> 
-   <td colname="col3"> 我 <span class="keyword"> 們看過此裝置的Audience Manager</span> 地區ID。 例如，如果裝置在巴黎（歐洲）有某些活動，地區ID就會是 <code> 6</code>。 請參閱 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 地區 ID、位置與主機名稱</a>。 </td> 
+   <td colname="col3"> 我們看到此裝置的<span class="keyword"> Audience Manager</span>地區ID。 例如，如果裝置在巴黎（歐洲）有某些活動，地區ID會是<code> 6</code>。 請參閱 <a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md">DCS 地區 ID、位置與主機名稱</a>。 </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segments</i></code> </td> 
@@ -123,15 +123,15 @@ ht-degree: 5%
    <td colname="col2"> <p>整數 </p> </td> 
    <td colname="col3"> <p>定義群體中使用者的狀態。 接受下列值： </p> 
     <ul id="ul_42C4625E9543494586CF6D851A94E048"> 
-     <li id="li_6F13809ECD78403FB3BDA626403E4B57"><code> 1</code>: 作用中（預設） </li> 
-     <li id="li_10952C8DF7AF4593805FA29028257E38"><code> 0</code>: 非活動中、選擇退出或未分段。 </li> 
+     <li id="li_6F13809ECD78403FB3BDA626403E4B57"><code> 1</code>:作用中（預設） </li> 
+     <li id="li_10952C8DF7AF4593805FA29028257E38"><code> 0</code>:非活動中、選擇退出或未分段。 </li> 
     </ul> <p>當使用者符合下列條件時，會取消劃分使用者： </p> 
     <ul id="ul_E17B080D8DF14D548E1142A9201C1C14"> 
      <li id="li_8352B919A87242E68716FB9EC0443407">根據區段規則從區段移除。 </li> 
-     <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根據區段的上線時間間隔， <a href="../../../features/traits/segment-ttl-explained.md"> 從區段中移除</a>。 </li> 
+     <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">根據區段的<a href="../../../features/traits/segment-ttl-explained.md">上線時間間隔</a>，從區段移除。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果最近120天未看到非活動狀態，則移至此狀態。 </li>
-     <li>因隱私權變更要求而移除(例如 <span class="keyword"> GDPR</span>)</li>
-    </ul> <p>同步至 <span class="keyword"> Audience Manager</span> ID的所有合作夥伴ID，在取消區隔使 <code> "Status":"0"</code> 用者時都會收到旗標。 </p> </td> 
+     <li>因隱私權變更要求而移除(即<span class="keyword"> GDPR</span>)</li>
+    </ul> <p>與<span class="keyword"> Audience Manager</span> ID同步的所有合作夥伴ID，在取消區隔使用者時，都會收到<code> "Status":"0"</code>標幟。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
 ## 安全性
 
-您可以使用私密金鑰簽署 [HTTP請求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md) ，或透過 [!DNL Audience Manager][](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md) OAuth 2.0通訊協定進行驗證，以確保即時傳出資料傳輸程式的安全。
+您可以使用私密金鑰來簽署HTTP要求[，或透過[!DNL Audience Manager]OAuth 2.0[通訊協定來驗證](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)，以確保即時傳出資料傳輸程式的安全。](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
 
 ## 請求
 
