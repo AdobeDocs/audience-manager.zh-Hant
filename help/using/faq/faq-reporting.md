@@ -27,7 +27,7 @@ faq_reports.xml
 
  -->
 
-**針對新的已上線特徵，為何[!UICONTROL Trait Graph]有時會顯示低於預期的數字或 0？**
+**針對新的已上線特徵，為何 [!UICONTROL Trait Graph] 有時會顯示低於預期的數字或 0？**
 
 上傳特徵後，有時 [!UICONTROL Trait Graph] 不會顯示任何結果或顯示低於預期的數字。當我們收到的資料量非常龐大，以致於傳入處理工作無法在當天的報表截止期限之前將這些資訊擷取完成，就會發生此情況。
 
@@ -35,7 +35,7 @@ faq_reports.xml
 
 <br> 
 
-**[!UICONTROL Overlap]報表中缺少某些區段。它們在哪裡？**
+**[!UICONTROL Overlap] 報表中缺少某些區段。它們在哪裡？**
 
 為協助降低計算需求，這些報表會忽略結果中不具統計價值的資料。您的區段沒有消失，而是因為不會產生有意義的結果或您可定位的有用使用者群而被系統捨棄。另請參閱：
 
@@ -101,12 +101,12 @@ faq_reports.xml
 
 <br> 
 
-**為什麼我已上線特徵的[!UICONTROL Total Trait Realizations]一直都是 0？**
+**為什麼我已上線特徵的 [!UICONTROL Total Trait Realizations] 一直都是 0？**
 
 [!UICONTROL Total Trait Realizations] 對應至頁面載入次數。[!UICONTROL Total Trait Realizations] 會即時提供特定特徵引發的次數。此數字只會針對規則型特徵進行計算。已上線的特徵會一律將 [!UICONTROL Total Trait Realizations] 顯示為 0。
 
 <br> 
 
-**我建立了一個特徵，而[!UICONTROL Trait Graph]顯示的[!UICONTROL Unique Trait Realizations]數量比的[!UICONTROL Total Trait Population]還多。這個情況正常嗎？**
+**我建立了一個特徵，而 [!UICONTROL Trait Graph] 顯示的 [!UICONTROL Unique Trait Realizations] 數量比的 [!UICONTROL Total Trait Population] 還多。這個情況正常嗎？**
 
 您之所以看到這個情況，是因為 [!UICONTROL Unique Trait Realizations] 為即時量度，但我們用來計算 [!UICONTROL Total Trait Population] 的報表工作並非即時執行。幾天內 [!UICONTROL Total Trait Population] 應該會比 [!UICONTROL Unique Trait Realizations] 還多。
