@@ -57,9 +57,9 @@ ht-degree: 91%
 
  
 
-**我可以先上傳傳入資料檔案 ([!DNL .sync]或[!DNL .overwrite]檔)，再將[!DNL Audience Manager]程式碼部署到生產環境嗎？**
+**我可以先上傳傳入資料檔案 ([!DNL .sync] 或 [!DNL .overwrite] 檔)，再將 [!DNL Audience Manager] 程式碼部署到生產環境嗎？**
 
-是。As long as you use a [!UICONTROL cross-device data source] to store the CRM data that you upload, Audience Manager always stores the data. In fact, following the [!UICONTROL Profile Merge Rules] enhancements that Audience Manager launched in October 2019 that allow for offline-only use cases, you can upload and action on data without deploying Audience Manager code into production at all. 請參閱：
+是。只要您使用[!UICONTROL cross-device data source]來儲存您上傳的CRM資料，Audience Manager就會一律儲存資料。 事實上，在Audience Manager於2019年10月啟動的[!UICONTROL Profile Merge Rules]增強功能允許離線使用案例後，您就可以上傳資料並採取動作，而不需將Audience Manager程式碼部署至生產環境。 請參閱：
 
 * [設定檔合併規則增強功能概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
 * [!UICONTROL People-based Destinations] -根 [據僅離線資料個人化](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.translate.html)
@@ -188,7 +188,7 @@ FTP 檔案一經處理便會隨即移除。[!DNL S3] 檔案會在 30 天後移�
 
  
 
-**什麼是[!DNL Data Provider ID (DPID)]a，我要如何取得？**
+**什麼是a, [!DNL Data Provider ID (DPID)] 我要如何取得？**
 
 Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [DPID (資料提供者 ID)](../reference/ids-in-aam.md)。此 ID 不重複且不會變更。
 
@@ -221,13 +221,13 @@ Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [
 
  
 
-**我應使用 FTP 或[!DNL Amazon S3]傳輸檔案？**
+**我應使用 FTP 或 [!DNL Amazon S3] 傳輸檔案？**
 
 根據最佳實務，建議您使用 [!DNL Amazon S3]，因為其流程較簡單。無論如何 [!DNL Audience Manager] 都會將 FTP 檔案傳輸至 [!DNL S3]，如果您自行將檔案放置到 [!DNL Amazon S3] 上，流程就會更簡化。此外，同時上傳至 FTP 的客戶會共用 FTP 的頻寬，因此預期的上傳速度較慢。系統也會複製和分配 [!DNL Amazon S3]，因此通常比 FTP 伺服器更安全可靠。如需詳細資訊，請參閱[關於 Amazon S3](../reference/amazon-s3.md)。
 
 >[!WARNING]
 >
->我們正逐步淘汰對 FTP 組態的支援。While inbound data file ingestion is still supported in existing FTP integrations, we strongly recommend using [!DNL Amazon S3] to onboard offline data for new integrations. 如需詳細資訊，請參閱[傳入資料檔案的 Amazon S3 名稱和檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+>我們正逐步淘汰對 FTP 組態的支援。雖然現有FTP整合仍支援傳入資料檔案擷取，但強烈建議使用[!DNL Amazon S3]來載入新整合的離線資料。 如需詳細資訊，請參閱[傳入資料檔案的 Amazon S3 名稱和檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
