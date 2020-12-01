@@ -19,9 +19,9 @@ ht-degree: 3%
 
 列出可用於建立出站模板的宏。 這些宏包括檔案名宏、標題宏和內容宏。
 
-## 檔案名和檔案標題宏 {#file-name-header-macros}
+## 檔案名和檔案標題宏{#file-name-header-macros}
 
-該表列出並說明了可在檔案名中使用的宏，以及定義標題欄位。 如需程式碼範例，請參 [閱對外巨集範例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)。
+該表列出並說明了可在檔案名中使用的宏，以及定義標題欄位。 有關代碼示例，請參見[出站宏示例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)。
 
 <table id="table_C353AF028E0A4944A8727FD01C94FDB6"> 
  <thead> 
@@ -87,15 +87,15 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TIMESTAMP </code> </p> </td> 
-   <td colname="col2"> <p>10位數的UTC、Unix時間戳記。 </p> <p>也可以按照Java日期／時 <code> &lt;TIMESTAMP; format="YYYYMMDDhhmmss"&gt; </code> 間戳格式規則進行格式化。 </p> </td> 
+   <td colname="col2"> <p>10位數的UTC、Unix時間戳記。 </p> <p>它也可以按照Java日期／時間戳記格式規則格式化為<code> &lt;TIMESTAMP; format="YYYYMMDDhhmmss"&gt; </code>。 </p> </td> 
   </tr>
 
 </tbody> 
 </table>
 
-## 內容巨集 {#content-macros}
+## 內容宏{#content-macros}
 
-用於格式化資料檔案內容的宏。 如需程式碼範例，請參 [閱對外巨集範例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)。
+用於格式化資料檔案內容的宏。 有關代碼示例，請參見[出站宏示例](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)。
 
 <table id="table_5C6F9678CFF34C5EB67BA1DEA0479F1D"> 
  <thead> 
@@ -107,7 +107,7 @@ ht-degree: 3%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> CLOSE_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入右括弧 <code>}</code> 字元。 </p> </td> 
+   <td colname="col2"> <p>插入右括弧<code>}</code>字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
@@ -123,7 +123,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DPUUIDS </code> </p> </td> 
-   <td colname="col2"> <p>此巨集的輸出會將資料提供者ID(DPID)對應至相關的唯一使用者ID(DPUUID)。 此宏必須具有格式字串才能控制其輸出。 範例輸出看起來類似下列： </p> <p> <code> "dpids=dpid1,dpid2,...dpid n|maxMappings= n|format=json" </code> </p> <p>設 <code> maxMappings </code> 置確定要返回宏的映射數。 當 <code> maxMappings=0 </code>時，此宏返回每個指定DPID的所有映射。 資料會依時間戳記（最新的先行）排序，並傳回最大時間戳記優先的結果。 </p> </td> 
+   <td colname="col2"> <p>此巨集的輸出會將資料提供者ID(DPID)對應至相關的唯一使用者ID(DPUUID)。 此宏必須具有格式字串才能控制其輸出。 範例輸出看起來類似下列： </p> <p> <code> "dpids=dpid1,dpid2,...dpid n|maxMappings= n|format=json" </code> </p> <p><code> maxMappings </code>設定確定要返回宏的映射數。 當<code> maxMappings=0 </code>時，此宏將返回每個指定DPID的所有映射。 資料會依時間戳記（最新的先行）排序，並傳回最大時間戳記優先的結果。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> if(SEGMENT_LIST &amp;&amp; REMOVED_SEGMENT_LIST)endif </code> </p> </td> 
@@ -135,7 +135,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入一個左括弧 <code>{</code> 字元。 </p> </td> 
+   <td colname="col2"> <p>插入一個左括弧<code>{</code>字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
@@ -151,7 +151,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OUTPUT_ATTRIBUTE_VALUE </code> </p> </td> 
-   <td colname="col2"> <p>傳回 <code> 1 </code> 為靜態、硬式編碼值。 </p> </td> 
+   <td colname="col2"> <p>傳回<code> 1 </code>為靜態、硬式編碼值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> PID </code> </p> </td> 
@@ -169,17 +169,17 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> SEGMENT_LIST </code> </p> </td> 
    <td colname="col2"> <p>傳回清單中的區段清單。 接受以下可選參數： </p> 
     <ul id="ul_B111AA0D6C18445598A1444B8B7E9325"> 
-     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>:區段ID。 不再提倡。使用 <code> sid </code>。 </li> 
-     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>:客戶區段ID。 不再提倡。使用 <code> sid </code>。 </li> 
+     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>:區段ID。不再提倡。使用 <code> sid </code>。 </li> 
+     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>:客戶區段ID。不再提倡。使用 <code> sid </code>。 </li> 
      <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>:區段ID </li> 
      <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>:傳回 <code> 5 </code>靜態、硬式編碼值，將資料識別為區段資料。 </li> 
      <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> alias </code>: 已過時. 請勿使用。 </li> 
      <li id="li_DD778AA2D1DB4D409CF5026B5D9DBD27"> <code> lastUpdateTime </code>:Unix時間戳記，指示上次實現段的時間。 </li> 
-    </ul> <p>將這些變數放在巨集後面的大括弧中。 例如，此程式碼會以垂直號"|"字元分隔結果： <code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;}; separator=","&gt; </code> </p> </td> 
+    </ul> <p>將這些變數放在巨集後面的大括弧中。 例如，此程式碼會以垂直號"|"字元分隔結果：<code> &lt;SEGMENT_LIST:{seg|&lt;seg.type&gt;,&lt;seg.sid&gt;}; separator=","&gt; </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
-   <td colname="col2"> <p>傳 <code> 1 </code>回靜態、硬式編碼值。 </p> </td> 
+   <td colname="col2"> <p>傳回<code> 1 </code>作為靜態、硬式編碼值。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SYNC_MODE </code> </p> </td> 
@@ -206,14 +206,14 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> TRAIT_LIST </code> </p> </td> 
    <td colname="col2"> <p>傳回特徵清單。 接受以下可選參數： </p> 
     <ul id="ul_E9CDC4DD47B9435086FF42143D9E8177"> 
-     <li id="li_4BBC57F0D7874F8EA8C6D39DB3572257"> <code> type </code>:依數值ID識別特徵類型。 傳回: 
+     <li id="li_4BBC57F0D7874F8EA8C6D39DB3572257"> <code> type </code>:依數值ID識別特徵類型。傳回: 
       <ul id="ul_D2357E6CF47B4EBC8D3772D17B2EADA3"> 
        <li id="li_C6C2A019FCD945E085E1ABB564C4EDAD"> <code> 10 </code> 識別DPM特徵（離線，由傳入工作加入）。 </li> 
        <li id="li_7AFF8A1D0E1140459CC95CF43A97B9B6"> <code> 3 </code> 識別規則型特徵（即時，透過DCS登入）。 </li> 
       </ul> </li> 
      <li id="li_1DDE25334CF9479A8C4738F3CB3C40AA"> <code> traitId </code>:特徵ID。 </li> 
-     <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> lastRealized </code>:上次這個特徵實現時。 Unix時間戳記。 </li> 
-    </ul> <p>將這些變數放在巨集後面的大括弧中。 例如，此程式碼會以垂直號"|"字元分隔結果： <code> &lt;TRAIT_LIST:{trait|&lt;trait.Id&gt;,&lt;trait.lastRealized&gt;};separator="," </code> </p> </td> 
+     <li id="li_DCB89F2A40BB43C98EE3C84B5B3CDD33"> <code> lastRealized </code>:上次這個特徵實現時。Unix時間戳記。 </li> 
+    </ul> <p>將這些變數放在巨集後面的大括弧中。 例如，此程式碼會以垂直號"|"字元分隔結果：<code> &lt;TRAIT_LIST:{trait|&lt;trait.Id&gt;,&lt;trait.lastRealized&gt;};separator="," </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> UUID </code> </p> </td> 
