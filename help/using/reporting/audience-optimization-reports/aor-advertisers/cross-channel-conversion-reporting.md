@@ -19,13 +19,13 @@ ht-degree: 4%
 
 「對象最佳化」報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
 
-報表 [!UICONTROL Cross Channel Conversion] 會結合來自平台的結 [!DNL Google Campaign Manager] 果與轉 [!DNL Audience Manager] 換特性。 這可讓您將離線轉換連結至線上印象或點按。
+[!UICONTROL Cross Channel Conversion]報表結合來自[!DNL Google Campaign Manager]平台的結果與[!DNL Audience Manager]轉換特性。 這可讓您將離線轉換連結至線上印象或點按。
 
-您可使用「區 [!UICONTROL Cross Channel Conversion] 段效 [能](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) 」和「最 [佳頻率](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md) 」報表。
+您可以對[區段效能](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)和[最佳頻率](../../../reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)報表使用[!UICONTROL Cross Channel Conversion]。
 
-若要檢視 [!UICONTROL Cross Channel Conversion] 報表，請選取下 **[!UICONTROL AAM + Ad Server Name]** 拉式清單 **[!UICONTROL Platform]** 中的項目。
+若要檢視[!UICONTROL Cross Channel Conversion]報表，請在&#x200B;**[!UICONTROL Platform]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL AAM + Ad Server Name]**&#x200B;項目。
 
-下表列出了設定時的重要注意事項 [!UICONTROL Cross Channel Conversion]:
+下表列出了在設定[!UICONTROL Cross Channel Conversion]時的重要注意事項：
 
 <table id="table_62590B4AB7624B619EC9AA8FF89722C9"> 
  <thead> 
@@ -37,11 +37,11 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td colname="col01"> <p>轉換特徵的最小數目 </p> </td> 
-   <td colname="col1"> <p>至少必須將一個轉換特徵指派給資料來源，才能執行「跨通 <span class="wintitle"> 道轉換</span> 」報表。 如需 <a href="../../../features/traits/create-onboarded-rule-based-traits.md"> 特徵的詳細資訊</a> ，請參閱特徵的基本資訊。 </p> </td> 
+   <td colname="col1"> <p>至少必須將一個轉換特徵指派給資料來源，<span class="wintitle">跨通道轉換</span>報表才能執行。 如需特徵的詳細資訊，請參閱<a href="../../../features/traits/create-onboarded-rule-based-traits.md">特徵的基本資訊</a>。 </p> </td> 
   </tr>
   <tr> 
    <td> <p>歸因視窗 </p> </td> 
-   <td> <p> <b><span class="uicontrol"> AAM+Google Campaign Manager</span></b> Attribution視窗為14天，這表示僅會考慮過去兩週所呈現的轉換特徵。 </p> </td> 
+   <td> <p> <b><span class="uicontrol"> AAM+Google Campaign </span></b> Manager歸因視窗為14天，這表示僅會考慮過去兩週所呈現的轉換特徵。 </p> </td> 
   </tr> 
   <tr> 
    <td> <p>上次接觸方法 </p> </td> 
