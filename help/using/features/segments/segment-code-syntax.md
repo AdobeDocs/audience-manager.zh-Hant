@@ -17,7 +17,7 @@ ht-degree: 11%
 
 # 區段運算式編輯器中使用的程式碼語法 {#code-syntax-used-in-the-segment-expression-editor}
 
-[!UICONTROL Segment Builder] 可讓您使用程式碼編輯器建立區段的特徵規則。 按一下面 **[!UICONTROL Segment Expressions (Code View)]** 板中的標 [!UICONTROL Traits] 簽以存取此功能。
+[!UICONTROL Segment Builder] 可讓您使用程式碼編輯器建立區段的特徵規則。按一下[!UICONTROL Traits]面板中的&#x200B;**[!UICONTROL Segment Expressions (Code View)]**&#x200B;頁籤以訪問此功能。
 
 ## 運算式產生器程式碼語法
 
@@ -30,11 +30,11 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 
 >[!NOTE]
 >
->依預設， [!DNL Boolean] 條件會 [!UICONTROL OR] 套用至運算式 *中的多* 個特徵。
+>依預設，[!DNL Boolean] [!UICONTROL OR]條件適用於運算式中的多個特徵&#x200B;*。*
 
 ### 使用布林運算子連結區段
 
-若要建立區段群組，請以括弧括住頻率函式，並使用運算子( *、* 和)設定每個運算式 [!DNL Boolean] 之間的關[!UICONTROL AND][!UICONTROL OR][!UICONTROL NOT]系。
+若要建立區段群組，請以括弧括住頻率函式，並使用[!DNL Boolean]運算子（[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL NOT]）設定每個運算式之間的&#x200B;*關係。*
 
 ### 參數
 
@@ -45,13 +45,13 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 | 名稱或變數 | 說明 |
 |---|---|
 | `FREQUENCY` | 必須位於運算式前方的常值。 |
-| ` [`&lt;`traitID`>`T]` | 一組特徵ID，後面接著字母 `T`。 以逗號分隔多個特徵。 例如, `[123T, 456T]`. |
-| ` <Recency Operator><Numeric Value>D` | *（可選）* ，設定區段中特徵的時近規則。 信以天 `D` 為單位表示最近一次。 |
+| ` [`&lt;>>`T]``traitID` | 字母`T`後面的特徵ID陣列。 以逗號分隔多個特徵。 例如, `[123T, 456T]`. |
+| ` <Recency Operator><Numeric Value>D` | *（選用）* 設定區段中特徵的時近規則。字母`D`表示最近的天數。 |
 | ` <Frequency Operator><Numeric Value>` | 設定區段中特徵的頻率規則。 |
 
 ### 允許的時近和頻率運算子
 
-使用 [比較運算子和整數](../../features/segments/recency-and-frequency.md) ，設定時近和頻率間隔。 [!UICONTROL Segment Builder] 使用標準運算式，例如&lt;（小於）、>（大於）、==（等於）等。 不過，當您設定時近或頻率時，允許的運算子類型會有所不同。 下表列出允許的時近／頻率運算子。
+使用比較運算子和整數設定[時近和頻率](../../features/segments/recency-and-frequency.md)間隔。 [!UICONTROL Segment Builder] 使用標準運 &lt;> 算式，例如（大於）、==（等於）等。不過，當您設定時近或頻率時，允許的運算子類型會有所不同。 下表列出允許的時近／頻率運算子。
 
 <table id="table_2F92617CB472442BA5639E24DB4E43D3"> 
  <thead> 
@@ -65,12 +65,12 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
    <td colname="col1"> 
     <ul id="ul_66D11A34097648A997BA5C6CCC38503A"> 
      <li id="li_EA0B607E58834E62B427C0B7626C2BD1">&gt;=（大於／等於） </li> 
-     <li id="li_CFE3D2DBEF424093A0497A70324D5B31">&lt;=（小於／等於） </li> 
+     <li id="li_CFE3D2DBEF424093A0497A70324D5B31">&lt;&gt; </li> 
     </ul> </td> 
    <td colname="col2"> 
     <ul id="ul_A5A38BCD71B844F0B5FB28256069F87E"> 
      <li id="li_EA17C353214E4C2EA2B70169C94A2E53">&gt;=（大於／等於） </li> 
-     <li id="li_87CE5CCC6B44446BB2FD0AAD47712368">&lt;=（小於／等於） </li> 
+     <li id="li_87CE5CCC6B44446BB2FD0AAD47712368">&lt;&gt; </li> 
      <li id="li_7E922AEF3A524E78A18A9F6ECBF7460B">==（等於） </li> 
     </ul> </td> 
   </tr> 
