@@ -21,7 +21,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的 [RBAC使用者群組，從您有權存取的資料來源中看到區段和特徵](/help/using/features/administration/administration-overview.md) 。
+>Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的[RBAC使用者群組](/help/using/features/administration/administration-overview.md)，從您有權存取的資料來源看到區段和特徵。
 
 <!-- 
 
@@ -31,11 +31,11 @@ c_segment_trait_overlap.xml
 
 ## 概述
 
-作為最佳化工具，報表可 [!UICONTROL Segment to Trait Overlap] 協助您建立高度重點的區段或擴大區段觸及面。 例如，您可以建立重疊度高的重點區段和特徵，以觸及特定對象。 不過，大量重疊可能意味著獨特使用者減少（觸及面減少）。 執行此報表可移除具有大量區段重疊的特徵，並以較少重疊的特徵取代，借以協助擴展觸及面。
+[!UICONTROL Segment to Trait Overlap]報表是最佳化工具，可協助您建立高度重點的區段或擴大區段觸及面。 例如，您可以建立重疊度高的重點區段和特徵，以觸及特定對象。 不過，大量重疊可能意味著獨特使用者減少（觸及面減少）。 執行此報表可移除具有大量區段重疊的特徵，並以較少重疊的特徵取代，借以協助擴展觸及面。
 
 ### 範例報表
 
-下圖提供報表的高階概 [!UICONTROL Segment-to-Trait Overlap] 觀。
+下圖提供[!UICONTROL Segment-to-Trait Overlap]報表的高階概述。
 
 ![](assets/segment-to-trait-overlap.png)
 
@@ -43,7 +43,7 @@ c_segment_trait_overlap.xml
 
 選取個別點，以在快顯視窗中檢視資料詳細資訊。 您的點按動作會自動更新顯示在報表中的資料。
 
-## 比較區段與特徵 {#comparing-segments-to-traits}
+## 比較區段與特徵{#comparing-segments-to-traits}
 
 說明如何比較區段和特徵，從結果中衍生出有意義的資訊。
 
@@ -53,7 +53,7 @@ c_compare_s2t.xml
 
  -->
 
-### 比較特徵和區段獨特值： 範例
+### 比較特徵和區段獨特值：範例
 
 乍一看，比較區段與特徵並嘗試從結果中得出結論，似乎不合邏輯。 畢竟，區段和特徵是不同的，因此從不同項目衍生的資料又有何意義？ 但是，在此案例中，我們不會比較特徵和區段，而是在它們之間共用的獨特訪客數量。 共用的獨特訪客計數提供可進行區段與特徵比較的通用值。
 
@@ -84,12 +84,12 @@ c_compare_s2t.xml
   </tr> 
   <tr> 
    <td colname="col1"><b>尋找效率不彰的區段</b> </td> 
-   <td colname="col2"> <p>如果特徵是區段定義中 <span class="wintitle"> AND</span> 群組的一部分，則具有該特徵的獨特訪客已在區段中，無法新增至區段。 您可以使用此報表來尋找低重疊率的相關特性，並將其新增至區段定義，因此可增加該區段讀者群的觸及面。 </p> </td> 
+   <td colname="col2"> <p>如果特徵是區段定義中<span class="wintitle"> AND</span>群組的一部分，則具有該特徵的獨特訪客已在區段中，無法新增至區段。 您可以使用此報表來尋找低重疊率的相關特性，並將其新增至區段定義，因此可增加該區段讀者群的觸及面。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 瞭解區段對特徵重疊報表中的資料篩選 {#data-filters-s2t-report}
+## 瞭解區段對特徵重疊報表{#data-filters-s2t-report}中的資料篩選
 
 說明特徵和區段獨特重疊%滑桿的運作方式。
 
@@ -99,7 +99,7 @@ r_s2t_sliders.xml
 
  -->
 
-報 [!UICONTROL Segment-to-Trait overlap] 表可讓您使用兩個滑桿，依特徵或區段依重疊百分比來篩選資料。
+[!UICONTROL Segment-to-Trait overlap]報表可讓您使用兩個滑桿，依特徵或區段依重疊百分比來篩選資料。
 
 * **[!UICONTROL Filter Trait Uniques %:]** 依特徵和區段之間共用的獨特訪客百分比篩選資料。
 * **[!UICONTROL Filter Segment Uniques Overlap %:]** 依區段與特徵之間共用的獨特訪客百分比篩選資料。
@@ -113,7 +113,7 @@ r_s2t_sliders.xml
 
 ![](assets/s2t.png)
 
-## 定義的區段對特徵資料快顯欄位 {#fields-defined}
+## 定義{#fields-defined}的區段到特徵資料快顯欄位
 
 說明當您按一下個別資料點時，在快顯視窗中顯示的量度。
 
@@ -123,7 +123,7 @@ r_s2t_data_pop.xml
 
  -->
 
-報表的快顯功 [!UICONTROL Segment-to-Trait Overlap] 能包含下列量度。 請注意，表格中的獨特度量代表 *您的即時使用者*。
+[!UICONTROL Segment-to-Trait Overlap]報表的快顯功能表包含下列度量。 請注意，表格中的獨特值度量代表您的&#x200B;*即時使用者*。
 
 <table id="table_4AF72754276242FFB11543635B43AD90"> 
  <thead> 
@@ -138,7 +138,7 @@ r_s2t_data_pop.xml
    <td colname="col2"> 區段的唯一數值ID。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b><span class="wintitle"> 特徵資料來源 </span></b> </td> 
+   <td colname="col1"><b><span class="wintitle"> 特徵資料來源  </span></b> </td> 
    <td colname="col2"> 特徵擁有者的名稱。 </td> 
   </tr> 
   <tr> 
