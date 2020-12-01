@@ -21,12 +21,12 @@ ht-degree: 78%
 
 ## 要求 {#requirements}
 
-To use `isCoopSafe` you must:
+要使用`isCoopSafe`，您必須：
 
-* 使 [!UICONTROL DIL] 用v6.11或更新版本。
+* 使用[!UICONTROL DIL] v6.11或更新版本。
 * 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/home.translate.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
-* Work with your [!DNL Adobe] consultant to set an allowlist or a denylist flag on your Device Co-op account. 沒有自助路徑可啟用這些標誌。
+* 請與[!DNL Adobe]顧問合作，在您的Device Co-op帳戶上設定allowlist或denylist旗標。 沒有自助路徑可啟用這些標誌。
 
 ## 使用個案 {#use-cases}
 
@@ -42,11 +42,11 @@ To use `isCoopSafe` you must:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>已驗證的訪客</b> </p> </td> 
-   <td colname="col2"> <p>Add <code> isCoopSafe </code> to your <span class="wintitle"> DIL </span> code to control how data for authenticated visitors who have or have not accepted term-of-use agreements is used by the Device Co-op to build the device graph. </p> </td> 
+   <td colname="col2"> <p>將<code> isCoopSafe </code>新增至您的<span class="wintitle"> DIL </span>程式碼，以控制Device Co-op如何使用已驗證且已簽署或尚未接受使用期限合約的訪客的資料來建立裝置圖表。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第三方網站上的 DIL</b> </p> </td> 
-   <td colname="col2"> <p>Add <code> isCoopSafe </code> to your <span class="wintitle"> DIL </span> code for use on third-party sites where you: </p> <p> 
+   <td colname="col2"> <p>將<code> isCoopSafe </code>新增至您的<span class="wintitle"> DIL </span>程式碼，以便用於您下列情況的協力廠商網站： </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">無法確保已驗證的訪客是否已經接受使用者條款。 </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制 Device Co-op 使用資料的方式，以建立裝置圖形。 </li> 
@@ -78,7 +78,7 @@ var dilInstance = DIL.create({
 
 ## 事件呼叫 POST 參數 {#post-parameters}
 
-Depending on the flag you set ( `true` or `false`), [!UICONTROL DIL] translates `isCoopSafe` into these POST parameters and sends them to [!DNL Adobe] in an event call:
+根據您設定的標籤（`true`或`false`）,[!UICONTROL DIL]將`isCoopSafe`轉換為這些POST參數，並在事件調用中將其發送到[!DNL Adobe]:
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
@@ -104,7 +104,7 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
  </tbody> 
 </table>
 
-## Post-Instantiation API {#post-instantiation}
+## Post-Instantiation API  {#post-instantiation}
 
 這些 API 允許您覆寫 `isCoopSafe` 狀態。這些都是必要措施，因為它們可以讓您在網站或未重新整理的單頁應用程式中變更訪客實例化之後/登錄之後的狀態。舉例來說，如果用戶向您的網站或應用程式進行身份驗證，並隨後接受使用者條款原則允許 Device Co-op 使用其資料，則您可能需要呼叫這些 API。
 
@@ -118,11 +118,11 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopSafe(); </code> </p> </td> 
-   <td colname="col2"> <p>Sets POST parameter <code> d_coop_safe=1 </code> in all subsequent event calls. </p> </td> 
+   <td colname="col2"> <p>在所有後續事件呼叫中設定POST參數<code> d_coop_safe=1 </code>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopUnsafe(); </code> </p> </td> 
-   <td colname="col2"> <p>Sets POST parameter <code> d_coop_unsafe=1 </code> in all subsequent event calls. </p> </td> 
+   <td colname="col2"> <p>在所有後續事件呼叫中設定POST參數<code> d_coop_unsafe=1 </code>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
