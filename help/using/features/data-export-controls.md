@@ -21,30 +21,30 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-[!UICONTROL Data Export Controls] 可讓您分類 [資料來源](../features/datasources-list-and-settings.md#data-sources-list-and-settings)[和目標](../features/destinations/destinations.md)。 您套用的分類會決定資料何時可匯出至目的地。 此功能包括：
+[!UICONTROL Data Export Controls] 可讓您分類資 [料來](../features/datasources-list-and-settings.md#data-sources-list-and-settings) 源和 [目的地](../features/destinations/destinations.md)。您套用的分類會決定資料何時可匯出至目的地。 此功能包括：
 
-* **[!UICONTROL Data Export Controls]**: 您可以在資料來源上設定「資料匯 *出控制」*。 當在資料來源上設定時，這些控制項會限制資料來源及其特性的使用方式。
-* **[!UICONTROL Data Export Labels]**: 您可以在目標上設定「資料匯出 *標籤」*。 在目標上設定時，這些標籤會識別目標使用資料的方式。 請參 [閱新增資料匯出標籤至目標](/help/using/features/destinations/add-data-export-labels.md) ，瞭解如何新增匯出標籤至目標。
+* **[!UICONTROL Data Export Controls]**:您可以在資料來源上設定「資料匯 *出控制」*。當在資料來源上設定時，這些控制項會限制資料來源及其特性的使用方式。
+* **[!UICONTROL Data Export Labels]**:您可以在目標上設定「資料匯出 *標籤」*。在目標上設定時，這些標籤會識別目標使用資料的方式。 請參閱[將資料匯出標籤新增至目標](/help/using/features/destinations/add-data-export-labels.md)，瞭解如何將匯出標籤新增至目標。
 
 根據套用至資料來源和目的地的分類，匯出控制項會讓您無法：
 
 * 當特徵屬於資料來源時，新增特徵至區段，其資料匯出控制項與區段所對應之一或多個目的地上的資料匯出標籤不相容。
-例如，假設區段已對應至具有匯出標籤的目標 **[!DNL This destination may enable a combination with personally identifiable information (PII)]**。 如果特徵所屬的資料來源具有顯示的資料匯出控制項，則匯出控制項會阻止您新增特徵至該區段 **[!DNL Cannot be tied to personally identifiable information (PII)]**。
+例如，假設區段已映射至具有匯出標籤**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目的地。 如果特徵所屬的資料來源具有顯示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的資料匯出控制，則匯出控制項會阻止您新增特徵至該區段。
 * 將任何資料發送到目標目標目標具有資料導出標籤，該標籤被以下任一目標的資料導出控制所阻止：
    * 內含特徵的資料來源；
    * 包含區段中使用之特徵的資料來源；
    * 包含的區段採用的描述檔合併規則；
    * 內含區段的描述檔合併規則所使用的任何資料來源。
 
-[!UICONTROL Data Export Controls] 會自動提供給所有Audience Manager客戶。 不過，您需要管理員權限才能將匯出控制項新增至資料來源。 將導出標籤添加到目標需要管理員 *權限* ，或者需要足夠的權限才能建立或編輯目標。
+[!UICONTROL Data Export Controls] 會自動提供給所有Audience Manager客戶。不過，您需要管理員權限才能將匯出控制項新增至資料來源。 將導出標籤添加到目標需要管理員權限&#x200B;*或*&#x200B;來建立或編輯目標。
 
-## 已定義的控制項和標籤 {#controls-labels}
+## 定義{#controls-labels}的控制項和標籤
 
 [!UICONTROL Data Export Controls] 提供下列控制項以協助您分類資料來源和目標。
 
-若要封鎖資料傳送，您必須使用匯出控制項來分類資料來源，並新增匯出標籤至目標。 如果您僅將匯出控制套用至資料來源或目標，此功能將不會限制資料傳送。 在資料來源和目標上 *設定* ，匯出控制項將限制您可新增至區段的特性，並防止區段成員傳送至目標。
+若要封鎖資料傳送，您必須使用匯出控制項來分類資料來源，並新增匯出標籤至目標。 如果您僅將匯出控制套用至資料來源或目標，此功能將不會限制資料傳送。 在資料來源&#x200B;*和*&#x200B;目標上設定時，匯出控制項會限制您可新增至區段的特性，並防止區段成員傳送至目標。
 
-此外，在資料傳送限制生效之前，至少必須有一個匯出標籤符合匯出控制。 例如，假設您將匯出控 [!UICONTROL PII] 制項新增至資料來源。 接著，您將網站定位標籤新增至目標。 在這種情況下，匯出控制項不會限制資料傳送，因為設定不符。 不過，如果您將匯出標 [!UICONTROL PII] 簽新增至目標，匯出控制項將會封鎖匯出。
+此外，在資料傳送限制生效之前，至少必須有一個匯出標籤符合匯出控制。 例如，假設您將[!UICONTROL PII]匯出控制項新增至資料來源。 接著，您將網站定位標籤新增至目標。 在這種情況下，匯出控制項不會限制資料傳送，因為設定不符。 不過，如果您將[!UICONTROL PII]匯出標籤新增至目標，匯出控制項會封鎖匯出。
 
 >[!IMPORTANT]
 >
@@ -71,7 +71,7 @@ ht-degree: 1%
    <td colname="col3"> 依預設，不會針對新資料來源和目標設定匯出限制。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b><span class="uicontrol"> 無法系結至個人識別資訊</span></b> (PII) </td> 
+   <td colname="col1"> <b><span class="uicontrol"> 無法與個人識別資訊</span></b> (PII)關聯 </td> 
    <td colname="col2"> <b><span class="uicontrol"> 此目標可能會結合個人識別資訊(PII)</span></b> </td> 
    <td colname="col3">選取此選項時，您無法： 
     <ul id="ul_0D5A4D0373374217A4BACDFC3BB2F79D"> 
