@@ -1,6 +1,6 @@
 ---
-description: 協力廠商內容供應商可預期會根據這些技術規格與Audience Manager交換資料。 即時（同步）整合會在使用者造訪或在您的網站上採取動作時，近乎即時地傳輸資料。 技術、工程或開發團隊應使用此資料，協助設定使用Audience Manager進行即時資料傳輸。
-seo-description: 協力廠商內容供應商可預期會根據這些技術規格與Audience Manager交換資料。 即時（同步）整合會在使用者造訪或在您的網站上採取動作時，近乎即時地傳輸資料。 技術、工程或開發團隊應使用此資料，協助設定使用Audience Manager進行即時資料傳輸。
+description: 協力廠商內容供應商可預期會根據這些技術規格與Audience Manager交換資料。 即時（同步）整合會在使用者造訪或在您的網站上採取動作時，以近乎即時的方式傳輸資料。 技術、工程或開發團隊應使用此資料，協助設定使用Audience Manager進行即時資料傳輸。
+seo-description: 協力廠商內容供應商可預期會根據這些技術規格與Audience Manager交換資料。 即時（同步）整合會在使用者造訪或在您的網站上採取動作時，以近乎即時的方式傳輸資料。 技術、工程或開發團隊應使用此資料，協助設定使用Audience Manager進行即時資料傳輸。
 seo-title: 傳入、即時資料傳輸的技術規範
 solution: Audience Manager
 title: 傳入、即時資料傳輸的技術規範
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 # 傳入、即時資料傳輸的技術規範{#technical-specifications-for-inbound-real-time-data-transfers}
 
-協力廠商內容供應商可預期會根據這些技術規格與Audience Manager交換資料。 即時（同步）整合會在使用者造訪或在您的網站上採取動作時，近乎即時地傳輸資料。 技術、工程或開發團隊應使用此資料，協助設定使用Audience Manager進行即時資料傳輸。
+協力廠商內容供應商可預期會根據這些技術規格與Audience Manager交換資料。 即時（同步）整合會在使用者造訪或在您的網站上採取動作時，以近乎即時的方式傳輸資料。 技術、工程或開發團隊應使用此資料，協助設定使用Audience Manager進行即時資料傳輸。
 
 <!-- c_rt_realtime_intro.xml -->
 
