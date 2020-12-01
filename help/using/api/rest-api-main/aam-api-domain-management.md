@@ -21,9 +21,9 @@ ht-degree: 6%
 
 <!-- c_partner_site.xml -->
 
-## Create a New Domain {#create-new-domain}
+## 建立新域{#create-new-domain}
 
-可讓您 `POST` 建立新網域的方法（僅限Cookie目的地）。
+`POST`方法，可讓您建立新網域（僅限Cookie目標）。
 
 <!-- r_post_new_partner_site.xml -->
 
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 ### 回應
 
-成功的回應會傳 `201 created` 回合作夥伴網站，包括其唯一ID。
+成功的響應返回`201 created`和合作夥伴站點，包括其唯一ID。
 
 ```
 {
@@ -51,9 +51,9 @@ ht-degree: 6%
 }
 ```
 
-## 刪除域 {#delete-domain}
+## 刪除域{#delete-domain}
 
-可讓 `DELETE` 您移除網域的方法（僅限Cookie目的地）。
+`DELETE`方法，可讓您移除網域（僅限Cookie目的地）。
 
 <!-- r_delete_partner_site.xml -->
 
@@ -63,11 +63,11 @@ ht-degree: 6%
 
 ### 回應
 
-成功的回應會傳回 `204 no content`。 如果 `404 not found` 找不到合作夥伴站點，則返回。
+成功的響應返回`204 no content`。 如果找不到合作夥伴站點，則返回`404 not found`。
 
-## 域的返回屬性 {#return-props-domain}
+## 域{#return-props-domain}的返回屬性
 
-傳回 `GET` 指定網域的詳細資料的方法（僅適用於Cookie目的地）。
+一種`GET`方法，可傳回指定網域的詳細資料（僅適用於Cookie目的地）。
 
 <!-- r_get_partner_site.xml -->
 
@@ -77,7 +77,7 @@ ht-degree: 6%
 
 ### 回應
 
-成功的回應會傳 `200 OK` 回資料，如下列範例所示。 如果 `404 Not found` 找不到網站ID或合作夥伴，則傳回。
+成功的回應會傳回`200 OK`和資料，如以下範例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
 
 ```
 {
@@ -87,9 +87,9 @@ ht-degree: 6%
 }
 ```
 
-## 所有網域的傳回屬性 {#return-props-all-domains}
+## 返回所有域{#return-props-all-domains}的屬性
 
-傳回 `GET` 您所有網域的相關資訊的方法（僅適用於Cookie目的地）。
+一種`GET`方法，可傳回有關您所有網域的資訊（僅適用於Cookie目的地）。
 
 <!-- r_get_partner_sites.xml -->
 
@@ -99,7 +99,7 @@ ht-degree: 6%
 
 ### 可選查詢參數
 
-您可將這些可選參數與傳 [!DNL API] 回物件所 *有屬性* 的方法搭配使用。 將查詢傳入請求字串中時，請在請求字串中設定這些選項 [!DNL API]。 請參 [閱可選參數](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
+您可以將這些可選參數與返回對象&#x200B;*all*&#x200B;屬性的[!DNL API]方法一起使用。 將查詢傳入[!DNL API]時，請在請求字串中設定這些選項。 請參閱[可選參數](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -134,7 +134,7 @@ ht-degree: 6%
 
 ### 回應
 
-成功的響應 `200 OK` 返回陣列中的資料，如下例所示。 如果 `404 Not found` 找不到網站ID或合作夥伴，則傳回。
+成功的響應返回`200 OK`和陣列中的資料，如下例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
 
 ```
 [
