@@ -17,13 +17,13 @@ ht-degree: 14%
 
 # 權限管理 API 方法 {#permissions-management-api-methods}
 
-其餘 [!DNL API] 方法可管理物件和群組的權限。
+保留[!DNL API]方法來管理對象和組的權限。
 
 <!-- c_rest_api_perm_man.xml -->
 
-## 列出可用對象類型 {#list-object-types}
+## 列出可用對象類型{#list-object-types}
 
-一種 `GET` 列出可基於角色的訪問控制可設定的可用對象類型的方法。
+`GET`方法，列出可在其上設定基於角色的訪問控制的可用對象類型。
 
 <!-- r_rest_api_perm_list.xml -->
 
@@ -37,9 +37,9 @@ ht-degree: 14%
 [ "SEGMENT", "TRAIT", "DESTINATION", "DERIVED_SIGNALS", "TAGS" ]
 ```
 
-## 列出對象類型的可用權限 {#list-permissions-object-type}
+## 列出對象類型{#list-permissions-object-type}的可用權限
 
-列出 `GET` 對象類型可用權限的方法。
+`GET`方法，列出對象類型的可用權限。
 
 <!-- r_rest_api_perm_list_perms.xml -->
 
@@ -58,4 +58,4 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->對象類型TAGS和DERIVED SIGNALS沒有常規使用權限。 這些物件類型的控制項僅會依「全部」或「無萬用字元權限」來變更。
+>對象類型TAGS和DERIVED SIGNALS沒有常規使用權限。 這些物件類型的控制項僅透過「全部」或「無萬用字元權限」進行變更。
