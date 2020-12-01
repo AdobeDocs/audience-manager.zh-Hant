@@ -23,13 +23,13 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->特徵類型方法不會將特徵指派給常用分類法使 [用的類別](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)。 將這些視為與常用分類法分離的標籤。
+>特徵類型方法不會將特徵指派給[common taxonomy](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的類別。 將這些視為與常用分類法分離的標籤。
 
-對於視覺參考， [!UICONTROL Trait Types] 是位於下方的下拉式控制 [!DNL UI] 項 **[!UICONTROL Traits > Create new trait > Basic Information]**。
+對於視覺參考，[!UICONTROL Trait Types]是位於&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下[!DNL UI]的下拉式控制項。
 
-## 建立新特徵類型 {#create-trait-type}
+## 建立新特徵類型{#create-trait-type}
 
-可讓您 `POST` 建立新特徵類型的方法。
+`POST`方法，可讓您建立新的特徵類型。
 
 <!-- r_rest_api_create_trait_type.xml -->
 
@@ -60,9 +60,9 @@ ht-degree: 9%
 }
 ```
 
-## 特徵類型的返回屬性 {#return-props}
+## 特徵類型{#return-props}的傳回屬性
 
-傳回 `GET` 指定特徵類型的詳細資料的方法。
+`GET`方法，可傳回指定特徵類型的詳細資料。
 
 <!-- r_rest_api_get_trait_type.xml -->
 
@@ -85,9 +85,9 @@ ht-degree: 9%
 }
 ```
 
-## 所有特徵類型的返回屬性 {#return-props-all}
+## 所有特徵類型{#return-props-all}的傳回屬性
 
-一種 `GET` 方法，可傳回陣列中所有特徵類型的詳細資料。
+`GET`方法，可傳回陣列中所有特徵類型的詳細資料。
 
 <!-- r_rest_api_get_trait_types.xml -->
 
