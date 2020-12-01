@@ -58,43 +58,43 @@ ht-degree: 64%
 
 [!UICONTROL Predictive Audiences] 模型可能由於以下幾個原因而無法產生結果：
 
-1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough user profiles. We recommend choosing your [!UICONTROL traits] or [!UICONTROL segments] so that each persona has at least a few hundred user profiles.
-1. None of the selected persona [!UICONTROL traits] / [!UICONTROL segments] have enough data in their user profiles (not enough traits to analyze).
+1. 所有選定的角色[!UICONTROL traits] / [!UICONTROL segments]都沒有足夠的用戶配置檔案。 我們建議您選擇[!UICONTROL traits]或[!UICONTROL segments]，以便每個角色至少擁有幾百個用戶配置檔案。
+1. 選取的角色[!UICONTROL traits] / [!UICONTROL segments]在其使用者設定檔中沒有足夠的資料（沒有足夠的特徵可以分析）。
 1. 目標讀者特徵／群體沒有任何作用中或已登入的使用者。
 1. 過去 30 天內處於作用中狀態或已上線的目標受眾使用者，其使用者設定檔中的資料不足 (沒有足夠的特徵可進行分析)。
-1. 目標對象區段使用的 [!UICONTROL Profile Merge Rule] 是與您為模型選擇的區段不同。
-1. 您為模型選擇的資料來源可能不會包含目標 [!UICONTROL Profile Merge Rule] 對象特徵的資料來源。
+1. 目標對象區段使用與您為模型選擇的[!UICONTROL Profile Merge Rule]不同的&lt;a0/>。
+1. 您為模型選擇的[!UICONTROL Profile Merge Rule]中，可能不包含目標對象特徵的資料來源。
 
 為獲得最佳結果，請遵循[角色選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目標受眾選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建議准則。
 
  
 
-**為什麼我的模型顯示狀 [!UICONTROL Error] 態？**
+**為什麼我的模型顯示 [!UICONTROL Error] 狀態？**
 
-模型無法執行。In such cases, please reach out to your [!DNL Adobe] representative.
+模型無法執行。在此情況下，請聯絡您的[!DNL Adobe]代表。
 
  
 
-**我要如何變更 [!UICONTROL Profile Merge Rule] 為 [!UICONTROL Predictive Audiences][!UICONTROL segment]?**
+**我要如何變 [!UICONTROL Profile Merge Rule] 更 [!UICONTROL Predictive Audiences] [!UICONTROL segment]?**
 
-選取與先前模型相同的角色和目標對象，以建立新模型。 在建立模型期間，指定不同的模型 [!UICONTROL Profile Merge Rule]。
+選取與先前模型相同的角色和目標對象，以建立新模型。 在建立模型期間，指定不同的[!UICONTROL Profile Merge Rule]。
 
 >[!WARNING]
-> 或者，您可以使用「 [區段產生器](../features/segments/segment-builder.md) 」來手動建立具 [!UICONTROL segment] 有現有預測性的 [!UICONTROL trait] 區段，並指 [!UICONTROL Profile Merge Rule] 派您自選的項目。
+> 或者，您可以使用[區段產生器](../features/segments/segment-builder.md)手動建立具有現有預測性[!UICONTROL trait]的[!UICONTROL segment]，並指派您選擇的[!UICONTROL Profile Merge Rule]。
 > 
-> 但是，我們不建議這種做法，因為預測性 [!UICONTROL traits] 會自動繼承 [!UICONTROL Profile Merge Rule] 其所屬模型，而且它們是從符合模型的 [!UICONTROL traits] 有影響力的模型 [!UICONTROL Profile Merge Rule] 中建立的。
+> 但是，我們不建議這種做法，因為預測性[!UICONTROL traits]會自動繼承其所屬模型的[!UICONTROL Profile Merge Rule]，而且它們是根據符合模型[!UICONTROL Profile Merge Rule]的有影響的[!UICONTROL traits]建立的。
 
  
 
 **我應 [!UICONTROL Profile Merge Rule] 該選擇什麼？**
 
-選擇模型 [!UICONTROL Profile Merge Rule] 時，請仔細分析您的使用案例。
+為模型選擇[!UICONTROL Profile Merge Rule]時，請仔細分析使用案例。
 
-假設您的目標對象使用 [!UICONTROL segment] 基於已驗 [!UICONTROL Profile Merge Rule] 證的個人檔案+個人檔案， [!DNL Device Graph] 而您為預測性選 [!UICONTROL Profile Merge Rule] 擇相同的 [!UICONTROL segments]。 在這種情況下，裝置層級和跨裝置層級 [!UICONTROL traits] 都將用來訓練模型，以及將使用者放置成預測式 [!UICONTROL segment]。
+假設您的目標對象[!UICONTROL segment]使用基於已驗證的配置檔案+ [!DNL Device Graph]配置檔案的[!UICONTROL Profile Merge Rule]，並且您為預測性[!UICONTROL segments]選擇了相同的[!UICONTROL Profile Merge Rule]。 在這種情況下，設備級別和跨設備級別[!UICONTROL traits]都將用於培訓模型以及將用戶放置到預測性[!UICONTROL segment]中。
 
-但是，如果您只根據裝 [!UICONTROL Profile Merge Rule] 置設定檔選取，則跨裝置不會產生任何影響，也不會 [!UICONTROL traits] 對將使用者放入預測性位置有所貢獻 [!UICONTROL segment]。 這可能會對模型的精確度和觸及度產生負面影響。
+但是，如果您只根據裝置設定檔選取[!UICONTROL Profile Merge Rule]，則跨裝置[!UICONTROL traits]將不會發揮任何影響力，而且不會對將使用者放置在預測性[!UICONTROL segment]中有任何貢獻。 這可能會對模型的精確度和觸及度產生負面影響。
 
-仔細分析您的使用案例，並 [!UICONTROL trait] 決定您希望模型從哪些類型學習，以及您希望模型用於分類的資料類型。
+仔細分析您的使用案例，並決定您希望模型學習的[!UICONTROL trait]類型，以及您希望模型用於分類的資料類型。
 
 **目標受眾中不屬於任何角色特徵/區段的使用者是否不可分類？**
 
