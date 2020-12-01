@@ -27,23 +27,23 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
+>[UI中指](../../features/administration/administration-overview.md) 派的RBAC群 [!DNL Audience Manager] 組權限在中接受 [!UICONTROL Bulk Management Tools]。
 
 >[!NOTE]
 >
 >如果區段已映射至目標，則目標映射的大量刪除將失敗。 在嘗試大量刪除目標之前，先從使用者介面中的該目標移除區段。 此外，特徵和區段資料夾必須空白，您才能刪除它們。
 
-要刪除多個物料，請開啟工作 [!UICONTROL Bulk Management Tools] 表並：
+要刪除多個物料，請開啟[!UICONTROL Bulk Management Tools]工作表並：
 
-1. 按一下 **[!UICONTROL Headers]** 標籤，並複製您要新增項目的建立標題。
-2. 按一下標 **[!UICONTROL Delete]** 簽。
+1. 按一下&#x200B;**[!UICONTROL Headers]**&#x200B;標籤，並複製您要新增之項目的建立標題。
+2. 按一下&#x200B;**[!UICONTROL Delete]**&#x200B;頁籤。
 3. 將刪除標題貼入更新工作表的第一列。
 4. 在標題下方的欄中，貼上或輸入您要刪除的物件的ID。
-5. 提供必要 [的登入資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然後按一 **[!UICONTROL Submit]**&#x200B;下。
+5. 提供所需的[登錄資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然後按一下&#x200B;**[!UICONTROL Submit]**。
 
-   工作表會建立 [!UICONTROL Results] 欄。 該 [!UICONTROL Results] 列返回一條消息，指明該項是否已刪除或是一條錯誤消息。
+   工作表會建立[!UICONTROL Results]欄。 [!UICONTROL Results]欄會傳回一則訊息，指出項目是否已刪除或是錯誤訊息。
 在輸入資料之前，您的大量更新工作表看起來應類似下列：
 
 ![](assets/delete.png)
 
-如果您的大量更新傳回錯誤或失敗，請參 [閱批量管理工具疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
+如果您的批量更新傳回錯誤或失敗，請參閱[批量管理工具疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
