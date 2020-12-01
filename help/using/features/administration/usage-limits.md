@@ -18,46 +18,46 @@ ht-degree: 6%
 
 # 使用量限制 {#usage-limits}
 
-Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過程式設計方式建立，限制都適用於這些 [!DNL API] 項目。 使用限制有助於保護Audience Manager不受可能破壞我們或使用者介面的 [!DNL API]自動化程式。
+Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，還是透過[!DNL API]方法以程式設計方式建立，限制都適用於這些項目。 使用限制可協助保護Audience Manager免受可能會破壞我們[!DNL API]或使用者介面的自動化程式。
 
 ## ID 對應限制 {#id-mapping-limits}
 
-下表列出裝置 [ID的](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md) ID對應限制。 一旦ID達到下列任何限制，Audience Manager會根據FIFO（先入先出）邏輯新增ID對應，移除最舊儲存的ID對應，並新增新ID對應。 如需Audience Manager [支援之ID的詳細資訊](../../reference/ids-in-aam.md) ，請參閱Audience Manager中的ID索引。
+下表列出了設備ID的[ID映射](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)限制。 一旦ID達到下列任何限制，Audience Manager會根據FIFO（先入先出）邏輯新增ID對應，移除最舊儲存的ID對應，並新增新ID對應。 如需Audience Manager支援之ID的詳細資訊，請參閱Audience Manager中的[ID索引](../../reference/ids-in-aam.md)。
 
 | ID對應 | 最大限制 |
 |-----------|-------------- |
-| 跨裝置ID([DPUUID](../../reference/ids-in-aam.md))的裝置廣告ID([DAID](../../reference/ids-in-aam.md)) | 100個裝置廣告ID([DAID](../../reference/ids-in-aam.md))至1個跨裝置ID([DPUUID](../../reference/ids-in-aam.md)) |
-| 跨裝置ID([DPUUID](../../reference/ids-in-aam.md))到裝置廣告ID([DAID](../../reference/ids-in-aam.md)) | 每個DPID有10個跨裝[置ID](../../reference/ids-in-aam.md)([DPUUID](../../reference/ids-in-aam.md))至1個裝置廣告ID( [DAID)](../../reference/ids-in-aam.md) |
+| 裝置廣告ID([DAID](../../reference/ids-in-aam.md))至跨裝置ID([DPUUID](../../reference/ids-in-aam.md)) | 100個裝置廣告ID([DAID](../../reference/ids-in-aam.md))至1個跨裝置ID([DPUUID](../../reference/ids-in-aam.md)) |
+| 跨裝置ID([DPUUID](../../reference/ids-in-aam.md))到裝置廣告ID([DAID](../../reference/ids-in-aam.md)) | 10個跨裝置ID([DPUUID](../../reference/ids-in-aam.md))至1個裝置廣告ID([DAID](../../reference/ids-in-aam.md))，每個[DPID](../../reference/ids-in-aam.md) |
 | Cookie/瀏覽器ID至Cookie/瀏覽器ID | 1000個Cookie/瀏覽器ID至1個Cookie/瀏覽器ID |
 
-## 項目限制 {#item-limits}
+## 項目限制{#item-limits}
 
-這些表按項目類型列出當前限制。 您無法建立新特徵、區段、目的地， [!UICONTROL Algorithmic Models] 或者如果您達到其中一個項目的特定限制。 如果您達到限制，您必須先刪除舊項目，才能建立新項目。
+這些表按項目類型列出當前限制。 如果您達到其中一個項目的特定限制，則無法建立新特徵、區段、目標或[!UICONTROL Algorithmic Models]。 如果您達到限制，您必須先刪除舊項目，才能建立新項目。
 
 ### 特徵限制
 
 | 特徵類型 | 最大限制 |
 | -------------------------- | ------------------------------------- |
-| 總特徵 | 100,000 |
-| 特徵資格總計 | 150,000. 如需特徵資格的詳細資訊，請參閱特徵資格參考中的特 [徵資格限制](/help/using/features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit)。 |
+| 總特徵 | 十萬 |
+| 特徵資格總計 | 15萬。 如需特徵資格的詳細資訊，請參閱[特徵資格參考](/help/using/features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit)中的特徵資格限制。 |
 | 演算法 | 50 |
-| 規則型 | 100,000 |
-| 已登錄 | 100,000 |
-| 資料夾特徵 | 2,000 |
+| 規則型 | 十萬 |
+| 已登錄 | 十萬 |
+| 資料夾特徵 | 零點二萬 |
 
 ### 區段限制
 
 | 區段類型 | 最大限制 |
 | -------------- | ------------- |
-| 區段總計 | 20,000 |
+| 區段總計 | 2萬 |
 
 ### 目標限制
 
 | 目標類型 | 最大限制 |
 | ------------------ | ------------- |
 | 目標總數 | 1,000 |
-| Cookie | 1,000 |
-| URL | 1,000 |
+| Cookie | 零點一萬 |
+| URL | 零點一萬 |
 | S2S | 100 |
 | Adobe Analytics | 10 |
 
@@ -65,17 +65,17 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 
 | 項目 | 最大限制 |
 | -------- | ----- |
-| 啟用 [!UICONTROL Look-Alike Models] | 20. Audience Manager only counts *active* algorithmic models against the limit. |
-| [!UICONTROL Look-Alike Models] 最大受眾規模 | 25,000,000.  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選取較短的回顧視窗，來降低觀眾規模。 |
-| 已排除特徵的最大數目 [!UICONTROL Look-Alike Model] | 500.請參閱 [演算法模型中的特徵排除](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)。 |
-| 最大值 [!UICONTROL Predictive Audiences Models] | 10 |
-| 基準角色的最大數量 [!UICONTROL Predictive Audiences Models] | 50 |
+| 啟用 [!UICONTROL Look-Alike Models] | 20.Audience Manager只會依限制計算&#x200B;*active*&#x200B;演算法模型。 |
+| [!UICONTROL Look-Alike Models] 最大受眾規模 | 2500萬。  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選取較短的回顧視窗，來降低觀眾規模。 |
+| [!UICONTROL Look-Alike Model]的已排除特徵數上限 | 500.請參閱演算法模型](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)中的[特徵排除。 |
+| 最小值[!UICONTROL Predictive Audiences Models] | 10 |
+| [!UICONTROL Predictive Audiences Models]的基準角色數上限 | 50 |
 
 ### 資料夾限制
 
 | 項目 | 最大限制 |
 | ------------- | ------------------ |
-| 特徵資料夾 | 2,000.  您的檔案夾結構最多可以有5層深。 |
+| 特徵資料夾 | 2000。  您的檔案夾結構最多可以有5層深。 |
 
 ### 衍生的信號限制
 
@@ -89,12 +89,12 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 | ----------- | ------------- |
 | 公司的使用者帳戶數上限 | 1,000. |
 
-## 監視器使用情況 {#monitor-usage}
+## 監視器使用{#monitor-usage}
 
-您可以前往，查看帳戶的使用情形和限制 **[!UICONTROL Administration > Limits]**。 存取需要管理員權限。
+前往&#x200B;**[!UICONTROL Administration > Limits]**&#x200B;即可查看您帳戶的使用與限制。 存取需要管理員權限。
 
 ![使用限制影像](assets/usage-limits.png)
 
-## 增加項目限制 {#increase-item-limits}
+## 增加項目限制{#increase-item-limits}
 
 此處列出的預設限制應提供足夠的容量以滿足您的業務需求。 如果貴組織一致達到這些限制，請連絡您的帳戶代表以討論增加額度。
