@@ -17,15 +17,15 @@ ht-degree: 14%
 
 # DCS 地區 API 方法 {#dcs-region-api-methods}
 
-可讓您以程式設計方式列出Audience Manager地區 [!DNL DCS] 的方法。
+可讓您以程式設計方式列出Audience Manager [!DNL DCS]地區的方法。
 
 <!-- c_rest_api_regions.xml -->
 
-For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+有關區域及其對應整數的清單，請參閱[DCS區域ID、位置和主機名](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
 
-## 列出特定DCS地區 {#list-specific-dcs-region}
+## 列出特定DCS區域{#list-specific-dcs-region}
 
-列 `GET` 出特定區域的方 [!DNL DCS] 法。
+列出特定[!DNL DCS]區域的`GET`方法。
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -49,13 +49,13 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
   }
 ```
 
-成功 `200 OK` 時傳回。
+如果成功，則返回`200 OK`。
 
-For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+有關區域及其對應整數的清單，請參閱[DCS區域ID、位置和主機名](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
 
-## 列出DCS地區 {#list-dcs-regions}
+## 列出DCS地區{#list-dcs-regions}
 
-一種 `GET` 列出區域的 [!DNL DCS] 方法。
+列出[!DNL DCS]區域的`GET`方法。
 
 <!-- r_rest_api_regions_list.xml -->
 
@@ -82,6 +82,6 @@ For a list of regions and their corresponding integers, see [DCS Region IDs, Loc
 ]
 ```
 
-成功 `200 OK` 時傳回。
+如果成功，則返回`200 OK`。
 
-For a list of regions and their corresponding integers, see [DCS Region IDs, Locations, and Host Names](../../api/dcs-intro/dcs-api-reference/dcs-regions.md).
+有關區域及其對應整數的清單，請參閱[DCS區域ID、位置和主機名](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)。
