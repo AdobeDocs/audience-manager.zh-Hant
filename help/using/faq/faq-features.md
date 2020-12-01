@@ -48,13 +48,13 @@ faq_features_functions.xml
 
  
 
-**當執行大量ID匯出至目標時，會遺失部分客戶ID。 Why does that happen?**
+**當執行大量ID匯出至目標時，會遺失部分客戶ID。為什麼會發生這種情況？**
 
 當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUID](../reference/ids-in-aam.md))時，只會匯出最新的對應。 這就是為什麼您可能會看到匯出的裝置ID數量低於預期。
 
  
 
-**[!DNL Audience Manager]可以減少對第三方標籤或像素的需求，並改善頁面載入時間嗎？**
+**[!DNL Audience Manager] 可以減少對第三方標籤或像素的需求，並改善頁面載入時間嗎？**
 
 如果 [!DNL Audience Manager] 已與您的第三方資料合作夥伴整合，您可以對 [!DNL Audience Manager] 發出伺服器對伺服器 ID 呼叫，取代其像素和標籤。在這種情況下，當我們第一次看到某個使用者，[!DNL Audience Manager] 會引發單一 ID 呼叫，並將該資訊與您的第三方合作夥伴同步。如此一來，您就不需要從每個頁面發出多個像素呼叫。減少像素呼叫可改善頁面載入時間。
 
@@ -66,7 +66,7 @@ faq_features_functions.xml
 
  
 
-**什麼是[!UICONTROL Tag Insertion Manager (TIM)]？**
+**什麼是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
 Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Launch] 取代。如需詳細資訊，請參閱 [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 和 [Dynamic Tag Management](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)。
 
