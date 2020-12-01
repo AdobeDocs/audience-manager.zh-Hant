@@ -20,66 +20,66 @@ ht-degree: 5%
 
 ## 建立 [!UICONTROL Data Source] {#create-data-source}
 
-若要建立新 [!UICONTROL data source]的區段，請 **[!UICONTROL Audience Data > Data Sources > Add New]** 前往並完成此處說明的每個區段步驟。 需要有管理員權限才能建立 [!UICONTROL data source]。
+若要建立新的[!UICONTROL data source]，請前往&#x200B;**[!UICONTROL Audience Data > Data Sources > Add New]**&#x200B;並完成此處所述各節的步驟。 建立[!UICONTROL data source]需要管理員權限。
 
 <!-- create-datasource.xml -->
 
 >[!TIP]
 >
->如需這 [些不同控制項的說明](../features/datasources-list-and-settings.md#settings-menu-options) ，請參閱資料來源設定和功能表選項。
+>如需這些不同控制項的說明，請參閱[資料來源設定和功能表選項](../features/datasources-list-and-settings.md#settings-menu-options)。
 
 ## [!UICONTROL Data Source] 詳細資料 {#details}
 
-要完成該部 [!UICONTROL Data Source Details] 分：
+要完成[!UICONTROL Data Source Details]部分：
 
-1. 命名 [!UICONTROL data source]。
-1. *（可選）* ，請說明 [!UICONTROL data source]。 簡明的說明可協助您定義角色或目的 [!UICONTROL data source]。
-1. 提供 [!UICONTROL integration code]。 通常為 [!UICONTROL integration codes] 可選。 當您想要：
+1. 命名[!UICONTROL data source]。
+1. *（可選）* 說明 [!UICONTROL data source]。簡明的說明可協助您定義[!UICONTROL data source]的角色或用途。
+1. 提供[!UICONTROL integration code]。 通常，[!UICONTROL integration codes]是可選的。 當您想要：
 
    * [建立跨裝置資料來源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * Use the [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html).
-   * 使用描述 [檔合併規則](../features/profile-merge-rules/merge-rules-start.md)。
+   * 使用[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html)。
+   * 使用[描述檔合併規則](../features/profile-merge-rules/merge-rules-start.md)。
 
-1. 選擇 **[!UICONTROL ID Type]**。 [!UICONTROL ID Type] 選項包括：
+1. 選擇&#x200B;**[!UICONTROL ID Type]**。 [!UICONTROL ID Type] 選項包括：
 
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
-   * **[!UICONTROL Cross-device]** (建立時需要 [!UICONTROL Profile Merge Rule])。 請注意，對於某些客戶，此選項會公開 **[!UICONTROL ID Definition]** 選項。
+   * **[!UICONTROL Cross-device]** (建立時需要 [!UICONTROL Profile Merge Rule])。請注意，對於某些客戶，此選項會顯示&#x200B;**[!UICONTROL ID Definition]**&#x200B;選項。
 
-1. Choose an **[!UICONTROL ID Definition]** option. 選項包括:
+1. 選擇&#x200B;**[!UICONTROL ID Definition]**&#x200B;選項。 選項包括:
 
    * **[!UICONTROL Person]**
    * **[!UICONTROL Household]**
 
 ## [!UICONTROL Data Export Controls] {#export-controls}
 
-[「資料匯出控制](../features/data-export-controls.md) 」是可套用至和的選用分類 [!UICONTROL data source] 規則 [!UICONTROL destination]。 當該動作違反資料隱私或使 [!UICONTROL destination] 用合約時，您無法傳送資料至。 如果您未使用，請略過本節 [!UICONTROL Data Export Controls]。
+[「資料匯](../features/data-export-controls.md) 出控制」是可套用至和的選用分 [!UICONTROL data source] 類規則 [!UICONTROL destination]。當該動作違反資料隱私或使用協定時，您無法傳送資料至[!UICONTROL destination]。 如果您不使用[!UICONTROL Data Export Controls]，請略過本節。
 
 ## [!UICONTROL Data Source] 設定 {#settings}
 
-這些設定會決定 [!UICONTROL data source] 如何識別、使用和共用。 您也可以啟用傳入資料檔案的錯誤報告。 要完成該部 [!UICONTROL Data Source Settings] 分：
+這些設定會決定如何識別、使用和共用[!UICONTROL data source]。 您也可以啟用傳入資料檔案的錯誤報告。 要完成[!UICONTROL Data Source Settings]部分：
 
-1. 選取核 [!UICONTROL Data Source Setting] 取方塊，將選項套用至您的 [!UICONTROL data source]。
+1. 選中[!UICONTROL Data Source Setting]複選框以將選項應用於[!UICONTROL data source]。
 2. 按一下 **[!UICONTROL Save]**.
 
-## 刪除資料來源 {#delete-data-source}
+## 刪除資料源{#delete-data-source}
 
 <!-- t_datasource_delete.xml -->
 
-刪除 [!UICONTROL data source] 您不再需要的項目。
+刪除您不再需要的[!UICONTROL data source]。
 
 >[!NOTE]
 >
 >請注意下列限制：
 >
->* 您無法刪除作 [用中對象或資料來源同步特徵](../features/traits/client-activity-synced-audience-traits.md)。
->* 對於使用Adobe Analytics的客戶： Audience Manager不允許您刪除從報表套裝自動建立的資 [!DNL Analytics] 料來源。 使用核 [心服務](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services-landing.html) ，取消對應這些資料來源。
+>* 您無法刪除[作用中對象或資料來源同步特性](../features/traits/client-activity-synced-audience-traits.md)。
+>* 對於使用Adobe Analytics的客戶：Audience Manager不允許您刪除從[!DNL Analytics]報表套裝自動建立的資料來源。 使用[核心服務](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services-landing.html)取消映射這些資料源。
 
 
 1. 按一下 **[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**.
 1. 選取一或多個資料來源旁的核取方塊。
-如果您有 [!UICONTROL Search] 長清單，可使用方塊來尋找所需的資料來源。
-1. 按一 ![](assets/icon_trash.png)下，然後確認刪除。
+如果您有長清單，可使用[!UICONTROL Search]方塊來尋找所需的資料來源。
+1. 按一下![](assets/icon_trash.png)，然後確認刪除。
 
 
 >[!MORELIKETHIS]
