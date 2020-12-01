@@ -16,16 +16,16 @@ ht-degree: 39%
 ---
 
 
-# [!DNL API] 和程 [!DNL SDK] 式碼 {#api-and-sdk-code}
+# [!DNL API] 和程 [!DNL SDK] 式碼  {#api-and-sdk-code}
 
 [!DNL API]s和工具套件，讓您以程式設計方式工 [!DNL Audience Manager]作。
 
 >[!NOTE]
 >
->我們不支援下列 [!DNL API]功能：
+>我們的[!DNL API]s不支援這些功能：
 >
->* [!UICONTROL General]、 [!UICONTROL Trend]和報 [!UICONTROL Interactive] 表。
->* 已過時 [!DNL Tag Insertion Manager] 的([!DNL TIM])功能。
+>* [!UICONTROL General]、 [!UICONTROL Trend]和報 [!UICONTROL Interactive] 告。
+>* 已過時的[!DNL Tag Insertion Manager]([!DNL TIM])功能。
 
 
 詳細資料:
