@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 傳入處理後傳送給合作夥伴的範例訊息{#sample-message-to-partners-after-inbound-processing}
 
-每當處理傳 [!UICONTROL Server-to-Server] 入檔案時，收據會透過電子郵件傳送給合作夥伴解決方案，如果已設定，則會傳送給合作夥伴。
+每當處理傳入的[!UICONTROL Server-to-Server]檔案時，會透過電子郵件傳送收據給合作夥伴解決方案，如果已設定，則會傳送回收給合作夥伴。
 
 <!-- r_inbound_message.xml -->
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 <table id="table_F579C2278A044213BFCEF97F3BEC2C0C"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>寄件者： aam-noreply@adobe.com </b> </p> <p> <b>主旨： Adobe Audience Manager伺服器對伺服器的處理結果：</b> </p> <p> <b>親愛的Adobe合作夥伴： (ID:7)</b> <b></b> </p> <p> <b>我們已收到您的Adobe Audience Manager伺服器對伺服器檔案傳送</b> </p> <p> <b>檔案名：</b> <i></i> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806402.sync</b> </p> <p> <b> s3n://&lt;<i>bucket_name&gt;</i>/2018-05-16/ftp_dpm_7_901_1368655202.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784804.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806403.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784802.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784803.sync </b> </p> <p> <b>s3n://&lt;<i>bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806404.sync</b> </p> <p> <b>收到的記錄： 40669900</b> </p> <p><b>格式錯誤： 0</b> </p> <p> <b>無效的AAM ID: 112 </b> </p> <p> <b>沒有相符的AAM ID: 0 </b> </p> <p> <b>未實現特徵： 26730823 </b> </p> <p> <b>已處理的記錄： 40669900 </b> </p> <p> <b>儲存記錄： 13938958 </b> </p> <p> <b>裝置總數： 21 </b> </p> <p> <b>總信號： 918878926 </b> </p> <p> <b>未使用信號總數： 660348376 </b> </p> <p> <b>已實現特徵總數： 258086908 </b> </p> <p> <b>已移除特徵總數： 0 </b> </p> <p> <b>總特徵數驗證失敗： 0 </b> </p> <p> <b>具有未通過驗證的特徵的用戶總數： 0 </b> </p> <p> <b>工作開始時間： 2018-05-17 18:07:49 </b> </p> <p> <b>工作結束時間： 2018-05-17 18:45:02</b> </p> </td> 
+   <td colname="col1"> <p> <b>寄件者：aam-noreply@adobe.com  </b> </p> <p> <b>主旨：Adobe Audience Manager伺服器對伺服器的處理結果：</b> </p> <p> <b>親愛的Adobe合作夥伴：(ID:7)</b> <b></b> </p> <p> <b>我們已收到您的Adobe Audience Manager伺服器對伺服器檔案傳送</b> </p> <p> <b>檔案名：</b> <i></i> </p> <p> <b> s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806402.sync</b><i> </i></p> <p> <b> s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-16/ftp_dpm_7_901_1368655202.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784804.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806403.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784802.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368784803.sync  </b><i> </i></p> <p> <b>s3n://&lt;&gt;bucket_name&gt;</i>/2018-05-17/ftp_dpm_7_901_1368806404.sync</b><i> </i></p> <p> <b>收到的記錄：40669900</b> </p> <p><b>格式錯誤：0</b> </p> <p> <b>無效的AAM ID:112  </b> </p> <p> <b>沒有相符的AAM ID:0  </b> </p> <p> <b>未實現特徵：26730823  </b> </p> <p> <b>已處理的記錄：40669900  </b> </p> <p> <b>儲存記錄：13938958  </b> </p> <p> <b>裝置總數：21  </b> </p> <p> <b>總信號：918878926  </b> </p> <p> <b>未使用信號總數：660348376  </b> </p> <p> <b>已實現特徵總數：258086908  </b> </p> <p> <b>已移除特徵總數：0  </b> </p> <p> <b>總特徵數驗證失敗：0  </b> </p> <p> <b>具有未通過驗證的特徵的用戶總數：0  </b> </p> <p> <b>工作開始時間：2018-05-17 18:07:49  </b> </p> <p> <b>工作結束時間：2018-05-17 18:45:02</b> </p> </td> 
   </tr> 
  </tbody> 
 </table>
