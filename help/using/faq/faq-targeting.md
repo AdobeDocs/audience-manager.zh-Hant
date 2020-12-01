@@ -95,7 +95,7 @@ Cookie 刪除會對觸及和頻率計算造成不良影響。因此，為了規�
 
 <br> 
 
-**Audience Manager 只會顯示[!UICONTROL Server-to-Server]目的地的[!UICONTROL Addressable Audiences]量度和符合率。能否說明為什麼我們看不到 Cookie 和 URL 目的地的這些數字嗎？**
+**Audience Manager 只會顯示 [!UICONTROL Server-to-Server] 目的地的 [!UICONTROL Addressable Audiences] 量度和符合率。能否說明為什麼我們看不到 Cookie 和 URL 目的地的這些數字嗎？**
 
 追根究柢與 ID 同步有關。針對 [!UICONTROL Server-to-Server] 目的地，我們會以離線方式傳輸資料 (即時或批次)，而且我們需傳送目的地合作夥伴可瞭解的 ID，方便他們將資料對應回瀏覽器。區段可定址數是總區段母體的子集。
 
