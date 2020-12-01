@@ -17,11 +17,11 @@ ht-degree: 2%
 
 # 設定檔合併規則的報表量度 {#report-metrics-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rule] 量度會提供您網站驗證的人員和裝置相關資料。 當您建立合併規則或 [!UICONTROL Profile Merge Rule Reports] 從控制面板按一下現有規則時，資料和圖形會動態 [!UICONTROL Profile Merge Rules] 更新。 這些量度可包含來自或其他協力 [!DNL Adobe Experience Cloud Device Co-op] 廠商裝置圖形來源的裝置圖形。
+[!UICONTROL Profile Merge Rule] 量度會提供您網站驗證的人員和裝置相關資料。當您建立合併規則或按一下[!UICONTROL Profile Merge Rules]控制面板中的現有規則時，[!UICONTROL Profile Merge Rule Reports]中的資料和圖形會動態更新。 這些量度可包含來自[!DNL Adobe Experience Cloud Device Co-op]或其他協力廠商裝置圖形來源的裝置圖形。
 
-## 合併規則量度 {#merge-rule-metrics}
+## 合併規則量度{#merge-rule-metrics}
 
-當您的合併規則使用 [Adobe Experience Cloud Device Co-op或您可在中存取的其他協力廠商裝置圖表資料時，報表會以並排長條圖形傳回資料](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)[!DNL Audience Manager]。 這可讓您比較已驗證的第一方資料與由或另一第三方裝置圖表提供 [!UICONTROL Experience Cloud Device Co-op] 的跨裝置資料。 如需由傳回之資料的詳細資 [!UICONTROL Device Co-op]訊，請參 [閱裝置圖表： 內部流程和輸出](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html)。 此資料會每日更新。
+當您的合併規則使用[Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)或您可在[!DNL Audience Manager]中存取的其他協力廠商裝置圖形的資料時，報表會以並排橫條圖形傳回資料。 這可讓您比較已驗證的第一方資料與[!UICONTROL Experience Cloud Device Co-op]或其他協力廠商裝置圖表所提供的跨裝置資料。 有關[!UICONTROL Device Co-op]傳回的資料，請參閱[裝置圖表：內部流程和輸出](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html)。 此資料會每日更新。
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
@@ -35,10 +35,10 @@ ht-degree: 2%
    <td colname="col1"> <p> <b><span class="wintitle"> 已驗證活動</span></b> </p> </td> 
    <td colname="col2"> <p>顯示： </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
-     <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> 活動人員</span>: 過去60天內已驗證您網站的人數。 </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> 跨裝置</span>: 在所選已驗 <a href="merge-rules-start.md#create-data-source"> 證的設定檔的存留期間，在「資料來源」中儲存的「跨裝置ID」總數</a><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"></a><a href="merge-rule-definitions.md"></a> ，即「已驗證的設定檔」的「資料來源」中所儲存的「跨裝置ID」總數。 </li> 
-     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> %有效人員</span>: 將「 <span class="wintitle"> 作用中人員</span> 」顯示為%。 </li> 
-    </ul> <p> <span class="wintitle"> 「已驗證活動</span> 」可讓您依活動、卷和百分比來比較資料來源。 它可協助您尋找擁有大量人員和高比例使用者的資料來源。 或者，您可能會發現比較資料來源與高比例的使用中使用者與總讀者人數的價值。 例如，有時總存留期數較少、活動較高的資料來源比活動次數較高、存留期結果較高的資料來源更有價值。 </p> <p> <p>注意： 「已驗 <span class="wintitle"> 證活動</span> 」量度僅包含 <span class="wintitle"> 「描述檔連結</span> 」資料。 此報告不包含「裝 <span class="wintitle"> 置圖表</span> 」資料。 </p> </p> </td> 
+     <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> 活動人員</span>:過去60天內已驗證您網站的人數。 </li> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> 跨裝置</span>:儲存在所選已驗 <a href="merge-rules-start.md#create-data-source"> 證分析</a> 檔之資料來源中，資料來源存 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html"> </a>  <a href="merge-rule-definitions.md"> </a> 留期間之跨裝置ID的總數。 </li> 
+     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> %有效人員</span>:顯 <span class="wintitle"> 示活</span> 動人員%。 </li> 
+    </ul> <p> <span class="wintitle"> 已驗證</span> 的活動可讓您依活動、卷和百分比來比較資料來源。它可協助您尋找擁有大量人員和高比例使用者的資料來源。 或者，您可能會發現比較資料來源與高比例的使用中使用者與總讀者人數的價值。 例如，有時總存留期數較少、活動較高的資料來源比活動次數較高、存留期結果較高的資料來源更有價值。 </p> <p> <p>注意：<span class="wintitle">已驗證活動</span>量度僅包含<span class="wintitle">描述檔連結</span>資料。 此報告不包含<span class="wintitle">裝置圖表</span>資料。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="wintitle"> 每人平均裝置數</span></b> </p> </td> 
@@ -55,9 +55,9 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 裝置圖表度量 {#device-graph-metrics}
+## 裝置圖表度量{#device-graph-metrics}
 
-報 [!UICONTROL Merge Rules] 表也會顯示所選資料來源和裝置圖表中瀏覽您網站的總人數和裝置。 這些量度會根據預先設定的時間間隔（回顧時段）傳回資料，這些時間間隔視您建立規則時選取的裝置選項而異。 下表列出每個裝置圖形選項的這些報告間隔。
+[!UICONTROL Merge Rules]報表還顯示已瀏覽您網站之選定資料來源和裝置圖表之訪客和裝置總數。 這些量度會根據預先設定的時間間隔（回顧時段）傳回資料，這些時間間隔視您建立規則時選取的裝置選項而異。 下表列出每個裝置圖形選項的這些報告間隔。
 
 <table id="table_038983EBC71F4A55BBCA99212AC5DEE6"> 
  <thead> 
@@ -71,54 +71,54 @@ ht-degree: 2%
    <td colname="col1"> <p><span class="wintitle"> 設定檔連結</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_B2FF2341573840549FFB96579F537082"> 
-      <li id="li_B37323C2F2434F41B407500AC5C15447">總人數： 60天 </li> 
-      <li id="li_08D911224A60418BBB3CFB4E70CE73D4">裝置總數： 120天 </li> 
+      <li id="li_B37323C2F2434F41B407500AC5C15447">總人數：60天 </li> 
+      <li id="li_08D911224A60418BBB3CFB4E70CE73D4">裝置總數：120天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 合作裝置圖表</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> Co-op裝置圖表</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_64AD1DD89DF64703B70B973A463BA020"> 
-      <li id="li_D7D3A3871F434CBFA71BE8929EB41648">總人數： 180天 </li> 
-      <li id="li_125D387986B2463EB310203CE5857EDA">裝置總數： 180天 </li> 
+      <li id="li_D7D3A3871F434CBFA71BE8929EB41648">總人數：180天 </li> 
+      <li id="li_125D387986B2463EB310203CE5857EDA">裝置總數：180天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> LiveRamp</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_2772F3AD7E1440789B635794ECDE8DFB"> 
-      <li id="li_1432363829D64615B1D349A3722D6268">總人數： 180天 </li> 
-      <li id="li_D5C0E3CE92524B54BBD36C73A326292B">裝置總數： 180天 </li> 
+      <li id="li_1432363829D64615B1D349A3722D6268">總人數：180天 </li> 
+      <li id="li_D5C0E3CE92524B54BBD36C73A326292B">裝置總數：180天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Tapad</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_274529DB58E6442E95C6AD89BECB1362"> 
-      <li id="li_67102211A72A4E47AACFE5E369793C17">總人數： 60天 </li> 
+      <li id="li_67102211A72A4E47AACFE5E369793C17">總人數：60天 </li> 
       <li id="li_3E8F3DA6A7B5487895A626674DA363A5">裝置總數60天 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 範例報表 {#sample-reports}
+## 範例報表{#sample-reports}
 
 ### 標準描述檔連結報表
 
-標準報 [!UICONTROL Profile Link] 表看起來類似下列範例。 使用多個資料來源的合併規則（最多3個，最多3個）會在每個資料來源的個別標籤中顯示圖形。 此合併規則不包含 [!UICONTROL Device Co-op] 資料。
+標準[!UICONTROL Profile Link]報表看起來類似下列範例。 使用多個資料來源的合併規則（最多3個，最多3個）會在每個資料來源的個別標籤中顯示圖形。 此合併規則不包含[!UICONTROL Device Co-op]資料。
 
 ![](assets/profile-link-metrics.png)
 
 ### 具備裝置圖表資料的描述檔連結報表
 
-包 [!UICONTROL Profile Link Device Graph] 含來自或第三方裝置圖 [!UICONTROL Adobe Experience Cloud Device Co-op] 形之裝置圖形資料的報表，以並排條形圖 [!UICONTROL Profile Link] 形顯示及裝置圖形資料。 將這些圖形彼此相鄰，可讓您自行評估使用 [!UICONTROL Experience Cloud Device Co-op] 相較 [!UICONTROL Profile Link] 的優點。 使用多個資料來源的合併規則（最多3個，最多3個）會在每個資料來源的個別標籤中顯示圖形。 提醒您，圖 [!UICONTROL Authenticated Activity] 形和量度不會傳回裝置圖表或 [!DNL Adobe] 您在中可存取的其他協力廠商裝置圖表的資料 [!DNL Audience Manager]。
+[!UICONTROL Profile Link Device Graph]報表包含來自[!UICONTROL Adobe Experience Cloud Device Co-op]或協力廠商裝置圖表的裝置圖表資料，顯示[!UICONTROL Profile Link]和具有並排橫條圖的裝置圖表資料。 將這些圖形彼此相鄰，可讓您評估使用[!UICONTROL Experience Cloud Device Co-op]與[!UICONTROL Profile Link]本身相比的優點。 使用多個資料來源的合併規則（最多3個，最多3個）會在每個資料來源的個別標籤中顯示圖形。 提醒您，[!UICONTROL Authenticated Activity]圖表和量度不會傳回來自[!DNL Adobe]裝置圖表或您可在[!DNL Audience Manager]中存取之其他協力廠商裝置圖表的資料。
 
 ![](assets/profile-link-graph.png)
 
-## 描述檔連結趨勢圖 {#profile-link-trend}
+## 描述檔連結趨勢圖{#profile-link-trend}
 
-除了其他資料視覺化外，報 [!UICONTROL Profile Link] 表還包含折線圖。 折線圖旨在顯示描述檔規則隨時間的趨勢。 當您從著陸頁面()按一下規則時，趨勢圖(和其 [!UICONTROL Profile Merge Rules] 他報表) **[!UICONTROL Audience Data > Profile Merge Rules]**&#x200B;可用。 如果您是您在中可存取的其他協力廠商 [!UICONTROL Device Co-op] 裝置圖形的成員，這些圖形包括裝置圖形資料 [!DNL Audience Manager]。 按一下趨勢線以檢視基礎資料。
+除了其他資料視覺化外，[!UICONTROL Profile Link]報表還包含折線圖。 折線圖旨在顯示描述檔規則隨時間的趨勢。 當您從[!UICONTROL Profile Merge Rules]著陸頁面(**[!UICONTROL Audience Data > Profile Merge Rules]**)按一下規則時，趨勢圖（和其他報表）可用。 如果您是[!UICONTROL Device Co-op]的成員，這些圖形包括設備圖形資料，或者您可以在[!DNL Audience Manager]中訪問的其他第三方設備圖形。 按一下趨勢線以檢視基礎資料。
 
 >[!MORELIKETHIS]
 >
