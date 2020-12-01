@@ -23,9 +23,9 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->樣式元素(`monospaced text`、斜 *體*、括 `[ ]``( )`號等) 在本檔案中指出程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
+>樣式元素（`monospaced text`、*斜體*、括弧`[ ]``( )`等） 在本檔案中指出程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
-## 語法和檔案名稱元素 {#syntax-file-name}
+## 語法和檔案名元素{#syntax-file-name}
 
 出站檔案名包含以下元素。 以下所有元素都是選用的。
 
@@ -50,19 +50,19 @@ ht-degree: 6%
    <td colname="col2"> <p>指資料傳輸方法。 傳輸方法包括： </p> 
     <ul id="ul_4E0CFC7A34E04E2FA216A07E3654D6EE"> 
      <li id="li_0066B99222A64BE9975AE2E91511FB77">FTP —— 使用SFTP傳輸 </li> 
-     <li id="li_646767FE8AD247B88D0DD5461349F019"> <span class="keyword"> Amazon S3 </span> -傳輸至 <span class="keyword"> Amazon AWS </span> </li> 
+     <li id="li_646767FE8AD247B88D0DD5461349F019"> <span class="keyword"> Amazon S3  </span> -傳輸至 <span class="keyword"> Amazon AWS  </span> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DID </i></code> </p> </td> 
-   <td colname="col2"> <p>目標ID。 </p> <p>在 <span class="keyword"> Audience Manager中， </span>目標是整合的例項，您可在其中對應可定位的區段。 客戶可以有多個目標，具體取決於業務需求。 </p> </td> 
+   <td colname="col2"> <p>目標ID。 </p> <p>在<span class="keyword"> Audience Manager </span>中，目標是可映射可定位區段的整合例項。 客戶可以有多個目標，具體取決於業務需求。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>MASTER_DPID </i></code> </p> </td> 
    <td colname="col2"> <p>資料提供者或資料來源ID。 此ID可識別檔案內容中存在的使用者ID類型。 最常見的使用者ID金鑰為： </p> <p> 
      <ul id="ul_CC22D019ECED4B17A7695708001F2C1B"> 
-      <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google Advertiser ID(原始 </span> 、未雜湊) </li> 
-      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 - <span class="keyword"> Apple ID for Advertisers(原始、 </span> 未雜湊) </li> 
+      <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google Advertiser ID </span>（原始，未雜湊） </li> 
+      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 - <span class="keyword">廣告商專用的Apple ID </span>（原始，未雜湊） </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">廠商ID —— 協力廠商使用者ID(Web/Cookie) </li> 
      </ul> </p> <p>如需詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/global-data-sources.html">全域資料來源</a>。</p></td> 
   </tr> 
@@ -72,10 +72,10 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>SYNC_MODE </i></code> </p> </td> 
-   <td colname="col2"> <p>同步模式是一個宏佔位符，它根據同步類型將標籤添加到檔案名。 同步類型包括完整和增量。 它們會以或的形式出現在檔案 <code> iter </code> 名中 <code> full </code>。 </p> 
+   <td colname="col2"> <p>同步模式是一個宏佔位符，它根據同步類型將標籤添加到檔案名。 同步類型包括完整和增量。 它們將以<code> iter </code>或<code> full </code>的形式出現在檔案名中。 </p> 
     <ul id="ul_3B3585CEF1434951B6FDCDD29E5013CD"> 
-     <li id="li_947D94E9CFAC4041AC1AAEB191805529"> <code> iter </code>: 表示「迭代」或增量同步。 增量檔案只包含自上次同步以來收集的新資料。 </li> 
-     <li id="li_13ADB3B3346943DAA767A1F416482D3C"> <code> full </code>: 表示「完全」同步。 完全同步的檔案包含自上次同步以來收集的舊資料和任何新資料。 </li> 
+     <li id="li_947D94E9CFAC4041AC1AAEB191805529"> <code> iter </code>:表示「迭代」或增量同步。增量檔案只包含自上次同步以來收集的新資料。 </li> 
+     <li id="li_13ADB3B3346943DAA767A1F416482D3C"> <code> full </code>:表示「完全」同步。完全同步的檔案包含自上次同步以來收集的舊資料和任何新資料。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -93,11 +93,11 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-## 檔案名稱範例 {#file-name-examples}
+## 檔案名示例{#file-name-examples}
 
 ### 方案1
 
-將檔案傳送至 [!DNL Amazon S3] 檔案內容中 *`PID_ALIAS="XYZCustomer"`* 的位 [!DNL Google Advertiser IDs] 置及位置。
+將檔案發送到[!DNL Amazon S3]位置，在檔案內容中具有&#x200B;*`PID_ALIAS="XYZCustomer"`*&#x200B;和[!DNL Google Advertiser IDs]。
 
 例如，增量檔案：
 
@@ -116,7 +116,7 @@ ht-degree: 6%
 
 ### 方案2
 
-檔案被發送到 [!DNL FTP] 位置，在檔案內 *`PID_ALIAS`* 容中 [!DNL Apple Advertiser IDs] 沒有和有：
+檔案發送到[!DNL FTP]位置，檔案內容中沒有&#x200B;*`PID_ALIAS`*&#x200B;和[!DNL Apple Advertiser IDs]:
 
 例如，增量檔案：
 
@@ -132,7 +132,7 @@ ht-degree: 6%
  <li> <code> ftp_1234_20915_full_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-**方案3**: 檔案傳送至 [!DNL FTP] 位置， *`PID_ALIAS="XYZCustomer"`* 檔案內容( *`Vendor ID=45454`*)中有第三方使用者ID:
+**方案3**:檔案傳送至 [!DNL FTP] 位置， *`PID_ALIAS="XYZCustomer"`* 檔案內容( *`Vendor ID=45454`*)中有第三方使用者ID:
 
 例如，增量檔案：
 
@@ -149,7 +149,7 @@ ht-degree: 6%
  <li> <code> ftp_1234_45454_XYZCustomer_full_1486140843200001.sync.gz </code> </li> 
 </ul>
 
-## 出站資料檔案內容： 語法與參數 {#outbound-contents-syntax}
+## 出站資料檔案內容：語法和參數{#outbound-contents-syntax}
 
 說明用於組織傳出資料檔案中資訊的必填欄位、語法和慣例。 根據這些規格格式化您的資料。
 
@@ -157,7 +157,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->樣式元素(`monospaced text`、斜 *體*、括 `[ ]``( )`號等) 在本檔案中指出程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
+>樣式元素（`monospaced text`、*斜體*、括弧`[ ]``( )`等） 在本檔案中指出程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
 ### 語法
 
@@ -179,7 +179,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code><i>UUID </i></code> </p> </td> 
-   <td colname="col2"> <p>由 <span class="keyword"> Audience Manager指派的唯一使用者ID </span>。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager </span>指派的唯一使用者ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>&lt;SPACE&gt; </i></code> </p> </td> 
@@ -191,14 +191,14 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>REMOVED_SEGMENT_N </i></code> </p> </td> 
-   <td colname="col2"> <p>使用者被取消資格的區段ID。 以逗號分隔多個區段。 使用完全同步時，您可以忽略移除的區段，因為資料檔案將包含使用者目前區段的完整清單。 通常，您會想瞭解使用者所屬的區段，而非已移除的區段。 See also <a href="../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md#outbound-data-file-name-syntax-and-examples"> Outbound Data File Name: Syntax and Examples </a>. </p> </td> 
+   <td colname="col2"> <p>使用者被取消資格的區段ID。 以逗號分隔多個區段。 使用完全同步時，您可以忽略移除的區段，因為資料檔案將包含使用者目前區段的完整清單。 通常，您會想瞭解使用者所屬的區段，而非已移除的區段。 另請參閱<a href="../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md#outbound-data-file-name-syntax-and-examples">出站資料檔案名：語法和範例</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 範例： 基本檔案格式
+### 範例：基本檔案格式
 
-格式正確的資料檔案看起來可能類似下列範例。 此檔案項目表示使用者符合區段24、26和27的資格。 視需要，空格會分隔 `UUID` 和區段ID。 另一個空格會分隔區段ID的集合。 在此範例中，使用者屬於區段24、26和27。 已從區段25和28中移除。
+格式正確的資料檔案看起來可能類似下列範例。 此檔案項目表示使用者符合區段24、26和27的資格。 視需要，空格會分隔`UUID`和區段ID。 另一個空格會分隔區段ID的集合。 在此範例中，使用者屬於區段24、26和27。 已從區段25和28中移除。
 
 ```
 59767559181262060060278870901087098252  24,26,27  25,28
