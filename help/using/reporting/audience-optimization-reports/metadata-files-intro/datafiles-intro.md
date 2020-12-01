@@ -17,17 +17,17 @@ ht-degree: 5%
 
 # 受眾最佳化報表的資料檔案和可操作的記錄檔 {#data-files-for-audience-optimization-reports}
 
-資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，以便在「對象最佳化報表」中檢視該資料 [，並透過可操作的記錄檔](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) 案使用資料建立特徵 [](/help/using/integration/media-data-integration/actionable-log-files.md)。 依照本節中的這些規格設定資料檔案的格式。
+資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，以在[對象最佳化報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中檢視，並透過[可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)使用資料建立特徵。 依照本節中的這些規格設定資料檔案的格式。
 
 ## 概述 {#overview}
 
-正確命名和格式化的資料檔案可讓您將曝光、點按或轉換資料匯入「對象最佳化 [報表」中](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 當您與未整合且您想要在該報表套裝中處理其資料的 [!DNL Audience Manager] 合作夥伴合作時，這項功能十分有用。 此程式需要個別的檔案，才能產生曝光、點按和轉換資料。 請勿將這些事件混合在單一檔案中。
+正確命名和格式化的資料檔案可讓您將曝光、點按或轉換資料匯入[對象最佳化報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 當您與未與[!DNL Audience Manager]整合且您想要在該報表套裝中處理其資料的合作夥伴合作時，這項功能十分有用。 此程式需要個別的檔案，才能產生曝光、點按和轉換資料。 請勿將這些事件混合在單一檔案中。
 
-資料檔案必須隨附中繼資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參 [閱中繼資料檔案的概述和對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+資料檔案必須隨附中繼資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參閱[中繼資料檔案的概述與對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
 
-## Naming Conventions for Data Files {#naming-conventions}
+## 資料檔案的命名約定{#naming-conventions}
 
-下列語法定義格式良好的資料檔案名稱的結構。 請注意， *斜體* 表示變數預留位置會依檔案內容而改變。
+下列語法定義格式良好的資料檔案名稱的結構。 請注意，*斜體*&#x200B;表示變數預留位置會依檔案內容而變更。
 
 **語法:** <pre><i>event type</i>_<i>yyyymmdd</i></code></pre>
 
@@ -35,27 +35,27 @@ ht-degree: 5%
 
 * 事件類型表示檔案包含曝光、點按或轉換。 為每個事件類型建立個別的檔案。
 * 底線可分隔事件類型和年月日時間戳記。
-* 在上傳之前，請使用gzip壓縮您的檔案，並使用副檔名 `.gz` 儲存檔案。
+* 在上傳之前，請使用gzip壓縮您的檔案，並使用`.gz`副檔名儲存檔案。
 
 根據這些要求，請根據資料檔案的內容命名檔案，如下所示：
 
 * 印象資料： <pre>impressions_<i>yyyymmdd</i>.gz</code></pre>
 * 按一下資料： <pre>clicks_<i>yyyymmdd</i>.gz</code></pre>
-* 轉換資料： <pre>conversions_<i>yyyymmdd</i>.gz</code></pre>
+* 轉換資料： <pre>轉換_<i>yyyymmdd</i>.gz</code></pre>
 
-## Content Format for Data Files {#content-format}
+## 資料檔案的內容格式{#content-format}
 
-下列語法定義格式良好的資料檔案的內容結構。 注意， *斜體* 表示變數預留位置，並以實際資料檔案中的標籤取代。
+下列語法定義格式良好的資料檔案的內容結構。 請注意，*斜體*&#x200B;表示變數預留位置，並以實際資料檔案中的標籤取代。
 
 **語法:** <pre><i>標題標籤1</i> |標 <i>題標籤2</i> ... <i>標題標籤n</i> |版 <i>本</i></code></pre>
 
 在檔案內容中：
 
 * 標題標籤必須依順序顯示，如下表所示。 印象和點按使用相同的標籤。 轉換檔案包含額外的標題。
-* 如果您沒有特定欄的資料，請在該欄填入 `-1`。
+* 如果您沒有特定欄的資料，請在該欄填入`-1`。
 
-* 檔 *案必須以* 版本號碼結尾。 目前版本為1.1。
-* 使用非列印的ASCII 001字元來分隔檔案標題和內容。 如果您無法使用ASCII 001，請使用標籤分隔字元分隔標題和資料。 由於這些是非列印字元，上述語法範例只會顯示 `"|"` 管道以供顯示。
+* 檔案&#x200B;*必須*&#x200B;以版本號結尾。 目前版本為1.1。
+* 使用非列印的ASCII 001字元來分隔檔案標題和內容。 如果您無法使用ASCII 001，請使用標籤分隔字元分隔標題和資料。 由於這些字元是非列印字元，上述語法範例只會顯示管道`"|"`，以供顯示之用。
 
 **欄位標籤**
 
@@ -71,11 +71,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>時間戳記 </p> </td> 
-   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用格 <code> yyyy-MM-dd HH:mm:ss</code> 式。 </p> </td> 
+   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用<code> yyyy-MM-dd HH:mm:ss</code>格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用者ID </p> </td> 
-   <td colname="col2"> <p>您網站訪客的ID，也稱為資料提供者唯 <span class="term"> 一使用者ID</span> 或DPUUID。 </p> </td> 
+   <td colname="col2"> <p>您網站訪客的ID，也稱為<span class="term">資料提供者唯一使用者ID</span>或DPUUID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>廣告商ID </p> </td> 
@@ -141,19 +141,19 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-## Delivery Methods for Data Files {#delivery-methods}
+## 資料檔案的傳送方法{#delivery-methods}
 
-將您的印象、點按或轉換資料檔案上傳至您帳戶的Amazon S3目 [!DNL Audience Manager] 錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
+將您的曝光、點選或轉換資料檔案上傳至[!DNL Audience Manager]帳戶的Amazon S3目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
 
 >[!IMPORTANT]
 >
-> 請連絡您的Audience Manager顧問或客戶服務，以開始並設 [!DNL Amazon S3] 定資料檔案的目錄。
+> 請連絡您的Audience Manager顧問或客戶服務以開始使用並設定資料檔案的[!DNL Amazon S3]目錄。
 
 **傳送路徑語法和範例**
 
-資料會儲存在目錄中每位客戶的個別命名空 [!DNL Amazon S3] 間中。 檔案路徑遵循下列語法。 Note, *italics* indicates a variable placeholder. 其他元素是常數或鍵，不會變更。
+資料會儲存在[!DNL Amazon S3]目錄中每個客戶的個別命名空間中。 檔案路徑遵循下列語法。 請注意，*斜體*&#x200B;表示變數預留位置。 其他元素是常數或鍵，不會變更。
 
-**語法:** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/檔案類型 <i>_</i><i>yyyymmdd</i></code></pre>
+**語法:** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>檔案類型</i>_<i>yyyymmdd</i></code></pre>
 
 下表定義了檔案傳送路徑中的每個元素。
 
@@ -171,7 +171,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>此金鑰值配對包含您的 <span class="keyword"> Audience Manager</span> 客戶ID。 </p> </td> 
+   <td colname="col2"> <p>此索引鍵值配對包含您的<span class="keyword"> Audience Manager</span>客戶ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 
@@ -202,4 +202,4 @@ ht-degree: 5%
 
 ## 後續步驟 {#next-steps}
 
-檢視命名和建立中繼資料檔案的需求。 若要開始，請參閱中 [繼資料檔案的概述和對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+檢視命名和建立中繼資料檔案的需求。 若要開始，請參閱[中繼資料檔案的概述與對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
