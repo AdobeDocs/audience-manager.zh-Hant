@@ -44,14 +44,14 @@ Added re: AAM-30826.
 
 | 服務 | URL/主機名稱 | 如何取得存取權 |
 |--- |--- | --- |
-| S3 | 聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請連絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的測試版實例設定Amazon S3儲存貯體。 閱讀有關 [使用Amazon S3的優點](../reference/amazon-s3.md)。 |
-| DCS | `https://dcs-beta.demdex.net/...` | 請參 [閱在測試環境中訪問DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
+| S3 | 聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請連絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的測試版實例設定Amazon S3儲存貯體。 閱讀有關使用Amazon S3](../reference/amazon-s3.md)的[優勢。 |
+| DCS | `https://dcs-beta.demdex.net/...` | 請參閱[在測試環境中訪問DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
 | UI | `https://bank-beta.demdex.com` | 您的生產環境認證對測試環境有效。 |
-| API | `https://api-beta.demdex.com/...` | 您的生產環境認證對測試環境有效。 我們建議您建立一般API使用者，請參 [閱詳細資訊](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |
+| API | `https://api-beta.demdex.com/...` | 您的生產環境認證對測試環境有效。 我們建議您建立一般API使用者[，請參閱詳細資訊](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |
 
 ## 在測試環境中訪問DCS {#access-dcs-beta-environment}
 
-1. 使用curl命令進行DCS [呼叫](https://curl.haxx.se/docs/manpage.html)。 Curl是使用許多支援的通訊協定之一，將資料從伺服器傳輸或傳輸至伺服器的工具。
+1. 使用curl [命令](https://curl.haxx.se/docs/manpage.html)進行DCS呼叫。 Curl是使用許多支援的通訊協定之一，將資料從伺服器傳輸或傳輸至伺服器的工具。
 
    例如：
 
