@@ -17,15 +17,15 @@ ht-degree: 7%
 
 # 即時傳入資料擷取 {#real-time-inbound-data-ingestion}
 
-即時傳入資料擷取程式會使用來自使用 `HTTP` 者瀏覽器的一連串請求，將資料傳入Audience Manager。
+即時傳入資料擷取程式會使用使用者瀏覽器的一連串`HTTP`要求，將資料傳入Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
-傳入資料應格式化為稱為訊號的鍵值對。 通常，每個信號都映射到通過用戶介面或建立或管理的段 [!DNL API]。
+傳入資料應格式化為稱為訊號的鍵值對。 通常，每個信號都映射到通過用戶介面或[!DNL API]建立或管理的段。
 
-## URL字串參數與語法 {#url-string-syntax}
+## URL字串參數與語法{#url-string-syntax}
 
-傳入 [!DNL URL] 資料傳輸的變數應包含下列所述的變數。 在設 [定即時資料](../../../features/traits/create-onboarded-rule-based-traits.md) ，請記得在UI中建 [立特徵](../../../features/traits/trait-storage.md#create-trait-storage-folder)[!DNL Audience Manager] 和資料夾結構。
+傳入資料傳輸的[!DNL URL]應包含下述變數。 在設定即時資料傳輸之前，請記得在[!DNL Audience Manager] UI中[建立traits](../../../features/traits/create-onboarded-rule-based-traits.md)和[資料夾結構](../../../features/traits/trait-storage.md#create-trait-storage-folder)。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ ht-degree: 7%
 
 ### URL語法
 
-在即時傳入資料擷取程式中，正確格式的字串 [!DNL URL] 使用下列語法：
+在即時傳入資料擷取程式中，正確格式的[!DNL URL]字串使用下列語法：
 
 ```
 https://client.demdex.net/event?KEY1=VALA&KEY2=VALB&KEY3=VALC
