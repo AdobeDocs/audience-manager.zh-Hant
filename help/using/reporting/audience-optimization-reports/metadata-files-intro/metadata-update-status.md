@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # 中繼資料檔案的狀態更新{#status-updates-for-metadata-files}
 
-S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與失敗資訊。 檔案包含JSON格式的資料，其狀態結果為陣列。
+S3狀態目錄包含`.info`檔案，其中包含您上傳檔案的成功與失敗資訊。 檔案包含JSON格式的資料，其狀態結果為陣列。
 
-您檔案的內 `.info` 容看起來類似此範例。
+`.info`檔案的內容看起來類似此範例。
 
 ```js
 //sample file path
@@ -60,9 +60,9 @@ S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與
 }
 ```
 
-## 定義的元資料鍵值對 {#key-value-pairs}
+## 定義{#key-value-pairs}的元資料鍵值對
 
-下表列出並定義中繼資料狀態檔 `Files` 案 `Summary` 中和區段的索引鍵。
+下表列出並定義中繼資料狀態檔案的`Files`和`Summary`區段中的索引鍵。
 
 **檔案陣列中的鍵**
 
@@ -84,19 +84,19 @@ S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileChecksumMD5</code> </p> </td> 
-   <td colname="col2"> <p>上傳至您目錄的中繼資料檔案的MD 5校驗 <code> meta</code> 和。 </p> </td> 
+   <td colname="col2"> <p>上傳至<code> meta</code>目錄的中繼資料檔案的MD 5總和。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> FileName</code> </p> </td> 
-   <td colname="col2"> <p>上傳至您目錄的中繼資料檔案 <code> meta</code> 名稱。 </p> </td> 
+   <td colname="col2"> <p>上傳至<code> meta</code>目錄的中繼資料檔案名稱。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的子ID為基礎。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的子ID為基礎。 </p> <p>請參閱<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">中繼資料檔案的命名慣例</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的父ID為基礎。 </p> <p>See <a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md"> Naming Conventions for Metadata Files</a>. </p> </td> 
+   <td colname="col2"> <p>您檔案所含資料類型的可讀名稱。 它以檔案名稱中的父ID為基礎。 </p> <p>請參閱<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">中繼資料檔案的命名慣例</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 
@@ -121,7 +121,7 @@ S3狀態目錄包含一個檔案， `.info` 內含您已上傳檔案的成功與
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> Day</code> </p> </td> 
-   <td colname="col2"> <p>格式檔案處理 <code><i>yyyy-mm-dd</i></code> 日期。 </p> </td> 
+   <td colname="col2"> <p>檔案處理日期為<code><i>yyyy-mm-dd</i></code>格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> GlobalStatus</code> </p> </td> 
