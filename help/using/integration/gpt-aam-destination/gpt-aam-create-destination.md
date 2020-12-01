@@ -17,39 +17,39 @@ ht-degree: 7%
 
 # 建立 GPT 目的地 {#create-a-gpt-destination}
 
-您可以透過用戶端(瀏 [!DNL Google Ad Manager] 覽器端)整合或伺服器端整合，將合格的區段傳送至。 如果您選擇用戶端整合，則必須在Audience Manager中建立以Cookie為基礎的 [!DNL Google Publisher Tags] 目標。
+您可以透過用戶端（瀏覽器端）整合或伺服器端整合，將合格區段傳送至[!DNL Google Ad Manager]。 如果您選擇用戶端整合，您必須在Audience Manager中為[!DNL Google Publisher Tags]建立以Cookie為基礎的目標。
 
 ## 目的地
 
-在Audience Manager中， *`destination`* 是任何其他系統(廣告伺服 [!DNL DSP]器、廣告網路等) 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 提供可讓您建立和管理這些資料傳送程式的工具。 Audience Manager目標功能位於 *[!UICONTROL Audience Data]>[!UICONTROL Destinations]*。 若要開始，請按一&#x200B;**[!UICONTROL Add New Destination]**下並遵循下列步驟。
+在Audience Manager中，*`destination`*&#x200B;是任何其他系統（廣告伺服器、[!DNL DSP]廣告網路等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 提供可讓您建立和管理這些資料傳送程式的工具。Audience Manager目標功能位於&#x200B;*[!UICONTROL Audience Data]>[!UICONTROL Destinations]*。 若要開始，請按一下&#x200B;**[!UICONTROL Add New Destination]**，然後遵循下列步驟。
 
 ## 基本資訊
 
-要完成該部 [!UICONTROL Basic Information] 分：
+要完成[!UICONTROL Basic Information]部分：
 
 1. 命名目標。
-1. Select **[!UICONTROL "Cookie"]** from the [!UICONTROL Type] drop-down list.
-1. 單 **[!UICONTROL Next]** 擊並移至和 [!UICONTROL Configuration] 節 [!UICONTROL Segment Mappings] 。
+1. 從[!UICONTROL Type]下拉式清單中選取&#x200B;**[!UICONTROL "Cookie"]**。
+1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;並移至[!UICONTROL Configuration]和[!UICONTROL Segment Mappings]部分。
 
 ## Cookie設定
 
-請提供以下內容以完成 [!UICONTROL Configuration] 章節（其他欄位為選填欄位）:
+請提供以下內容以完成[!UICONTROL Configuration]章節（其他欄位為選用）:
 
-1. **Cookie名稱：** 為您的Cookie提供簡短的描述性名稱。
-1. **資料格式：** 選擇選 **[!UICONTROL "Single Key"]** 項。
-1. **索引鍵：** 提供密鑰名稱。
-1. **序列化：** 選中復 **[!UICONTROL Enable]** 選框。
-1. **串列分隔字元：** 僅使用逗號。
+1. **Cookie名稱：** 為您的Cookie提供簡短、描述性的名稱。
+1. **資料格式：** 選取 **[!UICONTROL "Single Key"]** 選項。
+1. **金鑰：** 提供金鑰名稱。
+1. **序列化：選** 取核取 **[!UICONTROL Enable]** 方塊。
+1. **序列分隔字** 元：僅使用逗號。
 
 ## 區段對應
 
 若要新增區段至Cookie目標：
 
-1. 尋找區段： 本節 [!UICONTROL Segment Mappings] 提供兩種搜尋工具，以協助尋找區段。 若要尋找區段：
+1. 尋找區段：[!UICONTROL Segment Mappings]區段提供兩種搜尋工具，以協助找出區段。 若要尋找區段：
 
-   * 選項1: 開始在搜尋欄位中輸入區段名稱。 欄位會根據輸入的文字自動更新。 在找 **[!UICONTROL Add]** 到要使用的區段後，按一下。
-   * 選項2: 按一 **[!UICONTROL Browse All Segments]** 下以開啟可讓您依名稱或儲存位置瀏覽區段的視窗。 完成時 **[!UICONTROL Add Selected Segments]** 按一下。
+   * 選項1:開始在搜尋欄位中輸入區段名稱。 欄位會根據輸入的文字自動更新。 找到要使用的區段後，按一下&#x200B;**[!UICONTROL Add]**。
+   * 選項2:按一下&#x200B;**[!UICONTROL Browse All Segments]**&#x200B;以開啟一個視窗，讓您依名稱或儲存位置瀏覽區段。 完成後，按一下&#x200B;**[!UICONTROL Add Selected Segments]**。
 
-1. **添加映射：** 在映射彈出式視窗中，在映射欄位中輸入區段ID，然後按一下 **[!UICONTROL Save]**。
+1. **新增對應：** 在映射快顯視窗中，在映射欄位中輸入區段ID，然後按一下 **[!UICONTROL Save]**。
 
 1. 按一下 **[!UICONTROL Done]**.
