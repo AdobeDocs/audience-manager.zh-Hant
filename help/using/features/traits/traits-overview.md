@@ -17,7 +17,7 @@ ht-degree: 39%
 
 # [!UICONTROL Traits] 概述 {#traits-overview}
 
-使用、或管理資料收集 [!UICONTROL rules-based]和觀 [!UICONTROL onboarded]眾 [!UICONTROL algorithmic] 建立 [!UICONTROL folder traits]。 閱讀以下連結的頁面，開始使用 [!UICONTROL traits]:
+使用[!UICONTROL rules-based]、[!UICONTROL onboarded]、[!UICONTROL algorithmic]或[!UICONTROL folder traits]管理資料收集和觀眾建立。 閱讀以下連結的頁面，開始使用[!UICONTROL traits]:
 
 * [特徵詳細資料頁面](/help/using/features/traits/trait-details-page.md)
 * [特徵產生器](/help/using/features/traits/about-trait-builder.md)
