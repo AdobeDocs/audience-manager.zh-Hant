@@ -19,7 +19,7 @@ ht-degree: 72%
 
 [!DNL Audience Manager] 可協助您收集和管理第一方、第二方及第三方資料。
 
-解鎖儲存在多個孤立環境中的客戶資訊資產，是公司目前面臨的最大資料難題之一。From [!DNL CRM] databases, to registration systems, to ad servers, and so forth, companies require tools that help centralize valuable data and manage customer/audience information as a single strategic data asset. [!DNL Audience Manager] 可協助您解除鎖定孤立的客戶資訊，並管理來自多個來源的資料收集。Collected data can be managed based on data element time-to-live ([!DNL TTL]) values, which helps the publisher control data expiration across all sources. [!DNL Audience Manager] 的設計用途是協助您管理下列類型的資料：
+解鎖儲存在多個孤立環境中的客戶資訊資產，是公司目前面臨的最大資料難題之一。從[!DNL CRM]資料庫、註冊系統、廣告伺服器等，公司都需要工具來協助將寶貴資料集中化，並將客戶／受眾資訊當成單一策略資料資產來管理。 [!DNL Audience Manager] 可協助您解除鎖定孤立的客戶資訊，並管理來自多個來源的資料收集。收集的資料可以根據資料元素的即時時間([!DNL TTL])值進行管理，這可協助發佈者控制所有來源的資料過期。 [!DNL Audience Manager] 的設計用途是協助您管理下列類型的資料：
 
 | 資料類型 | 資料來源 |
 |---|---|
@@ -29,7 +29,7 @@ ht-degree: 72%
 
 ## 第一方資料收集 {#first-party-data}
 
-First-party data collection is a main [!DNL Audience Manager] feature. 我們的客戶 (發佈商或廣告商) 希望將專屬資料當做行銷方案的基石，或針對其他資料來源進行定位和模型建模，而這個核心功能可滿足這些客戶的需求。
+第一方資料收集是[!DNL Audience Manager]的主要功能。 我們的客戶 (發佈商或廣告商) 希望將專屬資料當做行銷方案的基石，或針對其他資料來源進行定位和模型建模，而這個核心功能可滿足這些客戶的需求。
 
 [!DNL Audience Manager] 與客戶合作，瞭解其資料策略，然後將該策略對應回自訂資料收集計畫。我們的合作夥伴解決方案團隊會與您合作，評估網站、原始資料訊號和其他使用者在您網站上的互動。我們將透過這些資訊，協助您建立量身打造的資料收集策略，從您詳細目錄中的不同頁面擷取使用者層級資料訊號。擷取的資料會儲存並對應回預先定義的分類法，且可隨時依您的業務需求變更進行更新。
 
@@ -44,31 +44,31 @@ First-party data collection is a main [!DNL Audience Manager] feature. 我們的
 | 3 | **房屋類型**。根據運送和/或帳單地址，可以推斷 Mary 是為自己還是為公司購買健身器材。 |
 | 4 | **位置**。[!DNL ZIP] 在確定位置時， [!DNL IP] 代碼比地址更可靠。 |
 | 5 | **促銷活動相似性**。如果購物者使用促銷代碼或禮品卡，他們很可能是尋找最優惠交易的精打細算買家。 |
-| 6 | **消費能力**。Price data correlated with [!DNL ZIP+4] codes indicate spending power of a given location. |
+| 6 | **消費能力**。與[!DNL ZIP+4]代碼相關的價格資料表示給定位置的開銷。 |
 
-After the raw data is collected, it gets mapped back to customer-defined traits within the [!DNL Audience Manager] platform. 分類法和資料對應都可隨時調整，不需變更資料收集程式碼。
+在收集原始資料後，會將其映射回[!DNL Audience Manager]平台內的客戶定義特徵。 分類法和資料對應都可隨時調整，不需變更資料收集程式碼。
 
 ## 第二方資料收集 {#second-party-data}
 
 第二方資料來自策略商業夥伴 (並非發佈商資料)。收集和管理這些資訊的方式與第一方資料相同。
 
-在第二方資料情境中，廣告商會將自己的資料資產傳送給發佈商，以便將該資訊與發佈商的資料結合，然後執行更具針對性的廣告方案。此外，發佈商可與廣告商合作以擴大其受眾群規模。In most cases, these arrangements involve contractual relationships limited to putting the [!DNL Audience Manager] container tag on the partner site to facilitate data collection and sharing.
+在第二方資料情境中，廣告商會將自己的資料資產傳送給發佈商，以便將該資訊與發佈商的資料結合，然後執行更具針對性的廣告方案。此外，發佈商可與廣告商合作以擴大其受眾群規模。在大多數情況下，這些安排涉及的合約關係僅限於將[!DNL Audience Manager]容器標籤放在合作夥伴網站上，以利資料收集和分享。
 
-第二方資料收集與再行銷的範例，可能包含服裝零售商收集其產品的相關資料，然後與主要合作夥伴共用這些資訊。In this case, the retailed could serve different ads across an [!DNL Audience Manager] partner site for consumers who chose various jacket colors and sizes.
+第二方資料收集與再行銷的範例，可能包含服裝零售商收集其產品的相關資料，然後與主要合作夥伴共用這些資訊。在這種情況下，零售商可以在[!DNL Audience Manager]合作夥伴網站上為選擇各種夾克顏色和尺寸的消費者提供不同的廣告。
 
 ![](assets/shopping-cart-traits.png)
 
 ## 第三方資料收集 {#third-party-data}
 
-Third-party data is information collected and shared by vendors outside of [!DNL Audience Manager].
+協力廠商資料是由[!DNL Audience Manager]以外的廠商收集和分享的資訊。
 
-Third-party data can be used to qualify existing data [!UICONTROL segments] (for example, age, household income, and so forth), provide data that is in demand but not otherwise available, or be used in lookalike modeling against a known user base from first-party and second-party data. [!DNL Audience Manager] 可與許多第三方資料提供者合作，且可協助您瞭解這些資料提供者收集的資料類型，讓您能與每個提供者進行正確的策略交易。
+第三方資料可用來限定現有資料[!UICONTROL segments]（例如年齡、家庭收入等）、提供有需求但無法取得的資料，或用於類似地模擬來自第一方及第二方資料的已知使用者群。 [!DNL Audience Manager] 可與許多第三方資料提供者合作，且可協助您瞭解這些資料提供者收集的資料類型，讓您能與每個提供者進行正確的策略交易。
 
 >[!NOTE]
 >
 >如需 [!DNL Audience Manager] 支援的第三方資料提供者完整清單，請參閱 [Adobe Audience Finder](https://www.adobe-audience-finder.com/)。
 
-[!DNL Audience Manager] 根據其他資料提供者的可用資料集與 [!DNL APIs] 其他資料提供者整合。 資料收集會在使用者瀏覽您的網站時即時執行，或是透過頻外方法執行，在使用者離開您的網站後，於合作夥伴之間同步 ID，並在伺服器之間傳輸資料。In either case, [!DNL Audience Manager] clients get the benefit of having third-party data synchronized on our platform, which means each client, or domain, does not have to perform its own synchronization. 這麼做有助於增加觸及率，以及減少頁面上的伺服器呼叫。
+[!DNL Audience Manager] 根據其他資料提供者的可用資料集與 [!DNL APIs] 其他資料提供者整合。資料收集會在使用者瀏覽您的網站時即時執行，或是透過頻外方法執行，在使用者離開您的網站後，於合作夥伴之間同步 ID，並在伺服器之間傳輸資料。無論哪種情況，[!DNL Audience Manager]客戶端都可以在我們的平台上同步第三方資料，這意味著每個客戶端或域都不必執行自己的同步。 這麼做有助於增加觸及率，以及減少頁面上的伺服器呼叫。
 
 ## 比對合作夥伴 {#match-partners}
 
