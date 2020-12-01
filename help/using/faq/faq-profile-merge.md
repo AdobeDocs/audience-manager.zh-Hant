@@ -36,7 +36,7 @@ ht-degree: 86%
 
  
 
-**在[!UICONTROL Profile Merge Rule]中使用外部裝置圖表有哪些常見的使用案例？**
+**在 [!UICONTROL Profile Merge Rule] 中使用外部裝置圖表有哪些常見的使用案例？**
 
 在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表的主要目的，是針對特定區段評估，以及為屬於單一個人或家庭的多部裝置授與資格。例如，區段本身可能有多種用途，例如以 DSP 所提供的廣告對潛在客戶進行目標定位，或透過站上個人化平台將客戶的站上體驗個人化。請參閱[外部裝置圖表使用案例](../features/profile-merge-rules/external-graph-use-cases.md)
 
@@ -48,7 +48,7 @@ ht-degree: 86%
 
  
 
-**[!DNL Audience Manager]多久更新一次外部裝置圖表資料？**
+**[!DNL Audience Manager] 多久更新一次外部裝置圖表資料？**
 
 每週一次。
 
@@ -56,7 +56,7 @@ ht-degree: 86%
 
 ## 裝置圖表和設定檔合併規則 {#device-graph-profile-merge-rules}
 
-**[!DNL Audience Manager]如何使用裝置圖表？**
+**[!DNL Audience Manager] 如何使用裝置圖表？**
 
 在 [!DNL Audience Manager] 中[建立設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)時，裝置圖表會顯示為設定選項。透過您的 [!UICONTROL Profile Merge Rules]，這些裝置圖表可協助 [!DNL Audience Manager]：
 
@@ -66,25 +66,25 @@ ht-degree: 86%
 
  
 
-**我可以建立多少[!UICONTROL Profile Merge Rules]？**
+**我可以建立多少 [!UICONTROL Profile Merge Rules]？**
 
 目前最多可以建立 4 個 [!UICONTROL Profile Merge Rules]。第四個設定檔合併規則 ([!UICONTROL All Cross-Device Profiles]) 僅適用於購買 [!UICONTROL People-Based Destinations] 附加元件的客戶。
 
  
 
-**在[!UICONTROL Profile Merge Rule]中使用裝置圖表時，[!DNL Audience Manager]會合併和讀取幾個裝置設定檔？**
+**在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表時，[!DNL Audience Manager] 會合併和讀取幾個裝置設定檔？**
 
 使用 [!UICONTROL Profile Merge Rule] 為裝置授與區段的資格時，Audience Manager 會合併並讀取目前的裝置設定檔，以及最多 99 個由您所選的裝置圖表選項連結的其他裝置設定檔。
 
  
 
-**在[!UICONTROL Profile Merge Rule]中使用裝置圖表時，哪些裝置符合區段的資格？**
+**在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表時，哪些裝置符合區段的資格？**
 
 [!DNL Audience Manager] 合併和讀取的裝置，與符合區段資格的裝置相同。
 
  
 
-**[!DNL Audience Manager]可在哪裡傳送使用裝置圖表的[!UICONTROL Profile Merge Rule]已授與資格的區段？**
+**[!DNL Audience Manager] 可在哪裡傳送使用裝置圖表的 [!UICONTROL Profile Merge Rule] 已授與資格的區段？**
 
 [!DNL Audience Manager] 能以批次檔案或即時方式將區段傳送至目的地。
 
@@ -92,37 +92,37 @@ ht-degree: 86%
 
 ## 區段、裝置圖表和設定檔合併規則 {#segments-device-graphs-rules}
 
-**透過使用裝置圖表的[!UICONTROL Profile Merge Rule]，若判斷裝置不再符合區段的資格，[!DNL Audience Manager]會如何取消裝置的區段？**
+**透過使用裝置圖表的 [!UICONTROL Profile Merge Rule]，若判斷裝置不再符合區段的資格，[!DNL Audience Manager] 會如何取消裝置的區段？**
 
 透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 評估區段時，Audience Manager 可合併最多 100 部裝置。如果系統發出取消細分訊號，那麼目前的裝置和最多 99 部其他裝置將會從目的地的區段中移除。如需取消細分的詳細資訊，請參閱[設定檔合併規則和裝置取消細分程序](../features/profile-merge-rules/merge-rule-unsegment.md)。
 
  
 
-**如果目的地可以取消裝置的區段，使用裝置圖表的[!UICONTROL Profile Merge Rules]是否會將裝置從區段中移除？**
+**如果目的地可以取消裝置的區段，使用裝置圖表的 [!UICONTROL Profile Merge Rules] 是否會將裝置從區段中移除？**
 
 是。請參閱上述說明。
 
  
 
-**如果透過使用裝置圖表的[!UICONTROL Profile Merge Rule]建立區段，且區段同時使用即時和已上線的資料，我的區段是否會隨著已上線的資料變更而更新？**
+**如果透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 建立區段，且區段同時使用即時和已上線的資料，我的區段是否會隨著已上線的資料變更而更新？**
 
 是。
 
  
 
-**區段大小估計是否包含根據使用裝置圖表選項的[!UICONTROL Profile Merge Rule]提供的連線符合區段資格的裝置？**
+**區段大小估計是否包含根據使用裝置圖表選項的 [!UICONTROL Profile Merge Rule] 提供的連線符合區段資格的裝置？**
 
 不會。請參閱[區段產生器中的特徵和區段母體資料](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/features/segments/segment-builder-data.translate.html)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
 
  
 
-**[!UICONTROL Addressable Audiences]是否包含根據使用裝置圖表選項的[!UICONTROL Profile Merge Rule]提供的連線符合區段資格的裝置？**
+**[!UICONTROL Addressable Audiences] 是否包含根據使用裝置圖表選項的 [!UICONTROL Profile Merge Rule] 提供的連線符合區段資格的裝置？**
 
 是。
 
  
 
-**如果區段搭配[!UICONTROL No Cross-Device Profile]使用[!UICONTROL Profile Merge Rule]，且讓裝置符合區段資格的特徵只儲存在跨裝置設定檔中，那麼區段的總母體會是 0 嗎？**
+**如果區段搭配 [!UICONTROL No Cross-Device Profile] 使用 [!UICONTROL Profile Merge Rule]，且讓裝置符合區段資格的特徵只儲存在跨裝置設定檔中，那麼區段的總母體會是 0 嗎？**
 
 是。當設定檔合併規則設為 [!UICONTROL No Cross-Device Profile]，Audience Manager 就不會在進行區段評估時計算跨裝置設定檔中儲存的特徵數。
 
@@ -130,7 +130,7 @@ ht-degree: 86%
 
 ## 特徵頻率、裝置圖表和設定檔合併規則 {#trait-freq-device-rules}
 
-**[!DNL Audience Manager]如何透過使用裝置圖表的[!UICONTROL Profile Merge Rule]來計算特徵頻率？**
+**[!DNL Audience Manager] 如何透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 來計算特徵頻率？**
 
 特徵頻率取決於跨多部裝置的特定特徵資格數總和。為協助您瞭解，請參閱下列使用案例。
 
@@ -170,13 +170,13 @@ ht-degree: 86%
 
 ## 報表、裝置圖表和設定檔合併規則 {#reports-device-graphs-rules}
 
-**我是否能透過使用裝置圖表的[!UICONTROL Profile Merge Rule]看到可觸及的裝置數？**
+**我是否能透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 看到可觸及的裝置數？**
 
 是。報表會傳回 [!UICONTROL Profile Merge Rule] 層級的資料。報表資料會每天更新。資料是根據在您帳戶中看到的裝置，而非裝置圖表所連結的裝置。請參閱[設定檔合併規則的報表量度](../features/profile-merge-rules/profile-link-metrics.md)。
 
  
 
-**我是否能透過使用裝置圖表的[!UICONTROL Profile Merge Rules]*即時*看到符合特定區段資格的裝置數？**
+**我是否能透過使用裝置圖表的 [!UICONTROL Profile Merge Rules] *即時*看到符合特定區段資格的裝置數？**
 
 是。即時母體量度會使用裝置圖表連結的所有裝置之設定檔，擷取目前裝置 (即時發現的裝置) 的區段資格。
 
@@ -218,7 +218,7 @@ ht-degree: 86%
 
  
 
-**我是否能透過使用裝置圖表的[!UICONTROL Profile Merge Rule]看到符合特定區段資格的總裝置數？**
+**我是否能透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 看到符合特定區段資格的總裝置數？**
 
 是。總區段母體量度包括已根據裝置圖表的連線符合區段資格的其他裝置。
 
@@ -256,7 +256,7 @@ ht-degree: 86%
 
  
 
-**[!UICONTROL Interactive]報表、[!UICONTROL Overlap]報表和[!UICONTROL Audience Optimization]報表中，是否包含透過使用裝置圖表的[!UICONTROL Profile Merge Rule]符合區段資格的裝置？**
+**[!UICONTROL Interactive] 報表、[!UICONTROL Overlap] 報表和 [!UICONTROL Audience Optimization] 報表中，是否包含透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 符合區段資格的裝置？**
 
 否。
 
@@ -266,7 +266,7 @@ ht-degree: 86%
 
 若要使用跨裝置ID（例如Adobe Campaign）確保Audience Manager實例與目標之間的正確整合，請確定您符合下列需求：
 
-1. 檢閱對應至Adobe Campaign Declared ID目的地的區段所使用的描述檔合併規則。 「描述檔合併規則」必須使 [!UICONTROL Last Authenticated Profile] 用選項，因此所有已驗證的描述檔都可以包含在匯出中。 如果您的描述檔合併規則使用不同的選項，請將其切換為 [!UICONTROL Last Authenticated Profile]。
+1. 檢閱對應至Adobe Campaign Declared ID目的地的區段所使用的描述檔合併規則。 配置檔案合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，因此所有已驗證的配置檔案都可以包含在導出中。 如果您的「描述檔合併規則」使用不同的選項，請將其切換為[!UICONTROL Last Authenticated Profile]。
 2. 在「描述檔合併規則」設定中，選取「Adobe Campaign Declared ID」資料來源。
 
 >[!NOTE]
