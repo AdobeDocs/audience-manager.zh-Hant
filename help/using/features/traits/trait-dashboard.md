@@ -17,16 +17,16 @@ ht-degree: 4%
 
 # 特徵控制面板 {#traits-dashboard}
 
-「特 [徵」儀表板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list) ，是集中式工作區，用於管理特徵。 您可導覽至 [!UICONTROL Traits] >以檢視控制 **[!UICONTROL Audience Data]** 面板 **[!UICONTROL Traits]**。
+[Traits儀表板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list)是用於管理特徵的集中式工作區。 導覽至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**，即可看到[!UICONTROL Traits]控制面板。
 
 ![](assets/traits-dashboard.png)
 
 <!-- c_tb_dashboard.xml -->
 
-控制 [!UICONTROL Traits] 面板包含可協助您：
+[!UICONTROL Traits]控制面板包含可協助您：
 
 1. 在可排序的欄數的表格中查看您的所有特徵和相關詳細資料。
-2. 檢閱並使用作用中 [的受眾特徵和資料來源同步特徵](../../features/traits/client-activity-synced-audience-traits.md)。
+2. 檢閱並使用[作用中的觀眾特徵和資料來源同步特徵](../../features/traits/client-activity-synced-audience-traits.md)。
 3. 建立、編輯和刪除特徵。
 4. 檢視和管理特徵儲存資料夾。
 5. 依名稱、ID、說明或資料來源搜尋特徵。 在搜索時按一下一個資料夾，將結果限制在該資料夾及其子資料夾。
