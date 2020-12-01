@@ -18,15 +18,15 @@ ht-degree: 10%
 
 # [!UICONTROL Declared IDs] {#declared-ids}
 
-如何 [!UICONTROL declared IDs] 運作、設定程式、程式碼範例和變數。
+[!UICONTROL declared IDs]如何運作、設定程式、程式碼範例和變數。
 
 ## [!UICONTROL Declared ID] 定位 {#declared-id-targeting}
 
-從不使用或接受永 [!DNL Audience Manager] 久儲存機制（例如協力廠商）的裝置或瀏覽器，將使用者ID交換並同步 [!DNL cookies]。
+從不使用或接受永久儲存機制（例如協力廠商[!DNL cookies]）的裝置或瀏覽器，將使用者ID與[!DNL Audience Manager]交換並同步。
 
-## 定位目 [!UICONTROL Declared ID] 標 {#declared-id-targeting-purpose}
+## [!UICONTROL Declared ID]定位{#declared-id-targeting-purpose}的用途
 
-某些瀏覽器和大部分行動裝置不接受協力廠商 [!DNL cookies]。 因此，很難保留網站訪客的相關資訊或指派永久性ID。 若要解決此問題， [!DNL Audience Manager] 請 [!UICONTROL DIL] 使用來讓您傳入 [!UICONTROL declared IDs] 事件呼叫。 此外， [!UICONTROL declared ID] 您也可以使用通用ID，在中的所有解決方案中套用至相同的使用者 [!DNL Experience Cloud]。 下表說明ID定位／符合程式：
+某些瀏覽器和大部分行動裝置不接受協力廠商[!DNL cookies]。 因此，很難保留網站訪客的相關資訊或指派永久性ID。 若要解決此問題，[!DNL Audience Manager]使用[!UICONTROL DIL]讓您在事件呼叫時傳入[!UICONTROL declared IDs]。 此外，[!UICONTROL declared ID]可當成通用ID，適用於[!DNL Experience Cloud]中所有解決方案的相同使用者。 下表說明ID定位／符合程式：
 
 <table id="table_5D59CD5AF70B44C3B45D279283D4691F"> 
  <thead> 
@@ -38,7 +38,7 @@ ht-degree: 10%
  <tbody> 
   <tr> 
    <td colname="col1"> <b>事件呼叫</b> </td> 
-   <td colname="col2"> <p>若要運作，您需 <span class="wintitle"> 要DIL </span> 和 <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html" format="https" scope="external"> 頁面上的Adobe Experience Platform Identity Service </a> 程式碼。 <span class="wintitle"> DIL從 </span><span class="wintitle"> Adobe Experience Platform Identity Service提供的函式取得宣告的ID </span> ，並將 <code> setVisitorID </code> 其傳遞至 <span class="keyword"></span><span class="keyword"></span>Audience Manager。 </p> </td> 
+   <td colname="col2"> <p>若要運作，您需要頁面上的<span class="wintitle"> DIL </span>和<a href="https://docs.adobe.com/content/help/en/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a>程式碼。 <span class="wintitle"> DIL從 </span>  <span class="wintitle">  </span>  <code> setVisitorID </code> Adobe Experience Platform Identity Service提供的函 <span class="keyword"> 數取得宣告的ID，並將其傳 </span> 遞至Audience Manager <span class="keyword">  </span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>符合ID</b> </td> 
@@ -55,22 +55,22 @@ ht-degree: 10%
  </tbody>
 </table>
 
-若要開始，您必須設定 [!DNL Experience Cloud] ID服務 [!UICONTROL DIL] ，以及您網站上要用於資料收集的頁面。 請參 [閱DIL create](../dil/dil-class-overview/dil-create.md#dil-create) and [Declared ID變數](../features/declared-ids.md#declared-id-variables)。
+若要開始，您必須在您網站上要用於資料收集的頁面上設定[!DNL Experience Cloud] ID服務和[!UICONTROL DIL]。 請參閱[DIL create](../dil/dil-class-overview/dil-create.md#dil-create)和[Declared ID變數](../features/declared-ids.md#declared-id-variables)。
 
-## 退出呼叫 {#opt-out-calls}
+## 退出呼叫{#opt-out-calls}
 
-此程 [!UICONTROL declared ID] 序會接受網站訪客的偏好設定，以選擇 [!DNL Audience Manager] 退出您的網站定位。 When [!DNL Audience Manager] receives an opt-out request, the [!DNL JSON] returned by the [!DNL DCS] contains the error code 171, with the message `Encountered opt out tag`, instead of the [!DNL Audience Manager] user ID.
+[!UICONTROL declared ID]程式會接受網站訪客的偏好設定，以選擇退出您網站的[!DNL Audience Manager]定位。 當[!DNL Audience Manager]收到退出請求時，[!DNL DCS]傳回的[!DNL JSON]包含錯誤碼171，並包含訊息`Encountered opt out tag`，而非[!DNL Audience Manager]使用者ID。
 
-* [!DNL Audience Manager] 可以傳入 [!UICONTROL declared ID] 退出選項旁 [!DNL Audience Manager] 邊的 [!UICONTROL UUID][!DNL URL]。
-* 退 [!UICONTROL declared ID] 出選項會依每個 [!UICONTROL Profile Cache Server] 合作伙[!UICONTROL PCS]伴儲存在()中。 沒有使用平台層級的退出選項 [!UICONTROL declared IDs]。 此外， [!DNL Audience Manager] 選擇使用者離開邊緣上的特定區域(選擇退出不跨越區 [!DNL DCS] 域)。
+* [!DNL Audience Manager] 可以傳入 [!UICONTROL declared ID] 退出選項旁 [!DNL Audience Manager] [!UICONTROL UUID] 邊的 [!DNL URL]。
+* [!UICONTROL declared ID]選擇退出會依每個合作夥伴儲存在[!UICONTROL Profile Cache Server]([!UICONTROL PCS])中。 沒有使用[!UICONTROL declared IDs]的平台層級選擇退出。 此外，[!DNL Audience Manager]會選擇使用者離開邊緣上的特定區域（退出不會跨越[!DNL DCS]區域）。
 
-如需 [退出資料收集的詳細資訊](../overview/data-security-and-privacy/data-privacy.md) ，請參閱資料隱私權。
+如需退出資料收集的詳細資訊，請參閱[資料隱私](../overview/data-security-and-privacy/data-privacy.md)。
 
-## [!UICONTROL Declared ID] 退出範例 {#opt-out-examples}
+## [!UICONTROL Declared ID] 退出範例  {#opt-out-examples}
 
-You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d_cid_ic` key-value pairs. 舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。請參閱 [CID 取代 DPID 及 DPUUID](../reference/cid.md)。在這些範例中，*斜體字*&#x200B;代表變數預留位置。
+您可以使用`d_cid`和`d_cid_ic`鍵值對發出[!UICONTROL declared ID]選擇退出請求。 舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。請參閱 [CID 取代 DPID 及 DPUUID](../reference/cid.md)。在這些範例中，*斜體字*&#x200B;代表變數預留位置。
 
-### 選擇退出(含 [!UICONTROL CID] 和 [!UICONTROL CID_IC]
+### 選擇退出（含[!UICONTROL CID]和[!UICONTROL CID_IC]）
 
 如需說明和語法，請參閱 [URL 變數和宣告 ID 的語法](../features/declared-ids.md#variables-and-syntax)。
 
@@ -91,13 +91,13 @@ You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d
    <td colname="col2"> <p> <code> https://<i>domain name</i>/demoptout?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>多 <code> d_cid </code> 對 <code> d_cid_ic </code> 和鍵值對。 </p> </td> 
+   <td colname="col1"> <p>多個<code> d_cid </code>和<code> d_cid_ic </code>鍵值對。 </p> </td> 
    <td colname="col2"> <p> <code> https://<i>domain name</i>/demoptout?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 選擇退出( [!UICONTROL DPID]含、 [!UICONTROL DPUUID]和 [!UICONTROL UUID] （已過時）)
+### 選擇退出（已過時）[!UICONTROL DPID][!UICONTROL DPUUID][!UICONTROL UUID]
 
 這些方法仍然有效，但被視為已過時。 此資訊是供舊版使用及參考之用。 舊版退出包括：
 
@@ -115,23 +115,23 @@ You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d
   </tr> 
   <tr> 
    <td colname="col1"> <p>合作夥伴層級選擇退出 </p> </td> 
-   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>會儲存合作夥伴層級選擇退出，以便將此 <code> dpid </code> +對對最 <code> dpuuid </code> 新對應至AAM UUID。 如果先前沒有現有的對應，Audience Manager會檢查請求中是否包含AAM UUID，如果包含，則會使用該AAM UUID儲存選擇退出。 否則，Audience Manager會產生新的AAM UUID，並將選擇退出儲存在其下。 </p> </td> 
+   <td colname="col2"> <p> <code> https://demoptout.jpg?d_dpuuid= user ID&amp;d_dpid= data provider ID </code> </p> <p>會儲存合作夥伴層級選擇退出，以便將此<code> dpid </code> + <code> dpuuid </code>對最新對應至AAM UUID。 如果先前沒有現有的對應，Audience Manager會檢查請求中是否包含AAM UUID，如果包含，則會使用該AAM UUID儲存選擇退出。 否則，Audience Manager會產生新的AAM UUID，並將選擇退出儲存在其下。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code> +明確 <code> d_uuid </code> </p> </td> 
-   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code> 永遠優先。 如果 <code> dpid </code> + <code> dpuuid </code> 組合對應至另一個AAM UUID，則退出會儲存在傳入請求( <code> d_uuid </code>)的AAM UUID下。 </p> </td> 
+   <td colname="col1"> <p> <code> d_dpuuid </code> + <code> d_dpid </code> 和明確  <code> d_uuid </code> </p> </td> 
+   <td colname="col2"> <p> <code> https://<i>domain</i>/demoptout.jpg?d_uuid= user ID&amp;d_dpuuid= data provider's user ID&amp;<i>d_dpid=data provider ID</i> </code> </p> <p> <code> d_uuid </code> 永遠優先。如果<code> dpid </code> + <code> dpuuid </code>組合對應至其他AAM UUID，則退出會儲存在傳入請求的AAM UUID(<code> d_uuid </code>)下。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 變數和語法 [!UICONTROL Declared IDs] {#variables-and-syntax}
+## [!UICONTROL Declared IDs] {#variables-and-syntax}的變數和語法
 
-下表列出傳入資料提供者ID和使用者ID或整合 [!DNL Audience Manager] 代碼（如果使用）的金鑰值配對。 Note, *italics* indicates a variable placeholder. 已新增空格，讓這些字元更容易閱讀。
+下表列出傳入[!DNL Audience Manager]資料提供者ID和使用者ID或整合代碼（如果使用）的金鑰值配對。 請注意，*斜體*&#x200B;表示變數預留位置。 已新增空格，讓這些字元更容易閱讀。
 
 在每個鍵值對中：
 
-* 符號 `=` 會將索引鍵與其相關值分開。
-* 非列印字 [!DNL ASCII] 元 `%01` 會分隔值。
+* `=`符號將鍵與其相關值分隔開。
+* 非列印[!DNL ASCII]字元`%01`會分隔值。
 
 <table id="table_DFA9A584A5DE40669EAF0DB62DDC5AAF"> 
  <thead> 
@@ -143,16 +143,16 @@ You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> d_cid =<i>data provider ID</i> %01<i>user ID</i> </code> </p> </td> 
-   <td colname="col2"> <p>在單一索引鍵值對中包含資料提供者ID和相關聯的唯一使用者ID。 <code> d_cid </code> 取代 <code> d_dpid </code> 和 <code> d_dpuuid </code>，這些被視為已過時但仍受支援。 請參閱 <a href="../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td> 
+   <td colname="col2"> <p>在單一索引鍵值對中包含資料提供者ID和相關聯的唯一使用者ID。 <code> d_cid </code> 取 <code> d_dpid </code> 代 <code> d_dpuuid </code>和，但仍受支援。請參閱 <a href="../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_cid_ic =<i>integration code</i> %01<i>user ID</i> </code> </p> </td> 
-   <td colname="col2"> <p>在單一金鑰值配對中包含整合程式碼和相關聯的唯一使用者ID。 <code> d_cid_ic </code> 取代 <code> d_dpid </code> 和 <code> d_dpuuid </code>（已過時但仍受支援）。 請參閱 <a href="../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td> 
+   <td colname="col2"> <p>在單一金鑰值配對中包含整合程式碼和相關聯的唯一使用者ID。 <code> d_cid_ic </code> 取代 <code> d_dpid </code> 和 <code> d_dpuuid </code>，這些已過時但仍受支援。請參閱 <a href="../reference/cid.md">CID 取代 DPID 及 DPUUID</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 範例事件呼叫 {#sample-event-calls}
+## 事件呼叫範例{#sample-event-calls}
 
 若有這些鍵值配對及其必要語法，您會進行下列事件呼叫。
 
@@ -173,7 +173,7 @@ You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d
    <td colname="col2"> <p> <code> https://<i>domain name</i>/event?d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>多 <code> d_cid </code> 對 <code> d_cid_ic </code> 和鍵值對。 </p> </td> 
+   <td colname="col1"> <p>多個<code> d_cid </code>和<code> d_cid_ic </code>鍵值對。 </p> </td> 
    <td colname="col2"> <p> <code> https://<i>domain name</i>/event?d_cid=123%01987&amp;d_cid_ic=456%01321... </code> </p> </td> 
   </tr> 
  </tbody> 
@@ -181,11 +181,11 @@ You can make a [!UICONTROL declared ID] opt-out requests with the `d_cid` and `d
 
 ## [!UICONTROL Declared ID] 變數 {#declared-id-variables}
 
-說明用來傳遞至的組態 [!UICONTROL declared IDs] 變 [!UICONTROL DIL] 數 [!DNL Audience Manager.]
+說明用於將[!UICONTROL declared IDs]傳遞至[!UICONTROL DIL]至[!DNL Audience Manager.]的組態變數
 
-## [!UICONTROL DIL] 使用 [!DNL Adobe Experience Platform Identity Service] 傳遞 [!UICONTROL Declared IDs] {#dil-id-service-pass-declared-ids}
+## [!UICONTROL DIL] 使用 [!DNL Adobe Experience Platform Identity Service] 來傳遞  [!UICONTROL Declared IDs] {#dil-id-service-pass-declared-ids}
 
-當與 [Adobe Experience Platform Identity Service搭配使用時](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html)，您不再需要與已過時的 [!UICONTROL declared IDs] 和變數一起 `dpid` 傳入 `dpuuid` 。 相反，當前版本的 [!UICONTROL DIL] 依賴函 `visitorService` 數從中 [!UICONTROL declared IDs] 的函 `setCustomerIDs` 數中獲取 [!UICONTROL Adobe Experience Platform Identity Service]。 For more information, see [Customer IDs and Authentication States](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html). 如下所示， `visitorService` 您可 `DIL.create` 以呼叫。
+當與[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html)搭配使用時，您不再需要使用已過時的`dpid`和`dpuuid`變數傳入[!UICONTROL declared IDs]。 相反，[!UICONTROL DIL]的當前版本依賴`visitorService`函式從[!UICONTROL Adobe Experience Platform Identity Service]的`setCustomerIDs`函式獲得[!UICONTROL declared IDs]。 如需詳細資訊，請參閱[客戶ID和驗證狀態](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)。 如下所示，您會呼叫`DIL.create`中的`visitorService`。
 
 ```js
 var vDil = DIL.create({
@@ -196,12 +196,12 @@ var vDil = DIL.create({
 });
 ```
 
-在鍵 `namespace` 值配對中，是 `MCORG` 您的 [!DNL Experience Cloud] 組織ID。 如果您沒有此ID，您可以在控制面板的區 [!UICONTROL Administration] 段中找 [!DNL Experience Cloud] 到。 您需要管理員權限才能檢視此控制面板。 See [Administration: Core Services](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
+在`namespace`鍵值對中，`MCORG`是您的[!DNL Experience Cloud]組織ID。 如果您沒有此ID，則可在[!DNL Experience Cloud]控制面板的[!UICONTROL Administration]區段中找到它。 您需要管理員權限才能檢視此控制面板。 請參閱[管理：核心服務](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)。
 
-## 已過時的函式 {#deprecated-functions}
+## 已過時的函式{#deprecated-functions}
 
-有了最新版 [!UICONTROL DIL] 本(6.2+)，您就不需要使用這些金鑰值配對來傳入 [!UICONTROL declared IDs]。 這是因為現 [!UICONTROL DIL] 在需要仰賴上述 `visitorService` 程式碼範例中顯示的函式。 此函式 [!UICONTROL declared IDs] 來自 [!UICONTROL Adobe Experience Platform Identity Service]。 不過，我們會在這裡參照這些變數，以用於歷史和舊有用途。 請參閱下面的程式碼，以取得如何設 `DIL.create` 定從取得 [!UICONTROL declared ID] 的範例 [!UICONTROL Visitor ID Service]。
-下表說明物件使用的舊版變 `declaredId` 數：
+在[!UICONTROL DIL](6.2+)的最新版本中，您不需要使用這些鍵值配對來傳入[!UICONTROL declared IDs]。 這是因為[!UICONTROL DIL]現在依賴於上述程式碼範例中顯示的`visitorService`函式。 此函式從[!UICONTROL Adobe Experience Platform Identity Service]獲取[!UICONTROL declared IDs]。 不過，我們會在這裡參照這些變數，以用於歷史和舊有用途。 請參閱以下程式碼，以取得如何從[!UICONTROL Visitor ID Service]設定`DIL.create`以取得[!UICONTROL declared ID]的範例。
+下表說明`declaredId`物件使用的舊版變數：
 
 <table id="table_A1884B72950F4BBDA87F17DDFF173628"> 
  <thead> 
@@ -227,9 +227,9 @@ var vDil = DIL.create({
 
 ### [!UICONTROL DPID]和[!UICONTROL DPUUID]
 
-[!DNL Audience Manager] 比較並比對組合後 `DPID` 的使 `DPUUID` 用者ID，以及我們系統中的對應使用者ID。 如果ID不存在，請 [!DNL Audience Manager] 建立新的使用者ID並將其同步至 `DPID/DPUUID` 組合。 匹 [!DNL Audience Manager] 配或建立用戶ID( `UUID`)後，在響應客戶端的域(第一方 [!DNL JSON][!DNL cookie][!DNL cookie])或其他本地儲存時返回該ID。
+[!DNL Audience Manager] 比較並比對組合 `DPID` 的 `DPUUID` 使用者ID，以及我們的系統。如果ID不存在，[!DNL Audience Manager]會建立新的使用者ID並將它同步至`DPID/DPUUID`組合。 當[!DNL Audience Manager]符合或建立使用者ID(`UUID`)後，它會在[!DNL JSON]回應中傳回該ID，以回應用戶端網域（第一方[!DNL cookie]）或其他本機儲存。[!DNL cookie]
 
-當您使用v6.1或更舊版本時， [!UICONTROL DIL] 請呼叫此函式。 不過，此函式已過時，而改用從中取得的新 [!UICONTROL declared IDs] 版本 [!DNL Adobe Experience Platform Identity Service]。
+當您使用[!UICONTROL DIL] v6.1或更舊版本時，請呼叫此函式。 但是，此函式已過時，而改用從[!DNL Adobe Experience Platform Identity Service]取得[!UICONTROL declared IDs]的新版本。
 
 ```js
 DIL.create({
@@ -243,13 +243,13 @@ DIL.create({
 
 >[!NOTE]
 >
->您需要以程式設計方式開發提供和索引鍵ID值 `d_dpuuid` 的程 `d_dpid` 式碼。
+>您需要以程式設計方式開發提供`d_dpuuid`和`d_dpid`鍵ID值的程式碼。
 
-### 執行個體化後傳入 [!UICONTROL DIL] ID
+### 在[!UICONTROL DIL]實例化後傳入ID
 
 >[!NOTE]
 >
->如果您使用不 [!DNL API] 同的組合進行 `declaredID` 呼叫，新組合將僅用於該呼叫。 進一步的一般事件呼叫會使用原始 `DIL.create` 組 `declaredID` 合。
+>如果您使用不同的`declaredID`組合進行[!DNL API]呼叫，則新組合將僅用於該呼叫。 進一步的常規事件調用將使用原始的`DIL.create` `declaredID`組合。
 
 ```js
 DIL.getDil('partner name').api.signals({...}).declaredId({
@@ -258,15 +258,15 @@ DIL.getDil('partner name').api.signals({...}).declaredId({
 }).submit();
 ```
 
-## 請求／回應範例 {#request-response-examples}
+## 請求／回應範例{#request-response-examples}
 
-請求會傳送資料提供者和使用者ID給 [!DNL Audience Manager]:
+請求會將資料提供者和使用者ID傳送至[!DNL Audience Manager]:
 
 ```
 https://my_domain.net/event?d_rtbd=json&d_cb=myCallback&key=val&d_dpuuid=1234&d_dpid=5678
 ```
 
-回應會傳回寫入至頁面網域中第一方Cookie的 `UUID`Audience Manager ID（例如）。
+回應會傳回寫入至頁面網域第一方Cookie的Audience Manager ID（例如`UUID`）。
 
 ```js
 myCallback({
@@ -275,9 +275,9 @@ myCallback({
 })
 ```
 
-## 不定位和選擇退出呼叫 {#do-not-target}
+## 不要定位和選擇退出呼叫{#do-not-target}
 
-此程 [!UICONTROL declared ID] 序會接受網站訪客的偏好設定，以選擇 [!DNL Audience Manager] 退出您的網站定位。 當收 [!DNL Audience Manager] 到退出請求時，會傳回 [!DNL DCS] 空白物 [!DNL JSON] 件，而非使用者 [!DNL Audience Manager] ID。
+[!UICONTROL declared ID]程式會接受網站訪客的偏好設定，以選擇退出您網站的[!DNL Audience Manager]定位。 當[!DNL Audience Manager]收到退出請求時，[!DNL DCS]會傳回空的[!DNL JSON]物件，而非[!DNL Audience Manager]使用者ID。
 
 >[!MORELIKETHIS]
 >
