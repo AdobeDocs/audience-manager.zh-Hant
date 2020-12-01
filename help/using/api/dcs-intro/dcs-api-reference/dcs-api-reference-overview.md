@@ -15,11 +15,11 @@ ht-degree: 13%
 
 # DCS API 參考概述
 
-程式碼、方法和程式的概 [!DNL DCS API] 念資訊、說明和定義。
+[!DNL DCS API]程式碼、方法和程式的概念資訊、說明和定義。
 
 * [DCS API 方法](/help/using/api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
 
-   使用GET或POST方 [!DNL DCS API] 法傳送資料至。
+   使用GET或POST方法將資料傳送至[!DNL DCS API]。
 
 * [DCS 錯誤碼、訊息和範例](/help/using/api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
 
