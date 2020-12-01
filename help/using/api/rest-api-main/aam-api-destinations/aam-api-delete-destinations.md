@@ -23,25 +23,25 @@ ht-degree: 7%
 
 ## 刪除目標
 
-移除 `DELETE` 目標的方法。
+刪除目標的`DELETE`方法。
 
 >[!NOTE]
 >
 >您必須先移除所有區段對應，才能刪除目標。
 
 * 請求: `DELETE https://api.demdex.com/v1/destinations/`*`<destinationId>`*
-* 回應： 如果成功， `204 No Content` 則傳回程式碼。
+* 回應：如果成功，則返回代碼`204 No Content`。
 
 ## 批量刪除目標
 
-使用此方法刪除多個 `POST` 目標。 將目標ID( `destinationId`)與請求主體中的陣列一起傳遞。
+使用此`POST`方法刪除多個目標。 將目標ID(`destinationId`)與請求主體中的陣列一起傳遞。
 
 * 請求: `POST https://api.demdex.com/v1/destinations/bulk-delete/`
-* 回應： 如果成功， `204 No Content` 則傳回程式碼。
+* 回應：如果成功，則返回代碼`204 No Content`。
 
 ## 依區段對應ID刪除目標映射
 
-根據 `POST` 指定的區段ID移除目標映射的方法。
+一種`POST`方法，根據指定的區段ID移除目標映射。
 
 * 請求: `DELETE https://api.demdex.com/v1/destinations/` *`<destinationId>`*`/segments/`*`<mappingId>`*
-* 回應： 如果成功， `204 No Content` 則傳回程式碼。
+* 回應：如果成功，則返回代碼`204 No Content`。
