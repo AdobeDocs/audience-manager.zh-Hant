@@ -27,7 +27,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->[UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
+>[UI中指](../../features/administration/administration-overview.md) 派的RBAC群 [!DNL Audience Manager] 組權限在中接受 [!UICONTROL Bulk Management Tools]。
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -39,11 +39,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> dataSourceId</span> </p> </td> 
-   <td colname="col2"> <p>您要大量傳 <a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings"> 回或指派</a> 之資料來源的ID。 </p> </td> 
+   <td colname="col2"> <p>您要大量傳回或指派的<a href="../../features/datasources-list-and-settings.md#data-sources-list-and-settings">資料來源</a>的ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> derivedSignalId</span> </p> </td> 
-   <td colname="col2"> <p>衍 <a href="../../features/derived-signals.md"> 生信號</a> ID。 </p> </td> 
+   <td colname="col2"> <p><a href="../../features/derived-signals.md">衍生信號</a> ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> 說明</span> </p> </td> 
@@ -51,7 +51,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> destinationId</span> </p> </td> 
-   <td colname="col2"> <p>要映射或刪 <a href="../../features/destinations/destinations.md"> 除的</a> 目標ID。 </p> </td> 
+   <td colname="col2"> <p>要映射或刪除的<a href="../../features/destinations/destinations.md">目標</a>的ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> destinationMappingId</span> </p> </td> 
@@ -75,31 +75,31 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey</span> </p> </td> 
-   <td colname="col2"> <p>訊號是根據使用者活動傳入 <span class="keyword"> Audience Manager</span> 的資料位。 這些值會以 <a href="../../reference/key-value-pairs-explained.md"> 鍵值對的形式傳送</a>。 原始碼是不變的常數。 它有助於將可變更的來源值分類。 請參閱 <a href="../../features/derived-signals.md"> 衍生訊號</a>。 </p> </td> 
+   <td colname="col2"> <p>信號是根據使用者活動傳入至<span class="keyword"> Audience Manager</span>的資料位。 這些值以<a href="../../reference/key-value-pairs-explained.md">鍵值對</a>的形式傳輸。 原始碼是不變的常數。 它有助於將可變更的來源值分類。 請參閱<a href="../../features/derived-signals.md">衍生信號</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
-   <td colname="col2"> <p>源值是作為鍵值對的一部分傳入 <a href="../../reference/key-value-pairs-explained.md"> 的變數</a>。 </p> </td> 
+   <td colname="col2"> <p>源值是作為<a href="../../reference/key-value-pairs-explained.md">鍵值對</a>的一部分傳入的變數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> startDate</span> </p> </td> 
-   <td colname="col2"> <p>指出區段何時可開始傳送至目的地。 使用 <i>yyyy-mm-dd格式</i> 。 </p> </td> 
+   <td colname="col2"> <p>指出區段何時可開始傳送至目的地。 使用<i>yyyy-mm-dd</i>格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetKey</span> </p> </td> 
-   <td colname="col2">導出信號中使用的鍵。 請參閱 <a href="../../features/derived-signals.md"> 衍生訊號</a>。 </td> 
+   <td colname="col2">導出信號中使用的鍵。 請參閱<a href="../../features/derived-signals.md">衍生信號</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> targetValue</span> </p> </td> 
-   <td colname="col2"> <p>與衍生的信號鍵一起傳遞的值。 請參閱 <a href="../../features/derived-signals.md"> 衍生訊號</a>。 </p> </td> 
+   <td colname="col2"> <p>與衍生的信號鍵一起傳遞的值。 請參閱<a href="../../features/derived-signals.md">衍生信號</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitAlias</span> </p> </td> 
-   <td colname="col2"> <p>傳遞至非Cookie型目標的ID。 對於Cookie型目標，這是金鑰值對 <a href="../../reference/key-value-pairs-explained.md"> 中的金鑰</a>。 </p> </td> 
+   <td colname="col2"> <p>傳遞至非Cookie型目標的ID。 對於Cookie型目標，此為<a href="../../reference/key-value-pairs-explained.md">鍵值對</a>中的鍵。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用於收集資料的實際特徵或區段規則。 大量請求會傳回在 <span class="keyword"> Audience Manager中使用特徵規則產生器</span> ，或區段規則產生器建 <a href="../../features/traits/about-trait-builder.md"> 立的規則</a><a href="../../features/segments/segment-builder.md"></a>。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>See also, <a href="../../reference/bulk-management-tools/bulk-rules.md"> Create or Update Trait Rules and Segment Rules</a>. </p> </td> 
+   <td colname="col2"> <p>用於收集資料的實際特徵或區段規則。 大量請求會傳回在<span class="keyword"> Audience Manager</span>中以<a href="../../features/traits/about-trait-builder.md">特徵規則產生器</a>或<a href="../../features/segments/segment-builder.md">區段規則產生器</a>建立的規則。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>另請參閱<a href="../../reference/bulk-management-tools/bulk-rules.md">建立或更新特徵規則和區段規則</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
@@ -116,7 +116,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> valueAlias</span> </p> </td> 
-   <td colname="col2"> <p>傳遞至Cookie目 <a href="../../reference/key-value-pairs-explained.md"> 標的金鑰</a> -值對中的金鑰。 </p> </td> 
+   <td colname="col2"> <p>傳遞至Cookie目的地的<a href="../../reference/key-value-pairs-explained.md">金鑰值對</a>中的金鑰。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
