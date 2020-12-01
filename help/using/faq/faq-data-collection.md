@@ -44,8 +44,8 @@ ht-degree: 84%
 
 | 伺服器 | IP 位址 |
 | ---------|----------|
-| ftp-in-gtw.demdex.com | 52.3.74.119; 3.233.68.222 |
-| ftp-out-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
+| ftp-in-gtw.demdex.com | 52.3.74.119;3.233.68.222 |
+| ftp-out-gtw.demdex.com | 23.22.232.252;18.211.109.184 |
 
  
 
@@ -60,13 +60,13 @@ ht-degree: 84%
 
 **我要如何設定Audience Manager例項以使用新的SFTP伺服器？**
 
-請連絡您 [!DNL Audience Manager] 的顧問或客戶服務，他們將會設定您的新SFTP帳戶。
+請連絡您的[!DNL Audience Manager]顧問或客戶服務，他們將設定您的新SFTP帳戶。
 
  
 
 **新SFTP伺服器支援哪些驗證方法？**
 
-新的SFTP伺服器(`ftp-in-gtw` 和 `ftp-out-gtw`)支援 [!DNL OpenSSH Key-Based Authentication]。 我們可為您產 [!DNL SSH] 生密鑰，或者您可以提供您自己的公開密鑰。
+新的SFTP伺服器（`ftp-in-gtw`和`ftp-out-gtw`）支援[!DNL OpenSSH Key-Based Authentication]。 我們可以為您產生[!DNL SSH]鍵，或者您也可以提供我們您自己的公開鍵。
 
  
 
@@ -153,7 +153,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **[!DNL Google Ad Manager]我想要收集一個網站的資料，並透過不同網站的 定位使用者。如果我不想從那個位置收集資料，是否需要將程式碼部署在其他屬性上？**
 
-不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。As long as you have access to the inventory on the second site via [!DNL Google Ad Manager], you can use the data collection from the initial site and target via [!DNL Google Ad Manager].
+不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。只要您透過[!DNL Google Ad Manager]存取第二個網站的庫存，就可以透過[!DNL Google Ad Manager]使用從初始網站和目標網站收集的資料。
 
 <br> 
 
@@ -165,7 +165,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **如何設 [!DNL Audience Manager] 定Cookie並將變數傳遞至 [!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 設定2個Cookie:其中一個會傳送區段變數 [!DNL Google Ad Manager] 至廣告標籤，而另一個則會設定我們的唯一使用者ID(UUID)，也由讀取 [!DNL Google Ad Manager]。 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
+[!DNL Audience Manager] 設定2個Cookie:其中一個會傳送區段變 [!DNL Google Ad Manager] 數至廣告標籤，而另一個則會設定我們的唯一使用者ID(UUID)，也由讀取 [!DNL Google Ad Manager]。將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
 
 <br> 
 
