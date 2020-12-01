@@ -27,24 +27,24 @@ t_bulk_create.xml
 
 >[!NOTE]
 >
->[UI中指派的](../../features/administration/administration-overview.md) RBAC群組權 [!DNL Audience Manager] 限在中接受 [!UICONTROL Bulk Management Tools]。
+>[UI中指](../../features/administration/administration-overview.md) 派的RBAC群 [!DNL Audience Manager] 組權限在中接受 [!UICONTROL Bulk Management Tools]。
 
 >[!CAUTION]
 >
 >請勿在大量建立請求中混用物件類型。 每個物件的標題都是唯一的，無法組合。 清除工作表，並對不同的物料單獨請求。
 
-要批量建立對象，請開啟工作 [!UICONTROL Bulk Management Tools] 表並：
+要批量建立對象，請開啟[!UICONTROL Bulk Management Tools]工作表並：
 
-1. 按一下 **[!UICONTROL Headers]** 標籤，並複製您要新增項目的建立標題。
-2. 按一下標 **[!UICONTROL Create]** 簽。
+1. 按一下&#x200B;**[!UICONTROL Headers]**&#x200B;標籤，並複製您要新增之項目的建立標題。
+2. 按一下&#x200B;**[!UICONTROL Create]**&#x200B;頁籤。
 3. 將建立標題貼入更新工作表的第一列。
 4. 根據標題標籤，貼上或輸入要變更為對應欄的資料。
 5. 在工作表工具列中，按一下符合您正在更新之項目的建立按鈕。
-此動作會開啟對 [!UICONTROL Account Information] 話方塊。
-6. 提供必要 [的登入資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然後按一 **[!UICONTROL Submit]**&#x200B;下。
+此操作將開啟[!UICONTROL Account Information]對話框。
+6. 提供所需的[登錄資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) ，然後按一下&#x200B;**[!UICONTROL Submit]**。
 
-工作表會建立 [!UICONTROL Results] 欄。 欄會 [!UICONTROL Results] 傳回成功作業的JSON回應。 如需范 [例，請參閱](../../api/rest-api-main/rest-api-main.md) REST API。 在輸入資料之前，您的大量建立工作表看起來應類似下列範例。 注意，此處不顯示所有不同的建立選項。 其中包含此功能，可協助您瞭解完成的工作表的外觀。
+工作表會建立[!UICONTROL Results]欄。 [!UICONTROL Results]欄會傳回成功作業的JSON回應。 如需範例，請參閱[REST API](../../api/rest-api-main/rest-api-main.md)。 在輸入資料之前，您的大量建立工作表看起來應類似下列範例。 注意，此處不顯示所有不同的建立選項。 其中包含此功能，可協助您瞭解完成的工作表的外觀。
 
 ![](assets/cretetraits.png)
 
-如果您的大量更新傳回錯誤或失敗，請參 [閱批量管理工具疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
+如果您的批量更新傳回錯誤或失敗，請參閱[批量管理工具疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
