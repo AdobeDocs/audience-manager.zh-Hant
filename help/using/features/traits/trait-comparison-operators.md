@@ -17,13 +17,13 @@ ht-degree: 11%
 
 # 在特徵產生器中使用比較運算子 {#working-with-comparison-operators-in-trait-builder}
 
-本文說明比較運算子的使用方 [!UICONTROL Trait Builder]式。
+本文說明[!UICONTROL Trait Builder]所使用的比較運算子。
 
 ## 比較運算子的用途
 
 <!-- c_tb_comparison_operators.xml -->
 
-比較運算子（或關聯運算子）可用來比較、測試或評估不同值之間的關係。 在建 [!UICONTROL Trait Builder]立訊號規則時，比較運算子可讓您測試不同鍵值對之間的關係。 例如，您可以建立訊號規則，為昂貴的相機購物者定義對象。 在這種情況下，您可以建立相機／價格金鑰值配對，並讓使用者在尋找價格等於或大於設定金額的相機時符合資格。
+比較運算子（或關聯運算子）可用來比較、測試或評估不同值之間的關係。 在[!UICONTROL Trait Builder]中，建立訊號規則時，比較運算子可讓您測試不同金鑰值對之間的關係。 例如，您可以建立訊號規則，為昂貴的相機購物者定義對象。 在這種情況下，您可以建立相機／價格金鑰值配對，並讓使用者在尋找價格等於或大於設定金額的相機時符合資格。
 
 ## 比較運算子的優點
 
@@ -46,13 +46,13 @@ ht-degree: 11%
 
 您可以使用下列命名運算子建立規則：
 
-| 運算元 | 評估為 [!DNL True] 何時 |
+| 運算元 | 評估為[!DNL True]時 |
 |---|---|
-| **[!UICONTROL Contains]** | 鍵值對中的值包含此運 *算符指* 定的字元。 |
-| **[!UICONTROL Matcheswords]** | 鍵值對中的值與此運算子 *指定* 的模式匹配。 |
-| **[!UICONTROL Startswith]** | 鍵值對中的值以此運算子 *指定的字元* 開頭。 |
-| **[!UICONTROL Endswith]** | 鍵值對中的值以此運算子 *指定的字* 符結尾。 |
-| **[!UICONTROL Matchesregex]** | 鍵值對中的值與規則運 *算式* 指定的模式匹配。 [進一步瞭解](../../features/traits/trait-builder-regex.md) ，如何在中使用規則運算式 [!UICONTROL Trait Builder]。 |
+| **[!UICONTROL Contains]** | 鍵值對&#x200B;*中的值包含由此運算子指定的*&#x200B;字元。 |
+| **[!UICONTROL Matcheswords]** | 鍵值對&#x200B;*中的值與此運算子指定的模式*&#x200B;匹配。 |
+| **[!UICONTROL Startswith]** | 鍵值對&#x200B;*中的值以此運算子指定的*&#x200B;字元開頭。 |
+| **[!UICONTROL Endswith]** | 鍵值對&#x200B;*中的值以*&#x200B;結尾，該運算子指定的字元為結尾。 |
+| **[!UICONTROL Matchesregex]** | 鍵值對&#x200B;*中的值與規則運算式指定的模式*&#x200B;匹配。 [進一](../../features/traits/trait-builder-regex.md) 步瞭解在中使用規則運算式 [!UICONTROL Trait Builder]。 |
 
 >[!MORELIKETHIS]
 >
