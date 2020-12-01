@@ -22,7 +22,7 @@ ht-degree: 23%
 
 >[!IMPORTANT]
 >
->算法模型 [!DNL API] 方法已經改寫和 [!DNL Swagger] 遷移。 請參閱：
+>演算法模型[!DNL API]方法已用[!DNL Swagger]重寫並移轉。 請參閱：
 >
 >* [Adobe Audience Manager API檔案](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 程式碼移轉](../../api/api-swagger-migration.md)
