@@ -18,11 +18,11 @@ ht-degree: 0%
 
 您必須先設定Audience Manager與第三方內容提供者之間的整合，才能將批次資料傳送給第三方內容提供者。 您可以透過兩種方式進行此作業：
 
-## 透過您的Adobe顧問要求協助設定 {#config-consultant}
+## 透過您的Adobe顧問{#config-consultant}要求協助設定
 
 如果您與Adobe顧問合作，他們會為您處理設定程式。
 
-## 透過Adobe客戶支援要求協助設定 {#config-support}
+## 透過Adobe客戶支援{#config-support}要求協助設定
 
 如果您不是與Adobe顧問合作，您仍可取得客戶支援設定的批次轉移整合。 如需詳細資訊，請聯絡客戶支援。
 
