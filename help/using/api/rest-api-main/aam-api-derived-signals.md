@@ -17,15 +17,15 @@ ht-degree: 14%
 
 # 衍生訊號 API 方法 {#derived-signals-api-methods}
 
-[!DNL API] 可讓您處理衍生訊號的方法。 衍生訊號可讓網站訪客根據他們已看到的特性，獲得其他特性的資格。
+[!DNL API] 可讓您處理衍生訊號的方法。衍生訊號可讓網站訪客根據他們已看到的特性，獲得其他特性的資格。
 
 <!-- c_separator.xml -->
 
-有關派生信號的詳細資訊，請參 [閱Devired Signals](../../features/derived-signals.md)。
+有關派生信號的詳細資訊，請參見[ Devired Signals](../../features/derived-signals.md)。
 
 >[!IMPORTANT]
 >
->所導出的信 [!DNL API] 號方法已被改寫和 [!DNL Swagger] 遷移。 請參閱：
+>導出的信號[!DNL API]方法已被[!DNL Swagger]重寫並遷移。 請參閱：
 >
 >* [Adobe Audience Manager API檔案](https://bank.demdex.com/portal/swagger/index.html)
 >* [Audience Manager API 程式碼移轉](../../api/api-swagger-migration.md)
