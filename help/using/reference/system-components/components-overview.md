@@ -24,13 +24,13 @@ c_compintro.xml
 
  -->
 
-本指南提供主要電源元件的基本概述 [!DNL Audience Manager]。 它的用途是：
+本指南提供[!DNL Audience Manager]電源的主要元件的基本概述。 它的用途是：
 
 * 非技術性與技術性讀者。
-* 目前 [!DNL Audience Manager] 的客戶對這一切的運作方式感到好奇。
-* 需要 [!DNL Audience Manager] 評估此系統的潛在客戶，作為盡職調查或徵求建議程式的一部分。
+* 目前[!DNL Audience Manager]的客戶對它的運作方式感到好奇。
+* 需要評估此系統的[!DNL Audience Manager]潛在客戶，作為盡職調查或徵求提案流程的一部分。
 
-本指南嘗試在一般描述和深入探討之間取得平衡。 但是，有些東西是專有的，所以我們不去那裡。 畢竟，除了蛋黃醬和番茄醬之外，還有更多特殊的醬汁。 我們得把醃黃瓜保密。 如有任何疑問，您可以 [!DNL Audience Manager] 咨詢顧問。
+本指南嘗試在一般描述和深入探討之間取得平衡。 但是，有些東西是專有的，所以我們不去那裡。 畢竟，除了蛋黃醬和番茄醬之外，還有更多特殊的醬汁。 我們得把醃黃瓜保密。 如有任何問題，您可以與[!DNL Audience Manager]顧問洽詢。
 
 * [Audience Manager系統中的關鍵元件](/help/using/reference/system-components/components-stack.md)
 * [資料動作元件](/help/using/reference/system-components/components-data-action.md)
