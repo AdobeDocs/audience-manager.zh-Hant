@@ -23,12 +23,12 @@ ht-degree: 12%
 
 <!-- c_tb_key_name_requirements.xml -->
 
-在 [!UICONTROL Expression Builder]中，鍵值對中的鍵變數名稱可以由任意數字組成，後跟1（或多個）字母、破折號、下划線和附加數字。
+在[!UICONTROL Expression Builder]中，鍵值對中鍵變數的名稱可以由任意數字組成，後跟1（或多個）字母、破折號、下划線和附加數字。
 
-* 有效密鑰名： `price123`, `123price`, `price-123`, `c_price123`。
+* 有效密鑰名：`price123`、`123price`、`price-123`、`c_price123`。
 
-* 無效的密鑰名稱： `123`, `price!123`ý?
+* 無效的密鑰名稱：`123`、`price!123`。
 
-## 前置關鍵變數 `c_`
+## 以`c_`為關鍵變數加上前置詞
 
-如果 `c_` 在事件 ** 呼叫URL上傳送資料的參數使用該語法，則前置詞一律為必要。
+如果事件呼叫URL上傳送資料的參數使用該語法，則`c_`前置詞為&#x200B;*always*。
