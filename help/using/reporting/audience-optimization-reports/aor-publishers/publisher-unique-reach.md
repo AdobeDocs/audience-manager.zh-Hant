@@ -21,19 +21,19 @@ ht-degree: 4%
 
 ## 使用案例 {#use-cases}
 
-透過報 [!UICONTROL Unique User Reach] 表，您可以識別投資組合中吸引大量獨特使用者的屬性。
+透過[!UICONTROL Unique User Reach]報表，您可以識別投資組合中吸引大量獨特使用者的屬性。
 
-## 使用獨特觸及報告 {#using-the-report}
+## 使用唯一觸及報告{#using-the-report}
 
-使用 **[!UICONTROL Dimension Value]** 此方塊來選擇您要在報表中顯示的廣告單位。 按一 **[!UICONTROL All]** 下以顯示泡泡圖中的所有屬性。
+使用&#x200B;**[!UICONTROL Dimension Value]**&#x200B;方塊來選取您要在報表中顯示的廣告單位。 按一下&#x200B;**[!UICONTROL All]**&#x200B;以顯示泡泡圖中的所有屬性。
 
-使用 **日範圍****和日期穿透控制項** ，調整您的回顧範圍。
+使用&#x200B;**日範圍**&#x200B;和&#x200B;**日期至**&#x200B;控制項來調整回顧範圍。
 
-## 解讀結果 {#interpreting-results}
+## 解讀結果{#interpreting-results}
 
 **範例報表**
 
-您 [!UICONTROL Unique User Reach] 的報表看起來可能類似以下。 在報表中，按一下泡泡以檢視基礎資料。 請參閱下表中的說明以取得其他資訊。
+您的[!UICONTROL Unique User Reach]報表看起來可能類似於下方報表。 在報表中，按一下泡泡以檢視基礎資料。 請參閱下表中的說明以取得其他資訊。
 
 ![](assets/publisher_unique_user_reach.png)
 
