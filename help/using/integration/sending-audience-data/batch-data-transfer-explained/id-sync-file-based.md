@@ -23,7 +23,7 @@ ht-degree: 7%
 >
 >文字樣式 (`monospaced text`、*斜體*、括號 `[ ]` `( )` 等)在本檔案中指出程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
-## 檔案名語法和示例 {#file-name-syntax}
+## 檔案名語法和示例{#file-name-syntax}
 
 <!-- c_file_based_id_sync.xml -->
 
@@ -86,13 +86,13 @@ ID檔案名稱包含下列必要和選用元素：
 </ul>
 
 >[!NOTE]
-> 如需以人為本的目的地的ID同步檔案命名（c2c首碼），請參閱「 [Workflow A - Personalization Based on All Online Activity Bounded Offline Data](../../../features/destinations/people-based-destinations-workflow-combined.md) 」或「 [Workflow B - Personalization Based on Offline-Only Data](../../../features/destinations/people-based-destinations-workflow-offline.md)」。
+> 有關基於人的目標的ID同步檔案命名（c2c前置詞），請參閱[工作流程A —— 基於所有聯機活動與離線資料結合的個性化](../../../features/destinations/people-based-destinations-workflow-combined.md)或[工作流程B —— 基於離線資料的個性化](../../../features/destinations/people-based-destinations-workflow-offline.md)。
 
-## 檔案內容語法與範例 {#file-content-syntax}
+## 檔案內容語法與範例{#file-content-syntax}
 
 ID檔案的內容包含下列元素：
 
-*`UUID`* `<tab>`*`UUID`* `<tab>`*`UUID`*`<tab>` *`UUID`*
+*`UUID`* `<tab>`*`UUID`*`<tab>`*`UUID`*`<tab>`*`UUID`*
 
 檔案包含使用者ID([!DNL UUID])。 在每一行中，使用標籤分隔ID。 下列範例顯示格式正確的ID檔案。 您的內容看起來可能很類似。
 
@@ -100,9 +100,9 @@ ID檔案的內容包含下列元素：
 abc123 def456 ghi789 xyz987
 ```
 
-## 同步將DPUUID與UUID匹配 {#sync-matches-dpuuids-uuids}
+## 同步匹配DPUUID與UUID {#sync-matches-dpuuids-uuids}
 
-ID同步檔案的用途是使用UUID從您 [自己的Data Sources](../../../reference/ids-in-aam.md) 同步 [!DNL Audience Manager] DPUUID。 同步將主 [!DNL DPUUID]設備及其 [!DNL DPID] 相關設 [!DNL DPID]備映射到 [!DNL Audience Manager][!DNL UUID]設備。 將ID放在檔案名稱和內文中的位置，會決定這些識別碼如何彼此對應。 例如，請取下列兩個範例檔案：
+ID同步檔案的用途是從您自己的Data Sources將[DPUUID](../../../reference/ids-in-aam.md)與[!DNL Audience Manager] UUID同步。 同步將主[!DNL DPID]及其相關[!DNL DPID]的[!DNL DPUUID]映射到[!DNL Audience Manager] [!DNL UUID]。將ID放在檔案名稱和內文中的位置，會決定這些識別碼如何彼此對應。 例如，請取下列兩個範例檔案：
 
 * **檔案1:** `adobe_id_0_12345_1476312152.sync`
 
@@ -112,22 +112,22 @@ ID同步檔案的用途是使用UUID從您 [自己的Data Sources](../../../refe
 
 給定範例名稱和內容，ID會以下列方式對應在一起：
 
-**檔案1** (下 [載範例檔案](assets/adobe_id_0_12345_1476312152.sync))
+**檔案1** ( [下載範例檔案](assets/adobe_id_0_12345_1476312152.sync))
 
 | DPID 0 = Adobe Audience Manager UUID | DPID 12345 |
 |---|---|
 | 68079982765673198504052656074456196039 | XYZ3017D_2kzkTOXkFYIAgwbajoqWRcqkXl-Trj6E4njaMR38 |
-| 67412682083411995725538770443620307584 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 |
-| 89159024796760343733111707646026765593 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM |
+| 67412682083419957253870443620307584 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 |
+| 89159024796760343733111170764602676593 | XYZ3017PryPID8tzfhkEE-gE034LI-53Jde0utCYcIwd0A2OlM |
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
-| 66184778222667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
+| 6618477822667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
-步驟1: id同步程式將從12345 [!DNL DPUUID]與左 [!DNL DPID] 欄中的 [!DNL Audience Manager] s [!DNL UUID]同步。 請注意， [!DNL DPID] 檔案名稱中的「0」代表 [!DNL Audience Manager][!DNL UUID]s。
+步驟1:id同步程式將從[!DNL DPID] 12345將[!DNL DPUUID]s與左欄中的[!DNL Audience Manager] [!DNL UUID]s同步。 請注意，檔案名稱中的[!DNL DPID] &quot;0&quot;代表[!DNL Audience Manager] [!DNL UUID]s。
 <br/>
 
-**檔案2** (下 [載範例檔案](assets/adobe_id_12345_67890_1477846458.sync))
+**檔案2** ( [下載範例檔案](assets/adobe_id_12345_67890_1477846458.sync))
 
-| [!DNL DPID] 12345 | [!DNL DPID] 67890 |
+| [!DNL DPID] 郵編：12345 | [!DNL DPID] 郵編：67890 |
 |---|---|
 | XYZ3017D_2kzkTOXkFYIAgwbajoqWRcqkXl-Trj6E4njaMR38 | 4598060374 |
 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 | 4581274262 |
@@ -135,16 +135,16 @@ ID同步檔案的用途是使用UUID從您 [自己的Data Sources](../../../refe
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-步驟2: 在 [!DNL DPUUID]步驟1 [!DNL DPID] 中，12345與Audience Manager同步 [!DNL UUID]了。 此ID同步的作用是從步 [!DNL DPUUID]驟1將 [!DNL DPID] 67890與Audience Manager [!DNL UUID]同步。
+步驟2:在步驟1中，來自[!DNL DPID] 12345的[!DNL DPUUID]s與Audience Manager [!DNL UUID]s同步。此ID同步的作用是從[!DNL DPID] 67890將[!DNL DPUUID]s與步驟1的Audience Manager [!DNL UUID]s同步。
 
 <br/>
 
-## 其他格式需求 {#other-format-reqs}
+## 其他格式要求{#other-format-reqs}
 
 使用者ID無法：
 
 * 在ID本身具有標籤。 標籤僅用於分隔資料檔案中的個別ID。
 * 包含個人識別資訊([!UICONTROL PII])。
-* 使用 [!DNL URL] 編碼。 僅傳遞未編碼的ID。
+* 使用[!DNL URL]編碼。 僅傳遞未編碼的ID。
 
 任何以制表符或空格結尾的行都不會被處理或實現。 通常，請務必清楚列的結尾。
