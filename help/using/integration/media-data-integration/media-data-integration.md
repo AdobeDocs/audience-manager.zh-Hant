@@ -28,5 +28,5 @@ ht-degree: 17%
 若要設定記錄擷取，請閱讀下列文章：
 
 * [將Google Campaign Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
-* [將Google Ad Manager資料檔案匯入Audience Manager ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
-* [日誌資料和元資料檔案](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) ，以設定一般日誌檔案的日誌提取
+* [將Google Ad Manager資料檔案匯入Audience Manager  ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+* [日誌資料和元資料文](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) 件，用於為一般日誌檔案設定日誌接收
