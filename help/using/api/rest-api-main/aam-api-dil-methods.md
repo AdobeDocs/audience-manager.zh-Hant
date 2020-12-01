@@ -17,17 +17,17 @@ ht-degree: 14%
 
 # Data Integration Library API 方法 {#data-integration-library-api-methods}
 
-可讓您以程式設計方式使用(. [!UICONTROL Data Integration Library][!UICONTROL DIL]..
+可讓您以程式設計方式使用[!UICONTROL Data Integration Library]([!UICONTROL DIL])的方法。
 
 >[!IMPORTANT]
 >
->資料整合庫API已過時。 此API用來產生DIL，您現在可從這裡自行下載： [DIL下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
+>資料整合庫API已過時。 此API用來產生DIL，您現在可從這裡自行下載：[DIL download](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
 
 <!-- c_data_integr_library_api.xml -->
 
-## DIL的傳回版本 {#return-version-dil}
+## DIL {#return-version-dil}的傳回版本
 
-一種 `GET` 傳回從最舊到最新排序版本清單的方法。
+一種`GET`方法，可傳回從最舊到最新排序的版本清單。
 
 <!-- r_api_return_versions_dil.xml -->
 
@@ -37,15 +37,15 @@ ht-degree: 14%
 
 ### 回應
 
-成功的請求會傳回回回應程 `["4.0", "4.1"]` 式碼，如下所示。
+成功的請求會傳回回回應代碼`["4.0", "4.1"]`，如下所示。
 
 ```
 ["4.0", "4.1"]
 ```
 
-## 傳回版本的JSON結構描述 {#return-json-schema-version}
+## 傳回{#return-json-schema-version}版本的JSON結構描述
 
-返 `GET` 回版本的 [!DNL JSON] 模式的方 [!UICONTROL DIL] 法。 支援使用版 [!UICONTROL LATEST] 本別名獲取最新版本 [!UICONTROL DIL]。
+一種`GET`方法，可返回[!UICONTROL DIL]版本的[!DNL JSON]方案。 支援對版本使用別名[!UICONTROL LATEST]以獲取最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -55,7 +55,7 @@ ht-degree: 14%
 
 ### 回應
 
-成功的請求會傳回回回應 `["4.0", "4.1"]` 程式碼和資料，如下所示。
+成功的請求會傳回回回應代碼`["4.0", "4.1"]`和資料，如下所示。
 
 ```
 { 
@@ -381,7 +381,7 @@ ht-degree: 14%
 
 ## 產生DIL {#generate-dil}
 
-一種 `GET` 基於使用 [!UICONTROL DIL] 指定版本的傳入請求主體生成的方法 [!UICONTROL DIL]。 如果別名 `LATEST` 用於URL中的版本，則會產生最新 [!UICONTROL DIL] 的版本。
+一種`GET`方法，根據使用指定版本的[!UICONTROL DIL]傳入的請求主體生成[!UICONTROL DIL]。 如果別名`LATEST`用於URL中的版本，則會生成最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_generate_dil.xml -->
 
@@ -465,4 +465,4 @@ ht-degree: 14%
 
 ### 回應
 
-成功的更新會傳回回回應 `201 created` 程式碼以及程 [!UICONTROL DIL] 式 [!DNL JavaScript] 碼。
+成功的更新會傳回回回應代碼`201 created`和[!UICONTROL DIL] [!DNL JavaScript]代碼。
