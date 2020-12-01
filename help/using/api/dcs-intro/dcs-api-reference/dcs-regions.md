@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # DCS 區域 ID、位置與主機名稱{#dcs-region-ids-locations-and-host-names}。
 
-要對 [!DNL DCS] 進行調用，需要區域伺服器主機名 [!DNL DCS]。 這是因為資 [!DNL DCS] 訊會儲存在地理位置接近網站訪客的資料中心。 如果您將查詢傳送到錯誤的位置，您的查詢會 [!DNL DCS]正常運作，但這些呼叫會效率低下，而且會延遲回應。 若要提出 [!DNL DCS] 請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
+要對[!DNL DCS]進行調用，需要[!DNL DCS]區域伺服器主機名。 這是因為[!DNL DCS]會在地理位置接近網站訪客的資料中心儲存資訊。 如果您將查詢發送到錯誤的[!DNL DCS]，則查詢將有效，但這些調用效率低下，並且會延遲響應。 若要提出[!DNL DCS]請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
@@ -71,4 +71,4 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-您也可以使 [!DNL API] 用方法來取得可用區域的清 [!DNL DCS] 單。 See [DCS Region API Methods](../../../api/rest-api-main/aam-api-dcs-regions.md).
+您也可以使用[!DNL API]方法來取得可用[!DNL DCS]區域的清單。 請參閱[DCS地區API方法](../../../api/rest-api-main/aam-api-dcs-regions.md)。
