@@ -19,15 +19,15 @@ ht-degree: 9%
 
 說明您可用來在Audience Manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
 
-## 平台層級變數的用途 {#platform-variables}
+## 平台層級變數{#platform-variables}的用途
 
 <!-- c_tb_device_targeting.xml -->
 
-平台層級變數可讓您從特定網站傳入資料，並讓其適用於帳戶中所有屬性的定 [!DNL Audience Manager] 位。 這些變數由鍵值 [配對組成](../../reference/key-value-pairs-explained.md) ，鍵前置詞 `d_` 如下所示。
+平台層級變數可讓您從特定網站傳入資料，並讓它適用於[!DNL Audience Manager]帳戶中所有屬性的定位。 這些變數由[key-value對](../../reference/key-value-pairs-explained.md)組成，鍵前置詞為`d_`，如下所示。
 
-## 由用戶代理定義的平台級密鑰 {#keys-user-agent}
+## 由用戶代理定義的平台級密鑰{#keys-user-agent}
 
-從 [!UICONTROL Data Collection Servers] 請求中的使用者代理標 [題擷取這些索引鍵](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)`HTTP` 的值。 這些值代表來自資料庫的設備級 [!UICONTROL Device Atlas] 資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清單 [!UICONTROL Device Atlas] 中。
+[!UICONTROL Data Collection Servers]會從`HTTP`請求中的[使用者代理標題](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)擷取這些索引鍵的值。 這些值代表來自[!UICONTROL Device Atlas]資料庫的設備級資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清 [!UICONTROL Device Atlas] 單。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -45,7 +45,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->即使一個或多個信號無法從用戶代理報頭中檢索，其它信號仍將傳遞給 [!UICONTROL Data Collection Servers]。
+>即使無法從用戶代理報頭檢索到一個或多個信號，其它信號仍將傳遞到[!UICONTROL Data Collection Servers]。
 
 >[!MORELIKETHIS]
 >
