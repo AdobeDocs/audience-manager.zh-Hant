@@ -17,14 +17,14 @@ ht-degree: 60%
 
 # Audience Manager啟動合作夥伴
 
-本頁僅包含目前Audience Manager [伺服器對伺服器的整合](/help/using/features/destinations/add-edit-segments.md) 。  如需整合的詳細資訊，請參閱 [Adobe Exchange清單](https://www.adobeexchange.com/experiencecloud.html) （如有），或聯絡您的Adobe顧問或客戶服務。
+本頁僅包含目前Audience Manager [伺服器對伺服器整合](/help/using/features/destinations/add-edit-segments.md)。  如需整合的詳細資訊，請參閱[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)清單（如有），或聯絡您的Adobe顧問或客戶服務。
 
 <br> 
 
-* **更新** =顯示此啟動合作夥伴有更新的最後日期。
-* **取消區段** =取消區段會說明取消區段中裝置設定檔的資格和移除程式。 從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求讀取描述檔合併規則和裝置取消劃分程式以及具有取消劃分功能的 [](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) Audience Manager合作夥伴中，也會使用取消劃分功能 [](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消區段資訊傳送至以下標示為「是」的目標。
-* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。 Read [Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners).
-* **ICDS** =此欄列出了支援立即跨設備抑制的合作夥伴。 Read [Instant Cross-Device Suppression](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
+* **Updated** =顯示此啟動合作夥伴有更新的最後日期。
+* **Unsegment** = Unsegmentation說明從區段中取消和移除裝置描述檔的程式。從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求中也會使用取消分段讀取[描述檔合併規則和裝置取消分段程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消區段資訊傳送至以下標示為「是」的目標。
+* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。閱讀[Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)。
+* **ICDS** =此欄列出了支援立即跨設備抑制的合作夥伴。閱讀[即時跨裝置抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **行動裝置ID** =此欄列出可從Audience Manager接收行動裝置ID的合作夥伴。
 
 <br> 
@@ -157,8 +157,8 @@ ht-degree: 60%
 | TrueX | 11/01/2018 | 有 | 否 | 否 | 是 |
 | TubeMogul | 03/03/2017 | 有 | 否 | 有 | 否 |
 | 轉／阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
-| 特溫加 | 29/10/2018 | 有 | 否 | 否 | 否 |
-| Twitter量身打造的觀眾 | 27/03/2017 | 有 | 否 | 有 | 否 |
+| 特溫加 | 2018年9月10日 | 有 | 否 | 否 | 否 |
+| Twitter量身打造的觀眾 | 27/02/2017 | 有 | 否 | 有 | 否 |
 | 底音 | 11/07/2017 | 否 | 否 | 否 | 否 |
 | Verve | 15/06/2017 | 有 | 否 | 否 | 是 |
 | VideoAmp | 03/03/2017 | 否 | 否 | 否 | 否 |
