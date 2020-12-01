@@ -21,11 +21,11 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->如果您有自己的程式碼，可從和目標Cookie讀取Audience Manager Cookie資料，則不需要 [!UICONTROL UUID] 此函式。
+>如果您有自己的程式碼從[!UICONTROL UUID]和目標Cookie讀取Audience Manager Cookie資料，則不需要此函式。
 
 ## 程式碼範例
 
-將程 `AamGpt` 式碼置於頁面頂端，最好是位於程式碼 `<head>` 區塊內。 程式 `AamGpt` 碼可在下方取得：
+將`AamGpt`程式碼放在頁面頂端，最好是放在`<head>`程式碼區塊內。 `AamGpt`程式碼提供如下：
 
 ```js
 var AamGpt = {  
