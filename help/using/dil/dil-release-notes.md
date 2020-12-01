@@ -16,5 +16,5 @@ ht-degree: 22%
 
 # DIL 發行說明
 
-如需最新DIL版本的相關資訊，請參閱本頁。 DIL可直接下載至Adobe的 [Github頁面，並附發行說明](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
+如需最新DIL版本的相關資訊，請參閱本頁。 DIL可直接下載至Adobe的[Github頁面](https://github.com/Adobe-Marketing-Cloud/dil/releases)，並附發行說明。
 
