@@ -27,11 +27,11 @@ c_lookup_tables.xml
 
 ## 記錄檔中繼資料增加檔案大小和處理時間
 
-報表使用的典型記錄檔 [!UICONTROL Delivery Performance] 通常包含數千列和數十欄。 它包含數值ID和人類可讀資訊，例如創意人員、廣告商、插入訂單等名稱。
+[!UICONTROL Delivery Performance]報表使用的典型日誌檔案通常包含數千行和數十列。 它包含數值ID和人類可讀資訊，例如創意人員、廣告商、插入訂單等名稱。
 
-此非ID資訊稱為( *`metadata`* 亦即其他資訊的資訊)，並寫入記錄檔的每一列。
+此非ID資訊稱為&#x200B;*`metadata`*（亦即，其他資訊的相關資訊），並寫入記錄檔的每一列。
 
-但是，報 [!UICONTROL Delivery Performance] 表主要與記錄檔中的ID搭配使用。 中繼資料有用，但重複性高。 它可增加檔案大小和資料擷取時間。
+但是，[!UICONTROL Delivery Performance]報表主要與記錄檔中的ID搭配使用。 中繼資料有用，但重複性高。 它可增加檔案大小和資料擷取時間。
 
 ## 使用索引表來減少檔案大小並縮短處理時間
 
