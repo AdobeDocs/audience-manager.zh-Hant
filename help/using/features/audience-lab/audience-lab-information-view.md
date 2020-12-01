@@ -22,11 +22,11 @@ ht-degree: 3%
 
 您也可以查看您用於測試群組的基準區段資訊，以及如何劃分測試區段。
 
-系統會 **[!UICONTROL Test Segments]** 隨機填入您用於測試群組之基準區段的使用者。 此概覽顯示您分配給每個測試區段的使用者百分比。
+**[!UICONTROL Test Segments]**&#x200B;會隨機填入您用於測試群組之基準區段的使用者。 此概覽顯示您分配給每個測試區段的使用者百分比。
 
-驅動 **[!UICONTROL Conversion Traits]** 測試群組的報表。 若要將特徵指定為轉換，在中建立或編輯特徵時，請選 [!UICONTROL Trait Builder]取「轉 **換** 」為「事 **[件類型」](../../features/traits/create-onboarded-rule-based-traits.md)。**
+**[!UICONTROL Conversion Traits]**&#x200B;會驅動測試群組的報表。 若要將特徵指定為轉換，在[!UICONTROL Trait Builder]中建立或編輯特徵時，請選擇&#x200B;**轉換**&#x200B;作為&#x200B;**[事件類型](../../features/traits/create-onboarded-rule-based-traits.md)。**
 
-卡 **[!UICONTROL Destinations]** 可折疊。 按箭頭以開啟或關閉個別目標，並取得下列測試區段的資訊，這些區段會依目標分組，並對應至：
+**[!UICONTROL Destinations]**&#x200B;卡可折疊。 按箭頭以開啟或關閉個別目標，並取得下列測試區段的資訊，這些區段會依目標分組，並對應至：
 
 * 基本區段總人口中分配給每個目標的設備數。
 * 映射鍵；
