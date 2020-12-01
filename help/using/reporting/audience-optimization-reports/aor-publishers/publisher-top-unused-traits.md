@@ -21,31 +21,31 @@ ht-degree: 2%
 
 ## 使用案例 {#use-cases}
 
-透過報 [!UICONTROL Top Unused Traits] 表，您可以分析並比較目前未對應至區段的第一方和第三方特徵的效能。 此檢視可指出受眾群體中用於促銷活動最佳化或淨化新商機的最佳特徵。
+透過[!UICONTROL Top Unused Traits]報表，您可以分析並比較目前未對應至區段的第一方和第三方特徵的效能。 此檢視可指出受眾群體中用於促銷活動最佳化或淨化新商機的最佳特徵。
 
-## 使用排名最前的未使用特徵報表 {#using-the-report}
+## 使用排名最前的未使用特徵報表{#using-the-report}
 
-使用控 **[!UICONTROL Data Provider Type]** 制項在第一方和第三方特徵之間切換。 選取 **[!UICONTROL All]** 以傳回報表中的第一方和第三方特徵。
+使用&#x200B;**[!UICONTROL Data Provider Type]**&#x200B;控制項，在第一方與第三方特徵之間切換。 選擇&#x200B;**[!UICONTROL All]**&#x200B;以傳回報表中的第一方和第三方特徵。
 
-使用滑 **[!UICONTROL Impressions]** 桿，您可以為傳回的印象選取最小和最大值。 任何對您設定的限制負責或超過的特徵，都不會顯示在報表中。
+使用&#x200B;**[!UICONTROL Impressions]**&#x200B;滑桿，您可以選取傳回印象的最小值和最大值。 任何對您設定的限制負責或超過的特徵，都不會顯示在報表中。
 
-使用 **[!UICONTROL Day Range]** 和 **[!UICONTROL Date Through]** 控制項來調整回顧範圍。 請注意，此報表僅提供30天回顧期。
+使用&#x200B;**[!UICONTROL Day Range]**&#x200B;和&#x200B;**[!UICONTROL Date Through]**&#x200B;控制項來調整您的回顧範圍。 請注意，此報表僅提供30天回顧期。
 
-使用下 **[!UICONTROL Order]** 拉式方塊，在您要傳回資訊的作品集中選取Web屬性。
+使用&#x200B;**[!UICONTROL Order]**&#x200B;下拉式方塊，選取您要傳回資訊作品集中的Web屬性。
 
-在下拉 **[!UICONTROL Data Provider]** 式方塊中，選取包含您要在報表中查看之特徵的資料來源。
+在&#x200B;**[!UICONTROL Data Provider]**&#x200B;下拉式方塊中，選取包含您要在報表中檢視之特徵的資料來源。
 
-使用下 **[!UICONTROL Traits]** 拉式方塊來選取您要在報表中看到哪些特徵。
+使用&#x200B;**[!UICONTROL Traits]**&#x200B;下拉式方塊，選取您要在報表中看到哪些特徵。
 
 >[!IMPORTANT]
 >
->啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含描述性中繼資料 [!UICONTROL Order IDs]，如 [Import Google Ad Manager（舊稱DFP）Data Files Into Audience Manager的步驟3所述](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以Web屬性而非 [!UICONTROL Order] Web屬性的形式詳細說明 [!UICONTROL Order ID]。
+>啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Order IDs]的說明性中繼資料，如[將Google廣告管理員（舊稱DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3所述。 執行此動作後，您可確保報表會將Web屬性詳細資訊設為[!UICONTROL Order]，而非[!UICONTROL Order ID]。
 
-## 解讀結果 {#interpreting-results}
+## 解讀結果{#interpreting-results}
 
 **範例報表**
 
-您 [!UICONTROL Top Unused Traits] 的報表看起來可能類似以下。 在報表中，按一下泡泡以檢視基礎資料。
+您的[!UICONTROL Top Unused Traits]報表看起來可能類似於下方報表。 在報表中，按一下泡泡以檢視基礎資料。
 
 請參閱範例報表下表格中的其他資訊說明。
 
@@ -90,9 +90,9 @@ ht-degree: 2%
 
 您的特徵在報表中的位置可以告訴您許多關於哪些特徵可用於最佳化現有受眾細分的資訊。
 
-位於「印象」軸上方的特徵是您要在促銷活動中使用的特徵。 對於印象少的特徵，根據您的資料，您不太可能在Web屬性上觸及到此受眾 [!DNL Google Ad Manager] 。
+位於「印象」軸上方的特徵是您要在促銷活動中使用的特徵。 對於印象少的特徵，根據您的[!DNL Google Ad Manager]資料，您不太可能在Web屬性上觸及到此對象。
 
-請向左看軸以取得高 [!UICONTROL Unique Trait Realizations] 度精確的特徵，向右看可驅動比例的特徵。
+在[!UICONTROL Unique Trait Realizations]軸的左側尋找高精確度的特徵，在右側尋找可驅動比例的特徵。
 
 <table id="table_A29253B30DFA4CD7B3B7C320DE0BDEA4"> 
  <thead> 
