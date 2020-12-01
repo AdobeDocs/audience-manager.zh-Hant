@@ -18,16 +18,16 @@ ht-degree: 5%
 
 # 資料摘要提供者的計費方式 {#billing-for-data-feed-providers}
 
-產生帳 [!DNL Audience Marketplace] 單報表，以檢視每個訂閱者上個月的資料饋送使用情形。 您可以隨時建立上個月的報表。 不過，當您在當月的10天或之後產生報表時，報表會更精確。
+產生[!DNL Audience Marketplace]帳單報表，以檢視每個訂閱者上個月的資料饋送使用情形。 您可以隨時建立上個月的報表。 不過，當您在當月的10天或之後產生報表時，報表會更精確。
 
-## 下載帳單報表 {#download-billing-report}
+## 下載帳單報表{#download-billing-report}
 
 若要下載報表：
 
-1. 前往 **[!UICONTROL Audience Marketplace > Receivables]**。
+1. 前往&#x200B;**[!UICONTROL Audience Marketplace > Receivables]**。
 1. 按一下 **[!UICONTROL Generate Billing Report]**.
 
-## 已定義報表欄位 {#report-fields-defined}
+## 已定義的報表欄位{#report-fields-defined}
 
 帳單報表包含下列資訊。
 
@@ -41,7 +41,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 資料提供者PID</span></b> </p> </td> 
-   <td colname="col2"> <p>Your <span class="keyword"> Audience Manager</span> data provider ID. </p> </td> 
+   <td colname="col2"> <p>您的<span class="keyword"> Audience Manager</span>資料提供者ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 資料提供者名稱</span></b> </p> </td> 
@@ -70,7 +70,7 @@ ht-degree: 5%
      <li id="li_3400C6475F6D43D7AF54D9A0ED9C09E0">區段和重疊 </li> 
      <li id="li_65DFEF1EA6C341ACB5B72FF629F10AFC">模型 </li> 
      <li id="li_B84935B93ADE4D299732CE7E099DF7B3">啟用 </li> 
-    </ul> <p>請參閱 <a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types"> 資料饋送的計畫類型</a>。 </p> </td> 
+    </ul> <p>請參閱<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types">資料饋送的計畫類型</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 單位</span></b> </p> </td> 
@@ -82,19 +82,19 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 折扣價格</span></b> </p> </td> 
-   <td colname="col2"> <p>折扣資料饋送的訂閱費用。 請參閱 <a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts"> 資料提供者的折扣</a>。 </p> </td> 
+   <td colname="col2"> <p>折扣資料饋送的訂閱費用。 請參閱<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts">資料提供者的折扣</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 件數</span></b> </p> </td> 
    <td colname="col2"> <p>視動態消息價格類型而定： </p> 
     <ul id="ul_01550B436EEE4FBC8C9945E08E3CE2C6"> 
-     <li id="li_C589F6A751AB407E853AC6F726A47F14">固定費用資料饋送： 僅返回1。 </li> 
-     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM資料饋送： 傳回CPM資料饋送的實際使用量。 如果訂閱者未提供CPM饋送的曝光資料，「單位」儲存格是空的，而「標幟」儲存格設定為1。 </li> 
+     <li id="li_C589F6A751AB407E853AC6F726A47F14">固定費用資料饋送：僅返回1。 </li> 
+     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM資料饋送：傳回CPM資料饋送的實際使用量。 如果訂閱者未提供CPM饋送的曝光資料，「單位」儲存格是空的，而「標幟」儲存格設定為1。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 總成本</span></b> </p> </td> 
-   <td colname="col2"> <p>Audience Manager向採購 <span class="keyword"> 員收取的金額</span> 。 </p> </td> 
+   <td colname="col2"> <p>金額<span class="keyword"> Audience Manager</span>會向買家收取費用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 帳單期間</span></b> </p> </td> 
@@ -114,10 +114,10 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 旗標</span></b> </p> </td> 
-   <td colname="col2"> <p> <i>僅限CPM摘要</i>。 標籤選項包括： </p> 
+   <td colname="col2"> <p> <i>僅限CPM摘要</i>。標籤選項包括： </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
-     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0: 指出訂閱者已向 <span class="keyword"> Audience Manager報告使用資訊</span>。 </li> 
-     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1: 指出訂閱者未向 <span class="keyword"> Audience Manager報告使用資訊</span>。 </li> 
+     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0:指出訂閱者已向<span class="keyword"> Audience Manager</span>報告使用資訊。 </li> 
+     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1:指出訂閱者未向<span class="keyword"> Audience Manager</span>報告使用資訊。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
