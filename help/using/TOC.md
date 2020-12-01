@@ -286,7 +286,7 @@ ht-degree: 93%
 + 實作與整合指南{#implementation-integration-guides}
    + [實作與整合指南](integration/implementation-and-integration.md)
    + [資料整合方法](integration/data-integration-methods.md)
-   + 使用Google Publisher標籤(GPT)整合Google Ad Manager{#integrate-dfp-using-gpt}
+   + 使用Google Publisher標籤(GPT){#integrate-dfp-using-gpt}整合Google Ad Manager
       + [使用GPT概觀整合Google Ad Manager](integration/gpt-aam-destination/gpt-aam-overview.md)
       + [使用GPT傳送區段至Google廣告管理員](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [建立 GPT 目的地](integration/gpt-aam-destination/gpt-aam-create-destination.md)
