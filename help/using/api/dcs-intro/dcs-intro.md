@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 17%
+ht-degree: 38%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 * [DCS 事件呼叫 API](/help/using/api/dcs-intro/dcs-event-calls/dcs-event-calls.md)
 
-   如果公司政策或其他技術問題無法將我們的JavaScript程式碼放在您的頁面上，您仍可以與Audience Manager搭配使用這些事件呼叫API，從DCS傳送和傳回資料。
+   如果因為公司原則或其他技術問題，使得您無法將我們的 JavaScript 程式碼放在您的頁面上，您仍可以使用 Audience Manager，以利用這些事件呼叫 API 傳送和從 DCS 傳回資料。
 
 * [用於伺服器對伺服器資料傳輸的 DCS API](/help/using/api/dcs-intro/dcs-s2s/dcs-s2s.md)
 
