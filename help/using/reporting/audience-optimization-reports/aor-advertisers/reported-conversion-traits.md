@@ -27,6 +27,6 @@ ht-degree: 5%
 
 ## 範例報表
 
-您的 [!UICONTROL Reported Conversion Traits] 報表可能類似於下列報表：
+您的[!UICONTROL Reported Conversion Traits]報表看起來可能類似以下報表：
 
 ![](assets/reported-conversion-traits.png)
