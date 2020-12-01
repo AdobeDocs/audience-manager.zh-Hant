@@ -17,19 +17,19 @@ ht-degree: 12%
 
 # 使用布林值和比較運算子的運算式範例 {#sample-expressions-with-boolean-and-comparison-operators}
 
-有關在代碼編輯器中建立表達式的示例， [!UICONTROL Expression Builder] 請參閱。
+有關在[!UICONTROL Expression Builder]代碼編輯器中建立表達式的示例，請參閱。
 
-## 程式碼範例概觀 {#code-samples-overview}
+## 程式碼範例概觀{#code-samples-overview}
 
 <!-- r_tb_expression_samples.xml -->
 
-使用程式碼編輯器建立您自己的 [!UICONTROL Expression Builder] 特徵規則。 下列範例可協助您開始使用。 有些範例會在變數前面加上 *`key`* ，以 `c_` 將其識別為使用者定義的變數。 如果您的 `c_` 事件呼叫使用該語法傳送資料 *`key`* 給，請加入變數的首碼(或任何其 [!DNL Audience Manager] 他命名慣例)。
+使用[!UICONTROL Expression Builder]程式碼編輯器建立您自己的特徵規則。 下列範例可協助您開始使用。 *`key`*&#x200B;變數前面有一些範例，其中包含`c_`以識別為使用者定義的變數。 如果您的事件呼叫使用該語法傳送資料至[!DNL Audience Manager]，請加入`c_`變數的&lt;a0/>前置詞（或任何其他命名慣例）。*`key`*
 
-## 布林運算式 {#boolean-expressions}
+## 布林運算式{#boolean-expressions}
 
 ### AND範例
 
-規則使用布林運算子建立特徵資格 [!UICONTROL AND] 要求。
+規則使用布林[!UICONTROL AND]運算子建立特徵資格要求。
 
 <table id="table_7C5E23EC9E0F43B182EA9771D7BB6E87"> 
  <thead> 
@@ -52,7 +52,7 @@ ht-degree: 12%
 
 ### OR範例
 
-此規則使用和運算子建立特徵 [!DNL Boolean] 資 [!UICONTROL OR] 格 [!UICONTROL AND] 要求。
+此規則使用[!DNL Boolean] [!UICONTROL OR]和[!UICONTROL AND]運算子建立特徵資格要求。
 
 <table id="table_6E8BA5EE1D7F4DCC9A92074D0C2C050E"> 
  <thead> 
@@ -64,7 +64,7 @@ ht-degree: 12%
  <tbody> 
   <tr> 
    <td colname="col1"><code>(a== "1" OR b=="1") AND (c=="new")</code> </td> 
-   <td colname="col2"> 符合變數或和設定 <code><i>a </i></code> 的 <code><i>b </i></code> 條件 <code><i>c </i></code>。 </td> 
+   <td colname="col2"> 符合變數<code><i>a </i></code>或<code><i>b </i></code>和<code><i>c </i></code>設定的條件。 </td> 
   </tr> 
  </tbody> 
 </table>
