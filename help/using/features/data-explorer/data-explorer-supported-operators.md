@@ -18,7 +18,7 @@ ht-degree: 9%
 
 使用邏輯運算子來分組索引鍵值配對和回填特徵。
 
-## 支援的信號搜尋運算元 {#supported-operators-search}
+## 信號搜索的支援運算子{#supported-operators-search}
 
 使用以下支援的邏輯運算子搜索鍵值對：
 
@@ -34,12 +34,12 @@ ht-degree: 9%
 
 ### 命名運算子
 
-| 運算元 | 評估為 [!DNL True] 何時 |
+| 運算元 | 評估為[!DNL True]時 |
 |---|---|
-| **[!UICONTROL Contains]** | 鍵值對中的值包含此運 *算符指* 定的字元。 |
-| **[!UICONTROL Startswith]** | 鍵值對中的值以此運算子 *指定的字元* 開頭。 |
-| **[!UICONTROL Endswith]** | 鍵值對中的值以此運算子 *指定的字* 符結尾。 |
+| **[!UICONTROL Contains]** | 鍵值對&#x200B;*中的值包含由此運算子指定的*&#x200B;字元。 |
+| **[!UICONTROL Startswith]** | 鍵值對&#x200B;*中的值以此運算子指定的*&#x200B;字元開頭。 |
+| **[!UICONTROL Endswith]** | 鍵值對&#x200B;*中的值以*&#x200B;結尾，該運算子指定的字元為結尾。 |
 
-## 特徵回填與估計的支援算子 {#supported-operators-backfilling}
+## 特徵回填和估計{#supported-operators-backfilling}的支援運算子
 
-您可以回填包含運算式的特徵，這些運算式包含支援的任何運算子 [!UICONTROL Signal Search]。 除了這些運算子外，特徵回填和估計也支援 [!UICONTROL AND]、 [!UICONTROL OR][!UICONTROL AND NOT] 和邏輯運算子，用來在回填特徵運算式中組合索引鍵值對。
+您可以回填包含包含[!UICONTROL Signal Search]支援任何運算子的運算式的特徵。 除了這些運算子外，特徵回填和估計也支援[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL AND NOT]邏輯運算子，用於在回填特徵運算式內結合索引鍵值對。
