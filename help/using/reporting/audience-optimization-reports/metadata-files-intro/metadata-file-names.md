@@ -19,22 +19,22 @@ ht-degree: 10%
 
 根據這些規格命名您的「對象最佳化」中繼資料檔案。
 
-## 語法和ID類別 {#syntax}
+## 語法和ID類別{#syntax}
 
-下列語法定義格式良好的中繼資料檔案名稱的結構。 Note, *italics* indicates a variable placeholder. 其他元素是常數，不會變更。
+下列語法定義格式良好的中繼資料檔案名稱的結構。 請注意，*斜體*&#x200B;表示變數預留位置。 其他元素是常數，不會變更。
 
 **語法:** *`yyyymmdd_0_childID`*
 
 >[!NOTE]
 >
->*請勿在中繼資料檔案* （.txt或其他檔案）中使用副檔名。
+>*請勿* 在中繼資料檔案（.txt或其他）中使用副檔名。
 
 <!--In the name syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file contents](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md). These 2 variables seem similar, but they represent different things:-->
 
-* 中間的元 **件** 0在技術上是父ID，是舊版欄位。 值應始終設定為 **0**。
+* 中間元件&#x200B;**0**&#x200B;在技術上是父ID，它是舊欄位。 值應始終設定為&#x200B;**0**。
 * 子ID的值可以介於1和10之間，具體取決於維度。 請檢視下列項目: 
 
-## 子ID維度 {#child-dimension}
+## 子ID維{#child-dimension}
 
 在中繼資料檔案名稱中，子ID是一種識別碼，可將檔案中的資料類型分類，並將其放入階層中。 您可以使用下列類別ID，在檔案名稱中標籤子ID:
 
@@ -43,7 +43,7 @@ ht-degree: 10%
 1. 位置
 1. Exchange
 1. 網站
-1. 廣告商(若在資料來源中使用 [整合碼](../../../features/manage-datasources.md#details))
+1. 廣告商（若在[資料來源](../../../features/manage-datasources.md#details)中使用整合代碼）
 1. 插入順序(IO)
 1. 垂直（即「電腦」、「汽車」、「房地產」等特定產業或商業類別）
 1. 戰術
