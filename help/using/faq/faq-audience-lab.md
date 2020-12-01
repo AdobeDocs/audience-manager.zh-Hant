@@ -40,7 +40,7 @@ audience-lab-faq.xml
 
 <br> 
 
-**假設測試群組使用已驗證的設定檔來分割測試區段。已驗證的設定檔連結至 4 個[Audience Manager UUID](../reference/ids-in-aam.md)。如果訪客展現來自四個 UUID 其中之一的轉換特徵，[!UICONTROL Audience Lab]會將此轉換計為一次轉換還是四次轉換？**
+**假設測試群組使用已驗證的設定檔來分割測試區段。已驗證的設定檔連結至 4 個 [Audience Manager UUID](../reference/ids-in-aam.md)。如果訪客展現來自四個 UUID 其中之一的轉換特徵，[!UICONTROL Audience Lab] 會將此轉換計為一次轉換還是四次轉換？**
 
 在此情況下，[!UICONTROL Audience Lab] 只會計為一次轉換。
 
@@ -52,10 +52,10 @@ audience-lab-faq.xml
 
 <br> 
 
-**使用者是否可擁有[!UICONTROL Segment: Read-Only]存取權，同時也擁有[!UICONTROL Audience Lab]測試區段的建立存取權？**
+**使用者是否可擁有 [!UICONTROL Segment: Read-Only] 存取權，同時也擁有 [!UICONTROL Audience Lab] 測試區段的建立存取權？**
 
 如需如何透過 [!UICONTROL RBAC] 權限使用 [!UICONTROL Audience Lab] 的詳細資訊，請參閱[建立區段測試群組](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)。
 
-**我是否可以使用[!UICONTROL Audience Lab]搭配[!UICONTROL Profile Link Device Graph]和外部裝置圖形 ([Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/home.translate.html)、Tapad Device Graph、Liveramp Device Graph)？**
+**我是否可以使用 [!UICONTROL Audience Lab] 搭配 [!UICONTROL Profile Link Device Graph] 和外部裝置圖形 ([Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/home.translate.html)、Tapad Device Graph、Liveramp Device Graph)？**
 
 目前，使用 [!UICONTROL Profile Link Device Graph] 時，[!UICONTROL Audience Lab] 只能依連接至合格裝置的裝置來分割區段母體。我們正致力在 [!UICONTROL Audience Lab] 中增加對其他裝置圖表的支援，將會在提供支援時通知您。
