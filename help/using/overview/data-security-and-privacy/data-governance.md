@@ -32,7 +32,7 @@ Audience Manager 中的資料控管指的是 Audience Manager 中客戶資料的
 
 >[!NOTE]
 >
->See [IP Address Obfuscation](../../features/administration/ip-obfuscation.md) to learn how to enable [!DNL IP] address obfuscation in the Audience Manager user interface.
+>請參閱[IP位址模糊化](../../features/administration/ip-obfuscation.md)，瞭解如何在Audience Manager使用者介面中啟用[!DNL IP]位址模糊化。
 
 請觀看以下影片，瞭解 [!DNL IP] 位址模糊化在 Audience Manager 中的運作方式。
 
