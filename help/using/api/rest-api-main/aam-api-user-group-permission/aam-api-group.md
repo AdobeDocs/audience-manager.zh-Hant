@@ -17,13 +17,13 @@ ht-degree: 13%
 
 # 群組管理 API 方法 {#group-management-api-methods}
 
-剩餘 [!DNL API] 方法來管理群組，包括建立、更新、列出、刪除群組。
+保留[!DNL API]方法來管理群組，包括建立、更新、列出、刪除群組。
 
 <!-- c_rest_api_user_man_group.xml -->
 
 ## 建立群組 {#create-group}
 
-建立 `POST` 新使用者群組的方法。
+用於建立新用戶組的`POST`方法。
 
 <!-- r_rest_api_group_create.xml -->
 
@@ -54,9 +54,9 @@ ht-degree: 13%
   }
 ```
 
-## 更新群組 {#update-group}
+## 更新群組{#update-group}
 
-一種 `PUT` 更新用戶組的方法。
+用於更新用戶組的`PUT`方法。
 
 <!--
 r_rest_api_group_update.xml
@@ -89,9 +89,9 @@ r_rest_api_group_update.xml
   }
 ```
 
-## 清單群組 {#list-groups}
+## 清單群組{#list-groups}
 
-列出 `GET` 使用者群組的方法。
+列出使用者群組的`GET`方法。
 
 <!--
 r_rest_api_group_list.xml
@@ -119,7 +119,7 @@ r_rest_api_group_list.xml
 
 ## 刪除群組 {#delete-groups}
 
-刪除 `DELETE` 使用者群組並移除該群組中所有成員的方法。
+`DELETE`方法，可刪除使用者群組並移除該群組的所有成員。
 
 <!-- r_rest_api_group_delete.xml -->
 
@@ -127,11 +127,11 @@ r_rest_api_group_list.xml
 
 `DELETE /api/v1/groups/`*`<groupId>`*
 
-成功 `204 No Content` 時傳回。 如果發生衝突，則返回 `409 Conflict`。
+如果成功，則返回`204 No Content`。 如果發生衝突，則返回`409 Conflict`。
 
-## 大量刪除群組 {#delete-groups-bulk}
+## 大量刪除組{#delete-groups-bulk}
 
-一種 `DELETE` 批量刪除多個組並從該組中刪除所有成員的方法。
+`DELETE`方法，可大量刪除多個組，並從該組中刪除所有成員。
 
 <!-- r_rest_api_group_delete_bulk.xml -->
 
@@ -139,11 +139,11 @@ r_rest_api_group_list.xml
 
 `DELETE /api/v1/groups/bulk-delete`
 
-成功 `204 No Content` 時傳回。 如果發生衝突，則返回 `409 Conflict`。
+如果成功，則返回`204 No Content`。 如果發生衝突，則返回`409 Conflict`。
 
-## 列出群組的所有權限 {#list-permissions-group}
+## 列出組{#list-permissions-group}的所有權限
 
-列 `GET` 出群組上權限物件的方法。
+`GET`方法，列出群組上的權限物件。
 
 <!-- r_rest_api_perm_list_group.xml -->
 
@@ -173,11 +173,11 @@ r_rest_api_group_list.xml
 ]
 ```
 
-如果 `400 Bad Request` 組無法訪問，則返回。
+如果組無法訪問，則返回`400 Bad Request`。
 
-## Set Permissions for a Group {#set-permissions-group}
+## 設定群組的權限{#set-permissions-group}
 
-更新 `PUT` 群組權限的方法。 此方法會以新權限覆寫舊權限。
+`PUT`方法，可更新群組權限。 此方法會以新權限覆寫舊權限。
 
 <!-- r_rest_api_perm_set.xml -->
 
@@ -210,4 +210,4 @@ r_rest_api_group_list.xml
 
 範例回應代表權限物件的更新清單。
 
-成功 `200 OK` 時傳回。 如果 `400` 任何給定權限無效，則返回。 如果登入 `403` 的使用者無法存取物件，也可以傳回。
+如果成功，則返回`200 OK`。 如果任何給定權限無效，則返回`400`。 如果登入的使用者無法存取物件，也可傳回`403`。
