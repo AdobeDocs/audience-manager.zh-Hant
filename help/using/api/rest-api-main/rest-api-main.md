@@ -19,8 +19,8 @@ ht-degree: 4%
 
 [!UICONTROL RESTful APIs] 讓您以程式設計方式工 [!DNL Audience Manager]作。
 
-傳送 [!DNL Audience Manager] 和接 [!DNL REST API] 收資料的格式設 [!DNL JavaScript Object Notation] 定遵循(JSON[](https://www.json.org/))標準。 其主要優點 [!DNL JSON] 在於，它可協助開發 [!DNL API] 人員和機器輕鬆編寫、讀取和剖析查詢。
+[!DNL Audience Manager] [!DNL REST API]遵循[!DNL JavaScript Object Notation]([JSON](https://www.json.org/))格式化傳送和接收資料的標準。 [!DNL JSON]的主要優點在於，它有助於讓開發人員和機器輕鬆編寫、讀取和剖析[!DNL API]查詢。
 
-為了進一步簡化您的工作，我們將移轉至 [!DNL REST APIs][Swagger](https://swagger.io/solutions/api-documentation/)。 如需詳細資訊，請參 [閱Audience Manager API程式碼移轉](/help/using/api/api-swagger-migration.md)。
+為進一步簡化您的工作，我們將[!DNL REST APIs]移轉至[Swagger](https://swagger.io/solutions/api-documentation/)。 如需詳細資訊，請參閱[Audience Manager API程式碼移轉](/help/using/api/api-swagger-migration.md)。
 
-在使用方 [法之前](../../api/rest-api-main/aam-api-getting-started.md#getting-started-with-rest-apis) ，請先檢閱快速入 [!DNL Audience Manager] 門材 [!DNL API] 料。
+在使用[!DNL Audience Manager] [!DNL API]方法之前，請先閱讀[快速入門](../../api/rest-api-main/aam-api-getting-started.md#getting-started-with-rest-apis)內容。
