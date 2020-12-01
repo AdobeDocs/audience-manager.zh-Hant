@@ -17,7 +17,7 @@ ht-degree: 13%
 
 # 特徵產生器中的作業順序 {#order-of-operations-in-trait-builder}
 
-[!UICONTROL Trait Builder] 根據下面列出的操作順序（從高到低優先順序）評估表達式。 由高優先順序運算子定義的特徵元素會先評估，再評估其他優先順序運算子。 本節根據優先順序（從高到低）對每個運算子進行排名。
+[!UICONTROL Trait Builder] 根據下面列出的操作順序（從高到低優先順序）評估表達式。由高優先順序運算子定義的特徵元素會先評估，再評估其他優先順序運算子。 本節根據優先順序（從高到低）對每個運算子進行排名。
 
 <!-- c_tb_operator_precedence.xml -->
 
@@ -32,12 +32,12 @@ ht-degree: 13%
  <tbody> 
   <tr> 
    <td colname="col1"> 括弧 </td> 
-   <td colname="col2"> ( ) </td> 
+   <td colname="col2"> () </td> 
    <td colname="col3"> 括弧中的運算式一律會先計算，並遵循優先順序。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 比較運算子 </td> 
-   <td colname="col2"> &lt; &gt; &lt;= &gt;= </td> 
+   <td colname="col2"> &lt;&gt; &lt;&gt;= </td> 
    <td colname="col3"> 接下來評估小於、大於、小於／等於、大於／等於。 </td> 
   </tr> 
   <tr> 
@@ -46,12 +46,12 @@ ht-degree: 13%
    <td colname="col3"> 等於，不等於在前面的運算子之後計算。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1">布林 <span class="wintitle"> 值AND</span> </td> 
+   <td colname="col1">布爾<span class="wintitle"> AND</span> </td> 
    <td colname="col2"><span class="wintitle"> 和</span> </td> 
    <td colname="col3" morerows="1"> 不適用 </td> 
   </tr> 
   <tr> 
-   <td colname="col1">布林 <span class="wintitle"> 值OR</span> </td> 
+   <td colname="col1">布爾<span class="wintitle"> OR</span> </td> 
    <td colname="col2"><span class="wintitle"> 或</span> </td> 
    <td colname="col3" morerows="1"> 不適用 </td> 
   </tr> 
