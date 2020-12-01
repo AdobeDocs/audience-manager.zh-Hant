@@ -17,7 +17,7 @@ ht-degree: 7%
 
 # [!UICONTROL Audience Optimization Reports] {#audience-optimization-reports}
 
-使 [!UICONTROL Audience Optimization Reports] 用資料視覺化方法傳回Audience Manager帳戶 [!UICONTROL destinations] 中的資訊。 在每個報表中，您幾乎可以按一下任何資料點，以傳回該項目的詳細資訊。 這些 [!UICONTROL Audience Optimization] 見解可套用至廣告和出版通道的數個使用案例，但預設無法使用。 請連絡您的Audience Manager顧問以開始使用。
+[!UICONTROL Audience Optimization Reports]會使用資料視覺化方法，傳回Audience Manager帳戶中[!UICONTROL destinations]的相關資訊。 在每個報表中，您幾乎可以按一下任何資料點，以傳回該項目的詳細資訊。 這些[!UICONTROL Audience Optimization]見解可套用至廣告和出版通道中的數個使用案例，但預設無法使用。 請連絡您的Audience Manager顧問以開始使用。
 
 + [廣告商適用的 Audience Optimization 概述](aor-advertisers/aor-advertisers.md)
 + [發佈商適用的 Audience Optimization 概述](aor-publishers/aor-publishers.md)
