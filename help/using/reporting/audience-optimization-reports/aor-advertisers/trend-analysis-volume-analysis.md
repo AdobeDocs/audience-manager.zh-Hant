@@ -19,23 +19,23 @@ ht-degree: 5%
 
 這些報表會傳回廣告維度的曝光、點進率和轉換率資料。 比較所選量度的趨勢和數量，以深入瞭解促銷活動在一段時間內的表現。
 
-## 範例報 [!UICONTROL Trend Analysis] 表 {#sample-trend-analysis}
+## 範例[!UICONTROL Trend Analysis]報表{#sample-trend-analysis}
 
-報 [!UICONTROL Trend Analysis] 表僅會在14天間隔內以折線圖傳回資料。 在此範例中，報表會顯示一組對應區段的曝光、點進和轉換趨勢。
+[!UICONTROL Trend Analysis]報告僅在14天間隔內以折線圖傳回資料。 在此範例中，報表會顯示一組對應區段的曝光、點進和轉換趨勢。
 
 ![](assets/trend-analysis.png)
 
-## 範例報 [!UICONTROL Volume Analysis] 表 {#sample-volume-analysis}
+## 範例[!UICONTROL Volume Analysis]報表{#sample-volume-analysis}
 
-報 [!UICONTROL Volume Analysis] 表會傳回所選日期範圍的長條圖資料。 在此範例中，報表會依量顯示一組對應區段的曝光、點進和轉換。
+[!UICONTROL Volume Analysis]報表會傳回所選日期範圍的長條圖資料。 在此範例中，報表會依量顯示一組對應區段的曝光、點進和轉換。
 
 >[!NOTE]
 >
->7天和30天回顧期限僅適用於星期日 **[!UICONTROL Date Through]** 。
+>7天和30天回顧期限僅適用於星期日&#x200B;**[!UICONTROL Date Through]**&#x200B;日期。
 
 ![](assets/volume-analysis.png)
 
 >[!TIP]
 >
->如需已映射和未映射區段的詳細資訊，請參閱 [區段績效報表](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md) 檔案。
+>如需已映射和未映射區段的詳細資訊，請參閱[區段效能報表](../../../reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)檔案。
 
