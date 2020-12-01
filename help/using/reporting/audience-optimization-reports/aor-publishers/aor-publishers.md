@@ -21,15 +21,15 @@ Audience Optimization for Publishers 可針對您擁有且運作之內容，協�
 
 ## 概述 {#aor-overview}
 
-[!UICONTROL Audience Optimization for Publishers] 並列記錄層級的促銷活動績效資料 [!DNL Google Ad Manager] 與區段 [!DNL Audience Manager] 度量。 這些報表適用於已設定登入記錄的客 [!DNL Google Ad Manager]戶 [!DNL Audience Manager]。 如果您尚未設定記錄擷取，請閱讀「將 [Google Ad Manager資料檔案匯入Audience Manager](import-dfp.md) 」，以取得如何進行的資訊。
+[!UICONTROL Audience Optimization for Publishers] 並列記錄層級的促銷活動績效資料 [!DNL Google Ad Manager] 與 [!DNL Audience Manager] 區段度量。這些報告適用於已將日誌提取從[!DNL Google Ad Manager]設定到[!DNL Audience Manager]的客戶。 如果您尚未設定記錄擷取，請閱讀[將Google Ad Manager資料檔案匯入Audience Manager](import-dfp.md)，以取得如何進行的資訊。
 
 ## 中繼資料 {#metadata}
 
-報表中顯示的效能資訊會從您的例項匯 [!DNL Google Ad Manager] 入。 您必須傳送中繼資料檔案給我們，好讓我們可以在報表中新增描述性好記的名稱，而非ID。 「將Google Ad Manager資 [料檔案匯入Audience Manager」中的步驟](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md) 3說明如何傳送中繼資料。
+報表中顯示的效能資訊會從您的[!DNL Google Ad Manager]例項匯入。 您必須傳送中繼資料檔案給我們，好讓我們可以在報表中新增描述性好記的名稱，而非ID。 [將Google Ad Manager資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3說明如何傳送中繼資料給我們。
 
 ## 可用報表 {#available-reports}
 
-[!UICONTROL Audience Optimization for Publishers] 提供6種不同的檢視，以針對以發行者為中心的商業目標，針對其中建立的細分， [!DNL Audience Manager] 提供層級和伺服器效能。
+[!UICONTROL Audience Optimization for Publishers] 提供6種不同的檢視，其中針對以發行者為中心的商業目標，針對其中建立的 [!DNL Audience Manager] 細分提供層級和伺服器效能。
 
 + [區段成效報表](publisher-segment-performance.md)
 + [區段區段報表](publisher-segment-trends.md)
