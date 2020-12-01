@@ -25,7 +25,7 @@ ht-degree: 5%
 >
 >請記住：
 >
->* 報表 [!UICONTROL Unique User Reach] 僅會針對具有權限層級的使用者顯 [!UICONTROL Admin] 示資訊。 您的 [!DNL Audience Manager] 顧問或客戶服務可以設定您帳戶的權 [!UICONTROL Admin] 限。
+>* [!UICONTROL Unique User Reach]報表僅顯示具有[!UICONTROL Admin]權限層級的使用者的資訊。 您的[!DNL Audience Manager]顧問或客戶服務可以設定您帳戶的[!UICONTROL Admin]權限。
    >
    >
 * 7天和30天回顧期限僅適用於星期日。
@@ -33,6 +33,6 @@ ht-degree: 5%
 
 ## 範例報表
 
-您 [!UICONTROL Unique User Reach] 的報表看起來可能類似以下。 在報表中，按一下泡泡以檢視基礎資料。
+您的[!UICONTROL Unique User Reach]報表看起來可能類似於下方報表。 在報表中，按一下泡泡以檢視基礎資料。
 
 ![](assets/unique-user-reach.png)
