@@ -29,15 +29,15 @@ ht-degree: 10%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> <i>variable</i> </code> </p> </td> 
-   <td colname="col2"> <p>變數會以斜體 <i>顯示</i>。 以適當的值取代變數名稱。 </p> <p>為了視覺清晰度，有時變數和其他程式碼元素會出現在&lt; &gt;方括弧之間。 您不需要在程式碼中使用這些符號。 </p> </td> 
+   <td colname="col2"> <p>變數會出現在<i>斜體</i>中。 以適當的值取代變數名稱。 </p> <p>為了視覺清晰度，有時變數和其他程式碼元素會出現在&lt; &gt;方括弧之間。 您不需要在程式碼中使用這些符號。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [optional]</code> </p> </td> 
-   <td colname="col2"> <p>方括弧中的項目為可選項目。 </p> </td> 
+   <td colname="col2"> <p>方括弧中的項目是可選的。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (this|that) </code> </p> </td> 
-   <td colname="col2"> <p>括弧中的項目表示布林 <span class="wintitle"> 值OR</span> 選項。 </p> </td> 
+   <td colname="col2"> <p>括弧中的項目表示布林<span class="wintitle"> OR</span>選項。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> literal</code> </p> </td> 
