@@ -24,18 +24,18 @@ ht-degree: 4%
 要啟用入站資料傳輸，供應商和客戶端將：
 
 1. 確定您希望供應商或合作夥伴觸發哪些特徵。
-1. 取得特徵的像素。 在特徵清單畫面中，將滑鼠指標暫留在 **[!UICONTROL Actions]** 欄上，然後按一下所 **[!UICONTROL Get trait URL]** 要特徵的符號。
-1. 提供給 [!DNL URL] 供應商或合作夥伴。
+1. 取得特徵的像素。 在特徵清單畫面中，將滑鼠指標暫留在&#x200B;**[!UICONTROL Actions]**&#x200B;欄上，然後按一下所要特徵的&#x200B;**[!UICONTROL Get trait URL]**&#x200B;符號。
+1. 將[!DNL URL]提供給供應商或合作夥伴。
 
 ## 範例
 
-此基本事件呼叫會傳送特徵ID 1234至 [!DNL Audience Manager]。
+此基本事件呼叫會傳送特徵ID 1234至[!DNL Audience Manager]。
 
 ```
 https://something.demdex.net/event?d_sid=1234
 ```
 
-您可以在事件呼叫中序列化特徵ID，以協 `HTTP` 助減少頁面流量。 將其他特徵ID附加至URL字串，如下列範例所示：
+您可以在事件呼叫中序列化特徵ID，以協助減少頁面的`HTTP`流量。 將其他特徵ID附加至URL字串，如下列範例所示：
 
 ```
 https://something.demdex.net/event?d_sid=1234,5678,9876,5432
