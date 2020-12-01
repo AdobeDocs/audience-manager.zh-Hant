@@ -25,31 +25,31 @@ ht-degree: 3%
 
 ## 使用案例 {#use-cases}
 
-使用報 [!UICONTROL Segment Trend] 表來驗證區段隨時間的效能，並根據強大的效能或規模找出趨勢。
+使用[!UICONTROL Segment Trend]報表來驗證區段隨時間的效能，並根據強大的效能或規模找出趨勢。
 
-透過此報告，您可以瞭解哪些Web屬性顯示下降或錯誤增加，並視需要進行疑難排解。 此報告是您識別對報表感興趣的受眾後的下一步 [!UICONTROL Segment Performance] ，以確保您在標籤中看到的強弱 [!UICONTROL Segment Performance] 績效隨時間而一致。
+透過此報告，您可以瞭解哪些Web屬性顯示下降或錯誤增加，並視需要進行疑難排解。 此報告是您在[!UICONTROL Segment Performance]報告中識別感興趣對象後的下一步，以確保您在[!UICONTROL Segment Performance]標籤中看到的強弱績效會隨著時間而保持一致。
 
-## 使用區段趨勢報表 {#using-the-report}
+## 使用區段趨勢報表{#using-the-report}
 
-在和之 **[!UICONTROL Mapped]** 間切 **[!UICONTROL Unmapped]** 換，以選取映射至或未映射至目標的區段。 選取 **[!UICONTROL All]** 以將您的所有區段納入報表。
+在&#x200B;**[!UICONTROL Mapped]**&#x200B;和&#x200B;**[!UICONTROL Unmapped]**&#x200B;之間切換，以選擇映射至或未映射至目標的區段。 選取&#x200B;**[!UICONTROL All]**，將您的所有區段包含在報表中。
 
-使用滑桿調整回顧視 **[!UICONTROL Date Through]** 窗。
+使用&#x200B;**[!UICONTROL Date Through]**&#x200B;滑桿調整回顧視窗。
 
-按一下滑桿下方的任 **[!UICONTROL Date Through]** 一區段，即可顯示選項，僅保留該區段在報表中或排除它。
+按一下&#x200B;**[!UICONTROL Date Through]**&#x200B;滑桿下的任一區段，以開啟選項，讓該區段僅保留在報表中或排除它。
 
-使用下 **[!UICONTROL Line Item]** 拉式方塊，選取您要傳回資訊的作品集中的屬性。
+使用&#x200B;**[!UICONTROL Line Item]**&#x200B;下拉式方塊，選取您要傳回資訊的作品集中的屬性。
 
-在下拉 **[!UICONTROL Segment Data Source]** 式方塊中，選取包含您要在報表中檢視之區段的資料來源。
+在&#x200B;**[!UICONTROL Segment Data Source]**&#x200B;下拉式方塊中，選取包含您要在報表中檢視之區段的資料來源。
 
-使用下 **[!UICONTROL Segment]** 拉式方塊，選擇您要在報表中看到的區段。
+使用&#x200B;**[!UICONTROL Segment]**&#x200B;下拉式方塊，選取您要在報表中看到的區段。
 
 >[!IMPORTANT]
 >
->啟用時， [!UICONTROL Audience Optimization for Publishers]您必須包含ID的描述性中繼資料，如 [!UICONTROL Line Item] Import Google Ad Manager（舊稱DFP）Data Files Into Audience Manager的步驟3所述 [](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 執行此動作後，您可確保報表會以ID而非ID的形式詳細 [!UICONTROL Line Item] 說明Web屬 [!UICONTROL Line Item] 性。
+>啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Line Item] ID的描述性中繼資料，如[將Google廣告管理員（先前稱為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3所述。 執行此動作後，您可確保報表會將Web屬性詳細資訊設為[!UICONTROL Line Item]，而非[!UICONTROL Line Item] ID。
 
-## 解讀結果 {#interpreting-results}
+## 解讀結果{#interpreting-results}
 
-報 [!UICONTROL Segment Trend] 表僅會在14天間隔內以折線圖傳回資料。 在此範例中，報表會顯示一組映射和未映射區段的曝光和點進趨勢。
+[!UICONTROL Segment Trend]報告僅在14天間隔內以折線圖傳回資料。 在此範例中，報表會顯示一組映射和未映射區段的曝光和點進趨勢。
 
 將滑鼠指標暫留在任何線條上，以取得該特定區段趨勢的詳細資訊。 請參閱範例報表下表格中的其他資訊說明。
 
