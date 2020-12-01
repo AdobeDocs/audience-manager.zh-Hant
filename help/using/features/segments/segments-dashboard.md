@@ -17,11 +17,11 @@ ht-degree: 9%
 
 # 區段清單檢視 {#segments-list-view}
 
-「區 [段」控制面板](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list) ，是集中式工作區，可用來管理您的觀眾區段。 您可導覽至 [!UICONTROL Segments] >以檢視控制 **[!UICONTROL Audience Data]** 面板 **[!UICONTROL Segments]**。
+[區段控制面板](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list)是集中式工作區，用於管理您的觀眾區段。 導覽至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**，即可看到[!UICONTROL Segments]控制面板。
 
 ![segments-dashboard](assets/segments-dashboard.png)
 
-本頁 [!UICONTROL Segments] 包含一些功能和工具，可協助您：
+[!UICONTROL Segments]頁面包含可協助您：
 
 * 建立新區段；
 * 編輯和刪除區段；
