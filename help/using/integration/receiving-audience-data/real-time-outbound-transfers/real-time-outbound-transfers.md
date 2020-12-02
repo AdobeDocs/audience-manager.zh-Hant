@@ -143,7 +143,7 @@ ht-degree: 5%
 
 ## 安全性
 
-您可以使用私密金鑰來簽署HTTP要求[，或透過[!DNL Audience Manager]OAuth 2.0[通訊協定來驗證](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)，以確保即時傳出資料傳輸程式的安全。](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
+您可以使用私密金鑰來簽署HTTP要求，或透過[!DNL Audience Manager][OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)[通訊協定來驗證](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)，以確保即時傳出資料傳輸程式的安全。
 
 ## 請求
 
