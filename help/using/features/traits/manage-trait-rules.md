@@ -7,7 +7,7 @@ title: 管理特徵規則
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 feature: Traits
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 14c5ac091a27d125c96d17ce750c6e25ad844856
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 1%
@@ -29,13 +29,17 @@ ht-degree: 1%
 
 1. 本節中的欄位和控制項可讓您從鍵值配對建立訊號，並使用比較運算子來設定它們之間的關係。 索引鍵、運算子和值是必要項。
 1. [!UICONTROL Data Explorer Options]可讓您回填訊號的特徵實現。
+
    >[!NOTE]
    >
    >此選項僅適用於[!UICONTROL Data Explorer]客戶。 如需詳細資訊，請洽詢您的Adobe顧問。
+
 1. 本節顯示過去7天內，針對[!UICONTROL Expression Builder]中定義的訊號，針對回填和非回填特徵，特徵實現的估計。
+
    >[!NOTE]
    >
    >此選項僅適用於[!UICONTROL Data Explorer]客戶。 如需詳細資訊，請洽詢您的Adobe顧問。
+
 1. 測試欄位可讓您驗證訊號規則或[!DNL URL]的組合，以便在傳送資料至Audience Manager時使用。
 
 ## 建立特徵規則{#create-trait-rule}
@@ -47,18 +51,23 @@ ht-degree: 1%
 在&#x200B;*建立特徵規則之前，填寫&#x200B;**[!UICONTROL Basic Information]**章節*&#x200B;中的必填欄位。
 
 1. 展開&#x200B;**[!UICONTROL Trait Expression]**&#x200B;部分並輸入鍵和值名稱。 這會建立&#x200B;*`signal`*。
+
    >[!NOTE]
    >
    >如果您的事件呼叫使用該語法傳送資料至[!DNL Audience Manager]，請加入關鍵變數的`c_`前置詞（或任何其他命名慣例）。
+
 1. 從&#x200B;**[!UICONTROL Operator]**&#x200B;下拉式清單中選取[比較運算子](../../features/traits/trait-comparison-operators.md)。 比較運算子評估信號中各元素之間的關係。
+
    >[!NOTE]
    >
    >[!DNL Boolean] [!UICONTROL OR]運算子建立群組內多個信號&#x200B;*之間的關係，且無法變更。*
+
 1. 按一下 **[!UICONTROL Add Rule]**. 儲存的規則會顯示在資料輸入欄位上方的特徵工作區中。
 
 ### 範例 {#example-trait-rule}
 
 在下列範例中，使用者已根據產品ID建立新的特徵規則。 若要建立此規則，使用者將連結有等號運算子(`==`)的金鑰`productkey`提供給值`2093`。
+
 ![](assets/tb_sample_rule1.png)
 
 按一下&#x200B;**[!UICONTROL Add Rule]**&#x200B;可儲存特徵並將其移至[!UICONTROL Expression Builder]工作區。
@@ -75,10 +84,13 @@ ht-degree: 1%
 
 1. 將游標移到要移動的規則上，以反白顯示。
 1. 將滑鼠指標暫留在反白顯示的規則邊框上。
-這會自動將規則與其目前群組分開，並將其移入新群組。
+
+   這會自動將規則與其目前群組分開，並將其移入新群組。
+
    >[!NOTE]
    >
    >如果您無意中移動規則，請將規則拖回其原始群組。
+
 1. 從下拉式選單中選取[!DNL Boolean]運算子([!UICONTROL AND]、[!UICONTROL OR]、[!UICONTROL AND NOT])，以設定規則群組之間的關係。
 
 ## 在組之間移動規則{#move-rules-between-groups}
