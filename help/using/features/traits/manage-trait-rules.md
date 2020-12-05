@@ -1,6 +1,6 @@
 ---
-description: 在「特徵產生器」中，「運算式產生器」可讓您建立並測試建立讀者資格要求的規則。 規則由關鍵值配對組成，例如「color == blue」或「price > 100」。 比較運算子可建立索引鍵與值之間的關係。 布林運算式會決定規則群組之間的關係。
-seo-description: 在「特徵產生器」中，「運算式產生器」可讓您建立並測試建立讀者資格要求的規則。 規則由關鍵值配對組成，例如「color == blue」或「price > 100」。 比較運算子可建立索引鍵與值之間的關係。 布林運算式會決定規則群組之間的關係。
+description: 在「特徵產生器」中，「運算式產生器」可讓您建立並測試建立讀者資格要求的規則。 規則由鍵值對組成，如"color == blue"或"price &gt;100英吋。 比較運算子可建立索引鍵與值之間的關係。 布林運算式會決定規則群組之間的關係。
+seo-description: 在「特徵產生器」中，「運算式產生器」可讓您建立並測試建立讀者資格要求的規則。 規則由鍵值對組成，如"color == blue"或"price &gt;100英吋。 比較運算子可建立索引鍵與值之間的關係。 布林運算式會決定規則群組之間的關係。
 seo-title: 管理特徵規則
 solution: Audience Manager
 title: 管理特徵規則
@@ -9,7 +9,7 @@ feature: Traits
 translation-type: tm+mt
 source-git-commit: 14c5ac091a27d125c96d17ce750c6e25ad844856
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '727'
 ht-degree: 1%
 
 ---
