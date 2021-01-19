@@ -7,15 +7,15 @@ title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 translation-type: tm+mt
-source-git-commit: f037a12af641da44ed67e62a249c41487da7ac07
+source-git-commit: d6856a54c649d701c3163c1408f84aea256ebdc1
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 6%
+source-wordcount: '1051'
+ht-degree: 5%
 
 ---
 
 
-# [!DNL Amazon S3]傳入資料檔案的 名稱和檔案大小要求{#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
+# [!DNL Amazon S3] 傳入資料檔案的名稱和檔案大小要求  {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
 說明將資料傳送至[!DNL Audience Manager]時，您需遵循的必填欄位、語法、命名慣例和檔案大小。 將資料發送到[!DNL Audience Manager] / [!DNL Amazon S3]目錄時，請根據這些規範設定檔案的名稱和大小。
 
@@ -155,9 +155,14 @@ Removed  {importance="high"} for ExL
  </tbody> 
 </table>
 
+
 >[!NOTE]
 >
 >傳入資料驗證程式會將空白檔案標示為無效，且不會處理這些檔案。
+
+## 行長限制{#line-limits}
+
+傳入資料檔案的行長限制為102400位元組。 超過此限制的行將從轉移中排除。
 
 >[!MORELIKETHIS]
 >
