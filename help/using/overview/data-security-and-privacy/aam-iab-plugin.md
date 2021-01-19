@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 適用於 IAB TCF 的 Audience Manager 外掛程式
 feature: data governance & privacy
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: ab72f0875b132eaf333d1e5308322490ac035de3
 workflow-type: tm+mt
 source-wordcount: '2449'
 ht-degree: 40%
@@ -64,7 +64,7 @@ Audience Manager可協助您尊重使用者的隱私權選擇，並提供您簡�
 您必須符合下列必要條件，才能搭配Audience Manager使用IAB TCF的Audience Manager外掛程式：
 
 1. 您必須使用 Adobe Experience Platform Identity Service (ECID) 5 或更新版本。[下載](https://github.com/Adobe-Marketing-Cloud/id-service/releases)最新版 ECID。
-2. 您必須使用Audience Manager [!DNL Data Integration Library](DIL)9.0版或更新版本，可從[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)下載。 閱讀 [Audience Manager 中的 DIL 文件](../..//dil/dil-overview.md)。我們建議使用[Adobe Launch](https://docs.adobe.com/content/help/zh-Hant/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html)來建置Audience Manager最簡單的DIL。
+2. 您必須使用Audience Manager [!DNL Data Integration Library](DIL)9.0版或更新版本，可從[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)下載。 閱讀 [Audience Manager 中的 DIL 文件](../../dil/dil-overview.md)。我們建議使用[Adobe Launch](https://docs.adobe.com/content/help/zh-Hant/launch/using/extensions-ref/adobe-extension/adobe-audience-manager-extension.html)來建置Audience Manager最簡單的DIL。
 3. 或者，如果您使用[!DNL Server-Side Forwarding](SSF)將資料匯入Audience Manager，則必須升級至最新版的AppMeasurement。 使用 [Analytics 代碼管理器](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/code-manager-admin.translate.html)下載 AppMeasurement。
 4. 您必須使用與IAB TCF v2.0整合併已向IAB TCF註冊的「同意管理平台」(CMP)，不論是商業版或您自己的版本。 請參閱[在 IAB 框架內註冊的 CMP](https://iabeurope.eu/cmp-list/) 清單。
 
