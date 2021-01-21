@@ -7,7 +7,7 @@ title: 瞭解向 Demdex 網域進行的呼叫
 uuid: c06dae3a-f169-4712-80fb-d6d448dce51a
 feature: reference
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 7286af6dd85a0464ccf52a88139d07cb151783e6
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 15%
@@ -26,6 +26,6 @@ ht-degree: 15%
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Platform 身分服務](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html)
+>* [Adobe Experience Platform 身分服務](https://docs.adobe.com/content/help/en/id-service/using/home.html)
 >* [Audience Manager Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-am.translate.html)
 
