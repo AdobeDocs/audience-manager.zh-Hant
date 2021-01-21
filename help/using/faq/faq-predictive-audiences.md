@@ -6,10 +6,10 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: c2c392b1201b5de08a3f4d58bbb7be5ef31545d0
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 64%
+source-wordcount: '968'
+ht-degree: 59%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 64%
 1. 選取的角色[!UICONTROL traits] / [!UICONTROL segments]在其使用者設定檔中沒有足夠的資料（沒有足夠的特徵可以分析）。
 1. 目標讀者特徵／群體沒有任何作用中或已登入的使用者。
 1. 過去 30 天內處於作用中狀態或已上線的目標受眾使用者，其使用者設定檔中的資料不足 (沒有足夠的特徵可進行分析)。
-1. 目標對象區段使用與您為模型選擇的[!UICONTROL Profile Merge Rule]不同的&lt;a0/>。
+1. 目標對象區段使用與您為模型選擇的[!UICONTROL Profile Merge Rule]不同的。
 1. 您為模型選擇的[!UICONTROL Profile Merge Rule]中，可能不包含目標對象特徵的資料來源。
 
 為獲得最佳結果，請遵循[角色選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目標受眾選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建議准則。
@@ -113,6 +113,15 @@ ht-degree: 64%
 是的，您可以在模型報表頁面中查看所有基線的所有具影響力的特徵。請參閱[具影響力的特徵](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits)。
 
  
+
+**我是否可以變更預測性狀的存留時間(TTL)?**
+
+預測性狀TTL設定為0（存留期），無法變更。 [!UICONTROL Predictive Audiences] 只有當使用者符合基本區段的資格或重新分類至不同的預測區段時，才能將其從預測區段中取消分段。
+
+如有需要，您可以建立新區段來處理此功能，該區段同時包含具有指定TTL的預測性特徵和活動特性。
+
+ 
+
 
 **如果編輯其中一個基線特徵或區段，模型會發生什麼事？**
 
