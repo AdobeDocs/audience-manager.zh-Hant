@@ -1,6 +1,6 @@
 ---
 description: 「管理」功能表下的選項可讓您建立Audience Manager使用者並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
-keywords: rbac;RBAC;role based;role-based;role-based access controls
+keywords: rbac; RBAC；基於角色；基於角色；基於角色的訪問控制
 seo-description: 「管理」功能表下的選項可讓您建立Audience Manager使用者並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
 seo-title: 管理
 solution: Audience Manager
@@ -9,10 +9,10 @@ topic: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: Administration
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 55cb69bad1f369ed3b58bece54aebdca4b14f7a7
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 1%
+source-wordcount: '1203'
+ht-degree: 2%
 
 ---
 
@@ -20,6 +20,13 @@ ht-degree: 1%
 # [!UICONTROL Administration] （RBAC控制）  {#administration}
 
 ![](assets/rbac-controls.png)
+
+>[!IMPORTANT]
+>
+> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。 若要開始使用者移轉，我們要求所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 
+> 在所有客戶都移轉後，本檔案的使用者管理區段將會消失。
+
 
 [!UICONTROL Administration]功能表下的選項可讓您建立Audience Manager使用者，並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
 
@@ -30,6 +37,12 @@ ht-degree: 1%
 ## 建立用戶{#create-users}
 
 <!-- t_create_users.xml -->
+
+>[!IMPORTANT]
+>
+> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/enterprise/using/admin-console.html)。 若要開始使用者移轉，我們要求所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 
+> 在所有客戶都完成移轉後，本檔案的使用者管理區段將會消失。
 
 在[!DNL Audience Manager]中建立使用者，並指定使用者詳細資訊、登入狀態，以及指派使用者至群組。
 
@@ -54,6 +67,12 @@ ht-degree: 1%
 
 ## 建立 [!UICONTROL Group] {#create-group}
 
+>[!IMPORTANT]
+>
+> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/enterprise/using/admin-console.html)。 為開始使用者移轉，我們建議所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 
+> 所有客戶都已移轉後，本節將會消失。
+
 *group*&#x200B;是一組對[!UICONTROL destination]、[!UICONTROL segment]和[!UICONTROL trait]對象共用訪問權限的用戶。 您可以僅將群組限制為單一物件，或讓群組廣泛存取不同物件的組合。
 
 <!-- t_create_groups.xml -->
@@ -61,18 +80,24 @@ ht-degree: 1%
 要建立群組:
 
 1. 按一下 **[!UICONTROL Administration]** > **[!UICONTROL Groups]**.
-1. 按一下![](assets/icon_add.png)開啟[!UICONTROL Group Settings]頁。
-1. 在 [!UICONTROL Group Details]:
+2. 按一下![](assets/icon_add.png)開啟[!UICONTROL Group Settings]頁。
+3. 在 [!UICONTROL Group Details]:
    * 命名群組。
    * 提供簡短的群組說明。
-1. 在[!UICONTROL Group Members]中，按一下&#x200B;**[!UICONTROL Add Users]**&#x200B;選項中的用戶，將其添加到組。
-1. 在[!UICONTROL Group Permissions]中，從&#x200B;**[!UICONTROL Add Object]**&#x200B;中選擇[特徵](../../features/traits/trait-details-page.md)、[區段](../../features/segments/segments-purpose.md)或[目標](../../features/destinations/destinations.md)。
+4. 在[!UICONTROL Group Members]中，按一下&#x200B;**[!UICONTROL Add Users]**&#x200B;選項中的用戶，將其添加到組。
+5. 在[!UICONTROL Group Permissions]中，從&#x200B;**[!UICONTROL Add Object]**&#x200B;中選擇[特徵](../../features/traits/trait-details-page.md)、[區段](../../features/segments/segments-purpose.md)或[目標](../../features/destinations/destinations.md)。
 這會開啟您所選物件的權限視窗。
-1. 選中您希望群組成員擁有的權限的核取方塊。
-1. *（選用）* 指派 [萬用](../../features/administration/administration-overview.md#wild-card-permissions) 字元權限至群組。
-1. 按一下 **[!UICONTROL Save Group]**.
+6. 選中您希望群組成員擁有的權限的核取方塊。
+7. *（選用）* 指派 [萬用](../../features/administration/administration-overview.md#wild-card-permissions) 字元權限至群組。
+8. 按一下 **[!UICONTROL Save Group]**.
 
 ## 瞭解[!UICONTROL Wild Card Permissions] {#wild-card-permissions}
+
+>[!IMPORTANT]
+>
+> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/enterprise/using/admin-console.html)。 為開始使用者移轉，我們建議所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 
+> 所有客戶都已移轉後，本節將會消失。
 
 使用[!UICONTROL Wild Card Permissions]簡化群組權限管理。
 
