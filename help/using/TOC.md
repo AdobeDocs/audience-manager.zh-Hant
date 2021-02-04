@@ -6,10 +6,10 @@ user-guide-title: Audience Manager 使用手冊
 user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 389ffae8d216a4f295a5fe198a27c4d9d48586c6
+source-git-commit: 55cb69bad1f369ed3b58bece54aebdca4b14f7a7
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 93%
+source-wordcount: '1779'
+ht-degree: 92%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 93%
 + 功能{#features}
    + [可定址受眾](features/addressable-audiences.md)
    + 管理{#administration}
+      + [Audience Manager使用者移轉至Admin Console](features/administration/admin-console-migration.md)
       + [管理](features/administration/administration-overview.md)
       + [編輯帳戶設定](features/administration/edit-account-settings.md)
       + [IP 位址模糊化](features/administration/ip-obfuscation.md)
