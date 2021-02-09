@@ -6,9 +6,9 @@ user-guide-title: Audience Manager 使用手冊
 user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
 translation-type: tm+mt
-source-git-commit: 55cb69bad1f369ed3b58bece54aebdca4b14f7a7
+source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1781'
 ht-degree: 92%
 
 ---
@@ -409,6 +409,7 @@ ht-degree: 92%
    + [我們不是 Audience Manager 客戶，但在我們的網站上看到 Audience Manager Javascript 呼叫](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
    + [我是否應在目的地詳細資訊頁面上看到我的 Audience Manager Audience Lab 對應區段？](/help/using/support-issues/should-i-see-audience-lab-mapped-segments-on-the-destination-page.md)
 + 文件更新{#documentation-updates}
+   + [2021 年文件更新](docs-updates/docs-2021.md)
    + [2020 年文件更新](docs-updates/docs-2020.md)
    + [2019 年文件更新](docs-updates/docs-2019.md)
    + [2018 年文件更新](docs-updates/docs-2018.md)
