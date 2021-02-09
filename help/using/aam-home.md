@@ -7,10 +7,10 @@ title: Audience Manager 指南
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: overview
 translation-type: tm+mt
-source-git-commit: 389ffae8d216a4f295a5fe198a27c4d9d48586c6
+source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 97%
+source-wordcount: '652'
+ht-degree: 96%
 
 ---
 
@@ -160,10 +160,8 @@ Audience Manager 為領先業界的線上受眾資料管理服務，本技術文
      <br> 
      <p> <b>最新功能</b> </p> <p> 
      閱讀有關最新 Audience Manager 功能的資訊：</p>
-     <p><ul><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google客戶符合人員型目標</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager外掛程式</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測受眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報表</a></li>
-     <li><a href="/help/using/overview/data-security-and-privacy/data-privacy.md">加州消費者隱私權法案 (CCPA) 支援與隱私權文件編修</a></li>
-     <li><a href="/help/using/features/segments/trait-recommendations.md">由 Adobe Sensei 支援的 Audience Marketplace 資料智慧型建議</a></li>
-     </ul><p>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager使用者移轉至Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google客戶符合人員型目標</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager外掛程式</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測受眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報表</a></li>
+     </ul></p>
     </td>
   </tr> 
  </tbody> 
@@ -209,7 +207,7 @@ Read about the latest Audience Manager features:
       <li id="li_0DB1997FEB87484EBC07E03FD40AA39F"><a href="https://helpx.adobe.com/tw/support/audience-manager.html" format="https" scope="external"> Audience Manager 學習與支援</a> </li> 
      </ul> </p> 
      <br> 
-     <p>另請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/documentation-updates/docs-2020.translate.html">2020 年文件更新</a>。 </p> </td>
+     <p>另請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/documentation-updates/docs-2021.translate.html">2021 年文件更新</a>。 </p> </td>
   </tr> 
  </tbody> 
 </table>
