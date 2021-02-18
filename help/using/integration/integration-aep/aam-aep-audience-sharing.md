@@ -4,12 +4,12 @@ seo-description: 本文說明如何在Audience Manager和Adobe Experience Platfo
 seo-title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 solution: Audience Manager
 title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
-keywords: AEP audience sharing, AEP segments, Platform segments, segment sharing, audience sharing, share segments
+keywords: AEP觀眾分享， AEP區隔，平台區隔，區隔分享，觀眾分享，分享區隔
 feature: Integration with Platform
 translation-type: tm+mt
-source-git-commit: 4bac89ab732f225bd82aceaf9707fda98e796945
+source-git-commit: 62938e95fa9eed3e747fa4dabf8695c5dbefde17
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1504'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段分享到Adobe Experience Platform，反之亦然。 您需要[[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)才能啟用Audience Manager和Adobe Experience Platform之間的觀眾共用。
+Audience Manager和Adobe Experience Platform之間的觀眾分享功能可讓您將Audience Manager特徵和區段共用至Adobe Experience Platform，反之亦然。 您需要[[!DNL Audience Manager Connector]](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/audience-manager.html)才能啟用Audience Manager和Adobe Experience Platform之間的觀眾共用。
 
 您可以使用Experience Platform中的Audience Manager特徵和區段，將Audience Manager資料新增至客戶個人檔案，並從Experience Platform [區段服務](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)獲益。
 
@@ -109,7 +109,7 @@ Audience Manager會在您的區段儲存空間中自動建立名為&#x200B;**Exp
 
 | 項目編號 | 名稱 | 說明 |
 ---------|----------|---------
-| 3 | [!UICONTROL Integration Code] | 整合程式碼對應於Experience Platform中的區段ID。 |
+| 1 | [!UICONTROL Integration Code] | 整合程式碼對應於Experience Platform中的區段ID。 |
 | 2 | [!UICONTROL Data Source] | 自動建立。 從Experience Platform區段自動建立的所有特徵和區段都會儲存在資料來源&#x200B;**[!DNL Adobe Experience Platform Audience Sharing]**&#x200B;中。 |
 | 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指出自動建立的區段會遵循在Experience Platform中設定的合併原則。 |
 | 4 | [!UICONTROL Segment Rule] | 區段由[Traits區段](#aep-segments-as-aam-traits)中描述的特徵組成。 |
@@ -162,7 +162,7 @@ Audience Manager每天會更新介面中的報表數目一次。   此更新的�
 
 ### Experience Platform中的細分構成
 
-Adobe Experience Platform與Audience Manager的整合為所有客戶共用許多標準[識別名稱空間](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types):ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID等。 如果您的Experience Platform區段使用其中任一項作為合格描述檔的主要識別，則這些描述檔會計入Audience Manager特徵和區段。
+Adobe Experience Platform與Audience Manager的整合為所有客戶共用許多標準[識別名稱空間](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types):ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID。 如果您的Experience Platform區段使用其中任一項作為合格描述檔的主要識別，則這些描述檔會計入Audience Manager特徵和區段。
 
 此外，如果符合下列條件，Audience Manager可針對您在Experience Platform區段中使用的任何自訂身分名稱空間註冊傳入的實現：
 * 身分標示為主&#x200B;*和*
