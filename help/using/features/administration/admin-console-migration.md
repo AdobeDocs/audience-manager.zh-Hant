@@ -7,9 +7,9 @@ solution: Audience Manager
 title: Audience Manager使用者移轉至Admin Console
 feature: Administration
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 2e01abab2616daccd7581cdaa18417650951d139
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 |---|---|
 | 單一登入 跨解決方案 | [!DNL Audience Manager] 使用者可以使用 [!DNL Experience Cloud] 其或登入和所有其他解決 [!DNL Adobe ID] 方案 [!DNL Enterprise ID]。此登入可讓您存取整合式解決方案和[!DNL Experience Cloud]核心服務。 移轉後，嘗試透過舊版登入(`bank.demdex.com`)登入的使用者將會重新導向至`experiencecloud.adobe.com`。 |
 | 管理使用者和群組 | 移轉完成後，[!DNL Audience Manager]管理員將只管理[[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/)中的用戶和組。 |
-| 管理產品與服務 | 在[[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/)中，管理員可以： <ul><li>建立、更新和移除使用者</li><li>授與解決方案與服務的存取權</li><li>授予使用者權限</li></ul> |
+| 管理產品與服務 | 在[[!DNL Admin Console]](http://adminconsole.adobe.com/enterprise/)中，管理員可以： <ul><li>建立、更新和移除使用者</li><li>授與解決方案與服務的存取權</li></ul> |
 
 為方便使用者移轉，我們要求所有[!DNL Audience Manager]管理員依照本文所述的步驟，盡快將其使用者帳戶移轉至[Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)。
 
@@ -48,6 +48,6 @@ Audience Manager管理員應依照下列步驟將使用者移轉至[!DNL Admin C
 
 使用者和管理員在Audience Manager使用者移轉時應牢記下列考量：
 
-* 在Admin Console中建立新的使用者帳戶後，其舊有使用者帳戶的現有權限將會自動保留。 管理員不需要在[!DNL Admin Console]中指派新權限。
-* 管理員不需要停用舊版使用者帳戶。 舊用戶帳戶將自動合併到已遷移的用戶帳戶中。
+* 在Admin Console中建立新使用者帳戶後，其舊版使用者帳戶的現有權限仍然會套用。
 * 使用者權限的更新仍會從[!DNL Audience Manager]管理。 [!DNL Admin Console]僅涵蓋使用者和群組管理。
+* 管理員不需要停用舊版使用者帳戶。 舊用戶帳戶將自動合併到已遷移的用戶帳戶中。
