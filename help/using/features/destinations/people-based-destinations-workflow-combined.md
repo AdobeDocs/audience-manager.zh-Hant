@@ -4,11 +4,11 @@ seo-description: '本頁包含如何結合離線CRM資料和您在Audience Manag
 seo-title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
 solution: Audience Manager
 title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
-feature: People-Based Destinations
+feature: 以人物為基礎的目的地
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 6e3a06da8149c91a9192b5b3ee582e46fbb1790c
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 7%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
-> 如需如何將離線資料匯入Audience Manager以用於人員型目標的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
+> 如需如何將離線資料匯入Audience Manager以進行人員型目標的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
 
 ## 步驟2 —— 透過檔案式ID同步化將DPUUID與雜湊的電子郵件地址比對{#match-ids-emails}
 
@@ -86,7 +86,7 @@ ht-degree: 7%
 
  
 
-您最多可以將10個雜湊電子郵件地址連結至單一[DPUUID](../../reference/ids-in-aam.md)。 若要這麼做，請在同步檔案中以逗號分隔雜湊的電子郵件地址。
+您最多可以將10個雜湊電子郵件地址連結至單一[DPUUID](../../reference/ids-in-aam.md)。 為此，請在同步檔案內使用`<TAB>`分隔散列電子郵件地址。
 
 在我們的範例中，您現在有兩個資料來源。
 
