@@ -38,7 +38,7 @@ ht-degree: 92%
 + 功能{#features}
    + [可定址受眾](features/addressable-audiences.md)
    + 管理{#administration}
-      + [Audience Manager使用者移轉至Admin Console](features/administration/admin-console-migration.md)
+      + [Audience Manager用戶遷移至Admin Console](features/administration/admin-console-migration.md)
       + [管理](features/administration/administration-overview.md)
       + [編輯帳戶設定](features/administration/edit-account-settings.md)
       + [IP 位址模糊化](features/administration/ip-obfuscation.md)
@@ -182,7 +182,7 @@ ht-degree: 92%
       + [受眾最佳化報表](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + 廣告商適用的 Audience Optimization {#audience-optimization-advertisers}
          + [廣告商適用的 Audience Optimization 概述](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
-         + [將Google Campaign Manager資料檔案匯入Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+         + [將Google促銷活動管理員資料檔案匯入Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
          + [區段成效報表](reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)
          + [趨勢分析和大量分析報表](reporting/audience-optimization-reports/aor-advertisers/trend-analysis-volume-analysis.md)
          + [最佳頻率報表](reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)
@@ -297,7 +297,7 @@ ht-degree: 92%
       + [Facebook WCA 整合](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [OAS 作為 Audience Manager 目的地](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX 作為 Audience Manager 目的地](integration/integrating-third-party/openx-destination.md)
-      + [Google Ad Manager（之前稱為DFP）做為Audience Manager目標](integration/aam-dfp.md)
+      + [Google Ad Manager（之前稱為DFP）做為Audience Manager目的地](integration/aam-dfp.md)
       + [將區段傳送至 Google AdWords 再行銷清單](integration/integrating-third-party/rlsa-integration.md)
    + [實作 Audience Manager](integration/implement-audience-manager.md)
    + 媒體資料整合{#media-data-integration}
@@ -339,12 +339,12 @@ ht-degree: 92%
          + [傳入處理後傳送給合作夥伴的範例訊息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 與 Adobe Experience Platform 的整合 {#integration-experience-platform}
-      + [與Audience Manager和其他Experience Cloud解決方案共用Experience Platform區段](integration/integration-aep/aam-aep-audience-sharing.md)
+      + [Experience Platform分部與Audience Manager及其他Experience Cloud解決方案共用](integration/integration-aep/aam-aep-audience-sharing.md)
    + 與其他 Experience Cloud 解決方案的整合 {#integration-other-solutions}
       + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從 Adobe Analytics 轉送至 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [將Adobe Analytics區段發佈至Experience Cloud（開啟Adobe Analytics檔案）](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/audiences/t-publish-audience-segment.translate.html)
-      + [將Audience Manager與Adobe Campaign整合（開啟Adobe Campaign檔案）](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
+      + [發佈Adobe Analytics區段至Experience Cloud(開啟Adobe Analytics檔案)](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/audiences/t-publish-audience-segment.translate.html)
+      + [將Audience Manager與Adobe Campaign整合(開啟Adobe Campaign檔案)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
    + [Amazon S3：關於](reference/amazon-s3.md)
