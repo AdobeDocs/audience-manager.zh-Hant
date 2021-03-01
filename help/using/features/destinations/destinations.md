@@ -1,24 +1,24 @@
 ---
 description: 在 Audience Manager 中，目的地是您想要與其共用資料的任何協力廠商系統 (廣告伺服器、DSP 和廣告網路等)任何其他系統 (廣告伺服器、DSP、廣告網路等)。目的地產生器是您用來建立和管理 Cookie、URL 或伺服器對伺服器目的地的工具。
-keywords: integration code, destination, destination overview, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination, destination
-landing-page-description: A destination is any third-party system, such as ad server or DSP, with which to share data. Use Destination Builder to create and manage cookie, URL, or server-to-server destinations.
+keywords: 整合程式碼，目標，目標概觀，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標，目標
+landing-page-description: 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
 seo-title: 目的地
 solution: Audience Manager
 title: 目的地
 uuid: 5c7dbdec-f73f-46fe-9f12-7685e8d7334f
-feature: Destination Basics
+feature: 目標基礎
 translation-type: tm+mt
 source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 11%
+source-wordcount: '541'
+ht-degree: 15%
 
 ---
 
 
 # [!UICONTROL Destinations] 概述 {#destinations}
 
-在Audience Manager中，[!UICONTROL destination]是任何協力廠商系統（廣告伺服器、[!DNL DSP]廣告網路等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 是您用來建立和管理、 [!UICONTROL cookie]或 [!DNL URL]的工 [!UICONTROL server-to-server destinations]具
+在Audience Manager中，[!UICONTROL destination]是任何第三方系統（廣告伺服器、[!DNL DSP]廣告網路等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 是您用來建立和管理、 [!UICONTROL cookie]或 [!DNL URL]的工 [!UICONTROL server-to-server destinations]具
 
 ## 用途和優勢{#purposes}
 
@@ -26,7 +26,7 @@ ht-degree: 11%
 
 [!UICONTROL Destinations] 並可 [!UICONTROL Destination Builder] 讓您建立 [!UICONTROL destinations] 細分使用者的相關資訊，並傳送給您的資料合作夥伴。這有助於：
 
-* **保護資料值：** 您只能分享符合資格使用者的 [!UICONTROL destination]特 [!UICONTROL Destination Builder] 定資訊，而不是將所有使用者資料傳送至。
+* **Protect資料值：** 您不必將所有使用者資料傳送至某個 [!UICONTROL destination], [!UICONTROL Destination Builder] 而只能分享合格使用者的特定資訊。
 * **對您的資料採取行動：將資** 料傳送至合作夥伴 [!UICONTROL destination] 可協助他們快速開發並鎖定合格的受眾細分。
 * **降低技術開銷：** 商業使用者可在介面 [!UICONTROL destinations] 中安全設 [!UICONTROL Destination Builder] 定。這有助於縮短部署前測試所需的時間。 使用[!UICONTROL Destination Builder]，您可以隨著業務需求的變更，建立、管理和刪除[!UICONTROL destinations]，而不需長時間的開發週期。
 
