@@ -1,16 +1,16 @@
 ---
-description: 說明 Audience Manager 區段的元件，用來設定對象資格標準的運算式，以及在事件呼叫中如何傳輸資料。
-landing-page-description: Describes components of a segment, expressions used to set audience qualification criteria, and how data is transmitted.
+description: 說明 Audience Manager 區段的元件、用來設定對象資格標準的運算式，以及在事件呼叫中如何傳輸資料。
+landing-page-description: 說明區段的元件、用來設定對象資格標準的運算式，以及如何傳輸資料。
 seo-title: 訊號、特徵和區段
 solution: Audience Manager
 title: 訊號、特徵和區段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
-feature: reference
+feature: 參考
 translation-type: tm+mt
 source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 11%
+source-wordcount: '367'
+ht-degree: 15%
 
 ---
 
