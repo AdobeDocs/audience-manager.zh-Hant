@@ -9,7 +9,7 @@ feature: API
 translation-type: tm+mt
 source-git-commit: ab8745a8ba24154793201893a39a039b5a098833
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1861'
 ht-degree: 4%
 
 ---
@@ -27,10 +27,10 @@ ht-degree: 4%
 
 <!-- aam-api-requirements.xml -->
 
-使用[Audience Manager API](https://bank.demdex.com/portal/swagger/index.html#/)程式碼時，請注意下列事項：
+使用[Audience ManagerAPI](https://bank.demdex.com/portal/swagger/index.html#/)代碼時，請注意以下事項：
 
 * **請求參數：除** 非另有指定，否則所有請求參數都是必要的。
-* **請求標題**:使用 [Adobe I/](https://www.adobe.io/) Otoken時，您必須提供頁 `x-api-key` 首。您可依照[服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)頁面中的指示，取得[!DNL API]金鑰。
+* **請求標題**:使用 [AdobeI/](https://www.adobe.io/) Otoken時，您必須提供 `x-api-key` 標題。您可依照[服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)頁面中的指示，取得[!DNL API]金鑰。
 * **[!DNL JSON]內容類型：** 指定 `content-type: application/json`  **  `accept: application/json` 並在程式碼中。
 * **請求和回應：以** 正確格式化的物件傳送 [!DNL JSON] 請求。[!DNL Audience Manager] 以格式化 [!DNL JSON] 資料回應。伺服器回應可包含要求的資料、狀態碼或兩者。
 * **存取：** 您的 [!DNL Audience Manager] 顧問會提供您用戶端ID和金鑰，讓您提出 [!DNL API] 要求。
@@ -40,7 +40,7 @@ ht-degree: 4%
 
 [!DNL Audience Manager] [!DNL REST APIs]支援兩種驗證方法。
 
-* [JWT（服務帳戶）](#jwt) 使用 [Adobe I/O驗證](https://www.adobe.io/)。[!DNL Adobe I/O] 是Adobe的開發人員生態系統和社群。它包含所有Adobe產品的[Adobe I/O開發人員工具和API](https://www.adobe.io/apis/experienceplatform.html)和[ API](https://www.adobe.io/apis.html)。 這是設定和使用[!DNL Adobe] [!DNL APIs]的建議方式。
+* [JWT（服務帳戶）](#jwt) 驗證 [Adobe I/O](https://www.adobe.io/)。[!DNL Adobe I/O] 是Adobe的開發人員生態系統和社群。它包含[Adobe I/O開發人員工具，以及所有Adobe產品的](https://www.adobe.io/apis/experienceplatform.html)和[API。 ](https://www.adobe.io/apis.html)這是設定和使用[!DNL Adobe] [!DNL APIs]的建議方式。
 * [OAuth驗證（已過時）](#oauth)。雖然此方法已不再提倡，但具有現有[!DNL OAuth]整合的客戶仍可繼續使用此方法。
 
 >[!IMPORTANT]
@@ -49,21 +49,21 @@ ht-degree: 4%
 
 ## [!DNL JWT] ([!DNL Service Account])使用Adobe I/O的驗證  {#jwt}
 
-### Adobe I/O概觀{#adobeio}
+### Adobe I/O概述{#adobeio}
 
-[!DNL Adobe I/O] 是Adobe的開發人員生態系統和社群。它包含所有Adobe產品的[Adobe I/O開發人員工具和API](https://www.adobe.io/apis/experienceplatform.html)和[ API](https://www.adobe.io/apis.html)。
+[!DNL Adobe I/O] 是Adobe的開發人員生態系統和社群。它包含[Adobe I/O開發人員工具，以及所有Adobe產品的](https://www.adobe.io/apis/experienceplatform.html)和[API。](https://www.adobe.io/apis.html)
 
 這是設定和使用[!DNL Adobe] [!DNL APIs]的建議方式。
 
 ### 必要條件 {#prerequisites}
 
-在設定[!DNL JWT]驗證之前，請務必存取[Adobe I/O](https://www.adobe.io/)中的[Adobe Developer Console](https://console.adobe.io/)。 請洽詢您的組織管理員以取得存取要求。
+在配置[!DNL JWT]驗證之前，請務必存取[Adobe](https://www.adobe.io/)中的[Adobe I/O開發人員控制台](https://console.adobe.io/)。 請洽詢您的組織管理員以取得存取要求。
 
 ### 驗證{#auth}
 
 請遵循下列步驟，使用[!DNL Adobe I/O]配置[!DNL JWT (Service Account)]驗證：
 
-1. 登入[Adobe Developer Console](https://console.adobe.io/)。
+1. 登入[Adobe開發人員主控台](https://console.adobe.io/)。
 1. 按照[服務帳戶連接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)中的步驟操作。
    * 在[步驟2:使用服務帳戶驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)將API新增至您的專案，請選擇[!DNL Audience Manager] [!DNL API]選項。
 1. 根據[步驟3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)中的指示進行第一個[!DNL API]呼叫，以嘗試連接。
@@ -190,7 +190,7 @@ ht-degree: 4%
 | 參數 | 說明 |
 |--- |--- |
 | `page` | 依頁碼傳回結果。 編號從0開始。 |
-| `pageSize` | 設定請求傳回的回應結果數目（預設為10）。 |
+| `pageSize` | 設定請求傳回的回應結果數目（預設值為10）。 |
 | `sortBy` | 根據指定的[!DNL JSON]屬性排序並返回結果。 |
 | `descending` | 以遞減順序排序和傳回結果。 `ascending` 為預設值。 |
 | `search` | 根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`。  您可以搜尋&quot;[!DNL get all]&quot;方法傳回的任何值。 |
@@ -265,7 +265,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 ## 版本 {#versions}
 
-這些[!DNL API]的新版本會定期發行。 新版本會遞增[!DNL API]版本號碼。 版本號在請求[!DNL URL]中被引用為`v<version number>`，如下例所示：
+這些[!DNL API]的新版本會定期發行。 新版本會遞增[!DNL API]版本號碼。 在請求[!DNL URL]中，版本號被引用為`v<version number>`，如下例所示：
 
 `https://<host>/v1/...`
 
