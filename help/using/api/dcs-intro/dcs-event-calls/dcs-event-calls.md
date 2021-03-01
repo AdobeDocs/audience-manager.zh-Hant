@@ -9,7 +9,7 @@ feature: DCS
 translation-type: tm+mt
 source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '310'
 ht-degree: 59%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 59%
 
 # DCS 事件呼叫 API {#dcs-event-call-apis}
 
-事件呼叫會將資訊傳送至[!DNL URL]字串中的[!DNL DCS]。 在典型的Audience Manager部署中，客戶會使用我們的[!DNL JavaScript]資料收集代碼([!UICONTROL DIL])將資料傳送至[!DNL DCS]。 但是，有時客戶無法將[!DNL JavaScript]程式碼放在其頁面上。 如果公司政策或其他技術問題無法將我們的[!DNL JavaScript]程式碼放在您的頁面上，您仍可與Audience Manager搭配這些事件呼叫[!DNL API]來傳送和傳回[!DNL DCS]的資料。
+事件呼叫會將資訊傳送至[!DNL URL]字串中的[!DNL DCS]。 在典型的Audience Manager部署中，客戶使用我們的[!DNL JavaScript]資料收集代碼([!UICONTROL DIL])將資料傳送至[!DNL DCS]。 但是，有時客戶無法將[!DNL JavaScript]程式碼放在其頁面上。 如果公司政策或其他技術問題導致您無法將[!DNL JavaScript]程式碼放在您的頁面上，您仍可與Audience Manager合作，透過這些事件呼叫[!DNL API]來傳送和傳回[!DNL DCS]的資料。
 
 ## 快速入門 {#dcs-getting-started}
 
