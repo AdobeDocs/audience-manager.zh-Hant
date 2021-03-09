@@ -5,11 +5,11 @@ seo-title: 區段產生器
 solution: Audience Manager
 title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
-feature: Segments
+feature: 區段
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: 9e0c936ba514e517bcbd7572420118293f9a791f
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1083'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## 視訊展示
 
-首先，觀看Audience Manager影片[「建立區段」。 ](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)視訊會逐步帶您進行區段建立程式。 請閱讀以下章節以取得詳細資訊。
+首先，觀看「在Audience Manager視訊中建立區段」影片](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)。 [視訊會逐步帶您進行區段建立程式。 請閱讀以下章節以取得詳細資訊。
 
 ## 建立 [!UICONTROL Segment] {#create-segment}
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
    * 命名[!UICONTROL segment]。 [!UICONTROL segment]名稱的最大長度為255個字元。
    * 設定[!UICONTROL segment]狀態（預設為作用中）。
-   * 選擇[!UICONTROL data source]。 使用第一個下拉式選單，在Audience Manager [!UICONTROL data sources]、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單來選擇您的[!UICONTROL data source]。 如果您未使用Adobe Analytics報表套裝，[!UICONTROL data source]類型選擇器會停用，並預設為僅限Audience Manager資料來源。
+   * 選擇[!UICONTROL data source]。 使用第一個下拉式選單，在Audience Manager[!UICONTROL data sources]、Adobe Analytics報表套裝或兩者之間進行篩選。 然後，使用第二個下拉式選單選擇您的[!UICONTROL data source]。 如果您未使用Adobe Analytics報表套裝，[!UICONTROL data source]類型選擇器會停用，且預設為僅Audience Manager資料來源。
    * 選擇[!UICONTROL profile merge rule]以用於[!UICONTROL segment]資格。
    * 將[!UICONTROL segment]分配給儲存資料夾。
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 請觀看以下影片，詳細瞭解跨裝置量度的運作方式。
 
->[!VIDEO](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://video.tv.adobe.com/v/33445)
 
 ## [!UICONTROL Segment Builder] 控制項： [!UICONTROL Basic Information] 章節  {#segment-builder-controls-basics}
 
@@ -115,7 +115,7 @@ ht-degree: 2%
 | **[!UICONTROL Name]** | 為區段指定簡短的邏輯名稱，以說明其功能或用途。 避免縮寫和特殊字元。 區段名稱的最大長度為255個字元。 |
 | **[!UICONTROL Description]** | 欄位，以取得區段的其他說明性資訊。 |
 | **[!UICONTROL Integration Code]** | 使用者定義ID或其他公司特定資訊的欄位。 |
-| **[!UICONTROL Data Source]** | 將區段與特定資料提供者關聯。 <br> 使用第一個下拉式選單，在Audience Manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。然後，使用第二個下拉式選單來選擇您的資料來源。 <br> 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，並預設為僅限Audience Manager資料來源。 |
+| **[!UICONTROL Data Source]** | 將區段與特定資料提供者關聯。 <br> 使用第一個下拉式選單，在Audience Manager資料來源、Adobe Analytics報表套裝或兩者之間進行篩選。然後，使用第二個下拉式選單來選擇您的資料來源。 <br> 如果您未使用Adobe Analytics報表套裝，資料來源類型選擇器會停用，且預設為僅Audience Manager資料來源。 |
 | **[!UICONTROL Profile Merge Rule]** | 選擇用於區段限定的描述檔合併規則。 |
 | **[!UICONTROL Status]** | 啟動或停用區段（預設為活動）。 |
 | **資料夾儲存** | 確定段所屬的儲存資料夾。 |
@@ -133,8 +133,8 @@ ht-degree: 2%
 | **[!UICONTROL Basic View]** | 本節提供視覺控制項，可讓您： <ul><li>建立新內容並管理現有的[!UICONTROL segments]。</li><li>從[!UICONTROL segment]移除[!UICONTROL traits]。</li><li>最多可將50（最大值）[!UICONTROL traits]加到[!UICONTROL segment]。</li><li>拖放[!UICONTROL traits]以建立新群組。</li><li>在[!UICONTROL segment]中查看[!UICONTROL traits]和[!UICONTROL trait]組。</li><li>使用布林運算式、比較運算子和時近／頻率設定來設定限定條件。</li></ul> |
 | **[!UICONTROL Code View]** | 開啟開發環境，讓您使用程式碼來建立和管理[!UICONTROL traits]、群組和資格要求，而非使用視覺化介面。 如果您的[!UICONTROL segments]: <ul><li>在個別[!UICONTROL segment]中包含50個以上的[!UICONTROL traits]。 注意：[!UICONTROL Segments]限制為5000 [!UICONTROL traits]（最大值）。</li><li>包含許多[!UICONTROL trait]群組。</li><li>具備複雜的資格要求。</li></ul> |
 | 搜尋 | 協助您找到要新增至[!UICONTROL segment]的[!UICONTROL traits]。 |
-| 建議 | 從您訂閱的第一方[!UICONTROL traits]和[!UICONTROL Audience Marketplace]資料饋送，取得類似[!UICONTROL traits]的即時建議。 將這些建議新增至[!UICONTROL segment]規則，以擴充您的觀眾。 閱讀[特徵建議](trait-recommendations.md)的更多資訊。 |
-| **[!UICONTROL Marketplace Recommendations]** | 從您未訂閱的[!UICONTROL Audience Marketplace]資料饋送，取得類似[!UICONTROL traits]的即時建議。 閱讀[特徵建議](trait-recommendations.md)的更多資訊。 |
+| 建議 | 從您訂閱的第一方[!UICONTROL traits]和[!UICONTROL Audience Marketplace]資料饋送，取得類似[!UICONTROL traits]的即時建議。 將這些建議新增至[!UICONTROL segment]規則，以擴充您的觀眾。 閱讀[特徵Recommendations](trait-recommendations.md)的更多資訊。 |
+| **[!UICONTROL Marketplace Recommendations]** | 從您未訂閱的[!UICONTROL Audience Marketplace]資料饋送，取得類似[!UICONTROL traits]的即時建議。 閱讀[特徵Recommendations](trait-recommendations.md)的更多資訊。 |
 | 實際和估計[!UICONTROL Segment]大小資料 | 請參閱[區段產生器的特徵和區段母體資料](segment-builder-data.md)。 |
 
 ## 從[!UICONTROL Segment] {#remove-traits}移除[!UICONTROL Traits]
