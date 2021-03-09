@@ -4,12 +4,12 @@ seo-description: '以人物為基礎的目的地相關常見問題解答。  '
 seo-title: 以人物為基礎的目的地常見問題集
 solution: Audience Manager
 title: 以人物為基礎的目的地常見問題集
-feature: People-Based Destinations
+feature: 以人物為基礎的目的地
 translation-type: tm+mt
-source-git-commit: 6e55d8bc5fe2c5cdcdd36107593215288d491331
+source-git-commit: eb998042acb46fef2b0e407b3565d8ba4769f0bb
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 97%
+source-wordcount: '1171'
+ht-degree: 94%
 
 ---
 
@@ -78,6 +78,10 @@ Audience Manager 不會擷取原始電子郵件地址，且無法驗證雜湊是
 **我會收集客戶的工作電子郵件地址，這些地址與社交網路中使用的個人電子郵件地址不同。如何在多個電子郵件地址間識別身分？**
 
 Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並傳送至目的地平台，但電子郵件地址需透過同步檔案擷取。Audience Manager 將電子郵件地址傳送至目的地平台後，平台必須自行比對這些電子郵件地址與自己的使用者群。某些平台可能會有其他電子郵件地址圖表，用於將 Audience Manager 所傳來的地址與使用者設定檔進行比對。
+
+**我可以用 [!DNL People-Based Destinations] 嗎 [!DNL Audience Lab]?**
+
+不會。目前，所有[!DNL People-Based Destinations]目標都從[!DNL Audience Lab]中排除。 由於[!DNL People-Based Destinations]和需求端平台使用不同的ID，您無法測試和評估績效，而觀眾會平均分割。
 
 ## 資料匯出控制 {#data-export-controls}
 
