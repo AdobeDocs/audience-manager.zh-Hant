@@ -4,10 +4,11 @@ solution: Audience Manager
 title: 發出伺服器對伺服器 DCS API 呼叫
 uuid: bdfe3430-e27f-4a5c-88d9-ae164d28f601
 feature: DCS
+description: 進行伺服器對伺服器DCS API呼叫時的呼叫語法、範例和參數
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 4dbe9a838470d1fe54538df12605a0e0aa1e0510
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '356'
 ht-degree: 9%
 
 ---
@@ -49,7 +50,7 @@ ht-degree: 9%
    <td colname="col1"> <p><code> <i>domain alias</i>.demdex.net</code> </p> </td> 
    <td colname="col2"> <p>此部分呼叫包含： </p> <p> 
      <ul id="ul_3EDA9C7BA6794D06BCB07A75A9BD2372"> 
-      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9"><span class="keyword"> Audience Manager</span>指派的網域別名（例如<i><code> my_domain.demdex.net</code></i>）。 </li> 
+      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9"><span class="keyword">Audience Manager</span>（例如<i><code> my_domain.demdex.net</code></i>）指派的域別名。 </li> 
       <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">目標域，始終為<i><code> demdex.net</code></i>。 請參閱<a href="../../../reference/demdex-calls.md">瞭解向 Demdex 網域進行的呼叫</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -67,11 +68,11 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_uuid= <i>Audience Manager user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>這是唯一的使用者ID金鑰，將<span class="keyword"> Audience Manager</span>使用者ID值保存在金鑰值對中。 </p> <p>如果您要傳入<span class="keyword"> Audience Manager</span>使用者ID，請使用<code><i>d_uuid</i></code>。 </p> </td>
+   <td colname="col2"> <p>這是唯一的用戶ID密鑰，它將<span class="keyword">Audience Manager</span>用戶ID值保存在密鑰值對中。 </p> <p>如果您要傳入<span class="keyword">Audience Manager</span>使用者ID，請使用<code><i>d_uuid</i></code>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p><code>d_mid=<i>Experience Cloud user ID</i></code> </p> </td> 
-   <td colname="col2"> <p>這是唯一的使用者ID金鑰，將<span class="keyword"> Experience Cloud</span>使用者ID值保存在金鑰值對中。 另請參閱<a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie">從ID服務Cookie</a>取得使用者ID。 </p> <p>如果您要傳入從<span class="keyword"> Experience Cloud</span> ID服務擷取的<span class="keyword"> Experience Cloud</span> ID，請使用<i><code> d_mid</code></i>。 </p> </td> 
+   <td colname="col2"> <p>這是唯一的用戶ID密鑰，它將<span class="keyword">Experience Cloud</span>用戶ID值保存在密鑰值對中。 另請參閱<a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#get-user-ids-from-service-cookie">從ID服務Cookie</a>取得使用者ID。 </p> <p>如果要傳入從<span class="keyword">Experience Cloud</span> ID服務中捕獲的<span class="keyword">Experience Cloud</span> ID，請使用<i><code> d_mid</code></i>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
