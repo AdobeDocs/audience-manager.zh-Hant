@@ -5,12 +5,12 @@ seo-title: ID 同步檔案的名稱和內容要求
 solution: Audience Manager
 title: ID 同步檔案的名稱和內容要求
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
-feature: Inbound Data Transfers
+feature: 傳入資料傳輸
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 02c951f63d8ebeafaf107c4cb9213e9efdb1eafb
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 7%
+source-wordcount: '840'
+ht-degree: 6%
 
 ---
 
@@ -100,9 +100,17 @@ ID檔案的內容包含下列元素：
 abc123 def456 ghi789 xyz987
 ```
 
+### 檔案內容注意事項{#considerations}
+
+建立傳入檔案時，請確定第一欄僅填入裝置ID，例如[!DNL AAM UUID]、[!DNL GAID]、[!DNL IDFA]等。 請參閱Audience Manager](../../../reference/ids-in-aam.md)中的[ ID索引，以取得Audience Manager支援的ID的詳細說明。
+
+>[!IMPORTANT]
+>
+>請勿在第一欄使用[DPUUIDs](../../../reference/ids-in-aam.md)。 這樣做會導致同步不正確。
+
 ## 同步匹配DPUUID與UUID {#sync-matches-dpuuids-uuids}
 
-ID同步檔案的用途是從您自己的Data Sources將[DPUUID](../../../reference/ids-in-aam.md)與[!DNL Audience Manager] UUID同步。 同步將主[!DNL DPID]及其相關[!DNL DPID]的[!DNL DPUUID]映射到[!DNL Audience Manager] [!DNL UUID]。將ID放在檔案名稱和內文中的位置，會決定這些識別碼如何彼此對應。 例如，請取下列兩個範例檔案：
+ID同步檔案的用途是從您自己的Data Sources將[DPUUID](../../../reference/ids-in-aam.md)與[!DNL Audience Manager] UUID同步。 同步將[!DNL DPUUID]s從主[!DNL DPID]及其相關[!DNL DPID]s映射到[!DNL Audience Manager] [!DNL UUID]s。將ID放在檔案名稱和內文中的位置，會決定這些識別碼如何彼此對應。 例如，請取下列兩個範例檔案：
 
 * **檔案1:** `adobe_id_0_12345_1476312152.sync`
 
@@ -114,7 +122,7 @@ ID同步檔案的用途是從您自己的Data Sources將[DPUUID](../../../refere
 
 **檔案1** ( [下載範例檔案](assets/adobe_id_0_12345_1476312152.sync))
 
-| DPID 0 = Adobe Audience Manager UUID | DPID 12345 |
+| DPID 0 =Adobe Audience ManagerUUID | DPID 12345 |
 |---|---|
 | 68079982765673198504052656074456196039 | XYZ3017D_2kzkTOXkFYIAgwbajoqWRcqkXl-Trj6E4njaMR38 |
 | 67412682083419957253870443620307584 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 |
@@ -135,7 +143,7 @@ ID同步檔案的用途是從您自己的Data Sources將[DPUUID](../../../refere
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-步驟2:在步驟1中，來自[!DNL DPID] 12345的[!DNL DPUUID]s與Audience Manager [!DNL UUID]s同步。此ID同步的作用是從[!DNL DPID] 67890將[!DNL DPUUID]s與步驟1的Audience Manager [!DNL UUID]s同步。
+步驟2:在步驟1中，來自[!DNL DPID] 12345的[!DNL DPUUID]s與Audience Manager[!DNL UUID]s同步。此ID同步將從[!DNL DPID] 67890將[!DNL DPUUID]s與步驟1的Audience Manager[!DNL UUID]s同步。
 
 <br/>
 
