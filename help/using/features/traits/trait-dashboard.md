@@ -5,19 +5,19 @@ seo-title: 特徵控制面板
 solution: Audience Manager
 title: 特徵控制面板
 uuid: 31b8f958-f67d-4af2-8d78-e37e2dfe810d
-feature: Traits
+feature: 特徵
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 4%
+source-wordcount: '127'
+ht-degree: 5%
 
 ---
 
 
 # 特徵控制面板 {#traits-dashboard}
 
-[Traits儀表板](https://bank.demdex.com/portal/Traits/Traits.ddx#show/list)是用於管理特徵的集中式工作區。 導覽至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**，即可看到[!UICONTROL Traits]控制面板。
+特徵儀表板是用於管理特徵的集中式工作區。 導覽至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**，即可看到[!UICONTROL Traits]控制面板。
 
 ![](assets/traits-dashboard.png)
 
