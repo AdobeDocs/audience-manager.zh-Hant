@@ -7,9 +7,9 @@ title: ID 同步檔案的名稱和內容要求
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 feature: 傳入資料傳輸
 translation-type: tm+mt
-source-git-commit: 02c951f63d8ebeafaf107c4cb9213e9efdb1eafb
+source-git-commit: 67ba527ff8b06ca4f5515ffd1a9114acfabadecb
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '867'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ ID檔案名稱包含下列必要和選用元素：
   </tr> 
   <tr> 
    <td colname="col1"><code><i>MASTERDPID</i></code> </td> 
-   <td colname="col2"> 主資料提供者ID是檔案名稱中DPID的父ID。 此外，資料檔案中的第一個使用者ID對應主ID。 後續的DPID是屬於主要的其他識別碼。 同步會將檔案名稱中的DPID對應至檔案中的UUID。 </td> 
+   <td colname="col2"> <p>主資料提供者ID是檔案名稱中DPID的父ID。 此外，資料檔案中的第一個使用者ID對應主ID。 後續的DPID是屬於主要的其他識別碼。 同步會將檔案名稱中的DPID對應至檔案中的UUID。</p> <p>此DPID只能包含裝置ID,AAM例如UUID、GAID、IDFA等。 它不能包含DPUUID。 這樣做會導致同步不正確。</p>  </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DPID</i></code> </p> </td> 
