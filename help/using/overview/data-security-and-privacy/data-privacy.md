@@ -5,12 +5,12 @@ seo-title: 資料隱私權概述
 solution: Audience Manager
 title: 資料隱私權概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
-feature: data governance & privacy
+feature: 資料管理與隱私
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 78%
+source-wordcount: '489'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 78%
 
 ## [!DNL GDPR] {#gdpr}
 
-[一般資料保護規範 (GDPR)](https://eugdpr.org/) 為歐盟成員國引進了許多新的資料隱私權，包括&#x200B;**存取權**&#x200B;和&#x200B;**被遺忘權**。這表示您的企業收集了個人資料的[!DNL EU]公民可隨時要求存取或刪除其資料。 若未能遵照這些請求採取動作，貴組織可能需支付數百萬美元的罰款。
+[一般資料保護規範 (GDPR)](https://gdpr.eu/data-privacy/) 為歐盟成員國引進了許多新的資料隱私權，包括&#x200B;**存取權**&#x200B;和&#x200B;**被遺忘權**。這表示您的企業收集了個人資料的[!DNL EU]公民可隨時要求存取或刪除其資料。 若未能遵照這些請求採取動作，貴組織可能需支付數百萬美元的罰款。
 
 為符合[!DNL GDPR],[!DNL Audience Manager]支援資料存取並刪除[要求](data-privacy-requests.md)。
 
