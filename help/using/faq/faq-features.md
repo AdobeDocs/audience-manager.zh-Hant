@@ -1,17 +1,17 @@
 ---
 description: 產品與功能的相關常見疑問與問題。
-keywords: audience manager cookies
+keywords: audience Manager Cookie
 seo-description: 產品與功能的相關常見疑問與問題。
 seo-title: 產品特色與功能常見問題集
 solution: Audience Manager
 title: 產品特色與功能常見問題集
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: Overview
+feature: 概述
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 91%
+source-wordcount: '627'
+ht-degree: 89%
 
 ---
 
@@ -50,7 +50,7 @@ faq_features_functions.xml
 
 **當執行大量ID匯出至目標時，會遺失部分客戶ID。為什麼會發生這種情況？**
 
-當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUID](../reference/ids-in-aam.md))時，只會匯出最新的對應。 這就是為什麼您可能會看到匯出的裝置ID數量低於預期。
+當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUIDs](../reference/ids-in-aam.md))時，只會匯出最新的對應。 這就是為什麼您可能會看到匯出的裝置ID數量低於預期。
 
  
 
@@ -68,7 +68,7 @@ faq_features_functions.xml
 
 **什麼是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Launch] 取代。如需詳細資訊，請參閱 [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 和 [Dynamic Tag Management](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)。
+Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Launch] 取代。如需詳細資訊，請參閱 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) 和 [Dynamic Tag Management](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)。
 
  
 
