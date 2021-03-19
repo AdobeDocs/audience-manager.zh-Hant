@@ -5,19 +5,19 @@ seo-title: 區段清單檢視
 solution: Audience Manager
 title: 區段清單檢視
 uuid: aa69877b-1d52-4b87-8734-b4bff39935a5
-feature: Segments
+feature: 區段
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 9%
+source-wordcount: '87'
+ht-degree: 11%
 
 ---
 
 
 # 區段清單檢視 {#segments-list-view}
 
-[區段控制面板](https://bank.demdex.com/portal/Segments/SegmentBuilder.ddx#list)是集中式工作區，用於管理您的觀眾區段。 導覽至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**，即可看到[!UICONTROL Segments]控制面板。
+[!UICONTROL Segments dashboard]是集中式工作區，用於管理您的觀眾區段。 導覽至&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**，即可看到[!UICONTROL Segments]控制面板。
 
 ![segments-dashboard](assets/segments-dashboard.png)
 
