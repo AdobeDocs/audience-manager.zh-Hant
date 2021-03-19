@@ -4,12 +4,12 @@ seo-description: 本頁說明建立Facebook網站自訂對象(WCA)像素的程�
 seo-title: Facebook WCA 整合
 solution: Audience Manager
 title: Facebook WCA 整合
-feature: Third Party Integrations
+feature: 協力廠商整合
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 6%
+source-wordcount: '869'
+ht-degree: 5%
 
 ---
 
@@ -31,11 +31,11 @@ ht-degree: 6%
 ## 必要條件 {#prerequisites}
 
 1. [!DNL Facebook Ad Account]
-2. [!DNL Audience Manager] 區段，準備指派給新目 [!DNL Facebook] 標。以下是如何在](/help/using/features/segments/segment-builder.md) UI中建立區段[的方法。[!DNL Audience Manager]
+2. [!DNL Audience Manager] 區段，準備指派給新目 [!DNL Facebook] 標。以下是如何在[!DNL Audience Manager] UI中建立區段](/help/using/features/segments/segment-builder.md)的方法。[
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])4.1.0版或更新版本。下載最新版&#x200B;**[此處](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**。
 4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])9.0版或更新版本，可從這裡 **[下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。或者，如果您使用[伺服器端轉送(SSF)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)將資料匯入[!DNL Audience Manager]，則必須使用AppMeasurement 2.12版或更新版本。 使用[Analytics代碼管理器](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html)下載[!DNL AppMeasurement]。
 
-我們建議您使用[Adobe Experience Platform Launch](https://docs.adobelaunch.com/)或[Adobe動態標籤管理](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)，在步驟3和4中安裝或升級程式庫。
+我們建議您使用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)或[Adobe動態標籤管理](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)，在步驟3和4中安裝或升級程式庫。
 
 ## 步驟1 —— 在[!DNL Audience Manager] {#step-1-create-facebook-destination}中建立[!UICONTROL Facebook Destination]
 
