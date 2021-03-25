@@ -7,9 +7,9 @@ title: 用於伺服器對伺服器資料傳輸的 DCS API
 uuid: 8c369166-c8a7-46b0-9913-4c027f5b1df9
 feature: DCS
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '332'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 11%
 
 目前，本指南涵蓋如何：
 
-* 從您已收到的[!DNL DCS]客戶檔案取得使用者和地區ID。[!DNL Audience Manager]
+* 從您已收到的[!DNL Audience Manager]客戶檔案取得使用者和地區ID。[!DNL DCS]
 
 * 如果您使用[!DNL Visitor ID Service]，請取得使用者和地區ID。
 * 在您擁有使用者和地區ID後，呼叫[!DNL DCS]。
@@ -45,7 +45,7 @@ ht-degree: 11%
 我們將在新方法推出時加入。 請參閱下列章節以開始使用。
 
 * [從 DCS 回應取得使用者 ID 和區域](dcs-aam-ids.md)。
-* [透過Experience Cloud ID取得使用者ID和地區……](dcs-mcid-ids.md)
+* [透過Experience CloudID取得使用者ID和地區……](dcs-mcid-ids.md)
 * [發出伺服器對伺服器 DCS API 呼叫](dcs-s2s-calls.md)
 
 >[!MORELIKETHIS]
