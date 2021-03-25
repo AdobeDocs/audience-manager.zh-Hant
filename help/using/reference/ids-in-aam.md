@@ -8,7 +8,7 @@ title: Audience Manager 內的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
 feature: 參考
 translation-type: tm+mt
-source-git-commit: 5abb131966e0b27e6c628ff992c4c30b89f65ae9
+source-git-commit: 30d18c32f519930703c46046b0c2a413b222c317
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 5%
@@ -45,14 +45,6 @@ ht-degree: 5%
 | [!DNL CRM ID] | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 |
 | [!DNL CID]的  [!DNL CID_IC] | [!UICONTROL Customer ID], [!UICONTROL Customer ID Integration Code]. [!DNL CID]和[!DNL CID_IC]鍵值對替換[!DNL DPID]和[!DNL DPUUID]。 它們提供與[!DNL DPID]和[!DNL DPUUID]相同的函式，但效率更高，因為它們將資料提供者ID和使用者ID（或整合程式碼）納入單一索引鍵值對。 | 在[!DNL DCS]呼叫中，這些ID前面有`d_`首碼。 <br>範例: `d_cid_ic=39217_myIntegrationCode`. | 請參閱`DPID`和`DPUUID`。 |
 | [!DNL DAID] | [!UICONTROL Device Advertising ID]。要用於廣告目的的每個硬體裝置特有的識別碼。通常由裝置或裝置作業系統的製造商提供。 | 請參閱[全域裝置ID](#global-device-ids)。 |  |
-
-<!--
-
-Commenting out the table style. Fixed layout works better than auto layout for the index of IDs.
-
-{style="table-layout:auto"}
-
--->
 
 ## [!DNL Global Device IDs] {#global-device-ids}
 
