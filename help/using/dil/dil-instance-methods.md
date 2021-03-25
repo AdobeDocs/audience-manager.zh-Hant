@@ -1,16 +1,16 @@
 ---
-description: 例項層級的DIL API可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
-keywords: create traits;create trait
-seo-description: 例項層級的DIL API可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
+description: 例項層級的DILAPI可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
+keywords: 建立特徵；建立特徵
+seo-description: 例項層級的DILAPI可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
 seo-title: 例項層級 DIL 方法
 solution: Audience Manager
 title: 例項層級 DIL 方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
-feature: DIL Implementation
+feature: DIL實作
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1111'
 ht-degree: 13%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 13%
 
 # 例項層級 DIL 方法{#instance-level-dil-methods}
 
-例項層級[!UICONTROL DIL] API可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
+實例級[!UICONTROL DIL] API可讓您以程式設計方式建立並使用Audience Manager物件。 例項層級方法可增強由類別層級方法建立的API功能。
 
-## 開始使用例項層級DIL方法{#get-started-dil-methods}
+## 開始使用實例級DIL方法{#get-started-dil-methods}
 
 <!-- 
 
@@ -30,7 +30,7 @@ c_api_overview.xml
 
 使用實例級[!UICONTROL DIL] API時：
 
-* 存取需要合作夥伴名稱和容器名稱空間ID(NSID)。 請連絡您的Audience Manager客戶經理以取得此資訊。
+* 存取需要合作夥伴名稱和容器名稱空間ID(NSID)。 請連絡您的Audience Manager客戶經理以取得此項資訊。
 * 使用值、ID或您使用之方法所需的其他變數，取代API檔案中任何斜體&#x200B;*文字範例。*
 
 <!-- 
@@ -54,7 +54,7 @@ r_dil_signals.xml
 >[!NOTE]
 >
 >* 您可以將其他API呼叫連結至此方法。
->* 如果頁面上有Adobe Experience Cloud JavaScript程式庫，`submit()`會等待Cloud設定Cookie，再傳送請求。
+>* 如果頁面上有Adobe Experience CloudJavaScript程式庫，`submit()`會等待雲端設定Cookie，再傳送請求。
 
 
 **保留請求金鑰**
@@ -168,7 +168,7 @@ partnerObject.api.logs({
 
 ## 提交 {#submit}
 
-提交[!UICONTROL DIL]例項的所有待審資料至Audience Manager。
+提交[!UICONTROL DIL]實例的所有待審資料到Audience Manager。
 
 <!-- 
 
@@ -487,7 +487,7 @@ state = {
 
 ## idSync {#idsync}
 
-由兩個功能組成，可讓資料合作夥伴在他們和Audience Manager之間交換及同步使用者ID。
+由兩個函陣列成，可讓資料合作夥伴彼此交換並同步使用者ID，以及Audience Manager。
 
 <!-- 
 
@@ -509,11 +509,11 @@ r_dil_idsync.xml
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>不同資料合作夥伴和Audience Manager之間。 例如，合作夥伴x會使用此項來同步使用者ID與合作夥伴y，然後將其傳送至Audience Manager。 </p> <p> <p><b>重要：</b>  此方法已過時。請使用Adobe Experience Platform Identity Service例項的<code> idSyncByURL </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>不同資料合作夥伴與Audience Manager。 例如，合作夥伴x會使用此項來同步使用者ID與合作夥伴y，然後將其傳送至Audience Manager。 </p> <p> <p><b>重要：</b>  此方法已過時。請使用Adobe Experience Platform身份服務實例的<code> idSyncByURL </code>方法。 </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>當您已知道使用者ID，並想要將它傳送至Audience Manager時。 </p> <p> <p><b>重要：</b>  此方法已過時。請使用Adobe Experience Platform Identity Service例項的<code> idSyncByDataSource </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>當您已知道使用者ID並想要傳送給Audience Manager時。 </p> <p> <p><b>重要：</b>  此方法已過時。請使用Adobe Experience Platform身份服務實例的<code> idSyncByDataSource </code>方法。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -559,7 +559,7 @@ r_dil_idsync.xml
 `idSync` 接受以下宏：
 
 * **`%TIMESTAMP%`：生** 成時間戳記（以毫秒為單位）。用於快取破產。
-* **`%DID%`:** 插入使用者的Audience Manager ID。
+* **`%DID%`:** 插入用戶的Audience ManagerID。
 * **`%HTTP_PROTO%`:** 設定頁協定( `http` 或 `https`)。
 
 **回應**
@@ -724,8 +724,8 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >
 >* [關鍵變數的名稱要求](../features/traits/trait-key-name-requirements.md)
 >* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
->* [Adobe Experience Platform Identity Service中的同步功能](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
+>* [Adobe Experience Platform身份服務中的同步功能](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
 >* [DIL 建立](../dil/dil-class-overview/dil-create.md#dil-create)
->* [Adobe Experience Platform Identity Service:UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
->* [Adobe Experience Platform Identity Service中的CORS支援](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
+>* [Adobe Experience Platform身分服務：UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Adobe Experience Platform身分服務中的CORS支援](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
 
