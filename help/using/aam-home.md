@@ -5,11 +5,11 @@ seo-title: Adobe Audience Manager 產品技術文件
 solution: Audience Manager
 title: Audience Manager 指南
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
-feature: overview
+feature: 概述
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 96%
 
 ---
@@ -32,8 +32,6 @@ Audience Manager 為領先業界的線上受眾資料管理服務，本技術文
 * 接下來，請閱讀 **Audience Manager 快速入門**，熟悉 Audience Manager 概念。另外請務必檢閱商業與技術實作指南。
 * 請參閱最新的 Audience Manager 發行說明，並閱讀&#x200B;**發行說明和最新功能**&#x200B;區段中的最新功能相關內容。
 * 最後，您可以在&#x200B;**學習中心 - 建議的 Audience Manager 和 Experience Cloud 資源**&#x200B;區段中，探索更多 Experience Cloud 資源，例如論壇、影片教學課程、面對面和線上培訓課程。
-
-<br> 
 
 ## Audience Manager 主要功能
 
@@ -70,8 +68,6 @@ Audience Manager 為領先業界的線上受眾資料管理服務，本技術文
    </td>
 </table>
 
-
-<br> 
 
 ## Audience Manager 快速入門
 
@@ -148,8 +144,6 @@ Audience Manager 為領先業界的線上受眾資料管理服務，本技術文
 
 -->
 
-<br> 
-
 ## 發行說明和最新功能
 
 <table> 
@@ -160,7 +154,7 @@ Audience Manager 為領先業界的線上受眾資料管理服務，本技術文
      <br> 
      <p> <b>最新功能</b> </p> <p> 
      閱讀有關最新 Audience Manager 功能的資訊：</p>
-     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager使用者移轉至Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google客戶符合人員型目標</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager外掛程式</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測受眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報表</a></li>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用戶遷移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google客戶符合人員型目標</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager增效模組</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測受眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報表</a></li>
      </ul></p>
     </td>
   </tr> 
@@ -186,7 +180,6 @@ Read about the latest Audience Manager features:
 
 -->
 
-<br> 
 
 ## 學習中心 - 建議的 Audience Manager 和 Experience Cloud 資源
 
