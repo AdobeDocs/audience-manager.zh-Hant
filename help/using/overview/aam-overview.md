@@ -7,7 +7,7 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: 概述
 translation-type: tm+mt
-source-git-commit: e6348c85e7df6428802d54b2c90385ce95f50e1a
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 100%
@@ -31,13 +31,9 @@ Audience Manager (AAM) 能協助您彙集受眾資料資產、簡化收集網站
 
 Audience Manager 會從各種管道和裝置 (網頁分析、CRM、裝置資料、電子商務等) 收集第一方資料。
 
-<br> 
-
 **建立受眾**
 
 將資料統一集中到受眾設定檔中，讓您可獲得跨裝置和管道的完整客戶視圖。建立相似模型、建立受眾區段和設定檔群組，並以第二方和第三方資料來源補充。
-
-<br> 
 
 **資料輸出**
 
