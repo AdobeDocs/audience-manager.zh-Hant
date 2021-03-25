@@ -7,7 +7,7 @@ title: DIL 模組
 uuid: d4c0d8dd-79f8-448e-b17c-c935415dd449
 feature: DIL實作
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: e40233ace5cb74743db7d0f9f90707fa596a7e79
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 4%
@@ -241,7 +241,7 @@ r_dil_ga_init.xml
 
 **DIL為GA資料建立密鑰**
 
-Audience Manager可接受以鍵值配對形式的資料，而GA可處理陣列中的項。 要使用GA資料，[!UICONTROL DIL]會自動建立密鑰值對並形成如下的密鑰：`c_ <key name>`。 此外，GA陣列中的項目以特定順序顯示。 因此，您必須依該順序提供所有參數，即使這些參數不含任何資料亦然。 [!UICONTROL DIL] 映射以下GA方法的鍵：
+Audience Manager可接受以鍵值配對形式的資料，而GA可處理陣列中的項。 要使用GA資料，[!UICONTROL DIL]會自動建立鍵值對並形成如下的鍵：`c_ <key name>`。 此外，GA陣列中的項目以特定順序顯示。 因此，您必須依該順序提供所有參數，即使這些參數不含任何資料亦然。 [!UICONTROL DIL] 映射以下GA方法的鍵：
 
 ```js
 // Tracking Social Interactions 
