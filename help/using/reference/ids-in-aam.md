@@ -1,16 +1,16 @@
 ---
-description: 請參閱本檔案以取得Adobe Audience Manager ID的完整清單。
-keywords: DPID; DPUUID; CID; UUID; uuid; uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid
-seo-description: 請參閱本檔案以取得Adobe Audience Manager ID的完整清單。
+description: 請參閱本檔案以取得Adobe Audience ManagerID的完整清單。
+keywords: DPID;DPUUID;CID;UUID;uid;uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuid, uuuid, uuid
+seo-description: 請參閱本檔案以取得Adobe Audience ManagerID的完整清單。
 seo-title: Audience Manager 內的 ID 索引
 solution: Audience Manager
 title: Audience Manager 內的 ID 索引
 uuid: 292185ec-7c6a-414b-ab17-800c21cb1f01
-feature: reference
+feature: 參考
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: 348881dd2f880ca50140dbe5935cff138944003e
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '968'
 ht-degree: 5%
 
 ---
@@ -32,10 +32,10 @@ ht-degree: 5%
 
 | ID | 名稱和說明 | 使用與範例 | 使用者介面位置 |
 |---|---|---|---|
-| [!DNL AAM UUID] | [!DNL Adobe Audience Manager Unique User ID]，也稱為 [!UICONTROL Device ID]。[!DNL Audience Manager]與其互動的每個裝置相關聯的38位數數字裝置ID。 每當您在[!DNL Audience Manager] UI中看到提及獨特使用者時，請考慮這個ID。 Audience Manager會將此ID儲存為[!DNL cookie]在`demdex.net`第三方網域中。 | 在[!DNL DCS]呼叫中，`uuid`前面有`d_`首碼。 <br>範例: `d_uuid = 07955261652886032950143702505894272138` | 建立[相似模型](../features/algorithmic-models/create-model.md)時，您可依[!UICONTROL Device ID]篩選[!DNL traits]，建立區段](../features/segments/segment-builder.md)。 [您也可以在執行[特徵的一般報表](../reporting/general-reports.md)和[特徵的趨勢報表](../reporting/trend-reports.md)時，依[!UICONTROL Device ID]篩選結果。 |
+| [!DNL AAM UUID] | [!DNL Adobe Audience Manager Unique User ID]，也稱為 [!UICONTROL Device ID]。[!DNL Audience Manager]與其互動的每個裝置相關聯的38位數數字裝置ID。 每當您在[!DNL Audience Manager] UI中看到提及獨特使用者時，請考慮這個ID。 Audience Manager將此ID儲存為`demdex.net`第三方網域中的[!DNL cookie]。 | 在[!DNL DCS]呼叫中，`uuid`前面有`d_`首碼。 <br>範例: `d_uuid = 07955261652886032950143702505894272138` | 建立[相似模型](../features/algorithmic-models/create-model.md)時，您可依[!UICONTROL Device ID]篩選[!DNL traits]，建立區段](../features/segments/segment-builder.md)。 [您也可以在執行[特徵的一般報表](../reporting/general-reports.md)和[特徵的趨勢報表](../reporting/trend-reports.md)時，依[!UICONTROL Device ID]篩選結果。 |
 | [!DNL ImsOrgId] | [!DNL Organization ID]。這是公司在註冊[!DNL Experience Cloud]帳戶時提供的ID。 | `5DC5123F5245B1D20A490D46@AdobeOrg` | 在[!DNL Audience Manager]使用者介面中未顯示。 要瞭解如何查找公司的[!DNL Organization ID]，請閱讀[查找組織ID](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)。 |
-| [!DNL PID] | [!DNL Partner ID]。[!DNL PID]是[!DNL Audience Manager]中的公司ID。 Audience Manager將[!DNL imsOrgId]關聯至[!DNL PID]。 | `1352` | 在[!DNL Audience Manager]使用者介面中未顯示。 |
-| [!DNL ECID], [!DNL MID] | [!DNL Experience Cloud] ID. [!DNL Experience Cloud] ID（[!DNL ECID]，舊式縮寫[!DNL MID]或[!DNL MCID]）是從您的[!DNL Organization ID]和[!DNL Audience Manager] [!UICONTROL Unique User ID]以數學方式推導而得。 只要這些ID保持不變，為特定使用者產生右[!DNL ECID]只是數學問題。 使用相同的[!DNL Organization ID]和[!DNL Audience Manager] [!DNL UUID]，您每次都會獲得相同的[!DNL ECID]值。 您可以閱讀[Cookie和Experience Cloud ID](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html#section-15f69c0bac394b4b9966a23fbc586d17)檔案中的[!DNL ECID]。 | `mid = 08382830887934830189014177072406221371` | 在[!DNL Audience Manager]使用者介面中未顯示。 |
+| [!DNL PID] | [!DNL Partner ID]。[!DNL PID]是[!DNL Audience Manager]中的公司ID。 Audience Manager將[!DNL imsOrgId]關聯到[!DNL PID]。 | `1352` | 在[!DNL Audience Manager]使用者介面中未顯示。 |
+| [!DNL ECID], [!DNL MID] | [!DNL Experience Cloud] ID. [!DNL Experience Cloud] ID（[!DNL ECID]，舊式縮寫[!DNL MID]或[!DNL MCID]）是從您的[!DNL Organization ID]和[!DNL Audience Manager] [!UICONTROL Unique User ID]以數學方式推導而得。 只要這些ID保持不變，為特定使用者產生右[!DNL ECID]只是數學問題。 使用相同的[!DNL Organization ID]和[!DNL Audience Manager] [!DNL UUID]，您每次都會獲得相同的[!DNL ECID]值。 您可以閱讀[Cookie和Experience CloudID](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html#section-15f69c0bac394b4b9966a23fbc586d17)檔案中的[!DNL ECID]。 | `mid = 08382830887934830189014177072406221371` | 在[!DNL Audience Manager]使用者介面中未顯示。 |
 | [!DNL SID] | [!UICONTROL Trait ID]。[!UICONTROL Trait ID]在[!DNL Audience Manager]環境中唯一標識[!DNL traits]。 | 在[!DNL DCS]呼叫中，`SID`前面有`d_`首碼。 <br>範例 `d_sid=289983`. | [!UICONTROL Trait ID]會指派給每個[!DNL trait]，並在使用者介面中顯示在[Traits](../features/traits/trait-details-page.md)頁面中。 |
 | [!DNL SID] | [!UICONTROL Segment ID]。[!UICONTROL Segment ID]在[!DNL Audience Manager]環境中唯一標識[!DNL segments]。 | 在[!DNL DCS]呼叫中，`SID`前面有`d_`首碼。 <br>範例 `d_sid=4798574`. | [!UICONTROL Segment ID]會指派給每個[!DNL segment]，並在使用者介面中顯示在[區段](../features/segments/segment-summary-view.md)頁面中。 |
 | [!DNL csegID] | [!DNL Legacy Segment ID]。此ID可唯一識別[!DNL Audience Manager]環境中的區段。 | `741232` | [!UICONTROL Legacy Segment ID]會指派給每個區段，並顯示在[區段](../features/segments/segment-summary-view.md)頁面的使用者介面中。 |
@@ -45,6 +45,8 @@ ht-degree: 5%
 | [!DNL CRM ID] | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 | 請參閱「`DPUUID`」。 |
 | [!DNL CID]的  [!DNL CID_IC] | [!UICONTROL Customer ID], [!UICONTROL Customer ID Integration Code]. [!DNL CID]和[!DNL CID_IC]鍵值對替換[!DNL DPID]和[!DNL DPUUID]。 它們提供與[!DNL DPID]和[!DNL DPUUID]相同的函式，但效率更高，因為它們將資料提供者ID和使用者ID（或整合程式碼）納入單一索引鍵值對。 | 在[!DNL DCS]呼叫中，這些ID前面有`d_`首碼。 <br>範例: `d_cid_ic=39217_myIntegrationCode`. | 請參閱`DPID`和`DPUUID`。 |
 | [!DNL DAID] | [!UICONTROL Device Advertising ID]。要用於廣告目的的每個硬體裝置特有的識別碼。通常由裝置或裝置作業系統的製造商提供。 | 請參閱[全域裝置ID](#global-device-ids)。 |  |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## [!DNL Global Device IDs] {#global-device-ids}
 
