@@ -7,7 +7,7 @@ title: Audience Manager 指南
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
 feature: 概述
 translation-type: tm+mt
-source-git-commit: 191e2b0c5d511853273d0ebf7d6f0a965c4fc3fc
+source-git-commit: ae5863882b5dec3a99edd1b7065229232296cc7b
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 96%
@@ -35,7 +35,7 @@ Audience Manager 為領先業界的線上受眾資料管理服務，本技術文
 
 ## Audience Manager 主要功能
 
-<table>
+<table style="table-layout:fixed">
    <td>
       <img alt="資料輸入" src="/help/using/overview/assets/data-in.png"/>
       <div>
