@@ -8,9 +8,9 @@ keywords: ID對應、ID對應、Cookie對應
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
 feature: 使用與帳單
 translation-type: tm+mt
-source-git-commit: c3c2f32dda7535b182ea3638a016fe245ed4894c
+source-git-commit: a696bc03e430e25e2752d84905009645c625d762
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '585'
 ht-degree: 6%
 
 ---
@@ -45,8 +45,6 @@ Audience Manager設定您可為帳戶建立之特徵、區段、目的地和演�
 | 已登錄 | 十萬 |
 | 資料夾特徵 | 零點二萬 |
 
-{style=&quot;table-layout:auto&quot;}
-
 ### 區段限制
 
 | 區段類型 | 最大限制 |
@@ -70,10 +68,8 @@ Audience Manager設定您可為帳戶建立之特徵、區段、目的地和演�
 | 啟用 [!UICONTROL Look-Alike Models] | 20.Audience Manager只計算&#x200B;*active*&#x200B;演算法模型與限制。 |
 | [!UICONTROL Look-Alike Models] 最大受眾規模 | 2500萬。  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選取較短的回顧視窗，來降低觀眾規模。 |
 | [!UICONTROL Look-Alike Model]的已排除特徵數上限 | 500.請參閱演算法模型](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)中的[特徵排除。 |
-| 最小值[!UICONTROL Predictive Audiences Models] | 10 |
+| 最大[!UICONTROL Predictive Audiences Models] | 10 |
 | [!UICONTROL Predictive Audiences Models]的基準角色數上限 | 50 |
-
-{style=&quot;table-layout:auto&quot;}
 
 ### 資料夾限制
 
