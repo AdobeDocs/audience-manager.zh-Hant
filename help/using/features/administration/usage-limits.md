@@ -1,16 +1,16 @@
 ---
-description: Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
-seo-description: Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager不受可能破壞我們API或使用者介面的自動化程式。
+description: Audience Manager設定您可為帳戶建立之特徵、區段、目的地和演算法模型數目的上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager免受可能破壞我們API或使用者介面的自動化程式的影響。
+seo-description: Audience Manager設定您可為帳戶建立之特徵、區段、目的地和演算法模型數目的上限。 不論是在使用者介面中建立，或是透過API方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager免受可能破壞我們API或使用者介面的自動化程式的影響。
 seo-title: 使用量限制
 solution: Audience Manager
 title: 使用量限制
-keywords: ID mapping, ID mappings, cookie mappings
+keywords: ID對應、ID對應、Cookie對應
 uuid: 50ca4647-0b5c-409c-89fa-4fa1799b3222
-feature: Usage and Billing
+feature: 使用與帳單
 translation-type: tm+mt
-source-git-commit: fc13643681eebec17a95607482f2864e81b95820
+source-git-commit: c3c2f32dda7535b182ea3638a016fe245ed4894c
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '591'
 ht-degree: 6%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 6%
 
 # 使用量限制 {#usage-limits}
 
-Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地和演算法模型數目上限。 不論是在使用者介面中建立，還是透過[!DNL API]方法以程式設計方式建立，限制都適用於這些項目。 使用限制可協助保護Audience Manager免受可能會破壞我們[!DNL API]或使用者介面的自動化程式。
+Audience Manager設定您可為帳戶建立之特徵、區段、目的地和演算法模型數目的上限。 不論是在使用者介面中建立，還是透過[!DNL API]方法以程式設計方式建立，限制都適用於這些項目。 使用限制有助於保護Audience Manager免受可能破壞我們[!DNL API]或使用者介面的自動化流程的影響。
 
 ## ID 對應限制 {#id-mapping-limits}
 
-下表列出了設備ID的[ID映射](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)限制。 一旦ID達到下列任何限制，Audience Manager會根據FIFO（先入先出）邏輯新增ID對應，移除最舊儲存的ID對應，並新增新ID對應。 如需Audience Manager支援之ID的詳細資訊，請參閱Audience Manager中的[ID索引](../../reference/ids-in-aam.md)。
+下表列出了設備ID的[ID映射](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)限制。 一旦ID達到以下任何限制，Audience Manager就會根據FIFO（先入先出）邏輯新增ID映射，移除最舊儲存的ID映射，並新增新的ID映射。 請參閱Audience Manager中的[ ID索引](../../reference/ids-in-aam.md)，以取得Audience Manager支援的ID的詳細資訊。
 
 | ID對應 | 最大限制 |
 |-----------|-------------- |
@@ -45,6 +45,8 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 | 已登錄 | 十萬 |
 | 資料夾特徵 | 零點二萬 |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### 區段限制
 
 | 區段類型 | 最大限制 |
@@ -65,11 +67,13 @@ Audience Manager會設定您可以為帳戶建立的特徵、區段、目的地�
 
 | 項目 | 最大限制 |
 | -------- | ----- |
-| 啟用 [!UICONTROL Look-Alike Models] | 20.Audience Manager只會依限制計算&#x200B;*active*&#x200B;演算法模型。 |
+| 啟用 [!UICONTROL Look-Alike Models] | 20.Audience Manager只計算&#x200B;*active*&#x200B;演算法模型與限制。 |
 | [!UICONTROL Look-Alike Models] 最大受眾規模 | 2500萬。  請注意，此限制無法增加。 您可以透過為模型選取較少的資料來源或選取較短的回顧視窗，來降低觀眾規模。 |
 | [!UICONTROL Look-Alike Model]的已排除特徵數上限 | 500.請參閱演算法模型](/help/using/features/algorithmic-models/trait-exclusion-algo-models.md)中的[特徵排除。 |
 | 最小值[!UICONTROL Predictive Audiences Models] | 10 |
 | [!UICONTROL Predictive Audiences Models]的基準角色數上限 | 50 |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### 資料夾限制
 
