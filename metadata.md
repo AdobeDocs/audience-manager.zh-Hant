@@ -1,7 +1,7 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution: Audience Manager
-type: Documentation
+type: 文件
 solution-title: 學習與支援
 solution-hub-url: https://helpx.adobe.com/tw/support/audience-manager.html
 solution-image: assets/aam-icon-24.png
@@ -12,10 +12,10 @@ tutorials-url: https://docs.adobe.com/content/help/en/audience-manager-learn/tut
 git-repo: https://git.corp.adobe.com/AdobeDocs/audience-manager.zh-Hant
 index: y
 translation-type: tm+mt
-source-git-commit: 0d560abc1e51e0e44ec013b7ee133e0de2f4e5d1
+source-git-commit: 8ec80da4ec2110b1475a3872ff4c4f7f17b77870
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 12%
+source-wordcount: '136'
+ht-degree: 13%
 
 ---
 
