@@ -1,24 +1,24 @@
 ---
-description: Audience Marketplace資料購買者同意使用資料饋送中包含的特性來報告所有提供的廣告印象，這些特性以每千個廣告印象(CPM)的成本為定價基礎。 CPM使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。 固定費用訂閱者不需要報告使用情形。
-seo-description: Audience Marketplace資料購買者同意使用資料饋送中包含的特性來報告所有提供的廣告印象，這些特性以每千個廣告印象(CPM)的成本為定價基礎。 CPM使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。 固定費用訂閱者不需要報告使用情形。
+description: Audience Marketplace資料購買者同意使用資料饋送中包含的特性來報告所有提供的廣告印象，該特性以每千個廣告印象(CPM)的成本為定價基礎。 CPM使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。 固定費用訂閱者不需要報告使用情形。
+seo-description: Audience Marketplace資料購買者同意使用資料饋送中包含的特性來報告所有提供的廣告印象，該特性以每千個廣告印象(CPM)的成本為定價基礎。 CPM使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。 固定費用訂閱者不需要報告使用情形。
 seo-title: 資料摘要購買者的計費方式
 solution: Audience Manager
 title: 資料摘要購買者的計費方式
-keywords: Segment-level Reporting, segment-level, segment level
+keywords: 區段層級報表、區段層級、區段層級
 uuid: d7236667-282b-4160-9909-579721af4016
-feature: Audience Marketplace
+feature: 訪客交易市場
+exl-id: 401cf3be-fa84-4654-936e-e2871fef0be9
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: 88ed0b28fdf5dc03c8a878529d65b4bc844ea6c9
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2064'
 ht-degree: 1%
 
 ---
 
-
 # 資料摘要購買者的計費方式 {#billing-for-data-feed-buyers}
 
-Audience Marketplace資料購買者同意使用資料饋送中包含的特性來報告所有提供的廣告印象，這些特性以每千個廣告印象([!DNL CPM])的成本為基準。 [!DNL CPM] 使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。固定費用訂閱者不需要報告使用情形。
+Audience Marketplace資料購買者同意使用資料饋送中包含的特性來報告所有提供的廣告印象，該特性以每千個廣告印象([!DNL CPM])為基礎。 [!DNL CPM] 使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。固定費用訂閱者不需要報告使用情形。
 
 <br> 
 
@@ -126,11 +126,11 @@ Audience Marketplace資料購買者同意使用資料饋送中包含的特性來
   <tr> 
    <td colname="col1"> <p><b>一律報告曝光總數</b> </p> </td> 
    <td colname="col2"> <p>對於CPM印象總計： </p>
-   <p> 報告曝光總數，不使用小數。 Audience Manager會根據您報告的總數自動計算CPM。</p><p>如果您需要報告1,234,567個印象，請完全按此報告。 您不需要將曝光總數除以1,000即可計算CPM。</p><p>使用Adobe Target或Analytics目的地等工具來最佳化您的網頁或應用程式內容（內容最佳化）的特性，不會對CPM計畫的「使用」總計有所貢獻。 資料提供者通常會使用固定費用計畫來補償內容最佳化。</p><p>如需詳細資訊，請參閱<a href="#cost-attribution">CPM資料饋送的成本歸因</a>。 </p> </td>
+   <p> 報告曝光總數，不使用小數。 Audience Manager會根據您所報告的總數自動計算CPM。</p><p>如果您需要報告1,234,567個印象，則報告完全如此。 您不需要將曝光總數除以1,000即可計算CPM。</p><p>使用Adobe Target或Analytics目的地等工具最佳化您的網頁或應用程式內容（內容最佳化）時，用來最佳化的特徵不會對CPM計畫的「使用」總計有貢獻。 資料提供者通常會使用固定費用計畫來補償內容最佳化。</p><p>如需詳細資訊，請參閱<a href="#cost-attribution">CPM資料饋送的成本歸因</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>堅持每月報告間隔</b> </p> </td> 
-   <td colname="col2"> <p>報告系統在每月5號之後關閉。 如果您未能報告CPM使用情形，您必須將該金額新增至下個月的報告。 例如，假設您在10月使用1000個曝光次數、錯過10月的報表截止日期，並在11月使用1000個曝光次數。 在本例中，您會在12月1日至5日報告10月和11月的總計（2000年）。</p><p><b>提示</b>:您應一律嘗試在下個月的第1天到第5天之間，報告上個月的CPM使用情形。</p><p>您可以報告CPM使用情形，最遲於新日曆月的5日，但不建議這麼做。 在每月5日之前報告CPM使用情形，讓Audience Manager有時間檢查及處理資料。</p> </td>
+   <td colname="col2"> <p>報告系統在每月5號之後關閉。 如果您未能報告CPM使用情形，您必須將該金額新增至下個月的報告。 例如，假設您在10月使用1000個曝光次數、錯過10月的報表截止日期，並在11月使用1000個曝光次數。 在本例中，您會在12月1日至5日報告10月和11月的總計（2000年）。</p><p><b>提示</b>:您應一律嘗試在下個月的第1天到第5天之間，報告上個月的CPM使用情形。</p><p>您可以報告CPM使用情形，最遲於新日曆月的5日，但不建議這麼做。 在每月5日之前報告CPM使用情形，讓Audience Manager有時間檢查和處理資料。</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -170,7 +170,7 @@ Audience Marketplace資料購買者同意使用資料饋送中包含的特性來
 當您[在資料饋送層級](#feed-level-report)報告CPM使用時，您必鬚根據特徵限定規則中使用的[!DNL Boolean]運算子，按比例分配每個資料饋送的印象。 下表列出如何依布林規則或特徵類型正確分配印象。
 
 >[!TIP]
->[報告區段層級的CPM使用](#segment-level-report)，讓Audience Manager自動完成資料饋送層級報告。
+>[在區段層級報告CPM使用](#segment-level-report)，讓資料饋送層級報告由Audience Manager自動完成。
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
@@ -206,7 +206,7 @@ Audience Marketplace資料購買者同意使用資料饋送中包含的特性來
 以下範例旨在說明如何在資料饋送層級進行[!DNL CPM]使用量分配。
 
 >[!IMPORTANT]
->我們建議您改為[在區段層級報告CPM使用情形](#segment-level-report)，以自動完成此程式。
+>建議您改為[在區段層級](#segment-level-report)報告CPM使用情形，以自動完成此程式。
 
 讓我們考慮以下情況：
 
@@ -263,10 +263,14 @@ Audience Marketplace資料購買者同意使用資料饋送中包含的特性來
 
 ![動態消息劃分](assets/feed-breakdown-alt.png)
 
+>[!NOTE]
+>
+>對於模型使用案例，您只應在啟動時報告CPM使用情形。 如果您只執行模型，但未啟動模型，則不需要使用情況報告。
+
 <br> 
 
 ## 固定費用資料饋送的計費和印象分配{#billing-flat-fee}
 
-固定費用資料饋送每月向您收取固定金額，不論訂閱何時開始或您使用多少印象。 部分月份使用或間隔不按比例支付費用。 和CPM帳單一樣，Adobe會針對您訂閱的資料饋送，以每月固定費率產生髮票並向您收費。
+固定費用資料饋送每月向您收取固定金額，不論訂閱何時開始或您使用多少印象。 部分月份使用或間隔不按比例支付費用。 與CPM帳單一樣，Adobe會產生髮票，並以每月固定費率向您收取訂閱資料饋送的費用。
 
 例如，假設您決定在月中旬開啟動態消息中的特定特徵。 無論您是在何時開始訂閱或啟動特定特性，您仍會以每月全額計費。
