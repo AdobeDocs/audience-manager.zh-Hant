@@ -1,24 +1,24 @@
 ---
-description: 特徵資格或特徵實現在Audience Manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
-keywords: trait qualification;trait realization;Unique Trait Realizations;UTR;Total Trait Population;TTP
-seo-description: 特徵資格或特徵實現在Audience Manager中會根據特徵類型有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
+description: 特徵限定或特徵實現在Audience Manager中會根據特徵類型的不同而有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
+keywords: 特徵限定、特徵實現、獨特特徵實現、UTR、總特徵人口、TTP
+seo-description: 特徵限定或特徵實現在Audience Manager中會根據特徵類型的不同而有不同的處理方式。 請參閱下表以取得特徵資格的詳細資訊。
 seo-title: 特徵資格參考
 solution: Audience Manager
 title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
-feature: Traits
+feature: 特徵
+exl-id: 223f5fc6-c939-4bc6-94a3-5d953abc601a,85c2d54f-b9d6-4c95-b4b5-466119effc2a,85c2d54f-b9d6-4c95-b4b5-466119effc2a,223f5fc6-c939-4bc6-94a3-5d953abc601a
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: e13f81df9b0d59cd958f4c2a615c31df00ce2cc5
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
 
-
 # 特徵和區段資格參考資料 {#trait-qualification-reference}
 
-特徵資格或特徵實現在Audience Manager中會根據特徵類型有不同的處理方式。 如需特徵類型資格的詳細資訊，請參閱[依特徵類型劃分的特徵資格](#trait-type)。
+特徵限定或特徵實現在Audience Manager中會根據特徵類型的不同而有不同的處理方式。 如需特徵類型資格的詳細資訊，請參閱[依特徵類型劃分的特徵資格](#trait-type)。
 
 此外，如需區段資格的詳細資訊，請參閱[即時區段人口與總區段人口](#real-time-segment)。
 
@@ -29,10 +29,10 @@ ht-degree: 2%
 | 特徵類型 | 資格標準 |
 |---|---|
 | 規則型特徵 | 特徵資格會即時發生，因為使用者在瀏覽器中符合特徵資格。 在您[在UI中建立特徵](create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)後約4小時，您的使用者將開始符合規則型特徵的資格。 規則型特徵可讓您使用[時近和頻率](../segments/recency-and-frequency.md)控制項來設定廣告頻率上限和其他使用案例。 |
-| 已登錄特徵 | 特徵限定會在處理傳入檔案後發生，亦即傳入檔案是[匯入至Audience Manager](../../faq/faq-inbound-data-ingestion.md)，也就是特徵限定發生時。 在建立已登入特徵後，您應等待約4小時，再上傳傳入檔案以進行處理。 對於已登入的特徵，使用者設定檔的資格上限為1。 |
+| 已登錄特徵 | 特徵限定在處理傳入檔案後發生，即傳入檔案是[導入到Audience Manager](../../faq/faq-inbound-data-ingestion.md)，即特徵限定發生時。 在建立已登入特徵後，您應等待約4小時，再上傳傳入檔案以進行處理。 對於已登入的特徵，使用者設定檔的資格上限為1。 |
 | 演算法特徵 | 對於演算法特徵，使用者設定檔的最大資格數為1。 |
 | 資料夾特徵 | 資料夾特徵會匯總其所含特徵的特徵資格。 閱讀[資料夾特徵：關於](about-folder-traits.md)以取得詳細資訊。 |
-| 作用中受眾特徵與資料來源同步特徵 | [!UICONTROL Active Audience]特徵包含您Audience Manager帳戶中管理的所有裝置。 [!UICONTROL Data Source Synced Traits] 追蹤與資料來源相關聯的所有使用者。閱讀更多有關[作用中讀者特徵與資料來源同步特徵](client-activity-synced-audience-traits.md)的資訊。 |
+| 作用中受眾特徵與資料來源同步特徵 | [!UICONTROL Active Audience]特徵包含您的Audience Manager帳戶中管理的所有設備。 [!UICONTROL Data Source Synced Traits] 追蹤與資料來源相關聯的所有使用者。閱讀更多有關[作用中讀者特徵與資料來源同步特徵](client-activity-synced-audience-traits.md)的資訊。 |
 
 ## 獨特特徵實現與特徵總數{#unique-trait-realizations}
 
@@ -75,4 +75,3 @@ ht-degree: 2%
 ## 特徵限定限制{#trait-qualification-limit}
 
 我們會針對每個使用者描述檔強制實施150,000個特徵資格限制，不論是已驗證的描述檔([DPUUID](../../reference/ids-in-aam.md))或裝置ID([UUID](../../reference/ids-in-aam.md))。 請注意，雖然DPUUID對於[!DNL Audience Manager]的特定實例是唯一的，但UUID會跨[!DNL Audience Manager]平台共用。 對於[!UICONTROL UUID]s，我們在儲存特徵資格時會實施公平政策。 演算法可確保[!UICONTROL UUID]描述檔的平均份數可用於[!DNL Audience Manager]的每個例項。
-
