@@ -5,10 +5,11 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
 user-guide-url: /content/help/en/audience-manager/user-guide/aam-home.html
+feature-set: Audience Manager
 translation-type: tm+mt
-source-git-commit: 04504d4561414f9558a1f1f4db33cbcf535d54af
+source-git-commit: 9a1604b28f538a4f9595869345b385870419a6c3
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1789'
 ht-degree: 92%
 
 ---
@@ -146,7 +147,7 @@ ht-degree: 92%
       + [區段運算式編輯器中使用的程式碼語法](features/segments/segment-code-syntax.md)
       + [區段產生器的特徵和區段母體資料](features/segments/segment-builder-data.md)
       + [特徵建議](features/segments/trait-recommendations.md)
-      + [特徵和區段資格參考資料](features/traits/trait-and-segment-qualification-reference.md)
+      + [特徵和區段資格參考資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
    + 特徵{#traits}
       + [特徵概述](/help/using/features/traits/traits-overview.md)
       + [特徵詳細資料頁面](features/traits/trait-details-page.md)
