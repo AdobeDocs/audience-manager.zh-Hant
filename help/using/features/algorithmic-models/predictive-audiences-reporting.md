@@ -3,20 +3,20 @@ description: 預測受眾可協助您運用資料科學，將未知的受眾即�
 seo-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
 seo-title: 預測受眾報表
 solution: Audience Manager
-title: Audience Manager 預測受眾
-feature: Algorithmic Models
+title: 預測受眾報表
+feature: 演算法模型
+exl-id: 43a4272c-d9be-47f6-9b81-15472b0366ab
 translation-type: tm+mt
-source-git-commit: 29a2e0ec7859bec5658218fb5095b7bac74a3371
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 6%
 
 ---
 
-
 # 預測受眾報表
 
-儲存[!UICONTROL Predictive Audiences]模型後，Audience Manager會開始進行訓練。 在幾小時內，計算模型將開始分析[資料收集伺服器](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的觀眾。 報告將於次日提供。
+保存[!UICONTROL Predictive Audiences]模型後，Audience Manager開始進行培訓。 在幾小時內，計算模型將開始分析[資料收集伺服器](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的觀眾。 報告將於次日提供。
 
 若要查看[!UICONTROL Predictive Audiences]分類的結果，請前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後在清單中按一下您的模型。
 
@@ -34,13 +34,13 @@ ht-degree: 6%
    * **[!UICONTROL Pending]**:模型正在初始化，很快就會開始產生結果；
    * **[!UICONTROL Active]**:模型運行成功，取得了成效；
    * **[!UICONTROL Warning]**:由於資料不足（即基線數量低，用戶配置檔案不豐富），模型無法產生結果；
-   * **[!UICONTROL Error]**:模型無法運行。您應聯絡您的Adobe代表。
+   * **[!UICONTROL Error]**:模型無法運行。您應聯絡Adobe代表。
 
 ## 模型概述報告{#model-report}
 
 在您選擇模型後，其報表頁面將會載入。 在頁面頂端，您可以根據1天的即時實現，看到前5大預測區段，即模型已依據分類目標對象。 **[!UICONTROL Other]**&#x200B;類別包含其餘角色，這些角色未包含在前5大預測性群體中。
 
-Audience Manager會為您的[!UICONTROL Predictive Audiences]顯示彩色編碼環圈圖和時間軸圖。
+Audience Manager會為[!UICONTROL Predictive Audiences]顯示彩色編碼環圈圖和時間軸圖。
 
 按一下頁面頂端的角色標籤，會從圖表和圖形中新增或移除角色標籤。
 
