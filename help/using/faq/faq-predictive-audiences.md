@@ -3,16 +3,16 @@ description: 預測受眾可協助您運用資料科學，將未知的受眾即�
 seo-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
 seo-title: 預測受眾常見問題集
 solution: Audience Manager
-title: Audience Manager 預測受眾
-feature: Algorithmic Models
+title: 預測受眾常見問題集
+feature: 演算法模型
+exl-id: 21073970-8457-470b-89fc-724a118a18d2
 translation-type: tm+mt
-source-git-commit: c2c392b1201b5de08a3f4d58bbb7be5ef31545d0
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '969'
 ht-degree: 59%
 
 ---
-
 
 # 預測受眾常見問題集
 
@@ -116,7 +116,7 @@ ht-degree: 59%
 
 **我是否可以變更預測性狀的存留時間(TTL)?**
 
-預測性狀TTL設定為0（存留期），無法變更。 [!UICONTROL Predictive Audiences] 只有當使用者符合基本區段的資格或重新分類至不同的預測區段時，才能將其從預測區段中取消分段。
+預測性狀TTL設定為0（期限），無法變更。 [!UICONTROL Predictive Audiences] 只有當使用者符合基本區段的資格或重新分類至不同的預測區段時，才能將其從預測區段中取消分段。
 
 如有需要，您可以建立新區段來處理此功能，該區段同時包含具有指定TTL的預測性特徵和活動特性。
 
