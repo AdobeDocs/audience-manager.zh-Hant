@@ -3,16 +3,16 @@ description: 預測受眾可協助您運用資料科學，將未知的受眾即�
 seo-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
 seo-title: 管理預測性對象
 solution: Audience Manager
-title: Audience Manager 預測受眾
-feature: Algorithmic Models
+title: 預測受眾快速入門
+feature: 演算法模型
+exl-id: beb314de-f679-4397-8e14-2dd6576243fd
 translation-type: tm+mt
-source-git-commit: 48bf17a2899fd06c525ba6b4fddb9ec805efb5c3
+source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '574'
 ht-degree: 7%
 
 ---
-
 
 # 預測受眾快速入門 {#predictive-audiences-getting-started}
 
@@ -48,7 +48,7 @@ ht-degree: 7%
 
 ## 克隆和編輯預測性受眾模型{#clone-predictive-audiences}
 
-Audience Manager不支援編輯現有的[!UICONTROL Predictive Audiences]模型。 要更改模型的配置，可建立現有模型的克隆並對其進行編輯。 以下是您如何做到的：
+Audience Manager不支援編輯現有的[!UICONTROL Predictive Audiences]型號。 要更改模型的配置，可建立現有模型的克隆並對其進行編輯。 以下是您如何做到的：
 
 1. 前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**。
 2. 按一下要克隆的[!UICONTROL Predictive Audiences]模型的名稱。
