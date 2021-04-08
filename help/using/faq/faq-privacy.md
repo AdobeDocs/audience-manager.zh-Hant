@@ -8,10 +8,10 @@ uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
 feature: 資料管理與隱私權
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
 translation-type: tm+mt
-source-git-commit: 2afb48afad7978b8901e78060c7dccdb2a7bdf7b
+source-git-commit: 04877a4a607457ad1ca179faec680df8118ff965
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 96%
+ht-degree: 83%
 
 ---
 
@@ -56,15 +56,15 @@ ht-degree: 96%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>後端伺服器 </p> </td> 
-   <td colname="col2"> <p>120 天。 </p> <p> Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 120 天後，從我們的後端伺服器上刪除該使用者的資料。如果 <span class="keyword"> Audience Manager</span> 在此 120 天週期內有記錄使用者活動，便會再將此資料保存 120 天。 </p> </td> 
+   <td colname="col2"> <p>120天 </p> <p> Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 120 天後，從我們的後端伺服器上刪除該使用者的資料。如果<span class="keyword">Audience Manager</span>記錄此120天週期內的使用者活動，我們會再將此資料保存120天。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>邊緣伺服器 </p> </td> 
-   <td colname="col2"> <p> 14 天。 </p> <p>Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 14 天後，從我們的邊緣伺服器上刪除該使用者的資料。如果 <span class="keyword"> Audience Manager</span> 在此 14 天週期內有記錄使用者活動，便會再將此資料保存 14 天。如果使用者在 14 天後再次進入作用中狀態，則第一個新頁面檢視與使用者變成可操作的時間之間會出現延遲。閒置超過 14 天後，需要 6 到 18 個小時才能將完整的設定檔送回邊緣中心。 </p> </td> 
+   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 14 天後，從我們的邊緣伺服器上刪除該使用者的資料。如果<span class="keyword">Audience Manager</span>在此14天週期內記錄使用者活動，我們將會將此資料保留14天。 如果使用者在14天週期後再次變為作用中，第一個新頁面檢視與使用者變為可操作之間會有延遲。 閒置超過14天後，需要6-18小時才能將完整的描述檔送回邊緣中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始記錄檔 </p> </td> 
-   <td colname="col2"> <p>60 天 (60 天無活動後移除)。 </p> <p>原始記錄檔是邊緣伺服器收到的資料 (透過 HTTP 呼叫或來自傳入 <span class="keyword"> Audience Manager</span> 的已上線檔案)。 </p> </td> 
+   <td colname="col2"> <p>60天（在沒有活動的60天後移除） </p> <p>原始記錄檔是邊緣伺服器收到的資料 (透過 HTTP 呼叫或來自傳入 <span class="keyword"> Audience Manager</span> 的已上線檔案)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>廣告伺服器記錄檔 </p> </td> 
