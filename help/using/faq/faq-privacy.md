@@ -5,15 +5,15 @@ seo-title: 隱私權與資料保留常見問題集
 solution: Audience Manager
 title: 隱私權與資料保留常見問題集
 uuid: ef558fca-35ff-44f1-8527-f8bee9f2c7e9
-feature: Data Governance and Privacy
+feature: 資料管理與隱私權
+exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 2afb48afad7978b8901e78060c7dccdb2a7bdf7b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 96%
 
 ---
-
 
 # 隱私權與資料保留常見問題集{#privacy-and-data-retention-faq}
 
@@ -64,7 +64,7 @@ ht-degree: 96%
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始記錄檔 </p> </td> 
-   <td colname="col2"> <p>180 天 (180 天無活動後移除)。 </p> <p>原始記錄檔是邊緣伺服器收到的資料 (透過 HTTP 呼叫或來自傳入 <span class="keyword"> Audience Manager</span> 的已上線檔案)。 </p> </td> 
+   <td colname="col2"> <p>60 天 (60 天無活動後移除)。 </p> <p>原始記錄檔是邊緣伺服器收到的資料 (透過 HTTP 呼叫或來自傳入 <span class="keyword"> Audience Manager</span> 的已上線檔案)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>廣告伺服器記錄檔 </p> </td> 
@@ -72,7 +72,7 @@ ht-degree: 96%
   </tr> 
   <tr> 
    <td colname="col1"> <p>CRM 層級設定檔 (已驗證的設定檔) </p> </td> 
-   <td colname="col2"> <p>非作用中 CRM 層級設定檔 (客戶 ID) 的預設存留時間 (TTL) 間隔為 24 個月。不過，您可以使用Audience Manager使用者介面，將非作用中CRM層級設定檔的TTL間隔縮短或延長一個月至五年。 您可以在建立或編輯跨裝置資料來源時完成此操作。</p> <p>如需詳細資訊，請參閱<a href="../features/profile-merge-rules/merge-rules-start.md#settings">建立跨裝置資料來源</a>中的「資料來源設定」。</p> </td> 
+   <td colname="col2"> <p>非作用中 CRM 層級設定檔 (客戶 ID) 的預設存留時間 (TTL) 間隔為 24 個月。不過，您可以使用Audience Manager用戶介面來減少或延長非活動CRM級別配置檔案的TTL間隔（在一個月到5年之間）。 您可以在建立或編輯跨裝置資料來源時完成此操作。</p> <p>如需詳細資訊，請參閱<a href="../features/profile-merge-rules/merge-rules-start.md#settings">建立跨裝置資料來源</a>中的「資料來源設定」。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>行動裝置 ID </p> </td> 
@@ -119,4 +119,3 @@ ht-degree: 96%
   </tr> 
  </tbody> 
 </table>
-
