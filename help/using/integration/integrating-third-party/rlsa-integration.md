@@ -1,23 +1,23 @@
 ---
-description: 此程式需要AdWords再行銷清單、像素代碼和Audience Manager URL目標。 它也稱為搜尋廣告(RLSA)整合的再行銷清單。 僅適用於付費搜尋。
-seo-description: 此程式需要AdWords再行銷清單、像素代碼和Audience Manager URL目標。 它也稱為搜尋廣告(RLSA)整合的再行銷清單。 僅適用於付費搜尋。
+description: 此程式需要AdWords再行銷清單、像素代碼和Audience ManagerURL目標。 它也稱為搜尋廣告(RLSA)整合的再行銷清單。 僅適用於付費搜尋。
+seo-description: 此程式需要AdWords再行銷清單、像素代碼和Audience ManagerURL目標。 它也稱為搜尋廣告(RLSA)整合的再行銷清單。 僅適用於付費搜尋。
 seo-title: 將區段傳送至 Google AdWords 再行銷清單
 solution: Audience Manager
 title: 將區段傳送至 Google AdWords 再行銷清單
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
-feature: Third Party Integrations
+feature: 協力廠商整合
+exl-id: 76676eae-de4f-4fee-8774-ee215525306a
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
 
-
 # 傳送區段至Google廣告再行銷清單{#send-segments-to-a-google-adwords-remarketing-list}
 
-此程式需要[!DNL Google Ads]重新行銷清單、像素程式碼和Audience Manager [!DNL URL] [!DNL destination]。 它也稱為搜尋廣告([!DNL RLSA])整合的再行銷清單。 僅適用於付費搜尋。
+此程式需要[!DNL Google Ads]重新行銷清單、像素代碼和Audience Manager[!DNL URL] [!DNL destination]。 它也稱為搜尋廣告([!DNL RLSA])整合的再行銷清單。 僅適用於付費搜尋。
 
 >[!IMPORTANT]
 >請注意，這並非兩個系統的分類整合。
@@ -31,7 +31,7 @@ ht-degree: 5%
     //googleads.g.doubleclick.net/pagead/viewthroughconversion/xxxxxxxx/?value=0&guid=ON&script=0&data=%ALIAS%
    ```
 
-1. 在Audience Manager中，[建立 [!DNL URL destination]](../../features/destinations/create-url-destination.md)或編輯現有的[!DNL destination]。 建立[!DNL destination]時，請使用以下設定：
+1. 在Audience Manager中，[建立 [!DNL URL destination]](../../features/destinations/create-url-destination.md)或編輯現有[!DNL destination]。 建立[!DNL destination]時，請使用以下設定：
    * 類型：URL
    * 序列化：已啟用
    * 分隔字元：分號(;)
@@ -62,7 +62,7 @@ ht-degree: 5%
    >
    >如果您使用多個區段，請為每個要對應至[!DNL Google Ads] [!DNL destination]的區段取得新像素。 這可確保資料套用至適當的再行銷清單。
 
-1. 在Audience Manager中將新區段對應至此[!DNL destination]時，請將對應定義為`aam=segmentID`，並以區段的ID取代`segmentID`。
+1. 將新區段對應至Audience Manager中的此[!DNL destination]時，請將對應定義為`aam=segmentID`，並以區段的ID取代`segmentID`。
 1. 在[!DNL Google Ads]中定義貯體時，請建立符合步驟6所定義之對應的規則。
 
 完成的對應看起來可能類似：
