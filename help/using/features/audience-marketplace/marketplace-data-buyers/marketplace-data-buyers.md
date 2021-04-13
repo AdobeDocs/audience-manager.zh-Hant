@@ -4,12 +4,11 @@ seo-description: 想要從Audience Manager內購買第三方資料的資料購�
 seo-title: 適用於資料購買者的 Audience Marketplace
 solution: Audience Manager
 title: 適用於資料購買者的 Audience Marketplace
-topic-edit: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
 feature: 訪客交易市場
 exl-id: 9d6a7fda-f79f-41ad-9654-3ebcf9028cc2
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 3%
