@@ -1,20 +1,20 @@
 ---
-description: 資料饋送需要名稱、說明、資料來源和計畫類型。 動態消息會停用，直到您儲存並啟動動態消息為止。 在「對象市集>我的共用資料」中設定公開或私人資料饋送。 僅供資料銷售者使用。
-seo-description: 資料饋送需要名稱、說明、資料來源和計畫類型。 動態消息會停用，直到您儲存並啟動動態消息為止。 在「對象市集>我的共用資料」中設定公開或私人資料饋送。 僅供資料銷售者使用。
+description: 資料饋送需要名稱、說明、資料來源和計畫類型。 動態消息會停用，直到您儲存並啟動動態消息為止。 在「Audience Marketplace>我的共用資料」中設定公用或私用資料饋送。 僅供資料銷售者使用。
+seo-description: 資料饋送需要名稱、說明、資料來源和計畫類型。 動態消息會停用，直到您儲存並啟動動態消息為止。 在「Audience Marketplace>我的共用資料」中設定公用或私用資料饋送。 僅供資料銷售者使用。
 seo-title: 建立、定價和管理資料摘要
 solution: Audience Manager
 title: 建立、定價和管理資料摘要
-topic: DIL API
+topic-edit: DIL API
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
-feature: Audience Marketplace
+feature: 訪客交易市場
+exl-id: e8605e94-e62a-430c-9aef-875f995fb436
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1306'
 ht-degree: 2%
 
 ---
-
 
 # 建立、定價和管理資料摘要 {#create-price-and-manage-data-feeds}
 
@@ -189,7 +189,7 @@ ht-degree: 2%
 
 <!-- marketplace-seller-discounts.xml -->
 
-若要折扣動態消息，請在折扣欄位中新增折扣金額%，並確認您的變更。 資料提供者可從下列其中一種方式，在[!UICONTROL Audience Marketplace]中折扣資料饋送：
+若要折扣動態消息，請在折扣欄位中新增折扣金額%，並確認您的變更。 資料提供者可從下列其中一個項目，為[!UICONTROL Audience Marketplace]中的資料饋送打折：
 
 * **[!UICONTROL My Shared Data > Potential Subscribers]**
 * **[!UICONTROL My Shared Data > Details Requests]**
