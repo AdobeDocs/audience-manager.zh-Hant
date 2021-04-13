@@ -1,27 +1,27 @@
 ---
 description: 使用「分析」功能表下的選項，檢視控制面板和各種報表。
-seo-description: 使用「分析」功能表下的選項，在Adobe Audience Manager(AAM)中檢視控制面板和各種報表。
-seo-title: Adobe Audience Manager(AAM)中的報告概觀
+seo-description: 使用「Analytics」功能表下的選項，在Adobe Audience Manager()中檢視控制面板和各種報AAM表。
+seo-title: Adobe Audience Manager的報告概述(AAM)
 title: 報告概述
-feature: reporting reference
+feature: 報告參考參考
+exl-id: 8b0e34be-7a78-426c-a295-5e58a3462d64
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '415'
 ht-degree: 13%
 
 ---
-
 
 # 報告概述
 
 個別章節說明可用報表、其用途和一般用途。 所有報表都可從[!UICONTROL Analytics]控制面板取得。
 
-如需說明Audience Manager接收填入報表資訊時的時段資訊，請參閱[資料傳送和檔案處理時間如何影響報表](/help/using/reference/reporting-file-transfer-timeframe.md)。
+有關描述Audience Manager收到填入報表的資訊時的時間範圍的資訊，請參閱[資料傳送和檔案處理時間如何影響報表](/help/using/reference/reporting-file-transfer-timeframe.md)。
 
 * [受眾最佳化報表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
-   [!UICONTROL Audience Optimization]報表使用資料視覺化方法，在Audience Manager帳戶中傳回有關目標的資訊。 在每個報表中，您幾乎可以按一下任何資料點，以傳回該項目的詳細資訊。 這些受眾最佳化見解可套用至廣告和出版通道中的數個使用案例，但預設無法使用。 請連絡您的Audience Manager顧問以開始使用。
+   [!UICONTROL Audience Optimization]報表使用資料視覺化方法，傳回您Audience Manager帳戶中目標的相關資訊。 在每個報表中，您幾乎可以按一下任何資料點，以傳回該項目的詳細資訊。 這些受眾最佳化見解可套用至廣告和出版通道中的數個使用案例，但預設無法使用。 請連絡您的Audience Manager顧問以開始使用。
 
 * [一般報表](/help/using/reporting/general-reports.md)
 
@@ -54,4 +54,3 @@ ht-degree: 13%
 * [所選 Audience Manager 報表中的資料取樣和錯誤率](/help/using/reporting/report-sampling.md)
 
    摘要說明用於某些報表的取樣方法、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
-
