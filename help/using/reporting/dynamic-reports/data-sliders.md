@@ -5,12 +5,12 @@ seo-title: 使用資料滑桿篩選報表結果
 solution: Audience Manager
 title: 使用資料滑桿篩選報表結果
 uuid: ec486d97-d1d9-469b-b8df-5821f30d10ee
-feature: 報告參考參考
+feature: 報告參考
 exl-id: 876a01c2-e73e-4728-8890-e3f354ad1b86
 translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 11%
 
 ---
