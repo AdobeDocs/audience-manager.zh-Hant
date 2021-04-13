@@ -1,25 +1,25 @@
 ---
-description: '本頁包含如何結合離線CRM資料和您在Audience Manager中已擁有的行為資料以建立新受眾細分的逐步指引，然後將這些受眾細分傳送至以人為本的目標。  '
-seo-description: '本頁包含如何結合離線CRM資料和您在Audience Manager中已擁有的行為資料以建立新受眾細分的逐步指引，然後將這些受眾細分傳送至以人為本的目標。   '
+description: '本頁包含如何結合離線CRM資料與您已Audience Manager的行為資料以建立新受眾細分的逐步指引，然後將這些受眾細分傳送至以人為本的目標。  '
+seo-description: '本頁包含如何結合離線CRM資料與您已Audience Manager的行為資料以建立新受眾細分的逐步指引，然後將這些受眾細分傳送至以人為本的目標。   '
 seo-title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
 solution: Audience Manager
 title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
-feature: 以人物為基礎的目的地
+feature: 以人為本的目的地
+exl-id: 1f906955-8fe7-4cce-95d6-0e4275d523e8
 translation-type: tm+mt
-source-git-commit: 6e3a06da8149c91a9192b5b3ee582e46fbb1790c
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 7%
 
 ---
 
-
 # 工作流程 A - 以所有線上活動和離線資料為基礎的個人化 {#workflow-a}
 
 >[!IMPORTANT]
 >本文包含旨在引導您完成此功能設定與使用的產品檔案。 本協定中沒有任何法律建議。 請洽詢您自己的法律顧問以取得法律指導。
 
-本頁包含如何結合離線[!DNL CRM]資料與您在Audience Manager中已擁有的行為資料以建立新受眾區段的逐步指引，然後將這些受眾區段傳送至[!DNL People-Based Destinations]。
+本頁包含如何結合離線[!DNL CRM]資料與您已Audience Manager的行為資料以建立新受眾區段的逐步指引，然後將這些受眾區段傳送至[!DNL People-Based Destinations]。
 
 ## 步驟1 —— 配置資料源設定{#configure-data-source-settings}
 
@@ -39,7 +39,7 @@ ht-degree: 7%
 1. 使用下拉式選單來選取此資料來源的&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;標籤。
    >[!IMPORTANT]
    >
-   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中雜湊資料。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
+   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中對資料進行雜湊處理。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 1. 儲存資料來源設定。
@@ -57,7 +57,7 @@ ht-degree: 7%
 1. 使用下拉式選單來選取此資料來源的&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;標籤。
    >[!IMPORTANT]
    >
-   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中雜湊資料。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
+   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中對資料進行雜湊處理。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 1. 儲存資料來源設定。
@@ -68,7 +68,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
-> 如需如何將離線資料匯入Audience Manager以進行人員型目標的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
+> 如需如何將離線資料匯入Audience Manager人員型目的地的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
 
 ## 步驟2 —— 透過檔案式ID同步化將DPUUID與雜湊的電子郵件地址比對{#match-ids-emails}
 
@@ -118,7 +118,7 @@ ht-degree: 7%
 
 [在這裡下載範例檔案](assets/c2c_id_999999_987654_1560431657.sync)。
 
-建立ID同步檔案後，您必須將它上傳至[!DNL Amazon S3]儲存貯體。 若要瞭解如何上傳ID同步檔案，請參閱[傳送批次資料至Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
+建立ID同步檔案後，您必須將它上傳至[!DNL Amazon S3]儲存貯體。 要瞭解如何上傳ID同步檔案，請參閱[將批次資料發送到Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
 
 ## 步驟3 —— 建立區段的描述檔合併規則{#create-merge-rule}
 
@@ -128,7 +128,7 @@ ht-degree: 7%
 >
 > 如果您已使用[!UICONTROL Current Authenticated Profiles]或[!UICONTROL Last Authenticated Profiles]選項定義規則，則可跳至[步驟4 —— 建立對象區段](people-based-destinations-workflow-combined.md#create-audience-segments)。
 
-1. 登入您的Audience Manager帳戶並前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Profile Merge Rules]**。
+1. 登入您的Audience Manager帳戶，並前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Profile Merge Rules]**。
 1. 按一下 **[!UICONTROL Add New Rule]**.
 1. 輸入配置檔案合併規則&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
 1. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;部分，選擇&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;或&#x200B;**[!UICONTROL Last Authenticated Profiles]**&#x200B;選項。
@@ -140,13 +140,13 @@ ht-degree: 7%
 
 ## 步驟5 —— 配置基於人的平台身份驗證{#configure-authentication}
 
-1. 登入您的Audience Manager帳戶並前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
+1. 登入您的Audience Manager帳戶，並前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
    ![以人為本的整合](assets/pbd-config.png)
 1. 按一下 **[!UICONTROL Add Account]**.
 1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表，選取您要設定整合的平台。
    ![以人為本的平台](assets/pbd-add.png)
 1. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
-1. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
+1. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該在該處看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
 1. Audience Manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
 
 >[!IMPORTANT]
