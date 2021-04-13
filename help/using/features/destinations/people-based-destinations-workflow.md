@@ -4,15 +4,15 @@ seo-description: '「以人為本的目標」提供多種實作策略，視客�
 seo-title: 以人為本的目的地實作指引
 solution: Audience Manager
 title: 實施指南
-feature: People-Based Destinations
+feature: 以人為本的目的地
+exl-id: 224334d5-419c-4bb1-b76c-ce996a543b7a
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1381'
 ht-degree: 2%
 
 ---
-
 
 # 實施指南{#implementation-guidance}
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-[!DNL People-Based Destinations]的設定會引導您檢視Audience Manager的多個區段，並需要不同的設定和資料登入方法，這取決於您在Audience Manager中已擁有的客戶資料類型，以及您要執行的目標受眾類型。
+[!DNL People-Based Destinations]的設定會引導您進行多個Audience Manager區段，並需要不同的設定和資料登入方法，這取決於您已在Audience Manager中擁有的客戶資料類型，以及您要執行的目標受眾類型。
 
 >[!IMPORTANT]
 > 在設定[!DNL People-Based Destinations]之前，請務必仔細完整地閱讀本文。 閱讀本指南後，您應清楚瞭解將透過[!DNL People-Based Destinations]啟用的藍本。
@@ -38,13 +38,13 @@ ht-degree: 2%
 
 **A)根據您結合的線上和線下使用者活動鎖定受眾**。在此案例中，您想要結合Audience Manager的現有觀眾資料與內部[!DNL CRM]系統的資料，並將產生的觀眾區隔傳送至[!DNL People-Based Destinations]。 以下是說明此情形的範例：
 
-您的公司是一家航空公司，有不同的客戶層級（銅、銀和金），您想要透過社交平台為每個層級提供個人化優惠。 您使用Audience Manager分析網站上的客戶活動。 不過，並非所有客戶都使用該航空公司的行動應用程式，其中有些客戶尚未登入該公司網站。 您的客戶資料主要限於會籍ID和電子郵件地址。
+您的公司是一家航空公司，有不同的客戶層級（銅、銀和金），您想要透過社交平台為每個層級提供個人化優惠。 您使用Audience Manager來分析網站上的客戶活動。 不過，並非所有客戶都使用該航空公司的行動應用程式，其中有些客戶尚未登入該公司網站。 您的客戶資料主要限於會籍ID和電子郵件地址。
 
-若要跨社交媒體和類似的以人為本的通道鎖定目標受眾，您可以將您的[雜湊電子郵件地址](people-based-destinations-prerequisites.md)匯入Audience Manager，並將它們與您現有的線上活動特徵結合，以建立新的受眾細分。 接下來，您可以使用這些區段，透過[!DNL People-Based Destinations]來定位您的觀眾。
+若要跨社交媒體和類似的以人為本的通道鎖定目標受眾，您可將您的[雜湊電子郵件地址](people-based-destinations-prerequisites.md)帶入Audience Manager，並將它們與您現有的線上活動特徵結合，以建立新的受眾細分。 接下來，您可以使用這些區段，透過[!DNL People-Based Destinations]來定位您的觀眾。
 
-**B)受眾鎖定完全根據您的離線使用者活動**。在此案例中，您的[!DNL CRM]系統包含您的客戶電子郵件地址和其他客戶屬性，但客戶根本沒有與您的網站互動，因此您在Audience Manager中沒有任何客戶活動。 以下是說明此情形的範例：
+**B)受眾鎖定完全根據您的離線使用者活動**。在此案例中，您的[!DNL CRM]系統包含您的客戶電子郵件地址和其他客戶屬性，但客戶根本沒有與您的網站互動，因此您沒有Audience Manager的客戶活動。 以下是說明此情形的範例：
 
-您的公司是電信服務供應商，將客戶資料（例如電子郵件地址和購買的電信計畫）保存在內部[!DNL CRM]。 您想要鎖定社交平台中的現有客戶，以根據現有訂閱提供升級套件。 若要這麼做，您可以將雜湊的客戶電子郵件地址內嵌至Audience Manager，並根據現有客戶訂閱建立細分。 然後，您可以將這些區段傳送至[!DNL People-Based Destinations]，透過個人化優惠鎖定客戶。
+您的公司是電信服務供應商，將客戶資料（例如電子郵件地址和購買的電信計畫）保存在內部[!DNL CRM]。 您想要鎖定社交平台中的現有客戶，以根據現有訂閱提供升級套件。 若要這麼做，您可以將雜湊的客戶電子郵件地址內嵌至Audience Manager，並根據現有客戶訂閱建立區段。 然後，您可以將這些區段傳送至[!DNL People-Based Destinations]，透過個人化優惠鎖定客戶。
 
 ## 2.定義目標電子郵件地址類型{#define-target-email}
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 ## 3.識別您擁有{#identify-customer-id}的客戶ID(CRM ID)類型
 
-定位[!DNL People-Based Destinations]中的觀眾需要您傳送[SHA256雜湊](people-based-destinations-prerequisites.md)版本的客戶電子郵件地址。 視您現有的Audience Manager設定而定，您可能會在下列兩種情況中發現自己：
+定位[!DNL People-Based Destinations]中的觀眾需要您傳送[SHA256雜湊](people-based-destinations-prerequisites.md)版本的客戶電子郵件地址。 根據您現有的Audience Manager配置，您可能會發現自己處於以下兩種情況之一：
 
 **A)您的Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))已是小寫、雜湊的電子郵件地址**。在此案例中，您可以使用這些現有ID來定位[!DNL People-Based Destinations]中的對象。
 
@@ -72,19 +72,19 @@ ht-degree: 2%
 
 ## 5.建立或標籤資料源和板載散列電子郵件地址{#create-label-data-sources}
 
-視您在Audience Manager中擁有的客戶ID類型而定（請參閱[3）。 識別您擁有的客戶ID(CRM ID)類型](people-based-destinations-workflow.md#identify-customer-id)，您會發現您身處下列其中一種情形：
+視您Audience Manager中的客戶ID類型而定(請參閱[3。 識別您擁有的客戶ID(CRM ID)類型](people-based-destinations-workflow.md#identify-customer-id)，您會發現您身處下列其中一種情形：
 
-**A)標示現有資料來源**。此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))已為小寫雜湊電子郵件地址的案例。 在這種情況下，您需要將儲存ID的資料來源標示為[!DNL PII]資料來源。 有關資料源設定的詳細資訊，請參閱[資料源設定](../datasources-list-and-settings.md)。 您需要做的是，確定未選中「無法與個人識別資訊綁定」選項。
+**A)標示現有資料來源**。此選項適用於您的Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))已是小寫雜湊電子郵件地址的情形。 在這種情況下，您需要將儲存ID的資料來源標示為[!DNL PII]資料來源。 有關資料源設定的詳細資訊，請參閱[資料源設定](../datasources-list-and-settings.md)。 您需要做的是，確定未選中「無法與個人識別資訊綁定」選項。
 
 **B)建立新的資料來源**。此選項適用於Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))未雜湊電子郵件地址的情形。 在這種情況下，您需要建立新的跨裝置資料來源，並將雜湊的電子郵件地址加入其中。 您可以透過兩種方式進行此作業：
 
 * 使用檔案式 ID 同步。如需 ID 同步檔案的詳細資訊，請參閱 [ID 同步檔案的名稱和內容要求](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)。使用此方法時，您可以定位[!DNL CRM]資料庫中所有雜湊的電子郵件地址。
-* 使用[已宣告的ID](../declared-ids.md)來宣告您在傳入已驗證的客戶ID時的雜湊電子郵件地址。 當使用此方法時，Audience Manager僅會代表您針對已線上驗證之使用者的雜湊電子郵件地址。 以人員為基礎的管道中定位的電子郵件地址，僅是宣告的ID事件呼叫中的電子郵件地址。 與客戶 ID 相關聯的其他電子郵件地址不會即時啟用。
+* 使用[已宣告的ID](../declared-ids.md)來宣告您在傳入已驗證的客戶ID時的雜湊電子郵件地址。 使用此方法時，代表您的Audience Manager僅針對已線上驗證之使用者的雜湊電子郵件地址。 以人員為基礎的管道中定位的電子郵件地址，僅是宣告的ID事件呼叫中的電子郵件地址。 與客戶 ID 相關聯的其他電子郵件地址不會即時啟用。
 
 ## 6.使用描述檔合併規則進行區段{#use-profile-merge-rules}
 
 視您的使用案例而定(請參閱[1。 定義使用案例](people-based-destinations-workflow.md#defining-your-use-case))時，有兩種使用[!DNL Profile Merge Rules]進行分段的方法。
 
-**A)使用現有[!DNL Profile Merge Rules]**。這個選項適用於第一個使用案例（根據結合的線上和離線使用者活動鎖定對象）。 在此案例中，您在Audience Manager中已有現有客戶活動，而且您已定義至少一個用於劃分的描述檔合併規則。 在這種情況下，您不需要建立任何新的[!DNL Profile Merge Rules]。
+**A)使用現有[!DNL Profile Merge Rules]**。這個選項適用於第一個使用案例（根據結合的線上和離線使用者活動鎖定對象）。 在此案例中，您已有現有的客戶活動Audience Manager，而且您已定義至少一個用於劃分的描述檔合併規則。 在這種情況下，您不需要建立任何新的[!DNL Profile Merge Rules]。
 
-**B)建立新的合 [!DNL All Cross-Device Profiles] 並規則**。此選項適用於第二個使用案例（觀眾鎖定完全以離線使用者活動為基礎）。 在此案例中，您會將您的[!DNL CRM]離線客戶資料帶入Audience Manager，並想從該資料建立區段。 為此，[!DNL People-Based Destinations]引入了新的第四個配置檔案合併規則，名為&#x200B;**[!DNL All Cross-Device Profiles]**。 這是您劃分純離線資料時需要使用的規則。
+**B)建立新的合 [!DNL All Cross-Device Profiles] 並規則**。此選項適用於第二個使用案例（觀眾鎖定完全以離線使用者活動為基礎）。 在此案例中，您會將[!DNL CRM]的離線客戶資料帶入Audience Manager，並想從該資料建立區段。 為此，[!DNL People-Based Destinations]引入了新的第四個配置檔案合併規則，名為&#x200B;**[!DNL All Cross-Device Profiles]**。 這是您劃分純離線資料時需要使用的規則。
