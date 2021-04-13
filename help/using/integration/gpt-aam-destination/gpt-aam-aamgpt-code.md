@@ -1,27 +1,27 @@
 ---
-description: AamGpt是JavaScript函式，可讀取Audience Manager Cookie資料並將該資訊傳送至Google Publisher標籤。
-seo-description: AamGpt是JavaScript函式，可讀取Audience Manager Cookie資料並將該資訊傳送至Google Publisher標籤。
+description: AamGpt是JavaScript函式，可讀取Audience ManagerCookie資料並將該資訊傳送至Google Publisher標籤。
+seo-description: AamGpt是JavaScript函式，可讀取Audience ManagerCookie資料並將該資訊傳送至Google Publisher標籤。
 seo-title: 適用於 Google 發佈商廣告代碼的 Audience Manager 代碼
 solution: Audience Manager
 title: 適用於 Google 發佈商廣告代碼的 Audience Manager 代碼
 uuid: 24ff5d16-b360-46cc-a4c6-6db34d7fda75
-feature: Third Party Integrations
+feature: 協力廠商整合
+exl-id: 04e74399-7b6a-400e-a1e6-94fe296e7209
 translation-type: tm+mt
-source-git-commit: c63467dec62ff08c3cd32f19ac2e4675c9ce18e3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 19%
 
 ---
 
-
 # 適用於 Google 發佈商廣告代碼的 Audience Manager 代碼 {#audience-manager-code-for-google-publisher-tags}
 
-`AamGpt` 是讀取 [!DNL JavaScript] Audience Manager Cookie資料並將該資訊傳送至的函式 [!DNL Google Publisher Tags]。
+`AamGpt` 是讀取 [!DNL JavaScript] Audience ManagerCookie資料並將該資訊傳送至的函式 [!DNL Google Publisher Tags]。
 
 >[!NOTE]
 >
->如果您有自己的程式碼從[!UICONTROL UUID]和目標Cookie讀取Audience Manager Cookie資料，則不需要此函式。
+>如果您有自己的程式碼從[!UICONTROL UUID]和目標Cookie讀取Audience ManagerCookie資料，則不需要此函式。
 
 ## 程式碼範例
 
