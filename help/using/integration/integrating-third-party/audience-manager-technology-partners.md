@@ -1,29 +1,29 @@
 ---
-description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe Exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
-seo-description: 此頁面僅包含目前伺服器對伺服器的整合。 如需整合的詳細資訊，請參閱其Adobe Exchange清單（如有提供），或聯絡您的Adobe顧問或客戶服務。
+description: 此頁面僅包含目前伺服器對伺服器的整合。 有關整合的詳細資訊，請參閱其Adobe交易清單（如有），或聯絡Adobe顧問或客戶服務。
+seo-description: 此頁面僅包含目前伺服器對伺服器的整合。 有關整合的詳細資訊，請參閱其Adobe交易清單（如有），或聯絡Adobe顧問或客戶服務。
 seo-title: Adobe Audience Manager技術合作夥伴
-keywords: activation; activation partners, destination, destinations
+keywords: 啟動；啟動合作夥伴、目的地和目的地
 solution: Audience Manager
 title: Adobe Audience Manager技術合作夥伴
-feature: Third Party Integrations
+feature: 協力廠商整合
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 60%
+source-wordcount: '1185'
+ht-degree: 59%
 
 ---
 
 
 # Audience Manager啟動合作夥伴
 
-本頁僅包含目前Audience Manager [伺服器對伺服器整合](/help/using/features/destinations/add-edit-segments.md)。  如需整合的詳細資訊，請參閱[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)清單（如有），或聯絡您的Adobe顧問或客戶服務。
+本頁僅包含當前Audience Manager[伺服器到伺服器的整合](/help/using/features/destinations/add-edit-segments.md)。  有關整合的詳細資訊，請參閱[AdobeExchange](https://www.adobeexchange.com/experiencecloud.html)清單（如果有），或與Adobe顧問或客戶服務聯繫。
 
 <br> 
 
 * **Updated** =顯示此啟動合作夥伴有更新的最後日期。
-* **Unsegment** = Unsegmentation說明從區段中取消和移除裝置描述檔的程式。從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求中也會使用取消分段讀取[描述檔合併規則和裝置取消分段程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消區段資訊傳送至以下標示為「是」的目標。
-* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。閱讀[Audience Manager Plug-in for IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)。
+* **Unsegment** = Unsegmentation說明從區段中取消和移除裝置描述檔的程式。從區段移除裝置描述檔的能力取決於用來建立描述檔合併規則的裝置選項。 在GDPR刪除請求中還使用取消分段讀取[配置檔案合併規則和設備取消分段進程](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager夥伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消區段資訊傳送至以下標示為「是」的目標。
+* **接收IAB TCF同意訊號** = IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉寄給啟動合作夥伴，同時尊重使用者的隱私權選擇。閱讀[IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的Audience Manager插件。
 * **ICDS** =此欄列出了支援立即跨設備抑制的合作夥伴。閱讀[即時跨裝置抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **行動裝置ID** =此欄列出可從Audience Manager接收行動裝置ID的合作夥伴。
 
@@ -44,7 +44,7 @@ ht-degree: 60%
 | Adteorent | 22/02/2017 | 有 | 否 | 否 | 是 |
 | 阿菲尼奧 | 03/04/2018 | 有 | 否 | 否 | 是 |
 | Aki | 21/06/2018 | 否 | 否 | 否 | 是 |
-| Amazon Advertising | 15/06/2017 | 有 | 否 | 否 | 否 |
+| Amazon廣告 | 15/06/2017 | 有 | 否 | 否 | 否 |
 | AOL AdLearn | 02/03/2017 | 否 | 否 | 否 | 是 |
 | AOL ONE | 02/03/2017 | 有 | 否 | 否 | 是 |
 | AppNexus | 02/03/2017 | 有 | 否 | 有 | 否 |
