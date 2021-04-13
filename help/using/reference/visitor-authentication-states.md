@@ -1,24 +1,24 @@
 ---
-description: Audience Manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
+description: Audience Manager中的訪客驗證狀態會決定新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
 keywords: dpm.demdex.net
-seo-description: Audience Manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
+seo-description: Audience Manager中的訪客驗證狀態會決定新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
 seo-title: Audience Manager 中的訪客驗證狀態
 solution: Audience Manager
 title: Audience Manager 中的訪客驗證狀態
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
-feature: reference
+feature: 參考
+exl-id: 55aec28d-02f6-4e6d-9be1-4ce40deb8dc3
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '439'
 ht-degree: 5%
 
 ---
 
-
 # Audience Manager 中的訪客驗證狀態{#visitor-authentication-states-in-audience-manager}
 
-Audience Manager中的訪客驗證狀態會判斷新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
+Audience Manager中的訪客驗證狀態會決定新特徵資訊是寫入訪客的已驗證描述檔，還是寫入裝置描述檔，而裝置描述檔是收集資料的來源。 Audience Manager以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
 
 從[!DNL Experience Cloud] ID服務v1.5+開始，`setCustomerID`方法包含可選`AuthState`物件。 `AuthState` 根據訪客的驗證狀態 [識別訪客](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html)。[!DNL Audience Manager] 根據呼叫中傳遞的驗證狀態和您用於劃分的描述檔合併規則，可以不 [同地](../features/profile-merge-rules/merge-rules-dashboard.md) 處理已實現的特性。
 
