@@ -1,23 +1,23 @@
 ---
-description: 「對象最佳化」報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
-seo-description: 「對象最佳化」報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
+description: Audience Optimization報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
+seo-description: Audience Optimization報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
 seo-title: 跨通道轉換
 solution: Audience Manager
 title: 跨通道轉換
 uuid: 0fecec23-e502-490b-b7dd-47a3753a3f75
-feature: audience optimization reports
+feature: 受眾最佳化報表
+exl-id: 7412a43f-81b5-477e-8acf-89d6c8661f1e
 translation-type: tm+mt
-source-git-commit: 97129b435ab8e13def14bc85dcaab8254b2c4bda
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
+source-wordcount: '265'
+ht-degree: 5%
 
 ---
 
-
 # 跨通道轉換{#cross-channel-conversion}
 
-「對象最佳化」報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
+Audience Optimization報表中的「跨通道轉換」選項可讓您將離線轉換歸因於提供的線上印象或點按。
 
 [!UICONTROL Cross Channel Conversion]報表結合來自[!DNL Google Campaign Manager]平台的結果與[!DNL Audience Manager]轉換特性。 這可讓您將離線轉換連結至線上印象或點按。
 
@@ -41,7 +41,7 @@ ht-degree: 4%
   </tr>
   <tr> 
    <td> <p>歸因視窗 </p> </td> 
-   <td> <p> <b><span class="uicontrol"> AAM+Google Campaign </span></b> Manager歸因視窗為14天，這表示僅會考慮過去兩週所呈現的轉換特徵。 </p> </td> 
+   <td> <p> <b><span class="uicontrol"> +Google Campaign AAM </span></b> Manager歸因視窗為14天，這表示僅會考慮過去兩週所呈現的轉換特徵。 </p> </td> 
   </tr> 
   <tr> 
    <td> <p>上次接觸方法 </p> </td> 
