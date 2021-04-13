@@ -4,12 +4,11 @@ seo-description: 產生Audience Marketplace帳單報表，以檢視每個訂閱�
 seo-title: 資料摘要提供者的計費方式
 solution: Audience Manager
 title: 資料摘要提供者的計費方式
-topic-edit: DIL API
 uuid: 4e11dbd2-91fd-4b59-a66d-86a92e0de655
 feature: 訪客交易市場
 exl-id: aca2cec1-d3a0-421c-83ca-1c11e9e7d4c7
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 6%
