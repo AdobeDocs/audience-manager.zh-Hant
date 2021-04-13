@@ -4,17 +4,17 @@ seo-description: 產生Audience Marketplace帳單報表，以檢視每個訂閱�
 seo-title: 資料摘要提供者的計費方式
 solution: Audience Manager
 title: 資料摘要提供者的計費方式
-topic: DIL API
+topic-edit: DIL API
 uuid: 4e11dbd2-91fd-4b59-a66d-86a92e0de655
-feature: Audience Marketplace
+feature: 訪客交易市場
+exl-id: aca2cec1-d3a0-421c-83ca-1c11e9e7d4c7
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 5%
+source-wordcount: '455'
+ht-degree: 6%
 
 ---
-
 
 # 資料摘要提供者的計費方式 {#billing-for-data-feed-providers}
 
@@ -41,7 +41,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 資料提供者PID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的<span class="keyword"> Audience Manager</span>資料提供者ID。 </p> </td> 
+   <td colname="col2"> <p>您的<span class="keyword">Audience Manager</span>資料提供者ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 資料提供者名稱</span></b> </p> </td> 
@@ -94,7 +94,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 總成本</span></b> </p> </td> 
-   <td colname="col2"> <p>金額<span class="keyword"> Audience Manager</span>會向買家收取費用。 </p> </td> 
+   <td colname="col2"> <p>金額<span class="keyword">Audience Manager</span>向買方收費。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol"> 帳單期間</span></b> </p> </td> 
@@ -116,8 +116,8 @@ ht-degree: 5%
    <td colname="col1"> <p><b><span class="uicontrol"> 旗標</span></b> </p> </td> 
    <td colname="col2"> <p> <i>僅限CPM摘要</i>。標籤選項包括： </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
-     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0:指出訂閱者已向<span class="keyword"> Audience Manager</span>報告使用資訊。 </li> 
-     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1:指出訂閱者未向<span class="keyword"> Audience Manager</span>報告使用資訊。 </li> 
+     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0:表示訂戶已向<span class="keyword">Audience Manager</span>報告使用資訊。 </li> 
+     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1:表示訂戶未向<span class="keyword">Audience Manager</span>報告使用資訊。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
