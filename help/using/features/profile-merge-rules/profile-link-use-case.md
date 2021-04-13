@@ -1,23 +1,23 @@
 ---
-description: 使用描述檔連結裝置圖表，針對區段重新定位和個人化區段資格的建議和使用案例。
-seo-description: 使用描述檔連結裝置圖表，針對區段重新定位和個人化區段資格的建議和使用案例。
+description: Recommendations，以及使用設定檔連結裝置圖表來重新定位區段及個人化區段資格的使用案例。
+seo-description: Recommendations，以及使用設定檔連結裝置圖表來重新定位區段及個人化區段資格的使用案例。
 seo-title: 設定檔連結裝置圖表使用案例
 solution: Audience Manager
 title: 設定檔連結裝置圖表使用案例
 uuid: bd5567fd-fcd5-40ba-b6f1-035d2ddbcd3a
-feature: Profile Merge Rules
+feature: 描述檔合併
+exl-id: 8712d02f-c431-4116-8807-41f9e2dda44c
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '327'
 ht-degree: 9%
 
 ---
 
-
 # 設定檔連結裝置圖表使用案例 {#profile-link-device-graph-use-cases}
 
-使用[!UICONTROL Profile Link Device Graph]針對區段重新定位和個人化區段資格的建議和使用案例。
+Recommendations，並透過[!UICONTROL Profile Link Device Graph]使用案例來重新定位區段及個人化區段資格。
 
 ## 建議 {#recommendations}
 
@@ -41,7 +41,7 @@ ht-degree: 9%
 
 ![最後設備圖](assets/last-device-graph.png)
 
-由於Audience Manager可讓參與區段描述檔合併的每個裝置描述檔都符合資格，因此這三個裝置描述檔都會被分段。 [!UICONTROL Profile Link Device Graph]可讓Audience Manager檢視這三種裝置的行為，並讓每個裝置符合任何單一裝置設定檔都無法獨立符合的區段。
+由於Audience Manager符合參與區段描述檔合併的每個裝置描述檔的資格，因此會將所有三個裝置描述檔分段。 [!UICONTROL Profile Link Device Graph]可讓Audience Manager查看所有三台裝置的行為，並讓每台裝置符合任何單一裝置描述檔獨自適用的區段。
 
 此[!UICONTROL Profile Merge Rule]可讓行銷人員根據使用者活動而非個別裝置活動，為個人擁有的所有裝置提供一致的體驗。
 
