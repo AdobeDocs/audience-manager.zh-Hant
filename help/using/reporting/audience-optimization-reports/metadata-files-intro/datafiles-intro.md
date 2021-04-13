@@ -1,27 +1,27 @@
 ---
-description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，並在「對象最佳化」報表和可操作的記錄檔中使用。 根據本節中的規格格式化資料檔案。
-seo-description: 資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，並在「對象最佳化」報表和可操作的記錄檔中使用。 根據本節中的規格格式化資料檔案。
+description: 資料檔案包含曝光、點按或轉換資料。 正確格式化後，您可將此資料匯入Audience Manager，並用於Audience Optimization報表和可操作的記錄檔。 根據本節中的規格格式化資料檔案。
+seo-description: 資料檔案包含曝光、點按或轉換資料。 正確格式化後，您可將此資料匯入Audience Manager，並用於Audience Optimization報表和可操作的記錄檔。 根據本節中的規格格式化資料檔案。
 seo-title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 solution: Audience Manager
 title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
-feature: log files
+feature: 日誌檔案
+exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1044'
 ht-degree: 5%
 
 ---
 
-
 # 受眾最佳化報表的資料檔案和可操作的記錄檔 {#data-files-for-audience-optimization-reports}
 
-資料檔案包含曝光、點按或轉換資料。 當格式正確時，您可將此資料匯入Audience Manager，以在[對象最佳化報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中檢視，並透過[可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)使用資料建立特徵。 依照本節中的這些規格設定資料檔案的格式。
+資料檔案包含曝光、點按或轉換資料。 正確格式化後，您可將此資料匯入Audience Manager，以在[Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中檢視，並透過[可操作記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)使用資料建立特徵。 依照本節中的這些規格設定資料檔案的格式。
 
 ## 概述 {#overview}
 
-正確命名和格式化的資料檔案可讓您將曝光、點按或轉換資料匯入[對象最佳化報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 當您與未與[!DNL Audience Manager]整合且您想要在該報表套裝中處理其資料的合作夥伴合作時，這項功能十分有用。 此程式需要個別的檔案，才能產生曝光、點按和轉換資料。 請勿將這些事件混合在單一檔案中。
+正確命名和格式化的資料檔案可讓您將曝光、點按或轉換資料匯入[Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)。 當您與未與[!DNL Audience Manager]整合且您想要在該報表套裝中處理其資料的合作夥伴合作時，這項功能十分有用。 此程式需要個別的檔案，才能產生曝光、點按和轉換資料。 請勿將這些事件混合在單一檔案中。
 
 資料檔案必須隨附中繼資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參閱[中繼資料檔案的概述與對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
 ## 資料檔案的傳送方法{#delivery-methods}
 
-將您的曝光、點選或轉換資料檔案上傳至[!DNL Audience Manager]帳戶的Amazon S3目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
+將您的印象、點按或轉換資料檔案上傳至[!DNL Audience Manager]帳戶的AmazonS3目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
 
 >[!IMPORTANT]
 >
@@ -171,7 +171,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>此索引鍵值配對包含您的<span class="keyword"> Audience Manager</span>客戶ID。 </p> </td> 
+   <td colname="col2"> <p>此鍵值對包含您的<span class="keyword">Audience Manager</span>客戶ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 
