@@ -1,21 +1,21 @@
 ---
-description: Audience Marketplace讓資料提供者和購買者以自助方式，以最小的努力執行資料交易。 它提供的特殊功能會因您作為資料購買者或資料銷售者的角色而有所不同。 事實上，你甚至可以同時做買家和賣家。 此外，如果情況無法改善，Audience Marketplace會處理資料供應商與銷售商之間的合約、付款和付款。
-keywords: Google analytics
-seo-description: Audience Marketplace讓資料提供者和購買者以自助方式，以最小的努力執行資料交易。 它提供的特殊功能會因您作為資料購買者或資料銷售者的角色而有所不同。 事實上，你甚至可以同時做買家和賣家。 此外，如果情況無法改善，Audience Marketplace會處理資料供應商與銷售商之間的合約、付款和付款。
+description: Audience Marketplace可讓資料提供者和購買者以自助方式，以最小的努力執行資料交易。 它提供的特殊功能會因您作為資料購買者或資料銷售者的角色而有所不同。 事實上，你甚至可以同時做買家和賣家。 此外，如果情況無法改善，Audience Marketplace會處理資料供應商與銷售商之間的合約、帳單和付款。
+keywords: Google分析
+seo-description: Audience Marketplace可讓資料提供者和購買者以自助方式，以最小的努力執行資料交易。 它提供的特殊功能會因您作為資料購買者或資料銷售者的角色而有所不同。 事實上，你甚至可以同時做買家和賣家。 此外，如果情況無法改善，Audience Marketplace會處理資料供應商與銷售商之間的合約、帳單和付款。
 seo-title: 訪客交易市場
 solution: Audience Manager
 title: 訪客交易市場
-topic: DIL API
+topic-edit: DIL API
 uuid: a94d2ee7-d854-4e68-bd6b-42827ca72f67
-feature: Audience Marketplace
+feature: 訪客交易市場
+exl-id: ee608bcd-6827-4fac-be96-8e16ff390ec0
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 6%
+source-wordcount: '278'
+ht-degree: 7%
 
 ---
-
 
 # 訪客交易市場 {#audience-marketplace}
 
