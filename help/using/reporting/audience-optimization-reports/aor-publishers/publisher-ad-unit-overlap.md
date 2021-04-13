@@ -5,15 +5,15 @@ seo-title: 廣告單位重疊
 solution: Audience Manager
 title: 廣告單位重疊
 uuid: e4467e81-acbf-474e-b501-89d57395651f
-feature: audience optimization reports
+feature: 受眾最佳化報表
+exl-id: 08b219c6-bf0c-4473-9459-83b3657dfb15
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '435'
 ht-degree: 3%
 
 ---
-
 
 # 廣告單位重疊{#ad-unit-overlap}
 
