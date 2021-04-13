@@ -5,10 +5,10 @@ title: 我們的唯讀使用者為何能建立、編輯或刪除特徵和區段�
 feature: 支援
 exl-id: 3383d27e-9c12-4925-ace3-c3133727d9b9
 translation-type: tm+mt
-source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
