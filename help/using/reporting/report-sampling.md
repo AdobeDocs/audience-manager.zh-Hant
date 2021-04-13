@@ -5,15 +5,15 @@ seo-title: 所選 Audience Manager 報表中的資料取樣和錯誤率
 solution: Audience Manager
 title: 所選 Audience Manager 報表中的資料取樣和錯誤率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
-feature: reporting reference
+feature: 報告參考參考
+exl-id: 0b7f9423-0859-4fa8-926b-e4858eed2294
 translation-type: tm+mt
-source-git-commit: 397be3f44bf865633140bb45630a78be0a0d2219
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 7%
 
 ---
-
 
 # 所選 Audience Manager 報表中的資料取樣和錯誤率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
@@ -60,7 +60,7 @@ Overlap reports ([trait-to-trait](/help/using/reporting/dynamic-reports/trait-tr
 
 ## 使用Minhash抽樣方法{#minhash}
 
-基於[Minhash](https://en.wikipedia.org/wiki/MinHash)取樣方法，Audience Manager使用新方法在單置換雜湊資料草圖上計算特徵和分段估計。 該方法比標準Jaccard相似度估計器產生的方差小。 請參閱以下章節，瞭解使用此方法的報表。
+基於[Minhash](https://en.wikipedia.org/wiki/MinHash)採樣方法，Audience Manager在單置換散列資料草圖上使用一種新的方法來計算特徵和分段估計。 該方法比標準Jaccard相似度估計器產生的方差小。 請參閱以下章節，瞭解使用此方法的報表。
 
 <!--
 
@@ -89,4 +89,4 @@ Reports that use Minhash sampling methodology:
 |--- |--- |
 | [可定](../features/addressable-audiences.md) 址的受眾資料（客戶和群體層級資料）。 | [重疊報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特徵對特徵、區段對特徵和區段對區段） |
 | [[!UICONTROL Profile Merge Rule]的「裝置總數」量度。](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics) | [特徵建議](/help/using/features/segments/trait-recommendations.md) |
-| [Data ](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)  [!UICONTROL Search] Explorer會在標籤和任何  [!UICONTROL Saved Searches] | [Audience Marketplace建議](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
+| [Data ](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)  [!UICONTROL Search] Explorer會在標籤和任何  [!UICONTROL Saved Searches] | [Audience MarketplaceRecommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
