@@ -4,15 +4,15 @@ seo-description: '本頁包含如何結合離線CRM資料與即時行為資料�
 seo-title: 工作流 C - 以結合離線資料的驗證活動為基礎的個人化
 solution: Audience Manager
 title: 工作流 C - 以結合離線資料的驗證活動為基礎的個人化
-feature: People-Based Destinations
+feature: 以人為本的目的地
+exl-id: 24f877ce-089e-484c-9a70-8fce1a10a649
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '920'
 ht-degree: 5%
 
 ---
-
 
 # 工作流 C - 以結合離線資料的驗證活動為基礎的個人化 {#workflow-c}
 
@@ -44,13 +44,13 @@ ht-degree: 5%
 1. 使用下拉式選單來選取此資料來源的&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;標籤。
    >[!IMPORTANT]
    >
-   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中雜湊資料。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
+   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中對資料進行雜湊處理。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 
    >[!NOTE]
    >
-   > 如需如何將離線資料匯入Audience Manager以用於人員型目標的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
+   > 如需如何將離線資料匯入Audience Manager人員型目的地的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
 
 觀看以下視訊，以取得如何建立[!UICONTROL People-Based Destinations]資料來源的教學課程影片。
 
@@ -110,18 +110,18 @@ ht-degree: 5%
 
 ## 步驟5 —— 配置基於人的平台身份驗證{#configure-authentication}
 
-1. 登入您的Audience Manager帳戶並前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
+1. 登入您的Audience Manager帳戶，並前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
    ![以人為本的整合](assets/pbd-config.png)
 2. 按一下 **[!UICONTROL Add Account]**.
 3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表，選取您要設定整合的平台。
    ![以人為本的平台](assets/pbd-add.png)
 4. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
-5. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
+5. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該在該處看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
 6. Audience Manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
 
 >[!IMPORTANT]
 >
->Audience Manager會透過驗證Token處理與社交平台的整合，驗證Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
+>Audience Manager會透過驗證Token處理與社交平台的整合，這些Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
 
 ## 步驟6 —— 建立基於人的目標{#create-destination}
 
