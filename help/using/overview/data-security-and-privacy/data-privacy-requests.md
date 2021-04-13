@@ -3,24 +3,24 @@ description: 本文件說明與 Audience Manager 資料隱私權法規遵循相�
 seo-description: 本文件說明與 Audience Manager 資料隱私權法規遵循相關的技術細節。
 seo-title: 資料隱私權請求
 solution: Audience Manager
-keywords: GDPR UI, GDPR API, CCPA, privacy
+keywords: GDPR UI、GDPR API、CCPA、隱私權
 title: 資料隱私權請求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: data governance & privacy
+feature: 資料管理與隱私權
+exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
 translation-type: tm+mt
-source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1486'
 ht-degree: 61%
 
 ---
-
 
 # 資料隱私權請求 {#data-privacy-requests}
 
 ## 概述 {#overview}
 
-本檔案提供管理個別資料隱私權和退出要求的概述，您可透過[隱私權服務UI](https://privacyui.cloud.adobe.io/)和&#x200B;**[!DNL Privacy Service API]**&#x200B;傳送至[!DNL Audience Manager]。
+本檔案提供管理個別資料隱私權和退出要求的概觀，您可透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io/)和&#x200B;**[!DNL Privacy Service API]**&#x200B;傳送至[!DNL Audience Manager]。
 
 這些工具可讓您傳送在[!DNL GDPR]和[!DNL CCPA]下提出的消費者資料隱私權要求。
 
@@ -31,13 +31,13 @@ ht-degree: 61%
 * 透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。請參閱[此處](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)的文件。
 * 透過 **[!DNL Privacy Service API]**。請參閱[這裡](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md)和[!DNL API]參考[這裡](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)的說明檔案。
 
-傳送個別資料隱私權要求時，您可以提交任何[!DNL Audience Manager]識別碼(ID)，如&#x200B;**[Audience Manager識別碼](data-privacy-ids.md)**&#x200B;一節所述，以及其各自的命名空間ID（資料來源ID）。
+在傳送個別資料隱私權要求時，您可以提交任何[!DNL Audience Manager]識別碼(ID)，如&#x200B;**[Audience Manager識別碼](data-privacy-ids.md)**&#x200B;一節所述，以及其各自的命名空間ID（資料來源ID）。
 
 [Privacy Service](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html) 支援兩種請求：資料存取和資料刪除請求。
 
 ## 資料存取請求 {#access-data}
 
-您可以透過[隱私權服務UI](https://privacyui.cloud.adobe.io)（說明檔案[此處](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)）或呼叫隱私權服務API（說明檔案[此處](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)和[!DNL API]參考[此處](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)）來傳送個別資料存取要求。
+您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io)（說明檔案[此處](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)）或呼叫Privacy ServiceAPI（說明檔案[此處](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)和[!DNL API]參考[此處](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)）來傳送個別資料存取要求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -47,7 +47,7 @@ ht-degree: 61%
 
 ## 資料刪除請求 {#delete-data}
 
-您可以透過[隱私權服務UI](https://privacyui.cloud.adobe.io)(documentation [here](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md))或呼叫隱私權服務API(documentation [here](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) and [!DNL API] reference [here](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml))來傳送資料刪除要求。
+您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io)（說明檔案[此處](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)）或呼叫Privacy ServiceAPI（說明檔案[此處](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html)和[!DNL API]參考[此處](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)）來傳送資料刪除要求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
