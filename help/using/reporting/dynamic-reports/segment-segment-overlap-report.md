@@ -5,15 +5,15 @@ seo-title: 區段至區段重疊報表
 solution: Audience Manager
 title: 區段至區段重疊報表
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
-feature: overlap reports
+feature: 重疊報表
+exl-id: 43a8ea20-3197-4623-a03a-bfe40e5049cd
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '377'
 ht-degree: 11%
 
 ---
-
 
 # 區段至區段重疊報表{#segment-to-segment-overlap-report}
 
@@ -21,7 +21,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的[RBAC使用者群組](/help/using/features/administration/administration-overview.md)，從您有權存取的資料來源看到區段。
+>Audience Manager中的重疊報告遵循RBAC原則。 您只能根據您所屬的[RBAC使用者群組](/help/using/features/administration/administration-overview.md)，從您有權存取的資料來源看到區段。
 
 <!-- 
 
@@ -69,7 +69,7 @@ r_s2s_data_pop.xml
 | **[!UICONTROL Base Segment Uniques]** | 基本區段中的獨特訪客數。 |
 | **[!UICONTROL Base Segment Uniques]** | 重疊區段中的獨特訪客數。 |
 | **[!UICONTROL Overlapping Uniques]** | 比較區段之間共用的獨特訪客數。 |
-| **[!UICONTROL Overlap %]** | 若要取得重疊百分比，Audience Manager使用下列公式：重疊唯一值/（基本段唯一值+重疊段唯一值——重疊唯一值） |
+| **[!UICONTROL Overlap %]** | 要獲得重疊%,Audience Manager使用以下公式：重疊唯一值/（基本段唯一值+重疊段唯一值——重疊唯一值） |
 
 
 
@@ -81,3 +81,4 @@ r_s2s_data_pop.xml
 >* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
 >* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
 >* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
+
