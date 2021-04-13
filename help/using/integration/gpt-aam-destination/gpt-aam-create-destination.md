@@ -1,27 +1,27 @@
 ---
-description: 您可以透過用戶端（瀏覽器端）整合或伺服器端整合，將合格的區段傳送至Google Ad Manager。 如果您選擇用戶端整合，您必須在Audience Manager中為Google Publisher標籤建立Cookie型目標。
-seo-description: 您可以透過用戶端（瀏覽器端）整合或伺服器端整合，將合格的區段傳送至Google Ad Manager。 如果您選擇用戶端整合，您必須在Audience Manager中為Google Publisher標籤建立Cookie型目標。
+description: 您可以透過用戶端（瀏覽器端）整合或伺服器端整合，將合格的區段傳送至Google Ad Manager。 如果您選擇用戶端整合，則必須為Audience Manager中的Google Publisher標籤建立Cookie型目標。
+seo-description: 您可以透過用戶端（瀏覽器端）整合或伺服器端整合，將合格的區段傳送至Google Ad Manager。 如果您選擇用戶端整合，則必須為Audience Manager中的Google Publisher標籤建立Cookie型目標。
 seo-title: 建立 GPT 目的地
 solution: Audience Manager
 title: 建立 GPT 目的地
 uuid: e3bbf327-a7e0-48da-bc84-8f531b7f6750
-feature: Third Party Integrations
+feature: 協力廠商整合
+exl-id: 26373826-de06-49e5-82fd-bb6588a73fb9
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '325'
 ht-degree: 7%
 
 ---
 
-
 # 建立 GPT 目的地 {#create-a-gpt-destination}
 
-您可以透過用戶端（瀏覽器端）整合或伺服器端整合，將合格區段傳送至[!DNL Google Ad Manager]。 如果您選擇用戶端整合，您必須在Audience Manager中為[!DNL Google Publisher Tags]建立以Cookie為基礎的目標。
+您可以透過用戶端（瀏覽器端）整合或伺服器端整合，將合格區段傳送至[!DNL Google Ad Manager]。 如果您選擇用戶端整合，則必須在Audience Manager中建立[!DNL Google Publisher Tags]的Cookie型目標。
 
 ## 目的地
 
-在Audience Manager中，*`destination`*&#x200B;是任何其他系統（廣告伺服器、[!DNL DSP]廣告網路等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 提供可讓您建立和管理這些資料傳送程式的工具。Audience Manager目標功能位於&#x200B;*[!UICONTROL Audience Data]>[!UICONTROL Destinations]*。 若要開始，請按一下&#x200B;**[!UICONTROL Add New Destination]**，然後遵循下列步驟。
+在Audience Manager中，*`destination`*&#x200B;是任何其他系統（廣告伺服器、[!DNL DSP]和廣告網路等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder] 提供可讓您建立和管理這些資料傳送程式的工具。Audience Manager目標功能位於&#x200B;*[!UICONTROL Audience Data]>[!UICONTROL Destinations]*。 若要開始，請按一下&#x200B;**[!UICONTROL Add New Destination]**，然後遵循下列步驟。
 
 ## 基本資訊
 
