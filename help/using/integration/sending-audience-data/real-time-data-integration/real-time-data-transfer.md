@@ -5,19 +5,19 @@ seo-title: 即時傳入資料擷取
 solution: Audience Manager
 title: 即時傳入資料擷取
 uuid: 43cb0ebc-6c36-4391-bbfb-6b203d63c69a
-feature: Inbound Data Transfers
+feature: 傳入資料傳輸
+exl-id: d243c74c-3a29-4dbf-a4c7-43ea526a9d7b
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 7%
+source-wordcount: '198'
+ht-degree: 8%
 
 ---
 
-
 # 即時傳入資料擷取 {#real-time-inbound-data-ingestion}
 
-即時傳入資料擷取程式會使用使用者瀏覽器的一連串`HTTP`要求，將資料傳入Audience Manager。
+即時傳入資料擷取程式使用使用者瀏覽器的一連串`HTTP`要求，將資料傳入Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
