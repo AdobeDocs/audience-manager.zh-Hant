@@ -5,17 +5,17 @@ seo-description: 「可定址對象」功能和使用案例的概述。
 seo-title: 可定址受眾
 solution: Audience Manager
 title: 可定址受眾
-topic: DIL API
+topic-edit: DIL API
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
-feature: Match Rates
+feature: 符合率
+exl-id: 2728e4a8-522c-423f-a6ef-e4dd624f69e5
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1827'
 ht-degree: 1%
 
 ---
-
 
 # [!UICONTROL Addressable Audiences] {#addressable-audiences}
 
@@ -129,7 +129,7 @@ ht-degree: 1%
 
 | 量度 | 說明 |
 |---|---|
-| [!UICONTROL Segment Addressable Audience] | 在報告回顧期間屬於[!UICONTROL segment]並在您的網站上同步作用中ID的使用者人數。 區段可以透過[Audience Marketplace](../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)中取得的[!UICONTROL traits]，包含您自己的第一方資料以及第二方和第三方資料。<br><br>提示：當與1天回顧期間搭配使用時，此度量可協助您瞭解您的目前狀態 [!UICONTROL segments]。這是因為[!UICONTROL Segment Addressable Audience]量度代表在前一天中一直留在[!UICONTROL segment]中的使用者。 結合此點與[!DNL Audience Manager]每天重新整理[!UICONTROL Addressable Audiences]的事實，結合此量度和回顧期間可提供[!UICONTROL segments]的最新快照。 |
+| [!UICONTROL Segment Addressable Audience] | 在報告回顧期間屬於[!UICONTROL segment]並在您的網站上同步作用中ID的使用者人數。 區段可以透過[Audience Marketplace](../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)中取得的[!UICONTROL traits]，包含您自己的第一方資料、第二方資料和第三方資料。<br><br>提示：當與1天回顧期間搭配使用時，此度量可協助您瞭解您的目前狀態 [!UICONTROL segments]。這是因為[!UICONTROL Segment Addressable Audience]量度代表在前一天中一直留在[!UICONTROL segment]中的使用者。 結合此點與[!DNL Audience Manager]每天重新整理[!UICONTROL Addressable Audiences]的事實，結合此量度和回顧期間可提供[!UICONTROL segments]的最新快照。 |
 | [!UICONTROL Total Segment Population] | 報告回顧期間，屬於[!UICONTROL segment]成員的所有設備的計數。 |
 | [!UICONTROL Segment Match Rate] | [!UICONTROL Segment Addressable Audience] 在 [!UICONTROL Total Segment Population] ÷以百分比表示。 |
 
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 * [!UICONTROL Customer Addressable Audiences] 是以您自己 [!UICONTROL trait] 的第 *一方資料的實現為基礎*。此量度可提供您與資料合作夥伴整合的廣泛、完整檢視。
 
-* [!UICONTROL Segment Addressable Audiences] 是以您自己第一 *方資料的區段資格，加上第二方和第三方資料為基礎*。此量度提供定位平台中[!UICONTROL addressable audiences]的精細、更精確的檢視。
+* [!UICONTROL Segment Addressable Audiences] 是以您自己第一 *方資料的區段資格，加上第二方及第三方資料為基礎*。此量度提供定位平台中[!UICONTROL addressable audiences]的精細、更精確的檢視。
 
 ## [!UICONTROL Addressable Audiences] {#low-match-rates}匹配率低的原因
 
