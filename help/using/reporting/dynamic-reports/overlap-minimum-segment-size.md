@@ -5,15 +5,15 @@ seo-title: 重疊報表更新排程和最小區段大小
 solution: Audience Manager
 title: 重疊報表更新排程和最小區段大小
 uuid: 35c1cb39-e28d-4d20-88c9-5ff4fe154e9e
-feature: overlap reports
+feature: 重疊報表
+exl-id: 89fa9d92-8676-4706-9fab-22c35763b218
 translation-type: tm+mt
-source-git-commit: 33d844578c5cd620f9d4c33ec931ae0778aabb07
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '355'
 ht-degree: 5%
 
 ---
-
 
 # 重疊報表：更新排程和最小區段大小{#overlap-reports-update-schedule-and-minimum-segment-size}
 
@@ -42,7 +42,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>區段大小過小</b> </p> </td> 
-   <td colname="col2"> <p>假設您在UTC的週四上午12點之前建立區段，但其中的即時使用者總數少於70,000位。 除非符合使用者臨界值要求，否則此區段不會出現在<span class="wintitle">重疊報表</span>中。 此外，此區段必須符合星期四截止期間的使用者計數要求或之前。 如果不符合每週期限，則區段會顯示在下個星期日資料執行後一週的「重疊報表」中。<span class="wintitle"></span> </p> </td> 
+   <td colname="col2"> <p>假設您在UTC的週四上午12點之前建立區段，但其中的即時使用者總數少於70,000名。 除非符合使用者臨界值要求，否則此區段不會出現在<span class="wintitle">重疊報表</span>中。 此外，此區段必須符合星期四截止期間的使用者計數要求或之前。 如果不符合每週期限，則區段會顯示在下個星期日資料執行後一週的「重疊報表」中。<span class="wintitle"></span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>建立的區段太遲</b> </p> </td> 
