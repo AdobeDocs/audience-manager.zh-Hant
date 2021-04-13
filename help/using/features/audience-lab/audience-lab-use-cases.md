@@ -4,17 +4,17 @@ seo-description: Audience Lab可讓您使用基準區段來建立測試群組，
 seo-title: Audience Lab 使用案例
 solution: Audience Manager
 title: Audience Lab 使用案例
-topic: DIL API
+topic-edit: DIL API
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
 feature: Audience Lab
+exl-id: b68f48bd-0d5d-4b72-84f3-a6f3acea6c49
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 2%
 
 ---
-
 
 # Audience Lab 使用案例 {#audience-lab-use-cases}
 
