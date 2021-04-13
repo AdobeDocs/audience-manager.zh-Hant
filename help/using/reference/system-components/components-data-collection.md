@@ -1,23 +1,23 @@
 ---
-description: 資料收集元件包括資料收集伺服器、DIL API、傳入伺服器到伺服器的資料傳輸和記錄檔。
-seo-description: 資料收集元件包括資料收集伺服器、DIL API、傳入伺服器到伺服器的資料傳輸和記錄檔。
+description: 資料收集元件包括資料收集伺服器、DILAPI、傳入伺服器到伺服器的資料傳輸，以及記錄檔。
+seo-description: 資料收集元件包括資料收集伺服器、DILAPI、傳入伺服器到伺服器的資料傳輸，以及記錄檔。
 seo-title: 資料收集元件
 solution: Audience Manager
 title: 資料收集元件
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
-feature: system components
+feature: 系統元件
+exl-id: 7ae407f1-f1e4-4545-baa2-bcca40aad76f
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 6%
+source-wordcount: '764'
+ht-degree: 7%
 
 ---
 
-
 # 資料收集元件{#data-collection-components}
 
-資料收集元件包括資料收集伺服器、DIL API、傳入伺服器到伺服器的資料傳輸和記錄檔。
+資料收集元件包括資料收集伺服器、DILAPI、傳入伺服器到伺服器的資料傳輸，以及記錄檔。
 
 <!-- 
 
@@ -79,15 +79,15 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
  -->
 
-如果特徵在17天內不活動，[!UICONTROL PCS]會刷新這些特徵。 但是，這些特徵並沒有消失。 它們儲存在Hadoop中。 如果使用者在另一時間再次出現，Hadoop會將其所有特性推回至[!UICONTROL PCS]，通常是在24小時內完成。
+如果特徵在17天內不活動，[!UICONTROL PCS]會刷新這些特徵。 但是，這些特徵並沒有消失。 它們被儲存在Hadoop。 如果使用者在另一時間再次出現，則Hadoop會將其所有特徵推回至[!UICONTROL PCS]，通常是在24小時內。
 
 **其他 [!UICONTROL DCS/PCS] 程式：隱私權選擇退出**
 
-這些伺服器系統可處理隱私權和使用者選擇退出要求。 如果使用者已選擇退出資料收集，則不會在記錄檔中收集使用者Cookie資訊。 如需我們隱私權政策的詳細資訊，請參閱[Adobe隱私權中心](https://www.adobe.com/tw/privacy/experience-cloud.html)。
+這些伺服器系統可處理隱私權和使用者選擇退出要求。 如果使用者已選擇退出資料收集，則不會在記錄檔中收集使用者Cookie資訊。 有關我們的隱私權政策的詳細資訊，請參閱[Adobe隱私權中心](https://www.adobe.com/tw/privacy/experience-cloud.html)。
 
 ## Data Integration Library (DIL) {#dil}
 
-[!UICONTROL DIL] 是您放在頁面上進行資料收集的程式碼。如需可用服務與方法的詳細資訊，請參閱[DIL API](../../dil/dil-overview.md)。
+[!UICONTROL DIL] 是您放在頁面上進行資料收集的程式碼。如需可用服務與方法的詳細資訊，請參閱[DILAPI](../../dil/dil-overview.md)。
 
 ## 入站伺服器到伺服器{#inbound-outbound-server}
 
