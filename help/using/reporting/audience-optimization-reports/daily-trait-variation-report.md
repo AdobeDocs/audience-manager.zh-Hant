@@ -5,15 +5,15 @@ seo-title: 每日特徵變化報表
 solution: Audience Manager
 title: 每日特徵變化報表
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
-feature: audience optimization reports
+feature: 受眾最佳化報表
+exl-id: c84a3f13-70fb-4167-b05b-de5cf518ec03
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 1%
+source-wordcount: '776'
+ht-degree: 2%
 
 ---
-
 
 # 每日特徵變化報表 {#daily-trait-variation-report}
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Audience Manager中的「每日特徵變化」報表符合RBAC原則。 您只能根據您所屬的[RBAC用戶組](/help/using/features/administration/administration-overview.md)，查看您有權訪問的資料源中的特徵。
+>Audience Manager中的「每日特徵變化」報告遵循RBAC原則。 您只能根據您所屬的[RBAC用戶組](/help/using/features/administration/administration-overview.md)，查看您有權訪問的資料源中的特徵。
 
 標準差會測量與平均值（或平均／預期值）的偏差或偏差量。 標準差低表示資料點趨近於平均值。 高標準差表示資料點分佈在大範圍值上。
 
