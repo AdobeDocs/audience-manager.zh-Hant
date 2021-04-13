@@ -5,15 +5,15 @@ seo-title: 透過像素呼叫擷取行銷活動的點按資料
 solution: Audience Manager
 title: 透過像素呼叫擷取行銷活動的點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
-feature: Integration with Campaign
+feature: Adobe Campaign整合
+exl-id: 41b169bf-3727-4ed7-b74f-fea75244d2cb
 translation-type: tm+mt
-source-git-commit: 231d8e537cf5b4f29b1c4f284fe1b3ffe6d187a9
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '689'
 ht-degree: 11%
 
 ---
-
 
 # 透過像素呼叫擷取行銷活動的點按資料 {#capturing-campaign-click-data-via-pixel-calls}
 
@@ -48,7 +48,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 支援的巨集
 
-按一下事件支援下表中列出的宏。 巨集是自含代碼的一小部分，當廣告標籤載入促銷活動和使用者追蹤時會啟動。 宏將隨目標[!DNL URL]一起傳遞，只要它們標有以下格式：`%macro%`。 某些鍵沒有宏，而接受硬編碼ID值。 如果您要分析[對象最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的資料，則需要接受硬式編碼值的索引鍵。
+按一下事件支援下表中列出的宏。 巨集是自含代碼的一小部分，當廣告標籤載入促銷活動和使用者追蹤時會啟動。 宏將隨目標[!DNL URL]一起傳遞，只要它們標有以下格式：`%macro%`。 某些鍵沒有宏，而接受硬編碼ID值。 如果要分析[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的資料，則需要接受硬編碼值的鍵。
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -67,17 +67,17 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>無宏。 </p> <p>接受硬式編碼ID值。 </p> </td> 
-   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。 請注意，這與Audience Manager資料來源無關。</p> <p> <span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>廣告主 ID.</p> <p>廣告商資料來源的整合代碼。 請注意，這與Audience Manager資料來源無關。</p> <p> <span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
-   <td colname="col2"> <p>業務單位的數值ID。 </p> <p> <span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>業務單位的數值ID。 </p> <p> <span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p> <span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p> <span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
@@ -97,7 +97,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"></span> Experience Cloud ID (ECID). 如需ECID的詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience Cloud ID</a>。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"></span> Experience Cloud ID (ECID). 如需ECID的詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie和Experience CloudID</a>。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -122,7 +122,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_src</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_src%</code> </p> </td> 
-   <td colname="col2"> <p>Audience Manager提取中繼資料的來源DPID。 </p> <p>必填. </p> </td> 
+   <td colname="col2"> <p>源的DPID,Audience Manager從中提取元資料。 </p> <p>必填. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_uuid</code> </p> </td> 
@@ -169,10 +169,10 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 ## 其他功能- [!UICONTROL Audience Optimization Reports]
 
-您可以使用像素呼叫來為[對象最佳化報表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)提供動力。 如果您想使用像素來為報表供電，請參閱[中繼資料檔案的概述和對應。](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
+您可以使用像素呼叫來為[Audience Optimization報表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)供電。 如果您想使用像素來為報表供電，請參閱[中繼資料檔案的概述和對應。](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
 
 
 >[!MORELIKETHIS]
 >
->* [受眾最佳化報告的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+>* [用於Audience Optimization報告的資料和元資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
