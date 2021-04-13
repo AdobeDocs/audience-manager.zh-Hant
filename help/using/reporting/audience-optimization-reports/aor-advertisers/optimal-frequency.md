@@ -5,15 +5,15 @@ seo-title: 最佳頻率報表
 solution: Audience Manager
 title: 最佳頻率報表
 uuid: 50459ce9-39ac-4401-93dd-7526937fc742
-feature: audience optimization reports
+feature: 受眾最佳化報表
+exl-id: bf445fde-5cac-40ee-aa67-b4523391a6f1
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 3%
+source-wordcount: '245'
+ht-degree: 4%
 
 ---
-
 
 # 最佳頻率報表{#optimal-frequency-report}
 
