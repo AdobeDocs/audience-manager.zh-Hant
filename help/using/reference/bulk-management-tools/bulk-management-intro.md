@@ -1,20 +1,20 @@
 ---
 description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
-keywords: baaam;BAAAM;download baaam
+keywords: baam;BAAM；下載baam
 seo-description: 批量管理工具可讓您使用單一作業一次建立和管理多個物件。 您可以使用批量管理工具來處理資料來源、衍生訊號、目的地、資料夾、區段和特徵。
 seo-title: 大量管理快速入門
 solution: Audience Manager
 title: 大量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
-feature: baaam
+feature: BAAAM
+exl-id: 5603146e-7172-4181-90ad-4606129176dd
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 3%
+source-wordcount: '715'
+ht-degree: 4%
 
 ---
-
 
 # 大量管理快速入門{#getting-started-with-bulk-management}
 
@@ -122,4 +122,3 @@ c_bulk_start.xml
 >[!NOTE]
 >
 >處理大量請求時，工作表可能會停止響應，並且看起來不活動。 在這些情況下，別管它。 當批量請求完成時，工作表會變成回應。 如果工作表長時間沒有響應，請參閱[疑難排解部分](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
-
