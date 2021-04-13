@@ -1,19 +1,19 @@
 ---
-description: 傳送或更新中繼資料檔案至您Audience Manager帳戶的特殊Amazon S3目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
-seo-description: 傳送或更新中繼資料檔案至您Audience Manager帳戶的特殊Amazon S3目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
+description: 傳送或更新中繼資料檔案至您Audience Manager帳戶的特殊AmazonS3目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
+seo-description: 傳送或更新中繼資料檔案至您Audience Manager帳戶的特殊AmazonS3目錄。 如需傳送／目錄路徑、檔案處理時間和更新的相關資訊，請參閱本節。
 seo-title: 中繼資料檔案的傳送方法
 solution: Audience Manager
 title: 中繼資料檔案的傳送方法
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
-feature: log files
+feature: 日誌檔案
+exl-id: 6ef2a80c-2574-4446-b755-28027818b5eb
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '391'
 ht-degree: 4%
 
 ---
-
 
 # 中繼資料檔案的傳送方法{#delivery-methods-for-metadata-files}
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
-> 請連絡您的Audience Manager顧問或客戶服務以開始使用，並設定中繼資料檔案的[!DNL Amazon S3]目錄。
+> 請連絡您的Audience Manager顧問或客戶服務以開始使用並設定中繼資料檔案的[!DNL Amazon S3]目錄。
 
 ## 傳送路徑語法與範例{#syntax}
 
