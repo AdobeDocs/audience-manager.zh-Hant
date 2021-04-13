@@ -1,19 +1,19 @@
 ---
 description: 說明相同特徵和時段報表之間獨特使用者總計的變化。
-seo-description: 說明Adobe Audience Manager中相同特徵和時段報表之間獨特使用者總數的變化
-seo-title: 計算AAM中重疊和一般報表中的獨特使用者
+seo-description: 說明Adobe Audience Manager相同特徵和時段報表之間獨特使用者總計的差異
+seo-title: 在重疊和一般報表中計算獨特使用者AAM
 solution: Audience Manager
 title: 計算重疊和一般報表中的不重複使用者數
 uuid: 450f6a8c-f363-43de-b2d8-0a156f14ecae
-feature: reporting reference
+feature: 報告參考參考
+exl-id: 439e7e8e-0c2e-4d3e-8148-61b9d57bf4df
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '174'
 ht-degree: 10%
 
 ---
-
 
 # 計算重疊和一般報表中的不重複使用者數{#counting-unique-users-in-overlap-and-general-reports}
 
