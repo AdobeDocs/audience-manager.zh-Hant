@@ -1,23 +1,23 @@
 ---
-description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出。
-seo-description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出。
+description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出方式。
+seo-description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出方式。
 seo-title: 平台架構資料流圖
 solution: Audience Manager
 title: 平台架構資料流圖
 uuid: d845af1d-f448-4f4c-948e-b2c89f125086
-feature: system components
+feature: 系統元件
+exl-id: 6543df7d-aac5-4181-87a8-bc47edd2e951
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '199'
+ht-degree: 3%
 
 ---
 
-
 # 平台架構：資料流量圖{#platform-architecture-data-flow-map}
 
-此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出。
+此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料在Audience Manager元件之間的流入、流出方式。
 
 ## 如何讀取此映射{#compmap}
 
@@ -34,4 +34,3 @@ c_compmap.xml
 如需系統說明和摘要，請參閱資料[action](../../reference/system-components/components-data-action.md)、[collection](../../reference/system-components/components-data-collection.md)、[processing](../../reference/system-components/components-data-processing.md)和[標籤管理](../../reference/system-components/components-tag-management.md)區段。
 
 ![](assets/flowmap.png)
-
