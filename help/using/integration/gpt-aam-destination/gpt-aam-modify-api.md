@@ -1,25 +1,25 @@
 ---
-description: 在呼叫Google Publisher標籤。setTargeting方法前，新增if陳述式以檢查Audience Manager Cookie。
-seo-description: 在呼叫Google Publisher標籤。setTargeting方法前，新增if陳述式以檢查Audience Manager Cookie。
+description: 在呼叫Google Publisher標籤。setTargeting方法前，新增if陳述式以檢查Audience ManagerCookie。
+seo-description: 在呼叫Google Publisher標籤。setTargeting方法前，新增if陳述式以檢查Audience ManagerCookie。
 seo-title: 修改 GPT setTargeting API 呼叫
 solution: Audience Manager
 title: 修改 GPT setTargeting API 呼叫
 uuid: 0cd38f30-5d29-4511-a779-d32587f1dafb
-feature: Third Party Integrations
+feature: 協力廠商整合
+exl-id: cc34b7e8-7bbd-463f-9378-9d3a40c49594
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 9%
 
 ---
 
-
 # 修改GPT `setTargeting` API調用{#modify-the-gpt-settargeting-api-call}
 
-在呼叫[!DNL Google Publisher Tag] `.setTargeting`方法之前，新增if陳述式以檢查Audience Manager Cookie。
+在呼叫[!DNL Google Publisher Tag] `.setTargeting`方法之前，新增if陳述式以檢查Audience ManagerCookie。
 
-## 使用`IF`陳述式檢查Audience Manager Cookie
+## 檢查Audience ManagerCookie是否具有`IF`語句
 
 `.setTargeting`方法會從Audience Manager目標Cookie和唯一使用者ID Cookie(`aam_uuid`)取得資料。 但是，如果`.setTargeting`在[!UICONTROL DIL]寫入這些Cookie之前被呼叫，或Cookie是空的，則頁面載入時可能會出現錯誤。 為避免此問題，請在檢查這些Cookie的`if`陳述式中包住`.setTargeting`方法。 如果未設定，則此語句會阻止`.setTargeting`調用`AamGpt`函式。
 
