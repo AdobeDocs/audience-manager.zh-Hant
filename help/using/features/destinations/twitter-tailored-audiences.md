@@ -4,15 +4,15 @@ seo-description: 本文說明如何針對新整合和現有整合設定Twitter�
 seo-title: 將為 Twitter 量身打造的受眾設定為自助服務以裝置為基礎的目的地
 solution: Audience Manager
 title: 將為 Twitter 量身打造的受眾設定為自助服務以裝置為基礎的目的地
-feature: 以人物為基礎的目的地
+feature: 以人為本的目的地
+exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
 translation-type: tm+mt
-source-git-commit: 6716c871562cd0203239897fc096033160e2fc13
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 4%
 
 ---
-
 
 # 將[!DNL Twitter Tailored Audiences]配置為基於自助設備的目標{#configure-twitter}
 
