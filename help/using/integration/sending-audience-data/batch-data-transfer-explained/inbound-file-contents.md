@@ -5,15 +5,15 @@ seo-title: 傳入資料檔案內容語法、無效字元、變數和範例
 solution: Audience Manager
 title: 傳入資料檔案內容語法、無效字元、變數和範例
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
-feature: Inbound Data Transfers
+feature: 傳入資料傳輸
+exl-id: 894f1923-6c78-41d2-b6a2-eebf56eaa29e
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1196'
 ht-degree: 4%
 
 ---
-
 
 # 傳入資料檔案內容：語法、無效字元、變數和範例 {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
@@ -59,8 +59,8 @@ ht-degree: 4%
    <td colname="col1"> <p> <code> <i>User ID </i> </code> </p> </td> 
    <td colname="col2"> <p>使用者ID可以是： </p> <p> 
      <ul id="ul_25168355353545A9A049D0083403025E"> 
-      <li id="li_23829FE2F6464E33859B3E388FCD106B">由<span class="keyword"> Audience Manager </span>(<a href="../../../reference/ids-in-aam.md"> Audience Manager UUID </a>)指派的唯一使用者ID。 </li> 
-      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">在CRM系統中指派的唯一使用者ID（在Audience Manager </a>中為<a href="../../../reference/ids-in-aam.md"> DPUUID）。 </a></li> 
+      <li id="li_23829FE2F6464E33859B3E388FCD106B">由<span class="keyword">Audience Manager</span>(<a href="../../../reference/ids-in-aam.md">Audience ManagerUUID </a>)指派的唯一用戶ID。 </li> 
+      <li id="li_76961F20DD3F4554AD2ADFB773F975DB">在CRM系統中指派的唯一使用者ID(<a href="../../../reference/ids-in-aam.md"> DPUUID，在Audience Manager</a>中)。 </li> 
       <li id="li_52ABF6CCBCD147E2BD84D056F7461BA0">行動作業系統公開的行動Android或iOS裝置ID，其原始未修改的格式。 </li> 
      </ul> </p> <p>針對行動ID: </p> <p> 
      <ul id="ul_717A17E11565427E9E2D9D7554BB231B"> 
@@ -74,7 +74,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>trait ID </i> </code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager </span>特徵ID。 我們要求您在傳入資料檔案中僅包含<i>已登入的特徵</i>。 我們不會在傳入資料傳輸中處理任何其他特徵類型。 </p> <p> <p>注意： 可使用GET方法來尋找「特徵ID」，該方法會傳回所有特徵的詳細資訊。 如需詳細資訊，請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Audience Manager</span>特徵ID。 我們要求您在傳入資料檔案中僅包含<i>已登入的特徵</i>。 我們不會在傳入資料傳輸中處理任何其他特徵類型。 </p> <p> <p>注意： 可使用傳回所有特徵詳細資料的GET方法來尋找特徵ID。 如需詳細資訊，請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -93,11 +93,11 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> d_sid= </code> </p> </td> 
-   <td colname="col2"> <p><code> d_sid </code>首碼會告訴我們的系統ID是<span class="keyword"> Audience Manager </span>特徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET </code>方法傳回特徵ID。 請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </td>
+   <td colname="col2"> <p><code> d_sid </code>首碼會告訴我們的系統ID是<span class="keyword">Audience Manager</span>特徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET </code>方法傳回特徵ID。 請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
-   <td colname="col2"> <p>前置<code> d_unsid </code>的資料會從該特徵中移除使用者。 <code> overwrite </code>檔案中會忽略<code> d_unsid </code>首碼。 </p> <p><code> d_unsid= </code>首碼會告訴我們的系統ID是<span class="keyword"> Audience Manager </span>特徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET </code>方法傳回特徵ID。 請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </td>
+   <td colname="col2"> <p>前置<code> d_unsid </code>的資料會從該特徵中移除使用者。 <code> overwrite </code>檔案中會忽略<code> d_unsid </code>首碼。 </p> <p><code> d_unsid= </code>首碼會告訴我們的系統ID是<span class="keyword">Audience Manager</span>特徵ID。 這是使用者介面中顯示的相同ID。 您也可以使用API <code> GET </code>方法傳回特徵ID。 請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
@@ -226,7 +226,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> <p>具有鍵值對 </p> </td> 
-   <td colname="col2"> 此檔案資料使用金鑰值配對，將資料傳入至<span class="keyword"> Audience Manager </span>。 <p> 
+   <td colname="col2"> 此檔案資料使用鍵值對將資料傳遞到<span class="keyword">Audience Manager</span>。 <p> 
      <code>
        59767559181262060060278870901087098252&amp;nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
      </code> </p> </td> 
@@ -252,7 +252,7 @@ ht-degree: 4%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Audience Manager UUID </p> </td> 
+   <td colname="col1"> <p>Audience ManagerUUID </p> </td> 
    <td colname="col2"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-1"> 範例 1 </a> </p> </td> 
    <td colname="col3"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-2"> 範例 2 </a> </p> </td> 
    <td colname="col4"> <p> <a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md#example-3"> 範例3  </a> </p> </td> 
@@ -324,7 +324,7 @@ ht-degree: 4%
 59767559181262060060278870901087098252 <TAB> "product" = "tablet", "product" = "phone"
 ```
 
-### 範例4 {#example-4}
+### 範例5 {#example-4}
 
 使用`ic`前置詞發送[!UICONTROL trait] [!DNL Audience Manager] [!DNL UUIDs]的資格資訊。
 
@@ -338,7 +338,7 @@ ht-degree: 4%
 59767559181262060060278870901087098252 <TAB> ic=52,ic=55
 ```
 
-### 範例5 {#example-5}
+### 範例4 {#example-5}
 
 使用[!UICONTROL trait IDs]傳送[!UICONTROL trait]裝置的[!DNL Android]資格資訊。
 
