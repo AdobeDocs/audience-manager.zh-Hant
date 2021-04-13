@@ -4,15 +4,15 @@ seo-description: '本頁包含逐步指引，說明如何從僅離線的客戶�
 seo-title: 工作流程 B - 以僅限離線資料為基礎的個人化
 solution: Audience Manager
 title: 工作流程 B - 以僅限離線資料為基礎的個人化
-feature: People-Based Destinations
+feature: 以人為本的目的地
+exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1172'
 ht-degree: 6%
 
 ---
-
 
 # 工作流程 B - 以僅限離線資料為基礎的個人化 {#workflow-b}
 
@@ -23,17 +23,17 @@ ht-degree: 6%
 
 ## 步驟1 —— 板載離線特徵{#step-1-onboard-traits}
 
-在此案例中建立受眾細分的第一步，就是將您的離線客戶資料匯入Audience Manager。
+在此案例中建立受眾細分的第一步是將離線客戶資料帶入Audience Manager。
 
 >[!IMPORTANT]
 >
-> 在繼續之前，請確定您即將上線的客戶活動已在Audience Manager中定義，並具有對應的[已登入特徵](../traits/trait-and-segment-qualification-reference.md)。
+> 在繼續之前，請確定您即將上線的客戶活動已定義在具有相應[已登錄特徵](../traits/trait-and-segment-qualification-reference.md)的Audience Manager中。
 
-無論您現有的Audience Manager客戶ID([DPUUID](../../reference/ids-in-aam.md))是否是雜湊電子郵件，您都必須對包含[DPUUID](../../reference/ids-in-aam.md)的資料來源執行特性登入。
+無論您現有的Audience Manager客戶ID([DPUUIDs](../../reference/ids-in-aam.md))是否是雜湊電子郵件，您都必須對包含[DPUUIDs](../../reference/ids-in-aam.md)的資料來源執行特徵上線。
 
 ### 範例
 
-您想要從下表中為對應的已登入特徵ID限定客戶ID。 假設您的[DPUUIDs](../../reference/ids-in-aam.md)儲存在ID為99999的資料來源中，而您的Audience Manager合作夥伴ID為123。
+您想要從下表中為對應的已登入特徵ID限定客戶ID。 假設您的[DPUUIDs](../../reference/ids-in-aam.md)儲存在ID為999999的資料來源中，而您的Audience Manager合作夥伴ID為123。
 
 | 客戶ID(DPUUID) | 已登入特徵ID |
 | -------------------------------------- | ------------------- |
@@ -52,7 +52,7 @@ ht-degree: 6%
 ```
 
 檔案名如下所示：`ftp_dpm_999999_123_TIMESTAMP.sync.gz`。
-有關檔案名結構的詳細資訊，請參閱[Amazon S3入站資料檔案的名稱和檔案大小要求](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+有關檔案名結構的詳細資訊，請參閱[AmazonS3 Name and File Size Requirements for Inbound Data Files](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
 ## 步驟2 —— 配置資料源設定{#configure-data-source-settings}
 
@@ -82,13 +82,13 @@ ht-degree: 6%
 1. 使用下拉式選單來選取此資料來源的&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;標籤。
    >[!IMPORTANT]
    >
-   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中雜湊資料。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
+   >此選項僅將資料來源標示為包含使用特定演算法雜湊的資料。 Audience Manager不會在此步驟中對資料進行雜湊處理。 請確定您打算儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演算法雜湊。 否則，您將無法將它用於[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 
    >[!NOTE]
    >
-   > 如需如何將離線資料匯入Audience Manager以用於人員型目標的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
+   > 如需如何將離線資料匯入Audience Manager人員型目的地的常見問題，請參閱[資料入門](people-based-destinations-prerequisites.md#data-onboarding)。
 
 觀看以下視訊，以取得如何建立[!UICONTROL People-Based Destinations]資料來源的教學課程影片。
 
@@ -138,7 +138,7 @@ ht-degree: 6%
 
 [在這裡下載範例檔案](assets/c2c_id_999999_987654_1560431657.sync)。
 
-建立ID同步檔案後，您必須將它上傳至[!DNL Amazon S3]儲存貯體。 若要瞭解如何上傳ID同步檔案，請參閱[傳送批次資料至Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
+建立ID同步檔案後，您必須將它上傳至[!DNL Amazon S3]儲存貯體。 要瞭解如何上傳ID同步檔案，請參閱[將批次資料發送到Audience Manager](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)。
 
 ## 步驟4 —— 建立區段的描述檔合併規則{#create-profile-merge-rule}
 
@@ -157,18 +157,18 @@ ht-degree: 6%
 
 ## 步驟6 —— 配置基於人的平台身份驗證{#configure-authentication}
 
-1. 登入您的Audience Manager帳戶並前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
+1. 登入您的Audience Manager帳戶，並前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前已設定與社交平台的整合，您應該會在此頁面中看到它。 否則，頁面為空。
    ![以人為本的整合](assets/pbd-config.png)
 1. 按一下 **[!UICONTROL Add Account]**.
 1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表，選取您要設定整合的平台。
    ![以人為本的平台](assets/pbd-add.png)
 1. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
-1. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該會在其中看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
+1. 一旦您已驗證您的社交平台帳戶，就會將您重新導向至Audience Manager，您應該在該處看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
 1. Audience Manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 此通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
 
 >[!IMPORTANT]
 >
->Audience Manager會透過驗證Token處理與社交平台的整合，驗證Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
+>Audience Manager會透過驗證Token處理與社交平台的整合，這些Token會在特定時間後過期。 如需如何續約過期代號的詳細資訊，請參閱驗證代號續約。
 
 ## 步驟7 —— 建立基於人的目標{#create-destination}
 
