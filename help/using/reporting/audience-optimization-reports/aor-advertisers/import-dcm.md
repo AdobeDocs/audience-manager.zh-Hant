@@ -1,21 +1,21 @@
 ---
-description: 設定Google群組，將您的Google Campaign Manager資料檔案匯入Audience Manager。 本節的內容會摘要整合程式，並提供您Google Campaign Manager資源的連結，以協助您開始使用。
-seo-description: 設定Google群組，將您的Google Campaign Manager資料檔案匯入Audience Manager。 本節的內容會摘要整合程式，並提供您Google Campaign Manager資源的連結，以協助您開始使用。
-seo-title: 將Google Campaign Manager資料檔案匯入Audience Manager
+description: 設定Google群組，將您的Google Campaign Manager資料檔案帶入Audience Manager。 本節的內容會摘要整合程式，並提供您Google Campaign Manager資源的連結，以協助您開始使用。
+seo-description: 設定Google群組，將您的Google Campaign Manager資料檔案帶入Audience Manager。 本節的內容會摘要整合程式，並提供您Google Campaign Manager資源的連結，以協助您開始使用。
+seo-title: 將Google促銷活動管理員資料檔案匯入Audience Manager
 solution: Audience Manager
-title: 將Google Campaign Manager資料檔案匯入Audience Manager
+title: 將Google促銷活動管理員資料檔案匯入Audience Manager
 uuid: 3578cfe1-6d30-4a73-ab75-8d272bebcd60
-feature: audience optimization reports
+feature: 受眾最佳化報表
+exl-id: 045eed94-100f-460d-83bb-78fbd7beb51c
 translation-type: tm+mt
-source-git-commit: 97129b435ab8e13def14bc85dcaab8254b2c4bda
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '648'
 ht-degree: 3%
 
 ---
 
-
-# 將Google Campaign Manager資料檔案匯入Audience Manager {#import-dcm-data-files-into-audience-manager}
+# 將Google促銷活動管理員資料檔案匯入Audience Manager{#import-dcm-data-files-into-audience-manager}
 
 設定[!DNL Google]群組，將[!DNL Google Campaign Manager]資料檔案匯入Audience Manager。 本節內容摘要了整合程式，並提供您[!DNL Google Campaign Manager]資源的連結，以協助您開始使用。
 
