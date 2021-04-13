@@ -1,23 +1,23 @@
 ---
-description: 簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓客戶建立自助服務的任意數目像素。 像素字串由簡單ID或金鑰值對組成。
-seo-description: 簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓客戶建立自助服務的任意數目像素。 像素字串由簡單ID或金鑰值對組成。
+description: 簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓用戶端自助建立任意數目的像素。 像素字串由簡單ID或金鑰值對組成。
+seo-description: 簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓用戶端自助建立任意數目的像素。 像素字串由簡單ID或金鑰值對組成。
 seo-title: 以像素為基礎的資料傳輸
 solution: Audience Manager
 title: 以像素為基礎的資料傳輸
 uuid: 8773bfc0-6b8d-4a6a-a8b7-e043744486ab
-feature: Inbound Data Transfers
+feature: 傳入資料傳輸
+exl-id: fe9ecb97-4a45-4fbb-855e-01df007144cf
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 4%
+source-wordcount: '219'
+ht-degree: 5%
 
 ---
 
-
 # 以像素為基礎的資料傳輸 {#pixel-based-data-transfers}
 
-簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓客戶建立自助服務的任意數目像素。 像素字串由簡單ID或金鑰值對組成。
+簡單像素（可用來限定使用者特徵）執行即時資料傳輸。 Audience Manager介面可讓用戶端自助建立任意數目的像素。 像素字串由簡單ID或金鑰值對組成。
 
 <!-- c_rt_inbound_pixel_transfers.xml -->
 
