@@ -5,12 +5,12 @@ seo-title: 所選 Audience Manager 報表中的資料取樣和錯誤率
 solution: Audience Manager
 title: 所選 Audience Manager 報表中的資料取樣和錯誤率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
-feature: 報告參考參考
+feature: 報告參考
 exl-id: 0b7f9423-0859-4fa8-926b-e4858eed2294
 translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 7%
 
 ---
