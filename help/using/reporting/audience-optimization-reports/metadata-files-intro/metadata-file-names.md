@@ -1,23 +1,23 @@
 ---
-description: 根據這些規格命名您的「對象最佳化」中繼資料檔案。
-seo-description: 根據這些規格命名您的「對象最佳化」中繼資料檔案。
+description: 根據這些規格命名Audience Optimization元資料檔案。
+seo-description: 根據這些規格命名Audience Optimization元資料檔案。
 seo-title: 中繼資料檔案的命名慣例
 solution: Audience Manager
 title: 中繼資料檔案的命名慣例
 uuid: cab55b2a-2e54-45f6-aeea-3735b911f821
-feature: log files
+feature: 日誌檔案
+exl-id: 7a895c4f-1100-4ba1-947e-abb47307fb40
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '216'
 ht-degree: 10%
 
 ---
 
-
 # 中繼資料檔案的命名慣例{#naming-conventions-for-metadata-files}
 
-根據這些規格命名您的「對象最佳化」中繼資料檔案。
+根據這些規格命名Audience Optimization元資料檔案。
 
 ## 語法和ID類別{#syntax}
 
