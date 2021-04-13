@@ -1,23 +1,23 @@
 ---
-description: Audience Manager使用分散式邊緣運算拓撲，以滿足外部來源對我們系統的需求。
-seo-description: Audience Manager使用分散式邊緣運算拓撲，以滿足外部來源對我們系統的需求。
+description: Audience Manager使用分佈式邊緣計算拓撲來滿足外部源對我們系統的需求。
+seo-description: Audience Manager使用分佈式邊緣計算拓撲來滿足外部源對我們系統的需求。
 seo-title: 瞭解邊緣資料中心
 solution: Audience Manager
 title: 瞭解邊緣資料中心
 uuid: 4177e666-99f4-453d-94dd-058c6182c8d2
-feature: system components
+feature: 系統元件
+exl-id: 28958b49-3075-4601-9271-ef2913721a66
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 6%
 
 ---
 
-
 # 瞭解邊緣資料中心{#understanding-the-edge-data-center}
 
-Audience Manager使用分散式邊緣運算拓撲，以滿足外部來源對我們系統的需求。
+Audience Manager使用分佈式邊緣計算拓撲來滿足外部源對我們系統的需求。
 
 ## Edge Data Center Basics {#edge-data-center-basics}
 
@@ -37,7 +37,7 @@ c_compedge.xml
 
 * **負載平衡器：管** 理網際網路應用程式中固有的不均衡運算／處理需求。這些平衡器可防止伺服器群集過載，而其他伺服器則保持空閒。
 
-下圖說明Audience Manager邊緣資料中心環境。
+下圖說明了Audience Manager邊資料中心環境。
 
 ![](assets/edge_data_center.png)
 
