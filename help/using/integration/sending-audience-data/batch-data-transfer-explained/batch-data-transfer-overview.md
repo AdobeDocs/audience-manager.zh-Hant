@@ -1,20 +1,20 @@
 ---
-description: 技術和非技術客戶的概觀，這些客戶想要將其他系統（離線）的資料匯入Audience Manager。
-keywords: inbound, batch, batch upload, batch data
-seo-description: 技術和非技術客戶的概觀，這些客戶想要將其他系統（離線）的資料匯入Audience Manager。 若要這麼做，請使用Audience Manager中的批次上傳選項。
+description: 技術客戶和非技術客戶的概述，他們希望將其他系統（離線）的資料匯入Audience Manager。
+keywords: 入站，批次，批次上載，批次資料
+seo-description: 技術客戶和非技術客戶的概述，他們希望將其他系統（離線）的資料匯入Audience Manager。 若要這麼做，請在Audience Manager中使用批次上傳選項。
 seo-title: 將批次資料傳送至 Audience Manager 概述
 solution: Audience Manager
 title: 將批次資料傳送至 Audience Manager 概述
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
-feature: Inbound Data Transfers
+feature: 傳入資料傳輸
+exl-id: ba95537e-30c9-4546-9456-55f46dbe29ff
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 6%
+source-wordcount: '491'
+ht-degree: 7%
 
 ---
-
 
 # 傳送批次資料至[!DNL Audience Manager]概觀{#send-batch-data-to-audience-manager-overview}
 
@@ -22,7 +22,7 @@ ht-degree: 6%
 
 ## 優勢
 
-您可以在[!DNL Audience Manager]中提供其他系統的資料。 我們的系統可協助您發揮價值，並運用您先前收集到的使用者資料。 這包括購買、客戶調查、註冊資料、[!DNL CRM]資料庫等資訊。 雖然每項整合都會帶來各自的挑戰，但它們都有共同的步驟。 閱讀本資料，協助您減少線下資料上線所需的工作量。
+您可以在[!DNL Audience Manager]中提供其他系統的資料。 我們的系統可協助您發揮價值，並運用您先前收集到的使用者資料。 這包括購買、客戶調查、註冊資料、[!DNL CRM]資料庫等資訊。 雖然每項整合都會帶來各自的挑戰，但它們都有共同的步驟。 閱讀本資料，協助您減少線下資料上線所需的工作。
 
 ## 步驟1:同步使用者ID
 
