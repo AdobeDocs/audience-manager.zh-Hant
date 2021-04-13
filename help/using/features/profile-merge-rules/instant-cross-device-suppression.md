@@ -4,15 +4,15 @@ seo-description: 即時跨裝置隱藏功能可以在任一裝置出現特殊狀
 seo-title: 即時跨裝置隱藏功能
 title: 即時跨裝置隱藏功能
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
-feature: Profile Merge Rules
+feature: 描述檔合併
+exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 15%
 
 ---
-
 
 # 即時跨裝置隱藏功能 {#instant-cross-device-suppression}
 
@@ -31,7 +31,7 @@ ht-degree: 15%
 
 確保您的使用者已轉換（購買產品、取得訂閱等） 將看不到與轉換前相同的訊息。 您可以使用[!UICONTROL AND NOT]邏輯來取得此項，如下所示。
 
-1. 使用兩個特徵建立區段，然後使用[!UICONTROL AND NOT]邏輯，如下圖所示。 您必須使用規則型特徵來定義要即時觸發的取消區段轉換事件。 閱讀更多有關如何建立規則型特徵[的資訊。](../traits/create-onboarded-rule-based-traits.md)
+1. 使用兩個特徵建立區段，然後使用[!UICONTROL AND NOT]邏輯，如下圖所示。 您必須使用規則型特徵來定義要即時觸發的取消區段轉換事件。 閱讀更多有關如何建立規則型特徵](../traits/create-onboarded-rule-based-traits.md)的資訊。[
 2. 將區段對應至任意數目的即時伺服器對伺服器目的地。 閱讀有關如何將區段新增至[伺服器對伺服器目標](../destinations/add-edit-segments.md)的資訊。
 
 只要訪客尚未轉換，即可符合區段資格。 只要符合轉換特徵的資格，就不再遵循區段規則，而會立即從區段中移除。
@@ -42,11 +42,11 @@ ht-degree: 15%
 
 您可以設定時近和頻率控制項，確保不會讓相同的創意內容讓使用者滿載而歸。 在此案例中，請建立具有兩個特徵的區段，如下列步驟所述。
 
-1. 使用兩個特徵建立區段，然後使用[!UICONTROL AND]邏輯，如下圖所示。 您必須使用規則型特徵來定義要即時觸發的取消區段印象事件。 閱讀更多有關如何建立規則型特徵[的資訊。](../traits/create-onboarded-rule-based-traits.md)
+1. 使用兩個特徵建立區段，然後使用[!UICONTROL AND]邏輯，如下圖所示。 您必須使用規則型特徵來定義要即時觸發的取消區段印象事件。 閱讀更多有關如何建立規則型特徵](../traits/create-onboarded-rule-based-traits.md)的資訊。[
    >[!NOTE]
    >
    >您可以使用[!UICONTROL Actionable Log Files]或[!UICONTROL Pixel Calls]根據使用者印象建立特徵。 閱讀更多有關[可操作日誌檔案](../../integration/media-data-integration/actionable-log-files.md)和[像素調用](../../integration/media-data-integration/impression-data-pixels.md)的資訊。
-2. 將頻率控制套用至第二個特徵。 如果您願意，也可以新增時近控制項。 閱讀更多有關如何套用時近和頻率控制項的資訊[。](../segments/recency-and-frequency.md)
+2. 將頻率控制套用至第二個特徵。 如果您願意，也可以新增時近控制項。 閱讀更多有關如何套用時近和頻率控制項的資訊](../segments/recency-and-frequency.md)。[
 3. 將區段對應至任意數目的即時伺服器對伺服器目的地。 閱讀有關如何將區段新增至[伺服器對伺服器目標](../destinations/add-edit-segments.md)的資訊。
 
 在此案例中，一旦您的使用者累積了超過3個曝光，他們就會從此區隔中移除，而不會再看到此特定的創意素材。
