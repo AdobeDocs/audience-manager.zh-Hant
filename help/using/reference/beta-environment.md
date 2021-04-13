@@ -1,24 +1,24 @@
 ---
-description: 測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
-keywords: sandbox
-seo-description: 測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
+description: 測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請洽詢您的Audience Manager合作夥伴解決方案代表。
+keywords: 沙箱
+seo-description: 測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請洽詢您的Audience Manager合作夥伴解決方案代表。
 seo-title: 測試版環境
 solution: Audience Manager
 title: 測試版環境
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
-feature: reference
+feature: 參考
+exl-id: a6a5e1c2-29a2-40bf-972c-87fb8716a394
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
 
-
 # 測試版環境 {#beta-environment}
 
-測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
+測試版環境是用於測試您的Audience Manager實作。 在測試中所做的變更不會影響生產資料。 如果您有興趣使用測試版環境，請洽詢您的Audience Manager合作夥伴解決方案代表。
 
 ## 概述
 
@@ -44,7 +44,7 @@ Added re: AAM-30826.
 
 | 服務 | URL/主機名稱 | 如何取得存取權 |
 |--- |--- | --- |
-| S3 | 聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請連絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的測試版實例設定Amazon S3儲存貯體。 閱讀有關使用Amazon S3](../reference/amazon-s3.md)的[優勢。 |
+| S3 | 聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請連絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的測試版實例設定AmazonS3儲存貯體。 閱讀有關使用AmazonS3](../reference/amazon-s3.md)的[優勢。 |
 | DCS | `https://dcs-beta.demdex.net/...` | 請參閱[在測試環境中訪問DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
 | UI | `https://bank-beta.demdex.com` | 您的生產環境認證對測試環境有效。 |
 | API | `https://api-beta.demdex.com/...` | 您的生產環境認證對測試環境有效。 我們建議您建立一般API使用者[，請參閱詳細資訊](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |
