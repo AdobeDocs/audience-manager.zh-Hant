@@ -5,15 +5,15 @@ seo-title: 特徵至特徵重疊報表
 solution: Audience Manager
 title: 特徵至特徵重疊報表
 uuid: 7fb3fc9e-0e0b-492a-9c3a-04356afb19c7
-feature: overlap reports
+feature: 重疊報表
+exl-id: cbc933bb-f2af-4ad0-8eb9-cbec1ee952e0
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 8%
 
 ---
-
 
 # 特徵至特徵重疊報表{#trait-to-trait-overlap-report}
 
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的[RBAC用戶組](/help/using/features/administration/administration-overview.md)，查看您有權訪問的資料源中的特徵。
+>Audience Manager中的重疊報告遵循RBAC原則。 您只能根據您所屬的[RBAC用戶組](/help/using/features/administration/administration-overview.md)，查看您有權訪問的資料源中的特徵。
 
 <!-- 
 
@@ -101,7 +101,7 @@ r_t2t_data_pop.xml
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle"> 重疊獨特值</span></b> </td> 
-   <td colname="col2"> <p>若要取得重疊百分比，Audience Manager使用下列公式：</p> <p>重疊獨特值/（基本特徵獨特值+重疊特徵獨特值——重疊獨特值）</p> </td> 
+   <td colname="col2"> <p>要獲得重疊%,Audience Manager使用以下公式：</p> <p>重疊獨特值/（基本特徵獨特值+重疊特徵獨特值——重疊獨特值）</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle"> 重疊特徵唯一值</span></b> </td> 
@@ -122,3 +122,4 @@ r_t2t_data_pop.xml
 >* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
 >* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
 >* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
+
