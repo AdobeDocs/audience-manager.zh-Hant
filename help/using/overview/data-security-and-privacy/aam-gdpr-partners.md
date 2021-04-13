@@ -5,15 +5,15 @@ seo-title: 針對目的地的 GDPR 考量事項
 solution: Audience Manager
 title: 針對目的地的 GDPR 考量事項
 uuid: e8a40060-086c-4f03-b48c-9c903acb7891
-feature: data governance & privacy
+feature: 資料管理與隱私權
+exl-id: ff2aa030-94cd-45dc-a9a2-283b38ab5e46
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 97%
+source-wordcount: '360'
+ht-degree: 96%
 
 ---
-
 
 # 針對目的地的 GDPR 考量事項{#gdpr-considerations-for-destinations}
 
@@ -57,7 +57,7 @@ Some partners, as listed in the table below, have changed their integration requ
  </tbody> 
 </table> -->
 
-## Audience Manager使用者介面更新- Yahoo/Auncod/DataX整合{#ui-update}
+## Audience Manager用戶介面更新- Yahoo/Auncod/DataX整合{#ui-update}
 
 除了上述 IAB 架構的更新外，Yahoo/Oath/DataX 還將 **gdpr** 和 **gdpr_mode** 新增至其分類法和受眾 API 中。其參數會通知 Yahoo/Oath/DataX 他們有權以資料處理者或資料控制者的身分處理特定區段。因此，將區段傳送至 Yahoo/Oath/DataX 目的地的 Audience Manager 客戶，必須根據其與 Oath 間的協議指定適當的參數 (處理者或控制者)。
 
