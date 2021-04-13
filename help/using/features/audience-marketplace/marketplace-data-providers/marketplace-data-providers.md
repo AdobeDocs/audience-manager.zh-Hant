@@ -1,21 +1,21 @@
 ---
-description: 想要在Audience Manager中銷售資料的資料提供者的概述和工作流程。
-keywords: Google analytics
-seo-description: 想要在Audience Manager中銷售資料的資料提供者的概述和工作流程。
+description: 想要從Audience Manager中銷售資料的資料提供者的概述和工作流程。
+keywords: Google分析
+seo-description: 想要從Audience Manager中銷售資料的資料提供者的概述和工作流程。
 seo-title: 適用於資料提供者的 Audience Marketplace
 solution: Audience Manager
 title: 適用於資料提供者的 Audience Marketplace
-topic: DIL API
+topic-edit: DIL API
 uuid: 80e60d33-63e7-496c-82c5-205ecf0ec03a
-feature: Audience Marketplace
+feature: 訪客交易市場
+exl-id: 10a00bc9-5ee0-4aed-95d7-ace749b75542
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '454'
 ht-degree: 4%
 
 ---
-
 
 # 適用於資料提供者的 Audience Marketplace {#audience-marketplace-for-data-providers}
 
