@@ -1,23 +1,23 @@
 ---
-description: 您可以使用對Audience Manager（通常稱為「像素化創意素材」）的像素呼叫或擷取記錄檔，從媒體宣傳擷取資料。
-seo-description: 您可以使用對Audience Manager（通常稱為「像素化創意素材」）的像素呼叫或擷取記錄檔，從媒體宣傳擷取資料。
+description: 您可以使用像素呼叫來擷取媒體促銷活動的資料至Audience Manager（通常稱為像素化創意素材），或擷取記錄檔。
+seo-description: 您可以使用像素呼叫來擷取媒體促銷活動的資料至Audience Manager（通常稱為像素化創意素材），或擷取記錄檔。
 seo-title: 媒體資料整合
 solution: Audience Manager
 title: 媒體資料整合
 uuid: 6f6bbd03-084b-4226-8809-3b00b467606f
-feature: Integration with Campaign
+feature: Adobe Campaign整合
+exl-id: ca4906a7-0c39-49bc-9505-d76a61ec9eac
 translation-type: tm+mt
-source-git-commit: 3c70178dc1a020545793ea7facc70e34d23543fa
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '149'
 ht-degree: 17%
 
 ---
 
-
 # 媒體資料整合 {#media-data-integration}
 
-您可以使用對Audience Manager（通常稱為「像素化創意素材」）的像素呼叫或擷取記錄檔，從媒體宣傳擷取資料。 閱讀本節中的文章以瞭解程式。
+您可以使用像素呼叫來擷取媒體促銷活動的資料至Audience Manager（通常稱為像素化創意素材），或擷取記錄檔。 閱讀本節中的文章以瞭解程式。
 
 <!-- c_camp_data_int.xml -->
 
@@ -27,6 +27,6 @@ ht-degree: 17%
 
 若要設定記錄擷取，請閱讀下列文章：
 
-* [將Google Campaign Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+* [將Google促銷活動管理員資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
 * [將Google Ad Manager資料檔案匯入Audience Manager  ](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
 * [日誌資料和元資料文](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) 件，用於為一般日誌檔案設定日誌接收
