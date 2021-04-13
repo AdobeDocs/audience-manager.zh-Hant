@@ -6,14 +6,14 @@ solution: Audience Manager
 title: Tag Management 元件
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
 feature: 系統元件
+exl-id: 064e3653-7658-422c-9dd5-2252806e8f09
 translation-type: tm+mt
-source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Tag Management 元件{#tag-management-components}
 
@@ -56,4 +56,3 @@ Audience Manager包含下列元件：
 * 處理來自入口網站的用戶端輸入（例如，建立特徵和目標）。
 * 傳送資料至Akamai，其中包含用來建立容器範本和目的地發佈iFrame的資料。
 * 傳回UI報表系統的資料。
-
