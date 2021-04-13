@@ -4,15 +4,15 @@ seo-description: Audience Manager 客戶的 GDPR 整備指引
 seo-title: Audience Manager 客戶的 GDPR 整備指引
 solution: Audience Manager
 title: Audience Manager 客戶的 GDPR 整備指引
-feature: data governance & privacy
+feature: 資料管理與隱私權
+exl-id: 353b9035-20f3-41ff-819c-71f161e6b1e1
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 99%
 
 ---
-
 
 # Audience Manager 客戶 (資料控制者) 的 GDPR 整備指引 {#gdpr-readiness-guidance}
 
