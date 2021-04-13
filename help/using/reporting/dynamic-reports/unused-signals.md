@@ -1,27 +1,27 @@
 ---
-description: 此報表會傳回清單上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。
-seo-description: 此報表會傳回清單上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。
+description: 此報告會傳回在庫存上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。
+seo-description: 此報告會傳回在庫存上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。
 seo-title: 未使用的訊號報表
 solution: Audience Manager
 title: 未使用的訊號報表
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
-feature: overlap reports
+feature: 重疊報表
+exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '615'
 ht-degree: 2%
 
 ---
 
-
 # 未使用的訊號報表{#unused-signals-report}
 
-此報表會傳回清單上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。 若要存取此報表，請導覽至「**分析>對象報表>其他報表>未使用的信號**」。
+此報告會傳回在庫存上收集並傳送至Audience Manager的所有未使用資訊的頻率計數。 若要存取此報表，請導覽至「**分析>對象報表>其他報表>未使用的信號**」。
 
 >[!NOTE]
 >
->如果您看到訊息「您無權存取觀眾報表」，請連絡您的Audience Manager顧問或客戶服務為您布建報表。
+>如果您看到訊息「您無權存取對象報表」，請連絡您的Audience Manager顧問或客戶服務，為您布建報表。
 
 ![未使用訊號報表的螢幕擷取](/help/using/reporting/dynamic-reports/assets/unused-signals.png)
 
