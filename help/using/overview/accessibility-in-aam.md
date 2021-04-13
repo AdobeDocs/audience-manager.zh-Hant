@@ -4,23 +4,23 @@ seo-description: 協助功能是指讓軟體產品可供使用的一系列功能
 seo-title: Audience Manager中的協助功能
 solution: Audience Manager
 title: Audience Manager中的協助功能
-feature: overview
+feature: 概述
+exl-id: 45fd53e6-b8e1-49b4-99a3-c78adc90c707
 translation-type: tm+mt
-source-git-commit: 2dc015ccf358724f0caa45265fab962821569d1e
+source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-
-# Audience Manager {#accessibility}中的協助功能
+# {#accessibility}Audience Manager中的輔助功能
 
 ## 概述 {#overview}
 
 協助功能是指讓軟體產品可供使用的一系列功能，讓視覺、聽覺、認知、運動或其他殘障人士盡可能少的努力。
 
-Adobe是協助工具的業界領導者，鼓勵開發人員製作可供所有使用者存取的豐富精彩內容，以支援建立出色的網頁體驗。 如需Adobe對協助工具承諾的詳細資訊，請參閱[Adobe協助工具](https://www.adobe.com/accessibility.html)。
+Adobe是協助工具的業界領導者，並鼓勵開發人員製作可供所有使用者存取的豐富精彩內容，以支援建立出色的網頁體驗。 有關Adobe對無障礙環境支援的詳細資訊，請參閱[Adobe無障礙環境支援](https://www.adobe.com/accessibility.html)。
 
 軟體產品中最常見的協助功能包括：鍵盤導覽、語義結構、前景元素與背景元素的充分對比、輔助技術支援、清晰元素標籤等。
 
@@ -48,7 +48,7 @@ Adobe是協助工具的業界領導者，鼓勵開發人員製作可供所有使
 
 這可確保輔助技術（例如螢幕閱讀器）可向使用者讀出標籤和其他資訊，讓使用者輕鬆與應用程式控制項互動。
 
-Audience Manager使用者介面中的所有互動元素都包含對應的標籤。 這可確保輔助技術（例如螢幕閱讀器）能夠向用戶讀出標籤。
+Audience Manager用戶介面中的所有交互元素都包括相應的標籤。 這可確保輔助技術（例如螢幕閱讀器）能夠向用戶讀出標籤。
 
 ## 顏色和對比{#colors-contrast}
 
@@ -62,4 +62,4 @@ Audience Manager使用者介面中的所有互動元素都包含對應的標籤�
 
 [!DNL Audience Manager] 致力於提供日益普及的協助功能，讓產品更容易讓每個人使用。
 
-建議您使用[Adobe協助工具意見表](https://www.adobe.com/accessibility/feedback.html)來傳送您遇到的改進建議和協助工具問題。 我們非常樂意考慮您的意見並改進[!DNL Audience Manager]。
+我們鼓勵您使用[Adobe協助工具意見表](https://www.adobe.com/accessibility/feedback.html)來傳送您遇到的改進建議和協助工具問題。 我們非常樂意考慮您的意見並改進[!DNL Audience Manager]。
