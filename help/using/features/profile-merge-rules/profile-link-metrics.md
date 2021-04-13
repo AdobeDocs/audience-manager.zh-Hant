@@ -1,19 +1,19 @@
 ---
-description: 描述檔連結量度提供有關在您網站上驗證的人員和裝置的資料。 當您建立合併規則或從「描述檔合併規則」控制面板按一下現有規則時，「描述檔連結」中的資料和圖形會動態更新。 這些量度可包含來自Adobe Experience Cloud Device Co-op或其他第三方裝置圖形來源的裝置圖形。
-seo-description: 描述檔連結量度提供有關在您網站上驗證的人員和裝置的資料。 當您建立合併規則或從「描述檔合併規則」控制面板按一下現有規則時，「描述檔連結」中的資料和圖形會動態更新。 這些量度可包含來自Adobe Experience Cloud Device Co-op或其他第三方裝置圖形來源的裝置圖形。
+description: 描述檔連結量度提供有關在您網站上驗證的人員和裝置的資料。 當您建立合併規則或從「描述檔合併規則」控制面板按一下現有規則時，「描述檔連結」中的資料和圖形會動態更新。 這些量度可包含來自Adobe Experience CloudDevice Co-op或其他第三方裝置圖形來源的裝置圖形。
+seo-description: 描述檔連結量度提供有關在您網站上驗證的人員和裝置的資料。 當您建立合併規則或從「描述檔合併規則」控制面板按一下現有規則時，「描述檔連結」中的資料和圖形會動態更新。 這些量度可包含來自Adobe Experience CloudDevice Co-op或其他第三方裝置圖形來源的裝置圖形。
 seo-title: 設定檔合併規則的報表量度
 solution: Audience Manager
 title: 設定檔合併規則的報表量度
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
-feature: Profile Merge Rules
+feature: 描述檔合併
+exl-id: 2af59c60-2448-44af-90d2-eccc52f7ff02
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '835'
 ht-degree: 2%
 
 ---
-
 
 # 設定檔合併規則的報表量度 {#report-metrics-for-profile-merge-rules}
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## 合併規則量度{#merge-rule-metrics}
 
-當您的合併規則使用[Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)或您可在[!DNL Audience Manager]中存取的其他協力廠商裝置圖形的資料時，報表會以並排橫條圖形傳回資料。 這可讓您比較已驗證的第一方資料與[!UICONTROL Experience Cloud Device Co-op]或其他協力廠商裝置圖表所提供的跨裝置資料。 有關[!UICONTROL Device Co-op]傳回的資料，請參閱[裝置圖表：內部流程和輸出](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html)。 此資料會每日更新。
+當您的合併規則使用[Adobe Experience CloudDevice Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)或您在[!DNL Audience Manager]中可存取的其他協力廠商裝置圖形的資料時，報表會以並排橫條圖形傳回資料。 這可讓您比較已驗證的第一方資料與[!UICONTROL Experience Cloud Device Co-op]或其他協力廠商裝置圖表所提供的跨裝置資料。 有關[!UICONTROL Device Co-op]傳回的資料，請參閱[裝置圖表：內部流程和輸出](https://docs.adobe.com/content/help/en/device-co-op/using/device-graph/device-graph-overview.html)。 此資料會每日更新。
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
