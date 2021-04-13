@@ -5,15 +5,15 @@ seo-title: 區段至特徵重疊報表
 solution: Audience Manager
 title: 區段至特徵重疊報表
 uuid: a6b3dd21-332e-449f-aa01-2beb47f1794e
-feature: overlap reports
+feature: 重疊報表
+exl-id: 7ce3dd2d-ab22-46f8-90bf-a32222df2e76
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 5%
 
 ---
-
 
 # 區段至特徵重疊報表{#segment-to-trait-overlap-report}
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Audience Manager中的「重疊」報表符合RBAC原則。 您只能根據您所屬的[RBAC使用者群組](/help/using/features/administration/administration-overview.md)，從您有權存取的資料來源看到區段和特徵。
+>Audience Manager中的重疊報告遵循RBAC原則。 您只能根據您所屬的[RBAC使用者群組](/help/using/features/administration/administration-overview.md)，從您有權存取的資料來源看到區段和特徵。
 
 <!-- 
 
@@ -31,7 +31,7 @@ c_segment_trait_overlap.xml
 
 ## 概述
 
-[!UICONTROL Segment to Trait Overlap]報表是最佳化工具，可協助您建立高度重點的區段或擴大區段觸及面。 例如，您可以建立重疊度高的重點區段和特徵，以觸及特定對象。 不過，大量重疊可能意味著獨特使用者減少（觸及面減少）。 執行此報表可移除具有大量區段重疊的特徵，並以較少重疊的特徵取代，借以協助擴展觸及面。
+[!UICONTROL Segment to Trait Overlap]報表是最佳化工具，可協助您建立高度重點的區段或擴大區段觸及面。 例如，您可以建立重疊度高的重點區段和特徵，以觸及特定的觀眾。 不過，大量重疊可能意味著獨特使用者減少（觸及面減少）。 執行此報表可移除具有大量區段重疊的特徵，並以較少重疊的特徵取代，借以協助擴展觸及面。
 
 ### 範例報表
 
@@ -188,3 +188,4 @@ r_s2t_data_pop.xml
 >* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
 >* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
 >* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
+
