@@ -5,15 +5,15 @@ seo-title: Audience Manager 的資料安全性
 solution: Audience Manager
 title: Audience Manager 的資料安全性
 uuid: 33ad19ca-4690-4d97-853b-1882d7d4ac01
-feature: data governance & privacy
+feature: 資料管理與隱私權
+exl-id: 94b70250-dca3-4c50-b4dd-bc37178a587e
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1028'
 ht-degree: 98%
 
 ---
-
 
 # Audience Manager 的資料安全性 {#data-security}
 
