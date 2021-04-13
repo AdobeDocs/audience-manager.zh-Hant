@@ -1,23 +1,23 @@
 ---
-description: 「廣告商的受眾最佳化」可協助您在付費媒體宣傳中識別Audience Manager細分的潛在效能機會。 這些報表結合記錄層級的促銷活動績效資料與Audience Manager區段度量，以提供以區段為中心的最佳化以及有效的渠道組合。
-seo-description: 「廣告商的受眾最佳化」可協助您在付費媒體宣傳中識別Audience Manager細分的潛在效能機會。 這些報表結合記錄層級的促銷活動績效資料與Audience Manager區段度量，以提供以區段為中心的最佳化以及有效的渠道組合。
+description: Audience Optimization給廣告商可協助您識別付費媒體促銷活動中Audience Manager區段的潛在績效機會。 這些報表結合記錄層級的促銷活動績效資料與Audience Manager區段量度，以提供以區段為中心的最佳化和有效的渠道組合。
+seo-description: Audience Optimization給廣告商可協助您識別付費媒體促銷活動中Audience Manager區段的潛在績效機會。 這些報表結合記錄層級的促銷活動績效資料與Audience Manager區段量度，以提供以區段為中心的最佳化和有效的渠道組合。
 seo-title: 廣告商適用的 Audience Optimization
 solution: Audience Manager
 title: 廣告商適用的 Audience Optimization
 uuid: 852d550e-3c7f-4750-9abc-365c3a6f7883
-feature: audience optimization reports
+feature: 受眾最佳化報表
+exl-id: 13595778-3d3a-4c83-a84f-4bc3af1ee367
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 2%
+source-wordcount: '454'
+ht-degree: 3%
 
 ---
 
-
 # [!UICONTROL Audience Optimization] 針對廣告商{#audience-optimization-for-advertisers}
 
-[!UICONTROL Audience Optimization] for Advertisers可協助您在付費媒體促銷活動中識別Audience Manager區段的潛在效能機會。這些報表結合記錄層級的促銷活動績效資料與Audience Manager [!UICONTROL segment]量度，以通知以區段為中心的最佳化和有效的渠道組合。
+[!UICONTROL Audience Optimization] for Advertisers可協助您識別付費媒體促銷活動中Audience Manager區段的潛在效能機會。這些報表結合記錄層級的促銷活動績效資料與Audience Manager[!UICONTROL segment]度量，以通知以區段為中心的最佳化和有效的渠道組合。
 
 ## 資料擷取方法{#data-ingestion-methods}
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 * 像素呼叫：若要將必要的中繼資料參數傳遞至[!DNL Audience Manager]，請參閱[透過像素呼叫擷取促銷活動點按資料](../../../integration/media-data-integration/click-data-pixels.md)及[透過像素呼叫擷取促銷活動印象資料](../../../integration/media-data-integration/impression-data-pixels.md)。
 
-* 資料檔案：如果您想使用這些報表來分析未與[!DNL Audience Manager]整合之來源的您自己的資料或資料，則需要建立並上傳該資料的資料和中繼資料檔案。 如需詳細資訊，請參閱[對象最佳化報表的資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)和[對象最佳化報表的資料和中繼資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)。
+* 資料檔案：如果您想使用這些報表來分析未與[!DNL Audience Manager]整合之來源的您自己的資料或資料，則需要建立並上傳該資料的資料和中繼資料檔案。 如需詳細資訊，請參閱[Audience Optimization報表的資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)和[Audience Optimization報表的資料和中繼資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)。
 
 ## [!UICONTROL Role-Based Access Controls] (RBAC)  {#rbac}
 
