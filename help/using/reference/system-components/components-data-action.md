@@ -5,15 +5,15 @@ seo-title: 資料動作元件
 solution: Audience Manager
 title: 資料動作元件
 uuid: c4c4cc46-8c96-4ef5-8269-571cc5ac9276
-feature: system components
+feature: 系統元件
+exl-id: 8065c19f-1930-4164-a952-1686aa5cb622
 translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '682'
 ht-degree: 3%
 
 ---
-
 
 # 資料動作元件{#data-action-components}
 
@@ -60,7 +60,7 @@ c_compact.xml
 
 * 大量伺服器對伺服器資料傳輸：如果您與[!DNL Audience Manager]交換大量資料，則[!UICONTROL IRIS]是您的伺服器用於傳輸資料的系統。
 
-* 可靠、規模化、容錯的基礎架構。 支援[!UICONTROL IRIS]的系統包括Amazon SQS、Amazon EC2和Cassandra。
+* 可靠、規模化、容錯的基礎架構。 支援[!UICONTROL IRIS]的系統包括AmazonSQS、AmazonEC2和Cassandra。
 
 **區段對應規則**
 
@@ -70,13 +70,13 @@ c_compact.xml
 
 1. **新區段取消資格**:當裝置不再符合區段資格時，會將與該 [!UICONTROL IRIS] 裝置相關聯的所有區段資格和取消資格傳送至所有對應至這些區段的目標。
 
-1. **目標映射更新**:當目標對應更新時，會 [!UICONTROL IRIS] 將與裝置相關聯的所有區段傳送至所有對應至這些區段的目標，此時Audience Manager會在下次看到裝置時顯示。
+1. **目標映射更新**:更新目標映射時，將與 [!UICONTROL IRIS] 設備關聯的所有段發送到映射到這些段的所有目標，Audience Manager下次看到設備時。
 
-1. **裝置圖表更新**:當任何裝置ID從用於評估區段的裝置圖形中新增或移除時，會將與該裝置關聯的所有區段傳送至所有對應至這些區段的目標，此時Audience Manager會在下次看到裝置時顯示。 [!UICONTROL IRIS] 
+1. **裝置圖表更新**:當任何裝置ID從用於評估區段的裝置圖表中新增或移除時，會將與該裝置相關的所有區段傳送至所有對應至這些區段的目的地，Audience Manager下次看到裝置時。 [!UICONTROL IRIS] 
 
 >[!IMPORTANT]
 >
->如果Audience Manager連續3天未偵測到上述任何更新，[!UICONTROL IRIS]會將與裝置相關的所有區段傳送至所有對應至這些區段的目的地，則下次Audience Manager看到裝置時。
+>如果Audience Manager連續3天未偵測到上述任何更新，[!UICONTROL IRIS]會將與裝置相關的所有區段傳送至所有對應至這些區段的目的地，則Audience Manager下次看見裝置時。
 
 **範例資料檔案**
 
