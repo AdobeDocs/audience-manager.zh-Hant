@@ -5,15 +5,15 @@ seo-title: 傳出檔案歷史記錄
 solution: Audience Manager
 title: 傳出檔案歷史記錄
 uuid: 3621a59d-2bb5-4828-86f6-4c9bfa580764
-feature: inbound and outbound reports
+feature: 入站和出站報告
+exl-id: 8072c44f-bc9a-4b40-99d9-8cb87bb58d98
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '172'
 ht-degree: 7%
 
 ---
-
 
 # 傳出檔案歷史記錄 {#outbound-file-history}
 
@@ -46,11 +46,11 @@ t_reports_outbound_history.xml
  <tbody> 
   <tr> 
    <td colname="col1"> 資料同步檔案名稱 </td> 
-   <td colname="col2"> <p><span class="keyword"> Adobe</span>為此目標生成並一起處理的所有出站檔案的清單。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Adobe</span>為此目標生成並一起處理的所有出站檔案的清單。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
-   <td colname="col2"> <p>成功從<span class="keyword"> Audience Manager</span>傳送至目的地的記錄數。 </p> </td> 
+   <td colname="col2"> <p>成功從<span class="keyword">Audience Manager</span>發送到目標的記錄數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 顯示 </td> 
@@ -58,7 +58,7 @@ t_reports_outbound_history.xml
   </tr> 
   <tr> 
    <td colname="col1"> 收到的記錄 </td> 
-   <td colname="col2"> <p>檔案中產生並嘗試傳送至目的地的記錄<span class="keyword"> Adobe</span>總數。 在大多數情況下，這應該是成功檔案和失敗檔案的總數。 </p> </td> 
+   <td colname="col2"> <p>在檔案中生成並嘗試發送到目標的記錄<span class="keyword">Adobe</span>的總數。 在大多數情況下，這應該是成功檔案和失敗檔案的總數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
