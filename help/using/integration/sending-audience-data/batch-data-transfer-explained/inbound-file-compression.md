@@ -1,27 +1,27 @@
 ---
-description: 選項是，當將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
-seo-description: 選項是，當將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
+description: 選項是，在將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
+seo-description: 選項是，在將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
 seo-title: 傳入資料傳輸檔案的檔案壓縮
 solution: Audience Manager
 title: 傳入資料傳輸檔案的檔案壓縮
 uuid: 2a68f69c-60b0-4002-863b-302d2320e356
-feature: Inbound Data Transfers
+feature: 傳入資料傳輸
+exl-id: 9b3e3bef-2c93-4801-8f4f-04d9d42fd952
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 10%
+source-wordcount: '232'
+ht-degree: 11%
 
 ---
 
-
 # 傳入資料傳輸檔案的檔案壓縮{#file-compression-for-inbound-data-transfer-files}
 
-您可以將資料檔案傳送至Audience Manager時，加以壓縮。
+您可以在將資料檔案傳送至Audience Manager時，加以壓縮。
 
 <!-- inbound-file-compression.xml -->
 
-Audience Manager支援gzip(`.gz`)壓縮，用於傳入、非同步資料傳輸。
+Audience Manager支援gzip(`.gz`)壓縮，以用於傳入、非同步資料傳輸。
 
 Audience Manager也支援解壓縮的檔案。
 
@@ -31,7 +31,7 @@ Audience Manager也支援解壓縮的檔案。
 >
 >要加密和壓縮入站檔案，請使用[PGP加密](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。 [!DNL PGP] 加密包括檔案壓縮。
 
-## Amazon S3壓縮
+## AmazonS3壓縮
 
 若要傳送至[!DNL Amazon S3]，您必須使用`.gz`或未壓縮檔案。 壓縮檔案必須為1 GB或更小。 如果檔案較大，請與客戶服務討論檔案和傳輸程式。 雖然[!DNL Audience Manager]可處理非常大的檔案，但是可能有方法來減少檔案大小或提高資料傳輸的效率。
 
