@@ -1,23 +1,23 @@
 ---
-description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience Manager區段之間的高與低重疊。
-seo-description: 「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience Manager區段之間的高與低重疊。
+description: 「區段至廣告單位重疊」報表會顯示為熱圖，反白標示廣告單位與Audience Manager區段之間的高低重疊。
+seo-description: 「區段至廣告單位重疊」報表會顯示為熱圖，反白標示廣告單位與Audience Manager區段之間的高低重疊。
 seo-title: 區段至廣告單位重疊
 solution: Audience Manager
 title: 區段至廣告單位重疊
 uuid: aaa20163-58aa-42c9-8f72-a1dfb0d20e57
-feature: audience optimization reports
+feature: 受眾最佳化報表
+exl-id: 6c7cf2e6-8ed4-42de-92ee-0df90940f441
 translation-type: tm+mt
-source-git-commit: e007279d81998031d2d61d0e68fe911813cadf8e
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 4%
+source-wordcount: '423'
+ht-degree: 5%
 
 ---
 
-
 # 區段至廣告單位重疊{#segment-to-ad-unit-overlap}
 
-「區段對廣告單位重疊」報表會顯示為熱圖，反白標示「廣告單位」和Audience Manager區段之間的高與低重疊。
+「區段至廣告單位重疊」報表會顯示為熱圖，反白標示廣告單位與Audience Manager區段之間的高低重疊。
 
 ## 使用案例 {#use-cases}
 
@@ -55,7 +55,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 分段即時獨特值計數</span> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager</span>看到指定時間範圍內即時檢視的獨特訪客數量，以及當時符合區段資格的訪客數量。 </p> </td> 
+   <td colname="col2"> <p>在指定時間範圍內即時檢視的獨特訪客數量，以及<span class="keyword">Audience Manager</span>看到區段時符合資格的訪客數量。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 廣告單位獨特值計數</span> </p> </td> 
@@ -71,4 +71,3 @@ ht-degree: 4%
   </tr> 
  </tbody> 
 </table>
-
