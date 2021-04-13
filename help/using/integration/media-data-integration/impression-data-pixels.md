@@ -5,15 +5,15 @@ seo-title: 透過像素呼叫擷取行銷活動的曝光資料
 solution: Audience Manager
 title: 透過像素呼叫擷取行銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
-feature: Integration with Campaign
+feature: Adobe Campaign整合
+exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '738'
 ht-degree: 20%
 
 ---
-
 
 # 透過像素呼叫擷取行銷活動的曝光資料{#capturing-campaign-impression-data-via-pixel-calls}
 
@@ -39,7 +39,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 
 ## 支援的鍵值對{#supported-key-value-pairs}
 
-曝光事件呼叫接受形成鍵值對的資料。 下表列出並說明用來存放這些變數的鍵。 若您想要擷取並分析[對象最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的資料，則需要使用其中許多功能。
+曝光事件呼叫接受形成鍵值對的資料。 下表列出並說明用來存放這些變數的鍵。 如果您想要在[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中擷取並分析資料，則需要使用其中許多項目。
 
 <table id="table_F068C4D49F7D4775924D3CA712BF15BA"> 
  <thead> 
@@ -55,19 +55,19 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_adsrc </code> </td> 
-   <td colname="col2"> <p>您廣告商的資料來源ID或整合代碼。 </p> <p><span class="wintitle">觀眾最佳化</span>報表所需。 </p> <p>選填。</p> </td> 
+   <td colname="col2"> <p>您廣告商的資料來源ID或整合代碼。 </p> <p><span class="wintitle">Audience Optimization</span>報告必需。 </p> <p>選填。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_bu </code> </td> 
-   <td colname="col2"> <p>您業務單位的資料來源ID或整合代碼。 </p> <p><span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>您業務單位的資料來源ID或整合代碼。 </p> <p><span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>快取破壞值。 <span class="keyword"> Audience Manager會 </span> 自動傳送大部分瀏覽器和Proxy都採用的快取控制標題。如果您想要執行其他快取破壞，請將此參數加入事件呼叫中，然後加入隨機字串。 </p> <p> 選填。 </p> </td> 
+   <td colname="col2"> <p>快取破壞值。 <span class="keyword"> Audience Manager </span> 會自動傳送大多數瀏覽器和Proxy都採用的快取控制標頭。如果您想要執行其他快取破壞，請將此參數加入事件呼叫中，然後加入隨機字串。 </p> <p> 選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p><span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p><span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_cid </code> </td> 
@@ -79,7 +79,7 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_creative </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值創意ID。 </p> <p><span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值創意ID。 </p> <p><span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_event=imp </code> </td> 
@@ -91,11 +91,11 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_site </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值網站ID。 </p> <p><span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值網站ID。 </p> <p><span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_src </code> </td> 
-   <td colname="col2"> <p>提供中繼資料之平台的資料來源ID或整合程式碼（例如DFA、Atlas、GBM、Media Math等）。 </p> <p><span class="wintitle">觀眾最佳化</span>報表所需。 </p> </td> 
+   <td colname="col2"> <p>提供中繼資料之平台的資料來源ID或整合程式碼（例如DFA、Atlas、GBM、Media Math等）。 </p> <p><span class="wintitle">Audience Optimization</span>報告必需。 </p> </td> 
   </tr> 
    <tr> 
    <td colname="col1"> <code>gdpr</code>  </td> 
@@ -114,9 +114,9 @@ http://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteID
 
 ## 其他功能- [!DNL Audience Optimization Reports] {#additional-functionality-aor}
 
-您可以使用像素呼叫來為[對象最佳化報表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)提供動力。 如果您想使用像素來為報表供電，請參閱[中繼資料檔案的概述和對應。](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
+您可以使用像素呼叫來為[Audience Optimization報表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)供電。 如果您想使用像素來為報表供電，請參閱[中繼資料檔案的概述和對應。](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
 
 >[!MORELIKETHIS]
 >
->* [受眾最佳化報告的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+>* [用於Audience Optimization報告的資料和元資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
 
