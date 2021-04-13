@@ -5,15 +5,15 @@ seo-title: 大量管理工具字彙表
 solution: Audience Manager
 title: 大量管理工具字彙表
 uuid: 4658a6bc-9515-4d31-9715-0084760b0cea
-feature: baaam
+feature: BAAAM
+exl-id: 036d16c7-1546-4539-a318-455b98e10026
 translation-type: tm+mt
-source-git-commit: fc13643681eebec17a95607482f2864e81b95820
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '347'
 ht-degree: 5%
 
 ---
-
 
 # 大量管理工具字彙表{#bulk-management-tools-glossary}
 
@@ -75,7 +75,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey</span> </p> </td> 
-   <td colname="col2"> <p>信號是根據使用者活動傳入至<span class="keyword"> Audience Manager</span>的資料位。 這些值以<a href="../../reference/key-value-pairs-explained.md">鍵值對</a>的形式傳輸。 原始碼是不變的常數。 它有助於將可變更的來源值分類。 請參閱<a href="../../features/derived-signals.md">衍生信號</a>。 </p> </td> 
+   <td colname="col2"> <p>信號是根據用戶活動傳遞到<span class="keyword">Audience Manager</span>的資料位。 這些值以<a href="../../reference/key-value-pairs-explained.md">鍵值對</a>的形式傳輸。 原始碼是不變的常數。 它有助於將可變更的來源值分類。 請參閱<a href="../../features/derived-signals.md">衍生信號</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
@@ -99,7 +99,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用於收集資料的實際特徵或區段規則。 大量請求會傳回在<span class="keyword"> Audience Manager</span>中以<a href="../../features/traits/about-trait-builder.md">特徵規則產生器</a>或<a href="../../features/segments/segment-builder.md">區段規則產生器</a>建立的規則。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>另請參閱<a href="../../reference/bulk-management-tools/bulk-rules.md">建立或更新特徵規則和區段規則</a>。 </p> </td> 
+   <td colname="col2"> <p>用於收集資料的實際特徵或區段規則。 批量請求會傳回在<span class="keyword">Audience Manager</span>中以<a href="../../features/traits/about-trait-builder.md">特徵規則產生器</a>或<a href="../../features/segments/segment-builder.md">區段規則產生器</a>建立的規則。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>另請參閱<a href="../../reference/bulk-management-tools/bulk-rules.md">建立或更新特徵規則和區段規則</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitType</span> </p> </td> 
@@ -112,7 +112,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> url</span> </p> </td> 
-   <td colname="col2"> <p>當使用者符合區段資格時，由DIL引發像素。 </p> </td> 
+   <td colname="col2"> <p>當使用者符合區段資格時，由DIL引發的像素。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> valueAlias</span> </p> </td> 
@@ -120,4 +120,3 @@ ht-degree: 5%
   </tr> 
  </tbody> 
 </table>
-
