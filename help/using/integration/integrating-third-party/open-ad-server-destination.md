@@ -5,19 +5,19 @@ seo-title: OAS 作為 Audience Manager 目的地
 solution: Audience Manager
 title: OAS 作為 Audience Manager 目的地
 uuid: 5891a063-5a4b-4ea7-865f-b24e17ca735f
-feature: Third Party Integrations
+feature: 協力廠商整合
+exl-id: cf919c27-691f-424b-be83-040f03e34455
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '658'
 ht-degree: 4%
 
 ---
 
-
 # OAS 作為 Audience Manager 目的地 {#oas-as-an-audience-manager-destination}
 
-將[!DNL Open Ad Server]設定為目的地，並傳送Audience Manager資料至該平台。
+將[!DNL Open Ad Server]設為目標，並傳送Audience Manager資料至該平台。
 
 ## OAS目標要求{#oas-requirements}
 
@@ -29,11 +29,11 @@ ht-degree: 4%
 
 * **[!UICONTROL DIL]:** [!UICONTROL Data Integration Library] 程式碼應部署在您的庫存中。[!UICONTROL DIL] 協助您免除撰寫資料收集、整合、讀取Cookie值和復原頁面資料的特殊程式碼。
 * **`get_aamCookie`函式：** 擷取Audience Manager使用者ID和Cookie資料的程式碼。將[此程式碼](../../features/destinations/get-aam-cookie-code.md)置於頁面頂端或`<head>`程式碼鎖定內。
-* **傳送傳送記錄檔至Audience Manager:** 如果您想要區段傳送報表（可選），請為Audience Manager提供包含曝光層級傳送資料的每日記錄檔。資料可以是原始格式，但每個記錄必須包含Audience Manager [!UICONTROL UUID]。 Audience Manager可以透過[!DNL FTP]取得或接收這些內容。
+* **傳送傳送記錄檔至Audience Manager:** 如果您想要區段傳送報表（選用），請為Audience Manager提供包含印象層級傳送資料的每日記錄檔。資料可以是原始格式，但每個記錄必須包含Audience Manager[!UICONTROL UUID]。 Audience Manager可以通過[!DNL FTP]接收這些檔案。
 
 ### Cookie格式與金鑰值資料
 
-Audience Manager可依下列方式將區段資料傳送至瀏覽器Cookie:
+Audience Manager可依下列方式傳送區段資料至瀏覽器Cookie:
 
 * 單鍵(`x=1&x=2`);
 * 多鍵(`x=1&x=2&y=3&y=4`);
@@ -52,7 +52,7 @@ Audience Manager可依下列方式將區段資料傳送至瀏覽器Cookie:
 
 ## 建立OAS目標{#oas-dest-setup}
 
-在Audience Manager中建立[!DNL OAS]的Cookie型目標。
+在Audience Manager中為[!DNL OAS]建立以Cookie為基礎的目的地。
 
 <!-- aam-oas-destination-setup.xml -->
 
@@ -88,14 +88,14 @@ Audience Manager可依下列方式將區段資料傳送至瀏覽器Cookie:
 
 ## OAS設定{#oas-code-setup}
 
-修改[!DNL OAS]設定，以搭配Audience Manager區段資料使用。
+修改[!DNL OAS]設定以處理Audience Manager段資料。
 
 <!-- aam-oas-code.xml -->
 
 若要設定[!DNL OAS]
 
 * 在您的網站上安裝[!UICONTROL DIL]程式碼。
-* 在Audience Manager中建立OAS作為Cookie目的地。
+* 在Audience Manager中將OAS建立為Cookie目標。
 * 將`get_aamCookie`函式置於頁面頂端，最好是置於`<head>`程式碼鎖定中。 `get_aamCookie`程式碼位於[這裡](../../features/destinations/get-aam-cookie-code.md)。
 * 修改您的廣告標籤以呼叫`get_aamCookie`函式，並包含您在設定[!DNL OAS]目標時提供的Cookie名稱。 例如，如果您命名Cookie `test_cookie`，則廣告標籤應呼叫`get_aamCookie`並參考Cookie名稱。
 * 您的廣告標籤看起來可能類似於下列範例。
