@@ -5,15 +5,15 @@ seo-title: CID 取代 DPID 及 DPUUID
 solution: Audience Manager
 title: CID 取代 DPID 及 DPUUID
 uuid: 3641eac5-b19e-45d5-bc1c-35a23b4bab8c
-feature: reference
+feature: 參考
+exl-id: 18e6b1db-fe51-4560-9458-8d65474d2506
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '667'
 ht-degree: 4%
 
 ---
-
 
 # CID 取代 DPID 及 DPUUID{#cid-replaces-dpid-and-dpuuid}
 
@@ -75,7 +75,7 @@ CID和CID_IC金鑰值配對取代DPID和DPUUID。 它們提供與DPID和DPUUID�
   </tr> 
   <tr> 
    <td colname="col1"> <p>客戶ID整合代碼(CID_IC) </p> </td> 
-   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> <span class="term">整合程式碼</span>是可供您使用的替代ID，而非由<span class="keyword"> Audience Manager</span>指派的「資料來源ID」。 如果您需要設定整合代碼，請參閱<a href="../features/manage-datasources.md#create-data-source">建立資料來源</a>。 </p> </td> 
+   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> <span class="term">整合程式碼</span>是可供您使用的替代ID，而非由<span class="keyword">Audience Manager</span>指派的資料來源ID。 如果您需要設定整合代碼，請參閱<a href="../features/manage-datasources.md#create-data-source">建立資料來源</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -118,7 +118,7 @@ CID和CID_IC金鑰值配對取代DPID和DPUUID。 它們提供與DPID和DPUUID�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>產生Audience Manager UUID(ID) </p> </td> 
+   <td colname="col1"> <p>產生Audience ManagerUUID(ID) </p> </td> 
    <td colname="col2"> 
     <ul id="ul_EAA764DCFF7244F69ABF67ACEE13E579"> 
      <li id="li_18467A531FAF454A881CBD157BBFD6D2">新增: <code> .../id?d_cid=123%01987...</code> </li> 
@@ -162,4 +162,3 @@ CID和CID_IC金鑰值配對取代DPID和DPUUID。 它們提供與DPID和DPUUID�
   </tr> 
  </tbody> 
 </table>
-
