@@ -1,20 +1,20 @@
 ---
-description: 想要從Audience Manager中購買第三方資料的資料購買者的概述和工作流程
-seo-description: 想要從Audience Manager中購買第三方資料的資料購買者的概述和工作流程
+description: 想要從Audience Manager內購買第三方資料的資料購買者的概述和工作流程
+seo-description: 想要從Audience Manager內購買第三方資料的資料購買者的概述和工作流程
 seo-title: 適用於資料購買者的 Audience Marketplace
 solution: Audience Manager
 title: 適用於資料購買者的 Audience Marketplace
-topic: DIL API
+topic-edit: DIL API
 uuid: f505b5f4-4231-4e84-993a-cd64128b540f
-feature: Audience Marketplace
+feature: 訪客交易市場
+exl-id: 9d6a7fda-f79f-41ad-9654-3ebcf9028cc2
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '750'
 ht-degree: 3%
 
 ---
-
 
 # [!UICONTROL Audience Marketplace] 適用於資料購買者  {#audience-marketplace-for-data-buyers}
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 >[!TIP]
 >
->使用&#x200B;**[Adobe Audience Finder](https://www.adobe-audience-finder.com/)**&#x200B;尋找可訂閱的高品質資料饋送。 然後，返回[!DNL Audience Manager]使用者介面，或使用[Audience Marketplace Buyer API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)訂閱您找到的動態消息。
+>使用&#x200B;**[AdobeAudience Finder](https://www.adobe-audience-finder.com/)**&#x200B;尋找可訂閱的高品質資料饋送。 然後，返回[!DNL Audience Manager]使用者介面，或使用[Audience Marketplace購買者API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)訂閱您找到的動態消息。
 
 ![buyer-marketplace-overview](assets/buyer-marketplace-overview.png)
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 1. 前往&#x200B;**[!UICONTROL Audience Marketplace]** > **[!UICONTROL Marketplace]**。
 2. 使用&#x200B;**[!UICONTROL Similarity To]**&#x200B;選擇器，在基於[!UICONTROL trait]或[!UICONTROL segment]的篩選中進行選擇。 您可以根據[!UICONTROL trait]/[!UICONTROL segment] ID或名稱進行篩選。 搜尋方塊會根據您的輸入自動顯示相關建議。
 3. 在您識別要篩選依據的特徵或區段後，在建議清單中按一下它。
-4. 若要縮小結果範圍，請使用&#x200B;**[!UICONTROL Similarity Cutoff]**&#x200B;滑桿，從較不相似的[!UICONTROL traits]移至較相似的&lt;a1/>。
+4. 若要縮小結果範圍，請使用&#x200B;**[!UICONTROL Similarity Cutoff]**&#x200B;滑桿，從較不相似的[!UICONTROL traits]移至較相似的。
 
 篩選完成後，您會在結果頁面中看到新欄：**[!UICONTROL Similar Traits]**。 此欄顯示符合篩選條件之每個資料饋送中與您篩選依據的[!UICONTROL traits]類似數目。
 
@@ -78,7 +78,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Audience Marketplace會顯示資料饋送中前500個類似[!UICONTROL trait]結果。
+> Audience Marketplace會顯示資料饋送的前500個類似[!UICONTROL trait]結果。
 
 觀看以下影片，以取得如何尋找類似[!UICONTROL traits]的完整概觀。
 
