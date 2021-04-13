@@ -5,15 +5,15 @@ seo-title: 設定檔合併規則與裝置取消細分程序
 solution: Audience Manager
 title: 設定檔合併規則與裝置取消細分程序
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
-feature: Profile Merge Rules
+feature: 描述檔合併
+exl-id: ff3da607-5c25-45b2-ac27-071c22d518a0
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '505'
 ht-degree: 6%
 
 ---
-
 
 # 設定檔合併規則與裝置取消細分程序 {#profile-merge-rules-and-device-un-segmentation-processes}
 
@@ -45,7 +45,7 @@ ht-degree: 6%
 >[!NOTE]
 >
 >**100個裝置的區段評估和取消資格限制**。
->使用使用裝置圖形的描述檔合併規則評估區段時，Audience Manager會合併多達100個裝置。 Audience Manager會透過[驗證的設定檔](../../reference/visitor-authentication-states.md)（跨裝置ID）評估目前裝置和最多99個連結至目前裝置的裝置。 如果發出未分段信號，則當前設備和其他設備將從目的地的分段中刪除。
+>Audience Manager使用使用裝置圖形的描述檔合併規則來評估區段時，可合併多達100個裝置。 Audience Manager通過[驗證的配置檔案](../../reference/visitor-authentication-states.md)（跨設備ID）評估當前設備和最多99個與當前設備連結的設備。 如果發出未分段信號，則當前設備和其他設備將從目的地的分段中刪除。
 
 ![](assets/last-device-graph.png)
 
