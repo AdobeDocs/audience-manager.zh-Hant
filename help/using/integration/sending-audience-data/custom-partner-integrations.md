@@ -4,21 +4,21 @@ seo-description: 此頁面列出 Audience Manager 與資料合作夥伴之間的
 seo-title: 自訂合作夥伴整合
 solution: Audience Manager
 title: 自訂合作夥伴整合
-feature: Third Party Integrations
+feature: 協力廠商整合
+exl-id: 54af75a4-c05b-42fb-851c-5e242378d9f1
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 22%
 
 ---
-
 
 # 自訂合作夥伴整合 {#custom-partner-integrations}
 
 此頁面列出 Audience Manager 與資料合作夥伴之間的自訂整合。
 
-## Oracle Data Cloud {#oracle-data-cloud}
+## Oracle資料雲{#oracle-data-cloud}
 
 ### 說明
 
@@ -26,9 +26,9 @@ Audience Manager 會透過傳入資料檔案，從適用於 Audience Marketplace
 
 ### 整合細節
 
-從Oracle Data Cloud接收的入站資料檔案與[Amazon S3 Name and File Size Requirements for Inbound Data Files](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)中描述的標准入站檔案名語法不同，而與[Inbound Data File Contents中描述的標准入站檔案內容語法不同：語法、無效字元、變數和Examples](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)。
+從Oracle資料雲接收的入站資料檔案與[AmazonS3名稱和入站資料檔案的檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)中描述的標准入站檔案名語法不同，而從[入站資料檔案內容中描述的標准入站檔案內容語法不同：語法、無效字元、變數和Examples](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)。
 
-除了傳入資料檔案的標準實作欄位外，以下反白顯示的元素也是必要的。 如需所有其他標準欄位和檔案名稱元素的說明，請參閱上述兩頁中的檔案名稱語法和檔案內容語法。
+除了傳入資料檔案的標準實作欄位外，以下反白顯示的元素也是必要的。 如需所有其他標準欄位和檔案名稱元素的說明，請參閱上述兩個連結頁面中的檔案名稱語法和檔案內容語法。
 
 ### 檔案命名
 
@@ -36,7 +36,7 @@ ODC檔案名的結構如下：
 
 `ftp_dpm_`**`odc`**`_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
-`odc`檔案名稱元素會將檔案識別為從Oracle Data Cloud匯入，並指示Audience Manager傳入檔案驗證程式處理。
+`odc`檔案名稱元素會將檔案識別為從Oracle資料雲端匯入，並指示Audience Manager傳入檔案驗證器如此處理。
 
 ### 檔案內容
 
