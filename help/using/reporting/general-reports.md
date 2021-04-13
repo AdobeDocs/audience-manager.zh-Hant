@@ -1,19 +1,19 @@
 ---
 description: 「一般」報表會傳回特徵、區段和目的地的效能資料。
-seo-description: Audience Manager中的「一般」報表會傳回特徵、區段和目的地的效能資料。
-seo-title: Audience Manager中的一般報表
+seo-description: Audience Manager中的一般報表會傳回特徵、區段和目的地的效能資料。
+seo-title: 一般報表Audience Manager
 solution: Audience Manager
 title: 一般報表
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
-feature: general & trend reports
+feature: 一般與趨勢報表
+exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
-
 
 # 一般報表{#general-reports}
 
@@ -130,11 +130,11 @@ The illustration below shows the results of running a general report for the Tra
 
 ### 即時區段人口
 
-此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及Audience Manager在檢視這些訪客時符合區段資格的訪客。
+此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及在Audience Manager看到這些訪客時符合區段的訪客。
 
 ### 區段總人口
 
-此量度代表在您選取的回顧期間內，符合區段條件的Audience Manager UUID總數。 您的1天「區段總人口」代表您最精準的定位使用者群。
+此量度代表在您選取的回顧期間內，符合區段的Audience ManagerUUID總數。 您的1天「區段總人口」代表您最精準的定位使用者群。
 
 >[!NOTE]
 >
@@ -150,11 +150,11 @@ The illustration below shows the results of running a general report for the Tra
 
 **即時區段人口**
 
-此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及Audience Manager在檢視這些訪客時符合區段資格的訪客。
+此量度代表在指定時間範圍內即時檢視的獨特訪客的實際數量，以及在Audience Manager看到這些訪客時符合區段的訪客。
 
 **區段總人口**
 
-此量度代表回顧時段內，已傳送至目的地之區段的Audience Manager UUID總數。
+此量度代表回顧時段內，傳送至目的地之區段的Audience ManagerUUID總數。
 
 下圖顯示執行「目標」報表類型一般報表的結果。
 
