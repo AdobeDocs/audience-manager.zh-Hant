@@ -1,22 +1,22 @@
 ---
-description: Audience Manager系統中主要元件和資料流程的高階導覽。
-seo-description: Audience Manager系統中主要元件和資料流程的高階導覽。
+description: 對Audience Manager系統中主要元件和資料流的高級指南。
+seo-description: 對Audience Manager系統中主要元件和資料流的高級指南。
 seo-title: 系統元件概述
 title: 系統元件概述
 uuid: cd0e51a3-38c3-4e3f-9bf1-938de2c71156
-feature: system components
+feature: 系統元件
+exl-id: b128cae4-8a11-4fad-95f8-4fe6222bb95e
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 16%
+source-wordcount: '190'
+ht-degree: 17%
 
 ---
 
-
 # 系統元件概述{#system-components-overview}
 
-Audience Manager系統中主要元件和資料流程的高階導覽。
+對Audience Manager系統中主要元件和資料流的高級指南。
 
 <!-- 
 
@@ -39,4 +39,3 @@ c_compintro.xml
 * [Tag Management 元件](/help/using/reference/system-components/components-tag-management.md)
 * [平台架構：資料流量圖](/help/using/reference/system-components/components-platform-architecture.md)
 * [瞭解邊緣資料中心](/help/using/reference/system-components/components-edge.md)
-
