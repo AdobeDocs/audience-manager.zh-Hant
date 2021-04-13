@@ -5,15 +5,15 @@ seo-title: 密碼要求、鎖定的帳戶及忘記密碼
 solution: Audience Manager
 title: 密碼要求、鎖定的帳戶及忘記密碼
 uuid: bca892eb-3577-4382-8110-131f78d23069
-feature: reference
+feature: 參考
+exl-id: beeb65e3-b715-49a8-b14b-ce3fff96a5cd
 translation-type: tm+mt
-source-git-commit: 9e4f2f26b83fe6e5b6f669107239d7edaf11fed3
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '310'
 ht-degree: 100%
 
 ---
-
 
 # 密碼要求、鎖定的帳戶及忘記密碼{#password-requirements-locked-accounts-and-forgotten-passwords}
 
