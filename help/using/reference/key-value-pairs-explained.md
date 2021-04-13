@@ -1,20 +1,20 @@
 ---
 description: 定義並說明標準和序號的金鑰值配對。
-keywords: integration code
+keywords: 整合程式碼
 seo-description: 定義並說明標準和序號的金鑰值配對。
 seo-title: 索引鍵值配對說明
 solution: Audience Manager
 title: 索引鍵值配對說明
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
-feature: reference
+feature: 參考
+exl-id: de4e6fdb-2d6d-4fed-9255-9438b42b2570
 translation-type: tm+mt
-source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 6%
+source-wordcount: '279'
+ht-degree: 7%
 
 ---
-
 
 # 索引鍵值配對說明{#key-value-pairs-explained}
 
