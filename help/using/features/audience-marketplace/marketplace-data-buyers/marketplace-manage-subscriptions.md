@@ -4,17 +4,17 @@ seo-description: Marketplace是資料購買者研究並訂閱公開和私人資�
 seo-title: 管理資料摘要訂閱
 solution: Audience Manager
 title: 管理資料摘要訂閱
-topic: DIL API
+topic-edit: DIL API
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
-feature: Audience Marketplace
+feature: 訪客交易市場
+exl-id: 171acbbc-88ab-496f-93ea-48956325d8fd
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2188'
 ht-degree: 2%
 
 ---
-
 
 # 管理資料摘要訂閱 {#manage-data-feed-subscriptions}
 
@@ -131,7 +131,7 @@ ht-degree: 2%
    <td colname="col1"> <p> <b>潛在訂閱者</b> </p> </td> 
    <td colname="col2"> <p><a href="../../../features/audience-marketplace/marketplace-private-feeds.md">潛在用戶</a>是資料購買者，其請求訪問私有資料饋送，接收賣方批准，但未訂閱該饋送。 若要申請折扣作為潛在訂閱者： </p> 
     <ol id="ol_9CECDA92E7894B20AC8A777D78962188"> 
-     <li id="li_618B64160CF24549AFCA73E006DCA35A">前往<b><span class="uicontrol"> Audience Marketplace &gt; Marketplace</span></b>。 </li> 
+     <li id="li_618B64160CF24549AFCA73E006DCA35A">前往<b><span class="uicontrol">Audience Marketplace&gt; Marketplace</span></b>。 </li> 
      <li id="li_FE52A06B30FC4858B48AF81954365FE9">按一下您已核准之動態消息的名稱。 </li> 
      <li id="li_763C050AC9464BE380D00F6085B6E540">按一下「<b><span class="uicontrol">請求詳細資訊</span></b>」。 在您向賣方要求的詳細資訊中要求折扣。 </li> 
     </ol> </td> 
@@ -285,7 +285,7 @@ ht-degree: 2%
    * 按一下&#x200B;**[!UICONTROL Request More Details]**，詢問資料提供者有關所選資料饋送的問題或要求折扣。 此功能會直接將您的注釋和問題傳送至資料提供者。
 
 1. 資料饋送報表量度。 文氏圖表（及相關量度）顯示過去30天的特徵重疊資料。 請參閱[The Marketplace:關於](marketplace-data-buyers.md#about-marketplace)以取得詳細資訊。
-   * **[!UICONTROL 30 Day Overlapped Uniques]**:您帳戶中與提供者帳戶中的使用者重疊的獨特使用者數目。如需獨特使用者的定義，請參閱Audience Manager](/help/using/reference/ids-in-aam.md)的[ID索引中的AAM UUID。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**:您帳戶中與提供者帳戶中的使用者重疊的獨特使用者數目。有關唯一用戶的定義，請參AAM閱Audience Manager](/help/using/reference/ids-in-aam.md)中[ ID索引中的UUID。
    * **[!UICONTROL 30 Day Provider Unique Users]**:來自提供者帳戶的獨特使用者數目。
    * **[!UICONTROL Your Unique Users]**:來自您帳戶的獨特使用者人數。
 
