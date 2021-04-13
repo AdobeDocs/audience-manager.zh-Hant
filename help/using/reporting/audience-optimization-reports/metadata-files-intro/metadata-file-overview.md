@@ -1,27 +1,27 @@
 ---
-description: 中繼資料檔案會連結數值ID，其名稱可供您讀取和瞭解。 「對象最佳化」報表會在各種報表選項功能表中顯示可讀名稱。
-seo-description: 中繼資料檔案會連結數值ID，其名稱可供您讀取和瞭解。 「對象最佳化」報表會在各種報表選項功能表中顯示可讀名稱。
+description: 中繼資料檔案會連結數值ID，其名稱可供您讀取和瞭解。 Audience Optimization報表會在各種報表選項功能表中顯示可讀名稱。
+seo-description: 中繼資料檔案會連結數值ID，其名稱可供您讀取和瞭解。 Audience Optimization報表會在各種報表選項功能表中顯示可讀名稱。
 seo-title: 中繼資料檔案的概述與對應
 solution: Audience Manager
 title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
-feature: log files
+feature: 日誌檔案
+exl-id: 8c59ab80-f04a-42df-891e-a187ecd0219f
 translation-type: tm+mt
-source-git-commit: 5d6983f5308f1dfd4560ee1b38bcaee3ca6e422f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 4%
 
 ---
 
-
 # 中繼資料檔案的概述與對應{#overview-and-mappings-for-metadata-files}
 
-中繼資料檔案會連結數值ID，其名稱可供您讀取和瞭解。 「對象最佳化」報表會在各種報表選項功能表中顯示可讀名稱。
+中繼資料檔案會連結數值ID，其名稱可供您讀取和瞭解。 Audience Optimization報表會在各種報表選項功能表中顯示可讀名稱。
 
 ## 概述 {#overview}
 
-中繼資料及其使用方式的審查。 中繼資料檔案必須附有資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參閱[對象最佳化報表的資料檔案和可操作的記錄檔](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)。
+中繼資料及其使用方式的審查。 中繼資料檔案必須附有資料檔案。 中繼資料檔案內容會比對資料檔案資訊與報表選單中相關、人工可讀的標籤。 如需詳細資訊，請參閱[資料檔案以取得Audience Optimization報告和可操作記錄檔](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)。
 
 ### 中繼資料檔案包含其他資料的資料
 
@@ -39,7 +39,7 @@ ht-degree: 4%
 
 ### 何時需要中繼資料檔案
 
-首先，當您要使用[觀眾最佳化報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)時，事件呼叫中需要中繼資料檔案及下列所有參數。
+首先，當您要使用[Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)時，事件呼叫中需要中繼資料檔案及下列所有參數。
 
 其次，如果您要將自己的資料傳送至[!DNL Audience Manager]，或您想要在報告中看到未整合其他供應商的資料，則需要中繼資料檔案。 例如，[!DNL Audience Manager]與Google的[連按兩下「促銷活動管理員」(DCM)整合。 ](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)由於此關係，[!DNL Audience Manager]可將ID與報表選項使用的名稱和說明建立關聯。 如果沒有整合，我們仍可以收錄資料，但報表選項會顯示數值ID，而非描述性名稱。
 
@@ -138,11 +138,11 @@ ht-degree: 4%
 
 ### 檔案傳送
 
-在命名並將資料添加到檔案後，將其發送到[!DNL Audience Manager]提供的Amazon S3儲存目錄。 請參閱[中繼資料檔案的傳送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)。
+命名並將資料添加到檔案後，將其發送到[!DNL Audience Manager]提供的AmazonS3儲存目錄。 請參閱[中繼資料檔案的傳送方法](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-delivery-methods.md)。
 
 >[!MORELIKETHIS]
 >
->* [受眾最佳化報告的資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+>* [用於Audience Optimization報告的資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 >* [透過像素呼叫擷取行銷活動的點按資料](../../../integration/media-data-integration/click-data-pixels.md)
 >* [透過像素呼叫擷取行銷活動的曝光資料](../../../integration/media-data-integration/impression-data-pixels.md)
 
