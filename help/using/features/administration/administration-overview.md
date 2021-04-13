@@ -1,21 +1,21 @@
 ---
-description: 「管理」功能表下的選項可讓您建立Audience Manager使用者並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
+description: 「管理」(Administration)菜單下的選項可讓您建立Audience Manager用戶並將其分配給組。 您也可以檢視限制（特徵、區段、目的地和模型）。
 keywords: rbac; RBAC；基於角色；基於角色；基於角色的訪問控制
-seo-description: 「管理」功能表下的選項可讓您建立Audience Manager使用者並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
+seo-description: 「管理」(Administration)菜單下的選項可讓您建立Audience Manager用戶並將其分配給組。 您也可以檢視限制（特徵、區段、目的地和模型）。
 seo-title: 管理
 solution: Audience Manager
 title: 管理
-topic: DIL API
+topic-edit: DIL API
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
-feature: Administration
+feature: 管理
+exl-id: f23f4294-35d9-4128-bcda-64a3eccbb4e7
 translation-type: tm+mt
-source-git-commit: 55cb69bad1f369ed3b58bece54aebdca4b14f7a7
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1204'
 ht-degree: 2%
 
 ---
-
 
 # [!UICONTROL Administration] （RBAC控制）  {#administration}
 
@@ -23,16 +23,16 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。 若要開始使用者移轉，我們要求所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 用戶帳戶管理正在移至[Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。 為開始使用者移轉，我們要求所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager用戶遷移到Admin Console](admin-console-migration.md)。
 > 
 > 在所有客戶都移轉後，本檔案的使用者管理區段將會消失。
 
 
-[!UICONTROL Administration]功能表下的選項可讓您建立Audience Manager使用者，並將其指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
+[!UICONTROL Administration]功能表下的選項可讓您建立Audience Manager使用者，並指派給群組。 您也可以檢視限制（特徵、區段、目的地和模型）。
 
 使用[!DNL Audience Manager]的企業客戶需要一個資料管理平台來處理其所有資料，但必須能夠控制不同資料元素對特定業務單位的可見性。 您可以使用群組權限(也稱為[!UICONTROL Role-Based Access Control]([!UICONTROL RBAC]))來完成此作業。
 
-[!DNL Audience Manager] 使用群組來指派權限。在使用者層級不會指派權限。 群組權限系結至物件（[!UICONTROL traits]、區段等） 以及可對這些物件執行的動作（編輯、檢視等）。 這些控制項也可透過Audience Manager REST API取得。 請參閱[使用者管理](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-user.md)、[群組管理](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-group.md)和[權限管理](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-permissions.md) API方法。
+[!DNL Audience Manager] 使用群組來指派權限。在使用者層級不會指派權限。 群組權限系結至物件（[!UICONTROL traits]、區段等） 以及可對這些物件執行的動作（編輯、檢視等）。 這些控制項也可透過Audience ManagerREST API取得。 請參閱[使用者管理](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-user.md)、[群組管理](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-group.md)和[權限管理](/help/using/api/rest-api-main/aam-api-user-group-permission/aam-api-permissions.md) API方法。
 
 ## 建立用戶{#create-users}
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/enterprise/using/admin-console.html)。 若要開始使用者移轉，我們要求所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 用戶帳戶管理正在移至[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)。 為開始使用者移轉，我們要求所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager用戶遷移到Admin Console](admin-console-migration.md)。
 > 
 > 在所有客戶都完成移轉後，本檔案的使用者管理區段將會消失。
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 1. 按一下 **[!UICONTROL Administration]** > **[!UICONTROL Users]**.
 1. 按一下![](assets/icon_add.png)以顯示[!UICONTROL Create New User]頁面。
 1. 在&#x200B;**[!UICONTROL User Details]**&#x200B;下方，填寫欄位：
-   * **[!UICONTROL Username]：指** 定Audience Manager的唯一使用者名稱。
+   * **[!UICONTROL Username]：指** 定Audience Manager的唯一用戶名。
    * **[!UICONTROL First Name]:** 指定使用者的名字。
    * **[!UICONTROL Last Name]:** 指定使用者的姓氏。
    * **[!UICONTROL Email Address]:** 指定使用者的電子郵件地址。[!DNL Audience Manager] 不會定期傳送通知給使用者。[!DNL Audience Manager] 管理員可存取使用者的電子郵件地址，並可視需要手動以電子郵件寄送使用者。例如，如果使用者忘記密碼，則此欄位中指定的電子郵件地址會用來傳送暫時密碼和重設密碼的指示。
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/enterprise/using/admin-console.html)。 為開始使用者移轉，我們建議所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 用戶帳戶管理正在移至[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)。 為開始使用者移轉，我們建議所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager用戶遷移到Admin Console](admin-console-migration.md)。
 > 
 > 所有客戶都已移轉後，本節將會消失。
 
@@ -95,7 +95,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> 使用者帳戶管理正移至[管理控制台](https://helpx.adobe.com/enterprise/using/admin-console.html)。 為開始使用者移轉，我們建議所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager使用者移轉至Admin Console](admin-console-migration.md)。
+> 用戶帳戶管理正在移至[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)。 為開始使用者移轉，我們建議所有Audience Manager客戶立即採取本文所述的必要措施：[Audience Manager用戶遷移到Admin Console](admin-console-migration.md)。
 > 
 > 所有客戶都已移轉後，本節將會消失。
 
@@ -114,7 +114,7 @@ ht-degree: 2%
 **[!UICONTROL Trait]**
 
 * `MAP_ALL_TRAITS_TO_MODELS` -用戶可以 [!UICONTROL traits] 選擇作為基準 [!UICONTROL models]。
-* `EDIT_ALL_TRAITS` -使用者可編輯其 [!UICONTROL traits] 公司帳戶內的所有設定。
+* `EDIT_ALL_TRAITS` -使用者可編輯其公 [!UICONTROL traits] 司帳戶內所有設定。
 * `VIEW_ALL_TRAITS` -使用者可檢視其 [!UICONTROL traits] 公司帳戶內的所有設定。
 * `DELETE_ALL_TRAITS` -使用者可刪除其公 [!UICONTROL traits] 司帳戶內所有設定。
 * `CREATE_ALL_ALGO_TRAITS` -使用者可以建立 [!UICONTROL algorithmic traits]。
@@ -123,7 +123,7 @@ ht-degree: 2%
 
 **[!UICONTROL Reports]**
 
-* `PTRREPORTS` -這指 [!UICONTROL wildcard permission] 過時的功能，不久將從Audience Manager使用者介面移除。
+* `PTRREPORTS` -這指 [!UICONTROL wildcard permission] 的是過時的功能，不久將從Audience Manager用戶介面中刪除。
 
 **[!UICONTROL Models]**
 
@@ -162,13 +162,13 @@ ht-degree: 2%
 
 **[!UICONTROL Signals]**
 
-* `VIEW_ALL_SIGNALS` -使用者可檢視資料總管中擷取的所 [有訊號](/help/using/features/data-explorer/data-explorer-overview.md)。
+* `VIEW_ALL_SIGNALS` -用戶可以查看Data Explorer中捕獲的所有 [信號](/help/using/features/data-explorer/data-explorer-overview.md)。
 
 ## 使用個案 {#use-cases}
 
 ### 監視用戶訪問{#monitoring-user-access}
 
-[!UICONTROL Role-Based Access Control] 可協助您監控使用者登入狀態，讓您清楚瞭解哪些人可以存取您的Audience Manager實例。
+[!UICONTROL Role-Based Access Control] 可協助您監控使用者登入狀態，讓您清楚瞭解哪些人可以存取您的Audience Manager例項。
 
 視您的業務需求而定，您可以視需要啟用和停用使用者帳戶。
 
