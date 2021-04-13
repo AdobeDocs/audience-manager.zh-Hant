@@ -5,12 +5,11 @@ seo-description: Audience Marketplace可讓資料提供者和購買者以自助�
 seo-title: 訪客交易市場
 solution: Audience Manager
 title: 訪客交易市場
-topic-edit: DIL API
 uuid: a94d2ee7-d854-4e68-bd6b-42827ca72f67
 feature: 訪客交易市場
 exl-id: ee608bcd-6827-4fac-be96-8e16ff390ec0
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 7%
