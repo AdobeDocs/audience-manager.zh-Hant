@@ -5,15 +5,15 @@ seo-title: 設定檔合併規則快速入門
 solution: Audience Manager
 title: 設定檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
-feature: Profile Merge Rules
+feature: 描述檔合併
+exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
 translation-type: tm+mt
-source-git-commit: dc22ed98b51b5633532bab45a79a14ee14dba5f5
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1306'
 ht-degree: 4%
 
 ---
-
 
 # 設定檔合併規則快速入門 {#getting-started-with-profile-merge-rules}
 
@@ -55,7 +55,7 @@ ht-degree: 4%
 
 * **[!UICONTROL Use as a Device Graph]**:此控制項僅適用於列為資料提供者的帳戶。選取此核取方塊會將資料來源建立為裝置圖表，並讓您與其他[!DNL Audience Manager]客戶共用。 與您的[!DNL Audience Manager]顧問合作，以設定為資料提供者，並指定應與哪些客戶共用此[!UICONTROL Data Source]。 您的顧問將透過內部布建程式來布建您的帳戶和裝置圖形共用。
 
-* **[!UICONTROL Data retention for inactive Customer IDs]**:此控制項可讓您設定非作用中客戶ID的資料保留期。這會決定客戶ID上次在Audience Manager平台上顯示後，Audience Manager在我們的資料庫中保留多久的時間。 預設值為24個月（720天）。 您可設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計算為30天。 Audience Manager會根據您為非作用中客戶ID設定的資料保留率，執行每週刪除非作用中客戶ID一次的程式。
+* **[!UICONTROL Data retention for inactive Customer IDs]**:此控制項可讓您設定非作用中客戶ID的資料保留期。這將決定Audience Manager在客戶ID上次在Audience Manager平台上顯示後，在我們的資料庫中保存它們的時間。 預設值為24個月（720天）。 您可設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計算為30天。 Audience Manager會根據您為非活動客戶ID設定的資料保留率，執行每週刪除非活動客戶ID一次的程式。
 
 與這些設定關聯的文本欄位允許您使用出現在[配置檔案合併規則選項](merge-rule-definitions.md)中的別名更名[!UICONTROL Data Source]。 例如，如果向&#x200B;**[!UICONTROL Use as Authenticated Profile]**&#x200B;添加別名，該名稱將出現在[!UICONTROL Authenticated Profile Options]清單中。 如果向&#x200B;**[!UICONTROL Use as a Device Graph]**&#x200B;添加別名，該名稱將出現在[!UICONTROL Device Options]清單中。
 
@@ -103,14 +103,14 @@ ht-degree: 4%
    * **[!UICONTROL Device Co-op]**
 4. 按一下 **[!UICONTROL Save]**.
 
-### 使用跨裝置ID作為使用者ID索引鍵{#considerations}的Adobe促銷活動目標注意事項
+### 使用跨裝置ID作為用戶ID鍵{#considerations}的Adobe Campaign目的地注意事項
 
-在2019年底，我們推出了一系列的描述檔合併規則增強功能，以改善使用跨裝置ID產生的批次檔案的精確度。 從2020年3月16日星期一開始，您的Audience Manager例項將嚴格執行這些增強功能。 因此，使用跨裝置ID映射至目的地的區段，會停止在某些「描述檔合併規則」設定中產生匯出。
+在2019年底，我們推出了一系列的描述檔合併規則增強功能，以改善使用跨裝置ID產生的批次檔案的精確度。 從2020年3月16日（星期一）起，您的Audience Manager實例將嚴格遵循這些增強功能。 因此，使用跨裝置ID映射至目的地的區段，會停止在某些「描述檔合併規則」設定中產生匯出。
 
-若要使用跨裝置ID（例如Adobe Campaign）確保Audience Manager實例與目標之間的正確整合，請確定您符合下列需求：
+若要使用跨裝置ID(例如Adobe Campaign)確保Audience Manager實例與目標之間的正確整合，請確定您符合下列需求：
 
-1. 檢閱對應至Adobe Campaign Declared ID目的地的區段所使用的描述檔合併規則。 配置檔案合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，因此所有已驗證的配置檔案都可以包含在導出中。 如果您的「描述檔合併規則」使用不同的選項，請將其切換為[!UICONTROL Last Authenticated Profile]。
-2. 在「描述檔合併規則」設定中，選取「Adobe Campaign Declared ID」資料來源。
+1. 檢閱對應至您的「Adobe Campaign宣告ID」目的地的區段所使用的描述檔合併規則。 配置檔案合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，因此所有已驗證的配置檔案都可以包含在導出中。 如果您的「描述檔合併規則」使用不同的選項，請將其切換為[!UICONTROL Last Authenticated Profile]。
+2. 在「描述檔合併規則」設定中選取「Adobe Campaign宣告的ID」資料來源。
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ ht-degree: 4%
 
 在&#x200B;*完成這些過程之前，必須設定[跨設備資料源](#create-data-source)和[配置檔案合併規則](#create-profile-merge-rule)*。
 
-## 針對Adobe Experience Platform Identity Service客戶{#id-service-customers}
+## 針對Adobe Experience PlatformIdentity Service客戶{#id-service-customers}
 
-使用[!UICONTROL Profile Merge Rules]時，建議使用[!UICONTROL Adobe Experience Platform Identity Service]和最新版[DIL](../../dil/dil-overview.md)。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]來使用此功能。 如果您只使用[!UICONTROL DIL]，請參閱下方的[legacy DIL section](#legacy-dil)。
+使用[!UICONTROL Profile Merge Rules]時，建議使用[!UICONTROL Adobe Experience Platform Identity Service]和最新版[DIL](../../dil/dil-overview.md)。 但是，您不必使用[!UICONTROL Adobe Experience Platform Identity Service]來使用此功能。 如果您只使用[!UICONTROL DIL]，請參閱下面的[舊版DIL部分](#legacy-dil)。
 
 ### 設定客戶ID函式
 
@@ -173,7 +173,7 @@ var vDil = DIL.create({
 
 請參閱下方的[設定SDK](#configure-sdks-legacy-dil)一節。
 
-## 舊版DIL {#legacy-dil}
+## 舊DIL{#legacy-dil}
 
 如果您尚未使用[!DNL Adobe Experience Platform Identity Service]，您應該使用。 但是，我們瞭解到，改用新程式碼需要仔細的思考和測試。 在這些情況下，請檢查`DIL.create`函式，以確定此設定正確，如下面的程式碼範例所示。
 
@@ -225,7 +225,7 @@ DIL.create({
  </tbody>
 </table>
 
-另請參閱「Android適用的[Audience Manager方法」和「iOS適用的](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)Audience Manager方法」。](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)[
+另請參閱[Android的Audience Manager方法](hhttps://docs.adobe.com/content/help/en/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[iOS的Audience Manager方法](https://docs.adobe.com/content/help/en/mobile-services/ios/aam-methods.html)。
 
 >[!MORELIKETHIS]
 >
