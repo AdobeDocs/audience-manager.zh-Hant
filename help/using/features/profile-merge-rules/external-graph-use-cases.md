@@ -1,23 +1,23 @@
 ---
-description: 使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience Manager分開的裝置圖表。 這包括Adobe Experience Cloud Device Co-op以及Adobe與協力廠商確定性或概率性裝置圖形公司的其他整合。
-seo-description: 使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience Manager分開的裝置圖表。 這包括Adobe Experience Cloud Device Co-op以及Adobe與協力廠商確定性或概率性裝置圖形公司的其他整合。
+description: Recommendations，並使用外部裝置圖表，針對未知使用者進行探礦、重新定位及個人化使用案例。 外部設備圖形被定義為與Audience Manager分開的設備圖形。 這包括Adobe Experience CloudDevice Co-op和與協力廠商確定性或概率性裝置圖形公司的其他整合Adobe。
+seo-description: Recommendations，並使用外部裝置圖表，針對未知使用者進行探礦、重新定位及個人化使用案例。 外部設備圖形被定義為與Audience Manager分開的設備圖形。 這包括Adobe Experience CloudDevice Co-op和與協力廠商確定性或概率性裝置圖形公司的其他整合Adobe。
 seo-title: 外部裝置圖表使用案例
 solution: Audience Manager
 title: 外部裝置圖表使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
-feature: Profile Merge Rules
+feature: 描述檔合併
+exl-id: 657aecfd-7fa3-466e-8331-c49cc921e3a9
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '553'
 ht-degree: 5%
 
 ---
 
-
 # 外部裝置圖表使用案例 {#external-device-graph-use-cases}
 
-使用外部裝置圖表，為未知使用者提供潛在客戶、重新定位目標及個人化的建議和使用案例。 外部裝置圖表定義為與Audience Manager分開的裝置圖表。 這包括[!DNL Adobe Experience Cloud Device Co-op]和Adobe與協力廠商確定性或概率性裝置圖形公司的其他整合。
+Recommendations，並使用外部裝置圖表，針對未知使用者進行探礦、重新定位及個人化使用案例。 外部設備圖形被定義為與Audience Manager分開的設備圖形。 這包括[!DNL Adobe Experience Cloud Device Co-op]和其他整合Adobe與協力廠商確定性或概率性裝置圖形公司。
 
 ## 建議 {#recommendations}
 
@@ -107,7 +107,7 @@ These strategies are designed to bring an unauthenticated or unknown user back t
 
 ![對象擴展規則](assets/audience-expansion-rule.png)
 
-在我們的範例中，符合區段資格所需的特徵全都收集在[!DNL Device 1]上。 由於Audience Manager符合參與區段描述檔合併的每個裝置描述檔的資格，因此Jane的三個裝置描述檔現在都會分段。
+在我們的範例中，符合區段資格所需的特徵全都收集在[!DNL Device 1]上。 由於Audience Manager符合參與區段描述檔合併的每個裝置描述檔的資格，所以Jane的三個裝置描述檔現在都會分段。
 
 透過此規則，裝置圖表將符合區段資格的裝置設定檔數從1擴充為3個，讓旅行社可向Jane擁有的所有3種裝置傳送一致的訊息。
 
@@ -119,7 +119,7 @@ These strategies are designed to bring an unauthenticated or unknown user back t
 
 ![最後設備圖](assets/last-device-coop.png)
 
-在以下範例中，Acme Inc.公司想要定位所有收入超過$100.000/年、[!DNL Data Plan A]上有[!DNL Acme Inc.]訂閱者、使用[!DNL iPhone 7]裝置的家庭。
+在以下範例中，Acme Inc.公司想要定位所有收入超過$100.000/年、[!DNL Data Plan A]上有[!DNL Acme Inc.]訂閱者且使用[!DNL iPhone 7]裝置的家庭。
 
 John在資料計畫A上使用iPhone 7在Acme Inc.網站上驗證。 同時，John的[!DNL Co-Op Device Graph]群集還包含他經常使用的另外兩台設備：他的筆記型電腦([!DNL Device 1])和他的輔助智慧手機[!DNL Device 2]（[!DNL Data Plan B]上的[!DNL Samsung S7]）。
 
