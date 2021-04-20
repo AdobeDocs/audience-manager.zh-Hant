@@ -4,7 +4,7 @@ seo-description: Adobe 可讓您透過選擇加入功能和 IAB 透明與同意�
 seo-title: 適用於 IAB TCF 的 Audience Manager 外掛程式
 solution: Audience Manager
 title: 適用於 IAB TCF 的 Audience Manager 外掛程式
-feature: 資料管理與隱私權
+feature: Data Governance & Privacy
 exl-id: aa6bc415-e52b-4900-951d-ccf51d907aa2
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

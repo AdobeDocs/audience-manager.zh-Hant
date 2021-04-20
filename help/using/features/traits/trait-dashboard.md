@@ -5,7 +5,7 @@ seo-title: 特徵控制面板
 solution: Audience Manager
 title: 特徵控制面板
 uuid: 31b8f958-f67d-4af2-8d78-e37e2dfe810d
-feature: 特徵
+feature: Traits
 translation-type: tm+mt
 source-git-commit: 65598677498ede26e4961cd4849c9b655dac38dc
 workflow-type: tm+mt

@@ -5,7 +5,7 @@ seo-title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 solution: Audience Manager
 title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
-feature: 日誌檔案
+feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

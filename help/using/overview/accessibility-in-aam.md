@@ -4,7 +4,7 @@ seo-description: 協助功能是指讓軟體產品可供使用的一系列功能
 seo-title: Audience Manager中的協助功能
 solution: Audience Manager
 title: Audience Manager中的協助功能
-feature: 概述
+feature: Overview
 exl-id: 45fd53e6-b8e1-49b4-99a3-c78adc90c707
 translation-type: tm+mt
 source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815

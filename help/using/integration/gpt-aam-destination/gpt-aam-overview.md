@@ -3,7 +3,7 @@ description: 概觀如何使用Google Publisher標籤(GPT)整合Google廣告管�
 seo-description: 概觀如何使用Adobe Audience Manager()的Google Publisher標籤(GPT)整合Google廣告AAM管理員。
 seo-title: 使用Adobe Audience Manager()的Google Publisher Tags(GPT)整合Google Ad Manager(AAMGoogle Publisher Tags)
 title: 使用Google Publisher標籤(GPT)整合Google Ad Manager
-feature: 協力廠商整合
+feature: Third-party Integration
 exl-id: d383cb8a-ef41-4ce6-9e31-6145797a89fa
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

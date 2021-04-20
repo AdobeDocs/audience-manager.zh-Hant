@@ -5,7 +5,7 @@ seo-title: 描述的即時資料傳輸過程
 solution: Audience Manager
 title: 描述的即時資料傳輸過程
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
-feature: 傳入資料傳輸
+feature: Inbound Data Transfers
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt

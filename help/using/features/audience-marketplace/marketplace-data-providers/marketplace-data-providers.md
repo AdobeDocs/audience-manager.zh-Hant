@@ -6,7 +6,7 @@ seo-title: 適用於資料提供者的 Audience Marketplace
 solution: Audience Manager
 title: 適用於資料提供者的 Audience Marketplace
 uuid: 80e60d33-63e7-496c-82c5-205ecf0ec03a
-feature: 訪客交易市場
+feature: Audience Marketplace
 exl-id: 10a00bc9-5ee0-4aed-95d7-ace749b75542
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

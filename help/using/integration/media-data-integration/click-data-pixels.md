@@ -5,7 +5,7 @@ seo-title: 透過像素呼叫擷取行銷活動的點按資料
 solution: Audience Manager
 title: 透過像素呼叫擷取行銷活動的點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
-feature: Adobe Campaign整合
+feature: Adobe Campaign Integration
 exl-id: 41b169bf-3727-4ed7-b74f-fea75244d2cb
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

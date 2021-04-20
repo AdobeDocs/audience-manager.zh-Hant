@@ -5,7 +5,7 @@ seo-title: 發佈者適用的 Audience Optimization
 solution: Audience Manager
 title: 發佈者適用的 Audience Optimization
 uuid: 8425e237-ec52-4615-bb00-84ece4ebffe1
-feature: 受眾最佳化報表
+feature: Audience Optimization Reports
 exl-id: 5972ea89-3e4d-48a5-bdd2-0a34211d8bfd
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

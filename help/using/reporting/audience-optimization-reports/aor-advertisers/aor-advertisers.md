@@ -5,7 +5,7 @@ seo-title: 廣告商適用的 Audience Optimization
 solution: Audience Manager
 title: 廣告商適用的 Audience Optimization
 uuid: 852d550e-3c7f-4750-9abc-365c3a6f7883
-feature: 受眾最佳化報表
+feature: Audience Optimization Reports
 exl-id: 13595778-3d3a-4c83-a84f-4bc3af1ee367
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

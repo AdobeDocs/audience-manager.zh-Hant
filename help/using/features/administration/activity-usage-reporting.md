@@ -5,7 +5,7 @@ seo-description: 「活動使用情況報告」可協助您檢視及追蹤Audien
 seo-title: 活動使用情況報表
 solution: Audience Manager
 title: 活動使用情況報表
-feature: 使用與帳單
+feature: Usage and Billing
 exl-id: 0c5f04c6-d008-4817-9c67-cd39350b3aaf
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

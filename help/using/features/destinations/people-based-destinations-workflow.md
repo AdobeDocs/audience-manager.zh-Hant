@@ -4,7 +4,7 @@ seo-description: '「以人為本的目標」提供多種實作策略，視客�
 seo-title: 以人為本的目的地實作指引
 solution: Audience Manager
 title: 實施指南
-feature: 以人為本的目的地
+feature: People-based Destinations
 exl-id: 224334d5-419c-4bb1-b76c-ce996a543b7a
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

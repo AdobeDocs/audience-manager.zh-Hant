@@ -4,7 +4,7 @@ seo-description: 即時跨裝置隱藏功能可以在任一裝置出現特殊狀
 seo-title: 即時跨裝置隱藏功能
 title: 即時跨裝置隱藏功能
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
-feature: 描述檔合併
+feature: Profile Merge
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

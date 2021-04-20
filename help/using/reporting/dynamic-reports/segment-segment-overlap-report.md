@@ -5,7 +5,7 @@ seo-title: 區段至區段重疊報表
 solution: Audience Manager
 title: 區段至區段重疊報表
 uuid: 0339eb6c-6355-44a3-9c46-f159485449d1
-feature: 重疊報表
+feature: Overlap Reports
 exl-id: 43a8ea20-3197-4623-a03a-bfe40e5049cd
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

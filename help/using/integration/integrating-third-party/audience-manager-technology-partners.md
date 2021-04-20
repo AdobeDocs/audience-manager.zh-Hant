@@ -5,7 +5,7 @@ seo-title: Adobe Audience Manager技術合作夥伴
 keywords: 啟動；啟動合作夥伴、目的地和目的地
 solution: Audience Manager
 title: Adobe Audience Manager技術合作夥伴
-feature: 協力廠商整合
+feature: Third-party Integration
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ seo-description: '使用以人為本的目的地，將第一方受眾細分傳�
 seo-title: 基於人員的目標概觀和使用案例
 solution: Audience Manager
 title: 概述與使用案例
-feature: 以人為本的目的地
+feature: People-based Destinations
 exl-id: 2edbda3b-e2a3-4a92-965b-206a21764cc8
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

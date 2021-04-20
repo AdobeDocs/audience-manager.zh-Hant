@@ -5,7 +5,7 @@ seo-title: Audience Manager 中的時區
 solution: Audience Manager
 title: Audience Manager 中的時區
 uuid: ff4710a9-edee-470c-9ab0-85c1789a2837
-feature: 參考
+feature: Reference
 exl-id: bb89cf76-dd43-454b-aaa8-8e5415493ecc
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

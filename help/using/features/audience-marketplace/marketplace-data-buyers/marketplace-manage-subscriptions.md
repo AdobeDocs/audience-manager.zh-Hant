@@ -5,7 +5,7 @@ seo-title: 管理資料摘要訂閱
 solution: Audience Manager
 title: 管理資料摘要訂閱
 uuid: 7305adb6-cbb8-4430-8204-2243095c0ba5
-feature: 訪客交易市場
+feature: Audience Marketplace
 exl-id: 171acbbc-88ab-496f-93ea-48956325d8fd
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

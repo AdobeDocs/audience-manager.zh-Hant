@@ -4,7 +4,7 @@ seo-description: '本頁包含如何結合離線CRM資料與您已Audience Manag
 seo-title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
 solution: Audience Manager
 title: 工作流程 A - 以所有線上活動和離線資料為基礎的個人化
-feature: 以人為本的目的地
+feature: People-based Destinations
 exl-id: 1f906955-8fe7-4cce-95d6-0e4275d523e8
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

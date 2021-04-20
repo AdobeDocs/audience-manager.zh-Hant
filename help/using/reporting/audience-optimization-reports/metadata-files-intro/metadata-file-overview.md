@@ -5,7 +5,7 @@ seo-title: 中繼資料檔案的概述與對應
 solution: Audience Manager
 title: 中繼資料檔案的概述與對應
 uuid: 70df7f11-69c5-4873-a69d-8f93f94e9837
-feature: 日誌檔案
+feature: Log Files
 exl-id: 8c59ab80-f04a-42df-891e-a187ecd0219f
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

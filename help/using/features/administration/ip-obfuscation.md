@@ -3,7 +3,7 @@ description: 由於全球隱私權規範，貴公司可能會想要模糊化許�
 seo-description: 由於全球隱私權規範，貴公司可能會想要模糊化許多國家/地區中的 IP 位址。Audience Manager 可讓您根據全球或個別國家/地區模糊化訪客 IP 位址。
 solution: Audience Manager
 title: IP 位址模糊化
-feature: 資料管理與隱私權
+feature: Data Governance & Privacy
 exl-id: 8c976d1e-f4ba-4892-bd68-d4e74bdb4d9b
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

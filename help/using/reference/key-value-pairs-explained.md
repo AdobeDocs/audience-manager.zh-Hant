@@ -6,7 +6,7 @@ seo-title: 索引鍵值配對說明
 solution: Audience Manager
 title: 索引鍵值配對說明
 uuid: f1435742-81ca-4964-8370-accf2f1c47a5
-feature: 參考
+feature: Reference
 exl-id: de4e6fdb-2d6d-4fed-9255-9438b42b2570
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

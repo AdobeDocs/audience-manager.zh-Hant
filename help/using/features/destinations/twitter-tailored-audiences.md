@@ -4,7 +4,7 @@ seo-description: 本文說明如何針對新整合和現有整合設定Twitter�
 seo-title: 將為 Twitter 量身打造的受眾設定為自助服務以裝置為基礎的目的地
 solution: Audience Manager
 title: 將為 Twitter 量身打造的受眾設定為自助服務以裝置為基礎的目的地
-feature: 以人為本的目的地
+feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

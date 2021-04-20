@@ -5,7 +5,7 @@ seo-title: 互動式和重疊報表
 solution: Audience Manager
 title: 互動式和重疊報表
 uuid: 486f4251-da24-4253-ab01-9dd1da8715aa
-feature: 重疊報表
+feature: Overlap Reports
 exl-id: 2a29b172-a323-422d-99e0-b00aa16e03dc
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

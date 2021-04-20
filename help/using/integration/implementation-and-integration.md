@@ -4,7 +4,7 @@ seo-description: 在 Audience Manager 中處理 Experience Cloud 解決方案或
 seo-title: 在 Audience Manager 中處理 Experience Cloud 解決方案或其他外部系統的資料。
 solution: Audience Manager
 title: 實作與整合指南
-feature: 協力廠商整合
+feature: Third-party Integration
 exl-id: 6e3cccdd-10af-4b17-9ddb-c4faf63f0a50
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

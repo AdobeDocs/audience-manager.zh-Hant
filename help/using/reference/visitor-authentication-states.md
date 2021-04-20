@@ -6,7 +6,7 @@ seo-title: Audience Manager 中的訪客驗證狀態
 solution: Audience Manager
 title: Audience Manager 中的訪客驗證狀態
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
-feature: 參考
+feature: Reference
 exl-id: 55aec28d-02f6-4e6d-9be1-4ce40deb8dc3
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -4,7 +4,7 @@ seo-description: 說明為何特徵和區段可能不會顯示在「重疊報表
 seo-title: 為何我的特徵或區段沒有顯示在「重疊報表」頁面上？
 solution: Audience Manager
 title: 為何我的特徵或區段沒有顯示在「重疊報表」頁面上？
-feature: 支援
+feature: Support
 exl-id: 8341ee38-fc46-4a4b-9c9e-4ce2edb9a2fb
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

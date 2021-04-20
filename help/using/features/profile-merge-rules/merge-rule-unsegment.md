@@ -5,7 +5,7 @@ seo-title: 設定檔合併規則與裝置取消細分程序
 solution: Audience Manager
 title: 設定檔合併規則與裝置取消細分程序
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
-feature: 描述檔合併
+feature: Profile Merge
 exl-id: ff3da607-5c25-45b2-ac27-071c22d518a0
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

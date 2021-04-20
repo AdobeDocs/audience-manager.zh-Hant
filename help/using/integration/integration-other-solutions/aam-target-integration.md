@@ -5,7 +5,7 @@ seo-title: 整合 Audience Manager 與 Target
 solution: Audience Manager
 title: 整合 Audience Manager 與 Target
 uuid: c5ca2101-99fb-4178-9839-3ec5b605c040
-feature: Adobe Target整合
+feature: Adobe Target Integration
 exl-id: a8486778-305a-4f09-a4f8-0e412369228c
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

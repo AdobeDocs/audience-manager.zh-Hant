@@ -5,7 +5,7 @@ seo-title: 中繼資料檔案的狀態更新
 solution: Audience Manager
 title: 中繼資料檔案的狀態更新
 uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
-feature: 日誌檔案
+feature: Log Files
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt

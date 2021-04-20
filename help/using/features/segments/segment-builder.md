@@ -5,7 +5,7 @@ seo-title: 區段產生器
 solution: Audience Manager
 title: 區段產生器
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
-feature: 區段
+feature: Segments
 translation-type: tm+mt
 source-git-commit: 9e0c936ba514e517bcbd7572420118293f9a791f
 workflow-type: tm+mt

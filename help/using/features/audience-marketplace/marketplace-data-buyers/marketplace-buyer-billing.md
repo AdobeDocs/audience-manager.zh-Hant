@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 資料摘要購買者的計費方式
 keywords: 區段層級報表、區段層級、區段層級
 uuid: d7236667-282b-4160-9909-579721af4016
-feature: 訪客交易市場
+feature: Audience Marketplace
 exl-id: 401cf3be-fa84-4654-936e-e2871fef0be9
 translation-type: tm+mt
 source-git-commit: 88ed0b28fdf5dc03c8a878529d65b4bc844ea6c9

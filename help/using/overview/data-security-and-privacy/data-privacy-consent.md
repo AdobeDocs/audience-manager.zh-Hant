@@ -6,7 +6,7 @@ solution: Audience Manager
 keywords: GDPR UI、GDPR API、CCPA、隱私權、同意
 title: 同意管理
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
-feature: 資料管理與隱私權
+feature: Data Governance & Privacy
 exl-id: 9e545e8d-dbe4-4df9-8801-af3c2c73e406
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

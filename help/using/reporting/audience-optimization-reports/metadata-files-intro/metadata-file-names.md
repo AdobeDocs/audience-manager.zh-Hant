@@ -5,7 +5,7 @@ seo-title: 中繼資料檔案的命名慣例
 solution: Audience Manager
 title: 中繼資料檔案的命名慣例
 uuid: cab55b2a-2e54-45f6-aeea-3735b911f821
-feature: 日誌檔案
+feature: Log Files
 exl-id: 7a895c4f-1100-4ba1-947e-abb47307fb40
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

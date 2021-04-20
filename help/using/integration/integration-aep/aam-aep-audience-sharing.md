@@ -5,7 +5,7 @@ seo-title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 solution: Audience Manager
 title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP觀眾分享， AEP區隔，平台區隔，區隔分享，觀眾分享，分享區隔
-feature: 平台整合
+feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

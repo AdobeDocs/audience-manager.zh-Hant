@@ -5,7 +5,7 @@ seo-title: 使用Google Publisher標籤(GPT)將區段傳送至Google廣告管理
 solution: Audience Manager
 title: 使用Google Publisher標籤(GPT)將區段傳送至Google廣告管理員的需求與方法
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e677790b6
-feature: 協力廠商整合
+feature: Third-party Integration
 exl-id: 04bf6fb5-ce38-4de1-bf19-e130b7e47616
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -5,7 +5,7 @@ seo-title: 區段至廣告單位重疊
 solution: Audience Manager
 title: 區段至廣告單位重疊
 uuid: aaa20163-58aa-42c9-8f72-a1dfb0d20e57
-feature: 受眾最佳化報表
+feature: Audience Optimization Reports
 exl-id: 6c7cf2e6-8ed4-42de-92ee-0df90940f441
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

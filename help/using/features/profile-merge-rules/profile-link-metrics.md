@@ -5,7 +5,7 @@ seo-title: 設定檔合併規則的報表量度
 solution: Audience Manager
 title: 設定檔合併規則的報表量度
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
-feature: 描述檔合併
+feature: Profile Merge
 exl-id: 2af59c60-2448-44af-90d2-eccc52f7ff02
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

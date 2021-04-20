@@ -6,7 +6,7 @@ seo-title: 訪客交易市場
 solution: Audience Manager
 title: 訪客交易市場
 uuid: a94d2ee7-d854-4e68-bd6b-42827ca72f67
-feature: 訪客交易市場
+feature: Audience Marketplace
 exl-id: ee608bcd-6827-4fac-be96-8e16ff390ec0
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

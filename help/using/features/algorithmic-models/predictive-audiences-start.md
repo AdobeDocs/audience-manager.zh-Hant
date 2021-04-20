@@ -4,7 +4,7 @@ seo-description: 預測受眾可協助您運用資料科學，將未知的受眾
 seo-title: 管理預測性對象
 solution: Audience Manager
 title: 預測受眾快速入門
-feature: 演算法模型
+feature: Algorithmic Models
 exl-id: beb314de-f679-4397-8e14-2dd6576243fd
 translation-type: tm+mt
 source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656

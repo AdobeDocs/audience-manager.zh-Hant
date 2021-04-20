@@ -4,7 +4,7 @@ seo-description: '本頁包含如何結合離線CRM資料與即時行為資料�
 seo-title: 工作流 C - 以結合離線資料的驗證活動為基礎的個人化
 solution: Audience Manager
 title: 工作流 C - 以結合離線資料的驗證活動為基礎的個人化
-feature: 以人為本的目的地
+feature: People-based Destinations
 exl-id: 24f877ce-089e-484c-9a70-8fce1a10a649
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

@@ -5,7 +5,7 @@ seo-title: 記錄資料和中繼資料檔案
 solution: Audience Manager
 title: 記錄資料和中繼資料檔案
 uuid: 80aa4bc3-c660-4e65-8c22-2ddbb7bddd4f
-feature: 日誌檔案
+feature: Log Files
 exl-id: c913372f-4a0a-420c-933e-23b30393fbaf
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

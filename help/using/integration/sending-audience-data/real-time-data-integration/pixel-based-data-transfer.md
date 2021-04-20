@@ -5,7 +5,7 @@ seo-title: 以像素為基礎的資料傳輸
 solution: Audience Manager
 title: 以像素為基礎的資料傳輸
 uuid: 8773bfc0-6b8d-4a6a-a8b7-e043744486ab
-feature: 傳入資料傳輸
+feature: Inbound Data Transfers
 exl-id: fe9ecb97-4a45-4fbb-855e-01df007144cf
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74

@@ -4,7 +4,7 @@ seo-description: '請閱讀以下內容，以瞭解您在註冊人員型目標�
 seo-title: 基於人員的目標先決條件和考慮事項
 solution: Audience Manager
 title: 必要條件和考量事項
-feature: 以人為本的目的地
+feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

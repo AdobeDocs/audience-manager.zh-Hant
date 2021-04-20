@@ -3,7 +3,7 @@ description: 使用「分析」功能表下的選項，檢視控制面板和各�
 seo-description: 使用「Analytics」功能表下的選項，在Adobe Audience Manager()中檢視控制面板和各種報AAM表。
 seo-title: Adobe Audience Manager的報告概述(AAM)
 title: 報告概述
-feature: 報告參考
+feature: Reporting Reference
 exl-id: 8b0e34be-7a78-426c-a295-5e58a3462d64
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

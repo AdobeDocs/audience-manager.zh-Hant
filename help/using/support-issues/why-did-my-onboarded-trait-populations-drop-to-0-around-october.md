@@ -4,7 +4,7 @@ seo-description: 2019 年 10 月 14 日前後，我注意到裝置 ID 圖表的�
 seo-title: 為什麼我的已上線特徵母體在 10 月 15 日左右降至 0？
 solution: Audience Manager
 title: 為什麼我的已上線特徵母體在 10 月 15 日左右降至 0？
-feature: 支援
+feature: Support
 exl-id: e93cee15-7d05-4f81-8f14-a3e03f214542
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

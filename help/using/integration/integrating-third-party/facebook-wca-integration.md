@@ -4,7 +4,7 @@ seo-description: 本頁說明建立Facebook網站自訂對象(WCA)像素的程�
 seo-title: Facebook WCA 整合
 solution: Audience Manager
 title: Facebook WCA 整合
-feature: 協力廠商整合
+feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

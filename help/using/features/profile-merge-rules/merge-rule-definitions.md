@@ -5,7 +5,7 @@ seo-title: 定義的設定檔合併規則選項
 solution: Audience Manager
 title: 定義的設定檔合併規則選項
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
-feature: 描述檔合併
+feature: Profile Merge
 exl-id: 682d2540-c764-4f5a-a946-5d0e18c66c00
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

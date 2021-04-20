@@ -5,7 +5,7 @@ seo-title: 趨勢分析和大量分析報表
 solution: Audience Manager
 title: 趨勢分析和大量分析報表
 uuid: 5d124d80-5f54-4970-92cd-2c8eba42efca
-feature: 受眾最佳化報表
+feature: Audience Optimization Reports
 exl-id: f8e6c7a4-c4f8-465f-a32c-681a07e6e6f5
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

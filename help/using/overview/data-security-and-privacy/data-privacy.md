@@ -5,7 +5,7 @@ seo-title: 資料隱私權概述
 solution: Audience Manager
 title: 資料隱私權概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
-feature: 資料管理與隱私權
+feature: Data Governance & Privacy
 exl-id: 051de369-e762-49fb-b65f-6faf94db48a4
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44

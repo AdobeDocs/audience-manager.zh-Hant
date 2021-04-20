@@ -5,7 +5,7 @@ seo-title: 報表控制面板
 solution: Audience Manager
 title: 報表控制面板
 uuid: 350eee2d-72f7-42a7-916b-60f9a362c5cf
-feature: 報告參考
+feature: Reporting Reference
 exl-id: 1ca0280a-d67b-46f7-9c58-effc5be4e38f
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

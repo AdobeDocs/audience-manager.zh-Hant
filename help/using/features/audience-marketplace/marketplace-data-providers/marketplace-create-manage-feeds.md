@@ -5,7 +5,7 @@ seo-title: 建立、定價和管理資料摘要
 solution: Audience Manager
 title: 建立、定價和管理資料摘要
 uuid: e28c20b3-33fc-4485-8ee9-8530d126f741
-feature: 訪客交易市場
+feature: Audience Marketplace
 exl-id: e8605e94-e62a-430c-9aef-875f995fb436
 translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7

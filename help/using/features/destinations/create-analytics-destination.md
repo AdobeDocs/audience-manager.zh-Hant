@@ -4,7 +4,7 @@ seo-description: Audience Analytics 可讓您傳送 Audience Manager 區段至 A
 seo-title: 設定 Analytics 目的地
 solution: Audience Manager
 title: 設定 Analytics 目的地
-feature: Adobe Analytics 整合功能
+feature: Adobe Analytics Integration
 exl-id: f3ead057-04d1-40cd-8e3d-d0934d85cdb4
 translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
