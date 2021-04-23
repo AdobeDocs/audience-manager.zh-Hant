@@ -3,13 +3,13 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 使用手冊
-user-guide-description: Audience Manager 提供領先業界的線上受眾資料管理服務。
+user-guide-description: 瞭解Audience Manager如何讓您收集與商業相關的網站訪客資訊、建立有市場價值的細分，並為適當的受眾提供有針對性的廣告和內容。
 feature-set: Audience Manager
 translation-type: tm+mt
-source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815
+source-git-commit: bd049d293eeddf9c3454ea8dc183f84f5c7df59a
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 92%
+source-wordcount: '1806'
+ht-degree: 91%
 
 ---
 
