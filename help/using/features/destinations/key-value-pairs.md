@@ -1,19 +1,17 @@
 ---
-description: 鍵值對由相關元素A鍵組成，該鍵是定義資料集（例如性別、顏色、價格）的常數和值，該值是屬於該集的變數（例如，男／女、綠色、100）。 目標產生器會傳送格式化為金鑰值配對的資料。
-seo-description: 鍵值對由相關元素A鍵組成，該鍵是定義資料集（例如性別、顏色、價格）的常數和值，該值是屬於該集的變數（例如，男／女、綠色、100）。 目標產生器會傳送格式化為金鑰值配對的資料。
-seo-title: 標準和序列索引鍵值配對
+description: A [!DNL key-value pair] 由相關元素A鍵組成，該鍵是定義資料集（例如性別、顏色、價格）的常數和值，該值是屬於該集的變數（例如男性／女性、綠色、100）。 目標產生器會傳送格式化為金鑰值配對的資料。
 solution: Audience Manager
-title: 標準和序列索引鍵值配對
+title: 標準和串列 [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
-feature: Destination Basics
+feature: 目標基礎
+exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+source-git-commit: c895ec099ff92f94328ad29e6f2349e79b77d667
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 4%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
-
 
 # 標準和序列索引鍵值配對 {#standard-and-serial-key-value-pairs}
 
@@ -32,7 +30,7 @@ ht-degree: 4%
 目標接受&#x200B;*`standard`*&#x200B;或&#x200B;*`serialized`*&#x200B;格式的鍵值資料。
 
 * **標準鍵值對：將目** 標資料格式化為單獨的鍵值對。每個鍵都被明確指定，即使再次用於定義不同的值。
-* **序列化鍵值對：將** 多個值縮合為單一鍵值對。在序列化的鍵值對中，特殊指示符分隔鍵值集內的值。
+* **序列化鍵值對：將** 多個值縮合為單一鍵值對。在序列化鍵值對中，特殊指示符分隔鍵值集內的值。
 
 標準和序號的索引鍵值皆可包含單一或多個值。 下表提供標準和序號鍵值格式的範例。
 
