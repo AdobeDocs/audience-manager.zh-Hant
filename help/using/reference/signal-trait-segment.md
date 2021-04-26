@@ -5,7 +5,7 @@ seo-title: 訊號、特徵和區段
 solution: Audience Manager
 title: 訊號、特徵和區段
 uuid: 485fcc5c-b289-463b-a610-0d727df90f3c
-feature: Reference
+feature: 參考
 exl-id: ec33f2c3-1589-4c02-a85a-db0d72467f32
 translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
