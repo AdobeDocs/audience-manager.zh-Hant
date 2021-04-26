@@ -1,12 +1,12 @@
 ---
-description: A [!DNL key-value pair] 由相關元素A鍵組成，該鍵是定義資料集（例如性別、顏色、價格）的常數和值，該值是屬於該集的變數（例如男性／女性、綠色、100）。 目標產生器會傳送格式化為金鑰值配對的資料。
+description: A [!DNL key-value pair] 由相關元素組成。 一個鍵，它是定義資料集（例如性別、顏色、價格）的常數，一個值，它是屬於該集的變數（例如，男／女、綠色、100）。 目標產生器會傳送格式化為金鑰值配對的資料。
 solution: Audience Manager
 title: 標準和串列 [!DNL Key-value pairs]
 uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: 目標基礎
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: c895ec099ff92f94328ad29e6f2349e79b77d667
+source-git-commit: f9f5cb5f83f095ad8cac01447ef0c360f0acd5fc
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
