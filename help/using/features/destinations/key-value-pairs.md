@@ -6,7 +6,7 @@ uuid: 43789419-5b3f-4e62-b2e0-2722340bdd41
 feature: 目標基礎
 exl-id: b37c829b-66be-4c31-8198-bc032371279e
 translation-type: tm+mt
-source-git-commit: f9f5cb5f83f095ad8cac01447ef0c360f0acd5fc
+source-git-commit: fe6e2883e67e70b362d31e19b28df4b586de7b8a
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 標準和序列索引鍵值配對 {#standard-and-serial-key-value-pairs}
 
-鍵值對由相關元素組成：一個鍵，它是定義資料集（例如性別、顏色、價格）的常數，一個值，它是屬於該集的變數（例如，男／女、綠色、100）。 [!UICONTROL Destination Builder] 發送格式化為鍵值對的資料。
+鍵值對由相關元素組成：鍵，它是定義資料集的常數(例如：性別、顏色、價格)和值，此值是屬於該集的變數（例如，男／女、綠色、100）。 [!UICONTROL Destination Builder] 發送格式化為鍵值對的資料。
 
 ## 基本鍵值對{#basic-key-value-pairs}
 
