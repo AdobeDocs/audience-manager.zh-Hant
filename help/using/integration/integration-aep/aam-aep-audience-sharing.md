@@ -5,12 +5,12 @@ seo-title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 solution: Audience Manager
 title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP觀眾分享， AEP區隔，平台區隔，區隔分享，觀眾分享，分享區隔
-feature: Platform Integration
+feature: 平台整合
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8dabdc08a58ece28162c70aefb392ff36f5fbc89
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1465'
 ht-degree: 2%
 
 ---
@@ -164,17 +164,13 @@ Audience Manager每天更新介面中的報表數字一次。   此項更新的�
 
 Adobe Experience Platform與Audience Manager之間的整合為所有客戶共用了許多標準[標識名稱空間](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html#identity-types):ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID。 如果您的Experience Platform區段使用其中任何一個作為合格描述檔的主要識別，描述檔會計入Audience Manager特徵和區段。
 
-此外，Audience Manager可針對您在Experience Platform區段中使用的任何自訂身分名稱空間，在下列情況下註冊傳入的實現：
-* 身分標示為主&#x200B;*和*
-* 您已有對應的跨裝置資料來源已Audience Manager。
-
 >[!NOTE]
 >
 > 在Experience Platform中，以身分識別原始電子郵件的受眾永遠不會出現在Audience Manager中。
 
-例如，如果您有Experience Platform區段「我的所有客戶」，且符合資格的設定檔是CRM ID、ECID、IDFA、原始和雜湊電子郵件地址，則Audience Manager中的對應區段將僅包含CRM ID、ECID、IDFA和雜湊電子郵件地址的設定檔。 Audience Manager區段人口將小於Experience Platform區段人口。
+例如，如果您有Experience Platform區段「我的所有客戶」，且符合資格的設定檔是CRM ID、ECID、IDFA、原始和雜湊電子郵件地址，則Audience Manager中的對應區段將僅包含ECID、IDFA和雜湊電子郵件地址的設定檔。 Audience Manager區段人口將小於Experience Platform區段人口。
 
-![Experience Platform至Audience Manager分部分享——分部組成](/help/using/integration/integration-aep/assets/AEP-to-AAM-profiles.png)
+![Experience Platform至Audience Manager分部分享——分部組成](assets/AEP-to-AAM-profiles.png)
 
 <!--
 
