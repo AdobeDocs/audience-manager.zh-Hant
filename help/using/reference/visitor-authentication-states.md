@@ -6,13 +6,13 @@ seo-title: Audience Manager 中的訪客驗證狀態
 solution: Audience Manager
 title: Audience Manager 中的訪客驗證狀態
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
-feature: Reference
+feature: 參考
 exl-id: 55aec28d-02f6-4e6d-9be1-4ce40deb8dc3
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: c3c829ef1335d1e073b719f8252103fa578bb4e6
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 5%
+source-wordcount: '391'
+ht-degree: 7%
 
 ---
 
@@ -24,25 +24,9 @@ Audience Manager中的訪客驗證狀態會決定新特徵資訊是寫入訪客�
 
 ## 驗證狀態：未知{#auth-status-unknown}
 
-<table id="table_E1EA51533FAE4BBFB338D6F6116BC1F9"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> <p>請求值 </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>從已驗</b> 證的配置檔案讀取資訊 </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>將新</b> 特徵寫入已驗證的配置檔案 </p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p> <code> 0 </code> </p> </td> 
-   <td colname="col2"> <p>是，如果「已驗證選項合併規則」=「上次驗證的設定檔」。 </p> </td> 
-   <td colname="col3" morerows="1"> <p>否，特徵資料會新增至裝置描述檔。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>否，如果「已驗證選項合併規則」=「目前已驗證的設定檔」或「無已驗證的設定檔」。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| 請求值 | 從已驗證的配置檔案中讀取資訊 | 將新特徵寫入已驗證的設定檔 |
+|---|---|---|
+| 0 | <ul><li>是，如果[!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Last Authenticated Profiles]。</li><li>否，如果[!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Current Authenticated Profiles]或[!UICONTROL No Authenticated Profile]。</li></ul> | 否，特徵資料會新增至裝置描述檔。 |
 
 範例呼叫（與驗證狀態對應的請求值會反白顯示）:
 
@@ -50,25 +34,9 @@ Audience Manager中的訪客驗證狀態會決定新特徵資訊是寫入訪客�
 
 ## 驗證狀態：已驗證{#auth-status-authenticated}
 
-<table id="table_956ABF96024744308F7773E1F96482B7"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> <p>請求值 </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>從已驗</b> 證的配置檔案讀取資訊 </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>將新</b> 特徵寫入已驗證的配置檔案 </p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p> <code> 1 </code> </p> </td> 
-   <td colname="col2"> <p>是，如果「已驗證選項合併規則」=「目前已驗證的設定檔」或「上次驗證的設定檔」。 </p> </td> 
-   <td colname="col3" morerows="1"> <p>是的，特徵資料會新增至已驗證的描述檔。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> <p>否，如果「已驗證選項合併規則」=「無已驗證配置檔案」。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| 請求值 | 從已驗證的配置檔案中讀取資訊 | 將新特徵寫入已驗證的設定檔 |
+|---|---|---|
+| 1 | <ul><li>是，如果[!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Current Authenticated Profiles]或[!UICONTROL Last Authenticated Profiles]。</li><li>否，如果[!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL No Authenticated Profile]。</li></ul> | 是的，特徵資料會新增至已驗證的描述檔。 |
 
 範例呼叫（與驗證狀態對應的請求值會反白顯示）:
 
@@ -76,25 +44,9 @@ Audience Manager中的訪客驗證狀態會決定新特徵資訊是寫入訪客�
 
 ## 驗證狀態：LOGGED_OUT {#auth-status-logged-out}
 
-<table id="table_783F0CBB0431482AA49F41468FA65B19"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> <p>請求值 </p> </th> 
-   <th colname="col2" class="entry"> <p> <b>從已驗</b> 證的配置檔案讀取資訊 </p> </th> 
-   <th colname="col3" class="entry"> <p> <b>將新</b> 特徵寫入已驗證的配置檔案 </p> </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <p> <code> 2 </code> </p> </td> 
-   <td colname="col2"> 是，如果「已驗證選項合併規則」=「上次驗證的設定檔」 </td> 
-   <td colname="col3" morerows="1"> <p>否，特徵資料會寫入裝置描述檔。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col2"> 否，如果「已驗證選項合併規則」=「目前已驗證的設定檔」或「沒有已驗證的設定檔」 </td> 
-  </tr> 
- </tbody> 
-</table>
+| 請求值 | 從已驗證的配置檔案中讀取資訊 | 將新特徵寫入已驗證的設定檔 |
+|---|---|---|
+| 2 | <ul><li>是，如果[!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Last Authenticated Profiles]。</li><li>否，如果[!UICONTROL Authenticated Option Merge Rule] = [!UICONTROL Current Authenticated Profiles]或[!UICONTROL No Authenticated Profile]。</li></ul> | 否，特徵資料會寫入裝置描述檔。 |
 
 範例呼叫（與驗證狀態對應的請求值會反白顯示）:
 
