@@ -6,13 +6,13 @@ seo-title: 實作觀眾管理模組
 solution: Audience Manager
 title: 實作觀眾管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
-feature: Adobe Analytics Integration
+feature: Adobe Analytics 整合功能
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
 translation-type: tm+mt
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 5%
+source-wordcount: '540'
+ht-degree: 4%
 
 ---
 
@@ -44,38 +44,6 @@ ht-degree: 5%
 >如果您安裝[!DNL Adobe Analytics]擴充功能，*不*&#x200B;也會安裝[!DNL Audience Manager]擴充功能。 從[!DNL Analytics]擴充功能轉送資料會取代[!DNL Audience Manager]擴充功能。
 
 ![如何讓資料從Adobe Analytics擴充功能分享到Audience Manager](/help/using/integration/assets/analytics-to-aam.png)
-
-### 使用[!DNL Adobe Digital Tag Management (DTM)]或任何其他標籤管理解決方案進行實作
-
->[!WARNING]
->
->[!DNL Adobe] 已於2020年底發佈 [!DNL DTM] 日落計畫。如需詳細資訊和排程，請參閱[Adobe社群論壇](https://forums.adobe.com/community/experience-cloud/platform/launch/blog/2018/10/05/dtm-plans-for-a-sunset)中的[!DNL DTM]日落計畫。
-
-若要使用[AdobeDTM](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)或其他標籤管理解決方案實作[!UICONTROL Audience Management Module]:
-
-1. 使用[Analytics代碼管理器](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/code-manager-admin.translate.html)下載[!UICONTROL AppMeasurement]（需要1.5版或更新版本）。
-1. 將您的[!UICONTROL AppMeasurement]程式碼更新為下載之zip檔案中所包含的版本。
-1. 從zip檔案複製`AppMeasurement_Module_AudienceManagement.js`的所有程式碼。 將它貼入文字正上方的`appMeasurement.js`檔案中，`"DO NOT ALTER ANYTHING BELOW THIS LINE."`
-1. 將程式碼`s.loadModule("AudienceManagement");`新增至您剛在前一步驟中新增之`AppMeasurement_Module_AudienceManagement.js`程式碼的正上方。
-1. 更新並複製下面的代碼，並將其添加到`AppMeasurement.js`檔案的`doPlugins`函式中。
-
-```js
-s.AudienceManagement.setup({ 
-     "partner":"INSERT-YOUR-PARTNER-NAME-HERE", 
-     "containerNSID":0, 
-     "uuidCookie": { 
-          "name":"aam_uuid", 
-          "days":30
-     },
-     "visitorService": {
-          "namespace": "INSERT-EXPERIENCE-CLOUD-ORGID-HERE" 
-     } 
-});
-```
-
->[!TIP]
->
->`audienceManagement.setup`函式與[!DNL Audience Manager] `DIL.create`函式共用參數，您可在此程式碼中設定。 有關這些參數的詳細資訊，請參閱[DILcreate](../../dil/dil-class-overview/dil-create.md#dil-create)。
 
 ## 定義的代碼元素{#code-elements-defined}
 
