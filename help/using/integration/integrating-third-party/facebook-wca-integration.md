@@ -1,15 +1,15 @@
 ---
-description: 本頁說明建立Facebook網站自訂對象(WCA)像素的程式，其目的是將網路型Audience Manager對象區段傳送至Facebook，以利透明度提升的線上廣告定位。
-seo-description: 本頁說明建立Facebook網站自訂對象(WCA)像素的程式，其目的是將網路型Audience Manager對象區段傳送至Facebook，以利透明度提升的線上廣告定位。
+description: 本頁說明建立Facebook網站自訂觀眾(WCA)像素的程式，以傳送網路Audience Manager觀眾區隔至Facebook，以利透明度的線上廣告定位。
+seo-description: 本頁說明建立Facebook網站自訂觀眾(WCA)像素的程式，以傳送網路Audience Manager觀眾區隔至Facebook，以利透明度的線上廣告定位。
 seo-title: Facebook WCA 整合
 solution: Audience Manager
 title: Facebook WCA 整合
-feature: Third-party Integration
+feature: 協力廠商整合
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '855'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 ## 概述 {#overview}
 
-[Facebook網站自訂對象(WCA)](https://www.facebook.com/business/help/449542958510885) 可讓您建立已瀏覽特定頁面或在您的網站上採取特定動作的訪客清單。[!DNL Audience Manager] 啟用使用 [!DNL WCA] 目標 [!DNL URL] 的啟動，您可透過此目標來設定自訂的像素整合，以傳送網路受眾以 [!DNL Facebook] 進行定位。
+[Facebook網站自訂觀眾(WCA)](https://www.facebook.com/business/help/449542958510885) 可讓您建立已瀏覽特定頁面或在您網站上採取特定動作的訪客清單。[!DNL Audience Manager] 啟用使用 [!DNL WCA] 目標 [!DNL URL] 的啟動，您可透過此目標來設定自訂的像素整合，以傳送網路受眾以 [!DNL Facebook] 進行定位。
 
 ![Facebook WCA 整合](/help/using/integration/assets/facebook-wca-integration.png)
 
@@ -35,7 +35,7 @@ ht-degree: 5%
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID])4.1.0版或更新版本。下載最新版&#x200B;**[此處](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**。
 4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL])9.0版或更新版本，可從這裡 **[下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。或者，如果您使用[伺服器端轉送(SSF)](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)將資料匯入[!DNL Audience Manager]，則必須使用AppMeasurement 2.12版或更新版本。 使用[Analytics代碼管理器](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/code-manager-admin.html)下載[!DNL AppMeasurement]。
 
-我們建議您使用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)或[Adobe動態標籤管理](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)，在步驟3和4中安裝或升級程式庫。
+建議您使用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)在步驟3和4中安裝或升級程式庫。
 
 ## 步驟1 —— 在[!DNL Audience Manager] {#step-1-create-facebook-destination}中建立[!UICONTROL Facebook Destination]
 
