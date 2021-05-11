@@ -1,23 +1,23 @@
 ---
-description: Audience Manager標籤管理元件包括用戶端入口網站、Adobe Tag Manager(不再提倡Adobe動態標籤管理器和Adobe Experience Platform Launch)、DIL、Akamai和控制資料庫。
-seo-description: Audience Manager標籤管理元件包括用戶端入口網站、Adobe Tag Manager(不再提倡Adobe動態標籤管理器和Adobe Experience Platform Launch)、DIL、Akamai和控制資料庫。
+description: Audience Manager標籤管理元件包括用戶端入口網站、Adobe Tag Manager(不再提倡使用Adobe Experience Platform Launch)、DIL、Akamai和控制資料庫。
+seo-description: Audience Manager標籤管理元件包括用戶端入口網站、Adobe Tag Manager(不再提倡使用Adobe Experience Platform Launch)、DIL、Akamai和控制資料庫。
 seo-title: Tag Management 元件
 solution: Audience Manager
 title: Tag Management 元件
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
-feature: System Components
+feature: 系統元件
 exl-id: 064e3653-7658-422c-9dd5-2252806e8f09
 translation-type: tm+mt
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 6%
+source-wordcount: '349'
+ht-degree: 4%
 
 ---
 
 # Tag Management 元件{#tag-management-components}
 
-Audience Manager標籤管理元件包括用戶端入口網站、Adobe Tag Manager(不再提倡Adobe動態標籤管理器和Adobe Experience Platform Launch)、DIL、Akamai和控制資料庫。
+Audience Manager標籤管理元件包括用戶端入口網站、Adobe Tag Manager(不再提倡使用Adobe Experience Platform Launch)、DIL、Akamai和控制資料庫。
 
 <!-- 
 
@@ -39,7 +39,7 @@ Audience Manager包含下列元件：
 
 ## DIL/TIM容器{#dil-tim}
 
-[!UICONTROL DIL]容器可協助將[!DNL Audience Manager]資料收集程式碼部署至您的網站。 [!UICONTROL TIM] 是已過時的「標籤插入管理器」。[!DNL Audience Manager]不再使用它。 請改用[動態標籤管理](https://docs.adobe.com/content/help/zh-Hant/dtm/using/dtm-home.html)或[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/audience-manager/overview.html)中的[!DNL Audience Manager]擴充功能，以設定並產生您置入清單頁面上的容器代碼。 [!UICONTROL DTM]容器可與[!UICONTROL Data Information Library (DIL)]搭配運作，從您的網站收集資料並傳送至[!DNL Audience Manager]。
+[!UICONTROL DIL]容器可協助將[!DNL Audience Manager]資料收集程式碼部署至您的網站。 [!UICONTROL TIM] 是已過時的「標籤插入管理器」。[!DNL Audience Manager]不再使用它。 請改用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/audience-manager/overview.html)中的[!DNL Audience Manager]擴充功能，以設定並產生您置入庫存頁面的容器代碼。
 
 ## Data Integration Library (DIL) {#dil}
 
@@ -47,7 +47,7 @@ Audience Manager包含下列元件：
 
 ## Akamai {#akamai}
 
-[!DNL Audience Manager] 使用 [](https://www.akamai.com/us/en/about/) Akamaito從我們自己的標籤管理平台（稱為「Akamaito」）代管和傳送容器程式碼 [!UICONTROL TIM (Tag Insertion Manager)]。但是，[!UICONTROL TIM]的程式碼部署已逐步淘汰，以利於[!DNL Adobe Dynamic Tag Management]和[!DNL Adobe Experience Platform Launch]。
+[!DNL Audience Manager] 使用 [](https://www.akamai.com/us/en/about/) Akamaito從我們自己的標籤管理平台（稱為「Akamaito」）代管和傳送容器程式碼 [!UICONTROL TIM (Tag Insertion Manager)]。但是，[!UICONTROL TIM]的程式碼部署已淘汰，轉而採用[!DNL Adobe Experience Platform Launch]。
 
 ## 控制資料庫{#control-database}
 
