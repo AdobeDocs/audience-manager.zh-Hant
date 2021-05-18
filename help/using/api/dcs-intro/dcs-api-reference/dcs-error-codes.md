@@ -7,9 +7,9 @@ title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 1be86de9322df6b764ee3870fa82ddb2bb8b06ec
+source-git-commit: 38c4c46709491656071f4a958e9f0de26d42dd74
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1547'
 ht-degree: 4%
 
 ---
@@ -24,10 +24,10 @@ ht-degree: 4%
 
 | 錯誤代碼 | 錯誤訊息 | 說明 |
 |---|---|---|
-| 0 | 未指定錯誤 | 這是一個捕獲全部錯誤，可處理其他錯誤處理常式未涵蓋的事件。 疑難排解此錯誤。 它可能是由各種未知的動作或事件所造成。 如果您收到此錯誤，請再試一次[!DNL DCS]請求。 如果問題仍然存在，請與[!DNL Adobe]代表聯繫。 |
+| 0 | 未指定錯誤 | 這是一個捕獲全部錯誤，可處理其他錯誤處理常式未涵蓋的事件。 疑難排解此錯誤。 它可能是由各種未知的動作或事件所造成。 如果您收到此錯誤，請再試一次[!DNL DCS]請求。 如果問題持續，請連絡您的[!DNL Adobe]代表。 |
 | 1 | 找不到主機名的配置：`hostname` | 合作夥伴布建團隊尚未設定在請求中傳送的主機名稱。 如果您看到此錯誤訊息，請連絡您的[!DNL Adobe]代表。 |
 | 2 | 無效的`d_orgid`值（找不到此組織ID的配置）:`ID` | 組織ID不正確。 請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱「管理頁面」一節[「組織和帳戶連結」，以取得如何尋找組織ID的詳細資訊。](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) |
-| 10 | 無法評估特徵 | 請求上的特徵要麼經過部分評估，要麼完全沒有評估。 |
+| 10 | 無法評估特徵 | 請求上的特徵要麼經過部分評估，要麼完全沒有評估。 如果問題持續，請連絡您的[!DNL Adobe]代表。 |
 
 ## 整合錯誤代碼{#integration-error-codes}
 
