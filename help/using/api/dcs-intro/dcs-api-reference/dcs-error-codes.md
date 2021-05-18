@@ -6,14 +6,13 @@ solution: Audience Manager
 title: DCS 錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
-translation-type: tm+mt
-source-git-commit: 11b79d46e7358c736c797bcf0809af4937717fc5
+exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
+source-git-commit: 1be86de9322df6b764ee3870fa82ddb2bb8b06ec
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1540'
 ht-degree: 4%
 
 ---
-
 
 # DCS 錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
@@ -28,6 +27,7 @@ ht-degree: 4%
 | 0 | 未指定錯誤 | 這是一個捕獲全部錯誤，可處理其他錯誤處理常式未涵蓋的事件。 疑難排解此錯誤。 它可能是由各種未知的動作或事件所造成。 如果您收到此錯誤，請再試一次[!DNL DCS]請求。 如果問題仍然存在，請與[!DNL Adobe]代表聯繫。 |
 | 1 | 找不到主機名的配置：`hostname` | 合作夥伴布建團隊尚未設定在請求中傳送的主機名稱。 如果您看到此錯誤訊息，請連絡您的[!DNL Adobe]代表。 |
 | 2 | 無效的`d_orgid`值（找不到此組織ID的配置）:`ID` | 組織ID不正確。 請檢查您的ID，然後再試一次請求。 如果您不知道或沒有組織ID，請參閱「管理頁面」一節[「組織和帳戶連結」，以取得如何尋找組織ID的詳細資訊。](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) |
+| 10 | 無法評估特徵 | 請求上的特徵要麼經過部分評估，要麼完全沒有評估。 |
 
 ## 整合錯誤代碼{#integration-error-codes}
 
@@ -54,7 +54,7 @@ ht-degree: 4%
   <tr> 
    <td colname="col1"> <p>171 </p> </td> 
    <td colname="col2"> <p>遇到ID <code><i>ID</i></code>的退出標籤 </p> </td> 
-   <td colname="col3"> <p>客戶已選擇不接收喜好式廣告。 </p> </td> 
+   <td colname="col3"> <p>客戶選擇不接收喜好式廣告。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>172 </p> </td> 
@@ -120,12 +120,12 @@ ht-degree: 4%
   <tr> 
    <td colname="col1"> <p>204 </p> </td> 
    <td colname="col2"> <p>無法執行遷移，因為主設備的配置檔案讀取失敗 </p> </td> 
-   <td colname="col3"> <p>如果您收到此錯誤，我們的資料儲存區(<span class="wintitle"> PCS</span>)可能會發生延展性問題。 如果問題仍然存在，請聯絡您的Adobe代表。 </p> </td> 
+   <td colname="col3"> <p>如果您收到此錯誤，我們的資料儲存區(<span class="wintitle"> PCS</span>)可能會發生延展性問題。 如果問題仍然存在，請與Adobe代表聯絡。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>205 </p> </td> 
    <td colname="col2"> <p>無法執行從<code><i>ID</i></code>到<code><i>ID</i></code>的遷移，因為<code><i>ID</i></code>的配置檔案讀取失敗 </p> </td>
-   <td colname="col3"> <p>如果您收到此錯誤，我們的資料儲存區(<span class="wintitle"> PCS</span>)可能會發生延展性問題。 如果問題仍然存在，請聯絡您的Adobe代表。 </p> </td> 
+   <td colname="col3"> <p>如果您收到此錯誤，我們的資料儲存區(<span class="wintitle"> PCS</span>)可能會發生延展性問題。 如果問題仍然存在，請與Adobe代表聯絡。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,7 +194,7 @@ ht-degree: 4%
   <tr> 
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>請求包含無效的全域裝置ID </p> </td> 
-   <td colname="col3"> <p>當請求包含無效的全域裝置ID時，<span class="wintitle">DCS</span>會傳回此錯誤碼。 DCS會忽略無效ID，並引發312錯誤以及無效ID的特定錯誤。 請參閱Audience Manager中的<a href="../../../features/global-data-sources.md" format="dita" scope="local">全域資料來源</a>和<a href="../../../reference/ids-in-aam.md" format="dita" scope="local">ID索引，以取得正確裝置廣告ID格式和對應全域資料來源的詳細資訊。</a></p>
+   <td colname="col3"> <p>當請求包含無效的全域裝置ID時，<span class="wintitle">DCS</span>會傳回此錯誤碼。 DCS會忽略無效ID，並引發312錯誤以及無效ID的特定錯誤。 請參閱<a href="../../../features/global-data-sources.md" format="dita" scope="local">全域資料來源</a>和<a href="../../../reference/ids-in-aam.md" format="dita" scope="local">Audience Manager</a>中ID的索引，以取得有關正確裝置廣告ID格式和對應全域資料來源的詳細資訊。</p>
    <p>錯誤呼叫的範例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>說明：<span class="keyword">IDFA(DPID 20915)</span>必須是大寫ID。 請求中提供的ID為小寫。</p>
    </td>
@@ -202,18 +202,18 @@ ht-degree: 4%
    <tr> 
    <td colname="col1"> <p>313 </p> </td> 
    <td colname="col2"> <p>GCL中不存在CMP ID</p> </td> 
-   <td colname="col3"> <p>當<code>gdpr=1</code>和IAB TC字串是由評估時Audience Manager的快取版本全域CMP清單中未顯示的CMP ID產生時，IAB TCF的Audience Manager外掛程式會放棄IAB TC字串並照常處理請求。 IAB TCF v2.0 ${GDPR}巨集設為0，而${GDPR_CONNENCE_XXX}巨集為空。</p>
+   <td colname="col3"> <p>當<code>gdpr=1</code>和IAB TC字串由評估時不存在於Audience Manager的全局CMP清單快取版本中的CMP ID生成時，IAB TCF的Audience Manager插件將丟棄IAB TC字串並照常處理請求。 IAB TCF v2.0 ${GDPR}巨集設為0，而${GDPR_CONNENCE_XXX}巨集為空。</p>
    </td>
   </tr>
    <tr> 
    <td colname="col1"> <p>314 </p> </td> 
    <td colname="col2"> <p>CMP ID在GCL中標籤為已刪除</p> </td> 
-   <td colname="col3"> <p>當<code>gdpr=1</code>和IAB TC字串是由CMP產生，並在我們的全域CMP清單快取版本中標示為已刪除的CMP時，如果評估時間超過全域CMP清單的刪除時間，IAB TCF的Audience Manager外掛程式會放棄TC字串並照常處理請求。 IAB TCF v2.0 ${GDPR}巨集設為0，而${GDPR_CONNENCE_XXX}巨集為空。</p></td>
+   <td colname="col3"> <p>當<code>gdpr=1</code>和IAB TC字串由在我們的全局CMP清單快取版本中標籤為已刪除的CMP生成時，如果評估時間超過從全局CMP清單刪除時間，IAB TCF的Audience Manager插件將丟棄TC字串並照常處理請求。 IAB TCF v2.0 ${GDPR}巨集設為0，而${GDPR_CONNENCE_XXX}巨集為空。</p></td>
   </tr>
    <tr> 
    <td colname="col1"> <p>315 </p> </td> 
    <td colname="col2"> <p>同意字串表示未同意</p> </td> 
-   <td colname="col3"> <p>未提供同意時，IAB TCF的Audience Manager外掛程式會將使用者拒絕進一步的資料收集，或在未偵測到合作夥伴內容時完全放棄呼叫。</p>
+   <td colname="col3"> <p>未提供同意書時，IAB TCF的Audience Manager外掛程式會禁止使用者進行進一步的資料收集，或在未偵測到合作夥伴內容時完全放棄呼叫。</p>
    </td>
   </tr>
 
