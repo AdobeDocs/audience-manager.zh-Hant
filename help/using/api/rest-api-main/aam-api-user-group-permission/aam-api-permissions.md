@@ -1,29 +1,28 @@
 ---
-description: 保留API方法來管理物件和群組的權限。
-seo-description: 保留API方法來管理物件和群組的權限。
+description: 重設API方法以管理物件和群組的權限。
+seo-description: 重設API方法以管理物件和群組的權限。
 seo-title: 權限管理 API 方法
 solution: Audience Manager
 title: 權限管理 API 方法
 uuid: 111d0f92-d92c-4d4b-b0d6-10dd3fa466ad
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 7aac8ea8-4120-4c6b-88a6-30e8aa727dc8
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 14%
+source-wordcount: '111'
+ht-degree: 15%
 
 ---
 
-
 # 權限管理 API 方法 {#permissions-management-api-methods}
 
-保留[!DNL API]方法來管理對象和組的權限。
+請停用[!DNL API]方法以管理物件和群組的權限。
 
 <!-- c_rest_api_perm_man.xml -->
 
 ## 列出可用對象類型{#list-object-types}
 
-`GET`方法，列出可在其上設定基於角色的訪問控制的可用對象類型。
+`GET`方法，列出可設定基於角色的訪問控制的可用對象類型。
 
 <!-- r_rest_api_perm_list.xml -->
 
@@ -39,7 +38,7 @@ ht-degree: 14%
 
 ## 列出對象類型{#list-permissions-object-type}的可用權限
 
-`GET`方法，列出對象類型的可用權限。
+列出對象類型可用權限的`GET`方法。
 
 <!-- r_rest_api_perm_list_perms.xml -->
 
@@ -58,4 +57,4 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->對象類型TAGS和DERIVED SIGNALS沒有常規使用權限。 這些物件類型的控制項僅透過「全部」或「無萬用字元權限」進行變更。
+>物件類型TAGS和衍生訊號沒有可使用的一般權限。 對這些對象類型的控制項僅通過「全部」或「無萬用字元權限」更改。
