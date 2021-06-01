@@ -1,21 +1,20 @@
 ---
-description: 搜索在特定時間段內接收的已用和未用信號。 若要搜尋訊號，請前往「讀者資料>訊號>搜尋」。
-seo-description: 搜索在特定時間段內接收的已用和未用信號。 若要搜尋訊號，請前往「讀者資料>訊號>搜尋」。
+description: 搜尋在特定時段內收到的已使用和未使用的訊號。 若要搜尋訊號，請前往「對象資料>訊號>搜尋」。
+seo-description: 搜尋在特定時段內收到的已使用和未使用的訊號。 若要搜尋訊號，請前往「對象資料>訊號>搜尋」。
 seo-title: 訊號搜尋
 title: 訊號搜尋
 feature: Data Explorer
-translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+exl-id: 4cc363eb-9102-4c48-8cd5-efc52ee1c2fd
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 29%
+source-wordcount: '95'
+ht-degree: 30%
 
 ---
 
-
 # 訊號搜尋概述 {#signals-search}
 
-搜索在特定時間段內接收的已用和未用信號。 若要搜尋訊號，請前往「讀者資料>訊號>搜尋」。
+搜尋在特定時段內收到的已使用和未使用的訊號。 若要搜尋訊號，請前往「對象資料>訊號>搜尋」。
 
 * [按索引鍵值配對搜尋訊號](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
 * [按篩選條件搜尋訊號](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
