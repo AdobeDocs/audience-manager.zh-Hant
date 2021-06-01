@@ -1,29 +1,28 @@
 ---
-description: 網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
-seo-description: 網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
+description: 可讓您建立及管理要將資料傳送至哪些網域的網域管理方法（僅適用於Cookie目的地）。
+seo-description: 可讓您建立及管理要將資料傳送至哪些網域的網域管理方法（僅適用於Cookie目的地）。
 seo-title: 網域管理 API 方法
 solution: Audience Manager
 title: 網域管理 API 方法
 uuid: f2f08bc5-ea42-4171-9a43-0b20976f0cb0
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: f9907f6e-d553-4771-945b-2fddb3c9ce2f
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '365'
 ht-degree: 6%
 
 ---
 
-
 # 網域管理 API 方法 {#domain-management-api-methods}
 
-網域管理方法，可讓您建立並管理您要傳送資料的網域（僅限Cookie目的地）。
+可讓您建立及管理要將資料傳送至哪些網域的網域管理方法（僅適用於Cookie目的地）。
 
 <!-- c_partner_site.xml -->
 
 ## 建立新域{#create-new-domain}
 
-`POST`方法，可讓您建立新網域（僅限Cookie目標）。
+`POST`方法可讓您為建立新網域（僅限Cookie目的地）。
 
 <!-- r_post_new_partner_site.xml -->
 
@@ -41,7 +40,7 @@ ht-degree: 6%
 
 ### 回應
 
-成功的響應返回`201 created`和合作夥伴站點，包括其唯一ID。
+成功的回應會傳回`201 created`和合作夥伴網站，包括其唯一ID。
 
 ```
 {
@@ -53,7 +52,7 @@ ht-degree: 6%
 
 ## 刪除域{#delete-domain}
 
-`DELETE`方法，可讓您移除網域（僅限Cookie目的地）。
+`DELETE`方法可讓您移除網域（僅適用於Cookie目的地）。
 
 <!-- r_delete_partner_site.xml -->
 
@@ -67,7 +66,7 @@ ht-degree: 6%
 
 ## 域{#return-props-domain}的返回屬性
 
-一種`GET`方法，可傳回指定網域的詳細資料（僅適用於Cookie目的地）。
+`GET`方法可傳回指定網域的詳細資訊（僅適用於Cookie目的地）。
 
 <!-- r_get_partner_site.xml -->
 
@@ -77,7 +76,7 @@ ht-degree: 6%
 
 ### 回應
 
-成功的回應會傳回`200 OK`和資料，如以下範例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
+成功的回應會傳回`200 OK`和資料，如下列範例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
 
 ```
 {
@@ -89,7 +88,7 @@ ht-degree: 6%
 
 ## 返回所有域{#return-props-all-domains}的屬性
 
-一種`GET`方法，可傳回有關您所有網域的資訊（僅適用於Cookie目的地）。
+`GET`方法可傳回關於所有網域的資訊（僅適用於Cookie目的地）。
 
 <!-- r_get_partner_sites.xml -->
 
@@ -97,9 +96,9 @@ ht-degree: 6%
 
 `GET https://api.demdex.com/v1/partner-sites/`
 
-### 可選查詢參數
+### 選用的查詢參數
 
-您可以將這些可選參數與返回對象&#x200B;*all*&#x200B;屬性的[!DNL API]方法一起使用。 將查詢傳入[!DNL API]時，請在請求字串中設定這些選項。 請參閱[可選參數](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
+您可以將這些可選參數與[!DNL API]方法搭配使用，這些方法會傳回物件的&#x200B;*all*&#x200B;屬性。 將查詢傳遞至[!DNL API]時，請在要求字串中設定這些選項。 請參閱[選用參數](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -111,30 +110,30 @@ ht-degree: 6%
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"><code> page</code> </td> 
-   <td colname="col2"> 依頁碼傳回結果。 編號從0開始。 </td> 
+   <td colname="col2"> 按頁碼返回結果。 編號從0開始。 </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code> pageSize</code> </td> 
-   <td colname="col2"> 設定請求傳回的回應結果數目（預設為10）。 </td>
+   <td colname="col2"> 設定請求傳回的回應結果數（預設為10）。 </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> sortBy</code> </td> 
-   <td colname="col2"> 根據指定的JSON屬性排序並傳回結果。 </td>
+   <td colname="col2"> 根據指定的JSON屬性對結果進行排序和返回。 </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> descending</code> </td>
-   <td colname="col2"> 以遞減順序排序和傳回結果。 預設為遞增。 </td>
+   <td colname="col2"> 按降序排序和返回結果。 預設為遞增。 </td>
   </tr>
   <tr valign="top">
    <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根據您要用作搜尋參數的指定字串傳回結果。 例如，假設您想要在該項目的任何值欄位中，尋找具有「測試」字詞的所有模型的結果。 您的範例要求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>實施流量分類。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
+   <td colname="col2">根據您要用作搜索參數的指定字串返回結果。 例如，假設您想在該項目的任何值欄位中，找到所有具有「Test」字詞之模型的結果。 您的範例要求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>實施流量分類。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
   </tr> 
  </tbody> 
 </table>
 
 ### 回應
 
-成功的響應返回`200 OK`和陣列中的資料，如下例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
+成功的回應會傳回`200 OK`和陣列中的資料，如下列範例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
 
 ```
 [
