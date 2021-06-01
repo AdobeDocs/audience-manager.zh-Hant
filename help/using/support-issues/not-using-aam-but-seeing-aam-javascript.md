@@ -4,9 +4,8 @@ seo-description: 我們未使用，但卻在 Javascript 除錯工具中看到 Au
 seo-title: 我們未使用 Audience Manager，但卻在 Javascript 除錯工具中看到 Audience Manager Javascript 呼叫。原因為何？
 solution: Audience Manager
 title: 我們未使用 Audience Manager，但卻在 Javascript 除錯工具中看到 Audience Manager Javascript 呼叫。原因為何？
-feature: Support
+feature: 支援
 exl-id: f409e326-17b3-40ee-8570-8d99119fe337
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '189'
