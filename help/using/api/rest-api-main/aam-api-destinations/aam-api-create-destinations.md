@@ -1,33 +1,32 @@
 ---
-description: 使用這些REST風格的API方法建立目標。
-seo-description: 使用這些REST風格的API方法建立目標。
+description: 使用這些RESTful API方法建立目的地。
+seo-description: 使用這些RESTful API方法建立目的地。
 seo-title: 建立目的地
 solution: Audience Manager
 title: 建立目的地
 uuid: 12f04151-ad0e-4cb6-8f3b-b5c427dc2cef
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: bae0f304-0ff3-4c5f-b432-19aef61d9d10
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '356'
 ht-degree: 9%
 
 ---
 
-
 # 建立目的地 {#create-destinations}
 
-使用這些[!UICONTROL RESTful API]方法建立目標。
+使用這些[!UICONTROL RESTful API]方法建立目的地。
 
 <!-- c_create_destinations.xml -->
 
-## 支援的目標類型：僅限URL和Cookie
+## 支援的目的地類型：僅限URL和Cookie
 
-可用的`POST`方法僅允許您建立[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，您無法使用這些[!DNL REST API]方法建立[!UICONTROL server-to-server destinations]。 但是，相關的目標`GET`方法可讓您擷取有關在使用者介面中建立的[!UICONTROL server-to-server destinations]資訊。
+可用的`POST`方法僅允許您建立[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，您無法使用這些[!DNL REST API]方法建立[!UICONTROL server-to-server destinations]。 不過，相關目標`GET`方法可讓您擷取有關在使用者介面中建立之[!UICONTROL server-to-server destinations]的資訊。
 
 ## 建立非串列URL目標{#create-nonserial-dest}
 
-一種`POST`方法，可讓您建立接受由單鍵值配對（例如`gender=male`或`gender=female`）組成之區段的目的地。
+`POST`方法可讓您建立目標，接受由單一索引鍵值組（例如`gender=male`或`gender=female`）組成的區段。
 
 <!-- r_create_nonserial_destination.xml -->
 
@@ -37,7 +36,7 @@ ht-degree: 9%
 
 ### 範例要求
 
-此請求會建立單一目標。 除非另有指示，否則所有請求值都為必要值。
+此請求會建立單一目的地。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 { 
@@ -80,7 +79,7 @@ ht-degree: 9%
 
 ## 建立序列化URL目標{#create-serial-url-dest}
 
-一種`POST`方法，可讓您建立接受與單一索引鍵相關聯之多個值的目的地（例如`color=blue, red, green`）。
+`POST`方法可讓您建立一個目標，該目標接受與單一鍵相關聯的多個值（例如`color=blue, red, green`）。
 
 <!-- r_create_serial_url_destination.xml -->
 
@@ -90,7 +89,7 @@ ht-degree: 9%
 
 ### 範例要求
 
-為傳遞至目的地的鍵值對指定安全[!DNL URL]和分隔字元。 除非另有指示，否則所有請求值都為必要值。
+指定傳入目的地的機碼值組的安全[!DNL URL]和分隔字元。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 { 
@@ -106,7 +105,7 @@ ht-degree: 9%
 
 ### 回應
 
-成功的更新會傳回回回應代碼`201 created`和目標。
+成功更新會傳回回應代碼`201 created`和目的地。
 
 ```
 { 
@@ -134,9 +133,9 @@ ht-degree: 9%
 }
 ```
 
-## 建立Cookie目標：單鍵，無序{#create-cookie-dest-single}
+## 建立Cookie目的地：單鍵，非序列化{#create-cookie-dest-single}
 
-`POST`方法，可讓您建立[!UICONTROL cookie destination]，接受由單鍵值對（例如`gender=male`或`gender=female`）組成的區段。
+`POST`方法可讓您建立[!UICONTROL cookie destination]，接受由單一索引鍵值組（例如`gender=male`或`gender=female`）組成的區段。
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 
@@ -146,7 +145,7 @@ ht-degree: 9%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 { 
@@ -171,7 +170,7 @@ ht-degree: 9%
 
 ### 回應
 
-成功的更新會傳回回回應代碼`201 created`和目標。
+成功更新會傳回回應代碼`201 created`和目的地。
 
 ```
 { 
@@ -203,9 +202,9 @@ ht-degree: 9%
 } 
 ```
 
-## 建立Cookie目標：單鍵，序列化{#create-cookie-dest-single-serial}
+## 建立Cookie目的地：單鍵，序列化{#create-cookie-dest-single-serial}
 
-一種`POST`方法，可讓您建立接受與單一索引鍵相關聯之多個值的目的地（例如`color=blue, red, green`）。
+`POST`方法可讓您建立一個目標，該目標接受與單一鍵相關聯的多個值（例如`color=blue, red, green`）。
 
 <!-- r_cookie_destination_singlekey_serial.xml -->
 
@@ -215,7 +214,7 @@ ht-degree: 9%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 { 
@@ -241,7 +240,7 @@ ht-degree: 9%
 
 ### 回應
 
-成功的更新會傳回回回應代碼`201 created`和目標。
+成功更新會傳回回應代碼`201 created`和目的地。
 
 ```
 { 
@@ -274,9 +273,9 @@ ht-degree: 9%
 }
 ```
 
-## 建立Cookie目標：多鍵，無序{#create-cookie-dest-multi}
+## 建立Cookie目的地：多鍵，非序列化{#create-cookie-dest-multi}
 
-一種`POST`方法，可讓您建立接受包含具有不同值（例如`gender=male; gender=female; color=blue; color=red`）之多個索引鍵之區段的目標。
+`POST`方法可讓您建立目的地，接受包含具有不同值（例如`gender=male; gender=female; color=blue; color=red`）之多個索引鍵的區段。
 
 <!-- r_create_cookie_multikey_noserial.xml -->
 
@@ -286,7 +285,7 @@ ht-degree: 9%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 { 
@@ -310,7 +309,7 @@ ht-degree: 9%
 
 ### 回應
 
-成功的更新會傳回回回應代碼`201 created`和目標。
+成功更新會傳回回應代碼`201 created`和目的地。
 
 ```
 { 
@@ -341,9 +340,9 @@ ht-degree: 9%
 }
 ```
 
-## 建立Cookie目標：多鍵，序列化{#create-cookie-dest-multi-serial}
+## 建立Cookie目的地：多鍵，序列化{#create-cookie-dest-multi-serial}
 
-一種`POST`方法，可讓您建立接受包含多個鍵和值的區段的目的地（例如`gender=male, female; color=blue, red, green`）。
+`POST`方法可讓您建立接受包含多個索引鍵和值的區段（例如`gender=male, female; color=blue, red, green`）的目的地。
 
 <!-- r_cookie_destination_multikey_serial.xml -->
 
@@ -353,7 +352,7 @@ ht-degree: 9%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 { 
@@ -378,7 +377,7 @@ ht-degree: 9%
 
 ### 回應
 
-成功的更新會傳回回回應代碼`201 created`和目標。
+成功更新會傳回回應代碼`201 created`和目的地。
 
 ```
 { 
@@ -413,6 +412,6 @@ ht-degree: 9%
 >[!MORELIKETHIS]
 >
 >* [目的地](../../../features/destinations/destinations.md)
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
+* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
 
