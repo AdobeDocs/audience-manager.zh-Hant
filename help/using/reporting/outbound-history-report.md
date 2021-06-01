@@ -5,9 +5,8 @@ seo-title: 傳出檔案歷史記錄
 solution: Audience Manager
 title: 傳出檔案歷史記錄
 uuid: 3621a59d-2bb5-4828-86f6-4c9bfa580764
-feature: Inbound and Outbound Reports
+feature: 傳入和傳出報表
 exl-id: 8072c44f-bc9a-4b40-99d9-8cb87bb58d98
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '172'
@@ -29,7 +28,7 @@ t_reports_outbound_history.xml
 
    ![步驟結果](assets/outbound_history.png)
 
-1. 在&#x200B;**[!UICONTROL Search for a Destination]**&#x200B;方塊中，開始輸入並選取所要的目的地。
+1. 在&#x200B;**[!UICONTROL Search for a Destination]**&#x200B;方塊中，開始輸入並選取所需的目的地。
 1. 在&#x200B;**[!UICONTROL Select a Date Range]**&#x200B;方塊中，指定報表的開始和結束日期，然後按一下&#x200B;**[!UICONTROL Apply Date Filter]**。
 
    ![步驟結果](assets/outbound_history_stats.png)
@@ -45,8 +44,8 @@ t_reports_outbound_history.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 資料同步檔案名稱 </td> 
-   <td colname="col2"> <p><span class="keyword">Adobe</span>為此目標生成並一起處理的所有出站檔案的清單。 </p> </td> 
+   <td colname="col1"> 資料同步檔案名 </td> 
+   <td colname="col2"> <p><span class="keyword">Adobe</span>為此目標生成的所有出站檔案的清單，這些檔案一起處理。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
@@ -54,11 +53,11 @@ t_reports_outbound_history.xml
   </tr> 
   <tr> 
    <td colname="col1"> 顯示 </td> 
-   <td colname="col2"> <p>無法傳送至目的地的記錄數。 </p> </td> 
+   <td colname="col2"> <p>無法發送到目標的記錄數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 收到的記錄 </td> 
-   <td colname="col2"> <p>在檔案中生成並嘗試發送到目標的記錄<span class="keyword">Adobe</span>的總數。 在大多數情況下，這應該是成功檔案和失敗檔案的總數。 </p> </td> 
+   <td colname="col1"> 已接收記錄 </td> 
+   <td colname="col2"> <p>檔案中生成並嘗試發送到目標的記錄數<span class="keyword">Adobe</span>的總數。 在大多數情況下，這應該是成功檔案和失敗檔案的總數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
