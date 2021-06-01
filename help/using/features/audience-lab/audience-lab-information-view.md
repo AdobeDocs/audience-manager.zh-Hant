@@ -1,13 +1,12 @@
 ---
-description: 本節顯示測試群組及其所劃分之測試區段、選取的轉換特性和映射目的地的一般資訊。 該節還提供複製或刪除測試組的控制項。
-seo-description: 本節顯示測試群組及其所劃分之測試區段、選取的轉換特性和映射目的地的一般資訊。 該節還提供複製或刪除測試組的控制項。
+description: 本區段顯示測試群組的一般資訊，以及分為的測試區段、選取的轉換特徵和對應的目的地。 該節還提供複製或刪除測試組的控制項。
+seo-description: 本區段顯示測試群組的一般資訊，以及分為的測試區段、選取的轉換特徵和對應的目的地。 該節還提供複製或刪除測試組的控制項。
 seo-title: 測試群組資訊
 solution: Audience Manager
 title: 測試群組資訊
 uuid: a49dfdb3-21e1-4c3d-b957-4d445f890124
 feature: Audience Lab
 exl-id: fb691c12-304d-4331-a395-a9005efa8bb0
-translation-type: tm+mt
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
 source-wordcount: '266'
@@ -17,23 +16,23 @@ ht-degree: 4%
 
 # 測試群組資訊 {#test-group-information}
 
-本節顯示測試群組及其所劃分之測試區段、選取的轉換特性和映射目的地的一般資訊。 該節還提供複製或刪除測試組的控制項。
+本區段顯示測試群組的一般資訊，以及分為的測試區段、選取的轉換特徵和對應的目的地。 該節還提供複製或刪除測試組的控制項。
 
-您也可以查看您用於測試群組的基準區段資訊，以及如何劃分測試區段。
+您也可以查看用於測試群組的基線區段資訊，以及如何劃分測試區段。
 
-**[!UICONTROL Test Segments]**&#x200B;會隨機填入您用於測試群組之基準區段的使用者。 此概覽顯示您分配給每個測試區段的使用者百分比。
+**[!UICONTROL Test Segments]**&#x200B;會隨機填入您用於測試群組之基線區段的使用者。 此概述會顯示您分配給每個測試區段的使用者百分比。
 
-**[!UICONTROL Conversion Traits]**&#x200B;會驅動測試群組的報表。 若要將特徵指定為轉換，在[!UICONTROL Trait Builder]中建立或編輯特徵時，請選擇&#x200B;**轉換**&#x200B;作為&#x200B;**[事件類型](../../features/traits/create-onboarded-rule-based-traits.md)。**
+**[!UICONTROL Conversion Traits]**&#x200B;驅動測試組的報告。 若要將特徵指定為轉換，請在[!UICONTROL Trait Builder]中建立或編輯特徵時，選取&#x200B;**轉換**&#x200B;作為&#x200B;**[事件類型](../../features/traits/create-onboarded-rule-based-traits.md)。**
 
-**[!UICONTROL Destinations]**&#x200B;卡可折疊。 按箭頭以開啟或關閉個別目標，並取得下列測試區段的資訊，這些區段會依目標分組，並對應至：
+**[!UICONTROL Destinations]**&#x200B;卡可折疊。 按下箭頭以開啟或關閉個別目的地，並取得下列測試區段資訊（依對應至的目的地分組）:
 
-* 基本區段總人口中分配給每個目標的設備數。
+* 來自基本區段分配給每個目的地的總母體的裝置數量。
 * 映射鍵；
 * 映射值；
-* [!DNL URL] 安全 [!DNL URL] 的 [!DNL URL] 目標。
+* [!DNL URL] 目的地的 [!DNL URL] 安全 [!DNL URL] 與保護。
 
 >[!NOTE]
 >
->請記住，您無法在完成測試群組後加以編輯，只能暫停、刪除或複製。
+>請記住，完成測試群組後無法編輯，只能暫停、刪除或複製測試群組。
 
 ![](assets/test-groups-information.PNG)
