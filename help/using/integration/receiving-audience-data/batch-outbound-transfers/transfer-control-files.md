@@ -1,37 +1,36 @@
 ---
-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
-seo-description: 傳輸控制(.info)檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
+description: 傳輸控制(.info)檔案提供有關檔案傳輸的元資料資訊，以便合作夥伴能夠驗證Audience Manager已正確處理的檔案傳輸。
+seo-description: 傳輸控制(.info)檔案提供有關檔案傳輸的元資料資訊，以便合作夥伴能夠驗證Audience Manager已正確處理的檔案傳輸。
 seo-title: 用於記錄檔傳輸的傳輸控制檔案
 solution: Audience Manager
 title: 用於記錄檔傳輸的傳輸控制檔案
 uuid: ef58213e-7b37-4c5a-8556-0de695706793
-feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: 033057e080a72c82ec8ff9233e199d5e204a622c
+feature: 傳出資料傳輸
+exl-id: 4fd1aab1-2dc2-4de9-97be-58e79825db40
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '310'
 ht-degree: 6%
 
 ---
 
-
 # 用於記錄檔傳輸的傳輸控制檔案 {#transfer-control-files-for-log-file-transfers}
 
-傳輸控制([!DNL .info])檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
+傳輸控制([!DNL .info])檔案提供有關檔案傳輸的元資料資訊，以便合作夥伴能夠驗證Audience Manager已正確處理的檔案傳輸。
 
-[!DNL Audience Manager] 每次檔案傳輸時都會向合作夥伴發送轉移控制檔案。由於[!DNL FTP]發佈器的多線程特性，在實際檔案完成傳輸之前可能會發送transfer-control檔案。
+[!DNL Audience Manager] 會透過每次檔案傳輸將傳輸控制檔案傳送給合作夥伴。由於[!DNL FTP]發佈器的多線程性質，在實際檔案完成傳輸之前可能會發送傳輸控制檔案。
 
 [!DNL .info]檔案中的中繼資料可讓合作夥伴：
 
-* 確定完整傳輸週期何時完成（序列中已傳送的檔案總數）;
-* 確定序列中的任何給定檔案是否完整／正確(通過檢查檔案的大小（以位元組為單位）和行總數；
-* 驗證原始檔案中的列數與接收端資料庫中載入檔案後的列數（以行為單位的檔案大小）。
+* 確定完整傳輸週期何時完成（已傳送序列中的檔案總數）;
+* 確定序列中的任何給定檔案是否完整/正確(通過檢查檔案的大小（以位元組為單位）和行的總數；
+* 驗證原始檔案中的行數與接收端資料庫中載入檔案後的行數（行中的檔案大小）。
 
 ## 檔案命名約定{#file-naming-conventions}
 
-transfer-control檔案與批次／序列的根檔案具有相同的名稱，副檔名為[!DNL .info]。
+傳輸控制檔案與批次/序列的根檔案具有相同的名稱，副檔名為[!DNL .info]。s
 
-例如，如果序列中的第一個檔案是命名的：[!DNL ftp_12345_67890_full_1500727351632-1.sync]，則控制檔案將命名為[!DNL ftp_12345_67890_iter_1500727351632.info]。
+例如，如果序列中的第一個檔案名為：[!DNL ftp_12345_67890_full_1500727351632-1.sync]，控制檔案的名稱為[!DNL ftp_12345_67890_iter_1500727351632.info]。
 
 ## 檔案格式 {#file-format}
 
@@ -78,8 +77,8 @@ transfer-control檔案與批次／序列的根檔案具有相同的名稱，副�
 
 >[!NOTE]
 >
-> 批總數不包含[!DNL .info]檔案本身。 也就是說，總計不包含[!DNL .info]檔案、其位元組大小或行數。
+> 批總數不包括[!DNL .info]檔案本身。 也就是說，總計不包含[!DNL .info]檔案、其位元組大小或其行數。
 >
-> 檔案的位元組大小和行數包含任何標題和間隔符（空白）行／行。 為了取得實際資料行／列的計數，請減去標題。
+> 檔案和行計數的位元組大小包含任何標題和間隔符（空白）行/行。 若要取得實際資料行/列的計數，請減去標題。
 >
-> 批次行總數和位元組大小總計包含任何標題行和空格行。
+> 批中的行總數和位元組大小總計包含任何標題行和空格行。
