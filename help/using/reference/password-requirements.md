@@ -5,9 +5,8 @@ seo-title: 密碼要求、鎖定的帳戶及忘記密碼
 solution: Audience Manager
 title: 密碼要求、鎖定的帳戶及忘記密碼
 uuid: bca892eb-3577-4382-8110-131f78d23069
-feature: Reference
+feature: 參考
 exl-id: beeb65e3-b715-49a8-b14b-ce3fff96a5cd
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '310'
@@ -81,5 +80,5 @@ c_password_requirements.xml
 >[!MORELIKETHIS]
 >
 >* [資料安全性](../overview/data-security-and-privacy/data-security.md)
->* [資料安全性](../overview/data-security-and-privacy/data-privacy.md)
+* [資料安全性](../overview/data-security-and-privacy/data-privacy.md)
 
