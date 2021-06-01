@@ -3,9 +3,8 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 使用手冊
-user-guide-description: 瞭解Audience Manager如何讓您收集與商業相關的網站訪客資訊、建立有市場價值的細分，並為適當的受眾提供有針對性的廣告和內容。
+user-guide-description: 了解Audience Manager如何讓您收集網站訪客的商業相關資訊、建立可行銷區段，以及將目標廣告和內容提供給適當的對象。
 feature-set: Audience Manager
-translation-type: tm+mt
 source-git-commit: bd049d293eeddf9c3454ea8dc183f84f5c7df59a
 workflow-type: tm+mt
 source-wordcount: '1806'
@@ -34,11 +33,11 @@ ht-degree: 91%
          + [同意管理](overview/data-security-and-privacy/data-privacy-consent.md)
          + [適用於 IAB TCF 的 Audience Manager 外掛程式](overview/data-security-and-privacy/aam-iab-plugin.md)
    + [資料控管](overview/data-security-and-privacy/data-governance.md)
-   + [Audience Manager中的協助功能](/help/using/overview/accessibility-in-aam.md)
+   + [無障礙Audience Manager](/help/using/overview/accessibility-in-aam.md)
 + 功能{#features}
    + [可定址受眾](features/addressable-audiences.md)
    + 管理{#administration}
-      + [Audience Manager用戶遷移至Admin Console](features/administration/admin-console-migration.md)
+      + [Audience Manager使用者移轉至Admin Console](features/administration/admin-console-migration.md)
       + [管理](features/administration/administration-overview.md)
       + [編輯帳戶設定](features/administration/edit-account-settings.md)
       + [IP 位址模糊化](features/administration/ip-obfuscation.md)
@@ -191,7 +190,7 @@ ht-degree: 91%
          + [跨通道轉換](reporting/audience-optimization-reports/aor-advertisers/cross-channel-conversion-reporting.md)
       + 發佈者適用的 Audience Optimization {#audience-optimization-publishers}
          + [發佈商適用的 Audience Optimization 概述](reporting/audience-optimization-reports/aor-publishers/aor-publishers.md)
-         + [將Google Ad Manager（之前稱為DFP）資料檔案匯入Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
+         + [將Google Ad Manager（原稱DFP）資料檔案匯入Audience Manager](reporting/audience-optimization-reports/aor-publishers/import-dfp.md)
          + [區段成效報表](reporting/audience-optimization-reports/aor-publishers/publisher-segment-performance.md)
          + [區段區段報表](reporting/audience-optimization-reports/aor-publishers/publisher-segment-trends.md)
          + [最常見的未使用特徵](reporting/audience-optimization-reports/aor-publishers/publisher-top-unused-traits.md)
@@ -232,18 +231,18 @@ ht-degree: 91%
          + [接收來自 DCS 的資料](api/dcs-intro/dcs-event-calls/dcs-url-receive.md)
       + DCS API{#dcs-apis}
          + [用於伺服器對伺服器資料傳輸的 DCS API](api/dcs-intro/dcs-s2s/dcs-s2s.md)
-         + [從 DCS 回應取得使用者 ID 和區域](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)。
+         + [從 DCS 回應取得使用者 ID 和區域。](api/dcs-intro/dcs-s2s/dcs-aam-ids.md)
          + [透過 Adobe Experience Platform Identity Service 取得使用者 ID 和區域](api/dcs-intro/dcs-s2s/dcs-mcid-ids.md)
          + [發出伺服器對伺服器 DCS API 呼叫](api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)
       + DCS API 參考{#dcs-api-reference}
          + [DCS API 參考概述](api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)
          + [DCS API 方法](api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
          + [DCS 錯誤碼、訊息和範例](api/dcs-intro/dcs-api-reference/dcs-error-codes.md)
-         + [ID監控和密碼清單](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
-         + [DCS 區域 ID、位置與主機名稱](api/dcs-intro/dcs-api-reference/dcs-regions.md)。
+         + [ID監控與封鎖](api/dcs-intro/dcs-api-reference/id-monitoring-denylisting.md)
+         + [DCS 區域 ID、位置與主機名稱。](api/dcs-intro/dcs-api-reference/dcs-regions.md)
          + [格式化 DCS 呼叫中的索引鍵值配對](api/dcs-intro/dcs-api-reference/dcs-key-format.md)
          + [競爭條件與錯誤處理](api/dcs-intro/dcs-api-reference/dcs-race-conditions.md)
-         + [DCS API 呼叫的支援屬性](api/dcs-intro/dcs-api-reference/dcs-keys.md)。
+         + [DCS API 呼叫的支援屬性。](api/dcs-intro/dcs-api-reference/dcs-keys.md)
    + REST API{#rest-apis}
       + [REST API 概述](api/rest-api-main/rest-api-main.md)
       + [REST API 快速入門](api/rest-api-main/aam-api-getting-started.md)
@@ -287,9 +286,9 @@ ht-degree: 91%
 + 實作與整合指南{#implementation-integration-guides}
    + [實作與整合指南](integration/implementation-and-integration.md)
    + [資料整合方法](integration/data-integration-methods.md)
-   + 使用Google Publisher標籤(GPT){#integrate-dfp-using-gpt}整合Google Ad Manager
-      + [使用GPT概觀整合Google Ad Manager](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [使用GPT傳送區段至Google廣告管理員](integration/gpt-aam-destination/gpt-aam-requirements.md)
+   + 使用Google發佈商代碼(GPT){#integrate-dfp-using-gpt}整合Google Ad Manager
+      + [使用GPT整合Google Ad Manager概述](integration/gpt-aam-destination/gpt-aam-overview.md)
+      + [使用GPT傳送區段至Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [建立 GPT 目的地](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改 GPT setTargeting API 呼叫](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [適用於 Google 發佈商廣告代碼的 Audience Manager 代碼](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
@@ -297,7 +296,7 @@ ht-degree: 91%
       + [Facebook WCA 整合](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
       + [OAS 作為 Audience Manager 目的地](integration/integrating-third-party/open-ad-server-destination.md)
       + [OpenX 作為 Audience Manager 目的地](integration/integrating-third-party/openx-destination.md)
-      + [Google Ad Manager（之前稱為DFP）做為Audience Manager目的地](integration/aam-dfp.md)
+      + [Google Ad Manager（原稱DFP）作為Audience Manager目的地](integration/aam-dfp.md)
       + [將區段傳送至 Google AdWords 再行銷清單](integration/integrating-third-party/rlsa-integration.md)
    + [實作 Audience Manager](integration/implement-audience-manager.md)
    + 媒體資料整合{#media-data-integration}
@@ -314,7 +313,7 @@ ht-degree: 91%
          + [OAuth 2.0 整合即時傳出傳輸](integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)
       + 批次傳出資料傳輸{#batch-outbound-data-transfers}
          + [批次傳出資料傳輸概述](integration/receiving-audience-data/batch-outbound-transfers/batch-outbound-overview.md)
-         + [配置批資料傳輸整合](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
+         + [設定批次資料傳輸整合](integration/receiving-audience-data/batch-outbound-transfers/batch-server-configuration.md)
          + [傳出資料檔案名稱：語法與範例](integration/receiving-audience-data/batch-outbound-transfers/outbound-file-name-contents.md)
          + [用於記錄檔傳輸的傳輸控制檔案](integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
          + [輸出範本巨集](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
@@ -339,11 +338,11 @@ ht-degree: 91%
          + [傳入處理後傳送給合作夥伴的範例訊息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 與 Adobe Experience Platform 的整合 {#integration-experience-platform}
-      + [Experience Platform分部與Audience Manager及其他Experience Cloud解決方案共用](integration/integration-aep/aam-aep-audience-sharing.md)
+      + [Experience Platform區段共用給Audience Manager和其他Experience Cloud解決方案](integration/integration-aep/aam-aep-audience-sharing.md)
    + 與其他 Experience Cloud 解決方案的整合 {#integration-other-solutions}
       + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從 Adobe Analytics 轉送至 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [發佈Adobe Analytics區段至Experience Cloud(開啟Adobe Analytics檔案)](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/audiences/t-publish-audience-segment.translate.html)
+      + [將Adobe Analytics區段發佈至Experience Cloud(開啟Adobe Analytics檔案)](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/audiences/t-publish-audience-segment.translate.html)
       + [將Audience Manager與Adobe Campaign整合(開啟Adobe Campaign檔案)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
@@ -403,7 +402,7 @@ ht-degree: 91%
    + [聯絡與法律資訊](/help/using/help-legal/help-legal-contact.md)
 + 常見客戶支援問題{#top-support-issues}
    + [概述](/help/using/support-issues/support-issues-overview.md)
-   + [為什麼我的已上線特徵母體在 10 月 15 日左右降至 0？](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
+   + [為什麼我的已上線特徵母體在 10 月 15 日左右降至 0？ ](/help/using/support-issues/why-did-my-onboarded-trait-populations-drop-to-0-around-october.md)
    + [為何我的特徵或區段沒有顯示在「重疊報表」頁面上？](/help/using/support-issues/why-do-my-traits-or-segments-not-show-up-in-the-overlap-reports.md)
    + [我們的唯讀使用者為何能建立、編輯或刪除特徵和區段？](/help/using/support-issues/aam-read-only-users-create-delete-traits-segments.md)
    + [我們不是 Audience Manager 客戶，但在我們的網站上看到 Audience Manager Javascript 呼叫](/help/using/support-issues/not-using-aam-but-seeing-aam-javascript.md)
