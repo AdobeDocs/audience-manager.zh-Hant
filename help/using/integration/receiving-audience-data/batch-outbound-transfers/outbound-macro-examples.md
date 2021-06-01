@@ -1,37 +1,36 @@
 ---
-description: 一些常用宏用於建立出站檔案模板的示例。
-seo-description: 一些常用宏用於建立出站檔案模板的示例。
+description: 有關如何使用某些常見宏建立出站檔案模板的示例。
+seo-description: 有關如何使用某些常見宏建立出站檔案模板的示例。
 seo-title: 輸出巨集範例
 solution: Audience Manager
 title: 輸出巨集範例
 uuid: 823d85d4-d683-45cf-9e60-c12b7d52a498
-feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 傳出資料傳輸
+exl-id: 7e3f2b25-7b7c-47fe-aa62-7ebd4e25f9ba
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '337'
 ht-degree: 9%
 
 ---
 
-
 # 輸出巨集範例 {#outbound-macro-examples}
 
-一些常用宏用於建立出站檔案模板的示例。
+有關如何使用某些常見宏建立出站檔案模板的示例。
 
 >[!NOTE]
 >
->在表中，**boldface**&#x200B;類型使用其相關輸出標識每個宏。 對於格式示例，已添加`<` `>`符號，以幫助以視覺化方式分隔每個宏。
+>在表中，**boldface**&#x200B;類型使用其相關輸出標識每個宏。 對於格式示例，已添加`<` `>`符號，以幫助直觀地分隔每個宏。
 
 ## 檔案名宏{#file-name-macros}
 
-有關可用宏和定義的清單，請參見[出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
+有關可用宏和定義的清單，請參閱[輸出模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
 
 <table id="table_B5073597219B470298EE614902DACAE8"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 宏 </th> 
-   <th colname="col2" class="entry"> 格式和輸出示例 </th> 
+   <th colname="col1" class="entry"> 巨集 </th> 
+   <th colname="col2" class="entry"> 格式和輸出範例 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -73,32 +72,32 @@ ht-degree: 9%
 
 ## 標題行宏{#header-macros}
 
-有關可用宏和定義的清單，請參見[出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
+有關可用宏和定義的清單，請參閱[輸出模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
 
 <table id="table_ABC31B3D660D47969E111EBC734D5BBC"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 宏 </th> 
-   <th colname="col2" class="entry"> 格式和輸出示例 </th> 
+   <th colname="col1" class="entry"> 巨集 </th> 
+   <th colname="col2" class="entry"> 格式和輸出範例 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>格式: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>輸出：<code> 888 full.sync </code> </p> <p>在輸出中，非打印製表符字元分隔每個元素。 </p> </td>
+   <td colname="col2"> <p>格式: <code> &lt;ORDER_ID&gt; &lt;TAB&gt;&lt;SYNC_TYPE&gt; </code> </p> <p>輸出：<code> 888 full.sync </code> </p> <p>在輸出中，非打印頁簽字元分隔每個元素。 </p> </td>
   </tr>
  </tbody>
 </table>
 
 ## 檔案內容宏{#file-content-macros}
 
-有關可用宏和定義的清單，請參見[出站模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
+有關可用宏和定義的清單，請參閱[輸出模板宏](../../../integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)。
 
 <table id="table_408C6DD2B9D54550B003EAC93562E64F"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 宏 </th> 
-   <th colname="col2" class="entry"> 格式和輸出示例 </th> 
+   <th colname="col1" class="entry"> 巨集 </th> 
+   <th colname="col2" class="entry"> 格式和輸出範例 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -129,7 +128,7 @@ ht-degree: 9%
        {"AdvertiserId":"&lt;PIDALIAS&gt;",&nbsp;"DataCenterId":&nbsp;2,"TDID":"&lt;DP_UUID&gt;", "Data":[&lt;SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;"&lt;CLOSE_CURLY_BRACKET&gt;}; separator=","&gt;&lt;if(SEGMENT_LIST&nbsp;&amp;&amp;&nbsp;REMOVED_SEGMENT_LIST)&gt;&lt;COMMA&gt;&lt;endif&gt; &lt;REMOVED_SEGMENT_LIST:{seg|&lt;OPEN_CURLY_BRACKET&gt;"Name":"&lt;seg.alias&gt;", "TtlInMinutes":0&lt;CLOSE_CURLY_BRACKET&gt;};&nbsp;separator=","&gt;]}
      </code></p><p><b>輸出：</b></p> <p>
      <code>//First&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2, "TDID":"dfd215e4-8d6b-4fdb-90b9-fab4456f2c9d","Data":[{"Name":"4321"}]} //Second&nbsp;example {"AdvertiserId":"12345",&nbsp;"DataCenterId":&nbsp;2,"TDID":"9099e8fe-abab-5114-abaa-28bdaa0539ca","Data":[{"Name":"4321"},{"Name":"987","TtlInMinutes":0}, {"Name":"654","TtlInMinutes":0}]} 
-     </code></p> <p> <p>注意： 在第一個示例中，宏僅返回<code> SEGMENT_LIST </code>的資料，因為<code> REMOVED_SEGMENT_LIST </code>是空的。 第二個示例返回兩個宏的資料。 </p> </p> </td> 
+     </code></p> <p> <p>注意： 在第一個示例中，宏僅返回<code> SEGMENT_LIST </code>的資料，因為<code> REMOVED_SEGMENT_LIST </code>為空。 第二個範例會傳回兩個巨集的資料。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> SET_ATTRIBUTES </code> </p> </td> 
@@ -137,7 +136,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> TAB </code> </p> </td> 
-   <td colname="col2"> <p>格式: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>輸出：<code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在輸出中，非打印製表符字元分隔每個元素。 </p> </td> 
+   <td colname="col2"> <p>格式: <code> &lt;DP_UUID&gt;&lt;TAB&gt;&lt;DP_UUID_LIST;separator=TAB&gt; </code> </p> <p>輸出：<code> 123456 UUID1 UUID2 UUID3 </code> </p> <p>在輸出中，非打印頁簽字元分隔每個元素。 </p> </td> 
   </tr>
   <tr>
    <td colname="col1"> <p> <code> TRAIT_LIST </code> </p> </td> 
@@ -148,36 +147,36 @@ ht-degree: 9%
 
 ### `DPUUID` 範例
 
-為協助您瞭解`DPUUID`巨集如何輸出資料，我們假設有2個`DPID`s對應至`DPUUID`s，如下所示：
+為協助您了解`DPUUID`巨集如何輸出資料，假設我們有2個`DPID`s對應至`DPUUID`s，如下所示：
 
 * DPID `1111`對應至DPUUIDs `AAAA`(timestamp = 1)和`BBBB`(timestamp = 2)。
 * DPID `2222`對應至DPUUID `CCCC`。
 
-有了這些條件，下表列舉了一些可能的格式字串及其輸出。
+基於這些條件，下表列舉了一些可能的格式字串及其輸出。
 
 <table id="table_6A6D94F994C1475BB09126BA0B815B1F"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 映射條件 </th> 
-   <th colname="col2" class="entry"> 宏格式 </th> 
+   <th colname="col2" class="entry"> 巨集格式 </th> 
    <th colname="col3" class="entry"> 輸出 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>傳回單一DPID的所有映射 </p> </td> 
+   <td colname="col1"> <p>傳回單一DPID的所有對應 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111|maxMappings=0|format=json"&gt; </code> </p> </td> 
    <td colname="col3"> <p> <code> [["1111","AAAA"],["1111","BBBB"]] </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>針對所有DPID傳回最多1個對應 </p> </td> 
+   <td colname="col1"> <p>為所有DPID傳回最多1個對應 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=1111,2222|maxMappings=1|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>對於DPID <code> 1111 </code>，宏僅映射到DPUUID <code> BBBB </code>，因為該ID的時間戳記較大。 </p> </td> 
+   <td colname="col3"> <p> <code> [["1111","BBBB"],["2222","CCCC"]] </code> </p> <p>若為DPID <code> 1111 </code>，巨集只會因為該ID的時間戳記較大而對應至DPUUID <code> BBBB </code>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>傳回單一DPID的最多2個映射 </p> </td> 
+   <td colname="col1"> <p>傳回單一DPID的最多2個對應 </p> </td> 
    <td colname="col2"> <p> <code> &lt;DPUUIDS; format="dpids=2222|maxMappings=2|format=json"&gt; </code> </p> </td> 
-   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>即使<code> maxMappings=2 </code>，此巨集也只會傳回1個DPUUID到DPUUID映射，因為指定的DPID只有一個DPUUID。 </p> </td> 
+   <td colname="col3"> <p> <code> [["2222","CCCC"]] </code> </p> <p>即使<code> maxMappings=2 </code> ，此巨集仍只會傳回1個DPID至DPUUID對應，因為指定的DPID只有一個DPUUID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
