@@ -5,9 +5,8 @@ seo-title: Adobe Audience Manager 產品技術文件
 solution: Audience Manager
 title: Audience Manager 指南
 uuid: 48267e3b-70e6-42ae-99b1-884f4d0916be
-feature: Overview
+feature: 概述
 exl-id: a47bf8ba-4ec0-4b3b-ad20-4afb7c9f924b
-translation-type: tm+mt
 source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815
 workflow-type: tm+mt
 source-wordcount: '653'
@@ -152,7 +151,7 @@ Audience Manager 為領先業界的線上受眾資料管理服務，本技術文
      請參閱最新的 <a href="https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud 發行說明</a>，瞭解全新功能和修正內容。</p> 
      <p> <b>最新功能</b> </p> <p> 
      閱讀有關最新 Audience Manager 功能的資訊：</p>
-     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager用戶遷移到Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">Google客戶符合人員型目標</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">IAB TCF v2.0的Audience Manager增效模組</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測受眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報表</a></li>
+     <p><ul><li><a href="/help/using/docs-updates/docs-2021.md">Audience Manager使用者移轉至Admin Console</a></li><li><a href="/help/using/features/destinations/people-based-destinations-prerequisites.md">適用於以人物為基礎的目的地的Google客戶比對</a></li><li><a href="/help/using/overview/data-security-and-privacy/aam-iab-plugin.md">適用於IAB TCF v2.0的Audience Manager外掛程式</a></li><li><a href="/help/using/features/algorithmic-models/predictive-audiences.md">預測受眾</a></li><li><a href="/help/using/features/administration/activity-usage-reporting.md">活動使用情況報表</a></li>
      </ul></p>
     </td>
   </tr> 
