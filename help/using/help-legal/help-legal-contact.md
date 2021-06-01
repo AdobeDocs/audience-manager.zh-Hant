@@ -4,15 +4,14 @@ seo-description: 此項資訊可協助您聯絡 Adobe 並瞭解使用本產品�
 seo-title: 聯絡與法律資訊
 solution: Audience Manager
 title: 聯絡與法律資訊
-feature: Support
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 支援
+exl-id: 02c80394-c5ed-4963-8543-4585c0c289c6
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
-
 
 # 聯絡與法律資訊 {#legal-contact}
 
@@ -31,7 +30,7 @@ Adobe Experience Cloud 客戶服務團隊在此協助您，並提供可以與其
 
 根據您的解決方案設定，本文件中說明的某些選項可能無法使用。因為每個帳戶都是獨一無二，所以關於定價、到期日、條款和條件的資訊請參閱您的合約。若您想要新增或變更服務層級，或有關於目前服務的疑問，請聯絡您的客戶經理。
 
-## 法律資訊  {#legal}
+## 法律資訊 {#legal}
 
 Published by Adobe Systems Incorporated.
 
