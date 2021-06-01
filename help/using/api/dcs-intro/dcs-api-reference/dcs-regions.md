@@ -1,23 +1,22 @@
 ---
-description: 對DCS進行呼叫時，需要地區DCS伺服器主機名稱。 這是因為DCS會在地理位置接近網站訪客的資料中心儲存資訊。 如果您將查詢傳送至錯誤的DCS，則查詢會有效，但這些呼叫會很低效，而且會延遲回應。 若要提出DCS請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
-seo-description: 對DCS進行呼叫時，需要地區DCS伺服器主機名稱。 這是因為DCS會在地理位置接近網站訪客的資料中心儲存資訊。 如果您將查詢傳送至錯誤的DCS，則查詢會有效，但這些呼叫會很低效，而且會延遲回應。 若要提出DCS請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
+description: 呼叫DCS時需要地區DCS伺服器主機名稱。 這是因為DCS會將資訊儲存在地理位置鄰近網站訪客的資料中心。 如果您將查詢傳送至錯誤的DCS，則您的查詢會有效，但這些呼叫效率低下，且可能會延遲回應。 若要提出DCS要求，請將地區ID與其對應的地區主機名稱相符，並以適當的主機名稱來建立查詢。
+seo-description: 呼叫DCS時需要地區DCS伺服器主機名稱。 這是因為DCS會將資訊儲存在地理位置鄰近網站訪客的資料中心。 如果您將查詢傳送至錯誤的DCS，則您的查詢會有效，但這些呼叫效率低下，且可能會延遲回應。 若要提出DCS要求，請將地區ID與其對應的地區主機名稱相符，並以適當的主機名稱來建立查詢。
 seo-title: DCS 區域 ID、位置與主機名稱。
 solution: Audience Manager
 title: DCS 區域 ID、位置與主機名稱。
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
 feature: DCS
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 9b12946c-89f1-4f6f-adb9-961e15a0b816
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '312'
 ht-degree: 9%
 
 ---
 
-
 # DCS 區域 ID、位置與主機名稱{#dcs-region-ids-locations-and-host-names}。
 
-要對[!DNL DCS]進行調用，需要[!DNL DCS]區域伺服器主機名。 這是因為[!DNL DCS]會在地理位置接近網站訪客的資料中心儲存資訊。 如果您將查詢發送到錯誤的[!DNL DCS]，則查詢將有效，但這些調用效率低下，並且會延遲響應。 若要提出[!DNL DCS]請求，請將地區ID與其對應的地區主機名稱相符，並使用正確的主機名稱來建立查詢。
+對[!DNL DCS]進行調用時需要區域[!DNL DCS]伺服器主機名。 這是因為[!DNL DCS]會將資訊儲存在地理位置鄰近網站訪客的資料中心中。 如果將查詢發送到錯誤的[!DNL DCS]，則查詢將有效，但這些調用效率低下，並且會延遲響應。 若要提出[!DNL DCS]要求，請將地區ID與其對應的地區主機名稱配對，並以正確的主機名稱形成您的查詢。
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
@@ -50,17 +49,17 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID8 </p> </td> 
-   <td colname="col2"> <p>南太平洋／大洋洲（澳洲雪梨） </p> </td> 
+   <td colname="col2"> <p>南太平洋/大洋洲（澳大利亞雪梨） </p> </td> 
    <td colname="col3"> <p> <code> apse2.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID9 </p> </td> 
-   <td colname="col2"> <p>美國西部（美國俄勒岡） </p> </td> 
+   <td colname="col2"> <p>美國西部（俄勒岡，美國） </p> </td> 
    <td colname="col3"> <p> <code> usw2.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID11 </p> </td> 
-   <td colname="col2"> <p>亞洲（日本東京） </p> </td> 
+   <td colname="col2"> <p>亞洲（東京，日本） </p> </td> 
    <td colname="col3"> <p> <code> tyo3.demdex.net</code> </p> </td> 
   </tr>
   <tr> 
