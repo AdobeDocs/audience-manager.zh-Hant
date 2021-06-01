@@ -1,13 +1,12 @@
 ---
-description: 根據這些規格格式化Audience Optimization元資料檔案的內容。
-seo-description: 根據這些規格格式化Audience Optimization元資料檔案的內容。
+description: 根據這些規範設定Audience Optimization中繼資料檔案的內容格式。
+seo-description: 根據這些規範設定Audience Optimization中繼資料檔案的內容格式。
 seo-title: 中繼資料檔案的內容格式
 solution: Audience Manager
 title: 中繼資料檔案的內容格式
 uuid: 9ba44738-3e17-40c7-9e8c-5abd8361e16d
-feature: Log Files
+feature: 記錄檔
 exl-id: 1aed39f4-f893-4f25-b041-e198895e338a
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '306'
@@ -17,27 +16,27 @@ ht-degree: 5%
 
 # 中繼資料檔案的內容格式{#content-format-for-metadata-files}
 
-根據這些規格格式化Audience Optimization元資料檔案的內容。
+根據這些規範設定Audience Optimization中繼資料檔案的內容格式。
 
 ## 語法 {#syntax}
 
-下列語法定義中繼資料檔案中格式正確的內容結構。 請注意，*斜體*&#x200B;表示變數預留位置。
+下列語法定義中繼資料檔案中格式良好的內容的結構。 注意， *斜體*&#x200B;表示變數預留位置。
 
-**語法：**  *內容ID* | *名稱* | *-1*
+**語法：**  *內容ID*  |  *名稱*  |  *-1*
 
 <!--In the contents syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file name](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md). These 2 variables seem similar, but they represent different things. In the file name, the parent ID corresponds to a category like "campaign" (ID 1), "placement" (ID 3), or "tactic" (ID 9), etc. In the file body:-->
 
-第三欄&#x200B;**-1**&#x200B;在技術上是「父ID」，此為舊版欄位。 值應始終設定為&#x200B;**-1**。
+第三欄&#x200B;**-1**&#x200B;在技術上是「上層ID」，這是舊版欄位。 值應一律設為&#x200B;**-1**。
 
 >[!NOTE]
 >
->請注意，每個維度需要一個中繼資料檔案，因此儲存貯體中需要多個中繼資料檔案。 維度會列在文章[中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension)中。
+>請注意，每個維度需要一個中繼資料檔案，因此貯體中需要多個中繼資料檔案。 維度列在[中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension)中。
 
-**使用^a（control-A或ASCII 001）分隔檔案項目**
+**使用^a（control-A或ASCII 001）分隔檔案條目**
 
-使用`^a`（control-A或ASCII 001）來分隔中繼資料檔案中的內容。 由於這些字元是非列印字元，上述語法範例只會顯示垂直號&quot;|&quot;以供顯示。
+使用`^a`（control-A或ASCII 001）來分隔元資料檔案中的內容。 由於這些是非列印字元，上述語法範例只顯示垂直號「|」。
 
-如有需要，您可下載範例檔案- [20181105_0_1](assets/20181105_0_1.zip)。 將它解壓縮並在您選擇的編輯器中編輯，並根據實際的中繼資料內容進行調整，因為它已包含必要的分隔字元。
+如有需要，您可以下載範例檔案 — [20181105_0_1](assets/20181105_0_1.zip)。 將其解壓縮，然後在您選擇的編輯器中編輯，並根據您實際的中繼資料內容進行調整，因為其中已包含必要的分隔字元。
 
 >[!IMPORTANT]
 >
@@ -45,7 +44,7 @@ ht-degree: 5%
 
 ## 範例 {#examples}
 
-讓我們來看看如何在中繼資料檔案中建構內容。 此結構的一部分取決於尺寸。 維度會列在文章[中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension)中。
+讓我們來看看您如何在中繼資料檔案中建構內容。 此結構的一部分取決於尺寸。 維度列在[中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension)中。
 
 **Campaign** 
 
@@ -64,7 +63,7 @@ ht-degree: 5%
 
 **創意**
 
-在此範例中，檔案標題為20180827_0_2，檔案中的三欄為：Creative ID、Name和Parent ID。
+在此範例中，檔案標題為20180827_0_2，檔案中的三欄為：創作ID、名稱和父ID。
 
 ```
 //File Title
