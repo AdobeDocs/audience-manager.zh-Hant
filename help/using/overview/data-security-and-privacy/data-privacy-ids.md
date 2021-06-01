@@ -3,11 +3,10 @@ description: 本文件說明您可在資料隱私權請求中使用的 Audience 
 seo-description: 本文件說明您可在資料隱私權請求中使用的 Audience Manager ID 類型。
 seo-title: Audience Manager 識別碼 (ID)
 solution: Audience Manager
-keywords: GDPR UI、GDPR API、CCPA、隱私權、AAMID
+keywords: GDPR UI, GDPR API, CCPA，隱私權， AAM ID
 title: Audience Manager 識別碼 (ID)
-feature: Data Governance & Privacy
+feature: 資料控管與隱私權
 exl-id: 5f18ed0a-c875-4596-a4d1-f9a7fe871d1b
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '264'
