@@ -5,9 +5,8 @@ seo-title: GDPR 字彙表
 solution: Audience Manager
 title: GDPR 字彙表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
-feature: Data Governance & Privacy
+feature: 資料控管與隱私權
 exl-id: 36930703-745e-4fbd-ad18-ba9efb77eb7e
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '727'
