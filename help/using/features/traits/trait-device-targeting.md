@@ -1,33 +1,32 @@
 ---
-description: 說明您可用來在Audience Manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
-seo-description: 說明您可用來在Audience Manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
+description: 說明常用的平台層級索引鍵值配對，您可用來鎖定具有Audience Manager帳戶中所有屬性之裝置相關變數的使用者。
+seo-description: 說明常用的平台層級索引鍵值配對，您可用來鎖定具有Audience Manager帳戶中所有屬性之裝置相關變數的使用者。
 seo-title: 使用平台層級的索引鍵進行裝置定位
 solution: Audience Manager
 title: 使用平台層級的索引鍵進行裝置定位
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
-feature: Traits
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 特徵
+exl-id: 85c848e0-a4cf-49b5-9fe9-56f8c565f665
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 9%
 
 ---
 
-
 # 使用平台層級的索引鍵進行裝置定位 {#device-targeting-with-platform-level-keys}
 
-說明您可用來在Audience Manager帳戶的所有屬性中，透過裝置相關變數鎖定使用者的常見平台層級索引鍵值配對。
+說明常用的平台層級索引鍵值配對，您可用來鎖定具有Audience Manager帳戶中所有屬性之裝置相關變數的使用者。
 
 ## 平台層級變數{#platform-variables}的用途
 
 <!-- c_tb_device_targeting.xml -->
 
-平台層級變數可讓您從特定網站傳入資料，並讓它適用於[!DNL Audience Manager]帳戶中所有屬性的定位。 這些變數由[key-value對](../../reference/key-value-pairs-explained.md)組成，鍵前置詞為`d_`，如下所示。
+平台層級變數可讓您取用從特定網站傳入的資料，並讓其可用於[!DNL Audience Manager]帳戶中所有屬性的定位。 這些變數由[key-value對](../../reference/key-value-pairs-explained.md)組成，鍵首碼為`d_`，如下所示。
 
-## 由用戶代理定義的平台級密鑰{#keys-user-agent}
+## 由用戶代理{#keys-user-agent}定義的平台級密鑰
 
-[!UICONTROL Data Collection Servers]會從`HTTP`請求中的[使用者代理標題](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)擷取這些索引鍵的值。 這些值代表來自[!UICONTROL Device Atlas]資料庫的設備級資訊。 下表中的信號可用，從用戶代理示例中提取。 [根據測量值，下載最常用的鍵](assets/device_keys.csv)，清 [!UICONTROL Device Atlas] 單。
+[!UICONTROL Data Collection Servers]會從`HTTP`請求中的[使用者代理標題](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.43)擷取這些索引鍵的值。 這些值表示[!UICONTROL Device Atlas]資料庫中的設備級資訊。 下表中的訊號可供使用，從使用者代理範例中擷取。 [根據測量值下載最常見的鍵](assets/device_keys.csv)，清單 [!UICONTROL Device Atlas] 如下。
 
 | [!DNL Signal] | [!DNL Type] | [!DNL Example] |
 |---|---|---|
@@ -45,7 +44,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->即使無法從用戶代理報頭檢索到一個或多個信號，其它信號仍將傳遞到[!UICONTROL Data Collection Servers]。
+>即使一個或多個信號無法從用戶代理頭中檢索，其他信號仍將傳遞到[!UICONTROL Data Collection Servers]。
 
 >[!MORELIKETHIS]
 >
