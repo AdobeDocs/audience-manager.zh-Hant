@@ -1,25 +1,24 @@
 ---
-description: DART Enterprise（及其他目標類型）擷取Audience Manager唯一使用者ID(UUID)值所需的程式碼。
-seo-description: DART Enterprise（及其他目標類型）擷取Audience Manager唯一使用者ID(UUID)值所需的程式碼。
+description: DART Enterprise（和其他目的地類型）用於捕獲Audience Manager不重複用戶ID(UUID)值所需的代碼。
+seo-description: DART Enterprise（和其他目的地類型）用於捕獲Audience Manager不重複用戶ID(UUID)值所需的代碼。
 seo-title: get_aamCookie 程式碼
 solution: Audience Manager
 title: get_aamCookie 程式碼
 uuid: 89c30fe3-dbe6-4d18-b161-104167d75bcd
-feature: Destination Basics
-translation-type: tm+mt
-source-git-commit: dfb0191e3ea6f6c360991a2012a15570b5cab771
+feature: 目的地基本知識
+exl-id: 66e61a4b-908e-4950-8953-37a9920b67b5
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '77'
 ht-degree: 9%
 
 ---
 
-
 # `get_aamCookie` 程式碼 {#get-aamcookie-code}
 
-[!DNL DART Enterprise]（及其他目標類型）擷取Audience Manager唯一使用者ID([!DNL UUID])值所需的程式碼。
+[!DNL DART Enterprise]（和其他目標類型）用於捕獲Audience Manager唯一用戶ID([!DNL UUID])值的代碼。
 
-在頁面頂端定義此函式，最好是在`<head>`程式碼區塊內。
+在頁面頂端定義此函式，最好在`<head>`程式碼區塊內。
 
 <!-- r_aam_de_cookie.xml -->
 
