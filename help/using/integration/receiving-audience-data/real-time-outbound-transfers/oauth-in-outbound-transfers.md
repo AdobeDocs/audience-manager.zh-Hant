@@ -1,34 +1,33 @@
 ---
-description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，Audience Manager可在提出要求時設定為使用OAuth 2.0進行驗證。 這可讓您從Audience Manager向端點發出已驗證的請求。
-seo-description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，Audience Manager可在提出要求時設定為使用OAuth 2.0進行驗證。 這可讓您從Audience Manager向端點發出已驗證的請求。
+description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目的地時，可在提出請求時使用OAuth 2.0設定Audience Manager以進行驗證。 如此一來，您就能從Audience Manager向端點發出已驗證的請求。
+seo-description: 透過即時伺服器對伺服器整合將區段發佈至合作夥伴目的地時，可在提出請求時使用OAuth 2.0設定Audience Manager以進行驗證。 如此一來，您就能從Audience Manager向端點發出已驗證的請求。
 seo-title: OAuth 2.0 整合即時傳出傳輸
 solution: Audience Manager
 title: OAuth 2.0 整合即時傳出傳輸
 uuid: a39e370c-b3bd-4b06-a1af-60a024ee7ee4
-feature: Outbound Data Transfers
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 傳出資料傳輸
+exl-id: eef3a3ae-1a3f-47e9-aab6-abf878e4cb77
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '495'
 ht-degree: 2%
 
 ---
 
+# [!DNL OAuth 2.0] 整合即時傳出傳輸{#oauth-integration-for-real-time-outbound-transfers}
 
-# [!DNL OAuth 2.0] 整合即時出站傳輸{#oauth-integration-for-real-time-outbound-transfers}
-
-透過即時伺服器對伺服器整合將區段發佈至合作夥伴目標時，Audience Manager可在提出要求時設定為使用[!DNL OAuth 2.0]進行驗證。 這可讓您從Audience Manager向端點發出已驗證的請求。
+透過即時伺服器對伺服器整合將區段發佈至合作夥伴目的地時，可在提出要求時使用[!DNL OAuth 2.0]設定Audience Manager以進行驗證。 如此一來，您就能從Audience Manager向端點發出已驗證的請求。
 
 ## 驗證流{#auth-flow}
 
-[!DNL Adobe Audience Manager] [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-4.4)驗證實作是以「用戶端認證」授權流程為基礎，並遵循下列步驟：
+[!DNL Adobe Audience Manager] [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-4.4)驗證實作是以用戶端認證授權流程為基礎，並遵循下列步驟：
 
-1. 您必須提供以下資訊：
+1. 您必須向我們提供：
    * 產生驗證Token的[!DNL OAuth 2.0]端點。
-   * 用來產生Token的憑證。
-1. [!DNL Audience Manager]顧問使用您提供的資訊設定[目標](../../../features/destinations/destinations.md)。
-1. 一旦區段被映射到此目的地，我們的即時資料傳輸系統[IRIS](../../../reference/system-components/components-data-action.md#iris)向令牌端點發出`POST`請求以交換承載令牌的認證。
-1. 對於向夥伴端點發佈的每個區段請求，[!UICONTROL IRIS]會使用承載Token進行驗證。
+   * 用於產生Token的憑證。
+1. [!DNL Audience Manager]顧問使用您提供的資訊設定[destination](../../../features/destinations/destinations.md)。
+1. 將區段對應至此目的地後，我們的即時資料傳輸系統[IRIS](../../../reference/system-components/components-data-action.md#iris)會向代號端點發出`POST`請求，以交換承載代號的認證。
+1. 對於向合作夥伴端點發佈的每個區段請求，[!UICONTROL IRIS]會使用承載權杖進行驗證。
 
 ![](assets/oauth2-iris.png)
 
@@ -38,14 +37,14 @@ ht-degree: 2%
 
 ### IRIS用於獲取承載令牌的端點1
 
-此端點將接受步驟1中提供的認證，並產生用於後續請求的承載Token。
+此端點會接受步驟1提供的憑證，並產生用於後續請求的承載權杖。
 
 * 端點必須接受`HTTP POST`請求。
-* 端點必須接受並查看[!DNL Authorization]標題。 此標題的值為：`Basic <credentials_provided_by_partner>`。
-* 端點必須查看[!DNL Content-type]標題並驗證其值是否為`application/x-www-form-urlencoded ; charset=UTF-8`。
-* 請求正文為`grant_type=client_credentials`。
+* 端點必須接受並查看[!DNL Authorization]標題。 此標題的值將是：`Basic <credentials_provided_by_partner>`。
+* 端點必須查看[!DNL Content-type]標題，並驗證其值為`application/x-www-form-urlencoded ; charset=UTF-8`。
+* 要求內文將為`grant_type=client_credentials`。
 
-### Audience Manager向合作夥伴端點提出的範例要求，以取得載體Token
+### 由Audience Manager向合作夥伴端點提出以取得承載權杖的範例要求
 
 ```
 POST /oauth2/token HTTP/1.1
@@ -59,7 +58,7 @@ Accept-Encoding: gzip
 grant_type=client_credentials
 ```
 
-### 合作夥伴端點的範例回應
+### 來自合作夥伴端點的範例回應
 
 ```
 HTTP/1.1 200 OK
@@ -72,13 +71,13 @@ Content-Length: 121
 {"token_type":"Bearer","access_token":"glIbBVohK8d86alDEnllPWi6IpjZvJC6kwBRuuawts6YMkw4tZkt84rEZYU2ZKHCQP3TT7PnzCQPI0yY"}
 ```
 
-### IRIS使用端點2來使用承載Token發佈區段
+### IRIS用來使用承載權杖發佈區段的端點2
 
-[!DNL Audience Manager] 當使用者符合區段的資格時，會即時傳送資料至此端點。此外，此方法可每24小時傳送一批離線或已登入的資料。
+[!DNL Audience Manager] 當使用者符合區段資格時，會以近乎即時的方式傳送資料至此端點。此外，此方法最多可每24小時傳送批次離線或已上線資料。
 
-端點1產生的承載Token可用來向此端點發出請求。 該[!DNL Audience Manager]即時資料傳輸系統[IRIS](../../../reference/system-components/components-data-action.md#iris)構造一般的HTTPS請求並包括授權標頭。 此標題的值為：載體`<bearer token from step 1>`。
+端點1產生的承載權杖可用來向此端點發出請求。 [!DNL Audience Manager]即時資料傳輸系統[IRIS](../../../reference/system-components/components-data-action.md#iris)構造正常的HTTPS請求，並包括授權頭。 此標題的值將是：承載`<bearer token from step 1>`。
 
-### 合作夥伴端點的範例回應
+### 來自合作夥伴端點的範例回應
 
 ```
 GET /segments/aam HTTP/1.1
@@ -109,14 +108,14 @@ Accept-Encoding: gzip
 
 >[!NOTE]
 >
->此請求包含標準裝載（請求內容）。
+>此要求包含標準裝載（要求內容）。
 
-## 重要注意事項{#considerations}
+## 重要考量 {#considerations}
 
-### Token是密碼
+### 代號是密碼
 
-合作夥伴出示的認證和[!DNL Audience Manager]在使用[!DNL OAuth 2.0]流進行驗證時獲得的代號是敏感資訊，不得與第三方共用。
+合作夥伴提供的認證以及使用[!DNL OAuth 2.0]流程進行驗證時由[!DNL Audience Manager]取得的代號是敏感資訊，不得與第三方共用。
 
-### [!DNL SSL] 必要
+### [!DNL SSL] 必填
 
-[!DNL SSL] 必須使用才能維護安全驗證程式。所有請求，包括用於獲取和使用Token的請求，都必須使用`HTTPS`端點。
+[!DNL SSL] 必須使用才能維護安全驗證程式。所有要求，包括用來取得和使用代號的要求，都必須使用`HTTPS`端點。
