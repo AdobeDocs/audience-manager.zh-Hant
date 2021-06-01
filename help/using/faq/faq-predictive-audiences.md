@@ -4,9 +4,8 @@ seo-description: 預測受眾可協助您運用資料科學，將未知的受眾
 seo-title: 預測受眾常見問題集
 solution: Audience Manager
 title: 預測受眾常見問題集
-feature: Algorithmic Models
+feature: 演算法模型
 exl-id: 21073970-8457-470b-89fc-724a118a18d2
-translation-type: tm+mt
 source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
 workflow-type: tm+mt
 source-wordcount: '969'
@@ -58,43 +57,43 @@ ht-degree: 59%
 
 [!UICONTROL Predictive Audiences] 模型可能由於以下幾個原因而無法產生結果：
 
-1. 所有選定的角色[!UICONTROL traits] / [!UICONTROL segments]都沒有足夠的用戶配置檔案。 我們建議您選擇[!UICONTROL traits]或[!UICONTROL segments]，以便每個角色至少擁有幾百個用戶配置檔案。
-1. 選取的角色[!UICONTROL traits] / [!UICONTROL segments]在其使用者設定檔中沒有足夠的資料（沒有足夠的特徵可以分析）。
-1. 目標讀者特徵／群體沒有任何作用中或已登入的使用者。
+1. 所選角色[!UICONTROL traits] / [!UICONTROL segments]中沒有足夠的用戶配置檔案。 建議您選擇[!UICONTROL traits]或[!UICONTROL segments]，讓每個角色至少擁有幾百個使用者設定檔。
+1. 所選角色[!UICONTROL traits] / [!UICONTROL segments]的使用者設定檔中沒有足夠的資料（沒有足夠的特徵可進行分析）。
+1. 目標受眾特徵/區段沒有任何作用中或已上線的使用者。
 1. 過去 30 天內處於作用中狀態或已上線的目標受眾使用者，其使用者設定檔中的資料不足 (沒有足夠的特徵可進行分析)。
-1. 目標對象區段使用與您為模型選擇的[!UICONTROL Profile Merge Rule]不同的。
-1. 您為模型選擇的[!UICONTROL Profile Merge Rule]中，可能不包含目標對象特徵的資料來源。
+1. 目標受眾區段會使用與您為模型選擇的不同[!UICONTROL Profile Merge Rule]。
+1. 您為模型選擇的[!UICONTROL Profile Merge Rule]中可能不包含目標對象特徵的資料來源。
 
 為獲得最佳結果，請遵循[角色選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目標受眾選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建議准則。
 
  
 
-**為什麼我的模型顯示 [!UICONTROL Error] 狀態？**
+**我的模型為何顯示狀 [!UICONTROL Error] 態？**
 
-模型無法執行。在此情況下，請聯絡您的[!DNL Adobe]代表。
+模型無法執行。在這種情況下，請聯繫您的[!DNL Adobe]代表。
 
  
 
-**我要如何變 [!UICONTROL Profile Merge Rule] 更 [!UICONTROL Predictive Audiences] [!UICONTROL segment]?**
+**如何為 [!UICONTROL Profile Merge Rule] 變 [!UICONTROL Predictive Audiences] [!UICONTROL segment]更？**
 
-選取與先前模型相同的角色和目標對象，以建立新模型。 在建立模型期間，指定不同的[!UICONTROL Profile Merge Rule]。
+選取與上一個模型相同的角色和目標對象，以建立新模型。 在建立模型期間，指派不同的[!UICONTROL Profile Merge Rule]。
 
 >[!WARNING]
-> 或者，您可以使用[區段產生器](../features/segments/segment-builder.md)手動建立具有現有預測性[!UICONTROL trait]的[!UICONTROL segment]，並指派您選擇的[!UICONTROL Profile Merge Rule]。
+> 或者，您也可以使用[區段產生器](../features/segments/segment-builder.md)來手動建立具有現有預測性[!UICONTROL trait]的[!UICONTROL segment]，並指派您所選擇的[!UICONTROL Profile Merge Rule]。
 > 
-> 但是，我們不建議這種做法，因為預測性[!UICONTROL traits]會自動繼承其所屬模型的[!UICONTROL Profile Merge Rule]，而且它們是根據符合模型[!UICONTROL Profile Merge Rule]的有影響的[!UICONTROL traits]建立的。
+> 不過，我們不建議採用此做法，因為預測性[!UICONTROL traits]會自動繼承其所屬模型的[!UICONTROL Profile Merge Rule]，且這些模型是從符合模型[!UICONTROL Profile Merge Rule]的具影響力的[!UICONTROL traits]所建立。
 
  
 
 **我應 [!UICONTROL Profile Merge Rule] 該選擇什麼？**
 
-為模型選擇[!UICONTROL Profile Merge Rule]時，請仔細分析使用案例。
+為模型選擇[!UICONTROL Profile Merge Rule]時，請仔細分析您的使用案例。
 
-假設您的目標對象[!UICONTROL segment]使用基於已驗證的配置檔案+ [!DNL Device Graph]配置檔案的[!UICONTROL Profile Merge Rule]，並且您為預測性[!UICONTROL segments]選擇了相同的[!UICONTROL Profile Merge Rule]。 在這種情況下，設備級別和跨設備級別[!UICONTROL traits]都將用於培訓模型以及將用戶放置到預測性[!UICONTROL segment]中。
+假設您的目標對象[!UICONTROL segment]根據已驗證的設定檔+ [!DNL Device Graph]設定檔使用[!UICONTROL Profile Merge Rule]，且您為預測性[!UICONTROL segments]選取相同的[!UICONTROL Profile Merge Rule]。 在這種情況下，設備級別和跨設備級別[!UICONTROL traits]將用於訓練模型和將用戶放置到預測[!UICONTROL segment]中。
 
-但是，如果您只根據裝置設定檔選取[!UICONTROL Profile Merge Rule]，則跨裝置[!UICONTROL traits]將不會發揮任何影響力，而且不會對將使用者放置在預測性[!UICONTROL segment]中有任何貢獻。 這可能會對模型的精確度和觸及度產生負面影響。
+但是，如果您僅根據裝置設定檔選取[!UICONTROL Profile Merge Rule]，則您的跨裝置[!UICONTROL traits]不會發揮影響力，且不會對將使用者放入預測[!UICONTROL segment]中有貢獻。 這可能會對模型的準確度和觸及率產生負面影響。
 
-仔細分析您的使用案例，並決定您希望模型學習的[!UICONTROL trait]類型，以及您希望模型用於分類的資料類型。
+請仔細分析您的使用案例，並決定您要模型學習的[!UICONTROL trait]類型，以及您要模型用於分類的資料類型。
 
 **目標受眾中不屬於任何角色特徵/區段的使用者是否不可分類？**
 
@@ -114,11 +113,11 @@ ht-degree: 59%
 
  
 
-**我是否可以變更預測性狀的存留時間(TTL)?**
+**我可以變更預測特徵的存留時間(TTL)嗎？**
 
-預測性狀TTL設定為0（期限），無法變更。 [!UICONTROL Predictive Audiences] 只有當使用者符合基本區段的資格或重新分類至不同的預測區段時，才能將其從預測區段中取消分段。
+預測性特徵TTL設為0（存留期）且無法變更。 [!UICONTROL Predictive Audiences] 只有在使用者符合基本區段資格或重新分類為不同預測區段時，才能從預測區段中取消細分使用者。
 
-如有需要，您可以建立新區段來處理此功能，該區段同時包含具有指定TTL的預測性特徵和活動特性。
+如有需要，您可以建立新區段來處理這項功能，區段中同時包含預測特徵和具有指定TTL的活動特徵。
 
  
 
