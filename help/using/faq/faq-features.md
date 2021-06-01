@@ -1,6 +1,6 @@
 ---
 description: 產品與功能的相關常見疑問與問題。
-keywords: audience Manager Cookie
+keywords: audience manager cookie
 seo-description: 產品與功能的相關常見疑問與問題。
 seo-title: 產品特色與功能常見問題集
 solution: Audience Manager
@@ -8,7 +8,6 @@ title: 產品特色與功能常見問題集
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 feature: 概述
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
-translation-type: tm+mt
 source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
 source-wordcount: '615'
@@ -48,9 +47,9 @@ faq_features_functions.xml
 
  
 
-**當執行大量ID匯出至目標時，會遺失部分客戶ID。為什麼會發生這種情況？**
+**執行大量ID匯出至目的地時，會遺失部分客戶ID。為什麼會發生？**
 
-當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUIDs](../reference/ids-in-aam.md))時，只會匯出最新的對應。 這就是為什麼您可能會看到匯出的裝置ID數量低於預期。
+當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUIDs](../reference/ids-in-aam.md))時，只會匯出最新的對應。 這就是為何匯出的裝置ID數量可能低於預期的原因。
 
  
 
