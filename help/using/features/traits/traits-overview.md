@@ -1,23 +1,22 @@
 ---
-description: 使用規則型、已登入、演算法或資料夾特徵來管理資料收集和觀眾建立。
-seo-description: 使用規則型、已登入、演算法或資料夾特徵來管理資料收集和觀眾建立。
-keywords: trait; traits; trait overview
+description: 使用規則型、已上線、演算法或資料夾特徵，管理資料收集和對象建立。
+seo-description: 使用規則型、已上線、演算法或資料夾特徵，管理資料收集和對象建立。
+keywords: 特徵；特徵；特徵概述
 seo-title: 特徵概述
 solution: Audience Manager
 title: 特徵概述
-feature: Traits
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 特徵
+exl-id: 89f79f63-82f3-43cc-b22c-4c45d83e5002
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 39%
+source-wordcount: '76'
+ht-degree: 38%
 
 ---
 
-
 # [!UICONTROL Traits] 概述 {#traits-overview}
 
-使用[!UICONTROL rules-based]、[!UICONTROL onboarded]、[!UICONTROL algorithmic]或[!UICONTROL folder traits]管理資料收集和觀眾建立。 閱讀以下連結的頁面，開始使用[!UICONTROL traits]:
+使用[!UICONTROL rules-based]、[!UICONTROL onboarded]、[!UICONTROL algorithmic]或[!UICONTROL folder traits]管理資料收集和對象建立。 閱讀下面連結的頁面以開始使用[!UICONTROL traits]:
 
 * [特徵詳細資料頁面](/help/using/features/traits/trait-details-page.md)
 * [特徵產生器](/help/using/features/traits/about-trait-builder.md)
