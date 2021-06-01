@@ -5,10 +5,9 @@ seo-title: 資料收集和產品整合常見問題集
 solution: Audience Manager
 title: 資料收集和產品整合常見問題集
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
-keywords: SFTP;SFTP位址；STFP IP位址；FTP位址
+keywords: SFTP;SFTP位址；STFP IP地址；FTP位址
 feature: 管理
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-translation-type: tm+mt
 source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
 workflow-type: tm+mt
 source-wordcount: '1159'
@@ -32,13 +31,13 @@ ht-degree: 83%
 
 <br> 
 
-**您能否提供我可新增至dpm.demdex.net允許清單的IP位址清單？**
+**能提供可新增至dpm.demdex.net允許清單的IP位址清單嗎？**
 
 很遺憾，恕無法提供。這些 IP 會透過 [!DNL Amazon Web Services] 依地理區域以動態方式指派。因此，[!DNL Audience Manager] 不會控制可指派給此位址的 IP 範圍。
 
  
 
-**您是否可提供IP位址給我，我可將其新增至您的傳入和傳出SFTP伺服器的允許清單？**
+**能提供可以新增至傳入和傳出SFTP伺服器允許清單的IP位址嗎？**
 
 可以，請參閱下文。
 
@@ -49,7 +48,7 @@ ht-degree: 83%
 
  
 
-下方的SFTP伺服器已過時。 不會使用這些伺服器布建新帳戶。
+以下的SFTP伺服器已淘汰。 不會使用這些伺服器布建任何新帳戶。
 
 | 伺服器 | IP 位址 |
 ---------|----------|
@@ -58,15 +57,15 @@ ht-degree: 83%
 
  
 
-**如何配置Audience Manager實例以使用新的SFTP伺服器？**
+**如何設定我的Audience Manager例項以使用新的SFTP伺服器？**
 
-請連絡您的[!DNL Audience Manager]顧問或客戶服務，他們將設定您的新SFTP帳戶。
+請連絡您的[!DNL Audience Manager]顧問或客戶服務，他們會設定您的新SFTP帳戶。
 
  
 
 **新SFTP伺服器支援哪些驗證方法？**
 
-新的SFTP伺服器（`ftp-in-gtw`和`ftp-out-gtw`）支援[!DNL OpenSSH Key-Based Authentication]。 我們可以為您產生[!DNL SSH]鍵，或者您也可以提供我們您自己的公開鍵。
+新的SFTP伺服器（`ftp-in-gtw`和`ftp-out-gtw`）支援[!DNL OpenSSH Key-Based Authentication]。 我們可以為您產生[!DNL SSH]金鑰，或者您可以提供您自己的公開金鑰。
 
  
 
@@ -84,7 +83,7 @@ ht-degree: 83%
 
 * 直接將 [!UICONTROL DIL] 放入 `s_code` 中。
 
-* 提供[!UICONTROL DIL]和`s_code`至[!DNL Adobe Experience Platform Launch]。
+* 從[!UICONTROL DIL]到[!DNL Adobe Experience Platform Launch]提供`s_code`。
 
 請參閱 [Data Integration Library (DIL) API](../dil/dil-overview.md)。
 
@@ -153,7 +152,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **[!DNL Google Ad Manager]我想要收集一個網站的資料，並透過不同網站的 定位使用者。如果我不想從那個位置收集資料，是否需要將程式碼部署在其他屬性上？**
 
-不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。只要您透過[!DNL Google Ad Manager]存取第二個網站的庫存，就可以透過[!DNL Google Ad Manager]使用從初始網站和目標網站收集的資料。
+不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。只要您透過[!DNL Google Ad Manager]存取第二個網站的詳細目錄，就可以透過[!DNL Google Ad Manager]使用從初始網站和目標收集的資料。
 
 <br> 
 
@@ -165,7 +164,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **如何設 [!DNL Audience Manager] 定Cookie並將變數傳遞至 [!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 設定2個Cookie:其中一個會傳送區段變 [!DNL Google Ad Manager] 數至廣告標籤，而另一個則會設定我們的唯一使用者ID(UUID)，也由讀取 [!DNL Google Ad Manager]。將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
+[!DNL Audience Manager] 設定2個cookie:其中一個會將區段變數 [!DNL Google Ad Manager] 傳送至廣告標籤，另一個則會設定我們的不重複使用者ID(UUID)，供 [!DNL Google Ad Manager]讀取。將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
 
 <br> 
 
