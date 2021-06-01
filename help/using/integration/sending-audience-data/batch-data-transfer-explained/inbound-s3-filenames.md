@@ -1,13 +1,12 @@
 ---
-description: 說明傳送資料至Audience Manager時，您需要遵循的必填欄位、語法、命名慣例和檔案大小。 將資料發送到Audience Manager/AmazonS3目錄時，請根據這些規範設定檔案的名稱和大小。
-seo-description: 說明傳送資料至Audience Manager時，您需要遵循的必填欄位、語法、命名慣例和檔案大小。 將資料發送到Audience Manager/AmazonS3目錄時，請根據這些規範設定檔案的名稱和大小。
+description: 說明將資料傳送至Audience Manager時，您需要遵循的必要欄位、語法、命名慣例和檔案大小。 將資料傳送至Audience Manager/Amazon S3目錄時，請根據這些規格設定檔案的名稱和大小。
+seo-description: 說明將資料傳送至Audience Manager時，您需要遵循的必要欄位、語法、命名慣例和檔案大小。 將資料傳送至Audience Manager/Amazon S3目錄時，請根據這些規格設定檔案的名稱和大小。
 seo-title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 solution: Audience Manager
 title: 傳入資料檔案的 Amazon S3 名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
-feature: Inbound Data Transfers
+feature: 傳入資料傳輸
 exl-id: 428acdb5-fff0-4b70-b15a-e384aed9cc2d
-translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '1054'
@@ -17,7 +16,7 @@ ht-degree: 6%
 
 # [!DNL Amazon S3] 傳入資料檔案的名稱和檔案大小要求  {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
-說明將資料傳送至[!DNL Audience Manager]時，您需遵循的必填欄位、語法、命名慣例和檔案大小。 將資料發送到[!DNL Audience Manager] / [!DNL Amazon S3]目錄時，請根據這些規範設定檔案的名稱和大小。
+說明將資料傳送至[!DNL Audience Manager]時需要遵循的必填欄位、語法、命名慣例和檔案大小。 將資料發送到[!DNL Audience Manager] / [!DNL Amazon S3]目錄時，根據這些規範設定檔案的名稱和大小。
 
 >[!NOTE]
 >
@@ -41,7 +40,7 @@ Removed  {importance="high"} for ExL
 >
 >[!DNL Audience Manager] 僅處理 [!DNL ASCII] 和編 [!DNL UTF-8] 碼檔案。
 
-### 命名元素
+### 名稱元素
 
 該表定義了[!DNL S3]檔案名中的元素。
 
@@ -55,30 +54,30 @@ Removed  {importance="high"} for ExL
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> <i>AWS_directory</i> </code> </p> </td> 
-   <td colname="col2"> <p>您的AmazonS3儲存貯體的路徑和名稱。 請連絡您的帳戶管理員，以取得S3目錄名稱、路徑和憑證。 </p> </td> 
+   <td colname="col2"> <p>Amazon S3儲存貯體的路徑和名稱。 如需S3目錄名稱、路徑和憑證，請連絡您的帳戶管理員。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>date=<i>yyyy-mm-dd</i></code> </p> </td> 
-   <td colname="col2"> <p>將檔案傳送至S3儲存貯體的時間戳記（以UTC時間為基準）。 </p> </td> 
+   <td colname="col2"> <p>將檔案傳送至S3儲存貯體時的時間戳記（根據UTC時間）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>此lD會告訴<span class="keyword">Audience Manager</span>資料檔案是否包含您自己的使用者ID、Android ID、iOS ID或屬於<a href="/help/using/features/global-data-sources.md">全域資料來源</a>的其他ID。 接受下列選項：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料來源ID（也稱為資料提供者ID）:</b> 這是Audience Manager指派給資料來源的唯一ID(請參 <a href="/help/using/reference/ids-in-aam.md"> 閱Audience ManagerID索 </a>引)。傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>指示<span class="keyword">Audience Manager</span>將線上資料告知屬於資料源21的ID。 </li> 
-     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID)：如果</b> 資料檔案名稱包含Android ID，請使用ID 20914。使用Android ID時，您必須使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword">Audience Manager</span>資料檔案僅包含Android ID，且ID應符合<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li> 
-     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA)：如</b> 果資料檔案名稱包含iOS ID，請使用ID 20915。使用iOS ID時，您必須使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>告訴<span class="keyword">Audience Manager</span>資料檔案僅包含iOS ID，且ID應符合屬於<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li>
-     <li> <b>屬於其他全域資料來源的ID</b>:您可以在Roku ID上安裝廣告(RIDA)、Microsoft Advertising ID(MAID)和其他ID。使用與每個資料來源對應的ID，如<a href="/help/using/features/global-data-sources.md">全域資料來源文章</a>所述。</li> 
-    </ul> <p> <p>注意： 請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿在資料檔案中放入iOS ID或您自己的ID。 </p> </p> </td> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料來源ID（也稱為資料提供者ID）:</b> 這是Audience Manager指派給資料來源的唯一ID(請參閱 <a href="/help/using/reference/ids-in-aam.md"> Audience ManagerID索 </a>引)。傳送包含您自己使用者ID的資料時，請在檔案名稱中使用此指派的ID。 例如， <code>...ftp_dpm_21_123456789.sync</code>告訴<span class="keyword">Audience Manager</span>將資料板載到屬於資料源21的ID。 </li> 
+     <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID(GAID):</b> 如果資料檔案名稱包含Android ID，請在其中使用ID 20914。使用Android ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如， <code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword">Audience Manager</span>資料檔案僅包含Android ID，且ID應符合<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源所屬的特徵資格。</li> 
+     <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID(IDFA):</b> 如果資料檔案名稱包含iOS ID，請在其中使用ID 20915。使用iOS ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如， <code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword">Audience Manager</span>資料檔案僅包含iOS ID，且ID應符合<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源所屬特徵的資格。</li>
+     <li> <b>屬於其他全域資料來源的ID</b>:您可以將適用於廣告的Roku ID(RIDA)、Microsoft Advertising ID(MAID)和其他ID上線。使用與每個資料源對應的ID，如<a href="/help/using/features/global-data-sources.md">全域資料源文章</a>中所述。</li> 
+    </ul> <p> <p>注意： 請勿在資料檔案中混用ID類型。 例如，如果您的檔案名稱包含Android識別碼，請勿將iOS ID或您自己的ID放入資料檔案中。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>此欄位會告訴Audience Manager要將線上資料傳送至哪個資料來源。 如果您將DPID設為屬於全域資料來源的Android ID、iOS ID或其他ID，此欄位是必填欄位。 這可讓<span class="keyword">Audience Manager</span>將檔案資料連結回您的組織。 </p> <p>例如： </p> 
+   <td colname="col2"> <p>此欄位會告訴Audience Manager要將資料上線的資料來源。 如果您將DPID設為Android ID、iOS ID或屬於全域資料來源的其他ID，此欄位為必填欄位。 這可讓<span class="keyword">Audience Manager</span>將檔案資料連結回您的組織。 </p> <p>例如： </p> 
     <ul> 
-     <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告訴Audience Manager，您對屬於資料來源33的客戶ID有資格獲得屬於資料來源21的特徵或信號。 </li> 
-     <li> <b>Android ID(GAID)：告</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> 訴 <span class="keyword"> Audience </span> Manager資料檔案僅包含Android ID，且ID應符合屬於資料來源21的特徵資格。</li> 
-     <li> <b>iOS ID(IDFA)：告</b> <code>...ftp_dpm_20915_21_1234567890.sync</code> 訴 <span class="keyword"> Audience </span> Manager資料檔案僅包含iOS ID，且ID應符合屬於資料來源21的特徵。</li>
-     <li> <b>屬於其他全域資料來源的ID</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> 告訴 <span class="keyword"> Audience </span> Manager資料檔案僅包含Roku ID，且ID應符合屬於資料來源21的特徵資格。使用與每個資料來源對應的ID，如<a href="/help/using/features/global-data-sources.md">全域資料來源文章</a>所述。</li> 
+     <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告訴Audience Manager，您符合資料來源33的客戶ID資格，取得資料來源21的特徵或訊號。 </li> 
+     <li> <b>Android ID(GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> 告訴 <span class="keyword"> Audience </span> Manager資料檔案僅包含Android ID，且ID應符合屬於資料來源21的特徵資格。</li> 
+     <li> <b>iOS ID(IDFA):</b> <code>...ftp_dpm_20915_21_1234567890.sync</code> 告訴 <span class="keyword"> Audience </span> Manager資料檔案僅包含iOS ID，且ID應符合屬於資料來源21的特徵資格。</li>
+     <li> <b>屬於其他全域資料來源的ID</b>: <code>...ftp_dpm_121963_21_1234567890.sync</code> 告訴 <span class="keyword"> Audience </span> Manager資料檔案僅包含Roku ID，且ID應符合屬於資料來源21的特徵資格。使用與每個資料源對應的ID，如<a href="/help/using/features/global-data-sources.md">全域資料源文章</a>中所述。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -87,7 +86,7 @@ Removed  {importance="high"} for ExL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
-   <td colname="col2"> <p>10位數的UTC UNIX時間戳記，以秒為單位。 時間戳記有助於使每個檔案名稱都是唯一的。 </p> 
+   <td colname="col2"> <p>10位數、UTC UNIX時間戳記（以秒為單位）。 時間戳記有助於讓每個檔案名稱都是唯一的。 </p> 
     <!-- 
      <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
     --> </td> 
@@ -96,28 +95,28 @@ Removed  {importance="high"} for ExL
    <td colname="col1"> <p> <code> (.sync|.overwrite)</code> </p> </td> 
    <td colname="col2"> <p>同步選項包括： </p> <p> 
      <ul id="ul_DAAF61EC636C4456BECDDC34C3F86E83"> 
-      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>:當協力廠商資料提供者依使用者傳送要在Audience Manager系統中新增或移除的特徵時，通常會出現此情形。 </li> 
-      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>:可讓資料提供者依每位使用者傳送特性清單，該清單應覆寫該Audience Manager中此資料提供者之所有現有第三方特性。您不需要將所有使用者納入覆寫檔案中。 僅包含您要變更的使用者。 </li> 
+      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>:第三方資料提供者依每位使用者傳送特徵，以在Audience Manager系統中新增或移除的一般情況。 </li> 
+      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>:可讓資料提供者依每位使用者傳送特徵清單，該清單應覆寫該使用者在Audience Manager中針對此資料提供者所有現有第三方特徵。您不需要將所有使用者納入覆寫檔案中。 僅包含您要變更的使用者。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>[<i>SPLIT_NUMBER</i>]</code> </p> </td> 
-   <td colname="col2"> <p>整數。 將大型檔案分割為多個部分時使用，以縮短處理時間。 數字表示您要傳送的原始檔案的哪個部分。 </p> <p>為提高檔案處理的效率，請依照下列指示分割資料檔案： </p> 
+   <td colname="col2"> <p>整數。 將大型檔案分割成多個部分時使用，以縮短處理時間。 數字表示您要傳入的原始檔案的哪個部分。 </p> <p>為了有效處理檔案，請依照以下說明分割資料檔案： </p> 
     <ul id="ul_E9446C5CA42649658093904D49D4369C"> 
      <li id="li_B275708DFE3F49E29EFAE6B838429E39">未壓縮：1 GB </li> 
      <li id="li_A9638EB46ED14E0680B6575D5457E32F">壓縮：200-300 MB </li> 
-    </ul> <p>請參閱下面前2個<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md#file-name-examples">檔案名示例</a>。 </p> </td> 
+    </ul> <p>請參閱下方的前2個<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md#file-name-examples">檔案名稱範例</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>將檔案傳送至AmazonS3時，請僅使用gzip壓縮。 壓縮後，這些檔案將獲得<code> .gz</code>副檔名。 請勿使用。zip壓縮。 </p> <p>壓縮檔案必須為3 GB或更小。 如果您的檔案較大，請與客戶服務聯絡。 雖然Audience Manager可以處理大型檔案，但我們可以協助您減少檔案大小，並提高資料傳輸的效率。 請參閱<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">傳入資料傳輸檔案的檔案壓縮</a>。 </p> </td> 
+   <td colname="col2"> <p>將檔案傳送至Amazon S3時，請僅使用gzip壓縮。 壓縮後，這些檔案會取得<code> .gz</code>副檔名。 請勿使用.zip壓縮。 </p> <p>壓縮檔案必須是3 GB或更小。 如果您的檔案較大，請洽詢客戶服務。 雖然Audience Manager可以處理大型檔案，但我們或許可以幫助您減小檔案大小，並提高資料傳輸的效率。 請參閱<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">傳入資料傳輸檔案的檔案壓縮</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 檔案名示例{#file-name-examples}
 
-以下示例顯示格式正確的檔案名。 您的檔案名稱可能看起來類似。
+以下示例顯示了格式正確的檔案名。 您的檔案名稱看起來可能類似。
 
 <ul class="simplelist"> 
  <li> <code> s3n://&lt;AWS_Bucket&gt;/&lt;partner_name&gt;/date=2016-05-09/ftp_dpm_478_1366545717.sync.1.gz</code> </li> 
@@ -127,11 +126,11 @@ Removed  {importance="high"} for ExL
  <li> <code> s3n://&lt;AWS_Bucket&gt;/&lt;partner_name&gt;/date=2016-05-09/ftp_dpm_478_1366545717.overwrite</code> </li> 
 </ul>
 
-如果需要其他示例，可以[下載](assets/ftp_dpm_1234_1445374061.overwrite)示例檔案。 此檔案已以`.overwrite`檔案副檔名保存。 使用簡單的文字編輯器開啟它。
+如果您想要其他範例，可以[下載](assets/ftp_dpm_1234_1445374061.overwrite)範例檔案。 此檔案已以`.overwrite`檔案副檔名保存。 使用簡單的文字編輯器開啟它。
 
 ## 接受的檔案大小{#accepted-file-sizes}
 
-請考慮下圖，以便最快／最早地處理您的檔案，以及將資料傳送至[!DNL Audience Manager] / [!DNL Amazon S3]目錄時的檔案大小限制。
+請考量下圖，了解檔案的最快/最早處理方式，以及將資料傳送至[!DNL Audience Manager] / [!DNL Amazon S3]目錄時的檔案大小限制。
 
 <table id="table_59FCC63806684DF8BE54A1EAF224A234"> 
  <thead> 
@@ -158,9 +157,9 @@ Removed  {importance="high"} for ExL
 
 >[!NOTE]
 >
->傳入資料驗證程式會將空白檔案標示為無效，且不會處理這些檔案。
+>傳入資料驗證程式會將空白檔案標示為無效，且不會處理。
 
-## 行長限制{#line-limits}
+## 行長度限制{#line-limits}
 
 傳入資料檔案的行長限制為102400位元組。 超過此限制的行將從轉移中排除。
 
