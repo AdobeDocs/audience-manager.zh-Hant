@@ -1,20 +1,19 @@
 ---
 description: 將離線資料匯入 Audience Manager 的常見問題集。
-keywords: ftp or s3;s3 or ftp
+keywords: ftp或s3;s3或ftp
 seo-description: 將離線資料匯入 Audience Manager 的常見問題集。
 seo-title: 傳入客戶資料擷取常見問題集
 solution: Audience Manager
 title: 傳入客戶資料擷取常見問題集
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
-feature: Onboarding Offline Data
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: 上線離線資料
+exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1364'
 ht-degree: 91%
 
 ---
-
 
 # 傳入客戶資料擷取常見問題集{#inbound-customer-data-ingestion-faq}
 
@@ -59,10 +58,10 @@ ht-degree: 91%
 
 **我可以先上傳傳入資料檔案 ([!DNL .sync] 或 [!DNL .overwrite] 檔)，再將 [!DNL Audience Manager] 程式碼部署到生產環境嗎？**
 
-是。只要您使用[!UICONTROL cross-device data source]來儲存您上傳的CRM資料，Audience Manager就會一律儲存資料。 事實上，在Audience Manager於2019年10月啟動的[!UICONTROL Profile Merge Rules]增強功能允許離線使用案例後，您就可以上傳資料並採取動作，而不需將Audience Manager程式碼部署至生產環境。 請參閱：
+是。只要您使用[!UICONTROL cross-device data source]儲存上傳的CRM資料，Audience Manager一律會儲存資料。 事實上，在2019年10月啟動的[!UICONTROL Profile Merge Rules]增強功能允許僅限離線的使用案例之後，您無需將Audience Manager程式碼部署至生產環境，即可上傳資料並執行動作。 請參閱：
 
 * [設定檔合併規則增強功能概述](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] -根 [據僅離線資料個人化](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.translate.html)
+* [!UICONTROL People-based Destinations]  — 以 [僅限離線資料為基礎的個人化](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.translate.html)
 
 <br> 
 
@@ -188,7 +187,7 @@ FTP 檔案一經處理便會隨即移除。[!DNL S3] 檔案會在 30 天後移�
 
  
 
-**什麼是a, [!DNL Data Provider ID (DPID)] 我要如何取得？**
+**什麼是 [!DNL Data Provider ID (DPID)] ，我該如何取得？**
 
 Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [DPID (資料提供者 ID)](../reference/ids-in-aam.md)。此 ID 不重複且不會變更。
 
@@ -211,7 +210,7 @@ Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [
 
 **我資料來源資料庫中的主索引鍵是電子郵件地址。這是否會視為個人識別資訊？**
 
-是。[!DNL Audience Manager] 不會將電子郵件地址儲存在其資料庫中。在啟動ID同步之前，應先為訪客指派隨機產生的ID或單向雜湊的電子郵件地址版本。
+是。[!DNL Audience Manager] 不會將電子郵件地址儲存在其資料庫中。啟動ID同步之前，應先為訪客指派隨機產生的ID或電子郵件地址的單向雜湊版本。
 
  
 
@@ -227,7 +226,7 @@ Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [
 
 >[!WARNING]
 >
->我們正逐步淘汰對 FTP 組態的支援。雖然現有FTP整合仍支援傳入資料檔案擷取，但強烈建議使用[!DNL Amazon S3]來載入新整合的離線資料。 如需詳細資訊，請參閱[傳入資料檔案的 Amazon S3 名稱和檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+>我們正逐步淘汰對 FTP 組態的支援。雖然現有FTP整合仍支援傳入資料檔案擷取，但強烈建議使用[!DNL Amazon S3]將離線資料上線以進行新整合。 如需詳細資訊，請參閱[傳入資料檔案的 Amazon S3 名稱和檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
