@@ -6,9 +6,8 @@ seo-title: 設定檔合併規則與裝置圖表常見問題集
 solution: Audience Manager
 title: 設定檔合併規則與裝置圖表常見問題集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
-feature: Profile Merge
+feature: 個人資料合併
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-translation-type: tm+mt
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '1552'
@@ -260,18 +259,18 @@ ht-degree: 86%
 
 否。
 
-**為什麼2020年3月16日之後，我會看到零區段人口出口至Adobe Campaign?**
+**2020年3月16日後，為何區段匯出至Adobe Campaign的區段母體為零？**
 
-在2019年底，我們推出了一系列的描述檔合併規則增強功能，以改善使用跨裝置ID產生的批次檔案的精確度。 從2020年3月16日（星期一）起，您的Audience Manager實例將嚴格遵循這些增強功能。 因此，使用跨裝置ID映射至目的地的區段，會停止在某些「描述檔合併規則」設定中產生匯出。
+2019年底，我們推出了一系列「設定檔合併規則」增強功能，以改善使用跨裝置ID產生批次檔案的準確度。 從2020年3月16日星期一開始，您的Audience Manager例項將嚴格遵循這些增強功能。 因此，使用跨裝置ID對應至目的地的區段，在某些「設定檔合併規則」設定中將不再產生匯出項目。
 
-若要使用跨裝置ID(例如Adobe Campaign)確保Audience Manager實例與目標之間的正確整合，請確定您符合下列需求：
+若要確保您的Audience Manager例項與使用跨裝置ID的目的地(例如Adobe Campaign)之間的正確整合，請務必符合下列需求：
 
-1. 檢閱對應至您的「Adobe Campaign宣告ID」目的地的區段所使用的描述檔合併規則。 配置檔案合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，因此所有已驗證的配置檔案都可以包含在導出中。 如果您的「描述檔合併規則」使用不同的選項，請將其切換為[!UICONTROL Last Authenticated Profile]。
-2. 在「描述檔合併規則」設定中選取「Adobe Campaign宣告的ID」資料來源。
+1. 檢閱對應至您Adobe Campaign宣告ID目的地之區段所使用的設定檔合併規則。 設定檔合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，因此所有已驗證的設定檔皆可包含在匯出中。 如果您的設定檔合併規則使用不同的選項，請將其切換至[!UICONTROL Last Authenticated Profile]。
+2. 在「設定檔合併規則」設定中選取「Adobe Campaign宣告ID」資料來源。
 
 >[!NOTE]
 >
-> 我們已針對面臨此情況的客戶將「描述檔合併規則」限制提高1，因此您可以為映射至「Adobe Campaign聲明ID」目的地的區段建立專用的「描述檔合併規則」，而不會變更其他使用案例的「描述檔合併規則」。
+> 我們已針對面臨此情況的客戶，將「設定檔合併規則」限制提高1，如此一來，您就可以為對應至Adobe Campaign宣告ID目的地的區段建立專用的設定檔合併規則，而不需變更其他使用案例的設定檔合併規則。
 
 >[!MORELIKETHIS]
 >
