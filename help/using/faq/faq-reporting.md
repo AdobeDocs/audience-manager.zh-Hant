@@ -5,9 +5,8 @@ seo-title: 報表常見問題集
 solution: Audience Manager
 title: 報表常見問答集
 uuid: 78cd6c86-8a4a-4748-ab71-b6e8d6078c94
-feature: Reporting Reference
+feature: 報表參考
 exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
-translation-type: tm+mt
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '704'
