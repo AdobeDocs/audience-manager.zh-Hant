@@ -1,13 +1,12 @@
 ---
-description: 此頁面僅包含目前伺服器對伺服器的整合。 有關整合的詳細資訊，請參閱其Adobe交易清單（如有），或聯絡Adobe顧問或客戶服務。
-seo-description: 此頁面僅包含目前伺服器對伺服器的整合。 有關整合的詳細資訊，請參閱其Adobe交易清單（如有），或聯絡Adobe顧問或客戶服務。
-seo-title: Adobe Audience Manager伺服器到伺服器目標
-keywords: 啟動；啟動合作夥伴、目的地和目的地
+description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe交換清單（如有），或聯絡您的Adobe顧問或客戶服務。
+seo-description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe交換清單（如有），或聯絡您的Adobe顧問或客戶服務。
+seo-title: Adobe Audience Manager伺服器對伺服器目的地
+keywords: 激活；啟用合作夥伴，目的地，目的地
 solution: Audience Manager
-title: Adobe Audience Manager伺服器到伺服器目標
-feature: 目標基礎
+title: Adobe Audience Manager伺服器對伺服器目的地
+feature: 目的地基本知識
 exl-id: 7db3bc02-ece4-4524-a401-d2c8c6de510a
-translation-type: tm+mt
 source-git-commit: 78d3bbc03936130f9c9da8ee5eed33e6ef9a07b9
 workflow-type: tm+mt
 source-wordcount: '1148'
@@ -17,18 +16,18 @@ ht-degree: 72%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-本頁僅包含當前[!DNL Audience Manager] [基於設備的目標](/help/using/features/destinations/add-device-based-destinations.md)。 在[!DNL Audience Manager]中，[!UICONTROL device-based destinations]也稱為[!UICONTROL server-to-server destinations]。 有關整合的詳細資訊，請參閱[AdobeExchange](https://exchange.adobe.com/experiencecloud.html)清單（如有），或聯繫[!DNL Adobe]顧問或客戶服務。
+此頁面僅包含目前的[!DNL Audience Manager] [以裝置為基礎的目的地](/help/using/features/destinations/add-device-based-destinations.md)。 在[!DNL Audience Manager]中， [!UICONTROL device-based destinations]也稱為[!UICONTROL server-to-server destinations]。 如需整合的詳細資訊，請參閱其[AdobeExchange](https://exchange.adobe.com/experiencecloud.html)清單（若有），或聯絡您的[!DNL Adobe]顧問或客戶服務。
 
 
-* **上次更新** =顯示此更新的最後日期 [!UICONTROL device-based destination]。
-* **Updates** =指 [!DNL Audience Manager] 出是即時還是批次(1xday)傳送資料至此 [!UICONTROL destination]。
-* **Unsegment** = Unsegmentation說明取消裝置設定檔的資格並從中移除裝置設定檔的 [!UICONTROL segments]程式。從[!UICONTROL segment]移除裝置描述檔的能力取決於用於建立[!UICONTROL Profile Merge Rule]的裝置選項。 在[!DNL GDPR]刪除請求的上下文中也會使用取消分段。 閱讀[描述檔合併規則與裝置取消分段程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和[具有取消分段功能的Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager] 傳送未區段資訊至以下 [!UICONTROL destinations] 標示的 **** 對象。
-* **接收 [!DNL IAB TCF] 同意信號** = [!DNL Audience Manager Plug-in for IAB TCF] 可讓您將字串轉送至啟動 [!DNL IAB TC] 合作夥伴，同時尊重使用者的隱私權選擇。閱讀[IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)的Audience Manager插件。
-* **[!DNL ICDS]** =此列列出支援的合作夥伴 [!UICONTROL Instant Cross-Device Suppression]。閱讀[即時跨裝置抑制](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
-* **行動裝置ID** =此欄列出可從中接收行動裝置ID的合作夥伴 [!DNL Audience Manager]。
+* **上次更新**  =顯示上次有此更新的日 [!UICONTROL device-based destination]期。
+* **更新**  =指 [!DNL Audience Manager] 出是即時或批次(1xd)傳送資料至此 [!UICONTROL destination]。
+* **取消細分**  =取消細分說明會取消裝置設定檔的資格並從中移除其 [!UICONTROL segments]程式。您從[!UICONTROL segment]中刪除設備配置檔案的能力取決於用於建立[!UICONTROL Profile Merge Rule]的設備選項。 在[!DNL GDPR]刪除請求的內容中也會使用取消細分功能。 閱讀[設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)和具有取消細分功能的[Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager] 會傳送取消細分資訊至以 [!UICONTROL destinations] 下「是 **** 」標籤。
+* **接收 [!DNL IAB TCF] 同意訊號**  =可讓 [!DNL Audience Manager Plug-in for IAB TCF] 您將字串轉送給啟 [!DNL IAB TC] 用合作夥伴，同時接受使用者的隱私權選擇。閱讀[適用於IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)的Audience Manager外掛程式。
+* **[!DNL ICDS]** =此欄列出支援的合作夥伴 [!UICONTROL Instant Cross-Device Suppression]。閱讀[即時跨裝置隱藏](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)相關資訊。
+* **行動裝置ID**  =此欄列出可從接收行動裝置ID的合作夥伴 [!DNL Audience Manager]。
 
 
-| 整合 | 最近更新 | 更新 | 取消分段 | 接收[!DNL IAB TCF]同意信號 | [!DNL ICDS] | 行動裝置 ID |
+| 整合 | 最近更新 | 更新 | 取消細分 | 接收[!DNL IAB TCF]同意訊號 | [!DNL ICDS] | 行動裝置 ID |
 |----------------------------------------------------------|------------|-----------|-----------|-----------------------------------|------|-------------------|
 | [!DNL 4C Insights] | 26/09/2018 | 1天 | 有 | 否 | 否 | 是 |
 | [!DNL 4info] | 09/02/2017 | 1天 | 否 | 否 | 否 | 是 |
@@ -130,8 +129,8 @@ ht-degree: 72%
 | [!DNL Quantcast] | 13/02/2017 | 即時 | 有 | 否 | 否 | 否 |
 | [!DNL RhythmOne / RadiumOne] | 13/02/2017 | 即時 | 有 | 否 | 否 | 是 |
 | [!DNL Remerge] | 31/05/2017 | 即時 | 有 | 否 | 是 | 是 |
-| [!DNL Resonate] | 17/02/2017 | 1x/天 | 有 | 否 | 否 | 否 |
-| [!DNL RevJet] | 17/02/2017 | 1x/天 | 否 | 否 | 否 | 否 |
+| [!DNL Resonate] | 17/02/2017 | 1天 | 有 | 否 | 否 | 否 |
+| [!DNL RevJet] | 17/02/2017 | 1天 | 否 | 否 | 否 | 否 |
 | [!DNL RocketFuel] | 17/02/2017 | 即時 | 有 | 否 | 是 | 是 |
 | [!DNL Rubicon] |  | 即時 | 是 | 是 | 否 |  |
 | [!DNL RUN] | 17/02/2017 | 1天 | 有 | 否 | 否 | 否 |
@@ -141,7 +140,7 @@ ht-degree: 72%
 | [!DNL Sizmek ad server (Amazon)] | 17/02/2017 | 即時 | 有 | 否 | 否 |  |
 | [!DNL Slickdeals] | 04/09/2018 | 即時 | 有 | 否 | 否 | 是 |
 | [!DNL Smart Adserver] | 31/07/2017 | 即時 | 有 | 否 | 是 | 是 |
-| [!DNL So-net Media Networks Logicad] |  | 1x/天 | 有 | 否 | 否 |  |
+| [!DNL So-net Media Networks Logicad] |  | 1天 | 有 | 否 | 否 |  |
 | [!DNL Sonobi] | 28/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL SpecificMedia] | 03/03/2017 | 即時 | 否 | 否 | 否 | 否 |
 | [!DNL SpongeCell] | 03/03/2017 | 即時 | 有 | 否 | 是 | 是 |
@@ -149,7 +148,7 @@ ht-degree: 72%
 | [!DNL Stroer] | 03/03/2017 | 1天 | 有 | 否 | 否 | 否 |
 | [!DNL SundaySky] | 03/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL StartApp] | 25/05/2018 | 1天 | 有 | 否 | 否 | 是 |
-| [!DNL Supership]/[!DNL ScaleOut] | 03/03/2017 | 1x/天 | 有 | 否 | 否 | 否 |
+| [!DNL Supership]/[!DNL ScaleOut] | 03/03/2017 | 1天 | 有 | 否 | 否 | 否 |
 | [!DNL Survata] | 09/08/2017 | 1天 | 有 | 否 | 否 | 是 |
 | [!DNL Taboola] | 03/08/2017 | 1天 | 否 | 有 | 否 | 否 |
 | [!DNL Tapad] | 17/07/2020 | 即時 | 否 | 否 | 否 | 是 |
@@ -162,7 +161,7 @@ ht-degree: 72%
 | [!DNL TrueX] | 11/01/2018 | 即時 | 有 | 否 | 否 | 是 |
 | [!DNL TubeMogul] | 03/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL Turn] /  [!DNL Amobee] | 03/03/2027 | 即時 | 否 | 否 | 否 | 是 |
-| [!DNL Twenga] | 2018年9月10日 | 即時 | 有 | 否 | 否 | 否 |
+| [!DNL Twenga] | 29/10/2018 | 即時 | 有 | 否 | 否 | 否 |
 | [!DNL Twitter Tailored Audiences] | 27/02/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL Undertone] | 11/07/2017 | 1天 | 否 | 否 | 否 | 否 |
 | [!DNL Verve] | 15/06/2017 | 1天 | 有 | 否 | 否 | 是 |
@@ -175,7 +174,7 @@ ht-degree: 72%
 | [!DNL Yahoo DataX] | 03/03/2017 | 即時 | 是 | 是 | 是 | 是 |
 | [!DNL Yahoo! Japan] | 03/03/2017 | 即時 | 否 | 否 | 否 | 否 |
 | [!DNL Yandex] | 28/11/2018 | 1天 | 有 | 否 | 否 | 是 |
-| [!DNL Yieldex] | 21/08/2017 | 視情況而定 | 有 | 否 | 否 | 否 |
+| [!DNL Yieldex] | 21/08/2017 | 視 | 有 | 否 | 否 | 否 |
 | [!DNL YieldMo] | 03/03/2017 | 1天 | 否 | 否 | 否 | 否 |
 | [!DNL Yume] | 31/05/2017 | 1天 | 否 | 否 | 否 | 否 |
-| [!DNL Zeta] /  [!DNL Sizmek DSP] /  [!DNL RocketFuel] | 17/02/2017 | 即時 | 有 | 否 | 是 | 是 |
+| [!DNL Zeta] /  [!DNL Sizmek DSP]   [!DNL RocketFuel] | 17/02/2017 | 即時 | 有 | 否 | 是 | 是 |
