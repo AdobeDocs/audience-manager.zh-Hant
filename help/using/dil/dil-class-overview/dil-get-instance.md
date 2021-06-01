@@ -1,20 +1,19 @@
 ---
 description: 擷取合作夥伴專屬的DIL例項。
-keywords: audience manager api;aam api;audience manager apis;aam apis
+keywords: audience manager api;aam api;audience manager api;aam api
 seo-description: 擷取合作夥伴專屬的DIL例項。
 seo-title: getDil
 solution: Audience Manager
 title: getDil
 uuid: 7b95f9bf-14c0-4c74-b6b9-d6b38513d487
-feature: DIL Implementation
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+feature: DIL實作
+exl-id: a1e9e715-3921-4298-bce1-5a6c2110e71b
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 17%
+source-wordcount: '85'
+ht-degree: 15%
 
 ---
-
 
 # getDil{#getdil}
 
@@ -33,7 +32,7 @@ ht-degree: 17%
 
 ## 回應
 
-成功的合作夥伴和容器NSID符合會傳回合作夥伴專屬的[!UICONTROL DIL]例項。 如果沒有相符項目，API會傳回（不擲出）訊息&quot; `The DIL instance with partner <name> and containerNSID <ID> was not found.`&quot;的錯誤
+成功的合作夥伴和容器NSID比對會傳回合作夥伴專屬的[!UICONTROL DIL]例項。 如果沒有相符項目，API會傳回（未擲回）訊息「 `The DIL instance with partner <name> and containerNSID <ID> was not found.`」的錯誤
 
 ## 程式碼範例
 
