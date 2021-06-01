@@ -1,33 +1,32 @@
 ---
-description: 使用這些REST風格的API方法將區段對應至目標。
-seo-description: 使用這些REST風格的API方法將區段對應至目標。
+description: 使用這些RESTful API方法將區段對應至目的地。
+seo-description: 使用這些RESTful API方法將區段對應至目的地。
 seo-title: 將區段對應至目的地
 solution: Audience Manager
 title: 將區段對應至目的地
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 feature: API
-translation-type: tm+mt
-source-git-commit: e05eff3cc04e4a82399752c862e2b2370286f96f
+exl-id: 906df6c5-f878-48e6-a804-eb5b4407f304
+source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '509'
 ht-degree: 11%
 
 ---
 
-
 # 將區段對應至目的地 {#map-segments-to-a-destination}
 
-使用這些[!DNL RESTful API]方法將區段對應至目標。
+使用這些[!DNL RESTful API]方法將區段對應至目的地。
 
 <!-- c_api_map_seg_dest.xml -->
 
-## 支援的目標類型：僅限URL和Cookie
+## 支援的目的地類型：僅限URL和Cookie
 
-可用的`POST`方法可讓您僅將區段對應至[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，您無法使用這些[!DNL REST API]方法將區段對應至[!UICONTROL server-to-server destinations]。 請改用使用者介面。 但是，相關的目標`GET`方法可讓您擷取有關在使用者介面中建立的[!UICONTROL server-to-server destinations]資訊。
+可用的`POST`方法只允許將區段對應至[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，您無法使用這些[!DNL REST API]方法將區段對應至[!UICONTROL server-to-server destinations]。 請改用使用者介面。 不過，相關目標`GET`方法可讓您擷取有關在使用者介面中建立之[!UICONTROL server-to-server destinations]的資訊。
 
-## 將區段對應至無序號的URL目標{#map-segment-non-serial}
+## 將區段對應至非序列化URL目的地{#map-segment-non-serial}
 
-`POST`方法，可讓您將區段對應至非序列[!UICONTROL URL]目標。
+`POST`方法可讓您將區段對應至非序列[!UICONTROL URL]目的地。
 
 <!-- r_map_noserial_url.xml -->
 
@@ -37,7 +36,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -75,9 +74,9 @@ ht-degree: 11%
 }
 ```
 
-## 將區段對應至序號的URL目標{#map-segment-serial}
+## 將區段對應至序列化URL目的地{#map-segment-serial}
 
-`POST`方法，可讓您將區段對應至序號的[!UICONTROL URL]目的地。
+`POST`方法可讓您將區段對應至序列化的[!UICONTROL URL]目的地。
 
 <!-- r_map_serialized_url.xml -->
 
@@ -87,7 +86,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-在請求中，`traitAlias`對應於鍵值對中的鍵。 除非另有指示，否則所有請求值都為必要值。
+在請求中，`traitAlias`對應至機碼值組中的機碼。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -125,9 +124,9 @@ ht-degree: 11%
 }
 ```
 
-## 將區段對應至Cookie目標：單鍵，無序{#map-segment-cookie-noserial}
+## 將區段對應至Cookie目的地：單鍵，非序列化{#map-segment-cookie-noserial}
 
-`POST`方法，可讓您將區段對應至單鍵、無序號的[!UICONTROL cookie]目標。
+`POST`方法可讓您將區段對應至單鍵、非序列化的[!UICONTROL cookie]目的地。
 
 <!-- r_map_cookie_noserial.xml -->
 
@@ -137,7 +136,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-在請求中，`valueAlias`對應於鍵值對中的值。 除非另有指示，否則所有請求值都為必要值。
+在請求中，`valueAlias`對應至機碼值組中的值。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -172,9 +171,9 @@ ht-degree: 11%
 }
 ```
 
-## 將區段對應至Cookie目標：多鍵，無序{#map-segment-cookie-multi-noserial}
+## 將區段對應至Cookie目的地：多鍵，非序列化{#map-segment-cookie-multi-noserial}
 
-`POST`方法，可讓您將區段對應至多鍵、無序號的[!UICONTROL cookie]目標。
+`POST`方法可讓您將區段對應至多鍵、非序列化的[!UICONTROL cookie]目的地。
 
 <!-- r_map_cookie_multikey_noserial.xml -->
 
@@ -184,7 +183,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-在請求中，`traitAlias`和`valueAlias`分別在鍵值對中設定鍵和值。 除非另有指示，否則所有請求值都為必要值。
+在請求中，`traitAlias`和`valueAlias`分別在機碼值組中設定機碼和值。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -220,9 +219,9 @@ ht-degree: 11%
 }
 ```
 
-## 將區段對應至Cookie目標：多鍵，序列化{#map-segment-cookie-multi-serial}
+## 將區段對應至Cookie目的地：多鍵，序列化{#map-segment-cookie-multi-serial}
 
-`POST`方法，可讓您將區段對應至多鍵序號[!UICONTROL cookie destination]。
+`POST`方法可讓您將區段對應至多鍵序列化[!UICONTROL cookie destination]。
 
 <!-- r_map_cookie_multikey_serialized.xml -->
 
@@ -232,7 +231,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-在請求中，`traitAlias`和`valueAlias`在鍵值對中設定鍵和值。 除非另有指示，否則所有請求值都為必要值。
+在請求中，`traitAlias`和`valueAlias`會設定機碼 — 值組中的機碼和值。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -268,9 +267,9 @@ ht-degree: 11%
 }
 ```
 
-## 將區段映射到伺服器到伺服器目標{#map-segment-s2s}
+## 將區段對應至伺服器對伺服器目的地{#map-segment-s2s}
 
-`POST`方法，可讓您將區段對應至現有的[!UICONTROL server-to-server]目標。 但請注意，您無法使用目前可用的[!DNL API]方法來建立[!UICONTROL server-to-server]目標。
+`POST`方法可讓您將區段對應至現有的[!UICONTROL server-to-server]目的地。 但請注意，您無法使用目前可用的[!DNL API]方法建立[!UICONTROL server-to-server]目的地。
 
 <!-- r_map_segment_s2s.xml -->
 
@@ -280,7 +279,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-在請求中，`traitAlias`對應於鍵值對中的鍵。 除非另有指示，否則所有請求值都為必要值。
+在請求中，`traitAlias`對應至機碼值組中的機碼。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -316,7 +315,7 @@ ht-degree: 11%
 
 ## 批量建立目標映射{#bulk-create}
 
-`POST`方法，可讓您傳入[!UICONTROL cookie]或[!UICONTROL URL]目標映射的陣列。
+`POST`方法可讓您傳入[!UICONTROL cookie]或[!UICONTROL URL]目標映射的陣列。
 
 <!-- r_bulk_create.xml -->
 
@@ -326,7 +325,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 [
@@ -347,7 +346,7 @@ ht-degree: 11%
 
 ### 回應
 
-成功的響應返回已建立映射的陣列。
+成功的回應會傳回已建立對應的陣列。
 
 ```
 [
@@ -400,7 +399,7 @@ ht-degree: 11%
 
 ## 將多個區段新增至目標{#add-segments-dest}
 
-`POST`方法，可讓您將多個區段對應至目標。
+`POST`方法可讓您將多個區段對應至目的地。
 
 <!-- r_add_segments_to_destination.xml -->
 
@@ -410,7 +409,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-在陣列中建立多個目標映射。 除非另有指示，否則所有請求值都為必要值。
+在陣列中建立多個目標映射。 除非另有指明，否則所有要求值都為必要值。
 
 ```
 [
@@ -431,7 +430,7 @@ ht-degree: 11%
 
 ### 回應
 
-返回已建立映射的陣列。
+傳回已建立對應的陣列。
 
 ```
 [
@@ -482,9 +481,9 @@ ht-degree: 11%
 ]
 ```
 
-## 按目標ID {#update-dest-data-order}更新目標
+## 按目標ID更新目標{#update-dest-data-order}
 
-一種`PUT`方法，可讓您依`destinationId`更新現有的目的地。
+`PUT`方法可讓您透過`destinationId`更新現有目的地。
 
 <!-- r_update_destination_data_order_id.xml -->
 
@@ -494,7 +493,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -532,9 +531,9 @@ ht-degree: 11%
 }
 ```
 
-## 通過映射ID {#update-mapping-dest-id}更新映射到目標
+## 通過映射ID {#update-mapping-dest-id}更新到目標的映射
 
-一種`PUT`方法，可讓您通過指定的`mappingId`更新到目標的映射。
+`PUT`方法可讓您更新指定`mappingId`的目標映射。
 
 <!-- r_update_destination_trait_data_order_id.xml -->
 
@@ -544,7 +543,7 @@ ht-degree: 11%
 
 ### 範例要求
 
-除非另有指示，否則所有請求值都為必要值。
+除非另有指明，否則所有要求值都為必要值。
 
 ```
 {
@@ -585,6 +584,6 @@ ht-degree: 11%
 >[!MORELIKETHIS]
 >
 >* [目的地](../../../features/destinations/destinations.md)
->* [目標序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
->* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
+* [目的地序列化](../../../features/destinations/key-value-pairs.md#destination-serialized)
+* [索引鍵值配對說明](../../../reference/key-value-pairs-explained.md)
 
