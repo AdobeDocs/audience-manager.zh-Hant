@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: 了解Audience Manager如何讓您收集網站訪客的商業相關資訊、建立可行銷區段，以及將目標廣告和內容提供給適當的對象。
 feature-set: Audience Manager
-source-git-commit: bd049d293eeddf9c3454ea8dc183f84f5c7df59a
+source-git-commit: cf9368d4690b61066646054543cc60d390eea021
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 91%
+source-wordcount: '1809'
+ht-degree: 90%
 
 ---
 
@@ -393,6 +393,7 @@ ht-degree: 91%
    + [以人物為基礎的目的地常見問題集](faq/faq-people-based-destinations.md)
    + [產品特色與功能常見問題集](faq/faq-features.md)
    + [設定檔合併規則與裝置圖表常見問題集](faq/faq-profile-merge.md)
+   + [相似建模常見問題集](faq/faq-lookalike-modeling.md)
    + [預測受眾常見問題集](faq/faq-predictive-audiences.md)
    + [目標定位常見問題集](faq/faq-targeting.md)
    + [報表常見問題集](faq/faq-reporting.md)
