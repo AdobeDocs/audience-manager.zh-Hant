@@ -8,10 +8,10 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP位址；STFP IP地址；FTP位址
 feature: 管理
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 24284321570ee5eb9632801a4a333a11b532e386
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 83%
+source-wordcount: '1206'
+ht-degree: 80%
 
 ---
 
@@ -205,3 +205,11 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 **跨[地區](../api/dcs-intro/dcs-api-reference/dcs-regions.md)同步使用者設定檔需要多久？**
 
 在不同地區間同步使用者設定檔通常需要 24 小時。不過在少數情況下，此程序可能會耗費最多 48 小時。
+
+ 
+
+**非作用中的Amazon S3使用者存取金鑰有何變化？**
+
+Adobe為Audience Manager客戶提供Audience Manager[!DNL Amazon S3]貯體的使用者存取金鑰。 基於安全原因，閒置100天後，金鑰會自動停用。
+
+若要重新啟用存取金鑰或要求新金鑰，請聯絡客戶支援。
