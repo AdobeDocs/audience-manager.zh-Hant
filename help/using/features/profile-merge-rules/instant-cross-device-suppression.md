@@ -6,7 +6,7 @@ title: 即時跨裝置隱藏功能
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: 個人資料合併
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 15%
@@ -67,4 +67,4 @@ ht-degree: 15%
 請記住與時間相關的以下方面：
 
 * 在[Edge](../../reference/system-components/components-edge.md)上儲存一個區段，與在[!UICONTROL Edge]上儲存一個設備配置檔案的相同時段，即距上次即時交互的14天。 請前往[資料保留常見問題集](../../faq/faq-privacy.md#data-retention-faq)，深入了解資料保留。
-* 取消細分操作需要大約24小時才能跨[!DNL DCS]區域傳播。 請詳閱[!DNL DCS]地區[此處](../..//reference/system-components/components-data-collection.md)和[此處](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)的相關資訊。
+* 取消細分操作需要大約24小時才能跨[!DNL DCS]區域傳播。 請詳閱[!DNL DCS]地區[此處](../../reference/system-components/components-data-collection.md)和[此處](../../api/dcs-intro/dcs-api-reference/dcs-regions.md)的相關資訊。
