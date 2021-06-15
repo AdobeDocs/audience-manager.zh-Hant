@@ -6,9 +6,9 @@ solution: Audience Manager
 title: 工作流程 B - 以僅限離線資料為基礎的個人化
 feature: 以人物為基礎的目的地
 exl-id: d980de26-3133-4ae3-80c2-8c3bf2480bbd
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 87c3169083f0dc66490e6a8c808e16371f1d78c0
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1173'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 6%
 
 ### 範例
 
-您想要讓下表中的客戶ID符合對應已上線特徵ID的資格。 假設您的[DPUUIDs](../../reference/ids-in-aam.md)儲存在ID為999999的資料來源中，而您的Audience Manager合作夥伴ID為123。
+您想要讓下表中的客戶ID符合對應已上線特徵ID的資格。 假設您的[DPUUIDs](../../reference/ids-in-aam.md)儲存在ID為999999的資料來源中，而您的Audience Manager資料來源ID為123。
 
 | 客戶ID(DPUUID) | 已上線的特徵ID |
 | -------------------------------------- | ------------------- |
