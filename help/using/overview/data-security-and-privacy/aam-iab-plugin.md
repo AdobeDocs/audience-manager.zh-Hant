@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 適用於 IAB TCF 的 Audience Manager 外掛程式
 feature: 資料控管與隱私權
 exl-id: aa6bc415-e52b-4900-951d-ccf51d907aa2
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 8fc6c96bf9e8216ef4458989c87f1f93ea9f0347
 workflow-type: tm+mt
 source-wordcount: '2441'
 ht-degree: 40%
@@ -75,7 +75,7 @@ Audience Manager可協助您尊重使用者的隱私權選擇，並提供您與�
 
 若要在 Audience Manager 中啟用 IAB TCF 支援，請參閱[如何透過選擇加入設定 IAB](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/iab.html) 文件。
 
-最簡單的做法是使用[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)在您的屬性上新增[!DNL ECID Opt-in]。 請參閱 [ECID 選擇加入擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)文件，瞭解如何設定 Launch 擴充功能。
+最簡單的做法是使用[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en)在您的屬性上新增[!DNL ECID Opt-in]。 請參閱 [ECID 選擇加入擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)文件，瞭解如何設定 Launch 擴充功能。
 
 ## 使用 IAB 架構時的使用者選擇工作流程 {#user-choice-workflow}
 
