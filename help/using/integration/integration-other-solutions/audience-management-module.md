@@ -8,7 +8,7 @@ title: 實作對象管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 feature: Adobe Analytics 整合功能
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 8fc6c96bf9e8216ef4458989c87f1f93ea9f0347
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 4%
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 ### 使用[!DNL Adobe Experience Platform Launch]實作
 
-[!DNL Adobe] 建議您使用 [](https://docs.adobe.com/content/help/en/launch/using/overview.html) Launch擴充功能，對 [!DNL Adobe Analytics] 您的 [!DNL Audience Manager] 屬性進行測試和。在此情況下，您不需要手動複製任何代碼。 請改為在[!DNL Analytics Launch]擴充功能中啟用資料共用，如下圖所示。 另請參閱[Adobe Analytics擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)檔案。
+[!DNL Adobe] 建議您使用 [](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) Launch擴充功能，對 [!DNL Adobe Analytics] 您的 [!DNL Audience Manager] 屬性進行測試和。在此情況下，您不需要手動複製任何代碼。 請改為在[!DNL Analytics Launch]擴充功能中啟用資料共用，如下圖所示。 另請參閱[Adobe Analytics擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)檔案。
 
 >[!TIP]
 >
