@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 為何我的特徵或區段沒有顯示在「重疊報表」頁面上？
 feature: 支援
 exl-id: 8341ee38-fc46-4a4b-9c9e-4ce2edb9a2fb
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
@@ -28,4 +28,4 @@ ht-degree: 100%
 * 針對特徵：14 天期間 28000 名
 * 針對區段：14 天期間 70000 名即時使用者
 
-如需相關詳細資訊，請參閱[所選 Audience Manager 報表中的資料取樣和錯誤率](..//reporting/report-sampling.md)頁面。
+如需相關詳細資訊，請參閱[所選 Audience Manager 報表中的資料取樣和錯誤率](../reporting/report-sampling.md)頁面。
