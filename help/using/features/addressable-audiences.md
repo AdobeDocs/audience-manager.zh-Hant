@@ -8,7 +8,7 @@ title: 可定址受眾
 uuid: 3eb1335a-6949-452b-b77a-697c22856cb3
 feature: 符合率
 exl-id: 2728e4a8-522c-423f-a6ef-e4dd624f69e5
-source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 1%
@@ -47,7 +47,7 @@ ht-degree: 1%
 您可以在[!UICONTROL Addressable Audiences]登陸頁面上看到的三個量度代表：
 
 | 量度 | 說明 |
----------|----------|
+|---------|----------|
 | **[!UICONTROL Addressable Audience (Device)]** | 此量度代表過去30天的[!UICONTROL Customer Addressable Audience]（如上表所述）*。* |
 | **[!UICONTROL Match Rate]** | 此量度代表過去30天&#x200B;*的[!UICONTROL Addressable Audience Match Rate]（如上表所述）*。 |
 | **[!UICONTROL Lifetime Addressable Audience (Device)]** | 在報表回顧期間與平台層級的所有[!DNL Audience Manager]客戶互動且可能與此[!UICONTROL destination]相符的所有裝置計數。 如需詳細資訊，請參閱[平台層級量度](/help/using/features/addressable-audiences.md#platform-level-metrics)。 |
