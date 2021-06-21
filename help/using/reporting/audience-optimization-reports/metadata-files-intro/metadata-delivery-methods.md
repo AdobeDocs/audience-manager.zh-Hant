@@ -7,7 +7,7 @@ title: 中繼資料檔案的傳送方法
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
 feature: 記錄檔
 exl-id: 6ef2a80c-2574-4446-b755-28027818b5eb
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 4%
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 
 | 檔案參數 | 說明 |
----------|----------|
+|---------|----------|
 | `.../log_ingestion/` | 這是目錄儲存路徑的開始。 設定完畢後，您會收到完整路徑。 |
 | `pid=<AAM ID>` | 此機碼值組包含您的Audience Manager客戶ID。 |
 | `dpid=<d_src>` | 此機碼值組包含在事件呼叫中傳入的資料來源ID。 資料來源ID是將檔案中的所有內容與其所屬的實際資料系結的值。 </br> 例如，假設您的創意內容ID為123，名稱為「廣告商創意A」。 由於事件呼叫只會傳入ID，因此您必須在中繼資料檔案中加入「廣告商創意A」。促銷活動和創意屬於資料來源。 資料來源ID是將這些連結在一起的原因，可讓我們將檔案內容準確關聯至在事件呼叫時傳入的ID。 請參閱[事件呼叫ID如何決定檔案名稱、內容和傳送路徑](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names)。 |
