@@ -8,7 +8,7 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: 記錄檔
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 3%
@@ -176,7 +176,7 @@ Removed  {importance="high"} for ExL
 
 
 | 記錄檔中的標題名稱 | 訊號 | 說明 |
----------|----------|---------
+|---------|----------|---------|
 | `LineItemId` | `d_lineitem` | 傳遞的廣告管理員條列項目的數值ID |
 | `OrderId` | `d_orderid` | 包含已傳送條列項目和創意素材的廣告管理員訂單數值ID。 |
 | `CreativeId` | `d_creative` | 傳遞的廣告管理員創意內容數值ID。 |
