@@ -7,7 +7,7 @@ title: 區段產生器的特徵和區段母體資料
 uuid: e1e59c0a-b4c7-4cad-8485-3667e0a95e83
 feature: 區段
 exl-id: f8953d10-8a31-4c07-8d96-169c30a21de0
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 
 | 量度 | 說明 |
----------|----------|
+|---------|----------|
 | [!UICONTROL Total Trait Population] | 設定檔中含有選取特徵的不重複ID數量。 |
 
 
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 
 | 欄A | 欄B |
----------|----------|
+|---------|----------|
 | [!UICONTROL Real-Time Population (Existing) ] | 具有目前設定檔的即時實際裝置數量，當與由裝置圖表連結的最多100個其他裝置設定檔合併時，這些設定檔會包含在Audience Manager看到區段時符合區段資格的特徵。 |
 | [!UICONTROL Total Population (Existing)] | 具有設定檔的裝置總數，在與由裝置圖表連線的最多100個其他裝置設定檔合併時，皆符合區段資格。 |
 
