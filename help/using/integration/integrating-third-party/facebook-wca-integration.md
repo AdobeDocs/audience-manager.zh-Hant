@@ -6,7 +6,7 @@ solution: Audience Manager
 title: Facebook WCA 整合
 feature: 協力廠商整合
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 5%
@@ -68,7 +68,7 @@ ht-degree: 5%
 `https://www.facebook.com/tr/?id=6876666666662303&ev=Adobe-Audience-Manager-Segment&cd[segID]=3401321,2993399,3263410&noscript=1`
 
 | 參數 | 說明 |
----------|----------|
+|---------|----------|
 | `id` | 您的[!DNL Facebook]像素ID，在建立對象像素時，您可在[!DNL Facebook Ad Manager]使用者介面中找到。 |
 | `ev` | Event.     這是任意值，一旦像素開始在網站上引發，就會顯示在[!DNL Facebook Ad Manager]使用者介面中。 如需詳細資訊，請參閱[步驟3](/help/using/integration/integrating-third-party/facebook-wca-integration.md#step-3-create-audience)中的[!UICONTROL Include]項目。 |
 | `cd[segID]` | 一個額外參數，像素開始在網站上引發後，就會開始填入[!DNL Facebook Ad Manager]使用者介面中。 `segID` 也是武斷的。 |
@@ -91,7 +91,7 @@ ht-degree: 5%
 請參閱[!DNL Facebook]說明檔案中的[建立網站自訂對象](https://www.facebook.com/business/help/666509013483225) 。 選取下表中的[!UICONTROL Create Audience]選項：
 
 | 項目 | 說明 |
----------|----------|
+|---------|----------|
 | 網站流量 | 自訂組合 |
 | 包含 | <ul><li>選擇&#x200B;**[!UICONTROL Event]** >選擇&#x200B;**[!UICONTROL Adobe-Audience-Manager-Segment]**。 這是步驟1範例像素中`ev`參數的值。 請注意，如果像素尚未引發，**[!UICONTROL Event]**&#x200B;選項或&#x200B;**[!UICONTROL Adobe-Audience-Manager-Segment]**&#x200B;可能不會出現在[!DNL Facebook]使用者介面中。</li><li>新增參數：選擇`segID`。</li><li><p>選擇&#x200B;**contains**&#x200B;運算子。</p><p>考慮到訪客可能符合多個區段的資格，像素參數中可能有多個[!UICONTROL segment IDs]，這點很重要。 使用等於(`=`)運算子可能無法讓訪客符合對象的資格，而您將會看到較低的量。</p></li><li>新增值：輸入[!DNL Audience Manager]區段ID。</li></ul> |
 | 新增條件 | 可選設定。 |
@@ -104,7 +104,7 @@ ht-degree: 5%
 
 ## 摘要 {#summary}
 
-現在您已將[!DNL Audience Manager]區段指派給[!DNL Facebook WCA]目的地，[!DNL Audience Manager]會選擇性地將[!DNL Facebook WCA]像素觸發給指定區段的使用者，並在像素中使用各自的區段ID填入[!DNL Facebook Audience]。 這會導致[!DNL Facebook Audience]逐漸增加，導致對您網站上的適用對象觸發的標籤越多。
+現在您已將[!DNL Audience Manager]區段指派給[!DNL Facebook WCA]目的地，[!DNL Audience Manager]會選擇性地將[!DNL Facebook WCA]像素觸發給指定區段的使用者，並在像素中使用各自的區段ID填入[!DNL Facebook Audience]。 這會導致[!DNL Facebook Audience]逐漸增加，導致對您網站上適用的對象觸發的標籤越多。
 
 >[!NOTE]
 >
