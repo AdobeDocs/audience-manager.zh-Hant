@@ -8,7 +8,7 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP位址；STFP IP地址；FTP位址
 feature: 管理
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: 24284321570ee5eb9632801a4a333a11b532e386
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 80%
@@ -51,7 +51,7 @@ ht-degree: 80%
 以下的SFTP伺服器已淘汰。 不會使用這些伺服器布建任何新帳戶。
 
 | 伺服器 | IP 位址 |
----------|----------|
+|---------|----------|
 | ftp-in.demdex.com | 54.225.117.163 |
 | ftp-out.demdex.com | 23.23.188.76 |
 
