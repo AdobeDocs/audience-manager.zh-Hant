@@ -7,7 +7,7 @@ title: Audience Manager 與 Adobe Experience Platform 之間的受眾共用
 keywords: AEP受眾共用， AEP區段，平台區段，區段共用，受眾共用，共用區段
 feature: 平台整合
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 6900b56b4e0258ed0c4ddf94ef7b1f2c7e48a50d
+source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
 source-wordcount: '1480'
 ht-degree: 2%
@@ -42,7 +42,7 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 請參閱下表，概略了解受眾共用使用案例：
 
 | **使用個案** | **Adobe Experience Platform** | **Audience Manager** | **核心服務** |
----------|----------|---------|---------|
+|---------|----------|---------|---------|
 | **受眾共用** | <ul><li>使用Audience Manager資料豐富客戶設定檔</li><li>在Audience Manager細分中使用Experience Platform資料</li></ul> | <ul><li>新增第三方資料至區段</li><li>演算法建模</li><li>啟動至其他目的地</li></ul> | 在Adobe Target、Advertising Cloud或Marketo等其他Experience Cloud解決方案中使用Experience Platform區段。 |
 
 {style=&quot;table-layout:auto&quot;}
@@ -83,7 +83,7 @@ Audience Manager會在您的特徵儲存區中自動建立名為&#x200B;**Experi
 
 
 | 物料編號 | 名稱 | 說明 |
----------|----------|---------|
+|---------|----------|---------|
 | 1 | [!UICONTROL Trait Type] | 從Experience Platform區段建立的特徵會在Audience Manager中建立為已上線的特徵。 |
 | 2 | [!UICONTROL Data Source] | 自動建立。 所有從Experience Platform區段自動建立的特徵和區段都會儲存在資料來源&#x200B;**[!UICONTROL Adobe Experience Platform Audience Sharing]**&#x200B;中。 |
 | 3 | [!UICONTROL Integration Code] | 整合代碼對應至Experience Platform中的區段ID。 |
@@ -103,10 +103,10 @@ Audience Manager會在區段儲存中自動建立名為&#x200B;**Experience Plat
 ![區段的螢幕擷圖](/help/using/integration/integration-aep/assets/aep-segment.png)
 
 | 物料編號 | 名稱 | 說明 |
----------|----------|---------|
-| 3 | [!UICONTROL Integration Code] | 整合代碼對應至Experience Platform中的區段ID。 |
+|---------|----------|---------|
+| 1 | [!UICONTROL Integration Code] | 整合代碼對應至Experience Platform中的區段ID。 |
 | 2 | [!UICONTROL Data Source] | 自動建立。 所有從Experience Platform區段自動建立的特徵和區段都會儲存在資料來源&#x200B;**[!DNL Adobe Experience Platform Audience Sharing]**&#x200B;中。 |
-| 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指示自動建立的段遵循在Experience Platform中設定的合併策略。 |
+| 1 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指示自動建立的段遵循在Experience Platform中設定的合併策略。 |
 | 4 | [!UICONTROL Segment Rule] | 區段包含[特徵區段](#aep-segments-as-aam-traits)中所述的特徵。 |
 
 {style=&quot;table-layout:auto&quot;}
