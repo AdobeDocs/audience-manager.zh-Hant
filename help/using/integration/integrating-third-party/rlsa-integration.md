@@ -7,14 +7,14 @@ title: 將區段傳送至 Google AdWords 再行銷清單
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
 feature: 協力廠商整合
 exl-id: 76676eae-de4f-4fee-8774-ee215525306a
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 760d6a56754530368ac11a5c9f10c4be487de028
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '336'
 ht-degree: 5%
 
 ---
 
-# 將區段傳送至Google Ads再行銷清單{#send-segments-to-a-google-adwords-remarketing-list}
+# 將區段傳送至Google Ads再行銷清單 {#send-segments-to-a-google-adwords-remarketing-list}
 
 此過程需要[!DNL Google Ads]再行銷清單、像素代碼和Audience Manager[!DNL URL] [!DNL destination]。 這也稱為搜尋廣告([!DNL RLSA])整合的再行銷清單。 僅適用於付費搜尋。
 
@@ -33,7 +33,7 @@ ht-degree: 5%
 1. 在Audience Manager中，[建立 [!DNL URL destination]](../../features/destinations/create-url-destination.md)或編輯現有的[!DNL destination]。 建立[!DNL destination]時，請使用下列設定：
    * 類型：URL
    * 序列化：已啟用
-   * 分隔字元：分號(;)
+   * 分隔字元：分號(&amp;semi;))
 
 1. 在[!DNL URL] [!DNL destination]的[!UICONTROL Segment Mappings]區段中，將步驟2的程式碼新增至[!DNL URL]和[!DNL Secure URL]欄位。 在[!DNL URL]和[!DNL Secure URL]欄位中分別為`http:`和`https:`加上前置詞。
 
