@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 特徵建議
 feature: 區段
 exl-id: 7ef862a9-7354-49fb-9af0-925d827a5165
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 432b12c4d4fb567d1a0bcaa9d12baaac5e3ae0f7
 workflow-type: tm+mt
 source-wordcount: '1574'
 ht-degree: 8%
@@ -142,7 +142,7 @@ Audience Manager會同時顯示第一方特徵、**[!UICONTROL Recommendations]*
 
 若要產生特徵建議，Audience Manager會計算目標特徵與您的帳戶可存取的每個其他特徵（包括第三方資料）之間的[Jaccard相似度](https://en.wikipedia.org/wiki/Jaccard_index)。 Audience Manager接著會顯示最多50個相似度最高的特徵。
 
-## 特徵相似度分數{#trait-similarity-score}
+## 特徵相似度分數 {#trait-similarity-score}
 
 Audience Manager根據[!UICONTROL UUID]s的數量計算交集和聯合，然後將兩個特徵進行分割，以計算兩個特徵之間的[!UICONTROL Trait Similarity Score]。 針對兩個特徵A和B，計算方式如下：
 
@@ -169,7 +169,7 @@ Audience Manager根據[!UICONTROL UUID]s的數量計算交集和聯合，然後�
 使用下表作為特徵相似度的粗略指南。 本指南以大部分特徵觀察到的相似度分數為基礎。
 
 | [!UICONTROL Trait Similarity Score] | 顯著性 |
----------|----------|
+|---------|----------|
 | 0.1及以上版本 | 特徵之間的高度相似性 |
 | 0.03 - 0.1 | 特徵之間的中等相似度 |
 | 0.01 - 0.03 | 特徵之間的低相似度 |
