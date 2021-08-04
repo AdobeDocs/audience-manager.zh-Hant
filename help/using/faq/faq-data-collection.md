@@ -8,9 +8,9 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP位址；STFP IP地址；FTP位址
 feature: 管理
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
+source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 80%
 
 ---
@@ -190,7 +190,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 報表是根據報表產生時在後端看到的未驗證設定檔記錄 (UUID) 來計算母體。
 
-對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](hhttps://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
+對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-am.translate.html))。[!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
 
 >[!NOTE]
 >
