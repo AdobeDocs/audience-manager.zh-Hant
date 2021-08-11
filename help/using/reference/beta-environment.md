@@ -8,9 +8,9 @@ title: 測試版環境
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
 feature: 參考
 exl-id: a6a5e1c2-29a2-40bf-972c-87fb8716a394
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 6eefe6ac6db011e99a02cfc38abfe773a8f62e0d
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '348'
 ht-degree: 4%
 
 ---
@@ -21,25 +21,21 @@ ht-degree: 4%
 
 ## 概述
 
-測試版環境是生產環境的精確副本，沒有任何實驗性或未發行的功能。 您來自生產環境的登入認證在測試版環境中有效。
+測試版環境中的功能是生產環境的精確副本，沒有任何實驗性或未發行的功能。 您來自生產環境的登入認證在測試版環境中有效。
 
 **更新計畫**
 
 測試版環境會在每月底的非尖峰時段更新。
 
+>[!IMPORTANT]
+>
+>請注意，您的客戶資料（[訊號、特徵和區段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)）沒有在生產環境和測試環境之間同步。
+
 **傳出流量**
 
 測試版環境未啟用傳出流量。
 
-<!-- 
-
-Added re: AAM-30826.
-
- -->
-
 ## 端點
-
-
 
 | 服務 | URL/主機名稱 | 如何取得存取權 |
 |--- |--- | --- |
@@ -48,7 +44,7 @@ Added re: AAM-30826.
 | UI | `https://bank-beta.demdex.com` | 您的生產環境認證對測試版環境有效。 |
 | API | `https://api-beta.demdex.com/...` | 您的生產環境認證對測試版環境有效。 建議您建立一般API使用者[，請參閱詳細資料](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |
 
-## 存取測試版環境{#access-dcs-beta-environment}中的DCS
+## 存取測試版環境中的DCS {#access-dcs-beta-environment}
 
 1. 使用curl [command](https://curl.haxx.se/docs/manpage.html)進行DCS呼叫。 curl是使用許多支援通訊協定之一，從伺服器傳輸資料或傳送至伺服器的工具。
 
