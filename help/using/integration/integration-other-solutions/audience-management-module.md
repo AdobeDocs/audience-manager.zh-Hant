@@ -8,10 +8,10 @@ title: 實作對象管理模組
 uuid: 08846427-def3-4a15-88e5-08882d8d57ce
 feature: Adobe Analytics 整合功能
 exl-id: af2449cd-5fc8-454a-adce-0da7cae80548
-source-git-commit: 8fc6c96bf9e8216ef4458989c87f1f93ea9f0347
+source-git-commit: 8c96c2f987ab0f235bdfb8ba5eb4a7d55fa57d0b
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 4%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 4%
 
 除了啟用擴充功能或實作本檔案所述的程式碼外，您還必須：
 
-* 實作[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html)。
-* 為[!UICONTROL Adobe Analytics Admin Console]中的報表套裝啟用[伺服器端轉送](https://docs.adobe.com/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
+* 實作[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+* 為[!UICONTROL Adobe Analytics Admin Console]中的報表套裝啟用[伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 ## 實施 {#implementation}
 
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 ### 使用[!DNL Adobe Experience Platform Launch]實作
 
-[!DNL Adobe] 建議您使用 [](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) Launch擴充功能，對 [!DNL Adobe Analytics] 您的 [!DNL Audience Manager] 屬性進行測試和。在此情況下，您不需要手動複製任何代碼。 請改為在[!DNL Analytics Launch]擴充功能中啟用資料共用，如下圖所示。 另請參閱[Adobe Analytics擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)檔案。
+[!DNL Adobe] 建議您使用 [](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en) Launch擴充功能，對 [!DNL Adobe Analytics] 您的 [!DNL Audience Manager] 屬性進行測試和。在此情況下，您不需要手動複製任何代碼。 請改為在[!DNL Analytics Launch]擴充功能中啟用資料共用，如下圖所示。 另請參閱[Adobe Analytics擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#adobe-audience-manager)檔案。
 
 >[!TIP]
 >
@@ -44,7 +44,7 @@ ht-degree: 4%
 
 ![如何從Adobe Analytics擴充功能將資料共用至Audience Manager](/help/using/integration/assets/analytics-to-aam.png)
 
-## 定義的代碼元素{#code-elements-defined}
+## 定義的程式碼元素 {#code-elements-defined}
 
 下表定義程式碼範例中的重要變數。
 
@@ -53,9 +53,9 @@ ht-degree: 4%
 | `partner` | 必填。這是[!DNL Adobe]指派給您的合作夥伴名稱。 有時稱為您的[!UICONTROL partner ID]或合作夥伴子網域。  如果您不知道您的合作夥伴名稱，請聯絡您的[!DNL Adobe]顧問或[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。 |
 | `containerNSID` | 必填。大部分的客戶只能設定`"containerNSID":0` 。 不過，如果您的公司需要自訂ID與不同容器同步，您可以在此處指定該容器ID。 |
 | `uuidCookie` | 選填。此設定可讓您在第一方網域中設定[!DNL Adobe] Cookie。 此[!DNL cookie]包含[UUID](../../reference/ids-in-aam.md) 。 |
-| `visitorService` - `namespace` | 必填。如果您使用與[!UICONTROL AppMeasurement]版本2.10或更新版本捆綁的[!DNL AudienceManagement]模組，則需要`namespace`參數。 此[!UICONTROL AudienceManagement]模組要求您使用[!UICONTROL Adobe Experience Platform Identity Service] 3.3或更新版本。 <br><br>是 [!UICONTROL Experience Cloud Organization ID] 公司在註冊時獲得的ID  [!UICONTROL Experience Cloud]。在[組織和帳戶連結](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)中查找您公司的組織ID。 |
+| `visitorService` - `namespace` | 必填。如果您使用與[!UICONTROL AppMeasurement]版本2.10或更新版本捆綁的[!DNL AudienceManagement]模組，則需要`namespace`參數。 此[!UICONTROL AudienceManagement]模組要求您使用[!UICONTROL Adobe Experience Platform Identity Service] 3.3或更新版本。 <br><br>是 [!UICONTROL Experience Cloud Organization ID] 公司在註冊時獲得的ID  [!UICONTROL Experience Cloud]。在[組織和帳戶連結](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)中查找您公司的組織ID。 |
 
-## 結果：資料轉送至[!DNL Audience Manager] {#results-data-forwarding}
+## 結果：資料轉發到[!DNL Audience Manager] {#results-data-forwarding}
 
 您的[!DNL Analytics]實作會在您具備下列條件後，將資料傳送至[!DNL Audience Manager]:
 
