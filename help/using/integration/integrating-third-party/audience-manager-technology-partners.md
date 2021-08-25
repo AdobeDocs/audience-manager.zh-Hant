@@ -1,15 +1,15 @@
 ---
 description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe交換清單（如有），或聯絡您的Adobe顧問或客戶服務。
-seo-description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe交換清單（如有），或聯絡您的Adobe顧問或客戶服務。
-seo-title: Adobe Audience Manager技術合作夥伴
+seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
+seo-title: Adobe Audience Manager Technology Partners
 keywords: 激活；啟用合作夥伴，目的地，目的地
 solution: Audience Manager
 title: Adobe Audience Manager技術合作夥伴
-feature: 協力廠商整合
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+feature: Third-party Integration
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 59%
+source-wordcount: '1149'
+ht-degree: 61%
 
 ---
 
@@ -157,7 +157,7 @@ ht-degree: 59%
 | TubeMogul | 03/03/2017 | 有 | 否 | 有 | 否 |
 | 轉/阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
 | 特溫加 | 29/10/2018 | 有 | 否 | 否 | 否 |
-| Twitter Tailored Audiences | 27/02/2017 | 有 | 否 | 有 | 否 |
+| Twitter自訂對象 | 27/02/2017 | 有 | 否 | 有 | 否 |
 | 底色 | 11/07/2017 | 否 | 否 | 否 | 否 |
 | 韋爾韋 | 15/06/2017 | 有 | 否 | 否 | 是 |
 | VideoAmp | 03/03/2017 | 否 | 否 | 否 | 否 |
