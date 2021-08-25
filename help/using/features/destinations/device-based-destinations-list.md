@@ -1,16 +1,16 @@
 ---
 description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe交換清單（如有），或聯絡您的Adobe顧問或客戶服務。
-seo-description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe交換清單（如有），或聯絡您的Adobe顧問或客戶服務。
-seo-title: Adobe Audience Manager伺服器對伺服器目的地
+seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
+seo-title: Adobe Audience Manager Server-to-Server Destinations
 keywords: 激活；啟用合作夥伴，目的地，目的地
 solution: Audience Manager
 title: Adobe Audience Manager伺服器對伺服器目的地
-feature: 目的地基本知識
+feature: Destination Basics
 exl-id: 7db3bc02-ece4-4524-a401-d2c8c6de510a
-source-git-commit: 78d3bbc03936130f9c9da8ee5eed33e6ef9a07b9
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 72%
+source-wordcount: '1112'
+ht-degree: 74%
 
 ---
 
@@ -162,7 +162,7 @@ ht-degree: 72%
 | [!DNL TubeMogul] | 03/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL Turn] /  [!DNL Amobee] | 03/03/2027 | 即時 | 否 | 否 | 否 | 是 |
 | [!DNL Twenga] | 29/10/2018 | 即時 | 有 | 否 | 否 | 否 |
-| [!DNL Twitter Tailored Audiences] | 27/02/2017 | 即時 | 有 | 否 | 有 | 否 |
+| [!DNL Twitter Custom Audiences] | 27/02/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL Undertone] | 11/07/2017 | 1天 | 否 | 否 | 否 | 否 |
 | [!DNL Verve] | 15/06/2017 | 1天 | 有 | 否 | 否 | 是 |
 | [!DNL VideoAmp] | 03/03/2017 | 即時 | 否 | 否 | 否 | 否 |
