@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: 了解Audience Manager如何讓您收集網站訪客的商業相關資訊、建立可行銷區段，以及將目標廣告和內容提供給適當的對象。
 feature-set: Audience Manager
-source-git-commit: cf9368d4690b61066646054543cc60d390eea021
+source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1805'
 ht-degree: 90%
 
 ---
@@ -112,7 +112,7 @@ ht-degree: 90%
          + [新增以裝置為基礎的目的地](features/destinations/add-device-based-destinations.md)
          + [Audience Manager 以裝置為基礎的目的地清單](/help/using/features/destinations/device-based-destinations-list.md)
          + [新增或編輯伺服器對伺服器目的地的區段](features/destinations/add-edit-segments.md)
-         + [將為 Twitter 量身打造的受眾設定為自助服務以裝置為基礎的目的地](features/destinations/twitter-tailored-audiences.md)
+         + [將Twitter自訂對象設定為自助服務以裝置為基礎的目的地](features/destinations/twitter-tailored-audiences.md)
       + 自訂目的地 {#custom-destinations}
          + [設定 URL 目的地](features/destinations/create-url-destination.md)
          + [設定 Cookie 目的地](features/destinations/create-cookie-destination.md)
@@ -342,8 +342,8 @@ ht-degree: 90%
    + 與其他 Experience Cloud 解決方案的整合 {#integration-other-solutions}
       + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從 Adobe Analytics 轉送至 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [將Adobe Analytics區段發佈至Experience Cloud(開啟Adobe Analytics檔案)](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/audiences/t-publish-audience-segment.translate.html)
-      + [將Audience Manager與Adobe Campaign整合(開啟Adobe Campaign檔案)](https://docs.adobe.com/content/help/en/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
+      + [將Adobe Analytics區段發佈至Experience Cloud(開啟Adobe Analytics檔案)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [將Audience Manager與Adobe Campaign整合(開啟Adobe Campaign檔案)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
    + [Amazon S3：關於](reference/amazon-s3.md)
