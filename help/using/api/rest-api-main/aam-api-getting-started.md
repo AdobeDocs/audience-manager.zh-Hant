@@ -1,26 +1,26 @@
 ---
 description: 有關一般需求、驗證、選用查詢參數、請求 URL 和其他參考的資訊。
-seo-description: 有關一般需求、驗證、選用查詢參數、請求 URL 和其他參考的資訊。
-seo-title: REST API 快速入門
+seo-description: Information about general requirements, authentication, optional query parameters, request URLs, and other references.
+seo-title: Getting Started with REST APIs
 solution: Audience Manager
 title: REST API 快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 95182160b37bb15df4867bbacd06d8d75c971fa3
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 4%
+source-wordcount: '1942'
+ht-degree: 3%
 
 ---
 
-# [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}快速入門
+# [!DNL REST] [!DNL APIs]快速入門 {#getting-started-with-rest-apis}
 
 有關一般需求、驗證、選用查詢參數、要求[!DNL URLs]和其他參考的資訊。
 
 <!-- c_rest_api_overview.xml -->
 
-## API 需求與建議{#api-requirements-recommendations}
+## API 需求與建議 {#api-requirements-recommendations}
 
 使用[!DNL Audience Manager] [!DNL API]s時，您必須且應該執行的操作。
 
@@ -71,6 +71,18 @@ ht-degree: 4%
 >
 >要以自動方式配置和使用[!DNL Audience Manager] [!DNL REST APIs]，可以以程式設計方式生成[!DNL JWT]。 有關詳細說明，請參閱[JWT（服務帳戶）Authentication](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
 
+### 技術帳戶RBAC權限
+
+如果您的Audience Manager帳戶使用[角色型存取控制](../../features/administration/administration-overview.md)，您必須建立Audience Manager技術使用者帳戶，並將其新增至將進行API呼叫的Audience ManagerRBAC群組。
+
+請依照下列步驟建立技術使用者帳戶，並將其新增至RBAC群組：
+
+1. 對`https://aam.adobe.io/v1/users/self`發出`GET`呼叫。 此呼叫將建立技術使用者帳戶，您可在[!UICONTROL Users]頁面的[!UICONTROL Admin Console]中查看。
+
+   ![技術帳戶](assets/technical-account.png)
+
+1. 登入您的Audience Manager帳戶，並將技術使用者帳戶](../../features/administration/administration-overview.md#create-group)新增至將進行API呼叫的使用者群組。[
+
 ## [!DNL OAuth] 驗證（已廢止） {#oauth}
 
 >[!WARNING]
@@ -91,7 +103,7 @@ ht-degree: 4%
 
 與您的[!DNL Audience Manager]顧問合作，設定僅限[!DNL API]的一般使用者帳戶。
 
-### 密碼驗證工作流{#password-authentication-workflow}
+### 密碼驗證工作流程 {#password-authentication-workflow}
 
 密碼身份驗證安全訪問我們的[!DNL REST API]。 以下步驟概述瀏覽器中[!DNL JSON]用戶端的密碼驗證工作流程。
 
@@ -166,11 +178,11 @@ ht-degree: 4%
 }
 ```
 
-### 授權碼和隱式驗證{#authentication-code-implicit}
+### 授權碼與隱式驗證 {#authentication-code-implicit}
 
 [!DNL Audience Manager] [!UICONTROL REST API]支援授權碼和隱式驗證。 若要使用這些存取方法，您的使用者必須登入`https://api.demdex.com/oauth/authorize`才能取得存取權並重新整理權杖。
 
-## 發出已驗證的[!DNL API]請求{#authenticated-api-requests}
+## 發出已驗證的[!DNL API]請求 {#authenticated-api-requests}
 
 在收到驗證Token後呼叫[!DNL API]方法的需求。
 
@@ -180,7 +192,7 @@ ht-degree: 4%
 * 使用[JWT（服務帳戶）Authentication](#jwt)時，您需要提供`x-api-key`標題，該標題與`client_id`相同。 您可以從[Adobe I/O整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)頁面取得`client_id`。
 * 呼叫所需的[!DNL API]方法。
 
-## 可選[!DNL API]查詢參數{#optional-api-query-parameters}
+## 可選[!DNL API]查詢參數 {#optional-api-query-parameters}
 
 設定可用於方法的可選參數，這些方法返回對象的所有屬性。
 
@@ -215,7 +227,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 根據您使用的驗證方法，您需要根據下表調整請求[!DNL URLs]。
 
-### [!DNL JWT]驗證{#request-urls-jwt}的請求[!DNL URLs]
+### [!DNL JWT]驗證的[!DNL URLs]請求 {#request-urls-jwt}
 
 | [!DNL API] 方法 | 請求 [!DNL URL] |
 |--- |--- |
@@ -231,7 +243,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### [!DNL OAuth]驗證的請求[!DNL URLs]（已廢止）{#request-urls-oauth}
+### [!DNL OAuth]驗證的請求[!DNL URLs]（已廢止） {#request-urls-oauth}
 
 | [!DNL API] 方法 | 請求 [!DNL URL] |
 |--- |--- |
@@ -268,7 +280,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 `https://<host>/v1/...`
 
-## 定義的響應代碼{#response-codes-defined}
+## 已定義的回應代碼 {#response-codes-defined}
 
 `HTTP` 狀態代碼和由傳回的回應文 [!DNL Audience Manager] [!UICONTROL REST API]字。
 
@@ -287,6 +299,6 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 >
 >* [JWT（服務帳戶）驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 >* [OAuth驗證](../../api/rest-api-main/aam-api-getting-started.md#oauth)
-* [OAuth 2.0](https://oauth.net/2/)
-* [OAuth 2簡化](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
+>* [OAuth 2.0](https://oauth.net/2/)
+>* [OAuth 2簡化](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
 
