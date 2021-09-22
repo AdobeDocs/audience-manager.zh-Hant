@@ -1,15 +1,15 @@
 ---
 description: '註冊以人物為基礎的目的地前，您需要符合的客戶需求概觀，請參閱下文。  '
-seo-description: '註冊以人物為基礎的目的地前，您需要符合的客戶需求概觀，請參閱下文。  '
-seo-title: 以人物為基礎的目的地必要條件和考量事項
+seo-description: Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.
+seo-title: People-Based Destinations Prerequisites and Considerations
 solution: Audience Manager
 title: 必要條件和考量事項
-feature: 以人物為基礎的目的地
+feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: bb0bc62b139917bbf6429bc92a85f8a5010cbebe
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 3%
+source-wordcount: '964'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 請連絡您的Adobe代表，以利用此進階功能。
 
-## 特定於合作夥伴的先決條件{#partner-prerequisites}
+## 特定於合作夥伴的先決條件 {#partner-prerequisites}
 
 ### [!DNL Facebook] {#facebook}
 
@@ -47,15 +47,13 @@ ht-degree: 3%
 
 若要了解如何編輯您的[!DNL LinkedIn Campaign Manager]使用者權限，請參閱LinkedIn檔案中的[新增、編輯及移除Advertising帳戶的使用者權限](https://www.linkedin.com/help/lms/answer/5753)。
 
-如需視訊指示，請參閱[了解和設定LinkedIn以人物為基礎的目的地](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
+如需視訊指示，請參閱[了解和設定LinkedIn以人物為基礎的目的地](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 。
 
 ### [!DNL Google Customer Match] {#gcm}
 
-使用[!UICONTROL People-Based Destinations]將第一方對象區段傳送至[!DNL Google Customer Match]目的地之前，請務必將您新增至允許清單。[!DNL Google]
+使用[!UICONTROL People-Based Destinations]將第一方受眾區段傳送至[!DNL Google Customer Match]目的地之前，請確定您的[!DNL Google Ads]帳戶符合[Google客戶比對政策](https://support.google.com/google-ads/answer/6299717/customer-match-policy)。
 
-請連絡您的[!DNL Google]代表，並依照[使用客戶比對合作夥伴中所述的允許清單指示，上傳您的資料](https://support.google.com/google-ads/answer/7361372?hl=en&amp;ref_topic=6296507) [!DNL Google]檔案。
-
-完成此過程後，可以建立[!UICONTROL People-Based Destination]。
+Google會自動允許帳戶符合規範的客戶列出。
 
 ## 資料上線 {#data-onboarding}
 
@@ -63,17 +61,17 @@ ht-degree: 3%
 
 上傳多個雜湊電子郵件地址，連結至多個批次傳輸中的一個客戶ID，使Audience Manager保留最近新增的10個電子郵件地址。
 
-## 資料隱私權{#data-privacy}
+## 資料隱私權 {#data-privacy}
 
 雖然[!UICONTROL People-Based Destinations]可讓您根據上傳的雜湊電子郵件地址來鎖定對象，但您仍禁止將任何可直接識別的訪客資訊上傳至Audience Manager。 在資料上線階段中，您必須確定您打算使用的電子郵件地址已與[!DNL SHA256]演算法雜湊。 否則，您將無法在[!UICONTROL People-Based Destinations]中使用它們。
 
-## 資料哈希與加密{#data-hashing-encryption}
+## 資料雜湊和加密 {#data-hashing-encryption}
 
 加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 在Audience Manager環境中加密資料會帶來嚴重風險，因為任何加密形式的個人識別資訊也可以解密。 與加密相反，[!UICONTROL People-Based Destinations]旨在改用雜湊資料。
 
 雜湊是一種單向函式，可將輸入進行雜湊處理以產生唯一的結果。 使用適當的雜湊演算法（例如[!DNL SHA256]），便無法反轉雜湊函式並顯示未加擾的資訊。 您要上線至Audience Manager的電子郵件地址必須使用[!DNL SHA256]演算法雜湊。 如此，您即可確保沒有未雜湊的電子郵件地址可觸及Audience Manager。
 
-## 雜湊要求{#hashing-requirements}
+## 雜湊要求 {#hashing-requirements}
 
 對電子郵件地址進行雜湊處理時，請務必符合下列要求：
 
@@ -88,9 +86,9 @@ ht-degree: 3%
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud可讓您選擇透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID。 如需如何使用ECID來雜湊客戶ID的詳細資訊，請參閱setCustomerIDs的[SHA256雜湊支援](https://docs.adobe.com/content/help/en/id-service/using/reference/hashing-support.html) 。
+Adobe Experience Cloud可讓您選擇透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID。 如需如何使用ECID來雜湊客戶ID的詳細資訊，請參閱setCustomerIDs的[SHA256雜湊支援](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html) 。
 
-## 獲取用戶權限{#obtaining-user-permission}
+## 取得使用者權限 {#obtaining-user-permission}
 
 由於[!UICONTROL People-Based Destinations]可協助您在以人物為基礎的管道中啟用第一方受眾資料，因此您有責任向客戶通知並取得任何必要的同意，告知您將如何將其資料用於廣告或其他用途。
 
@@ -98,13 +96,13 @@ Adobe Experience Cloud可讓您選擇透過[!DNL Adobe Experience Platform Ident
 
 若您的客戶想要退出廣告促銷活動，請參閱[選擇退出管理](../../overview/data-security-and-privacy/data-privacy-requests.md)以取得如何停止Audience Manager進一步收集資料的詳細資訊。
 
-## 強制執行第一方資料激活{#enforcing-first-party-activation}
+## 強制執行第一方資料啟用 {#enforcing-first-party-activation}
 
 使用[!UICONTROL People-Based Destinations]時，您只能使用第一方資料，在以人物為基礎的管道中啟用對象區段。 您無法在以人物為基礎的管道中使用任何第二方或第三方資料來啟動受眾。
 
 使用[!UICONTROL People-Based Destinations]時，請使用[資料匯出控制項](../data-export-controls.md)，根據目標平台和資料提供者的准則和需求，標示您的[!UICONTROL data sources]和[!UICONTROL destinations]。
 
-## 透過宣告ID目標定位{#onboard-authenticated-declared-id}將已驗證的雜湊ID上線
+## 透過宣告ID定位，將已驗證的雜湊ID上線 {#onboard-authenticated-declared-id}
 
 有兩種方式可將離線資料帶入 Audience Manager 中以用於[!UICONTROL People-Based Destinations]。
 
