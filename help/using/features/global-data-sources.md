@@ -1,14 +1,14 @@
 ---
 description: 使用全域資料來源匯入裝置廣告ID。
-seo-description: 使用全域資料來源匯入裝置廣告ID。
-seo-title: 全域資料來源
+seo-description: Use Global Data Sources to import device advertising IDs.
+seo-title: Global Data Sources
 solution: Audience Manager
 title: 全域資料來源
-feature: 資料來源
+feature: Data Sources
 exl-id: ef137f89-1e1a-4cc0-8864-8a84162581c1
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 77daa5bd6545914f65e3e0f19b12c750535244e8
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
@@ -29,6 +29,8 @@ ht-degree: 6%
 | 389146 | **[!DNL Microsoft Advertising ID]** - ID **[!DNL MAID]** 代表執行作業系統的 [!DNL Windows 10] 裝置。 |
 | 963906 | **[!DNL Samsung Tizen IDs for Advertising]** -  **[!DNL TIFA]** ID代表 [!DNL Samsung] 智慧型電視。 |
 | 488258 | **[!DNL Amazon Fire TV Advertising IDs]** 代表裝置執行中  [!DNL Amazon Fire OS] |
+| 1171485 | **[!DNL LG webOS TV ID]**  — 表 **[!DNL LGUDID]** 示運行作業系統 [!DNL LG webOS] 的設備。 |
+| 1171489 | **[!DNL Vizio ID for Advertising]**  — 代 **[!DNL IFA]** 表運行Vizio智慧電視作業系統的設備。 |
 
 ## 從全域資料來源匯入資料
 
