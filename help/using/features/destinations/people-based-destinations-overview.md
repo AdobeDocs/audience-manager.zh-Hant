@@ -1,14 +1,14 @@
 ---
 description: '使用以人物為基礎的目的地，將第一方對象區段傳送至以人物為基礎的環境。 這些環境是屬於一個實體的封閉生態系統，可控制其中顯示的內容。 包括Facebook等社交平台，以及仰賴客戶帳戶來個人化顯示內容的其他平台。 '
-seo-description: '使用以人物為基礎的目的地，將第一方對象區段傳送至以人物為基礎的環境。 這些環境是屬於一個實體的封閉生態系統，可控制其中顯示的內容。 包括Facebook等社交平台，以及仰賴客戶帳戶來個人化顯示內容的其他平台。  '
-seo-title: 以人物為基礎的目的地概述和使用案例
+seo-description: Use people-based destinations to send first-party audience segments to people-based environments. These environments are closed ecosystems belonging to one entity that controls the content that is being displayed within it. They include social platforms such as Facebook, and other platforms that rely on customer accounts to personalize the displayed content.
+seo-title: People-Based Destinations Overview and Use Cases
 solution: Audience Manager
 title: 概述與使用案例
-feature: 以人物為基礎的目的地
+feature: People-based Destinations
 exl-id: 2edbda3b-e2a3-4a92-965b-206a21764cc8
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: ab3361a0a54a7200d2f0c03a82ae6ef61a755be9
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '863'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-[!DNL People-Based Destinations] 可讓您對線上和離線資料套用區段，以根據雜湊識別碼 [](people-based-destinations-prerequisites.md#hashing-requirements)（例如電子郵件地址或電話號碼）建立受眾區段。接著，您可以將這些區段傳送至「有圍牆的花園」，例如[!DNL Facebook]，以便在社交平台上鎖定您的對象。 [!DNL People-Based Destinations] 可協助您：
+[!DNL People-Based Destinations] 可讓您對線上和離線資料套用區段，以根據雜湊識別碼 [](people-based-destinations-prerequisites.md#hashing-requirements)（例如電子郵件地址）建立對象區段。接著，您可以將這些區段傳送至「有圍牆的花園」，例如[!DNL Facebook]，以便在社交平台上鎖定您的對象。 [!DNL People-Based Destinations] 可協助您：
 
 * 根據雜湊電子郵件地址，在平台（例如[!DNL Facebook]）中鎖定離線和線上對象；
 * 補充Audience Manager的現有裝置和Cookie鎖定功能；
