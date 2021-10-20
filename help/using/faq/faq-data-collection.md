@@ -1,17 +1,17 @@
 ---
 description: 資料收集和整合的常見疑問與問題。
-seo-description: 資料收集和整合的常見疑問與問題。
-seo-title: 資料收集和產品整合常見問題集
+seo-description: Common data collection and integration questions and issues.
+seo-title: Data Collection and Product Integration FAQ
 solution: Audience Manager
 title: 資料收集和產品整合常見問題集
 uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP;SFTP位址；STFP IP地址；FTP位址
-feature: 管理
+feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: b8c8f35376c5a8a85fa4eeace7b447385ee9f339
+source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 80%
+source-wordcount: '1198'
+ht-degree: 79%
 
 ---
 
@@ -59,13 +59,13 @@ ht-degree: 80%
 
 **如何設定我的Audience Manager例項以使用新的SFTP伺服器？**
 
-請連絡您的[!DNL Audience Manager]顧問或客戶服務，他們會設定您的新SFTP帳戶。
+請連絡您的 [!DNL Audience Manager] 顧問或客戶服務，他們將設定您的新SFTP帳戶。
 
  
 
 **新SFTP伺服器支援哪些驗證方法？**
 
-新的SFTP伺服器（`ftp-in-gtw`和`ftp-out-gtw`）支援[!DNL OpenSSH Key-Based Authentication]。 我們可以為您產生[!DNL SSH]金鑰，或者您可以提供您自己的公開金鑰。
+新的SFTP伺服器(`ftp-in-gtw` 和 `ftp-out-gtw`)支援 [!DNL OpenSSH Key-Based Authentication]. 我們可以 [!DNL SSH] 給你的鑰匙，或者你可以給我們你自己的公鑰。
 
  
 
@@ -83,7 +83,7 @@ ht-degree: 80%
 
 * 直接將 [!UICONTROL DIL] 放入 `s_code` 中。
 
-* 從[!UICONTROL DIL]到[!DNL Adobe Experience Platform Launch]提供`s_code`。
+* 提供 [!UICONTROL DIL] 和 `s_code` through [!DNL Adobe Experience Platform Tags].
 
 請參閱 [Data Integration Library (DIL) API](../dil/dil-overview.md)。
 
@@ -152,7 +152,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **[!DNL Google Ad Manager]我想要收集一個網站的資料，並透過不同網站的 定位使用者。如果我不想從那個位置收集資料，是否需要將程式碼部署在其他屬性上？**
 
-不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。只要您透過[!DNL Google Ad Manager]存取第二個網站的詳細目錄，就可以透過[!DNL Google Ad Manager]使用從初始網站和目標收集的資料。
+不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。只要您透過 [!DNL Google Ad Manager]，您可以透過 [!DNL Google Ad Manager].
 
 <br> 
 
@@ -162,9 +162,9 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 <br> 
 
-**如何設 [!DNL Audience Manager] 定Cookie並將變數傳遞至 [!DNL Google Ad Manager]?**
+**如何 [!DNL Audience Manager] 設定cookie並將變數傳遞至 [!DNL Google Ad Manager]?**
 
-[!DNL Audience Manager] 設定2個cookie:其中一個會將區段變數 [!DNL Google Ad Manager] 傳送至廣告標籤，另一個則會設定我們的不重複使用者ID(UUID)，供 [!DNL Google Ad Manager]讀取。將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
+[!DNL Audience Manager] 設定2個cookie:其中一個會將區段變數傳送至 [!DNL Google Ad Manager] 廣告標籤和其他廣告標籤會設定我們的不重複使用者ID(UUID)，供讀取 [!DNL Google Ad Manager]. 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
 
 <br> 
 
@@ -190,7 +190,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 報表是根據報表產生時在後端看到的未驗證設定檔記錄 (UUID) 來計算母體。
 
-對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-am.translate.html))。[!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
+對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
 
 >[!NOTE]
 >
@@ -210,6 +210,6 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 **非作用中的Amazon S3使用者存取金鑰有何變化？**
 
-Adobe為Audience Manager客戶提供Audience Manager[!DNL Amazon S3]貯體的使用者存取金鑰。 基於安全原因，閒置100天後，金鑰會自動停用。
+Adobe為Audience Manager客戶提供Audience Manager的使用者存取金鑰 [!DNL Amazon S3] 貯體。 基於安全原因，閒置100天後，金鑰會自動停用。
 
 若要重新啟用存取金鑰或要求新金鑰，請聯絡客戶支援。

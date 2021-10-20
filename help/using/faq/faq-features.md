@@ -1,17 +1,17 @@
 ---
 description: 產品與功能的相關常見疑問與問題。
 keywords: audience manager cookie
-seo-description: 產品與功能的相關常見疑問與問題。
-seo-title: 產品特色與功能常見問題集
+seo-description: Common product and function-related questions and issues.
+seo-title: Product Features and Functions FAQ
 solution: Audience Manager
 title: 產品特色與功能常見問題集
 uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
-feature: 概述
+feature: Overview
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
-source-git-commit: 1760125bbf5f134415c616f367f0eb96f04c5a3f
+source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 88%
+source-wordcount: '596'
+ht-degree: 84%
 
 ---
 
@@ -33,7 +33,7 @@ faq_features_functions.xml
 
 例如，*`Organization ID`* 看起來像這樣：`1FD6776A524453CC0A490D44@AdobeOrg`。
 
-*`Organization ID`* 用於 Audience Manager 的 [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.translate.html)，以及其他 [!DNL Experience Cloud] 解決方案。擁有管理員權限的使用者可以在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。請參閱[管理 - 使用者管理常見問題集](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+*`Organization ID`* 用於 Audience Manager 的 [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)，以及其他 [!DNL Experience Cloud] 解決方案。擁有管理員權限的使用者可以在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。請參閱[管理 - 使用者管理常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
  
 
@@ -47,9 +47,9 @@ faq_features_functions.xml
 
  
 
-**執行大量ID匯出至目的地時，會遺失部分客戶ID。為什麼會發生？**
+**執行大量ID匯出至目的地時，會遺失部分客戶ID。 為什麼會發生？**
 
-當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUIDs](../reference/ids-in-aam.md))時，只會匯出最新的對應。 這就是為何匯出的裝置ID數量可能低於預期的原因。
+當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUIDs](../reference/ids-in-aam.md))，則只會匯出最新的對應。 這就是為何匯出的裝置ID數量可能低於預期的原因。
 
  
 
@@ -67,7 +67,7 @@ faq_features_functions.xml
 
 **什麼是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Launch] 取代。如需詳細資訊，請參閱[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)。
+Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Tags] 取代。如需詳細資訊，請參閱 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 
  
 
@@ -95,4 +95,4 @@ Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管
 
 **Adobe Analytics 和 Audience Manager 區段之間是否有任何差異？**
 
-有，請參閱[瞭解 Analytics 和 Audience Manager 中的區段](https://docs.adobe.com/content/help/zh-Hant/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)，深入瞭解差異。
+有，請參閱[瞭解 Analytics 和 Audience Manager 中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)，深入瞭解差異。
