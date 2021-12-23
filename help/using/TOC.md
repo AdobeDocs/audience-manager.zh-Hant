@@ -3,12 +3,12 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 使用手冊
-user-guide-description: 了解Audience Manager如何讓您收集網站訪客的商業相關資訊、建立可行銷區段，以及將目標廣告和內容提供給適當的對象。
+user-guide-description: 了解 Audience Manager 如何讓您收集網站訪客的商業相關資訊、建立可行銷細分，以及將目標定位廣告和內容提供給適當的受眾。
 feature-set: Audience Manager
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+source-git-commit: 73d1dd1fdc799d7cbe7605d6d084966f76efe38c
 workflow-type: tm+mt
 source-wordcount: '1805'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -181,7 +181,7 @@ ht-degree: 90%
       + [受眾最佳化報表](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + 廣告商適用的 Audience Optimization {#audience-optimization-advertisers}
          + [廣告商適用的 Audience Optimization 概述](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
-         + [將Google促銷活動管理員資料檔案匯入Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
+         + [將Google Campaign Manager資料檔案匯入Audience Manager](reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
          + [區段成效報表](reporting/audience-optimization-reports/aor-advertisers/segment-performance.md)
          + [趨勢分析和大量分析報表](reporting/audience-optimization-reports/aor-advertisers/trend-analysis-volume-analysis.md)
          + [最佳頻率報表](reporting/audience-optimization-reports/aor-advertisers/optimal-frequency.md)
@@ -286,7 +286,7 @@ ht-degree: 90%
 + 實作與整合指南{#implementation-integration-guides}
    + [實作與整合指南](integration/implementation-and-integration.md)
    + [資料整合方法](integration/data-integration-methods.md)
-   + 使用Google發佈商代碼(GPT){#integrate-dfp-using-gpt}整合Google Ad Manager
+   + 使用Google發佈商標籤(GPT)整合Google廣告管理員{#integrate-dfp-using-gpt}
       + [使用GPT整合Google Ad Manager概述](integration/gpt-aam-destination/gpt-aam-overview.md)
       + [使用GPT傳送區段至Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [建立 GPT 目的地](integration/gpt-aam-destination/gpt-aam-create-destination.md)
@@ -338,8 +338,8 @@ ht-degree: 90%
          + [傳入處理後傳送給合作夥伴的範例訊息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
       + [自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 與 Adobe Experience Platform 的整合 {#integration-experience-platform}
-      + [Experience Platform區段共用給Audience Manager和其他Experience Cloud解決方案](integration/integration-aep/aam-aep-audience-sharing.md)
-   + 與其他 Experience Cloud 解決方案的整合 {#integration-other-solutions}
+      + [Experience Platform區段共用與Audience Manager和其他Experience Cloud解決方案](integration/integration-aep/aam-aep-audience-sharing.md)
+   + 與其他Experience Cloud應用程式整合 {#integration-other-solutions}
       + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從 Adobe Analytics 轉送至 Audience Manager](integration/integration-other-solutions/audience-management-module.md)
       + [將Adobe Analytics區段發佈至Experience Cloud(開啟Adobe Analytics檔案)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
