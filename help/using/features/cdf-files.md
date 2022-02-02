@@ -8,9 +8,9 @@ title: 客戶資料摘要
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-source-git-commit: 08916acd6081031382713737f77ceed8ab1a4e91
+source-git-commit: e85dea581e1e7fee2fce0854dc094ed763df8160
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1914'
 ht-degree: 3%
 
 ---
@@ -146,12 +146,11 @@ A [!UICONTROL CDF] 檔案包含下面定義的部分或全部欄位。 有關內
       <li id="li_B9DA15DCB6A445D781B8753C1C4262B0">Ctrl + a(ASCII) <code> 001</code> 或 <code> ^A</code>)使用非打印空間指示器分隔各個欄位中的資料。 </li> 
       <li id="li_E68D0CC065B34AC9AF91F166CAA2A67C">Ctrl + b(ASCII) <code> 002</code> 或 <code> ^B</code>)分離資料和陣列和請求參數。 </li> 
       <li id="li_6C32D927FEF04CDE9887374E8C2688E7">Ctrl + c(ASCII) <code> 003</code> 或 <code> ^C</code>)定義鍵值對。 </li> 
-      <li> 新行分隔符(/N)</li>
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>欄位序列 </p> </td> 
-   <td colname="col2"> <p> <p>重要提示： <span class="keyword"> Audience Manager</span> 保留在將來版本中將新欄位添加到CDF檔案末尾的權利。 這意味著檔案分析系統的技術設計不應假定列數固定（儘管它可能假定現有列的順序固定）。 </p> </p> <p>CDF檔案中的資料按如下所示的順序顯示。 </p> <p> 
+   <td colname="col2"> <p> <p>重要提示： <span class="keyword"> Audience Manager</span> 保留在將來版本中將新欄位添加到CDF檔案末尾的權利。 這意味著檔案分析系統的技術設計不應假定列數固定（儘管它可能假定現有列的順序固定）。</p> </p> <p>CDF檔案中的資料按如下所示的順序顯示。/N可能會代替這些欄位中的任何一個，表示空值。</p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
       <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件時間 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">裝置 </li> 
@@ -209,7 +208,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_0_0_0.gz
 
 ## [!UICONTROL CDF] 定義的檔案名元素 {#cdf-file-name-elements}
 
-下表列出並定義 [!UICONTROL CDF] 檔案名。
+下表列出並定義了 [!UICONTROL CDF] 檔案名。
 
 <table id="table_4AC4F90C1C7D43E2A93CB3B6908D7E94"> 
  <thead> 
