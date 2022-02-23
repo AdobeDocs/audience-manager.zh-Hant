@@ -1,55 +1,55 @@
 ---
-description: 使用區段產生器說明區段、其組成部分以及規則建立。
-seo-description: 使用區段產生器說明區段、其組成部分以及規則建立。
-seo-title: 區段用途、組成和規則
+description: 使用段生成器描述段、其組成部分和規則建立。
+seo-description: Describes segments, their constituent parts, and rule creation with Segment Builder.
+seo-title: Segments  Purpose, Composition, and Rules
 solution: Audience Manager
-title: 區段用途、組成和規則
+title: 段目的、組成和規則
 uuid: 886d4abe-b1b6-4983-b4fb-b552d54d51ba
-feature: 區段
+feature: Segments
 exl-id: 4e4da7a7-3267-4564-b1c5-663dcddf2b93
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 6%
+source-wordcount: '310'
+ht-degree: 3%
 
 ---
 
 # 區段：用途、構成和規則 {#segments-purpose-composition-and-rules}
 
-使用[!UICONTROL Segment Builder]說明[!UICONTROL segments]、其組成部分和規則建立。
+描述 [!UICONTROL segments]、其組成部分和規則建立 [!UICONTROL Segment Builder]。
 
-## [!UICONTROL Segments]的用途
+## 目的 [!UICONTROL Segments]
 
-*`segment`*（或&#x200B;*`audience`*）是一組共用共同屬性的使用者。 在Audience Manager中，使用伺服器端規則建立[!UICONTROL segments]。 這些規則可讓您根據網站訪客屬性來建立受眾群組，例如：
+A *`segment`* (或 *`audience`*)是一組共用公共屬性的用戶。 在Audience Manager中，建立 [!UICONTROL segments] 伺服器端規則。 這些規則允許您根據站點訪問者屬性(如：
 
 * 行為;
 * 人口（年齡、性別、收入等）;
-* 您可在使用者介面中定義的其他特性。
+* 可在用戶介面中定義的其他特性。
 
-## [!UICONTROL Segment] 組合物
+## [!UICONTROL Segment] 組合
 
-Audience Manager[!UICONTROL segment]是伺服器端規則，包含個別或特徵群組。 特徵是由稱為索引鍵值配對的資料元素所組成。 除了您在[!UICONTROL segment]層級設定的規則，這些索引鍵值配對包含可讓訪客符合特徵和[!UICONTROL segment]成員資格的條件。
+Audience Manager [!UICONTROL segment] 是由單個或一組特徵組成的伺服器端規則。 特徵由稱為鍵值對的資料元素組成。 以及您在 [!UICONTROL segment] 級別，這些關鍵值對包含符合訪問者特徵和 [!UICONTROL segment] 成員身份。
 
-## [!UICONTROL Adobe Analytics] [!UICONTROL Segment]映射的注意事項
+## 關於 [!UICONTROL Adobe Analytics] [!UICONTROL Segment] 映射
 
-將Adobe Analytics [!UICONTROL segments]或報表套裝對應至您的Experience Cloud組織時，Audience Manager會自動建立新的對應唯讀[!UICONTROL segments]和特徵。 不能從Audience Manager編輯或更改這些[!UICONTROL segments]的儲存位置。 不過，您在對應的Adobe Analytics [!UICONTROL segments]或報表套裝上執行的任何變更都會反映在Audience Manager中。
+當測繪Adobe Analytics [!UICONTROL segments] 或Experience Cloud組織的報表套件，Audience Manager自動建立新的、相應的只讀 [!UICONTROL segments] 和特徵。 不能編輯或更改這些儲存的儲存位置 [!UICONTROL segments] Audience Manager。 但是，您對映射的Adobe Analytics執行的任何更改 [!UICONTROL segments] 或報告套件反映在Audience Manager中。
 
 >[!TIP]
 >
->Audience Manager[!UICONTROL segments]與[!DNL Adobe Analytics] [!UICONTROL segments]不同。 如需差異的深入說明，請參閱[了解Analytics和Audience Manager中的區段](https://docs.adobe.com/content/help/zh-Hant/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)。
+>Audience Manager [!UICONTROL segments] 不同於 [!DNL Adobe Analytics] [!UICONTROL segments]。 閱讀 [瞭解分析和Audience Manager中的段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html) 以深入描述差異。
 
-## 使用[!UICONTROL Segment Builder]建立規則型[!UICONTROL Segments]
+## 建立基於規則的 [!UICONTROL Segments] 與 [!UICONTROL Segment Builder]
 
-與因簡單是/否條件而引發的傳統像素不同， [!UICONTROL Segment Builder]可讓您建立複雜的[!UICONTROL segment]要求。 與[!UICONTROL traits]一樣，[!UICONTROL segments]使用[!DNL Boolean]運算式([!DNL AND]、[!DNL OR]、[!DNL NOT])、比較運算子（大於、小於、等於等等）和時近/頻度標準來評估資料。 這些功能可協助您建立與業務需求相關的受眾[!UICONTROL segments]。
+與傳統的像素不同， [!UICONTROL Segment Builder] 使您能夠建立複雜 [!UICONTROL segment] 要求。 像 [!UICONTROL traits]。 [!UICONTROL segments] 評估資料 [!DNL Boolean] 表達式([!DNL AND]。 [!DNL OR]。 [!DNL NOT])、比較運算子（大於、小於、等於等）和頻率/頻率標準。 這些功能可幫助建立重點關注的受眾 [!UICONTROL segments] 與您的業務需要相關。
 
 ## 福利
 
-[!UICONTROL Segments] 改善標準的像素受眾建立/細分程式，因為它們可讓您：
+[!UICONTROL Segments] 改進標準基於像素的受眾建立/分段流程，因為它們使您能夠：
 
-* 使用第一方和第三方特徵建立相關且實用的[!UICONTROL segments]。
-* 使用布林運算子、比較運算式和造訪間隔/頻率條件，建立複雜的分段規則。
-* 將[!UICONTROL segment]資料發送到目標合作夥伴。
-* 使用Audience Manager報告監控效能。
+* 構建相關、有用 [!UICONTROL segments] 具有第一和第三方特徵。
+* 使用布爾運算子、比較表達式和頻率/頻率標準建立複雜的分段規則。
+* 發送 [!UICONTROL segment] 資料。
+* 使用Audience Manager報告監視效能。
 
 >[!MORELIKETHIS]
 >

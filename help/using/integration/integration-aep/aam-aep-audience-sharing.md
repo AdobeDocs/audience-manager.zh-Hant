@@ -4,7 +4,8 @@ solution: Audience Manager
 title: Experience Platform分部與Audience Manager及其他Experience Cloud解決方案分享
 keywords: AEP受眾共用、AEP分部、平台分部、分部共用、受眾共用、共用分部、AAMAEP分部共用
 feature: Platform Integration
-source-git-commit: f0df41e71340d08e873d8d7e33b481987110c58d
+exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
+source-git-commit: ebb143242f85cd6477c82f65e9c0caa115b05fab
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 1%

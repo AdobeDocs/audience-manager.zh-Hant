@@ -1,25 +1,25 @@
 ---
-description: 例項層級的DILAPI可讓您以程式設計方式建立及使用Audience Manager物件。 例項層級方法可增強類別層級方法所建立的API功能。
+description: 實例級DILAPI允許您以寫程式方式建立和使用Audience Manager對象。 實例級方法增強了由類級方法建立的API功能。
 keywords: 建立特徵；建立特徵
-seo-description: 例項層級的DILAPI可讓您以程式設計方式建立及使用Audience Manager物件。 例項層級方法可增強類別層級方法所建立的API功能。
-seo-title: 例項層級 DIL 方法
+seo-description: The instance-level DIL APIs let you programmatically create and work with Audience Manager objects. The instance-level methods enhance API functionality established by the class-level methods.
+seo-title: Instance-level DIL Methods
 solution: Audience Manager
 title: 例項層級 DIL 方法
 uuid: aa5147bb-51d5-41d4-a78a-e550f7492056
-feature: DIL實作
+feature: DIL Implementation
 exl-id: 0342439d-708e-461c-b155-a3ee423f5437
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 13%
+source-wordcount: '1075'
+ht-degree: 14%
 
 ---
 
 # 例項層級 DIL 方法{#instance-level-dil-methods}
 
-例項層級[!UICONTROL DIL] API可讓您以程式設計方式建立及使用Audience Manager物件。 例項層級方法可增強類別層級方法所建立的API功能。
+實例級 [!UICONTROL DIL] API允許您以寫程式方式建立和使用Audience Manager對象。 實例級方法增強了由類級方法建立的API功能。
 
-## 執行個體層級DIL方法快速入門{#get-started-dil-methods}
+## 實例級DIL方法入門 {#get-started-dil-methods}
 
 <!-- 
 
@@ -27,10 +27,10 @@ c_api_overview.xml
 
  -->
 
-使用執行個體層級[!UICONTROL DIL] API時：
+使用實例級時 [!UICONTROL DIL] API:
 
-* 存取需要合作夥伴名稱和容器命名空間ID(NSID)。 請連絡您的Audience Manager客戶經理以取得此資訊。
-* 根據您使用的方法的需要，將API檔案中任何斜體&#x200B;*文字範例取代為值、ID或其他變數。*
+* Access需要合作夥伴名稱和容器命名空間ID(NSID)。 請與Audience Manager客戶經理聯繫以獲取此資訊。
+* 替換任何示例 *斜體* API文檔中的文本，其值、ID或您所使用的方法所需的其他變數。
 
 <!-- 
 
@@ -38,9 +38,9 @@ c_instance_start.xml
 
  -->
 
-## 訊號 {#signals}
+## 信號 {#signals}
 
-將客戶和平台層級對應新增至待定請求的查詢字串。
+將客戶和平台級映射添加到掛起請求的查詢字串。
 
 <!-- 
 
@@ -52,13 +52,13 @@ r_dil_signals.xml
 
 >[!NOTE]
 >
->* 您可以將其他API呼叫連結至此方法。
->* 如果頁面上有Adobe Experience Cloud JavaScript資料庫，`submit()`會等待雲端設定Cookie，再傳送請求。
+>* 可以將其他API調用連結到此方法。
+>* 如果Adobe Experience CloudJavaScript庫在頁面上， `submit()` 在發送請求之前等待雲設定cookie。
 
 
 **保留請求密鑰**
 
-系統會保留下列請求金鑰，此方法無法覆寫：
+以下請求密鑰是保留的，無法由此方法覆蓋：
 
 * `sids`
 * `pdata`
@@ -71,13 +71,13 @@ r_dil_signals.xml
 
 | 名稱 | 類型 | 說明 |
 |---|---|---|
-| `obj` | 物件 | 代表平台層級對應索引鍵值組的物件。 參數接受字串和陣列作為物件中的屬性值。 |
-| `prefix` | 字串 | 選填。每個物件鍵值前置詞的字串值（取代原始鍵值）。 |
-| `return` | DIL.api | 傳回目前DIL例項的API物件。 |
+| `obj` | 物件 | 表示平台級映射的鍵值對的對象。 參數將字串和陣列作為對象中的屬性值。 |
+| `prefix` | 字串 | 選填。每個對象鍵前置詞的字串值（替換原始鍵）。 |
+| `return` | DIL.api | 返回當前DIL實例的API對象。 |
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -102,7 +102,7 @@ dataLib.api.signals(obj, 'c_').submit();
 
 ## traits {#traits}
 
-將SID新增至待定請求的查詢字串。
+將SID添加到掛起請求的查詢字串。
 
 <!-- 
 
@@ -114,17 +114,17 @@ r_dil_traits.xml
 
 >[!NOTE]
 >
->您可以將其他API呼叫連結至此方法。
+>可以將其他API調用連結到此方法。
 
 **參數**
 
 | 名稱 | 類型 | 說明 |
 |---|---|---|
-| `sids` | 陣列 | 陣列中的特徵區段ID。 |
+| `sids` | 陣列 | 陣列中的特徵段ID。 |
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -136,9 +136,9 @@ var partnerObject = DIL.create({
 partnerObject.api.traits(<i>[123, 456, 789]</i>); 
 </code></pre>
 
-## 記錄 {#logs}
+## 日誌 {#logs}
 
-將資料新增至待處理請求中的記錄檔。
+將資料添加到掛起請求中的日誌檔案。
 
 <!-- 
 
@@ -150,7 +150,7 @@ r_dil_logs.xml
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -167,7 +167,7 @@ partnerObject.api.logs({
 
 ## 提交 {#submit}
 
-提交[!UICONTROL DIL]實例的所有掛起資料到Audience Manager。
+將所有待定資料提交到Audience Manager [!UICONTROL DIL] 實例。
 
 <!-- 
 
@@ -179,11 +179,11 @@ r_dil_submit.xml
 
 >[!NOTE]
 >
->您可以將其他API呼叫連結至此方法。 此外，[!UICONTROL DIL]會將編碼資料寫入目標Cookie。 例如，空格會編碼為`%20`，分號則編碼為`%3B`。
+>可以將其他API調用連結到此方法。 還有， [!UICONTROL DIL] 將編碼資料寫入目標cookie。 例如，空格編碼為 `%20` 分號，如 `%3B`。
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -203,9 +203,9 @@ dataLib.api.traits([
 }).submit();
 </code></pre>
 
-## afterResult {#afterresult}
+## 後結果 {#afterresult}
 
-在預設目標發佈回呼後執行的函式。
+在預設目標發佈回調後執行的函式。
 
 <!-- 
 
@@ -217,17 +217,17 @@ r_dil_after_result.xml
 
 >[!NOTE]
 >
->您可以將其他API呼叫連結至此方法。
+>可以將其他API調用連結到此方法。
 
 **參數**
 
 | 名稱 | 類型 | 說明 |
 |---|---|---|
-| `fn` | 函數 | 處理JSON後要執行的函式會由處理目的地發佈的預設回呼處理。 |
+| `fn` | 函數 | 處理JSON後要執行的函式由處理目標發佈的預設回調處理。 |
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -245,9 +245,9 @@ dataLib.api.signals({
 }).submit();
 </code></pre>
 
-## clearData {#cleardata}
+## 清除資料 {#cleardata}
 
-清除待處理請求中的所有資料。
+清除掛起請求中的所有資料。
 
 <!-- 
 
@@ -259,11 +259,11 @@ r_dil_clear_data.xml
 
 >[!NOTE]
 >
->您可以將其他API呼叫連結至此方法。
+>可以將其他API調用連結到此方法。
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -285,9 +285,9 @@ dataLib.api.traits([<i>123,456, 789</i>]).logs({
 dataLib.clearData();
 </code></pre>
 
-## customQueryParams {#customqueryparams}
+## 自定義查詢參數 {#customqueryparams}
 
-將資料收集伺服器未明確定義的自訂查詢參數新增至待定請求。
+將資料收集伺服器未顯式定義的自定義查詢參數添加到掛起請求。
 
 <!-- 
 
@@ -299,11 +299,11 @@ r_dil_custom_query_params.xml
 
 >[!NOTE]
 >
->您可以將其他API呼叫連結至此方法。
+>可以將其他API調用連結到此方法。
 
 **保留請求密鑰**
 
-系統會保留下列請求金鑰，此方法無法覆寫：
+以下請求密鑰是保留的，無法由此方法覆蓋：
 
 * `sids`
 * `pdata`
@@ -314,7 +314,7 @@ r_dil_custom_query_params.xml
 
 **回應**
 
-傳回目前DIL例項的API物件。
+返回當前DIL實例的API對象。
 
 **程式碼範例**
 
@@ -331,7 +331,7 @@ partnerObject.api.customQueryParams({
 
 ## getContainerNSID {#getcontainernsid}
 
-傳回[!UICONTROL DIL]例項的容器NSID值。 對除錯和疑難排解很實用。
+返回的容器NSID的值 [!UICONTROL DIL] 實例。 用於調試和故障排除。
 
 <!-- 
 
@@ -353,9 +353,9 @@ var dataLib = DIL.create({
 var nsid = dataLib.api.getContainerNSID();
 </code></pre>
 
-## getEventLog {#geteventlog}
+## get事件日誌 {#geteventlog}
 
-以字串的陣列傳回按時間順序排序的事件記錄資料。 對除錯和疑難排解很實用。
+返回按時間順序排序的事件日誌資料作為字串陣列。 用於調試和故障排除。
 
 <!-- 
 
@@ -392,7 +392,7 @@ if (log && log.length) {
 
 ## getPartner {#getpartner}
 
-返回[!UICONTROL DIL]實例的合作夥伴名稱。 對除錯和疑難排解很實用。
+返回的合作夥伴名稱 [!UICONTROL DIL] 實例。 用於調試和故障排除。
 
 <!-- 
 
@@ -416,7 +416,7 @@ var partner = dataLib.api.getPartner();
 
 ## getState {#getstate}
 
-返回當前[!UICONTROL DIL]實例的狀態。 對除錯和疑難排解很實用。
+返回當前狀態 [!UICONTROL DIL] 實例。 用於調試和故障排除。
 
 <!-- 
 
@@ -484,9 +484,9 @@ state = {
 */
 </code></pre>
 
-## idSync {#idsync}
+## id同步 {#idsync}
 
-由兩個函陣列成，可讓資料合作夥伴彼此交換及同步使用者ID，以及進行Audience Manager。
+由兩個功能組成，使資料夥伴在它們之間交換和同步用戶ID，並進行Audience Manager。
 
 <!-- 
 
@@ -496,7 +496,7 @@ r_dil_idsync.xml
 
 **函式簽名：**
 
-適用於[!UICONTROL DIL]版本2.10和3.1或更新版本。
+使用 [!UICONTROL DIL] 版本2.10和3.1或更高版本。
 
 <table id="table_ADC7501511914805A6A6B24B2DFEBA51"> 
  <thead> 
@@ -508,18 +508,18 @@ r_dil_idsync.xml
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.idSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>在不同的資料合作夥伴和Audience Manager之間。 例如，合作夥伴x會使用此項目將使用者ID與合作夥伴y同步，然後將其傳送至Audience Manager。 </p> <p> <p><b>重要：</b>  此方法已淘汰。請使用Adobe Experience Platform Identity Service例項的<code> idSyncByURL </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>不同資料合作夥伴和Audience Manager。 例如，合作夥伴x將使用此功能將用戶ID與合作夥伴y同步，然後將其發送到Audience Manager。 </p> <p> <p><b>重要提示：</b>  此方法已棄用。 請使用 <code> idSyncByURL </code> Adobe Experience Platform標識服務實例的方法。 </p> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> dil.Instance.api.aamIdSync(initConfig) </code> </td> 
-   <td colname="col2"> <p>當您已知使用者ID且想要將其傳送至Audience Manager時。 </p> <p> <p><b>重要：</b>  此方法已淘汰。請使用Adobe Experience Platform Identity Service例項的<code> idSyncByDataSource </code>方法。 </p> </p> </td> 
+   <td colname="col2"> <p>當您已經知道用戶ID並想將其發送到Audience Manager。 </p> <p> <p><b>重要提示：</b>  此方法已棄用。 請使用 <code> idSyncByDataSource </code> Adobe Experience Platform標識服務實例的方法。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **idSync元素**
 
-`idSync` 可包含下列項目：
+`idSync` 可包括以下內容：
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -555,15 +555,15 @@ r_dil_idsync.xml
 
 **巨集**
 
-`idSync` 接受下列巨集：
+`idSync` 接受以下宏：
 
-* **`%TIMESTAMP%`:** 產生時間戳記（以毫秒為單位）。用於快取破產。
-* **`%DID%`:** 插入使用者的Audience ManagerID。
-* **`%HTTP_PROTO%`:** 設定頁面通訊協定( `http` 或 `https`)。
+* **`%TIMESTAMP%`:** 生成時間戳（毫秒）。 用於快取破產。
+* **`%DID%`:** 插入用戶的Audience ManagerID。
+* **`%HTTP_PROTO%`:** 設定頁協定( `http` 或 `https`)。
 
 **回應**
 
-如果執行成功，兩個函式都會傳回`Successfully queued`。 如果失敗則傳回錯誤訊息字串。
+兩個函式都返回 `Successfully queued` 成功。 如果失敗則傳回錯誤訊息字串。
 
 **程式碼範例**
 
@@ -592,7 +592,7 @@ dilInstance.api.aamIdSync({
 
 ## 結果 {#result}
 
-將回呼（接收JSON）新增至待處理請求。
+將回調（接收JSON）添加到掛起請求。
 
 <!-- 
 
@@ -602,21 +602,21 @@ r_dil_result.xml
 
 **函式簽名：** `result: function (callback) {}`
 
-此回呼會取代處理目的地發佈的預設回呼。
+此回調將替換處理目標發佈的預設回調。
 
 >[!NOTE]
 >
->您可以將其他API呼叫連結至此方法。
+>可以將其他API調用連結到此方法。
 
 **參數**
 
 | 名稱 | 類型 | 說明 |
 |---|---|---|
-| `callback` | 函數 | 由JSONP回呼執行的JavaScript函式。 |
+| `callback` | 函數 | 由JSONP回調執行的JavaScript函式。 |
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -633,7 +633,7 @@ dataLib.api.traits([<i>123, 456, 789</i>]).result(function(json){
 
 ## secureDataCollection {#securedatacollection}
 
-`secureDataCollection` 是布林值參數，可控 [!UICONTROL DIL] 制對和Akamai進行呼 [!UICONTROL Data Collection Servers (DCS)] 叫的方式。
+`secureDataCollection` 是一個布爾參數，它控制 [!UICONTROL DIL] 打電話給 [!UICONTROL Data Collection Servers (DCS)] 和阿卡邁。
 
 <!-- 
 
@@ -641,13 +641,13 @@ dil-secure-data-collection.xml
 
  -->
 
-* 當`secureDataCollection= true`（預設值）時，[!UICONTROL DIL]一律會進行安全的HTTPS呼叫。
+* 當 `secureDataCollection= true` （預設）, [!UICONTROL DIL] 總是進行安全的HTTPS呼叫。
 
-* 當`secureDataCollection= false`時， [!UICONTROL DIL]會遵循頁面設定的安全通訊協定，進行HTTP或HTTPS呼叫。
+* 當 `secureDataCollection= false`。 [!UICONTROL DIL] 按照該頁設定的安全協定進行HTTP或HTTPS調用。
 
 >[!IMPORTANT]
 >
->如果您在相同頁面上使用visitorAPI.js和[!UICONTROL DIL]，請設定`secureDataCollection= false`。 請參閱下列程式碼範例。
+>設定 `secureDataCollection= false` 如果您使用visitorAPI.js和 [!UICONTROL DIL] 同一頁。 請參閱下面的代碼示例。
 
 <pre><code class="js">
 var dilInstance = DIL.create({ 
@@ -658,7 +658,7 @@ var dilInstance = DIL.create({
 
 ## useCORSOnly {#usecorsonly}
 
-`useCORSOnly` 是布林值true/false參數，可控制瀏覽器從其他網域要求資源的方式。
+`useCORSOnly` 是布爾true/false參數，用於控制瀏覽器如何從其他域請求資源。
 
 <!-- 
 
@@ -668,7 +668,7 @@ dil-use-cors-only.xml
 
 **概述**
 
-`useCORSOnly` 預設為false。False表示瀏覽器可使用CORS或JSONP執行資源檢查。 不過，[!UICONTROL DIL]一律會先嘗試使用CORS要求資源。 在不支援 CORS 的舊版瀏覽器上會回復為 JSONP 要求。如果您需要強制瀏覽器僅使用CORS（例如對於安全性要求高的網站），請設定`useCORSOnly:true`。
+`useCORSOnly` 預設為false。 False表示瀏覽器可以使用CORS或JSONP執行資源檢查。 但是， [!UICONTROL DIL] 總是嘗試先使用CORS請求資源。 在不支援 CORS 的舊版瀏覽器上會回復為 JSONP 要求。如果需要強制瀏覽器僅使用CORS，例如對具有高安全性要求的站點，請設定 `useCORSOnly:true`。
 
 **程式碼範例**
 
@@ -681,16 +681,14 @@ var dilInstance = DIL.create({
 
 >[!IMPORTANT]
 >
->* 建議您僅在確定網站訪客的瀏覽器支援此功能時才設定`useCORSOnly: true`。
->* 當`useCORSOnly: true`,[!UICONTROL DIL]將不會從Internet Explorer 9或更舊版本進行ID呼叫。
-
+>* 我們建議你 `useCORSOnly: true` 只有當您的站點訪問者擁有支援此功能的瀏覽器時。
+>* 當 `useCORSOnly: true`。 [!UICONTROL DIL] 不會從Internet Explorer版本9或更舊版本進行ID調用。
 >
-
 
 
 ## useImageRequest {#useimagerequest}
 
-將請求類型從指令碼`<src>`變更為影像`<img>`。
+將請求類型更改為映像 `<img>` 從指令碼 `<src>`。
 
 <!-- 
 
@@ -702,11 +700,11 @@ r_dil_use_image_request.xml
 
 >[!NOTE]
 >
->您可以將其他API呼叫連結至此方法。
+>可以將其他API調用連結到此方法。
 
 **回應**
 
-傳回目前[!UICONTROL DIL]例項的API物件。
+返回當前的API對象 [!UICONTROL DIL] 實例。
 
 **程式碼範例**
 
@@ -722,9 +720,9 @@ dataLib.api.traits([<i>123, 456, 789</i>]).useImageRequest().submit();
 >[!MORELIKETHIS]
 >
 >* [關鍵變數的名稱要求](../features/traits/trait-key-name-requirements.md)
-* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
-* [Adobe Experience Platform Identity Service中的同步函式](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/idsync.html)
-* [DIL 建立](../dil/dil-class-overview/dil-create.md#dil-create)
-* [Adobe Experience Platform Identity Service:UseCORSOnly](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/use-cors-only.html)
-* [Adobe Experience Platform Identity Service的CORS支援](https://docs.adobe.com/content/help/en/id-service/using/reference/cors.html)
+>* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
+>* [Adobe Experience Platform身份服務中的同步功能](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/idsync.html)
+>* [DIL 建立](../dil/dil-class-overview/dil-create.md#dil-create)
+>* [Adobe Experience Platform身份服務：僅使用CORSOnly](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/use-cors-only.html)
+>* [Adobe Experience Platform身份服務中的CORS支援](https://experienceleague.adobe.com/docs/id-service/using/reference/cors.html)
 

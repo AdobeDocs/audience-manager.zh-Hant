@@ -1,16 +1,16 @@
 ---
 description: 設定檔合併規則與裝置圖表的常見問題解答。
 keywords: 組織 ID
-seo-description: 設定檔合併規則與裝置圖表的常見問題解答。
-seo-title: 設定檔合併規則與裝置圖表常見問題集
+seo-description: Answers to common Profile Merge Rule and device graph questions.
+seo-title: Profile Merge Rules and Device Graph FAQ
 solution: Audience Manager
 title: 設定檔合併規則與裝置圖表常見問題集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
-feature: 個人資料合併
+feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1531'
 ht-degree: 86%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 86%
 
 **區段大小估計是否包含根據使用裝置圖表選項的 [!UICONTROL Profile Merge Rule] 提供的連線符合區段資格的裝置？**
 
-不會。請參閱[區段產生器中的特徵和區段母體資料](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/features/segments/segment-builder-data.translate.html)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
+不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
 
  
 
@@ -259,18 +259,18 @@ ht-degree: 86%
 
 否。
 
-**2020年3月16日後，為何區段匯出至Adobe Campaign的區段母體為零？**
+**2020年3月16日以後，我為什麼看到對Adobe Campaign的分部出口零分部人口？**
 
-2019年底，我們推出了一系列「設定檔合併規則」增強功能，以改善使用跨裝置ID產生批次檔案的準確度。 從2020年3月16日星期一開始，您的Audience Manager例項將嚴格遵循這些增強功能。 因此，使用跨裝置ID對應至目的地的區段，在某些「設定檔合併規則」設定中將不再產生匯出項目。
+在2019年末，我們發佈了一系列配置檔案合併規則增強功能，以提高使用跨設備ID生成的批處理檔案的準確性。 從2020年3月16日星期一開始，您的Audience Manager實例將嚴格遵守這些增強功能。 因此，使用跨設備ID映射到目標的段將停止在某些配置檔案合併規則配置中生成導出。
 
-若要確保您的Audience Manager例項與使用跨裝置ID的目的地(例如Adobe Campaign)之間的正確整合，請務必符合下列需求：
+要確保使用跨設備ID(如Adobe Campaign)在Audience Manager實例與目標之間正確整合，請確保滿足以下要求：
 
-1. 檢閱對應至您Adobe Campaign宣告ID目的地之區段所使用的設定檔合併規則。 設定檔合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，因此所有已驗證的設定檔皆可包含在匯出中。 如果您的設定檔合併規則使用不同的選項，請將其切換至[!UICONTROL Last Authenticated Profile]。
-2. 在「設定檔合併規則」設定中選取「Adobe Campaign宣告ID」資料來源。
+1. 查看映射到Adobe Campaign聲明ID目標的段使用的配置檔案合併規則。 配置檔案合併規則必須使用 [!UICONTROL Last Authenticated Profile] 選項，因此所有經過驗證的配置檔案都可以包含在導出中。 如果您的「配置檔案合併規則」正在使用其他選項，請將其切換到 [!UICONTROL Last Authenticated Profile]。
+2. 在「配置檔案合併規則」設定中選擇「Adobe Campaign聲明的ID」資料源。
 
 >[!NOTE]
 >
-> 我們已針對面臨此情況的客戶，將「設定檔合併規則」限制提高1，如此一來，您就可以為對應至Adobe Campaign宣告ID目的地的區段建立專用的設定檔合併規則，而不需變更其他使用案例的設定檔合併規則。
+> 我們已將面對此情況的客戶的「配置檔案合併規則」限制增加1，以便您可以為映射到Adobe Campaign聲明ID目標的段建立專用的「配置檔案合併規則」，而不更改其他使用情形的「配置檔案合併規則」。
 
 >[!MORELIKETHIS]
 >

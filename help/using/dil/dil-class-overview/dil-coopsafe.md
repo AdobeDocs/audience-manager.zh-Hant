@@ -1,31 +1,31 @@
 ---
 description: 選用的布林值設定，可決定 DIL 是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
-seo-description: 選用的布林值設定，可決定 DIL 是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
+seo-description: An optional, Boolean configuration that determines if DIL sends (or does not send) data to the Adobe Experience Cloud Device Co-op.
 seo-title: isCoopSafe
 solution: Audience Manager
 title: isCoopSafe
 uuid: c5362a38-93c0-4edb-bdcb-106e43f33a92
-feature: DIL實作
+feature: DIL Implementation
 exl-id: 33dca495-6923-4966-9ec3-8b0fd2f17649
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 77%
+source-wordcount: '516'
+ht-degree: 75%
 
 ---
 
-# isCoopSafe{#iscoopsafe}
+# 是CoopSafe{#iscoopsafe}
 
 選用的布林值設定，可決定 DIL 是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
 
 ## 要求 {#requirements}
 
-若要使用`isCoopSafe`，您必須：
+要使用 `isCoopSafe` 必須：
 
-* 使用[!UICONTROL DIL] v6.11或更高版本。
-* 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/home.translate.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 使用 [!UICONTROL DIL] v6.11或更高版本。
+* 參與 [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/home.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
-* 請與您的[!DNL Adobe]顧問合作，在您的Device co-op帳戶上設定允許清單或封鎖清單標幟。 沒有自助路徑可啟用這些標幟。
+* 與 [!DNL Adobe] 顧問，用於在您的設備合作帳戶上設定允許清單或denylist標誌。 沒有可啟用這些標誌的自助服務路徑。
 
 ## 使用個案 {#use-cases}
 
@@ -41,11 +41,11 @@ ht-degree: 77%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>已驗證的訪客</b> </p> </td> 
-   <td colname="col2"> <p>將<code> isCoopSafe </code>新增至您的<span class="wintitle">DIL</span>程式碼，以控制Device Co-op如何使用已驗證且接受或未接受使用條款的訪客資料來建立裝置圖形。 </p> </td> 
+   <td colname="col2"> <p>添加 <code> isCoopSafe </code> 到 <span class="wintitle"> DIL </span> 用於控制設備合作部如何使用經過驗證的具有或未接受使用期限協定的訪問者的資料來構建設備圖形。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第三方網站上的 DIL</b> </p> </td> 
-   <td colname="col2"> <p>將<code> isCoopSafe </code>新增至您的<span class="wintitle">DIL</span>程式碼，以用於下列第三方網站： </p> <p> 
+   <td colname="col2"> <p>添加 <code> isCoopSafe </code> 到 <span class="wintitle"> DIL </span> 用於第三方站點的代碼，您可以： </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">無法確保已驗證的訪客是否已經接受使用者條款。 </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制 Device Co-op 使用資料的方式，以建立裝置圖形。 </li> 
@@ -66,7 +66,7 @@ ht-degree: 77%
 
 **程式碼範例**
 
-當DIL具現化時，請設定此選項。
+在DIL實例化時設定此設定。
 
 ```js
 var dilInstance = DIL.create({ 
@@ -77,7 +77,7 @@ var dilInstance = DIL.create({
 
 ## 事件呼叫 POST 參數 {#post-parameters}
 
-根據您設定的標幟（`true`或`false`）,[!UICONTROL DIL]將`isCoopSafe`轉譯為這些POST參數，並在事件呼叫時將參數傳送至[!DNL Adobe]:
+根據您設定的標誌( `true` 或 `false`) [!UICONTROL DIL] 翻譯 `isCoopSafe` 將這些POST參數發送到 [!DNL Adobe] 在事件呼叫中：
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
@@ -103,7 +103,7 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
  </tbody> 
 </table>
 
-## Post-Instantiation API  {#post-instantiation}
+## Post-Instantiation API {#post-instantiation}
 
 這些 API 允許您覆寫 `isCoopSafe` 狀態。這些都是必要措施，因為它們可以讓您在網站或未重新整理的單頁應用程式中變更訪客實例化之後/登錄之後的狀態。舉例來說，如果用戶向您的網站或應用程式進行身份驗證，並隨後接受使用者條款原則允許 Device Co-op 使用其資料，則您可能需要呼叫這些 API。
 
@@ -117,11 +117,11 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopSafe(); </code> </p> </td> 
-   <td colname="col2"> <p>在後續事件呼叫中設定POST參數<code> d_coop_safe=1 </code>。 </p> </td> 
+   <td colname="col2"> <p>設定POST參數 <code> d_coop_safe=1 </code> 所有後續事件調用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopUnsafe(); </code> </p> </td> 
-   <td colname="col2"> <p>在後續事件呼叫中設定POST參數<code> d_coop_unsafe=1 </code>。 </p> </td> 
+   <td colname="col2"> <p>設定POST參數 <code> d_coop_unsafe=1 </code> 所有後續事件調用。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
