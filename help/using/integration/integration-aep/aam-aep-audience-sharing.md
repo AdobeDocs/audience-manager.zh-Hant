@@ -5,9 +5,9 @@ title: Experience Platform分部與Audience Manager及其他Experience Cloud解�
 keywords: AEP受眾共用、AEP分部、平台分部、分部共用、受眾共用、共用分部、AAMAEP分部共用
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: ebb143242f85cd6477c82f65e9c0caa115b05fab
+source-git-commit: aaaed3930a1e7af4724cc01bda74b83edec98385
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1522'
 ht-degree: 1%
 
 ---
@@ -153,11 +153,15 @@ Audience Manager自動建立名為 **Experience Platform段** 在段儲存中。
 
 ### Experience Platform中的段評估
 
-Audience Manager每天更新介面中的報告編號一次。   此更新的時間很少與Experience Platform中的段評估時間一致。
+Audience Manager每天更新介面中的報告編號一次。 此更新的時間很少與Experience Platform中的段評估時間一致。
 
 ### 配置檔案合併規則與合併策略之間的差異
 
 [[!UICONTROL Profile Merge Rules]](/help/using/features/profile-merge-rules/merge-rules-overview.md) Audience Manager和 [[!UICONTROL Merge Policies]](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html) 在Experience Platform中，工作方式不同，每個用戶的標識圖也不同。 因此，預計各分子群體之間會存在一些差異。
+
+>[!NOTE]
+>
+> 當共用從Experience Platform到Audience Manager的段時，您的平台組織 [預設合併策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy) 優先於 [段使用的合併策略](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies) 與Audience Manager共用。 例如，如果共用段的合併策略允許 [ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，但組織的預設合併策略不會，這可能會導致平台和Audience Manager之間的人口差異。
 
 ### Experience Platform
 
