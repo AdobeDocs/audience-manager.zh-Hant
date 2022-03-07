@@ -1,85 +1,62 @@
 ---
-description: 技術客戶和非技術客戶，若想將其他系統（離線）的資料帶入Audience Manager，此概觀適用。
-keywords: 傳入，批次，批次上傳，批次資料
-seo-description: 技術客戶和非技術客戶，若想將其他系統（離線）的資料帶入Audience Manager，此概觀適用。 若要這麼做，請在Audience Manager中使用批次上傳選項。
-seo-title: 將批次資料傳送至 Audience Manager 概述
+description: 技術客戶和非技術客戶希望將其他系統（離線）中的資料引入Audience Manager。
+keywords: 入站，批處理，批處理上載，批處理資料
+seo-description: An overview for technical and non-technical customers who want to bring data from other systems (offline) into Audience Manager. To do so, use the batch upload option in Audience Manager.
+seo-title: Send Batch Data to Audience Manager Overview
 solution: Audience Manager
 title: 將批次資料傳送至 Audience Manager 概述
 uuid: 472583b1-5057-4add-8e3c-5e50762c88e0
-feature: 傳入資料傳輸
+feature: Inbound Data Transfers
 exl-id: ba95537e-30c9-4546-9456-55f46dbe29ff
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: f02e6bcfb7ff3560d9624c3dce7ff065a3a75748
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 7%
+source-wordcount: '462'
+ht-degree: 6%
 
 ---
 
-# 將批資料發送到[!DNL Audience Manager]概述{#send-batch-data-to-audience-manager-overview}
+# 將批資料發送到 [!DNL Audience Manager] 概述 {#send-batch-data-to-audience-manager-overview}
 
-技術客戶和非技術客戶，若想將其他系統（離線）的資料帶入[!DNL Audience Manager]，請參閱概述。
+技術客戶和非技術客戶希望將其他系統（離線）中的資料帶入 [!DNL Audience Manager]。
 
 ## 優勢
 
-您可以在[!DNL Audience Manager]中使其他系統的資料可用。 我們的系統可協助您解鎖價值，並運用您先前收集的使用者資料。 這包括購買、客戶調查、註冊資料、[!DNL CRM]資料庫等相關資訊。 雖然每項整合都帶來各自的挑戰，但它們都有共同的步驟。 請檢閱此資料，協助您減少線上離線資料所需的工作量。
+您可以在中使其他系統的資料可用 [!DNL Audience Manager]。 我們的系統可以幫助您釋放價值並利用您以前收集的用戶資料。 這包括有關購買、客戶調查、註冊資料、 [!DNL CRM] 資料庫等 儘管每一個整合都帶來了各自的挑戰，但它們都有這些共同步驟。 查看此資料，以幫助減少使離線資料聯機所需的工作量。
 
 ## 步驟1:同步用戶ID
 
-在同步期間，[!DNL Audience Manager]會為用戶端及其使用者指派唯一ID。 這些ID分別稱為[!UICONTROL Data Provider ID]([!UICONTROL DPID])和[!UICONTROL Unique User ID]([!UICONTROL UUID])。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和來 [!UICONTROL UUID] 識別使用者，並讓他們符合 [!UICONTROL traits]、 [!UICONTROL segments]、對象群組和報表的資格。此外，我們的資料收集代碼([!UICONTROL DIL])會尋找這些ID，以從您的網站擷取訪客資料。 完成此步驟後，[!DNL Audience Manager]和您的離線存放庫應包含每個使用者記錄的對應ID。
+在同步過程中， [!DNL Audience Manager] 為客戶端及其用戶分配唯一ID。 這些ID稱為 [!UICONTROL Data Provider ID] ([!UICONTROL DPID]) [!UICONTROL Unique User ID] ([!UICONTROL UUID])。 [!DNL Audience Manager] 使用 [!UICONTROL DPID] 和 [!UICONTROL UUID] 確定用戶並確定其資格 [!UICONTROL traits]。 [!UICONTROL segments]、受眾組和用於報告。 此外，我們的資料收集代碼([!UICONTROL DIL])查找這些ID以從您的網站捕獲訪問者資料。 完成此步驟後， [!DNL Audience Manager] 離線儲存庫應包含每個用戶記錄的相應ID。
 
-有關此步驟的重要考量事項：
+有關此步驟的重要考慮事項：
 
-* **用戶端ID位置：** [!DNL Audience Manager] 需要知道用戶端ID在您網站上的顯示位置（例如，該ID儲存在Cookie、Analytics變數、頁面程式碼等中）。
-* **排除 [!DNL PII]:** 使用者ID不得包含個人識別資訊([!DNL PII])。
-* **區分大小寫和內容區分：** 在即時資料同步期間，依從您網站擷取的使用者ID必 [!DNL Audience Manager] 須對應到從離線存放庫傳入的ID。例如，如果離線記錄含有[!DNL User123]的相關資訊，但您的網站將該ID轉譯為[!DNL USER123]，則[!DNL Audience Manager]會將這些ID視為不同的訪客。 因此，此訪客的線上資訊無法與離線資料庫中的對應記錄相關聯。 ID必須完全相符。
+* **客戶端ID放置：** [!DNL Audience Manager] 需要知道您的客戶端ID在您的網站上的顯示位置（例如，它是否儲存在cookie、分析變數、頁碼等中）。
+* **排除 [!DNL PII]:** 用戶ID不得包含個人身份資訊([!DNL PII])。
+* **大小寫和內容敏感性：** 在即時資料同步期間，通過 [!DNL Audience Manager] 必須與從離線儲存庫傳入的ID對應。 例如，如果離線記錄包含有關 [!DNL User123]，但您的站點將該ID呈現為 [!DNL USER123]。 [!DNL Audience Manager] 把它們看成不同的訪客。 因此，此訪問者的聯機資訊不能與離線資料庫中的相應記錄關聯。 ID必須完全匹配。
 
-請參閱傳入資料傳輸的[ID同步](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)。
+請參閱 [入站資料傳輸的ID同步](../../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-http.md)。
 
 ## 步驟2:資料檔案格式
 
-檔案名稱和內容遵循嚴格的准則。 您&#x200B;*必須*&#x200B;命名，並根據本指南中的這些規範組織資料檔案。 請參閱：
+檔案名和內容遵循嚴格的准則。 你 *必須* 根據本指南中的這些規範命名和組織資料檔案。 請參閱：
 
 * [傳入資料檔案的 Amazon S3 名稱要求](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
-* [傳入資料檔案內容：語法、變數和範例](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
+* [入站資料檔案內容：語法、變數和示例](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
 
-## 線上資料可用於離線行銷工作
+## 線上資料可用於離線營銷工作
 
-當您將離線資料上線時，您仍可將此資訊用於離線促銷活動。 若要這麼做，[!DNL Audience Manager]會將特徵和區段資訊匯出至您選擇的[!DNL FTP]或[!DNL Amazon S3]位置。 如需詳細資訊或協助，請連絡您的合作夥伴解決方案經理。
+在將離線資料聯機時，您仍然可以將此資訊用於離線市場活動。 要做到這一點， [!DNL Audience Manager] 將特性和段資訊導出到 [!DNL FTP] 或 [!DNL Amazon S3] 選擇的位置。 請聯繫您的合作夥伴解決方案經理以獲取其他資訊或幫助。
 
 ## 環境
 
-[!DNL Audience Manager] 為檔案下拉式清單提供下列環境：
+[!DNL Audience Manager] 為檔案下拉提供以下環境：
 
-<table id="table_A61AA64578944B23B5A7355F2A76E882"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 環境 </th> 
-   <th colname="col02" class="entry"> 服務 </th> 
-   <th colname="col2" class="entry"> 位置 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1" morerows="1"> <b>生產</b> </td> 
-   <td colname="col02"> FTP </td> 
-   <td colname="col2"> <p> <code> ftp-in.demdex.com</code> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col02"> S3 </td> 
-   <td colname="col2"> <p> <code> demdex-s2s-clients</code> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1" morerows="1"> <b>測試版環境</b> </td> 
-   <td colname="col02"> FTP </td> 
-   <td colname="col2"> <p><code> sandbox-ftp-in.demdex.com</code> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col02"> S3 </td> 
-   <td colname="col2"> <p> <code> demdex-s2s-clients-sandbox-us-east-1</code> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| 環境 | 服務 | 位置 |
+|---------|----------|---------|
+| 生產 | <ul><li>Amazon S3</li><li>FTP</li></ul> | <ul><li>demdex-s2s客戶端</li><li>ftp-in.demdex.com</li></ul> |
+| Beta環境 | <ul><li>AmazonS3</li><li>FTP</li></ul> | <ul><li>demdex s2s客戶端 — sandbox-us-east-1</li><li>sandbox-ftp-in.demdex.com</li></ul> |
 
-## 進一步技術閱讀
+{style=&quot;table-layout:auto&quot;&quot;
 
-系統工程師、開發人員或技術/實作團隊應檢閱[說明的批次資料傳輸程式](../../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)以及本節中的其他文章。 這些文章提供傳輸通訊協定、檔案內容和檔案名稱要求的詳細資訊。
+## 進一步的技術閱讀
+
+系統工程師、開發人員或技術/實施團隊應審查 [描述的批資料傳輸流程](../../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md) 以及本節中的其他條款。 這些文章提供了有關傳輸協定、檔案內容和檔案名要求的詳細資訊。
