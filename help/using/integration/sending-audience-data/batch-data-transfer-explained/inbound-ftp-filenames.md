@@ -7,10 +7,10 @@ title: 傳入資料檔案的 FTP 名稱和檔案大小要求
 uuid: 49eaafac-5cb0-482f-872a-84c056016bdb
 feature: Inbound Data Transfers
 exl-id: 9c889214-7075-4392-9ed5-f07b91e7b50a
-source-git-commit: 534f7c3a04861ad6daba2f168c275bbac8395d37
+source-git-commit: 7721083fd538f0b74f72cfc78981e2cc76777790
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 7%
+source-wordcount: '1097'
+ht-degree: 6%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>此欄位將告訴Audience Manager板載資料的資料源。 如果將DPID設定為Android ID或iOSID或屬於全局資料源的其他ID，則此欄位是必需的。 這樣 <span class="keyword"> Audience Manager</span> 將檔案資料連結回您的組織。 <br> 此目標資料源需要歸您的公司所有。 為了實現第二方資料共用，為了將資料插入屬於另一公司的目標資料源，您必須在公司和目標資料源之間具有訪問映射。 請與Adobe顧問或客戶支援聯繫以設定映射。</p> <p>例如： </p> 
+   <td colname="col2"> <p>此欄位將告訴Audience Manager板載資料的資料源。 如果將DPID設定為Android ID或iOSID或屬於全局資料源的其他ID，則此欄位是必需的。 這樣 <span class="keyword"> Audience Manager</span> 將檔案資料連結回您的組織。 <br> 此目標資料源需要歸您的公司所有。 為了實現第二方資料共用，為了將資料插入屬於另一公司的目標資料源，您必須在公司和目標資料源之間具有訪問映射。 請與Adobe顧問或客戶支援聯繫以設定映射。</p><p><b>重要說明：</b> 你 <i>不</i> 需要請求現有資料共用關係的映射（適用於您在2022年3月14日之前將資料放入的其他公司的目標資料源）。 將資料載入到屬於您的PID的目標資料源時，也不需要映射。 </p> <p>例如： </p> 
     <ul> 
      <li> <code>...ftp_dpm_33_21_1234567890.sync</code> 告訴Audience Manager您正在為屬於資料源33的客戶ID確認屬於資料源21的特性或信號。 </li> 
      <li> <b>Android ID(GAID):</b> <code>...ftp_dpm_20914_21_1234567890.sync</code> 告 <span class="keyword"> Audience Manager</span> 資料檔案僅包含Android ID,ID應符合屬於資料源21的特徵。</li> 
