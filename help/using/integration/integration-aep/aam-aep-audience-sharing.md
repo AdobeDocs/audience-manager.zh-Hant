@@ -5,10 +5,10 @@ title: Experience Platform分部與Audience Manager及其他Experience Cloud解�
 keywords: AEP受眾共用、AEP分部、平台分部、分部共用、受眾共用、共用分部、AAMAEP分部共用
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: aaaed3930a1e7af4724cc01bda74b83edec98385
+source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 1%
+source-wordcount: '1516'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Audience Manager和Adobe Experience Platform之間的受眾共用功能允許您將Audience Manager特徵和片段與Adobe Experience Platform共用，反之亦然。 你需要 [[!DNL Audience Manager Connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) 讓觀眾在Audience Manager和Adobe Experience Platform之間共用。
 
-您可以使用Experience Platform中的Audience Manager特徵和段，將Audience Manager資料添加到客戶配置檔案中並從Experience Platform中獲益 [分段服務](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)。
+您可以使用Experience Platform中的Audience Manager特徵和段，將Audience Manager資料添加到客戶配置檔案中並從Experience Platform中獲益 [分段服務](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en)。
 
 在Audience Manager中，可以將Experience Platform段用於資料管理平台使用案例，例如：
 * 添加 [第三方資料](/help/using/overview/data-types-collected.md#third-party-data) 你的部門；
@@ -43,7 +43,7 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能允許您
 |---------|----------|---------|---------|
 | **受眾共用** | <ul><li>使用Audience Manager資料豐富客戶配置檔案</li><li>在Audience Manager分割中使用Experience Platform資料</li></ul> | <ul><li>將第三方資料添加到段</li><li>算法建模</li><li>激活到其他目標</li></ul> | 在其他Experience Platform解決方案(如Adobe Target、Advertising Cloud或Marketo)中使用Experience Cloud段。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style=&quot;table-layout:auto&quot;}
 
 ## Audience Manager片段與Adobe Experience Platform性狀 {#aam-segments-traits-in-aep}
 
@@ -143,7 +143,7 @@ Audience Manager自動建立名為 **Experience Platform段** 在段儲存中。
 | 此目標可以啟用與個人身份資訊(PII)的組合 | 與PII結合 |
 | 此目標可用於非現場廣告目標 | 跨站點目標 |
 | 此目標可用於現場廣告定位 | 現場廣告 |
-| 此目標可用於現場和個性化 | 現場個性化 |
+| 此目標可用於現場和個性化 | 現場Personalization |
 
 {style=&quot;table-layout:auto&quot;&quot;
 

@@ -8,10 +8,10 @@ title: 資料隱私權請求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 feature: Data Governance & Privacy
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 59%
+source-wordcount: '1444'
+ht-degree: 54%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 59%
 
 在發送單個資料隱私請求時，您可以提交任何 [!DNL Audience Manager] 標識符(ID)，如 **[Audience Manager標識符](data-privacy-ids.md)** 節，以及它們各自的命名空間ID（資料源ID）。
 
-[Privacy Service](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html) 支援兩種請求：資料存取和資料刪除請求。
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 支援兩種請求：資料存取和資料刪除請求。
 
 ## 資料存取請求 {#access-data}
 
-您可以通過 [Privacy ServiceUI](https://privacyui.cloud.adobe.io) （文檔） [這裡](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md))或通過調用Privacy ServiceAPI（文檔） [這裡](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 和 [!DNL API] 參考 [這裡](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml))。
+您可以通過 [Privacy ServiceUI](https://privacyui.cloud.adobe.io) （文檔） [這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en) 或通過調用Privacy ServiceAPI(文檔 [這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) 和 [!DNL API] 參考 [這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -46,7 +46,7 @@ ht-degree: 59%
 
 ## 資料刪除請求 {#delete-data}
 
-您可以通過 [Privacy ServiceUI](https://privacyui.cloud.adobe.io) （文檔） [這裡](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md))或通過調用Privacy ServiceAPI（文檔） [這裡](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 和 [!DNL API] 參考 [這裡](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml))。
+您可以通過 [Privacy ServiceUI](https://privacyui.cloud.adobe.io) （文檔） [這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en) 或通過調用Privacy ServiceAPI(文檔 [這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) 和 [!DNL API] 參考 [這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -65,13 +65,13 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
 
 在這些情況下，您無法以自動方式將刪除請求發送到激活合作夥伴 [!DNL Audience Manager]。
 
-請下載[合作夥伴 Excel 工作表](assets/AAM-Partners-October2019.xlsx)，瞭解哪些 啟用合作夥伴支援取消細分。[!DNL Audience Manager]
+請參閱 [基於設備的目標清單文檔](assets/AAM-Partners-October2019.xlsx) 看看 [!DNL Audience Manager] 激活合作夥伴支援取消分段。
 
 ## 選擇退出請求 {#opt-out-requests}
 
 [!DNL Audience Manager] 支援有關退出管理的行業標準。 閱讀以獲取有關支援的選擇退出類型的完整資訊 [!DNL Audience Manager]。
 
-雖然資料存取和刪除請求是透過 [Privacy Service](https://www.adobe.io/apis/experienceplatform/home/services/privacy-service.html) 處理，但目前是透過 [!DNL DCS API] 支援選擇退出請求。閱讀以瞭解選擇退出 [!DNL API] 電話應該是這樣的。
+雖然資料存取和刪除請求是透過 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 處理，但目前是透過 [!DNL DCS API] 支援選擇退出請求。閱讀以瞭解選擇退出 [!DNL API] 電話應該是這樣的。
 
 ### 全域選擇退出請求
 
