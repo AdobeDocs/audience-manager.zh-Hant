@@ -8,10 +8,10 @@ title: 資料隱私權請求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 feature: Data Governance & Privacy
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
-source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
+source-git-commit: 6b43885deddb0cdaeb3698051ea110f0a4eed44e
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 54%
+source-wordcount: '1431'
+ht-degree: 52%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 54%
 您可以提交訪問和刪除用戶資料的單個請求 [!DNL Audience Manager]，有兩種方式：
 
 * 透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。請參閱[此處](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)的文件。
-* 透過 **[!DNL Privacy Service API]**。請參閱文檔 [這裡](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_api_tutorial.md) 和 [!DNL API] 參考 [這裡](https://www.adobe.io/apis/experiencecloud/gdpr/api-reference.html#!acpdr/swagger-specs/privacy-service.yaml)。
+* 透過 **[!DNL Privacy Service API]**。請參閱文檔 [這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) 和 [!DNL API] 參考 [這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
 在發送單個資料隱私請求時，您可以提交任何 [!DNL Audience Manager] 標識符(ID)，如 **[Audience Manager標識符](data-privacy-ids.md)** 節，以及它們各自的命名空間ID（資料源ID）。
 
