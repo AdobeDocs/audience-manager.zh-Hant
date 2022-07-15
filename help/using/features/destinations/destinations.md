@@ -1,7 +1,7 @@
 ---
-description: 探索目的地的優勢、類型和用途 – 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
+description: 探索目的地的優勢、類型和用途 – 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。 使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
 keywords: 整合代碼、目標、目標概述、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標、目標
-landing-page-description: 探索目的地的優勢、類型和用途 – 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
+landing-page-description: 探索目的地的優勢、類型和用途 – 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。 使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
 seo-title: Destinations
 solution: Audience Manager
 title: 目的地

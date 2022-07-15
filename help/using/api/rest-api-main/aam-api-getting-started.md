@@ -29,7 +29,7 @@ ht-degree: 3%
 使用時請注意以下事項 [Audience ManagerAPI](https://bank.demdex.com/portal/swagger/index.html#/) 代碼：
 
 * **請求參數：** 除非另有指定，否則所有請求參數都是必需的。
-* **請求標題**:使用 [Adobe開發人員](https://www.adobe.io/) 令牌，必須提供 `x-api-key` 標題。 你可以 [!DNL API] 按照 [服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 的子菜單。
+* **請求標題**:使用 [Adobe Developer](https://www.adobe.io/) 令牌，必須提供 `x-api-key` 標題。 你可以 [!DNL API] 按照 [服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 的子菜單。
 * **[!DNL JSON]內容類型：** 指定 `content-type: application/json`  *和*  `accept: application/json` 你的密碼。
 * **請求和響應：** 以格式正確的方式發送請求 [!DNL JSON] 的雙曲餘切值。 [!DNL Audience Manager] 響應 [!DNL JSON] 格式化資料。 伺服器響應可以包含請求的資料、狀態代碼或兩者。
 * **訪問：** 您 [!DNL Audience Manager] 顧問將為您提供客戶端ID和密鑰，以便您 [!DNL API] 請求。
@@ -39,16 +39,16 @@ ht-degree: 3%
 
 的 [!DNL Audience Manager] [!DNL REST APIs] 支援兩種驗證方法。
 
-* [JWT（服務帳戶）身份驗證](#jwt) 使用 [Adobe開發人員](https://www.adobe.io/)。 [!DNL Adobe Developer] 是Adobe的開發者生態系統和社區。 包括 [所有Adobe產品的API](https://www.adobe.io/apis.html)。 這是設定和使用的推薦方法 [!DNL Adobe] [!DNL APIs]。
+* [JWT（服務帳戶）身份驗證](#jwt) 使用 [Adobe Developer](https://www.adobe.io/)。 [!DNL Adobe Developer] 是Adobe的開發者生態系統和社區。 包括 [所有Adobe產品的API](https://www.adobe.io/apis.html)。 這是設定和使用的推薦方法 [!DNL Adobe] [!DNL APIs]。
 * [OAuth身份驗證（不建議使用）](#oauth)。 雖然此方法已棄用，但現有客戶 [!DNL OAuth] 整合可以繼續使用此方法。
 
 >[!IMPORTANT]
 >
 >根據您的身份驗證方法，您需要調整請求 [!DNL URLs] 因此。 查看 [環境](#environments) 的子菜單。
 
-## [!DNL JWT] ([!DNL Service Account])使用Adobe開發人員進行身份驗證 {#jwt}
+## [!DNL JWT] ([!DNL Service Account])使用Adobe Developer進行身份驗證 {#jwt}
 
-### Adobe開發人員概述 {#adobeio}
+### Adobe Developer概述 {#adobeio}
 
 [!DNL Adobe Developer] 是Adobe的開發者生態系統和社區。 包括 [所有Adobe產品的API](https://www.adobe.io/apis.html)。
 
@@ -56,13 +56,13 @@ ht-degree: 3%
 
 ### 必要條件 {#prerequisites}
 
-在配置之前 [!DNL JWT] 驗證，確保您有權訪問 [Adobe開發人員控制台](https://console.adobe.io/) 在 [Adobe開發人員](https://www.adobe.io/)。 請與組織管理員聯繫以獲取訪問請求。
+在配置之前 [!DNL JWT] 驗證，確保您有權訪問 [Adobe Developer控制台](https://console.adobe.io/) 在 [Adobe Developer](https://www.adobe.io/)。 請與組織管理員聯繫以獲取訪問請求。
 
 ### 驗證 {#auth}
 
 按照以下步驟配置 [!DNL JWT (Service Account)] 驗證 [!DNL Adobe Developer]:
 
-1. 登錄到 [Adobe開發人員控制台](https://console.adobe.io/)。
+1. 登錄到 [Adobe Developer控制台](https://console.adobe.io/)。
 1. 按照中的步驟操作 [服務帳戶連接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
    * 期間 [步驟2:使用服務帳戶驗證將API添加到項目](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)的子菜單。 [!DNL Audience Manager] [!DNL API] 的雙曲餘切值。
 1. 首先嘗試連接 [!DNL API] 根據來自 [步驟3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
@@ -189,7 +189,7 @@ ht-degree: 3%
 針對可用的呼叫 [!DNL API] 方法：
 
 * 在 `HTTP` 標題，設定 `Authorization: Bearer <token>`。
-* 使用時 [JWT（服務帳戶）身份驗證](#jwt)，您需要提供 `x-api-key` 標題，與 `client_id`。 你可以 `client_id` 從 [Adobe開發人員整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 的子菜單。
+* 使用時 [JWT（服務帳戶）身份驗證](#jwt)，您需要提供 `x-api-key` 標題，與 `client_id`。 你可以 `client_id` 從 [Adobe Developer整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 的子菜單。
 * 呼叫所需 [!DNL API] 的雙曲餘切值。
 
 ## 可選 [!DNL API] 查詢參數 {#optional-api-query-parameters}

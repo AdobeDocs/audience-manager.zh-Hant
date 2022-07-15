@@ -1,15 +1,15 @@
 ---
 description: Adobe Audience Manager 的發展歷史、收集的資料類型、細分、報表等項目的相關資訊。
 landing-page-description: 有關 Audience Manager 歷程記錄、收集的資料類型、細分、報告等內容的資訊。
-seo-title: Audience Manager 概述
+seo-title: Audience Manager Overview
 solution: Audience Manager
 title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
-feature: 概述
+feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
 source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '304'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Audience Manager (AAM) 能協助您彙集受眾資料資產、簡化收集網站
 
 有了 Audience Manager，您不必再侷限於資料賣方、交換或需求端平台。此外，Audience Manager 也無從得知合作夥伴的資料資產。Audience Manager 提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料和我們的私人資料協作。與我們的合作夥伴解決方案團隊討論，協助您針對目標受眾做出明智而準確的決策。
 
-## 資料管理平台 (DMP) 的三項功能 {#dmp-three-functions}
+## 資料管理平台 (DMP) 的三項功能  {#dmp-three-functions}
 
 資料管理平台 (DMP) 的功能可歸納為三個類別，如下所示。
 
