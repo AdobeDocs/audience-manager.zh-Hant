@@ -8,9 +8,9 @@ title: 管理資料源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 6ec76227dd8c7581550c3d95e24fc5b6a4b01093
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '389'
 ht-degree: 2%
 
 ---
@@ -44,6 +44,10 @@ ht-degree: 2%
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
    * **[!UICONTROL Cross-device]** (建立 [!UICONTROL Profile Merge Rule])。 請注意，對於某些客戶，此選擇將公開 **[!UICONTROL ID Definition]** 頁籤
+
+   >[!NOTE]
+   >
+   >對於為Audience Manager和Experience Platform而預配的每個組織，即使您沒有在兩個應用程式之間設定段共用，當您建立跨設備資料源時， [標識命名空間](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces) 在Experience Platform中建立。
 
 1. 選擇 **[!UICONTROL ID Definition]** 的雙曲餘切值。 選項包括:
 
