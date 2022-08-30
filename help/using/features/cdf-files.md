@@ -8,9 +8,9 @@ title: 客戶資料摘要
 uuid: a5de1630-2c7a-4862-9ba0-f8343cdd2782
 feature: Customer Data Feeds
 exl-id: 118c4225-3b57-4a02-ae05-2fcbf3e5d743
-source-git-commit: e85dea581e1e7fee2fce0854dc094ed763df8160
+source-git-commit: 89137248aa47573f5b65e387a152f651419da827
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1989'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,10 @@ ht-degree: 3%
 
 列出並定義 [!UICONTROL CDF] 按外觀順序排列。 定義包括資料類型，但此資訊不是 [!UICONTROL CDF] 的子菜單。
 
+>[!IMPORTANT]
+>
+>CDF配置中預設排除事件像素。 如果希望將事件像素包括在CDF檔案中，請確保在客戶保護請求中指定。 每個事件像素將作為CDF檔案中的唯一行填充。
+
 ## 定義 {#definitions}
 
 A [!UICONTROL CDF] 檔案包含下面定義的部分或全部欄位。 有關內部檔案組織的資訊，請參見 [客戶資料饋送檔案結構](#cdf-file-structure)。
@@ -78,7 +82,7 @@ A [!UICONTROL CDF] 檔案包含下面定義的部分或全部欄位。 有關內
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
    <td colname="col2"> <p>數值 </p> </td> 
-   <td colname="col3"> <p>觸發ID同步的容器的ID。 </p> </td> 
+   <td colname="col3"> <p>觸發ID同步的容器的ID。 僅當在 <i>d_nsid</i> 欄位。 否則，CDF檔案中將不包含預設值0。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Realized Traits</code> </p> </td> 
