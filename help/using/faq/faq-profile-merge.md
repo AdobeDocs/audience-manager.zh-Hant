@@ -8,10 +8,10 @@ title: 設定檔合併規則與裝置圖表常見問題集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 86%
+source-wordcount: '1530'
+ht-degree: 82%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 86%
 
 **什麼是外部裝置圖表？**
 
-外部裝置圖表是指 [!DNL Audience Manager] 中並非專門從您自己的跨裝置資料來源建立的任何裝置圖表。例如，當您建立[設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)，並選擇 [!UICONTROL Co-op Device Graph] 或第三方裝置圖表選項時，就是使用外部裝置圖表。請參閱[裝置選項](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部裝置圖表是指 [!DNL Audience Manager] 中並非專門從您自己的跨裝置資料來源建立的任何裝置圖表。例如，在建立 [配置檔案合併規則](../features/profile-merge-rules/merge-rules-start.md) 並選擇第三方設備圖形選項，您正在使用外部設備圖形。 請參閱[裝置選項](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
 
  
 
 **在 [!UICONTROL Profile Merge Rule] 中使用外部裝置圖表有哪些常見的使用案例？**
 
-在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表的主要目的，是針對特定區段評估，以及為屬於單一個人或家庭的多部裝置授與資格。例如，區段本身可能有多種用途，例如以 DSP 所提供的廣告對潛在客戶進行目標定位，或透過站上個人化平台將客戶的站上體驗個人化。請參閱[外部裝置圖表使用案例](../features/profile-merge-rules/external-graph-use-cases.md)
+在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表的主要目的，是針對特定區段評估，以及為屬於單一個人或家庭的多部裝置授與資格。該段本身可具有多種用途，例如，通過由客戶通過現場個性化平台服務的廣告DSP或個性化客戶的現場體驗來瞄準潛在客戶的受眾。 請參閱[外部裝置圖表使用案例](../features/profile-merge-rules/external-graph-use-cases.md)
 
  
 

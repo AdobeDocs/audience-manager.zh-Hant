@@ -7,9 +7,9 @@ title: 資料來源清單與設定
 uuid: 280a6acd-fef0-4737-a96d-9e22fbc8bfaf
 feature: Data Sources
 exl-id: c561d51e-e1dc-413e-bf24-13f04f10abe6
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1071'
 ht-degree: 2%
 
 ---
@@ -55,13 +55,13 @@ ht-degree: 2%
       <li id="li_063F1B263B3B4D69B8880F7ACCB82450"> <b><span class="uicontrol"> 交叉設備</span></b>:客戶提供的經驗證的ID。 在要建立時選擇此選項： 
        <ul id="ul_D998B4081AD843C2B3B3E642DD011C1F"> 
         <li id="li_C9D2AF70603043D7BE9DF12FD494D7C7">跨設備資料源和構建 <span class="wintitle"> 配置檔案合併規則</span>。 </li> 
-        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">使用由 <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external"> Adobe Experience Cloud設備合作</a> 或與之整合的第三方設備圖 <span class="keyword"> Audience Manager</span>。 </li> 
+        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">使用由與之整合的第三方設備圖形提供的連結的資料源 <span class="keyword"> Audience Manager</span>。 </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> ID定義</span></b> </p> </td> 
-   <td colname="col2"> <p>的 <b><span class="uicontrol"> ID定義</span></b> 選項定義資料源與 <span class="keyword"> Audience Manager</span> 用戶ID(UUID)和關聯設備 <span class="keyword"> Adobe Experience Cloud設備合作</span> 或與之整合的第三方設備圖 <span class="keyword"> Audience Manager</span>。 選項包括: </p> <p> 
+   <td colname="col2"> <p>的 <b><span class="uicontrol"> ID定義</span></b> 選項定義資料源與 <span class="keyword"> Audience Manager</span> 用戶ID(UUID)和通過與整合的第三方設備圖形連結的關聯設備 <span class="keyword"> Audience Manager</span>。 選項包括: </p> <p> 
      <ul id="ul_718ADABF0C0C44E29643C85C69CE294F"> 
       <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol"> 人員：</span></b> 用於定義單個人員的ID。 此ID可以映射到多個 <span class="keyword"> Audience Manager</span> ID。 </li> 
       <li id="li_3D939AFF34654D618A05D2603F34462D"> <b><span class="uicontrol"> 家庭：</span></b> 用於定義一組人員的ID。 此ID可以映射到多個Audience ManagerID。 </li> 
@@ -154,7 +154,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 跨Audience Manager平台共用關聯的訪問者或設備ID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的資料源包含可以跨其他共用的訪問者或設備ID <span class="keyword"> Experience Cloud</span> 解決方案。 </p> </td> 
+   <td colname="col2"> <p>您的資料源包含可以在其他資料源之間共用的訪問者或設備ID <span class="keyword"> Experience Cloud</span> 解決方案。 </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> 非活動客戶ID的資料保留</span></b> </p> </td> 

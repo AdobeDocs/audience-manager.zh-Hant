@@ -7,9 +7,9 @@ title: 設定檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 feature: Profile Merge
 exl-id: 66341736-4f61-4306-b9f4-1b37dc7ce0ff
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '891'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Audience Manager合併每個設備+跨設備配置檔案對，以查看合併的
 
 ## 設備圖形選項 {#device-graph-options}
 
-選擇 [!UICONTROL device graph] 選項 [!UICONTROL Profile Merge] 規則取決於您的數字屬性和業務目標所特有的條件。 這些一般准則可以幫助您瞭解何時使用一種圖形與另一種圖形。 請注意，您必須是 [Adobe Experience Cloud設備合作](https://experienceleague.adobe.com/docs/device-co-op/using/home.html) 或與外部設備圖形有合同關係以使用這些選項。 有關何時選擇設備圖形選項的一般指導，請參閱下表。 有關特定使用案例，請參見 [配置檔案連結設備圖形使用案例](profile-link-use-case.md) 和 [外部設備圖形使用案例](external-graph-use-cases.md)。
+選擇 [!UICONTROL device graph] 選項 [!UICONTROL Profile Merge] 規則取決於您的數字屬性和業務目標所特有的條件。 這些一般准則可以幫助您瞭解何時使用一種圖形與另一種圖形。 注意，您必須與外部設備圖形具有合同關係才能使用這些選項。 有關何時選擇設備圖形選項的一般指導，請參閱下表。 有關特定使用案例，請參見 [配置檔案連結設備圖形使用案例](profile-link-use-case.md) 和 [外部設備圖形使用案例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -101,12 +101,12 @@ Audience Manager合併每個設備+跨設備配置檔案對，以查看合併的
   </tr> 
   <tr> 
    <td colname="col1"> <p>外部設備圖形選項 </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> 配置檔案合併</span> 使用 <a href="https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html" format="https" scope="external"> Experience Cloud設備合作</a> 或任何整合的外部設備圖形 <span class="keyword"> Audience Manager</span> 適合： </p> <p> 
+   <td colname="col2"> <p><span class="wintitle"> 配置檔案合併</span> 與整合的任何外部設備圖形構建的規則 <span class="keyword"> Audience Manager</span> 適合： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低級別客戶身份驗證的數字屬性。 </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">廣泛、影響深遠的品牌宣傳。 </li> 
       <li id="li_14AEC54CE34440889A3A36324EC6F497">使用客戶不需要處於經過驗證的狀態才有資格進行細分的情況。 </li> 
-     </ul> </p> <p> <p>提示：的 <span class="keyword"> 設備合作</span> 如果你是 <span class="keyword"> Experience Cloud</span> 身份驗證低且與任何設備圖形提供商沒有關係的客戶。 </p> </p> </td> 
+     </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>

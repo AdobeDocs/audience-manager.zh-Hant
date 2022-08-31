@@ -7,7 +7,7 @@ title: 設定檔合併規則快速入門
 uuid: 7d32c60f-467c-42dd-afa9-437fd7c473c5
 feature: Profile Merge
 exl-id: 11f397dd-1f23-4b14-be6f-60ce8b77ab12
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 3%
@@ -99,7 +99,6 @@ ht-degree: 3%
    * **[!UICONTROL No Device Profile]**
    * **[!UICONTROL Current Device Profile]**
    * **[!UICONTROL Profile Link Device Graph]**
-   * **[!UICONTROL Device Co-op]**
 4. 按一下 **[!UICONTROL Save]**.
 
 ### 使用跨設備ID作為用戶ID鍵的Adobe Campaign目標的注意事項 {#considerations}

@@ -7,10 +7,10 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
-source-git-commit: 15e36d2847627b5e5ccef11f8073ce5124f14815
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 100%
+source-wordcount: '297'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Audience Manager (AAM) 能協助您彙集受眾資料資產、簡化收集網站訪客之商業相關資訊的程序、建立可行銷區段，以及將具針對性的廣告和內容提供給合適的受眾。此外，Audience Manager 還提供強大的資料收集、控制和保護功能，讓您可輕鬆部署和管理標籤。
 
-有了 Audience Manager，您不必再侷限於資料賣方、交換或需求端平台。此外，Audience Manager 也無從得知合作夥伴的資料資產。Audience Manager 提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料和我們的私人資料協作。與我們的合作夥伴解決方案團隊討論，協助您針對目標受眾做出明智而準確的決策。
+有了 Audience Manager，您不必再侷限於資料賣方、交換或需求端平台。此外，Audience Manager在涉及合作夥伴的資料資產時是完全不可知的。 通過訪問多個資料源，Audience Manager使數字發佈商能夠使用多種第三方資料。 與我們的合作夥伴解決方案團隊討論，協助您針對目標受眾做出明智而準確的決策。
 
 ## 資料管理平台 (DMP) 的三項功能  {#dmp-three-functions}
 

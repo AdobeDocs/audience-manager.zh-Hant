@@ -7,22 +7,16 @@ title: Audience Lab 常見問題集
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 feature: Audience Lab
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 98%
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
 # Audience Lab 常見問題集{#audience-lab-faq}
 
 關於 Audience Lab 功能的常見問題。
-
-<!-- 
-
-audience-lab-faq.xml
-
- -->
 
 <br> 
 
@@ -54,6 +48,6 @@ audience-lab-faq.xml
 
 如需如何透過 [!UICONTROL RBAC] 權限使用 [!UICONTROL Audience Lab] 的詳細資訊，請參閱[建立區段測試群組](../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)。
 
-**我是否可以使用 [!UICONTROL Audience Lab] 搭配 [!UICONTROL Profile Link Device Graph] 和外部裝置圖形 ([Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/home.html)、Tapad Device Graph、Liveramp Device Graph)？**
+**我能用 [!UICONTROL Audience Lab] 與 [!UICONTROL Profile Link Device Graph] 和外部設備圖（Tapad設備圖、Liveramp設備圖）?**
 
 目前，使用 [!UICONTROL Profile Link Device Graph] 時，[!UICONTROL Audience Lab] 只能依連接至合格裝置的裝置來分割區段母體。我們正致力在 [!UICONTROL Audience Lab] 中增加對其他裝置圖表的支援，將會在提供支援時通知您。

@@ -1,26 +1,26 @@
 ---
-description: 配置檔案連結度量提供有關向站點進行身份驗證的人員和設備的資料。 在建立合併規則時，或在「配置檔案合併規則」面板中按一下現有規則時，「配置檔案連結」中的資料和圖形會動態更新。 這些度量可以包括來自Adobe Experience Cloud設備合作或其他第三方設備圖形源的設備圖形。
-seo-description: Profile Link metrics provide data about people and devices that authenticate to your site. The data and graphs in Profile Link update dynamically as you create a merge rules or when you click an existing rule from the Profile Merge Rules dashboard. These metrics can include device graph from the Adobe Experience Cloud Device Co-op or other third-party device graph sources.
+description: 配置檔案連結度量提供有關向站點進行身份驗證的人員和設備的資料。 在建立合併規則時，或在「配置檔案合併規則」面板中按一下現有規則時，「配置檔案連結」中的資料和圖形會動態更新。 這些度量可以包括來自其他第三方設備圖形源的設備圖形。
+seo-description: Profile Link metrics provide data about people and devices that authenticate to your site. The data and graphs in Profile Link update dynamically as you create a merge rules or when you click an existing rule from the Profile Merge Rules dashboard. These metrics can include device graph from other third-party device graph sources.
 seo-title: Report Metrics for Profile Merge Rules
 solution: Audience Manager
 title: 設定檔合併規則的報表量度
 uuid: 76a86ff0-4c64-4734-aec0-0a8828942096
 feature: Profile Merge
 exl-id: 2af59c60-2448-44af-90d2-eccc52f7ff02
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '698'
 ht-degree: 2%
 
 ---
 
 # 設定檔合併規則的報表量度 {#report-metrics-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rule] 度量提供有關向站點進行身份驗證的人員和設備的資料。 中的資料和圖形 [!UICONTROL Profile Merge Rule Reports] 在建立合併規則時或在按一下現有規則時動態更新 [!UICONTROL Profile Merge Rules] 控制項欄。 這些度量可以包括來自 [!DNL Adobe Experience Cloud Device Co-op] 或其他第三方設備圖形源。
+[!UICONTROL Profile Merge Rule] 度量提供有關向站點進行身份驗證的人員和設備的資料。 中的資料和圖形 [!UICONTROL Profile Merge Rule Reports] 在建立合併規則時或在按一下現有規則時動態更新 [!UICONTROL Profile Merge Rules] 控制項欄。 這些度量可以包括來自其他第三方設備圖形源的設備圖形。
 
 ## 合併規則度量 {#merge-rule-metrics}
 
-當合併規則使用來自 [Adobe Experience Cloud設備合作](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html) 或其他第三方設備圖形，您可以訪問 [!DNL Audience Manager]。 這允許您將已驗證的第一方資料與 [!UICONTROL Experience Cloud Device Co-op] 或另一個第三方設備圖。 有關由 [!UICONTROL Device Co-op]，請參閱 [設備圖形：內部流程和輸出](https://experienceleague.adobe.com/docs/device-co-op/using/device-graph/device-graph-overview.html)。 此資料每天更新。
+當合併規則使用您可能有權訪問的第三方設備圖形的資料時，報告會在並排條形圖中返回資料 [!DNL Audience Manager]。 這允許您將經過驗證的第一方資料與第三方設備圖形提供的跨設備資料進行比較。 此資料每天更新。
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
@@ -75,14 +75,6 @@ ht-degree: 2%
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 合作設備圖</span> </p> </td> 
-   <td colname="col2"> <p> 
-     <ul id="ul_64AD1DD89DF64703B70B973A463BA020"> 
-      <li id="li_D7D3A3871F434CBFA71BE8929EB41648">人員總數：180天 </li> 
-      <li id="li_125D387986B2463EB310203CE5857EDA">設備總數：180天 </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
    <td colname="col1"> <p><span class="wintitle"> LiveRamp</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_2772F3AD7E1440789B635794ECDE8DFB"> 
@@ -105,19 +97,19 @@ ht-degree: 2%
 
 ### 標準配置檔案連結報表
 
-標準 [!UICONTROL Profile Link] 報告如下所示。 使用多個資料源（最多3個，最大值）的合併規則在每個資料源的單獨頁籤中顯示圖形。 此合併規則不包括 [!UICONTROL Device Co-op] 資料。
+標準 [!UICONTROL Profile Link] 報告如下所示。 使用多個資料源（最多3個，最大值）的合併規則在每個資料源的單獨頁籤中顯示圖形。 此合併規則不包括 [!UICONTROL external device graph] 資料。
 
 ![](assets/profile-link-metrics.png)
 
 ### 帶設備圖資料的配置檔案連結報告
 
-A [!UICONTROL Profile Link Device Graph] 包括設備圖形資料的報告 [!UICONTROL Adobe Experience Cloud Device Co-op] 或第三方設備圖顯示 [!UICONTROL Profile Link] 並行條形圖的設備圖形資料。 將這些圖形彼此相鄰，可評估使用 [!UICONTROL Experience Cloud Device Co-op] 與 [!UICONTROL Profile Link] 自己來。 使用多個資料源（最多3個，最大值）的合併規則在每個資料源的單獨頁籤中顯示圖形。 作為提醒， [!UICONTROL Authenticated Activity] 圖形和度量不返回資料 [!DNL Adobe] 設備圖或其他可訪問的第三方設備圖 [!DNL Audience Manager]。
+A [!UICONTROL Profile Link Device Graph] 包括來自第三方設備圖形的設備圖形資料的報告顯示 [!UICONTROL Profile Link] 並行條形圖的設備圖形資料。 將這些圖形彼此相鄰放置，可評估使用外部設備圖形與 [!UICONTROL Profile Link] 自己來。 使用多個資料源（最多3個，最大值）的合併規則在每個資料源的單獨頁籤中顯示圖形。 作為提醒， [!UICONTROL Authenticated Activity] 圖形和度量不返回資料 [!DNL Adobe] 設備圖或其他可訪問的第三方設備圖 [!DNL Audience Manager]。
 
 ![](assets/profile-link-graph.png)
 
 ## 配置檔案連結趨勢圖 {#profile-link-trend}
 
-除了其他資料可視化外， [!UICONTROL Profile Link] 報告包括線形圖。 線形圖旨在顯示配置檔案規則隨時間的變化趨勢。 當按一下 [!UICONTROL Profile Merge Rules] 登錄頁(L) **[!UICONTROL Audience Data > Profile Merge Rules]**)。 如果您是 [!UICONTROL Device Co-op] 或其他第三方設備圖形，您可以訪問 [!DNL Audience Manager]。 按一下趨勢線查看基礎資料。
+除了其他資料可視化外， [!UICONTROL Profile Link] 報告包括線形圖。 線形圖旨在顯示配置檔案規則隨時間的變化趨勢。 當按一下 [!UICONTROL Profile Merge Rules] 登錄頁(L) **[!UICONTROL Audience Data > Profile Merge Rules]**)。 如果您是第三方設備圖形的成員，則這些圖形包括設備圖形資料。 [!DNL Audience Manager]。 按一下趨勢線查看基礎資料。
 
 >[!MORELIKETHIS]
 >
