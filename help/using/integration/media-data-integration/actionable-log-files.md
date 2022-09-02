@@ -8,7 +8,7 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: 869bbe657072255e5ea3f0e68294f8f0e6cc966a
+source-git-commit: b3f97cfbbd5167f03a6951fcc571368e4a0d15a4
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 3%
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 [!UICONTROL Actionable Log Files] 簡化從廣告伺服器擷取曝光數、點按和轉換的方式。 使用此資訊進行使用者細分，而無須手動像素媒體將促銷活動屬性傳送至 [!DNL Audience Manager].
 
-## 快速入門 {#getting-started}
+## 入門 {#getting-started}
 
 若要開始使用 [!UICONTROL Actionable Log Files]，您需要將記錄檔資料匯入 [!DNL Audience Manager]. 下列連結將協助您開始使用：
 
@@ -62,7 +62,8 @@ ht-degree: 3%
 >[!IMPORTANT]
 >
 >[!UICONTROL Actionable Log Files] 支援下列廣告伺服器：
-> 
+> <br>
+>
 > * [Google行銷活動經理](#dcm-logs-signals)
 > * [Google Ad Manager](#ad-manager-logs-signals)
 > * [Adobe Advertising Cloud、Flashtalking和Sizmek](#generic-logs-signals)
@@ -201,6 +202,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
 >[!NOTE]
 >
 >中提供的事件時間戳記 [!DNL Google Ad Manager] 記錄會接受並傳遞至 [!UICONTROL Data Collection Servers].
+>
 >
 >* 如果時間戳記不適用於 [!DNL Google Ad Manager] 記錄檔，我們會使用 `HTTP` 以事件時間戳記呼叫。
 >* 若 [!DNL Google Ad Manager] 記錄檔包含格式錯誤的時間戳記，我們會忽略整列。
