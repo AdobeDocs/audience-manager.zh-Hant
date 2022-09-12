@@ -1,32 +1,32 @@
 ---
 description: 資料檔案包含曝光、點按或轉換資料。 格式正確後，您可將此資料匯入Audience Manager，並用於Audience Optimization報表和可操作的記錄檔。 依照本節中的規格設定資料檔案的格式。
-seo-description: 資料檔案包含曝光、點按或轉換資料。 格式正確後，您可將此資料匯入Audience Manager，並用於Audience Optimization報表和可操作的記錄檔。 依照本節中的規格設定資料檔案的格式。
-seo-title: 受眾最佳化報表的資料檔案和可操作的記錄檔
+seo-description: A data file contains impression, click, or conversion data. When formatted properly, you can import this data into Audience Manager and use it in the Audience Optimization reports and for Actionable Log Files. Format your data files according to the specifications in this section.
+seo-title: Data Files for Audience Optimization Reports and Actionable Log Files
 solution: Audience Manager
 title: 受眾最佳化報表的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
-feature: 記錄檔
+feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: db90a6f1aaf85b10e31e93e316c257b7c3a904aa
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 受眾最佳化報表的資料檔案和可操作的記錄檔 {#data-files-for-audience-optimization-reports}
 
-資料檔案包含曝光、點按或轉換資料。 格式正確後，您可將此資料匯入Audience Manager，以在[Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中檢視，並透過[可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)使用資料建立特徵。 依照本節中的這些規範設定資料檔案的格式。
+資料檔案包含曝光、點按或轉換資料。 格式正確後，您可將此資料匯入Audience Manager，以在 [Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md) 並透過 [可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md). 依照本節中的這些規範設定資料檔案的格式。
 
 ## 概述 {#overview}
 
-命名正確且格式正確的資料檔案可讓您將曝光數、點按次數或轉換資料匯入[Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中。 與未與[!DNL Audience Manager]整合的合作夥伴合作，且您想要使用該報表套裝中的其資料時，這個用法很有幫助。 此程式需要個別的檔案，才能顯示曝光、點按和轉換資料。 請勿將這些事件混合在單一檔案中。
+命名正確且格式正確的資料檔案，可讓您將曝光數、點按次數或轉換資料匯入 [Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md). 這在與未整合的合作夥伴合作時很有用 [!DNL Audience Manager] 而您想要使用該報表套裝中的資料。 此程式需要個別的檔案，才能顯示曝光、點按和轉換資料。 請勿將這些事件混合在單一檔案中。
 
-資料檔案必須附有中繼資料檔案。 元資料檔案內容將資料檔案資訊與報告菜單中相關、人類可讀的標籤匹配。 如需詳細資訊，請參閱[中繼資料檔案的概述和對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+資料檔案必須附有中繼資料檔案。 元資料檔案內容將資料檔案資訊與報告菜單中相關、人類可讀的標籤匹配。 如需詳細資訊，請參閱 [中繼資料檔案的概述與對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
 
-## 資料檔案的命名慣例{#naming-conventions}
+## 資料檔案的命名慣例 {#naming-conventions}
 
-以下語法定義格式良好的資料檔案名稱的結構。 請注意， *斜體*&#x200B;表示變數預留位置，該預留位置會根據檔案內容而改變。
+以下語法定義格式良好的資料檔案名稱的結構。 注意， *斜體* 指示根據檔案內容而更改的變數佔位符。
 
 **語法:** <pre><i>事件類型</i>_<i>yyyymmdd</i></code></pre>
 
@@ -34,27 +34,27 @@ ht-degree: 5%
 
 * 事件類型表示檔案包含曝光數、點按或轉換。 為每個事件類型建立個別檔案。
 * 底線可分隔事件類型和年月日時間戳記。
-* 在上傳之前，請使用gzip壓縮您的檔案，並以`.gz`副檔名儲存。
+* 在上傳之前，請使用gzip壓縮您的檔案，並使用 `.gz` 副檔名。
 
 根據這些需求，請根據資料檔案的內容為其命名，如下所示：
 
-* 曝光資料： <pre>impressions_<i>yyyymmdd</i>.gz</code></pre>
-* 按一下資料： <pre>clicks_<i>yyyymmdd</i>.gz</code></pre>
-* 轉換資料： <pre>conversions_<i>yyyymmdd</i>>gz</code></pre>
+* 曝光資料： <pre>曝光次數_<i>yyyymmdd</i>.gz</code></pre>
+* 按一下資料： <pre>點按次數_<i>yyyymmdd</i>.gz</code></pre>
+* 轉換資料： <pre>轉換_<i>yyyymmdd</i>.gz</code></pre>
 
-## 資料檔案的內容格式{#content-format}
+## 資料檔案的內容格式 {#content-format}
 
-下列語法定義格式良好的資料檔案中的內容結構。 請注意， *斜體*&#x200B;表示變數預留位置，並以實際資料檔案中的標籤取代。
+下列語法定義格式良好的資料檔案中的內容結構。 注意， *斜體* 指出變數預留位置，並以實際資料檔案中的標籤取代。
 
-**語法:** <pre><i>標題標籤1</i> |標 <i>題標籤2</i> .. <i>標題標籤n</i> |版 <i>本</i></code></pre>
+**語法:** <pre><i>標題標籤1</i> | <i>標題2</i> ... <i>標題標籤n</i> | <i>版本</i></code></pre>
 
 在檔案內容中：
 
 * 標題標籤必須依順序顯示，如下表所示。 曝光次數和點按次數使用相同的標籤。 轉換檔案包含額外的標題。
-* 如果您沒有特定欄的資料，請以`-1`填入該欄位。
+* 如果您沒有特定欄的資料，請在該欄位中填入 `-1`.
 
-* 檔案&#x200B;*必須*&#x200B;以版本號結束。 目前版本為1.1。
-* 以非打印ASCII 001字元分隔檔案標題和內容。 如果您無法使用ASCII 001，請以索引標籤分隔字元分隔標題和資料。 由於這些是非列印字元，上述語法範例只顯示垂直號`"|"`以供顯示之用。
+* 檔案 *必須* 以版本號結尾。 目前版本為1.1。
+* 以非打印ASCII 001字元分隔檔案標題和內容。 如果您無法使用ASCII 001，請以索引標籤分隔字元分隔標題和資料。 由於這些是非列印字元，上方的語法範例顯示縱線字元 `"|"` 僅供顯示之用。
 
 **欄位標籤**
 
@@ -70,11 +70,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>時間戳記 </p> </td> 
-   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用<code> yyyy-MM-dd HH:mm:ss</code>格式。 </p> </td> 
+   <td colname="col2"> <p>曝光、點按或轉換事件的UTC日期和時間。 使用 <code> yyyy-MM-dd HH:mm:ss</code> 格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>User-ID </p> </td> 
-   <td colname="col2"> <p>網站訪客的ID，也稱為<span class="term">資料提供者唯一使用者ID</span>或DPUUID。 </p> </td> 
+   <td colname="col2"> <p>網站訪客的ID，亦稱為 <span class="term"> 資料提供者不重複使用者ID</span> 或DPUUID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>廣告商 — ID </p> </td> 
@@ -140,19 +140,19 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-## 資料檔案{#delivery-methods}的傳送方法
+## 資料檔案的傳送方法 {#delivery-methods}
 
-將您的曝光數、點按或轉換資料檔案上傳至[!DNL Audience Manager]帳戶的Amazon S3目錄。 如需傳遞/目錄路徑、檔案處理時間和更新的相關資訊，請參閱本區段。
+將您的曝光數、點按或轉換資料檔案上傳至Amazon S3目錄，以供您 [!DNL Audience Manager] 帳戶。 如需傳遞/目錄路徑、檔案處理時間和更新的相關資訊，請參閱本區段。
 
 >[!IMPORTANT]
 >
-> 請連絡您的Audience Manager顧問或客戶服務，以開始使用並設定資料檔案的[!DNL Amazon S3]目錄。
+> 請連絡您的Audience Manager顧問或客戶服務，以開始並設定 [!DNL Amazon S3] 資料檔案的目錄。
 
 **傳遞路徑語法與範例**
 
-資料儲存在[!DNL Amazon S3]目錄中每個客戶的獨立命名空間中。 檔案路徑遵循下列語法。 注意， *斜體*&#x200B;表示變數預留位置。 其他元素為常數或索引鍵，不會變更。
+資料會儲存在 [!DNL Amazon S3] 目錄。 檔案路徑遵循下列語法。 注意， *斜體* 表示變數預留位置。 其他元素為常數或索引鍵，不會變更。
 
-**語法:** <pre>.../log_ingestion/pid= <i>AAM ID<i>/dpid= <i>d_src</i>/logs/ <i>檔案類型</i>_<i>yyyymmdd</i></code></pre>
+**語法:** <pre>.../log_ingestion/pid= <i>AAM ID</i>/dpid= <i>d_src</i>/logs/ <i>檔案類型</i>_<i>yyyymmdd</i></code></pre>
 
 下表定義檔案傳送路徑中的每個元素。
 
@@ -170,7 +170,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>此機碼值組包含您的<span class="keyword">Audience Manager</span>客戶ID。 </p> </td> 
+   <td colname="col2"> <p>此機碼值組包含您的 <span class="keyword"> Audience Manager</span> 客戶ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 
@@ -201,4 +201,4 @@ ht-degree: 5%
 
 ## 後續步驟 {#next-steps}
 
-檢閱命名和建立中繼資料檔案的需求。 若要開始使用，請參閱[中繼資料檔案的概述和對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)。
+檢閱命名和建立中繼資料檔案的需求。 若要開始使用，請參閱 [中繼資料檔案的概述與對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md).
