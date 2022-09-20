@@ -1,16 +1,16 @@
 ---
 description: 傳回在您所有第一方和第三方特徵之間共用之不重複使用者數量的資料。
-seo-description: 傳回在您所有第一方和第三方特徵之間共用之不重複使用者數量的資料。
-seo-title: 特徵至特徵重疊報表
+seo-description: Returns data on the number of unique users shared among all your first and third-party traits.
+seo-title: Trait-to-Trait Overlap Report
 solution: Audience Manager
 title: 特徵至特徵重疊報表
 uuid: 7fb3fc9e-0e0b-492a-9c3a-04356afb19c7
-feature: 重疊報表
+feature: Overlap Reports
 exl-id: cbc933bb-f2af-4ad0-8eb9-cbec1ee952e0
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: 6cc1351c3a84d4d2219f33ef6175f182b9641377
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 8%
+source-wordcount: '497'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Audience Manager中的重疊報表遵循RBAC原則。 您只能根據您所屬的[RBAC使用者群組](/help/using/features/administration/administration-overview.md)，查看您有權存取的資料來源特徵。
+>Audience Manager中的重疊報表遵循RBAC原則。 您只能根據 [RBAC用戶組](/help/using/features/administration/administration-overview.md) 屬於你。
 
 <!-- 
 
@@ -30,7 +30,7 @@ c_overlap_reports.xml
 
 ## 概述
 
-[!UICONTROL Trait-to-Trait Overlap]報表會傳回所有您自己的特徵和您第三方特徵之間共用之不重複使用者百分比的資料。 此報表是最佳化工具，可協助您：
+此 [!UICONTROL Trait-to-Trait Overlap] 報表會傳回所有您自己的特徵和您第三方特徵之間共用的不重複使用者百分比資料。 此報表是最佳化工具，可協助您：
 
 * 根據您的需求，建立高或低重疊的區段。 具有高重疊的特徵可提供目標對象，但不重複訪客較少。 重疊程度低的特徵有助於觸及較大的不重複訪客集。
 * 驗證第三方特徵資料：類似的第一方和第三方特徵之間有強烈重疊，說明您資料合作夥伴的特徵正確且值得信賴。 相反地，低重疊可能表示第三方特徵實際上可能並不包含與您自己類似的第一方特徵相同的資訊。
@@ -38,11 +38,15 @@ c_overlap_reports.xml
 
 ## 範例報表
 
-下圖提供[!UICONTROL Trait-to-Trait Overlap]報表中元素的高階概觀。
+下圖提供 [!UICONTROL Trait-to-Trait Overlap] 報表。
 
 >[!NOTE]
 >
->當[!UICONTROL Trait-to-Trait Overlap]報表將相同特徵與自身進行比較時，會傳回空白欄位。
+>此 [!UICONTROL Trait-to-Trait Overlap] 報表會在比較相同特徵本身時傳回空白欄位。
+
+>[!NOTE]
+>
+>特徵對特徵重疊報表中無法比較資料夾特徵。 透過使用特定資料夾特徵建立區段，您可以透過 [區段對特徵重疊報表](/help/using/reporting/dynamic-reports/segment-trait-overlap-report.md).
 
 ![](assets/trait-to-trait-overlap.png)
 
@@ -50,7 +54,7 @@ c_overlap_reports.xml
 
 選取個別點，以在快顯視窗中檢視資料詳細資訊。 您的點按動作會自動更新報表中顯示的資料。
 
-## 定義的特徵對特徵重疊資料快顯欄位{#field-definitions}
+## 定義的特徵對特徵重疊資料快顯欄位 {#field-definitions}
 
 說明按一下個別資料點時，快顯視窗中顯示的量度。
 
@@ -60,7 +64,7 @@ r_t2t_data_pop.xml
 
  -->
 
-[!UICONTROL Trait-to-Trait Overlap]報表的快顯功能表包含下列量度。 請注意，表格中的唯一值量度代表您的&#x200B;*即時使用者*。
+的快顯視窗 [!UICONTROL Trait-to-Trait Overlap] 報表包含下列量度。 請注意，表格中的獨特值量度代表您的 *即時使用者*.
 
 <table id="table_A2A0CFC47C1A404994B82E6630E711A2"> 
  <thead> 
@@ -116,9 +120,9 @@ r_t2t_data_pop.xml
 >[!MORELIKETHIS]
 >
 >* [使用資料滑桿篩選報表結果](../../reporting/dynamic-reports/data-sliders.md)
-* [動態報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
-* [報表圖示和工具說明](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
-* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
-* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
-* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
+>* [動態報表中使用的形狀、顏色和大小](../../reporting/dynamic-reports/interactive-report-technology.md#shapes-colors-sizes)
+>* [報表圖示和工具說明](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)
+>* [重疊報表：更新排程和最小區段大小](../../reporting/dynamic-reports/overlap-minimum-segment-size.md)
+>* [所選 Audience Manager 報表中的資料取樣和錯誤率...](../../reporting/report-sampling.md)
+>* [重疊報表的 CSV 檔案](../../reporting/dynamic-reports/overlap-csv-files.md)
 
