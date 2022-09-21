@@ -10,25 +10,29 @@ exl-id: 33dca495-6923-4966-9ec3-8b0fd2f17649
 hide: true
 hidefromtoc: true
 index: n
-source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
+source-git-commit: 3f4a161ee856357b5cb5eb757ad779dee5357b09
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 75%
+source-wordcount: '521'
+ht-degree: 76%
 
 ---
 
-# 是CoopSafe{#iscoopsafe}
+# isCoopSafe{#iscoopsafe}
+
+>[!WARNING]
+>
+>此功能已停用。
 
 選用的布林值設定，可決定 DIL 是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
 
 ## 要求 {#requirements}
 
-要使用 `isCoopSafe` 必須：
+使用 `isCoopSafe` 您必須：
 
-* 使用 [!UICONTROL DIL] v6.11或更高版本。
+* 使用 [!UICONTROL DIL] v6.11或更新版本。
 * 參與 [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/home.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
-* 與 [!DNL Adobe] 顧問，用於在您的設備合作帳戶上設定允許清單或denylist標誌。 沒有可啟用這些標誌的自助服務路徑。
+* 與您的 [!DNL Adobe] 顧問在您的Device co-op帳戶上設定允許清單或封鎖清單標幟。 沒有自助路徑可啟用這些標幟。
 
 ## 使用個案 {#use-cases}
 
@@ -44,11 +48,11 @@ ht-degree: 75%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>已驗證的訪客</b> </p> </td> 
-   <td colname="col2"> <p>添加 <code> isCoopSafe </code> 到 <span class="wintitle"> DIL </span> 用於控制設備合作部如何使用經過驗證的具有或未接受使用期限協定的訪問者的資料來構建設備圖形。 </p> </td> 
+   <td colname="col2"> <p>新增 <code> isCoopSafe </code> 至 <span class="wintitle"> DIL </span> 用來控制Device Co-op如何使用已驗證且接受或未接受使用條款之訪客的資料來建立裝置圖形。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第三方網站上的 DIL</b> </p> </td> 
-   <td colname="col2"> <p>添加 <code> isCoopSafe </code> 到 <span class="wintitle"> DIL </span> 用於第三方站點的代碼，您可以： </p> <p> 
+   <td colname="col2"> <p>新增 <code> isCoopSafe </code> 至 <span class="wintitle"> DIL </span> 用於協力廠商網站的程式碼，其中您： </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">無法確保已驗證的訪客是否已經接受使用者條款。 </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制 Device Co-op 使用資料的方式，以建立裝置圖形。 </li> 
@@ -69,7 +73,7 @@ ht-degree: 75%
 
 **程式碼範例**
 
-在DIL實例化時設定此設定。
+當DIL具現化時，請設定此選項。
 
 ```js
 var dilInstance = DIL.create({ 
@@ -80,7 +84,7 @@ var dilInstance = DIL.create({
 
 ## 事件呼叫 POST 參數 {#post-parameters}
 
-根據您設定的標誌( `true` 或 `false`) [!UICONTROL DIL] 翻譯 `isCoopSafe` 將這些POST參數發送到 [!DNL Adobe] 在事件呼叫中：
+視您設定的標幟而定( `true` 或 `false`), [!UICONTROL DIL] 轉譯 `isCoopSafe` 並傳送至這些POST參數 [!DNL Adobe] 在事件呼叫中：
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
@@ -120,11 +124,11 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopSafe(); </code> </p> </td> 
-   <td colname="col2"> <p>設定POST參數 <code> d_coop_safe=1 </code> 所有後續事件調用。 </p> </td> 
+   <td colname="col2"> <p>設定POST參數 <code> d_coop_safe=1 </code> 在所有後續事件呼叫中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> dilInstance.api.setAsCoopUnsafe(); </code> </p> </td> 
-   <td colname="col2"> <p>設定POST參數 <code> d_coop_unsafe=1 </code> 所有後續事件調用。 </p> </td> 
+   <td colname="col2"> <p>設定POST參數 <code> d_coop_unsafe=1 </code> 在所有後續事件呼叫中。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
