@@ -1,16 +1,16 @@
 ---
 description: 報表的相關常見疑問與問題。
-seo-description: 報表的相關常見疑問與問題。
-seo-title: 報表常見問題集
+seo-description: Common reporting-related questions and issues.
+seo-title: Reporting FAQ
 solution: Audience Manager
-title: 報表常見問答集
+title: 報表常見問題集
 uuid: 78cd6c86-8a4a-4748-ab71-b6e8d6078c94
-feature: 報表參考
+feature: Reporting Reference
 exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+source-git-commit: 3bddd51582f3f8c46908dba5c5ac1938cb480013
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 99%
+source-wordcount: '695'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ faq_reports.xml
 
 **如果我執行電子郵件行銷活動，如何判斷經過重新導向的使用者是從該行銷活動還是從其他來源進入我的網站？**
 
-請將行銷活動專屬的查詢字串附加至您要監控之網站區段的 URL。接下來，設定要用於擷取此變數的特徵規則。例如，若您的 URL 傳入的行銷活動 ID 類似 `www.test123.com/electronics?campaign=123`，那麼可建立一個特徵規則，使用會尋找類似 `h_referer = 'campaign=123'` 標題的特徵規則，從 `h_referer` 變數中擷取該資料。
+請將行銷活動專屬的查詢字串附加至您要監控之網站區段的 URL。接下來，設定要用於擷取此變數的特徵規則。例如，若您的URL傳入的促銷活動ID類似， `www.test123.com/electronics?campaign=123`，然後建立特徵規則，以從 `h_referer` 變數，具有會尋找標題(類似 `h_referer = 'campaign=123'`.
 
 <br> 
 
