@@ -5,9 +5,9 @@ title: Experience Platform區段共用與Audience Manager和其他Experience Clo
 keywords: AEP受眾共用， AEP區段，平台區段，區段共用，受眾共用，共用區段， AAM AEP區段共用
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 14e0ddd00d3a25674090ea9dbe485c77ad1d2aed
+source-git-commit: 0245dd11de31c3139c5df5dc78100f0d3935aa2e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1901'
 ht-degree: 1%
 
 ---
@@ -41,9 +41,9 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 
 {style=&quot;table-layout:auto&quot;}
 
-## 快速入門 — 如何啟用Audience Manager與Experience Platform之間的資料共用 {#enable-data-sharing-aam-aep}
+## Audience Manager區段和Adobe Experience Platform特徵 {#aam-segments-traits-in-aep}
 
-以下兩節說明如何啟用Audience Manager和Experience Platform之間的資料共用。
+以下各節說明如何啟用從Audience Manager到Experience Platform的資料共用，以及如何在Experience Platform中使用Audience Manager特徵和區段。
 
 ### 啟用從Audience Manager到Experience Platform的資料共用 {#enable-aam-to-aep-data}
 
@@ -58,6 +58,17 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 >
 >![螢幕擷圖顯示「選取所有區段」和「選取所有特徵」選項，此選項在工作流程中未勾選，而會連線至Audience Manager來源連接器。](/help/using/integration/integration-aep/assets/select-all-segments-traits-unchecked.png)
 
+### 在Audience Manager中使用Experience Platform特徵和區段 {#use-aam-data-in-aep}
+
+設定Audience Manager來源連接器以從Audience Manager匯入特徵和區段後，您的Audience Manager資料在Experience Platform中顯示為 **對象** 在區段工作流程中。 如需Audience Manager區段和Experience Platform特徵的詳細資訊，請參閱：
+
+* [區段服務概觀](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
+* [Experience Platform區段產生器使用手冊](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
+
+## Adobe Experience Platform區段Audience Manager {#aep-segments-in-aam}
+
+以下各節說明如何啟用從Experience Platform到Audience Manager的資料共用，以及如何在Audience Manager中使用Experience Platform區段。
+
 ### 啟用從Experience Platform到Audience Manager的資料共用 {#enable-aep-to-aam-data}
 
 >[!NOTE]
@@ -68,14 +79,7 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 
 請務必共用從Platform傳至Audience Manager的資料計畫，以確保連線設定正確。 例如，如果您需要為傳送至Adobe Target的區段共用地區資料，則需要在票證中傳達這些資訊。 從Experience Platform到Audience Manager的資料共用連線會在提交請求後的6個工作天內設定。
 
-## Audience Manager區段和Adobe Experience Platform特徵 {#aam-segments-traits-in-aep}
-
-設定Audience Manager來源連接器以從Audience Manager匯入特徵和區段後，您的Audience Manager資料在Experience Platform中顯示為 **對象** 在區段工作流程中。 如需Audience Manager區段和Experience Platform特徵的詳細資訊，請參閱：
-
-* [區段服務概觀](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#audiences)
-* [Experience Platform區段產生器使用手冊](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#audiences)
-
-## Adobe Experience Platform區段Audience Manager {#aep-segments-in-aam}
+### 在Audience Manager中使用Experience Platform區段 {#use-aep-data-in-aam}
 
 您在「Experience Platform」中建立的區段，會以訊號、特徵和區段形式顯示在Audience Manager介面中，並具有下列組成規則：
 
