@@ -14,122 +14,122 @@ ht-degree: 3%
 
 ---
 
-# 入門 [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
+# 開始使用 [!DNL REST] [!DNL APIs] {#getting-started-with-rest-apis}
 
-有關一般要求、驗證、可選查詢參數、請求的資訊 [!DNL URLs]、和其他引用。
+有關一般需求、驗證、可選查詢參數、請求的資訊 [!DNL URLs]和其他參考。
 
 <!-- c_rest_api_overview.xml -->
 
 ## API 需求與建議 {#api-requirements-recommendations}
 
-與 [!DNL Audience Manager] [!DNL API]s
+使用時，您必須且應該執行的事項 [!DNL Audience Manager] [!DNL API]s.
 
 <!-- aam-api-requirements.xml -->
 
-使用時請注意以下事項 [Audience ManagerAPI](https://bank.demdex.com/portal/swagger/index.html#/) 代碼：
+使用時請注意下列事項 [Audience ManagerAPI](https://bank.demdex.com/portal/swagger/index.html#/) 代碼：
 
-* **請求參數：** 除非另有指定，否則所有請求參數都是必需的。
-* **請求標題**:使用 [Adobe Developer](https://www.adobe.io/) 令牌，必須提供 `x-api-key` 標題。 你可以 [!DNL API] 按照 [服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 的子菜單。
-* **[!DNL JSON]內容類型：** 指定 `content-type: application/json`  *和*  `accept: application/json` 你的密碼。
-* **請求和響應：** 以格式正確的方式發送請求 [!DNL JSON] 的雙曲餘切值。 [!DNL Audience Manager] 響應 [!DNL JSON] 格式化資料。 伺服器響應可以包含請求的資料、狀態代碼或兩者。
-* **訪問：** 您 [!DNL Audience Manager] 顧問將為您提供客戶端ID和密鑰，以便您 [!DNL API] 請求。
-* **文檔和代碼示例：** 文本 *斜體* 表示在生成或接收時提供或傳遞的變數 [!DNL API] 資料。 替換 *斜體* 包含您自己的代碼、參數或其他必需資訊的文本。
+* **要求參數：** 除非另有指定，否則所有要求參數都是必要的。
+* **要求標題**:使用 [Adobe Developer](https://www.adobe.io/) 代號，您必須提供 `x-api-key` 頁首。 你可以 [!DNL API] 鍵 [服務帳戶整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 頁面。
+* **[!DNL JSON]內容類型：** 指定 `content-type: application/json`  *和*  `accept: application/json` 在程式碼中。
+* **請求和回應：** 以格式正確的方式傳送請求 [!DNL JSON] 物件。 [!DNL Audience Manager] 回應 [!DNL JSON] 格式化資料。 伺服器回應可包含請求的資料、狀態代碼或兩者。
+* **訪問：** 您的 [!DNL Audience Manager] 顧問會提供您用戶端ID和金鑰，讓您 [!DNL API] 要求。
+* **檔案和程式碼範例：** 中的文字 *斜體* 代表您在產生或接收時提供或傳入的變數 [!DNL API] 資料。 取代 *斜體* 使用您自己的程式碼、參數或其他必要資訊的文字。
 
 ## 驗證 {#authentication}
 
-的 [!DNL Audience Manager] [!DNL REST APIs] 支援兩種驗證方法。
+此 [!DNL Audience Manager] [!DNL REST APIs] 支援兩種驗證方法。
 
-* [JWT（服務帳戶）身份驗證](#jwt) 使用 [Adobe Developer](https://www.adobe.io/)。 [!DNL Adobe Developer] 是Adobe的開發者生態系統和社區。 包括 [所有Adobe產品的API](https://www.adobe.io/apis.html)。 這是設定和使用的推薦方法 [!DNL Adobe] [!DNL APIs]。
-* [OAuth身份驗證（不建議使用）](#oauth)。 雖然此方法已棄用，但現有客戶 [!DNL OAuth] 整合可以繼續使用此方法。
+* [JWT（服務帳戶）驗證](#jwt) 使用 [Adobe Developer](https://www.adobe.io/). [!DNL Adobe Developer] 是Adobe的開發人員生態系統和社群。 包括 [所有Adobe產品的API](https://www.adobe.io/apis.html). 這是設定和使用的建議方式 [!DNL Adobe] [!DNL APIs].
+* [OAuth驗證（已廢止）](#oauth). 雖然此方法已淘汰，但現有的客戶 [!DNL OAuth] 整合可繼續使用此方法。
 
 >[!IMPORTANT]
 >
->根據您的身份驗證方法，您需要調整請求 [!DNL URLs] 因此。 查看 [環境](#environments) 的子菜單。
+>您需要根據驗證方法調整請求 [!DNL URLs] 因此。 請參閱 [環境](#environments) 一節，以取得您應使用之主機名稱的詳細資訊。
 
-## [!DNL JWT] ([!DNL Service Account])使用Adobe Developer進行身份驗證 {#jwt}
+## [!DNL JWT] ([!DNL Service Account])使用Adobe Developer進行驗證 {#jwt}
 
 ### Adobe Developer概述 {#adobeio}
 
-[!DNL Adobe Developer] 是Adobe的開發者生態系統和社區。 包括 [所有Adobe產品的API](https://www.adobe.io/apis.html)。
+[!DNL Adobe Developer] 是Adobe的開發人員生態系統和社群。 包括 [所有Adobe產品的API](https://www.adobe.io/apis.html).
 
-這是設定和使用的推薦方法 [!DNL Adobe] [!DNL APIs]。
+這是設定和使用的建議方式 [!DNL Adobe] [!DNL APIs].
 
 ### 必要條件 {#prerequisites}
 
-在配置之前 [!DNL JWT] 驗證，確保您有權訪問 [Adobe Developer控制台](https://console.adobe.io/) 在 [Adobe Developer](https://www.adobe.io/)。 請與組織管理員聯繫以獲取訪問請求。
+設定之前 [!DNL JWT] 驗證，確定您擁有 [Adobe Developer Console](https://console.adobe.io/) in [Adobe Developer](https://www.adobe.io/). 如需存取請求，請聯絡貴組織的管理員。
 
 ### 驗證 {#auth}
 
-按照以下步驟配置 [!DNL JWT (Service Account)] 驗證 [!DNL Adobe Developer]:
+請依照下列步驟來設定 [!DNL JWT (Service Account)] 驗證使用 [!DNL Adobe Developer]:
 
-1. 登錄到 [Adobe Developer控制台](https://console.adobe.io/)。
-1. 按照中的步驟操作 [服務帳戶連接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
-   * 期間 [步驟2:使用服務帳戶驗證將API添加到項目](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)的子菜單。 [!DNL Audience Manager] [!DNL API] 的雙曲餘切值。
-1. 首先嘗試連接 [!DNL API] 根據來自 [步驟3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)。
+1. 登入 [Adobe Developer Console](https://console.adobe.io/).
+1. 請依照 [服務帳戶連接](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+   * 期間 [步驟2:使用服務帳戶驗證將API新增至您的專案](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md)，選擇 [!DNL Audience Manager] [!DNL API] 選項。
+1. 請先嘗試連接 [!DNL API] 根據 [步驟3](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
 >[!NOTE]
 >
->配置和使用 [!DNL Audience Manager] [!DNL REST APIs] 以自動方式生成 [!DNL JWT] 程式。 請參閱 [JWT（服務帳戶）身份驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) 的上界。
+>若要設定及使用 [!DNL Audience Manager] [!DNL REST APIs] 您可以自動產生 [!DNL JWT] 程式設計。 請參閱 [JWT（服務帳戶）驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) 以取得詳細指示。
 
 ### 技術帳戶RBAC權限
 
-如果您的Audience Manager帳戶使用 [基於角色的訪問控制](../../features/administration/administration-overview.md)，您必須建立Audience Manager技術用戶帳戶，並將其添加到Audience ManagerRBAC組中，該組將調用API。
+如果您的Audience Manager帳戶使用 [角色型存取控制](../../features/administration/administration-overview.md)，您必須建立Audience Manager技術使用者帳戶，並將其新增至將進行API呼叫的Audience ManagerRBAC群組。
 
-按照以下步驟建立技術用戶帳戶並將其添加到RBAC組：
+請依照下列步驟建立技術使用者帳戶，並將其新增至RBAC群組：
 
-1. 製作 `GET` 呼叫 `https://aam.adobe.io/v1/users/self`。 該呼叫將建立您可以在 [!UICONTROL Admin Console]，也請參見Wiki頁。 [!UICONTROL Users] 的子菜單。
+1. 建立 `GET` 呼叫 `https://aam.adobe.io/v1/users/self`. 此呼叫將建立技術使用者帳戶，您可在 [!UICONTROL Admin Console]，在 [!UICONTROL Users] 頁面。
 
    ![技術帳戶](assets/technical-account.png)
 
-1. 登錄到您的Audience Manager帳戶 [添加技術用戶帳戶](../../features/administration/administration-overview.md#create-group) 調用API的用戶組。
+1. 登入您的Audience Manager帳戶，並 [新增技術使用者帳戶](../../features/administration/administration-overview.md#create-group) 至將進行API呼叫的使用者群組。
 
-## [!DNL OAuth] 身份驗證（不建議使用） {#oauth}
+## [!DNL OAuth] 驗證（已廢止） {#oauth}
 
 >[!WARNING]
-> [!DNL Audience Manager] [!UICONTROL REST API] 令牌認證和更新 [!DNL OAuth 2.0] 現在已棄用。
+> [!DNL Audience Manager] [!UICONTROL REST API] 代號驗證和續約，透過 [!DNL OAuth 2.0] 現已過時。
 >
-> 請使用 [JWT（服務帳戶）身份驗證](#jwt-service-account-authentication-jwt) 的雙曲餘切值。
+> 請使用 [JWT（服務帳戶）驗證](#jwt-service-account-authentication-jwt) 。
 
-的 [!DNL Audience Manager] [!UICONTROL REST API] 如下 [!DNL OAuth 2.0] 令牌驗證和續訂標準。 以下各節介紹如何驗證和開始使用 [!DNL API]s
+此 [!DNL Audience Manager] [!UICONTROL REST API] 如下 [!DNL OAuth 2.0] 代號驗證和續約的標準。 以下各節說明如何驗證及開始使用 [!DNL API]s.
 
-### 建立泛型 [!DNL API] 用戶 {#requirements}
+### 建立通用 [!DNL API] 使用者 {#requirements}
 
-我們建議您建立一個單獨的技術用戶帳戶，以便使用 [!DNL Audience Manager] [!DNL API]s這是一個普通帳戶，它不與組織中的特定用戶關聯或關聯。 此類型 [!DNL API] 用戶帳戶可幫助您完成以下兩項任務：
+建議您建立個別的技術使用者帳戶，以搭配 [!DNL Audience Manager] [!DNL API]s.這是一般帳戶，不會系結至組織中的特定使用者，或與其建立關聯。 此類 [!DNL API] 使用者帳戶可協助您完成下列兩件事：
 
-* 確定呼叫的服務 [!DNL API] (例如，來自使用我們 [!DNL API]或來自其他工具 [!DNL API] 請求)。
-* 提供對 [!DNL API]s與特定人員關聯的帳戶在離開公司時可能會被刪除。 這將阻止您使用可用 [!DNL API] 代碼。 不與特定員工關聯的通用帳戶有助於您避免此問題。
+* 識別呼叫的服務 [!DNL API] (例如，來自您使用 [!DNL API]或來自其他製造 [!DNL API] 要求)。
+* 提供對 [!DNL API]s.與特定人員系結的帳戶可能會在他們離開您的公司時刪除。 這會使您無法使用可用的 [!DNL API] 程式碼。 未與特定員工綁定的通用帳戶有助於您避免此問題。
 
-作為此類帳戶的示例或使用案例，假設您要同時使用 [批量管理工具](../../reference/bulk-management-tools/bulk-management-intro.md)。 為此，您的用戶帳戶需要 [!DNL API] 訪問。 不是向特定用戶添加權限，而是建立非特定用戶， [!DNL API] 具有相應憑據、密鑰和機密的用戶帳戶 [!DNL API] 呼叫。 如果您開發自己的應用程式，並使用 [!DNL Audience Manager] [!DNL API]s
+作為此類帳戶的範例或使用案例，假設您想要使用 [大量管理工具](../../reference/bulk-management-tools/bulk-management-intro.md). 為此，您的使用者帳戶需要 [!DNL API] 存取權。 建立非特定的、 [!DNL API] 具有可建立的適當憑證、金鑰和機密的使用者帳戶 [!DNL API] 呼叫。 如果您開發的應用程式使用 [!DNL Audience Manager] [!DNL API]s.
 
-與 [!DNL Audience Manager] 建立泛型， [!DNL API]-only用戶帳戶。
+與您的 [!DNL Audience Manager] 顧問來設定通用， [!DNL API] — 僅限用戶帳戶。
 
-### 密碼驗證工作流 {#password-authentication-workflow}
+### 密碼驗證工作流程 {#password-authentication-workflow}
 
-密碼身份驗證安全訪問我們的 [!DNL REST API]。 以下步驟概述了來自 [!DNL JSON] 客戶端。
+密碼驗證安全訪問我們的 [!DNL REST API]. 下列步驟將概述密碼驗證的工作流程，來自 [!DNL JSON] 用戶端。
 
 >[!TIP]
 >
->如果將訪問和刷新令牌儲存在資料庫中，則加密它們。
+>如果您將權杖儲存在資料庫中，請加密存取和重新整理權杖。
 
-#### 步驟1:請求 [!DNL API] 訪問
+#### 步驟1:要求 [!DNL API] 存取
 
-請與合作夥伴解決方案經理聯繫。 他們會給你 [!DNL API] 客戶端ID和密碼。 ID和機密將您驗證到 [!DNL API]。
+請連絡您的合作夥伴解決方案經理。 他們會提供 [!DNL API] 用戶端ID和密碼。 ID和機密會驗證您 [!DNL API].
 
-注：如果要接收刷新令牌，請在請求時指定 [!DNL API] 訪問。
+注意：如果您想要接收重新整理Token，請在您提出要求時指定 [!DNL API] 存取權。
 
-#### 步驟2:請求令牌
+#### 步驟2:要求Token
 
-將令牌請求傳遞給您的首選 [!DNL JSON] 客戶端。 生成請求時：
+使用您偏好的傳遞Token要求 [!DNL JSON] 用戶端。 建置請求時：
 
-* 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`。
-* 將客戶端ID和機密轉換為base-64編碼字串。 在轉換過程中，用冒號分隔ID和機密。 例如，憑據 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`。
-* 傳入 [!DNL HTTP] [!DNL headers] `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded` 。 例如，您的標題可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
-* 按如下方式設定請求正文：
+* 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`.
+* 將用戶端ID和密碼轉換為base-64編碼字串。 在轉換過程中以冒號分隔ID和機密。 例如，憑證 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`.
+* 傳入 [!DNL HTTP] [!DNL headers] `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded` . 例如，標題可能如下所示： <br/>`Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br/>`Content-Type: application/x-www-form-urlencoded`
+* 設定要求內文，如下所示：
    <br/> `grant_type=password&username=<your-AudienceManager-user-name>&password=<your-AudienceManager-password>`
 
-#### 第3步：接收令牌
+#### 步驟3:接收代號
 
-的 [!DNL JSON] 響應包含您的訪問令牌。 響應應如下所示：
+此 [!DNL JSON] 回應包含您的存取權杖。 回應應如下所示：
 
 ```json
 {
@@ -141,32 +141,32 @@ ht-degree: 3%
 }
 ```
 
-的 `expires_in` key表示在訪問令牌過期之前的秒數。 最佳做法是，在令牌暴露時使用較短的過期時間來限制暴露。
+此 `expires_in` key代表存取權杖過期的秒數。 最佳作法是，如果代號曾公開，請使用短的到期時間來限制曝光。
 
-### 刷新令牌 {#refresh-token}
+### 重新整理Token {#refresh-token}
 
-刷新令牌續訂 [!DNL API] 原始令牌過期後的訪問。 如果請求，響應 [!DNL JSON] 在密碼工作流中包括刷新標籤。 如果未收到刷新令牌，請通過密碼驗證過程建立新令牌。
+重新整理代號續約 [!DNL API] 原始代號過期後的存取。 如有要求，則回應 [!DNL JSON] 在密碼工作流程中包含重新整理Token。 如果您未收到重新整理Token，請透過密碼驗證程式建立新Token。
 
-您還可以使用刷新令牌在現有訪問令牌過期之前生成新令牌。
+您也可以使用重新整理Token，在現有存取Token過期之前產生新Token。
 
-如果訪問令牌已過期，則您將收到 `401 Status Code` 以及響應中的以下標題：
+如果您的存取權杖已過期，您會收到 `401 Status Code` 和回應中的下列標題：
 
 `WWW-Authenticate: Bearer realm="oauth", error="invalid_token", error_description="Access token expired: <token>"`
 
-以下步驟概述了使用刷新令牌從 [!DNL JSON] 客戶端。
+下列步驟將概述使用重新整理Token，以從 [!DNL JSON] 用戶端。
 
-#### 步驟1:請求新令牌
+#### 步驟1:請求新代號
 
-使用首選項傳遞刷新令牌請求 [!DNL JSON] 客戶端。 生成請求時：
+使用您偏好的傳遞重新整理Token請求 [!DNL JSON] 用戶端。 建置請求時：
 
-* 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`。
-* 將客戶端ID和機密轉換為base-64編碼字串。 在轉換過程中，用冒號分隔ID和機密。 例如，憑據 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`。
-* 傳遞HTTP標頭 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`。 例如，您的標題可能如下所示： <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
-* 在請求正文中，指定 `grant_type:refresh_token` 並傳遞您先前訪問請求中收到的刷新令牌。 請求應如下所示： <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
+* 使用 `POST` 呼叫方法 `https://api.demdex.com/oauth/token`.
+* 將用戶端ID和密碼轉換為base-64編碼字串。 在轉換過程中以冒號分隔ID和機密。 例如，憑證 `testId : testSecret` 轉換為 `dGVzdElkOnRlc3RTZWNyZXQ=`.
+* 傳入HTTP標題 `Authorization:Basic <base-64 clientID:clientSecret>` 和 `Content-Type: application/x-www-form-urlencoded`. 例如，標題可能如下所示： <br> `Authorization: Basic dGVzdElkOnRlc3RTZWNyZXQ=` <br> `Content-Type: application/x-www-form-urlencoded`
+* 在請求內文中，指定 `grant_type:refresh_token` 並傳入您先前存取請求中收到的重新整理Token。 請求應如下所示： <br> `grant_type=refresh_token&refresh_token=b27122c0-b0c7-4b39-a71b-1547a3b3b88e`
 
-#### 步驟2:接收新令牌
+#### 步驟2:接收新代號
 
-的 [!DNL JSON] 響應包含您的新訪問令牌。 響應應如下所示：
+此 [!DNL JSON] 回應包含您的新存取權杖。 回應應如下所示：
 
 ```json
 {
@@ -178,40 +178,40 @@ ht-degree: 3%
 }
 ```
 
-### 授權碼與隱式認證 {#authentication-code-implicit}
+### 授權碼與隱式驗證 {#authentication-code-implicit}
 
-的 [!DNL Audience Manager] [!UICONTROL REST API] 支援授權碼和隱式身份驗證。 要使用這些訪問方法，您的用戶需要登錄到 `https://api.demdex.com/oauth/authorize` 獲取訪問和刷新令牌。
+此 [!DNL Audience Manager] [!UICONTROL REST API] 支援授權碼和隱式驗證。 若要使用這些存取方法，您的使用者必須登入 `https://api.demdex.com/oauth/authorize` 以取得存取權並重新整理權杖。
 
 ## 驗證 [!DNL API] 請求 {#authenticated-api-requests}
 
-呼叫要求 [!DNL API] 方法。
+呼叫需求 [!DNL API] 方法。
 
-針對可用的呼叫 [!DNL API] 方法：
+對可用進行呼叫的方式 [!DNL API] 方法：
 
-* 在 `HTTP` 標題，設定 `Authorization: Bearer <token>`。
-* 使用時 [JWT（服務帳戶）身份驗證](#jwt)，您需要提供 `x-api-key` 標題，與 `client_id`。 你可以 `client_id` 從 [Adobe Developer整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 的子菜單。
-* 呼叫所需 [!DNL API] 的雙曲餘切值。
+* 在 `HTTP` 標題，設定 `Authorization: Bearer <token>`.
+* 使用時 [JWT（服務帳戶）驗證](#jwt)，您必須提供 `x-api-key` 標題，其與 `client_id`. 你可以 `client_id` 從 [Adobe Developer整合](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) 頁面。
+* 呼叫必要 [!DNL API] 方法。
 
 ## 可選 [!DNL API] 查詢參數 {#optional-api-query-parameters}
 
-設定可用於返回對象所有屬性的方法的可選參數。
+設定可用於方法的可選參數，這些方法將返回對象的所有屬性。
 
-可將這些可選參數與 [!DNL API] 返回的方法 *全部* 對象的屬性。 將查詢傳遞到 [!DNL API]。
+您可以搭配使用這些選用參數 [!DNL API] 傳回的方法 *all* 對象的屬性。 將查詢傳入至 [!DNL API].
 
 | 參數 | 說明 |
 |--- |--- |
 | `page` | 按頁碼返回結果。 編號從0開始。 |
-| `pageSize` | 設定請求返回的響應結果數（預設值為10）。 |
+| `pageSize` | 設定請求傳回的回應結果數（預設為10）。 |
 | `sortBy` | 根據指定的 [!DNL JSON] 屬性。 |
-| `descending` | 按降序排序並返回結果。 `ascending` 為預設值。 |
-| `search` | 根據要用作搜索參數的指定字串返回結果。 例如，假設您要查找所有模型的結果，這些模型在該項目的任何值欄位中都使用「Test」一詞。 您的示例請求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`。  可以搜索「」返回的任何值[!DNL get all]」對話框。 |
-| `folderId` | 返回的所有ID [!UICONTROL traits] 資料夾中。 並非所有方法都可用。 |
-| `permissions` | 返回基於指定權限的段清單。 `READ` 為預設值。 權限包括：<ul><li>`READ` :返回並查看有關段的資訊。</li><li>`WRITE` :使用  `PUT`  更新段。</li><li>`CREATE` :使用  `POST`  的子菜單。</li><li>`DELETE` : 刪除區段. 需要訪問基礎特徵（如果有）。 例如，如果要刪除段，則需要刪除屬於段的特徵的權限。</li></ul><br>指定具有單獨鍵值對的多個權限。 例如，返回段清單  `READ`  和  `WRITE`  僅權限，傳入  `"permissions":"READ"`。 `"permissions":"WRITE"` 。 |
-| `includePermissions` | ([!DNL Boolean])設定為 `true` 返回段的權限。 預設為 `false`. |
+| `descending` | 按降序排序和返回結果。 `ascending` 為預設值。 |
+| `search` | 根據您要用作搜索參數的指定字串返回結果。 例如，假設您想在該項目的任何值欄位中，找到所有具有「Test」字詞之模型的結果。 您的範例要求可能如下所示：   `GET https://aam.adobe.io/v1/models/?search=Test`.  您可以搜尋「[!DNL get all]」方法。 |
+| `folderId` | 傳回 [!UICONTROL traits] 在指定的資料夾內。 不適用於所有方法。 |
+| `permissions` | 根據指定的權限傳回區段清單。 `READ` 為預設值。 權限包括：<ul><li>`READ` :傳回和檢視區段的相關資訊。</li><li>`WRITE` :使用  `PUT`  以更新區段。</li><li>`CREATE` :使用  `POST`  來建立區段。</li><li>`DELETE` : 刪除區段. 需要存取基礎特徵（如果有）。 例如，如果您想要移除某個區段，則需要刪除該區段所屬特徵的權限。</li></ul><br>使用個別的索引鍵值配對指定多個權限。 例如，若要傳回具有  `READ`  和  `WRITE`  僅限權限，傳入  `"permissions":"READ"`, `"permissions":"WRITE"` . |
+| `includePermissions` | ([!DNL Boolean])設為 `true` 以傳回區段的權限。 預設為 `false`. |
 
-### 關於頁面選項的注釋
+### 關於頁面選項的附註
 
-頁面資訊 *不是* 指定，請求返回純 [!DNL JSON] 結果。 如果頁面資訊 *是* 指定，則返回的清單將包裝在 [!DNL JSON] 包含有關總結果和當前頁面的資訊的對象。 使用頁面選項的示例請求可能與以下內容類似：
+頁面資訊時 *不是* 指定，則請求會傳回純 [!DNL JSON] 產生陣列。 如果頁面資訊 *is* 指定，則傳回的清單會包裝在 [!DNL JSON] 包含總結果和當前頁資訊的對象。 使用頁面選項的範例請求看起來可能類似這樣：
 
 ```
 GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
@@ -219,15 +219,15 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 ## [!DNL API URLs] {#api-urls}
 
-[!DNL URLs] 請求、轉移和生產環境以及版本。
+[!DNL URLs] 適用於請求、測試和生產環境及版本。
 
 ## 請求 [!DNL URLs] {#request-urls}
 
-下表列出了請求 [!DNL URLs] 過去 [!DNL API] 請求，按方法。
+下表列出請求 [!DNL URLs] 過去傳入 [!DNL API] 請求，依方法。
 
-根據您使用的驗證方法，您需要調整請求 [!DNL URLs] 按下表列出。
+您需要根據您使用的驗證方法調整請求 [!DNL URLs] 根據下表。
 
-### 請求 [!DNL URLs] 為 [!DNL JWT] 驗證 {#request-urls-jwt}
+### 要求 [!DNL URLs] for [!DNL JWT] 驗證 {#request-urls-jwt}
 
 | [!DNL API] 方法 | 請求 [!DNL URL] |
 |--- |--- |
@@ -236,14 +236,14 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Derived Signals] | `https://aam.adobe.io/v1/signals/derived/` |
 | [!DNL Destinations] | `https://aam.adobe.io/v1/destinations/` |
 | [!DNL Domains] | `https://aam.adobe.io/v1/partner-sites/` |
-| [!DNL Folders] | 特徵：  `https://aam.adobe.io/v1/folders/traits /`<br>段：  `https://aam.adobe.io/v1/folders/segments /` |
+| [!DNL Folders] | 特徵：  `https://aam.adobe.io/v1/folders/traits /`<br>區段：  `https://aam.adobe.io/v1/folders/segments /` |
 | [!DNL Schema] | `https://aam.adobe.io/v1/schemas/` |
 | [!DNL Segments] | `https://aam.adobe.io/v1/segments/` |
 | [!DNL Traits] | `https://aam.adobe.io/v1/traits/` |
 | [!DNL Trait Types] | `https://aam.adobe.io/v1/customer-trait-types` |
 | [!DNL Taxonomy] | `https://aam.adobe.io/v1/taxonomies/0/` |
 
-### 請求 [!DNL URLs] 為 [!DNL OAuth] 身份驗證（不建議使用） {#request-urls-oauth}
+### 要求 [!DNL URLs] for [!DNL OAuth] 驗證（已廢止） {#request-urls-oauth}
 
 | [!DNL API] 方法 | 請求 [!DNL URL] |
 |--- |--- |
@@ -252,7 +252,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 | [!DNL Derived Signals] | `https://api.demdex.com/v1/signals/derived/` |
 | [!DNL Destinations] | `https://api.demdex.com/v1/destinations/` |
 | [!DNL Domains] | `https://api.demdex.com/v1/partner-sites/` |
-| [!DNL Folders] | 特徵：  `https://api.demdex.com/v1/folders/traits /`<br>段：  `https://api.demdex.com/v1/folders/segments /` |
+| [!DNL Folders] | 特徵：  `https://api.demdex.com/v1/folders/traits /`<br>區段：  `https://api.demdex.com/v1/folders/segments /` |
 | [!DNL Schema] | `https://api.demdex.com/v1/schemas/` |
 | [!DNL Segments] | `https://api.demdex.com/v1/segments/` |
 | [!DNL Traits] | `https://api.demdex.com/v1/traits/` |
@@ -261,44 +261,44 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 ## 環境 {#environments}
 
-的 [!DNL Audience Manager] [!DNL API]提供對不同工作環境的訪問。 這些環境可幫助您針對不同的資料庫test代碼，而不會影響即時生產資料。 下表列出了 [!DNL API] 環境和相應的資源主機名。
+此 [!DNL Audience Manager] [!DNL API]提供對不同工作環境的存取。 這些環境可協助您針對個別資料庫測試程式碼，而不會影響即時的生產資料。 下表列出可用 [!DNL API] 環境和對應的資源主機名。
 
-根據您使用的驗證方法，您需要調整環境 [!DNL URLs] 下表所示。
+您需要根據您使用的驗證方法調整環境 [!DNL URLs] 根據下表。
 
-| 環境 | 的主機名 [!DNL JWT] 認證 | 的主機名 [!DNL OAuth] 認證 |
+| 環境 | 的主機名 [!DNL JWT] 驗證 | 的主機名 [!DNL OAuth] 驗證 |
 |---|---|---|
 | **生產** | `https://aam.adobe.io/...` | `https://api.demdex.com/...` |
-| **β** | `https://aam-beta.adobe.io/...` | `https://api-beta.demdex.com/...` |
+| **Beta** | `https://aam-beta.adobe.io/...` | `https://api-beta.demdex.com/...` |
 
 >[!NOTE]
 >
->的 [!DNL Audience Manager] beta環境是生產環境的較小規模的獨立版本。 必須在此環境中輸入和收集要test的所有資料。
+>此 [!DNL Audience Manager] 測試版環境是生產環境的較小規模的獨立版本。 必須在此環境中輸入並收集您要測試的所有資料。
 
 ## 版本 {#versions}
 
-這些版本的新版本 [!DNL API]定期發放。 新版本將增加 [!DNL API] 版本號。 請求中引用了版本號 [!DNL URL] 如 `v<version number>` 如下例所示：
+新版本 [!DNL API]會定期發行。 新發行將 [!DNL API] 版本號。 請求中參考的版本編號 [!DNL URL] as `v<version number>` 如下列範例所示：
 
 `https://<host>/v1/...`
 
-## 已定義響應代碼 {#response-codes-defined}
+## 已定義的回應代碼 {#response-codes-defined}
 
-`HTTP` 狀態代碼和由返回的響應文本 [!DNL Audience Manager] [!UICONTROL REST API]。
+`HTTP` 狀態代碼和由返回的響應文本 [!DNL Audience Manager] [!UICONTROL REST API].
 
-| 響應代碼ID | 響應文本 | 定義 |
+| 回應代碼ID | 回應文字 | 定義 |
 |---|---|---|
-| `200` | `OK` | 已成功處理請求。 如果需要，將返回預期內容或資料。 |
-| `201` | `Created` | 已建立資源。 返回 `PUT` 和 `POST` 請求。 |
-| `204` | `No Content` | 已刪除資源。 響應正文將為空。 |
-| `400` | `Bad Request` | 伺服器未理解請求。 通常是由於語法格式不正確。 請檢查您的請求，然後重試。 |
-| `403` | `Forbidden` | 您無權訪問資源。 |
+| `200` | `OK` | 已成功處理請求。 會視需要傳回預期的內容或資料。 |
+| `201` | `Created` | 已建立資源。 傳回 `PUT` 和 `POST` 要求。 |
+| `204` | `No Content` | 已刪除資源。 回應內文將為空白。 |
+| `400` | `Bad Request` | 伺服器不理解該請求。 通常是因為語法格式不正確。 請檢查您的請求，然後重試。 |
+| `403` | `Forbidden` | 您沒有資源的存取權。 |
 | `404` | `Not Found` | 找不到指定路徑的資源。 |
 | `409` | `Conflict` | 由於與資源狀態衝突，無法完成請求。 |
-| `500` | `Server Error` | 伺服器遇到錯誤，導致無法完成請求。 |
+| `500` | `Server Error` | 伺服器遇到錯誤，使其無法完成請求。 |
 
 >[!MORELIKETHIS]
 >
->* [JWT（服務帳戶）身份驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
->* [OAuth身份驗證](../../api/rest-api-main/aam-api-getting-started.md#oauth)
+>* [JWT（服務帳戶）驗證](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
+>* [OAuth驗證](../../api/rest-api-main/aam-api-getting-started.md#oauth)
 >* [OAuth 2.0](https://oauth.net/2/)
->* [OAuth 2簡化版](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
+>* [OAuth 2簡化](https://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified#browser-based-apps)
 
