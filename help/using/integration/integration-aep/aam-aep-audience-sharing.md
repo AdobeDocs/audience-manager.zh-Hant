@@ -5,9 +5,9 @@ title: Experience Platform區段共用與Audience Manager和其他Experience Clo
 keywords: AEP受眾共用， AEP區段，平台區段，區段共用，受眾共用，共用區段， AAM AEP區段共用
 feature: Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-source-git-commit: 0245dd11de31c3139c5df5dc78100f0d3935aa2e
+source-git-commit: f0e5541e4a72d81ab9c587a8daaed6af5e2b89d9
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1953'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您將Audience Manager特徵和區段共用至Adobe Experience Platform，反之亦然。 您需要 [[!DNL Audience Manager Connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) 啟用Audience Manager與Adobe Experience Platform之間的受眾共用。
+Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您將Audience Manager特徵和區段共用給Adobe Experience Platform，並將Experience Platform區段共用給Audience Manager。
+
+您需要 [[!DNL Audience Manager source connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html) 和 [Experience Cloud對象](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html) Experience Platform中的目的地，啟用Audience Manager與Adobe Experience Platform之間的受眾共用。
 
 您可以在Experience Platform中使用Audience Manager特徵和區段，將Audience Manager資料新增至客戶設定檔，並從Experience Platform中受益 [細分服務](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=en).
 
@@ -39,7 +41,7 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 |---------|----------|---------|---------|
 | **受眾共用** | <ul><li>使用Audience Manager資料豐富客戶設定檔</li><li>在Audience Manager細分中使用Experience Platform資料</li></ul> | <ul><li>新增第三方資料至區段</li><li>演算法建模</li><li>啟動至其他目的地</li></ul> | 在Adobe Target、Advertising Cloud或Marketo等其他Experience Cloud解決方案中使用Experience Platform區段。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Audience Manager區段和Adobe Experience Platform特徵 {#aam-segments-traits-in-aep}
 
@@ -70,6 +72,10 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 以下各節說明如何啟用從Experience Platform到Audience Manager的資料共用，以及如何在Audience Manager中使用Experience Platform區段。
 
 ### 啟用從Experience Platform到Audience Manager的資料共用 {#enable-aep-to-aam-data}
+
+>[!IMPORTANT]
+>
+> 本節說明舊式區段共用整合(從Experience Platform到Audience Manager)。 您現在無需Adobe客戶代表的支援，即可設定此整合。 如需詳細資訊，請閱讀 [Experience Cloud對象](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html) 目的地檔案。
 
 >[!NOTE]
 >
@@ -114,7 +120,7 @@ Audience Manager會自動建立名為 **Experience Platform特徵** 在特徵儲
 | 4 | [!UICONTROL Trait Expression] | 特徵運算式為 `segID = segment ID in Experience Platform`. |
 | 5 | [!UICONTROL Segments with this Trait] | 以此特徵作為組成的自動建立區段。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 區段 {#aep-segments-as-aam-segments}
 
@@ -133,7 +139,7 @@ Audience Manager會自動建立區段資料夾，稱為 **Experience Platform區
 | 3 | [!UICONTROL Profile Merge Rule] | **[!UICONTROL External Merge Policy]** 指示自動建立的段遵循在Experience Platform中設定的合併策略。 |
 | 4 | [!UICONTROL Segment Rule] | 區段包含 [特徵區段](#aep-segments-as-aam-traits). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Audience Manager資料匯出控制支援Experience Platform {#aam-data-export-control-in-aep}
 
@@ -158,7 +164,7 @@ Audience Manager會自動建立區段資料夾，稱為 **Experience Platform區
 | 無法用於Onsite廣告鎖定 | C6:資料無法用於站上廣告鎖定目標 |
 | 無法用於站上個人化 | C7:資料無法用於內容的站上定位 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 行銷動作的資料匯出控制
 
@@ -171,7 +177,7 @@ Audience Manager會自動建立區段資料夾，稱為 **Experience Platform區
 | 此目的地可用於站上廣告鎖定 | 站上廣告 |
 | 此目的地可用於站上廣告個人化 | 站上個人化 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 了解Audience Manager和Experience Platform之間的區段母體差異 {#aep-aam-segment-population-differences}
 
