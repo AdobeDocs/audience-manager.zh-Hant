@@ -1,7 +1,7 @@
 ---
 description: Adobe Audience Manager 的發展歷史、收集的資料類型、細分、報表等項目的相關資訊。
 landing-page-description: 有關 Audience Manager 歷程記錄、收集的資料類型、細分、報告等內容的資訊。
-short-description: Information about the history of Audience Manager, types of data collected, segmentation, reporting, and more.
+short-description: 有關 Audience Manager 歷程記錄、收集的資料類型、細分、報告等內容的資訊。
 seo-title: Audience Manager Overview
 solution: Audience Manager
 title: Audience Manager 概述
@@ -10,7 +10,7 @@ feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
 source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '312'
 ht-degree: 88%
 
 ---

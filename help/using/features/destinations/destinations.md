@@ -2,7 +2,7 @@
 description: 探索目的地的優勢、類型和用途 – 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。 使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
 keywords: 整合代碼，目的地，目的地概觀，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地，目的地
 landing-page-description: 探索目的地的優勢、類型和用途 – 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。 使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
-short-description: Discover the advantages, types, and uses of destinations – any third-party system, such as an ad server or DSP, where you share data. Use Destination Builder to create and manage cookies, URL, or server-to-server destinations.
+short-description: 探索目的地的優勢、類型和用途 – 目的地是要與其共用資料的協力廠商系統，例如廣告伺服器或 DSP。 使用 Destination Builder 來建立和管理 Cookie、URL 或伺服器對伺服器目的地。
 seo-title: Destinations
 solution: Audience Manager
 title: 目的地
@@ -11,8 +11,8 @@ feature: Destination Basics
 exl-id: f880bb18-057a-494d-82bf-69fc9f34781f
 source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 15%
+source-wordcount: '573'
+ht-degree: 20%
 
 ---
 
