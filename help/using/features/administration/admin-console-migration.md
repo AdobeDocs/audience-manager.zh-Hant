@@ -28,7 +28,7 @@ ht-degree: 3%
 | 管理用戶和組 | 遷移完成後， [!DNL Audience Manager] 管理員將只管理 [[!DNL Admin Console]](https://adminconsole.adobe.com/enterprise/)。 |
 | 管理產品和服務 | 從 [[!DNL Admin Console]](https://adminconsole.adobe.com/enterprise/)，管理員可以： <ul><li>建立、更新和刪除用戶</li><li>授予對解決方案和服務的訪問權</li></ul> |
 
-為方便用戶遷移，我們要求 [!DNL Audience Manager] 管理員開始將其用戶帳戶遷移到 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html) 按照本文所述步驟盡快完成。
+為方便用戶遷移，我們要求 [!DNL Audience Manager] 管理員開始將其用戶帳戶遷移到 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 按照本文所述步驟盡快完成。
 
 ## 用戶需要做什麼 {#what-to-do-users}
 

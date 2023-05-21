@@ -1,7 +1,7 @@
 ---
-description: 可選方法，可讓您將特徵指派給使用者定義的類型或類別，通常根據函式或您自己的內部報表程式。
-seo-description: 可選方法，可讓您將特徵指派給使用者定義的類型或類別，通常根據函式或您自己的內部報表程式。
-seo-title: 特徵類型方法
+description: 可選方法，允許您將特徵分配給用戶定義的類型或類別，通常根據函式或您自己的內部報告流程進行。
+seo-description: Optional methods that let you to assign traits to a user-defined type or category, usually according to function or for your own internal reporting processes.
+seo-title: Trait Type Methods
 solution: Audience Manager
 title: 特徵類型方法
 uuid: 082931d5-457b-4622-817b-86303f38c26a
@@ -9,26 +9,26 @@ feature: API
 exl-id: d450f9ce-2abb-4a8b-b8db-2962b84fb341
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 10%
+source-wordcount: '151'
+ht-degree: 9%
 
 ---
 
 # 特徵類型方法 {#trait-type-methods}
 
-可選方法，可讓您將特徵指派給使用者定義的類型或類別，通常根據函式或您自己的內部報表程式。
+可選方法，允許您將特徵分配給用戶定義的類型或類別，通常根據函式或您自己的內部報告流程進行。
 
 <!-- c_rest_api_trait_types_intro.xml -->
 
 >[!NOTE]
 >
->特徵類型方法不會將特徵指派給[常見分類法](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的類別。 請將這些標籤視為與通用分類法不同的標籤。
+>特徵類型方法不會將特徵指定給 [通用分類](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)。 將這些標籤視為與常用分類分離的標籤。
 
-對於可視參考，[!UICONTROL Trait Types]是位於&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下[!DNL UI]的下拉式控制項。
+為了便於查看， [!UICONTROL Trait Types] 是位於 [!DNL UI] 在 **[!UICONTROL Traits > Create new trait > Basic Information]**。
 
-## 建立新的特徵類型{#create-trait-type}
+## 建立新特性類型 {#create-trait-type}
 
-可讓您建立新特徵類型的`POST`方法。
+A `POST` 用於建立新特徵類型的方法。
 
 <!-- r_rest_api_create_trait_type.xml -->
 
@@ -59,9 +59,9 @@ ht-degree: 10%
 }
 ```
 
-## 特徵類型{#return-props}的傳回屬性
+## 特徵類型的返回屬性 {#return-props}
 
-`GET`方法可傳回指定特徵類型的詳細資訊。
+A `GET` 返回有關指定特徵類型的詳細資訊的方法。
 
 <!-- r_rest_api_get_trait_type.xml -->
 
@@ -84,9 +84,9 @@ ht-degree: 10%
 }
 ```
 
-## 所有特徵類型{#return-props-all}的傳回屬性
+## 返回所有特徵類型的屬性 {#return-props-all}
 
-`GET`方法可傳回陣列中所有特徵類型的詳細資料。
+A `GET` 方法，它返回有關陣列中所有特徵類型的詳細資訊。
 
 <!-- r_rest_api_get_trait_types.xml -->
 

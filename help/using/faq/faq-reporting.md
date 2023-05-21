@@ -45,7 +45,7 @@ faq_reports.xml
 
 **如果我執行電子郵件行銷活動，如何判斷經過重新導向的使用者是從該行銷活動還是從其他來源進入我的網站？**
 
-請將行銷活動專屬的查詢字串附加至您要監控之網站區段的 URL。接下來，設定要用於擷取此變數的特徵規則。例如，若您的URL傳入的促銷活動ID類似， `www.test123.com/electronics?campaign=123`，然後建立特徵規則，以從 `h_referer` 變數，具有會尋找標題(類似 `h_referer = 'campaign=123'`.
+請將行銷活動專屬的查詢字串附加至您要監控之網站區段的 URL。接下來，設定要用於擷取此變數的特徵規則。例如，如果URL通過類似的市場活動ID, `www.test123.com/electronics?campaign=123`，然後建立特徵規則以從 `h_referer` 具有查找標題的特性規則的變數 `h_referer = 'campaign=123'`。
 
 <br> 
 

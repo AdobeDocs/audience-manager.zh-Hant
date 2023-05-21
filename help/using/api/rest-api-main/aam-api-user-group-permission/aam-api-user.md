@@ -1,7 +1,7 @@
 ---
-description: 重設API方法來管理使用者，包括建立、更新、列出、刪除和傳回使用者物件。
-seo-description: 重設API方法來管理使用者，包括建立、更新、列出、刪除和傳回使用者物件。
-seo-title: 使用者管理 API 方法
+description: 剩餘的API方法用於管理用戶，包括建立、更新、列出、刪除和返回用戶對象。
+seo-description: Rest API methods to manage users, including creating, updating, listing, deleting, and returning user objects.
+seo-title: User Management API Methods
 solution: Audience Manager
 title: 使用者管理 API 方法
 uuid: 6e1f2c35-bb9d-4166-b7d4-d9c5518a61ad
@@ -9,20 +9,20 @@ feature: API
 exl-id: c015c42c-63c7-4392-9fef-f48dc787a56f
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 7%
+source-wordcount: '347'
+ht-degree: 6%
 
 ---
 
 # 使用者管理 API 方法 {#user-management-api-methods}
 
-停用[!DNL API]方法來管理用戶，包括建立、更新、列出、刪除和返回用戶對象。
+休息 [!DNL API] 管理用戶的方法，包括建立、更新、列出、刪除和返回用戶對象。
 
 <!-- c_rest_api_user_man_user.xml -->
 
-## 建立用戶{#create-user}
+## 建立用戶 {#create-user}
 
-建立新用戶的`POST`方法。
+A `POST` 的子菜單。
 
 <!-- r_rest_api_user_create.xml -->
 
@@ -30,7 +30,7 @@ ht-degree: 7%
 
 `POST /api/v1/users/`
 
-### 範例要求內文
+### 示例請求正文
 
 ```
 { 
@@ -65,13 +65,13 @@ ht-degree: 7%
 }
 ```
 
-如果`isAdmin`設為true，系統會將使用者建立為合作夥伴管理員。 此屬性也可讓您知道使用者是否為合作夥伴管理員。
+如果 `isAdmin` 設定為true時，用戶將建立為夥伴管理員。 此屬性還允許您知道用戶是否是合作夥伴管理員。
 
-如果已使用用戶名，則返回`409 Conflict`。
+返回 `409 Conflict` 的子菜單。
 
-## 更新用戶{#update-user}
+## 更新用戶 {#update-user}
 
-更新用戶的`PUT`方法。
+A `PUT` 更新用戶的方法。
 
 <!-- r_rest_api_user_update.xml -->
 
@@ -79,7 +79,7 @@ ht-degree: 7%
 
 `PUT /api/v1/users/`*`<userId>`*
 
-### 範例要求內文
+### 示例請求正文
 
 ```
 { 
@@ -110,23 +110,23 @@ ht-degree: 7%
 }
 ```
 
-如果已使用用戶名，則返回`409 Conflict`。
+返回 `409 Conflict` 的子菜單。
 
-## 更新登錄用戶{#update-logged-in-user}
+## 更新登錄用戶 {#update-logged-in-user}
 
-更新當前登錄用戶的`PUT`方法。
+A `PUT` 更新當前登錄用戶的方法。
 
 <!-- r_rest_api_user_update_self.xml -->
 
 >[!NOTE]
 >
->雖然大部分的[!DNL API]方法只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
+>而大多數 [!DNL API] 方法只能由夥伴管理員調用，此方法可由非管理員用戶調用。
 
 ### 請求
 
 `PUT /self/update`
 
-### 範例要求內文
+### 示例請求正文
 
 ```
 {  
@@ -153,49 +153,49 @@ ht-degree: 7%
 }
 ```
 
-如果已使用用戶名，則返回`409 Conflict`。
+返回 `409 Conflict` 的子菜單。
 
-## 更新登錄用戶密碼{#update-logged-in-user-pw}
+## 更新登錄用戶密碼 {#update-logged-in-user-pw}
 
-更新當前登錄用戶的`PUT`方法。
+A `PUT` 更新當前登錄用戶的方法。
 
 <!-- r_rest_api_user_password.xml -->
 
 >[!NOTE]
 >
->雖然大部分的[!DNL API]方法只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
+>而大多數 [!DNL API] 方法只能由夥伴管理員調用，此方法可由非管理員用戶調用。
 
 ### 請求
 
 `POST /users/self/update-password`
 
-### 範例要求內文
+### 示例請求正文
 
 ```
 { "oldPassword" : "old password", "newPassword" : "new password" }
 ```
 
-如果成功，則傳回`200 OK`。 如果任一密碼出錯，則返回`400 Bad Request`。
+返回 `200 OK` 成功。 返回 `400 Bad Request` 的下界。
 
-## 重置登錄用戶密碼{#reset-logged-in-user-pw}
+## 重置登錄用戶密碼 {#reset-logged-in-user-pw}
 
-用於重置當前登錄用戶的`PUT`方法。 [!UICONTROL Audience Management] 向用戶發送系統生成的密碼。
+A `PUT` 重置當前登錄用戶的方法。 [!UICONTROL Audience Management] 向用戶發送系統生成的密碼。
 
 <!-- r_rest_api_user_password_reset.xml -->
 
 >[!NOTE]
 >
->雖然大部分的[!DNL API]方法只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
+>而大多數 [!DNL API] 方法只能由夥伴管理員調用，此方法可由非管理員用戶調用。
 
 ### 請求
 
 `POST /self/reset-password`
 
-如果成功，則傳回`200 OK`。
+返回 `200 OK` 成功。
 
-## 返回用戶ID {#return-user-object-for-id}的用戶對象
+## 返回用戶ID的用戶對象 {#return-user-object-for-id}
 
-`Get`方法，可傳回使用者ID的使用者物件。
+A `Get` 方法返回用戶ID的用戶對象。
 
 <!-- r_rest_api_user_get_user_obj.xml -->
 
@@ -221,15 +221,15 @@ ht-degree: 7%
 }
 ```
 
-## 返回登錄用戶{#return-user-object-for-logged-in-user}的用戶對象
+## 返回已登錄用戶的用戶對象 {#return-user-object-for-logged-in-user}
 
-`Get`方法，可傳回目前登入之使用者的使用者物件。
+A `Get` 方法，以返回當前登錄用戶的用戶對象。
 
 <!-- r_rest_api_user_get_self.xml -->
 
 >[!NOTE]
 >
->雖然大部分的[!DNL API]方法只能由合作夥伴管理員呼叫，但此方法可由非管理員使用者呼叫。
+>而大多數 [!DNL API] 方法只能由夥伴管理員調用，此方法可由非管理員用戶調用。
 
 ### 請求
 
@@ -253,9 +253,9 @@ ht-degree: 7%
 }
 ```
 
-## 列出用戶{#list-users}
+## 列出用戶 {#list-users}
 
-列出用戶的`GET`方法。
+A `GET` 列出用戶的方法。
 
 <!-- r_rest_api_user_list.xml -->
 
@@ -263,7 +263,7 @@ ht-degree: 7%
 
 `GET /api/v1/users/`
 
-您可以在查詢參數中指定多個群組ID:
+可以在查詢參數中指定多個組ID:
 
 `GET /api/v1/users/?groupId=343&groupdId=12`
 
@@ -287,9 +287,9 @@ ht-degree: 7%
 }
 ```
 
-## 刪除用戶{#delete-users}
+## 刪除用戶 {#delete-users}
 
-刪除用戶的`DELETE`方法。
+A `DELETE` 刪除用戶的方法。
 
 <!-- r_rest_api_user_delete.xml -->
 
@@ -297,11 +297,11 @@ ht-degree: 7%
 
 `DELETE /api/v1/users/`*`<user_id>`*
 
-如果成功，則傳回`204 No Content`。 如果發生衝突，則返回`409 Conflict`。
+返回 `204 No Content` 成功。 在衝突返回時 `409 Conflict`。
 
-## 大量刪除用戶{#delete-users-bulk}
+## 批量刪除用戶 {#delete-users-bulk}
 
-用於批量刪除多個用戶的`POST`方法。
+A `POST` 方法批量刪除多個用戶。
 
 <!-- r_rest_api_user_delete_bulk.xml -->
 
@@ -309,7 +309,7 @@ ht-degree: 7%
 
 `POST /api/v1/users/bulk-delete`
 
-### 範例要求內文
+### 示例請求正文
 
 ```
 {[<user_id_1>, <user_id_2>, ...]}

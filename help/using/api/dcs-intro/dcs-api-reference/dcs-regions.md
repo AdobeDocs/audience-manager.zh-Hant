@@ -1,7 +1,7 @@
 ---
-description: 呼叫DCS時需要地區DCS伺服器主機名稱。 這是因為DCS會將資訊儲存在地理位置鄰近網站訪客的資料中心。 如果您將查詢傳送至錯誤的DCS，則您的查詢會有效，但這些呼叫效率低下，且可能會延遲回應。 若要提出DCS要求，請將地區ID與其對應的地區主機名稱相符，並以適當的主機名稱來建立查詢。
-seo-description: 呼叫DCS時需要地區DCS伺服器主機名稱。 這是因為DCS會將資訊儲存在地理位置鄰近網站訪客的資料中心。 如果您將查詢傳送至錯誤的DCS，則您的查詢會有效，但這些呼叫效率低下，且可能會延遲回應。 若要提出DCS要求，請將地區ID與其對應的地區主機名稱相符，並以適當的主機名稱來建立查詢。
-seo-title: DCS 區域 ID、位置與主機名稱。
+description: 要調用DCS，需要使用區域DCS伺服器主機名。 這是因為DCS將資訊儲存在地理上靠近站點訪問者的資料中心中。 如果將查詢發送到錯誤的DCS，則查詢將起作用，但這些調用效率低下，可能會延遲響應。 要發出DCS請求，請將區域ID與其相應的區域主機名匹配，並使用正確的主機名來形成查詢。
+seo-description: The regional DCS server host name is required to make calls to the DCS. This is because the DCS stores information in data centers that are geographically close to site visitors. Your queries will work if you send them to the wrong DCS, but these calls are inefficient and can delay the response. To make a DCS request, match the region ID to its corresponding regional host name and form your query with the proper host name.
+seo-title: DCS Region IDs, Locations, and Host Names
 solution: Audience Manager
 title: DCS 區域 ID、位置與主機名稱。
 uuid: ad150ffe-4583-472b-ac8b-fb900a7966e4
@@ -9,21 +9,21 @@ feature: DCS
 exl-id: 9b12946c-89f1-4f6f-adb9-961e15a0b816
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 9%
+source-wordcount: '227'
+ht-degree: 10%
 
 ---
 
-# DCS 區域 ID、位置與主機名稱{#dcs-region-ids-locations-and-host-names}。
+# DCS 區域 ID、位置與主機名稱。 {#dcs-region-ids-locations-and-host-names}
 
-對[!DNL DCS]進行調用時需要區域[!DNL DCS]伺服器主機名。 這是因為[!DNL DCS]會將資訊儲存在地理位置鄰近網站訪客的資料中心中。 如果將查詢發送到錯誤的[!DNL DCS]，則查詢將有效，但這些調用效率低下，並且會延遲響應。 若要提出[!DNL DCS]要求，請將地區ID與其對應的地區主機名稱配對，並以正確的主機名稱形成您的查詢。
+區域 [!DNL DCS] 需要伺服器主機名來調用 [!DNL DCS]。 這是因為 [!DNL DCS] 將資訊儲存在地理上靠近站點訪問者的資料中心中。 如果您將查詢發送到錯誤的 [!DNL DCS]但這些呼叫效率低，可能會延遲響應。 做 [!DNL DCS] 請求，將區域ID與其相應的區域主機名匹配，並使用正確的主機名來形成查詢。
 
 <table id="table_643212E4F9C64DFF9443904B01D89CB3"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> DCS地區ID(dcs_region) </th> 
-   <th colname="col2" class="entry"> 地區（和位置） </th> 
-   <th colname="col3" class="entry"> 主機名稱 </th> 
+   <th colname="col1" class="entry"> DCS區域ID(dcs_region) </th> 
+   <th colname="col2" class="entry"> 區域（和位置） </th> 
+   <th colname="col3" class="entry"> 主機名 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -39,12 +39,12 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID6 </p> </td> 
-   <td colname="col2"> <p>歐洲（愛爾蘭都柏林） </p> </td> 
+   <td colname="col2"> <p>歐洲（都柏林，愛爾蘭） </p> </td> 
    <td colname="col3"> <p> <code> irl1.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID7 </p> </td> 
-   <td colname="col2"> <p>美國東部（美國維吉尼亞州） </p> </td> 
+   <td colname="col2"> <p>美國東部（維吉尼亞，美國） </p> </td> 
    <td colname="col3"> <p> <code> use.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
@@ -54,7 +54,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID9 </p> </td> 
-   <td colname="col2"> <p>美國西部（俄勒岡，美國） </p> </td> 
+   <td colname="col2"> <p>美國西部（美國俄勒岡州） </p> </td> 
    <td colname="col3"> <p> <code> usw2.demdex.net</code> </p> </td> 
   </tr> 
   <tr> 
@@ -70,4 +70,4 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-您也可以使用[!DNL API]方法來取得可用[!DNL DCS]區域的清單。 請參閱[DCS地區API方法](../../../api/rest-api-main/aam-api-dcs-regions.md)。
+您還可以使用 [!DNL API] 獲取可用清單的方法 [!DNL DCS] 區域。 請參閱 [DCS區域API方法](../../../api/rest-api-main/aam-api-dcs-regions.md)。

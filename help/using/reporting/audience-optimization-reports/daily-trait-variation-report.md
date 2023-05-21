@@ -1,62 +1,62 @@
 ---
-description: 此報表會傳回特徵清單，這些特徵在選取日期前30天內實現至少10,000次，且在相同時間間隔內，每個方向的標準差大於或等於1.7。 報表可協助您評估特徵中不重複使用者的曝光次數隨時間而波動的情形。
-seo-description: 此報表會傳回特徵清單，這些特徵在選取日期前30天內實現至少10,000次，且在相同時間間隔內，每個方向的標準差大於或等於1.7。 報表可協助您評估特徵中不重複使用者的曝光次數隨時間而波動的情形。
-seo-title: 每日特徵變化報表
+description: 此報表返回在選定日期之前的30天內至少實現了10,000次的特性清單，並且在同一時間間隔內的任一方向上的標準偏差大於或等於1.7。 該報告可幫助您評估某個特性中的獨特用戶的印象數隨時間的變化如何。
+seo-description: This report returns a list of traits that have been realized at least 10,000 times in the 30 days prior to the selected date(s) and have a standard deviation greater or equal to 1.7 in either direction over the same time interval. The report helps you evaluate how the number of impressions from unique users in a trait fluctuate over time.
+seo-title: Daily Trait Variation Report
 solution: Audience Manager
 title: 每日特徵變化報表
 uuid: 4e82bb17-d447-4ed1-a4fc-e15b0f1b47f0
-feature: 受眾最佳化報表
+feature: Audience Optimization Reports
 exl-id: c84a3f13-70fb-4167-b05b-de5cf518ec03
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 2%
+source-wordcount: '710'
+ht-degree: 1%
 
 ---
 
 # 每日特徵變化報表 {#daily-trait-variation-report}
 
-此報表會傳回特徵清單，這些特徵在選取日期前30天內實現至少10,000次，且在相同時間間隔內，每個方向的標準差大於或等於1.7。 報表可協助您評估特徵中不重複使用者的曝光次數隨時間而波動的情形。
+此報表返回在選定日期之前的30天內至少實現了10,000次的特性清單，並且在同一時間間隔內的任一方向上的標準偏差大於或等於1.7。 該報告可幫助您評估某個特性中的獨特用戶的印象數隨時間的變化如何。
 
 >[!NOTE]
 >
->Audience Manager中的「每日特徵變化」報表遵循RBAC原則。 您只能根據您所屬的[RBAC使用者群組](/help/using/features/administration/administration-overview.md)，查看您有權存取的資料來源特徵。
+>Audience Manager中的Daily Trait Variation報告遵循RBAC原則。 您只能從您有權訪問的資料源中根據 [RBAC用戶組](/help/using/features/administration/administration-overview.md) 屬於你。
 
-標準差會測量偏離平均值（或平均/預期值）的變異或分散量。 標準差低表示資料點往往非常接近平均值。 標準偏差高表示資料點散布在大範圍值中。
+標準差測量與平均值（或平均/預期值）的偏差或偏差量。 標準偏差較低，表明資料點趨近於均值。 高標準偏差表示資料點在大範圍值上分佈。
 
 ![](assets/daily_trait_variation.png)
 
-使用[!UICONTROL Date]清單為報表選取一或多個日期。 清單底部會顯示彩色編碼長條圖，以視覺化方式呈現所有選定日期中所有特徵的標準差範圍。 黑色垂直線表示平均值。
+使用 [!UICONTROL Date] 清單，選擇報表的一個或多個日期。 在清單底部顯示一個彩色編碼條形圖，該條形圖提供所有選定日期所有特徵的標準偏差範圍的可視表示。 黑色垂直線表示平均值。
 
-中間欄包含由[!UICONTROL Trait ID]和[!UICONTROL Trait Name]識別的特徵清單。 按一下任何特徵以存取快顯對話方塊，讓您從下列選項中選取：
+中間列包含由 [!UICONTROL Trait ID] 和 [!UICONTROL Trait Name]。 按一下任何特性以訪問彈出對話框，該對話框允許您從以下選項中進行選擇：
 
-* **僅保留：** 從報表中移除所有其他特徵，並僅顯示此特徵的資料。
-* **排除：** 從報表中移除此特徵，並顯示所有其他特徵的資料。您可以排除多個特徵。
-* **檢視資料：** 可讓您顯示該列的資料。您也可以以文字檔案的形式下載所有列。
+* **僅保留：** 從報告中刪除所有其他特徵，並僅顯示該特徵的資料。
+* **排除：** 從報告中刪除此特性並顯示所有其他特性的資料。 可以排除多個特徵。
+* **查看資料：** 用於顯示該行的資料。 您還可以將所有行作為文本檔案下載。
 
-[!UICONTROL Standard Deviation]欄顯示彩色編碼長條圖，顯示所選間隔內每個特徵的標準差。 紅色長條表示具有負標準差的特徵（資料點通常低於平均值）。 綠色長條表示特徵有正標準差（資料點傾向高於平均值）。 將滑鼠移至任何長條以顯示彈出式對話方塊，其中包含保留或排除該特徵的詳細資訊和選項，以及檢視詳細資訊。
+的 [!UICONTROL Standard Deviation] 列顯示顏色編碼的條形圖，這些條形圖顯示選定間隔內每個特徵的標準差。 紅條表示標準偏差為負的特徵（資料點往往低於平均值）。 綠條表示標準偏差為正的特徵（資料點往往高於平均值）。 將滑鼠移到任何欄上，以顯示一個彈出對話框，其中包含更多資訊和選項，以保留或排除該特性並查看更多資訊。
 
-圖示會顯示在報表底部，可讓您以各種格式匯出資料、還原對報表所可能進行的任何變更（例如排除特徵）、啟用或停用自動更新，以及重新整理報表的資料。 請參閱[報表圖示和說明的工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)。
+表徵圖顯示在報表底部，您可以以各種格式導出資料、還原對報表可能進行的任何更改（如排除特徵）、啟用或禁用自動更新以及刷新報表資料。 請參閱 [報告表徵圖和說明的工具](../../reporting/dynamic-reports/interactive-report-technology.md#icons-tools-explained)。
 
 ## 使用個案 {#use-cases}
 
-**範例1**:若您有具有高季節性水準特徵，此報表將相當實用。例如，假設您的線上商店正在測試各種類型和價格的季節性促銷活動。 您在[!DNL Audience Manager]中定義下列特徵：
+**示例#1**:此報告在具有高季節性特徵的情況下非常有用。 例如，假設您的線上商店正在測試各種類型和價格的季節性促銷。 您具有以下特徵，定義於 [!DNL Audience Manager]:
 
 * `productPage == "December Promotion"`
 * `price > "500"`
 
-假設您在12月20日執行[!UICONTROL Daily Trait Variation]報表，並注意到過去30天內上述特徵有明顯的正偏差。 這可能表示您的訪客正在尋找您在季節性促銷中提及的產品。 若要利用此趨勢，您可投入更多精力，將特定產品類別的創意內容鎖定在對其感興趣的訪客上。
+說你負責 [!UICONTROL Daily Trait Variation] 12月20日的報告，您注意到過去30天上述性狀存在明顯的正偏差。 這可能表明您的訪客正在尋找您在季節性促銷中提及的產品。 為了利用這一趨勢，您可以投入更多精力，針對對其感興趣的訪客，針對特定產品類別的創意人士。
 
-**範例2**:此報表可協助您識別與標籤問題或特徵錯誤設定相關的定位異常。假設您已根據線上商店的類別定義下列特徵：
+**示例#2**:此報告可以幫助您確定與標籤問題或特性錯誤配置相關的目標異常。 假設您根據線上商店的類別定義了以下特性：
 
 * `productPage == "smartphones"`
 
-由於您的商店重新配置，您會根據品牌名稱將智慧手機頁面分割為多個頁面。 不過，您應忘記更新[!DNL Audience Manager]中定義的特徵。
+由於您的商店重新配置，您正在根據品牌名稱將智慧手機頁面拆分為多個頁面。 但是，您忘記更新中定義的特徵 [!DNL Audience Manager]。
 
-一個月後，您執行[!UICONTROL Daily Trait Variation]報表，並注意到`productPage == "smartphones"`特徵出現大的負偏差，但根據您的網站分析，您的訪客數量已增加。 根據這些資訊，您發現尚未針對新產品頁面更新[!DNL Audience Manager]中的特徵，因此您知道需要建立下列特徵：
+一個月後，你 [!UICONTROL Daily Trait Variation] 報告並注意到 `productPage == "smartphones"` 性狀，儘管根據網站分析，訪客數量有所增加。 根據這些資訊，您意識到您尚未更新 [!DNL Audience Manager] 為新產品頁建立，因此您知道需要建立以下特徵：
 
 * productPage == &quot;samsung&quot;
 * productPage == &quot;apple&quot;
 * productPage == &quot;huawei&quot;
 
-執行此動作後，您會看到對象符合新建立特徵的資格。
+一旦你這樣做，你將看到你的觀眾符合新創造的特徵。

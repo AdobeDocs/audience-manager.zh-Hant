@@ -1,6 +1,6 @@
 ---
 description: 產品與功能的相關常見疑問與問題。
-keywords: audience manager cookie
+keywords: 觀眾Cookie
 seo-description: Common product and function-related questions and issues.
 seo-title: Product Features and Functions FAQ
 solution: Audience Manager
@@ -47,9 +47,9 @@ faq_features_functions.xml
 
  
 
-**執行大量ID匯出至目的地時，會遺失部分客戶ID。 為什麼會發生？**
+**執行向目標的批量ID導出時，缺少一些客戶ID。 為什麼會這樣？**
 
-當裝置ID([AAM UUID](../reference/ids-in-aam.md))連結至多個CRM ID([DPUUIDs](../reference/ids-in-aam.md))，則只會匯出最新的對應。 這就是為何匯出的裝置ID數量可能低於預期的原因。
+當設備ID([UUIDAAM](../reference/ids-in-aam.md))已連結到多個CRM ID([DPUUID](../reference/ids-in-aam.md))，只導出最新的映射。 因此，您可能會看到導出的設備ID數低於預期數。
 
  
 
@@ -67,7 +67,7 @@ faq_features_functions.xml
 
 **什麼是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Tags] 取代。如需詳細資訊，請參閱 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
+Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Tags] 取代。有關詳細資訊，請參見 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
  
 

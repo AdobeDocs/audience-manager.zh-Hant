@@ -1,5 +1,5 @@
 ---
-description: '註冊以人物為基礎的目的地前，您需要符合的客戶需求概觀，請參閱下文。  '
+description: 請閱讀以下內容，瞭解您在註冊基於人員的目標之前需要滿足的客戶要求。
 seo-description: Read below for an overview of customer requirements that you need to meet before signing up for People-Based Destinations.
 seo-title: People-Based Destinations Prerequisites and Considerations
 solution: Audience Manager
@@ -16,97 +16,97 @@ ht-degree: 3%
 # 必要條件和考量事項 {#prerequisites-considerations}
 
 >[!IMPORTANT]
->本文包含的產品檔案旨在引導您完成此功能的設定與使用。 這裡沒有任何法律建議。 請諮詢您自己的法律顧問，以取得法律指引。
+>本文包含旨在指導您完成此功能的設定和使用的產品文檔。 這裡沒有法律建議。 請咨詢您自己的法律顧問以獲得法律指導。
 
-請閱讀以下概述，了解您在註冊之前需要滿足的客戶需求 [!UICONTROL People-Based Destinations].
+請閱讀以下內容，瞭解您在註冊前需要滿足的客戶需求概述 [!UICONTROL People-Based Destinations]。
 
 >[!IMPORTANT]
-> 請先仔細閱讀本文章，再繼續進行實作階段。
+> 在進入實施階段之前，請仔細閱讀本文。
 
 ## 註冊 [!UICONTROL People-Based Destinations] {#signing-up}
 
-[!UICONTROL People-Based Destinations] 是一項進階功能，可讓您在以人物為基礎的環境中，透過社交網路上的自訂選件或透過電子郵件行銷來鎖定您的對象，啟動您的第一方對象區段，進而增強您的Audience Manager體驗。
+[!UICONTROL People-Based Destinations] 是一種高級功能，它允許您在基於人的環境中激活第一方受眾群體，通過在社交網路上或通過電子郵件營銷為受眾提供定制服務來增強您的Audience Manager體驗。
 
-請連絡您的Adobe代表，以利用此進階功能。
+請聯繫您的Adobe代表以利用此高級功能。
 
 ## 特定於合作夥伴的先決條件 {#partner-prerequisites}
 
 ### [!DNL Facebook] {#facebook}
 
-使用之前 [!UICONTROL People-Based Destinations] 傳送您的第一方對象 [!UICONTROL segments] to [!DNL Facebook]，請確定您符合下列需求：
+在您使用之前 [!UICONTROL People-Based Destinations] 派你的第一個派對觀眾 [!UICONTROL segments] 至 [!DNL Facebook]，確保滿足以下要求：
 
-1. 您的 [!DNL Facebook] 使用者帳戶必須具有 **管理行銷活動** 已為您打算使用的廣告帳戶啟用權限。
-2. 新增 **Adobe Experience Cloud** 在您的 [!DNL Facebook Ad Account]. 使用 `business ID=206617933627973`。請參閱 [將合作夥伴添加到您的業務經理](https://www.facebook.com/business/help/1717412048538897) 以取得詳細資訊。
+1. 您 [!DNL Facebook] 用戶帳戶必須具有 **管理市場活動** 已為您計畫使用的Ad帳戶啟用權限。
+2. 添加 **Adobe Experience Cloud** 作為廣告合作夥伴的業務客戶 [!DNL Facebook Ad Account]。 使用 `business ID=206617933627973`。請參閱 [將合作夥伴添加到您的業務經理](https://www.facebook.com/business/help/1717412048538897) 的雙曲餘切值。
    >[!IMPORTANT]
-   > 設定Adobe Experience Cloud的權限時，您必須啟用 **管理行銷活動** 權限。 這是進行 [!UICONTROL People-Based Destinations] 整合的必要權限。
-3. 閱讀並簽署 [!DNL Facebook Custom Audiences] 服務條款。 若要完成此操作，請前往 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`，其中 `accountID` 是您的 [!DNL Facebook Ad Account ID]。
+   > 為Adobe Experience Cloud配置權限時，必須啟用 **管理市場活動** 權限。 這是進行 [!UICONTROL People-Based Destinations] 整合的必要權限。
+3. 閱讀並簽名 [!DNL Facebook Custom Audiences] 服務條款。 若要完成此操作，請前往 `https://business.facebook.com/ads/manage/customaudiences/tos/?act=[accountID]`，其中 `accountID` 是您的 [!DNL Facebook Ad Account ID]。
 
 ### [!DNL LinkedIn] {#linkedin}
 
-使用之前 [!UICONTROL People-Based Destinations] 將第一方對象區段傳送至 [!DNL LinkedIn]，請確定 [!DNL LinkedIn Campaign Manager] 帳戶具有 [!DNL Creative Manager] 或更高的權限級別。
+在您使用之前 [!UICONTROL People-Based Destinations] 將第一方觀眾群發給 [!DNL LinkedIn]，確保 [!DNL LinkedIn Campaign Manager] 帳戶 [!DNL Creative Manager] 或更高權限級別。
 
-了解如何編輯 [!DNL LinkedIn Campaign Manager] 使用者權限，請參閱 [新增、編輯及移除Advertising帳戶的使用者權限](https://www.linkedin.com/help/lms/answer/5753) 在LinkedIn檔案中。
+瞭解如何編輯 [!DNL LinkedIn Campaign Manager] 用戶權限，請參閱 [添加、編輯和刪除廣告帳戶上的用戶權限](https://www.linkedin.com/help/lms/answer/5753) 在LinkedIn檔案里。
 
-請參閱 [了解和設定LinkedIn以人物為基礎的目的地](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 視訊指示。
+請參閱 [理解和配置LinkedIn以人為本的目標](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html) 視頻說明。
 
 ### [!DNL Google Customer Match] {#gcm}
 
-使用之前 [!UICONTROL People-Based Destinations] 將第一方對象區段傳送至 [!DNL Google Customer Match] 目的地，請務必閱讀並遵循Google的政策，以便使用 [!DNL Customer Match]，於 [Google支援檔案](https://support.google.com/google-ads/answer/6299717).
+在您使用之前 [!UICONTROL People-Based Destinations] 將第一方觀眾群發給 [!DNL Google Customer Match] 目標，確保閱讀並遵守Google的使用策略 [!DNL Customer Match]，在 [Google支援文檔](https://support.google.com/google-ads/answer/6299717)。
 
-接下來，請確定 [!DNL Google] 帳戶已設定為 [!DNL Standard] 或更高的權限級別。 請參閱 [Google Ads檔案](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&amp;rd=1) 以取得詳細資訊。
+接下來，確保 [!DNL Google] 為 [!DNL Standard] 或更高權限級別。 查看 [Google廣告文檔](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&amp;rd=1) 的雙曲餘切值。
 
-符合帳戶的客戶會自動獲得Google的允許。
+擁有合規帳戶的客戶將自動獲得Google的許可。
 
 ## 資料上線 {#data-onboarding}
 
-資料擷取 [!UICONTROL People-Based Destinations] 目前支援最多10個雜湊電子郵件地址，連結至一個客戶ID([!DNL CRM ID])，每個批次傳輸。 上傳連結至一個客戶ID的超過10個雜湊電子郵件地址會導致Audience Manager以不特定順序擷取其中的10個。
+資料接收 [!UICONTROL People-Based Destinations] 當前支援多達10個連接到一個客戶ID的散列電子郵件地址([!DNL CRM ID])，每批傳送。 上載10個以上連結到一個客戶ID的散列電子郵件地址會導致Audience Manager按不同順序接收其中的10個。
 
-上傳多個雜湊電子郵件地址，連結至多個批次傳輸中的一個客戶ID，使Audience Manager保留最近新增的10個電子郵件地址。
+上載10個以上散列電子郵件地址，這些地址連結到多個批傳輸中的一個客戶ID，導致Audience Manager保留最近添加的10個電子郵件地址。
 
 ## 資料隱私權 {#data-privacy}
 
-雖然 [!UICONTROL People-Based Destinations] 可讓您根據上傳的雜湊電子郵件地址來鎖定對象，但您仍禁止將任何可直接識別的訪客資訊上傳至Audience Manager。 在資料上線階段中，您必須確定您打算使用的電子郵件地址已與 [!DNL SHA256] 演算法。 否則，您將無法在 [!UICONTROL People-Based Destinations].
+儘管 [!UICONTROL People-Based Destinations] 允許您根據您上傳的經過散列的電子郵件地址將目標訪問者設定為目標，您仍然禁止將任何可直接識別的訪問者資訊上載到Audience Manager。 在資料載入階段，必須確保您計畫使用的電子郵件地址與 [!DNL SHA256] 算法。 否則，您將無法在 [!UICONTROL People-Based Destinations]。
 
-## 資料雜湊和加密 {#data-hashing-encryption}
+## 資料散列與加密 {#data-hashing-encryption}
 
-加密是雙向功能。 任何加密的資訊也可以使用正確的解密密鑰進行解密。 在Audience Manager環境中加密資料會帶來嚴重風險，因為任何加密形式的個人識別資訊也可以解密。 與加密相比， [!UICONTROL People-Based Destinations] 設計用來改用雜湊資料。
+加密是雙向功能。 也可以使用正確的解密密鑰來解密任何加密的資訊。 在Audience Manager環境中對資料進行加密會帶來嚴重的風險，因為任何加密形式的個人身份資訊也可以解密。 與加密相比， [!UICONTROL People-Based Destinations] 設計用於處理散列資料。
 
-雜湊是一種單向函式，可將輸入進行雜湊處理以產生唯一的結果。 使用適當的雜湊演算法，例如 [!DNL SHA256]，則無法反轉雜湊函式並顯示未加擾的資訊。 您要上線Audience Manager的電子郵件地址必須雜湊為 [!DNL SHA256] 演算法。 如此，您即可確保沒有未雜湊的電子郵件地址可觸及Audience Manager。
+散列函式是對輸入進行加擾以產生唯一結果的單向函式。 通過使用適當的散列算法，例如 [!DNL SHA256]，無法對散列函式進行逆向處理，也無法揭示未置亂的資訊。 您要登載到Audience Manager的電子郵件地址必須與 [!DNL SHA256] 算法。 這樣，您就可以確保沒有未散列的電子郵件地址到達Audience Manager。
 
-## 雜湊要求 {#hashing-requirements}
+## 散列要求 {#hashing-requirements}
 
-對電子郵件地址進行雜湊處理時，請務必符合下列要求：
+散列電子郵件地址時，請確保符合以下要求：
 
-* 修剪電子郵件字串中的所有開頭和結尾空格；範例： `johndoe@example.com`，而非 `<space>johndoe@example.com<space>`;
-* 對電子郵件字串進行雜湊處理時，請務必將小寫字串雜湊；
-   * 範例： `example@email.com`，而非 `EXAMPLE@EMAIL.COM`;
-* 確認雜湊字串全部為小寫
-   * 範例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`，而非 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
-* 別給繩子加鹽。
+* 從電子郵件字串中裁切所有前導空格和尾隨空格；示例： `johndoe@example.com`不 `<space>johndoe@example.com<space>`;
+* 散列電子郵件字串時，確保散列小寫字串；
+   * 示例： `example@email.com`不 `EXAMPLE@EMAIL.COM`;
+* 確保散列字串全部為小寫
+   * 示例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`不 `55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`;
+* 別用鹽把繩子撒了。
 
-請觀看以下影片，了解的雜湊要求 [!UICONTROL People-Based Destinations].
+觀看下面的視頻，瞭解 [!UICONTROL People-Based Destinations]。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud可讓您選擇透過 [!DNL Adobe Experience Platform Identity Service (ECID)]. 請參閱 [setCustomerIDs的SHA256雜湊支援](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html) 以取得如何使用ECID來雜湊客戶ID的詳細資訊。
+Adobe Experience Cloud為您提供了通過 [!DNL Adobe Experience Platform Identity Service (ECID)]。 請參閱 [SHA256對setCustomerID的散列支援](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html) 有關如何使用ECID對客戶ID進行散列的詳細資訊。
 
-## 取得使用者權限 {#obtaining-user-permission}
+## 獲取用戶權限 {#obtaining-user-permission}
 
-自 [!UICONTROL People-Based Destinations] 可協助您在以人物為基礎的管道中啟用第一方對象資料，您有責任告知客戶，並取得客戶關於您將如何將其資料用於廣告或其他目的的任何必要同意。
+自 [!UICONTROL People-Based Destinations] 幫助您在基於人的渠道中激活第一方受眾資料，您有責任告知客戶並獲得客戶將如何使用其資料用於廣告或其他目的的任何必要同意。
 
-註冊之前 [!UICONTROL People-Based Destinations]，請務必先取得客戶的同意，再將其資訊用於廣告用途。
+在你註冊之前 [!UICONTROL People-Based Destinations]，確保在將客戶資訊用於廣告目的之前獲得客戶同意。
 
-若您的客戶想要退出廣告促銷活動，請參閱 [退出管理](../../overview/data-security-and-privacy/data-privacy-requests.md) 以取得如何停止Audience Manager進一步收集資料的詳細資訊。
+如果客戶希望退出廣告活動，請參閱 [選擇退出管理](../../overview/data-security-and-privacy/data-privacy-requests.md) 有關如何停止Audience Manager進一步收集資料的詳細資訊。
 
-## 強制執行第一方資料啟用 {#enforcing-first-party-activation}
+## 強制實施第一方資料激活 {#enforcing-first-party-activation}
 
-使用時 [!UICONTROL People-Based Destinations]，您只能使用第一方資料，在以人物為基礎的管道中啟用對象區段。 您無法在以人物為基礎的管道中使用任何第二方或第三方資料來啟動受眾。
+使用時 [!UICONTROL People-Based Destinations]，您只能使用第一方資料激活基於人的渠道中的受眾段。 您不能在基於人的渠道中使用任何第二方或第三方資料激活受眾。
 
-使用時 [!UICONTROL People-Based Destinations]，使用 [資料匯出控制](../data-export-controls.md) 為 [!UICONTROL data sources] 和 [!UICONTROL destinations] 根據目的地平台和資料提供者的准則和需求。
+使用時 [!UICONTROL People-Based Destinations]。 [資料導出控制項](../data-export-controls.md) 為 [!UICONTROL data sources] 和 [!UICONTROL destinations] 指南和要求，提供資料。
 
-## 透過宣告ID定位，將已驗證的雜湊ID上線 {#onboard-authenticated-declared-id}
+## 通過聲明的ID目標的板載已驗證散列ID {#onboard-authenticated-declared-id}
 
 有兩種方式可將離線資料帶入 Audience Manager 中以用於[!UICONTROL People-Based Destinations]。
 
-* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) Audience Manager擷取雜湊電子郵件地址。 透過此方法，您可以選擇使用 [!DNL CRM] 資料庫 [!UICONTROL People-Based Destinations]. 此外，使用此方法時，您也可以將雜湊電子郵件地址限定為 [已上線的特徵](../traits/trait-and-segment-qualification-reference.md).
-* 使用 [宣告ID](../declared-ids.md) 傳入已驗證的客戶ID時，宣告雜湊的電子郵件地址。 使用此方法時，代表您的Audience Manager只會傳送至 [!UICONTROL People-Based Destinations] 來自已線上驗證之使用者的雜湊電子郵件地址。 透過以人物為基礎的管道啟動的電子郵件地址，只是宣告ID事件呼叫中的電子郵件地址。 與客戶ID相關聯的其他電子郵件地址不會即時傳送。
+* [發送批處理資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md) Audience Manager以攝取已散列的電子郵件地址。 使用此方法，您可以選擇使用您的 [!DNL CRM] 資料庫 [!UICONTROL People-Based Destinations]。 此外，使用此方法時，您還可以將散列電子郵件地址 [已上鈎的性狀](../traits/trait-and-segment-qualification-reference.md)。
+* 使用 [聲明的ID](../declared-ids.md) 在傳遞經過驗證的客戶ID時聲明散列的電子郵件地址。 使用此方法時，Audience Manager僅代表您發送到 [!UICONTROL People-Based Destinations] 已線上驗證的用戶的散列電子郵件地址。 通過基於人員的渠道激活的電子郵件地址僅是聲明的ID事件調用中的電子郵件地址。 與客戶ID關聯的其他電子郵件地址不會即時發送。

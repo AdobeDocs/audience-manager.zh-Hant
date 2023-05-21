@@ -1,6 +1,6 @@
 ---
-description: 測試版環境用於測試您的Audience Manager實作。 在測試版中進行的變更不會影響生產資料。 如果您有興趣使用測試版環境，請連絡您的Audience Manager合作夥伴解決方案代表。
-keywords: 沙箱
+description: 測試版環境用於測試您的Audience Manager實施。 在測試版中所做的更改不會影響生產資料。 如果您對使用測試版環境感興趣，請與Audience Manager合作夥伴解決方案代表聯繫。
+keywords: 沙坑
 seo-description: The beta environment is for testing your Audience Manager implementation. Changes made in beta do not affect production data. Contact your Audience Manager Partner Solutions representative if you're interested in using the beta environment.
 seo-title: Beta Environment
 solution: Audience Manager
@@ -17,50 +17,50 @@ ht-degree: 3%
 
 # 測試版環境 {#beta-environment}
 
-測試版環境用於測試您的Audience Manager實作。 在測試版中進行的變更不會影響生產資料。 Contact your Audience Manager Partner Solutions representative if you&#39;re interested in using the beta environment.
+測試版環境用於測試您的Audience Manager實施。 在測試版中所做的更改不會影響生產資料。 如果您對使用測試版環境感興趣，請與Audience Manager合作夥伴解決方案代表聯繫。
 
 ## 概述
 
-The functionality in the bveta environment is an exact replica of the production environment, without any experimental or unreleased features. 您來自生產環境的登入認證在測試版環境中有效。
+bveta環境中的功能是生產環境的精確副本，沒有任何實驗性或未發佈的功能。 您來自生產環境的登錄憑據在測試環境中有效。
 
 **更新計畫**
 
-The beta environment is updated at the end of each month during off-peak hours.
+測試版環境在非高峰時段於每月底更新。
 
 >[!IMPORTANT]
 >
->Note that your customer data ([signals, traits, and segments](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)) is not synced between the production and beta environments.
+>請注意，您的客戶資料([信號、特徵和片段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en))未在生產環境和測試環境之間同步。
 
-## Inbound Traffic
+## 入站流量
 
-測試版環境僅支援用於檔案名稱和內容語法驗證目的的傳入流量。 由於測試版環境中沒有進行ID對應，因此客戶將看不到任何區段母體。
+測試版環境僅支援用於檔案名和內容語法驗證目的的入站流量。 由於測試環境上沒有ID映射，因此客戶將看不到任何段總體。
 
-因此， [!UICONTROL Onboarding Status] 頁面將一律報告 [!UICONTROL No matching AAM ID] 在測試版環境中擷取檔案時。
+因此， [!UICONTROL Onboarding Status] 頁面將始終報告 [!UICONTROL No matching AAM ID] 在beta環境上進行檔案攝取。
 
-We advise all customers to perform any inbound testing on their production environment.
+我們建議所有客戶對其生產環境執行任何入站測試。
 
-## 傳出流量
+## 出站通信
 
-測試版環境未啟用傳出流量。
+未為測試環境啟用出站通信。
 
 ## 端點
 
-| 服務 | URL/Hostname | 如何取得存取權 |
+| 服務 | URL/主機名 | 如何獲取訪問 |
 |--- |--- | --- |
-| S3 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | Contact your Audience Manager Partner Solutions representative or Customer Care to set up an Amazon S3 bucket for your beta instance. 閱讀 [使用Amazon S3的優點](../reference/amazon-s3.md). |
-| DCS | `https://dcs-beta.demdex.net/...` | 請參閱 [存取測試版環境中的DCS](../reference/beta-environment.md#access-dcs-beta-environment). |
-| UI | `https://bank-beta.demdex.com` | Your production environment credentials are valid for the beta environment. |
-| API | `https://api-beta.demdex.com/...` | Your production environment credentials are valid for the beta environment. 建議您建立一般API使用者， [查看詳細資訊](../api/rest-api-main/aam-api-getting-started.md#requirements). |
+| S3 | 聯繫您的Audience Manager合作夥伴解決方案代表或客戶服務 | 聯繫您的Audience Manager合作夥伴解決方案代表或客戶服務人員，為您的試用版實例設定一個AmazonS3儲存桶。 閱讀 [使用AmazonS3的優勢](../reference/amazon-s3.md)。 |
+| DCS | `https://dcs-beta.demdex.net/...` | 請參閱 [在Beta環境中訪問DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
+| UI | `https://bank-beta.demdex.com` | 您的生產環境憑據對測試環境有效。 |
+| API | `https://api-beta.demdex.com/...` | 您的生產環境憑據對測試環境有效。 我們建議您建立通用API用戶， [查看詳細資訊](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |
 
-## 存取測試版環境中的DCS {#access-dcs-beta-environment}
+## 在Beta環境中訪問DCS {#access-dcs-beta-environment}
 
-1. 使用curl進行DCS呼叫 [命令](https://curl.haxx.se/docs/manpage.html). curl是使用許多支援通訊協定之一，從伺服器傳輸資料或傳送至伺服器的工具。
+1. 使用捲曲進行DCS調用 [命令](https://curl.haxx.se/docs/manpage.html)。 Curl是使用許多受支援的協定之一將資料從伺服器傳輸或傳輸到伺服器的工具。
 
    例如：
 
    `curl -v https://dcs-beta.demdex.net/event`
 
-1. 尋找DCS回應標題中的「沙箱」，確認測試版DCS已提供您的請求。
+1. 通過在DCS響應標頭中查找「沙箱」，驗證測試版DCS是否為您的請求提供了服務。
 
    例如：
 

@@ -1,19 +1,19 @@
 ---
 description: Audience Manager 客戶的 GDPR 整備指引
-seo-description: Audience Manager 客戶的 GDPR 整備指引
-seo-title: Audience Manager 客戶的 GDPR 整備指引
+seo-description: GDPR Readiness Guidance for Audience Manager Customers
+seo-title: GDPR Readiness Guidance for Audience Manager Customers
 solution: Audience Manager
 title: Audience Manager 客戶的 GDPR 整備指引
-feature: 資料控管與隱私權
+feature: Data Governance & Privacy
 exl-id: 353b9035-20f3-41ff-819c-71f161e6b1e1
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '461'
 ht-degree: 99%
 
 ---
 
-# Audience Manager 客戶 (資料控制者) 的 GDPR 整備指引 {#gdpr-readiness-guidance}
+# Audience Manager 客戶的 GDPR 整備指引 （資料控制器） {#gdpr-readiness-guidance}
 
 Audience Manager 建議在資料控管和組織整備方面主動採取措施。這可協助您確保妥善整體消費者資料以進行存取或刪除請求的相關程序，讓您的團隊能管理這些請求，而消費者 (資料主體) 將對您的品牌有正面且與眾不同的體驗。
 

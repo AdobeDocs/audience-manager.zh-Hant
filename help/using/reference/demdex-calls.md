@@ -25,6 +25,6 @@ ht-degree: 8%
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience 平台身分服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)
+>* [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)
 >* [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)
 

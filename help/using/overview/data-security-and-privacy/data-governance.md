@@ -1,15 +1,15 @@
 ---
 description: 本文件說明在 Audience Manager 中控管客戶資料的方式。
-seo-description: 本文件說明在 Audience Manager 中控管客戶資料的方式。
-seo-title: 資料控管
+seo-description: TThis document explains how customer data is governed in Audience Manager.
+seo-title: Data Governance
 solution: Audience Manager
-keywords: GDPR UI, GDPR API, CCPA，隱私權，同意，模糊化，控管
+keywords: GDPR UI 、 GDPR API 、 CCPA 、隱私、同意、混淆、治理
 title: 資料控管
-feature: 資料控管 & 隱私權
+feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '454'
 ht-degree: 94%
 
 ---
@@ -31,7 +31,7 @@ Audience Manager 中的資料控管指的是 Audience Manager 中客戶資料的
 
 >[!NOTE]
 >
->請參閱[IP位址模糊化](../../features/administration/ip-obfuscation.md) ，了解如何在Audience Manager使用者介面中啟用[!DNL IP]位址模糊化。
+>請參閱 [IP地址混淆](../../features/administration/ip-obfuscation.md) 瞭解如何啟用 [!DNL IP] Audience Manager用戶介面中的地址混淆。
 
 請觀看以下影片，瞭解 [!DNL IP] 位址模糊化在 Audience Manager 中的運作方式。
 

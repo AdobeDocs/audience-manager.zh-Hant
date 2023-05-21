@@ -1,28 +1,28 @@
 ---
-description: 根據信號類型過濾信號搜索的結果。
-seo-description: 根據信號類型過濾信號搜索的結果。
-seo-title: 篩選搜尋結果
+description: 根據信號類型對信號搜索的結果進行濾波。
+seo-description: Filter the results of a signal search based on the signal type.
+seo-title: Filter Search Results
 title: 篩選搜尋結果
 uuid: 7b764a5d-f8ae-4f7b-83f5-7f6c40de639b
 feature: Data Explorer
 exl-id: df178712-6417-4c4d-b5f8-5a8c00bfcd12
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 7%
+source-wordcount: '124'
+ht-degree: 4%
 
 ---
 
 # 篩選搜尋結果 {#filter-search-results}
 
-根據信號類型過濾信號搜索的結果。
+根據信號類型對信號搜索的結果進行濾波。
 
-1. 前往[!UICONTROL Audience Data > Signals > Search]，並使用所需索引鍵值配對或更廣泛的搜尋，執行[!UICONTROL Signals Search]。
-1. 使用&#x200B;**[!UICONTROL Filter by Signal Type]**&#x200B;區段，根據下列類別篩選結果：
+1. 轉到 [!UICONTROL Audience Data > Signals > Search] 然後 [!UICONTROL Signals Search] 使用所需的鍵值對，或使用篩選器進行更廣泛的搜索。
+1. 使用 **[!UICONTROL Filter by Signal Type]** 的子菜單。
 
-   * **[!UICONTROL Actionable log files]**:通過日誌檔案 [!DNL Google] [!DNL DCM] 接收的信號；
-   * **[!DNL Adobe Analytics]**:從您帳戶接收的 [!DNL Adobe Analytics] 訊號。使用&#x200B;**[!UICONTROL Filter by report suites]**&#x200B;下拉式功能表，選取要顯示訊號的報表套裝。
-   * **[!UICONTROL General online data]**:訪客產生且未包含在可操作記錄檔和中的即時資料 [!DNL Adobe Analytics];
-   * **[!UICONTROL Onboarded records]**:透過批次資料傳輸接收的資料。使用&#x200B;**[!UICONTROL Filter by data source]**&#x200B;下拉式功能表，選取要顯示訊號的資料來源。
+   * **[!UICONTROL Actionable log files]**:通過 [!DNL Google] [!DNL DCM] 日誌檔案；
+   * **[!DNL Adobe Analytics]**:從 [!DNL Adobe Analytics] 帳戶。 使用 **[!UICONTROL Filter by report suites]** 下拉菜單，以選擇要顯示信號的報表套件。
+   * **[!UICONTROL General online data]**:由訪問者生成且未包含在可操作日誌檔案和 [!DNL Adobe Analytics];
+   * **[!UICONTROL Onboarded records]**:通過批處理資料傳輸接收的資料。 使用 **[!UICONTROL Filter by data source]** 下拉菜單，以選擇顯示信號的資料源。
 
-1. 您可以選擇[儲存搜尋條件](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)以供日後使用。
+1. （可選）您可以 [保存搜索條件](../../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md) 供將來使用。

@@ -1,127 +1,127 @@
 ---
-description: 在特徵產生器中，運算式產生器可讓您建立並測試規則，以建立受眾資格要求。 規則包含機碼值組，例如「color == blue」或「price &gt;100英吋。 比較運算子會建立索引鍵和值之間的關係。 布林運算式決定規則群組之間的關係。
-seo-description: 在特徵產生器中，運算式產生器可讓您建立並測試規則，以建立受眾資格要求。 規則包含機碼值組，例如「color == blue」或「price &gt;100英吋。 比較運算子會建立索引鍵和值之間的關係。 布林運算式決定規則群組之間的關係。
-seo-title: 管理特徵規則
+description: 在特性生成器中，表達式生成器允許您建立和test建立受眾資格要求的規則。 規則由鍵值對組成，如"color == blue"或"price &gt;100」。 比較運算子建立鍵和值之間的關係。 布爾表達式確定規則組之間的關係。
+seo-description: In Trait Builder, the Expression Builder lets you create and test rules that establish audience qualification requirements. Rules consist of key-value pairs such as "color == blue" or "price &gt; 100". Comparison operators establish the relationship between keys and values. Boolean expressions determine the relationship between rule groups.
+seo-title: Managing Trait Rules
 solution: Audience Manager
 title: 管理特徵規則
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
-feature: 特徵
+feature: Traits
 exl-id: 4561b19a-bbb5-41ec-ac79-ab3e2ab75548
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '677'
 ht-degree: 1%
 
 ---
 
 # 管理特徵規則 {#managing-trait-rules}
 
-在[!UICONTROL Trait Builder]中， [!UICONTROL Expression Builder]可讓您建立並測試建立受眾資格要求的規則。 規則包含機碼值組，例如`color == blue`或`price > 100`。 比較運算子會建立索引鍵和值之間的關係。 [!DNL Boolean] 運算式會決定規則群組之間的關係。
+在 [!UICONTROL Trait Builder]，也請參見Wiki頁。 [!UICONTROL Expression Builder] 允許您建立和test規則，以建立受眾資格要求。 規則由鍵值對組成，如 `color == blue` 或 `price > 100`。 比較運算子建立鍵和值之間的關係。 [!DNL Boolean] 表達式確定規則組之間的關係。
 
 <!-- c_tb_rules.xml -->
 
-## 說明的主要訊號規則功能
+## 主要信號規則功能說明
 
 ![](assets/manage-trait-rules.png)
 
-1. **[!UICONTROL Expression Builder]**&#x200B;或&#x200B;**[!UICONTROL Code View]**&#x200B;標籤提供特徵規則的概觀。 **[!UICONTROL Expression Builder]**&#x200B;標籤可讓您建立包含欄位和下拉式功能表的規則。 **[!UICONTROL Code View]**&#x200B;可讓您手動將這些運算式寫入程式碼，以建立規則。 上圖顯示一個簡單特徵，由一個信號組成，該信號用於評估產品鍵等於特定值（在此例中為`color == "blue"`）的合格條件的資料。
+1. 的 **[!UICONTROL Expression Builder]** 或 **[!UICONTROL Code View]** 頁籤提供特性規則的概述。 的 **[!UICONTROL Expression Builder]** 頁籤中，您可以使用欄位和下拉菜單建立規則。 的 **[!UICONTROL Code View]** 允許您通過手動將這些表達式寫入代碼來建立規則。 上圖顯示了一個簡單特性，該特性由一個信號組成，該信號對產品鍵等於特定值的限定條件計算資料 `color == "blue"`。
 
-1. 本節中的欄位和控制項可讓您從索引鍵值配對建立訊號，並使用比較運算子設定兩者之間的關係。 索引鍵、運算子和值為必要項目。
-1. [!UICONTROL Data Explorer Options]可讓您回填訊號的特徵實現。
-
-   >[!NOTE]
-   >
-   >此選項僅適用於[!UICONTROL Data Explorer]客戶。 如需詳細資訊，請連絡您的Adobe顧問。
-
-1. 本節針對[!UICONTROL Expression Builder]中定義的訊號，顯示過去7天內回填和非回填特徵的特徵實現估計值。
+1. 此部分中的欄位和控制項允許您從鍵值對建立信號，並設定它們與比較運算子之間的關係。 需要鍵、運算子和值。
+1. 的 [!UICONTROL Data Explorer Options] 讓你回過頭來瞭解你的信號。
 
    >[!NOTE]
    >
-   >此選項僅適用於[!UICONTROL Data Explorer]客戶。 如需詳細資訊，請連絡您的Adobe顧問。
+   >此選項僅適用於 [!UICONTROL Data Explorer] 客戶。 請與Adobe顧問聯繫以瞭解詳細資訊。
 
-1. 測試欄位可讓您驗證訊號規則的組合，或在將資料傳送至Audience Manager時要使用的[!DNL URL]。
+1. 本節將為您介紹過去7天中定義的信號的特性實現的估計 [!UICONTROL Expression Builder]，用於回填和非回填特徵。
 
-## 建立特徵規則{#create-trait-rule}
+   >[!NOTE]
+   >
+   >此選項僅適用於 [!UICONTROL Data Explorer] 客戶。 請與Adobe顧問聯繫以瞭解詳細資訊。
 
-規則（或運算式）由個別或機碼值組群組組成。 比較運算子會設定機碼值組之間的關係。 若要建立規則，請提供索引鍵、值、選取運算子，然後按一下&#x200B;**[!UICONTROL Add Rule]**。
+1. test欄位允許您驗證信號規則或 [!DNL URL]在將資料發送到Audience Manager時要使用的。
+
+## 建立特性規則 {#create-trait-rule}
+
+規則（或表達式）由單個或一組鍵值對組成。 比較運算子設定鍵值對之間的關係。 要建立規則，請提供鍵、值，選擇運算子，然後按一下 **[!UICONTROL Add Rule]**。
 
 <!-- t_tb_create_rules.xml -->
 
-在&#x200B;*建立特徵規則之前，填寫&#x200B;**[!UICONTROL Basic Information]**區段*&#x200B;中的必填欄位。
+完成 **[!UICONTROL Basic Information]** 節 *先* 創造特質規則。
 
-1. 展開&#x200B;**[!UICONTROL Trait Expression]**&#x200B;區段，並輸入索引鍵和值名稱。 這會建立&#x200B;*`signal`*。
-
-   >[!NOTE]
-   >
-   >如果您的事件呼叫使用該語法將資料傳送至[!DNL Audience Manager]，請加入金鑰變數的`c_`首碼（或任何其他命名慣例）。
-
-1. 從&#x200B;**[!UICONTROL Operator]**&#x200B;下拉式清單中選取[比較運算子](../../features/traits/trait-comparison-operators.md)。 比較運算子評估信號中各元素之間的關係。
+1. 展開 **[!UICONTROL Trait Expression]** ，然後輸入鍵和值名稱。 這將建立 *`signal`*。
 
    >[!NOTE]
    >
-   >[!DNL Boolean] [!UICONTROL OR]運算子在&#x200B;*組內建立多個信號*&#x200B;之間的關係，並且不能更改。
+   >包括 `c_` 如果事件調用將資料發送到，則鍵變數的前置詞（或任何其他命名約定） [!DNL Audience Manager] 用那句語法。
 
-1. 按一下 **[!UICONTROL Add Rule]**. 儲存的規則會顯示在特徵工作區中資料輸入欄位上方。
+1. 選擇 [比較算子](../../features/traits/trait-comparison-operators.md) 從 **[!UICONTROL Operator]** 下拉清單。 比較算子評估信號中的元素之間的關係。
+
+   >[!NOTE]
+   >
+   >的 [!DNL Boolean] [!UICONTROL OR] 操作者建立多個信號之間的關係 *內* 組，不能更改。
+
+1. 按一下 **[!UICONTROL Add Rule]**. 保存的規則顯示在資料輸入欄位上方的traits工作區中。
 
 ### 範例 {#example-trait-rule}
 
-在下列範例中，使用者已根據產品ID建立新的特徵規則。 若要建立此規則，使用者將連結有等於運算子(`==`)的索引鍵`productkey`提供至值`2093`。
+在下例中，用戶已基於產品ID建立了新的特性規則。 要生成此規則，用戶提供了 `productkey` 與等號運算子連結( `==`)到值 `2093`。
 
 ![](assets/tb_sample_rule1.png)
 
-按一下&#x200B;**[!UICONTROL Add Rule]**&#x200B;會儲存特徵並將其移入[!UICONTROL Expression Builder]工作區。
+按一下 **[!UICONTROL Add Rule]** 保存並移入 [!UICONTROL Expression Builder] 工作區。
 
 ![](assets/tb_sample_rule2.png)
 
-## 建立新規則組{#create-rule-group}
+## 建立新規則組 {#create-rule-group}
 
-此程式說明如何建立新規則群組。
+此過程介紹如何建立新規則組。
 
 <!-- t_tb_new_rule_group.xml -->
 
-您的特徵必須至少包含兩個規則，才能建立新的規則群組。
+您的特性必須至少包含兩個規則，然後才能建立新規則組。
 
 1. 將游標移到要移動的規則上以突出顯示它。
-1. 將滑鼠指標暫留在醒目提示的規則邊框上。
+1. 懸停在突出顯示的規則邊框上。
 
-   這會自動將規則與其目前群組分開，並將其移入新群組。
+   這會自動將規則與其當前組分離，並將其移入新組。
 
    >[!NOTE]
    >
-   >如果您無意中將規則移回原始群組，請將其拖曳回原始群組。
+   >如果無意中移動規則，請將其拖回其原始組。
 
-1. 從下拉式選單中選取[!DNL Boolean]運算子([!UICONTROL AND]、[!UICONTROL OR]、[!UICONTROL AND NOT])，以設定規則群組之間的關係。
+1. 選擇 [!DNL Boolean] 運算子([!UICONTROL AND]。 [!UICONTROL OR]。 [!UICONTROL AND NOT])，以設定規則組之間的關係。
 
-## 在組之間移動規則{#move-rules-between-groups}
+## 在組之間移動規則 {#move-rules-between-groups}
 
-若要移動規則，請按一下，然後將其拖曳至其他群組。
+要移動規則，請按一下並將其拖動到另一個組。
 
-## 編輯特徵{#edit-trait}
+## 編輯特性 {#edit-trait}
 
-此程式說明如何編輯特徵。
+此過程說明如何編輯特性。
 
 <!-- t_tb_edit.xml -->
 
-1. 在[!UICONTROL Traits]控制面板中，將滑鼠移至&#x200B;**[!UICONTROL Actions]**&#x200B;欄上方，即可找到您要編輯的特徵。 這會顯示特徵管理圖示。
-1. 按一下鉛筆即可編輯特徵。
+1. 在 [!UICONTROL Traits] 操控板，懸停在 **[!UICONTROL Actions]** 的子菜單。 這就引出了特質管理表徵圖。
+1. 按一下鉛筆編輯特徵。
 
    ![](assets/tb_edit_trait.png)
 
-## 刪除特徵規則{#delete-trait}
+## 刪除特性規則 {#delete-trait}
 
-此程式說明如何刪除特徵規則。
+此過程說明如何刪除特性規則。
 
 <!-- t_tb_delete_rule.xml -->
 
-1. 在[!UICONTROL Traits]控制面板中，將滑鼠移至您要編輯之特徵的[!UICONTROL Actions]欄上，然後按一下鉛筆圖示。 這會顯示特徵管理圖示。
-1. 展開[!UICONTROL Trait Expression]區段。
-1. 將滑鼠指標暫留在您要刪除的規則上，然後按一下X圖示。 規則會立即刪除。
+1. 在 [!UICONTROL Traits] 操控板，懸停在 [!UICONTROL Actions] 列，然後按一下鉛筆表徵圖。 這就引出了特質管理表徵圖。
+1. 展開 [!UICONTROL Trait Expression] 的子菜單。
+1. 將滑鼠懸停在要刪除的規則上，然後按一下X表徵圖。 該規則將立即刪除。
 
 >[!MORELIKETHIS]
 >
->* [建立新規則群組](../../features/traits/manage-trait-rules.md#create-rule-group)
-* [在群組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
-* [建立特徵規則](../../features/traits/manage-trait-rules.md#create-trait-rule)
-* [刪除特徵規則](../../features/traits/manage-trait-rules.md#delete-trait)
-* [在群組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
+>* [建立新規則組](../../features/traits/manage-trait-rules.md#create-rule-group)
+>* [在組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
+>* [建立特性規則](../../features/traits/manage-trait-rules.md#create-trait-rule)
+>* [刪除特性規則](../../features/traits/manage-trait-rules.md#delete-trait)
+>* [在組之間移動規則](../../features/traits/manage-trait-rules.md#move-rules-between-groups)
 

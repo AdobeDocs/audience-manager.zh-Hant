@@ -1,15 +1,15 @@
 ---
 description: 目標定位的相關常見疑問與問題。
-seo-description: 目標定位的相關常見疑問與問題。
-seo-title: 目標定位常見問題集
+seo-description: Common targeting-related questions and issues.
+seo-title: Targeting FAQ
 solution: Audience Manager
 title: 目標定位常見問題集
 uuid: ee96ef71-b903-4953-afc4-8ec8e48bd49e
-feature: 符合率
+feature: Match Rates
 exl-id: e5f761fd-dfc8-4859-a81e-89abbd7f2914
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '913'
 ht-degree: 100%
 
 ---

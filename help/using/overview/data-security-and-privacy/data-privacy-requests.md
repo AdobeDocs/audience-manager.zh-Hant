@@ -87,7 +87,7 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Adobe Experience Cloud </p> </td> 
-   <td colname="col2"> <p><a href="https://www.adobe.com/tw/privacy/opt-out.html" format="http" scope="external">「您的隱私權選擇」頁面</a>提供一鍵式功能，可讓您的一般使用者控制和選擇退出 Adobe Experience Cloud 廣告解決方案 (包括 Audience Manager) 的資料收集。具體說明請參閱「隱私權選擇」頁面上的<a href="https://www.adobe.com/privacy/opt-out.html#customeruse" format="http" scope="external">企業客戶區段</a>。 </p> </td> 
+   <td colname="col2"> <p><a href="https://www.adobe.com/tw/privacy/opt-out.html" format="http" scope="external">「您的隱私權選擇」頁面</a>提供一鍵式功能，可讓您的一般使用者控制和選擇退出 Adobe Experience Cloud 廣告解決方案 (包括 Audience Manager) 的資料收集。具體說明請參閱「隱私權選擇」頁面上的<a href="https://www.adobe.com/tw/privacy/opt-out.html" format="http" scope="external">企業客戶區段</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>向 Audience Manager 發出直接 API 呼叫 </p> </td> 

@@ -1,32 +1,32 @@
 ---
-description: 您必須先設定Audience Manager與第三方內容提供者之間的整合，才能將批次資料傳送至第三方內容提供者。
-seo-description: 您必須先設定Audience Manager與第三方內容提供者之間的整合，才能將批次資料傳送至第三方內容提供者。
-seo-title: 設定批次資料整合
+description: 在向第三方內容提供商發送批處理資料之前，您需要配置Audience Manager與第三方內容提供商之間的整合。
+seo-description: Before you can send batch data to third-party content providers, you need to configure the integration between Audience Manager and the third-party content provider.
+seo-title: Configure batch data integration
 solution: Audience Manager
-title: 設定批次資料傳輸整合
-feature: 傳出資料傳輸
+title: 配置批資料傳輸整合
+feature: Outbound Data Transfers
 exl-id: 0ed0f6bc-d4dd-4c6b-bc44-ea5c4ebe600b
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
 
-# 設定批次資料傳輸整合
+# 配置批資料傳輸整合
 
-您必須先設定Audience Manager與第三方內容提供者之間的整合，才能將批次資料傳送至第三方內容提供者。 您可以透過兩種方式來執行此作業：
+在向第三方內容提供商發送批處理資料之前，您需要配置Audience Manager與第三方內容提供商之間的整合。 可以通過兩種方式實現：
 
-## 通過您的Adobe顧問{#config-consultant}請求協助配置
+## 通過您的Adobe顧問請求幫助配置 {#config-consultant}
 
-如果您與Adobe顧問合作，他們會為您處理設定程式。
+如果您正在與Adobe顧問合作，他們將為您處理配置過程。
 
-## 通過Adobe客戶支援{#config-support}請求協助配置
+## 通過Adobe客戶支援請求幫助配置 {#config-support}
 
-如果您沒有與Adobe顧問合作，您仍可以取得客戶支援設定的批次傳輸整合。 如需詳細資訊，請連絡客戶支援。
+如果您沒有與Adobe顧問合作，您仍可以獲得客戶支援配置的批傳送整合。 有關詳細資訊，請與客戶支援聯繫。
 
 >[!IMPORTANT]
 >
->如果您使用SSH金鑰式驗證，客戶支援會要求您產生SSH金鑰。
+>如果您使用基於SSH密鑰的身份驗證，客戶支援將要求您生成SSH密鑰。
 >
-> 請務必以OpenSSH格式產生金鑰。
+> 確保以OpenSSH格式生成密鑰。

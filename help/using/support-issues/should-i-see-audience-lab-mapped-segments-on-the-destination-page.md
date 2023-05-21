@@ -1,19 +1,19 @@
 ---
 description: 為什麼 Audience Lab 對應區段不會顯示在目的地詳細資訊頁面上。
-seo-description: 為什麼 Audience Lab 對應區段不會顯示在目的地詳細資訊頁面上。
-seo-title: 為什麼 Audience Lab 對應區段不會顯示在目的地詳細資訊頁面上。
+seo-description: Why Audience Lab mapped segments will not show up on the destination details page.
+seo-title: Why Audience Lab mapped segments will not show up on the destination details page.
 solution: Audience Manager
 title: 我是否應在目的地詳細資訊頁面上看到我的 Audience Lab 對應區段？
-feature: 支援
+feature: Support
 exl-id: 7f35b824-7acd-415f-92a9-62c2a3d08526
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '141'
 ht-degree: 100%
 
 ---
 
-# 我是否應在目的地詳細資訊頁面上看到我的 Audience Lab 對應區段？{#audience-lab-segments-destination-page}
+# 我是否應在目的地詳細資訊頁面上看到我的 Audience Lab 對應區段？ {#audience-lab-segments-destination-page}
 
 ## 問題
 

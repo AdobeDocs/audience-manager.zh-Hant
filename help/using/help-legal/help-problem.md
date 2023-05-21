@@ -1,14 +1,14 @@
 ---
 description: 客戶服務準備好幫助您解決任何可能出現的問題。聯絡客戶服務時，請盡量提供這些資訊。這可協助團隊瞭解並解決您的問題。
-seo-description: 客戶服務準備好幫助您解決任何可能出現的問題。聯絡客戶服務時，請盡量提供這些資訊。這可協助團隊瞭解並解決您的問題。
-seo-title: 如果有問題
+seo-description: Customer Care is prepared to help you solve any issues that might arise. Provide as much of this information as you can when contacting Customer Care. This will help the team understand and resolve your issue.
+seo-title: If There's a Problem
 solution: Audience Manager
 title: 如果有問題
-feature: 支援
+feature: Support
 exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '373'
 ht-degree: 100%
 
 ---

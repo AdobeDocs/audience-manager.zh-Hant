@@ -1,15 +1,15 @@
 ---
 description: 瞭解 Adobe Audience Manager 可滿足的一些常見廣告商需求。
-seo-description: 瞭解 Adobe Audience Manager 可滿足的一些常見廣告商需求。
-seo-title: 廣告商使用案例
+seo-description: A look at some common advertiser needs met by Adobe Audience Manager.
+seo-title: Advertiser Use Cases
 solution: Audience Manager
 title: 廣告商使用案例
 uuid: ceb06f86-1f9b-4e02-b179-116ec635ce5d
-feature: 參考
+feature: Reference
 exl-id: 30f2ee7b-6238-4dd5-a59f-ee91b6256bcb
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '724'
 ht-degree: 100%
 
 ---

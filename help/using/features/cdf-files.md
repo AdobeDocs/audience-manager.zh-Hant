@@ -212,7 +212,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_0_0_0.gz
 
 ## [!UICONTROL CDF] 定義的檔案名元素 {#cdf-file-name-elements}
 
-下表列出並定義了 [!UICONTROL CDF] 檔案名。
+下表列出並定義 [!UICONTROL CDF] 檔案名。
 
 <table id="table_4AC4F90C1C7D43E2A93CB3B6908D7E94"> 
  <thead> 

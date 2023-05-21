@@ -1,14 +1,14 @@
 ---
-description: '以人物為基礎的目的地相關常見問題解答。  '
-seo-description: '以人物為基礎的目的地相關常見問題解答。  '
-seo-title: 以人物為基礎的目的地常見問題集
+description: 以人物為基礎的目的地相關常見問題解答。
+seo-description: Answers to common questions about People-Based Destinations.
+seo-title: People-Based Destinations FAQ
 solution: Audience Manager
 title: 以人物為基礎的目的地常見問題集
-feature: 以人物為基礎的目的地
+feature: People-based Destinations
 exl-id: 56506bf0-45f1-49df-81ac-10f57a2487eb
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1159'
 ht-degree: 94%
 
 ---
@@ -78,9 +78,9 @@ Audience Manager 不會擷取原始電子郵件地址，且無法驗證雜湊是
 
 Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並傳送至目的地平台，但電子郵件地址需透過同步檔案擷取。Audience Manager 將電子郵件地址傳送至目的地平台後，平台必須自行比對這些電子郵件地址與自己的使用者群。某些平台可能會有其他電子郵件地址圖表，用於將 Audience Manager 所傳來的地址與使用者設定檔進行比對。
 
-**我可以在 [!DNL People-Based Destinations] 中使 [!DNL Audience Lab]用？**
+**我能用 [!DNL People-Based Destinations] 在 [!DNL Audience Lab]?**
 
-不會。目前，所有[!DNL People-Based Destinations]目的地都從[!DNL Audience Lab]中排除。 由於[!DNL People-Based Destinations]和需求端平台使用不同的ID，因此您無法測試和測量效能，因為受眾會平均分割。
+不會。當前，所有 [!DNL People-Based Destinations] 目標從 [!DNL Audience Lab]。 鑑於 [!DNL People-Based Destinations] 而需求端平台使用不同的ID，則無法test和衡量表現，讓受眾在它們之間平均分割。
 
 ## 資料匯出控制 {#data-export-controls}
 
@@ -116,6 +116,6 @@ Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並�
 
 這兩項整合相輔相成，您可以同時使用兩者來確保受眾涵蓋範圍更廣。例如，公司想要將目標定位為尚未註冊帳戶的網站訪客時，可使用 [!DNL WCA] 進行勘察，而 [!DNL People-Based Destinations] 可協助您將目標定位為已提供電子郵件地址但可能未造訪網站的現有客戶。
 
-**當使用者 [!DNL People-Based Destinations] 不再符 [!DNL Facebook] 合受眾的資格時，與支援的整合是否會讓使用者取消受眾的資格？**
+**是否 [!DNL People-Based Destinations] 整合 [!DNL Facebook] 支援在用戶不再有資格獲得該用戶時取消其用戶資格？**
 
-是的，整合支援在使用者不再符合資格時，從[!DNL Facebook]對象中移除使用者。
+是，整合支援將用戶從 [!DNL Facebook] 當觀眾不再有資格獲得這些資格時。

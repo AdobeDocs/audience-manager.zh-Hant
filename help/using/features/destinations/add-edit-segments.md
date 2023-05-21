@@ -1,31 +1,31 @@
 ---
-description: 資料匯出標籤可與您在資料來源上設定的匯出控制項搭配使用。 「資料匯出標籤」無法將限制特徵新增至區段，也無法將區段資料傳送至目的地。 您可以將多個匯出標籤設定為新或現有的Cookie或URL目的地。
-seo-description: 資料匯出標籤可與您在資料來源上設定的匯出控制項搭配使用。 「資料匯出標籤」無法將限制特徵新增至區段，也無法將區段資料傳送至目的地。 您可以將多個匯出標籤設定為新或現有的Cookie或URL目的地。
-seo-title: 新增或編輯伺服器對伺服器目的地的區段
+description: 資料導出標籤與在資料源上設定的導出控制項一起使用。 「資料導出標籤」阻止您向段添加受限制的特性，並阻止將段資料發送到目標。 可以將多個導出標籤設定為新的或現有的Cookie或URL目標。
+seo-description: Data Export Labels work with the Export Controls you set on a data source. Data Export Labels prevent you from adding restricted traits to a segment and from sending segment data to a destination. You can set multiple export labels to a new or existing cookie or URL destination.
+seo-title: Add or Edit Segments for Server-to-Server Destinations
 solution: Audience Manager
 title: 新增或編輯伺服器對伺服器目的地的區段
-feature: 目的地基本知識
+feature: Destination Basics
 exl-id: 20124779-e14b-4d17-be4b-9f17ee0dc19e
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 8%
+source-wordcount: '202'
+ht-degree: 7%
 
 ---
 
 # 新增或編輯伺服器對伺服器目的地的區段 {#add-edit-segments}
 
-您只能為伺服器對伺服器([!DNL S2S])目的地新增或編輯區段。 無法使用[[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)建立[!DNL S2S]目標。 請連絡您的顧問以設定[!DNL S2S]目的地。 請依照下列指示，新增或編輯[!DNL S2S]目的地的區段。
+只能添加或編輯伺服器到伺服器的段([!DNL S2S])目標。 無法建立 [!DNL S2S] 目標 [[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)。 與顧問聯繫以設定 [!DNL S2S] 目標。 按照以下說明為 [!DNL S2S] 目標。
 
 <!-- destination-s2s-edit.xml -->
 
-要為[!DNL S2S]目標添加或編輯段映射，請執行以下操作：
+添加或編輯段映射 [!DNL S2S] 目標：
 
-1. 前往&#x200B;**[!UICONTROL Audience Data > Destinations]**。 選擇&#x200B;**整合平台>基於設備的**&#x200B;並找到要使用的[!DNL S2S]目標。
-2. 在[!UICONTROL Action]欄中，按一下鉛筆圖示以編輯目的地。
-   * 在&#x200B;**[!UICONTROL Search and Add Segments]**&#x200B;方塊中，開始輸入區段名稱，或按一下&#x200B;**[!UICONTROL Browse All Segments]**&#x200B;瀏覽可用區段清單。
-   * 找到您要使用的區段時，按一下&#x200B;**[!UICONTROL Add Selected Segments]**。 新增區段會開啟[!UICONTROL Edit Mapping]視窗。
+1. 轉到 **[!UICONTROL Audience Data > Destinations]**。 選擇 **整合平台>基於設備** 找到 [!DNL S2S] 要使用的目標。
+2. 在 [!UICONTROL Action] 列中，按一下鉛筆表徵圖可編輯目標。
+   * 在 **[!UICONTROL Search and Add Segments]** 框中，開始鍵入段的名稱，或按一下 **[!UICONTROL Browse All Segments]** 瀏覽可用段的清單。
+   * 按一下 **[!UICONTROL Add Selected Segments]** 找到要使用的段。 添加段將開啟 [!UICONTROL Edit Mapping] 的子菜單。
    * 在 [!UICONTROL Edit Mapping]:
-      * **[!UICONTROL Mappings]**:為此目的地使 [用的機碼](../../features/destinations/key-value-pairs.md) 值組設定值。
-      * **[!UICONTROL Start Date]** 和 **[!UICONTROL End Date]**:選擇目的地的開始和結束日期。如果結束日期空白，目的地永不過期。
-3. 按一下&#x200B;**[!UICONTROL Save]**，然後按一下&#x200B;**[!UICONTROL Done]**。
+      * **[!UICONTROL Mappings]**:為 [鍵值對](../../features/destinations/key-value-pairs.md) 此目標使用。
+      * **[!UICONTROL Start Date]** 和 **[!UICONTROL End Date]**:選擇目標的開始和結束日期。 如果結束日期為空，則目標將永不過期。
+3. 按一下 **[!UICONTROL Save]** 然後按一下 **[!UICONTROL Done]**。

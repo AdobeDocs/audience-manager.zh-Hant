@@ -1,21 +1,21 @@
 ---
 description: 在 Audience Manager 中處理 Experience Cloud 解決方案或其他外部系統的資料。
-seo-description: 在 Audience Manager 中處理 Experience Cloud 解決方案或其他外部系統的資料。
-seo-title: 在 Audience Manager 中處理 Experience Cloud 解決方案或其他外部系統的資料。
+seo-description: Work with data from Experience Cloud solutions or other external systems in Audience Manager.
+seo-title: Work with data from Experience Cloud solutions or other external systems in Audience Manager.
 solution: Audience Manager
 title: 實作與整合指南
-feature: 協力廠商整合
+feature: Third-party Integration
 exl-id: 6e3cccdd-10af-4b17-9ddb-c4faf63f0a50
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 79%
+source-wordcount: '47'
+ht-degree: 70%
 
 ---
 
-# 實作與整合概述
+# 實施和整合概述
 
-使用[!DNL Experience Cloud]解決方案或[!DNL Audience Manager]中的其他外部系統的資料。
+使用來自 [!DNL Experience Cloud] 或其他外部系統 [!DNL Audience Manager]。
 
 * [資料整合方法](data-integration-methods.md)
 * [實作 Audience Manager](implement-audience-manager.md)

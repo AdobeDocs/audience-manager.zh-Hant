@@ -81,7 +81,7 @@ ht-degree: 1%
 
 配置資料或將資料發送到Twitter自定義訪問群體目標時，可能會遇到以下描述的錯誤。 本節說明可能導致錯誤的原因以及如何修復錯誤。
 
-| 錯誤消息 | 事件/原因 | 解析度 |
+| 錯誤消息 | 事件/原因 | 解決方法 |
 |---|---|---|
 | `Internal server error` | 嘗試添加新的Audience Manager時，此錯誤消息將顯示在UI中 [!DNL Twitter] 使用過時版本的TwitterAPI。 | 連絡 Adobe 客戶服務. |
 | `Twitter Error: This request is not properly authenticated` | 當嘗試將具有不受支援段名稱的段映射到目標時，此錯誤消息會顯示在Audience ManagerUI中。 | 查看映射的段名稱，並確保它們不包含不受支援的字元。 請參閱 [段映射注意事項](#segment-mapping-considerations) 的子菜單。 |

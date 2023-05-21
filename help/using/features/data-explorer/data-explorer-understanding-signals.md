@@ -1,47 +1,47 @@
 ---
-description: 訊號是Audience Manager內最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
-seo-description: 訊號是Audience Manager內最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
-seo-title: 瞭解訊號
+description: 信號是Audience Manager內最小的資訊單位。 它們表示您的線上屬性上的用戶交互或用戶活動，並傳遞給Audience Manager以用於特性規則。
+seo-description: Signals are the smallest unit of information within Audience Manager. They represent user interactions or user activity on your online properties, and get passed on to Audience Manager to be used in trait rules.
+seo-title: Understanding Signals
 title: 瞭解訊號
 uuid: 04a0554e-954e-484a-8838-9161ef416872
 feature: Data Explorer
 exl-id: 12ab53e5-302b-4a82-9d8e-07b60139c65e
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 3%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
 # 瞭解訊號
 
-訊號是Audience Manager內最小的資訊單位。 它們代表您線上屬性上的使用者互動或使用者活動，並傳遞至Audience Manager以用於特徵規則。
+信號是Audience Manager內最小的資訊單位。 它們表示您的線上屬性上的用戶交互或用戶活動，並傳遞給Audience Manager以用於特性規則。
 
-[!DNL Audience Manager] 使用機碼值組來表示訊號。例如，下列訊號可能表示訪客已到達包含電子產品的網頁：
+[!DNL Audience Manager] 使用鍵值對來表示信號。 例如，以下信號可能表示訪問者已訪問包含電子產品的網頁：
 
 * `page = electronics`
 
-[訊號控制面板](../../features/data-explorer/data-explorer-signals-dashboard.md)顯示可用來建立新特徵的多種訊號屬性。 可用信號屬性的詳細檢視如下：
+的 [信號儀表板](../../features/data-explorer/data-explorer-signals-dashboard.md) 顯示了多種類型的信號屬性，可用於建立新特徵。 下面是可用信號屬性的詳細視圖：
 
-* *索引鍵* 值配對會顯示所接收訊號的索引鍵值 [!DNL Audience Manager]組。
-* *信號* 類型描述每個信號的類別。訊號分為下列其中一類：
-   * [可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md):從您的媒體效能日誌檔案接收的即時信號；
-   * [!DNL Adobe Analytics]:從您的帳戶接收的即時 [!DNL Adobe Analytics] 信號；
-   * 一般線上資料：對象活動產生且不包含在可操作記錄檔和[!DNL Adobe Analytics]中的即時資料；
-   * 已上線的記錄：透過批次資料傳輸接收的資料。
-* *信* 號源取決於信號類型：
-   * 對於已上線的訊號，訊號來源為資料來源名稱。
-   * 若是源自[!DNL Adobe Analytics]的訊號，資料來源將一律為報表套裝。
-   * 若為可操作的記錄檔和一般線上資料，則不會顯示訊號來源資訊。
-* *「* 總計」顯示過去7天內即時訊號 [!DNL Audience Manager] 的接收總次數。
-* *特徵中* 會顯示訊號是否屬於任何特徵。按一下箭頭可查看包含對應訊號的特徵。 對於不屬於任何特徵的訊號，欄值會變更為[!UICONTROL Create Onboarded Trait]或[!UICONTROL Create Rule-Based Trait]。
+* *鍵值對* 向您顯示由 [!DNL Audience Manager]。
+* *信號類型* 描述了每個信號的類別。 信號分為以下類別之一：
+   * [可操作的日誌檔案](/help/using/integration/media-data-integration/actionable-log-files.md):從媒體效能日誌檔案接收的即時信號；
+   * [!DNL Adobe Analytics]:從您的 [!DNL Adobe Analytics] 賬戶；
+   * 常規聯機資料：由受眾活動生成且不包含在可操作日誌檔案和 [!DNL Adobe Analytics];
+   * 登機記錄：通過批處理資料傳輸接收的資料。
+* *信號源* 取決於信號類型：
+   * 對於已裝載的信號，信號源是資料源名稱。
+   * 對於來自 [!DNL Adobe Analytics]，資料源將始終是報告套件。
+   * 對於可操作的日誌檔案和常規聯機資料，不顯示信號源資訊。
+* *總計數* 顯示接收即時信號的總次數 [!DNL Audience Manager] 過去七天裡。
+* *包含在特徵中* 顯示信號是否是任何特性的一部分。 按一下箭頭查看包含相應信號的特徵。 對於不屬於任何特性的信號，列值將更改為 [!UICONTROL Create Onboarded Trait] 或 [!UICONTROL Create Rule-Based Trait]。
 
 ## 信號資料刷新頻率
 
-由於Audience Manager每天處理的資料量很大，[!UICONTROL Data Explorer]會根據信號類型以固定時間間隔刷新顯示的信號資料：
+由於Audience Manager每天處理的資料量很大， [!UICONTROL Data Explorer] 根據信號類型，以固定時間間隔刷新顯示的信號資料：
 
-* 每4到6小時會重新整理一次即時訊號資料（可操作的記錄檔、[!DNL Adobe Analytics]資料和一般線上資料）。
-* 每24小時會重新整理已上線的訊號資料。
+* 即時信號資料(可操作的日誌檔案， [!DNL Adobe Analytics] 資料和一般線上資料)每4到6小時刷新一次。
+* 每24小時更新一次登機信號資料。
 
 ## 相關概念
 

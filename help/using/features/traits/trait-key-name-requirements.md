@@ -1,33 +1,33 @@
 ---
-description: 本文說明機碼值組中機碼變數使用的命名慣例。
-seo-description: 本文說明機碼值組中機碼變數使用的命名慣例。
-seo-title: 關鍵變數的名稱要求
+description: 本文描述鍵值對中鍵變數使用的命名約定。
+seo-description: This article describes the naming conventions used by the key variable in a key-value pair.
+seo-title: Name Requirements for Key Variables
 solution: Audience Manager
 title: 關鍵變數的名稱要求
 uuid: fa72e732-895d-4cf6-bea0-66b404c2b059
-feature: 特徵
+feature: Traits
 exl-id: 5d1e5842-bebc-4d75-958f-078ba0061dfa
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 12%
+source-wordcount: '104'
+ht-degree: 9%
 
 ---
 
 # 關鍵變數的名稱要求 {#name-requirements-for-key-variables}
 
-本文說明機碼值組中機碼變數使用的命名慣例。
+本文描述鍵值對中鍵變數使用的命名約定。
 
-## 索引鍵的命名需求
+## 鍵的命名要求
 
 <!-- c_tb_key_name_requirements.xml -->
 
-在[!UICONTROL Expression Builder]中，鍵值對中的鍵變數名稱可以包含任意數字，後跟1（或更多）個字母、破折號、底線和附加數字。
+在 [!UICONTROL Expression Builder]，鍵值對中鍵變數的名稱可以包含任何數位，後跟1（或更多）個字母、破折號、下划線和附加數字。
 
-* 有效的密鑰名：`price123`、`123price`、`price-123`、`c_price123`。
+* 有效密鑰名： `price123`。 `123price`。 `price-123`。 `c_price123`。
 
-* 密鑰名稱無效：`123`, `price!123`。
+* 無效的密鑰名稱： `123`。 `price!123`。
 
-## 使用`c_`前置詞鍵變數
+## 預固定鍵變數 `c_`
 
-如果在事件呼叫URL上傳送資料的參數使用該語法，則`c_`前置詞為&#x200B;*always*。
+的 `c_` 前置詞 *總是* 如果事件調用URL上發送資料的參數使用該語法，則此參數為必需欄位。

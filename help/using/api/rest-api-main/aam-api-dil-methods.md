@@ -1,7 +1,7 @@
 ---
-description: 可讓您以程式設計方式搭配Data Integration Library(DIL)運作的方法。
-seo-description: 可讓您以程式設計方式搭配Data Integration Library(DIL)運作的方法。
-seo-title: Data Integration Library API 方法
+description: 使用Data Integration Library(DIL)以寫程式方式工作的方法。
+seo-description: Methods that let you work programmatically with the Data Integration Library (DIL).
+seo-title: Data Integration Library API Methods
 solution: Audience Manager
 title: Data Integration Library API 方法
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
@@ -9,24 +9,24 @@ feature: API
 exl-id: d2f3e4e8-65be-4fec-90d7-5991514b8efc
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 15%
+source-wordcount: '170'
+ht-degree: 13%
 
 ---
 
 # Data Integration Library API 方法 {#data-integration-library-api-methods}
 
-可讓您以程式設計方式使用[!UICONTROL Data Integration Library]([!UICONTROL DIL])的方法。
+使您以寫程式方式使用 [!UICONTROL Data Integration Library] ([!UICONTROL DIL]。
 
 >[!IMPORTANT]
 >
->已棄用Data Integration LibraryAPI。 此API用於產生DIL，您現在可以在此處自行下載：[DIL下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
+>Data Integration LibraryAPI已棄用。 此API用於生成DIL，您現在可以在以下位置自下載： [DIL下載](https://github.com/Adobe-Marketing-Cloud/dil/releases)。
 
 <!-- c_data_integr_library_api.xml -->
 
-## 傳回DIL{#return-version-dil}的版本
+## 返回版本以進行DIL {#return-version-dil}
 
-`GET`方法會傳回從最舊到最新排序的版本清單。
+A `GET` 方法，它返回從最早到最新排序的版本清單。
 
 <!-- r_api_return_versions_dil.xml -->
 
@@ -36,15 +36,15 @@ ht-degree: 15%
 
 ### 回應
 
-成功的請求返迴響應代碼`["4.0", "4.1"]`，如下所示。
+成功的請求返迴響應代碼 `["4.0", "4.1"]` 如下所示。
 
 ```
 ["4.0", "4.1"]
 ```
 
-## 傳回{#return-json-schema-version}版本的JSON結構
+## 返回版本的JSON架構 {#return-json-schema-version}
 
-一種`GET`方法，用於返回[!UICONTROL DIL]版本的[!DNL JSON]架構。 支援使用別名[!UICONTROL LATEST]來獲取最新版本的[!UICONTROL DIL]。
+A `GET` 返回 [!DNL JSON] 架構 [!UICONTROL DIL] 。 支援使用別名 [!UICONTROL LATEST] 用於獲取的 [!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -54,7 +54,7 @@ ht-degree: 15%
 
 ### 回應
 
-成功的要求會傳回回應代碼`["4.0", "4.1"]`和資料，如下所示。
+成功的請求返迴響應代碼 `["4.0", "4.1"]` 資料，如下所示。
 
 ```
 { 
@@ -378,9 +378,9 @@ ht-degree: 15%
 } 
 ```
 
-## 生成DIL{#generate-dil}
+## 生成DIL {#generate-dil}
 
-一種`GET`方法，根據使用指定版本[!UICONTROL DIL]傳入的請求內文來產生[!UICONTROL DIL]。 如果別名`LATEST`用於URL中的版本，則會產生最新版本的[!UICONTROL DIL]。
+A `GET` 方法 [!UICONTROL DIL] 基於使用指定版本的傳入請求正文 [!UICONTROL DIL]。 如果別名 `LATEST` 用於URL中的版本， [!UICONTROL DIL] 生成。
 
 <!-- r_api_generate_dil.xml -->
 
@@ -464,4 +464,4 @@ ht-degree: 15%
 
 ### 回應
 
-成功更新會傳回回應代碼`201 created`以及[!UICONTROL DIL] [!DNL JavaScript]代碼。
+成功更新返迴響應代碼 `201 created` 以及 [!UICONTROL DIL] [!DNL JavaScript] 代碼。

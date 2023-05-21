@@ -1,118 +1,118 @@
 ---
-description: Audience Marketplace資料購買者同意報告所有透過資料摘要中包含的特徵所提供的廣告曝光次數，這些特徵以每千個廣告曝光次數(CPM)的成本為基礎。 CPM使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。 固定費用訂閱者不需要報告使用情況。
-seo-description: Audience Marketplace資料購買者同意報告所有透過資料摘要中包含的特徵所提供的廣告曝光次數，這些特徵以每千個廣告曝光次數(CPM)的成本為基礎。 CPM使用情形應於每個日曆月的第5天到期，並包含前一個月的資料。 固定費用訂閱者不需要報告使用情況。
-seo-title: 資料摘要購買者的計費方式
+description: Audience Marketplace資料購買者同意使用資料饋送中包含的特徵報告所有廣告印象，這些特徵以每千個廣告印象(CPM)為基礎，定價。 CPM使用將在每個日曆月的第5天到期，並包括上個月的資料。 固定費用訂閱者無需報告使用情況。
+seo-description: Audience Marketplace data buyers agree to report all ad impressions served using traits contained in the data feed priced on a cost per thousand ad impressions (CPM) basis. CPM usage is due on the 5th day of each calendar month and includes data for previous month. Flat fee subscribers do not need to report usage.
+seo-title: Billing for Data Feed Buyers
 solution: Audience Manager
 title: 資料摘要購買者的計費方式
-keywords: 區段層級報表、區段層級、區段層級
+keywords: 分部級報告、分部級、分部級
 uuid: d7236667-282b-4160-9909-579721af4016
-feature: 訪客交易市場
+feature: Audience Marketplace
 exl-id: 401cf3be-fa84-4654-936e-e2871fef0be9
 source-git-commit: 88ed0b28fdf5dc03c8a878529d65b4bc844ea6c9
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2002'
 ht-degree: 1%
 
 ---
 
 # 資料摘要購買者的計費方式 {#billing-for-data-feed-buyers}
 
-Audience Marketplace資料購買者同意報告所有透過資料摘要中包含的特徵所提供的廣告曝光次數，這些特徵是以每千個廣告曝光次數([!DNL CPM])為基礎定價。 [!DNL CPM] 使用量在每個日曆月的第5天到期，並包含前一個月的資料。固定費用訂閱者不需要報告使用情況。
+Audience Marketplace資料購買者同意使用資料源中包含的特性報告所提供的所有廣告印象（以每千個廣告印象的成本定價）[!DNL CPM])基礎。 [!DNL CPM] 使用情況在每個日曆月的第5天到期，並包括上個月的資料。 固定費用訂閱者無需報告使用情況。
 
 <br> 
 
-## 如何報告CPM使用量{#report-cpm-usage}
+## 如何報告CPM使用情況 {#report-cpm-usage}
 
 <!-- t_marketplace_report_cpm_usage.xml -->
 
-[!UICONTROL Audience Marketplace] 資料購買者同意報告所有透過資料摘要中包含的特徵所提供的廣告曝光次數([!DNL CPM])，這些特徵的定價是每千個廣告曝光次數的成本。[!DNL CPM] 使用量在每個日曆月的5天到期，且包含前一個月的資料。固定費用訂閱者不需要報告使用情況。
+[!UICONTROL Audience Marketplace] 資料購買者同意報告所有使用資料源中包含的特徵提供的廣告印象，該資料源以每千個廣告印象的成本定價([!DNL CPM])基礎。 [!DNL CPM] 使用情況在每個日曆月的5天到期，並包括上個月的資料。 固定費用訂閱者無需報告使用情況。
 
-[!UICONTROL Audience Marketplace] 提供兩種報告使用情 [!DNL CPM] 況的方法：
+[!UICONTROL Audience Marketplace] 提供了兩種報告方法 [!DNL CPM] 用法：
 
-* **區段層級報表**:這是建議的使 [!DNL CPM] 用報告方法。當您報告區段層級的[!DNL CPM]使用量時，資料摘要層級的報告區段會根據CPM資料摘要](#cost-attribution)的[成本歸因中所述的演算法，自動填入對應的使用量。
-* **資料摘要層級報表**:此方法需要您根據CPM資 [!DNL CPM] 料摘要的成本歸因中所述的演算法，個別報 [告每個資料摘要的使用情況](#cost-attribution)。不過，此方法比區段層級的報表更繁瑣且容易出錯。
+* **段級報告**:這是推薦的 [!DNL CPM] 用法報告方法。 報告時 [!DNL CPM] 在段級的使用情況下，資料饋送級報告部分會根據中所述的算法自動填寫相應的使用量 [CPM資料源的成本分配](#cost-attribution)。
+* **資料饋送級報告**:此方法要求您單獨報告 [!DNL CPM] 每個資料饋送的使用情況，基於中所述的算法 [CPM資料源的成本分配](#cost-attribution)。 但是，與段級報告相比，這種方法更加繁瑣且容易出錯。
 
 <br> 
 
-## 區段層級{#segment-level-report}的報表CPM使用量
+## 報告段級CPM使用情況 {#segment-level-report}
 
-[!UICONTROL Segment Usage]標籤可讓您報告區段層級的使用情形，同時顯示依其對應目的地分組的區段。
+的 [!UICONTROL Segment Usage] 頁籤允許您報告段級使用情況，同時顯示按它們所映射到的目標分組的段。
 
-在報告區段層級的[!DNL CPM]使用量後， [!UICONTROL Audience Marketplace]會根據CPM資料饋送的[成本歸因](#cost-attribution)自動指派對應的資料饋送正確的使用量。
+報告後 [!DNL CPM] 在段級別， [!UICONTROL Audience Marketplace] 根據 [CPM資料源的成本分配](#cost-attribution)。
 
-若要報告區段層級的[!DNL CPM]使用量：
+報告 [!DNL CPM] 在段級別：
 
-1. 前往&#x200B;**[!UICONTROL Audience Marketplace > Payables]**。
-1. 選擇&#x200B;**[!UICONTROL Segment Usage]**&#x200B;頁簽。
-1. 填入區段的使用情形。 如果您只需要報告其中某些區段的使用情況，可以使用[!UICONTROL Search]方塊來篩選區段。
+1. 轉到 **[!UICONTROL Audience Marketplace > Payables]**。
+1. 選擇 **[!UICONTROL Segment Usage]** 頁籤。
+1. 填寫段的用法。 您可以使用 [!UICONTROL Search] 框，以篩選某些段。
 1. 按一下 **[!UICONTROL Edit Segments Usage]**.
-1. 在[!UICONTROL Usage]欄中輸入[!DNL CPM]使用量。
-1. 完成後，按一下&#x200B;**[!UICONTROL Save]**&#x200B;並查看確認對話框。
+1. 輸入 [!DNL CPM] 使用量 [!UICONTROL Usage] 的雙曲餘切值。
+1. 按一下 **[!UICONTROL Save]** 完成後，查看確認對話框。
 
-   ![confirm-segment-usage](assets/confirm-segment-usage.png)
+   ![確認段使用](assets/confirm-segment-usage.png)
 
 1. 按一下 **[!UICONTROL Confirm]**.
 
-另請參閱我們的影片示範，以了解如何報告區段層級的使用情形：
+另請參閱我們的視頻演示，瞭解如何報告段級使用情況：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25522/)
 
  
 
-## 資料摘要層級{#feed-level-report}的報表CPM使用量
+## 在資料饋送級別報告CPM使用情況 {#feed-level-report}
 
-資料摘要層級的報表較為繁瑣且容易出錯，因為您必須個別計算每個資料摘要的[!DNL CPM]使用量。 建議您改為[以區段層級](#segment-level-report)報表CPM使用量。
+資料饋送級別報告是一個比較繁瑣且容易出錯的過程，因為您必須單獨計算 [!DNL CPM] 每個資料饋送的使用情況。 我們建議你 [報告段級CPM使用情況](#segment-level-report) 的雙曲餘切值。
 
-若要報告區段層級的[!DNL CPM]使用量：
+報告 [!DNL CPM] 在段級別：
 
-1. 前往&#x200B;**[!UICONTROL Audience Marketplace > Payables]**。
-2. 選擇&#x200B;**[!UICONTROL Feed Usage]**&#x200B;頁簽。
-3. 使用[!UICONTROL Search]方塊來篩選資料摘要，並識別您需要針對哪些摘要來報告使用狀況。
+1. 轉到 **[!UICONTROL Audience Marketplace > Payables]**。
+2. 選擇 **[!UICONTROL Feed Usage]** 頁籤。
+3. 使用 [!UICONTROL Search] 框，用於篩選資料源並標識需要報告使用情況的源。
 4. 按一下 **[!UICONTROL Edit Feeds Usage]**.
-5. 根據CPM資料摘要的[成本歸因](#cost-attribution)計算每個資料摘要的[!DNL CPM]使用量，並在[!UICONTROL Usage]欄中輸入。
-6. 完成後，按一下&#x200B;**[!UICONTROL Save]**&#x200B;並查看確認對話框。
+5. 計算 [!DNL CPM] 每個資料饋送的使用情況 [CPM資料源的成本分配](#cost-attribution)，並輸入 [!UICONTROL Usage] 的雙曲餘切值。
+6. 按一下 **[!UICONTROL Save]** 完成後，查看確認對話框。
 
-   ![confirm-feed-usage](assets/confirm-feed-usage.png)
+   ![確認源使用](assets/confirm-feed-usage.png)
 
 7. 按一下 **[!UICONTROL Confirm]**.
 
 <br> 
 
-## 大量報告
+## 批量報告
 
-若要減少報告[!DNL CPM]使用情形時的錯誤和額外負荷，您可以使用大量報告選項來下載包含資料摘要和區段的[!DNL CSV]檔案、填寫使用情形，然後將其上傳回[!DNL Audience Manager]。 您可以使用大量報告來報告摘要和區段使用情況。
+在報告時減少錯誤和開銷 [!DNL CPM] 用法，您可以使用批量報告選項下載 [!DNL CSV] 包含資料源和段的檔案，填寫使用情況，然後將其上載回 [!DNL Audience Manager]。 您可以使用批量報告報告源和段使用情況。
 
-若要大量更新[!DNL CPM]使用情況：
+要更新 [!DNL CPM] 批量使用：
 
-1. 前往&#x200B;**[!UICONTROL Audience Marketplace > Payables]**。
-1. 根據您要更新的報表類型，選取&#x200B;**[!UICONTROL Feed Usage]**&#x200B;或&#x200B;**[!UICONTROL Segment Usage]**&#x200B;標籤。
-1. 按一下&#x200B;**[!UICONTROL Edit Feeds Usage]**&#x200B;或&#x200B;**[!UICONTROL Edit Segments Usage]**。
-1. 按一下&#x200B;**[!UICONTROL download the current usage]**&#x200B;以確定您使用有效的CSV檔案。
-1. 在電腦上開啟檔案，並填入使用狀況報表。
-1. 按一下&#x200B;**[!UICONTROL Choose a CSV file]**&#x200B;以上傳更新的使用情況報表。
+1. 轉到 **[!UICONTROL Audience Marketplace > Payables]**。
+1. 選擇 **[!UICONTROL Feed Usage]** 或 **[!UICONTROL Segment Usage]** 頁籤，具體取決於要更新的報告類型。
+1. 按一下 **[!UICONTROL Edit Feeds Usage]** 或 **[!UICONTROL Edit Segments Usage]**。
+1. 按一下 **[!UICONTROL download the current usage]** 以確保使用有效的CSV檔案。
+1. 開啟電腦上的檔案並填寫使用情況報告。
+1. 按一下 **[!UICONTROL Choose a CSV file]** 上載更新的使用情況報告。
 
-   ![usage-report-csv](assets/usage-report-csv.png)
+   ![使用報告 — csv](assets/usage-report-csv.png)
 
-1. [!DNL Audience Manager] 會在您上傳檔案時立即驗證該檔案，並提示您是否偵測到檔案中的任何錯誤。
+1. [!DNL Audience Manager] 上載檔案後立即驗證該檔案，如果檔案檢測到檔案中有任何錯誤，則會提示您。
 
 <br> 
 
-### 大量報告驗證錯誤
+### 批量報告驗證錯誤
 
 | 錯誤訊息 | 說明 | 修正 |
 | ------------- | -------------| -----|
-| 輸入無效 | [!DNL Audience Manager] 檢測到檔案架 [!DNL CSV] 構中的更改，如缺少列或列標題的更改。 | 避免更改表結構。 |
-| 找不到 | 對於[!UICONTROL Segment Level Reporting],[!DNL Audience Manager]無法識別[!UICONTROL Segment ID]和[!UICONTROL Destination ID]組合。 對於[!UICONTROL Feed Level Reporting],[!DNL Audience Manager]無法識別[!UICONTROL Data Provider Name]、[!UICONTROL Feed Name]和[!UICONTROL Use Case]組合。 | 對於[!UICONTROL Segment Level Reporting]，檢查[!UICONTROL Segment ID]和[!UICONTROL Destination ID]組合的有效性。 對於[!UICONTROL Feed Level Reporting]，檢查[!UICONTROL Data Provider Name]、[!UICONTROL Feed Name]和[!UICONTROL Use Case]組合的有效性。 |
-| 找到重複記錄 | [!DNL Audience Manager] 檢測到具有不同曝光值的重複記錄。 | 檢閱報表，並確認不會針對相同資料摘要或區段報告不同的使用值。 |
-| 不支援的值 | [!DNL Audience Manager] 在列中檢測到非數值 [!DNL Audience Manager] 值。 | 檢閱報表，並確認您只在[!DNL Audience Manager]欄中輸入數值。 |
-| 缺少必填欄位的標題 | [!DNL Audience Manager] 檢測到必填欄位缺少表標題。對於[!UICONTROL Segment Level Reporting]，必填欄位為：[!UICONTROL Segment ID]、[!UICONTROL Destination ID]。 對於[!UICONTROL Feed Level Reporting]，必填欄位為：[!UICONTROL Data Provider Name], [!UICONTROL Data Feed Name], [!UICONTROL Use Case] | 檢閱報表，並確認表格標題未被篡改。 |
+| 輸入無效 | [!DNL Audience Manager] 檢測到 [!DNL CSV] 檔案架構，如缺少列或對列標題的更改。 | 避免更改表結構。 |
+| 找不到 | 對於 [!UICONTROL Segment Level Reporting]。 [!DNL Audience Manager] 無法識別 [!UICONTROL Segment ID] 和 [!UICONTROL Destination ID] 的下界。 對於 [!UICONTROL Feed Level Reporting]。 [!DNL Audience Manager] 無法識別 [!UICONTROL Data Provider Name]。 [!UICONTROL Feed Name], [!UICONTROL Use Case] 的下界。 | 對於 [!UICONTROL Segment Level Reporting]，檢查 [!UICONTROL Segment ID] 和 [!UICONTROL Destination ID] 的下界。 對於 [!UICONTROL Feed Level Reporting]，檢查 [!UICONTROL Data Provider Name]。 [!UICONTROL Feed Name], [!UICONTROL Use Case] 的下界。 |
+| 找到重複記錄 | [!DNL Audience Manager] 檢測到具有不同印象值的重複記錄。 | 複查報告，並確保不報告相同資料饋送或段的不同使用值。 |
+| 不支援的值 | [!DNL Audience Manager] 在 [!DNL Audience Manager] 的雙曲餘切值。 | 查看報告並確保僅在 [!DNL Audience Manager] 的雙曲餘切值。 |
+| 缺少必需欄位的標題 | [!DNL Audience Manager] 檢測到必填欄位缺少表標題。 對於 [!UICONTROL Segment Level Reporting]，必填欄位為： [!UICONTROL Segment ID]。 [!UICONTROL Destination ID]。 對於 [!UICONTROL Feed Level Reporting]，必填欄位為： [!UICONTROL Data Provider Name]。 [!UICONTROL Data Feed Name]。  [!UICONTROL Use Case] | 查看報告並確保表頭未被篡改。 |
 
 >[!NOTE]
->從[!DNL CSV]使用狀況報表中移除列對現有使用狀況報表沒有任何影響。 [!DNL Audience Manager] 只會處理報表中包含的欄位。
+>從 [!DNL CSV] 使用情況報告對現有使用情況報告沒有任何影響。 [!DNL Audience Manager] 僅處理報告中包含的欄位。
 
 <br> 
 
-## [!DNL CPM] 報告最佳實務
+## [!DNL CPM] 報告最佳做法
 
 <table id="table_E68FA2130D1C495FAB8982DFB6A31FD9"> 
  <thead> 
@@ -123,153 +123,153 @@ Audience Marketplace資料購買者同意報告所有透過資料摘要中包含
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>一律報告曝光總數</b> </p> </td> 
-   <td colname="col2"> <p>對於CPM曝光總計： </p>
-   <p> 報告曝光總數，不使用小數。 Audience Manager會根據您報告的總數自動計算CPM。</p><p>若您需要報告1,234,567次曝光，報告方式與此完全相同。 您不需要將曝光總數除以1,000即可計算CPM。</p><p>使用Adobe Target或Analytics目的地等工具來最佳化您的網頁或應用程式內容（內容最佳化）的特徵，不會對CPM計畫的「使用量」總計產生任何影響。 資料提供者通常會使用固定費用計畫來補償內容最佳化。</p><p>如需詳細資訊，請參閱CPM資料饋送的<a href="#cost-attribution">成本歸因</a> 。 </p> </td>
+   <td colname="col1"> <p><b>始終報告印數總數</b> </p> </td> 
+   <td colname="col2"> <p>對於CPM印象總計： </p>
+   <p> 報告印數總數，不使用小數。 Audience Manager根據報告的總數自動計算CPM。</p><p>如果你需要報告1234567個印象，就照這樣報告。 計算CPM時，不需要將印象總數除以1000。</p><p>用於使用諸如Adobe Target或分析目標等工具優化您的Web或應用內容（內容優化）的特性不會影響CPM計畫的使用總計。 資料提供商通常使用統一費用計畫對內容優化進行補償。</p><p>請參閱 <a href="#cost-attribution">CPM資料源的成本分配</a> 的子菜單。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>堅持每月報告間隔</b> </p> </td> 
-   <td colname="col2"> <p>報告系統每月5號後關閉。 如果您未依此報告CPM使用量，則必須將該金額新增至下個月的報告。 例如，假設您在10月使用1000次曝光數、錯過10月報表的最後期限，並在11月使用1000次曝光數。 在這種情況下，您將在12月1日至5日報告10月和11月的合計（2000年）。</p><p><b>提示</b>:您應一律嘗試報告下月第1天至第5天之間前一個月的CPM使用量。</p><p>您可以將CPM使用量報告至新日曆月的5日，但不建議這麼做。 在每月5日之前報告CPM使用量，可讓Audience Manager有時間檢查及處理資料。</p> </td>
+   <td colname="col2"> <p>報告系統在每月5號以後關閉。 如果到時未能報告CPM使用情況，則必須將該金額添加到下月的報告中。 比如說10月份用了1000個印，11月份錯過了10月份的報告截止時間，10月份用了1000個印。 在這種情況下，您將報告12月1日至5日的10月和11月總數（2000年）。</p><p><b>提示</b>:您應始終嘗試在下月的第1天至第5天之間報告上個月的CPM使用情況。</p><p>您可以在新日曆月的第5天報告CPM使用情況，但不建議這樣做。 在每月5日之前報告CPM使用情況給Audience Manager檢查和處理資料的時間。</p> </td>
   </tr> 
  </tbody> 
 </table>
 
 <br> 
 
-## CPM資料饋送的成本歸因{#cost-attribution}
+## CPM資料源的成本分配 {#cost-attribution}
 
-在[!UICONTROL Audience Marketplace]中，您必須針對每個區段每月自行報告曝光量。 建議您在區段層級報告[!DNL CPM]使用情況，以便自動完成成本歸因。
+在 [!UICONTROL Audience Marketplace] 您必須每月為每個細分市場自行報告印象金額。 我們建議報告 [!DNL CPM] 在段層使用，以便自動完成成本分配。
 
 <!-- marketplace_cpm_billing.xml -->
 
-### 帳單摘要{#billing-summary}
+### 開單摘要 {#billing-summary}
 
-您必須在每個日曆月的第1天和第5天之間提交[!DNL CPM]資料摘要曝光量。 若要正確執行此動作，建議您[在區段層級](#segment-level-report)報告CPM使用量。
+您必須提交 [!DNL CPM] 每個日曆月的第1天至第5天之間的資料饋送印象量。 要正確執行此操作，我們建議您 [報告段級CPM使用情況](#segment-level-report)。
 
 >[!TIP]
->當您報告區段層級的[!DNL CPM]使用量時，資料摘要層級報告區段會自動填入對應的使用量金額。
+>報告時 [!DNL CPM] 在段級的使用情況下，資料饋送級報告部分自動填充相應的使用量。
 
-若您需要[!UICONTROL Report CPM Usage at Data Feed Level]，您必須個別匯整前一個日曆月份中每個摘要所傳送的所有曝光數，並根據本文所述的計費分配來報告。
+你需要 [!UICONTROL Report CPM Usage at Data Feed Level]，您必須單獨編譯上一個日曆月內每個訂閱源發送的所有印象，並根據本文中描述的開單分配來報告這些印象。
 
-在報告前一個日曆月的[!DNL CPM]數字後， [!DNL Adobe]將執行以下操作：
+報告完 [!DNL CPM] 上一個日曆月的編號， [!DNL Adobe] 將執行以下操作：
 
-* 根據每個訂閱資料饋送的[!DNL CPM]費率建立發票和帳單。
-* 根據您報告的[!DNL CPM]使用情況支付資料提供者（銷售者）應繳費用。
+* 根據 [!DNL CPM] 每個訂閱資料饋送的速率。
+* 根據您報告的資料提供商（銷售商）支付的費用 [!DNL CPM] 。
 
 >[!IMPORTANT]
 >
->身為購買者，所有報告的曝光總計必須真實且準確。 如果您無法在每月的第5天前報告曝光總計，則必須包含下個月未報告月份的總計。
+>作為買家，所有報告的印象總計必須真實而準確。 如果在每月的第5天之前未報告印象合計，則必須包括下個月未報告月份的合計。
 
 <br> 
 
-## 根據特徵資格規則{#assign-impressions}在摘要層級指派曝光數
+## 基於特質資格規則的進貨印象分配 {#assign-impressions}
 
-[!UICONTROL Activation]使用案例可讓您在對應的資料摘要中使用特徵，在[區段產生器](../../../features/segments/segment-builder.md)中建立區段，並將這些區段對應至目的地。 布林運算子[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL NOT]可讓您設定特徵和區段資格的條件。
+的 [!UICONTROL Activation] 用例允許您使用相應資料饋送中的特徵在 [段生成器](../../../features/segments/segment-builder.md) 將這些段映射到目標。 布爾運算子 [!UICONTROL AND]。 [!UICONTROL OR], [!UICONTROL NOT] 讓你為特徵和分段資格設定條件。
 
-當您[在資料摘要層級](#feed-level-report)報告CPM使用情形時，您必鬚根據特徵資格規則中使用的[!DNL Boolean]運算子，以成比例方式為每個資料摘要分配曝光數。 下表列出如何依布林規則或特徵類型正確配置曝光次數。
+當你 [在資料饋送級別報告CPM使用情況](#feed-level-report)，您必鬚根據 [!DNL Boolean] 在特徵限定規則中使用的運算子。 下表列出了如何按布爾規則或特性類型正確分配印象。
 
 >[!TIP]
->[「區段層級」的報表CPM使用量](#segment-level-report) ，讓資料摘要層級報表由Audience Manager自動完成。
+>[報告段級CPM使用情況](#segment-level-report) 使資料饋送級別報告通過Audience Manager自動完成。
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 規則資格邏輯或類型 </th> 
-   <th colname="col2" class="entry"> 帳單分配 </th> 
+   <th colname="col1" class="entry"> 規則限定邏輯或類型 </th> 
+   <th colname="col2" class="entry"> 開單分配 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 和</span> </p> </td> 
-   <td colname="col2"> <p>在使用布林值<span class="wintitle"> AND</span>條件的規則型區段中，將100%的傳送曝光總數套用至所有提供者特徵。 </p> </td> 
+   <td colname="col2"> <p>將100%的已傳遞印象合計應用於使用布爾型的基於規則的段中的所有提供程式特徵 <span class="wintitle"> 和</span> 的子菜單。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> 或</span> </p> </td> 
-   <td colname="col2"> <p>在使用布林值OR條件的規則型區段中，將傳送曝光總計的加權分配套用至所有提供者特徵。 加權分配使用下列公式計算：</p><p><code>(Trait Population / Segment Population) * Number of Impressions * Cost of CPM</code></p> </td> 
+   <td colname="col2"> <p>對使用布爾或條件的基於規則的段中的所有提供程式特徵應用已傳遞印象合計的加權分配。 加權分配採用以下公式計算：</p><p><code>(Trait Population / Segment Population) * Number of Impressions * Cost of CPM</code></p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> NOT</span> </p> </td> 
-   <td colname="col2"> <p>在使用布林值<span class="wintitle"> NOT</span>條件的規則型區段中，將100%的傳送曝光總數套用至所有提供者特徵。 </p> </td> 
+   <td colname="col2"> <p>將100%的已傳遞印象合計應用於使用布爾型的基於規則的段中的所有提供程式特徵 <span class="wintitle"> 不</span> 的子菜單。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>演算法區段 </p> </td> 
-   <td colname="col2"> <p>將100%傳遞的曝光總數套用至包含演算法特徵之區段中的所有提供者摘要。 </p> </td> 
+   <td colname="col1"> <p>算法段 </p> </td> 
+   <td colname="col2"> <p>將100%的已傳遞印象總數應用於包含算法特徵的片段中的所有提供者源。 </p> </td> 
   </tr>
  </tbody>
 </table>
 
 <br> 
 
-## 帳單範例{#billing-examples}
+## 開單示例 {#billing-examples}
 
-以下範例旨在說明如何在資料饋送層級進行[!DNL CPM]使用量分配。
+以下示例旨在說明 [!DNL CPM] 使用分配在資料饋送級別完成。
 
 >[!IMPORTANT]
->建議您改為在區段層級[報告CPM使用量](#segment-level-report)，自動完成此程式。
+>我們建議你 [報告段級CPM使用情況](#segment-level-report) 而不是自動完成此進程。
 
-讓我們考慮下列案例：
+讓我們考慮以下情形：
 
-![帳單範例](assets/billing-examples.png)
+![計費示例](assets/billing-examples.png)
 
 <br> 
 
-### 案例1:具有和資格規則的區段
+### 案例1:具有AND資格規則的細分市場
 
-此區段包含來自個別資料提供者的3個特徵。 由於區段資格是根據[!UICONTROL AND]條件，訪客必須從所有三個摘要實現特徵，才能符合區段資格。
+此段包含來自獨立資料提供程式的3個特徵。 由於分部資格基於 [!UICONTROL AND] 條件是，訪問者必須從所有三種飼料中獲得特徵才能進入該片段。
 
 ![](assets/billing-segment-and.png)
 
-若使用[!UICONTROL AND]條件，您必須將當月收到的曝光數的100%指派給所有三個資料提供者。 在[!UICONTROL Audience Marketplace > Payables]區段中，您對每個提供者給予1,000,000曝光次數的評分。
+與 [!UICONTROL AND] 條件，您必須將該月收到的印象的100%分配給所有三個資料提供程式。 在 [!UICONTROL Audience Marketplace > Payables] 部分，您向每家供應商提供100萬印象。
 
-此範例適用於使用[!DNL Boolean] [!UICONTROL NOT]運算子的區段，或包含演算法特徵的區段。
-
-<br> 
-
-### 案例2:具有OR資格規則的區段
-
-此區段包含來自個別資料提供者的3個特徵。 由於區段資格是根據[!UICONTROL OR]條件，因此訪客必須實現三個特徵中的至少一個才能符合區段資格。
-
-我們無法判斷哪個特徵會造成曝光，因為資格是根據[!UICONTROL OR]條件。 因此，在[!UICONTROL Audience Marketplace > Payables]區段中，您會根據特徵母體，以加權配置的曝光總數來評給每個提供者。
-
-![billing-segment-or](assets/billing-segment-or.png)
+此示例適用於使用 [!DNL Boolean] [!UICONTROL NOT] 運算子或包含算法特徵的段。
 
 <br> 
 
-### 案例3:具有模型和啟用使用案例的區段
+### 案例二：具有或資格規則的段
 
-此範例說明以兩個資料摘要使用案例（模型和啟用）為基礎的歸因。 在此範例中，我們查看了兩個資料提供者，其資訊如下：
+此段包含來自獨立資料提供程式的3個特徵。 由於分部資格基於 [!UICONTROL OR] 條件是，訪問者必須認識到其中至少一種特徵才能進入該片段。
 
-![data-feed](assets/feed-use-cases.png)
+我們無法判斷哪種特質會造成印象，因為資格認定是基於 [!UICONTROL OR] 的子菜單。 因此，在 [!UICONTROL Audience Marketplace > Payables] 部分，您根據特徵群體對每個供應商的總印象進行加權分配。
 
-在下表中，區段X包含T1和T2這兩個特徵，以及區段規則T1或T2，其中：
+![計費段或](assets/billing-segment-or.png)
 
-* T1是資料摘要A的特徵；
-* T2是根據資料摘要A和資料摘要B的協力廠商特徵所建立的演算法特徵。
+<br> 
 
-區段對應至目的地，並使用[區段層級報表](#segment-level-report)在一個月內為此區段輸入1,000,000曝光次數。
+### 案例三：具有建模和激活使用案例的段
 
-其中1,000,000次曝光：
+此示例基於兩個資料源使用案例（建模和激活）描述屬性。 在本示例中，我們查看了兩個資料提供程式，其中包含以下資訊：
 
-* T1佔區段母體的40%，這表示摘要A有400,000次曝光。
-* T2佔區段母體的60%，這表示摘要A和摘要B有600,000次曝光。
+![資料饋送](assets/feed-use-cases.png)
 
-在資料摘要層級，曝光數的分配方式為：
+在下表中，段X包含兩個特徵，即T1和T2，段規則為T1或T2，其中：
 
-* 資料摘要A會從特徵T2（此模型是根據資料摘要A和資料摘要B的特徵建立，因此兩者皆會收到曝光數）接收600,000次曝光數，從特徵T1（資料摘要A的特徵）接收400,000次曝光數，總計1,000,000次曝光數。
-* 資料摘要B從特徵T2收到600,000次曝光（請參閱上述說明），從特徵T1收到0次曝光。
+* T1是Data Feed A的一個特徵；
+* T2是以Data Feed A和Data Feed B中的第三方特徵為模型的算法特性。
 
-依資料摘要和使用案例的簡單劃分如下：
+該段映射到一個目標，並且在一個月內為此段輸入1,000,000個印數，使用 [段級報告](#segment-level-report)。
 
-![摘要劃分](assets/feed-breakdown-alt.png)
+這100萬印象中：
+
+* T1佔Feed A的40%，相當於40萬張印象。
+* T2佔Feed A和Feed B的60%，這相當於60萬次印象。
+
+在資料饋送級別，分配印象的方式是：
+
+* Data Feed A從特徵T2（基於資料饋送A和資料饋送B的特徵建模，因此兩者都獲得了印象）和特徵T1（即資料饋送A的特徵）獲得了60萬印象，總計100萬印象。
+* Data Feed B從特徵T2獲得600,000個印象（見上面的說明），從特徵T1獲得0個印象。
+
+按資料饋送和使用情形分列的概覽細目如下：
+
+![進給故障](assets/feed-breakdown-alt.png)
 
 >[!NOTE]
 >
->對於模型使用案例，您只應在啟動時報告CPM使用情況。 如果您只執行模型，但未啟動模型，則不需要使用情況報告。
+>對於建模用例，您只應在激活時報告CPM使用情況。 如果只運行模型，但不激活它，則不需要使用情況報告。
 
 <br> 
 
-## 固定費用資料摘要的計費和曝光分配{#billing-flat-fee}
+## 統一費用資料源的計費和印象分配 {#billing-flat-fee}
 
-固定費用資料摘要每月會向您收取固定金額，無論訂閱何時開始或您使用的曝光次數為何。 部分月用量或間隔不按比例分攤費用。 與CPM帳單一樣，Adobe會為您訂閱的資料饋送，以每月固定費率產生髮票和帳單。
+統一費用資料每月向您支付固定金額，而不管訂閱何時開始或您使用多少印象。 部分月份使用情況或間隔不按比例分攤費用。 與CPM計費一樣，Adobe將為您訂閱的資料源按每月統一費率生成發票和賬單。
 
-例如，假設您在月中決定開啟摘要中的某些特徵。 無論您是何時開始訂閱或啟動特定特徵，系統仍會以每月全額計費。
+比如，假設你決定在月中的飼料中開啟某些特徵 無論您何時開始訂閱或激活特定特徵，您仍將按每月全額收費。

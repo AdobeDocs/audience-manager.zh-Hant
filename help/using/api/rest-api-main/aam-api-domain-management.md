@@ -1,7 +1,7 @@
 ---
-description: 可讓您建立及管理要將資料傳送至哪些網域的網域管理方法（僅適用於Cookie目的地）。
-seo-description: 可讓您建立及管理要將資料傳送至哪些網域的網域管理方法（僅適用於Cookie目的地）。
-seo-title: 網域管理 API 方法
+description: 域管理方法，用於建立和管理要向其發送資料的域（僅適用於Cookie目標）。
+seo-description: Domain management methods that let you create and manage the domains to which you want to send data (for cookie destinations only).
+seo-title: Domain Management API Methods
 solution: Audience Manager
 title: 網域管理 API 方法
 uuid: f2f08bc5-ea42-4171-9a43-0b20976f0cb0
@@ -9,20 +9,20 @@ feature: API
 exl-id: f9907f6e-d553-4771-945b-2fddb3c9ce2f
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 6%
+source-wordcount: '338'
+ht-degree: 5%
 
 ---
 
 # 網域管理 API 方法 {#domain-management-api-methods}
 
-可讓您建立及管理要將資料傳送至哪些網域的網域管理方法（僅適用於Cookie目的地）。
+域管理方法，用於建立和管理要向其發送資料的域（僅適用於Cookie目標）。
 
 <!-- c_partner_site.xml -->
 
-## 建立新域{#create-new-domain}
+## 建立新域 {#create-new-domain}
 
-`POST`方法可讓您為建立新網域（僅限Cookie目的地）。
+A `POST` 用於為（僅cookie目標）建立新域的方法。
 
 <!-- r_post_new_partner_site.xml -->
 
@@ -40,7 +40,7 @@ ht-degree: 6%
 
 ### 回應
 
-成功的回應會傳回`201 created`和合作夥伴網站，包括其唯一ID。
+成功的響應返回 `201 created` 以及合作夥伴站點，包括其唯一ID。
 
 ```
 {
@@ -50,9 +50,9 @@ ht-degree: 6%
 }
 ```
 
-## 刪除域{#delete-domain}
+## 刪除域 {#delete-domain}
 
-`DELETE`方法可讓您移除網域（僅適用於Cookie目的地）。
+A `DELETE` 用於刪除域（僅用於cookie目標）的方法。
 
 <!-- r_delete_partner_site.xml -->
 
@@ -62,11 +62,11 @@ ht-degree: 6%
 
 ### 回應
 
-成功的響應返回`204 no content`。 如果找不到合作夥伴站點，則返回`404 not found`。
+成功的響應返回 `204 no content`。 返回 `404 not found` 找不到合作夥伴站點。
 
-## 域{#return-props-domain}的返回屬性
+## 返回域的屬性 {#return-props-domain}
 
-`GET`方法可傳回指定網域的詳細資訊（僅適用於Cookie目的地）。
+A `GET` 返回有關指定域的詳細資訊的方法（僅適用於cookie目標）。
 
 <!-- r_get_partner_site.xml -->
 
@@ -76,7 +76,7 @@ ht-degree: 6%
 
 ### 回應
 
-成功的回應會傳回`200 OK`和資料，如下列範例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
+成功的響應返回 `200 OK` 和以下示例中所示的資料。 返回 `404 Not found` 找不到站點ID或合作夥伴。
 
 ```
 {
@@ -86,9 +86,9 @@ ht-degree: 6%
 }
 ```
 
-## 返回所有域{#return-props-all-domains}的屬性
+## 返回所有域的屬性 {#return-props-all-domains}
 
-`GET`方法可傳回關於所有網域的資訊（僅適用於Cookie目的地）。
+A `GET` 返回有關所有域的資訊（僅適用於cookie目標）的方法。
 
 <!-- r_get_partner_sites.xml -->
 
@@ -96,9 +96,9 @@ ht-degree: 6%
 
 `GET https://api.demdex.com/v1/partner-sites/`
 
-### 選用的查詢參數
+### 可選查詢參數
 
-您可以將這些可選參數與[!DNL API]方法搭配使用，這些方法會傳回物件的&#x200B;*all*&#x200B;屬性。 將查詢傳遞至[!DNL API]時，請在要求字串中設定這些選項。 請參閱[選用參數](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
+可將這些可選參數與 [!DNL API] 返回的方法 *全部* 對象的屬性。 將查詢傳遞到 [!DNL API]。 請參閱 [可選參數](../../api/rest-api-main/aam-api-getting-started.md#optional-api-query-parameters)。
 
 <table id="table_B05A8EE22C9A4C72B84A8479E1AB7D0A"> 
  <thead> 
@@ -114,26 +114,26 @@ ht-degree: 6%
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code> pageSize</code> </td> 
-   <td colname="col2"> 設定請求傳回的回應結果數（預設為10）。 </td>
+   <td colname="col2"> 設定請求返回的響應結果數（預設值為10）。 </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> sortBy</code> </td> 
-   <td colname="col2"> 根據指定的JSON屬性對結果進行排序和返回。 </td>
+   <td colname="col2"> 根據指定的JSON屬性對結果排序並返回結果。 </td>
   </tr>
   <tr valign="top"> 
    <td colname="col1"><code> descending</code> </td>
-   <td colname="col2"> 按降序排序和返回結果。 預設為遞增。 </td>
+   <td colname="col2"> 按降序排序並返回結果。 升序為預設值。 </td>
   </tr>
   <tr valign="top">
    <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根據您要用作搜索參數的指定字串返回結果。 例如，假設您想在該項目的任何值欄位中，找到所有具有「Test」字詞之模型的結果。 您的範例要求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>實施流量分類。 </p> <p>您可以搜尋「get all」方法傳回的任何值。 </p> </td>
+   <td colname="col2">根據要用作搜索參數的指定字串返回結果。 例如，假設您要查找所有模型的結果，這些模型在該項目的任何值欄位中都使用「Test」一詞。 您的示例請求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>實施流量分類。 </p> <p>可以搜索「get all」方法返回的任何值。 </p> </td>
   </tr> 
  </tbody> 
 </table>
 
 ### 回應
 
-成功的回應會傳回`200 OK`和陣列中的資料，如下列範例所示。 如果找不到網站ID或合作夥伴，則傳回`404 Not found`。
+成功的響應返回 `200 OK` 和陣列中的資料，如下例所示。 返回 `404 Not found` 找不到站點ID或合作夥伴。
 
 ```
 [

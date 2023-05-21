@@ -1,14 +1,14 @@
 ---
 description: 說明為何特徵和區段可能不會顯示在「重疊報表」頁面上。
-seo-description: 說明為何特徵和區段可能不會顯示在「重疊報表」頁面上。
-seo-title: 為何我的特徵或區段沒有顯示在「重疊報表」頁面上？
+seo-description: Explanation for why traits and segments might not show up in the Overlap Reports page.
+seo-title: Why do my traits or segments not show up in the Overlap Reports page?
 solution: Audience Manager
 title: 為何我的特徵或區段沒有顯示在「重疊報表」頁面上？
-feature: 支援
+feature: Support
 exl-id: 8341ee38-fc46-4a4b-9c9e-4ce2edb9a2fb
 source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '136'
 ht-degree: 100%
 
 ---

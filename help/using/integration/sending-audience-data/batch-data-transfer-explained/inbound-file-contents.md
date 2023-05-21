@@ -166,7 +166,7 @@ ht-degree: 4%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>引號字元(") </p> </td> 
+   <td colname="col1"> <p>引號字元 (") </p> </td> 
    <td colname="col2"> <p>可以在鍵和鍵值對的值部分使用引號字元，如： </p> <p> 
      <ul id="ul_3447A913203647A8A9A1A5D14B1A19FE"> 
       <li id="li_B19B56CE8D4449B881B912E74809E00D"> <p> <code> d_city = "New York", d_city = "San Francisco" </code> </p> </li> 

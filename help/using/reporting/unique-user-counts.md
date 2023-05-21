@@ -1,22 +1,22 @@
 ---
-description: 說明相同特徵和時段內，報表之間不重複使用者總計的變化。
-seo-description: 說明Adobe Audience Manager中相同特徵和時段報表之間不重複使用者總計的變化
-seo-title: 計算AAM中重疊和一般報表中的不重複使用者數
+description: 描述相同特性和時間段的報表之間唯一用戶合計的變化。
+seo-description: Describes the variation in unique user totals between reports for the same trait and time period in Adobe Audience Manager
+seo-title: Counting Unique Users in Overlap and General Reports in AAM
 solution: Audience Manager
 title: 計算重疊和一般報表中的不重複使用者數
 uuid: 450f6a8c-f363-43de-b2d8-0a156f14ecae
-feature: 報表參考
+feature: Reporting Reference
 exl-id: 439e7e8e-0c2e-4d3e-8148-61b9d57bf4df
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 10%
+source-wordcount: '141'
+ht-degree: 12%
 
 ---
 
 # 計算重疊和一般報表中的不重複使用者數{#counting-unique-users-in-overlap-and-general-reports}
 
-本頁面說明相同特徵和時段內，不重複使用者總計在報表之間的變化。
+此頁描述相同特性和時間段的報表之間唯一用戶合計的變化。
 
 <!-- 
 
@@ -24,20 +24,20 @@ c_unique_user_counts.xml
 
  -->
 
-## 重疊報表：不重複使用者計數
+## 重疊報表：唯一用戶計數
 
-當使用者符合特徵資格時，重疊報表會將使用者計為獨特：
+重疊報告將用戶在符合以下特徵時視為唯一：
 
-* 在報表的所選時間間隔內。
-* 其[存留時間](../features/traits/segment-ttl-explained.md)值比報表的所選時間間隔長。
-* 如果系統中他們被視為作用中（亦即，符合任何其他特徵的資格、有ID同步等） 過去60天。
+* 在報告的選定時間間隔內。
+* 有 [生存時間](../features/traits/segment-ttl-explained.md) 值長於報告的選定時間間隔。
+* 如果它們在我們的系統中被視為活動（即，符合任何其他特性，具有ID同步等） 60天內。
 
-## 一般報告：不重複使用者計數
+## 一般報告：唯一用戶計數
 
-如果網站訪客在選取的時段內符合特徵資格，則「一般」報表會將其計為獨特。
+如果站點訪問者在選定時間段內符合特性，則「一般」報告會將其計算為唯一。
 
 >[!MORELIKETHIS]
 >
->* [互動式報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports)
-* [一般報表](../reporting/general-reports.md#general-reports-overview)
+>* [互動式報告](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports)
+>* [一般報表](../reporting/general-reports.md#general-reports-overview)
 

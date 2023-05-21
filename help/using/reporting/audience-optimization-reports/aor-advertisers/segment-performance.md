@@ -1,32 +1,32 @@
 ---
-description: 「區段效能」報表會依曝光次數和轉換率來比較已對應和未對應的區段。 對應區段是您建立並傳送至目的地以進行定位的區段。 未對應的區段是您已建立但尚未傳送至目的地以進行定位的區段。 在報表內和報表之間比較這些不同的區段類型，可協助您最佳化現有的促銷活動，並找出您可能想要傳送至目的地以鎖定目標的被忽視區段。
-seo-description: 「區段效能」報表會依曝光次數和轉換率來比較已對應和未對應的區段。 對應區段是您建立並傳送至目的地以進行定位的區段。 未對應的區段是您已建立但尚未傳送至目的地以進行定位的區段。 在報表內和報表之間比較這些不同的區段類型，可協助您最佳化現有的促銷活動，並找出您可能想要傳送至目的地以鎖定目標的被忽視區段。
-seo-title: 區段成效報表
+description: 「段效能」報表按印象和轉換率比較映射和未映射的段。 映射段是您建立的段，併發送到目標進行目標。 未映射段是您建立但尚未發送到目標的段。 比較報表內和報表間的這些不同段類型有助於優化現有市場活動，並查找您可能希望發送到目標的被忽略的段。
+seo-description: The Segment Performance report compares mapped and unmapped segments by impressions and conversion rates. A mapped segment is a segment you create and send to a destination for targeting. An unmapped segment is a segment that you've created but have not sent to a destination for targeting. Comparing these different segment types within and between reports helps you optimize existing campaigns and find overlooked segments that you may want to send to a destination for targeting.
+seo-title: Segment Performance Report
 solution: Audience Manager
 title: 區段成效報表
 uuid: 5156a4c7-831d-4a95-a1be-eb516f0d91b7
-feature: 受眾最佳化報表
+feature: Audience Optimization Reports
 exl-id: 2cd54b18-6916-4d69-bd65-7b8c8846c446
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '564'
 ht-degree: 1%
 
 ---
 
 # 區段成效報表{#segment-performance-report}
 
-[!UICONTROL Segment Performance]報表會依曝光次數和轉換率來比較已對應和未對應的區段。 對應區段是您建立並傳送至目的地以進行定位的區段。 未對應的區段是您已建立但尚未傳送至目的地以進行定位的區段。 在報表內和報表之間比較這些不同的區段類型，可協助您最佳化現有的促銷活動，並找出您可能想要傳送至目的地以鎖定目標的被忽視區段。
+的 [!UICONTROL Segment Performance] 報告按印記和轉換率比較映射和未映射段。 映射段是您建立的段，併發送到目標進行目標。 未映射段是您建立但尚未發送到目標的段。 比較報表內和報表間的這些不同段類型有助於優化現有市場活動，並查找您可能希望發送到目標的被忽略的段。
 
-## 如何閱讀對應的區段結果{#read-mapped-segment-results}
+## 如何讀取映射的段結果 {#read-mapped-segment-results}
 
-映射的[!UICONTROL Segment Performance]報告顯示您建立併發送到目標的所有段。在報告中映射段的位置可以告訴您許多關於哪些段表現良好以及可能需要進行一些調整的資訊。
+已映射 [!UICONTROL Segment Performance] 報表顯示您建立併發送到目標的所有段。報表中映射段的位置可以告訴您哪些段表現良好，以及您可能需要在哪些位置進行一些調整。
 
-若要閱讀報表，可協助將結果分成4個區段，內含虛線（以紅色表示）和下方範例報表中顯示的類別。
+要閱讀報告，它有助於將結果分成4個部分，其中虛線（以紅色表示）和下面示例報告中顯示的類別。
 
 ![](assets/mapped-segment-performance.png)
 
-範例和下表中的標籤可協助您了解區段效能，以及如何回應這些結果。
+示例和下表中的標籤可幫助您瞭解段效能以及如何響應這些結果。
 
 <table id="table_A29253B30DFA4CD7B3B7C320DE0BDEA4"> 
  <thead> 
@@ -37,37 +37,37 @@ ht-degree: 1%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>左上角</b> </p> </td> 
-   <td colname="col2"> <p>轉換率良好。 </p> <p>您可以增加曝光次數，以獲得更多轉換。 </p> </td> 
+   <td colname="col1"> <p> <b>左上</b> </p> </td> 
+   <td colname="col2"> <p>轉換率良好。 </p> <p>通過增加印象，您可能能夠得到更多的轉換。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>左下角</b> </p> </td> 
-   <td colname="col2"> <p>低轉換率。 </p> <p>您可能不想定位這些區段。 本節中的區段非常適合與未對應區段結果中的區段進行比較。 某些未對應的區段可能會比您已定位的區段執行得更好。 </p> </td> 
+   <td colname="col1"> <p> <b>左下</b> </p> </td> 
+   <td colname="col2"> <p>轉換率低。 </p> <p>您可能希望避免將目標鎖定在這些段上。 本節中的段非常適合與未映射的段結果中的段進行比較。 某些未映射的段可能比您已瞄準的段效能更好。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>右上角</b> </p> </td> 
-   <td colname="col2"> <p>表現強勁。 不要管這些區段。 </p> </td> 
+   <td colname="col1"> <p> <b>右上</b> </p> </td> 
+   <td colname="col2"> <p>效能強勁。 別管這些片段。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>右下角</b> </p> </td> 
-   <td colname="col2"> <p>低轉換率和高曝光率。 </p> <p>此區段中的區段表現不佳。 您可能想要將預算從這些區段移至報表左上像限中的區段。 這有助於減少曝光次數，並且有助於改善右下角區段的區段轉換率。 此外，將這些對應區段與您未對應的區段進行比較。 某些未對應的區段可能會比您已定位的區段執行得更好。 </p> </td> 
+   <td colname="col1"> <p> <b>右下</b> </p> </td> 
+   <td colname="col2"> <p>轉化率低，印象高。 </p> <p>本節中的段效能不佳。 您可能希望將預算從這些段轉移到報告左上像限的段中。 這將有助於減少印象，並有助於提高右下角部分段的轉換率。 另外，將這些映射的段與未映射的段進行比較。 某些未映射的段可能比您已瞄準的段效能更好。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 如何閱讀未映射的段結果{#read-unmapped-segment-results}
+## 如何讀取未映射的段結果 {#read-unmapped-segment-results}
 
-在[!UICONTROL Segment Performance]報表中查看未對應的區段，是尋找尚未考慮進行鎖定的新區段的好方法。 事實上，其中某些區段的表現可能會優於對應區段。 這是因為未對應的區段必須符合要納入此報表的一組資格標準。 若要納入此報表，未對應的區段必須：
+查看中未映射的段 [!UICONTROL Segment Performance] 報告是查找未考慮目標的新段的極好方法。 事實上，其中某些段可能比映射的段要好。 這是因為未映射的段必須滿足要包含在此報表中的一組資格標準。 要包括在此報表中，未映射的段必須：
 
-* 轉換次數大於所有對應區段的平均值。
-* 依轉換率位列前100個未對應區段。
+* 轉換率大於所有映射段的平均值。
+* 按轉換率位於前100個未映射的段中。
 
-若要閱讀此報告，可協助將結果分成4個區段，內含虛線（以紅色表示）和下方範例報告中顯示的類別。
+要閱讀此報告，它有助於將結果分成4個部分，其中虛線（以紅色表示）和類別顯示在下面的示例報告中。
 
 ![](assets/unmapped-segment-performance.png)
 
-在此報告中，您只想聚焦在左上方未對應的區段。 與其他三個區段中的區段相比，這些未映射的區段顯示出較高的轉換率，具有低曝光次數。
+在此報告中，您只想關注左上部未映射的段。 這些未映射的段與其他三個段中的段相比，顯示出高的轉換率，具有低的印象。
 
 >[!NOTE]
 >
->7天和30天回顧期間僅適用於星期日&#x200B;**[!UICONTROL Date Through]**&#x200B;日期。
+>7天和30天回望期僅在星期日提供 **[!UICONTROL Date Through]** 日期。

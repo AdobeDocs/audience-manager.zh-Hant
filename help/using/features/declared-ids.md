@@ -41,7 +41,7 @@ Exchange和同步用戶ID [!DNL Audience Manager] 來自不使用或接受永久
   </tr> 
   <tr> 
    <td colname="col1"> <b>匹配ID</b> </td> 
-   <td colname="col2"> <p>Audience Manager嘗試將客戶端和訪問者ID與系統中的相應ID匹配。 如果不存在匹配的ID,Audience Manager會建立新ID，並將其與客戶端和訪問者ID關聯。 </p> <p> <p>注：如果ID映射到多個Audience ManagerID，則使用最新映射。 </p> </p> </td> 
+   <td colname="col2"> <p>Audience Manager嘗試將客戶端和訪問者ID與系統中的相應ID匹配。 如果不存在匹配的ID,Audience Manager將建立新ID，並將其與客戶端和訪問者ID關聯。 </p> <p> <p>注：如果ID映射到多個Audience ManagerID，則使用最新映射。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>返回ID</b> </td> 

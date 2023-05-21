@@ -1,15 +1,15 @@
 ---
 description: Audience Manager 可將密碼設定為每隔 30 天過期。如需啟用密碼過期功能，請洽詢您的 Audience Manager 顧問或客戶服務。請參閱本節內容，瞭解密碼要求以及如何復原遺失或忘記的密碼。
-seo-description: Audience Manager 可將密碼設定為每隔 30 天過期。如需啟用密碼過期功能，請洽詢您的 Audience Manager 顧問或客戶服務。請參閱本節內容，瞭解密碼要求以及如何復原遺失或忘記的密碼。
-seo-title: 密碼要求、鎖定的帳戶及忘記密碼
+seo-description: Audience Manager can be configured to expire passwords every 30-days. Talk to your Audience Manager consultant or Customer Care if you want to enable password expiry. Refer to this section for password requirements and how to recover a lost or forgotten password.
+seo-title: Password Requirements, Locked Accounts, and Forgotten Passwords
 solution: Audience Manager
 title: 密碼要求、鎖定的帳戶及忘記密碼
 uuid: bca892eb-3577-4382-8110-131f78d23069
-feature: 參考
+feature: Reference
 exl-id: beeb65e3-b715-49a8-b14b-ce3fff96a5cd
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '260'
 ht-degree: 100%
 
 ---
@@ -80,5 +80,5 @@ c_password_requirements.xml
 >[!MORELIKETHIS]
 >
 >* [資料安全性](../overview/data-security-and-privacy/data-security.md)
-* [資料安全性](../overview/data-security-and-privacy/data-privacy.md)
+>* [資料安全性](../overview/data-security-and-privacy/data-privacy.md)
 

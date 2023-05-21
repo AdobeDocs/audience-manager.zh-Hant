@@ -1,8 +1,8 @@
 ---
-description: DIL及其運作方式的概觀。
+description: DIL及其工作原理概述。
 seo-description: An overview of DIL and how it works.
 seo-title: Understanding the Data Integration Library (DIL)
-keywords: 'dil、dil、dil、dil、dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil、 dil '
+keywords: dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil,dil
 solution: Audience Manager
 title: 瞭解 Data Integration Library (DIL)
 uuid: 77b12f35-81e4-4639-ada6-bf982f27b36e
@@ -15,42 +15,42 @@ ht-degree: 11%
 
 ---
 
-# 了解 [!DNL Data Integration Library] (DIL){#understanding-the-data-integration-library-dil}
+# 瞭解 [!DNL Data Integration Library] (DIL){#understanding-the-data-integration-library-dil}
 
-概述、快速入門，以及 [!DNL Audience Manager DIL] 程式碼程式庫。
+概述、入門和代碼方法 [!DNL Audience Manager DIL] 代碼庫。
 
 >[!IMPORTANT]
 >
->從8.0版開始（2018年8月發行）, [!UICONTROL DIL] 對 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), 3.3版或更新版本。 它依賴 [!DNL ID Service] 以引發ID同步和URL目的地。 若 [!DNL ID Service] 缺少、舊或未配置。
+>從8.0版開始（2018年8月發佈）, [!UICONTROL DIL] 很依賴 [Adobe Experience Platform身份服務](https://experienceleague.adobe.com/docs/id-service/using/home.html), 3.3版或更高版本。 它依賴於 [!DNL ID Service] 以激發ID同步和URL目標。 如果 [!DNL ID Service] 缺少、舊或未配置。
 >
->建議您使用 [!DNL Adobe Experience Platform Tags] 實作和管理 [!DNL DIL] 和 [!DNL Adobe Experience Platform Identity Service] 程式庫。
+>我們建議您使用 [!DNL Adobe Experience Platform Tags] 實施和管理 [!DNL DIL] 和 [!DNL Adobe Experience Platform Identity Service] 庫。
 
-不過，您也可以下載最新Experience Cloud和 [!DNL DIL] 發佈於GitHub頁面。 請參閱下列下載連結：
+但是，您也可以下載最新的Experience Cloud [!DNL DIL] 從GitHub頁面發佈。 請參閱以下下載連結：
 
-* 下載 [Adobe Experience Platform Identity Service](https://github.com/Adobe-Marketing-Cloud/id-service/releases)
+* 下載 [Adobe Experience Platform身份服務](https://github.com/Adobe-Marketing-Cloud/id-service/releases)
 * 下載 [DIL](https://github.com/Adobe-Marketing-Cloud/dil/releases)
 
 ## DIL {#purpose-dil}
 
-[!UICONTROL DIL] 是API程式庫。 您可以將其視為 [!DNL Adobe Audience Manager]. 不需要使用 [!DNL Audience Manager]，但方法和函式 [!UICONTROL DIL] 提供表示您不需要開發自己的程式碼即可將資料傳送至 [!DNL Audience Manager]. 此外， [!UICONTROL DIL] 與 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html). 該服務旨在管理不同訪客身分 [!DNL Experience Cloud] 解決方案。 相反， [!UICONTROL DIL] 設計用於：
+[!UICONTROL DIL] 是API庫。 你可以認為它是 [!DNL Adobe Audience Manager]。 不需要使用 [!DNL Audience Manager]但是方法和功能 [!UICONTROL DIL] 提供意味著您不必開發自己的代碼來將資料發送到 [!DNL Audience Manager]。 還有， [!UICONTROL DIL] 不同於 [Adobe Experience Platform身份服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)。 該服務旨在管理不同訪問者身份 [!DNL Experience Cloud] 解決方案。 相反， [!UICONTROL DIL] 設計為：
 
-* 進行事件呼叫，並將資料傳送至 [資料收集伺服器](../reference/system-components/components-data-collection.md).
-* 將資料傳送至 [目的地](../features/destinations/destinations.md).
+* 進行事件調用並將資料發送到 [資料收集伺服器](../reference/system-components/components-data-collection.md)。
+* 將資料發送到 [目的地](../features/destinations/destinations.md)。
 
-## 取得與實作DIL程式碼 {#get-implement-dil-code}
+## 獲取和實施DIL代碼 {#get-implement-dil-code}
 
-[!UICONTROL DIL] 代碼可供下載 **[此處](https://github.com/Adobe-Marketing-Cloud/dil/releases)**. 請注意，從8.0版開始（2018年8月發行）, [!UICONTROL DIL] 對 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), 3.3版或更新版本。 它依賴 [!DNL ID Service] 觸發ID同步和 [!DNL URL destinations]. 若 [!DNL ID Service] 缺少、舊或未配置。
+[!UICONTROL DIL] 可下載代碼 **[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)**。 請注意，從8.0版（2018年8月發佈）開始， [!UICONTROL DIL] 很依賴 [Adobe Experience Platform身份服務](https://experienceleague.adobe.com/docs/id-service/using/home.html), 3.3版或更高版本。 它依賴於 [!DNL ID Service] 觸發ID同步 [!DNL URL destinations]。 如果 [!DNL ID Service] 缺少、舊或未配置。
 
-而不是搭配 [!UICONTROL DIL] 和設定 [!DNL Audience Manager] 手動，建議您使用 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 。 [!DNL Adobe Experience Platform Tags] 是建議的實作工具，因為可簡化程式碼部署、放置和版本管理。 深入了解 [Audience Manager擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html) in [!DNL Adobe Experience Platform Tags].
+而不是 [!UICONTROL DIL] 設定 [!DNL Audience Manager] 手動，建議您使用 [Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 的雙曲餘切值。 [!DNL Adobe Experience Platform Tags] 是推薦的實施工具，因為它簡化了代碼部署、放置和版本管理。 閱讀有關 [Audience Manager擴展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html) 在 [!DNL Adobe Experience Platform Tags]。
 
-## 呼叫範例 {#sample-code}
+## 示例調用 {#sample-code}
 
-[!UICONTROL DIL] 將資料傳送至 [!DNL Audience Manager] 在事件呼叫中。 事件呼叫是來自您頁面的XML HTTP要求。 它使用 `POST` 方法，在要求內文中傳送資料。
+[!UICONTROL DIL] 發送資料 [!DNL Audience Manager] 在事件呼叫中。 事件調用是來自您頁面的XML HTTP請求。 它使用 `POST` 在請求正文中發送資料的方法。
 
-| 事件呼叫元素 | 說明 |
+| 事件調用元素 | 說明 |
 |--- |--- |
-| URL | DIL事件呼叫使用下列語法： `https://adobe.demdex.net/event?_ts =` *`UNIX UTC timestamp`* |
-| 內文 | 如下列範例所示，DIL會以機碼值組的形式傳遞資料。 特殊首碼字元會將機碼值組識別為Audience Manager或合作夥伴變數。<br>`d_dst=1`<br>`d_jsonv=1`<br>`d_ld=_ts=1473693143821`<br>`d_mid=54192285857942994142875423154873503351`<br>`d_nsid=0`<br>`d_rtbd=json`<br> |
+| URL | DIL事件調用使用以下語法： `https://adobe.demdex.net/event?_ts =` *`UNIX UTC timestamp`* |
+| 內文 | 如下面的示例所示，DIL將資料作為鍵值對傳遞。 特殊前置詞字元將鍵值對標識為Audience Manager或夥伴變數。<br>`d_dst=1`<br>`d_jsonv=1`<br>`d_ld=_ts=1473693143821`<br>`d_mid=54192285857942994142875423154873503351`<br>`d_nsid=0`<br>`d_rtbd=json`<br> |
 
 另請參閱：
 * [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
