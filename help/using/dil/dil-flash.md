@@ -1,5 +1,5 @@
 ---
-description: 收集從FLA檔案發送到分析的資料，並在Audience Manager中處理該資訊。
+description: 收集從FLA檔傳送到Analytics的資料，並在Audience Manager中處理該資訊。
 seo-description: Collect data sent from FLA files to Analytics and work with that information in Audience Manager.
 seo-title: Flash DIL
 solution: Audience Manager
@@ -7,16 +7,24 @@ title: Flash DIL
 uuid: 65833cfd-768e-4b16-95c5-debd8411df38
 feature: DIL Implementation
 exl-id: e530d893-db26-4411-8df7-9bb2df84b68e
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: 152b3101e69e99dfe19c1be93edceaea6adc4fec
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 4%
+source-wordcount: '698'
+ht-degree: 3%
 
 ---
 
 # Flash DIL{#flash-dil}
 
-收集從FLA檔案發送到分析的資料，並在Audience Manager中處理該資訊。
+>[!WARNING]
+>
+>自2023年7月起，Adobe已停止開發 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 副檔名。
+><br><br>
+>現有客戶可繼續使用其 [!DNL DIL] 實作。 不過，Adobe將不會開發 [!DNL DIL] 超越此點。 建議客戶評估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 長期資料收集策略的影響。
+><br><br>
+>2023年7月後想要實作新資料收集整合的客戶應使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而非。
+
+收集從FLA檔傳送到Analytics的資料，並在Audience Manager中處理該資訊。
 
 <!-- 
 
@@ -24,11 +32,11 @@ c_flash_dil_toc.xml
 
  -->
 
-[!UICONTROL Flash DIL] 是 [!DNL ActionScript] 代碼庫，允許您在Audience Manager中處理視頻播放資料。 [!DNL Flash DIL] 通過捕獲SWF內容Adobe [!UICONTROL AppMeasurement] 庫會轉入分析。 [!DNL Flash DIL] 將資料發送到 [!UICONTROL DIL] JavaScript資料收集模組，將該資訊傳遞給Audience Manager。 分析資料( [!UICONTROL Props]。 [!UICONTROL eVars]、事件等) 從 [!DNL FLA] 檔案在Audience Manager中可用作特徵或未使用的信號。
+[!UICONTROL Flash DIL] 是 [!DNL ActionScript] 程式碼庫可讓您在Audience Manager中處理視訊播放資料。 [!DNL Flash DIL] 可透過在Adobe中擷取SWF內容來運作 [!UICONTROL AppMeasurement] 程式庫會傳入Analytics。 [!DNL Flash DIL] 會將該資料傳送至個別的 [!UICONTROL DIL] JavaScript資料收集模組，可將該資訊傳遞至Audience Manager。 Analytics資料( [!UICONTROL Props]， [!UICONTROL eVars]、事件等) 擷取自 [!DNL FLA] 檔案可在Audience Manager中以特徵或未使用訊號的形式使用。
 
-## FlashDIL資料收集要求 {#requirements}
+## FlashDIL資料收集的需求 {#requirements}
 
-一般實施和與代碼相關的要求。
+一般實作和程式碼相關需求。
 
 <!-- 
 
@@ -40,23 +48,23 @@ c_flash_dil_intro.xml
 
 [!UICONTROL Flash] 資料收集需要：
 
-* 的 [!UICONTROL DIL] 類庫( `dil.swc`)。 獲取 [!UICONTROL DIL] 合作夥伴解決方案聯繫人提供的類庫。
+* 此 [!UICONTROL DIL] 類別程式庫( `dil.swc`)。 取得 [!UICONTROL DIL] 類別程式庫。
 
-* JavaScript [!UICONTROL DIL] 頁面上的資料收集代碼。
-* [DILActionScript庫](../dil/dil-flash.md#flash-dil-actionscript) 載入到要從中收集資料的Flash對象中。
-* Adobe [!DNL AppMeasurement] [!DNL AS] 庫(3.5.2版或更高版本)已載入 [!DNL Flash] 要從中收集資料的對象。
+* JavaScript [!UICONTROL DIL] 頁面上的資料收集程式碼。
+* [DILActionScript庫](../dil/dil-flash.md#flash-dil-actionscript) 載入到您要從中收集資料的Flash物件中。
+* Adobe [!DNL AppMeasurement] [!DNL AS] 程式庫（3.5.2版或更新版本）已載入 [!DNL Flash] 您想要從中收集資料的物件。
 
 **將AllowScriptAccess設定為 `Always` 或`sameDomain`**
 
-的 `AllowScriptAccess` 在載入HTML檔案的SWF代碼中，控制從SWF檔案內執行出站URL訪問的能力。 配置 [!UICONTROL Flash DIL] 資料整合，確保Flash `AllowScriptAccess` 參數設定為 `always` 或 `sameDomain`。 [!UICONTROL Flash DIL] 資料收集在 `AllowScriptAccess` 設定為 `never`。 請參閱 [控制對指令碼或主機網頁的訪問](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html)。
+此 `AllowScriptAccess` 在載入HTML檔案的SWF程式碼中，會控制從SWF檔案內執行傳出URL存取的能力。 當您設定 [!UICONTROL Flash DIL] 資料整合，確認Flash `AllowScriptAccess` 引數已設為 `always` 或 `sameDomain`. [!UICONTROL Flash DIL] 若發生下列情況，資料收集將無法運作： `AllowScriptAccess` 設為 `never`. 另請參閱 [控制對指令碼或主機網頁的存取](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html).
 
-**JS [!UICONTROL DIL] 代碼放置**
+**JS [!UICONTROL DIL] 程式碼放置**
 
-嘗試放置JS [!UICONTROL DIL] 頁面上的資料收集模組，以便在 [!DNL FLA] 的子菜單。 當 [!DNL FLA] 檔案先載入，之前 [!UICONTROL DIL] 資料收集已就緒，您可能會錯過初始資料信號 [!UICONTROL Flash DIL] 發送到該模組。 但是，一旦實例化， [!UICONTROL DIL] 資料收集模組將捕獲傳入的所有後續SWF檔案資料 [!UICONTROL Flash DIL]。
+嘗試放置JS [!UICONTROL DIL] 頁面上的資料收集模組，使其在 [!DNL FLA] 檔案。 當 [!DNL FLA] 檔案會先載入，在之前 [!UICONTROL DIL] 資料收集準備就緒，可能會遺漏初始資料訊號 [!UICONTROL Flash DIL] 傳送至該模組。 不過，一旦例項化， [!UICONTROL DIL] 資料收集模組將擷取所有由傳遞的後續SWF檔案資料 [!UICONTROL Flash DIL].
 
-## 按Flash收集的資料DIL {#data-collected}
+## FlashDIL所收集的資料 {#data-collected}
 
-[!UICONTROL Flash DIL] 從Adobe捕獲頁面視圖、連結跟蹤、介質跟蹤和其他介質視圖事件 [!UICONTROL AppMeasurement] 的下界。
+[!UICONTROL Flash DIL] 從Adobe擷取頁面檢視、連結追蹤、媒體追蹤和其他媒體檢視事件 [!UICONTROL AppMeasurement] 資料庫。
 
 <!-- 
 
@@ -64,9 +72,9 @@ r_flash_dil_data_collected.xml
 
  -->
 
-**頁面視圖事件**
+**頁面檢視事件**
 
-除非另有指定 `s.trackVars`。 [!UICONTROL Flash DIL] 從Adobe AppMeasurement收集以下資料：
+除非另有指定 `s.trackVars`， [!UICONTROL Flash DIL] 從Adobe AppMeasurement收集下列資料：
 
 * `pageName`
 * `channel`
@@ -76,31 +84,31 @@ r_flash_dil_data_collected.xml
 * `prop1 - prop75`
 * `eVar1 - eVar75`
 
-**連結跟蹤事件**
+**連結追蹤事件**
 
-除非另有指定 `s.linkTrackVars`。 [!UICONTROL Flash DIL] 從Adobe收集以下資料 [!UICONTROL AppMeasurement]:
+除非另有指定 `s.linkTrackVars`， [!UICONTROL Flash DIL] 從Adobe收集下列資料 [!UICONTROL AppMeasurement]：
 
-* `pe` （調用的跟蹤連結類型）
+* `pe` （呼叫的追蹤連結型別）
 * `pev1` (連結 URL)
-* `pev2`（連結文本）
+* `pev2`（連結文字）
 
-**媒體跟蹤事件**
+**媒體追蹤事件**
 
-除非另有指定 `s.Media.trackVars`。 [!UICONTROL Flash DIL] 收集「頁面視圖事件」部分中枚舉的所有資料。
+除非另有指定 `s.Media.trackVars`， [!UICONTROL Flash DIL] 收集「頁面檢視事件」區段中列舉的所有資料。
 
 **其他資料點**
 
-預設情況下，會從這些參數收集資料：
+預設會收集這些引數中的資料：
 
-* `mediaName` （媒體/視頻元素名稱）
+* `mediaName` （媒體/視訊元素名稱）
 * `mediaAdName` (廣告名稱)
-* `mediaAdParentName` （廣告嵌套在其中的主媒體內容的名稱）
-* `mediaAdParentPod` （廣告播放的主要內容中的pod或ad中斷）
-* `mediaAdParentPodPos` (廣告播放的盒中的數字位置。 一個廣告可以在一個盒子裡播放。
+* `mediaAdParentName` （巢狀內嵌廣告所在的主要媒體內容名稱）
+* `mediaAdParentPod` （廣告播放所在主要內容內的Pod或廣告插播）
+* `mediaAdParentPodPos` (Pod內播放廣告的位置數值。 Pod內可以播放多個廣告。
 
-## FlashDIL資料在Audience Manager {#flash-dil-data}
+## 以Audience ManagerFlashDIL資料 {#flash-dil-data}
 
-的 [!UICONTROL Flash DIL] 模組將Adobe AppMeasurement資料轉化為Audience Manager特徵和未使用信號。
+此 [!UICONTROL Flash DIL] 模組會將Adobe AppMeasurement資料轉換為Audience Manager特徵和未使用的訊號。
 
 <!-- 
 
@@ -108,27 +116,27 @@ c_flash_dil_in_aam.xml
 
  -->
 
-分析 [!UICONTROL Props]。 [!UICONTROL eVars]而且事件在Audience Manager中就像特質一樣。 特徵是關鍵值對，用於構建段。 例如，在類似於 `c30=foo`。 `c30` 是鍵（a常數） `foo` 是值（變數）。
+分析 [!UICONTROL Props]， [!UICONTROL eVars]和事件的運作方式與Audience Manager中的特徵類似。 特徵是機碼值組，用於建立區段。 例如，在Analytics prop中，例如 `c30=foo`， `c30` 是索引鍵（常數）和 `foo` 是值（變數）。
 
-**將Audience Manager特性與分析變數匹配**
+**比對Audience Manager特徵與Analytics變數**
 
-使用傳遞的分析資料 [!UICONTROL Flash DIL]，應建立鍵值前置詞為的Audience Manager特徵 `c_`。
+若要使用傳遞的Analytics資料 [!UICONTROL Flash DIL]，您應建立Audience Manager特徵，其索引鍵值前面會加上 `c_`.
 
-有關示例，請參見表：
+請參閱表格以取得範例：
 
-| 分析資料元素 | 分析示例 | 作為Audience Manager特性 |
+| Analytics資料元素 | Analytics範例 | 作為Audience Manager特徵 |
 |---|---|---|
 | **prop** | `c30=foo` | `c_prop30=foo` |
-| **埃瓦** | `v35=bar` | `c_evar35=bar` |
+| **evar** | `v35=bar` | `c_evar35=bar` |
 | **events** | `events=event10` | `c_events=event10` |
 
-**DIL/分析資料作為未使用的信號**
+**將資料DIL為未使用的訊號**
 
-Audience Manager接受分析 [!UICONTROL Props]。 [!UICONTROL eVars]、事件，即使沒有相應的特徵。 在這種情況下，資料不可用於特徵建立，並顯示在 [「 Unused Signals 」報告](../reporting/dynamic-reports/unused-signals.md) 的雙曲餘切值。 要充分利用此資訊，請建立與傳入的Analytics資料匹配的Audience Manager特徵 [!UICONTROL Flash DIL] 的下界。
+Audience Manager接受Analytics [!UICONTROL Props]， [!UICONTROL eVars]、和事件（即使沒有對應的特徵）。 在此情況下，資料便無法用於特徵建立，且會顯示在 [未使用的訊號報表](../reporting/dynamic-reports/unused-signals.md) 而非。 Audience Manager若要充分利用此資訊，請建立符合Analytics資料(由 [!UICONTROL Flash DIL] 資料庫。
 
 ## FlashDILActionScript庫 {#flash-dil-actionscript}
 
-代碼 [!DNL Flash] 將分析資料發送到Audience Manager的對象。
+您的程式碼 [!DNL Flash] 物件，可將Analytics資料傳送至Audience Manager。
 
 <!-- 
 
@@ -138,10 +146,9 @@ r_flash_dil_actionscript.xml
 
 >[!NOTE]
 >
->* 每個 [!DNL Flash] 對象，代碼支援一個夥伴實例( `d.partner`)。
+>* 針對每個 [!DNL Flash] 物件，程式碼支援一個合作夥伴例項( `d.partner`)。
 >
->* 需要Adobe [!UICONTROL AppMeasurement] [!DNL AS] 庫版本3.5.2或更高版本。
-
+>* 需要Adobe [!UICONTROL AppMeasurement] [!DNL AS] 程式庫3.5.2版或更新版本。
 
 ```js
 import com.omniture.AppMeasurement; // Omit this line if it already exists in the code 
@@ -160,4 +167,3 @@ s.loadModule(d);
 >* [訊號、特徵和區段](../reference/signal-trait-segment.md)
 >* [索引鍵值配對說明](../reference/key-value-pairs-explained.md)
 >* [關鍵變數的前置詞要求](../features/traits/trait-variable-prefixes.md)
-
