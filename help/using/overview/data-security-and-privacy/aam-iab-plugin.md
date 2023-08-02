@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 適用於 IAB TCF 的 Audience Manager 外掛程式
 feature: Data Governance & Privacy
 exl-id: aa6bc415-e52b-4900-951d-ccf51d907aa2
-source-git-commit: 5044a38c751abace922008f00b9ff463ea9c7e57
+source-git-commit: 8b370a64d80b40124abee91351cbef09711243d4
 workflow-type: tm+mt
 source-wordcount: '2353'
 ht-degree: 34%
@@ -69,7 +69,7 @@ Audience Manager可協助您尊重使用者的隱私權選擇，並可讓您輕�
 
 >[!WARNING]
 >
->如果您使用不支援IAB TCF v.2.0的同意管理平台(CMP)，Audience Manager會自動傳送 `gdpr=0` 引數進行ID同步，即使您的訪客位於歐盟也是如此。 若要判斷您的GDPR驗證是否有效，建議您向同意管理平台(CMP)確認其支援IAB TCF v2.2。
+>如果您使用不支援IAB TCF v2.2的同意管理平台(CMP)，Audience Manager會自動傳送 `gdpr=0` 引數進行ID同步，即使您的訪客位於歐盟也是如此。 若要判斷您的GDPR驗證是否有效，建議您向同意管理平台(CMP)確認其支援IAB TCF v2.2。
 
 ## 建議及實作方式 {#recommendations}
 
