@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 類別層級 DIL 方法
 uuid: 903a661f-8871-4402-b9d6-acae920276cb
 feature: DIL Implementation
-source-git-commit: fcf13cf39f688f8aafd2b1020ddfe4583d67e14f
+source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 4%
@@ -19,10 +19,10 @@ ht-degree: 4%
 >[!WARNING]
 >
 >自2023年7月起，Adobe已停止開發 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 副檔名。
-><br>
->現有客戶可繼續使用其 [!DNL DIL] 實作。 不過，Adobe將不會開發 [!DNL DIL] 超越此點。 建議客戶評估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 長期資料收集策略的影響。
-><br>
->2023年7月後想要實作新資料收集整合的客戶應使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而非。
+>
+>現有客戶可繼續使用其 [!DNL DIL] 實作。 不過，Adobe將不會開發 [!DNL DIL] 超出此點。 建議客戶評估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 長期資料收集策略的影響。
+>
+>如果客戶希望在2023年7月之後實作新的資料收集整合，則應使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而非。
 
 
 

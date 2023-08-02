@@ -7,7 +7,7 @@ title: DIL 工具
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 exl-id: 1f52eb95-8287-4dd0-b933-00de6926a797
-source-git-commit: fcf13cf39f688f8aafd2b1020ddfe4583d67e14f
+source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 3%
@@ -19,10 +19,10 @@ ht-degree: 3%
 >[!WARNING]
 >
 >自2023年7月起，Adobe已停止開發 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 副檔名。
-><br>
->現有客戶可繼續使用其 [!DNL DIL] 實作。 不過，Adobe將不會開發 [!DNL DIL] 超越此點。 建議客戶評估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 長期資料收集策略的影響。
-><br>
->2023年7月後想要實作新資料收集整合的客戶應使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而非。
+>
+>現有客戶可繼續使用其 [!DNL DIL] 實作。 不過，Adobe將不會開發 [!DNL DIL] 超出此點。 建議客戶評估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 長期資料收集策略的影響。
+>
+>如果客戶希望在2023年7月之後實作新的資料收集整合，則應使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而非。
 
 說明中的方法 `DIL.tools` 名稱空間。 這些公用程式功能可協助您執行特定工作。
 
@@ -55,7 +55,7 @@ r_dil_get_search_referrer.xml
 `getSearchReferrer` 接受：
 
 * *`{string}`*： *（可選）* 包含搜尋URL的字串(使用 `document.referrer` （如果未定義）。
-* *`{object}`*： *（可選）* 一個物件，其中包含下列專案的設定： `hostPattern`， `queryParam`，或 `queryPattern`.
+* *`{object}`*： *（可選）* 一個物件，其中包含的 `hostPattern`， `queryParam`，或 `queryPattern`.
 
 並傳回：
 
@@ -74,7 +74,7 @@ r_dil_get_search_referrer.xml
  <tbody> 
   <tr> 
    <td> 預設搜尋</td> 
-   <td> 傳回AOL、Ask、Bing、Google和Yahoo搜尋引擎所使用的關鍵字搜尋詞。 </td> 
+   <td> 傳回AOL、Ask、Bing、Google和Yahoo搜尋引擎所使用的關鍵字搜尋辭彙。 </td> 
    <td>
       <code>var&amp;nbsp;results&amp;nbsp;=&amp;nbsp;DIL.tools.getSearchReferrer();</code> 
   </td>
@@ -91,7 +91,7 @@ r_dil_get_search_referrer.xml
   </tr> 
   <tr> 
    <td> <b>比對URL主機名稱與自訂規則運算式</b></td> 
-   <td> 傳入自訂規則運算式以符合反向連結URL的主機名稱。 </td> 
+   <td> 傳入自訂規則運算式，以符合反向連結URL的主機名稱。 </td> 
    <td> 
   <code>
       var results = 
@@ -119,7 +119,7 @@ r_dil_get_search_referrer.xml
  </tbody> 
 </table>
 
-## decompositouri
+## decomposeURI
 
 分解統一資源識別碼( [!DNL URI])作為其組成元件： `hash`， `host`， `href`， `pathname`， `protocol`， `search`、和 `[!DNL uriParams]`.
 
@@ -163,7 +163,7 @@ var uriData = DIL.tools.decomposeURI('https://www.adobe.com/?arg1=123&arg2=456#a
 
 ## getMetaTags
 
-搜尋在網頁上的中繼標籤中定義的特定內容，並在物件中傳回該資料。
+搜尋在網頁的中繼標籤中定義的特定內容，並在物件中傳回該資料。
 
 <!-- 
 
