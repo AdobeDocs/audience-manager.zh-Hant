@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。 您也可以找到有關如何將目標定位廣告和內容提供給適當受眾的詳細資料。
 feature-set: Audience Manager
-source-git-commit: f4babbb632279cf213116e004551e5c77869ab78
+source-git-commit: 7302fafa537ad15144a64cc96f7150c5b0233c12
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1835'
 ht-degree: 90%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 90%
 # Audience Manager 使用手冊 {#user-guide}
 
 + [Audience Manager 指南](aam-home.md)
-+ [Real-Time CDP發展指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
++ [Real-Time CDP的演變指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的資料類型](overview/data-types-collected.md)
@@ -113,7 +113,7 @@ ht-degree: 90%
          + [新增以裝置為基礎的目的地](features/destinations/add-device-based-destinations.md)
          + [Audience Manager 以裝置為基礎的目的地清單](/help/using/features/destinations/device-based-destinations-list.md)
          + [新增或編輯伺服器對伺服器目的地的區段](features/destinations/add-edit-segments.md)
-         + [將Twitter自訂對象設定為自助服務以裝置為基礎的目的地](features/destinations/twitter-tailored-audiences.md)
+         + [將Twitter自訂對象設定為自助式以裝置為基礎的目的地](features/destinations/twitter-tailored-audiences.md)
       + 自訂目的地 {#custom-destinations}
          + [設定 URL 目的地](features/destinations/create-url-destination.md)
          + [設定 Cookie 目的地](features/destinations/create-cookie-destination.md)
@@ -288,7 +288,7 @@ ht-degree: 90%
    + [資料整合方法](integration/data-integration-methods.md)
    + 使用Google發佈商代碼(GPT)整合Google廣告管理員{#integrate-dfp-using-gpt}
       + [使用GPT整合Google Ad Manager概覽](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [使用GPT將區段傳送至Google廣告管理員](integration/gpt-aam-destination/gpt-aam-requirements.md)
+      + [使用GPT將區段傳送至Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
       + [建立 GPT 目的地](integration/gpt-aam-destination/gpt-aam-create-destination.md)
       + [修改 GPT setTargeting API 呼叫](integration/gpt-aam-destination/gpt-aam-modify-api.md)
       + [適用於 Google 發佈商廣告代碼的 Audience Manager 代碼](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
@@ -336,6 +336,7 @@ ht-degree: 90%
          + [傳入資料類型的檔案 PGP 加密](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)
          + [傳入資料傳輸檔案的檔案壓縮](integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
          + [傳入處理後傳送給合作夥伴的範例訊息](integration/sending-audience-data/batch-data-transfer-explained/inbound-receipt-message.md)
+         + [對您的傳入檔案運用Amazon S3跨帳戶貯體許可權](integration/sending-audience-data/batch-data-transfer-explained/authorize-s3-inbound.md)
       + [自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)
    + 與 Adobe Experience Platform 的整合 {#integration-experience-platform}
       + [與Audience Manager和其他Experience Cloud解決方案共用Experience Platform區段](integration/integration-aep/aam-aep-audience-sharing.md)
