@@ -3,7 +3,7 @@ description: 若要將資料從您自己的Amazon S3儲存貯體傳送至Audienc
 solution: Audience Manager
 title: 對您的傳入檔案運用Amazon S3跨帳戶貯體許可權
 feature: Inbound Data Transfers
-source-git-commit: ff023fb57e2653ca65323313a37852d379e4b00c
+source-git-commit: 17cee6971ca1d5cda8f272558a46220227fc51f7
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -24,6 +24,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >將傳入資料傳輸至Audience ManagerAmazon S3貯體時，請務必使用 `bucket-owner-full-control` [存取控制清單](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) 以便讓Audience Manger正確處理資料。
-><br>
->Amazon Web Services命令的範例： `aws s3 cp <user_s3_uri> <AAM_s3_uri> --acl bucket-owner-full-control`.
+>
+>Amazon Web Services命令的範例： `aws s3 cp <user_s3_uri> <AAM_s3_uri> --acl bucket-owner-full-control`
 
