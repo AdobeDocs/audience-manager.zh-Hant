@@ -1,5 +1,5 @@
 ---
-description: 批量刪除允許您通過單個操作刪除多個段、特徵、資料夾、派生信號、資料源、模型和目標。 按照以下說明進行批量刪除請求。
+description: 大量刪除可讓您透過單一操作移除多個區段、特徵、資料夾、衍生訊號、資料來源、模型和目的地。 請依照這些指示提出大量刪除請求。
 seo-description: Bulk delete lets you remove multiple segments, traits, folders, derived signals, data sources, models, and destinations with a single operation. Follow these instructions to make a bulk delete request.
 seo-title: Bulk Delete
 solution: Audience Manager
@@ -7,16 +7,20 @@ title: 大量刪除
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
 feature: BAAAM
 exl-id: 3ff530dd-66d0-4dd3-a6e6-afe4a9cb5ba4
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '258'
 ht-degree: 1%
 
 ---
 
 # 大量刪除{#bulk-delete}
 
-批量刪除允許您通過單個操作刪除多個段、特徵、資料夾、派生信號、資料源、模型和目標。 按照以下說明進行批量刪除請求。
+大量刪除可讓您透過單一操作移除多個區段、特徵、資料夾、衍生訊號、資料來源、模型和目的地。 請依照這些指示提出大量刪除請求。
+
+>[!IMPORTANT]
+>
+>大量管理工具並非正式支援的Adobe產品。 客戶服務提供的疑難排解與支援將依個別情況處理。
 
 <!-- 
 
@@ -26,23 +30,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[RBAC組權限](../../features/administration/administration-overview.md) 在 [!DNL Audience Manager] UI在 [!UICONTROL Bulk Management Tools]。
+>[RBAC群組許可權](../../features/administration/administration-overview.md) 指派於 [!DNL Audience Manager] UI遵循於 [!UICONTROL Bulk Management Tools].
 
 >[!NOTE]
 >
->如果將段映射到目標，則目標映射的批量刪除將失敗。 在嘗試批量刪除目標之前，請在用戶介面中從該目標中刪除段。 此外，特徵和段資料夾必須為空，然後才能刪除它們。
+>如果您的區段已對應至目的地，則大量刪除目的地對應的作業將會失敗。 在嘗試大量刪除目的地之前，請從使用者介面中的該目的地移除您的區段。 此外，特徵和區段資料夾必須空白，您才能將其刪除。
 
-要刪除多個項目，請開啟 [!UICONTROL Bulk Management Tools] 工作表和：
+若要刪除多個專案，請開啟 [!UICONTROL Bulk Management Tools] 工作表及：
 
-1. 按一下 **[!UICONTROL Headers]** 頁籤，並複製要添加的項的建立標題。
-2. 按一下 **[!UICONTROL Delete]** 頁籤。
-3. 將刪除標題貼上到更新工作表的第一行。
-4. 貼上或鍵入要刪除的對象的ID（在標題下的列中）。
-5. 提供所需 [登錄資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) 按一下 **[!UICONTROL Submit]**。
+1. 按一下 **[!UICONTROL Headers]** 建立標頭，並複製您要新增的專案的建立標頭。
+2. 按一下 **[!UICONTROL Delete]** 標籤。
+3. 將刪除標題貼入更新工作表的第一列。
+4. 在標頭下方的欄中，貼上或輸入您要刪除之物件的ID。
+5. 提供必要的 [登入資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs) 並按一下 **[!UICONTROL Submit]**.
 
-   工作表將建立 [!UICONTROL Results] 的雙曲餘切值。 的 [!UICONTROL Results] 列返回一條消息，指明該項是否已被刪除或出現錯誤消息。
-在輸入資料之前，批量更新工作表應類似於以下內容：
+   工作表會建立 [!UICONTROL Results] 欄。 此 [!UICONTROL Results] 欄會傳回訊息，指出該專案是否已刪除，或傳回錯誤訊息。
+在輸入資料之前，大量更新工作表應該看起來類似下列：
 
 ![](assets/delete.png)
 
-如果批量更新返回錯誤或失敗，請參見 [批量管理工具故障排除](../../reference/bulk-management-tools/bulk-troubleshooting.md)。
+如果大量更新傳回錯誤或失敗，請參閱 [大量管理工具的疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md).
