@@ -3,7 +3,7 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 使用手冊
-user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。 您也可以找到有關如何將目標定位廣告和內容提供給適當受眾的詳細資料。
+user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當受眾的詳細資料。
 feature-set: Audience Manager
 source-git-commit: 7302fafa537ad15144a64cc96f7150c5b0233c12
 workflow-type: tm+mt
