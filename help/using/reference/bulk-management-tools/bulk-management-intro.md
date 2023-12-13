@@ -8,10 +8,10 @@ title: 大量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 feature: BAAAM
 exl-id: 5603146e-7172-4181-90ad-4606129176dd
-source-git-commit: 6b4796db4fc336180d72d4971b4f267fcc42d398
+source-git-commit: e8d81f648f5a46495193fe6631c8a7f73e290493
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 3%
+source-wordcount: '708'
+ht-degree: 1%
 
 ---
 
@@ -42,12 +42,12 @@ c_bulk_start.xml
 
 下載最新的工作表 **[此處](assets/BAAAM_V2_20210609.xlsm)** （上次更新日期：2021年6月）。
 
-## 必要條件 {#prereqs}
+## 必備條件 {#prereqs}
 
 若要使用 [!DNL Bulk Management Tools]，您需要下列專案：
 
 * 您的 [!DNL Experience Cloud] 登入。 身為客戶，您應該已經擁有這些認證。
-* 此 [!DNL Bulk Management Tools] 工作表。 [下載工作表](assets/BAAAM_V2_20200502.xlsm) 以取得最新版本。
+* 此 [!DNL Bulk Management Tools] 工作表。 [下載工作表](assets/BAAAM_V2_20210609.xlsm) 以取得最新版本。
 * [!DNL Microsoft Excel] 執行於 [!DNL macOS] 或64位元 [!DNL Microsoft Windows]. 建議您使用最新版本的 [!DNL Microsoft Excel].
 * 開啟工作表時，您必須 **啟用巨集** 針對 [!DNL Bulk Management Tools] 才能運作。
 
@@ -70,7 +70,7 @@ c_bulk_start.xml
 
 網域驗證可讓您選擇測試大量請求，或直接將其套用至您的生產帳戶。 對測試版環境進行大量變更將不會影響您的生產帳戶。 生產變更會立即生效。 大量管理工作表可讓您在下列環境中工作：
 
-* Beta
+* 測試版
 * 生產
 
 ## 動作與作業 {#actions-ops}
