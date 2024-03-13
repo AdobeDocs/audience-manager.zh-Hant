@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當對象的詳細資料。
 feature-set: Audience Manager
-source-git-commit: 95028ac2131dda5a483c9d12007dcd38369d5b6f
+source-git-commit: 2b823855994f394261a66e896ef7de7bb7a5450f
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 26%
+source-wordcount: '1835'
+ht-degree: 25%
 
 ---
 
@@ -91,6 +91,7 @@ ht-degree: 26%
    + 資料來源 {#data-sources}
       + [資料來源清單與設定](features/datasources-list-and-settings.md)
       + [建立資料來源](features/manage-datasources.md)
+      + [設定雜湊電子郵件工作流程的資料來源](features/create-data-source-hashed-emails.md)
       + [全域資料來源](features/global-data-sources.md)
    + [宣告ID](features/declared-ids.md)
    + [衍生訊號](features/derived-signals.md)
