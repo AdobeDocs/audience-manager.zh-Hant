@@ -3,7 +3,7 @@ title: 設定雜湊電子郵件工作流程的資料來源
 description: 瞭解如何建立資料來源，以儲存雜湊電子郵件工作流程的雜湊電子郵件。
 solution: Audience Manager
 feature: Data Sources
-source-git-commit: 903c2602f759e0d507e45f1db4cbc880a599c32e
+source-git-commit: b88f180808ec9723a2a5324441733f6383f6302d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -29,4 +29,5 @@ ht-degree: 0%
    >此選項僅會將資料來源標示為包含使用該特定演演算法雜湊的資料。 Audience Manager在此步驟不會雜湊資料。 確定您計畫儲存在此資料來源中的電子郵件地址已使用 [!DNL SHA256] 演演算法。 否則，您將無法將其用於雜湊電子郵件工作流程。
 
    ![顯示資料來源設定區段的Audience ManagerUI影像。](../features/assets/data-source-settings.png)
+
 
