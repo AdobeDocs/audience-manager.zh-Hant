@@ -1,7 +1,7 @@
 ---
 title: 從Audience Manager標籤擴充功能移轉至Web SDK標籤擴充功能
 description: 瞭解更新資料收集程式庫的步驟，以便從Audience Manager標籤擴充功能進行Audience Manager至Web SDK標籤擴充功能
-source-git-commit: 1cf6a80bd5b7f583ea2511becf415b430ce2889e
+source-git-commit: c80f39c4001d2bcfa94012b9f4ffa720806487d4
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 0%
@@ -153,3 +153,4 @@ Adobe建議您在有使用Adobe Audience Manager標籤擴充功能的現有實�
 +++
 
 此時，您的Audience Manager實作已完全移轉至Web SDK，並準備好在未來移轉至Real-Time CDP。
+
