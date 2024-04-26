@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當對象的詳細資料。
 feature-set: Audience Manager
-source-git-commit: 2b823855994f394261a66e896ef7de7bb7a5450f
+source-git-commit: b0c35d79a07b481e332ddf8f4aedab5484416a51
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1865'
 ht-degree: 25%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 25%
 
 + [Audience Manager 指南](aam-home.md)
 + [Real-Time CDP的演變指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
++ 移轉至Web SDK{#migrate-to-web-sdk}
+   + [從Adobe Audience Manager標籤擴充功能移轉至Web SDK標籤擴充功能](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
+   + [從AppMeasurementJavaScript程式庫移轉至Web SDK JavaScript程式庫](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
 + 概述{#overview}
    + [Audience Manager 概述](overview/aam-overview.md)
    + [收集的資料類型](overview/data-types-collected.md)
