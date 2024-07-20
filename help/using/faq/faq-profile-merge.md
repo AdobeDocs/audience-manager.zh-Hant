@@ -10,8 +10,8 @@ feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
 source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 82%
+source-wordcount: '1583'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 82%
 
 <!-- profile-merge-faq.xml -->
 
-## 裝置圖表基本須知 {#device-graph-basics}
+## 裝置圖表基本需知 {#device-graph-basics}
 
 **什麼是裝置圖表？**
 
@@ -31,13 +31,13 @@ ht-degree: 82%
 
 **什麼是外部裝置圖表？**
 
-外部裝置圖表是指 [!DNL Audience Manager] 中並非專門從您自己的跨裝置資料來源建立的任何裝置圖表。例如，在建立 [配置檔案合併規則](../features/profile-merge-rules/merge-rules-start.md) 並選擇第三方設備圖形選項，您正在使用外部設備圖形。 請參閱[裝置選項](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部裝置圖表是指 [!DNL Audience Manager] 中並非專門從您自己的跨裝置資料來源建立的任何裝置圖表。例如，當您建立[設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)並選擇協力廠商裝置圖表選項時，就是使用外部裝置圖表。 請參閱[裝置選項](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
 
  
 
 **在 [!UICONTROL Profile Merge Rule] 中使用外部裝置圖表有哪些常見的使用案例？**
 
-在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表的主要目的，是針對特定區段評估，以及為屬於單一個人或家庭的多部裝置授與資格。該段本身可具有多種用途，例如，通過由客戶通過現場個性化平台服務的廣告DSP或個性化客戶的現場體驗來瞄準潛在客戶的受眾。 請參閱[外部裝置圖表使用案例](../features/profile-merge-rules/external-graph-use-cases.md)
+在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表的主要目的，是針對特定區段評估，以及為屬於單一個人或家庭的多部裝置授與資格。例如，區段本身可能有多種用途，例如以DSP提供的廣告定位潛在客戶的對象，或透過站上個人化平台將客戶的站上體驗個人化。 請參閱[外部裝置圖表使用案例](../features/profile-merge-rules/external-graph-use-cases.md)
 
  
 
@@ -259,20 +259,19 @@ ht-degree: 82%
 
 否。
 
-**2020年3月16日以後，我為什麼看到對Adobe Campaign的分部出口零分部人口？**
+**為什麼在2020年3月16日之後，我發現匯出至Adobe Campaign的區段母體為零？**
 
-在2019年末，我們發佈了一系列配置檔案合併規則增強功能，以提高使用跨設備ID生成的批處理檔案的準確性。 從2020年3月16日星期一開始，您的Audience Manager實例將嚴格遵守這些增強功能。 因此，使用跨設備ID映射到目標的段將停止在某些配置檔案合併規則配置中生成導出。
+2019年底，我們發佈了一系列設定檔合併規則增強功能，以改進使用跨裝置ID產生批次檔案的準確性。 自2020年3月16日星期一起，您的Audience Manager執行個體將嚴格遵循這些增強功能。 因此，使用跨裝置ID對應至目的地的區段，在某些設定檔合併規則設定中將會停止產生匯出專案。
 
-要確保使用跨設備ID(如Adobe Campaign)在Audience Manager實例與目標之間正確整合，請確保滿足以下要求：
+為確保您的Audience Manager執行個體與使用跨裝置ID (例如Adobe Campaign)的目的地之間正確整合，請確定您符合下列需求：
 
-1. 查看映射到Adobe Campaign聲明ID目標的段使用的配置檔案合併規則。 配置檔案合併規則必須使用 [!UICONTROL Last Authenticated Profile] 選項，因此所有經過驗證的配置檔案都可以包含在導出中。 如果您的「配置檔案合併規則」正在使用其他選項，請將其切換到 [!UICONTROL Last Authenticated Profile]。
-2. 在「配置檔案合併規則」設定中選擇「Adobe Campaign聲明的ID」資料源。
+1. 檢閱對應至您Adobe Campaign宣告ID目的地的區段所使用的設定檔合併規則。 設定檔合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，所以所有已驗證的設定檔都可以包含在匯出中。 如果您的設定檔合併規則使用不同的選項，請將其切換為[!UICONTROL Last Authenticated Profile]。
+2. 在設定檔合併規則設定中選取Adobe Campaign宣告ID資料來源。
 
 >[!NOTE]
 >
-> 我們已將面對此情況的客戶的「配置檔案合併規則」限制增加1，以便您可以為映射到Adobe Campaign聲明ID目標的段建立專用的「配置檔案合併規則」，而不更改其他使用情形的「配置檔案合併規則」。
+> 我們針對面臨此情況的客戶將設定檔合併規則限制增加1，以便您可以為對應至Adobe Campaign宣告ID目的地的區段建立專屬設定檔合併規則，不需變更其他使用案例的設定檔合併規則。
 
 >[!MORELIKETHIS]
 >
 >* [設定檔連結](../features/profile-merge-rules/profile-link-use-case.md)
-

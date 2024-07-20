@@ -1,5 +1,5 @@
 ---
-description: 介紹如何使用段生成器建立段。
+description: 說明如何使用區段產生器建立區段。
 seo-description: Describes how to create segments with Segment Builder.
 seo-title: Segment Builder
 solution: Audience Manager
@@ -9,60 +9,60 @@ feature: Segments
 exl-id: 1bd681e4-fdf7-40df-b497-b1b0bf19d68e
 source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1048'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL Segment Builder] {#segment-builder}
 
-描述在中建立段所需和可選的步驟 [!UICONTROL Segment Builder]。
+說明在[!UICONTROL Segment Builder]中建立區段的必要和選用步驟。
 
-## 視頻演示
+## 影片示範
 
-從監視 [在Audience Manager視頻中建立段](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)。 視頻將引導您完成段建立過程。 有關詳細資訊，請閱讀以下各節。
+從觀看[在Audience Manager中建立區段](https://images-tv.adobe.com/avp/vr/b7f88801-efe0-4786-9d58-554db16b34eb/81b6f004-cec0-452c-9b35-dabdc69ae3b4/9dc8a1d4-350d-46c3-90a6-5197dfb76f40_20180130023449.854x480at800_h264.mp4)影片開始。 影片會逐步說明區段的建立程式。 如需詳細資訊，請閱讀以下各節。
 
-## 建立 [!UICONTROL Segment] {#create-segment}
+## 建立[!UICONTROL Segment] {#create-segment}
 
-### 段生成器節
+### 區段產生器區段
 
 <!-- t_create_segment.xml -->
 
-[!UICONTROL Segment Builder] 由3個不同部分組成： [!UICONTROL Basic Information]。 [!UICONTROL Traits], [!UICONTROL Destinations Mapping]。 建立 [!UICONTROL segment]，完成 [!UICONTROL Basic Information] 和 [!UICONTROL Traits] 的下界。 [!UICONTROL Destinations Mapping] 設定為可選。 有關其他幫助，請參閱下面的說明。
+[!UICONTROL Segment Builder]包含3個不同的區段： [!UICONTROL Basic Information]、[!UICONTROL Traits]和[!UICONTROL Destinations Mapping]。 若要建立[!UICONTROL segment]，請完成[!UICONTROL Basic Information]和[!UICONTROL Traits]區段中的必填欄位。 [!UICONTROL Destinations Mapping]設定是選用的。 如需其他說明，請參閱下列指示。
 
-1. 在 [基本資訊](../../features/segments/segment-builder.md#segment-builder-controls-basics) 部分：
+1. 在[基本資訊](../../features/segments/segment-builder.md#segment-builder-controls-basics)區段中：
 
-   ![建立段](assets/create-segment.png)
+   ![建立區段](assets/create-segment.png)
 
-   * 命名 [!UICONTROL segment]。 最大長度 [!UICONTROL segment] 名稱為255個字元。
-   * 設定 [!UICONTROL segment] 狀態（預設為活動）。
-   * 選擇 [!UICONTROL data source]。 使用第一個下拉菜單在Audience Manager之間進行篩選 [!UICONTROL data sources]、Adobe Analytics報告套件或兩者。 然後，使用第二個下拉菜單來選擇 [!UICONTROL data source]。 如果您不使用Adobe Analytics報告套件， [!UICONTROL data source] 類型選擇器被禁用，且僅預設為Audience Manager資料源。
-   * 選擇 [!UICONTROL profile merge rule] 用於 [!UICONTROL segment] 資格。
-   * 分配 [!UICONTROL segment] 到儲存資料夾。
+   * 為[!UICONTROL segment]命名。 [!UICONTROL segment]名稱的長度上限為255個字元。
+   * 設定[!UICONTROL segment]狀態（預設為「作用中」）。
+   * 選擇[!UICONTROL data source]。 使用第一個下拉式功能表，在Audience Manager[!UICONTROL data sources]、Adobe Analytics報表套裝或兩者之間篩選。 然後，使用第二個下拉式功能表選擇您的[!UICONTROL data source]。 如果您未使用Adobe Analytics報表套裝，[!UICONTROL data source]型別選擇器會停用，並預設為僅Audience Manager資料來源。
+   * 選取要用於[!UICONTROL segment]資格的[!UICONTROL profile merge rule]。
+   * 將[!UICONTROL segment]指派至儲存資料夾。
 
-1. 在 [性狀](../../features/segments/segment-builder.md#segment-builder-controls-traits) 部分：
-   ![段構建器特徵](assets/segment-builder-traits.png)
-   * 搜索 [!UICONTROL trait] 要添加到段，然後按一下 **[!UICONTROL Add Trait]**。 添加其他 [!UICONTROL trait] 建立 [!UICONTROL trait] 組。
-   * 將 [!UICONTROL Advanced Search] 按一下 **[!UICONTROL Browse All Traits]**。 搜索 [!UICONTROL traits] 按名稱、ID、說明或 [!UICONTROL data source]。 在搜索時按一下資料夾，將結果限制到該資料夾及其子資料夾。 也可以篩選 [!UICONTROL traits] 按 [!UICONTROL trait type] ([!UICONTROL Folder Trait]。 [!UICONTROL Rule-based]。 [!UICONTROL Onboarded], [!UICONTROL Algorithmic])或人口類型([設備ID](../../reference/ids-in-aam.md) 和 [跨設備ID](../../reference/ids-in-aam.md))。
-      ![段構建器 — 瀏覽器特徵](assets/segment-builder-browse-traits.png)
-   * 即時 [特性建議](trait-recommendations.md) 當你 [!UICONTROL segment]。
-   * 按一下並拖動 [!UICONTROL traits] 建立單獨的組。
-   * 在組之間懸停以設定與布爾型的關係 [!UICONTROL AND]。 [!UICONTROL OR]。 [!UICONTROL AND NOT] 值。
-   * 懸停在要添加的時鐘錶徵圖上 [頻率](../../features/segments/recency-and-frequency.md) 規則 [!UICONTROL trait]。
-   * 在添加或刪除段填充資料時查看段填充資料 [!UICONTROL traits]。 按一下 **[!UICONTROL Calculate Estimates]** 查看（或刷新）估計的人口數。 閱讀有關 [段填充資料](../../features/segments/segment-builder-data.md#segment-populations) 的 [!UICONTROL Segment Builder]。
-   * 按一下 **[!UICONTROL Save]** 完成。
+1. 在[特徵](../../features/segments/segment-builder.md#segment-builder-controls-traits)區段中：
+   ![segment-builder-traits](assets/segment-builder-traits.png)
+   * 搜尋您想要新增至區段的[!UICONTROL trait]，然後按一下&#x200B;**[!UICONTROL Add Trait]**。 新增其他[!UICONTROL trait]以建立[!UICONTROL trait]群組。
+   * 按一下&#x200B;**[!UICONTROL Browse All Traits]**&#x200B;以開啟[!UICONTROL Advanced Search]強制回應視窗。 依名稱、識別碼、說明或[!UICONTROL data source]搜尋[!UICONTROL traits]。 在搜尋時按一下資料夾，將結果限制在該資料夾及其子資料夾中。 您也可以依[!UICONTROL trait type] （[!UICONTROL Folder Trait]、[!UICONTROL Rule-based]、[!UICONTROL Onboarded]和[!UICONTROL Algorithmic]）或母體型別（[裝置ID](../../reference/ids-in-aam.md)和[跨裝置ID](../../reference/ids-in-aam.md)）篩選[!UICONTROL traits]。
+     ![segment-builder-browser-traits](assets/segment-builder-browse-traits.png)
+   * 在您建置[!UICONTROL segment]時取得即時[特徵建議](trait-recommendations.md)。
+   * 按一下並拖曳[!UICONTROL traits]以建立個別的群組。
+   * 在群組之間暫留，以使用布林值[!UICONTROL AND]、[!UICONTROL OR]、[!UICONTROL AND NOT]設定關聯性。
+   * 將滑鼠停留在時鐘圖示上，將[造訪間隔和頻率](../../features/segments/recency-and-frequency.md)規則新增至[!UICONTROL trait]。
+   * 新增或移除[!UICONTROL traits]時檢視區段母體資料。 按一下&#x200B;**[!UICONTROL Calculate Estimates]**&#x200B;以檢視（或重新整理）預估的母體數目。 深入瞭解[!UICONTROL Segment Builder]中的[區段母體資料](../../features/segments/segment-builder-data.md#segment-populations)。
+   * 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 
-1. *（可選）* 映射 [!UICONTROL segment] 到 [!UICONTROL destination] 的 [目標映射](../../features/segments/segment-builder.md#segment-builder-controls-destinations) 部分：
-   * 搜索 [!UICONTROL destination] 按一下 **[!UICONTROL Add Destination]**。 注意， [!UICONTROL destination] 必須已存在，然後才能將其添加到 [!UICONTROL segment]。
-   * 按一下 **[!UICONTROL Save]** 完成。
+1. *（選擇性）*&#x200B;將[!UICONTROL segment]對應到[目的地對應](../../features/segments/segment-builder.md#segment-builder-controls-destinations)區段中的[!UICONTROL destination]：
+   * 搜尋[!UICONTROL destination]並按一下&#x200B;**[!UICONTROL Add Destination]**。 請注意，[!UICONTROL destination]必須先存在，您才能將其新增至[!UICONTROL segment]。
+   * 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 
-觀看下面的視頻，詳細瞭解跨設備指標的工作原理。
+請觀看下方的影片，詳細瞭解跨裝置量度的運作方式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/33445)
 
-## [!UICONTROL Segment Builder] 控制項： [!UICONTROL Basic Information] 節 {#segment-builder-controls-basics}
+## [!UICONTROL Segment Builder]控制項： [!UICONTROL Basic Information]區段 {#segment-builder-controls-basics}
 
-在 [!UICONTROL Segment Builder]。 [!UICONTROL the Basic Information] 設定允許您建立新特徵或編輯現有特徵。 建立新 [!UICONTROL segment]，提供名稱， [!UICONTROL data source]，然後選擇儲存資料夾。 所有其它欄位都是可選的。 轉到 [!UICONTROL Traits] 的子菜單。
+在[!UICONTROL Segment Builder]中，[!UICONTROL the Basic Information]設定可讓您建立新特徵或編輯現有特徵。 若要建立新的[!UICONTROL segment]，請提供名稱、[!UICONTROL data source]並選取儲存資料夾。 所有其他欄位都是選用的。 完成後，移至[!UICONTROL Traits]區段。
 
 <!-- r_segment_basic_info_section.xml -->
 
@@ -111,91 +111,90 @@ ht-degree: 2%
 
 | 欄位 | 說明 |
 ---------|----------
-| **[!UICONTROL Name]** | 為段提供一個簡短的邏輯名稱，用於描述其功能或用途。 避免縮寫和特殊字元。 段名稱的最大長度為255個字元。 |
-| **[!UICONTROL Description]** | 有關段的附加說明性資訊的欄位。 |
-| **[!UICONTROL Integration Code]** | 用戶定義的ID或其他公司特定資訊的欄位。 |
-| **[!UICONTROL Data Source]** | 將段與特定資料提供程式關聯。 <br> 使用第一個下拉菜單在Audience Manager資料源、Adobe Analytics報告套件或兩者之間進行篩選。 然後，使用第二個下拉菜單選擇資料源。 <br> 如果未使用Adobe Analytics報表套件，則資料源類型選擇器將被禁用，並且預設為僅Audience Manager資料源。 |
-| **[!UICONTROL Profile Merge Rule]** | 選擇要用於段限定的配置檔案合併規則。 |
-| **[!UICONTROL Status]** | 激活或停用段（預設情況下為活動）。 |
-| **資料夾儲存** | 確定段所屬的儲存資料夾。 |
+| **[!UICONTROL Name]** | 為區段提供一個簡短的邏輯名稱，用於描述其功能或用途。 避免使用縮寫和特殊字元。 區段名稱的最大長度為255個字元。 |
+| **[!UICONTROL Description]** | 有關區段的其他描述性資訊的欄位。 |
+| **[!UICONTROL Integration Code]** | 使用者定義的ID或其他公司專屬資訊的欄位。 |
+| **[!UICONTROL Data Source]** | 將區段與特定資料提供者建立關聯。 <br>使用第一個下拉式功能表，在Audience Manager資料來源、Adobe Analytics報表套裝或兩者之間篩選。 然後，使用第二個下拉式選單來選擇資料來源。 <br>如果您未使用Adobe Analytics報表套裝，資料來源型別選擇器會停用，並預設為僅Audience Manager資料來源。 |
+| **[!UICONTROL Profile Merge Rule]** | 選取要用於區段資格的設定檔合併規則。 |
+| **[!UICONTROL Status]** | 啟動或停用區段（預設為啟用）。 |
+| **資料夾儲存空間** | 決定區段所屬的儲存資料夾。 |
 
-## [!UICONTROL Segment Builder] 控制項： [!UICONTROL Traits] 節 {#segment-builder-controls-traits}
+## [!UICONTROL Segment Builder]控制項： [!UICONTROL Traits]區段 {#segment-builder-controls-traits}
 
-在 [!UICONTROL Segment Builder]，也請參見Wiki頁。 [!UICONTROL Traits] 部分用於管理 [!UICONTROL traits] 在 [!UICONTROL segment]建立 [!UICONTROL trait] 組和設定資格標準。 添加 [!UICONTROL trait] 到 [!UICONTROL segment]的子菜單。 [!UICONTROL trait] 在搜索欄位中輸入名稱，然後按一下 [!UICONTROL Add Trait]。 保存 [!UICONTROL trait] （如果完成）或移到 [!UICONTROL Destinations Mapping]。
+在[!UICONTROL Segment Builder]中，[!UICONTROL Traits]區段可讓您管理[!UICONTROL segment]中的[!UICONTROL traits]、建立[!UICONTROL trait]群組，以及設定資格條件。 若要將[!UICONTROL trait]新增至[!UICONTROL segment]，請在搜尋欄位中輸入[!UICONTROL trait]名稱，然後按一下[!UICONTROL Add Trait]。 儲存[!UICONTROL trait] （如果完成）或移至[!UICONTROL Destinations Mapping]。
 
 <!-- r_segment_traits_section.xml-->
 
-**先決條件：** 完成 [!UICONTROL Basic Information] 的子菜單。
+**必要條件：**&#x200B;完成[!UICONTROL Basic Information]區段中的必要欄位。
 
 | 欄位 | 說明 |
 |--- |--- |
-| **[!UICONTROL Basic View]** | 本部分提供可視控制項，讓您： <ul><li>新建並管理現有 [!UICONTROL segments]。</li><li>刪除 [!UICONTROL traits] 從 [!UICONTROL segment]。</li><li>最多50（最大值） [!UICONTROL traits] 到 [!UICONTROL segment]。</li><li>拖放 [!UICONTROL traits] 的子菜單。</li><li>視圖 [!UICONTROL traits] 和 [!UICONTROL trait] 組 [!UICONTROL segment]。</li><li>使用布爾表達式、比較運算子和頻率/頻率設定設定限定條件。</li></ul> |
-| **[!UICONTROL Code View]** | 開啟一個開發環境，該環境允許您建立和管理 [!UICONTROL traits]、組和資格要求，使用代碼而不是可視介面。 如果您 [!UICONTROL segments]: <ul><li>包含50個以上 [!UICONTROL traits] 在 [!UICONTROL segment]。 注： [!UICONTROL Segments] 限於5000 [!UICONTROL traits] （最大值）。</li><li>包含許多 [!UICONTROL trait] 組。</li><li>具有複雜的資格要求。</li></ul> |
-| 搜尋 | 幫助您查找 [!UICONTROL traits] 添加到 [!UICONTROL segment]。 |
-| 建議 | 獲取類似項的即時建議 [!UICONTROL traits]，來自你的第一黨 [!UICONTROL traits] 和 [!UICONTROL Audience Marketplace] 您訂閱的資料源。 將這些建議添加到 [!UICONTROL segment] 規則以擴大受眾。 更多內容 [特萊Recommendations](trait-recommendations.md)。 |
-| **[!UICONTROL Marketplace Recommendations]** | 獲取類似項的即時建議 [!UICONTROL traits]從 [!UICONTROL Audience Marketplace] 您未訂閱的資料源。 更多內容 [特萊Recommendations](trait-recommendations.md)。 |
-| 實數和估計 [!UICONTROL Segment] 大小資料 | 請參閱[區段產生器的特徵和區段母體資料](segment-builder-data.md)。 |
+| **[!UICONTROL Basic View]** | 本節提供視覺化控制項，可讓您： <ul><li>建置新專案並管理現有的[!UICONTROL segments]。</li><li>從[!UICONTROL segment]移除[!UICONTROL traits]。</li><li>將最多50個（最多） [!UICONTROL traits]新增至[!UICONTROL segment]。</li><li>拖放[!UICONTROL traits]以建立新群組。</li><li>在[!UICONTROL segment]中檢視[!UICONTROL traits]和[!UICONTROL trait]群組。</li><li>使用布林運算式、比較運運算元和時近/頻率設定來設定資格條件。</li></ul> |
+| **[!UICONTROL Code View]** | 開啟開發環境，讓您使用程式碼而非視覺化介面來建立和管理[!UICONTROL traits]、群組和資格需求。 若您的[!UICONTROL segments]： <ul><li>在個別[!UICONTROL segment]中包含超過50個[!UICONTROL traits]。 注意： [!UICONTROL Segments]限製為5000 [!UICONTROL traits] （最大值）。</li><li>包含許多[!UICONTROL trait]群組。</li><li>具有複雜的資格要求。</li></ul> |
+| 搜尋 | 協助您尋找[!UICONTROL traits]以新增至[!UICONTROL segment]。 |
+| 建議 | 從您訂閱的第一方[!UICONTROL traits]和[!UICONTROL Audience Marketplace]資料摘要，取得類似[!UICONTROL traits]的即時建議。 將這些建議新增至[!UICONTROL segment]規則以擴大您的對象。 閱讀[特徵Recommendations](trait-recommendations.md)中的詳細資訊。 |
+| **[!UICONTROL Marketplace Recommendations]** | 從您未訂閱的[!UICONTROL Audience Marketplace]資料摘要取得類似[!UICONTROL traits]的即時建議。 閱讀[特徵Recommendations](trait-recommendations.md)中的詳細資訊。 |
+| 實際和預估的[!UICONTROL Segment]大小資料 | 請參閱[區段產生器的特徵和區段母體資料](segment-builder-data.md)。 |
 
-## 刪除 [!UICONTROL Traits] 從 [!UICONTROL Segment] {#remove-traits}
+## 從[!UICONTROL Segment]移除[!UICONTROL Traits] {#remove-traits}
 
-管理 [!UICONTROL traits] 在 [!UICONTROL segments] 是保持 [!UICONTROL segments] 可行。 如果需要刪除，請執行以下步驟 [!UICONTROL traits] 從 [!UICONTROL segment]。
+管理您[!UICONTROL segments]中的[!UICONTROL traits]是保持[!UICONTROL segments]可行性的重要部分。 如果您需要從[!UICONTROL segment]移除[!UICONTROL traits]，請依照下列步驟進行。
 
-刪除 [!UICONTROL traits] 從 [!UICONTROL segment]:
+若要從[!UICONTROL segment]移除[!UICONTROL traits]：
 
-1. 轉到 **[!UICONTROL Audience Data > Segments]**。 瀏覽清單或使用搜索功能查找 [!UICONTROL segment] 你想一起工作。
-2. 按一下 [!UICONTROL segment] 開啟的名稱 [!UICONTROL segment] 詳細資訊螢幕。
-3. 按一下 **編輯** 開啟 [!UICONTROL Segment Builder] 然後按一下 **性狀** 開啟 [!UICONTROL traits] 的子菜單。
-4. 懸停在 [!UICONTROL trait] 刪除，然後按一下X。此操作將立即刪除 [!UICONTROL trait] 從 [!UICONTROL segment]。
+1. 移至&#x200B;**[!UICONTROL Audience Data > Segments]**。 捲動清單或使用搜尋功能來尋找您要使用的[!UICONTROL segment]。
+2. 按一下[!UICONTROL segment]名稱以開啟[!UICONTROL segment]詳細資訊畫面。
+3. 按一下&#x200B;**編輯**&#x200B;以開啟[!UICONTROL Segment Builder]，然後按一下&#x200B;**特徵**&#x200B;以開啟[!UICONTROL traits]面板。
+4. 將游標暫留在您要刪除的[!UICONTROL trait]上，然後按一下X。此動作會立即從您的[!UICONTROL segment]移除[!UICONTROL trait]。
 
-## [!UICONTROL Segment Builder] 控制項： [!UICONTROL Destinations Mappings] 節 {#segment-builder-controls-destinations}
+## [!UICONTROL Segment Builder]控制項： [!UICONTROL Destinations Mappings]區段 {#segment-builder-controls-destinations}
 
-在 [!UICONTROL Segment Builder]，可選 [!UICONTROL Destinations Mapping] 部分，用於發送 [!UICONTROL segment] 資料到第三方 [!DNL cookie]。 [!DNL URL]或 [!UICONTROL server-to-server destination]。 添加 [!UICONTROL destination]，搜索（或瀏覽） [!UICONTROL destination]提供 [!UICONTROL destination] 特定資訊，然後按一下 **[!UICONTROL Add Destination]**。
+在[!UICONTROL Segment Builder]中，選用的[!UICONTROL Destinations Mapping]區段可讓您將[!UICONTROL segment]資料傳送給第三方[!DNL cookie]、[!DNL URL]或[!UICONTROL server-to-server destination]。 若要新增[!UICONTROL destination]，請搜尋（或瀏覽）[!UICONTROL destination]、提供[!UICONTROL destination]特定資訊，然後按一下&#x200B;**[!UICONTROL Add Destination]**。
 
 <!-- r_segment_destinations_map.xml -->
 
-### 必要條件
+### 必備條件
 
-完成 [!UICONTROL Basic Information] 和 [!UICONTROL Traits] 的下界。 此外，目標必須已存在。
+完成[!UICONTROL Basic Information]和[!UICONTROL Traits]區段中的必填欄位。 此外，目的地必須已存在。
 
-### [!UICONTROL Destination Mappings] 搜索工具
+### [!UICONTROL Destination Mappings]搜尋工具
 
-的 **[!UICONTROL Destination Mappings]** 面板包含下表中所述的搜索工具。
+**[!UICONTROL Destination Mappings]**&#x200B;面板包含搜尋工具，如下表所述。
 
 | 搜尋類型 | 說明 |
 |---|---|
-| **[!UICONTROL Search by Destination Name]** | 用於搜索特定 [!UICONTROL destination] 姓名。 要搜索，請開始鍵入。 該欄位將根據您的搜索詞自動完成。 按一下 **[!UICONTROL Add Destination]** 完成。 |
-| **[!UICONTROL Browse All Destinations]** | 瀏覽清單 *全部* [!UICONTROL destinations] 的下界。 選擇並添加 [!UICONTROL destinations] 到 [!UICONTROL segment] 的子菜單。 |
+| **[!UICONTROL Search by Destination Name]** | 可讓您依名稱搜尋特定[!UICONTROL destination]。 若要搜尋，請開始輸入。 欄位將根據您的搜尋字詞自動完成。 完成時，按一下&#x200B;**[!UICONTROL Add Destination]**。 |
+| **[!UICONTROL Browse All Destinations]** | 瀏覽可供您使用的&#x200B;*所有* [!UICONTROL destinations]清單。 從快顯清單中選取[!UICONTROL destinations]並新增至您的[!UICONTROL segment]。 |
 
-## 中的欄位 [!UICONTROL Destination Mappings] 彈出窗口 {#fields-in-dest-mappings}
+## [!UICONTROL Destination Mappings]彈出式視窗中的欄位 {#fields-in-dest-mappings}
 
-在 [!UICONTROL Segment Builder]，也請參見Wiki頁。 [!UICONTROL Add Destination] 在您選擇 [!UICONTROL destination]。 此窗口顯示有關 [!UICONTROL destination] 以及根據不同 [!UICONTROL destination] 的雙曲餘切值。 在空欄位中提供所需資訊以設定 [!UICONTROL destination mapping]。
+在[!UICONTROL Segment Builder]中，在您選取[!UICONTROL destination]之後，[!UICONTROL Add Destination]對話方塊就會顯示。 此視窗顯示有關[!UICONTROL destination]的靜態資訊，以及根據[!UICONTROL destination]型別而變化的欄位。 在空白欄位中提供設定[!UICONTROL destination mapping]的必要資訊。
 
 >[!NOTE]
 >
->發佈日期是可選的。 如果為空，則目標將變為活動狀態且永不過期。
+>出版日期為選用。 當空白時，目的地會變成使用中且永不過期。
 
 <!-- r_add_mappings_pop.xml -->
 
-### [!UICONTROL Cookie Destination] 欄位
+### [!UICONTROL Cookie Destination]欄位
 
-在 [!UICONTROL Destination Mapping] 欄位中，指定用於向 [!UICONTROL destination]。 在第一個欄位中輸入鍵，在第二個欄位中輸入值。 您 [!UICONTROL cookie destination] pop可能看起來類似：
+在[!UICONTROL Destination Mapping]欄位中，指定用來傳送資料至[!UICONTROL destination]的機碼值組。 在第一個欄位中輸入索引鍵，並在第二個欄位中輸入值。 您的[!UICONTROL cookie destination] Pop看起來可能類似這樣：
 
 ![](assets/cookie_modal.PNG)
 
-### [!UICONTROL URL Destination] 欄位
+### [!UICONTROL URL Destination]欄位
 
-在 [!UICONTROL URL] 和 [!UICONTROL Secure URL] 欄位中，指定用於向 [!UICONTROL destination]。
+在[!UICONTROL URL]和[!UICONTROL Secure URL]欄位中，指定用來傳送資料給[!UICONTROL destination]的完整標準或安全位址。
 
 ![](assets/url_modal.PNG)
 
-### [!UICONTROL Server-to-Server Destination] 欄位
+### [!UICONTROL Server-to-Server Destination]欄位
 
-在 [!UICONTROL Destination Value] 欄位指定用於向 [!UICONTROL destination]。
+在[!UICONTROL Destination Value]欄位中，指定用來傳送資料給[!UICONTROL destination]的值（機碼值組的一部分）。
 
 ![](assets/s2s_modal.PNG)
 
 >[!MORELIKETHIS]
 >
->* [建立Cookie目標](../../features/destinations/create-cookie-destination.md)
->* [建立URL目標](../../features/destinations/create-url-destination.md)
-
+>* [建立Cookie目的地](../../features/destinations/create-cookie-destination.md)
+>* [建立URL目的地](../../features/destinations/create-url-destination.md)

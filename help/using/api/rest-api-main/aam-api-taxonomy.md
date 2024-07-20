@@ -1,32 +1,32 @@
 ---
-description: 用於查看Audience Manager公用分類的方法。 此可選分類方案將特徵組織為行業標準類別。
+description: 可讓您檢視Audience Manager一般分類法的方法。 此選擇性分類配置會將特徵組織成業界標準類別。
 seo-description: Methods that let you view the Audience Manager common taxonomy. This optional classification scheme organizes traits into industry standard categories.
 seo-title: Taxonomic API Methods
 solution: Audience Manager
-title: 分類 API 方法
+title: 分類API方法
 uuid: 4ee29ba5-e9ba-4498-a6ee-7343227dd7ba
 feature: API
 exl-id: 8bc6dcbb-7f5b-4a7b-998d-025eaf76c409
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 
-# 分類 API 方法 {#taxonomic-api-methods}
+# 分類API方法 {#taxonomic-api-methods}
 
-用於查看Audience Manager公用分類的方法。 此可選分類方案將特徵組織為行業標準類別。
+可讓您檢視Audience Manager一般分類法的方法。 此選擇性分類配置會將特徵組織成業界標準類別。
 
 <!-- c_rest_api_taxonomy.xml -->
 
 >[!NOTE]
 >
->不能用這些方法建立新分類類別或分類特徵。 要分類特徵，請指定相應 `categoryId` 以特徵建立或更新方法。
+>您無法使用這些方法建立新的分類類別或分類特徵。 若要分類特徵，請使用特徵建立或更新方法來指定適當的`categoryId`。
 
-## 返回特定分類 {#return-specific-taxonomy}
+## 傳回特定分類法 {#return-specific-taxonomy}
 
-A `GET` 返回有關指定分類類別的詳細資訊的方法。
+傳回指定分類類別相關詳細資料的`GET`方法。
 
 <!-- r_rest_api_taxonomy.xml -->
 
@@ -36,7 +36,7 @@ A `GET` 返回有關指定分類類別的詳細資訊的方法。
 
 ### 回應
 
-成功的響應返回 `200 OK` 和指定ID的類別。 未成功的請求返回 `404 No Content` 的子菜單。
+成功的回應會傳回`200 OK`和指定識別碼的類別。 如果識別碼不存在，失敗的要求會傳回`404 No Content`。
 
 ```
 {
@@ -49,9 +49,9 @@ A `GET` 返回有關指定分類類別的詳細資訊的方法。
 }
 ```
 
-## 返回所有分類類別 {#return-all-taxonomy-categories}
+## 傳回所有分類類別 {#return-all-taxonomy-categories}
 
-A `GET` 方法，它返回陣列中頂級類別的清單。
+傳回陣列中最上層類別清單的`GET`方法。
 
 <!-- r_rest_api_taxonomies.xml -->
 
@@ -61,7 +61,7 @@ A `GET` 方法，它返回陣列中頂級類別的清單。
 
 ### 回應
 
-為簡單而截斷。
+為簡短起見，已截斷。
 
 ```
 [
@@ -92,9 +92,9 @@ A `GET` 方法，它返回陣列中頂級類別的清單。
 ]
 ```
 
-## 返回分類子類別 {#return-taxonomy-sub-categories}
+## 傳回分類子類別 {#return-taxonomy-sub-categories}
 
-A `GET` 方法，它返回陣列中指定父類別的子類別。
+傳回陣列中指定父類別之子類別的`GET`方法。
 
 <!-- r_rest_api_taxonomy_sub.xml -->
 
@@ -104,7 +104,7 @@ A `GET` 方法，它返回陣列中指定父類別的子類別。
 
 ### 回應
 
-成功的響應返回 `200 OK` 和指定ID的類別。 未成功的請求返回 `404 No Content` 的子菜單。 為簡單而截斷。
+成功的回應會傳回`200 OK`和指定識別碼的類別。 如果識別碼不存在，失敗的要求會傳回`404 No Content`。 為簡短起見，已截斷。
 
 ```
 [

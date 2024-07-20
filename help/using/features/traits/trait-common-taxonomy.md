@@ -1,5 +1,5 @@
 ---
-description: 本文概述了使用通用分類對特徵進行分類。
+description: 本文提供使用通用分類法將特徵分類的一般概觀。
 keywords: DIL
 seo-description: This article provides general overview about classifying traits with a common taxonomy.
 seo-title: Classifying Traits with a Common Taxonomy
@@ -10,41 +10,41 @@ feature: Traits
 exl-id: 59000dc7-66cf-4e7e-8e9b-9d48157203bd
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
 # 使用通用分類法將特徵分類 {#classifying-traits-with-a-common-taxonomy}
 
-本文概述了使用通用分類對特徵進行分類。
+本文提供使用通用分類法將特徵分類的一般概觀。
 
-## Audience Manager分類
+## Audience Manager分類法
 
 <!-- c_common_taxonomy_about.xml -->
 
-的 [!DNL Audience Manager] 分類法是一種可選功能，它使用統一、邏輯和常見的命名約定對特徵進行分類。 它在平台級別運行，以幫助確保命名一致性 [!DNL Audience Manager] 生態系統。 最終，通用分類法旨在使我們的產品與有關消費者隱私和選擇退出流程的行業標準更好地保持一致。
+[!DNL Audience Manager]分類法是一項選擇性功能，可透過統一、邏輯及普遍瞭解的命名慣例來分類特徵。 它在平台層級運作，以協助確保整個[!DNL Audience Manager]生態系統的命名一致性。 歸根結底，通用分類法的設計目的，是為了讓我們的產品在消費者隱私權和選擇退出程式方面，更符合業界標準。
 
-## 特質分類的優點
+## 特徵分類的優點
 
-使我們的客戶能夠構建定制細分市場和資料模型是 [!DNL Audience Manager] 以及您從我們的平台獲取價值的能力。 但是，還需要一種強大且可擴展的方法，將有關細分的資訊傳達給您的客戶和合作夥伴。 此外，此通信要求段資訊以易於理解和普遍理解的語言共用，同時保護您的專有特性和段名稱。 的 [!DNL Audience Manager] 公共分類法提供了此語言和功能。
+讓我們的客戶建立自訂區段和資料模型，是[!DNL Audience Manager]模型和您從我們的平台擷取價值能力的核心。 然而，我們還需要強大且可擴充的手段，將區段的相關資訊傳達給您的客戶和合作夥伴。 此外，這項通訊需要以容易理解和普遍理解的語言共用區段資訊，同時保護您的專屬特徵和區段名稱。 [!DNL Audience Manager]通用分類法提供此語言和功能。
 
-## 分類法使用行業標準分類類別
+## 分類法使用產業標準分類類別
 
-公用分類基於由 [!DNL Interactive Advertising Bureau (IAB)]。 請參閱 [!DNL IAB]`s [網站](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines) 有關網路和交換的質量保證指南的詳細資訊。
+通用分類法以[!DNL Interactive Advertising Bureau (IAB)]建立的分類為基礎。 請參閱[!DNL IAB]的[網站](https://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines)，以取得有關網路和交換品質保證准則的詳細資訊。
 
 ## 分類組織
 
-的 [!DNL Audience Manager] 分類將資料組織到稱為層的嵌套類別中。 每個類別最多可包含3個資料分類的獨立層。 在最高級別，第1層類別將資料分組為其最一般的形式（如地理位置）。 隨後的層對較高級別、一般類別(如 *地理 — >美國 — >紐約*)。 然而，並非每個類別都有3個層次，有些只使用2個。
+[!DNL Audience Manager]分類法會將資料組織成稱為階層的巢狀類別。 每個類別最多可包含3個不同的資料分類階層。 在最上層，第1級類別會將資料分組為其最一般的形式（例如，地理位置）。 後續層級會為較高層級的一般類別提供更高的特殊性（例如，*地理位置 — >美國 — >紐約*）。 不過，並非每個類別都有3個階層，有些僅使用2個。
 
-## 在資料類別中分類特徵
+## 分類資料類別中的特徵
 
-在中建立或編輯特徵時，可分配分類分類 [!UICONTROL Add New Trait Wizard] (位於* **[!UICONTROL Audience Data > Traits]***)。 請參閱 [建立特徵的文檔](../../features/traits/create-onboarded-rule-based-traits.md) 的子菜單。
+您在[!UICONTROL Add New Trait Wizard] （位於* **[!UICONTROL Audience Data > Traits]***）中建立或編輯特徵時，指派分類法分類。 如需詳細資訊，請參閱有關建立特徵](../../features/traits/create-onboarded-rule-based-traits.md)的[檔案。
 
-## 使用分類：其他注意事項
+## 使用分類法：其他考量事項
 
-如果您決定根據我們的常見分類法對特徵進行分類，請記住：
+如果您決定根據我們的通用分類法將特徵分類，請務必記住：
 
-* 分類是 *可選*。
-* 性狀 *不是* 預設情況下分配給分類類別（即，特徵不被分類為「未知」或「未分類」等）。
-* 特徵可屬於 *一個* 僅分類類別（不允許使用多分類和跨分類分類）。
+* 分類為&#x200B;*選擇性*。
+* 依預設，特徵&#x200B;*不會*&#x200B;指派給分類類別（亦即，特徵不會分類為「未知」或「未分類」等）。
+* 特徵只能屬於&#x200B;*one*&#x200B;分類類別（不允許多重和跨類別分類）。

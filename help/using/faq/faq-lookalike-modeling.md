@@ -1,74 +1,74 @@
 ---
-description: 外觀相似的建模通過自動資料分析幫助您發現新的、獨特的受眾。 本文提供了最常見問題的答案。
+description: 相似建模可協助您透過自動化資料分析，探索新的不重複受眾。 本文提供常見問題的解答。
 seo-description: Look-Alike Modeling helps you discover new, unique audiences through automated data analysis. This article provides answers to the most frequently asked questions.
 seo-title: Look-Alike Modeling FAQ
 solution: Audience Manager
-title: 相似建模常見問題
+title: 相似建模常見問題集
 feature: Algorithmic Models
 exl-id: c6e92db0-129f-489e-8cf0-600e0e09698b
 source-git-commit: 37823ae54e106e32aa195a6b69e0f1ebfc322f09
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
-# 相似建模常見問題
+# 相似建模常見問題集
 
 ## 概述 {#overview}
 
-本文提供了有關 [!UICONTROL Look-Alike Modeling]。
+本文提供有關[!UICONTROL Look-Alike Modeling]最常見問題的解答。
 
 ## 問題 {#questions}
 
-**我為什麼要去 [!UICONTROL Accuracy & Reach] 圖？**
+**為什麼我會取得一般[!UICONTROL Accuracy & Reach]圖表？**
 
-公寓 [!UICONTROL Accuracy & Reach] 圖表示幾乎每個用戶都通過模型得到相同的分數。 當您在運行模型的資料源中包含站點訪問者特性時，可能會發生這種情況。 要避免這種情況，請使用 [!UICONTROL Exclusions] 的子菜單。
-
- 
-
-**為什麼我的一些最有影響力的特質擁有很少的觀眾？**
-
-算法選擇與基線特徵高度相關的特徵。 例如，如果某個特徵與基線特徵有100%的重疊，那麼它的體重將非常高，即使該特徵的用戶數量很小。
+平面的[!UICONTROL Accuracy & Reach]圖表表示幾乎所有使用者在模型中都收到相同的評分。 當您在執行模型的資料來源中包含網站訪客特徵時，可能會發生此狀況。 若要避免此問題，請在模型建立步驟期間，使用[!UICONTROL Exclusions]欄位從模型輸入中移除泛型特徵。
 
  
 
-**為什麼我的模型沒有運行/重新運行？**
+**為什麼我的一些最具影響力特徵只有很小的對象？**
 
-產生結果的模型只有在建立了至少一個活動算法特性並將其映射到活動段和目的地時才會繼續運行。
+演演算法會選取與基線特徵高度相關的特徵。 例如，如果特定特徵與基線特徵有100%的重疊，則即使該特徵中的使用者數量較少，也會有很高的權重。
+
+ 
+
+**為什麼我的模型沒有執行/重新執行？**
+
+只有在您建立至少一個使用中的演演算法特徵，並將它對應至使用中的區段和目的地時，產生結果的模型才會繼續執行。
 
  
 
 **為什麼我的模型沒有產生任何結果？**
 
-這通常是由於在選定資料源中的基線種群和種群之間沒有顯著特徵重疊。
+這通常是因為在基線母體與所選資料來源母體之間沒有顯著的特徵重疊所導致。
 
  
 
-**是否對基線特性或段大小有任何建議？**
+**對於基準特徵或區段大小是否有任何建議？**
 
-鑑於所選資料源中的基線人口和人口之間存在顯著的特徵重疊，幾千個用戶應足以運行該模型。 [!UICONTROL Look-Alike Modeling] 結果越準確，基線越大。
-
- 
-
-**我應為我的模型選擇哪些第三方資料源？**
-
-使用與基線特性/段至少有一些重疊的資料源，但同時引入更多用戶。 您還應考慮與每個資料饋送關聯的成本。 在以下方面，不同資料提供商的成本和定價模型各不相同 [!UICONTROL Audience Marketplace]。
+由於基準母體與所選資料來源中的母體之間存在重大特徵重疊，因此只有數千名使用者才足以在其上執行模型。 [!UICONTROL Look-Alike Modeling]會產生更精確的結果，基準線越大。
 
  
 
-**使用第三方資料進行建模是否成本高？**
+**我應該為我的模型選擇哪些協力廠商資料來源？**
 
-它取決於所選資料饋送的定價模型。 有些源允許免費建模，而其他源則收費。 請參閱 [為資料源購買者開單](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md) 的雙曲餘切值。
-
- 
-
-**我可以建立多少個模型/特徵？**
-
-目前，你可以建立多達20種算法模型和50種算法特性。
+使用與基線特徵/區段至少有一些重疊，但同時引進其他使用者的資料來源。 您也應該考慮與每個資料摘要相關的成本。 在[!UICONTROL Audience Marketplace]中，不同資料提供者的成本和定價模型各有不同。
 
  
 
-**模型訓練和算法特徵群的刷新頻率是多少？**
+**使用協力廠商資料進行模型化是否需要費用？**
 
-該模型每8天重新訓練一次，同時刷新算法特徵種群。
+這取決於所選資料摘要的定價模型。 有些摘要可免費提供模型製作，有些則需額外付費。 如需詳細資訊，請參閱[資料摘要購買者的帳單](../features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)。
+
+ 
+
+**我可以建立多少模型/特徵？**
+
+目前，您可以建立最多20個演演算法模型和50個演演算法特徵。
+
+ 
+
+**模型訓練和演演算法特徵母體的重新整理頻率為何？**
+
+模型每8天會重新訓練一次，並會重新整理演演算法特徵母體。

@@ -10,7 +10,7 @@ exl-id: a0597bf4-79c8-404d-ba3b-a92c6b5c9c06
 source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -30,13 +30,13 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->[RBAC群組許可權](../../features/administration/administration-overview.md) 指派於 [!DNL Audience Manager] UI遵循於 [!UICONTROL Bulk Management Tools].
+>在[!DNL Audience Manager] UI中指派的[RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
 
-此 [!UICONTROL Request] 工作表沒有自己的欄標題集，您不需要將ID複製到任何欄。 而是會根據您在工具列中按一下之動作按鈕傳回資料。 此外，選用的報表功能會傳回畫素引發的頻率計數，以及數個固定時間間隔的不重複使用者計數。
+[!UICONTROL Request]工作表沒有自己的欄標題集，您不需要將ID複製到任何欄。 而是會根據您在工具列中按一下之動作按鈕傳回資料。 此外，選用的報表功能會傳回畫素引發的頻率計數，以及數個固定時間間隔的不重複使用者計數。
 
-若要進行大量請求，請開啟 [!UICONTROL Bulk Management Tools] 工作表及：
+若要進行大量請求，請開啟[!UICONTROL Bulk Management Tools]工作表並：
 
-1. 按一下 **[!UICONTROL Request]** 標籤。
+1. 按一下「**[!UICONTROL Request]**」標籤。
 2. 在工作表頂端的工具列中，按一下與您要使用之資料對應的請求按鈕。 您可以要求：
 
    * 演演算法模型
@@ -47,10 +47,10 @@ t_bulk_requests.xml
    * 區段
    * 特徵和區段資料夾ID
 
-   此 [!DNL Audience Manager] API會將大量資料寫入回 [!UICONTROL Request] 工作表。
+   [!DNL Audience Manager] API會將大量資料寫入回[!UICONTROL Request]工作表。
 
 >[!NOTE]
 >
->在您的結果中， `createTime` 和 `updateTime` 欄會以指數表示法傳回資料。 基礎日期/時間戳記會以UNIX UTC時間記錄。 目前，工作表無法傳回可讀格式的日期/時間戳記。
+>在您的結果中，`createTime`和`updateTime`欄會以指數表示法傳回資料。 基礎日期/時間戳記會以UNIX UTC時間記錄。 目前，工作表無法傳回可讀格式的日期/時間戳記。
 
-如果大量更新傳回錯誤或失敗，請參閱 [大量管理工具的疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md).
+如果大量更新傳回錯誤或失敗，請參閱[大量管理工具的疑難排解](../../reference/bulk-management-tools/bulk-troubleshooting.md)。

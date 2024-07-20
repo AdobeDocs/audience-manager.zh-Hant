@@ -1,9 +1,9 @@
 ---
-description: 關於Audience Manager如何與第三方內容提供商執行即時資料傳輸的概述。
+description: 概述Audience Manager如何與協力廠商內容提供者執行即時資料傳輸。
 seo-description: A general overview of how Audience Manager performs real-time data transfers with a third-party content provider.
 seo-title: Real-Time Data Transfer Process Described
 solution: Audience Manager
-title: 描述的即時資料傳輸過程
+title: 即時資料傳輸流程說明
 uuid: b68781b3-0b7a-442d-8e34-2db2474849a4
 feature: Inbound Data Transfers
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
@@ -14,24 +14,24 @@ ht-degree: 0%
 ---
 
 
-# 描述的即時資料傳輸過程{#real-time-data-transfer-process-described}
+# 即時資料傳輸流程說明{#real-time-data-transfer-process-described}
 
-關於Audience Manager如何與第三方內容提供商執行即時資料傳輸的概述。
+概述Audience Manager如何與協力廠商內容提供者執行即時資料傳輸。
 
 <!-- real-time-data-transfer-explained.xml -->
 
 ## 即時資料傳輸
 
-作為用戶訪問或在您的站點上執行操作，即時資料傳輸發送和接收段ID。 通常，在您需要立即確定用戶資格或對用戶進行細分時，同步資料傳輸非常有用，因為用戶在清單中導航。
+即時資料傳輸會在使用者造訪您的網站或在您的網站上採取動作時，傳送及接收區段ID。 通常，當您需要立即讓使用者在瀏覽您的詳細目錄時符合資格或劃分使用者時，同步資料傳輸會很有用。
 
 ## 資料整合步驟
 
-即時資料整合過程的工作如下：
+即時資料整合程式的運作方式如下：
 
-1. 用戶訪問包含Audience Manager代碼的客戶站點。
-1. Audience Manager載入一個幀，並呼叫我們 [!UICONTROL Data Collection Server] ( [!DNL DCS])。
-1. 的 [!DNL DCS] 調用第三方伺服器（即時）以檢查供應商是否具有有關用戶的任何段資訊。
-1. 內容提供方將有關該用戶的段資訊返回給Audience Manager。
-1. Audience Manager接收此段資訊，並使其可用於定位和構建新的特性和段。
+1. 使用者造訪包含Audience Manager程式碼的客戶網站。
+1. Audience Manager載入iframe並呼叫[!UICONTROL Data Collection Server] ( [!DNL DCS])。
+1. [!DNL DCS]會呼叫協力廠商伺服器（即時）以檢查廠商是否有任何關於使用者的區段資訊。
+1. 內容提供者會將有關該使用者的區段資訊傳回給Audience Manager。
+1. Audience Manager會收到此區段資訊，並可用於鎖定和建立新特徵和區段。
 
 ![](assets/rt_reduce70.png)

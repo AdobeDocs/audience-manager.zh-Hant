@@ -9,8 +9,8 @@ feature: Customer Data Feeds
 exl-id: a948accc-6bec-4748-bcc8-2b77acf6b96a
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '451'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 客戶資料摘要 (CDF) 檔案的常見問題集。
 
-## Amazon S3 儲存空間 {#amazon-s3-storage}
+## Amazon S3儲存空間 {#amazon-s3-storage}
 
 **我的 CDF 檔案儲存在 [!DNL Amazon] 上的何處？**
 
@@ -87,4 +87,3 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [客戶資料摘要](../features/cdf-files.md)
-

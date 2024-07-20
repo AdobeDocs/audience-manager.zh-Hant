@@ -3,26 +3,26 @@ description: 類別層級DILAPI可讓您以程式設計方式建立及使用Audi
 seo-description: The class-level DIL APIs let you programmatically create and work with Audience Manager objects. The class-level APIs work with the other instance-level functions to set values or return data.
 seo-title: Class-level DIL Methods
 solution: Audience Manager
-title: 類別層級 DIL 方法
+title: 類別層級DIL方法
 uuid: 903a661f-8871-4402-b9d6-acae920276cb
 feature: DIL Implementation
 source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 4%
+source-wordcount: '130'
+ht-degree: 0%
 
 ---
 
 
-# 類別層級 DIL 方法{#class-level-dil-methods}
+# 類別層級DIL方法{#class-level-dil-methods}
 
 >[!WARNING]
 >
->自2023年7月起，Adobe已停止開發 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 副檔名。
+>自2023年7月起，Adobe已停止開發[!DNL Data Integration Library (DIL)]和[!DNL DIL]擴充功能。
 >
->現有客戶可繼續使用其 [!DNL DIL] 實作。 不過，Adobe將不會開發 [!DNL DIL] 超出此點。 建議客戶評估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 長期資料收集策略的影響。
+>現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe在此點之後不會開發[!DNL DIL]。 建議客戶針對[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的長期資料收集策略進行評估。
 >
->如果客戶希望在2023年7月之後實作新的資料收集整合，則應使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而非。
+>如果客戶希望在2023年7月之後實作新的資料收集整合，則應改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
 
 

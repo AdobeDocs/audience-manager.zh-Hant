@@ -1,5 +1,5 @@
 ---
-description: 本文介紹如何從Audience Manager用戶介面配置新的基於設備的目標。
+description: 本文說明如何從Audience Manager使用者介面設定新的以裝置為基礎的目的地。
 seo-description: This article explains how to configure new device-based destinations from the Audience Manager user interface.
 seo-title: Add New Device-Based Destinations
 solution: Audience Manager
@@ -8,58 +8,58 @@ feature: Destination Basics
 exl-id: c5d7de2e-085d-48b9-a596-381503c79f55
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 3%
+source-wordcount: '420'
+ht-degree: 2%
 
 ---
 
 # 新增以裝置為基礎的目的地 {#add-new-device-based-destinations}
 
-本文介紹如何從Audience Manager用戶介面配置新的基於設備的目標。
+本文說明如何從Audience Manager使用者介面設定新的以裝置為基礎的目的地。
 
 >[!IMPORTANT]
 >
->目前，大多數基於設備的目標不符合自助服務配置工作流的條件。 如果您需要添加的基於設備的目標未顯示在目標清單中，請與Adobe顧問或客戶支援聯繫以獲得幫助。
+>目前，大部分以裝置為基礎的目的地不符合自助服務設定工作流程的資格。 如果目的地清單未顯示您需要新增的以裝置為基礎的目的地，請聯絡您的Adobe顧問或客戶支援以尋求協助。
 
 ## 概述 {#overview}
 
-添加新的基於設備的目的地的過程包括兩個主要步驟。 首先，您需要配置Audience Manager與目標合作夥伴之間的整合。 完成此操作後，可以建立新的基於設備的目標。
+新增以裝置為基礎之目的地的程式包含兩個主要步驟。 首先，您需要設定Audience Manager與目的地合作夥伴之間的整合。 完成此操作後，您可以建立以裝置為基礎的新目的地。
 
-## 必要條件 {#prerequisites}
+## 必備條件 {#prerequisites}
 
-在使用整合平台建立第一個基於設備的目標時，請聯繫Adobe咨詢或客戶服務部門，以便為您的客戶啟用Audience Manager和整合平台之間的ID同步。 這是Audience Manager與目標平台之間正確同步所必需的。
+使用整合平台建立第一個以裝置為基礎的目的地時，請聯絡Adobe Consulting或客戶服務，為您的帳戶啟用Audience Manager與整合平台之間的ID同步。 這是Audience Manager與目的地平台之間正確同步的必要條件。
 
-## 步驟 1. 使用目標平台進行身份驗證 {#step1}
+## 步驟 1.使用目的地平台進行驗證 {#step1}
 
-在建立新的基於設備的目標之前，您需要配置Audience Manager與目標平台之間的整合。 下面是如何做到的：
+建立以裝置為基礎的新目的地之前，您需要先設定Audience Manager與目的地平台之間的整合。 以下是其操作方式：
 
-1. 登錄到您的Audience Manager帳戶，然後轉到 **[!DNL Administration > Integrated Accounts]**。 如果您以前配置了與目標平台的整合，則應在此頁中列出該整合。 否則，頁面為空。
-1. 按一下 **[!DNL Add Account]**.
-1. 選擇要驗證的目標平台，然後按一下 **[!DNL Confirm]** 重定向到所選平台的驗證頁面。
+1. 登入您的Audience Manager帳戶並移至&#x200B;**[!DNL Administration > Integrated Accounts]**。 如果您先前設定好與目的地平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
+1. 按一下 **[!DNL Add Account]**。
+1. 選取您要驗證的目的地平台，然後按一下&#x200B;**[!DNL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
 
    ![整合平台](assets/dbd-integrated-platforms.png)
 
-1. 一旦您已經通過目標平台帳戶的身份驗證，您將被重定向到Audience Manager，您應該在該區域查看相關的廣告商帳戶。 選擇要使用的廣告商帳戶，然後按一下 **[!DNL Confirm]**。
+1. 在您驗證目的地平台帳戶後，系統會將您重新導向至Audience Manager，您應可在其中檢視相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!DNL Confirm]**。
 
-## 步驟 2.建立新的基於設備的目標 {#step2}
+## 步驟 2.建立以裝置為基礎的新目的地 {#step2}
 
-配置目標平台整合後，可以建立新目標。 下面是如何做到的：
+設定完目的地平台整合後，您就可以建立新的目的地。 以下是其操作方式：
 
 >[!NOTE]
 >
->不能更改現有基於設備的目標的名稱。 確保提供有助於正確標識目標的名稱。
+>您無法變更現有的以裝置為基礎的目的地名稱。 請務必提供有助於您正確識別目的地的名稱。
 
-1. 登錄到Audience Manager帳戶，轉到 **[!DNL Audience Data > Destinations]**，然後按一下 **[!DNL Create Destination]**。
-1. 在 **[!DNL Basic Information]** 部分，輸入 **[!DNL Name]** 和 **[!DNL Description]** 用於新目標，並使用以下清單中的設定：
+1. 登入您的Audience Manager帳戶，前往&#x200B;**[!DNL Audience Data > Destinations]**，然後按一下&#x200B;**[!DNL Create Destination]**。
+1. 在&#x200B;**[!DNL Basic Information]**&#x200B;區段中，輸入您新目的地的&#x200B;**[!DNL Name]**&#x200B;和&#x200B;**[!DNL Description]**，並使用下列清單中的設定：
 
-   ![設定](assets/dbd-new-basic.png)
+   ![安裝程式](assets/dbd-new-basic.png)
 
-   * **[!DNL Category]**: [!DNL Integrated Platforms];
-   * **[!DNL Type]**: [!DNL Device-Based];
-   * **[!DNL Platform]**:選擇要將受眾段發送到的目標平台。
-   * **[!DNL Account]**:選擇與所選平台關聯的所需廣告商帳戶。
-1. 按一下 **[!DNL Next]**.
-1. 選擇 [資料導出標籤](/help/using/features/data-export-controls.md#controls-labels) 要為此目標設定。
-1. 按一下 **[!DNL Save]**.
-1. 在 **[!DNL Segment Mappings]** 部分，選擇要發送到此目標的受眾段。
-1. 保存目標。
+   * **[!DNL Category]**： [!DNL Integrated Platforms]；
+   * **[!DNL Type]**： [!DNL Device-Based]；
+   * **[!DNL Platform]**：選取您要傳送對象區段的目的地平台。
+   * **[!DNL Account]**：選取與所選平台相關聯的所需廣告商帳戶。
+1. 按一下 **[!DNL Next]**。
+1. 選擇要為此目的地設定的[資料匯出標籤](/help/using/features/data-export-controls.md#controls-labels)。
+1. 按一下 **[!DNL Save]**。
+1. 在&#x200B;**[!DNL Segment Mappings]**&#x200B;區段中，選取您要傳送至此目的地的對象區段。
+1. 儲存目的地。

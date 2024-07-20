@@ -3,14 +3,14 @@ description: 本文件說明在 Audience Manager 中控管客戶資料的方式�
 seo-description: TThis document explains how customer data is governed in Audience Manager.
 seo-title: Data Governance
 solution: Audience Manager
-keywords: GDPR UI 、 GDPR API 、 CCPA 、隱私、同意、混淆、治理
+keywords: GDPR UI， GDPR API， CCPA，隱私權，同意，模糊化，治理
 title: 資料控管
 feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 94%
+source-wordcount: '451'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 Audience Manager 中的資料控管指的是 Audience Manager 中客戶資料的生命週期，其中包括[收集和模糊化 IP 位址](data-governance.md#collecting-ip-addresses)、[資料保留](data-governance.md#data-retention)以及[跨境資料傳輸](data-governance.md#data-transfers)。
 
-## 收集 IP 位址和 IP 位址模糊化 {#collecting-ip-addresses}
+## 收集IP位址和IP位址模糊化 {#collecting-ip-addresses}
 
 前往客戶網站的訪客 [!DNL IP] 位址會傳送至 Adobe [!DNL Data Processing Center] ([!DNL DPC])，且可能在此儲存該 [!DNL IP] 位址。視訪客的網路設定而定，此 [!DNL IP] 位址不一定代表訪客電腦的 [!DNL IP] 位址。例如，該 [!DNL IP] 位址可能是網路位址轉譯 (NAT) 防火牆、[!DNL HTTP] Proxy 或網際網路閘道的外部 [!DNL IP] 位址。
 
@@ -31,7 +31,7 @@ Audience Manager 中的資料控管指的是 Audience Manager 中客戶資料的
 
 >[!NOTE]
 >
->請參閱 [IP地址混淆](../../features/administration/ip-obfuscation.md) 瞭解如何啟用 [!DNL IP] Audience Manager用戶介面中的地址混淆。
+>請參閱[IP位址模糊化](../../features/administration/ip-obfuscation.md)，瞭解如何啟用Audience Manager使用者介面中的[!DNL IP]位址模糊化。
 
 請觀看以下影片，瞭解 [!DNL IP] 位址模糊化在 Audience Manager 中的運作方式。
 
@@ -39,7 +39,7 @@ Audience Manager 中的資料控管指的是 Audience Manager 中客戶資料的
 
 **地理細分：**&#x200B;如果您啟用 [!DNL IP] 位址模糊化功能，[!DNL IP] 位址的其餘幾個八位元仍可用於 Audience Manager 中的地理細分和報表。如果您未啟用 [!DNL IP] 位址模糊化功能，Audience Manager 會使用完整的 [!DNL IP] 位址。在任何情況下，您都可以使用「地理細分」功能，依地理區域識別 [!DNL IP] 位置，但在使用 [!DNL IP] 模糊化的情況下精確度會略為降低。[!DNL IP] 位址模糊化可能會顯著影響城市層級資訊的取得。地區和國家層級資訊則只會受到輕微影響。地理細分資料的詳細程度只到城市層級或郵遞區號層級，不到個人層級。進一步瞭解[地理目標定位](../../features/traits/trait-geotarget-keys.md)，以及如何使用地理變數設定特徵。
 
-## Audience Manager 中的資料保留 {#data-retention}
+## Audience Manager中的資料保留 {#data-retention}
 
 對您的資料套用適當、安全且及時的資料保留政策，是遵守資料隱私權法規的重要一環。Audience Manager 客戶可定義所需的 TTL (存留時間)，以設定特徵和區段的自訂保留期。如需保留期的詳細資訊，請參閱[資料保留常見問題集](../../faq/faq-privacy.md)。
 

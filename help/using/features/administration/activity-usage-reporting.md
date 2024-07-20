@@ -1,6 +1,6 @@
 ---
-description: 活動使用情況報告可幫助您查看和跟蹤Audience Manager實例的活動使用情況，以便您可以將實際使用情況與合同承諾進行比較。
-keywords: 活動，用法，報告，承諾
+description: 活動使用情況報告可幫助您檢視和追蹤Audience Manager例項的活動使用情況，以便您可以將實際使用情況與合約承諾進行比較。
+keywords: 活動，使用量，報告，承諾
 seo-description: Activity Usage Reporting helps you view and track the activity usage for your Audience Manager instance, so you can compare your actual usage to your contractual commitment.
 seo-title: Activity Usage Reporting
 solution: Audience Manager
@@ -9,7 +9,7 @@ feature: Usage and Billing
 exl-id: 0c5f04c6-d008-4817-9c67-cd39350b3aaf
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '638'
 ht-degree: 5%
 
 ---
@@ -20,68 +20,68 @@ ht-degree: 5%
 
 [!UICONTROL Activity Usage Report] 可協助您檢視及追蹤 Audience Manager 例項的活動使用情況，讓您清楚瞭解活動使用情況與合約承諾的比較情形。
 
-此外，您還可以下載 [!UICONTROL Activity Usage Report] 需要時，進行記錄保留和自定義分析。
+此外，您隨時都可以下載[!UICONTROL Activity Usage Report]，以保留記錄和自訂分析。
 
 ## 考量事項 {#considerations}
 
-的 [!UICONTROL Activity Usage Report] 可供所有Audience Manager使用 [管理員權限](edit-account-settings.md)。
+[!UICONTROL Activity Usage Report]可供具有[系統管理員許可權](edit-account-settings.md)的所有Audience Manager使用者使用。
 
 >[!IMPORTANT]
 >
->的 [!UICONTROL Activity Usage Report] 顯示Audience Manager實例的活動使用情況統計資訊。 有關活動使用情況的任何開單查詢，請聯繫您的Adobe代表。
+>[!UICONTROL Activity Usage Report]會顯示Audience Manager執行個體的活動使用統計資料。 如需與您的活動使用方式相關的任何計費查詢，請聯絡您的Adobe代表。
 
 ## 使用個案 {#use-cases}
 
-有兩個主要用例 [!UICONTROL Activity Usage Report]:
+[!UICONTROL Activity Usage Report]有兩個主要使用案例：
 
-* **根據活動使用情況承諾跟蹤實際實例活動使用情況**:大多數客戶每個Audience Manager實例都有每月估計的活動承諾，然後將其累計到所有實例的每年活動承諾中。 雖然此報告不是開單報告，但它可以提供有關您是否超過已承諾活動使用情況的有用指導。
-* **驗證實施更改**:如果您最近更新了實施，例如設定 [!DNL Adobe Analytics] 伺服器端轉發，或更改 [!DNL Adobe Target] 伺服器調用設定，此報告可幫助您檢查新活動卷是否與預期活動卷一致。
+* **根據您的活動使用量承諾追蹤實際執行個體活動使用量**：大多數客戶具有每個Audience Manager執行個體的每月估計活動承諾使用量，然後累積到所有執行個體的每年活動承諾使用量。 雖然此報告不是計費報告，但可提供關於您是否超過認可活動使用量的實用指引。
+* **驗證實作變更**：如果您最近更新了實作，例如設定[!DNL Adobe Analytics]伺服器端轉送或變更[!DNL Adobe Target]伺服器呼叫設定，此報表可協助您檢查新的活動磁碟區是否與預期的活動磁碟區一致。
 
-## 在連結中使用 [!UICONTROL Activity Usage Report] {#using}
+## 使用[!UICONTROL Activity Usage Report] {#using}
 
-查看 [!UICONTROL Activity Usage Report]，登錄到您的Audience Manager帳戶，然後轉到 **[!UICONTROL Administration]** > **[!UICONTROL Usage]**。
+若要檢視[!UICONTROL Activity Usage Report]，請登入您的Audience Manager帳戶，然後前往&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Usage]**。
 
-![奧爾伊](assets/aur-ui.png)
+![aur-ui](assets/aur-ui.png)
 
-接下來，使用 **[!UICONTROL Reporting Interval]** 篩選器，以選擇生成報告的時間間隔。 您可以選擇30天、60天、90天或自定義日期範圍。
+接下來，使用&#x200B;**[!UICONTROL Reporting Interval]**&#x200B;篩選器來選取產生報告的時間間隔。 您可以選擇30、60、90天或自訂日期範圍。
 
-一旦載入報表，您就可以看到 [!UICONTROL Activities] 的下界。
+報告載入後，您就能看到所選期間的[!UICONTROL Activities]劃分。
 
-[!UICONTROL Activities] 定義與Audience Manager的所有現場和異地交互的總計，分為以下類別：
+[!UICONTROL Activities]定義與Audience Manager的所有站上和離站互動的總計，分為下列類別：
 
-* **[!UICONTROL Server Calls]**:從網站、伺服器、電子郵件、移動應用程式或其他系統發送到Audience Manager的任何資料收集或檢索事件。
-* **[!UICONTROL Pixel Calls](前稱 [!UICONTROL Impression Server Calls])**:從廣告（例如目標平台的印象卷）或向Audience Manager發送的電子郵件印象呼叫中收集的資料。 這要求 `d_event` 查詢字串中的參數。
-* **[!UICONTROL On-Boarded Records]**:從您自己的客戶關係管理系統(CRM)或其他離線資料檔案（如呼叫中心記錄、設備ID和來自外部資料提供商的自定義資料饋送）中攝取的唯一記錄。
-* **[!UICONTROL Log File Records]**:從目標平台接收到Audience Manager的日誌檔案中的唯一記錄。
+* **[!UICONTROL Server Calls]**：從網站、伺服器、電子郵件、行動應用程式或其他系統傳送給Audience Manager的任何資料收集或擷取事件。
+* **[!UICONTROL Pixel Calls]（先前稱為[!UICONTROL Impression Server Calls]）**：從廣告收集的資料（例如來自目標平台的曝光量）或向Audience Manager發出的電子郵件曝光呼叫。 這些需要在查詢字串中存在`d_event`引數。
+* **[!UICONTROL On-Boarded Records]**：從您自己的客戶關係管理系統(CRM)或其他離線資料檔擷取的不重複記錄，例如客服中心記錄、裝置ID以及來自外部資料提供者的自訂資料摘要。
+* **[!UICONTROL Log File Records]**：從目標平台擷取到Audience Manager之記錄檔的唯一記錄。
 
 >[!NOTE]
 >
->唯一記錄定義了代表Audience Manager客戶Adobe儲存的檔案中資料的每個單獨記錄。
+>唯一記錄會定義Adobe代表Audience Manager客戶儲存之檔案中的每一筆資料記錄。
 
-此外，您還可以 [!UICONTROL Activity Usage Trends] 圖形類型以在兩種類型的圖形之間切換。
+此外，您可以使用[!UICONTROL Activity Usage Trends]圖表型別，在兩個圖表型別之間切換。
 
-![aur-ui圖](assets/aur-ui-graphs.png)
+![aur-ui-graphs](assets/aur-ui-graphs.png)
 
-您還可以將游標懸停在時間軸中的特定日期上，以查看該日期的詳細用法。
+您也可以將游標暫留在時間軸中的特定日期上，以檢視該日期的詳細使用情形。
 
-![阿爾沃](assets/aur-hover.png)
+![aur-hover](assets/aur-hover.png)
 
-## 導出 [!UICONTROL Activity Usage Reports] {#export}
+## 正在匯出[!UICONTROL Activity Usage Reports] {#export}
 
-要更好地概述Audience Manager活動使用級別，您可以導出 [!UICONTROL Activity Usage Report] 基於要包括的記錄類型。
+如需您的Audience Manager活動使用層級的更佳概觀，您可以根據要包含的記錄型別匯出[!UICONTROL Activity Usage Report]。
 
-![aur-export](assets/aur-export.png)
+![自動匯出](assets/aur-export.png)
 
-的 **[!UICONTROL Onboarded Records Breakdown]** 和 **[!UICONTROL Onsite Server Calls Breakdown]** 報告提供了這些活動可用的源資料的最精確的洞察。 由這些故障造成的卷基於您的實施。
+**[!UICONTROL Onboarded Records Breakdown]**&#x200B;和&#x200B;**[!UICONTROL Onsite Server Calls Breakdown]**&#x200B;報告可提供這些活動可用來源資料的最精細分析。 歸因到這些劃分的磁碟區會以您的實施為基礎。
 
 ### [!UICONTROL Onboarded Records Breakdown] {#onboarded-breakdown}
 
-此報表包含按資料源細分的已登錄記錄。
+此報表包含依資料來源劃分的已上線記錄。
 
 ### [!UICONTROL Onsite Server Calls Breakdown] {#onsite-breakdown}
 
-此報表包含來自以下三個來源的伺服器調用的細分： [!UICONTROL Analytics]。 [!UICONTROL Target], [!UICONTROL Other]。
+此報表包含來自三個來源的伺服器呼叫劃分： [!UICONTROL Analytics]、[!UICONTROL Target]及[!UICONTROL Other]。
 
-* **[!UICONTROL Analytics]**:這些是從所有 [!UICONTROL Adobe Analytics] 實例到Audience Manager，包括伺服器端轉發。 從屬伺服器呼叫或重複伺服器呼叫（如從多個報告套件進行伺服器端轉發）不是可計費活動，因此這些活動不包括在此細分中。
-* **[!UICONTROL Target]**:這些是來自 [!UICONTROL Adobe Target] 要Audience Manager，請檢索Audience Manager段資料，將其作為伺服器到伺服器整合的一部分。
-* **[!UICONTROL Other]**:包括來自任何其他網站或系統（合作夥伴站點、直接伺服器呼叫等）的呼叫、通過 [!DNL SDK]。 [!DNL DIL]、事件調用和 [!DNL DCS] 呼叫。 還包括來自 [!DNL Target] 設定為cookie整合（而不是伺服器到伺服器）。
+* **[!UICONTROL Analytics]**：這些是從所有[!UICONTROL Adobe Analytics]執行個體傳遞到Audience Manager的可計費伺服器呼叫，包括伺服器端轉送。 次要伺服器呼叫或重複的伺服器呼叫（如來自多個報表套裝的伺服器端轉送）不徵收費用，因此這些呼叫不會包含在此劃分中。
+* **[!UICONTROL Target]**：這些是從[!UICONTROL Adobe Target]到Audience Manager的伺服器端呼叫，用於擷取Audience Manager區段資料，做為伺服器對伺服器整合的一部分。
+* **[!UICONTROL Other]**：包含來自任何其他網站或系統（合作夥伴網站、直接伺服器呼叫等）的呼叫、透過[!DNL SDK]、[!DNL DIL]、事件呼叫和[!DNL DCS]呼叫的行動瀏覽器/應用程式呼叫。 如果設定為Cookie整合（而非伺服器對伺服器），也會包含來自[!DNL Target]的呼叫。

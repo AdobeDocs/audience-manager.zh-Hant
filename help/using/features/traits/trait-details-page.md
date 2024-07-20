@@ -1,88 +1,88 @@
 ---
-description: 單個特徵的詳細資訊頁面提供了特徵名稱、ID、效能度量、定義特徵的表達式、其所屬段和特徵審核日誌等資訊的概述。 要查看這些詳細資訊，請轉至「受眾資料」>「特徵」，然後按一下要使用的特徵的名稱。
+description: 個別特徵的詳細資訊頁面提供特徵名稱、ID、效能測量結果、定義特徵的運算式、其所屬區段及特徵稽核記錄檔等資訊的總覽。 若要檢視這些詳細資訊，請前往「對象資料>特徵」 ，然後按一下您要使用之特徵的名稱。
 seo-description: The details page for an individual trait provides overview of information like the trait name, ID, performance metrics, expressions that define the trait, segments it belongs to, and the trait audit log. To vew these details, go to Audience Data > Traits and click the name of the trait you want to work with.
 seo-title: Trait Details Page
 solution: Audience Manager
-title: 特徵詳細資料頁面
+title: 特徵詳細資訊頁面
 uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
-keywords: 標識類型分解、標識分解、受眾身份報告、跨設備、跨設備ID、設備ID
+keywords: 身分型別劃分、身分劃分、對象身分報告、跨裝置、跨裝置ID、裝置ID
 feature: Traits
 exl-id: c0b4791f-885e-4b14-b7e8-3c2d618fb80e
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Trait] 詳細資訊頁 {#trait-details-page}
+# [!UICONTROL Trait]詳細資料頁面 {#trait-details-page}
 
-個人的詳細資訊頁面 [!UICONTROL trait] 提供了 [!UICONTROL trait] 詳細資訊，如 [!UICONTROL trait] 名稱、ID、效能度量、定義 [!UICONTROL trait]、它所屬的段，以及 [!UICONTROL trait] 審核日誌。 要查看這些詳細資訊，請轉至 **[!UICONTROL Audience Data]** > **[!UICONTROL Traits]** 並按一下 [!UICONTROL trait] 你想一起工作。
+個別[!UICONTROL trait]的詳細資訊頁面提供[!UICONTROL trait]詳細資訊的概觀，例如[!UICONTROL trait]名稱、ID、效能測量結果、定義[!UICONTROL trait]的運算式、它所屬的區段以及[!UICONTROL trait]稽核記錄。 若要檢視這些詳細資料，請前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**，然後按一下您要使用的[!UICONTROL trait]的名稱。
 
-## [!UICONTROL Trait] 管理工具 {#trait-management-tools}
+## [!UICONTROL Trait]管理工具 {#trait-management-tools}
 
-頂部 [!UICONTROL trait] 「詳細資訊」頁承載了可用於管理 [!UICONTROL traits]:
+[!UICONTROL trait]詳細資訊頁面頂端裝載了可用來管理[!UICONTROL traits]的工具：
 
-1. **[!UICONTROL Add New]**:使用此選項建立新 [!UICONTROL rule-based]。 [!UICONTROL algorithmic]或 [!UICONTROL onboarded traits]。
-2. **[!UICONTROL Edit]**:使用此選項可更改當前配置 [!UICONTROL trait]。
-3. **[!UICONTROL Delete]**:使用此選項刪除當前 [!UICONTROL trait] 你的Audience Manager賬戶。
-4. **[!UICONTROL Marketplace Recommendations]**:使用此選項查找類似 [!UICONTROL traits] 到你看的那個 [!UICONTROL Audience Marketplace] 您未訂閱的資料費用。 請參閱 [Audience Marketplace資料購買者](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md) 學習如何導航 [!UICONTROL Marketplace] 找到相似的特徵。
+1. **[!UICONTROL Add New]**：使用此選項來建立新的[!UICONTROL rule-based]、[!UICONTROL algorithmic]或[!UICONTROL onboarded traits]。
+2. **[!UICONTROL Edit]**：使用此選項來變更目前[!UICONTROL trait]的組態。
+3. **[!UICONTROL Delete]**：使用此選項從您的Audience Manager帳戶移除目前的[!UICONTROL trait]。
+4. **[!UICONTROL Marketplace Recommendations]**：使用此選項可尋找與您檢視的類似[!UICONTROL traits]，來自您未訂閱的[!UICONTROL Audience Marketplace]資料費用。 請參閱資料購買者的[Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，瞭解如何導覽[!UICONTROL Marketplace]並尋找類似特徵。
 
 ![基本特徵資訊](assets/basic-trait-information.png)
 
-## [!UICONTROL Trait] 資訊 {#basics}
+## [!UICONTROL Trait]資訊 {#basics}
 
-的 [!UICONTROL Trait Information] 部分顯示有關生成時完成的必需欄位和可選欄位的詳細資訊 [!UICONTROL trait]。 這包括 [!UICONTROL trait] 類型 [!UICONTROL trait] ID，描述， [!UICONTROL data source]、和其他元資料。 這些詳細資訊因 [!UICONTROL trait] 類型([!UICONTROL folder]。 [!UICONTROL onboarded]或 [!UICONTROL rule-based])。
+[!UICONTROL Trait Information]區段顯示您在建置[!UICONTROL trait]時完成的必要和選用欄位的詳細資料。 這包括[!UICONTROL trait]型別、[!UICONTROL trait] ID、說明、[!UICONTROL data source]和其他中繼資料等內容。 這些詳細資料視[!UICONTROL trait]型別（[!UICONTROL folder]、[!UICONTROL onboarded]或[!UICONTROL rule-based]）而定。
 
 ## [!UICONTROL Trait Graph] {#trait-graph}
 
-的 [!UICONTROL Trait Graph] 提供所選效能指標的概覽 [!UICONTROL trait]。 將游標置於趨勢線上，以查看所選資料的其他資料 [!UICONTROL trait]。
+[!UICONTROL Trait Graph]提供您選定[!UICONTROL trait]的績效量度一覽。 將游標停留在趨勢線上，即可檢視所選[!UICONTROL trait]的其他資料。
 
-[!UICONTROL Unique Trait Realizations] 表示添加此項的唯一用戶數 [!UICONTROL trait] 在給定時間範圍內記錄。 的 [!UICONTROL Total Trait Population] 指示當前為此限定的唯一用戶數 [!UICONTROL trait]。
+[!UICONTROL Unique Trait Realizations]代表在指定時間範圍內將此[!UICONTROL trait]新增到其設定檔的不重複使用者計數。 [!UICONTROL Total Trait Population]表示目前符合此[!UICONTROL trait]資格的不重複使用者數目。
 
-對於 [!UICONTROL rule-based traits]。 [!UICONTROL trait] 資格認證是即時的，因為用戶有資格獲得 [!UICONTROL trait] 瀏覽器。
+針對[!UICONTROL rule-based traits]，[!UICONTROL trait]資格會即時進行，因為使用者在其瀏覽器中符合[!UICONTROL trait]的資格。
 
-對於 [!UICONTROL onboarded traits]。 [!UICONTROL trait] 在處理入站檔案（即入站檔案）後進行限定 [餵入Audience Manager](../../faq/faq-inbound-data-ingestion.md) 那時 [!UICONTROL trait] 資格發生。
+針對[!UICONTROL onboarded traits]，[!UICONTROL trait]資格會在處理傳入檔案之後發生，亦即傳入檔案是[饋送至Audience Manager](../../faq/faq-inbound-data-ingestion.md)，且此時會發生[!UICONTROL trait]資格。
 
-的 [!UICONTROL Trait Graph] 顯示以下資訊：
+[!UICONTROL Trait Graph]會顯示下列資訊：
 
 * **[!UICONTROL Show results by]**
-   * **[!UICONTROL Cross-Device ID]**:選擇此選項可查看結果 [!UICONTROL traits] 正在為已驗證的配置檔案收集資料。 選擇此選項時，您只能看到 [!UICONTROL Cross-Device ID] 報告，而且在 [!UICONTROL Device ID] 報告。
-   * **[!UICONTROL Device ID]**:選擇此選項可查看結果 [!UICONTROL traits] 正在收集設備配置檔案的資料。 選擇此選項時，您只能看到 [!UICONTROL Device ID] 報告，而且在 [!UICONTROL Cross-Device ID] 報告。
+   * **[!UICONTROL Cross-Device ID]**：選取此選項可檢視[!UICONTROL traits]收集已驗證設定檔資料的結果。 當您選取此選項時，您只會在[!UICONTROL Cross-Device ID]報表上看到資料，而[!UICONTROL Device ID]報表下不會出現任何資料。
+   * **[!UICONTROL Device ID]**：選取此選項可檢視[!UICONTROL traits]收集裝置設定檔資料的結果。 當您選取此選項時，您只會在[!UICONTROL Device ID]報表上看到資料，而[!UICONTROL Cross-Device ID]報表下不會出現任何資料。
 
-      ![特徵圖](assets/trait-summary.gif)
+     ![特徵圖](assets/trait-summary.gif)
 
-* **[!UICONTROL Unique Trait Realizations]**:添加此項的唯一用戶計數 [!UICONTROL trait] 在給定時間範圍內記錄。
-* **[!UICONTROL Total Trait Population]**:當前符合此條件的唯一用戶數 [!UICONTROL trait]。
+* **[!UICONTROL Unique Trait Realizations]**：在指定時間範圍內將此[!UICONTROL trait]新增到其設定檔的不重複使用者計數。
+* **[!UICONTROL Total Trait Population]**：目前符合此[!UICONTROL trait]資格的不重複使用者數目。
 
-* **[!UICONTROL Identity Type Breakdown]**:前三個條目顯示前三個 [!UICONTROL cross-device data sources] 人口數量最高，符合 [!UICONTROL trait]，按降序排列。 第四個條目顯示所有其他條目的總和 [!DNL DPUUIDs] ([!DNL CRM IDs]) [!UICONTROL trait]，也請參見Wiki頁。 [!UICONTROL cross-device data sources] 不在前三名。 僅當您選擇 [!UICONTROL Cross-device ID] 的 [!UICONTROL Show Results By] 下拉菜單。 預設下拉選項為 [!UICONTROL Device ID]，其中不顯示此報告。
+* **[!UICONTROL Identity Type Breakdown]**：前三個專案以遞減順序顯示符合[!UICONTROL trait]資格且母體計數最高的前三個[!UICONTROL cross-device data sources]。 第四個專案顯示來自[!UICONTROL cross-device data sources]且非前三個專案之所有其他[!DNL DPUUIDs] ([!DNL CRM IDs])符合[!UICONTROL trait]資格的總和。 只有在頁面右上方的[!UICONTROL Show Results By]下拉式功能表中選取[!UICONTROL Cross-device ID]時，此報表才會出現。 預設下拉式選項為[!UICONTROL Device ID]，其中不會顯示此報表。
 
-   ![特徵圖](assets/trait-identity.png)
+  ![特徵圖](assets/trait-identity.png)
 
-   >[!NOTE]
-   >
-   >Audience Manager僅顯示 [!UICONTROL Identity Type Breakdown] 報告 [!UICONTROL cross-device] 符合的ID [!UICONTROL trait]。
+  >[!NOTE]
+  >
+  >若您有[!UICONTROL cross-device]個ID符合[!UICONTROL trait]的資格，Audience Manager僅會顯示[!UICONTROL Identity Type Breakdown]報告。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/27977/)
+  >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
-## [!UICONTROL Trait] 運算式 {#trait-expression}
+## [!UICONTROL Trait]運算式 {#trait-expression}
 
-的 [!UICONTROL Trait Expression] 部分顯示用戶必須滿足的條件以符合 [!UICONTROL trait]。 這些規則是在您 [建立或編輯特徵](../../features/traits/about-trait-builder.md)。
+[!UICONTROL Trait Expression]區段顯示使用者必須符合的條件才符合[!UICONTROL trait]。 這些規則是在您[建立或編輯特徵](../../features/traits/about-trait-builder.md)時設定。
 
 ![](assets/traitExpression.png)
 
 ## [!UICONTROL Trait] 區段 {#trait-segments}
 
-的 [!UICONTROL Segments with this Trait] 部分列出選定的所有段 [!UICONTROL trait] 屬於。 可按一下段名稱以查看有關該段的詳細資訊。
+[!UICONTROL Segments with this Trait]區段列出所選[!UICONTROL trait]所屬的所有區段。 您可以按一下區段名稱來檢視該區段的詳細資訊。
 
 ![](assets/traitSegments.png)
 
-## [!UICONTROL Trait] 審核/歷史記錄日誌 {#trait-audit-history}
+## [!UICONTROL Trait]稽核/記錄檔 {#trait-audit-history}
 
-對於 [!UICONTROL rule-based] 和 [!UICONTROL onboarded traits]，也請參見Wiki頁。 [!UICONTROL Trait Expression Change History] 顯示您對 [!UICONTROL trait] 表達式規則，以及誰制定了規則。 如果 [!UICONTROL trait] 有10多個更改，請按一下 **[!UICONTROL Export to CSV]** 下載整個審核日誌。 審核日誌不可用於 [!UICONTROL folder] 或 [!UICONTROL algorithmic traits]。
+針對[!UICONTROL rule-based]與[!UICONTROL onboarded traits]，[!UICONTROL Trait Expression Change History]會顯示您對[!UICONTROL trait]運算式規則所做的最後10項變更以及這些變更的作者。 如果您的[!UICONTROL trait]有超過10個變更，請按一下&#x200B;**[!UICONTROL Export to CSV]**&#x200B;以下載整個稽核記錄。 [!UICONTROL folder]或[!UICONTROL algorithmic traits]無法使用稽核記錄。
 
 >[!NOTE]
 >
->[!UICONTROL Not Available] 的 [!UICONTROL By User] column表示該用戶的帳戶已被刪除。
+>[!UICONTROL By User]欄中的[!UICONTROL Not Available]表示該使用者的帳戶已刪除。
 
 ![](assets/traitHistory.png)

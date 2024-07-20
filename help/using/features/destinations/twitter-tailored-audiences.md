@@ -1,88 +1,88 @@
 ---
-description: 本文介紹如何為新整合和現有整合配置Twitter定制受眾。
+description: 本文說明如何設定Twitter自訂對象的新整合和現有整合。
 seo-description: This article explains how to configure Twitter Custom Audiences for both new and existing integrations.
 seo-title: Configure Twitter Custom Audiences as a Self-Service Device-Based Destination
 solution: Audience Manager
-title: 將Twitter自定義受眾配置為基於設備的自助服務目標
+title: 將Twitter自訂對象設定為自助式以裝置為基礎的目的地
 feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
 source-git-commit: 72be9e032ec3c92cf09a5286baa872b884feaaa0
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '689'
 ht-degree: 1%
 
 ---
 
-# 配置 [!DNL Twitter Custom Audiences] 作為基於自助設備的目標 {#configure-twitter}
+# 將[!DNL Twitter Custom Audiences]設定為自助式以裝置為基礎的目的地 {#configure-twitter}
 
-本文介紹如何配置與 [Twitter定制觀眾](https://business.twitter.com/en/help/campaign-setup/campaign-targeting/custom-audiences.html)。
+本文說明如何設定與[Twitter自訂對象](https://business.twitter.com/en/help/campaign-setup/campaign-targeting/custom-audiences.html)的整合。
 
-## 必要條件 {#prerequisites}
+## 必備條件 {#prerequisites}
 
-在配置之前 [!DNL Twitter Custom Audiences] 目標，確保滿足以下先決條件。
+設定[!DNL Twitter Custom Audiences]目的地之前，請確定您符合下列必要條件。
 
-* 您 [!DNL Twitter Ads] 帳戶必須符合廣告資格。 新建 [!DNL Twitter Ads] 帳戶在建立後的頭2週內無資格獲得廣告。
-* 您 [!DNL Twitter] 在Audience Manager中授權訪問的用戶帳戶必須具有 [合作夥伴受眾經理](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels) 權限已啟用。
-* 建立第一個 [!DNL Twitter Custom Audiences] 目標，請聯繫Adobe咨詢或客戶服務以啟用Audience Manager實例 [!DNL Twitter] 帳戶的ID同步（資料源ID = 1123）。 這是在Audience Manager和 [!DNL Twitter]。
+* 您的[!DNL Twitter Ads]帳戶必須符合廣告資格。 新[!DNL Twitter Ads]帳戶在建立後的前2週內不符合廣告資格。
+* 您在Audience Manager中授權存取的[!DNL Twitter]使用者帳戶必須啟用[合作夥伴對象管理員](https://business.twitter.com/en/help/troubleshooting/multi-user-login-faq.html#accesslevels)許可權。
+* 在您的Audience Manager執行個體中建立第一個[!DNL Twitter Custom Audiences]目的地時，請聯絡Adobe Consulting或客戶服務，為您的帳戶啟用[!DNL Twitter] ID同步(資料Source ID = 1123)。 這是Audience Manager與[!DNL Twitter]之間正確同步處理所必需的。
 
-## 添加新 [!DNL Twitter Custom Audiences] 目標 {#add-new-twitter-destination}
+## 新增新的[!DNL Twitter Custom Audiences]目的地 {#add-new-twitter-destination}
 
-本節介紹在為配置新的基於設備的目標時需要遵循的步驟 [!DNL Twitter Custom Audiences]。 此方案假定您沒有現有 [!DNL Twitter Custom Audiences] 通過您的Adobe顧問或客戶服務配置的目標。
+本節說明為[!DNL Twitter Custom Audiences]設定以裝置為基礎的新目的地時，必須遵循的步驟。 此情境假設您沒有透過Adobe顧問或客戶服務設定的現有[!DNL Twitter Custom Audiences]目的地。
 
-### 步驟 1. 驗證 [!DNL Twitter Custom Audiences] {#step1-authenticate-with-twitter}
+### 步驟 1.使用[!DNL Twitter Custom Audiences]進行驗證 {#step1-authenticate-with-twitter}
 
-在添加基於設備的目標之前，您需要將Audience Manager與 [!DNL Twitter Custom Audiences] 帳戶。 下面是如何做到的：
+在新增以裝置為基礎的目的地之前，您需要連結Audience Manager和您的[!DNL Twitter Custom Audiences]帳戶。 以下是其操作方式：
 
-1. 登錄到您的Audience Manager帳戶，然後轉到 **[!DNL Administration > Integrated Accounts]**。 如果您以前配置了與目標平台的整合，則應在此頁中列出該整合。 否則，頁面為空。
-1. 按一下 **[!DNL Add Account]**.
-1. 選擇 [!DNL Twitter Custom Audiences] 按一下 **[!DNL Confirm]** 重定向到驗證頁。
+1. 登入您的Audience Manager帳戶並移至&#x200B;**[!DNL Administration > Integrated Accounts]**。 如果您先前設定好與目的地平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
+1. 按一下 **[!DNL Add Account]**。
+1. 選取[!DNL Twitter Custom Audiences]並按一下&#x200B;**[!DNL Confirm]**&#x200B;以重新導向至驗證頁面。
 
    ![整合平台](assets/dbd-integrated-platforms.png)
 
-1. 一旦您經過身份驗證，您將重定向到Audience Manager，您應該在該區域查看相關的廣告商帳戶。 選擇要使用的廣告商帳戶，然後按一下 **[!DNL Confirm]**。
+1. 驗證之後，您會重新導向至Audience Manager，應該會看到相關廣告商帳戶的位置。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!DNL Confirm]**。
 
-### 步驟 2.建立新的基於設備的目標 {#step2-create-new-destination}
+### 步驟 2.建立以裝置為基礎的新目的地 {#step2-create-new-destination}
 
-在你把Audience Manager和 [!DNL Twitter Custom Audiences]，可以建立新目標。 下面是如何做到的：
+連結Audience Manager和[!DNL Twitter Custom Audiences]後，您就可以建立新的目的地。 以下是其操作方式：
 
 >[!NOTE]
 >
->不能更改現有基於設備的目標的名稱。 確保提供有助於正確標識目標的名稱。
+>您無法變更現有的以裝置為基礎的目的地名稱。 請務必提供有助於您正確識別目的地的名稱。
 
-1. 登錄到Audience Manager帳戶，轉到 **[!DNL Audience Data > Destinations]**，然後按一下 **[!DNL Create Destination]**。
-1. 在 **[!DNL Basic Information]** 部分，輸入 **[!DNL Name]** 和 **[!DNL Description]** 用於新目標，並使用以下設定： ![設定](assets/dbd-new-basic.png)
-1. 按一下 **[!DNL Next]**.
-1. 選擇 [資料導出標籤](/help/using/features/data-export-controls.md#controls-labels) 要為此目標設定。
-1. 按一下 **[!DNL Save]**.
-1. 在 **[!DNL Segment Mappings]** 部分，選擇要發送到此目標的受眾段。
-1. 保存目標。
+1. 登入您的Audience Manager帳戶，前往&#x200B;**[!DNL Audience Data > Destinations]**，然後按一下&#x200B;**[!DNL Create Destination]**。
+1. 在&#x200B;**[!DNL Basic Information]**&#x200B;區段中，輸入您新目的地的&#x200B;**[!DNL Name]**&#x200B;和&#x200B;**[!DNL Description]**，並使用下列設定： ![設定](assets/dbd-new-basic.png)
+1. 按一下 **[!DNL Next]**。
+1. 選擇要為此目的地設定的[資料匯出標籤](/help/using/features/data-export-controls.md#controls-labels)。
+1. 按一下 **[!DNL Save]**。
+1. 在&#x200B;**[!DNL Segment Mappings]**&#x200B;區段中，選取您要傳送至此目的地的對象區段。
+1. 儲存目的地。
 
-## 段映射注意事項 {#segment-mapping-considerations}
+## 區段對應考量事項 {#segment-mapping-considerations}
 
-將受眾段映射到 [!UICONTROL Twitter]，確保滿足以下段命名要求：
+將對象區段對應至[!UICONTROL Twitter]時，請確定符合下列區段命名需求：
 
-* 提供人可讀段映射名稱。 我們建議使用您用於Audience Manager段的相同名稱。
-* 不使用特殊字元(`+` `&` `,` `%` `:` `;` `@` `/` `=` `?` `$`)。 如果您的Audience Manager段名稱包含這些字元，請在將段映射到 [!UICONTROL Twitter] 目標。
+* 提供人類可讀的區段對應名稱。 建議您使用與Audience Manager區段相同的名稱。
+* 請勿在區段和區段對應名稱中使用特殊字元(`+` `&` `,` `%` `:` `;` `@` `/` `=` `?` `$`)。 如果您的Audience Manager區段名稱包含這些字元，請先移除這些字元，然後再將區段對應至[!UICONTROL Twitter]目的地。
 
 ### 範例
 
-* 正確的段或映射名稱：「美國和歐洲購物者」；
-* 段或映射名稱不正確：「美國、歐洲5h0pP3rs」。
+* 正確的區段或對應名稱：「美國和歐洲購物者」；
+* 不正確的區段或對應名稱：「US， European 5h0pP3rs」。
 
 >[!IMPORTANT]
 >
->無法更改已映射段的名稱。 Audience Manager使用段名稱正確標識整合中的段。
+>您無法變更已對應區段的名稱。 Audience Manager會使用區段名稱來正確識別整合中的區段。
 
-## 匹配比率注意事項 {#match-rates-considerations}
+## 符合率考量事項 {#match-rates-considerations}
 
-* Audience Manager與 [!UICONTROL Twitter Custom Audiences] 支援歷史受眾回填。 所有段資格都發送到 [!UICONTROL Twitter] 建立目標。
+* Audience Manager與[!UICONTROL Twitter Custom Audiences]之間的整合支援歷史受眾回填。 當您建立目的地時，所有區段資格都會傳送到[!UICONTROL Twitter]。
 
 ## 疑難排解 {#troubleshooting}
 
-配置資料或將資料發送到Twitter自定義訪問群體目標時，可能會遇到以下描述的錯誤。 本節說明可能導致錯誤的原因以及如何修復錯誤。
+設定資料或將其傳送至Twitter自訂對象目的地時，您可能會遇到下述錯誤。 本節說明可能導致錯誤的原因以及如何修正錯誤。
 
-| 錯誤消息 | 事件/原因 | 解決方法 |
+| 錯誤訊息 | 發生次數/原因 | 解決方法 |
 |---|---|---|
-| `Internal server error` | 嘗試添加新的Audience Manager時，此錯誤消息將顯示在UI中 [!DNL Twitter] 使用過時版本的TwitterAPI。 | 連絡 Adobe 客戶服務. |
-| `Twitter Error: This request is not properly authenticated` | 當嘗試將具有不受支援段名稱的段映射到目標時，此錯誤消息會顯示在Audience ManagerUI中。 | 查看映射的段名稱，並確保它們不包含不受支援的字元。 請參閱 [段映射注意事項](#segment-mapping-considerations) 的子菜單。 |
-| `Twitter Error: Account XXXXXXXXX was not found` | 當為目標配置的憑據未授權訪問相應的Twitter廣告帳戶時，Audience ManagerUI中將顯示此錯誤消息。 | <ul><li>確保您使用的帳戶憑據符合 [先決條件](#prerequisites)。</li><li>使用相同憑據導航到Twitter廣告用戶介面，並檢查是否在相應的用戶下顯示了正確的受眾 `XXXXXXXXX` 帳戶。 </li></ul> |
+| `Internal server error` | 嘗試使用過時的Audience ManagerAPI版本新增新的[!DNL Twitter]帳戶時，TwitterUI中會顯示此錯誤訊息。 | 請聯絡Adobe客戶服務。 |
+| `Twitter Error: This request is not properly authenticated` | 嘗試將不支援的區段名稱對應至目的地時，Audience ManagerUI中會顯示此錯誤訊息。 | 檢閱對應的區段名稱，確認不含不支援的字元。 如需不支援的字元清單，請參閱[區段對應考量事項](#segment-mapping-considerations)。 |
+| `Twitter Error: Account XXXXXXXXX was not found` | 為目的地設定的認證未獲授權存取對應的Audience ManagerAds帳戶時，TwitterUI中會顯示此錯誤訊息。 | <ul><li>確定您使用的帳戶認證符合[必要條件](#prerequisites)。</li><li>使用相同的認證導覽至TwitterAds UI，然後檢查對應的`XXXXXXXXX`帳戶下是否顯示正確的對象。 </li></ul> |

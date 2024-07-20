@@ -3,28 +3,28 @@ description: 說明DIL.tools名稱空間中的方法。 這些公用程式功能
 seo-description: Describes methods in the DIL.tools namespace. These utility functions help you perform specific tasks.
 seo-title: DIL Tools
 solution: Audience Manager
-title: DIL 工具
+title: DIL工具
 uuid: 2bc62ce2-16bd-4e80-b493-c816ba643b59
 feature: DIL Implementation
 exl-id: 1f52eb95-8287-4dd0-b933-00de6926a797
 source-git-commit: cad38e2c523e9b762aa996c275daefa96c8e14b0
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '343'
+ht-degree: 2%
 
 ---
 
-# DIL 工具
+# DIL工具
 
 >[!WARNING]
 >
->自2023年7月起，Adobe已停止開發 [!DNL Data Integration Library (DIL)] 和 [!DNL DIL] 副檔名。
+>自2023年7月起，Adobe已停止開發[!DNL Data Integration Library (DIL)]和[!DNL DIL]擴充功能。
 >
->現有客戶可繼續使用其 [!DNL DIL] 實作。 不過，Adobe將不會開發 [!DNL DIL] 超出此點。 建議客戶評估 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 長期資料收集策略的影響。
+>現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe在此點之後不會開發[!DNL DIL]。 建議客戶針對[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的長期資料收集策略進行評估。
 >
->如果客戶希望在2023年7月之後實作新的資料收集整合，則應使用 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) 而非。
+>如果客戶希望在2023年7月之後實作新的資料收集整合，則應改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
-說明中的方法 `DIL.tools` 名稱空間。 這些公用程式功能可協助您執行特定工作。
+說明`DIL.tools`名稱空間中的方法。 這些公用程式功能可協助您執行特定工作。
 
 <!-- 
 
@@ -42,9 +42,9 @@ r_dil_get_search_referrer.xml
 
  -->
 
-### 用途 `getSearchReferrer`
+### `getSearchReferrer`的目的
 
-在DIL中， `getSearchReferrer` 傳回用來存取您的網站的搜尋結果（名稱和關鍵字）。 您可以將特定搜尋詞傳入此函式，或讓此函式搜尋支援的搜尋引擎( [!DNL AOL]， [!DNL Ask]， [!DNL Bing]， [!DNL Google]、和 [!DNL Yahoo])對 `document.referrer` 依預設。
+在DIL中，`getSearchReferrer`會傳回用來存取您的網站的搜尋結果（名稱和關鍵字）。 您可以將特定搜尋字詞傳入此函式，或讓此函式依預設針對`document.referrer`搜尋支援的搜尋引擎（ [!DNL AOL]、[!DNL Ask]、[!DNL Bing]、[!DNL Google]和[!DNL Yahoo]）。
 
 ### 函式簽章
 
@@ -52,14 +52,14 @@ r_dil_get_search_referrer.xml
 
 ### 函式引數
 
-`getSearchReferrer` 接受：
+`getSearchReferrer`接受：
 
-* *`{string}`*： *（可選）* 包含搜尋URL的字串(使用 `document.referrer` （如果未定義）。
-* *`{object}`*： *（可選）* 一個物件，其中包含的 `hostPattern`， `queryParam`，或 `queryPattern`.
+* *`{string}`*： *（選擇性）*&#x200B;包含搜尋URL的字串（如果未定義，則使用`document.referrer`）。
+* *`{object}`*： *（選擇性）*&#x200B;包含`hostPattern`、`queryParam`或`queryPattern`之組態的物件。
 
 並傳回：
 
-* `{object}` 包含有效名稱和關鍵字的物件。
+* `{object}`包含有效名稱和關鍵字的物件。
 
 ### 範例
 
@@ -121,7 +121,7 @@ r_dil_get_search_referrer.xml
 
 ## decomposeURI
 
-分解統一資源識別碼( [!DNL URI])作為其組成元件： `hash`， `host`， `href`， `pathname`， `protocol`， `search`、和 `[!DNL uriParams]`.
+將統一資源識別碼( [!DNL URI])拆解成其組成元件： `hash`、`host`、`href`、`pathname`、`protocol`、`search`和`[!DNL uriParams]`。
 
 <!-- 
 
@@ -133,9 +133,9 @@ r_dil_decompose.xml
 
 ### 函式引數
 
-`decomposeURI` 接受：
+`decomposeURI`接受：
 
-* *`uri {string}`*： *（可選）* 包含URI的字串。 預設為 `document.location.href` 若未指定。
+* *`uri {string}`*： *（選擇性）*&#x200B;包含URI的字串。 若未指定，則預設為`document.location.href`。
 
 並傳回：
 
@@ -177,7 +177,7 @@ r_dil_get_metatags.xml
 
 ### 函式引數
 
-`getMetaTags` 接受要搜尋的一或多個名稱引數（字串型別）。 它會傳回由索引鍵值配對組成的物件。
+`getMetaTags`接受要搜尋的一或多個名稱引數（字串型別）。 它會傳回由索引鍵值配對組成的物件。
 
 ### 程式碼範例
 

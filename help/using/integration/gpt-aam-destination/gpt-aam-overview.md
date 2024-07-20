@@ -1,33 +1,33 @@
 ---
-description: 如何使用Google發佈者標籤(GPT)整合Google廣告管理器的概述。
+description: 概述如何使用Google發佈商代碼(GPT)整合Google廣告管理員。
 seo-description: Overview of how to integrate Google Ad Manager using Google Publisher Tags (GPT) in Adobe Audience Manager (AAM).
 seo-title: Integrate Google Ad Manager using Google Publisher Tags (GPT)in Adobe Audience Manager (AAM)
-title: 使用Google發佈者標籤(GPT)整合Google廣告經理
+title: 使用Google發佈商代碼(GPT)整合Google廣告管理員
 feature: Third-party Integration
 exl-id: d383cb8a-ef41-4ce6-9e31-6145797a89fa
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 8%
+ht-degree: 0%
 
 ---
 
-# 整合 [!DNL Google Ad Manager] （前稱DFP），使用Google發佈者標籤(GPT)
+# 使用Google發佈商代碼(GPT)整合[!DNL Google Ad Manager] （原稱DFP）
 
-下面列出的文章概述了如何整合 [!DNL Google Ad Manager] 使用Google發佈者標籤(GPT)。 您可以使用伺服器端整合，也可以將GPT設定為目標，將Audience Manager段資料發送到 [!DNL Google Ad Manager]。 您還將瞭解攝取所需的步驟 [!DNL Google Ad Manager] 日誌檔案以在Audience Manager中報告。
+下列文章概述如何使用Google發佈商代碼(GPT)整合[!DNL Google Ad Manager]。 您可以使用伺服器端整合，也可以將GPT設定為將Audience Manager區段資料傳送至[!DNL Google Ad Manager]的目的地。 您也會學習擷取[!DNL Google Ad Manager]個記錄檔以在Audience Manager中報告的所需步驟。
 
-* [使用Google發佈器標籤(GPT)向Google廣告管理器發送段的要求和方法](/help/using/integration/gpt-aam-destination/gpt-aam-requirements.md)
+* [使用Google發佈商代碼(GPT)傳送區段至Google Ad Manager的需求和方法](/help/using/integration/gpt-aam-destination/gpt-aam-requirements.md)
 
-   可將限定段發送到 [!DNL Google Ad Manager] 通過客戶端或通過伺服器端整合。 下面列出了有關這兩種方法的要求和相關資訊。
+  您可以透過使用者端或伺服器端整合將合格的區段傳送至[!DNL Google Ad Manager]。 以下列出這兩種方法的需求和相關資訊。
 
-* [建立 GPT 目的地](/help/using/integration/gpt-aam-destination/gpt-aam-create-destination.md)
+* [建立GPT目的地](/help/using/integration/gpt-aam-destination/gpt-aam-create-destination.md)
 
-   可將限定段發送到 [!DNL Google Ad Manager] 通過客戶端（瀏覽器端）整合或伺服器端整合。 如果選擇客戶端整合，則必須為Audience Manager中的Google發佈者標籤建立基於cookie的目標。
+  您可以透過使用者端（瀏覽器端）整合或伺服器端整合，將合格的區段傳送至[!DNL Google Ad Manager]。 如果您選擇使用者端整合，則必須在Audience Manager中為Google發佈商廣告代碼建立Cookie型目的地。
 
-* [修改 GPT setTargeting API 呼叫](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
+* [修改GPT setTargeting API呼叫](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
 
-   在調用Google發佈器標籤.setTargeting方法之前，添加if語句以檢查Audience ManagerCookie。
+  新增if陳述式，在呼叫Google Publisher標籤.setTargeting方法之前檢查Audience ManagerCookie。
 
-* [適用於 Google 發佈商廣告代碼的 Audience Manager 代碼](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+* [Google發佈商廣告代碼的Audience Manager](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
-   AamGpt是一個JavaScript函式，它讀取Audience Managercookie資料，並將該資訊發送到Google發佈器標籤。
+  AamGpt是JavaScript函式，可讀取Audience ManagerCookie資料並將該資訊傳送至Google發佈商廣告代碼。

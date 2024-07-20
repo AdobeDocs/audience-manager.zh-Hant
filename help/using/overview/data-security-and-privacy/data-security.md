@@ -9,8 +9,8 @@ feature: Data Governance & Privacy
 exl-id: 94b70250-dca3-4c50-b4dd-bc37178a587e
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 98%
+source-wordcount: '988'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ Audience Manager 的安全性實務作法包括外部與內部稽核、活動記
 | **資料洩漏/透明度** | 對構成或促成資料洩漏的站上活動執行的可操作深入分析 |
 | **增強流程/政策** | 客戶，藉由採用業界最佳的隱私權與資料安全性實務作法 |
 
-## 系統、培訓與存取 {#systems-training-access}
+## 系統、訓練與存取 {#systems-training-access}
 
 有助於確保系統和資料安全的程序。
 
@@ -49,7 +49,7 @@ Audience Manager 的安全性實務作法包括外部與內部稽核、活動記
 
 **安全存取：** Audience Manager 需要增強式密碼才能登入系統。請參閱[密碼要求](../../reference/password-requirements.md)。
 
-## 隱私權與個人識別資訊 (PII) {#pii}
+## 隱私權與個人識別資訊(PII) {#pii}
 
 有助於確保個人資訊安全的程序。如需其他隱私權資訊，請參閱 [Adobe 隱私權中心](https://www.adobe.com/tw/privacy/experience-cloud.html)。
 
@@ -61,11 +61,11 @@ Audience Manager 的安全性實務作法包括外部與內部稽核、活動記
 
 有助於保護個別用戶端所擁有資料的程序。
 
-**特性資料分區：**  您的資料([!UICONTROL traits]、ID等) 由用戶端分割。這有助於防止不同用戶端之間意外洩露資訊。例如，Cookie 中的特徵資料會依客戶分割，並儲存在用戶端專用的子網域中，其他 Audience Manager 用戶端無法讀取或意外使用。此外，儲存在 [!UICONTROL Profile Cache Servers (PCS)] 中的特徵資料也是由用戶端分割。這麼做可避免其他用戶端在事件呼叫或其他請求中意外使用您的資料。
+**特徵資料分割：**&#x200B;您的資料（[!UICONTROL traits]、識別碼等） 由用戶端分割。這有助於防止不同用戶端之間意外洩露資訊。例如，Cookie 中的特徵資料會依客戶分割，並儲存在用戶端專用的子網域中，其他 Audience Manager 用戶端無法讀取或意外使用。此外，儲存在 [!UICONTROL Profile Cache Servers (PCS)] 中的特徵資料也是由用戶端分割。這麼做可避免其他用戶端在事件呼叫或其他請求中意外使用您的資料。
 
 **報表中的資料分割：**&#x200B;用戶端 ID 屬於所有報表表格中識別索引鍵的一部分，且報表查詢會依 ID 篩選。這有助於防止您的資料出現在其他 Audience Manager 用戶端的報表中。
 
-## 傳入伺服器對伺服器 (S2S) 傳輸 {#inbound-s2s}
+## 傳入伺服器對伺服器(S2S)傳輸 {#inbound-s2s}
 
 Adobe Audience Manager 支援兩種主要方法，可將 S2S 已上線的資料檔案傳輸至我們的系統：
 
@@ -73,7 +73,7 @@ Adobe Audience Manager 支援兩種主要方法，可將 S2S 已上線的資料�
 
 **SFTP：**&#x200B;針對 SFTP 選項，大部分客戶選擇透過使用安全殼層 (SSH) 通訊協定的安全 FTP (SFTP) 通訊協定來傳送檔案。此方法可確保對在客戶系統與 Adobe 系統之間傳輸的檔案進行加密。我們會為每個客戶在 SFTP 伺服器上建立監禁的下拉式方塊位置，此位置會繫結至該系統上的使用者帳戶。只有該客戶的經認證和獲權限內部系統使用者可以存取這個監禁的下拉式方塊位置。其他客戶永遠無法進入這個監獄。
 
-**[!UICONTROL Amazon Web Services S3](透過 HTTPS 傳輸)：**&#x200B;針對 S3 傳送選項，建議所有客戶將其 S3 用戶端設定為使用 HTTPS 加密方法進行檔案傳輸 (這不是預設值，因此必須明確設定)。s3cmd 命令列工具及各種主要程式設計語言可用的 S3 程式庫都支援 HTTPS 選項。啟用此 HTTPS 選項後，便會在將客戶的資料傳輸至我們的系統時進行加密。我們會為每個客戶建立獨立的 S3 儲存貯體子目錄，只有該客戶的認證和我們的內部系統使用者的認證可存取。
+透過HTTPS的&#x200B;**[!UICONTROL Amazon Web Services S3]：**&#x200B;針對S3傳送選項，建議所有客戶將其S3使用者端設定為使用HTTPS加密方法進行檔案傳輸（這不是預設值，因此必須明確設定）。 s3cmd 命令列工具及各種主要程式設計語言可用的 S3 程式庫都支援 HTTPS 選項。啟用此 HTTPS 選項後，便會在將客戶的資料傳輸至我們的系統時進行加密。我們會為每個客戶建立獨立的 S3 儲存貯體子目錄，只有該客戶的認證和我們的內部系統使用者的認證可存取。
 
 若要將 PGP 加新增到您的資料檔案，請參閱[傳入資料類型的檔案 PGP 加密](../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-encryption.md)。
 
@@ -81,7 +81,7 @@ Adobe Audience Manager 支援兩種主要方法，可將 S2S 已上線的資料�
 
 請注意，[!DNL Audience Manager] 不會逸出傳出的資料，以防其遭受跨網站指令碼 (XSS) 等攻擊。用戶端有責任將傳入的資料逸出。
 
-## HTTP 強制安全傳輸技術 {#hsts}
+## HTTP強制安全傳輸技術 {#hsts}
 
 [!DNL HTTP Strict-Transport-Security (HSTS)] 是業界通用的 Web 安全機制，可協助抵禦 Cookie 劫持和通訊協定降級攻擊。
 
@@ -91,6 +91,6 @@ Adobe Audience Manager 支援兩種主要方法，可將 S2S 已上線的資料�
 
 ### 範例 {#hsts-example}
 
-假設 `yourcompany.demdex.com` 域向 [!DNL DCS] 通過 [!DNL HTTP]。 [!DNL HSTS] 將呼叫升級以改用 [!DNL HTTPS]，而所有後續來自 `yourcompany.demdex.com` 的 [!DNL DCS] 呼叫都會使用 [!DNL HTTPS] 而非 [!DNL HTTP]。
+假設`yourcompany.demdex.com`網域透過[!DNL HTTP]將流量傳送至[!DNL DCS]。 [!DNL HSTS] 將呼叫升級以改用 [!DNL HTTPS]，而所有後續來自 `yourcompany.demdex.com` 的 [!DNL DCS] 呼叫都會使用 [!DNL HTTPS] 而非 [!DNL HTTP]。
 
 如需有關 HSTS 的詳細資訊，請參閱 [HTTP 強制安全傳輸技術 - Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)。

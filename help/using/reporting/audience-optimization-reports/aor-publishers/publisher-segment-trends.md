@@ -1,56 +1,56 @@
 ---
-description: 「段趨勢」報告返回一段時間內映射和未映射段的印入和點擊率資料。 映射段是您建立的段，併發送到目標進行目標。 未映射段是您建立但尚未發送到目標的段。 比較所選指標的趨勢和數量，以更好地瞭解觀眾隨時間的變化。
+description: 「區段趨勢」報表會傳回一段時間內對應和未對應區段的曝光次數和點進率的資料。 對應的區段是您建立並傳送至目的地以進行定位的區段。 未對應的區段是您已建立但尚未傳送至目的地進行定位的區段。 比較您所選量度的趨勢和數量，以更清楚瞭解對象在一段時間內的行為。
 seo-description: The Segment Trend report returns data on impressions and click-through rates of mapped and unmapped segments over time. A mapped segment is a segment you create and send to a destination for targeting. An unmapped segment is a segment that you've created but have not sent to a destination for targeting. Compare trends and volume for your selected metrics to get a better picture of how your audiences behave over time.
 seo-title: Segment Trend Report
 solution: Audience Manager
-title: 區段區段報表
+title: 區段趨勢報表
 uuid: f84e8d0a-74e5-430c-b61c-efb696faee93
 feature: Audience Optimization Reports
 exl-id: 1fdca05a-b661-4875-88d7-b0893e2ca08f
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 2%
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
 
-# 區段區段報表{#segment-trend-report}
+# 區段趨勢報表{#segment-trend-report}
 
-「段趨勢」報告返回一段時間內映射和未映射段的印入和點擊率資料。
+「區段趨勢」報表會傳回一段時間內對應和未對應區段的曝光次數和點進率的資料。
 
-映射段是您建立的段，併發送到目標進行目標。 未映射段是您建立但尚未發送到目標的段。
+對應的區段是您建立並傳送至目的地以進行定位的區段。 未對應的區段是您已建立但尚未傳送至目的地進行定位的區段。
 
-比較所選指標的趨勢和數量，以更好地瞭解觀眾隨時間的變化。
+比較您所選量度的趨勢和數量，以更清楚瞭解對象在一段時間內的行為。
 
 ## 使用案例 {#use-cases}
 
-使用 [!UICONTROL Segment Trend] 報告以驗證段的效能隨時間推移而變化，並根據強勁的效能或規模來查明趨勢。
+使用[!UICONTROL Segment Trend]報表來驗證區段在一段時間內的效能，並根據強大的效能或規模找出趨勢。
 
-通過此報告，您可以瞭解哪些Web屬性顯示了缺陷或缺陷增加，並根據需要進行故障排除。 此報告是您確定您對 [!UICONTROL Segment Performance] 報告，確保你在報告中看到 [!UICONTROL Segment Performance] 頁籤隨時間而一致。
+透過此報告，您可以瞭解哪些Web屬性顯示下降或錯誤增加，並視需要疑難排解。 此報表是您在[!UICONTROL Segment Performance]報表中識別您感興趣的對象後的下一個步驟，以確保您在[!UICONTROL Segment Performance]標籤中看到的強大或低效效能隨時間保持一致。
 
-## 使用段趨勢報表 {#using-the-report}
+## 使用區段趨勢報表 {#using-the-report}
 
-在 **[!UICONTROL Mapped]** 和 **[!UICONTROL Unmapped]** 選擇映射到目標的段。 選擇 **[!UICONTROL All]** 以在報告中包含所有段。
+在&#x200B;**[!UICONTROL Mapped]**&#x200B;和&#x200B;**[!UICONTROL Unmapped]**&#x200B;之間切換以選取是否對應到目的地的區段。 選取「**[!UICONTROL All]**」以在報告中包含您的所有區段。
 
-使用 **[!UICONTROL Date Through]** 按鈕。
+使用&#x200B;**[!UICONTROL Date Through]**&#x200B;滑桿調整回顧期間。
 
-按一下 **[!UICONTROL Date Through]** 滑塊，用於開啟選項以僅將該段保留在報告中或將其排除。
+按一下&#x200B;**[!UICONTROL Date Through]**&#x200B;滑桿下的任何區段，即可顯示僅將該區段保留在報表中或將其排除的選項。
 
-使用 **[!UICONTROL Line Item]** 下拉框，選擇要返回資訊的產品組合中的屬性。
+使用&#x200B;**[!UICONTROL Line Item]**&#x200B;下拉式方塊選取投資組合中您要傳回資訊的屬性。
 
-在 **[!UICONTROL Segment Data Source]** 下拉框中，選擇包含要在報告中查看的段的資料源。
+在&#x200B;**[!UICONTROL Segment Data Source]**&#x200B;下拉式方塊中，選取包含您要在報表中檢視之區段的資料來源。
 
-使用 **[!UICONTROL Segment]** 下拉框，以選擇要在報告中查看的段。
+使用&#x200B;**[!UICONTROL Segment]**&#x200B;下拉式方塊來選取您想在報告中檢視哪些區段。
 
 >[!IMPORTANT]
 >
->啟用時 [!UICONTROL Audience Optimization for Publishers]，必須包括描述性元資料 [!UICONTROL Line Item] ID，如第3步中所述 [將GoogleAd Manager（以前叫DFP）資料檔案導入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)。 通過執行此操作，您可以確保報告將Web屬性的詳細資訊 [!UICONTROL Line Item] 而不是 [!UICONTROL Line Item] ID。
+>啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Line Item] ID的描述性中繼資料，如[將Google Ad Manager （前身為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3中所述。 透過這樣做，您可以確定報告會將Web屬性詳細資料顯示為[!UICONTROL Line Item]，而不是[!UICONTROL Line Item] ID。
 
-## 解釋結果 {#interpreting-results}
+## 解譯結果 {#interpreting-results}
 
-的 [!UICONTROL Segment Trend] 報表僅在14天間隔內返回線形圖中的資料。 在此示例中，報告顯示一組映射和未映射段的印象和點擊趨勢。
+[!UICONTROL Segment Trend]報告僅傳回14天間隔的線圖資料。 在此範例中，報表會顯示一組已對應和未對應區段的曝光次數和點進趨勢。
 
-將滑鼠懸停在任何行上，以獲取有關該特定段趨勢的詳細資訊。 有關示例報告下表中的附加資訊，請參閱說明。
+將滑鼠指標暫留在任何線條上，即可取得該特定區段趨勢的詳細資訊。 如需範例報表下表中其他資訊的說明，請參閱。
 
 ![](assets/publisher_segment_trend.png)
 
@@ -63,32 +63,32 @@ ht-degree: 2%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 區段</span> </p> </td> 
-   <td colname="col2"> <p>分配給此段的字母數字名稱。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">區段</span> </p> </td> 
+   <td colname="col2"> <p>您指派給此區段的英數字元名稱。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 段ID</span> </p> </td> 
-   <td colname="col2"> <p>此段的唯一ID。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">區段識別碼</span> </p> </td> 
+   <td colname="col2"> <p>此區段的唯一ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 行項目</span> </p> </td> 
-   <td colname="col2"> <p>您正在查看此報告的Web屬性。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">條列專案</span> </p> </td> 
+   <td colname="col2"> <p>您要檢視此報表的Web屬性。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 點擊次數</span> </p> </td> 
-   <td colname="col2"> <p>此特性的成員按一下Web屬性中項的次數。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">點按</span> </p> </td> 
+   <td colname="col2"> <p>此特徵的成員已按一下您Web屬性中的專案的次數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 曝光數</span> </p> </td> 
-   <td colname="col2"> <p>此特性的成員接觸您的清單的次數。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">曝光次數</span> </p> </td> 
+   <td colname="col2"> <p>此特徵的成員已向您的詳細目錄公開的次數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> CTR</span> </p> </td> 
-   <td colname="col2"> <p>點進率. 此度量傳遞了點擊後印象的百分比。 將點擊量除以印象以獲得此度量。 </p> </td> 
+   <td colname="col2"> <p>點進率。 此量度會轉送曝光次數百分比，接著再按一下。 將點按次數除以曝光數，即可取得此量度。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 段Uniques</span> </p> </td> 
-   <td colname="col2"> <p>過去30天內的段成員數。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">區段不重複</span> </p> </td> 
+   <td colname="col2"> <p>過去30天內的區段成員數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

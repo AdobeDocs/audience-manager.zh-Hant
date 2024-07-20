@@ -8,8 +8,8 @@ feature: People-based Destinations
 exl-id: 56506bf0-45f1-49df-81ac-10f57a2487eb
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 94%
+source-wordcount: '1161'
+ht-degree: 93%
 
 ---
 
@@ -78,9 +78,9 @@ Audience Manager 不會擷取原始電子郵件地址，且無法驗證雜湊是
 
 Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並傳送至目的地平台，但電子郵件地址需透過同步檔案擷取。Audience Manager 將電子郵件地址傳送至目的地平台後，平台必須自行比對這些電子郵件地址與自己的使用者群。某些平台可能會有其他電子郵件地址圖表，用於將 Audience Manager 所傳來的地址與使用者設定檔進行比對。
 
-**我能用 [!DNL People-Based Destinations] 在 [!DNL Audience Lab]?**
+**我可以在[!DNL Audience Lab]中使用[!DNL People-Based Destinations]嗎？**
 
-不會。當前，所有 [!DNL People-Based Destinations] 目標從 [!DNL Audience Lab]。 鑑於 [!DNL People-Based Destinations] 而需求端平台使用不同的ID，則無法test和衡量表現，讓受眾在它們之間平均分割。
+不會。目前，所有[!DNL People-Based Destinations]目的地都已從[!DNL Audience Lab]中排除。 鑑於[!DNL People-Based Destinations]和需求端平台使用不同的ID，您無法透過平均分割對象的狀況來測試及測量效能。
 
 ## 資料匯出控制 {#data-export-controls}
 
@@ -88,7 +88,7 @@ Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並�
 
 [!DNL Data Export Controls] 會封鎖使用者嘗試傳送至 [!DNL People-Based Destinations] 且任何包含第二方與第三方資料的區段。[!DNL People-Based Destinations] 只允許使用第一方資料進行目標定位。[!DNL Data Export Controls] 也可以使用 [!DNL Profile Merge Rules] 搭配裝置圖形來封鎖區段。建立 [!DNL People-Based Destinations] 時會使用已勾選的適當資料匯出標籤，且您無法覆寫匯出設定。
 
-## 針對合作夥伴的問題 {#partner-specific-questions}
+## 合作夥伴特定問題 {#partner-specific-questions}
 
 ### [!DNL Facebook]
 
@@ -116,6 +116,6 @@ Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並�
 
 這兩項整合相輔相成，您可以同時使用兩者來確保受眾涵蓋範圍更廣。例如，公司想要將目標定位為尚未註冊帳戶的網站訪客時，可使用 [!DNL WCA] 進行勘察，而 [!DNL People-Based Destinations] 可協助您將目標定位為已提供電子郵件地址但可能未造訪網站的現有客戶。
 
-**是否 [!DNL People-Based Destinations] 整合 [!DNL Facebook] 支援在用戶不再有資格獲得該用戶時取消其用戶資格？**
+**與[!DNL Facebook]的[!DNL People-Based Destinations]整合是否支援在使用者不再符合資格時，取消其受眾資格？**
 
-是，整合支援將用戶從 [!DNL Facebook] 當觀眾不再有資格獲得這些資格時。
+是，整合支援在使用者不再符合資格時，將其從[!DNL Facebook]對象中移除。

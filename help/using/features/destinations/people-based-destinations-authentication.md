@@ -19,20 +19,21 @@ ht-degree: 0%
 >[!IMPORTANT]
 >本文包含產品檔案，旨在引導您完成此功能的設定和使用。 此處未包含任何法律建議。 請諮詢您自己的法律顧問，以取得法律指引。
 
-本頁提供如何設定及管理Audience Manager平台與以人物為基礎的平台之間整合的相關指引。
+本頁包含如何設定及管理整合的指引
+在Audience Manager平台和以人物為基礎的平台之間。
 
 >[!NOTE]
 >無論您的實作情況為何，此步驟都是以人物為基礎的目的地的必要步驟。
 
 ## 設定以人物為基礎的平台驗證 {#configure-authentication}
 
-1. 登入您的Audience Manager帳戶並移至 **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**. 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
+1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
    ![以人物為基礎的整合](assets/pbd-config.png)
 2. 按一下 **[!UICONTROL Add Account]**。
-3. 使用 **[!UICONTROL People-Based Platform]** 下拉式功能表，以選取您要設定整合的平台。
-   ![以人物為基礎的平台](assets/pbd-add.png)
-4. 按一下 **[!UICONTROL Confirm]** 重新導向至所選平台的驗證頁面。
-5. 在驗證您的Social Platform帳戶後，系統會將您重新導向至Audience Manager，您應可在其中檢視相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下 **[!UICONTROL Confirm]**.
+3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表選取您要設定整合的平台。
+   ![以人員為基礎的平台](assets/pbd-add.png)
+4. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
+5. 在驗證您的Social Platform帳戶後，系統會將您重新導向至Audience Manager，您應可在其中檢視相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
 6. Audience Manager會在頁面頂端顯示通知，告知您帳戶是否已成功新增。 通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收Adobe的通知。
 
 ## 驗證Token到期日和通知管理 {#token-expiration-notification}
@@ -41,17 +42,17 @@ Audience Manager會透過在特定時間後過期的驗證權杖來處理您與�
 
 以下說明如何新增電子郵件地址至現有的整合：
 
-1. 登入您的Audience Manager帳戶並移至 **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**.
-1. 識別您要接收權杖到期通知的整合，然後按一下 **[!UICONTROL Edit]** 圖示。
+1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。
+1. 識別您要接收權杖到期通知的整合，然後按一下&#x200B;**[!UICONTROL Edit]**&#x200B;圖示。
 1. 輸入您要接收權杖過期通知的電子郵件地址（以逗號分隔）。
 1. 按一下 **[!UICONTROL Save]**。
 
 ## 驗證權杖續約 {#token-renewal}
 
-當驗證Token過期時，Audience Manager與對應社交平台之間的整合會中斷，因此Audience Manager無法再將受眾區段傳送至目的地。 此 [!UICONTROL Integrated Accounts] 頁面會顯示「 」中每個整合的到期狀態 [!UICONTROL Expiration] 欄，並可讓您隨時更新驗證。
+當驗證Token過期時，Audience Manager與對應社交平台之間的整合會中斷，因此Audience Manager無法再將受眾區段傳送至目的地。 [!UICONTROL Integrated Accounts]頁面會顯示[!UICONTROL Expiration]欄中每個整合的到期狀態，並可讓您隨時更新驗證。
 
 以下說明如何更新已過期或即將過期的驗證：
-1. 登入您的Audience Manager帳戶並移至 **[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**.
-1. 識別更新驗證所需的整合。 過期的驗證會標示為 [!UICONTROL Expired]，而即將到期的驗證會顯示剩餘的驗證天數。
-1. 按一下對應的 **[!UICONTROL Renew]** 圖示於 [!UICONTROL Expiration] 欄。 這會觸發 **[!UICONTROL Renew Account]** 工作流程，帶您回到社交平台的驗證頁面。 驗證後，Token會以新的到期日更新。
-   ![pbd-renew](assets/pbd-renew.png)
+1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。
+1. 識別更新驗證所需的整合。 過期的驗證會標示為[!UICONTROL Expired]，而即將過期的驗證會顯示剩餘的驗證天數。
+1. 按一下[!UICONTROL Expiration]欄中對應的&#x200B;**[!UICONTROL Renew]**&#x200B;圖示。 這會觸發&#x200B;**[!UICONTROL Renew Account]**工作流程，帶您回到社交平台的驗證頁面。 驗證後，Token會以新的到期日更新。
+   ![pbd — 續約](assets/pbd-renew.png)

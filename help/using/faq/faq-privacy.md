@@ -9,8 +9,8 @@ feature: Data Governance & Privacy
 exl-id: bccf49d7-1a3b-4286-86fb-59e472af4501
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 83%
+source-wordcount: '754'
+ht-degree: 82%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 83%
 
  -->
 
-## 資料保留常見問題集 {#data-retention-faq}
+## 資料保留 FAQ {#data-retention-faq}
 
 下表列出不同資料類型和儲存系統的保留時間。
 
@@ -55,15 +55,15 @@ ht-degree: 83%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>後端伺服器 </p> </td> 
-   <td colname="col2"> <p>120天 </p> <p> Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 120 天後，從我們的後端伺服器上刪除該使用者的資料。如果 <span class="keyword"> Audience Manager</span> 記錄此120天週期內的用戶活動，我們將再保留此資料120天。 </p> </td> 
+   <td colname="col2"> <p>120天 </p> <p> Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 120 天後，從我們的後端伺服器上刪除該使用者的資料。如果<span class="keyword">Audience Manager</span>在此120天週期內有記錄使用者活動，便會再將此資料儲存120天。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>邊緣伺服器 </p> </td> 
-   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 14 天後，從我們的邊緣伺服器上刪除該使用者的資料。如果 <span class="keyword"> Audience Manager</span> 在此14天週期內記錄用戶活動，我們將再保留此資料14天。 如果用戶在14天週期後再次處於活動狀態，則第一個新頁面視圖與用戶變為可操作狀態之間將存在延遲。 在不活動14天以上後，需要6-18小時才能將完整配置檔案重新放回邊緣中心。 </p> </td> 
+   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 14 天後，從我們的邊緣伺服器上刪除該使用者的資料。如果<span class="keyword">Audience Manager</span>在此14天週期內有記錄使用者活動，便會再將此資料儲存14天。 如果使用者在14天週期後再次進入作用中狀態，則第一個新頁面檢視與使用者變成可操作的時間之間會出現延遲。 閒置超過14天後，需要6-18個小時才能將完整的設定檔送回邊緣中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始記錄檔 </p> </td> 
-   <td colname="col2"> <p>60天（60天無活動後刪除） </p> <p>原始記錄檔是邊緣伺服器收到的資料 (透過 HTTP 呼叫或來自傳入 <span class="keyword"> Audience Manager</span> 的已上線檔案)。 </p> </td> 
+   <td colname="col2"> <p>60天（60天無活動後移除） </p> <p>原始記錄檔是邊緣伺服器收到的資料 (透過 HTTP 呼叫或來自傳入 <span class="keyword"> Audience Manager</span> 的已上線檔案)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>廣告伺服器記錄檔 </p> </td> 
@@ -71,7 +71,7 @@ ht-degree: 83%
   </tr> 
   <tr> 
    <td colname="col1"> <p>CRM 層級設定檔 (已驗證的設定檔) </p> </td> 
-   <td colname="col2"> <p>非作用中 CRM 層級設定檔 (客戶 ID) 的預設存留時間 (TTL) 間隔為 24 個月。但是，您可以使用Audience Manager用戶介面將非活動CRM級別配置檔案的TTL間隔縮短或延長一個月至五年。 您可以在建立或編輯跨裝置資料來源時完成此操作。</p> <p>如需詳細資訊，請參閱<a href="../features/profile-merge-rules/merge-rules-start.md#settings">建立跨裝置資料來源</a>中的「資料來源設定」。</p> </td> 
+   <td colname="col2"> <p>非作用中 CRM 層級設定檔 (客戶 ID) 的預設存留時間 (TTL) 間隔為 24 個月。不過，您可以使用Audience Manager使用者介面，縮短或延長非作用中CRM層級設定檔的TTL間隔，範圍是1個月至5年。 您可以在建立或編輯跨裝置資料來源時完成此操作。</p> <p>如需詳細資訊，請參閱<a href="../features/profile-merge-rules/merge-rules-start.md#settings">建立跨裝置資料來源</a>中的「資料來源設定」。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>行動裝置 ID </p> </td> 

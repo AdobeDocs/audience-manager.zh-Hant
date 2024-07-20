@@ -1,5 +1,5 @@
 ---
-description: 資料操作元件包括客戶資料源、資料收集伺服器、SFTP/S3/HTTP發佈器、IRIS和配置式快取伺服器。
+description: 資料動作元件包括客戶資料摘要、資料收集伺服器、SFTP/S3/HTTP發佈者、IRIS和設定檔快取伺服器。
 seo-description: Data action components include Customer Data Feeds, the Data Collection Server, SFTP/S3/HTTP publishers, IRIS, and the Profile Cache Server.
 seo-title: Data Action Components
 solution: Audience Manager
@@ -9,14 +9,14 @@ feature: System Components
 exl-id: 8065c19f-1930-4164-a952-1686aa5cb622
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 2%
+source-wordcount: '658'
+ht-degree: 1%
 
 ---
 
 # 資料動作元件{#data-action-components}
 
-資料操作元件包括客戶資料源、資料收集伺服器、SFTP/S3/HTTP發佈器、IRIS和配置式快取伺服器。
+資料動作元件包括客戶資料摘要、資料收集伺服器、SFTP/S3/HTTP發佈者、IRIS和設定檔快取伺服器。
 
 <!-- 
 
@@ -24,11 +24,11 @@ c_compact.xml
 
  -->
 
-操作元件是允許資料進出的系統和流程 [!DNL Audience Manager] （因為沒有更好的辭彙）用它做事。 這些 [!DNL Audience Manager] 元件包括：
+動作元件是系統和程式，可讓您在[!DNL Audience Manager]之內和之外行動資料，並（由於缺少更好的片語）處理這些動作。 這[!DNL Audience Manager]個元件包括：
 
 ## 客戶資料摘要 (CDF) {#cdf}
 
-[!UICONTROL CDF] 是每小時向客戶發送的檔案。 這些包含用戶ID以及關聯的段ID、特徵ID和其他資料。 有關詳細資訊，請參見 [客戶資料饋送概述](../../features/cdf-files.md)。
+[!UICONTROL CDF]是每小時傳送給客戶的檔案。 這些檔案包含使用者ID以及關聯的區段ID、特徵ID和其他資料。 如需詳細資訊，請參閱[客戶資料摘要概觀](../../features/cdf-files.md)。
 
 ## 資料收集伺服器(DCS) {#dcs}
 
@@ -36,50 +36,50 @@ c_compact.xml
 
 ## SFTP/S3 {#sftp-s3}
 
-的 [!UICONTROL SFTP/S3] 發佈者從 [!UICONTROL Outbound Feed Converter]。 當這些檔案準備就緒時， [!UICONTROL SFTP/S3 publishers] 將此資料發送到客戶端指定的目標。 這些檔案包含具有一對多映射的同步ID資料 [!DNL Audience Manager] 用戶ID(UUID):
+[!UICONTROL SFTP/S3]發行者會從[!UICONTROL Outbound Feed Converter]接收同步的ID資料。 當這些檔案準備就緒時，[!UICONTROL SFTP/S3 publishers]會將此資料傳送至使用者端指定的目的地。 這些檔案包含同步的ID資料，且將[!DNL Audience Manager]使用者ID (UUID)一對多對應至：
 
-* 設備ID/資料提供程式ID(DPUUID)
-* 限定段ID
-* 特性ID
+* 裝置ID/資料提供者ID (DPUUID)
+* 合格的區段ID
+* 特徵ID
 
-[!DNL Audience Manager] 客戶無權訪問直接控制 [!UICONTROL SFPT/S3 publishers]。 客戶在建立資料並將資料發送到目標時間接使用此服務。 的 [!UICONTROL SFTP/S3] 系統本質上是以預定時間間隔運行的自動作業進程。
+[!DNL Audience Manager]客戶無法存取直接控制[!UICONTROL SFPT/S3 publishers]的功能。 客戶建立資料並將資料傳送到目的地時，會間接使用此服務。 [!UICONTROL SFTP/S3]系統基本上是排程間隔執行的自動化工作程式。
 
-## 虹膜 {#iris}
+## IRIS {#iris}
 
-在希臘神話中， [!UICONTROL Iris] 是一個快速傳遞資訊的人物。 的 [!UICONTROL IRIS] 這個系統是反映這個古代人物特徵的同名稱。 就現代而言， [!UICONTROL IRIS] 是一種低延遲、高頻cookie同步和資料傳輸服務。
+在希臘神話中，[!UICONTROL Iris]是一個快速旅行和傳遞訊息的人物。 [!UICONTROL IRIS]系統是一個反映此人物古世界特徵的名稱空間。 用現代術語來說，[!UICONTROL IRIS]是低延遲、高頻率Cookie同步和資料傳輸服務。
 
-[!UICONTROL IRIS] 與 [!UICONTROL SFTP/S3] 系統。 但是， [!UICONTROL IRIS] 不同，因為它以即時方式而不是以設定的時間間隔向目的地發送資料。 這是一個單獨的系統，因為 [!UICONTROL SFTP/S3] 發佈者無法將資料發送到HTTP目標，並且它們不是為即時資料傳輸而設計的。
+[!UICONTROL IRIS]使用與[!UICONTROL SFTP/S3]系統相同的資料型別。 但是，[!UICONTROL IRIS]是不同的，因為它會即時傳送資料到目的地，而不是以設定的間隔。 這是獨立的系統，因為[!UICONTROL SFTP/S3]發佈者無法傳送資料至HTTP目的地，而且不是針對即時資料傳輸所設計。
 
-沒有UI控制項可讓客戶直接使用 [!UICONTROL IRIS]。 客戶與 [!UICONTROL IRIS] 在建立資料並將資料發送到目標以及需要快速資料傳輸的其他進程時間接執行。
+沒有UI控制項可讓客戶直接使用[!UICONTROL IRIS]。 客戶在建立資料並將資料傳送到目的地時，以及針對需要快速資料傳輸的其他程式，間接使用[!UICONTROL IRIS]。
 
-示例 [!UICONTROL IRIS] 服務和功能包括：
+[!UICONTROL IRIS]服務和功能的範例包括：
 
-* 為cookie和段提供快速（30秒內）同步。 它可以同步 [!DNL Audience Manager] 餅乾，夥伴餅乾，或兩者兼備。
-* 即時資料傳輸。 [!UICONTROL IRIS] 負責將即時段資格事件發送到合作夥伴或其他目標。 此資料是JSON格式的，並通過HTTP發送 `POST` 請求。
+* 為Cookie和區段提供快速（在30秒內）的同步處理。 它可以同步[!DNL Audience Manager] Cookie、合作夥伴Cookie，或兩者都同步。
+* 即時資料傳輸。 [!UICONTROL IRIS]負責傳送即時區段資格事件給合作夥伴或其他目的地。 此資料為JSON格式，並透過HTTP `POST`要求傳送。
 
-* 批量伺服器到伺服器的資料傳輸：如果您與 [!DNL Audience Manager]。 [!UICONTROL IRIS] 是伺服器用於傳輸資料的系統。
+* 大量伺服器對伺服器資料傳輸：如果您與[!DNL Audience Manager]交換大量資料，[!UICONTROL IRIS]就是您的伺服器用來傳輸資料的系統。
 
-* 可靠的基礎架構，可以規模化運行，並且具有容錯能力。 可供電的系統 [!UICONTROL IRIS] 包括AmazonSQS、AmazonEC2和卡桑德拉。
+* 可靠的基礎架構可大規模運作，且具備容錯功能。 支援[!UICONTROL IRIS]的系統包括Amazon SQS、Amazon EC2和Cassandra。
 
-**段映射規則**
+**區段對應規則**
 
-優化之間的通信 [!UICONTROL IRIS] 和分段目標， [!UICONTROL IRIS] 根據一組規則將段發送到目標。
+為了最佳化[!UICONTROL IRIS]和區段目的地之間的流量，[!UICONTROL IRIS]會根據一組規則將區段傳送至目的地。
 
-1. **新段資格**:當設備符合新段的條件時， [!UICONTROL IRIS] 將與該設備關聯的所有段發送到映射到這些段的所有目標。
+1. **新區段資格**：當裝置符合新區段的資格時，[!UICONTROL IRIS]會將與該裝置相關聯的所有區段傳送至對應至這些區段的所有目的地。
 
-1. **新分部取消資格**:當設備不再符合段的條件時， [!UICONTROL IRIS] 將與該設備關聯的所有段資格和取消資格發送到映射到這些段的所有目標。
+1. **新區段取消資格**：當裝置不再符合區段的資格時，[!UICONTROL IRIS]會將與該裝置相關聯的所有區段資格和取消資格，傳送至對應至這些區段的所有目的地。
 
-1. **目標映射更新**:更新目標映射時， [!UICONTROL IRIS] 將與設備關聯的所有段發送到映射到這些段的所有目標，以便下次Audience Manager看到設備時。
+1. **目的地對應更新**：當目的地對應更新時，[!UICONTROL IRIS]會將與裝置相關聯的所有區段傳送至對應至這些區段的所有目的地，下次當Audience Manager看到裝置時。
 
-1. **設備圖形更新**:當從用於計算段的設備圖形中添加或刪除任何設備ID時， [!UICONTROL IRIS] 將與該設備關聯的所有段發送到映射到這些段的所有目標，以便下次Audience Manager看到該設備時。
+1. **裝置圖表更新**：當從用來評估區段的裝置圖表新增或移除任何裝置識別碼時，[!UICONTROL IRIS]會將與該裝置相關聯的所有區段傳送至對應至這些區段的所有目的地，下次當Audience Manager看到該裝置時。
 
 >[!IMPORTANT]
 >
->如果Audience Manager連續3天未檢測到以上任何更新， [!UICONTROL IRIS] 將與設備關聯的所有段發送到映射到這些段的所有目標，以便下次Audience Manager看到設備時。
+>如果Audience Manager連續3天未偵測到上述任何更新，[!UICONTROL IRIS]會將與裝置相關聯的所有區段傳送至對應至這些區段的所有目的地，Audience Manager下次檢視裝置時。
 
-**示例資料檔案**
+**範例資料檔**
 
-以下示例包含來自 [!UICONTROL IRIS]。 請記住，這只是示例資料。 每個客戶可能有不同的格式要求，因此內容可能會有所不同。
+下列範例包含來自[!UICONTROL IRIS]的即時區段資料。 請記住，這僅是範例資料。 每個客戶可能有不同的格式需求，因此內容可能會有所不同。
 
 ```
 {
@@ -147,6 +147,6 @@ c_compact.xml
 }
 ```
 
-## 配置檔案快取伺服器(PCS) {#pcs}
+## 設定檔快取伺服器(PCS) {#pcs}
 
 請參閱[資料收集元件](../../reference/system-components/components-data-collection.md)。

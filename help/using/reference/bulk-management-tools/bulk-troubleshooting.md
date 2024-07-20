@@ -9,8 +9,8 @@ feature: BAAAM
 exl-id: 4f1c501c-2e28-4ce5-829f-4d81d10cdccd
 source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 3%
+source-wordcount: '410'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[RBAC群組許可權](../../features/administration/administration-overview.md) 指派於 [!DNL Audience Manager] UI遵循於 [!UICONTROL Bulk Management Tools].
+>在[!DNL Audience Manager] UI中指派的[RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
 
 網路流量大、伺服器使用量及大型資料集等因素，都可能導致大量請求失敗或逾時。 如果發生問題，工作表會停止寫入資料並顯示錯誤訊息。 發生此情況時，您應該：
 
@@ -54,19 +54,19 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <b>驗證錯誤</b> </td> 
    <td colname="col2"> 
-    <b>更新至最新版Microsoft Excel</b>：發行新版Microsoft Excel時，如果您使用較舊的版本，您可能會在「大量管理」工作表中遇到驗證錯誤。 請更新至最新版Microsoft Excel以解決驗證錯誤。
+    <b>更新至最新版Microsoft Excel</b>：新版Microsoft Excel發行時，若您使用舊版，您可能會在「大量管理」工作表中遇到驗證錯誤。 請更新至最新版Microsoft Excel以解決驗證錯誤。
 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>長時間延遲</b> </td> 
+   <td colname="col1"> <b>長延遲</b> </td> 
    <td colname="col2"> 
     <ul id="ul_AA6F414024B2475AB1C0B46DC3FF0B36"> 
-     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>關閉相容性模式</b>：檢查您是否在Microsoft Excel的相容性模式中開啟了其他工作表。 相容性模式可以增加執行時間。 請關閉您在此模式中可能開啟的任何試算表，然後再次嘗試大量請求。 </li> 
+     <li id="li_ECC83AC39D7142519AA9A223DB8FCF23"> <b>關閉相容性模式</b>：檢查您是否在Microsoft Excel的相容性模式中開啟其他工作表。 相容性模式可以增加執行時間。 請關閉您在此模式中可能開啟的任何試算表，然後再次嘗試大量請求。 </li> 
      <li id="li_234BFCF563234DE198884F33AB75280D"> <b>系統資源</b>：有限的系統資源造成長時間延遲。 嘗試在提出大量請求之前關閉所有其他程式。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>無回應</b> </td> 
+   <td colname="col1"> <b>沒有回應</b> </td> 
    <td colname="col2">如果按一下動作按鈕後沒有任何反應： 
     <ul id="ul_142E63CDD556414AB639E51734FEDBCF"> 
      <li id="li_DBB6C819603D46B5AECC9C854FDAFDF1">請確定您有正確的選取動作標題集。 </li> 
@@ -79,4 +79,4 @@ ht-degree: 3%
 
 ## 錯誤訊息
 
-有時候，進行大量變更時，您會收到錯誤訊息。 若要解譯錯誤訊息，請參閱 [已定義的回應代碼](/help/using/api/rest-api-main/aam-api-getting-started.md) 在我們的API檔案中。
+有時候，進行大量變更時，您會收到錯誤訊息。 若要解譯錯誤訊息，請參閱API檔案中的[已定義的回應代碼](/help/using/api/rest-api-main/aam-api-getting-started.md)。

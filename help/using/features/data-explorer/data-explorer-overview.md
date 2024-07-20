@@ -1,52 +1,52 @@
 ---
-description: 使用Data Explorer通過基於已使用和未使用的信號構建特徵來利用歷史受眾，並用歷史資料回填這些特徵以避免相關受眾的潛在損失。
+description: 透過Data Explorer根據已使用和未使用的訊號建立特徵，並以歷史資料回填這些特徵，避免相關受眾可能遺失，藉此利用歷史受眾。
 seo-description: Use Data Explorer to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.
 seo-title: Overview, Benefits, and Use Cases
-title: 概述、好處和使用案例
+title: 概述、優點和使用案例
 uuid: 3bd32d4a-ade3-413d-837a-9edd14d415a5
 feature: Data Explorer
 exl-id: 56c9080b-4b7d-4feb-bddf-521e80bc8fa7
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
-# Data Explorer - 概述、優點和使用案例 {#overview-benefits-and-use-cases}
+# Data Explorer — 概述、優點和使用案例 {#overview-benefits-and-use-cases}
 
-使用 [!UICONTROL Data Explorer] 利用歷史受眾，根據使用和未使用的信號構建特徵，並用歷史資料對其進行回填，以避免相關受眾的潛在損失。
+使用[!UICONTROL Data Explorer]根據已使用和未使用的訊號建立特徵，並以歷史資料回填這些特徵，以避免相關對象可能遺失，藉此利用歷史對象。
 
 ## 概述 {#overview}
 
-基於與受眾相關的現有見解建立特徵是一個相當簡單的過程，只要你始終知道受眾是誰。 但這種情況多久會發生？
+只要您一律知道對象是誰，根據與對象相關的現有見解建立特徵的程式就會相當簡單明瞭。 但這種情況多久發生一次？
 
-[!UICONTROL Data Explorer] 簡化了特徵管理流程，同時在分類法建立方面為您提供了更高的靈活性。 二 [!UICONTROL Data Explorer] 元件可幫助您實現以下目標：
+[!UICONTROL Data Explorer]可簡化您的特徵管理程式，同時提供您更高程度的分類管理彈性。 兩個[!UICONTROL Data Explorer]元件可協助您達成此目標：
 
-* [信號儀表板](../../features/data-explorer/data-explorer-signals-dashboard.md) 和 [!UICONTROL Signals Search] 幫助你跟蹤收到的信號 [!DNL Audience Manager] 你可以用來構建新特徵或添加到現有特徵中。
+* [訊號儀表板](../../features/data-explorer/data-explorer-signals-dashboard.md)和[!UICONTROL Signals Search]可協助您追蹤[!DNL Audience Manager]收到的訊號，這些訊號可用來建立新特徵或新增至現有特徵。
 
-* [特徵實現回填](../../features/data-explorer/data-explorer-trait-backfill.md) 幫助你確定歷史受眾對新創造特徵的認可，以便你能夠將他們納入未來的目標化努力。
+* [特徵實現回填](../../features/data-explorer/data-explorer-trait-backfill.md)可協助您使歷史對象符合新建立特徵的資格，以便您將其納入未來的目標定位工作。
 
 ## 福利 {#benefits}
 
-使用 [!UICONTROL Data Explorer] 以多種方式優化您的受眾構建：
+使用[!UICONTROL Data Explorer]以多種方式最佳化您的對象建置：
 
-* **關注高價值受眾**。 監視頁面上搜索和瀏覽行為的趨勢變化，然後為其行為建立特定特徵。 消除創造「萬無一失」特徵的必要性，專注於相關信號。
-* **避免資料丟失**。 用歷史現實來回填特徵，這樣你就不會錯過受眾群，因為在收到信號之前，你並沒有創造特徵。
-* **改進工作流**。 發現趨勢信號，並快速將它們轉化為可操作的特徵。
+* **專注於高價值對象**。 監視頁面上搜尋和瀏覽行為中的趨勢變更，然後為其行為建立特定特徵。 無須建立「萬一發生」的特徵，並專注於相關訊號。
+* **避免資料遺失**。 使用歷史實現回填特徵，這樣您就不會因為未在收到訊號前建立特徵而錯過對象區段。
+* **改善您的工作流程**。 探索趨勢訊號，並快速將其轉換為可操作的特徵。
 
 ## 使用個案 {#use-cases-data-explorer}
 
 ### 範例 1
 
-一家全球電子零售商的訪客流量很高，但轉換率低於預期，儘管他們已針對多個平台優化了內容。 使用 [信號儀表板](../../features/data-explorer/data-explorer-signals-dashboard.md)他們識別出大量未使用的信號，表明訪問者正在尋找一個目前沒有庫存的特定電子品牌。 該公司可以利用這一洞見，更新其股票，並通過個性化的活動瞄準那些訪問者。
+一家全球電子零售商雖然已針對多個平台最佳化內容，但訪客流量很高，但轉換率卻低於預期。 使用[訊號控制面板](../../features/data-explorer/data-explorer-signals-dashboard.md)，它們會識別大量未使用的訊號，表示訪客正在搜尋目前沒有庫存的特定電子品牌。 公司可透過重新整理其庫存並以個人化行銷活動定位這些訪客，以利用此洞察力。
 
 ### 範例 2
 
-當一家旅遊服務提供商在其預訂網站上添加新目的地後，他們希望向歷史觀眾打廣告，儘管他們沒有為這些目標建立過任何特徵。 他們可以使用Signals Search來識別與新目的地相關的未使用信號，包括新特徵和 [回填](../../features/data-explorer/data-explorer-trait-backfill.md) 具有歷史認識。 然後，用新特徵建立新片段，並立即用專門的活動來瞄準這些片段。
+旅遊服務提供者將新目的地新增至預訂網站後，雖然他們尚未建立任何特徵，但仍會想要將目的地通告給歷史對象。 他們可以使用訊號搜尋來識別與新目的地相關的未使用訊號，將其納入新特徵中，並以歷史實現方式[回填](../../features/data-explorer/data-explorer-trait-backfill.md)它們。 接著，使用新特徵建立新區段，並立即以專屬的行銷活動鎖定這些區段。
 
-### 使用Data Explorer驗證掛接資料的特性建立
+### 使用Data Explorer驗證已上線資料的特徵建立
 
-Audience Manager最強大的功能之一是能夠將離線資料掛載，並將其與線上資料關聯起來。 在下面的視頻中，瞭解如何使用 [!UICONTROL Data Explorer] 確認您已建立了所有必要的特性，以利用此附加資料。
+Audience Manager最強大的功能之一，是載入離線資料，並將其與您的線上資料繫結的功能。 在下列影片中，瞭解如何使用[!UICONTROL Data Explorer]來驗證您是否已建立所有必要的特徵以運用此已上線的資料。
 
 >[!VIDEO](https://video.tv.adobe.com/v/25149/)

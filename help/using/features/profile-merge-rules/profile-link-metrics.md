@@ -1,5 +1,5 @@
 ---
-description: 配置檔案連結度量提供有關向站點進行身份驗證的人員和設備的資料。 在建立合併規則時，或在「配置檔案合併規則」面板中按一下現有規則時，「配置檔案連結」中的資料和圖形會動態更新。 這些度量可以包括來自其他第三方設備圖形源的設備圖形。
+description: 個人資料連結量度提供驗證您的網站之人員和裝置的相關資料。 當您建立合併規則或從「設定檔合併規則」圖示板按一下現有規則時，「設定檔連結」中的資料和圖形會動態更新。 這些量度可包含來自其他協力廠商裝置圖表來源的裝置圖表。
 seo-description: Profile Link metrics provide data about people and devices that authenticate to your site. The data and graphs in Profile Link update dynamically as you create a merge rules or when you click an existing rule from the Profile Merge Rules dashboard. These metrics can include device graph from other third-party device graph sources.
 seo-title: Report Metrics for Profile Merge Rules
 solution: Audience Manager
@@ -9,18 +9,18 @@ feature: Profile Merge
 exl-id: 2af59c60-2448-44af-90d2-eccc52f7ff02
 source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '693'
+ht-degree: 0%
 
 ---
 
 # 設定檔合併規則的報表量度 {#report-metrics-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rule] 度量提供有關向站點進行身份驗證的人員和設備的資料。 中的資料和圖形 [!UICONTROL Profile Merge Rule Reports] 在建立合併規則時或在按一下現有規則時動態更新 [!UICONTROL Profile Merge Rules] 控制項欄。 這些度量可以包括來自其他第三方設備圖形源的設備圖形。
+[!UICONTROL Profile Merge Rule]量度提供驗證您網站之使用者和裝置的相關資料。 當您建立合併規則或從[!UICONTROL Profile Merge Rules]儀表板按一下現有規則時，[!UICONTROL Profile Merge Rule Reports]中的資料和圖形會動態更新。 這些量度可包含來自其他協力廠商裝置圖表來源的裝置圖表。
 
-## 合併規則度量 {#merge-rule-metrics}
+## 合併規則量度 {#merge-rule-metrics}
 
-當合併規則使用您可能有權訪問的第三方設備圖形的資料時，報告會在並排條形圖中返回資料 [!DNL Audience Manager]。 這允許您將經過驗證的第一方資料與第三方設備圖形提供的跨設備資料進行比較。 此資料每天更新。
+合併規則使用您可在[!DNL Audience Manager]中存取的協力廠商裝置圖表資料時，報表會以並排長條圖傳回資料。 這可讓您比較已驗證的第一方資料與協力廠商裝置圖表提供的跨裝置資料。 此資料每天都會更新。
 
 <table id="table_A7FB2F9804F84AC8A6DD05C0E6EE7555"> 
  <thead> 
@@ -31,87 +31,86 @@ ht-degree: 2%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="wintitle"> 已驗證的活動</span></b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="wintitle">已驗證的活動</span></b> </p> </td> 
    <td colname="col2"> <p>顯示： </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
-     <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle"> 活動人員</span>:過去60天內已驗證到您的站點的人數。 </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle"> 交叉設備</span>:總數 <a href="merge-rules-start.md#create-data-source"> 跨設備ID</a> 儲存在 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html"> 資料源</a> 的 <a href="merge-rule-definitions.md"> 已驗證的配置檔案</a> 資料源存在的生存期。 </li> 
-     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> 活動人員百分比</span>:顯示 <span class="wintitle"> 活動人員</span> %。 </li> 
-    </ul> <p> <span class="wintitle"> 已驗證的活動</span> 允許您按活動、卷和百分比比較資料源。 它可以幫助您找到一個資料源，該資料源擁有大量人員和高比例的活躍用戶。 或者，在比較資料源與活動用戶的高比例與總受眾規模時，您可能會發現其價值。 例如，有時，總生存期數和活動率較低的資料源比壽命結果較高和活動率較低的資料源更有價值。 </p> <p> <p>注：的 <span class="wintitle"> 已驗證的活動</span> 度量包含 <span class="wintitle"> 配置檔案連結</span> 僅資料。 此報告不包括 <span class="wintitle"> 設備圖</span> 資料。 </p> </p> </td> 
+     <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle">使用中的人員</span>：過去60天中驗證您網站的人數。 </li> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle">跨裝置</span>：在選取的<a href="merge-rule-definitions.md">已驗證設定檔</a>的<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html">資料Source</a>中，針對資料來源存在的存留期，儲存的<a href="merge-rules-start.md#create-data-source">個跨裝置ID</a>總數。 </li> 
+     <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> %使用中的人員</span>：將<span class="wintitle">個使用中的人員</span>顯示為%。 </li> 
+    </ul> <p> <span class="wintitle">已驗證的活動</span>可讓您依活動、磁碟區和百分比比較資料來源。 它可以協助您尋找擁有大量人員且活躍使用者比例較高的資料來源。 或者，您也可以在比較資料來源與高比例活躍使用者與總對象人數中找到價值。 例如，有時候，總存留期數低而活動數高的資料來源，會比總存留期數高而活動數低的資料來源更有價值。 </p> <p> <p>注意： <span class="wintitle">已驗證的活動</span>量度僅包含<span class="wintitle">設定檔連結</span>資料。 此報表不包含<span class="wintitle">裝置圖表</span>資料。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="wintitle"> 每人平均設備數</span></b> </p> </td> 
-   <td colname="col2"> <p> 顯示訪問者使用的設備的平均數量，這些訪問者已通過對所選資料源的站點身份驗證。 </p> </td> 
+   <td colname="col1"> <p> 每個人<b><span class="wintitle">個平均裝置</span></b> </p> </td> 
+   <td colname="col2"> <p> 顯示已針對選取的資料來源驗證您網站的訪客所使用的平均裝置數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="wintitle"> 設備總數</span></b> </p> </td> 
-   <td colname="col2"> <p>顯示已用於驗證所選資料源的站點的設備總數。 </p> </td> 
+   <td colname="col1"> <p> 總共<b><span class="wintitle">部裝置</span></b> </p> </td> 
+   <td colname="col2"> <p>顯示使用者已針對選取的資料來源，用於驗證您網站的裝置總數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="wintitle"> 總人數</span></b> </p> </td> 
-   <td colname="col2"> <p>顯示為所選資料源確定標識的人員總數。 </p> </td> 
+   <td colname="col1"> <p> 總共<b><span class="wintitle">人</span></b> </p> </td> 
+   <td colname="col2"> <p>顯示已針對選取的資料來源確定識別的總人數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 設備圖形度量 {#device-graph-metrics}
+## 裝置圖表量度 {#device-graph-metrics}
 
-的 [!UICONTROL Merge Rules] 報告還顯示訪問您站點的選定資料源和設備圖形的人員和設備總數。 這些度量根據預設時間間隔（回溯期間）返回資料，這些時間間隔因建立規則時選擇的設備選項而異。 下表列出了每個設備圖形選項的這些報告間隔。
+[!UICONTROL Merge Rules]報表也會針對選取的資料來源與裝置圖表，顯示造訪過您網站的總人數與裝置數的資料。 這些量度會根據預先設定的時間間隔（回顧期間）傳回資料，此時間間隔會因您在建立規則時選取的裝置選項而異。 下表列出每個裝置圖表選項的報表間隔。
 
 <table id="table_038983EBC71F4A55BBCA99212AC5DEE6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 設備圖形選項 </th> 
-   <th colname="col2" class="entry"> 報告回查間隔 </th> 
+   <th colname="col1" class="entry"> 裝置圖表選項 </th> 
+   <th colname="col2" class="entry"> 報表回顧間隔 </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 設定檔連結</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">設定檔連結</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_B2FF2341573840549FFB96579F537082"> 
-      <li id="li_B37323C2F2434F41B407500AC5C15447">人員總數：60天 </li> 
-      <li id="li_08D911224A60418BBB3CFB4E70CE73D4">設備總數：120天 </li> 
+      <li id="li_B37323C2F2434F41B407500AC5C15447">總人數：60天 </li> 
+      <li id="li_08D911224A60418BBB3CFB4E70CE73D4">裝置總數：120天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> LiveRamp</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_2772F3AD7E1440789B635794ECDE8DFB"> 
-      <li id="li_1432363829D64615B1D349A3722D6268">人員總數：180天 </li> 
-      <li id="li_D5C0E3CE92524B54BBD36C73A326292B">設備總數：180天 </li> 
+      <li id="li_1432363829D64615B1D349A3722D6268">總人數：180天 </li> 
+      <li id="li_D5C0E3CE92524B54BBD36C73A326292B">裝置總數：180天 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 塔帕德</span> </p> </td> 
+   <td colname="col1"> <p><span class="wintitle"> Tapad</span> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_274529DB58E6442E95C6AD89BECB1362"> 
-      <li id="li_67102211A72A4E47AACFE5E369793C17">人員總數：60天 </li> 
-      <li id="li_3E8F3DA6A7B5487895A626674DA363A5">設備總數60天 </li> 
+      <li id="li_67102211A72A4E47AACFE5E369793C17">總人數：60天 </li> 
+      <li id="li_3E8F3DA6A7B5487895A626674DA363A5">60天裝置總數 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 示例報告 {#sample-reports}
+## 範例報告 {#sample-reports}
 
-### 標準配置檔案連結報表
+### 標準設定檔連結報表
 
-標準 [!UICONTROL Profile Link] 報告如下所示。 使用多個資料源（最多3個，最大值）的合併規則在每個資料源的單獨頁籤中顯示圖形。 此合併規則不包括 [!UICONTROL external device graph] 資料。
+標準[!UICONTROL Profile Link]報表看起來類似下列範例。 使用多個資料來源的合併規則（最多3個）會針對每個資料來源以個別索引標籤顯示圖表。 此合併規則不包含[!UICONTROL external device graph]資料。
 
 ![](assets/profile-link-metrics.png)
 
-### 帶設備圖資料的配置檔案連結報告
+### 包含裝置圖表資料的設定檔連結報表
 
-A [!UICONTROL Profile Link Device Graph] 包括來自第三方設備圖形的設備圖形資料的報告顯示 [!UICONTROL Profile Link] 並行條形圖的設備圖形資料。 將這些圖形彼此相鄰放置，可評估使用外部設備圖形與 [!UICONTROL Profile Link] 自己來。 使用多個資料源（最多3個，最大值）的合併規則在每個資料源的單獨頁籤中顯示圖形。 作為提醒， [!UICONTROL Authenticated Activity] 圖形和度量不返回資料 [!DNL Adobe] 設備圖或其他可訪問的第三方設備圖 [!DNL Audience Manager]。
+包含來自協力廠商裝置圖表的裝置圖表資料的[!UICONTROL Profile Link Device Graph]報告會以並排長條圖顯示[!UICONTROL Profile Link]和裝置圖表資料。 將這些圖表彼此相鄰，可讓您評估使用外部裝置圖表相較於單獨使用[!UICONTROL Profile Link]的好處。 使用多個資料來源的合併規則（最多3個）會針對每個資料來源以個別索引標籤顯示圖表。 提醒您，[!UICONTROL Authenticated Activity]圖表和量度沒有傳回[!DNL Adobe]裝置圖表或其他您在[!DNL Audience Manager]中可能可以存取的協力廠商裝置圖表的資料。
 
 ![](assets/profile-link-graph.png)
 
-## 配置檔案連結趨勢圖 {#profile-link-trend}
+## 設定檔連結趨勢圖 {#profile-link-trend}
 
-除了其他資料可視化外， [!UICONTROL Profile Link] 報告包括線形圖。 線形圖旨在顯示配置檔案規則隨時間的變化趨勢。 當按一下 [!UICONTROL Profile Merge Rules] 登錄頁(L) **[!UICONTROL Audience Data > Profile Merge Rules]**)。 如果您是第三方設備圖形的成員，則這些圖形包括設備圖形資料。 [!DNL Audience Manager]。 按一下趨勢線查看基礎資料。
+除了其他資料視覺效果外，[!UICONTROL Profile Link]報表還包含線圖。 折線圖可顯示設定檔規則隨時間變化的趨勢。 當您從[!UICONTROL Profile Merge Rules]登陸頁面( **[!UICONTROL Audience Data > Profile Merge Rules]**)按一下規則時，可以使用趨勢圖（和其他報表）。 如果您是協力廠商裝置圖表的成員，且在[!DNL Audience Manager]中擁有存取權，這些圖表會包含裝置圖表資料。 按一下趨勢線可檢視基礎資料。
 
 >[!MORELIKETHIS]
 >
->* [配置檔案合併規則常見問題](../../faq/faq-profile-merge.md)
-
+>* [設定檔合併規則常見問題集](../../faq/faq-profile-merge.md)

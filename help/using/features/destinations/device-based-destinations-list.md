@@ -1,5 +1,5 @@
 ---
-description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe交換清單（若有），或聯絡您的Adobe顧問或客戶服務。
+description: 此頁面僅包含目前的伺服器對伺服器整合。 如需整合的詳細資訊，請參閱其Adobe Exchange清單（若有），或聯絡您的Adobe顧問或客戶服務。
 seo-description: This page includes current server-to-server integrations only. For more information on an integration refer to its Adobe Exchange listing (where available) or contact your Adobe Consultant or Customer Care.
 seo-title: Adobe Audience Manager Server-to-Server Destinations
 keywords: 啟用；啟用合作夥伴、目的地、目的地
@@ -16,18 +16,18 @@ ht-degree: 46%
 
 # [!DNL Audience Manager] [!UICONTROL Device-based Destinations]
 
-此頁面包含目前的 [!DNL Audience Manager] [以裝置為基礎的目的地](/help/using/features/destinations/add-device-based-destinations.md) 僅限。 在 [!DNL Audience Manager]， [!UICONTROL device-based destinations] 也稱為 [!UICONTROL server-to-server destinations]. 如需整合的詳細資訊，請參閱其 [Adobe交換](https://exchange.adobe.com/experiencecloud.html) 列出（若有）或聯絡您的 [!DNL Adobe] 顧問或客戶服務。
+此頁面僅包含目前的[!DNL Audience Manager] [以裝置為基礎的目的地](/help/using/features/destinations/add-device-based-destinations.md)。 在[!DNL Audience Manager]中，[!UICONTROL device-based destinations]也稱為[!UICONTROL server-to-server destinations]。 如需整合的詳細資訊，請參閱其[Adobe Exchange](https://exchange.adobe.com/experiencecloud.html)清單（若有），或聯絡您的[!DNL Adobe]顧問或客戶服務。
 
 
-* **上次更新時間** =顯示此專案的上次更新日期 [!UICONTROL device-based destination].
-* **更新** =指示是否 [!DNL Audience Manager] 將資料即時或批次(1xday)傳送至此 [!UICONTROL destination].
-* **取消細分** =取消細分說明取消資格並從中移除裝置設定檔的程式 [!UICONTROL segments]. 您從移除裝置設定檔的功能 [!UICONTROL segment] 取決於用來建立 [!UICONTROL Profile Merge Rule]. 取消細分也會用在的內容中 [!DNL GDPR] 刪除請求。 讀取 [設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md) 和 [透過取消細分功能Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation). [!DNL Audience Manager] 傳送取消細分資訊至 [!UICONTROL destinations] 標示為 **是** 底下。
-* **接收 [!DNL IAB TCF] 同意訊號** =此 [!DNL Audience Manager Plug-in for IAB TCF] 可讓您轉寄 [!DNL IAB TC] 字串至啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取 [適用於IAB TCF的Audience Manager外掛程式](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md).
-* **[!DNL ICDS]** =此欄列出支援的合作夥伴 [!UICONTROL Instant Cross-Device Suppression]. 閱讀關於 [即時跨裝置隱藏功能](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md).
-* **行動裝置ID** =此欄列出可從接收行動裝置ID的合作夥伴 [!DNL Audience Manager].
+* **上次更新時間** =顯示此[!UICONTROL device-based destination]有更新的上次日期。
+* **更新** =指示[!DNL Audience Manager]是即時傳送資料還是批次(1xday)至此[!UICONTROL destination]。
+* **取消區段** =取消區段描述取消資格並從[!UICONTROL segments]移除裝置設定檔的程式。 從[!UICONTROL segment]移除裝置設定檔的能力取決於用來建立[!UICONTROL Profile Merge Rule]的裝置選項。 取消細分也會用於[!DNL GDPR]刪除請求的內容中。 讀取[設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)與具有取消細分功能的[Audience Manager夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager]傳送取消細分資訊到下面標示為&#x200B;**是**&#x200B;的[!UICONTROL destinations]。
+* **接收[!DNL IAB TCF]同意訊號** =此[!DNL Audience Manager Plug-in for IAB TCF]可讓您將[!DNL IAB TC]字串轉送給啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取適用於IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)的[Audience Manager外掛程式。
+* **[!DNL ICDS]** =此資料行列出支援[!UICONTROL Instant Cross-Device Suppression]的夥伴。 閱讀[即時跨裝置隱藏](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
+* **行動裝置ID** =此欄列出可以從[!DNL Audience Manager]接收行動裝置ID的合作夥伴。
 
 
-| 整合 | 最近更新 | 更新 | 取消細分 | 接收 [!DNL IAB TCF] 同意訊號 | [!DNL ICDS] | 行動裝置 ID |
+| 整合 | 最近更新 | 更新 | 取消細分 | 正在接收[!DNL IAB TCF]同意訊號 | [!DNL ICDS] | 行動裝置 ID |
 |----------------------------------------------------------|------------|-----------|-----------|-----------------------------------|------|-------------------|
 | [!DNL 4C Insights] | 26/09/2018 | 1xday | 有 | 否 | 否 | 是 |
 | [!DNL 4info] | 09/02/2017 | 1xday | 否 | 否 | 否 | 是 |
@@ -48,7 +48,7 @@ ht-degree: 46%
 | [!DNL AOL ONE] | 02/03/2017 | 即時 | 有 | 否 | 否 | 是 |
 | [!DNL AppNexus] | 02/03/2017 | 即時 | 有 | 否 | 是 | 是 |
 | [!DNL AppNexus Yieldex] | 2017年10月8日 | 1xday | 有 | 否 | 否 | 否 |
-| [!DNL Artsai] (先前稱為 [!DNL Adxcel]) | 27/01/2020 | 1xday | 否 | 否 | 否 | 是 |
+| [!DNL Artsai] （先前為[!DNL Adxcel]） | 27/01/2020 | 1xday | 否 | 否 | 否 | 是 |
 | [!DNL Atedra]/[!DNL AdStanding] | 02/03/2017 | 即時 | 有 | 否 | 有 | 否 |
 | [!DNL Avocet] | 06/12/2017 | 1xday | 否 | 否 | 否 | 否 |
 | [!DNL Bidtellect] | 03/03/2017 | 即時 | 有 | 否 | 否 | 否 |

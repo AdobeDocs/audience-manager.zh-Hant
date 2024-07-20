@@ -1,5 +1,5 @@
 ---
-description: 有關即時Audience Manager整合的資訊。
+description: 即時Audience Manager整合的相關資訊。
 seo-description: Information about the Real-Time Audience Manager integration.
 seo-title: Real-Time Inbound Data Integration
 solution: Audience Manager
@@ -9,13 +9,13 @@ feature: Inbound Data Transfers
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
 source-wordcount: '22'
-ht-degree: 36%
+ht-degree: 0%
 
 ---
 
 
 # 即時傳入資料整合 {#real-time-inbound-data-integration}
 
-有關即時Audience Manager整合的資訊。
+即時Audience Manager整合的相關資訊。
 
 <!-- c_rt_data_int.xml -->

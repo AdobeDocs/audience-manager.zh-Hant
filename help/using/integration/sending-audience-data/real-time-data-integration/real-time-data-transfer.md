@@ -1,5 +1,5 @@
 ---
-description: 即時入站資料接收過程使用用戶瀏覽器的一系列HTTP請求將資料傳遞到Audience Manager。
+description: 即時傳入資料擷取程式會使用使用者瀏覽器發出的一系列HTTP請求，將資料傳遞至Audience Manager。
 seo-description: The real-time inbound data ingestion process uses a series of HTTP requests from a user's browser to pass in data to Audience Manager.
 seo-title: Real-Time Inbound Data Ingestion
 solution: Audience Manager
@@ -9,35 +9,35 @@ feature: Inbound Data Transfers
 exl-id: d243c74c-3a29-4dbf-a4c7-43ea526a9d7b
 source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 5%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
 # 即時傳入資料擷取 {#real-time-inbound-data-ingestion}
 
-即時入站資料接收過程使用一系列 `HTTP` 從用戶瀏覽器向Audience Manager傳遞資料的請求。
+即時傳入資料擷取程式會使用使用者瀏覽器的一連串`HTTP`個請求，將資料傳遞至Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
-入站資料應格式化為稱為信號的鍵值對。 通常，每個信號被映射到通過用戶介面建立或管理的段，或 [!DNL API]。
+傳入資料應格式化為稱為訊號的機碼值組。 通常，每個訊號都會對應至透過使用者介面或[!DNL API]建立或管理的區段。
 
-## URL字串參數和語法 {#url-string-syntax}
+## URL字串引數和語法 {#url-string-syntax}
 
-的 [!DNL URL] 對於入站資料傳輸，應包含下面描述的變數。 記住 [創造性狀](../../../features/traits/create-onboarded-rule-based-traits.md) 和 [資料夾結構](../../../features/traits/trait-storage.md#create-trait-storage-folder) 的 [!DNL Audience Manager] 設定即時資料傳輸前的UI。
+傳入資料傳輸的[!DNL URL]應包含下述變數。 設定即時資料傳輸之前，請記得在[!DNL Audience Manager] UI中[建立特徵](../../../features/traits/create-onboarded-rule-based-traits.md)和[資料夾結構](../../../features/traits/trait-storage.md#create-trait-storage-folder)。
 
 >[!NOTE]
 >
->用實際參數值替換斜體內容。
+>以實際引數值取代斜體化內容。
 
 | 參數 | 說明 |
 |---|---|
-| `<KEY>` | 鍵值對（例如性別、顏色、價格）中的唯一標識符。 |
-| `<VAL>` | 屬於由鍵定義的資料集的變數（例如，性別=男性，顏色=綠色，價格=100） |
+| `<KEY>` | 機碼值組中的唯一識別碼（例如性別、顏色、價格）。 |
+| `<VAL>` | 屬於索引鍵所定義資料集的變數（例如，性別=男性，顏色=綠色，價格=100） |
 
 ### URL語法
 
-在即時入站資料接收過程中， [!DNL URL] string使用以下語法：
+在即時傳入資料擷取程式期間，正確格式化的[!DNL URL]字串會使用以下語法：
 
 ```
 https://client.demdex.net/event?KEY1=VALA&KEY2=VALB&KEY3=VALC

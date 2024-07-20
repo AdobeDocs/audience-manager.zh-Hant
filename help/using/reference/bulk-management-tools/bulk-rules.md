@@ -9,8 +9,8 @@ feature: BAAAM
 exl-id: 9b697606-5534-4e6e-a3f2-b1a4c26bb707
 source-git-commit: bd1ad233dd69bc8683731d0c63dc3fb74ef91ade
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 8%
+source-wordcount: '343'
+ht-degree: 1%
 
 ---
 
@@ -30,37 +30,37 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->[RBAC群組許可權](../../features/administration/administration-overview.md) 指派於 [!DNL Audience Manager] UI遵循於 [!UICONTROL Bulk Management Tools].
+>在[!DNL Audience Manager] UI中指派的[RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
 
 ## 使用特徵規則 {#trait-rules}
 
-在您的工作表中，特徵規則欄會傳回並接受包含布林運算式、比較運運算元和規則運算式的規則。 您可以使用中的特徵或區段產生器建立規則 [!DNL Audience Manager] 並將它們複製到您的工作表中。 或者，如果您熟悉規則語法，可以直接在工作表中編寫運算式。
+在您的工作表中，特徵規則欄會傳回並接受包含布林運算式、比較運運算元和規則運算式的規則。 您可以在[!DNL Audience Manager]中使用特徵或區段產生器建立規則，並將這些規則複製到您的工作表中。 或者，如果您熟悉規則語法，可以直接在工作表中編寫運算式。
 
 ## 規則產生器範例 {#rule-builder-example}
 
-讓我們來看一個範例，此範例會示範如何使用 [!UICONTROL Segment Builder] 若要建立規則，您可以移至大量工作表。 不過，這不是這些工具的一組逐步指示。 相反地，我們將以已建立的簡單規則開始。 如需如何使用規則產生器的指示，請參閱 [區段產生器](../../features/segments/segment-builder.md) 和 [特徵產生器](../../features/traits/about-trait-builder.md).
+讓我們看一個範例，此範例示範如何使用[!UICONTROL Segment Builder]建立您可以大量使用的規則。 不過，這不是這些工具的一組逐步指示。 相反地，我們將以已建立的簡單規則開始。 如需如何使用規則產生器的指示，請參閱[區段產生器](../../features/segments/segment-builder.md)和[特徵產生器](../../features/traits/about-trait-builder.md)。
 
-透過視覺化規則產生器，我們已建立具有3個特徵和1個布林值的區段規則 [!UICONTROL AND] 運運算元。
+使用視覺化規則產生器，我們已建立具有3個特徵和Boolean [!UICONTROL AND]運運算元的區段規則。
 
 ![](assets/visualrule.png)
 
-按一下 **[!UICONTROL Code View]** 以取得此規則的文字版本。
+按一下&#x200B;**[!UICONTROL Code View]**&#x200B;以取得此規則的文字版本。
 
 >[!TIP]
 >
->按一下 **[!UICONTROL Validate Expression]** 以檢查規則邏輯。 這有助於防止您上傳無效的規則。
+>按一下&#x200B;**[!UICONTROL Validate Expression]**&#x200B;以檢查您的規則邏輯。 這有助於防止您上傳無效的規則。
 
 ![](assets/coderule.png)
 
-將規則貼入 [!UICONTROL Bulk Management Tools] 工作表並提交您的變更，以大量更新區段規則。
+將規則貼入[!UICONTROL Bulk Management Tools]工作表並認可您的變更，以大量更新區段規則。
 
 ![](assets/segmentrule.png)
 
 ## 建立您自己的規則 {#create-rules}
 
-您可以撰寫您自己的規則，在 [!UICONTROL Rule Builder]. 開始之前，請務必閱讀涵蓋運運算元、運算式和必要變數等內容的檔案。 建議您檢閱下列內容：
+您可以在[!UICONTROL Rule Builder]之外撰寫您自己的規則。 開始之前，請務必閱讀涵蓋運運算元、運算式和必要變數等內容的檔案。 建議您檢閱下列內容：
 
 * [在特徵產生器中使用比較運運算元](../../features/traits/trait-comparison-operators.md)
 * [作業順序](../../features/traits/trait-operator-precedence.md)
 * [關鍵變數的前置詞要求](../../features/traits/trait-variable-prefixes.md)
-* [使用布林值和比較運算子的運算式範例](../../features/traits/trait-expression-samples.md)
+* [使用布林值和比較運運算元的運算式範例](../../features/traits/trait-expression-samples.md)

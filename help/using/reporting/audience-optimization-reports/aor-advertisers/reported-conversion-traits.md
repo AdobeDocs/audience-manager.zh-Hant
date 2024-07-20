@@ -1,5 +1,5 @@
 ---
-description: 「轉換性狀」報告顯示某個日期標籤為轉換組的所有性狀。 轉換組的轉換特徵可以從報告運行更改為報告運行。 此報表按所選報告日期的轉換組顯示轉換特徵。
+description: 「轉換特徵」報表會針對特定日期的轉換群組顯示所有特徵，並標示為轉換特徵。 轉換群組的轉換特徵可能會從報表執行變更為報表執行。 報表會依轉換群組顯示所選報表日期的轉換特徵。
 seo-description: The Conversion Traits report shows you all the traits labeled as conversion traits for a conversion group at a certain date. Conversion traits for conversion groups can change from reporting run to reporting run. The report displays conversion traits by conversion group for the selected reporting date.
 seo-title: Reported Conversion Traits
 solution: Audience Manager
@@ -16,16 +16,16 @@ ht-degree: 4%
 
 # 回報的轉換特徵{#reported-conversion-traits}
 
-「轉換性狀」報告顯示某個日期標籤為轉換組的所有性狀。
+「轉換特徵」報表會針對特定日期的轉換群組顯示所有特徵，並標示為轉換特徵。
 
-轉換組的轉換特徵可以從報告運行更改為報告運行。 此報表按所選報告日期的轉換組顯示轉換特徵。
+轉換群組的轉換特徵可能會從報表執行變更為報表執行。 報表會依轉換群組顯示所選報表日期的轉換特徵。
 
-要瞭解如何在Audience Manager中建立轉換特性，請參閱以下視頻：
+若要瞭解如何在Audience Manager中建立轉換特徵，請觀看下方的影片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/23431/)
 
-## 示例報告
+## 範例報告
 
-您 [!UICONTROL Reported Conversion Traits] 報告可能與以下報告類似：
+您的[!UICONTROL Reported Conversion Traits]報告可能類似於以下報告：
 
 ![](assets/reported-conversion-traits.png)

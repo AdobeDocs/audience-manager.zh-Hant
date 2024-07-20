@@ -1,28 +1,28 @@
 ---
-description: 剩餘的API方法來管理組，包括建立、更新、清單、刪除組。
+description: 重設API方法來管理群組，包括建立、更新、列出和刪除群組。
 seo-description: Rest API methods to manage groups, including creating, updating, listing, deleting groups.
 seo-title: Group Management API Methods
 solution: Audience Manager
-title: 群組管理 API 方法
+title: 群組管理API方法
 uuid: fe042eb5-ea12-42fe-be98-d721f987a914
 feature: API
 exl-id: b43c8404-1853-4306-8f26-96d9191a2548
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 12%
+ht-degree: 5%
 
 ---
 
-# 群組管理 API 方法 {#group-management-api-methods}
+# 群組管理API方法 {#group-management-api-methods}
 
-休息 [!DNL API] 管理組的方法，包括建立、更新、清單、刪除組。
+剩下[!DNL API]種管理群組的方法，包括建立、更新、列出及刪除群組。
 
 <!-- c_rest_api_user_man_group.xml -->
 
 ## 建立群組 {#create-group}
 
-A `POST` 的子菜單。
+建立新使用者群組的`POST`方法。
 
 <!-- r_rest_api_group_create.xml -->
 
@@ -30,7 +30,7 @@ A `POST` 的子菜單。
 
 `POST /api/v1/groups/`
 
-### 示例請求正文
+### 範例要求內文
 
 ```
  {
@@ -53,9 +53,9 @@ A `POST` 的子菜單。
   }
 ```
 
-## 更新組 {#update-group}
+## 更新群組 {#update-group}
 
-A `PUT` 更新用戶組的方法。
+更新使用者群組的`PUT`方法。
 
 <!--
 r_rest_api_group_update.xml
@@ -65,7 +65,7 @@ r_rest_api_group_update.xml
 
 `PUT /api/v1/groups/`*`<groupId>`*
 
-### 示例請求正文
+### 範例要求內文
 
 ```
  {
@@ -88,9 +88,9 @@ r_rest_api_group_update.xml
   }
 ```
 
-## 清單組 {#list-groups}
+## 清單群組 {#list-groups}
 
-A `GET` 列出用戶組的方法。
+列出使用者群組的`GET`方法。
 
 <!--
 r_rest_api_group_list.xml
@@ -118,7 +118,7 @@ r_rest_api_group_list.xml
 
 ## 刪除群組 {#delete-groups}
 
-A `DELETE` 刪除用戶組並從該組中刪除所有成員的方法。
+刪除使用者群組並移除該群組之所有成員的`DELETE`方法。
 
 <!-- r_rest_api_group_delete.xml -->
 
@@ -126,11 +126,11 @@ A `DELETE` 刪除用戶組並從該組中刪除所有成員的方法。
 
 `DELETE /api/v1/groups/`*`<groupId>`*
 
-返回 `204 No Content` 成功。 在衝突返回時 `409 Conflict`。
+如果成功，則傳回`204 No Content`。 在衝突的情況下傳回`409 Conflict`。
 
-## 批量刪除組 {#delete-groups-bulk}
+## 大量刪除群組 {#delete-groups-bulk}
 
-A `DELETE` 方法，以批量刪除多個組並從該組中刪除所有成員。
+一種`DELETE`方法，可大量刪除多個群組並移除該群組中的所有成員。
 
 <!-- r_rest_api_group_delete_bulk.xml -->
 
@@ -138,11 +138,11 @@ A `DELETE` 方法，以批量刪除多個組並從該組中刪除所有成員。
 
 `DELETE /api/v1/groups/bulk-delete`
 
-返回 `204 No Content` 成功。 在衝突返回時 `409 Conflict`。
+如果成功，則傳回`204 No Content`。 在衝突的情況下傳回`409 Conflict`。
 
-## 列出組的所有權限 {#list-permissions-group}
+## 列出群組的所有許可權 {#list-permissions-group}
 
-A `GET` 列出組上的權限對象的方法。
+列出群組許可權物件的`GET`方法。
 
 <!-- r_rest_api_perm_list_group.xml -->
 
@@ -172,11 +172,11 @@ A `GET` 列出組上的權限對象的方法。
 ]
 ```
 
-返回 `400 Bad Request` 的子菜單。
+如果群組無法存取，則傳回`400 Bad Request`。
 
-## 設定組的權限 {#set-permissions-group}
+## 設定群組的許可權 {#set-permissions-group}
 
-A `PUT` 更新組權限的方法。 此方法用新權限覆蓋舊權限。
+更新群組許可權的`PUT`方法。 此方法會以新許可權覆寫舊許可權。
 
 <!-- r_rest_api_perm_set.xml -->
 
@@ -207,6 +207,6 @@ A `PUT` 更新組權限的方法。 此方法用新權限覆蓋舊權限。
 ]
 ```
 
-示例響應表示已更新的權限對象清單。
+範例回應代表許可權物件的更新清單。
 
-返回 `200 OK` 成功。 返回 `400` 如果任何給定權限無效。 也可以返回 `403` 如果已登錄的用戶無法訪問該對象。
+如果成功，則傳回`200 OK`。 如果任何指定的許可權無效，則傳回`400`。 如果登入的使用者無法存取物件，也可以傳回`403`。

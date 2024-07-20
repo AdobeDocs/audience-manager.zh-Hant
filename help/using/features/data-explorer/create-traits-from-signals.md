@@ -1,5 +1,5 @@
 ---
-description: 從所有信號中創造新特徵，包括那些已經用於特徵的信號，並捕獲在特徵創造後合格的未來受眾。
+description: 從所有訊號（包括已在特徵中使用的訊號）建立新特徵，並擷取建立特徵後符合資格的未來對象。
 seo-description: Create new traits from all signals, including those that are already used in traits, and capture future audiences that qualify after trait creation.
 seo-title: Create Traits from Signals
 title: 從訊號建立特徵
@@ -9,49 +9,49 @@ exl-id: 14308ef0-58eb-4b76-858c-d0da560f55fd
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
 # 從訊號建立特徵
 
-從所有信號中創造新特徵，包括那些已經用於特徵的信號，並捕獲在特徵創造後合格的未來受眾。 觀看視頻以快速演示或閱讀以獲取詳細資訊：
+從所有訊號（包括已在特徵中使用的訊號）建立新特徵，並擷取建立特徵後符合資格的未來對象。 觀看影片以快速展示，或閱讀詳細資訊：
 
 >[!VIDEO](https://video.tv.adobe.com/v/25169/?quality=12)
 
-## 從信號儀表板建立特徵 {#create-traits-from-signal-dashboard}
+## 從Signal儀表板建立特徵 {#create-traits-from-signal-dashboard}
 
-的 [!UICONTROL Signal Dashboard] 允許您通過 [!UICONTROL Top Unused Signals]。 [!UICONTROL New Unused Signals]，以及您保存的搜索。
+[!UICONTROL Signal Dashboard]可讓您從[!UICONTROL Top Unused Signals]、[!UICONTROL New Unused Signals]及您儲存的搜尋建立新特徵。
 
-建立新特徵時，特徵類型是基於信號類型預先設定的：
+建立新特徵時，會根據訊號型別預先設定特徵型別：
 
-* **[!UICONTROL Rule-based]** 即時信號、可操作日誌檔案和 [!DNL Adobe Analytics] 信號；
+* 即時訊號、可操作的記錄檔和[!DNL Adobe Analytics]訊號的&#x200B;**[!UICONTROL Rule-based]**&#x200B;特徵；
 
-* **[!UICONTROL Onboarded]** 寄生信號的特徵。
+* 已上線訊號的&#x200B;**[!UICONTROL Onboarded]**&#x200B;特徵。
 
-從 **[!UICONTROL Signal Dashboard]**，標識要在特徵中使用的信號，然後按一下 **[!UICONTROL Create Rule-Based Trait]** 或 **[!UICONTROL Create Onboarded Trait]** 的子菜單。
+若要從&#x200B;**[!UICONTROL Signal Dashboard]**&#x200B;建立新特徵，請識別您要在特徵中使用的訊號，然後按一下對應的&#x200B;**[!UICONTROL Create Rule-Based Trait]**&#x200B;或&#x200B;**[!UICONTROL Create Onboarded Trait]**&#x200B;連結。
 
 ![](assets/signals-create-trait.png)
 
-您將被重定向到 **[特性生成器](../../features/traits/about-trait-builder.md)** 來創造你的新特徵。
+系統會將您重新導向至&#x200B;**[特徵產生器](../../features/traits/about-trait-builder.md)**，以建立您的新特徵。
 
-## 通過信號搜索建立特徵 {#create-traits-from-signal-search}
+## 從訊號搜尋建立特徵 {#create-traits-from-signal-search}
 
-根據未在中顯示的已用或未使用信號建立特徵 [!UICONTROL Signal Dashboard]。
+根據[!UICONTROL Signal Dashboard]中未顯示的已使用或未使用訊號建立特徵。
 
-搜索特定信號，並基於結果建立基於規則或連接的特徵。 下面是如何做到的：
+搜尋特定訊號，並根據結果建立規則型或已上線的特徵。 以下是其操作方式：
 
-1. 轉到 **[!UICONTROL Audience Data > Signals > Search]** 並根據您要查找的鍵值對運行搜索，或者按一下 **[!UICONTROL Search]** 不輸入任何鍵值對來顯示所有結果。
-2. 在結果清單中確定要在特性中使用的信號。
-   * 要從一個信號建立特徵，請按一下相應的 **[!UICONTROL Create Rule-Based Trait]** 或 **[!UICONTROL Create Onboarded Trait]** 的子菜單。
-   * 要從多個信號中建立特徵，請按一下每個信號的相應複選框，然後按一下 **[!UICONTROL Create Trait from Multiple Signals]**。
+1. 移至&#x200B;**[!UICONTROL Audience Data > Signals > Search]**&#x200B;並根據您尋找的索引鍵值配對執行搜尋，或按一下&#x200B;**[!UICONTROL Search]**&#x200B;而不輸入任何索引鍵值配對以顯示所有結果。
+2. 在結果清單中，識別您要在特徵中使用的訊號。
+   * 若要從單一訊號建立特徵，請按一下對應的&#x200B;**[!UICONTROL Create Rule-Based Trait]**&#x200B;或&#x200B;**[!UICONTROL Create Onboarded Trait]**&#x200B;連結。
+   * 若要從多個訊號建立特徵，請按一下每個訊號對應的核取方塊，然後按一下&#x200B;**[!UICONTROL Create Trait from Multiple Signals]**。
 
    >[!NOTE]
-   >只能從同一類型的信號中建立特徵。 你不能根據即時信號和掛接信號的組合來創造一個特性。
+   >您只能從相同型別的訊號建立特徵。 您無法根據即時訊號和已上線的訊號的組合來建立特徵。
    >
    > ![](assets/signals-create-trait-search.png)
-   >你也可以從使用的信號中創造特徵。 已在特徵中使用的信號具有在中顯示的特徵數 **[!UICONTROL Included in Traits]** 的雙曲餘切值。 按一下箭頭查看包含該信號的特徵。
+   >您也可以從已使用的訊號建立特徵。 已用於特徵的訊號具有顯示在&#x200B;**[!UICONTROL Included in Traits]**&#x200B;欄中的特徵數。 按一下箭頭可檢視包含訊號的特徵。
    >
    >![](assets/signals-used-traits.png)
 
-3. 使用 **[特性生成器](../../features/traits/about-trait-builder.md)** 來創造你的新特徵。
+3. 使用&#x200B;**[特徵產生器](../../features/traits/about-trait-builder.md)**&#x200B;建立您的新特徵。

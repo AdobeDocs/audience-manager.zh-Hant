@@ -9,7 +9,7 @@ feature: Reporting Reference
 exl-id: 1e6531b2-bb39-4056-9d5e-164f50955f99
 source-git-commit: 3bddd51582f3f8c46908dba5c5ac1938cb480013
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '705'
 ht-degree: 95%
 
 ---
@@ -45,7 +45,7 @@ faq_reports.xml
 
 **如果我執行電子郵件行銷活動，如何判斷經過重新導向的使用者是從該行銷活動還是從其他來源進入我的網站？**
 
-請將行銷活動專屬的查詢字串附加至您要監控之網站區段的 URL。接下來，設定要用於擷取此變數的特徵規則。例如，如果URL通過類似的市場活動ID, `www.test123.com/electronics?campaign=123`，然後建立特徵規則以從 `h_referer` 具有查找標題的特性規則的變數 `h_referer = 'campaign=123'`。
+請將行銷活動專屬的查詢字串附加至您要監控之網站區段的 URL。接下來，設定要用於擷取此變數的特徵規則。例如，若您的URL傳入的行銷活動ID類似`www.test123.com/electronics?campaign=123`，那麼可建立一個特徵規則，使用會尋找類似`h_referer = 'campaign=123'`標題的特徵規則，從`h_referer`變數中擷取該資料。
 
 <br> 
 

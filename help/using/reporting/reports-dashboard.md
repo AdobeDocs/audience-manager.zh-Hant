@@ -1,5 +1,5 @@
 ---
-description: 使用儀表板可查看有關合作夥伴在指定時間範圍內按特性類型和段細分的唯一訪問者計數的資訊。
+description: 使用控制面板檢視合作夥伴在指定時間範圍內依特徵型別和區段劃分的不重複訪客計數相關資訊。
 seo-description: Use the Dashboard to view information about your partners' unique visitor counts broken down by trait types and segments for a specified time frame.
 seo-title: Reports Dashboard
 solution: Audience Manager
@@ -9,14 +9,14 @@ feature: Reporting Reference
 exl-id: 1ca0280a-d67b-46f7-9c58-effc5be4e38f
 source-git-commit: 92e2fcb5cea6560e9288ee5f819df52e9e4768b7
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 1%
+source-wordcount: '639'
+ht-degree: 0%
 
 ---
 
 # 報表控制面板 {#reports-dashboard}
 
-使用「儀表板」可查看有關指定時間範圍內按特性類型和段細分的唯一訪問者計數的資訊。
+使用控制面板檢視指定時間段內按特徵型別和區段劃分的不重複訪客計數相關資訊。
 
 <!-- 
 
@@ -24,54 +24,54 @@ c_dashboard.xml
 
  -->
 
-[!DNL Audience Manager] 使用 [!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])將用戶組權限擴展到 [!UICONTROL Dashboard]。 用戶只能查看儀表板上他們有權查看的資訊。 [!UICONTROL RBAC] 功能允許您控制內部團隊可以查看的報告資料。
+[!DNL Audience Manager]使用[!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])將使用者群組許可權延伸至[!UICONTROL Dashboard]。 使用者只能在控制面板上檢視他們有權檢視的資訊。 [!UICONTROL RBAC]功能可讓您控制內部團隊可以檢視哪些報告資料。
 
-例如，管理不同廣告商帳戶的代理可以配置用戶組權限，以便管理廣告商A帳戶的團隊無法查看廣告商B的報告資料。 此儀表板可用於排除資料傳遞問題。
+例如，管理不同廣告商帳戶的機構可以設定使用者群組許可權，好讓管理廣告商A帳戶的團隊無法看到廣告商B的報表資料。 此儀表板可用來疑難排解資料傳送問題。
 
-例如，如果您注意到具有唯一用戶類型（基於規則與已裝載）的分類的唯一用戶總數中出現「下降」或「高峰」，則您有一個更好的起點來跟蹤潛在的資料傳遞問題。 如果您注意到唯一用戶總數和已登入的唯一用戶數量有所下降，則可以轉到 [!UICONTROL On-boarding Status] 報告以查看入站檔案是否有問題。
+例如，如果您發現不重複使用者總數出現谷值或尖峰，且有不重複使用者型別（規則型與已上線）的劃分，您會有一個更好的起點，以便追蹤潛在的資料傳送問題。 如果您發現不重複使用者總數和已上線的不重複使用者數均下降，您可以前往[!UICONTROL On-boarding Status]報表，檢視傳入檔案是否有問題。
 
-**要訪問儀表板：**
+**存取儀表板：**
 
-1. 在頂部導航菜單中，按一下 **[!UICONTROL Dashboard]**。
-2. *可選* 從下拉清單(7天、14天（預設值）、30天或60天)中選擇上次報告日期的所需時間範圍。
+1. 在頂端導覽功能表中，按一下&#x200B;**[!UICONTROL Dashboard]**。
+2. *選擇性*&#x200B;從下拉式清單中選取上一個報告日期所要的時間範圍(7天、14天（預設值）、30天或60天)。
 
-   根據所選期間， [!UICONTROL Largest Traits] > [!UICONTROL Most Changed Traits] 和 [!UICONTROL Largest Segments] > [!UICONTROL Most Changed Segments] 面板顯示在截至今天的時段與相同長度的前一時段的受眾中唯一訪問者的變化。 例如，如果選擇7天，則增量將比較截止到今天的前七天內的唯一訪問者與截止到七天前的七天內的唯一訪問者。
+   根據選取的期間，[!UICONTROL Largest Traits] > [!UICONTROL Most Changed Traits]和[!UICONTROL Largest Segments] > [!UICONTROL Most Changed Segments]面板中的差異變更，會顯示今天結束期間與相同長度之前期間對象中不重複訪客的變更。 例如，如果您選取「7天」，差值會比較今天結束的前七天不重複訪客與七天前結束的七天不重複訪客。
 
    >[!NOTE]
    >
-   >通過運行 [!UICONTROL Trend] 報告。 例如，如果您在過去七天內看到異常大的增量更改，則可以運行 [!UICONTROL Trend] 報告過去14天(2 x 7)以更好地瞭解數字。
+   >您可以執行[!UICONTROL Trend]報告來調查異常的差異變更。 例如，如果您在過去七天內看到異常大的差異變更，您可以執行過去14天(2 x 7)的[!UICONTROL Trend]報告，以更清楚瞭解數字。
 
-   根據登錄用戶的權限，將顯示以下面板：
+   視登入使用者的許可權而定，系統會顯示下列面板：
 
-   * [合作夥伴Uniques](../reporting/reports-dashboard.md#partner-uniques)
-   * [最大特徵/最改變的特徵](../reporting/reports-dashboard.md#largest-traits)
-   * [最大段/更改最多的段](../reporting/reports-dashboard.md#most-changed-segments)
+   * [夥伴不重複](../reporting/reports-dashboard.md#partner-uniques)
+   * [最大特徵/最多變更的特徵](../reporting/reports-dashboard.md#largest-traits)
+   * [最大區段/最多變更的區段](../reporting/reports-dashboard.md#most-changed-segments)
 
-3. *可選* 按一下 **[!UICONTROL Normalize]** 顯示所有相同比例的資料。 您還可以將滑鼠指針置於任何資料點上以查看詳細資訊。
+3. *選擇性*&#x200B;按一下任何圖表上方的&#x200B;**[!UICONTROL Normalize]**，以相同比例顯示所有資料。 您也可以將滑鼠移至任何資料點上，以檢視詳細資訊。
 
-## 合作夥伴Uniques {#partner-uniques}
+## 合作夥伴獨一無二 {#partner-uniques}
 
-查看所需權限： [!UICONTROL View All Traits]。
+檢視所需的許可權： [!UICONTROL View All Traits]。
 
 ![](assets/partner_uniques.png)
 
-此面板顯示指定時間範圍內的唯一訪問者數。 顏色編碼的單個線條表示使用算法、基於規則和附件特徵捕獲的唯一訪問者總數和數量。
+此面板會顯示指定時段內的不重複訪客數量。 個別、以顏色編碼的折線代表使用演演算法、規則型和已上線特徵擷取的不重複訪客總數。
 
 >[!NOTE]
 >
->唯一訪問者總數表示通過基於規則或已登入的特徵捕獲的訪問者。 但是，唯一訪問者總數不等於使用基於規則和已登入的特徵捕獲的唯一訪問者總數。 這兩種特性類型中的任意一種都可能代表同一唯一用戶。
+>不重複訪客的總數代表透過規則型或已上線特徵擷取的訪客。 不過，不重複訪客的總數並不等於使用規則型特徵和已上線特徵擷取的不重複訪客總數。 在這兩種特徵型別中，同一不重複使用者可能會出現。
 
-## 最大特徵/最改變的特徵 {#largest-traits}
+## 最大特徵/變化最多特徵 {#largest-traits}
 
-查看所需權限： [!UICONTROL View Traits]。
+檢視所需的許可權： [!UICONTROL View Traits]。
 
 ![](assets/largest_traits.png)
 
-此面板顯示由各種特徵捕獲的唯一訪問者的數量。
+此面板會顯示各種特徵擷取的不重複訪客數量。
 
-使用 **[!UICONTROL Show]** 下拉清單，顯示有關不同類型特徵的資訊： [!UICONTROL All Traits]。 [!UICONTROL Algorithmic]。 [!UICONTROL Onboarded]或 [!UICONTROL Rule-Based]。
+使用&#x200B;**[!UICONTROL Show]**&#x200B;下拉式清單來顯示不同特徵型別的相關資訊： [!UICONTROL All Traits]、[!UICONTROL Algorithmic]、[!UICONTROL Onboarded]或[!UICONTROL Rule-Based]。
 
-此面板包含以下頁籤：
+此面板包含下列標籤：
 
 <table id="table_DA48BDEB4E0143BEA4EB85AC26FF6AE3"> 
  <thead> 
@@ -82,25 +82,25 @@ c_dashboard.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 最大特徵</span> </p> </td> 
-   <td colname="col2"> <p>顯示有關按編號（從最高到最低）排序的唯一訪問者數的資訊，還列出指定時間範圍內唯一訪問者的增量更改。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">最大特徵</span> </p> </td> 
+   <td colname="col2"> <p>顯示按數字排序的不重複訪客數目相關資訊（最高至最低），也會列出指定時間範圍內不重複訪客的差異變更。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 最改變的特性</span> </p> </td> 
-   <td colname="col2"> <p>顯示有關按增量更改排序的唯一訪問者數的資訊。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">變更次數最多的特徵</span> </p> </td> 
+   <td colname="col2"> <p>顯示依差異變更排序的不重複訪客數目的相關資訊。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 最大段/更改最多的段 {#most-changed-segments}
+## 最大區段/最多變更的區段 {#most-changed-segments}
 
-查看所需權限： [!UICONTROL View Segments]。
+檢視所需的許可權： [!UICONTROL View Segments]。
 
 ![](assets/largest_segments.png)
 
-此面板即時顯示各段捕獲的唯一訪問者數。
+此面板會顯示不同區段即時擷取的不重複訪客數量。
 
-此面板包含以下頁籤：
+此面板包含下列標籤：
 
 <table id="table_8E22E0579FA74C5A86CC40B40B2548BE"> 
  <thead> 
@@ -111,12 +111,12 @@ c_dashboard.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 最大段</span> </p> </td> 
-   <td colname="col2"> <p>顯示有關指定時間範圍內唯一訪問者的數量和唯一訪問者的增量更改的資訊。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">最大區段</span> </p> </td> 
+   <td colname="col2"> <p>顯示特定時段內不重複訪客的數目和不重複訪客的差異變更。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> 更改最多的段</span> </p> </td> 
-   <td colname="col2"> <p>顯示有關按增量更改排序的唯一訪問者數的資訊。 </p> </td> 
+   <td colname="col1"> <p><span class="wintitle">變更最多的區段</span> </p> </td> 
+   <td colname="col2"> <p>顯示依差異變更排序的不重複訪客數目的相關資訊。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

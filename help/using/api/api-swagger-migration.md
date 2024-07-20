@@ -1,28 +1,28 @@
 ---
-description: 在Audience Manager，我們是工程師，開發者，和你一樣的忍者。 與您一樣，我們希望使用可靠、準確的API文檔。 因此，我們在Swagger中重新編寫API內容並將其移動到新位置。 這些更改旨在幫助您改進Audience ManagerAPI代碼的體驗。
+description: 在Audience Manager，我們就像您一樣，是工程師、開發人員和程式碼忍者。 而且像您一樣，我們也想要使用可靠且精確的API檔案。 因此，我們在Swagger中重新撰寫API內容，並將其移至新位置。 這些變更旨在協助您改善Audience Manager API程式碼的體驗。
 seo-description: Here at Audience Manager, we're engineers, developers, and code ninjas just like you. And, like you, we want to work with reliable, accurate API documentation. As a result, we're re-writing our API content in Swagger and moving it to a new location. These changes are designed to help improve your experience with the Audience Manager API code.
 seo-title: Audience Manager API Code Migration
 solution: Audience Manager
-title: Audience Manager API 程式碼移轉
+title: Audience ManagerAPI程式碼移轉
 uuid: 93cc28c4-4b91-4c79-93d5-ece9bb4cc9d5
 feature: API
 exl-id: 081be8a7-5029-45b1-8fb1-0531d5090fe0
 source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 5%
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 
-# Audience Manager API 程式碼移轉 {#audience-manager-api-code-migration}
+# Audience ManagerAPI程式碼移轉 {#audience-manager-api-code-migration}
 
-在Audience Manager，我們是工程師，開發者，和你一樣的忍者。 和你一樣，我們想用可靠、準確的 [!DNL API] 文檔。 結果，我們重新寫 [!DNL API] 內容 [!DNL Swagger] 然後移到新地方。 這些更改旨在幫助您改進Audience Manager [!DNL API] 代碼。
+在Audience Manager，我們就像您一樣，是工程師、開發人員和程式碼忍者。 而且像您一樣，我們希望使用可靠、準確的[!DNL API]檔案。 因此，我們正在重新寫入[!DNL Swagger]中的[!DNL API]內容，並將其移至新位置。 這些變更旨在協助您改善Audience Manager[!DNL API]程式碼的體驗。
 
-## 《Movin,On Up》 {#code-migration-details}
+## 向上移動 {#code-migration-details}
 
 <!-- api-swagger-migration.xml -->
 
-的 [Adobe Audience ManagerAPI文檔](https://bank.demdex.com/portal/swagger/index.html) 站點是我們修訂後的 [!DNL API] 內容。 我們會嘗試重寫並移動幾組 [!DNL API] 方法。 這意味著您必須同時登記新位置和 [REST API](../api/rest-api-main/rest-api-main.md) 文檔以查找所有可用方法。 最終，所有公眾 [!DNL API]將在 [!DNL Audience Manager] [!DNL API] 文檔站點。 下表列出了已修訂和已遷移的 [!DNL API]s
+[Adobe Audience Manager API檔案](https://bank.demdex.com/portal/swagger/index.html)網站是我們修訂後[!DNL API]內容的新首頁。 我們將嘗試在每次發行時重新寫入並移動幾組[!DNL API]方法。 這表示您必須同時簽入新位置和[REST API](../api/rest-api-main/rest-api-main.md)檔案，才能找到所有可用的方法。 最終，所有公用[!DNL API]都會在[!DNL Audience Manager] [!DNL API]檔案網站上。 下表列出修訂和移轉的[!DNL API]。
 
 <!--
 
@@ -90,9 +90,9 @@ ht-degree: 5%
 | API 類型 | API方法 |
 |---------|----------|
 | **[!UICONTROL Algorithmic Models**] | [演算法模型](https://bank.demdex.com/portal/swagger/index.html#/Algorithmic_Models_API) |
-| **[!UICONTROL Audience Marketplace]** | <ul><li>[資料饋送](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/get_available_data_feeds_)</li><li>[資料饋送請求](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/post_available_data_feeds__dataSourceId__requests)</li><li>[資料源財務](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Finance%20API/get_data_feeds_billing_report)</li><li>[資料饋送計畫](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__plans_)</li><li>[資料源訂閱](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__subscriptions)</li></ul> |
-| **[!UICONTROL Data Sources]** | [資料來源 ](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
-| **[!UICONTROL Folders]** | <ul><li>[區段資料夾](https://bank.demdex.com/portal/swagger/index.html#/Segment_Folder_API)</li><li>[特性資料夾](https://bank.demdex.com/portal/swagger/index.html#/Trait%20Folder%20API)</li></ul> |
+| **[!UICONTROL Audience Marketplace]** | <ul><li>[資料饋送](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/get_available_data_feeds_)</li><li>[資料摘要要求](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Buyer%20API/post_available_data_feeds__dataSourceId__requests)</li><li>[資料摘要財務](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Finance%20API/get_data_feeds_billing_report)</li><li>[資料摘要計畫](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__plans_)</li><li>[資料摘要訂閱](https://bank.demdex.com/portal/swagger/index.html#/Audience%20Marketplace%20Seller%20API/get_data_feeds__dataSourceId__subscriptions)</li></ul> |
+| **[!UICONTROL Data Sources]** | [資料來源](https://bank.demdex.com/portal/swagger/index.html#/Data_Source_API) |
+| **[!UICONTROL Folders]** | <ul><li>[區段資料夾](https://bank.demdex.com/portal/swagger/index.html#/Segment_Folder_API)</li><li>[特徵資料夾](https://bank.demdex.com/portal/swagger/index.html#/Trait%20Folder%20API)</li></ul> |
 | **[!UICONTROL Reporting]** | [報表](https://bank.demdex.com/portal/swagger/index.html#/Reporting%20API) |
-| **[!UICONTROL Segments]** | <ul><li>[區段](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[段Test組](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[段Test組草稿API](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
+| **[!UICONTROL Segments]** | <ul><li>[區段](https://bank.demdex.com/portal/swagger/index.html#/Segments%20API)</li><li>[區段測試群組](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API)</li><li>[區段測試群組草稿API](https://bank.demdex.com/portal/swagger/index.html#/Segment%20Test%20Group%20API/post_segment_test_groups_drafts)</li></ul> |
 | **[!UICONTROL Traits]** | [特徵](https://bank.demdex.com/portal/swagger/index.html#/Traits%20API) |

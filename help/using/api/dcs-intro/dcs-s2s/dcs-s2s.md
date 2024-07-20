@@ -1,53 +1,52 @@
 ---
-description: 伺服器到伺服器(S2S)API提供了代碼和方法，使您能夠發送和接收DCS用戶資料，並在您自己的系統或應用程式中使用此資訊。
+description: 伺服器對伺服器(S2S) API提供程式碼和方法，可讓您傳送和接收DCS使用者資料，並在您自己的系統或應用程式中處理這些資訊。
 seo-description: Server-to-server (S2S) APIs provide code and methods that let you send and receive DCS user data and work with this information in your own systems or applications.
 seo-title: DCS APIs for Server-to-Server Data Transfers
 solution: Audience Manager
-title: 用於伺服器對伺服器資料傳輸的 DCS API
+title: 用於伺服器對伺服器資料傳輸的DCS API
 uuid: 8c369166-c8a7-46b0-9913-4c027f5b1df9
 feature: DCS
 exl-id: fd23d5e2-b74e-47ff-a4aa-3a4b2c7d39c5
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 10%
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 
-# 用於伺服器對伺服器資料傳輸的 DCS API{#dcs-apis-for-server-to-server-data-transfers}
+# 用於伺服器對伺服器資料傳輸的DCS API{#dcs-apis-for-server-to-server-data-transfers}
 
-伺服器到伺服器([!UICONTROL S2S]) [!DNL API]提供代碼和方法，以便您發送和接收 [!DNL DCS] 並在您自己的系統或應用程式中使用此資訊。
+伺服器對伺服器([!UICONTROL S2S]) [!DNL API]提供程式碼和方法，可讓您傳送和接收[!DNL DCS]使用者資料，並在您自己的系統或應用程式中處理這些資訊。
 
-## 常用案例 {#common-use-cases}
+## 常見使用案例 {#common-use-cases}
 
-[!UICONTROL Server-to-server] 轉接可以幫助您根據訪問者興趣定制登錄頁或其他交互。 一些常見使用案例包括：
+[!UICONTROL Server-to-server]傳輸可協助您根據訪客興趣自訂登陸頁面或其他互動。 常見的使用案例包括：
 
-* 現場個性化：通過根據訪問者所屬的網段動態添加相關內容和行動要求，定制訪問者在您的站點上的體驗。
-* 改進客戶服務：導入 [!DNL Audience Manager] 段 [!DNL CRM] 或通過伺服器到伺服器的資料傳輸。 該資料可向呼叫服務或線上聊天操作員提供有關客戶的相關個性化資訊。
+* 站上個人化：根據訪客所屬的區段動態新增相關內容和行動號召，以量身打造訪客在您網站上的體驗。
+* 改善客戶服務：透過伺服器對伺服器資料傳輸，將[!DNL Audience Manager]區段匯入[!DNL CRM]或其他系統。 此資料可提供電話服務或線上聊天操作員有關客戶的相關個人化資訊。
 
-## 要求：用戶ID和區域伺服器名 {#requirements}
+## 需求：使用者ID與地區伺服器名稱 {#requirements}
 
-的 [!UICONTROL DCS API] 需要用戶ID和區域ID來驗證和發出資料請求。
+[!UICONTROL DCS API]需要使用者ID與地區ID才能驗證及提出資料要求。
 
-* 需要用戶ID，因為您需要將資料與特定訪問者關聯。
-* 需要區域ID將呼叫與伺服器名稱關聯，並且因為用戶資料儲存在地理上最接近站點訪問者的資料中心中。
+* 使用者ID為必要項，因為您必須將資料與特定訪客建立關聯。
+* 區域ID是將呼叫連結回伺服器名稱所必需，而且因為使用者資料會儲存在地理位置上最接近網站訪客的資料中心。
 
 ## 快速入門 {#getting-started}
 
-目前，本指南介紹如何：
+目前，本指南涵蓋如何：
 
-* 從中獲取用戶和區域ID [!DNL DCS] 您已接收的檔案 [!DNL Audience Manager] 客戶。
+* 從您可能已作為[!DNL Audience Manager]客戶收到的[!DNL DCS]檔案中取得使用者和地區ID。
 
-* 如果使用 [!DNL Visitor ID Service]。
-* 呼叫 [!DNL DCS] 獲得用戶和區域ID後。
+* 如果您使用[!DNL Visitor ID Service]，請取得使用者和地區ID。
+* 在擁有使用者和地區ID後，呼叫[!DNL DCS]。
 
-當新方法可用時，我們將添加新方法。 請參閱以下各節以開始。
+我們會在新方法可用時加以新增。 請參閱下列章節以開始使用。
 
-* [從 DCS 回應取得使用者 ID 和區域。](dcs-aam-ids.md)
-* [通過Experience CloudID獲取用戶ID和區域……](dcs-mcid-ids.md)
-* [發出伺服器對伺服器 DCS API 呼叫](dcs-s2s-calls.md)
+* [從DCS回應取得使用者ID和區域](dcs-aam-ids.md)
+* [透過Experience CloudID取得使用者ID和區域……](dcs-mcid-ids.md)
+* [發出伺服器對伺服器DCS API呼叫](dcs-s2s-calls.md)
 
 >[!MORELIKETHIS]
 >
->* [DCS API 參考](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)
-
+>* [DCS API參考](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)

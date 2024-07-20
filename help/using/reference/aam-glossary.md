@@ -9,7 +9,7 @@ feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1157'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audienc
 
 在[可定址的受眾](/help/using/features/addressable-audiences.md)中，此量度代表具備下列條件的裝置：
 * 已在回顧期間實現了規則型或已上線特徵
-   **和**
+  **和**
 * 具有與所選目的地同步的 ID (不論同步的時間為何)。
 
 

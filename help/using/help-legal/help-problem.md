@@ -8,7 +8,7 @@ feature: Support
 exl-id: 2f7b9dbe-7aac-41b0-aab8-3b703d7a2441
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ r_problem.xml
 
 * **電話：** 1-800-497-0335
 
-   若需美國境外的免付費電話，請參閱我們的[區域客戶服務聯絡電話](https://helpx.adobe.com/tw/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)網站。若系統要求您選取產品選項，請按 4 聯絡 [!DNL Audience Manager] 團隊。
+  若需美國境外的免付費電話，請參閱我們的[區域客戶服務聯絡電話](https://helpx.adobe.com/tw/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)網站。若系統要求您選取產品選項，請按 4 聯絡 [!DNL Audience Manager] 團隊。
 
 * **電子郵件：** amsupport@adobe.com
 

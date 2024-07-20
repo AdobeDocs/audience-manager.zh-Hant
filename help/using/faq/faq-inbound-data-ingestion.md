@@ -1,6 +1,6 @@
 ---
 description: 將離線資料匯入 Audience Manager 的常見問題集。
-keywords: ftp或s3或s3或ftp
+keywords: ftp或s3；s3或ftp
 seo-description: Frequently asked questions about bringing offline data into Audience Manager.
 seo-title: Inbound Customer Data Ingestion FAQ
 solution: Audience Manager
@@ -10,8 +10,8 @@ feature: Onboarding Offline Data
 exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 89%
+source-wordcount: '1343'
+ht-degree: 86%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 89%
 我們建議以下事項：
 
 * 與資料提供者合作，根據 Adobe 規格將每日傳入資料檔案格式化。如需檔案命名和語法要求，請參閱下列文件：
-   * [ID 同步檔案的名稱和內容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
+   * [ID同步檔案的名稱和內容要求](../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)
    * [傳入資料檔案內容：語法、無效字元、變數和範例](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md)
-   * [傳入資料檔案的 Amazon S3 名稱和檔案大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+   * [傳入資料檔案的Amazon S3名稱和檔案大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 * 請與您的 [!DNL Adobe] 顧問合作，將測試資料檔案傳輸至 [!DNL Adobe] 進行格式驗證。
 * 請與您的 [!DNL Adobe] 顧問合作，製作適合解讀資料檔案內容的分類法。
 * 在中繼/開發環境中，確認 ID 同步已設定為正確擷取資料提供者的訪客 ID，並將其即時傳輸 [!DNL Audience Manager] 至伺服器。
@@ -58,10 +58,10 @@ ht-degree: 89%
 
 **我可以先上傳傳入資料檔案 ([!DNL .sync] 或 [!DNL .overwrite] 檔)，再將 [!DNL Audience Manager] 程式碼部署到生產環境嗎？**
 
-是。只要你用 [!UICONTROL cross-device data source] 要儲存您上載的CRM資料，Audience Manager始終儲存資料。 事實上，在 [!UICONTROL Profile Merge Rules] 2019年10月啟動的增強Audience Manager允許只允許離線使用情形，您可以上載資料並對其執行操作，而根本不需要將Audience Manager代碼部署到生產環境中。 請參閱：
+是。只要您使用[!UICONTROL cross-device data source]儲存您所上傳的CRM資料，Audience Manager就會一律儲存資料。 事實上，繼Audience Manager於2019年10月推出[!UICONTROL Profile Merge Rules]增強功能（允許僅限離線使用案例）後，您就可以上傳資料和執行動作，完全無須將Audience Manager程式碼部署到生產環境。 請參閱：
 
 * [設定檔合併規則增強功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
-* [!UICONTROL People-based Destinations] - [基於僅離線資料的個性化](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
+* [!UICONTROL People-based Destinations] - [以僅限離線資料為基礎的Personalization](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 
@@ -154,9 +154,9 @@ FTP 檔案一經處理便會隨即移除。[!DNL S3] 檔案會在 30 天後移�
 
 * **完整：**&#x200B;完整檔案會覆寫您所有現有的訪客設定檔，並以該檔案中的資料取代這些設定檔中的資料。識別完整檔案的方式為附加至檔案名稱的 `.overwrite` 標籤。您可以使用 `.overwrite` 檔案重設訪客特徵或移除過時的淘汰特徵。
 
-   >[!NOTE]
-   >
-   >[!DNL .overwrite] 檔案只會覆寫與此資料提供者相關聯的 [!DNL Audience Manager] 設定檔資料。換言之，處理 [!DNL .overwrite] 檔案後，與訪客相關聯的所有 [!DNL Audience Manager] 資料都會保持不變。
+  >[!NOTE]
+  >
+  >[!DNL .overwrite] 檔案只會覆寫與此資料提供者相關聯的 [!DNL Audience Manager] 設定檔資料。換言之，處理 [!DNL .overwrite] 檔案後，與訪客相關聯的所有 [!DNL Audience Manager] 資料都會保持不變。
 
 * **增量：**&#x200B;增量檔案會將新資料附加至您現有的訪客設定檔中。識別增量檔案的方式為附加至檔案名稱的 `.sync` 標籤。傳入增量檔案並不會清除或覆寫現有的設定檔。
 
@@ -169,7 +169,7 @@ FTP 檔案一經處理便會隨即移除。[!DNL S3] 檔案會在 30 天後移�
 
 有關完整和增量檔案類型的詳細資訊，請參閱：
 
-* [傳入資料檔案的 Amazon S3 名稱和檔案大小要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [傳入資料的Amazon S3名稱和檔案大小要求……](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
@@ -183,11 +183,11 @@ FTP 檔案一經處理便會隨即移除。[!DNL S3] 檔案會在 30 天後移�
 
 時間戳記用於記錄和保存記錄。格式正確的傳入檔案名稱所使用的語法需要時間戳記。請參閱：
 
-* [傳入資料檔案的 Amazon S3 名稱要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [傳入資料檔案的Amazon S3名稱要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
-**什麼是 [!DNL Data Provider ID (DPID)] 我怎麼弄到的？**
+**什麼是[!DNL Data Provider ID (DPID)]？我要如何取得？**
 
 Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [DPID (資料提供者 ID)](../reference/ids-in-aam.md)。此 ID 不重複且不會變更。
 
@@ -204,13 +204,13 @@ Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [
 是。請參閱：
 
 * [傳入資料傳輸檔案的檔案壓縮](../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)
-* [傳入資料檔案的 Amazon S3 名稱要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
+* [傳入資料檔案的Amazon S3名稱要求](../integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)
 
  
 
 **我資料來源資料庫中的主索引鍵是電子郵件地址。這是否會視為個人識別資訊？**
 
-是。[!DNL Audience Manager] 不會將電子郵件地址儲存在其資料庫中。在啟動ID同步之前，應為訪問者分配隨機生成的ID或電子郵件地址的單向散列版本。
+是。[!DNL Audience Manager] 不會將電子郵件地址儲存在其資料庫中。在起始ID同步之前，應為訪客指派隨機產生的ID或電子郵件地址的單向雜湊版本。
 
  
 
@@ -226,7 +226,7 @@ Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [
 
 >[!WARNING]
 >
->我們正逐步淘汰對 FTP 組態的支援。雖然現有FTP整合仍支援入站資料檔案接收，但強烈建議使用 [!DNL Amazon S3] 用於新整合的板載離線資料。 如需詳細資訊，請參閱[傳入資料檔案的 Amazon S3 名稱和檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
+>我們正逐步淘汰對 FTP 組態的支援。雖然現有FTP整合仍支援傳入資料檔案擷取，但強烈建議使用[!DNL Amazon S3]將離線資料上線以進行新整合。 如需詳細資訊，請參閱[傳入資料檔案的 Amazon S3 名稱和檔案大小要求](/help/using/integration/sending-audience-data/batch-data-transfer-explained/inbound-s3-filenames.md)。
 
  
 
@@ -247,4 +247,3 @@ Adobe 顧問會為您的特定資料來源指派一個三位數或四位數的 [
 >[!MORELIKETHIS]
 >
 >* [批次資料傳輸流程說明](../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-explained.md)
-

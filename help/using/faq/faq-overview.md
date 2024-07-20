@@ -9,11 +9,11 @@ exl-id: 2777fdf1-df79-4111-9fe4-d2638ee10395
 source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# Audience Manager 常見問題集 概述 {#audience-manager-faq}
+# Audience Manager常見問題集概述 {#audience-manager-faq}
 
 本節將 Audience Manager 各種功能的常見問題集類別彙總為一份清單。
 
