@@ -3,7 +3,7 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 使用手冊
-user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當對象的詳細資料。
+user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當客群的詳細資料。
 feature-set: Audience Manager
 source-git-commit: b0c35d79a07b481e332ddf8f4aedab5484416a51
 workflow-type: tm+mt
@@ -53,7 +53,7 @@ ht-degree: 25%
          + [瞭解相似建模](features/algorithmic-models/understanding-models.md)
          + [建立相似模型](features/algorithmic-models/create-model.md)
          + [相似建模：特徵排除](features/algorithmic-models/trait-exclusion-algo-models.md)
-      + 預測受眾 {#predictive-audiences}
+      + 預測客群 {#predictive-audiences}
          + [預測受眾概述](features/algorithmic-models/predictive-audiences.md)
          + [預測受眾快速入門](features/algorithmic-models/predictive-audiences-start.md)
          + [預測受眾報表](features/algorithmic-models/predictive-audiences-reporting.md)
@@ -64,7 +64,7 @@ ht-degree: 25%
       + [測試群組報表](features/audience-lab/audience-lab-reporting-view.md)
       + [Audience Lab使用案例](features/audience-lab/audience-lab-use-cases.md)
       + [Audience Lab進階功能](features/audience-lab/audience-lab-advanced.md)
-   + 訪客交易市場{#audience-marketplace}
+   + 客群市場{#audience-marketplace}
       + [Audience Marketplace](features/audience-marketplace/audience-marketplace.md)
       + 適用於資料提供者的 Audience Marketplace{#audience-marketplace-for-data-providers}
          + [適用於資料提供者的Audience Marketplace](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
@@ -183,7 +183,7 @@ ht-degree: 25%
    + [報表控制面板](reporting/reports-dashboard.md)
    + [一般報表](reporting/general-reports.md)
    + [趨勢報表](reporting/trend-reports.md)
-   + 受眾最佳化報表 {#audience-optimization-reports}
+   + 客群最佳化報告 {#audience-optimization-reports}
       + [Audience Optimization報表](reporting/audience-optimization-reports/audience-optimization-reports.md)
       + 廣告商適用的 Audience Optimization {#audience-optimization-advertisers}
          + [廣告商Audience Optimization概觀](reporting/audience-optimization-reports/aor-advertisers/aor-advertisers.md)
@@ -203,7 +203,7 @@ ht-degree: 25%
          + [廣告單位重疊](reporting/audience-optimization-reports/aor-publishers/publisher-ad-unit-overlap.md)
          + [區段至廣告單位重疊](reporting/audience-optimization-reports/aor-publishers/publisher-segment-ad-unit-overlap.md)
          + [不重複使用者觸及](reporting/audience-optimization-reports/aor-publishers/publisher-unique-reach.md)
-      + 受眾最佳化報表的資料和中繼資料檔案及可操作的記錄檔 {#data-and-metadata-files}
+      + 客群最佳化報告的資料和後設資料檔案及可操作的記錄檔 {#data-and-metadata-files}
          + [記錄資料和中繼資料檔案](reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
          + [Audience Optimization報表的資料檔案和可操作的記錄檔](reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
          + [中繼資料檔案的概述與對應](reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)
@@ -309,7 +309,7 @@ ht-degree: 25%
       + [可操作的記錄檔](integration/media-data-integration/actionable-log-files.md)
       + [透過畫素呼叫擷取行銷活動的曝光資料](integration/media-data-integration/impression-data-pixels.md)
       + [透過畫素呼叫擷取行銷活動的點按資料](integration/media-data-integration/click-data-pixels.md)
-   + 接收受眾資料{#receiving-audience-data}
+   + 接收客群資料{#receiving-audience-data}
       + [接收受眾資料概述](integration/receiving-audience-data/receiving-audience-data-overview.md)
       + [傳出資料傳輸的識別碼同步](integration/receiving-audience-data/id-sync-outbound.md)
       + 即時傳出資料傳輸{#real-time-outbound-transfers}
@@ -324,7 +324,7 @@ ht-degree: 25%
          + [輸出範本巨集](integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
          + [輸出巨集範例](integration/receiving-audience-data/batch-outbound-transfers/outbound-macro-examples.md)
          + [請對您的傳出檔案使用Amazon S3跨帳戶貯體許可權](integration/receiving-audience-data/batch-outbound-transfers/authorize-s3-cross-bucket.md)
-   + 傳送受眾資料{#sending-audience-data}
+   + 傳送客群資料{#sending-audience-data}
       + [傳送受眾資料](integration/sending-audience-data/send-audience-data.md)
       + 即時傳入資料整合 {#real-time-inbound-data-integration}
          + [傳入、即時資料傳輸的技術規格](integration/sending-audience-data/real-time-data-integration/real-time-tech-specs.md)
@@ -400,7 +400,7 @@ ht-degree: 25%
    + [產品特色與功能常見問題集](faq/faq-features.md)
    + [設定檔合併規則與裝置圖表常見問題集](faq/faq-profile-merge.md)
    + [相似建模常見問題集](faq/faq-lookalike-modeling.md)
-   + [預測受眾常見問題集](faq/faq-predictive-audiences.md)
+   + [預測客群常見問題集](faq/faq-predictive-audiences.md)
    + [目標定位常見問題集](faq/faq-targeting.md)
    + [報表常見問題集](faq/faq-reporting.md)
 + 協助與法律{#help-and-legal}
