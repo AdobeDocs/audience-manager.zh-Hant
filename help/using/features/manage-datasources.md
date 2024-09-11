@@ -8,7 +8,7 @@ title: 管理資料來源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: 6ec76227dd8c7581550c3d95e24fc5b6a4b01093
+source-git-commit: e41dddd022b6fa02cab3e16bd21536d41584975f
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -76,7 +76,7 @@ ht-degree: 0%
 >請注意下列限制：
 >
 >* 您無法刪除[作用中對象或資料Source同步特徵](../features/traits/client-activity-synced-audience-traits.md)。
->* 對於使用Adobe Analytics的客戶：Audience Manager不允許您刪除從[!DNL Analytics]報表套裝自動建立的資料來源。 使用[核心服務](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services-landing.html)來取消這些資料來源的對應。
+>* 對於使用Adobe Analytics的客戶：Audience Manager不允許您刪除從[!DNL Analytics]報表套裝自動建立的資料來源。 使用[核心服務](https://experienceleague.adobe.com/en/docs/core-services/interface/services/customer-attributes/attributes)來取消這些資料來源的對應。
 
 1. 按一下&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**。
 1. 選取一或多個資料來源旁的核取方塊。
