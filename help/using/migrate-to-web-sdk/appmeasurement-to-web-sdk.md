@@ -2,18 +2,80 @@
 title: 將您的資料收集程式庫更新，以便從AppMeasurementJavaScript程式庫將其Audience Manager至Web SDK JavaScript程式庫。
 description: 瞭解將資料收集程式庫從AppMeasurementJavaScript程式庫更新為Web SDK JavaScript程式庫以進行Audience Manager的步驟。
 exl-id: 9c771d6c-4cfa-4929-9a79-881d4e8643e4
-source-git-commit: a50aaeb5e384685100dc3ecc1d6d45f1c41461d0
+source-git-commit: 3ba980e97763866d82bdf94109068f1f1f8f63d2
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
+
 
 # 將您的資料收集程式庫更新，以便從AppMeasurementJavaScript程式庫Audience Manager至Web SDK JavaScript程式庫
 
 ## 目標對象 {#intended-audience}
 
-本頁適用於使用AppMeasurement將網頁集合資料匯入Audience Manager的Audience Manager客戶。 若客戶使用[Audience Manager標籤擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview)，請參閱如何將Audience Manager[的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)的指南。
+此頁面適用於使用[!DNL AppMeasurement] JavaScript資料庫將Web資料傳送至Audience Manager的Audience Manager和Adobe Analytics客戶。
+
+根據您目前的資料收集方法，請參閱下表的Web SDK移轉步驟指南。
+
+| 您現有的資料收集方法 | Web SDK移轉指示 |
+|---------|----------|
+| [!DNL AppMeasurement] JavaScript資料庫 | 請依照本指南的指示操作。 |
+| [!DNL Audience Manager] [標籤延伸模組](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
+| [!DNL AppMeasurement] JavaScript資料庫+ [!DNL Audience Manager] [DIL資料庫](../dil/dil-overview.md) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
+
+## 移轉概述 {#overview}
+
+從[!DNL AppMeasurement]移轉至[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)主要是Adobe Analytics移轉。 針對Audience Manager客戶，此移轉作業也包含Audience Manager。 兩者必須一起移轉。 如果您主要處理Audience Manager，請務必讓Analytics團隊參與此移轉。
+
+如果您使用[!DNL AppMeasurement]進行Audience Manager資料收集，您目前使用[!DNL Server-side Forwarding (SSF)]方法將分析資料傳送至Audience Manager。 在此設定中，Analytics資料收集請求會轉送至Audience Manager，後者也會處理頁面的Audience Manager回應。
+
+這是多年的標準方法，很可能是您目前的設定。 如果您的[!DNL AppMeasurement]程式庫包含`AudienceManagement`模組，而您的資料收集呼叫在要求(`/b/ss/examplereportsuite/10/`)中包含`/10/`路徑，則本指南適用於您。
+
+## 伺服器端轉送(SSF)與Web SDK資料流程 {#data-flows}
+
+了解轉向Web SDK時Analytics與Audience Manager之間的資料流程差異(和Edge Network)對以下指示至關重要。
+
+透過伺服器端轉送，Analytics區域資料收集節點會收集資料，將其轉換為Audience Manager接受的訊號，傳送給Audience Manager，並將Audience Manager回應傳回至頁面。 [!DNL AppMeasurement]程式庫中的[!DNL AudienceManagement]模組接著會處理回應（例如，卸除Cookie、傳送URL目的地）。 此程式稱為伺服器端轉送，因為Analytics會使用Adobe伺服器將資料轉送至Audience Manager。
+
+透過Web SDK，Edge Network會以個別動作將資料傳送至Analytics和Audience Manager。 Web SDK是將資料傳送至所有解決方案的單一資料庫，Edge Network會將與解決方案無關的資料點轉換為解決方案專用格式。
+
+在這個新的資料流程中，所有資料都會傳送到Edge Network[資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)，您可以[設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)，視需要傳送資料到Adobe解決方案。 若為Audience Manager，在資料流上啟用Audience Manager服務會將[!DNL XDM]和Analytics資料轉換為Audience Manager接受的訊號。 Edge Network也會將Audience Manager回應傳回至頁面，其中Web SDK會處理回應，類似於[!DNL AppMeasurement]和[!DNL AudienceManagement]模組的處理方式。
+
+## 標籤與非標籤移轉 {#tags-vs-non-tags}
+
+無論您是使用具有[!DNL AppMeasurement]擴充功能的標籤、其他標籤管理系統中的[!DNL AppMeasurement]資料庫，或直接在頁面上放置[!DNL AppMeasurement]，將Audience Manager移轉至Web SDK的步驟都相同。 由於Audience Manager移轉取決於Analytics移轉，因此從[!DNL AppMeasurement]移轉至Web SDK的步驟會在Analytics移轉期間決定。
+
+該資訊包含在[標籤](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)型實作的Analytics檔案中。
+
+## XDM和`data.__adobe.`節點 {#xdm-data-nodes}
+
+[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的主要功能之一是將資料傳送至[Real-time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home)。 為了達成此目的，同時仍會收集其他Experience Cloud解決方案的資料，而不需要完全的重新實作，解決方案的特定資料會在資料收集伺服器呼叫中加以區隔。 此呼叫使用名為[體驗資料模型(XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)的標準化JSON結構描述
+
+解決方案無關的元素（例如關於瀏覽器和裝置的資訊）會以預先確定的XDM結構傳送給Edge Network。 Edge Network會將此資料轉換為解決方案專用格式。 不過，Target、Analytics和Audience Manager專屬的資料會儲存在XDM裝載內的專用`data.__adobe`節點中。
+
+例如：
+
+* Analytics變數`s.eVar1`在XDM承載中呈現為`data.__adobe.analytics.evar1`。
+* 與客戶忠誠度狀態相關的Target引數會儲存為`data.__adobe.target.loyaltyStatus`。
+
+`__adobe`節點中的資料會傳送至個別解決方案(例如Analytics和Audience Manager)，而不會傳送至Experience Platform，即使資料流中已啟用Experience Platform服務亦然。 這表示您可以保留目前的Analytics和Audience Manager設定，同時靈活地將任何必要的資料元素對應至XDM結構描述元素，以即時用於使用[資料收集的資料準備](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)進行Experience Platform的使用案例。
+
+例如，在結帳期間用於報告購物車內容的Analytics `s.products`字串仍可以原始格式傳送到Analytics和Audience Manager。 同時，您可以使用此字串的元素，針對Experience Platform使用案例建立更直覺式的XDM購物車結構描述。
+
+由於大多數Audience Manager實作依賴轉送至Audience Manager的Analytics資料，因此您的許多Audience Manager特徵運算式可能以Analytics變數（`c_evar#`、`c_prop#`和`c_events`）為基礎。 為避免在移轉期間使用XDM格式重建特徵運算式，預設會設定Edge Network將`data.__adobe.analytics`節點中找到的任何Analytics變數轉換為Audience Manager訊號。 此程式類似於伺服器端轉送工作流程。
+
+Edge Network可以執行此轉換，因為來自頁面的單一資料收集呼叫會傳送到單一資料流，以饋送多個Adobe解決方案。 因此，大部分從[!DNL AppMeasurement]移轉至Analytics和Audience Manager的Web SDK時，都會主要使用`data.__adobe.analytics`節點。
+
+Edge Network會將裝置和瀏覽器資料從XDM裝載和封包標題轉換為Audience Manager訊號。 這可讓您繼續在Audience Manager特徵運算式中使用`h_`和`d_`平台金鑰。
+
+## `data.__adobe.audiencemanager`節點 {#data-note}
+
+`data.__adobe.audiencemanager`節點用於不依賴Analytics的Audience Manager實作。 它儲存先前透過[Audience Manager資料庫](../dil/dil-overview.md)資料庫傳送的自訂DIL索引鍵/值組，如[標籤延伸移轉指南](dil-extension-to-web-sdk.md)中所述。
+
+雖然本指南概述的移轉不需要`data.__adobe.audiencemanager`節點，但此處說明的新資料流程可讓資料傳送至Audience Manager，而不需在Analytics中記錄。
+
+如果您需要傳送自訂索引鍵/值組至Audience Manager，而不將其納入Analytics，則可使用`data.__adobe.audiencemanager`節點。 此節點中的任何資料集都會附加至資料收集伺服器呼叫中Audience Manager轉換的Analytics資料。
 
 ## 此實作路徑的優缺點
 
@@ -30,124 +92,77 @@ Adobe建議在下列情況下使用此實施路徑：
 
 ## 移轉至Web SDK所需的步驟
 
-下列步驟包含需努力達成的具體目標。 按一下每個步驟，以取得如何完成的詳細指示。
+請依照下列步驟，將您的資料收集整合移轉至Web SDK。
 
-+++**1. 建立和設定資料流**
++++**1. 移轉您的Analytics實作**。
 
-在Adobe Experience Platform Data Collection中建立資料流。 當您傳送資料至此資料流時，它會轉送資料至Audience Manager。 未來，相同的資料流會將資料轉送至Real-Time CDP。
+請與您的Analytics團隊合作，遵循[標籤](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)型實作中的Analytics移轉步驟。 移轉Analytics實作後，請繼續下列步驟。
+
++++
+
++++**2.將Audience Manager服務新增至資料流**
+
+將Audience Manager服務新增至您在步驟1建立的資料流。
 
 1. 導覽至[experience.adobe.com](https://experience.adobe.com)並使用您的認證登入。
 1. 使用右上方的首頁或產品選擇器來導覽至&#x200B;**[!UICONTROL Data Collection]**。
 1. 在左側導覽中，選取&#x200B;**[!UICONTROL Datastreams]**。
-1. 選取&#x200B;**[!UICONTROL New Datastream]**。
-1. 輸入所要的名稱，然後選取&#x200B;**[!UICONTROL Save]**。
-1. 建立資料流後，請選取&#x200B;**[!UICONTROL Add Service]**。
+1. 選取您在步驟1的Analytics移轉過程中建立的資料串流。
+1. 選取&#x200B;**[!UICONTROL Add Service]**。
 1. 在服務下拉式功能表中，選取&#x200B;**[!UICONTROL Audience Manager]**。
+1. 檢查&#x200B;**[!UICONTROL Cookie Destinations Enabled]**&#x200B;和&#x200B;**[!UICONTROL URL Destinations Enabled]**&#x200B;選項。 這些選項可讓Edge Network將這些Audience Manager目的地型別傳回頁面。
+1. 確定&#x200B;**[!UICONTROL Enable XDM Flattened Fields]**&#x200B;已停用。 此選項會停用Analytics變數自動轉換為Audience Manager訊號的功能。 此選項旨在為在Edge Network自動將Analytics資料轉換為Audience Manager訊號之前移轉至Web SDK的使用者維持回溯相容性。
+
+   >[!NOTE]
+   >
+   >若要在啟用&#x200B;**[!UICONTROL Enabled XDM Flattened Fields]**&#x200B;選項的情況下移轉至Web SDK，必須更新XDM格式的Audience Manager中所需的任何資料，以及使用prop、eVar或事件的所有Audience Manager特徵，以尋找XDM格式的資料。 Adobe建議將此選項保持停用。
+
 
    ![新增Audience Manager服務](assets/add-service.png) {style="border:1px solid lightslategray"}
+
+1. 選取&#x200B;**[!UICONTROL Save]**&#x200B;以儲存資料流組態。
 
 您的資料流現在已準備好接收資料並傳遞給Audience Manager。 請記下資料串流ID，因為此ID在程式碼中設定Web SDK時是必要的。
 
 +++
 
-+++**2.安裝Web SDK JavaScript程式庫**
++++**3.啟用協力廠商ID同步並設定Audience Manager容器識別碼**
 
-請參閱[使用JavaScript程式庫安裝Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library)，以取得詳細資訊和要使用的程式碼區塊。 參考最新版本的`alloy.js`，以便使用它的方法呼叫。
+1. 導覽至[experience.adobe.com](https://experience.adobe.com)並使用您的認證登入。
+1. 使用右上方的首頁或產品選擇器來導覽至&#x200B;**[!UICONTROL Data Collection]**。
+1. 在左側導覽中，選取&#x200B;**[!UICONTROL Datastreams]**。
+1. 選取您在步驟1的Analytics移轉過程中建立的資料串流。
+1. 選取資料流設定頁面右上角的&#x200B;**[!UICONTROL Edit]**。
+1. 展開&#x200B;**[!UICONTROL Advanced Options]**&#x200B;下拉式功能表，並啟用&#x200B;**[!UICONTROL Third Party ID Sync]**&#x200B;功能（如果尚未啟用）。 此選項會告訴Edge Network傳回Audience Manager與Experience Platform資料合作夥伴的合作夥伴ID同步。
 
-+++
+   ![啟用協力廠商ID同步處理。](assets/third-party-id-sync.png) {style="border:1px solid lightslategray"}
 
-+++**3.設定Web SDK**
+1. 在大多數情況下，您可以將&#x200B;**[!UICONTROL Third Party ID Sync Container ID]**&#x200B;欄位保留空白。 它將預設為`0`。 不過，如果您偏好確保使用正確的容器ID，請遵循下列步驟：
+   * 以無痕模式或私密模式開啟瀏覽器視窗，並導覽至屬於移轉一部分的頁面。
+   * 使用瀏覽器的開發人員工具來篩選`dpm.demdex.net/id`的網路呼叫。 此呼叫只會在首次造訪的第一個頁面上觸發，因此需要無痕瀏覽器或私人瀏覽器。
+   * 檢視請求的裝載。 如果`d_nsid`引數不是零，請將其複製到&#x200B;**[!UICONTROL Third Party ID Sync Container ID]**&#x200B;欄位。
 
-使用Web SDK [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview)命令，將您的實作設定為指向步驟1中建立的資料流。 必須在每個頁面上設定`configure`命令，因此您可以將其與程式庫安裝程式碼一併納入。
+1. 選取&#x200B;**[!UICONTROL Save]**。
 
-在Web SDK `configure`命令中使用[`edgeConfigId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/edgeconfigid)和[`orgId`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/orgid)屬性：
-
-* 將`edgeConfigId`設定為在上一步中擷取的資料串流識別碼。
-* 將`orgId`設定為您的組織的IMS組織ID。
-
-```js
-alloy("configure", {
-    "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
-    "orgId": "ADB3LETTERSANDNUMBERS@AdobeOrg"
-});
-```
-
-您可以視您組織的實作需求，選擇在[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview)命令中設定其他屬性。
+您的資料流現在已準備好將資料傳送至Audience Manager，並將Audience Manager回應傳遞至Web SDK。
 
 +++
 
-+++**4.更新程式碼邏輯以使用JSON裝載**
+## 在Analytics報表套裝管理員UI中設定伺服器端轉送和Audience Analytics {#configure-ssf-analytics}
 
-變更您的Audience Manager實作，使其不依賴`AppMeasurement.js`或`s`物件。 請改為將變數設為格式正確的JavaScript物件，此物件在傳送至Adobe時會轉換為JSON物件。 您的網站上有[資料層](https://experienceleague.adobe.com/en/docs/analytics/implementation/prepare/data-layer)在設定值時非常有幫助，因為您可以繼續參考這些相同的值。
+如果您熟悉Analytics [伺服器端轉送](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)功能，可能會想知道：「*是否應在Analytics報表套裝管理員UI中停用伺服器端轉送設定，以防止將Analytics資料傳送至Audience Manager兩次？*」。
 
-若要傳送資料給Audience Manager，Web SDK裝載必須搭配此物件內設定的所有Analytics變數使用`data.__adobe.audiencemanager`。 此物件中的變數與其AppMeasurement變數的對應變數具有相同的名稱和格式。 例如，如果您設定`products`變數，請勿像使用XDM一樣將其分割為個別物件。 如果您設定`s.products`變數，請完全將其加入為字串：
+答案為否，您不應停用此設定。 原因如下：
 
-```json
-{
-  "data": {
-    "__adobe": {
-      "audiencemanager": {
-        "products": "Shoes,Men's sneakers,1,49.99"
-      }
-    }
-  }
-}
-```
+啟用此設定並將[!DNL AudienceManagement]模組新增至頁面上的[!DNL AppMeasurement]資料庫時，所有傳送至該報表套裝的資料也會流入Audience Manager。
 
-最終，此承載包含所有需要的值，且實作中`s`物件的所有參考都會被移除。 您可以使用JavaScript提供的任何資源來設定此裝載物件，包括點標籤法來設定個別值。
+為了遵循GDPR隱私權法規，在某些情況下，可在Analytics中收集資料，但無法在Audience Manager中收集。 此外，某些情況下還涉及全域報表套裝和特定區域的使用案例，在這些案例中，部分資料收集呼叫不應傳送至Audience Manager。 為了解決此問題，Adobe推出伺服器端轉送「關閉按鈕」。
 
-```js
-// Define the payload and set objects within it
-var dataObj = {data: {__adobe: {audiencemanager: {}}}};
-dataObj.data.__adobe.audiencemanager.pageName = window.document.title;
-dataObj.data.__adobe.audiencemanager.eVar1 = "Example value";
+如[Analytics和GDPR法規遵循頁面著重於伺服器端轉送](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf-gdpr)中所述，將`cm.ssf=1`內容變數新增至Analytics資料收集伺服器可防止資料收集呼叫轉送至Audience Manager。
 
-// Alternatively, set values in an object and use a spread operator to achieve identical results
-var a = new Object;
-a.pageName = window.document.title;
-a.eVar1 = "Example value";
-var dataObj = {data:{__adobe:{audiencemanager:{...a}}}};
-```
+不停用此設定有兩個原因。
 
-+++
+1. 在資料流上啟用Audience Manager服務時，Edge Network會將`cm.ssf`變數附加至傳送給Analytics的所有資料收集要求。 這麼做也會防止Analytics資料傳送至Audience Manager。 在資料流上啟用Assurance服務後，所有用於驗證Analytics移轉的Audience Manager記錄都會顯示`cm.ssf=1`變數。
+1. 此設定也會啟用[!DNL Audience Analytics]整合的資料流。 如[Audience Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics/integration/audience-analytics/mc-audiences-aam)中所述，此整合需要伺服器端轉送，因為對Analytics資料收集伺服器的Audience Manager回應在處理前已新增到Analytics點選。 Edge Network中也會發生類似的程式。 啟用伺服器端轉送時，Edge Network會從Audience Manager回應將必要區段新增至傳送至Analytics的資料。
 
-+++**5.更新方法呼叫以使用Web SDK**
-
-更新呼叫[`s.t()`](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/functions/t-method)和[`s.tl()`](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/functions/tl-method)的所有執行個體，將它們取代為[`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview)命令。 我們需考慮三種情況：
-
-* **頁面檢視追蹤**：以Web SDK `sendEvent`命令取代頁面檢視追蹤呼叫：
-
-  ```js
-  // If your current implementation has this line of code:
-  s.t();
-  
-  // Replace it with this line of code. The dataObj object contains the variables to send.
-  alloy("sendEvent", dataObj);
-  ```
-
-* **自動連結追蹤**： [`clickCollectionEnabled`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/clickcollectionenabled)設定屬性預設為啟用。 它會自動設定正確的連結追蹤變數，以將資料傳送至Audience Manager。 如果您想要停用自動連結追蹤，請在[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview)命令內將此屬性設定為`false`。
-
-* **手動連結追蹤**： Web SDK在pageview與非頁面檢視呼叫之間沒有個別的命令。 在裝載物件內提供該區別。
-
-  ```js
-  // If your current implementation has this line of code:
-  s.tl(true,"o","Example custom link");
-  
-  // Replace it with these lines of code. Add the required fields to the dataObj object.
-  dataObj.data.__adobe.audiencemanager.linkName = "Example custom link";
-  dataObj.data.__adobe.audiencemanager.linkType = "o";
-  dataObj.data.__adobe.audiencemanager.linkURL = "https://example.com";
-  alloy("sendEvent", dataObj);
-  ```
-
-+++
-
-+++**6.驗證並發佈變更**
-
-移除AppMeasurement和`s`物件的所有參考後，請將變更發佈至開發環境，以驗證新實作是否有效。 一旦您驗證一切都正常運作，您就可以將更新發佈到生產環境。
-
-若已正確移轉，您的網站上就不再需要`AppMeasurement.js`，而且可移除此指令碼的所有參考。
-
-+++
-
-此時，您的Audience Manager實作已完全移轉至Web SDK，並準備好在未來移轉至Real-Time CDP。
+總而言之，此設定必須保持啟用，以便Audience Analytics可繼續與Web SDK實作搭配運作，而且沒有任何資料會在Audience Manager中重複計算。
