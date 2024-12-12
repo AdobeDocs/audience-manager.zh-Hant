@@ -2,9 +2,9 @@
 title: 將您的資料收集程式庫更新，以便從AppMeasurementJavaScript程式庫將其Audience Manager至Web SDK JavaScript程式庫。
 description: 瞭解將資料收集程式庫從AppMeasurementJavaScript程式庫更新為Web SDK JavaScript程式庫以進行Audience Manager的步驟。
 exl-id: 9c771d6c-4cfa-4929-9a79-881d4e8643e4
-source-git-commit: 3ba980e97763866d82bdf94109068f1f1f8f63d2
+source-git-commit: f8d8eb722e7b5cc4371f400a76fbd548a1318668
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2589'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,18 @@ Adobe建議在下列情況下使用此實施路徑：
 1. 選取&#x200B;**[!UICONTROL Save]**。
 
 您的資料流現在已準備好將資料傳送至Audience Manager，並將Audience Manager回應傳遞至Web SDK。
+
++++
+
++++**4.將客戶ID新增至身分對應**
+
+大多數Audience Manager實作會在跨裝置個人化案例中使用[設定檔合併規則](../features/profile-merge-rules/merge-rules-overview.md)，並協助根據訪客的驗證狀態（登入或登出）控制訪客可以符合的區段。 設定檔合併規則要求客戶擁有的識別碼（CRM ID、帳號等）在驗證後每次資料收集呼叫時都傳送給Audience Manager。 先前，訪客ID服務([!DNL visitor.js])的`setCustomerIDs`函式是用來將客戶ID附加至每個Analytics資料收集呼叫，然後將其轉送至Audience Manager。
+
+透過Web SDK，這些身分現在需要使用名為[IdentityMap](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)的特殊XDM建構傳送至Edge Network。
+
+若要在身分對應中正確傳遞身分，必須瞭解[身分名稱空間](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)，並仔細考慮要傳遞哪些身分，尤其是在傳送資料至Experience Platform沙箱時。 [本文章](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21305)概述這些考量事項和指示。
+
+決定要傳遞的身分以及傳遞時間後，請遵循標籤內使用[!UICONTROL Identity map] **[!UICONTROL Identity map]** [資料元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/data-element-types#identity-map)的指南，或如[身分資料概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/overview)中所述手動設定，以符合您的Web SDK部署策略。
 
 +++
 
