@@ -1,7 +1,7 @@
 ---
-description: 了解區段的元件，以及用來設定客群資格標準的運算式。您也可以找到有關如何傳輸資料的資訊。
-landing-page-description: 了解區段的元件，以及用來設定客群資格標準的運算式。您也可以找到有關如何傳輸資料的資訊。
-short-description: 了解區段的元件，以及用來設定客群資格標準的運算式。您也可以找到有關如何傳輸資料的資訊。
+description: 了解區段的元件，以及用來設定客群資格鑑定標準的運算式。您也可以找到有關如何傳輸資料的資訊。
+landing-page-description: 了解區段的元件，以及用來設定客群資格鑑定標準的運算式。您也可以找到有關如何傳輸資料的資訊。
+short-description: 了解區段的元件，以及用來設定客群資格鑑定標準的運算式。您也可以找到有關如何傳輸資料的資訊。
 seo-title: Signals, Traits, and Segments
 solution: Audience Manager
 title: 訊號、特徵和區段
