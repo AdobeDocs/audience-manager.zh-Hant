@@ -8,9 +8,9 @@ title: 大量管理快速入門
 uuid: 4bc6ae0a-315c-4ce7-a68e-cc0c6c6aa2f1
 feature: BAAAM
 exl-id: 5603146e-7172-4181-90ad-4606129176dd
-source-git-commit: e8d81f648f5a46495193fe6631c8a7f73e290493
+source-git-commit: 0c9c333f4e8d6d416d497f336e3e447e2e251d47
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 1%
 
 ---
@@ -42,13 +42,13 @@ c_bulk_start.xml
 
 在&#x200B;**[這裡](assets/BAAAM_V2_20210609.xlsm)**&#x200B;下載最新的工作表（最後更新於2021年6月）。
 
-## 必備條件 {#prereqs}
+## 先決條件 {#prereqs}
 
 若要使用[!DNL Bulk Management Tools]，您需要下列專案：
 
 * 您的[!DNL Experience Cloud]登入。 身為客戶，您應該已經擁有這些認證。
 * [!DNL Bulk Management Tools]工作表。 [下載工作表](assets/BAAAM_V2_20210609.xlsm)以取得最新版本。
-* [!DNL Microsoft Excel]正在[!DNL macOS]或64位元[!DNL Microsoft Windows]上執行。 建議您使用最新版本的[!DNL Microsoft Excel]。
+* 在64位元[!DNL Microsoft Windows]上執行的[!DNL Microsoft Excel]。 建議您使用最新版本的[!DNL Microsoft Excel]。 [!DNL macOS]不支援大量管理工具。
 * 開啟工作表時，您必須&#x200B;**啟用巨集**&#x200B;才能讓[!DNL Bulk Management Tools]運作。
 
 ## 驗證需求和選項 {#auth-reqs}
