@@ -1,5 +1,5 @@
 ---
-description: 此報表會傳回在詳細目錄中收集並傳送至Audience Manager之所有未使用資訊的頻率計數。
+description: 此報表會傳回在詳細目錄中收集並傳送至Audience Manager的所有未使用資訊的頻率計數。
 seo-description: This report returns a frequency count of all the unused information collected on your inventory and sent to Audience Manager.
 seo-title: Unused Signals Report
 solution: Audience Manager
@@ -7,20 +7,20 @@ title: 未使用的訊號報表
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 feature: Overlap Reports
 exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
-source-git-commit: 8fd148df6c19a5d8331faf66c671f91686954a77
+source-git-commit: 9c980b8fd5c3cb6ba7b3031726da726ee5caeec6
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
 
 # 未使用的訊號報表{#unused-signals-report}
 
-此報表會傳回在詳細目錄中收集並傳送至Audience Manager之所有未使用資訊的頻率計數。 若要存取此報表，請瀏覽至&#x200B;**Analytics >對象報表>其他報表>未使用的訊號**。
+此報表會傳回在詳細目錄中收集並傳送至Audience Manager的所有未使用資訊的頻率計數。 若要存取此報表，請瀏覽至&#x200B;**Analytics >對象報表>其他報表>未使用的訊號**。
 
 >[!NOTE]
 >
->如果您看到訊息「您沒有對象報表的存取權」，請聯絡您的Audience Manager顧問或客戶服務，以布建報表。
+>如果您看到訊息「您沒有對象報表的存取權」，請聯絡您的Audience Manager顧問或客戶服務，為您布建報表。
 
 ![未使用訊號報表的熒幕擷圖](/help/using/reporting/dynamic-reports/assets/unused-signals.png)
 
@@ -28,7 +28,9 @@ ht-degree: 1%
 
 訊號是來自您網站的資訊，以[索引鍵值配對](../../reference/key-value-pairs-explained.md) （例如`color=blue, price>100, gender=female`等）的形式傳入[!DNL Audience Manager]。
 
-未使用的訊號包含您收集但尚未對應至特徵的資料。 [!UICONTROL Unused Signals]報表會依日期、索引鍵、值和頻率計數，在表格中顯示資料。 任何傳入至[!DNL Audience Manager]的未對應訊號（一天內至少100次）都符合[!UICONTROL Unused Signals]報表的資格。 未使用的訊號會儲存45天然後捨棄。
+未使用的訊號包含您收集但尚未對應至特徵的資料。 [!UICONTROL Unused Signals]報表會依日期、索引鍵、值和頻率計數，在表格中顯示資料。 任何傳入至[!DNL Audience Manager]的未對應訊號（一天內至少100次）都符合[!UICONTROL Unused Signals]報表的資格。
+
+未使用的訊號會儲存45天然後捨棄。 未使用的訊號報表會顯示過去10天的資料。
 
 請檢閱此報表，協助識別可對應至新特徵或現有特徵的孤立訊號。
 
