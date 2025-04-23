@@ -7,7 +7,7 @@ title: 透過Adobe Experience Platform Identity Service取得使用者ID和區�
 uuid: 80de6cf2-5d9e-4ef8-a0f2-d53b5d574c89
 feature: DCS
 exl-id: 0b855237-ac14-4c0e-b831-221b9218840f
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: e17eedfb94f2936c61298c44f3d556bae254b2a7
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 2%
@@ -38,8 +38,8 @@ ID服務客戶可以從ID服務Cookie或透過呼叫函式來擷取此資訊。 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>1. 檢查您的<span class="keyword">Experience Cloud</span>狀態</b> </p> </td> 
-   <td colname="col2"> <p>您需要<span class="keyword">Experience Cloud</span>帳戶才能使用識別碼服務。 如果您有<span class="keyword">Experience Cloud</span>帳戶，很好！ </p> <p> 如果您不屬於<span class="keyword">Experience Cloud</span>，請註冊。 我們很樂意擁有您，而且永遠有更多的空間。 如需如何設定帳戶的指示，請參閱<a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html" format="https" scope="external">啟用核心服務的解決方案</a>。 </p> </td> 
+   <td colname="col1"> <p> <b>1. 檢查您的<span class="keyword"> Experience Cloud</span>狀態</b> </p> </td> 
+   <td colname="col2"> <p>您需要<span class="keyword"> Experience Cloud</span>帳戶才能使用ID服務。 如果您有<span class="keyword"> Experience Cloud</span>帳戶，很好！ </p> <p> 如果您不屬於<span class="keyword"> Experience Cloud</span>，請註冊。 我們很樂意擁有您，而且永遠有更多的空間。 如需如何設定帳戶的指示，請參閱<a href="https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started" format="https" scope="external">啟用核心服務的解決方案</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2.設定<span class="keyword"> ID服務</span></b> </p> </td> 
@@ -47,15 +47,15 @@ ID服務客戶可以從ID服務Cookie或透過呼叫函式來擷取此資訊。 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>3.讀取<span class="keyword"> ID服務</span> Cookie</b> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> ID服務</span>會將使用者和地區ID儲存在AMCV Cookie中。 完整的Cookie名稱為<code>AMCV_<i>###</i>@AdobeOrg</code>。 <code><i>###</i></code>元素是您組織ID的預留位置。 如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud識別碼</a>。 </p> <p>剖析這些機碼值組的AMCV Cookie： </p> <p> 
+   <td colname="col2"> <p><span class="keyword"> ID服務</span>會將使用者和地區ID儲存在AMCV Cookie中。 完整的Cookie名稱為<code>AMCV_<i>###</i>@AdobeOrg</code>。 <code><i>###</i></code>元素是您組織ID的預留位置。 如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud ID</a>。 </p> <p>剖析這些機碼值組的AMCV Cookie： </p> <p> 
      <ul id="ul_502ECFCDDD084D448B5EDC4E5C0909C1"> 
-      <li id="li_662FFA36AC854E699D50A183B161D654"> <code>mid=<i>user ID</i></code>：這個機碼值組包含<span class="keyword">Experience Cloud</span>使用者識別碼。 </li> 
+      <li id="li_662FFA36AC854E699D50A183B161D654"> <code>mid=<i>user ID</i></code>：這個機碼值組包含<span class="keyword"> Experience Cloud</span>使用者識別碼。 </li> 
       <li id="li_65422233187B4217B50DC52DBD58F404"> <code>aamlh=<i>region ID</i></code>：這個機碼值組儲存與地區伺服器名稱關聯的地區識別碼（有時稱為<span class="term">位置提示</span>）。 </li> 
      </ul> </p> <p>一旦您擁有使用者和地區ID，即可呼叫<span class="wintitle"> DCS</span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>4.使用getMarketingCloudVisitorID</b>擷取<span class="keyword">Experience CloudID</span> </p> </td> 
-   <td colname="col2"> <p><i>（選擇性）</i>此函式傳回<span class="keyword">Experience Cloud</span>訪客識別碼。 此範本專為自訂解決方案和特定使用案例而設計。 請參閱下列<a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#working-with-getmarketingcloudvisitorid">使用getMarketingCloudVisitorID</a>以及<a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/getmcvid.html" format="https" scope="external">相關的ID服務檔案</a>。 </p> <p>如果您從ID服務Cookie取得使用者和位置ID，則不需要使用此選項。 </p> </td> 
+   <td colname="col1"> <p> <b>4.使用getMarketingCloudVisitorID</b>擷取<span class="keyword"> Experience Cloud ID</span> </p> </td> 
+   <td colname="col2"> <p><i>（選擇性）</i>此函式傳回<span class="keyword"> Experience Cloud</span>訪客識別碼。 此範本專為自訂解決方案和特定使用案例而設計。 請參閱下列<a href="../../../api/dcs-intro/dcs-s2s/dcs-mcid-ids.md#working-with-getmarketingcloudvisitorid">使用getMarketingCloudVisitorID</a>以及<a href="https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/getmcvid.html" format="https" scope="external">相關的ID服務檔案</a>。 </p> <p>如果您從ID服務Cookie取得使用者和位置ID，則不需要使用此選項。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
