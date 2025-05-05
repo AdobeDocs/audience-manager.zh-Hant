@@ -108,7 +108,7 @@ Audience Manager會在您的特徵存放區中自動建立名為&#x200B;**Experi
 
 如需從Experience Platform區段自動建立的特徵範例，請參閱下方的熒幕擷圖：
 
-來自Experience Platform](/help/using/integration/integration-aep/assets/aep-trait.png)的![特徵
+來自Experience Platform![&#128279;](/help/using/integration/integration-aep/assets/aep-trait.png)的特徵
 
 
 | 專案編號 | 名稱 | 說明 |
@@ -192,7 +192,7 @@ Audience Manager中的[[!UICONTROL Profile Merge Rules]](/help/using/features/pr
 
 >[!NOTE]
 >
-> 從Experience Platform共用區段至Audience Manager時，您的Platform組織[預設合併原則](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy)會優先於與Audience Manager共用的區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies)所使用的[合併原則。 例如，如果共用區段的合併原則允許[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，但組織的預設合併原則不允許，這可能會導致平台和Audience Manager之間的母體差異。
+> 從Experience Platform共用區段至Audience Manager時，您的Platform組織[預設合併原則](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en#default-merge-policy)會優先於與Audience Manager共用的區段[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#merge-policies)所使用的合併原則。 例如，如果共用區段的合併原則允許[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#configure)，但組織的預設合併原則不允許，這可能會導致平台和Audience Manager之間的母體差異。
 
 ### Experience Platform中的區段構成
 

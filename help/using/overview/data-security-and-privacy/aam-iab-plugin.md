@@ -63,7 +63,7 @@ Audience Manager可協助您尊重使用者的隱私權選擇，並可讓您輕�
 您必須符合下列必要條件，才能搭配Audience Manager使用適用於IAB TCF的Audience Manager外掛程式：
 
 1. 您必須使用 Adobe Experience Platform Identity Service (ECID) 5 或更新版本。[下載](https://github.com/Adobe-Marketing-Cloud/id-service/releases)最新版 ECID。
-2. 您必須使用Audience Manager[!DNL Data Integration Library] (DIL) 9.0或更新版本，可從[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)下載。 閱讀Audience Manager檔案](../../dil/dil-overview.md)中的[DIL。 建議您使用[Adobe Audience Manager標籤延伸模組](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)來進行最簡單的DILAudience Manager實作。
+2. 您必須使用Audience Manager[!DNL Data Integration Library] (DIL) 9.0或更新版本，可從[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)下載。 閱讀Audience Manager檔案[&#128279;](../../dil/dil-overview.md)中的DIL。 建議您使用[Adobe Audience Manager標籤延伸模組](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)來進行最簡單的DILAudience Manager實作。
 3. 或者，如果您使用[!DNL Server-Side Forwarding] (SSF)將資料匯入Audience Manager，則必須升級至最新版本的AppMeasurement。 使用 [Analytics 代碼管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)下載 AppMeasurement。
 4. 您必須使用與IAB TCF v2.2整合且已向IAB TCF註冊的同意管理平台(CMP)，商業版或個人版均可。 請參閱[在 IAB 框架內註冊的 CMP](https://iabeurope.eu/cmp-list/) 清單。
 
@@ -187,7 +187,7 @@ https://yourcompany.demdex.net/event?d_event=imp&gdpr=1&gdpr_consent=consentstri
 
 ## 測試您的IAB實作 {#test-iab-implementation}
 
-若要測試您是否已正確實作適用於IAB TCF的Audience Manager外掛程式，請參閱驗證選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html#section-64331998954d4892960dcecd744a6d88)中的[使用案例4。
+若要測試您是否已正確實作適用於IAB TCF的Audience Manager外掛程式，請參閱驗證選擇加入服務[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html#section-64331998954d4892960dcecd744a6d88)中的使用案例4。
 
 ## IAB 和 Audience Manager 中的選擇退出。優先順序。 {#iab-and-optout}
 

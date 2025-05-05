@@ -101,7 +101,7 @@ abc123 def456 ghi789 xyz987
 
 ### 檔案內容考量 {#considerations}
 
-建立傳入檔案時，請確定第一欄僅填入裝置ID，例如[!DNL AAM UUID]、[!DNL GAID]、[!DNL IDFA]等。 請參閱Audience Manager](../../../reference/ids-in-aam.md)中的[ID索引，以取得Audience Manager所支援ID的詳細說明。
+建立傳入檔案時，請確定第一欄僅填入裝置ID，例如[!DNL AAM UUID]、[!DNL GAID]、[!DNL IDFA]等。 請參閱Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中的ID索引，以取得Audience Manager所支援ID的詳細說明。
 
 >[!IMPORTANT]
 >

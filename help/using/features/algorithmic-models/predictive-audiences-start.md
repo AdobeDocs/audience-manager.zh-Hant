@@ -42,6 +42,7 @@ ht-degree: 2%
    * **[!UICONTROL Description]**：輸入模型的描述，以協助您識別其使用案例。
    * **[!UICONTROL Data Source]**：選取您要指派此模型之[!UICONTROL Predictive Audiences]區段的第一方資料來源。
    * **[!UICONTROL Profile Merge Rule]**：選取要指派給此模型建立的所有預測性[!UICONTROL segments]的[!UICONTROL Profile Merge Rule]。 如果您選取的目標對象是[!UICONTROL segment]，我們建議您選取目標對象的相同[!UICONTROL Profile Merge Rule]。
+
      ![predictive-audiences-save](assets/predictive-audiences-save.png)
 1. 按一下 **[!UICONTROL Save]**。
 
@@ -51,7 +52,7 @@ Audience Manager不支援編輯現有[!UICONTROL Predictive Audiences]模型。 
 
 1. 前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**。
 2. 按一下您要複製的[!UICONTROL Predictive Audiences]模型名稱。
-3. 按一下畫面左上角的&#x200B;**[!UICONTROL Clone]**按鈕。
+3. 按一下畫面左上角的&#x200B;**[!UICONTROL Clone]**&#x200B;按鈕。
    ![predictive-audiences-clone](assets/predictive-audiences-clone.png)
 4. 複製模型後，就會進入複製模型的[!DNL Save & Configure]頁面。 您可以在此頁面變更模型的[!UICONTROL data source]和指派的[!UICONTROL Profile Merge Rule]。 若要編輯複製模型的角色和目標對象，請使用[!UICONTROL Back]和[!UICONTROL Next]按鈕在三個標籤之間導覽，或按一下三個標簽名稱
 

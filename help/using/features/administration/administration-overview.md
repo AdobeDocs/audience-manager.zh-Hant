@@ -46,7 +46,7 @@ ht-degree: 0%
 > 
 > 所有客戶都完成移轉後，本檔案的使用者管理區段將會消失。
 > 
-在[!DNL Audience Manager]中建立使用者，並指定使用者詳細資料、登入狀態以及將使用者指派給群組。
+>在[!DNL Audience Manager]中建立使用者，並指定使用者詳細資料、登入狀態以及將使用者指派給群組。
 
 1. 按一下&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Users]**。
 1. 按一下![](assets/icon_add.png)以顯示[!UICONTROL Create New User]頁面。
@@ -63,7 +63,7 @@ ht-degree: 0%
    * **[!UICONTROL Expired]：**&#x200B;使用者的密碼超過90天。
    * **[!UICONTROL Pending]：**&#x200B;使用者有暫時密碼，可能是密碼重設後或新帳戶，而且他們尚未設定永久密碼。
    * **[!UICONTROL Locked Out]：** 5次不正確的登入嘗試將會鎖定使用者。
-1. 在&#x200B;**[!UICONTROL Assigned Groups]**下方的下拉式清單中，選取要指派此使用者的所需群組。
+1. 在&#x200B;**[!UICONTROL Assigned Groups]**&#x200B;下方的下拉式清單中，選取要指派此使用者的所需群組。
 如需群組與許可權的詳細資訊，請參閱[建立群組](../../features/administration/administration-overview.md#create-group)。
 1. 按一下 **[!UICONTROL Save]**。
 

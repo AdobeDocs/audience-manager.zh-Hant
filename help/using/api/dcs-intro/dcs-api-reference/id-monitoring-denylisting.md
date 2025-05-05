@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 概述
 
-為了保護Audience Manager基礎結構不受惡意活動的侵擾，[!DNL DCS]會使用進階演演算法來監視其接收的ID。 這些可以是[!UICONTROL Data Provider Unique User ID] ([!UICONTROL CRM ID])、[!UICONTROL Audience Manager Unique User ID] ([!UICONTROL AAM UUID])或[!UICONTROL Experience Cloud ID]s ([!UICONTROL ECID])。 請參閱Audience Manager](../../../reference/ids-in-aam.md)中的[ID索引，以取得Audience Manager所支援ID的詳細解釋。
+為了保護Audience Manager基礎結構不受惡意活動的侵擾，[!DNL DCS]會使用進階演演算法來監視其接收的ID。 這些可以是[!UICONTROL Data Provider Unique User ID] ([!UICONTROL CRM ID])、[!UICONTROL Audience Manager Unique User ID] ([!UICONTROL AAM UUID])或[!UICONTROL Experience Cloud ID]s ([!UICONTROL ECID])。 請參閱Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中的ID索引，以取得Audience Manager所支援ID的詳細解釋。
 
 [!DNL DCS]會監視收到這些ID的頻率，以偵測潛在的惡意活動。 當[!DNL DCS]在短時間內偵測到任何指定ID有異常大的[!DNL DCS]個要求時，該ID會新增至拒絕清單。
 

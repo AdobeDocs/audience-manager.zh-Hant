@@ -69,7 +69,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 2. 選取&#x200B;**[!UICONTROL Feed Usage]**&#x200B;標籤。
 3. 使用[!UICONTROL Search]方塊來篩選資料摘要，並識別您需要報告使用情況的資料摘要。
 4. 按一下 **[!UICONTROL Edit Feeds Usage]**。
-5. 根據CPM資料摘要](#cost-attribution)的[成本歸因，計算每個資料摘要的[!DNL CPM]使用量，並在[!UICONTROL Usage]欄中輸入。
+5. 根據CPM資料摘要[&#128279;](#cost-attribution)的成本歸因，計算每個資料摘要的[!DNL CPM]使用量，並在[!UICONTROL Usage]欄中輸入。
 6. 完成時按一下&#x200B;**[!UICONTROL Save]**&#x200B;並檢閱確認對話方塊。
 
    ![confirm-feed-use](assets/confirm-feed-usage.png)

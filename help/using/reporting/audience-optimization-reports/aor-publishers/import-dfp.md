@@ -32,7 +32,7 @@ ht-degree: 14%
 您需要自行設定[!DNL Audience Manager] ID，並可與[!DNL Audience Manager]諮詢人員合作來檢查是否一切正常。 在下列情況下，您已正確設定[!DNL Audience Manager] ID：
 
 * `'aamid'`是用來做為識別碼的金鑰。
-* 使用者ID值的格式正確為[!DNL Audience Manager] UUID，如Audience Manager](../../../reference/ids-in-aam.md)中之ID的[索引中所述。
+* 使用者ID值的格式正確為[!DNL Audience Manager] UUID，如Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中之ID的索引中所述。
 * 您已在您[!DNL Google Ad Manager]記錄檔的已定義欄位中包含[!DNL Audience Manager] UUID （例如CustomTargeting）。
 
 ## 啟用記錄擷取的先決條件 {#prereqs-ingestion-enablement}

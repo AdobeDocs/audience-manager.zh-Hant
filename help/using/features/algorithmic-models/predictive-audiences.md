@@ -73,7 +73,7 @@ ht-degree: 3%
 您可以選擇任何第一方特徵或區段來定義您的角色。 然而，為獲得最佳結果，以下是建議的一組最佳實務：
 
 * 選擇您的角色特徵或區段，讓每個角色至少擁有幾百個[裝置ID](../../reference/ids-in-aam.md)。
-* 如果您的特徵是以[跨裝置ID](../../reference/ids-in-aam.md)為基礎，您可以將其包裝在使用[裝置ID](../../reference/ids-in-aam.md)的[設定檔合併規則](../profile-merge-rules/merge-rules-overview.md)的區段中，例如[!UICONTROL Device Graph]。 這將確保有足夠的裝置ID[](../../reference/ids-in-aam.md)可供演演算法學習。
+* 如果您的特徵是以[跨裝置ID](../../reference/ids-in-aam.md)為基礎，您可以將其包裝在使用[裝置ID](../../reference/ids-in-aam.md)的[設定檔合併規則](../profile-merge-rules/merge-rules-overview.md)的區段中，例如[!UICONTROL Device Graph]。 這將確保有足夠的裝置ID[&#128279;](../../reference/ids-in-aam.md)可供演演算法學習。
 * 我們建議您為角色選擇特徵或簡單區段，包含1到3個特徵。
 * 選擇重疊程度最低的基線特徵或區段。
 * 請務必在數位財產上擷取精細的特徵。

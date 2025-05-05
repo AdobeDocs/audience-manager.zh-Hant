@@ -283,7 +283,7 @@ ht-degree: 0%
    * 按一下&#x200B;**[!UICONTROL Request More Details]**，向資料提供者詢問關於所選資料摘要的問題，或要求折扣。 此功能會將您的意見與問題直接傳送給資料提供者。
 
 1. 資料摘要報表量度。 文氏圖表（和相關量度）會顯示過去30天的特性重疊資料。 如需詳細資訊，請參閱[Marketplace：關於](marketplace-data-buyers.md#about-marketplace)。
-   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帳戶中與提供者帳戶中的使用者重疊的不重複使用者數目。 如需不重複使用者的定義，請參閱Audience Manager](/help/using/reference/ids-in-aam.md)中ID的[索引中的AAM UUID。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帳戶中與提供者帳戶中的使用者重疊的不重複使用者數目。 如需不重複使用者的定義，請參閱Audience Manager[&#128279;](/help/using/reference/ids-in-aam.md)中ID的索引中的AAM UUID。
    * **[!UICONTROL 30 Day Provider Unique Users]**：來自提供者帳戶的不重複使用者數目。
    * **[!UICONTROL Your Unique Users]**：來自您帳戶的不重複使用者數目。
 

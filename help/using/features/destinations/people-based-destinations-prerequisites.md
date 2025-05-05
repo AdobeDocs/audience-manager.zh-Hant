@@ -99,7 +99,7 @@ Google會自動允許具有合規帳戶的客戶列出。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)的[SHA256雜湊支援。
+Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)的SHA256雜湊支援。
 
 ## 取得使用者許可權 {#obtaining-user-permission}
 

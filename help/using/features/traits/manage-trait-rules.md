@@ -47,7 +47,7 @@ ht-degree: 0%
 
 <!-- t_tb_create_rules.xml -->
 
-在建立特徵規則之前&#x200B;*，請先完成&#x200B;**[!UICONTROL Basic Information]**區段*&#x200B;中的必填欄位。
+在建立特徵規則之前&#x200B;*，請先完成&#x200B;**[!UICONTROL Basic Information]**&#x200B;區段*&#x200B;中的必填欄位。
 
 1. 展開&#x200B;**[!UICONTROL Trait Expression]**&#x200B;區段並輸入索引鍵和值名稱。 這會建立&#x200B;*`signal`*。
 

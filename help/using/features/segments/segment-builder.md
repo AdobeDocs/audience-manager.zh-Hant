@@ -44,6 +44,7 @@ ht-degree: 2%
    ![segment-builder-traits](assets/segment-builder-traits.png)
    * 搜尋您想要新增至區段的[!UICONTROL trait]，然後按一下&#x200B;**[!UICONTROL Add Trait]**。 新增其他[!UICONTROL trait]以建立[!UICONTROL trait]群組。
    * 按一下&#x200B;**[!UICONTROL Browse All Traits]**&#x200B;以開啟[!UICONTROL Advanced Search]強制回應視窗。 依名稱、識別碼、說明或[!UICONTROL data source]搜尋[!UICONTROL traits]。 在搜尋時按一下資料夾，將結果限制在該資料夾及其子資料夾中。 您也可以依[!UICONTROL trait type] （[!UICONTROL Folder Trait]、[!UICONTROL Rule-based]、[!UICONTROL Onboarded]和[!UICONTROL Algorithmic]）或母體型別（[裝置ID](../../reference/ids-in-aam.md)和[跨裝置ID](../../reference/ids-in-aam.md)）篩選[!UICONTROL traits]。
+
      ![segment-builder-browser-traits](assets/segment-builder-browse-traits.png)
    * 在您建置[!UICONTROL segment]時取得即時[特徵建議](trait-recommendations.md)。
    * 按一下並拖曳[!UICONTROL traits]以建立個別的群組。

@@ -162,6 +162,6 @@ ht-degree: 1%
 
 ### 步驟7 — 資料購買者 — 開啟訂閱
 
-資料提供者授與資料摘要的存取權後，您就可以在&#x200B;**Audience Marketplace> Marketplace**&#x200B;中檢視您帳戶中的摘要。 檢閱詳細資料，開啟[訂閱]按鈕，然後按一下[檢閱與訂閱]。**** 請參閱訂閱資料摘要的[儲存空間](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)，以取得尋找第三方特徵的資訊。
+資料提供者授與資料摘要的存取權後，您就可以在&#x200B;**Audience Marketplace> Marketplace**&#x200B;中檢視您帳戶中的摘要。 檢閱詳細資料，開啟[訂閱]按鈕，然後按一下[檢閱與訂閱]。**&#x200B;** 請參閱訂閱資料摘要的[儲存空間](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)，以取得尋找第三方特徵的資訊。
 
 請注意，這些特徵只能在資料提供者的帳戶中編輯。

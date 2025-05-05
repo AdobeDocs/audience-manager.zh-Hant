@@ -33,8 +33,8 @@ ht-degree: 1%
 
 [!DNL Audience Manager] [!DNL REST APIs]支援三種驗證方法。
 
-* [!BADGE 建議]{type=positive}[OAuth伺服器對伺服器驗證](#oauth-adobe-developer)使用[Adobe開發人員主控台](https://www.adobe.io/)。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品](https://developer.adobe.com/apis/)的[API。 這是設定及使用[!DNL Adobe] [!DNL APIs]的建議方式。 在Adobe開發人員檔案中進一步瞭解[OAuth伺服器對伺服器驗證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)。
-* [!BADGE 已棄用]{type=negative}[JWT （服務帳戶）驗證](#jwt)使用[Adobe開發人員主控台](https://www.adobe.io/)。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品](https://developer.adobe.com/apis/)的[API。
+* [!BADGE 建議]{type=positive}[OAuth伺服器對伺服器驗證](#oauth-adobe-developer)使用[Adobe開發人員主控台](https://www.adobe.io/)。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品[&#128279;](https://developer.adobe.com/apis/)的API。 這是設定及使用[!DNL Adobe] [!DNL APIs]的建議方式。 在Adobe開發人員檔案中進一步瞭解[OAuth伺服器對伺服器驗證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)。
+* [!BADGE 已棄用]{type=negative}[JWT （服務帳戶）驗證](#jwt)使用[Adobe開發人員主控台](https://www.adobe.io/)。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品[&#128279;](https://developer.adobe.com/apis/)的API。
 * [!BADGE 已棄用]{type=negative}[舊版OAuth驗證](#oauth-deprecated)。 雖然此方法已過時，但擁有現有[!DNL OAuth]整合的客戶可以繼續使用此方法。
 
 >[!IMPORTANT]
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ### Adobe Developer概觀 {#developer-overview}
 
-[!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品](https://developer.adobe.com/apis)的[API。
+[!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品[&#128279;](https://developer.adobe.com/apis)的API。
 
 這是設定及使用[!DNL Adobe] [!DNL APIs]的建議方式。
 
@@ -217,7 +217,7 @@ curl -X 'GET' \
 
 ### Adobe Developer概觀 {#adobeio}
 
-[!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品](https://www.adobe.io/apis.html)的[API。
+[!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 它包含所有Adobe產品[&#128279;](https://www.adobe.io/apis.html)的API。
 
 這是設定及使用[!DNL Adobe] [!DNL APIs]的建議方式。
 
@@ -420,7 +420,7 @@ GET https://aam.adobe.io/v1/models/?page=1&pageSize=2&search=Test
 
 {style="table-layout:auto"}
 
-### 要求[!BADGE 的[!DNL URLs]已棄用]{type=negative}[!DNL OAuth]驗證 {#request-urls-oauth}
+### 要求[!BADGE 的[!DNL URLs]已棄用]&lbrace;type=negative&rbrace;[!DNL OAuth]驗證 {#request-urls-oauth}
 
 | [!DNL API]方法 | 要求[!DNL URL] |
 |--- |--- |

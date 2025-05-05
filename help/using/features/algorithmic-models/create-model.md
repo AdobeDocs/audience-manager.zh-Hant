@@ -40,14 +40,17 @@ ht-degree: 0%
    * 為模型命名。
    * *（選擇性）*&#x200B;提供模型的簡短說明。
    * 將模型的狀態設定為&#x200B;**[!UICONTROL Active]**&#x200B;或&#x200B;**[!UICONTROL Inactive]**。 非使用中的模型將不會執行，也不會產生任何資料。
+
      ![相似 — 基本](assets/look-alike-basic.png)
 1. 在[組態](../../features/algorithmic-models/create-model.md#configuration)區段中：
    * 按一下「**[!UICONTROL Browse All Traits]**」或「**[!UICONTROL Browse All Segments]**」以選取您要用來建立模型的特徵或區段。 依名稱、ID、說明或資料來源搜尋特徵。 在搜尋時按一下資料夾，將結果限制在該資料夾及其子資料夾中。 您也可以依特徵型別（[!UICONTROL Folder Trait]、[!UICONTROL Rule-based]、[!UICONTROL Onboarded]和[!UICONTROL Algorithmic]）或母體型別（[裝置ID](../../reference/ids-in-aam.md)和[跨裝置ID](../../reference/ids-in-aam.md)）來篩選特徵。
+
      ![瀏覽特徵](assets/browse-traits.png)
    * 選擇30、60或90天的回顧期間。 這會設定模型的時間範圍。
    * 預設會選取[!UICONTROL TraitWeight]演演算法。
    * 從[!UICONTROL Available Data]清單中選取資料來源。
    * 完成時，按一下&#x200B;**[!UICONTROL Save]**。
+
      ![相似組態](assets/look-alike-configuration.png)
 
 請觀看下方的影片，詳細瞭解跨裝置量度的運作方式。
