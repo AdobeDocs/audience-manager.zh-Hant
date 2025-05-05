@@ -82,7 +82,7 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步驟 6 </p> </td> 
-   <td colname="col2"> <p>編譯先決條件並開啟支援票證，方法是依照詳細指示<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">這裡</a>開始記錄擷取程式。 </p> </td> 
+   <td colname="col2"> <p>編譯先決條件並開啟支援票證，方法是依照詳細指示<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hant">這裡</a>開始記錄擷取程式。 </p> </td> 
    <td colname="col3"> <p>您或代表您<span class="keyword">Audience Manager</span>諮詢 </p> </td> 
   </tr> 
  </tbody> 

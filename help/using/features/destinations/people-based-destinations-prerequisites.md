@@ -50,7 +50,7 @@ ht-degree: 2%
 
 若要瞭解如何編輯您的[!DNL LinkedIn Campaign Manager]使用者許可權，請參閱LinkedIn檔案中的[在Advertising帳戶上新增、編輯和移除使用者許可權](https://www.linkedin.com/help/lms/answer/5753)。
 
-如需視訊指示，請參閱[瞭解及設定LinkedIn以人物為基礎的目的地](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html)。
+如需視訊指示，請參閱[瞭解及設定LinkedIn以人物為基礎的目的地](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html?lang=zh-Hant)。
 
 ### [!DNL Google Customer Match] {#gcm}
 
@@ -99,7 +99,7 @@ Google會自動允許具有合規帳戶的客戶列出。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)的SHA256雜湊支援。
+Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hant)的SHA256雜湊支援。
 
 ## 取得使用者許可權 {#obtaining-user-permission}
 

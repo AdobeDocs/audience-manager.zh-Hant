@@ -31,7 +31,7 @@ ht-degree: 12%
 
 ### IP模糊化優先順序 {#precedence}
 
-[資料串流層級IP模糊化](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create)優先於Audience Manager中設定的任何IP模糊化選項，而且會套用至所有IP位址。 Audience Manager完成的任何地理位置查詢都會受到資料流層級[!UICONTROL IP obfuscation]選項的影響。 在Audience Manager中，根據完全模糊化的IP進行地理位置查詢，將會產生未知區域，且不會實現任何根據結果地理位置資料的區段。
+[資料串流層級IP模糊化](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#create)優先於Audience Manager中設定的任何IP模糊化選項，而且會套用至所有IP位址。 Audience Manager完成的任何地理位置查詢都會受到資料流層級[!UICONTROL IP obfuscation]選項的影響。 在Audience Manager中，根據完全模糊化的IP進行地理位置查詢，將會產生未知區域，且不會實現任何根據結果地理位置資料的區段。
 
 ## IP位址模糊化需求 {#ip-obfuscation-requirements}
 

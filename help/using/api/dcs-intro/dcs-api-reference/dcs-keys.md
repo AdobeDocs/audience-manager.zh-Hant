@@ -80,7 +80,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>停用第三方Cookie的使用以遵守兒童保護法規。 此引數由AdobeAdobe Experience Platform Identity Service動態設定，且取決於<code> idSyncDisable3rdPartySyncing</code>設定。 請參閱Adobe Experience Platform Identity服務</a>中的<a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external"> COPPA支援。 </p> </td>
+   <td colname="col2"> <p>停用第三方Cookie的使用以遵守兒童保護法規。 此引數由AdobeAdobe Experience Platform Identity Service動態設定，且取決於<code> idSyncDisable3rdPartySyncing</code>設定。 請參閱Adobe Experience Platform Identity服務</a>中的<a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html?lang=zh-Hant" format="https" scope="external"> COPPA支援。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -122,7 +122,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定<span class="keyword">Experience Cloud</span> ID服務所設定及使用的Experience CloudID。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud識別服務</a>。 </p> </td> 
+   <td colname="col2"> <p>指定<span class="keyword">Experience Cloud</span> ID服務所設定及使用的Experience CloudID。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與Experience Cloud識別服務</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -195,7 +195,7 @@ ht-degree: 2%
 
 | 屬性 | 說明 |
 | --- | --- | 
-| `h_host` | 這會設定為使用者端的特定資料收集主機名稱。 它顯示為`host name .demdex.net`。 請參閱[瞭解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)。 |
+| `h_host` | 這會設定為使用者端的特定資料收集主機名稱。 它顯示為`host name .demdex.net`。 請參閱[瞭解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant)。 |
 | `h_user-agent` | 設定為`User-Agent`標頭值。 |
 | `h_accept-language` | 設定為`Accept-Language`標頭值。 |
 | `h_referer` | 設定為`Referer`標頭值。 |

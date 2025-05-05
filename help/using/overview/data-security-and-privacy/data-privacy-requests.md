@@ -28,15 +28,15 @@ ht-degree: 42%
 您可以透過兩種方式提交個別請求，以從[!DNL Audience Manager]存取和刪除消費者資料：
 
 * 透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。請參閱[此處](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)的文件。
-* 透過 **[!DNL Privacy Service API]**。請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
+* 透過 **[!DNL Privacy Service API]**。請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
 傳送個人資料隱私權要求時，如&#x200B;**[Audience Manager識別碼](data-privacy-ids.md)**&#x200B;一節所述，您可以提交任何[!DNL Audience Manager]識別碼(ID)，以及其各自的名稱空間ID （資料來源ID）。
 
-[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 支援兩種請求：資料存取和資料刪除請求。
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant) 支援兩種請求：資料存取和資料刪除請求。
 
 ## 資料存取請求 {#access-data}
 
-您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io) （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或呼叫Privacy ServiceAPI （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）來傳送個別資料存取請求。
+您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io) （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hant)）或呼叫Privacy ServiceAPI （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）來傳送個別資料存取請求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -46,7 +46,7 @@ ht-degree: 42%
 
 ## 資料刪除請求 {#delete-data}
 
-您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io) （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或呼叫Privacy ServiceAPI （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）來傳送資料刪除請求。
+您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io) （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hant)）或呼叫Privacy ServiceAPI （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）來傳送資料刪除請求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -71,7 +71,7 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
 
 [!DNL Audience Manager]支援有關選擇退出管理的業界標準。 請閱讀下文，瞭解[!DNL Audience Manager]支援的選擇退出型別的完整資訊。
 
-雖然資料存取和刪除要求是透過[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)處理，但目前是透過[!DNL DCS API]支援選擇退出要求。 請閱讀下文，瞭解選擇退出[!DNL API]呼叫看起來是什麼樣子。
+雖然資料存取和刪除要求是透過[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)處理，但目前是透過[!DNL DCS API]支援選擇退出要求。 請閱讀下文，瞭解選擇退出[!DNL API]呼叫看起來是什麼樣子。
 
 ### 全域選擇退出請求
 

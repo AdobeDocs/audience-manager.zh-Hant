@@ -150,7 +150,7 @@ visitor.setCustomerIDs({
      "authState":Visitor.AuthState.AUTHENTICATED
 ```
 
-如需詳細資訊，請參閱[建立跨裝置資料Source](#create-data-source)和[客戶ID與驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。
+如需詳細資訊，請參閱[建立跨裝置資料Source](#create-data-source)和[客戶ID與驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)。
 
 ### 設定`DIL.create`函式
 
@@ -165,7 +165,7 @@ var vDil = DIL.create({
 });
 ```
 
-在名稱空間機碼值組中，`*`MCORG`*`變數是您的[!DNL Experience Cloud]組織識別碼。 如果您沒有此ID，可以在[!DNL Experience Cloud]儀表板的[!UICONTROL Administration]區段中找到。 您需要管理員許可權才能檢視此儀表板。 請參閱[管理：核心服務](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+在名稱空間機碼值組中，`*`MCORG`*`變數是您的[!DNL Experience Cloud]組織識別碼。 如果您沒有此ID，可以在[!DNL Experience Cloud]儀表板的[!UICONTROL Administration]區段中找到。 您需要管理員許可權才能檢視此儀表板。 請參閱[管理：核心服務](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hant)。
 
 ### 設定SDK
 

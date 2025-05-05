@@ -31,11 +31,11 @@ Audience Manager 提供多種工具，可協助您向使用者處取得必要同
 
 ## Experience Cloud 選擇加入服務
 
-[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)可讓您為訪客設定通訊協定，協助您判斷當訪客造訪您的網站時，是否可在其個別裝置或瀏覽器上設定 Cookie。
+[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hant)可讓您為訪客設定通訊協定，協助您判斷當訪客造訪您的網站時，是否可在其個別裝置或瀏覽器上設定 Cookie。
 
 這是 [!DNL Experience Cloud ID (ECID) Service] 的擴充功能，其用途是讓您控制 Experience Cloud 解決方案是否能在使用者同意前，為使用者在網頁上放置 Cookie，以及可使用哪個解決方案來執行
 
-[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)也可讓您設定通訊協定，以整合您的同意管理平台 (CMP) 和現有的系統，成為更大型設計的一部分。
+[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hant)也可讓您設定通訊協定，以整合您的同意管理平台 (CMP) 和現有的系統，成為更大型設計的一部分。
 
 ## 管理選擇加入/取得同意
 

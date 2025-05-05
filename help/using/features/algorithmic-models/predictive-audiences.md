@@ -122,11 +122,11 @@ ht-degree: 3%
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-[!UICONTROL Predictive Audiences]模型建立的預測區段會繼承下列第一方資料來源的[資料匯出控制項](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)：
+[!UICONTROL Predictive Audiences]模型建立的預測區段會繼承下列第一方資料來源的[資料匯出控制項](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hant)：
 
 1. 您在建立模型時選擇的第一方資料來源。
 1. 目標對象的第一方資料來源。 具體來說，就是組成您目標對象之[!UICONTROL traits]或[!UICONTROL segments]的資料匯出控制項。
-1. 您為模型選取之[!UICONTROL Profile Merge Rule]的[資料匯出控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)。
+1. 您為模型選取之[!UICONTROL Profile Merge Rule]的[資料匯出控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hant)。
 
 新建立的預測性[!UICONTROL traits]和[!UICONTROL segments]將與上述第一方資料來源的聯合有相同的隱私許可權制。
 
@@ -146,6 +146,6 @@ ht-degree: 3%
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-您為角色和對象分類選擇的特徵和區段須遵守Audience Manager[角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html)。
+您為角色和對象分類選擇的特徵和區段須遵守Audience Manager[角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hant)。
 
-Audience Manager使用者只能選取其具有[檢視](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)許可權之角色和Target對象的特徵或區段。
+Audience Manager使用者只能選取其具有[檢視](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hant#wild-card-permissions)許可權之角色和Target對象的特徵或區段。

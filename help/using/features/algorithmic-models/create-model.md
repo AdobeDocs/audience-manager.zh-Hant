@@ -55,7 +55,7 @@ ht-degree: 0%
 
 請觀看下方的影片，詳細瞭解跨裝置量度的運作方式。
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=zh-Hant)
 
 ## 演演算法模型的基本資訊 {#basic-information}
 

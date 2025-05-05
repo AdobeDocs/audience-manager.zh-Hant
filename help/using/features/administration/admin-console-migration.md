@@ -39,7 +39,7 @@ ht-degree: 1%
 Audience Manager管理員應該遵循下列步驟，將使用者移轉至[!DNL Admin Console]。
 
 1. 前往[https://adminconsole.adobe.com](https://adminconsole.adobe.com)並使用您的Adobe ID或Enterprise ID登入。 如果您無法存取[!DNL Admin Console]，請聯絡客戶服務或您的Adobe顧問。
-2. 請檢視[!DNL Adobe Admin Console] [說明指南](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html)，以取得有關如何建立和管理使用者帳戶的詳細指示。
+2. 請檢視[!DNL Adobe Admin Console] [說明指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/users.ug.html)，以取得有關如何建立和管理使用者帳戶的詳細指示。
 3. 為所有現有的Audience Manager使用者建立新的使用者帳戶。
 4. 通知您的使用者有關新建立的使用者帳戶。 使用者移轉至[!DNL Admin Console]後，即應停止使用舊版登入。
 

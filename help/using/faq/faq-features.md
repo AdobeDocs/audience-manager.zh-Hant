@@ -33,7 +33,7 @@ faq_features_functions.xml
 
 例如，*`Organization ID`* 看起來像這樣：`1FD6776A524453CC0A490D44@AdobeOrg`。
 
-*`Organization ID`* 用於 Audience Manager 的 [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)，以及其他 [!DNL Experience Cloud] 解決方案。擁有管理員權限的使用者可以在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。請參閱[管理 - 使用者管理常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
+*`Organization ID`* 用於 Audience Manager 的 [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)，以及其他 [!DNL Experience Cloud] 解決方案。擁有管理員權限的使用者可以在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。請參閱[管理 - 使用者管理常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hant)。
 
  
 
@@ -67,7 +67,7 @@ faq_features_functions.xml
 
 **什麼是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Tags] 取代。如需詳細資訊，請參閱[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
+Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Tags] 取代。如需詳細資訊，請參閱[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)。
 
  
 
@@ -95,4 +95,4 @@ Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管
 
 **Adobe Analytics 和 Audience Manager 區段之間是否有任何差異？**
 
-有，請參閱[瞭解 Analytics 和 Audience Manager 中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)，深入瞭解差異。
+有，請參閱[瞭解 Analytics 和 Audience Manager 中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hant)，深入瞭解差異。

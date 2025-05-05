@@ -36,9 +36,9 @@ ht-degree: 1%
 1. [!DNL Facebook Ad Account]
 2. [!DNL Audience Manager]個區段，已準備好指派給您的新[!DNL Facebook]目的地。 以下是[如何在[!DNL Audience Manager] UI中建立區段](/help/using/features/segments/segment-builder.md)。
 3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) 4.1.0或更新版本。 在此下載最新版本&#x200B;**[&#128279;](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**。
-4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) 9.0或更新版本，可從&#x200B;**[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下載。 或者，如果您使用[伺服器端轉送(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)將資料匯入[!DNL Audience Manager]，則必須使用AppMeasurement版本2.12或更新版本。 使用[Analytics代碼管理員](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)下載[!DNL AppMeasurement]。
+4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) 9.0或更新版本，可從&#x200B;**[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下載。 或者，如果您使用[伺服器端轉送(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant)將資料匯入[!DNL Audience Manager]，則必須使用AppMeasurement版本2.12或更新版本。 使用[Analytics代碼管理員](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html?lang=zh-Hant)下載[!DNL AppMeasurement]。
 
-建議您使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)來安裝或升級步驟3與步驟4中的程式庫。
+建議您使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)來安裝或升級步驟3與步驟4中的程式庫。
 
 ## 步驟1 — 在[!DNL Audience Manager]中建立[!UICONTROL Facebook Destination] {#step-1-create-facebook-destination}
 

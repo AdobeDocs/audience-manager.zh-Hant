@@ -23,6 +23,6 @@ ht-degree: 98%
 
 ## 回答
 
-您可能是正在屬性上執行 [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。如果您確實如此，出現此 Audience Manager 參考指的不一定是該屬性執行 Audience Manager。相反地，這表示 Audience Manager 正在協助這項服務。
+您可能是正在屬性上執行 [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。如果您確實如此，出現此 Audience Manager 參考指的不一定是該屬性執行 Audience Manager。相反地，這表示 Audience Manager 正在協助這項服務。
 
-發出 Audience Manager 伺服器呼叫通常是為了同步[客戶 ID](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html)。
+發出 Audience Manager 伺服器呼叫通常是為了同步[客戶 ID](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html?lang=zh-Hant)。

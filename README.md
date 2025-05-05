@@ -15,13 +15,13 @@ ht-degree: 6%
 
 ## 關於您對Adobe內容的貢獻
 
-查看 [Adobe文檔貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+查看 [Adobe文檔貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
 您如何貢獻取決於您是誰以及您希望貢獻的更改類型：
 
 ### 輕微更改
 
-如果您出於好心而提供小小的更新，請訪問文章，然後按一下 **編輯** 連結到文章的GitHub源。 然後，只需使用GitHub UI進行更新即可。 請參閱常規 [Adobe文檔貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 的子菜單。
+如果您出於好心而提供小小的更新，請訪問文章，然後按一下 **編輯** 連結到文章的GitHub源。 然後，只需使用GitHub UI進行更新即可。 請參閱常規 [Adobe文檔貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant) 的子菜單。
 
 Adobe使用條款涵蓋您為此回購協定中的文檔和代碼實例提交的輕微更正或澄清。
 
@@ -41,7 +41,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社區參與者可以使用GitHub UI進行基本編輯，或分叉回購以做出主要貢獻。
 
-查看 [Adobe文檔貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 的雙曲餘切值。
+查看 [Adobe文檔貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant) 的雙曲餘切值。
 
 ## 如何使用標籤格式化您的主題
 
