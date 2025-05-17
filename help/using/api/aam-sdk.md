@@ -30,5 +30,5 @@ Audience Manager提供[!DNL Android]與[!DNL iOS]的軟體開發套件([!DNL SDK
 
 我們仍支援Android和iOS 4.x SDK。 如需這些SDK程式碼程式庫的相關資訊，請參閱：
 
-* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
-* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+* [Android SDK](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hant)
+* [iOS SDK](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hant)

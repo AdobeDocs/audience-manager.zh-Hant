@@ -223,7 +223,7 @@ DIL.create({
  </tbody>
 </table>
 
-另請參閱[Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html)和[iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html)。
+另請參閱[Android的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/android/audience-manager-android/c-audience-manager-methods.html?lang=zh-Hant)和[iOS的Audience Manager方法](https://experienceleague.adobe.com/docs/mobile-services/ios/aam-methods.html?lang=zh-Hant)。
 
 >[!MORELIKETHIS]
 >

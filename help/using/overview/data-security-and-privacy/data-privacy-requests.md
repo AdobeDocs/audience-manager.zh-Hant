@@ -97,8 +97,8 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
    <td colname="col1"> <p>行動裝置 </p> </td> 
    <td colname="col2"> <p>請參閱以下裝置適用的選擇退出與隱私權設定： </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android 裝置 </a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS 裝置 </a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hant" format="https" scope="external"> Android 裝置 </a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=zh-Hant" format="https" scope="external"> iOS 裝置 </a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
