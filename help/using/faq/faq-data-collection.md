@@ -8,12 +8,13 @@ uuid: fa8e79f4-99cb-41fd-8a85-d4f92d03c7a5
 keywords: SFTP；SFTP位址；STFP IP位址；FTP位址
 feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
-source-git-commit: b0521682c6332d23e55d769e7421680337670fa4
+source-git-commit: 974f45268d50c486c872137a3aa6d8fc7f691024
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 78%
+source-wordcount: '1255'
+ht-degree: 74%
 
 ---
+
 
 # 資料收集和產品整合常見問題集{#data-collection-and-product-integration-faq}
 
@@ -25,7 +26,7 @@ ht-degree: 78%
 
 透過 [!UICONTROL Inbound] 上線的特徵會以 [!UICONTROL Inbound] 填入，其方式與以 [!DNL DCS] 填入的方式相同。有幾種不同的方式可以判斷流量是來自 [!UICONTROL Inbound]：
 
-* 遠端 IP 將設為 68.67.173.18
+* 遠端IP將設定為68.67.173.18
 * 網域 ID 將設為 5325
 * 地區將設為 0
 
@@ -125,7 +126,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 * 搜尋引擎類型
 * 關鍵字
 
-此外，用戶端可部署簡單的站上物件，並填入您希望 [!UICONTROL DIL] 收集資料的索引鍵值配對。這可讓您新增和移除網站上的特定受眾資料點，而不需進行任何 [!DNL Audience Management] 更新。請與您的合作夥伴解決方案代表合作，正確進行此設定，並確保 [!DNL DIL] 模組正確參考頁面物件。
+此外，用戶端可部署簡單的站上物件，並填入您希望 [!UICONTROL DIL] 收集資料的索引鍵值配對。這可讓您新增和移除網站上的特定客群資料點，而不需進行任何 [!DNL Audience Management] 更新。請與您的合作夥伴解決方案代表合作，正確進行此設定，並確保 [!DNL DIL] 模組正確參考頁面物件。
 
 <br> 
 
@@ -164,13 +165,13 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **[!DNL Audience Manager]如何設定Cookie及傳遞變數至[!DNL Google Ad Manager]？**
 
-[!DNL Audience Manager]會設定2個Cookie：其中一個會將區段變數傳送至[!DNL Google Ad Manager]廣告標籤，另一個則會設定我們的不重複使用者ID (UUID)，而[!DNL Google Ad Manager]也會讀取此ID。 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報表和受眾探索。
+[!DNL Audience Manager]會設定2個Cookie：其中一個會將區段變數傳送至[!DNL Google Ad Manager]廣告標籤，另一個則會設定我們的不重複使用者ID (UUID)，而[!DNL Google Ad Manager]也會讀取此ID。 將 UUID 新增至廣告標籤，表示我們可以執行使用者層級的報告和客群探索。
 
 <br> 
 
 **是否可傳送轉換漏斗中使用者觸及點的相關 DSP 資訊？**
 
-是。我們可以傳送漏斗資料，但是 DSP 必須具備使用這些資料的技術能力。DSP 必須確認其可以處理多個區段。如果無法，我們可能需要建立特定區段，以根據使用者的轉換進度將使用者從其他區段中提取出 (例如已完成步驟 1 和 2，但步驟 3 尚未完成)。您可將這些資訊傳送至 DSP，讓 DSP 可對使用者重新進行定位、將其導向至特定登陸頁面，或顯示特定創意內容。
+是。我們可以傳送漏斗資料，但是 DSP 必須具備使用這些資料的技術能力。DSP 必須確認其可以處理多個區段。如果無法，我們可能需要建立特定區段，以根據使用者的轉換進度將使用者從其他區段中提取出 (例如已完成步驟 1 和 2，但步驟 3 尚未完成)。您可將這些資訊傳送至 DSP，讓 DSP 可對使用者重新進行鎖定、將其導向至特定登陸頁面，或顯示特定創意內容。
 
 <br> 
 
@@ -190,7 +191,7 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 報表是根據報表產生時在後端看到的未驗證設定檔記錄 (UUID) 來計算母體。
 
-對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hant))。[!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
+對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html))。[!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
 
 >[!NOTE]
 >
@@ -210,6 +211,8 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 **非作用中Amazon S3使用者存取金鑰會發生什麼事？**
 
-Adobe可為Audience Manager客戶提供Audience Manager[!DNL Amazon S3]貯體的使用者存取金鑰。 基於安全理由，閒置100天後，金鑰會自動停用。
+Adobe可為Audience Manager客戶提供[!DNL Amazon S3]值區的存取金鑰。 基於安全考量，如果這些存取金鑰在100天內未使用，則會自動停用。
 
-若要重新啟用存取金鑰或請求新金鑰，請聯絡客戶支援。
+如果您的存取金鑰已停用，您可以聯絡客戶支援以重新啟用或請求新金鑰。
+
+為增強安全性，1000天未使用的存取金鑰將會與Amazon S3 IAM使用者帳戶一起永久刪除。 如果您是回頭的客戶，在此期間之後需要存取權，請聯絡客戶支援以重新建立您的帳戶並接收新的存取金鑰。
