@@ -201,30 +201,30 @@ ht-degree: 3%
    <td colname="col1"> <p>與<code> d_sid </code>或<code> d_unsid </code> </p> </td> 
    <td colname="col2"> <p>此資料檔案顯示符合特徵24、26、27資格的使用者，且已從特徵28和29中移除。 </p> <p> 
      <code>
-       59767559181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
+       59767559181262060060278870901087098252&nbsp;&nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
      </code> </p> <p>注意：  <p>您也可以使用下列語法，將特徵從使用者設定檔中移除，而不使用d_unsid： </p> <p> 
       <code>
-        59767559181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 
+        59767559181262060060278870901087098252&nbsp;28:0,&nbsp;29:0 
       </code> </p> <p> 
       <code>
-        59767559181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 
+        59767559181262060060278870901087098252&nbsp;28:-1,&nbsp;29:-1 
       </code> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>與<code> ic== </code> </p> </td> 
    <td colname="col2"> <p>這些特徵已新增至首碼為<code> ic </code>的特徵規則。 因此，您可以將它們新增至以逗號分隔的資料檔案中，如下所示。 UUID和特徵ID以標籤分隔。 檔案中不需要<code> ic </code>首碼。 </p> <p><b>數值ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,50352,30626 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;30608,50354,50338,50352,30626 
      </code> </p> <p><b>字串ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;ic=52,ic=55 
      </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用索引鍵值配對 </p> </td> 
    <td colname="col2"> 此檔案資料使用機碼值組將資料傳遞至<span class="keyword"> Audience Manager </span>。 <p> 
      <code>
-       59767559181262060060278870901087098252&amp;nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
+       59767559181262060060278870901087098252&nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
      </code> </p> </td> 
   </tr> 
  </tbody> 

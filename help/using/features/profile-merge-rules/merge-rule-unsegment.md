@@ -44,7 +44,7 @@ ht-degree: 2%
 >[!NOTE]
 >
 >**100個區段評估與取消資格的裝置限制**。
->>透過使用裝置圖表的設定檔合併規則來評估區段時，Audience Manager可合併最多100部裝置。 Audience Manager會透過[已驗證的設定檔](../../reference/visitor-authentication-states.md) （跨裝置ID）評估目前裝置，以及最多99部連結至目前裝置的裝置。 如果系統發出取消細分訊號，則目前的裝置和其他裝置將會從目的地的區段中移除。
+>&#x200B;>透過使用裝置圖表的設定檔合併規則來評估區段時，Audience Manager可合併最多100部裝置。 Audience Manager會透過[已驗證的設定檔](../../reference/visitor-authentication-states.md) （跨裝置ID）評估目前裝置，以及最多99部連結至目前裝置的裝置。 如果系統發出取消細分訊號，則目前的裝置和其他裝置將會從目的地的區段中移除。
 
 ![](assets/last-device-graph.png)
 

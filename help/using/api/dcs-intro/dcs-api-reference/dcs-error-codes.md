@@ -181,7 +181,7 @@ ht-degree: 3%
   <tr> 
    <td colname="col1"> <p>310 </p> </td> 
    <td colname="col2"> <p>已捨棄客戶ID，因為它超過指定名稱空間的限制。 名稱空間ID為<code><i>ID</i></code>，客戶ID為<code><i>ID</i></code>。 </p> </td> 
-   <td colname="col3"> <p>如果<code> DPID</code> DCS<span class="wintitle">呼叫上的相同名稱空間(</span>)宣告3個以上的客戶ID，則會傳回此錯誤碼。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one&amp;d_cid_ic=one </code> </p> <p>在此範例<span class="wintitle"> DCS</span>要求中，有4個識別碼宣告給相同的名稱空間（整合碼為1）。 其中一個ID會遭捨棄，並傳回錯誤310。 </p> </td> 
+   <td colname="col3"> <p>如果<code> DPID</code> DCS<span class="wintitle">呼叫上的相同名稱空間(</span>)宣告3個以上的客戶ID，則會傳回此錯誤碼。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>在此範例<span class="wintitle"> DCS</span>要求中，有4個識別碼宣告給相同的名稱空間（整合碼為1）。 其中一個ID會遭捨棄，並傳回錯誤310。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>311 </p> </td> 
@@ -192,7 +192,7 @@ ht-degree: 3%
    <td colname="col1"> <p>312 </p> </td> 
    <td colname="col2"> <p>請求包含無效的全域裝置識別碼 </p> </td> 
    <td colname="col3"> <p>當請求包含無效的全域裝置識別碼時，<span class="wintitle">DCS</span>會傳回此錯誤碼。 DCS會忽略無效ID並擲回312錯誤以及無效ID的特定錯誤。 如需正確裝置廣告ID格式與對應之全域資料來源的詳細資訊，請參閱Audience Manager<a href="../../../features/global-data-sources.md" format="dita" scope="local">中的</a>全域資料來源<a href="../../../reference/ids-in-aam.md" format="dita" scope="local">與</a>ID索引。</p>
-   <p>不正確呼叫的範例： <code>"http://partner.demdex.net/event?d_rtbd=json&amp;d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
+   <p>不正確呼叫的範例： <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
    <p>說明： <span class="keyword">IDFA (DPID 20915)</span>必須是大寫識別碼。 請求中提供的ID為小寫。</p>
    </td>
   </tr>

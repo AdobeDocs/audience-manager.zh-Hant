@@ -147,7 +147,7 @@ ht-degree: 1%
 2. 按一下 [!UICONTROL Add New Rule]。
 3. 輸入設定檔合併規則&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
 4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;區段中，從&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;清單中選取&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;規則。
-5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**清單中，選取您的特徵要上線的資料來源。
+5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;清單中，選取您的特徵要上線的資料來源。
    ![merge-rule-setup](assets/pbd-pmr.png)
 
 ## 步驟5 — 建立對象區段 {#create-audience-segments}
@@ -159,7 +159,7 @@ ht-degree: 1%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
    ![以人物為基礎的整合](assets/pbd-config.png)
 1. 按一下 **[!UICONTROL Add Account]**。
-1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表選取您要設定整合的平台。
+1. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉式功能表選取您要設定整合的平台。
    ![以人員為基礎的平台](assets/pbd-add.png)
 1. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
 1. 在驗證您的Social Platform帳戶後，您會重新導向至Audience Manager，在那裡您應該會看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
