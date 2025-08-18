@@ -47,15 +47,15 @@ ht-degree: 0%
 
 <!-- t_tb_create_rules.xml -->
 
-在建立特徵規則之前&#x200B;*，請先完成&#x200B;**[!UICONTROL Basic Information]**&#x200B;區段*&#x200B;中的必填欄位。
+在建立特徵規則之前&#x200B;**[!UICONTROL Basic Information]**，請先完成&#x200B;*區段*&#x200B;中的必填欄位。
 
 1. 展開&#x200B;**[!UICONTROL Trait Expression]**&#x200B;區段並輸入索引鍵和值名稱。 這會建立&#x200B;*`signal`*。
 
    >[!NOTE]
    >
-   >如果您的事件呼叫使用該語法將資料傳送至[!DNL Audience Manager]，請包含索引鍵變數的`c_`首碼（或任何其他命名慣例）。
+   >如果您的事件呼叫使用該語法將資料傳送至`c_`，請包含索引鍵變數的[!DNL Audience Manager]首碼（或任何其他命名慣例）。
 
-1. 從&#x200B;**[!UICONTROL Operator]**&#x200B;下拉式清單中選取[比較運運算元](../../features/traits/trait-comparison-operators.md)。 比較運運算元會評估訊號中元素之間的關係。
+1. 從[下拉式清單中選取](../../features/traits/trait-comparison-operators.md)比較運運算元&#x200B;**[!UICONTROL Operator]**。 比較運運算元會評估訊號中元素之間的關係。
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ### 範例 {#example-trait-rule}
 
-在以下範例中，使用者已根據產品ID建立新特徵規則。 若要建置此規則，使用者提供的索引鍵`productkey`連結到值`2093`的equals運運算元( `==`)。
+在以下範例中，使用者已根據產品ID建立新特徵規則。 若要建置此規則，使用者提供的索引鍵`productkey`連結到值`==`的equals運運算元( `2093`)。
 
 ![](assets/tb_sample_rule1.png)
 

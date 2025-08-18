@@ -20,15 +20,15 @@ ht-degree: 0%
 
 ## 建立區段測試群組 {#create-test-groups}
 
-### 必備條件
+### 先決條件
 
 <!-- create-test-group.xml -->
 
-* 您必須設定至少一個&#x200B;**轉換特徵**。 您可以選取&#x200B;**轉換**&#x200B;作為事件型別，在[特徵產生器](../../features/traits/create-onboarded-rule-based-traits.md)中設定轉換特徵。 如需有關轉換特徵及其設定方式的詳細資訊，我們為您準備了[影片](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html)。
+* 您必須設定至少一個&#x200B;**轉換特徵**。 您可以選取[轉換](../../features/traits/create-onboarded-rule-based-traits.md)作為事件型別，在&#x200B;**特徵產生器**&#x200B;中設定轉換特徵。 如需有關轉換特徵及其設定方式的詳細資訊，我們為您準備了[影片](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html)。
 
   >[!IMPORTANT]
   >
-  >[資料夾特徵](../../features/traits/about-folder-traits.md) **不受[!UICONTROL Audience Lab]支援**。 將資料夾特徵的[事件型別](../../features/traits/create-onboarded-rule-based-traits.md)設定為&#x200B;**轉換**，將不會在[!UICONTROL Audience Lab]中產生該特定資料夾特徵的任何資料。
+  >[資料夾特徵](../../features/traits/about-folder-traits.md) **不受**&#x200B;支援[!UICONTROL Audience Lab]。 將資料夾特徵的[事件型別](../../features/traits/create-onboarded-rule-based-traits.md)設定為&#x200B;**轉換**，將不會在[!UICONTROL Audience Lab]中產生該特定資料夾特徵的任何資料。
 
 * 針對使用[角色型存取控制](../../features/administration/administration-overview.md)的公司：將[!UICONTROL Audience Lab] [萬用字元許可權](../../features/administration/administration-overview.md#wild-card-permissions)指派給&#x200B;**[!UICONTROL User Groups]**&#x200B;以提供存取權。 此許可權可讓使用者建立和檢視測試的結果。 使用者將只能使用他們具有&#x200B;**讀取**&#x200B;和&#x200B;**對應到目的地**&#x200B;許可權的資料來源區段。 使用者將只能使用他們擁有&#x200B;**「讀取」**&#x200B;許可權的資料來源的轉換特徵。 使用者也只能檢視他們有權存取的目的地。 因此，在將[!DNL Audience Lab]萬用字元許可權新增到群組之前，請確定群組具有：
    * 存取權以讀取相關的轉換特徵；
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 若要建立新的[!UICONTROL Segment Test Group]：
 
-1. 在[!UICONTROL Audience Lab]儀表板中選取&#x200B;**[!UICONTROL Create New Test Group]**&#x200B;以啟動精靈。
+1. 在&#x200B;**[!UICONTROL Create New Test Group]**&#x200B;儀表板中選取[!UICONTROL Audience Lab]以啟動精靈。
 1. **[!UICONTROL Basic Info & Choose Segment]**
 
    * 填寫&#x200B;**[!UICONTROL Test Group Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >* 您可以在建立過程中隨時儲存測試群組，並稍後返回精靈。 測試群組狀態將為&#x200B;**[!UICONTROL Draft]**，而且在您完成區段測試群組之前，測試群組不會傳送任何資料至目的地。
-   >* 對於草稿測試，您可以在主要[!UICONTROL Audience Lab]檢視中按一下測試群組卡片中的&#x200B;**[!UICONTROL Edit]**，返回並編輯測試群組。
+   >* 對於草稿測試，您可以在主要&#x200B;**[!UICONTROL Edit]**&#x200B;檢視中按一下測試群組卡片中的[!UICONTROL Audience Lab]，返回並編輯測試群組。
 
 ## 編輯區段測試群組 {#edit-test-groups}
 

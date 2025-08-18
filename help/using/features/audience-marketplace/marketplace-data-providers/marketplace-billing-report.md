@@ -39,7 +39,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">資料提供者PID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的<span class="keyword">Audience Manager</span>資料提供者識別碼。 </p> </td> 
+   <td colname="col2"> <p>您的<span class="keyword"> Audience Manager</span>資料提供者識別碼。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">資料提供者名稱</span></b> </p> </td> 
@@ -68,7 +68,7 @@ ht-degree: 1%
      <li id="li_3400C6475F6D43D7AF54D9A0ED9C09E0">區段和重疊 </li> 
      <li id="li_65DFEF1EA6C341ACB5B72FF629F10AFC">模型 </li> 
      <li id="li_B84935B93ADE4D299732CE7E099DF7B3">啟用 </li> 
-    </ul> <p>檢視資料摘要</a>的<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types">計畫型別。 </p> </td> 
+    </ul> <p>檢視資料摘要<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#plan-types">的</a>計畫型別。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">量值單位</span></b> </p> </td> 
@@ -80,14 +80,14 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">折扣價</span></b> </p> </td> 
-   <td colname="col2"> <p>折扣資料摘要的訂閱費用。 檢視資料提供者</a>的<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts">折扣。 </p> </td> 
+   <td colname="col2"> <p>折扣資料摘要的訂閱費用。 檢視資料提供者<a href="../../../features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#discounts">的</a>折扣。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b><span class="uicontrol">單位</span></b> </p> </td> 
    <td colname="col2"> <p>依摘要價格型別而異： </p> 
     <ul id="ul_01550B436EEE4FBC8C9945E08E3CE2C6"> 
      <li id="li_C589F6A751AB407E853AC6F726A47F14">固定費用資料摘要：僅傳回1。 </li> 
-     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM資料摘要：傳回CPM資料摘要的實際使用量。 如果訂閱者未提供CPM饋送的曝光資料，單位儲存格會是空的，且旗標儲存格會設為1。 </li> 
+     <li id="li_F93F8AEB2D8C45BFA0305E7808AFF848">CPM資料摘要：傳回CPM資料摘要的實際使用量。 如果訂閱者尚未提供CPM摘要的曝光資料，單位儲存格會是空的，而旗標儲存格會設為1。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -114,8 +114,8 @@ ht-degree: 1%
    <td colname="col1"> <p><b><span class="uicontrol">旗標</span></b> </p> </td> 
    <td colname="col2"> <p> <i>僅適用於CPM摘要</i>。 標幟選項包括： </p> 
     <ul id="ul_509BC73B754A43299F8D719AB0805ABD"> 
-     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0：表示訂閱者已向<span class="keyword">Audience Manager</span>回報使用資訊。 </li> 
-     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1：表示訂閱者尚未向<span class="keyword">Audience Manager</span>回報使用資訊。 </li> 
+     <li id="li_AB35E33B68EC49A187495DF6B9D86563">0：表示訂閱者已向<span class="keyword"> Audience Manager</span>回報使用資訊。 </li> 
+     <li id="li_2E4871B127A84EC586A9F3659F52D67E">1：表示訂閱者尚未向<span class="keyword"> Audience Manager</span>回報使用資訊。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

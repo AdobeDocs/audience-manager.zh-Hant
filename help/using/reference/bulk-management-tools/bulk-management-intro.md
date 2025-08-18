@@ -32,7 +32,7 @@ c_bulk_start.xml
 
 >[!NOTE]
 >
->[在[!DNL Audience Manager]使用者介面中指派的RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
+>[在](../../features/administration/administration-overview.md)使用者介面中指派的RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
 
 ## 概述 {#overview}
 
@@ -48,7 +48,7 @@ c_bulk_start.xml
 
 * 您的[!DNL Experience Cloud]登入。 身為客戶，您應該已經擁有這些認證。
 * [!DNL Bulk Management Tools]工作表。 [下載工作表](assets/BAAAM_V2_20210609.xlsm)以取得最新版本。
-* 在64位元[!DNL Microsoft Windows]上執行的[!DNL Microsoft Excel]。 建議您使用最新版本的[!DNL Microsoft Excel]。 [!DNL macOS]不支援大量管理工具。
+* 在64位元[!DNL Microsoft Excel]上執行的[!DNL Microsoft Windows]。 建議您使用最新版本的[!DNL Microsoft Excel]。 [!DNL macOS]不支援大量管理工具。
 * 開啟工作表時，您必須&#x200B;**啟用巨集**&#x200B;才能讓[!DNL Bulk Management Tools]運作。
 
 ## 驗證需求和選項 {#auth-reqs}

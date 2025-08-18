@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在[!DNL Audience Manager] UI中指派的[RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
+>在[ UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
 
 <table id="table_2C2BC2FB3EFC443C9A5AE18EFC6FABFD"> 
  <thead> 
@@ -78,7 +78,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceKey</span> </p> </td> 
-   <td colname="col2"> <p>訊號是根據使用者活動傳入<span class="keyword">Audience Manager</span>的資料位元。 這些會以<a href="../../reference/key-value-pairs-explained.md">機碼值組</a>傳輸。 來源金鑰是不變更的常數。 它有助於將可變更的來源值分類。 請參閱<a href="../../features/derived-signals.md">衍生訊號</a>。 </p> </td> 
+   <td colname="col2"> <p>訊號是根據使用者活動傳入<span class="keyword"> Audience Manager</span>的資料位元。 這些會以<a href="../../reference/key-value-pairs-explained.md">機碼值組</a>傳輸。 來源金鑰是不變更的常數。 它有助於將可變更的來源值分類。 請參閱<a href="../../features/derived-signals.md">衍生訊號</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> sourceValue</span> </p> </td> 
@@ -102,7 +102,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term"> traitRule / segmentRule</span> </p> </td> 
-   <td colname="col2"> <p>用來收集資料的實際特徵或區段規則。 大量請求會傳回以<span class="keyword">Audience Manager</span>建立的規則，包含<a href="../../features/traits/about-trait-builder.md">特徵規則產生器</a>或<a href="../../features/segments/segment-builder.md">區段規則產生器</a>。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>另請參閱<a href="../../reference/bulk-management-tools/bulk-rules.md">建立或更新特徵規則和區段規則</a>。 </p> </td> 
+   <td colname="col2"> <p>用來收集資料的實際特徵或區段規則。 大量請求會傳回在<span class="keyword"> Audience Manager</span>中以<a href="../../features/traits/about-trait-builder.md">特徵規則產生器</a>或<a href="../../features/segments/segment-builder.md">區段規則產生器</a>建立的規則。 您也可以使用這些工具來建立規則，並在更新區段或特徵時大量套用規則。 </p> <p>另請參閱<a href="../../reference/bulk-management-tools/bulk-rules.md">建立或更新特徵規則和區段規則</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="term">特徵型別</span> </p> </td> 

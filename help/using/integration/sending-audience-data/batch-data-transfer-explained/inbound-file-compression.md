@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # 傳入資料傳輸檔案的檔案壓縮{#file-compression-for-inbound-data-transfer-files}
 
-將資料檔案傳送至Audience Manager時，您可以壓縮這些檔案。
+將資料檔案傳送至Audience Manager時，您可以加以壓縮。
 
 <!-- inbound-file-compression.xml -->
 
 Audience Manager支援gzip (`.gz`)壓縮，以進行傳入的非同步資料傳輸。
 
-Audience Manager也支援未壓縮的檔案。
+Audience Manager也支援未壓縮檔案。
 
 >[!IMPORTANT]
 >

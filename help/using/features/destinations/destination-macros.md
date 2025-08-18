@@ -40,27 +40,27 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %did%</code> </p> </td> 
-   <td colname="col2"> <p>將使用者的<span class="keyword">Audience Manager</span> ID插入目的地URL。 </p> </td> 
+   <td colname="col2"> <p>將使用者的<span class="keyword"> Audience Manager</span> ID插入目的地URL。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>%dpid_<i>data source id</i>%</code> </p> </td> 
-   <td colname="col2"> <p><i>資料來源ID</i>對應到傳入巨集的資料來源識別碼。 </p> <p>讓我們來看看這如何在一個簡單的範例中運作。 在此案例中，我們有<span class="keyword">個Audience Manager</span>合作夥伴，具有下列ID和條件： </p> 
+   <td colname="col2"> <p><i>資料來源ID</i>對應到傳入巨集的資料來源識別碼。 </p> <p>讓我們來看看這如何在一個簡單的範例中運作。 在此案例中，我們有<span class="keyword">個Audience Manager</span>合作夥伴，其識別碼和條件如下： </p> 
     <ul id="ul_697508B437EB4090B121AFA5D519AFBE"> 
      <li id="li_32D9F72A7D1543A892DC7E1529E98A96">資料來源識別碼： <code> 1</code> </li> 
      <li id="li_099F5B63D2244B5AADA9B26CB6152E6B">內部客戶識別碼： <code> CustomerABC</code> </li> 
      <li id="li_0D9FE501C16444DDB388C8E934E5A8C6">宣告ID：合作夥伴想要將這些值作為宣告ID <code> 1:CustomerABC</code>傳入。 </li> 
-    </ul> <p>若要對<code>%dpid_<i>data source id</i>%</code>執行此動作，<span class="keyword">Audience Manager</span>合作夥伴將設定如下的巨集格式： </p> 
+    </ul> <p>若要對<code>%dpid_<i>data source id</i>%</code>執行此動作，<span class="keyword"> Audience Manager</span>合作夥伴會將巨集格式設定如下： </p> 
     <ul class="simplelist"> 
      <li> <code> %dpid_1%</code> </li> 
-    </ul> <p>巨集會以<code> CustomerABC</code>取代<code> 1</code>。 </p> </td> 
+    </ul> <p>巨集會以<code> 1</code>取代<code> CustomerABC</code>。 </p> </td> 
   </tr> 
   <tr>
     <td><p><code>${GDPR}</code></p></td>
-    <td><p>指出GDPR法規是否適用於訪客。 使用此巨集會包含傳送至與IAB整合之URL目的地的區段中的同意。 如需詳細資訊，請參閱適用於IAB TCF</a>的<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式。</p></td>
+    <td><p>指出GDPR法規是否適用於訪客。 使用此巨集會包含傳送至與IAB整合之URL目的地的區段中的同意。 如需詳細資訊，請參閱適用於IAB TCF的<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式</a>。</p></td>
   </tr>
    <tr>
     <td><code>${GDPR_CONSENT_XXXX}</code></p></td>
-    <td><p>訪客在您的網站上提供或拒絕同意時收集的同意字串（包括IAB廠商ID）。 使用此巨集會包含同意字串，該字串會包含在傳送至與IAB整合之URL目的地的區段中。 將<code>XXXX</code>取代為目的地合作夥伴識別碼。 如需詳細資訊，請參閱適用於IAB TCF</a>的<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式。 </p></td>
+    <td><p>訪客在您的網站上提供或拒絕同意時收集的同意字串（包括IAB廠商ID）。 使用此巨集會包含同意字串，該字串會包含在傳送至與IAB整合之URL目的地的區段中。 將<code>XXXX</code>取代為目的地合作夥伴識別碼。 如需詳細資訊，請參閱適用於IAB TCF的<a href="../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式</a>。 </p></td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> %http_proto%</code> </p> </td> 
@@ -73,11 +73,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %mcid%</code> </p> </td> 
-   <td colname="col2"> <p>將<span class="keyword">Experience Cloud</span> ID插入目的地URL。 </p> </td> 
+   <td colname="col2"> <p>將<span class="keyword"> Experience Cloud</span> ID插入目的地URL。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> %region%</code> </p> </td> 
-   <td colname="col2"> <p>將<span class="wintitle">資料收集伺服器(DCS)</span>區域插入目的地URL。 為了將延遲降至最低，當訪客對<span class="keyword">Audience Manager</span>進行HTTP呼叫時，他們會被重新導向到最近的<span class="wintitle"> DCS</span>資料中心。 這是透過DNS達成，DNS可偵測訪客的位置，並將其導向適當的資料中心。 </p> </td> 
+   <td colname="col2"> <p>將<span class="wintitle">資料收集伺服器(DCS)</span>區域插入目的地URL。 為了將延遲降至最低，當訪客對<span class="keyword"> Audience Manager</span>進行HTTP呼叫時，他們會被重新導向到最近的<span class="wintitle"> DCS</span>資料中心。 這是透過DNS達成，DNS可偵測訪客的位置，並將其導向適當的資料中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> %rnd%</code> </p> </td> 

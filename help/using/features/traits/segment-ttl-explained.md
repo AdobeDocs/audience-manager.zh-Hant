@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 存留時間
 
-[!DNL TTL]會定義網站訪客在最後一個特徵資格事件後會在區段中停留多久。 [!DNL TTL]是針對特徵設定而非區段。 如果訪客在[!DNL TTL]間隔結束前不符合特徵資格，就會從區段中流失。 新特徵的預設[!DNL TTL]為120天。 設為0天時，特徵永不過期。 [當您在特徵建立介面的[!UICONTROL Advanced Options]區段中建立或編輯特徵時，請設定TTL值](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。
+[!DNL TTL]會定義網站訪客在最後一個特徵資格事件後會在區段中停留多久。 [!DNL TTL]是針對特徵設定而非區段。 如果訪客在[!DNL TTL]間隔結束前不符合特徵資格，就會從區段中流失。 新特徵的預設[!DNL TTL]為120天。 設為0天時，特徵永不過期。 [當您在特徵建立介面的](../../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval)區段中建立或編輯特徵時，請設定TTL值[!UICONTROL Advanced Options]。
 
 ### 1天TTL說明
 
@@ -51,7 +51,7 @@ Audience Manager會根據下列公式，計算1天[!DNL TTL]的特徵的[!DNL TT
 
 ## [!DNL Audience Manager] TTL獨立於第三方TTL設定
 
-請記住，在您的[!DNL Audience Manager]畫素上設定的[!DNL TTL]與第三方使用的其他畫素（[!DNL DSP]、廣告網路等）上設定的[!DNL TTL]獨立運作。
+請記住，在您的[!DNL TTL]畫素上設定的[!DNL Audience Manager]與第三方使用的其他畫素（[!DNL TTL]、廣告網路等）上設定的[!DNL DSP]獨立運作。
 
 >[!MORELIKETHIS]
 >

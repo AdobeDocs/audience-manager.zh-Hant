@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 請對您的傳出檔案使用Amazon S3跨帳戶貯體許可權 {#leverage-amazon-s-cross-account-bucket-permissions-for-your-outbound-files}
 
-使用[!DNL Amazon Simple Storage Service] ([!DNL Amazon S3])之客戶的[!UICONTROL Outbound Data Transfer]程式需要我們要求您的[!DNL Amazon S3]存取金鑰和秘密金鑰，以將傳出資料檔案傳遞給您的貯體。
+使用[!UICONTROL Outbound Data Transfer] ([!DNL Amazon Simple Storage Service])之客戶的[!DNL Amazon S3]程式需要我們要求您的[!DNL Amazon S3]存取金鑰和秘密金鑰，以將傳出資料檔案傳遞給您的貯體。
 
 若您不想與我們共用您的[!DNL Amazon S3]存取金鑰與秘密金鑰，請連絡您的[!DNL Audience Manager]顧問或客戶服務，他們將會為您設定[!DNL Cross-Account Bucket Permissions]。
 

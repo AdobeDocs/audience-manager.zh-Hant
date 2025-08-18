@@ -21,8 +21,8 @@ ht-degree: 46%
 
 * **上次更新時間** =顯示此[!UICONTROL device-based destination]有更新的上次日期。
 * **更新** =指示[!DNL Audience Manager]是即時傳送資料還是批次(1xday)至此[!UICONTROL destination]。
-* **取消區段** =取消區段描述取消資格並從[!UICONTROL segments]移除裝置設定檔的程式。 從[!UICONTROL segment]移除裝置設定檔的能力取決於用來建立[!UICONTROL Profile Merge Rule]的裝置選項。 取消細分也會用於[!DNL GDPR]刪除請求的內容中。 讀取[設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)與具有取消細分功能的[Audience Manager夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager]傳送取消細分資訊到下面標示為&#x200B;**是**&#x200B;的[!UICONTROL destinations]。
-* **接收[!DNL IAB TCF]同意訊號** =此[!DNL Audience Manager Plug-in for IAB TCF]可讓您將[!DNL IAB TC]字串轉送給啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取適用於IAB TCF[&#128279;](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)的Audience Manager外掛程式。
+* **取消區段** =取消區段描述取消資格並從[!UICONTROL segments]移除裝置設定檔的程式。 從[!UICONTROL segment]移除裝置設定檔的能力取決於用來建立[!UICONTROL Profile Merge Rule]的裝置選項。 取消細分也會用於[!DNL GDPR]刪除請求的內容中。 讀取[設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)與具有取消細分功能的[Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/data-privacy-requests.md#aam-partners-with-unsegmentation)。 [!DNL Audience Manager]傳送取消細分資訊到下面標示為[!UICONTROL destinations]是&#x200B;**的**。
+* **接收[!DNL IAB TCF]同意訊號** =此[!DNL Audience Manager Plug-in for IAB TCF]可讓您將[!DNL IAB TC]字串轉送給啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取適用於IAB TCF[的](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md)Audience Manager外掛程式。
 * **[!DNL ICDS]** =此資料行列出支援[!UICONTROL Instant Cross-Device Suppression]的夥伴。 閱讀[即時跨裝置隱藏](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **行動裝置ID** =此欄列出可以從[!DNL Audience Manager]接收行動裝置ID的合作夥伴。
 

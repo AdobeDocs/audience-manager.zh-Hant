@@ -38,7 +38,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Order IDs]的描述性中繼資料，如[將Google Ad Manager （先前稱為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3中所述。 透過這樣做，您可以確保報告將Web屬性詳細資料顯示為[!UICONTROL Order]，而不是[!UICONTROL Order ID]。
+>啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Order IDs]的描述性中繼資料，如[將Google Ad Manager （前身為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3中所述。 透過這樣做，您可以確保報告將Web屬性詳細資料顯示為[!UICONTROL Order]，而不是[!UICONTROL Order ID]。
 
 ## 解譯結果 {#interpreting-results}
 

@@ -10,7 +10,7 @@ exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 **演算法建模**
 
-將 [!UICONTROL Algorithmic Modeling] 作為工具，將觸及延伸到您所識別使用者的核心以外。此功能可協助您透過自動化資料分析，挖掘出新的不重複受眾。在 **[!UICONTROL Audience Data > Models]** 中管理您的 [!UICONTROL Algorithmic Models]。
+將 [!UICONTROL Algorithmic Modeling] 作為工具，將觸及延伸到您所識別使用者的核心以外。此功能可協助您透過自動化資料分析，挖掘出新的不重複客群。在 **[!UICONTROL Audience Data > Models]** 中管理您的 [!UICONTROL Algorithmic Models]。
 
 請參閱[瞭解演算法模型](../features/algorithmic-models/algo-models-overview.md)。
 
@@ -48,9 +48,9 @@ CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audienc
 
 
 
-**客戶可定址的受眾**
+**客戶可定址客群**
 
-在[可定址的受眾](/help/using/features/addressable-audiences.md)中，此量度代表具備下列條件的裝置：
+在[可定址客群](/help/using/features/addressable-audiences.md)中，此量度代表具備下列條件的裝置：
 * 已在回顧期間實現了規則型或已上線特徵
   **和**
 * 具有與所選目的地同步的 ID (不論同步的時間為何)。
@@ -59,19 +59,19 @@ CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audienc
 
 **客戶屬性**
 
-請參閱 [!DNL Experience Cloud Core Services] 產品文件中的[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hant)。
+請參閱 [!DNL Experience Cloud Core Services] 產品文件中的[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)。
 
 
 
 **客戶符合率**
 
-客戶可定址的受眾 ÷ 客戶總受眾，以 % 表示。請參閱[可定址的受眾](/help/using/features/addressable-audiences.md)。
+客戶可定址客群 ÷ 客戶總客群，以 % 表示。請參閱[可定址客群](/help/using/features/addressable-audiences.md)。
 
 
 
-**客戶總受眾**
+**客戶總客群**
 
-在[可定址的受眾](/help/using/features/addressable-audiences.md)中，此量度代表在回顧期間，已在您的屬性上實現規則型特徵或離線檔案中已上線特徵的裝置計數。
+在[可定址客群](/help/using/features/addressable-audiences.md)中，此量度代表在回顧期間，已在您的屬性上實現規則型特徵或離線檔案中已上線特徵的裝置計數。
 
 
 
@@ -93,7 +93,7 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **目的地**
 
-在 [!DNL Audience Manager] 中，目的地是您想要與其共用資料的任何其他系統 (廣告伺服器、DSP、廣告網路等)。我們 UI 中的 [!UICONTROL Destination Builder] 提供工具，可讓您建立和管理這些資料傳送程序。[!DNL Audience Manager] 目的地功能位於 **[!UICONTROL Audience Data > Destinations]** 中。
+在[!DNL Audience Manager]中，目的地是您想要與其共用資料的任何其他系統(廣告伺服器、DSP、廣告網路等)。 我們 UI 中的 [!UICONTROL Destination Builder] 提供工具，可讓您建立和管理這些資料傳送程序。[!DNL Audience Manager] 目的地功能位於 **[!UICONTROL Audience Data > Destinations]** 中。
 
 
 
@@ -111,7 +111,7 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **Experience Cloud ID (ECID)**
 
-先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。[!DNL Experience Cloud] ID 是 ID 服務的中心。它是網站訪客的不重複永久識別碼。請參閱 Cookie 和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant)。
+先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。[!DNL Experience Cloud] ID 是 ID 服務的中心。它是網站訪客的不重複永久識別碼。請參閱 Cookie 和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html)。
 
 
 
@@ -123,9 +123,9 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 
 
-**頻率限定**
+**頻率上限**
 
-廣告商想要向使用者顯示特定創意內容次數限制。您可以在 [!UICONTROL Segment Builder] 中設定各種頻率限定運算式。
+廣告商想要向使用者顯示特定創意內容次數限制。您可以在 [!UICONTROL Segment Builder] 中設定各種頻率上限運算式。
 
 請參閱[造訪間隔和頻率](../features/segments/recency-and-frequency.md)。
 
@@ -152,7 +152,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **傳入**
 
-從其他來源將受眾資料傳送至 [!DNL Audience Manager] 的程序。請參閱[傳送受眾資料](/help/using/integration/sending-audience-data/send-audience-data.md)。
+從其他來源將客群資料傳送至 [!DNL Audience Manager] 的程序。請參閱[傳送客群資料](/help/using/integration/sending-audience-data/send-audience-data.md)。
 
 
 
@@ -162,7 +162,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 * [!UICONTROL Traits]：整合程式碼是您內部業務流程所使用的 ID、SKU 或其他值的欄位。選填。
 * [!UICONTROL Segments]：整合程式碼是使用者定義的 ID 或其他公司專屬資訊的欄位。選填。
-* [!UICONTROL Data Sources]：當您想要建立跨裝置資料來源、使用 Adobe Experience Platform Identity Service 或使用 [!UICONTROL Profile Merge Rules] 時，會需要整合程式碼。請參閱[建立資料來源](../features/manage-datasources.md#create-data-source)，瞭解更多資訊。
+* [!UICONTROL Data Sources]：當您想要建立跨裝置資料來源、使用 Adobe Experience Platform 身分識別服務或使用 [!UICONTROL Profile Merge Rules] 時，會需要整合程式碼。請參閱[建立資料來源](../features/manage-datasources.md#create-data-source)，瞭解更多資訊。
 
 ## K-L {#k-l}
 
@@ -208,27 +208,27 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **區段**
 
-區段 (或受眾) 是具有共同屬性的一組使用者。
+細分群體 (或客群) 是一組具有共同屬性的使用者。
 
 請參閱[區段：用途、構成和規則](../features/segments/segments-purpose.md)。
 
 
 
-**區段可定址的受眾**
+**細分群體可定址客群**
 
-在[可定址的受眾](/help/using/features/addressable-audiences.md)中，此量度代表在報表回顧期間屬於區段，且在您的網站上具有同步作用中 ID 的使用者人數。區段可以透過在 [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md) 中取得的特徵，包含您自己的第一方資料、第二方資料和第三方資料。
+在[可定址客群](/help/using/features/addressable-audiences.md)中，此量度代表在報告回顧期間屬於細分群體，且在您的網站上具有同步作用中 ID 的使用者人數。區段可以透過在 [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md) 中取得的特徵，包含您自己的第一方資料、第二方資料和第三方資料。
 
 
 
 **區段總母體**
 
-在[可定址的受眾](/help/using/features/addressable-audiences.md)中，此量度代表報表回顧期間屬於您區段的所有裝置計數。
+在[可定址客群](/help/using/features/addressable-audiences.md)中，此量度代表報告回顧期間屬於您細分群體的所有裝置計數。
 
 
 
 **區段符合率**
 
-區段可定址的受眾 ÷ 區段總母體，以 % 表示。請參閱[可定址的受眾](/help/using/features/addressable-audiences.md)。
+細分群體可定址客群 ÷ 細分群體總人數，以 % 表示。請參閱[可定址客群](/help/using/features/addressable-audiences.md)。
 
 
 
@@ -268,6 +268,6 @@ TTL 會定義合格訪客在某個特徵中停留的天數。TTL 是針對特徵
 
 [!DNL Experience Cloud] ID 服務 (前身為「ID 服務」) 提供永久性的通用 ID，可識別 [!DNL Experience Cloud] 中所有解決方案的訪客。
 
-請參閱 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant) 文件。
+請參閱 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)文件。
 
 ## W-X-Y-Z {#w-z}

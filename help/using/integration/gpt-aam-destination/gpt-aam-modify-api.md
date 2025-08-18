@@ -1,5 +1,5 @@
 ---
-description: 新增if陳述式，在呼叫Google Publisher標籤.setTargeting方法之前檢查Audience ManagerCookie。
+description: 新增if陳述式，在呼叫Audience Manager Publisher標籤.setTargeting方法之前檢查Google Cookie。
 seo-description: Add an if statement to check for Audience Manager cookies before calling the Google Publisher Tag .setTargeting method.
 seo-title: Modify the GPT setTargeting API Call
 solution: Audience Manager
@@ -16,15 +16,15 @@ ht-degree: 5%
 
 # 修改GPT `setTargeting` API呼叫 {#modify-the-gpt-settargeting-api-call}
 
-在呼叫[!DNL Google Publisher Tag] `.setTargeting`方法之前，新增if陳述式以檢查Audience ManagerCookie。
+在呼叫[!DNL Google Publisher Tag] `.setTargeting`方法之前，新增if陳述式以檢查Audience Manager Cookie。
 
-## 使用`IF`陳述式檢查Audience ManagerCookie
+## 使用`IF`陳述式檢查Audience Manager Cookie
 
-`.setTargeting`方法從Audience Manager目的地Cookie和唯一使用者ID Cookie ( `aam_uuid`)取得資料。 不過，如果`.setTargeting`在[!UICONTROL DIL]寫入這些Cookie之前被叫用，或Cookie是空的，您可能會在頁面載入時看到錯誤。 為避免此問題，請將`.setTargeting`方法包裝在檢查這些Cookie的`if`陳述式中。 如果未設定，此陳述式會防止`.setTargeting`呼叫`AamGpt`函式。
+`.setTargeting`方法會從Audience Manager目的地Cookie和唯一使用者ID Cookie ( `aam_uuid`)取得資料。 不過，如果`.setTargeting`在[!UICONTROL DIL]寫入這些Cookie之前被叫用，或Cookie是空的，您可能會在頁面載入時看到錯誤。 為避免此問題，請將`.setTargeting`方法包裝在檢查這些Cookie的`if`陳述式中。 如果未設定，此陳述式會防止`.setTargeting`呼叫`AamGpt`函式。
 
 ### `IF`陳述式程式碼範例
 
-在此範例中，Audience Manager目的地Cookie名稱為`Sample`。 當您在Audience Manager使用者介面中建立目的地Cookie時，請設定此名稱。 [!UICONTROL DIL]已設定`aam_uuid` Cookie，且無法變更名稱。
+在此範例中，Audience Manager目的地Cookie名稱為`Sample`。 在Audience Manager使用者介面中建立目的地Cookie時，請設定此名稱。 [!UICONTROL DIL]已設定`aam_uuid` Cookie，且無法變更名稱。
 
 ```js
 if(typeof AamGpt.getCookie("Sample") != "undefined"){ 
@@ -69,7 +69,7 @@ if(typeof AamGpt.getCookie("aam_uuid") != "undefined" ){
   <tr> 
    <td colname="col1"> <p> <code> AamGpt.getCookie </code> </p> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>傳回Audience Manager的使用者識別碼，例如<code> 12345 </code>。 </p> </td> 
+   <td colname="col3"> <p>傳回Audience Manager使用者ID，例如<code> 12345 </code>。 </p> </td> 
   </tr>
  </tbody>
 </table>

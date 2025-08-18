@@ -1,5 +1,5 @@
 ---
-description: Recommendations和使用案例，用於透過外部裝置圖表為未知使用者進行勘察、重新定位和個人化。 外部裝置圖表是定義為Audience Manager以外的裝置圖表。 這包括Adobe與協力廠商確定性或機率裝置圖表公司的整合。
+description: 透過外部裝置圖表，為未知使用者提供勘察、重新定位和個人化的建議和使用案例。 外部裝置圖表是定義為Audience Manager以外的裝置圖表。 這包括Adobe與協力廠商確定性或機率裝置圖表公司的整合。
 seo-description: Recommendations and use cases for prospecting, retargeting, and personalization for unknown users with an external device graph. An external device graph is defined as a device graph that is separate from Audience Manager. This includes integrations Adobe has with third-party deterministic or probabilistic device graph companies.
 seo-title: External Device Graph Use Cases
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 # 外接式裝置圖表使用案例 {#external-device-graph-use-cases}
 
-Recommendations和使用案例，用於透過外部裝置圖表為未知使用者進行勘察、重新定位和個人化。 外部裝置圖表是定義為Audience Manager以外的裝置圖表。 這包括Adobe與協力廠商確定性或機率裝置圖表公司的整合。
+透過外部裝置圖表，為未知使用者提供勘察、重新定位和個人化的建議和使用案例。 外部裝置圖表是定義為Audience Manager以外的裝置圖表。 這包括Adobe與協力廠商確定性或機率裝置圖表公司的整合。
 
 ## 建議 {#recommendations}
 
@@ -118,9 +118,9 @@ Through this rule, the device graph has expanded the number of device profiles w
 
 ![上次裝置圖表](assets/last-profile-link.png)
 
-在以下範例中，Acme Inc.公司想要鎖定收入超過$100.000/年、[!DNL Data Plan A]上有[!DNL Acme Inc.]位訂閱者，且使用[!DNL iPhone 7]裝置的所有家庭。
+在以下範例中，Acme Inc.公司想要鎖定收入超過$100.000/年、[!DNL Acme Inc.]上有[!DNL Data Plan A]位訂閱者，且使用[!DNL iPhone 7]裝置的所有家庭。
 
-John使用他在Data Plan A上的iPhone 7在Acme Inc.網站上進行驗證。 同時，John的[!DNL Profile Link Device Graph]叢集包含他定期使用的兩個額外裝置：他的膝上型電腦([!DNL Device 1])和他的次要智慧型手機[!DNL Device 2] （[!DNL Data Plan B]上的[!DNL Samsung S7]）。
+John使用他在Data Plan A上的iPhone 7在Acme Inc.網站上進行驗證。 同時，John的[!DNL Profile Link Device Graph]叢集包含他定期使用的兩個額外裝置：他的膝上型電腦([!DNL Device 1])和他的次要智慧型手機[!DNL Device 2] （[!DNL Samsung S7]上的[!DNL Data Plan B]）。
 
 使用&#x200B;**[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**，[!DNL Acme Inc.]能夠從John的裝置圖表叢集傳遞個人化訊息給所有三個裝置，即使其中只有一個最初符合區段資格。
 

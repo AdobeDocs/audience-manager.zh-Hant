@@ -10,7 +10,7 @@ exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
 source-git-commit: 319be4dade263c5274624f07616b404decb7066f
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->文字樣式 (`monospaced text`、*斜體*、括號 `[ ]` `( )` 等)表示程式碼元素和選項。如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
+>文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
 
 事件呼叫會收集曝光次數和轉換資料，並將其傳送至[!DNL Audience Manager] [資料收集伺服器](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS])。 此程序需仰賴協力廠商廣告伺服器，將呼叫放置在創意素材中，以控制插入程式碼中的內容。協力廠商廣告伺服器 (例如 [!DNL DFA]) 可在廣告每次曝光中置入此程式碼。此外，廣告呼叫不會使用 [!DNL JavaScript] 或採用 frame-busting 技術存取廣告標記以外的發佈者資料。
 
@@ -38,7 +38,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
 
 ## 支援的鍵值組 {#supported-key-value-pairs}
 
-曝光事件呼叫接受形成索引鍵/值組的資料。 下表列出及說明用來儲存這些變數的索引鍵。 如果您想要擷取和分析[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的資料，則需使用許多這類工具。
+曝光事件呼叫接受形成索引鍵/值組的資料。 下表列出及說明用來儲存這些變數的索引鍵。 如果您想要擷取並分析[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的資料，則需使用許多這類工具。
 
 <table id="table_F068C4D49F7D4775924D3CA712BF15BA"> 
  <thead> 
@@ -54,19 +54,19 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_adsrc </code> </td> 
-   <td colname="col2"> <p>廣告商的資料來源ID或整合代碼。 </p> <p><span class="wintitle">Audience Optimization</span>報告需要。 </p> <p>選填。</p> </td> 
+   <td colname="col2"> <p>廣告商的資料來源ID或整合代碼。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> <p>選填。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_bu </code> </td> 
-   <td colname="col2"> <p>您業務單位的資料來源ID或整合代碼。 </p> <p><span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>您業務單位的資料來源ID或整合代碼。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>Cache-busting值。 <span class="keyword">Audience Manager</span>會自動傳送大多數瀏覽器和代理程式遵循的快取控制標頭。 如果您想要執行額外的防快取，請將此引數納入事件呼叫中，接著納入隨機字串。 </p> <p> 選填。 </p> </td> 
+   <td colname="col2"> <p>Cache-busting值。 <span class="keyword"> Audience Manager </span>會自動傳送大多數瀏覽器和代理程式遵循的快取控制標頭。 如果您想要執行額外的防快取，請將此引數納入事件呼叫中，接著納入隨機字串。 </p> <p> 選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p><span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_cid </code> </td> 
@@ -78,7 +78,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_creative </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值創意ID。 </p> <p><span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值創意ID。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_event=imp </code> </td> 
@@ -90,11 +90,11 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_site </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值網站ID。 </p> <p><span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值網站ID。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_src </code> </td> 
-   <td colname="col2"> <p>提供中繼資料的平台的資料來源ID或整合程式碼（例如DFA、Atlas、GBM、Media Math等）。 </p> <p><span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>提供中繼資料的平台的資料來源ID或整合程式碼（例如DFA、Atlas、GBM、Media Math等）。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> </td> 
   </tr> 
    <tr> 
    <td colname="col1"> <code>gdpr</code>  </td> 
@@ -117,4 +117,4 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
 
 >[!MORELIKETHIS]
 >
->* Audience Optimization報表的[資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+>* [Audience Optimization報表的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)

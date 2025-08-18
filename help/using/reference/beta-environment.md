@@ -29,7 +29,7 @@ bveta環境中的功能是生產環境的精確復本，沒有任何實驗性或
 
 >[!IMPORTANT]
 >
->請注意，您的客戶資料（[訊號、特徵和區段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=zh-Hant)）並未在生產環境和Beta版環境之間同步。
+>請注意，您的客戶資料（[訊號、特徵和區段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)）並未在生產環境和Beta版環境之間同步。
 
 ## 傳入流量
 
@@ -47,7 +47,7 @@ bveta環境中的功能是生產環境的精確復本，沒有任何實驗性或
 
 | 服務 | url/主機名稱 | 如何取得存取權 |
 |--- |--- | --- |
-| S3 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的Beta版執行個體設定Amazon S3貯體。 閱讀使用Amazon S3[&#128279;](../reference/amazon-s3.md)的優點。 |
+| S3 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的Beta版執行個體設定Amazon S3貯體。 閱讀使用Amazon S3[的](../reference/amazon-s3.md)優點。 |
 | DCS | `https://dcs-beta.demdex.net/...` | 請參閱[在Beta環境中存取DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
 | UI | `https://bank-beta.demdex.com` | 您的生產環境憑證對測試版環境有效。 |
 | API | `https://api-beta.demdex.com/...` | 您的生產環境憑證對測試版環境有效。 建議您建立一般API使用者，[檢視詳細資料](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |

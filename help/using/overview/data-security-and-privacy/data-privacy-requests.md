@@ -19,7 +19,7 @@ ht-degree: 42%
 
 ## 概述 {#overview}
 
-本檔案概述如何管理個人資料隱私權和選擇退出請求，您可透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io/)和&#x200B;**[!DNL Privacy Service API]**&#x200B;將這些請求傳送給[!DNL Audience Manager]。
+本檔案概述如何管理您可透過[!DNL Audience Manager]Privacy Service UI[和](https://privacyui.cloud.adobe.io/)傳送給&#x200B;**[!DNL Privacy Service API]**&#x200B;的個別資料隱私權和選擇退出請求。
 
 這些工具可讓您傳送在[!DNL GDPR]和[!DNL CCPA]下提出的消費者資料隱私權請求。
 
@@ -28,15 +28,15 @@ ht-degree: 42%
 您可以透過兩種方式提交個別請求，以從[!DNL Audience Manager]存取和刪除消費者資料：
 
 * 透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。請參閱[此處](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)的文件。
-* 透過 **[!DNL Privacy Service API]**。請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
+* 透過 **[!DNL Privacy Service API]**。請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
-傳送個人資料隱私權要求時，如&#x200B;**[Audience Manager識別碼](data-privacy-ids.md)**&#x200B;一節所述，您可以提交任何[!DNL Audience Manager]識別碼(ID)，以及其各自的名稱空間ID （資料來源ID）。
+傳送個人資料隱私權請求時，如[!DNL Audience Manager]Audience Manager識別碼&#x200B;**[一節所述，您可以提交任何](data-privacy-ids.md)**&#x200B;識別碼(ID)，以及其各自的名稱空間ID （資料來源ID）。
 
-[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant) 支援兩種請求：資料存取和資料刪除請求。
+[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 支援兩種請求：資料存取和資料刪除請求。
 
 ## 資料存取請求 {#access-data}
 
-您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io) （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hant)）或呼叫Privacy ServiceAPI （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）來傳送個別資料存取請求。
+您可以透過[Privacy Service UI](https://privacyui.cloud.adobe.io) （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或呼叫Privacy Service API （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）來傳送個別資料存取請求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -46,7 +46,7 @@ ht-degree: 42%
 
 ## 資料刪除請求 {#delete-data}
 
-您可以透過[Privacy ServiceUI](https://privacyui.cloud.adobe.io) （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=zh-Hant)）或呼叫Privacy ServiceAPI （檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）來傳送資料刪除請求。
+您可以透過[Privacy Service UI](https://privacyui.cloud.adobe.io) （檔案[在此](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en)）或呼叫Privacy Service API （檔案[在此](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)和[!DNL API]參考[在此](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)）傳送資料刪除請求。
 
 [Privacy Service UI](https://privacyui.cloud.adobe.io/) 可讓您使用 [!UICONTROL Request Builder] 或上傳 [!DNL JSON] 檔案來建立新的工作請求。
 
@@ -71,7 +71,7 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
 
 [!DNL Audience Manager]支援有關選擇退出管理的業界標準。 請閱讀下文，瞭解[!DNL Audience Manager]支援的選擇退出型別的完整資訊。
 
-雖然資料存取和刪除要求是透過[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)處理，但目前是透過[!DNL DCS API]支援選擇退出要求。 請閱讀下文，瞭解選擇退出[!DNL API]呼叫看起來是什麼樣子。
+雖然資料存取和刪除請求是透過[Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)處理，但目前是透過[!DNL DCS API]支援選擇退出請求。 請閱讀下文，瞭解選擇退出[!DNL API]呼叫看起來是什麼樣子。
 
 ### 全域選擇退出請求
 
@@ -97,8 +97,8 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
    <td colname="col1"> <p>行動裝置 </p> </td> 
    <td colname="col2"> <p>請參閱以下裝置適用的選擇退出與隱私權設定： </p> <p> 
      <ul id="ul_78042D6D302F4119A2439BF71F228288"> 
-      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hant" format="https" scope="external"> Android 裝置 </a> </li> 
-      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=zh-Hant" format="https" scope="external"> iOS 裝置 </a> </li> 
+      <li id="li_5A0EDABDEF454FEEBBBFF4D68CC9A366"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html" format="https" scope="external"> Android 裝置 </a> </li> 
+      <li id="li_690067D869B84A9598AA97388D56F1BE"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html" format="https" scope="external"> iOS 裝置 </a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -127,7 +127,7 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
 * [!UICONTROL Destination]合作夥伴會收到[!DNL CRM] ID和最後一個裝置ID的取消細分請求。 取消細分功能適用於[即時](data-privacy-requests.md#aam-partners-with-unsegmentation)和批次目的地。
 * 系統不會刪除歷史資料。
 
-當[!DNL Audience Manager]收到合作夥伴層級的選擇退出要求時，[!DNL DCS]傳回的[!DNL JSON]會包含[錯誤碼171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)，並包含訊息[!UICONTROL "Encountered opt out tag"]，而非[!DNL Audience Manager]使用者識別碼。
+當[!DNL Audience Manager]收到合作夥伴層級的選擇退出要求時，[!DNL JSON]傳回的[!DNL DCS]會包含[錯誤碼171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)，並包含訊息[!UICONTROL "Encountered opt out tag"]，而非[!DNL Audience Manager]使用者識別碼。
 
 您可以使用 `d_cid` 和 `d_cid_ic` 索引鍵值配對，提出宣告 ID 選擇退出請求。舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。請參閱 [CID 取代 DPID 及 DPUUID](../../reference/cid.md)。在這些範例中，*斜體字*&#x200B;代表變數預留位置。
 

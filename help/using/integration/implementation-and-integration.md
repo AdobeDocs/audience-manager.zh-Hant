@@ -15,7 +15,7 @@ ht-degree: 36%
 
 # 實作與整合概述
 
-在[!DNL Audience Manager]中處理來自[!DNL Experience Cloud]解決方案或其他外部系統的資料。
+在[!DNL Experience Cloud]中處理來自[!DNL Audience Manager]解決方案或其他外部系統的資料。
 
 * [資料整合方法](data-integration-methods.md)
 * [實作Audience Manager](implement-audience-manager.md)

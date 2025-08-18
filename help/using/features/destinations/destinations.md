@@ -12,13 +12,13 @@ exl-id: f880bb18-057a-494d-82bf-69fc9f34781f
 source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 20%
+ht-degree: 19%
 
 ---
 
 # [!UICONTROL Destinations]總覽 {#destinations}
 
-在Audience Manager中，[!UICONTROL destination]是任何協力廠商系統（廣告伺服器、[!DNL DSP]、廣告網路等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder]是您用來建立和管理[!UICONTROL cookie]、[!DNL URL]或[!UICONTROL server-to-server destinations]的工具。
+在Audience Manager中，[!UICONTROL destination]是您想要與其共用資料的任何協力廠商系統（廣告伺服器、[!DNL DSP]、廣告網路等）。 [!UICONTROL Destination Builder]是您用來建立和管理[!UICONTROL cookie]、[!DNL URL]或[!UICONTROL server-to-server destinations]的工具。
 
 ## 用途與優點 {#purposes}
 
@@ -26,9 +26,9 @@ ht-degree: 20%
 
 [!UICONTROL Destinations]和[!UICONTROL Destination Builder]可讓您建立[!UICONTROL destinations]，並將分段使用者的相關資訊傳送給您的資料合作夥伴。 這可協助您：
 
-* **Protect資料值：**&#x200B;與其將所有使用者資料傳送至[!UICONTROL destination]，[!UICONTROL Destination Builder]僅可讓您共用合格使用者的特定資訊。
+* **保護資料值：**&#x200B;不是將所有使用者資料傳送給[!UICONTROL destination]，[!UICONTROL Destination Builder]僅可讓您共用合格使用者的特定資訊。
 * **對您的資料採取行動：**&#x200B;傳送資料給[!UICONTROL destination]合作夥伴可協助他們快速開發及鎖定合格的對象區段。
-* **減少技術負荷：**&#x200B;商務使用者可以在[!UICONTROL Destination Builder]介面中安全地設定[!UICONTROL destinations]。 這有助於減少部署前測試所需的時間。 透過[!UICONTROL Destination Builder]，您可在您的業務需求變更時建立、管理和刪除[!UICONTROL destinations]，無需經過漫長的開發週期。
+* **減少技術負荷：**&#x200B;商務使用者可以在[!UICONTROL destinations]介面中安全地設定[!UICONTROL Destination Builder]。 這有助於減少部署前測試所需的時間。 透過[!UICONTROL Destination Builder]，您可在您的業務需求變更時建立、管理和刪除[!UICONTROL destinations]，無需經過漫長的開發週期。
 
 ## 技術考量 {#technical-considerations}
 

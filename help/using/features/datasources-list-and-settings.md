@@ -18,7 +18,7 @@ ht-degree: 0%
 
 檢視您目前設定的[!UICONTROL data sources]清單、新增新的[!UICONTROL data sources]，以及編輯現有的[!UICONTROL data sources]。
 
-您也可以使用[!DNL API]方法來管理[!UICONTROL data sources]。 如需詳細資訊，請參閱[資料Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
+您也可以使用[!UICONTROL data sources]方法來管理[!DNL API]。 如需詳細資訊，請參閱[資料Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
 
 ## [!UICONTROL Data Sources]清單檢視 {#list-view}
 
@@ -55,16 +55,16 @@ ht-degree: 0%
       <li id="li_063F1B263B3B4D69B8880F7ACCB82450"> <b><span class="uicontrol">跨裝置</span></b>：客戶提供的驗證ID。 當您要建立以下專案時，請選取此選項： 
        <ul id="ul_D998B4081AD843C2B3B3E642DD011C1F"> 
         <li id="li_C9D2AF70603043D7BE9DF12FD494D7C7">跨裝置資料來源並建置<span class="wintitle">設定檔合併規則</span>。 </li> 
-        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">使用與<span class="keyword">Audience Manager</span>整合之協力廠商裝置圖表所提供之連結的資料來源。 </li> 
+        <li id="li_992BD05E2AFE454CAA4460DDEB2B839B">使用與<span class="keyword"> Audience Manager</span>整合的協力廠商裝置圖表所提供連結的資料來源。 </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol"> ID定義</span></b> </p> </td> 
-   <td colname="col2"> <p><b><span class="uicontrol"> ID定義</span></b>選項會定義資料來源與<span class="keyword">Audience Manager</span>使用者ID (UUID)以及透過與<span class="keyword">Audience Manager</span>整合的協力廠商裝置圖表連結之關聯裝置的關係。 選項包括: </p> <p> 
+   <td colname="col2"> <p><b><span class="uicontrol"> ID定義</span></b>選項會定義資料來源與<span class="keyword"> Audience Manager</span>使用者ID (UUID)以及透過與<span class="keyword"> Audience Manager</span>整合的協力廠商裝置圖表連結之相關裝置的關係。 選項包括: </p> <p> 
      <ul id="ul_718ADABF0C0C44E29643C85C69CE294F"> 
-      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol">人員：</span></b>用來定義單一人員的識別碼。 此ID可對應至多個<span class="keyword">Audience Manager</span> ID。 </li> 
-      <li id="li_3D939AFF34654D618A05D2603F34462D"> <b><span class="uicontrol">家庭：</span></b>用來定義一組人員的識別碼。 此ID可對應至多個Audience ManagerID。 </li> 
+      <li id="li_19936095319446698E9A577385CD2A80"> <b><span class="uicontrol">人員：</span></b>用來定義單一人員的識別碼。 此ID可對應至多個<span class="keyword">個Audience Manager</span> ID。 </li> 
+      <li id="li_3D939AFF34654D618A05D2603F34462D"> <b><span class="uicontrol">家庭：</span></b>用來定義一組人員的識別碼。 此ID可對應至多個Audience Manager ID。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -111,8 +111,8 @@ ht-degree: 0%
    <td colname="col2"> <p><b><span class="uicontrol">輸入</span></b>選項需要ID型別。 選項包括: </p> <p> 
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol">客戶識別碼</span></b>：使用客戶識別碼識別傳入資料。 </li> 
-      <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol">Audience Manager識別碼</span></b>：識別具有<span class="keyword">Audience Manager</span>識別碼的傳入資料。 </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol">Experience Cloud識別碼</span></b>：識別具有<span class="keyword">Experience Cloud</span>識別碼的傳入資料。 檢視<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與Experience CloudID</a>。 </li> 
+      <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager ID</span></b>：識別具有<span class="keyword"> Audience Manager</span> ID的傳入資料。 </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>：識別具有<span class="keyword"> Experience Cloud</span> ID的傳入資料。 檢視<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud ID</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -142,23 +142,23 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作已驗證的設定檔</span></b> </p> </td> 
-   <td colname="col2"> <p>您的跨裝置資料來源包含已驗證的ID。 已驗證ID已收集並在驗證事件期間（例如，使用者登入網站、應用程式內等）同步至<span class="keyword">Audience Manager</span> ID。 已驗證的ID可用於來自其他儲存此ID之來源的主機板內資料。 它也可以用來連結<span class="wintitle">設定檔連結</span>中的多個裝置ID。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">建立設定檔合併規則</a>時顯示在<span class="wintitle">已驗證的設定檔選項</span>中。 </p> </td> 
+   <td colname="col2"> <p>您的跨裝置資料來源包含已驗證的ID。 已驗證的ID會收集並在驗證事件期間（例如，使用者登入網站、應用程式內等）同步至<span class="keyword">個Audience Manager</span> ID。 已驗證的ID可用於來自其他儲存此ID之來源的主機板內資料。 它也可以用來連結<span class="wintitle">設定檔連結</span>中的多個裝置ID。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<span class="wintitle">建立設定檔合併規則</span>時顯示在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">已驗證的設定檔選項</a>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作裝置圖表</span></b> </p> </td> 
-   <td colname="col2"> <p>建立資料來源作為裝置圖表，您可以提供給其他<span class="keyword">Audience Manager</span>客戶。 在選取此選項之前，請告訴您的<span class="keyword">Audience Manager</span>顧問，此<span class="wintitle">資料Source</span>應該與哪些客戶共用。 您的顧問必須透過我們的內部程式布建這些公司。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">建立設定檔合併規則</a>時出現在<span class="wintitle">裝置選項</span>中。 </p> </td> 
+   <td colname="col2"> <p>建立資料來源作為裝置圖表，以供您提供給其他<span class="keyword">個Audience Manager</span>客戶。 在選取此選項之前，請告訴您的<span class="keyword"> Audience Manager</span>顧問，該<span class="wintitle">資料Source</span>應該與哪些客戶共用。 您的顧問必須透過我們的內部程式布建這些公司。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<span class="wintitle">建立設定檔合併規則</span>時出現在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">裝置選項</a>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">與特定Audience Manager客戶共用相關聯的訪客或裝置ID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的跨裝置資料來源包含來自裝置圖表的ID。 裝置圖表是一組ID，對應至一或多個<span class="keyword">Audience Manager</span> ID至叢集。 此叢集通常代表個人或較大的家庭群組。 僅適用於列為「資料提供者」的帳戶。 </p> </td> 
+   <td colname="col2"> <p>您的跨裝置資料來源包含來自裝置圖表的ID。 裝置圖表是一組ID，對應至一或多個<span class="keyword">個Audience Manager</span> ID至叢集。 此叢集通常代表個人或較大的家庭群組。 僅適用於列為「資料提供者」的帳戶。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="uicontrol">在整個Audience Manager平台</span></b>中共用相關的訪客或裝置ID </p> </td> 
-   <td colname="col2"> <p>您的資料來源包含可在其他<span class="keyword">Experience Cloud</span>解決方案之間共用的訪客或裝置ID。 </p> </td> 
+   <td colname="col1"> <p> <b><span class="uicontrol">在Audience Manager平台中共用相關的訪客或裝置ID</span></b> </p> </td> 
+   <td colname="col2"> <p>您的資料來源包含可在其他<span class="keyword">個Experience Cloud</span>解決方案之間共用的訪客或裝置ID。 </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> 非使用中客戶ID的<b><span class="uicontrol">資料保留</span></b> </p> </td> 
-   <td colname="col2"> <p>可讓您設定非作用中客戶ID的資料保留期間。 這會決定Audience Manager會將客戶ID在Audience Manager平台上最後一次看到後，保留在資料庫中的時間。</p> <p>預設值為24個月（720天）。 您可以設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計為30天。</p> <p>Audience Manager會根據您為非作用中客戶ID設定的資料保留，執行每週刪除一次非作用中客戶ID的程式。</p> <p>Audience Manager會根據您為非作用中客戶ID設定的資料保留，執行每週刪除一次非作用中客戶ID的程式。</p> <p><b>注意</b>：此控制項僅適用於跨裝置資料來源。 另請參閱<a href="../features/profile-merge-rules/merge-rules-start.md#settings">建立跨裝置資料Source </a>。</p></td> 
+   <td colname="col2"> <p>可讓您設定非作用中客戶ID的資料保留期間。 這會決定Audience Manager將客戶ID在Audience Manager平台上最後一次看到後，保留在資料庫中的時間。</p> <p>預設值為24個月（720天）。 您可以設定的最小值為1個月，最大值為5年。 請注意，我們會將所有月份計為30天。</p> <p>Audience Manager會根據您為非作用中客戶ID設定的資料保留，執行每週刪除一次非作用中客戶ID的程式。</p> <p>Audience Manager會根據您為非作用中客戶ID設定的資料保留，執行每週刪除一次非作用中客戶ID的程式。</p> <p><b>注意</b>：此控制項僅適用於跨裝置資料來源。 另請參閱<a href="../features/profile-merge-rules/merge-rules-start.md#settings">建立跨裝置資料Source </a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">個唯一特徵整合代碼</span></b> </p> </td> 

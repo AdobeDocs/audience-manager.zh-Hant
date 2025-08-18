@@ -20,7 +20,7 @@ ht-degree: 0%
 
 * [Audience Optimization報表](/help/using/reporting/audience-optimization-reports/audience-optimization-reports.md)
 
-  [!UICONTROL Audience Optimization]報表使用資料視覺效果方法來傳回您Audience Manager帳戶中目的地的資訊。 在每個報表中，您都可以按一下幾乎任何資料點，以傳回有關該專案的詳細資訊。 這些對象最佳化前瞻分析可套用至廣告和發佈管道的多個使用案例，但預設無法使用。 請聯絡您的Audience Manager顧問以開始使用。
+  [!UICONTROL Audience Optimization]報表會使用資料視覺效果方法，傳回Audience Manager帳戶中目的地的資訊。 在每個報表中，您都可以按一下幾乎任何資料點，以傳回有關該專案的詳細資訊。 這些對象最佳化前瞻分析可套用至廣告和發佈管道的多個使用案例，但預設無法使用。 請聯絡您的Audience Manager顧問以開始使用。
 
 * [一般報表](/help/using/reporting/general-reports.md)
 
@@ -50,6 +50,6 @@ ht-degree: 0%
 
   使用儀表板檢視有關您合作夥伴在指定時間範圍內依[!UICONTROL trait]個型別和[!UICONTROL segments]劃分的不重複訪客計數的資訊。
 
-* [所選Audience Manager報表中的資料取樣和錯誤率](/help/using/reporting/report-sampling.md)
+* [選定Audience Manager報表中的資料取樣和錯誤率](/help/using/reporting/report-sampling.md)
 
   用於某些報表的取樣方法摘要、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。

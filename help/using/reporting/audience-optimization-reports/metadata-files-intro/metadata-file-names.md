@@ -39,7 +39,7 @@ ht-degree: 2%
 
 1. 促銷活動
 1. Creative
-1. 位置
+1. 產品建議放置環境
 1. Exchange
 1. 網站
 1. 廣告商（如果在[資料來源](../../../features/manage-datasources.md#details)中使用整合程式碼）
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 ## 範例 {#example}
 
-若是創意中繼資料檔案，檔案名稱可以是20190115_0_2。
+若為Creative中繼資料檔案，檔案名稱可以是20190115_0_2。
 
 <!--Let's take a look at how you would use these IDs in a metadata file name. As an example, say your data file consists of campaign creatives. In this case, the campaign is a parent object and the creatives are child objects because they belong to, or are contained by, the campaign. As a result, you'd choose the following IDs for the metadata file name:
 

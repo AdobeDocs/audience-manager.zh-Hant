@@ -25,7 +25,7 @@ Adobe 身為您的資料處理者，無法針對 GDPR 要求及取得資料主�
 * IDFA/GAID 行動裝置 ID 可用於 Audience Manager 中的多種使用案例。如果您使用 Adobe Mobile SDK，請務必提交 Experience Cloud ID (MID) 以及 IDFA/GAID，以確保 GDPR 回應完整。
 * 隨著個人資料的定義越來越廣泛，IP 位址可能會被視為您所在地區的個人資料。主動與 Adobe Consulting 合作，將最後八位元模糊化。
 * 決定資料主體提出 GDPR 請求時確認其身分的驗證原則和流程。
-* 考慮使用[資料匯出控制](../../features/data-export-controls.md)來阻擋對存放個人資料的技術進行受眾啟用。例如，含有第三方資料的區段不應匯集至電子郵件服務提供者。設定 [!UICONTROL Data Export Control] 以確保組織中沒有人會意外啟用這些資料。
+* 考慮使用[資料匯出控制](../../features/data-export-controls.md)來阻擋對存放個人資料的技術進行客群啟用。例如，含有第三方資料的區段不應匯集至電子郵件服務提供者。設定 [!UICONTROL Data Export Control] 以確保組織中沒有人會意外啟用這些資料。
 * 開始使用[以角色為基礎的存取控制](../../features/administration/administration-overview.md)，以確保適當的團隊能存取預期的資料。
 * 請考慮適合資料的[保留期](../../faq/faq-privacy.md#data-retention-faq)。
 * 審查身分連結、隱私權政策和法律要求，以瞭解何時何地適合將身分組繫結在一起；可透過 Audience Manager 的[設定檔合併規則](../../features/profile-merge-rules/merge-rules-overview.md)適當地使用。

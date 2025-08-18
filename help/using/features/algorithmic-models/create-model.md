@@ -34,28 +34,25 @@ ht-degree: 0%
 
 請依照下列步驟建置[!UICONTROL Look-Alike Model]：
 
-1. 前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後按一下[!UICONTROL Look-Alike Modeling]區段中的&#x200B;**[!UICONTROL Add New]**。
+1. 前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後按一下&#x200B;**[!UICONTROL Add New]**&#x200B;區段中的[!UICONTROL Look-Alike Modeling]。
    ![相似新增](assets/look-alike-add.png)
 1. 在[基本資訊](../../features/algorithmic-models/create-model.md#basic-information)區段中
    * 為模型命名。
    * *（選擇性）*&#x200B;提供模型的簡短說明。
    * 將模型的狀態設定為&#x200B;**[!UICONTROL Active]**&#x200B;或&#x200B;**[!UICONTROL Inactive]**。 非使用中的模型將不會執行，也不會產生任何資料。
-
      ![相似 — 基本](assets/look-alike-basic.png)
 1. 在[組態](../../features/algorithmic-models/create-model.md#configuration)區段中：
    * 按一下「**[!UICONTROL Browse All Traits]**」或「**[!UICONTROL Browse All Segments]**」以選取您要用來建立模型的特徵或區段。 依名稱、ID、說明或資料來源搜尋特徵。 在搜尋時按一下資料夾，將結果限制在該資料夾及其子資料夾中。 您也可以依特徵型別（[!UICONTROL Folder Trait]、[!UICONTROL Rule-based]、[!UICONTROL Onboarded]和[!UICONTROL Algorithmic]）或母體型別（[裝置ID](../../reference/ids-in-aam.md)和[跨裝置ID](../../reference/ids-in-aam.md)）來篩選特徵。
-
      ![瀏覽特徵](assets/browse-traits.png)
    * 選擇30、60或90天的回顧期間。 這會設定模型的時間範圍。
    * 預設會選取[!UICONTROL TraitWeight]演演算法。
    * 從[!UICONTROL Available Data]清單中選取資料來源。
    * 完成時，按一下&#x200B;**[!UICONTROL Save]**。
-
      ![相似組態](assets/look-alike-configuration.png)
 
 請觀看下方的影片，詳細瞭解跨裝置量度的運作方式。
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=zh-Hant)
+>[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html)
 
 ## 演演算法模型的基本資訊 {#basic-information}
 
@@ -75,7 +72,7 @@ ht-degree: 0%
 
 <!-- r_model_configuration.xml -->
 
-### 必備條件
+### 先決條件
 
 請先完成[!UICONTROL Basic Information]區段中的必填欄位。
 
@@ -99,7 +96,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>選取演演算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>目前，模型產生器僅能搭配我們專屬的<span class="keyword">特徵權重</span>演演算法使用。 <span class="keyword">Audience Manager</span>可能在後續發行版本中新增其他演演算法函式。 </p> </td>
+   <td colname="col2"> <p>目前，模型產生器僅能搭配我們專屬的<span class="keyword">特徵權重</span>演演算法使用。 <span class="keyword"> Audience Manager</span>可能在後續發行版本中新增其他演演算法函式。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>從Data Source (4)選取模型資料</b> </p> </td> 

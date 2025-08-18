@@ -45,11 +45,11 @@ t_reports_outbound_history.xml
  <tbody> 
   <tr> 
    <td colname="col1"> 資料同步檔案名稱 </td> 
-   <td colname="col2"> <p><span class="keyword">Adobe</span>為此目的地產生的所有輸出檔案清單，這些檔案已一起處理。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Adobe</span>針對此目的地產生的所有輸出檔案清單，這些檔案已一起處理。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 成功 </td> 
-   <td colname="col2"> <p>從<span class="keyword">Audience Manager</span>成功傳送到目的地的記錄數。 </p> </td> 
+   <td colname="col2"> <p>從<span class="keyword"> Audience Manager</span>成功傳送至目的地的記錄數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 顯示 </td> 
@@ -57,7 +57,7 @@ t_reports_outbound_history.xml
   </tr> 
   <tr> 
    <td colname="col1"> 已接收的記錄 </td> 
-   <td colname="col2"> <p>在檔案中產生並嘗試傳送至目的地的記錄總數<span class="keyword">Adobe</span>。 在大多數情況下，這應該是成功檔案和失敗檔案的總數。 </p> </td> 
+   <td colname="col2"> <p>在檔案中產生並嘗試傳送至目的地的記錄總數<span class="keyword"> Adobe</span>。 在大多數情況下，這應該是成功檔案和失敗檔案的總數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

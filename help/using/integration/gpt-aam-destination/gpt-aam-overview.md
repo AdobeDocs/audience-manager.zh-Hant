@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 使用Google發佈商代碼(GPT)整合[!DNL Google Ad Manager] （原稱DFP）
 
-下列文章概述如何使用Google發佈商代碼(GPT)整合[!DNL Google Ad Manager]。 您可以使用伺服器端整合，也可以將GPT設定為將Audience Manager區段資料傳送至[!DNL Google Ad Manager]的目的地。 您也會學習擷取[!DNL Google Ad Manager]個記錄檔以在Audience Manager中報告的所需步驟。
+下列文章概述如何使用Google發佈商代碼(GPT)整合[!DNL Google Ad Manager]。 您可以使用伺服器端整合，或將GPT設定為將Audience Manager區段資料傳送至[!DNL Google Ad Manager]的目的地。 您還將瞭解在Audience Manager中擷取[!DNL Google Ad Manager]個記錄檔以進行報告所需的步驟。
 
 * [使用Google發佈商代碼(GPT)傳送區段至Google Ad Manager的需求和方法](/help/using/integration/gpt-aam-destination/gpt-aam-requirements.md)
 
@@ -26,8 +26,8 @@ ht-degree: 0%
 
 * [修改GPT setTargeting API呼叫](/help/using/integration/gpt-aam-destination/gpt-aam-modify-api.md)
 
-  新增if陳述式，在呼叫Google Publisher標籤.setTargeting方法之前檢查Audience ManagerCookie。
+  新增if陳述式，在呼叫Audience Manager Publisher標籤.setTargeting方法之前檢查Google Cookie。
 
-* [Google發佈商廣告代碼的Audience Manager](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+* [適用於Google發佈商廣告代碼的Audience Manager代碼](/help/using/integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
 
-  AamGpt是JavaScript函式，可讀取Audience ManagerCookie資料並將該資訊傳送至Google發佈商廣告代碼。
+  AamGpt是JavaScript函式，可讀取Audience Manager Cookie資料並將該資訊傳送至Google發佈商廣告代碼。

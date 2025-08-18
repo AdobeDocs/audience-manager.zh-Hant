@@ -31,11 +31,11 @@ Audience Manager 提供多種工具，可協助您向使用者處取得必要同
 
 ## Experience Cloud 選擇加入服務
 
-[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hant)可讓您為訪客設定通訊協定，協助您判斷當訪客造訪您的網站時，是否可在其個別裝置或瀏覽器上設定 Cookie。
+[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)可讓您為訪客設定通訊協定，協助您判斷當訪客造訪您的網站時，是否可在其個別裝置或瀏覽器上設定 Cookie。
 
 這是 [!DNL Experience Cloud ID (ECID) Service] 的擴充功能，其用途是讓您控制 Experience Cloud 解決方案是否能在使用者同意前，為使用者在網頁上放置 Cookie，以及可使用哪個解決方案來執行
 
-[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hant)也可讓您設定通訊協定，以整合您的同意管理平台 (CMP) 和現有的系統，成為更大型設計的一部分。
+[Experience Cloud 選擇加入服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)也可讓您設定通訊協定，以整合您的同意管理平台 (CMP) 和現有的系統，成為更大型設計的一部分。
 
 ## 管理選擇加入/取得同意
 
@@ -43,7 +43,7 @@ Audience Manager 客戶能針對各種使用案例 (例如廣告或個人化) �
 
 ## 管理選擇退出/撤回同意
 
-您可透過[您的隱私權選擇](https://www.adobe.com/tw/privacy/opt-out.html)頁面管理 Adobe Experience Cloud 的選擇退出選項。一鍵式功能可讓您的一般使用者控制和選擇退出 Adobe Experience Cloud 廣告解決方案 (包括 Audience Manager) 的資料收集。具體說明請參閱「隱私權選擇」頁面上的[企業客戶區段](https://www.adobe.com/tw/privacy/opt-out.html)。針對不支援第三方 Cookie 的瀏覽器，請參閱[宣告 ID 目標定位](../../features/declared-ids.md#declared-id-targeting)。針對行動裝置，請擷取相關 的Audience Manager 識別碼，並呼叫 Audience Manager 選擇退出 API，如[宣告 ID 選擇退出範例](../../features/declared-ids.md#opt-out-examples)所述。之後您就可以使用 Mobile SDK 的選擇退出 API 停止這些使用者的所有資料收集；請參閱 [Android 裝置](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hant)和 [iOS 裝置](https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html?lang=zh-Hant)。[資料隱私權請求文件](../../overview/data-security-and-privacy/data-privacy-requests.md)中提供其他有關選擇退出的詳細資訊。
+您可透過[您的隱私權選擇](https://www.adobe.com/tw/privacy/opt-out.html)頁面管理 Adobe Experience Cloud 的選擇退出選項。一鍵式功能可讓您的一般使用者控制和選擇退出 Adobe Experience Cloud 廣告解決方案 (包括 Audience Manager) 的資料收集。具體說明請參閱「隱私權選擇」頁面上的[企業客戶區段](https://www.adobe.com/tw/privacy/opt-out.html)。針對不支援第三方 Cookie 的瀏覽器，請參閱[宣告 ID 目標定位](../../features/declared-ids.md#declared-id-targeting)。針對行動裝置，請擷取相關 的Audience Manager 識別碼，並呼叫 Audience Manager 選擇退出 API，如[宣告 ID 選擇退出範例](../../features/declared-ids.md#opt-out-examples)所述。之後您就可以使用 Mobile SDK 的選擇退出 API 停止這些使用者的所有資料收集；請參閱 [Android 裝置](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html)和 [iOS 裝置](https://experienceleague.adobe.com/docs/mobile-services/ios/privacy-gdpr-ios/privacy.html)。[資料隱私權請求文件](../../overview/data-security-and-privacy/data-privacy-requests.md)中提供其他有關選擇退出的詳細資訊。
 
 ## 管理第二方合作夥伴的同意
 

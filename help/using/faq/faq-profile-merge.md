@@ -60,7 +60,7 @@ ht-degree: 81%
 在 [!DNL Audience Manager] 中[建立設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)時，裝置圖表會顯示為設定選項。透過您的 [!UICONTROL Profile Merge Rules]，這些裝置圖表可協助 [!DNL Audience Manager]：
 
 * 將多個裝置設定檔合併在一起。這會建立一個特徵超集。
-* 評估區段資格的特徵超集 (而不是分別評估各個裝置設定檔)。
+* 評估細分資格篩選的特徵超集 (而不是分別評估各個裝置輪廓)。
 * 將符合資格的裝置新增至可用區段。
 
  
@@ -111,7 +111,7 @@ ht-degree: 81%
 
 **區段大小估計是否包含根據使用裝置圖表選項的 [!UICONTROL Profile Merge Rule] 提供的連線符合區段資格的裝置？**
 
-不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hant)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
+不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
 
  
 
@@ -131,7 +131,7 @@ ht-degree: 81%
 
 **[!DNL Audience Manager] 如何透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 來計算特徵頻率？**
 
-特徵頻率取決於跨多部裝置的特定特徵資格數總和。為協助您瞭解，請參閱下列使用案例。
+特徵頻率取決於跨多部裝置的特定特徵資格篩選數總和。為協助您瞭解，請參閱下列使用案例。
 
 <table id="table_DE7A308705C84B93B3089CAD2228569E"> 
  <thead> 
@@ -160,7 +160,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> 會加總特徵 1 的頻率，並使用 8 (3 + 5 = 8) 來決定區段資格。裝置 A 和裝置 B 符合區段 1 的資格，因為其頻率為 8。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> 會加總特徵 1 的頻率，並使用 8 (3 + 5 = 8) 來決定細分資格篩選。裝置 A 和裝置 B 符合區段 1 的資格，因為其頻率為 8。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ ht-degree: 81%
 
 **我是否能透過使用裝置圖表的 [!UICONTROL Profile Merge Rules] *即時*看到符合特定區段資格的裝置數？**
 
-是。即時母體量度會使用裝置圖表連結的所有裝置之設定檔，擷取目前裝置 (即時發現的裝置) 的區段資格。
+是。即時母體量度會使用裝置圖表連結的所有裝置之輪廓，擷取目前裝置 (即時發現的裝置) 的細分資格篩選。
 
 <table id="table_D37A51E99B314C04A96A084491A5FEC7"> 
  <thead> 
@@ -191,7 +191,7 @@ ht-degree: 81%
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
    <td colname="col2"> <p>假設我們有： </p> <p> 
      <ul id="ul_B8B627FBF6A04C0CAE6C8543EA3EA56D"> 
-      <li id="li_2557CE3F109C42DC8CB5E99B93E96265">區段 1 (以這些特徵與資格邏輯建置)：區段 1 = 特徵 A、特徵 B 和特徵 C。 </li> 
+      <li id="li_2557CE3F109C42DC8CB5E99B93E96265">細分 1 (以這些特徵與資格篩選邏輯建置)：細分 1 = 特徵 A、特徵 B 和特徵 C。 </li> 
       <li id="li_F7D559B3C0CA424DA2C1A0703C1E1717">3 個裝置設定檔：裝置 1 (目前裝置)、裝置 2 (裝置圖表)、裝置 3 (裝置圖表)。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -206,7 +206,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為 1。 </p> <p>在此情況下，<span class="wintitle">設定檔合併規則</span>會使用所有裝置及其特徵來決定區段資格。這表示裝置 1、2 和 3 符合區段 1 的資格，但如上所述，即時區段母體中只會包含裝置 1。原因如下： </p> <p> 
+   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為 1。 </p> <p>在此情況下，<span class="wintitle">輪廓合併規則</span>會使用所有裝置及其特徵來決定細分資格篩選。這表示裝置 1、2 和 3 符合區段 1 的資格，但如上所述，即時區段母體中只會包含裝置 1。原因如下： </p> <p> 
      <ul id="ul_5958E1A0E1514B6BA31DF5551401AF38"> 
       <li id="li_E4F68B12ED944416ACBEAF7BF61CA4E7">裝置 1 是目前與 Audience Manager <span class="wintitle">資料收集伺服器</span> (<span class="wintitle"> DCS</span>) 即時互動的裝置。 </li> 
       <li id="li_57165E96289F4E20BF2244BC68B90BA3">裝置 2 和 3 透過裝置圖表與裝置 1 建立關聯，但它們與 DCS 互動的時間和裝置 1 不同。 </li> 
@@ -233,7 +233,7 @@ ht-degree: 81%
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
    <td colname="col2"> <p>假設我們有： </p> <p> 
      <ul id="ul_DC0AC0F79323451C8C2480E4A85AE2EB"> 
-      <li id="li_790F24FA1F0747F385640EDB1AE9E59E">區段 1 (以這些特徵與資格邏輯建置)：區段 1 = 特徵 A、特徵 B 和特徵 C。 </li> 
+      <li id="li_790F24FA1F0747F385640EDB1AE9E59E">細分 1 (以這些特徵與資格篩選邏輯建置)：細分 1 = 特徵 A、特徵 B 和特徵 C。 </li> 
       <li id="li_6628727DDD0644BF8F5B6A8A9FA71E67">3 個裝置設定檔：裝置 1 (目前裝置)、裝置 2 (裝置圖表)、裝置 3 (裝置圖表)。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -248,7 +248,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為三 (3)。 </p> <p>在此情況下，<span class="wintitle">設定檔合併規則</span>會使用所有裝置及其特徵來決定區段資格。這表示裝置 1、2 和 3 符合區段 1 的資格，而且這三者皆納入總母體中。 </p> </td> 
+   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為三 (3)。 </p> <p>在此情況下，<span class="wintitle">輪廓合併規則</span>會使用所有裝置及其特徵來決定細分資格篩選。這表示裝置 1、2 和 3 符合區段 1 的資格，而且這三者皆納入總母體中。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -32,14 +32,14 @@ ht-degree: 1%
 
 >[!TIP]
 >
->使用&#x200B;**[AdobeAudience Finder](https://www.adobe-audience-finder.com/)**&#x200B;尋找您可以訂閱的高品質資料摘要。 接著，返回[!DNL Audience Manager]使用者介面或使用[Audience Marketplace購買者API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)來訂閱您找到的摘要。
+>使用&#x200B;**[Adobe Audience Finder](https://www.adobe-audience-finder.com/)**&#x200B;尋找您可以訂閱的高品質資料摘要。 接著，返回[!DNL Audience Manager]使用者介面或使用[Audience Marketplace購買者API](https://bank.demdex.com/portal/swagger/index.html#/Audience_Marketplace_Buyer_API)來訂閱您找到的摘要。
 
 ![buyer-marketplace-overview](assets/buyer-marketplace-overview.png)
 
 [!UICONTROL Marketplace]清單包含您可以排序和搜尋的資訊，以尋找適合您的資料摘要。 [!UICONTROL Marketplace]購買者清單中的專案包括：
 
 * **[!UICONTROL Search]**：依名稱或文字說明尋找資料摘要。
-* **[!UICONTROL Similar Traits]**：顯示資料摘要中類似[!UICONTROL traits]的數字。 當您在&#x200B;**[!UICONTROL Similarity To]**&#x200B;區段中輸入[!UICONTROL trait]或[!UICONTROL segment]以篩選依據後，此欄會顯示出來。
+* **[!UICONTROL Similar Traits]**：顯示資料摘要中類似[!UICONTROL traits]的數字。 當您在[!UICONTROL trait]區段中輸入[!UICONTROL segment]或&#x200B;**[!UICONTROL Similarity To]**&#x200B;以篩選依據後，此欄會顯示出來。
 * **[!UICONTROL Name]**：資料摘要的名稱。
 * **[!UICONTROL Description]**：資料摘要內容的相關資訊。
 * **[!UICONTROL Provider]**：資料提供者的名稱。
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Audience Marketplace會顯示來自所有資料摘要的前500個類似[!UICONTROL trait]個結果。
+> Audience Marketplace會顯示來自所有資料摘要的前500個類似[!UICONTROL trait]結果。
 
 觀看以下影片，瞭解如何尋找類似[!UICONTROL traits]的完整概觀。
 

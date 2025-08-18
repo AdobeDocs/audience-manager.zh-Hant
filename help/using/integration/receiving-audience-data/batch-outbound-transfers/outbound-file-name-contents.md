@@ -22,7 +22,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->樣式元素（`monospaced text`、*斜體*、括弧`[ ]` `( )`等） 檔案中會指示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
+>此檔案中的樣式元素（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
 ## 語法和檔案名稱元素 {#syntax-file-name}
 
@@ -54,16 +54,16 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>DID </i></code> </p> </td> 
-   <td colname="col2"> <p>目的地ID。 </p> <p>在<span class="keyword">Audience Manager</span>中，目的地是整合的執行個體，您可以在此對應您的目標定位區段。 客戶可有多個目的地，視業務需求而定。 </p> </td> 
+   <td colname="col2"> <p>目的地ID。 </p> <p>在<span class="keyword"> Audience Manager </span>中，目的地是整合的執行個體，您可以在此對應您的目標定位區段。 客戶可有多個目的地，視業務需求而定。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>MASTER_DPID </i></code> </p> </td> 
    <td colname="col2"> <p>資料提供者或資料來源識別碼。 此ID可識別檔案內容中存在的使用者ID型別。 最常見的使用者ID索引鍵為： </p> <p> 
      <ul id="ul_CC22D019ECED4B17A7695708001F2C1B"> 
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google廣告商ID </span> （原始、未雜湊） </li> 
-      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 — 廣告商</span>的<span class="keyword"> Apple ID （原始、未雜湊） </li> 
+      <li id="li_DE74BE06331C49CF87606A192D815B96">20915 — 廣告商<span class="keyword">的</span> Apple ID （原始、未雜湊） </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">廠商ID — 第三方使用者ID （網頁/Cookie） </li> 
-     </ul> </p> <p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html?lang=zh-Hant">全域資料來源</a>。</p></td> 
+     </ul> </p> <p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html">全域資料來源</a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 
@@ -131,7 +131,7 @@ ht-degree: 5%
  <li> <code> ftp_1234_20915_full_1486140843000001.sync.gz </code> </li> 
 </ul>
 
-**案例3**：傳送至[!DNL FTP]位置的檔案，在檔案內容( *`Vendor ID=45454`*)中包含&#x200B;*`PID_ALIAS="XYZCustomer"`*&#x200B;和協力廠商使用者ID：
+**案例3**：傳送至[!DNL FTP]位置的檔案，在檔案內容( *`PID_ALIAS="XYZCustomer"`*)中包含&#x200B;*`Vendor ID=45454`*&#x200B;和協力廠商使用者ID：
 
 例如增量檔案：
 
@@ -156,7 +156,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->樣式元素（`monospaced text`、*斜體*、括弧`[ ]` `( )`等） 檔案中會指示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
+>此檔案中的樣式元素（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
 ### 語法
 
@@ -178,7 +178,7 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code><i>UUID </i></code> </p> </td> 
-   <td colname="col2"> <p>由<span class="keyword">Audience Manager</span>指派的不重複使用者識別碼。 </p> </td> 
+   <td colname="col2"> <p>由<span class="keyword"> Audience Manager </span>指派的不重複使用者識別碼。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>&lt;SPACE&gt; </i></code> </p> </td> 

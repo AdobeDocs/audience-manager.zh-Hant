@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 即時傳入資料擷取 {#real-time-inbound-data-ingestion}
 
-即時傳入資料擷取程式會使用使用者瀏覽器的一連串`HTTP`個請求，將資料傳遞至Audience Manager。
+即時傳入資料擷取程式會使用使用者瀏覽器的一系列`HTTP`請求，將資料傳遞至Audience Manager。
 
 <!-- c_rt_inbound_real_time.xml -->
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## URL字串引數和語法 {#url-string-syntax}
 
-傳入資料傳輸的[!DNL URL]應包含下述變數。 設定即時資料傳輸之前，請記得在[!DNL Audience Manager] UI中[建立特徵](../../../features/traits/create-onboarded-rule-based-traits.md)和[資料夾結構](../../../features/traits/trait-storage.md#create-trait-storage-folder)。
+傳入資料傳輸的[!DNL URL]應包含下述變數。 設定即時資料傳輸之前，請記得在[ UI中](../../../features/traits/create-onboarded-rule-based-traits.md)建立特徵[和](../../../features/traits/trait-storage.md#create-trait-storage-folder)資料夾結構[!DNL Audience Manager]。
 
 >[!NOTE]
 >

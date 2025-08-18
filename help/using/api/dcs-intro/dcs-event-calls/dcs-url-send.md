@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 將資料傳送至DCS {#send-data-to-the-dcs}
 
-從這裡開始，瞭解如何對[!DNL DCS]進行`/event`呼叫。 本節包含呼叫語法、引數、格式和請求範例的相關資訊。
+從這裡開始，瞭解如何對`/event`進行[!DNL DCS]呼叫。 本節包含呼叫語法、引數、格式和請求範例的相關資訊。
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 呼叫語法 {#dcs-call-syntax}
 
-將資料傳送至[!DNL DCS]的基本`URL`字串使用下列語法。
+將資料傳送至`URL`的基本[!DNL DCS]字串使用下列語法。
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -32,7 +32,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 >[!NOTE]
 >
->您也可以使用`POST`方法將資料傳送至[!DNL DCS]。 呼叫語法在[DCS API方法](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)中說明。
+>您也可以使用[!DNL DCS]方法將資料傳送至`POST`。 呼叫語法在[DCS API方法](../../../api/dcs-intro/dcs-api-reference/dcs-api-methods.md)中說明。
 
 ## 呼叫引數 {#dcs-call-parameters}
 
@@ -50,7 +50,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
    <td colname="col1"> <p> <code> domain alias.demdex.net</code> </p> </td> 
    <td colname="col2"> <p>呼叫的這個部分包含： </p> <p> 
      <ul id="ul_3EDA9C7BA6794D06BCB07A75A9BD2372"> 
-      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">您的網域別名已由<span class="keyword">Audience Manager</span> （例如<code> my_domain.demdex.net</code>）指派。 </li> 
+      <li id="li_74624CA78D6F4536A8164AE1FA1DECB9">由<span class="keyword"> Audience Manager</span> （例如<code> my_domain.demdex.net</code>）指派的網域別名。 </li> 
       <li id="li_08ABE91CA247403AA480B3FB4BEF83BA">目的地網域，一律為<code> demdex.net</code>。 請參閱<a href="../../../reference/demdex-calls.md">瞭解向Demdex網域</a>進行的呼叫。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -88,7 +88,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 
 ## 呼叫範例 {#dcs-sample-call}
 
-此範例顯示虛構的公司[!DNL Acme, Inc.]透過[!DNL HTTP]呼叫傳送資料給[!DNL DCS]。 請注意，此呼叫包含選用引數`d_dst=1`、`d_rtbd=json`和`d_cb=callback`。 這些表示[!DNL Acme]想要從[!DNL DCS]接收回呼函式的[!DNL JSON]回應。 請記住，這只是個範例。 請勿剪下並貼上此程式碼。
+此範例顯示虛構的公司[!DNL Acme, Inc.]透過[!DNL DCS]呼叫傳送資料給[!DNL HTTP]。 請注意，此呼叫包含選用引數`d_dst=1`、`d_rtbd=json`和`d_cb=callback`。 這些表示[!DNL Acme]想要從[!DNL JSON]接收回呼函式的[!DNL DCS]回應。 請記住，這只是個範例。 請勿剪下並貼上此程式碼。
 
 ```js
 https://acme_aam_domain.demdex.net/event?videoTypeID=2&data=moarData&d_dst=1&d_rtbd=json&d_cb=acme_callback

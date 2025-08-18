@@ -24,13 +24,13 @@ ht-degree: 2%
 
 若要使用此方法，目的地平台必須符合下列要求：
 
-* 它必須提供端點[!DNL URL]，此端點可以調整為接收來自Audience Manager的大量訊息；
+* 它必須提供端點[!DNL URL]，此端點可調整為接收來自Audience Manager的大量訊息；
 * 它必須接受[!DNL JSON]格式(`Content-type: application/json`)的資料；
 * 它必須接受安全的`HTTPS`資料傳輸。 [!DNL Audience Manager]不會透過不安全的`HTTP`通訊協定傳送訊息。
 
 ## 頻率
 
-使用者符合區段資格時，此資料傳輸方法可近乎即時傳送資料。 即時訊息只會在使用者上線且主動可顯示於Audience ManagerEdge網路時傳送。 此方法可選擇性地以每24小時的頻率傳送批次離線或已上線的資料。
+使用者符合區段資格時，此資料傳輸方法可近乎即時傳送資料。 即時訊息只會在使用者上線且主動可檢視Audience Manager Edge網路時傳送。 此方法可選擇性地以每24小時的頻率傳送批次離線或已上線的資料。
 
 ## 批次傳輸
 
@@ -80,7 +80,7 @@ ht-degree: 2%
   <tr valign="top"> 
    <td colname="col1"><code><i>AAM_Destination_ID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>Audience Manager「destination」物件的識別碼。 此ID源自Audience Manager。</p> </td> 
+   <td colname="col3"> <p>Audience Manager「目的地」物件的ID。 此ID源自Audience Manager。</p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User_count</i></code> </td> 
@@ -95,7 +95,7 @@ ht-degree: 2%
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_UUID</i></code> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p><span class="keyword">Audience Manager</span> UUID。 </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience Manager</span> UUID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>User.DataPartner_UUID</i></code> </td> 
@@ -105,7 +105,7 @@ ht-degree: 2%
   <tr valign="top"> 
    <td colname="col1"><code><i>User.AAM_Regions</i></code> </td> 
    <td colname="col2"> 陣列 </td> 
-   <td colname="col3"> 我們看到此裝置所在的<span class="keyword">Audience Manager</span>地區識別碼。 例如，如果裝置在巴黎有某些活動（歐洲），則區域識別碼將是<code> 6</code>。 請參閱<a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS地區ID、位置與主機名稱</a>。 </td> 
+   <td colname="col3"> 我們看到此裝置所在的<span class="keyword"> Audience Manager</span>地區ID。 例如，如果裝置在巴黎有某些活動（歐洲），則區域識別碼將是<code> 6</code>。 請參閱<a href="../../../api/dcs-intro/dcs-api-reference/dcs-regions.md"> DCS地區ID、位置與主機名稱</a>。 </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segments</i></code> </td> 
@@ -115,7 +115,7 @@ ht-degree: 2%
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.Segment_ID</i></code> </td> 
    <td colname="col2"> <p>整數 </p> </td> 
-   <td colname="col3"> <p>區段的識別碼。 在大多數情況下，這是Audience Manager產生的區段ID （整數）。 在某些情況下，如果目標平台允許，客戶可以在Audience Manager使用者介面（開放文字欄位）中定義區段識別碼，這隨後會反映在此屬性中。 </p> </td> 
+   <td colname="col3"> <p>區段的識別碼。 在大多數情況下，這是Audience Manager產生的區段ID （整數）。 在某些情況下，如果目標平台允許，客戶可以在Audience Manager使用者介面（開放文字欄位）中定義區段識別碼，這隨後將反映在此屬性中。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.Status</i></code> </td> 
@@ -130,7 +130,7 @@ ht-degree: 2%
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">已根據區段的<a href="../../../features/traits/segment-ttl-explained.md">存留時間間隔</a>從區段中移除。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果過去120天未出現，則移至非作用中狀態。 </li>
      <li>因隱私權變更要求而移除（即<span class="keyword"> GDPR</span>）</li>
-    </ul> <p>所有同步至<span class="keyword">合作夥伴</span>Audience Manager識別碼的合作夥伴ID都會在使用者未分段時收到<code> "Status":"0"</code>標幟。 </p> </td> 
+    </ul> <p>同步至<span class="keyword"> Audience Manager</span> ID的所有合作夥伴ID會在使用者未分段時收到<code> "Status":"0"</code>標幟。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"><code><i>Segment.DateTime</i></code> </td> 
@@ -142,7 +142,7 @@ ht-degree: 2%
 
 ## 安全性
 
-您可以[使用私密金鑰簽署HTTP要求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)，或透過[OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)通訊協定進行[!DNL Audience Manager]驗證，來保護您的即時傳出資料傳輸程式。
+您可以[使用私密金鑰簽署HTTP要求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)，或透過[!DNL Audience Manager]OAuth 2.0[通訊協定進行](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)驗證，來保護您的即時傳出資料傳輸程式。
 
 ## 請求
 

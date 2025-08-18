@@ -1,5 +1,5 @@
 ---
-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
+description: 預測客群可協助您運用資料科學，將未知的客群即時分類為不重複角色。
 seo-description: Predictive Audiences help you classify unknown audiences into distinct personas in real-time, using data science.
 seo-title: Predictive Audiences Overview
 solution: Audience Manager
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 在行銷領域中，角色是一種受眾區段，由擁有一組共同特定特徵（例如人口統計資料、瀏覽習慣、購物記錄等）的訪客、使用者或潛在購買者所定義。
 
-[!UICONTROL Predictive Audiences] 模型可讓您使用 Audience Manager 的機器學習功能，將未知的受眾分類為不重複角色，進一步運用此概念。Audience Manager可協助您針對一組已知的第一方受眾，計算未知第一方受眾的傾向，進而實現此目標。
+[!UICONTROL Predictive Audiences] 模型可讓您使用 Audience Manager 的機器學習功能，將未知的受眾分類為不重複角色，進一步運用此概念。Audience Manager會計算未知第一方對象對一組已知第一方對象的傾向，以達到此目的。
 
 建立[!UICONTROL Predictive Audiences]模型時，第一步是選擇基線特徵或區段，讓您的目標對象依這些特徵或區段進行分類。 這些特徵或區段將定義您的角色。
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 ## 使用個案 {#use-cases}
 
-為了協助您更清楚瞭解您如何使用[!UICONTROL Predictive Audiences]以及何時可以使用，以下是Audience Manager客戶可以使用此功能解決的一些使用案例。
+為協助您更清楚瞭解您如何使用[!UICONTROL Predictive Audiences]以及何時可以使用，以下是Audience Manager客戶可以使用此功能解決的一些使用案例。
 
 ### 使用案例#1
 
@@ -73,7 +73,7 @@ ht-degree: 3%
 您可以選擇任何第一方特徵或區段來定義您的角色。 然而，為獲得最佳結果，以下是建議的一組最佳實務：
 
 * 選擇您的角色特徵或區段，讓每個角色至少擁有幾百個[裝置ID](../../reference/ids-in-aam.md)。
-* 如果您的特徵是以[跨裝置ID](../../reference/ids-in-aam.md)為基礎，您可以將其包裝在使用[裝置ID](../../reference/ids-in-aam.md)的[設定檔合併規則](../profile-merge-rules/merge-rules-overview.md)的區段中，例如[!UICONTROL Device Graph]。 這將確保有足夠的裝置ID[&#128279;](../../reference/ids-in-aam.md)可供演演算法學習。
+* 如果您的特徵是以[跨裝置ID](../../reference/ids-in-aam.md)為基礎，您可以將其包裝在使用[裝置ID](../profile-merge-rules/merge-rules-overview.md)的[設定檔合併規則](../../reference/ids-in-aam.md)的區段中，例如[!UICONTROL Device Graph]。 這將確保有足夠的裝置ID[](../../reference/ids-in-aam.md)可供演演算法學習。
 * 我們建議您為角色選擇特徵或簡單區段，包含1到3個特徵。
 * 選擇重疊程度最低的基線特徵或區段。
 * 請務必在數位財產上擷取精細的特徵。
@@ -122,11 +122,11 @@ ht-degree: 3%
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-[!UICONTROL Predictive Audiences]模型建立的預測區段會繼承下列第一方資料來源的[資料匯出控制項](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hant)：
+[!UICONTROL Predictive Audiences]模型建立的預測區段會繼承下列第一方資料來源的[資料匯出控制項](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)：
 
 1. 您在建立模型時選擇的第一方資料來源。
 1. 目標對象的第一方資料來源。 具體來說，就是組成您目標對象之[!UICONTROL traits]或[!UICONTROL segments]的資料匯出控制項。
-1. 您為模型選取之[!UICONTROL Profile Merge Rule]的[資料匯出控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hant)。
+1. 您為模型選取之[的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)資料匯出控制[!UICONTROL Profile Merge Rule]。
 
 新建立的預測性[!UICONTROL traits]和[!UICONTROL segments]將與上述第一方資料來源的聯合有相同的隱私許可權制。
 
@@ -140,12 +140,12 @@ ht-degree: 3%
 * 它決定模型訓練步驟期間應該使用哪些[!UICONTROL trait]型別（裝置層級或跨裝置層級），並顯示為有影響力的[!UICONTROL traits]。 預測性[!UICONTROL segments]是目標對象的子集。
    * 如果目標對象是區段，我們建議您為模型選取與指派給目標對象相同的[!UICONTROL Profile Merge Rule]，或選取包含目標對象之設定檔型別的[!UICONTROL Profile Merge Rule]。
    * 如果目標對象是[!UICONTROL trait]，我們建議您選取一個可以存取與目標對象特徵相同資料型別的[!UICONTROL Profile Merge Rule] （裝置設定檔資料或跨裝置設定檔資料）。
-* 使用[!UICONTROL Current Authenticated Profiles]和[!UICONTROL No Device Profile]選項的[!UICONTROL Profile Merge Rules]僅支援即時對象分類。 如需詳細資訊，請參閱[定義的設定檔合併規則選項](../profile-merge-rules/merge-rule-definitions.md)。
+* 使用[!UICONTROL Profile Merge Rules]和[!UICONTROL Current Authenticated Profiles]選項的[!UICONTROL No Device Profile]僅支援即時對象分類。 如需詳細資訊，請參閱[定義的設定檔合併規則選項](../profile-merge-rules/merge-rule-definitions.md)。
 
 選取同時使用裝置資料與跨裝置資料的[!UICONTROL Profile Merge Rule]，可將可用於模型訓練與使用者分類的[!UICONTROL traits]數目增加到預測性[!UICONTROL segments]。
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-您為角色和對象分類選擇的特徵和區段須遵守Audience Manager[角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hant)。
+您為角色和受眾分類選擇的特徵和區段須遵守Audience Manager [角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html)。
 
-Audience Manager使用者只能選取其具有[檢視](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hant#wild-card-permissions)許可權之角色和Target對象的特徵或區段。
+Audience Manager使用者只能選取其擁有[檢視](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)許可權之角色和目標對象的特徵或區段。

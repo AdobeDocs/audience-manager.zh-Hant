@@ -43,11 +43,11 @@ ht-degree: 52%
 
 ## 法規遵循 {#compliance}
 
-[!DNL Audience Manager]可協助您透過[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)等隱私工具處理資料存取和刪除請求，以遵循特定隱私權法規所規範的義務。
+[!DNL Audience Manager]可協助您透過[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)等隱私工具處理資料存取和刪除請求，以遵循特定隱私權法規所規範的義務。
 
-此服務提供一個 [!DNL RESTful API] 和使用者介面，可協助您管理消費者資料請求。您可以使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)，根據個別消費者的請求，提交存取和刪除個人資料的請求，協助您自動執行這部分的法規遵循義務。
+此服務提供一個 [!DNL RESTful API] 和使用者介面，可協助您管理消費者資料請求。您可以使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)，根據個別消費者的請求，提交存取和刪除個人資料的請求，協助您自動執行這部分的法規遵循義務。
 
-雖然資料存取和刪除要求是透過Privacy Service處理，但目前是透過[DCS API](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)支援[選擇退出要求](data-privacy-requests.md#opt-out-requests)。 如需詳細資訊，請參閱[資料隱私權請求](data-privacy-requests.md)。
+透過Privacy Service處理資料存取和刪除請求時，目前透過[DCS API](data-privacy-requests.md#opt-out-requests)支援[選擇退出請求](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)。 如需詳細資訊，請參閱[資料隱私權請求](data-privacy-requests.md)。
 
 ## 相關概念 {#related-concepts}
 

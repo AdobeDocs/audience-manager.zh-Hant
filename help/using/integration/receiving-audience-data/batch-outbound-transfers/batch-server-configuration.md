@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 透過您的Adobe顧問請求協助設定 {#config-consultant}
 
-如果您正與Adobe顧問合作，他們會為您處理設定程式。
+如果您正與Adobe顧問合作，他們將會為您處理設定程式。
 
 ## 透過Adobe客戶支援請求協助設定 {#config-support}
 

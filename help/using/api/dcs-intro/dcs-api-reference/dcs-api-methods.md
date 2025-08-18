@@ -16,9 +16,9 @@ ht-degree: 0%
 
 # [!DNL DCS] [!DNL API]方法 {#dcs-api-methods}
 
-使用`GET`或`POST`方法將資料傳送至[!DNL DCS] [!DNL API]。
+使用[!DNL DCS]或[!DNL API]方法將資料傳送至`GET` `POST`。
 
-您可以使用`GET`或`POST`方法之一將資料傳送至[!DNL DCS]。 使用[curl](https://curl.haxx.se/)，檢視下列範例呼叫。 在所有三個範例呼叫中，我們將訊號`c_likes = famous popstar`和`c_loves = famous actress`新增至裝置設定檔`12345678901234567890123456789012345678`。
+您可以使用[!DNL DCS]或`GET`方法之一將資料傳送至`POST`。 使用[curl](https://curl.haxx.se/)，檢視下列範例呼叫。 在所有三個範例呼叫中，我們將訊號`c_likes = famous popstar`和`c_loves = famous actress`新增至裝置設定檔`12345678901234567890123456789012345678`。
 
 ## 透過[!DNL GET]傳送資料 {#send-data-via-get}
 

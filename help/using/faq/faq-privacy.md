@@ -28,7 +28,7 @@ ht-degree: 82%
 
 **Audience Manager 如何使用 Cookie？會設定哪些 Cookie？**
 
-請參閱 [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hant)。
+請參閱 [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)。
 
 **美國的 Audience Manager 客戶是否可將目標定位為歐盟屬性的使用者？**
 
@@ -55,11 +55,11 @@ ht-degree: 82%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>後端伺服器 </p> </td> 
-   <td colname="col2"> <p>120天 </p> <p> Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 120 天後，從我們的後端伺服器上刪除該使用者的資料。如果<span class="keyword">Audience Manager</span>在此120天週期內有記錄使用者活動，便會再將此資料儲存120天。 </p> </td> 
+   <td colname="col2"> <p>120天 </p> <p> Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 120 天後，從我們的後端伺服器上刪除該使用者的資料。如果<span class="keyword"> Audience Manager</span>在此120天週期內有記錄使用者活動，便會再將此資料儲存120天。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>邊緣伺服器 </p> </td> 
-   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 14 天後，從我們的邊緣伺服器上刪除該使用者的資料。如果<span class="keyword">Audience Manager</span>在此14天週期內有記錄使用者活動，便會再將此資料儲存14天。 如果使用者在14天週期後再次進入作用中狀態，則第一個新頁面檢視與使用者變成可操作的時間之間會出現延遲。 閒置超過14天後，需要6-18個小時才能將完整的設定檔送回邊緣中心。 </p> </td> 
+   <td colname="col2"> <p> 14天 </p> <p>Audience Manager 會於上次在 Audience Manager 平台上看到使用者的 14 天後，從我們的邊緣伺服器上刪除該使用者的資料。如果<span class="keyword"> Audience Manager</span>在此14天週期內有記錄使用者活動，便會再將此資料儲存14天。 如果使用者在14天週期後再次進入作用中狀態，則第一個新頁面檢視與使用者變成可操作的時間之間會出現延遲。 閒置超過14天後，需要6-18個小時才能將完整的設定檔送回邊緣中心。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始記錄檔 </p> </td> 
@@ -98,7 +98,7 @@ ht-degree: 82%
 
 ## 特徵資格資料保留 {#trait-qual}
 
-下表列出特徵資格的保留選項。
+下表列出特徵資格篩選的保留選項。
 
 <table id="table_7FB42BEF138540AAB6869995C1AB8D3F"> 
  <thead> 
@@ -110,11 +110,11 @@ ht-degree: 82%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>刪除特徵 </p> </td> 
-   <td colname="col2"> <p>刪除特徵會從過去符合特徵資格的所有使用者設定檔中移除特徵資格資料。 </p> </td> 
+   <td colname="col2"> <p>刪除特徵會從過去符合特徵資格的所有使用者輪廓中移除特徵資格篩選資料。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>已達特徵數上限 </p> </td> 
-   <td colname="col2"> <p>我們設下了每個使用者設定檔 100,000 個特徵資格的限制。此上限適用於已驗證的設定檔和裝置設定檔。如果使用者設定檔達到此上限，我們會根據先進先出原則刪除最舊的特徵資格。 </p> <p>如需詳細資訊，請閱讀<a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit">特徵資格限制</a>。 </p> </td> 
+   <td colname="col2"> <p>我們設下了每個使用者輪廓 100,000 個特徵資格篩選的限制。此上限適用於已驗證的設定檔和裝置設定檔。如果使用者輪廓達到此上限，我們會根據先進先出原則刪除最舊的特徵資格篩選。 </p> <p>如需詳細資訊，請閱讀<a href="../features/traits/trait-and-segment-qualification-reference.md#trait-qualification-limit">特徵資格篩選限制</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

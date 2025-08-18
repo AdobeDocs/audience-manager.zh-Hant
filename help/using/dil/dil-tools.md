@@ -20,9 +20,9 @@ ht-degree: 2%
 >
 >自2023年7月起，Adobe已停止開發[!DNL Data Integration Library (DIL)]和[!DNL DIL]擴充功能。
 >
->現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe在此點之後不會開發[!DNL DIL]。 建議客戶針對[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)的長期資料收集策略進行評估。
+>現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe不會在此時間點之後開發[!DNL DIL]。 建議客戶針對[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的長期資料收集策略進行評估。
 >
->如果客戶希望在2023年7月之後實作新的資料收集整合，則應改用[Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)。
+>如果客戶希望在2023年7月之後實作新的資料收集整合，應改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
 說明`DIL.tools`名稱空間中的方法。 這些公用程式功能可協助您執行特定工作。
 
@@ -44,7 +44,7 @@ r_dil_get_search_referrer.xml
 
 ### `getSearchReferrer`的目的
 
-在DIL中，`getSearchReferrer`會傳回用來存取您的網站的搜尋結果（名稱和關鍵字）。 您可以將特定搜尋字詞傳入此函式，或讓此函式依預設針對`document.referrer`搜尋支援的搜尋引擎（ [!DNL AOL]、[!DNL Ask]、[!DNL Bing]、[!DNL Google]和[!DNL Yahoo]）。
+在DIL中，`getSearchReferrer`會傳回用來存取您的網站的搜尋結果（名稱和關鍵字）。 您可以將特定搜尋字詞傳入此函式，或讓此函式依預設針對[!DNL AOL]搜尋支援的搜尋引擎（ [!DNL Ask]、[!DNL Bing]、[!DNL Google]、[!DNL Yahoo]和`document.referrer`）。
 
 ### 函式簽章
 
@@ -76,7 +76,7 @@ r_dil_get_search_referrer.xml
    <td> 預設搜尋</td> 
    <td> 傳回AOL、Ask、Bing、Google和Yahoo搜尋引擎所使用的關鍵字搜尋辭彙。 </td> 
    <td>
-      <code>var&nbsp;results&nbsp;=&nbsp;DIL.tools.getSearchReferrer();</code> 
+      <code>var&amp;nbsp;results&amp;nbsp;=&amp;nbsp;DIL.tools.getSearchReferrer();</code> 
   </td>
   </tr> 
   <tr> 
@@ -96,10 +96,10 @@ r_dil_get_search_referrer.xml
   <code>
       var results = 
         DIL.tools.getSearchReferrer("https://www.ehow.com/
-      search.aspx?q=adobe+rules",&lbrace; 
+      search.aspx?q=adobe+rules",{ 
       &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
       &nbsp;&nbsp;&nbsp;queryParam:"p" 
-      &rbrace;); 
+      }); 
   </code>
   </td></tr> 
   <tr> 
@@ -109,10 +109,10 @@ r_dil_get_search_referrer.xml
     <code>
       var&nbsp;results&nbsp;= 
       DIL.tools.getSearchReferrer("https://www.ehow.com/search.aspx?q=adobe+rules,
-      &lbrace;
+      {
         &nbsp;&nbsp;&nbsp;hostPattern:/ehow\./, 
         &nbsp;&nbsp;&nbsp;search_pattern:/[&amp;\?]p=([^&amp;]+/ 
-      &rbrace;);
+      });
     </code>
    </td> 
   </tr> 
@@ -182,19 +182,19 @@ r_dil_get_metatags.xml
 ### 程式碼範例
 
 <pre class="javascript"><code>
-var dataLib = DIL.create(&lbrace; 
+var dataLib = DIL.create({ 
      partner: '<i>partnerName'</i>, 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
 
 dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>', '<i>keywords</i>',  '<i>description</i>'), 'c_').submit();
 </code></pre>
 
 <pre><code>
-var dataLib = DIL.create(&lbrace; 
-     partner: <i>&grave;partnerName'</i>, 
+var dataLib = DIL.create({ 
+     partner: <i>`partnerName'</i>, 
      containerNSID: <i>containerNSID</i> 
-&rbrace;); 
+}); 
 
 dataLib.api.signals(DIL.tools.getMetaTags('<i>application</i>','<i>keywords</i>', '<i>description</i>'), 'c_').submit();
 </code></pre>

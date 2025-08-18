@@ -34,11 +34,11 @@ ht-degree: 2%
 
 中繼資料檔案必須將數值ID連結至可讀名稱。 例如，假設事件呼叫在索引鍵/值組中包含創意ID，如下所示： `d_creative:1234`。 如果沒有中繼資料檔案，此創意內容在選項選單中會顯示為1234。
 
-不過，格式正確的中繼資料檔案可將此創意連結回「廣告商創意A」等真實名稱，您可以讀取並在報表中辨識此名稱。
+不過，格式正確的中繼資料檔案可將此創意連結回「廣告商Creative A」之類的真實名稱，這是您可以在報表中讀取和辨識的名稱。
 
 ### 您何時需要中繼資料檔案
 
-首先，當您想要使用[事件報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)時，必須輸入中繼資料檔案及下列所有引數，才能進行Audience Optimization呼叫。
+首先，當您想要使用[Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)時，必須在事件呼叫中使用中繼資料檔案及下列所有引數。
 
 第二，如果您要將自己的資料傳送至[!DNL Audience Manager]，或您想從我們尚未整合的其他提供者之報表中檢視資料，則需要中繼資料檔案。 例如，[!DNL Audience Manager]與Google的[連按兩下Campaign Manager](../../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) (DCM)整合。 由於這種關係，[!DNL Audience Manager]可以將ID與報表選項使用的名稱和說明建立關聯。 如果沒有整合，我們仍可內嵌資料，但報表選項會顯示數值ID，而非描述性名稱。
 
@@ -119,7 +119,7 @@ ht-degree: 2%
 
 在檔案名稱中：
 
-* 資料來源金鑰從`d_src`變更為`dpid`。
+* 資料來源金鑰從`dpid`變更為`d_src`。
 
 * 創意和促銷活動ID代表類別，而非實際識別碼。
 
@@ -129,7 +129,7 @@ ht-degree: 2%
 
 ### 檔案內容
 
-在此範例中，檔案內容反映在事件呼叫中傳入的創意和促銷活動ID。 此處的新元素為可讀名稱。 處理之後，此檔案中的名稱將在[!UICONTROL Audience Optimization]報表的「創意」功能表中顯示為選項。
+在此範例中，檔案內容反映在事件呼叫中傳入的創意和促銷活動ID。 此處的新元素為可讀名稱。 處理之後，此檔案中的名稱將在[!UICONTROL Audience Optimization]報表的Creative功能表中顯示為選項。
 
 ![中繼資料檔案的內容](/help/using/reporting/audience-optimization-reports/metadata-files-intro/assets/metadata_file_contents.png)
 
@@ -141,6 +141,6 @@ ht-degree: 2%
 
 >[!MORELIKETHIS]
 >
->* Audience Optimization報表的[資料檔](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
+>* Audience Optimization報表的[資料檔案](../../../reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 >* [透過像素呼叫擷取行銷活動的點按資料](../../../integration/media-data-integration/click-data-pixels.md)
 >* [透過像素呼叫擷取行銷活動的曝光資料](../../../integration/media-data-integration/impression-data-pixels.md)

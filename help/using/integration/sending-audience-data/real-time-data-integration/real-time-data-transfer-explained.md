@@ -31,7 +31,7 @@ ht-degree: 0%
 1. 使用者造訪包含Audience Manager程式碼的客戶網站。
 1. Audience Manager載入iframe並呼叫[!UICONTROL Data Collection Server] ( [!DNL DCS])。
 1. [!DNL DCS]會呼叫協力廠商伺服器（即時）以檢查廠商是否有任何關於使用者的區段資訊。
-1. 內容提供者會將有關該使用者的區段資訊傳回給Audience Manager。
+1. 內容提供者會將該使用者的相關區段資訊傳回給Audience Manager。
 1. Audience Manager會收到此區段資訊，並可用於鎖定和建立新特徵和區段。
 
 ![](assets/rt_reduce70.png)

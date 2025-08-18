@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # `get_aamCookie`程式碼 {#get-aamcookie-code}
 
-[!DNL DART Enterprise] （和其他目的地型別）擷取Audience Manager唯一使用者識別碼([!DNL UUID])值所需的程式碼。
+[!DNL DART Enterprise] （和其他目的地型別）擷取Audience Manager唯一使用者ID ([!DNL UUID])值所需的程式碼。
 
 在頁面頂端定義此函式，最好在`<head>`程式碼區塊中。
 

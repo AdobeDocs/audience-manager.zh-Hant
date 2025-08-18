@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在[!DNL Audience Manager] UI中指派的[RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
+>在[ UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
 
 網路流量大、伺服器使用量及大型資料集等因素，都可能導致大量請求失敗或逾時。 如果發生問題，工作表會停止寫入資料並顯示錯誤訊息。 發生此情況時，您應該：
 

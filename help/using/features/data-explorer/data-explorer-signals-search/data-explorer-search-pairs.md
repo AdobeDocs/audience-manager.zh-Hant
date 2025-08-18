@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 從訊號搜尋排除的訊號 {#excluded-signals}
 
-[!UICONTROL Signals Search]未出現Audience Manager所使用且以`d_`和`h_`首碼為前置詞的關鍵變數。 如需詳細資訊，請參閱索引鍵變數[&#128279;](../../traits/trait-variable-prefixes.md)的前置詞要求。
+`d_`未出現Audience Manager使用且以`h_`和[!UICONTROL Signals Search]首碼為前置詞的關鍵變數。 如需詳細資訊，請參閱索引鍵變數[的](../../traits/trait-variable-prefixes.md)前置詞要求。
 
 ## 區分大小寫與搜尋自動完成 {#case-insensitivity}
 

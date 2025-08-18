@@ -91,11 +91,11 @@ S3狀態目錄包含`.info`檔案，其中包含您上傳檔案的成功和失�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據檔案名稱中的子項ID。 </p> <p>請參閱中繼資料檔案</a>的<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">命名慣例。 </p> </td> 
+   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據檔案名稱中的子項ID。 </p> <p>請參閱中繼資料檔案<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">的</a>命名慣例。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據您檔案名稱中的父系ID。 </p> <p>請參閱中繼資料檔案</a>的<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">命名慣例。 </p> </td> 
+   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據您檔案名稱中的父系ID。 </p> <p>請參閱中繼資料檔案<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">的</a>命名慣例。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 

@@ -74,7 +74,7 @@ CID和CID_IC索引鍵值配對會取代DPID和DPUUID。 它們提供與DPID和DP
   </tr> 
   <tr> 
    <td colname="col1"> <p>客戶ID整合代碼(CID_IC) </p> </td> 
-   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> <span class="term">整合代碼</span>是可使用的備用ID，而非<span class="keyword">Audience Manager</span>指派的資料Source ID。 如需設定整合代碼，請參閱<a href="../features/manage-datasources.md#create-data-source">建立資料Source</a>。 </p> </td> 
+   <td colname="col2"> <p> <code>d_cid_ic=<i>integration code</i>%01<i>user ID</i></code> </p> <p> <span class="term">整合代碼</span>是可使用的備用ID，而非<span class="keyword"> Audience Manager</span>指派的資料Source ID。 如需設定整合代碼，請參閱<a href="../features/manage-datasources.md#create-data-source">建立資料Source</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -117,7 +117,7 @@ CID和CID_IC索引鍵值配對會取代DPID和DPUUID。 它們提供與DPID和DP
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>產生Audience ManagerUUID (ID) </p> </td> 
+   <td colname="col1"> <p>產生Audience Manager UUID (ID) </p> </td> 
    <td colname="col2"> 
     <ul id="ul_EAA764DCFF7244F69ABF67ACEE13E579"> 
      <li id="li_18467A531FAF454A881CBD157BBFD6D2">新增： <code> .../id?d_cid=123%01987...</code> </li> 

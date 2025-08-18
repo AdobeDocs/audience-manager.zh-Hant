@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-[!DNL People-Based Destinations]的設定會帶您瀏覽多個Audience Manager區段，並需要不同的設定和資料上線方法，具體取決於您在Audience Manager中已有的客戶資料型別，以及您要執行的對象目標定位型別。
+[!DNL People-Based Destinations]的設定會帶您瀏覽Audience Manager的多個區段，並需要不同的設定和資料上線方法，具體取決於您在Audience Manager中已有的客戶資料型別，以及您要執行的對象目標定位型別。
 
 >[!IMPORTANT]
 > 在設定[!DNL People-Based Destinations]之前，請務必仔細且完整地閱讀本文。 閱讀本指南後，您應該清楚瞭解透過[!DNL People-Based Destinations]啟用的情境。
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 貴公司是一家航空公司，擁有不同的客戶層級（銅、銀和金），而您希望透過社交平台為每個層級提供個人化優惠。 您可以使用Audience Manager來分析網站上的客戶活動。 不過，並非所有客戶都使用航空公司的行動應用程式，其中部分客戶尚未登入公司網站。 您的客戶資料大多僅限於會員ID和電子郵件地址。
 
-若要在社群媒體和類似的以人物為基礎的頻道中鎖定這些對象，您可以將[雜湊電子郵件地址](people-based-destinations-prerequisites.md)納入Audience Manager，並將其與您現有的線上活動特徵結合，以建立新的對象區段。 接下來，您可以透過[!DNL People-Based Destinations]使用這些區段來鎖定您的對象。
+若要在社群媒體和類似的以人物為基礎的頻道中鎖定這些對象，您可以將[雜湊電子郵件地址](people-based-destinations-prerequisites.md)匯入Audience Manager，並將其與您現有的線上活動特徵結合，以建立新的受眾區段。 接下來，您可以透過[!DNL People-Based Destinations]使用這些區段來鎖定您的對象。
 
 **B)僅根據您的離線使用者活動進行對象目標定位**。 在此案例中，您的[!DNL CRM]系統包含您的客戶電子郵件地址和其他客戶屬性，但客戶完全沒有與您的網站互動，因此您在Audience Manager中沒有任何客戶活動。 以下是說明此情況的範例：
 
@@ -57,9 +57,9 @@ ht-degree: 2%
 
 在[!DNL People-Based Destinations]中鎖定目標對象需要您傳送客戶電子郵件地址的[SHA256雜湊](people-based-destinations-prerequisites.md)版本。 根據您現有的Audience Manager設定，您可能會發現自己處於以下兩種情況之一：
 
-**A)您的Audience Manager客戶ID ([DPUUID](../../reference/ids-in-aam.md))已經是小寫、雜湊的電子郵件地址**。 在此案例中，您可以使用這些現有的ID在[!DNL People-Based Destinations]中鎖定您的對象。
+**A)您的Audience Manager客戶ID ([DPUUID](../../reference/ids-in-aam.md))已經是小寫、雜湊電子郵件地址**。 在此案例中，您可以使用這些現有的ID在[!DNL People-Based Destinations]中鎖定您的對象。
 
-**B)您的Audience Manager客戶識別碼([DPUUID](../../reference/ids-in-aam.md))不是小寫、雜湊電子郵件地址**。 在此案例中，您現有的客戶ID無法傳送至[!DNL People-Based Destinations]。 若要使用[!DNL People-Based Destinations]，您必須在現有客戶ID與小寫、雜湊版本的客戶電子郵件地址之間執行ID同步。 您可以透過[以檔案為基礎的ID同步處理](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)或使用[宣告的ID](../declared-ids.md)來執行此作業。
+**B)您的Audience Manager客戶ID ([DPUUID](../../reference/ids-in-aam.md))不是小寫、雜湊電子郵件地址**。 在此案例中，您現有的客戶ID無法傳送至[!DNL People-Based Destinations]。 若要使用[!DNL People-Based Destinations]，您必須在現有客戶ID與小寫、雜湊版本的客戶電子郵件地址之間執行ID同步。 您可以透過[以檔案為基礎的ID同步處理](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)或使用[宣告的ID](../declared-ids.md)來執行此作業。
 
 ## 4.特徵資格 {#trait-qualification}
 
@@ -78,12 +78,12 @@ ht-degree: 2%
 **B)建立新的資料來源**。 此選項適用於您的Audience Manager客戶ID ([DPUUID](../../reference/ids-in-aam.md))不是雜湊電子郵件地址的情況。 在這種情況下，您需要建立新的跨裝置資料來源，並針對該來源加入雜湊電子郵件地址。 您可以透過兩種方式達成此目的：
 
 * 使用檔案式ID同步。 如需 ID 同步檔案的詳細資訊，請參閱 [ID 同步檔案的名稱和內容要求](../../integration/sending-audience-data/batch-data-transfer-explained/id-sync-file-based.md)。使用此方法時，您可以鎖定[!DNL CRM]資料庫中的所有雜湊電子郵件地址。
-* 傳入已驗證的客戶ID時，請使用[宣告ID](../declared-ids.md)來宣告雜湊的電子郵件地址。 使用此方法時，代表您Audience Manager僅會鎖定已線上驗證的使用者之雜湊電子郵件地址。 以人物為基礎的管道中所定位的電子郵件地址，只是宣告ID事件呼叫中的電子郵件地址。 與客戶 ID 相關聯的其他電子郵件地址不會即時啟用。
+* 傳入已驗證的客戶ID時，請使用[宣告ID](../declared-ids.md)來宣告雜湊的電子郵件地址。 使用此方法時，Audience Manager僅代表您鎖定已線上上通過驗證的使用者之雜湊電子郵件地址。 以人物為基礎的管道中所定位的電子郵件地址，只是宣告ID事件呼叫中的電子郵件地址。 與客戶 ID 相關聯的其他電子郵件地址不會即時啟用。
 
 ## 6.使用設定檔合併規則進行分段 {#use-profile-merge-rules}
 
 視您的使用案例而定(請參閱[1。 定義您的使用案例](people-based-destinations-workflow.md#defining-your-use-case))，有兩種方式可使用[!DNL Profile Merge Rules]進行分段。
 
-**A)使用現有的[!DNL Profile Merge Rules]**。 此選項適用於第一個使用案例（根據合併的線上和離線使用者活動的對象目標定位）。 在此案例中，您在Audience Manager中有現有的客戶活動，且您已定義至少一個您已在細分中使用的設定檔合併規則。 在此情況下，您不需要建立任何新的[!DNL Profile Merge Rules]。
+**A)使用現有的[!DNL Profile Merge Rules]**。 此選項適用於第一個使用案例（根據合併的線上和離線使用者活動的對象目標定位）。 此情境中，您在Audience Manager中有現有的客戶活動，且已定義至少一個您用於細分的設定檔合併規則。 在此情況下，您不需要建立任何新的[!DNL Profile Merge Rules]。
 
-**B)建立新的[!DNL All Cross-Device Profiles]合併規則**。 此選項適用於第二個使用案例（對象鎖定目標僅以離線使用者活動為基礎）。 在此案例中，您要將離線客戶資料從您的[!DNL CRM]帶入Audience Manager，並想要從該資料建立區段。 為此，[!DNL People-Based Destinations]引入新的第四個設定檔合併規則，稱為&#x200B;**[!DNL All Cross-Device Profiles]**。 這是您在純離線資料分段時需要使用的規則。
+**B)建立新的[!DNL All Cross-Device Profiles]合併規則**。 此選項適用於第二個使用案例（對象鎖定目標僅以離線使用者活動為基礎）。 在此案例中，您要將離線客戶資料從您的[!DNL CRM]帶入Audience Manager，並且想要從該資料建立區段。 為此，[!DNL People-Based Destinations]引入新的第四個設定檔合併規則，稱為&#x200B;**[!DNL All Cross-Device Profiles]**。 這是您在純離線資料分段時需要使用的規則。

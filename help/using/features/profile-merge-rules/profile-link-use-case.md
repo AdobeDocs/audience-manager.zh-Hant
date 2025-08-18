@@ -1,5 +1,5 @@
 ---
-description: 使用設定檔連結裝置圖表進行區段重新定位和個人化區段資格的Recommendations和使用案例。
+description: 透過設定檔連結裝置圖表，提供區段重新定位和個人化區段資格的建議和使用案例。
 seo-description: Recommendations and use cases for segment retargeting and personalized segment qualification with the Profile Link device graph.
 seo-title: Profile Link Device Graph Use Cases
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # 設定檔連結裝置圖表使用案例 {#profile-link-device-graph-use-cases}
 
-使用[!UICONTROL Profile Link Device Graph]進行區段重新定位和個人化區段資格的Recommendations和使用案例。
+使用[!UICONTROL Profile Link Device Graph]進行區段重新定位和個人化區段資格的建議和使用案例。
 
 ## 建議 {#recommendations}
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 
 ![上次裝置圖表](assets/last-device-graph.png)
 
-由於Audience Manager會符合區段參與設定檔合併的每個裝置設定檔的資格，因此這三個裝置設定檔都會分段。 [!UICONTROL Profile Link Device Graph]可讓Audience Manager檢視所有三個裝置的行為，並將每個裝置限定於沒有單一裝置設定檔本身符合的區段。
+由於Audience Manager會針對區段限定參與設定檔合併的每個裝置設定檔，因此這三個裝置設定檔都會分段。 [!UICONTROL Profile Link Device Graph]可讓Audience Manager檢視所有三個裝置的行為，並將每個裝置限定於沒有單一裝置設定檔本身符合的區段。
 
 此[!UICONTROL Profile Merge Rule]可讓行銷人員根據使用者活動（而非個別裝置活動），將一致的體驗傳送至單一人員擁有的所有裝置。
 

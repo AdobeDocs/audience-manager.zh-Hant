@@ -1,5 +1,5 @@
 ---
-description: 在目標產生器中，設定區段包含Cookie網域和Publish資料至欄位。 這可讓您建立規則，以判斷目的地是設定Cookie還是傳回Cookie。 Cookie網域和Publish資料可各自獨立運作，且為選用專案。 您無需使用其中之一即可建立Cookie目的地。
+description: 在目標產生器中，設定區段包含Cookie網域和發佈資料到欄位。 這可讓您建立規則，以判斷目的地是設定Cookie還是傳回Cookie。 Cookie網域和發佈資料可各自獨立運作，且為選用專案。 您無需使用其中之一即可建立Cookie目的地。
 seo-description: In Destination Builder, the Configuration section contains the Cookie Domain and Publish Data To fields. These let you create rules to determine if a destination sets a cookie or returns a cookie. Cookie Domain and Publish Data To work independently of each other and are optional. You can create a cookie destination without using either of them.
 seo-title: Optional Settings for Cookie Destinations
 solution: Audience Manager
@@ -44,7 +44,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>範例</b> </p> </td> 
-   <td colname="col2"> <p>舉個簡單的例子，假設我們有一個名為sports.com的虛構網站。 Sports.com有高爾夫、棒球和足球的網域。 若要在所有運動網域中設定Cookie，請在<span class="wintitle"> Cookie網域</span>方塊中輸入，如下所示： </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>這會告知<span class="keyword">Audience Manager</span>在包含模式<code><i>something</i></code>.sports.com的任何網域中設定Cookie。 如需更複雜的一組範例，請參閱下文。 </p> </td> 
+   <td colname="col2"> <p>舉個簡單的例子，假設我們有一個名為sports.com的虛構網站。 Sports.com有高爾夫、棒球和足球的網域。 若要在所有運動網域中設定Cookie，請在<span class="wintitle"> Cookie網域</span>方塊中輸入，如下所示： </p> <p> <img src="assets/sports-domain.png" id="image_8883477BB3B543648C97A441AD34C6DE" /> </p> <p>這會告訴<span class="keyword"> Audience Manager</span>，在包含模式<code><i>something</i></code>.sports.com的任何網域中設定Cookie。 如需更複雜的一組範例，請參閱下文。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -90,7 +90,7 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-## Publish資料至 {#publish-data-to}
+## 將資料發佈至 {#publish-data-to}
 
 如果網域符合您選取的選項所設定的條件，則[!UICONTROL Publish Data To]設定會傳回Cookie。 選項包括:
 

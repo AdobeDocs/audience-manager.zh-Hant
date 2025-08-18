@@ -1,5 +1,5 @@
 ---
-description: 以人物為基礎的目的地為Audience Manager引入可共用對象的概念。 此量度可協助您瞭解Audience Manager可與目的地平台共用多少雜湊電子郵件地址。
+description: 以人物為基礎的目的地為Audience Manager引入可共用對象的概念。 此量度可協助您瞭解Audience Manager可與目的地平台共用的雜湊電子郵件地址數量。
 seo-description: People-Based Destinations introduce the notion of Shareable Audiences to Audience Manager. This metric helps you understand how many of the hashed email addresses Audience Manager can share with the destination platform.
 seo-title: Shareable Audiences
 solution: Audience Manager
@@ -18,19 +18,19 @@ ht-degree: 0%
 >[!IMPORTANT]
 >本文包含產品檔案，旨在引導您完成此功能的設定和使用。 此處未包含任何法律建議。 請諮詢您自己的法律顧問，以取得法律指引。
 
-[!DNL People-Based Destinations]將[!DNL Shareable Audiences]的概念帶入Audience Manager。 此量度可協助您瞭解Audience Manager可與目的地平台共用多少雜湊電子郵件地址。
+[!DNL People-Based Destinations]將[!DNL Shareable Audiences]的概念帶入Audience Manager。 此量度可協助您瞭解Audience Manager可與目的地平台共用的雜湊電子郵件地址數量。
 
 [!DNL Shareable Audiences]是協助您解譯[!DNL People-Based Destinations]內容中對象資料的量度。 您可以在[!UICONTROL Destinations]頁面和[!UICONTROL Segment]頁面中看到此量度。
 
 ## 區段可共用的受眾 {#segment-shareable-audiences}
 
-區段頁面中的[!DNL Segment Shareable Audience]量度表示來自資料來源的雜湊電子郵件地址數目，這些地址具有相符的[DPUUID](../../reference/ids-in-aam.md)，在指定的回顧期間內也符合定義的區段（假設已套用設定檔合併規則），而且該Audience Manager可與目的地平台共用。
+區段頁面中的[!DNL Segment Shareable Audience]量度表示來自資料來源的雜湊電子郵件地址數目，這些地址具有相符的[DPUUID](../../reference/ids-in-aam.md)、在指定的回顧期間內也符合定義的區段（假設已套用設定檔合併規則），而且Audience Manager可以與目的地平台共用。
 
 此量度有1天的回溯期。 這可協助您瞭解特定目的地中區段的受眾觸及率。
 
 ## 目的地可共用的對象 {#destination-shareable-audience}
 
-以人物為基礎的目的地頁面中的[!DNL Destination Shareable Audience]量度，代表該Audience Manager可與目的地平台共用的資料來源雜湊電子郵件地址總數（包含相符的[DPUUID](../../reference/ids-in-aam.md)），以及對應至該目的地的所有區段。
+以人物為基礎的目的地頁面中的[!DNL Destination Shareable Audience]量度表示Audience Manager可與目的地平台共用的資料來源雜湊電子郵件地址總數（具有相符的[DPUUID](../../reference/ids-in-aam.md)），這些地址來自對應至該目的地的所有區段。
 
 ![可共用的對象](assets/dest-shareable-audiences.png)
 

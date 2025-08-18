@@ -47,7 +47,7 @@ ht-degree: 0%
 |---------|----------|
 | `.../log_ingestion/` | 這是目錄儲存路徑的開頭。 一切設定完成後，您將會收到完整路徑。 |
 | `pid=<AAM ID>` | 此機碼值組包含您的Audience Manager客戶ID。 |
-| `dpid=<d_src>` | 此機碼值組包含傳入事件呼叫的資料來源ID。 資料來源ID是將檔案中的所有內容與其所屬的實際資料繫結的值。 </br>例如，假設您有ID 123且名稱為「Advertiser Creative A」的創意產品。 由於事件呼叫只會在ID中傳遞，因此您必須在中繼資料檔案中包含「廣告商創意A」。 行銷活動和創意屬於資料來源。 資料來源ID可將這些連結在一起，並可讓我們將檔案內容準確地與事件呼叫時傳入的ID建立關聯。 請參閱[事件呼叫ID如何決定檔案名稱、內容和傳遞路徑](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names)。 |
+| `dpid=<d_src>` | 此機碼值組包含傳入事件呼叫的資料來源ID。 資料來源ID是將檔案中的所有內容與其所屬的實際資料繫結的值。 </br>例如，假設您有ID 123且名稱為「Advertiser Creative A」的創意產品。 由於事件呼叫只會在ID中傳遞，因此您必須在中繼資料檔案中包含「廣告商Creative A」。 行銷活動和創意屬於資料來源。 資料來源ID可將這些連結在一起，並可讓我們將檔案內容準確地與事件呼叫時傳入的ID建立關聯。 請參閱[事件呼叫ID如何決定檔案名稱、內容和傳遞路徑](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names)。 |
 | `<yyyymmdd_0_child ID>` | 這是檔案名稱。 請參閱[中繼資料檔案的命名慣例](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)。 |
 
 ## 檔案處理時間和更新 {#processing-times}

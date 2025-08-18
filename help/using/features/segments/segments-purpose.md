@@ -28,17 +28,17 @@ ht-degree: 1%
 
 ## [!UICONTROL Segment]組合
 
-Audience Manager[!UICONTROL segment]是伺服器端規則，包含個別特徵或特徵群組。 特徵是由稱為機碼值組的資料元素所組成。 這些機碼值組以及您在[!UICONTROL segment]層級設定的規則，都包含可讓訪客符合特徵和[!UICONTROL segment]成員資格的條件。
+Audience Manager [!UICONTROL segment]是伺服器端規則，包含個別特徵或特徵群組。 特徵是由稱為機碼值組的資料元素所組成。 這些機碼值組以及您在[!UICONTROL segment]層級設定的規則，都包含可讓訪客符合特徵和[!UICONTROL segment]成員資格的條件。
 
 ## [!UICONTROL Adobe Analytics] [!UICONTROL Segment]對應的考量事項
 
-將Adobe Analytics [!UICONTROL segments]或報表套裝對應至您的Experience Cloud組織時，Audience Manager會自動建立新的、對應的、唯讀的[!UICONTROL segments]和特徵。 您無法從Audience Manager編輯或變更這些[!UICONTROL segments]的存放位置。 不過，您在對應的Adobe Analytics [!UICONTROL segments]或報表套裝上執行的任何變更都會反映在Audience Manager中。
+將Adobe Analytics [!UICONTROL segments]或報表套裝對應至您的Experience Cloud組織時，Audience Manager會自動建立對應的新唯讀[!UICONTROL segments]和特徵。 您無法從Audience Manager編輯或變更這些[!UICONTROL segments]的儲存位置。 不過，您在對應的Adobe Analytics [!UICONTROL segments]或報表套裝上執行的任何變更都會反映在Audience Manager中。
 
 >[!TIP]
 >
->Audience Manager[!UICONTROL segments]與[!DNL Adobe Analytics] [!UICONTROL segments]不同。 閱讀[瞭解Analytics和Audience Manager中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hant)以瞭解差異的深入說明。
+>Audience Manager [!UICONTROL segments]與[!DNL Adobe Analytics] [!UICONTROL segments]不同。 閱讀[瞭解Analytics和Audience Manager中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)以深入瞭解差異。
 
-## 使用[!UICONTROL Segment Builder]建立規則型[!UICONTROL Segments]
+## 使用[!UICONTROL Segments]建立規則型[!UICONTROL Segment Builder]
 
 [!UICONTROL Segment Builder]不像傳統畫素會因應簡單的yes/no條件而引發，它可讓您建立複雜的[!UICONTROL segment]需求。 類似[!UICONTROL traits]，[!UICONTROL segments]使用[!DNL Boolean]運算式([!DNL AND]、[!DNL OR]、[!DNL NOT])、比較運運算元（大於、小於、等於等）和時近/頻率條件來評估資料。 這些功能有助於建立與您的業務需求相關的重點對象[!UICONTROL segments]。
 

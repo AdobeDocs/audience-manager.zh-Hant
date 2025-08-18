@@ -61,4 +61,4 @@ Audience Manager使用者介面中的所有互動式元素都會包含對應的�
 
 [!DNL Audience Manager]致力於提供日益增強的協助工具，讓產品更易於每個人使用。
 
-建議您使用[Adobe協助工具意見回饋表](https://www.adobe.com/accessibility/feedback.html)，傳送您遇到的改善建議和協助工具的問題。 我們非常高興將您的意見反應納入考量並改善[!DNL Audience Manager]。
+建議您使用[Adobe協助工具意見回饋表單](https://www.adobe.com/accessibility/feedback.html)，傳送您遇到的改善建議和協助工具的問題。 我們非常高興將您的意見反應納入考量並改善[!DNL Audience Manager]。

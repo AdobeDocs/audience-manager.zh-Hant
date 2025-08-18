@@ -3,7 +3,7 @@ description: 用於某些報表的取樣方法摘要、取樣錯誤率，以及�
 seo-description: A summary of the sampling methodology used for some reports, sampling error rates, and a list of reports that return information based on sampled data.
 seo-title: Data Sampling and Error Rates in Selected Audience Manager Reports
 solution: Audience Manager
-title: 所選Audience Manager報表中的資料取樣和錯誤率
+title: 選定Audience Manager報表中的資料取樣和錯誤率
 uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 feature: Reporting Reference
 exl-id: 0b7f9423-0859-4fa8-926b-e4858eed2294
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ---
 
-# 所選Audience Manager報表中的資料取樣和錯誤率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
+# 選定Audience Manager報表中的資料取樣和錯誤率{#data-sampling-and-error-rates-in-selected-audience-manager-reports}
 
 用於某些報表的取樣方法摘要、取樣錯誤率，以及根據取樣資料傳回資訊的報表清單。
 
 ## 資料取樣比例 {#data-sampling-ratio}
 
-有些[!DNL Audience Manager]報告會根據可用資料總量的取樣集來顯示結果。 取樣資料比率為1:54。 對於使用取樣資料的報表，這表示您的結果以54筆記錄每組1筆記錄為基礎。
+有些[!DNL Audience Manager]報告會根據可用資料總量的取樣集來顯示結果。 抽樣資料比率為1:54。 對於使用取樣資料的報表，這表示您的結果以54筆記錄每組1筆記錄為基礎。
 
 這些報表使用統計抽樣資料，因為它們需要大量運算能力才能產生結果。 取樣有助於在減少的運算需求、維持系統效能以及提供精確的結果之間取得平衡。
 
@@ -59,7 +59,7 @@ Overlap reports ([trait-to-trait](/help/using/reporting/dynamic-reports/trait-tr
 
 ## 使用Minhash取樣方法 {#minhash}
 
-根據[Minhash](https://en.wikipedia.org/wiki/MinHash)取樣方法，Audience Manager使用新的方法，在「單排列雜湊」資料草圖上運算特徵和區段估計值。 此新方法產生的變異數低於積木相似度的標準估計器。 請參閱下節，瞭解使用此方法的報表。
+Audience Manager以[Minhash](https://en.wikipedia.org/wiki/MinHash)取樣方法為基礎，在One Permentation雜湊資料草圖上，使用新方法計算特徵和區段估計值。 此新方法產生的變異數低於積木相似度的標準估計器。 請參閱下節，瞭解使用此方法的報表。
 
 <!--
 
@@ -87,5 +87,5 @@ Reports that use Minhash sampling methodology:
 | 統計抽樣 | Minhash取樣方法 |
 |--- |--- |
 | [可定址的受眾](../features/addressable-audiences.md)資料（客戶和區段層級資料）。 | [重疊報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特徵對特徵、區段對特徵、區段對區段） |
-| [!UICONTROL Profile Merge Rule]的[總裝置](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)量度。 | [特徵建議](/help/using/features/segments/trait-recommendations.md) |
-| [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)在[!UICONTROL Search]索引標籤和任何[!UICONTROL Saved Searches]中使用抽樣資料 | [Audience MarketplaceRecommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |
+| [的](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)總裝置[!UICONTROL Profile Merge Rule]量度。 | [特徵建議](/help/using/features/segments/trait-recommendations.md) |
+| [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)在[!UICONTROL Search]索引標籤和任何[!UICONTROL Saved Searches]中使用抽樣資料 | [Audience Marketplace Recommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |

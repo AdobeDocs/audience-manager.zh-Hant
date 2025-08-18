@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->文字樣式 (`monospaced text`、*斜體*、括號 `[ ]` `( )` 等)檔案中會指示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
+>本檔案中的文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
 
 ## 用途 {#purpose}
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 若要開始使用[!UICONTROL Actionable Log Files]，您必須將記錄檔資料匯入[!DNL Audience Manager]。 以下連結將幫助您快速入門：
 
 * 如需[!UICONTROL Google Campaign Manager]記錄檔，請參閱[將Google Campaign Manager資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *及*，請聯絡您的[!DNL Audience Manager]顧問。
-* 如需[!UICONTROL Google Ad Manager] (先前為Google DFP)記錄檔，請參閱[將Google Ad Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *及*，請聯絡您的[!DNL Audience Manager]顧問。
+* 如需[!UICONTROL Google Ad Manager] (先前為Google DFP)記錄檔，請參閱[將Google Ad Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *和*，請聯絡您的[!DNL Audience Manager]顧問。
 * 如需其他廣告伺服器記錄檔，請參閱[資料和中繼資料檔案](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *和*，請聯絡您的[!DNL Audience Manager]顧問。
 
 如果您已將記錄檔資料匯入[!DNL Audience Manager]，請要求您的[!DNL Audience Manager]顧問或[客戶服務](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)為您啟用[!UICONTROL Actionable Log Files]。
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 
@@ -57,12 +57,12 @@ ht-degree: 2%
 
 ## 可操作訊號 {#actionable-signals}
 
-訊號是[!DNL Audience Manager]中的[最小資料單位](../../reference/signal-trait-segment.md)。 [!UICONTROL Actionable Log Files]可讓您從廣告伺服器記錄檔擷取廣告商、業務單位、創意和促銷活動在曝光事件、點選事件和轉換事件中的值，做為訊號。
+訊號是[中的](../../reference/signal-trait-segment.md)最小資料單位[!DNL Audience Manager]。 [!UICONTROL Actionable Log Files]可讓您從廣告伺服器記錄檔擷取廣告商、業務單位、創意和促銷活動在曝光事件、點選事件和轉換事件中的值，做為訊號。
 
 >[!IMPORTANT]
 >
 >下列廣告伺服器支援[!UICONTROL Actionable Log Files]：
-> <br>
+>> <br>
 >
 > * [Google行銷活動管理員](#dcm-logs-signals)
 > * [Google廣告管理員](#ad-manager-logs-signals)
@@ -128,7 +128,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p> <code>Creative ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>Google Campaign Manager提供的創作ID。 </p> </td> 
+   <td colname="col3"> <p>Google Campaign Manager提供的Creative ID。 </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr> 
   <tr> 
@@ -188,10 +188,10 @@ Removed  {importance="high"} for ExL
 | `LineItemId` | `d_lineitem` | 已遞送廣告管理員條列專案的數值ID |
 | `OrderId` | `d_orderid` | 包含已傳遞條列專案和創意的廣告管理員訂單數值ID。 |
 | `CreativeId` | `d_creative` | 已傳送的廣告管理員創意的數值ID。 |
-| `-` | `d_event` | 表示事件型別。 Audience Manager會從Ad Manager記錄檔名稱中讀取事件型別，並將其轉換為可操作的訊號。 接受的值為： <br> <ul><li>d_event =曝光的imp。</li><li>d_event =點選次數。</li><li>d_event =轉換和活動的conv。</li></ul> |
+| `-` | `d_event` | 表示事件型別。 Audience Manager會從廣告管理員記錄檔名稱中讀取事件型別，並將其轉換為可操作的訊號。 接受的值為： <br> <ul><li>d_event =曝光的imp。</li><li>d_event =點選次數。</li><li>d_event =轉換和活動的conv。</li></ul> |
 | `-` | `d_src` | 您用來擷取Ad Manager資料的資料來源ID。 請參閱[如何建立資料Source](/help/using/features/manage-datasources.md)。 |
 
-此表格中說明的訊號會以Audience Manager擷取，就像即時HTTP呼叫一樣。 以下範例呼叫包含來自Google Ad Manager的轉換事件資訊。 呼叫不一定要在範例呼叫中包含所有訊號。
+此表格中所述的訊號會擷取至Audience Manager，如同即時HTTP呼叫。 以下範例呼叫包含來自Google Ad Manager的轉換事件資訊。 呼叫不一定要在範例呼叫中包含所有訊號。
 
 ```
 https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894272138&d_time=1504536233&d_event=conv&d_lineitem=112&d_orderid=22223&d_creative=3983524
@@ -259,7 +259,7 @@ https://yourcompany.demdex.net?d_src=743&d_uuid=07955261652886032950143702505894
   <tr> 
    <td colname="col1"> <p> <code>Creative-ID</code> </p> </td> 
    <td colname="col2"> <p> <code> d_creative</code> </p> </td> 
-   <td colname="col3"> <p>記錄檔中的創作ID。 </p> </td> 
+   <td colname="col3"> <p>記錄檔中的Creative ID。 </p> </td> 
    <td colname="col4"> <p> <code> 224221</code> </p> </td> 
   </tr>
     <tr> 
@@ -331,17 +331,17 @@ UI中的![可操作的訊號](/help/using/integration/assets/alf-in-signals.png)
 
 ### 在Audience Optimization報表或Audience Lab中使用Google Campaign Manager Floodlight活動
 
-[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en)可讓廣告商追蹤使用者轉換。 透過[!UICONTROL Actionable Log Files]，您可以在[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)或[Audience Lab](../../features/audience-lab/audience-lab.md)中追蹤[!DNL Google Campaign Manager]轉換：
+[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en)可讓廣告商追蹤使用者轉換。 透過[!UICONTROL Actionable Log Files]，您可以在[!DNL Google Campaign Manager]Audience Optimization報表[或](../../reporting/audience-optimization-reports/audience-optimization-reports.md)Audience Lab[中追蹤](../../features/audience-lab/audience-lab.md)轉換：
 
 1. 建立特徵並使用以下特徵規則從廣告伺服器記錄檔中擷取轉換：
 
    `d_event == conv AND d_conversion == 123`
 
-   在Audience Manager[!UICONTROL UI]中建立特徵時，請選取[!UICONTROL Conversion]做為[!UICONTROL Event Type]。
+   在Audience Manager [!UICONTROL UI]中建立特徵時，請選取[!UICONTROL Conversion]做為[!UICONTROL Event Type]。
 
 2. 一旦您建立特徵後，轉換就會開始在[!UICONTROL Audience Optimization Reports]和[!UICONTROL Audience Lab]中報告。
 
 >[!MORELIKETHIS]
 >
 >* [將Google Campaign Manager資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md)
->* [受眾最佳化報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)
+>* [客群最佳化報告](../../reporting/audience-optimization-reports/audience-optimization-reports.md)

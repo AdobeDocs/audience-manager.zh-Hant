@@ -16,13 +16,13 @@ ht-degree: 43%
 
 # Audience Manager啟用合作夥伴
 
-此頁面僅包含目前的Audience Manager[伺服器對伺服器整合](/help/using/features/destinations/add-edit-segments.md)。  如需整合的詳細資訊，請參閱其[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)清單（若有），或聯絡您的Adobe顧問或客戶服務。
+此頁面僅包含目前的Audience Manager [伺服器對伺服器整合](/help/using/features/destinations/add-edit-segments.md)。  如需整合的詳細資訊，請參閱其[Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)清單（若有），或聯絡您的Adobe顧問或客戶服務。
 
 <br> 
 
 * **已更新** =顯示此啟用夥伴有更新的最後日期。
-* **取消區段** =取消區段會描述取消資格並從區段移除裝置設定檔的程式。 您從區段移除裝置設定檔的功能取決於用來建立設定檔合併規則的裝置選項。 取消細分也會用於GDPR刪除要求內容讀取[設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)與具有取消細分功能的[Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消細分資訊傳送至下列標示為「是」的目的地。
-* **接收IAB TCF同意訊號** =適用於IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉送給啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取適用於IAB TCF[&#128279;](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的Audience Manager外掛程式。
+* **取消區段** =取消區段會描述取消資格並從區段移除裝置設定檔的程式。 您從區段移除裝置設定檔的功能取決於用來建立設定檔合併規則的裝置選項。 取消細分也會用於GDPR刪除要求內容讀取[設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)與具有取消細分功能的[Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消細分資訊傳送至以下標示為「是」的目的地。
+* **接收IAB TCF同意訊號** =適用於IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉送給啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取適用於IAB TCF[的](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)Audience Manager外掛程式。
 * **ICDS** =此資料行列出支援即時跨裝置隱藏的合作夥伴。 讀取[即時跨裝置隱藏](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **行動裝置ID** =此欄列出可從Audience Manager接收行動裝置ID的合作夥伴。
 
@@ -157,7 +157,7 @@ ht-degree: 43%
 | TubeMogul | 03/03/2017 | 有 | 否 | 有 | 否 |
 | 轉彎/阿莫比 | 03/03/2027 | 否 | 否 | 否 | 是 |
 | 特文加 | 29/10/2018 | 有 | 否 | 否 | 否 |
-| twitter自訂對象 | 27/03/2017 | 有 | 否 | 有 | 否 |
+| Twitter自訂對象 | 27/03/2017 | 有 | 否 | 有 | 否 |
 | 底色 | 11/07/2017 | 否 | 否 | 否 | 否 |
 | Verve | 2017年15月6日 | 有 | 否 | 否 | 是 |
 | VideoAmp | 03/03/2017 | 否 | 否 | 否 | 否 |

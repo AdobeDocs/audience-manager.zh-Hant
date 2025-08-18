@@ -22,7 +22,7 @@ ht-degree: 3%
 
 <!-- r_tb_expression_samples.xml -->
 
-使用[!UICONTROL Expression Builder]程式碼編輯器建立您自己的特徵規則。 以下範例可幫助您入門。 某些範例會在&#x200B;*`key`*&#x200B;變數前加上`c_`，以將其識別為使用者定義的變數。 如果您的事件呼叫使用該語法將資料傳送至[!DNL Audience Manager]，請包含&#x200B;*`key`*&#x200B;變數的`c_`首碼（或任何其他命名慣例）。
+使用[!UICONTROL Expression Builder]程式碼編輯器建立您自己的特徵規則。 以下範例可幫助您入門。 某些範例會在&#x200B;*`key`*&#x200B;變數前加上`c_`，以將其識別為使用者定義的變數。 如果您的事件呼叫使用該語法將資料傳送至`c_`，請包含&#x200B;*`key`*&#x200B;變數的[!DNL Audience Manager]首碼（或任何其他命名慣例）。
 
 ## 布林運算式 {#boolean-expressions}
 

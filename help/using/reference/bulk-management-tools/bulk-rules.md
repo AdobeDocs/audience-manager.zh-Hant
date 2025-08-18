@@ -30,7 +30,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在[!DNL Audience Manager] UI中指派的[RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
+>在[ UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
 
 ## 使用特徵規則 {#trait-rules}
 

@@ -1,5 +1,5 @@
 ---
-description: 此程式需要AdWords再行銷清單、畫素代碼和Audience ManagerURL目的地。 這也稱為搜尋廣告(RLSA)整合的再行銷清單。 僅適用於付費搜尋。
+description: 此程式需要AdWords再行銷清單、畫素代碼和Audience Manager URL目的地。 這也稱為搜尋廣告(RLSA)整合的再行銷清單。 僅適用於付費搜尋。
 seo-description: This procedure requires an AdWords remarketing list, pixel code, and an Audience Manager URL destination. It is also known as a remarketing list for search ads (RLSA) integration. Applies to paid search only.
 seo-title: Send Segments to a Google AdWords Remarketing List
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 將區段傳送至Google Ads再行銷清單 {#send-segments-to-a-google-adwords-remarketing-list}
 
-此程式需要[!DNL Google Ads]再行銷清單、畫素代碼和Audience Manager[!DNL URL] [!DNL destination]。 也稱為搜尋廣告([!DNL RLSA])整合的再行銷清單。 僅適用於付費搜尋。
+此程式需要[!DNL Google Ads]再行銷清單、畫素代碼和Audience Manager [!DNL URL] [!DNL destination]。 也稱為搜尋廣告([!DNL RLSA])整合的再行銷清單。 僅適用於付費搜尋。
 
 >[!IMPORTANT]
 >請注意，這並非兩個系統的產品化整合。
@@ -35,7 +35,7 @@ ht-degree: 0%
    * 序列化：已啟用
    * 分隔符號：分號（ &amp;amp；分號； ）
 
-1. 在[!DNL URL] [!DNL destination]的[!UICONTROL Segment Mappings]區段中，將步驟2中的程式碼新增至[!DNL URL]和[!DNL Secure URL]欄位。 在[!DNL URL]和[!DNL Secure URL]欄位中分別以`http:`和`https:`作為程式碼的前置詞。
+1. 在[!UICONTROL Segment Mappings] [!DNL URL]的[!DNL destination]區段中，將步驟2中的程式碼新增至[!DNL URL]和[!DNL Secure URL]欄位。 在`http:`和`https:`欄位中分別以[!DNL URL]和[!DNL Secure URL]作為程式碼的前置詞。
 
    >[!IMPORTANT]
    >
@@ -61,7 +61,7 @@ ht-degree: 0%
    >
    >如果您使用多個區段，請為每個要對應至[!DNL Google Ads] [!DNL destination]的區段取得新畫素。 這可確保資料套用至適當的再行銷清單。
 
-1. 在Audience Manager中將新區段對應到此[!DNL destination]時，請將對應定義為`aam=segmentID`並將`segmentID`取代為您的區段識別碼。
+1. 在Audience Manager中將新區段對應至此[!DNL destination]時，請將對應定義為`aam=segmentID`，並將`segmentID`取代為您的區段識別碼。
 1. 在[!DNL Google Ads]中定義貯體時，請建立符合步驟6中定義的對應的規則。
 
 完成的對應看起來可能類似這樣：

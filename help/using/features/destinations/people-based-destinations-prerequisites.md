@@ -48,15 +48,15 @@ ht-degree: 2%
 
 使用[!UICONTROL People-Based Destinations]將第一方對象區段傳送至[!DNL LinkedIn]之前，請確定您的[!DNL LinkedIn Campaign Manager]帳戶具有[!DNL Creative Manager]或更高的許可權層級。
 
-若要瞭解如何編輯您的[!DNL LinkedIn Campaign Manager]使用者許可權，請參閱LinkedIn檔案中的[在Advertising帳戶上新增、編輯和移除使用者許可權](https://www.linkedin.com/help/lms/answer/5753)。
+若要瞭解如何編輯您的[!DNL LinkedIn Campaign Manager]使用者許可權，請參閱LinkedIn檔案中的[新增、編輯及移除Advertising帳戶的使用者許可權](https://www.linkedin.com/help/lms/answer/5753)。
 
-如需視訊指示，請參閱[瞭解及設定LinkedIn以人物為基礎的目的地](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html?lang=zh-Hant)。
+如需視訊指示，請參閱[瞭解及設定LinkedIn以人物為基礎的目的地](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/data-activation/people-based-destinations/understanding-and-configuring-the-linkedin-pbd.html)。
 
 ### [!DNL Google Customer Match] {#gcm}
 
 使用[!UICONTROL People-Based Destinations]將第一方對象區段傳送至[!DNL Google Customer Match]目的地之前，請務必閱讀並遵守Google有關使用[!DNL Customer Match]的原則，如在[Google支援檔案](https://support.google.com/google-ads/answer/6299717)中所述。
 
-接下來，確定您的[!DNL Google]帳戶已設定為[!DNL Standard]或更高的許可權等級。 如需詳細資訊，請參閱[Google Ads檔案](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&amp;rd=1)。
+接下來，確定您的[!DNL Google]帳戶已設定為[!DNL Standard]或更高的許可權等級。 如需詳細資訊，請參閱[Google Ads檔案](https://support.google.com/google-ads/answer/9978556?visit_id=637611563637058259-4176462731&rd=1)。
 
 Google會自動允許具有合規帳戶的客戶列出。
 
@@ -68,11 +68,11 @@ Google會自動允許具有合規帳戶的客戶列出。
 
 [!UICONTROL People-Based Destinations]的資料擷取目前支援每個批次傳輸最多10個連結至一個客戶ID ([!DNL CRM ID])的雜湊電子郵件地址。
 
-在多次批次傳輸中，上傳連結至一個客戶ID的10個以上的雜湊電子郵件地址，會導致Audience Manager保留最近新增的10個電子郵件地址。
+在多次批次傳輸中，上傳連結至一個客戶ID的10個以上的雜湊電子郵件地址，會讓Audience Manager保留最近新增的10個電子郵件地址。
 
 若要擷取雜湊識別碼，[請建立雜湊識別碼的跨裝置資料來源](../create-data-source-hashed-emails.md)並啟用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations and/or hashed email workflows]**&#x200B;選項。
 
-![Audience Manager使用者介面影像，顯示在以人物為基礎的目的地及/或雜湊電子郵件工作流程中，共用相關跨裝置ID的選項](assets/data-source-share-ids.png)
+![Audience Manager UI影像顯示可在以人物為基礎的目的地和/或雜湊電子郵件工作流程中共用相關跨裝置ID的選項](assets/data-source-share-ids.png)
 
 ## 資料隱私權 {#data-privacy}
 
@@ -80,9 +80,9 @@ Google會自動允許具有合規帳戶的客戶列出。
 
 ## 資料雜湊與加密 {#data-hashing-encryption}
 
-加密是雙向功能。 任何加密的資訊也可使用正確的解密金鑰解密。 在Audience Manager環境中加密資料會帶來嚴重風險，因為任何加密形式的個人識別資訊都可以解密。 與加密相反，[!UICONTROL People-Based Destinations]設計成使用雜湊資料。
+加密是雙向功能。 任何加密的資訊也可使用正確的解密金鑰解密。 在Audience Manager中加密資料會帶來嚴重風險，因為任何加密形式的個人識別資訊都可以解密。 與加密相反，[!UICONTROL People-Based Destinations]設計成使用雜湊資料。
 
-雜湊是單向函式，會對輸入進行雜湊以產生唯一結果。 若使用適當的雜湊演演算法（例如[!DNL SHA256]），便無法反轉雜湊函式並顯示未雜湊的資訊。 您即將加入Audience Manager的電子郵件地址必須使用[!DNL SHA256]演演算法雜湊。 如此一來，您便可確保沒有未雜湊的電子郵件地址會觸及Audience Manager。
+雜湊是單向函式，會對輸入進行雜湊以產生唯一結果。 若使用適當的雜湊演演算法（例如[!DNL SHA256]），便無法反轉雜湊函式並顯示未雜湊的資訊。 您即將加入Audience Manager的電子郵件地址必須使用[!DNL SHA256]演演算法執行雜湊處理。 如此，您便可確保沒有雜湊電子郵件地址可連線至Audience Manager。
 
 ## 雜湊需求 {#hashing-requirements}
 
@@ -99,7 +99,7 @@ Google會自動允許具有合規帳戶的客戶列出。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hant)的SHA256雜湊支援。
+Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs[的](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html)SHA256雜湊支援。
 
 ## 取得使用者許可權 {#obtaining-user-permission}
 
@@ -107,7 +107,7 @@ Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Se
 
 在您註冊[!UICONTROL People-Based Destinations]之前，請務必先取得客戶的同意，然後再將其資訊用於廣告用途。
 
-如果您的客戶希望退出廣告行銷活動，請參閱[選擇退出管理](../../overview/data-security-and-privacy/data-privacy-requests.md)，以取得有關如何停止Audience Manager進一步收集資料的詳細資訊。
+如果您的客戶希望退出廣告行銷活動，請參閱[選擇退出管理](../../overview/data-security-and-privacy/data-privacy-requests.md)，以取得有關如何阻止Audience Manager進一步收集資料的詳細資訊。
 
 ## 強制第一方資料啟用 {#enforcing-first-party-activation}
 
@@ -119,5 +119,5 @@ Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Se
 
 有兩種方式可將離線資料帶入 Audience Manager 中以用於[!UICONTROL People-Based Destinations]。
 
-* [傳送批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)給Audience Manager以擷取雜湊電子郵件地址。 使用此方法，您可以選擇使用[!UICONTROL People-Based Destinations]中[!DNL CRM]資料庫的雜湊電子郵件地址。 此外，使用此方法時，您也可以讓雜湊電子郵件地址符合[已上線特徵](../traits/trait-and-segment-qualification-reference.md)。
-* 傳入已驗證的客戶ID時，請使用[宣告ID](../declared-ids.md)來宣告雜湊電子郵件地址。 使用此方法時，Audience Manager代表您只會將線上驗證的使用者之雜湊電子郵件地址傳送給[!UICONTROL People-Based Destinations]。 透過以人物為基礎的管道啟用的電子郵件地址只是宣告ID事件呼叫中的電子郵件地址。 與客戶ID相關聯的其他電子郵件地址不會即時傳送。
+* [將批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)傳送至Audience Manager以擷取雜湊電子郵件地址。 使用此方法，您可以選擇使用[!DNL CRM]中[!UICONTROL People-Based Destinations]資料庫的雜湊電子郵件地址。 此外，使用此方法時，您也可以讓雜湊電子郵件地址符合[已上線特徵](../traits/trait-and-segment-qualification-reference.md)。
+* 傳入已驗證的客戶ID時，請使用[宣告ID](../declared-ids.md)來宣告雜湊電子郵件地址。 使用此方法時，Audience Manager只會代表您傳送已線上上通過驗證的使用者之雜湊電子郵件地址給[!UICONTROL People-Based Destinations]。 透過以人物為基礎的管道啟用的電子郵件地址只是宣告ID事件呼叫中的電子郵件地址。 與客戶ID相關聯的其他電子郵件地址不會即時傳送。

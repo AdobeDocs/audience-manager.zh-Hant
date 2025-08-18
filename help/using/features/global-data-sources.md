@@ -38,7 +38,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->使用全域裝置ID傳送資料至Audience Manager時，請務必針對有問題的裝置ID使用對應的資料來源。 範例：若要為[!DNL Apple IDFA]匯入資料，請使用資料來源識別碼20915。
+>使用全域裝置ID將資料傳送至Audience Manager時，請務必針對有問題的裝置ID使用對應的資料來源。 範例：若要為[!DNL Apple IDFA]匯入資料，請使用資料來源識別碼20915。
 
 ## 限制
 
@@ -46,14 +46,14 @@ ht-degree: 4%
 
 ## 全域裝置ID驗證
 
-Audience Manager會根據格式，驗證客戶匯入的裝置廣告ID ([!UICONTROL DAID])，確保符合裝置製造商列出的標準格式。 請參閱[Audience Manager](../reference/ids-in-aam.md)內的ID索引，以取得裝置廣告ID與全域資料來源的詳細對應，以及每個ID的適當格式。 請務必根據裝置型別，以正確的格式匯入裝置ID。 Audience Manager會拒絕不符合適當格式的裝置ID，並傳回錯誤訊息以指出該ID遭到拒絕。
+Audience Manager會根據格式，驗證客戶匯入的裝置廣告ID ([!UICONTROL DAID])，確保符合裝置製造商列出的標準格式。 請參閱[Audience Manager內的ID索引](../reference/ids-in-aam.md)，以取得裝置廣告ID與全域資料來源的詳細對應，以及每個ID的適當格式。 請務必根據裝置型別，以正確的格式匯入裝置ID。 Audience Manager會拒絕不符合適當格式的裝置ID，並傳回錯誤訊息以指出該ID遭到拒絕。
 
 * 批次資料傳輸的錯誤訊息概述如下： [上線狀態報告條款與定義](../reporting/onboarding-status-report.md#report-terms-conditions)。
 * 即時資料傳輸的錯誤訊息概述如下： [DCS錯誤碼、訊息和範例](../api/dcs-intro/dcs-api-reference/dcs-error-codes.md)。
 
 ## 裝置ID過期原則
 
-Audience Manager會在裝置廣告識別碼閒置120天後自動捨棄，類似於[AAM UUID](../faq/faq-privacy.md)。
+Audience Manager會在閒置120天後自動捨棄裝置廣告ID，類似於[AAM UUID](../faq/faq-privacy.md)。
 
 ## 請求新的全域資料來源
 

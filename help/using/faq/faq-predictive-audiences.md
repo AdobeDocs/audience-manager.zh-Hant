@@ -1,9 +1,9 @@
 ---
-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
+description: 預測客群可協助您運用資料科學，將未知的客群即時分類為不重複角色。
 seo-description: Predictive Audiences help you classify unknown audiences into distinct personas in real-time, using data science.
 seo-title: Predictive Audiences FAQ
 solution: Audience Manager
-title: 預測受眾常見問題集
+title: 預測客群常見問題集
 feature: Algorithmic Models
 exl-id: 21073970-8457-470b-89fc-724a118a18d2
 source-git-commit: 03f039a1317576c7979a5cb4c3cffc543e3bd656
@@ -13,7 +13,7 @@ ht-degree: 59%
 
 ---
 
-# 預測受眾常見問題集
+# 預測客群常見問題集
 
 關於 [!UICONTROL Predictive Audiences] 的常見問題集。
 
@@ -23,7 +23,7 @@ ht-degree: 59%
 
 [!UICONTROL Predictive Audiences] 和 [!UICONTROL Look-alike modeling] 運用在不同的使用案例。這兩種演算法的主要差異如下：
 
-1. [!UICONTROL Look-alike modeling] 以小型受眾作為輸入，並加以擴充。[!UICONTROL Predictive Audiences] 以大型受眾作為輸入，並將其劃分為由您的角色定義的較小不重複受眾。
+1. [!UICONTROL Look-alike modeling] 以小型客群作為輸入，並加以擴充。[!UICONTROL Predictive Audiences] 以大型客群作為輸入，並將其劃分為由您的角色定義的較小不重複客群。
 1. 每個演算法的基本區段數不同。[!UICONTROL Predictive Audiences] 至少需要兩個基線，而最 [!UICONTROL Look-alike modeling] 多使用一個基線。
 1. [!UICONTROL Predictive Audiences] 執行即時區段評估，但 [!UICONTROL Look-alike modeling] 不執行。
 
@@ -60,11 +60,11 @@ ht-degree: 59%
 1. 選取的角色[!UICONTROL traits] / [!UICONTROL segments]都沒有足夠的使用者設定檔。 建議您選擇您的[!UICONTROL traits]或[!UICONTROL segments]，讓每個角色至少擁有幾百個使用者設定檔。
 1. 所選角色[!UICONTROL traits] / [!UICONTROL segments]的使用者設定檔中沒有足夠的資料（沒有足夠的特徵可分析）。
 1. 目標受眾特徵/區段沒有任何作用中或已上線的使用者。
-1. 過去 30 天內處於作用中狀態或已上線的目標受眾使用者，其使用者設定檔中的資料不足 (沒有足夠的特徵可進行分析)。
+1. 過去 30 天內處於作用中狀態或已上線的目標客群使用者，其使用者輪廓中的資料不足 (沒有足夠的特徵可進行分析)。
 1. 目標對象區段使用不同於您為模型選擇的[!UICONTROL Profile Merge Rule]。
 1. 您為模型選擇的[!UICONTROL Profile Merge Rule]中可能未包含目標對象特徵的資料來源。
 
-為獲得最佳結果，請遵循[角色選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目標受眾選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建議准則。
+為獲得最佳結果，請遵循[人物誌選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-personas)和[目標客群選擇標準](../features/algorithmic-models/predictive-audiences.md#selection-audience)中的建議准則。
 
  
 
@@ -74,14 +74,14 @@ ht-degree: 59%
 
  
 
-**如何變更[!UICONTROL Predictive Audiences] [!UICONTROL segment]的[!UICONTROL Profile Merge Rule]？**
+**如何變更[!UICONTROL Profile Merge Rule] [!UICONTROL Predictive Audiences]的[!UICONTROL segment]？**
 
 選取與先前模型相同的角色和目標對象，以建立新模型。 在建立模型期間，指派其他[!UICONTROL Profile Merge Rule]。
 
 >[!WARNING]
-> 或者，您可以使用[區段產生器](../features/segments/segment-builder.md)以手動方式建立具有現有預測性[!UICONTROL trait]的[!UICONTROL segment]，並指派您選擇的[!UICONTROL Profile Merge Rule]。
+> 或者，您可以使用[區段產生器](../features/segments/segment-builder.md)以手動方式建立具有現有預測性[!UICONTROL segment]的[!UICONTROL trait]，並指派您選擇的[!UICONTROL Profile Merge Rule]。
 > 
-> 但是，我們不建議此作法，因為預測性[!UICONTROL traits]會自動繼承其所屬模型的[!UICONTROL Profile Merge Rule]，且這些模型是從符合模型[!UICONTROL Profile Merge Rule]且具影響力的[!UICONTROL traits]建立的。
+> 但是，我們不建議此作法，因為預測性[!UICONTROL traits]會自動繼承其所屬模型的[!UICONTROL Profile Merge Rule]，且這些模型是從符合模型[!UICONTROL traits]且具影響力的[!UICONTROL Profile Merge Rule]建立的。
 
  
 
@@ -89,13 +89,13 @@ ht-degree: 59%
 
 為您的模型選擇[!UICONTROL Profile Merge Rule]時，請仔細分析您的使用案例。
 
-假設您的目標對象[!UICONTROL segment]使用基於已驗證設定檔+ [!DNL Device Graph]設定檔的[!UICONTROL Profile Merge Rule]，並且您為預測性[!UICONTROL segments]選取相同的[!UICONTROL Profile Merge Rule]。 在此情況下，裝置層級和跨裝置層級[!UICONTROL traits]都將用於訓練模型，以及將使用者置於預測性[!UICONTROL segment]中。
+假設您的目標對象[!UICONTROL segment]使用基於已驗證設定檔+ [!UICONTROL Profile Merge Rule]設定檔的[!DNL Device Graph]，並且您為預測性[!UICONTROL Profile Merge Rule]選取相同的[!UICONTROL segments]。 在此情況下，裝置層級和跨裝置層級[!UICONTROL traits]都將用於訓練模型，以及將使用者置於預測性[!UICONTROL segment]中。
 
 但是，如果您僅根據裝置設定檔選取[!UICONTROL Profile Merge Rule]，則您的跨裝置[!UICONTROL traits]都不會變得有影響力，也不會有助於將使用者置於預測性[!UICONTROL segment]中。 這可能會對模型的精確度和觸及率產生不利的影響。
 
 請仔細分析您的使用案例，並決定您要模型學習哪些[!UICONTROL trait]型別，以及要模型用來分類的資料型別。
 
-**目標受眾中不屬於任何角色特徵/區段的使用者是否不可分類？**
+**目標客群中不屬於任何角色特徵/細分群體的使用者是否不可分類？**
 
 是的，萬一使用者的個人檔案中沒有任何特徵，在這種情況下，使用者的所有角色特徵/區段比對分數將為 0，因此不會分類為任何預測區段。
 
@@ -107,7 +107,7 @@ ht-degree: 59%
 
  
 
-**我是否可檢視哪些受眾分類是依據哪些特徵？**
+**我是否可檢視哪些客群分類是依據哪些特徵？**
 
 是的，您可以在模型報表頁面中查看所有基線的所有具影響力的特徵。請參閱[具影響力的特徵](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits)。
 

@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 目的地產生器 {#destination-builder}
 
-[!UICONTROL Destination Builder]可讓您建立Cookie型或[!DNL URL]目的地。 您無法建立具有[!UICONTROL Destination Builder]的伺服器對伺服器([!DNL S2S])目的地，但您可以管理其區段對應。 請聯絡您的顧問以設定[!DNL S2S]目的地。 [!UICONTROL Destination Builder]位於&#x200B;**[!UICONTROL Audience Data > Destinations]**。
+[!UICONTROL Destination Builder]可讓您建立Cookie型或[!DNL URL]目的地。 您無法建立具有[!DNL S2S]的伺服器對伺服器([!UICONTROL Destination Builder])目的地，但您可以管理其區段對應。 請聯絡您的顧問以設定[!DNL S2S]目的地。 [!UICONTROL Destination Builder]位於&#x200B;**[!UICONTROL Audience Data > Destinations]**。
 
 ## 目的地產生器設定 {#destination-builder-settings}
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 設定檔合併規則的報表量度 {#report-metrics-for-profile-merge-rules}
 
-[!UICONTROL Profile Merge Rule]量度提供驗證您網站之使用者和裝置的相關資料。 當您建立合併規則或從[!UICONTROL Profile Merge Rules]儀表板按一下現有規則時，[!UICONTROL Profile Merge Rule Reports]中的資料和圖形會動態更新。 這些量度可包含來自其他協力廠商裝置圖表來源的裝置圖表。
+[!UICONTROL Profile Merge Rule]量度提供驗證您網站之使用者和裝置的相關資料。 當您建立合併規則或從[!UICONTROL Profile Merge Rule Reports]儀表板按一下現有規則時，[!UICONTROL Profile Merge Rules]中的資料和圖形會動態更新。 這些量度可包含來自其他協力廠商裝置圖表來源的裝置圖表。
 
 ## 合併規則量度 {#merge-rule-metrics}
 
@@ -35,7 +35,7 @@ ht-degree: 0%
    <td colname="col2"> <p>顯示： </p> 
     <ul id="ul_7F7373919A4A49028EF4BF7B28D9F8E9"> 
      <li id="li_FE2F93C496D64ED8928B3E522C9585EA"> <span class="wintitle">使用中的人員</span>：過去60天中驗證您網站的人數。 </li> 
-     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle">跨裝置</span>：在選取的<a href="merge-rule-definitions.md">已驗證設定檔</a>的<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=zh-Hant">資料Source</a>中，針對資料來源存在的存留期，儲存的<a href="merge-rules-start.md#create-data-source">個跨裝置ID</a>總數。 </li> 
+     <li id="li_60CFD26EE68B442683C0ED5FED1A79C8"> <span class="wintitle">跨裝置</span>：在選取的<a href="merge-rules-start.md#create-data-source">已驗證設定檔</a>的<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html">資料Source</a>中，針對資料來源存在的存留期，儲存的<a href="merge-rule-definitions.md">個跨裝置ID</a>總數。 </li> 
      <li id="li_F2F07B6A326C4A18B79A0CF2C47D9677"> <span class="wintitle"> %使用中的人員</span>：將<span class="wintitle">個使用中的人員</span>顯示為%。 </li> 
     </ul> <p> <span class="wintitle">已驗證的活動</span>可讓您依活動、磁碟區和百分比比較資料來源。 它可以協助您尋找擁有大量人員且活躍使用者比例較高的資料來源。 或者，您也可以在比較資料來源與高比例活躍使用者與總對象人數中找到價值。 例如，有時候，總存留期數低而活動數高的資料來源，會比總存留期數高而活動數低的資料來源更有價值。 </p> <p> <p>注意： <span class="wintitle">已驗證的活動</span>量度僅包含<span class="wintitle">設定檔連結</span>資料。 此報表不包含<span class="wintitle">裝置圖表</span>資料。 </p> </p> </td> 
   </tr> 

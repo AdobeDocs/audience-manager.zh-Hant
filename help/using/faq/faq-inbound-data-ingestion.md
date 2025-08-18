@@ -58,10 +58,10 @@ ht-degree: 86%
 
 **我可以先上傳傳入資料檔案 ([!DNL .sync] 或 [!DNL .overwrite] 檔)，再將 [!DNL Audience Manager] 程式碼部署到生產環境嗎？**
 
-是。只要您使用[!UICONTROL cross-device data source]儲存您所上傳的CRM資料，Audience Manager就會一律儲存資料。 事實上，繼Audience Manager於2019年10月推出[!UICONTROL Profile Merge Rules]增強功能（允許僅限離線使用案例）後，您就可以上傳資料和執行動作，完全無須將Audience Manager程式碼部署到生產環境。 請參閱：
+是。只要您使用[!UICONTROL cross-device data source]儲存您所上傳的CRM資料，Audience Manager就會一律儲存資料。 事實上，Audience Manager於2019年10月推出的[!UICONTROL Profile Merge Rules]增強功能允許僅限離線使用的使用案例，自此之後，您無需將Audience Manager程式碼部署至生產環境，即可上傳資料和執行動作。 請參閱：
 
-* [設定檔合併規則增強功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html?lang=zh-Hant)
-* [!UICONTROL People-based Destinations] - [以僅限離線資料為基礎的Personalization](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html?lang=zh-Hant)
+* [設定檔合併規則增強功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
+* [!UICONTROL People-based Destinations] - [以僅限離線資料為基礎的Personalization](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 

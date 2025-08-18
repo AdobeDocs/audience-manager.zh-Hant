@@ -1,5 +1,5 @@
 ---
-description: 您可以選擇將資料檔傳送至Audience Manager時，使用PGP加密來加密資料檔。
+description: 您可以選擇將資料檔案傳送至Audience Manager時，使用PGP加密來加密檔案。
 seo-description: As an option, you can encrypt data files with PGP encryption when sending them to Audience Manager.
 seo-title: File PGP Encryption for Inbound Data Types
 solution: Audience Manager
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 # 傳入資料型別的檔案PGP加密{#file-pgp-encryption-for-inbound-data-types}
 
-您可在將資料檔傳送至Audience Manager時，使用[!DNL PGP]加密來加密資料檔。
+當資料檔傳送至Audience Manager時，您可以使用[!DNL PGP]加密來加密資料檔。
 
 <!-- c_encryption.xml -->
 
 >[!IMPORTANT]
 >
->[!DNL PGP]加密包含檔案壓縮。 傳送[!DNL PGP]個加密的傳入檔案時，請確定您未使用gzip (`.gz`) [壓縮](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)它們。
+>[!DNL PGP]加密包含檔案壓縮。 傳送[!DNL PGP]個加密的傳入檔案時，請確定您未使用gzip ([) ](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)壓縮`.gz`它們。
 >
->[!DNL PGP]加密的傳入檔案（也是[壓縮的](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)）在Audience Manager中無效。
+>在Audience Manager中，[!DNL PGP]同樣為[壓縮](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)的加密傳入檔案無效。
 
 請依照下列步驟，加密傳入的資料檔案。
 

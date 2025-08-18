@@ -1,9 +1,9 @@
 ---
-description: Audience Optimization廣告商可協助您識別在付費媒體行銷活動中Audience Manager區段的潛在效用機會。 這些報表結合記錄層級促銷活動績效資料與Audience Manager區段量度，以提供以區段為中心的最佳化和有效的管道組合資訊。
+description: 廣告商適用的Audience Optimization可協助您在付費媒體行銷活動中，識別Audience Manager區段的潛在效用機會。 這些報表結合記錄層級行銷活動績效資料與Audience Manager區段量度，以提供以區段為中心的最佳化和有效的管道組合資訊。
 seo-description: Audience Optimization for Advertisers can help you identify potential performance opportunities for Audience Manager segments across your paid media campaigns. These reports combine log-level campaign performance data with Audience Manager segment metrics to inform segment-centric optimizations and an effective channel mix.
 seo-title: Audience Optimization for Advertisers
 solution: Audience Manager
-title: 廣告商的Audience Optimization
+title: 廣告商適用的Audience Optimization
 uuid: 852d550e-3c7f-4750-9abc-365c3a6f7883
 feature: Audience Optimization Reports
 exl-id: 13595778-3d3a-4c83-a84f-4bc3af1ee367
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 # 廣告商的[!UICONTROL Audience Optimization]{#audience-optimization-for-advertisers}
 
-廣告商的[!UICONTROL Audience Optimization]可協助您識別在付費媒體行銷活動中Audience Manager區段的潛在效用機會。 這些報表結合記錄層級行銷活動績效資料與Audience Manager[!UICONTROL segment]量度，以提供以區段為中心的最佳化和有效管道組合資訊。
+廣告商的[!UICONTROL Audience Optimization]可協助您在付費媒體行銷活動中識別Audience Manager區段的潛在效用機會。 這些報表結合記錄層級行銷活動績效資料與Audience Manager [!UICONTROL segment]量度，以提供以區段為中心的最佳化和有效管道組合資訊。
 
 ## 資料擷取方法 {#data-ingestion-methods}
 
-您可以透過下列任一方法將資料傳送至[!DNL Audience Manager]以用於這些報表。 有時候，客戶會透過兩種方法傳送資料。 這可協助確保您的報表包含最全面且準確的訪客相關資訊。 若要使用[!UICONTROL Audience Optimization]報表，您的事件呼叫必須包含[中繼資料檔案概述與對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)檔案中列出的&#x200B;*所有*&#x200B;引數。 您可以透過下列方法傳送資料。
+您可以透過下列任一方法將資料傳送至[!DNL Audience Manager]以用於這些報表。 有時候，客戶會透過兩種方法傳送資料。 這可協助確保您的報表包含最全面且準確的訪客相關資訊。 若要使用[!UICONTROL Audience Optimization]報表，您的事件呼叫必須包含&#x200B;*中繼資料檔案概述與對應*&#x200B;檔案中列出的[所有](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)引數。 您可以透過下列方法傳送資料。
 
 * 畫素呼叫：若要將必要的中繼資料引數傳遞至[!DNL Audience Manager]，請參閱[透過畫素呼叫擷取行銷活動的點按資料](../../../integration/media-data-integration/click-data-pixels.md)和[透過畫素呼叫擷取行銷活動的曝光資料](../../../integration/media-data-integration/impression-data-pixels.md)。
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 您可以檢視的報告型別取決於指派給您的[!UICONTROL RBAC]群組。 如需詳細資訊，請參閱[管理](../../../features/administration/administration-overview.md)和[建立群組](../../../features/administration/administration-overview.md#create-group)。
 
-[!UICONTROL RBAC]群組必須設定一些資料來源，才能檢視[!UICONTROL Audience Optimization]報告。 您的[!DNL Audience Manager]顧問將為您設定這些[!UICONTROL data sources]。 每個[!UICONTROL RBAC]使用者群組中的[!UICONTROL data sources]越多，這些群組成員有權存取的資料就越多。 您的顧問至少會設定下列[!UICONTROL data sources]中的一個：
+[!UICONTROL RBAC]群組必須設定一些資料來源，才能檢視[!UICONTROL Audience Optimization]報告。 您的[!DNL Audience Manager]顧問將為您設定這些[!UICONTROL data sources]。 每個[!UICONTROL data sources]使用者群組中的[!UICONTROL RBAC]越多，這些群組成員有權存取的資料就越多。 您的顧問至少會設定下列[!UICONTROL data sources]中的一個：
 
 * 廣告商[!UICONTROL data source]
 * 品牌[!UICONTROL data source]

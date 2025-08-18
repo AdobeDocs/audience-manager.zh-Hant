@@ -26,7 +26,7 @@ ht-degree: 0%
 1. **[!UICONTROL Add New]**：使用此選項來建立新的[!UICONTROL rule-based]、[!UICONTROL algorithmic]或[!UICONTROL onboarded traits]。
 2. **[!UICONTROL Edit]**：使用此選項來變更目前[!UICONTROL trait]的組態。
 3. **[!UICONTROL Delete]**：使用此選項從您的Audience Manager帳戶移除目前的[!UICONTROL trait]。
-4. **[!UICONTROL Marketplace Recommendations]**：使用此選項可尋找與您檢視的類似[!UICONTROL traits]，來自您未訂閱的[!UICONTROL Audience Marketplace]資料費用。 請參閱資料購買者的[Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，瞭解如何導覽[!UICONTROL Marketplace]並尋找類似特徵。
+4. **[!UICONTROL Marketplace Recommendations]**：使用此選項可尋找與您檢視的類似[!UICONTROL traits]，來自您未訂閱的[!UICONTROL Audience Marketplace]資料費用。 請參閱[資料購買者適用的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，瞭解如何導覽[!UICONTROL Marketplace]並尋找類似特徵。
 
 ![基本特徵資訊](assets/basic-trait-information.png)
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 針對[!UICONTROL rule-based traits]，[!UICONTROL trait]資格會即時進行，因為使用者在其瀏覽器中符合[!UICONTROL trait]的資格。
 
-針對[!UICONTROL onboarded traits]，[!UICONTROL trait]資格會在處理傳入檔案之後發生，亦即傳入檔案是[饋送至Audience Manager](../../faq/faq-inbound-data-ingestion.md)，且此時會發生[!UICONTROL trait]資格。
+針對[!UICONTROL onboarded traits]，[!UICONTROL trait]資格會在處理傳入檔案之後發生，亦即傳入檔案是[饋送至Audience Manager](../../faq/faq-inbound-data-ingestion.md)，且這時[!UICONTROL trait]資格會發生。
 
 [!UICONTROL Trait Graph]會顯示下列資訊：
 
@@ -55,13 +55,13 @@ ht-degree: 0%
 * **[!UICONTROL Unique Trait Realizations]**：在指定時間範圍內將此[!UICONTROL trait]新增到其設定檔的不重複使用者計數。
 * **[!UICONTROL Total Trait Population]**：目前符合此[!UICONTROL trait]資格的不重複使用者數目。
 
-* **[!UICONTROL Identity Type Breakdown]**：前三個專案以遞減順序顯示符合[!UICONTROL trait]資格且母體計數最高的前三個[!UICONTROL cross-device data sources]。 第四個專案顯示來自[!UICONTROL cross-device data sources]且非前三個專案之所有其他[!DNL DPUUIDs] ([!DNL CRM IDs])符合[!UICONTROL trait]資格的總和。 只有在頁面右上方的[!UICONTROL Show Results By]下拉式功能表中選取[!UICONTROL Cross-device ID]時，此報表才會出現。 預設下拉式選項為[!UICONTROL Device ID]，其中不會顯示此報表。
+* **[!UICONTROL Identity Type Breakdown]**：前三個專案以遞減順序顯示符合[!UICONTROL cross-device data sources]資格且母體計數最高的前三個[!UICONTROL trait]。 第四個專案顯示來自[!DNL DPUUIDs]且非前三個專案之所有其他[!DNL CRM IDs] ([!UICONTROL trait])符合[!UICONTROL cross-device data sources]資格的總和。 只有在頁面右上方的[!UICONTROL Cross-device ID]下拉式功能表中選取[!UICONTROL Show Results By]時，此報表才會出現。 預設下拉式選項為[!UICONTROL Device ID]，其中不會顯示此報表。
 
   ![特徵圖](assets/trait-identity.png)
 
   >[!NOTE]
   >
-  >若您有[!UICONTROL cross-device]個ID符合[!UICONTROL trait]的資格，Audience Manager僅會顯示[!UICONTROL Identity Type Breakdown]報告。
+  >只有當您有[!UICONTROL Identity Type Breakdown]個ID符合[!UICONTROL cross-device]的資格條件時，Audience Manager才會顯示[!UICONTROL trait]報告。
 
   >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
@@ -83,6 +83,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL By User]欄中的[!UICONTROL Not Available]表示該使用者的帳戶已刪除。
+>[!UICONTROL Not Available]欄中的[!UICONTROL By User]表示該使用者的帳戶已刪除。
 
 ![](assets/traitHistory.png)

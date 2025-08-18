@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 使用案例 {#use-cases}
 
-透過&#x200B;**[!UICONTROL Ad Unit Overlap]**&#x200B;報表，您可以深入瞭解對象在您的Web屬性中重疊的位置。 報表會考量您的100個熱門相關屬性，並顯示它們之間的重疊。
+透過&#x200B;**[!UICONTROL Ad Unit Overlap]**&#x200B;報表，您可以取得insight，讓您的對象在您的Web屬性中重疊。 報表會考量您的100個熱門相關屬性，並顯示它們之間的重疊。
 
 ## 使用廣告單位重疊報表 {#using-the-report}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Ad Unit IDs]的描述性中繼資料，如[將Google Ad Manager （先前稱為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3中所述。 透過這樣做，您可以確保報告將Web屬性詳細資料顯示為[!UICONTROL Ad Unit]，而不是[!UICONTROL Ad Unit ID]。
+>啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Ad Unit IDs]的描述性中繼資料，如[將Google Ad Manager （前身為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3中所述。 透過這樣做，您可以確保報告將Web屬性詳細資料顯示為[!UICONTROL Ad Unit]，而不是[!UICONTROL Ad Unit ID]。
 
 ## 解譯結果 {#interpreting-results}
 

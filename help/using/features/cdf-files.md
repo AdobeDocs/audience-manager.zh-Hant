@@ -27,7 +27,7 @@ ht-degree: 2%
 >
 >使用CDF檔案時，請注意下列限制：
 >
->* 設定CDF檔案傳送之前，請確定您擁有來自協力廠商資料提供者的適當許可權，可匯出協力廠商特徵。 Audience Manager目前不支援使用者介面中的功能，無法向協力廠商資料提供者要求CDF檔案傳遞匯出許可權，因此請單獨聯絡他們。
+>* 設定CDF檔案傳送之前，請確定您擁有來自協力廠商資料提供者的適當許可權，可匯出協力廠商特徵。 Audience Manager目前不支援使用者介面中的功能，無法向協力廠商資料提供者要求CDF檔案傳遞匯出許可權，因此請單獨與他們聯絡。
 >* 您不應該使用[!UICONTROL CDF]檔案當做Proxy來監視頁面流量、調解報告差異或計費等。
 
 ## 快速入門 {#getting-started}
@@ -76,7 +76,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><code> Device</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>這是<span class="wintitle">不重複使用者ID</span> (UUID)，這是您網站訪客的38位數裝置識別碼。 另請參閱Audience Manager</a>中的<a href="../reference/ids-in-aam.md">識別碼索引。 </p> </td> 
+   <td colname="col3"> <p>這是<span class="wintitle">不重複使用者ID</span> (UUID)，這是您網站訪客的38位數裝置識別碼。 另請參閱Audience Manager<a href="../reference/ids-in-aam.md">中的</a>識別碼索引。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Container ID</code> </p> </td> 
@@ -96,7 +96,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><code> Request Parameters</code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>擷取所有引數（變數、ID、機碼值組、裝置廣告ID等）的字串。 已傳入事件呼叫。 </p> <p>簡短範例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
+   <td colname="col3"> <p>字串，可擷取事件呼叫時傳入的所有引數（變數、ID、機碼值組、裝置廣告ID等）。 </p> <p>簡短範例： </p> <p> <code> d_rtbd:json,c_contextData.a.CarrierName:mobile,c_contextData.a.adid:92D56353-49C5-431E-B474-FC528D585810,c_contextData.a,RunMode:Application,c_contextData.a.DaysSinceLastUpgrade:61,d_cid_ic:xid%01EACB6E40-AC65-4012-9FE9-ABD59965E9C4%011,c_contextData.a.PrevSessionLength:583</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> Referer Data Type</code> </p> </td> 
@@ -111,7 +111,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><code> MCDevice </code> </p> </td> 
    <td colname="col2"> <p>字串 </p> </td> 
-   <td colname="col3"> <p>指派給網站訪客的<span class="keyword">Experience Cloud</span> ID (MID)。 另請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與AdobeExperience Platform識別服務</a>。 </p> </td> 
+   <td colname="col3"> <p>指派給網站訪客的<span class="keyword"> Experience Cloud</span> ID (MID)。 另請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Adobe Experience Platform Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> All Segments</code> </p> </td> 
@@ -153,7 +153,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p>欄位順序 </p> </td> 
-   <td colname="col2"> <p> <p>重要： <span class="keyword">Audience Manager</span>保留在未來發行版本中新增欄位至CDF檔案結尾的權利。 這表示檔案剖析系統的技術設計不應假設欄數固定（但現有欄可能會假設順序固定）。</p> </p> <p>CDF檔案中的資料會以下列順序顯示。/N可以出現在這些欄位中，代表空值。</p> <p> 
+   <td colname="col2"> <p> <p>重要： <span class="keyword"> Audience Manager</span>保留在未來發行版本中新增欄位至CDF檔案結尾的權利。 這表示檔案剖析系統的技術設計不應假設欄數固定（但現有欄可能會假設順序固定）。</p> </p> <p>CDF檔案中的資料會以下列順序顯示。/N可以出現在這些欄位中，代表空值。</p> <p> 
      <ol id="ol_1FDF4A7F089448ED8A724378C23009C8"> 
       <li id="li_CB97D90B54EB4F95861583D4A5F660C7">事件時間 </li> 
       <li id="li_C44E8CCB1A964B7A941FD772FB8A7608">裝置 </li> 
@@ -163,7 +163,7 @@ ht-degree: 2%
       <li id="li_FE38DA4969EE4E19B39124E77E2EA5F9">要求參數 </li> 
       <li id="li_9AC25DA883214FBC902D7CE9DACFAE28">Referer </li> 
       <li id="li_BA05F1C33B5B4625B450425FF1911B30">IP 位址 </li> 
-      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud裝置ID （或MID）。 另請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與Adobe Experience Platform Identity服務</a> </li> 
+      <li id="li_08E632FB135F42B5830D5CBFE6EE6BE8">Experience Cloud裝置ID （或MID）。 另請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Adobe Experience Platform Identity服務</a> </li> 
       <li id="li_7A05AF4790A1425A90D019681DF4A595">所有區段 </li> 
       <li id="li_1B5A6F076A354BA0A931CB260E6D2675">所有特徵 </li> 
      </ol> </p> <p>如需欄位說明，請參閱<a href="#cdf-defined">已定義的客戶資料摘要內容</a>。 </p> </td> 
@@ -254,7 +254,7 @@ s3://aam-cdf/dataCompany/day=2017-09-14/hour=17/AAM_CDF_1234_0_0_0.gz
 
 ## [!UICONTROL Customer Data Feed]個檔案處理通知 {#cdf-file-processing-notifications}
 
-[!DNL Audience Manager]會將`.info`檔案寫入您的[!DNL S3]目錄，以便在您的[!UICONTROL Customer Data File] ([!UICONTROL CDF])準備下載時通知您。 `.info`檔案也包含有關[!UICONTROL CDF]檔案內容的[!DNL JSON]格式化中繼資料。 請參閱本節，瞭解此通知檔案使用的語法和欄位。
+[!DNL Audience Manager]會將`.info`檔案寫入您的[!DNL S3]目錄，以便在您的[!UICONTROL Customer Data File] ([!UICONTROL CDF])準備下載時通知您。 `.info`檔案也包含有關[!DNL JSON]檔案內容的[!UICONTROL CDF]格式化中繼資料。 請參閱本節，瞭解此通知檔案使用的語法和欄位。
 
 ## 範例資訊檔案 {#sample-info-file}
 

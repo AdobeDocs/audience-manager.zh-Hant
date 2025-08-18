@@ -26,7 +26,7 @@ Audience Manager會根據這些規格，將批次資料傳送給協力廠商內�
 
 * [用於記錄檔傳輸的傳輸控制檔案](/help/using/integration/receiving-audience-data/batch-outbound-transfers/transfer-control-files.md)
 
-  傳輸控制(.info)檔案提供有關檔案傳輸的中繼資料資訊，以便合作夥伴能夠驗證Audience Manager是否正確處理檔案傳輸。
+  傳輸控制(.info)檔案會提供有關檔案傳輸的中繼資料資訊，讓合作夥伴能夠驗證Audience Manager是否正確處理檔案傳輸。
 
 * [輸出範本巨集](/help/using/integration/receiving-audience-data/batch-outbound-transfers/outbound-template-macros.md)
 

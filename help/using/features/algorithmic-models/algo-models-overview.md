@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 什麼是演演算法建模{#what-algo-modeling}
 
-Audience Manager演演算法模型是指使用資料科學來擴展您現有的對象，或將其分類為角色。
+Audience Manager中的演演算法模型是指使用資料科學來擴展您現有的對象，或將其分類為角色。
 
 這是透過兩種型別的演演算法完成的： [!UICONTROL Look-Alike Modeling]和[!UICONTROL Predictive Audiences]。
 
@@ -32,7 +32,7 @@ Audience Manager演演算法模型是指使用資料科學來擴展您現有的�
 
 若要深入瞭解[!UICONTROL Look-Alike Modeling]，請參閱[瞭解相似建模](understanding-models.md)。
 
-## 預測受眾{#predictive-audiences}
+## 預測客群{#predictive-audiences}
 
 [!UICONTROL Predictive Audiences]可協助您使用進階的資料科學技術，將未知的受眾即時分類為不重複角色。
 

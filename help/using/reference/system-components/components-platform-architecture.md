@@ -1,5 +1,5 @@
 ---
-description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料流入、流出及Audience Manager元件之間的流向。
+description: 此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料如何流入、流出及在Audience Manager元件之間流動。
 seo-description: This map contains the major Audience Manager systems. It visually represents how data flows into, out of, and among Audience Manager components.
 seo-title: Platform Architecture  Data Flow Map
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 平台架構：資料流量圖{#platform-architecture-data-flow-map}
 
-此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料流入、流出及Audience Manager元件之間的流向。
+此地圖包含主要的Audience Manager系統。 它以視覺化方式呈現資料如何流入、流出及在Audience Manager元件之間流動。
 
 ## 如何讀取此地圖 {#compmap}
 

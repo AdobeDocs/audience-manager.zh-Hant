@@ -1,5 +1,5 @@
 ---
-description: 傳輸控制(.info)檔案提供有關檔案傳輸的中繼資料資訊，以便合作夥伴能夠驗證Audience Manager是否正確處理檔案傳輸。
+description: 傳輸控制(.info)檔案會提供有關檔案傳輸的中繼資料資訊，讓合作夥伴能夠驗證Audience Manager是否正確處理檔案傳輸。
 seo-description: Transfer-control (.info) files provide metadata information about file transfers so that partners can verify that Audience Manager handled file transfers correctly.
 seo-title: Transfer-Control Files for Log File Transfers
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 用於記錄檔傳輸的傳輸控制檔案 {#transfer-control-files-for-log-file-transfers}
 
-傳輸控制([!DNL .info])檔案提供有關檔案傳輸的中繼資料資訊，讓合作夥伴可以驗證Audience Manager是否正確處理檔案傳輸。
+傳輸控制([!DNL .info])檔案提供檔案傳輸的中繼資料資訊，讓合作夥伴可以確認Audience Manager已正確處理檔案傳輸。
 
 [!DNL Audience Manager]會傳送傳輸控制檔案給合作夥伴，每次進行檔案傳輸。 由於[!DNL FTP]發行者的多執行緒性質，傳輸控制檔案可能會在實際檔案完成傳輸之前傳送。
 

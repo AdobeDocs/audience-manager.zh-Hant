@@ -20,11 +20,11 @@ ht-degree: 2%
 
 ## 可用的裝置選項 {#device-options}
 
-提醒您，當您建立或編輯[!UICONTROL Profile Merge Rule]時，[!UICONTROL Device Options]可在[!UICONTROL Profile Merge Rules Setup]區段中取得。
+提醒您，當您建立或編輯[!UICONTROL Device Options]時，[!UICONTROL Profile Merge Rules Setup]可在[!UICONTROL Profile Merge Rule]區段中取得。
 
 ## 目前的裝置設定檔選項和裝置取消細分 {#current-device-profile-options}
 
-**[!UICONTROL Device Profile]**&#x200B;是[!UICONTROL Profile Merge Rule]的預設裝置設定檔選項。 當您的[!UICONTROL Profile Merge Rule]使用&#x200B;**[!UICONTROL Device Profile]**&#x200B;選項時，[!DNL Audience Manager]可以從區段中移除裝置設定檔。 在這些條件下，取消細分會在下列情況發生：
+**[!UICONTROL Device Profile]**&#x200B;是[!UICONTROL Profile Merge Rule]的預設裝置設定檔選項。 當您的[!DNL Audience Manager]使用[!UICONTROL Profile Merge Rule]選項時，**[!UICONTROL Device Profile]**&#x200B;可以從區段中移除裝置設定檔。 在這些條件下，取消細分會在下列情況發生：
 
 * 裝置設定檔已停用120天。 每週資料清理程式會從您的區段中移除非使用中的裝置設定檔。
 * 裝置不再符合區段的資格，因為裝置設定檔的更新或變更會取消其資格。 當區段資格條件變更，或您將[!DNL AND NOT]運運算元套用至區段規則，或指定使用小於/等於設定的[造訪間隔和頻率](../segments/recency-and-frequency.md)條件時，就會發生這種情況。 使用案例在[即時跨裝置隱藏](instant-cross-device-suppression.md)檔案中有所說明。
@@ -33,18 +33,18 @@ ht-degree: 2%
 
 ## 沒有裝置選項和裝置取消細分 {#no-device-option}
 
-當您的[!UICONTROL Profile Merge Rule]使用&#x200B;**[!UICONTROL Current Authenticated Profiles]** + **[!UICONTROL No Device Profile]**&#x200B;選項時，[!DNL Audience Manager]可以從區段中移除跨裝置識別碼。 在這些情況下，當跨裝置ID不再符合區段資格時，就會發生取消分段，因為跨裝置設定檔的更新或變更會取消其資格。 當區段資格條件變更，或您將[!UICONTROL AND NOT]運運算元套用至區段規則，或指定使用小於/等於設定的[造訪間隔和頻率](../segments/recency-and-frequency.md)條件時，就會發生這種情況。 使用案例在[即時跨裝置隱藏](instant-cross-device-suppression.md)檔案中有所說明。
+當您的[!DNL Audience Manager]使用[!UICONTROL Profile Merge Rule] + **[!UICONTROL Current Authenticated Profiles]**&#x200B;選項時，**[!UICONTROL No Device Profile]**&#x200B;可以從區段中移除跨裝置識別碼。 在這些情況下，當跨裝置ID不再符合區段資格時，就會發生取消分段，因為跨裝置設定檔的更新或變更會取消其資格。 當區段資格條件變更，或您將[!UICONTROL AND NOT]運運算元套用至區段規則，或指定使用小於/等於設定的[造訪間隔和頻率](../segments/recency-and-frequency.md)條件時，就會發生這種情況。 使用案例在[即時跨裝置隱藏](instant-cross-device-suppression.md)檔案中有所說明。
 
 ![](assets/current-no-device.png)
 
 ## 裝置圖表選項和裝置取消細分 {#device-graph-options-unsegmentation}
 
-當您的[!UICONTROL Profile Merge Rule]使用裝置圖表選項時，[!DNL Audience Manager]可以從區段中移除多個裝置設定檔。 當裝置圖表的合併設定檔不再符合區段資格時，就會發生取消分段，因為更新或變更此合併設定檔會使該合併設定檔不再符合區段的資格。 當區段資格條件變更，或您將[!UICONTROL AND NOT]運運算元套用至區段規則，或指定使用小於/等於設定的[造訪間隔和頻率](../segments/recency-and-frequency.md)條件時，就會發生這種情況。 使用案例在[即時跨裝置隱藏](instant-cross-device-suppression.md)檔案中有所說明。
+當您的[!DNL Audience Manager]使用裝置圖表選項時，[!UICONTROL Profile Merge Rule]可以從區段中移除多個裝置設定檔。 當裝置圖表的合併設定檔不再符合區段資格時，就會發生取消分段，因為更新或變更此合併設定檔會使該合併設定檔不再符合區段的資格。 當區段資格條件變更，或您將[!UICONTROL AND NOT]運運算元套用至區段規則，或指定使用小於/等於設定的[造訪間隔和頻率](../segments/recency-and-frequency.md)條件時，就會發生這種情況。 使用案例在[即時跨裝置隱藏](instant-cross-device-suppression.md)檔案中有所說明。
 
 >[!NOTE]
 >
 >**100個區段評估與取消資格的裝置限制**。
->透過使用裝置圖表的設定檔合併規則來評估區段時，Audience Manager可合併最多100部裝置。 Audience Manager會透過[已驗證的設定檔](../../reference/visitor-authentication-states.md) （跨裝置識別碼），評估目前裝置和連結至目前裝置的最多99部裝置。 如果系統發出取消細分訊號，則目前的裝置和其他裝置將會從目的地的區段中移除。
+>>透過使用裝置圖表的設定檔合併規則來評估區段時，Audience Manager可合併最多100部裝置。 Audience Manager會透過[已驗證的設定檔](../../reference/visitor-authentication-states.md) （跨裝置ID）評估目前裝置，以及最多99部連結至目前裝置的裝置。 如果系統發出取消細分訊號，則目前的裝置和其他裝置將會從目的地的區段中移除。
 
 ![](assets/last-device-graph.png)
 

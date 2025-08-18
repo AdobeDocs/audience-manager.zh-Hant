@@ -33,10 +33,9 @@ ht-degree: 2%
    * **[!UICONTROL This destination may be used for on-site ad targeting]**
    * **[!UICONTROL This destination may be used for off-site ad targeting]**
    * **[!UICONTROL This destination may be used for on-site ad personalization]**
-
    >[!IMPORTANT]
    >
-   >除非您在資料來源上設定符合匯出控制項[&#128279;](../../features/data-export-controls.md)的，否則匯出限制將無法運作。
+   >除非您在資料來源上設定符合匯出控制項[的](../../features/data-export-controls.md)，否則匯出限制將無法運作。
 1. 按一下 **[!UICONTROL Save]**。
 
 >[!MORELIKETHIS]

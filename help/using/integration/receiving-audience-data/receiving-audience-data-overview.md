@@ -1,5 +1,5 @@
 ---
-description: 從Audience Manager接收對象資料。
+description: 接收來自Audience Manager的對象資料。
 seo-description: Receive audience data from Adobe Audience Manager (AAM).
 seo-title: Receiving Audience Data in Adobe Audience Manager (AAM)
 title: 接收受眾資料
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 接收受眾資料
 
-從Audience Manager接收對象資料。
+接收來自Audience Manager的對象資料。
 
 * [傳出資料傳輸的識別碼同步](id-sync-outbound.md)
 

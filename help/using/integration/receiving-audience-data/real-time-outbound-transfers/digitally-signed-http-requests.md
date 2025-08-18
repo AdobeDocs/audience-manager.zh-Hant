@@ -1,5 +1,5 @@
 ---
-description: Audience Manager需要對HTTP(S)伺服器對伺服器要求進行數位簽署以確認有效性。 本檔案說明如何使用私密金鑰簽署HTTP請求。
+description: Audience Manager需要以數位簽署方式確認HTTP(S)伺服器對伺服器要求是否有效。 本檔案說明如何使用私密金鑰簽署HTTP請求。
 seo-description: Audience Manager requires the HTTP(S) server-to-server requests to be digitally signed for validity. This document describes how you can sign HTTP(S) requests with private keys.
 seo-title: Digitally Signed HTTP(S) Requests
 solution: Audience Manager
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 # 數位簽署的`HTTP(S)`個要求 {#digitally-signed-http-requests}
 
-Audience Manager需要數位簽署`HTTP(S)`伺服器對伺服器要求才能有效。 本檔案說明如何使用私密金鑰簽署`HTTP(S)`請求。
+Audience Manager需要以數位簽署這`HTTP(S)`個伺服器對伺服器要求才有效。 本檔案說明如何使用私密金鑰簽署`HTTP(S)`請求。
 
 ## 概述 {#overview}
 
 <!-- digitally_signed_http_requests.xml -->
 
-我們可以使用您提供並與[!DNL Audience Manager]共用的私密金鑰，以數位方式簽署在[IRIS](../../../reference/system-components/components-data-action.md#iris)與您的HTTP(S)伺服器之間傳送的`HTTP(S)`個要求。 這可確保：
+我們可以使用您提供並與[!DNL Audience Manager]共用的私密金鑰，以數位方式簽署在`HTTP(S)`IRIS[與您的HTTP(S)伺服器之間傳送的](../../../reference/system-components/components-data-action.md#iris)個要求。 這可確保：
 
 * **認證**：只有擁有私密金鑰([!UICONTROL IRIS])的寄件者才能傳送有效的`HTTP(S)`郵件給合作夥伴。
 * **訊息完整性**：使用此方法，即使在`HTTP`上，您也會受到保護，不會受到中間人攻擊的訊息失真。

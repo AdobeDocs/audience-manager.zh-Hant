@@ -69,13 +69,13 @@ c_compact.xml
 
 1. **新區段取消資格**：當裝置不再符合區段的資格時，[!UICONTROL IRIS]會將與該裝置相關聯的所有區段資格和取消資格，傳送至對應至這些區段的所有目的地。
 
-1. **目的地對應更新**：當目的地對應更新時，[!UICONTROL IRIS]會將與裝置相關聯的所有區段傳送至對應至這些區段的所有目的地，下次當Audience Manager看到裝置時。
+1. **目的地對應更新**：當目的地對應更新時，[!UICONTROL IRIS]會將與裝置相關聯的所有區段傳送至對應至這些區段的所有目的地，下次在Audience Manager看到裝置時。
 
-1. **裝置圖表更新**：當從用來評估區段的裝置圖表新增或移除任何裝置識別碼時，[!UICONTROL IRIS]會將與該裝置相關聯的所有區段傳送至對應至這些區段的所有目的地，下次當Audience Manager看到該裝置時。
+1. **裝置圖表更新**：當從用來評估區段的裝置圖表新增或移除任何裝置ID時，[!UICONTROL IRIS]會傳送與該裝置相關聯的所有區段到對應至這些區段的所有目的地，下次當Audience Manager看到該裝置時。
 
 >[!IMPORTANT]
 >
->如果Audience Manager連續3天未偵測到上述任何更新，[!UICONTROL IRIS]會將與裝置相關聯的所有區段傳送至對應至這些區段的所有目的地，Audience Manager下次檢視裝置時。
+>如果Audience Manager連續3天未偵測到上述任何更新，[!UICONTROL IRIS]會將與裝置相關聯的所有區段，傳送至對應至這些區段的所有目的地，Audience Manager下次檢視裝置時。
 
 **範例資料檔**
 

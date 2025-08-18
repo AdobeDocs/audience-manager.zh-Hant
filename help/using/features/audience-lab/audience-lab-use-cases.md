@@ -24,16 +24,16 @@ ht-degree: 0%
 
 <!-- audience-lab-compare-models.xml -->
 
-在此使用案例中，您會比較不同的模型。 您可以使用透過內部資料倉儲建立的模型，並在[!DNL Audience Manager]中將其匯入為[已上線特徵](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)，或者您可以使用[!DNL Audience Manager]中的[演演算法模型](../../features/algorithmic-models/understanding-models.md)功能。
+在此使用案例中，您會比較不同的模型。 您可以使用透過內部資料倉儲建立的模型，並在[!DNL Audience Manager]中將其匯入為[已上線特徵](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)，或者您可以使用[中的](../../features/algorithmic-models/understanding-models.md)演演算法模型[!DNL Audience Manager]功能。
 
 1. 在[模型產生器](../../features/algorithmic-models/create-model.md)中或透過外部平台建立兩個模型。
 1. 從演演算法模型建立[演演算法特徵](../../features/traits/create-algorithmic-traits.md)，或將您自己的模型匯入為已登入的特徵。
 1. 建立互斥區段，讓兩個模型中的使用者不會重疊：
 
    * 建立&#x200B;*模型1區段*&#x200B;和&#x200B;*模型2區段*。
-   * 讓&#x200B;*模型1區段*&#x200B;的區段規則成為&#x200B;*模型2區段*&#x200B;的模型1特徵[!DNL AND NOT]模型2特徵，反之亦然。
+   * 讓&#x200B;*模型1區段*&#x200B;的區段規則成為[!DNL AND NOT]模型2區段&#x200B;*的模型1特徵*&#x200B;模型2特徵，反之亦然。
 
-1. [在[!UICONTROL Audience Lab]中建立兩個區段測試群組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)，一個以&#x200B;*模型1區段*&#x200B;作為基準，另一個以&#x200B;*模型2區段*&#x200B;作為基準。
+1. [在](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)中建立兩個區段測試群組[!UICONTROL Audience Lab]，一個以&#x200B;*模型1區段*&#x200B;作為基準，另一個以&#x200B;*模型2區段*&#x200B;作為基準。
 
    * 讓兩個測試群組的變數保持相同：相同的目的地、創意和轉換特徵。
    * 確定測試區段具有相似的使用者人數（例如160萬和180萬正確，160萬和1600萬不正確）。

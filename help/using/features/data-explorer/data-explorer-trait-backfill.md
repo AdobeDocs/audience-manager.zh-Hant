@@ -19,9 +19,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!UICONTROL Data Explorer Trait Backfill]是進階功能，可透過解除鎖定其他使用案例來增強Audience Manager體驗。 回填需要額外的處理能力，而且所有Audience Manager客戶都可使用回填，但需支付額外費用。 如需詳細資訊，請聯絡您的Adobe銷售代表。
+>[!UICONTROL Data Explorer Trait Backfill]是進階功能，可藉由解鎖其他使用案例來增強Audience Manager體驗。 回填需要額外的處理能力，而且所有Audience Manager客戶都可以透過累加成本取得回填。 如需詳細資訊，請聯絡您的Adobe銷售代表。
 
-從未使用的訊號建立特徵時，您可以選擇在特定時段內回填特徵實現。 [!DNL Audience Manager]會擷取符合新特徵資格受眾的歷史資料，並將其儲存在對應的設定檔中。 您可以在&#x200B;**[特徵產生器](../../features/traits/about-trait-builder.md)**&#x200B;的[!UICONTROL Trait Expression]區段中看到&#x200B;**[!UICONTROL Backfill Options]**。
+從未使用的訊號建立特徵時，您可以選擇在特定時段內回填特徵實現。 [!DNL Audience Manager]會擷取符合新特徵資格受眾的歷史資料，並將其儲存在對應的設定檔中。 您可以在&#x200B;**[!UICONTROL Backfill Options]**&#x200B;特徵產生器[!UICONTROL Trait Expression]的&#x200B;**[區段中看到](../../features/traits/about-trait-builder.md)**。
 
 >[!NOTE]
 >
@@ -31,11 +31,11 @@ ht-degree: 0%
 
 1. 移至[!UICONTROL Audience Data > Signals > Search]並執行訊號搜尋，或使用[訊號控制面板](../../features/data-explorer/data-explorer-signals-dashboard.md)識別要用於新特徵的訊號。
 1. 根據所需的訊號建立新特徵。
-1. 使用&#x200B;**[!UICONTROL Trait Expression]**&#x200B;區段中的&#x200B;**[!UICONTROL Backfill Options]**&#x200B;來選取您要回填特徵實現的時間間隔。 預先定義的回填間隔為1、7、14和30天。 您也可以選擇最長30天的自訂日期範圍。
+1. 使用&#x200B;**[!UICONTROL Backfill Options]**&#x200B;區段中的&#x200B;**[!UICONTROL Trait Expression]**&#x200B;來選取您要回填特徵實現的時間間隔。 預先定義的回填間隔為1、7、14和30天。 您也可以選擇最長30天的自訂日期範圍。
 
    ![特徵回填](assets/signals-trait-backfill.png)
 
-1. （選用）按一下「**[!UICONTROL Estimated Trait Realizations]**」區段中的「**[!UICONTROL Estimate Realizations]**」，以檢視過去7天回填特徵的預估[!UICONTROL Unique Trait Realizations]和[!UICONTROL Total Trait Population]值。
+1. （選用）按一下「**[!UICONTROL Estimate Realizations]**」區段中的「**[!UICONTROL Estimated Trait Realizations]**」，以檢視過去7天回填特徵的預估[!UICONTROL Unique Trait Realizations]和[!UICONTROL Total Trait Population]值。
 
    ![預估 — 特徵實現](assets/estimate-trait-realizations.png)
 

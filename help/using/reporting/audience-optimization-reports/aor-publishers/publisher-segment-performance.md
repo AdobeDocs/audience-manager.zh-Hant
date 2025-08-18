@@ -43,7 +43,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Line Item IDs]的描述性中繼資料，如[將Google Ad Manager （先前稱為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3中所述。 透過這樣做，您可以確保報告將Web屬性詳細資料顯示為[!UICONTROL Line Item]，而不是[!UICONTROL Line Item ID]。
+>啟用[!UICONTROL Audience Optimization for Publishers]時，您必須包含[!UICONTROL Line Item IDs]的描述性中繼資料，如[將Google Ad Manager （前身為DFP）資料檔案匯入Audience Manager](../../../reporting/audience-optimization-reports/aor-publishers/import-dfp.md)的步驟3中所述。 透過這樣做，您可以確保報告將Web屬性詳細資料顯示為[!UICONTROL Line Item]，而不是[!UICONTROL Line Item ID]。
 
 ## 解譯結果 {#interpreting-results}
 
@@ -85,7 +85,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p>即時區段人口數 </p> </td> 
-   <td colname="col2"> <p>指定時間範圍內即時檢視的實際不重複訪客數量，以及在<span class="keyword">Audience Manager</span>看到符合區段資格的人數。 </p> </td> 
+   <td colname="col2"> <p>指定時間範圍內即時檢視的實際不重複訪客數量，以及在<span class="keyword"> Audience Manager</span>看到符合區段資格的人數。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

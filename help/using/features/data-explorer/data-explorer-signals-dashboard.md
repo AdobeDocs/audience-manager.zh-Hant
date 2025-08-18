@@ -1,5 +1,5 @@
 ---
-description: 概述Audience Manager在過去7天收到的未使用訊號，並識別潛在的新特徵。 未使用的訊號會從您的線上屬性觸及Audience Manager，但不會用於任何現有特徵。 若要檢視訊號控制面板，請前往對象資料>訊號。 訊號儀表板會根據您最活躍且未使用的訊號，顯示可操作的深入分析。
+description: 概述Audience Manager在過去7天收到的未使用訊號，並識別潛在的新特徵。 未使用的訊號會從您的線上屬性連線Audience Manager，但不會用於任何現有特徵。 若要檢視訊號控制面板，請前往對象資料>訊號。 訊號儀表板會根據您最活躍且未使用的訊號，顯示可操作的深入分析。
 seo-description: Get an overview of the unused signals received by Audience Manager in the past 7 days and identify potential new traits. Unused signals reach Audience Manager from your online properties, but are not used in any of your existing traits. To view the Signals Dashboard, go to Audience Data > Signals. The Signals Dashboard shows you actionable insights based on your most active unused signals.
 seo-title: Signals Dashboard
 title: 訊號控制面板
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 訊號控制面板 {#signals-dashboard}
 
-概述Audience Manager在過去7天收到的未使用訊號，並識別潛在的新特徵。 未使用的訊號會從您的線上屬性觸及Audience Manager，但不會用於任何現有特徵。 若要檢視[!UICONTROL Signals Dashboard]，請前往[!UICONTROL Audience Data] > [!UICONTROL Signals]。 [!UICONTROL Signals Dashboard]會根據您最活躍且未使用的訊號，顯示可操作的深入分析。
+概述Audience Manager在過去7天收到的未使用訊號，並識別潛在的新特徵。 未使用的訊號會從您的線上屬性連線Audience Manager，但不會用於任何現有特徵。 若要檢視[!UICONTROL Signals Dashboard]，請前往[!UICONTROL Audience Data] > [!UICONTROL Signals]。 [!UICONTROL Signals Dashboard]會根據您最活躍且未使用的訊號，顯示可操作的深入分析。
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 已儲存的搜尋 {#saved-searches}
 
-[!DNL Audience Manager]會在[!UICONTROL Dashboard]顯示您所有的[已儲存搜尋](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)，並在每次您載入[!UICONTROL Dashboard]時重新載入。
+[!DNL Audience Manager]會在[顯示您所有的](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)已儲存搜尋[!UICONTROL Dashboard]，並在每次您載入[!UICONTROL Dashboard]時重新載入。
 
 已儲存的搜尋會顯示對應條件的前50個結果。
 

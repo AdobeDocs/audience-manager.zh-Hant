@@ -1,5 +1,5 @@
 ---
-description: Audience Marketplace資料購買者同意報告所有使用資料摘要中所含特徵提供的廣告曝光次數，這些特徵是以每千次廣告曝光次數(CPM)的成本定價。 CPM使用量會在每個日曆月的第5天到期，並包含前個月的資料。 固定費用訂閱者不需要報告使用量。
+description: Audience Marketplace資料購買者同意報告所有使用資料摘要中所含特徵提供的廣告曝光數，這些特徵是以每千次廣告曝光數的成本為基礎所定價(CPM)。 CPM使用量會在每個日曆月的5日到期，並包含前個月的資料。 固定費用訂閱者不需要報告使用量。
 seo-description: Audience Marketplace data buyers agree to report all ad impressions served using traits contained in the data feed priced on a cost per thousand ad impressions (CPM) basis. CPM usage is due on the 5th day of each calendar month and includes data for previous month. Flat fee subscribers do not need to report usage.
 seo-title: Billing for Data Feed Buyers
 solution: Audience Manager
@@ -21,7 +21,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 
 <br> 
 
-## 如何報告CPM使用量 {#report-cpm-usage}
+## 如何報告CPM使用情況 {#report-cpm-usage}
 
 <!-- t_marketplace_report_cpm_usage.xml -->
 
@@ -30,7 +30,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 [!UICONTROL Audience Marketplace]提供兩種報告[!DNL CPM]使用狀況的方式：
 
 * **區段層級報告**：這是建議的[!DNL CPM]使用情況報告方法。 當您在區段層級報告[!DNL CPM]使用量時，資料摘要層級報告區段會自動根據[CPM資料摘要的成本歸因](#cost-attribution)中所述的演演算法，填入對應的使用量金額。
-* **資料摘要層級報告**：此方法需要您根據[CPM資料摘要的成本歸因](#cost-attribution)中所述的演演算法，個別報告每個資料摘要的[!DNL CPM]使用量。 不過，這種方法比區段層級報告更冗長且容易出錯。
+* **資料摘要層級報告**：此方法需要您根據[!DNL CPM]CPM資料摘要的成本歸因[中所述的演演算法，個別報告每個資料摘要的](#cost-attribution)使用量。 不過，這種方法比區段層級報告更冗長且容易出錯。
 
 <br> 
 
@@ -46,7 +46,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 1. 選取&#x200B;**[!UICONTROL Segment Usage]**&#x200B;標籤。
 1. 填寫區段的使用情況。 如果您只需要報告部分割槽段的使用情況，則可以使用[!UICONTROL Search]方塊來篩選區段。
 1. 按一下 **[!UICONTROL Edit Segments Usage]**。
-1. 在[!UICONTROL Usage]欄中輸入[!DNL CPM]使用量。
+1. 在[!DNL CPM]欄中輸入[!UICONTROL Usage]使用量。
 1. 完成時按一下&#x200B;**[!UICONTROL Save]**&#x200B;並檢閱確認對話方塊。
 
    ![confirm-segment-usage](assets/confirm-segment-usage.png)
@@ -61,7 +61,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 
 ## 在資料摘要層級報告CPM使用量 {#feed-level-report}
 
-資料摘要層級報告比較繁瑣，而且容易發生錯誤程式，因為您必須個別計算每個資料摘要的[!DNL CPM]使用量。 建議您改為[報告區段層級](#segment-level-report)的CPM使用量。
+資料摘要層級報告比較繁瑣，而且容易發生錯誤程式，因為您必須個別計算每個資料摘要的[!DNL CPM]使用量。 建議您改為[在區段層級](#segment-level-report)報告CPM使用量。
 
 若要報告區段層級的[!DNL CPM]使用量：
 
@@ -69,7 +69,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 2. 選取&#x200B;**[!UICONTROL Feed Usage]**&#x200B;標籤。
 3. 使用[!UICONTROL Search]方塊來篩選資料摘要，並識別您需要報告使用情況的資料摘要。
 4. 按一下 **[!UICONTROL Edit Feeds Usage]**。
-5. 根據CPM資料摘要[&#128279;](#cost-attribution)的成本歸因，計算每個資料摘要的[!DNL CPM]使用量，並在[!UICONTROL Usage]欄中輸入。
+5. 根據CPM資料摘要的[!DNL CPM]成本歸因[計算每個資料摘要的](#cost-attribution)使用量，並在[!UICONTROL Usage]欄中輸入該使用量。
 6. 完成時按一下&#x200B;**[!UICONTROL Save]**&#x200B;並檢閱確認對話方塊。
 
    ![confirm-feed-use](assets/confirm-feed-usage.png)
@@ -125,18 +125,18 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
   <tr> 
    <td colname="col1"> <p><b>一律報告曝光總數</b> </p> </td> 
    <td colname="col2"> <p>針對CPM曝光總數： </p>
-   <p> 報告曝光總數，但不使用小數。 Audience Manager會根據您報告的總數自動計算CPM。</p><p>如果您需要報告1,234,567次曝光數，請如實報告。 您不需要將曝光總數除以1,000即可計算CPM。</p><p>用來使用Adobe Target或Analytics目的地等工具最佳化您的網頁或應用程式內容（內容最佳化）的特徵，不會貢獻CPM計畫的使用量總計。 資料提供者通常會使用固定費用計畫獲得「內容最佳化」的補償。</p><p>如需詳細資訊，請參閱<a href="#cost-attribution">CPM資料摘要的成本歸因</a>。 </p> </td>
+   <p> 報告曝光總數，但不使用小數。 Audience Manager會根據您報表的總數自動計算CPM。</p><p>如果您需要報告1,234,567次曝光數，請如實報告。 您不需要將曝光總數除以1,000，即可計算CPM。</p><p>用來使用Adobe Target或Analytics目的地等工具最佳化Web或應用程式內容（內容最佳化）的特徵不會對CPM計畫的使用量總計產生影響。 資料提供者通常會使用固定費用計畫獲得「內容最佳化」的補償。</p><p>如需詳細資訊，請參閱<a href="#cost-attribution">CPM資料摘要的成本歸因</a>。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>堅持每月報告間隔</b> </p> </td> 
-   <td colname="col2"> <p>報表系統會在每月5日之後關閉。 如果您未能在此日期之前回報CPM使用量，則須將該金額新增至下一月的報表中。 例如，假設您在10月使用1000次曝光、錯過10月的報告截止日期，並在11月使用1000次曝光。 在此案例中，您會在12月報告10月和11月總計(2000) （介於1日與5日之間）。</p><p><b>提示</b>：您應該一律報告下個月第1天和第5天之間的上一個月CPM使用量。</p><p>您可以在新的日曆月的第5日報告CPM使用量，但不建議這麼做。 在每月5日前報告CPM使用量，可讓Audience Manager有時間檢查及處理資料。</p> </td>
+   <td colname="col2"> <p>報表系統會在每月5日之後關閉。 如果屆時仍無法報告CPM使用量，您必須將該金額新增至下個月的報表。 例如，假設您在10月使用1000次曝光、錯過10月的報告截止日期，並在11月使用1000次曝光。 在此案例中，您會在12月報告10月和11月總計(2000) （介於1日與5日之間）。</p><p><b>提示</b>：您應該一律嘗試在下個月的第1天和第5天之間，報告上個月的CPM使用量。</p><p>您最晚可以在新日曆月的5日報告CPM的使用量，但不建議這麼做。 在每月5日前報告CPM使用情況，可讓Audience Manager有時間檢查及處理資料。</p> </td>
   </tr> 
  </tbody> 
 </table>
 
 <br> 
 
-## cpm資料摘要的成本歸因 {#cost-attribution}
+## CPM資料摘要的成本歸因 {#cost-attribution}
 
 在[!UICONTROL Audience Marketplace]中，您必須針對每個區段每月自行報告曝光金額。 我們建議在區段層級報告[!DNL CPM]的使用量，以便自動完成成本歸因。
 
@@ -144,7 +144,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 
 ### 帳單摘要 {#billing-summary}
 
-您必須在每個日曆月的第1天和第5天之間提交[!DNL CPM]個資料摘要曝光金額。 若要正確執行此動作，我們建議您[報告區段層級](#segment-level-report)的CPM使用量。
+您必須在每個日曆月的第1天和第5天之間提交[!DNL CPM]個資料摘要曝光金額。 若要正確執行此操作，我們建議您[在區段層級](#segment-level-report)報告CPM使用量。
 
 >[!TIP]
 >當您在區段層級報告[!DNL CPM]的使用量時，資料摘要層級報告區段會自動填入對應的使用量金額。
@@ -169,7 +169,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 當您[在資料摘要層級](#feed-level-report)報告CPM使用情形時，您必須根據特徵資格規則中使用的[!DNL Boolean]運運算元，按比例為每個資料摘要分配曝光數。 下表列出如何依布林值規則或特徵型別正確分配曝光次數。
 
 >[!TIP]
->[在區段層級](#segment-level-report)報告CPM使用量，以便Audience Manager自動完成資料摘要層級報告。
+>[報告CPM在區段層級](#segment-level-report)的使用情況，讓Audience Manager自動完成資料摘要層級報告。
 
 <table id="table_BF00FE6740D2459DAFA62F2478492586"> 
  <thead> 
@@ -205,7 +205,7 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 以下範例旨在說明如何在資料摘要層級完成[!DNL CPM]使用量配置。
 
 >[!IMPORTANT]
->建議您改為[報告區段層級](#segment-level-report)的CPM使用量，以自動完成此程式。
+>建議您改為[在區段層級](#segment-level-report)報告CPM使用量，以自動完成此程式。
 
 讓我們考慮下列情況：
 
@@ -264,12 +264,12 @@ Audience Marketplace資料購買者同意報告所有使用資料摘要中所含
 
 >[!NOTE]
 >
->對於模型使用案例，您應該只報告啟動時的CPM使用量。 如果您只執行模型，但不啟動模型，則不需要使用量報表。
+>針對模型使用案例，您應僅報告啟動時的CPM使用情形。 如果您只執行模型，但不啟動模型，則不需要使用量報表。
 
 <br> 
 
 ## 固定費用資料摘要的計費和曝光分配 {#billing-flat-fee}
 
-固定費用資料摘要每個月都會向您收取固定金額，無論訂閱何時開始或您使用的曝光次數為何。 部分月份的使用或間隔不按比例分攤費用。 與CPM計費一樣，Adobe將會產生發票，並以您訂閱的資料摘要的每月固定費用率向您計費。
+固定費用資料摘要每個月都會向您收取固定金額，無論訂閱何時開始或您使用的曝光次數為何。 部分月份的使用或間隔不按比例分攤費用。 和CPM計費一樣，Adobe會產生發票，並按您訂閱的資料摘要的每月固定費率向您計費。
 
 例如，假設您決定於月中開啟摘要中的某些特徵。 無論您何時開始訂閱或啟用特定特徵，仍會按每月全額費率向您收費。

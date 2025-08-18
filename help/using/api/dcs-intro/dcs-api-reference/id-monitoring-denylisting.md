@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 概述
 
-為了保護Audience Manager基礎結構不受惡意活動的侵擾，[!DNL DCS]會使用進階演演算法來監視其接收的ID。 這些可以是[!UICONTROL Data Provider Unique User ID] ([!UICONTROL CRM ID])、[!UICONTROL Audience Manager Unique User ID] ([!UICONTROL AAM UUID])或[!UICONTROL Experience Cloud ID]s ([!UICONTROL ECID])。 請參閱Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中的ID索引，以取得Audience Manager所支援ID的詳細解釋。
+為了保護Audience Manager基礎結構不受惡意活動的侵擾，[!DNL DCS]會使用進階演演算法來監視其接收的ID。 這些可以是[!UICONTROL Data Provider Unique User ID] ([!UICONTROL CRM ID])、[!UICONTROL Audience Manager Unique User ID] ([!UICONTROL AAM UUID])或[!UICONTROL Experience Cloud ID]s ([!UICONTROL ECID])。 如需Audience Manager支援之ID的詳細說明，請參閱[Audience Manager的ID索引](../../../reference/ids-in-aam.md)。
 
 [!DNL DCS]會監視收到這些ID的頻率，以偵測潛在的惡意活動。 當[!DNL DCS]在短時間內偵測到任何指定ID有異常大的[!DNL DCS]個要求時，該ID會新增至拒絕清單。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## ID封鎖清單的原因和修正
 
-新增ID至拒絕清單的最常見原因是客戶基礎架構與Audience Manager之間的整合不正確。 識別已加入封鎖清單的ID時，請務必仔細檢閱您的Audience Manager整合。 請參閱&#x200B;**實作與整合指南**，以取得您應如何設定Audience Manager以搭配其他Experience Cloud解決方案或外部系統使用的詳細說明。
+新增ID以拒絕清單的最常見原因是客戶基礎架構與Audience Manager之間的整合不正確。 識別已加入封鎖清單的ID時，請務必仔細檢閱您的Audience Manager整合。 請參閱&#x200B;**實作與整合指南**，以取得有關如何設定Audience Manager以搭配其他Experience Cloud解決方案或外部系統使用的詳細說明。
 
 將ID新增至拒絕清單的另一個常見原因是索引機器人（Web編目程式），這通常會導致流量增加，導致將相同的ID多次傳送給[!DNL DCS]。 如果您將索引機器人識別為將ID新增至拒絕清單的原因，您應該限制機器人對您網站的存取。
 

@@ -1,5 +1,5 @@
 ---
-description: 您可以使用畫素呼叫來Audience Manager（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。
+description: 您可以使用對Audience Manager的畫素呼叫（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。
 seo-description: You can capture data from media campaigns using pixel calls to Audience Manager (often called pixeling the creative) or by ingesting log files.
 seo-title: Media Data Integration
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 媒體資料整合 {#media-data-integration}
 
-您可以使用畫素呼叫來Audience Manager（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。 請閱讀本節中的文章以瞭解此程式。
+您可以使用對Audience Manager的畫素呼叫（通常稱為畫素化創意）或擷取記錄檔，從媒體行銷活動中擷取資料。 請閱讀本節中的文章以瞭解此程式。
 
 <!-- c_camp_data_int.xml -->
 

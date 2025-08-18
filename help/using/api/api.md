@@ -4,7 +4,7 @@ seo-description: APIs and toolkits that let you work programmatically with Audie
 seo-title: API and SDK Code
 keywords: api， api， api， api， api， api， api， api， api， api
 solution: Audience Manager
-title: API和SDK程式碼
+title: API與SDK程式碼
 uuid: bf801e84-f914-4efd-8807-c4972474894a
 feature: API
 exl-id: db3d1f3b-9a39-4ff7-a301-1236d3b33fc2
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # [!DNL API]和[!DNL SDK]代碼 {#api-and-sdk-code}
 
-允許您以程式設計方式使用[!DNL Audience Manager]的[!DNL API]和工具套件。
+允許您以程式設計方式使用[!DNL API]的[!DNL Audience Manager]和工具套件。
 
 >[!NOTE]
 >
@@ -28,8 +28,8 @@ ht-degree: 0%
 
 詳細資料：
 
-* [Audience ManagerAPI程式碼移轉](api-swagger-migration.md)
+* [Audience Manager API程式碼移轉](api-swagger-migration.md)
 * [DCS事件呼叫API](dcs-intro/dcs-event-calls/dcs-event-calls.md)
 * [用於伺服器對伺服器資料傳輸的DCS API](dcs-intro/dcs-s2s/dcs-s2s.md)
 * [DCS API方法](dcs-intro/dcs-api-reference/dcs-api-methods.md)
-* [SDK代碼](/help/using/api/aam-sdk.md)
+* [SDK程式碼](/help/using/api/aam-sdk.md)

@@ -16,7 +16,7 @@ ht-degree: 35%
 
 # DCS事件呼叫API {#dcs-event-call-apis}
 
-事件呼叫會在[!DNL URL]字串中傳送資訊至[!DNL DCS]。 在一般Audience Manager部署中，客戶會使用我們的[!DNL JavaScript]資料收集代碼([!UICONTROL DIL])將資料傳送至[!DNL DCS]。 不過，有時客戶無法將[!DNL JavaScript]程式碼放在其頁面上。 如果公司原則或其他技術問題阻止您將我們的[!DNL JavaScript]程式碼放在您的頁面上，您仍然可以透過Audience Manager呼叫[!DNL API]從[!DNL DCS]傳送及傳回資料。
+事件呼叫會在[!DNL DCS]字串中傳送資訊至[!DNL URL]。 在一般的Audience Manager部署中，客戶會使用我們的[!DNL JavaScript]資料收集代碼([!UICONTROL DIL])將資料傳送至[!DNL DCS]。 不過，有時客戶無法將[!DNL JavaScript]程式碼放在其頁面上。 如果公司原則或其他技術問題阻止您將我們的[!DNL JavaScript]程式碼放在您的頁面上，您仍可以使用Audience Manager透過這些事件呼叫[!DNL DCS]傳送和傳回[!DNL API]的資料。
 
 ## 快速入門 {#dcs-getting-started}
 

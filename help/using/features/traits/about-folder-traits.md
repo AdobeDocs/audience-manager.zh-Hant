@@ -58,13 +58,13 @@ ht-degree: 0%
 * `READ`和`WRITE`特徵資料來源的群組許可權。
 * 特徵資料來源的`VIEW_ALL_TRAITS`和`EDIT_ALL_TRAITS`萬用字元許可權。
 
-在我們的[管理檔案](../../features/administration/administration-overview.md#create-group)中瞭解如何指派[!UICONTROL RBAC]許可權。
+在我們的[!UICONTROL RBAC]管理檔案[中瞭解如何指派](../../features/administration/administration-overview.md#create-group)許可權。
 
 ## 限制和其他考量事項 {#limits}
 
 | 項目 | 說明 |
 |---|---|
 | 特徵型別 | [!UICONTROL Onboarded traits]和[!UICONTROL algorithmic traits]對[!UICONTROL folder trait]的頻率最多可貢獻1個實現。 |
-| 在資料夾之間移動特徵 | 將特徵從資料夾移至另一個資料夾將會讓該特徵失去第一個資料夾特徵的資格，並符合其第二個[!UICONTROL folder trait]的資格。 這表示如果您從資料夾中刪除或移動特徵，該特徵母體中的使用者將會使用資料夾特徵作為區段運算式從該區段中取消分段。 <br>將Adobe Analytics區段或報表套裝對應至您的Experience Cloud組織時，Audience Manager會自動建立對應的新唯讀區段和特徵。 您無法從Audience Manager編輯或變更這些特徵的儲存位置。 不過，您對對應的Adobe Analytics區段或報表套裝執行的任何變更都會反映在Audience Manager中。 |
-| 系統變數 | 無法使用`d_sid`引數在事件呼叫中實現[!UICONTROL Folder traits]。 |
+| 在資料夾之間移動特徵 | 將特徵從資料夾移至另一個資料夾將會讓該特徵失去第一個資料夾特徵的資格，並符合其第二個[!UICONTROL folder trait]的資格。 這表示如果您從資料夾中刪除或移動特徵，該特徵母體中的使用者將會使用資料夾特徵作為區段運算式從該區段中取消分段。 <br>將Adobe Analytics區段或報表套裝對應至您的Experience Cloud組織時，Audience Manager會自動建立對應的新唯讀區段和特徵。 您無法從Audience Manager編輯或變更這些特徵的儲存位置。 不過，您在對應之Adobe Analytics區段或報表套裝上執行的任何變更都會反映在Audience Manager中。 |
+| 系統變數 | 無法使用[!UICONTROL Folder traits]引數在事件呼叫中實現`d_sid`。 |
 | 報告 | [!UICONTROL Folder traits]是自動計算的特徵，不會出現在&#x200B;**[!UICONTROL Overlap Reports]**&#x200B;中。 |

@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->若要使用中繼資料檔案，您的事件呼叫必須包含[概述與對應](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)區段中列出的&#x200B;*所有*&#x200B;引數。
+>若要使用中繼資料檔案，您的事件呼叫必須包含&#x200B;*概述與對應*&#x200B;區段中列出的[所有](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)引數。
 
 * [Audience Optimization報表的資料檔案和可操作的記錄檔](/help/using/reporting/audience-optimization-reports/metadata-files-intro/datafiles-intro.md)
 * [中繼資料檔案的概述與對應](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md)

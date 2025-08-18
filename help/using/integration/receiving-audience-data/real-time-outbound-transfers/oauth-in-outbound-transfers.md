@@ -1,5 +1,5 @@
 ---
-description: 透過即時伺服器對伺服器整合將區段發佈到合作夥伴目的地時，可將Audience Manager設定為在提出請求時使用OAuth 2.0進行驗證。 如此一來，您便能夠將驗證過的要求從Audience Manager核發至您的端點。
+description: 透過即時伺服器對伺服器整合將區段發佈到合作夥伴目的地時，可將Audience Manager設定為在提出請求時使用OAuth 2.0進行驗證。 如此一來，您就可以將驗證過的要求從Audience Manager核發至您的端點。
 seo-description: When publishing segments to the partner destination via a realtime server-to-server integration, Audience Manager can be set up to authenticate using OAuth 2.0 when making the requests. This presents the ability to issue authenticated requests from Audience Manager to your endpoint.
 seo-title: OAuth 2.0 Integration for Real-Time Outbound Transfers
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # [!DNL OAuth 2.0]即時傳出傳輸的整合{#oauth-integration-for-real-time-outbound-transfers}
 
-透過即時伺服器對伺服器整合將區段發佈到合作夥伴目的地時，可以將Audience Manager設定為在發出請求時使用[!DNL OAuth 2.0]進行驗證。 如此一來，您便能夠將驗證過的要求從Audience Manager核發至您的端點。
+透過即時伺服器對伺服器整合將區段發佈到合作夥伴目的地時，可以將Audience Manager設定為在發出請求時使用[!DNL OAuth 2.0]進行驗證。 如此一來，您就可以將驗證過的要求從Audience Manager核發至您的端點。
 
 ## 驗證流程 {#auth-flow}
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 * 端點必須檢視[!DNL Content-type]標頭並確認其值為`application/x-www-form-urlencoded ; charset=UTF-8`。
 * 要求的主體將為`grant_type=client_credentials`。
 
-### Audience Manager為取得持有人權杖而向合作夥伴端點提出的範例要求
+### Audience Manager為取得持有人權杖而對合作夥伴端點提出的範例要求
 
 ```
 POST /oauth2/token HTTP/1.1
@@ -114,7 +114,7 @@ Accept-Encoding: gzip
 
 ### Token為密碼
 
-使用[!DNL OAuth 2.0]流程進行驗證時，合作夥伴提供的認證和[!DNL Audience Manager]取得的權杖是敏感資訊，不得與協力廠商共用。
+使用[!DNL Audience Manager]流程進行驗證時，合作夥伴提供的認證和[!DNL OAuth 2.0]取得的權杖是敏感資訊，不得與協力廠商共用。
 
 ### [!DNL SSL]為必要項
 

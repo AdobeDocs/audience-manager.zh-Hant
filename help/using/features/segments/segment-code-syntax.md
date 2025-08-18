@@ -16,7 +16,7 @@ ht-degree: 4%
 
 # 區段運算式編輯器中使用的程式碼語法 {#code-syntax-used-in-the-segment-expression-editor}
 
-[!UICONTROL Segment Builder]可讓您使用程式碼編輯器建立區段的特徵規則。 按一下「[!UICONTROL Traits]」面板中的「**[!UICONTROL Segment Expressions (Code View)]**」索引標籤以存取此功能。
+[!UICONTROL Segment Builder]可讓您使用程式碼編輯器建立區段的特徵規則。 按一下「**[!UICONTROL Segment Expressions (Code View)]**」面板中的「[!UICONTROL Traits]」索引標籤以存取此功能。
 
 ## 運算式產生器程式碼語法
 
@@ -33,7 +33,7 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 
 ### 使用布林運運算元連線區段
 
-若要建立區段群組，請將頻率函式括在括弧中，並使用[!DNL Boolean]運運算元（[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL NOT]）設定每個運算式之間&#x200B;*的關係*。
+若要建立區段群組，請將頻率函式括在括弧中，並使用&#x200B;*運運算元（*、[!DNL Boolean]和[!UICONTROL AND]）設定每個運算式之間[!UICONTROL OR]的關係[!UICONTROL NOT]。
 
 ### 參數
 

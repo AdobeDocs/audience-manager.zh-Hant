@@ -22,7 +22,7 @@ ht-degree: 6%
 
 ## 支援的目的地型別：僅限URL和Cookie
 
-可用的`POST`方法只能讓您建立[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前無法使用這[!DNL REST API]個方法建立[!UICONTROL server-to-server destinations]。 不過，相關的目的地`GET`方法可讓您擷取使用者介面中建立的[!UICONTROL server-to-server destinations]相關資訊。
+可用的`POST`方法只能讓您建立[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前無法使用這[!UICONTROL server-to-server destinations]個方法建立[!DNL REST API]。 不過，相關的目的地`GET`方法可讓您擷取使用者介面中建立的[!UICONTROL server-to-server destinations]相關資訊。
 
 ## 建立非序列URL目的地 {#create-nonserial-dest}
 
@@ -135,7 +135,7 @@ ht-degree: 6%
 
 ## 建立Cookie目的地：單一金鑰、非序列化 {#create-cookie-dest-single}
 
-`POST`方法可讓您建立接受由單一索引鍵值配對（例如，`gender=male`或`gender=female`）組成的區段的[!UICONTROL cookie destination]。
+`POST`方法可讓您建立接受由單一索引鍵值配對（例如，[!UICONTROL cookie destination]或`gender=male`）組成的區段的`gender=female`。
 
 <!-- r_cookie_destination_singlekey_noserial.xml -->
 

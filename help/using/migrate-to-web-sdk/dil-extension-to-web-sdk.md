@@ -1,6 +1,6 @@
 ---
-title: 從Audience Manager標籤擴充功能移轉至Web SDK標籤擴充功能
-description: 瞭解更新資料收集程式庫的步驟，以便從Audience Manager標籤擴充功能進行Audience Manager至Web SDK標籤擴充功能
+title: 從Audience Manager標籤擴充功能移轉至網路SDK標籤擴充功能
+description: 瞭解將Audience Manager的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能的步驟
 exl-id: 7f0486db-4511-4311-90df-290580fdcd78
 source-git-commit: a50aaeb5e384685100dc3ecc1d6d45f1c41461d0
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# 將您的資料收集程式庫更新，以便從Audience Manager標籤擴充功能Audience Manager至Web SDK標籤擴充功能
+# 將Audience Manager的資料收集程式庫從Audience Manager標籤擴充功能更新為網頁SDK標籤擴充功能
 
 ## 目標對象
 
-此頁面適用於使用[Audience Manager標籤擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/audience-manager/overview)將網頁集合資料匯入Audience Manager的Audience Manager客戶。 對於使用AppMeasurementJavaScript資料庫的客戶，請參閱如何將Audience Manager[的資料收集資料庫從AppMeasurementJavaScript資料庫更新至Web SDK JavaScript資料庫](appmeasurement-to-web-sdk.md)的指南。
+此頁面適用於使用[Audience Manager標籤擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview)將網頁集合資料匯入Audience Manager的Audience Manager客戶。 若客戶使用AppMeasurement JavaScript資料庫，請參閱如何將Audience Manager [的資料收集資料庫從AppMeasurement JavaScript資料庫更新至Web SDK JavaScript資料庫](appmeasurement-to-web-sdk.md)的指南。
 
 ## 此實作路徑的優缺點
 
@@ -94,23 +94,23 @@ Adobe建議您在有使用Adobe Audience Manager標籤擴充功能的現有實�
 
 +++**4.更新規則以使用Web SDK擴充功能，而非Audience Manager擴充功能**
 
-此步驟包含移轉至Web SDK所需的大部分工作，且需要瞭解您實作的運作方式。 以下提供如何編輯典型標籤規則的範例。 更新實作中的所有標籤規則，以Web SDK擴充功能取代Audience Manager擴充功能的所有參考。
+此步驟包含移轉至Web SDK所需的大部分工作，且需要瞭解您實作的運作方式。 以下提供如何編輯典型標籤規則的範例。 更新實施中的所有標籤規則，以Web SDK擴充功能取代Audience Manager擴充功能的所有參考。
 
 1. 在標籤介面的左側導覽中，選取&#x200B;**[!UICONTROL Rules]**。
 1. 選取要編輯的規則。
 1. 選取動作&#x200B;**[!UICONTROL Audience Manager - Set Variables]**
-1. 記下在此規則內設定的所有Audience Manager變數。 納入在下拉式功能表中設定的變數，以及在自訂程式碼中設定的變數。
+1. 請注意在此規則內設定的所有Audience Manager變數。 納入在下拉式功能表中設定的變數，以及在自訂程式碼中設定的變數。
 1. 將[!UICONTROL Action Configuration]變更為下列設定：
    * **[!UICONTROL Extension]**： [!UICONTROL Adobe Experience Platform Web SDK]
    * **[!UICONTROL Action type]**：更新變數
 1. 確定已在右側&#x200B;**[!UICONTROL Data element]**&#x200B;欄位的下拉式清單中選取您在步驟3建立的資料物件。
-1. 將Audience Manager索引鍵值配對設定為與其在Audience Manager擴充功能中設定的相同個別值。
+1. 將Audience Manager機碼值組設為其各自在Audience Manager擴充功能中設定的相同值。
 1. 使用Web SDK擴充功能復寫所有規則邏輯後，請選取&#x200B;**[!UICONTROL Keep Changes]**。
 1. 對使用Audience Manager標籤擴充功能設定值的每個動作設定重複這些步驟。
 
 上述步驟僅適用於設定值的規則。 下列步驟會取代所有使用[!UICONTROL Action Configuration] [!UICONTROL Send Event]的動作。
 
-1. 選取傳送Web SDK事件的規則。
+1. 選取傳送網頁SDK事件的規則。
 1. 選取動作型別&#x200B;**[!UICONTROL Send Event]**。
 1. 將[!UICONTROL Action Configuration]變更為下列設定：
    * **[!UICONTROL Extension]**： [!UICONTROL Adobe Experience Platform Web SDK]
@@ -123,7 +123,7 @@ Adobe建議您在有使用Adobe Audience Manager標籤擴充功能的現有實�
 
 +++
 
-+++**5.Publish已更新規則**
++++**5.發佈更新的規則**
 
 發佈更新規則的工作流程，與標籤設定的任何其他變更相同。
 
@@ -140,7 +140,7 @@ Adobe建議您在有使用Adobe Audience Manager標籤擴充功能的現有實�
 
 +++
 
-+++**6.停用Audience Manager延伸**
++++**6.停用Audience Manager擴充功能**
 
 將標籤實作完全移轉至Web SDK後，您就可以停用Audience Manager擴充功能。
 

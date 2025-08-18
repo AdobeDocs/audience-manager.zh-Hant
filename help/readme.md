@@ -15,7 +15,7 @@ ht-degree: 2%
 + 每個使用手冊都有自己的唯一`TOC.md`，您可以視需要排序所有頁面/主題。
 + 所有使用手冊的第一頁都是`overview.md`。
 
-## 使用者指南
+## 使用手冊
 
 + 使用手冊的簡介稱為`overview.md`
 + 使用手冊中的每個主題都有自己的不同目錄。
@@ -40,7 +40,7 @@ ht-degree: 2%
    + seo-title - seo替代標題。
    + seo-description - SEO用途的替代標題。
    + short-title - （選擇性欄位）。
-   + 索引 — 是/否 — 頁面是否會根據Adobe的搜尋平台編制索引。
+   + 索引 — 是/否 — 頁面是否會由Adobe的搜尋平台編制索引。
    + 翻譯 — 是/否 — 此頁面是否會翻譯。
    + 版本 — 主要用於AEM和Campaign，代表產品的版本。
    + private-feature-pack — 主要用於AEM。

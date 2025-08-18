@@ -35,9 +35,9 @@ ht-degree: 0%
 您在&#x200B;**[!UICONTROL Audience Data > Models]**&#x200B;中管理模型。 從高層面來看，工作流程流程涉及以下內容：
 
 * 選取您希望演演算法評估的基準資料。 這包括[!UICONTROL trait]或[!UICONTROL segment]、時間範圍和[!UICONTROL data sources] （您自己的資料和您透過[!DNL Audience Manager]已可存取的第三方資料）。 在模型建立工作流程中，您可以排除不想干擾模型的[!UICONTROL traits]。
-* 儲存您的模型。 儲存後，演演算法評估程式會自動執行。 但請注意，此程式最多可能需要7天才能完成。 當演演算法完成且結果可用於建立[!UICONTROL trait]時，[!DNL Audience Manager]會傳送電子郵件給您。
-* 在[!UICONTROL Trait Builder]中建置演演算法[!UICONTROL traits]。
-* 在[!UICONTROL Segment Builder]中將[!UICONTROL traits]合併為[!UICONTROL segments]。
+* 儲存您的模型。 儲存後，演演算法評估程式會自動執行。 但請注意，此程式最多可能需要7天才能完成。 當演演算法完成且結果可用於建立[!DNL Audience Manager]時，[!UICONTROL trait]會傳送電子郵件給您。
+* 在[!UICONTROL traits]中建置演演算法[!UICONTROL Trait Builder]。
+* 在[!UICONTROL traits]中將[!UICONTROL segments]合併為[!UICONTROL Segment Builder]。
 * 建立[!UICONTROL segment]資料並傳送至[!UICONTROL destination]。
 
 ## 疑難排解 {#troubleshooting}
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 瞭解[!UICONTROL TraitWeight] {#understanding-traitweight}
 
-[!UICONTROL TraitWeight]是專有的演演算法，用來自動探索新的[!UICONTROL traits]。 它會比較您目前[!UICONTROL traits]和[!UICONTROL segments]的[!UICONTROL trait]資料，與您透過[!DNL Audience Manager]存取的所有其他第一方和第三方資料。 請參閱本節以取得[!UICONTROL TraitWeight]演演算法探索程式的說明。
+[!UICONTROL TraitWeight]是專有的演演算法，用來自動探索新的[!UICONTROL traits]。 它會比較您目前[!UICONTROL trait]和[!UICONTROL traits]的[!UICONTROL segments]資料，與您透過[!DNL Audience Manager]存取的所有其他第一方和第三方資料。 請參閱本節以取得[!UICONTROL TraitWeight]演演算法探索程式的說明。
 
 ![](assets/algo_model.png)
 
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ### 步驟1：建立[!UICONTROL Trait]比較的基線
 
-若要建置基準，[!UICONTROL TraitWeight]會以30、60或90天為間隔測量與對象相關聯的所有[!UICONTROL traits]。 接著，它會根據頻率和相關性對[!UICONTROL traits]排名。 頻率計數可測量通用性。 相互關聯會測量[!UICONTROL trait]僅存在於基線對象中的可能性。 經常出現的[!UICONTROL Traits]據說具有高通用性，這是當您與所選[!UICONTROL data sources]中發現的[!UICONTROL traits]結合時，用來設定加權分數的重要特性。
+若要建置基準，[!UICONTROL TraitWeight]會以30、60或90天為間隔測量與對象相關聯的所有[!UICONTROL traits]。 接著，它會根據頻率和相關性對[!UICONTROL traits]排名。 頻率計數可測量通用性。 相互關聯會測量[!UICONTROL trait]僅存在於基線對象中的可能性。 經常出現的[!UICONTROL Traits]據說具有高通用性，這是當您與所選[!UICONTROL traits]中發現的[!UICONTROL data sources]結合時，用來設定加權分數的重要特性。
 
-### 步驟2：在[!UICONTROL Data Source]中找到相同的[!UICONTROL Traits]
+### 步驟2：在[!UICONTROL Traits]中找到相同的[!UICONTROL Data Source]
 
-在建置比較基準線後，演演算法會在您選取的[!UICONTROL data sources]中尋找相同的[!UICONTROL traits]。 在此步驟中，[!UICONTROL TraitWeight]會對所有發現的[!UICONTROL traits]執行頻率計數，並將它們與基準進行比較。 不過，與基準線不同，不常見的[!UICONTROL traits]的排名高於出現頻率較高的專案。 稀有[!UICONTROL traits]據說具有高度的特異性。 [!UICONTROL TraitWeight]會評估共同基準線[!UICONTROL traits]與不常見（高度特定） [!UICONTROL data source] [!UICONTROL traits]的組合，認為其比兩個資料集共用的[!UICONTROL traits]更具影響力或令人滿意。 事實上，我們的模型會辨識這些大型的通用[!UICONTROL traits]，不會將超額優先順序指派給具有高關聯性的資料集。 罕見的[!UICONTROL traits]獲得更高的優先順序，因為它們比[!UICONTROL traits]更可能代表新的、不重複的使用者，而且所有使用者都有較高的通用性。
+在建置比較基準線後，演演算法會在您選取的[!UICONTROL traits]中尋找相同的[!UICONTROL data sources]。 在此步驟中，[!UICONTROL TraitWeight]會對所有發現的[!UICONTROL traits]執行頻率計數，並將它們與基準進行比較。 不過，與基準線不同，不常見的[!UICONTROL traits]的排名高於出現頻率較高的專案。 稀有[!UICONTROL traits]據說具有高度的特異性。 [!UICONTROL TraitWeight]會評估共同基準線[!UICONTROL traits]與不常見（高度特定） [!UICONTROL data source] [!UICONTROL traits]的組合，認為其比兩個資料集共用的[!UICONTROL traits]更具影響力或令人滿意。 事實上，我們的模型會辨識這些大型的通用[!UICONTROL traits]，不會將超額優先順序指派給具有高關聯性的資料集。 罕見的[!UICONTROL traits]獲得更高的優先順序，因為它們比[!UICONTROL traits]更可能代表新的、不重複的使用者，而且所有使用者都有較高的通用性。
 
 ### 步驟3：指定權重
 
@@ -182,8 +182,8 @@ ht-degree: 0%
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> 使用模型</span>的<span class="wintitle">特徵 </p> </td>
-   <td colname="col2"> <p>根據選取的模型顯示演演算法特徵清單。 按一下特徵名稱或特徵ID，即可取得特徵的詳細資訊。 選取「<b><span class="uicontrol">使用模型建立新特徵</span></b>」以前往演演算法特徵建立程式。 </p> <p>區段標籤會根據模型的名稱而變更。 例如，假設您建立模型並將其命名為「模型A」。載入摘要頁面時，此區段的名稱會使用模型A</span>變更為<span class="wintitle">特徵。 </p> </td>
+   <td colname="col1"> <p> 使用模型<span class="wintitle">的</span>特徵 </p> </td>
+   <td colname="col2"> <p>根據選取的模型顯示演演算法特徵清單。 按一下特徵名稱或特徵ID，即可取得特徵的詳細資訊。 選取「<b><span class="uicontrol">使用模型建立新特徵</span></b>」以前往演演算法特徵建立程式。 </p> <p>區段標籤會根據模型的名稱而變更。 例如，假設您建立模型並將其命名為「模型A」。載入摘要頁面時，此區段的名稱會使用模型A<span class="wintitle">變更為</span>特徵。 </p> </td>
   </tr>
  </tbody>
 </table>

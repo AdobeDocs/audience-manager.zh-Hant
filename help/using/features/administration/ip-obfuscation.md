@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # IP位址模糊化 {#ip-obfuscation}
 
-此功能可模糊化在Audience Manager中收集的IP位址。
+此功能可模糊處理Audience Manager中收集的IP位址。
 
 ## 概述和方法 {#overview-and-methodology}
 
@@ -31,7 +31,7 @@ ht-degree: 12%
 
 ### IP模糊化優先順序 {#precedence}
 
-[資料串流層級IP模糊化](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#create)優先於Audience Manager中設定的任何IP模糊化選項，而且會套用至所有IP位址。 Audience Manager完成的任何地理位置查詢都會受到資料流層級[!UICONTROL IP obfuscation]選項的影響。 在Audience Manager中，根據完全模糊化的IP進行地理位置查詢，將會產生未知區域，且不會實現任何根據結果地理位置資料的區段。
+[資料串流層級IP模糊化](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create)優先於Audience Manager中設定的任何IP模糊化選項，而且會套用至所有IP位址。 Audience Manager完成的任何地理位置查詢都會受到資料流層級[!UICONTROL IP obfuscation]選項的影響。 在Audience Manager中，根據完全模糊化的IP進行地理位置查詢將會產生未知區域，且任何根據結果地理位置資料的區段都不會實現。
 
 ## IP位址模糊化需求 {#ip-obfuscation-requirements}
 
@@ -45,10 +45,10 @@ IP位址模糊化僅適用於Audience Manager管理員帳戶。 請參閱[建立
 
 請依照下列步驟設定IP位址模糊化。
 
-1. 以系統管理員帳戶登入Audience Manager，並移至&#x200B;**管理>隱私權**。
+1. 使用系統管理員帳戶登入Audience Manager，並移至&#x200B;**管理>隱私權**。
 2. 選擇您要使用的IP模糊化型別。
-   1. **模糊化所有IP位址：**&#x200B;選取此選項以讓Audience Manager模糊化所有訪客IP位址的最後八位元，無論其來源地區為何。
-   2. **模糊化特定國家/地區的IP位址：**&#x200B;選取此選項可讓Audience Manager模糊化特定國家/地區的最後八位訪客IP位址。 使用&#x200B;**國家/地區清單**&#x200B;或對應的&#x200B;**搜尋**&#x200B;欄位來尋找要啟用IP模糊化的國家/地區，然後按一下+圖示將它們新增至&#x200B;**選取進行模糊化**&#x200B;清單。 將所有必要國家/地區新增至&#x200B;**選取模糊化**&#x200B;清單後，請按一下&#x200B;**儲存**。
+   1. **模糊化所有IP位址：**&#x200B;選取此選項可讓Audience Manager模糊化所有訪客IP位址的最後八位元，而不論其來源區域為何。
+   2. **模糊化特定國家/地區的IP位址：**&#x200B;選取此選項，讓Audience Manager模糊化特定國家/地區的最後八位訪客IP位址。 使用&#x200B;**國家/地區清單**&#x200B;或對應的&#x200B;**搜尋**&#x200B;欄位來尋找要啟用IP模糊化的國家/地區，然後按一下+圖示將它們新增至&#x200B;**選取進行模糊化**&#x200B;清單。 將所有必要國家/地區新增至&#x200B;**選取模糊化**&#x200B;清單後，請按一下&#x200B;**儲存**。
 
 ![](assets/ip-obfuscation.png)
 

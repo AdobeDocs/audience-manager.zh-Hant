@@ -1,5 +1,5 @@
 ---
-description: 說明平台層級索引鍵值配對的共用，您可以透過地理變數在Audience Manager帳戶中的所有屬性中鎖定使用者。
+description: 說明平台層級索引鍵值配對的共用，您可以透過這些地理變數在Audience Manager帳戶中的所有屬性中鎖定使用者。
 seo-description: Describes the common platform-level key-value pairs you can use to target users with geographic variables across all properties in your Audience Manager account.
 seo-title: Geotargeting With Platform-level Keys
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # 使用平台層級索引鍵的Geotargeting {#geotargeting-with-platform-level-keys}
 
-說明平台層級索引鍵值配對的共用，您可以透過地理變數在Audience Manager帳戶中的所有屬性中鎖定使用者。
+說明平台層級索引鍵值配對的共用，您可以透過這些地理變數在Audience Manager帳戶中的所有屬性中鎖定使用者。
 
 <!-- c_tb_platform_vars.xml -->
 

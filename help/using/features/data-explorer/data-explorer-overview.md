@@ -1,5 +1,5 @@
 ---
-description: 透過Data Explorer根據已使用和未使用的訊號建立特徵，並以歷史資料回填這些特徵，避免相關受眾可能遺失，藉此利用歷史受眾。
+description: 使用Data Explorer根據已使用和未使用的訊號建立特徵，並以歷史資料回填這些特徵，以避免相關對象可能遺失，藉此利用歷史受眾。
 seo-description: Use Data Explorer to capitalize on historical audiences by building traits based on used and unused signals, and backfilling them with historical data to avoid potential loss of relevant audiences.
 seo-title: Overview, Benefits, and Use Cases
 title: 概述、優點和使用案例
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ### 範例 1
 
-一家全球電子零售商雖然已針對多個平台最佳化內容，但訪客流量很高，但轉換率卻低於預期。 使用[訊號控制面板](../../features/data-explorer/data-explorer-signals-dashboard.md)，它們會識別大量未使用的訊號，表示訪客正在搜尋目前沒有庫存的特定電子品牌。 公司可透過重新整理其庫存並以個人化行銷活動定位這些訪客，以利用此洞察力。
+全球電子產品retailer的訪客流量相當大，但轉換率卻低於預期，雖然他們已經為多個平台最佳化了內容。 使用[訊號控制面板](../../features/data-explorer/data-explorer-signals-dashboard.md)，它們會識別大量未使用的訊號，表示訪客正在搜尋目前沒有庫存的特定電子品牌。 公司可透過重新整理其庫存並以個人化行銷活動定位這些訪客，善用此insight。
 
 ### 範例 2
 

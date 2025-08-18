@@ -65,7 +65,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">已暫停</span></b> </p> </td> 
-   <td colname="col2"> <p><i>已暫停</i>測試群組目前未傳送資料至目的地。 按<b><span class="uicontrol">使<b><span class="uicontrol">測試群組</span></b>卡片中的</span></b>生效，以繼續傳送特徵。 </p> </td> 
+   <td colname="col2"> <p><i>已暫停</i>測試群組目前未傳送資料至目的地。 按<b><span class="uicontrol">使</span></b>測試群組<b><span class="uicontrol">卡片中的</span></b>生效，以繼續傳送特徵。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">草稿</span></b> </p> </td> 

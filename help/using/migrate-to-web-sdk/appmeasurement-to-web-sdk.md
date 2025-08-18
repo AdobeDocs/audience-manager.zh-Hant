@@ -21,36 +21,36 @@ ht-degree: 0%
 | 您現有的資料收集方法 | 網頁SDK移轉指示 |
 |---------|----------|
 | 具有AudienceManagement模組的[!DNL AppMeasurement] JavaScript資料庫 | 請依照本指南的指示操作。 |
-| [!DNL Audience Manager] [標籤延伸模組](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
+| [!DNL Audience Manager] [標籤延伸模組](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
 | [!DNL AppMeasurement] JavaScript資料庫+獨立[!DNL Audience Manager] [DIL資料庫](../dil/dil-overview.md) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
 
 ## 移轉概述 {#overview}
 
-從[!DNL AppMeasurement]移轉至[Web SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)主要是Adobe Analytics移轉。 針對Audience Manager客戶，此移轉作業也包含Audience Manager。 兩者必須一起移轉。 如果您主要使用Audience Manager，請務必讓Analytics團隊參與此移轉。
+從[!DNL AppMeasurement]移轉至[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)主要是Adobe Analytics移轉。 針對Audience Manager客戶，此移轉作業也包含Audience Manager。 兩者必須一起移轉。 如果您主要使用Audience Manager，請務必讓Analytics團隊參與此移轉。
 
 如果您使用[!DNL AppMeasurement]進行Audience Manager資料收集，目前您正使用[!DNL Server-side Forwarding (SSF)]方法將分析資料傳送至Audience Manager。 在此設定中，Analytics資料收集請求會轉送至Audience Manager，後者也會處理頁面的Audience Manager回應。
 
-這是多年的標準方法，很可能是您目前的設定。 如果您的[!DNL AppMeasurement]程式庫包含`AudienceManagement`模組，而您的資料收集呼叫在要求(`/b/ss/examplereportsuite/10/`)中包含`/10/`路徑，則本指南適用於您。
+這是多年的標準方法，很可能是您目前的設定。 如果您的[!DNL AppMeasurement]程式庫包含`AudienceManagement`模組，而您的資料收集呼叫在要求(`/10/`)中包含`/b/ss/examplereportsuite/10/`路徑，則本指南適用於您。
 
 ## 伺服器端轉送(SSF)與Web SDK資料流程 {#data-flows}
 
 瞭解Analytics與Audience Manager在移至Web SDK (和Edge Network)時的資料流程差異，對於下列指示至關重要。
 
-透過伺服器端轉送，Analytics區域資料收集節點會收集資料，將其轉換為Audience Manager接受的訊號，傳送至Audience Manager，並將Audience Manager回應傳回至頁面。 [!DNL AppMeasurement]程式庫中的[!DNL AudienceManagement]模組接著會處理回應（例如，卸除Cookie、傳送URL目的地）。 此程式稱為伺服器端轉送，因為Analytics會使用Adobe伺服器將資料轉送至Audience Manager。
+透過伺服器端轉送，Analytics區域資料收集節點會收集資料，將其轉換為Audience Manager接受的訊號，傳送至Audience Manager，並將Audience Manager回應傳回至頁面。 [!DNL AudienceManagement]程式庫中的[!DNL AppMeasurement]模組接著會處理回應（例如，卸除Cookie、傳送URL目的地）。 此程式稱為伺服器端轉送，因為Analytics會使用Adobe伺服器將資料轉送至Audience Manager。
 
 透過Web SDK，Edge Network會以不同動作將資料傳送至Analytics和Audience Manager。 Web SDK是單一資料庫，可將資料傳送至所有解決方案，而Edge Network會將與解決方案無關的資料點轉換為解決方案專用格式。
 
-在這個新的資料流程中，所有資料都會傳送到Edge Network [資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)，您可以[設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)，視需要傳送資料到Adobe解決方案。 若為Audience Manager，在資料流上啟用Audience Manager服務會將[!DNL XDM]和Analytics資料轉換為Audience Manager接受的訊號。 Edge Network也會將Audience Manager回應傳回至頁面，其中Web SDK會處理回應，類似於[!DNL AppMeasurement]和[!DNL AudienceManagement]模組的處理方式。
+在這個新的資料流程中，所有資料都會傳送到Edge Network [資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)，您可以[設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)，視需要傳送資料到Adobe解決方案。 若為Audience Manager，在資料流上啟用Audience Manager服務會將[!DNL XDM]和Analytics資料轉換為Audience Manager接受的訊號。 Edge Network也會將Audience Manager回應傳回至頁面，其中Web SDK會處理回應，類似於[!DNL AppMeasurement]和[!DNL AudienceManagement]模組的處理方式。
 
 ## 標籤與非標籤移轉 {#tags-vs-non-tags}
 
 無論您是使用具有[!DNL AppMeasurement]擴充功能的標籤、其他標籤管理系統中的[!DNL AppMeasurement]資料庫，或直接在頁面上放置[!DNL AppMeasurement]，將Audience Manager移轉至Web SDK的步驟均相同。 由於Audience Manager移轉取決於Analytics移轉，因此從[!DNL AppMeasurement]移轉至Web SDK的步驟會在Analytics移轉期間決定。
 
-該資訊包含在[標籤](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)型實作的Analytics檔案中。
+該資訊包含在[標籤](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)型實作的Analytics檔案中。
 
 ## XDM和`data.__adobe.`節點 {#xdm-data-nodes}
 
-[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的主要功能之一，是將資料傳送至[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/home)。 為達成此目的，同時仍收集其他Experience Cloud解決方案的資料，而不需要完全重新實作，解決方案特定資料會在資料收集伺服器呼叫中加以區隔。 此呼叫使用名為[體驗資料模型(XDM)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)的標準化JSON結構描述
+[網頁SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的主要功能之一，是將資料傳送至[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home)。 為達成此目的，同時仍收集其他Experience Cloud解決方案的資料，而不需要完全重新實作，解決方案特定資料會在資料收集伺服器呼叫中加以區隔。 此呼叫使用名為[體驗資料模型(XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)的標準化JSON結構描述
 
 與解決方案無關的元素（例如關於瀏覽器和裝置的資訊），會以預先確定的XDM結構傳送至Edge Network。 Edge Network會將此資料轉換為解決方案專用格式。 不過，Target、Analytics和Audience Manager專屬的資料會儲存在XDM裝載內的專用`data.__adobe`節點中。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 * Analytics變數`s.eVar1`在XDM承載中呈現為`data.__adobe.analytics.evar1`。
 * 與客戶忠誠度狀態相關的Target引數會儲存為`data.__adobe.target.loyaltyStatus`。
 
-`__adobe`節點中的資料會傳送至個別解決方案(例如Analytics和Audience Manager)，而不會傳送至Experience Platform，即使資料流中已啟用Experience Platform服務亦然。 這表示您可以保留Analytics和Audience Manager的目前設定，同時還能彈性地將任何必要的資料元素對應到XDM結構描述元素，以在Experience Platform中使用[資料收集的資料準備](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/data-prep)的即時使用案例。
+`__adobe`節點中的資料會傳送至個別解決方案(例如Analytics和Audience Manager)，而不會傳送至Experience Platform，即使資料流中已啟用Experience Platform服務亦然。 這表示您可以保留Analytics和Audience Manager的目前設定，同時還能彈性地將任何必要的資料元素對應到XDM結構描述元素，以在Experience Platform中使用[資料收集的資料準備](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)的即時使用案例。
 
 例如，在結帳期間用於報告購物車內容的Analytics `s.products`字串仍可以原始格式傳送給Analytics和Audience Manager。 同時，您可以使用此字串的元素，針對Experience Platform使用案例建立更直覺式的XDM購物車結構描述。
 
@@ -88,7 +88,7 @@ Edge Network會將XDM裝載和封包標題中的裝置和瀏覽器資料轉換�
 Adobe建議在下列情況下使用此實施路徑：
 
 * 您已有使用Adobe Analytics AppMeasurement JavaScript資料庫的實作。 如果您有使用Audience Manager標籤擴充功能的實作，請改為遵循[從Audience Manager標籤擴充功能移轉至Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。
-* 您打算在未來使用Real-Time CDP，但不想從頭開始使用Web SDK實作來取代Audience Manager實作。 使用Web SDK從頭開始取代實作的替代方案需要您盡最大努力，因為您需要重新建置所有Audience Manager特徵，以尋找XDM格式資料。 不過，這也是最可行的長期實作架構。 如果您的組織願意徹底實施網頁SDK，請參閱[網頁SDK檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)，而非使用本指南，以取得詳細資訊。
+* 您打算在未來使用Real-Time CDP，但不想從頭開始使用Web SDK實作來取代Audience Manager實作。 使用Web SDK從頭開始取代實作的替代方案需要您盡最大努力，因為您需要重新建置所有Audience Manager特徵，以尋找XDM格式資料。 不過，這也是最可行的長期實作架構。 如果您的組織願意徹底實施網頁SDK，請參閱[網頁SDK檔案](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)，而非使用本指南，以取得詳細資訊。
 
 ## 移轉至Web SDK所需的步驟
 
@@ -96,7 +96,7 @@ Adobe建議在下列情況下使用此實施路徑：
 
 +++**1. 規劃Analytics移轉**。
 
-請與您的Analytics團隊合作，遵循[標籤](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)型實作中的Analytics移轉步驟。 在您規劃Analytics移轉後，請返回本指南並繼續Audience Manager步驟，以決定您需要針對Audience Manager執行的操作，好讓Analytics和Audience Manager移轉可同時部署。
+請與您的Analytics團隊合作，遵循[標籤](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)或[JavaScript](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)型實作中的Analytics移轉步驟。 在您規劃Analytics移轉後，請返回本指南並繼續Audience Manager步驟，以決定您需要針對Audience Manager執行的操作，好讓Analytics和Audience Manager移轉可同時部署。
 
 +++
 
@@ -150,13 +150,13 @@ Adobe建議在下列情況下使用此實施路徑：
 
 +++**4.將客戶ID新增至身分對應**
 
-大多數Audience Manager實作會在跨裝置個人化案例中使用[設定檔合併規則](../features/profile-merge-rules/merge-rules-overview.md)，並協助根據訪客的驗證狀態（登入或登出）控制訪客可以符合的區段。 設定檔合併規則要求客戶擁有的識別碼（CRM ID、帳號等）在驗證後每次資料收集呼叫時傳送至Audience Manager。 先前，訪客ID服務([!DNL visitor.js])的`setCustomerIDs`函式是用來將客戶ID附加至每個Analytics資料收集呼叫，然後再轉送至Audience Manager。
+大多數Audience Manager實作會在跨裝置個人化案例中使用[設定檔合併規則](../features/profile-merge-rules/merge-rules-overview.md)，並協助根據訪客的驗證狀態（登入或登出）控制訪客可以符合的區段。 設定檔合併規則要求客戶擁有的識別碼（CRM ID、帳號等）在驗證後每次資料收集呼叫時傳送至Audience Manager。 先前，訪客ID服務(`setCustomerIDs`)的[!DNL visitor.js]函式是用來將客戶ID附加至每個Analytics資料收集呼叫，然後再轉送至Audience Manager。
 
-透過Web SDK，這些身分現在需要使用名為[IdentityMap](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/identitymap)的特殊XDM建構傳送至Edge Network。
+透過Web SDK，這些身分現在需要使用名為[IdentityMap](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)的特殊XDM建構傳送至Edge Network。
 
-若要在身分對應中正確傳遞身分，必須瞭解[身分名稱空間](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)，並仔細考慮要傳遞哪些身分，尤其是在將資料傳送至Experience Platform沙箱時。 [本文章](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-21305)概述這些考量事項和指示。
+若要在身分對應中正確傳遞身分，必須瞭解[身分名稱空間](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)，並仔細考慮要傳遞哪些身分，尤其是在將資料傳送至Experience Platform沙箱時。 [本文章](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21305)概述這些考量事項和指示。
 
-決定要傳遞的身分以及傳遞時間後，請遵循標籤內使用[!UICONTROL Identity map] **[!UICONTROL Identity map]** [資料元素](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/data-element-types#identity-map)的指南，或如[身分資料概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/identity/overview)中所述手動設定，以符合您的Web SDK部署策略。
+決定要傳遞的身分以及傳遞時間後，請遵循標籤內使用[!UICONTROL Identity map] **[!UICONTROL Identity map]** [資料元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/data-element-types#identity-map)的指南，或如[身分資料概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/overview)中所述手動設定，以符合您的Web SDK部署策略。
 
 +++
 
@@ -164,13 +164,13 @@ Adobe建議在下列情況下使用此實施路徑：
 
 許多年的標準作法是將Audience Manager UUID （第三方Demdex Cookie中的值）放在通常名為`aam_uuid`的第一方Cookie中。
 
-若要設定Cookie，您必須在設定`audienceManagementModule`時，於Analytics標籤擴充功能之&#x200B;**[!UICONTROL Unique User ID Cookie]**&#x200B;區段的&#x200B;**[!UICONTROL Name]**&#x200B;欄位或`uuidCookie`欄位中輸入Cookie名稱。 雖然程式碼中通常會設定，但Cookie很少使用，因為Audience Manager UUID值是廣告平台使用的裝置專屬跨網域識別碼，且很少提供做為第一方識別碼的值。
+若要設定Cookie，您必須在設定&#x200B;**[!UICONTROL Name]**&#x200B;時，於Analytics標籤擴充功能之&#x200B;**[!UICONTROL Unique User ID Cookie]**&#x200B;區段的`uuidCookie`欄位或`audienceManagementModule`欄位中輸入Cookie名稱。 雖然程式碼中通常會設定，但Cookie很少使用，因為Audience Manager UUID值是廣告平台使用的裝置專屬跨網域識別碼，且很少提供做為第一方識別碼的值。
 
 如果您發現實作需要此`aam_uuid` Cookie才能在移轉至Web SDK後繼續設定，您可以使用兩種方式擷取Audience Manager UUID。
 
-1. 來自[Edge Network互動端點](https://developer.adobe.com/data-collection-apis/docs/endpoints/interact/)的每個回應都包含具有`id`個節點的承載。 `CORE`名稱空間承載的`id`節點包含Audience Manager UUID。
+1. 來自[Edge Network互動端點](https://developer.adobe.com/data-collection-apis/docs/endpoints/interact/)的每個回應都包含具有`id`個節點的承載。 `id`名稱空間承載的`CORE`節點包含Audience Manager UUID。
 
-2. 使用Web SDK的[getIdentity](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/getidentity)命令來擷取它。 使用檔案中列出的`CORE`名稱空間，並從回應中的`identity.CORE`欄位擷取值。
+2. 使用Web SDK的[getIdentity](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getidentity)命令來擷取它。 使用檔案中列出的`CORE`名稱空間，並從回應中的`identity.CORE`欄位擷取值。
 
 不論使用何種方法擷取Audience Manager UUID，開發團隊都必須剖析回應、擷取UUID並設定Cookie。 無法透過網頁SDK自動設定此Cookie。
 
@@ -178,13 +178,13 @@ Adobe建議在下列情況下使用此實施路徑：
 
 ## 在Analytics報表套裝管理器UI中設定伺服器端轉送和Audience Analytics {#configure-ssf-analytics}
 
-如果您熟悉Analytics [伺服器端轉送](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)功能，可能會想知道：「*是否應在Analytics報表套裝管理員UI中停用伺服器端轉送設定，以防止將Analytics資料傳送至Audience Manager兩次？*」。
+如果您熟悉Analytics [伺服器端轉送](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)功能，可能會想知道：「*是否應在Analytics報表套裝管理員UI中停用伺服器端轉送設定，以防止將Analytics資料傳送至Audience Manager兩次？*」。
 
 答案是否定的，您不可以停用此設定，原因如下：
 
-1. 在資料流上啟用Audience Manager服務時，Edge Network會將`cm.ssf`變數附加至傳送給Analytics的所有資料收集請求。 這麼做也會防止Analytics資料傳送至Audience Manager。 當資料流上啟用Assurance服務時，用於驗證Analytics移轉的任何Audience Manager記錄都會顯示`cm.ssf=1`變數。 如需詳細資訊，請參閱伺服器端轉送的[Analytics和GDPR法規遵循頁面](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf-gdpr)。
+1. 在資料流上啟用Audience Manager服務時，Edge Network會將`cm.ssf`變數附加至傳送給Analytics的所有資料收集請求。 這麼做也會防止Analytics資料傳送至Audience Manager。 當資料流上啟用Assurance服務時，用於驗證Analytics移轉的任何Audience Manager記錄都會顯示`cm.ssf=1`變數。 如需詳細資訊，請參閱伺服器端轉送的[Analytics和GDPR法規遵循頁面](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf-gdpr)。
 
-1. 此設定也會啟用[!DNL Audience Analytics]整合的資料流。 如[Audience Analytics概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics/integration/audience-analytics/mc-audiences-aam)中所述，此整合需要伺服器端轉送，因為對Analytics資料收集伺服器的Audience Manager回應會在處理前新增至Analytics點選。 Edge Network中也會發生類似的程式。 啟用伺服器端轉送時，Edge Network會將必要區段從Audience Manager回應新增至傳送至Analytics的資料。
+1. 此設定也會啟用[!DNL Audience Analytics]整合的資料流。 如[Audience Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics/integration/audience-analytics/mc-audiences-aam)中所述，此整合需要伺服器端轉送，因為對Analytics資料收集伺服器的Audience Manager回應會在處理前新增至Analytics點選。 Edge Network中也會發生類似的程式。 啟用伺服器端轉送時，Edge Network會將必要區段從Audience Manager回應新增至傳送至Analytics的資料。
 
 總而言之，此設定必須保持啟用，以便Audience Analytics可繼續在Web SDK實作中運作，而且沒有任何資料會在Audience Manager中重複計算。
 

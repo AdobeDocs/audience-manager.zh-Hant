@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 速率限制 {#rate-limiting}
 
-如果Adobe偵測到過多DCS API呼叫，可能會對服務可用性造成負面影響，則可能會引入速率限制。
+如果偵測到過多DCS API呼叫可能對服務可用性造成負面影響，Adobe可能會引入速率限制。
 
 如果已啟用速率限制，您可能會在DCS呼叫上收到`429 Too Many Requests`個HTTP回應狀態碼。 收到此HTTP回應時，請稍後重試API呼叫。
 

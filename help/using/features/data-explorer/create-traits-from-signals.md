@@ -25,7 +25,7 @@ ht-degree: 0%
 
 建立新特徵時，會根據訊號型別預先設定特徵型別：
 
-* 即時訊號、可操作的記錄檔和[!DNL Adobe Analytics]訊號的&#x200B;**[!UICONTROL Rule-based]**&#x200B;特徵；
+* 即時訊號、可操作的記錄檔和&#x200B;**[!UICONTROL Rule-based]**&#x200B;訊號的[!DNL Adobe Analytics]特徵；
 
 * 已上線訊號的&#x200B;**[!UICONTROL Onboarded]**&#x200B;特徵。
 

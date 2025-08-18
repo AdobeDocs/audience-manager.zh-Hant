@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 新增或編輯伺服器對伺服器目的地的區段 {#add-edit-segments}
 
-您只能新增或編輯伺服器對伺服器([!DNL S2S])目的地的區段。 您無法使用[[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)建立[!DNL S2S]目的地。 請聯絡您的顧問以設定[!DNL S2S]目的地。 請依照這些指示為[!DNL S2S]目的地新增或編輯區段。
+您只能新增或編輯伺服器對伺服器([!DNL S2S])目的地的區段。 您無法使用[!DNL S2S]建立[[!UICONTROL Destination Builder]](/help/using/features/destinations/destination-builder.md)目的地。 請聯絡您的顧問以設定[!DNL S2S]目的地。 請依照這些指示為[!DNL S2S]目的地新增或編輯區段。
 
 <!-- destination-s2s-edit.xml -->
 

@@ -44,7 +44,7 @@ ht-degree: 4%
 
 ## 序列化索引鍵值配對的分隔符號和分隔符號 {#delimiters-separators}
 
-使用序列化索引鍵值配對，您必須指定標籤來分隔這些變數內和之間的值。 Audience Manager需要使用下列分隔符號和分隔符號：
+使用序列化索引鍵值配對，您必須指定標籤來分隔這些變數內和之間的值。 Audience Manager需要下列分隔符號和分隔符號：
 
 <table id="table_8FD4E6B9506943AEA619D4089913ECBC"> 
  <thead> 

@@ -26,8 +26,8 @@ ht-degree: 0%
 1. **[!UICONTROL Add New]**：使用此選項來啟用[!UICONTROL Segment Builder]並建立新區段。
 2. **[!UICONTROL Edit]**：使用此選項來變更目前區段的設定。
 3. **[!UICONTROL Duplicate]**：使用此選項來建立目前區段的復本。
-4. **[!UICONTROL Delete]**：使用此選項從您的Audience Manager帳戶移除目前的區段。
-5. **[!UICONTROL Marketplace Recommendations]**：使用此選項從您未訂閱的[!UICONTROL Audience Marketplace]個資料摘要尋找與您正在檢視的區段類似的區段。 請參閱[資料購買者的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，瞭解如何瀏覽Marketplace並尋找類似的區段。
+4. **[!UICONTROL Delete]**：使用此選項從您的Audience Manager帳戶中移除目前的區段。
+5. **[!UICONTROL Marketplace Recommendations]**：使用此選項從您未訂閱的[!UICONTROL Audience Marketplace]個資料摘要尋找與您正在檢視的區段類似的區段。 請參閱[資料購買者適用的Audience Marketplace](../audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)，瞭解如何在Marketplace中瀏覽及尋找類似的區段。
 
 ![基本區段資訊](assets/basic-segment-information.png)
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您擁有符合區段資格的跨裝置ID，Audience Manager僅會顯示[!UICONTROL Identity Type Breakdown]報表。
+   >只有當您擁有符合區段資格的跨裝置ID時，Audience Manager才會顯示[!UICONTROL Identity Type Breakdown]報表。
 
    請觀看以下影片以瞭解[!UICONTROL Identity Type Breakdown]的概觀。
    >[!VIDEO](https://video.tv.adobe.com/v/27977/)

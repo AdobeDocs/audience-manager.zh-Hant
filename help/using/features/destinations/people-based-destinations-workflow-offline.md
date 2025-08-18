@@ -22,11 +22,11 @@ ht-degree: 1%
 
 ## 步驟1 — 上線離線特徵 {#step-1-onboard-traits}
 
-在此案例中建立對象區段的第一步，是將您的離線客戶資料帶入Audience Manager。
+在此案例中建立對象區段的第一步，是將您的離線客戶資料匯入Audience Manager。
 
 >[!IMPORTANT]
 >
-> 在繼續之前，請確定您即將上線的客戶活動已定義在與對應的[已上線特徵](../traits/trait-and-segment-qualification-reference.md)的Audience Manager中。
+> 在繼續之前，請確定您即將上線的客戶活動已在Audience Manager中定義，且具有對應的[已上線特徵](../traits/trait-and-segment-qualification-reference.md)。
 
 無論您現有的Audience Manager客戶ID ([DPUUID](../../reference/ids-in-aam.md))是否為雜湊電子郵件，您都必須對包含您的[DPUUID](../../reference/ids-in-aam.md)的資料來源執行特徵上線。
 
@@ -81,13 +81,13 @@ ht-degree: 1%
 1. 使用下拉式功能表為此資料來源選取&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;標籤。
    >[!IMPORTANT]
    >
-   >此選項僅會將資料來源標示為包含使用該特定演演算法雜湊的資料。 Audience Manager在此步驟不會雜湊資料。 確定您計畫儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演演算法雜湊。 否則，您將無法將其用於[!DNL People-Based Destinations]。
+   >此選項僅會將資料來源標示為包含使用該特定演演算法雜湊的資料。 Audience Manager不會在此步驟將資料雜湊。 確定您計畫儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演演算法雜湊。 否則，您將無法將其用於[!DNL People-Based Destinations]。
 
    ![pbd-datasource-settings](assets/pbd-ds-config.png)
 
    >[!NOTE]
    >
-   > 請參閱[資料上線](people-based-destinations-prerequisites.md#data-onboarding)，以取得有關如何將離線資料帶入People-Based DestinationsAudience Manager的常見問題。
+   > 請參閱[資料上線](people-based-destinations-prerequisites.md#data-onboarding)，以取得有關如何將離線資料帶入Audience Manager以人物為基礎的目的地的常見問題。
 
 觀看以下影片以瞭解如何為[!UICONTROL People-Based Destinations]建立資料來源的影片教學課程。
 
@@ -146,8 +146,8 @@ ht-degree: 1%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Audience Data]** -> **[!UICONTROL Profile Merge Rules]**。
 2. 按一下 [!UICONTROL Add New Rule]。
 3. 輸入設定檔合併規則&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
-4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;區段中，從&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;清單中選取&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;規則。
-5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;清單中，選取您的特徵要上線的資料來源。
+4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;區段中，從&#x200B;**[!UICONTROL All Cross-Device Profiles]**&#x200B;清單中選取&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;規則。
+5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**清單中，選取您的特徵要上線的資料來源。
    ![merge-rule-setup](assets/pbd-pmr.png)
 
 ## 步驟5 — 建立對象區段 {#create-audience-segments}
@@ -159,15 +159,15 @@ ht-degree: 1%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
    ![以人物為基礎的整合](assets/pbd-config.png)
 1. 按一下 **[!UICONTROL Add Account]**。
-1. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉式功能表選取您要設定整合的平台。
+1. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表選取您要設定整合的平台。
    ![以人員為基礎的平台](assets/pbd-add.png)
 1. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
-1. 在驗證您的Social Platform帳戶後，系統會將您重新導向至Audience Manager，您應可在其中檢視相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
-1. Audience Manager會在頁面頂端顯示通知，告知您帳戶是否已成功新增。 通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
+1. 在驗證您的Social Platform帳戶後，您會重新導向至Audience Manager，在那裡您應該會看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
+1. Audience Manager會在頁面頂端顯示通知，讓您知道帳戶是否已成功新增。 通知也可讓您新增連絡人電子郵件地址，以在社交平台驗證即將到期時接收通知。
 
 >[!IMPORTANT]
 >
->Audience Manager會透過在特定時間後過期的驗證權杖來處理與社交平台的整合。 如需如何更新過期權杖的詳細資訊，請參閱驗證權杖續約。
+>Audience Manager會透過驗證權杖（將於特定時間後過期）來處理與社交平台的整合。 如需如何更新過期權杖的詳細資訊，請參閱驗證權杖續約。
 
 ## 步驟7 — 建立以人物為基礎的目的地 {#create-destination}
 
@@ -177,7 +177,6 @@ ht-degree: 1%
    * **[!UICONTROL Type]**：以人物為基礎；
    * **[!UICONTROL Platform]**：選取您要傳送受眾區段的目標以人物為基礎的平台；
    * **[!UICONTROL Account]**：選取與所選平台相關聯的所需廣告商帳戶。
-
      ![create-destination](assets/pbd-create-destination.png)
 1. 按一下 **[!UICONTROL Next]**。
 1. 選擇要為此目的地設定的&#x200B;**[!UICONTROL Data Export Labels]**。

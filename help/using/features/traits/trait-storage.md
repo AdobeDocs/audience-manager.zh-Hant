@@ -32,7 +32,7 @@ ht-degree: 3%
 
 <!-- t_tb_create_storage.xml -->
 
-設定新特徵時，您可以在[!UICONTROL Basic Information]區段中建立新的儲存資料夾。 此外，也可以在主要[!UICONTROL Traits]清單儀表板的[!UICONTROL Trait Storage]區段中建立資料夾。
+設定新特徵時，您可以在[!UICONTROL Basic Information]區段中建立新的儲存資料夾。 此外，也可以在主要[!UICONTROL Trait Storage]清單儀表板的[!UICONTROL Traits]區段中建立資料夾。
 
 若要建立新的儲存資料夾：
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 <!-- t_tb_rename_delete_storage.xml -->
 
-您可以從主要[!UICONTROL Traits]清單儀表板的[!UICONTROL Trait Storage]區段重新命名或刪除儲存資料夾。
+您可以從主要[!UICONTROL Trait Storage]清單儀表板的[!UICONTROL Traits]區段重新命名或刪除儲存資料夾。
 
 * 將滑鼠懸停在資料夾上並按一下鉛筆圖示，即可重新命名資料夾。
 * 將游標移至資料夾上並按一下&#x200B;**X**&#x200B;圖示，以刪除資料夾。

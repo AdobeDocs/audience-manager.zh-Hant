@@ -1,5 +1,5 @@
 ---
-description: 資料收集元件包括資料收集伺服器、DILAPI、傳入伺服器對伺服器的資料傳輸，以及記錄檔。
+description: 資料收集元件包括資料收集伺服器、DIL API、傳入伺服器對伺服器資料傳輸，以及記錄檔。
 seo-description: Data collection components include the Data Collection Servers, the DIL API, inbound server-to-server data transfers, and log files.
 seo-title: Data Collection Components
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # 資料收集元件{#data-collection-components}
 
-資料收集元件包括資料收集伺服器、DILAPI、傳入伺服器對伺服器的資料傳輸，以及記錄檔。
+資料收集元件包括資料收集伺服器、DIL API、傳入伺服器對伺服器資料傳輸，以及記錄檔。
 
 <!-- 
 
@@ -78,7 +78,7 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
  -->
 
-如果[!UICONTROL PCS]有17天未使用，則會排清特徵。 不過，這些特徵不會遺失。 它們會儲存在Hadoop中。 如果在其他時間再次看到使用者，則Hadoop會將其所有特徵推送回[!UICONTROL PCS]，通常是在24小時內。
+如果[!UICONTROL PCS]有17天未使用，則會排清特徵。 不過，這些特徵不會遺失。 儲存在Hadoop中。 如果在其他時間再次看到使用者，則Hadoop會將其所有特徵推送回[!UICONTROL PCS]，通常在24小時內完成。
 
 **其他[!UICONTROL DCS/PCS]個處理程式：隱私權選擇退出**
 
@@ -86,7 +86,7 @@ Removed /dpm calls from the bulleted list. /dpm calls have been deprecated.
 
 ## Data Integration Library (DIL) {#dil}
 
-[!UICONTROL DIL]是您放置在資料收集頁面上的程式碼。 請參閱[DILAPI](../../dil/dil-overview.md)，以取得可用服務與方法的詳細資訊。
+[!UICONTROL DIL]是您放置在資料收集頁面上的程式碼。 請參閱[DIL API](../../dil/dil-overview.md)，以取得可用服務與方法的詳細資訊。
 
 ## 傳入伺服器對伺服器 {#inbound-outbound-server}
 

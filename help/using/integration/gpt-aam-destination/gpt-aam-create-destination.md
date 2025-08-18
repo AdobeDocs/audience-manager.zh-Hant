@@ -10,7 +10,7 @@ exl-id: 26373826-de06-49e5-82fd-bb6588a73fb9
 source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 3%
 
 ## 目的地
 
-在Audience Manager中，*`destination`*&#x200B;是任何其他系統（廣告伺服器、[!DNL DSP]、廣告網路等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。[!UICONTROL Destination Builder]提供可讓您建立和管理這些資料傳遞程式的工具。 Audience Manager目的地功能位於&#x200B;*[!UICONTROL Audience Data]>[!UICONTROL Destinations]*。 若要開始使用，請按一下&#x200B;**[!UICONTROL Add New Destination]**&#x200B;並遵循下列步驟。
+在Audience Manager中，*`destination`*&#x200B;是您想要與其共用資料的任何其他系統（廣告伺服器、[!DNL DSP]、廣告網路等）。 [!UICONTROL Destination Builder]提供可讓您建立和管理這些資料傳遞程式的工具。 Audience Manager目的地功能位於&#x200B;*[!UICONTROL Audience Data]>[!UICONTROL Destinations]*。 若要開始使用，請按一下&#x200B;**[!UICONTROL Add New Destination]**&#x200B;並遵循下列步驟。
 
 ## 基本資訊
 
 若要完成[!UICONTROL Basic Information]區段：
 
 1. 為目的地命名。
-1. 從[!UICONTROL Type]下拉式清單中選取&#x200B;**[!UICONTROL "Cookie"]**。
+1. 從&#x200B;**[!UICONTROL "Cookie"]**&#x200B;下拉式清單中選取[!UICONTROL Type]。
 1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;並移至[!UICONTROL Configuration]與[!UICONTROL Segment Mappings]區段。
 
 ## Cookie設定

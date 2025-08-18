@@ -1,5 +1,5 @@
 ---
-description: Audience Manager使用分散式邊緣運算拓撲，滿足外部來源對我們的系統的需求。
+description: Audience Manager使用分散式邊緣運算拓撲，以符合外部來源對我們的系統的需求。
 seo-description: Audience Manager uses distributed, edge-computing topologies to meet the demands placed on our systems by external sources.
 seo-title: Understanding the Edge Data Center
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 瞭解Edge資料中心{#understanding-the-edge-data-center}
 
-Audience Manager使用分散式邊緣運算拓撲，滿足外部來源對我們的系統的需求。
+Audience Manager使用分散式邊緣運算拓撲，以符合外部來源對我們的系統的需求。
 
 ## Edge資料中心基本需知 {#edge-data-center-basics}
 
@@ -42,4 +42,4 @@ Edge運算提供更優異的效能，因應網際網路廣泛擴散的需求，�
 
 ## 地理分佈與負載平衡 {#geo-dist-balance}
 
-檢視[資料收集元件](../../reference/system-components/components-data-collection.md)中的[!DNL DCS]區段。
+檢視[!DNL DCS]資料收集元件[中的](../../reference/system-components/components-data-collection.md)區段。

@@ -24,7 +24,7 @@ ht-degree: 3%
 >
 >特徵型別方法不會將特徵指派給[通用分類法](../../api/rest-api-main/aam-api-taxonomy.md#taxonomic-api-methods)使用的類別。 請將其視為與通用分類法不同的標籤。
 
-對於視覺參考，[!UICONTROL Trait Types]是位於&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;下的[!DNL UI]中的下拉式控制項。
+對於視覺參考，[!UICONTROL Trait Types]是位於[!DNL UI]下的&#x200B;**[!UICONTROL Traits > Create new trait > Basic Information]**&#x200B;中的下拉式控制項。
 
 ## 建立新特徵型別 {#create-trait-type}
 

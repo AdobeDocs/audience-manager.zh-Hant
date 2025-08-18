@@ -38,11 +38,11 @@ Audience Manager包含下列元件：
 
 ## DIL/TIM容器 {#dil-tim}
 
-[!UICONTROL DIL]容器可協助將[!DNL Audience Manager]資料收集程式碼部署到您的網站。 [!UICONTROL TIM]是已過時的標籤插入管理員。 [!DNL Audience Manager]已不再使用它。 請改用[Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hant)中的[!DNL Audience Manager]擴充功能來設定並產生您放置在詳細目錄頁面的容器代碼。
+[!UICONTROL DIL]容器可協助將[!DNL Audience Manager]資料收集程式碼部署到您的網站。 [!UICONTROL TIM]是已過時的標籤插入管理員。 [!DNL Audience Manager]已不再使用它。 請改用[!DNL Audience Manager]Adobe Experience Platform Tags[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)擴充功能來設定並產生您放置在詳細目錄頁面的容器代碼。
 
 ## Data Integration Library (DIL) {#dil}
 
-[資料資訊庫](../../dil/dil-overview.md) (DIL)是從網站收集資料的自包含API模組。 [!UICONTROL DIL]可協助您免除撰寫特殊程式碼以進行資料收集、整合、讀取Cookie值以及復原頁面資料等作業。 [!UICONTROL DIL]會自動執行這些動作。 此外，[!UICONTROL DIL]是精簡的。 這是獨立的程式碼程式庫，有助於減少收集資訊所需的程式碼數量。 最後，[!UICONTROL DIL]會協助您將[!DNL Audience Manager]與[!DNL Adobe]Experience Cloud中的其他產品整合。
+[資料資訊庫](../../dil/dil-overview.md) (DIL)是自包含的API模組，可從您的網站收集資料。 [!UICONTROL DIL]可協助您免除撰寫特殊程式碼以進行資料收集、整合、讀取Cookie值以及復原頁面資料等作業。 [!UICONTROL DIL]會自動執行這些動作。 此外，[!UICONTROL DIL]是精簡的。 這是獨立的程式碼程式庫，有助於減少收集資訊所需的程式碼數量。 最後，[!UICONTROL DIL]可協助您將[!DNL Audience Manager]與[!DNL Adobe] Experience Cloud中的其他產品整合。
 
 ## Akamai {#akamai}
 

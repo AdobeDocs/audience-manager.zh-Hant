@@ -39,7 +39,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 回應
 
-回應會將瀏覽器重新導向至`d_rd`引數中指定的[!DNL URL]。 回應字串可包含下列任何支援巨集所產生的值。
+回應會將瀏覽器重新導向至[!DNL URL]引數中指定的`d_rd`。 回應字串可包含下列任何支援巨集所產生的值。
 
 根據上述範例，瀏覽器會重新導向至下列[!DNL URL]：
 
@@ -47,7 +47,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 支援的巨集
 
-按一下「事件」可支援下表列出的巨集。 巨集是自我包含程式碼的一個小單位，當廣告標籤載入行銷活動和使用者追蹤時會啟用。 只要這些巨集標示為下列格式，就會隨目的地[!DNL URL]一併傳送： `%macro%`。 有些金鑰沒有巨集，而是接受硬式編碼的ID值。 如果要分析[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的資料，則需要接受硬式編碼值的金鑰。
+按一下「事件」可支援下表列出的巨集。 巨集是自我包含程式碼的一個小單位，當廣告標籤載入行銷活動和使用者追蹤時會啟用。 只要這些巨集標示為下列格式，就會隨目的地[!DNL URL]一併傳送： `%macro%`。 有些金鑰沒有巨集，而是接受硬式編碼的ID值。 如果您想要分析[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)中的資料，則需要接受硬式編碼值的金鑰。
 
 <table id="table_6EB65C3B7D0E49C59AA6C932549E33FC"> 
  <thead> 
@@ -66,17 +66,17 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
    <td colname="col02"> <p>沒有巨集。 </p> <p>接受硬式編碼ID值。 </p> </td> 
-   <td colname="col2"> <p>廣告商ID。</p> <p>廣告商資料來源的整合程式碼。 請注意，這與Audience Manager資料來源無關。</p> <p> <span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>廣告商ID。</p> <p>廣告商資料來源的整合程式碼。 請注意，這與Audience Manager資料來源無關。</p> <p> <span class="wintitle">個Audience Optimization</span>報表的必要專案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bu</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_bu%</code> </p> </td> 
-   <td colname="col2"> <p>業務單位的數值ID。 </p> <p> <span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>業務單位的數值ID。 </p> <p> <span class="wintitle">個Audience Optimization</span>報表的必要專案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_campaign</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_campaign%</code> </p> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p> <span class="wintitle">Audience Optimization</span>報告需要。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值促銷活動ID。 </p> <p> <span class="wintitle">個Audience Optimization</span>報表的必要專案。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_creative</code> </p> </td> 
@@ -96,7 +96,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword">Experience Cloud</span> ID (ECID)。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與Experience CloudID</a>。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID)。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud ID</a>。 </p> <p>選填。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -173,4 +173,4 @@ d_rd%3Dhttp%253A%252F%252Fadobe.com%252Fcallback%253Fcreative%253D%2525d_creativ
 
 >[!MORELIKETHIS]
 >
->* Audience Optimization報表的[資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)
+>* [Audience Optimization報表的資料和中繼資料檔案](../../reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md)

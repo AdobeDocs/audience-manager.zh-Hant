@@ -104,7 +104,7 @@ r_t2t_data_pop.xml
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle">個重疊不重複專案</span></b> </td> 
-   <td colname="col2"> <p>若要取得重疊%，Audience Manager會使用下列公式：</p> <p>重疊唯一性/（基本唯一性+重疊唯一性 — 重疊唯一性）</p> </td> 
+   <td colname="col2"> <p>若要取得重疊%，Audience Manager會使用以下公式：</p> <p>重疊唯一性/（基本唯一性+重疊唯一性 — 重疊唯一性）</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b><span class="wintitle">個重疊特徵不重複專案</span></b> </td> 

@@ -106,7 +106,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> CLOSE_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入右大括弧<code>&rbrace;</code>字元。 </p> </td> 
+   <td colname="col2"> <p>插入右大括弧<code>}</code>字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
@@ -134,7 +134,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入左大括弧<code>&lbrace;</code>字元。 </p> </td> 
+   <td colname="col2"> <p>插入左大括弧<code>{</code>字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
@@ -217,7 +217,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> UUID </code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword">Audience Manager</span>使用者識別碼。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Audience Manager </span>使用者識別碼。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -129,11 +129,11 @@ The illustration below shows the results of running a general report for the Tra
 
 ### 即時區段人口數
 
-此量度代表在指定時間範圍內即時看到的實際不重複訪客數量，以及在Audience Manager看到符合區段資格條件的訪客數量。
+此量度代表在指定時間範圍內即時檢視的不重複訪客的實際數量，以及在Audience Manager看到符合區段資格的人數。
 
 ### 總區段母體
 
-此量度代表在您選取的回顧期間內符合區段資格的Audience ManagerUUID總數。 1天的總區段母體代表您鎖定目標時最準確的使用者群。
+此量度代表在您選取的回顧期間內符合區段資格的Audience Manager UUID總數。 1天的總區段母體代表您鎖定目標時最準確的使用者群。
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ The illustration below shows the results of running a general report for the Tra
 
 **即時區段母體**
 
-此量度代表在指定時間範圍內即時看到的實際不重複訪客數量，以及在Audience Manager看到符合區段資格條件的訪客數量。
+此量度代表在指定時間範圍內即時檢視的不重複訪客的實際數量，以及在Audience Manager看到符合區段資格的人數。
 
 **總區段母體**
 
-此量度代表在回顧期間內，屬於區段且已傳送至目的地的Audience ManagerUUID總數。
+此量度代表在回顧期間內，屬於區段且已傳送至目的地的Audience Manager UUID總數。
 
 下圖顯示針對「目的地」報表型別執行一般報表的結果。
 

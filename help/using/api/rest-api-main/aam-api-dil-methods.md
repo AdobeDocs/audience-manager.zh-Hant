@@ -1,5 +1,5 @@
 ---
-description: 可讓您以程式設計方式使用Data Integration Library(DIL)的方法。
+description: 可讓您以程式設計方式使用Data Integration Library (DIL)的方法。
 seo-description: Methods that let you work programmatically with the Data Integration Library (DIL).
 seo-title: Data Integration Library API Methods
 solution: Audience Manager
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 <!-- c_data_integr_library_api.xml -->
 
-## 傳回DIL版本 {#return-version-dil}
+## DIL的傳回版本 {#return-version-dil}
 
 傳回從最舊到最新排序之版本清單的`GET`方法。
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 ## 傳回版本的JSON結構描述 {#return-json-schema-version}
 
-傳回[!UICONTROL DIL]版本[!DNL JSON]結構描述的`GET`方法。 支援使用版本的別名[!UICONTROL LATEST]來取得最新版本的[!UICONTROL DIL]。
+傳回`GET`版本[!DNL JSON]結構描述的[!UICONTROL DIL]方法。 支援使用版本的別名[!UICONTROL LATEST]來取得最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -380,7 +380,7 @@ ht-degree: 3%
 
 ## 產生DIL {#generate-dil}
 
-使用指定版本[!UICONTROL DIL]根據傳入的要求內文產生[!UICONTROL DIL]的`GET`方法。 如果別名`LATEST`用於URL中的版本，則會產生最新版本的[!UICONTROL DIL]。
+使用指定版本`GET`根據傳入的要求內文產生[!UICONTROL DIL]的[!UICONTROL DIL]方法。 如果別名`LATEST`用於URL中的版本，則會產生最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_generate_dil.xml -->
 

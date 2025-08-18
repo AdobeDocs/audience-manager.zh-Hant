@@ -21,7 +21,7 @@ ht-degree: 8%
 
 ## [!UICONTROL Declared ID] 定位 {#declared-id-targeting}
 
-從不使用或接受永久儲存機制的裝置或瀏覽器（例如協力廠商[!DNL cookies]），將使用者ID與[!DNL Audience Manager]交換及同步。
+從不使用或接受永久儲存機制的裝置或瀏覽器（例如協力廠商[!DNL Audience Manager]），將使用者ID與[!DNL cookies]交換及同步。
 
 ## [!UICONTROL Declared ID]目標定位的用途 {#declared-id-targeting-purpose}
 
@@ -37,7 +37,7 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td colname="col1"> <b>事件呼叫</b> </td> 
-   <td colname="col2"> <p>若要使用，您需要在頁面上使用<span class="wintitle"> DIL </span>和<a href="https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant" format="https" scope="external"> Adobe Experience Platform Identity Service </a>程式碼。 <span class="wintitle"> DIL </span>從<span class="keyword"> Adobe Experience Platform Identity Service </span>提供的<code> setVisitorID </code>函式中取得<span class="wintitle">個宣告識別碼</span>，並將其傳遞至<span class="keyword"> Audience Manager </span>。 </p> </td> 
+   <td colname="col2"> <p>若要使用，您需要在頁面上使用<span class="wintitle"> DIL </span>和<a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a>程式碼。 <span class="wintitle"> DIL </span>從<span class="wintitle"> Adobe Experience Platform Identity Service </span>提供的<code> setVisitorID </code>函式中取得<span class="keyword">個宣告識別碼</span>，並將其傳遞至<span class="keyword"> Audience Manager </span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>符合ID</b> </td> 
@@ -58,16 +58,16 @@ ht-degree: 8%
 
 ## 選擇退出呼叫 {#opt-out-calls}
 
-[!UICONTROL declared ID]程式遵循網站訪客偏好設定，以選擇退出您網站的[!DNL Audience Manager]目標定位。 當[!DNL Audience Manager]收到選擇退出要求時，[!DNL DCS]傳回的[!DNL JSON]包含錯誤碼171，且訊息為`Encountered opt out tag`，而非[!DNL Audience Manager]使用者識別碼。
+[!UICONTROL declared ID]程式遵循網站訪客偏好設定，以選擇退出您網站的[!DNL Audience Manager]目標定位。 當[!DNL Audience Manager]收到選擇退出要求時，[!DNL JSON]傳回的[!DNL DCS]包含錯誤碼171，且訊息為`Encountered opt out tag`，而非[!DNL Audience Manager]使用者識別碼。
 
-* [!DNL Audience Manager]可以與[!DNL URL]中的[!DNL Audience Manager] [!UICONTROL UUID]一起傳入[!UICONTROL declared ID]選擇退出。
+* [!DNL Audience Manager]可以與[!UICONTROL declared ID]中的[!DNL Audience Manager] [!UICONTROL UUID]一起傳入[!DNL URL]選擇退出。
 * [!UICONTROL declared ID]選擇退出會依每個合作夥伴儲存在[!UICONTROL Profile Cache Server] ([!UICONTROL PCS])中。 沒有使用[!UICONTROL declared IDs]的平台層級選擇退出。 此外，[!DNL Audience Manager]會選擇讓使用者退出邊緣上的該特定區域（選擇退出不會跨[!DNL DCS]區域）。
 
 如需選擇退出資料收集的詳細資訊，請參閱[資料隱私權](../overview/data-security-and-privacy/data-privacy.md)。
 
 ## [!UICONTROL Declared ID]個選擇退出範例 {#opt-out-examples}
 
-您可以使用`d_cid`和`d_cid_ic`機碼值組發出[!UICONTROL declared ID]個選擇退出請求。 舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。請參閱 [CID 取代 DPID 及 DPUUID](../reference/cid.md)。在這些範例中，*斜體字*&#x200B;代表變數預留位置。
+您可以使用[!UICONTROL declared ID]和`d_cid`機碼值組發出`d_cid_ic`個選擇退出請求。 舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。請參閱 [CID 取代 DPID 及 DPUUID](../reference/cid.md)。在這些範例中，*斜體字*&#x200B;代表變數預留位置。
 
 ### 使用[!UICONTROL CID]和[!UICONTROL CID_IC]選擇退出
 
@@ -180,11 +180,11 @@ ht-degree: 8%
 
 ## [!UICONTROL Declared ID] 變數 {#declared-id-variables}
 
-說明用來透過[!UICONTROL DIL]傳遞[!UICONTROL declared IDs]至[!DNL Audience Manager.]的設定變數
+說明用來透過[!UICONTROL declared IDs]傳遞[!UICONTROL DIL]至[!DNL Audience Manager.]的設定變數
 
 ## [!UICONTROL DIL]使用[!DNL Adobe Experience Platform Identity Service]傳遞[!UICONTROL Declared IDs] {#dil-id-service-pass-declared-ids}
 
-與[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)搭配使用時，您不再需要以已棄用的`dpid`和`dpuuid`變數傳入[!UICONTROL declared IDs]。 相反地，[!UICONTROL DIL]的目前版本依賴`visitorService`函式從[!UICONTROL Adobe Experience Platform Identity Service]中的`setCustomerIDs`函式取得[!UICONTROL declared IDs]。 如需詳細資訊，請參閱[客戶ID與驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)。 您會在`DIL.create`中呼叫`visitorService`，如下所示。
+與[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)搭配使用時，您不再需要以已棄用的[!UICONTROL declared IDs]和`dpid`變數傳入`dpuuid`。 相反地，[!UICONTROL DIL]的目前版本依賴`visitorService`函式從[!UICONTROL declared IDs]中的`setCustomerIDs`函式取得[!UICONTROL Adobe Experience Platform Identity Service]。 如需詳細資訊，請參閱[客戶ID與驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。 您會在`visitorService`中呼叫`DIL.create`，如下所示。
 
 ```js
 var vDil = DIL.create({
@@ -195,11 +195,11 @@ var vDil = DIL.create({
 });
 ```
 
-在`namespace`機碼值組中，`MCORG`是您的[!DNL Experience Cloud]組織識別碼。 如果您沒有此ID，可以在[!DNL Experience Cloud]儀表板的[!UICONTROL Administration]區段中找到。 您需要管理員許可權才能檢視此儀表板。 請參閱[開始使用Experience Cloud服務](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/getting-started)。
+在`namespace`機碼值組中，`MCORG`是您的[!DNL Experience Cloud]組織識別碼。 如果您沒有此ID，可以在[!UICONTROL Administration]儀表板的[!DNL Experience Cloud]區段中找到。 您需要管理員許可權才能檢視此儀表板。 請參閱[開始使用Experience Cloud服務](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)。
 
 ## 已棄用的函式 {#deprecated-functions}
 
-使用最新版[!UICONTROL DIL] (6.2+)時，您不需要使用這些機碼值組來傳入[!UICONTROL declared IDs]。 這是因為[!UICONTROL DIL]現在依賴以上程式碼範例中顯示的`visitorService`函式。 此函式從[!UICONTROL Adobe Experience Platform Identity Service]取得[!UICONTROL declared IDs]。 不過，我們在此處參考這些變數，是為了歷史和舊版用途。 如需如何設定`DIL.create`以從[!UICONTROL Visitor ID Service]取得[!UICONTROL declared ID]的範例，請參閱下列程式碼。
+使用最新版[!UICONTROL DIL] (6.2+)時，您不需要使用這些機碼值組來傳入[!UICONTROL declared IDs]。 這是因為[!UICONTROL DIL]現在依賴以上程式碼範例中顯示的`visitorService`函式。 此函式從[!UICONTROL declared IDs]取得[!UICONTROL Adobe Experience Platform Identity Service]。 不過，我們在此處參考這些變數，是為了歷史和舊版用途。 如需如何設定`DIL.create`以從[!UICONTROL declared ID]取得[!UICONTROL Visitor ID Service]的範例，請參閱下列程式碼。
 下表說明`declaredId`物件使用的舊版變數：
 
 <table id="table_A1884B72950F4BBDA87F17DDFF173628"> 
@@ -226,9 +226,9 @@ var vDil = DIL.create({
 
 ### [!UICONTROL DPID]和[!UICONTROL DPUUID]
 
-[!DNL Audience Manager]比較並比對合併的`DPID`和`DPUUID`與系統中的對應使用者ID。 如果ID不存在，[!DNL Audience Manager]會建立新的使用者ID並將其同步至`DPID/DPUUID`組合。 一旦[!DNL Audience Manager]符合或建立使用者ID (`UUID`)，它就會在使用者端的網域（第一方[!DNL cookie]）或其他本機儲存體中的[!DNL cookie]的[!DNL JSON]回應中傳回該ID。
+[!DNL Audience Manager]比較並比對合併的`DPID`和`DPUUID`與系統中的對應使用者ID。 如果ID不存在，[!DNL Audience Manager]會建立新的使用者ID並將其同步至`DPID/DPUUID`組合。 一旦[!DNL Audience Manager]符合或建立使用者ID (`UUID`)，它就會在使用者端的網域（第一方[!DNL JSON]）或其他本機儲存體中的[!DNL cookie]的[!DNL cookie]回應中傳回該ID。
 
-當您使用[!UICONTROL DIL] v6.1或更舊版本時，請呼叫此函式。 但是，這個函式已過時，改用從[!DNL Adobe Experience Platform Identity Service]取得[!UICONTROL declared IDs]的新版本。
+當您使用[!UICONTROL DIL] v6.1或更舊版本時，請呼叫此函式。 但是，這個函式已過時，改用從[!UICONTROL declared IDs]取得[!DNL Adobe Experience Platform Identity Service]的新版本。
 
 ```js
 DIL.create({
@@ -248,7 +248,7 @@ DIL.create({
 
 >[!NOTE]
 >
->如果您使用不同的`declaredID`組合進行[!DNL API]呼叫，則新組合將僅用於該呼叫。 進一步的定期事件呼叫將使用原始`DIL.create` `declaredID`組合。
+>如果您使用不同的[!DNL API]組合進行`declaredID`呼叫，則新組合將僅用於該呼叫。 進一步的定期事件呼叫將使用原始`DIL.create` `declaredID`組合。
 
 ```js
 DIL.getDil('partner name').api.signals({...}).declaredId({

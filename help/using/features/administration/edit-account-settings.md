@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. 在Audience Manager標題中，按一下![](assets/icon_profile.png)。
 1. 按一下&#x200B;**[!UICONTROL Account Settings]**，然後按一下&#x200B;**[!UICONTROL Edit]**&#x200B;以顯示[!UICONTROL My Account]頁面。
-1. 如有必要，請在&#x200B;**[!UICONTROL Email Address]**&#x200B;欄位中指定您的新電子郵件地址。 Audience Manager不會定期傳送通知給使用者。 Audience Manager管理員可存取使用者的電子郵件地址，並可在需要時手動傳送電子郵件給使用者。 例如，如果使用者忘記其密碼，則會使用此欄位中指定的電子郵件地址來傳送臨時密碼和重設密碼的指示。
+1. 如有必要，請在&#x200B;**[!UICONTROL Email Address]**&#x200B;欄位中指定您的新電子郵件地址。 Audience Manager不會定期傳送通知給使用者。 Audience Manager管理員可存取使用者的電子郵件地址，並可視需要手動傳送電子郵件給使用者。 例如，如果使用者忘記其密碼，則會使用此欄位中指定的電子郵件地址來傳送臨時密碼和重設密碼的指示。
 1. 若要重設密碼，請指定您目前的密碼、指定新密碼，然後確認新密碼。
 另請參閱[密碼要求、鎖定的帳戶及忘記密碼](../../reference/password-requirements.md)。
 1. 按一下 **[!UICONTROL Save]**。

@@ -22,7 +22,7 @@ ht-degree: 14%
 
 請注意，您必須在&#x200B;*之前*&#x200B;完成本節中說明的程式，才能繼續記錄擷取啟用的先決條件。
 
-若要在[!DNL Audience Manager]中使用[!DNL Google Ad Manager] (先前的Google DFP)記錄檔，您必須先在廣告標籤呼叫中設定我們的[Audience Manager唯一使用者ID (UUID)](../../../reference/ids-in-aam.md)。 如此一來，我們的ID就會包含在[!DNL Google Ad Manager]記錄檔中，而且我們可以比對[!DNL Google Ad Manager]與[!DNL Audience Manager]之間的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]程式碼或[!UICONTROL Audience Management Module]在第一方Cookie中設定[!DNL Audience Manager] UUID。
+若要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager] (先前的Google DFP)記錄檔，您必須在廣告標籤呼叫中先設定我們的[Audience Manager唯一使用者ID (UUID)](../../../reference/ids-in-aam.md)。 如此一來，我們的ID就會包含在[!DNL Google Ad Manager]記錄檔中，而且我們可以比對[!DNL Google Ad Manager]與[!DNL Audience Manager]之間的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]程式碼或[!UICONTROL Audience Management Module]在第一方Cookie中設定[!DNL Audience Manager] UUID。
 
 以下說明如何在廣告標籤呼叫中設定[!DNL Audience Manager] ID，如檔案所述：
 
@@ -32,8 +32,8 @@ ht-degree: 14%
 您需要自行設定[!DNL Audience Manager] ID，並可與[!DNL Audience Manager]諮詢人員合作來檢查是否一切正常。 在下列情況下，您已正確設定[!DNL Audience Manager] ID：
 
 * `'aamid'`是用來做為識別碼的金鑰。
-* 使用者ID值的格式正確為[!DNL Audience Manager] UUID，如Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中之ID的索引中所述。
-* 您已在您[!DNL Google Ad Manager]記錄檔的已定義欄位中包含[!DNL Audience Manager] UUID （例如CustomTargeting）。
+* 使用者ID值的格式正確為[!DNL Audience Manager] UUID，如Audience Manager[中ID的](../../../reference/ids-in-aam.md)索引中所述。
+* 您已在您[!DNL Audience Manager]記錄檔的已定義欄位中包含[!DNL Google Ad Manager] UUID （例如CustomTargeting）。
 
 ## 啟用記錄擷取的先決條件 {#prereqs-ingestion-enablement}
 
@@ -48,14 +48,14 @@ ht-degree: 14%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>步驟 1 </p> </td> 
-   <td colname="col2"> <p>請確認設定<span class="keyword">Audience Manager</span> UUID （如上所述）的必要步驟已在移至步驟2前完成 </p> </td> 
-   <td colname="col3"> <p><span class="keyword">Audience Manager</span>客戶服務或諮詢 </p> </td> 
+   <td colname="col2"> <p>在移至步驟2之前，請確認設定<span class="keyword"> Audience Manager</span> UUID （如上所述）的必要步驟已完成 </p> </td> 
+   <td colname="col3"> <p><span class="keyword"> Audience Manager</span>客戶服務或諮詢 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>步驟 2 </p> </td> 
    <td colname="col2"> <p>您的Google Ad Manager管理員會建立： </p> <p> 
      <ol id="ol_FCFA9B11CFF948A488DF9CB298FC04C4"> 
-      <li id="li_BC946EDCC3324578AEB64EDDA55B5ACA">用於將Google Ad Manager擷取至<span class="keyword">Audience Manager</span>的服務帳戶。 </li> 
+      <li id="li_BC946EDCC3324578AEB64EDDA55B5ACA">用於將Google廣告管理員擷取至<span class="keyword"> Audience Manager</span>的服務帳戶。 </li> 
       <li id="li_6B2FC7D73A3246419E55C004E17ACA25">新認證。 <p>注意：此專案可能需要專屬的唯一電子郵件地址，在布建Google儲存貯體的存取權時會使用此地址。 </p> </li> 
       <li id="li_95444B9FD1B34659A9634814B262A681">私密金鑰（以JSON為基礎的認證） </li> 
      </ol> </p> </td> 
@@ -82,8 +82,8 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步驟 6 </p> </td> 
-   <td colname="col2"> <p>編譯先決條件並開啟支援票證，方法是依照詳細指示<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hant">這裡</a>開始記錄擷取程式。 </p> </td> 
-   <td colname="col3"> <p>您或代表您<span class="keyword">Audience Manager</span>諮詢 </p> </td> 
+   <td colname="col2"> <p>編譯先決條件並開啟支援票證，方法是依照詳細指示<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">這裡</a>開始記錄擷取程式。 </p> </td> 
+   <td colname="col3"> <p>您或代表您<span class="keyword"> Audience Manager</span>諮詢 </p> </td> 
   </tr> 
  </tbody> 
 </table>

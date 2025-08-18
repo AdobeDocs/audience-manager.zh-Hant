@@ -148,15 +148,15 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">量值單位</span></b> </td> 
-   <td colname="col2">以CPM費率或固定費用向資料購買者收費。 
+   <td colname="col2">資料購買者需支付CPM費率或固定費用。 
     <ul id="ul_D5F125E0F7364C568D9F3107E090059D"> 
-     <li id="li_A79F47FFC1DC4B9DADC014621A9C12A1"> 使用CPM定價時，資料購買者必須自行報告使用狀況。 </li> 
+     <li id="li_A79F47FFC1DC4B9DADC014621A9C12A1"> 透過CPM定價，資料購買者必須自行報告使用情況了。 </li> 
      <li id="li_DFED3194854A492F9DD0E7BA1A655E96">若採用固定費用定價，資料購買者不會報告使用量，因為他們是以固定費率收費。 </li> 
     </ul> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">價格</span></b> </td>
-   <td colname="col2"> 賣家以CPM費率或統一費用價格向買家收取的金額（以美元計）。 </td>
+   <td colname="col2"> 賣家以CPM費率或固定費用價格向買家收取的金額（以美元計）。 </td>
   </tr> 
  </tbody> 
 </table>

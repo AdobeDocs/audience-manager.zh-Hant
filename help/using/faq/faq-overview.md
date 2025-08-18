@@ -26,6 +26,6 @@ ht-degree: 94%
 * [以人物為基礎的目的地常見問題集](faq-people-based-destinations.md)
 * [產品特色與功能常見問題集](faq-features.md)
 * [設定檔合併規則與裝置圖表常見問題集](faq-profile-merge.md)
-* [預測受眾常見問題集](faq-predictive-audiences.md)
+* [預測客群常見問題集](faq-predictive-audiences.md)
 * [目標定位常見問題集](faq-targeting.md)
 * [報表常見問題集](faq-reporting.md)

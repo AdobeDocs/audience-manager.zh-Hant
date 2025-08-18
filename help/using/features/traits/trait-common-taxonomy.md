@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 分類資料類別中的特徵
 
-您在[!UICONTROL Add New Trait Wizard] （位於* **[!UICONTROL Audience Data > Traits]***）中建立或編輯特徵時，指派分類法分類。 如需詳細資訊，請參閱有關建立特徵[&#128279;](../../features/traits/create-onboarded-rule-based-traits.md)的檔案。
+您在[!UICONTROL Add New Trait Wizard] （位於* **[!UICONTROL Audience Data > Traits]***）中建立或編輯特徵時，指派分類法分類。 如需詳細資訊，請參閱有關建立特徵[的](../../features/traits/create-onboarded-rule-based-traits.md)檔案。
 
 ## 使用分類法：其他考量事項
 

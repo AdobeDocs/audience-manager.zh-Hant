@@ -129,7 +129,7 @@ ht-degree: 0%
    <td colname="col1"> <p> <b>可能的訂閱者</b> </p> </td> 
    <td colname="col2"> <p><a href="../../../features/audience-marketplace/marketplace-private-feeds.md">潛在訂閱者</a>是資料購買者，已要求存取私人資料摘要、收到賣家核准，但尚未訂閱摘要。 若要以潛在訂戶請求折扣，請執行下列步驟： </p> 
     <ol id="ol_9CECDA92E7894B20AC8A777D78962188"> 
-     <li id="li_618B64160CF24549AFCA73E006DCA35A">前往<b><span class="uicontrol">Audience Marketplace&gt; Marketplace</span></b>。 </li> 
+     <li id="li_618B64160CF24549AFCA73E006DCA35A">前往<b><span class="uicontrol"> Audience Marketplace &gt; Marketplace</span></b>。 </li> 
      <li id="li_FE52A06B30FC4858B48AF81954365FE9">按一下您已核准的摘要名稱。 </li> 
      <li id="li_763C050AC9464BE380D00F6085B6E540">按一下<b><span class="uicontrol">要求更多詳細資料</span></b>。 向賣家索取詳細資料中的折扣。 </li> 
     </ol> </td> 
@@ -143,12 +143,12 @@ ht-degree: 0%
 
 1. 移至&#x200B;**[!UICONTROL Audience Marketplace > Marketplace]**。
 1. 按一下您已訂閱的摘要名稱。
-1. 檢視[!UICONTROL Plan Details]表格中的[!UICONTROL Price]和[!UICONTROL Your Price]欄。 如果摘要已貼現：
+1. 檢視[!UICONTROL Price]表格中的[!UICONTROL Your Price]和[!UICONTROL Plan Details]欄。 如果摘要已貼現：
 
    * 原始價格標有紅線。
    * [!UICONTROL Your Price]欄中的費用將低於[!UICONTROL Price]欄中的費用。
 
-在此範例中，買家在&#x200B;**[!UICONTROL Software Audience Feed]**&#x200B;中的[!UICONTROL Segments and Overlap]方案上獲得10%的折扣。
+在此範例中，買家在[!UICONTROL Segments and Overlap]中的&#x200B;**[!UICONTROL Software Audience Feed]**&#x200B;方案上獲得10%的折扣。
 
 ![](assets/buyer-discount.png)
 
@@ -283,7 +283,7 @@ ht-degree: 0%
    * 按一下&#x200B;**[!UICONTROL Request More Details]**，向資料提供者詢問關於所選資料摘要的問題，或要求折扣。 此功能會將您的意見與問題直接傳送給資料提供者。
 
 1. 資料摘要報表量度。 文氏圖表（和相關量度）會顯示過去30天的特性重疊資料。 如需詳細資訊，請參閱[Marketplace：關於](marketplace-data-buyers.md#about-marketplace)。
-   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帳戶中與提供者帳戶中的使用者重疊的不重複使用者數目。 如需不重複使用者的定義，請參閱Audience Manager[&#128279;](/help/using/reference/ids-in-aam.md)中ID的索引中的AAM UUID。
+   * **[!UICONTROL 30 Day Overlapped Uniques]**：您的帳戶中與提供者帳戶中的使用者重疊的不重複使用者數目。 如需不重複使用者的定義，請參閱Audience Manager [內的ID索引](/help/using/reference/ids-in-aam.md)中的AAM UUID。
    * **[!UICONTROL 30 Day Provider Unique Users]**：來自提供者帳戶的不重複使用者數目。
    * **[!UICONTROL Your Unique Users]**：來自您帳戶的不重複使用者數目。
 
@@ -314,7 +314,7 @@ ht-degree: 0%
 
 ### 啟用
 
-此使用案例可讓您將資料傳送至[目的地](../../../features/destinations/destinations.md)。 在[!DNL Audience Manager]中，目的地是任何協力廠商系統（廣告伺服器、[!DNL DSP]、[!DNL DMP]、Exchange等） 任何其他系統 (廣告伺服器、DSP、廣告網路等)。不過，透過[!UICONTROL Activation]使用案例，您無法執行重疊報表或測試演演算法模型中的資料。
+此使用案例可讓您將資料傳送至[目的地](../../../features/destinations/destinations.md)。 在[!DNL Audience Manager]中，目的地是要與其共用資料的任何協力廠商系統（廣告伺服器、[!DNL DSP]、[!DNL DMP]、交換等）。 不過，透過[!UICONTROL Activation]使用案例，您無法執行重疊報表或測試演演算法模型中的資料。
 
 >[!MORELIKETHIS]
 >

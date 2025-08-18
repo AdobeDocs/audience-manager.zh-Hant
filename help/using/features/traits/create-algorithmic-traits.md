@@ -35,7 +35,7 @@ ht-degree: 1%
 
 在[!UICONTROL Trait Builder]中，[!UICONTROL Configuration]區段可讓您將演演算法模型與特徵建立關聯。 若要完成演演算法特徵建立程式，請選取模型並選擇觸及率或準確度目標。
 
-### 必備條件
+### 先決條件
 
 <!-- r_algo_trait_config_section.xml -->
 

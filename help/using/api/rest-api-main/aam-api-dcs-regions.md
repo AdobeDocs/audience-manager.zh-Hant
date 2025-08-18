@@ -1,5 +1,5 @@
 ---
-description: 可讓您以程式設計方式列出Audience ManagerDCS區域的方法。
+description: 可讓您以程式設計方式列出Audience Manager DCS區域的方法。
 seo-description: Methods that let you programmatically list Audience Manager DCS regions.
 seo-title: DCS Region API Methods
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 # DCS地區API方法 {#dcs-region-api-methods}
 
-可讓您以程式設計方式列出Audience Manager[!DNL DCS]區域的方法。
+可讓您以程式設計方式列出Audience Manager [!DNL DCS]區域的方法。
 
 <!-- c_rest_api_regions.xml -->
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ## 列出特定DCS區域 {#list-specific-dcs-region}
 
-列出特定[!DNL DCS]區域的`GET`方法。
+列出特定`GET`區域的[!DNL DCS]方法。
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 ## 列出DCS地區 {#list-dcs-regions}
 
-列出[!DNL DCS]區域的`GET`方法。
+列出`GET`區域的[!DNL DCS]方法。
 
 <!-- r_rest_api_regions_list.xml -->
 

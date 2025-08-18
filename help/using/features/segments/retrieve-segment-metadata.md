@@ -1,5 +1,5 @@
 ---
-description: Audience Manager將區段資訊傳送給資料合作夥伴時，會使用數值ID識別這些物件。 身為資料合作夥伴，當您和客戶共用這些資訊（或自行處理）時，實際的名稱和說明可在報表、儀表板或其他使用者介面(UI)中為客戶提供更佳的體驗。 資料合作夥伴可使用本節所述的手動或自動化方法，讓客戶可以使用這些易記名稱。
+description: Audience Manager傳送區段資訊給資料合作夥伴時，會使用數值ID識別這些物件。 身為資料合作夥伴，當您和客戶共用這些資訊（或自行處理）時，實際的名稱和說明可在報表、儀表板或其他使用者介面(UI)中為客戶提供更佳的體驗。 資料合作夥伴可使用本節所述的手動或自動化方法，讓客戶可以使用這些易記名稱。
 seo-description: When Audience Manager sends segment information to a data partner, it identifies these objects with numeric IDs. As a data partner, when you share this information with your customers (or work with it yourself), an actual name and description provide a better experience for customers in reports, dashboards, or other user interfaces (UI). Data partners can make these friendly names available to their customers with either the manual or automated methods described in this section.
 seo-title: Retrieving Segment Metadata
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 正在擷取區段中繼資料 {#retrieving-segment-metadata}
 
-Audience Manager將區段資訊傳送給資料合作夥伴時，會使用數值ID識別這些物件。 身為資料合作夥伴，當您和客戶共用這些資訊（或自行處理）時，實際的名稱和說明可在報表、儀表板或其他使用者介面([!DNL UI])中為客戶提供更好的體驗。 資料合作夥伴可使用本節所述的手動或自動化方法，讓客戶可以使用這些易記名稱。
+Audience Manager傳送區段資訊給資料合作夥伴時，會使用數值ID識別這些物件。 身為資料合作夥伴，當您和客戶共用這些資訊（或自行處理）時，實際的名稱和說明可在報表、儀表板或其他使用者介面([!DNL UI])中為客戶提供更好的體驗。 資料合作夥伴可使用本節所述的手動或自動化方法，讓客戶可以使用這些易記名稱。
 
 ## 手動方法 {#manual-method}
 
@@ -26,13 +26,13 @@ Audience Manager將區段資訊傳送給資料合作夥伴時，會使用數值I
 
 [!DNL Audience Manager]提供了一組[REST API](../../api/rest-api-main/rest-api-main.md)，可讓您自動擷取區段中繼資料。 透過[!DNL API]，您可以建立以排程間隔擷取區段中繼資料的工作，或在您處理[!DNL Audience Manager]資料並尋找新區段ID時自動擷取區段中繼資料的工作。 如需詳細資訊，請參閱下列步驟。
 
-### 步驟1：檢閱Audience ManagerAPI
+### 步驟1：檢閱Audience Manager API
 
 [ REST API快速入門](../../api/rest-api-main/aam-api-getting-started.md)區段包含一般需求、驗證、可用方法等資訊。 如果您之前未使用[!DNL Audience Manager] [!DNL API]，這是一個很好的起點。
 
 ### 步驟2：要求OAuth2存取認證
 
-您需要使用者端識別碼與密碼才能進行[!DNL API]呼叫。 在整合設定程式進行期間，您可以向整合專員取得使用者端ID和密碼。 您也可以在[!DNL amsupport@adobe.com]傳送電子郵件要求給[!UICONTROL Audience Manager Customer Care]。
+您需要使用者端識別碼與密碼才能進行[!DNL API]呼叫。 在整合設定程式進行期間，您可以向整合專員取得使用者端ID和密碼。 您也可以在[!UICONTROL Audience Manager Customer Care]傳送電子郵件要求給[!DNL amsupport@adobe.com]。
 
 ### 步驟3：收集每個整合客戶的客戶特定資訊
 
@@ -56,7 +56,7 @@ Audience Manager將區段資訊傳送給資料合作夥伴時，會使用數值I
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> destinationMappingId</code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">Audience Manager</span>區段識別碼。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager</span>區段識別碼。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> elementName</code> </p> </td> 

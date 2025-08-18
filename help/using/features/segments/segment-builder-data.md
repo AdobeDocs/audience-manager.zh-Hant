@@ -14,13 +14,13 @@ ht-degree: 1%
 
 ---
 
-# [!UICONTROL Segment Builder]中的[!UICONTROL Trait]和[!UICONTROL Segment]母體資料 {#trait-and-segment-population-data-in-segment-builder}
+# [!UICONTROL Trait]中的[!UICONTROL Segment]和[!UICONTROL Segment Builder]母體資料 {#trait-and-segment-population-data-in-segment-builder}
 
-新增和移除[!UICONTROL Segment Builder]中的[!UICONTROL traits]，以檢視實際[!UICONTROL trait]母體以及實際和預估的區段母體資料。 預估母體大小資料可協助您為行銷活動建立正確的區段。
+新增和移除[!UICONTROL traits]中的[!UICONTROL Segment Builder]，以檢視實際[!UICONTROL trait]母體以及實際和預估的區段母體資料。 預估母體大小資料可協助您為行銷活動建立正確的區段。
 
 ## [!UICONTROL Trait]母體資料 {#trait-population-data}
 
-當您將[!UICONTROL trait]新增至區段時，[!UICONTROL Segment Builder]會顯示最後一天的[!UICONTROL Total Trait Population]。 此資料會出現在[!UICONTROL Basic View]區段中選定[!UICONTROL trait]周圍的藍色欄位中。
+當您將[!UICONTROL Segment Builder]新增至區段時，[!UICONTROL Total Trait Population]會顯示最後一天的[!UICONTROL trait]。 此資料會出現在[!UICONTROL trait]區段中選定[!UICONTROL Basic View]周圍的藍色欄位中。
 
 ![](assets/trait-size.png)
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 建立新區段或變更現有區段時，Audience Manager最多需要24小時才能顯示實際即時和區段總母體的結果。
 
-不過，Audience Manager可以立即估計區段的即時和總母體大小。 這些估計值是根據取樣的歷史資料和95%信賴區間的傳回結果。
+不過，Audience Manager可以立即估計您區段的即時和總母體大小。 這些估計值是根據取樣的歷史資料和95%信賴區間的傳回結果。
 
 ![](assets/confidence-interval.png)
 
@@ -72,7 +72,7 @@ ht-degree: 1%
      <ul id="ul_CAE803D09913462CAD413A665D85C1A2"> 
       <li id="li_3E64330D6F5B4D2F8F3456730A86894F">針對特徵，過去30天的量度會計算過去30天內符合該特徵的不重複使用者人數。 </li>
       <li id="li_FF3CACD0B6C742CDB94D66200D77CE06">對於即時評估的區段，過去30天的量度會計算過去某個時間點符合某個特徵（在該區段中）的使用者人數，以及過去30天內被Audience Manager再次檢視的使用者人數。 例如，假設您的使用者符合60天前的特徵資格，但10天前再次出現。 在資料中，此使用者將不會新增至特徵計數，因為他們在30多天前才首次符合特徵。 不過，對於即時評估的區段，這些將被納入最後30天的計數。 這是因為他們已在30天時間間隔內符合區段的資格。 </li>
-     </ul> </p> <p> <p>注意： <span class="wintitle">預估即時母體</span>量度不包含根據使用<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">裝置圖表選項</a>的<span class="wintitle">設定檔合併規則</span>所提供的連線符合區段資格的裝置。 </p> </p> </td> 
+     </ul> </p> <p> <p>注意： <span class="wintitle">預估即時母體</span>量度不包含根據使用<span class="wintitle">裝置圖表選項</span>的<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">設定檔合併規則</a>所提供的連線符合區段資格的裝置。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle">估計總母體（潛在）</span> </p> </td> 
@@ -80,7 +80,7 @@ ht-degree: 1%
      <ul id="ul_0490DD08C7C8493DADFB11B5872A73BC"> 
       <li id="li_AE38C8C8A4B24021BAC724B51A4799E2">瞭解當您建立區段時，新區段或修訂區段可以影響多少人。 </li> 
       <li id="li_E830EC2B12DC46D4B0A4DD807A8936F6">根據您的目標調整區段。 例如，大型區段對品牌認知度行銷活動相當實用，而小型區段對重點鎖定目標或重新鎖定目標行銷活動相當實用。 </li> 
-     </ul> </p> <p> <p>注意： <span class="wintitle">預估總母體</span>量度不包含根據使用<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">裝置圖表選項</a>的<span class="wintitle">設定檔合併規則</span>所提供的連線符合區段資格的裝置。 </p> </p> </td> 
+     </ul> </p> <p> <p>注意： <span class="wintitle">預估總母體</span>量度不包含根據使用<span class="wintitle">裝置圖表選項</span>的<a href="../../features/profile-merge-rules/merge-rule-definitions.md#device-options">設定檔合併規則</a>所提供的連線符合區段資格的裝置。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,9 +89,9 @@ ht-degree: 1%
 
 [!UICONTROL Profile Merge Rules]會影響實際的即時和母體總數。 這些總計會依區段所屬的[!UICONTROL Profile Merge Rule]是否使用裝置圖表選項而有所不同。 另請參閱[定義的設定檔合併規則選項](../../features/profile-merge-rules/merge-rule-definitions.md)。
 
-### 不含[!UICONTROL Device Graph Option]的[!UICONTROL Merge Rules]區段母體資料
+### 不含[!UICONTROL Merge Rules]的[!UICONTROL Device Graph Option]區段母體資料
 
-下表定義當您的區段由不含[!UICONTROL device graph]選項而建立的[!UICONTROL Profile Merge Rule]使用時，實際的即時和總母體量度。 這些是裝置選項設定&#x200B;**[!UICONTROL No Device Options]**&#x200B;和&#x200B;**[!UICONTROL Current Device Proflie]**。
+下表定義當您的區段由不含[!UICONTROL Profile Merge Rule]選項而建立的[!UICONTROL device graph]使用時，實際的即時和總母體量度。 這些是裝置選項設定&#x200B;**[!UICONTROL No Device Options]**&#x200B;和&#x200B;**[!UICONTROL Current Device Proflie]**。
 
 <table id="table_A18C973855DB46A0B39B81F32E0E7540"> 
  <thead> 
@@ -116,9 +116,9 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-### 使用[!UICONTROL Device Graph]選項的[!UICONTROL Merge Rules]區段母體資料
+### 使用[!UICONTROL Merge Rules]選項的[!UICONTROL Device Graph]區段母體資料
 
-當以[!DNL device graph]選項建立的[!UICONTROL Profile Merge Rule]使用您的區段時，下表定義實際的即時和母體總數量度。 這些是[!UICONTROL Profile Link Device Graph]、[!DNL Adobe] [!DNL device graph]和其他協力廠商[!DNL device graph]選項可供您使用的裝置選項設定。
+當以[!UICONTROL Profile Merge Rule]選項建立的[!DNL device graph]使用您的區段時，下表定義實際的即時和母體總數量度。 這些是[!UICONTROL Profile Link Device Graph]、[!DNL Adobe] [!DNL device graph]和其他協力廠商[!DNL device graph]選項可供您使用的裝置選項設定。
 
 
 | 欄A | 欄B |

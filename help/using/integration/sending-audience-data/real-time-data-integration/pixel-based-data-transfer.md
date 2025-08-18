@@ -1,5 +1,5 @@
 ---
-description: 簡單畫素（可用來讓使用者符合特徵資格）會執行即時資料傳輸。 Audience Manager介面可讓使用者端根據自助方式建立任意數量的畫素。 畫素字串由簡單ID或索引鍵值配對組成。
+description: 簡單畫素（可用來讓使用者符合特徵資格）會執行即時資料傳輸。 Audience Manager介面可讓使用者端自助建立任意數量的畫素。 畫素字串由簡單ID或索引鍵值配對組成。
 seo-description: Simple pixels (that can be used to qualify users for traits) perform real-time data transfers. The Audience Manager interface lets clients create any number of pixels on a self-service basis. Pixel strings consist of simple IDs or key-value pairs.
 seo-title: Pixel-based Data Transfers
 solution: Audience Manager
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 以畫素為基礎的資料傳輸 {#pixel-based-data-transfers}
 
-簡單畫素（可用來讓使用者符合特徵資格）會執行即時資料傳輸。 Audience Manager介面可讓使用者端根據自助方式建立任意數量的畫素。 畫素字串由簡單ID或索引鍵值配對組成。
+簡單畫素（可用來讓使用者符合特徵資格）會執行即時資料傳輸。 Audience Manager介面可讓使用者端自助建立任意數量的畫素。 畫素字串由簡單ID或索引鍵值配對組成。
 
 <!-- c_rt_inbound_pixel_transfers.xml -->
 

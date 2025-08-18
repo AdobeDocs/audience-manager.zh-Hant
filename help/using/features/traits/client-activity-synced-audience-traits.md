@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 資料Source同步特徵 {#data-source-synced-traits}
 
-當您[建立或編輯資料來源](../../features/manage-datasources.md#create-data-source)並套用下列其中一個設定時，[!UICONTROL Data Source Synced Traits]出現在[!UICONTROL Audience Traits]資料夾中：
+當您[!UICONTROL Data Source Synced Traits]建立或編輯資料來源[!UICONTROL Audience Traits]並套用下列其中一個設定時，[出現在](../../features/manage-datasources.md#create-data-source)資料夾中：
 
 ![](assets/datasource_synced.png)
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [可定址受眾](../../features/addressable-audiences.md)
+>* [可定址客群](../../features/addressable-audiences.md)

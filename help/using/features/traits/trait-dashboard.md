@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 特徵控制面板 {#traits-dashboard}
 
-特徵控制面板是用於管理特徵的集中式工作區。 您可以導覽至「**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**」以檢視[!UICONTROL Traits]儀表板。
+特徵控制面板是用於管理特徵的集中式工作區。 您可以導覽至「[!UICONTROL Traits] > **[!UICONTROL Audience Data]**」以檢視&#x200B;**[!UICONTROL Traits]**&#x200B;儀表板。
 
 ![](assets/traits-dashboard.png)
 

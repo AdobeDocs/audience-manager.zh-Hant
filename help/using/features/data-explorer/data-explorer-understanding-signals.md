@@ -1,5 +1,5 @@
 ---
-description: 訊號是Audience Manager中最小的資訊單位。 這類值代表使用者在您線上屬性上的互動或使用者活動，並會傳遞給Audience Manager以用於特徵規則。
+description: 訊號是Audience Manager中的最小資訊單位。 這類值代表使用者在您線上屬性上的互動或使用者活動，並會傳遞至Audience Manager以用於特徵規則。
 seo-description: Signals are the smallest unit of information within Audience Manager. They represent user interactions or user activity on your online properties, and get passed on to Audience Manager to be used in trait rules.
 seo-title: Understanding Signals
 title: 瞭解訊號
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 瞭解訊號
 
-訊號是Audience Manager中最小的資訊單位。 這類值代表使用者在您線上屬性上的互動或使用者活動，並會傳遞給Audience Manager以用於特徵規則。
+訊號是Audience Manager中的最小資訊單位。 這類值代表使用者在您線上屬性上的互動或使用者活動，並會傳遞至Audience Manager以用於特徵規則。
 
 [!DNL Audience Manager]使用機碼值組來表示訊號。 例如，下列訊號可能表示訪客已到達包含電子產品的網頁：
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 ## 訊號資料重新整理頻率
 
-由於Audience Manager每天處理的大量資料，[!UICONTROL Data Explorer]會根據訊號型別，以固定時間間隔重新整理顯示的訊號資料：
+由於Audience Manager每日處理的大量資料，[!UICONTROL Data Explorer]會根據訊號型別，以固定時間間隔重新整理顯示的訊號資料：
 
 * 即時訊號資料（可操作的記錄檔、[!DNL Adobe Analytics]資料，以及一般線上資料）每4到6小時會重新整理一次。
 * 已上線的訊號資料每24小時會重新整理一次。

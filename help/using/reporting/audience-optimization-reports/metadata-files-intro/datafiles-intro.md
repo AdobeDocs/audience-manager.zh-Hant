@@ -90,7 +90,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p>Creative-ID </p> </td> 
-   <td colname="col2"> <p>創作ID。 </p> </td> 
+   <td colname="col2"> <p>Creative ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Site-ID </p> </td> 
@@ -170,7 +170,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>pid=<i>AAM ID</i></code> </p> </td> 
-   <td colname="col2"> <p>此機碼值組包含您的<span class="keyword">Audience Manager</span>客戶識別碼。 </p> </td> 
+   <td colname="col2"> <p>此機碼值組包含您的<span class="keyword"> Audience Manager</span>客戶識別碼。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code>dpid=<i>d_src</i></code> </p> </td> 

@@ -126,7 +126,7 @@ ht-degree: 2%
   </tr>
   <tr valign="top">
    <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根據您要用作搜尋引數的指定字串傳回結果。 例如，假設您想要尋找在該專案的任何值欄位中有「Test」字詞的所有模型的結果。 您的範例請求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>實施流量分類。 </p> <p>您可以搜尋"get all"方法傳回的任何值。 </p> </td>
+   <td colname="col2">根據您要用作搜尋引數的指定字串傳回結果。 例如，假設您想要尋找在該專案的任何值欄位中有「Test」字詞的所有模型的結果。 您的範例請求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>。 </p> <p>您可以搜尋"get all"方法傳回的任何值。 </p> </td>
   </tr> 
  </tbody> 
 </table>

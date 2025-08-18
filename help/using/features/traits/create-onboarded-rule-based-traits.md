@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 特徵的基本資訊 {#basics}
 
-在[!UICONTROL Trait Builder]中，[!UICONTROL Basic Information]設定可讓您建立新專案，或編輯現有的[!UICONTROL traits]。 [!UICONTROL rules-based]、[!UICONTROL onboarded]和[!UICONTROL algorithmic traits]的[!UICONTROL Basic Information]設定相同。 若要建立新的[!UICONTROL trait]，請提供名稱（避免特殊字元）、[!UICONTROL data source]並選取[!UICONTROL storage folder]。 其他[!UICONTROL Basic Information]欄位是選用欄位。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Basic Information]設定可讓您建立新專案，或編輯現有的[!UICONTROL traits]。 [!UICONTROL Basic Information]、[!UICONTROL rules-based]和[!UICONTROL onboarded]的[!UICONTROL algorithmic traits]設定相同。 若要建立新的[!UICONTROL trait]，請提供名稱（避免特殊字元）、[!UICONTROL data source]並選取[!UICONTROL storage folder]。 其他[!UICONTROL Basic Information]欄位是選用欄位。
 
 <!-- c_tb_basics.xml -->
 
@@ -56,11 +56,11 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">資料Source</span></b> </td> 
-   <td colname="col2"> 將特徵與特定資料提供者建立關聯。 必填。 <p>使用第一個下拉式功能表，在Audience Manager資料來源、Adobe Analytics報表套裝或兩者之間篩選。 然後，使用第二個下拉式選單來選擇資料來源。</p><p> 如果您沒有使用Adobe Analytics報表套裝，資料來源型別選擇器會停用，並預設為僅Audience Manager資料來源。</p>  </td> 
+   <td colname="col2"> 將特徵與特定資料提供者建立關聯。 必填。 <p>使用第一個下拉式功能表，在Audience Manager資料來源、Adobe Analytics報表套裝或兩者之間篩選。 然後，使用第二個下拉式選單來選擇資料來源。</p><p> 如果您未使用Adobe Analytics報表套裝，資料來源型別選擇器會停用，並僅預設為Audience Manager資料來源。</p>  </td> 
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol">事件型別</span></b> </td> 
-   <td colname="col2"> 將特徵指派給型別或類別，通常會根據功能（例如轉換、網站訪客、合作夥伴、頁面檢視等）。 選填。 <p> 若要瞭解如何建立轉換特徵，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html?lang=zh-Hant">在Audience Manager影片中建立轉換特徵</a>。 </p></td> 
+   <td colname="col2"> 將特徵指派給型別或類別，通常會根據功能（例如轉換、網站訪客、合作夥伴、頁面檢視等）。 選填。 <p> 若要瞭解如何建立轉換特徵，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">在Audience Manager中建立轉換特徵影片</a>。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">整合代碼</span></b> </td> 
@@ -83,13 +83,13 @@ ht-degree: 2%
 
 ## 設定[!UICONTROL Trait]過期時間間隔 {#set-expiration-interval}
 
-在[!UICONTROL Trait Builder]中，[!UICONTROL Advanced Options]可讓您設定[!UICONTROL trait]的存留時間([!DNL TTL])間隔。 [!DNL TTL]定義合格訪客在[!UICONTROL trait]內停留的天數（預設為120天）。 設定為0時，[!UICONTROL trait]成員資格永不過期。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Advanced Options]可讓您設定[!DNL TTL]的存留時間([!UICONTROL trait])間隔。 [!DNL TTL]定義合格訪客在[!UICONTROL trait]內停留的天數（預設為120天）。 設定為0時，[!UICONTROL trait]成員資格永不過期。
 
 <!-- t_tb_ttl.xml -->
 
 ### 設定[!UICONTROL trait]的TTL
 
-1. 展開[!UICONTROL Advanced Options]區段並輸入數字以設定[!UICONTROL trait]的[!DNL TTL]值。
+1. 展開[!UICONTROL Advanced Options]區段並輸入數字以設定[!DNL TTL]的[!UICONTROL trait]值。
 1. 按一下 **[!UICONTROL Save]**。
 
    ![](assets/TTL.png)

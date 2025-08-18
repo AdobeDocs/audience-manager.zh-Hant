@@ -1,5 +1,5 @@
 ---
-description: 使用以人物為基礎的目的地，將第一方對象區段傳送至以人物為基礎的環境。 這些環境是屬於一個實體的封閉生態系統，該實體控制其中顯示的內容。 其中包括Facebook等社交平台，以及其他依賴客戶帳戶個人化顯示內容的平台。
+description: 使用以人物為基礎的目的地，將第一方對象區段傳送至以人物為基礎的環境。 這些環境是屬於一個實體的封閉生態系統，該實體控制其中顯示的內容。 其中包括Facebook等社交平台，以及其他依賴客戶帳戶來個人化顯示內容的平台。
 seo-description: Use people-based destinations to send first-party audience segments to people-based environments. These environments are closed ecosystems belonging to one entity that controls the content that is being displayed within it. They include social platforms such as Facebook, and other platforms that rely on customer accounts to personalize the displayed content.
 seo-title: People-Based Destinations Overview and Use Cases
 solution: Audience Manager
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 ## 可用性 {#availability}
 
-[!DNL People-Based Destinations]是進階Audience Manager整合。 請聯絡您的Adobe代表以使用此進階功能。
+[!DNL People-Based Destinations]是進階的Audience Manager整合。 請聯絡您的Adobe代表以使用此進階功能。
 
 ## 為何您應使用[!UICONTROL People-Based Destinations] {#why-use}
 
-**從Audience Manager內管理整個對象細分，為客戶提供一致的跨頻道體驗。**
+**從Audience Manager中管理整個對象細分，為客戶提供一致的跨頻道體驗。**
 
 若未透過Audience Manager在以人物為基礎的管道中啟用您的對象區段，會導致您的客戶在造訪您的網站時看到的內容與他們在其[!DNL Facebook]摘要中看到的內容之間出現脫節的體驗。 跨頻道保持一致的目標定位，可增加廣告收入，同時最佳化廣告支出。
 
@@ -67,16 +67,16 @@ ht-degree: 0%
 
 ## 使用個案 {#use-cases}
 
-為了協助您更清楚瞭解您應如何使用[!DNL People-Based Destinations]以及何時使用，以下是Audience Manager客戶可以使用此功能解決的兩個使用案例範例。
+為協助您更清楚瞭解您應如何使用[!DNL People-Based Destinations]以及何時使用，以下是Audience Manager客戶可以使用此功能解決的兩個範例使用案例。
 
 ### 使用案例#1 {#use-case-1}
 
-線上零售商想要透過社交平台觸及現有客戶，並根據他們先前的訂單向他們顯示個人化優惠。 透過[!DNL People-Based Destinations]，線上零售商可以從自己的[!DNL CRM]擷取雜湊電子郵件地址以進行Audience Manager、從自己的離線資料建立區段，並將這些區段傳送至他們想要廣告的社交平台，以最佳化其廣告支出。
+線上retailer想要透過社交平台觸及現有客戶，並根據他們先前的訂單向他們顯示個人化優惠。 透過[!DNL People-Based Destinations]，線上retailer可以從自己的[!DNL CRM]擷取雜湊電子郵件地址至Audience Manager，從自己的離線資料建立區段，並將這些區段傳送至他們想要廣告的社交平台，以最佳化他們的廣告支出。
 
 ### 使用案例#2 {#use-case-2}
 
 航空公司有不同的客戶層級（銅、銀和金），並想要透過社交平台為每個層級提供個人化優惠。 該公司使用Audience Manager來分析網站上的客戶活動。 不過，並非所有客戶都使用航空公司的行動應用程式，其中部分客戶尚未登入公司網站。 公司對這些客戶擁有的唯一識別碼是會員ID和電子郵件地址。
 
-若要在社群媒體和類似的以人物為基礎的頻道中鎖定他們，他們可以使用雜湊電子郵件地址做為識別碼，將其[!DNL CRM]的客戶資料上線到Audience Manager中。
+若要在社群媒體和類似的以人物為基礎的頻道中鎖定他們，他們可以使用雜湊電子郵件地址做為識別碼，將客戶[!DNL CRM]中的資料上線到Audience Manager中。
 
 接著，他們可以結合其離線資料與現有線上活動特徵，以建立可透過[!DNL People-Based Destinations]鎖定的新受眾區段。

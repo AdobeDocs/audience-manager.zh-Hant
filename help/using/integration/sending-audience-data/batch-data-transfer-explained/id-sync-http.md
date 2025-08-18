@@ -1,5 +1,5 @@
 ---
-description: 說明初始HTTP呼叫中使用的語法和引數，以便同步廠商和Audience Manager之間的使用者ID。 ID同步可在您將資料分類法傳送至Audience Manager後開始。
+description: 說明初始HTTP呼叫中使用的語法和引數，以便同步廠商和Audience Manager之間的使用者ID。 ID同步會在您將資料分類法傳送至Audience Manager後開始。
 seo-description: Describes the syntax and parameters used in the initial HTTP call to synchronize user IDs between a vendor and Audience Manager. ID synchronization can begin after you send your data taxonomy to Audience Manager.
 seo-title: ID Synchronization for Inbound Data Transfers
 solution: Audience Manager
@@ -50,7 +50,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  <tbody> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
-   <td colname="col2"> <p>內容提供者的唯一識別碼(由<span class="keyword">Audience Manager</span>指派)。 </p> </td> 
+   <td colname="col2"> <p>內容提供者的唯一識別碼(由<span class="keyword"> Audience Manager</span>指派)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 

@@ -50,7 +50,7 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <code> <i>&lt;VENDOR_ID&gt;</i> </code> </td> 
-   <td colname="col2">資料提供者的唯一識別碼(由<span class="keyword">Audience Manager</span>指派)。 </td> 
+   <td colname="col2">資料提供者的唯一識別碼(由<span class="keyword"> Audience Manager</span>指派)。 </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <code> <i>&lt;VENDOR_UUID&gt;</i> </code> </td> 

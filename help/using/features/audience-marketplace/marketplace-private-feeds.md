@@ -79,7 +79,7 @@ ht-degree: 1%
 
 ## 購買者的私人資料摘要 {#private-data-feeds-for-buyers}
 
-作為購買者，私人資料摘要在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中會像任何其他選件一樣顯示。 不過，在此情況下，摘要清單不會顯示特徵、不重複使用者及使用者重疊的摘要資訊。 此外，資料賣家可選擇在[!UICONTROL Marketplace]清單的[!UICONTROL Provider]欄中顯示或隱藏其名稱。 在賣家核准您的訂閱要求後，您就可以使用私人摘要中的所有資料（其運作方式就像公開摘要）。 以下[!UICONTROL Marketplace]範例列出了3種不同的摘要型別，可供您作為購買者使用。
+作為購買者，私人資料摘要在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中會像任何其他選件一樣顯示。 不過，在此情況下，摘要清單不會顯示特徵、不重複使用者及使用者重疊的摘要資訊。 此外，資料賣家可選擇在[!UICONTROL Provider]清單的[!UICONTROL Marketplace]欄中顯示或隱藏其名稱。 在賣家核准您的訂閱要求後，您就可以使用私人摘要中的所有資料（其運作方式就像公開摘要）。 以下[!UICONTROL Marketplace]範例列出了3種不同的摘要型別，可供您作為購買者使用。
 
 ![](assets/buyer_marketplace.png)
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 在您的Audience Manager帳戶中，建立新的Cookie資料來源，包含：
 
-* **Audience Manager識別碼**&#x200B;作為輸入金鑰；
+* **Audience Manager ID**&#x200B;作為傳入金鑰；
 * **共用已啟用**&#x200B;選項已核取。
 
 ![](assets/create-datasource.png)
@@ -148,20 +148,20 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->在「設定」中，選取「私人」選項。 如果您將此欄位設為「公用」，則任何Audience Marketplace客戶都可以訂閱您的摘要。
+>在「設定」中，選取「私人」選項。 如果您將此欄位設為「公開」，則任何Audience Marketplace客戶都可以訂閱您的摘要。
 
 ![](assets/create-data-feed.png)
 
 ### 步驟5 — 資料購買者 — 請求存取權
 
-前往&#x200B;**Audience Marketplace> Marketplace**。 搜尋在上一步中由資料提供者建立的資料摘要。 按一下&#x200B;**要求存取權**。 資料提供者端的指定聯絡人現在將收到電子郵件通知。 另請參閱[訂閱私人資料摘要](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
+前往&#x200B;**Audience Marketplace > Marketplace**。 搜尋在上一步中由資料提供者建立的資料摘要。 按一下&#x200B;**要求存取權**。 資料提供者端的指定聯絡人現在將收到電子郵件通知。 另請參閱[訂閱私人資料摘要](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#subscript-private-data-feed)。
 
 ### 步驟6 — 資料提供者 — 授予存取權
 
-前往&#x200B;**Audience Marketplace>我的共用資料**，並搜尋您在步驟4中建立的摘要。 按一下進入新的存取要求，然後按一下&#x200B;**允許存取**&#x200B;以核准要求。 另請參閱[檢閱、核准或拒絕私人摘要要求](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
+前往&#x200B;**Audience Marketplace >我的共用資料**，並搜尋您在步驟4中建立的摘要。 按一下進入新的存取要求，然後按一下&#x200B;**允許存取**&#x200B;以核准要求。 另請參閱[檢閱、核准或拒絕私人摘要要求](/help/using/features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md#manage-private-requests)。
 
 ### 步驟7 — 資料購買者 — 開啟訂閱
 
-資料提供者授與資料摘要的存取權後，您就可以在&#x200B;**Audience Marketplace> Marketplace**&#x200B;中檢視您帳戶中的摘要。 檢閱詳細資料，開啟[訂閱]按鈕，然後按一下[檢閱與訂閱]。**&#x200B;** 請參閱訂閱資料摘要的[儲存空間](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)，以取得尋找第三方特徵的資訊。
+資料提供者授予資料摘要的存取權後，您就能在&#x200B;**Audience Marketplace > Marketplace**&#x200B;的帳戶中看到摘要。 檢閱詳細資料，開啟[訂閱]按鈕，然後按一下[檢閱與訂閱]。**** 請參閱訂閱資料摘要的[儲存空間](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)，以取得尋找第三方特徵的資訊。
 
 請注意，這些特徵只能在資料提供者的帳戶中編輯。

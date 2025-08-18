@@ -16,13 +16,13 @@ ht-degree: 1%
 
 # 接收來自DCS的資料 {#receive-data-from-the-dcs}
 
-請在此繼續，以取得如何在`/event`呼叫中要求[!DNL DCS]回應的相關資訊。 本節包含回應的範例，以及回應中常用資料元素的定義。
+請在此繼續，以取得如何在[!DNL DCS]呼叫中要求`/event`回應的相關資訊。 本節包含回應的範例，以及回應中常用資料元素的定義。
 
 檢閱此內容之前，請參閱[將資料傳送至DCS](../../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)。
 
 ## DCS回應引數：評論 {#dcs-response-parameters}
 
-如果您想要從[!DNL DCS]接收回應，您的[!DNL DCS]要求必須包含`d_rtbd=json`。 如果您省略此引數，[!DNL DCS]將不會傳回資料。 對[!DNL DCS]進行基本呼叫以要求資料，會使用以下語法：
+如果您想要從[!DNL DCS]接收回應，您的`d_rtbd=json`要求必須包含[!DNL DCS]。 如果您省略此引數，[!DNL DCS]將不會傳回資料。 對[!DNL DCS]進行基本呼叫以要求資料，會使用以下語法：
 
 ```js
 https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_cb=callback
@@ -61,7 +61,7 @@ https://domain_alias.demdex.net/event?key1=val1&key2=val2&d_dst=1&d_rtbd=json&d_
 | `stuff` | 此物件包含所有Cookie目的地的資訊。 此物件的清單是根據使用者的動作而動態的。 |
 | `tid` | 交易ID，是用於偵錯用途的唯一12個字元ID。 向DCS發出的每個/event呼叫都會收到一個tid，您可以在支援查詢中參考該值，以取得更佳且更快速的回應。 |
 | `ttl` | Cookie存留時間值（以天為單位）。 |
-| `u`和`uuid` | 由Audience Manager指派的不重複使用者ID。 如果您進行[伺服器對伺服器DCS呼叫](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)，則需要此專案。 |
+| `u`和`uuid` | Audience Manager指派的不重複使用者ID。 如果您進行[伺服器對伺服器DCS呼叫](../../../api/dcs-intro/dcs-s2s/dcs-s2s-calls.md)，則需要此專案。 |
 | `y` | 目的地型別、iFrame (`iframe`)或影像(`img`)。 |
 
 >[!MORELIKETHIS]

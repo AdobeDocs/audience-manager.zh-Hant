@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 區段清單檢視 {#segments-list-view}
 
-[!UICONTROL Segments dashboard]是管理您的對象區段的集中式工作區。 您可以導覽至「**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**」以檢視[!UICONTROL Segments]儀表板。
+[!UICONTROL Segments dashboard]是管理您的對象區段的集中式工作區。 您可以導覽至「[!UICONTROL Segments] > **[!UICONTROL Audience Data]**」以檢視&#x200B;**[!UICONTROL Segments]**&#x200B;儀表板。
 
 ![區段 — 儀表板](assets/segments-dashboard.png)
 

@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 衍生訊號的位置
 
-從側欄導覽在&#x200B;**[!UICONTROL Tools > Derived Signals]**&#x200B;中建立和管理[!UICONTROL derived signals]。
+從側欄導覽在[!UICONTROL derived signals]中建立和管理&#x200B;**[!UICONTROL Tools > Derived Signals]**。
 
 ## 建立衍生訊號 {#create}
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 若要建立[!UICONTROL derived signal]：
 
-1. 從[!UICONTROL Tools]功能表選取&#x200B;**[!UICONTROL Derived Signals]**。
+1. 從&#x200B;**[!UICONTROL Derived Signals]**&#x200B;功能表選取[!UICONTROL Tools]。
 1. 提供：
    * *（選擇性）* [!UICONTROL Integration Code]
    * [!UICONTROL Source Key]

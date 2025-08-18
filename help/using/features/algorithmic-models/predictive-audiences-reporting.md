@@ -1,5 +1,5 @@
 ---
-description: 預測受眾可協助您運用資料科學，將未知的受眾即時分類為不重複角色。
+description: 預測客群可協助您運用資料科學，將未知的客群即時分類為不重複角色。
 seo-description: Predictive Audiences help you classify unknown audiences into distinct personas in real-time, using data science.
 seo-title: Predictive Audiences Reporting
 solution: Audience Manager
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 預測受眾報表
 
-儲存[!UICONTROL Predictive Audiences]模型後，Audience Manager會開始對其進行訓練。 在數小時內，計算模型將開始分析[資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hant#dcs-pcs)上的對象。 報告功能將於次日提供。
+儲存[!UICONTROL Predictive Audiences]模型後，Audience Manager會開始對其進行訓練。 在數小時內，計算模型將開始分析[資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的對象。 報告功能將於次日提供。
 
 若要檢視[!UICONTROL Predictive Audiences]分類的結果，請前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後按一下清單中的模型。
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 模型表格會顯示下列資訊：
 
-* **[!UICONTROL ID]**：模型ID會唯一識別Audience Manager帳戶中的每個模型；
+* **[!UICONTROL ID]**：模式ID會唯一識別Audience Manager帳戶中的每個模式；
 * **[!UICONTROL Name]**：您在模型建立步驟中提供的名稱；
 * **[!UICONTROL Description]**：您在模型建立步驟中提供的說明；
 * **[!UICONTROL Model Type]**：每個模型的型別（[!UICONTROL Look-Alike Modeling]或[!UICONTROL Predictive Audiences]）；
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 選擇模型後，其報告頁面即會載入。 在頁面頂端，您可以根據1天的即時實現，檢視前5個最大的預測區段，模型已依此分類您的目標對象。 **[!UICONTROL Other]**&#x200B;類別包含其他角色，這些角色未包含在前5個最大的預測區段中。
 
-Audience Manager會同時顯示您[!UICONTROL Predictive Audiences]的彩色編碼環圈圖和時間表圖表。
+Audience Manager會同時顯示您[!UICONTROL Predictive Audiences]的彩色編碼環圈圖和時間軸圖表。
 
 按一下頁面頂端的角色標籤可在圖表和圖形中新增或移除角色。
 

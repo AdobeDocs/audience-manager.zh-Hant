@@ -18,7 +18,7 @@ ht-degree: 1%
 
 在[!UICONTROL Segment Builder]中，造訪間隔和頻率可讓您根據在設定的每日間隔內發生或重複的動作來劃分訪客。
 
-Audience Manager定義[!DNL recency]和[!DNL frequency]如下：
+Audience Manager依下列方式定義[!DNL recency]和[!DNL frequency]：
 
 * **[!UICONTROL Recency]：**&#x200B;使用者最近檢視過或符合一個（或多個） [!UICONTROL traits]的資格。
 * **[!UICONTROL Frequency]：**&#x200B;使用者檢視或符合一個（或多個） [!UICONTROL traits]資格的速率。
@@ -27,7 +27,7 @@ Audience Manager定義[!DNL recency]和[!DNL frequency]如下：
 
 ## [!UICONTROL Recency and Frequency]設定的位置 {#location}
 
-在[!UICONTROL Segment Builder]中，[!UICONTROL Recency]和[!UICONTROL Frequency]設定位於[!UICONTROL Traits]面板的[!UICONTROL Basic View]區段中。 按一下時鐘圖示以公開這些控制項。
+在[!UICONTROL Segment Builder]中，[!UICONTROL Recency]和[!UICONTROL Frequency]設定位於[!UICONTROL Basic View]面板的[!UICONTROL Traits]區段中。 按一下時鐘圖示以公開這些控制項。
 
 ![](assets/recency_frequency.png)
 
@@ -97,7 +97,7 @@ Audience Manager定義[!DNL recency]和[!DNL frequency]如下：
 
 ![小於等於](assets/less-than-equal-to.png)
 
-在此範例中，您選取&lt;=運運算元，如熒幕擷圖所示。 如果使用者在過去五天內符合三個[!UICONTROL traits]中的任何一個的資格，這至少會符合三次[!UICONTROL segment]的資格。 以下時間表顯示[!UICONTROL segment]建立時、10月1日及十天後的[!UICONTROL segment]資格。
+在此範例中，您選取&lt;=運運算元，如熒幕擷圖所示。 如果使用者在過去五天內符合三個[!UICONTROL segment]中的任何一個的資格，這至少會符合三次[!UICONTROL traits]的資格。 以下時間表顯示[!UICONTROL segment]建立時、10月1日及十天後的[!UICONTROL segment]資格。
 
 ![最近5天](assets/last-5-days.png)
 
@@ -105,7 +105,7 @@ Audience Manager定義[!DNL recency]和[!DNL frequency]如下：
 
 ![大於等於](assets/greater-than-equal-to.png)
 
-在此範例中，您選取=>運運算元，如熒幕擷圖所示。 若您的使用者符合三個[!UICONTROL traits]中的任一個，這將使其符合在Audience Manager平台上的第一個資格與五天前的截止時間之間至少三次的[!UICONTROL segment]資格。 以下時間表顯示[!UICONTROL segment]建立時、10月1日及十天後的[!UICONTROL segment]資格。
+在此範例中，您選取=>運運算元，如熒幕擷圖所示。 如果使用者符合三個[!UICONTROL segment]中的任一個，這將使其符合您在Audience Manager平台上的第一個資格與五天前的截止時間之間至少三次的[!UICONTROL traits]資格。 以下時間表顯示[!UICONTROL segment]建立時、10月1日及十天後的[!UICONTROL segment]資格。
 
 ![先前資格](assets/earlier-qualification.png)
 
@@ -114,13 +114,13 @@ Audience Manager定義[!DNL recency]和[!DNL frequency]如下：
 
 頻率限定運算式包含[!UICONTROL trait]實現次數低於所需值的所有使用者。 以下是一些正確和錯誤的範例：
 
-* 錯誤 — 運算式`frequency([1000T]) <= 5`包含識別碼為「1000」且最多可實現5次之[!UICONTROL trait]的所有使用者，但也包含尚未實現[!UICONTROL trait]的使用者。 因此，基於效能原因，Audience Manager不會驗證此運算式，因為它將使[!UICONTROL segment]的太多使用者符合資格。
+* 錯誤 — 運算式`frequency([1000T]) <= 5`包含識別碼為「1000」且最多可實現5次之[!UICONTROL trait]的所有使用者，但也包含尚未實現[!UICONTROL trait]的使用者。 因此，基於效能考量，Audience Manager不會驗證此運算式，因為它將使[!UICONTROL segment]的過多使用者符合資格。
 
 * 權利 — 如果您想要包含識別碼為&quot;1000&quot;且已實現[!UICONTROL trait]最多五次的所有使用者，請在運算式中新增其他條件，以確定使用者至少符合一次[!UICONTROL trait]： `frequency([1000T]) >= 1  AND  frequency([1000T]) <= 5`
 
-* 右 — 當您需要時近/頻率要求小於特定次數或天數時，請使用`AND`運運算元將該[!UICONTROL trait]加入另一個中。 使用第一個專案符號點中的範例，此運算式在與其他[!UICONTROL trait]連結時變成有效，如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`。
+* 右 — 當您需要時近/頻率要求小於特定次數或天數時，請使用[!UICONTROL trait]運運算元將該`AND`加入另一個中。 使用第一個專案符號點中的範例，此運算式在與其他[!UICONTROL trait]連結時變成有效，如下所示： `frequency([1000T]) <= 5 AND isSiteVisitorTrait`。
 
-* 右 — 針對廣告頻率限定使用案例，您可以建立類似以下的[!UICONTROL segment]規則： `(frequency([1000T] <= 2D) >= 5)`。 此運算式包含在過去2天內至少實現5次ID為&quot;1000&quot;的[!UICONTROL trait]的所有使用者。 將此[!UICONTROL segment]傳送至廣告伺服器，並在廣告伺服器的[!UICONTROL segment]上設定`NOT`，以設定頻率上限。 此方法在[!DNL Audience Manager]中取得更優異的效能，同時仍提供相同的頻率上限用途。
+* 右 — 針對廣告頻率限定使用案例，您可以建立類似以下的[!UICONTROL segment]規則： `(frequency([1000T] <= 2D) >= 5)`。 此運算式包含在過去2天內至少實現5次ID為&quot;1000&quot;的[!UICONTROL trait]的所有使用者。 將此[!UICONTROL segment]傳送至廣告伺服器，並在廣告伺服器的`NOT`上設定[!UICONTROL segment]，以設定頻率上限。 此方法在[!DNL Audience Manager]中取得更優異的效能，同時仍提供相同的頻率上限用途。
 
 >[!MORELIKETHIS]
 >
