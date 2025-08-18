@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 目標對象
 
-此頁面適用於使用[Audience Manager標籤擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview)將網頁集合資料匯入Audience Manager的Audience Manager客戶。 若客戶使用AppMeasurement JavaScript資料庫，請參閱如何將Audience Manager [的資料收集資料庫從AppMeasurement JavaScript資料庫更新至Web SDK JavaScript資料庫](appmeasurement-to-web-sdk.md)的指南。
+此頁面適用於使用[Audience Manager標籤擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/audience-manager/overview)將網頁集合資料匯入Audience Manager的Audience Manager客戶。 若客戶使用AppMeasurement JavaScript資料庫，請參閱如何將Audience Manager [的資料收集資料庫從AppMeasurement JavaScript資料庫更新至Web SDK JavaScript資料庫](appmeasurement-to-web-sdk.md)的指南。
 
 ## 此實作路徑的優缺點
 

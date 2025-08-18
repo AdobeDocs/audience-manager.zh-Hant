@@ -63,7 +63,7 @@ ht-degree: 5%
       <li id="li_94DAFA169380405981AFEF1B581997E6">20914 - <span class="keyword"> Google廣告商ID </span> （原始、未雜湊） </li> 
       <li id="li_DE74BE06331C49CF87606A192D815B96">20915 — 廣告商<span class="keyword">的</span> Apple ID （原始、未雜湊） </li> 
       <li id="li_E0A033FEC3174EF08E93EB7C65266337">廠商ID — 第三方使用者ID （網頁/Cookie） </li> 
-     </ul> </p> <p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html">全域資料來源</a>。</p></td> 
+     </ul> </p> <p>如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/global-data-sources.html?lang=zh-Hant">全域資料來源</a>。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code><i>PID_ALIAS </i></code> </p> </td> 

@@ -20,9 +20,9 @@ ht-degree: 2%
 >
 >自2023年7月起，Adobe已停止開發[!DNL Data Integration Library (DIL)]和[!DNL DIL]擴充功能。
 >
->現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe不會在此時間點之後開發[!DNL DIL]。 建議客戶針對[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的長期資料收集策略進行評估。
+>現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe不會在此時間點之後開發[!DNL DIL]。 建議客戶針對[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)的長期資料收集策略進行評估。
 >
->如果客戶希望在2023年7月之後實作新的資料收集整合，應改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
+>如果客戶希望在2023年7月之後實作新的資料收集整合，應改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)。
 
 收集從FLA檔傳送到Analytics的資料，並在Audience Manager中處理該資訊。
 
@@ -56,7 +56,7 @@ c_flash_dil_intro.xml
 
 **將AllowScriptAccess設定為`Always`或`sameDomain`**
 
-載入SWF檔案的HTML程式碼中的`AllowScriptAccess`會控制從SWF檔案執行傳出URL存取的能力。 當您設定[!UICONTROL Flash DIL]資料整合時，請確定Flash `AllowScriptAccess`引數設定為`always`或`sameDomain`。 如果[!UICONTROL Flash DIL]設為`AllowScriptAccess`，`never`資料彙集將無法運作。 請參閱[控制指令碼或主機網頁的存取](https://helpx.adobe.com/flash/kb/control-access-scripts-host-web.html)。
+載入SWF檔案的HTML程式碼中的`AllowScriptAccess`會控制從SWF檔案執行傳出URL存取的能力。 當您設定[!UICONTROL Flash DIL]資料整合時，請確定Flash `AllowScriptAccess`引數設定為`always`或`sameDomain`。 如果[!UICONTROL Flash DIL]設為`AllowScriptAccess`，`never`資料彙集將無法運作。 請參閱[控制指令碼或主機網頁的存取](https://helpx.adobe.com/tw/flash/kb/control-access-scripts-host-web.html)。
 
 **JS [!UICONTROL DIL]程式碼位置**
 

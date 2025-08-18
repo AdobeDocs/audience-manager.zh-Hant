@@ -22,7 +22,7 @@ ht-degree: 96%
 
 GDPR 於 2018 年 5 月 25 日生效，其主要目標是讓歐盟內的個人 (資料主體) 擁有對個人資料的更多控制權，同時透過更完善的歐盟內部統一法規簡化國際企業的法規環境。為支援資料主體 (您的消費者) 的存取和刪除請求，Adobe Audience Manager 團隊已視必要性增強服務和程序，這是 Adobe GDPR 整備的一部分。
 
-請務必參閱[隱私權法規概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en)中的GDPR相關內容，以進一步瞭解GDPR在Experience Cloud中的運作方式。
+請務必參閱[隱私權法規概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=zh-Hant)中的GDPR相關內容，以進一步瞭解GDPR在Experience Cloud中的運作方式。
 
 ## GDPR 字彙表 {#gdpr-glossay}
 
@@ -58,7 +58,7 @@ GDPR 於 2018 年 5 月 25 日生效，其主要目標是讓歐盟內的個人 (
 
  
 
-**Audience Manager 識別碼 (ID)：** Adobe Audience Manager 會儲存各種類型的 ID。[Audience Manager 識別碼](data-privacy-ids.md)頁面提供這些 ID 的摘要、其對應的資料來源以及簡短說明。將請求傳送至 [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 時，請參考這些 ID，以便為您的資料主題提出刪除或存取請求。
+**Audience Manager 識別碼 (ID)：** Adobe Audience Manager 會儲存各種類型的 ID。[Audience Manager 識別碼](data-privacy-ids.md)頁面提供這些 ID 的摘要、其對應的資料來源以及簡短說明。將請求傳送至 [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant) 時，請參考這些 ID，以便為您的資料主題提出刪除或存取請求。
 
  
 

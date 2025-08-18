@@ -111,7 +111,7 @@ ht-degree: 81%
 
 **區段大小估計是否包含根據使用裝置圖表選項的 [!UICONTROL Profile Merge Rule] 提供的連線符合區段資格的裝置？**
 
-不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
+不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hant)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
 
  
 

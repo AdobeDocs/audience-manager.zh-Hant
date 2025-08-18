@@ -60,7 +60,7 @@ ht-degree: 2%
   </tr>
    <tr> 
    <td colname="col1"> <b><span class="uicontrol">事件型別</span></b> </td> 
-   <td colname="col2"> 將特徵指派給型別或類別，通常會根據功能（例如轉換、網站訪客、合作夥伴、頁面檢視等）。 選填。 <p> 若要瞭解如何建立轉換特徵，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html">在Audience Manager中建立轉換特徵影片</a>。 </p></td> 
+   <td colname="col2"> 將特徵指派給型別或類別，通常會根據功能（例如轉換、網站訪客、合作夥伴、頁面檢視等）。 選填。 <p> 若要瞭解如何建立轉換特徵，請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/traits-and-segments/creating-conversion-traits.html?lang=zh-Hant">在Audience Manager中建立轉換特徵影片</a>。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">整合代碼</span></b> </td> 

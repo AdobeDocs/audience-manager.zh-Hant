@@ -19,7 +19,7 @@ ht-degree: 1%
 >[!WARNING]
 >
 >Google已更新[!DNL Google Chrome]和所有[!DNL Chromium]型瀏覽器的功能，以將透過`User-Agent`標題收集的資訊減至最少。
->&#x200B;>自2023年3月起，Audience Manager運用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)支援這些更新。 若要繼續使用透過`User-Agent`標題提供的特徵資訊，您必須使用[網頁SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)並啟用[高平均資訊量使用者代理程式使用者端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en)。
+>&#x200B;>自2023年3月起，Audience Manager運用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)支援這些更新。 若要繼續使用透過`User-Agent`標題提供的特徵資訊，您必須使用[網頁SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)並啟用[高平均資訊量使用者代理程式使用者端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=zh-Hant)。
 >&#x200B;>[DIL](../../../using/dil/dil-overview.md)不支援這些更新，因此使用[!DNL DIL]的Audience Manager客戶將無法透過`User-Agent`標頭收集特徵資訊。
 
 說明在您的Audience Manager帳戶中，透過所有屬性的裝置相關變數，可用來鎖定使用者的常用平台層級索引鍵值配對。

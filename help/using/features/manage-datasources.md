@@ -35,9 +35,9 @@ ht-degree: 0%
 1. **[!UICONTROL Description]** （選擇性）：輸入資料來源的說明，協助您定義資料來源的角色或用途。
 1. **[!UICONTROL Integration Code]** （選用）：輸入整合代碼。 當您想要：
    * [建立跨裝置資料來源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * 使用[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+   * 使用[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
    * 使用[設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)。
-1. **[!UICONTROL Namespace]** （唯讀）：此欄位是唯讀的，會在您儲存資料來源時自動產生。 如果您想要將區段從Audience Manager匯出至Experience Platform，您必須在Experience Platform中建立對應的[身分名稱空間](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces)，使用自動產生的值做為Experience Platform中的名稱空間[身分符號](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#components-of-a-namespace)。
+1. **[!UICONTROL Namespace]** （唯讀）：此欄位是唯讀的，會在您儲存資料來源時自動產生。 如果您想要將區段從Audience Manager匯出至Experience Platform，您必須在Experience Platform中建立對應的[身分名稱空間](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hant#manage-namespaces)，使用自動產生的值做為Experience Platform中的名稱空間[身分符號](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces#components-of-a-namespace)。
 1. **[!UICONTROL ID Type]**：選取此資料來源將包含的ID型別：
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
@@ -69,7 +69,7 @@ ht-degree: 0%
 >請注意下列限制：
 >
 >* 您無法刪除[作用中對象或資料Source同步特徵](../features/traits/client-activity-synced-audience-traits.md)。
->* 對於使用Adobe Analytics的客戶： Audience Manager不允許您刪除從[!DNL Analytics]報表套裝自動建立的資料來源。 使用[核心服務](https://experienceleague.adobe.com/en/docs/core-services/interface/services/customer-attributes/attributes)來取消這些資料來源的對應。
+>* 對於使用Adobe Analytics的客戶： Audience Manager不允許您刪除從[!DNL Analytics]報表套裝自動建立的資料來源。 使用[核心服務](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/customer-attributes/attributes)來取消這些資料來源的對應。
 
 1. 按一下&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**。
 1. 選取一或多個資料來源旁的核取方塊。

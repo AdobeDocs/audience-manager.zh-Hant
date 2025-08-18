@@ -28,7 +28,7 @@ ht-degree: 82%
 
 **Audience Manager 如何使用 Cookie？會設定哪些 Cookie？**
 
-請參閱 [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)。
+請參閱 [Audience Manager Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hant)。
 
 **美國的 Audience Manager 客戶是否可將目標定位為歐盟屬性的使用者？**
 

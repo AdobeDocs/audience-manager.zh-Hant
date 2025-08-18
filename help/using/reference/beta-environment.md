@@ -29,7 +29,7 @@ bveta環境中的功能是生產環境的精確復本，沒有任何實驗性或
 
 >[!IMPORTANT]
 >
->請注意，您的客戶資料（[訊號、特徵和區段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)）並未在生產環境和Beta版環境之間同步。
+>請注意，您的客戶資料（[訊號、特徵和區段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=zh-Hant)）並未在生產環境和Beta版環境之間同步。
 
 ## 傳入流量
 

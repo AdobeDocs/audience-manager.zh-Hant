@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 預測受眾報表
 
-儲存[!UICONTROL Predictive Audiences]模型後，Audience Manager會開始對其進行訓練。 在數小時內，計算模型將開始分析[資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html#dcs-pcs)上的對象。 報告功能將於次日提供。
+儲存[!UICONTROL Predictive Audiences]模型後，Audience Manager會開始對其進行訓練。 在數小時內，計算模型將開始分析[資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hant#dcs-pcs)上的對象。 報告功能將於次日提供。
 
 若要檢視[!UICONTROL Predictive Audiences]分類的結果，請前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後按一下清單中的模型。
 
