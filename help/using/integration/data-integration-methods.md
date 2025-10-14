@@ -27,7 +27,7 @@ Audience Manager如何與其他資料提供者和系統交換資訊的整體概�
 
 ## 先決條件：建立特徵分類法 {#prereqs}
 
-在整合程式開始之前，請記得在[ UI中](../features/traits/create-onboarded-rule-based-traits.md)建立特徵[和](../features/traits/trait-storage.md#create-trait-storage-folder)資料夾結構[!DNL Audience Manager]。 分類法會包含以邏輯階層組織的所有[!UICONTROL traits]。
+在整合程式開始之前，請記得在[&#x200B; UI中](../features/traits/create-onboarded-rule-based-traits.md)建立特徵[和](../features/traits/trait-storage.md#create-trait-storage-folder)資料夾結構[!DNL Audience Manager]。 分類法會包含以邏輯階層組織的所有[!UICONTROL traits]。
 
 ## 整合的使用案例 {#integration-use-cases}
 

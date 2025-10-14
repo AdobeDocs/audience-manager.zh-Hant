@@ -31,7 +31,7 @@ t_bulk_updates.xml
 
 >[!NOTE]
 >
->在[ UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
+>在[&#x200B; UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
 
 若要進行大量更新，請開啟[!UICONTROL Bulk Management Tools]工作表並：
 

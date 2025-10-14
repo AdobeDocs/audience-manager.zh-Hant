@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!DNL PGP]加密包含檔案壓縮。 傳送[!DNL PGP]個加密的傳入檔案時，請確定您未使用gzip ([) ](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)壓縮`.gz`它們。
+>[!DNL PGP]加密包含檔案壓縮。 傳送[!DNL PGP]個加密的傳入檔案時，請確定您未使用gzip ([) &#x200B;](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)壓縮`.gz`它們。
 >
 >在Audience Manager中，[!DNL PGP]同樣為[壓縮](../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md)的加密傳入檔案無效。
 

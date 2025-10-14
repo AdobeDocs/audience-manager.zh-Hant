@@ -30,7 +30,7 @@ t_bulk_requests.xml
 
 >[!NOTE]
 >
->在[ UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
+>在[&#x200B; UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
 
 [!UICONTROL Request]工作表沒有自己的欄標題集，您不需要將ID複製到任何欄。 而是會根據您在工具列中按一下之動作按鈕傳回資料。 此外，選用的報表功能會傳回畫素引發的頻率計數，以及數個固定時間間隔的不重複使用者計數。
 

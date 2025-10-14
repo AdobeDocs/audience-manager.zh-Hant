@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## URL字串引數和語法 {#url-string-syntax}
 
-傳入資料傳輸的[!DNL URL]應包含下述變數。 設定即時資料傳輸之前，請記得在[ UI中](../../../features/traits/create-onboarded-rule-based-traits.md)建立特徵[和](../../../features/traits/trait-storage.md#create-trait-storage-folder)資料夾結構[!DNL Audience Manager]。
+傳入資料傳輸的[!DNL URL]應包含下述變數。 設定即時資料傳輸之前，請記得在[&#x200B; UI中](../../../features/traits/create-onboarded-rule-based-traits.md)建立特徵[和](../../../features/traits/trait-storage.md#create-trait-storage-folder)資料夾結構[!DNL Audience Manager]。
 
 >[!NOTE]
 >

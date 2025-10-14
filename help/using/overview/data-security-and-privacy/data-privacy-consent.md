@@ -51,4 +51,4 @@ Audience Manager 客戶能針對各種使用案例 (例如廣告或個人化) �
 
 ## 管理 Audience Marketplace 第三方合作夥伴的同意
 
-Audience Marketplace 第三方合作夥伴也是資料控制者，擁有取得同意及管理存取/刪除/更正請求的程序。Adobe 主動要求 Audience Marketplace 第三方商合作夥伴在 [ Adobe Audience Finder](https://www.adobe-audience-finder.com/) 中更新其公司設定檔資訊，並提供與使用者資料收集相關的其他資訊。資訊將來自 Audience Marketplace 第三方合作夥伴，且會定期更新。不過 Audience Marketplace 第三方合作夥伴是否已針對該客戶的使用案例取得必要的同意，由各個 Audience Manager 客戶自行判斷。Adobe 不就 Audience Marketplace 第三方合作夥伴針對特定使用案例取得或報告同意之範圍或效力做任何聲明。
+Audience Marketplace 第三方合作夥伴也是資料控制者，擁有取得同意及管理存取/刪除/更正請求的程序。Adobe 主動要求 Audience Marketplace 第三方商合作夥伴在 [&#x200B; Adobe Audience Finder](https://www.adobe-audience-finder.com/) 中更新其公司設定檔資訊，並提供與使用者資料收集相關的其他資訊。資訊將來自 Audience Marketplace 第三方合作夥伴，且會定期更新。不過 Audience Marketplace 第三方合作夥伴是否已針對該客戶的使用案例取得必要的同意，由各個 Audience Manager 客戶自行判斷。Adobe 不就 Audience Marketplace 第三方合作夥伴針對特定使用案例取得或報告同意之範圍或效力做任何聲明。
