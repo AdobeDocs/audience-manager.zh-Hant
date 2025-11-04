@@ -8,7 +8,7 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
-source-git-commit: 5d62ecabfe66faa024f8e89149e47dd76d1bba86
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 85%
@@ -42,6 +42,7 @@ Audience Manager 會從各種管道和裝置 (網頁分析、CRM、裝置資料�
 ## 更多資訊 {#more-information}
 
 如需詳細資訊，請參閱下列資源：
+
 * [Audience Manager 概述](https://www.adobe.com/tw/analytics/audience-manager.html)
 * [Audience Manager 優點](https://www.adobe.com/tw/analytics/audience-manager/benefits.html)
 * [Audience Manager 功能](https://www.adobe.com/tw/analytics/audience-manager/features.html)

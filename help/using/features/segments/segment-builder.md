@@ -7,7 +7,7 @@ title: 客戶細分工具
 uuid: 5ca924a5-2b29-4802-ab02-e292d77a0aae
 feature: Segments
 exl-id: 1bd681e4-fdf7-40df-b497-b1b0bf19d68e
-source-git-commit: 1fc17678ba632bfa17f7525c4fc4ff3b534acf94
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 2%
@@ -110,7 +110,7 @@ ht-degree: 2%
 -->
 
 | 欄位 | 說明 |
----------|----------
+|---------|----------|
 | **[!UICONTROL Name]** | 為區段提供一個簡短的邏輯名稱，用於描述其功能或用途。 避免使用縮寫和特殊字元。 區段名稱的最大長度為255個字元。 |
 | **[!UICONTROL Description]** | 有關區段的其他描述性資訊的欄位。 |
 | **[!UICONTROL Integration Code]** | 使用者定義的ID或其他公司專屬資訊的欄位。 |

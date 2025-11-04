@@ -8,7 +8,7 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: b3f97cfbbd5167f03a6951fcc571368e4a0d15a4
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 2%
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >下列廣告伺服器支援[!UICONTROL Actionable Log Files]：
->&#x200B;> <br>
+> <br>
 >
 > * [Google行銷活動管理員](#dcm-logs-signals)
 > * [Google廣告管理員](#ad-manager-logs-signals)

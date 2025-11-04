@@ -7,7 +7,7 @@ title: 資料匯出控制
 uuid: de7f3608-c0cb-4049-973a-8be54525c600
 feature: Data Export Controls
 exl-id: 4369c210-bcf1-48cc-a9bb-0d122f6c03d4
-source-git-commit: 26aa0a210a045b40b2329844324315a092947188
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 根據套用至資料來源和目的地的分類，匯出控制項會禁止您：
 
 * 當特徵屬於具有資料匯出控制項的資料來源，而該資料匯出控制項與區段對應至的一或多個目的地上的資料匯出標籤不相容時，將特徵新增至區段。
-例如，假設區段對應至匯出標籤為&#x200B;**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目的地。 如果特徵所屬的資料來源具有顯示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的資料匯出控制項，匯出控制項會阻止您將特徵新增至該區段。
+例如，假設區段對應至匯出標籤為**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目的地。 如果特徵所屬的資料來源具有顯示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的資料匯出控制項，匯出控制項會阻止您將特徵新增至該區段。
 * 將任何資料傳送至目的地，該目的地具有資料匯出標籤，且被任何下列位置的資料匯出控制項封鎖：
    * 所包含特徵的資料來源；
    * 用於所包含區段中的特徵資料來源；
@@ -48,6 +48,7 @@ ht-degree: 1%
 >[!IMPORTANT]
 >
 >您不能藉由將資料匯出控制項置於區段的資料來源上來封鎖區段的匯出，您必須在下列任一專案上設定控制項：
+>
 > * 用於區段之特徵的資料來源；
 > * 該區段利用的設定檔合併規則；
 > * 區段的設定檔合併規則使用的任何資料來源。

@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 使用以人物為基礎的平台進行驗證
 feature: People-based Destinations
 exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
-source-git-commit: 1809e9ee0b19a8ffb4bec38162f728d543d13701
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
    ![以人物為基礎的整合](assets/pbd-config.png)
 2. 按一下 **[!UICONTROL Add Account]**。
-3. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉式功能表選取您要設定整合的平台。
+3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表選取您要設定整合的平台。
    ![以人員為基礎的平台](assets/pbd-add.png)
 4. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
 5. 在驗證您的Social Platform帳戶後，您會重新導向至Audience Manager，在那裡您應該會看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
@@ -52,7 +52,9 @@ Audience Manager會透過驗證權杖（將於特定時間後到期），處理�
 當驗證Token過期時，Audience Manager與對應社交平台之間的整合會中斷，因此Audience Manager無法再將受眾區段傳送至目的地。 [!UICONTROL Integrated Accounts]頁面會顯示[!UICONTROL Expiration]欄中每個整合的到期狀態，並可讓您隨時更新驗證。
 
 以下說明如何更新已過期或即將過期的驗證：
+
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。
 1. 識別更新驗證所需的整合。 過期的驗證會標示為[!UICONTROL Expired]，而即將過期的驗證會顯示剩餘的驗證天數。
 1. 按一下&#x200B;**[!UICONTROL Renew]**&#x200B;欄中對應的[!UICONTROL Expiration]圖示。 這會觸發&#x200B;**[!UICONTROL Renew Account]**&#x200B;工作流程，帶您回到社交平台的驗證頁面。 驗證後，Token會以新的到期日更新。
+
    ![pbd — 續約](assets/pbd-renew.png)

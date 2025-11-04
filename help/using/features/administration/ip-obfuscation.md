@@ -5,7 +5,7 @@ solution: Audience Manager
 title: IP位址模糊化
 feature: Data Governance & Privacy
 exl-id: 8c976d1e-f4ba-4892-bd68-d4e74bdb4d9b
-source-git-commit: ae074cdeb8dcf6f6a224c2ede5f3bb704b28f49f
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 12%
@@ -31,7 +31,7 @@ ht-degree: 12%
 
 ### IP模糊化優先順序 {#precedence}
 
-[資料串流層級IP模糊化](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#create)優先於Audience Manager中設定的任何IP模糊化選項，而且會套用至所有IP位址。 Audience Manager完成的任何地理位置查詢都會受到資料流層級[!UICONTROL IP obfuscation]選項的影響。 在Audience Manager中，根據完全模糊化的IP進行地理位置查詢將會產生未知區域，且任何根據結果地理位置資料的區段都不會實現。
+[資料串流層級IP模糊化](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#create)優先於Audience Manager中設定的任何IP模糊化選項，而且會套用至所有IP位址。 Audience Manager完成的任何地理位置查詢都會受到資料流層級[!UICONTROL IP obfuscation]選項的影響。 在Audience Manager中，根據完全模糊化的IP進行地理位置查詢將會產生未知區域，且任何根據結果地理位置資料的區段都不會實現。
 
 ## IP位址模糊化需求 {#ip-obfuscation-requirements}
 
@@ -62,4 +62,5 @@ IP位址模糊化僅適用於Audience Manager管理員帳戶。 請參閱[建立
 
 * [資料隱私權](/help/using/overview/data-security-and-privacy/data-privacy.md)
 * IP位址模糊化影片示範
+
 >[!VIDEO](https://video.tv.adobe.com/v/27218/)

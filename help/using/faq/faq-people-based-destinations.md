@@ -6,10 +6,10 @@ solution: Audience Manager
 title: 以人物為基礎的目的地常見問題集
 feature: People-based Destinations
 exl-id: 56506bf0-45f1-49df-81ac-10f57a2487eb
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 93%
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 93%
 
 **我是否可透過 Web 表單或行動應用程式收集雜湊電子郵件地址，還是必須透過批次檔案進行？**
 
-您可以使用 [!DNL ECID] 搭配[宣告 ID](../features/declared-ids.md) 透過 Web 驗證收集雜湊電子郵件地址。批次檔案也可讓您收集無法透過驗證傳送的雜湊電子郵件地址 (例如您 [!DNL CRM] 中的休眠使用者)，並在以人物為基礎的目的地啟用這些地址。
+您可以使用 [!DNL ECID] 搭配[宣告 ID](../features/declared-ids.md) 透過 Web 驗證收集雜湊電子郵件地址。批次檔案也可讓您收集無法透過驗證傳送的雜湊電子郵件地址(例如您([!DNL CRM])中的休眠使用者)，並在以人物為基礎的目的地啟用這些地址。
 
 **透過 Web 表單擷取雜湊電子郵件地址，與透過批次檔案上傳雜湊電子郵件地址有何不同？**
 
@@ -60,6 +60,7 @@ Audience Manager 不會擷取原始電子郵件地址，且無法驗證雜湊是
 這取決於您的使用案例。如果您打算在以人物為基礎的管道中啟用現有的第一方區段，則不需要建立新區段。您只需將區段對應至以人物為基礎的目的地即可。
 
 如果您打算在以人物為基礎的管道中啟用新的離線客群，則需要使用 [!DNL All Cross-Device Profiles] 合併規則建立新的第一方細分群體。
+
 >[!NOTE]
 >
 > 您只能將具有第一方資料的區段對應至 [!DNL People-Based Destinations]。我們的目的地平台不接受含有第二方和第三方資料的區段。
@@ -72,7 +73,7 @@ Audience Manager 不會擷取原始電子郵件地址，且無法驗證雜湊是
 
 **理論上來說，相較於其他將客群傳送至目的地平台的方法，使用 [!DNL People-Based Destinations] 時符合率有何不同？**
 
-只要電子郵件地址已正確雜湊並擷取，使用 [!DNL People-Based Destinations] 與其他方法的符合率就不會有差異。符合率低於 100% 的唯一原因是，傳入 Audience Manager 的電子郵件地址，無法與目的地平台使用者群中的電子郵件地址比對成功。
+只要電子郵件地址已正確雜湊並擷取，使用 [!DNL People-Based Destinations] 與其他方法的符合率就不會有差異。符合率低於100%的唯一原因是，傳入Audience Manager的電子郵件地址，無法與目的地平台使用者群中的電子郵件地址比對成功。
 
 **我會收集客戶的工作電子郵件地址，這些地址與社交網路中使用的個人電子郵件地址不同。如何在多個電子郵件地址間識別身分？**
 
@@ -106,13 +107,13 @@ Audience Manager 可收集每位使用者的最多 10 個電子郵件地址並�
 
 **[!DNL People-Based Destinations] 是否支援其他 [!DNL Facebook] 應用程式 (例如 [!DNL Instagram]) 中的客群目標選擇？**
 
-您可以在 [!DNL Facebook] 旗下 [!DNL Custom Audiences] 所支援的應用程式中使用 [!DNL People-Based Destinations]，包括 [!DNL Facebook]、[!DNL Instagram]、[!DNL Audience Network] 和 [!DNL Messenger]。在 [!DNL Facebook Ads Manager] 中的廣告版位層級會指出您選擇針對哪個應用程式執行行銷活動。
+您可以在[!DNL People-Based Destinations]所支援的[!DNL Facebook]應用程式系列中使用[!DNL Custom Audiences]，包括[!DNL Facebook]、[!DNL Instagram]、[!DNL Audience Network]和[!DNL Messenger]。 在 [!DNL Facebook Ads Manager] 中的廣告版位層級會指出您選擇針對哪個應用程式執行行銷活動。
 
-**[!DNL People-Based Destinations] 和 [!DNL Website Custom Audiences] 之間有何差異？**
+**[!DNL People-Based Destinations]與[!DNL Website Custom Audiences]之間有何差異？**
 
 [!DNL People-Based Destinations] 可運用 [!DNL Custom Audiences (CA)] 與 [!DNL Facebook] 的整合。客戶將客群傳送至 [!DNL Facebook] 時，運用 [!DNL WCA] 與 [!DNL CA] 整合之間的差異是關鍵所在。[!DNL WCA] 使用 [!DNL Facebook] 像素 (可能是網站使用者 ID)，而 [!DNL People-Based Destinations] 使用雜湊電子郵件地址來與 [!DNL CA] 整合。
 
-您可以透過 [!DNL URL Destinations] 功能使用 Audience Manager 的 [!DNL Facebook] [!DNL WCA] 整合，不需額外付費。
+您可以透過[!DNL Facebook]功能使用Audience Manager的[!DNL WCA] [!DNL URL Destinations]整合，不需額外付費。
 
 這兩項整合相輔相成，您可以同時使用兩者來確保客群涵蓋範圍更廣。例如，公司想要將目標定位為尚未註冊帳戶的網站訪客時，可使用 [!DNL WCA] 進行勘察，而 [!DNL People-Based Destinations] 可協助您將目標定位為已提供電子郵件地址但可能未造訪網站的現有客戶。
 

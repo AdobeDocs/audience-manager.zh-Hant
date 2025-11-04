@@ -8,7 +8,7 @@ title: 使用通用分類法將特徵分類
 uuid: 2e177344-07d9-40a7-8c99-c6c6518b9d97
 feature: Traits
 exl-id: 59000dc7-66cf-4e7e-8e9b-9d48157203bd
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 分類資料類別中的特徵
 
-您在[!UICONTROL Add New Trait Wizard] （位於* **[!UICONTROL Audience Data > Traits]***）中建立或編輯特徵時，指派分類法分類。 如需詳細資訊，請參閱有關建立特徵[的](../../features/traits/create-onboarded-rule-based-traits.md)檔案。
+您在[!UICONTROL Add New Trait Wizard] (位於***[!UICONTROL Audience Data > Traits]***)中建立或編輯特徵時，指派分類法分類。 如需詳細資訊，請參閱有關建立特徵[的](../../features/traits/create-onboarded-rule-based-traits.md)檔案。
 
 ## 使用分類法：其他考量事項
 

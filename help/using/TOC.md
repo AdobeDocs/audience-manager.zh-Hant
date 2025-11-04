@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當客群的詳細資料。
 feature-set: Audience Manager
-source-git-commit: a03953af94e98d1aabfc9cb6cd1af82f42080d91
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 17%
@@ -16,7 +16,7 @@ ht-degree: 17%
 # Audience Manager 使用手冊 {#user-guide}
 
 + [Audience Manager 指南](aam-home.md)
-+ [Real-Time CDP的演變指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html?lang=zh-Hant)
++ [Real-Time CDP的演變指南](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/evolution/aam-to-rtcdp.html)
 + 移轉至Web SDK{#migrate-to-web-sdk}
    + [從Adobe Audience Manager標籤擴充功能移轉至網路SDK標籤擴充功能](migrate-to-web-sdk/dil-extension-to-web-sdk.md)
    + [將您的資料收集程式庫從AppMeasurement移轉至Web SDK](migrate-to-web-sdk/appmeasurement-to-web-sdk.md)
@@ -152,7 +152,7 @@ ht-degree: 17%
       + [區段運算式編輯器中使用的程式碼語法](features/segments/segment-code-syntax.md)
       + [區段產生器的特徵和區段母體資料](features/segments/segment-builder-data.md)
       + [特徵建議](features/segments/trait-recommendations.md)
-      + [特徵和細分資格篩選參考資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html?lang=zh-Hant)
+      + [特徵和細分資格篩選參考資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html)
    + 特徵{#traits}
       + [特徵概述](/help/using/features/traits/traits-overview.md)
       + [特徵詳細資訊頁面](features/traits/trait-details-page.md)
@@ -349,8 +349,8 @@ ht-degree: 17%
    + 與其他Experience Cloud應用程式的整合 {#integration-other-solutions}
       + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從Adobe Analytics轉送至Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [將Adobe Analytics區段發佈至Experience Cloud (開啟Adobe Analytics檔案)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=zh-Hant)
-      + [整合Audience Manager與Adobe Campaign (開啟Adobe Campaign檔案)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html?lang=zh-Hant)
+      + [將Adobe Analytics區段發佈至Experience Cloud (開啟Adobe Analytics檔案)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html)
+      + [整合Audience Manager與Adobe Campaign (開啟Adobe Campaign檔案)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
    + [Amazon S3：關於](reference/amazon-s3.md)

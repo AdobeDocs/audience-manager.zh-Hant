@@ -6,7 +6,7 @@ title: 即時跨裝置隱藏功能
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: Profile Merge
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-source-git-commit: 2643bebea8618124d5c96906e8dc89e21024d51a
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 6%
@@ -42,11 +42,13 @@ ht-degree: 6%
 您可以設定造訪間隔和頻率控制，確保使用者不會大量使用相同的創意。 此情境中，請依照下列步驟概述，建立具有兩個特徵的區段。
 
 1. 使用兩個特徵建立區段，並使用[!UICONTROL AND]邏輯，如下圖所示。 您必須使用規則型特徵來定義要即時觸發之取消區段的曝光事件。 深入瞭解如何[建立規則型特徵](../traits/create-onboarded-rule-based-traits.md)。
+
    >[!NOTE]
    >
    >您可以使用[!UICONTROL Actionable Log Files]或[!UICONTROL Pixel Calls]，根據使用者曝光數建立特徵。 深入瞭解[可操作的記錄檔](../../integration/media-data-integration/actionable-log-files.md)和[畫素呼叫](../../integration/media-data-integration/impression-data-pixels.md)。
-2. 將頻率控制項套用至第二個特徵。 您也可以新增造訪間隔控制項。 深入瞭解[如何套用造訪間隔和頻率控制項](../segments/recency-and-frequency.md)。
-3. 將區段對應至任意數量的即時伺服器對伺服器目的地。 閱讀如何新增區段至[伺服器對伺服器目的地](../destinations/add-edit-segments.md)。
+
+1. 將頻率控制項套用至第二個特徵。 您也可以新增造訪間隔控制項。 深入瞭解[如何套用造訪間隔和頻率控制項](../segments/recency-and-frequency.md)。
+1. 將區段對應至任意數量的即時伺服器對伺服器目的地。 閱讀如何新增區段至[伺服器對伺服器目的地](../destinations/add-edit-segments.md)。
 
 在此案例中，一旦您的使用者累積超過三次曝光，就會從此區段中移除他們，且不會再看到此特定創意內容。
 

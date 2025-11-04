@@ -8,7 +8,7 @@ keywords: d_caller， d_cb， d_cid， d_cid_ic， d_coppa， d_cts=1， d_cts=2
 uuid: 0b98ed11-314b-4500-afde-45a041112150
 feature: DCS
 exl-id: 1bdd7dcd-9411-4b0a-a236-059eb5faf00d
-source-git-commit: e10211057a87622340fd2c61737c7c7a45c0e99c
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%
@@ -80,7 +80,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_coppa</code> </p> </td> 
-   <td colname="col2"> <p>停用第三方Cookie的使用以遵守兒童保護法規。 此引數是由Adobe Adobe Experience Platform Identity Service動態設定，且取決於<code> idSyncDisable3rdPartySyncing</code>設定。 請參閱Adobe Experience Platform Identity服務<a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html?lang=zh-Hant" format="https" scope="external">中的</a> COPPA支援。 </p> </td>
+   <td colname="col2"> <p>停用第三方Cookie的使用以遵守兒童保護法規。 此引數是由Adobe Adobe Experience Platform Identity Service動態設定，且取決於<code> idSyncDisable3rdPartySyncing</code>設定。 請參閱Adobe Experience Platform Identity服務<a href="https://experienceleague.adobe.com/docs/id-service/using/reference/coppa.html" format="https" scope="external">中的</a> COPPA支援。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><code> d_cts=1</code> </p> <p><code> d_cts=2</code> </p> </td> 
@@ -90,14 +90,14 @@ ht-degree: 2%
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> 傳回區段的區段ID。 </p> </li>
      </ul> </p> <p>範例回應可能如下所示： </p> <p>
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"07955261652886032950143702505894272138",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"traits":&nbsp;[420020,&nbsp;5421506],
       &nbsp;&nbsp;&nbsp;&nbsp;"segments":&nbsp;[984263,&nbsp;985264],
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -122,7 +122,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_mid</code> </p> </td> 
-   <td colname="col2"> <p>指定<span class="keyword"> Experience Cloud</span> ID服務所設定及使用的Experience Cloud ID。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與Experience Cloud Identity服務</a>。 </p> </td> 
+   <td colname="col2"> <p>指定<span class="keyword"> Experience Cloud</span> ID服務所設定及使用的Experience Cloud ID。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud Identity服務</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><code> d_nsid</code> </p> </td> 
@@ -150,12 +150,12 @@ ht-degree: 2%
       <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">如果您包含此專案，<span class="wintitle"> DCS</span>會在回應內文中傳回<code> JSON</code>物件。 請參閱下列範例。 您的回應可能比較複雜。 </li> 
      </ul> </p> <p> 
      <code class="syntax javascript">
-      &lbrace;
+      {
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"22920112968019678612904394744954398990",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      &rbrace;
+      }
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -194,8 +194,8 @@ ht-degree: 2%
 這些標頭包含HTTP呼叫中資料請求和回應之類的資訊。
 
 | 屬性 | 說明 |
-| --- | --- | 
-| `h_host` | 這會設定為使用者端的特定資料收集主機名稱。 它顯示為`host name .demdex.net`。 請參閱[瞭解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant)。 |
+| --- | --- |
+| `h_host` | 這會設定為使用者端的特定資料收集主機名稱。 它顯示為`host name .demdex.net`。 請參閱[瞭解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)。 |
 | `h_user-agent` | 設定為`User-Agent`標頭值。 |
 | `h_accept-language` | 設定為`Accept-Language`標頭值。 |
 | `h_referer` | 設定為`Referer`標頭值。 |

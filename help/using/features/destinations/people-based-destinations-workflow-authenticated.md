@@ -6,7 +6,7 @@ solution: Audience Manager
 title: 工作流程C — 以結合離線資料的驗證活動為基礎的Personalization
 feature: People-based Destinations
 exl-id: 24f877ce-089e-484c-9a70-8fce1a10a649
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
 workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 1%
@@ -41,6 +41,7 @@ ht-degree: 1%
 1. 在&#x200B;**[!UICONTROL ID Type]**&#x200B;下拉式功能表中，選取&#x200B;**[!UICONTROL Cross Device]**。
 1. 在&#x200B;**[!UICONTROL Data Source Settings]**&#x200B;區段中，同時選取&#x200B;**[!UICONTROL Inbound]**&#x200B;和&#x200B;**[!UICONTROL Outbound]**&#x200B;選項，並啟用&#x200B;**[!UICONTROL Share associated cross-device IDs in people-based destinations]**&#x200B;選項。
 1. 使用下拉式功能表為此資料來源選取&#x200B;**[!UICONTROL Emails(SHA256, lowercased)]**&#x200B;標籤。
+
    >[!IMPORTANT]
    >
    >此選項僅會將資料來源標示為包含使用該特定演演算法雜湊的資料。 Audience Manager不會在此步驟將資料雜湊。 確定您計畫儲存在此資料來源中的電子郵件地址已使用[!DNL SHA256]演演算法雜湊。 否則，您將無法將其用於[!DNL People-Based Destinations]。
@@ -100,7 +101,7 @@ ht-degree: 1%
 2. 按一下 **[!UICONTROL Add New Rule]**。
 3. 輸入設定檔合併規則&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
 4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;區段中，從&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;清單中選取&#x200B;**[!UICONTROL Last Authenticated Profiles]**&#x200B;或&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;規則。
-5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;清單中，選取您要執行分段的資料來源。 這些應該是包含現有DPUUID的資料來源。
+5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**清單中，選取您要執行分段的資料來源。 這些應該是包含現有DPUUID的資料來源。
    ![merge-rule-setup](assets/pbd-pmr-combined.png)
 
 ## 步驟4 — 建立對象區段 {#create-audience-segments}
@@ -112,7 +113,7 @@ ht-degree: 1%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
    ![以人物為基礎的整合](assets/pbd-config.png)
 2. 按一下 **[!UICONTROL Add Account]**。
-3. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉式功能表選取您要設定整合的平台。
+3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表選取您要設定整合的平台。
    ![以人員為基礎的平台](assets/pbd-add.png)
 4. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
 5. 在驗證您的Social Platform帳戶後，您會重新導向至Audience Manager，在那裡您應該會看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
