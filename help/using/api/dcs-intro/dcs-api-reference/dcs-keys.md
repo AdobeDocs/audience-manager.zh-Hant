@@ -90,14 +90,14 @@ ht-degree: 2%
       <li id="li_F304CA651F3C444A9A24576726925D87"> <p><code> d_cts=2</code> 傳回區段的區段ID。 </p> </li>
      </ul> </p> <p>範例回應可能如下所示： </p> <p>
      <code class="syntax javascript">
-      {
+      &lbrace;
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"07955261652886032950143702505894272138",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"traits":&nbsp;[420020,&nbsp;5421506],
       &nbsp;&nbsp;&nbsp;&nbsp;"segments":&nbsp;[984263,&nbsp;985264],
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      }
+      &rbrace;
      </code> </p> </td> 
   </tr> 
   <tr> 
@@ -150,12 +150,12 @@ ht-degree: 2%
       <li id="li_824C23B4C7AA4B5EBADF73D26016A18E">如果您包含此專案，<span class="wintitle"> DCS</span>會在回應內文中傳回<code> JSON</code>物件。 請參閱下列範例。 您的回應可能比較複雜。 </li> 
      </ul> </p> <p> 
      <code class="syntax javascript">
-      {
+      &lbrace;
       &nbsp;&nbsp;&nbsp;&nbsp;"stuff":&nbsp;[],
       &nbsp;&nbsp;&nbsp;&nbsp;"uuid":&nbsp;"22920112968019678612904394744954398990",
       &nbsp;&nbsp;&nbsp;&nbsp;"dcs_region":&nbsp;7,
       &nbsp;&nbsp;&nbsp;&nbsp;"tid":&nbsp;"ss3OTqPiQp0="
-      }
+      &rbrace;
      </code> </p> </td> 
   </tr> 
   <tr> 

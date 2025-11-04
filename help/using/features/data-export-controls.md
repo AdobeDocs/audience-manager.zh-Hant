@@ -28,7 +28,7 @@ ht-degree: 1%
 根據套用至資料來源和目的地的分類，匯出控制項會禁止您：
 
 * 當特徵屬於具有資料匯出控制項的資料來源，而該資料匯出控制項與區段對應至的一或多個目的地上的資料匯出標籤不相容時，將特徵新增至區段。
-例如，假設區段對應至匯出標籤為**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目的地。 如果特徵所屬的資料來源具有顯示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的資料匯出控制項，匯出控制項會阻止您將特徵新增至該區段。
+例如，假設區段對應至匯出標籤為&#x200B;**[!DNL This destination may enable a combination with personally identifiable information (PII)]**&#x200B;的目的地。 如果特徵所屬的資料來源具有顯示&#x200B;**[!DNL Cannot be tied to personally identifiable information (PII)]**&#x200B;的資料匯出控制項，匯出控制項會阻止您將特徵新增至該區段。
 * 將任何資料傳送至目的地，該目的地具有資料匯出標籤，且被任何下列位置的資料匯出控制項封鎖：
    * 所包含特徵的資料來源；
    * 用於所包含區段中的特徵資料來源；

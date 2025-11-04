@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
    ![以人物為基礎的整合](assets/pbd-config.png)
 2. 按一下 **[!UICONTROL Add Account]**。
-3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表選取您要設定整合的平台。
+3. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉式功能表選取您要設定整合的平台。
    ![以人員為基礎的平台](assets/pbd-add.png)
 4. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
 5. 在驗證您的Social Platform帳戶後，您會重新導向至Audience Manager，在那裡您應該會看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
