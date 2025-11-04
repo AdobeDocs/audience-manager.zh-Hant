@@ -61,7 +61,7 @@ CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audienc
 
 **客戶屬性**
 
-請參閱 [!DNL Experience Cloud Core Services] 產品文件中的[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)。
+請參閱 [!DNL Experience Cloud Core Services] 產品文件中的[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hant)。
 
 
 
@@ -113,7 +113,7 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **Experience Cloud ID (ECID)**
 
-先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。[!DNL Experience Cloud] ID 是 ID 服務的中心。它是網站訪客的不重複永久識別碼。請參閱 Cookie 和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html)。
+先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。[!DNL Experience Cloud] ID 是 ID 服務的中心。它是網站訪客的不重複永久識別碼。請參閱 Cookie 和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant)。
 
 
 
@@ -270,6 +270,6 @@ TTL 會定義合格訪客在某個特徵中停留的天數。TTL 是針對特徵
 
 [!DNL Experience Cloud] ID 服務 (前身為「ID 服務」) 提供永久性的通用 ID，可識別 [!DNL Experience Cloud] 中所有解決方案的訪客。
 
-請參閱 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)文件。
+請參閱 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)文件。
 
 ## W-X-Y-Z {#w-z}
