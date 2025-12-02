@@ -7,9 +7,9 @@ title: 趨勢報表
 uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
 feature: General & Trend Reports
 exl-id: 3373f413-cc8f-49c7-9b4e-34b39e0efc38
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+source-git-commit: 42f9b32edcde423369f7e8254b04fdc6162130d0
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ c_trend_reports.xml
 ![](assets/trend_reports.png)
 
 1. 設定以下選項: 
-   **報表型別：**&#x200B;選取所需的報表型別（特徵或區段）。
-   **日期範圍：**&#x200B;指定報表的日期範圍（開始日期和結束日期）。
+   **報表型別：**選取所需的報表型別（特徵或區段）。
+   **日期範圍：**指定報表的日期範圍（開始日期和結束日期）。
    **顯示間隔：**&#x200B;指定顯示間隔（1、7、14、30、60和90天間隔）。
 1. 依名稱或ID搜尋特徵或區段。
 1. 從資料夾清單中，拖放您要報告的特徵或區段至右側的[!UICONTROL Selections]面板。
@@ -101,7 +101,7 @@ t_working_with_trend_reports.xml
 
 請觀看下方的影片，詳細瞭解跨裝置量度的運作方式。
 
->[!VIDEO](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager.html?lang=zh-Hant)
+[瞭解Audience Manager中的跨裝置量度](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager)
 
 ## 區段的趨勢報表結果 {#segment-report-results-traits}
 
