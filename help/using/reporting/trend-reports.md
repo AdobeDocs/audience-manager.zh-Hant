@@ -101,7 +101,7 @@ t_working_with_trend_reports.xml
 
 請觀看下方的影片，詳細瞭解跨裝置量度的運作方式。
 
-[瞭解Audience Manager中的跨裝置量度](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager)
+[瞭解Audience Manager中的跨裝置量度](https://experienceleague.adobe.com/zh-hant/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/understanding-cross-device-metrics-in-audience-manager)
 
 ## 區段的趨勢報表結果 {#segment-report-results-traits}
 
