@@ -23,7 +23,7 @@ ht-degree: 3%
 |---|---|---|
 | 0 | 未指定的錯誤 | 這是一個全包錯誤，會處理其他錯誤處理常式未涵蓋的事件。 疑難排解此錯誤相當困難。 這可能是由於各種未知的動作或事件所造成。 如果您收到此錯誤，請重試您的[!DNL DCS]要求。 如果問題仍然存在，請聯絡您的[!DNL Adobe]代表。 |
 | 1 | 找不到主機名稱的設定： `hostname` | 我們的合作夥伴布建團隊尚未設定請求中傳送的主機名稱。 如果您看到此錯誤訊息，請聯絡您的[!DNL Adobe]代表。 |
-| 2 | 無效的`d_orgid`值（找不到此組織ID的設定）： `ID` | 組織ID不正確。 請檢查您的ID，然後再次嘗試請求。 如果您不知道或沒有您的組織ID，請參閱「管理頁面」一節[組織和帳戶連結](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)，以瞭解如何找到它。 |
+| 2 | 無效的`d_orgid`值（找不到此組織ID的設定）： `ID` | 組織ID不正確。 請檢查您的ID，然後再次嘗試請求。 如果您不知道或沒有您的組織ID，請參閱「管理頁面」一節[組織和帳戶連結](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=zh-Hant)，以瞭解如何找到它。 |
 | 10 | 無法評估特徵 | 要求的特徵已經過部分評估或完全沒有評估。 如果問題仍然存在，請聯絡您的[!DNL Adobe]代表。 |
 
 ## 整合錯誤代碼 {#integration-error-codes}
@@ -133,7 +133,7 @@ ht-degree: 3%
 | --- | --- | --- |
 | 300 | 無效的客戶ID `_ID_` | 客戶ID無效（缺少資料來源的值、缺少整合代碼、資料來源的格式無效、已封鎖客戶ID、空白客戶ID、未獲授權存取不屬於合作夥伴的資料來源）。 |
 | 301 | 已超出最大客戶ID數。 允許的最大值為`_maximum allowed_`。 找到的是`_maximum found_`。 | 與跨裝置資料來源相關聯的客戶ID數量超過每個請求允許的跨裝置ID數量。 這些ID包含跨裝置、行動或Cookie ID。 限制目前設為10。 |
-| 302 | 未獲授權的客戶ID `_ID_` | 當客戶ID資料來源並非目前組織ID所擁有時傳回。 如果您不知道或沒有組織ID，請參閱[組織和帳戶連結](https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html)中的「尋找組織ID」一節，瞭解如何尋找它。 |
+| 302 | 未獲授權的客戶ID `_ID_` | 當客戶ID資料來源並非目前組織ID所擁有時傳回。 如果您不知道或沒有組織ID，請參閱[組織和帳戶連結](https://experiencecloud.adobe.com/resources/help/zh_TW/mcloud/organizations.html)中的「尋找組織ID」一節，瞭解如何尋找它。 |
 | 303 | 封鎖的客戶ID `_ID_` | 當客戶ID被識別為惡意且已新增至封鎖清單時傳回。 |
 | 304 | 封鎖的資料來源識別碼`_ID_` | 當資料來源ID被識別為惡意且已新增至封鎖清單時傳回 |
 | 306 | 封鎖的宣告裝置識別碼`_ID_` | 裝置ID已識別為惡意，且已新增至封鎖清單。當我們收到極大量包含此裝置ID的DCS請求時，可能會在短時間內發生這種情況。 |
