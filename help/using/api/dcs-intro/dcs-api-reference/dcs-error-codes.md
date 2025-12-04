@@ -4,9 +4,9 @@ title: DCS錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-source-git-commit: 2012c244f6fa5ca01c7e2719ce621214cb22f93e
+source-git-commit: f8ba09b674b71045e08f6d171471cdcdd0efb265
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1519'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 |---|---|---|
 | 0 | 未指定的錯誤 | 這是一個全包錯誤，會處理其他錯誤處理常式未涵蓋的事件。 疑難排解此錯誤相當困難。 這可能是由於各種未知的動作或事件所造成。 如果您收到此錯誤，請重試您的[!DNL DCS]要求。 如果問題仍然存在，請聯絡您的[!DNL Adobe]代表。 |
 | 1 | 找不到主機名稱的設定： `hostname` | 我們的合作夥伴布建團隊尚未設定請求中傳送的主機名稱。 如果您看到此錯誤訊息，請聯絡您的[!DNL Adobe]代表。 |
-| 2 | 無效的`d_orgid`值（找不到此組織ID的設定）： `ID` | 組織ID不正確。 請檢查您的ID，然後再次嘗試請求。 如果您不知道或沒有您的組織ID，請參閱「管理頁面」一節[組織和帳戶連結](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=zh-Hant)，以瞭解如何找到它。 |
+| 2 | 無效的`d_orgid`值（找不到此組織ID的設定）： `ID` | 組織ID不正確。 請檢查您的ID，然後再次嘗試請求。 如果您不知道或沒有您的組織ID，請參閱「管理頁面」一節[組織和帳戶連結](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)，以瞭解如何找到它。 |
 | 10 | 無法評估特徵 | 要求的特徵已經過部分評估或完全沒有評估。 如果問題仍然存在，請聯絡您的[!DNL Adobe]代表。 |
 
 ## 整合錯誤代碼 {#integration-error-codes}
@@ -129,92 +129,22 @@ ht-degree: 3%
 
 ## 整合警告代碼 {#integration-warning-codes}
 
-<table id="table_31F1593C46804DDBA2E9BEDE83F2417F"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 代碼ID </th> 
-   <th colname="col2" class="entry"> 訊息 </th> 
-   <th colname="col3" class="entry"> 說明 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>300 </p> </td> 
-   <td colname="col2"> <p>無效的客戶ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>客戶ID無效（缺少資料來源的值、缺少整合代碼、資料來源的格式無效、已封鎖客戶ID、空白客戶ID、未獲授權存取不屬於合作夥伴的資料來源）。 </p> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>301 </p> </td> 
-   <td colname="col2"> <p>已超出最大客戶ID數。 允許的最大值為<code><i>maximum allowed</i></code>。 找到的是<code><i>maximum found</i></code>。</p> </td> 
-   <td colname="col3"> <p>與跨裝置資料來源相關聯的客戶ID數量超過每個請求允許的跨裝置ID數量。 這些ID包含跨裝置、行動或Cookie ID。 限制目前設為10。 </p> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>302 </p> </td> 
-   <td colname="col2"> <p>未獲授權的客戶ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>當客戶ID資料來源並非目前組織ID所擁有時傳回。 如果您不知道或沒有組織ID，請參閱<a href="https://experiencecloud.adobe.com/resources/help/zh_TW/mcloud/organizations.html" format="https" scope="external">組織和帳戶連結</a>中的「尋找組織ID」一節，瞭解如何尋找它。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>303 </p> </td> 
-   <td colname="col2"> <p>封鎖的客戶ID <code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>當客戶ID被識別為惡意且已新增至封鎖清單時傳回。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>304 </p> </td> 
-   <td colname="col2"> <p>封鎖的資料來源識別碼<code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>當資料來源ID被識別為惡意且已新增至封鎖清單時傳回 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>306 </p> </td> 
-   <td colname="col2"> <p>封鎖的宣告裝置識別碼<code><i>ID</i></code> </p> </td> 
-   <td colname="col3"> <p>已將裝置ID識別為惡意，並已新增至封鎖清單。當我們收到極多的<span class="wintitle">個DCS</span>請求（包含此裝置ID）時，可能會在短時間內發生這種情況。 </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>307 </p> </td> 
-   <td colname="col2"> <p>已封鎖<code><i>ID</i></code>的設定檔作業 </p> </td> 
-   <td colname="col3"> <p>已封鎖讀取/寫入動作，因為ID已被識別為惡意並已新增至封鎖清單請參閱錯誤碼306。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>309 </p> </td> 
-   <td colname="col2"> <p>已捨棄客戶ID <code><i>ID</i></code>，因為它超過每個請求宣告的客戶ID限制 </p> </td> 
-   <td colname="col3"> <p>與錯誤301相關。 此錯誤會指定因為超過限制而捨棄哪個客戶ID。 </p> <p>例如，如果在<span class="wintitle"> DCS</span>呼叫上宣告12個客戶ID，將會捨棄其中兩個。 為了轉送哪些客戶已捨棄，此錯誤會在回應中出現兩次（每個捨棄的客戶ID顯示一次）。 </p> </td>
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>310 </p> </td> 
-   <td colname="col2"> <p>已捨棄客戶ID，因為它超過指定名稱空間的限制。 名稱空間ID為<code><i>ID</i></code>，客戶ID為<code><i>ID</i></code>。 </p> </td> 
-   <td colname="col3"> <p>如果<code> DPID</code> DCS<span class="wintitle">呼叫上的相同名稱空間(</span>)宣告3個以上的客戶ID，則會傳回此錯誤碼。 </p> <p><code> https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one </code> </p> <p>在此範例<span class="wintitle"> DCS</span>要求中，有4個識別碼宣告給相同的名稱空間（整合碼為1）。 其中一個ID會遭捨棄，並傳回錯誤310。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>311 </p> </td> 
-   <td colname="col2"> <p>請求包含無效的引數 </p> </td> 
-   <td colname="col3"> <p>至少有一個URL引數未正確編碼時，<span class="wintitle"> DCS</span>會傳回此錯誤碼。 在此情況下，<span class="wintitle"> DCS</span>會忽略整個要求。 </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%esid!&amp;d_creative=%ecid!&amp;d_adgroup=%eaid!&amp;d_placement=%epid!&amp;d_campaign=%ebuy!&amp;d_adsrc=48123</code> </p> <p>在上述範例要求中，<code> %</code>序列編碼不正確。 因此，<span class="wintitle"> DCS</span>將會忽略它。 </p> <p>正確編碼的範例看起來應該像這樣： </p> <p><code>http(s)://partner.demdex.net/event?d_event=imp&amp;d_rtbd=json&amp;d_src=38454&amp;d_site=%25esid!&amp;d_creative=%25ecid!&amp;d_adgroup=%25eaid!&amp;d_placement=%25epid!&amp;d_campaign=%25ebuy!&amp;d_adsrc=48123</code> </p> </td> 
-  </tr>
-  <tr> 
-   <td colname="col1"> <p>312 </p> </td> 
-   <td colname="col2"> <p>請求包含無效的全域裝置識別碼 </p> </td> 
-   <td colname="col3"> <p>當請求包含無效的全域裝置識別碼時，<span class="wintitle">DCS</span>會傳回此錯誤碼。 DCS會忽略無效ID並擲回312錯誤以及無效ID的特定錯誤。 如需正確裝置廣告ID格式與對應之全域資料來源的詳細資訊，請參閱Audience Manager<a href="../../../features/global-data-sources.md" format="dita" scope="local">中的</a>全域資料來源<a href="../../../reference/ids-in-aam.md" format="dita" scope="local">與</a>ID索引。</p>
-   <p>不正確呼叫的範例： <code>"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"</code></p>
-   <p>說明： <span class="keyword">IDFA (DPID 20915)</span>必須是大寫識別碼。 請求中提供的ID為小寫。</p>
-   </td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>313 </p> </td> 
-   <td colname="col2"> <p>CMP ID不存在於GCL中</p> </td> 
-   <td colname="col3"> <p>當<code>gdpr=1</code>和IAB TC字串是由評估時Audience Manager快取版本的全域CMP清單中不存在的CMP ID產生時，適用於IAB TCF的Audience Manager外掛程式會捨棄IAB TC字串，並照常處理請求。 IAB TCF v2.2 ${GDPR}巨集設為0，而${GDPR_CONSENT_XXX}巨集是空的。</p>
-   </td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>314 </p> </td> 
-   <td colname="col2"> <p>CMP ID在GCL中標籤為已刪除</p> </td> 
-   <td colname="col3"> <p>當<code>gdpr=1</code>和IAB TC字串是由在我們快取版本的「全域CMP清單」中標籤為已刪除的CMP產生時，如果評估時間超過從「全域CMP清單」刪除的時間，適用於IAB TCF的Audience Manager外掛程式會捨棄TC字串並照常處理請求。 IAB TCF v2.2 ${GDPR}巨集設為0，而${GDPR_CONSENT_XXX}巨集是空的。</p></td>
-  </tr>
-   <tr> 
-   <td colname="col1"> <p>315 </p> </td> 
-   <td colname="col2"> <p>同意字串表示不同意</p> </td> 
-   <td colname="col3"> <p>若未提供同意，適用於IAB TCF的Audience Manager外掛程式會選擇讓使用者退出進一步的資料收集，或是在未偵測到合作夥伴內容時完全捨棄呼叫。</p>
-   </td>
-  </tr>
- </tbody>
-</table>
+| 代碼ID | 訊息 | 說明 |
+| --- | --- | --- |
+| 300 | 無效的客戶ID `_ID_` | 客戶ID無效（缺少資料來源的值、缺少整合代碼、資料來源的格式無效、已封鎖客戶ID、空白客戶ID、未獲授權存取不屬於合作夥伴的資料來源）。 |
+| 301 | 已超出最大客戶ID數。 允許的最大值為`_maximum allowed_`。 找到的是`_maximum found_`。 | 與跨裝置資料來源相關聯的客戶ID數量超過每個請求允許的跨裝置ID數量。 這些ID包含跨裝置、行動或Cookie ID。 限制目前設為10。 |
+| 302 | 未獲授權的客戶ID `_ID_` | 當客戶ID資料來源並非目前組織ID所擁有時傳回。 如果您不知道或沒有組織ID，請參閱[組織和帳戶連結](https://experiencecloud.adobe.com/resources/help/en_US/mcloud/organizations.html)中的「尋找組織ID」一節，瞭解如何尋找它。 |
+| 303 | 封鎖的客戶ID `_ID_` | 當客戶ID被識別為惡意且已新增至封鎖清單時傳回。 |
+| 304 | 封鎖的資料來源識別碼`_ID_` | 當資料來源ID被識別為惡意且已新增至封鎖清單時傳回 |
+| 306 | 封鎖的宣告裝置識別碼`_ID_` | 裝置ID已識別為惡意，且已新增至封鎖清單。當我們收到極大量包含此裝置ID的DCS請求時，可能會在短時間內發生這種情況。 |
+| 307 | 已封鎖`_ID_`的設定檔作業 | 已封鎖讀取/寫入動作，因為ID已被識別為惡意並已新增至封鎖清單請參閱錯誤碼306。 |
+| 309 | 已捨棄客戶ID `_ID_`，因為它超過每個請求宣告的客戶ID限制 | 與錯誤301相關。 此錯誤會指定因為超過限制而捨棄哪個客戶ID。<br><br>例如，如果在DCS呼叫上宣告12個客戶ID，將會捨棄其中兩個。 為了轉送哪些客戶已捨棄，此錯誤會在回應中出現兩次（每個捨棄的客戶ID顯示一次）。 |
+| 310 | 已捨棄客戶ID，因為它超過指定名稱空間的限制。 名稱空間ID為`_ID_`，客戶ID為`_ID_`。 | 如果DCS呼叫上的相同名稱空間( `DPID`)宣告3個以上的客戶ID，則會傳回此錯誤碼。<br><br>`https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one`<br><br>在此範例DCS請求中，有4個識別碼為同一個名稱空間宣告（整合程式碼為1）。 其中一個ID會遭捨棄，並傳回錯誤310。 |
+| 311 | 請求包含無效的引數 | 若至少有一個URL引數未正確編碼，DCS會傳回此錯誤碼。 在此情況下，DCS會忽略整個請求。<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%esid!&d_creative=%ecid!&d_adgroup=%eaid!&d_placement=%epid!&d_campaign=%ebuy!&d_adsrc=48123`<br><br>在上述範例要求中，`%`順序編碼不正確。 因此，DCS將會忽略它。<br><br>正確編碼的範例應該如下所示：<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%25esid!&d_creative=%25ecid!&d_adgroup=%25eaid!&d_placement=%25epid!&d_campaign=%25ebuy!&d_adsrc=48123` |
+| 312 | 請求包含無效的全域裝置識別碼 | 當請求包含無效的全域裝置ID時，DCS會傳回此錯誤碼。 DCS會忽略無效ID並擲回312錯誤以及無效ID的特定錯誤。 如需正確裝置廣告ID格式與對應之全域資料來源的詳細資訊，請參閱Audience Manager[中的](../../../features/global-data-sources.md)全域資料來源[與](../../../reference/ids-in-aam.md)ID索引。<br><br>不正確呼叫的範例： `"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"`<br><br>說明： IDFA (DPID 20915)必須是大寫的ID。 請求中提供的ID為小寫。 |
+| 313 | CMP ID不存在於GCL中 | 當`gdpr=1`和IAB TC字串是由評估時Audience Manager快取版本的全域CMP清單中不存在的CMP ID產生時，適用於IAB TCF的Audience Manager外掛程式會捨棄IAB TC字串，並照常處理請求。 IAB TCF v2.2 ${GDPR}巨集設為0，而${GDPR\_CONSENT\_XXX}巨集為空白。 |
+| 314 | CMP ID在GCL中標籤為已刪除 | 當`gdpr=1`和IAB TC字串是由在我們快取版本的「全域CMP清單」中標籤為已刪除的CMP產生時，如果評估時間超過從「全域CMP清單」刪除的時間，適用於IAB TCF的Audience Manager外掛程式會捨棄TC字串並照常處理請求。 IAB TCF v2.2 ${GDPR}巨集設為0，而${GDPR\_CONSENT\_XXX}巨集為空白。 |
+| 315 | 同意字串表示不同意 | 若未提供同意，適用於IAB TCF的Audience Manager外掛程式會選擇讓使用者退出進一步的資料收集，或是在未偵測到合作夥伴內容時完全捨棄呼叫。 |
 
 ## 錯誤碼訊息範例 {#sample-error-codes}
 
