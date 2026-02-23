@@ -6,7 +6,7 @@ landing-page-name: audience-manager
 landing-page-breadcrumb-title: Audience Manager
 type: Documentation
 tutorials-title: Tutorials
-tutorials-url: https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html
+tutorials-url: https://docs.adobe.com/content/help/zh-Hant/audience-manager-learn/tutorials/overview.html
 git-repo: https://github.com/AdobeDocs/audience-manager.zh-Hant
 index: y
 source-git-commit: b7a329127e83e5aa86c936311a0ef6f5e776cd92
