@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Audience Manager 使用手冊
 user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當客群的詳細資料。
 feature-set: Audience Manager
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+source-git-commit: 2d694db141b311977e84cefc48ce14921c87ccc3
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 17%
@@ -66,7 +66,7 @@ ht-degree: 17%
       + [Audience Lab進階功能](features/audience-lab/audience-lab-advanced.md)
    + Audience Marketplace{#audience-marketplace}
       + [Audience Marketplace](features/audience-marketplace/audience-marketplace.md)
-      + [Audience Marketplace最佳化](features/audience-marketplace/audience-marketplace-optimization.md)
+      + [hide-from-tocAudience Marketplace最佳化](features/audience-marketplace/audience-marketplace-optimization.md)
       + 適用於資料提供者的Audience Marketplace{#audience-marketplace-for-data-providers}
          + [適用於資料提供者的Audience Marketplace](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
          + [建立、定價和管理資料摘要](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
