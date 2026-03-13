@@ -1,20 +1,20 @@
 ---
-description: 一般報表會傳回特徵、區段和目的地的效能資料。
+description: 常規報告返回有關特徵、段和目標的效能資料。
 seo-description: A General report in Audience Manager returns performance data on traits, segments, and destinations.
 seo-title: General Reports in Audience Manager
 solution: Audience Manager
-title: 一般報表
+title: 一般報告
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 feature: General & Trend Reports
 exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: f073dd733b512aa60d7817acbef76e51594900f8
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
 
 ---
 
-# 一般報表{#general-reports}
+# 一般報告{#general-reports}
 
 [!UICONTROL General]報表會傳回特徵、區段和目的地的效能資料。
 
@@ -24,14 +24,14 @@ ht-degree: 0%
 
 c_general_reports.xml
 
- -->
+-->
 
-[!DNL Audience Manager]使用[!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])將使用者群組許可權延伸至[!UICONTROL General]報告。 使用者在報表中只能看見他們有權檢視的特徵和區段。 [!UICONTROL RBAC]功能可讓您控制內部團隊可以檢視哪些報告資料。 例如，管理不同廣告商帳戶的機構可以設定使用者群組許可權，好讓管理廣告商A帳戶的團隊無法看到廣告商B的報表資料。
+[!DNL Audience Manager]使用[!UICONTROL Role Based Access Control]&#x200B;([!UICONTROL RBAC])將用戶組權限擴展到[!UICONTROL General]報表。 用戶只能在報告中查看他們有權查看的那些特徵和段。 [!UICONTROL RBAC]功能允許您控制內部團隊可以查看的報告資料。 例如，管理不同廣告商帳戶的代理可以配置用戶組權限，以便管理廣告商A帳戶的團隊無法查看廣告商B的報告資料。
 
-當您需要以下任務時，請執行[!UICONTROL General]報告：
+需要時運行[!UICONTROL General]報告：
 
-* 依特徵、區段或目的地檢閱效能。
-* 以1、7、14、30、60和90天為間隔追蹤曝光（總計和唯一）。
+* 按特性、段或目標查看效能。
+* 按1天、7天、14天、30天、60天和90天間隔跟蹤印象（總數和唯一）。
 * 檢閱總計和不重複載入計數。
 * 比較特徵和區段效能。
 * 識別效能強勁或較差的特徵和區段、分析需求，或將載入/引發資料與協力廠商報表進行比較。
@@ -51,25 +51,25 @@ c_general_reports.xml
 3. 從資料夾清單中，拖放您要報告的特徵、區段或目的地至右側的[!UICONTROL Selections]面板。
 4. 產生報表以顯示於可匯出表格中。
 
-## 執行一般報表 {#run-general-report}
+## 運行常規報告 {#run-general-report}
 
-本節說明如何執行[!UICONTROL General]報告並設定時間和其他效能選項。
+本節介紹如何運行[!UICONTROL General]報告和設定時間和其他效能選項。
 
 <!-- 
 
 t_run_general_report.xml
 
- -->
+-->
 
 1. 在&#x200B;**[!UICONTROL Analytics]**&#x200B;儀表板中，按一下&#x200B;**[!UICONTROL General Reports]**。
 1. 從&#x200B;**[!UICONTROL Report Type]**&#x200B;下拉式清單中，選取所需的型別：特徵、區段或目的地。
 1. *條件式*&#x200B;按一下日期方塊以顯示行事曆，然後選取報表的結束日期（如果您要指定今天以外的日期）。
-1. 依名稱或ID搜尋特徵、區段或目的地。
-1. 從資料夾清單中，拖放您要報告的特徵、區段或目的地至右側的[!UICONTROL Selections]面板。
+1. 按名稱或ID搜索特性、段或目標。
+1. 從資料夾清單中，拖放要報告到右側[!UICONTROL Selections]面板的特徵、段或目標。
 1. 按一下 **[!UICONTROL Run Report]**。
 
-   結果會顯示在可匯出的表格中。 按一下欄標題，以遞增或遞減順序排序結果。
-1. 在報告頂端選取所需的選項按鈕，以依據效能（[!UICONTROL Unique Trait Realizations]、[!UICONTROL Total Trait Realizations]或[!UICONTROL Total Trait Population]）或時間（1、7、14、30、60或90天範圍）篩選資料。
+   結果顯示在可導出的表中。 按一下列標題以按升序或降序對結果進行排序。
+1. 選擇報表頂部所需的選項按鈕，按效能（[!UICONTROL Unique Trait Realizations]、[!UICONTROL Total Trait Realizations]或[!UICONTROL Total Trait Population]）或按時間（1、7、14、30、60或90天範圍）篩選資料。
 
    >[!NOTE]
    >
@@ -89,7 +89,7 @@ t_run_general_report.xml
 
 當您執行「一般」報告並選取&#x200B;**[!UICONTROL Trait]**&#x200B;作為報告型別時，可使用下列篩選器。
 
-依[!UICONTROL Device ID]篩選結果時：
+按[!UICONTROL Device ID]篩選結果時：
 
 * [!UICONTROL Unique Trait Realizations]是您在所選時間範圍內將特徵新增至其設定檔的匿名裝置訪客數量。
 * [!UICONTROL Total Trait Realization]是所選時間範圍內的匿名特徵實現總數。
@@ -118,10 +118,10 @@ This metric represents the total amount of trait fires for the trait in your sel
 
 This metric represents the total amount of Audience Manager UUIDs that are currently qualified for the trait. Use this number to understand the total amount of users you could use for segmentation and targeting. Typically, users remain part of a trait for [120 days](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). For example, a user visiting your homepage three times today and never returning afterwards, would remain as a user in this population every day until 120 days from now. At the 120 day mark, they would be removed from the population. Read our [Trait and Segment Qualification Reference](../features/traits/trait-and-segment-qualification-reference.md) for more examples on the difference between Unique Trait Realizations and Total Trait Population.
 
-The illustration below shows the results of running a general report for the Trait report type. -->
-<!-- 
-![](assets/general_reports_metrics.png) -->
+The illustration below shows the results of running a general report for the Trait report type. 
 
+![](assets/general_reports_metrics.png)
+-->
 
 ## 區段的一般報表結果 {#general-report-results-segments}
 
@@ -137,13 +137,13 @@ The illustration below shows the results of running a general report for the Tra
 
 >[!NOTE]
 >
->選取&#x200B;**[!UICONTROL Include Destination Mappings]**&#x200B;以檢視已啟用目的地的區段母體劃分。
+>選擇&#x200B;**[!UICONTROL Include Destination Mappings]**&#x200B;可查看已激活目標的段填充細目。
 
-下圖顯示為「區段」報表型別執行一般報表的結果。
+下圖顯示了運行段報告類型的常規報告的結果。
 
 ![](assets/general_reports_segment_metrics.png)
 
-## 目的地的一般報告結果 {#general-report-results-destinations}
+## 目標的常規報告結果 {#general-report-results-destinations}
 
 當您執行「一般」報表並選取&#x200B;**[!UICONTROL Destination]**&#x200B;作為報表型別時，可使用下列量度：
 
@@ -151,10 +151,10 @@ The illustration below shows the results of running a general report for the Tra
 
 此量度代表在指定時間範圍內即時檢視的不重複訪客的實際數量，以及在Audience Manager看到符合區段資格的人數。
 
-**總區段母體**
+**總段填充數**
 
-此量度代表在回顧期間內，屬於區段且已傳送至目的地的Audience Manager UUID總數。
+此度量表示在回查期間內屬於段的Audience ManagerUUID的總數，這些UUID已發送到目標。
 
-下圖顯示針對「目的地」報表型別執行一般報表的結果。
+下圖顯示了為目標報告類型運行常規報告的結果。
 
 ![](assets/general_reports_destinations.png)
