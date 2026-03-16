@@ -7,7 +7,7 @@ title: 一般報表
 uuid: 0cea75a0-969e-4ee3-971a-60b911711e52
 feature: General & Trend Reports
 exl-id: dc16a821-b776-4a04-af60-4b8c914253dd
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+source-git-commit: f073dd733b512aa60d7817acbef76e51594900f8
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 c_general_reports.xml
 
- -->
+-->
 
 [!DNL Audience Manager]使用[!UICONTROL Role Based Access Control] ([!UICONTROL RBAC])將使用者群組許可權延伸至[!UICONTROL General]報告。 使用者在報表中只能看見他們有權檢視的特徵和區段。 [!UICONTROL RBAC]功能可讓您控制內部團隊可以檢視哪些報告資料。 例如，管理不同廣告商帳戶的機構可以設定使用者群組許可權，好讓管理廣告商A帳戶的團隊無法看到廣告商B的報表資料。
 
@@ -59,7 +59,7 @@ c_general_reports.xml
 
 t_run_general_report.xml
 
- -->
+-->
 
 1. 在&#x200B;**[!UICONTROL Analytics]**&#x200B;儀表板中，按一下&#x200B;**[!UICONTROL General Reports]**。
 1. 從&#x200B;**[!UICONTROL Report Type]**&#x200B;下拉式清單中，選取所需的型別：特徵、區段或目的地。
@@ -118,10 +118,10 @@ This metric represents the total amount of trait fires for the trait in your sel
 
 This metric represents the total amount of Audience Manager UUIDs that are currently qualified for the trait. Use this number to understand the total amount of users you could use for segmentation and targeting. Typically, users remain part of a trait for [120 days](../features/traits/create-onboarded-rule-based-traits.md#set-expiration-interval). For example, a user visiting your homepage three times today and never returning afterwards, would remain as a user in this population every day until 120 days from now. At the 120 day mark, they would be removed from the population. Read our [Trait and Segment Qualification Reference](../features/traits/trait-and-segment-qualification-reference.md) for more examples on the difference between Unique Trait Realizations and Total Trait Population.
 
-The illustration below shows the results of running a general report for the Trait report type. -->
-<!-- 
-![](assets/general_reports_metrics.png) -->
+The illustration below shows the results of running a general report for the Trait report type. 
 
+![](assets/general_reports_metrics.png)
+-->
 
 ## 區段的一般報表結果 {#general-report-results-segments}
 

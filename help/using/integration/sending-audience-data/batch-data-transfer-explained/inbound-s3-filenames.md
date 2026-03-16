@@ -7,7 +7,7 @@ title: 傳入資料檔案的Amazon S3名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 exl-id: 428acdb5-fff0-4b70-b15a-e384aed9cc2d
-source-git-commit: a5506a315a98afdf31f8f52fac09b9179f388f30
+source-git-commit: f073dd733b512aa60d7817acbef76e51594900f8
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 2%
@@ -64,7 +64,7 @@ Removed  {importance="high"} for ExL
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>資料檔案是否包含您自己的使用者ID、Android ID、iOS ID或其他屬於<a href="/help/using/features/global-data-sources.md">全域資料來源</a>的ID的lD。 接受下列選項：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料Source識別碼（也稱為資料提供者識別碼）：</b>這是Audience Manager指派給資料來源的唯一ID (請參閱ID <a href="/help/using/reference/ids-in-aam.md">的Audience Manager </a>索引)。 在傳送包含您自己的使用者ID的資料時，在檔案名稱中使用此指派ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>將資料上線到屬於資料來源21的ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料Source識別碼（也稱為資料提供者識別碼）：</b>這是Audience Manager指派給資料來源的唯一ID （請參閱ID <a href="/help/using/reference/ids-in-aam.md">的Audience Manager </a>索引）。 在傳送包含您自己的使用者ID的資料時，在檔案名稱中使用此指派ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>將資料上線到屬於資料來源21的ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID)：</b>如果資料檔名稱包含Android ID，請使用ID 20914。 使用Android ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含Android ID，而且這些ID應符合屬於<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID (IDFA)：</b>如果資料檔名稱包含iOS ID，請使用ID 20915。 使用iOS ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含iOS ID，而且這些ID應符合屬於<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li>
      <li> <b>屬於其他全域資料來源的ID</b>：您可以將Roku ID加入Advertising (RIDA)、Microsoft Advertising ID (MAID)和其他ID。 使用對應至每個資料來源的ID，如<a href="/help/using/features/global-data-sources.md">全域資料來源文章</a>所述。</li> 
@@ -87,9 +87,10 @@ Removed  {importance="high"} for ExL
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
    <td colname="col2"> <p>以秒為單位的10位數UTC UNIX時間戳記。 時間戳記有助於讓每個檔案名稱是唯一的。 </p> 
-    <!-- 
+    <!--
      <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
-    --> </td> 
+    -->
+   </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> (.sync|.overwrite)</code> </p> </td> 
