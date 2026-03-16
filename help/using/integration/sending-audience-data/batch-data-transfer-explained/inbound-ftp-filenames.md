@@ -32,15 +32,15 @@ ht-degree: 3%
 
 `ftp_dpm_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
-有關其他接受的檔案名格式，請參閱[自定義合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
+如需其他接受的檔案名稱格式，請參閱[自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
 
 >[!NOTE]
 >
->[!DNL Audience Manager]僅處理[!DNL ASCII]和[!DNL UTF-8]個編碼檔案。
+>[!DNL Audience Manager]僅處理[!DNL ASCII]和[!DNL UTF-8]編碼的檔案。
 
 ### 名稱元素
 
-該表定義[!DNL FTP]檔案名中的元素。
+表格定義了[!DNL FTP]檔案名稱中的專案。
 
 <table id="table_1EA97D75004148CE85F702427DB7E97A"> 
  <thead> 
@@ -56,9 +56,9 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
-   <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>資料檔案是否包含您自己的使用者ID、Android ID、iOS ID或其他屬於<a href="/help/using/features/global-data-sources.md">全域資料來源</a>的ID的lD。 接受以下選項：</p> 
+   <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>資料檔案是否包含您自己的使用者ID、Android ID、iOS ID或其他屬於<a href="/help/using/features/global-data-sources.md">全域資料來源</a>的ID的lD。 接受下列選項：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料源ID（也稱為資料提供程式ID）:</b>這是Audience Manager分配給資料源的唯一ID(請參閱ID為<a href="/help/using/reference/ids-in-aam.md">的Audience Manager</a>索引)。 在發送包含您自己的用戶ID的資料時，請在檔案名中使用此分配的ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>將<span class="keyword">Audience Manager</span>告知板載資料為屬於資料源21的ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料Source識別碼（也稱為資料提供者識別碼）：</b>這是Audience Manager指派給資料來源的唯一ID （請參閱ID <a href="/help/using/reference/ids-in-aam.md">的Audience Manager </a>索引）。 在傳送包含您自己的使用者ID的資料時，在檔案名稱中使用此指派ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>將資料上線到屬於資料來源21的ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID)：</b>如果資料檔名稱包含Android ID，請使用ID 20914。 使用Android ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含Android ID，而且這些ID應符合屬於<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID (IDFA)：</b>如果資料檔名稱包含iOS ID，請使用ID 20915。 使用iOS ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含iOS ID，而且這些ID應符合屬於<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li>
      <li> <b>屬於其他全域資料來源的ID</b>：您可以將Roku ID加入Advertising (RIDA)、Microsoft Advertising ID (MAID)和其他ID。 使用對應至每個資料來源的ID，如<a href="/help/using/features/global-data-sources.md">全域資料來源文章</a>所述。</li> 
@@ -66,7 +66,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>此欄位會告訴Audience Manager要將資料上線的資料來源。 如果您將DPID設為Android ID、iOS ID或其他屬於全域資料來源的ID，則此欄位為必填欄位。 這可讓<span class="keyword"> Audience Manager</span>將檔案資料連結回您的組織。 <br>此目標資料來源必須由您的公司擁有。 針對第二方資料共用目的，若要將資料擷取至屬於其他公司的目標資料來源，您的公司與目標資料來源之間必須具有存取對應。 請聯絡您的Adobe顧問或客戶支援，以設定對應。</p><p><b>重要說明：</b>您<i>無需</i>請求現有資料共用關係的映射（適用於2022年3月14日之前已載入資料的其他公司的目標資料源）。 將資料載入到屬於您的PID的目標資料源時，也不需要映射。 </p> <p>例如： </p> 
+   <td colname="col2"> <p>此欄位會告訴Audience Manager要將資料上線的資料來源。 如果您將DPID設為Android ID、iOS ID或其他屬於全域資料來源的ID，則此欄位為必填欄位。 這可讓<span class="keyword"> Audience Manager</span>將檔案資料連結回您的組織。 <br>此目標資料來源必須由您的公司擁有。 針對第二方資料共用目的，若要將資料擷取至屬於其他公司的目標資料來源，您的公司與目標資料來源之間必須具有存取對應。 請聯絡您的Adobe顧問或客戶支援，以設定對應。</p><p><b>重要注意事項：</b>您<i>不</i>需要為現有的資料共用關係請求對應（針對屬於您於2022年3月14日之前將資料上線的其他公司的目標資料來源）。 將資料上線至屬於您的PID的目標資料來源時，也不一定需要對應。 </p> <p>例如： </p> 
     <ul> 
      <li> <code>...ftp_dpm_33_21_1234567890.sync</code>告知Audience Manager您正在將資料來源33的客戶ID限定為資料來源21的特徵或訊號。 </li> 
      <li> <b>Android ID (GAID)：</b> <code>...ftp_dpm_20914_21_1234567890.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含Android ID，而且這些ID應該符合屬於資料來源21的特徵。</li> 
@@ -78,8 +78,8 @@ ht-degree: 3%
    <td colname="col1"> <p> <code> (.sync |.overwrite)</code> </p> </td> 
    <td colname="col2"> <p>同步選項包括： </p> <p> 
      <ul id="ul_DAAF61EC636C4456BECDDC34C3F86E83"> 
-      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>：第三方資料提供程式按每個用戶發送要在Audience Manager系統中添加或刪除的特徵時的正常情況。 </li> 
-      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>：允許客戶和資料提供程式按每個用戶發送一個特性清單，該清單應覆蓋Audience Manager中給定資料源的此用戶的所有現有特性。 您不需要將所有用戶都包括在覆蓋檔案中。 僅包括要更改的用戶。 未分配給目標資料源的特性將不會被擦除。 </li> 
+      <li id="li_6EC6DE442B4546AA9F4F800D65C8A4EC"> <code> sync</code>：第三方資料提供者傳送要新增或移除Audience Manager系統中之特徵的個別使用者為一般情況。 </li> 
+      <li id="li_8FE8430C2C004F87835D55231A0D99C9"> <code> overwrite</code>：讓客戶和資料提供者傳送每個使用者的特徵清單，清單應會覆寫此使用者在Audience Manager中指定資料來源的所有現有特徵。 您不需要在覆寫檔案中加入所有使用者。 僅包含您要變更的使用者。 不會清除未指派給目標資料來源的特徵。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -92,7 +92,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>TIMESTAMP</i> </code> </p> </td> 
-   <td colname="col2"> <p>10位UTC UNIX時間戳（秒）。 時間戳有助於使每個檔案名唯一。 </p> 
+   <td colname="col2"> <p>以秒為單位的10位數UTC UNIX時間戳記。 時間戳記有助於讓每個檔案名稱是唯一的。 </p> 
     <!--
      <p> <p>Note:  Audience Manager does not use the timestamp during processing of inbound files. The timestamp in the filename has been deprecated in Audience Manager but is still required for backwards compatibility. </p> </p> 
     -->
@@ -100,7 +100,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> [.gz]</code> </p> </td> 
-   <td colname="col2"> <p>Gzip是允許的FTP檔案名壓縮格式。 如果使用檔案壓縮，請確保檔案名具有正確的副檔名。 </p> <p>壓縮檔案必須為3 GB或更小。 如果您的檔案檔案較大，請與「客戶服務」聯繫。 雖然Audience Manager可以處理大型檔案，但我們或許能夠協助您縮減檔案大小，讓資料傳輸更有效率。 請參閱傳入資料傳輸檔案的<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">檔案壓縮</a> 。 </p> </td> 
+   <td colname="col2"> <p>Gzip是FTP檔案名稱允許的壓縮格式。 如果您使用檔案壓縮，請確定檔案名稱具有適當的副檔名。 </p> <p>壓縮的檔案必須等於或小於3 GB。 如果您的檔案較大，請洽詢客戶服務。 雖然Audience Manager可以處理大型檔案，但我們或許能夠協助您縮減檔案大小，讓資料傳輸更有效率。 請參閱傳入資料傳輸檔案的<a href="../../../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-compression.md">檔案壓縮</a> 。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -115,7 +115,7 @@ ht-degree: 3%
  <li> <code> ftp_dpm_478_1366545717.overwrite</code> </li> 
 </ul>
 
-[下載示例檔案](assets/ftp_dpm_1234_1445374061.overwrite)（如果需要其他示例）。 此檔案以`.overwrite`檔案副檔名保存。 使用簡單的文本編輯器開啟它。
+如果需要其他範例，請[下載](assets/ftp_dpm_1234_1445374061.overwrite)範例檔案。 此檔案是以`.overwrite`副檔名儲存。 使用簡單的文字編輯器將其開啟。
 
 ## 接受的檔案大小 {#accepted-file-sizes}
 

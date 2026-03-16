@@ -1,5 +1,5 @@
 ---
-description: Recommendations and use cases for prospecting, retargeting, and personalization for unknown users with an external device graph. An external device graph is defined as a device graph that is separate from Audience Manager. This includes  integrations Adobe has with third-party deterministic or probabilistic device graph companies.
+description: 透過外部裝置圖表，為未知使用者提供勘察、重新定位和個人化的建議和使用案例。 外部裝置圖表是定義為Audience Manager以外的裝置圖表。 這包括Adobe與協力廠商確定性或機率裝置圖表公司的整合。
 seo-description: Recommendations and use cases for prospecting, retargeting, and personalization for unknown users with an external device graph. An external device graph is defined as a device graph that is separate from Audience Manager. This includes integrations Adobe has with third-party deterministic or probabilistic device graph companies.
 seo-title: External Device Graph Use Cases
 solution: Audience Manager
@@ -16,15 +16,15 @@ ht-degree: 8%
 
 # 外接式裝置圖表使用案例 {#external-device-graph-use-cases}
 
-Recommendations and use cases for prospecting, retargeting, and personalization for unknown users with an external device graph. An external device graph is defined as a device graph that is separate from Audience Manager. This includes integrations Adobe has with third-party deterministic or probabilistic device graph companies.
+透過外部裝置圖表，為未知使用者提供勘察、重新定位和個人化的建議和使用案例。 外部裝置圖表是定義為Audience Manager以外的裝置圖表。 這包括Adobe與協力廠商確定性或機率裝置圖表公司的整合。
 
 ## 建議 {#recommendations}
 
-Consider third-party device graph options for campaigns that:
+對於符合下列條件的行銷活動，請考慮協力廠商裝置圖表選項：
 
-* Have a low level of authentication across their digital properties. Use the [!UICONTROL Profile Link Device Graph option] if you have a large number of authenticated users.
-* Target large audiences. Third-party device graphs contain authenticated and un-authenticated data.
-* Segment authenticated and/or unauthenticated visitors at the individual and household level.
+* 在其數位屬性間具有低層級的驗證。 如果您有大量已驗證的使用者，請使用[!UICONTROL Profile Link Device Graph option]。
+* 鎖定大型對象。 協力廠商裝置圖表包含已驗證和未驗證的資料。
+* 在個人和家庭層級劃分已驗證和/或未驗證的訪客。
 
 ![](assets/merge-rule-triangle1.png)
 
@@ -116,22 +116,22 @@ Through this rule, the device graph has expanded the number of device profiles w
 ![audience-expansion](assets/audience-expansion.png) 
 -->
 
-## Advanced Cross-Device Targeting {#advanced-graph-expansion}
+## 進階跨裝置目標定位 {#advanced-graph-expansion}
 
-This use case shows how you can expand audience targeting for authenticated visitors with devices from an external device graph, by using the **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]** rule.
+此使用案例顯示如何使用&#x200B;**[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**&#x200B;規則，從外部裝置圖表擴充已驗證訪客使用裝置的對象鎖定目標。
 
-![last-device-graph](assets/last-profile-link.png)
+![上次裝置圖表](assets/last-profile-link.png)
 
-In the example below, the Acme Inc. company wants to target all households with incomes over $100.000/year, that have [!DNL Acme Inc.] subscribers on [!DNL Data Plan A], that use an [!DNL iPhone 7] device.
+在以下範例中，Acme Inc.公司想要鎖定收入超過$100.000/年、[!DNL Acme Inc.]上有[!DNL Data Plan A]位訂閱者，且使用[!DNL iPhone 7]裝置的所有家庭。
 
-John uses his iPhone 7 on Data Plan A to authenticate on the Acme Inc. website. At the same time, John&#39;s [!DNL Profile Link Device Graph] cluster contains two additional devices that he uses regularly: his laptop ([!DNL Device 1]), and his secondary smartphone, [!DNL Device 2] (a [!DNL Samsung S7] on [!DNL Data Plan B]).
+John使用他在Data Plan A上的iPhone 7在Acme Inc.網站上進行驗證。 同時，John的[!DNL Profile Link Device Graph]叢集包含他定期使用的兩個額外裝置：他的膝上型電腦([!DNL Device 1])和他的次要智慧型手機[!DNL Device 2] （[!DNL Samsung S7]上的[!DNL Data Plan B]）。
 
-By using the **[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**, [!DNL Acme Inc.] is able to deliver personalized messages to all three devices from John&#39;s device graph cluster, even though only one of them initially qualifies for the segment.
+使用&#x200B;**[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**，[!DNL Acme Inc.]能夠從John的裝置圖表叢集傳遞個人化訊息給所有三個裝置，即使其中只有一個最初符合區段資格。
 
-![advanced-graph-expansion](assets/advanced-device-graph-expansion.png)
+![進階圖表展開](assets/advanced-device-graph-expansion.png)
 
 >[!MORELIKETHIS]
 >
 >* [設定檔連結裝置圖表使用案例](profile-link-use-case.md)
 >* [設定檔合併規則的一般使用案例](merge-rule-targeting-options.md)
->* [Profile Merge Rules FAQ](../../faq/faq-profile-merge.md)
+>* [設定檔合併規則常見問題集](../../faq/faq-profile-merge.md)
