@@ -76,7 +76,7 @@ r_problem.xml
 
 ## 發生中斷時 {#outage}
 
-如果您懷疑發生中斷，請先檢查 [Experience Cloud 系統狀態頁面](https://status.adobe.com/tw) ( [!DNL https://status.adobe.com] )，這裡有所有 Experience Cloud 解決方案 (包括 Audience Manager) 的中斷、事件和維護記錄，也包括我們技術作業團隊的最新更新。如果仍需協助，在聯絡客戶服務前，請先確認除了上方列出的資訊以外，您也知道下列資訊：
+如果您懷疑發生中斷，請先檢查 [Experience Cloud 系統狀態頁面](https://status.adobe.com/tw) ( [!DNL https://status.adobe.com/zh-tw] )，這裡有所有 Experience Cloud 解決方案 (包括 Audience Manager) 的中斷、事件和維護記錄，也包括我們技術作業團隊的最新更新。如果仍需協助，在聯絡客戶服務前，請先確認除了上方列出的資訊以外，您也知道下列資訊：
 
 * 中斷開始時間
 * 說明發生什麼事
