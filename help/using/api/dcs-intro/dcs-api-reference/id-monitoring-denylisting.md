@@ -8,9 +8,13 @@ title: ID監控與封鎖清單
 uuid: 498e0316-cf1b-43e9-88ba-338ee0daf225
 feature: DCS
 exl-id: 8fd31b00-a822-4fd5-b6f5-7f20546da1d9
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/Aie0--aKCVUpPA5pySiDy08Uia8byRLcwVqRe3XEHp0
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: 487
 ht-degree: 0%
 
 ---
@@ -49,6 +53,6 @@ ht-degree: 0%
 
 新增ID以拒絕清單的最常見原因是客戶基礎架構與Audience Manager之間的整合不正確。 識別已加入封鎖清單的ID時，請務必仔細檢閱您的Audience Manager整合。 請參閱&#x200B;**實作與整合指南**，以取得有關如何設定Audience Manager以搭配其他Experience Cloud解決方案或外部系統使用的詳細說明。
 
-將ID新增至拒絕清單的另一個常見原因是索引機器人（Web編目程式），這通常會導致流量增加，導致將相同的ID多次傳送給[!DNL DCS]。 如果您將索引機器人識別為將ID新增至拒絕清單的原因，您應該限制機器人對您網站的存取。
+將ID新增至拒絕清單的另一個常見原因是索引機器人（網頁爬蟲），這通常會導致流量增加，導致相同的ID多次傳送給[!DNL DCS]。 如果您將索引機器人識別為將ID新增至拒絕清單的原因，您應該限制機器人對您網站的存取。
 
 如果您難以辨識整合問題，請隨時聯絡客戶支援。 開啟支援要求之前，請確定讓瀏覽器的`.har` `HTTP`封存準備就緒。 此封存可協助支援團隊識別將ID新增至拒絕清單的原因。

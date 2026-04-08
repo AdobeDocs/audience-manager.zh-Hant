@@ -8,9 +8,14 @@ title: 瞭解Data Integration Library (DIL)
 uuid: 77b12f35-81e4-4639-ada6-bf982f27b36e
 feature: DIL Implementation
 exl-id: f194a422-27ed-4a74-9583-8de3b6786caf
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/SyaOtcmDa6IwaoPVjv-G6zvdnFa7ZVDaGP7MaX4RaBk
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: b82b475d-1e7d-46c6-9172-1f9c73004b11id: baaa0dd2-d27e-4921-aae3-7888623a5fa5id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2: id: d7e573ad-4eda-46ec-90c4-239e75362af9id: f8c1669e-86ba-49c4-b622-9dfa07854df8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: 473
 ht-degree: 1%
 
 ---
@@ -21,15 +26,15 @@ ht-degree: 1%
 >
 >自2023年7月起，Adobe已停止開發[!DNL Data Integration Library (DIL)]和[!DNL DIL]擴充功能。
 >
->現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe不會在此時間點之後開發[!DNL DIL]。 建議客戶針對[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)的長期資料收集策略進行評估。
+>現有客戶可以繼續使用其[!DNL DIL]實作。 不過，Adobe不會在此時間點之後開發[!DNL DIL]。 建議客戶針對[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)的長期資料收集策略進行評估。
 >
->如果客戶希望在2023年7月之後實作新的資料收集整合，應改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)。
+>如果客戶希望在2023年7月之後實作新的資料收集整合，應改用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)。
 
 [!DNL Audience Manager DIL]程式碼程式庫中可用的概述、快速入門和程式碼方法。
 
 >[!IMPORTANT]
 >
->從8.0版（於2018年8月發行）開始，[!UICONTROL DIL]對[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant) 3.3版或更新版本有硬性相依性。 它仰賴[!DNL ID Service]引發ID同步和URL目的地。 如果[!DNL ID Service]遺失、過時或未設定，則會發生錯誤。
+>從8.0版（於2018年8月發行）開始，[!UICONTROL DIL]對[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html) 3.3版或更新版本有硬性相依性。 它仰賴[!DNL ID Service]引發ID同步和URL目的地。 如果[!DNL ID Service]遺失、過時或未設定，則會發生錯誤。
 >
 >我們建議您使用[!DNL Adobe Experience Platform Tags]來實作及管理您的[!DNL DIL]與[!DNL Adobe Experience Platform Identity Service]資料庫。
 
@@ -40,16 +45,16 @@ ht-degree: 1%
 
 ## DIL的目的 {#purpose-dil}
 
-[!UICONTROL DIL]是API程式庫。 您可以將它視為[!DNL Adobe Audience Manager]的協助程式程式碼內文。 不一定要使用[!DNL Audience Manager]，但[!UICONTROL DIL]提供的方法和函式表示您不需要開發自己的程式碼即可將資料傳送至[!DNL Audience Manager]。 此外，[!UICONTROL DIL]與[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)提供的API不同。 此服務的設計用途是管理不同[!DNL Experience Cloud]解決方案中的訪客身分識別。 相較之下，[!UICONTROL DIL]的設計目的是：
+[!UICONTROL DIL]是API程式庫。 您可以將它視為[!DNL Adobe Audience Manager]的協助程式程式碼內文。 不一定要使用[!DNL Audience Manager]，但[!UICONTROL DIL]提供的方法和函式表示您不需要開發自己的程式碼即可將資料傳送至[!DNL Audience Manager]。 此外，[!UICONTROL DIL]與[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)提供的API不同。 此服務的設計用途是管理不同[!DNL Experience Cloud]解決方案中的訪客身分識別。 相較之下，[!UICONTROL DIL]的設計目的是：
 
 * 進行事件呼叫並將資料傳送至[資料收集伺服器](../reference/system-components/components-data-collection.md)。
 * 傳送資料至[目的地](../features/destinations/destinations.md)。
 
 ## 取得和實作DIL程式碼 {#get-implement-dil-code}
 
-[!UICONTROL DIL]程式碼可在&#x200B;**[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下載。 請注意，從8.0版（於2018年8月發行）開始，[!UICONTROL DIL]對[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant) 3.3版或更新版本有硬性相依性。 它仰賴[!DNL ID Service]引發ID同步和[!DNL URL destinations]。 如果[!DNL ID Service]遺失、過時或未設定，則會發生錯誤。
+[!UICONTROL DIL]程式碼可在&#x200B;**[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下載。 請注意，從8.0版（於2018年8月發行）開始，[!UICONTROL DIL]對[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) 3.3版或更新版本有硬性相依性。 它仰賴[!DNL ID Service]引發ID同步和[!DNL URL destinations]。 如果[!DNL ID Service]遺失、過時或未設定，則會發生錯誤。
 
-建議您改用[!UICONTROL DIL]Adobe Experience Platform標籤[!DNL Audience Manager]，而不要使用[並手動設定](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)。 [!DNL Adobe Experience Platform Tags]是建議的實作工具，因為它可簡化程式碼部署、放置和版本管理。 深入瞭解[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hant)Audience Manager擴充功能[!DNL Adobe Experience Platform Tags]。
+建議您改用[!UICONTROL DIL]Adobe Experience Platform標籤[!DNL Audience Manager]，而不要使用[並手動設定](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。 [!DNL Adobe Experience Platform Tags]是建議的實作工具，因為它可簡化程式碼部署、放置和版本管理。 深入瞭解[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)Audience Manager擴充功能[!DNL Adobe Experience Platform Tags]。
 
 ## 呼叫範例 {#sample-code}
 

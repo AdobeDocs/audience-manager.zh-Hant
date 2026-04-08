@@ -8,9 +8,14 @@ title: 宣告ID
 uuid: 49bb4f7e-b4a7-4d87-a29c-c3dca036d2a3
 feature: ID Syncs
 exl-id: a480671a-797d-405d-905d-98ab4ef71369
-source-git-commit: e17eedfb94f2936c61298c44f3d556bae254b2a7
+TQID: https://experienceleague.adobe.com/7Jd2lUzJ-blClVnsnYVb9fZZzkaZkQlHjjBbECMmYUc
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: 1151
 ht-degree: 8%
 
 ---
@@ -37,7 +42,7 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td colname="col1"> <b>事件呼叫</b> </td> 
-   <td colname="col2"> <p>若要使用，您需要在頁面上使用<span class="wintitle"> DIL </span>和<a href="https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant" format="https" scope="external"> Adobe Experience Platform Identity Service </a>程式碼。 <span class="wintitle"> DIL </span>從<span class="wintitle"> Adobe Experience Platform Identity Service </span>提供的<code> setVisitorID </code>函式中取得<span class="keyword">個宣告識別碼</span>，並將其傳遞至<span class="keyword"> Audience Manager </span>。 </p> </td> 
+   <td colname="col2"> <p>若要使用，您需要在頁面上使用<span class="wintitle"> DIL </span>和<a href="https://experienceleague.adobe.com/docs/id-service/using/home.html" format="https" scope="external"> Adobe Experience Platform Identity Service </a>程式碼。 <span class="wintitle"> DIL </span>從<span class="wintitle"> Adobe Experience Platform Identity Service </span>提供的<code> setVisitorID </code>函式中取得<span class="keyword">個宣告識別碼</span>，並將其傳遞至<span class="keyword"> Audience Manager </span>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>符合ID</b> </td> 
@@ -184,7 +189,7 @@ ht-degree: 8%
 
 ## [!UICONTROL DIL]使用[!DNL Adobe Experience Platform Identity Service]傳遞[!UICONTROL Declared IDs] {#dil-id-service-pass-declared-ids}
 
-與[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)搭配使用時，您不再需要以已棄用的[!UICONTROL declared IDs]和`dpid`變數傳入`dpuuid`。 相反地，[!UICONTROL DIL]的目前版本依賴`visitorService`函式從[!UICONTROL declared IDs]中的`setCustomerIDs`函式取得[!UICONTROL Adobe Experience Platform Identity Service]。 如需詳細資訊，請參閱[客戶ID與驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)。 您會在`visitorService`中呼叫`DIL.create`，如下所示。
+與[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)搭配使用時，您不再需要以已棄用的[!UICONTROL declared IDs]和`dpid`變數傳入`dpuuid`。 相反地，[!UICONTROL DIL]的目前版本依賴`visitorService`函式從[!UICONTROL declared IDs]中的`setCustomerIDs`函式取得[!UICONTROL Adobe Experience Platform Identity Service]。 如需詳細資訊，請參閱[客戶ID與驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。 您會在`visitorService`中呼叫`DIL.create`，如下所示。
 
 ```js
 var vDil = DIL.create({
@@ -195,7 +200,7 @@ var vDil = DIL.create({
 });
 ```
 
-在`namespace`機碼值組中，`MCORG`是您的[!DNL Experience Cloud]組織識別碼。 如果您沒有此ID，可以在[!UICONTROL Administration]儀表板的[!DNL Experience Cloud]區段中找到。 您需要管理員許可權才能檢視此儀表板。 請參閱[開始使用Experience Cloud服務](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/getting-started)。
+在`namespace`機碼值組中，`MCORG`是您的[!DNL Experience Cloud]組織識別碼。 如果您沒有此ID，可以在[!UICONTROL Administration]儀表板的[!DNL Experience Cloud]區段中找到。 您需要管理員許可權才能檢視此儀表板。 請參閱[開始使用Experience Cloud服務](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)。
 
 ## 已棄用的函式 {#deprecated-functions}
 

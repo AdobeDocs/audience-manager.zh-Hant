@@ -7,9 +7,13 @@ title: 傳入處理後傳送給合作夥伴的範例訊息
 uuid: 69e3a8b3-8465-4f4c-8005-8a9ff15ae19a
 feature: Inbound Data Transfers
 exl-id: acfc788f-63e6-445f-a086-0a2cc6c8865b
-source-git-commit: 48b122a4184d1c0662b9de14e92f727caa4a9d74
+TQID: https://experienceleague.adobe.com/CpGIKkc7rAP8h3ij53-YMv3mHoU7CWwpNF5EeB3oUOQ
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: 636
 ht-degree: 0%
 
 ---
@@ -82,7 +86,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> 未使用的訊號總數 </td> 
-   <td colname="col2"> <p>所有傳入檔案(未對應至Audience Manager特徵的索引鍵/值組)中所有使用者的未使用訊號總數。 在大多數情況下，這表示Audience Manager未針對訊號定義規則。 </p> </td> 
+   <td colname="col2"> <p>所有傳入檔案（未對應至Audience Manager特徵的索引鍵/值組）中所有使用者的未使用訊號總數。 在大多數情況下，這表示Audience Manager未針對訊號定義規則。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 已實現特徵總數 </td> 

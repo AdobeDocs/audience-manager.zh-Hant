@@ -8,9 +8,13 @@ title: 設定檔合併規則與裝置圖表常見問題集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
+TQID: https://experienceleague.adobe.com/G8a3lySpSqyDY7FTWSgECjhNl-aCVsjxj6I0lHUkq2o
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: 1583
 ht-degree: 81%
 
 ---
@@ -111,7 +115,7 @@ ht-degree: 81%
 
 **區段大小估計是否包含根據使用裝置圖表選項的 [!UICONTROL Profile Merge Rule] 提供的連線符合區段資格的裝置？**
 
-不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hant)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
+不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
 
  
 
@@ -263,7 +267,7 @@ ht-degree: 81%
 
 2019年底，我們發佈了一系列設定檔合併規則增強功能，以改進使用跨裝置ID產生批次檔案的準確性。 自2020年3月16日星期一起，您的Audience Manager執行個體將嚴格遵循這些增強功能。 因此，使用跨裝置ID對應至目的地的區段，在某些設定檔合併規則設定中將會停止產生匯出專案。
 
-為確保您的Audience Manager執行個體與使用跨裝置ID (例如Adobe Campaign)的目的地之間正確整合，請確定您符合下列需求：
+為確保您的Audience Manager執行個體與使用跨裝置ID （例如Adobe Campaign）的目的地之間正確整合，請確定您符合下列需求：
 
 1. 檢閱對應至您Adobe Campaign宣告ID目的地的區段所使用的設定檔合併規則。 設定檔合併規則必須使用[!UICONTROL Last Authenticated Profile]選項，所以所有已驗證的設定檔都可以包含在匯出中。 如果您的設定檔合併規則使用不同的選項，請將其切換為[!UICONTROL Last Authenticated Profile]。
 2. 在設定檔合併規則設定中選取Adobe Campaign宣告ID資料來源。

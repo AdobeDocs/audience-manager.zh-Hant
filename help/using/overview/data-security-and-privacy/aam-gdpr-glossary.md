@@ -7,9 +7,13 @@ title: GDPR 字彙表
 uuid: e52cad27-6a44-45ee-8524-6080adb86cc8
 feature: Data Governance & Privacy
 exl-id: 36930703-745e-4fbd-ad18-ba9efb77eb7e
-source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
+TQID: https://experienceleague.adobe.com/8Q7X36aX-rauQ64-8TFvZ5tEacTRcJooD-VPVMLW5cM
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: 678
 ht-degree: 96%
 
 ---
@@ -22,7 +26,7 @@ ht-degree: 96%
 
 GDPR 於 2018 年 5 月 25 日生效，其主要目標是讓歐盟內的個人 (資料主體) 擁有對個人資料的更多控制權，同時透過更完善的歐盟內部統一法規簡化國際企業的法規環境。為支援資料主體 (您的消費者) 的存取和刪除請求，Adobe Audience Manager 團隊已視必要性增強服務和程序，這是 Adobe GDPR 整備的一部分。
 
-請務必參閱[隱私權法規概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=zh-Hant)中的GDPR相關內容，以進一步瞭解GDPR在Experience Cloud中的運作方式。
+請務必參閱[隱私權法規概述](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html?lang=en)中的GDPR相關內容，以進一步瞭解GDPR在Experience Cloud中的運作方式。
 
 ## GDPR 字彙表 {#gdpr-glossay}
 
@@ -58,7 +62,7 @@ GDPR 於 2018 年 5 月 25 日生效，其主要目標是讓歐盟內的個人 (
 
  
 
-**Audience Manager 識別碼 (ID)：** Adobe Audience Manager 會儲存各種類型的 ID。[Audience Manager 識別碼](data-privacy-ids.md)頁面提供這些 ID 的摘要、其對應的資料來源以及簡短說明。將請求傳送至 [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant) 時，請參考這些 ID，以便為您的資料主題提出刪除或存取請求。
+**Audience Manager 識別碼 (ID)：** Adobe Audience Manager 會儲存各種類型的 ID。[Audience Manager 識別碼](data-privacy-ids.md)頁面提供這些 ID 的摘要、其對應的資料來源以及簡短說明。將請求傳送至 [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en) 時，請參考這些 ID，以便為您的資料主題提出刪除或存取請求。
 
  
 

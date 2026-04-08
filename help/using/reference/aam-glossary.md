@@ -7,9 +7,14 @@ title: 字彙表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/tIudKTIrwiTO01Bq5pDuekNKI5YCrjBCDi13rKydK2k
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: baaa0dd2-d27e-4921-aae3-7888623a5fa5id: c814092e-2730-45e8-a12d-e084529f52cbid: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+subfeature_v2: id: d8f681b8-67cc-42dc-85c5-a0977528a942id: d921db59-bd4a-43dc-97e6-4ff4611f1ae8id: e7029888-c8b0-46a7-849a-cf132a1559bf
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: 1157
 ht-degree: 96%
 
 ---
@@ -61,7 +66,7 @@ CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audienc
 
 **客戶屬性**
 
-請參閱 [!DNL Experience Cloud Core Services] 產品文件中的[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hant)。
+請參閱 [!DNL Experience Cloud Core Services] 產品文件中的[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)。
 
 
 
@@ -95,7 +100,7 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **目的地**
 
-在[!DNL Audience Manager]中，目的地是您想要與其共用資料的任何其他系統(廣告伺服器、DSP、廣告網路等)。 我們 UI 中的 [!UICONTROL Destination Builder] 提供工具，可讓您建立和管理這些資料傳送程序。[!DNL Audience Manager] 目的地功能位於 **[!UICONTROL Audience Data > Destinations]** 中。
+在[!DNL Audience Manager]中，目的地是您想要與其共用資料的任何其他系統（廣告伺服器、DSP、廣告網路等）。 我們 UI 中的 [!UICONTROL Destination Builder] 提供工具，可讓您建立和管理這些資料傳送程序。[!DNL Audience Manager] 目的地功能位於 **[!UICONTROL Audience Data > Destinations]** 中。
 
 
 
@@ -113,7 +118,7 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **Experience Cloud ID (ECID)**
 
-先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。[!DNL Experience Cloud] ID 是 ID 服務的中心。它是網站訪客的不重複永久識別碼。請參閱 Cookie 和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant)。
+先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。[!DNL Experience Cloud] ID 是 ID 服務的中心。它是網站訪客的不重複永久識別碼。請參閱 Cookie 和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html)。
 
 
 
@@ -270,6 +275,6 @@ TTL 會定義合格訪客在某個特徵中停留的天數。TTL 是針對特徵
 
 [!DNL Experience Cloud] ID 服務 (前身為「ID 服務」) 提供永久性的通用 ID，可識別 [!DNL Experience Cloud] 中所有解決方案的訪客。
 
-請參閱 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)文件。
+請參閱 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)文件。
 
 ## W-X-Y-Z {#w-z}

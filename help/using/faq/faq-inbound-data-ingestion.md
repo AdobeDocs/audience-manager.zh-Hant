@@ -8,9 +8,13 @@ title: 傳入客戶資料擷取常見問題集
 uuid: 491e9ec1-4731-46a8-86e7-d8c613e6cedc
 feature: Onboarding Offline Data
 exl-id: 48eef5f1-0655-4dac-9ab4-74b11c705c13
-source-git-commit: f073dd733b512aa60d7817acbef76e51594900f8
+TQID: https://experienceleague.adobe.com/fd4e3ScdinyJHFh2Mvl4N9iaY4CClJ7xrI1rMO3Y7dE
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 3c88464c2249b7848c9ae80ca4c0ed58fcb81070
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: 1343
 ht-degree: 86%
 
 ---
@@ -60,8 +64,8 @@ ht-degree: 86%
 
 是。只要您使用[!UICONTROL cross-device data source]儲存您所上傳的CRM資料，Audience Manager就會一律儲存資料。 事實上，Audience Manager於2019年10月推出的[!UICONTROL Profile Merge Rules]增強功能允許僅限離線使用的使用案例，自此之後，您無需將Audience Manager程式碼部署至生產環境，即可上傳資料和執行動作。 請參閱：
 
-* [設定檔合併規則增強功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html?lang=zh-Hant)
-* [!UICONTROL People-based Destinations] - [以僅限離線資料為基礎的Personalization](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html?lang=zh-Hant)
+* [設定檔合併規則增強功能概述](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/build-and-manage-audiences/profile-merge/overview-of-profile-merge-rule-enhancements.html)
+* [!UICONTROL People-based Destinations] - [以僅限離線資料為基礎的Personalization](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/implementation-guide/people-based-destinations-workflow-offline.html)
 
 <br> 
 

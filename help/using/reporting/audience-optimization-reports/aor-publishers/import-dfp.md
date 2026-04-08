@@ -7,9 +7,13 @@ title: 將Google Ad Manager資料檔案匯入Audience Manager
 uuid: c685f34f-3e50-4c4b-99fa-d8bbafe0b268
 feature: Audience Optimization Reports
 exl-id: 62b72dd1-e664-4c6a-8c0a-f7a662d62a47
-source-git-commit: 7147091e6c253e8124f5f21a2251c1a76ac9d808
+TQID: https://experienceleague.adobe.com/cnzj59ejieaEvCGo2a-xopjYJ-GfUTc1LV24p9mQiEw
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: b89b323a-1e91-40b1-8d20-96b5b726d55a
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: 511
 ht-degree: 14%
 
 ---
@@ -22,7 +26,7 @@ ht-degree: 14%
 
 請注意，您必須在&#x200B;*之前*&#x200B;完成本節中說明的程式，才能繼續記錄擷取啟用的先決條件。
 
-若要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager] (先前的Google DFP)記錄檔，您必須在廣告標籤呼叫中先設定我們的[Audience Manager唯一使用者ID (UUID)](../../../reference/ids-in-aam.md)。 如此一來，我們的ID就會包含在[!DNL Google Ad Manager]記錄檔中，而且我們可以比對[!DNL Google Ad Manager]與[!DNL Audience Manager]之間的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]程式碼或[!UICONTROL Audience Management Module]在第一方Cookie中設定[!DNL Audience Manager] UUID。
+若要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager] （先前的Google DFP）記錄檔，您必須在廣告標籤呼叫中先設定我們的[Audience Manager唯一使用者ID (UUID)](../../../reference/ids-in-aam.md)。 如此一來，我們的ID就會包含在[!DNL Google Ad Manager]記錄檔中，而且我們可以比對[!DNL Google Ad Manager]與[!DNL Audience Manager]之間的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]程式碼或[!UICONTROL Audience Management Module]在第一方Cookie中設定[!DNL Audience Manager] UUID。
 
 以下說明如何在廣告標籤呼叫中設定[!DNL Audience Manager] ID，如檔案所述：
 
@@ -82,7 +86,7 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td colname="col1"> <p>步驟 6 </p> </td> 
-   <td colname="col2"> <p>編譯先決條件並開啟支援票證，方法是依照詳細指示<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hant">這裡</a>開始記錄擷取程式。 </p> </td> 
+   <td colname="col2"> <p>編譯先決條件並開啟支援票證，方法是依照詳細指示<a href="https://experienceleague.adobe.com/docs/customer-one/using/home.html">這裡</a>開始記錄擷取程式。 </p> </td> 
    <td colname="col3"> <p>您或代表您<span class="keyword"> Audience Manager</span>諮詢 </p> </td> 
   </tr> 
  </tbody> 

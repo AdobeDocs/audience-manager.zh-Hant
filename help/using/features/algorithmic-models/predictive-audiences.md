@@ -6,9 +6,14 @@ solution: Audience Manager
 title: Audience Manager 預測受眾
 feature: Algorithmic Models
 exl-id: 57eaeb09-0e0e-4ce9-9b25-f1a27f4f35ce
-source-git-commit: 319be4dade263c5274624f07616b404decb7066f
+TQID: https://experienceleague.adobe.com/--U4qWXmR0OhYOOlPCZXm7sdXBL3dmkfmtp09WMUetw
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: c814092e-2730-45e8-a12d-e084529f52cbid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: 1470
 ht-degree: 3%
 
 ---
@@ -73,7 +78,7 @@ ht-degree: 3%
 您可以選擇任何第一方特徵或區段來定義您的角色。 然而，為獲得最佳結果，以下是建議的一組最佳實務：
 
 * 選擇您的角色特徵或區段，讓每個角色至少擁有幾百個[裝置ID](../../reference/ids-in-aam.md)。
-* 如果您的特徵是以[跨裝置ID](../../reference/ids-in-aam.md)為基礎，您可以將其包裝在使用[裝置ID](../profile-merge-rules/merge-rules-overview.md)的[設定檔合併規則](../../reference/ids-in-aam.md)的區段中，例如[!UICONTROL Device Graph]。 這將確保有足夠的裝置ID[&#128279;](../../reference/ids-in-aam.md)可供演演算法學習。
+* 如果您的特徵是以[跨裝置ID](../../reference/ids-in-aam.md)為基礎，您可以將其包裝在使用[裝置ID](../profile-merge-rules/merge-rules-overview.md)的[設定檔合併規則](../../reference/ids-in-aam.md)的區段中，例如[!UICONTROL Device Graph]。 這將確保有足夠的裝置ID[](../../reference/ids-in-aam.md)可供演演算法學習。
 * 我們建議您為角色選擇特徵或簡單區段，包含1到3個特徵。
 * 選擇重疊程度最低的基線特徵或區段。
 * 請務必在數位財產上擷取精細的特徵。
@@ -122,11 +127,11 @@ ht-degree: 3%
 
 ## [!UICONTROL Data Export Controls] {#dec}
 
-[!UICONTROL Predictive Audiences]模型建立的預測區段會繼承下列第一方資料來源的[資料匯出控制項](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hant)：
+[!UICONTROL Predictive Audiences]模型建立的預測區段會繼承下列第一方資料來源的[資料匯出控制項](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)：
 
 1. 您在建立模型時選擇的第一方資料來源。
 1. 目標對象的第一方資料來源。 具體來說，就是組成您目標對象之[!UICONTROL traits]或[!UICONTROL segments]的資料匯出控制項。
-1. 您為模型選取之[的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html?lang=zh-Hant)資料匯出控制[!UICONTROL Profile Merge Rule]。
+1. 您為模型選取之[的](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-export-controls.html)資料匯出控制[!UICONTROL Profile Merge Rule]。
 
 新建立的預測性[!UICONTROL traits]和[!UICONTROL segments]將與上述第一方資料來源的聯合有相同的隱私許可權制。
 
@@ -146,6 +151,6 @@ ht-degree: 3%
 
 ## [!UICONTROL Role-Based Access Controls] {#rbac}
 
-您為角色和受眾分類選擇的特徵和區段須遵守Audience Manager [角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hant)。
+您為角色和受眾分類選擇的特徵和區段須遵守Audience Manager [角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html)。
 
-Audience Manager使用者只能選取其擁有[檢視](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html?lang=zh-Hant#wild-card-permissions)許可權之角色和目標對象的特徵或區段。
+Audience Manager使用者只能選取其擁有[檢視](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/administration-overview.html#wild-card-permissions)許可權之角色和目標對象的特徵或區段。

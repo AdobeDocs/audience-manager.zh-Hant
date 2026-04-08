@@ -6,9 +6,12 @@ solution: Audience Manager
 title: 預測受眾快速入門
 feature: Algorithmic Models
 exl-id: beb314de-f679-4397-8e14-2dd6576243fd
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/GxGaEIsjpvAqbm5AbaxmmLrgC09x4fslbZcJuShf1sE
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: 545
 ht-degree: 2%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 2%
 
 ## 建立預測受眾模型 {#create-predictive-audiences}
 
-建立[!UICONTROL Predictive Audiences]模型之前，您必須先決定要將[!UICONTROL Predictive Audiences]特徵和區段指派給哪個第一方資料來源。 您可以使用現有的第一方資料來源，或建立新的資料來源。 如需有關如何建立新的第一方資料來源的詳細資訊，請參閱[管理資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=zh-Hant)。
+建立[!UICONTROL Predictive Audiences]模型之前，您必須先決定要將[!UICONTROL Predictive Audiences]特徵和區段指派給哪個第一方資料來源。 您可以使用現有的第一方資料來源，或建立新的資料來源。 如需有關如何建立新的第一方資料來源的詳細資訊，請參閱[管理資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html)。
 
 知道要使用哪個資料來源後，請遵循下列步驟。
 

@@ -7,9 +7,13 @@ title: 資料隱私權概述
 uuid: 865e7b4e-fee1-4fa4-8035-1595fc77cd96
 feature: Data Governance & Privacy
 exl-id: 051de369-e762-49fb-b65f-6faf94db48a4
-source-git-commit: 8bee593d0359f87f030840f87d70025dd5ea33ed
+TQID: https://experienceleague.adobe.com/2ePsnB1spOaodcifn67as3T7v28RnrOthzjhJJQKIGo
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: 437
 ht-degree: 52%
 
 ---
@@ -43,9 +47,9 @@ ht-degree: 52%
 
 ## 法規遵循 {#compliance}
 
-[!DNL Audience Manager]可協助您透過[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)等隱私工具處理資料存取和刪除請求，以遵循特定隱私權法規所規範的義務。
+[!DNL Audience Manager]可協助您透過[Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)等隱私工具處理資料存取和刪除請求，以遵循特定隱私權法規所規範的義務。
 
-此服務提供一個 [!DNL RESTful API] 和使用者介面，可協助您管理消費者資料請求。您可以使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)，根據個別消費者的請求，提交存取和刪除個人資料的請求，協助您自動執行這部分的法規遵循義務。
+此服務提供一個 [!DNL RESTful API] 和使用者介面，可協助您管理消費者資料請求。您可以使用 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=en)，根據個別消費者的請求，提交存取和刪除個人資料的請求，協助您自動執行這部分的法規遵循義務。
 
 透過Privacy Service處理資料存取和刪除請求時，目前透過[DCS API](data-privacy-requests.md#opt-out-requests)支援[選擇退出請求](../../api/dcs-intro/dcs-api-reference/dcs-api-reference-overview.md)。 如需詳細資訊，請參閱[資料隱私權請求](data-privacy-requests.md)。
 

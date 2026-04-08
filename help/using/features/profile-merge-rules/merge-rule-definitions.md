@@ -7,9 +7,14 @@ title: 定義的設定檔合併規則選項
 uuid: 225eeaf7-45e9-4f21-9360-d80a9f90520c
 feature: Profile Merge
 exl-id: 682d2540-c764-4f5a-a946-5d0e18c66c00
-source-git-commit: 2b7858ba9000f0e0a1310bf40cd33ce3b0b01de6
+TQID: https://experienceleague.adobe.com/kfGcdvkr7dmluaAXdLdX4eRvRH15H1Sxd2w4yoPBSzc
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: a99472c1-6aae-4c7a-8aa0-f60636369620id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6c
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: 794
 ht-degree: 1%
 
 ---
@@ -83,7 +88,7 @@ ht-degree: 1%
 
 ## [!UICONTROL Cross-Device Profile Options] {#profile-options}
 
-[!UICONTROL Cross-Device Profile Options]列出您的[!UICONTROL cross-device data sources]。 這些選項會使用您建立[!UICONTROL cross-device] [!UICONTROL data source]時提供的名稱(請參閱[建立跨裝置資料Source](merge-rules-start.md#create-data-source))。 您最多可以選取3個[!UICONTROL cross-device data sources]以用於每個設定檔規則。 當您選擇[!UICONTROL Authenticated Profile Options]或&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;時，**[!UICONTROL Last Authenticated Profiles]**&#x200B;可供使用。
+[!UICONTROL Cross-Device Profile Options]列出您的[!UICONTROL cross-device data sources]。 這些選項會使用您建立[!UICONTROL cross-device] [!UICONTROL data source]時提供的名稱（請參閱[建立跨裝置資料Source](merge-rules-start.md#create-data-source)）。 您最多可以選取3個[!UICONTROL cross-device data sources]以用於每個設定檔規則。 當您選擇[!UICONTROL Authenticated Profile Options]或&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;時，**[!UICONTROL Last Authenticated Profiles]**&#x200B;可供使用。
 
 ## [!UICONTROL Device Options] {#device-options}
 
@@ -107,7 +112,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">設定檔連結裝置圖表</span></b> </p> </td> 
-   <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>從目前裝置和最多100部使用者已驗證的其他裝置讀取設定檔。 此裝置圖表是以<span class="keyword"> Audience Manager</span>中您自己的第一方資料建置而成。 如果您的數位財產具有高度驗證等級，非常適合使用此功能。 <span class="wintitle">設定檔連結</span>裝置圖表已即時更新。 當您選取<b><span class="uicontrol">目前驗證的設定檔</span></b>或<b><span class="uicontrol">上次驗證的設定檔</span></b>時，此選項可供使用。 使用此選項時，您只能選擇單一已驗證的設定檔(<span class="keyword"> Audience Manager</span>會自動將其他設定檔變灰)。 另請參閱<a href="profile-link-use-case.md">個人資料連結裝置圖表使用案例</a>。 </p> </td>
+   <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>從目前裝置和最多100部使用者已驗證的其他裝置讀取設定檔。 此裝置圖表是以<span class="keyword"> Audience Manager</span>中您自己的第一方資料建置而成。 如果您的數位財產具有高度驗證等級，非常適合使用此功能。 <span class="wintitle">設定檔連結</span>裝置圖表已即時更新。 當您選取<b><span class="uicontrol">目前驗證的設定檔</span></b>或<b><span class="uicontrol">上次驗證的設定檔</span></b>時，此選項可供使用。 使用此選項時，您只能選擇單一已驗證的設定檔（<span class="keyword"> Audience Manager</span>會自動將其他設定檔變灰）。 另請參閱<a href="profile-link-use-case.md">個人資料連結裝置圖表使用案例</a>。 </p> </td>
   </tr>
 
 <tr> 

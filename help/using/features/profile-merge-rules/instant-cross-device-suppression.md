@@ -6,9 +6,13 @@ title: 即時跨裝置隱藏功能
 uuid: cb11b9cb-6d7d-4aa9-91b0-c2715857d821
 feature: Profile Merge
 exl-id: b9686210-e1aa-4f0a-a549-27d29c94e963
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/8dXdDR8uduaPsKiDbkcdNYit0nESpBGezxwhrhU67GE
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: 778
 ht-degree: 6%
 
 ---
@@ -61,7 +65,7 @@ ht-degree: 6%
 * 為了讓即時取消區段功能發揮作用，您必須將所需的區段對應至即時伺服器對伺服器目的地。
 * 對於透過[裝置圖表](profile-link-use-case.md#recommendations)連線至裝置的裝置，我們會針對評估與取消細分強制執行四個裝置的限制。 此限制在[裝置圖表選項與裝置取消細分](merge-rule-unsegment.md#device-graph-options-unsegmentation)中說明&#x200B;。
 * 對於透過裝置圖表連線的多個裝置，取消分段命令將包含在批次檔案中，每24小時傳送至目的地。
-* 必須即時看見裝置(在[Edge](../../reference/system-components/components-edge.md)上)才能即時提示區段評估。 對於在符合特徵[!UICONTROL time-to-live (TTL)]時具有[!DNL TTL]的特徵，裝置將會在24小時內透過批次檔案自動取消分段&#x200B;。 深入瞭解如何[設定特徵過期時間間隔](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。
+* 必須即時看見裝置（在[Edge](../../reference/system-components/components-edge.md)上）才能即時提示區段評估。 對於在符合特徵[!UICONTROL time-to-live (TTL)]時具有[!DNL TTL]的特徵，裝置將會在24小時內透過批次檔案自動取消分段&#x200B;。 深入瞭解如何[設定特徵過期時間間隔](../traits/create-onboarded-rule-based-traits.md#set-expiration-interval)。
 * 如果您要即時使用[!UICONTROL DCS API]來內建規則型特徵，可以使用[!UICONTROL AND NOT]邏輯觸發取消分段。 深入瞭解[傳送資料至DCS API](../../api/dcs-intro/dcs-event-calls/dcs-url-send.md)。&#x200B;
 
 ## 需要注意的重要方面 — 時間 {#timing-notes}

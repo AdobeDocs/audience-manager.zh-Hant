@@ -8,9 +8,14 @@ title: 管理資料來源
 uuid: 4df65bcb-9ad9-4b72-a71e-8918b43d4850
 feature: Data Sources
 exl-id: 1c20988e-4a09-4d56-b454-d48b75eed1ce
-source-git-commit: bda66cb9aaee3a40ae64dda100f42b88696a027e
+TQID: https://experienceleague.adobe.com/ffRcCmzJX4WW0nTvEALBrE1Sm-b9Fl7Wj2heT-uNIx0
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6c
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: 403
 ht-degree: 0%
 
 ---
@@ -35,9 +40,9 @@ ht-degree: 0%
 1. **[!UICONTROL Description]** （選擇性）：輸入資料來源的說明，協助您定義資料來源的角色或用途。
 1. **[!UICONTROL Integration Code]** （選用）：輸入整合代碼。 當您想要：
    * [建立跨裝置資料來源](../features/profile-merge-rules/merge-rules-start.md#create-data-source)。
-   * 使用[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+   * 使用[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
    * 使用[設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)。
-1. **[!UICONTROL Namespace]** （唯讀）：此欄位是唯讀的，會在您儲存資料來源時自動產生。 如果您想要將區段從Audience Manager匯出至Experience Platform，您必須在Experience Platform中建立對應的[身分名稱空間](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=zh-Hant#manage-namespaces)，使用自動產生的值做為Experience Platform中的名稱空間[身分符號](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces#components-of-a-namespace)。
+1. **[!UICONTROL Namespace]** （唯讀）：此欄位是唯讀的，會在您儲存資料來源時自動產生。 如果您想要將區段從Audience Manager匯出至Experience Platform，您必須在Experience Platform中建立對應的[身分名稱空間](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html#manage-namespaces)，使用自動產生的值做為Experience Platform中的名稱空間[身分符號](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#components-of-a-namespace)。
 1. **[!UICONTROL ID Type]**：選取此資料來源將包含的ID型別：
    * **[!UICONTROL Cookie]**
    * **[!UICONTROL Device Advertising ID]**
@@ -69,7 +74,7 @@ ht-degree: 0%
 >請注意下列限制：
 >
 >* 您無法刪除[作用中對象或資料Source同步特徵](../features/traits/client-activity-synced-audience-traits.md)。
->* 對於使用Adobe Analytics的客戶： Audience Manager不允許您刪除從[!DNL Analytics]報表套裝自動建立的資料來源。 使用[核心服務](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/customer-attributes/attributes)來取消這些資料來源的對應。
+>* 對於使用Adobe Analytics的客戶： Audience Manager不允許您刪除從[!DNL Analytics]報表套裝自動建立的資料來源。 使用[核心服務](https://experienceleague.adobe.com/en/docs/core-services/interface/services/customer-attributes/attributes)來取消這些資料來源的對應。
 
 1. 按一下&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Data Sources]**。
 1. 選取一或多個資料來源旁的核取方塊。
