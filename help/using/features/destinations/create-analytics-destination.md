@@ -29,13 +29,13 @@ ht-degree: 4%
 ## 要求 {#requirements}
 
 若要設定Analytics目的地，您的Audience Manager使用者必須擁有管理員許可權。 請參閱管理指南中的[建立使用者](/help/using/features/administration/administration-overview.md#create-users)。 請注意，擁有`CREATE_DESTINATIONS` [萬用字元許可權](/help/using/features/administration/administration-overview.md#wild-card-permissions)並不足以建立Analytics目的地。
-如需進一步需求，請參閱[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html)中的先決條件。
+如需進一步需求，請參閱[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=zh-Hant)中的先決條件。
 
 ## 您的預設分析目的地和新的分析目的地
 
 | Analytics目的地型別 | 說明 |
 |---|---|
-| 預設值 | 此預設目的地的名稱為「Adobe Analytics」，您可以編輯此名稱。 對應的報表套裝ID會顯示在您Audience Manager特徵和區段的資料夾儲存空間中。 <br>  如果您的帳戶有： <br>，Audience Manager會自動建立一個目的地  <ul><li>符合[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html)檔案中描述的需求。</li><li>Analytics中的[報告套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)。</li></ul> |
+| 預設值 | 此預設目的地的名稱為「Adobe Analytics」，您可以編輯此名稱。 對應的報表套裝ID會顯示在您Audience Manager特徵和區段的資料夾儲存空間中。 <br>  如果您的帳戶有： <br>，Audience Manager會自動建立一個目的地  <ul><li>符合[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=zh-Hant)檔案中描述的需求。</li><li>Analytics中的[報告套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=zh-Hant)。</li></ul> |
 | 新增 | 若要建立新的Analytics目的地，請前往「對象資料>目的地>建立新目的地」 ，並遵循以下各節所述的步驟操作。 |
 
 ## Adobe Analytics中的Audience Manager區段資格 {#segment-qualifications}

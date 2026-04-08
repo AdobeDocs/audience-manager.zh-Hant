@@ -47,7 +47,7 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 * [演演算法模型](/help/using/features/algorithmic-models/understanding-models.md)；
 * 對Experience Platform [目的地目錄](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-cat/destinations-catalog.html)中尚未支援的目的地啟用您的區段。
 
-此外，您的Experience Platform區段已透過[核心服務](https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html)與其他Experience Cloud解決方案共用。
+此外，您的Experience Platform區段已透過[核心服務](https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=zh-Hant)與其他Experience Cloud解決方案共用。
 
 >[!IMPORTANT]
 >
