@@ -7,9 +7,13 @@ title: 設定URL目的地
 feature: Destination Basics
 exl-id: b5af87c9-4460-43a7-9808-242eac876c39
 TQID: https://experienceleague.adobe.com/--3mSis3KSVJwDsfQ0-6AZPRL7den1HX5Cf7ovnWPpI
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
-subfeature_v2: id: c138d302-73f0-4186-93ea-10c4ba52f943id: e7029888-c8b0-46a7-849a-cf132a1559bf
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2:
+  - id: c138d302-73f0-4186-93ea-10c4ba52f943
+  - id: e7029888-c8b0-46a7-849a-cf132a1559bf
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 487
@@ -53,7 +57,7 @@ ht-degree: 1%
 此區段包含可讓您設定基底[!DNL URL]和由[!DNL URL]字串傳入的資料分隔符號的選項。 本節為選用。 若要完成本節：
 
 1. 按一下&#x200B;**[!UICONTROL Configuration]**&#x200B;以公開控制項。
-1. *（選擇性）*&#x200B;選取&#x200B;**[!UICONTROL Serialize]**核取方塊。
+1. *（選擇性）*&#x200B;選取&#x200B;**[!UICONTROL Serialize]**&#x200B;核取方塊。
 這可讓您依序將區段傳送至[!DNL destination]，而非針對每個區段分別發出呼叫。 序列化有助於提高資料傳輸效率。 選取此核取方塊會顯示URL和分隔符號欄位。 如需詳細資訊，請參閱[標準和序列索引鍵值配對](../../features/destinations/key-value-pairs.md)。
 1. 若您選取&#x200B;**[!UICONTROL Serialize]**，則必須設定URL和分隔字元欄位，如下所述。
 

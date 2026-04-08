@@ -8,10 +8,15 @@ uuid: bedbe7d4-7cbb-4403-9104-312f9230aea1
 feature: General & Trend Reports
 exl-id: 3373f413-cc8f-49c7-9b4e-34b39e0efc38
 TQID: https://experienceleague.adobe.com/fKSbryohm3Syccv6Q1UTD2rn54SCYHiCTh6YThEwR-M
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620
-subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6c
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 651
@@ -48,8 +53,8 @@ c_trend_reports.xml
 ![](assets/trend_reports.png)
 
 1. 設定以下選項: 
-   **報表型別：**選取所需的報表型別（特徵或區段）。
-   **日期範圍：**指定報表的日期範圍（開始日期和結束日期）。
+   **報表型別：**&#x200B;選取所需的報表型別（特徵或區段）。
+   **日期範圍：**&#x200B;指定報表的日期範圍（開始日期和結束日期）。
    **顯示間隔：**&#x200B;指定顯示間隔（1、7、14、30、60和90天間隔）。
 1. 依名稱或ID搜尋特徵或區段。
 1. 從資料夾清單中，拖放您要報告的特徵或區段至右側的[!UICONTROL Selections]面板。

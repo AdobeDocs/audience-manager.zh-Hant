@@ -8,10 +8,17 @@ uuid: 27995c2d-6572-438e-af99-b5477f090ae9
 feature: DIL Implementation
 exl-id: 001710be-b377-460a-9e29-7268d25a6305
 TQID: https://experienceleague.adobe.com/XKzjo9OINGxJ8qCR7S4NxWh03pCDpNhb5sCZkiVAapQ
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: b82b475d-1e7d-46c6-9172-1f9c73004b11
-subfeature_v2: id: d7e573ad-4eda-46ec-90c4-239e75362af9
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+subfeature_v2:
+  - id: d7e573ad-4eda-46ec-90c4-239e75362af9
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 961
@@ -61,10 +68,10 @@ c_dil_send_page_objects.xml
 
 <pre class="java"><code>
 var sample_dil = DIL.create({partner:"<i>partner name</i>"}); 
-sample_dil.api.signals({ 
+sample_dil.api.signals(&lbrace; 
    c_color:"blue", 
    c_price:"900" 
-}); 
+&rbrace;); 
 sample_dil.api.submit();
 </code></pre>
 
@@ -73,10 +80,10 @@ sample_dil.api.submit();
 此進階範例示範如何將物件中的資料傳送至Audience Manager。 使用此方法時，[!UICONTROL DIL]可讓您將物件作為函式引數傳遞至[!DNL signals()]方法。 [!UICONTROL DIL]您的程式碼可能如下所示：
 
 <pre class="java"><code>
-var my_object = { 
+var my_object = &lbrace; 
    color : "blue", 
    price : "900" 
-}; 
+&rbrace;; 
  
 var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
 //Load the object and append "c_" to all keys in the key-value pairs and send data to AudienceManager. 
@@ -88,21 +95,21 @@ sample_dil.api.signals(my_object,"c_").submit();
 在此情況下，變數`my_object`會使用陣列來儲存資料。 此範例以上述建議方法傳入的資訊為基礎，但會新增一個額外的圖層來配合產品型別和模型。 您的程式碼看起來可能類似下列：
 
 <pre class="java"><code>
-var my_objects = [{ 
+var my_objects = &lbrack;&lbrace; 
    color : "blue", 
    price : "900" 
-}, { 
+&rbrace;, &lbrace; 
    type : "acura", 
    model : "tl" 
-}]; 
+&rbrace;&rbrack;; 
  
 var sample_dil = DIL.create({ partner : "<i>partner name</i>" }); 
  
 for (var i = 0; i < my_objects.length; i++) 
 //Load the object and append "c_" to all the keys in the key-value pairs.  
-{ 
+&lbrace; 
     sample_dil.api.signals(my_objects[i], "c_"); 
-} 
+&rbrace; 
 sample_dil.api.submit();
 </code></pre>
 
@@ -167,12 +174,12 @@ var search_referrer = DIL.tools.getSearchReferrer();
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
 var search_referrer = DIL.tools.getSearchReferrer(); 
  
-if (search_referrer && search_referrer.valid) { 
-  adobe_dil.api.signals({ 
+if (search_referrer && search_referrer.valid) &lbrace; 
+  adobe_dil.api.signals(&lbrace; 
     c_se : se.name, 
     c_st : se.keywords 
-  }).submit(); 
-}
+  &rbrace;).submit(); 
+&rbrace;
 </code></pre>
 
 **未列出的搜尋引擎程式碼範例**
@@ -181,17 +188,17 @@ if (search_referrer && search_referrer.valid) {
 
 <pre class="java"><code>
 var adobe_dil = DIL.create({partner:"<i>partner name</i>"}); 
-var search_referrer = DIL.tools.getSearchReferrer(document.referrer, {  
+var search_referrer = DIL.tools.getSearchReferrer(document.referrer, &lbrace;  
     hostPattern:/dogpile\./, 
     queryParam:"q" 
-}); 
+&rbrace;); 
  
-if (search_referrer && search_referrer.valid) { 
-  adobe_dil.api.signals({ 
+if (search_referrer && search_referrer.valid) &lbrace; 
+  adobe_dil.api.signals(&lbrace; 
     c_se : se.name, 
     c_st : se.keywords 
-  }).submit(); 
-}
+  &rbrace;).submit(); 
+&rbrace;
 </code></pre>
 
 ## 將索引鍵值對應到其他索引鍵 {#map-key-values}

@@ -8,8 +8,10 @@ uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 feature: Overlap Reports
 exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
 TQID: https://experienceleague.adobe.com/OfDw6FsS-MlFtwy-91jBH1O8d57aCvOap94ZK3zHVco
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 623
@@ -29,7 +31,7 @@ ht-degree: 1%
 
 ## 概述
 
-訊號是來自您網站的資訊，以[!DNL Audience Manager]索引鍵值配對[ （例如](../../reference/key-value-pairs-explained.md)等）的形式傳入`color=blue, price>100, gender=female`。
+訊號是來自您網站的資訊，以[!DNL Audience Manager]索引鍵值配對[&#x200B; （例如](../../reference/key-value-pairs-explained.md)等）的形式傳入`color=blue, price>100, gender=female`。
 
 未使用的訊號包含您收集但尚未對應至特徵的資料。 [!UICONTROL Unused Signals]報表會依日期、索引鍵、值和頻率計數，在表格中顯示資料。 任何傳入至[!DNL Audience Manager]的未對應訊號（一天內至少100次）都符合[!UICONTROL Unused Signals]報表的資格。
 

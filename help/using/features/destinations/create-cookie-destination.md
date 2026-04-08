@@ -7,9 +7,13 @@ title: 設定Cookie目的地
 feature: Destination Basics
 exl-id: 32b8de66-e12d-48ec-82cf-9b0d335ae834
 TQID: https://experienceleague.adobe.com/NelSsN2oH-jL166POOWAyx-HNPZgverTgKq4NhBBdzE
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: c814092e-2730-45e8-a12d-e084529f52cb
-subfeature_v2: id: c138d302-73f0-4186-93ea-10c4ba52f943id: e7029888-c8b0-46a7-849a-cf132a1559bf
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2:
+  - id: c138d302-73f0-4186-93ea-10c4ba52f943
+  - id: e7029888-c8b0-46a7-849a-cf132a1559bf
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 565
@@ -62,7 +66,7 @@ Cookie目的地會傳回資料，並將資料寫入使用者瀏覽器中的Cooki
 1. 為Cookie命名。 避免使用縮寫和特殊字元。
 1. 選擇資料格式選項。 這些選項可讓您為將區段資料傳送至目的地的機碼值組選擇分隔符號和分隔符號。 格式選項包括：
    * **單一索引鍵：**&#x200B;可讓您在索引鍵/值配對中設定索引鍵。 在下方的[!UICONTROL Segment Mappings]區段中選取區段後，您將設定值。
-   * **多重索引鍵：**可讓您設定索引鍵/值組的索引鍵和值。 在下面的「區段對應」區段中選取區段後，您會建立索引鍵/值組。
+   * **多重索引鍵：**&#x200B;可讓您設定索引鍵/值組的索引鍵和值。 在下面的「區段對應」區段中選取區段後，您會建立索引鍵/值組。
 如需這些資料元素的詳細資訊，請參閱[標準和序列索引鍵值配對](../../features/destinations/key-value-pairs.md)。
 1. 按一下 **[!UICONTROL Save]**。
 

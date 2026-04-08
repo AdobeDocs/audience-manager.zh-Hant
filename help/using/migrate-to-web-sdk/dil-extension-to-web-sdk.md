@@ -3,9 +3,14 @@ title: 從Audience Manager標籤擴充功能移轉至網路SDK標籤擴充功能
 description: 瞭解將Audience Manager的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能的步驟
 exl-id: 7f0486db-4511-4311-90df-290580fdcd78
 TQID: https://experienceleague.adobe.com/onqgwnCIZMdiZz6nGRWy7bpbXpMF1zizqyQOQjSkGTc
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 1309

@@ -7,9 +7,15 @@ title: Facebook WCA整合
 feature: Third-party Integration
 exl-id: edd06247-b46b-4851-ab71-8cc05a1d6d63
 TQID: https://experienceleague.adobe.com/vHNM6HEpL4efGeanvzjDaNfFPqaGwqy84lnvc21-ufA
-product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2: id: a8b0238e-1d43-4679-a3b4-5ba1bad83baaid: c814092e-2730-45e8-a12d-e084529f52cb
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
 source-wordcount: 808
@@ -39,7 +45,7 @@ ht-degree: 1%
 
 1. [!DNL Facebook Ad Account]
 2. [!DNL Audience Manager]個區段，已準備好指派給您的新[!DNL Facebook]目的地。 以下是[如何在](/help/using/features/segments/segment-builder.md) UI中建立區段[!DNL Audience Manager]。
-3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) 4.1.0或更新版本。 在此下載最新版本&#x200B;**[](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**。
+3. [!DNL Adobe Experience Platform Identity Service] ([!DNL ECID]) 4.1.0或更新版本。 在此下載最新版本&#x200B;**[&#128279;](https://github.com/Adobe-Marketing-Cloud/id-service/releases)**。
 4. [!DNL Audience Manager Data Integration Library] ([!DNL DIL]) 9.0或更新版本，可從&#x200B;**[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)**&#x200B;下載。 或者，如果您使用[伺服器端轉送(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)將資料匯入[!DNL Audience Manager]，則必須使用AppMeasurement 2.12或更新版本。 使用[!DNL AppMeasurement]Analytics代碼管理員[下載](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)。
 
 建議您使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)來安裝或升級步驟3與步驟4中的程式庫。
