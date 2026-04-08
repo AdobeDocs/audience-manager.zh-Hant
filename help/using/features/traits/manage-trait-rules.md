@@ -7,9 +7,12 @@ title: 管理特徵規則
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 feature: Traits
 exl-id: 4561b19a-bbb5-41ec-ac79-ab3e2ab75548
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/36XAqdCyrogL7J9J1Wv7ZgKMMD8lG7DwUy6aWWT5z-8
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: 678
 ht-degree: 0%
 
 ---
@@ -61,7 +64,7 @@ ht-degree: 0%
    >
    >[!DNL Boolean] [!UICONTROL OR]運運算元在群組&#x200B;*內的多個訊號*&#x200B;之間建立關係，且無法變更。
 
-1. 按一下&#x200B;**[!UICONTROL Add Rule]**。 已儲存的規則會顯示在資料輸入欄位上方的特徵工作區中。
+1. 按一下 **[!UICONTROL Add Rule]**。 已儲存的規則會顯示在資料輸入欄位上方的特徵工作區中。
 
 ### 範例 {#example-trait-rule}
 

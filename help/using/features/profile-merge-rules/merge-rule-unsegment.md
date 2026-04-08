@@ -7,9 +7,12 @@ title: 設定檔合併規則與裝置取消細分程式
 uuid: b61c6de3-5fe4-4892-a05a-96a4cb35af34
 feature: Profile Merge
 exl-id: ff3da607-5c25-45b2-ac27-071c22d518a0
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+TQID: https://experienceleague.adobe.com/xAMGTR-vAfeIqWTTu-J0xEGksW6IqKLOn-suIHYsbdU
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: 467
 ht-degree: 2%
 
 ---
@@ -44,7 +47,7 @@ ht-degree: 2%
 >[!NOTE]
 >
 >**100個區段評估與取消資格的裝置限制**。
->&#x200B;>透過使用裝置圖表的設定檔合併規則來評估區段時，Audience Manager可合併最多100部裝置。 Audience Manager會透過[已驗證的設定檔](../../reference/visitor-authentication-states.md) （跨裝置ID）評估目前裝置，以及最多99部連結至目前裝置的裝置。 如果系統發出取消細分訊號，則目前的裝置和其他裝置將會從目的地的區段中移除。
+>透過使用裝置圖表的設定檔合併規則來評估區段時，Audience Manager可合併最多100部裝置。 Audience Manager會透過[已驗證的設定檔](../../reference/visitor-authentication-states.md) （跨裝置ID）評估目前裝置，以及最多99部連結至目前裝置的裝置。 如果系統發出取消細分訊號，則目前的裝置和其他裝置將會從目的地的區段中移除。
 
 ![](assets/last-device-graph.png)
 

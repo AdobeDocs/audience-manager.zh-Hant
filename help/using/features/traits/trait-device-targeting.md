@@ -7,9 +7,15 @@ title: 使用平台層級索引鍵鎖定目標裝置
 uuid: bc048cc5-3df1-49bc-ac78-0ea5d7edd9cc
 feature: Traits
 exl-id: 85c848e0-a4cf-49b5-9fe9-56f8c565f665
-source-git-commit: b299783b993c5d4a1c7738eca82932c20f377ee7
+TQID: https://experienceleague.adobe.com/Pv9-MWpF5uPassf9VYTGgZwQ6gmnW8p9FSYmYxOPHEg
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: 264
 ht-degree: 1%
 
 ---
@@ -19,8 +25,8 @@ ht-degree: 1%
 >[!WARNING]
 >
 >Google已更新[!DNL Google Chrome]和所有[!DNL Chromium]型瀏覽器的功能，以將透過`User-Agent`標題收集的資訊減至最少。
->&#x200B;>自2023年3月起，Audience Manager運用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)支援這些更新。 若要繼續使用透過`User-Agent`標題提供的特徵資訊，您必須使用[網頁SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)並啟用[高平均資訊量使用者代理程式使用者端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=zh-Hant)。
->&#x200B;>[DIL](../../../using/dil/dil-overview.md)不支援這些更新，因此使用[!DNL DIL]的Audience Manager客戶將無法透過`User-Agent`標頭收集特徵資訊。
+>自2023年3月起，Audience Manager運用[Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)支援這些更新。 若要繼續使用透過`User-Agent`標題提供的特徵資訊，您必須使用[網頁SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en)並啟用[高平均資訊量使用者代理程式使用者端提示](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en)。
+>[DIL](../../../using/dil/dil-overview.md)不支援這些更新，因此使用[!DNL DIL]的Audience Manager客戶將無法透過`User-Agent`標頭收集特徵資訊。
 
 說明在您的Audience Manager帳戶中，透過所有屬性的裝置相關變數，可用來鎖定使用者的常用平台層級索引鍵值配對。
 

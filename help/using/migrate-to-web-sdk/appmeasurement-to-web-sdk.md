@@ -2,13 +2,27 @@
 title: 將您的Audience Manager資料收集程式庫從AppMeasurement JavaScript程式庫更新為Web SDK JavaScript程式庫。
 description: 瞭解將Audience Manager的資料收集程式庫從AppMeasurement JavaScript程式庫更新為Web SDK JavaScript程式庫的步驟。
 exl-id: 9c771d6c-4cfa-4929-9a79-881d4e8643e4
-source-git-commit: f180e423d4bdf5535d8dcc000e1d0f908bc54d7b
+TQID: https://experienceleague.adobe.com/mxctgUDMvqrSgS0PLsQ7GTwiFMIogo2nL-yZZsnbS40
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2:
+  - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: 3385
 ht-degree: 0%
 
 ---
-
 
 # 將您的Audience Manager資料收集程式庫從AppMeasurement更新為Web SDK
 
@@ -21,7 +35,7 @@ ht-degree: 0%
 | 您現有的資料收集方法 | 網頁SDK移轉指示 |
 |---------|----------|
 | 具有AudienceManagement模組的[!DNL AppMeasurement] JavaScript資料庫 | 請依照本指南的指示操作。 |
-| [!DNL Audience Manager] [標籤延伸模組](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
+| [!DNL Audience Manager] [標籤延伸模組](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
 | [!DNL AppMeasurement] JavaScript資料庫+獨立[!DNL Audience Manager] [DIL資料庫](../dil/dil-overview.md) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
 
 ## 移轉概述 {#overview}
@@ -34,13 +48,13 @@ ht-degree: 0%
 
 ## 伺服器端轉送(SSF)與Web SDK資料流程 {#data-flows}
 
-瞭解Analytics與Audience Manager在移至Web SDK (和Edge Network)時的資料流程差異，對於下列指示至關重要。
+瞭解Analytics與Audience Manager在移至Web SDK （和Edge Network）時的資料流程差異，對於下列指示至關重要。
 
 透過伺服器端轉送，Analytics區域資料收集節點會收集資料，將其轉換為Audience Manager接受的訊號，傳送至Audience Manager，並將Audience Manager回應傳回至頁面。 [!DNL AudienceManagement]程式庫中的[!DNL AppMeasurement]模組接著會處理回應（例如，卸除Cookie、傳送URL目的地）。 此程式稱為伺服器端轉送，因為Analytics會使用Adobe伺服器將資料轉送至Audience Manager。
 
 透過Web SDK，Edge Network會以不同動作將資料傳送至Analytics和Audience Manager。 Web SDK是單一資料庫，可將資料傳送至所有解決方案，而Edge Network會將與解決方案無關的資料點轉換為解決方案專用格式。
 
-在這個新的資料流程中，所有資料都會傳送到Edge Network [資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)，您可以[設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)，視需要傳送資料到Adobe解決方案。 若為Audience Manager，在資料流上啟用Audience Manager服務會將[!DNL XDM]和Analytics資料轉換為Audience Manager接受的訊號。 Edge Network也會將Audience Manager回應傳回至頁面，其中Web SDK會處理回應，類似於[!DNL AppMeasurement]和[!DNL AudienceManagement]模組的處理方式。
+在這個新的資料流程中，所有資料都會傳送到Edge Network [資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)，您可以[設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)，視需要傳送資料到Adobe解決方案。 若為Audience Manager，在資料流上啟用Audience Manager服務會將[!DNL XDM]和Analytics資料轉換為Audience Manager接受的訊號。 Edge Network也會將Audience Manager回應傳回至頁面，其中Web SDK會處理回應，類似於[!DNL AppMeasurement]和[!DNL AudienceManagement]模組的處理方式。
 
 ## 標籤與非標籤移轉 {#tags-vs-non-tags}
 
@@ -50,7 +64,7 @@ ht-degree: 0%
 
 ## XDM和`data.__adobe.`節點 {#xdm-data-nodes}
 
-[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的主要功能之一，是將資料傳送至[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/home)。 為達成此目的，同時仍收集其他Experience Cloud解決方案的資料，而不需要完全重新實作，解決方案特定資料會在資料收集伺服器呼叫中加以區隔。 此呼叫使用名為[體驗資料模型(XDM)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)的標準化JSON結構描述
+[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的主要功能之一，是將資料傳送至[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/home)。 為達成此目的，同時仍收集其他Experience Cloud解決方案的資料，而不需要完全重新實作，解決方案特定資料會在資料收集伺服器呼叫中加以區隔。 此呼叫使用名為[體驗資料模型(XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)的標準化JSON結構描述
 
 與解決方案無關的元素（例如關於瀏覽器和裝置的資訊），會以預先確定的XDM結構傳送至Edge Network。 Edge Network會將此資料轉換為解決方案專用格式。 不過，Target、Analytics和Audience Manager專屬的資料會儲存在XDM裝載內的專用`data.__adobe`節點中。
 
@@ -59,7 +73,7 @@ ht-degree: 0%
 * Analytics變數`s.eVar1`在XDM承載中呈現為`data.__adobe.analytics.evar1`。
 * 與客戶忠誠度狀態相關的Target引數會儲存為`data.__adobe.target.loyaltyStatus`。
 
-`__adobe`節點中的資料會傳送至個別解決方案(例如Analytics和Audience Manager)，而不會傳送至Experience Platform，即使資料流中已啟用Experience Platform服務亦然。 這表示您可以保留Analytics和Audience Manager的目前設定，同時還能彈性地將任何必要的資料元素對應到XDM結構描述元素，以在Experience Platform中使用[資料收集的資料準備](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/data-prep)的即時使用案例。
+`__adobe`節點中的資料會傳送至個別解決方案（例如Analytics和Audience Manager），而不會傳送至Experience Platform，即使資料流中已啟用Experience Platform服務亦然。 這表示您可以保留Analytics和Audience Manager的目前設定，同時還能彈性地將任何必要的資料元素對應到XDM結構描述元素，以在Experience Platform中使用[資料收集的資料準備](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/data-prep)的即時使用案例。
 
 例如，在結帳期間用於報告購物車內容的Analytics `s.products`字串仍可以原始格式傳送給Analytics和Audience Manager。 同時，您可以使用此字串的元素，針對Experience Platform使用案例建立更直覺式的XDM購物車結構描述。
 

@@ -7,9 +7,15 @@ title: 趨勢分析和大量分析報表
 uuid: 5d124d80-5f54-4970-92cd-2c8eba42efca
 feature: Audience Optimization Reports
 exl-id: f8e6c7a4-c4f8-465f-a32c-681a07e6e6f5
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+TQID: https://experienceleague.adobe.com/Zf9sEDyjdYOQbb3fterC5AIJcWXsrfhG0fHlvFM3XAk
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: 169
 ht-degree: 0%
 
 ---

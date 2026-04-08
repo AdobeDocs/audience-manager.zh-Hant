@@ -8,9 +8,21 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/NL19RzO-EfALqH0Exkt5PZeBO-mZXztl4ioiJRp-g4g
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: 1601
 ht-degree: 2%
 
 ---
@@ -32,7 +44,7 @@ ht-degree: 2%
 若要開始使用[!UICONTROL Actionable Log Files]，您必須將記錄檔資料匯入[!DNL Audience Manager]。 以下連結將幫助您快速入門：
 
 * 如需[!UICONTROL Google Campaign Manager]記錄檔，請參閱[將Google Campaign Manager資料檔案匯入Audience Manager](../../reporting/audience-optimization-reports/aor-advertisers/import-dcm.md) *及*，請聯絡您的[!DNL Audience Manager]顧問。
-* 如需[!UICONTROL Google Ad Manager] (先前為Google DFP)記錄檔，請參閱[將Google Ad Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *和*，請聯絡您的[!DNL Audience Manager]顧問。
+* 如需[!UICONTROL Google Ad Manager] （先前為Google DFP）記錄檔，請參閱[將Google Ad Manager資料檔案匯入Audience Manager](/help/using/reporting/audience-optimization-reports/aor-publishers/import-dfp.md) *和*，請聯絡您的[!DNL Audience Manager]顧問。
 * 如需其他廣告伺服器記錄檔，請參閱[資料和中繼資料檔案](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-files-intro.md) *和*，請聯絡您的[!DNL Audience Manager]顧問。
 
 如果您已將記錄檔資料匯入[!DNL Audience Manager]，請要求您的[!DNL Audience Manager]顧問或[客戶服務](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)為您啟用[!UICONTROL Actionable Log Files]。
@@ -41,7 +53,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 

@@ -8,9 +8,15 @@ title: 使用通用分類法將特徵分類
 uuid: 2e177344-07d9-40a7-8c99-c6c6518b9d97
 feature: Traits
 exl-id: 59000dc7-66cf-4e7e-8e9b-9d48157203bd
-source-git-commit: fc26861e4a53abc57f8814abf823a51894fb6147
+TQID: https://experienceleague.adobe.com/oLqcNUv0yFp06VQs4tJJF-k6aTfS-LdxqyjF4-agMDs
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+topic_v2:
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: 366
 ht-degree: 0%
 
 ---
@@ -39,7 +45,7 @@ ht-degree: 0%
 
 ## 分類資料類別中的特徵
 
-您在[!UICONTROL Add New Trait Wizard] (位於&#x200B;***[!UICONTROL Audience Data > Traits]***)中建立或編輯特徵時，指派分類法分類。 如需詳細資訊，請參閱有關建立特徵[的](../../features/traits/create-onboarded-rule-based-traits.md)檔案。
+您在[!UICONTROL Add New Trait Wizard] （位於&#x200B;***[!UICONTROL Audience Data > Traits]***）中建立或編輯特徵時，指派分類法分類。 如需詳細資訊，請參閱有關建立特徵[的](../../features/traits/create-onboarded-rule-based-traits.md)檔案。
 
 ## 使用分類法：其他考量事項
 

@@ -7,9 +7,26 @@ title: REST API 快速入門
 uuid: af0e527e-6eec-449c-9709-f90e57cd188d
 feature: API
 exl-id: f7d5e52d-ad21-4020-a299-d440f954c51a
-source-git-commit: 622664170f2a76039bcf2333bde43ce9e60b6af2
+TQID: https://experienceleague.adobe.com/9-lmPI7-mjYo3AUgFi7L3kB-F0sZsOOVPI7r-sS21Mk
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+  - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2:
+  - id: c2c33729-f309-4bc2-92ba-87c475259df3
+  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+  - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: 2563
 ht-degree: 1%
 
 ---
@@ -29,12 +46,12 @@ ht-degree: 1%
 * **存取：**&#x200B;您的[!DNL Audience Manager]顧問會提供您使用者端ID和金鑰，讓您提出[!DNL API]個請求。
 * **檔案和程式碼範例：**&#x200B;斜體&#x200B;*的文字*&#x200B;代表您在製作或接收[!DNL API]資料時提供或傳入的變數。 將&#x200B;*斜體的*&#x200B;文字取代為您自己的程式碼、引數或其他必要資訊。
 
-## 驗證 {#authentication}
+## Authentication {#authentication}
 
 [!DNL Audience Manager] [!DNL REST APIs]支援三種驗證方法。
 
-* [!BADGE 建議]{type=positive} [OAuth伺服器對伺服器驗證](#oauth-adobe-developer) (使用[Adobe開發人員主控台](https://www.adobe.io/))。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 其中包含所有Adobe產品的[API](https://developer.adobe.com/apis/)。 這是設定及使用[!DNL Adobe] [!DNL APIs]的建議方式。 在Adobe開發人員檔案中進一步瞭解[OAuth伺服器對伺服器驗證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)。
-* [!BADGE 已棄用]{type=negative} [JWT （服務帳戶）驗證](#jwt) (使用[Adobe開發人員主控台](https://www.adobe.io/))。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 其中包含所有Adobe產品的[API](https://developer.adobe.com/apis/)。
+* [!BADGE 建議]{type=positive} [OAuth伺服器對伺服器驗證](#oauth-adobe-developer) （使用[Adobe開發人員主控台](https://www.adobe.io/)）。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 其中包含所有Adobe產品的[API](https://developer.adobe.com/apis/)。 這是設定及使用[!DNL Adobe] [!DNL APIs]的建議方式。 在Adobe開發人員檔案中進一步瞭解[OAuth伺服器對伺服器驗證](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)。
+* [!BADGE 已棄用]{type=negative} [JWT （服務帳戶）驗證](#jwt) （使用[Adobe開發人員主控台](https://www.adobe.io/)）。 [!DNL Adobe Developer]是Adobe的開發人員生態系統和社群。 其中包含所有Adobe產品的[API](https://developer.adobe.com/apis/)。
 * [!BADGE 已棄用]{type=negative} [舊版OAuth驗證](#oauth-deprecated)。 雖然此方法已過時，但擁有現有[!DNL OAuth]整合的客戶可以繼續使用此方法。
 
 >[!IMPORTANT]
@@ -57,7 +74,7 @@ ht-degree: 1%
 
 設定[!DNL OAuth Server-to-Server]驗證之前，請確定您擁有[Adobe Developer](https://developer.adobe.com/console/home)中[Adobe Developer Console](https://developer.adobe.com/)的存取權。 如需存取要求，請聯絡您的組織管理員。
 
-### 驗證 {#oauth}
+### Authentication {#oauth}
 
 請依照下列步驟，使用[!DNL OAuth Server-to-Server]設定[!DNL Adobe Developer]驗證：
 
@@ -225,7 +242,7 @@ curl -X 'GET' \
 
 設定[!DNL JWT]驗證之前，請確定您擁有[Adobe Developer](https://console.adobe.io/)中[Adobe Developer Console](https://www.adobe.io/)的存取權。 如需存取要求，請聯絡您的組織管理員。
 
-### 驗證 {#auth}
+### Authentication {#auth}
 
 請依照下列步驟，使用[!DNL JWT (Service Account)]設定[!DNL Adobe Developer]驗證：
 

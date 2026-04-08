@@ -6,9 +6,17 @@ solution: Audience Manager
 title: 設定Cookie目的地
 feature: Destination Basics
 exl-id: 32b8de66-e12d-48ec-82cf-9b0d335ae834
-source-git-commit: 4d3c859cc4dc5294286680b0e63c287e0409f7fd
+TQID: https://experienceleague.adobe.com/NelSsN2oH-jL166POOWAyx-HNPZgverTgKq4NhBBdzE
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2:
+  - id: c814092e-2730-45e8-a12d-e084529f52cb
+subfeature_v2:
+  - id: c138d302-73f0-4186-93ea-10c4ba52f943
+  - id: e7029888-c8b0-46a7-849a-cf132a1559bf
+source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: 565
 ht-degree: 1%
 
 ---
@@ -29,7 +37,7 @@ Cookie目的地會傳回資料，並將資料寫入使用者瀏覽器中的Cooki
 2. 為目的地命名。 避免使用縮寫和特殊字元。
 3. *（選擇性）*&#x200B;說明目的地。 簡潔的說明是定義或提供更多目的地相關資訊的有效方式。
 4. 在&#x200B;**[!UICONTROL Category]**&#x200B;清單中選擇&#x200B;**[!UICONTROL Custom]**。
-5. 在&#x200B;**[!UICONTROL Environment]**&#x200B;清單中，選取&#x200B;**[!UICONTROL Browser]**。 您無法為原生行動環境(例如Android或iOS應用程式)設定Cookie目的地。
+5. 在&#x200B;**[!UICONTROL Environment]**&#x200B;清單中，選取&#x200B;**[!UICONTROL Browser]**。 您無法為原生行動環境（例如Android或iOS應用程式）設定Cookie目的地。
 6. 在&#x200B;**[!UICONTROL Type]**&#x200B;清單中，按一下&#x200B;**[!UICONTROL Cookie]**。
 7. *（選擇性）*&#x200B;選取&#x200B;**[!UICONTROL Auto-fill Destination Mapping]**。 選項包括:
    * **[!UICONTROL Segment ID]**：自動新增區段ID並傳送至目的地。
