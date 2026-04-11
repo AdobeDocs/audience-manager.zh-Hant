@@ -247,4 +247,4 @@ Audience Manager使用Data Integration Library ([!DNL DIL])接收對象資料。
 
 產品實作程式完成後，客戶經理會提供持續支援和諮詢服務。 您可以預期定期與客戶經理開會。 這些會議可確保您從Audience Manager中獲得最大的使用量和價值。
 
-請連絡我們[這裡](https://www.adobe.com/products/audiencemanager.html)以取得詳細資訊，並開始使用Audience Manager。
+請連絡我們[這裡](https://www.adobe.com/tw/products/audiencemanager.html)以取得詳細資訊，並開始使用Audience Manager。
