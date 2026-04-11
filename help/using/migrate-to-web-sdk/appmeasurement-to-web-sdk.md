@@ -35,7 +35,7 @@ ht-degree: 0%
 | 您現有的資料收集方法 | 網頁SDK移轉指示 |
 |---------|----------|
 | 具有AudienceManagement模組的[!DNL AppMeasurement] JavaScript資料庫 | 請依照本指南的指示操作。 |
-| [!DNL Audience Manager] [標籤延伸模組](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
+| [!DNL Audience Manager] [標籤延伸模組](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/audience-manager/overview) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
 | [!DNL AppMeasurement] JavaScript資料庫+獨立[!DNL Audience Manager] [DIL資料庫](../dil/dil-overview.md) | 依照[中的指示將您的資料收集程式庫從Audience Manager標籤擴充功能更新為Web SDK標籤擴充功能](dil-extension-to-web-sdk.md)。 |
 
 ## 移轉概述 {#overview}
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 透過Web SDK，Edge Network會以不同動作將資料傳送至Analytics和Audience Manager。 Web SDK是單一資料庫，可將資料傳送至所有解決方案，而Edge Network會將與解決方案無關的資料點轉換為解決方案專用格式。
 
-在這個新的資料流程中，所有資料都會傳送到Edge Network [資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)，您可以[設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)，視需要傳送資料到Adobe解決方案。 若為Audience Manager，在資料流上啟用Audience Manager服務會將[!DNL XDM]和Analytics資料轉換為Audience Manager接受的訊號。 Edge Network也會將Audience Manager回應傳回至頁面，其中Web SDK會處理回應，類似於[!DNL AppMeasurement]和[!DNL AudienceManagement]模組的處理方式。
+在這個新的資料流程中，所有資料都會傳送到Edge Network [資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)，您可以[設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)，視需要傳送資料到Adobe解決方案。 若為Audience Manager，在資料流上啟用Audience Manager服務會將[!DNL XDM]和Analytics資料轉換為Audience Manager接受的訊號。 Edge Network也會將Audience Manager回應傳回至頁面，其中Web SDK會處理回應，類似於[!DNL AppMeasurement]和[!DNL AudienceManagement]模組的處理方式。
 
 ## 標籤與非標籤移轉 {#tags-vs-non-tags}
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## XDM和`data.__adobe.`節點 {#xdm-data-nodes}
 
-[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的主要功能之一，是將資料傳送至[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/home)。 為達成此目的，同時仍收集其他Experience Cloud解決方案的資料，而不需要完全重新實作，解決方案特定資料會在資料收集伺服器呼叫中加以區隔。 此呼叫使用名為[體驗資料模型(XDM)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)的標準化JSON結構描述
+[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的主要功能之一，是將資料傳送至[Real-Time Customer Data Platform (RTCDP)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/home)。 為達成此目的，同時仍收集其他Experience Cloud解決方案的資料，而不需要完全重新實作，解決方案特定資料會在資料收集伺服器呼叫中加以區隔。 此呼叫使用名為[體驗資料模型(XDM)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)的標準化JSON結構描述
 
 與解決方案無關的元素（例如關於瀏覽器和裝置的資訊），會以預先確定的XDM結構傳送至Edge Network。 Edge Network會將此資料轉換為解決方案專用格式。 不過，Target、Analytics和Audience Manager專屬的資料會儲存在XDM裝載內的專用`data.__adobe`節點中。
 
