@@ -8,21 +8,14 @@ uuid: 3d8bd764-a9da-40f1-8794-54304457bb9a
 feature: Reporting Reference
 exl-id: 0b7f9423-0859-4fa8-926b-e4858eed2294
 TQID: https://experienceleague.adobe.com/VGqto9hCroCmKygXvwZNOiAYnsV9CmdPzAoEvKnkV90
-product_v2:
-  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2:
-  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
-  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
-subfeature_v2:
-  - id: a2c6d65b-635d-4454-a9cc-9771ed501bb4
-  - id: a49258d4-867f-4130-b875-d72c001bdf6c
-  - id: ec0be1ae-7ea9-4f62-869a-963a97d2edc1
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+subfeature_v2: id: a2c6d65b-635d-4454-a9cc-9771ed501bb4id: a49258d4-867f-4130-b875-d72c001bdf6cid: ec0be1ae-7ea9-4f62-869a-963a97d2edc1
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 0%
+source-wordcount: 451
+ht-degree: 1%
 
 ---
 
@@ -99,5 +92,4 @@ Reports that use Minhash sampling methodology:
 | 統計抽樣 | Minhash取樣方法 |
 |--- |--- |
 | [可定址的受眾](../features/addressable-audiences.md)資料（客戶和區段層級資料）。 | [重疊報表](../reporting/dynamic-reports/dynamic-reports.md#interactive-and-overlap-reports) （特徵對特徵、區段對特徵、區段對區段） |
-| [的](../features/profile-merge-rules/profile-link-metrics.md#merge-rule-metrics)總裝置[!UICONTROL Profile Merge Rule]量度。 | [特徵建議](/help/using/features/segments/trait-recommendations.md) |
 | [Data Explorer](../features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)在[!UICONTROL Search]索引標籤和任何[!UICONTROL Saved Searches]中使用抽樣資料 | [Audience Marketplace Recommendations](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#finding-similar-traits) |

@@ -9,23 +9,14 @@ uuid: da5f5089-24a8-4455-88a6-eb62d83939d2
 feature: Overview
 exl-id: b5884d26-0be1-4eaa-99a1-7247942bf6c9
 TQID: https://experienceleague.adobe.com/gsJ4qXlNDpfWmTq0jjmtjfUWI60yRr7uBTxZjsF-pQE
-product_v2:
-  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2:
-  - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
-  - id: c814092e-2730-45e8-a12d-e084529f52cb
-  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
-subfeature_v2:
-  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
-  - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: baaa0dd2-d27e-4921-aae3-7888623a5fa5id: c814092e-2730-45e8-a12d-e084529f52cbid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: 574
-ht-degree: 87%
+source-wordcount: 428
+ht-degree: 75%
 
 ---
 
@@ -43,21 +34,21 @@ faq_features_functions.xml
 
 **什麼是組織 ID？在哪裡可找到它？**
 
-*`Organization ID`* 是不重複 ID，可向 [!DNL Audience Manager] 與 [!DNL Adobe Experience Cloud] 識別您的組織。它包含區分大小寫的 24 個英數字元字串，後面接著 [!UICONTROL @AdobeOrg]。
+*`Organization ID`* 是不重複 ID，可向 [!DNL Audience Manager] 與 [!DNL Adobe Experience Cloud] 識別您的組織。 它包含區分大小寫的 24 個英數字元字串，後面接著 [!UICONTROL @AdobeOrg]。
 
 例如，*`Organization ID`* 看起來像這樣：`1FD6776A524453CC0A490D44@AdobeOrg`。
 
-*`Organization ID`* 用於 Audience Manager 的 [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)，以及其他 [!DNL Experience Cloud] 解決方案。擁有管理員權限的使用者可以在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。請參閱[管理 - 使用者管理常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hant)。
+*`Organization ID`* 用於 Audience Manager 的 [DIL](../dil/dil-overview.md) API、[Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)，以及其他 [!DNL Experience Cloud] 解決方案。 擁有管理員權限的使用者可以在 [!DNL Adobe Admin Console] 上找到 *`Organization ID`*。 請參閱[管理 - 使用者管理常見問題集](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。
 
  
 
 **我可以建立大量特徵或目的地嗎？**
 
-是。請參閱[大量管理工具](../reference/bulk-management-tools/bulk-management-intro.md)。
+是。 請參閱[大量管理工具](../reference/bulk-management-tools/bulk-management-intro.md)。
 
 >[!NOTE]
 >
->[!DNL Audience Manager] *不*&#x200B;支援 [!UICONTROL Bulk Management Tools] 工具。之所以提供是出於便利性和禮貌。若要進行大量變更，建議您改用 [Audience Manager API](../api/api.md)。
+>[!DNL Audience Manager] *不*&#x200B;支援 [!UICONTROL Bulk Management Tools] 工具。 之所以提供是出於便利性和禮貌。 若要進行大量變更，建議您改用 [Audience Manager API](../api/api.md)。
 
  
 
@@ -69,44 +60,22 @@ faq_features_functions.xml
 
 **[!DNL Audience Manager] 可以減少對第三方標籤或像素的需求，並改善頁面載入時間嗎？**
 
-如果 [!DNL Audience Manager] 已與您的第三方資料合作夥伴整合，您可以對 [!DNL Audience Manager] 發出伺服器對伺服器 ID 呼叫，取代其像素和標籤。在這種情況下，當我們第一次看到某個使用者，[!DNL Audience Manager] 會引發單一 ID 呼叫，並將該資訊與您的第三方合作夥伴同步。如此一來，您就不需要從每個頁面發出多個像素呼叫。減少像素呼叫可改善頁面載入時間。
+如果 [!DNL Audience Manager] 已與您的第三方資料合作夥伴整合，您可以對 [!DNL Audience Manager] 發出伺服器對伺服器 ID 呼叫，取代其像素和標籤。 在這種情況下，當我們第一次看到某個使用者，[!DNL Audience Manager] 會引發單一 ID 呼叫，並將該資訊與您的第三方合作夥伴同步。 如此一來，您就不需要從每個頁面發出多個像素呼叫。 減少像素呼叫可改善頁面載入時間。
 
  
 
-**我已訂閱資料摘要。資料會儲存在哪裡？**
+**我已訂閱資料摘要。 資料會儲存在哪裡？**
 
-您的資料摘要和摘要中包含的所有特徵，會在 [!DNL Audience Manager] 中顯示為子檔案夾和特徵。前往 **[!UICONTROL Audience Data > Traits]** 並展開 [!UICONTROL 3rd-Party Data] 資料夾來檢視您的特徵，或使用此資料建立區段和模型。
+您的資料摘要和摘要中包含的所有特徵，會在 [!DNL Audience Manager] 中顯示為子檔案夾和特徵。 前往 **[!UICONTROL Audience Data > Traits]** 並展開 [!UICONTROL 3rd-Party Data] 資料夾來檢視您的特徵，或使用此資料建立區段和模型。
 
  
 
 **什麼是 [!UICONTROL Tag Insertion Manager (TIM)]？**
 
-Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Tags] 取代。如需詳細資訊，請參閱[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)。
-
- 
-
-**演算法模型與特徵建議之間有何差異？分別應在何時使用？**
-
-**演算法模型**
-
-演算法模型不僅可找出最具影響力的特徵，還會根據這些特徵對使用者進行評分，並為每位使用者指派個別的分數。接著您可建立演算法特徵，來鎖定您的使用者。在特徵產生器中，您可以透過精確度和觸及控制功能，指定哪些使用者擁有您想鎖定的具影響力特徵。
-
-演算法模型可讓您選取不同精確度等級的使用者，並在 Audience Lab 中測試哪一組使用者轉換效果較佳。請參閱[在 Audience Lab 中比較模型](../features/audience-lab/audience-lab-use-cases.md#compare-models)中的詳細使用案例。
-
-在演算模型中，模型每 8 天會執行一次，並重新整理符合演算法特徵的使用者。
-
-**特徵建議**
-
-特徵建議可快速深入分析有哪些其他特徵與您在區段中所使用的特徵相似。
-
-您應在下列情況下使用特徵建議：
-
-* 您在建立區段時需要快速的深入分析；
-* 您正使用細分群體進行簡短的行銷活動，或想要快速隱藏轉換的客群；
-* 您正嘗試最大程度提高觸及率。
+Audience Manager 使用 [!UICONTROL Tag Insertion Manager] (TIM) 來建立和管理 [!UICONTROL data collection code (DIL)]。 此功能已淘汰，並前後以 [!UICONTROL Dynamic Tag Manager (DTM)] 和 [!DNL Adobe Experience Platform Tags] 取代。 如需詳細資訊，請參閱[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
  
 
 **Adobe Analytics 和 Audience Manager 區段之間是否有任何差異？**
 
-有，請參閱[瞭解 Analytics 和 Audience Manager 中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hant)，深入瞭解差異。
+有，請參閱[瞭解 Analytics 和 Audience Manager 中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)，深入瞭解差異。
