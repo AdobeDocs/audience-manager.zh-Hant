@@ -1,5 +1,5 @@
 ---
-description: Audience Manager 提供領先業界的線上受眾資料管理服務。我們的產品和服務提供數位廣告商和發佈商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
+description: Audience Manager 提供領先業界的線上受眾資料管理服務。 我們的產品和服務提供數位廣告商和發佈商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
 seo-description: Technical documentation and self help for Audience Manager (AAM). AAM provides industry-leading services for online audience data management, and give digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 seo-title: Adobe Audience Manager Product Technical Documentation
 solution: Audience Manager
@@ -30,27 +30,27 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: 547
-ht-degree: 92%
+source-wordcount: 632
+ht-degree: 84%
 
 ---
 
 # Audience Manager 指南 {#audience-manager-product-documentation}
 
-Audience Manager 為領先業界的線上受眾資料管理服務，本技術文件指南針對 Audience Manager 提供自助協助。我們的產品和服務提供數位廣告商和發佈商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
+Audience Manager 為領先業界的線上受眾資料管理服務，本技術文件指南針對 Audience Manager 提供自助協助。 我們的產品和服務提供數位廣告商和發佈商所需的工具，可用來控制並運用其資料資產以協助推動銷售佳績。
 
 ## 使用本指南
 
 * 在&#x200B;**左側導覽**&#x200B;中依主題和子主題探索內容。
 * 如果您知道要尋找什麼，請使用頁面頂端的&#x200B;**搜尋**&#x200B;欄位。
-* 使用頁面右上角的&#x200B;**記錄問題**&#x200B;按鈕，指出任何不正確或過時的文件。請參閱[共同作業指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)概述，瞭解如何開始貢獻內容。
+* 使用頁面右上角的&#x200B;**記錄問題**&#x200B;按鈕，指出任何不正確或過時的文件。 請參閱[共同作業指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)概述，瞭解如何開始貢獻內容。
 
 ## 如何閱讀本頁面
 
-* 首先，請探索 **Audience Manager 主要功能**&#x200B;區段以取得問題快照，方便 Audience Manager 協助您解決問題。也請閱讀 [Audience Manager 概述](/help/using/overview/aam-overview.md)，然後再返回本頁。
-* 接下來，請閱讀 **Audience Manager 快速入門**，熟悉 Audience Manager 概念。另外請務必檢閱商業與技術實作指南。
+* 首先，請探索 **Audience Manager 主要功能**&#x200B;區段以取得問題快照，方便 Audience Manager 協助您解決問題。 也請閱讀 [Audience Manager 概述](/help/using/overview/aam-overview.md)，然後再返回本頁。
+* 接下來，請閱讀 **Audience Manager 快速入門**，熟悉 Audience Manager 概念。 另外請務必檢閱商業與技術實作指南。
 * 請參閱最新的 Audience Manager 發行說明，並閱讀&#x200B;**發行說明和最新功能**&#x200B;區段中的最新功能相關內容。
 * 最後，您可以在&#x200B;**學習中心 - 建議的 Audience Manager 和 Experience Cloud 資源**&#x200B;區段中，探索更多 Experience Cloud 資源，例如論壇、影片教學課程、面對面和線上培訓課程。
 
@@ -194,7 +194,6 @@ See the latest [Experience Cloud Release Notes](https://experienceleague.adobe.c
 Read about the latest Audience Manager features:
 * [Activity Usage Reporting](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/administration/activity-usage-reporting.html?lang=zh-Hant)
 * [California Consumer Privacy Act (CCPA) Support and Privacy Documentation Overhaul](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/data-privacy.html?lang=zh-Hant)
-* [Intelligent Recommendations for Audience Marketplace Data, powered by Adobe Sensei](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/trait-recommendations.html?lang=zh-Hant)
 * [Profile Merge Rules Enhancements](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-overview.html?lang=zh-Hant)
 * [Bulk Management Tools Update](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/bulk-management-tools/bulk-management-intro.html?lang=zh-Hant)
 

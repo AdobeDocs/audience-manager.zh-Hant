@@ -19,10 +19,10 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: 724
-ht-degree: 1%
+source-wordcount: 729
+ht-degree: 2%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 [!UICONTROL Marketplace]清單包含您可以排序和搜尋的資訊，以尋找適合您的資料摘要。 [!UICONTROL Marketplace]購買者清單中的專案包括：
 
 * **[!UICONTROL Search]**：依名稱或文字說明尋找資料摘要。
-* **[!UICONTROL Similar Traits]**：顯示資料摘要中類似[!UICONTROL traits]的數字。 當您在[!UICONTROL trait]區段中輸入[!UICONTROL segment]或&#x200B;**[!UICONTROL Similarity To]**&#x200B;以篩選依據後，此欄會顯示出來。
+* **[!UICONTROL Similar Traits]**：顯示資料摘要中類似[!UICONTROL traits]的數字。 當您在&#x200B;**[!UICONTROL Similarity To]**&#x200B;區段中輸入[!UICONTROL trait]或[!UICONTROL segment]以篩選依據後，此欄會顯示出來。
 * **[!UICONTROL Name]**：資料摘要的名稱。
 * **[!UICONTROL Description]**：資料摘要內容的相關資訊。
 * **[!UICONTROL Provider]**：資料提供者的名稱。
@@ -67,7 +67,7 @@ ht-degree: 1%
 若要輕鬆尋找符合您需求的最佳資料摘要，請使用[!UICONTROL Marketplace]頁面左側的下列篩選器：
 
 * **[!UICONTROL Similarity To]**：根據資料摘要與您所選[!UICONTROL trait]或[!UICONTROL segment]的相似性來篩選資料摘要。 輸入[!UICONTROL trait]或區段進行比較時，您可以使用[!UICONTROL trait]或[!UICONTROL segment] ID，或它們的個別名稱。
-* **[!UICONTROL Similarity Cutoff]**：拖曳滑桿以根據資料摘要的[!UICONTROL traits]與您選取的[!UICONTROL trait]或[!UICONTROL segment]的相似性來篩選資料摘要。 若要深入瞭解[!UICONTROL trait]相似度分數，請參閱[特徵相似度分數](../../segments/trait-recommendations.md#trait-similarity-score)
+* **[!UICONTROL Similarity Cutoff]**：拖曳滑桿以根據資料摘要的[!UICONTROL traits]與您選取的[!UICONTROL trait]或[!UICONTROL segment]的相似性來篩選資料摘要。
 * **[!UICONTROL Subscription Status]**：根據您的訂閱狀態篩選資料摘要。
 * **[!UICONTROL Plan Use Case]**：根據資料摘要的支援使用案例來篩選資料摘要： **[!UICONTROL Activation]**、**[!UICONTROL Segments and Overlap]**&#x200B;和&#x200B;**[!UICONTROL Modelling]**。
 * **[!UICONTROL Plan Unit]**：根據資料摘要的定價型別篩選資料摘要。

@@ -3,12 +3,12 @@ product: audience manager
 solution: Audience Manager
 audience: end-user
 user-guide-title: Audience Manager 使用手冊
-user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。您也可以找到有關如何將目標定位廣告和內容提供給適當客群的詳細資料。
+user-guide-description: 了解如何使用 Adobe Audience Manager 來收集網站訪客的商業相關資訊，以及建立可行銷的客戶細分。 您也可以找到有關如何將目標定位廣告和內容提供給適當客群的詳細資料。
 feature-set: Audience Manager
-source-git-commit: 2d694db141b311977e84cefc48ce14921c87ccc3
+source-git-commit: f2fdbb191013b0bcb9bdab0529e3b7f3c872fd54
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 17%
+source-wordcount: '1982'
+ht-degree: 16%
 
 ---
 
@@ -61,32 +61,32 @@ ht-degree: 17%
       + [Audience Lab概述](features/audience-lab/audience-lab.md)
       + [管理測試群組](features/audience-lab/audience-lab-manage-test-groups.md)
       + [測試群組資訊](features/audience-lab/audience-lab-information-view.md)
-      + [測試群組報表](features/audience-lab/audience-lab-reporting-view.md)
-      + [Audience Lab使用案例](features/audience-lab/audience-lab-use-cases.md)
-      + [Audience Lab進階功能](features/audience-lab/audience-lab-advanced.md)
+      + [Test Group Reporting](features/audience-lab/audience-lab-reporting-view.md)
+      + [Audience Lab Use Cases](features/audience-lab/audience-lab-use-cases.md)
+      + [Audience Lab Advanced Functionality](features/audience-lab/audience-lab-advanced.md)
    + Audience Marketplace{#audience-marketplace}
       + [Audience Marketplace](features/audience-marketplace/audience-marketplace.md)
-      + [hide-from-tocAudience Marketplace最佳化](features/audience-marketplace/audience-marketplace-optimization.md)
-      + 適用於資料提供者的Audience Marketplace{#audience-marketplace-for-data-providers}
-         + [適用於資料提供者的Audience Marketplace](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
-         + [建立、定價和管理資料摘要](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
-         + [資料摘要提供者的計費方式](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
-      + 適用於資料購買者的Audience Marketplace{#audience-marketplace-for-data-buyers}
-         + [適用於資料購買者的Audience Marketplace](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
-         + [管理資料摘要訂閱](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
-         + [資料摘要購買者的計費方式](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
+      + {hide-from-toc}[Audience Marketplace optimization](features/audience-marketplace/audience-marketplace-optimization.md)
+      + Audience Marketplace for Data Providers{#audience-marketplace-for-data-providers}
+         + [Audience Marketplace for Data Providers](features/audience-marketplace/marketplace-data-providers/marketplace-data-providers.md)
+         + [Create, Price, and Manage Data Feeds](features/audience-marketplace/marketplace-data-providers/marketplace-create-manage-feeds.md)
+         + [Billing for Data Feed Providers](features/audience-marketplace/marketplace-data-providers/marketplace-billing-report.md)
+      + Audience Marketplace for Data Buyers{#audience-marketplace-for-data-buyers}
+         + [Audience Marketplace for Data Buyers](features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md)
+         + [Manage Data Feed Subscriptions](features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md)
+         + [Billing for Data Feed Buyers](features/audience-marketplace/marketplace-data-buyers/marketplace-buyer-billing.md)
       + [私人資料摘要](features/audience-marketplace/marketplace-private-feeds.md)
-   + [客戶資料摘要](features/cdf-files.md)
+   + [Customer Data Feeds](features/cdf-files.md)
    + Data Explorer{#data-explorer}
-      + [Data Explorer — 概述、優點和使用案例](features/data-explorer/data-explorer-overview.md)
-      + [瞭解訊號](features/data-explorer/data-explorer-understanding-signals.md)
-      + [訊號控制面板](features/data-explorer/data-explorer-signals-dashboard.md)
-      + 訊號搜尋{#signals-search}
-         + [訊號搜尋概觀](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
-         + [按索引鍵值配對搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
-         + [依篩選條件搜尋訊號](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
-         + [Adobe Analytics的進階搜尋](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
-         + [篩選搜尋結果](features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
+      + [Data Explorer - Overview, Benefits, and Use Cases](features/data-explorer/data-explorer-overview.md)
+      + [Understanding Signals](features/data-explorer/data-explorer-understanding-signals.md)
+      + [Signals Dashboard](features/data-explorer/data-explorer-signals-dashboard.md)
+      + Signals Search{#signals-search}
+         + [Signals Search Overview](/help/using/features/data-explorer/data-explorer-signals-search/data-explorer-signals-search.md)
+         + [Search Signals by Key-Value Pairs](features/data-explorer/data-explorer-signals-search/data-explorer-search-pairs.md)
+         + [Search Signals by Filters](features/data-explorer/data-explorer-signals-search/data-explorer-search-filters.md)
+         + [Advanced Search for Adobe Analytics](features/data-explorer/data-explorer-signals-search/data-explorer-search-analytics.md)
+         + [Filter Search Results](features/data-explorer/data-explorer-signals-search/data-explorer-filter-results.md)
          + [儲存搜尋條件](features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)
       + [從訊號建立特徵](features/data-explorer/create-traits-from-signals.md)
       + [回填特徵實現](features/data-explorer/data-explorer-trait-backfill.md)
@@ -151,8 +151,7 @@ ht-degree: 17%
       + [客戶細分工具](features/segments/segment-builder.md)
       + [區段運算式編輯器中使用的程式碼語法](features/segments/segment-code-syntax.md)
       + [區段產生器的特徵和區段母體資料](features/segments/segment-builder-data.md)
-      + [特徵建議](features/segments/trait-recommendations.md)
-      + [特徵和細分資格篩選參考資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html?lang=zh-Hant)
+      + [特徵和區段資格參考](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/trait-and-segment-qualification-reference.html?lang=zh-Hant)
    + 特徵{#traits}
       + [特徵概述](/help/using/features/traits/traits-overview.md)
       + [特徵詳細資訊頁面](features/traits/trait-details-page.md)
@@ -281,32 +280,32 @@ ht-degree: 17%
       + [類別層級DIL API快速入門](dil/dil-class-overview/dil-start.md)
       + [DIL建立](dil/dil-class-overview/dil-create.md)
       + [getDil](dil/dil-class-overview/dil-get-instance.md)
-      + [dexGetQSVar](dil/dil-class-overview/dil-get-dexqsvars.md)
-      + [isAddedPostWindowsLoad](dil/dil-class-overview/dil-added-post-window-load.md)
-   + [例項層級DIL方法](dil/dil-instance-methods.md)
-   + [DIL模組](dil/dil-modules.md)
-   + [DIL工具](dil/dil-tools.md)
-   + [DIL使用案例和程式碼範例](dil/dil-use-cases.md)
+      + [dexGetQSVars](dil/dil-class-overview/dil-get-dexqsvars.md)
+      + [isAddedPostWindowLoad](dil/dil-class-overview/dil-added-post-window-load.md)
+   + [Instance-level DIL Methods](dil/dil-instance-methods.md)
+   + [DIL Modules](dil/dil-modules.md)
+   + [DIL Tools](dil/dil-tools.md)
+   + [DIL Use Cases and Code Samples](dil/dil-use-cases.md)
    + [Flash DIL](dil/dil-flash.md)
-   + [DIL發行說明](/help/using/dil/dil-release-notes.md)
-+ 實作與整合指南{#implementation-integration-guides}
-   + [實作與整合指南](integration/implementation-and-integration.md)
+   + [DIL Release Notes](/help/using/dil/dil-release-notes.md)
++ Implementation and Integration Guides{#implementation-integration-guides}
+   + [Implementation and Integration Guides](integration/implementation-and-integration.md)
    + [資料整合方法](integration/data-integration-methods.md)
-   + 使用Google發佈商代碼(GPT)整合Google廣告管理員{#integrate-dfp-using-gpt}
-      + [使用GPT整合Google Ad Manager概覽](integration/gpt-aam-destination/gpt-aam-overview.md)
-      + [使用GPT將區段傳送至Google Ad Manager](integration/gpt-aam-destination/gpt-aam-requirements.md)
-      + [建立GPT目的地](integration/gpt-aam-destination/gpt-aam-create-destination.md)
-      + [修改GPT setTargeting API呼叫](integration/gpt-aam-destination/gpt-aam-modify-api.md)
-      + [適用於Google發佈商廣告代碼的Audience Manager代碼](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
-   + 與第三方目的地整合 {#integrating-third-party}
-      + [Facebook WCA整合](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
-      + [OAS作為Audience Manager目的地](integration/integrating-third-party/open-ad-server-destination.md)
-      + [OpenX作為Audience Manager目的地](integration/integrating-third-party/openx-destination.md)
-      + [Google Ad Manager （前身為DFP）作為Audience Manager目的地](integration/aam-dfp.md)
-      + [將區段傳送至Google AdWords再行銷清單](integration/integrating-third-party/rlsa-integration.md)
-   + [實作Audience Manager](integration/implement-audience-manager.md)
-   + 媒體資料整合{#media-data-integration}
-      + [媒體資料整合概述](integration/media-data-integration/media-data-integration.md)
+   + Integrate Google Ad Manager using Google Publisher Tags (GPT){#integrate-dfp-using-gpt}
+      + [Integrate Google Ad Manager using GPT Overview](integration/gpt-aam-destination/gpt-aam-overview.md)
+      + [Sending Segments to Google Ad Manager Using GPT](integration/gpt-aam-destination/gpt-aam-requirements.md)
+      + [Create a GPT Destination](integration/gpt-aam-destination/gpt-aam-create-destination.md)
+      + [Modify the GPT setTargeting API Call](integration/gpt-aam-destination/gpt-aam-modify-api.md)
+      + [Audience Manager Code for Google Publisher Tags](integration/gpt-aam-destination/gpt-aam-aamgpt-code.md)
+   + Integrating with Third-Party Destinations {#integrating-third-party}
+      + [Facebook WCA Integration](/help/using/integration/integrating-third-party/facebook-wca-integration.md)
+      + [OAS as an Audience Manager Destination](integration/integrating-third-party/open-ad-server-destination.md)
+      + [OpenX as an Audience Manager Destination](integration/integrating-third-party/openx-destination.md)
+      + [Google Ad Manager (formerly DFP) as an Audience Manager Destination](integration/aam-dfp.md)
+      + [Send Segments to a Google AdWords Remarketing List](integration/integrating-third-party/rlsa-integration.md)
+   + [Implementing Audience Manager](integration/implement-audience-manager.md)
+   + Media Data Integration{#media-data-integration}
+      + [Media Data Integration Overview](integration/media-data-integration/media-data-integration.md)
       + [可操作的記錄檔](integration/media-data-integration/actionable-log-files.md)
       + [透過畫素呼叫擷取行銷活動的曝光資料](integration/media-data-integration/impression-data-pixels.md)
       + [透過畫素呼叫擷取行銷活動的點按資料](integration/media-data-integration/click-data-pixels.md)
@@ -349,8 +348,8 @@ ht-degree: 17%
    + 與其他Experience Cloud應用程式的整合 {#integration-other-solutions}
       + [將Audience Manager與Adobe Target整合](integration/integration-other-solutions/aam-target-integration.md)
       + [如何將資料從Adobe Analytics轉送至Audience Manager](integration/integration-other-solutions/audience-management-module.md)
-      + [將Adobe Analytics區段發佈至Experience Cloud (開啟Adobe Analytics檔案)](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=zh-Hant)
-      + [整合Audience Manager與Adobe Campaign (開啟Adobe Campaign檔案)](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html?lang=zh-Hant)
+      + [將Adobe Analytics區段發佈至Experience Cloud （開啟Adobe Analytics檔案）](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html?lang=zh-Hant)
+      + [將Audience Manager與Adobe Campaign整合（開啟Adobe Campaign檔案）](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-audience-manager-or-people-core-service/about-campaign-audience-manager-or-people-core-service-integration.html?lang=zh-Hant)
 + 參考{#reference}
    + [參考概述](reference/reference.md)
    + [Amazon S3：關於](reference/amazon-s3.md)
