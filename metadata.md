@@ -1,18 +1,19 @@
 ---
 cloud: Experience Cloud
 solution: Audience Manager
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
 feature-set: Audience Manager
 landing-page-name: audience-manager
 landing-page-breadcrumb-title: Audience Manager
 type: Documentation
 tutorials-title: Tutorials
-tutorials-url: https://docs.adobe.com/content/help/zh-Hant/audience-manager-learn/tutorials/overview.html
-git-repo: https://github.com/AdobeDocs/audience-manager.zh-Hant
+tutorials-url: https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html
+git-repo: https://github.com/AdobeDocs/audience-manager.en
 index: true
-source-git-commit: 28194066af20afb1292c91621a73654fc5c9218f
+source-git-commit: c46ee8bb3185c5199994d2e6ceaccda5d058ed7e
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 2%
+source-wordcount: 125
+ht-degree: 0%
 
 ---
 
@@ -28,5 +29,5 @@ metadata.md檔案包含存放庫層級中繼資料，這些中繼資料會傳遞
 | solution-icon | 在解決方案標題旁邊顯示解決方案圖示。 尚未實作 |
 | getting-started-url | helpx快速入門頁面連結 |
 | tutorials-url | 教學課程影片（helpx或KT教學課程其中之一）的連結 |
-| mini-toc-levels | 決定顯示在右側欄中的標題層數。 預設為 2 |
+| mini-toc-levels | 決定顯示在右側欄中的標題層數。 預設為2 |
 | git-repo | 指定內部使用的主要存放庫位置 |
