@@ -15,7 +15,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: 614
+source-wordcount: 644
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ c_pub_use_case.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>建立單一客群存放庫，方便您概觀所有使用者和資料點。其中包括網站行為 (可能來自 Analytics)、顯示曝光數、離線註冊資料庫、CRM 資料庫、影片觀看量、電子郵件活動和促銷活動等資訊。 </p> </td> 
+   <td colname="col1"> <p>建立單一客群存放庫，方便您概觀所有使用者和資料點。 其中包括網站行為 (可能來自 Analytics)、顯示曝光數、離線註冊資料庫、CRM 資料庫、影片觀看量、電子郵件活動和促銷活動等資訊。 </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_FB6683152C7D4D65AF951BA55E123427"> 
       <li id="li_45C12198EDDE4107AE59947BBAA51A60">挖掘客群、執行更聰明的廣告或銷售行銷活動，以及管理客戶深入分析。 </li> 
@@ -97,7 +97,7 @@ c_pub_use_case.xml
    <td colname="col2"> <p><span class="keyword"> Audience Manager</span> 的即時分析有助於改善受眾認知度，透過提供相關的個人化內容來增強站上體驗。 </p> <p>這麼做可讓您將內容個人化新增為您優質客群產品的條列項目。 </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_EEED2DAD504C486F8C00992219C893F7"> 
-      <li id="li_E536F7C79824484DA3DC895809B849F4">Analytics 提供有關客群對旅遊內容感興趣的第一方資料。根據這些資訊，建立名為「旅遊愛好者」的區段。 </li> 
+      <li id="li_E536F7C79824484DA3DC895809B849F4">Analytics 提供有關客群對旅遊內容感興趣的第一方資料。 根據這些資訊，建立名為「旅遊愛好者」的區段。 </li> 
       <li id="li_DCB3A5F3772C4DCEB757A4AB6CABFBE3">將 <span class="keyword">Audience Manager</span> 與 Adobe CQ 等系統整合，以管理內容個人化行銷活動。 </li> 
       <li id="li_A9BFB7EB7504492BA83F182BE5E8CEF8">將旅行區段目標定位為航空公司、飯店或旅宿業者廣告商，以協助改善詳細目錄產生的廣告收入。 </li> 
      </ul> </p> </td> 
@@ -152,7 +152,7 @@ c_pub_use_case.xml
    <td colname="col2"> <p> 
      <ul id="ul_CC5448D2EA0646D4AF3547E81DE31FDE"> 
       <li id="li_8F11E40026404C1380F26F6D03952C8E">透過反映原始客群的行為和輪廓來識別新客群。 </li> 
-      <li id="li_5F67AD849EC145DBB1E52A92BBE2CEE3">搜尋您自己的資料和您有權存取的其他第三方資料。這可協助您為高價值客群輪廓尋找並識別最具影響力的資料點。 </li> 
+      <li id="li_5F67AD849EC145DBB1E52A92BBE2CEE3">搜尋您自己的資料和您有權存取的其他第三方資料。 這可協助您為高價值客群輪廓尋找並識別最具影響力的資料點。 </li> 
      </ul> </p> </td> 
    <td colname="col3"> <p> 
      <ul id="ul_51091241D6B94A849A383538045D797C"> 
