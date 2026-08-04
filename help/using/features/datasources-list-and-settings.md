@@ -22,7 +22,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
 workflow-type: tm+mt
-source-wordcount: 1070
+source-wordcount: 1090
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 檢視您目前設定的[!UICONTROL data sources]清單、新增新的[!UICONTROL data sources]，以及編輯現有的[!UICONTROL data sources]。
 
-您也可以使用[!UICONTROL data sources]方法來管理[!DNL API]。 如需詳細資訊，請參閱[資料Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
+您也可以使用[!DNL API]方法來管理[!UICONTROL data sources]。 如需詳細資訊，請參閱[資料Source API方法](../api/rest-api-main/aam-api-data-sources.md)。
 
 ## [!UICONTROL Data Sources]清單檢視 {#list-view}
 
@@ -155,11 +155,11 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作已驗證的設定檔</span></b> </p> </td> 
-   <td colname="col2"> <p>您的跨裝置資料來源包含已驗證的ID。 已驗證的ID會收集並在驗證事件期間（例如，使用者登入網站、應用程式內等）同步至<span class="keyword">個Audience Manager</span> ID。 已驗證的ID可用於來自其他儲存此ID之來源的主機板內資料。 它也可以用來連結<span class="wintitle">設定檔連結</span>中的多個裝置ID。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<span class="wintitle">建立設定檔合併規則</span>時顯示在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">已驗證的設定檔選項</a>中。 </p> </td> 
+   <td colname="col2"> <p>您的跨裝置資料來源包含已驗證的ID。 已驗證的ID會收集並在驗證事件期間（例如，使用者登入網站、應用程式內等）同步至<span class="keyword">個Audience Manager</span> ID。 已驗證的ID可用於來自其他儲存此ID之來源的主機板內資料。 它也可以用來連結<span class="wintitle">設定檔連結</span>中的多個裝置ID。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">建立設定檔合併規則</a>時顯示在<span class="wintitle">已驗證的設定檔選項</span>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">用作裝置圖表</span></b> </p> </td> 
-   <td colname="col2"> <p>建立資料來源作為裝置圖表，以供您提供給其他<span class="keyword">個Audience Manager</span>客戶。 在選取此選項之前，請告訴您的<span class="keyword"> Audience Manager</span>顧問，該<span class="wintitle">資料Source</span>應該與哪些客戶共用。 您的顧問必須透過我們的內部程式布建這些公司。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<span class="wintitle">建立設定檔合併規則</span>時出現在<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">裝置選項</a>中。 </p> </td> 
+   <td colname="col2"> <p>建立資料來源作為裝置圖表，以供您提供給其他<span class="keyword">個Audience Manager</span>客戶。 在選取此選項之前，請告訴您的<span class="keyword"> Audience Manager</span>顧問，該<span class="wintitle">資料Source</span>應該與哪些客戶共用。 您的顧問必須透過我們的內部程式布建這些公司。 </p> <p>此選項會顯示文字欄位，讓您以別名重新命名資料來源。 如果您使用別名，這個新名稱會覆寫資料來源名稱，並在您<a href="../features/profile-merge-rules/merge-rules-start.md#create-profile-merge-rule">建立設定檔合併規則</a>時出現在<span class="wintitle">裝置選項</span>中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">與特定Audience Manager客戶共用相關聯的訪客或裝置ID</span></b> </p> </td> 
@@ -167,7 +167,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b><span class="uicontrol">在Audience Manager平台中共用相關的訪客或裝置ID</span></b> </p> </td> 
-   <td colname="col2"> <p>您的資料來源包含可在其他<span class="keyword">個Experience Cloud</span>解決方案之間共用的訪客或裝置ID。 </p> </td> 
+   <td colname="col2"> <p>您的資料來源包含可在其他<span class="keyword"> Experience Cloud</span>解決方案之間共用的訪客或裝置ID。 </p> </td> 
   </tr>
   <tr> 
    <td colname="col1"> <p> 非使用中客戶ID的<b><span class="uicontrol">資料保留</span></b> </p> </td> 
