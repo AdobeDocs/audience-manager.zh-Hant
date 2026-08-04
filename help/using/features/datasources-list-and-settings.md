@@ -125,7 +125,7 @@ ht-degree: 0%
      <ul id="ul_3BC963CE378B4F6CB1861643A4541634"> 
       <li id="li_B86C5E7847424A2B9C094DF02741DDB8"> <b><span class="uicontrol">客戶識別碼</span></b>：使用客戶識別碼識別傳入資料。 </li> 
       <li id="li_AD8E440436314902A794CDB11A3D657F"> <b><span class="uicontrol"> Audience Manager ID</span></b>：識別具有<span class="keyword"> Audience Manager</span> ID的傳入資料。 </li> 
-      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>：識別具有<span class="keyword"> Experience Cloud</span> ID的傳入資料。 檢視<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud ID</a>。 </li> 
+      <li id="li_B56608334DDA453B9E4E88E53DAF92FA"> <b><span class="uicontrol"> Experience Cloud ID</span></b>：識別具有<span class="keyword"> Experience Cloud</span> ID的傳入資料。 檢視<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與Experience Cloud ID</a>。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
