@@ -9,28 +9,13 @@ keywords: SFTP；SFTP位址；STFP IP位址；FTP位址
 feature: Administration
 exl-id: 2951ab0c-6f1c-4126-b83e-ce4a33c0d4ab
 TQID: https://experienceleague.adobe.com/C35e-eIULWyFZPASMC-vwOIU1Yk-SH-HZzGRTO89yFg
-product_v2:
-  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-feature_v2:
-  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
-  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
-  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
-subfeature_v2:
-  - id: a49258d4-867f-4130-b875-d72c001bdf6c
-  - id: b1ecf375-97f8-4f5a-a937-6129552209be
-  - id: b52f95d5-ca6b-4fda-a49e-994dc0a63402
-  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
-  - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+product_v2: id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+feature_v2: id: a99472c1-6aae-4c7a-8aa0-f60636369620id: b89b323a-1e91-40b1-8d20-96b5b726d55aid: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+subfeature_v2: id: a49258d4-867f-4130-b875-d72c001bdf6cid: b1ecf375-97f8-4f5a-a937-6129552209beid: b52f95d5-ca6b-4fda-a49e-994dc0a63402id: d3dfac44-e20d-492d-a806-0f4a4a495901id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 99abc40141fbc79b15dd87691be58c9e201a705a
 workflow-type: tm+mt
-source-wordcount: 1255
+source-wordcount: 1276
 ht-degree: 74%
 
 ---
@@ -43,7 +28,7 @@ ht-degree: 74%
 
 **如何在 [!DNL DCS] 記錄檔匯出項目中區分來自 [!DNL DCS] 的傳入流量？**
 
-透過 [!UICONTROL Inbound] 上線的特徵會以 [!UICONTROL Inbound] 填入，其方式與以 [!DNL DCS] 填入的方式相同。有幾種不同的方式可以判斷流量是來自 [!UICONTROL Inbound]：
+透過 [!UICONTROL Inbound] 上線的特徵會以 [!UICONTROL Inbound] 填入，其方式與以 [!DNL DCS] 填入的方式相同。 有幾種不同的方式可以判斷流量是來自 [!UICONTROL Inbound]：
 
 * 遠端IP將設定為68.67.173.18
 * 網域 ID 將設為 5325
@@ -53,7 +38,7 @@ ht-degree: 74%
 
 **能提供可以新增至dpm.demdex.net允許清單的IP位址清單嗎？**
 
-很遺憾，恕無法提供。這些 IP 會透過 [!DNL Amazon Web Services] 依地理區域以動態方式指派。因此，[!DNL Audience Manager] 不會控制可指派給此位址的 IP 範圍。
+很遺憾，恕無法提供。 這些 IP 會透過 [!DNL Amazon Web Services] 依地理區域以動態方式指派。 因此，[!DNL Audience Manager] 不會控制可指派給此位址的 IP 範圍。
 
  
 
@@ -63,8 +48,8 @@ ht-degree: 74%
 
 | 伺服器 | IP 位址 |
 | ---------|----------|
-| ftp-in-gtw.demdex.com | 52.3.74.119； 3.233.68.222 |
-| ftp-out-gtw.demdex.com | 23.22.232.252； 18.211.109.184 |
+| ftp-in-gtw.demdex.com | 52.3.74.119; 3.233.68.222 |
+| ftp-out-gtw.demdex.com | 23.22.232.252; 18.211.109.184 |
 
  
 
@@ -91,7 +76,7 @@ ht-degree: 74%
 
 **[!UICONTROL DIL]/[!DNL Analytics]資料整合**&#x200B;的程式碼放置和頁面載入要求為何？
 
-若要將 [!DNL Analytics] 資料帶入 [!DNL Audience Manager]，請在 `s_code` 模組之後、`s.t()` 函數&#x200B;*之前*&#x200B;載入 [!UICONTROL DIL]。例如，請依下列順序放置程式碼，或確定程式碼已依照以下順序載入：
+若要將 [!DNL Analytics] 資料帶入 [!DNL Audience Manager]，請在 `s_code` 模組之後、`s.t()` 函數&#x200B;*之前*&#x200B;載入 [!UICONTROL DIL]。 例如，請依下列順序放置程式碼，或確定程式碼已依照以下順序載入：
 
 1. [!DNL Analytics] `s_code`
 
@@ -103,7 +88,7 @@ ht-degree: 74%
 
 * 直接將 [!UICONTROL DIL] 放入 `s_code` 中。
 
-* 透過[!UICONTROL DIL]提供`s_code`和[!DNL Adobe Experience Platform Tags]。
+* 透過[!DNL Adobe Experience Platform Tags]提供[!UICONTROL DIL]和`s_code`。
 
 請參閱 [Data Integration Library (DIL) API](../dil/dil-overview.md)。
 
@@ -120,7 +105,7 @@ ht-degree: 74%
 
 **哪些 [!DNL Analytics] 版本可搭配 [!UICONTROL DIL] 使用？**
 
-您必須使用 [!DNL Analytics] 20.2 版 (或更新版本) 和 [!DNL Adobe AppMeasurement AS] 程式庫 3.5.2 版 (或更新版本) 才能使用 [!UICONTROL DIL]。如果您不知道您的 [!DNL Analytics] 或 [!DNL AppMeasurement] 版本，請查看從頁面發出的 [!DNL Analytics] 呼叫。版本資訊如下所示：
+您必須使用 [!DNL Analytics] 20.2 版 (或更新版本) 和 [!DNL Adobe AppMeasurement AS] 程式庫 3.5.2 版 (或更新版本) 才能使用 [!UICONTROL DIL]。 如果您不知道您的 [!DNL Analytics] 或 [!DNL AppMeasurement] 版本，請查看從頁面發出的 [!DNL Analytics] 呼叫。 版本資訊如下所示：
 
 此客戶使用 [!DNL Analytics] 24.4 版：
 
@@ -138,20 +123,20 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **如果我不是 [!DNL Analytics] 客戶，可以收集頁面資料嗎？**
 
-是。即使您未使用 [!DNL Analytics]，[!UICONTROL DIL] 模組仍可協助您收集頁面資料。正確設定後，[!UICONTROL DIL] 便可從向以下項目擷取其相關資料：
+是。 即使您未使用 [!DNL Analytics]，[!UICONTROL DIL] 模組仍可協助您收集頁面資料。 正確設定後，[!UICONTROL DIL] 便可從向以下項目擷取其相關資料：
 
 * 中繼標籤
 * URL 和 URL 標頭
 * 搜尋引擎類型
 * 關鍵字
 
-此外，用戶端可部署簡單的站上物件，並填入您希望 [!UICONTROL DIL] 收集資料的索引鍵值配對。這可讓您新增和移除網站上的特定客群資料點，而不需進行任何 [!DNL Audience Management] 更新。請與您的合作夥伴解決方案代表合作，正確進行此設定，並確保 [!DNL DIL] 模組正確參考頁面物件。
+此外，用戶端可部署簡單的站上物件，並填入您希望 [!UICONTROL DIL] 收集資料的索引鍵值配對。 這可讓您新增和移除網站上的特定客群資料點，而不需進行任何 [!DNL Audience Management] 更新。 請與您的合作夥伴解決方案代表合作，正確進行此設定，並確保 [!DNL DIL] 模組正確參考頁面物件。
 
 <br> 
 
 **[!UICONTROL DIL] 可以從 [!DNL Google Analytics] 中收集資料嗎？**
 
-是。[!UICONTROL DIL] 可以收集某些 [!DNL Google Analytics] (GA)元素並將該資料傳遞至 [!DNL Audience Manager]。請參閱：
+是。 [!UICONTROL DIL] 可以收集某些 [!DNL Google Analytics] (GA)元素並將該資料傳遞至 [!DNL Audience Manager]。 請參閱：
 
 * [GA.submitUniversalAnalytics](../dil/dil-modules.md#ga-submit-universal-analytics)
 * [GA.init](../dil/dil-modules.md#ga-init)
@@ -160,7 +145,7 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **我可以從 [!DNL Audience Manager] 中取得原始資料嗎，其精細度為何？**
 
-可以，[!DNL Audience Manager] 可向您提供針對我們在您的詳細目錄中看到的使用者所收集的資料。其中包括：
+可以，[!DNL Audience Manager] 可向您提供針對我們在您的詳細目錄中看到的使用者所收集的資料。 其中包括：
 
 * 由 [!DNL Audience Manager] 指派的不重複使用者 ID (UUID)
 * 特徵和區段 ID
@@ -172,13 +157,13 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **我想要收集一個網站的資料，並透過[!DNL Google Ad Manager]定位另一個網站的使用者。 如果我不想從那個位置收集資料，是否需要將程式碼部署在其他屬性上？**
 
-不會。如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。只要您透過[!DNL Google Ad Manager]存取第二個網站的詳細目錄，就可以透過[!DNL Google Ad Manager]使用來自初始網站和目標的資料集合。
+不會。 如果不需要在第二個網站上收集資料，您就不需要在那裡部署 DIL。 只要您透過[!DNL Google Ad Manager]存取第二個網站的詳細目錄，就可以透過[!DNL Google Ad Manager]使用來自初始網站和目標的資料集合。
 
 <br> 
 
 **哪個第三方資料提供者是最佳選擇？**
 
-每個提供者提供的內容均獨一無二，因此答案取決於您要尋找的內容。我們可以啟用重疊報表 (免費)，幫助您瞭解哪個提供者最適合您。
+每個提供者提供的內容均獨一無二，因此答案取決於您要尋找的內容。 我們可以啟用重疊報表 (免費)，幫助您瞭解哪個提供者最適合您。
 
 <br> 
 
@@ -190,17 +175,17 @@ https://112.2o7.net/b/ss/.../0/FAS-3.5.2-AS3/...
 
 **是否可傳送轉換漏斗中使用者觸及點的相關 DSP 資訊？**
 
-是。我們可以傳送漏斗資料，但是 DSP 必須具備使用這些資料的技術能力。DSP 必須確認其可以處理多個區段。如果無法，我們可能需要建立特定區段，以根據使用者的轉換進度將使用者從其他區段中提取出 (例如已完成步驟 1 和 2，但步驟 3 尚未完成)。您可將這些資訊傳送至 DSP，讓 DSP 可對使用者重新進行鎖定、將其導向至特定登陸頁面，或顯示特定創意內容。
+是。 我們可以傳送漏斗資料，但是 DSP 必須具備使用這些資料的技術能力。 DSP 必須確認其可以處理多個區段。 如果無法，我們可能需要建立特定區段，以根據使用者的轉換進度將使用者從其他區段中提取出 (例如已完成步驟 1 和 2，但步驟 3 尚未完成)。 您可將這些資訊傳送至 DSP，讓 DSP 可對使用者重新進行鎖定、將其導向至特定登陸頁面，或顯示特定創意內容。
 
 <br> 
 
 **如何確認透過 FTP 傳送的資料是否已被 [!DNL Audience Manager] 擷取？**
 
-當副檔名從 `.sync` 變更為 `.processed`，表示已擷取檔案。發生此情況時，檔案會位於擷取佇列中。此外，您的帳戶管理員可確認檔案上傳完畢的時間。
+當副檔名從 `.sync` 變更為 `.processed`，表示已擷取檔案。 發生此情況時，檔案會位於擷取佇列中。 此外，您的帳戶管理員可確認檔案上傳完畢的時間。
 
 <br> 
 
-**我想測試 [DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md) 的功能。我傳送了一個事件呼叫，如下所示。這些呼叫中包含[宣告 ID](../features/declared-ids.md) 和訊號，而這些 ID 和訊號應會實現我已設定的某些特徵和區段。我可以使用 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports] 來驗證特徵和區段母體是否正在增加嗎？**
+**我想測試 [DCS API](../api/dcs-intro/dcs-event-calls/dcs-event-calls.md) 的功能。 我傳送了一個事件呼叫，如下所示。 這些呼叫中包含[宣告 ID](../features/declared-ids.md) 和訊號，而這些 ID 和訊號應會實現我已設定的某些特徵和區段。 我可以使用 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports] 來驗證特徵和區段母體是否正在增加嗎？**
 
 ```
 https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed-an-order
@@ -210,13 +195,13 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 報表是根據報表產生時在後端看到的未驗證設定檔記錄 (UUID) 來計算母體。
 
-對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hant))。[!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
+對 [!DNL DCS] 發出第一次呼叫時，宣告 ID *不會*&#x200B;連結至任何 UUID (也就是用戶端上不存在 [demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html))。 [!DNL DCS] 會隨機產生 UUID 並設定 [!DNL demdex] Cookie，然後在回應呼叫中傳遞，但不會將 UUID 傳輸送到後端。
 
 >[!NOTE]
 >
 >只有在已設定 Cookie 的裝置觸發進一步活動後，產生的 UUID 才會在後端資料儲存區中具體化。
 
-基於這個原因，報表不會反映呼叫中宣告 ID 所觸發的事件。建議您在對 [!DNL DCS] 發出的事件測試呼叫中使用 UUID、ECID (前身為 MID) 或行動裝置 ID。接下來，您可以驗證 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports] 中的特徵和區段實現。
+基於這個原因，報表不會反映呼叫中宣告 ID 所觸發的事件。 建議您在對 [!DNL DCS] 發出的事件測試呼叫中使用 UUID、ECID (前身為 MID) 或行動裝置 ID。 接下來，您可以驗證 [!UICONTROL General Reports] 和 [!UICONTROL Trend Reports] 中的特徵和區段實現。
 
 另請參閱 [Audience Manager ID 的索引](../reference/ids-in-aam.md)。
 
@@ -224,14 +209,14 @@ https://apse2.demdex.net/event?d_rtbd=json&d_cid=123456%01abc123&c_events=placed
 
 **跨[地區](../api/dcs-intro/dcs-api-reference/dcs-regions.md)同步使用者設定檔需要多久？**
 
-在不同地區間同步使用者設定檔通常需要 24 小時。不過在少數情況下，此程序可能會耗費最多 48 小時。
+在不同地區間同步使用者設定檔通常需要 24 小時。 不過在少數情況下，此程序可能會耗費最多 48 小時。
 
  
 
 **非作用中Amazon S3使用者存取金鑰會發生什麼事？**
 
-Adobe可為Audience Manager客戶提供[!DNL Amazon S3]值區的存取金鑰。 基於安全考量，如果這些存取金鑰在100天內未使用，則會自動停用。
+Adobe可為Audience Manager客戶提供[!DNL Amazon S3]值區的存取金鑰。 基於安全考量，如果這些存取金鑰在40天內未使用，則會自動停用。
 
 如果您的存取金鑰已停用，您可以聯絡客戶支援以重新啟用或請求新金鑰。
 
-為增強安全性，1000天未使用的存取金鑰將會與Amazon S3 IAM使用者帳戶一起永久刪除。 如果您是回頭的客戶，在此期間之後需要存取權，請聯絡客戶支援以重新建立您的帳戶並接收新的存取金鑰。
+為增強安全性，180天未使用的存取金鑰將會與Amazon S3 IAM使用者帳戶一起永久刪除。 如果您是回頭的客戶，在此期間之後需要存取權，請聯絡客戶支援以重新建立您的帳戶並接收新的存取金鑰。
