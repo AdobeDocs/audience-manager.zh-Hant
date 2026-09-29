@@ -10,17 +10,18 @@ exl-id: 34eb6194-c57b-4836-a6df-6889a2cec703
 TQID: https://experienceleague.adobe.com/Zu-vprPHjdrKnCmni186mwvNUjwvgFw26nHERL7gBHE
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: c7475dcbcdca8baf647260ea4083c2c3122a8302
 workflow-type: tm+mt
-source-wordcount: 1065
+source-wordcount: '1067'
 ht-degree: 1%
-
 ---
-
 # 私人資料摘要 {#private-data-feeds}
 
 私人資料摘要是一個選項，可讓提供者限制購買者對其資料的存取權。 資料提供者和購買者在建立及訂閱私人資料摘要之前，應先檢閱這些資訊。
@@ -86,7 +87,7 @@ ht-degree: 1%
 
 ## 購買者的私人資料摘要 {#private-data-feeds-for-buyers}
 
-作為購買者，私人資料摘要在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中會像任何其他選件一樣顯示。 不過，在此情況下，摘要清單不會顯示特徵、不重複使用者及使用者重疊的摘要資訊。 此外，資料賣家可選擇在[!UICONTROL Provider]清單的[!UICONTROL Marketplace]欄中顯示或隱藏其名稱。 在賣家核准您的訂閱要求後，您就可以使用私人摘要中的所有資料（其運作方式就像公開摘要）。 以下[!UICONTROL Marketplace]範例列出了3種不同的摘要型別，可供您作為購買者使用。
+作為購買者，私人資料摘要在[Marketplace](../../features/audience-marketplace/marketplace-data-buyers/marketplace-data-buyers.md#about-marketplace)中會像任何其他選件一樣顯示。 不過，在此情況下，摘要清單不會顯示特徵、不重複使用者及使用者重疊的摘要資訊。 此外，資料賣家可選擇在[!UICONTROL Marketplace]清單的[!UICONTROL Provider]欄中顯示或隱藏其名稱。 在賣家核准您的訂閱要求後，您就可以使用私人摘要中的所有資料（其運作方式就像公開摘要）。 以下[!UICONTROL Marketplace]範例列出了3種不同的摘要型別，可供您作為購買者使用。
 
 ![](assets/buyer_marketplace.png)
 
@@ -169,6 +170,6 @@ ht-degree: 1%
 
 ### 步驟7 — 資料購買者 — 開啟訂閱
 
-資料提供者授予資料摘要的存取權後，您就能在&#x200B;**Audience Marketplace > Marketplace**&#x200B;的帳戶中看到摘要。 檢閱詳細資料，開啟[訂閱]按鈕，然後按一下[檢閱與訂閱]。**&#x200B;** 請參閱訂閱資料摘要的[儲存空間](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)，以取得尋找第三方特徵的資訊。
+資料提供者授予資料摘要的存取權後，您就能在&#x200B;**Audience Marketplace > Marketplace**&#x200B;的帳戶中看到摘要。 檢閱詳細資料，開啟[訂閱]按鈕，然後按一下[檢閱與訂閱]。**** 請參閱訂閱資料摘要的[儲存空間](/help/using/features/audience-marketplace/marketplace-data-buyers/marketplace-manage-subscriptions.md#find-subscribed-data-fee)，以取得尋找第三方特徵的資訊。
 
 請注意，這些特徵只能在資料提供者的帳戶中編輯。
