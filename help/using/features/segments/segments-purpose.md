@@ -44,7 +44,7 @@ Audience Manager [!UICONTROL segment]是伺服器端規則，包含個別特徵�
 
 >[!TIP]
 >
->Audience Manager [!UICONTROL segments]與[!DNL Adobe Analytics] [!UICONTROL segments]不同。 閱讀[瞭解Analytics和Audience Manager中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html)以深入瞭解差異。
+>Audience Manager [!UICONTROL segments]與[!DNL Adobe Analytics] [!UICONTROL segments]不同。 閱讀[瞭解Analytics和Audience Manager中的區段](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html?lang=zh-Hant)以深入瞭解差異。
 
 ## 使用[!UICONTROL Segment Builder]建立規則型[!UICONTROL Segments]
 

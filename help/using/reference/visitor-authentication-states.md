@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Audience Manager中的訪客驗證狀態會決定新特徵資訊會寫入訪客已驗證的設定檔中，還是寫入資料收集來源裝置設定檔中。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。
 
-從[!DNL Experience Cloud] ID服務1.5版以後的版本開始，`setCustomerID`方法包含選用的`AuthState`物件。 `AuthState`會根據訪客的[驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)來識別訪客。 [!DNL Audience Manager]會根據呼叫中傳遞的驗證狀態以及您用於細分的[設定檔合併規則](../features/profile-merge-rules/merge-rules-dashboard.md)，以不同方式處理已實現的特徵。
+從[!DNL Experience Cloud] ID服務1.5版以後的版本開始，`setCustomerID`方法包含選用的`AuthState`物件。 `AuthState`會根據訪客的[驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)來識別訪客。 [!DNL Audience Manager]會根據呼叫中傳遞的驗證狀態以及您用於細分的[設定檔合併規則](../features/profile-merge-rules/merge-rules-dashboard.md)，以不同方式處理已實現的特徵。
 
 ## 驗證狀態：未知 {#auth-status-unknown}
 
@@ -62,4 +62,4 @@ Audience Manager中的訪客驗證狀態會決定新特徵資訊會寫入訪客�
 
 >[!MORELIKETHIS]
 >
->* [客戶 ID 和驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)
+>* [客戶 ID 和驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)

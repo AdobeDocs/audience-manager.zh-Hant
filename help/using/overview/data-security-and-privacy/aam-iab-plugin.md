@@ -50,7 +50,7 @@ ht-degree: 28%
 
 您對使用者的隱私義務中，其中一個重要面向是取得並傳達使用者對其個人資料使用方式（即「目的」）和使用者（即「公司」）所做的選擇。
 
-Adobe 可讓您透過[選擇加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)和 [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)，管理使用者的隱私權選擇，並與使用者針對該選擇溝通。
+Adobe 可讓您透過[選擇加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hant)和 [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)，管理使用者的隱私權選擇，並與使用者針對該選擇溝通。
 
 本文說明支援 IAB TCF 的 Audience Manager 使用案例，講解如何在 Audience Manager 中實作 IAB TCF 支援。
 
@@ -58,7 +58,7 @@ Adobe 可讓您透過[選擇加入功能](https://experienceleague.adobe.com/doc
 >
 >Audience Manager已在[IAB TCF](https://iabeurope.eu/tcf-for-vendors/)中註冊，廠商ID為565。
 
-適用於IAB TCF的Audience Manager外掛程式採用[選擇加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html)，而這又是[Adobe Experience Platform Identity Service (ECID)](https://experienceleague.adobe.com/docs/id-service/using/home.html)程式庫的一部分。
+適用於IAB TCF的Audience Manager外掛程式採用[選擇加入功能](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html?lang=zh-Hant)，而這又是[Adobe Experience Platform Identity Service (ECID)](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)程式庫的一部分。
 
 ## 範圍和限制 {#scope-and-limitations}
 
@@ -94,8 +94,8 @@ Audience Manager可協助您尊重使用者的隱私權選擇，並提供簡單�
 您必須符合下列必要條件，才能搭配Audience Manager使用適用於IAB TCF的Audience Manager外掛程式：
 
 1. 您必須使用 Adobe Experience Platform 身分識別服務 (ECID) 5 或更新版本。 [下載](https://github.com/Adobe-Marketing-Cloud/id-service/releases)最新版 ECID。
-2. 您必須使用Audience Manager [!DNL Data Integration Library] (DIL) 9.0或更新版本，可從[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)下載。 閱讀Audience Manager檔案[&#128279;](../../dil/dil-overview.md)中的DIL。 建議您使用[Adobe Audience Manager標籤擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html)來進行Audience Manager的最簡單的DIL實作。
-3. 或者，如果您使用[!DNL Server-Side Forwarding] (SSF)將資料匯入Audience Manager，則必須升級至最新版的AppMeasurement。 使用 [Analytics 代碼管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html)下載 AppMeasurement。
+2. 您必須使用Audience Manager [!DNL Data Integration Library] (DIL) 9.0或更新版本，可從[這裡](https://github.com/Adobe-Marketing-Cloud/dil/releases)下載。 閱讀Audience Manager檔案[&#128279;](../../dil/dil-overview.md)中的DIL。 建議您使用[Adobe Audience Manager標籤擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hant)來進行Audience Manager的最簡單的DIL實作。
+3. 或者，如果您使用[!DNL Server-Side Forwarding] (SSF)將資料匯入Audience Manager，則必須升級至最新版的AppMeasurement。 使用 [Analytics 代碼管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/code-manager-admin.html?lang=zh-Hant)下載 AppMeasurement。
 4. 您必須使用與IAB TCF v2.2整合且已向IAB TCF註冊的同意管理平台(CMP)，商業版或個人版均可。 請參閱[在 IAB 框架內註冊的 CMP](https://iabeurope.eu/cmp-list/) 清單。
 
 >[!WARNING]
@@ -104,9 +104,9 @@ Audience Manager可協助您尊重使用者的隱私權選擇，並提供簡單�
 
 ## 建議及實作方式 {#recommendations}
 
-若要在 Audience Manager 中啟用 IAB TCF 支援，請參閱[如何透過選擇加入設定 IAB](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html) 文件。
+若要在 Audience Manager 中啟用 IAB TCF 支援，請參閱[如何透過選擇加入設定 IAB](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/iab.html?lang=zh-Hant) 文件。
 
-最簡單的方法是使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)在屬性上新增[!DNL ECID Opt-in]。 閱讀[ECID選擇加入擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)的檔案，瞭解如何設定標籤擴充功能。
+最簡單的方法是使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)在屬性上新增[!DNL ECID Opt-in]。 閱讀[ECID選擇加入擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hant)的檔案，瞭解如何設定標籤擴充功能。
 
 ## 使用IAB架構時的使用者選擇工作流程 {#user-choice-workflow}
 
@@ -161,7 +161,7 @@ Audience Manager的運作方式不同，端視於IAB TC字串是否包含兩個�
 3. Audience Manager會檢查GDPR是否適用(`gdpr = 1`)，以及您的Web屬性上是否有已向IAB TCF註冊的CMP。 例如，這適用於從歐盟造訪的使用者。 請注意，您身為發佈商，有責任設定GDPR標幟。
 4. 如果GDPR適用，Audience Manager會檢查在`gdpr_consent`引數中傳遞的IAB TC字串，以取得必要的同意。 Audience Manager需要同意才能儲存和/或存取裝置上的資訊（[IAB TCF用途1](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)）、開發和改善產品（[IAB TCF用途10](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/#A_Purposes)），加上Audience Manager廠商同意儲存、處理或啟用資料。
 5. 如果IAB TC字串存在且包含必要的同意，Audience Manager會將IAB TC字串傳遞至我們的[資料收集伺服器](../../reference/system-components/components-data-collection.md) (DCS)。
-6. Audience Manager會在瀏覽器上設定[demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html)來進行回應，並起始及執行第三方ID同步。
+6. Audience Manager會在瀏覽器上設定[demdex Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-am.html?lang=zh-Hant)來進行回應，並起始及執行第三方ID同步。
 7. 或者，如果在步驟4中傳遞的IAB TC字串不包含所有必要的許可權，Audience Manager就不會收集、處理或啟用任何使用者資料，也不會執行或起始ID同步。 此外，它會從您合作的目的地選擇退出使用者。
 
 >[!IMPORTANT]
@@ -218,7 +218,7 @@ Audience Manager與IAB TCF v2.2整合可支援將同意附加至傳送至與IAB 
 
 ## 測試您的IAB實作 {#test-iab-implementation}
 
-若要測試您是否已正確實作適用於IAB TCF的Audience Manager外掛程式，請參閱驗證選擇加入服務[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html#section-64331998954d4892960dcecd744a6d88)中的使用案例4 。
+若要測試您是否已正確實作適用於IAB TCF的Audience Manager外掛程式，請參閱驗證選擇加入服務[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/testing-optin-and-iab-plugin.html?lang=zh-Hant#section-64331998954d4892960dcecd744a6d88)中的使用案例4 。
 
 ## IAB 和 Audience Manager 中的選擇退出。 優先順序。 {#iab-and-optout}
 
@@ -236,7 +236,7 @@ Audience Manager 處理選擇退出請求的方式，於[文件中的另一篇�
 
 ## 其他資源 {#additional-resources}
 
-* [Adobe Experience Platform Identity Service選擇加入](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)
+* [Adobe Experience Platform Identity Service選擇加入](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html?lang=zh-Hant)
 * [IAB歐洲GDPR資訊公開與同意框架](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/)
 * [IAB歐洲GDPR資訊公開與同意框架技術規格](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/Consent%20string%20and%20vendor%20list%20formats%20v1.1%20Final.md)
 * [IAB TCF外掛程式 — 影片示範](https://helpx.adobe.com/audience-manager/kt/using/iab-tcf-support-audience-manager-technical-video-implement.html)
