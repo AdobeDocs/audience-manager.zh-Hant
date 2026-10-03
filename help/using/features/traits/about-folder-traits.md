@@ -8,26 +8,36 @@ title: 資料夾特徵關於
 uuid: e561ce8f-6c90-44a7-b034-685533f29030
 feature: Traits
 exl-id: 779d1ab3-3a69-4975-b45a-acd95ab86a37
-TQID: https://experienceleague.adobe.com/fFfEE048TORlBUDrVYjizvI31iBfJeNsBl99uZJNefA
+TQID: 'https://experienceleague.adobe.com/fFfEE048TORlBUDrVYjizvI31iBfJeNsBl99uZJNefA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 533
+source-wordcount: '535'
 ht-degree: 0%
-
 ---
-
 # 資料夾特徵：關於 {#folder-traits-about}
 
 [!UICONTROL Folder traits]可讓您自動將位於相同資料夾及所有子資料夾的特徵彙總到可定位的區段中。
@@ -71,13 +81,13 @@ ht-degree: 0%
 * `READ`和`WRITE`特徵資料來源的群組許可權。
 * 特徵資料來源的`VIEW_ALL_TRAITS`和`EDIT_ALL_TRAITS`萬用字元許可權。
 
-在我們的[!UICONTROL RBAC]管理檔案[中瞭解如何指派](../../features/administration/administration-overview.md#create-group)許可權。
+在我們的[管理檔案](../../features/administration/administration-overview.md#create-group)中瞭解如何指派[!UICONTROL RBAC]許可權。
 
 ## 限制和其他考量事項 {#limits}
 
 | 項目 | 說明 |
 |---|---|
 | 特徵型別 | [!UICONTROL Onboarded traits]和[!UICONTROL algorithmic traits]對[!UICONTROL folder trait]的頻率最多可貢獻1個實現。 |
-| 在資料夾之間移動特徵 | 將特徵從資料夾移至另一個資料夾將會讓該特徵失去第一個資料夾特徵的資格，並符合其第二個[!UICONTROL folder trait]的資格。 這表示如果您從資料夾中刪除或移動特徵，該特徵母體中的使用者將會使用資料夾特徵作為區段運算式從該區段中取消分段。 <br>將Adobe Analytics區段或報表套裝對應至您的Experience Cloud組織時，Audience Manager會自動建立對應的新唯讀區段和特徵。 您無法從Audience Manager編輯或變更這些特徵的儲存位置。 不過，您在對應之Adobe Analytics區段或報表套裝上執行的任何變更都會反映在Audience Manager中。 |
-| 系統變數 | 無法使用[!UICONTROL Folder traits]引數在事件呼叫中實現`d_sid`。 |
+| 在資料夾之間移動特徵 | 將特徵從資料夾移至另一個資料夾將會讓該特徵失去第一個資料夾特徵的資格，並符合其第二個[!UICONTROL folder trait]的資格。 這表示如果您從資料夾中刪除或移動特徵，該特徵母體中的使用者將會使用資料夾特徵作為區段運算式從該區段中取消分段。<br> 將Adobe Analytics區段或報表套裝對應至您的Experience Cloud組織時，Audience Manager會自動建立對應的新唯讀區段和特徵。 您無法從Audience Manager編輯或變更這些特徵的儲存位置。 不過，您在對應之Adobe Analytics區段或報表套裝上執行的任何變更都會反映在Audience Manager中。 |
+| 系統變數 | 無法使用`d_sid`引數在事件呼叫中實現[!UICONTROL Folder traits]。 |
 | 報告 | [!UICONTROL Folder traits]是自動計算的特徵，不會出現在&#x200B;**[!UICONTROL Overlap Reports]**&#x200B;中。 |

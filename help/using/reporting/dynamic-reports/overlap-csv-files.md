@@ -7,19 +7,26 @@ title: 重疊報表的CSV檔案
 uuid: 047e440e-00c5-4d06-a809-51d776326cd6
 feature: Overlap Reports
 exl-id: 759c39cb-64ec-47dd-a3a4-027408aa6b5e
-TQID: https://experienceleague.adobe.com/3Qq8PwmAWUAO1ic9kan7XFuXPllBioqJhPKCmo6RPww
+TQID: 'https://experienceleague.adobe.com/3Qq8PwmAWUAO1ic9kan7XFuXPllBioqJhPKCmo6RPww'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 909
+source-wordcount: '958'
 ht-degree: 2%
-
 ---
-
 # 重疊報表的CSV檔案{#csv-files-for-overlap-reports}
 
 重疊報表達100萬筆記錄上限時，您可以要求此報表的.csv檔案。 當您看到「發生非預期的錯誤」訊息時，報表可能已達到此限制。 請連絡客戶服務以要求壓縮的.csv檔案，以便您匯入並在您自己的資料庫系統中使用。 檔案可用於區段對區段、區段對特徵和特徵對特徵重疊報表。

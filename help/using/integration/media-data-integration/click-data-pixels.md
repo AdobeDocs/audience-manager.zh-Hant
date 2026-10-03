@@ -7,26 +7,38 @@ title: 透過畫素呼叫擷取行銷活動的點按資料
 uuid: 7c3797f7-9674-493d-972b-38be0584fede
 feature: Adobe Campaign Integration
 exl-id: 41b169bf-3727-4ed7-b74f-fea75244d2cb
-TQID: https://experienceleague.adobe.com/LzQsKoBZYRyfg8F87yWhT2CB2ojlydELPKRfy4xjXHo
+TQID: 'https://experienceleague.adobe.com/LzQsKoBZYRyfg8F87yWhT2CB2ojlydELPKRfy4xjXHo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: b59a5343-ccde-4868-a926-97a27448e694
+    internal-label: Campaign integration
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 639
+source-wordcount: '687'
 ht-degree: 6%
-
 ---
-
 # 透過畫素呼叫擷取行銷活動的點按資料 {#capturing-campaign-click-data-via-pixel-calls}
 
 點按追蹤可記錄協力廠商創意內容的點按型活動，因此可測量整個行銷活動的訪客參與度。 類似於[曝光數集合](/help/using/integration/media-data-integration/impression-data-pixels.md)，事件呼叫已傳送至[!DNL Audience Manager]資料集合伺服器([!DNL DCS])進行處理。 接著，系統會將訪客重新導向至預定網址。
@@ -52,7 +64,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
 
 ## 回應
 
-回應會將瀏覽器重新導向至[!DNL URL]引數中指定的`d_rd`。 回應字串可包含下列任何支援巨集所產生的值。
+回應會將瀏覽器重新導向至`d_rd`引數中指定的[!DNL URL]。 回應字串可包含下列任何支援巨集所產生的值。
 
 根據上述範例，瀏覽器會重新導向至下列[!DNL URL]：
 
@@ -74,7 +86,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_adgroup</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_adgroup%</code> </p> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值廣告群組ID。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值廣告群組ID。 </p> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_adsrc</code> </p> </td> 
@@ -99,7 +111,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_dpid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_id%</code> </p> </td> 
-   <td colname="col2"> <p>資料提供者ID。 </p> <p>通常與<code> d_dpuuid</code>搭配使用，將資料提供者ID連結至使用者ID。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>資料提供者ID。 </p> <p>通常與<code> d_dpuuid</code>搭配使用，將資料提供者ID連結至使用者ID。 </p> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_dpuuid</code> </p> </td> 
@@ -109,7 +121,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_mid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_mid%</code> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID)。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant" format="https" scope="external"> Cookie與Experience Cloud ID</a>。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Experience Cloud</span> ID (ECID)。 如需有關ECID的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html" format="https" scope="external"> Cookie與Experience Cloud ID</a>。 </p> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_placement</code> </p> </td> 
@@ -119,17 +131,17 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_region</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_region%</code> </p> </td> 
-   <td colname="col2"> <p>為請求提供服務的DCS叢集的數值區域ID。 如需DCS的詳細資訊，請參閱<a href="../../reference/system-components/components-data-collection.md">資料收集元件</a>。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>為請求提供服務的DCS叢集的數值區域ID。 如需DCS的詳細資訊，請參閱<a href="../../reference/system-components/components-data-collection.md">資料收集元件</a>。 </p> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> r_rand</code> </p> </td> 
    <td colname="col02"> <p> <code> %r_rand%</code> </p> </td> 
-   <td colname="col2"> <p>用於快取失敗的隨機數。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>用於快取失敗的隨機數。 </p> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_site</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_site%</code> </p> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值網站ID。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值網站ID。 </p> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_src</code> </p> </td> 
@@ -139,7 +151,7 @@ https://client.demdex.net/event?d_event=click&d_creative=123&d_rd=http%3A%2F%2Fa
   <tr> 
    <td colname="col1"> <p> <code> d_uuid</code> </p> </td> 
    <td colname="col02"> <p> <code> %d_uuid%</code> </p> </td> 
-   <td colname="col2"> <p>直接在URL中指定訪客的ID，而非依賴Demdex Cookie。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>直接在URL中指定訪客的ID，而非依賴Demdex Cookie。 </p> <p>可選。 </p> </td> 
   </tr> 
    <tr> 
    <td colname="col1"> <p> <code>gdpr</code> </p> </td> 

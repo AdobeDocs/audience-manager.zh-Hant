@@ -7,22 +7,30 @@ title: 即時傳出資料傳輸
 uuid: 1895e818-7ab8-4569-a920-4b0a4c8b83d2
 feature: Outbound Data Transfers
 exl-id: 12aee831-1a44-4cd6-aeba-7738a584dfe7
-TQID: https://experienceleague.adobe.com/uaVdbqmIOGWFad6aDmDJCBDh4KxNMBL-dei0Rxx2kLQ
+TQID: 'https://experienceleague.adobe.com/uaVdbqmIOGWFad6aDmDJCBDh4KxNMBL-dei0Rxx2kLQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: bcf89bb2-9d92-4897-90ec-483950be810f
+    internal-label: Outbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 677
+source-wordcount: '695'
 ht-degree: 2%
-
 ---
-
 # 即時傳出資料傳輸 {#real-time-outbound-data-transfers}
 
 輸出即時資料傳輸程式會將使用者資料以一系列[!DNL JSON]格式訊息的形式傳送到目的地平台。
@@ -138,7 +146,7 @@ ht-degree: 2%
      <li id="li_8352B919A87242E68716FB9EC0443407">根據區段規則從區段中移除。 </li> 
      <li id="li_83CFEAFE94C14A11AE198D56E80EBB8C">已根據區段的<a href="../../../features/traits/segment-ttl-explained.md">存留時間間隔</a>從區段中移除。 </li> 
      <li id="li_F48D1052BA2B45108225641292CC748D">如果過去120天未出現，則移至非作用中狀態。 </li>
-     <li>因隱私權變更要求而移除（即<span class="keyword"> GDPR</span>）</li>
+     <li>因隱私權變更要求而移除（即<span class="keyword">） gdpr</span>)</li>
     </ul> <p>同步至<span class="keyword"> Audience Manager</span> ID的所有合作夥伴ID會在使用者未分段時收到<code> "Status":"0"</code>標幟。 </p> </td> 
   </tr> 
   <tr valign="top"> 
@@ -151,7 +159,7 @@ ht-degree: 2%
 
 ## 安全性
 
-您可以[使用私密金鑰簽署HTTP要求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)，或透過[!DNL Audience Manager]OAuth 2.0[通訊協定進行](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)驗證，來保護您的即時傳出資料傳輸程式。
+您可以[使用私密金鑰簽署HTTP要求](../../../integration/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.md)，或透過[OAuth 2.0](../../../integration/receiving-audience-data/real-time-outbound-transfers/oauth-in-outbound-transfers.md)通訊協定進行[!DNL Audience Manager]驗證，來保護您的即時傳出資料傳輸程式。
 
 ## 請求
 

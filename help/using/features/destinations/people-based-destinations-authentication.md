@@ -6,25 +6,34 @@ solution: Audience Manager
 title: 使用以人物為基礎的平台進行驗證
 feature: People-based Destinations
 exl-id: d3e136d0-2b06-412a-9b9b-75b661c9aa14
-TQID: https://experienceleague.adobe.com/CRnaV6c1GMdvbnssHoLDJO4H7V79mhg1kYvwMDE-w0c
+TQID: 'https://experienceleague.adobe.com/CRnaV6c1GMdvbnssHoLDJO4H7V79mhg1kYvwMDE-w0c'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 526
+source-wordcount: '541'
 ht-degree: 0%
-
 ---
-
 # 使用以人物為基礎的平台進行驗證 {#authentication-with-people-based-platforms}
 
 >[!IMPORTANT]
@@ -41,7 +50,7 @@ ht-degree: 0%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。 如果您先前設定好與社交平台的整合，您應會看到此頁面所列的專案。 否則，頁面會是空的。
    ![以人物為基礎的整合](assets/pbd-config.png)
 2. 按一下 **[!UICONTROL Add Account]**。
-3. 使用&#x200B;**[!UICONTROL People-Based Platform]**&#x200B;下拉式功能表選取您要設定整合的平台。
+3. 使用&#x200B;**[!UICONTROL People-Based Platform]**下拉式功能表選取您要設定整合的平台。
    ![以人員為基礎的平台](assets/pbd-add.png)
 4. 按一下&#x200B;**[!UICONTROL Confirm]**&#x200B;以重新導向至所選平台的驗證頁面。
 5. 在驗證您的Social Platform帳戶後，您會重新導向至Audience Manager，在那裡您應該會看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!UICONTROL Confirm]**。
@@ -66,6 +75,6 @@ Audience Manager會透過驗證權杖（將於特定時間後到期），處理�
 
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Integrated Accounts]**。
 1. 識別更新驗證所需的整合。 過期的驗證會標示為[!UICONTROL Expired]，而即將過期的驗證會顯示剩餘的驗證天數。
-1. 按一下&#x200B;**[!UICONTROL Renew]**&#x200B;欄中對應的[!UICONTROL Expiration]圖示。 這會觸發&#x200B;**[!UICONTROL Renew Account]**&#x200B;工作流程，帶您回到社交平台的驗證頁面。 驗證後，Token會以新的到期日更新。
+1. 按一下[!UICONTROL Expiration]欄中對應的&#x200B;**[!UICONTROL Renew]**&#x200B;圖示。 這會觸發&#x200B;**[!UICONTROL Renew Account]**&#x200B;工作流程，帶您回到社交平台的驗證頁面。 驗證後，Token會以新的到期日更新。
 
    ![pbd — 續約](assets/pbd-renew.png)

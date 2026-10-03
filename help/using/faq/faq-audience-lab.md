@@ -7,43 +7,48 @@ title: Audience Lab 常見問題集
 uuid: b1daf99d-af60-4f65-987d-794a6d45d566
 feature: Audience Lab
 exl-id: 25bdabb5-2ba8-45d2-81ca-05c0590d7d96
-TQID: https://experienceleague.adobe.com/VDrkY-L2PnhRdSTmZd-0sjpJEI5vHxm9c3uMqtyQd3Y
+TQID: 'https://experienceleague.adobe.com/VDrkY-L2PnhRdSTmZd-0sjpJEI5vHxm9c3uMqtyQd3Y'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: e8501b6e-f5e0-495d-8a3d-6aa9293cdcc5
+    internal-label: Audience Lab
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 326
+source-wordcount: '326'
 ht-degree: 94%
-
 ---
-
 # Audience Lab 常見問題集{#audience-lab-faq}
 
 關於 Audience Lab 功能的常見問題。
 
 <br> 
 
-**在測試群組中建立的測試區段是否有不同的區段 ID？如何將這些 ID 對應至不同的目的地？**
+**在測試群組中建立的測試區段是否有不同的區段 ID？ 如何將這些 ID 對應至不同的目的地？**
 
-是的，測試區段有不同的區段 ID。對於具有 [!UICONTROL Auto-fill Destination Mapping] 的目的地或已傳送至 [!DNL Google] 的區段，[!UICONTROL Audience Lab] 處理對應值的方式就像一般的目的地一樣。
+是的，測試區段有不同的區段 ID。 對於具有 [!UICONTROL Auto-fill Destination Mapping] 的目的地或已傳送至 [!DNL Google] 的區段，[!UICONTROL Audience Lab] 處理對應值的方式就像一般的目的地一樣。
 
 <br> 
 
 **相同的轉換特徵可以與多個測試群組相關聯嗎？**
 
-可以，這是允許的情況。假設在某個案例中，一個測試使用與轉換 X 相關聯的男性細分群體，而另一個測試使用與轉換 X 相關聯的女性細分群體。這兩個測試都會促進轉換，因為它們測試的是兩個不同的客群。
+可以，這是允許的情況。 假設在某個案例中，一個測試使用與轉換 X 相關聯的男性細分群體，而另一個測試使用與轉換 X 相關聯的女性細分群體。這兩個測試都會促進轉換，因為它們測試的是兩個不同的客群。
 
 <br> 
 
-**假設測試群組使用已驗證的設定檔來分割測試區段。已驗證的設定檔連結至 4 個 [Audience Manager UUID](../reference/ids-in-aam.md)。如果訪客展現來自四個 UUID 其中之一的轉換特徵，[!UICONTROL Audience Lab] 會將此轉換計為一次轉換還是四次轉換？**
+**假設測試群組使用已驗證的設定檔來分割測試區段。 已驗證的設定檔連結至 4 個 [Audience Manager UUID](../reference/ids-in-aam.md)。 如果訪客展現來自四個 UUID 其中之一的轉換特徵，[!UICONTROL Audience Lab] 會將此轉換計為一次轉換還是四次轉換？**
 
 在此情況下，[!UICONTROL Audience Lab] 只會計為一次轉換。
 
 <br> 
 
-**如果上述案例的訪客先展現來自四個 UUID (連結至其已驗證的設定檔) 之一的轉換特徵，接著又展現另外兩個 UUID (連結至其已驗證的設定檔) 的轉換特徵，又會怎麼計算？此案例會計為一次還是三次轉換？**
+**如果上述案例的訪客先展現來自四個 UUID (連結至其已驗證的設定檔) 之一的轉換特徵，接著又展現另外兩個 UUID (連結至其已驗證的設定檔) 的轉換特徵，又會怎麼計算？ 此案例會計為一次還是三次轉換？**
 
 在此案例中，[!UICONTROL Audience Lab] 會計為 3 次轉換，每個展現驗證特徵的裝置各算一次。
 
@@ -55,4 +60,4 @@ ht-degree: 94%
 
 **我可以將[!UICONTROL Audience Lab]與[!UICONTROL Profile Link Device Graph]和外部裝置圖形（ Tapad裝置圖形、Liveramp裝置圖形）結合使用嗎？**
 
-目前，使用 [!UICONTROL Profile Link Device Graph] 時，[!UICONTROL Audience Lab] 只能依連接至合格裝置的裝置來分割區段母體。我們正致力在 [!UICONTROL Audience Lab] 中增加對其他裝置圖表的支援，將會在提供支援時通知您。
+目前，使用 [!UICONTROL Profile Link Device Graph] 時，[!UICONTROL Audience Lab] 只能依連接至合格裝置的裝置來分割區段母體。 我們正致力在 [!UICONTROL Audience Lab] 中增加對其他裝置圖表的支援，將會在提供支援時通知您。

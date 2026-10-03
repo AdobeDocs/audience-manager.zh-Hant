@@ -7,18 +7,24 @@ title: 瞭解Edge資料中心
 uuid: 4177e666-99f4-453d-94dd-058c6182c8d2
 feature: System Components
 exl-id: 28958b49-3075-4601-9271-ef2913721a66
-TQID: https://experienceleague.adobe.com/S1eOQwB9eoOlLbnbXtqjArrSEa2cTXjWwvJfwNbAtXc
+TQID: 'https://experienceleague.adobe.com/S1eOQwB9eoOlLbnbXtqjArrSEa2cTXjWwvJfwNbAtXc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: f518b7e7-52a7-4298-a970-88c25c36ab31
+    internal-label: System components
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 222
+source-wordcount: '225'
 ht-degree: 0%
-
 ---
-
 # 瞭解Edge資料中心{#understanding-the-edge-data-center}
 
 Audience Manager使用分散式邊緣運算拓撲，以符合外部來源對我們的系統的需求。
@@ -47,4 +53,4 @@ Edge運算提供更優異的效能，因應網際網路廣泛擴散的需求，�
 
 ## 地理分佈與負載平衡 {#geo-dist-balance}
 
-檢視[!DNL DCS]資料收集元件[中的](../../reference/system-components/components-data-collection.md)區段。
+檢視[資料收集元件](../../reference/system-components/components-data-collection.md)中的[!DNL DCS]區段。

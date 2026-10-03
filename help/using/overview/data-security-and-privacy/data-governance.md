@@ -7,30 +7,44 @@ keywords: GDPR UI， GDPR API， CCPA，隱私權，同意，模糊化，治理
 title: 資料控管
 feature: Data Governance & Privacy
 exl-id: 52aeca00-73f2-4525-9e11-34a472ec45c6
-TQID: https://experienceleague.adobe.com/HVF-SxKO4mcE7YkiiwXLBPn2K3N5NIjpZHFWgZb0CoI
+TQID: 'https://experienceleague.adobe.com/HVF-SxKO4mcE7YkiiwXLBPn2K3N5NIjpZHFWgZb0CoI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 451
+source-wordcount: '460'
 ht-degree: 90%
-
 ---
-
 # 資料控管
 
 ## 概述 {#overview}
@@ -39,9 +53,9 @@ Audience Manager 中的資料控管指的是 Audience Manager 中客戶資料的
 
 ## 收集IP位址和IP位址模糊化 {#collecting-ip-addresses}
 
-前往客戶網站的訪客 [!DNL IP] 位址會傳送至 Adobe [!DNL Data Processing Center] ([!DNL DPC])，且可能在此儲存該 [!DNL IP] 位址。視訪客的網路設定而定，此 [!DNL IP] 位址不一定代表訪客電腦的 [!DNL IP] 位址。例如，該 [!DNL IP] 位址可能是網路位址轉譯 (NAT) 防火牆、[!DNL HTTP] Proxy 或網際網路閘道的外部 [!DNL IP] 位址。
+前往客戶網站的訪客 [!DNL IP] 位址會傳送至 Adobe [!DNL Data Processing Center] ([!DNL DPC])，且可能在此儲存該 [!DNL IP] 位址。 視訪客的網路設定而定，此 [!DNL IP] 位址不一定代表訪客電腦的 [!DNL IP] 位址。 例如，該 [!DNL IP] 位址可能是網路位址轉譯 (NAT) 防火牆、[!DNL HTTP] Proxy 或網際網路閘道的外部 [!DNL IP] 位址。
 
-**IP 模糊化方法：** Adobe Audience Manager 遵循「設計隱私權」原則，允許客戶透過 UI 啟用 [!DNL IP] 模糊化功能 (針對全球各地理區域或特定國家/地區皆可)。若啟用此設定，將 [!DNL IP] 位址擷取到 Audience Manager 中時，系統會立即捨棄該 [!DNL IP] 位址的最後八位元 (最後一部分)。Audience Manager 會在處理前 (包括任何選擇性地理查閱或記錄 [!DNL IP] 位址之前) 捨棄 [!DNL IP] 位址的這個部分。例如：
+**IP 模糊化方法：** Adobe Audience Manager 遵循「設計隱私權」原則，允許客戶透過 UI 啟用 [!DNL IP] 模糊化功能 (針對全球各地理區域或特定國家/地區皆可)。 若啟用此設定，將 [!DNL IP] 位址擷取到 Audience Manager 中時，系統會立即捨棄該 [!DNL IP] 位址的最後八位元 (最後一部分)。 Audience Manager 會在處理前 (包括任何選擇性地理查閱或記錄 [!DNL IP] 位址之前) 捨棄 [!DNL IP] 位址的這個部分。 例如：
 
 * 之前：`255.255.255.255`
 * 之後：`255.255.255.0`
@@ -54,12 +68,12 @@ Audience Manager 中的資料控管指的是 Audience Manager 中客戶資料的
 
 >[!VIDEO](https://video.tv.adobe.com/v/27218/)
 
-**地理細分：**&#x200B;如果您啟用 [!DNL IP] 位址模糊化功能，[!DNL IP] 位址的其餘幾個八位元仍可用於 Audience Manager 中的地理細分和報表。如果您未啟用 [!DNL IP] 位址模糊化功能，Audience Manager 會使用完整的 [!DNL IP] 位址。在任何情況下，您都可以使用「地理細分」功能，依地理區域識別 [!DNL IP] 位置，但在使用 [!DNL IP] 模糊化的情況下精確度會略為降低。[!DNL IP] 位址模糊化可能會顯著影響城市層級資訊的取得。地區和國家層級資訊則只會受到輕微影響。地理細分資料的詳細程度只到城市層級或郵遞區號層級，不到個人層級。進一步瞭解[地理目標定位](../../features/traits/trait-geotarget-keys.md)，以及如何使用地理變數設定特徵。
+**地理細分：**&#x200B;如果您啟用 [!DNL IP] 位址模糊化功能，[!DNL IP] 位址的其餘幾個八位元仍可用於 Audience Manager 中的地理細分和報表。 如果您未啟用 [!DNL IP] 位址模糊化功能，Audience Manager 會使用完整的 [!DNL IP] 位址。 在任何情況下，您都可以使用「地理細分」功能，依地理區域識別 [!DNL IP] 位置，但在使用 [!DNL IP] 模糊化的情況下精確度會略為降低。 [!DNL IP] 位址模糊化可能會顯著影響城市層級資訊的取得。 地區和國家層級資訊則只會受到輕微影響。 地理細分資料的詳細程度只到城市層級或郵遞區號層級，不到個人層級。 進一步瞭解[地理目標定位](../../features/traits/trait-geotarget-keys.md)，以及如何使用地理變數設定特徵。
 
 ## Audience Manager中的資料保留 {#data-retention}
 
-對您的資料套用適當、安全且及時的資料保留政策，是遵守資料隱私權法規的重要一環。Audience Manager 客戶可定義所需的 TTL (存留時間)，以設定特徵和區段的自訂保留期。如需保留期的詳細資訊，請參閱[資料保留常見問題集](../../faq/faq-privacy.md)。
+對您的資料套用適當、安全且及時的資料保留政策，是遵守資料隱私權法規的重要一環。 Audience Manager 客戶可定義所需的 TTL (存留時間)，以設定特徵和區段的自訂保留期。 如需保留期的詳細資訊，請參閱[資料保留常見問題集](../../faq/faq-privacy.md)。
 
 ## 跨境資料傳輸 {#data-transfers}
 
-當 Audience Manager 跨國境傳輸客戶的個人資料，Audience Manager 會確實遵守適用法律。請造訪 [Adobe 隱私權中心](https://www.adobe.com/tw/privacy/eudatatransfers.html)瞭解詳細資訊。
+當 Audience Manager 跨國境傳輸客戶的個人資料，Audience Manager 會確實遵守適用法律。 請造訪 [Adobe 隱私權中心](https://www.adobe.com/tw/privacy/eudatatransfers.html)瞭解詳細資訊。

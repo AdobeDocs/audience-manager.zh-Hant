@@ -7,20 +7,26 @@ title: 輸出範本巨集
 uuid: dec082d3-306b-4ff5-afb2-418bd543d8d0
 feature: Outbound Data Transfers
 exl-id: 6988d0e5-7a99-4291-91d3-bcd3a15630fd
-TQID: https://experienceleague.adobe.com/XHerr-G8acd--a9-ufwafOHp54nXNFaMnVjnvTHhKlQ
+TQID: 'https://experienceleague.adobe.com/XHerr-G8acd--a9-ufwafOHp54nXNFaMnVjnvTHhKlQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: bcf89bb2-9d92-4897-90ec-483950be810f
+    internal-label: Outbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 708
+source-wordcount: '712'
 ht-degree: 1%
-
 ---
-
 # 輸出範本巨集 {#outbound-template-macros}
 
 列出可用來建立輸出範本的巨集。 這些包括檔案名稱巨集、標題巨集和內容巨集。
@@ -64,7 +70,7 @@ ht-degree: 1%
   <tr> 
    <td colname="col1"> <p> <code> SPLITNUM </code> </p> </td> 
    <td colname="col2"> <p>指示將輸出檔案分割成多個零件。 將檔案名稱中的SPLITNUM區段取代為前面加零的零件編號，確保SPLITNUM區段至少有三個字元。</p>
-   <p>SPLITNUM巨集不需要由&lt;&gt;字元包圍。</p><p>範例： <code>&lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;SPLITNUM.csv</code>
+   <p>SPLITNUM巨集不需要由&lt;&gt;字元包圍。</p><p>範例: <code>&lt;SYNC_TYPE&gt;_&lt;ORDER_ID&gt;_&lt;DPID&gt;_&lt;SYNC_MODE&gt;_&lt;TIMESTAMP&gt;SPLITNUM.csv</code>
 <p>s3_123456_9999_full_1566906141001.csv</p> 
 <p>s3_123456_9999_full_1566906141002.csv</p> 
 <p>s3_123456_9999_full_1566906141003.csv</p> 
@@ -113,7 +119,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <code> CLOSE_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入右大括弧<code>&rbrace;</code>字元。 </p> </td> 
+   <td colname="col2"> <p>插入右大括弧<code>}</code>字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> DP_UUID </code> </p> </td> 
@@ -141,11 +147,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPEN_CURLY_BRACKET </code> </p> </td> 
-   <td colname="col2"> <p>插入左大括弧<code>&lbrace;</code>字元。 </p> </td> 
+   <td colname="col2"> <p>插入左大括弧<code>{</code>字元。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OPT_OUT </code> </p> </td> 
-   <td colname="col2"> <p>不再提倡。請勿使用。 </p> </td> 
+   <td colname="col2"> <p>不再提倡。 請勿使用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ORDER_ID </code> </p> </td> 
@@ -153,7 +159,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OUTPUT_ATTRIBUTE_TYPE </code> </p> </td> 
-   <td colname="col2"> <p>不再提倡。請勿使用。 </p> </td> 
+   <td colname="col2"> <p>不再提倡。 請勿使用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> OUTPUT_ATTRIBUTE_VALUE </code> </p> </td> 
@@ -175,8 +181,8 @@ ht-degree: 1%
    <td colname="col1"> <p> <code> SEGMENT_LIST </code> </p> </td> 
    <td colname="col2"> <p>傳回清單中的區段清單。 接受下列選用引數： </p> 
     <ul id="ul_B111AA0D6C18445598A1444B8B7E9325"> 
-     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>：區段識別碼。 不再提倡。使用<code> sid </code>。 </li> 
-     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>：客戶區段識別碼。 不再提倡。使用<code> sid </code>。 </li> 
+     <li id="li_8603B40229624856AF1FBC434DB8F16A"> <code> segmentId </code>：區段識別碼。 不再提倡。 使用 <code> sid </code>。 </li> 
+     <li id="li_1EF40DDCA3C5447586904CF021D8F912"> <code> csegid </code>：客戶區段識別碼。 不再提倡。 使用 <code> sid </code>。 </li> 
      <li id="li_D85F0A5D16AE4DAFB55C17DBB35EA66E"> <code> sid </code>：區段識別碼 </li> 
      <li id="li_9BE103EFD8384464B46FAC00422431DB"> <code> type </code>：傳回<code> 5 </code>，這個靜態的硬式編碼值會將資料識別為區段資料。 </li> 
      <li id="li_FE5049089F2944FA9DB9F9D546DBA167"> <code> alias </code>：已棄用。 請勿使用。 </li>

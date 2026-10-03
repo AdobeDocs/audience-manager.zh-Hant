@@ -6,16 +6,21 @@ title: 從訊號建立特徵
 uuid: 4f324404-0c24-4e3b-96c1-7c1b28a4536d
 feature: Data Explorer
 exl-id: 14308ef0-58eb-4b76-858c-d0da560f55fd
-TQID: https://experienceleague.adobe.com/XKtxgfC9Zv-9CqiZb4Y916yxalGuz5YnsE31Nax8z0M
+TQID: 'https://experienceleague.adobe.com/XKtxgfC9Zv-9CqiZb4Y916yxalGuz5YnsE31Nax8z0M'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: a2c6d65b-635d-4454-a9cc-9771ed501bb4
+    internal-label: Data Explorer
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: '338'
 ht-degree: 0%
-
 ---
-
 # 從訊號建立特徵
 
 從所有訊號（包括已在特徵中使用的訊號）建立新特徵，並擷取建立特徵後符合資格的未來對象。 觀看影片以快速展示，或閱讀詳細資訊：
@@ -28,7 +33,7 @@ ht-degree: 0%
 
 建立新特徵時，會根據訊號型別預先設定特徵型別：
 
-* 即時訊號、可操作的記錄檔和&#x200B;**[!UICONTROL Rule-based]**&#x200B;訊號的[!DNL Adobe Analytics]特徵；
+* 即時訊號、可操作的記錄檔和[!DNL Adobe Analytics]訊號的&#x200B;**[!UICONTROL Rule-based]**&#x200B;特徵；
 
 * 已上線訊號的&#x200B;**[!UICONTROL Onboarded]**&#x200B;特徵。
 

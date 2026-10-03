@@ -6,24 +6,30 @@ solution: Audience Manager
 title: 將Twitter自訂對象設定為自助服務以裝置為基礎的目的地
 feature: People-based Destinations
 exl-id: 13b36469-3f61-47b1-9355-ca329de1fb24
-TQID: https://experienceleague.adobe.com/3qEBhzjr6meP0xEUECLT-JMlw9kWizujExCMIg23MJY
+TQID: 'https://experienceleague.adobe.com/3qEBhzjr6meP0xEUECLT-JMlw9kWizujExCMIg23MJY'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 689
+source-wordcount: '717'
 ht-degree: 1%
-
 ---
-
 # 將[!DNL Twitter Custom Audiences]設定為自助式以裝置為基礎的目的地 {#configure-twitter}
 
 本文說明如何設定與[Twitter自訂對象](https://business.twitter.com/en/help/campaign-setup/campaign-targeting/custom-audiences.html)的整合。
@@ -40,7 +46,7 @@ ht-degree: 1%
 
 本節說明為[!DNL Twitter Custom Audiences]設定以裝置為基礎的新目的地時，必須遵循的步驟。 此情境假設您沒有透過您的Adobe顧問或客戶服務設定現有的[!DNL Twitter Custom Audiences]目的地。
 
-### 步驟 1.使用[!DNL Twitter Custom Audiences]進行驗證 {#step1-authenticate-with-twitter}
+### 步驟 1. 使用[!DNL Twitter Custom Audiences]進行驗證 {#step1-authenticate-with-twitter}
 
 在新增以裝置為基礎的目的地之前，您需要連結Audience Manager和您的[!DNL Twitter Custom Audiences]帳戶。 以下是其操作方式：
 
@@ -52,7 +58,7 @@ ht-degree: 1%
 
 1. 完成驗證後，系統會將您重新導向至Audience Manager，您應會在該處看到相關的廣告商帳戶。 選取您要使用的廣告商帳戶，然後按一下&#x200B;**[!DNL Confirm]**。
 
-### 步驟 2.建立以裝置為基礎的新目的地 {#step2-create-new-destination}
+### 步驟 2. 建立以裝置為基礎的新目的地 {#step2-create-new-destination}
 
 連結Audience Manager和[!DNL Twitter Custom Audiences]後，您就可以建立新的目的地。 以下是其操作方式：
 

@@ -7,20 +7,26 @@ title: 設定檔合併規則的一般使用案例
 uuid: c9eb41c8-fe19-45f8-9ff1-552c11ef08da
 feature: Profile Merge
 exl-id: 66341736-4f61-4306-b9f4-1b37dc7ce0ff
-TQID: https://experienceleague.adobe.com/Qk5jO5i-HgjV75z0--cXzgv7hMbS-s6sEyanGqy8m9I
+TQID: 'https://experienceleague.adobe.com/Qk5jO5i-HgjV75z0--cXzgv7hMbS-s6sEyanGqy8m9I'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 894
+source-wordcount: '921'
 ht-degree: 1%
-
 ---
-
 # 設定檔合併規則的一般使用案例 {#general-use-cases-for-profile-merge-rules}
 
 [!UICONTROL Profile Merge Rules]選項可讓您根據業務需求或目標，擴大或縮小受眾對特定受眾的關注。 這些一般使用案例會探索如何使用可用選項，並針對個人、家庭和跨裝置目標定位建立合併規則。 [!UICONTROL Profile Merge Rules]使用即時和批次目的地。
@@ -63,7 +69,7 @@ John使用自己的帳戶預訂旅行票和特別優惠，而Jane則使用自己
 
 ![last-device-profile](assets/last-device-profile.png)
 
-假設一個區段是由收入超過$100.000/年的家庭所組成，其中至少包含一個在[!DNL iPhone 7]上為[!DNL Data Plan B]的裝置。 我們有兩個家庭設定檔（跨裝置設定檔），分別連線至兩個不同的裝置設定檔。 符合區段資格所需的特徵會分佈在裝置和跨裝置設定檔中。
+假設一個區段是由收入超過$100.000/年的家庭所組成，其中至少包含一個在[!DNL Data Plan B]上為[!DNL iPhone 7]的裝置。 我們有兩個家庭設定檔（跨裝置設定檔），分別連線至兩個不同的裝置設定檔。 符合區段資格所需的特徵會分佈在裝置和跨裝置設定檔中。
 
 Audience Manager會合併每個裝置+跨裝置設定檔配對，以檢視合併的特徵集是否符合區段的資格。 由於Audience Manager會評估合併中包含的每個設定檔，因此裝置設定檔和家庭設定檔都可以分段。
 
@@ -87,7 +93,7 @@ Audience Manager會合併每個裝置+跨裝置設定檔配對，以檢視合併
 
 ## 裝置圖表選項 {#device-graph-options}
 
-為[!UICONTROL device graph]規則選擇[!UICONTROL Profile Merge]選項取決於您的數位財產和業務目標所獨有的條件。 這些一般准則可協助您瞭解何時使用某一種圖表型別與另一種圖表型別。 請注意，您必須與外部裝置圖表具有合約關係，才能使用這些選項。 請參閱下表，瞭解何時選擇裝置圖表選項的一般指引。 如需特定使用案例，請參閱[設定檔連結裝置圖表使用案例](profile-link-use-case.md)和[外部裝置圖表使用案例](external-graph-use-cases.md)。
+為[!UICONTROL Profile Merge]規則選擇[!UICONTROL device graph]選項取決於您的數位財產和業務目標所獨有的條件。 這些一般准則可協助您瞭解何時使用某一種圖表型別與另一種圖表型別。 請注意，您必須與外部裝置圖表具有合約關係，才能使用這些選項。 請參閱下表，瞭解何時選擇裝置圖表選項的一般指引。 如需特定使用案例，請參閱[設定檔連結裝置圖表使用案例](profile-link-use-case.md)和[外部裝置圖表使用案例](external-graph-use-cases.md)。
 
 <table id="table_66D9152D4FF040A186003272D456625D"> 
  <thead> 
@@ -108,7 +114,7 @@ Audience Manager會合併每個裝置+跨裝置設定檔配對，以檢視合併
   </tr> 
   <tr> 
    <td colname="col1"> <p>外部裝置圖表選項 </p> </td> 
-   <td colname="col2"> <p>使用與<span class="wintitle"> Audience Manager</span>整合的任何外部裝置圖表建置的<span class="keyword">設定檔合併</span>規則適用於： </p> <p> 
+   <td colname="col2"> <p>使用與<span class="keyword"> Audience Manager</span>整合的任何外部裝置圖表建置的<span class="wintitle">設定檔合併</span>規則適用於： </p> <p> 
      <ul id="ul_D76D773988604A619FA4A3BF37F910F0"> 
       <li id="li_969A0755A9E34CBEB2F7331C137B9A26">具有低層級客戶驗證的數位屬性。 </li> 
       <li id="li_AC78C8B4AD5340FFAC44FE851096C6A6">廣泛、高觸及率的品牌行銷活動。 </li> 

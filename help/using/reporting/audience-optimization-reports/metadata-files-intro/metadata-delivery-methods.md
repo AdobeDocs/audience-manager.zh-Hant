@@ -7,20 +7,28 @@ title: 中繼資料檔案的傳送方法
 uuid: 5199ee9b-920d-423d-8070-05a017ecd562
 feature: Log Files
 exl-id: 6ef2a80c-2574-4446-b755-28027818b5eb
-TQID: https://experienceleague.adobe.com/1WX2-VoBmcDsUqntootQYpwQRtAOktxompEZfxVE9TE
+TQID: 'https://experienceleague.adobe.com/1WX2-VoBmcDsUqntootQYpwQRtAOktxompEZfxVE9TE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 351
+source-wordcount: '353'
 ht-degree: 0%
-
 ---
-
 # 中繼資料檔案的傳送方法{#delivery-methods-for-metadata-files}
 
 將中繼資料檔案傳送至您Audience Manager帳戶的特殊[!DNL Amazon S3]目錄，以傳送或更新中繼資料檔案。 請參閱本節以瞭解有關傳送/目錄路徑、檔案處理時間和更新的資訊。
@@ -54,7 +62,7 @@ ht-degree: 0%
 |---------|----------|
 | `.../log_ingestion/` | 這是目錄儲存路徑的開頭。 一切設定完成後，您將會收到完整路徑。 |
 | `pid=<AAM ID>` | 此機碼值組包含您的Audience Manager客戶ID。 |
-| `dpid=<d_src>` | 此機碼值組包含傳入事件呼叫的資料來源ID。 資料來源ID是將檔案中的所有內容與其所屬的實際資料繫結的值。 </br>例如，假設您有ID 123且名稱為「Advertiser Creative A」的創意產品。 由於事件呼叫只會在ID中傳遞，因此您必須在中繼資料檔案中包含「廣告商Creative A」。 行銷活動和創意屬於資料來源。 資料來源ID可將這些連結在一起，並可讓我們將檔案內容準確地與事件呼叫時傳入的ID建立關聯。 請參閱[事件呼叫ID如何決定檔案名稱、內容和傳遞路徑](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names)。 |
+| `dpid=<d_src>` | 此機碼值組包含傳入事件呼叫的資料來源ID。 資料來源ID是將檔案中的所有內容與其所屬的實際資料繫結的值。</br> 例如，假設您有ID 123且名稱為「Advertiser Creative A」的創意產品。 由於事件呼叫只會在ID中傳遞，因此您必須在中繼資料檔案中包含「廣告商Creative A」。 行銷活動和創意屬於資料來源。 資料來源ID可將這些連結在一起，並可讓我們將檔案內容準確地與事件呼叫時傳入的ID建立關聯。 請參閱[事件呼叫ID如何決定檔案名稱、內容和傳遞路徑](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-overview.md#how-ids-shape-file-names)。 |
 | `<yyyymmdd_0_child ID>` | 這是檔案名稱。 請參閱[中繼資料檔案的命名慣例](/help/using/reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md)。 |
 
 ## 檔案處理時間和更新 {#processing-times}

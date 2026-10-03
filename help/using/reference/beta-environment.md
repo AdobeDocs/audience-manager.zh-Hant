@@ -8,23 +8,28 @@ title: Beta環境
 uuid: de4a1a46-cfa4-4f64-8569-48a7650fd8cf
 feature: Reference
 exl-id: a6a5e1c2-29a2-40bf-972c-87fb8716a394
-TQID: https://experienceleague.adobe.com/zz0F-QZ2QIVdVkGO5T9LoX4R8T12ivdz-pQ3Iv-DLao
+TQID: 'https://experienceleague.adobe.com/zz0F-QZ2QIVdVkGO5T9LoX4R8T12ivdz-pQ3Iv-DLao'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 subfeature_v2:
   - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+    internal-label: Data Collection Server
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: '378'
 ht-degree: 2%
-
 ---
-
 # Beta環境 {#beta-environment}
 
 測試版環境可用來測試您的Audience Manager實作。 在Beta版中進行的變更不會影響生產資料。 如果您有興趣使用測試版環境，請聯絡您的Audience Manager合作夥伴解決方案代表。
@@ -39,7 +44,7 @@ bveta環境中的功能是生產環境的精確復本，沒有任何實驗性或
 
 >[!IMPORTANT]
 >
->請注意，您的客戶資料（[訊號、特徵和區段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=zh-Hant)）並未在生產環境和Beta版環境之間同步。
+>請注意，您的客戶資料（[訊號、特徵和區段](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html?lang=en)）並未在生產環境和Beta版環境之間同步。
 
 ## 傳入流量
 
@@ -57,7 +62,7 @@ bveta環境中的功能是生產環境的精確復本，沒有任何實驗性或
 
 | 服務 | url/主機名稱 | 如何取得存取權 |
 |--- |--- | --- |
-| S3 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的Beta版執行個體設定Amazon S3貯體。 閱讀使用Amazon S3[的](../reference/amazon-s3.md)優點。 |
+| S3 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務 | 請聯絡您的Audience Manager合作夥伴解決方案代表或客戶服務，為您的Beta版執行個體設定Amazon S3貯體。 閱讀使用Amazon S3](../reference/amazon-s3.md)的[優點。 |
 | DCS | `https://dcs-beta.demdex.net/...` | 請參閱[在Beta環境中存取DCS](../reference/beta-environment.md#access-dcs-beta-environment)。 |
 | UI | `https://bank-beta.demdex.com` | 您的生產環境憑證對測試版環境有效。 |
 | API | `https://api-beta.demdex.com/...` | 您的生產環境憑證對測試版環境有效。 建議您建立一般API使用者，[檢視詳細資料](../api/rest-api-main/aam-api-getting-started.md#requirements)。 |

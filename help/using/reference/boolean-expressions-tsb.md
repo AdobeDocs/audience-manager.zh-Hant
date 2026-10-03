@@ -7,18 +7,21 @@ title: 特徵和區段產生器中的布林運算式
 uuid: 14f02d3f-4c84-41fe-bc91-b34f0d49574a
 feature: Reference
 exl-id: 44bc0385-2cce-4173-9833-b9a30fb6edae
-TQID: https://experienceleague.adobe.com/-Fl1kRTxAy7fBmXx--xDFYZuDZy-7y8Li4YwBeoGvZo
+TQID: 'https://experienceleague.adobe.com/-Fl1kRTxAy7fBmXx--xDFYZuDZy-7y8Li4YwBeoGvZo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 529
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # 特徵和區段產生器中的布林運算式{#boolean-expressions-in-trait-and-segment-builder}
 
 本文說明Audience Manager特徵和區段工具如何使用布林運算式AND、OR及NOT。
@@ -78,7 +81,7 @@ c_tb_boolean.xml
 
 **[!UICONTROL OR]使用案例範例**
 
-當您想要建立具有廣泛對象資格要求的訊號時，[!UICONTROL OR]運運算元很有用。 如果您有數個特徵或區段資格要求，當您的網站訪客展現這些特徵中的[!UICONTROL OR]任何&#x200B;*時，*&#x200B;運運算元將會評估為true。 當您想要快速建立合格網站訪客的廣泛對象時，[!UICONTROL OR]可能最有用。
+當您想要建立具有廣泛對象資格要求的訊號時，[!UICONTROL OR]運運算元很有用。 如果您有數個特徵或區段資格要求，當您的網站訪客展現這些特徵中的&#x200B;*任何*&#x200B;時，[!UICONTROL OR]運運算元將會評估為true。 當您想要快速建立合格網站訪客的廣泛對象時，[!UICONTROL OR]可能最有用。
 
 **[!UICONTROL AND NOT]使用案例範例**
 

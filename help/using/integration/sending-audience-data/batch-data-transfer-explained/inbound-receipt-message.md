@@ -7,20 +7,26 @@ title: 傳入處理後傳送給合作夥伴的範例訊息
 uuid: 69e3a8b3-8465-4f4c-8005-8a9ff15ae19a
 feature: Inbound Data Transfers
 exl-id: acfc788f-63e6-445f-a086-0a2cc6c8865b
-TQID: https://experienceleague.adobe.com/CpGIKkc7rAP8h3ij53-YMv3mHoU7CWwpNF5EeB3oUOQ
+TQID: 'https://experienceleague.adobe.com/CpGIKkc7rAP8h3ij53-YMv3mHoU7CWwpNF5EeB3oUOQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 636
+source-wordcount: '667'
 ht-degree: 0%
-
 ---
-
 # 傳入處理後傳送給合作夥伴的範例訊息{#sample-message-to-partners-after-inbound-processing}
 
 每當處理輸入[!UICONTROL Server-to-Server]檔案時，會透過電子郵件將收據傳送給合作夥伴解決方案，若已設定，則傳送給合作夥伴。
@@ -49,7 +55,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td colname="col1"> 檔案名稱 </td> 
-   <td colname="col2"> <p>Adobe針對此合作夥伴收到的所有傳入檔案清單，這些檔案已一起處理。 在上一個範例電子郵件訊息中，合作夥伴ID為7，資料擁有者ID為901。 </p> <p>機尾編號(1,2，3...)是客戶或入站分銷商新增的分割編號。 </p> </td> 
+   <td colname="col2"> <p>Adobe針對此合作夥伴收到的所有傳入檔案清單，這些檔案已一起處理。 在上一個範例電子郵件訊息中，合作夥伴ID為7，資料擁有者ID為901。 </p> <p>機尾編號(1,2，3...) 是客戶或入站分銷商新增的分割編號。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 已收到的記錄 </td> 

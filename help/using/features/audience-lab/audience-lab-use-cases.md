@@ -7,23 +7,30 @@ title: Audience Lab使用案例
 uuid: 727bec8a-df9a-40cc-b8a7-e1980d146a84
 feature: Audience Lab
 exl-id: b68f48bd-0d5d-4b72-84f3-a6f3acea6c49
-TQID: https://experienceleague.adobe.com/mDcQUaLcTjBA31iTkVJbm1UOy9rqRv3yHca4ZH-HliE
+TQID: 'https://experienceleague.adobe.com/mDcQUaLcTjBA31iTkVJbm1UOy9rqRv3yHca4ZH-HliE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: e8501b6e-f5e0-495d-8a3d-6aa9293cdcc5
+    internal-label: Audience Lab
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '587'
 ht-degree: 0%
-
 ---
-
 # Audience Lab使用案例 {#audience-lab-use-cases}
 
 [!UICONTROL Audience Lab]可讓您使用基準線區段來建立測試群組，以啟用數個使用案例。 您可以將測試群組劃分為數個互斥的測試區段，並將這些區段對應至不同的目的地，然後判斷哪些區段在推動轉換方面最有效。
@@ -34,16 +41,16 @@ ht-degree: 0%
 
 <!-- audience-lab-compare-models.xml -->
 
-在此使用案例中，您會比較不同的模型。 您可以使用透過內部資料倉儲建立的模型，並在[!DNL Audience Manager]中將其匯入為[已上線特徵](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)，或者您可以使用[中的](../../features/algorithmic-models/understanding-models.md)演演算法模型[!DNL Audience Manager]功能。
+在此使用案例中，您會比較不同的模型。 您可以使用透過內部資料倉儲建立的模型，並在[!DNL Audience Manager]中將其匯入為[已上線特徵](../../features/traits/create-onboarded-rule-based-traits.md#create-rules-based-or-onboarded-traits)，或者您可以使用[!DNL Audience Manager]中的[演演算法模型](../../features/algorithmic-models/understanding-models.md)功能。
 
 1. 在[模型產生器](../../features/algorithmic-models/create-model.md)中或透過外部平台建立兩個模型。
 1. 從演演算法模型建立[演演算法特徵](../../features/traits/create-algorithmic-traits.md)，或將您自己的模型匯入為已登入的特徵。
 1. 建立互斥區段，讓兩個模型中的使用者不會重疊：
 
    * 建立&#x200B;*模型1區段*&#x200B;和&#x200B;*模型2區段*。
-   * 讓&#x200B;*模型1區段*&#x200B;的區段規則成為[!DNL AND NOT]模型2區段&#x200B;*的模型1特徵*&#x200B;模型2特徵，反之亦然。
+   * 讓&#x200B;*模型1區段*&#x200B;的區段規則成為&#x200B;*模型2區段*&#x200B;的模型1特徵[!DNL AND NOT]模型2特徵，反之亦然。
 
-1. [在](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)中建立兩個區段測試群組[!UICONTROL Audience Lab]，一個以&#x200B;*模型1區段*&#x200B;作為基準，另一個以&#x200B;*模型2區段*&#x200B;作為基準。
+1. [在[!UICONTROL Audience Lab]中建立兩個區段測試群組](../../features/audience-lab/audience-lab-manage-test-groups.md#create-test-groups)，一個以&#x200B;*模型1區段*&#x200B;作為基準，另一個以&#x200B;*模型2區段*&#x200B;作為基準。
 
    * 讓兩個測試群組的變數保持相同：相同的目的地、創意和轉換特徵。
    * 確定測試區段具有相似的使用者人數（例如160萬和180萬正確，160萬和1600萬不正確）。

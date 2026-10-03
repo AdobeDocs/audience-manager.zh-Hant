@@ -8,32 +8,43 @@ title: 可操作的記錄檔
 uuid: 4c47615f-ed47-41ba-8694-1d7de4f55d62
 feature: Log Files
 exl-id: bd499931-4e02-4f64-82ba-46ef7c4ffd3c
-TQID: https://experienceleague.adobe.com/NL19RzO-EfALqH0Exkt5PZeBO-mZXztl4ioiJRp-g4g
+TQID: 'https://experienceleague.adobe.com/NL19RzO-EfALqH0Exkt5PZeBO-mZXztl4ioiJRp-g4g'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1601
+source-wordcount: '1628'
 ht-degree: 2%
-
 ---
-
 # 可操作的記錄檔 {#actionable-log-files}
 
 [!UICONTROL Actionable Log Files]可讓您從廣告伺服器記錄檔擷取媒體資料，並使用資料在Audience Manager中建立特徵。 將廣告伺服器的曝光、點按和轉換擷取為特徵，而不需附加[畫素](../../integration/media-data-integration/impression-data-pixels.md)。
 
 >[!NOTE]
 >
->本檔案中的文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
+>文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等） 檔案中會指示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
 
 ## 用途 {#purpose}
 
@@ -53,7 +64,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
-> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) to get started.
+> At the end of 2019, [!UICONTROL Actionable Log Files] began to expand availability to new ad servers. Ask your [!DNL Audience Manager] consultant or [Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get started.
 
 -->
 
@@ -69,7 +80,7 @@ ht-degree: 2%
 
 ## 可操作訊號 {#actionable-signals}
 
-訊號是[中的](../../reference/signal-trait-segment.md)最小資料單位[!DNL Audience Manager]。 [!UICONTROL Actionable Log Files]可讓您從廣告伺服器記錄檔擷取廣告商、業務單位、創意和促銷活動在曝光事件、點選事件和轉換事件中的值，做為訊號。
+訊號是[!DNL Audience Manager]中的[最小資料單位](../../reference/signal-trait-segment.md)。 [!UICONTROL Actionable Log Files]可讓您從廣告伺服器記錄檔擷取廣告商、業務單位、創意和促銷活動在曝光事件、點選事件和轉換事件中的值，做為訊號。
 
 >[!IMPORTANT]
 >
@@ -146,7 +157,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p> <code>Revenue</code> </p> </td> 
    <td colname="col2"> <p> <code> d_revenue</code> </p> </td> 
-   <td colname="col3"> 以USD為單位的銷售金額，乘以–6的冪。 乘以1.000.000即可看到金額。</td> 
+   <td colname="col3"> USD中的銷售金額，以–6為冪。 乘以1.000.000即可看到金額。</td> 
    <td colname="col4"> <p> <code>10</code> </p> </td> 
   </tr>
     <tr> 
@@ -343,7 +354,7 @@ UI中的![可操作的訊號](/help/using/integration/assets/alf-in-signals.png)
 
 ### 在Audience Optimization報表或Audience Lab中使用Google Campaign Manager Floodlight活動
 
-[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en)可讓廣告商追蹤使用者轉換。 透過[!UICONTROL Actionable Log Files]，您可以在[!DNL Google Campaign Manager]Audience Optimization報表[或](../../reporting/audience-optimization-reports/audience-optimization-reports.md)Audience Lab[中追蹤](../../features/audience-lab/audience-lab.md)轉換：
+[Floodlight標籤](https://support.google.com/dcm/partner/answer/4293719?hl=en)可讓廣告商追蹤使用者轉換。 透過[!UICONTROL Actionable Log Files]，您可以在[Audience Optimization報表](../../reporting/audience-optimization-reports/audience-optimization-reports.md)或[Audience Lab](../../features/audience-lab/audience-lab.md)中追蹤[!DNL Google Campaign Manager]轉換：
 
 1. 建立特徵並使用以下特徵規則從廣告伺服器記錄檔中擷取轉換：
 

@@ -7,23 +7,32 @@ title: 傳入資料傳輸的ID同步
 uuid: 037e74a6-acfd-4cef-b693-16b7aaa8e976
 feature: Inbound Data Transfers
 exl-id: cd9be32f-f443-45bd-a906-ec4c8589f608
-TQID: https://experienceleague.adobe.com/6pRhpoECN6jqncBykBth7wOKG8o592Ek1pS-dEzLMXk
+TQID: 'https://experienceleague.adobe.com/6pRhpoECN6jqncBykBth7wOKG8o592Ek1pS-dEzLMXk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 430
-ht-degree: 1%
-
+source-wordcount: '455'
+ht-degree: 5%
 ---
-
 # 傳入資料傳輸的ID同步 {#id-synchronization-for-inbound-data-transfers}
 
 說明初始`HTTP`呼叫中所使用的語法和引數，以便在廠商和[!DNL Audience Manager]之間同步使用者ID。 ID同步會在您將資料分類傳送至[!DNL Audience Manager]後開始。
@@ -72,11 +81,11 @@ https://dpm.demdex.net/ibs:dpid=<VENDOR_ID>&dpuuid=<VENDOR_UUID>&redir=<REDIRECT
   </tr> 
   <tr> 
    <td colname="col1"> <code> <i>gdpr = &lt;0|1&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可選。如果您使用適用於IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此引數。</a></p> <p><code> gdpr</code> 可為0 （GDPR不適用）或1 （GDPR適用）。 </p> <p> <b>注意：</b>此引數只能與<code>gdpr_consent</code>一起使用。</p></td> 
+   <td colname="col2"> <p>可選。 如果您使用適用於IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此引數。</a></p> <p><code> gdpr</code> 可為0 （GDPR不適用）或1 （GDPR適用）。 </p> <p> <b>注意：</b>此引數只能與<code>gdpr_consent</code>一起使用。</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code><i>gdpr_consent=&lt;ENCODED STRING&gt;</i> </code> </td> 
-   <td colname="col2"> <p>可選。如果您使用適用於IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此引數。</a></p> <p><code>gdpr_consent</code> 是URL安全base64編碼GDPR同意字串（請參閱<a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>）。 </p> <p> <b>注意：</b>此引數只能與<code>gdpr</code>一起使用。</p> </td> 
+   <td colname="col2"> <p>可選。 如果您使用適用於IAB TCF的<a href="../../../overview/data-security-and-privacy/aam-iab-plugin.md">Audience Manager外掛程式，請新增此引數。</a></p> <p><code>gdpr_consent</code> 是URL安全base64編碼GDPR同意字串（請參閱<a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/URL-based%20Consent%20Passing_%20Framework%20Guidance.md#specifications" format="http" scope="external"> IAB規格</a>）。 </p> <p> <b>注意：</b>此引數只能與<code>gdpr</code>一起使用。</p> </td> 
   </tr> 
  </tbody> 
 </table>

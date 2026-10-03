@@ -6,13 +6,20 @@ keywords: 啟用；啟用合作夥伴、目的地、目的地
 solution: Audience Manager
 title: Adobe Audience Manager技術合作夥伴
 feature: Third-party Integration
-source-git-commit: 670d2f1990d7370ab8930776df9ae5af71dd3d9e
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 68%
-
 ---
-
 
 # Audience Manager啟用合作夥伴
 
@@ -22,7 +29,7 @@ ht-degree: 68%
 
 * **已更新** =顯示此啟用夥伴有更新的最後日期。
 * **取消區段** =取消區段會描述取消資格並從區段移除裝置設定檔的程式。 您從區段移除裝置設定檔的功能取決於用來建立設定檔合併規則的裝置選項。 取消細分也會用於GDPR刪除要求內容讀取[設定檔合併規則與裝置取消細分程式](/help/using/features/profile-merge-rules/merge-rule-unsegment.md)與具有取消細分功能的[Audience Manager合作夥伴](/help/using/overview/data-security-and-privacy/aam-gdpr-partners.md#aam-partners-with-unsegmentation)。 Audience Manager會將取消細分資訊傳送至以下標示為「是」的目的地。
-* **接收IAB TCF同意訊號** =適用於IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉送給啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取適用於IAB TCF[&#128279;](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的Audience Manager外掛程式。
+* **接收IAB TCF同意訊號** =適用於IAB TCF的Audience Manager外掛程式可讓您將IAB TC字串轉送給啟用合作夥伴，同時尊重使用者的隱私權選擇。 讀取適用於IAB TCF](/help/using/overview/data-security-and-privacy/aam-iab-plugin.md#aam-activation-partners)的[Audience Manager外掛程式。
 * **ICDS** =此資料行列出支援即時跨裝置隱藏的合作夥伴。 讀取[即時跨裝置隱藏](/help/using/features/profile-merge-rules/instant-cross-device-suppression.md)。
 * **行動裝置ID** =此欄列出可從Audience Manager接收行動裝置ID的合作夥伴。
 

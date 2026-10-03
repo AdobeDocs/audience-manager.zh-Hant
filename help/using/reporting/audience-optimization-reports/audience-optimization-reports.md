@@ -7,22 +7,30 @@ title: Audience Optimization報表
 uuid: b06efa28-f56a-4b72-978e-e0c067f54798
 feature: Audience Optimization Reports
 exl-id: 673267fb-5655-4cc2-ac2c-c717ea5830fc
-TQID: https://experienceleague.adobe.com/-WSb3TfJWyWh5AP638JF9SJiPSUH-cc-klgETUo3JbU
+TQID: 'https://experienceleague.adobe.com/-WSb3TfJWyWh5AP638JF9SJiPSUH-cc-klgETUo3JbU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Insights
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 141
+source-wordcount: '141'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Audience Optimization Reports] {#audience-optimization-reports}
 
 [!UICONTROL Audience Optimization Reports]使用資料視覺效果方法來傳回您Audience Manager帳戶中[!UICONTROL destinations]的資訊。 在每個報表中，您都可以按一下幾乎任何資料點，以傳回有關該專案的詳細資訊。 這些[!UICONTROL Audience Optimization]深入分析可套用至廣告和發佈管道的多個使用案例，但預設無法使用。 請聯絡您的Audience Manager顧問以開始使用。

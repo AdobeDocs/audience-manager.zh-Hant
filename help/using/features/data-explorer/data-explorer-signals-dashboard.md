@@ -6,18 +6,24 @@ title: 訊號控制面板
 uuid: 26f39507-097f-427d-bf5b-ab6d035c1dd2
 feature: Data Explorer
 exl-id: dfcacdca-c301-4655-9ab4-0642ce6d1cc0
-TQID: https://experienceleague.adobe.com/FGEKJR4Vu2AUmmm09xfRewJxEX-spZeSyXqkdaQhMQQ
+TQID: 'https://experienceleague.adobe.com/FGEKJR4Vu2AUmmm09xfRewJxEX-spZeSyXqkdaQhMQQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: a2c6d65b-635d-4454-a9cc-9771ed501bb4
+    internal-label: Data Explorer
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Insights
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 250
+source-wordcount: '250'
 ht-degree: 0%
-
 ---
-
 # 訊號控制面板 {#signals-dashboard}
 
 概述Audience Manager在過去7天收到的未使用訊號，並識別潛在的新特徵。 未使用的訊號會從您的線上屬性連線Audience Manager，但不會用於任何現有特徵。 若要檢視[!UICONTROL Signals Dashboard]，請前往[!UICONTROL Audience Data] > [!UICONTROL Signals]。 [!UICONTROL Signals Dashboard]會根據您最活躍且未使用的訊號，顯示可操作的深入分析。
@@ -40,7 +46,7 @@ ht-degree: 0%
 
 ## 已儲存的搜尋 {#saved-searches}
 
-[!DNL Audience Manager]會在[顯示您所有的](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)已儲存搜尋[!UICONTROL Dashboard]，並在每次您載入[!UICONTROL Dashboard]時重新載入。
+[!DNL Audience Manager]會在[!UICONTROL Dashboard]顯示您所有的[已儲存搜尋](../../features/data-explorer/data-explorer-signals-search/data-explorer-save-search.md)，並在每次您載入[!UICONTROL Dashboard]時重新載入。
 
 已儲存的搜尋會顯示對應條件的前50個結果。
 

@@ -6,18 +6,24 @@ solution: Audience Manager
 title: 預測受眾快速入門
 feature: Algorithmic Models
 exl-id: beb314de-f679-4397-8e14-2dd6576243fd
-TQID: https://experienceleague.adobe.com/GxGaEIsjpvAqbm5AbaxmmLrgC09x4fslbZcJuShf1sE
+TQID: 'https://experienceleague.adobe.com/GxGaEIsjpvAqbm5AbaxmmLrgC09x4fslbZcJuShf1sE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 545
+source-wordcount: '579'
 ht-degree: 2%
-
 ---
-
 # 預測受眾快速入門 {#predictive-audiences-getting-started}
 
 >[!IMPORTANT]
@@ -25,7 +31,7 @@ ht-degree: 2%
 
 ## 建立預測受眾模型 {#create-predictive-audiences}
 
-建立[!UICONTROL Predictive Audiences]模型之前，您必須先決定要將[!UICONTROL Predictive Audiences]特徵和區段指派給哪個第一方資料來源。 您可以使用現有的第一方資料來源，或建立新的資料來源。 如需有關如何建立新的第一方資料來源的詳細資訊，請參閱[管理資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=zh-Hant)。
+建立[!UICONTROL Predictive Audiences]模型之前，您必須先決定要將[!UICONTROL Predictive Audiences]特徵和區段指派給哪個第一方資料來源。 您可以使用現有的第一方資料來源，或建立新的資料來源。 如需有關如何建立新的第一方資料來源的詳細資訊，請參閱[管理資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html)。
 
 知道要使用哪個資料來源後，請遵循下列步驟。
 
@@ -34,7 +40,7 @@ ht-degree: 2%
 
    ![smart-persona-add](assets/predictive-audiences-add.png)
 
-1. 接著，定義您要用來分類對象的角色。 您可以透過選擇要從中建置角色的特徵或區段來執行此操作。 使用畫面左上角的[!UICONTROL Traits]和[!UICONTROL Segments]索引標籤，在特徵和區段目錄之間切換。 識別您要做為角色的特徵或區段後，請按一下「**[!UICONTROL Add]**」欄中對應的「[!UICONTROL Action]」圖示。
+1. 接著，定義您要用來分類對象的角色。 您可以透過選擇要從中建置角色的特徵或區段來執行此操作。 使用畫面左上角的[!UICONTROL Traits]和[!UICONTROL Segments]索引標籤，在特徵和區段目錄之間切換。 識別您要做為角色的特徵或區段後，請按一下「[!UICONTROL Action]」欄中對應的「**[!UICONTROL Add]**」圖示。
 
    ![smart-persona-select-personas](assets/predictive-audiences-persona.png)
 
@@ -53,7 +59,7 @@ ht-degree: 2%
    * **[!UICONTROL Model Name]**：輸入模型的描述性名稱，以協助您稍後識別。 模型產生的區段名稱將以模型名稱開頭。
    * **[!UICONTROL Description]**：輸入模型的描述，以協助您識別其使用案例。
    * **[!UICONTROL Data Source]**：選取您要指派此模型之[!UICONTROL Predictive Audiences]區段的第一方資料來源。
-   * **[!UICONTROL Profile Merge Rule]**：選取要指派給此模型建立的所有預測性[!UICONTROL Profile Merge Rule]的[!UICONTROL segments]。 如果您選取的目標對象是[!UICONTROL segment]，我們建議您選取目標對象的相同[!UICONTROL Profile Merge Rule]。
+   * **[!UICONTROL Profile Merge Rule]**：選取要指派給此模型建立的所有預測性[!UICONTROL segments]的[!UICONTROL Profile Merge Rule]。 如果您選取的目標對象是[!UICONTROL segment]，我們建議您選取目標對象的相同[!UICONTROL Profile Merge Rule]。
 
    ![predictive-audiences-save](assets/predictive-audiences-save.png)
 

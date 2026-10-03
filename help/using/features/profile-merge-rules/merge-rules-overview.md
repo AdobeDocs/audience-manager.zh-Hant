@@ -7,21 +7,28 @@ title: 設定檔合併規則概述
 uuid: 9e7988cc-9145-432b-840a-54fbd8657b3b
 feature: Profile Merge
 exl-id: 5d1f5bea-0fca-4684-a2b4-585d9e38d9ef
-TQID: https://experienceleague.adobe.com/nhbT9DeDdZho5Rsqprq7N3Si7i9RfoirQuONiAh2Lmw
+TQID: 'https://experienceleague.adobe.com/nhbT9DeDdZho5Rsqprq7N3Si7i9RfoirQuONiAh2Lmw'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience segmentation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 336
-ht-degree: 0%
-
+source-wordcount: '340'
+ht-degree: 1%
 ---
-
 # [!UICONTROL Profile Merge Rules]總覽 {#profile-merge-rules-overview}
 
 透過[!UICONTROL Profile Merge Rules]，您可以控制要用於細分的資料集，並且可以跨多部裝置準確地鎖定使用者。
@@ -38,7 +45,7 @@ ht-degree: 0%
 
 | 設定檔型別 | 說明 |
 |---|---|
-| [!UICONTROL Device Profile] | [!UICONTROL device profile]繫結至指定裝置的識別碼，例如[!UICONTROL cookie] ID或行動裝置ID。<br><br>它包含：<ul><li>[!UICONTROL Rule-based traits]已在使用者未驗證時實現。</li><li>[!UICONTROL Onboarded traits]繫結至裝置ID，例如[!UICONTROL cookie-based]，協力廠商資料。</li></ul> |
+| [!UICONTROL Device Profile] | [!UICONTROL device profile]繫結至指定裝置的識別碼，例如[!UICONTROL cookie] ID或行動裝置ID。<br><br> 其功能包括:<ul><li>[!UICONTROL Rule-based traits]已在使用者未驗證時實現。</li><li>[!UICONTROL Onboarded traits]繫結至裝置ID，例如[!UICONTROL cookie-based]，協力廠商資料。</li></ul> |
 | [!UICONTROL Authenticated Profile] | [!UICONTROL authenticated profile]繫結至有人登入您的網站時傳入的使用者ID。<br><br>它包含：<ul><li>當使用者通過驗證時，會跨裝置收集[!UICONTROL Rule-based traits]。</li><li>在連結至相同使用者ID的離線檔案中[!UICONTROL Onboarded traits]。</li></ul> |
 
 這些不同的設定檔控制您可以用於細分的資料。 例如，使用[已驗證的設定檔](../../reference/visitor-authentication-states.md)，您可以根據單一使用者來自多個裝置的資料，建立正確的[!UICONTROL segments]。 這表示您可以跨多部裝置為客戶提供一致的品牌體驗。 [!DNL Audience Manager]透過將某人線上活動使用的不同裝置對應儲存到其[已驗證的設定檔](../../reference/visitor-authentication-states.md)來達成此目的。 這些對應稱為[!UICONTROL Profile Link Device Graph]。

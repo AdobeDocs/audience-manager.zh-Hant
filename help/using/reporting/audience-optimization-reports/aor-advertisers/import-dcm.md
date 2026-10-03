@@ -7,23 +7,32 @@ title: 將Google Campaign Manager資料檔案匯入Audience Manager
 uuid: 3578cfe1-6d30-4a73-ab75-8d272bebcd60
 feature: Audience Optimization Reports
 exl-id: 045eed94-100f-460d-83bb-78fbd7beb51c
-TQID: https://experienceleague.adobe.com/-LD2jsXjdqhRjhXJfabCiOdw-WNeji-GECu1uunomVU
+TQID: 'https://experienceleague.adobe.com/-LD2jsXjdqhRjhXJfabCiOdw-WNeji-GECu1uunomVU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 556
+source-wordcount: '611'
 ht-degree: 2%
-
 ---
-
 # 將Google Campaign Manager資料檔案匯入Audience Manager {#import-dcm-data-files-into-audience-manager}
 
 設定[!DNL Google]群組，將您的[!DNL Google Campaign Manager]資料檔案匯入Audience Manager。 本節中的內容摘要說明整合程式，並提供您連結[!DNL Google Campaign Manager]資源，協助您開始使用。
@@ -71,8 +80,8 @@ ht-degree: 2%
 
 1. 邀請[!DNL Audience Manager]加入群組。
 
-   在您建立群組並授予其資料儲存貯體的存取權後，請邀請[!DNL Audience Manager]加入群組。 傳送邀請電子郵件至dfaaam@adobe.com。 請務必加入步驟3中的資料檔案URL。 我們的內部團隊會在接受邀請後，與您合作以驗證存取權。 1.在[!DNL Google Campaign Manager]使用者介面中為[!DNL Audience Manager]資料設定兩個資料來源。
+   在您建立群組並授予其資料儲存貯體的存取權後，請邀請[!DNL Audience Manager]加入群組。 傳送邀請電子郵件至dfaaam@adobe.com。 請務必加入步驟3中的資料檔案URL。 我們的內部團隊會在接受邀請後，與您合作以驗證存取權。 1.在[!DNL Audience Manager]使用者介面中為[!DNL Google Campaign Manager]資料設定兩個資料來源。
 
    為資料來源命名`Advertiser Analytics: DCM Platform`和`Advertiser Analytics: AAM+DCM Platform`。 在[建立資料來源](../../../features/manage-datasources.md#create-data-source)工作流程中，將ID型別設定為`Cookie`。 與我們的內部團隊共用兩個新資料來源的ID。
 
-1. 您可以從匯入[!DNL Google Campaign Manager]的[!DNL Audience Manager]檔案中輕鬆建立特徵。 檢視[可操作的記錄檔](../../../integration/media-data-integration/actionable-log-files.md)，並要求您的[!DNL Audience Manager]顧問或客戶服務為您啟用此功能。
+1. 您可以從匯入[!DNL Audience Manager]的[!DNL Google Campaign Manager]檔案中輕鬆建立特徵。 檢視[可操作的記錄檔](../../../integration/media-data-integration/actionable-log-files.md)，並要求您的[!DNL Audience Manager]顧問或客戶服務為您啟用此功能。

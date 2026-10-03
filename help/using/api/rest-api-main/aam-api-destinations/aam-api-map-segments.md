@@ -7,19 +7,23 @@ title: 將區段對應至目的地
 uuid: 35358ace-3082-4e86-a6eb-d77281af6d7e
 feature: API
 exl-id: 906df6c5-f878-48e6-a804-eb5b4407f304
-TQID: https://experienceleague.adobe.com/uCYyOwaUN-5uCXESTtTTfVaoUsH2qrZS-ggvVQ-6-Ng
+TQID: 'https://experienceleague.adobe.com/uCYyOwaUN-5uCXESTtTTfVaoUsH2qrZS-ggvVQ-6-Ng'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+subfeature_v2:
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 494
+source-wordcount: '514'
 ht-degree: 6%
-
 ---
-
 # 將區段對應至目的地 {#map-segments-to-a-destination}
 
 使用這些[!DNL RESTful API]方法將區段對應至目的地。
@@ -28,11 +32,11 @@ ht-degree: 6%
 
 ## 支援的目的地型別：僅限URL和Cookie
 
-可用的`POST`方法可讓您僅將區段對應至[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，您無法使用這些[!UICONTROL server-to-server destinations]方法將區段對應至[!DNL REST API]。 請改用使用者介面。 不過，相關的目的地`GET`方法可讓您擷取使用者介面中建立的[!UICONTROL server-to-server destinations]相關資訊。
+可用的`POST`方法可讓您僅將區段對應至[!UICONTROL URL]和[!UICONTROL cookie destinations]。 目前，您無法使用這些[!DNL REST API]方法將區段對應至[!UICONTROL server-to-server destinations]。 請改用使用者介面。 不過，相關的目的地`GET`方法可讓您擷取使用者介面中建立的[!UICONTROL server-to-server destinations]相關資訊。
 
 ## 將區段對應至非序列化URL目的地 {#map-segment-non-serial}
 
-可讓您將區段對應至非序列`POST`目的地的[!UICONTROL URL]方法。
+可讓您將區段對應至非序列[!UICONTROL URL]目的地的`POST`方法。
 
 <!-- r_map_noserial_url.xml -->
 
@@ -82,7 +86,7 @@ ht-degree: 6%
 
 ## 將區段對應至序列化URL目的地 {#map-segment-serial}
 
-可讓您將區段對應到序列化`POST`目的地的[!UICONTROL URL]方法。
+可讓您將區段對應到序列化[!UICONTROL URL]目的地的`POST`方法。
 
 <!-- r_map_serialized_url.xml -->
 
@@ -275,7 +279,7 @@ ht-degree: 6%
 
 ## 將區段對應至伺服器對伺服器目的地 {#map-segment-s2s}
 
-可讓您將區段對應到現有`POST`目的地的[!UICONTROL server-to-server]方法。 但是請注意，您無法使用這些目前可用的[!UICONTROL server-to-server]方法建立[!DNL API]目的地。
+可讓您將區段對應到現有[!UICONTROL server-to-server]目的地的`POST`方法。 但是請注意，您無法使用這些目前可用的[!DNL API]方法建立[!UICONTROL server-to-server]目的地。
 
 <!-- r_map_segment_s2s.xml -->
 

@@ -7,29 +7,37 @@ title: ID同步檔案的名稱和內容要求
 uuid: bfe42af9-9149-4da3-830e-f227c4e610c2
 feature: Inbound Data Transfers
 exl-id: e6b3a438-f843-4a24-89fd-03ef77d7cf04
-TQID: https://experienceleague.adobe.com/yJ5QIV70F6YyRqA0LxqxQaHMoWwe7pLJ8V17MvyEK70
+TQID: 'https://experienceleague.adobe.com/yJ5QIV70F6YyRqA0LxqxQaHMoWwe7pLJ8V17MvyEK70'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 782
-ht-degree: 2%
-
+source-wordcount: '797'
+ht-degree: 3%
 ---
-
 # ID同步檔案的名稱和內容要求 {#name-and-content-requirements-for-id-synchronization-files}
 
 說明檔案式ID同步作業所需的欄位、語法和命名慣例。 根據這些規格命名並組織您的檔案內容。
 
 >[!NOTE]
 >
->本檔案中的文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
+>文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等） 檔案中會指示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
 ## 檔案名稱語法和範例 {#file-name-syntax}
 
@@ -118,7 +126,7 @@ abc123 def456 ghi789 xyz987
 
 ## 同步會比對DPUUID與UUID {#sync-matches-dpuuids-uuids}
 
-ID同步檔案的用途是從您自己的資料來源將[DPUUID](../../../reference/ids-in-aam.md)與[!DNL Audience Manager]個UUID同步。 同步處理會將主版[!DNL DPUUID]及其相關[!DNL DPID]的[!DNL DPID]對應至[!DNL Audience Manager] [!DNL UUID]。將ID放在檔案名稱和內文中的位置會決定這些識別碼如何相互對應。 舉例來說，請舉兩個範例檔案，如下所示：
+ID同步檔案的用途是從您自己的資料來源將[DPUUID](../../../reference/ids-in-aam.md)與[!DNL Audience Manager]個UUID同步。 同步處理會將主版[!DNL DPID]及其相關[!DNL DPID]的[!DNL DPUUID]對應至[!DNL Audience Manager] [!DNL UUID]。 將ID放在檔案名稱和內文中的位置會決定這些識別碼如何相互對應。 舉例來說，請舉兩個範例檔案，如下所示：
 
 * **檔案1：** `adobe_id_0_12345_1476312152.sync`
 
@@ -138,12 +146,12 @@ ID同步檔案的用途是從您自己的資料來源將[DPUUID](../../../refere
 | 66552757407517449462805881945288602094 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M |
 | 66184778222667870903738139438735041506 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw |
 
-步驟1：識別碼同步處理會將[!DNL DPUUID]12345的[!DNL DPID]與左欄中的[!DNL Audience Manager] [!DNL UUID]同步。 請注意，檔案名稱中的[!DNL DPID] &quot;0&quot;代表[!DNL Audience Manager] [!DNL UUID]。
+步驟1：識別碼同步處理會將[!DNL DPID]12345的[!DNL DPUUID]與左欄中的[!DNL Audience Manager] [!DNL UUID]同步。 請注意，檔案名稱中的[!DNL DPID] &quot;0&quot;代表[!DNL Audience Manager] [!DNL UUID]。
 <br/>
 
 **檔案2** （[下載範例檔案](assets/adobe_id_12345_67890_1477846458.sync)）
 
-| [!DNL DPID]12345 | [!DNL DPID]67890 |
+| [!DNL DPID] 12345 | [!DNL DPID] 67890 |
 |---|---|
 | XYZ3017D_2kzkTOXkFYIAgwbajoqWRcqkXl-TTrj6E4njaMR38 | 4598060374 |
 | XYZ3017BBR4DAFJWfM6D4Gb4lN_T5jk_f7rdEcqNs9wfnA7h70 | 4581274262 |
@@ -151,7 +159,7 @@ ID同步檔案的用途是從您自己的資料來源將[DPUUID](../../../refere
 | XYZ3017QvBddD-bLJS28DPxiqUfmIBxE3_55bvQJMLwregJU2M | 2351382994 |
 | XYZ3017q9r60kuHPOca_Ek-btCN2iu1HyVaUe0rd412TzbyCMw | 4601584763 |
 
-步驟2：來自[!DNL DPUUID]的[!DNL DPID]12345已在步驟1中與Audience Manager [!DNL UUID]同步。此ID同步會將[!DNL DPUUID]67890案中的[!DNL DPID]與步驟1中的Audience Manager [!DNL UUID]同步。
+步驟2：來自[!DNL DPID]的[!DNL DPUUID]12345已在步驟1中與Audience Manager [!DNL UUID]同步。 此ID同步會將[!DNL DPID]中的[!DNL DPUUID]67890案與步驟1中的Audience Manager [!DNL UUID]同步。
 
 <br/>
 

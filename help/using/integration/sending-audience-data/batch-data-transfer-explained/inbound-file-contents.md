@@ -5,21 +5,28 @@ title: 傳入資料檔案內容 — 語法、無效字元、變數和範例
 uuid: 88699b29-1502-4183-a9a4-be70692a02bb
 feature: Inbound Data Transfers
 exl-id: 894f1923-6c78-41d2-b6a2-eebf56eaa29e
-TQID: https://experienceleague.adobe.com/VmG1uYu83JVavbWhBTIwbcN6xXW-cCy2IqBlZe8NtVA
+TQID: 'https://experienceleague.adobe.com/VmG1uYu83JVavbWhBTIwbcN6xXW-cCy2IqBlZe8NtVA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1210
-ht-degree: 5%
-
+source-wordcount: '1228'
+ht-degree: 3%
 ---
-
 # 傳入資料檔案內容：語法、無效字元、變數和範例 {#inbound-data-file-contents-syntax-invalid-characters-variables-and-examples}
 
 格式化傳入特徵資料檔案時，應遵循的必要欄位、語法和規則。
@@ -78,7 +85,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>trait ID </i> </code> </p> </td> 
-   <td colname="col2"> <p><span class="keyword"> Audience Manager </span>特徵識別碼。 我們要求您在傳入資料檔案中僅包含<i>已上線的特徵</i>。 我們不會在傳入資料傳輸中處理任何其他特徵型別。 </p> <p> <p>注意：特徵ID可使用GET方法找到，此方法會傳回所有特徵的詳細資訊。 如需詳細資訊，請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Audience Manager </span>特徵識別碼。 我們要求您在傳入資料檔案中僅包含<i>已上線的特徵</i>。 我們不會在傳入資料傳輸中處理任何其他特徵型別。 </p> <p> <p>注意：特徵ID可使用傳回所有特徵詳細資訊的GET方法來找到。 如需詳細資訊，請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -101,7 +108,7 @@ ht-degree: 5%
   </tr>
   <tr> 
    <td colname="col1"> <p> <code> d_unsid= </code> </p> </td> 
-   <td colname="col2"> <p>前置詞為<code> d_unsid </code>的資料會從該特徵中移除使用者。 在<code> d_unsid </code>檔案中忽略<code> overwrite </code>首碼。 </p> <p><code> d_unsid= </code>首碼會告訴系統，識別碼是<span class="keyword"> Audience Manager </span>特徵ID。 這是顯示在使用者介面中的ID。 您也可以使用API <code> GET </code>方法傳回特徵識別碼。 請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </td>
+   <td colname="col2"> <p>前置詞為<code> d_unsid </code>的資料會從該特徵中移除使用者。 在<code> overwrite </code>檔案中忽略<code> d_unsid </code>首碼。 </p> <p><code> d_unsid= </code>首碼會告訴系統，識別碼是<span class="keyword"> Audience Manager </span>特徵ID。 這是顯示在使用者介面中的ID。 您也可以使用API <code> GET </code>方法傳回特徵識別碼。 請參閱<a href="../../../api/rest-api-main/api-traits.md">特徵API方法</a>。 </p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> ic= </code> </p> </td> 
@@ -209,30 +216,30 @@ ht-degree: 5%
    <td colname="col1"> <p>與<code> d_sid </code>或<code> d_unsid </code> </p> </td> 
    <td colname="col2"> <p>此資料檔案顯示符合特徵24、26、27資格的使用者，且已從特徵28和29中移除。 </p> <p> 
      <code>
-       59767559181262060060278870901087098252&nbsp;&nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
+       59767559181262060060278870901087098252&amp;nbsp;&amp;nbsp;d_sid=24,d_sid=26,d_sid=27,d_unsid=28,d_unsid=29 
      </code> </p> <p>注意：  <p>您也可以使用下列語法，將特徵從使用者設定檔中移除，而不使用d_unsid： </p> <p> 
       <code>
-        59767559181262060060278870901087098252&nbsp;28:0,&nbsp;29:0 
+        59767559181262060060278870901087098252&amp;nbsp;28:0,&amp;nbsp;29:0 
       </code> </p> <p> 
       <code>
-        59767559181262060060278870901087098252&nbsp;28:-1,&nbsp;29:-1 
+        59767559181262060060278870901087098252&amp;nbsp;28:-1,&amp;nbsp;29:-1 
       </code> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>與<code> ic== </code> </p> </td> 
    <td colname="col2"> <p>這些特徵已新增至首碼為<code> ic </code>的特徵規則。 因此，您可以將它們新增至以逗號分隔的資料檔案中，如下所示。 UUID和特徵ID以標籤分隔。 檔案中不需要<code> ic </code>首碼。 </p> <p><b>數值ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;30608,50354,50338,50352,30626 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;30608,50354,50338,50352,30626 
      </code> </p> <p><b>字串ID</b> </p> <p> 
      <code>
-       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&nbsp;&nbsp;ic=52,ic=55 
+       DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1&amp;nbsp;&amp;nbsp;ic=52,ic=55 
      </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用索引鍵值配對 </p> </td> 
    <td colname="col2"> 此檔案資料使用機碼值組將資料傳遞至<span class="keyword"> Audience Manager </span>。 <p> 
      <code>
-       59767559181262060060278870901087098252&nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
+       59767559181262060060278870901087098252&amp;nbsp;“gender”=”female”,“luxury_shopper”=”yes” 
      </code> </p> </td> 
   </tr> 
  </tbody> 
@@ -288,7 +295,7 @@ ht-degree: 5%
 
 ### 範例 1 {#example-1}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]資格資訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_sid=24, d_sid=26, d_sid=27
@@ -296,19 +303,19 @@ ht-degree: 5%
 
 ### 範例 2 {#example-2}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]取消資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]取消資格資訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> d_unsid=24, d_unsid=26, d_unsid=27
 ```
 
-或 
+或
 
 ```
 59767559181262060060278870901087098252 <TAB> 24:0, 26:0, 27:0
 ```
 
-或 
+或
 
 ```
 59767559181262060060278870901087098252 <TAB> 24:-1, 26:-1, 27:-1
@@ -316,195 +323,195 @@ ht-degree: 5%
 
 ### 範例 3 {#example-3}
 
-傳送機碼值組以新增[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]資格資訊。
+傳送機碼值組以新增[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]資格資訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> product = tablet, product = phone
 ```
 
-或 
+或
 
 ```
 59767559181262060060278870901087098252 <TAB> "product" = "tablet", "product" = "phone"
 ```
 
-### 範例 4 {#example-4}
+### 範例4 {#example-4}
 
-使用`ic`首碼來傳送[!UICONTROL trait] [!DNL Audience Manager]的[!DNL UUIDs]資格資訊。
+使用`ic`首碼來傳送[!DNL Audience Manager] [!DNL UUIDs]的[!UICONTROL trait]資格資訊。
 
 ```
 59767559181262060060278870901087098252 <TAB> 30608,50354,50338,50352,30626
 ```
 
-或 
+或
 
 ```
 59767559181262060060278870901087098252 <TAB> ic=52,ic=55
 ```
 
-### 範例 5 {#example-5}
+### 範例5 {#example-5}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait]裝置的[!DNL Android]資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL Android]裝置的[!UICONTROL trait]資格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_sid=24, d_sid=25, d_sid=26
 ```
 
-### 範例 6 {#example-6}
+### 範例6 {#example-6}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait]裝置的[!DNL Android]取消資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL Android]裝置的[!UICONTROL trait]取消資格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
 ```
 
-或 
+或
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:0, 26:0, 27:0
 ```
 
-或 
+或
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 24:-1, 26:-1, 27:-1
 ```
 
-### 範例 7 {#example-7}
+### 範例7 {#example-7}
 
-傳送機碼值組以新增[!UICONTROL trait]裝置的[!DNL Android]資格資訊。
+傳送機碼值組以新增[!DNL Android]裝置的[!UICONTROL trait]資格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> product = tablet, product = phone
 ```
 
-或 
+或
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> "product" = "tablet", "product" = "phone"
 ```
 
-### 範例 8 {#example-8}
+### 範例8 {#example-8}
 
-使用`ic`首碼來傳送[!UICONTROL trait]裝置的[!DNL Android]資格資訊。
+使用`ic`首碼來傳送[!DNL Android]裝置的[!UICONTROL trait]資格資訊。
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> 30608,50354,50338,50352,30626
 ```
 
-或 
+或
 
 ```
 e4fe9bde-caa0-47b6-908d-ffba3fa184f2 <TAB> ic=52,ic=55
 ```
 
-### 範例 9 {#example-9}
+### 範例9 {#example-9}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait]裝置的[!DNL iOS]資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL iOS]裝置的[!UICONTROL trait]資格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_sid=24, d_sid=25, d_sid=26
 ```
 
-### 範例 10 {#example-10}
+### 範例10 {#example-10}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait]裝置的[!DNL iOS]取消資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL iOS]裝置的[!UICONTROL trait]取消資格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> d_unsid=24, d_unsid=25, d_unsid=26
 ```
 
-或 
+或
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 24:0, 26:0, 27:0
 ```
 
-或 
+或
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 24:-1, 26:-1, 27:-1
 ```
 
-### 範例 11 {#example-11}
+### 範例11 {#example-11}
 
-傳送機碼值組以新增[!UICONTROL trait]裝置的[!DNL iOS]資格資訊。
+傳送機碼值組以新增[!DNL iOS]裝置的[!UICONTROL trait]資格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> product = tablet, product = phone
 ```
 
-或 
+或
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> "product" = "tablet", "product" = "phone"
 ```
 
-### 範例 12 {#example-12}
+### 範例12 {#example-12}
 
-使用`ic`首碼來傳送[!UICONTROL trait]裝置的[!DNL iOS]資格資訊。
+使用`ic`首碼來傳送[!DNL iOS]裝置的[!UICONTROL trait]資格資訊。
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> 30608,50354,50338,50352,30626
 ```
 
-或 
+或
 
 ```
 6D92078A-8246-4BA4-AE5B-76104861E7DC <TAB> ic=52,ic=55
 ```
 
-### 範例 13 {#example-13}
+### 範例13 {#example-13}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait]的[!DNL DPUUIDs]資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL DPUUIDs]的[!UICONTROL trait]資格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_sid=24, d_sid=25, d_sid=26
 ```
 
-### 範例 14 {#example-14}
+### 範例14 {#example-14}
 
-使用[!UICONTROL trait IDs]傳送[!UICONTROL trait]的[!DNL DPUUIDs]取消資格資訊。
+使用[!UICONTROL trait IDs]傳送[!DNL DPUUIDs]的[!UICONTROL trait]取消資格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> d_unsid=24, d_unsid=25, d_unsid=26
 ```
 
-或 
+或
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:0, 26:0, 27:0
 ```
 
-或 
+或
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 24:-1, 26:-1, 27:-1
 ```
 
-### 範例 15 {#example-15}
+### 範例15 {#example-15}
 
-傳送機碼值組以新增[!UICONTROL trait]的[!DNL DPUUIDs]資格資訊。
+傳送機碼值組以新增[!DNL DPUUIDs]的[!UICONTROL trait]資格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> product = tablet, product = phone
 ```
 
-或 
+或
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> "product" = "tablet", "product" = "phone"
 ```
 
-### 範例 16 {#example-16}
+### 範例16 {#example-16}
 
-使用`ic`首碼來傳送[!UICONTROL trait]的[!DNL DPUUIDs]資格資訊。
+使用`ic`首碼來傳送[!DNL DPUUIDs]的[!UICONTROL trait]資格資訊。
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> 30608,50354,50338,50352,30626
 ```
 
-或 
+或
 
 ```
 DBwFoc3dhfMNCFBh2M4F9ZkJEXMNnRDh2PXvnI1 <TAB> ic=52,ic=55

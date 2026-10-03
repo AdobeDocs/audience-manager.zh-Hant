@@ -7,20 +7,28 @@ title: 中繼資料檔案的命名慣例
 uuid: cab55b2a-2e54-45f6-aeea-3735b911f821
 feature: Log Files
 exl-id: 7a895c4f-1100-4ba1-947e-abb47307fb40
-TQID: https://experienceleague.adobe.com/8NiHEhLXJHHdYfO4LjwpEjpLqFHsHAW3BnI9q4K8zt4
+TQID: 'https://experienceleague.adobe.com/8NiHEhLXJHHdYfO4LjwpEjpLqFHsHAW3BnI9q4K8zt4'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 3c88464c2249b7848c9ae80ca4c0ed58fcb81070
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 205
+source-wordcount: '205'
 ht-degree: 2%
-
 ---
-
 # 中繼資料檔案的命名慣例{#naming-conventions-for-metadata-files}
 
 根據這些規格為您的Audience Optimization中繼資料檔案命名。
@@ -38,7 +46,7 @@ ht-degree: 2%
 <!--In the name syntax, you'll notice a parent ID variable. Don't confuse it with the parent ID used in the [metadata file contents](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-contents.md). These 2 variables seem similar, but they represent different things:-->
 
 * 中間元件&#x200B;**0**&#x200B;從技術上講是父系ID，這是舊版欄位。 值應一律設為&#x200B;**0**。
-* 視維度而定，子項ID的值可能介於1到10之間。 請檢視下列項目: 
+* 視維度而定，子項ID的值可能介於1到10之間。 請檢視下列項目:
 
 ## 子ID維度 {#child-dimension}
 

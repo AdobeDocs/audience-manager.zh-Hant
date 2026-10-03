@@ -7,23 +7,31 @@ keywords: GDPR UI、GDPR API、CCPA、隱私權、AAM ID
 title: Audience Manager 識別碼 (ID)
 feature: Data Governance & Privacy
 exl-id: 5f18ed0a-c875-4596-a4d1-f9a7fe871d1b
-TQID: https://experienceleague.adobe.com/YZn8tjI28VWvXTsV-VF8IJoj9Pr7YI2ZgbA7ynvyPuo
+TQID: 'https://experienceleague.adobe.com/YZn8tjI28VWvXTsV-VF8IJoj9Pr7YI2ZgbA7ynvyPuo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 242
+source-wordcount: '243'
 ht-degree: 96%
-
 ---
-
 # Audience Manager 識別碼 (ID) {#aam-ids}
 
-將[資料隱私權請求](data-privacy-requests.md)提交至 Adobe Audience Manager 時，您必須加入下列其中一個識別碼 (ID)。您可以在 [Audience Manager ID 索引](../../reference/ids-in-aam.md)中，找到有關 ID 格式的詳細資訊。
+將[資料隱私權請求](data-privacy-requests.md)提交至 Adobe Audience Manager 時，您必須加入下列其中一個識別碼 (ID)。 您可以在 [Audience Manager ID 索引](../../reference/ids-in-aam.md)中，找到有關 ID 格式的詳細資訊。
 
 ## Adobe Audience Manager 不重複使用者 ID
 
@@ -91,7 +99,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->您也可以使用 [!DNL ECID] 命名空間。請參閱第二個 [!DNL JSON] 範例。
+>您也可以使用 [!DNL ECID] 命名空間。 請參閱第二個 [!DNL JSON] 範例。
 
 **JSON 範例**：
 
@@ -147,7 +155,7 @@ ht-degree: 96%
 
 **定義**：客戶 ID，例如您為匿名網站訪客設定的 Cookie，或是離線系統的 [!DNL CRM] ID 或雜湊使用者名稱。
 
-**命名空間 ID**：客戶專屬。請從您的 Audience Manager 例項中尋找。
+**命名空間 ID**：客戶專屬。 請從您的 Audience Manager 例項中尋找。
 
 **JSON 範例**：
 
@@ -224,7 +232,7 @@ ht-degree: 96%
 
 **使用者 ID**：`d_cid_ic`
 
-**定義**：資料來源的整合程式碼。在向 [!DNL Adobe Experience Cloud Privacy Core Service] 發出的 [!DNL API] 請求中，可以使用這個 ID 來取代資料來源 ID / 命名空間 ID。
+**定義**：資料來源的整合程式碼。 在向 [!DNL Adobe Experience Cloud Privacy Core Service] 發出的 [!DNL API] 請求中，可以使用這個 ID 來取代資料來源 ID / 命名空間 ID。
 
 **命名空間 ID**：不適用
 

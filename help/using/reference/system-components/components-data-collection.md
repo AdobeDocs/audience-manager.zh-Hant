@@ -7,31 +7,46 @@ title: 資料收集元件
 uuid: 51bb1719-5ff2-4bc7-8eb1-98795e05d08f
 feature: System Components
 exl-id: 7ae407f1-f1e4-4545-baa2-bcca40aad76f
-TQID: https://experienceleague.adobe.com/x5ryJCxXPXeT7cPV3oN5wIprkBlcechsRwu1qB5k6hQ
+TQID: 'https://experienceleague.adobe.com/x5ryJCxXPXeT7cPV3oN5wIprkBlcechsRwu1qB5k6hQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+    internal-label: Data Collection Server
   - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
   - id: f8c1669e-86ba-49c4-b622-9dfa07854df8
+    internal-label: ID syncs
+  - id: f518b7e7-52a7-4298-a970-88c25c36ab31
+    internal-label: System components
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience segmentation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 736
-ht-degree: 3%
-
+source-wordcount: '770'
+ht-degree: 5%
 ---
-
 # 資料收集元件{#data-collection-components}
 
 資料收集元件包括資料收集伺服器、DIL API、傳入伺服器對伺服器資料傳輸，以及記錄檔。
@@ -79,7 +94,7 @@ DCS和PCS可共同作業，並分別提供與特徵實現、受眾細分和資�
 
 **[!UICONTROL Profile Cache Servers (PCS)]**
 
-[!UICONTROL PCS]是大型資料庫（基本上是大型伺服器端Cookie）。 它會儲存從伺服器對伺服器的傳輸和 [!DNL DCS] 中接收到的作用中使用者資料。[!UICONTROL PCS]資料包含裝置ID、已驗證的設定檔ID及其相關特徵。 當[!DNL DCS]收到即時呼叫時，它會檢查[!UICONTROL PCS]中是否有使用者可能屬於或符合資格的其他特徵。 而且，如果之後將特徵新增至區段，這些特徵ID會新增至[!UICONTROL PCS]，使用者就能自動符合該區段的資格，而無需造訪特定網站或應用程式。 [!UICONTROL PCS]可協助深化[!DNL Audience Manager]對您使用者的瞭解，因為它可以使用新的和歷史特徵資料即時比對及劃分使用者，或在幕後比對及劃分使用者。 相較於僅憑即時資格，此行為可讓您更完整且準確地掌握使用者的情況。
+[!UICONTROL PCS]是大型資料庫（基本上是大型伺服器端Cookie）。 它會儲存從伺服器對伺服器的傳輸和 [!DNL DCS] 中接收到的作用中使用者資料。 [!UICONTROL PCS] 資料包含裝置 ID、已驗證的設定檔 ID 及其相關特徵。 當[!DNL DCS]收到即時呼叫時，它會檢查[!UICONTROL PCS]中是否有使用者可能屬於或符合資格的其他特徵。 而且，如果之後將特徵新增至區段，這些特徵ID會新增至[!UICONTROL PCS]，使用者就能自動符合該區段的資格，而無需造訪特定網站或應用程式。 [!UICONTROL PCS]可協助深化[!DNL Audience Manager]對您使用者的瞭解，因為它可以使用新的和歷史特徵資料即時比對及劃分使用者，或在幕後比對及劃分使用者。 相較於僅憑即時資格，此行為可讓您更完整且準確地掌握使用者的情況。
 
 沒有可讓我們的客戶直接使用[!UICONTROL PCS]的UI控制項。 客戶對[!UICONTROL PCS]的存取是間接的，透過其作為資料存放區和資料傳輸的角色。 [!UICONTROL PCS]在Apache Cassandra上執行。
 

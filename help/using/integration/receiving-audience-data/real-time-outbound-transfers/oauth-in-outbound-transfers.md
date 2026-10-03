@@ -7,21 +7,28 @@ title: OAuth 2.0整合即時傳出傳輸
 uuid: a39e370c-b3bd-4b06-a1af-60a024ee7ee4
 feature: Outbound Data Transfers
 exl-id: eef3a3ae-1a3f-47e9-aab6-abf878e4cb77
-TQID: https://experienceleague.adobe.com/NPCwMOqwZjtbeS2K9z2Z499bQE3mPp22XWKWVtOPSv0
+TQID: 'https://experienceleague.adobe.com/NPCwMOqwZjtbeS2K9z2Z499bQE3mPp22XWKWVtOPSv0'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: bcf89bb2-9d92-4897-90ec-483950be810f
+    internal-label: Outbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 450
+source-wordcount: '464'
 ht-degree: 0%
-
 ---
-
 # [!DNL OAuth 2.0]即時傳出傳輸的整合{#oauth-integration-for-real-time-outbound-transfers}
 
 透過即時伺服器對伺服器整合將區段發佈到合作夥伴目的地時，可以將Audience Manager設定為在發出請求時使用[!DNL OAuth 2.0]進行驗證。 如此一來，您就可以將驗證過的要求從Audience Manager核發至您的端點。
@@ -122,7 +129,7 @@ Accept-Encoding: gzip
 
 ### Token為密碼
 
-使用[!DNL Audience Manager]流程進行驗證時，合作夥伴提供的認證和[!DNL OAuth 2.0]取得的權杖是敏感資訊，不得與協力廠商共用。
+使用[!DNL OAuth 2.0]流程進行驗證時，合作夥伴提供的認證和[!DNL Audience Manager]取得的權杖是敏感資訊，不得與協力廠商共用。
 
 ### [!DNL SSL]為必要項
 

@@ -7,26 +7,33 @@ title: 區段績效報表
 uuid: 5156a4c7-831d-4a95-a1be-eb516f0d91b7
 feature: Audience Optimization Reports
 exl-id: 2cd54b18-6916-4d69-bd65-7b8c8846c446
-TQID: https://experienceleague.adobe.com/CiPncU0YP2UFJhPi8EbFX-cACBvjldl5FD3YJijOOMc
+TQID: 'https://experienceleague.adobe.com/CiPncU0YP2UFJhPi8EbFX-cACBvjldl5FD3YJijOOMc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: '571'
 ht-degree: 0%
-
 ---
-
 # 區段績效報表{#segment-performance-report}
 
 [!UICONTROL Segment Performance]報表會依據曝光次數和轉換率，比較對應和未對應的區段。 對應的區段是您建立並傳送至目的地以進行定位的區段。 未對應的區段是您已建立但尚未傳送至目的地進行定位的區段。 比較報表內和報表之間的這些不同區段型別，有助於最佳化現有行銷活動，並找出您可能想要傳送至目的地以用於鎖定目標的被忽略區段。
 
 ## 如何讀取對應的區段結果 {#read-mapped-segment-results}
 
-對應[!UICONTROL Segment Performance]報表會顯示您建立並傳送至目標目的地的所有區段。您對映區段在報表中的位置可以告知您哪些區段表現良好，以及您可能需要在何處做出一些調整。
+對映的[!UICONTROL Segment Performance]報表會顯示您建立並傳送至目的地以進行定位的所有區段。報表中對應區段的位置可告知您哪些區段表現良好，以及您可能需要在何處做出某些調整。
 
 若要閱讀報表，它有助於將結果分成4個區段，其虛線（紅色）與下列範例報表中顯示的類別。
 
