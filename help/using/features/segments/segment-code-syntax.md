@@ -7,19 +7,24 @@ title: 區段運算式編輯器中使用的程式碼語法
 uuid: 7b4b06ca-7879-4501-8ba7-b2b6467b8a3b
 feature: Segments
 exl-id: 64fa6f03-cef9-4187-866f-28c54f45f72e
-TQID: https://experienceleague.adobe.com/cJKsvcP-dZ05ojGgbn2ni-wFMFfiObuIWwaRP0-HWFQ
+TQID: 'https://experienceleague.adobe.com/cJKsvcP-dZ05ojGgbn2ni-wFMFfiObuIWwaRP0-HWFQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b52f95d5-ca6b-4fda-a49e-994dc0a63402
+    internal-label: Segments
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 297
+source-wordcount: '299'
 ht-degree: 4%
-
 ---
-
 # 區段運算式編輯器中使用的程式碼語法 {#code-syntax-used-in-the-segment-expression-editor}
 
-[!UICONTROL Segment Builder]可讓您使用程式碼編輯器建立區段的特徵規則。 按一下「**[!UICONTROL Segment Expressions (Code View)]**」面板中的「[!UICONTROL Traits]」索引標籤以存取此功能。
+[!UICONTROL Segment Builder]可讓您使用程式碼編輯器建立區段的特徵規則。 按一下「[!UICONTROL Traits]」面板中的「**[!UICONTROL Segment Expressions (Code View)]**」索引標籤以存取此功能。
 
 ## 運算式產生器程式碼語法
 
@@ -36,7 +41,7 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 
 ### 使用布林運運算元連線區段
 
-若要建立區段群組，請將頻率函式括在括弧中，並使用&#x200B;*運運算元（*、[!DNL Boolean]和[!UICONTROL AND]）設定每個運算式之間[!UICONTROL OR]的關係[!UICONTROL NOT]。
+若要建立區段群組，請將頻率函式括在括弧中，並使用[!DNL Boolean]運運算元（[!UICONTROL AND]、[!UICONTROL OR]和[!UICONTROL NOT]）設定每個運算式之間&#x200B;*的關係*。
 
 ### 參數
 
@@ -47,13 +52,13 @@ FREQUENCY([<traitID1>T,<traitID2>T]<Recency Operator><Numeric Value>D)
 | 名稱或變數 | 說明 |
 |---|---|
 | `FREQUENCY` | 必須在運算式前面的常值。 |
-| `[`&lt;`traitID` `T]` | 特徵ID的陣列，後面接著字母`T`。 請使用逗號分隔多個特徵。 例如，`[123T, 456T]`。 |
+| `[`&lt;`traitID`>`T]` | 特徵ID的陣列，後面接著字母`T`。 請使用逗號分隔多個特徵。 例如，`[123T, 456T]`。 |
 | `<Recency Operator><Numeric Value>D` | *（選擇性）*&#x200B;針對區段中的特徵設定造訪間隔規則。 字母`D`代表造訪間隔（以天為單位）。 |
 | `<Frequency Operator><Numeric Value>` | 設定區段中特徵的頻率規則。 |
 
 ### 允許的造訪間隔和頻率運運算元
 
-使用比較運運算元和整數設定[造訪間隔和頻率](../../features/segments/recency-and-frequency.md)間隔。 [!UICONTROL Segment Builder]使用&lt; （小於）、> （大於）、== （等於）等標準運算式。 不過，當您設定造訪間隔或頻率時，允許的運運算元型別會有所不同。 下表列出允許的造訪間隔/頻率運運算元。
+使用比較運運算元和整數設定[造訪間隔和頻率](../../features/segments/recency-and-frequency.md)間隔。 [!UICONTROL Segment Builder]使用&lt; （小於）、> （大於）、== （等於）等標準運算式。不過，當您設定造訪間隔或頻率時，允許的運運算元型別會有所不同。 下表列出允許的造訪間隔/頻率運運算元。
 
 <table id="table_2F92617CB472442BA5639E24DB4E43D3"> 
  <thead> 

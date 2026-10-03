@@ -1,5 +1,5 @@
 ---
-description: 在特徵產生器中，運算式產生器可讓您建立和測試建立對象資格要求的規則。 規則包含索引鍵值配對，例如"color == blue"或"price&amp；gt； 100"。 比較運運算元建立索引鍵和值之間的關係。 布林值運算式決定規則群組之間的關係。
+description: 在特徵產生器中，運算式產生器可讓您建立和測試建立對象資格要求的規則。 規則包含索引鍵值配對，例如"color == blue"或"price &gt； 100"。 比較運運算元建立索引鍵和值之間的關係。 布林值運算式決定規則群組之間的關係。
 seo-description: In Trait Builder, the Expression Builder lets you create and test rules that establish audience qualification requirements. Rules consist of key-value pairs such as "color == blue" or "price &gt; 100". Comparison operators establish the relationship between keys and values. Boolean expressions determine the relationship between rule groups.
 seo-title: Managing Trait Rules
 solution: Audience Manager
@@ -7,16 +7,21 @@ title: 管理特徵規則
 uuid: 827d4567-2b6f-411e-bd5c-9735c916291a
 feature: Traits
 exl-id: 4561b19a-bbb5-41ec-ac79-ab3e2ab75548
-TQID: https://experienceleague.adobe.com/36XAqdCyrogL7J9J1Wv7ZgKMMD8lG7DwUy6aWWT5z-8
+TQID: 'https://experienceleague.adobe.com/36XAqdCyrogL7J9J1Wv7ZgKMMD8lG7DwUy6aWWT5z-8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 678
+source-wordcount: '686'
 ht-degree: 0%
-
 ---
-
 # 管理特徵規則 {#managing-trait-rules}
 
 在[!UICONTROL Trait Builder]中，[!UICONTROL Expression Builder]可讓您建立和測試建立對象資格要求的規則。 規則包含`color == blue`或`price > 100`之類的機碼值組。 比較運運算元建立索引鍵和值之間的關係。 [!DNL Boolean]運算式決定規則群組之間的關係。
@@ -50,15 +55,15 @@ ht-degree: 0%
 
 <!-- t_tb_create_rules.xml -->
 
-在建立特徵規則之前&#x200B;**[!UICONTROL Basic Information]**，請先完成&#x200B;*區段*&#x200B;中的必填欄位。
+在建立特徵規則之前&#x200B;*，請先完成&#x200B;**[!UICONTROL Basic Information]**&#x200B;區段*&#x200B;中的必填欄位。
 
 1. 展開&#x200B;**[!UICONTROL Trait Expression]**&#x200B;區段並輸入索引鍵和值名稱。 這會建立&#x200B;*`signal`*。
 
    >[!NOTE]
    >
-   >如果您的事件呼叫使用該語法將資料傳送至`c_`，請包含索引鍵變數的[!DNL Audience Manager]首碼（或任何其他命名慣例）。
+   >如果您的事件呼叫使用該語法將資料傳送至[!DNL Audience Manager]，請包含索引鍵變數的`c_`首碼（或任何其他命名慣例）。
 
-1. 從[下拉式清單中選取](../../features/traits/trait-comparison-operators.md)比較運運算元&#x200B;**[!UICONTROL Operator]**。 比較運運算元會評估訊號中元素之間的關係。
+1. 從&#x200B;**[!UICONTROL Operator]**&#x200B;下拉式清單中選取[比較運運算元](../../features/traits/trait-comparison-operators.md)。 比較運運算元會評估訊號中元素之間的關係。
 
    >[!NOTE]
    >
@@ -68,7 +73,7 @@ ht-degree: 0%
 
 ### 範例 {#example-trait-rule}
 
-在以下範例中，使用者已根據產品ID建立新特徵規則。 若要建置此規則，使用者提供的索引鍵`productkey`連結到值`==`的equals運運算元( `2093`)。
+在以下範例中，使用者已根據產品ID建立新特徵規則。 若要建置此規則，使用者提供的索引鍵`productkey`連結到值`2093`的equals運運算元( `==`)。
 
 ![](assets/tb_sample_rule1.png)
 

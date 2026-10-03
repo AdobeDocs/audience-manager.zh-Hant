@@ -8,22 +8,30 @@ title: 設定檔合併規則與裝置圖表常見問題集
 uuid: ba7986f1-078f-4162-aef3-b5c8740cebf4
 feature: Profile Merge
 exl-id: 03ad79b7-a111-437e-82c5-c7406bd33c39
-TQID: https://experienceleague.adobe.com/G8a3lySpSqyDY7FTWSgECjhNl-aCVsjxj6I0lHUkq2o
+TQID: 'https://experienceleague.adobe.com/G8a3lySpSqyDY7FTWSgECjhNl-aCVsjxj6I0lHUkq2o'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1583
-ht-degree: 81%
-
+source-wordcount: '1623'
+ht-degree: 80%
 ---
-
 # 設定檔合併規則與裝置圖表常見問題集{#profile-merge-rules-and-device-graph-faq}
 
 設定檔合併規則與裝置圖表的常見問題解答。
@@ -34,25 +42,25 @@ ht-degree: 81%
 
 **什麼是裝置圖表？**
 
-裝置圖表是一組 ID 對應，用於定義匿名裝置群組。它會根據從每部裝置收集到的訊號中之共同元素，將這些裝置與個人或家庭建立關聯。這些訊號有助於識別個人或家庭層級的裝置。
+裝置圖表是一組 ID 對應，用於定義匿名裝置群組。 它會根據從每部裝置收集到的訊號中之共同元素，將這些裝置與個人或家庭建立關聯。 這些訊號有助於識別個人或家庭層級的裝置。
 
  
 
 **什麼是外部裝置圖表？**
 
-外部裝置圖表是指 [!DNL Audience Manager] 中並非專門從您自己的跨裝置資料來源建立的任何裝置圖表。例如，當您建立[設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)並選擇協力廠商裝置圖表選項時，就是使用外部裝置圖表。 請參閱[裝置選項](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
+外部裝置圖表是指 [!DNL Audience Manager] 中並非專門從您自己的跨裝置資料來源建立的任何裝置圖表。 例如，當您建立[設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)並選擇協力廠商裝置圖表選項時，就是使用外部裝置圖表。 請參閱[裝置選項](../features/profile-merge-rules/merge-rule-definitions.md#device-options)。
 
  
 
 **在 [!UICONTROL Profile Merge Rule] 中使用外部裝置圖表有哪些常見的使用案例？**
 
-在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表的主要目的，是針對特定區段評估，以及為屬於單一個人或家庭的多部裝置授與資格。例如，區段本身可能有多種用途，例如以DSP提供的廣告定位潛在客戶的對象，或透過站上個人化平台將客戶的站上體驗個人化。 請參閱[外部裝置圖表使用案例](../features/profile-merge-rules/external-graph-use-cases.md)
+在 [!UICONTROL Profile Merge Rule] 中使用裝置圖表的主要目的，是針對特定區段評估，以及為屬於單一個人或家庭的多部裝置授與資格。 例如，區段本身可能有多種用途，例如以DSP提供的廣告定位潛在客戶的對象，或透過站上個人化平台將客戶的站上體驗個人化。 請參閱[外部裝置圖表使用案例](../features/profile-merge-rules/external-graph-use-cases.md)
 
  
 
 **Audience Manager 是否對外部裝置圖表提供全球支援？**
 
-否。外部裝置圖表僅開放美國和加拿大使用。
+否。 外部裝置圖表僅開放美國和加拿大使用。
 
  
 
@@ -66,9 +74,9 @@ ht-degree: 81%
 
 **[!DNL Audience Manager] 如何使用裝置圖表？**
 
-在 [!DNL Audience Manager] 中[建立設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)時，裝置圖表會顯示為設定選項。透過您的 [!UICONTROL Profile Merge Rules]，這些裝置圖表可協助 [!DNL Audience Manager]：
+在 [!DNL Audience Manager] 中[建立設定檔合併規則](../features/profile-merge-rules/merge-rules-start.md)時，裝置圖表會顯示為設定選項。 透過您的 [!UICONTROL Profile Merge Rules]，這些裝置圖表可協助 [!DNL Audience Manager]：
 
-* 將多個裝置設定檔合併在一起。這會建立一個特徵超集。
+* 將多個裝置設定檔合併在一起。 這會建立一個特徵超集。
 * 評估細分資格篩選的特徵超集 (而不是分別評估各個裝置輪廓)。
 * 將符合資格的裝置新增至可用區段。
 
@@ -76,7 +84,7 @@ ht-degree: 81%
 
 **我可以建立多少 [!UICONTROL Profile Merge Rules]？**
 
-目前最多可以建立 4 個 [!UICONTROL Profile Merge Rules]。第四個設定檔合併規則 ([!UICONTROL All Cross-Device Profiles]) 僅適用於購買 [!UICONTROL People-Based Destinations] 附加元件的客戶。
+目前最多可以建立 4 個 [!UICONTROL Profile Merge Rules]。 第四個設定檔合併規則 ([!UICONTROL All Cross-Device Profiles]) 僅適用於購買 [!UICONTROL People-Based Destinations] 附加元件的客戶。
 
  
 
@@ -102,13 +110,13 @@ ht-degree: 81%
 
 **透過使用裝置圖表的 [!UICONTROL Profile Merge Rule]，若判斷裝置不再符合區段的資格，[!DNL Audience Manager] 會如何取消裝置的區段？**
 
-透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 評估區段時，Audience Manager 可合併最多 100 部裝置。如果系統發出取消細分訊號，那麼目前的裝置和最多 99 部其他裝置將會從目的地的區段中移除。如需取消細分的詳細資訊，請參閱[設定檔合併規則和裝置取消細分程序](../features/profile-merge-rules/merge-rule-unsegment.md)。
+透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 評估區段時，Audience Manager 可合併最多 100 部裝置。 如果系統發出取消細分訊號，那麼目前的裝置和最多 99 部其他裝置將會從目的地的區段中移除。 如需取消細分的詳細資訊，請參閱[設定檔合併規則和裝置取消細分程序](../features/profile-merge-rules/merge-rule-unsegment.md)。
 
  
 
 **如果目的地可以取消裝置的區段，使用裝置圖表的 [!UICONTROL Profile Merge Rules] 是否會將裝置從區段中移除？**
 
-是。請參閱上述說明。
+是。 請參閱上述說明。
 
  
 
@@ -120,7 +128,7 @@ ht-degree: 81%
 
 **區段大小估計是否包含根據使用裝置圖表選項的 [!UICONTROL Profile Merge Rule] 提供的連線符合區段資格的裝置？**
 
-不會。請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hant)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
+不會。 請參閱[區段產生器中的特徵和區段母體資料](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html?lang=zh-Hant)中的 [!UICONTROL Estimated Real-Time Population] 和 [!UICONTROL Estimated Total Population] 定義。
 
  
 
@@ -132,7 +140,7 @@ ht-degree: 81%
 
 **如果區段搭配 [!UICONTROL No Cross-Device Profile] 使用 [!UICONTROL Profile Merge Rule]，且讓裝置符合區段資格的特徵只儲存在跨裝置設定檔中，那麼區段的總母體會是 0 嗎？**
 
-是。當設定檔合併規則設為 [!UICONTROL No Cross-Device Profile]，Audience Manager 就不會在進行區段評估時計算跨裝置設定檔中儲存的特徵數。
+是。 當設定檔合併規則設為 [!UICONTROL No Cross-Device Profile]，Audience Manager 就不會在進行區段評估時計算跨裝置設定檔中儲存的特徵數。
 
  
 
@@ -140,7 +148,7 @@ ht-degree: 81%
 
 **[!DNL Audience Manager] 如何透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 來計算特徵頻率？**
 
-特徵頻率取決於跨多部裝置的特定特徵資格篩選數總和。為協助您瞭解，請參閱下列使用案例。
+特徵頻率取決於跨多部裝置的特定特徵資格篩選數總和。 為協助您瞭解，請參閱下列使用案例。
 
 <table id="table_DE7A308705C84B93B3089CAD2228569E"> 
  <thead> 
@@ -163,13 +171,13 @@ ht-degree: 81%
    <td colname="col1"> <p> <b>動作</b> </p> </td> 
    <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> 讀取並合併裝置 A 和裝置 B 的裝置設定檔。從這裡可以看出以下幾點： </p> <p> 
      <ul id="ul_7AB307154C034695B4486E68D55CB084"> 
-      <li id="li_5760BEE513C94152AA307AEE10894718">裝置 A 已符合特徵 1 資格三次。特徵 1 的頻率為 3。 </li> 
-      <li id="li_E20BC24CCCEC407C820A8032D56BC3F0">裝置 B 已符合特徵 1 資格五次。特徵 1 的頻率為 5。 </li> 
+      <li id="li_5760BEE513C94152AA307AEE10894718">裝置 A 已符合特徵 1 資格三次。 特徵 1 的頻率為 3。 </li> 
+      <li id="li_E20BC24CCCEC407C820A8032D56BC3F0">裝置 B 已符合特徵 1 資格五次。 特徵 1 的頻率為 5。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> 會加總特徵 1 的頻率，並使用 8 (3 + 5 = 8) 來決定細分資格篩選。裝置 A 和裝置 B 符合區段 1 的資格，因為其頻率為 8。 </p> </td> 
+   <td colname="col2"> <p> <span class="keyword"> Audience Manager</span> 會加總特徵 1 的頻率，並使用 8 (3 + 5 = 8) 來決定細分資格篩選。 裝置 A 和裝置 B 符合區段 1 的資格，因為其頻率為 8。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,13 +188,13 @@ ht-degree: 81%
 
 **我是否能透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 看到可觸及的裝置數？**
 
-是。報表會傳回 [!UICONTROL Profile Merge Rule] 層級的資料。報表資料會每天更新。資料是根據在您帳戶中看到的裝置，而非裝置圖表所連結的裝置。請參閱[設定檔合併規則的報表量度](../features/profile-merge-rules/profile-link-metrics.md)。
+是。 報表會傳回 [!UICONTROL Profile Merge Rule] 層級的資料。 報表資料會每天更新。 資料是根據在您帳戶中看到的裝置，而非裝置圖表所連結的裝置。 請參閱[設定檔合併規則的報表量度](../features/profile-merge-rules/profile-link-metrics.md)。
 
  
 
 **我是否能透過使用裝置圖表的 [!UICONTROL Profile Merge Rules] *即時*看到符合特定區段資格的裝置數？**
 
-是。即時母體量度會使用裝置圖表連結的所有裝置之輪廓，擷取目前裝置 (即時發現的裝置) 的細分資格篩選。
+是。 即時母體量度會使用裝置圖表連結的所有裝置之輪廓，擷取目前裝置 (即時發現的裝置) 的細分資格篩選。
 
 <table id="table_D37A51E99B314C04A96A084491A5FEC7"> 
  <thead> 
@@ -215,7 +223,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為 1。 </p> <p>在此情況下，<span class="wintitle">輪廓合併規則</span>會使用所有裝置及其特徵來決定細分資格篩選。這表示裝置 1、2 和 3 符合區段 1 的資格，但如上所述，即時區段母體中只會包含裝置 1。原因如下： </p> <p> 
+   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為 1。 </p> <p>在此情況下，<span class="wintitle">輪廓合併規則</span>會使用所有裝置及其特徵來決定細分資格篩選。 這表示裝置 1、2 和 3 符合區段 1 的資格，但如上所述，即時區段母體中只會包含裝置 1。 原因如下： </p> <p> 
      <ul id="ul_5958E1A0E1514B6BA31DF5551401AF38"> 
       <li id="li_E4F68B12ED944416ACBEAF7BF61CA4E7">裝置 1 是目前與 Audience Manager <span class="wintitle">資料收集伺服器</span> (<span class="wintitle"> DCS</span>) 即時互動的裝置。 </li> 
       <li id="li_57165E96289F4E20BF2244BC68B90BA3">裝置 2 和 3 透過裝置圖表與裝置 1 建立關聯，但它們與 DCS 互動的時間和裝置 1 不同。 </li> 
@@ -228,7 +236,7 @@ ht-degree: 81%
 
 **我是否能透過使用裝置圖表的 [!UICONTROL Profile Merge Rule] 看到符合特定區段資格的總裝置數？**
 
-是。總區段母體量度包括已根據裝置圖表的連線符合區段資格的其他裝置。
+是。 總區段母體量度包括已根據裝置圖表的連線符合區段資格的其他裝置。
 
 <table id="table_932E61B1D4374DD58F673C3B35C365EB"> 
  <thead> 
@@ -257,7 +265,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為三 (3)。 </p> <p>在此情況下，<span class="wintitle">輪廓合併規則</span>會使用所有裝置及其特徵來決定細分資格篩選。這表示裝置 1、2 和 3 符合區段 1 的資格，而且這三者皆納入總母體中。 </p> </td> 
+   <td colname="col2"> <p>根據先前的元素，區段 1 的總母體為三 (3)。 </p> <p>在此情況下，<span class="wintitle">輪廓合併規則</span>會使用所有裝置及其特徵來決定細分資格篩選。 這表示裝置 1、2 和 3 符合區段 1 的資格，而且這三者皆納入總母體中。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

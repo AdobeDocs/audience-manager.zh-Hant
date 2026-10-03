@@ -8,16 +8,18 @@ title: Audience Manager中的訪客驗證狀態
 uuid: d748c0c3-5833-4fb9-ab3e-793f5f252e47
 feature: Reference
 exl-id: 55aec28d-02f6-4e6d-9be1-4ce40deb8dc3
-TQID: https://experienceleague.adobe.com/-sM2Nc-SH0JibLcGQlY5P61zygmnDCEIvjjFq5QglYk
+TQID: 'https://experienceleague.adobe.com/-sM2Nc-SH0JibLcGQlY5P61zygmnDCEIvjjFq5QglYk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 315
+source-wordcount: '331'
 ht-degree: 2%
-
 ---
-
 # Audience Manager中的訪客驗證狀態{#visitor-authentication-states-in-audience-manager}
 
 Audience Manager中的訪客驗證狀態會決定新特徵資訊會寫入訪客已驗證的設定檔中，還是寫入資料收集來源裝置設定檔中。 Audience Manager會以相同方式處理事件呼叫中的訪客ID驗證狀態UNKNOWN和LOGGED_OUT。

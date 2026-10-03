@@ -6,23 +6,30 @@ solution: Audience Manager
 title: 必要條件和考量事項
 feature: People-based Destinations
 exl-id: 7656aa3e-3410-4052-8e29-b702bd0bf149
-TQID: https://experienceleague.adobe.com/SjS39KDro3z9ZFOolg5GU3pLgxG2GEmxrBJoR8tJByY
+TQID: 'https://experienceleague.adobe.com/SjS39KDro3z9ZFOolg5GU3pLgxG2GEmxrBJoR8tJByY'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+subfeature_v2:
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 996
+source-wordcount: '1069'
 ht-degree: 2%
-
 ---
-
 # 必要條件和考量事項 {#prerequisites-considerations}
 
 >[!IMPORTANT]
@@ -46,7 +53,7 @@ ht-degree: 2%
 使用[!UICONTROL People-Based Destinations]將第一方對象[!UICONTROL segments]傳送至[!DNL Facebook]之前，請確定您符合下列要求：
 
 1. 您的[!DNL Facebook]使用者帳戶必須針對您計畫使用的廣告帳戶啟用&#x200B;**管理行銷活動**&#x200B;許可權。
-2. 將&#x200B;**Adobe Experience Cloud**&#x200B;商業帳戶新增為您[!DNL Facebook Ad Account]中的廣告合作夥伴。 使用 `business ID=206617933627973`。如需詳細資訊，請參閱[新增合作夥伴至您的Business Manager](https://www.facebook.com/business/help/1717412048538897)。
+2. 將&#x200B;**Adobe Experience Cloud**&#x200B;商業帳戶新增為您[!DNL Facebook Ad Account]的廣告合作夥伴。 使用 `business ID=206617933627973`。 如需詳細資訊，請參閱[新增合作夥伴至您的Business Manager](https://www.facebook.com/business/help/1717412048538897)。
 
    >[!IMPORTANT]
    >設定Adobe Experience Cloud的許可權時，您必須啟用&#x200B;**管理行銷活動**&#x200B;許可權。 這是進行 [!UICONTROL People-Based Destinations] 整合的必要權限。
@@ -99,16 +106,16 @@ Google會自動允許具有合規帳戶的客戶列出。
 
 * 修剪電子郵件字串中所有開頭和結尾的空格；範例： `johndoe@example.com`，而非`<space>johndoe@example.com<space>`；
 * 雜湊電子郵件字串時，請務必雜湊小寫字串；
-   * 範例： `example@email.com`，而非`EXAMPLE@EMAIL.COM`；
+  * 範例： `example@email.com`，而非`EXAMPLE@EMAIL.COM`；
 * 請確定雜湊字串都是小寫
-   * 範例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`，而非`55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`；
+  * 範例： `55e79200c1635b37ad31a378c39feb12f120f116625093a19bc32fff15041149`，而非`55E79200C1635B37AD31A378C39FEB12F120F116625093A19bC32FFF15041149`；
 * 請勿對字串執行Salt處理。
 
 觀看以下影片以瞭解[!UICONTROL People-Based Destinations]的雜湊需求。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29003/)
 
-Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs[的](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hant)SHA256雜湊支援。
+Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Service (ECID)]雜湊客戶ID的選項。 如需如何使用ECID雜湊客戶ID的詳細資訊，請參閱setCustomerIDs[&#128279;](https://experienceleague.adobe.com/docs/id-service/using/reference/hashing-support.html?lang=zh-Hant)的SHA256雜湊支援。
 
 ## 取得使用者許可權 {#obtaining-user-permission}
 
@@ -128,5 +135,5 @@ Adobe Experience Cloud提供您透過[!DNL Adobe Experience Platform Identity Se
 
 有兩種方式可將離線資料帶入 Audience Manager 中以用於[!UICONTROL People-Based Destinations]。
 
-* [將批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)傳送至Audience Manager以擷取雜湊電子郵件地址。 使用此方法，您可以選擇使用[!DNL CRM]中[!UICONTROL People-Based Destinations]資料庫的雜湊電子郵件地址。 此外，使用此方法時，您也可以讓雜湊電子郵件地址符合[已上線特徵](../traits/trait-and-segment-qualification-reference.md)。
+* [將批次資料](../../integration/sending-audience-data/batch-data-transfer-explained/batch-data-transfer-overview.md)傳送至Audience Manager以擷取雜湊電子郵件地址。 使用此方法，您可以選擇使用[!UICONTROL People-Based Destinations]中[!DNL CRM]資料庫的雜湊電子郵件地址。 此外，使用此方法時，您也可以讓雜湊電子郵件地址符合[已上線特徵](../traits/trait-and-segment-qualification-reference.md)。
 * 傳入已驗證的客戶ID時，請使用[宣告ID](../declared-ids.md)來宣告雜湊電子郵件地址。 使用此方法時，Audience Manager只會代表您傳送已線上上通過驗證的使用者之雜湊電子郵件地址給[!UICONTROL People-Based Destinations]。 透過以人物為基礎的管道啟用的電子郵件地址只是宣告ID事件呼叫中的電子郵件地址。 與客戶ID相關聯的其他電子郵件地址不會即時傳送。

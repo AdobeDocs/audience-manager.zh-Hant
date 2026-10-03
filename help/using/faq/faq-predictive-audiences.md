@@ -6,22 +6,28 @@ solution: Audience Manager
 title: 預測客群常見問題集
 feature: Algorithmic Models
 exl-id: 21073970-8457-470b-89fc-724a118a18d2
-TQID: https://experienceleague.adobe.com/XejuJkgwEhWkbQB2qqFljsSApGIABmlZgvDKYtNlf-8
+TQID: 'https://experienceleague.adobe.com/XejuJkgwEhWkbQB2qqFljsSApGIABmlZgvDKYtNlf-8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 957
+source-wordcount: '963'
 ht-degree: 59%
-
 ---
-
 # 預測客群常見問題集
 
 關於 [!UICONTROL Predictive Audiences] 的常見問題集。
@@ -30,10 +36,10 @@ ht-degree: 59%
 
 **我何時應使用 [!UICONTROL Predictive Audiences] 而非 [!UICONTROL Look-alike modeling]？**
 
-[!UICONTROL Predictive Audiences] 和 [!UICONTROL Look-alike modeling] 運用在不同的使用案例。這兩種演算法的主要差異如下：
+[!UICONTROL Predictive Audiences] 和 [!UICONTROL Look-alike modeling] 運用在不同的使用案例。 這兩種演算法的主要差異如下：
 
-1. [!UICONTROL Look-alike modeling] 以小型客群作為輸入，並加以擴充。[!UICONTROL Predictive Audiences] 以大型客群作為輸入，並將其劃分為由您的角色定義的較小不重複客群。
-1. 每個演算法的基本區段數不同。[!UICONTROL Predictive Audiences] 至少需要兩個基線，而最 [!UICONTROL Look-alike modeling] 多使用一個基線。
+1. [!UICONTROL Look-alike modeling] 以小型客群作為輸入，並加以擴充。 [!UICONTROL Predictive Audiences] 以大型客群作為輸入，並將其劃分為由您的角色定義的較小不重複客群。
+1. 每個演算法的基本區段數不同。 [!UICONTROL Predictive Audiences] 至少需要兩個基線，而最 [!UICONTROL Look-alike modeling] 多使用一個基線。
 1. [!UICONTROL Predictive Audiences] 執行即時區段評估，但 [!UICONTROL Look-alike modeling] 不執行。
 
 您應根據您的使用案例，決定相關度較高的模型。
@@ -44,13 +50,13 @@ ht-degree: 59%
 
 **我可以建立多少個角色/模型？**
 
-您最多可建立 10 個 [!UICONTROL Predictive Audiences] 模型。針對每個模型，您最多可定義 50 個基線特徵或區段。
+您最多可建立 10 個 [!UICONTROL Predictive Audiences] 模型。 針對每個模型，您最多可定義 50 個基線特徵或區段。
 
  
 
 **如何從 [!UICONTROL Predictive Audiences] 區段建立新區段？**
 
-前往「**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**」，然後按一下 **[!UICONTROL Predictive Audiences]** 資料夾。找到所需的區段，複製該區段，然後根據您的需求加以編輯。
+前往「**[!UICONTROL Audience Data]** > **[!UICONTROL Segments]**」，然後按一下 **[!UICONTROL Predictive Audiences]** 資料夾。 找到所需的區段，複製該區段，然後根據您的需求加以編輯。
 
  
 
@@ -79,18 +85,18 @@ ht-degree: 59%
 
 **為什麼我的模型顯示[!UICONTROL Error]狀態？**
 
-模型無法執行。在這種情況下，請洽詢您的[!DNL Adobe]代表。
+模型無法執行。 在這種情況下，請洽詢您的[!DNL Adobe]代表。
 
  
 
-**如何變更[!UICONTROL Profile Merge Rule] [!UICONTROL Predictive Audiences]的[!UICONTROL segment]？**
+**如何變更[!UICONTROL Predictive Audiences] [!UICONTROL segment]的[!UICONTROL Profile Merge Rule]？**
 
 選取與先前模型相同的角色和目標對象，以建立新模型。 在建立模型期間，指派其他[!UICONTROL Profile Merge Rule]。
 
 >[!WARNING]
-> 或者，您可以使用[區段產生器](../features/segments/segment-builder.md)以手動方式建立具有現有預測性[!UICONTROL segment]的[!UICONTROL trait]，並指派您選擇的[!UICONTROL Profile Merge Rule]。
+> 或者，您可以使用[區段產生器](../features/segments/segment-builder.md)以手動方式建立具有現有預測性[!UICONTROL trait]的[!UICONTROL segment]，並指派您選擇的[!UICONTROL Profile Merge Rule]。
 > 
-> 但是，我們不建議此作法，因為預測性[!UICONTROL traits]會自動繼承其所屬模型的[!UICONTROL Profile Merge Rule]，且這些模型是從符合模型[!UICONTROL traits]且具影響力的[!UICONTROL Profile Merge Rule]建立的。
+> 但是，我們不建議此作法，因為預測性[!UICONTROL traits]會自動繼承其所屬模型的[!UICONTROL Profile Merge Rule]，且這些模型是從符合模型[!UICONTROL Profile Merge Rule]且具影響力的[!UICONTROL traits]建立的。
 
  
 
@@ -98,7 +104,7 @@ ht-degree: 59%
 
 為您的模型選擇[!UICONTROL Profile Merge Rule]時，請仔細分析您的使用案例。
 
-假設您的目標對象[!UICONTROL segment]使用基於已驗證設定檔+ [!UICONTROL Profile Merge Rule]設定檔的[!DNL Device Graph]，並且您為預測性[!UICONTROL Profile Merge Rule]選取相同的[!UICONTROL segments]。 在此情況下，裝置層級和跨裝置層級[!UICONTROL traits]都將用於訓練模型，以及將使用者置於預測性[!UICONTROL segment]中。
+假設您的目標對象[!UICONTROL segment]使用基於已驗證設定檔+ [!DNL Device Graph]設定檔的[!UICONTROL Profile Merge Rule]，並且您為預測性[!UICONTROL segments]選取相同的[!UICONTROL Profile Merge Rule]。 在此情況下，裝置層級和跨裝置層級[!UICONTROL traits]都將用於訓練模型，以及將使用者置於預測性[!UICONTROL segment]中。
 
 但是，如果您僅根據裝置設定檔選取[!UICONTROL Profile Merge Rule]，則您的跨裝置[!UICONTROL traits]都不會變得有影響力，也不會有助於將使用者置於預測性[!UICONTROL segment]中。 這可能會對模型的精確度和觸及率產生不利的影響。
 
@@ -106,19 +112,19 @@ ht-degree: 59%
 
 **目標客群中不屬於任何角色特徵/細分群體的使用者是否不可分類？**
 
-是的，萬一使用者的個人檔案中沒有任何特徵，在這種情況下，使用者的所有角色特徵/區段比對分數將為 0，因此不會分類為任何預測區段。
+是的，萬一使用者的個人檔案中沒有任何特徵， 在這種情況下，使用者的所有角色特徵/區段比對分數將為 0，因此不會分類為任何預測區段。
 
  
 
 **分類為其中一個預測區段的使用者是否可重新分類為不同 [!UICONTROL Predictive Audiences] 區段？**
 
-是。由於演算法每天都在學習並進步，因此會將變更套用到每個角色的特徵分數上。如果屬於某個 [!UICONTROL Predictive Audiences] 區段的使用者處於作用中狀態，其特徵分數的變化可根據過去 30 天的活動來變更分類。
+是。 由於演算法每天都在學習並進步，因此會將變更套用到每個角色的特徵分數上。 如果屬於某個 [!UICONTROL Predictive Audiences] 區段的使用者處於作用中狀態，其特徵分數的變化可根據過去 30 天的活動來變更分類。
 
  
 
 **我是否可檢視哪些客群分類是依據哪些特徵？**
 
-是的，您可以在模型報表頁面中查看所有基線的所有具影響力的特徵。請參閱[具影響力的特徵](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits)。
+是的，您可以在模型報表頁面中查看所有基線的所有具影響力的特徵。 請參閱[具影響力的特徵](../features/algorithmic-models/predictive-audiences-reporting.md#influential-traits)。
 
  
 
@@ -133,10 +139,10 @@ ht-degree: 59%
 
 **如果編輯其中一個基線特徵或區段，模型會發生什麼事？**
 
-模型一天會評估一次特徵或區段。您應會在做出更新後的隔天看到更新的分類。
+模型一天會評估一次特徵或區段。 您應會在做出更新後的隔天看到更新的分類。
 
  
 
 **我是否可選擇模型要向哪個資料來源學習？**
 
-否，不支援選取資料來源。[!UICONTROL Predictive Audiences] 演算法會向您的所有第一方特徵學習。
+否，不支援選取資料來源。 [!UICONTROL Predictive Audiences] 演算法會向您的所有第一方特徵學習。

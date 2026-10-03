@@ -7,21 +7,28 @@ title: 將區段傳送至Google AdWords再行銷清單
 uuid: 5ad821c6-48b4-42c0-b912-1563331e93a2
 feature: Third-party Integration
 exl-id: 76676eae-de4f-4fee-8774-ee215525306a
-TQID: https://experienceleague.adobe.com/BxJ9n5RLQwR8i9Sgu1cgeaijSCrKLltsAXdm0eQBqxY
+TQID: 'https://experienceleague.adobe.com/BxJ9n5RLQwR8i9Sgu1cgeaijSCrKLltsAXdm0eQBqxY'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 284
+source-wordcount: '299'
 ht-degree: 0%
-
 ---
-
 # 將區段傳送至Google Ads再行銷清單 {#send-segments-to-a-google-adwords-remarketing-list}
 
 此程式需要[!DNL Google Ads]再行銷清單、畫素代碼和Audience Manager [!DNL URL] [!DNL destination]。 也稱為搜尋廣告([!DNL RLSA])整合的再行銷清單。 僅適用於付費搜尋。
@@ -41,9 +48,9 @@ ht-degree: 0%
 1. 在Audience Manager中，[建立 [!DNL URL destination]](../../features/destinations/create-url-destination.md)或編輯現有的[!DNL destination]。 建立[!DNL destination]時，請使用下列設定：
    * 型別： URL
    * 序列化：已啟用
-   * 分隔符號：分號（ &amp;amp；分號； ）
+   * 分隔符號：分號( &amp;semi； )
 
-1. 在[!UICONTROL Segment Mappings] [!DNL URL]的[!DNL destination]區段中，將步驟2中的程式碼新增至[!DNL URL]和[!DNL Secure URL]欄位。 在`http:`和`https:`欄位中分別以[!DNL URL]和[!DNL Secure URL]作為程式碼的前置詞。
+1. 在[!DNL URL] [!DNL destination]的[!UICONTROL Segment Mappings]區段中，將步驟2中的程式碼新增至[!DNL URL]和[!DNL Secure URL]欄位。 在[!DNL URL]和[!DNL Secure URL]欄位中分別以`http:`和`https:`作為程式碼的前置詞。
 
    >[!IMPORTANT]
    >

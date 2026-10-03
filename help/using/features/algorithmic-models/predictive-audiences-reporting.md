@@ -6,23 +6,30 @@ solution: Audience Manager
 title: 預測受眾報表
 feature: Algorithmic Models
 exl-id: 43a4272c-d9be-47f6-9b81-15472b0366ab
-TQID: https://experienceleague.adobe.com/cCq0D-eJiC3HKysBofh6yxzJ2iBV-e1cOXnYl-VnZD8
+TQID: 'https://experienceleague.adobe.com/cCq0D-eJiC3HKysBofh6yxzJ2iBV-e1cOXnYl-VnZD8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data collection
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 608
+source-wordcount: '632'
 ht-degree: 2%
-
 ---
-
 # 預測受眾報表
 
 儲存[!UICONTROL Predictive Audiences]模型後，Audience Manager會開始對其進行訓練。 在數小時內，計算模型將開始分析[資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hant#dcs-pcs)上的對象。 報告功能將於次日提供。
@@ -40,10 +47,10 @@ ht-degree: 2%
 * **[!UICONTROL Description]**：您在模型建立步驟中提供的說明；
 * **[!UICONTROL Model Type]**：每個模型的型別（[!UICONTROL Look-Alike Modeling]或[!UICONTROL Predictive Audiences]）；
 * **[!UICONTROL Status]**：每個模型的狀態：
-   * **[!UICONTROL Pending]**：模型正在初始化，很快就會開始產生結果；
-   * **[!UICONTROL Active]**：模型已成功執行並產生結果；
-   * **[!UICONTROL Warning]**：模型無法產生結果，因為資料不足（也就是基線母體低，使用者設定檔不豐富）；
-   * **[!UICONTROL Error]**：模型無法執行。 請聯絡您的Adobe代表。
+  * **[!UICONTROL Pending]**：模型正在初始化，很快就會開始產生結果；
+  * **[!UICONTROL Active]**：模型已成功執行並產生結果；
+  * **[!UICONTROL Warning]**：模型無法產生結果，因為資料不足（也就是基線母體低，使用者設定檔不豐富）；
+  * **[!UICONTROL Error]**：模型無法執行。 請聯絡您的Adobe代表。
 
 ## 模型概觀報表{#model-report}
 

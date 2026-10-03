@@ -7,26 +7,38 @@ title: 實作Audience Manager
 uuid: 89369224-3b21-45a9-a4ed-a0a977410520
 feature: Third-party Integration
 exl-id: 8f8a6881-d616-4d0e-aeaa-bf3bb3a172f9
-TQID: https://experienceleague.adobe.com/kGezI8iT63EVPpn4gdftTPXhhhm3ouQBl-9deJ1Xs0o
+TQID: 'https://experienceleague.adobe.com/kGezI8iT63EVPpn4gdftTPXhhhm3ouQBl-9deJ1Xs0o'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 996
+source-wordcount: '1028'
 ht-degree: 0%
-
 ---
-
 # 實作Audience Manager {#implementing-audience-manager}
 
 本節概述並說明與開始使用Audience Manager資料管理平台([!DNL DMP])相關的程式。 本節旨在協助業務團隊、專案經理和技術經理瞭解Audience Manager實作程式。 視您的資料收集需求而定，Audience Manager快速入門可能需要約六週至三個月的時間。

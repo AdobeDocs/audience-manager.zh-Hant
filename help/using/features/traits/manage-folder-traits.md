@@ -8,21 +8,28 @@ title: 管理資料夾特徵
 uuid: 287ac280-bd58-4985-85bd-b6501eb64b7f
 feature: Traits
 exl-id: fa7a8d2a-dacc-413e-89d6-d3b7ce7bbbe3
-TQID: https://experienceleague.adobe.com/YScTXBbG6HeRUviBsC2Rl9L7QdOXe-ciVwWBQfbPOzs
+TQID: 'https://experienceleague.adobe.com/YScTXBbG6HeRUviBsC2Rl9L7QdOXe-ciVwWBQfbPOzs'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: '363'
 ht-degree: 7%
-
 ---
-
 # 管理資料夾特徵 {#manage-folder-traits}
 
 建立、編輯和刪除資料夾特徵。
@@ -41,7 +48,7 @@ ht-degree: 7%
 
    ![](assets/folder_traits_create.PNG)
 
-1. 按一下 + 圖示可建立資料夾。請注意，您最多可以在分類法中建立 2000 個資料夾。如需詳細資訊，請參閱[使用限制](../../features/administration/usage-limits.md)文件。
+1. 按一下 + 圖示可建立資料夾。 請注意，您最多可以在分類法中建立 2000 個資料夾。 如需詳細資訊，請參閱[使用限制](../../features/administration/usage-limits.md)文件。
 1. 為資料夾命名，然後按一下&#x200B;**儲存**。 例如，名為Electronics的資料夾將有一個名為「Electronics資料夾特徵」的資料夾特徵。 您可以在特徵控制面板中檢視及選取新資料夾特徵。
 1. 新資料夾特徵會自動指派給[!DNL Audience Manager]產生的資料來源。 您具有適當[!UICONTROL Role-Based Access Control] ([!DNL RBAC])許可權的使用者可以在編輯資料夾特徵工作流程中變更資料來源。 請參閱[編輯資料夾特徵](../../features/traits/manage-folder-traits.md#edit-folder-trait)。
 

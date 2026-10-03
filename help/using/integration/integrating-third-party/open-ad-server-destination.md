@@ -7,25 +7,34 @@ title: OAS作為Audience Manager目的地
 uuid: 5891a063-5a4b-4ea7-865f-b24e17ca735f
 feature: Third-party Integration
 exl-id: cf919c27-691f-424b-be83-040f03e34455
-TQID: https://experienceleague.adobe.com/ObecxWx-zHr7wi9wAVcWjmhAol0L1XbXKUcH-tFlvUU
+TQID: 'https://experienceleague.adobe.com/ObecxWx-zHr7wi9wAVcWjmhAol0L1XbXKUcH-tFlvUU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
 subfeature_v2:
   - id: e7029888-c8b0-46a7-849a-cf132a1559bf
+    internal-label: Destination Builder
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 640
-ht-degree: 0%
-
+source-wordcount: '647'
+ht-degree: 1%
 ---
-
 # OAS作為Audience Manager目的地 {#oas-as-an-audience-manager-destination}
 
 將[!DNL Open Ad Server]設定為目的地，並將Audience Manager資料傳送至該平台。
@@ -66,14 +75,14 @@ Audience Manager可將區段資料傳送至瀏覽器Cookie，如下所示：
 
 <!-- aam-oas-destination-setup.xml -->
 
-在Audience Manager中，*目的地*&#x200B;是您要與其共用資料的任何其他系統（廣告伺服器、[!DNL DSP]、廣告網路等）。 [!UICONTROL Destination Builder]提供可讓您建立和管理這些資料傳遞程式的工具。 Audience Manager目的地功能位於&#x200B;*對象資料>目的地*。 若要開始使用，請按一下&#x200B;**[!UICONTROL Add New Destination]**&#x200B;並遵循下列步驟。
+在Audience Manager中，*目的地*&#x200B;是任何其他系統（廣告伺服器、[!DNL DSP]、廣告網路等） 任何其他系統（廣告伺服器、DSP）。 [!UICONTROL Destination Builder]提供可讓您建立和管理這些資料傳遞程式的工具。 Audience Manager目的地功能位於&#x200B;*對象資料>目的地*。 若要開始使用，請按一下&#x200B;**[!UICONTROL Add New Destination]**&#x200B;並遵循下列步驟。
 
 ### 步驟1：基本資訊
 
 若要完成[!UICONTROL Basic Information]區段：
 
 1. 為目的地命名。
-1. 從&#x200B;**[!UICONTROL "Cookie"]**&#x200B;下拉式清單中選取[!UICONTROL Type]。
+1. 從[!UICONTROL Type]下拉式清單中選取&#x200B;**[!UICONTROL "Cookie"]**。
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並移至[!UICONTROL Configuration]與[!UICONTROL Segment Mappings]區段。
 
 ### 步驟2：設定資訊

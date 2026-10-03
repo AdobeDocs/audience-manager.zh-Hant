@@ -7,27 +7,38 @@ title: 管理測試群組
 uuid: 2fadddeb-7574-4853-8c52-c58456582c62
 feature: Audience Lab
 exl-id: 1d07c8f1-34dc-4339-bd5d-87042a22f7e9
-TQID: https://experienceleague.adobe.com/jQyTdKOIzeBEuUr76cpwJFNNdMRuzlCbJpGbC0mLQpM
+TQID: 'https://experienceleague.adobe.com/jQyTdKOIzeBEuUr76cpwJFNNdMRuzlCbJpGbC0mLQpM'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: e8501b6e-f5e0-495d-8a3d-6aa9293cdcc5
+    internal-label: Audience Lab
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 981
+source-wordcount: '1001'
 ht-degree: 0%
-
 ---
-
 # 管理測試群組 {#manage-test-groups}
 
 此程式會逐步引導您完成在[!UICONTROL Audience Lab]中建立、編輯或刪除測試群組所需的步驟。
@@ -38,20 +49,20 @@ ht-degree: 0%
 
 <!-- create-test-group.xml -->
 
-* 您必須設定至少一個&#x200B;**轉換特徵**。 您可以選取[轉換](../../features/traits/create-onboarded-rule-based-traits.md)作為事件型別，在&#x200B;**特徵產生器**&#x200B;中設定轉換特徵。 如需有關轉換特徵及其設定方式的詳細資訊，我們為您準備了[影片](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html)。
+* 您必須設定至少一個&#x200B;**轉換特徵**。 您可以選取&#x200B;**轉換**&#x200B;作為事件型別，在[特徵產生器](../../features/traits/create-onboarded-rule-based-traits.md)中設定轉換特徵。 如需有關轉換特徵及其設定方式的詳細資訊，我們為您準備了[影片](https://helpx.adobe.com/audience-manager/kt/using/creating-conversion-traits-feature-video-use.html)。
 
   >[!IMPORTANT]
   >
-  >[資料夾特徵](../../features/traits/about-folder-traits.md) **不受**&#x200B;支援[!UICONTROL Audience Lab]。 將資料夾特徵的[事件型別](../../features/traits/create-onboarded-rule-based-traits.md)設定為&#x200B;**轉換**，將不會在[!UICONTROL Audience Lab]中產生該特定資料夾特徵的任何資料。
+  >[資料夾特徵](../../features/traits/about-folder-traits.md) **不受[!UICONTROL Audience Lab]支援**。 將資料夾特徵的[事件型別](../../features/traits/create-onboarded-rule-based-traits.md)設定為&#x200B;**轉換**，將不會在[!UICONTROL Audience Lab]中產生該特定資料夾特徵的任何資料。
 
 * 針對使用[角色型存取控制](../../features/administration/administration-overview.md)的公司：將[!UICONTROL Audience Lab] [萬用字元許可權](../../features/administration/administration-overview.md#wild-card-permissions)指派給&#x200B;**[!UICONTROL User Groups]**&#x200B;以提供存取權。 此許可權可讓使用者建立和檢視測試的結果。 使用者將只能使用他們具有&#x200B;**讀取**&#x200B;和&#x200B;**對應到目的地**&#x200B;許可權的資料來源區段。 使用者將只能使用他們擁有&#x200B;**「讀取」**&#x200B;許可權的資料來源的轉換特徵。 使用者也只能檢視他們有權存取的目的地。 因此，在將[!DNL Audience Lab]萬用字元許可權新增到群組之前，請確定群組具有：
-   * 存取權以讀取相關的轉換特徵；
-   * 存取可讀取及對應測試的相關區段；
-   * 相關目的地的存取權。
+  * 存取權以讀取相關的轉換特徵；
+  * 存取可讀取及對應測試的相關區段；
+  * 相關目的地的存取權。
 
 若要建立新的[!UICONTROL Segment Test Group]：
 
-1. 在&#x200B;**[!UICONTROL Create New Test Group]**&#x200B;儀表板中選取[!UICONTROL Audience Lab]以啟動精靈。
+1. 在[!UICONTROL Audience Lab]儀表板中選取&#x200B;**[!UICONTROL Create New Test Group]**&#x200B;以啟動精靈。
 1. **[!UICONTROL Basic Info & Choose Segment]**
 
    * 填寫&#x200B;**[!UICONTROL Test Group Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
@@ -101,7 +112,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >* 您可以在建立過程中隨時儲存測試群組，並稍後返回精靈。 測試群組狀態將為&#x200B;**[!UICONTROL Draft]**，而且在您完成區段測試群組之前，測試群組不會傳送任何資料至目的地。
-   >* 對於草稿測試，您可以在主要&#x200B;**[!UICONTROL Edit]**&#x200B;檢視中按一下測試群組卡片中的[!UICONTROL Audience Lab]，返回並編輯測試群組。
+   >* 對於草稿測試，您可以在主要[!UICONTROL Audience Lab]檢視中按一下測試群組卡片中的&#x200B;**[!UICONTROL Edit]**，返回並編輯測試群組。
 
 ## 編輯區段測試群組 {#edit-test-groups}
 

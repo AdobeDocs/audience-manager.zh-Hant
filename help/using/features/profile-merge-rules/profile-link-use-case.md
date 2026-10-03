@@ -7,18 +7,24 @@ title: 設定檔連結裝置圖表使用案例
 uuid: bd5567fd-fcd5-40ba-b6f1-035d2ddbcd3a
 feature: Profile Merge
 exl-id: 8712d02f-c431-4116-8807-41f9e2dda44c
-TQID: https://experienceleague.adobe.com/q6PDlsUmoj1tJ8DL1GMjDcS6S5rgO0PKP4RfhqxkAYI
+TQID: 'https://experienceleague.adobe.com/q6PDlsUmoj1tJ8DL1GMjDcS6S5rgO0PKP4RfhqxkAYI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 302
+source-wordcount: '310'
 ht-degree: 4%
-
 ---
-
 # 設定檔連結裝置圖表使用案例 {#profile-link-device-graph-use-cases}
 
 使用[!UICONTROL Profile Link Device Graph]進行區段重新定位和個人化區段資格的建議和使用案例。

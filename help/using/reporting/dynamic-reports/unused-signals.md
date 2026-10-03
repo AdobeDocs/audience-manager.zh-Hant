@@ -7,18 +7,24 @@ title: 未使用的訊號報表
 uuid: 04334a5c-3e21-44db-b971-0b4457685e9a
 feature: Overlap Reports
 exl-id: ab5cb5ad-4305-4463-8f56-237b5a2f1f9e
-TQID: https://experienceleague.adobe.com/OfDw6FsS-MlFtwy-91jBH1O8d57aCvOap94ZK3zHVco
+TQID: 'https://experienceleague.adobe.com/OfDw6FsS-MlFtwy-91jBH1O8d57aCvOap94ZK3zHVco'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 623
+source-wordcount: '633'
 ht-degree: 1%
-
 ---
-
 # 未使用的訊號報表{#unused-signals-report}
 
 此報表會傳回在詳細目錄中收集並傳送至Audience Manager的所有未使用資訊的頻率計數。 若要存取此報表，請瀏覽至&#x200B;**Analytics >對象報表>其他報表>未使用的訊號**。
@@ -31,7 +37,7 @@ ht-degree: 1%
 
 ## 概述
 
-訊號是來自您網站的資訊，以[!DNL Audience Manager]索引鍵值配對[&#x200B; （例如](../../reference/key-value-pairs-explained.md)等）的形式傳入`color=blue, price>100, gender=female`。
+訊號是來自您網站的資訊，以[索引鍵值配對](../../reference/key-value-pairs-explained.md) （例如`color=blue, price>100, gender=female`等）的形式傳入[!DNL Audience Manager]。
 
 未使用的訊號包含您收集但尚未對應至特徵的資料。 [!UICONTROL Unused Signals]報表會依日期、索引鍵、值和頻率計數，在表格中顯示資料。 任何傳入至[!DNL Audience Manager]的未對應訊號（一天內至少100次）都符合[!UICONTROL Unused Signals]報表的資格。
 
@@ -80,8 +86,8 @@ ht-degree: 1%
 >在報表中搜尋未使用的值時，請考慮以下特性。 以下兩個範例的運算式不同：
 
 * T(v=1 [!UICONTROL AND NOT] (a=23))
-* T(v=1 [!UICONTROL AND] (a！=23))
-* 這兩個範例都顯示一個特徵，其中包含兩個機碼值組v和a。第一個運算式會轉譯為：特徵包含值為1 [!UICONTROL AND NOT]的索引鍵v和值為23的索引鍵a。 第二個運算式包含值為1 [!UICONTROL AND]的索引鍵v和值為[!UICONTROL NOT EQUAL] 23的索引鍵a。
+* T(v=1 [!UICONTROL AND] (a!=23))
+* 這兩個範例都顯示一個特徵，其中包含兩個機碼值組v和a。 第一個運算式會轉譯為：特徵包含值為1 [!UICONTROL AND NOT]的索引鍵v和值為23的索引鍵a。 第二個運算式包含值為1 [!UICONTROL AND]的索引鍵v和值為[!UICONTROL NOT EQUAL] 23的索引鍵a。
 * 考慮到上述兩種不同的運算式，假設您在[!UICONTROL Unused Signals Report]中搜尋傳遞至索引鍵a的值，其任何值都不是23，則您只能在第一個案例中取得結果，因為索引鍵的值完全未傳送。 在第二個案例中，傳送的值與23不同，因此機碼a不會未使用。
 
 ## 大量特徵建立

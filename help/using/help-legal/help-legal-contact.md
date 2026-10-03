@@ -6,18 +6,24 @@ solution: Audience Manager
 title: 聯絡與法律資訊
 feature: Support
 exl-id: 02c80394-c5ed-4963-8543-4585c0c289c6
-TQID: https://experienceleague.adobe.com/HpTQDl5UkJ1KoyqBYUIZe4zphM9Y5NgGoSii1zNWIpw
+TQID: 'https://experienceleague.adobe.com/HpTQDl5UkJ1KoyqBYUIZe4zphM9Y5NgGoSii1zNWIpw'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 243
-ht-degree: 100%
-
+source-wordcount: '263'
+ht-degree: 84%
 ---
-
 # 聯絡與法律資訊 {#legal-contact}
 
 此項資訊可協助您聯絡 Adobe 並瞭解使用本產品與文件的相關法律問題。
@@ -26,14 +32,14 @@ ht-degree: 100%
 
 Adobe Experience Cloud 客戶服務團隊在此協助您，並提供可以與其聯絡的許多種途徑：
 
-* [請參閱 Experience Cloud 說明頁面，以取得建議、提示及常見問題解答](https://helpx.adobe.com/tw/support.ec.html)
-* [在 Twitter @AdobeExpCare 上簡單說明您的問題](https://twitter.com/AdobeExpCare)
-* [直接聯絡客戶服務團隊](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)
-* [查看 Experience Cloud 解決方案的可用性和狀態](https://status.adobe.com/tw)
+* [請參閱Experience Cloud說明頁面，以取得建議、提示及常見問答](https://helpx.adobe.com/tw/support.ec.html)
+* [透過Twitter @AdobeExpCare向我們快速提問](https://twitter.com/AdobeExpCare)
+* [直接連絡客戶服務團隊](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)
+* [檢視Experience Cloud解決方案的可用性和狀態](https://status.adobe.com/tw)
 
 ## 服務、功能和帳單 {#billing}
 
-根據您的解決方案設定，本文件中說明的某些選項可能無法使用。因為每個帳戶都是獨一無二，所以關於定價、到期日、條款和條件的資訊請參閱您的合約。若您想要新增或變更服務層級，或有關於目前服務的疑問，請聯絡您的客戶經理。
+根據您的解決方案設定，本文件中說明的某些選項可能無法使用。 因為每個帳戶都是獨一無二，所以關於定價、到期日、條款和條件的資訊請參閱您的合約。 若您想要新增或變更服務層級，或有關於目前服務的疑問，請聯絡您的客戶經理。
 
 ## 法律資訊 {#legal}
 
@@ -41,6 +47,6 @@ Published by Adobe Systems Incorporated.
 
 [Terms of Use](https://www.adobe.com/tw/legal/terms.html) | [Privacy Center](https://www.adobe.com/tw/privacy.html)
 
-Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries.A trademark symbol (®, ™, etc.) denotes an Adobe trademark.
+Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. A trademark symbol （®、™等） 表示Adobe商標。
 
-All third-party trademarks are the property of their respective owners.Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty_tw](https://www.adobe.com/tw/products/eula/third_party/).
+All third-party trademarks are the property of their respective owners. Updated Information/Additional Third Party Code Information available at [https://www.adobe.com/go/thirdparty_tw](https://www.adobe.com/tw/products/eula/third_party/).

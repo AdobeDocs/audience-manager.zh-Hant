@@ -7,20 +7,23 @@ title: DCS地區API方法
 uuid: 00b70927-b3b7-46bb-8be1-37c6100ecf80
 feature: API
 exl-id: 3cd1700e-6914-46be-a0be-a870c472343e
-TQID: https://experienceleague.adobe.com/ipsOlq24Y00SHvGKgUFJHnRQ11DZIuDNY76D5LCAgso
+TQID: 'https://experienceleague.adobe.com/ipsOlq24Y00SHvGKgUFJHnRQ11DZIuDNY76D5LCAgso'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: d8f681b8-67cc-42dc-85c5-a0977528a942
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data Collection Server
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 110
+source-wordcount: '110'
 ht-degree: 3%
-
 ---
-
 # DCS地區API方法 {#dcs-region-api-methods}
 
 可讓您以程式設計方式列出Audience Manager [!DNL DCS]區域的方法。
@@ -31,7 +34,7 @@ ht-degree: 3%
 
 ## 列出特定DCS區域 {#list-specific-dcs-region}
 
-列出特定`GET`區域的[!DNL DCS]方法。
+列出特定[!DNL DCS]區域的`GET`方法。
 
 <!-- r_rest_api_regions_list_specific.xml -->
 
@@ -61,7 +64,7 @@ ht-degree: 3%
 
 ## 列出DCS地區 {#list-dcs-regions}
 
-列出`GET`區域的[!DNL DCS]方法。
+列出[!DNL DCS]區域的`GET`方法。
 
 <!-- r_rest_api_regions_list.xml -->
 

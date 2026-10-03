@@ -8,23 +8,30 @@ uuid: 23301376-c1cc-4778-b8c4-9831f6739db9
 keywords: 身分型別劃分、身分劃分、對象身分報告、跨裝置、跨裝置ID、裝置ID
 feature: Traits
 exl-id: c0b4791f-885e-4b14-b7e8-3c2d618fb80e
-TQID: https://experienceleague.adobe.com/0cnIIgjhIEgN-2M9gOtvkhx-cOwy0Wo14Qz-SVL-VHc
+TQID: 'https://experienceleague.adobe.com/0cnIIgjhIEgN-2M9gOtvkhx-cOwy0Wo14Qz-SVL-VHc'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: d921db59-bd4a-43dc-97e6-4ff4611f1ae8
+    internal-label: Data sources
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 616
+source-wordcount: '627'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Trait]詳細資料頁面 {#trait-details-page}
 
 個別[!UICONTROL trait]的詳細資訊頁面提供[!UICONTROL trait]詳細資訊的概觀，例如[!UICONTROL trait]名稱、ID、效能測量結果、定義[!UICONTROL trait]的運算式、它所屬的區段以及[!UICONTROL trait]稽核記錄。 若要檢視這些詳細資料，請前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Traits]**，然後按一下您要使用的[!UICONTROL trait]的名稱。
@@ -57,21 +64,21 @@ ht-degree: 0%
 [!UICONTROL Trait Graph]會顯示下列資訊：
 
 * **[!UICONTROL Show results by]**
-   * **[!UICONTROL Cross-Device ID]**：選取此選項可檢視[!UICONTROL traits]收集已驗證設定檔資料的結果。 當您選取此選項時，您只會在[!UICONTROL Cross-Device ID]報表上看到資料，而[!UICONTROL Device ID]報表下不會出現任何資料。
-   * **[!UICONTROL Device ID]**：選取此選項可檢視[!UICONTROL traits]收集裝置設定檔資料的結果。 當您選取此選項時，您只會在[!UICONTROL Device ID]報表上看到資料，而[!UICONTROL Cross-Device ID]報表下不會出現任何資料。
+  * **[!UICONTROL Cross-Device ID]**：選取此選項可檢視[!UICONTROL traits]收集已驗證設定檔資料的結果。 當您選取此選項時，您只會在[!UICONTROL Cross-Device ID]報表上看到資料，而[!UICONTROL Device ID]報表下不會出現任何資料。
+  * **[!UICONTROL Device ID]**：選取此選項可檢視[!UICONTROL traits]收集裝置設定檔資料的結果。 當您選取此選項時，您只會在[!UICONTROL Device ID]報表上看到資料，而[!UICONTROL Cross-Device ID]報表下不會出現任何資料。
 
-     ![特徵圖](assets/trait-summary.gif)
+    ![特徵圖](assets/trait-summary.gif)
 
 * **[!UICONTROL Unique Trait Realizations]**：在指定時間範圍內將此[!UICONTROL trait]新增到其設定檔的不重複使用者計數。
 * **[!UICONTROL Total Trait Population]**：目前符合此[!UICONTROL trait]資格的不重複使用者數目。
 
-* **[!UICONTROL Identity Type Breakdown]**：前三個專案以遞減順序顯示符合[!UICONTROL cross-device data sources]資格且母體計數最高的前三個[!UICONTROL trait]。 第四個專案顯示來自[!DNL DPUUIDs]且非前三個專案之所有其他[!DNL CRM IDs] ([!UICONTROL trait])符合[!UICONTROL cross-device data sources]資格的總和。 只有在頁面右上方的[!UICONTROL Cross-device ID]下拉式功能表中選取[!UICONTROL Show Results By]時，此報表才會出現。 預設下拉式選項為[!UICONTROL Device ID]，其中不會顯示此報表。
+* **[!UICONTROL Identity Type Breakdown]**：前三個專案以遞減順序顯示符合[!UICONTROL trait]資格且母體計數最高的前三個[!UICONTROL cross-device data sources]。 第四個專案顯示來自[!UICONTROL cross-device data sources]且非前三個專案之所有其他[!DNL DPUUIDs] ([!DNL CRM IDs])符合[!UICONTROL trait]資格的總和。 只有在頁面右上方的[!UICONTROL Show Results By]下拉式功能表中選取[!UICONTROL Cross-device ID]時，此報表才會出現。 預設下拉式選項為[!UICONTROL Device ID]，其中不會顯示此報表。
 
   ![特徵圖](assets/trait-identity.png)
 
   >[!NOTE]
   >
-  >只有當您有[!UICONTROL Identity Type Breakdown]個ID符合[!UICONTROL cross-device]的資格條件時，Audience Manager才會顯示[!UICONTROL trait]報告。
+  >只有當您有[!UICONTROL cross-device]個ID符合[!UICONTROL trait]的資格條件時，Audience Manager才會顯示[!UICONTROL Identity Type Breakdown]報告。
 
   >[!VIDEO](https://video.tv.adobe.com/v/27977/)
 
@@ -93,6 +100,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!UICONTROL Not Available]欄中的[!UICONTROL By User]表示該使用者的帳戶已刪除。
+>[!UICONTROL By User]欄中的[!UICONTROL Not Available]表示該使用者的帳戶已刪除。
 
 ![](assets/traitHistory.png)

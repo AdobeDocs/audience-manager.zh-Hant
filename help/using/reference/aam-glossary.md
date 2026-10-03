@@ -7,30 +7,42 @@ title: 字彙表
 uuid: 01fc26f5-db9d-4e90-b4c1-27c6a510accc
 feature: Reference
 exl-id: 9e2ee3d3-01b2-4038-abda-fedf0f16f163
-TQID: https://experienceleague.adobe.com/tIudKTIrwiTO01Bq5pDuekNKI5YCrjBCDi13rKydK2k
+TQID: 'https://experienceleague.adobe.com/tIudKTIrwiTO01Bq5pDuekNKI5YCrjBCDi13rKydK2k'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 subfeature_v2:
   - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+    internal-label: Data Collection Server
   - id: d921db59-bd4a-43dc-97e6-4ff4611f1ae8
+    internal-label: Data sources
   - id: e7029888-c8b0-46a7-849a-cf132a1559bf
+    internal-label: Destination Builder
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Taxonomy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1157
-ht-degree: 96%
-
+source-wordcount: '1232'
+ht-degree: 94%
 ---
-
 # 字彙表{#glossary}
 
 進一步參閱資料的定義與連結。
@@ -39,13 +51,13 @@ ht-degree: 96%
 
 **演算法建模**
 
-將 [!UICONTROL Algorithmic Modeling] 作為工具，將觸及延伸到您所識別使用者的核心以外。此功能可協助您透過自動化資料分析，挖掘出新的不重複客群。在 **[!UICONTROL Audience Data > Models]** 中管理您的 [!UICONTROL Algorithmic Models]。
+將 [!UICONTROL Algorithmic Modeling] 作為工具，將觸及延伸到您所識別使用者的核心以外。 此功能可協助您透過自動化資料分析，挖掘出新的不重複客群。 在 **[!UICONTROL Audience Data > Models]** 中管理您的 [!UICONTROL Algorithmic Models]。
 
 請參閱[瞭解演算法模型](../features/algorithmic-models/algo-models-overview.md)。
 
 **BAAAM**
 
-[!UICONTROL Bulk Management Tools]。[!DNL Audience Manager] 中的 [!UICONTROL Bulk Management Tools] 是一組以 Microsoft Excel 為基礎的工具，可讓您透過單一操作一次建立、修改或刪除多個受眾。您可以使用資料來源、衍生訊號、目的地、資料夾、區段和特徵。此功能使用 Microsoft Excel 試算表及巨集，向 [!DNL Audience Manager] API 發出經驗證的安全呼叫。
+[!UICONTROL Bulk Management Tools]. [!DNL Audience Manager] 中的 [!UICONTROL Bulk Management Tools] 是一組以 Microsoft Excel 為基礎的工具，可讓您透過單一操作一次建立、修改或刪除多個受眾。 您可以使用資料來源、衍生訊號、目的地、資料夾、區段和特徵。 此功能使用 Microsoft Excel 試算表及巨集，向 [!DNL Audience Manager] API 發出經驗證的安全呼叫。
 
 請參閱[大量管理工具](../reference/bulk-management-tools/bulk-management-intro.md)。
 
@@ -53,13 +65,13 @@ ht-degree: 96%
 
 **CDF**
 
-[!UICONTROL Customer Data Feed]。[!UICONTROL CDF] 檔案代表大量下載 [!DNL Audience Manager] 所收集的資料，可讓您不受使用者介面的限制使用 [!DNL Audience Manager] 資料。[!UICONTROL CDF] 檔案包含的資料與 [!DNL Audience Manager] 事件呼叫 (`/event`) 傳送至我們伺服器的資料相同。這包括使用者 ID、特徵 ID、區段 ID 等資料，以及事件呼叫所擷取的所有其他參數。
+[!UICONTROL Customer Data Feed]. [!UICONTROL CDF] 檔案代表大量下載 [!DNL Audience Manager] 所收集的資料，可讓您不受使用者介面的限制使用 [!DNL Audience Manager] 資料。 [!UICONTROL CDF] 檔案包含的資料與 [!DNL Audience Manager] 事件呼叫 (`/event`) 傳送至我們伺服器的資料相同。 這包括使用者 ID、特徵 ID、區段 ID 等資料，以及事件呼叫所擷取的所有其他參數。
 
 請參閱[客戶資料摘要](../features/cdf-files.md)。
 
 **CRM ID**
 
-CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audience Manager 中使用的是 DPUUID 一詞，而非 CRM ID。
+CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。 我們在 Audience Manager 中使用的是 DPUUID 一詞，而非 CRM ID。
 
 請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)中的 DPUUID。
 
@@ -84,7 +96,7 @@ CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audienc
 
 **客戶符合率**
 
-客戶可定址客群 ÷ 客戶總客群，以 % 表示。請參閱[可定址客群](/help/using/features/addressable-audiences.md)。
+客戶可定址客群 ÷ 客戶總客群，以 % 表示。 請參閱[可定址客群](/help/using/features/addressable-audiences.md)。
 
 
 
@@ -96,7 +108,7 @@ CRM ID 是客戶用於識別其 CRM 系統中使用者的 ID。我們在 Audienc
 
 **demdex.net**
 
-demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience Manager] 收購前的原來名稱 ([!DNL Demdex])。[!DNL Adobe] 於 2011 年收購 [!DNL Demdex]，並將該公司重新命名為 [!DNL Audience Manager]。所有對 `demdex.net` 網域發出的 HTTP 呼叫都是傳送至 [!DNL Adobe] 的呼叫。
+demdex.net 是由 [!DNL Adobe] 控制的舊網域。 它反映出 [!DNL Audience Manager] 收購前的原來名稱 ([!DNL Demdex])。 [!DNL Adobe] 於 2011 年收購 [!DNL Demdex]，並將該公司重新命名為 [!DNL Audience Manager]。 所有對 `demdex.net` 網域發出的 HTTP 呼叫都是傳送至 [!DNL Adobe] 的呼叫。
 
 請參閱[瞭解向 Demdex 網域進行的呼叫](../reference/demdex-calls.md)。
 
@@ -104,7 +116,7 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **DAID**
 
-[!UICONTROL Device Advertising IDs] 是不重複裝置識別碼，用來識別行動裝置。這些 ID 是由裝置製造商指派，而非由 Adobe 指派。[!DNL Audience Manager] 支援 iOS 和 Android 裝置 ID。
+[!UICONTROL Device Advertising IDs] 是不重複裝置識別碼，用來識別行動裝置。 這些 ID 是由裝置製造商指派，而非由 Adobe 指派。 [!DNL Audience Manager] 支援 iOS 和 Android 裝置 ID。
 
 請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
 
@@ -112,31 +124,31 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **目的地**
 
-在[!DNL Audience Manager]中，目的地是您想要與其共用資料的任何其他系統（廣告伺服器、DSP、廣告網路等）。 我們 UI 中的 [!UICONTROL Destination Builder] 提供工具，可讓您建立和管理這些資料傳送程序。[!DNL Audience Manager] 目的地功能位於 **[!UICONTROL Audience Data > Destinations]** 中。
+在[!DNL Audience Manager]中，目的地是您想要與其共用資料的 任何其他系統（廣告伺服器、DSP）。 我們 UI 中的 [!UICONTROL Destination Builder] 提供工具，可讓您建立和管理這些資料傳送程序。 [!DNL Audience Manager] 目的地功能位於 **[!UICONTROL Audience Data > Destinations]** 中。
 
 
 
 **DIL**
 
-[!UICONTROL Data Integration Library] 是 API 程式庫，[!DNL Audience Manager] 用於收集使用者的互動資料。請參閱 [Data Integration Library (DIL) API](../dil/dil-overview.md)。
+[!UICONTROL Data Integration Library] 是 API 程式庫，[!DNL Audience Manager] 用於收集使用者的互動資料。 請參閱 [Data Integration Library (DIL) API](../dil/dil-overview.md)。
 
 
 
 **dpm**
 
-[!UICONTROL Data Provider Match]。它會告訴內部 [!DNL Adobe] 系統，來自 [!DNL Audience Manager] 或 ID 服務的呼叫正傳入客戶資料以進行同步或請求 ID。請參閱[瞭解向 Demdex 網域進行的呼叫](../reference/demdex-calls.md)。
+[!UICONTROL Data Provider Match]. 它會告訴內部 [!DNL Adobe] 系統，來自 [!DNL Audience Manager] 或 ID 服務的呼叫正傳入客戶資料以進行同步或請求 ID。 請參閱[瞭解向 Demdex 網域進行的呼叫](../reference/demdex-calls.md)。
 
 ## E-F {#e-f}
 
 **Experience Cloud ID (ECID)**
 
-先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。[!DNL Experience Cloud] ID 是 ID 服務的中心。它是網站訪客的不重複永久識別碼。請參閱 Cookie 和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant)。
+先前名為 [!DNL Marketing Cloud] ID (MID 或 MCID)。 [!DNL Experience Cloud] ID 是 ID 服務的中心。 它是網站訪客的不重複永久識別碼。 請參閱 Cookie 和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=zh-Hant)。
 
 
 
 **資料夾特徵**
 
-自動分組資料夾分類法中的特徵。階層中的每個資料夾都會自動建立可用來定義區段的特徵。
+自動分組資料夾分類法中的特徵。 階層中的每個資料夾都會自動建立可用來定義區段的特徵。
 
 請參閱[資料夾特徵：關於](../features/traits/about-folder-traits.md)。
 
@@ -144,7 +156,7 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **頻率上限**
 
-廣告商想要向使用者顯示特定創意內容次數限制。您可以在 [!UICONTROL Segment Builder] 中設定各種頻率上限運算式。
+廣告商想要向使用者顯示特定創意內容次數限制。 您可以在 [!UICONTROL Segment Builder] 中設定各種頻率上限運算式。
 
 請參閱[造訪間隔和頻率](../features/segments/recency-and-frequency.md)。
 
@@ -152,36 +164,36 @@ demdex.net 是由 [!DNL Adobe] 控制的舊網域。它反映出 [!DNL Audience 
 
 **GAID**
 
-Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬體裝置的不重複裝置 ID。請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
+Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬體裝置的不重複裝置 ID。 請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
 
 
 
 **GUID**
 
-全域唯一識別碼的縮寫。[!DNL Audience Manager] 中不使用 GUID 一詞。我們將 GUID 稱為 [!DNL Audience Manager] UUID。
+全域唯一識別碼的縮寫。 [!DNL Audience Manager] 中不使用 GUID 一詞。 我們將 GUID 稱為 [!DNL Audience Manager] UUID。
 請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
 
 ## I-J {#i-j}
 
 **IDFA**
 
-廣告商的識別碼，是 Apple 指派給其產品的不重複裝置 ID。請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
+廣告商的識別碼，是 Apple 指派給其產品的不重複裝置 ID。 請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
 
 
 
 **傳入**
 
-從其他來源將客群資料傳送至 [!DNL Audience Manager] 的程序。請參閱[傳送客群資料](/help/using/integration/sending-audience-data/send-audience-data.md)。
+從其他來源將客群資料傳送至 [!DNL Audience Manager] 的程序。 請參閱[傳送客群資料](/help/using/integration/sending-audience-data/send-audience-data.md)。
 
 
 
 **整合程式碼**
 
-使用 [!DNL Audience Manager] UI 或 API 時，您可以在建立特徵、區段或資料來源時新增整合程式碼。在以下情況中，整合程式碼有不同的用途：
+使用 [!DNL Audience Manager] UI 或 API 時，您可以在建立特徵、區段或資料來源時新增整合程式碼。 在以下情況中，整合程式碼有不同的用途：
 
-* [!UICONTROL Traits]：整合程式碼是您內部業務流程所使用的 ID、SKU 或其他值的欄位。選填。
-* [!UICONTROL Segments]：整合程式碼是使用者定義的 ID 或其他公司專屬資訊的欄位。選填。
-* [!UICONTROL Data Sources]：當您想要建立跨裝置資料來源、使用 Adobe Experience Platform 身分識別服務或使用 [!UICONTROL Profile Merge Rules] 時，會需要整合程式碼。請參閱[建立資料來源](../features/manage-datasources.md#create-data-source)，瞭解更多資訊。
+* [!UICONTROL Traits]：整合程式碼是您內部業務流程所使用的 ID、SKU 或其他值的欄位。 選填。
+* [!UICONTROL Segments]：整合程式碼是使用者定義的 ID 或其他公司專屬資訊的欄位。 選填。
+* [!UICONTROL Data Sources]：當您想要建立跨裝置資料來源、使用 Adobe Experience Platform 身分識別服務或使用 [!UICONTROL Profile Merge Rules] 時，會需要整合程式碼。 請參閱[建立資料來源](../features/manage-datasources.md#create-data-source)，瞭解更多資訊。
 
 ## K-L {#k-l}
 
@@ -199,7 +211,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **PCS**
 
-[!UICONTROL Profile Cache Server]。[!UICONTROL PCS] 是一個大型資料庫，在 Apache Cassandra 上運作。它會儲存從伺服器對伺服器的傳輸和 [!DNL DCS] 中接收到的作用中使用者資料。[!UICONTROL PCS] 資料包含裝置 ID、已驗證的設定檔 ID 及其相關特徵。
+[!UICONTROL Profile Cache Server]. [!UICONTROL PCS] 是一個大型資料庫，在 Apache Cassandra 上運作。 它會儲存從伺服器對伺服器的傳輸和 [!DNL DCS] 中接收到的作用中使用者資料。 [!UICONTROL PCS] 資料包含裝置 ID、已驗證的設定檔 ID 及其相關特徵。
 
 請參閱[資料收集元件](../reference/system-components/components-data-collection.md)。
 
@@ -221,7 +233,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **實現**
 
-訪客在您網站上符合特徵資格的動作。您可以使用[訪客設定檔檢視器](../features/visitor-profile-viewer.md)工具，取得特定使用者特徵實現的相關資訊。
+訪客在您網站上符合特徵資格的動作。 您可以使用[訪客設定檔檢視器](../features/visitor-profile-viewer.md)工具，取得特定使用者特徵實現的相關資訊。
 
 ## S-T {#s-t}
 
@@ -235,7 +247,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **細分群體可定址客群**
 
-在[可定址客群](/help/using/features/addressable-audiences.md)中，此量度代表在報告回顧期間屬於細分群體，且在您的網站上具有同步作用中 ID 的使用者人數。區段可以透過在 [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md) 中取得的特徵，包含您自己的第一方資料、第二方資料和第三方資料。
+在[可定址客群](/help/using/features/addressable-audiences.md)中，此量度代表在報告回顧期間屬於細分群體，且在您的網站上具有同步作用中 ID 的使用者人數。 區段可以透過在 [Audience Marketplace](/help/using/features/audience-marketplace/audience-marketplace.md) 中取得的特徵，包含您自己的第一方資料、第二方資料和第三方資料。
 
 
 
@@ -247,7 +259,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **區段符合率**
 
-細分群體可定址客群 ÷ 細分群體總人數，以 % 表示。請參閱[可定址客群](/help/using/features/addressable-audiences.md)。
+細分群體可定址客群 ÷ 細分群體總人數，以 % 表示。 請參閱[可定址客群](/help/using/features/addressable-audiences.md)。
 
 
 
@@ -261,7 +273,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **特徵**
 
-特徵是一或多個訊號的組合。請參閱[訊號、特徵和區段](../reference/signal-trait-segment.md)。
+特徵是一或多個訊號的組合。 請參閱[訊號、特徵和區段](../reference/signal-trait-segment.md)。
 
 
 
@@ -271,7 +283,7 @@ Google Advertising ID，這是 Google 指派給執行 Android 作業系統之硬
 
 **TTL (存留時間)**
 
-TTL 會定義合格訪客在某個特徵中停留的天數。TTL 是針對特徵設定而非區段。如果在 TTL 間隔結束前沒有看到訪客符合特徵資格，訪客便會從區段中流失。如需深入瞭解，請參閱[區段和特徵存留時間說明](/help/using/features/traits/segment-ttl-explained.md)。
+TTL 會定義合格訪客在某個特徵中停留的天數。 TTL 是針對特徵設定而非區段。 如果在 TTL 間隔結束前沒有看到訪客符合特徵資格，訪客便會從區段中流失。 如需深入瞭解，請參閱[區段和特徵存留時間說明](/help/using/features/traits/segment-ttl-explained.md)。
 
 
 
@@ -279,7 +291,7 @@ TTL 會定義合格訪客在某個特徵中停留的天數。TTL 是針對特徵
 
 **UUID**
 
-[!DNL Audience Manager] 不重複使用者 ID。請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
+[!DNL Audience Manager] 不重複使用者 ID。 請參閱 [Audience Manager 內的 ID 索引](../reference/ids-in-aam.md)。
 
 
 

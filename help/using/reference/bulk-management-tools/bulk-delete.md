@@ -7,25 +7,32 @@ title: 大量刪除
 uuid: 679cde46-09fb-45c6-b84d-47e00e0e7c0a
 feature: BAAAM
 exl-id: 3ff530dd-66d0-4dd3-a6e6-afe4a9cb5ba4
-TQID: https://experienceleague.adobe.com/aoEV5lgz7WzaFsqteJ81KTakWpZr-kJ0dHYNs3QSWSE
+TQID: 'https://experienceleague.adobe.com/aoEV5lgz7WzaFsqteJ81KTakWpZr-kJ0dHYNs3QSWSE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: f341dd0b-34de-403e-a549-e0f581dcdda6
+    internal-label: BAAAM
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 258
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # 大量刪除{#bulk-delete}
 
 大量刪除可讓您透過單一操作移除多個區段、特徵、資料夾、衍生訊號、資料來源、模型和目的地。 請依照這些指示提出大量刪除請求。
@@ -42,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在[&#x200B; UI中指派的](../../features/administration/administration-overview.md)RBAC群組許可權[!DNL Audience Manager]已在[!UICONTROL Bulk Management Tools]中接受。
+>在[!DNL Audience Manager] UI中指派的[RBAC群組許可權](../../features/administration/administration-overview.md)已在[!UICONTROL Bulk Management Tools]中接受。
 
 >[!NOTE]
 >
@@ -57,7 +64,7 @@ ht-degree: 0%
 5. 提供必要的[登入資訊](../../reference/bulk-management-tools/bulk-management-intro.md#auth-reqs)並按一下&#x200B;**[!UICONTROL Submit]**。
 
    工作表會建立[!UICONTROL Results]欄。 [!UICONTROL Results]欄傳回訊息，指出該專案是否已刪除，或是錯誤訊息。
-在輸入資料之前，大量更新工作表應該看起來類似下列：
+   在輸入資料之前，大量更新工作表應該看起來類似下列：
 
 ![](assets/delete.png)
 

@@ -1,5 +1,5 @@
 ---
-description: 在 Audience Manager 可啟用 Audience Optimization for Publishers 之前，請務必確認您已符合本文所述的所有必要條件。確認符合所有必要條件之後，請聯絡客戶服務人員。
+description: 在 Audience Manager 可啟用 Audience Optimization for Publishers 之前，請務必確認您已符合本文所述的所有必要條件。 確認符合所有必要條件之後，請聯絡客戶服務人員。
 seo-description: Before Audience Manager can enable Audience Optimization for Publishers, you must ensure that all prerequisites outlined in this article are met. Contact Customer Care after checking off all prerequisites.
 seo-title: Import Google Ad Manager Data Files Into Audience Manager
 solution: Audience Manager
@@ -7,33 +7,43 @@ title: 將Google Ad Manager資料檔案匯入Audience Manager
 uuid: c685f34f-3e50-4c4b-99fa-d8bbafe0b268
 feature: Audience Optimization Reports
 exl-id: 62b72dd1-e664-4c6a-8c0a-f7a662d62a47
-TQID: https://experienceleague.adobe.com/cnzj59ejieaEvCGo2a-xopjYJ-GfUTc1LV24p9mQiEw
+TQID: 'https://experienceleague.adobe.com/cnzj59ejieaEvCGo2a-xopjYJ-GfUTc1LV24p9mQiEw'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 511
+source-wordcount: '519'
 ht-degree: 14%
-
 ---
-
 # 將Google Ad Manager （前身為DFP）資料檔案匯入Audience Manager{#import-dfp-data-files-into-audience-manager}
 
-在 Audience Manager 可啟用 Audience Optimization for Publishers 之前，請務必確認您已符合本文所述的所有必要條件。確認符合所有必要條件之後，請聯絡客戶服務人員。
+在 Audience Manager 可啟用 Audience Optimization for Publishers 之前，請務必確認您已符合本文所述的所有必要條件。 確認符合所有必要條件之後，請聯絡客戶服務人員。
 
 ## Google Ad Manager記錄擷取的先決條件 {#prereqs-dfp-ingestion}
 
 請注意，您必須在&#x200B;*之前*&#x200B;完成本節中說明的程式，才能繼續記錄擷取啟用的先決條件。
 
-若要在[!DNL Google Ad Manager]中使用[!DNL Audience Manager] （先前的Google DFP）記錄檔，您必須在廣告標籤呼叫中先設定我們的[Audience Manager唯一使用者ID (UUID)](../../../reference/ids-in-aam.md)。 如此一來，我們的ID就會包含在[!DNL Google Ad Manager]記錄檔中，而且我們可以比對[!DNL Google Ad Manager]與[!DNL Audience Manager]之間的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]程式碼或[!UICONTROL Audience Management Module]在第一方Cookie中設定[!DNL Audience Manager] UUID。
+若要在[!DNL Audience Manager]中使用[!DNL Google Ad Manager] （先前的Google DFP）記錄檔，您必須在廣告標籤呼叫中先設定我們的[Audience Manager唯一使用者ID (UUID)](../../../reference/ids-in-aam.md)。 如此一來，我們的ID就會包含在[!DNL Google Ad Manager]記錄檔中，而且我們可以比對[!DNL Google Ad Manager]與[!DNL Audience Manager]之間的ID。 使用[!DNL Audience Manager] [!UICONTROL DIL]程式碼或[!UICONTROL Audience Management Module]在第一方Cookie中設定[!DNL Audience Manager] UUID。
 
 以下說明如何在廣告標籤呼叫中設定[!DNL Audience Manager] ID，如檔案所述：
 
@@ -43,8 +53,8 @@ ht-degree: 14%
 您需要自行設定[!DNL Audience Manager] ID，並可與[!DNL Audience Manager]諮詢人員合作來檢查是否一切正常。 在下列情況下，您已正確設定[!DNL Audience Manager] ID：
 
 * `'aamid'`是用來做為識別碼的金鑰。
-* 使用者ID值的格式正確為[!DNL Audience Manager] UUID，如Audience Manager[中ID的](../../../reference/ids-in-aam.md)索引中所述。
-* 您已在您[!DNL Audience Manager]記錄檔的已定義欄位中包含[!DNL Google Ad Manager] UUID （例如CustomTargeting）。
+* 使用者ID值的格式正確為[!DNL Audience Manager] UUID，如Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中ID的索引中所述。
+* 您已在您[!DNL Google Ad Manager]記錄檔的已定義欄位中包含[!DNL Audience Manager] UUID （例如CustomTargeting）。
 
 ## 啟用記錄擷取的先決條件 {#prereqs-ingestion-enablement}
 

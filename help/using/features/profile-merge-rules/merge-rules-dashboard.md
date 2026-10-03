@@ -7,20 +7,26 @@ title: 設定檔合併規則控制面板
 uuid: d6725218-7b36-4653-9900-d67b5f7702a0
 feature: Profile Merge
 exl-id: c6fcbe47-3010-4b7c-a70e-205bf69b4c54
-TQID: https://experienceleague.adobe.com/eP9efUkVIv-PfBvsoTLD2DZyjHhLfhcF8Waji9nWzXo
+TQID: 'https://experienceleague.adobe.com/eP9efUkVIv-PfBvsoTLD2DZyjHhLfhcF8Waji9nWzXo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 200
+source-wordcount: '203'
 ht-degree: 7%
-
 ---
-
 # 設定檔合併規則控制面板 {#profile-merge-rules-dashboard}
 
 從控制面板建立並管理所有合併規則。 您最多可以建立4個[!UICONTROL Profile Merge Rules]。

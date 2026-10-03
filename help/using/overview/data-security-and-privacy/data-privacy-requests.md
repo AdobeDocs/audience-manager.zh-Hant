@@ -8,33 +8,45 @@ title: 資料隱私權請求
 uuid: ed23a478-32be-460d-bb03-a735317f7c0f
 feature: Data Governance & Privacy
 exl-id: a1fc9c21-3417-4899-a585-92ad2cb25362
-TQID: https://experienceleague.adobe.com/aZeBRtoDecmrGfSXa1u4GP9jTvFg2Qbv3b6je-1aA8Q
+TQID: 'https://experienceleague.adobe.com/aZeBRtoDecmrGfSXa1u4GP9jTvFg2Qbv3b6je-1aA8Q'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+    internal-label: Data Collection Server
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1324
-ht-degree: 42%
-
+source-wordcount: '1506'
+ht-degree: 40%
 ---
-
 # 資料隱私權請求 {#data-privacy-requests}
 
 ## 概述 {#overview}
 
-本檔案概述如何管理您可透過[!DNL Audience Manager]Privacy Service UI[和](https://privacyui.cloud.adobe.io/)傳送給&#x200B;**[!DNL Privacy Service API]**&#x200B;的個別資料隱私權和選擇退出請求。
+本檔案概述如何管理您可透過[Privacy Service UI](https://privacyui.cloud.adobe.io/)和&#x200B;**[!DNL Privacy Service API]**&#x200B;傳送給[!DNL Audience Manager]的個別資料隱私權和選擇退出請求。
 
 這些工具可讓您傳送在[!DNL GDPR]和[!DNL CCPA]下提出的消費者資料隱私權請求。
 
@@ -42,10 +54,10 @@ ht-degree: 42%
 
 您可以透過兩種方式提交個別請求，以從[!DNL Audience Manager]存取和刪除消費者資料：
 
-* 透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。請參閱[此處](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)的文件。
-* 透過 **[!DNL Privacy Service API]**。請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
+* 透過 [Privacy Service UI](https://privacyui.cloud.adobe.io/)。 請參閱[此處](https://docs.adobe.com/content/help/zh-Hant/experience-platform/privacy/home.translate.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md)的文件。
+* 透過 **[!DNL Privacy Service API]**。 請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=zh-Hant)和[!DNL API]參考[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/)。
 
-傳送個人資料隱私權請求時，如[!DNL Audience Manager]Audience Manager識別碼&#x200B;**[一節所述，您可以提交任何](data-privacy-ids.md)**&#x200B;識別碼(ID)，以及其各自的名稱空間ID （資料來源ID）。
+傳送個人資料隱私權請求時，如&#x200B;**[Audience Manager識別碼](data-privacy-ids.md)**&#x200B;一節所述，您可以提交任何[!DNL Audience Manager]識別碼(ID)，以及其各自的名稱空間ID （資料來源ID）。
 
 [Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant) 支援兩種請求：資料存取和資料刪除請求。
 
@@ -67,7 +79,7 @@ ht-degree: 42%
 
 若要查看有效的 [!DNL JSON] 檔案看起來是什麼樣子，您可以[下載範例 JSON](../data-security-and-privacy/assets/access_request.json)。
 
-Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此，[!DNL Adobe]已承諾儘快處理您的資料刪除請求。
+Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。 因此，[!DNL Adobe]已承諾儘快處理您的資料刪除請求。
 
 回應您的消費者資料刪除請求，[!DNL Audience Manager]會刪除與請求中包含的[!DNL Audience Manager]識別碼相關的特徵和區段。 此外，個人已選擇[!DNL Audience Manager]退出進一步的資料收集，其個別[!DNL Audience Manager]識別碼與個別ID對應將會移除。
 
@@ -102,7 +114,7 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Adobe Experience Cloud </p> </td> 
-   <td colname="col2"> <p><a href="https://www.adobe.com/tw/privacy/opt-out.html" format="http" scope="external">「您的隱私權選擇」頁面</a>提供一鍵式功能，可讓您的一般使用者控制和選擇退出 Adobe Experience Cloud 廣告解決方案 (包括 Audience Manager) 的資料收集。具體說明請參閱「隱私權選擇」頁面上的<a href="https://www.adobe.com/tw/privacy/opt-out.html" format="http" scope="external">企業客戶區段</a>。 </p> </td> 
+   <td colname="col2"> <p><a href="https://www.adobe.com/tw/privacy/opt-out.html" format="http" scope="external">「您的隱私權選擇」頁面</a>提供一鍵式功能，可讓您的一般使用者控制和選擇退出 Adobe Experience Cloud 廣告解決方案 (包括 Audience Manager) 的資料收集。 具體說明請參閱「隱私權選擇」頁面上的<a href="https://www.adobe.com/tw/privacy/opt-out.html" format="http" scope="external">企業客戶區段</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>向 Audience Manager 發出直接 API 呼叫 </p> </td> 
@@ -121,8 +133,8 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
 
 您的使用者也可以造訪我們業界標準合作夥伴的網站，選擇退出全域資料收集。
 
-* [數位廣告聯盟 (DAA)](https://optout.aboutads.info/?c=2#! /)；
-* [網路廣告聯盟 (NAI)](https://optout.networkadvertising.org/?c=1#! /)。
+* [數位廣告聯盟 (DAA)](https://optout.aboutads.info/?c=2#!/)；
+* [網路廣告聯盟 (NAI)](https://optout.networkadvertising.org/?c=1#!/)。
 
 依上述方式處理選擇退出請求後：
 
@@ -142,9 +154,9 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
 * [!UICONTROL Destination]合作夥伴會收到[!DNL CRM] ID和最後一個裝置ID的取消細分請求。 取消細分功能適用於[即時](data-privacy-requests.md#aam-partners-with-unsegmentation)和批次目的地。
 * 系統不會刪除歷史資料。
 
-當[!DNL Audience Manager]收到合作夥伴層級的選擇退出要求時，[!DNL JSON]傳回的[!DNL DCS]會包含[錯誤碼171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)，並包含訊息[!UICONTROL "Encountered opt out tag"]，而非[!DNL Audience Manager]使用者識別碼。
+當[!DNL Audience Manager]收到合作夥伴層級的選擇退出要求時，[!DNL DCS]傳回的[!DNL JSON]會包含[錯誤碼171](../../api/dcs-intro/dcs-api-reference/dcs-error-codes.md#opt-out-error-codes)，並包含訊息[!UICONTROL "Encountered opt out tag"]，而非[!DNL Audience Manager]使用者識別碼。
 
-您可以使用 `d_cid` 和 `d_cid_ic` 索引鍵值配對，提出宣告 ID 選擇退出請求。舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。請參閱 [CID 取代 DPID 及 DPUUID](../../reference/cid.md)。在這些範例中，*斜體字*&#x200B;代表變數預留位置。
+您可以使用 `d_cid` 和 `d_cid_ic` 索引鍵值配對，提出宣告 ID 選擇退出請求。 舊版參數 (例如 `d_dpid` 和 `d_dpuuid`) 仍然有效，但被視為已過時。 請參閱 [CID 取代 DPID 及 DPUUID](../../reference/cid.md)。 在這些範例中，*斜體字*&#x200B;代表變數預留位置。
 
 #### 透過[!DNL CID]和[!DNL CID_IC]選擇退出
 
@@ -174,7 +186,7 @@ Adobe 瞭解您承諾會在 30 天內履行資料隱私權客戶請求。因此�
 * 裝置 ID 會退出資料收集。
 * [!DNL Audience Manager]將針對該裝置ID停止該合作夥伴的所有資料收集、細分或啟用。
 * [!DNL Audience Manager]從所有區段中取消細分裝置ID；
-* 目的地合作夥伴會收到該裝置 ID 的取消細分請求。取消細分功能適用於[即時](data-privacy-requests.md#aam-partners-with-unsegmentation)和批次目的地。
+* 目的地合作夥伴會收到該裝置 ID 的取消細分請求。 取消細分功能適用於[即時](data-privacy-requests.md#aam-partners-with-unsegmentation)和批次目的地。
 * 系統不會刪除歷史資料。
 
 ## [!DNL Audience Manager]個具有取消細分功能的合作夥伴 {#aam-partners-with-unsegmentation}

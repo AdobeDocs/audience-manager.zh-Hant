@@ -7,18 +7,21 @@ title: 不再使用TLS 1.0和1.1
 uuid: 6a820e63-dd49-4689-9596-940aabba18ec
 feature: Reference
 exl-id: 857105c1-726a-4d79-bd1c-accb368aef29
-TQID: https://experienceleague.adobe.com/sU1Tmg-7AouOFzLoj4pObYe3UsDcZK02pU8Fl4Wz0N4
+TQID: 'https://experienceleague.adobe.com/sU1Tmg-7AouOFzLoj4pObYe3UsDcZK02pU8Fl4Wz0N4'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Security
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 227
+source-wordcount: '231'
 ht-degree: 0%
-
 ---
-
 # 不再使用TLS 1.0和1.1{#tls-deprecation}
 
 傳輸層安全性(TLS)是一種密碼編譯通訊協定，用來在兩個系統之間建立安全通訊通道。 它可用來驗證一個或兩個系統，並保護系統間傳遞的資訊的機密性和完整性。 在2018年5月，使用中的TLS通訊協定有三個版本：TLS 1.0、1.1和1.2。

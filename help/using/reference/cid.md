@@ -7,18 +7,21 @@ title: CID取代DPID及DPUUID
 uuid: 3641eac5-b19e-45d5-bc1c-35a23b4bab8c
 feature: Reference
 exl-id: 18e6b1db-fe51-4560-9458-8d65474d2506
-TQID: https://experienceleague.adobe.com/GvsmsrGtq3Y8XRzioO4wcd6VrIPDKiMybP4vEYUGx9Q
+TQID: 'https://experienceleague.adobe.com/GvsmsrGtq3Y8XRzioO4wcd6VrIPDKiMybP4vEYUGx9Q'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 606
+source-wordcount: '617'
 ht-degree: 1%
-
 ---
-
 # CID取代DPID及DPUUID{#cid-replaces-dpid-and-dpuuid}
 
 更新您的程式碼以使用`d_cid`或`d_cid_ic`，而非`d_dpid`和`d_dpuuid`。 DPID和DPUUID變數可繼續運作，但您應將其視為已棄用。 這包含不含`d_ prefix`的DPID和DPUUID變體。

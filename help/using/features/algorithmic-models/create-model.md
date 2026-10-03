@@ -8,16 +8,21 @@ title: 建立演演算法模型
 uuid: ccf4fc4e-cf92-445f-b2d9-71c3ca624e26
 feature: Algorithmic Models
 exl-id: 8b7c4f57-f2c8-46f1-8924-5513fd6ede04
-TQID: https://experienceleague.adobe.com/ZLODJg0TbL-Xhr0CNNg3JbCkM-uqwbjX22BvlZHV8Xk
+TQID: 'https://experienceleague.adobe.com/ZLODJg0TbL-Xhr0CNNg3JbCkM-uqwbjX22BvlZHV8Xk'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: cd2456ea-4f93-45ef-a193-94c258a6fbfb
+    internal-label: Algorithmic models
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 639
+source-wordcount: '675'
 ht-degree: 0%
-
 ---
-
 # 建立相似模型 {#create-an-algorithmic-model}
 
 說明讓您建立[!UICONTROL Look-Alike Model]的必要和選用步驟。
@@ -37,7 +42,7 @@ ht-degree: 0%
 
 請依照下列步驟建置[!UICONTROL Look-Alike Model]：
 
-1. 前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後按一下&#x200B;**[!UICONTROL Add New]**&#x200B;區段中的[!UICONTROL Look-Alike Modeling]。
+1. 前往&#x200B;**[!UICONTROL Audience Data]** > **[!UICONTROL Models]**，然後按一下[!UICONTROL Look-Alike Modeling]區段中的&#x200B;**[!UICONTROL Add New]**。
    ![相似新增](assets/look-alike-add.png)
 1. 在[基本資訊](../../features/algorithmic-models/create-model.md#basic-information)區段中
    * 為模型命名。
@@ -99,7 +104,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>選取演演算法(3)</b> </p> </td> 
-   <td colname="col2"> <p>目前，模型產生器僅能搭配我們專屬的<span class="keyword">特徵權重</span>演演算法使用。 <span class="keyword"> Audience Manager</span>可能在後續發行版本中新增其他演演算法函式。 </p> </td>
+   <td colname="col2"> <p>目前，模型產生器僅能搭配我們專屬的<span class="keyword">特徵權重</span>演演算法使用。<span class="keyword"> Audience Manager</span>可能會在後續發行版本中新增其他演演算法函式。 </p> </td>
   </tr>
   <tr> 
    <td colname="col1"> <p><b>從Data Source (4)選取模型資料</b> </p> </td> 

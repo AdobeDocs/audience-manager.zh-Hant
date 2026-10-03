@@ -7,20 +7,26 @@ title: 外接式裝置圖表使用案例
 uuid: f4bc822d-39d2-4680-90ed-7ee2ead6db6f
 feature: Profile Merge
 exl-id: 657aecfd-7fa3-466e-8331-c49cc921e3a9
-TQID: https://experienceleague.adobe.com/KPKq6THxdku9ebZigLfZKnBO-ziNPjZ9pqNdn6PZ-Es
+TQID: 'https://experienceleague.adobe.com/KPKq6THxdku9ebZigLfZKnBO-ziNPjZ9pqNdn6PZ-Es'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: aefd3d92-918f-446f-ad66-e16541e30e75
+    internal-label: Profile Merge
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 3c88464c2249b7848c9ae80ca4c0ed58fcb81070
+    internal-label: Personalization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 294
-ht-degree: 8%
-
+source-wordcount: '304'
+ht-degree: 7%
 ---
-
 # 外接式裝置圖表使用案例 {#external-device-graph-use-cases}
 
 透過外部裝置圖表，為未知使用者提供勘察、重新定位和個人化的建議和使用案例。 外部裝置圖表是定義為Audience Manager以外的裝置圖表。 這包括Adobe與協力廠商確定性或機率裝置圖表公司的整合。
@@ -129,9 +135,9 @@ Through this rule, the device graph has expanded the number of device profiles w
 
 ![上次裝置圖表](assets/last-profile-link.png)
 
-在以下範例中，Acme Inc.公司想要鎖定收入超過$100.000/年、[!DNL Acme Inc.]上有[!DNL Data Plan A]位訂閱者，且使用[!DNL iPhone 7]裝置的所有家庭。
+在以下範例中，Acme Inc.公司想要鎖定收入超過$100.000/年、[!DNL Data Plan A]上有[!DNL Acme Inc.]位訂閱者，且使用[!DNL iPhone 7]裝置的所有家庭。
 
-John使用他在Data Plan A上的iPhone 7在Acme Inc.網站上進行驗證。 同時，John的[!DNL Profile Link Device Graph]叢集包含他定期使用的兩個額外裝置：他的膝上型電腦([!DNL Device 1])和他的次要智慧型手機[!DNL Device 2] （[!DNL Samsung S7]上的[!DNL Data Plan B]）。
+John使用他在Data Plan A上的iPhone 7在Acme Inc.網站上進行驗證。 同時，John的[!DNL Profile Link Device Graph]叢集包含他定期使用的兩個額外裝置：他的膝上型電腦([!DNL Device 1])和他的次要智慧型手機[!DNL Device 2] （[!DNL Data Plan B]上的[!DNL Samsung S7]）。
 
 使用&#x200B;**[!UICONTROL Last Authenticated Profiles]** + **[!UICONTROL Profile Link Device Graph]**，[!DNL Acme Inc.]能夠從John的裝置圖表叢集傳遞個人化訊息給所有三個裝置，即使其中只有一個最初符合區段資格。
 

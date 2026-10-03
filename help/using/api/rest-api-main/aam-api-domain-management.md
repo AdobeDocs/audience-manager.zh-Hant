@@ -7,19 +7,23 @@ title: 網域管理API方法
 uuid: f2f08bc5-ea42-4171-9a43-0b20976f0cb0
 feature: API
 exl-id: f9907f6e-d553-4771-945b-2fddb3c9ce2f
-TQID: https://experienceleague.adobe.com/KQYsAmIQd2J88N7d7AdxABYomY-CDXJe5f3RccRcY-g
+TQID: 'https://experienceleague.adobe.com/KQYsAmIQd2J88N7d7AdxABYomY-CDXJe5f3RccRcY-g'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+subfeature_v2:
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 340
+source-wordcount: '340'
 ht-degree: 2%
-
 ---
-
 # 網域管理API方法 {#domain-management-api-methods}
 
 網域管理方法可讓您建立和管理要傳送資料的網域（僅適用於Cookie目的地）。
@@ -132,7 +136,7 @@ ht-degree: 2%
   </tr>
   <tr valign="top">
    <td colname="col1"><code> search</code> </td>
-   <td colname="col2">根據您要用作搜尋引數的指定字串傳回結果。 例如，假設您想要尋找在該專案的任何值欄位中有「Test」字詞的所有模型的結果。 您的範例請求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>。 </p> <p>您可以搜尋"get all"方法傳回的任何值。 </p> </td>
+   <td colname="col2">根據您要用作搜尋引數的指定字串傳回結果。 例如，假設您想要尋找在該專案的任何值欄位中有「Test」字詞的所有模型的結果。 您的範例請求可能如下所示： <p><code> `GET` `https://api.demdex.com/v1/models/?search=Test`</code>. </p> <p>您可以搜尋"get all"方法傳回的任何值。 </p> </td>
   </tr> 
  </tbody> 
 </table>

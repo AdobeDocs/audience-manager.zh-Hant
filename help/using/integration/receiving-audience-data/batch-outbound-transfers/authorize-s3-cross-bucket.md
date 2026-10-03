@@ -7,23 +7,29 @@ title: 請對您的傳出檔案使用Amazon S3跨帳戶貯體許可權
 uuid: 400a8d67-ebf3-48be-aa3f-498a5441f498
 feature: Outbound Data Transfers
 exl-id: e52f5bc0-7dc0-4c73-833c-5a778e8b5891
-TQID: https://experienceleague.adobe.com/Ji1ltYPv4eoY5-eZiX62JyQ5SJzdMjFZdKeRzJnwKZg
+TQID: 'https://experienceleague.adobe.com/Ji1ltYPv4eoY5-eZiX62JyQ5SJzdMjFZdKeRzJnwKZg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: bcf89bb2-9d92-4897-90ec-483950be810f
+    internal-label: Outbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 186
+source-wordcount: '200'
 ht-degree: 0%
-
 ---
-
 # 請對您的傳出檔案使用Amazon S3跨帳戶貯體許可權 {#leverage-amazon-s-cross-account-bucket-permissions-for-your-outbound-files}
 
-使用[!UICONTROL Outbound Data Transfer] ([!DNL Amazon Simple Storage Service])之客戶的[!DNL Amazon S3]程式需要我們要求您的[!DNL Amazon S3]存取金鑰和秘密金鑰，以將傳出資料檔案傳遞給您的貯體。
+使用[!DNL Amazon Simple Storage Service] ([!DNL Amazon S3])之客戶的[!UICONTROL Outbound Data Transfer]程式需要我們要求您的[!DNL Amazon S3]存取金鑰和秘密金鑰，以將傳出資料檔案傳遞給您的貯體。
 
 若您不想與我們共用您的[!DNL Amazon S3]存取金鑰與秘密金鑰，請連絡您的[!DNL Audience Manager]顧問或客戶服務，他們將會為您設定[!DNL Cross-Account Bucket Permissions]。
 

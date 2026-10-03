@@ -1,5 +1,5 @@
 ---
-description: 「上線狀態報表」會檢查成敗比率，以處理傳入資料來源檔案中的記錄。 此報表以互動式長條圖顯示資料，並以表格形式提供摘要量度。 此外，它包含以固定時間間隔取樣檔案的選項，並顯示每種錯誤型別最常見的錯誤。 您可以在Analytics >上線狀態報表中找到此報表。 建立入站資料來源時，也可使用此報表。
+description: 「上線狀態報表」會檢查成敗比率，以處理傳入資料來源檔案中的記錄。 此報表以互動式長條圖顯示資料，並以表格形式提供摘要量度。 該功能還包括可依固定時間間隔抽樣檢查檔案的選項，且會依每個錯誤類型顯示最常見的錯誤。 您可以在Analytics >上線狀態報表中找到此報表。 建立入站資料來源時，也可使用此報表。
 seo-description: The Onboarding Status Report checks success and failure rates for processing records in your inbound data source files. This report displays data in an interactive bar chart and provides summary metrics in tabular form. And, it includes an option that samples files for a fixed time interval and displays the most common errors for each error type. You can find this report in Analytics > Onboarding Status Report. This report is also available when you create an inbound data source.
 seo-title: Onboarding Status Report
 solution: Audience Manager
@@ -7,28 +7,35 @@ title: 上線狀態報表
 uuid: 6ca8a90a-436b-4fce-adf1-48f3b96b3ed2
 feature: Inbound and Outbound Reports
 exl-id: 4517276f-5025-4779-917f-4a0bb22ca56c
-TQID: https://experienceleague.adobe.com/rr4au-Xp8a3cj5tUTsRYkS8TFlHOV2IbkfZU4enk2e0
+TQID: 'https://experienceleague.adobe.com/rr4au-Xp8a3cj5tUTsRYkS8TFlHOV2IbkfZU4enk2e0'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: bacaf04d-fec1-4cf9-a97e-cb1b36e40b07
+    internal-label: Inbound and outbound reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Troubleshooting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1421
-ht-degree: 0%
-
+source-wordcount: '1429'
+ht-degree: 5%
 ---
-
 # 上線狀態報表{#onboarding-status-report-about}
 
-「上線狀態報表」會檢查成敗比率，以處理傳入資料來源檔案中的記錄。 此報表以互動式長條圖顯示資料，並以表格形式提供摘要量度。 此外，它包含以固定時間間隔取樣檔案的選項，並顯示每種錯誤型別最常見的錯誤。 您可以在Analytics >上線狀態報表中找到此報表。 建立入站資料來源時，也可使用此報表。
+「上線狀態報表」會檢查成敗比率，以處理傳入資料來源檔案中的記錄。 此報表以互動式長條圖顯示資料，並以表格形式提供摘要量度。 該功能還包括可依固定時間間隔抽樣檢查檔案的選項，且會依每個錯誤類型顯示最常見的錯誤。 您可以在Analytics >上線狀態報表中找到此報表。 建立入站資料來源時，也可使用此報表。
 
 >[!NOTE]
 >
@@ -36,7 +43,7 @@ ht-degree: 0%
 
 ## 上線狀態報表：關於 {#onboarding-status-about}
 
-[!UICONTROL Onboarding Status Report]會檢查成敗比率，以處理傳入資料來源檔案中的記錄。 此報表以互動式長條圖顯示資料，並以表格形式提供摘要量度。 此外，它包含以固定時間間隔取樣檔案的選項，並顯示每種錯誤型別最常見的錯誤。 您可以在&#x200B;**[!UICONTROL Analytics > Onboarding Status Report]**&#x200B;中找到此報告。 建立入站資料來源時，也可使用此報表。
+[!UICONTROL Onboarding Status Report]會檢查成敗比率，以處理傳入資料來源檔案中的記錄。 此報表以互動式長條圖顯示資料，並以表格形式提供摘要量度。 該功能還包括可依固定時間間隔抽樣檢查檔案的選項，且會依每個錯誤類型顯示最常見的錯誤。 您可以在&#x200B;**[!UICONTROL Analytics > Onboarding Status Report]**&#x200B;中找到此報告。 建立入站資料來源時，也可使用此報表。
 
 ## 錯誤報告和錯誤取樣 {#error-reporting-sampling}
 
@@ -56,7 +63,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>錯誤抽樣</b> </p> </td>
-   <td colname="col2"> <p>錯誤取樣會剖析資料檔案的內容，並傳回每種錯誤型別的10個最常見錯誤。 傳入資料檔案中的錯誤會導致無法處理個別記錄。 使用此報表作為疑難排解工具，以協助減少檔案錯誤數並提高處理率。 </p> <p>您必須手動啟動錯誤取樣。 它會從啟動之日起執行14天，然後自行關閉。 您可以在14天間隔過期後重新開啟錯誤取樣。 當您<a href="../features/manage-datasources.md#create-data-source">建立傳入資料來源</a>時，或是從現有傳入資料來源的<b><span class="uicontrol">資料Source設定</span></b>區段勾選<span class="wintitle">錯誤取樣</span>核取方塊，即可啟用錯誤取樣。 </p> <p>錯誤取樣是一項運算量很高的程式。 因此，它只會傳回每個錯誤類別的前10個錯誤。 它並非設計用來傳回傳入資料來源中包含的每個錯誤。 這些錯誤是潛在較大的一組類似錯誤的代表性範例。 檢閱整個檔案，以瞭解此報表標示的錯誤型別、重新格式化檔案，然後再次傳送。 </p> <p>請參閱<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md">傳入資料檔案內容：語法、變數和範例</a>，以取得有關如何正確格式化傳入資料來源的資料檔案的詳細資訊。 </p> </td> 
+   <td colname="col2"> <p>錯誤取樣會剖析資料檔案的內容，並傳回每種錯誤型別的10個最常見錯誤。 傳入資料檔案中的錯誤會導致無法處理個別記錄。 使用此報表作為疑難排解工具，以協助減少檔案錯誤數並提高處理率。 </p> <p>您必須手動啟動錯誤取樣。 它會從啟動之日起執行14天，然後自行關閉。 您可以在14天間隔過期後重新開啟錯誤取樣。 當您<a href="../features/manage-datasources.md#create-data-source">建立傳入資料來源</a>時，或是從現有傳入資料來源的<span class="wintitle">資料Source設定</span>區段勾選<b><span class="uicontrol">錯誤取樣</span></b>核取方塊，即可啟用錯誤取樣。 </p> <p>錯誤取樣是一項運算量很高的程式。 因此，它只會傳回每個錯誤類別的前10個錯誤。 它並非設計用來傳回傳入資料來源中包含的每個錯誤。 這些錯誤是潛在較大的一組類似錯誤的代表性範例。 檢閱整個檔案，以瞭解此報表標示的錯誤型別、重新格式化檔案，然後再次傳送。 </p> <p>請參閱<a href="../integration/sending-audience-data/batch-data-transfer-explained/inbound-file-contents.md">傳入資料檔案內容：語法、變數和範例</a>，以取得有關如何正確格式化傳入資料來源的資料檔案的詳細資訊。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -153,7 +160,7 @@ create-onboarding-status-report.xml
 
 <tr> 
    <td colname="col1"> <p> <b>無效的裝置識別碼</b> </p> </td> 
-   <td colname="col2"> <p>列出格式不正確的全域裝置ID數目。 如需裝置ID的格式設定方式以及您應根據裝置型別使用何種全域資料來源的詳細資訊，請參閱Audience Manager<a href="../reference/ids-in-aam.md">中的</a>ID索引和<a href="../features/global-data-sources.md">全域資料來源</a>。</p>
+   <td colname="col2"> <p>列出格式不正確的全域裝置ID數目。 如需裝置ID的格式設定方式以及您應根據裝置型別使用何種全域資料來源的詳細資訊，請參閱Audience Manager</a>中的<a href="../reference/ids-in-aam.md">ID索引和<a href="../features/global-data-sources.md">全域資料來源</a>。</p>
   <p>報表的錯誤取樣區段包含有關無效裝置ID的詳細資訊，例如：</p>
    <ul>
     <li>與無效裝置ID對應的資料來源ID；</li>

@@ -8,20 +8,26 @@ title: 建立規則型或已上線的特徵
 uuid: 4243e09f-1f96-443a-864a-d6e6918079fa
 feature: Traits
 exl-id: cad318ee-93b2-4afa-8a2f-a67b068eec0a
-TQID: https://experienceleague.adobe.com/WP-VxrKlSi7pHB9IEIFXDt1SD-iu85DynxDPyoVQAcQ
+TQID: 'https://experienceleague.adobe.com/WP-VxrKlSi7pHB9IEIFXDt1SD-iu85DynxDPyoVQAcQ'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 356
+source-wordcount: '379'
 ht-degree: 2%
-
 ---
-
 # 建立[!UICONTROL Rules-Based]或[!UICONTROL Onboarded Traits] {#create-rules-based-or-onboarded-traits}
 
 說明特定於[!UICONTROL rules-based]和[!UICONTROL onboarded]特徵建立程式的設定步驟和功能。
@@ -30,7 +36,7 @@ ht-degree: 2%
 
 ## 特徵的基本資訊 {#basics}
 
-在[!UICONTROL Trait Builder]中，[!UICONTROL Basic Information]設定可讓您建立新專案，或編輯現有的[!UICONTROL traits]。 [!UICONTROL Basic Information]、[!UICONTROL rules-based]和[!UICONTROL onboarded]的[!UICONTROL algorithmic traits]設定相同。 若要建立新的[!UICONTROL trait]，請提供名稱（避免特殊字元）、[!UICONTROL data source]並選取[!UICONTROL storage folder]。 其他[!UICONTROL Basic Information]欄位是選用欄位。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Basic Information]設定可讓您建立新專案，或編輯現有的[!UICONTROL traits]。 [!UICONTROL rules-based]、[!UICONTROL onboarded]和[!UICONTROL algorithmic traits]的[!UICONTROL Basic Information]設定相同。 若要建立新的[!UICONTROL trait]，請提供名稱（避免特殊字元）、[!UICONTROL data source]並選取[!UICONTROL storage folder]。 其他[!UICONTROL Basic Information]欄位是選用欄位。
 
 <!-- c_tb_basics.xml -->
 
@@ -59,7 +65,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol"> 說明</span></b> </td> 
-   <td colname="col2"> 提供幾個字詞來協助說明特徵的用途或功能。 選填。 </td> 
+   <td colname="col2"> 提供幾個字詞來協助說明特徵的用途或功能。 可選。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">資料Source</span></b> </td> 
@@ -71,11 +77,11 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">整合代碼</span></b> </td> 
-   <td colname="col2"> 供內部業務流程使用的ID、SKU或其他值的欄位。 選填。 </td> 
+   <td colname="col2"> 供內部業務流程使用的ID、SKU或其他值的欄位。 可選。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">個註解</span></b> </td> 
-   <td colname="col2"> 特徵的一般注意事項。 選填。 </td> 
+   <td colname="col2"> 特徵的一般注意事項。 可選。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b><span class="uicontrol">存放區位於</span></b> </td> 
@@ -90,13 +96,13 @@ ht-degree: 2%
 
 ## 設定[!UICONTROL Trait]過期時間間隔 {#set-expiration-interval}
 
-在[!UICONTROL Trait Builder]中，[!UICONTROL Advanced Options]可讓您設定[!DNL TTL]的存留時間([!UICONTROL trait])間隔。 [!DNL TTL]定義合格訪客在[!UICONTROL trait]內停留的天數（預設為120天）。 設定為0時，[!UICONTROL trait]成員資格永不過期。
+在[!UICONTROL Trait Builder]中，[!UICONTROL Advanced Options]可讓您設定[!UICONTROL trait]的存留時間([!DNL TTL])間隔。 [!DNL TTL]定義合格訪客在[!UICONTROL trait]內停留的天數（預設為120天）。 設定為0時，[!UICONTROL trait]成員資格永不過期。
 
 <!-- t_tb_ttl.xml -->
 
 ### 設定[!UICONTROL trait]的TTL
 
-1. 展開[!UICONTROL Advanced Options]區段並輸入數字以設定[!DNL TTL]的[!UICONTROL trait]值。
+1. 展開[!UICONTROL Advanced Options]區段並輸入數字以設定[!UICONTROL trait]的[!DNL TTL]值。
 1. 按一下 **[!UICONTROL Save]**。
 
    ![](assets/TTL.png)

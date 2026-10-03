@@ -7,24 +7,32 @@ title: 正在擷取區段中繼資料
 uuid: 719e2c41-8788-4e8a-967a-e367421f9f84
 feature: Segments
 exl-id: 64922cf8-f7bf-4e33-871f-d33626b06360
-TQID: https://experienceleague.adobe.com/wWAyOKoMlNRC-tFKOmA-hWpwAiIs7r53MFcURPabsWg
+TQID: 'https://experienceleague.adobe.com/wWAyOKoMlNRC-tFKOmA-hWpwAiIs7r53MFcURPabsWg'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
 subfeature_v2:
   - id: c2c33729-f309-4bc2-92ba-87c475259df3
+    internal-label: REST APIs
+  - id: b52f95d5-ca6b-4fda-a49e-994dc0a63402
+    internal-label: Segments
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Customer experience
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 524
+source-wordcount: '529'
 ht-degree: 0%
-
 ---
-
 # 正在擷取區段中繼資料 {#retrieving-segment-metadata}
 
 Audience Manager傳送區段資訊給資料合作夥伴時，會使用數值ID識別這些物件。 身為資料合作夥伴，當您和客戶共用這些資訊（或自行處理）時，實際的名稱和說明可在報表、儀表板或其他使用者介面([!DNL UI])中為客戶提供更好的體驗。 資料合作夥伴可使用本節所述的手動或自動化方法，讓客戶可以使用這些易記名稱。
@@ -39,11 +47,11 @@ Audience Manager傳送區段資訊給資料合作夥伴時，會使用數值ID�
 
 ### 步驟1：檢閱Audience Manager API
 
-[&#x200B; REST API快速入門](../../api/rest-api-main/aam-api-getting-started.md)區段包含一般需求、驗證、可用方法等資訊。 如果您之前未使用[!DNL Audience Manager] [!DNL API]，這是一個很好的起點。
+[&#x200B; REST API快速入門](../../api/rest-api-main/aam-api-getting-started.md)區段包含一般需求、驗證、可用方法等資訊。如果您之前未使用[!DNL Audience Manager] [!DNL API]，這是一個很好的起點。
 
 ### 步驟2：要求OAuth2存取認證
 
-您需要使用者端識別碼與密碼才能進行[!DNL API]呼叫。 在整合設定程式進行期間，您可以向整合專員取得使用者端ID和密碼。 您也可以在[!UICONTROL Audience Manager Customer Care]傳送電子郵件要求給[!DNL amsupport@adobe.com]。
+您需要使用者端識別碼與密碼才能進行[!DNL API]呼叫。 在整合設定程式進行期間，您可以向整合專員取得使用者端ID和密碼。 您也可以在[!DNL amsupport@adobe.com]傳送電子郵件要求給[!UICONTROL Audience Manager Customer Care]。
 
 ### 步驟3：收集每個整合客戶的客戶特定資訊
 

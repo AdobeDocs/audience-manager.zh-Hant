@@ -6,13 +6,20 @@ solution: Audience Manager
 title: 中繼資料檔案的狀態更新
 uuid: 56a1e88a-41da-4d51-a21e-2be98cca7fa2
 feature: Log Files
-source-git-commit: fe01ebac8c0d0ad3630d3853e0bf32f0b00f6a44
+product_v2:
+  - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '303'
 ht-degree: 1%
-
 ---
-
 
 # 中繼資料檔案的狀態更新{#status-updates-for-metadata-files}
 
@@ -91,11 +98,11 @@ S3狀態目錄包含`.info`檔案，其中包含您上傳檔案的成功和失�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> MetadataType</code> </p> </td> 
-   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據檔案名稱中的子項ID。 </p> <p>請參閱中繼資料檔案<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">的</a>命名慣例。 </p> </td> 
+   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據檔案名稱中的子項ID。 </p> <p>請參閱中繼資料檔案</a>的<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">命名慣例。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Parent</code> </p> </td> 
-   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據您檔案名稱中的父系ID。 </p> <p>請參閱中繼資料檔案<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">的</a>命名慣例。 </p> </td> 
+   <td colname="col2"> <p>適用於您的檔案所包含資料型別的可讀取名稱。 這會根據您檔案名稱中的父系ID。 </p> <p>請參閱中繼資料檔案</a>的<a href="../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md">命名慣例。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> Status</code> </p> </td> 

@@ -7,16 +7,21 @@ title: 使用布林值和比較運運算元的運算式範例
 uuid: ee74c376-2099-4816-8694-43f58845a0ac
 feature: Traits
 exl-id: 68041d61-7942-4c2f-9e78-f2b2f803ef59
-TQID: https://experienceleague.adobe.com/mVpbP-ob3VclgLEBQWtI4zxthppaf5j7L8DPKBjF9Wo
+TQID: 'https://experienceleague.adobe.com/mVpbP-ob3VclgLEBQWtI4zxthppaf5j7L8DPKBjF9Wo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 193
+source-wordcount: '194'
 ht-degree: 3%
-
 ---
-
 # 使用布林值和比較運運算元的運算式範例 {#sample-expressions-with-boolean-and-comparison-operators}
 
 您可以參考在[!UICONTROL Expression Builder]程式碼編輯器中建立運算式的範例。
@@ -25,7 +30,7 @@ ht-degree: 3%
 
 <!-- r_tb_expression_samples.xml -->
 
-使用[!UICONTROL Expression Builder]程式碼編輯器建立您自己的特徵規則。 以下範例可幫助您入門。 某些範例會在&#x200B;*`key`*&#x200B;變數前加上`c_`，以將其識別為使用者定義的變數。 如果您的事件呼叫使用該語法將資料傳送至`c_`，請包含&#x200B;*`key`*&#x200B;變數的[!DNL Audience Manager]首碼（或任何其他命名慣例）。
+使用[!UICONTROL Expression Builder]程式碼編輯器建立您自己的特徵規則。 以下範例可幫助您入門。 某些範例會在&#x200B;*`key`*&#x200B;變數前加上`c_`，以將其識別為使用者定義的變數。 如果您的事件呼叫使用該語法將資料傳送至[!DNL Audience Manager]，請包含&#x200B;*`key`*&#x200B;變數的`c_`首碼（或任何其他命名慣例）。
 
 ## 布林運算式 {#boolean-expressions}
 

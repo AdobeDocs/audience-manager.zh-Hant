@@ -7,21 +7,26 @@ title: Data Integration Library API方法
 uuid: 507e7afd-3ae7-44de-98b0-589d699c453b
 feature: API
 exl-id: d2f3e4e8-65be-4fec-90d7-5991514b8efc
-TQID: https://experienceleague.adobe.com/OUlYPULmJBtwVC1NJdEUopbc-segLDv0anbd2SW9eI8
+TQID: 'https://experienceleague.adobe.com/OUlYPULmJBtwVC1NJdEUopbc-segLDv0anbd2SW9eI8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 166
-ht-degree: 3%
-
+source-wordcount: '173'
+ht-degree: 6%
 ---
-
 # Data Integration Library API方法 {#data-integration-library-api-methods}
 
 可讓您以程式設計方式使用[!UICONTROL Data Integration Library] ([!UICONTROL DIL])的方法。
@@ -52,7 +57,7 @@ ht-degree: 3%
 
 ## 傳回版本的JSON結構描述 {#return-json-schema-version}
 
-傳回`GET`版本[!DNL JSON]結構描述的[!UICONTROL DIL]方法。 支援使用版本的別名[!UICONTROL LATEST]來取得最新版本的[!UICONTROL DIL]。
+傳回[!UICONTROL DIL]版本[!DNL JSON]結構描述的`GET`方法。 支援使用版本的別名[!UICONTROL LATEST]來取得最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_return_json_schema_for_version.xml -->
 
@@ -388,7 +393,7 @@ ht-degree: 3%
 
 ## 產生DIL {#generate-dil}
 
-使用指定版本`GET`根據傳入的要求內文產生[!UICONTROL DIL]的[!UICONTROL DIL]方法。 如果別名`LATEST`用於URL中的版本，則會產生最新版本的[!UICONTROL DIL]。
+使用指定版本[!UICONTROL DIL]根據傳入的要求內文產生[!UICONTROL DIL]的`GET`方法。 如果別名`LATEST`用於URL中的版本，則會產生最新版本的[!UICONTROL DIL]。
 
 <!-- r_api_generate_dil.xml -->
 

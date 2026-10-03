@@ -8,19 +8,26 @@ title: 訪客資料檢視器
 uuid: 77ffe134-e08f-41de-8fc4-15494847b1d0
 feature: Traits
 exl-id: 6c1ee14c-6f78-4e45-9b88-24ace8400079
-TQID: https://experienceleague.adobe.com/e-qPcNaUpT-inBkx30AqUa-KkjjVJRyce86O-HQNitE
+TQID: 'https://experienceleague.adobe.com/e-qPcNaUpT-inBkx30AqUa-KkjjVJRyce86O-HQNitE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Troubleshooting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 250
+source-wordcount: '252'
 ht-degree: 0%
-
 ---
-
 # 訪客資料檢視器 {#visitor-profile-viewer}
 
 使用[!UICONTROL Visitor Profile Viewer]顯示目前瀏覽器之使用者設定檔的目前狀態，包括其特徵和區段。 對於每個特徵，您可以檢視其[!UICONTROL SID]、名稱、訪客特徵實現方式的詳細資訊（第一方或第三方）、實現日期和實現頻率。 對於每個區段，您可以檢視其[!UICONTROL SID]、名稱和區段會籍日期。 您也可以檢視其他Audience Manager設定檔識別碼([!UICONTROL UUID])的訪客設定檔。 [!UICONTROL Visitor Profile Viewer]有助於疑難排解。

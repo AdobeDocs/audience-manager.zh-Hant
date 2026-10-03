@@ -4,22 +4,30 @@ title: DCS錯誤碼、訊息和範例
 uuid: d3290038-567b-4c00-bc95-2cec683da5ec
 feature: DCS
 exl-id: 485e5ce2-143e-4d18-b157-c243c5a510ad
-TQID: https://experienceleague.adobe.com/FHc7VAvl6LcI-xtrxdg-eMRHMncTPHpxGxIx0sXOb-E
+TQID: 'https://experienceleague.adobe.com/FHc7VAvl6LcI-xtrxdg-eMRHMncTPHpxGxIx0sXOb-E'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: d8f681b8-67cc-42dc-85c5-a0977528a942
+    internal-label: Data Collection Server
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1519
+source-wordcount: '1546'
 ht-degree: 3%
-
 ---
-
 # DCS錯誤碼、訊息和範例 {#dcs-error-codes-messages-and-examples}
 
 [!UICONTROL Data Collection Servers] ([!DNL DCS])產生的錯誤碼和訊息，依代碼識別碼以數值順序列出。
@@ -40,10 +48,10 @@ ht-degree: 3%
 | 錯誤碼 | 錯誤訊息 | 說明 |
 |---|---|---|
 | 100 | 無法擷取要求的主機名稱 | [!DNL API]呼叫未在要求中傳送主機[!DNL HTTP]標頭。 請將主機標頭新增至呼叫，然後再試一次。 大部分的瀏覽器和[!DNL API]使用者端會自動執行此動作。 |
-| 101 | 在[!DNL Experience Cloud]中傳遞的`ID` ID無效 | [!DNL DCS]呼叫包含無效的[!DNL Experience Cloud] ID。 檢查標頭字串中的`d_mid=`機碼值組。 請確定您傳入了正確的[!DNL Experience Cloud] ID，然後再次嘗試該請求。 |
-| 102 | 傳入要求[!DNL AAM ID]的`ID`無效 | [!DNL DCS]呼叫包含無效的[!DNL Audience Manager] ID。 檢查標頭字串中的`d_uuid=`機碼值組。 請確定您傳入了正確的[!DNL Audience Manager] ID，然後再次嘗試該請求。 |
+| 101 | 在`ID`中傳遞的[!DNL Experience Cloud] ID無效 | [!DNL DCS]呼叫包含無效的[!DNL Experience Cloud] ID。 檢查標頭字串中的`d_mid=`機碼值組。 請確定您傳入了正確的[!DNL Experience Cloud] ID，然後再次嘗試該請求。 |
+| 102 | 傳入要求`ID`的[!DNL AAM ID]無效 | [!DNL DCS]呼叫包含無效的[!DNL Audience Manager] ID。 檢查標頭字串中的`d_uuid=`機碼值組。 請確定您傳入了正確的[!DNL Audience Manager] ID，然後再次嘗試該請求。 |
 | 104 | 所有客戶ID無效 | 您呼叫中的所有客戶ID無效。 請檢查您的ID，然後再試一次。 |
-| 109 | 不允許協力廠商`HTTP referer`使用反向連結`Partner ID` | 呼叫中的合作夥伴ID不允許呼叫中的`HTTP referer`標頭。 檢查`HTTP referer`標頭是否正確。 |
+| 109 | 不允許協力廠商`Partner ID`使用反向連結`HTTP referer` | 呼叫中的合作夥伴ID不允許呼叫中的`HTTP referer`標頭。 檢查`HTTP referer`標頭是否正確。 |
 | 111 | 收到無效的`IMS`權杖 | 已傳回[!DNL Audience Manager] - [!DNL Adobe Target]整合。 呼叫[!DNL DCS]時擲回錯誤，其中包含無效的[!DNL IMS]權杖。 權杖可能格式錯誤、已過期或使用者可能無權存取所需的資源。 |
 
 ## 選擇退出錯誤碼 {#opt-out-error-codes}
@@ -150,7 +158,7 @@ ht-degree: 3%
 | 309 | 已捨棄客戶ID `_ID_`，因為它超過每個請求宣告的客戶ID限制 | 與錯誤301相關。 此錯誤會指定因為超過限制而捨棄哪個客戶ID。<br><br>例如，如果在DCS呼叫上宣告12個客戶ID，將會捨棄其中兩個。 為了轉送哪些客戶已捨棄，此錯誤會在回應中出現兩次（每個捨棄的客戶ID顯示一次）。 |
 | 310 | 已捨棄客戶ID，因為它超過指定名稱空間的限制。 名稱空間ID為`_ID_`，客戶ID為`_ID_`。 | 如果DCS呼叫上的相同名稱空間( `DPID`)宣告3個以上的客戶ID，則會傳回此錯誤碼。<br><br>`https://partner.demdex.net/event?d_rtbd=json&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one&d_cid_ic=one`<br><br>在此範例DCS請求中，有4個識別碼為同一個名稱空間宣告（整合程式碼為1）。 其中一個ID會遭捨棄，並傳回錯誤310。 |
 | 311 | 請求包含無效的引數 | 若至少有一個URL引數未正確編碼，DCS會傳回此錯誤碼。 在此情況下，DCS會忽略整個請求。<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%esid!&d_creative=%ecid!&d_adgroup=%eaid!&d_placement=%epid!&d_campaign=%ebuy!&d_adsrc=48123`<br><br>在上述範例要求中，`%`順序編碼不正確。 因此，DCS將會忽略它。<br><br>正確編碼的範例應該如下所示：<br><br>`http(s)://partner.demdex.net/event?d_event=imp&d_rtbd=json&d_src=38454&d_site=%25esid!&d_creative=%25ecid!&d_adgroup=%25eaid!&d_placement=%25epid!&d_campaign=%25ebuy!&d_adsrc=48123` |
-| 312 | 請求包含無效的全域裝置識別碼 | 當請求包含無效的全域裝置ID時，DCS會傳回此錯誤碼。 DCS會忽略無效ID並擲回312錯誤以及無效ID的特定錯誤。 如需正確裝置廣告ID格式與對應之全域資料來源的詳細資訊，請參閱Audience Manager[中的](../../../features/global-data-sources.md)全域資料來源[與](../../../reference/ids-in-aam.md)ID索引。<br><br>不正確呼叫的範例： `"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"`<br><br>說明： IDFA (DPID 20915)必須是大寫的ID。 請求中提供的ID為小寫。 |
+| 312 | 請求包含無效的全域裝置識別碼 | 當請求包含無效的全域裝置ID時，DCS會傳回此錯誤碼。 DCS會忽略無效ID並擲回312錯誤以及無效ID的特定錯誤。 如需正確裝置廣告ID格式與對應之全域資料來源的詳細資訊，請參閱Audience Manager[&#128279;](../../../reference/ids-in-aam.md)中的[全域資料來源](../../../features/global-data-sources.md)與ID索引。<br><br>不正確呼叫的範例： `"http://partner.demdex.net/event?d_rtbd=json&d_cid=20915%01a53cc5a2-6aa1-4210-8ded-a88b29b6212z"`<br><br>說明： IDFA (DPID 20915)必須是大寫的ID。 請求中提供的ID為小寫。 |
 | 313 | CMP ID不存在於GCL中 | 當`gdpr=1`和IAB TC字串是由評估時Audience Manager快取版本的全域CMP清單中不存在的CMP ID產生時，適用於IAB TCF的Audience Manager外掛程式會捨棄IAB TC字串，並照常處理請求。 IAB TCF v2.2 ${GDPR}巨集設為0，而${GDPR\_CONSENT\_XXX}巨集為空白。 |
 | 314 | CMP ID在GCL中標籤為已刪除 | 當`gdpr=1`和IAB TC字串是由在我們快取版本的「全域CMP清單」中標籤為已刪除的CMP產生時，如果評估時間超過從「全域CMP清單」刪除的時間，適用於IAB TCF的Audience Manager外掛程式會捨棄TC字串並照常處理請求。 IAB TCF v2.2 ${GDPR}巨集設為0，而${GDPR\_CONSENT\_XXX}巨集為空白。 |
 | 315 | 同意字串表示不同意 | 若未提供同意，適用於IAB TCF的Audience Manager外掛程式會選擇讓使用者退出進一步的資料收集，或是在未偵測到合作夥伴內容時完全捨棄呼叫。 |

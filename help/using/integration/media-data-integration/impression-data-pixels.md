@@ -7,29 +7,42 @@ title: 透過畫素呼叫擷取行銷活動的曝光資料
 uuid: 6ac44100-4c55-4992-8835-0d578bb4e5c2
 feature: Adobe Campaign Integration
 exl-id: 04e6f1e5-5075-4221-a310-deb3717458ad
-TQID: https://experienceleague.adobe.com/4AePlh8JW-KJ5pMyBjEDNQ1mxfikBavHMT-UXkQqYJo
+TQID: 'https://experienceleague.adobe.com/4AePlh8JW-KJ5pMyBjEDNQ1mxfikBavHMT-UXkQqYJo'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: ff9c2088-e1d9-47aa-85e4-6765b719f5c7
+    internal-label: Audience Optimization Reports
+  - id: b59a5343-ccde-4868-a926-97a27448e694
+    internal-label: Campaign integration
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 698
+source-wordcount: '742'
 ht-degree: 14%
-
 ---
-
 # 透過畫素呼叫擷取行銷活動的曝光資料{#capturing-campaign-impression-data-via-pixel-calls}
 
 將媒體資料傳送至Audience Manager的一種方法，是使用廣告伺服器巨集將促銷活動屬性傳送至Audience Manager。
@@ -40,9 +53,9 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
+>文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等） 表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../reference/code-style-elements.md)。
 
-事件呼叫會收集曝光次數和轉換資料，並將其傳送至[!DNL Audience Manager] [資料收集伺服器](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS])。 此程序需仰賴第三方廣告伺服器，將呼叫放置在創意素材中，以控制插入程式碼中的內容。第三方廣告伺服器 (例如 [!DNL DFA]) 可在廣告每次曝光中置入此程式碼。此外，廣告呼叫不會使用 [!DNL JavaScript] 或採用 frame-busting 技術存取廣告標記以外的發佈者資料。
+事件呼叫會收集曝光次數和轉換資料，並將其傳送至[!DNL Audience Manager] [資料收集伺服器](/help/using/reference/system-components/components-data-collection.md) ([!DNL DCS])。 此程序需仰賴第三方廣告伺服器，將呼叫放置在創意素材中，以控制插入程式碼中的內容。 第三方廣告伺服器 (例如 [!DNL DFA]) 可在廣告每次曝光中置入此程式碼。 此外，廣告呼叫不會使用 [!DNL JavaScript] 或採用 frame-busting 技術存取廣告標記以外的發佈者資料。
 
 事件呼叫包含使用下列語法的機碼值組：
 
@@ -66,11 +79,11 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
  <tbody> 
   <tr> 
    <td colname="col1"> <code> d_adgroup </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值廣告群組ID。 </p> <p>選填。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值廣告群組ID。 </p> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_adsrc </code> </td> 
-   <td colname="col2"> <p>廣告商的資料來源ID或整合代碼。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> <p>選填。</p> </td> 
+   <td colname="col2"> <p>廣告商的資料來源ID或整合代碼。 </p> <p><span class="wintitle">個Audience Optimization </span>報表的必要專案。 </p> <p>可選。</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_bu </code> </td> 
@@ -78,7 +91,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> d_bust </code> </p> </td> 
-   <td colname="col2"> <p>Cache-busting值。 <span class="keyword"> Audience Manager </span>會自動傳送大多數瀏覽器和代理程式遵循的快取控制標頭。 如果您想要執行額外的防快取，請將此引數納入事件呼叫中，接著納入隨機字串。 </p> <p> 選填。 </p> </td> 
+   <td colname="col2"> <p>Cache-busting值。<span class="keyword"> Audience Manager </span>會自動傳送大多數瀏覽器和代理遵循的快取控制標頭。 如果您想要執行額外的防快取，請將此引數納入事件呼叫中，接著納入隨機字串。 </p> <p> 可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_campaign </code> </td> 
@@ -90,7 +103,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
     <ul id="ul_4D5D696D10B34615867AF3B64A938878"> 
      <li id="li_A4BD4B0C8C9443BF99075CDFACC013F6">20914：識別Android (GAID)裝置。 例如，<code> d_cid = 20914 %01 1234 </code>指出使用者1234與Android裝置相關聯。 </li> 
      <li id="li_F83D7B3EC4D24D0187BFE639E2812B36">20915：識別iOS (IDFA)裝置。 例如，<code> d_cid = 20915 %01 5678 </code>指出使用者5678與iOS裝置相關聯。 </li> 
-    </ul> <p>選填。 </p> </td> 
+    </ul> <p>可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_creative </code> </td> 
@@ -102,7 +115,7 @@ https://clientname.demdex.net/event?d_event=imp&d_src=datasource_id&d_site=siteI
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_placement </code> </td> 
-   <td colname="col2"> <p>來自廣告伺服器的數值位置ID。 </p> <p> 選填。 </p> </td> 
+   <td colname="col2"> <p>來自廣告伺服器的數值位置ID。 </p> <p> 可選。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <code> d_site </code> </td> 

@@ -7,18 +7,23 @@ title: 衍生訊號
 uuid: e52600e3-26d1-4607-9b96-afd6086a252d
 feature: Traits
 exl-id: 64bc004a-a31a-49bb-aa58-323fbc92f76f
-TQID: https://experienceleague.adobe.com/NuY2-dNMtPcte2WQE572uvyS-uiIzZmSPrlOyOndPuU
+TQID: 'https://experienceleague.adobe.com/NuY2-dNMtPcte2WQE572uvyS-uiIzZmSPrlOyOndPuU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 261
+source-wordcount: '263'
 ht-degree: 0%
-
 ---
-
 # 衍生訊號 {#derived-signals}
 
 [!UICONTROL derived signal]會根據網站訪客已看到的特徵，讓他們符合其他特徵的資格。 換言之，即使使用者以前從未見過新特徵，也可從目前展示的特徵衍生出其他特徵資格。
@@ -33,7 +38,7 @@ ht-degree: 0%
 
 ## 衍生訊號的位置
 
-從側欄導覽在[!UICONTROL derived signals]中建立和管理&#x200B;**[!UICONTROL Tools > Derived Signals]**。
+從側欄導覽在&#x200B;**[!UICONTROL Tools > Derived Signals]**&#x200B;中建立和管理[!UICONTROL derived signals]。
 
 ## 建立衍生訊號 {#create}
 
@@ -41,7 +46,7 @@ ht-degree: 0%
 
 若要建立[!UICONTROL derived signal]：
 
-1. 從&#x200B;**[!UICONTROL Derived Signals]**&#x200B;功能表選取[!UICONTROL Tools]。
+1. 從[!UICONTROL Tools]功能表選取&#x200B;**[!UICONTROL Derived Signals]**。
 1. 提供：
    * *（選擇性）* [!UICONTROL Integration Code]
    * [!UICONTROL Source Key]

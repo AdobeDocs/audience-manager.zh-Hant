@@ -6,18 +6,24 @@ title: 按索引鍵值配對搜尋訊號
 uuid: 2a38d0d4-4a2e-4ca5-b9ec-af9d4963d876
 feature: Data Explorer
 exl-id: d598da6b-8dc0-47ce-8389-1973b1803711
-TQID: https://experienceleague.adobe.com/Apm-P3y-WJlOGO1UIbRJCfzAsgTzzk991PdU4DDLtGU
+TQID: 'https://experienceleague.adobe.com/Apm-P3y-WJlOGO1UIbRJCfzAsgTzzk991PdU4DDLtGU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: a2c6d65b-635d-4454-a9cc-9771ed501bb4
+    internal-label: Data Explorer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Reporting
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '302'
 ht-degree: 0%
-
 ---
-
 # 依索引鍵值配對搜尋訊號 {#search-signals-by-key-value-pairs}
 
 根據其各自的索引鍵值配對，搜尋一或多個訊號。
@@ -43,7 +49,7 @@ ht-degree: 0%
 
 ## 從訊號搜尋排除的訊號 {#excluded-signals}
 
-`d_`未出現Audience Manager使用且以`h_`和[!UICONTROL Signals Search]首碼為前置詞的關鍵變數。 如需詳細資訊，請參閱索引鍵變數[的](../../traits/trait-variable-prefixes.md)前置詞要求。
+[!UICONTROL Signals Search]未出現Audience Manager使用且以`d_`和`h_`首碼為前置詞的關鍵變數。 如需詳細資訊，請參閱索引鍵變數[&#128279;](../../traits/trait-variable-prefixes.md)的前置詞要求。
 
 ## 區分大小寫與搜尋自動完成 {#case-insensitivity}
 

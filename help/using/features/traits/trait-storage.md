@@ -7,16 +7,21 @@ title: 特徵儲存
 uuid: e72685ee-0c64-44a4-a8e2-d6ee5c968ba0
 feature: Traits
 exl-id: 97d9951e-a339-4dd9-8a67-b7884752533b
-TQID: https://experienceleague.adobe.com/acJN-EyL60I8Y3dmrj8g9oV7qODKLJXiz7QOQvPs6G0
+TQID: 'https://experienceleague.adobe.com/acJN-EyL60I8Y3dmrj8g9oV7qODKLJXiz7QOQvPs6G0'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 213
+source-wordcount: '213'
 ht-degree: 3%
-
 ---
-
 # 特徵儲存 {#trait-storage}
 
 特徵儲存資料夾可儲存並協助您組織特徵。
@@ -35,7 +40,7 @@ ht-degree: 3%
 
 <!-- t_tb_create_storage.xml -->
 
-設定新特徵時，您可以在[!UICONTROL Basic Information]區段中建立新的儲存資料夾。 此外，也可以在主要[!UICONTROL Trait Storage]清單儀表板的[!UICONTROL Traits]區段中建立資料夾。
+設定新特徵時，您可以在[!UICONTROL Basic Information]區段中建立新的儲存資料夾。 此外，也可以在主要[!UICONTROL Traits]清單儀表板的[!UICONTROL Trait Storage]區段中建立資料夾。
 
 若要建立新的儲存資料夾：
 
@@ -51,7 +56,7 @@ ht-degree: 3%
 
 <!-- t_tb_rename_delete_storage.xml -->
 
-您可以從主要[!UICONTROL Trait Storage]清單儀表板的[!UICONTROL Traits]區段重新命名或刪除儲存資料夾。
+您可以從主要[!UICONTROL Traits]清單儀表板的[!UICONTROL Trait Storage]區段重新命名或刪除儲存資料夾。
 
 * 將滑鼠懸停在資料夾上並按一下鉛筆圖示，即可重新命名資料夾。
 * 將游標移至資料夾上並按一下&#x200B;**X**&#x200B;圖示，以刪除資料夾。

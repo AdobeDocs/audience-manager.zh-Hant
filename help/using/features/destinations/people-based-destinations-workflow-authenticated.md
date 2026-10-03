@@ -6,27 +6,36 @@ solution: Audience Manager
 title: 工作流程C — 以結合離線資料的驗證活動為基礎的Personalization
 feature: People-based Destinations
 exl-id: 24f877ce-089e-484c-9a70-8fce1a10a649
-TQID: https://experienceleague.adobe.com/8n-bcGFvzcn6nCrR-ubU5IMu9ne19CHmMMMEeqdV-cI
+TQID: 'https://experienceleague.adobe.com/8n-bcGFvzcn6nCrR-ubU5IMu9ne19CHmMMMEeqdV-cI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
+  - id: d7221605-094b-45a5-891f-f37bd58c0055
+    internal-label: People based Destinations
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 877
+source-wordcount: '905'
 ht-degree: 1%
-
 ---
-
 # 工作流程C — 以結合離線資料的驗證活動為基礎的Personalization {#workflow-c}
 
 >[!IMPORTANT]
@@ -114,7 +123,7 @@ ht-degree: 1%
 1. 登入您的Audience Manager帳戶並移至&#x200B;**[!UICONTROL Audience Data]** -> **[!UICONTROL Profile Merge Rules]**。
 2. 按一下 **[!UICONTROL Add New Rule]**。
 3. 輸入設定檔合併規則&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Description]**。
-4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;區段中，從&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;清單中選取&#x200B;**[!UICONTROL Last Authenticated Profiles]**&#x200B;或&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;規則。
+4. 在&#x200B;**[!UICONTROL Profile Merge Rule Setup]**&#x200B;區段中，從&#x200B;**[!UICONTROL Cross-Device Options]**&#x200B;清單中選取&#x200B;**[!UICONTROL Current Authenticated Profiles]**&#x200B;或&#x200B;**[!UICONTROL Last Authenticated Profiles]**&#x200B;規則。
 5. 在&#x200B;**[!UICONTROL Cross-Device Profile Options]**&#x200B;清單中，選取您要執行分段的資料來源。 這些應該是包含現有DPUUID的資料來源。
    ![merge-rule-setup](assets/pbd-pmr-combined.png)
 

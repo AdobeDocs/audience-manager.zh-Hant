@@ -5,39 +5,55 @@ title: Experience Platform區段與Audience Manager和其他Experience Cloud解�
 keywords: AEP受眾共用， AEP區段，平台區段，區段共用，受眾共用，共用區段， AAM AEP區段共用
 feature: Experience Platform Integration
 exl-id: 46ad306f-3e87-4731-8ba0-cfafefa616fc
-TQID: https://experienceleague.adobe.com/v1qi5AqJOa77icdR-mc3YLPBqSm68R8IlFq2o2dHD-8
+TQID: 'https://experienceleague.adobe.com/v1qi5AqJOa77icdR-mc3YLPBqSm68R8IlFq2o2dHD-8'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
   - id: cefdb449-7764-4855-a54f-3901d8be873d
+    internal-label: Data Export Controls
+  - id: b1393389-a768-49db-9323-b2ef9e441796
+    internal-label: Experience Platform integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Customer profiles
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1799
-ht-degree: 1%
-
+source-wordcount: '2014'
+ht-degree: 2%
 ---
-
 # Experience Platform區段與Audience Manager和其他Experience Cloud解決方案共用
 
 ## 概述 {#overview}
 
 Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您將您的Audience Manager特徵和區段共用至Adobe Experience Platform，並將Experience Platform區段共用至Audience Manager。
 
-您需要Experience Platform中的[[!DNL Audience Manager source connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)和[Experience Cloud對象](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html?lang=zh-Hant)目的地，才能在Audience Manager和Adobe Experience Platform之間啟用對象共用。
+您需要Experience Platform中的[[!DNL Audience Manager source connector]](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)和[Experience Cloud Audiences](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/adobe/experience-cloud-audiences.html?lang=zh-Hant)目的地，才能在Audience Manager和Adobe Experience Platform之間啟用受眾共用。
 
 您可以使用Experience Platform中的Audience Manager特徵和區段，將Audience Manager資料新增至您的客戶設定檔，並從Experience Platform [細分服務](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)中獲益。
 
@@ -83,7 +99,7 @@ Audience Manager和Adobe Experience Platform之間的受眾共用功能可讓您
 
 設定Audience Manager來源聯結器以從Audience Manager匯入特徵和區段後，您的Audience Manager資料在Experience Platform中會顯示為區段工作流程中的&#x200B;**受眾**。 如需Experience Platform中Audience Manager區段和特徵的詳細資訊，請閱讀：
 
-* [分段服務總覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant#audiences)
+* [Segmentation Service概述](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant#audiences)
 * [Experience Platform區段產生器使用手冊](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant#audiences)
 
 ## Audience Manager中的Adobe Experience Platform區段 {#aep-segments-in-aam}
@@ -212,7 +228,7 @@ Audience Manager中的[[!UICONTROL Profile Merge Rules]](/help/using/features/pr
 
 >[!NOTE]
 >
-> 從Experience Platform共用區段至Audience Manager時，您的Platform組織[預設合併原則](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hant#default-merge-policy)會優先於與Audience Manager共用的區段[所使用的](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant#merge-policies)合併原則。 例如，如果共用區段的合併原則允許[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=zh-Hant#configure)，但組織的預設合併原則不允許，這可能會導致Platform和Audience Manager之間的母體差異。
+> 從Experience Platform共用區段至Audience Manager時，您的Platform組織[預設合併原則](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hant#default-merge-policy)會優先於與Audience Manager共用的區段[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant#merge-policies)所使用的合併原則。 例如，如果共用區段的合併原則允許[ID拼接](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=zh-Hant#configure)，但組織的預設合併原則不允許，這可能會導致Platform和Audience Manager之間的母體差異。
 
 ### Experience Platform中的區段構成
 

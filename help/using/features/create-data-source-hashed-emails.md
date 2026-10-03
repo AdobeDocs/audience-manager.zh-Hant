@@ -4,18 +4,23 @@ description: 瞭解如何建立資料來源，以儲存雜湊電子郵件工作�
 solution: Audience Manager
 feature: Data Sources
 exl-id: fb235dcb-e02f-41ac-ba3f-a1feb30b23dd
-TQID: https://experienceleague.adobe.com/dPV7bJC5zIBkj1EX43q4FWU7XP0gs-dhBYTcW8mApL4
+TQID: 'https://experienceleague.adobe.com/dPV7bJC5zIBkj1EX43q4FWU7XP0gs-dhBYTcW8mApL4'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Destinations
+  - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
+subfeature_v2:
+  - id: d921db59-bd4a-43dc-97e6-4ff4611f1ae8
+    internal-label: Data sources
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 191
+source-wordcount: '194'
 ht-degree: 0%
-
 ---
-
 # 設定雜湊電子郵件工作流程的資料來源
 
 雜湊電子郵件工作流程（例如以人物為基礎的目的地）會要求您建立資料來源以儲存雜湊電子郵件地址。

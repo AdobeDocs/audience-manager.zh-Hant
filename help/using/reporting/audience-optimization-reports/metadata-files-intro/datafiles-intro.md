@@ -7,24 +7,34 @@ title: Audience Optimization報表的資料檔案和可操作的記錄檔
 uuid: c19eb0c7-47c1-4cdf-8a6c-cd15fe04c379
 feature: Log Files
 exl-id: 0da2c1d3-5ff8-40dd-b831-21d8941688ce
-TQID: https://experienceleague.adobe.com/V7m-uiRhNEiGDi5x-Uxy51qm-RneyvCC4Ufl9Ue8xB4
+TQID: 'https://experienceleague.adobe.com/V7m-uiRhNEiGDi5x-Uxy51qm-RneyvCC4Ufl9Ue8xB4'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Content structure
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 994
+source-wordcount: '1009'
 ht-degree: 1%
-
 ---
-
 # Audience Optimization報表的資料檔案和可操作的記錄檔 {#data-files-for-audience-optimization-reports}
 
 資料檔案包含曝光數、點選數或轉換資料。 格式正確後，您可以將此資料匯入Audience Manager，以便在[Audience Optimization報表](../../../reporting/audience-optimization-reports/audience-optimization-reports.md)中檢視資料，並透過[可操作的記錄檔](/help/using/integration/media-data-integration/actionable-log-files.md)使用資料建立特徵。 根據本節中的這些規格來格式化您的資料檔案。

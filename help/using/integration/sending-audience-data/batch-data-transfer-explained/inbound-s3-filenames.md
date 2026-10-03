@@ -7,35 +7,41 @@ title: 傳入資料檔案的Amazon S3名稱和檔案大小要求
 uuid: 3692a122-6ad5-468c-934e-53067bd8cf71
 feature: Inbound Data Transfers
 exl-id: 428acdb5-fff0-4b70-b15a-e384aed9cc2d
-TQID: https://experienceleague.adobe.com/DA-1ilfdKsydO-jTRq02clTE9yZCv7hsV2412gadhwU
+TQID: 'https://experienceleague.adobe.com/DA-1ilfdKsydO-jTRq02clTE9yZCv7hsV2412gadhwU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: a03b8192-8410-479f-a326-4cddf10757f6
+    internal-label: Inbound data transfers
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3c88464c2249b7848c9ae80ca4c0ed58fcb81070
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 1114
+source-wordcount: '1131'
 ht-degree: 2%
-
 ---
-
 # 傳入資料檔案的[!DNL Amazon S3]名稱和檔案大小要求 {#amazon-s-name-and-file-size-requirements-for-inbound-data-files}
 
 說明將資料傳送至[!DNL Audience Manager]時，必須遵循的欄位、語法、命名慣例和檔案大小。 當您傳送資料至[!DNL Audience Manager] / [!DNL Amazon S3]目錄時，請依照這些規格設定檔案的名稱和大小。
 
 >[!NOTE]
 >
->本檔案中的文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等）表示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
+>文字樣式（`monospaced text`、*斜體*、括弧`[ ]` `( )`等） 檔案中會指示程式碼元素和選項。 如需詳細資訊，請參閱[程式碼與文字元素的樣式慣例](../../../reference/code-style-elements.md)。
 
 ## 檔案名稱語法 {#file-name-syntax}
 
 [!DNL S3]檔案名稱包含下列必要和選用元素：
 
-* **[!DNL S3]首碼：**   `s3n://AWS_directory/partner_name/date=yyyy-mm-dd/`
+* **[!DNL S3]首碼：** `s3n://AWS_directory/partner_name/date=yyyy-mm-dd/`
 
-* **檔案名稱元素：**   `ftp_dpm_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
+* **檔案名稱元素：** `ftp_dpm_DPID[_DPID_TARGET_DATA_OWNER]_TIMESTAMP(.sync|.overwrite)[.SPLIT_NUMBER][.gz]`
 
 如需其他接受的檔案名稱格式，請參閱[自訂合作夥伴整合](/help/using/integration/sending-audience-data/custom-partner-integrations.md)。
 
@@ -71,7 +77,7 @@ Removed  {importance="high"} for ExL
    <td colname="col1"> <p> <code> <i>DPID</i> </code> </p> </td> 
    <td colname="col2"> <p>告知<span class="keyword"> Audience Manager</span>資料檔案是否包含您自己的使用者ID、Android ID、iOS ID或其他屬於<a href="/help/using/features/global-data-sources.md">全域資料來源</a>的ID的lD。 接受下列選項：</p> 
     <ul id="ul_818EB3EB2E5543F0B048BCEBB6699562"> 
-     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料Source識別碼（也稱為資料提供者識別碼）：</b>這是Audience Manager指派給資料來源的唯一ID （請參閱ID <a href="/help/using/reference/ids-in-aam.md">的Audience Manager </a>索引）。 在傳送包含您自己的使用者ID的資料時，在檔案名稱中使用此指派ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>將資料上線到屬於資料來源21的ID。 </li> 
+     <li id="li_ED6B13CB49794F6BA3DB6D807F788BAF"> <b>資料Source識別碼（也稱為資料提供者識別碼）：</b>這是Audience Manager指派給資料來源的唯一ID （請參閱ID </a>的Audience Manager <a href="/help/using/reference/ids-in-aam.md">索引）。 在傳送包含您自己的使用者ID的資料時，在檔案名稱中使用此指派ID。 例如，<code>...ftp_dpm_21_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>將資料上線到屬於資料來源21的ID。 </li> 
      <li id="li_1955911BA11F4F458227B77F383F25A3"> <b>Android ID (GAID)：</b>如果資料檔名稱包含Android ID，請使用ID 20914。 使用Android ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20914_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含Android ID，而且這些ID應符合屬於<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li> 
      <li id="li_54E7734C121646AF82095806DD1AED61"> <b>iOS ID (IDFA)：</b>如果資料檔名稱包含iOS ID，請使用ID 20915。 使用iOS ID時，您需要使用欄位<code><i>_DPID_TARGET_DATA_OWNER</i></code>。 例如，<code>...ftp_dpm_20915_DPID_TARGET_DATA_OWNER_123456789.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含iOS ID，而且這些ID應符合屬於<code><i>_DPID_TARGET_DATA_OWNER</i></code>資料來源的特徵。</li>
      <li> <b>屬於其他全域資料來源的ID</b>：您可以將Roku ID加入Advertising (RIDA)、Microsoft Advertising ID (MAID)和其他ID。 使用對應至每個資料來源的ID，如<a href="/help/using/features/global-data-sources.md">全域資料來源文章</a>所述。</li> 
@@ -79,7 +85,7 @@ Removed  {importance="high"} for ExL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <code> <i>_DPID_TARGET_DATA_OWNER</i> </code> </p> </td> 
-   <td colname="col2"> <p>此欄位會告訴Audience Manager要將資料上線的資料來源。 如果您將DPID設為Android ID、iOS ID或其他屬於全域資料來源的ID，則此欄位為必填欄位。 這可讓Audience Manager將檔案資料連結回您的組織。 <br>此目標資料來源必須由您的公司擁有。 針對第二方資料共用目的，若要將資料擷取至屬於其他公司的目標資料來源，您的公司與目標資料來源之間必須具有存取對應。 請聯絡您的Adobe顧問或客戶支援，以設定對應。</p> <p><b>重要注意事項：</b>您<i>不</i>需要為現有的資料共用關係請求對應（針對屬於您於2022年3月14日之前將資料上線的其他公司的目標資料來源）。 將資料上線至屬於您的PID的目標資料來源時，也不一定需要對應。 </p> <p>例如： </p> 
+   <td colname="col2"> <p>此欄位會告訴Audience Manager要將資料上線的資料來源。 如果您將DPID設為Android ID、iOS ID或其他屬於全域資料來源的ID，則此欄位為必填欄位。 這可讓Audience Manager將檔案資料連結回您的組織。<br> 此目標資料來源必須由您的公司擁有。 針對第二方資料共用目的，若要將資料擷取至屬於其他公司的目標資料來源，您的公司與目標資料來源之間必須具有存取對應。 請聯絡您的Adobe顧問或客戶支援，以設定對應。</p> <p><b>重要注意事項：</b>您<i>不</i>需要為現有的資料共用關係請求對應（針對屬於您於2022年3月14日之前將資料上線的其他公司的目標資料來源）。 將資料上線至屬於您的PID的目標資料來源時，也不一定需要對應。 </p> <p>例如： </p> 
     <ul> 
      <li> <code>...ftp_dpm_33_21_1234567890.sync</code>告知Audience Manager您正在將資料來源33的客戶ID限定為資料來源21的特徵或訊號。 </li> 
      <li> <b>Android ID (GAID)：</b> <code>...ftp_dpm_20914_21_1234567890.sync</code>會告訴<span class="keyword"> Audience Manager</span>，資料檔案僅包含Android ID，而且這些ID應該符合屬於資料來源21的特徵。</li> 

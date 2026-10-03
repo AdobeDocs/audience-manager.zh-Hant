@@ -7,19 +7,26 @@ title: 互動式和重疊報表
 uuid: 486f4251-da24-4253-ab01-9dd1da8715aa
 feature: Overlap Reports
 exl-id: 2a29b172-a323-422d-99e0-b00aa16e03dc
-TQID: https://experienceleague.adobe.com/nOOZNe4ZKxSYPXsAY2dH17PxqvwsZ8-Dw5XecsoiieI
+TQID: 'https://experienceleague.adobe.com/nOOZNe4ZKxSYPXsAY2dH17PxqvwsZ8-Dw5XecsoiieI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+subfeature_v2:
+  - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 181
+source-wordcount: '188'
 ht-degree: 0%
-
 ---
-
 # 互動式和重疊報表{#interactive-and-overlap-reports}
 
 互動式報表會顯示特徵和區段的效能和重疊資料。 這些報表不會使用以欄和列排列的數字，而是會使用不同的形狀、顏色和大小傳回資料。 此外，您可以選擇個別或資料點群組，並深入研究報告結果以取得更多詳細資訊。 這些視覺化技巧和報表互動有助於讓大量數值資料更易於理解。

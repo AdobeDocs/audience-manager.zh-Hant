@@ -8,26 +8,35 @@ title: Audience Manager 概述
 uuid: 9334da91-3691-4223-a433-cca35a980a6e
 feature: Overview
 exl-id: e96d8c05-7082-4f17-936d-f1896e665c8e
-TQID: https://experienceleague.adobe.com/yfWxhIkYnUTETWQa99VZoT6-mzAJ0TbjkQgFe5F5nlM
+TQID: 'https://experienceleague.adobe.com/yfWxhIkYnUTETWQa99VZoT6-mzAJ0TbjkQgFe5F5nlM'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+subfeature_v2:
+  - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data management
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 301
-ht-degree: 85%
-
+source-wordcount: '322'
+ht-degree: 83%
 ---
-
 # Audience Manager 概述 {#audience-manager-overview}
 
-Audience Manager (AAM) 能協助您彙集受眾資料資產、簡化收集網站訪客之商業相關資訊的程序、建立可行銷區段，以及將具針對性的廣告和內容提供給合適的受眾。此外，Audience Manager 還提供強大的資料收集、控制和保護功能，讓您可輕鬆部署和管理標籤。
+Audience Manager (AAM) 能協助您彙集受眾資料資產、簡化收集網站訪客之商業相關資訊的程序、建立可行銷區段，以及將具針對性的廣告和內容提供給合適的受眾。 此外，Audience Manager 還提供強大的資料收集、控制和保護功能，讓您可輕鬆部署和管理標籤。
 
-有了 Audience Manager，您不必再侷限於資料賣方、交換或需求端平台。此外，Audience Manager也無從得知合作夥伴的資料資產。 Audience Manager提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料。 與我們的合作夥伴解決方案團隊討論，協助您針對目標客群做出明智而準確的決策。
+有了 Audience Manager，您不必再侷限於資料賣方、交換或需求端平台。 此外，Audience Manager也無從得知合作夥伴的資料資產。 Audience Manager提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料。 與我們的合作夥伴解決方案團隊討論，協助您針對目標客群做出明智而準確的決策。
 
 ## 資料管理平台(DMP)的三項功能 {#dmp-three-functions}
 
@@ -41,7 +50,7 @@ Audience Manager 會從各種管道和裝置 (網頁分析、CRM、裝置資料�
 
 **建立客群**
 
-將資料統一集中到客群輪廓中，讓您可獲得跨裝置和管道的完整客戶視圖。建立相似模型、客群細分群體和輪廓群組，並以第二方和第三方資料來源補充。
+將資料統一集中到客群輪廓中，讓您可獲得跨裝置和管道的完整客戶視圖。 建立相似模型、客群細分群體和輪廓群組，並以第二方和第三方資料來源補充。
 
 **資料輸出**
 
@@ -51,9 +60,9 @@ Audience Manager 會從各種管道和裝置 (網頁分析、CRM、裝置資料�
 
 如需詳細資訊，請參閱下列資源：
 
-* [Audience Manager 概述](https://www.adobe.com/tw/analytics/audience-manager.html)
-* [Audience Manager 優點](https://www.adobe.com/tw/analytics/audience-manager/benefits.html)
-* [Audience Manager 功能](https://www.adobe.com/tw/analytics/audience-manager/features.html)
+* [Audience Manager概觀](https://www.adobe.com/tw/analytics/audience-manager.html)
+* [Audience Manager優點](https://www.adobe.com/tw/analytics/audience-manager/benefits.html)
+* [Audience Manager功能](https://www.adobe.com/tw/analytics/audience-manager/features.html)
 
 
 <!--

@@ -1,29 +1,37 @@
 ---
-description: Audience Analytics 可讓您傳送 Audience Manager 區段至 Analytics。若要使用此功能，您可以在 Audience Manager 中建立 Analytics 目的地並將區段對應至該目的地。
+description: Audience Analytics 可讓您傳送 Audience Manager 區段至 Analytics。 若要使用此功能，您可以在 Audience Manager 中建立 Analytics 目的地並將區段對應至該目的地。
 seo-description: Audience Analytics lets you send Audience Manager segments to Analytics. To use this feature, you create an Analytics destination and map segments to it in Audience Manager.
 seo-title: Configure an Analytics Destination
 solution: Audience Manager
 title: 設定Analytics目的地
 feature: Adobe Analytics Integration
 exl-id: f3ead057-04d1-40cd-8e3d-d0934d85cdb4
-TQID: https://experienceleague.adobe.com/Fm25UT69AXSh-cXo6MXGQwW-17LFy8dqs3-STiWKDeA
+TQID: 'https://experienceleague.adobe.com/Fm25UT69AXSh-cXo6MXGQwW-17LFy8dqs3-STiWKDeA'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
   - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
 subfeature_v2:
   - id: d3dfac44-e20d-492d-a806-0f4a4a495901
+    internal-label: Support
   - id: fa77d762-7e75-47b2-9bb4-e3fcf50d251d
+    internal-label: Overview
+  - id: e5dfa5ae-9082-4711-a658-d981a49c8dea
+    internal-label: Analytics integration
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Administration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 866
+source-wordcount: '925'
 ht-degree: 4%
-
 ---
-
 # 設定Analytics目的地
 
 ## 要求 {#requirements}
@@ -35,7 +43,7 @@ ht-degree: 4%
 
 | Analytics目的地型別 | 說明 |
 |---|---|
-| 預設值 | 此預設目的地的名稱為「Adobe Analytics」，您可以編輯此名稱。 對應的報表套裝ID會顯示在您Audience Manager特徵和區段的資料夾儲存空間中。 <br>  如果您的帳戶有： <br>，Audience Manager會自動建立一個目的地  <ul><li>符合[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=zh-Hant)檔案中描述的需求。</li><li>Analytics中的[報告套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=zh-Hant)。</li></ul> |
+| 預設值 | 此預設目的地的名稱為「Adobe Analytics」，您可以編輯此名稱。 對應的報表套裝ID會顯示在您Audience Manager特徵和區段的資料夾儲存空間中。 如果您的帳戶有： <br>，<br> Audience Manager會自動建立一個目的地  <ul><li>符合[Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=zh-Hant)檔案中描述的需求。</li><li>Analytics中的[報告套裝](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=zh-Hant)。</li></ul> |
 | 新增 | 若要建立新的Analytics目的地，請前往「對象資料>目的地>建立新目的地」 ，並遵循以下各節所述的步驟操作。 |
 
 ## Adobe Analytics中的Audience Manager區段資格 {#segment-qualifications}
@@ -93,8 +101,8 @@ ht-degree: 4%
 
 | 對應選項 | 說明 |
 |---|---|
-| 自動對應所有目前和未來的區段 | 依預設選取，此功能會根據每次點選將訪客符合資格的所有區段傳送至Analytics。 <br>  如果訪客在一次點選中屬於超過150個Audience Manager區段，系統只會將最近符合資格的150個區段傳送至Analytics，其餘清單則會截斷。 系統會傳送額外標幟給Analytics，表示區段清單已截斷。 此動作在「對象名稱」維度中顯示為「已達對象上限」，在「對象ID」維度中顯示為「1」。 如需詳細資訊，請參閱[常見問題集](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=zh-Hant)。 <br>  此外，此選項也會影響[區段產生器](/help/using/features/segments/segment-builder.md)中的目的地可用性。 例如，如果區段自動對應至Analytics目的地，該目的地將無法在「區段產生器」的[目的地對應](/help/using/features/segments/segment-builder.md#segment-builder-controls-destinations)區段中選取。 Analytics目的地會呈現灰色，並在目的地瀏覽器的「型別」欄中顯示「Analytics」。 |
-| 手動對應區段 | 此選項會顯示搜尋和瀏覽控制項，可讓您選擇要將哪些區段傳送至Analytics。 <br>  若要搜尋區段： <br>  <ol><li>在搜尋欄位中輸入區段名稱或ID。</li><li>按一下<b>新增。</b></li><li>繼續搜尋並新增區段，或按一下[完成]。<b></b></li></ol><br>  若要瀏覽區段： <ol><li>按一下<b>瀏覽所有區段</b>。 這會公開可用區段的清單。</li><li>從清單中選取您要使用之區段的核取方塊，然後按一下<b>新增選取的區段</b>。</li><li>在[新增對應]視窗中按一下[儲存]。<b></b> 在Beta版發行期間，您無法變更對應、開始或結束日期。</li><li>繼續瀏覽並新增區段，或按一下<b>完成</b>。</li></ol> ![對應區段](assets/mapSegments.png) |
+| 自動對應所有目前和未來的區段 | 依預設選取，此功能會根據每次點選將訪客符合資格的所有區段傳送至Analytics。 <br>如果訪客在單一點選上屬於超過150個Audience Manager區段，則只會將150個最近符合資格的區段傳送至Analytics，而其餘清單則會截斷。 系統會傳送額外標幟給Analytics，表示區段清單已截斷。 此動作在「對象名稱」維度中顯示為「已達對象上限」，在「對象ID」維度中顯示為「1」。 如需詳細資訊，請參閱[常見問題集](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=zh-Hant)。 <br>此外，此選項也會影響[區段產生器](/help/using/features/segments/segment-builder.md)中的目的地可用性。 例如，如果區段自動對應至Analytics目的地，該目的地將無法在「區段產生器」的[目的地對應](/help/using/features/segments/segment-builder.md#segment-builder-controls-destinations)區段中選取。 Analytics目的地會呈現灰色，並在目的地瀏覽器的「型別」欄中顯示「Analytics」。 |
+| 手動對應區段 | 此選項會顯示搜尋和瀏覽控制項，可讓您選擇要將哪些區段傳送至Analytics。 <br>若要搜尋區段： <br>  <ol><li>在搜尋欄位中輸入區段名稱或ID。</li><li>按一下<b>新增。</b></li><li>繼續搜尋並新增區段，或按一下[完成]。<b></b></li></ol><br>若要瀏覽區段： <ol><li>按一下<b>瀏覽所有區段</b>。 這會公開可用區段的清單。</li><li>從清單中選取您要使用之區段的核取方塊，然後按一下<b>新增選取的區段</b>。</li><li>在[新增對應]視窗中按一下[儲存]。<b></b> 在Beta版發行期間，您無法變更對應、開始或結束日期。</li><li>繼續瀏覽並新增區段，或按一下<b>完成</b>。</li></ol> ![對應區段](assets/mapSegments.png) |
 
 ## 後續步驟
 

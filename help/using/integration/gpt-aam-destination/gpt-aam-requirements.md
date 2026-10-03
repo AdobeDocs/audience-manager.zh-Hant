@@ -7,21 +7,28 @@ title: 使用Google發佈商代碼(GPT)傳送區段至Google Ad Manager的需求
 uuid: 4b2ea81c-29bb-42d3-93d3-1d8e677790b6
 feature: Third-party Integration
 exl-id: 04bf6fb5-ce38-4de1-bf19-e130b7e47616
-TQID: https://experienceleague.adobe.com/RJwzr9sCowegtUDtmi99IBoZHvMBlEZVMBYSGgEVVYE
+TQID: 'https://experienceleague.adobe.com/RJwzr9sCowegtUDtmi99IBoZHvMBlEZVMBYSGgEVVYE'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: 5c645d93-a56e-58b4-b860-6a587b608d44
+    internal-label: Third-party Integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data integration
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 466
+source-wordcount: '497'
 ht-degree: 0%
-
 ---
-
 # 使用Google發佈商代碼(GPT)傳送區段至Google Ad Manager的需求和方法 {#requirements-and-methods-of-sending-segments-to-dfp-using-google-publisher-tags-gpt}
 
 您可以透過使用者端或伺服器端整合將合格的區段傳送至[!DNL Google Ad Manager] （原稱DFP）。 以下列出這兩種方法的需求和相關資訊。
@@ -54,7 +61,7 @@ ht-degree: 0%
 
 ## 伺服器端整合 {#server-side-integration}
 
-如果您想要使用[!DNL Google Ad Manager]設定與[!DNL GPT]的伺服器端整合，請洽詢您的Audience Manager顧問或客戶服務。 您必須提供您的[!DNL Google Ad Manager]帳戶網路識別碼和對象連結識別碼。
+如果您想要使用[!DNL GPT]設定與[!DNL Google Ad Manager]的伺服器端整合，請洽詢您的Audience Manager顧問或客戶服務。 您必須提供您的[!DNL Google Ad Manager]帳戶網路識別碼和對象連結識別碼。
 
 >[!IMPORTANT]
 >

@@ -7,20 +7,28 @@ title: 中繼資料檔案的內容格式
 uuid: 9ba44738-3e17-40c7-9e8c-5abd8361e16d
 feature: Log Files
 exl-id: 1aed39f4-f893-4f25-b041-e198895e338a
-TQID: https://experienceleague.adobe.com/h5fvnoFsB5Q-9w2GcoU2HNJrdPGUjFKAwFXaYuSMMwU
+TQID: 'https://experienceleague.adobe.com/h5fvnoFsB5Q-9w2GcoU2HNJrdPGUjFKAwFXaYuSMMwU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b82b475d-1e7d-46c6-9172-1f9c73004b11
+    internal-label: Integrations
+subfeature_v2:
+  - id: f15e67cf-b90e-44f4-ae50-f1fb9f866a27
+    internal-label: Log files
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Optimization
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 299
+source-wordcount: '299'
 ht-degree: 1%
-
 ---
-
 # 中繼資料檔案的內容格式{#content-format-for-metadata-files}
 
 根據這些規格，設定Audience Optimization中繼資料檔案內容的格式。
@@ -53,7 +61,7 @@ ht-degree: 1%
 
 讓我們來看看您如何在中繼資料檔案中建構內容。 此結構的一部分取決於維度。 維度列在文章[中繼資料檔案的命名慣例](../../../reporting/audience-optimization-reports/metadata-files-intro/metadata-file-names.md#child-dimension)中。
 
-**Campaign** 
+**Campaign**
 
 在此範例中，檔案標題為20180921_0_1，而檔案中的三欄為：促銷活動ID、名稱和上層ID。
 

@@ -8,16 +8,21 @@ title: 特徵資格參考
 uuid: 07e0a639-2fb2-45d8-bad7-10fb46b08ba9
 feature: Traits
 exl-id: 223f5fc6-c939-4bc6-94a3-5d953abc601a
-TQID: https://experienceleague.adobe.com/ToG-JOFHadPm5hkOP5tzUuVMOPZTLXG7x6mad77yC1M
+TQID: 'https://experienceleague.adobe.com/ToG-JOFHadPm5hkOP5tzUuVMOPZTLXG7x6mad77yC1M'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: b1ecf375-97f8-4f5a-a937-6129552209be
+    internal-label: Traits
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: '841'
 ht-degree: 0%
-
 ---
-
 # 特徵和區段資格參考 {#trait-qualification-reference}
 
 特徵資格或特徵實現在Audience Manager中的處理方式會因特徵型別而異。 如需特徵型別資格的詳細資訊，請參閱[依特徵型別的特徵資格](#trait-type)。
@@ -76,4 +81,4 @@ ht-degree: 0%
 
 ## 特徵資格限制 {#trait-qualification-limit}
 
-我們針對每個使用者設定檔強制執行150,000個特徵資格的限制，不論是已驗證的設定檔([DPUUID](../../reference/ids-in-aam.md))或裝置ID ([UUID](../../reference/ids-in-aam.md))。 請注意，雖然DPUUID是[!DNL Audience Manager]的特定執行個體所獨有的，但UUID會在[!DNL Audience Manager]平台之間共用。 對於[!UICONTROL UUID]，我們在儲存特徵資格時強制實行公平原則。 演演算法可確保對[!UICONTROL UUID]的每個執行個體都提供[!DNL Audience Manager]設定檔的同等共用。
+我們針對每個使用者設定檔強制執行150,000個特徵資格的限制，不論是已驗證的設定檔([DPUUID](../../reference/ids-in-aam.md))或裝置ID ([UUID](../../reference/ids-in-aam.md))。 請注意，雖然DPUUID是[!DNL Audience Manager]的特定執行個體所獨有的，但UUID會在[!DNL Audience Manager]平台之間共用。 對於[!UICONTROL UUID]，我們在儲存特徵資格時強制實行公平原則。 演演算法可確保對[!DNL Audience Manager]的每個執行個體都提供[!UICONTROL UUID]設定檔的同等共用。

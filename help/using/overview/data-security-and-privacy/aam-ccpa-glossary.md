@@ -6,33 +6,41 @@ solution: Audience Manager
 title: CCPA 字彙表
 feature: Data Governance & Privacy
 exl-id: b3e97e2b-81a4-4b32-9716-5b18c3f8362f
-TQID: https://experienceleague.adobe.com/5pv0LUWwF45dmmlbRQvHio7XTglAujik8xJWVwunhZI
+TQID: 'https://experienceleague.adobe.com/5pv0LUWwF45dmmlbRQvHio7XTglAujik8xJWVwunhZI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
+feature_v2:
+  - id: b89b323a-1e91-40b1-8d20-96b5b726d55a
+    internal-label: Audience management
+subfeature_v2:
+  - id: a1d8adf7-4300-4ca2-870f-1612c6774544
+    internal-label: Data governance and privacy
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Privacy
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 518
+source-wordcount: '518'
 ht-degree: 100%
-
 ---
-
 # CCPA 字彙表
 
 ## 概述 {#overview}
 
 本文說明加州消費者隱私法 (CCPA) 所使用的概念和術語，以及 Adobe Audience Manager 身為服務提供者如何處理各種 CCPA 要求。
 
-2020 年 1 月 1 日生效的加州消費者隱私法 (CCPA)，是將隱私權融入消費者體驗的另一個機會。Audience Manager 運用現有的隱私權基礎架構，協助您在使用 Audience Manager 時履行 CCPA 所規範的義務，讓您準備好遵循 CCPA。
+2020 年 1 月 1 日生效的加州消費者隱私法 (CCPA)，是將隱私權融入消費者體驗的另一個機會。 Audience Manager 運用現有的隱私權基礎架構，協助您在使用 Audience Manager 時履行 CCPA 所規範的義務，讓您準備好遵循 CCPA。
 
 Audience Manager 期待與您合作，使用我們的資料控管和依設計功能提供的隱私權，履行任何新的義務。
 
 ## CCPA 字彙表 {#CCPA-glossary}
 
-熟悉與 CCPA 相關的重要術語。我們重點列出以下幾個最常用的術語。
+熟悉與 CCPA 相關的重要術語。 我們重點列出以下幾個最常用的術語。
 
 **加州消費者隱私法 (CCPA)**：一項法案，加強了美國加州居民的隱私權和消費者保護。
 
@@ -42,7 +50,7 @@ Audience Manager 期待與您合作，使用我們的資料控管和依設計功
 
  
 
-**個人資訊**：可識別、涉及、描述特定消費者或家庭、能與特定消費者或家庭建立關聯或能與其合理連結 (直接或間接) 的資訊。個人資訊包括但不限於可識別、涉及、描述特定消費者或家庭、能與特定消費者或家庭建立關聯或能與其合理連結 (直接或間接) 的資訊。
+**個人資訊**：可識別、涉及、描述特定消費者或家庭、能與特定消費者或家庭建立關聯或能與其合理連結 (直接或間接) 的資訊。 個人資訊包括但不限於可識別、涉及、描述特定消費者或家庭、能與特定消費者或家庭建立關聯或能與其合理連結 (直接或間接) 的資訊。
 
  
 

@@ -7,24 +7,30 @@ title: 資料傳送和檔案處理時間對報表有何影響
 uuid: 4b975512-f67e-4749-a7ef-168415597682
 feature: Reference
 exl-id: d13102c3-fd1b-4c31-8003-9fdc0df36838
-TQID: https://experienceleague.adobe.com/1j9TsJYza6imKBGGAcK8ZvTBK6nLHAMOxO2mdO0PRts
+TQID: 'https://experienceleague.adobe.com/1j9TsJYza6imKBGGAcK8ZvTBK6nLHAMOxO2mdO0PRts'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a8b0238e-1d43-4679-a3b4-5ba1bad83baa
+    internal-label: Implementation
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
+  - id: 6a8f3a31-6f0b-5101-9878-fb698e568543
+    internal-label: Reference
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Implementation
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 605
+source-wordcount: '617'
 ht-degree: 1%
-
 ---
-
 # 資料傳送和檔案處理時間對報表有何影響{#how-data-delivery-and-file-processing-times-affect-reports}
 
 Audience Manager每天會收到大量資料。 這會影響處理資料和產生報告結果所需的時間。 本節中的內容說明這些時間間隔如何影響您的Audience Manager帳戶。 此外，此處說明的時間範圍和排程僅是一般准則。 這些排程不構成與資料傳遞相關的服務等級協定(SLA)或承諾。 Adobe保留隨時變更時間範圍與排程的權利，恕不另行通知。
@@ -43,7 +49,7 @@ c_reporting_file_transfer_timeframe.xml
 | 資料類型 | 說明 |
 |---|---|
 | 即時資料 | 今天的即時數字是昨天的00:00到23:59:59 UTC的小時。 |
-| 一般報表資料 | [一般報表](../reporting/general-reports.md#general-reports-overview)中的資料取決於其他工作流程的成功完成以及特定日期接收的資料量。 大部分時間，[!UICONTROL General Report]資料應該每天以18:00 UTC更新。 |
+| 一般報表資料 | [一般報表](../reporting/general-reports.md#general-reports-overview)中的資料取決於其他工作流程的成功完成以及特定日期接收的資料量。 大部分時間，[!UICONTROL General Report]資料應該每天在18:00 UTC更新。 |
 
 ## 傳入和傳出的檔案傳輸 {#inbound-outbound-file-transfers}
 

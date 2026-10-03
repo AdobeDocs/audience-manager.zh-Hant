@@ -7,26 +7,36 @@ title: Tag Management元件
 uuid: e5059478-6ba7-4e1a-afec-e41ad7a27750
 feature: System Components
 exl-id: 064e3653-7658-422c-9dd5-2252806e8f09
-TQID: https://experienceleague.adobe.com/iOniWbVTajyhGmIl3IDdxrP5dZ-ULKkA-9ySOXniqUI
+TQID: 'https://experienceleague.adobe.com/iOniWbVTajyhGmIl3IDdxrP5dZ-ULKkA-9ySOXniqUI'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: a99472c1-6aae-4c7a-8aa0-f60636369620
+    internal-label: Reporting
   - id: c814092e-2730-45e8-a12d-e084529f52cb
+    internal-label: Destinations
+  - id: ce14ba14-a06d-4b2b-b7dd-04cb862494ec
+    internal-label: Administration
 subfeature_v2:
   - id: a49258d4-867f-4130-b875-d72c001bdf6c
+    internal-label: Overlap Reports
+  - id: f518b7e7-52a7-4298-a970-88c25c36ab31
+    internal-label: System components
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: Data management
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: '322'
 ht-degree: 1%
-
 ---
-
 # Tag Management元件{#tag-management-components}
 
 Audience Manager標籤管理元件包括使用者端入口網站、Adobe Tag Manager （已淘汰，改用Adobe Experience Platform標籤）、DIL、Akamai和控制資料庫。
@@ -51,7 +61,7 @@ Audience Manager包含下列元件：
 
 ## DIL/TIM容器 {#dil-tim}
 
-[!UICONTROL DIL]容器可協助將[!DNL Audience Manager]資料收集程式碼部署到您的網站。 [!UICONTROL TIM]是已過時的標籤插入管理員。 [!DNL Audience Manager]已不再使用它。 請改用[!DNL Audience Manager]Adobe Experience Platform Tags[中的](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hant)擴充功能來設定並產生您放置在詳細目錄頁面的容器代碼。
+[!UICONTROL DIL]容器可協助將[!DNL Audience Manager]資料收集程式碼部署到您的網站。 [!UICONTROL TIM]是已過時的標籤插入管理員。 [!DNL Audience Manager]已不再使用它。 請改用[Adobe Experience Platform Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/audience-manager/overview.html?lang=zh-Hant)中的[!DNL Audience Manager]擴充功能來設定並產生您放置在詳細目錄頁面的容器代碼。
 
 ## Data Integration Library (DIL) {#dil}
 

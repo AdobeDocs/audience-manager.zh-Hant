@@ -7,18 +7,21 @@ title: 群組管理API方法
 uuid: fe042eb5-ea12-42fe-be98-d721f987a914
 feature: API
 exl-id: b43c8404-1853-4306-8f26-96d9191a2548
-TQID: https://experienceleague.adobe.com/2h1Y0wd3T5fXaBWsouTvwdHcIWCWLAdkKCzTfUX6yWU
+TQID: 'https://experienceleague.adobe.com/2h1Y0wd3T5fXaBWsouTvwdHcIWCWLAdkKCzTfUX6yWU'
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: baaa0dd2-d27e-4921-aae3-7888623a5fa5
-source-git-commit: 395823e4876ddac1f56af10a1b110b60ff6f88a4
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: 7dee9651-deb5-5d4d-acfd-fbc10040467f
+    internal-label: API
+source-git-commit: f188b550f327b59bab9f26bdd5e95bda6c1c0be9
 workflow-type: tm+mt
-source-wordcount: 206
+source-wordcount: '207'
 ht-degree: 5%
-
 ---
-
 # 群組管理API方法 {#group-management-api-methods}
 
 剩下[!DNL API]種管理群組的方法，包括建立、更新、列出及刪除群組。
