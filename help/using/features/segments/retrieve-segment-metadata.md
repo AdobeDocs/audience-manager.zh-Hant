@@ -47,7 +47,7 @@ Audience Manager傳送區段資訊給資料合作夥伴時，會使用數值ID�
 
 ### 步驟1：檢閱Audience Manager API
 
-[ REST API快速入門](../../api/rest-api-main/aam-api-getting-started.md)區段包含一般需求、驗證、可用方法等資訊。如果您之前未使用[!DNL Audience Manager] [!DNL API]，這是一個很好的起點。
+[&#x200B; REST API快速入門](../../api/rest-api-main/aam-api-getting-started.md)區段包含一般需求、驗證、可用方法等資訊。如果您之前未使用[!DNL Audience Manager] [!DNL API]，這是一個很好的起點。
 
 ### 步驟2：要求OAuth2存取認證
 
