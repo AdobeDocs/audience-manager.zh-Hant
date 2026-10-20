@@ -52,7 +52,7 @@ ht-degree: 6%
 {
    "sid":87723,
    "traitType":"SEGMENT",
-   "url":"https://adobe.com",
+   "url":"https://adobe.com/tw",
    "startDate":"2012-07-04"
 }
 ```
@@ -76,7 +76,7 @@ ht-degree: 6%
    "startDate":"2012-07-03",
    "endDate":null,
    "priority":null,
-   "url":"https://adobe.com",
+   "url":"https://adobe.com/tw",
    "secureUrl":null,
    "tagCode":null,
    "secureTagCode":null,
@@ -342,7 +342,7 @@ ht-degree: 6%
 {
    "sid": 105123,
    "traitType":"SEGMENT",
-   "url":"https://adobe.com",
+   "url":"https://adobe.com/tw",
    "startDate":"2012-11-20"
 },
 {
@@ -376,7 +376,7 @@ ht-degree: 6%
         "startDate": "2012-11-19",
         "endDate": null,
         "priority": null,
-        "url": "https://adobe.com",
+        "url": "https://adobe.com/tw",
         "secureUrl": null,
         "tagCode": null,
         "secureTagCode": null,
@@ -426,7 +426,7 @@ ht-degree: 6%
 {
    "sid": 105123,
    "traitType":"SEGMENT",
-   "url":"https://adobe.com",
+   "url":"https://adobe.com/tw",
    "startDate":"2012-11-20"
 },
 {
@@ -460,7 +460,7 @@ ht-degree: 6%
         "startDate": "2012-11-19",
         "endDate": null,
         "priority": null,
-        "url": "https://adobe.com",
+        "url": "https://adobe.com/tw",
         "secureUrl": null,
         "tagCode": null,
         "secureTagCode": null,
@@ -559,7 +559,7 @@ ht-degree: 6%
 {
    "sid": 105123,
    "traitType":"SEGMENT",
-   "url":"https://adobe.com",
+   "url":"https://adobe.com/tw",
    "startDate":"2012-11-20"
 }
 ```

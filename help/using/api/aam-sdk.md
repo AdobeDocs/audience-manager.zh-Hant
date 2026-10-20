@@ -37,7 +37,7 @@ Audience Manager提供[!DNL Android]和[!DNL iOS]的軟體開發套件([!DNL SDK
 
 >[!IMPORTANT]
 >
->我們在2018年9月時發行了全新的SDK主要版本。 這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) 設定。
+>我們在2018年9月時發行了全新的SDK主要版本。 這些新的 Adobe Experience Platform Mobile SDK 可透過 [Experience Platform Launch](https://www.adobe.com/tw/experience-platform/launch.html) 設定。
 
 * 若要開始使用，請前往 [Launch](https://launch.adobe.com/)。
 * 若要檢視Experience Platform SDK存放庫中的內容，請前往[Github： Adobe Experience Platform SDK](https://github.com/Adobe-Marketing-Cloud/acp-sdks)。
