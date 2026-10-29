@@ -8,13 +8,18 @@ exl-id: 92d4d043-3cc1-4a59-926f-c29709d9bc63
 TQID: https://experienceleague.adobe.com/KvT3y7GApQFDZYs1F20VCxNinclwenFi-HSk8-oImQo
 product_v2:
   - id: df80eeb1-8d72-467e-b0df-9d51c7d3a0a1
+    internal-label: Audience Manager
 feature_v2:
   - id: d8f86c1e-15ad-457f-9d6f-5e756573fad4
+    internal-label: Audience Marketplace
 subfeature_v2:
   - id: d921db59-bd4a-43dc-97e6-4ff4611f1ae8
+    internal-label: Data sources
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 source-git-commit: ab793b204abf34f578cb6486d885b006b07a0f05
 workflow-type: tm+mt
 source-wordcount: 640
